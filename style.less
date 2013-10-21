@@ -1,0 +1,197 @@
+@main_bg    : #f4f4f4;
+@bar_bg     : #e4e4e4;
+@border_bg  : #cccccc;
+@bar_fg     : #888888;
+
+.sans_serif() {
+    font-family:
+        "Lucida Grande",
+        "Segoe UI",
+        sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    .sans_serif;
+    background: @bar_bg;
+    color: #555;
+
+    text-align: center;
+
+    padding: 0px;
+    margin:  0px;
+}
+
+@body_padding: 16px;
+
+body {
+    display: inline-block;
+    // max-width: 600px;
+
+    text-align: left;
+    width: 100%;
+
+    padding: 0px;
+
+    margin:  0px;
+}
+
+.interaction,
+.results {
+    width: 50%;
+    display: inline-block;
+
+    padding: 0px;
+
+    vertical-align: top;
+
+    padding-bottom: 10px;
+    padding-left:   10px;
+}
+
+.column_holder {
+    background: @main_bg;
+}
+
+.results .type {
+    padding: 4px;
+    min-width: 3em;
+    width: auto;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.footer {
+    padding: @body_padding;
+    padding-top: @body_padding;
+
+    border-top: 1px dotted @border_bg;
+
+    color: @bar_fg;
+    font-size: 90%;
+
+    display: block;
+
+    p {
+        margin: 0px auto;
+        display: block;
+        max-width: 800px;
+
+        margin-top: @body_padding;
+
+        &:first-child {
+            margin-top: 0px;
+        }
+    }
+}
+
+h1,
+h2,
+h3 {
+    text-transform: lowercase;
+}
+
+.type {
+    // text-transform: capitalize;
+    text-transform: uppercase;
+}
+
+h1 {
+    border-bottom: 1px dotted @border_bg;
+
+    color: #aaa;
+
+    padding:        0.25em;
+    padding-top:    0.15em;
+    padding-bottom: 0.35em;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: #777;
+}
+
+h2,
+h3 {
+    margin-top:     0.25em;
+    margin-bottom:  0.50em;
+}
+
+.type {
+    font-weight: bold;
+    font-size: 16px;
+    .sans_serif;
+
+    text-align: center;
+
+    padding: 20px 10px;
+    margin:   0px;
+
+    margin-bottom: 1px;
+    margin-right:  1px;
+
+    width: 7em;
+
+    display: inline-block;
+
+    color: white;
+    border: 4px solid transparent;
+
+    cursor: default;
+
+    text-shadow:
+        1px 1px 0px fade(black, 20%),
+        0px 0px 8px fade(black, 20%);
+
+    &:focus {
+        outline: none;
+    }
+
+    &.fire       { .type(#f08030) }
+    &.water      { .type(#6890f0) }
+    &.grass      { .type(#78c850) }
+    &.electric   { .type(#f8d030) }
+    &.psychic    { .type(#f85888) }
+    &.ice        { .type(#98d8d8) }
+    &.dragon     { .type(#7038f8) }
+    &.dark       { .type(#705848) }
+    &.fairy      { .type(#ee99ac) }
+
+    &.normal     { .type(#a8a878) }
+    &.fighting   { .type(#c03028) }
+    &.flying     { .type(#a890f0) }
+    &.poison     { .type(#a040a0) }
+    &.ground     { .type(#e0c068) }
+    &.rock       { .type(#b8a038) }
+    &.bug        { .type(#a8b820) }
+    &.ghost      { .type(#705898) }
+    &.steel      { .type(#b8b8d0) }
+
+    &.none       { .type(#aaaaaa) }
+}
+
+.type(@color) {
+    background: @color;
+    border-color: @color;
+
+    &:hover {
+        box-shadow: inset 0px 2px 3px fade(black, 20%);
+        // box-shadow: inset 0px 0px 0px 1px fade(black, 5%);
+
+        background: darken(@color, 5%);
+    }
+
+    &.selected {
+        box-shadow: inset 0px 4px 6px fade(black, 50%);
+        // box-shadow: inset 0px 0px 0px 1px fade(black, 10%);
+
+        background: darken(@color, 15%);
+    }
+}
