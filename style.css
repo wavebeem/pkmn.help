@@ -1,5 +1,9 @@
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
+}
+button:-moz-focus-inner {
+  border: 0px !important;
+  padding: 0px !important;
 }
 html {
   font-family: "Lucida Grande", "Segoe UI", sans-serif;
@@ -18,7 +22,7 @@ body {
 }
 .interaction,
 .results {
-  width: 50%;
+  width: 45%;
   display: inline-block;
   padding: 0px;
   vertical-align: top;
@@ -62,7 +66,7 @@ h3 {
   text-transform: uppercase;
 }
 h1 {
-  border-bottom: 1px dotted #cccccc;
+  background: #f4f4f4;
   color: #aaa;
   padding: 0.25em;
   padding-top: 0.15em;
@@ -87,6 +91,7 @@ h3 {
   margin: 0px;
   margin-bottom: 1px;
   margin-right: 1px;
+  border-radius: 0px !important;
   width: 7em;
   display: inline-block;
   color: white;
