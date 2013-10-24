@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>PKMN Type Calc</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet/less" type="text/css" href="style.less">-->
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.4.1/less.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/knockout/2.3.0/knockout-min.js"></script>
@@ -12,8 +12,8 @@
 </head>
 <body>
     <h1>Pokémon Type Calculator</h1>
-    <div class="column_holder"><div
-        class="interaction">
+    <div class="column_holder"><!--
+        --><div class="interaction">
             <h2>Primary Type</h2>
             <div data-bind="foreach: types"><button
                 class="type" data-bind="
@@ -30,8 +30,8 @@
                     click: function() { $root.type2($data) }
                 "></button
             ></div>
-        </div><div
-        class="results">
+        </div><!--
+        --><div class="results">
             <h2>Matchups</h2>
             <div data-bind="with: matchups">
                 <div data-bind="visible: $data.doubleSuper">
@@ -77,8 +77,8 @@
                     ></div>
                 </div>
             </div>
-        </div
-    ></div>
+        </div><!--
+    --></div>
     <div class="clearfix"></div>
     <div class="footer">
         <p>
@@ -90,7 +90,7 @@
             No copyright or trademark infringement is intended in using Pokémon content on this page.
         </p>
         <p>
-            Code for this page &copy; Brian Mock 2013.
+            Code for this page &copy; <a href="http://mockbrian.com">Brian Mock</a> 2013.
         </p>
     </div>
 

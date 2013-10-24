@@ -1,0 +1,42 @@
+.type(@color) {
+    background: @color;
+    border-color: @color;
+
+    &:hover {
+        box-shadow: inset 0px 2px 3px fade(black, 20%);
+        // box-shadow: inset 0px 0px 0px 1px fade(black, 5%);
+
+        background: darken(@color, 5%);
+    }
+
+    &.selected {
+        box-shadow: inset 0px 4px 6px fade(black, 50%);
+        // box-shadow: inset 0px 0px 0px 1px fade(black, 10%);
+
+        background: darken(@color, 15%);
+    }
+}
+
+.type {
+    &.fire       { .type(#f08030) }
+    &.water      { .type(#6890f0) }
+    &.grass      { .type(#78c850) }
+    &.electric   { .type(#f8d030) }
+    &.psychic    { .type(#f85888) }
+    &.ice        { .type(#98d8d8) }
+    &.dragon     { .type(#7038f8) }
+    &.dark       { .type(#705848) }
+    &.fairy      { .type(#ee99ac) }
+
+    &.normal     { .type(#a8a878) }
+    &.fighting   { .type(#c03028) }
+    &.flying     { .type(#a890f0) }
+    &.poison     { .type(#a040a0) }
+    &.ground     { .type(#e0c068) }
+    &.rock       { .type(#b8a038) }
+    &.bug        { .type(#a8b820) }
+    &.ghost      { .type(#705898) }
+    &.steel      { .type(#b8b8d0) }
+
+    &.none       { .type(#aaaaaa) }
+}
