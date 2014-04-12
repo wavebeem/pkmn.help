@@ -81,7 +81,7 @@ function Root() {
 
     var typesOrNone = types.concat('none');
 
-    var type1  = ko.observable('normal');
+    var type1 = ko.observable('normal');
     var type2 = ko.observable('none');
 
     var canonicalizeDualTypes = function() {
