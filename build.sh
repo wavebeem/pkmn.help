@@ -12,4 +12,4 @@ rm -rf dist
 mkdir dist
 cp -v "${files[@]}" dist/
 cd dist
-www pkmn
+s3cmd sync -P ./ s3://mockbrian-pkmn/
