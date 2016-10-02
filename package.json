@@ -1,0 +1,29 @@
+{
+  "name": "pkmn-type-calc",
+  "version": "1.0.0",
+  "description": "Pokémon type calculator",
+  "main": "main.js",
+  "scripts": {
+    "watch": "chokidar '*.less' -c 'npm run css'",
+    "css": "lessc style.less style.css",
+    "lint:fix": "eslint --fix .",
+    "lint": "eslint .",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wavebeem/pkmn-type-calc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wavebeem/pkmn-type-calc/issues"
+  },
+  "homepage": "https://github.com/wavebeem/pkmn-type-calc#readme",
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "eslint": "^3.7.0",
+    "less": "^2.7.1"
+  }
+}

@@ -2,17 +2,8 @@
     background: @color;
     border-color: @color;
 
-    &:hover {
-        box-shadow: inset 0px 2px 3px fade(black, 20%);
-        // box-shadow: inset 0px 0px 0px 1px fade(black, 5%);
-
-        background: darken(@color, 5%);
-    }
-
     &.selected {
         box-shadow: inset 0px 4px 6px fade(black, 50%);
-        // box-shadow: inset 0px 0px 0px 1px fade(black, 10%);
-
         background: darken(@color, 15%);
     }
 }
