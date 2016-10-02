@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>PKMN Type Calc</title>
+  <title>pkmn type calculator</title>
   <meta name="theme-color" content="#cc0000">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="shortcut icon" href="favicon.ico">
@@ -11,10 +11,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.2/lodash.min.js"></script>
 </head>
 <body>
-  <h1>Pokémon Type Calculator</h1>
-  <div class="column_holder">
+  <h1>pkmn type calculator</h1>
+  <main>
     <div class="interaction">
-      <h2>Primary Type</h2>
+      <h2>primary type</h2>
       <div data-bind="foreach: types"><button
         class="type" data-bind="
           css: $root.classForType1($data),
@@ -22,7 +22,9 @@
           click: function() { $root.type1($data) }
         "></button
       ></div>
-      <h2>Secondary Type</h2>
+    </div>
+    <div class="interaction">
+      <h2>secondary type</h2>
       <div data-bind="foreach: typesOrNone"><button
         class="type" data-bind="
           css: $root.classForType2($data),
@@ -32,7 +34,7 @@
       ></div>
     </div>
     <div class="results">
-      <h2>Matchups</h2>
+      <h2>matchups</h2>
       <div data-bind="with: matchups">
         <div data-bind="visible: $data.doubleSuper">
           <h3>takes 4×</h3>
@@ -78,8 +80,8 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer">
+  </main>
+  <footer>
     <p>
       Pokémon © 2002-2013 Pokémon.
       © 1995-2013 Nintendo/Creatures Inc./GAME FREAK inc. TM, ® and
@@ -89,9 +91,9 @@
       No copyright or trademark infringement is intended in using Pokémon content on this page.
     </p>
     <p>
-      Code for this page © <a href="http://mockbrian.com">Brian Mock</a> 2013-2016.
+      Code for this page © <a href="https://mockbrian.com">Brian Mock</a> 2013-2016.
     </p>
-  </div>
+  </footer>
 
   <script src="main.js"></script>
 </body>
