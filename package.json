@@ -4,8 +4,10 @@
   "description": "Pokémon type calculator",
   "main": "main.js",
   "scripts": {
-    "watch": "chokidar '*.less' -c 'npm run css'",
-    "css": "lessc style.less style.css",
+    "watch": "chokidar 'less/**/*.less' -c 'npm run build:css'",
+    "webpack": "webpack",
+    "build:js": "webpack js/main.js bundle.js",
+    "build:css": "lessc less/style.less bundle.css",
     "lint:fix": "eslint --fix .",
     "lint": "eslint .",
     "test": "npm run lint"
@@ -24,6 +26,11 @@
   "devDependencies": {
     "chokidar-cli": "^1.2.0",
     "eslint": "^3.7.0",
-    "less": "^2.7.1"
+    "less": "^2.7.1",
+    "webpack": "^1.13.2"
+  },
+  "dependencies": {
+    "knockout": "^3.4.0",
+    "lodash": "^4.16.2"
   }
 }

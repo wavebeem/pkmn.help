@@ -1,6 +1,7 @@
-/* global ko, _ */
-
 "use strict"
+
+var ko = require("knockout")
+var _ = require("lodash")
 
 function Root() {
   var types = [
