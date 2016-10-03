@@ -54,21 +54,26 @@ function Root() {
     "1 2 1 ½ 1 1 1 1 ½ ½ 1 1 1 1 1 2 2 1"
   ].map(row => row.split(" ").map(rawDataStrToNumber))
 
-  var table = _.reduce(rawData, (tab, row, i) => {
-    tab[types[i]] = _.reduce(row, (r, data, j) => {
-      r[types[j]] = data
-      return r
-    }, {})
-    return tab
-  }, {})
+  function keyForTypes(t1, t2) {
+    return t1 + " ~ " + t2
+  }
+
+  var pairs =
+    _.flatMap(rawData, (row, i) =>
+      _.map(row, (data, j) =>
+        [keyForTypes(types[i], types[j]), data]
+      )
+    )
+
+  var table = _.fromPairs(pairs)
 
   function matchupFor(ta1, ta2, tb) {
-    var x1 = table[tb][ta1]
+    var x1 = table[keyForTypes(tb, ta1)]
     var x2 = 1
 
     // Don't allow bogus type combinations, such as Fire/Fire or Fire/None
     if (ta1 !== ta2 && ta2 !== "none") {
-      x2 = table[tb][ta2]
+      x2 = table[keyForTypes(tb, ta2)]
     }
 
     var x3 = x1 * x2
@@ -78,6 +83,7 @@ function Root() {
     if (x3 === 0.50) return "weak"
     if (x3 === 0.25) return "doubleWeak"
     if (x3 === 0.00) return "immune"
+    throw new Error()
   }
 
   var typesOrNone = types.concat("none")

@@ -4,7 +4,8 @@
   "description": "Pokémon type calculator",
   "main": "main.js",
   "scripts": {
-    "watch": "chokidar 'less/**/*.less' -c 'npm run build:css'",
+    "watch:js": "webpack -w js/main.js bundle.js",
+    "watch:css": "chokidar 'less/**/*.less' -c 'npm run build:css'",
     "webpack": "webpack",
     "build:js": "webpack js/main.js bundle.js",
     "build:css": "lessc less/style.less bundle.css",
