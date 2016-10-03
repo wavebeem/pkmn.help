@@ -183,6 +183,11 @@ h3 {
     1px 1px 0px fade(black, 20%),
     0px 0px 8px fade(black, 20%);
 
+
+  @media (max-width: 800px) {
+    font-size: 70%;
+  }
+
   &:focus {
     border-color: fade(#000, 50%) !important;
     // border-color: black !important;
@@ -194,7 +199,3 @@ h3 {
 }
 
 @import "colors";
-
-@media (max-width: 800px) {
-  @import "narrow";
-}
