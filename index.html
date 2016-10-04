@@ -10,75 +10,7 @@
 </head>
 <body>
   <h1>pkmn type calculator</h1>
-  <main>
-    <div class="interaction">
-      <h2>primary type</h2>
-      <div data-bind="foreach: types"><button
-        class="type" data-bind="
-          css: $root.classForType1($data),
-          text: $data,
-          click: function() { $root.type1($data) }
-        "></button
-      ></div>
-    </div>
-    <div class="interaction">
-      <h2>secondary type</h2>
-      <div data-bind="foreach: typesOrNone"><button
-        class="type" data-bind="
-          css: $root.classForType2($data),
-          text: $data,
-          click: function() { $root.type2($data) }
-        "></button
-      ></div>
-    </div>
-    <div class="results">
-      <h2>matchups</h2>
-      <div data-bind="with: matchups">
-        <div data-bind="visible: $data.doubleSuper">
-          <h3>takes 4×</h3>
-          <div data-bind="foreach: $data.doubleSuper"
-            ><div class="type" data-bind="css: $data[0], text: $data[0]"
-            ></div
-          ></div>
-        </div>
-        <div data-bind="visible: $data.super">
-          <h3>takes 2×</h3>
-          <div data-bind="foreach: $data.super"
-            ><div class="type" data-bind="css: $data[0], text: $data[0]"
-            ></div
-          ></div>
-        </div>
-        <div data-bind="visible: $data.normal">
-          <h3>takes 1×</h3>
-          <div data-bind="foreach: $data.normal"
-            ><div class="type" data-bind="css: $data[0], text: $data[0]"
-            ></div
-          ></div>
-        </div>
-        <div data-bind="visible: $data.weak">
-          <h3>takes ½×</h3>
-          <div data-bind="foreach: $data.weak"
-            ><div class="type" data-bind="css: $data[0], text: $data[0]"
-            ></div
-          ></div>
-        </div>
-        <div data-bind="visible: $data.doubleWeak">
-          <h3>takes ¼×</h3>
-          <div data-bind="foreach: $data.doubleWeak"
-            ><div class="type" data-bind="css: $data[0], text: $data[0]"
-            ></div
-          ></div>
-        </div>
-        <div data-bind="visible: $data.immune">
-          <h3>takes 0×</h3>
-          <div data-bind="foreach: $data.immune"
-            ><div class="type" data-bind="css: $data[0], text: $data[0]"
-            ></div
-          ></div>
-        </div>
-      </div>
-    </div>
-  </main>
+  <div id="react-root"></div>
   <footer>
     <p>
       Pokémon © 2002-2013 Pokémon.
@@ -92,7 +24,6 @@
       Code for this page © <a href="https://mockbrian.com">Brian Mock</a> 2013-2016.
     </p>
   </footer>
-
   <script src="bundle.js"></script>
 </body>
 </html>
