@@ -2,7 +2,7 @@ var Redux = require("redux")
 
 var initialState = {
   type1: "fire",
-  type2: "water"
+  type2: "flying"
 }
 
 var table = {
