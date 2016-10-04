@@ -17,6 +17,12 @@
     sans-serif;
 }
 
+.nice_text_shadow() {
+  text-shadow:
+    0 1px 0 fade(black, 40%),
+    0 0 8px fade(black, 40%);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -111,7 +117,15 @@ h2 {
   text-align: center;
 }
 
+h3 {
+  color: #444;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
 .badge {
+  .nice_text_shadow;
   font-weight: bold;
   font-size: 1rem;
   font-family: inherit;
@@ -126,13 +140,25 @@ h2 {
   min-width: 7em;
   display: inline-block;
   color: white;
-  text-shadow:
-    0 1px 0 fade(black, 40%),
-    0 0 8px fade(black, 40%);
 }
 
 .matchups {
   text-align: center;
 }
 
+hr {
+  margin-top: 1em;
+  border: 0;
+  background:
+    linear-gradient(
+      to right,
+      fade(black, 0%),
+      fade(black, 10%) 20%,
+      fade(black, 10%) 80%,
+      fade(black, 0%) 100%
+    );
+  height: 1px;
+}
+
+@import "type-selector";
 @import "colors";

@@ -14,7 +14,7 @@ function section(title, info) {
     return null
   }
   return $("div", {className: "matchups"},
-    $("h2", {}, title),
+    $("h3", {}, title),
     info.map(badge)
   )
 }

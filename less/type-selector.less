@@ -1,0 +1,40 @@
+.type-selector {
+  @menu_bg: #444;
+  color: white;
+
+  h3 {
+    color: inherit;
+  }
+
+  &__button {
+    .nice_text_shadow;
+
+    cursor: pointer;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: @menu_bg;
+    padding: 0 6px;
+    overflow-y: auto;
+    text-align: center;
+  }
+
+  &__menu-button {
+    display: block;
+    width: 100%;
+    padding: 1em 3em;
+    margin: 6px 0;
+    border-radius: 4px;
+    border: 2px solid fade(white, 20%);
+  }
+}
