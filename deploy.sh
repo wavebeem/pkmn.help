@@ -1,16 +1,18 @@
 #!/bin/bash
+set -e
 
 # dest=s3://mockbrian.com/pkmn/
 dest=s3://dev.mockbrian.com/
 
 files=(
   favicon.ico
-  main.js
+  bundle.js
+  bundle.css
   index.html
-  style.css
 )
 
-npm run css
+npm run build:js
+npm run build:css
 rm -rf dist
 mkdir dist
 cp -v "${files[@]}" dist/
