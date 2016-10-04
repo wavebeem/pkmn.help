@@ -8,6 +8,8 @@ var App = require("./app")
 
 var $ = React.createElement
 
-var root = document.getElementById("react-root")
-var component = $(ReactRedux.Provider, {store}, $(App))
-ReactDOM.render(component, root)
+window.addEventListener("DOMContentLoaded", () => {
+  var root = document.getElementById("react-root")
+  var component = $(ReactRedux.Provider, {store}, $(App))
+  ReactDOM.render(component, root)
+}, false)
