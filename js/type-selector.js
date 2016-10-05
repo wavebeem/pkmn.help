@@ -7,13 +7,17 @@ var TypeSelector = React.createClass({
   menu(hidden, value, types) {
     var self = this
     var items = types.map(function(t) {
+      function ref(elem) {
+        self.elemItem = elem
+      }
       return $("button", {
+        ref: t === self.props.value ? ref : null,
+        tabIndex: 2,
         key: t,
         value: t,
         className:
           "type-selector__button " +
           "type-selector__menu-button " +
-          (value === t ? "type-selector__menu-button--current " : "") +
           "type-" + t,
         onClick: function() { self.choose(t) }
       }, t)
@@ -28,11 +32,16 @@ var TypeSelector = React.createClass({
   },
   openModal() {
     this.setState({open: true})
+    if (this.elemItem) {
+      this.elemItem.focus()
+    }
     document.body.style.overflow = "hidden"
   },
   closeModal() {
     this.setState({open: false})
-    // TODO: Focus the button
+    if (this.elemButton) {
+      this.elemButton.focus()
+    }
     document.body.style.overflow = ""
   },
   choose(type) {
@@ -43,11 +52,17 @@ var TypeSelector = React.createClass({
     return {open: false}
   },
   render() {
+    var self = this
     var state = this.state
     var props = this.props
     var types = props.includeNone ? Data.typesOrNone : Data.types
+    var ref = function(elem) {
+      self.elemButton = elem
+    }
     var button =
       $("button", {
+        ref,
+        tabIndex: 1,
         className:
           "type-selector__button " +
           "type-selector__main-button " +
