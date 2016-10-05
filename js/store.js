@@ -10,19 +10,25 @@ var table = {
     return {type1: action.value}
   },
   UpdateType2(state, action) {
-    var type1 = state.type1
-    var type2 = action.value
-    if (type1 === type2) {
-      return {type2: "none"}
-    } else {
-      return {type2}
-    }
+    return {type2: action.value}
+  }
+}
+
+function normalize(state) {
+  var type1 = state.type1
+  var type2 = state.type2
+  if (type1 === type2) {
+    return Object.assign({}, {type1, type2: "none"})
+  } else {
+    return state
   }
 }
 
 function reducer(state, action) {
   if (table.hasOwnProperty(action.type)) {
-    return Object.assign({}, state, table[action.type](state, action))
+    var handler = table[action.type]
+    var delta = handler(state, action)
+    return normalize(Object.assign({}, state, delta))
   } else {
     return state
   }
