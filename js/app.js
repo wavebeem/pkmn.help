@@ -20,6 +20,7 @@ function App(props) {
       includeNone: true
     }),
     $("hr"),
+    $("h2", {}, "matchups"),
     $(Matchups, {
       type1: props.type1,
       type2: props.type2

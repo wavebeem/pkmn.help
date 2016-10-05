@@ -4,7 +4,7 @@ var Data = require("./data")
 var $ = React.createElement
 
 var TypeSelector = React.createClass({
-  menu(hidden, types) {
+  menu(hidden, value, types) {
     var items = types.map(t =>
       $("button", {
         key: t,
@@ -12,6 +12,7 @@ var TypeSelector = React.createClass({
         className:
           "type-selector__button " +
           "type-selector__menu-button " +
+          (value === t ? "type-selector__menu-button--current " : "") +
           "type-" + t,
         onClick: () => this.choose(t)
       }, t)
@@ -54,7 +55,7 @@ var TypeSelector = React.createClass({
       }, props.value)
     return $("div", {className: "type-selector"},
       button,
-      this.menu(!state.open, types)
+      this.menu(!state.open, props.value, types)
     )
   }
 })

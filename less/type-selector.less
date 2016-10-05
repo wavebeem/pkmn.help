@@ -1,4 +1,5 @@
 .type-selector {
+  @padding: 6px;
   @menu_bg: white;
   color: black;
 
@@ -27,7 +28,7 @@
   &__main-button {
     display: block;
     width: 100%;
-    border-bottom: 4px solid fade(black, 15%);
+    border-bottom: 4px solid fade(black, 10%);
     border-radius: 3em;
   }
 
@@ -38,7 +39,7 @@
     right: 0;
     bottom: 0;
     background: @menu_bg;
-    padding: 0;
+    padding: @padding;
     overflow-y: auto;
     text-align: center;
     transition:
@@ -55,8 +56,16 @@
   &__menu-button {
     display: block;
     width: 100%;
-    margin: 1px 0;
-    border-radius: 0;
-    border-left: 6px solid fade(black, 10%);
+    margin: @padding 0;
+    border-radius: 30px;
+    border: 6px solid fade(black, 10%);
+
+    &--current {
+      box-shadow: inset 0 0 0 6px fade(white, 60%);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
