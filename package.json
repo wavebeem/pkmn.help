@@ -1,5 +1,5 @@
 {
-  "name": "pkmn-type-calc",
+  "name": "pkmn.help",
   "version": "1.0.0",
   "description": "Pokémon type calculator",
   "main": "main.js",
@@ -7,6 +7,7 @@
     "watch:js": "webpack -w js/main.js bundle.js",
     "watch:css": "chokidar 'less/**/*.less' -c 'npm run build:css'",
     "webpack": "webpack",
+    "build:ico": "convert favicon-*.png favicon.ico",
     "build:js": "webpack js/main.js bundle.js",
     "build:css": "lessc less/style.less bundle.css",
     "lint:fix": "eslint --fix .",
@@ -15,15 +16,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wavebeem/pkmn-type-calc.git"
+    "url": "git+https://github.com/wavebeem/pkmn.help.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wavebeem/pkmn-type-calc/issues"
+    "url": "https://github.com/wavebeem/pkmn.help/issues"
   },
-  "homepage": "https://github.com/wavebeem/pkmn-type-calc#readme",
+  "homepage": "https://github.com/wavebeem/pkmn.help#readme",
   "devDependencies": {
     "chokidar-cli": "^1.2.0",
     "eslint": "^3.7.0",
