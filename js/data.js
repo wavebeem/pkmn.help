@@ -50,18 +50,20 @@ var rawData = [
   "1 1 1 1 1 1 1 1 ½ 1 1 1 1 1 1 2 1 0",
   "1 ½ 1 1 1 1 1 2 1 1 1 1 1 2 1 1 ½ ½",
   "1 2 1 ½ 1 1 1 1 ½ ½ 1 1 1 1 1 2 2 1"
-].map(row => row.split(" ").map(rawDataStrToNumber))
+].map(function(row) {
+  return row.split(" ").map(rawDataStrToNumber)
+})
 
 function keyForTypes(t1, t2) {
   return t1 + " ~ " + t2
 }
 
 var pairs =
-  _.flatMap(rawData, (row, i) =>
-    _.map(row, (data, j) =>
-      [keyForTypes(types[i], types[j]), data]
-    )
-  )
+  _.flatMap(rawData, function(row, i) {
+    return _.map(row, function(data, j) {
+      return [keyForTypes(types[i], types[j]), data]
+    })
+  })
 
 var table = _.fromPairs(pairs)
 
@@ -88,12 +90,13 @@ var typesOrNone = types.concat("none")
 
 function mapToObj(array, fn) {
   var obj = {}
-  array.forEach(x => obj[x] = fn(x))
+  array.forEach(function(x) { obj[x] = fn(x) })
   return obj
 }
 
 function matchups(t1, t2) {
-  var allMatchups = mapToObj(types, t => matchupFor(t1, t2, t))
+  var allMatchups =
+    mapToObj(types, function(t) { return matchupFor(t1, t2, t) })
   return _.invertBy(allMatchups)
 }
 global.matchups = matchups

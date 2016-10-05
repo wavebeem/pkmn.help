@@ -8,7 +8,7 @@ var App = require("./app")
 
 var $ = React.createElement
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener("DOMContentLoaded", function() {
   var root = document.getElementById("react-root")
   var component = $(ReactRedux.Provider, {store}, $(App))
   ReactDOM.render(component, root)

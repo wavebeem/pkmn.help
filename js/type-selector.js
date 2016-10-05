@@ -5,8 +5,9 @@ var $ = React.createElement
 
 var TypeSelector = React.createClass({
   menu(hidden, value, types) {
-    var items = types.map(t =>
-      $("button", {
+    var self = this
+    var items = types.map(function(t) {
+      return $("button", {
         key: t,
         value: t,
         className:
@@ -14,9 +15,9 @@ var TypeSelector = React.createClass({
           "type-selector__menu-button " +
           (value === t ? "type-selector__menu-button--current " : "") +
           "type-" + t,
-        onClick: () => this.choose(t)
+        onClick: function() { self.choose(t) }
       }, t)
-    )
+    })
     var className =
       "type-selector__menu " +
       (hidden ? "type-selector__menu--hidden " : "")
