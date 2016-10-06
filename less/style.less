@@ -85,12 +85,13 @@ footer {
 }
 
 h1 {
+  @border_size: 12px;
   @circle_size: 40px;
   text-align: center;
   position: relative;
   background: #c00;
   color: white;
-  border-bottom: 8px solid black;
+  border-bottom: @border_size solid black;
   padding: 20px;
   padding-top: (1.0 * @circle_size);
   padding-bottom: (1.5 * @circle_size);
@@ -102,12 +103,15 @@ h1 {
     content: " ";
     background: white;
     border: 8px solid black;
+    box-shadow:
+      inset 0 0 0 5px white,
+      inset 0 0 0 7px #ccc;
     width: @circle_size;
     height: @circle_size;
     border-radius: 50%;
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: (-@border_size / 2);
     transform: translateX(-50%) translateY(50%);
   }
 }
