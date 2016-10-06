@@ -1,8 +1,8 @@
 #!/bin/bash
 set -e
 
-# dest=s3://mockbrian.com/pkmn/
-dest=s3://dev.mockbrian.com/
+dest=s3://pkmn.help/
+# dest=s3://dev.mockbrian.com/
 
 files=(
   favicon.ico

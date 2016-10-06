@@ -4,11 +4,10 @@
   "description": "Pokémon type calculator",
   "main": "main.js",
   "scripts": {
-    "watch:js": "webpack -w js/main.js bundle.js",
+    "watch:js": "webpack -w",
     "watch:css": "chokidar 'less/**/*.less' -c 'npm run build:css'",
-    "webpack": "webpack",
     "build:ico": "convert favicon-*.png favicon.ico",
-    "build:js": "webpack js/main.js bundle.js",
+    "build:js": "webpack",
     "build:css": "lessc less/style.less bundle.css",
     "lint:fix": "eslint --fix .",
     "lint": "eslint .",
