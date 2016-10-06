@@ -9,12 +9,14 @@ function App(props) {
   return $("main", {},
     $("h2", {}, "primary type"),
     $(TypeSelector, {
+      title: "choose primary type",
       value: props.type1,
       onChange: props.updateType1,
       includeNone: false
     }),
     $("h2", {}, "secondary type"),
     $(TypeSelector, {
+      title: "choose secondary type",
       value: props.type2,
       onChange: props.updateType2,
       includeNone: true

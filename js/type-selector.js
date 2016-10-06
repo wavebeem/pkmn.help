@@ -4,7 +4,7 @@ var Data = require("./data")
 var $ = React.createElement
 
 var TypeSelector = React.createClass({
-  menu(hidden, value, types) {
+  menu(title, hidden, value, types) {
     var self = this
     var items = types.map(function(t) {
       function ref(elem) {
@@ -26,7 +26,7 @@ var TypeSelector = React.createClass({
       "type-selector__menu " +
       (hidden ? "type-selector__menu--hidden " : "")
     return $("div", {className},
-      $("h3", {}, "pick a type"),
+      $("h3", {}, title),
       items
     )
   },
@@ -71,7 +71,7 @@ var TypeSelector = React.createClass({
       }, props.value)
     return $("div", {className: "type-selector"},
       button,
-      this.menu(!state.open, props.value, types)
+      this.menu(props.title, !state.open, props.value, types)
     )
   }
 })
