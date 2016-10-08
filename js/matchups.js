@@ -15,7 +15,8 @@ function section(title, info) {
   }
   return $("div", {className: "matchups"},
     $("h3", {}, title),
-    info.map(badge)
+    info.map(badge),
+    $("hr")
   )
 }
 

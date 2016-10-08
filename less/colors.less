@@ -1,23 +1,39 @@
+.W(@color) {
+  background: @color;
+  color: white;
+  text-shadow:
+    0 1px 0 fade(black, 40%),
+    0 0 8px fade(black, 40%);
+}
+
+.B(@color) {
+  background: @color;
+  color: black;
+  text-shadow:
+    0 1px 0 fade(white, 20%),
+    0 0 8px fade(white, 50%);
+}
+
 .type {
-  &-fire       { background: #f08030; }
-  &-water      { background: #6890f0; }
-  &-grass      { background: #78c850; }
-  &-electric   { background: #f8d030; }
-  &-psychic    { background: #f85888; }
-  &-ice        { background: #98d8d8; }
-  &-dragon     { background: #7038f8; }
-  &-dark       { background: #705848; }
-  &-fairy      { background: #ee99ac; }
+  &-fire       { .B(#f08030); }
+  &-water      { .B(#6890f0); }
+  &-grass      { .B(#78c850); }
+  &-electric   { .B(#f8d030); }
+  &-psychic    { .B(#f85888); }
+  &-ice        { .B(#98d8d8); }
+  &-dragon     { .W(#7038f8); }
+  &-dark       { .W(#705848); }
+  &-fairy      { .B(#ee99ac); }
 
-  &-normal     { background: #a8a878; }
-  &-fighting   { background: #c03028; }
-  &-flying     { background: #a890f0; }
-  &-poison     { background: #a040a0; }
-  &-ground     { background: #e0c068; }
-  &-rock       { background: #b8a038; }
-  &-bug        { background: #a8b820; }
-  &-ghost      { background: #705898; }
-  &-steel      { background: #b8b8d0; }
+  &-normal     { .B(#a8a878); }
+  &-fighting   { .W(#c03028); }
+  &-flying     { .B(#a890f0); }
+  &-poison     { .W(#a040a0); }
+  &-ground     { .B(#e0c068); }
+  &-rock       { .B(#b8a038); }
+  &-bug        { .B(#a8b820); }
+  &-ghost      { .W(#705898); }
+  &-steel      { .B(#b8b8d0); }
 
-  &-none       { background: #aaaaaa; }
+  &-none       { .W(#aaaaaa); }
 }

@@ -21,10 +21,7 @@ var TypeSelector = React.createClass({
     var className =
       "type-selector__menu " +
       (hidden ? "type-selector__menu--hidden " : "")
-    return $("div", {className},
-      $("h3", {}, title),
-      items
-    )
+    return $("div", {className}, items)
   },
   toggleModal() {
     if (this.state.open) {
@@ -38,6 +35,7 @@ var TypeSelector = React.createClass({
   },
   closeModal() {
     this.setState({open: false})
+    document.body.scrollTop = 0
     if (this.elemButton) {
       this.elemButton.focus()
     }

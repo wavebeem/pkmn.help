@@ -1,18 +1,8 @@
 .type-selector {
   @padding: 6px;
-  // @menu_bg: #222;
-  @menu_bg: fade(#222, 90%);
-  @menu_fg: white;
-  color: black;
-
-  h3 {
-    color: inherit;
-    margin: 1em 0;
-  }
+  @menu_bg: #ddd;
 
   &__button {
-    .nice_text_shadow;
-
     cursor: pointer;
     border: 0;
     font: inherit;
@@ -32,17 +22,32 @@
   }
 
   &__menu {
+    position: relative;
     background: @menu_bg;
-    color: @menu_fg;
-    margin: @padding -10px;
+    margin: -10px;
+    margin-top: 10px;
+    margin-bottom: @padding;
     padding: @padding;
-    padding-top: 0;
-    padding-bottom: (3 * @padding);
-    border: 2px solid white;
-    box-shadow: 0 1px 10px fade(black, 50%);
+    padding-left: @padding;
+    padding-right: @padding;
+    border: 1px solid transparent;
     border-radius: 8px;
     text-align: center;
     animation: FadeIn 300ms;
+
+    &:before {
+      @size: 10px;
+      bottom: 100%;
+      left: 50%;
+      border: @size solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-bottom-color: @menu_bg;
+      margin-left: (-@size);
+    }
 
     @media (max-width: @mobile_width) {
       border-left: 0;
@@ -56,11 +61,22 @@
   }
 
   &__menu-button {
-    margin: @padding 0;
-    border: 2px solid fade(white, 50%);
+    @r: 4px;
+    margin: 1px 0;
+    border: 1px solid fade(black, 20%);
+    box-shadow: 0 0 0 1px lighten(@menu_bg, 10%);
+    border-radius: 0;
+
+    &:first-child {
+      border-top-left-radius: @r;
+      border-top-right-radius: @r;
+    }
 
     &:last-child {
       margin-bottom: 0;
+      box-shadow: 0;
+      border-bottom-left-radius: @r;
+      border-bottom-right-radius: @r;
     }
   }
 }
