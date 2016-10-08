@@ -4,15 +4,11 @@ var Data = require("./data")
 var $ = React.createElement
 
 var TypeSelector = React.createClass({
+  displayName: "TypeSelector",
   menu(title, hidden, value, types) {
     var self = this
     var items = types.map(function(t) {
-      function ref(elem) {
-        self.elemItem = elem
-      }
       return $("button", {
-        ref: t === self.props.value ? ref : null,
-        tabIndex: 2,
         key: t,
         value: t,
         className:
@@ -30,19 +26,21 @@ var TypeSelector = React.createClass({
       items
     )
   },
+  toggleModal() {
+    if (this.state.open) {
+      this.closeModal()
+    } else {
+      this.openModal()
+    }
+  },
   openModal() {
     this.setState({open: true})
-    if (this.elemItem) {
-      this.elemItem.focus()
-    }
-    document.body.style.overflow = "hidden"
   },
   closeModal() {
     this.setState({open: false})
     if (this.elemButton) {
       this.elemButton.focus()
     }
-    document.body.style.overflow = ""
   },
   choose(type) {
     this.props.onChange(type)
@@ -61,13 +59,12 @@ var TypeSelector = React.createClass({
     }
     var button =
       $("button", {
-        ref,
-        tabIndex: 1,
+        ref: ref,
         className:
           "type-selector__button " +
           "type-selector__main-button " +
           "type-" + props.value,
-        onClick: this.openModal
+        onClick: this.toggleModal
       }, props.value)
     return $("div", {className: "type-selector"},
       button,

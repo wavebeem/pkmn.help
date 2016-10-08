@@ -1,6 +1,7 @@
 @bar_bg: white;
 @bar_fg: #888;
 @body_padding: 16px;
+@mobile_width: 600px;
 
 .sans_serif() {
   font-family:
@@ -55,7 +56,7 @@ main {
 main,
 footer {
   margin: 0 auto;
-  max-width: 600px;
+  max-width: @mobile_width;
 }
 
 footer {

@@ -32,24 +32,26 @@
   }
 
   &__menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
     background: @menu_bg;
     color: @menu_fg;
+    margin: @padding -10px;
     padding: @padding;
-    overflow-y: auto;
+    padding-top: 0;
+    padding-bottom: (3 * @padding);
+    border: 2px solid white;
+    box-shadow: 0 1px 10px fade(black, 50%);
+    border-radius: 8px;
     text-align: center;
-    transition:
-      300ms opacity,
-      300ms transform;
-    opacity: 1;
+    animation: FadeIn 300ms;
+
+    @media (max-width: @mobile_width) {
+      border-left: 0;
+      border-right: 0;
+      border-radius: 0;
+    }
 
     &--hidden {
-      opacity: 0;
-      transform: translateY(100vh);
+      display: none;
     }
   }
 
@@ -61,4 +63,9 @@
       margin-bottom: 0;
     }
   }
+}
+
+@keyframes FadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
