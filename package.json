@@ -1,13 +1,12 @@
 {
+  "private": true,
   "name": "pkmn.help",
-  "version": "1.0.0",
   "description": "Pokémon type calculator",
-  "main": "main.js",
   "scripts": {
     "watch:js": "webpack -w",
     "watch:css": "chokidar 'less/**/*.less' -c 'npm run build:css'",
     "build:ico": "convert favicon-*.png favicon.ico",
-    "build:js": "webpack",
+    "build:js": "webpack -p",
     "build:css": "lessc less/style.less bundle.css",
     "lint:fix": "eslint --fix .",
     "lint": "eslint .",
@@ -18,13 +17,17 @@
     "url": "git+https://github.com/wavebeem/pkmn.help.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Brian Mock <brian@mockbrian.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wavebeem/pkmn.help/issues"
   },
   "homepage": "https://github.com/wavebeem/pkmn.help#readme",
   "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-babili": "0.0.5",
+    "babel-preset-es2015": "^6.16.0",
     "chokidar-cli": "^1.2.0",
     "eslint": "^3.7.0",
     "less": "^2.7.1",

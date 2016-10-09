@@ -99,7 +99,6 @@ function matchups(t1, t2) {
     mapToObj(types, function(t) { return matchupFor(t1, t2, t) })
   return _.invertBy(allMatchups)
 }
-global.matchups = matchups
 
 exports.matchups = matchups
 exports.typesOrNone = typesOrNone
