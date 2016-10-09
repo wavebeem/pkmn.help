@@ -1,6 +1,5 @@
 dist
 node_modules
 
-/bundle.css
-/bundle.js
+/bundle.*
 /favicon-*.png

@@ -6,18 +6,17 @@ var $ = React.createElement
 var TypeSelector = React.createClass({
   displayName: "TypeSelector",
   menu(title, hidden, value, types) {
-    var self = this
-    var items = types.map(function(t) {
-      return $("button", {
+    var items = types.map(t =>
+      $("button", {
         key: t,
         value: t,
         className:
           "type-selector__button " +
           "type-selector__menu-button " +
           "type-" + t,
-        onClick: function() { self.choose(t) }
+        onClick: () => this.choose(t)
       }, t)
-    })
+    )
     var className =
       "type-selector__menu " +
       (hidden ? "type-selector__menu--hidden " : "")
@@ -48,12 +47,11 @@ var TypeSelector = React.createClass({
     return {open: false}
   },
   render() {
-    var self = this
     var state = this.state
     var props = this.props
     var types = props.includeNone ? Data.typesOrNone : Data.types
-    var ref = function(elem) {
-      self.elemButton = elem
+    var ref = elem => {
+      this.elemButton = elem
     }
     var button =
       $("button", {
