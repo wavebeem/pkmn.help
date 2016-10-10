@@ -6,7 +6,7 @@ var Matchups = require("./matchups")
 var $ = React.createElement
 
 function App(props) {
-  return $("main", {},
+  return $("main", {className: "ph2"},
     $("h2", {}, "primary type"),
     $(TypeSelector, {
       title: "choose primary type",

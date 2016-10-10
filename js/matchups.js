@@ -2,18 +2,25 @@
 
 var React = require("react")
 var Data = require("./data")
+var classes = require("./classes")
 
 var $ = React.createElement
 
 function badge(type) {
-  return $("div", {key: type, className: "badge type-" + type}, type)
+  var className = classes(
+    "badge",
+    "type-" + type,
+    "ttu tc b ba br1",
+    "border--shaded"
+  )
+  return $("div", {key: type, className}, type)
 }
 
 function section(title, info) {
   if (!info) {
     return null
   }
-  return $("div", {className: "matchups"},
+  return $("div", {className: "tc"},
     $("h3", {}, title),
     info.map(badge),
     $("hr")

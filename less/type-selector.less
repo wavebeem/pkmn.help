@@ -1,38 +1,14 @@
 .type-selector {
   @padding: 6px;
-  @menu_bg: #ddd;
+  @menu_bg: #ccc;
 
   &__button {
-    cursor: pointer;
-    border: 0;
-    font: inherit;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
     padding: 1em 3em;
-    border-radius: 3em;
-    display: block;
-    width: 100%;
-    border-bottom: 4px solid fade(black, 10%);
-
-    &:focus {
-      outline: 0;
-      box-shadow: inset 0 0 0 3px fade(white, 50%);
-    }
   }
 
   &__menu {
     position: relative;
     background: @menu_bg;
-    margin: -10px;
-    margin-top: 10px;
-    margin-bottom: @padding;
-    padding: @padding;
-    padding-left: @padding;
-    padding-right: @padding;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    text-align: center;
     animation: FadeIn 300ms;
 
     &:before {
@@ -48,40 +24,5 @@
       border-bottom-color: @menu_bg;
       margin-left: (-@size);
     }
-
-    @media (max-width: @mobile_width) {
-      border-left: 0;
-      border-right: 0;
-      border-radius: 0;
-    }
-
-    &--hidden {
-      display: none;
-    }
   }
-
-  &__menu-button {
-    @r: 4px;
-    margin: 1px 0;
-    border: 1px solid fade(black, 20%);
-    box-shadow: 0 0 0 1px lighten(@menu_bg, 10%);
-    border-radius: 0;
-
-    &:first-child {
-      border-top-left-radius: @r;
-      border-top-right-radius: @r;
-    }
-
-    &:last-child {
-      margin-bottom: 0;
-      box-shadow: 0;
-      border-bottom-left-radius: @r;
-      border-bottom-right-radius: @r;
-    }
-  }
-}
-
-@keyframes FadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
