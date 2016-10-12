@@ -12,12 +12,11 @@ var TypeSelector = React.createClass({
       $("button", {
         key: t,
         className: classes(
-          "type-selector__button",
-          "type-selector__menu-button",
           "type-" + t,
           "db w-100",
           "ba b--white",
           "ttu b pointer",
+          "pa3",
           "focus-border-super",
           i === 0 && "br1 br--top",
           i < n && "bb-0",
@@ -27,7 +26,9 @@ var TypeSelector = React.createClass({
       }, t)
     )
     var className = classes(
-      "type-selector__menu",
+      "animation-FadeIn-300ms",
+      "relative balloon-top",
+      "bg-moon-gray b--moon-gray",
       "br2 pa2 mv3",
       hidden && "dn"
     )
@@ -68,12 +69,12 @@ var TypeSelector = React.createClass({
       $("button", {
         ref: ref,
         className: classes(
-          "type-selector__button",
-          "type-selector__main-button",
           "type-" + props.value,
           "db w-100 mv2",
           "focus-border",
-          "ttu b ba bt-0 bl-0 br-0 bw2 pointer br-pill bb border--shaded"
+          "b--black-10",
+          "pa3",
+          "ttu b ba bt-0 bl-0 br-0 bw2 pointer br-pill bb b"
         ),
         onClick: this.toggleModal
       }, props.value)

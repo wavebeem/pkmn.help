@@ -5,8 +5,17 @@
   to { opacity: 1; }
 }
 
-.border--shaded {
-  border-color: fade(black, 10%);
+.animation-FadeIn-300ms {
+  animation: FadeIn 300ms;
+}
+
+.b--moon-gray {
+  border-color: #ccc;
+}
+
+.margin-horiz-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .boxshadow-white-1px {
@@ -25,69 +34,15 @@
   border-bottom-left-radius: 0;
 }
 
-@body_padding: 16px;
-@mobile_width: 600px;
-
-h1 a:focus,
-footer a:focus {
-  outline: 3px solid currentColor;
-  outline-offset: 2px;
-}
-
-body {
-  background: #fff;
-  color: #555;
-}
-
-main,
-footer {
-  margin: 0 auto;
-  max-width: @mobile_width;
-}
-
-footer {
-  padding: @body_padding;
-  margin-top: 0;
-  color: #666;
-  font-size: 0.9rem;
-  display: block;
-
-  a {
-    color: black;
-    text-decoration: none;
-    border-bottom: 1px solid currentColor;
-  }
-
-  p {
-    margin: 0 auto;
-    display: block;
-    max-width: 800px;
-    margin-top: @body_padding;
-
-    &:first-child {
-      margin-top: 0;
-    }
-  }
-}
-
-h1 {
+.pokeball-header {
   @border_size: 12px;
   @circle_size: 40px;
-  text-align: center;
-  position: relative;
-  background: #c00;
-  color: white;
   border-bottom: @border_size solid black;
   padding: 20px;
   padding-top: (1.0 * @circle_size);
   padding-bottom: (1.5 * @circle_size);
   margin-top: 0;
   margin-bottom: @circle_size;
-
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
 
   // The little Pokéball button
   &:after {
@@ -107,36 +62,31 @@ h1 {
   }
 }
 
-h2 {
-  color: #777;
-  margin-top: 1.5em;
-  margin-bottom: 0.33em;
-  text-align: center;
-}
-
-h3 {
-  color: #444;
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  text-align: center;
-}
-
 .badge {
-  padding: 10px;
   margin: 3px;
   margin-top: 0;
   margin-left: 0;
   min-width: 7em;
-  display: inline-block;
-  color: white;
 }
 
-hr {
-  margin: 2em 0;
+.subtle-hr {
   border: 0;
   background: fade(black, 5%);
   height: 1px;
 }
 
-@import "type-selector";
+.balloon-top:before {
+  @size: 0.75em;
+  bottom: 100%;
+  left: 50%;
+  border: @size solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: inherit;
+  margin-left: (-@size);
+}
+
 @import "colors";

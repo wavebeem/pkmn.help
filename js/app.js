@@ -6,23 +6,24 @@ var Matchups = require("./matchups")
 var $ = React.createElement
 
 function App(props) {
-  return $("main", {className: "ph2"},
-    $("h2", {}, "primary type"),
+  var classH2 = "tc f3"
+  return $("main", {className: "ph3 pt1 pb2 margin-horiz-auto"},
+    $("h2", {className: classH2 }, "primary type"),
     $(TypeSelector, {
       title: "choose primary type",
       value: props.type1,
       onChange: props.updateType1,
       includeNone: false
     }),
-    $("h2", {}, "secondary type"),
+    $("h2", {className: classH2}, "secondary type"),
     $(TypeSelector, {
       title: "choose secondary type",
       value: props.type2,
       onChange: props.updateType2,
       includeNone: true
     }),
-    $("hr"),
-    $("h2", {}, "matchups"),
+    $("hr", {className: "subtle-hr mv4"}),
+    $("h2", {className: classH2}, "matchups"),
     $(Matchups, {
       type1: props.type1,
       type2: props.type2
