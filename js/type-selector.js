@@ -1,25 +1,37 @@
 var React = require("react")
 var Data = require("./data")
+var classes = require("./classes")
 
 var $ = React.createElement
 
 var TypeSelector = React.createClass({
   displayName: "TypeSelector",
   menu(title, hidden, value, types) {
-    var items = types.map(t =>
+    var n = types.length - 1
+    var items = types.map((t, i) =>
       $("button", {
         key: t,
-        value: t,
-        className:
-          "type-selector__button " +
-          "type-selector__menu-button " +
+        className: classes(
           "type-" + t,
+          "db w-100",
+          "ba b--white",
+          "ttu b pointer",
+          "pa3",
+          "focus-border-super",
+          i === 0 && "br1 br--top",
+          i < n && "bb-0",
+          i === n && "br1 br--bottom"
+        ),
         onClick: () => this.choose(t)
       }, t)
     )
-    var className =
-      "type-selector__menu " +
-      (hidden ? "type-selector__menu--hidden " : "")
+    var className = classes(
+      "animation-FadeIn-300ms",
+      "relative balloon-top",
+      "bg-moon-gray b--moon-gray",
+      "br2 pa2 mv3",
+      hidden && "dn"
+    )
     return $("div", {className}, items)
   },
   toggleModal() {
@@ -56,10 +68,14 @@ var TypeSelector = React.createClass({
     var button =
       $("button", {
         ref: ref,
-        className:
-          "type-selector__button " +
-          "type-selector__main-button " +
+        className: classes(
           "type-" + props.value,
+          "db w-100 mv2",
+          "focus-border",
+          "b--black-10",
+          "pa3 f4",
+          "ttu b ba bt-0 bl-0 br-0 bw2 pointer br-pill bb b"
+        ),
         onClick: this.toggleModal
       }, props.value)
     return $("div", {className: "type-selector"},

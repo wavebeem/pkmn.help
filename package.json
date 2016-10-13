@@ -8,6 +8,7 @@
     "build:ico": "convert favicon-*.png favicon.ico",
     "build:js": "webpack -p",
     "build:css": "lessc less/style.less bundle.css",
+    "postbuild:css": "cleancss bundle.css -o bundle.min.css",
     "lint:fix": "eslint --fix .",
     "lint": "eslint .",
     "test": "npm run lint"
@@ -29,6 +30,7 @@
     "babel-preset-babili": "0.0.5",
     "babel-preset-es2015": "^6.16.0",
     "chokidar-cli": "^1.2.0",
+    "clean-css": "^3.4.20",
     "eslint": "^3.7.0",
     "less": "^2.7.1",
     "webpack": "^1.13.2"
@@ -38,6 +40,7 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
-    "redux": "^3.6.0"
+    "redux": "^3.6.0",
+    "tachyons": "^4.5.3"
   }
 }
