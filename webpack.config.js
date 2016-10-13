@@ -3,6 +3,12 @@
 var path = require("path")
 var webpack = require("webpack")
 
+// Hack to put the NODE_ENV to production when we ask for minified code.
+var isProd = process.argv.indexOf("-p") >= 0
+if (isProd) {
+  process.env.NODE_ENV = "production"
+}
+
 module.exports = {
   entry: [
     path.join(__dirname, "js/main.js")
@@ -24,8 +30,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.DefinePlugin({
-      "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV || "development")
-    }),
+    new webpack.EnvironmentPlugin(["NODE_ENV"]),
   ]
 }
