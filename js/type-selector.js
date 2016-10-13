@@ -16,7 +16,7 @@ var TypeSelector = React.createClass({
           "db w-100",
           "ba b--white",
           "ttu b pointer",
-          "pa3",
+          "pa3 f2",
           "focus-border-super",
           i === 0 && "br1 br--top",
           i < n && "bb-0",
