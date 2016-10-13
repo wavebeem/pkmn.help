@@ -1,8 +1,9 @@
 #!/bin/bash
 set -e
 
-dest="s3://pkmn.help/"
-# dest="s3://dev.mockbrian.com/"
+cf_distro="E3U8PXS6FWX8U8"
+prod="s3://pkmn.help/"
+dev="s3://dev.mockbrian.com/"
 
 files=(
   "favicon.ico"
@@ -16,5 +17,13 @@ npm run build:css
 rm -rf dist
 mkdir dist
 cp -v "${files[@]}" dist/
+
 cd dist
-s3cmd sync -P ./ "$dest"
+if [[ $1 = "-p" ]]; then
+  aws s3 sync --acl public-read ./ "$prod"
+  aws cloudfront create-invalidation \
+    --distribution-id "$cf_distro" \
+    --paths "/*"
+else
+  aws s3 sync --acl public-read ./ "$dev"
+fi
