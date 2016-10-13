@@ -11,7 +11,7 @@ function badge(type) {
     "badge",
     "dib pa2",
     "type-" + type,
-    "ttu tc b ba br1",
+    "ttu tc b ba br1 f4",
     "b--black-10"
   )
   return $("div", {key: type, className}, type)

@@ -7,7 +7,7 @@ var $ = React.createElement
 
 function App(props) {
   var classH2 = "tc f3"
-  return $("main", {className: "ph3 pt1 pb2 margin-horiz-auto"},
+  return $("main", {className: "ph3 pt1 pb2 mw6 margin-horiz-auto"},
     $("h2", {className: classH2 }, "primary type"),
     $(TypeSelector, {
       title: "choose primary type",

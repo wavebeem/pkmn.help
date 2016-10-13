@@ -73,7 +73,7 @@ var TypeSelector = React.createClass({
           "db w-100 mv2",
           "focus-border",
           "b--black-10",
-          "pa3",
+          "pa3 f4",
           "ttu b ba bt-0 bl-0 br-0 bw2 pointer br-pill bb b"
         ),
         onClick: this.toggleModal
