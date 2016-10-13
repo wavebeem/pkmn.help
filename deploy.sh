@@ -1,14 +1,14 @@
 #!/bin/bash
 set -e
 
-# dest=s3://pkmn.help/
-dest=s3://dev.mockbrian.com/
+dest="s3://pkmn.help/"
+# dest="s3://dev.mockbrian.com/"
 
 files=(
-  favicon.ico
-  bundle.js
-  bundle.css
-  index.html
+  "favicon.ico"
+  "bundle.js"
+  "bundle.min.css"
+  "index.html"
 )
 
 npm run build:js
