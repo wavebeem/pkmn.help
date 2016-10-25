@@ -5,9 +5,7 @@ var webpack = require("webpack")
 
 // Hack to put the NODE_ENV to production when we ask for minified code.
 var isProd = process.argv.indexOf("-p") >= 0
-if (isProd) {
-  process.env.NODE_ENV = "production"
-}
+process.env.NODE_ENV = isProd ? "production" : "development"
 
 module.exports = {
   entry: [
