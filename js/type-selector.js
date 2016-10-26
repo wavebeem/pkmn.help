@@ -4,23 +4,17 @@ var classes = require("./classes")
 
 var $ = React.createElement
 
-var roundingInner = "br2"
-var roundingOuter = "br3"
-
-// var roundingInner = "br-pill"
-// var roundingOuter = "br-pill"
-
 var labelClasses = [
-  "type-label",
-  "f5",
+  "db",
+  "f5 f4-l",
   "min-width--7em",
   "pv2 ph2 ma2",
-  roundingInner
+  "br-pill"
 ]
 
 function label(selected, type) {
   var className = classes(
-    selected && "black sunken bg-white-90",
+    selected && "black sunken bg-white-90 text-shadow-white",
     labelClasses
   )
   return $("span", {className}, type)
@@ -35,10 +29,10 @@ var buttonClasses = [
   "dib",
   "ttu b pointer",
   "pa0",
-  roundingOuter
+  "br-pill"
 ]
 
-var classSizing = "dib w-33-ns w-50 pa1"
+var classSizing = "dib w-33-l w-50 pa1"
 
 function ClassicTypeSelector(props) {
   var types = props.includeNone ? Data.typesOrNone : Data.types
