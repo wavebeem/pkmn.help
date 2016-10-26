@@ -7,22 +7,23 @@ var $ = React.createElement
 
 function App(props) {
   var classH2 = "tc f3"
+  var selector = TypeSelector
   return $("main", {className: "ph3 pt1 pb2 mw6 margin-horiz-auto"},
-    $("h2", {className: classH2 }, "primary type"),
-    $(TypeSelector, {
+    $("h2", {className: classH2}, "choose primary type"),
+    $(selector, {
       title: "choose primary type",
       value: props.type1,
       onChange: props.updateType1,
       includeNone: false
     }),
-    $("h2", {className: classH2}, "secondary type"),
-    $(TypeSelector, {
+    $("h2", {className: classH2}, "choose secondary type"),
+    $(selector, {
       title: "choose secondary type",
       value: props.type2,
       onChange: props.updateType2,
       includeNone: true
     }),
-    $("hr", {className: "subtle-hr mv4"}),
+    $("hr", {className: "dn-ns subtle-hr mv4"}),
     $("h2", {className: classH2}, "matchups"),
     $(Matchups, {
       type1: props.type1,

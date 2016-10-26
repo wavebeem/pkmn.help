@@ -4,85 +4,66 @@ var classes = require("./classes")
 
 var $ = React.createElement
 
-var TypeSelector = React.createClass({
-  displayName: "TypeSelector",
-  menu(title, hidden, value, types) {
-    var n = types.length - 1
-    var items = types.map((t, i) =>
-      $("button", {
-        key: t,
-        className: classes(
-          "type-" + t,
-          "db w-100",
-          "ba b--white",
-          "ttu b pointer",
-          "pa3 f2",
-          "focus-border-super",
-          i === 0 && "br1 br--top",
-          i < n && "bb-0",
-          i === n && "br1 br--bottom"
-        ),
-        onClick: () => this.choose(t)
-      }, t)
-    )
-    var className = classes(
-      "animation-FadeIn-300ms",
-      "relative balloon-top",
-      "bg-moon-gray b--moon-gray",
-      "br2 pa2 mv3",
-      hidden && "dn"
-    )
-    return $("div", {className}, items)
-  },
-  toggleModal() {
-    if (this.state.open) {
-      this.closeModal()
-    } else {
-      this.openModal()
-    }
-  },
-  openModal() {
-    this.setState({open: true})
-  },
-  closeModal() {
-    this.setState({open: false})
-    document.body.scrollTop = 0
-    if (this.elemButton) {
-      this.elemButton.focus()
-    }
-  },
-  choose(type) {
-    this.props.onChange(type)
-    this.closeModal()
-  },
-  getInitialState() {
-    return {open: false}
-  },
-  render() {
-    var state = this.state
-    var props = this.props
-    var types = props.includeNone ? Data.typesOrNone : Data.types
-    var ref = elem => {
-      this.elemButton = elem
-    }
-    var button =
-      $("button", {
-        ref: ref,
-        className: classes(
-          "type-" + props.value,
-          "db w-100 mv2",
-          "focus-border",
-          "b--black-10",
-          "pa3 f4",
-          "ttu b ba bt-0 bl-0 br-0 bw2 pointer br-pill bb b"
-        ),
-        onClick: this.toggleModal
-      }, props.value)
-    return $("div", {className: "type-selector"},
-      button,
-      this.menu(props.title, !state.open, props.value, types)
-    )
-  }
-})
+var roundingInner = "br2"
+var roundingOuter = "br3"
 
-module.exports = TypeSelector
+// var roundingInner = "br-pill"
+// var roundingOuter = "br-pill"
+
+var labelClasses = [
+  "type-label",
+  "f5",
+  "min-width--7em",
+  "pv2 ph2 ma2",
+  roundingInner
+]
+
+function label(selected, type) {
+  var className = classes(
+    selected && "black sunken bg-white-90",
+    labelClasses
+  )
+  return $("span", {className}, type)
+}
+
+var buttonClasses = [
+  "bw2",
+  "chunky-focus",
+  "bn",
+  "bn",
+  "w-100",
+  "dib",
+  "ttu b pointer",
+  "pa0",
+  roundingOuter
+]
+
+var classSizing = "dib w-33-ns w-50 pa1"
+
+function ClassicTypeSelector(props) {
+  var types = props.includeNone ? Data.typesOrNone : Data.types
+  var onChange = props.onChange
+  var value = props.value
+
+  var makeLabel = type =>
+    label(type === value, type)
+
+  var makeButton = type =>
+    $("button", {
+      className: classes(
+        type === value
+          ? "weird-shadow"
+          : "bottom-edge",
+        "type-" + type,
+        buttonClasses
+      ),
+      onClick: () => onChange(type)
+    }, makeLabel(type))
+
+  var makeWrapper = type =>
+    $("div", {className: classSizing, key: type}, makeButton(type))
+
+  return $("div", {}, types.map(makeWrapper))
+}
+
+module.exports = ClassicTypeSelector

@@ -11,8 +11,9 @@ function badge(type) {
     "badge",
     "dib pa2",
     "type-" + type,
-    "ttu tc b ba br1 f4",
-    "b--black-10"
+    "w-33 w-25-ns",
+    // "min-width--7em",
+    "ttu tc b f6"
   )
   return $("div", {key: type, className}, type)
 }
@@ -22,9 +23,8 @@ function section(title, info) {
     return null
   }
   return $("div", {},
-    $("h3", {className: "f4 dark-gray"}, title),
-    info.map(badge),
-    $("hr", {className: "subtle-hr mv4"})
+    $("h3", {className: "f4 mt3 mb2 dark-gray"}, title),
+    info.map(badge)
   )
 }
 
