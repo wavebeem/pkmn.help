@@ -1,7 +1,7 @@
 var Redux = require("redux")
 
 var initialState = {
-  tab: 0,
+  tab: 1,
   type0: "normal",
   type1: "normal",
   type2: "none"

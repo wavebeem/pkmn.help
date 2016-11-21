@@ -7,9 +7,9 @@ function makeTab(props, index, title) {
   var cur = props.current
   var className = classes([
     "pv3 ph4",
-    "f6",
-    "link",
-    "focus-inner-ring",
+    "f5",
+    "dib",
+    "no-outline tab-bottom-focus",
     "b ttu",
     "ba b--transparent",
     "bg-transparent",
@@ -26,8 +26,8 @@ function makeTab(props, index, title) {
 
 function makeTabBar(props) {
   var className = classes([
-    "flex justify-center w-100",
-    "bb b--black-20 tab-bar-bottom-shadow",
+    "tc w-100",
+    "tab-bar-bottom-shadow",
     "mt5"
   ])
   return $("div", {className},
