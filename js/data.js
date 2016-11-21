@@ -75,12 +75,12 @@ function matchupFor(ta1, ta2, tb) {
   }
 
   var x3 = x1 * x2
-  if (x3 === 4.00) return "takesQuadrupleFrom"
-  if (x3 === 2.00) return "takesDoubleFrom"
-  if (x3 === 1.00) return "takesNormalFrom"
-  if (x3 === 0.50) return "takesHalfFrom"
-  if (x3 === 0.25) return "takesQuarterFrom"
-  if (x3 === 0.00) return "takesZeroFrom"
+  if (x3 === 4.00) return "quadruple"
+  if (x3 === 2.00) return "double"
+  if (x3 === 1.00) return "normal"
+  if (x3 === 0.50) return "half"
+  if (x3 === 0.25) return "quarter"
+  if (x3 === 0.00) return "zero"
   throw new Error()
 }
 
@@ -92,12 +92,19 @@ function mapToObj(array, fn) {
   return obj
 }
 
-function matchups(t1, t2) {
+function offensiveMatchups(type) {
+  var allMatchups =
+    mapToObj(types, t => matchupFor(t, "none", type))
+  return _.invertBy(allMatchups)
+}
+
+function defensiveMatchups(t1, t2) {
   var allMatchups =
     mapToObj(types, t => matchupFor(t1, t2, t))
   return _.invertBy(allMatchups)
 }
 
-exports.matchups = matchups
+exports.offensiveMatchups = offensiveMatchups
+exports.defensiveMatchups = defensiveMatchups
 exports.typesOrNone = typesOrNone
 exports.types = types

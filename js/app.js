@@ -1,5 +1,6 @@
 var React = require("react")
 var ReactRedux = require("react-redux")
+var Offense = require("./offense")
 var Defense = require("./defense")
 var TabContainer = require("./tab-container")
 
@@ -10,7 +11,7 @@ function App(props) {
     changeTab: props.changeTab,
     current: props.tab,
     titles: ["Offense", "Defense"],
-    items: [$("div", {}), Defense(props)]
+    items: [Offense(props), Defense(props)]
   })
 }
 
@@ -20,6 +21,12 @@ function mapDispatchToProps(dispatch) {
       dispatch({
         type: "ChangeTab",
         value: tab
+      })
+    },
+    updateType0(type) {
+      dispatch({
+        type: "UpdateType0",
+        value: type
       })
     },
     updateType1(type) {
@@ -40,6 +47,7 @@ function mapDispatchToProps(dispatch) {
 function mapStateToProps(state) {
   return {
     tab: state.tab,
+    type0: state.type0,
     type1: state.type1,
     type2: state.type2
   }

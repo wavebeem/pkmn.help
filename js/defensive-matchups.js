@@ -30,14 +30,14 @@ function section(title, info) {
 }
 
 function Matchups(props) {
-  var matchups = Data.matchups(props.type1, props.type2)
+  var matchups = Data.defensiveMatchups(props.type1, props.type2)
   return $("div", {className: "tc"},
-    section("takes 4×", matchups.takesQuadrupleFrom),
-    section("takes 2×", matchups.takesDoubleFrom),
-    section("takes 1×", matchups.takesNormalFrom),
-    section("takes ½×", matchups.takesHalfFrom),
-    section("takes ¼×", matchups.takesQuarterFrom),
-    section("takes 0×", matchups.takesZeroFrom)
+    section("takes 4×", matchups.quadruple),
+    section("takes 2×", matchups.double),
+    section("takes 1×", matchups.normal),
+    section("takes ½×", matchups.half),
+    section("takes ¼×", matchups.quarter),
+    section("takes 0×", matchups.zero)
   )
 }
 
