@@ -8,16 +8,15 @@ function makeTab(props, index, title) {
   var className = classes([
     "pv3 ph4",
     "f6",
-    "ba br2 br--top",
     "link",
     "focus-inner-ring",
-    "b ttl",
+    "b ttu",
+    "ba b--transparent",
     "bg-transparent",
-    "b--black-10",
     "pointer",
     index === cur
-      ? "black border-bottom--transparent"
-      : "black-40 border-not-bottom--transparent"
+      ? "black tab-bottom-shadow"
+      : "black-40"
   ])
   var onClick = () => {
     props.changeTab(index)
@@ -25,15 +24,14 @@ function makeTab(props, index, title) {
   return $("button", {key: index, className, onClick}, title)
 }
 
-function makeLine() {
-  return $("div", {className: "flex-auto w-100 bb b--black-10"})
-}
-
 function makeTabBar(props) {
-  return $("div", {className: "flex mt5"},
-    makeLine(),
-    props.titles.map((title, i) => makeTab(props, i, title)),
-    makeLine()
+  var className = classes([
+    "flex justify-center w-100",
+    "bb b--black-20 tab-bar-bottom-shadow",
+    "mt5"
+  ])
+  return $("div", {className},
+    props.titles.map((title, i) => makeTab(props, i, title))
   )
 } 
 
