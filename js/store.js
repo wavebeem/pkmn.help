@@ -1,11 +1,15 @@
 var Redux = require("redux")
 
 var initialState = {
+  tab: 1,
   type1: "fire",
   type2: "flying"
 }
 
 var table = {
+  ChangeTab(state, action) {
+    return {tab: action.value}
+  },
   UpdateType1(state, action) {
     return {type1: action.value}
   },

@@ -12,6 +12,21 @@ html {
   margin: 2px;
 }
 
+.focus-inner-ring:focus {
+  outline: 1px dotted currentColor;
+  outline-offset: -5px;
+}
+
+.border-not-bottom--transparent {
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.border-bottom--transparent {
+  border-bottom-color: transparent;
+}
+
 .bottom-edge {
   box-shadow: inset 0 -4px 0 fade(black, 10%);
 }
