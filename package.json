@@ -3,6 +3,7 @@
   "name": "pkmn.help",
   "description": "Pokémon type calculator",
   "scripts": {
+    "serve": "http-server -p 4001 -a 127.0.0.1",
     "watch:js": "webpack -w",
     "watch:css": "chokidar 'less/**/*.less' -c 'npm run build:css'",
     "build:ico": "convert favicon-*.png favicon.ico",
@@ -32,6 +33,7 @@
     "chokidar-cli": "^1.2.0",
     "clean-css": "^3.4.20",
     "eslint": "^3.7.0",
+    "http-server": "^0.9.0",
     "less": "^2.7.1",
     "webpack": "^1.13.2"
   },
