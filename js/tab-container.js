@@ -27,8 +27,9 @@ function makeTab(props, index, title) {
 function makeTabBar(props) {
   var className = classes([
     "tc w-100",
+    "bg-white",
     "tab-bar-bottom-shadow",
-    "mt5"
+    "pt5"
   ])
   return $("div", {className},
     props.titles.map((title, i) => makeTab(props, i, title))
