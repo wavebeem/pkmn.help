@@ -7,7 +7,7 @@ function makeTab(props, index, title) {
   var cur = props.current
   var className = classes([
     "pv3 ph4",
-    "f5",
+    "f3",
     "dib",
     "no-outline tab-bottom-focus",
     "b ttu",

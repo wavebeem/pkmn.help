@@ -32,7 +32,7 @@ var buttonClasses = [
   "br-pill"
 ]
 
-var classSizing = "dib w-33-l w-50 pa1"
+var classSizing = "dib w-25-l w-50 pa1"
 
 function ClassicTypeSelector(props) {
   var types = props.includeNone ? Data.typesOrNone : Data.types
