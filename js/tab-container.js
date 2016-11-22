@@ -11,12 +11,12 @@ function makeTab(props, index, title) {
     "dib",
     "no-outline tab-bottom-focus",
     "b ttu",
-    "ba b--transparent",
+    "bn",
     "bg-transparent",
     "pointer",
     index === cur
-      ? "black tab-bottom-shadow"
-      : "black-40"
+      ? "black bottom-border-thick-current"
+      : "black-40 bottom-border-thick"
   ])
   var onClick = () => {
     props.changeTab(index)

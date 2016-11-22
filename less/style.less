@@ -27,13 +27,16 @@ button {
   outline: none;
 }
 
-.tab-bottom-focus:focus {
-  box-shadow: inset 0 -4px 0 fade(black, 20%);
+.bottom-border-thick-current {
+  border-bottom: 4px solid #000;
 }
 
-.tab-bottom-shadow,
-.tab-bottom-shadow:focus {
-  box-shadow: inset 0 -4px 0 black;
+.bottom-border-thick {
+  border-bottom: 4px solid transparent;
+}
+
+.bottom-border-thick:focus {
+  border-bottom: 4px solid fade(black, 20%);
 }
 
 .tab-bar-bottom-shadow {
@@ -53,10 +56,6 @@ button {
 .chunky-focus:focus {
   outline: none;
   box-shadow: 0 0 0 2px white, 0 0 0 4px black;
-}
-
-.weird-shadow {
-  box-shadow: inset 0 0 0 1px fade(black, 10%);
 }
 
 .weird-shadow:focus {
