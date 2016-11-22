@@ -29,7 +29,7 @@ function makeTabBar(props) {
     "tc w-100",
     "bg-white",
     "tab-bar-bottom-shadow",
-    "pt5"
+    "pt4"
   ])
   return $("div", {className},
     props.titles.map((title, i) => makeTab(props, i, title))
