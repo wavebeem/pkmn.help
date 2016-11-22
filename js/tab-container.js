@@ -16,7 +16,7 @@ function makeTab(props, index, title) {
     "pointer",
     index === cur
       ? "black bottom-border-thick-current"
-      : "black-40 bottom-border-thick"
+      : "black-50 bottom-border-thick"
   ])
   var onClick = () => {
     props.changeTab(index)
