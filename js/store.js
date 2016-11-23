@@ -22,11 +22,15 @@ var table = {
   }
 }
 
+function update(a, b) {
+  return Object.assign({}, a, b)
+}
+
 function normalize(state) {
   var type1 = state.type1
   var type2 = state.type2
   if (type1 === type2) {
-    return Object.assign({}, {type1, type2: "none"})
+    return update(state, {type1, type2: "none"})
   } else {
     return state
   }
