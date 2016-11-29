@@ -17,7 +17,7 @@ function Offense(props) {
     ),
     $("div", {className: "dib w-50-ns v-top pl3-ns"},
       $("hr", {className: "dn-ns subtle-hr mv4"}),
-      $("h2", {className: classH2}, "matchups"),
+      // $("h2", {className: classH2}, "matchups"),
       $(Matchups.Offense, {type: props.type0})
     )
   )
