@@ -5,7 +5,7 @@ var DefensiveMatchups = require("./defensive-matchups")
 var $ = React.createElement
 
 function Defense(props) {
-  var classH2 = "tc f3 mt4"
+  var classH2 = "tc f3 mt4 mb2"
   return $("main", {className: "ph3 pt1 pb2 mw6 mw9-ns center"},
     $("div", {className: "dib w-50-ns v-top"},
       $("h2", {className: classH2}, "choose primary type"),

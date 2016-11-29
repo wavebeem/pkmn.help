@@ -14,17 +14,16 @@ var labelClasses = [
 
 function label(selected, type) {
   var className = classes(
-    selected && "black sunken bg-white-90 text-shadow-white",
+    // selected && "black sunken bg-white-90 text-shadow-white",
+    selected && "white bg-black-50 text-shadow-black",
     labelClasses
   )
   return $("span", {className}, type)
 }
 
 var buttonClasses = [
-  "bw2",
   "chunky-focus",
-  "bn",
-  "bn",
+  "ba bw--2px with-border-color",
   "w-100",
   "dib",
   "ttu b pointer",
@@ -34,7 +33,7 @@ var buttonClasses = [
 
 var classSizing = "dib w-25-l w-50 pa1"
 
-function ClassicTypeSelector(props) {
+function TypeSelector(props) {
   var types = props.includeNone ? Data.typesOrNone : Data.types
   var onChange = props.onChange
   var value = props.value
@@ -45,9 +44,7 @@ function ClassicTypeSelector(props) {
   var makeButton = type =>
     $("button", {
       className: classes(
-        type === value
-          ? "weird-shadow"
-          : "bottom-edge",
+        type === value && "no-box-shadow",
         "type-" + type,
         buttonClasses
       ),
@@ -60,4 +57,4 @@ function ClassicTypeSelector(props) {
   return $("div", {}, types.map(makeWrapper))
 }
 
-module.exports = ClassicTypeSelector
+module.exports = TypeSelector

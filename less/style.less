@@ -8,6 +8,10 @@ html {
   }
 }
 
+.bw--2px {
+  border-width: 2px;
+}
+
 .ma--2px {
   margin: 2px;
 }
@@ -28,7 +32,8 @@ button {
 }
 
 .bottom-border-thick-current {
-  border-bottom: 4px solid #000;
+  transition: background 200ms;
+  border-bottom: 4px solid currentColor;
 }
 
 .bottom-border-thick {
@@ -36,21 +41,14 @@ button {
 }
 
 .bottom-border-thick:focus {
-  border-bottom: 4px solid fade(black, 50%);
+  transition: background 200ms;
+  background: fade(black, 5%);
 }
 
 .tab-bar-bottom-shadow {
   box-shadow:
     0 1px fade(black, 10%),
     0 6px 6px fade(black, 5%);
-}
-
-.border-bottom--transparent {
-  border-bottom-color: transparent;
-}
-
-.bottom-edge {
-  box-shadow: inset 0 -4px 0 fade(black, 10%);
 }
 
 .chunky-focus:focus {
@@ -66,6 +64,10 @@ button {
   text-shadow: 0 0 3px white;
 }
 
+.text-shadow-black {
+  text-shadow: 0 0 3px black;
+}
+
 .sunken {
   box-shadow:
     0 0 0 1px fade(black, 20%),
@@ -76,6 +78,11 @@ button {
   border: 0;
   background: fade(black, 5%);
   height: 1px;
+}
+
+.no-box-shadow,
+.no-box-shadow:focus {
+  box-shadow: none !important; 
 }
 
 @import "pokeball";

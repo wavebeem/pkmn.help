@@ -7,10 +7,12 @@ var classes = require("./classes")
 var $ = React.createElement
 
 function badge(type) {
-  var style = {minWidth: "7em"}
+  var style = {minWidth: "7.5em"}
   var className = classes(
     "type-" + type,
+    "ba b--black-10",
     "badge",
+    "with-border-color",
     "dib pv2 ph3",
     "br1",
     "ma--2px",
@@ -24,7 +26,7 @@ function section(title, info) {
     return null
   }
   return $("div", {},
-    $("h3", {className: "f4 mt3 mb2 dark-gray"}, title),
+    $("h3", {className: "f4 mt3 mb0 dark-gray"}, title),
     $("div", {className: "mw6 center"}, info.map(badge))
   )
 }

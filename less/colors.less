@@ -1,9 +1,17 @@
+.with-border-color(@color) {
+  &.with-border-color {
+    border-color: darken(@color, 10%);
+  }
+}
+
 .W(@color) {
   background-color: @color;
   color: white;
   text-shadow:
     0 1px 0 fade(black, 40%),
     0 0 8px fade(black, 40%);
+
+  .with-border-color(@color);
 }
 
 .B(@color) {
@@ -12,6 +20,8 @@
   text-shadow:
     0 1px 0 fade(white, 20%),
     0 0 8px fade(white, 50%);
+
+  .with-border-color(@color);
 }
 
 .type-fire       { .B(#f08030); }
