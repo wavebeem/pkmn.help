@@ -1,6 +1,6 @@
 var React = require("react")
 var TypeSelector = require("./type-selector")
-var OffensiveMatchups = require("./offensive-matchups")
+var Matchups = require("./matchups")
 
 var $ = React.createElement
 
@@ -18,7 +18,7 @@ function Offense(props) {
     $("div", {className: "dib w-50-ns v-top pl3-ns"},
       $("hr", {className: "dn-ns subtle-hr mv4"}),
       $("h2", {className: classH2}, "matchups"),
-      $(OffensiveMatchups, {type: props.type0})
+      $(Matchups.Offense, {type: props.type0})
     )
   )
 }

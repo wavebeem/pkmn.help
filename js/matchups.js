@@ -31,7 +31,19 @@ function section(title, info) {
   )
 }
 
-function Matchups(props) {
+function Defense(props) {
+  var matchups = Data.defensiveMatchups(props.type1, props.type2)
+  return $("div", {className: "tc"},
+    section("takes 4×", matchups.quadruple),
+    section("takes 2×", matchups.double),
+    section("takes 1×", matchups.normal),
+    section("takes ½×", matchups.half),
+    section("takes ¼×", matchups.quarter),
+    section("takes 0×", matchups.zero)
+  )
+}
+
+function Offense(props) {
   var matchups = Data.offensiveMatchups(props.type)
   return $("div", {className: "tc"},
     section("deals 4×", matchups.quadruple),
@@ -43,4 +55,5 @@ function Matchups(props) {
   )
 }
 
-module.exports = Matchups
+exports.Defense = Defense
+exports.Offense = Offense
