@@ -1,11 +1,11 @@
-var React = require("react")
-var TypeSelector = require("./type-selector")
-var Matchups = require("./matchups")
+const React = require("react")
+const TypeSelector = require("./type-selector")
+const Matchups = require("./matchups")
 
-var $ = React.createElement
+const $ = React.createElement
 
 function Offense(props) {
-  var classH2 = "tc f3 mt4 mb2"
+  const classH2 = "tc f3 mt4 mb2"
   return $("main", {className: "ph3 pt1 pb2 mw6 mw9-ns center"},
     $("div", {className: "dib w-50-ns v-top"},
       $("h2", {className: classH2}, "choose type"),

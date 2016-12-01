@@ -1,13 +1,13 @@
-var React = require("react")
-var ReactDOM = require("react-dom")
-var ReactRedux = require("react-redux")
-var store = require("./store")
-var App = require("./app")
+const React = require("react")
+const ReactDOM = require("react-dom")
+const ReactRedux = require("react-redux")
+const store = require("./store")
+const App = require("./app")
 
-var $ = React.createElement
+const $ = React.createElement
 
 window.addEventListener("DOMContentLoaded", () => {
-  var root = document.getElementById("react-root")
-  var component = $(ReactRedux.Provider, {store}, $(App))
+  const root = document.getElementById("react-root")
+  const component = $(ReactRedux.Provider, {store}, $(App))
   ReactDOM.render(component, root)
 }, false)

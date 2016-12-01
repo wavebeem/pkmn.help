@@ -1,12 +1,12 @@
-var React = require("react")
-var Data = require("./data")
-var classes = require("./classes")
+const React = require("react")
+const Data = require("./data")
+const classes = require("./classes")
 
-var $ = React.createElement
+const $ = React.createElement
 
 function badge(type) {
-  var style = {minWidth: "7.5em"}
-  var className = classes(
+  const style = {minWidth: "7.5em"}
+  const className = classes(
     "type-" + type,
     "ba b--black-10",
     "badge",
@@ -30,7 +30,7 @@ function section(title, info) {
 }
 
 function Defense(props) {
-  var matchups = Data.defensiveMatchups(props.type1, props.type2)
+  const matchups = Data.defensiveMatchups(props.type1, props.type2)
   return $("div", {className: "tc"},
     section("takes 4×", matchups.quadruple),
     section("takes 2×", matchups.double),
@@ -42,7 +42,7 @@ function Defense(props) {
 }
 
 function Offense(props) {
-  var matchups = Data.offensiveMatchups(props.type)
+  const matchups = Data.offensiveMatchups(props.type)
   return $("div", {className: "tc"},
     section("deals 4×", matchups.quadruple),
     section("deals 2×", matchups.double),

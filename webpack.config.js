@@ -1,10 +1,10 @@
 /* eslint-env node */
 
-var path = require("path")
-var webpack = require("webpack")
+const path = require("path")
+const webpack = require("webpack")
 
 // Hack to put the NODE_ENV to production when we ask for minified code.
-var isProd = process.argv.indexOf("-p") >= 0
+const isProd = process.argv.indexOf("-p") >= 0
 process.env.NODE_ENV = isProd ? "production" : "development"
 
 module.exports = {

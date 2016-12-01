@@ -1,10 +1,10 @@
-var React = require("react")
-var Data = require("./data")
-var classes = require("./classes")
+const React = require("react")
+const Data = require("./data")
+const classes = require("./classes")
 
-var $ = React.createElement
+const $ = React.createElement
 
-var labelClasses = [
+const labelClasses = [
   "db",
   "f5 f4-l",
   "min-width--7em",
@@ -13,14 +13,14 @@ var labelClasses = [
 ]
 
 function label(selected, type) {
-  var className = classes(
+  const className = classes(
     selected && "white bg-black-50 text-shadow-black",
     labelClasses
   )
   return $("span", {className}, type)
 }
 
-var buttonClasses = [
+const buttonClasses = [
   "chunky-focus",
   "ba bw--2px with-border-color",
   "w-100",
@@ -30,17 +30,17 @@ var buttonClasses = [
   "br-pill"
 ]
 
-var classSizing = "dib w-25-l w-50 pa1"
+const classSizing = "dib w-25-l w-50 pa1"
 
 function TypeSelector(props) {
-  var types = props.includeNone ? Data.typesOrNone : Data.types
-  var onChange = props.onChange
-  var value = props.value
+  const types = props.includeNone ? Data.typesOrNone : Data.types
+  const onChange = props.onChange
+  const value = props.value
 
-  var makeLabel = type =>
+  const makeLabel = type =>
     label(type === value, type)
 
-  var makeButton = type =>
+  const makeButton = type =>
     $("button", {
       className: classes(
         type === value && "no-box-shadow",
@@ -50,7 +50,7 @@ function TypeSelector(props) {
       onClick: () => onChange(type)
     }, makeLabel(type))
 
-  var makeWrapper = type =>
+  const makeWrapper = type =>
     $("div", {className: classSizing, key: type}, makeButton(type))
 
   return $("div", {}, types.map(makeWrapper))

@@ -1,10 +1,10 @@
-var React = require("react")
-var ReactRedux = require("react-redux")
-var Offense = require("./offense")
-var Defense = require("./defense")
-var TabContainer = require("./tab-container")
+const React = require("react")
+const ReactRedux = require("react-redux")
+const Offense = require("./offense")
+const Defense = require("./defense")
+const TabContainer = require("./tab-container")
 
-var $ = React.createElement
+const $ = React.createElement
 
 function App(props) {
   return $(TabContainer, {

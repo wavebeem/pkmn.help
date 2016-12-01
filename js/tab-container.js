@@ -1,11 +1,11 @@
-var React = require("react")
-var classes = require("./classes")
+const React = require("react")
+const classes = require("./classes")
 
-var $ = React.createElement
+const $ = React.createElement
 
 function makeTab(props, index, title) {
-  var cur = props.current
-  var className = classes([
+  const cur = props.current
+  const className = classes([
     "pv3 ph4",
     "f3",
     "dib",
@@ -18,14 +18,14 @@ function makeTab(props, index, title) {
       ? "black bottom-border-thick-current"
       : "black-50 bottom-border-thick"
   ])
-  var onClick = () => {
+  const onClick = () => {
     props.changeTab(index)
   }
   return $("button", {key: index, className, onClick}, title)
 }
 
 function makeTabBar(props) {
-  var className = classes([
+  const className = classes([
     "tc w-100",
     "bg-white",
     "tab-bar-bottom-shadow",

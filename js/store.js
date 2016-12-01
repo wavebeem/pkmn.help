@@ -1,13 +1,13 @@
-var Redux = require("redux")
+const Redux = require("redux")
 
-var initialState = {
+const initialState = {
   tab: 1,
   type0: "normal",
   type1: "normal",
   type2: "none"
 }
 
-var table = {
+const table = {
   ChangeTab(state, action) {
     return {tab: action.value}
   },
@@ -27,8 +27,8 @@ function update(a, b) {
 }
 
 function normalize(state) {
-  var type1 = state.type1
-  var type2 = state.type2
+  const type1 = state.type1
+  const type2 = state.type2
   if (type1 === type2) {
     return update(state, {type1, type2: "none"})
   } else {
@@ -38,15 +38,15 @@ function normalize(state) {
 
 function reducer(state, action) {
   if (table.hasOwnProperty(action.type)) {
-    var handler = table[action.type]
-    var delta = handler(state, action)
+    const handler = table[action.type]
+    const delta = handler(state, action)
     return normalize(Object.assign({}, state, delta))
   } else {
     return state
   }
 }
 
-var store =
+const store =
   Redux.createStore(
     reducer,
     initialState,
