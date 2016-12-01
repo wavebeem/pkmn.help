@@ -14,7 +14,7 @@ const labelClasses = [
 
 function label(selected, type) {
   const className = classes(
-    selected && "white bg-black-50 text-shadow-black",
+    {"white bg-black-50 text-shadow-black": selected},
     labelClasses
   )
   return $("span", {className}, type)
@@ -43,7 +43,7 @@ function TypeSelector(props) {
   const makeButton = type =>
     $("button", {
       className: classes(
-        type === value && "no-box-shadow",
+        {"no-box-shadow": type === value},
         "type-" + type,
         buttonClasses
       ),
