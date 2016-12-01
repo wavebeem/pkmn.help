@@ -1,5 +1,3 @@
-"use strict"
-
 var React = require("react")
 var Data = require("./data")
 var classes = require("./classes")
