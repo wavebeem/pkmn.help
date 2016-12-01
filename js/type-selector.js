@@ -14,7 +14,6 @@ var labelClasses = [
 
 function label(selected, type) {
   var className = classes(
-    // selected && "black sunken bg-white-90 text-shadow-white",
     selected && "white bg-black-50 text-shadow-black",
     labelClasses
   )
