@@ -10,8 +10,10 @@ function App(props) {
   return $(TabContainer, {
     changeTab: props.changeTab,
     current: props.tab,
-    titles: ["Offense", "Defense"],
-    items: [Offense(props), Defense(props)]
+    items: [
+      {title: "Offense", element: Offense(props)},
+      {title: "Defense", element: Defense(props)},
+    ],
   })
 }
 

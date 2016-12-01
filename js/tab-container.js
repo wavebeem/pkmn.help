@@ -32,14 +32,14 @@ function makeTabBar(props) {
     "pt4"
   ])
   return $("div", {className},
-    props.titles.map((title, i) => makeTab(props, i, title))
+    props.items.map((item, i) => makeTab(props, i, item.title))
   )
 } 
 
 function TabContainer(props) {
   return $("div", {},
     makeTabBar(props),
-    props.items[props.current]
+    props.items[props.current].element
   )
 }
 

@@ -23,7 +23,6 @@ function Defense(props) {
     ),
     $("div", {className: "dib w-50-ns v-top pl3-ns mt4-ns"},
       $("hr", {className: "dn-ns subtle-hr mv4"}),
-      // $("h2", {className: classH2}, "matchups"),
       $(Matchups.Defense, {
         type1: props.type1,
         type2: props.type2
