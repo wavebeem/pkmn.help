@@ -3,10 +3,11 @@ function addClass(acc, x) {
   if (typeof x === "string") {
     rest = x
   } else if (Array.isArray(x)) {
-    rest = x.join(" ")
+    rest = classes(...x)
   } else if (x && typeof x === "object") {
     rest = Object.keys(x)
       .filter(k => x[k])
+      .map(x => classes(x))
       .join(" ")
   }
   return (acc + " " + rest).trim()
