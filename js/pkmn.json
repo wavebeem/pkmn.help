@@ -1,0 +1,9205 @@
+[
+  {
+    "name": "Bulbasaur",
+    "number": 1,
+    "abilities": [
+      "chlorophyll",
+      "overgrow"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Ivysaur",
+    "number": 2,
+    "abilities": [
+      "chlorophyll",
+      "overgrow"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Venusaur",
+    "number": 3,
+    "abilities": [
+      "chlorophyll",
+      "overgrow"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Charmander",
+    "number": 4,
+    "abilities": [
+      "blaze",
+      "solar-power"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Charmeleon",
+    "number": 5,
+    "abilities": [
+      "blaze",
+      "solar-power"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Charizard",
+    "number": 6,
+    "abilities": [
+      "blaze",
+      "solar-power"
+    ],
+    "types": [
+      "flying",
+      "fire"
+    ]
+  },
+  {
+    "name": "Squirtle",
+    "number": 7,
+    "abilities": [
+      "rain-dish",
+      "torrent"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Wartortle",
+    "number": 8,
+    "abilities": [
+      "rain-dish",
+      "torrent"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Blastoise",
+    "number": 9,
+    "abilities": [
+      "rain-dish",
+      "torrent"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Caterpie",
+    "number": 10,
+    "abilities": [
+      "shield-dust",
+      "run-away"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Metapod",
+    "number": 11,
+    "abilities": [
+      "shed-skin"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Butterfree",
+    "number": 12,
+    "abilities": [
+      "compoundeyes",
+      "tinted-lens"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Weedle",
+    "number": 13,
+    "abilities": [
+      "shield-dust",
+      "run-away"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Kakuna",
+    "number": 14,
+    "abilities": [
+      "shed-skin"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Beedrill",
+    "number": 15,
+    "abilities": [
+      "swarm",
+      "sniper"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Pidgey",
+    "number": 16,
+    "abilities": [
+      "keen-eye",
+      "tangled-feet",
+      "big-pecks"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Pidgeotto",
+    "number": 17,
+    "abilities": [
+      "keen-eye",
+      "tangled-feet",
+      "big-pecks"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Pidgeot",
+    "number": 18,
+    "abilities": [
+      "keen-eye",
+      "tangled-feet",
+      "big-pecks"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Rattata",
+    "number": 19,
+    "abilities": [
+      "run-away",
+      "hustle",
+      "guts"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Raticate",
+    "number": 20,
+    "abilities": [
+      "run-away",
+      "hustle",
+      "guts"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Spearow",
+    "number": 21,
+    "abilities": [
+      "keen-eye",
+      "sniper"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Fearow",
+    "number": 22,
+    "abilities": [
+      "keen-eye",
+      "sniper"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Ekans",
+    "number": 23,
+    "abilities": [
+      "intimidate",
+      "shed-skin",
+      "unnerve"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Arbok",
+    "number": 24,
+    "abilities": [
+      "intimidate",
+      "shed-skin",
+      "unnerve"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Pikachu",
+    "number": 25,
+    "abilities": [
+      "static",
+      "lightningrod"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Raichu",
+    "number": 26,
+    "abilities": [
+      "static",
+      "lightningrod"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Sandshrew",
+    "number": 27,
+    "abilities": [
+      "sand-veil",
+      "sand-rush"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Sandslash",
+    "number": 28,
+    "abilities": [
+      "sand-veil",
+      "sand-rush"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Nidoran-f",
+    "number": 29,
+    "abilities": [
+      "poison-point",
+      "hustle",
+      "rivalry"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Nidorina",
+    "number": 30,
+    "abilities": [
+      "poison-point",
+      "hustle",
+      "rivalry"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Nidoqueen",
+    "number": 31,
+    "abilities": [
+      "poison-point",
+      "rivalry",
+      "sheer-force"
+    ],
+    "types": [
+      "poison",
+      "ground"
+    ]
+  },
+  {
+    "name": "Nidoran-m",
+    "number": 32,
+    "abilities": [
+      "poison-point",
+      "hustle",
+      "rivalry"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Nidorino",
+    "number": 33,
+    "abilities": [
+      "poison-point",
+      "hustle",
+      "rivalry"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Nidoking",
+    "number": 34,
+    "abilities": [
+      "poison-point",
+      "rivalry",
+      "sheer-force"
+    ],
+    "types": [
+      "poison",
+      "ground"
+    ]
+  },
+  {
+    "name": "Clefairy",
+    "number": 35,
+    "abilities": [
+      "cute-charm",
+      "magic-guard",
+      "friend-guard"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Clefable",
+    "number": 36,
+    "abilities": [
+      "cute-charm",
+      "magic-guard",
+      "unaware"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Vulpix",
+    "number": 37,
+    "abilities": [
+      "flash-fire",
+      "drought"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Ninetales",
+    "number": 38,
+    "abilities": [
+      "flash-fire",
+      "drought"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Jigglypuff",
+    "number": 39,
+    "abilities": [
+      "cute-charm",
+      "friend-guard"
+    ],
+    "types": [
+      "normal",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Wigglytuff",
+    "number": 40,
+    "abilities": [
+      "cute-charm",
+      "frisk"
+    ],
+    "types": [
+      "normal",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Zubat",
+    "number": 41,
+    "abilities": [
+      "inner-focus",
+      "infiltrator"
+    ],
+    "types": [
+      "flying",
+      "poison"
+    ]
+  },
+  {
+    "name": "Golbat",
+    "number": 42,
+    "abilities": [
+      "inner-focus",
+      "infiltrator"
+    ],
+    "types": [
+      "flying",
+      "poison"
+    ]
+  },
+  {
+    "name": "Oddish",
+    "number": 43,
+    "abilities": [
+      "chlorophyll",
+      "run-away"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Gloom",
+    "number": 44,
+    "abilities": [
+      "stench",
+      "chlorophyll"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Vileplume",
+    "number": 45,
+    "abilities": [
+      "effect-spore",
+      "chlorophyll"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Paras",
+    "number": 46,
+    "abilities": [
+      "damp",
+      "effect-spore",
+      "dry-skin"
+    ],
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Parasect",
+    "number": 47,
+    "abilities": [
+      "damp",
+      "effect-spore",
+      "dry-skin"
+    ],
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Venonat",
+    "number": 48,
+    "abilities": [
+      "compoundeyes",
+      "run-away",
+      "tinted-lens"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Venomoth",
+    "number": 49,
+    "abilities": [
+      "shield-dust",
+      "tinted-lens",
+      "wonder-skin"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Diglett",
+    "number": 50,
+    "abilities": [
+      "sand-veil",
+      "arena-trap",
+      "sand-force"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Dugtrio",
+    "number": 51,
+    "abilities": [
+      "sand-veil",
+      "arena-trap",
+      "sand-force"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Meowth",
+    "number": 52,
+    "abilities": [
+      "pickup",
+      "technician",
+      "unnerve"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Persian",
+    "number": 53,
+    "abilities": [
+      "limber",
+      "technician",
+      "unnerve"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Psyduck",
+    "number": 54,
+    "abilities": [
+      "damp",
+      "cloud-nine",
+      "swift-swim"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Golduck",
+    "number": 55,
+    "abilities": [
+      "damp",
+      "cloud-nine",
+      "swift-swim"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Mankey",
+    "number": 56,
+    "abilities": [
+      "vital-spirit",
+      "anger-point",
+      "defiant"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Primeape",
+    "number": 57,
+    "abilities": [
+      "vital-spirit",
+      "anger-point",
+      "defiant"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Growlithe",
+    "number": 58,
+    "abilities": [
+      "flash-fire",
+      "intimidate",
+      "justified"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Arcanine",
+    "number": 59,
+    "abilities": [
+      "flash-fire",
+      "intimidate",
+      "justified"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Poliwag",
+    "number": 60,
+    "abilities": [
+      "damp",
+      "water-absorb",
+      "swift-swim"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Poliwhirl",
+    "number": 61,
+    "abilities": [
+      "damp",
+      "water-absorb",
+      "swift-swim"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Poliwrath",
+    "number": 62,
+    "abilities": [
+      "damp",
+      "water-absorb",
+      "swift-swim"
+    ],
+    "types": [
+      "fighting",
+      "water"
+    ]
+  },
+  {
+    "name": "Abra",
+    "number": 63,
+    "abilities": [
+      "synchronize",
+      "inner-focus",
+      "magic-guard"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Kadabra",
+    "number": 64,
+    "abilities": [
+      "synchronize",
+      "inner-focus",
+      "magic-guard"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Alakazam",
+    "number": 65,
+    "abilities": [
+      "synchronize",
+      "inner-focus",
+      "magic-guard"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Machop",
+    "number": 66,
+    "abilities": [
+      "guts",
+      "steadfast",
+      "no-guard"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Machoke",
+    "number": 67,
+    "abilities": [
+      "guts",
+      "steadfast",
+      "no-guard"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Machamp",
+    "number": 68,
+    "abilities": [
+      "guts",
+      "steadfast",
+      "no-guard"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Bellsprout",
+    "number": 69,
+    "abilities": [
+      "chlorophyll",
+      "gluttony"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Weepinbell",
+    "number": 70,
+    "abilities": [
+      "chlorophyll",
+      "gluttony"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Victreebel",
+    "number": 71,
+    "abilities": [
+      "chlorophyll",
+      "gluttony"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Tentacool",
+    "number": 72,
+    "abilities": [
+      "clear-body",
+      "rain-dish",
+      "liquid-ooze"
+    ],
+    "types": [
+      "poison",
+      "water"
+    ]
+  },
+  {
+    "name": "Tentacruel",
+    "number": 73,
+    "abilities": [
+      "clear-body",
+      "rain-dish",
+      "liquid-ooze"
+    ],
+    "types": [
+      "poison",
+      "water"
+    ]
+  },
+  {
+    "name": "Geodude",
+    "number": 74,
+    "abilities": [
+      "sturdy",
+      "sand-veil",
+      "rock-head"
+    ],
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Graveler",
+    "number": 75,
+    "abilities": [
+      "sturdy",
+      "sand-veil",
+      "rock-head"
+    ],
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Golem",
+    "number": 76,
+    "abilities": [
+      "sturdy",
+      "sand-veil",
+      "rock-head"
+    ],
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Ponyta",
+    "number": 77,
+    "abilities": [
+      "flash-fire",
+      "flame-body",
+      "run-away"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Rapidash",
+    "number": 78,
+    "abilities": [
+      "flash-fire",
+      "flame-body",
+      "run-away"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Slowpoke",
+    "number": 79,
+    "abilities": [
+      "oblivious",
+      "own-tempo",
+      "regenerator"
+    ],
+    "types": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Slowbro",
+    "number": 80,
+    "abilities": [
+      "oblivious",
+      "own-tempo",
+      "regenerator"
+    ],
+    "types": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Magnemite",
+    "number": 81,
+    "abilities": [
+      "sturdy",
+      "magnet-pull",
+      "analytic"
+    ],
+    "types": [
+      "steel",
+      "electric"
+    ]
+  },
+  {
+    "name": "Magneton",
+    "number": 82,
+    "abilities": [
+      "sturdy",
+      "magnet-pull",
+      "analytic"
+    ],
+    "types": [
+      "steel",
+      "electric"
+    ]
+  },
+  {
+    "name": "Farfetchd",
+    "number": 83,
+    "abilities": [
+      "inner-focus",
+      "keen-eye",
+      "defiant"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Doduo",
+    "number": 84,
+    "abilities": [
+      "early-bird",
+      "run-away",
+      "tangled-feet"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Dodrio",
+    "number": 85,
+    "abilities": [
+      "early-bird",
+      "run-away",
+      "tangled-feet"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Seel",
+    "number": 86,
+    "abilities": [
+      "thick-fat",
+      "hydration",
+      "ice-body"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Dewgong",
+    "number": 87,
+    "abilities": [
+      "thick-fat",
+      "hydration",
+      "ice-body"
+    ],
+    "types": [
+      "water",
+      "ice"
+    ]
+  },
+  {
+    "name": "Grimer",
+    "number": 88,
+    "abilities": [
+      "stench",
+      "sticky-hold",
+      "poison-touch"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Muk",
+    "number": 89,
+    "abilities": [
+      "stench",
+      "sticky-hold",
+      "poison-touch"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Shellder",
+    "number": 90,
+    "abilities": [
+      "shell-armor",
+      "skill-link",
+      "overcoat"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Cloyster",
+    "number": 91,
+    "abilities": [
+      "shell-armor",
+      "skill-link",
+      "overcoat"
+    ],
+    "types": [
+      "water",
+      "ice"
+    ]
+  },
+  {
+    "name": "Gastly",
+    "number": 92,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "poison",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Haunter",
+    "number": 93,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "poison",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Gengar",
+    "number": 94,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "poison",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Onix",
+    "number": 95,
+    "abilities": [
+      "sturdy",
+      "rock-head",
+      "weak-armor"
+    ],
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Drowzee",
+    "number": 96,
+    "abilities": [
+      "insomnia",
+      "inner-focus",
+      "forewarn"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Hypno",
+    "number": 97,
+    "abilities": [
+      "insomnia",
+      "inner-focus",
+      "forewarn"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Krabby",
+    "number": 98,
+    "abilities": [
+      "hyper-cutter",
+      "shell-armor",
+      "sheer-force"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Kingler",
+    "number": 99,
+    "abilities": [
+      "hyper-cutter",
+      "shell-armor",
+      "sheer-force"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Voltorb",
+    "number": 100,
+    "abilities": [
+      "static",
+      "soundproof",
+      "aftermath"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Electrode",
+    "number": 101,
+    "abilities": [
+      "static",
+      "soundproof",
+      "aftermath"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Exeggcute",
+    "number": 102,
+    "abilities": [
+      "chlorophyll",
+      "harvest"
+    ],
+    "types": [
+      "grass",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Exeggutor",
+    "number": 103,
+    "abilities": [
+      "chlorophyll",
+      "harvest"
+    ],
+    "types": [
+      "grass",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Cubone",
+    "number": 104,
+    "abilities": [
+      "battle-armor",
+      "lightningrod",
+      "rock-head"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Marowak",
+    "number": 105,
+    "abilities": [
+      "battle-armor",
+      "lightningrod",
+      "rock-head"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Hitmonlee",
+    "number": 106,
+    "abilities": [
+      "limber",
+      "unburden",
+      "reckless"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Hitmonchan",
+    "number": 107,
+    "abilities": [
+      "inner-focus",
+      "keen-eye",
+      "iron-fist"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Lickitung",
+    "number": 108,
+    "abilities": [
+      "oblivious",
+      "cloud-nine",
+      "own-tempo"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Koffing",
+    "number": 109,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Weezing",
+    "number": 110,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Rhyhorn",
+    "number": 111,
+    "abilities": [
+      "lightningrod",
+      "rock-head",
+      "reckless"
+    ],
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Rhydon",
+    "number": 112,
+    "abilities": [
+      "lightningrod",
+      "rock-head",
+      "reckless"
+    ],
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Chansey",
+    "number": 113,
+    "abilities": [
+      "natural-cure",
+      "serene-grace",
+      "healer"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Tangela",
+    "number": 114,
+    "abilities": [
+      "chlorophyll",
+      "leaf-guard",
+      "regenerator"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Kangaskhan",
+    "number": 115,
+    "abilities": [
+      "inner-focus",
+      "early-bird",
+      "scrappy"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Horsea",
+    "number": 116,
+    "abilities": [
+      "damp",
+      "swift-swim",
+      "sniper"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Seadra",
+    "number": 117,
+    "abilities": [
+      "damp",
+      "poison-point",
+      "sniper"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Goldeen",
+    "number": 118,
+    "abilities": [
+      "lightningrod",
+      "swift-swim",
+      "water-veil"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Seaking",
+    "number": 119,
+    "abilities": [
+      "lightningrod",
+      "swift-swim",
+      "water-veil"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Staryu",
+    "number": 120,
+    "abilities": [
+      "natural-cure",
+      "illuminate",
+      "analytic"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Starmie",
+    "number": 121,
+    "abilities": [
+      "natural-cure",
+      "illuminate",
+      "analytic"
+    ],
+    "types": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Mr-mime",
+    "number": 122,
+    "abilities": [
+      "soundproof",
+      "technician",
+      "filter"
+    ],
+    "types": [
+      "fairy",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Scyther",
+    "number": 123,
+    "abilities": [
+      "swarm",
+      "steadfast",
+      "technician"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Jynx",
+    "number": 124,
+    "abilities": [
+      "oblivious",
+      "dry-skin",
+      "forewarn"
+    ],
+    "types": [
+      "ice",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Electabuzz",
+    "number": 125,
+    "abilities": [
+      "static",
+      "vital-spirit"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Magmar",
+    "number": 126,
+    "abilities": [
+      "flame-body",
+      "vital-spirit"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Pinsir",
+    "number": 127,
+    "abilities": [
+      "hyper-cutter",
+      "mold-breaker",
+      "moxie"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Tauros",
+    "number": 128,
+    "abilities": [
+      "intimidate",
+      "anger-point",
+      "sheer-force"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Magikarp",
+    "number": 129,
+    "abilities": [
+      "swift-swim",
+      "rattled"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Gyarados",
+    "number": 130,
+    "abilities": [
+      "intimidate",
+      "moxie"
+    ],
+    "types": [
+      "flying",
+      "water"
+    ]
+  },
+  {
+    "name": "Lapras",
+    "number": 131,
+    "abilities": [
+      "water-absorb",
+      "shell-armor",
+      "hydration"
+    ],
+    "types": [
+      "water",
+      "ice"
+    ]
+  },
+  {
+    "name": "Ditto",
+    "number": 132,
+    "abilities": [
+      "limber",
+      "imposter"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Eevee",
+    "number": 133,
+    "abilities": [
+      "run-away",
+      "adaptability",
+      "anticipation"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Vaporeon",
+    "number": 134,
+    "abilities": [
+      "water-absorb",
+      "hydration"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Jolteon",
+    "number": 135,
+    "abilities": [
+      "volt-absorb",
+      "quick-feet"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Flareon",
+    "number": 136,
+    "abilities": [
+      "flash-fire",
+      "guts"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Porygon",
+    "number": 137,
+    "abilities": [
+      "trace",
+      "download",
+      "analytic"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Omanyte",
+    "number": 138,
+    "abilities": [
+      "swift-swim",
+      "shell-armor",
+      "weak-armor"
+    ],
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Omastar",
+    "number": 139,
+    "abilities": [
+      "swift-swim",
+      "shell-armor",
+      "weak-armor"
+    ],
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Kabuto",
+    "number": 140,
+    "abilities": [
+      "battle-armor",
+      "swift-swim",
+      "weak-armor"
+    ],
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Kabutops",
+    "number": 141,
+    "abilities": [
+      "battle-armor",
+      "swift-swim",
+      "weak-armor"
+    ],
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Aerodactyl",
+    "number": 142,
+    "abilities": [
+      "pressure",
+      "rock-head",
+      "unnerve"
+    ],
+    "types": [
+      "flying",
+      "rock"
+    ]
+  },
+  {
+    "name": "Snorlax",
+    "number": 143,
+    "abilities": [
+      "immunity",
+      "thick-fat",
+      "gluttony"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Articuno",
+    "number": 144,
+    "abilities": [
+      "pressure",
+      "snow-cloak"
+    ],
+    "types": [
+      "flying",
+      "ice"
+    ]
+  },
+  {
+    "name": "Zapdos",
+    "number": 145,
+    "abilities": [
+      "lightningrod",
+      "pressure"
+    ],
+    "types": [
+      "flying",
+      "electric"
+    ]
+  },
+  {
+    "name": "Moltres",
+    "number": 146,
+    "abilities": [
+      "pressure",
+      "flame-body"
+    ],
+    "types": [
+      "flying",
+      "fire"
+    ]
+  },
+  {
+    "name": "Dratini",
+    "number": 147,
+    "abilities": [
+      "shed-skin",
+      "marvel-scale"
+    ],
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Dragonair",
+    "number": 148,
+    "abilities": [
+      "shed-skin",
+      "marvel-scale"
+    ],
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Dragonite",
+    "number": 149,
+    "abilities": [
+      "inner-focus",
+      "multiscale"
+    ],
+    "types": [
+      "flying",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Mewtwo",
+    "number": 150,
+    "abilities": [
+      "pressure",
+      "unnerve"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Mew",
+    "number": 151,
+    "abilities": [
+      "synchronize"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Chikorita",
+    "number": 152,
+    "abilities": [
+      "overgrow",
+      "leaf-guard"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Bayleef",
+    "number": 153,
+    "abilities": [
+      "overgrow",
+      "leaf-guard"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Meganium",
+    "number": 154,
+    "abilities": [
+      "overgrow",
+      "leaf-guard"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Cyndaquil",
+    "number": 155,
+    "abilities": [
+      "flash-fire",
+      "blaze"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Quilava",
+    "number": 156,
+    "abilities": [
+      "flash-fire",
+      "blaze"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Typhlosion",
+    "number": 157,
+    "abilities": [
+      "flash-fire",
+      "blaze"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Totodile",
+    "number": 158,
+    "abilities": [
+      "torrent",
+      "sheer-force"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Croconaw",
+    "number": 159,
+    "abilities": [
+      "torrent",
+      "sheer-force"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Feraligatr",
+    "number": 160,
+    "abilities": [
+      "torrent",
+      "sheer-force"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Sentret",
+    "number": 161,
+    "abilities": [
+      "run-away",
+      "keen-eye",
+      "frisk"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Furret",
+    "number": 162,
+    "abilities": [
+      "run-away",
+      "keen-eye",
+      "frisk"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Hoothoot",
+    "number": 163,
+    "abilities": [
+      "insomnia",
+      "keen-eye",
+      "tinted-lens"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Noctowl",
+    "number": 164,
+    "abilities": [
+      "insomnia",
+      "keen-eye",
+      "tinted-lens"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Ledyba",
+    "number": 165,
+    "abilities": [
+      "early-bird",
+      "swarm",
+      "rattled"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Ledian",
+    "number": 166,
+    "abilities": [
+      "early-bird",
+      "swarm",
+      "iron-fist"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Spinarak",
+    "number": 167,
+    "abilities": [
+      "insomnia",
+      "swarm",
+      "sniper"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Ariados",
+    "number": 168,
+    "abilities": [
+      "insomnia",
+      "swarm",
+      "sniper"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Crobat",
+    "number": 169,
+    "abilities": [
+      "inner-focus",
+      "infiltrator"
+    ],
+    "types": [
+      "flying",
+      "poison"
+    ]
+  },
+  {
+    "name": "Chinchou",
+    "number": 170,
+    "abilities": [
+      "volt-absorb",
+      "water-absorb",
+      "illuminate"
+    ],
+    "types": [
+      "water",
+      "electric"
+    ]
+  },
+  {
+    "name": "Lanturn",
+    "number": 171,
+    "abilities": [
+      "volt-absorb",
+      "water-absorb",
+      "illuminate"
+    ],
+    "types": [
+      "water",
+      "electric"
+    ]
+  },
+  {
+    "name": "Pichu",
+    "number": 172,
+    "abilities": [
+      "static",
+      "lightningrod"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Cleffa",
+    "number": 173,
+    "abilities": [
+      "cute-charm",
+      "magic-guard",
+      "friend-guard"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Igglybuff",
+    "number": 174,
+    "abilities": [
+      "cute-charm",
+      "friend-guard"
+    ],
+    "types": [
+      "normal",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Togepi",
+    "number": 175,
+    "abilities": [
+      "serene-grace",
+      "hustle",
+      "super-luck"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Togetic",
+    "number": 176,
+    "abilities": [
+      "serene-grace",
+      "hustle",
+      "super-luck"
+    ],
+    "types": [
+      "flying",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Natu",
+    "number": 177,
+    "abilities": [
+      "synchronize",
+      "early-bird",
+      "magic-bounce"
+    ],
+    "types": [
+      "flying",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Xatu",
+    "number": 178,
+    "abilities": [
+      "synchronize",
+      "early-bird",
+      "magic-bounce"
+    ],
+    "types": [
+      "flying",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Mareep",
+    "number": 179,
+    "abilities": [
+      "static",
+      "plus"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Flaaffy",
+    "number": 180,
+    "abilities": [
+      "static",
+      "plus"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Ampharos",
+    "number": 181,
+    "abilities": [
+      "static",
+      "plus"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Bellossom",
+    "number": 182,
+    "abilities": [
+      "chlorophyll",
+      "healer"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Marill",
+    "number": 183,
+    "abilities": [
+      "huge-power",
+      "thick-fat",
+      "sap-sipper"
+    ],
+    "types": [
+      "water",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Azumarill",
+    "number": 184,
+    "abilities": [
+      "huge-power",
+      "thick-fat",
+      "sap-sipper"
+    ],
+    "types": [
+      "water",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Sudowoodo",
+    "number": 185,
+    "abilities": [
+      "sturdy",
+      "rock-head",
+      "rattled"
+    ],
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Politoed",
+    "number": 186,
+    "abilities": [
+      "drizzle",
+      "damp",
+      "water-absorb"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Hoppip",
+    "number": 187,
+    "abilities": [
+      "chlorophyll",
+      "leaf-guard",
+      "infiltrator"
+    ],
+    "types": [
+      "flying",
+      "grass"
+    ]
+  },
+  {
+    "name": "Skiploom",
+    "number": 188,
+    "abilities": [
+      "chlorophyll",
+      "leaf-guard",
+      "infiltrator"
+    ],
+    "types": [
+      "flying",
+      "grass"
+    ]
+  },
+  {
+    "name": "Jumpluff",
+    "number": 189,
+    "abilities": [
+      "chlorophyll",
+      "leaf-guard",
+      "infiltrator"
+    ],
+    "types": [
+      "flying",
+      "grass"
+    ]
+  },
+  {
+    "name": "Aipom",
+    "number": 190,
+    "abilities": [
+      "run-away",
+      "pickup",
+      "skill-link"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Sunkern",
+    "number": 191,
+    "abilities": [
+      "chlorophyll",
+      "early-bird",
+      "solar-power"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Sunflora",
+    "number": 192,
+    "abilities": [
+      "chlorophyll",
+      "early-bird",
+      "solar-power"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Yanma",
+    "number": 193,
+    "abilities": [
+      "speed-boost",
+      "compoundeyes",
+      "frisk"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Wooper",
+    "number": 194,
+    "abilities": [
+      "damp",
+      "water-absorb",
+      "unaware"
+    ],
+    "types": [
+      "ground",
+      "water"
+    ]
+  },
+  {
+    "name": "Quagsire",
+    "number": 195,
+    "abilities": [
+      "damp",
+      "water-absorb",
+      "unaware"
+    ],
+    "types": [
+      "ground",
+      "water"
+    ]
+  },
+  {
+    "name": "Espeon",
+    "number": 196,
+    "abilities": [
+      "synchronize",
+      "magic-bounce"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Umbreon",
+    "number": 197,
+    "abilities": [
+      "synchronize",
+      "inner-focus"
+    ],
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Murkrow",
+    "number": 198,
+    "abilities": [
+      "insomnia",
+      "super-luck",
+      "prankster"
+    ],
+    "types": [
+      "flying",
+      "dark"
+    ]
+  },
+  {
+    "name": "Slowking",
+    "number": 199,
+    "abilities": [
+      "oblivious",
+      "own-tempo",
+      "regenerator"
+    ],
+    "types": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Misdreavus",
+    "number": 200,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Unown",
+    "number": 201,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Wobbuffet",
+    "number": 202,
+    "abilities": [
+      "shadow-tag",
+      "telepathy"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Girafarig",
+    "number": 203,
+    "abilities": [
+      "inner-focus",
+      "early-bird",
+      "sap-sipper"
+    ],
+    "types": [
+      "normal",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Pineco",
+    "number": 204,
+    "abilities": [
+      "sturdy",
+      "overcoat"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Forretress",
+    "number": 205,
+    "abilities": [
+      "sturdy",
+      "overcoat"
+    ],
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Dunsparce",
+    "number": 206,
+    "abilities": [
+      "serene-grace",
+      "run-away",
+      "rattled"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Gligar",
+    "number": 207,
+    "abilities": [
+      "sand-veil",
+      "immunity",
+      "hyper-cutter"
+    ],
+    "types": [
+      "flying",
+      "ground"
+    ]
+  },
+  {
+    "name": "Steelix",
+    "number": 208,
+    "abilities": [
+      "sturdy",
+      "rock-head",
+      "sheer-force"
+    ],
+    "types": [
+      "ground",
+      "steel"
+    ]
+  },
+  {
+    "name": "Snubbull",
+    "number": 209,
+    "abilities": [
+      "intimidate",
+      "run-away",
+      "rattled"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Granbull",
+    "number": 210,
+    "abilities": [
+      "intimidate",
+      "quick-feet",
+      "rattled"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Qwilfish",
+    "number": 211,
+    "abilities": [
+      "intimidate",
+      "swift-swim",
+      "poison-point"
+    ],
+    "types": [
+      "poison",
+      "water"
+    ]
+  },
+  {
+    "name": "Scizor",
+    "number": 212,
+    "abilities": [
+      "swarm",
+      "technician",
+      "light-metal"
+    ],
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Shuckle",
+    "number": 213,
+    "abilities": [
+      "sturdy",
+      "gluttony",
+      "contrary"
+    ],
+    "types": [
+      "rock",
+      "bug"
+    ]
+  },
+  {
+    "name": "Heracross",
+    "number": 214,
+    "abilities": [
+      "guts",
+      "swarm",
+      "moxie"
+    ],
+    "types": [
+      "fighting",
+      "bug"
+    ]
+  },
+  {
+    "name": "Sneasel",
+    "number": 215,
+    "abilities": [
+      "inner-focus",
+      "keen-eye",
+      "pickpocket"
+    ],
+    "types": [
+      "ice",
+      "dark"
+    ]
+  },
+  {
+    "name": "Teddiursa",
+    "number": 216,
+    "abilities": [
+      "pickup",
+      "quick-feet",
+      "honey-gather"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ursaring",
+    "number": 217,
+    "abilities": [
+      "guts",
+      "quick-feet",
+      "unnerve"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Slugma",
+    "number": 218,
+    "abilities": [
+      "magma-armor",
+      "flame-body",
+      "weak-armor"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Magcargo",
+    "number": 219,
+    "abilities": [
+      "magma-armor",
+      "flame-body",
+      "weak-armor"
+    ],
+    "types": [
+      "rock",
+      "fire"
+    ]
+  },
+  {
+    "name": "Swinub",
+    "number": 220,
+    "abilities": [
+      "oblivious",
+      "thick-fat",
+      "snow-cloak"
+    ],
+    "types": [
+      "ground",
+      "ice"
+    ]
+  },
+  {
+    "name": "Piloswine",
+    "number": 221,
+    "abilities": [
+      "oblivious",
+      "thick-fat",
+      "snow-cloak"
+    ],
+    "types": [
+      "ground",
+      "ice"
+    ]
+  },
+  {
+    "name": "Corsola",
+    "number": 222,
+    "abilities": [
+      "natural-cure",
+      "hustle",
+      "regenerator"
+    ],
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Remoraid",
+    "number": 223,
+    "abilities": [
+      "hustle",
+      "sniper",
+      "moody"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Octillery",
+    "number": 224,
+    "abilities": [
+      "suction-cups",
+      "sniper",
+      "moody"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Delibird",
+    "number": 225,
+    "abilities": [
+      "insomnia",
+      "hustle",
+      "vital-spirit"
+    ],
+    "types": [
+      "flying",
+      "ice"
+    ]
+  },
+  {
+    "name": "Mantine",
+    "number": 226,
+    "abilities": [
+      "water-absorb",
+      "swift-swim",
+      "water-veil"
+    ],
+    "types": [
+      "flying",
+      "water"
+    ]
+  },
+  {
+    "name": "Skarmory",
+    "number": 227,
+    "abilities": [
+      "sturdy",
+      "keen-eye",
+      "weak-armor"
+    ],
+    "types": [
+      "flying",
+      "steel"
+    ]
+  },
+  {
+    "name": "Houndour",
+    "number": 228,
+    "abilities": [
+      "flash-fire",
+      "early-bird",
+      "unnerve"
+    ],
+    "types": [
+      "fire",
+      "dark"
+    ]
+  },
+  {
+    "name": "Houndoom",
+    "number": 229,
+    "abilities": [
+      "flash-fire",
+      "early-bird",
+      "unnerve"
+    ],
+    "types": [
+      "fire",
+      "dark"
+    ]
+  },
+  {
+    "name": "Kingdra",
+    "number": 230,
+    "abilities": [
+      "damp",
+      "swift-swim",
+      "sniper"
+    ],
+    "types": [
+      "water",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Phanpy",
+    "number": 231,
+    "abilities": [
+      "sand-veil",
+      "pickup"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Donphan",
+    "number": 232,
+    "abilities": [
+      "sturdy",
+      "sand-veil"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Porygon2",
+    "number": 233,
+    "abilities": [
+      "trace",
+      "download",
+      "analytic"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Stantler",
+    "number": 234,
+    "abilities": [
+      "intimidate",
+      "frisk",
+      "sap-sipper"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Smeargle",
+    "number": 235,
+    "abilities": [
+      "own-tempo",
+      "technician",
+      "moody"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Tyrogue",
+    "number": 236,
+    "abilities": [
+      "guts",
+      "vital-spirit",
+      "steadfast"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Hitmontop",
+    "number": 237,
+    "abilities": [
+      "intimidate",
+      "steadfast",
+      "technician"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Smoochum",
+    "number": 238,
+    "abilities": [
+      "oblivious",
+      "hydration",
+      "forewarn"
+    ],
+    "types": [
+      "ice",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Elekid",
+    "number": 239,
+    "abilities": [
+      "static",
+      "vital-spirit"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Magby",
+    "number": 240,
+    "abilities": [
+      "flame-body",
+      "vital-spirit"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Miltank",
+    "number": 241,
+    "abilities": [
+      "thick-fat",
+      "scrappy",
+      "sap-sipper"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Blissey",
+    "number": 242,
+    "abilities": [
+      "natural-cure",
+      "serene-grace",
+      "healer"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Raikou",
+    "number": 243,
+    "abilities": [
+      "volt-absorb",
+      "pressure"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Entei",
+    "number": 244,
+    "abilities": [
+      "flash-fire",
+      "pressure"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Suicune",
+    "number": 245,
+    "abilities": [
+      "water-absorb",
+      "pressure"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Larvitar",
+    "number": 246,
+    "abilities": [
+      "sand-veil",
+      "guts"
+    ],
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Pupitar",
+    "number": 247,
+    "abilities": [
+      "shed-skin"
+    ],
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Tyranitar",
+    "number": 248,
+    "abilities": [
+      "sand-stream",
+      "unnerve"
+    ],
+    "types": [
+      "rock",
+      "dark"
+    ]
+  },
+  {
+    "name": "Lugia",
+    "number": 249,
+    "abilities": [
+      "pressure",
+      "multiscale"
+    ],
+    "types": [
+      "flying",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Ho-oh",
+    "number": 250,
+    "abilities": [
+      "pressure",
+      "regenerator"
+    ],
+    "types": [
+      "flying",
+      "fire"
+    ]
+  },
+  {
+    "name": "Celebi",
+    "number": 251,
+    "abilities": [
+      "natural-cure"
+    ],
+    "types": [
+      "grass",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Treecko",
+    "number": 252,
+    "abilities": [
+      "overgrow",
+      "unburden"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Grovyle",
+    "number": 253,
+    "abilities": [
+      "overgrow",
+      "unburden"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Sceptile",
+    "number": 254,
+    "abilities": [
+      "overgrow",
+      "unburden"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Torchic",
+    "number": 255,
+    "abilities": [
+      "speed-boost",
+      "blaze"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Combusken",
+    "number": 256,
+    "abilities": [
+      "speed-boost",
+      "blaze"
+    ],
+    "types": [
+      "fighting",
+      "fire"
+    ]
+  },
+  {
+    "name": "Blaziken",
+    "number": 257,
+    "abilities": [
+      "speed-boost",
+      "blaze"
+    ],
+    "types": [
+      "fighting",
+      "fire"
+    ]
+  },
+  {
+    "name": "Mudkip",
+    "number": 258,
+    "abilities": [
+      "damp",
+      "torrent"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Marshtomp",
+    "number": 259,
+    "abilities": [
+      "damp",
+      "torrent"
+    ],
+    "types": [
+      "ground",
+      "water"
+    ]
+  },
+  {
+    "name": "Swampert",
+    "number": 260,
+    "abilities": [
+      "damp",
+      "torrent"
+    ],
+    "types": [
+      "ground",
+      "water"
+    ]
+  },
+  {
+    "name": "Poochyena",
+    "number": 261,
+    "abilities": [
+      "run-away",
+      "quick-feet",
+      "rattled"
+    ],
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Mightyena",
+    "number": 262,
+    "abilities": [
+      "intimidate",
+      "quick-feet",
+      "moxie"
+    ],
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Zigzagoon",
+    "number": 263,
+    "abilities": [
+      "pickup",
+      "gluttony",
+      "quick-feet"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Linoone",
+    "number": 264,
+    "abilities": [
+      "pickup",
+      "gluttony",
+      "quick-feet"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Wurmple",
+    "number": 265,
+    "abilities": [
+      "shield-dust",
+      "run-away"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Silcoon",
+    "number": 266,
+    "abilities": [
+      "shed-skin"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Beautifly",
+    "number": 267,
+    "abilities": [
+      "swarm",
+      "rivalry"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Cascoon",
+    "number": 268,
+    "abilities": [
+      "shed-skin"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Dustox",
+    "number": 269,
+    "abilities": [
+      "compoundeyes",
+      "shield-dust"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Lotad",
+    "number": 270,
+    "abilities": [
+      "own-tempo",
+      "swift-swim",
+      "rain-dish"
+    ],
+    "types": [
+      "water",
+      "grass"
+    ]
+  },
+  {
+    "name": "Lombre",
+    "number": 271,
+    "abilities": [
+      "own-tempo",
+      "swift-swim",
+      "rain-dish"
+    ],
+    "types": [
+      "water",
+      "grass"
+    ]
+  },
+  {
+    "name": "Ludicolo",
+    "number": 272,
+    "abilities": [
+      "own-tempo",
+      "swift-swim",
+      "rain-dish"
+    ],
+    "types": [
+      "water",
+      "grass"
+    ]
+  },
+  {
+    "name": "Seedot",
+    "number": 273,
+    "abilities": [
+      "chlorophyll",
+      "early-bird",
+      "pickpocket"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Nuzleaf",
+    "number": 274,
+    "abilities": [
+      "chlorophyll",
+      "early-bird",
+      "pickpocket"
+    ],
+    "types": [
+      "grass",
+      "dark"
+    ]
+  },
+  {
+    "name": "Shiftry",
+    "number": 275,
+    "abilities": [
+      "chlorophyll",
+      "early-bird",
+      "pickpocket"
+    ],
+    "types": [
+      "grass",
+      "dark"
+    ]
+  },
+  {
+    "name": "Taillow",
+    "number": 276,
+    "abilities": [
+      "guts",
+      "scrappy"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Swellow",
+    "number": 277,
+    "abilities": [
+      "guts",
+      "scrappy"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Wingull",
+    "number": 278,
+    "abilities": [
+      "rain-dish",
+      "keen-eye"
+    ],
+    "types": [
+      "flying",
+      "water"
+    ]
+  },
+  {
+    "name": "Pelipper",
+    "number": 279,
+    "abilities": [
+      "rain-dish",
+      "keen-eye"
+    ],
+    "types": [
+      "flying",
+      "water"
+    ]
+  },
+  {
+    "name": "Ralts",
+    "number": 280,
+    "abilities": [
+      "synchronize",
+      "trace",
+      "telepathy"
+    ],
+    "types": [
+      "fairy",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Kirlia",
+    "number": 281,
+    "abilities": [
+      "synchronize",
+      "trace",
+      "telepathy"
+    ],
+    "types": [
+      "fairy",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Gardevoir",
+    "number": 282,
+    "abilities": [
+      "synchronize",
+      "trace",
+      "telepathy"
+    ],
+    "types": [
+      "fairy",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Surskit",
+    "number": 283,
+    "abilities": [
+      "swift-swim",
+      "rain-dish"
+    ],
+    "types": [
+      "bug",
+      "water"
+    ]
+  },
+  {
+    "name": "Masquerain",
+    "number": 284,
+    "abilities": [
+      "intimidate",
+      "unnerve"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Shroomish",
+    "number": 285,
+    "abilities": [
+      "effect-spore",
+      "poison-heal",
+      "quick-feet"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Breloom",
+    "number": 286,
+    "abilities": [
+      "effect-spore",
+      "poison-heal",
+      "technician"
+    ],
+    "types": [
+      "fighting",
+      "grass"
+    ]
+  },
+  {
+    "name": "Slakoth",
+    "number": 287,
+    "abilities": [
+      "truant"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Vigoroth",
+    "number": 288,
+    "abilities": [
+      "vital-spirit"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Slaking",
+    "number": 289,
+    "abilities": [
+      "truant"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Nincada",
+    "number": 290,
+    "abilities": [
+      "compoundeyes",
+      "run-away"
+    ],
+    "types": [
+      "ground",
+      "bug"
+    ]
+  },
+  {
+    "name": "Ninjask",
+    "number": 291,
+    "abilities": [
+      "speed-boost",
+      "infiltrator"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Shedinja",
+    "number": 292,
+    "abilities": [
+      "wonder-guard"
+    ],
+    "types": [
+      "bug",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Whismur",
+    "number": 293,
+    "abilities": [
+      "soundproof",
+      "rattled"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Loudred",
+    "number": 294,
+    "abilities": [
+      "soundproof",
+      "scrappy"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Exploud",
+    "number": 295,
+    "abilities": [
+      "soundproof",
+      "scrappy"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Makuhita",
+    "number": 296,
+    "abilities": [
+      "thick-fat",
+      "guts",
+      "sheer-force"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Hariyama",
+    "number": 297,
+    "abilities": [
+      "thick-fat",
+      "guts",
+      "sheer-force"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Azurill",
+    "number": 298,
+    "abilities": [
+      "huge-power",
+      "thick-fat",
+      "sap-sipper"
+    ],
+    "types": [
+      "normal",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Nosepass",
+    "number": 299,
+    "abilities": [
+      "sturdy",
+      "magnet-pull",
+      "sand-force"
+    ],
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Skitty",
+    "number": 300,
+    "abilities": [
+      "cute-charm",
+      "normalize",
+      "wonder-skin"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Delcatty",
+    "number": 301,
+    "abilities": [
+      "cute-charm",
+      "normalize",
+      "wonder-skin"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Sableye",
+    "number": 302,
+    "abilities": [
+      "keen-eye",
+      "stall",
+      "prankster"
+    ],
+    "types": [
+      "ghost",
+      "dark"
+    ]
+  },
+  {
+    "name": "Mawile",
+    "number": 303,
+    "abilities": [
+      "intimidate",
+      "hyper-cutter",
+      "sheer-force"
+    ],
+    "types": [
+      "steel",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Aron",
+    "number": 304,
+    "abilities": [
+      "sturdy",
+      "rock-head",
+      "heavy-metal"
+    ],
+    "types": [
+      "rock",
+      "steel"
+    ]
+  },
+  {
+    "name": "Lairon",
+    "number": 305,
+    "abilities": [
+      "sturdy",
+      "rock-head",
+      "heavy-metal"
+    ],
+    "types": [
+      "rock",
+      "steel"
+    ]
+  },
+  {
+    "name": "Aggron",
+    "number": 306,
+    "abilities": [
+      "sturdy",
+      "rock-head",
+      "heavy-metal"
+    ],
+    "types": [
+      "rock",
+      "steel"
+    ]
+  },
+  {
+    "name": "Meditite",
+    "number": 307,
+    "abilities": [
+      "pure-power",
+      "telepathy"
+    ],
+    "types": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Medicham",
+    "number": 308,
+    "abilities": [
+      "pure-power",
+      "telepathy"
+    ],
+    "types": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Electrike",
+    "number": 309,
+    "abilities": [
+      "static",
+      "lightningrod",
+      "minus"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Manectric",
+    "number": 310,
+    "abilities": [
+      "static",
+      "lightningrod",
+      "minus"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Plusle",
+    "number": 311,
+    "abilities": [
+      "plus"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Minun",
+    "number": 312,
+    "abilities": [
+      "minus"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Volbeat",
+    "number": 313,
+    "abilities": [
+      "illuminate",
+      "swarm",
+      "prankster"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Illumise",
+    "number": 314,
+    "abilities": [
+      "oblivious",
+      "tinted-lens",
+      "prankster"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Roselia",
+    "number": 315,
+    "abilities": [
+      "natural-cure",
+      "poison-point",
+      "leaf-guard"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Gulpin",
+    "number": 316,
+    "abilities": [
+      "sticky-hold",
+      "liquid-ooze",
+      "gluttony"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Swalot",
+    "number": 317,
+    "abilities": [
+      "sticky-hold",
+      "liquid-ooze",
+      "gluttony"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Carvanha",
+    "number": 318,
+    "abilities": [
+      "speed-boost",
+      "rough-skin"
+    ],
+    "types": [
+      "water",
+      "dark"
+    ]
+  },
+  {
+    "name": "Sharpedo",
+    "number": 319,
+    "abilities": [
+      "speed-boost",
+      "rough-skin"
+    ],
+    "types": [
+      "water",
+      "dark"
+    ]
+  },
+  {
+    "name": "Wailmer",
+    "number": 320,
+    "abilities": [
+      "oblivious",
+      "water-veil",
+      "pressure"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Wailord",
+    "number": 321,
+    "abilities": [
+      "oblivious",
+      "water-veil",
+      "pressure"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Numel",
+    "number": 322,
+    "abilities": [
+      "oblivious",
+      "own-tempo",
+      "simple"
+    ],
+    "types": [
+      "ground",
+      "fire"
+    ]
+  },
+  {
+    "name": "Camerupt",
+    "number": 323,
+    "abilities": [
+      "magma-armor",
+      "anger-point",
+      "solid-rock"
+    ],
+    "types": [
+      "ground",
+      "fire"
+    ]
+  },
+  {
+    "name": "Torkoal",
+    "number": 324,
+    "abilities": [
+      "white-smoke",
+      "shell-armor"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Spoink",
+    "number": 325,
+    "abilities": [
+      "own-tempo",
+      "thick-fat",
+      "gluttony"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Grumpig",
+    "number": 326,
+    "abilities": [
+      "own-tempo",
+      "thick-fat",
+      "gluttony"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Spinda",
+    "number": 327,
+    "abilities": [
+      "own-tempo",
+      "tangled-feet",
+      "contrary"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Trapinch",
+    "number": 328,
+    "abilities": [
+      "hyper-cutter",
+      "arena-trap",
+      "sheer-force"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Vibrava",
+    "number": 329,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "ground",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Flygon",
+    "number": 330,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "ground",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Cacnea",
+    "number": 331,
+    "abilities": [
+      "sand-veil",
+      "water-absorb"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Cacturne",
+    "number": 332,
+    "abilities": [
+      "sand-veil",
+      "water-absorb"
+    ],
+    "types": [
+      "grass",
+      "dark"
+    ]
+  },
+  {
+    "name": "Swablu",
+    "number": 333,
+    "abilities": [
+      "cloud-nine",
+      "natural-cure"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Altaria",
+    "number": 334,
+    "abilities": [
+      "cloud-nine",
+      "natural-cure"
+    ],
+    "types": [
+      "flying",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Zangoose",
+    "number": 335,
+    "abilities": [
+      "immunity",
+      "toxic-boost"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Seviper",
+    "number": 336,
+    "abilities": [
+      "shed-skin",
+      "infiltrator"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Lunatone",
+    "number": 337,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "rock",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Solrock",
+    "number": 338,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "rock",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Barboach",
+    "number": 339,
+    "abilities": [
+      "oblivious",
+      "hydration",
+      "anticipation"
+    ],
+    "types": [
+      "ground",
+      "water"
+    ]
+  },
+  {
+    "name": "Whiscash",
+    "number": 340,
+    "abilities": [
+      "oblivious",
+      "hydration",
+      "anticipation"
+    ],
+    "types": [
+      "ground",
+      "water"
+    ]
+  },
+  {
+    "name": "Corphish",
+    "number": 341,
+    "abilities": [
+      "hyper-cutter",
+      "shell-armor",
+      "adaptability"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Crawdaunt",
+    "number": 342,
+    "abilities": [
+      "hyper-cutter",
+      "shell-armor",
+      "adaptability"
+    ],
+    "types": [
+      "water",
+      "dark"
+    ]
+  },
+  {
+    "name": "Baltoy",
+    "number": 343,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "ground",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Claydol",
+    "number": 344,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "ground",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Lileep",
+    "number": 345,
+    "abilities": [
+      "suction-cups",
+      "storm-drain"
+    ],
+    "types": [
+      "rock",
+      "grass"
+    ]
+  },
+  {
+    "name": "Cradily",
+    "number": 346,
+    "abilities": [
+      "suction-cups",
+      "storm-drain"
+    ],
+    "types": [
+      "rock",
+      "grass"
+    ]
+  },
+  {
+    "name": "Anorith",
+    "number": 347,
+    "abilities": [
+      "battle-armor",
+      "swift-swim"
+    ],
+    "types": [
+      "rock",
+      "bug"
+    ]
+  },
+  {
+    "name": "Armaldo",
+    "number": 348,
+    "abilities": [
+      "battle-armor",
+      "swift-swim"
+    ],
+    "types": [
+      "rock",
+      "bug"
+    ]
+  },
+  {
+    "name": "Feebas",
+    "number": 349,
+    "abilities": [
+      "swift-swim",
+      "adaptability"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Milotic",
+    "number": 350,
+    "abilities": [
+      "cute-charm",
+      "marvel-scale"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Castform",
+    "number": 351,
+    "abilities": [
+      "forecast"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Kecleon",
+    "number": 352,
+    "abilities": [
+      "color-change"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Shuppet",
+    "number": 353,
+    "abilities": [
+      "insomnia",
+      "frisk",
+      "cursed-body"
+    ],
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Banette",
+    "number": 354,
+    "abilities": [
+      "insomnia",
+      "frisk",
+      "cursed-body"
+    ],
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Duskull",
+    "number": 355,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Dusclops",
+    "number": 356,
+    "abilities": [
+      "pressure"
+    ],
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Tropius",
+    "number": 357,
+    "abilities": [
+      "chlorophyll",
+      "solar-power",
+      "harvest"
+    ],
+    "types": [
+      "flying",
+      "grass"
+    ]
+  },
+  {
+    "name": "Chimecho",
+    "number": 358,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Absol",
+    "number": 359,
+    "abilities": [
+      "pressure",
+      "super-luck",
+      "justified"
+    ],
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Wynaut",
+    "number": 360,
+    "abilities": [
+      "shadow-tag",
+      "telepathy"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Snorunt",
+    "number": 361,
+    "abilities": [
+      "inner-focus",
+      "ice-body",
+      "moody"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Glalie",
+    "number": 362,
+    "abilities": [
+      "inner-focus",
+      "ice-body",
+      "moody"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Spheal",
+    "number": 363,
+    "abilities": [
+      "oblivious",
+      "thick-fat",
+      "ice-body"
+    ],
+    "types": [
+      "water",
+      "ice"
+    ]
+  },
+  {
+    "name": "Sealeo",
+    "number": 364,
+    "abilities": [
+      "oblivious",
+      "thick-fat",
+      "ice-body"
+    ],
+    "types": [
+      "water",
+      "ice"
+    ]
+  },
+  {
+    "name": "Walrein",
+    "number": 365,
+    "abilities": [
+      "oblivious",
+      "thick-fat",
+      "ice-body"
+    ],
+    "types": [
+      "water",
+      "ice"
+    ]
+  },
+  {
+    "name": "Clamperl",
+    "number": 366,
+    "abilities": [
+      "shell-armor",
+      "rattled"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Huntail",
+    "number": 367,
+    "abilities": [
+      "swift-swim",
+      "water-veil"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Gorebyss",
+    "number": 368,
+    "abilities": [
+      "swift-swim",
+      "hydration"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Relicanth",
+    "number": 369,
+    "abilities": [
+      "sturdy",
+      "swift-swim",
+      "rock-head"
+    ],
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Luvdisc",
+    "number": 370,
+    "abilities": [
+      "swift-swim",
+      "hydration"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Bagon",
+    "number": 371,
+    "abilities": [
+      "rock-head",
+      "sheer-force"
+    ],
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Shelgon",
+    "number": 372,
+    "abilities": [
+      "rock-head",
+      "overcoat"
+    ],
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Salamence",
+    "number": 373,
+    "abilities": [
+      "intimidate",
+      "moxie"
+    ],
+    "types": [
+      "flying",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Beldum",
+    "number": 374,
+    "abilities": [
+      "clear-body",
+      "light-metal"
+    ],
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Metang",
+    "number": 375,
+    "abilities": [
+      "clear-body",
+      "light-metal"
+    ],
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Metagross",
+    "number": 376,
+    "abilities": [
+      "clear-body",
+      "light-metal"
+    ],
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Regirock",
+    "number": 377,
+    "abilities": [
+      "sturdy",
+      "clear-body"
+    ],
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Regice",
+    "number": 378,
+    "abilities": [
+      "clear-body",
+      "ice-body"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Registeel",
+    "number": 379,
+    "abilities": [
+      "clear-body",
+      "light-metal"
+    ],
+    "types": [
+      "steel"
+    ]
+  },
+  {
+    "name": "Latias",
+    "number": 380,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "dragon",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Latios",
+    "number": 381,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "dragon",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Kyogre",
+    "number": 382,
+    "abilities": [
+      "drizzle"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Groudon",
+    "number": 383,
+    "abilities": [
+      "drought"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Rayquaza",
+    "number": 384,
+    "abilities": [
+      "air-lock"
+    ],
+    "types": [
+      "flying",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Jirachi",
+    "number": 385,
+    "abilities": [
+      "serene-grace"
+    ],
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Deoxys-normal",
+    "number": 386,
+    "abilities": [
+      "pressure"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Turtwig",
+    "number": 387,
+    "abilities": [
+      "overgrow",
+      "shell-armor"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Grotle",
+    "number": 388,
+    "abilities": [
+      "overgrow",
+      "shell-armor"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Torterra",
+    "number": 389,
+    "abilities": [
+      "overgrow",
+      "shell-armor"
+    ],
+    "types": [
+      "ground",
+      "grass"
+    ]
+  },
+  {
+    "name": "Chimchar",
+    "number": 390,
+    "abilities": [
+      "blaze",
+      "iron-fist"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Monferno",
+    "number": 391,
+    "abilities": [
+      "blaze",
+      "iron-fist"
+    ],
+    "types": [
+      "fighting",
+      "fire"
+    ]
+  },
+  {
+    "name": "Infernape",
+    "number": 392,
+    "abilities": [
+      "blaze",
+      "iron-fist"
+    ],
+    "types": [
+      "fighting",
+      "fire"
+    ]
+  },
+  {
+    "name": "Piplup",
+    "number": 393,
+    "abilities": [
+      "torrent",
+      "defiant"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Prinplup",
+    "number": 394,
+    "abilities": [
+      "torrent",
+      "defiant"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Empoleon",
+    "number": 395,
+    "abilities": [
+      "torrent",
+      "defiant"
+    ],
+    "types": [
+      "steel",
+      "water"
+    ]
+  },
+  {
+    "name": "Starly",
+    "number": 396,
+    "abilities": [
+      "keen-eye"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Staravia",
+    "number": 397,
+    "abilities": [
+      "intimidate",
+      "reckless"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Staraptor",
+    "number": 398,
+    "abilities": [
+      "intimidate",
+      "reckless"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Bidoof",
+    "number": 399,
+    "abilities": [
+      "simple",
+      "unaware",
+      "moody"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Bibarel",
+    "number": 400,
+    "abilities": [
+      "simple",
+      "unaware",
+      "moody"
+    ],
+    "types": [
+      "normal",
+      "water"
+    ]
+  },
+  {
+    "name": "Kricketot",
+    "number": 401,
+    "abilities": [
+      "run-away",
+      "shed-skin"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Kricketune",
+    "number": 402,
+    "abilities": [
+      "swarm",
+      "technician"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Shinx",
+    "number": 403,
+    "abilities": [
+      "intimidate",
+      "guts",
+      "rivalry"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Luxio",
+    "number": 404,
+    "abilities": [
+      "intimidate",
+      "guts",
+      "rivalry"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Luxray",
+    "number": 405,
+    "abilities": [
+      "intimidate",
+      "guts",
+      "rivalry"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Budew",
+    "number": 406,
+    "abilities": [
+      "natural-cure",
+      "poison-point",
+      "leaf-guard"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Roserade",
+    "number": 407,
+    "abilities": [
+      "natural-cure",
+      "poison-point",
+      "technician"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Cranidos",
+    "number": 408,
+    "abilities": [
+      "mold-breaker",
+      "sheer-force"
+    ],
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Rampardos",
+    "number": 409,
+    "abilities": [
+      "mold-breaker",
+      "sheer-force"
+    ],
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Shieldon",
+    "number": 410,
+    "abilities": [
+      "sturdy",
+      "soundproof"
+    ],
+    "types": [
+      "rock",
+      "steel"
+    ]
+  },
+  {
+    "name": "Bastiodon",
+    "number": 411,
+    "abilities": [
+      "sturdy",
+      "soundproof"
+    ],
+    "types": [
+      "rock",
+      "steel"
+    ]
+  },
+  {
+    "name": "Burmy",
+    "number": 412,
+    "abilities": [
+      "shed-skin",
+      "overcoat"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Wormadam-plant",
+    "number": 413,
+    "abilities": [
+      "anticipation",
+      "overcoat"
+    ],
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Mothim",
+    "number": 414,
+    "abilities": [
+      "swarm",
+      "tinted-lens"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Combee",
+    "number": 415,
+    "abilities": [
+      "hustle",
+      "honey-gather"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Vespiquen",
+    "number": 416,
+    "abilities": [
+      "pressure",
+      "unnerve"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Pachirisu",
+    "number": 417,
+    "abilities": [
+      "volt-absorb",
+      "run-away",
+      "pickup"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Buizel",
+    "number": 418,
+    "abilities": [
+      "swift-swim",
+      "water-veil"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Floatzel",
+    "number": 419,
+    "abilities": [
+      "swift-swim",
+      "water-veil"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Cherubi",
+    "number": 420,
+    "abilities": [
+      "chlorophyll"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Cherrim",
+    "number": 421,
+    "abilities": [
+      "flower-gift"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Shellos",
+    "number": 422,
+    "abilities": [
+      "sticky-hold",
+      "storm-drain",
+      "sand-force"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Gastrodon",
+    "number": 423,
+    "abilities": [
+      "sticky-hold",
+      "storm-drain",
+      "sand-force"
+    ],
+    "types": [
+      "ground",
+      "water"
+    ]
+  },
+  {
+    "name": "Ambipom",
+    "number": 424,
+    "abilities": [
+      "pickup",
+      "skill-link",
+      "technician"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Drifloon",
+    "number": 425,
+    "abilities": [
+      "unburden",
+      "aftermath",
+      "flare-boost"
+    ],
+    "types": [
+      "flying",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Drifblim",
+    "number": 426,
+    "abilities": [
+      "unburden",
+      "aftermath",
+      "flare-boost"
+    ],
+    "types": [
+      "flying",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Buneary",
+    "number": 427,
+    "abilities": [
+      "limber",
+      "run-away",
+      "klutz"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lopunny",
+    "number": 428,
+    "abilities": [
+      "limber",
+      "cute-charm",
+      "klutz"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Mismagius",
+    "number": 429,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Honchkrow",
+    "number": 430,
+    "abilities": [
+      "insomnia",
+      "super-luck",
+      "moxie"
+    ],
+    "types": [
+      "flying",
+      "dark"
+    ]
+  },
+  {
+    "name": "Glameow",
+    "number": 431,
+    "abilities": [
+      "limber",
+      "own-tempo",
+      "keen-eye"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Purugly",
+    "number": 432,
+    "abilities": [
+      "own-tempo",
+      "thick-fat",
+      "defiant"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Chingling",
+    "number": 433,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Stunky",
+    "number": 434,
+    "abilities": [
+      "stench",
+      "keen-eye",
+      "aftermath"
+    ],
+    "types": [
+      "poison",
+      "dark"
+    ]
+  },
+  {
+    "name": "Skuntank",
+    "number": 435,
+    "abilities": [
+      "stench",
+      "keen-eye",
+      "aftermath"
+    ],
+    "types": [
+      "poison",
+      "dark"
+    ]
+  },
+  {
+    "name": "Bronzor",
+    "number": 436,
+    "abilities": [
+      "levitate",
+      "heatproof",
+      "heavy-metal"
+    ],
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Bronzong",
+    "number": 437,
+    "abilities": [
+      "levitate",
+      "heatproof",
+      "heavy-metal"
+    ],
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Bonsly",
+    "number": 438,
+    "abilities": [
+      "sturdy",
+      "rock-head",
+      "rattled"
+    ],
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Mime-jr",
+    "number": 439,
+    "abilities": [
+      "soundproof",
+      "technician",
+      "filter"
+    ],
+    "types": [
+      "fairy",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Happiny",
+    "number": 440,
+    "abilities": [
+      "natural-cure",
+      "serene-grace",
+      "friend-guard"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Chatot",
+    "number": 441,
+    "abilities": [
+      "keen-eye",
+      "tangled-feet",
+      "big-pecks"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Spiritomb",
+    "number": 442,
+    "abilities": [
+      "pressure",
+      "infiltrator"
+    ],
+    "types": [
+      "ghost",
+      "dark"
+    ]
+  },
+  {
+    "name": "Gible",
+    "number": 443,
+    "abilities": [
+      "sand-veil",
+      "rough-skin"
+    ],
+    "types": [
+      "ground",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Gabite",
+    "number": 444,
+    "abilities": [
+      "sand-veil",
+      "rough-skin"
+    ],
+    "types": [
+      "ground",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Garchomp",
+    "number": 445,
+    "abilities": [
+      "sand-veil",
+      "rough-skin"
+    ],
+    "types": [
+      "ground",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Munchlax",
+    "number": 446,
+    "abilities": [
+      "thick-fat",
+      "pickup",
+      "gluttony"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Riolu",
+    "number": 447,
+    "abilities": [
+      "inner-focus",
+      "steadfast",
+      "prankster"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Lucario",
+    "number": 448,
+    "abilities": [
+      "inner-focus",
+      "steadfast",
+      "justified"
+    ],
+    "types": [
+      "fighting",
+      "steel"
+    ]
+  },
+  {
+    "name": "Hippopotas",
+    "number": 449,
+    "abilities": [
+      "sand-stream",
+      "sand-force"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Hippowdon",
+    "number": 450,
+    "abilities": [
+      "sand-stream",
+      "sand-force"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Skorupi",
+    "number": 451,
+    "abilities": [
+      "battle-armor",
+      "keen-eye",
+      "sniper"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Drapion",
+    "number": 452,
+    "abilities": [
+      "battle-armor",
+      "keen-eye",
+      "sniper"
+    ],
+    "types": [
+      "poison",
+      "dark"
+    ]
+  },
+  {
+    "name": "Croagunk",
+    "number": 453,
+    "abilities": [
+      "dry-skin",
+      "anticipation",
+      "poison-touch"
+    ],
+    "types": [
+      "fighting",
+      "poison"
+    ]
+  },
+  {
+    "name": "Toxicroak",
+    "number": 454,
+    "abilities": [
+      "dry-skin",
+      "anticipation",
+      "poison-touch"
+    ],
+    "types": [
+      "fighting",
+      "poison"
+    ]
+  },
+  {
+    "name": "Carnivine",
+    "number": 455,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Finneon",
+    "number": 456,
+    "abilities": [
+      "swift-swim",
+      "water-veil",
+      "storm-drain"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Lumineon",
+    "number": 457,
+    "abilities": [
+      "swift-swim",
+      "water-veil",
+      "storm-drain"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Mantyke",
+    "number": 458,
+    "abilities": [
+      "water-absorb",
+      "swift-swim",
+      "water-veil"
+    ],
+    "types": [
+      "flying",
+      "water"
+    ]
+  },
+  {
+    "name": "Snover",
+    "number": 459,
+    "abilities": [
+      "soundproof",
+      "snow-warning"
+    ],
+    "types": [
+      "grass",
+      "ice"
+    ]
+  },
+  {
+    "name": "Abomasnow",
+    "number": 460,
+    "abilities": [
+      "soundproof",
+      "snow-warning"
+    ],
+    "types": [
+      "grass",
+      "ice"
+    ]
+  },
+  {
+    "name": "Weavile",
+    "number": 461,
+    "abilities": [
+      "pressure",
+      "pickpocket"
+    ],
+    "types": [
+      "ice",
+      "dark"
+    ]
+  },
+  {
+    "name": "Magnezone",
+    "number": 462,
+    "abilities": [
+      "sturdy",
+      "magnet-pull",
+      "analytic"
+    ],
+    "types": [
+      "steel",
+      "electric"
+    ]
+  },
+  {
+    "name": "Lickilicky",
+    "number": 463,
+    "abilities": [
+      "oblivious",
+      "cloud-nine",
+      "own-tempo"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Rhyperior",
+    "number": 464,
+    "abilities": [
+      "lightningrod",
+      "solid-rock",
+      "reckless"
+    ],
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Tangrowth",
+    "number": 465,
+    "abilities": [
+      "chlorophyll",
+      "leaf-guard",
+      "regenerator"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Electivire",
+    "number": 466,
+    "abilities": [
+      "vital-spirit",
+      "motor-drive"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Magmortar",
+    "number": 467,
+    "abilities": [
+      "flame-body",
+      "vital-spirit"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Togekiss",
+    "number": 468,
+    "abilities": [
+      "serene-grace",
+      "hustle",
+      "super-luck"
+    ],
+    "types": [
+      "flying",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Yanmega",
+    "number": 469,
+    "abilities": [
+      "speed-boost",
+      "tinted-lens",
+      "frisk"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Leafeon",
+    "number": 470,
+    "abilities": [
+      "chlorophyll",
+      "leaf-guard"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Glaceon",
+    "number": 471,
+    "abilities": [
+      "snow-cloak",
+      "ice-body"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Gliscor",
+    "number": 472,
+    "abilities": [
+      "sand-veil",
+      "hyper-cutter",
+      "poison-heal"
+    ],
+    "types": [
+      "flying",
+      "ground"
+    ]
+  },
+  {
+    "name": "Mamoswine",
+    "number": 473,
+    "abilities": [
+      "oblivious",
+      "thick-fat",
+      "snow-cloak"
+    ],
+    "types": [
+      "ground",
+      "ice"
+    ]
+  },
+  {
+    "name": "Porygon-z",
+    "number": 474,
+    "abilities": [
+      "download",
+      "adaptability",
+      "analytic"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Gallade",
+    "number": 475,
+    "abilities": [
+      "steadfast",
+      "justified"
+    ],
+    "types": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Probopass",
+    "number": 476,
+    "abilities": [
+      "sturdy",
+      "magnet-pull",
+      "sand-force"
+    ],
+    "types": [
+      "rock",
+      "steel"
+    ]
+  },
+  {
+    "name": "Dusknoir",
+    "number": 477,
+    "abilities": [
+      "pressure"
+    ],
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Froslass",
+    "number": 478,
+    "abilities": [
+      "snow-cloak",
+      "cursed-body"
+    ],
+    "types": [
+      "ghost",
+      "ice"
+    ]
+  },
+  {
+    "name": "Rotom",
+    "number": 479,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "ghost",
+      "electric"
+    ]
+  },
+  {
+    "name": "Uxie",
+    "number": 480,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Mesprit",
+    "number": 481,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Azelf",
+    "number": 482,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Dialga",
+    "number": 483,
+    "abilities": [
+      "pressure",
+      "telepathy"
+    ],
+    "types": [
+      "steel",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Palkia",
+    "number": 484,
+    "abilities": [
+      "pressure",
+      "telepathy"
+    ],
+    "types": [
+      "water",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Heatran",
+    "number": 485,
+    "abilities": [
+      "flash-fire",
+      "flame-body"
+    ],
+    "types": [
+      "steel",
+      "fire"
+    ]
+  },
+  {
+    "name": "Regigigas",
+    "number": 486,
+    "abilities": [
+      "slow-start"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Giratina-altered",
+    "number": 487,
+    "abilities": [
+      "pressure",
+      "telepathy"
+    ],
+    "types": [
+      "ghost",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Cresselia",
+    "number": 488,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Phione",
+    "number": 489,
+    "abilities": [
+      "hydration"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Manaphy",
+    "number": 490,
+    "abilities": [
+      "hydration"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Darkrai",
+    "number": 491,
+    "abilities": [
+      "bad-dreams"
+    ],
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Shaymin-land",
+    "number": 492,
+    "abilities": [
+      "natural-cure"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Arceus",
+    "number": 493,
+    "abilities": [
+      "multitype"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Victini",
+    "number": 494,
+    "abilities": [
+      "victory-star"
+    ],
+    "types": [
+      "fire",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Snivy",
+    "number": 495,
+    "abilities": [
+      "overgrow",
+      "contrary"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Servine",
+    "number": 496,
+    "abilities": [
+      "overgrow",
+      "contrary"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Serperior",
+    "number": 497,
+    "abilities": [
+      "overgrow",
+      "contrary"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Tepig",
+    "number": 498,
+    "abilities": [
+      "thick-fat",
+      "blaze"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Pignite",
+    "number": 499,
+    "abilities": [
+      "thick-fat",
+      "blaze"
+    ],
+    "types": [
+      "fighting",
+      "fire"
+    ]
+  },
+  {
+    "name": "Emboar",
+    "number": 500,
+    "abilities": [
+      "blaze",
+      "reckless"
+    ],
+    "types": [
+      "fighting",
+      "fire"
+    ]
+  },
+  {
+    "name": "Oshawott",
+    "number": 501,
+    "abilities": [
+      "torrent",
+      "shell-armor"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Dewott",
+    "number": 502,
+    "abilities": [
+      "torrent",
+      "shell-armor"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Samurott",
+    "number": 503,
+    "abilities": [
+      "torrent",
+      "shell-armor"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Patrat",
+    "number": 504,
+    "abilities": [
+      "run-away",
+      "keen-eye",
+      "analytic"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Watchog",
+    "number": 505,
+    "abilities": [
+      "illuminate",
+      "keen-eye",
+      "analytic"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lillipup",
+    "number": 506,
+    "abilities": [
+      "run-away",
+      "pickup",
+      "vital-spirit"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Herdier",
+    "number": 507,
+    "abilities": [
+      "intimidate",
+      "scrappy",
+      "sand-rush"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Stoutland",
+    "number": 508,
+    "abilities": [
+      "intimidate",
+      "scrappy",
+      "sand-rush"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Purrloin",
+    "number": 509,
+    "abilities": [
+      "limber",
+      "unburden",
+      "prankster"
+    ],
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Liepard",
+    "number": 510,
+    "abilities": [
+      "limber",
+      "unburden",
+      "prankster"
+    ],
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Pansage",
+    "number": 511,
+    "abilities": [
+      "overgrow",
+      "gluttony"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Simisage",
+    "number": 512,
+    "abilities": [
+      "overgrow",
+      "gluttony"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Pansear",
+    "number": 513,
+    "abilities": [
+      "blaze",
+      "gluttony"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Simisear",
+    "number": 514,
+    "abilities": [
+      "blaze",
+      "gluttony"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Panpour",
+    "number": 515,
+    "abilities": [
+      "torrent",
+      "gluttony"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Simipour",
+    "number": 516,
+    "abilities": [
+      "torrent",
+      "gluttony"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Munna",
+    "number": 517,
+    "abilities": [
+      "synchronize",
+      "forewarn",
+      "telepathy"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Musharna",
+    "number": 518,
+    "abilities": [
+      "synchronize",
+      "forewarn",
+      "telepathy"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Pidove",
+    "number": 519,
+    "abilities": [
+      "rivalry",
+      "super-luck",
+      "big-pecks"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Tranquill",
+    "number": 520,
+    "abilities": [
+      "rivalry",
+      "super-luck",
+      "big-pecks"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Unfezant",
+    "number": 521,
+    "abilities": [
+      "rivalry",
+      "super-luck",
+      "big-pecks"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Blitzle",
+    "number": 522,
+    "abilities": [
+      "lightningrod",
+      "motor-drive",
+      "sap-sipper"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Zebstrika",
+    "number": 523,
+    "abilities": [
+      "lightningrod",
+      "motor-drive",
+      "sap-sipper"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Roggenrola",
+    "number": 524,
+    "abilities": [
+      "sturdy",
+      "sand-force"
+    ],
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Boldore",
+    "number": 525,
+    "abilities": [
+      "sturdy",
+      "sand-force"
+    ],
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Gigalith",
+    "number": 526,
+    "abilities": [
+      "sturdy",
+      "sand-force"
+    ],
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Woobat",
+    "number": 527,
+    "abilities": [
+      "simple",
+      "klutz",
+      "unaware"
+    ],
+    "types": [
+      "flying",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Swoobat",
+    "number": 528,
+    "abilities": [
+      "simple",
+      "klutz",
+      "unaware"
+    ],
+    "types": [
+      "flying",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Drilbur",
+    "number": 529,
+    "abilities": [
+      "mold-breaker",
+      "sand-rush",
+      "sand-force"
+    ],
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Excadrill",
+    "number": 530,
+    "abilities": [
+      "mold-breaker",
+      "sand-rush",
+      "sand-force"
+    ],
+    "types": [
+      "ground",
+      "steel"
+    ]
+  },
+  {
+    "name": "Audino",
+    "number": 531,
+    "abilities": [
+      "klutz",
+      "healer",
+      "regenerator"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Timburr",
+    "number": 532,
+    "abilities": [
+      "guts",
+      "iron-fist",
+      "sheer-force"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Gurdurr",
+    "number": 533,
+    "abilities": [
+      "guts",
+      "iron-fist",
+      "sheer-force"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Conkeldurr",
+    "number": 534,
+    "abilities": [
+      "guts",
+      "iron-fist",
+      "sheer-force"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Tympole",
+    "number": 535,
+    "abilities": [
+      "water-absorb",
+      "swift-swim",
+      "hydration"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Palpitoad",
+    "number": 536,
+    "abilities": [
+      "water-absorb",
+      "swift-swim",
+      "hydration"
+    ],
+    "types": [
+      "ground",
+      "water"
+    ]
+  },
+  {
+    "name": "Seismitoad",
+    "number": 537,
+    "abilities": [
+      "water-absorb",
+      "swift-swim",
+      "poison-touch"
+    ],
+    "types": [
+      "ground",
+      "water"
+    ]
+  },
+  {
+    "name": "Throh",
+    "number": 538,
+    "abilities": [
+      "inner-focus",
+      "guts",
+      "mold-breaker"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Sawk",
+    "number": 539,
+    "abilities": [
+      "sturdy",
+      "inner-focus",
+      "mold-breaker"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Sewaddle",
+    "number": 540,
+    "abilities": [
+      "chlorophyll",
+      "swarm",
+      "overcoat"
+    ],
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Swadloon",
+    "number": 541,
+    "abilities": [
+      "chlorophyll",
+      "leaf-guard",
+      "overcoat"
+    ],
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Leavanny",
+    "number": 542,
+    "abilities": [
+      "chlorophyll",
+      "swarm",
+      "overcoat"
+    ],
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Venipede",
+    "number": 543,
+    "abilities": [
+      "poison-point",
+      "swarm",
+      "quick-feet"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Whirlipede",
+    "number": 544,
+    "abilities": [
+      "poison-point",
+      "swarm",
+      "quick-feet"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Scolipede",
+    "number": 545,
+    "abilities": [
+      "poison-point",
+      "swarm",
+      "quick-feet"
+    ],
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Cottonee",
+    "number": 546,
+    "abilities": [
+      "chlorophyll",
+      "infiltrator",
+      "prankster"
+    ],
+    "types": [
+      "grass",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Whimsicott",
+    "number": 547,
+    "abilities": [
+      "chlorophyll",
+      "infiltrator",
+      "prankster"
+    ],
+    "types": [
+      "grass",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Petilil",
+    "number": 548,
+    "abilities": [
+      "own-tempo",
+      "chlorophyll",
+      "leaf-guard"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Lilligant",
+    "number": 549,
+    "abilities": [
+      "own-tempo",
+      "chlorophyll",
+      "leaf-guard"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Basculin-red-striped",
+    "number": 550,
+    "abilities": [
+      "adaptability",
+      "mold-breaker",
+      "reckless"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Sandile",
+    "number": 551,
+    "abilities": [
+      "intimidate",
+      "anger-point",
+      "moxie"
+    ],
+    "types": [
+      "ground",
+      "dark"
+    ]
+  },
+  {
+    "name": "Krokorok",
+    "number": 552,
+    "abilities": [
+      "intimidate",
+      "anger-point",
+      "moxie"
+    ],
+    "types": [
+      "ground",
+      "dark"
+    ]
+  },
+  {
+    "name": "Krookodile",
+    "number": 553,
+    "abilities": [
+      "intimidate",
+      "anger-point",
+      "moxie"
+    ],
+    "types": [
+      "ground",
+      "dark"
+    ]
+  },
+  {
+    "name": "Darumaka",
+    "number": 554,
+    "abilities": [
+      "inner-focus",
+      "hustle"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Darmanitan-standard",
+    "number": 555,
+    "abilities": [
+      "sheer-force",
+      "zen-mode"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Maractus",
+    "number": 556,
+    "abilities": [
+      "water-absorb",
+      "chlorophyll",
+      "storm-drain"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Dwebble",
+    "number": 557,
+    "abilities": [
+      "sturdy",
+      "shell-armor",
+      "weak-armor"
+    ],
+    "types": [
+      "rock",
+      "bug"
+    ]
+  },
+  {
+    "name": "Crustle",
+    "number": 558,
+    "abilities": [
+      "sturdy",
+      "shell-armor",
+      "weak-armor"
+    ],
+    "types": [
+      "rock",
+      "bug"
+    ]
+  },
+  {
+    "name": "Scraggy",
+    "number": 559,
+    "abilities": [
+      "intimidate",
+      "shed-skin",
+      "moxie"
+    ],
+    "types": [
+      "fighting",
+      "dark"
+    ]
+  },
+  {
+    "name": "Scrafty",
+    "number": 560,
+    "abilities": [
+      "intimidate",
+      "shed-skin",
+      "moxie"
+    ],
+    "types": [
+      "fighting",
+      "dark"
+    ]
+  },
+  {
+    "name": "Sigilyph",
+    "number": 561,
+    "abilities": [
+      "magic-guard",
+      "tinted-lens",
+      "wonder-skin"
+    ],
+    "types": [
+      "flying",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Yamask",
+    "number": 562,
+    "abilities": [
+      "mummy"
+    ],
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Cofagrigus",
+    "number": 563,
+    "abilities": [
+      "mummy"
+    ],
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Tirtouga",
+    "number": 564,
+    "abilities": [
+      "sturdy",
+      "swift-swim",
+      "solid-rock"
+    ],
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Carracosta",
+    "number": 565,
+    "abilities": [
+      "sturdy",
+      "swift-swim",
+      "solid-rock"
+    ],
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Archen",
+    "number": 566,
+    "abilities": [
+      "defeatist"
+    ],
+    "types": [
+      "flying",
+      "rock"
+    ]
+  },
+  {
+    "name": "Archeops",
+    "number": 567,
+    "abilities": [
+      "defeatist"
+    ],
+    "types": [
+      "flying",
+      "rock"
+    ]
+  },
+  {
+    "name": "Trubbish",
+    "number": 568,
+    "abilities": [
+      "stench",
+      "sticky-hold",
+      "aftermath"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Garbodor",
+    "number": 569,
+    "abilities": [
+      "stench",
+      "aftermath",
+      "weak-armor"
+    ],
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Zorua",
+    "number": 570,
+    "abilities": [
+      "illusion"
+    ],
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Zoroark",
+    "number": 571,
+    "abilities": [
+      "illusion"
+    ],
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Minccino",
+    "number": 572,
+    "abilities": [
+      "cute-charm",
+      "skill-link",
+      "technician"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Cinccino",
+    "number": 573,
+    "abilities": [
+      "cute-charm",
+      "skill-link",
+      "technician"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Gothita",
+    "number": 574,
+    "abilities": [
+      "shadow-tag",
+      "frisk"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Gothorita",
+    "number": 575,
+    "abilities": [
+      "shadow-tag",
+      "frisk"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Gothitelle",
+    "number": 576,
+    "abilities": [
+      "shadow-tag",
+      "frisk"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Solosis",
+    "number": 577,
+    "abilities": [
+      "magic-guard",
+      "overcoat",
+      "regenerator"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Duosion",
+    "number": 578,
+    "abilities": [
+      "magic-guard",
+      "overcoat",
+      "regenerator"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Reuniclus",
+    "number": 579,
+    "abilities": [
+      "magic-guard",
+      "overcoat",
+      "regenerator"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Ducklett",
+    "number": 580,
+    "abilities": [
+      "keen-eye",
+      "hydration",
+      "big-pecks"
+    ],
+    "types": [
+      "flying",
+      "water"
+    ]
+  },
+  {
+    "name": "Swanna",
+    "number": 581,
+    "abilities": [
+      "keen-eye",
+      "hydration",
+      "big-pecks"
+    ],
+    "types": [
+      "flying",
+      "water"
+    ]
+  },
+  {
+    "name": "Vanillite",
+    "number": 582,
+    "abilities": [
+      "ice-body",
+      "weak-armor"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Vanillish",
+    "number": 583,
+    "abilities": [
+      "ice-body",
+      "weak-armor"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Vanilluxe",
+    "number": 584,
+    "abilities": [
+      "ice-body",
+      "weak-armor"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Deerling",
+    "number": 585,
+    "abilities": [
+      "serene-grace",
+      "chlorophyll",
+      "sap-sipper"
+    ],
+    "types": [
+      "normal",
+      "grass"
+    ]
+  },
+  {
+    "name": "Sawsbuck",
+    "number": 586,
+    "abilities": [
+      "serene-grace",
+      "chlorophyll",
+      "sap-sipper"
+    ],
+    "types": [
+      "normal",
+      "grass"
+    ]
+  },
+  {
+    "name": "Emolga",
+    "number": 587,
+    "abilities": [
+      "static",
+      "motor-drive"
+    ],
+    "types": [
+      "flying",
+      "electric"
+    ]
+  },
+  {
+    "name": "Karrablast",
+    "number": 588,
+    "abilities": [
+      "shed-skin",
+      "swarm",
+      "no-guard"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Escavalier",
+    "number": 589,
+    "abilities": [
+      "swarm",
+      "shell-armor",
+      "overcoat"
+    ],
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Foongus",
+    "number": 590,
+    "abilities": [
+      "effect-spore",
+      "regenerator"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Amoonguss",
+    "number": 591,
+    "abilities": [
+      "effect-spore",
+      "regenerator"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Frillish",
+    "number": 592,
+    "abilities": [
+      "damp",
+      "water-absorb",
+      "cursed-body"
+    ],
+    "types": [
+      "ghost",
+      "water"
+    ]
+  },
+  {
+    "name": "Jellicent",
+    "number": 593,
+    "abilities": [
+      "damp",
+      "water-absorb",
+      "cursed-body"
+    ],
+    "types": [
+      "ghost",
+      "water"
+    ]
+  },
+  {
+    "name": "Alomomola",
+    "number": 594,
+    "abilities": [
+      "hydration",
+      "healer",
+      "regenerator"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Joltik",
+    "number": 595,
+    "abilities": [
+      "compoundeyes",
+      "swarm",
+      "unnerve"
+    ],
+    "types": [
+      "bug",
+      "electric"
+    ]
+  },
+  {
+    "name": "Galvantula",
+    "number": 596,
+    "abilities": [
+      "compoundeyes",
+      "swarm",
+      "unnerve"
+    ],
+    "types": [
+      "bug",
+      "electric"
+    ]
+  },
+  {
+    "name": "Ferroseed",
+    "number": 597,
+    "abilities": [
+      "iron-barbs"
+    ],
+    "types": [
+      "steel",
+      "grass"
+    ]
+  },
+  {
+    "name": "Ferrothorn",
+    "number": 598,
+    "abilities": [
+      "iron-barbs"
+    ],
+    "types": [
+      "steel",
+      "grass"
+    ]
+  },
+  {
+    "name": "Klink",
+    "number": 599,
+    "abilities": [
+      "clear-body",
+      "plus",
+      "minus"
+    ],
+    "types": [
+      "steel"
+    ]
+  },
+  {
+    "name": "Klang",
+    "number": 600,
+    "abilities": [
+      "clear-body",
+      "plus",
+      "minus"
+    ],
+    "types": [
+      "steel"
+    ]
+  },
+  {
+    "name": "Klinklang",
+    "number": 601,
+    "abilities": [
+      "clear-body",
+      "plus",
+      "minus"
+    ],
+    "types": [
+      "steel"
+    ]
+  },
+  {
+    "name": "Tynamo",
+    "number": 602,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Eelektrik",
+    "number": 603,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Eelektross",
+    "number": 604,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Elgyem",
+    "number": 605,
+    "abilities": [
+      "synchronize",
+      "telepathy",
+      "analytic"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Beheeyem",
+    "number": 606,
+    "abilities": [
+      "synchronize",
+      "telepathy",
+      "analytic"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Litwick",
+    "number": 607,
+    "abilities": [
+      "flash-fire",
+      "shadow-tag",
+      "flame-body"
+    ],
+    "types": [
+      "ghost",
+      "fire"
+    ]
+  },
+  {
+    "name": "Lampent",
+    "number": 608,
+    "abilities": [
+      "flash-fire",
+      "shadow-tag",
+      "flame-body"
+    ],
+    "types": [
+      "ghost",
+      "fire"
+    ]
+  },
+  {
+    "name": "Chandelure",
+    "number": 609,
+    "abilities": [
+      "flash-fire",
+      "shadow-tag",
+      "flame-body"
+    ],
+    "types": [
+      "ghost",
+      "fire"
+    ]
+  },
+  {
+    "name": "Axew",
+    "number": 610,
+    "abilities": [
+      "rivalry",
+      "mold-breaker",
+      "unnerve"
+    ],
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Fraxure",
+    "number": 611,
+    "abilities": [
+      "rivalry",
+      "mold-breaker",
+      "unnerve"
+    ],
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Haxorus",
+    "number": 612,
+    "abilities": [
+      "rivalry",
+      "mold-breaker",
+      "unnerve"
+    ],
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Cubchoo",
+    "number": 613,
+    "abilities": [
+      "snow-cloak",
+      "rattled"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Beartic",
+    "number": 614,
+    "abilities": [
+      "swift-swim",
+      "snow-cloak"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Cryogonal",
+    "number": 615,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Shelmet",
+    "number": 616,
+    "abilities": [
+      "shell-armor",
+      "hydration",
+      "overcoat"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Accelgor",
+    "number": 617,
+    "abilities": [
+      "sticky-hold",
+      "unburden",
+      "hydration"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Stunfisk",
+    "number": 618,
+    "abilities": [
+      "limber",
+      "sand-veil",
+      "static"
+    ],
+    "types": [
+      "ground",
+      "electric"
+    ]
+  },
+  {
+    "name": "Mienfoo",
+    "number": 619,
+    "abilities": [
+      "inner-focus",
+      "reckless",
+      "regenerator"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Mienshao",
+    "number": 620,
+    "abilities": [
+      "inner-focus",
+      "reckless",
+      "regenerator"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Druddigon",
+    "number": 621,
+    "abilities": [
+      "rough-skin",
+      "mold-breaker",
+      "sheer-force"
+    ],
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Golett",
+    "number": 622,
+    "abilities": [
+      "iron-fist",
+      "no-guard",
+      "klutz"
+    ],
+    "types": [
+      "ground",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Golurk",
+    "number": 623,
+    "abilities": [
+      "iron-fist",
+      "no-guard",
+      "klutz"
+    ],
+    "types": [
+      "ground",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Pawniard",
+    "number": 624,
+    "abilities": [
+      "inner-focus",
+      "pressure",
+      "defiant"
+    ],
+    "types": [
+      "steel",
+      "dark"
+    ]
+  },
+  {
+    "name": "Bisharp",
+    "number": 625,
+    "abilities": [
+      "inner-focus",
+      "pressure",
+      "defiant"
+    ],
+    "types": [
+      "steel",
+      "dark"
+    ]
+  },
+  {
+    "name": "Bouffalant",
+    "number": 626,
+    "abilities": [
+      "soundproof",
+      "reckless",
+      "sap-sipper"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Rufflet",
+    "number": 627,
+    "abilities": [
+      "keen-eye",
+      "hustle",
+      "sheer-force"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Braviary",
+    "number": 628,
+    "abilities": [
+      "keen-eye",
+      "sheer-force",
+      "defiant"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Vullaby",
+    "number": 629,
+    "abilities": [
+      "weak-armor",
+      "overcoat",
+      "big-pecks"
+    ],
+    "types": [
+      "flying",
+      "dark"
+    ]
+  },
+  {
+    "name": "Mandibuzz",
+    "number": 630,
+    "abilities": [
+      "weak-armor",
+      "overcoat",
+      "big-pecks"
+    ],
+    "types": [
+      "flying",
+      "dark"
+    ]
+  },
+  {
+    "name": "Heatmor",
+    "number": 631,
+    "abilities": [
+      "flash-fire",
+      "white-smoke",
+      "gluttony"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Durant",
+    "number": 632,
+    "abilities": [
+      "truant",
+      "hustle",
+      "swarm"
+    ],
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Deino",
+    "number": 633,
+    "abilities": [
+      "hustle"
+    ],
+    "types": [
+      "dragon",
+      "dark"
+    ]
+  },
+  {
+    "name": "Zweilous",
+    "number": 634,
+    "abilities": [
+      "hustle"
+    ],
+    "types": [
+      "dragon",
+      "dark"
+    ]
+  },
+  {
+    "name": "Hydreigon",
+    "number": 635,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "dragon",
+      "dark"
+    ]
+  },
+  {
+    "name": "Larvesta",
+    "number": 636,
+    "abilities": [
+      "flame-body",
+      "swarm"
+    ],
+    "types": [
+      "bug",
+      "fire"
+    ]
+  },
+  {
+    "name": "Volcarona",
+    "number": 637,
+    "abilities": [
+      "flame-body",
+      "swarm"
+    ],
+    "types": [
+      "bug",
+      "fire"
+    ]
+  },
+  {
+    "name": "Cobalion",
+    "number": 638,
+    "abilities": [
+      "justified"
+    ],
+    "types": [
+      "fighting",
+      "steel"
+    ]
+  },
+  {
+    "name": "Terrakion",
+    "number": 639,
+    "abilities": [
+      "justified"
+    ],
+    "types": [
+      "fighting",
+      "rock"
+    ]
+  },
+  {
+    "name": "Virizion",
+    "number": 640,
+    "abilities": [
+      "justified"
+    ],
+    "types": [
+      "fighting",
+      "grass"
+    ]
+  },
+  {
+    "name": "Tornadus-incarnate",
+    "number": 641,
+    "abilities": [
+      "defiant",
+      "prankster"
+    ],
+    "types": [
+      "flying"
+    ]
+  },
+  {
+    "name": "Thundurus-incarnate",
+    "number": 642,
+    "abilities": [
+      "defiant",
+      "prankster"
+    ],
+    "types": [
+      "flying",
+      "electric"
+    ]
+  },
+  {
+    "name": "Reshiram",
+    "number": 643,
+    "abilities": [
+      "turboblaze"
+    ],
+    "types": [
+      "fire",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Zekrom",
+    "number": 644,
+    "abilities": [
+      "teravolt"
+    ],
+    "types": [
+      "electric",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Landorus-incarnate",
+    "number": 645,
+    "abilities": [
+      "sheer-force",
+      "sand-force"
+    ],
+    "types": [
+      "flying",
+      "ground"
+    ]
+  },
+  {
+    "name": "Kyurem",
+    "number": 646,
+    "abilities": [
+      "pressure"
+    ],
+    "types": [
+      "ice",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Keldeo-ordinary",
+    "number": 647,
+    "abilities": [
+      "justified"
+    ],
+    "types": [
+      "fighting",
+      "water"
+    ]
+  },
+  {
+    "name": "Meloetta-aria",
+    "number": 648,
+    "abilities": [
+      "serene-grace"
+    ],
+    "types": [
+      "normal",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Genesect",
+    "number": 649,
+    "abilities": [
+      "download"
+    ],
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Chespin",
+    "number": 650,
+    "abilities": [
+      "overgrow",
+      "bulletproof"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Quilladin",
+    "number": 651,
+    "abilities": [
+      "overgrow",
+      "bulletproof"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Chesnaught",
+    "number": 652,
+    "abilities": [
+      "overgrow",
+      "bulletproof"
+    ],
+    "types": [
+      "fighting",
+      "grass"
+    ]
+  },
+  {
+    "name": "Fennekin",
+    "number": 653,
+    "abilities": [
+      "blaze",
+      "magician"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Braixen",
+    "number": 654,
+    "abilities": [
+      "blaze",
+      "magician"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Delphox",
+    "number": 655,
+    "abilities": [
+      "blaze",
+      "magician"
+    ],
+    "types": [
+      "fire",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Froakie",
+    "number": 656,
+    "abilities": [
+      "torrent",
+      "protean"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Frogadier",
+    "number": 657,
+    "abilities": [
+      "torrent",
+      "protean"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Greninja",
+    "number": 658,
+    "abilities": [
+      "torrent",
+      "protean"
+    ],
+    "types": [
+      "water",
+      "dark"
+    ]
+  },
+  {
+    "name": "Bunnelby",
+    "number": 659,
+    "abilities": [
+      "huge-power",
+      "pickup",
+      "cheek-pouch"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Diggersby",
+    "number": 660,
+    "abilities": [
+      "huge-power",
+      "pickup",
+      "cheek-pouch"
+    ],
+    "types": [
+      "normal",
+      "ground"
+    ]
+  },
+  {
+    "name": "Fletchling",
+    "number": 661,
+    "abilities": [
+      "big-pecks",
+      "gale-wings"
+    ],
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Fletchinder",
+    "number": 662,
+    "abilities": [
+      "flame-body",
+      "gale-wings"
+    ],
+    "types": [
+      "flying",
+      "fire"
+    ]
+  },
+  {
+    "name": "Talonflame",
+    "number": 663,
+    "abilities": [
+      "flame-body",
+      "gale-wings"
+    ],
+    "types": [
+      "flying",
+      "fire"
+    ]
+  },
+  {
+    "name": "Scatterbug",
+    "number": 664,
+    "abilities": [
+      "compoundeyes",
+      "shield-dust",
+      "friend-guard"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Spewpa",
+    "number": 665,
+    "abilities": [
+      "shed-skin",
+      "friend-guard"
+    ],
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Vivillon",
+    "number": 666,
+    "abilities": [
+      "compoundeyes",
+      "shield-dust",
+      "friend-guard"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Litleo",
+    "number": 667,
+    "abilities": [
+      "rivalry",
+      "unnerve",
+      "moxie"
+    ],
+    "types": [
+      "normal",
+      "fire"
+    ]
+  },
+  {
+    "name": "Pyroar",
+    "number": 668,
+    "abilities": [
+      "rivalry",
+      "unnerve",
+      "moxie"
+    ],
+    "types": [
+      "normal",
+      "fire"
+    ]
+  },
+  {
+    "name": "Flabebe",
+    "number": 669,
+    "abilities": [
+      "flower-veil",
+      "symbiosis"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Floette",
+    "number": 670,
+    "abilities": [
+      "flower-veil",
+      "symbiosis"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Florges",
+    "number": 671,
+    "abilities": [
+      "flower-veil",
+      "symbiosis"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Skiddo",
+    "number": 672,
+    "abilities": [
+      "sap-sipper",
+      "grass-pelt"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Gogoat",
+    "number": 673,
+    "abilities": [
+      "sap-sipper",
+      "grass-pelt"
+    ],
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Pancham",
+    "number": 674,
+    "abilities": [
+      "iron-fist",
+      "mold-breaker",
+      "scrappy"
+    ],
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Pangoro",
+    "number": 675,
+    "abilities": [
+      "iron-fist",
+      "mold-breaker",
+      "scrappy"
+    ],
+    "types": [
+      "fighting",
+      "dark"
+    ]
+  },
+  {
+    "name": "Furfrou",
+    "number": 676,
+    "abilities": [
+      "fur-coat"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Espurr",
+    "number": 677,
+    "abilities": [
+      "own-tempo",
+      "keen-eye",
+      "infiltrator"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Meowstic-male",
+    "number": 678,
+    "abilities": [
+      "keen-eye",
+      "infiltrator",
+      "prankster"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Honedge",
+    "number": 679,
+    "abilities": [
+      "no-guard"
+    ],
+    "types": [
+      "ghost",
+      "steel"
+    ]
+  },
+  {
+    "name": "Doublade",
+    "number": 680,
+    "abilities": [
+      "no-guard"
+    ],
+    "types": [
+      "ghost",
+      "steel"
+    ]
+  },
+  {
+    "name": "Aegislash",
+    "number": 681,
+    "abilities": [
+      "stance-change"
+    ],
+    "types": [
+      "ghost",
+      "steel"
+    ]
+  },
+  {
+    "name": "Spritzee",
+    "number": 682,
+    "abilities": [
+      "healer",
+      "aroma-veil"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Aromatisse",
+    "number": 683,
+    "abilities": [
+      "healer",
+      "aroma-veil"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Swirlix",
+    "number": 684,
+    "abilities": [
+      "unburden",
+      "sweet-veil"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Slurpuff",
+    "number": 685,
+    "abilities": [
+      "unburden",
+      "sweet-veil"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Inkay",
+    "number": 686,
+    "abilities": [
+      "suction-cups",
+      "contrary",
+      "infiltrator"
+    ],
+    "types": [
+      "dark",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Malamar",
+    "number": 687,
+    "abilities": [
+      "suction-cups",
+      "contrary",
+      "infiltrator"
+    ],
+    "types": [
+      "dark",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Binacle",
+    "number": 688,
+    "abilities": [
+      "sniper",
+      "pickpocket",
+      "tough-claws"
+    ],
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Barbaracle",
+    "number": 689,
+    "abilities": [
+      "sniper",
+      "pickpocket",
+      "tough-claws"
+    ],
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Skrelp",
+    "number": 690,
+    "abilities": [
+      "poison-point",
+      "adaptability",
+      "poison-touch"
+    ],
+    "types": [
+      "poison",
+      "water"
+    ]
+  },
+  {
+    "name": "Dragalge",
+    "number": 691,
+    "abilities": [
+      "poison-point",
+      "adaptability",
+      "poison-touch"
+    ],
+    "types": [
+      "poison",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Clauncher",
+    "number": 692,
+    "abilities": [
+      "mega-launcher"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Clawitzer",
+    "number": 693,
+    "abilities": [
+      "mega-launcher"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Helioptile",
+    "number": 694,
+    "abilities": [
+      "sand-veil",
+      "dry-skin",
+      "solar-power"
+    ],
+    "types": [
+      "normal",
+      "electric"
+    ]
+  },
+  {
+    "name": "Heliolisk",
+    "number": 695,
+    "abilities": [
+      "sand-veil",
+      "dry-skin",
+      "solar-power"
+    ],
+    "types": [
+      "normal",
+      "electric"
+    ]
+  },
+  {
+    "name": "Tyrunt",
+    "number": 696,
+    "abilities": [
+      "rock-head",
+      "strong-jaw"
+    ],
+    "types": [
+      "rock",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Tyrantrum",
+    "number": 697,
+    "abilities": [
+      "rock-head",
+      "strong-jaw"
+    ],
+    "types": [
+      "rock",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Amaura",
+    "number": 698,
+    "abilities": [
+      "snow-warning",
+      "refrigerate"
+    ],
+    "types": [
+      "rock",
+      "ice"
+    ]
+  },
+  {
+    "name": "Aurorus",
+    "number": 699,
+    "abilities": [
+      "snow-warning",
+      "refrigerate"
+    ],
+    "types": [
+      "rock",
+      "ice"
+    ]
+  },
+  {
+    "name": "Sylveon",
+    "number": 700,
+    "abilities": [
+      "cute-charm",
+      "pixilate"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Hawlucha",
+    "number": 701,
+    "abilities": [
+      "limber",
+      "unburden",
+      "mold-breaker"
+    ],
+    "types": [
+      "fighting",
+      "flying"
+    ]
+  },
+  {
+    "name": "Dedenne",
+    "number": 702,
+    "abilities": [
+      "pickup",
+      "plus",
+      "cheek-pouch"
+    ],
+    "types": [
+      "electric",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Carbink",
+    "number": 703,
+    "abilities": [
+      "sturdy",
+      "clear-body"
+    ],
+    "types": [
+      "rock",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Goomy",
+    "number": 704,
+    "abilities": [
+      "hydration",
+      "sap-sipper",
+      "gooey"
+    ],
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Sliggoo",
+    "number": 705,
+    "abilities": [
+      "hydration",
+      "sap-sipper",
+      "gooey"
+    ],
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Goodra",
+    "number": 706,
+    "abilities": [
+      "hydration",
+      "sap-sipper",
+      "gooey"
+    ],
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Klefki",
+    "number": 707,
+    "abilities": [
+      "prankster",
+      "magician"
+    ],
+    "types": [
+      "steel",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Phantump",
+    "number": 708,
+    "abilities": [
+      "natural-cure",
+      "frisk",
+      "harvest"
+    ],
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Trevenant",
+    "number": 709,
+    "abilities": [
+      "natural-cure",
+      "frisk",
+      "harvest"
+    ],
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Pumpkaboo-average",
+    "number": 710,
+    "abilities": [
+      "insomnia",
+      "pickup",
+      "frisk"
+    ],
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Gourgeist-average",
+    "number": 711,
+    "abilities": [
+      "insomnia",
+      "pickup",
+      "frisk"
+    ],
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Bergmite",
+    "number": 712,
+    "abilities": [
+      "sturdy",
+      "own-tempo",
+      "ice-body"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Avalugg",
+    "number": 713,
+    "abilities": [
+      "sturdy",
+      "own-tempo",
+      "ice-body"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Noibat",
+    "number": 714,
+    "abilities": [
+      "frisk",
+      "telepathy",
+      "infiltrator"
+    ],
+    "types": [
+      "flying",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Noivern",
+    "number": 715,
+    "abilities": [
+      "frisk",
+      "telepathy",
+      "infiltrator"
+    ],
+    "types": [
+      "flying",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Xerneas",
+    "number": 716,
+    "abilities": [
+      "fairy-aura"
+    ],
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Yveltal",
+    "number": 717,
+    "abilities": [
+      "dark-aura"
+    ],
+    "types": [
+      "flying",
+      "dark"
+    ]
+  },
+  {
+    "name": "Zygarde",
+    "number": 718,
+    "abilities": [
+      "aura-break"
+    ],
+    "types": [
+      "ground",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Deoxys-attack",
+    "number": 10001,
+    "abilities": [
+      "pressure"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Deoxys-defense",
+    "number": 10002,
+    "abilities": [
+      "pressure"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Deoxys-speed",
+    "number": 10003,
+    "abilities": [
+      "pressure"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Wormadam-sandy",
+    "number": 10004,
+    "abilities": [
+      "anticipation",
+      "overcoat"
+    ],
+    "types": [
+      "ground",
+      "bug"
+    ]
+  },
+  {
+    "name": "Wormadam-trash",
+    "number": 10005,
+    "abilities": [
+      "anticipation",
+      "overcoat"
+    ],
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Shaymin-sky",
+    "number": 10006,
+    "abilities": [
+      "serene-grace"
+    ],
+    "types": [
+      "flying",
+      "grass"
+    ]
+  },
+  {
+    "name": "Giratina-origin",
+    "number": 10007,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "ghost",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Rotom-heat",
+    "number": 10008,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "fire",
+      "electric"
+    ]
+  },
+  {
+    "name": "Rotom-wash",
+    "number": 10009,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "water",
+      "electric"
+    ]
+  },
+  {
+    "name": "Rotom-frost",
+    "number": 10010,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "electric",
+      "ice"
+    ]
+  },
+  {
+    "name": "Rotom-fan",
+    "number": 10011,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "flying",
+      "electric"
+    ]
+  },
+  {
+    "name": "Rotom-mow",
+    "number": 10012,
+    "abilities": [
+      "levitate"
+    ],
+    "types": [
+      "grass",
+      "electric"
+    ]
+  },
+  {
+    "name": "Castform-sunny",
+    "number": 10013,
+    "abilities": [
+      "forecast"
+    ],
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Castform-rainy",
+    "number": 10014,
+    "abilities": [
+      "forecast"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Castform-snowy",
+    "number": 10015,
+    "abilities": [
+      "forecast"
+    ],
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Basculin-blue-striped",
+    "number": 10016,
+    "abilities": [
+      "rock-head",
+      "adaptability",
+      "mold-breaker"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Darmanitan-zen",
+    "number": 10017,
+    "abilities": [
+      "sheer-force",
+      "zen-mode"
+    ],
+    "types": [
+      "fire",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Meloetta-pirouette",
+    "number": 10018,
+    "abilities": [
+      "serene-grace"
+    ],
+    "types": [
+      "normal",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Tornadus-therian",
+    "number": 10019,
+    "abilities": [
+      "regenerator"
+    ],
+    "types": [
+      "flying"
+    ]
+  },
+  {
+    "name": "Thundurus-therian",
+    "number": 10020,
+    "abilities": [
+      "volt-absorb"
+    ],
+    "types": [
+      "flying",
+      "electric"
+    ]
+  },
+  {
+    "name": "Landorus-therian",
+    "number": 10021,
+    "abilities": [
+      "intimidate"
+    ],
+    "types": [
+      "flying",
+      "ground"
+    ]
+  },
+  {
+    "name": "Kyurem-black",
+    "number": 10022,
+    "abilities": [
+      "teravolt"
+    ],
+    "types": [
+      "ice",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Kyurem-white",
+    "number": 10023,
+    "abilities": [
+      "turboblaze"
+    ],
+    "types": [
+      "ice",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Keldeo-resolute",
+    "number": 10024,
+    "abilities": [
+      "justified"
+    ],
+    "types": [
+      "fighting",
+      "water"
+    ]
+  },
+  {
+    "name": "Meowstic-female",
+    "number": 10025,
+    "abilities": [
+      "keen-eye",
+      "infiltrator",
+      "competitive"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Aegislash-blade",
+    "number": 10026,
+    "abilities": [
+      "stance-change"
+    ],
+    "types": [
+      "ghost",
+      "steel"
+    ]
+  },
+  {
+    "name": "Pumpkaboo-small",
+    "number": 10027,
+    "abilities": [
+      "insomnia",
+      "pickup",
+      "frisk"
+    ],
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Pumpkaboo-large",
+    "number": 10028,
+    "abilities": [
+      "insomnia",
+      "pickup",
+      "frisk"
+    ],
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Pumpkaboo-super",
+    "number": 10029,
+    "abilities": [
+      "insomnia",
+      "pickup",
+      "frisk"
+    ],
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Gourgeist-small",
+    "number": 10030,
+    "abilities": [
+      "insomnia",
+      "pickup",
+      "frisk"
+    ],
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Gourgeist-large",
+    "number": 10031,
+    "abilities": [
+      "insomnia",
+      "pickup",
+      "frisk"
+    ],
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Gourgeist-super",
+    "number": 10032,
+    "abilities": [
+      "insomnia",
+      "pickup",
+      "frisk"
+    ],
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Venusaur-mega",
+    "number": 10033,
+    "abilities": [
+      "thick-fat"
+    ],
+    "types": [
+      "poison",
+      "grass"
+    ]
+  },
+  {
+    "name": "Charizard-mega-x",
+    "number": 10034,
+    "abilities": [
+      "tough-claws"
+    ],
+    "types": [
+      "fire",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Charizard-mega-y",
+    "number": 10035,
+    "abilities": [
+      "drought"
+    ],
+    "types": [
+      "flying",
+      "fire"
+    ]
+  },
+  {
+    "name": "Blastoise-mega",
+    "number": 10036,
+    "abilities": [
+      "mega-launcher"
+    ],
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Alakazam-mega",
+    "number": 10037,
+    "abilities": [
+      "trace"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Gengar-mega",
+    "number": 10038,
+    "abilities": [
+      "shadow-tag"
+    ],
+    "types": [
+      "poison",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Kangaskhan-mega",
+    "number": 10039,
+    "abilities": [
+      "parental-bond"
+    ],
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Pinsir-mega",
+    "number": 10040,
+    "abilities": [
+      "aerilate"
+    ],
+    "types": [
+      "flying",
+      "bug"
+    ]
+  },
+  {
+    "name": "Gyarados-mega",
+    "number": 10041,
+    "abilities": [
+      "mold-breaker"
+    ],
+    "types": [
+      "water",
+      "dark"
+    ]
+  },
+  {
+    "name": "Aerodactyl-mega",
+    "number": 10042,
+    "abilities": [
+      "tough-claws"
+    ],
+    "types": [
+      "flying",
+      "rock"
+    ]
+  },
+  {
+    "name": "Mewtwo-mega-x",
+    "number": 10043,
+    "abilities": [
+      "steadfast"
+    ],
+    "types": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Mewtwo-mega-y",
+    "number": 10044,
+    "abilities": [
+      "insomnia"
+    ],
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Ampharos-mega",
+    "number": 10045,
+    "abilities": [
+      "mold-breaker"
+    ],
+    "types": [
+      "electric",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Scizor-mega",
+    "number": 10046,
+    "abilities": [
+      "technician"
+    ],
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Heracross-mega",
+    "number": 10047,
+    "abilities": [
+      "skill-link"
+    ],
+    "types": [
+      "fighting",
+      "bug"
+    ]
+  },
+  {
+    "name": "Houndoom-mega",
+    "number": 10048,
+    "abilities": [
+      "solar-power"
+    ],
+    "types": [
+      "fire",
+      "dark"
+    ]
+  },
+  {
+    "name": "Tyranitar-mega",
+    "number": 10049,
+    "abilities": [
+      "sand-stream"
+    ],
+    "types": [
+      "rock",
+      "dark"
+    ]
+  },
+  {
+    "name": "Blaziken-mega",
+    "number": 10050,
+    "abilities": [
+      "speed-boost"
+    ],
+    "types": [
+      "fighting",
+      "fire"
+    ]
+  },
+  {
+    "name": "Gardevoir-mega",
+    "number": 10051,
+    "abilities": [
+      "pixilate"
+    ],
+    "types": [
+      "fairy",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Mawile-mega",
+    "number": 10052,
+    "abilities": [
+      "huge-power"
+    ],
+    "types": [
+      "steel",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Aggron-mega",
+    "number": 10053,
+    "abilities": [
+      "filter"
+    ],
+    "types": [
+      "steel"
+    ]
+  },
+  {
+    "name": "Medicham-mega",
+    "number": 10054,
+    "abilities": [
+      "pure-power"
+    ],
+    "types": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Manectric-mega",
+    "number": 10055,
+    "abilities": [
+      "intimidate"
+    ],
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Banette-mega",
+    "number": 10056,
+    "abilities": [
+      "prankster"
+    ],
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Absol-mega",
+    "number": 10057,
+    "abilities": [
+      "magic-bounce"
+    ],
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Garchomp-mega",
+    "number": 10058,
+    "abilities": [
+      "sand-force"
+    ],
+    "types": [
+      "ground",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Lucario-mega",
+    "number": 10059,
+    "abilities": [
+      "adaptability"
+    ],
+    "types": [
+      "fighting",
+      "steel"
+    ]
+  },
+  {
+    "name": "Abomasnow-mega",
+    "number": 10060,
+    "abilities": [
+      "snow-warning"
+    ],
+    "types": [
+      "grass",
+      "ice"
+    ]
+  }
+]

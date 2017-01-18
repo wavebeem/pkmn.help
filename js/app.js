@@ -3,6 +3,7 @@ const ReactRedux = require("react-redux")
 const Offense = require("./offense")
 const Defense = require("./defense")
 const TabContainer = require("./tab-container")
+const Dex = require("./dex")
 
 const $ = React.createElement
 
@@ -11,8 +12,9 @@ function App(props) {
     changeTab: props.changeTab,
     current: props.tab,
     items: [
-      {title: "Offense", element: Offense(props)},
-      {title: "Defense", element: Defense(props)},
+      {title: "ATK", element: Offense(props)},
+      {title: "DEF", element: Defense(props)},
+      {title: "DEX", element: Dex(props)},
     ],
   })
 }
