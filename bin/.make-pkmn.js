@@ -27,7 +27,7 @@ const saveAs = filename => data => new Promise(resolve => {
 const trimInfo = mon => ({
   name: mon.name,
   number: mon.national_id,
-  abilities: mon.abilities.map(t => t.name),
+  // abilities: mon.abilities.map(t => t.name),
   types: mon.types.map(t => t.name),
 })
 
@@ -46,11 +46,17 @@ const fetchSerial = names => {
     .then(rest => [temp.poke, ...rest])
 }
 
+const shouldKeep = ({number}) =>
+  number <= 9999
+
 pkmn.pokedex()
-  .then(resp => resp.pokemon.map(poke => poke.name))
-  // .then(names => names.slice(0, 1))
+  .then(resp => resp.pokemon)
+  // .then(pokes => pokes.slice(0, 1))
+  // .then(log)
+  .then(pokes => pokes.map(poke => poke.name))
   .then(fetchSerial)
   .then(mons => mons.map(trimInfo))
+  .then(mons => mons.filter(shouldKeep))
   .then(mons => L.sortBy(mons, "number"))
   // .then(log)
   .then(toJSON)

@@ -12,9 +12,9 @@ function App(props) {
     changeTab: props.changeTab,
     current: props.tab,
     items: [
-      {title: "ATK", element: Offense(props)},
-      {title: "DEF", element: Defense(props)},
-      {title: "DEX", element: Dex(props)},
+      {title: "Offense", element: Offense(props)},
+      {title: "Defense", element: Defense(props)},
+      {title: "Pokédex", element: Dex(props)},
     ],
   })
 }
