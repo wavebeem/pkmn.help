@@ -45,10 +45,10 @@ function Dex(props) {
     $("input", {
       className: classes(
         "f2 w-100 border-box",
-        "pv2 ph3",
+        "pv2 ph4",
         "mv4",
         "chunky-focus",
-        "br2 ba b--black-20"
+        "br-pill ba b--black-20"
       ),
       placeholder: "search",
       value: search,
