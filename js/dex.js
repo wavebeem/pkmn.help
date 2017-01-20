@@ -35,6 +35,10 @@ function makePKMN(p) {
   )
 }
 
+// TODO: Debounce the input event
+// TODO: Improve performance
+// TODO: Switch to image for "back to top" link
+
 function Dex(props) {
   const {pkmn, search, updateSearch} = props
   const className = classes(
@@ -43,6 +47,11 @@ function Dex(props) {
   )
   const searchInput =
     $("input", {
+      type: "search",
+      autocomplete: "off",
+      autocorrect: "off",
+      inputmode: "verbatim",
+      autocapitalize: "none",
       className: classes(
         "f2 w-100 border-box",
         "pv2 ph4",
@@ -50,7 +59,7 @@ function Dex(props) {
         "chunky-focus",
         "br-pill ba b--black-20"
       ),
-      placeholder: "search",
+      placeholder: "TEST ME",
       value: search,
       onChange: event =>
         updateSearch(event.target.value),

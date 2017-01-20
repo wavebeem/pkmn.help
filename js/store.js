@@ -24,7 +24,7 @@ const table = {
     return {type2: action.value}
   },
   UpdateSearch(state, action) {
-    const search = action.value;
+    const search = action.value.toLowerCase()
     const pkmn = filterPKMN(search)
     return {search, pkmn}
   }
