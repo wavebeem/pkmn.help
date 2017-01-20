@@ -55,6 +55,7 @@ function Dex(props) {
       placeholder: "search"
     })  
   return $("div", {className},
+    $("a", {href: "#", className: "GoToTop"}, "⬆"),
     $("div", {className: "mh2"}, searchInput),
     PKMN.map(makePKMN)
   )
