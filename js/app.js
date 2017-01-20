@@ -44,17 +44,18 @@ function mapDispatchToProps(dispatch) {
         type: "UpdateType2",
         value: type
       })
+    },
+    updateSearch(search) {
+      dispatch({
+        type: "UpdateSearch",
+        value: search
+      })
     }
   }
 }
 
 function mapStateToProps(state) {
-  return {
-    tab: state.tab,
-    type0: state.type0,
-    type1: state.type1,
-    type2: state.type2
-  }
+  return state
 }
 
 module.exports = ReactRedux.connect(mapStateToProps, mapDispatchToProps)(App)

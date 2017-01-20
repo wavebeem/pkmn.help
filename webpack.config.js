@@ -26,7 +26,9 @@ module.exports = {
         exclude: /(node_modules|bower_components)/,
         loader: "babel",
         query: {
-          presets: ["es2015", "babili"]
+          presets: isProd
+            ? ["es2015", "babili"]
+            : ["es2015"]
         }
       }
     ]

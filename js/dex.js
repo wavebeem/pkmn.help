@@ -1,6 +1,4 @@
 const React = require("react")
-const PKMN = require("./pkmn.json")
-// const PKMN = require("./pkmn.json").slice(0, 20)
 const classes = require("./classes")
 
 const $ = React.createElement
@@ -8,11 +6,11 @@ const $ = React.createElement
 function makeType(t, i) {
   const className = classes(
     `type-${t}`,
-    "ttu tc db pa2 f5-ns f6 br2 ba badge with-border-color b",
+    "ttu tc db ph1 pv2 f5-ns f6 br2 ba badge with-border-color b",
     {mt1: i > 0}
   )
   const style = {
-    minWidth: "7.5em"
+    minWidth: "7em"
   }
   return $("span", {key: t, className, style}, t)
 }
@@ -23,22 +21,22 @@ function makePKMN(p) {
     "ph2 pv3",
     "flex items-center"
   )
-  const height = "6rem"
+  const height = "5rem"
   const style = {
     lineHeight: height,
     minHeight: height,
   }
   return $("div", {key: p.number, className},
-    $("h3", {className: "f3 f2-ns mv0 flex-auto truncate", style},
-      $("span", {className: "silver"}, `#${p.number}`),
-      " ",
-      p.name
+    $("div", {className: "flex-auto f4 f2-ns mv0"},
+      $("h3", {className: "truncate mt0 mb1"}, p.name),
+      $("p", {className: "silver mv0"}, `#${p.number}`)
     ),
-    $("div", {}, p.types.map(makeType)),
+    $("div", {}, p.types.map(makeType))
   )
 }
 
 function Dex(props) {
+  const {pkmn, search, updateSearch} = props
   const className = classes(
     "ph2 mt3",
     "center mw7"
@@ -47,17 +45,20 @@ function Dex(props) {
     $("input", {
       className: classes(
         "f2 w-100 border-box",
-        "pv2 ph4",
+        "pv2 ph3",
         "mv4",
         "chunky-focus",
-        "br-pill ba b--black-20"
+        "br2 ba b--black-20"
       ),
-      placeholder: "search"
+      placeholder: "search",
+      value: search,
+      onChange: event =>
+        updateSearch(event.target.value),
     })  
   return $("div", {className},
     $("a", {href: "#", className: "GoToTop"}, "⬆"),
     $("div", {className: "mh2"}, searchInput),
-    PKMN.map(makePKMN)
+    pkmn.map(makePKMN)
   )
 }
 
