@@ -59,7 +59,7 @@ function Dex(props) {
         "chunky-focus",
         "br-pill ba b--black-20"
       ),
-      placeholder: "TEST ME",
+      placeholder: "search",
       value: search,
       onChange: event =>
         updateSearch(event.target.value),
