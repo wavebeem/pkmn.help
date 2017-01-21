@@ -25,15 +25,12 @@ function makePKMN(p, i) {
     {bt: i > 0},
     {mt2: i === 0},
   )
-  const height = "5rem"
-  const style = {
-    lineHeight: height,
-    minHeight: height,
-  }
-  return $("div", {key: `pkmn-${p.number}`, className},
+  const displayNumber = "#" + _.padStart(p.number, 3, "0")
+  const style = {minHeight: "100px"}
+  return $("div", {key: `pkmn-${p.number}`, className, style},
     $("div", {className: "flex-auto f4 f2-ns mv0"},
       $("h3", {className: "truncate mt0 mb1"}, p.name),
-      $("p", {className: "silver mv0"}, `#${p.number}`)
+      $("p", {className: "silver mv0"}, displayNumber)
     ),
     $("div", {}, p.types.map(makeType))
   )
