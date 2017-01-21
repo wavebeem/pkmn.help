@@ -36,8 +36,7 @@ function makePKMN(p, i) {
   )
 }
 
-// TODO: Debounce the input event
-// TODO: Improve performance
+// TODO: Improve performance, somehow?
 // TODO: Switch to image for "back to top" link
 
 function Dex(props) {
