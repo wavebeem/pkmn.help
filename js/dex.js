@@ -1,4 +1,6 @@
 const React = require("react")
+const _ = require("lodash")
+const Paginator = require("./paginator")
 const classes = require("./classes")
 
 const $ = React.createElement
@@ -15,18 +17,20 @@ function makeType(t, i) {
   return $("span", {key: t, className, style}, t)
 }
 
-function makePKMN(p) {
+function makePKMN(p, i) {
   const className = classes(
-    "bt b--black-10",
+    "b--black-10",
     "ph2 pv3",
-    "flex items-center"
+    "flex items-center",
+    {bt: i > 0},
+    {mt2: i === 0},
   )
   const height = "5rem"
   const style = {
     lineHeight: height,
     minHeight: height,
   }
-  return $("div", {key: p.number, className},
+  return $("div", {key: `pkmn-${p.number}`, className},
     $("div", {className: "flex-auto f4 f2-ns mv0"},
       $("h3", {className: "truncate mt0 mb1"}, p.name),
       $("p", {className: "silver mv0"}, `#${p.number}`)
@@ -40,7 +44,13 @@ function makePKMN(p) {
 // TODO: Switch to image for "back to top" link
 
 function Dex(props) {
-  const {pkmn, search, updateSearch} = props
+  const {
+    pkmn,
+    search,
+    updateSearch,
+    updateCurrentPage,
+    currentPage
+  } = props
   const className = classes(
     "ph2 mt3",
     "center mw7"
@@ -48,10 +58,10 @@ function Dex(props) {
   const searchInput =
     $("input", {
       type: "search",
-      autocomplete: "off",
-      autocorrect: "off",
-      inputmode: "verbatim",
-      autocapitalize: "none",
+      autoComplete: "off",
+      autoCorrect: "off",
+      inputMode: "verbatim",
+      autoCapitalize: "none",
       className: classes(
         "f2 w-100 border-box",
         "pv2 ph4",
@@ -64,10 +74,19 @@ function Dex(props) {
       onChange: event =>
         updateSearch(event.target.value),
     })  
+  const mons = $(Paginator, {
+    currentPage,
+    updatePageNext: () => updateCurrentPage(currentPage + 1),
+    updatePagePrev: () => updateCurrentPage(currentPage - 1),
+    pageSize: 100,
+    // pageSize: 10,
+    items: pkmn,
+    render: makePKMN
+  })
   return $("div", {className},
     $("a", {href: "#", className: "GoToTop"}, "⬆"),
     $("div", {className: "mh2"}, searchInput),
-    pkmn.map(makePKMN)
+    mons
   )
 }
 

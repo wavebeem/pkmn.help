@@ -8,6 +8,7 @@ const initialState = {
   type2: "none",
   search: "",
   pkmn: PKMN,
+  currentPage: 0,
 }
 
 const table = {
@@ -26,7 +27,11 @@ const table = {
   UpdateSearch(state, action) {
     const search = action.value.toLowerCase()
     const pkmn = filterPKMN(search)
-    return {search, pkmn}
+    const currentPage = 0
+    return {search, pkmn, currentPage}
+  },
+  UpdateCurrentPage(state, action) {
+    return {currentPage: action.value}
   }
 }
 

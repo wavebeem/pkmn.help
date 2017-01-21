@@ -12,9 +12,9 @@ function App(props) {
     changeTab: props.changeTab,
     current: props.tab,
     items: [
-      {title: "Offense", element: Offense(props)},
-      {title: "Defense", element: Defense(props)},
-      {title: "Pokédex", element: Dex(props)},
+      {title: "Offense", element: $(Offense, props)},
+      {title: "Defense", element: $(Defense, props)},
+      {title: "Pokédex", element: $(Dex, props)},
     ],
   })
 }
@@ -50,7 +50,13 @@ function mapDispatchToProps(dispatch) {
         type: "UpdateSearch",
         value: search
       })
-    }
+    },
+    updateCurrentPage(page) {
+      dispatch({
+        type: "UpdateCurrentPage",
+        value: page
+      })
+    },
   }
 }
 

@@ -4,6 +4,7 @@
   "description": "Pokémon type calculator",
   "scripts": {
     "serve": "http-server -p 4001 -a 127.0.0.1",
+    "serve:open": "http-server -p 4001 -a 0.0.0.0",
     "watch:js": "webpack -w",
     "watch:css": "chokidar 'less/**/*.less' -c 'npm run build:css'",
     "build:ico": "convert favicon-*.png favicon.ico",
@@ -38,6 +39,7 @@
     "json-loader": "^0.5.4",
     "less": "^2.7.1",
     "pkmn": "^1.0.7",
+    "react-addons-perf": "^15.4.2",
     "webpack": "^1.13.2"
   },
   "dependencies": {
