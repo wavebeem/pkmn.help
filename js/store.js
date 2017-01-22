@@ -25,9 +25,9 @@ const table = {
     return {type2: action.value}
   },
   UpdateSearch(state, action) {
-    const search = action.value.toLowerCase()
-    const pkmn = filterPKMN(search)
     const currentPage = 0
+    const search = action.value
+    const pkmn = filterPKMN(search)
     return {search, pkmn, currentPage}
   },
   UpdateCurrentPage(state, action) {
@@ -39,9 +39,8 @@ function filterPKMN(search) {
   if (search === "") {
     return PKMN
   }
-  return PKMN.filter(p =>
-    p.name.toLowerCase().indexOf(search) >= 0
-  )
+  const s = search.toLowerCase()
+  return PKMN.filter(p => p.name.toLowerCase().indexOf(s) >= 0)
 }
 
 function update(a, b) {
