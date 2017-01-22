@@ -3,24 +3,24 @@
     "name": "Bulbasaur",
     "number": 1,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
     "name": "Ivysaur",
     "number": 2,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
     "name": "Venusaur",
     "number": 3,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
@@ -41,8 +41,8 @@
     "name": "Charizard",
     "number": 6,
     "types": [
-      "flying",
-      "fire"
+      "fire",
+      "flying"
     ]
   },
   {
@@ -84,32 +84,32 @@
     "name": "Butterfree",
     "number": 12,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
     "name": "Weedle",
     "number": 13,
     "types": [
-      "poison",
-      "bug"
+      "bug",
+      "poison"
     ]
   },
   {
     "name": "Kakuna",
     "number": 14,
     "types": [
-      "poison",
-      "bug"
+      "bug",
+      "poison"
     ]
   },
   {
     "name": "Beedrill",
     "number": 15,
     "types": [
-      "poison",
-      "bug"
+      "bug",
+      "poison"
     ]
   },
   {
@@ -209,7 +209,7 @@
     ]
   },
   {
-    "name": "Nidoran-f",
+    "name": "Nidoran♀",
     "number": 29,
     "types": [
       "poison"
@@ -231,7 +231,7 @@
     ]
   },
   {
-    "name": "Nidoran-m",
+    "name": "Nidoran♂",
     "number": 32,
     "types": [
       "poison"
@@ -300,40 +300,40 @@
     "name": "Zubat",
     "number": 41,
     "types": [
-      "flying",
-      "poison"
+      "poison",
+      "flying"
     ]
   },
   {
     "name": "Golbat",
     "number": 42,
     "types": [
-      "flying",
-      "poison"
+      "poison",
+      "flying"
     ]
   },
   {
     "name": "Oddish",
     "number": 43,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
     "name": "Gloom",
     "number": 44,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
     "name": "Vileplume",
     "number": 45,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
@@ -356,16 +356,16 @@
     "name": "Venonat",
     "number": 48,
     "types": [
-      "poison",
-      "bug"
+      "bug",
+      "poison"
     ]
   },
   {
     "name": "Venomoth",
     "number": 49,
     "types": [
-      "poison",
-      "bug"
+      "bug",
+      "poison"
     ]
   },
   {
@@ -456,8 +456,8 @@
     "name": "Poliwrath",
     "number": 62,
     "types": [
-      "fighting",
-      "water"
+      "water",
+      "fighting"
     ]
   },
   {
@@ -506,64 +506,64 @@
     "name": "Bellsprout",
     "number": 69,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
     "name": "Weepinbell",
     "number": 70,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
     "name": "Victreebel",
     "number": 71,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
     "name": "Tentacool",
     "number": 72,
     "types": [
-      "poison",
-      "water"
+      "water",
+      "poison"
     ]
   },
   {
     "name": "Tentacruel",
     "number": 73,
     "types": [
-      "poison",
-      "water"
+      "water",
+      "poison"
     ]
   },
   {
     "name": "Geodude",
     "number": 74,
     "types": [
-      "ground",
-      "rock"
+      "rock",
+      "ground"
     ]
   },
   {
     "name": "Graveler",
     "number": 75,
     "types": [
-      "ground",
-      "rock"
+      "rock",
+      "ground"
     ]
   },
   {
     "name": "Golem",
     "number": 76,
     "types": [
-      "ground",
-      "rock"
+      "rock",
+      "ground"
     ]
   },
   {
@@ -600,20 +600,20 @@
     "name": "Magnemite",
     "number": 81,
     "types": [
-      "steel",
-      "electric"
+      "electric",
+      "steel"
     ]
   },
   {
     "name": "Magneton",
     "number": 82,
     "types": [
-      "steel",
-      "electric"
+      "electric",
+      "steel"
     ]
   },
   {
-    "name": "Farfetchd",
+    "name": "Farfetch'd",
     "number": 83,
     "types": [
       "normal",
@@ -684,32 +684,32 @@
     "name": "Gastly",
     "number": 92,
     "types": [
-      "poison",
-      "ghost"
+      "ghost",
+      "poison"
     ]
   },
   {
     "name": "Haunter",
     "number": 93,
     "types": [
-      "poison",
-      "ghost"
+      "ghost",
+      "poison"
     ]
   },
   {
     "name": "Gengar",
     "number": 94,
     "types": [
-      "poison",
-      "ghost"
+      "ghost",
+      "poison"
     ]
   },
   {
     "name": "Onix",
     "number": 95,
     "types": [
-      "ground",
-      "rock"
+      "rock",
+      "ground"
     ]
   },
   {
@@ -900,19 +900,19 @@
     ]
   },
   {
-    "name": "Mr-mime",
+    "name": "Mr. Mime",
     "number": 122,
     "types": [
-      "fairy",
-      "psychic"
+      "psychic",
+      "fairy"
     ]
   },
   {
     "name": "Scyther",
     "number": 123,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
@@ -962,8 +962,8 @@
     "name": "Gyarados",
     "number": 130,
     "types": [
-      "flying",
-      "water"
+      "water",
+      "flying"
     ]
   },
   {
@@ -1052,8 +1052,8 @@
     "name": "Aerodactyl",
     "number": 142,
     "types": [
-      "flying",
-      "rock"
+      "rock",
+      "flying"
     ]
   },
   {
@@ -1067,24 +1067,24 @@
     "name": "Articuno",
     "number": 144,
     "types": [
-      "flying",
-      "ice"
+      "ice",
+      "flying"
     ]
   },
   {
     "name": "Zapdos",
     "number": 145,
     "types": [
-      "flying",
-      "electric"
+      "electric",
+      "flying"
     ]
   },
   {
     "name": "Moltres",
     "number": 146,
     "types": [
-      "flying",
-      "fire"
+      "fire",
+      "flying"
     ]
   },
   {
@@ -1105,8 +1105,8 @@
     "name": "Dragonite",
     "number": 149,
     "types": [
-      "flying",
-      "dragon"
+      "dragon",
+      "flying"
     ]
   },
   {
@@ -1220,40 +1220,40 @@
     "name": "Ledyba",
     "number": 165,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
     "name": "Ledian",
     "number": 166,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
     "name": "Spinarak",
     "number": 167,
     "types": [
-      "poison",
-      "bug"
+      "bug",
+      "poison"
     ]
   },
   {
     "name": "Ariados",
     "number": 168,
     "types": [
-      "poison",
-      "bug"
+      "bug",
+      "poison"
     ]
   },
   {
     "name": "Crobat",
     "number": 169,
     "types": [
-      "flying",
-      "poison"
+      "poison",
+      "flying"
     ]
   },
   {
@@ -1305,24 +1305,24 @@
     "name": "Togetic",
     "number": 176,
     "types": [
-      "flying",
-      "fairy"
+      "fairy",
+      "flying"
     ]
   },
   {
     "name": "Natu",
     "number": 177,
     "types": [
-      "flying",
-      "psychic"
+      "psychic",
+      "flying"
     ]
   },
   {
     "name": "Xatu",
     "number": 178,
     "types": [
-      "flying",
-      "psychic"
+      "psychic",
+      "flying"
     ]
   },
   {
@@ -1387,24 +1387,24 @@
     "name": "Hoppip",
     "number": 187,
     "types": [
-      "flying",
-      "grass"
+      "grass",
+      "flying"
     ]
   },
   {
     "name": "Skiploom",
     "number": 188,
     "types": [
-      "flying",
-      "grass"
+      "grass",
+      "flying"
     ]
   },
   {
     "name": "Jumpluff",
     "number": 189,
     "types": [
-      "flying",
-      "grass"
+      "grass",
+      "flying"
     ]
   },
   {
@@ -1432,24 +1432,24 @@
     "name": "Yanma",
     "number": 193,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
     "name": "Wooper",
     "number": 194,
     "types": [
-      "ground",
-      "water"
+      "water",
+      "ground"
     ]
   },
   {
     "name": "Quagsire",
     "number": 195,
     "types": [
-      "ground",
-      "water"
+      "water",
+      "ground"
     ]
   },
   {
@@ -1470,8 +1470,8 @@
     "name": "Murkrow",
     "number": 198,
     "types": [
-      "flying",
-      "dark"
+      "dark",
+      "flying"
     ]
   },
   {
@@ -1537,16 +1537,16 @@
     "name": "Gligar",
     "number": 207,
     "types": [
-      "flying",
-      "ground"
+      "ground",
+      "flying"
     ]
   },
   {
     "name": "Steelix",
     "number": 208,
     "types": [
-      "ground",
-      "steel"
+      "steel",
+      "ground"
     ]
   },
   {
@@ -1567,8 +1567,8 @@
     "name": "Qwilfish",
     "number": 211,
     "types": [
-      "poison",
-      "water"
+      "water",
+      "poison"
     ]
   },
   {
@@ -1583,24 +1583,24 @@
     "name": "Shuckle",
     "number": 213,
     "types": [
-      "rock",
-      "bug"
+      "bug",
+      "rock"
     ]
   },
   {
     "name": "Heracross",
     "number": 214,
     "types": [
-      "fighting",
-      "bug"
+      "bug",
+      "fighting"
     ]
   },
   {
     "name": "Sneasel",
     "number": 215,
     "types": [
-      "ice",
-      "dark"
+      "dark",
+      "ice"
     ]
   },
   {
@@ -1628,32 +1628,32 @@
     "name": "Magcargo",
     "number": 219,
     "types": [
-      "rock",
-      "fire"
+      "fire",
+      "rock"
     ]
   },
   {
     "name": "Swinub",
     "number": 220,
     "types": [
-      "ground",
-      "ice"
+      "ice",
+      "ground"
     ]
   },
   {
     "name": "Piloswine",
     "number": 221,
     "types": [
-      "ground",
-      "ice"
+      "ice",
+      "ground"
     ]
   },
   {
     "name": "Corsola",
     "number": 222,
     "types": [
-      "rock",
-      "water"
+      "water",
+      "rock"
     ]
   },
   {
@@ -1674,40 +1674,40 @@
     "name": "Delibird",
     "number": 225,
     "types": [
-      "flying",
-      "ice"
+      "ice",
+      "flying"
     ]
   },
   {
     "name": "Mantine",
     "number": 226,
     "types": [
-      "flying",
-      "water"
+      "water",
+      "flying"
     ]
   },
   {
     "name": "Skarmory",
     "number": 227,
     "types": [
-      "flying",
-      "steel"
+      "steel",
+      "flying"
     ]
   },
   {
     "name": "Houndour",
     "number": 228,
     "types": [
-      "fire",
-      "dark"
+      "dark",
+      "fire"
     ]
   },
   {
     "name": "Houndoom",
     "number": 229,
     "types": [
-      "fire",
-      "dark"
+      "dark",
+      "fire"
     ]
   },
   {
@@ -1828,16 +1828,16 @@
     "name": "Larvitar",
     "number": 246,
     "types": [
-      "ground",
-      "rock"
+      "rock",
+      "ground"
     ]
   },
   {
     "name": "Pupitar",
     "number": 247,
     "types": [
-      "ground",
-      "rock"
+      "rock",
+      "ground"
     ]
   },
   {
@@ -1852,24 +1852,24 @@
     "name": "Lugia",
     "number": 249,
     "types": [
-      "flying",
-      "psychic"
+      "psychic",
+      "flying"
     ]
   },
   {
-    "name": "Ho-oh",
+    "name": "Ho-Oh",
     "number": 250,
     "types": [
-      "flying",
-      "fire"
+      "fire",
+      "flying"
     ]
   },
   {
     "name": "Celebi",
     "number": 251,
     "types": [
-      "grass",
-      "psychic"
+      "psychic",
+      "grass"
     ]
   },
   {
@@ -1904,16 +1904,16 @@
     "name": "Combusken",
     "number": 256,
     "types": [
-      "fighting",
-      "fire"
+      "fire",
+      "fighting"
     ]
   },
   {
     "name": "Blaziken",
     "number": 257,
     "types": [
-      "fighting",
-      "fire"
+      "fire",
+      "fighting"
     ]
   },
   {
@@ -1927,16 +1927,16 @@
     "name": "Marshtomp",
     "number": 259,
     "types": [
-      "ground",
-      "water"
+      "water",
+      "ground"
     ]
   },
   {
     "name": "Swampert",
     "number": 260,
     "types": [
-      "ground",
-      "water"
+      "water",
+      "ground"
     ]
   },
   {
@@ -1985,8 +1985,8 @@
     "name": "Beautifly",
     "number": 267,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
@@ -2000,8 +2000,8 @@
     "name": "Dustox",
     "number": 269,
     "types": [
-      "poison",
-      "bug"
+      "bug",
+      "poison"
     ]
   },
   {
@@ -2071,40 +2071,40 @@
     "name": "Wingull",
     "number": 278,
     "types": [
-      "flying",
-      "water"
+      "water",
+      "flying"
     ]
   },
   {
     "name": "Pelipper",
     "number": 279,
     "types": [
-      "flying",
-      "water"
+      "water",
+      "flying"
     ]
   },
   {
     "name": "Ralts",
     "number": 280,
     "types": [
-      "fairy",
-      "psychic"
+      "psychic",
+      "fairy"
     ]
   },
   {
     "name": "Kirlia",
     "number": 281,
     "types": [
-      "fairy",
-      "psychic"
+      "psychic",
+      "fairy"
     ]
   },
   {
     "name": "Gardevoir",
     "number": 282,
     "types": [
-      "fairy",
-      "psychic"
+      "psychic",
+      "fairy"
     ]
   },
   {
@@ -2119,8 +2119,8 @@
     "name": "Masquerain",
     "number": 284,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
@@ -2134,8 +2134,8 @@
     "name": "Breloom",
     "number": 286,
     "types": [
-      "fighting",
-      "grass"
+      "grass",
+      "fighting"
     ]
   },
   {
@@ -2163,16 +2163,16 @@
     "name": "Nincada",
     "number": 290,
     "types": [
-      "ground",
-      "bug"
+      "bug",
+      "ground"
     ]
   },
   {
     "name": "Ninjask",
     "number": 291,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
@@ -2251,8 +2251,8 @@
     "name": "Sableye",
     "number": 302,
     "types": [
-      "ghost",
-      "dark"
+      "dark",
+      "ghost"
     ]
   },
   {
@@ -2267,24 +2267,24 @@
     "name": "Aron",
     "number": 304,
     "types": [
-      "rock",
-      "steel"
+      "steel",
+      "rock"
     ]
   },
   {
     "name": "Lairon",
     "number": 305,
     "types": [
-      "rock",
-      "steel"
+      "steel",
+      "rock"
     ]
   },
   {
     "name": "Aggron",
     "number": 306,
     "types": [
-      "rock",
-      "steel"
+      "steel",
+      "rock"
     ]
   },
   {
@@ -2349,8 +2349,8 @@
     "name": "Roselia",
     "number": 315,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
@@ -2401,16 +2401,16 @@
     "name": "Numel",
     "number": 322,
     "types": [
-      "ground",
-      "fire"
+      "fire",
+      "ground"
     ]
   },
   {
     "name": "Camerupt",
     "number": 323,
     "types": [
-      "ground",
-      "fire"
+      "fire",
+      "ground"
     ]
   },
   {
@@ -2491,8 +2491,8 @@
     "name": "Altaria",
     "number": 334,
     "types": [
-      "flying",
-      "dragon"
+      "dragon",
+      "flying"
     ]
   },
   {
@@ -2529,16 +2529,16 @@
     "name": "Barboach",
     "number": 339,
     "types": [
-      "ground",
-      "water"
+      "water",
+      "ground"
     ]
   },
   {
     "name": "Whiscash",
     "number": 340,
     "types": [
-      "ground",
-      "water"
+      "water",
+      "ground"
     ]
   },
   {
@@ -2664,8 +2664,8 @@
     "name": "Tropius",
     "number": 357,
     "types": [
-      "flying",
-      "grass"
+      "grass",
+      "flying"
     ]
   },
   {
@@ -2707,24 +2707,24 @@
     "name": "Spheal",
     "number": 363,
     "types": [
-      "water",
-      "ice"
+      "ice",
+      "water"
     ]
   },
   {
     "name": "Sealeo",
     "number": 364,
     "types": [
-      "water",
-      "ice"
+      "ice",
+      "water"
     ]
   },
   {
     "name": "Walrein",
     "number": 365,
     "types": [
-      "water",
-      "ice"
+      "ice",
+      "water"
     ]
   },
   {
@@ -2752,8 +2752,8 @@
     "name": "Relicanth",
     "number": 369,
     "types": [
-      "rock",
-      "water"
+      "water",
+      "rock"
     ]
   },
   {
@@ -2781,8 +2781,8 @@
     "name": "Salamence",
     "number": 373,
     "types": [
-      "flying",
-      "dragon"
+      "dragon",
+      "flying"
     ]
   },
   {
@@ -2864,8 +2864,8 @@
     "name": "Rayquaza",
     "number": 384,
     "types": [
-      "flying",
-      "dragon"
+      "dragon",
+      "flying"
     ]
   },
   {
@@ -2877,7 +2877,7 @@
     ]
   },
   {
-    "name": "Deoxys-normal",
+    "name": "Deoxys",
     "number": 386,
     "types": [
       "psychic"
@@ -2901,8 +2901,8 @@
     "name": "Torterra",
     "number": 389,
     "types": [
-      "ground",
-      "grass"
+      "grass",
+      "ground"
     ]
   },
   {
@@ -2916,16 +2916,16 @@
     "name": "Monferno",
     "number": 391,
     "types": [
-      "fighting",
-      "fire"
+      "fire",
+      "fighting"
     ]
   },
   {
     "name": "Infernape",
     "number": 392,
     "types": [
-      "fighting",
-      "fire"
+      "fire",
+      "fighting"
     ]
   },
   {
@@ -2946,8 +2946,8 @@
     "name": "Empoleon",
     "number": 395,
     "types": [
-      "steel",
-      "water"
+      "water",
+      "steel"
     ]
   },
   {
@@ -3028,16 +3028,16 @@
     "name": "Budew",
     "number": 406,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
     "name": "Roserade",
     "number": 407,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
@@ -3078,7 +3078,7 @@
     ]
   },
   {
-    "name": "Wormadam-plant",
+    "name": "Wormadam",
     "number": 413,
     "types": [
       "bug",
@@ -3089,24 +3089,24 @@
     "name": "Mothim",
     "number": 414,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
     "name": "Combee",
     "number": 415,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
     "name": "Vespiquen",
     "number": 416,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
@@ -3155,8 +3155,8 @@
     "name": "Gastrodon",
     "number": 423,
     "types": [
-      "ground",
-      "water"
+      "water",
+      "ground"
     ]
   },
   {
@@ -3170,16 +3170,16 @@
     "name": "Drifloon",
     "number": 425,
     "types": [
-      "flying",
-      "ghost"
+      "ghost",
+      "flying"
     ]
   },
   {
     "name": "Drifblim",
     "number": 426,
     "types": [
-      "flying",
-      "ghost"
+      "ghost",
+      "flying"
     ]
   },
   {
@@ -3207,8 +3207,8 @@
     "name": "Honchkrow",
     "number": 430,
     "types": [
-      "flying",
-      "dark"
+      "dark",
+      "flying"
     ]
   },
   {
@@ -3272,11 +3272,11 @@
     ]
   },
   {
-    "name": "Mime-jr",
+    "name": "Mime Jr.",
     "number": 439,
     "types": [
-      "fairy",
-      "psychic"
+      "psychic",
+      "fairy"
     ]
   },
   {
@@ -3306,24 +3306,24 @@
     "name": "Gible",
     "number": 443,
     "types": [
-      "ground",
-      "dragon"
+      "dragon",
+      "ground"
     ]
   },
   {
     "name": "Gabite",
     "number": 444,
     "types": [
-      "ground",
-      "dragon"
+      "dragon",
+      "ground"
     ]
   },
   {
     "name": "Garchomp",
     "number": 445,
     "types": [
-      "ground",
-      "dragon"
+      "dragon",
+      "ground"
     ]
   },
   {
@@ -3382,16 +3382,16 @@
     "name": "Croagunk",
     "number": 453,
     "types": [
-      "fighting",
-      "poison"
+      "poison",
+      "fighting"
     ]
   },
   {
     "name": "Toxicroak",
     "number": 454,
     "types": [
-      "fighting",
-      "poison"
+      "poison",
+      "fighting"
     ]
   },
   {
@@ -3419,8 +3419,8 @@
     "name": "Mantyke",
     "number": 458,
     "types": [
-      "flying",
-      "water"
+      "water",
+      "flying"
     ]
   },
   {
@@ -3443,16 +3443,16 @@
     "name": "Weavile",
     "number": 461,
     "types": [
-      "ice",
-      "dark"
+      "dark",
+      "ice"
     ]
   },
   {
     "name": "Magnezone",
     "number": 462,
     "types": [
-      "steel",
-      "electric"
+      "electric",
+      "steel"
     ]
   },
   {
@@ -3495,16 +3495,16 @@
     "name": "Togekiss",
     "number": 468,
     "types": [
-      "flying",
-      "fairy"
+      "fairy",
+      "flying"
     ]
   },
   {
     "name": "Yanmega",
     "number": 469,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
@@ -3525,20 +3525,20 @@
     "name": "Gliscor",
     "number": 472,
     "types": [
-      "flying",
-      "ground"
+      "ground",
+      "flying"
     ]
   },
   {
     "name": "Mamoswine",
     "number": 473,
     "types": [
-      "ground",
-      "ice"
+      "ice",
+      "ground"
     ]
   },
   {
-    "name": "Porygon-z",
+    "name": "Porygon-Z",
     "number": 474,
     "types": [
       "normal"
@@ -3548,8 +3548,8 @@
     "name": "Gallade",
     "number": 475,
     "types": [
-      "fighting",
-      "psychic"
+      "psychic",
+      "fighting"
     ]
   },
   {
@@ -3571,16 +3571,16 @@
     "name": "Froslass",
     "number": 478,
     "types": [
-      "ghost",
-      "ice"
+      "ice",
+      "ghost"
     ]
   },
   {
     "name": "Rotom",
     "number": 479,
     "types": [
-      "ghost",
-      "electric"
+      "electric",
+      "ghost"
     ]
   },
   {
@@ -3624,8 +3624,8 @@
     "name": "Heatran",
     "number": 485,
     "types": [
-      "steel",
-      "fire"
+      "fire",
+      "steel"
     ]
   },
   {
@@ -3636,7 +3636,7 @@
     ]
   },
   {
-    "name": "Giratina-altered",
+    "name": "Giratina",
     "number": 487,
     "types": [
       "ghost",
@@ -3672,7 +3672,7 @@
     ]
   },
   {
-    "name": "Shaymin-land",
+    "name": "Shaymin",
     "number": 492,
     "types": [
       "grass"
@@ -3689,8 +3689,8 @@
     "name": "Victini",
     "number": 494,
     "types": [
-      "fire",
-      "psychic"
+      "psychic",
+      "fire"
     ]
   },
   {
@@ -3725,16 +3725,16 @@
     "name": "Pignite",
     "number": 499,
     "types": [
-      "fighting",
-      "fire"
+      "fire",
+      "fighting"
     ]
   },
   {
     "name": "Emboar",
     "number": 500,
     "types": [
-      "fighting",
-      "fire"
+      "fire",
+      "fighting"
     ]
   },
   {
@@ -3926,16 +3926,16 @@
     "name": "Woobat",
     "number": 527,
     "types": [
-      "flying",
-      "psychic"
+      "psychic",
+      "flying"
     ]
   },
   {
     "name": "Swoobat",
     "number": 528,
     "types": [
-      "flying",
-      "psychic"
+      "psychic",
+      "flying"
     ]
   },
   {
@@ -3992,16 +3992,16 @@
     "name": "Palpitoad",
     "number": 536,
     "types": [
-      "ground",
-      "water"
+      "water",
+      "ground"
     ]
   },
   {
     "name": "Seismitoad",
     "number": 537,
     "types": [
-      "ground",
-      "water"
+      "water",
+      "ground"
     ]
   },
   {
@@ -4046,24 +4046,24 @@
     "name": "Venipede",
     "number": 543,
     "types": [
-      "poison",
-      "bug"
+      "bug",
+      "poison"
     ]
   },
   {
     "name": "Whirlipede",
     "number": 544,
     "types": [
-      "poison",
-      "bug"
+      "bug",
+      "poison"
     ]
   },
   {
     "name": "Scolipede",
     "number": 545,
     "types": [
-      "poison",
-      "bug"
+      "bug",
+      "poison"
     ]
   },
   {
@@ -4097,7 +4097,7 @@
     ]
   },
   {
-    "name": "Basculin-red-striped",
+    "name": "Basculin",
     "number": 550,
     "types": [
       "water"
@@ -4135,7 +4135,7 @@
     ]
   },
   {
-    "name": "Darmanitan-standard",
+    "name": "Darmanitan",
     "number": 555,
     "types": [
       "fire"
@@ -4152,40 +4152,40 @@
     "name": "Dwebble",
     "number": 557,
     "types": [
-      "rock",
-      "bug"
+      "bug",
+      "rock"
     ]
   },
   {
     "name": "Crustle",
     "number": 558,
     "types": [
-      "rock",
-      "bug"
+      "bug",
+      "rock"
     ]
   },
   {
     "name": "Scraggy",
     "number": 559,
     "types": [
-      "fighting",
-      "dark"
+      "dark",
+      "fighting"
     ]
   },
   {
     "name": "Scrafty",
     "number": 560,
     "types": [
-      "fighting",
-      "dark"
+      "dark",
+      "fighting"
     ]
   },
   {
     "name": "Sigilyph",
     "number": 561,
     "types": [
-      "flying",
-      "psychic"
+      "psychic",
+      "flying"
     ]
   },
   {
@@ -4206,32 +4206,32 @@
     "name": "Tirtouga",
     "number": 564,
     "types": [
-      "rock",
-      "water"
+      "water",
+      "rock"
     ]
   },
   {
     "name": "Carracosta",
     "number": 565,
     "types": [
-      "rock",
-      "water"
+      "water",
+      "rock"
     ]
   },
   {
     "name": "Archen",
     "number": 566,
     "types": [
-      "flying",
-      "rock"
+      "rock",
+      "flying"
     ]
   },
   {
     "name": "Archeops",
     "number": 567,
     "types": [
-      "flying",
-      "rock"
+      "rock",
+      "flying"
     ]
   },
   {
@@ -4322,16 +4322,16 @@
     "name": "Ducklett",
     "number": 580,
     "types": [
-      "flying",
-      "water"
+      "water",
+      "flying"
     ]
   },
   {
     "name": "Swanna",
     "number": 581,
     "types": [
-      "flying",
-      "water"
+      "water",
+      "flying"
     ]
   },
   {
@@ -4375,8 +4375,8 @@
     "name": "Emolga",
     "number": 587,
     "types": [
-      "flying",
-      "electric"
+      "electric",
+      "flying"
     ]
   },
   {
@@ -4398,32 +4398,32 @@
     "name": "Foongus",
     "number": 590,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
     "name": "Amoonguss",
     "number": 591,
     "types": [
-      "poison",
-      "grass"
+      "grass",
+      "poison"
     ]
   },
   {
     "name": "Frillish",
     "number": 592,
     "types": [
-      "ghost",
-      "water"
+      "water",
+      "ghost"
     ]
   },
   {
     "name": "Jellicent",
     "number": 593,
     "types": [
-      "ghost",
-      "water"
+      "water",
+      "ghost"
     ]
   },
   {
@@ -4453,16 +4453,16 @@
     "name": "Ferroseed",
     "number": 597,
     "types": [
-      "steel",
-      "grass"
+      "grass",
+      "steel"
     ]
   },
   {
     "name": "Ferrothorn",
     "number": 598,
     "types": [
-      "steel",
-      "grass"
+      "grass",
+      "steel"
     ]
   },
   {
@@ -4650,16 +4650,16 @@
     "name": "Pawniard",
     "number": 624,
     "types": [
-      "steel",
-      "dark"
+      "dark",
+      "steel"
     ]
   },
   {
     "name": "Bisharp",
     "number": 625,
     "types": [
-      "steel",
-      "dark"
+      "dark",
+      "steel"
     ]
   },
   {
@@ -4689,16 +4689,16 @@
     "name": "Vullaby",
     "number": 629,
     "types": [
-      "flying",
-      "dark"
+      "dark",
+      "flying"
     ]
   },
   {
     "name": "Mandibuzz",
     "number": 630,
     "types": [
-      "flying",
-      "dark"
+      "dark",
+      "flying"
     ]
   },
   {
@@ -4720,24 +4720,24 @@
     "name": "Deino",
     "number": 633,
     "types": [
-      "dragon",
-      "dark"
+      "dark",
+      "dragon"
     ]
   },
   {
     "name": "Zweilous",
     "number": 634,
     "types": [
-      "dragon",
-      "dark"
+      "dark",
+      "dragon"
     ]
   },
   {
     "name": "Hydreigon",
     "number": 635,
     "types": [
-      "dragon",
-      "dark"
+      "dark",
+      "dragon"
     ]
   },
   {
@@ -4760,83 +4760,83 @@
     "name": "Cobalion",
     "number": 638,
     "types": [
-      "fighting",
-      "steel"
+      "steel",
+      "fighting"
     ]
   },
   {
     "name": "Terrakion",
     "number": 639,
     "types": [
-      "fighting",
-      "rock"
+      "rock",
+      "fighting"
     ]
   },
   {
     "name": "Virizion",
     "number": 640,
     "types": [
-      "fighting",
-      "grass"
+      "grass",
+      "fighting"
     ]
   },
   {
-    "name": "Tornadus-incarnate",
+    "name": "Tornadus",
     "number": 641,
     "types": [
       "flying"
     ]
   },
   {
-    "name": "Thundurus-incarnate",
+    "name": "Thundurus",
     "number": 642,
     "types": [
-      "flying",
-      "electric"
+      "electric",
+      "flying"
     ]
   },
   {
     "name": "Reshiram",
     "number": 643,
     "types": [
-      "fire",
-      "dragon"
+      "dragon",
+      "fire"
     ]
   },
   {
     "name": "Zekrom",
     "number": 644,
     "types": [
-      "electric",
-      "dragon"
+      "dragon",
+      "electric"
     ]
   },
   {
-    "name": "Landorus-incarnate",
+    "name": "Landorus",
     "number": 645,
     "types": [
-      "flying",
-      "ground"
+      "ground",
+      "flying"
     ]
   },
   {
     "name": "Kyurem",
     "number": 646,
     "types": [
-      "ice",
-      "dragon"
+      "dragon",
+      "ice"
     ]
   },
   {
-    "name": "Keldeo-ordinary",
+    "name": "Keldeo",
     "number": 647,
     "types": [
-      "fighting",
-      "water"
+      "water",
+      "fighting"
     ]
   },
   {
-    "name": "Meloetta-aria",
+    "name": "Meloetta",
     "number": 648,
     "types": [
       "normal",
@@ -4869,8 +4869,8 @@
     "name": "Chesnaught",
     "number": 652,
     "types": [
-      "fighting",
-      "grass"
+      "grass",
+      "fighting"
     ]
   },
   {
@@ -4944,16 +4944,16 @@
     "name": "Fletchinder",
     "number": 662,
     "types": [
-      "flying",
-      "fire"
+      "fire",
+      "flying"
     ]
   },
   {
     "name": "Talonflame",
     "number": 663,
     "types": [
-      "flying",
-      "fire"
+      "fire",
+      "flying"
     ]
   },
   {
@@ -4974,28 +4974,28 @@
     "name": "Vivillon",
     "number": 666,
     "types": [
-      "flying",
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
     "name": "Litleo",
     "number": 667,
     "types": [
-      "normal",
-      "fire"
+      "fire",
+      "normal"
     ]
   },
   {
     "name": "Pyroar",
     "number": 668,
     "types": [
-      "normal",
-      "fire"
+      "fire",
+      "normal"
     ]
   },
   {
-    "name": "Flabebe",
+    "name": "Flabébé",
     "number": 669,
     "types": [
       "fairy"
@@ -5059,7 +5059,7 @@
     ]
   },
   {
-    "name": "Meowstic-male",
+    "name": "Meowstic",
     "number": 678,
     "types": [
       "psychic"
@@ -5069,24 +5069,24 @@
     "name": "Honedge",
     "number": 679,
     "types": [
-      "ghost",
-      "steel"
+      "steel",
+      "ghost"
     ]
   },
   {
     "name": "Doublade",
     "number": 680,
     "types": [
-      "ghost",
-      "steel"
+      "steel",
+      "ghost"
     ]
   },
   {
     "name": "Aegislash",
     "number": 681,
     "types": [
-      "ghost",
-      "steel"
+      "steel",
+      "ghost"
     ]
   },
   {
@@ -5183,16 +5183,16 @@
     "name": "Helioptile",
     "number": 694,
     "types": [
-      "normal",
-      "electric"
+      "electric",
+      "normal"
     ]
   },
   {
     "name": "Heliolisk",
     "number": 695,
     "types": [
-      "normal",
-      "electric"
+      "electric",
+      "normal"
     ]
   },
   {
@@ -5304,7 +5304,7 @@
     ]
   },
   {
-    "name": "Pumpkaboo-average",
+    "name": "Pumpkaboo",
     "number": 710,
     "types": [
       "ghost",
@@ -5312,7 +5312,7 @@
     ]
   },
   {
-    "name": "Gourgeist-average",
+    "name": "Gourgeist",
     "number": 711,
     "types": [
       "ghost",
@@ -5360,16 +5360,40 @@
     "name": "Yveltal",
     "number": 717,
     "types": [
-      "flying",
-      "dark"
+      "dark",
+      "flying"
     ]
   },
   {
     "name": "Zygarde",
     "number": 718,
     "types": [
-      "ground",
-      "dragon"
+      "dragon",
+      "ground"
+    ]
+  },
+  {
+    "name": "Diancie",
+    "number": 719,
+    "types": [
+      "rock",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Hoopa",
+    "number": 720,
+    "types": [
+      "psychic",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Volcanion",
+    "number": 721,
+    "types": [
+      "fire",
+      "water"
     ]
   }
 ]
