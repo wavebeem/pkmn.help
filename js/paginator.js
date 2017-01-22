@@ -6,24 +6,33 @@ const $ = React.createElement
 function buttonClass(show) {
   return classes(
     "db w-100",
-    "ba b--black-10 br3",
-    "bg-blue white",
+    "ba br3",
     "pv3 ph4",
     "b f4",
     "ttu",
     "chunky-focus",
-    {hidden: !show}
+    show
+      ? "b--black-20 bg-white pointer"
+      : "b--black-10 black-20 bg-transparent"
   )
 }
 
 function prevButton({updatePagePrev}, show) {
   const onClick = () => updatePagePrev()
-  return $("button", {onClick, className: buttonClass(show)}, "Previous page")
+  return $("button", {
+    onClick,
+    disabled: !show,
+    className: buttonClass(show)
+  }, "▲")
 }
 
 function nextButton({updatePageNext}, show) {
   const onClick = () => updatePageNext()
-  return $("button", {onClick, className: buttonClass(show)}, "Next page")
+  return $("button", {
+    onClick,
+    disabled: !show,
+    className: buttonClass(show)
+  }, "▼")
 }
 
 function Paginator(props) {
@@ -33,6 +42,7 @@ function Paginator(props) {
     currentPage,
     pageSize,
     items,
+    emptyState,
     render
   } = props
   const numPages = Math.ceil(items.length / pageSize)
@@ -40,10 +50,17 @@ function Paginator(props) {
   const hasNext = currentPage < (numPages - 1)
   const i = pageSize * currentPage
   const pageItems = items.slice(i, i + pageSize)
+  const paginationButtons =
+    $("div", {className: "flex"},
+      $("div", {className: "ph1 flex-auto"}, prevButton(props, hasPrev)),
+      $("div", {className: "ph1 flex-auto"}, nextButton(props, hasNext))
+    )
   return $("div", {},
-    prevButton(props, hasPrev),
-    $("div", {key: `page-${currentPage}`}, pageItems.map(render)),
-    nextButton(props, hasNext),
+    paginationButtons,
+    pageItems.length === 0
+      ? emptyState
+      : $("div", {key: `page-${currentPage}`}, pageItems.map(render)),
+    paginationButtons
   )
 }
 

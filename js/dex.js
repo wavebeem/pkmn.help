@@ -60,9 +60,10 @@ function Dex(props) {
       autoCapitalize: "none",
       className: classes(
         "f2 w-100 border-box",
-        "pv2 ph4",
+        "pv2 ph5",
         "mv4",
         "chunky-focus",
+        "inset-shadow",
         "br-pill ba b--black-20"
       ),
       placeholder: "search",
@@ -76,12 +77,13 @@ function Dex(props) {
     updatePagePrev: () => updateCurrentPage(currentPage - 1),
     pageSize: 100,
     // pageSize: 10,
+    emptyState: $("p", {className: "silver f1 b tc m0"}, "no pokémon found"),
     items: pkmn,
     render: makePKMN
   })
   return $("div", {className},
     $("a", {href: "#", className: "GoToTop"}, "⬆"),
-    $("div", {className: "mh2"}, searchInput),
+    searchInput,
     mons
   )
 }
