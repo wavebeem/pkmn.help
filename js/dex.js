@@ -60,11 +60,13 @@ function Dex(props) {
       autoCapitalize: "none",
       className: classes(
         "f2 w-100 border-box",
-        "pv2 ph5",
+        "pv2 ph4",
         "mv4",
         "chunky-focus",
         "inset-shadow",
-        "br-pill ba b--black-20"
+        "br-pill ba",
+        // "b--black-40 bg-mid-gray white"
+        "b--black-30"
       ),
       placeholder: "search",
       value: search,

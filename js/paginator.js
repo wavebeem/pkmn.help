@@ -6,7 +6,7 @@ const $ = React.createElement
 function buttonClass(show) {
   return classes(
     "db w-100",
-    "ba br3",
+    "ba br2",
     "pv3 ph4",
     "b f4",
     "ttu",
