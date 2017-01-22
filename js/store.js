@@ -40,7 +40,7 @@ function filterPKMN(search) {
     return PKMN
   }
   return PKMN.filter(p =>
-    p.name.toLowerCase().indexOf(search) === 0
+    p.name.toLowerCase().indexOf(search) >= 0
   )
 }
 

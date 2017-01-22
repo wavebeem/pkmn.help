@@ -65,7 +65,7 @@ function Dex(props) {
         "chunky-focus",
         "inset-shadow",
         "br-pill ba",
-        // "b--black-40 bg-mid-gray white"
+        // "b--black-60 bg-mid-gray white"
         "b--black-30"
       ),
       placeholder: "search",
