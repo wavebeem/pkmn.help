@@ -85,7 +85,7 @@ function Dex(props) {
   })
   return $("div", {className},
     $("a", {href: "#", className: "GoToTop"}, "⬆"),
-    searchInput,
+    $("div", {className: "ph1"}, searchInput),
     mons
   )
 }
