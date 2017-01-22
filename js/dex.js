@@ -59,7 +59,7 @@ function Dex(props) {
       inputMode: "verbatim",
       autoCapitalize: "none",
       className: classes(
-        "f2 w-100 border-box",
+        "f2 f1-l w-100 border-box",
         "pv2 ph4",
         "mv4",
         "chunky-focus",
