@@ -12,7 +12,7 @@ function buttonClass(show) {
     "ttu",
     "chunky-focus",
     show
-      ? "b--black-20 bg-white pointer"
+      ? "b--black-30 bg-white pointer"
       : "b--black-10 black-20 bg-transparent"
   )
 }
