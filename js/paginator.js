@@ -3,6 +3,9 @@ const classes = require("./classes")
 
 const $ = React.createElement
 
+const PREV_TEXT = "◀ prev"
+const NEXT_TEXT = "next ▶"
+
 function buttonClass(show) {
   return classes(
     "db w-100",
@@ -23,7 +26,7 @@ function prevButton({updatePagePrev}, show) {
     onClick,
     disabled: !show,
     className: buttonClass(show)
-  }, "▲")
+  }, PREV_TEXT)
 }
 
 function nextButton({updatePageNext}, show) {
@@ -32,7 +35,7 @@ function nextButton({updatePageNext}, show) {
     onClick,
     disabled: !show,
     className: buttonClass(show)
-  }, "▼")
+  }, NEXT_TEXT)
 }
 
 function Paginator(props) {
