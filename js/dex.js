@@ -83,8 +83,11 @@ function Dex(props) {
     items: pkmn,
     render: makePKMN
   })
+  const size = 22
   return $("div", {className},
-    $("a", {href: "#", className: "GoToTop"}, "⬆"),
+    $("a", {href: "#", className: "GoToTop"},
+      $("img", {src: "top.svg", width: size, height: size})
+    ),
     $("div", {className: "ph1"}, searchInput),
     mons
   )

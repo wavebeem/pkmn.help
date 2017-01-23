@@ -5,3 +5,5 @@ veekun-pokedex.sqlite
 
 /bundle.*
 /favicon-*.png
+
+.DS_Store

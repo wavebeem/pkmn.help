@@ -10,6 +10,8 @@ const $ = React.createElement
 // console.log(window.Perf)
 
 window.addEventListener("DOMContentLoaded", () => {
+  // Preload the scroll to top image.
+  document.createElement("img").src = "top.svg"
   const root = document.getElementById("react-root")
   const component = $(ReactRedux.Provider, {store}, $(App))
   ReactDOM.render(component, root)
