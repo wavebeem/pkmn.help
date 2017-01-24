@@ -1,4 +1,1 @@
-pkmn-type-calc
-==============
-
-PKMN Type Calc is a type calculator for Pokemon X/Y to show defense matchups for a type pair
+Pokémon Type Calculator helps you figure out offense/defense matchups for Pokémon
