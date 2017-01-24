@@ -1,5 +1,6 @@
 const React = require("react")
 const _ = require("lodash")
+const ScrollHelper = require("./scroll-helper")
 const Paginator = require("./paginator")
 const classes = require("./classes")
 
@@ -28,16 +29,13 @@ function makePKMN(p, i) {
   const displayNumber = "#" + _.padStart(p.number, 3, "0")
   const style = {minHeight: "100px"}
   return $("div", {key: `pkmn-${p.number}`, className, style},
-    $("div", {className: "flex-auto f4 f2-ns mv0"},
+    $("div", {className: "flex-auto f4 f3-m f2-l mv0"},
       $("h3", {className: "truncate mt0 mb1"}, p.name),
       $("p", {className: "silver mv0"}, displayNumber)
     ),
     $("div", {}, p.types.map(makeType))
   )
 }
-
-// TODO: Improve performance, somehow?
-// TODO: Switch to image for "back to top" link
 
 function Dex(props) {
   const {
@@ -82,22 +80,8 @@ function Dex(props) {
     items: pkmn,
     render: makePKMN
   })
-  const size = 24
   return $("div", {className},
-    $("a", {href: "#", className: "GoToTop"},
-      $("img", {
-        src: "top.svg",
-        onClick: () => {
-          window.scroll({
-            top: 0,
-            left: 0,
-            behavior: "smooth"
-          })
-        },
-        width: size,
-        height: size
-      })
-    ),
+    $(ScrollHelper),
     $("div", {className: "ph1"}, searchInput),
     mons
   )
