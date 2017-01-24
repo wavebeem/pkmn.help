@@ -24,7 +24,7 @@ function makePKMN(p, i) {
     "ph2 pv3",
     "flex items-center",
     {bt: i > 0},
-    {mt2: i === 0},
+    {mt2: i === 0}
   )
   const displayNumber = "#" + _.padStart(p.number, 3, "0")
   const style = {minHeight: "100px"}
