@@ -77,16 +77,26 @@ function Dex(props) {
     currentPage,
     updatePageNext: () => updateCurrentPage(currentPage + 1),
     updatePagePrev: () => updateCurrentPage(currentPage - 1),
-    pageSize: 100,
-    // pageSize: 10,
+    pageSize: 50,
     emptyState: $("p", {className: "silver f1 b tc m0"}, "no pokémon found"),
     items: pkmn,
     render: makePKMN
   })
-  const size = 22
+  const size = 24
   return $("div", {className},
     $("a", {href: "#", className: "GoToTop"},
-      $("img", {src: "top.svg", width: size, height: size})
+      $("img", {
+        src: "top.svg",
+        onClick: () => {
+          window.scroll({
+            top: 0,
+            left: 0,
+            behavior: "smooth"
+          })
+        },
+        width: size,
+        height: size
+      })
     ),
     $("div", {className: "ph1"}, searchInput),
     mons

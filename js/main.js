@@ -4,6 +4,8 @@ const ReactRedux = require("react-redux")
 const store = require("./store")
 const App = require("./app")
 
+require("smoothscroll-polyfill").polyfill()
+
 const $ = React.createElement
 
 // window.Perf = require("react-addons-perf")

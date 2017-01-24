@@ -20,8 +20,19 @@ function buttonClass(show) {
   )
 }
 
+function scrollToTop() {
+  window.scroll({
+    top: 0,
+    left: 0,
+    behavior: "smooth"
+  })
+}
+
 function prevButton({updatePagePrev}, show) {
-  const onClick = () => updatePagePrev()
+  const onClick = () => {
+    scrollToTop()
+    updatePagePrev()
+  }
   return $("button", {
     onClick,
     disabled: !show,
@@ -30,7 +41,10 @@ function prevButton({updatePagePrev}, show) {
 }
 
 function nextButton({updatePageNext}, show) {
-  const onClick = () => updatePageNext()
+  const onClick = () => {
+    scrollToTop()
+    updatePageNext()
+  }
   return $("button", {
     onClick,
     disabled: !show,
