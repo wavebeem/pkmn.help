@@ -1,0 +1,52 @@
+#!/usr/bin/env ruby
+require "sqlite3"
+require "json"
+
+IN_FILE = "veekun-pokedex.sqlite"
+OUT_FILE = "js/pkmn.json"
+
+db = SQLite3::Database.new(IN_FILE)
+
+data = db.execute(%{
+  with pokemon_types_text as (
+    select
+      pt.pokemon_id as pokemon_species_id,
+      pt.slot,
+      tn.local_language_id,
+      tn.name
+    from pokemon_types as pt
+      left join type_names as tn on tn.type_id = pt.type_id
+  )
+  select
+    n.pokemon_species_id,
+    n.name,
+    lower(t1.name),
+    lower(t2.name)
+  from pokemon_species_names as n
+    left join pokemon_types_text as t1 on (
+      t1.pokemon_species_id = n.pokemon_species_id and
+      t1.local_language_id = n.local_language_id and
+      t1.slot = 1
+    )
+    left join pokemon_types_text as t2 on (
+      t2.pokemon_species_id = n.pokemon_species_id and
+      t2.local_language_id = n.local_language_id and
+      t2.slot = 2
+    )
+    left join languages as l on l.id = n.local_language_id
+  where l.identifier = 'en'
+  order by n.pokemon_species_id asc
+})
+
+dex = data.map {|row|
+  number, name, t1, t2 = row
+  {
+    name: name,
+    number: number,
+    types: [t1, t2].compact
+  }
+}
+
+json = JSON.pretty_generate(dex)
+
+File.write(OUT_FILE, json)

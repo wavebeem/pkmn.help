@@ -1,0 +1,5399 @@
+[
+  {
+    "name": "Bulbasaur",
+    "number": 1,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Ivysaur",
+    "number": 2,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Venusaur",
+    "number": 3,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Charmander",
+    "number": 4,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Charmeleon",
+    "number": 5,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Charizard",
+    "number": 6,
+    "types": [
+      "fire",
+      "flying"
+    ]
+  },
+  {
+    "name": "Squirtle",
+    "number": 7,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Wartortle",
+    "number": 8,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Blastoise",
+    "number": 9,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Caterpie",
+    "number": 10,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Metapod",
+    "number": 11,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Butterfree",
+    "number": 12,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Weedle",
+    "number": 13,
+    "types": [
+      "bug",
+      "poison"
+    ]
+  },
+  {
+    "name": "Kakuna",
+    "number": 14,
+    "types": [
+      "bug",
+      "poison"
+    ]
+  },
+  {
+    "name": "Beedrill",
+    "number": 15,
+    "types": [
+      "bug",
+      "poison"
+    ]
+  },
+  {
+    "name": "Pidgey",
+    "number": 16,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Pidgeotto",
+    "number": 17,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Pidgeot",
+    "number": 18,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Rattata",
+    "number": 19,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Raticate",
+    "number": 20,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Spearow",
+    "number": 21,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Fearow",
+    "number": 22,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Ekans",
+    "number": 23,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Arbok",
+    "number": 24,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Pikachu",
+    "number": 25,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Raichu",
+    "number": 26,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Sandshrew",
+    "number": 27,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Sandslash",
+    "number": 28,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Nidoran♀",
+    "number": 29,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Nidorina",
+    "number": 30,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Nidoqueen",
+    "number": 31,
+    "types": [
+      "poison",
+      "ground"
+    ]
+  },
+  {
+    "name": "Nidoran♂",
+    "number": 32,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Nidorino",
+    "number": 33,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Nidoking",
+    "number": 34,
+    "types": [
+      "poison",
+      "ground"
+    ]
+  },
+  {
+    "name": "Clefairy",
+    "number": 35,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Clefable",
+    "number": 36,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Vulpix",
+    "number": 37,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Ninetales",
+    "number": 38,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Jigglypuff",
+    "number": 39,
+    "types": [
+      "normal",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Wigglytuff",
+    "number": 40,
+    "types": [
+      "normal",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Zubat",
+    "number": 41,
+    "types": [
+      "poison",
+      "flying"
+    ]
+  },
+  {
+    "name": "Golbat",
+    "number": 42,
+    "types": [
+      "poison",
+      "flying"
+    ]
+  },
+  {
+    "name": "Oddish",
+    "number": 43,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Gloom",
+    "number": 44,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Vileplume",
+    "number": 45,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Paras",
+    "number": 46,
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Parasect",
+    "number": 47,
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Venonat",
+    "number": 48,
+    "types": [
+      "bug",
+      "poison"
+    ]
+  },
+  {
+    "name": "Venomoth",
+    "number": 49,
+    "types": [
+      "bug",
+      "poison"
+    ]
+  },
+  {
+    "name": "Diglett",
+    "number": 50,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Dugtrio",
+    "number": 51,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Meowth",
+    "number": 52,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Persian",
+    "number": 53,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Psyduck",
+    "number": 54,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Golduck",
+    "number": 55,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Mankey",
+    "number": 56,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Primeape",
+    "number": 57,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Growlithe",
+    "number": 58,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Arcanine",
+    "number": 59,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Poliwag",
+    "number": 60,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Poliwhirl",
+    "number": 61,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Poliwrath",
+    "number": 62,
+    "types": [
+      "water",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Abra",
+    "number": 63,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Kadabra",
+    "number": 64,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Alakazam",
+    "number": 65,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Machop",
+    "number": 66,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Machoke",
+    "number": 67,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Machamp",
+    "number": 68,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Bellsprout",
+    "number": 69,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Weepinbell",
+    "number": 70,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Victreebel",
+    "number": 71,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Tentacool",
+    "number": 72,
+    "types": [
+      "water",
+      "poison"
+    ]
+  },
+  {
+    "name": "Tentacruel",
+    "number": 73,
+    "types": [
+      "water",
+      "poison"
+    ]
+  },
+  {
+    "name": "Geodude",
+    "number": 74,
+    "types": [
+      "rock",
+      "ground"
+    ]
+  },
+  {
+    "name": "Graveler",
+    "number": 75,
+    "types": [
+      "rock",
+      "ground"
+    ]
+  },
+  {
+    "name": "Golem",
+    "number": 76,
+    "types": [
+      "rock",
+      "ground"
+    ]
+  },
+  {
+    "name": "Ponyta",
+    "number": 77,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Rapidash",
+    "number": 78,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Slowpoke",
+    "number": 79,
+    "types": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Slowbro",
+    "number": 80,
+    "types": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Magnemite",
+    "number": 81,
+    "types": [
+      "electric",
+      "steel"
+    ]
+  },
+  {
+    "name": "Magneton",
+    "number": 82,
+    "types": [
+      "electric",
+      "steel"
+    ]
+  },
+  {
+    "name": "Farfetch'd",
+    "number": 83,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Doduo",
+    "number": 84,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Dodrio",
+    "number": 85,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Seel",
+    "number": 86,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Dewgong",
+    "number": 87,
+    "types": [
+      "water",
+      "ice"
+    ]
+  },
+  {
+    "name": "Grimer",
+    "number": 88,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Muk",
+    "number": 89,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Shellder",
+    "number": 90,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Cloyster",
+    "number": 91,
+    "types": [
+      "water",
+      "ice"
+    ]
+  },
+  {
+    "name": "Gastly",
+    "number": 92,
+    "types": [
+      "ghost",
+      "poison"
+    ]
+  },
+  {
+    "name": "Haunter",
+    "number": 93,
+    "types": [
+      "ghost",
+      "poison"
+    ]
+  },
+  {
+    "name": "Gengar",
+    "number": 94,
+    "types": [
+      "ghost",
+      "poison"
+    ]
+  },
+  {
+    "name": "Onix",
+    "number": 95,
+    "types": [
+      "rock",
+      "ground"
+    ]
+  },
+  {
+    "name": "Drowzee",
+    "number": 96,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Hypno",
+    "number": 97,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Krabby",
+    "number": 98,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Kingler",
+    "number": 99,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Voltorb",
+    "number": 100,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Electrode",
+    "number": 101,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Exeggcute",
+    "number": 102,
+    "types": [
+      "grass",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Exeggutor",
+    "number": 103,
+    "types": [
+      "grass",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Cubone",
+    "number": 104,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Marowak",
+    "number": 105,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Hitmonlee",
+    "number": 106,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Hitmonchan",
+    "number": 107,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Lickitung",
+    "number": 108,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Koffing",
+    "number": 109,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Weezing",
+    "number": 110,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Rhyhorn",
+    "number": 111,
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Rhydon",
+    "number": 112,
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Chansey",
+    "number": 113,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Tangela",
+    "number": 114,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Kangaskhan",
+    "number": 115,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Horsea",
+    "number": 116,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Seadra",
+    "number": 117,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Goldeen",
+    "number": 118,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Seaking",
+    "number": 119,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Staryu",
+    "number": 120,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Starmie",
+    "number": 121,
+    "types": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Mr. Mime",
+    "number": 122,
+    "types": [
+      "psychic",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Scyther",
+    "number": 123,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Jynx",
+    "number": 124,
+    "types": [
+      "ice",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Electabuzz",
+    "number": 125,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Magmar",
+    "number": 126,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Pinsir",
+    "number": 127,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Tauros",
+    "number": 128,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Magikarp",
+    "number": 129,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Gyarados",
+    "number": 130,
+    "types": [
+      "water",
+      "flying"
+    ]
+  },
+  {
+    "name": "Lapras",
+    "number": 131,
+    "types": [
+      "water",
+      "ice"
+    ]
+  },
+  {
+    "name": "Ditto",
+    "number": 132,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Eevee",
+    "number": 133,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Vaporeon",
+    "number": 134,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Jolteon",
+    "number": 135,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Flareon",
+    "number": 136,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Porygon",
+    "number": 137,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Omanyte",
+    "number": 138,
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Omastar",
+    "number": 139,
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Kabuto",
+    "number": 140,
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Kabutops",
+    "number": 141,
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Aerodactyl",
+    "number": 142,
+    "types": [
+      "rock",
+      "flying"
+    ]
+  },
+  {
+    "name": "Snorlax",
+    "number": 143,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Articuno",
+    "number": 144,
+    "types": [
+      "ice",
+      "flying"
+    ]
+  },
+  {
+    "name": "Zapdos",
+    "number": 145,
+    "types": [
+      "electric",
+      "flying"
+    ]
+  },
+  {
+    "name": "Moltres",
+    "number": 146,
+    "types": [
+      "fire",
+      "flying"
+    ]
+  },
+  {
+    "name": "Dratini",
+    "number": 147,
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Dragonair",
+    "number": 148,
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Dragonite",
+    "number": 149,
+    "types": [
+      "dragon",
+      "flying"
+    ]
+  },
+  {
+    "name": "Mewtwo",
+    "number": 150,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Mew",
+    "number": 151,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Chikorita",
+    "number": 152,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Bayleef",
+    "number": 153,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Meganium",
+    "number": 154,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Cyndaquil",
+    "number": 155,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Quilava",
+    "number": 156,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Typhlosion",
+    "number": 157,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Totodile",
+    "number": 158,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Croconaw",
+    "number": 159,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Feraligatr",
+    "number": 160,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Sentret",
+    "number": 161,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Furret",
+    "number": 162,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Hoothoot",
+    "number": 163,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Noctowl",
+    "number": 164,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Ledyba",
+    "number": 165,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Ledian",
+    "number": 166,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Spinarak",
+    "number": 167,
+    "types": [
+      "bug",
+      "poison"
+    ]
+  },
+  {
+    "name": "Ariados",
+    "number": 168,
+    "types": [
+      "bug",
+      "poison"
+    ]
+  },
+  {
+    "name": "Crobat",
+    "number": 169,
+    "types": [
+      "poison",
+      "flying"
+    ]
+  },
+  {
+    "name": "Chinchou",
+    "number": 170,
+    "types": [
+      "water",
+      "electric"
+    ]
+  },
+  {
+    "name": "Lanturn",
+    "number": 171,
+    "types": [
+      "water",
+      "electric"
+    ]
+  },
+  {
+    "name": "Pichu",
+    "number": 172,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Cleffa",
+    "number": 173,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Igglybuff",
+    "number": 174,
+    "types": [
+      "normal",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Togepi",
+    "number": 175,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Togetic",
+    "number": 176,
+    "types": [
+      "fairy",
+      "flying"
+    ]
+  },
+  {
+    "name": "Natu",
+    "number": 177,
+    "types": [
+      "psychic",
+      "flying"
+    ]
+  },
+  {
+    "name": "Xatu",
+    "number": 178,
+    "types": [
+      "psychic",
+      "flying"
+    ]
+  },
+  {
+    "name": "Mareep",
+    "number": 179,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Flaaffy",
+    "number": 180,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Ampharos",
+    "number": 181,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Bellossom",
+    "number": 182,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Marill",
+    "number": 183,
+    "types": [
+      "water",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Azumarill",
+    "number": 184,
+    "types": [
+      "water",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Sudowoodo",
+    "number": 185,
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Politoed",
+    "number": 186,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Hoppip",
+    "number": 187,
+    "types": [
+      "grass",
+      "flying"
+    ]
+  },
+  {
+    "name": "Skiploom",
+    "number": 188,
+    "types": [
+      "grass",
+      "flying"
+    ]
+  },
+  {
+    "name": "Jumpluff",
+    "number": 189,
+    "types": [
+      "grass",
+      "flying"
+    ]
+  },
+  {
+    "name": "Aipom",
+    "number": 190,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Sunkern",
+    "number": 191,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Sunflora",
+    "number": 192,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Yanma",
+    "number": 193,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Wooper",
+    "number": 194,
+    "types": [
+      "water",
+      "ground"
+    ]
+  },
+  {
+    "name": "Quagsire",
+    "number": 195,
+    "types": [
+      "water",
+      "ground"
+    ]
+  },
+  {
+    "name": "Espeon",
+    "number": 196,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Umbreon",
+    "number": 197,
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Murkrow",
+    "number": 198,
+    "types": [
+      "dark",
+      "flying"
+    ]
+  },
+  {
+    "name": "Slowking",
+    "number": 199,
+    "types": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Misdreavus",
+    "number": 200,
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Unown",
+    "number": 201,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Wobbuffet",
+    "number": 202,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Girafarig",
+    "number": 203,
+    "types": [
+      "normal",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Pineco",
+    "number": 204,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Forretress",
+    "number": 205,
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Dunsparce",
+    "number": 206,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Gligar",
+    "number": 207,
+    "types": [
+      "ground",
+      "flying"
+    ]
+  },
+  {
+    "name": "Steelix",
+    "number": 208,
+    "types": [
+      "steel",
+      "ground"
+    ]
+  },
+  {
+    "name": "Snubbull",
+    "number": 209,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Granbull",
+    "number": 210,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Qwilfish",
+    "number": 211,
+    "types": [
+      "water",
+      "poison"
+    ]
+  },
+  {
+    "name": "Scizor",
+    "number": 212,
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Shuckle",
+    "number": 213,
+    "types": [
+      "bug",
+      "rock"
+    ]
+  },
+  {
+    "name": "Heracross",
+    "number": 214,
+    "types": [
+      "bug",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Sneasel",
+    "number": 215,
+    "types": [
+      "dark",
+      "ice"
+    ]
+  },
+  {
+    "name": "Teddiursa",
+    "number": 216,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Ursaring",
+    "number": 217,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Slugma",
+    "number": 218,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Magcargo",
+    "number": 219,
+    "types": [
+      "fire",
+      "rock"
+    ]
+  },
+  {
+    "name": "Swinub",
+    "number": 220,
+    "types": [
+      "ice",
+      "ground"
+    ]
+  },
+  {
+    "name": "Piloswine",
+    "number": 221,
+    "types": [
+      "ice",
+      "ground"
+    ]
+  },
+  {
+    "name": "Corsola",
+    "number": 222,
+    "types": [
+      "water",
+      "rock"
+    ]
+  },
+  {
+    "name": "Remoraid",
+    "number": 223,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Octillery",
+    "number": 224,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Delibird",
+    "number": 225,
+    "types": [
+      "ice",
+      "flying"
+    ]
+  },
+  {
+    "name": "Mantine",
+    "number": 226,
+    "types": [
+      "water",
+      "flying"
+    ]
+  },
+  {
+    "name": "Skarmory",
+    "number": 227,
+    "types": [
+      "steel",
+      "flying"
+    ]
+  },
+  {
+    "name": "Houndour",
+    "number": 228,
+    "types": [
+      "dark",
+      "fire"
+    ]
+  },
+  {
+    "name": "Houndoom",
+    "number": 229,
+    "types": [
+      "dark",
+      "fire"
+    ]
+  },
+  {
+    "name": "Kingdra",
+    "number": 230,
+    "types": [
+      "water",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Phanpy",
+    "number": 231,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Donphan",
+    "number": 232,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Porygon2",
+    "number": 233,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Stantler",
+    "number": 234,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Smeargle",
+    "number": 235,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Tyrogue",
+    "number": 236,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Hitmontop",
+    "number": 237,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Smoochum",
+    "number": 238,
+    "types": [
+      "ice",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Elekid",
+    "number": 239,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Magby",
+    "number": 240,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Miltank",
+    "number": 241,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Blissey",
+    "number": 242,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Raikou",
+    "number": 243,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Entei",
+    "number": 244,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Suicune",
+    "number": 245,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Larvitar",
+    "number": 246,
+    "types": [
+      "rock",
+      "ground"
+    ]
+  },
+  {
+    "name": "Pupitar",
+    "number": 247,
+    "types": [
+      "rock",
+      "ground"
+    ]
+  },
+  {
+    "name": "Tyranitar",
+    "number": 248,
+    "types": [
+      "rock",
+      "dark"
+    ]
+  },
+  {
+    "name": "Lugia",
+    "number": 249,
+    "types": [
+      "psychic",
+      "flying"
+    ]
+  },
+  {
+    "name": "Ho-Oh",
+    "number": 250,
+    "types": [
+      "fire",
+      "flying"
+    ]
+  },
+  {
+    "name": "Celebi",
+    "number": 251,
+    "types": [
+      "psychic",
+      "grass"
+    ]
+  },
+  {
+    "name": "Treecko",
+    "number": 252,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Grovyle",
+    "number": 253,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Sceptile",
+    "number": 254,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Torchic",
+    "number": 255,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Combusken",
+    "number": 256,
+    "types": [
+      "fire",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Blaziken",
+    "number": 257,
+    "types": [
+      "fire",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Mudkip",
+    "number": 258,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Marshtomp",
+    "number": 259,
+    "types": [
+      "water",
+      "ground"
+    ]
+  },
+  {
+    "name": "Swampert",
+    "number": 260,
+    "types": [
+      "water",
+      "ground"
+    ]
+  },
+  {
+    "name": "Poochyena",
+    "number": 261,
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Mightyena",
+    "number": 262,
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Zigzagoon",
+    "number": 263,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Linoone",
+    "number": 264,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Wurmple",
+    "number": 265,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Silcoon",
+    "number": 266,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Beautifly",
+    "number": 267,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Cascoon",
+    "number": 268,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Dustox",
+    "number": 269,
+    "types": [
+      "bug",
+      "poison"
+    ]
+  },
+  {
+    "name": "Lotad",
+    "number": 270,
+    "types": [
+      "water",
+      "grass"
+    ]
+  },
+  {
+    "name": "Lombre",
+    "number": 271,
+    "types": [
+      "water",
+      "grass"
+    ]
+  },
+  {
+    "name": "Ludicolo",
+    "number": 272,
+    "types": [
+      "water",
+      "grass"
+    ]
+  },
+  {
+    "name": "Seedot",
+    "number": 273,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Nuzleaf",
+    "number": 274,
+    "types": [
+      "grass",
+      "dark"
+    ]
+  },
+  {
+    "name": "Shiftry",
+    "number": 275,
+    "types": [
+      "grass",
+      "dark"
+    ]
+  },
+  {
+    "name": "Taillow",
+    "number": 276,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Swellow",
+    "number": 277,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Wingull",
+    "number": 278,
+    "types": [
+      "water",
+      "flying"
+    ]
+  },
+  {
+    "name": "Pelipper",
+    "number": 279,
+    "types": [
+      "water",
+      "flying"
+    ]
+  },
+  {
+    "name": "Ralts",
+    "number": 280,
+    "types": [
+      "psychic",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Kirlia",
+    "number": 281,
+    "types": [
+      "psychic",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Gardevoir",
+    "number": 282,
+    "types": [
+      "psychic",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Surskit",
+    "number": 283,
+    "types": [
+      "bug",
+      "water"
+    ]
+  },
+  {
+    "name": "Masquerain",
+    "number": 284,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Shroomish",
+    "number": 285,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Breloom",
+    "number": 286,
+    "types": [
+      "grass",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Slakoth",
+    "number": 287,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Vigoroth",
+    "number": 288,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Slaking",
+    "number": 289,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Nincada",
+    "number": 290,
+    "types": [
+      "bug",
+      "ground"
+    ]
+  },
+  {
+    "name": "Ninjask",
+    "number": 291,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Shedinja",
+    "number": 292,
+    "types": [
+      "bug",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Whismur",
+    "number": 293,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Loudred",
+    "number": 294,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Exploud",
+    "number": 295,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Makuhita",
+    "number": 296,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Hariyama",
+    "number": 297,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Azurill",
+    "number": 298,
+    "types": [
+      "normal",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Nosepass",
+    "number": 299,
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Skitty",
+    "number": 300,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Delcatty",
+    "number": 301,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Sableye",
+    "number": 302,
+    "types": [
+      "dark",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Mawile",
+    "number": 303,
+    "types": [
+      "steel",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Aron",
+    "number": 304,
+    "types": [
+      "steel",
+      "rock"
+    ]
+  },
+  {
+    "name": "Lairon",
+    "number": 305,
+    "types": [
+      "steel",
+      "rock"
+    ]
+  },
+  {
+    "name": "Aggron",
+    "number": 306,
+    "types": [
+      "steel",
+      "rock"
+    ]
+  },
+  {
+    "name": "Meditite",
+    "number": 307,
+    "types": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Medicham",
+    "number": 308,
+    "types": [
+      "fighting",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Electrike",
+    "number": 309,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Manectric",
+    "number": 310,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Plusle",
+    "number": 311,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Minun",
+    "number": 312,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Volbeat",
+    "number": 313,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Illumise",
+    "number": 314,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Roselia",
+    "number": 315,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Gulpin",
+    "number": 316,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Swalot",
+    "number": 317,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Carvanha",
+    "number": 318,
+    "types": [
+      "water",
+      "dark"
+    ]
+  },
+  {
+    "name": "Sharpedo",
+    "number": 319,
+    "types": [
+      "water",
+      "dark"
+    ]
+  },
+  {
+    "name": "Wailmer",
+    "number": 320,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Wailord",
+    "number": 321,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Numel",
+    "number": 322,
+    "types": [
+      "fire",
+      "ground"
+    ]
+  },
+  {
+    "name": "Camerupt",
+    "number": 323,
+    "types": [
+      "fire",
+      "ground"
+    ]
+  },
+  {
+    "name": "Torkoal",
+    "number": 324,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Spoink",
+    "number": 325,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Grumpig",
+    "number": 326,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Spinda",
+    "number": 327,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Trapinch",
+    "number": 328,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Vibrava",
+    "number": 329,
+    "types": [
+      "ground",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Flygon",
+    "number": 330,
+    "types": [
+      "ground",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Cacnea",
+    "number": 331,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Cacturne",
+    "number": 332,
+    "types": [
+      "grass",
+      "dark"
+    ]
+  },
+  {
+    "name": "Swablu",
+    "number": 333,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Altaria",
+    "number": 334,
+    "types": [
+      "dragon",
+      "flying"
+    ]
+  },
+  {
+    "name": "Zangoose",
+    "number": 335,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Seviper",
+    "number": 336,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Lunatone",
+    "number": 337,
+    "types": [
+      "rock",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Solrock",
+    "number": 338,
+    "types": [
+      "rock",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Barboach",
+    "number": 339,
+    "types": [
+      "water",
+      "ground"
+    ]
+  },
+  {
+    "name": "Whiscash",
+    "number": 340,
+    "types": [
+      "water",
+      "ground"
+    ]
+  },
+  {
+    "name": "Corphish",
+    "number": 341,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Crawdaunt",
+    "number": 342,
+    "types": [
+      "water",
+      "dark"
+    ]
+  },
+  {
+    "name": "Baltoy",
+    "number": 343,
+    "types": [
+      "ground",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Claydol",
+    "number": 344,
+    "types": [
+      "ground",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Lileep",
+    "number": 345,
+    "types": [
+      "rock",
+      "grass"
+    ]
+  },
+  {
+    "name": "Cradily",
+    "number": 346,
+    "types": [
+      "rock",
+      "grass"
+    ]
+  },
+  {
+    "name": "Anorith",
+    "number": 347,
+    "types": [
+      "rock",
+      "bug"
+    ]
+  },
+  {
+    "name": "Armaldo",
+    "number": 348,
+    "types": [
+      "rock",
+      "bug"
+    ]
+  },
+  {
+    "name": "Feebas",
+    "number": 349,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Milotic",
+    "number": 350,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Castform",
+    "number": 351,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Kecleon",
+    "number": 352,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Shuppet",
+    "number": 353,
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Banette",
+    "number": 354,
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Duskull",
+    "number": 355,
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Dusclops",
+    "number": 356,
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Tropius",
+    "number": 357,
+    "types": [
+      "grass",
+      "flying"
+    ]
+  },
+  {
+    "name": "Chimecho",
+    "number": 358,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Absol",
+    "number": 359,
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Wynaut",
+    "number": 360,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Snorunt",
+    "number": 361,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Glalie",
+    "number": 362,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Spheal",
+    "number": 363,
+    "types": [
+      "ice",
+      "water"
+    ]
+  },
+  {
+    "name": "Sealeo",
+    "number": 364,
+    "types": [
+      "ice",
+      "water"
+    ]
+  },
+  {
+    "name": "Walrein",
+    "number": 365,
+    "types": [
+      "ice",
+      "water"
+    ]
+  },
+  {
+    "name": "Clamperl",
+    "number": 366,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Huntail",
+    "number": 367,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Gorebyss",
+    "number": 368,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Relicanth",
+    "number": 369,
+    "types": [
+      "water",
+      "rock"
+    ]
+  },
+  {
+    "name": "Luvdisc",
+    "number": 370,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Bagon",
+    "number": 371,
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Shelgon",
+    "number": 372,
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Salamence",
+    "number": 373,
+    "types": [
+      "dragon",
+      "flying"
+    ]
+  },
+  {
+    "name": "Beldum",
+    "number": 374,
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Metang",
+    "number": 375,
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Metagross",
+    "number": 376,
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Regirock",
+    "number": 377,
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Regice",
+    "number": 378,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Registeel",
+    "number": 379,
+    "types": [
+      "steel"
+    ]
+  },
+  {
+    "name": "Latias",
+    "number": 380,
+    "types": [
+      "dragon",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Latios",
+    "number": 381,
+    "types": [
+      "dragon",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Kyogre",
+    "number": 382,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Groudon",
+    "number": 383,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Rayquaza",
+    "number": 384,
+    "types": [
+      "dragon",
+      "flying"
+    ]
+  },
+  {
+    "name": "Jirachi",
+    "number": 385,
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Deoxys",
+    "number": 386,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Turtwig",
+    "number": 387,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Grotle",
+    "number": 388,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Torterra",
+    "number": 389,
+    "types": [
+      "grass",
+      "ground"
+    ]
+  },
+  {
+    "name": "Chimchar",
+    "number": 390,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Monferno",
+    "number": 391,
+    "types": [
+      "fire",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Infernape",
+    "number": 392,
+    "types": [
+      "fire",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Piplup",
+    "number": 393,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Prinplup",
+    "number": 394,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Empoleon",
+    "number": 395,
+    "types": [
+      "water",
+      "steel"
+    ]
+  },
+  {
+    "name": "Starly",
+    "number": 396,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Staravia",
+    "number": 397,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Staraptor",
+    "number": 398,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Bidoof",
+    "number": 399,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Bibarel",
+    "number": 400,
+    "types": [
+      "normal",
+      "water"
+    ]
+  },
+  {
+    "name": "Kricketot",
+    "number": 401,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Kricketune",
+    "number": 402,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Shinx",
+    "number": 403,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Luxio",
+    "number": 404,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Luxray",
+    "number": 405,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Budew",
+    "number": 406,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Roserade",
+    "number": 407,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Cranidos",
+    "number": 408,
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Rampardos",
+    "number": 409,
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Shieldon",
+    "number": 410,
+    "types": [
+      "rock",
+      "steel"
+    ]
+  },
+  {
+    "name": "Bastiodon",
+    "number": 411,
+    "types": [
+      "rock",
+      "steel"
+    ]
+  },
+  {
+    "name": "Burmy",
+    "number": 412,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Wormadam",
+    "number": 413,
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Mothim",
+    "number": 414,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Combee",
+    "number": 415,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Vespiquen",
+    "number": 416,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Pachirisu",
+    "number": 417,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Buizel",
+    "number": 418,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Floatzel",
+    "number": 419,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Cherubi",
+    "number": 420,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Cherrim",
+    "number": 421,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Shellos",
+    "number": 422,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Gastrodon",
+    "number": 423,
+    "types": [
+      "water",
+      "ground"
+    ]
+  },
+  {
+    "name": "Ambipom",
+    "number": 424,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Drifloon",
+    "number": 425,
+    "types": [
+      "ghost",
+      "flying"
+    ]
+  },
+  {
+    "name": "Drifblim",
+    "number": 426,
+    "types": [
+      "ghost",
+      "flying"
+    ]
+  },
+  {
+    "name": "Buneary",
+    "number": 427,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lopunny",
+    "number": 428,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Mismagius",
+    "number": 429,
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Honchkrow",
+    "number": 430,
+    "types": [
+      "dark",
+      "flying"
+    ]
+  },
+  {
+    "name": "Glameow",
+    "number": 431,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Purugly",
+    "number": 432,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Chingling",
+    "number": 433,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Stunky",
+    "number": 434,
+    "types": [
+      "poison",
+      "dark"
+    ]
+  },
+  {
+    "name": "Skuntank",
+    "number": 435,
+    "types": [
+      "poison",
+      "dark"
+    ]
+  },
+  {
+    "name": "Bronzor",
+    "number": 436,
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Bronzong",
+    "number": 437,
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Bonsly",
+    "number": 438,
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Mime Jr.",
+    "number": 439,
+    "types": [
+      "psychic",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Happiny",
+    "number": 440,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Chatot",
+    "number": 441,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Spiritomb",
+    "number": 442,
+    "types": [
+      "ghost",
+      "dark"
+    ]
+  },
+  {
+    "name": "Gible",
+    "number": 443,
+    "types": [
+      "dragon",
+      "ground"
+    ]
+  },
+  {
+    "name": "Gabite",
+    "number": 444,
+    "types": [
+      "dragon",
+      "ground"
+    ]
+  },
+  {
+    "name": "Garchomp",
+    "number": 445,
+    "types": [
+      "dragon",
+      "ground"
+    ]
+  },
+  {
+    "name": "Munchlax",
+    "number": 446,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Riolu",
+    "number": 447,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Lucario",
+    "number": 448,
+    "types": [
+      "fighting",
+      "steel"
+    ]
+  },
+  {
+    "name": "Hippopotas",
+    "number": 449,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Hippowdon",
+    "number": 450,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Skorupi",
+    "number": 451,
+    "types": [
+      "poison",
+      "bug"
+    ]
+  },
+  {
+    "name": "Drapion",
+    "number": 452,
+    "types": [
+      "poison",
+      "dark"
+    ]
+  },
+  {
+    "name": "Croagunk",
+    "number": 453,
+    "types": [
+      "poison",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Toxicroak",
+    "number": 454,
+    "types": [
+      "poison",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Carnivine",
+    "number": 455,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Finneon",
+    "number": 456,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Lumineon",
+    "number": 457,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Mantyke",
+    "number": 458,
+    "types": [
+      "water",
+      "flying"
+    ]
+  },
+  {
+    "name": "Snover",
+    "number": 459,
+    "types": [
+      "grass",
+      "ice"
+    ]
+  },
+  {
+    "name": "Abomasnow",
+    "number": 460,
+    "types": [
+      "grass",
+      "ice"
+    ]
+  },
+  {
+    "name": "Weavile",
+    "number": 461,
+    "types": [
+      "dark",
+      "ice"
+    ]
+  },
+  {
+    "name": "Magnezone",
+    "number": 462,
+    "types": [
+      "electric",
+      "steel"
+    ]
+  },
+  {
+    "name": "Lickilicky",
+    "number": 463,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Rhyperior",
+    "number": 464,
+    "types": [
+      "ground",
+      "rock"
+    ]
+  },
+  {
+    "name": "Tangrowth",
+    "number": 465,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Electivire",
+    "number": 466,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Magmortar",
+    "number": 467,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Togekiss",
+    "number": 468,
+    "types": [
+      "fairy",
+      "flying"
+    ]
+  },
+  {
+    "name": "Yanmega",
+    "number": 469,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Leafeon",
+    "number": 470,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Glaceon",
+    "number": 471,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Gliscor",
+    "number": 472,
+    "types": [
+      "ground",
+      "flying"
+    ]
+  },
+  {
+    "name": "Mamoswine",
+    "number": 473,
+    "types": [
+      "ice",
+      "ground"
+    ]
+  },
+  {
+    "name": "Porygon-Z",
+    "number": 474,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Gallade",
+    "number": 475,
+    "types": [
+      "psychic",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Probopass",
+    "number": 476,
+    "types": [
+      "rock",
+      "steel"
+    ]
+  },
+  {
+    "name": "Dusknoir",
+    "number": 477,
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Froslass",
+    "number": 478,
+    "types": [
+      "ice",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Rotom",
+    "number": 479,
+    "types": [
+      "electric",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Uxie",
+    "number": 480,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Mesprit",
+    "number": 481,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Azelf",
+    "number": 482,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Dialga",
+    "number": 483,
+    "types": [
+      "steel",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Palkia",
+    "number": 484,
+    "types": [
+      "water",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Heatran",
+    "number": 485,
+    "types": [
+      "fire",
+      "steel"
+    ]
+  },
+  {
+    "name": "Regigigas",
+    "number": 486,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Giratina",
+    "number": 487,
+    "types": [
+      "ghost",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Cresselia",
+    "number": 488,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Phione",
+    "number": 489,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Manaphy",
+    "number": 490,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Darkrai",
+    "number": 491,
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Shaymin",
+    "number": 492,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Arceus",
+    "number": 493,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Victini",
+    "number": 494,
+    "types": [
+      "psychic",
+      "fire"
+    ]
+  },
+  {
+    "name": "Snivy",
+    "number": 495,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Servine",
+    "number": 496,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Serperior",
+    "number": 497,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Tepig",
+    "number": 498,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Pignite",
+    "number": 499,
+    "types": [
+      "fire",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Emboar",
+    "number": 500,
+    "types": [
+      "fire",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Oshawott",
+    "number": 501,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Dewott",
+    "number": 502,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Samurott",
+    "number": 503,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Patrat",
+    "number": 504,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Watchog",
+    "number": 505,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Lillipup",
+    "number": 506,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Herdier",
+    "number": 507,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Stoutland",
+    "number": 508,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Purrloin",
+    "number": 509,
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Liepard",
+    "number": 510,
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Pansage",
+    "number": 511,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Simisage",
+    "number": 512,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Pansear",
+    "number": 513,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Simisear",
+    "number": 514,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Panpour",
+    "number": 515,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Simipour",
+    "number": 516,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Munna",
+    "number": 517,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Musharna",
+    "number": 518,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Pidove",
+    "number": 519,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Tranquill",
+    "number": 520,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Unfezant",
+    "number": 521,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Blitzle",
+    "number": 522,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Zebstrika",
+    "number": 523,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Roggenrola",
+    "number": 524,
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Boldore",
+    "number": 525,
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Gigalith",
+    "number": 526,
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "Woobat",
+    "number": 527,
+    "types": [
+      "psychic",
+      "flying"
+    ]
+  },
+  {
+    "name": "Swoobat",
+    "number": 528,
+    "types": [
+      "psychic",
+      "flying"
+    ]
+  },
+  {
+    "name": "Drilbur",
+    "number": 529,
+    "types": [
+      "ground"
+    ]
+  },
+  {
+    "name": "Excadrill",
+    "number": 530,
+    "types": [
+      "ground",
+      "steel"
+    ]
+  },
+  {
+    "name": "Audino",
+    "number": 531,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Timburr",
+    "number": 532,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Gurdurr",
+    "number": 533,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Conkeldurr",
+    "number": 534,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Tympole",
+    "number": 535,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Palpitoad",
+    "number": 536,
+    "types": [
+      "water",
+      "ground"
+    ]
+  },
+  {
+    "name": "Seismitoad",
+    "number": 537,
+    "types": [
+      "water",
+      "ground"
+    ]
+  },
+  {
+    "name": "Throh",
+    "number": 538,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Sawk",
+    "number": 539,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Sewaddle",
+    "number": 540,
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Swadloon",
+    "number": 541,
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Leavanny",
+    "number": 542,
+    "types": [
+      "bug",
+      "grass"
+    ]
+  },
+  {
+    "name": "Venipede",
+    "number": 543,
+    "types": [
+      "bug",
+      "poison"
+    ]
+  },
+  {
+    "name": "Whirlipede",
+    "number": 544,
+    "types": [
+      "bug",
+      "poison"
+    ]
+  },
+  {
+    "name": "Scolipede",
+    "number": 545,
+    "types": [
+      "bug",
+      "poison"
+    ]
+  },
+  {
+    "name": "Cottonee",
+    "number": 546,
+    "types": [
+      "grass",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Whimsicott",
+    "number": 547,
+    "types": [
+      "grass",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Petilil",
+    "number": 548,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Lilligant",
+    "number": 549,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Basculin",
+    "number": 550,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Sandile",
+    "number": 551,
+    "types": [
+      "ground",
+      "dark"
+    ]
+  },
+  {
+    "name": "Krokorok",
+    "number": 552,
+    "types": [
+      "ground",
+      "dark"
+    ]
+  },
+  {
+    "name": "Krookodile",
+    "number": 553,
+    "types": [
+      "ground",
+      "dark"
+    ]
+  },
+  {
+    "name": "Darumaka",
+    "number": 554,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Darmanitan",
+    "number": 555,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Maractus",
+    "number": 556,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Dwebble",
+    "number": 557,
+    "types": [
+      "bug",
+      "rock"
+    ]
+  },
+  {
+    "name": "Crustle",
+    "number": 558,
+    "types": [
+      "bug",
+      "rock"
+    ]
+  },
+  {
+    "name": "Scraggy",
+    "number": 559,
+    "types": [
+      "dark",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Scrafty",
+    "number": 560,
+    "types": [
+      "dark",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Sigilyph",
+    "number": 561,
+    "types": [
+      "psychic",
+      "flying"
+    ]
+  },
+  {
+    "name": "Yamask",
+    "number": 562,
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Cofagrigus",
+    "number": 563,
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Tirtouga",
+    "number": 564,
+    "types": [
+      "water",
+      "rock"
+    ]
+  },
+  {
+    "name": "Carracosta",
+    "number": 565,
+    "types": [
+      "water",
+      "rock"
+    ]
+  },
+  {
+    "name": "Archen",
+    "number": 566,
+    "types": [
+      "rock",
+      "flying"
+    ]
+  },
+  {
+    "name": "Archeops",
+    "number": 567,
+    "types": [
+      "rock",
+      "flying"
+    ]
+  },
+  {
+    "name": "Trubbish",
+    "number": 568,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Garbodor",
+    "number": 569,
+    "types": [
+      "poison"
+    ]
+  },
+  {
+    "name": "Zorua",
+    "number": 570,
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Zoroark",
+    "number": 571,
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "Minccino",
+    "number": 572,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Cinccino",
+    "number": 573,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Gothita",
+    "number": 574,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Gothorita",
+    "number": 575,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Gothitelle",
+    "number": 576,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Solosis",
+    "number": 577,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Duosion",
+    "number": 578,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Reuniclus",
+    "number": 579,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Ducklett",
+    "number": 580,
+    "types": [
+      "water",
+      "flying"
+    ]
+  },
+  {
+    "name": "Swanna",
+    "number": 581,
+    "types": [
+      "water",
+      "flying"
+    ]
+  },
+  {
+    "name": "Vanillite",
+    "number": 582,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Vanillish",
+    "number": 583,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Vanilluxe",
+    "number": 584,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Deerling",
+    "number": 585,
+    "types": [
+      "normal",
+      "grass"
+    ]
+  },
+  {
+    "name": "Sawsbuck",
+    "number": 586,
+    "types": [
+      "normal",
+      "grass"
+    ]
+  },
+  {
+    "name": "Emolga",
+    "number": 587,
+    "types": [
+      "electric",
+      "flying"
+    ]
+  },
+  {
+    "name": "Karrablast",
+    "number": 588,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Escavalier",
+    "number": 589,
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Foongus",
+    "number": 590,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Amoonguss",
+    "number": 591,
+    "types": [
+      "grass",
+      "poison"
+    ]
+  },
+  {
+    "name": "Frillish",
+    "number": 592,
+    "types": [
+      "water",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Jellicent",
+    "number": 593,
+    "types": [
+      "water",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Alomomola",
+    "number": 594,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Joltik",
+    "number": 595,
+    "types": [
+      "bug",
+      "electric"
+    ]
+  },
+  {
+    "name": "Galvantula",
+    "number": 596,
+    "types": [
+      "bug",
+      "electric"
+    ]
+  },
+  {
+    "name": "Ferroseed",
+    "number": 597,
+    "types": [
+      "grass",
+      "steel"
+    ]
+  },
+  {
+    "name": "Ferrothorn",
+    "number": 598,
+    "types": [
+      "grass",
+      "steel"
+    ]
+  },
+  {
+    "name": "Klink",
+    "number": 599,
+    "types": [
+      "steel"
+    ]
+  },
+  {
+    "name": "Klang",
+    "number": 600,
+    "types": [
+      "steel"
+    ]
+  },
+  {
+    "name": "Klinklang",
+    "number": 601,
+    "types": [
+      "steel"
+    ]
+  },
+  {
+    "name": "Tynamo",
+    "number": 602,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Eelektrik",
+    "number": 603,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Eelektross",
+    "number": 604,
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Elgyem",
+    "number": 605,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Beheeyem",
+    "number": 606,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Litwick",
+    "number": 607,
+    "types": [
+      "ghost",
+      "fire"
+    ]
+  },
+  {
+    "name": "Lampent",
+    "number": 608,
+    "types": [
+      "ghost",
+      "fire"
+    ]
+  },
+  {
+    "name": "Chandelure",
+    "number": 609,
+    "types": [
+      "ghost",
+      "fire"
+    ]
+  },
+  {
+    "name": "Axew",
+    "number": 610,
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Fraxure",
+    "number": 611,
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Haxorus",
+    "number": 612,
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Cubchoo",
+    "number": 613,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Beartic",
+    "number": 614,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Cryogonal",
+    "number": 615,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Shelmet",
+    "number": 616,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Accelgor",
+    "number": 617,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Stunfisk",
+    "number": 618,
+    "types": [
+      "ground",
+      "electric"
+    ]
+  },
+  {
+    "name": "Mienfoo",
+    "number": 619,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Mienshao",
+    "number": 620,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Druddigon",
+    "number": 621,
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Golett",
+    "number": 622,
+    "types": [
+      "ground",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Golurk",
+    "number": 623,
+    "types": [
+      "ground",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Pawniard",
+    "number": 624,
+    "types": [
+      "dark",
+      "steel"
+    ]
+  },
+  {
+    "name": "Bisharp",
+    "number": 625,
+    "types": [
+      "dark",
+      "steel"
+    ]
+  },
+  {
+    "name": "Bouffalant",
+    "number": 626,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Rufflet",
+    "number": 627,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Braviary",
+    "number": 628,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Vullaby",
+    "number": 629,
+    "types": [
+      "dark",
+      "flying"
+    ]
+  },
+  {
+    "name": "Mandibuzz",
+    "number": 630,
+    "types": [
+      "dark",
+      "flying"
+    ]
+  },
+  {
+    "name": "Heatmor",
+    "number": 631,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Durant",
+    "number": 632,
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Deino",
+    "number": 633,
+    "types": [
+      "dark",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Zweilous",
+    "number": 634,
+    "types": [
+      "dark",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Hydreigon",
+    "number": 635,
+    "types": [
+      "dark",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Larvesta",
+    "number": 636,
+    "types": [
+      "bug",
+      "fire"
+    ]
+  },
+  {
+    "name": "Volcarona",
+    "number": 637,
+    "types": [
+      "bug",
+      "fire"
+    ]
+  },
+  {
+    "name": "Cobalion",
+    "number": 638,
+    "types": [
+      "steel",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Terrakion",
+    "number": 639,
+    "types": [
+      "rock",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Virizion",
+    "number": 640,
+    "types": [
+      "grass",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Tornadus",
+    "number": 641,
+    "types": [
+      "flying"
+    ]
+  },
+  {
+    "name": "Thundurus",
+    "number": 642,
+    "types": [
+      "electric",
+      "flying"
+    ]
+  },
+  {
+    "name": "Reshiram",
+    "number": 643,
+    "types": [
+      "dragon",
+      "fire"
+    ]
+  },
+  {
+    "name": "Zekrom",
+    "number": 644,
+    "types": [
+      "dragon",
+      "electric"
+    ]
+  },
+  {
+    "name": "Landorus",
+    "number": 645,
+    "types": [
+      "ground",
+      "flying"
+    ]
+  },
+  {
+    "name": "Kyurem",
+    "number": 646,
+    "types": [
+      "dragon",
+      "ice"
+    ]
+  },
+  {
+    "name": "Keldeo",
+    "number": 647,
+    "types": [
+      "water",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Meloetta",
+    "number": 648,
+    "types": [
+      "normal",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Genesect",
+    "number": 649,
+    "types": [
+      "bug",
+      "steel"
+    ]
+  },
+  {
+    "name": "Chespin",
+    "number": 650,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Quilladin",
+    "number": 651,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Chesnaught",
+    "number": 652,
+    "types": [
+      "grass",
+      "fighting"
+    ]
+  },
+  {
+    "name": "Fennekin",
+    "number": 653,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Braixen",
+    "number": 654,
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "Delphox",
+    "number": 655,
+    "types": [
+      "fire",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Froakie",
+    "number": 656,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Frogadier",
+    "number": 657,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Greninja",
+    "number": 658,
+    "types": [
+      "water",
+      "dark"
+    ]
+  },
+  {
+    "name": "Bunnelby",
+    "number": 659,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Diggersby",
+    "number": 660,
+    "types": [
+      "normal",
+      "ground"
+    ]
+  },
+  {
+    "name": "Fletchling",
+    "number": 661,
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "Fletchinder",
+    "number": 662,
+    "types": [
+      "fire",
+      "flying"
+    ]
+  },
+  {
+    "name": "Talonflame",
+    "number": 663,
+    "types": [
+      "fire",
+      "flying"
+    ]
+  },
+  {
+    "name": "Scatterbug",
+    "number": 664,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Spewpa",
+    "number": 665,
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "Vivillon",
+    "number": 666,
+    "types": [
+      "bug",
+      "flying"
+    ]
+  },
+  {
+    "name": "Litleo",
+    "number": 667,
+    "types": [
+      "fire",
+      "normal"
+    ]
+  },
+  {
+    "name": "Pyroar",
+    "number": 668,
+    "types": [
+      "fire",
+      "normal"
+    ]
+  },
+  {
+    "name": "Flabébé",
+    "number": 669,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Floette",
+    "number": 670,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Florges",
+    "number": 671,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Skiddo",
+    "number": 672,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Gogoat",
+    "number": 673,
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "Pancham",
+    "number": 674,
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "Pangoro",
+    "number": 675,
+    "types": [
+      "fighting",
+      "dark"
+    ]
+  },
+  {
+    "name": "Furfrou",
+    "number": 676,
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "Espurr",
+    "number": 677,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Meowstic",
+    "number": 678,
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "Honedge",
+    "number": 679,
+    "types": [
+      "steel",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Doublade",
+    "number": 680,
+    "types": [
+      "steel",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Aegislash",
+    "number": 681,
+    "types": [
+      "steel",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Spritzee",
+    "number": 682,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Aromatisse",
+    "number": 683,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Swirlix",
+    "number": 684,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Slurpuff",
+    "number": 685,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Inkay",
+    "number": 686,
+    "types": [
+      "dark",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Malamar",
+    "number": 687,
+    "types": [
+      "dark",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Binacle",
+    "number": 688,
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Barbaracle",
+    "number": 689,
+    "types": [
+      "rock",
+      "water"
+    ]
+  },
+  {
+    "name": "Skrelp",
+    "number": 690,
+    "types": [
+      "poison",
+      "water"
+    ]
+  },
+  {
+    "name": "Dragalge",
+    "number": 691,
+    "types": [
+      "poison",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Clauncher",
+    "number": 692,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Clawitzer",
+    "number": 693,
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "Helioptile",
+    "number": 694,
+    "types": [
+      "electric",
+      "normal"
+    ]
+  },
+  {
+    "name": "Heliolisk",
+    "number": 695,
+    "types": [
+      "electric",
+      "normal"
+    ]
+  },
+  {
+    "name": "Tyrunt",
+    "number": 696,
+    "types": [
+      "rock",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Tyrantrum",
+    "number": 697,
+    "types": [
+      "rock",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Amaura",
+    "number": 698,
+    "types": [
+      "rock",
+      "ice"
+    ]
+  },
+  {
+    "name": "Aurorus",
+    "number": 699,
+    "types": [
+      "rock",
+      "ice"
+    ]
+  },
+  {
+    "name": "Sylveon",
+    "number": 700,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Hawlucha",
+    "number": 701,
+    "types": [
+      "fighting",
+      "flying"
+    ]
+  },
+  {
+    "name": "Dedenne",
+    "number": 702,
+    "types": [
+      "electric",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Carbink",
+    "number": 703,
+    "types": [
+      "rock",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Goomy",
+    "number": 704,
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Sliggoo",
+    "number": 705,
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Goodra",
+    "number": 706,
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Klefki",
+    "number": 707,
+    "types": [
+      "steel",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Phantump",
+    "number": 708,
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Trevenant",
+    "number": 709,
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Pumpkaboo",
+    "number": 710,
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Gourgeist",
+    "number": 711,
+    "types": [
+      "ghost",
+      "grass"
+    ]
+  },
+  {
+    "name": "Bergmite",
+    "number": 712,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Avalugg",
+    "number": 713,
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Noibat",
+    "number": 714,
+    "types": [
+      "flying",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Noivern",
+    "number": 715,
+    "types": [
+      "flying",
+      "dragon"
+    ]
+  },
+  {
+    "name": "Xerneas",
+    "number": 716,
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "Yveltal",
+    "number": 717,
+    "types": [
+      "dark",
+      "flying"
+    ]
+  },
+  {
+    "name": "Zygarde",
+    "number": 718,
+    "types": [
+      "dragon",
+      "ground"
+    ]
+  },
+  {
+    "name": "Diancie",
+    "number": 719,
+    "types": [
+      "rock",
+      "fairy"
+    ]
+  },
+  {
+    "name": "Hoopa",
+    "number": 720,
+    "types": [
+      "psychic",
+      "ghost"
+    ]
+  },
+  {
+    "name": "Volcanion",
+    "number": 721,
+    "types": [
+      "fire",
+      "water"
+    ]
+  }
+]

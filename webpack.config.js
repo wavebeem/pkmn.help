@@ -18,11 +18,17 @@ module.exports = {
   module: {
     loaders: [
       {
+        test: /\.json$/,
+        loader: "json"
+      },
+      {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
         loader: "babel",
         query: {
-          presets: ["es2015", "babili"]
+          presets: isProd
+            ? ["es2015", "babili"]
+            : ["es2015"]
         }
       }
     ]

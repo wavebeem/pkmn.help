@@ -1,10 +1,14 @@
 const Redux = require("redux")
+const PKMN = require("./pkmn.json")
 
 const initialState = {
   tab: 1,
   type0: "normal",
   type1: "normal",
-  type2: "none"
+  type2: "none",
+  search: "",
+  pkmn: PKMN,
+  currentPage: 0,
 }
 
 const table = {
@@ -19,7 +23,24 @@ const table = {
   },
   UpdateType2(state, action) {
     return {type2: action.value}
+  },
+  UpdateSearch(state, action) {
+    const currentPage = 0
+    const search = action.value
+    const pkmn = filterPKMN(search)
+    return {search, pkmn, currentPage}
+  },
+  UpdateCurrentPage(state, action) {
+    return {currentPage: action.value}
   }
+}
+
+function filterPKMN(search) {
+  if (search === "") {
+    return PKMN
+  }
+  const s = search.toLowerCase()
+  return PKMN.filter(p => p.name.toLowerCase().indexOf(s) >= 0)
 }
 
 function update(a, b) {
@@ -27,8 +48,7 @@ function update(a, b) {
 }
 
 function normalize(state) {
-  const type1 = state.type1
-  const type2 = state.type2
+  const {type1, type2} = state
   if (type1 === type2) {
     return update(state, {type1, type2: "none"})
   } else {

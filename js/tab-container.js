@@ -6,8 +6,8 @@ const $ = React.createElement
 function makeTab(props, index, title) {
   const cur = props.current
   const className = classes([
-    "pv3 ph4",
-    "f3",
+    "pv3 ph3 f5 ",
+    "pv3-ns ph4-ns f3-ns",
     "dib",
     "no-outline tab-bottom-focus",
     "b ttu",

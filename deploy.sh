@@ -8,6 +8,7 @@ dev="s3://dev2.mockbrian.com/"
 
 files=(
   "favicon.ico"
+  "top.svg"
   "bundle.js"
   "bundle.min.css"
   "index.html"

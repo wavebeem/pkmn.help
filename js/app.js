@@ -3,6 +3,7 @@ const ReactRedux = require("react-redux")
 const Offense = require("./offense")
 const Defense = require("./defense")
 const TabContainer = require("./tab-container")
+const Dex = require("./dex")
 
 const $ = React.createElement
 
@@ -11,8 +12,9 @@ function App(props) {
     changeTab: props.changeTab,
     current: props.tab,
     items: [
-      {title: "Offense", element: Offense(props)},
-      {title: "Defense", element: Defense(props)},
+      {title: "Offense", element: $(Offense, props)},
+      {title: "Defense", element: $(Defense, props)},
+      {title: "Pokédex", element: $(Dex, props)},
     ],
   })
 }
@@ -42,17 +44,24 @@ function mapDispatchToProps(dispatch) {
         type: "UpdateType2",
         value: type
       })
-    }
+    },
+    updateSearch(search) {
+      dispatch({
+        type: "UpdateSearch",
+        value: search
+      })
+    },
+    updateCurrentPage(page) {
+      dispatch({
+        type: "UpdateCurrentPage",
+        value: page
+      })
+    },
   }
 }
 
 function mapStateToProps(state) {
-  return {
-    tab: state.tab,
-    type0: state.type0,
-    type1: state.type1,
-    type2: state.type2
-  }
+  return state
 }
 
 module.exports = ReactRedux.connect(mapStateToProps, mapDispatchToProps)(App)
