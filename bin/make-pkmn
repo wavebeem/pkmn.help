@@ -7,56 +7,43 @@ OUT_FILE = "js/pkmn.json"
 
 db = SQLite3::Database.new(IN_FILE)
 
-def by_id(pairs)
-  Hash[*pairs.flatten]
-end
+data = db.execute(%{
+  with pokemon_types_text as (
+    select
+      pt.pokemon_id as pokemon_species_id,
+      pt.slot,
+      tn.local_language_id,
+      tn.name
+    from pokemon_types as pt
+      left join type_names as tn on tn.type_id = pt.type_id
+  )
+  select
+    n.pokemon_species_id,
+    n.name,
+    lower(t1.name),
+    lower(t2.name)
+  from pokemon_species_names as n
+    left join pokemon_types_text as t1 on (
+      t1.pokemon_species_id = n.pokemon_species_id and
+      t1.local_language_id = n.local_language_id and
+      t1.slot = 1
+    )
+    left join pokemon_types_text as t2 on (
+      t2.pokemon_species_id = n.pokemon_species_id and
+      t2.local_language_id = n.local_language_id and
+      t2.slot = 2
+    )
+    left join languages as l on l.id = n.local_language_id
+  where l.identifier = 'en'
+  order by n.pokemon_species_id asc
+})
 
-lang_id, = db.execute("
-  select id
-  from languages
-  where identifier = 'en'
-")[0]
-
-pokemon_ids = db.execute("
-  select id
-  from pokemon_species
-  order by id asc
-").flatten
-
-names = by_id db.execute("
-  select pokemon_species_id, name
-  from pokemon_species_names
-  where local_language_id = :lang
-", lang: lang_id)
-
-primary_type_ids = by_id db.execute("
-  select pokemon_id, type_id
-  from pokemon_types
-  where slot = 1
-")
-
-secondary_type_ids = by_id db.execute("
-  select pokemon_id, type_id
-  from pokemon_types
-  where slot = 2
-")
-
-type_names = by_id db.execute("
-  select type_id, name
-  from type_names
-  where local_language_id = :lang
-", lang: lang_id)
-
-dex = pokemon_ids.map {|id|
-  type_1 = type_names[primary_type_ids[id]]
-  type_2 = type_names[secondary_type_ids[id]]
+dex = data.map {|row|
+  number, name, t1, t2 = row
   {
-    name: names[id],
-    number: id,
-    types: [
-      (type_1.downcase rescue nil),
-      (type_2.downcase rescue nil),
-    ].compact
+    name: name,
+    number: number,
+    types: [t1, t2].compact
   }
 }
 
