@@ -2,6 +2,7 @@ const React = require("react")
 const _ = require("lodash")
 const ScrollHelper = require("./scroll-helper")
 const Paginator = require("./paginator")
+const Search = require("./search")
 const classes = require("./classes")
 
 const $ = React.createElement
@@ -49,28 +50,7 @@ function Dex(props) {
     "ph2 mt3",
     "center mw7"
   )
-  const searchInput =
-    $("input", {
-      type: "search",
-      autoComplete: "off",
-      autoCorrect: "off",
-      inputMode: "verbatim",
-      autoCapitalize: "none",
-      className: classes(
-        "f2 f1-l w-100 border-box",
-        "pv2 ph4",
-        "mv4",
-        "chunky-focus",
-        "inset-shadow",
-        "br-pill ba",
-        // "b--black-60 bg-mid-gray white"
-        "b--black-30"
-      ),
-      placeholder: "search",
-      value: search,
-      onChange: event =>
-        updateSearch(event.target.value),
-    })  
+  const searchInput = $(Search, {search, updateSearch}) 
   const mons = $(Paginator, {
     currentPage,
     updatePageNext: () => updateCurrentPage(currentPage + 1),
