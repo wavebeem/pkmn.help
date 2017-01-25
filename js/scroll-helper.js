@@ -33,7 +33,8 @@ class ScrollHelper extends React.Component {
     const shouldHide = isTop || isBottom
     const src = "top.svg"
     const size = 24
-    const onClick = () => {
+    const onClick = event => {
+      event.preventDefault()
       window.scroll({
         top: 0,
         left: 0,
