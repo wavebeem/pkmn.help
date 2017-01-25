@@ -42,7 +42,10 @@ function Search(props) {
     width: 40,
     height: 40,
     onClick: clearSearch,
-    className: "absolute",
+    className: classes(
+      "absolute",
+      {dn: search === ""}
+    ),
     style: {right: 8, top: 8}
   })
   return $("div", {className: "relative mv4"}, icon, input, clear)
