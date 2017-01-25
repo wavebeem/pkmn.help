@@ -43,7 +43,7 @@ function Search(props) {
     height: 40,
     onClick: clearSearch,
     className: classes(
-      "absolute",
+      "absolute pointer",
       {dn: search === ""}
     ),
     style: {right: 8, top: 8}
