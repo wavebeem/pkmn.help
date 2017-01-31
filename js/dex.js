@@ -31,8 +31,8 @@ function makePKMN(p, i) {
   const style = {minHeight: "100px"}
   return $("div", {key: `pkmn-${p.number}`, className, style},
     $("div", {className: "flex-auto f4 f3-m f2-l mv0"},
-      $("h3", {className: "truncate mt0 mb1"}, p.name),
-      $("p", {className: "silver mv0"}, displayNumber)
+      $("h2", {className: "truncate mt0 mb1"}, p.name),
+      $("p", {className: "gray mv0"}, displayNumber)
     ),
     $("div", {}, p.types.map(makeType))
   )

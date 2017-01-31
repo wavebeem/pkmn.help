@@ -41,7 +41,8 @@ class ScrollHelper extends React.Component {
         behavior: "smooth"
       })
     }
-    const img = $("img", {src, width: size, height: size})
+    const alt = "Go to top"
+    const img = $("img", {src, alt, width: size, height: size})
     const className = classes(
       "GoToTop",
       {"o-0": shouldHide}

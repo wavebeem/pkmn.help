@@ -7,6 +7,7 @@ function Search(props) {
   const {updateSearch, search} = props
   const clearSearch = () => updateSearch("")
   const input = $("input", {
+    "aria-label": "search",
     type: "search",
     autoComplete: "off",
     autoCorrect: "off",
@@ -31,6 +32,7 @@ function Search(props) {
       updateSearch(event.target.value),
   })
   const icon = $("img", {
+    role: "presentation",
     src: "search.svg",
     width: 40,
     height: 40,
@@ -38,6 +40,7 @@ function Search(props) {
     style: {left: 12, top: 10}
   })
   const clear = $("img", {
+    role: "presentation",
     src: "clear.svg",
     width: 40,
     height: 40,
