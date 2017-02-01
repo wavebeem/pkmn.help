@@ -54,8 +54,6 @@ function nextButton({updatePageNext}, show) {
 
 function Paginator(props) {
   const {
-    updatePageNext,
-    updatePagePrev,
     currentPage,
     pageSize,
     items,
