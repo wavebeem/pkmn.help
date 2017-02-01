@@ -5,29 +5,40 @@ const classes = require("./classes")
 const $ = React.createElement
 
 const labelClasses = [
-  "db",
-  "f5 f4-l",
+  "db tl",
   "min-width--7em",
-  "pv2 ph2 ma2",
-  "br-pill"
+  "pv2 ph3 mv1",
+  "flex-auto",
+  "truncate",
+  "br2"
 ]
 
-function label(selected, type) {
-  const className = classes(
-    {"white bg-black-50 text-shadow-black": selected},
-    labelClasses
-  )
+function makeCircle(type) {
+  const size = "1em"
+  const className = `type-${type} with-border-color br-pill ba`
+  const style = {
+    boxShadow: "0 0 0 1px white",
+    flexShrink: 0,
+    width: size,
+    height: size,
+  }
+  return $("span", {className, style})
+}
+
+function makeLabel(type) {
+  const className = classes(labelClasses)
   return $("span", {className}, type)
 }
 
 const buttonClasses = [
+  "db w-100",
+  "ba br-pill",
+  "ph3",
+  "b f6 f5-l",
+  "ttu",
+  "flex flex-row items-center justify-center",
   "chunky-focus",
-  "ba bw--2px with-border-color",
-  "w-100",
-  "dib",
-  "ttu b pointer",
-  "pa0",
-  "br-pill"
+  "pointer"
 ]
 
 const classSizing = "dib w-25-l w-50 pa1"
@@ -37,21 +48,23 @@ function TypeSelector(props) {
   const onChange = props.onChange
   const value = props.value
 
-  const makeLabel = type =>
-    label(type === value, type)
-
-  const makeButton = type =>
-    $("button", {
-      className: classes(
-        {"no-box-shadow": type === value},
-        "type-" + type,
-        buttonClasses
-      ),
-      onClick: () => onChange(type)
-    }, makeLabel(type))
+  const makeButton = (value, type) =>
+    $("button",
+      {
+        className: classes(
+          buttonClasses,
+          type === value
+            ? "b--black-20 bg-gray white text-shadow-black"
+            : "b--black-30 bg-white black"
+        ),
+        onClick: () => onChange(type)
+      },
+      makeCircle(type),
+      makeLabel(type)
+    )
 
   const makeWrapper = type =>
-    $("div", {className: classSizing, key: type}, makeButton(type))
+    $("div", {className: classSizing, key: type}, makeButton(value, type))
 
   return $("div", {}, types.map(makeWrapper))
 }

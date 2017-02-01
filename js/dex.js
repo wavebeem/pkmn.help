@@ -50,7 +50,7 @@ function Dex(props) {
     "ph2 mt3",
     "center mw7"
   )
-  const searchInput = $(Search, {search, updateSearch}) 
+  const searchInput = $(Search, {search, updateSearch})
   const mons = $(Paginator, {
     currentPage,
     updatePageNext: () => updateCurrentPage(currentPage + 1),
