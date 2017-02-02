@@ -7,14 +7,14 @@ const $ = React.createElement
 const labelClasses = [
   "db tl",
   "min-width--7em",
-  "pv2 ph3 mv1",
+  "ph3",
   "flex-auto",
   "truncate",
   "br2"
 ]
 
 function makeCircle(type) {
-  const size = "1em"
+  const size = 20
   const className = `type-${type} with-border-color br-pill ba`
   const style = {
     boxShadow: "0 0 0 1px white",
@@ -33,7 +33,7 @@ function makeLabel(type) {
 const buttonClasses = [
   "db w-100",
   "ba br-pill",
-  "ph3",
+  "pa2",
   "b f6 f5-l",
   "ttu",
   "flex flex-row items-center justify-center",
@@ -54,7 +54,7 @@ function TypeSelector(props) {
         className: classes(
           buttonClasses,
           type === value
-            ? "b--black-20 bg-gray white text-shadow-black"
+            ? "b--black-20 bg-gray white text-shadow-black no-box-shadow"
             : "b--black-30 bg-white black"
         ),
         onClick: () => onChange(type)
