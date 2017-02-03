@@ -5,19 +5,19 @@ const classes = require("./classes")
 const $ = React.createElement
 
 const labelClasses = [
-  "db tl",
-  "min-width--7em",
-  "ph3",
+  "tl",
+  "pl2 pr1",
   "flex-auto",
-  "truncate",
-  "br2"
+  "truncate"
 ]
 
+const BUTTON_INNER_HEIGHT = "20px"
+
 function makeCircle(type) {
-  const size = 20
+  const size = BUTTON_INNER_HEIGHT
   const className = `type-${type} with-border-color br-pill ba`
   const style = {
-    boxShadow: "0 0 0 1px white",
+    boxShadow: "0 0 1px 1px white",
     flexShrink: 0,
     width: size,
     height: size,
@@ -27,7 +27,10 @@ function makeCircle(type) {
 
 function makeLabel(type) {
   const className = classes(labelClasses)
-  return $("span", {className}, type)
+  const style = {
+    lineHeight: BUTTON_INNER_HEIGHT
+  }
+  return $("span", {className, style}, type)
 }
 
 const buttonClasses = [
