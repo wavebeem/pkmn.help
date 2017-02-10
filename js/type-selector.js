@@ -13,11 +13,15 @@ const labelClasses = [
 
 const BUTTON_INNER_HEIGHT = "20px"
 
-function makeCircle(type) {
+function makeCircle(type, isFocused) {
   const size = BUTTON_INNER_HEIGHT
-  const className = `type-${type} with-border-color br-pill ba`
+  const className = classes(
+    `type-${type} b--black br-pill ba`,
+    isFocused
+      ? "b--black-70"
+      : "with-border-color"
+  )
   const style = {
-    boxShadow: "0 0 0 1px white",
     flexShrink: 0,
     width: size,
     height: size,
@@ -39,7 +43,6 @@ const buttonClasses = [
   "pa2",
   "b f6 f5-l",
   "ttu",
-  "flex flex-row items-center justify-center",
   "chunky-focus",
   "pointer"
 ]
@@ -62,8 +65,10 @@ function TypeSelector(props) {
         ),
         onClick: () => onChange(type)
       },
-      makeCircle(type),
-      makeLabel(type)
+      $("span", {className: "flex flex-row items-center justify-center"},
+        makeCircle(type, type === value),
+        makeLabel(type)
+      )
     )
 
   const makeWrapper = type =>
