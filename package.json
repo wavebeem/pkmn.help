@@ -6,7 +6,7 @@
     "serve": "http-server -p 4001 -a 127.0.0.1",
     "serve:open": "http-server -p 4001 -a 0.0.0.0",
     "watch:js": "webpack -w",
-    "watch:css": "chokidar 'less/**/*.less' -c 'npm run build:css'",
+    "watch:css": "chokidar --initial 'less/**/*.less' -c 'npm run build:css'",
     "build:ico": "convert favicon-*.png favicon.ico",
     "build:pkmn": "node bin/make-pkmn",
     "build:js": "webpack -p",
