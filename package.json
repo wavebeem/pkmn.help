@@ -1,12 +1,13 @@
 {
   "private": true,
+  "version": "0.0.0",
   "name": "pkmn.help",
   "description": "Pokémon type calculator",
   "scripts": {
     "serve": "http-server -p 4001 -a 127.0.0.1",
     "serve:open": "http-server -p 4001 -a 0.0.0.0",
     "watch:js": "webpack -w",
-    "watch:css": "chokidar 'less/**/*.less' -c 'npm run build:css'",
+    "watch:css": "chokidar --initial 'less/**/*.less' -c 'npm run build:css'",
     "build:ico": "convert favicon-*.png favicon.ico",
     "build:pkmn": "node bin/make-pkmn",
     "build:js": "webpack -p",
@@ -31,6 +32,7 @@
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-preset-babili": "0.0.5",
+    "babel-preset-env": "^1.1.8",
     "babel-preset-es2015": "^6.16.0",
     "chokidar-cli": "^1.2.0",
     "clean-css": "^3.4.20",
@@ -38,7 +40,6 @@
     "http-server": "^0.9.0",
     "json-loader": "^0.5.4",
     "less": "^2.7.1",
-    "pkmn": "^1.0.7",
     "react-addons-perf": "^15.4.2",
     "webpack": "^1.13.2"
   },

@@ -7,6 +7,20 @@ const webpack = require("webpack")
 const isProd = process.argv.indexOf("-p") >= 0
 process.env.NODE_ENV = isProd ? "production" : "development"
 
+const envPreset = [
+  "env",
+  {
+    targets: {
+      browsers: [
+        "last 2 Firefox versions",
+        "last 2 Chrome versions",
+        "last 2 Safari versions",
+        "iOS 10"
+      ]
+    }
+  }
+]
+
 module.exports = {
   entry: [
     path.join(__dirname, "js/main.js")
@@ -27,8 +41,8 @@ module.exports = {
         loader: "babel",
         query: {
           presets: isProd
-            ? ["es2015", "babili"]
-            : ["es2015"]
+            ? ["es2015", "babili", envPreset]
+            : ["es2015", envPreset]
         }
       }
     ]
