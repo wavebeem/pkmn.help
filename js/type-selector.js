@@ -17,7 +17,7 @@ function makeCircle(type) {
   const size = BUTTON_INNER_HEIGHT
   const className = `type-${type} with-border-color br-pill ba`
   const style = {
-    boxShadow: "0 0 1px 1px white",
+    boxShadow: "0 0 0 1px white",
     flexShrink: 0,
     width: size,
     height: size,
