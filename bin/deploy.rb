@@ -1,4 +1,16 @@
 #!/usr/bin/env ruby
+require "optparse"
+require "fileutils"
+
+OPTS = OptParse.getopts "p", "d"
+PROD = OPTS["p"]
+DRY_RUN = OPTS["d"]
+
+if DRY_RUN
+  include FileUtils::DryRun
+else
+  include FileUtils::Verbose
+end
 
 CF_DISTRO = "E3U8PXS6FWX8U8"
 S3_PROD = "s3://pkmn.help/"
@@ -15,9 +27,13 @@ FILES = %W[
 ]
 
 def run(*cmd)
-  system(*cmd).tap do |x|
-    if x.nil?
-      fail "failed to execute: #{cmd}"
+  if DRY_RUN
+    puts cmd.join(" ")
+  else
+    system(*cmd).tap do |x|
+      if x.nil?
+        fail "failed to execute: #{cmd}"
+      end
     end
   end
 end
@@ -49,14 +65,15 @@ end
 def build
   run "npm", "run", "build:js"
   run "npm", "run", "build:css"
-  run "rm", "-rf", "dist"
-  run "mkdir", "dist"
-  run "cp", "-v", *FILES, "dist/"
+  rm_rf "dist"
+  mkdir "dist"
+  cp FILES, "dist/"
 end
 
 build
-Dir.chdir("dist") do
-  if ARGV.include? "-p"
+
+chdir "dist" do
+  if PROD
     release_prod
   else
     release_dev
