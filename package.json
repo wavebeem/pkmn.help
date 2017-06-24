@@ -41,7 +41,7 @@
     "json-loader": "^0.5.4",
     "less": "^2.7.1",
     "react-addons-perf": "^15.4.2",
-    "webpack": "^1.13.2"
+    "webpack": "^3.0.0"
   },
   "dependencies": {
     "lodash": "^4.16.2",
@@ -50,6 +50,7 @@
     "react-redux": "^4.4.5",
     "redux": "^3.6.0",
     "smoothscroll-polyfill": "^0.3.4",
+    "svg-inline-loader": "^0.7.1",
     "tachyons": "^4.5.3"
   }
 }

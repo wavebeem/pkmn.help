@@ -32,13 +32,18 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.json$/,
-        loader: "json"
+        test: /\.svg$/,
+        // For some reason the options object doesn't work here.
+        loader: "svg-inline-loader",
+        options: {
+          removeTags: true,
+          // removingTags: ["title", "desc", "defs", "style"],
+        },
       },
       {
         test: /\.js$/,
         exclude: /(node_modules|bower_components)/,
-        loader: "babel",
+        loader: "babel-loader",
         query: {
           presets: isProd
             ? ["es2015", "babili", envPreset]

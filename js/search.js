@@ -1,5 +1,7 @@
 const React = require("react")
 const classes = require("./classes")
+const svgClear = require("../svg/clear.svg")
+const svgSearch = require("../svg/search.svg")
 
 const $ = React.createElement
 
@@ -31,25 +33,33 @@ function Search(props) {
     onChange: event =>
       updateSearch(event.target.value),
   })
-  const icon = $("img", {
-    role: "presentation",
-    src: "search.svg",
-    width: 40,
-    height: 40,
+  const iconColor = "#888"
+  const icon = $("div", {
     className: "absolute",
-    style: {left: 12, top: 10}
+    style: {
+      fill: iconColor,
+      width: 40,
+      height: 40,
+      left: 12,
+      top: 10
+    },
+    dangerouslySetInnerHTML: {__html: svgSearch}
   })
-  const clear = $("img", {
+  const clear = $("div", {
     role: "presentation",
-    src: "clear.svg",
-    width: 40,
-    height: 40,
     onClick: clearSearch,
     className: classes(
       "absolute pointer",
       {dn: search === ""}
     ),
-    style: {right: 8, top: 8}
+    style: {
+      fill: iconColor,
+      width: 40,
+      height: 40,
+      right: 8,
+      top: 8
+    },
+    dangerouslySetInnerHTML: {__html: svgClear}
   })
   return $("div", {className: "relative mv4"}, icon, input, clear)
 }
