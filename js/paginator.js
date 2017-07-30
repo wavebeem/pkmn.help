@@ -28,9 +28,11 @@ function scrollToTop() {
   })
 }
 
-function prevButton({updatePagePrev}, show) {
+function prevButton(loc, {updatePagePrev}, show) {
   const onClick = () => {
-    scrollToTop()
+    if (loc === "bottom") {
+      scrollToTop()
+    }
     updatePagePrev()
   }
   return $("button", {
@@ -40,9 +42,11 @@ function prevButton({updatePagePrev}, show) {
   }, PREV_TEXT)
 }
 
-function nextButton({updatePageNext}, show) {
+function nextButton(loc, {updatePageNext}, show) {
   const onClick = () => {
-    scrollToTop()
+    if (loc === "bottom") {
+      scrollToTop()
+    }
     updatePageNext()
   }
   return $("button", {
@@ -50,6 +54,13 @@ function nextButton({updatePageNext}, show) {
     disabled: !show,
     className: buttonClass(show)
   }, NEXT_TEXT)
+}
+
+function createPaginationButtons(loc, props, hasPrev, hasNext) {
+  return $("div", {className: "flex"},
+    $("div", {className: "ph1 flex-auto"}, prevButton(loc, props, hasPrev)),
+    $("div", {className: "ph1 flex-auto"}, nextButton(loc, props, hasNext))
+  )
 }
 
 function Paginator(props) {
@@ -65,17 +76,12 @@ function Paginator(props) {
   const hasNext = currentPage < (numPages - 1)
   const i = pageSize * currentPage
   const pageItems = items.slice(i, i + pageSize)
-  const paginationButtons =
-    $("div", {className: "flex"},
-      $("div", {className: "ph1 flex-auto"}, prevButton(props, hasPrev)),
-      $("div", {className: "ph1 flex-auto"}, nextButton(props, hasNext))
-    )
   return $("div", {},
-    paginationButtons,
+    createPaginationButtons("top", props, hasPrev, hasNext),
     pageItems.length === 0
       ? emptyState
       : $("div", {key: `page-${currentPage}`}, pageItems.map(render)),
-    paginationButtons
+    createPaginationButtons("bottom", props, hasPrev, hasNext)
   )
 }
 

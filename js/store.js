@@ -60,7 +60,7 @@ function reducer(state, action) {
   if (table.hasOwnProperty(action.type)) {
     const handler = table[action.type]
     const delta = handler(state, action)
-    return normalize(Object.assign({}, state, delta))
+    return normalize(update(state, delta))
   } else {
     return state
   }

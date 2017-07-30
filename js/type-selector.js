@@ -44,25 +44,27 @@ const buttonClasses = [
   "b f6 f5-l",
   "ttu",
   "chunky-focus",
-  "pointer"
 ]
 
 const classSizing = "dib w-25-l w-50 pa1"
 
 function TypeSelector(props) {
-  const types = props.includeNone ? Data.typesOrNone : Data.types
-  const onChange = props.onChange
-  const value = props.value
-
-  const makeButton = (value, type) =>
-    $("button",
+  const {disabledTypes=[], onChange, value, includeNone} = props
+  const types = includeNone ? Data.typesOrNone : Data.types
+  const styles = {
+    disabled: "b--black-10 bg-near-white o-60",
+    selected: "pointer b--black-20 bg-gray white text-shadow-black no-box-shadow",
+    normal: "pointer b--black-30 bg-white black",
+  }
+  const makeButton = (isDisabled, value, type) => {
+    const style =
+      isDisabled ? styles.disabled :
+      type === value ? styles.selected :
+      styles.normal
+    return $("button",
       {
-        className: classes(
-          buttonClasses,
-          type === value
-            ? "b--black-20 bg-gray white text-shadow-black no-box-shadow"
-            : "b--black-30 bg-white black"
-        ),
+        disabled: isDisabled,
+        className: classes(style, buttonClasses),
         onClick: () => onChange(type)
       },
       $("span", {className: "flex flex-row items-center justify-center"},
@@ -70,10 +72,13 @@ function TypeSelector(props) {
         makeLabel(type)
       )
     )
-
-  const makeWrapper = type =>
-    $("div", {className: classSizing, key: type}, makeButton(value, type))
-
+  }
+  const makeWrapper = type => {
+    const isDisabled = disabledTypes.indexOf(type) >= 0
+    return $("div", {className: classSizing, key: type},
+      makeButton(isDisabled, value, type)
+    )
+  }
   return $("div", {}, types.map(makeWrapper))
 }
 

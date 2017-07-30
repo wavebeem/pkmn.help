@@ -12,12 +12,14 @@ function Defense(props) {
       $(TypeSelector, {
         value: props.type1,
         onChange: props.updateType1,
+        disabledTypes: [],
         includeNone: false
       }),
       $("h2", {className: classH2 + " mt4"}, "choose secondary type"),
       $(TypeSelector, {
         value: props.type2,
         onChange: props.updateType2,
+        disabledTypes: [props.type1],
         includeNone: true
       })
     ),
