@@ -29,15 +29,16 @@ module.exports = {
     path: __dirname,
     filename: "bundle.js"
   },
+  devServer: {
+    contentBase: "./dist"
+  },
   module: {
     loaders: [
       {
         test: /\.svg$/,
-        // For some reason the options object doesn't work here.
         loader: "svg-inline-loader",
         options: {
           removeTags: true,
-          // removingTags: ["title", "desc", "defs", "style"],
         },
       },
       {
