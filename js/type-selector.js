@@ -1,6 +1,6 @@
 const React = require("react")
+const classnames = require("classnames")
 const Data = require("./data")
-const classes = require("./classes")
 
 const $ = React.createElement
 
@@ -15,7 +15,7 @@ const BUTTON_INNER_HEIGHT = "20px"
 
 function makeCircle(type, isFocused) {
   const size = BUTTON_INNER_HEIGHT
-  const className = classes(
+  const className = classnames(
     `type-${type} b--black br-pill ba`,
     isFocused
       ? "b--black-70"
@@ -30,7 +30,7 @@ function makeCircle(type, isFocused) {
 }
 
 function makeLabel(type) {
-  const className = classes(labelClasses)
+  const className = classnames(labelClasses)
   const style = {
     lineHeight: BUTTON_INNER_HEIGHT
   }
@@ -64,7 +64,7 @@ function TypeSelector(props) {
     return $("button",
       {
         disabled: isDisabled,
-        className: classes(style, buttonClasses),
+        className: classnames(style, buttonClasses),
         onClick: () => onChange(type)
       },
       $("span", {className: "flex flex-row items-center justify-center"},

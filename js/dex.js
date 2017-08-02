@@ -1,14 +1,14 @@
 const React = require("react")
+const classnames = require("classnames")
 const _ = require("lodash")
 const ScrollHelper = require("./scroll-helper")
 const Paginator = require("./paginator")
 const Search = require("./search")
-const classes = require("./classes")
 
 const $ = React.createElement
 
 function makeType(t, i) {
-  const className = classes(
+  const className = classnames(
     `type-${t}`,
     "ttu tc db ph1 pv2 f5-ns f6 br2 ba badge with-border-color b",
     {mt1: i > 0}
@@ -20,7 +20,7 @@ function makeType(t, i) {
 }
 
 function makePKMN(p, i) {
-  const className = classes(
+  const className = classnames(
     "b--black-10",
     "ph2 pv3",
     "flex items-center",
@@ -46,7 +46,7 @@ function Dex(props) {
     updateCurrentPage,
     currentPage
   } = props
-  const className = classes(
+  const className = classnames(
     "ph2 mt3",
     "center mw7"
   )

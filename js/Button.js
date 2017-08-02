@@ -1,10 +1,10 @@
 const React = require("react")
-const classes = require("./classes")
+const classnames = require("classnames")
 
 const $ = React.createElement
 
 function buttonClass(disabled) {
-  return classes(
+  return classnames(
     "db w-100",
     "ba br2",
     "pv3 ph4",

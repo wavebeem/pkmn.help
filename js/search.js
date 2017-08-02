@@ -1,5 +1,5 @@
 const React = require("react")
-const classes = require("./classes")
+const classnames = require("classnames")
 const svgClear = require("../svg/clear.svg")
 const svgSearch = require("../svg/search.svg")
 
@@ -15,7 +15,7 @@ function Search(props) {
     autoCorrect: "off",
     inputMode: "verbatim",
     autoCapitalize: "none",
-    className: classes(
+    className: classnames(
       "f2 f1-l w-100 border-box",
       "pv2",
       "chunky-focus",
@@ -48,7 +48,7 @@ function Search(props) {
   const clear = $("div", {
     role: "presentation",
     onClick: clearSearch,
-    className: classes(
+    className: classnames(
       "absolute pointer",
       {dn: search === ""}
     ),

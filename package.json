@@ -44,6 +44,7 @@
     "webpack": "^3.0.0"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "lodash": "^4.16.2",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",

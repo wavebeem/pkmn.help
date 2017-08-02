@@ -1,11 +1,11 @@
 const React = require("react")
-const classes = require("./classes")
+const classnames = require("classnames")
 
 const $ = React.createElement
 
 function makeTab(props, index, title) {
   const cur = props.current
-  const className = classes([
+  const className = classnames([
     "pv3 ph3 f5 w-third",
     "pv3-ns ph4-ns f3-ns",
     "dib",
@@ -28,7 +28,7 @@ function makeTab(props, index, title) {
 }
 
 function makeTabBar(props) {
-  const className = classes([
+  const className = classnames([
     "tc w-100",
     "bg-white",
     "tab-bar-bottom-shadow",

@@ -1,12 +1,12 @@
 const React = require("react")
+const classnames = require("classnames")
 const Data = require("./data")
-const classes = require("./classes")
 
 const $ = React.createElement
 
 function badge(type) {
   const style = {minWidth: "7.5em"}
-  const className = classes(
+  const className = classnames(
     "type-" + type,
     "ba b--black-10",
     "badge",
