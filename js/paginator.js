@@ -1,24 +1,10 @@
 const React = require("react")
-const classes = require("./classes")
+const Button = require("./Button")
 
 const $ = React.createElement
 
 const PREV_TEXT = "◀ prev"
 const NEXT_TEXT = "next ▶"
-
-function buttonClass(show) {
-  return classes(
-    "db w-100",
-    "ba br2",
-    "pv3 ph4",
-    "b f4",
-    "ttu",
-    "chunky-focus",
-    show
-      ? "b--black-30 bg-white pointer"
-      : "b--black-10 black-20 bg-transparent"
-  )
-}
 
 function scrollToTop() {
   window.scroll({
@@ -35,11 +21,8 @@ function prevButton(loc, {updatePagePrev}, show) {
     }
     updatePagePrev()
   }
-  return $("button", {
-    onClick,
-    disabled: !show,
-    className: buttonClass(show)
-  }, PREV_TEXT)
+  const disabled = !show
+  return $(Button, {onClick, disabled}, PREV_TEXT)
 }
 
 function nextButton(loc, {updatePageNext}, show) {
@@ -49,11 +32,8 @@ function nextButton(loc, {updatePageNext}, show) {
     }
     updatePageNext()
   }
-  return $("button", {
-    onClick,
-    disabled: !show,
-    className: buttonClass(show)
-  }, NEXT_TEXT)
+  const disabled = !show
+  return $(Button, {onClick, disabled}, NEXT_TEXT)
 }
 
 function createPaginationButtons(loc, props, hasPrev, hasNext) {
