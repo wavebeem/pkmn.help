@@ -19,7 +19,6 @@ S3_DEV = "s3://dev2.mockbrian.com/"
 FILES = %W[
   favicon.ico
   bundle.js
-  bundle.min.css
   index.html
 ]
 
@@ -60,10 +59,10 @@ def release_dev
 end
 
 def build
-  run "npm", "run", "build:js"
-  run "npm", "run", "build:css"
   rm_rf "dist"
   mkdir "dist"
+  run "npm", "run", "build:js"
+  run "npm", "run", "build:css"
   cp FILES, "dist/"
 end
 
