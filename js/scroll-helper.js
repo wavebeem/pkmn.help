@@ -1,6 +1,6 @@
 const React = require("react")
 const classnames = require("classnames")
-const svgTop = require("../svg/top.svg")
+const ImageTop = require("../svg/top.svg").default
 
 const $ = React.createElement
 
@@ -41,14 +41,7 @@ class ScrollHelper extends React.Component {
         behavior: "smooth"
       })
     }
-    // const alt = "Go to top"
-    const img = $("div", {
-      style: {
-        width: size,
-        height: size,
-      },
-      dangerouslySetInnerHTML: {__html: svgTop}
-    })
+    const img = $(ImageTop, {width: size, height: size})
     const className = classnames(
       "GoToTop",
       {"o-0": shouldHide}

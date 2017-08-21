@@ -1,7 +1,7 @@
 const React = require("react")
 const classnames = require("classnames")
-const svgClear = require("../svg/clear.svg")
-const svgSearch = require("../svg/search.svg")
+const ImageClear = require("../svg/clear.svg").default
+const ImageSearch = require("../svg/search.svg").default
 
 const $ = React.createElement
 
@@ -43,8 +43,7 @@ function Search(props) {
       left: 12,
       top: 10
     },
-    dangerouslySetInnerHTML: {__html: svgSearch}
-  })
+  }, $(ImageSearch))
   const clear = $("div", {
     role: "presentation",
     onClick: clearSearch,
@@ -58,9 +57,8 @@ function Search(props) {
       height: 40,
       right: 8,
       top: 8
-    },
-    dangerouslySetInnerHTML: {__html: svgClear}
-  })
+    }
+  }, $(ImageClear))
   return $("div", {className: "relative mv4"}, icon, input, clear)
 }
 

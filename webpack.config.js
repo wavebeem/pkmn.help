@@ -36,10 +36,19 @@ module.exports = {
     loaders: [
       {
         test: /\.svg$/,
-        loader: "svg-inline-loader",
-        options: {
-          removeTags: true,
-        },
+        use: [
+          {
+            loader: "react-svg-loader",
+            options: {
+              es5: true,
+              svgo: {
+                plugins: [
+                  {removeTags: true}
+                ]
+              }
+            }
+          },
+        ]
       },
       {
         test: /\.js$/,
