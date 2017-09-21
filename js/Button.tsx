@@ -16,9 +16,9 @@ function buttonClass(disabled: boolean) {
 }
 
 interface ButtonProps {
-  onClick: any,
+  onClick: () => void,
   disabled: boolean,
-  children: React.Component[],
+  children: JSX.Element[],
 }
 
 function Button(props: ButtonProps) {
