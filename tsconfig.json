@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "baseUrl": "js/",
+    "sourceMap": true,
+    "strict": true,
+    "module": "es2015",
+    "target": "es5",
+    "jsx": "react"
+  },
+  "include": [
+    "js/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

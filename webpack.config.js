@@ -21,6 +21,40 @@ const envPreset = [
   }
 ]
 
+const svgLoader = {
+  test: /\.svg$/,
+  use: [
+    {
+      loader: "react-svg-loader",
+      options: {
+        es5: true,
+        svgo: {
+          plugins: [
+            {removeTags: true}
+          ]
+        }
+      }
+    },
+  ]
+}
+
+
+const tsLoader = {
+  test: /\.tsx?$/,
+  loader: "awesome-typescript-loader",
+  exclude: /node_modules/,
+}
+const jsLoader = {
+  test: /\.js$/,
+  exclude: /node_modules/,
+  loader: "babel-loader",
+  query: {
+    presets: isProd
+      ? ["es2015", "babili", envPreset]
+      : ["es2015", envPreset]
+  }
+}
+
 module.exports = {
   entry: [
     path.join(__dirname, "js/main.js")
@@ -32,35 +66,11 @@ module.exports = {
   devServer: {
     contentBase: "./dist"
   },
+  resolve: {
+    extensions: [".tsx", ".ts", ".js"]
+  },
   module: {
-    loaders: [
-      {
-        test: /\.svg$/,
-        use: [
-          {
-            loader: "react-svg-loader",
-            options: {
-              es5: true,
-              svgo: {
-                plugins: [
-                  {removeTags: true}
-                ]
-              }
-            }
-          },
-        ]
-      },
-      {
-        test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
-        loader: "babel-loader",
-        query: {
-          presets: isProd
-            ? ["es2015", "babili", envPreset]
-            : ["es2015", envPreset]
-        }
-      }
-    ]
+    loaders: [svgLoader, tsLoader, jsLoader]
   },
   plugins: [
     new webpack.EnvironmentPlugin(["NODE_ENV"]),
