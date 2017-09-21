@@ -7,20 +7,6 @@ const webpack = require("webpack")
 const isProd = process.argv.indexOf("-p") >= 0
 process.env.NODE_ENV = isProd ? "production" : "development"
 
-const envPreset = [
-  "env",
-  {
-    targets: {
-      browsers: [
-        "last 2 Firefox versions",
-        "last 2 Chrome versions",
-        "last 2 Safari versions",
-        "iOS 10"
-      ]
-    }
-  }
-]
-
 const svgLoader = {
   test: /\.svg$/,
   use: [
@@ -40,19 +26,9 @@ const svgLoader = {
 
 
 const tsLoader = {
-  test: /\.tsx?$/,
+  test: /\.[tj]sx?$/,
   loader: "awesome-typescript-loader",
   exclude: /node_modules/,
-}
-const jsLoader = {
-  test: /\.js$/,
-  exclude: /node_modules/,
-  loader: "babel-loader",
-  query: {
-    presets: isProd
-      ? ["es2015", "babili", envPreset]
-      : ["es2015", envPreset]
-  }
 }
 
 module.exports = {
@@ -70,7 +46,7 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"]
   },
   module: {
-    loaders: [svgLoader, tsLoader, jsLoader]
+    loaders: [svgLoader, tsLoader]
   },
   plugins: [
     new webpack.EnvironmentPlugin(["NODE_ENV"]),

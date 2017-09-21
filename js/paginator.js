@@ -1,5 +1,5 @@
 const React = require("react")
-const Button = require("./Button")
+const Button = require("./Button").default
 
 const $ = React.createElement
 
