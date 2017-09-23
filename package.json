@@ -32,8 +32,6 @@
     "chokidar-cli": "^1.2.0",
     "clean-css": "^3.4.20",
     "eslint": "^3.7.0",
-    "http-server": "^0.9.0",
-    "json-loader": "^0.5.4",
     "less": "^2.7.1",
     "react-addons-perf": "^15.4.2",
     "react-svg-loader": "^1.1.1",
