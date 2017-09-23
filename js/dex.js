@@ -1,7 +1,7 @@
 const React = require("react")
 const classnames = require("classnames")
 const _ = require("lodash")
-const ScrollHelper = require("./scroll-helper")
+const ScrollHelper = require("./ScrollHelper").default
 const Paginator = require("./paginator")
 const Search = require("./search")
 
