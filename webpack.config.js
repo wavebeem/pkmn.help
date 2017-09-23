@@ -24,7 +24,6 @@ const svgLoader = {
   ]
 }
 
-
 const tsLoader = {
   test: /\.[tj]sx?$/,
   loader: "awesome-typescript-loader",

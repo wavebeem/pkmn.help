@@ -2,6 +2,8 @@ const React = require("react")
 const classnames = require("classnames")
 const Data = require("./data")
 
+const {Effectiveness} = Data
+
 const $ = React.createElement
 
 function badge(type) {
@@ -20,7 +22,7 @@ function badge(type) {
 }
 
 function section(title, info) {
-  if (!info) {
+  if (!info || info.length === 0) {
     return null
   }
   return $("div", {},
@@ -29,28 +31,25 @@ function section(title, info) {
   )
 }
 
+function renderMatchups(matchups) {
+  return $("div", {className: "tc"},
+    section("takes 4×", matchups.typesFor(Effectiveness.QUADRUPLE)),
+    section("takes 2×", matchups.typesFor(Effectiveness.DOUBLE)),
+    section("takes 1×", matchups.typesFor(Effectiveness.REGULAR)),
+    section("takes ½×", matchups.typesFor(Effectiveness.HALF)),
+    section("takes ¼×", matchups.typesFor(Effectiveness.QUARTER)),
+    section("takes 0×", matchups.typesFor(Effectiveness.ZERO))
+  )
+}
+
 function Defense(props) {
   const matchups = Data.defensiveMatchups(props.type1, props.type2)
-  return $("div", {className: "tc"},
-    section("takes 4×", matchups.quadruple),
-    section("takes 2×", matchups.double),
-    section("takes 1×", matchups.normal),
-    section("takes ½×", matchups.half),
-    section("takes ¼×", matchups.quarter),
-    section("takes 0×", matchups.zero)
-  )
+  return renderMatchups(matchups)
 }
 
 function Offense(props) {
   const matchups = Data.offensiveMatchups(props.type)
-  return $("div", {className: "tc"},
-    section("deals 4×", matchups.quadruple),
-    section("deals 2×", matchups.double),
-    section("deals 1×", matchups.normal),
-    section("deals ½×", matchups.half),
-    section("deals ¼×", matchups.quarter),
-    section("deals 0×", matchups.zero)
-  )
+  return renderMatchups(matchups)
 }
 
 exports.Defense = Defense
