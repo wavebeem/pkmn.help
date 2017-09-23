@@ -6,13 +6,13 @@ import * as SmoothScroll from "smoothscroll-polyfill";
 import * as store from "./store";
 import * as App from "./app";
 
-SmoothScroll.polyfill()
+SmoothScroll.polyfill();
 
 // window.Perf = require("react-addons-perf");
 // console.log(window.Perf);
 
 window.addEventListener("DOMContentLoaded", () => {
-  const root = document.getElementById("react-root")
+  const root = document.getElementById("react-root");
   const component = <Provider store={store}><App /></Provider>;
-  render(component, root)
-}, false)
+  render(component, root);
+}, false);
