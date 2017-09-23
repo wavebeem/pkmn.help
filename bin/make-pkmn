@@ -3,7 +3,7 @@ require "sqlite3"
 require "json"
 
 IN_FILE = "veekun-pokedex.sqlite"
-OUT_FILE = "js/pkmn.json"
+OUT_FILE = "js/data-pkmn.json"
 
 db = SQLite3::Database.new(IN_FILE)
 

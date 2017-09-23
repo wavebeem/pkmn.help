@@ -1,5 +1,6 @@
 const Redux = require("redux")
-const PKMN = require("./pkmn.json")
+
+const AllPokemon = require("./pkmn").AllPokemon
 
 const initialState = {
   tab: 1,
@@ -7,7 +8,7 @@ const initialState = {
   type1: "normal",
   type2: "none",
   search: "",
-  pkmn: PKMN,
+  pkmn: AllPokemon,
   currentPage: 0,
 }
 
@@ -37,10 +38,10 @@ const table = {
 
 function filterPKMN(search) {
   if (search === "") {
-    return PKMN
+    return AllPokemon
   }
   const s = search.toLowerCase()
-  return PKMN.filter(p => p.name.toLowerCase().indexOf(s) >= 0)
+  return AllPokemon.filter(p => p.name.toLowerCase().indexOf(s) >= 0)
 }
 
 function update(a, b) {
