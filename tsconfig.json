@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "forceConsistentCasingInFileNames": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
     "allowJs": true,
     "baseUrl": "js/",
     "sourceMap": true,
