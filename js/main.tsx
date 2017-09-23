@@ -3,7 +3,7 @@ import {render} from "react-dom";
 import {Provider} from "react-redux";
 import * as SmoothScroll from "smoothscroll-polyfill";
 
-import * as store from "./store";
+import store from "./store";
 import * as App from "./app";
 
 SmoothScroll.polyfill();
