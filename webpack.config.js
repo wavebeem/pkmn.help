@@ -32,7 +32,7 @@ const tsLoader = {
 
 module.exports = {
   entry: [
-    path.join(__dirname, "js/main.js")
+    path.join(__dirname, "js/main.tsx")
   ],
   output: {
     path: __dirname,

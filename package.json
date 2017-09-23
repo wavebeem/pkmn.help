@@ -47,6 +47,8 @@
     "@types/lodash": "^4.14.74",
     "@types/react": "^16.0.5",
     "@types/react-dom": "^15.5.4",
+    "@types/react-redux": "^5.0.9",
+    "@types/smoothscroll-polyfill": "^0.3.0",
     "classnames": "^2.2.5",
     "lodash": "^4.16.2",
     "react": "^15.3.2",
