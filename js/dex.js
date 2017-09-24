@@ -2,8 +2,8 @@ const React = require("react")
 const classnames = require("classnames")
 const _ = require("lodash")
 const ScrollHelper = require("./ScrollHelper").default
-const Paginator = require("./paginator")
-const Search = require("./search")
+const Paginator = require("./Paginator").default
+const Search = require("./Search").default
 
 const $ = React.createElement
 
