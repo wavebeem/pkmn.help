@@ -1,6 +1,6 @@
 const React = require("react")
 const TypeSelector = require("./type-selector")
-const Matchups = require("./matchups")
+const Matchups = require("./Matchups")
 
 const $ = React.createElement
 

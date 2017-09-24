@@ -98,19 +98,19 @@ const pairs =
 // TODO: Types seem wrong here
 const table = _.fromPairs(pairs);
 
-function matchupFor(ta1: Type, ta2: Type, tb: Type): Matchup {
+function matchupFor(ta1: Type, ta2: Type, tb: Type) {
   const x1 = table[keyForTypes(tb, ta1)];
   // Don't allow bogus type combinations, such as Fire/Fire or Fire/None
   const x2 = (ta1 !== ta2 && ta2 !== Type.NONE)
     ? table[keyForTypes(tb, ta2)]
     : 1
   const x3 = x1 * x2;
-  if (x3 === 4) { return new Matchup(tb, Effectiveness.QUADRUPLE); }
-  if (x3 === 2) { return new Matchup(tb, Effectiveness.DOUBLE); }
-  if (x3 === 1) { return new Matchup(tb, Effectiveness.REGULAR); }
-  if (x3 === 0.5) { return new Matchup(tb, Effectiveness.HALF); }
-  if (x3 === 0.25) { return new Matchup(tb, Effectiveness.QUARTER); }
-  if (x3 === 0) { return new Matchup(tb, Effectiveness.ZERO); }
+  if (x3 === 4) { return Effectiveness.QUADRUPLE; }
+  if (x3 === 2) { return Effectiveness.DOUBLE; }
+  if (x3 === 1) { return Effectiveness.REGULAR; }
+  if (x3 === 0.5) { return Effectiveness.HALF; }
+  if (x3 === 0.25) { return Effectiveness.QUARTER; }
+  if (x3 === 0) { return Effectiveness.ZERO; }
   throw new Error();
 }
 
@@ -131,12 +131,19 @@ class GroupedMatchups {
 }
 
 function offensiveMatchups(type: Type) {
-  const matchups = _.map(types, t => matchupFor(t, Type.NONE, type));
+  const matchups = _.map(types, t => {
+    const eff = matchupFor(t, Type.NONE, type);
+    return new Matchup(t, eff);
+  });
+  debugger;
   return new GroupedMatchups(matchups);
 }
 
 function defensiveMatchups(t1: Type, t2: Type) {
-  const matchups = _.map(types, t => matchupFor(t1, t2, t));
+  const matchups = _.map(types, t => {
+    const eff = matchupFor(t1, t2, t);
+    return new Matchup(t, eff);
+  });
   return new GroupedMatchups(matchups);
 }
 
