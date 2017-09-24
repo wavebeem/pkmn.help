@@ -1,7 +1,7 @@
 import * as React from "react";
 
 import {Type} from "./data";
-import * as TypeSelector from "./type-selector";
+import TypeSelector from "./TypeSelector";
 import * as Matchups from "./Matchups";
 
 interface OffenseProps {

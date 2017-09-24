@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import * as TypeSelector from "./type-selector";
+import TypeSelector from "./TypeSelector";
 import * as Matchups from "./Matchups";
 import {Type} from "./data";
 
