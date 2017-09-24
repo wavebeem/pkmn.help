@@ -1,6 +1,6 @@
 const React = require("react")
 const ReactRedux = require("react-redux")
-const Offense = require("./offense")
+const Offense = require("./Offense").default
 const Defense = require("./defense")
 const TabContainer = require("./tab-container")
 const Dex = require("./dex")
