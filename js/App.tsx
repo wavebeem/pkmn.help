@@ -3,7 +3,7 @@ import * as Redux from "redux";
 import {connect} from "react-redux";
 
 import Offense from "./Offense";
-import * as Defense from "./defense";
+import Defense from "./defense";
 import * as Dex from "./dex";
 import {TabContainer, TabItem} from "./Tab";
 import {State} from "./store";
