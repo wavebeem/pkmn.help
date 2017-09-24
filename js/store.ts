@@ -91,3 +91,6 @@ const dte = (window as any).devToolsExtension;
 const store = Redux.createStore(reducer, initialState, dte && dte());
 
 export default store;
+export {
+  State,
+};

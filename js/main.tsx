@@ -4,9 +4,11 @@ import {Provider} from "react-redux";
 import * as SmoothScroll from "smoothscroll-polyfill";
 
 import store from "./store";
-import * as App from "./app";
+import App from "./App";
 
 SmoothScroll.polyfill();
+
+App
 
 // window.Perf = require("react-addons-perf");
 // console.log(window.Perf);
