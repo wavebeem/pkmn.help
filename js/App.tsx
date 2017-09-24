@@ -4,7 +4,7 @@ import {connect} from "react-redux";
 
 import Offense from "./Offense";
 import Defense from "./defense";
-import * as Dex from "./dex";
+import Dex from "./Dex";
 import {TabContainer, TabItem} from "./Tab";
 import {State} from "./store";
 import {Type} from "./data";
