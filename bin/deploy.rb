@@ -61,8 +61,8 @@ end
 def build
   rm_rf "dist"
   mkdir "dist"
-  run "npm", "run", "build:js"
-  run "npm", "run", "build:css"
+  run "npm", "run", "-s", "build:js"
+  run "npm", "run", "-s", "build:css"
   cp FILES, "dist/"
 end
 
