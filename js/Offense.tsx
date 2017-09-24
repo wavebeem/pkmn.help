@@ -21,7 +21,7 @@ function Offense(props: OffenseProps) {
           onChange={updateType0}
           includeNone={false}
         />
-      </div>,
+      </div>
       <div className="dib w-50-ns v-top pl3-ns mt4-ns">
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups.Offense type={type0} />

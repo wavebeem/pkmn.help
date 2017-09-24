@@ -2,21 +2,17 @@ const React = require("react")
 const ReactRedux = require("react-redux")
 const Offense = require("./Offense").default
 const Defense = require("./defense")
-const TabContainer = require("./tab-container")
+const {TabContainer, TabItem} = require("./Tab")
 const Dex = require("./dex")
 
 const $ = React.createElement
 
 function App(props) {
-  return $(TabContainer, {
-    changeTab: props.changeTab,
-    current: props.tab,
-    items: [
-      {title: "Offense", element: $(Offense, props)},
-      {title: "Defense", element: $(Defense, props)},
-      {title: "Pokédex", element: $(Dex, props)},
-    ],
-  })
+  return $(TabContainer, {changeTab: props.changeTab, current: props.tab},
+    $(TabItem, {title: "Offense"}, $(Offense, props)),
+    $(TabItem, {title: "Defense"}, $(Defense, props)),
+    $(TabItem, {title: "Pokédex"}, $(Dex, props))
+  )
 }
 
 function mapDispatchToProps(dispatch) {
