@@ -8,8 +8,6 @@ import App from "./App";
 
 SmoothScroll.polyfill();
 
-App
-
 // window.Perf = require("react-addons-perf");
 // console.log(window.Perf);
 
