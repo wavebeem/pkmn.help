@@ -135,7 +135,6 @@ function offensiveMatchups(type: Type) {
     const eff = matchupFor(t, Type.NONE, type);
     return new Matchup(t, eff);
   });
-  debugger;
   return new GroupedMatchups(matchups);
 }
 
