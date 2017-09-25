@@ -1,11 +1,9 @@
-/* eslint-env node */
-
-const path = require("path")
-const webpack = require("webpack")
+const path = require("path");
+const webpack = require("webpack");
 
 // Hack to put the NODE_ENV to production when we ask for minified code.
-const isProd = process.argv.indexOf("-p") >= 0
-process.env.NODE_ENV = isProd ? "production" : "development"
+const isProd = process.argv.indexOf("-p") >= 0;
+process.env.NODE_ENV = isProd ? "production" : "development";
 
 const svgLoader = {
   test: /\.svg$/,
@@ -22,9 +20,10 @@ const svgLoader = {
       }
     },
   ]
-}
+};
 
 const tsLoader = {
+  // Not actually loading any JS files any more, but whatever
   test: /\.[tj]sx?$/,
   loader: "awesome-typescript-loader",
   exclude: /node_modules/,
@@ -38,6 +37,7 @@ module.exports = {
     path: __dirname,
     filename: "bundle.js"
   },
+  devtool: "source-map",
   devServer: {
     contentBase: "./dist"
   },
@@ -50,4 +50,4 @@ module.exports = {
   plugins: [
     new webpack.EnvironmentPlugin(["NODE_ENV"]),
   ]
-}
+};

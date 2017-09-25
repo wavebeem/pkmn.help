@@ -1,6 +1,6 @@
 import * as _ from "lodash";
 
-enum Type {
+export enum Type {
   NORMAL = "normal",
   FIGHTING = "fighting",
   FLYING = "flying",
@@ -22,7 +22,7 @@ enum Type {
   NONE = "none",
 }
 
-const types = [
+export const types = [
   Type.NORMAL,
   Type.FIGHTING,
   Type.FLYING,
@@ -43,9 +43,9 @@ const types = [
   Type.FAIRY,
 ];
 
-const typesOrNone = [...types, Type.NONE];
+export const typesOrNone = [...types, Type.NONE];
 
-enum Effectiveness {
+export enum Effectiveness {
   QUADRUPLE = 4,
   DOUBLE = 2,
   REGULAR = 1,
@@ -114,14 +114,14 @@ function matchupFor(ta1: Type, ta2: Type, tb: Type) {
   throw new Error();
 }
 
-class Matchup {
+export class Matchup {
   constructor(
     public type: Type,
     public effectiveness: Effectiveness,
   ) {}
 }
 
-class GroupedMatchups {
+export class GroupedMatchups {
   constructor(public matchups: Matchup[]) {}
 
   typesFor(effectivenes: Effectiveness): Type[] {
@@ -130,7 +130,7 @@ class GroupedMatchups {
   }
 }
 
-function offensiveMatchups(type: Type) {
+export function offensiveMatchups(type: Type) {
   const matchups = _.map(types, t => {
     const eff = matchupFor(t, Type.NONE, type);
     return new Matchup(t, eff);
@@ -138,21 +138,10 @@ function offensiveMatchups(type: Type) {
   return new GroupedMatchups(matchups);
 }
 
-function defensiveMatchups(t1: Type, t2: Type) {
+export function defensiveMatchups(t1: Type, t2: Type) {
   const matchups = _.map(types, t => {
     const eff = matchupFor(t1, t2, t);
     return new Matchup(t, eff);
   });
   return new GroupedMatchups(matchups);
 }
-
-export {
-  Type,
-  Effectiveness,
-  Matchup,
-  GroupedMatchups,
-  offensiveMatchups,
-  defensiveMatchups,
-  typesOrNone,
-  types,
-};

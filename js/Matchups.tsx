@@ -21,7 +21,6 @@ function badge(type: Type) {
     "ma--2px",
     "ttu tc b f5 f4-l"
   );
-  console.warn(type);
   return (
     <div
       key={type}
@@ -56,30 +55,23 @@ function renderMatchups(matchups: GroupedMatchups) {
   );
 }
 
-interface DefenseProps {
+export interface DefenseProps {
   type1: Type,
   type2: Type,
 }
 
-function Defense(props: DefenseProps) {
+export function Defense(props: DefenseProps) {
   const {type1, type2} = props;
   const matchups = defensiveMatchups(type1, type2);
   return renderMatchups(matchups);
 }
 
-interface OffenseProps {
+export interface OffenseProps {
   type: Type
 }
 
-function Offense(props: OffenseProps) {
+export function Offense(props: OffenseProps) {
   const {type} = props;
   const matchups = offensiveMatchups(type);
   return renderMatchups(matchups);
 }
-
-export {
-  Defense,
-  DefenseProps,
-  Offense,
-  OffenseProps,
-};

@@ -6,7 +6,7 @@ import Offense from "./Offense";
 import Defense from "./Defense";
 import Dex from "./Dex";
 import {TabContainer, TabItem} from "./Tab";
-import {State} from "./store";
+import {ActionTypes, State} from "./store";
 import {Type} from "./data";
 
 interface AppPropMethods {
@@ -35,41 +35,41 @@ function mapDispatchToProps(dispatch: Redux.Dispatch<State>): AppPropMethods {
   return {
     changeTab(tab: number) {
       dispatch({
-        type: "ChangeTab",
+        type: ActionTypes.CHANGE_TAB,
         value: tab,
-      })
+      });
     },
     updateType0(type: Type) {
       dispatch({
-        type: "UpdateType0",
+        type: ActionTypes.UPDATE_TYPE0,
         value: type,
-      })
+      });
     },
     updateType1(type: Type) {
       dispatch({
-        type: "UpdateType1",
+        type: ActionTypes.UPDATE_TYPE1,
         value: type,
-      })
+      });
     },
     updateType2(type: Type) {
       dispatch({
-        type: "UpdateType2",
+        type: ActionTypes.UPDATE_TYPE2,
         value: type,
-      })
+      });
     },
     updateSearch(search: string) {
       dispatch({
-        type: "UpdateSearch",
+        type: ActionTypes.UPDATE_SEARCH,
         value: search,
-      })
+      });
     },
     updateCurrentPage(page: number) {
       dispatch({
-        type: "UpdateCurrentPage",
+        type: ActionTypes.UPDATE_CURRENT_PAGE,
         value: page,
-      })
+      });
     },
-  }
+  };
 }
 
 function mapStateToProps(state: State) {

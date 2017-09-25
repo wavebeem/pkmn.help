@@ -3,7 +3,7 @@ import * as Redux from "redux";
 import {Type} from "./data";
 import {Pokemon, AllPokemon} from "./pkmn";
 
-interface State {
+export interface State {
   tab: number,
   type0: Type,
   type1: Type,
@@ -23,41 +23,52 @@ const initialState: State = {
   currentPage: 0,
 }
 
-interface Action extends Redux.Action {
-  value: any,
+export enum ActionTypes {
+  CHANGE_TAB = "pkmn/CHANGE_TAB",
+  UPDATE_TYPE0 = "pkmn/UPDATE_TYPE0",
+  UPDATE_TYPE1 = "pkmn/UPDATE_TYPE1",
+  UPDATE_TYPE2 = "pkmn/UPDATE_TYPE2",
+  UPDATE_CURRENT_PAGE = "pkmn/UPDATE_CURRENT_PAGE",
+  UPDATE_SEARCH = "pkmn/UPDATE_SEARCH",
 }
 
-interface Reducer {
-  (state: State, action: Action): any
+interface ActionChangeTab {
+  type: ActionTypes.CHANGE_TAB;
+  value: number;
 }
 
-interface DispatchTable {
-  [type: string]: Reducer
+interface ActionUpdateType0 {
+  type: ActionTypes.UPDATE_TYPE0;
+  value: Type;
 }
 
-const table: DispatchTable = {
-  ChangeTab(_state, {value}: Action) {
-    return {tab: value};
-  },
-  UpdateType0(_state, {value}: Action) {
-    return {type0: value};
-  },
-  UpdateType1(_state, {value}: Action) {
-    return {type1: value};
-  },
-  UpdateType2(_state, {value}: Action) {
-    return {type2: value};
-  },
-  UpdateCurrentPage(_state, {value}: Action) {
-    return {currentPage: value};
-  },
-  UpdateSearch(_state, {value}: Action) {
-    const currentPage = 0;
-    const search = value;
-    const pkmn = filterPKMN(search);
-    return {search, pkmn, currentPage};
-  },
+interface ActionUpdateType1 {
+  type: ActionTypes.UPDATE_TYPE1;
+  value: Type;
 }
+
+interface ActionUpdateType2 {
+  type: ActionTypes.UPDATE_TYPE2;
+  value: Type;
+}
+
+interface ActionUpdateCurrentPage {
+  type: ActionTypes.UPDATE_CURRENT_PAGE;
+  value: number;
+}
+
+interface ActionUpdateSearch {
+  type: ActionTypes.UPDATE_SEARCH;
+  value: string;
+}
+
+type Action =
+  | ActionChangeTab
+  | ActionUpdateType0
+  | ActionUpdateType1
+  | ActionUpdateType2
+  | ActionUpdateCurrentPage
+  | ActionUpdateSearch;
 
 function filterPKMN(search: string) {
   if (search === "") {
@@ -76,21 +87,44 @@ function normalize(state: State) {
   }
 }
 
-function reducer(state: State, action: Action) {
-  if (table.hasOwnProperty(action.type)) {
-    const handler = table[action.type];
-    const delta = handler(state, action);
-    return normalize({...state, ...delta});
-  } else {
-    return state;
+function reducerHelper(action: Action) {
+  switch (action.type) {
+    case ActionTypes.CHANGE_TAB: {
+      return {tab: action.value};
+    }
+    case ActionTypes.UPDATE_TYPE0: {
+      return {type0: action.value};
+    }
+    case ActionTypes.UPDATE_TYPE1: {
+      return {type1: action.value};
+    }
+    case ActionTypes.UPDATE_TYPE2: {
+      return {type2: action.value};
+    }
+    case ActionTypes.UPDATE_CURRENT_PAGE: {
+      return {currentPage: action.value};
+    }
+    case ActionTypes.UPDATE_SEARCH: {
+      const currentPage = 0;
+      const search = action.value;
+      const pkmn = filterPKMN(search);
+      return {search, pkmn, currentPage};
+    }
+    default: {
+      // TypeScript is trying to be helpful here... but this is OK
+      const type = (action as Action).type;
+      console.warn(`unhandled action type: ${type}`);
+      return {};
+    }
   }
+}
+
+function reducer(state: State, action: Action) {
+  const delta = reducerHelper(action);
+  return normalize({...state, ...delta});
 }
 
 // Redux DevTools for Chrome
 const dte = (window as any).devToolsExtension;
-const store = Redux.createStore(reducer, initialState, dte && dte());
 
-export default store;
-export {
-  State,
-};
+export default Redux.createStore(reducer, initialState, dte && dte());

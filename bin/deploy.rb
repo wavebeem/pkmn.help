@@ -19,6 +19,7 @@ S3_DEV = "s3://dev2.mockbrian.com/"
 FILES = %W[
   favicon.ico
   bundle.js
+  bundle.js.map
   index.html
 ]
 

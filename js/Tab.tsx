@@ -52,7 +52,7 @@ interface TabItemProps {
   children: any,
 }
 
-function TabItem(props: TabItemProps) {
+export function TabItem(props: TabItemProps) {
   return <div>{props.children}</div>;
 }
 
@@ -62,7 +62,7 @@ interface TabContainerProps {
   children: any,
 }
 
-function TabContainer(props: TabContainerProps) {
+export function TabContainer(props: TabContainerProps) {
   const {children, current} = props;
   return (
     <div>
@@ -71,8 +71,3 @@ function TabContainer(props: TabContainerProps) {
     </div>
   );
 }
-
-export {
-  TabContainer,
-  TabItem,
-};

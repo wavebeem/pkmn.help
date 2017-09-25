@@ -1,15 +1,10 @@
 import {Type} from "./data";
 import data from "./data-pkmn.json";
 
-interface Pokemon {
+export interface Pokemon {
   name: string,
   number: number,
   types: Type[],
 }
 
-const AllPokemon: Pokemon[] = data;
-
-export {
-  Pokemon,
-  AllPokemon,
-}
+export const AllPokemon: Pokemon[] = data;
