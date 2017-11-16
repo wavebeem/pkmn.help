@@ -13,26 +13,22 @@ const svgLoader = {
       options: {
         es5: true,
         svgo: {
-          plugins: [
-            {removeTags: true}
-          ]
+          plugins: [{ removeTags: true }]
         }
       }
-    },
+    }
   ]
 };
 
 const tsLoader = {
   // Not actually loading any JS files any more, but whatever
   test: /\.[tj]sx?$/,
-  loader: "awesome-typescript-loader",
-  exclude: /node_modules/,
-}
+  loader: "ts-loader",
+  exclude: /node_modules/
+};
 
 module.exports = {
-  entry: [
-    path.join(__dirname, "js/main.tsx")
-  ],
+  entry: [path.join(__dirname, "js/main.tsx")],
   output: {
     path: __dirname,
     filename: "bundle.js"
@@ -47,7 +43,5 @@ module.exports = {
   module: {
     loaders: [svgLoader, tsLoader]
   },
-  plugins: [
-    new webpack.EnvironmentPlugin(["NODE_ENV"]),
-  ]
+  plugins: [new webpack.EnvironmentPlugin(["NODE_ENV"])]
 };
