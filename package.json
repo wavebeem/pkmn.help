@@ -11,7 +11,7 @@
     "build:pkmn": "node bin/make-pkmn",
     "build:js": "webpack -p",
     "build:css": "lessc less/style.less bundle.css",
-    "postbuild:css": "cleancss bundle.css -o dist/bundle.min.css",
+    "postbuild:css": "cleancss bundle.css -o bundle.min.css",
     "lint:fix": "eslint --fix .",
     "lint": "eslint .",
     "test": "npm run lint"

@@ -35,7 +35,9 @@ module.exports = {
   },
   devtool: "source-map",
   devServer: {
-    contentBase: "./dist"
+    contentBase: __dirname,
+    compress: true,
+    disableHostCheck: Boolean(process.env.C9_PID)
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
