@@ -6,11 +6,11 @@ import {
   Effectiveness,
   GroupedMatchups,
   defensiveMatchups,
-  offensiveMatchups,
+  offensiveMatchups
 } from "./data";
 
 function badge(type: Type) {
-  const style = {minWidth: "7.5em"};
+  const style = { minWidth: "7.5em" };
   const className = classnames(
     `type-${type}`,
     "ba b--black-10",
@@ -22,11 +22,9 @@ function badge(type: Type) {
     "ttu tc b f5 f4-l"
   );
   return (
-    <div
-      key={type}
-      className={className}
-      style={style}
-    >{type}</div>
+    <div key={type} className={className} style={style}>
+      {type}
+    </div>
   );
 }
 
@@ -56,22 +54,22 @@ function renderMatchups(matchups: GroupedMatchups) {
 }
 
 export interface DefenseProps {
-  type1: Type,
-  type2: Type,
+  type1: Type;
+  type2: Type;
 }
 
 export function Defense(props: DefenseProps) {
-  const {type1, type2} = props;
+  const { type1, type2 } = props;
   const matchups = defensiveMatchups(type1, type2);
   return renderMatchups(matchups);
 }
 
 export interface OffenseProps {
-  type: Type
+  type: Type;
 }
 
 export function Offense(props: OffenseProps) {
-  const {type} = props;
+  const { type } = props;
   const matchups = offensiveMatchups(type);
   return renderMatchups(matchups);
 }

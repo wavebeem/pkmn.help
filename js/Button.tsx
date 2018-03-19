@@ -12,24 +12,22 @@ function buttonClass(disabled: boolean) {
     disabled
       ? "b--black-10 black-20 bg-transparent"
       : "b--black-30 bg-white pointer"
-  )
+  );
 }
 
 interface ButtonProps {
-  onClick: () => void,
-  disabled: boolean,
-  children: any,
+  onClick: () => void;
+  disabled: boolean;
+  children: any;
 }
 
 function Button(props: ButtonProps) {
-  const {onClick, disabled, children} = props
-  const className = buttonClass(disabled)
+  const { onClick, disabled, children } = props;
+  const className = buttonClass(disabled);
   return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      className={className}
-    >{...children}</button>
+    <button onClick={onClick} disabled={disabled} className={className}>
+      {children}
+    </button>
   );
 }
 

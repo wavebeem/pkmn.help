@@ -5,8 +5,8 @@ import * as _ from "lodash";
 import ScrollHelper from "./ScrollHelper";
 import Paginator from "./Paginator";
 import Search from "./Search";
-import {Type} from "./data";
-import {Pokemon} from "./pkmn";
+import { Type } from "./data";
+import { Pokemon } from "./pkmn";
 
 function makeType(t: Type, i: number) {
   const className = classnames(
@@ -16,17 +16,15 @@ function makeType(t: Type, i: number) {
     "f5-ns f6",
     "br2 ba",
     "badge with-border-color",
-    {mt1: i > 0}
+    { mt1: i > 0 }
   );
   const style = {
     minWidth: "7em"
   };
   return (
-    <span
-      key={t}
-      className={className}
-      style={style}
-    >{t}</span>
+    <span key={t} className={className} style={style}>
+      {t}
+    </span>
   );
 }
 
@@ -35,11 +33,11 @@ function makePKMN(p: Pokemon, i: number) {
     "b--black-10",
     "ph2 pv3",
     "flex items-center",
-    {bt: i > 0},
-    {mt2: i === 0}
+    { bt: i > 0 },
+    { mt2: i === 0 }
   );
   const displayNumber = "#" + _.padStart("" + p.number, 3, "0");
-  const style = {minHeight: "100px"};
+  const style = { minHeight: "100px" };
   return (
     <div key={`pkmn-${p.number}`} className={className} style={style}>
       <div className="flex-auto f4 f3-m f2-l mv0">
@@ -52,21 +50,15 @@ function makePKMN(p: Pokemon, i: number) {
 }
 
 interface DexProps {
-  updateSearch(search: string): void,
-  updateCurrentPage(page: number): void,
-  currentPage: number,
-  pkmn: Pokemon[],
-  search: string,
+  updateSearch(search: string): void;
+  updateCurrentPage(page: number): void;
+  currentPage: number;
+  pkmn: Pokemon[];
+  search: string;
 }
 
 function Dex(props: DexProps) {
-  const {
-    pkmn,
-    search,
-    updateSearch,
-    updateCurrentPage,
-    currentPage
-  } = props;
+  const { pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
   const searchInput = <Search search={search} updateSearch={updateSearch} />;
   const emptyState = <p className="silver f1 b tc m0">no pokémon found"</p>;
   const mons = (

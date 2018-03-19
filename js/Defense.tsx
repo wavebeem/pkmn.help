@@ -2,23 +2,18 @@ import * as React from "react";
 
 import TypeSelector from "./TypeSelector";
 import * as Matchups from "./Matchups";
-import {Type} from "./data";
+import { Type } from "./data";
 
 interface DefenseProps {
-  updateType1(type: Type): void,
-  updateType2(type: Type): void,
-  type1: Type,
-  type2: Type,
+  updateType1(type: Type): void;
+  updateType2(type: Type): void;
+  type1: Type;
+  type2: Type;
 }
 
 function Defense(props: DefenseProps) {
-  const {
-    updateType1,
-    updateType2,
-    type1,
-    type2,
-  } = props;
-  const classH2 = "tc f3 mt4 mb2"
+  const { updateType1, updateType2, type1, type2 } = props;
+  const classH2 = "tc f3 mt4 mb2";
   return (
     <main className="ph3 pt1 pb2 mw6 mw9-ns center">
       <div className="dib w-50-ns v-top">
@@ -39,10 +34,7 @@ function Defense(props: DefenseProps) {
       </div>
       <div className="dib w-50-ns v-top pl3-ns mt4-ns">
         <hr className="dn-ns subtle-hr mv4" />
-        <Matchups.Defense
-          type1={type1}
-          type2={type2}
-        />
+        <Matchups.Defense type1={type1} type2={type2} />
       </div>
     </main>
   );

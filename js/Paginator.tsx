@@ -14,12 +14,12 @@ function scrollToTop() {
 
 enum Location {
   TOP = "top",
-  BOTTOM = "bottom",
+  BOTTOM = "bottom"
 }
 
 function prevButton(
   loc: Location,
-  {updatePagePrev}: PaginatorProps,
+  { updatePagePrev }: PaginatorProps,
   show: boolean
 ) {
   const onClick = () => {
@@ -27,19 +27,18 @@ function prevButton(
       scrollToTop();
     }
     updatePagePrev();
-  }
+  };
   const disabled = !show;
   return (
-    <Button
-      onClick={onClick}
-      disabled={disabled}
-    >{PREV_TEXT}</Button>
+    <Button onClick={onClick} disabled={disabled}>
+      {PREV_TEXT}
+    </Button>
   );
 }
 
 function nextButton(
   loc: Location,
-  {updatePageNext}: PaginatorProps,
+  { updatePageNext }: PaginatorProps,
   show: boolean
 ) {
   const onClick = () => {
@@ -47,13 +46,12 @@ function nextButton(
       scrollToTop();
     }
     updatePageNext();
-  }
+  };
   const disabled = !show;
   return (
-    <Button
-      onClick={onClick}
-      disabled={disabled}
-    >{NEXT_TEXT}</Button>
+    <Button onClick={onClick} disabled={disabled}>
+      {NEXT_TEXT}
+    </Button>
   );
 }
 
@@ -72,37 +70,38 @@ function createPaginationButtons(
 }
 
 interface PaginatorProps {
-  updatePagePrev: () => void,
-  updatePageNext: () => void,
-  currentPage: number,
-  pageSize: number,
-  emptyState: any,
-  items: any[],
-  render: (item: any, index: number) => any,
+  updatePagePrev: () => void;
+  updatePageNext: () => void;
+  currentPage: number;
+  pageSize: number;
+  emptyState: any;
+  items: any[];
+  render: (item: any, index: number) => any;
 }
 
 function Paginator(props: PaginatorProps) {
-  const {
-    currentPage,
-    pageSize,
-    items,
-    emptyState,
-    render,
-  } = props;
+  const { currentPage, pageSize, items, emptyState, render } = props;
   const numPages = Math.ceil(items.length / pageSize);
   const hasPrev = currentPage > 0;
-  const hasNext = currentPage < (numPages - 1);
+  const hasNext = currentPage < numPages - 1;
   const i = pageSize * currentPage;
   const pageItems = items.slice(i, i + pageSize);
-  const inner = (
-    pageItems.length === 0
-      ? emptyState
-      : <div key={`page-${currentPage}`}>{pageItems.map(render)}</div>
-  );
-  const {TOP, BOTTOM} = Location;
+  const inner =
+    pageItems.length === 0 ? (
+      emptyState
+    ) : (
+      <div key={`page-${currentPage}`}>{pageItems.map(render)}</div>
+    );
+  const { TOP, BOTTOM } = Location;
   const top = createPaginationButtons(TOP, props, hasPrev, hasNext);
   const bottom = createPaginationButtons(BOTTOM, props, hasPrev, hasNext);
-  return <div>{top}{inner}{bottom}</div>;
+  return (
+    <div>
+      {top}
+      {inner}
+      {bottom}
+    </div>
+  );
 }
 
 export default Paginator;

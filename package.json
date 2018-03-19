@@ -12,9 +12,10 @@
     "build:js": "webpack -p",
     "build:css": "lessc less/style.less bundle.css",
     "postbuild:css": "cleancss bundle.css -o bundle.min.css",
-    "lint:fix": "eslint --fix .",
-    "lint": "eslint .",
-    "test": "npm run lint"
+    "_pretty": "prettier 'js/**/*.{ts,tsx,js}'",
+    "pretty:fix": "npm run -s _pretty -- --write",
+    "pretty:test": "npm run -s _pretty -- --list-different",
+    "test": "npm run pretty:test"
   },
   "repository": {
     "type": "git",
@@ -39,6 +40,7 @@
     "clean-css": "^3.4.20",
     "eslint": "^3.7.0",
     "less": "^2.7.1",
+    "prettier": "1.11.1",
     "react-addons-perf": "^15.4.2",
     "react-svg-loader": "^1.1.1",
     "source-map-loader": "^0.2.1",

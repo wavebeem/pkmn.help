@@ -5,12 +5,12 @@ import ImageClear from "../svg/clear.svg";
 import ImageSearch from "../svg/search.svg";
 
 interface SearchProps {
-  updateSearch(search: string): any,
-  search: string,
+  updateSearch(search: string): any;
+  search: string;
 }
 
 function Search(props: SearchProps) {
-  const {updateSearch, search} = props;
+  const { updateSearch, search } = props;
   const clearSearch = () => {
     updateSearch("");
   };
@@ -54,21 +54,25 @@ function Search(props: SearchProps) {
         left: 12,
         top: 10
       }}
-    ><ImageSearch /></div>
+    >
+      <ImageSearch />
+    </div>
   );
   const clear = (
     <div
       role="presentation"
       onClick={clearSearch}
-      className={classnames("absolute pointer", {dn: search === ""})}
+      className={classnames("absolute pointer", { dn: search === "" })}
       style={{
         fill: iconColor,
         width: 40,
         height: 40,
         right: 8,
-        top: 8,
+        top: 8
       }}
-    ><ImageClear /></div>
+    >
+      <ImageClear />
+    </div>
   );
   return (
     <div className="relative mv4">

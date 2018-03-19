@@ -1,16 +1,16 @@
 import * as Redux from "redux";
 
-import {Type} from "./data";
-import {Pokemon, AllPokemon} from "./pkmn";
+import { Type } from "./data";
+import { Pokemon, AllPokemon } from "./pkmn";
 
 export interface State {
-  tab: number,
-  type0: Type,
-  type1: Type,
-  type2: Type,
-  search: string,
-  pkmn: Pokemon[],
-  currentPage: number,
+  tab: number;
+  type0: Type;
+  type1: Type;
+  type2: Type;
+  search: string;
+  pkmn: Pokemon[];
+  currentPage: number;
 }
 
 const initialState: State = {
@@ -20,8 +20,8 @@ const initialState: State = {
   type2: Type.NONE,
   search: "",
   pkmn: AllPokemon,
-  currentPage: 0,
-}
+  currentPage: 0
+};
 
 export enum ActionTypes {
   CHANGE_TAB = "pkmn/CHANGE_TAB",
@@ -29,7 +29,7 @@ export enum ActionTypes {
   UPDATE_TYPE1 = "pkmn/UPDATE_TYPE1",
   UPDATE_TYPE2 = "pkmn/UPDATE_TYPE2",
   UPDATE_CURRENT_PAGE = "pkmn/UPDATE_CURRENT_PAGE",
-  UPDATE_SEARCH = "pkmn/UPDATE_SEARCH",
+  UPDATE_SEARCH = "pkmn/UPDATE_SEARCH"
 }
 
 interface ActionChangeTab {
@@ -79,9 +79,9 @@ function filterPKMN(search: string) {
 }
 
 function normalize(state: State) {
-  const {type1, type2} = state;
+  const { type1, type2 } = state;
   if (type1 === type2) {
-    return {...state, type1, type2: Type.NONE};
+    return { ...state, type1, type2: Type.NONE };
   } else {
     return state;
   }
@@ -90,25 +90,25 @@ function normalize(state: State) {
 function reducerHelper(action: Action) {
   switch (action.type) {
     case ActionTypes.CHANGE_TAB: {
-      return {tab: action.value};
+      return { tab: action.value };
     }
     case ActionTypes.UPDATE_TYPE0: {
-      return {type0: action.value};
+      return { type0: action.value };
     }
     case ActionTypes.UPDATE_TYPE1: {
-      return {type1: action.value};
+      return { type1: action.value };
     }
     case ActionTypes.UPDATE_TYPE2: {
-      return {type2: action.value};
+      return { type2: action.value };
     }
     case ActionTypes.UPDATE_CURRENT_PAGE: {
-      return {currentPage: action.value};
+      return { currentPage: action.value };
     }
     case ActionTypes.UPDATE_SEARCH: {
       const currentPage = 0;
       const search = action.value;
       const pkmn = filterPKMN(search);
-      return {search, pkmn, currentPage};
+      return { search, pkmn, currentPage };
     }
     default: {
       // TypeScript is trying to be helpful here... but this is OK
@@ -121,7 +121,7 @@ function reducerHelper(action: Action) {
 
 function reducer(state: State, action: Action) {
   const delta = reducerHelper(action);
-  return normalize({...state, ...delta});
+  return normalize({ ...state, ...delta });
 }
 
 // Redux DevTools for Chrome

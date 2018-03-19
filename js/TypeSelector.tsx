@@ -2,14 +2,9 @@ import * as React from "react";
 import * as classnames from "classnames";
 
 import * as Data from "./data";
-import {Type} from "./data";
+import { Type } from "./data";
 
-const labelClasses = [
-  "tl",
-  "pl2 pr1",
-  "flex-auto",
-  "truncate"
-];
+const labelClasses = ["tl", "pl2 pr1", "flex-auto", "truncate"];
 
 const BUTTON_INNER_HEIGHT = "20px";
 
@@ -17,14 +12,12 @@ function makeCircle(type: Type, isFocused: boolean) {
   const size = BUTTON_INNER_HEIGHT;
   const className = classnames(
     `type-${type} b--black br-pill ba`,
-    isFocused
-      ? "b--black-70"
-      : "with-border-color"
+    isFocused ? "b--black-70" : "with-border-color"
   );
   const style = {
     flexShrink: 0,
     width: size,
-    height: size,
+    height: size
   };
   return <span className={className} style={style} />;
 }
@@ -34,7 +27,11 @@ function makeLabel(type: Type) {
   const style = {
     lineHeight: BUTTON_INNER_HEIGHT
   };
-  return <span className={className} style={style}>{type}</span>;
+  return (
+    <span className={className} style={style}>
+      {type}
+    </span>
+  );
 }
 
 const buttonClasses = [
@@ -43,25 +40,20 @@ const buttonClasses = [
   "pa2",
   "b f6 f5-l",
   "ttu",
-  "chunky-focus",
+  "chunky-focus"
 ];
 
 const classSizing = "dib w-25-l w-50 pa1";
 
 interface TypeSelectorProps {
-  onChange(type: Type): void,
-  value: Type,
-  includeNone: boolean,
-  disabledTypes?: Type[],
+  onChange(type: Type): void;
+  value: Type;
+  includeNone: boolean;
+  disabledTypes?: Type[];
 }
 
 function TypeSelector(props: TypeSelectorProps) {
-  const {
-    disabledTypes=[],
-    onChange,
-    value,
-    includeNone
-  } = props;
+  const { disabledTypes = [], onChange, value, includeNone } = props;
   const types = includeNone ? Data.typesOrNone : Data.types;
   const styles = {
     disabled: "b--black-10 bg-near-white o-60",
@@ -69,13 +61,12 @@ function TypeSelector(props: TypeSelectorProps) {
       "pointer b--black-20 bg-gray white",
       "text-shadow-black no-box-shadow"
     ),
-    normal: "pointer b--black-30 bg-white black",
+    normal: "pointer b--black-30 bg-white black"
   };
   const makeButton = (isDisabled: boolean, value: Type, type: Type) => {
-    const style =
-      isDisabled ? styles.disabled :
-      type === value ? styles.selected :
-      styles.normal;
+    const style = isDisabled
+      ? styles.disabled
+      : type === value ? styles.selected : styles.normal;
     return (
       <button
         disabled={isDisabled}
@@ -96,7 +87,7 @@ function TypeSelector(props: TypeSelectorProps) {
         {makeButton(isDisabled, value, type)}
       </div>
     );
-  }
+  };
   return <div>{types.map(makeWrapper)}</div>;
 }
 
