@@ -8,7 +8,7 @@ function makeTab(props: TabContainerProps, index: number, title: string) {
     "pv3-ns ph4-ns f3-ns",
     "dib",
     "no-outline tab-bottom-focus",
-    "ttu",
+    "b ttu",
     "bn",
     "bg-transparent",
     "pointer",
@@ -33,7 +33,7 @@ function makeTabBar(props: TabContainerProps) {
   const className = classnames([
     "tc w-100",
     "bg-white",
-    "tab-bar-bottom-shadow",
+    "bb bw1 b--black-20",
     "pt4"
   ]);
   const kids: any = props.children.map((kid: any, i: number) => {

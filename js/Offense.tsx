@@ -21,6 +21,15 @@ function Offense(props: OffenseProps) {
           onChange={updateType0}
           includeNone={false}
         />
+        {/* Here for equal padding between screens */}
+        <div style={{ visibility: "hidden" }}>
+          <h2 className={classH2}>choose type</h2>
+          <TypeSelector
+            value={type0}
+            onChange={updateType0}
+            includeNone={false}
+          />
+        </div>
       </div>
       <div className="dib w-50-ns v-top pl3-ns mt4-ns">
         <hr className="dn-ns subtle-hr mv4" />

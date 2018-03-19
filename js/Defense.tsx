@@ -24,7 +24,7 @@ function Defense(props: DefenseProps) {
           disabledTypes={[]}
           includeNone={false}
         />
-        <h2 className={`${classH2} mt4`}>choose secondary type"</h2>
+        <h2 className={`${classH2} mt4`}>choose secondary type</h2>
         <TypeSelector
           value={type2}
           onChange={updateType2}

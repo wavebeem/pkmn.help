@@ -58,10 +58,10 @@ function TypeSelector(props: TypeSelectorProps) {
   const styles = {
     disabled: "b--black-10 bg-near-white o-60",
     selected: classnames(
-      "pointer b--black-20 bg-gray white",
+      "b--black-20 bg-gray white",
       "text-shadow-black no-box-shadow"
     ),
-    normal: "pointer b--black-30 bg-white black"
+    normal: "b--black-30 bg-white hover-bg-near-white black"
   };
   const makeButton = (isDisabled: boolean, value: Type, type: Type) => {
     const style = isDisabled

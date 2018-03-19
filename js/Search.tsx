@@ -31,6 +31,8 @@ function Search(props: SearchProps) {
         "chunky-focus",
         "inset-shadow",
         "br-pill ba",
+        "bg-white",
+        "hover-bg-near-white",
         "b--black-30"
       )}
       style={{
