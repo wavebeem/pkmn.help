@@ -16,7 +16,7 @@ function buttonClass(disabled: boolean) {
 }
 
 interface ButtonProps {
-  onClick: () => void;
+  onClick(): void;
   disabled: boolean;
   children: any;
 }
