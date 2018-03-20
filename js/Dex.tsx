@@ -60,7 +60,7 @@ interface DexProps {
 function Dex(props: DexProps) {
   const { pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
   const searchInput = <Search search={search} updateSearch={updateSearch} />;
-  const emptyState = <p className="silver f1 b tc m0">no pokémon found"</p>;
+  const emptyState = <p className="silver f1 b tc m0">no pokémon found</p>;
   const mons = (
     <Paginator
       currentPage={currentPage}
