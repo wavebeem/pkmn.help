@@ -11,7 +11,7 @@ function buttonClass(disabled: boolean) {
     "chunky-focus",
     disabled
       ? "b--black-10 black-20 bg-transparent"
-      : "b--black-40 bg-white hover-bg-near-white"
+      : "b--black-40 bg-white hover-bg-washed-blue"
   );
 }
 

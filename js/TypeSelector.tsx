@@ -61,7 +61,7 @@ function TypeSelector(props: TypeSelectorProps) {
       "b--black-20 bg-gray white",
       "text-shadow-black no-box-shadow"
     ),
-    normal: "b--black-30 bg-white hover-bg-near-white black"
+    normal: "b--black-30 bg-white hover-bg-washed-blue black"
   };
   const makeButton = (isDisabled: boolean, value: Type, type: Type) => {
     const style = isDisabled
