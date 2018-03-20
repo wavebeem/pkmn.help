@@ -1,85 +1,93 @@
 import * as React from "react";
-import * as Redux from "redux";
-import { connect } from "react-redux";
 
 import Offense from "./Offense";
 import Defense from "./Defense";
 import Dex from "./Dex";
 import { TabContainer, TabItem } from "./Tab";
-import { ActionTypes, State } from "./store";
 import { Type } from "./data";
+import { Pokemon, AllPokemon } from "./pkmn";
 
-interface AppPropMethods {
-  changeTab(index: number): void;
-  updateType0(type: Type): void;
-  updateType1(type: Type): void;
-  updateType2(type: Type): void;
-  updateSearch(search: string): void;
-  updateCurrentPage(index: number): void;
+export interface State {
+  tab: number;
+  type0: Type;
+  type1: Type;
+  type2: Type;
+  search: string;
+  pkmn: Pokemon[];
+  currentPage: number;
 }
 
-type AppProps = State & AppPropMethods;
-
-function App(props: AppProps) {
-  const { changeTab, tab } = props;
-  return (
-    <TabContainer changeTab={changeTab} current={tab}>
-      <TabItem title="Offense">
-        <Offense {...props} />
-      </TabItem>
-      <TabItem title="Defense">
-        <Defense {...props} />
-      </TabItem>
-      <TabItem title="Pokédex">
-        <Dex {...props} />
-      </TabItem>
-    </TabContainer>
-  );
-}
-
-function mapDispatchToProps(dispatch: Redux.Dispatch<State>): AppPropMethods {
-  return {
-    changeTab(tab: number) {
-      dispatch({
-        type: ActionTypes.CHANGE_TAB,
-        value: tab
-      });
-    },
-    updateType0(type: Type) {
-      dispatch({
-        type: ActionTypes.UPDATE_TYPE0,
-        value: type
-      });
-    },
-    updateType1(type: Type) {
-      dispatch({
-        type: ActionTypes.UPDATE_TYPE1,
-        value: type
-      });
-    },
-    updateType2(type: Type) {
-      dispatch({
-        type: ActionTypes.UPDATE_TYPE2,
-        value: type
-      });
-    },
-    updateSearch(search: string) {
-      dispatch({
-        type: ActionTypes.UPDATE_SEARCH,
-        value: search
-      });
-    },
-    updateCurrentPage(page: number) {
-      dispatch({
-        type: ActionTypes.UPDATE_CURRENT_PAGE,
-        value: page
-      });
-    }
+class App extends React.Component<{}, State> {
+  state: State = {
+    tab: 1,
+    type0: Type.NORMAL,
+    type1: Type.NORMAL,
+    type2: Type.NONE,
+    search: "",
+    pkmn: AllPokemon,
+    currentPage: 0
   };
+
+  changeTab = (tab: number) => {
+    this.setState({ tab });
+  };
+
+  updateType0 = (type0: Type) => {
+    this.setState({ type0 });
+  };
+
+  updateType1 = (type1: Type) => {
+    this.updateTypes(type1, this.state.type2);
+  };
+
+  updateType2 = (type2: Type) => {
+    this.updateTypes(this.state.type1, type2);
+  };
+
+  updateTypes = (type1: Type, type2: Type) => {
+    this.setState({ type1, type2: type1 === type2 ? Type.NONE : type2 });
+  };
+
+  updateSearch = (search: string) => {
+    this.setState({ search, pkmn: this.filterPKMN(search), currentPage: 0 });
+  };
+
+  updateCurrentPage = (currentPage: number) => {
+    this.setState({ currentPage });
+  };
+
+  filterPKMN(search: string) {
+    if (search === "") {
+      return AllPokemon;
+    }
+    const s = search.toLowerCase();
+    return AllPokemon.filter(p => p.name.toLowerCase().indexOf(s) >= 0);
+  }
+
+  render() {
+    const props = {
+      ...this.state,
+      changeTab: this.changeTab,
+      updateType0: this.updateType0,
+      updateType1: this.updateType1,
+      updateType2: this.updateType2,
+      updateSearch: this.updateSearch,
+      updateCurrentPage: this.updateCurrentPage
+    };
+    return (
+      <TabContainer changeTab={this.changeTab} current={this.state.tab}>
+        <TabItem title="Offense">
+          <Offense {...props} />
+        </TabItem>
+        <TabItem title="Defense">
+          <Defense {...props} />
+        </TabItem>
+        <TabItem title="Pokédex">
+          <Dex {...props} />
+        </TabItem>
+      </TabContainer>
+    );
+  }
 }
 
-function mapStateToProps(state: State) {
-  return state;
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

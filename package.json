@@ -54,8 +54,6 @@
     "lodash": "^4.16.2",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
-    "react-redux": "^4.4.5",
-    "redux": "^3.6.0",
     "smoothscroll-polyfill": "^0.3.4",
     "svg-inline-loader": "^0.7.1",
     "tachyons": "^4.5.3"
