@@ -22,7 +22,7 @@ function Offense(props: OffenseProps) {
           includeNone={false}
         />
         {/* Here for equal padding between screens */}
-        <div style={{ visibility: "hidden" }}>
+        <div className="HACK-hidden-ns">
           <h2 className={classH2}>choose type</h2>
           <TypeSelector
             value={type0}
