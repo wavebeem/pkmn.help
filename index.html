@@ -43,6 +43,10 @@
 
       ga('create', 'UA-52704502-5', 'auto');
       ga('send', 'pageview');
+    } else {
+      window.ga = function() {
+        console.log([].slice.call(arguments));
+      };
     }
   </script>
 </body>
