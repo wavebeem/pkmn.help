@@ -1,7 +1,13 @@
 import * as React from "react";
 import * as classnames from "classnames";
 
-function makeTab(props: TabContainerProps, index: number, title: string) {
+import * as GA from "./ga";
+
+function makeTab(
+  props: TabContainerProps,
+  index: number,
+  { title, name }: TabItemProps
+) {
   const { current, changeTab } = props;
   const className = classnames([
     "pv3 ph3 f5 w-third",
@@ -21,6 +27,7 @@ function makeTab(props: TabContainerProps, index: number, title: string) {
   };
   const onClick = () => {
     changeTab(index);
+    GA.clickNav(name);
   };
   return (
     <button key={index} className={className} onClick={onClick} style={style}>
@@ -37,13 +44,14 @@ function makeTabBar(props: TabContainerProps) {
     "pt4"
   ]);
   const kids: any = props.children.map((kid: any, i: number) => {
-    return makeTab(props, i, kid.props.title);
+    return makeTab(props, i, kid.props);
   });
   return <div className={className}>{kids}</div>;
 }
 
 interface TabItemProps {
   title: string;
+  name: string;
   children: any;
 }
 

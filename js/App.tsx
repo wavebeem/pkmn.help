@@ -76,13 +76,13 @@ class App extends React.Component<{}, State> {
     };
     return (
       <TabContainer changeTab={this.changeTab} current={this.state.tab}>
-        <TabItem title="Offense">
+        <TabItem name="offense" title="Offense">
           <Offense {...props} />
         </TabItem>
-        <TabItem title="Defense">
+        <TabItem name="defense" title="Defense">
           <Defense {...props} />
         </TabItem>
-        <TabItem title="Pokédex">
+        <TabItem name="pokedex" title="Pokédex">
           <Dex {...props} />
         </TabItem>
       </TabContainer>
