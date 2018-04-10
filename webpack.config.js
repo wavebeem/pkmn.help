@@ -20,6 +20,11 @@ const svgLoader = {
   ]
 };
 
+const lessLoader = {
+  test: /\.less$/,
+  use: ["style-loader", "css-loader", "less-loader"]
+};
+
 const tsLoader = {
   // Not actually loading any JS files any more, but whatever
   test: /\.[tj]sx?$/,
@@ -36,14 +41,13 @@ module.exports = {
   devtool: "source-map",
   devServer: {
     contentBase: __dirname,
-    compress: true,
-    disableHostCheck: Boolean(process.env.C9_PID)
+    compress: true
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"]
   },
   module: {
-    loaders: [svgLoader, tsLoader]
+    loaders: [svgLoader, tsLoader, lessLoader]
   },
   plugins: [new webpack.EnvironmentPlugin(["NODE_ENV"])]
 };

@@ -4,14 +4,11 @@
   "name": "pkmn.help",
   "description": "Pokémon type calculator",
   "scripts": {
-    "watch:css": "chokidar --initial 'less/**/*.less' -c 'npm run build:css'",
-    "serve": "npm start",
     "start": "webpack-dev-server --open",
     "build:ico": "convert favicon.png favicon.ico",
     "build:pkmn": "node bin/make-pkmn",
     "build:js": "webpack -p",
     "build:css": "lessc less/style.less bundle.css",
-    "postbuild:css": "cleancss bundle.css -o bundle.min.css",
     "_pretty": "prettier 'js/**/*.{ts,tsx,js}'",
     "pretty:fix": "npm run -s _pretty -- --write",
     "pretty:test": "npm run -s _pretty -- --list-different",
@@ -51,10 +48,13 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "css-loader": "^0.28.11",
+    "less-loader": "^4.1.0",
     "lodash": "^4.16.2",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "smoothscroll-polyfill": "^0.3.4",
+    "style-loader": "^0.20.3",
     "svg-inline-loader": "^0.7.1",
     "tachyons": "^4.5.3"
   }
