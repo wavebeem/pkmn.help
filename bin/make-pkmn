@@ -47,6 +47,6 @@ dex = data.map {|row|
   }
 }
 
-json = JSON.pretty_generate(dex)
+json = JSON.pretty_generate(dex) << "\n"
 
 File.write(OUT_FILE, json)

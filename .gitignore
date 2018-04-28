@@ -1,8 +1,6 @@
 dist/
 node_modules/
 
-veekun-pokedex.sqlite
-
 /bundle.*
 /favicon-*.png
 
