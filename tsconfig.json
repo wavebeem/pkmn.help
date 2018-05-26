@@ -12,10 +12,6 @@
     "target": "es5",
     "jsx": "react"
   },
-  "include": [
-    "js/**/*"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  "include": ["js/**/*"],
+  "exclude": ["node_modules"]
 }

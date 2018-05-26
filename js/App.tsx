@@ -75,17 +75,49 @@ class App extends React.Component<{}, State> {
       updateCurrentPage: this.updateCurrentPage
     };
     return (
-      <TabContainer changeTab={this.changeTab} current={this.state.tab}>
-        <TabItem name="offense" title="Offense">
-          <Offense {...props} />
-        </TabItem>
-        <TabItem name="defense" title="Defense">
-          <Defense {...props} />
-        </TabItem>
-        <TabItem name="pokedex" title="Pokédex">
-          <Dex {...props} />
-        </TabItem>
-      </TabContainer>
+      <div className="sans-serif bg-near-white mid-gray min-vh-100 flex flex-column">
+        <div className="flex-auto">
+          <h1 className="f2 tc relative white bg-dark-red pokeball-header">
+            <a href="#" className="link white dim">
+              pokémon type calculator
+            </a>
+          </h1>
+          <TabContainer changeTab={this.changeTab} current={this.state.tab}>
+            <TabItem name="offense" title="Offense">
+              <Offense {...props} />
+            </TabItem>
+            <TabItem name="defense" title="Defense">
+              <Defense {...props} />
+            </TabItem>
+            <TabItem name="pokedex" title="Pokédex">
+              <Dex {...props} />
+            </TabItem>
+          </TabContainer>
+        </div>
+        <footer className="black dark-gray bt b--black-05 mt4 ph3 pb2 f4">
+          <div className="mw8 center">
+            <div className="mt4" />
+            <p>
+              Pokémon © 2002-2013 Pokémon. © 1995-2013 Nintendo/Creatures
+              Inc./GAME FREAK inc. TM, ® and Pokémon character names are
+              trademarks of Nintendo.
+            </p>
+            <p>
+              No copyright or trademark infringement is intended in using
+              Pokémon content on this page.
+            </p>
+            <p>
+              Code for this page © 2013-{new Date().getFullYear()}{" "}
+              <a
+                href="https://mockbrian.com"
+                className="bb link hover-gray black bb"
+              >
+                Brian Mock
+              </a>.
+            </p>
+          </div>
+        </footer>
+      </div>
     );
   }
 }

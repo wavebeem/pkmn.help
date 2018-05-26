@@ -1,5 +1,6 @@
 const path = require("path");
 const webpack = require("webpack");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 // Hack to put the NODE_ENV to production when we ask for minified code.
 const isProd = process.argv.indexOf("-p") >= 0;
@@ -35,7 +36,7 @@ const tsLoader = {
 module.exports = {
   entry: [path.join(__dirname, "js/main.tsx")],
   output: {
-    path: __dirname,
+    path: path.join(__dirname, "dist"),
     filename: "bundle.js"
   },
   devtool: "source-map",
@@ -49,5 +50,19 @@ module.exports = {
   module: {
     loaders: [svgLoader, tsLoader, lessLoader]
   },
-  plugins: [new webpack.EnvironmentPlugin(["NODE_ENV"])]
+  plugins: [
+    new webpack.EnvironmentPlugin(["NODE_ENV"]),
+    new HtmlWebpackPlugin({
+      title: "Pokémon Type Calculator",
+      filename: path.join(__dirname, "dist/index.html"),
+      hash: true,
+      minify: true,
+      meta: {
+        "theme-color": "#e7040f",
+        viewport: "width=device-width, initial-scale=1",
+        description:
+          "A Pokémon type calculator to show strengths/weaknesses of different type combinations"
+      }
+    })
+  ]
 };
