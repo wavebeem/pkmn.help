@@ -5,8 +5,8 @@
   "description": "Pokémon type calculator",
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build:ico": "convert favicon.png favicon.ico",
-    "build:pkmn": "node bin/make-pkmn",
+    "build:ico": "bash bin/make-ico",
+    "build:pkmn": "ruby bin/make-pkmn",
     "build:bundle": "webpack -p",
     "_pretty": "prettier 'js/**/*.{ts,tsx,js}'",
     "pretty:fix": "npm run -s _pretty -- --write",

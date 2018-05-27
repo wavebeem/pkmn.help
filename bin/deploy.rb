@@ -16,13 +16,6 @@ CF_DISTRO = "E3U8PXS6FWX8U8"
 S3_PROD = "s3://pkmn.help/"
 S3_DEV = "s3://dev2.mockbrian.com/"
 
-FILES = %W[
-  favicon.ico
-  bundle.js
-  bundle.js.map
-  index.html
-]
-
 def run(*cmd)
   if DRY_RUN
     puts cmd.join(" ")
@@ -62,8 +55,8 @@ end
 def build
   rm_rf "dist"
   mkdir "dist"
+  cp "build/favicon.ico", "dist/"
   run "npm", "run", "-s", "build:bundle"
-  cp FILES, "dist/"
 end
 
 build
