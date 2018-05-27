@@ -53,16 +53,9 @@ module.exports = {
   plugins: [
     new webpack.EnvironmentPlugin(["NODE_ENV"]),
     new HtmlWebpackPlugin({
-      title: "Pokémon Type Calculator",
       filename: path.join(__dirname, "dist/index.html"),
-      hash: true,
-      minify: true,
-      meta: {
-        "theme-color": "#e7040f",
-        viewport: "width=device-width, initial-scale=1",
-        description:
-          "A Pokémon type calculator to show strengths/weaknesses of different type combinations"
-      }
+      template: path.join(__dirname, "template/index.html"),
+      hash: true
     })
   ]
 };
