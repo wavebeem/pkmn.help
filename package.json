@@ -8,6 +8,7 @@
     "build:ico": "bash bin/make-ico",
     "build:pkmn": "ruby bin/make-pkmn",
     "build:bundle": "webpack -p",
+    "build": "mkdir -p dist && cp build/favicon.ico dist && webpack -p",
     "_pretty": "prettier 'js/**/*.{ts,tsx,js}'",
     "pretty:fix": "npm run -s _pretty -- --write",
     "pretty:test": "npm run -s _pretty -- --list-different",
