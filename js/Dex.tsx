@@ -2,7 +2,6 @@ import * as React from "react";
 import * as classnames from "classnames";
 import * as _ from "lodash";
 
-import ScrollHelper from "./ScrollHelper";
 import Paginator from "./Paginator";
 import Search from "./Search";
 import { Type } from "./data";
@@ -74,7 +73,6 @@ function Dex(props: DexProps) {
   );
   return (
     <div className="ph2 mt3 center mw7">
-      <ScrollHelper />
       <div className="ph1">{searchInput}</div>
       {mons}
     </div>
