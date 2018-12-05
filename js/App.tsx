@@ -94,7 +94,7 @@ class App extends React.Component<{}, State> {
             </TabItem>
           </TabContainer>
         </div>
-        <div className="black dark-red b bt b--black-05 mt4 ph3 pb2 f4">
+        <div className="black dark-red bt b--black-05 mt4 ph3 pb2 f4">
           <div className="mt4" />
           <div className="mw8 center">
             <p>
