@@ -40,15 +40,15 @@ function section(title: string, types: Type[]) {
   );
 }
 
-function renderMatchups(matchups: GroupedMatchups) {
+function renderMatchups(makePrefix: (value: string) => string, matchups: GroupedMatchups) {
   return (
     <div className="tc">
-      {section("takes 4×", matchups.typesFor(Effectiveness.QUADRUPLE))}
-      {section("takes 2×", matchups.typesFor(Effectiveness.DOUBLE))}
-      {section("takes 1×", matchups.typesFor(Effectiveness.REGULAR))}
-      {section("takes ½×", matchups.typesFor(Effectiveness.HALF))}
-      {section("takes ¼×", matchups.typesFor(Effectiveness.QUARTER))}
-      {section("takes 0×", matchups.typesFor(Effectiveness.ZERO))}
+      {section(makePrefix("4×"), matchups.typesFor(Effectiveness.QUADRUPLE))}
+      {section(makePrefix("2×"), matchups.typesFor(Effectiveness.DOUBLE))}
+      {section(makePrefix("1×"), matchups.typesFor(Effectiveness.REGULAR))}
+      {section(makePrefix("½×"), matchups.typesFor(Effectiveness.HALF))}
+      {section(makePrefix("¼×"), matchups.typesFor(Effectiveness.QUARTER))}
+      {section(makePrefix("0×"), matchups.typesFor(Effectiveness.ZERO))}
     </div>
   );
 }
@@ -61,7 +61,7 @@ export interface DefenseProps {
 export function Defense(props: DefenseProps) {
   const { type1, type2 } = props;
   const matchups = defensiveMatchups(type1, type2);
-  return renderMatchups(matchups);
+  return renderMatchups(x => `takes ${x} from`, matchups);
 }
 
 export interface OffenseProps {
@@ -71,5 +71,5 @@ export interface OffenseProps {
 export function Offense(props: OffenseProps) {
   const { type } = props;
   const matchups = offensiveMatchups(type);
-  return renderMatchups(matchups);
+  return renderMatchups(x => `deals ${x} to`, matchups);
 }
