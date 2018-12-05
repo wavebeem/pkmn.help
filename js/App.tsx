@@ -98,7 +98,7 @@ class App extends React.Component<{}, State> {
           <div className="mt4" />
           <div className="mw8 center">
             <p>
-              Sorry about the recent downtime on December 4th, 2018. I am migrating web hosting for the site and am having some trouble. I will restore HTTPS functionality as soon as possible. &mdash; Brian Mock
+              Sorry about the recent downtime on December 4th, 2018. I migrated web hosts and had some issues getting a new certificate. Thank you for your patience.
             </p>
           </div>
         </div>
