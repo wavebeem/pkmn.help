@@ -6,4 +6,4 @@ import "../less/style.less";
 import App from "./App";
 
 SmoothScroll.polyfill();
-render(<App />, document.body);
+render(<App />, document.querySelector("#app"));
