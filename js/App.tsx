@@ -94,7 +94,7 @@ class App extends React.Component<{}, State> {
             </TabItem>
           </TabContainer>
         </div>
-        <div className="black dark-red bt b--black-05 mt4 ph3 pb2 f4">
+        {/* <div className="black bt b--black-05 mt4 ph3 pb2 f4">
           <div className="mt4" />
           <div className="mw8 center">
             <p>
@@ -103,10 +103,10 @@ class App extends React.Component<{}, State> {
               for your patience.
             </p>
           </div>
-        </div>
-        <footer className="black dark-gray bt b--black-05 ph3 pb2 f4">
+        </div> */}
+        <footer className="black dark-gray bt b--black-05 ph3 pv2 f4 mt4">
+          {/* <div className="mt4" /> */}
           <div className="mw8 center">
-            {/* <div className="mt4" /> */}
             <p>
               Pokémon © 2002-2013 Pokémon. © 1995-2013 Nintendo/Creatures
               Inc./GAME FREAK inc. TM, ® and Pokémon character names are
