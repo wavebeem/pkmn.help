@@ -4,14 +4,14 @@ import * as classnames from "classnames";
 function buttonClass(disabled: boolean) {
   return classnames(
     "db w-100",
-    "ba br1",
+    "ba br2",
     "pv3 ph4",
-    "b f4",
-    "ttu",
+    "b f3",
     "chunky-focus",
+    "active-squish",
     disabled
       ? "b--black-10 black-20 bg-transparent"
-      : "b--black-40 bg-white hover-bg-washed-blue"
+      : "b--black-30 button-shadow bg-white hover-bg-washed-blue"
   );
 }
 

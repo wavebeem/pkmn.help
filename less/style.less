@@ -28,24 +28,16 @@ button {
   box-shadow: inset 0 2px 4px fade(black, 10%);
 }
 
-.GoToTop {
-  line-height: 0;
-  box-sizing: initial;
-  display: block;
-  text-decoration: none;
-  font-weight: normal;
-  text-align: center;
-  border-radius: 50%;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 14px;
-  padding: 16px;
-  transition: 200ms opacity;
-  background: white;
-  box-shadow:
-    0 0 2px 0 fade(black, 20%),
-    0 6px 8px fade(black, 20%);
+.active-squish:active {
+  transform: scale(0.98);
+}
+
+.search-placeholder-light::placeholder {
+  color: rgba(0, 0, 0, 0.15);
+}
+
+.button-shadow {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 }
 
 .no-outline,
@@ -54,7 +46,7 @@ button {
 }
 
 .bottom-border-thick-current {
-  transition: background 200ms;
+  transition: background-color 200ms;
   border-bottom: 4px solid currentColor;
 }
 
@@ -63,12 +55,13 @@ button {
 }
 
 .bottom-border-thick:focus {
-  transition: background 200ms;
+  transition: background-color 200ms;
   background: fade(black, 5%);
 }
 
-.tab-bar-bottom-shadow {
-  box-shadow: 0 6px 6px fade(black, 5%);
+.tab-bar-border {
+  border-width: 1px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 }
 
 .chunky-focus {

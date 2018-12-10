@@ -79,7 +79,7 @@ class App extends React.Component<{}, State> {
         <div className="flex-auto">
           <h1 className="f2 tc relative white bg-dark-red pokeball-header">
             <a href="#" className="link white dim">
-              pokémon type calculator
+              Pokémon Type Calculator
             </a>
           </h1>
           <TabContainer changeTab={this.changeTab} current={this.state.tab}>
@@ -98,7 +98,9 @@ class App extends React.Component<{}, State> {
           <div className="mt4" />
           <div className="mw8 center">
             <p>
-              Sorry about the recent downtime on December 4th, 2018. I migrated web hosts and had some issues getting a new certificate. Thank you for your patience.
+              Sorry about the recent downtime on December 4th, 2018. I migrated
+              web hosts and had some issues getting a new certificate. Thank you
+              for your patience.
             </p>
           </div>
         </div>

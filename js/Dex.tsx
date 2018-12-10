@@ -13,7 +13,7 @@ function makeType(t: Type, i: number) {
     "ttu tc b",
     "db ph1 pv2",
     "f5-ns f6",
-    "br2 ba",
+    "br1 ba",
     "badge with-border-color",
     { mt1: i > 0 }
   );
@@ -39,7 +39,7 @@ function makePKMN(p: Pokemon, i: number) {
   const style = { minHeight: "100px" };
   return (
     <div key={`pkmn-${p.number}`} className={className} style={style}>
-      <div className="flex-auto f4 f3-m f2-l mv0">
+      <div className="flex-auto f4 f3-ns mv0">
         <h2 className="truncate mt0 mb1">{p.name}</h2>
         <p className="gray mv0">{displayNumber}</p>
       </div>

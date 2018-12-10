@@ -40,7 +40,8 @@ const buttonClasses = [
   "pa2",
   "b f6 f5-l",
   "ttu",
-  "chunky-focus"
+  "chunky-focus",
+  "active-squish"
 ];
 
 const classSizing = "dib w-25-l w-50 pa1";
@@ -58,7 +59,7 @@ function TypeSelector(props: TypeSelectorProps) {
   const styles = {
     disabled: "b--black-10 bg-near-white o-60",
     selected: classnames(
-      "b--black-20 bg-gray white",
+      "b--black-30 bg-gray white",
       "text-shadow-black no-box-shadow"
     ),
     normal: "b--black-30 bg-white hover-bg-washed-blue black"
@@ -70,7 +71,11 @@ function TypeSelector(props: TypeSelectorProps) {
     return (
       <button
         disabled={isDisabled}
-        className={classnames(style, buttonClasses)}
+        className={classnames(
+          style,
+          buttonClasses,
+          isDisabled ? null : "button-shadow"
+        )}
         onClick={() => onChange(type)}
       >
         <span className="flex flex-row items-center justify-center">

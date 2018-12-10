@@ -10,17 +10,17 @@ function makeTab(
 ) {
   const { current, changeTab } = props;
   const className = classnames([
-    "pv3 ph3 f5 w-third",
+    "pv3 ph3 f4 w-third",
     "pv3-ns ph4-ns f3-ns",
     "dib",
     "no-outline tab-bottom-focus",
-    "b ttu",
-    "bn",
+    "b bn",
+    "br--top br4",
     "bg-transparent",
-    "pointer",
+    "hover-black-90",
     index === current
-      ? "black bottom-border-thick-current b"
-      : "black-50 bottom-border-thick"
+      ? "black bottom-border-thick-current"
+      : "black-50 bottom-border-thick pointer"
   ]);
   const style = {
     maxWidth: "150px"
@@ -30,7 +30,13 @@ function makeTab(
     GA.clickNav(name);
   };
   return (
-    <button key={index} className={className} onClick={onClick} style={style}>
+    <button
+      key={index}
+      className={className}
+      onClick={onClick}
+      style={style}
+      disabled={index === current}
+    >
       {title}
     </button>
   );
@@ -40,7 +46,7 @@ function makeTabBar(props: TabContainerProps) {
   const className = classnames([
     "tc w-100",
     "bg-white",
-    "bb bw1 b--black-20",
+    "bb tab-bar-border b--black-20",
     "pt4"
   ]);
   const kids: any = props.children.map((kid: any, i: number) => {

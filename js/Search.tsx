@@ -26,21 +26,22 @@ function Search(props: SearchProps) {
       inputMode="verbatim"
       autoCapitalize="none"
       className={classnames(
-        "f2 f1-l w-100 border-box",
+        "f2 w-100 border-box",
         "pv2",
         "chunky-focus",
         "inset-shadow",
         "br-pill ba",
         "bg-white",
         "hover-bg-washed-blue",
-        "b--black-30"
+        "b--black-30",
+        "search-placeholder-light"
       )}
       style={{
         paddingLeft: 65,
         paddingRight: 65,
         height: 55
       }}
-      placeholder="search"
+      placeholder="Search"
       value={search}
       onChange={onChange}
     />
