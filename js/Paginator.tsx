@@ -1,8 +1,7 @@
 import * as React from "react";
-import Button from "./Button";
+import * as classnames from "classnames";
 
-const PREV_TEXT = "« Previous";
-const NEXT_TEXT = "Next »";
+import Button from "./Button";
 
 function scrollToTop() {
   window.scroll({
@@ -31,7 +30,7 @@ function prevButton(
   const disabled = !show;
   return (
     <Button onClick={onClick} disabled={disabled}>
-      {PREV_TEXT}
+      <span className="sr-only">Previous</span>&laquo;
     </Button>
   );
 }
@@ -50,21 +49,38 @@ function nextButton(
   const disabled = !show;
   return (
     <Button onClick={onClick} disabled={disabled}>
-      {NEXT_TEXT}
+      <span className="sr-only">Next</span>&raquo;
     </Button>
   );
 }
 
-function createPaginationButtons(
-  loc: Location,
-  props: PaginatorProps,
-  hasPrev: boolean,
-  hasNext: boolean
-) {
+function createPaginationButtons({
+  numPages,
+  pageItems,
+  loc,
+  props,
+  hasPrev,
+  hasNext
+}: {
+  numPages: number;
+  pageItems: any[];
+  loc: Location;
+  props: PaginatorProps;
+  hasPrev: boolean;
+  hasNext: boolean;
+}) {
   return (
-    <div className="flex">
-      <div className="ph1 flex-auto">{prevButton(loc, props, hasPrev)}</div>
-      <div className="ph1 flex-auto">{nextButton(loc, props, hasNext)}</div>
+    <div
+      className={classnames(
+        "items-center",
+        pageItems.length === 0 ? "dn" : "flex"
+      )}
+    >
+      <div>{prevButton(loc, props, hasPrev)}</div>
+      <div className="flex-auto tc b f3">
+        page {props.currentPage + 1} of {numPages}
+      </div>
+      <div>{nextButton(loc, props, hasNext)}</div>
     </div>
   );
 }
@@ -93,8 +109,22 @@ function Paginator(props: PaginatorProps) {
       <div key={`page-${currentPage}`}>{pageItems.map(render)}</div>
     );
   const { TOP, BOTTOM } = Location;
-  const top = createPaginationButtons(TOP, props, hasPrev, hasNext);
-  const bottom = createPaginationButtons(BOTTOM, props, hasPrev, hasNext);
+  const top = createPaginationButtons({
+    loc: TOP,
+    numPages,
+    pageItems,
+    props,
+    hasPrev,
+    hasNext
+  });
+  const bottom = createPaginationButtons({
+    loc: BOTTOM,
+    numPages,
+    pageItems,
+    props,
+    hasPrev,
+    hasNext
+  });
   return (
     <div>
       {top}
