@@ -72,7 +72,7 @@ function createPaginationButtons({
   return (
     <div
       className={classnames(
-        "items-center",
+        "items-center ph2",
         pageItems.length === 0 ? "dn" : "flex"
       )}
     >

@@ -38,7 +38,7 @@ button {
 }
 
 .active-squish:active {
-  transform: scale(0.98);
+  transform: scale(0.95);
 }
 
 .search-placeholder-light::placeholder {
@@ -55,7 +55,6 @@ button {
 }
 
 .bottom-border-thick-current {
-  transition: background-color 200ms;
   border-bottom: 4px solid currentColor;
 }
 
@@ -64,7 +63,6 @@ button {
 }
 
 .bottom-border-thick:focus {
-  transition: background-color 200ms;
   background: fade(black, 5%);
 }
 
@@ -73,17 +71,9 @@ button {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 }
 
-.chunky-focus {
-  transition: 150ms box-shadow;
-}
-
 .chunky-focus:focus {
   outline: none;
-  box-shadow: 0 0 0 2px white, 0 0 0 4px black;
-}
-
-.text-shadow-white {
-  text-shadow: 0 0 3px white;
+  box-shadow: 0 0 0 3px white, 0 0 0 5px black;
 }
 
 .text-shadow-black {

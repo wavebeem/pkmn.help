@@ -4,7 +4,7 @@ import * as classnames from "classnames";
 function buttonClass(disabled: boolean) {
   return classnames(
     "db w-100",
-    "ba br2",
+    "ba br3",
     "pv3 ph4",
     "b f3",
     "chunky-focus",
