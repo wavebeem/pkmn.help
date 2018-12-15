@@ -46,12 +46,12 @@ function Search(props: SearchProps) {
       onChange={onChange}
     />
   );
-  const iconColor = "#888";
   const icon = (
     <div
       className="absolute"
       style={{
-        fill: iconColor,
+        fill: "black",
+        opacity: 0.5,
         width: 40,
         height: 40,
         left: 12,
@@ -67,7 +67,8 @@ function Search(props: SearchProps) {
       onClick={clearSearch}
       className={classnames("absolute pointer", { dn: search === "" })}
       style={{
-        fill: iconColor,
+        fill: "black",
+        opacity: 0.5,
         width: 40,
         height: 40,
         right: 8,
