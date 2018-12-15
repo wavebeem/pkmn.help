@@ -1,7 +1,7 @@
 import * as React from "react";
 import Button from "./Button";
 
-const PREV_TEXT = "« Prev";
+const PREV_TEXT = "« Previous";
 const NEXT_TEXT = "Next »";
 
 function scrollToTop() {
