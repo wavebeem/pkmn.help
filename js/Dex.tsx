@@ -7,6 +7,8 @@ import Search from "./Search";
 import { Type } from "./data";
 import { Pokemon } from "./pkmn";
 
+const PAGE_SIZE = 50;
+
 function makeType(t: Type, i: number) {
   const className = classnames(
     `type-${t}`,
@@ -31,9 +33,10 @@ function makePKMN(p: Pokemon, i: number) {
   const className = classnames(
     "b--black-10",
     "ph2 pv3",
-    "flex items-center",
-    { bt: i > 0 },
-    { mt2: i === 0 }
+    "bb flex items-center",
+    { bt: i === 0 },
+    { mt3: i === 0 },
+    { mb3: i === PAGE_SIZE - 1 }
   );
   const displayNumber = "#" + _.padStart("" + p.number, 3, "0");
   const style = { minHeight: "100px" };
@@ -65,7 +68,7 @@ function Dex(props: DexProps) {
       currentPage={currentPage}
       updatePageNext={() => updateCurrentPage(currentPage + 1)}
       updatePagePrev={() => updateCurrentPage(currentPage - 1)}
-      pageSize={50}
+      pageSize={PAGE_SIZE}
       emptyState={emptyState}
       items={pkmn}
       render={makePKMN}
