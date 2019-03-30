@@ -10,8 +10,9 @@
     "sourceMap": true,
     "strict": true,
     "module": "es2015",
-    "target": "es5",
-    "jsx": "react"
+    "target": "es2017",
+    "jsx": "react",
+    "allowSyntheticDefaultImports": true
   },
   "include": ["js/**/*"],
   "exclude": ["node_modules"]

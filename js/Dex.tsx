@@ -38,7 +38,7 @@ function makePKMN(p: Pokemon, i: number) {
     { mt3: i === 0 },
     { mb3: i === PAGE_SIZE - 1 }
   );
-  const displayNumber = "#" + _.padStart("" + p.number, 3, "0");
+  const displayNumber = "#" + String(p.number).padStart(3, "0");
   const style = { minHeight: "100px" };
   return (
     <div key={`pkmn-${p.number}`} className={className} style={style}>

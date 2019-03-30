@@ -1,4 +1,5 @@
-import * as _ from "lodash";
+import flatMap from "lodash.flatmap";
+import fromPairs from "lodash.frompairs";
 
 export enum Type {
   NORMAL = "normal",
@@ -54,7 +55,7 @@ export enum Effectiveness {
   ZERO = 0
 }
 
-function rawDataStrToNumber(str: string) {
+function rawDataStrToNumber(str: string): Effectiveness {
   if (str === "2") {
     return Effectiveness.DOUBLE;
   }
@@ -96,14 +97,14 @@ function keyForTypes(t1: Type, t2: Type) {
 }
 
 // TODO: Types seem wrong here
-const pairs = _.flatMap(rawData, (row, i) => {
-  return _.map(row, (data, j) => {
+const pairs = flatMap(rawData, (row, i) => {
+  return row.map((data, j) => {
     return [keyForTypes(types[i], types[j]), data];
   });
 });
 
 // TODO: Types seem wrong here
-const table = _.fromPairs(pairs);
+const table = fromPairs(pairs);
 
 function matchupFor(ta1: Type, ta2: Type, tb: Type) {
   const x1 = table[keyForTypes(tb, ta1)];
@@ -139,13 +140,14 @@ export class GroupedMatchups {
   constructor(public matchups: Matchup[]) {}
 
   typesFor(effectivenes: Effectiveness): Type[] {
-    const ms = _.filter(this.matchups, m => m.effectiveness === effectivenes);
-    return _.map(ms, m => m.type);
+    return this.matchups
+      .filter(m => m.effectiveness === effectivenes)
+      .map(m => m.type);
   }
 }
 
 export function offensiveMatchups(type: Type) {
-  const matchups = _.map(types, t => {
+  const matchups = types.map(t => {
     const eff = matchupFor(t, Type.NONE, type);
     return new Matchup(t, eff);
   });
@@ -153,7 +155,7 @@ export function offensiveMatchups(type: Type) {
 }
 
 export function defensiveMatchups(t1: Type, t2: Type) {
-  const matchups = _.map(types, t => {
+  const matchups = types.map(t => {
     const eff = matchupFor(t1, t2, t);
     return new Matchup(t, eff);
   });

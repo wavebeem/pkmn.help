@@ -28,7 +28,8 @@
   "homepage": "https://github.com/wavebeem/pkmn.help#readme",
   "devDependencies": {
     "@types/classnames": "^2.2.7",
-    "@types/lodash": "^4.14.123",
+    "@types/lodash.flatmap": "^4.5.6",
+    "@types/lodash.frompairs": "^4.0.6",
     "@types/react": "^16.8.10",
     "@types/react-dom": "^16.8.3",
     "@types/smoothscroll-polyfill": "^0.3.1",
@@ -51,7 +52,8 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
-    "lodash": "^4.17.11",
+    "lodash.flatmap": "^4.5.0",
+    "lodash.frompairs": "^4.0.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "smoothscroll-polyfill": "^0.4.4",
