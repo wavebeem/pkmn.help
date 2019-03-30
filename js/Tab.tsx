@@ -65,6 +65,8 @@ export function TabItem(props: TabItemProps) {
   return <div>{props.children}</div>;
 }
 
+TabItem.displayName = "TabItem";
+
 interface TabContainerProps {
   changeTab: (index: number) => void;
   current: number;
@@ -80,3 +82,5 @@ export function TabContainer(props: TabContainerProps) {
     </div>
   );
 }
+
+TabContainer.displayName = "TabContainer";

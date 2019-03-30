@@ -40,4 +40,6 @@ function Defense(props: DefenseProps) {
   );
 }
 
+Defense.displayName = "Defense";
+
 export default Defense;

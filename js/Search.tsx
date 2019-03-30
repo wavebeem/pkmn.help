@@ -87,4 +87,6 @@ function Search(props: SearchProps) {
   );
 }
 
+Search.displayName = "Search";
+
 export default Search;

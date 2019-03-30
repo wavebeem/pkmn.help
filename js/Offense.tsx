@@ -39,4 +39,6 @@ function Offense(props: OffenseProps) {
   );
 }
 
+Offense.displayName = "Offense";
+
 export default Offense;

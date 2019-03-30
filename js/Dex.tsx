@@ -82,4 +82,6 @@ function Dex(props: DexProps) {
   );
 }
 
+Dex.displayName = "Dex";
+
 export default Dex;

@@ -134,4 +134,6 @@ function Paginator(props: PaginatorProps) {
   );
 }
 
+Paginator.displayName = "Paginator";
+
 export default Paginator;

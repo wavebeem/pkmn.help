@@ -31,4 +31,6 @@ function Button(props: ButtonProps) {
   );
 }
 
+Button.displayName = "Button";
+
 export default Button;

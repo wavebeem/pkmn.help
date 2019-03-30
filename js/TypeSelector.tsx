@@ -67,7 +67,9 @@ function TypeSelector(props: TypeSelectorProps) {
   const makeButton = (isDisabled: boolean, value: Type, type: Type) => {
     const style = isDisabled
       ? styles.disabled
-      : type === value ? styles.selected : styles.normal;
+      : type === value
+      ? styles.selected
+      : styles.normal;
     return (
       <button
         disabled={isDisabled}
@@ -95,5 +97,7 @@ function TypeSelector(props: TypeSelectorProps) {
   };
   return <div>{types.map(makeWrapper)}</div>;
 }
+
+TypeSelector.displayName = "TypeSelector";
 
 export default TypeSelector;

@@ -40,7 +40,10 @@ function section(title: string, types: Type[]) {
   );
 }
 
-function renderMatchups(makePrefix: (value: string) => string, matchups: GroupedMatchups) {
+function renderMatchups(
+  makePrefix: (value: string) => string,
+  matchups: GroupedMatchups
+) {
   return (
     <div className="tc">
       {section(makePrefix("4×"), matchups.typesFor(Effectiveness.QUADRUPLE))}
@@ -64,6 +67,8 @@ export function Defense(props: DefenseProps) {
   return renderMatchups(x => `takes ${x} from`, matchups);
 }
 
+Defense.displayName = "Matchups.Defense";
+
 export interface OffenseProps {
   type: Type;
 }
@@ -73,3 +78,5 @@ export function Offense(props: OffenseProps) {
   const matchups = offensiveMatchups(type);
   return renderMatchups(x => `deals ${x} to`, matchups);
 }
+
+Offense.displayName = "Matchups.Offense";
