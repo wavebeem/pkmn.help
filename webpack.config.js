@@ -48,7 +48,7 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"]
   },
   module: {
-    loaders: [svgLoader, tsLoader, lessLoader]
+    rules: [svgLoader, tsLoader, lessLoader]
   },
   plugins: [
     new webpack.EnvironmentPlugin(["NODE_ENV"]),
