@@ -41,7 +41,7 @@
     "less-loader": "^4.1.0",
     "npm-check": "^5.9.0",
     "prettier": "^1.16.4",
-    "react-svg-loader": "^2.1.0",
+    "react-svg-loader": "^3.0.1",
     "style-loader": "^0.23.1",
     "svg-inline-loader": "^0.8.0",
     "ts-loader": "^5.3.3",
