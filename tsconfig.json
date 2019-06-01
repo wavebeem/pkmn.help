@@ -6,13 +6,14 @@
     "noUnusedParameters": true,
     "allowJs": true,
     "outDir": "build",
-    "baseUrl": "js",
+    "baseUrl": "src",
     "sourceMap": true,
     "strict": true,
     "module": "es2015",
     "target": "es2017",
     "jsx": "react",
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
   },
   "include": ["src"],
   "exclude": ["node_modules"]
