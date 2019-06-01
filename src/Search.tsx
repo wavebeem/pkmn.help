@@ -1,5 +1,5 @@
-import * as React from "react";
-import * as classnames from "classnames";
+import React from "react";
+import classnames from "classnames";
 
 import ImageClear from "../svg/clear.svg";
 import ImageSearch from "../svg/search.svg";

@@ -1,6 +1,6 @@
-import * as React from "react";
-import * as classnames from "classnames";
-import * as _ from "lodash";
+import React from "react";
+import classnames from "classnames";
+import _ from "lodash";
 
 import Paginator from "./Paginator";
 import Search from "./Search";
