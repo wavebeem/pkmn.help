@@ -34,7 +34,7 @@ const tsLoader = {
 };
 
 module.exports = {
-  entry: [path.join(__dirname, "js/main.tsx")],
+  entry: [path.join(__dirname, "src/main.tsx")],
   output: {
     path: path.join(__dirname, "dist"),
     filename: "bundle.js"
