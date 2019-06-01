@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`.defensiveMatchups for normal and none .typesFor when effectiveness is double should contain the correct items 1`] = `
+Array [
+  "fighting",
+]
+`;
+
+exports[`.defensiveMatchups for normal and none .typesFor when effectiveness is regular should contain the correct items 1`] = `
+Array [
+  "normal",
+  "flying",
+  "poison",
+  "ground",
+  "rock",
+  "bug",
+  "steel",
+  "fire",
+  "water",
+  "grass",
+  "electric",
+  "psychic",
+  "ice",
+  "dragon",
+  "dark",
+  "fairy",
+]
+`;
+
+exports[`.defensiveMatchups for normal and none .typesFor when effectiveness is zero should contain the correct items 1`] = `
+Array [
+  "ghost",
+]
+`;
