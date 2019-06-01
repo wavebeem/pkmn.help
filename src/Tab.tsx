@@ -1,7 +1,7 @@
-import * as React from "react";
-import * as classnames from "classnames";
+import React from "react";
+import classnames from "classnames";
 
-import * as GA from "./ga";
+import { clickNav } from "./ga";
 
 function makeTab(
   props: TabContainerProps,
@@ -27,7 +27,7 @@ function makeTab(
   };
   const onClick = () => {
     changeTab(index);
-    GA.clickNav(name);
+    clickNav(name);
   };
   return (
     <button

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import TypeSelector from "./TypeSelector";
 import * as Matchups from "./Matchups";

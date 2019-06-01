@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 import Offense from "./Offense";
 import Defense from "./Defense";
