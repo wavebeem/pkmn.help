@@ -9,7 +9,7 @@ import { AllPokemon } from "./pkmn";
 import Footer from "./Footer";
 
 function App() {
-  const [tab, changeTab] = React.useState(2);
+  var [tab, changeTab] = React.useState(2);
   const [type0, updateType0] = React.useState(Type.NORMAL);
   const [type1, updateType1] = React.useState(Type.NORMAL);
   const [type2, updateType2] = React.useState(Type.NONE);
@@ -50,6 +50,7 @@ function App() {
           </TabItem>
           <TabItem name="pokedex" title="Pokédex">
             <Dex
+              changeTab={changeTab}
               updateCurrentPage={updateCurrentPage}
               updateSearch={updateSearch}
               currentPage={currentPage}

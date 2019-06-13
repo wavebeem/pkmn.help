@@ -5,14 +5,11 @@ import _ from "lodash";
 import Paginator from "./Paginator";
 import Search from "./Search";
 import { Type } from "./data";
-// import TypeSelector from "./TypeSelector";
-import * as Matchups from "./Matchups";
 import { Pokemon } from "./pkmn";
 
 const PAGE_SIZE = 50;
 
 function makeType(t: Type, i: number) {
-  const [type0, updateType0] = React.useState(t);
   const className = classnames(
     `type-${t}`,
     "ttu tc b",
@@ -25,19 +22,13 @@ function makeType(t: Type, i: number) {
   const style = {
     minWidth: "7em"
   };
-  const onMouseEnter = () => {
-    //This doesn't change the types
-    updateType0(Type.GRASS);
-    document.getElementsByClassName("DefensePreview")[0].classList.remove("hidden");
-    document.getElementsByClassName("OffensePreview")[0].classList.remove("hidden");
-  };
-  const onMouseLeave = () => {
-    document.getElementsByClassName("DefensePreview")[0].classList.add("hidden");
-    document.getElementsByClassName("OffensePreview")[0].classList.add("hidden");
+  const onClick = () => {
+    //Change to offense tab
+    //Change active type
   };
   return (
-    <button key={type0} className={className} style={style} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-      {type0}
+    <button key={t} className={className} style={style} onClick={onClick}>
+      {t}
     </button>
   );
 }
@@ -53,8 +44,13 @@ function makePKMN(p: Pokemon, i: number) {
   );
   const displayNumber = "#" + String(p.number).padStart(3, "0");
   const style = { minHeight: "100px" };
+  const onClick = () => {
+    document.getElementsByClassName("DefensePreview")[0].classList.toggle("hidden");
+    //This doesn't change the types
+    // updateType0(Type.GRASS);
+  };
   return (
-    <div key={`pkmn-${p.number}`} className={className} style={style}>
+    <div key={`pkmn-${p.number}`} className={className} style={style} onClick={onClick}>
       <div className="flex-auto f4 f3-ns mv0">
         <h2 className="truncate mt0 mb1">{p.name}</h2>
         <p className="gray mv0">{displayNumber}</p>
@@ -65,6 +61,7 @@ function makePKMN(p: Pokemon, i: number) {
 }
 
 interface DexProps {
+  changeTab: (index: number) => void;
   updateSearch(search: string): void;
   updateCurrentPage(page: number): void;
   currentPage: number;
@@ -73,12 +70,12 @@ interface DexProps {
 }
 
 function Dex(props: DexProps) {
-  const { pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
+  const { changeTab, pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
   const searchInput = <Search search={search} updateSearch={updateSearch} />;
   const emptyState = <p className="silver f1 b tc m0">no pokémon found</p>;
-  const [type0] = React.useState(Type.NORMAL);
-  const [type1] = React.useState(Type.NORMAL);
-  const [type2] = React.useState(Type.NONE);
+  setTimeout(()=>{
+    changeTab(2);
+  },0);
   const mons = (
     <Paginator
       currentPage={currentPage}
@@ -91,22 +88,10 @@ function Dex(props: DexProps) {
     />
   );
   return (
-    <div>
       <div className="ph2 mt3 center mw7">
         <div className="ph1">{searchInput}</div>
         {mons}
       </div>
-      <div className="OffensePreview dib w-20-ns v-top pl3-ns mt4-ns hidden">
-        <h2 className="tc">Offense</h2>
-        <hr className="dn-ns subtle-hr mv4" />
-        <Matchups.Offense type={type0} />
-      </div>
-      <div className="DefensePreview dib w-20-ns v-top pl3-ns mt4-ns hidden">
-        <h2 className="tc">Defense</h2>
-        <hr className="dn-ns subtle-hr mv4" />
-        <Matchups.Defense type1={type1} type2={type2} />
-      </div>
-    </div>
   );
 }
 
