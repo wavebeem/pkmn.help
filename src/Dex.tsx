@@ -9,6 +9,11 @@ import { Pokemon } from "./pkmn";
 
 const PAGE_SIZE = 50;
 
+var gChangeTab: (index: number) => void;
+var gupdateType0: (index: Type) => void;
+var gupdateType1: (index: Type) => void;
+var gupdateType2: (index: Type) => void;
+
 function makeType(t: Type, i: number) {
   const className = classnames(
     `type-${t}`,
@@ -23,8 +28,8 @@ function makeType(t: Type, i: number) {
     minWidth: "7em"
   };
   const onClick = () => {
-    //Change to offense tab
-    //Change active type
+    gChangeTab(0);
+    gupdateType0(t);
   };
   return (
     <button key={t} className={className} style={style} onClick={onClick}>
@@ -45,9 +50,9 @@ function makePKMN(p: Pokemon, i: number) {
   const displayNumber = "#" + String(p.number).padStart(3, "0");
   const style = { minHeight: "100px" };
   const onClick = () => {
-    document.getElementsByClassName("DefensePreview")[0].classList.toggle("hidden");
-    //This doesn't change the types
-    // updateType0(Type.GRASS);
+    gChangeTab(1);
+    gupdateType1(p.types[0]);
+    gupdateType2(p.types[1]);
   };
   return (
     <div key={`pkmn-${p.number}`} className={className} style={style} onClick={onClick}>
@@ -62,6 +67,9 @@ function makePKMN(p: Pokemon, i: number) {
 
 interface DexProps {
   changeTab: (index: number) => void;
+  updateType0: (index: Type) => void;
+  updateType1: (index: Type) => void;
+  updateType2: (index: Type) => void;
   updateSearch(search: string): void;
   updateCurrentPage(page: number): void;
   currentPage: number;
@@ -70,12 +78,13 @@ interface DexProps {
 }
 
 function Dex(props: DexProps) {
-  const { changeTab, pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
+  const { changeTab,updateType0, updateType1, updateType2, pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
   const searchInput = <Search search={search} updateSearch={updateSearch} />;
   const emptyState = <p className="silver f1 b tc m0">no pokémon found</p>;
-  setTimeout(()=>{
-    changeTab(2);
-  },0);
+  gChangeTab = changeTab;
+  gupdateType0 = updateType0;
+  gupdateType1 = updateType1;
+  gupdateType2 = updateType2;
   const mons = (
     <Paginator
       currentPage={currentPage}

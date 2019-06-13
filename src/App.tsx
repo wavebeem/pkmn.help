@@ -51,6 +51,9 @@ function App() {
           <TabItem name="pokedex" title="Pokédex">
             <Dex
               changeTab={changeTab}
+              updateType0={updateType0}
+              updateType1={updateType1}
+              updateType2={updateType2}
               updateCurrentPage={updateCurrentPage}
               updateSearch={updateSearch}
               currentPage={currentPage}
