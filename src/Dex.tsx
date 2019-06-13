@@ -24,27 +24,22 @@ function makeType(t: Type, i: number) {
   const style = {
     minWidth: "7em"
   };
-  // const onClick = (t: Type) => {
-  //   var types = {
-  //     type1: t,
-  //     type2: Type.NONE
-  //   }
-  //   return Matchups.Defense(types);
-  //   //Change type of the offensive tab
-  //   //Change active tab to offensive tab
-  // };
+  const onMouseEnter = () => {
+    //This doesn't change the types
+    var types = {
+      type1: Type.FIRE,
+      type2: Type.NONE
+    }
+    document.getElementsByClassName("DefensePreview")[0].classList.remove("hidden");
+    document.getElementsByClassName("OffensePreview")[0].classList.remove("hidden");
+    Matchups.Defense(types);
+  };
+  const onMouseLeave = () => {
+    document.getElementsByClassName("DefensePreview")[0].classList.add("hidden");
+    document.getElementsByClassName("OffensePreview")[0].classList.add("hidden");
+  };
   return (
-    <button key={t} className={className} style={style} onClick={() => {
-      //This doesn't change the types
-      var types = {
-        type1: Type.FIRE,
-        type2: Type.NONE
-      }
-      // console.log({t});
-      Matchups.Defense(types);
-      //Change type of the offensive tab
-      //Change active tab to offensive tab
-    }}>
+    <button key={t} className={className} style={style} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
       {t}
     </button>
   );
@@ -84,6 +79,7 @@ function Dex(props: DexProps) {
   const { pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
   const searchInput = <Search search={search} updateSearch={updateSearch} />;
   const emptyState = <p className="silver f1 b tc m0">no pokémon found</p>;
+  var type0 = Type.WATER;
   var type1 = Type.FIRE;
   var type2 = Type.NORMAL;
   const mons = (
@@ -103,7 +99,13 @@ function Dex(props: DexProps) {
         <div className="ph1">{searchInput}</div>
         {mons}
       </div>
-      <div className="DefensePreview dib w-20-ns v-top pl3-ns mt4-ns">
+      <div className="OffensePreview dib w-20-ns v-top pl3-ns mt4-ns hidden">
+        <h2 className="tc">Defense</h2>
+        <hr className="dn-ns subtle-hr mv4" />
+        <Matchups.Offense type={type0} />
+      </div>
+      <div className="DefensePreview dib w-20-ns v-top pl3-ns mt4-ns hidden">
+        <h2 className="tc">Defense</h2>
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups.Defense type1={type1} type2={type2} />
       </div>
