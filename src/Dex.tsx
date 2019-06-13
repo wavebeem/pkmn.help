@@ -27,9 +27,10 @@ function makeType(t: Type, i: number) {
   const style = {
     minWidth: "7em"
   };
-  const onClick = () => {
+  const onClick = (e: any) => {
     gChangeTab(0);
     gupdateType0(t);
+    e.stopPropagation();
   };
   return (
     <button key={t} className={className} style={style} onClick={onClick}>
