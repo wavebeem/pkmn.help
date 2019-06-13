@@ -53,7 +53,11 @@ function makePKMN(p: Pokemon, i: number) {
   const onClick = () => {
     gChangeTab(1);
     gupdateType1(p.types[0]);
-    gupdateType2(p.types[1]);
+    if (p.types[1]){
+      gupdateType2(p.types[1]);
+    } else {
+      gupdateType2(Type.NONE);
+    }
   };
   return (
     <div key={`pkmn-${p.number}`} className={className} style={style} onClick={onClick}>
