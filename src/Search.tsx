@@ -12,6 +12,7 @@ interface SearchProps {
 function Search(props: SearchProps) {
   const { updateSearch, search } = props;
   const clearSearch = () => {
+    document.getElementsByTagName("input")[0].focus();
     updateSearch("");
   };
   const onChange = (event: any) => {
@@ -25,6 +26,7 @@ function Search(props: SearchProps) {
       autoCorrect="off"
       inputMode="verbatim"
       autoCapitalize="none"
+      autoFocus={true}
       className={classnames(
         "f2 w-100 border-box",
         "pv2",
