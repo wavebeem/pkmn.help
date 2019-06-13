@@ -5,6 +5,8 @@ import _ from "lodash";
 import Paginator from "./Paginator";
 import Search from "./Search";
 import { Type } from "./data";
+// import TypeSelector from "./TypeSelector";
+import * as Matchups from "./Matchups";
 import { Pokemon } from "./pkmn";
 
 const PAGE_SIZE = 50;
@@ -22,10 +24,29 @@ function makeType(t: Type, i: number) {
   const style = {
     minWidth: "7em"
   };
+  // const onClick = (t: Type) => {
+  //   var types = {
+  //     type1: t,
+  //     type2: Type.NONE
+  //   }
+  //   return Matchups.Defense(types);
+  //   //Change type of the offensive tab
+  //   //Change active tab to offensive tab
+  // };
   return (
-    <span key={t} className={className} style={style}>
+    <button key={t} className={className} style={style} onClick={() => {
+      //This doesn't change the types
+      var types = {
+        type1: Type.FIRE,
+        type2: Type.NONE
+      }
+      // console.log({t});
+      Matchups.Defense(types);
+      //Change type of the offensive tab
+      //Change active tab to offensive tab
+    }}>
       {t}
-    </span>
+    </button>
   );
 }
 
@@ -63,6 +84,8 @@ function Dex(props: DexProps) {
   const { pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
   const searchInput = <Search search={search} updateSearch={updateSearch} />;
   const emptyState = <p className="silver f1 b tc m0">no pokémon found</p>;
+  var type1 = Type.FIRE;
+  var type2 = Type.NORMAL;
   const mons = (
     <Paginator
       currentPage={currentPage}
@@ -75,9 +98,15 @@ function Dex(props: DexProps) {
     />
   );
   return (
-    <div className="ph2 mt3 center mw7">
-      <div className="ph1">{searchInput}</div>
-      {mons}
+    <div>
+      <div className="ph2 mt3 center mw7">
+        <div className="ph1">{searchInput}</div>
+        {mons}
+      </div>
+      <div className="DefensePreview dib w-20-ns v-top pl3-ns mt4-ns">
+        <hr className="dn-ns subtle-hr mv4" />
+        <Matchups.Defense type1={type1} type2={type2} />
+      </div>
     </div>
   );
 }
