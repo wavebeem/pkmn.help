@@ -12,6 +12,7 @@ import { Pokemon } from "./pkmn";
 const PAGE_SIZE = 50;
 
 function makeType(t: Type, i: number) {
+  const [type0, updateType0] = React.useState(t);
   const className = classnames(
     `type-${t}`,
     "ttu tc b",
@@ -26,21 +27,17 @@ function makeType(t: Type, i: number) {
   };
   const onMouseEnter = () => {
     //This doesn't change the types
-    var types = {
-      type1: Type.FIRE,
-      type2: Type.NONE
-    }
+    updateType0(Type.GRASS);
     document.getElementsByClassName("DefensePreview")[0].classList.remove("hidden");
     document.getElementsByClassName("OffensePreview")[0].classList.remove("hidden");
-    Matchups.Defense(types);
   };
   const onMouseLeave = () => {
     document.getElementsByClassName("DefensePreview")[0].classList.add("hidden");
     document.getElementsByClassName("OffensePreview")[0].classList.add("hidden");
   };
   return (
-    <button key={t} className={className} style={style} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
-      {t}
+    <button key={type0} className={className} style={style} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
+      {type0}
     </button>
   );
 }
@@ -79,9 +76,9 @@ function Dex(props: DexProps) {
   const { pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
   const searchInput = <Search search={search} updateSearch={updateSearch} />;
   const emptyState = <p className="silver f1 b tc m0">no pokémon found</p>;
-  var type0 = Type.WATER;
-  var type1 = Type.FIRE;
-  var type2 = Type.NORMAL;
+  const [type0] = React.useState(Type.NORMAL);
+  const [type1] = React.useState(Type.NORMAL);
+  const [type2] = React.useState(Type.NONE);
   const mons = (
     <Paginator
       currentPage={currentPage}
@@ -100,7 +97,7 @@ function Dex(props: DexProps) {
         {mons}
       </div>
       <div className="OffensePreview dib w-20-ns v-top pl3-ns mt4-ns hidden">
-        <h2 className="tc">Defense</h2>
+        <h2 className="tc">Offense</h2>
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups.Offense type={type0} />
       </div>
