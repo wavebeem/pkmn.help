@@ -27,7 +27,7 @@ function makeType(t: Type, i: number) {
   const style = {
     minWidth: "7em"
   };
-  const onClick = (e: any) => {
+  const onClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     gChangeTab(0);
     gupdateType0(t);
     e.stopPropagation();
