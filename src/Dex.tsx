@@ -41,7 +41,9 @@ function makePKMN(p: Pokemon, i: number) {
   const displayNumber = "#" + String(p.number).padStart(3, "0");
   const style = { minHeight: "100px" };
   return (
-    <div key={`pkmn-${p.number}`} className={className} style={style}>
+    // I really hope this stays unique... if not I will need to augment my data
+    // sources somehow.
+    <div key={`pkmn-${p.number}-${p.types.join("_")}`} className={className} style={style}>
       <div className="flex-auto f4 f3-ns mv0">
         <h2 className="truncate mt0 mb1">{p.name}</h2>
         <p className="gray mv0">{displayNumber}</p>
