@@ -6,12 +6,7 @@ Pokémon Type Calculator helps you figure out offense/defense matchups for Poké
 
 ## Development
 
-Keep both of these running:
-
 ```
-$ npm run serve
-```
-
-```
-$ npm run watch:css
+$ npm install
+$ npm start
 ```
