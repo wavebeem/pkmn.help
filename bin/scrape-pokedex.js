@@ -22,8 +22,8 @@ function main() {
         const type1 = data[4].toLowerCase();
         const type2 = data[5] ? data[5].toLowerCase() : undefined;
         const monster = {
-          number: Number(data[1].slice(1)),
           name: data[3],
+          number: Number(data[1].slice(1)),
           types: [type1, type2].filter(x => x)
         };
         monsters.push(monster);
