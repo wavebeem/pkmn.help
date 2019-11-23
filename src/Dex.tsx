@@ -15,11 +15,11 @@ function makeType(t: Type, i: number) {
   const className = classnames(
     `type type-${t} with-border-color`,
     "ttu tc b",
-    "db ph1 pv2",
-    "br1 ba",
+    "db ph0 pv1",
+    "br1 ba f6 f5-ns",
     { mt1: i > 0 }
   );
-  const style = { minWidth: 100 };
+  const style = { minWidth: "6em" };
   return (
     <span key={`type-${t}`} className={className} style={style}>
       {t}

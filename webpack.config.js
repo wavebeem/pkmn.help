@@ -25,7 +25,7 @@ const fileLoader = {
   test: /\.png$/,
   loader: "file-loader",
   options: {
-    name: "[path][name]-[hash].[ext]"
+    name: "assets/[hash].[ext]"
   },
   include: path.resolve(__dirname, "img")
 };
