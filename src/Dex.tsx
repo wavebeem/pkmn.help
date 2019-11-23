@@ -6,21 +6,21 @@ import Paginator from "./Paginator";
 import Search from "./Search";
 import { Type } from "./data";
 import { Pokemon } from "./pkmn";
+import getImage from "./getImage";
 
 const PAGE_SIZE = 50;
 
 function makeType(t: Type, i: number) {
   const className = classnames(
-    `type type-${t}`,
+    `type type-${t} with-border-color`,
     "ttu tc b",
     "db ph1 pv2",
     "br1 ba",
-    "badge with-border-color",
     { mt1: i > 0 }
   );
   const style = { minWidth: 100 };
   return (
-    <span key={t} className={className} style={style}>
+    <span key={`type-${t}`} className={className} style={style}>
       {t}
     </span>
   );
@@ -37,16 +37,18 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[]) {
   );
   const displayNumber = "#" + String(p.number).padStart(3, "0");
   const style = { minHeight: "100px" };
+  const imgSize = 40 * 2;
   return (
-    // I really hope this stays unique... if not I will need to augment my data
-    // sources somehow.
-    <div
-      key={`pkmn-${p.number}-${p.types.join("_")}`}
-      className={className}
-      style={style}
-    >
-      <div className="flex-auto f4 f3-ns mv0">
-        <h2 className="truncate mt0 mb1">{p.name}</h2>
+    <div key={p.id} className={className} style={style}>
+      <img
+        src={getImage(p.id)}
+        // className="bg-white-60 br1 ba b--black-10 mr3 Pixelated"
+        className="mr3 Pixelated"
+        width={imgSize}
+        height={imgSize}
+      />
+      <div className="flex-auto mv0">
+        <h2 className="truncate mt0 mb1 f4 f3-ns">{p.name}</h2>
         <p className="gray mv0">{displayNumber}</p>
       </div>
       <div>{p.types.map(makeType)}</div>
@@ -70,7 +72,7 @@ function Dex(props: DexProps) {
       <Search search={search} updateSearch={updateSearch} />
       <p className="mv4 bg-washed-yellow pa2 br2 ba b--black-20">
         <b>NEW:</b> Pokémon Sword & Shield, regional variants (e.g. Alola,
-        Galar)
+        Galar), Pokédex images
       </p>
       <Paginator
         currentPage={currentPage}

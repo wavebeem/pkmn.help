@@ -23,7 +23,7 @@ function Badge({ type }: BadgeProps) {
     "ttu tc b f5"
   );
   return (
-    <div key={type} className={className} style={style}>
+    <div className={className} style={style}>
       {type}
     </div>
   );
@@ -39,14 +39,14 @@ function Section({ title, types }: SectionProps) {
     return null;
   }
   return (
-    <React.Fragment>
+    <div>
       <h3 className="f4 mt3 mb0 dark-gray">{title}</h3>
       <div className="mw6 center MatchupsSection-Container">
         {types.map(t => (
-          <Badge type={t} />
+          <Badge key={`type-${t}`} type={t} />
         ))}
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 

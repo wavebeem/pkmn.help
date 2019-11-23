@@ -31,7 +31,7 @@ function makeTab(
   };
   return (
     <button
-      key={index}
+      key={`tab-${index}`}
       className={className}
       onClick={onClick}
       style={style}

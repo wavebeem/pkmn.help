@@ -77,7 +77,7 @@ function createPaginationButtons<T>({
       )}
     >
       <div>{prevButton(loc, props, hasPrev)}</div>
-      <div className="flex-auto tc b f3">
+      <div className="flex-auto tc b f4">
         page {props.currentPage + 1} of {numPages}
       </div>
       <div>{nextButton(loc, props, hasNext)}</div>

@@ -1,12 +1,6 @@
-/* html {
-  font-size: 12px;
+.Pixelated {
+  image-rendering: crisp-edges;
 }
-
-@media (max-width: 800px) {
-  html {
-    font-size: 14px;
-  }
-} */
 
 .MatchupsSection-Container {
   display: flex;

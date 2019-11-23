@@ -9,24 +9,26 @@
 
 function main() {
   const monsters = [];
+  let id = 0;
   for (const table of document.querySelectorAll("table")) {
     const firstHeader = table.querySelector("th");
     if (firstHeader && firstHeader.textContent.trim().endsWith("dex")) {
       for (const row of table.querySelectorAll("tr")) {
-        const data = [...row.querySelectorAll("td")].map(d =>
-          d.textContent.trim()
-        );
+        const elements = [...row.querySelectorAll("td")];
+        const data = elements.map(d => d.textContent.trim());
         if (data.length <= 0) {
           continue;
         }
         const type1 = data[4].toLowerCase();
         const type2 = data[5] ? data[5].toLowerCase() : undefined;
         const monster = {
+          id: `pkmn-${id}`,
           name: data[3],
           number: Number(data[1].slice(1)),
           types: [type1, type2].filter(x => x)
         };
         monsters.push(monster);
+        id++;
       }
     }
   }

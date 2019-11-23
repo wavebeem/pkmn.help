@@ -21,6 +21,15 @@ const svgLoader = {
   ]
 };
 
+const fileLoader = {
+  test: /\.png$/,
+  loader: "file-loader",
+  options: {
+    name: "[path][name]-[hash].[ext]"
+  },
+  include: path.resolve(__dirname, "img")
+};
+
 const cssLoader = {
   test: /\.css$/,
   use: ["style-loader", "css-loader"]
@@ -49,7 +58,7 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"]
   },
   module: {
-    rules: [svgLoader, tsLoader, cssLoader]
+    rules: [svgLoader, tsLoader, cssLoader, fileLoader]
   },
   plugins: [
     new webpack.EnvironmentPlugin(["NODE_ENV"]),

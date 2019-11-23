@@ -70,7 +70,7 @@ function TypeSelector(props: TypeSelectorProps) {
       : styles.normal;
     return (
       <button
-        key={type}
+        key={`type-${type}`}
         disabled={isDisabled}
         className={classnames(
           style,
