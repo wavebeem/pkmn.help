@@ -10,15 +10,15 @@ import {
 } from "./data";
 
 function badge(type: Type) {
-  const style = { minWidth: "7.5em" };
+  const style = { width: 120 };
   const className = classnames(
-    `type-${type}`,
+    `type type-${type}`,
     "ba b--black-10",
     "badge",
     "with-border-color",
     "dib pv2 ph3",
     "br1",
-    "ma--2px",
+    // "ma--2px",
     "ttu tc b f5 f4-l"
   );
   return (
@@ -35,7 +35,9 @@ function section(title: string, types: Type[]) {
   return (
     <div>
       <h3 className="f4 mt3 mb0 dark-gray">{title}</h3>
-      <div className="mw6 center">{types.map(badge)}</div>
+      <div className="mw6 center MatchupsSection-Container">
+        {types.map(badge)}
+      </div>
     </div>
   );
 }

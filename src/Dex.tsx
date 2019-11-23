@@ -11,7 +11,7 @@ const PAGE_SIZE = 50;
 
 function makeType(t: Type, i: number) {
   const className = classnames(
-    `type-${t}`,
+    `type type-${t}`,
     "ttu tc b",
     "db ph1 pv2",
     "f5-ns f6",
@@ -43,7 +43,11 @@ function makePKMN(p: Pokemon, i: number) {
   return (
     // I really hope this stays unique... if not I will need to augment my data
     // sources somehow.
-    <div key={`pkmn-${p.number}-${p.types.join("_")}`} className={className} style={style}>
+    <div
+      key={`pkmn-${p.number}-${p.types.join("_")}`}
+      className={className}
+      style={style}
+    >
       <div className="flex-auto f4 f3-ns mv0">
         <h2 className="truncate mt0 mb1">{p.name}</h2>
         <p className="gray mv0">{displayNumber}</p>

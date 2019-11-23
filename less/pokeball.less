@@ -1,11 +1,10 @@
-@pokeball_border_size: 12px;
-@pokeball_circle_size: 40px;
-
 .pokeball-header {
-  border-bottom: @pokeball_border_size solid black;
+  --pokeball-border-size: 12px;
+  --pokeball-circle-size: 40px;
+  border-bottom: var(--pokeball-border-size) solid black;
   padding: 20px;
-  padding-top: (1.0 * @pokeball_circle_size);
-  padding-bottom: (1.1 * @pokeball_circle_size);
+  padding-top: calc(1 * var(--pokeball-circle-size));
+  padding-bottom: calc(1.1 * var(--pokeball-circle-size));
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -15,14 +14,12 @@
   content: " ";
   background: white;
   border: 8px solid black;
-  box-shadow:
-    inset 0 0 0 5px white,
-    inset 0 0 0 7px #ccc;
-  width: @pokeball_circle_size;
-  height: @pokeball_circle_size;
+  box-shadow: inset 0 0 0 5px white, inset 0 0 0 7px #ccc;
+  width: var(--pokeball-circle-size);
+  height: var(--pokeball-circle-size);
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  bottom: (-@pokeball_border_size / 2);
+  bottom: calc(var(--pokeball-border-size) / -2);
   transform: translateX(-50%) translateY(50%);
 }
