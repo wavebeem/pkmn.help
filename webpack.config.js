@@ -10,7 +10,7 @@ const fileLoader = {
   test: /\.(png|svg)$/,
   loader: "file-loader",
   options: {
-    name: "files/[hash].[ext]"
+    name: "files/[path][name].[contenthash:8].[ext]"
   },
   include: [path.resolve(__dirname, "img"), path.resolve(__dirname, "svg")]
 };

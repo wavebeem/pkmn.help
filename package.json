@@ -5,7 +5,7 @@
   "description": "Pokémon type calculator",
   "scripts": {
     "upgrade": "npm-check -u",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server",
     "build:ico": "bash bin/make-ico",
     "build:pkmn": "ruby bin/make-pkmn",
     "build:bundle": "webpack -p",
