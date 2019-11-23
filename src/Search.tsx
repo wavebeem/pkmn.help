@@ -19,7 +19,7 @@ function Search(props: SearchProps) {
   };
   const input = (
     <input
-      aria-label="search"
+      aria-label="Search"
       type="text"
       autoComplete="off"
       autoCorrect="off"

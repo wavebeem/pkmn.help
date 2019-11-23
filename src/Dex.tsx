@@ -19,9 +19,7 @@ function makeType(t: Type, i: number) {
     "badge with-border-color",
     { mt1: i > 0 }
   );
-  const style = {
-    minWidth: "7em"
-  };
+  const style = { minWidth: 100 };
   return (
     <span key={t} className={className} style={style}>
       {t}
@@ -29,14 +27,14 @@ function makeType(t: Type, i: number) {
   );
 }
 
-function makePKMN(p: Pokemon, i: number) {
+function makePKMN(p: Pokemon, i: number, a: Pokemon[]) {
   const className = classnames(
     "b--black-10",
     "ph2 pv3",
     "bb flex items-center",
     { bt: i === 0 },
     { mt3: i === 0 },
-    { mb3: i === PAGE_SIZE - 1 }
+    { mb3: i === a.length - 1 }
   );
   const displayNumber = "#" + String(p.number).padStart(3, "0");
   const style = { minHeight: "100px" };
@@ -67,23 +65,19 @@ interface DexProps {
 
 function Dex(props: DexProps) {
   const { pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
-  const searchInput = <Search search={search} updateSearch={updateSearch} />;
-  const emptyState = <p className="silver f1 b tc m0">no pokémon found</p>;
-  const mons = (
-    <Paginator
-      currentPage={currentPage}
-      updatePageNext={() => updateCurrentPage(currentPage + 1)}
-      updatePagePrev={() => updateCurrentPage(currentPage - 1)}
-      pageSize={PAGE_SIZE}
-      emptyState={emptyState}
-      items={pkmn}
-      render={makePKMN}
-    />
-  );
   return (
     <div className="ph2 mt3 center mw7">
-      <div className="ph1">{searchInput}</div>
-      {mons}
+      <div className="ph1" />
+      <Search search={search} updateSearch={updateSearch} />
+      <Paginator
+        currentPage={currentPage}
+        updatePageNext={() => updateCurrentPage(currentPage + 1)}
+        updatePagePrev={() => updateCurrentPage(currentPage - 1)}
+        pageSize={PAGE_SIZE}
+        emptyState={<p className="silver f1 b tc m0">no pokémon found</p>}
+        items={pkmn}
+        render={makePKMN}
+      />
     </div>
   );
 }

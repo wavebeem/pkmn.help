@@ -16,9 +16,9 @@ enum Location {
   BOTTOM = "bottom"
 }
 
-function prevButton(
+function prevButton<T>(
   loc: Location,
-  { updatePagePrev }: PaginatorProps,
+  { updatePagePrev }: PaginatorProps<T>,
   show: boolean
 ) {
   const onClick = () => {
@@ -29,15 +29,15 @@ function prevButton(
   };
   const disabled = !show;
   return (
-    <Button onClick={onClick} disabled={disabled}>
-      <span className="sr-only">Previous</span>&laquo;
+    <Button onClick={onClick} disabled={disabled} aria-label="Previous">
+      &laquo;
     </Button>
   );
 }
 
-function nextButton(
+function nextButton<T>(
   loc: Location,
-  { updatePageNext }: PaginatorProps,
+  { updatePageNext }: PaginatorProps<T>,
   show: boolean
 ) {
   const onClick = () => {
@@ -48,13 +48,13 @@ function nextButton(
   };
   const disabled = !show;
   return (
-    <Button onClick={onClick} disabled={disabled}>
-      <span className="sr-only">Next</span>&raquo;
+    <Button onClick={onClick} disabled={disabled} aria-label="Next">
+      &raquo;
     </Button>
   );
 }
 
-function createPaginationButtons({
+function createPaginationButtons<T>({
   numPages,
   pageItems,
   loc,
@@ -65,7 +65,7 @@ function createPaginationButtons({
   numPages: number;
   pageItems: any[];
   loc: Location;
-  props: PaginatorProps;
+  props: PaginatorProps<T>;
   hasPrev: boolean;
   hasNext: boolean;
 }) {
@@ -85,17 +85,17 @@ function createPaginationButtons({
   );
 }
 
-interface PaginatorProps {
+interface PaginatorProps<T> {
   updatePagePrev: () => void;
   updatePageNext: () => void;
   currentPage: number;
   pageSize: number;
   emptyState: any;
   items: any[];
-  render: (item: any, index: number) => any;
+  render: (item: T, index: number, array: T[]) => any;
 }
 
-function Paginator(props: PaginatorProps) {
+function Paginator<T>(props: PaginatorProps<T>) {
   const { currentPage, pageSize, items, emptyState, render } = props;
   const numPages = Math.ceil(items.length / pageSize);
   const hasPrev = currentPage > 0;

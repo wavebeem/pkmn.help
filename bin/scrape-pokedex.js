@@ -8,7 +8,7 @@
 // Now paste this data into the JSON file
 
 function main() {
-  var monsters = [];
+  const monsters = [];
   for (const table of document.querySelectorAll("table")) {
     const firstHeader = table.querySelector("th");
     if (firstHeader && firstHeader.textContent.trim().endsWith("dex")) {
