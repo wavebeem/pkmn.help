@@ -7,6 +7,7 @@ import Search from "./Search";
 import { Type } from "./data";
 import { Pokemon } from "./pkmn";
 import getImage from "./getImage";
+import { clickPokemon } from "./ga";
 
 const PAGE_SIZE = 50;
 
@@ -14,11 +15,11 @@ function makeType(t: Type, i: number) {
   const className = classnames(
     `type type-${t} with-border-color`,
     "ttu tc b",
-    "db ph1 pv2",
-    "br1 ba",
+    "db ph0 pv1",
+    "br1 ba f6 f5-ns",
     { mt1: i > 0 }
   );
-  const style = { minWidth: 100 };
+  const style = { minWidth: "6em" };
   return (
     <span key={`type-${t}`} className={className} style={style}>
       {t}
@@ -56,6 +57,7 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
             props.updateType1(type1);
             props.updateType2(type2 || Type.NONE);
             props.changeTab(1);
+            clickPokemon(p.id);
           }}
         >
           <h2 className="di truncate mv0 f4 f3-ns">{p.name}</h2>

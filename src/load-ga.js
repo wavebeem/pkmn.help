@@ -23,7 +23,7 @@ if (window.location.hostname === "pkmn.help") {
   ga("create", "UA-52704502-5", "auto");
   ga("send", "pageview");
 } else {
-  window.ga = function() {
-    console.log([].slice.call(arguments));
+  window.ga = function(...args) {
+    console.log(...args);
   };
 }

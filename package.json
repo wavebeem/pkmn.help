@@ -5,7 +5,7 @@
   "description": "Pokémon type calculator",
   "scripts": {
     "upgrade": "npm-check -u",
-    "start": "webpack-dev-server --open",
+    "start": "webpack-dev-server",
     "build:ico": "bash bin/make-ico",
     "build:pkmn": "ruby bin/make-pkmn",
     "build:bundle": "webpack -p",
@@ -49,9 +49,7 @@
     "jest-svg-transformer": "^1.0.0",
     "npm-check": "^5.9.0",
     "prettier": "^1.16.4",
-    "react-svg-loader": "^3.0.1",
     "style-loader": "^0.23.1",
-    "svg-inline-loader": "^0.8.0",
     "ts-jest": "^24.0.2",
     "ts-loader": "^5.3.3",
     "typescript": "^3.4.1",

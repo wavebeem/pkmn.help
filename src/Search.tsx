@@ -1,8 +1,8 @@
 import React from "react";
 import classnames from "classnames";
 
-import ImageClear from "../svg/clear.svg";
-import ImageSearch from "../svg/search.svg";
+import imageClearURL from "../svg/clear.svg";
+import imageSearchURL from "../svg/search.svg";
 
 interface SearchProps {
   updateSearch(search: string): any;
@@ -11,78 +11,50 @@ interface SearchProps {
 
 function Search(props: SearchProps) {
   const { updateSearch, search } = props;
-  const clearSearch = () => {
-    updateSearch("");
-  };
-  const onChange = (event: any) => {
-    updateSearch(event.target.value);
-  };
-  const input = (
-    <input
-      aria-label="Search"
-      type="text"
-      autoComplete="off"
-      autoCorrect="off"
-      inputMode="verbatim"
-      autoCapitalize="none"
-      className={classnames(
-        "f2 w-100 border-box",
-        "pv2",
-        "chunky-focus",
-        "inset-shadow",
-        "br-pill ba",
-        "bg-white",
-        "hover-bg-washed-blue",
-        "b--black-30",
-        "search-placeholder-light"
-      )}
-      style={{
-        paddingLeft: 65,
-        paddingRight: 65,
-        height: 55
-      }}
-      placeholder="Search"
-      value={search}
-      onChange={onChange}
-    />
-  );
-  const icon = (
-    <div
-      className="absolute"
-      style={{
-        fill: "black",
-        opacity: 0.5,
-        width: 40,
-        height: 40,
-        left: 12,
-        top: 10
-      }}
-    >
-      <ImageSearch />
-    </div>
-  );
-  const clear = (
-    <div
-      role="presentation"
-      onClick={clearSearch}
-      className={classnames("absolute pointer", { dn: search === "" })}
-      style={{
-        fill: "black",
-        opacity: 0.5,
-        width: 40,
-        height: 40,
-        right: 8,
-        top: 8
-      }}
-    >
-      <ImageClear />
-    </div>
-  );
   return (
     <div className="relative mv4">
-      {icon}
-      {input}
-      {clear}
+      <img
+        src={imageSearchURL}
+        width={40}
+        height={40}
+        className="o-50 absolute"
+        style={{ left: 12, top: 10 }}
+      />
+      <input
+        aria-label="Search"
+        type="text"
+        autoComplete="off"
+        autoCorrect="off"
+        inputMode="verbatim"
+        autoCapitalize="none"
+        className={classnames(
+          "f2 w-100 border-box",
+          "pv2",
+          "chunky-focus",
+          "inset-shadow",
+          "br-pill ba",
+          "bg-white",
+          "hover-bg-washed-blue",
+          "b--black-30",
+          "search-placeholder-light"
+        )}
+        style={{ paddingLeft: 65, paddingRight: 65, height: 55 }}
+        value={search}
+        onChange={event => {
+          updateSearch(event.target.value);
+        }}
+      />
+      <img
+        src={imageClearURL}
+        width={40}
+        height={40}
+        role="presentation"
+        onClick={() => {
+          updateSearch("");
+        }}
+        className={classnames("o-50 absolute pointer", { dn: search === "" })}
+        style={{ right: 8, top: 8 }}
+      />
     </div>
   );
 }

@@ -6,7 +6,6 @@
     "noUnusedParameters": true,
     "allowJs": true,
     "outDir": "build",
-    "baseUrl": "src",
     "sourceMap": true,
     "strict": true,
     "module": "es2015",
