@@ -6,33 +6,19 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const isProd = process.argv.indexOf("-p") >= 0;
 process.env.NODE_ENV = isProd ? "production" : "development";
 
-const svgLoader = {
-  test: /\.svg$/,
-  use: [
-    {
-      loader: "react-svg-loader",
-      options: {
-        es5: true,
-        svgo: {
-          plugins: [{ removeTags: true }]
-        }
-      }
-    }
-  ]
-};
-
 const fileLoader = {
-  test: /\.png$/,
+  test: /\.(png|svg)$/,
   loader: "file-loader",
   options: {
-    name: "assets/[hash].[ext]"
+    name: "files/[hash].[ext]"
   },
-  include: path.resolve(__dirname, "img")
+  include: [path.resolve(__dirname, "img"), path.resolve(__dirname, "svg")]
 };
 
 const cssLoader = {
   test: /\.css$/,
   use: ["style-loader", "css-loader"]
+  // We need to load Tachyons which is in node_modules
   // include: path.resolve(__dirname, "src")
 };
 
@@ -58,7 +44,7 @@ module.exports = {
     extensions: [".tsx", ".ts", ".js"]
   },
   module: {
-    rules: [svgLoader, tsLoader, cssLoader, fileLoader]
+    rules: [tsLoader, cssLoader, fileLoader]
   },
   plugins: [
     new webpack.EnvironmentPlugin(["NODE_ENV"]),
