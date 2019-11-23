@@ -18,7 +18,6 @@ function badge(type: Type) {
     "with-border-color",
     "dib pv2 ph3",
     "br1",
-    // "ma--2px",
     "ttu tc b f5 f4-l"
   );
   return (

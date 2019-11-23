@@ -46,8 +46,6 @@
     "jest": "^24.8.0",
     "jest-enzyme": "^7.0.2",
     "jest-svg-transformer": "^1.0.0",
-    "less": "^3.9.0",
-    "less-loader": "^4.1.0",
     "npm-check": "^5.9.0",
     "prettier": "^1.16.4",
     "react-svg-loader": "^3.0.1",
