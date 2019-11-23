@@ -42,13 +42,21 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[]) {
     <div key={p.id} className={className} style={style}>
       <img
         src={getImage(p.id)}
-        // className="bg-white-60 br1 ba b--black-10 mr3 Pixelated"
         className="mr3 Pixelated"
         width={imgSize}
         height={imgSize}
       />
       <div className="flex-auto mv0">
-        <h2 className="truncate mt0 mb1 f4 f3-ns">{p.name}</h2>
+        <a
+          href="#"
+          className="near-black hover-mid-gray db mb1"
+          onClick={event => {
+            event.preventDefault();
+            alert(JSON.stringify(p, null, 2));
+          }}
+        >
+          <h2 className="di truncate mt0 f4 f3-ns">{p.name}</h2>
+        </a>
         <p className="gray mv0">{displayNumber}</p>
       </div>
       <div>{p.types.map(makeType)}</div>
