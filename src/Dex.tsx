@@ -26,7 +26,7 @@ function makeType(t: Type, i: number) {
   );
 }
 
-function makePKMN(p: Pokemon, i: number, a: Pokemon[]) {
+function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
   const className = classnames(
     "b--black-10",
     "ph2 pv3",
@@ -49,13 +49,16 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[]) {
       <div className="flex-auto mv0">
         <a
           href="#"
-          className="near-black hover-mid-gray db mb1"
+          className="near-black hover-mid-gray dib mb1"
           onClick={event => {
             event.preventDefault();
-            alert(JSON.stringify(p, null, 2));
+            const [type1, type2] = p.types;
+            props.updateType1(type1);
+            props.updateType2(type2 || Type.NONE);
+            props.changeTab(1);
           }}
         >
-          <h2 className="di truncate mt0 f4 f3-ns">{p.name}</h2>
+          <h2 className="di truncate mv0 f4 f3-ns">{p.name}</h2>
         </a>
         <p className="gray mv0">{displayNumber}</p>
       </div>
@@ -70,6 +73,9 @@ interface DexProps {
   currentPage: number;
   pkmn: Pokemon[];
   search: string;
+  updateType1(type: Type): void;
+  updateType2(type: Type): void;
+  changeTab(tab: number): void;
 }
 
 function Dex(props: DexProps) {
@@ -80,7 +86,8 @@ function Dex(props: DexProps) {
       <Search search={search} updateSearch={updateSearch} />
       <p className="mv4 bg-washed-yellow pa2 br2 ba b--black-20">
         <b>NEW:</b> Pokémon Sword & Shield, regional variants (e.g. Alola,
-        Galar), Pokédex images
+        Galar), Pokédex images, click Pokémon names to view their defense
+        matchups
       </p>
       <Paginator
         currentPage={currentPage}
@@ -89,7 +96,7 @@ function Dex(props: DexProps) {
         pageSize={PAGE_SIZE}
         emptyState={<p className="silver f1 b tc m0">no pokémon found</p>}
         items={pkmn}
-        render={makePKMN}
+        render={(p, i, a) => makePKMN(p, i, a, props)}
       />
     </div>
   );

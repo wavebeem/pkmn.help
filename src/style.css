@@ -31,7 +31,7 @@ button {
   transition: transform 50ms;
 }
 
-.active-squish:active {
+.active-squish:active:not(:disabled) {
   transform: scale(0.95);
 }
 
@@ -57,7 +57,7 @@ button {
 }
 
 .bottom-border-thick:focus {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .tab-bar-border {
@@ -67,7 +67,9 @@ button {
 
 .chunky-focus:focus {
   outline: none;
-  box-shadow: 0 0 0 3px white, 0 0 0 5px black;
+  /* box-shadow: 0 0 0 3px white, 0 0 0 5px black; */
+  border-color: black;
+  box-shadow: 0 0 0 1px black, 0 0 0 4px rgba(0, 0, 0, 0.05);
 }
 
 .text-shadow-black {
