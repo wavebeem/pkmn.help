@@ -1,5 +1,8 @@
 .Pixelated {
+  /* Firefox */
   image-rendering: crisp-edges;
+  /* Chrome */
+  image-rendering: pixelated;
 }
 
 .MatchupsSection-Container {
