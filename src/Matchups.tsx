@@ -20,7 +20,7 @@ function Badge({ type }: BadgeProps) {
     "ba b--black-10",
     "badge with-border-color",
     "pv2 br1",
-    "ttu tc b f5 f4-l"
+    "ttu tc b f5"
   );
   return (
     <div key={type} className={className} style={style}>

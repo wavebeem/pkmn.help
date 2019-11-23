@@ -38,7 +38,7 @@ const buttonClasses = [
   "db w-100",
   "ba br-pill",
   "pa2",
-  "b f6 f5-l",
+  "b f6",
   "ttu",
   "chunky-focus",
   "active-squish"

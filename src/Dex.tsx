@@ -14,7 +14,6 @@ function makeType(t: Type, i: number) {
     `type type-${t}`,
     "ttu tc b",
     "db ph1 pv2",
-    "f5-ns f6",
     "br1 ba",
     "badge with-border-color",
     { mt1: i > 0 }
@@ -69,6 +68,10 @@ function Dex(props: DexProps) {
     <div className="ph2 mt3 center mw7">
       <div className="ph1" />
       <Search search={search} updateSearch={updateSearch} />
+      <p className="mv4 bg-washed-yellow pa2 br2 ba b--black-20">
+        <b>NEW:</b> Pokémon Sword & Shield, regional variants (e.g. Alola,
+        Galar)
+      </p>
       <Paginator
         currentPage={currentPage}
         updatePageNext={() => updateCurrentPage(currentPage + 1)}

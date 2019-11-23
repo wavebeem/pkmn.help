@@ -1,4 +1,4 @@
-html {
+/* html {
   font-size: 12px;
 }
 
@@ -6,7 +6,7 @@ html {
   html {
     font-size: 14px;
   }
-}
+} */
 
 .MatchupsSection-Container {
   display: flex;
@@ -17,7 +17,7 @@ html {
 
 .TypeSelector-Container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 0.5rem;
 }
 

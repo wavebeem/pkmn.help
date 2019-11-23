@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer className="black dark-gray bt b--black-05 ph3 pv2 f4 mt4">
+    <footer className="black dark-gray bt b--black-05 ph3 pv2 mt4">
       <div className="mw8 center">
         <p>
           Pokémon &copy; 2002-{year} Pokémon. &copy; 1995-{year}{" "}
