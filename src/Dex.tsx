@@ -7,6 +7,7 @@ import Search from "./Search";
 import { Type } from "./data";
 import { Pokemon } from "./pkmn";
 import getImage from "./getImage";
+import { clickPokemon } from "./ga";
 
 const PAGE_SIZE = 50;
 
@@ -56,6 +57,7 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
             props.updateType1(type1);
             props.updateType2(type2 || Type.NONE);
             props.changeTab(1);
+            clickPokemon(p.id);
           }}
         >
           <h2 className="di truncate mv0 f4 f3-ns">{p.name}</h2>
