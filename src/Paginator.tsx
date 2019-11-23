@@ -91,7 +91,7 @@ interface PaginatorProps<T> {
   currentPage: number;
   pageSize: number;
   emptyState: any;
-  items: any[];
+  items: T[];
   render: (item: T, index: number, array: T[]) => any;
 }
 
