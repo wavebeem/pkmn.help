@@ -11,7 +11,7 @@ function makeTab(
   const { current, changeTab } = props;
   const className = classnames([
     "pv3 ph3 f4 w-third",
-    "pv3-ns ph4-ns f3-ns",
+    "pv3-ns ph4-ns",
     "dib",
     "no-outline tab-bottom-focus",
     "b bn",
@@ -31,7 +31,7 @@ function makeTab(
   };
   return (
     <button
-      key={index}
+      key={`tab-${index}`}
       className={className}
       onClick={onClick}
       style={style}

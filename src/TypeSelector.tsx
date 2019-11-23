@@ -11,7 +11,7 @@ const BUTTON_INNER_HEIGHT = "20px";
 function makeCircle(type: Type, isFocused: boolean) {
   const size = BUTTON_INNER_HEIGHT;
   const className = classnames(
-    `type-${type} b--black br-pill ba`,
+    `type type-${type} b--black br-pill ba`,
     isFocused ? "b--black-70" : "with-border-color"
   );
   const style = {
@@ -38,13 +38,11 @@ const buttonClasses = [
   "db w-100",
   "ba br-pill",
   "pa2",
-  "b f6 f5-l",
+  "b f6",
   "ttu",
   "chunky-focus",
   "active-squish"
 ];
-
-const classSizing = "dib w-25-l w-50 pa1";
 
 interface TypeSelectorProps {
   onChange(type: Type): void;
@@ -72,6 +70,7 @@ function TypeSelector(props: TypeSelectorProps) {
       : styles.normal;
     return (
       <button
+        key={`type-${type}`}
         disabled={isDisabled}
         className={classnames(
           style,
@@ -89,13 +88,9 @@ function TypeSelector(props: TypeSelectorProps) {
   };
   const makeWrapper = (type: Type) => {
     const isDisabled = disabledTypes.indexOf(type) >= 0;
-    return (
-      <div className={classSizing} key={type}>
-        {makeButton(isDisabled, value, type)}
-      </div>
-    );
+    return makeButton(isDisabled, value, type);
   };
-  return <div>{types.map(makeWrapper)}</div>;
+  return <div className="TypeSelector-Container">{types.map(makeWrapper)}</div>;
 }
 
 TypeSelector.displayName = "TypeSelector";

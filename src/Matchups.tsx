@@ -9,49 +9,79 @@ import {
   offensiveMatchups
 } from "./data";
 
-function badge(type: Type) {
-  const style = { minWidth: "7.5em" };
+interface BadgeProps {
+  type: Type;
+}
+
+function Badge({ type }: BadgeProps) {
+  const style = { width: 120, margin: "0.125rem" };
   const className = classnames(
-    `type-${type}`,
+    `type type-${type}`,
     "ba b--black-10",
-    "badge",
-    "with-border-color",
-    "dib pv2 ph3",
-    "br1",
-    "ma--2px",
-    "ttu tc b f5 f4-l"
+    "badge with-border-color",
+    "pv2 br1",
+    "ttu tc b f5"
   );
   return (
-    <div key={type} className={className} style={style}>
+    <div className={className} style={style}>
       {type}
     </div>
   );
 }
 
-function section(title: string, types: Type[]) {
+interface SectionProps {
+  title: string;
+  types: Type[];
+}
+
+function Section({ title, types }: SectionProps) {
   if (types.length === 0) {
     return null;
   }
   return (
     <div>
       <h3 className="f4 mt3 mb0 dark-gray">{title}</h3>
-      <div className="mw6 center">{types.map(badge)}</div>
+      <div className="mw6 center MatchupsSection-Container">
+        {types.map(t => (
+          <Badge key={`type-${t}`} type={t} />
+        ))}
+      </div>
     </div>
   );
 }
 
-function renderMatchups(
-  makePrefix: (value: string) => string,
-  matchups: GroupedMatchups
-) {
+interface MatchupsProps {
+  makePrefix: (value: string) => string;
+  matchups: GroupedMatchups;
+}
+
+function Matchups({ makePrefix, matchups }: MatchupsProps) {
   return (
     <div className="tc">
-      {section(makePrefix("4×"), matchups.typesFor(Effectiveness.QUADRUPLE))}
-      {section(makePrefix("2×"), matchups.typesFor(Effectiveness.DOUBLE))}
-      {section(makePrefix("1×"), matchups.typesFor(Effectiveness.REGULAR))}
-      {section(makePrefix("½×"), matchups.typesFor(Effectiveness.HALF))}
-      {section(makePrefix("¼×"), matchups.typesFor(Effectiveness.QUARTER))}
-      {section(makePrefix("0×"), matchups.typesFor(Effectiveness.ZERO))}
+      <Section
+        title={makePrefix("4×")}
+        types={matchups.typesFor(Effectiveness.QUADRUPLE)}
+      />
+      <Section
+        title={makePrefix("2×")}
+        types={matchups.typesFor(Effectiveness.DOUBLE)}
+      />
+      <Section
+        title={makePrefix("1×")}
+        types={matchups.typesFor(Effectiveness.REGULAR)}
+      />
+      <Section
+        title={makePrefix("½×")}
+        types={matchups.typesFor(Effectiveness.HALF)}
+      />
+      <Section
+        title={makePrefix("¼×")}
+        types={matchups.typesFor(Effectiveness.QUARTER)}
+      />
+      <Section
+        title={makePrefix("0×")}
+        types={matchups.typesFor(Effectiveness.ZERO)}
+      />
     </div>
   );
 }
@@ -61,10 +91,9 @@ export interface DefenseProps {
   type2: Type;
 }
 
-export function Defense(props: DefenseProps) {
-  const { type1, type2 } = props;
+export function Defense({ type1, type2 }: DefenseProps) {
   const matchups = defensiveMatchups(type1, type2);
-  return renderMatchups(x => `takes ${x} from`, matchups);
+  return <Matchups makePrefix={x => `takes ${x} from`} matchups={matchups} />;
 }
 
 Defense.displayName = "Matchups.Defense";
@@ -73,10 +102,9 @@ export interface OffenseProps {
   type: Type;
 }
 
-export function Offense(props: OffenseProps) {
-  const { type } = props;
+export function Offense({ type }: OffenseProps) {
   const matchups = offensiveMatchups(type);
-  return renderMatchups(x => `deals ${x} to`, matchups);
+  return <Matchups makePrefix={x => `deals ${x} to`} matchups={matchups} />;
 }
 
 Offense.displayName = "Matchups.Offense";
