@@ -23,9 +23,7 @@ function App() {
       const number = Number(s);
       return AllPokemon.filter(p => p.number === number);
     }
-    return matchSorter(AllPokemon, s, {
-      keys: ["name", "number"]
-    });
+    return matchSorter(AllPokemon, s, { keys: ["name", "number"] });
   }, [search]);
 
   React.useEffect(() => {
