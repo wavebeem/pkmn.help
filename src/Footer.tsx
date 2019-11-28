@@ -35,10 +35,10 @@ export default function Footer() {
           content on this page.
         </p>
         <p>
-          Code for this page &copy; 2013-{year}{" "}
+          pkmn.help &copy; 2013-{year}{" "}
           <a
             href="https://mockbrian.com"
-            className="bb no-underline hover-gray black bb"
+            className="b bb bw1 no-underline hover-gray black bb"
           >
             Brian Mock
           </a>
