@@ -12,11 +12,6 @@ interface SearchProps {
 function Search(props: SearchProps) {
   const { updateSearch, search } = props;
   const ref = React.useRef<HTMLInputElement>(null);
-  React.useEffect(() => {
-    if (ref.current) {
-      ref.current.focus();
-    }
-  }, [ref.current, search]);
   return (
     <div className="relative mv4">
       <img
@@ -59,6 +54,9 @@ function Search(props: SearchProps) {
         role="presentation"
         onClick={() => {
           updateSearch("");
+          if (ref.current) {
+            ref.current.focus();
+          }
         }}
         className={classnames("o-50 absolute pointer", { dn: search === "" })}
         style={{ right: 8, top: 8 }}
