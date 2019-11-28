@@ -13,21 +13,18 @@ function App() {
   const [type0, updateType0] = React.useState(Type.NORMAL);
   const [type1, updateType1] = React.useState(Type.NORMAL);
   const [type2, updateType2] = React.useState(Type.NONE);
-  const [search, setSearch] = React.useState("");
+  const [search, updateSearch] = React.useState("");
   const [currentPage, updateCurrentPage] = React.useState(0);
-  const [pkmn, updatePKMN] = React.useState(AllPokemon);
-  function updateSearch(str: string) {
-    setSearch(str);
-    updatePKMN(filterPKMN(str));
-    updateCurrentPage(0);
-  }
-  function filterPKMN(search: string) {
+  const pkmn = React.useMemo(() => {
     if (search === "") {
       return AllPokemon;
     }
     const s = search.toLowerCase();
     return AllPokemon.filter(p => p.name.toLowerCase().indexOf(s) >= 0);
-  }
+  }, [search]);
+  React.useEffect(() => {
+    updateCurrentPage(0);
+  }, [search]);
   return (
     <div className="sans-serif bg-near-white mid-gray min-vh-100 flex flex-column">
       <div className="flex-auto">
