@@ -55,7 +55,7 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
           <div className="ph1" />
           <a
             href="#"
-            className="near-black hover-gray chunky-focus"
+            className="near-black hover-gray chunky-focus PokemonUnderline"
             onClick={event => {
               event.preventDefault();
               const [type1, type2] = p.types;
