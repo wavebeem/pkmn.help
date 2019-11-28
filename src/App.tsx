@@ -16,11 +16,13 @@ function App() {
   const [search, updateSearch] = React.useState("");
   const [currentPage, updateCurrentPage] = React.useState(0);
   const pkmn = React.useMemo(() => {
-    if (search === "") {
+    const s = search.trim().toLowerCase();
+    if (s === "") {
       return AllPokemon;
     }
-    const s = search.toLowerCase();
-    return AllPokemon.filter(p => p.name.toLowerCase().indexOf(s) >= 0);
+    return AllPokemon.filter(p => {
+      return Number(s) === p.number || p.name.toLowerCase().includes(s);
+    });
   }, [search]);
   React.useEffect(() => {
     updateCurrentPage(0);
