@@ -16,9 +16,8 @@ interface BadgeProps {
 function Badge({ type }: BadgeProps) {
   const style = { width: 120, margin: "0.125rem" };
   const className = classnames(
-    `type type-${type}`,
-    "ba b--black-10",
-    "badge with-border-color",
+    `type-bg type-${type}`,
+    "ba b--black-20",
     "pv2 br1",
     "ttu tc b f5"
   );

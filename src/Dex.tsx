@@ -13,7 +13,7 @@ const PAGE_SIZE = 50;
 
 function makeType(t: Type, i: number) {
   const className = classnames(
-    `type type-${t} with-border-color`,
+    `type-bg type-${t} b--black-20`,
     "ttu tc b",
     "db ph0 pv1",
     "br1 ba f6 f5-ns",
@@ -31,7 +31,7 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
   const className = classnames(
     "b--black-10",
     "ph2 pv3",
-    "bb flex items-center",
+    "bb flex flex-wrap items-center",
     { bt: i === 0 },
     { mt3: i === 0 },
     { mb3: i === a.length - 1 }
@@ -47,10 +47,10 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
         width={imgSize}
         height={imgSize}
       />
-      <div className="flex-auto mv0">
+      <div className="flex-auto mv0" style={{ minWidth: 140 }}>
         <a
           href="#"
-          className="near-black hover-mid-gray dib mb1"
+          className="no-underline bb bw1 b--black-20 near-black hover-gray dib mb1"
           onClick={event => {
             event.preventDefault();
             const [type1, type2] = p.types;
@@ -64,7 +64,12 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
         </a>
         <p className="gray mv0">{displayNumber}</p>
       </div>
-      <div>{p.types.map(makeType)}</div>
+      <div
+        className="flex flex-column justify-center"
+        style={{ height: imgSize }}
+      >
+        {p.types.map(makeType)}
+      </div>
     </div>
   );
 }
@@ -86,11 +91,6 @@ function Dex(props: DexProps) {
     <div className="ph2 mt3 center mw7">
       <div className="ph1" />
       <Search search={search} updateSearch={updateSearch} />
-      <p className="mv4 bg-washed-yellow pa2 br2 ba b--black-20">
-        <b>NEW:</b> Pokémon Sword & Shield, regional variants (e.g. Alola,
-        Galar), Pokédex images, click Pokémon names to view their defense
-        matchups
-      </p>
       <Paginator
         currentPage={currentPage}
         updatePageNext={() => updateCurrentPage(currentPage + 1)}

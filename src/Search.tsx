@@ -11,12 +11,14 @@ interface SearchProps {
 
 function Search(props: SearchProps) {
   const { updateSearch, search } = props;
+  const ref = React.useRef<HTMLInputElement>(null);
   return (
     <div className="relative mv4">
       <img
         src={imageSearchURL}
         width={40}
         height={40}
+        role="presentation"
         className="o-50 absolute"
         style={{ left: 12, top: 10 }}
       />
@@ -43,6 +45,7 @@ function Search(props: SearchProps) {
         onChange={event => {
           updateSearch(event.target.value);
         }}
+        ref={ref}
       />
       <img
         src={imageClearURL}
@@ -51,6 +54,9 @@ function Search(props: SearchProps) {
         role="presentation"
         onClick={() => {
           updateSearch("");
+          if (ref.current) {
+            ref.current.focus();
+          }
         }}
         className={classnames("o-50 absolute pointer", { dn: search === "" })}
         style={{ right: 8, top: 8 }}

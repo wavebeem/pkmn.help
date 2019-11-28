@@ -1,4 +1,5 @@
 import React from "react";
+import matchSorter from "match-sorter";
 
 import Offense from "./Offense";
 import Defense from "./Defense";
@@ -13,21 +14,22 @@ function App() {
   const [type0, updateType0] = React.useState(Type.NORMAL);
   const [type1, updateType1] = React.useState(Type.NORMAL);
   const [type2, updateType2] = React.useState(Type.NONE);
-  const [search, setSearch] = React.useState("");
+  const [search, updateSearch] = React.useState("");
   const [currentPage, updateCurrentPage] = React.useState(0);
-  const [pkmn, updatePKMN] = React.useState(AllPokemon);
-  function updateSearch(str: string) {
-    setSearch(str);
-    updatePKMN(filterPKMN(str));
-    updateCurrentPage(0);
-  }
-  function filterPKMN(search: string) {
-    if (search === "") {
-      return AllPokemon;
+
+  const pkmn = React.useMemo(() => {
+    const s = search.trim();
+    if (/^[0-9]+$/.test(s)) {
+      const number = Number(s);
+      return AllPokemon.filter(p => p.number === number);
     }
-    const s = search.toLowerCase();
-    return AllPokemon.filter(p => p.name.toLowerCase().indexOf(s) >= 0);
-  }
+    return matchSorter(AllPokemon, s, { keys: ["name", "number"] });
+  }, [search]);
+
+  React.useEffect(() => {
+    updateCurrentPage(0);
+  }, [search]);
+
   return (
     <div className="sans-serif bg-near-white mid-gray min-vh-100 flex flex-column">
       <div className="flex-auto">
