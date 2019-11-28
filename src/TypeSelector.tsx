@@ -11,8 +11,8 @@ const BUTTON_INNER_HEIGHT = "20px";
 function makeCircle(type: Type, isFocused: boolean) {
   const size = BUTTON_INNER_HEIGHT;
   const className = classnames(
-    `type type-${type} b--black br-pill ba`,
-    isFocused ? "b--black-70" : "with-border-color"
+    `type-${type} b--black br-pill ba`,
+    isFocused ? "b--black-70 type-bg-light" : "b--black-30 type-bg"
   );
   const style = {
     flexShrink: 0,
@@ -56,11 +56,9 @@ function TypeSelector(props: TypeSelectorProps) {
   const types = includeNone ? Data.typesOrNone : Data.types;
   const styles = {
     disabled: "b--black-10 bg-near-white o-60",
-    selected: classnames(
-      "b--black-30 bg-gray white",
-      "text-shadow-black no-box-shadow"
-    ),
-    normal: "b--black-30 bg-white hover-bg-washed-blue black"
+    selected: "b--black-30 type-bg-dark no-box-shadow",
+    // TODO: Restore some kind of hover effect
+    normal: "b--black-30 bg-white black bg-white hover-bg-washed-blue"
   };
   const makeButton = (isDisabled: boolean, value: Type, type: Type) => {
     const style = isDisabled
@@ -75,6 +73,7 @@ function TypeSelector(props: TypeSelectorProps) {
         className={classnames(
           style,
           buttonClasses,
+          `type-${type}`,
           isDisabled ? null : "button-shadow"
         )}
         onClick={() => onChange(type)}
