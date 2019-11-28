@@ -89,7 +89,7 @@ function Dex(props: DexProps) {
       <p className="mv4 bg-washed-yellow pa2 br2 ba b--black-20">
         <b>NEW:</b> Pokémon Sword & Shield, regional variants (e.g. Alola,
         Galar), Pokédex images, click Pokémon names to view their defense
-        matchups
+        matchups, search by number
       </p>
       <Paginator
         currentPage={currentPage}
