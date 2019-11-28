@@ -29,13 +29,10 @@ function makeType(t: Type, i: number) {
 
 function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
   const className = classnames(
-    "b--black-10",
     "ph1 pv3",
     "flex items-center",
-    "bb",
-    { bt: i === 0 },
-    { mt3: i === 0 },
-    { mb3: i === a.length - 1 }
+    "bg-white ba b--black-20 br1",
+    i === a.length - 1 ? "mb2" : "mv2"
   );
   const displayNumber = "#" + String(p.number).padStart(3, "0");
   const style = { minHeight: "100px" };
@@ -45,7 +42,8 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
       <img
         src={getImage(p.id)}
         role="presentation"
-        className="mr3 Pixelated bg-white br1 ba b--black-20"
+        // className="mr3 Pixelated bg-white br1 ba b--black-20"
+        className="mr3 Pixelated"
         width={imgSize}
         height={imgSize}
       />
@@ -55,7 +53,7 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
           <div className="ph1" />
           <a
             href="#"
-            className="near-black hover-gray chunky-focus PokemonUnderline"
+            className="near-black hover-gray chunky-focus ThickUnderline"
             onClick={event => {
               event.preventDefault();
               const [type1, type2] = p.types;

@@ -13,7 +13,7 @@ function Offense(props: OffenseProps) {
   const { type0, updateType0 } = props;
   const classH2 = "tc f4 mt4 mb2";
   return (
-    <main className="ph3 pt1 pb2 mw6 mw9-ns center">
+    <main className="ph3 pt1 pb4 mw6 mw9-ns center">
       <div className="dib w-50-ns w-100 v-top">
         <h2 className={classH2}>choose type</h2>
         <TypeSelector
