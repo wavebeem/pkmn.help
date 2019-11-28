@@ -49,7 +49,7 @@ interface TabItemProps {
 }
 
 export function TabItem(props: TabItemProps) {
-  return <div>{props.children}</div>;
+  return props.children;
 }
 
 TabItem.displayName = "TabItem";
