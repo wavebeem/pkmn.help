@@ -7,6 +7,7 @@ import { TabContainer, TabItem } from "./Tab";
 import { Type } from "./data";
 import { AllPokemon } from "./pkmn";
 import Footer from "./Footer";
+import matchSorter from "match-sorter";
 
 function App() {
   const [tab, changeTab] = React.useState(1);
@@ -15,18 +16,22 @@ function App() {
   const [type2, updateType2] = React.useState(Type.NONE);
   const [search, updateSearch] = React.useState("");
   const [currentPage, updateCurrentPage] = React.useState(0);
+
   const pkmn = React.useMemo(() => {
-    const s = search.trim().toLowerCase();
-    if (s === "") {
-      return AllPokemon;
+    const s = search.trim();
+    if (/^[0-9]+$/.test(s)) {
+      const number = Number(s);
+      return AllPokemon.filter(p => p.number === number);
     }
-    return AllPokemon.filter(p => {
-      return Number(s) === p.number || p.name.toLowerCase().includes(s);
+    return matchSorter(AllPokemon, s, {
+      keys: ["name", "number"]
     });
   }, [search]);
+
   React.useEffect(() => {
     updateCurrentPage(0);
   }, [search]);
+
   return (
     <div className="sans-serif bg-near-white mid-gray min-vh-100 flex flex-column">
       <div className="flex-auto">
