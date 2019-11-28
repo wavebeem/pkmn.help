@@ -31,7 +31,7 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
   const className = classnames(
     "b--black-10",
     "ph2 pv3",
-    "bb flex items-center",
+    "bb flex flex-wrap items-center",
     { bt: i === 0 },
     { mt3: i === 0 },
     { mb3: i === a.length - 1 }
@@ -47,7 +47,7 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
         width={imgSize}
         height={imgSize}
       />
-      <div className="flex-auto mv0">
+      <div className="flex-auto mv0" style={{ minWidth: 140 }}>
         <a
           href="#"
           className="near-black hover-mid-gray dib mb1"
@@ -64,7 +64,12 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
         </a>
         <p className="gray mv0">{displayNumber}</p>
       </div>
-      <div>{p.types.map(makeType)}</div>
+      <div
+        className="flex flex-column justify-center"
+        style={{ height: imgSize }}
+      >
+        {p.types.map(makeType)}
+      </div>
     </div>
   );
 }
