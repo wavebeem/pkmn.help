@@ -1,7 +1,7 @@
 import React from "react";
 import classnames from "classnames";
 
-import Button from "./Button";
+import { RoundButton } from "./RoundButton";
 
 function scrollToTop() {
   window.scroll({
@@ -16,71 +16,56 @@ enum Location {
   BOTTOM = "bottom"
 }
 
-function prevButton<T>(
-  loc: Location,
-  { updatePagePrev }: PaginatorProps<T>,
-  show: boolean
-) {
-  const onClick = () => {
-    if (loc === Location.BOTTOM) {
-      scrollToTop();
-    }
-    updatePagePrev();
-  };
-  const disabled = !show;
-  return (
-    <Button onClick={onClick} disabled={disabled} aria-label="Previous">
-      &laquo;
-    </Button>
-  );
-}
-
-function nextButton<T>(
-  loc: Location,
-  { updatePageNext }: PaginatorProps<T>,
-  show: boolean
-) {
-  const onClick = () => {
-    if (loc === Location.BOTTOM) {
-      scrollToTop();
-    }
-    updatePageNext();
-  };
-  const disabled = !show;
-  return (
-    <Button onClick={onClick} disabled={disabled} aria-label="Next">
-      &raquo;
-    </Button>
-  );
-}
-
-function createPaginationButtons<T>({
-  numPages,
-  pageItems,
-  loc,
-  props,
-  hasPrev,
-  hasNext
-}: {
+interface PageSelectorProps {
   numPages: number;
   pageItems: any[];
-  loc: Location;
-  props: PaginatorProps<T>;
+  location: Location;
+  currentPage: number;
+  updatePagePrev(): void;
+  updatePageNext(): void;
   hasPrev: boolean;
   hasNext: boolean;
-}) {
+}
+
+function PageSelector(props: PageSelectorProps) {
   return (
     <div
       className={classnames(
-        "items-center ph2",
-        pageItems.length === 0 ? "dn" : "flex"
+        "items-center",
+        props.pageItems.length === 0 ? "dn" : "flex"
       )}
     >
-      <div>{prevButton(loc, props, hasPrev)}</div>
-      <div className="flex-auto tc b f4">
-        page {props.currentPage + 1} of {numPages}
+      <div>
+        <RoundButton
+          onClick={() => {
+            if (props.location === Location.BOTTOM) {
+              scrollToTop();
+            }
+            props.updatePagePrev();
+          }}
+          disabled={!props.hasPrev}
+          aria-label="Previous"
+        >
+          &lsaquo;
+        </RoundButton>
       </div>
-      <div>{nextButton(loc, props, hasNext)}</div>
+      <div className="flex-auto tc b f4">
+        page {props.currentPage + 1} of {props.numPages}
+      </div>
+      <div>
+        <RoundButton
+          onClick={() => {
+            if (props.location === Location.BOTTOM) {
+              scrollToTop();
+            }
+            props.updatePageNext();
+          }}
+          disabled={!props.hasNext}
+          aria-label="Next"
+        >
+          &rsaquo;
+        </RoundButton>
+      </div>
     </div>
   );
 }
@@ -96,40 +81,47 @@ interface PaginatorProps<T> {
 }
 
 function Paginator<T>(props: PaginatorProps<T>) {
-  const { currentPage, pageSize, items, emptyState, render } = props;
+  const {
+    currentPage,
+    pageSize,
+    items,
+    emptyState,
+    render,
+    updatePagePrev,
+    updatePageNext
+  } = props;
   const numPages = Math.ceil(items.length / pageSize);
   const hasPrev = currentPage > 0;
   const hasNext = currentPage < numPages - 1;
   const i = pageSize * currentPage;
   const pageItems = items.slice(i, i + pageSize);
-  const inner =
-    pageItems.length === 0 ? (
-      emptyState
-    ) : (
-      <div key={`page-${currentPage}`}>{pageItems.map(render)}</div>
-    );
-  const { TOP, BOTTOM } = Location;
-  const top = createPaginationButtons({
-    loc: TOP,
-    numPages,
-    pageItems,
-    props,
-    hasPrev,
-    hasNext
-  });
-  const bottom = createPaginationButtons({
-    loc: BOTTOM,
-    numPages,
-    pageItems,
-    props,
-    hasPrev,
-    hasNext
-  });
   return (
     <div>
-      {top}
-      {inner}
-      {bottom}
+      <PageSelector
+        location={Location.TOP}
+        numPages={numPages}
+        pageItems={pageItems}
+        hasPrev={hasPrev}
+        hasNext={hasNext}
+        currentPage={currentPage}
+        updatePagePrev={updatePagePrev}
+        updatePageNext={updatePageNext}
+      />
+      {pageItems.length === 0 ? (
+        emptyState
+      ) : (
+        <div key={`page-${currentPage}`}>{pageItems.map(render)}</div>
+      )}
+      <PageSelector
+        location={Location.BOTTOM}
+        numPages={numPages}
+        pageItems={pageItems}
+        hasPrev={hasPrev}
+        hasNext={hasNext}
+        currentPage={currentPage}
+        updatePagePrev={updatePagePrev}
+        updatePageNext={updatePageNext}
+      />
     </div>
   );
 }
