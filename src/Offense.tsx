@@ -27,7 +27,7 @@ function Offense(props: OffenseProps) {
           <TypeSelector
             value={type0}
             onChange={updateType0}
-            includeNone={false}
+            includeNone={true}
           />
         </div>
       </div>

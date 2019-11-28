@@ -1,10 +1,30 @@
 import React from "react";
 
+import { ReleaseNotes } from "./ReleaseNotes";
+
 export default function Footer() {
+  const [isReleaseNotesOpen, setIsReleaseNotesOpen] = React.useState(false);
   const year = new Date().getFullYear();
   return (
     <footer className="black dark-gray bt b--black-05 ph3 pv2 mt4">
-      <div className="mw8 center">
+      <div className="mw7 center">
+        <p>
+          <a
+            href="#"
+            className="bb bw1 no-underline b black hover-gray"
+            onClick={event => {
+              event.preventDefault();
+              setIsReleaseNotesOpen(!isReleaseNotesOpen);
+            }}
+          >
+            {isReleaseNotesOpen ? (
+              <React.Fragment>Hide release notes</React.Fragment>
+            ) : (
+              <React.Fragment>Show release notes</React.Fragment>
+            )}
+          </a>
+          {isReleaseNotesOpen ? <ReleaseNotes /> : null}
+        </p>
         <p>
           Pokémon &copy; 2002-{year} Pokémon. &copy; 1995-{year}{" "}
           Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &reg; and Pokémon
@@ -18,7 +38,7 @@ export default function Footer() {
           Code for this page &copy; 2013-{year}{" "}
           <a
             href="https://mockbrian.com"
-            className="bb link hover-gray black bb"
+            className="bb no-underline hover-gray black bb"
           >
             Brian Mock
           </a>

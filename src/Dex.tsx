@@ -50,7 +50,7 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
       <div className="flex-auto mv0" style={{ minWidth: 140 }}>
         <a
           href="#"
-          className="near-black hover-mid-gray dib mb1"
+          className="no-underline bb bw1 b--black-20 near-black hover-gray dib mb1"
           onClick={event => {
             event.preventDefault();
             const [type1, type2] = p.types;
@@ -91,11 +91,6 @@ function Dex(props: DexProps) {
     <div className="ph2 mt3 center mw7">
       <div className="ph1" />
       <Search search={search} updateSearch={updateSearch} />
-      <p className="mv4 bg-washed-yellow pa2 br2 ba b--black-20">
-        <b>NEW:</b> Pokémon Sword & Shield, regional variants (e.g. Alola,
-        Galar), Pokédex images, click Pokémon names to view their defense
-        matchups, search by number
-      </p>
       <Paginator
         currentPage={currentPage}
         updatePageNext={() => updateCurrentPage(currentPage + 1)}

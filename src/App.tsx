@@ -1,4 +1,5 @@
 import React from "react";
+import matchSorter from "match-sorter";
 
 import Offense from "./Offense";
 import Defense from "./Defense";
@@ -7,7 +8,6 @@ import { TabContainer, TabItem } from "./Tab";
 import { Type } from "./data";
 import { AllPokemon } from "./pkmn";
 import Footer from "./Footer";
-import matchSorter from "match-sorter";
 
 function App() {
   const [tab, changeTab] = React.useState(1);

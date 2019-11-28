@@ -2,14 +2,7 @@ import React from "react";
 import classnames from "classnames";
 
 import { RoundButton } from "./RoundButton";
-
-function scrollToTop() {
-  window.scroll({
-    top: 0,
-    left: 0,
-    behavior: "smooth"
-  });
-}
+import { scrollToTop } from "./scrollToTop";
 
 enum Location {
   TOP = "top",
