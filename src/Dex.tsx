@@ -29,7 +29,7 @@ function makeType(t: Type, i: number) {
 
 function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
   const className = classnames(
-    "ph1 pv3",
+    "pa1",
     "flex items-center",
     "bg-white ba b--black-20 br1",
     i === a.length - 1 ? "mb2" : "mv2"
