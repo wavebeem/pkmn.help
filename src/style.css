@@ -95,6 +95,11 @@ button {
   }
 }
 
+.ThickUnderline {
+  text-decoration-color: rgba(0, 0, 0, 0.2);
+  text-decoration-thickness: 2px;
+}
+
 .HACK-hidden-ns {
   visibility: hidden;
 }

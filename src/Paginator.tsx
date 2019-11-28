@@ -24,41 +24,37 @@ function PageSelector(props: PageSelectorProps) {
   return (
     <div
       className={classnames(
-        "items-center",
+        "items-center mv4",
         props.pageItems.length === 0 ? "dn" : "flex"
       )}
     >
-      <div>
-        <RoundButton
-          onClick={() => {
-            if (props.location === Location.BOTTOM) {
-              scrollToTop();
-            }
-            props.updatePagePrev();
-          }}
-          disabled={!props.hasPrev}
-          aria-label="Previous"
-        >
-          &lsaquo;
-        </RoundButton>
-      </div>
+      <RoundButton
+        onClick={() => {
+          if (props.location === Location.BOTTOM) {
+            scrollToTop();
+          }
+          props.updatePagePrev();
+        }}
+        disabled={!props.hasPrev}
+        aria-label="Previous"
+      >
+        &lsaquo;
+      </RoundButton>
       <div className="flex-auto tc b f4">
         page {props.currentPage + 1} of {props.numPages}
       </div>
-      <div>
-        <RoundButton
-          onClick={() => {
-            if (props.location === Location.BOTTOM) {
-              scrollToTop();
-            }
-            props.updatePageNext();
-          }}
-          disabled={!props.hasNext}
-          aria-label="Next"
-        >
-          &rsaquo;
-        </RoundButton>
-      </div>
+      <RoundButton
+        onClick={() => {
+          if (props.location === Location.BOTTOM) {
+            scrollToTop();
+          }
+          props.updatePageNext();
+        }}
+        disabled={!props.hasNext}
+        aria-label="Next"
+      >
+        &rsaquo;
+      </RoundButton>
     </div>
   );
 }

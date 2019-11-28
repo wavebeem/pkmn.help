@@ -36,7 +36,7 @@ function makeLabel(type: Type) {
 
 const buttonClasses = [
   "db w-100",
-  "ba br2",
+  "ba br-pill",
   "pa2",
   "b f6",
   "ttu",

@@ -42,19 +42,6 @@ function makeTab(
   );
 }
 
-function makeTabBar(props: TabContainerProps) {
-  const className = classnames([
-    "tc w-100",
-    "bg-white",
-    "bb tab-bar-border b--black-20",
-    "pt4"
-  ]);
-  const kids: any = props.children.map((kid: any, i: number) => {
-    return makeTab(props, i, kid.props);
-  });
-  return <div className={className}>{kids}</div>;
-}
-
 interface TabItemProps {
   title: string;
   name: string;
@@ -62,7 +49,7 @@ interface TabItemProps {
 }
 
 export function TabItem(props: TabItemProps) {
-  return <div>{props.children}</div>;
+  return props.children;
 }
 
 TabItem.displayName = "TabItem";
@@ -75,9 +62,18 @@ interface TabContainerProps {
 
 export function TabContainer(props: TabContainerProps) {
   const { children, current } = props;
+  const className = classnames([
+    "tc w-100",
+    "bg-white",
+    "bb tab-bar-border b--black-20",
+    "pt4"
+  ]);
+  const kids: any = React.Children.map(children, (kid: any, i: number) => {
+    return makeTab(props, i, kid.props);
+  });
   return (
     <div>
-      {makeTabBar(props)}
+      <div className={className}>{kids}</div>
       {children[current]}
     </div>
   );

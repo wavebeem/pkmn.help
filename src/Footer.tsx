@@ -6,12 +6,12 @@ export default function Footer() {
   const [isReleaseNotesOpen, setIsReleaseNotesOpen] = React.useState(false);
   const year = new Date().getFullYear();
   return (
-    <footer className="black dark-gray bt b--black-05 ph3 pv2 mt4">
+    <footer className="black dark-gray bt b--black-05 ph3 pv2">
       <div className="mw7 center">
         <p>
           <a
             href="#"
-            className="bb bw1 no-underline b black hover-gray"
+            className="ThickUnderline b near-black hover-gray chunky-focus"
             onClick={event => {
               event.preventDefault();
               setIsReleaseNotesOpen(!isReleaseNotesOpen);
@@ -38,7 +38,7 @@ export default function Footer() {
           pkmn.help &copy; 2013-{year}{" "}
           <a
             href="https://mockbrian.com"
-            className="b bb bw1 no-underline hover-gray black bb"
+            className="b ThickUnderline near-black hover-gray chunky-focus"
           >
             Brian Mock
           </a>
