@@ -31,7 +31,7 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
   const className = classnames(
     "b--black-10",
     "ph1 pv3",
-    "flex flex-wrap items-center",
+    "flex items-center",
     "bb",
     { bt: i === 0 },
     { mt3: i === 0 },
