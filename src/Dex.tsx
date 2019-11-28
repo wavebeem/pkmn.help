@@ -13,11 +13,11 @@ const PAGE_SIZE = 50;
 
 function makeType(t: Type, i: number) {
   const className = classnames(
-    `type-bg type-${t} b--black-20`,
+    `type-bg type-${t} b--black-10`,
     "ttu tc b",
     "db ph0 pv1",
-    "br1 ba f6 f5-ns",
-    { mt1: i > 0 }
+    "br1 ba f6",
+    { ml1: i > 0 }
   );
   const style = { minWidth: "6em" };
   return (
@@ -30,8 +30,9 @@ function makeType(t: Type, i: number) {
 function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
   const className = classnames(
     "b--black-10",
-    "ph2 pv3",
-    "bb flex flex-wrap items-center",
+    "ph1 pv3",
+    "flex flex-wrap items-center",
+    "bb",
     { bt: i === 0 },
     { mt3: i === 0 },
     { mb3: i === a.length - 1 }
@@ -43,32 +44,31 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
     <div key={p.id} className={className} style={style}>
       <img
         src={getImage(p.id)}
-        className="mr3 Pixelated"
+        role="presentation"
+        className="mr3 Pixelated bg-white br1 ba b--black-20"
         width={imgSize}
         height={imgSize}
       />
-      <div className="flex-auto mv0" style={{ minWidth: 140 }}>
-        <a
-          href="#"
-          className="no-underline bb bw1 b--black-20 near-black hover-gray dib mb1"
-          onClick={event => {
-            event.preventDefault();
-            const [type1, type2] = p.types;
-            props.updateType1(type1);
-            props.updateType2(type2 || Type.NONE);
-            props.changeTab(1);
-            clickPokemon(p.id);
-          }}
-        >
-          <h2 className="di truncate mv0 f4 f3-ns">{p.name}</h2>
-        </a>
-        <p className="gray mv0">{displayNumber}</p>
-      </div>
-      <div
-        className="flex flex-column justify-center"
-        style={{ height: imgSize }}
-      >
-        {p.types.map(makeType)}
+      <div className="flex-auto mv0">
+        <div className="flex mb2 items-center">
+          <div className="gray mv0 f5 code">{displayNumber}</div>
+          <div className="ph1" />
+          <a
+            href="#"
+            className="near-black hover-gray chunky-focus"
+            onClick={event => {
+              event.preventDefault();
+              const [type1, type2] = p.types;
+              props.updateType1(type1);
+              props.updateType2(type2 || Type.NONE);
+              props.changeTab(1);
+              clickPokemon(p.id);
+            }}
+          >
+            <h2 className="di truncate mv0 f3">{p.name}</h2>
+          </a>
+        </div>
+        <div className="flex">{p.types.map(makeType)}</div>
       </div>
     </div>
   );

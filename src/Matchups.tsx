@@ -17,7 +17,7 @@ function Badge({ type }: BadgeProps) {
   const style = { width: 120, margin: "0.125rem" };
   const className = classnames(
     `type-bg type-${type}`,
-    "ba b--black-20",
+    "ba b--black-10",
     "pv2 br1",
     "ttu tc b f5"
   );
