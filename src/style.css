@@ -104,48 +104,46 @@ button {
   visibility: hidden;
 }
 
-.pokeball-header {
-  --pokeball-border-size: 12px;
-  --pokeball-circle-size: 40px;
-  border-bottom: var(--pokeball-border-size) solid black;
+.PokeballHeader {
+  --PokeballHeader-borderSize: 12px;
+  --PokeballHeader-circleSize: 40px;
+  border-bottom: var(--PokeballHeader-borderSize) solid black;
   padding: 20px;
-  padding-top: calc(1 * var(--pokeball-circle-size));
-  padding-bottom: calc(1.1 * var(--pokeball-circle-size));
+  padding-top: calc(1 * var(--PokeballHeader-circleSize));
+  padding-bottom: calc(1.1 * var(--PokeballHeader-circleSize));
   margin-top: 0;
   margin-bottom: 0;
 }
 
 /* The little Pokéball button */
-.pokeball-header:after {
+.PokeballHeader:after {
   content: " ";
   background: white;
   border: 8px solid black;
   box-shadow: inset 0 0 0 5px white, inset 0 0 0 7px #ccc;
-  width: var(--pokeball-circle-size);
-  height: var(--pokeball-circle-size);
+  width: var(--PokeballHeader-circleSize);
+  height: var(--PokeballHeader-circleSize);
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  bottom: calc(-0.5 * var(--pokeball-border-size));
+  bottom: calc(-0.5 * var(--PokeballHeader-borderSize));
   transform: translateX(-50%) translateY(50%);
 }
 
 .type-bg {
-  background-color: var(--type-color, #888);
-  color: white;
-  text-shadow: 0 1px 0 black, 0 0 1px rgba(0, 0, 0, 0.6),
-    0 0 2px rgba(0, 0, 0, 0.7), 0 0 3px rgba(0, 0, 0, 0.8),
-    0 0 4px rgba(0, 0, 0, 0.9);
+  background-color: var(--type-color-1, #888);
+  color: black;
+  text-shadow: 0 0 1px white, 0 0 2px white;
 }
 
 .type-bg-light {
-  background: var(--type-light-color, #fff);
+  background: var(--type-color-3, #fff);
   color: black;
   text-shadow: 0 0 1px white, 0 0 2px white;
 }
 
 .type-bg-dark {
-  background: var(--type-dark-color, #333);
+  background: var(--type-color-2, #333);
   color: white;
   text-shadow: 0 1px 0 black, 0 0 1px rgba(0, 0, 0, 0.6),
     0 0 2px rgba(0, 0, 0, 0.7), 0 0 3px rgba(0, 0, 0, 0.8),
@@ -157,115 +155,115 @@ button {
 }
 
 .type-fire {
-  --type-color: #f08030;
-  --type-dark-color: #9c531f;
-  --type-light-color: #f5ac78;
+  --type-color-1: #ff9d54;
+  --type-color-2: #ff9d54;
+  --type-color-3: #fde2ab;
 }
 
 .type-water {
-  --type-color: #6890f0;
-  --type-dark-color: #445e9c;
-  --type-light-color: #9db7f5;
+  --type-color-1: #68abf1;
+  --type-color-2: #4f92d6;
+  --type-color-3: #9ee6ff;
 }
 
 .type-grass {
-  --type-color: #78c850;
-  --type-dark-color: #4e8234;
-  --type-light-color: #a7db8d;
+  --type-color-1: #7ed874;
+  --type-color-2: #65bd55;
+  --type-color-3: #cfffc3;
 }
 
 .type-electric {
-  --type-color: #f8d030;
-  --type-dark-color: #a1871f;
-  --type-light-color: #fae078;
+  --type-color-1: #f4d23b;
+  --type-color-2: #fad143;
+  --type-color-3: #feff99;
 }
 
 .type-psychic {
-  --type-color: #f85888;
-  --type-dark-color: #a13959;
-  --type-light-color: #fa92b2;
+  --type-color-1: #ff8a90;
+  --type-color-2: #f97175;
+  --type-color-3: #ffd5e3;
 }
 
 .type-ice {
-  --type-color: #98d8d8;
-  --type-dark-color: #638d8d;
-  --type-light-color: #bce6e6;
+  --type-color-1: #87e3d4;
+  --type-color-2: #72cfbd;
+  --type-color-3: #cbffff;
 }
 
 .type-dragon {
-  --type-color: #7038f8;
-  --type-dark-color: #4924a1;
-  --type-light-color: #a27dfa;
+  --type-color-1: #53a3d8;
+  --type-color-2: #116ac4;
+  --type-color-3: #95e4ff;
 }
 
 .type-dark {
-  --type-color: #705848;
-  --type-dark-color: #49392f;
-  --type-light-color: #a29288;
+  --type-color-1: #a18dd5;
+  --type-color-2: #5b5464;
+  --type-color-3: #ccc4f3;
 }
 
 .type-fairy {
-  --type-color: #ee99ac;
-  --type-dark-color: #9b6470;
-  --type-light-color: #f4bdc9;
+  --type-color-1: #f08ee5;
+  --type-color-2: #eb92e4;
+  --type-color-3: #ffc7fc;
 }
 
 .type-normal {
-  --type-color: #a8a878;
-  --type-dark-color: #6d6d4e;
-  --type-light-color: #c6c6a7;
+  --type-color-1: #d1dadf;
+  --type-color-2: #929da3;
+  --type-color-3: #ffffff;
 }
 
 .type-fighting {
-  --type-color: #c03028;
-  --type-dark-color: #7d1f1a;
-  --type-light-color: #d67873;
+  --type-color-1: #e46a93;
+  --type-color-2: #ce436a;
+  --type-color-3: #ffb0d0;
 }
 
 .type-flying {
-  --type-color: #a890f0;
-  --type-dark-color: #6d5e9c;
-  --type-light-color: #c6b7f5;
+  --type-color-1: #8fb5e6;
+  --type-color-2: #8caadc;
+  --type-color-3: #c5dcfc;
 }
 
 .type-poison {
-  --type-color: #a040a0;
-  --type-dark-color: #682a68;
-  --type-light-color: #c183c1;
+  --type-color-1: #c685e3;
+  --type-color-2: #ac66c8;
+  --type-color-3: #f6bcf9;
 }
 
 .type-ground {
-  --type-color: #e0c068;
-  --type-dark-color: #927d44;
-  --type-light-color: #ebd69d;
+  --type-color-1: #f2915e;
+  --type-color-2: #d97946;
+  --type-color-3: #feca98;
 }
 
 .type-rock {
-  --type-color: #b8a038;
-  --type-dark-color: #786824;
-  --type-light-color: #d1c17d;
+  --type-color-1: #c8b78b;
+  --type-color-2: #c6b887;
+  --type-color-3: #eee6a5;
 }
 
 .type-bug {
-  --type-color: #a8b820;
-  --type-dark-color: #6d7815;
-  --type-light-color: #c6d16e;
+  --type-color-1: #addf4a;
+  --type-color-2: #90c127;
+  --type-color-3: #f6ffa6;
 }
 
 .type-ghost {
-  --type-color: #705898;
-  --type-dark-color: #493963;
-  --type-light-color: #a292bc;
+  --type-color-1: #8293d8;
+  --type-color-2: #4e6caa;
+  --type-color-3: #b6c7ff;
 }
 
 .type-steel {
-  --type-color: #b8b8d0;
-  --type-dark-color: #787887;
-  --type-light-color: #d1d1e0;
+  --type-color-1: #79adc2;
+  --type-color-2: #518ea3;
+  --type-color-3: #b3f3ff;
 }
 
 .type-none {
-  --type-color: #dedede;
-  --type-dark-color: #808080;
-  --type-light-color: #fafafa;
+  --type-color-1: #dedede;
+  --type-color-2: #808080;
+  --type-color-3: #fafafa;
 }

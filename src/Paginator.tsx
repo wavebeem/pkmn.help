@@ -41,7 +41,7 @@ function PageSelector(props: PageSelectorProps) {
         &lsaquo;
       </RoundButton>
       <div className="flex-auto tc b f4">
-        page {props.currentPage + 1} of {props.numPages}
+        Page {props.currentPage + 1} of {props.numPages}
       </div>
       <RoundButton
         onClick={() => {
@@ -66,7 +66,7 @@ interface PaginatorProps<T> {
   pageSize: number;
   emptyState: any;
   items: T[];
-  render: (item: T, index: number, array: T[]) => any;
+  renderPage: (items: T[]) => any;
 }
 
 function Paginator<T>(props: PaginatorProps<T>) {
@@ -75,7 +75,7 @@ function Paginator<T>(props: PaginatorProps<T>) {
     pageSize,
     items,
     emptyState,
-    render,
+    renderPage,
     updatePagePrev,
     updatePageNext
   } = props;
@@ -96,11 +96,7 @@ function Paginator<T>(props: PaginatorProps<T>) {
         updatePagePrev={updatePagePrev}
         updatePageNext={updatePageNext}
       />
-      {pageItems.length === 0 ? (
-        emptyState
-      ) : (
-        <div key={`page-${currentPage}`}>{pageItems.map(render)}</div>
-      )}
+      {pageItems.length === 0 ? emptyState : renderPage(pageItems)}
       <PageSelector
         location={Location.BOTTOM}
         numPages={numPages}
