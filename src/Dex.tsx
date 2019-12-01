@@ -13,7 +13,7 @@ const PAGE_SIZE = 50;
 
 function makeType(t: Type, i: number) {
   const className = classnames(
-    `type-bg type-${t} b--black-20`,
+    `type-bg-dark type-${t} b--black-20`,
     "ttc tc b",
     "db ph0 pv1",
     "br1 ba f6",
@@ -29,10 +29,9 @@ function makeType(t: Type, i: number) {
 
 function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
   const className = classnames(
-    "pa1",
-    "flex items-center",
-    "bg-white ba b--black-20 br1",
-    i === a.length - 1 ? "mb2" : "mv2"
+    "pa2",
+    "flex items-center b--black-10",
+    i === 0 ? "" : "bt"
   );
   const displayNumber = "#" + String(p.number).padStart(3, "0");
   const style = { minHeight: "100px" };
@@ -42,7 +41,6 @@ function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
       <img
         src={getImage(p.id)}
         role="presentation"
-        // className="mr3 Pixelated bg-white br1 ba b--black-20"
         className="mr3 Pixelated"
         width={imgSize}
         height={imgSize}
@@ -96,7 +94,11 @@ function Dex(props: DexProps) {
         pageSize={PAGE_SIZE}
         emptyState={<p className="silver f1 b tc m0">no pokémon found</p>}
         items={pkmn}
-        render={(p, i, a) => makePKMN(p, i, a, props)}
+        renderPage={page => (
+          <div className="bg-white br2 ba b--black-20">
+            {page.map((p, i, a) => makePKMN(p, i, a, props))}
+          </div>
+        )}
       />
     </div>
   );

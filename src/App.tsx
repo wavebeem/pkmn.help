@@ -33,7 +33,7 @@ function App() {
   return (
     <div className="sans-serif bg-near-white mid-gray min-vh-100 flex flex-column">
       <div className="flex-auto">
-        <h1 className="f2 tc relative white bg-dark-red pokeball-header">
+        <h1 className="f2 tc relative white bg-dark-red PokeballHeader">
           <a href="#" className="link white dim">
             Pokémon Type Calculator
           </a>

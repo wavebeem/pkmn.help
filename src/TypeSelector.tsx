@@ -12,7 +12,7 @@ function makeCircle(type: Type, isFocused: boolean) {
   const size = BUTTON_INNER_HEIGHT;
   const className = classnames(
     `type-${type} b--black br-pill ba`,
-    isFocused ? "b--black-70 type-bg-light" : "b--black-30 type-bg"
+    isFocused ? "b--black-70 type-bg-light" : "b--black-30 type-bg-dark"
   );
   const style = {
     flexShrink: 0,
