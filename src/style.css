@@ -132,10 +132,8 @@ button {
 
 .type-bg {
   background-color: var(--type-color-1, #888);
-  color: white;
-  text-shadow: 0 1px 0 black, 0 0 1px rgba(0, 0, 0, 0.6),
-    0 0 2px rgba(0, 0, 0, 0.7), 0 0 3px rgba(0, 0, 0, 0.8),
-    0 0 4px rgba(0, 0, 0, 0.9);
+  color: black;
+  text-shadow: 0 0 1px white, 0 0 2px white;
 }
 
 .type-bg-light {
@@ -211,9 +209,9 @@ button {
 }
 
 .type-normal {
-  --type-color-1: #ffffff;
+  --type-color-1: #d1dadf;
   --type-color-2: #929da3;
-  --type-color-3: #d1dadf;
+  --type-color-3: #ffffff;
 }
 
 .type-fighting {

@@ -13,8 +13,8 @@ const PAGE_SIZE = 50;
 
 function makeType(t: Type, i: number) {
   const className = classnames(
-    `type-bg type-${t} b--black-10`,
-    "ttu tc b",
+    `type-bg type-${t} b--black-20`,
+    "ttc tc b",
     "db ph0 pv1",
     "br1 ba f6",
     { ml1: i > 0 }
