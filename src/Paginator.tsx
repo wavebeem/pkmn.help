@@ -41,7 +41,7 @@ function PageSelector(props: PageSelectorProps) {
         &lsaquo;
       </RoundButton>
       <div className="flex-auto tc b f4">
-        page {props.currentPage + 1} of {props.numPages}
+        Page {props.currentPage + 1} of {props.numPages}
       </div>
       <RoundButton
         onClick={() => {

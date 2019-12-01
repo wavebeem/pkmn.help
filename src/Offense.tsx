@@ -15,7 +15,7 @@ function Offense(props: OffenseProps) {
   return (
     <main className="ph3 pt1 pb4 mw6 mw9-ns center">
       <div className="dib w-50-ns w-100 v-top">
-        <h2 className={classH2}>choose type</h2>
+        <h2 className={classH2}>Choose type</h2>
         <TypeSelector
           value={type0}
           onChange={updateType0}
@@ -23,7 +23,7 @@ function Offense(props: OffenseProps) {
         />
         {/* Here for equal padding between screens */}
         <div className="HACK-hidden-ns">
-          <h2 className={classH2}>choose type</h2>
+          <h2 className={classH2}>Choose type</h2>
           <TypeSelector
             value={type0}
             onChange={updateType0}

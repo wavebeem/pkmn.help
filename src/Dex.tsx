@@ -9,11 +9,11 @@ import { Pokemon } from "./pkmn";
 import getImage from "./getImage";
 import { clickPokemon } from "./ga";
 
-const PAGE_SIZE = 50;
+const PAGE_SIZE = 100;
 
 function makeType(t: Type, i: number) {
   const className = classnames(
-    `type-bg-dark type-${t} b--black-20`,
+    `type-bg-dark type-${t} b--black-10`,
     "ttc tc b",
     "db ph0 pv1",
     "br1 ba f6",
@@ -92,7 +92,7 @@ function Dex(props: DexProps) {
         updatePageNext={() => updateCurrentPage(currentPage + 1)}
         updatePagePrev={() => updateCurrentPage(currentPage - 1)}
         pageSize={PAGE_SIZE}
-        emptyState={<p className="silver f1 b tc m0">no pokémon found</p>}
+        emptyState={<p className="silver f1 b tc m0">No Pokémon found</p>}
         items={pkmn}
         renderPage={page => (
           <div className="bg-white br2 ba b--black-20">

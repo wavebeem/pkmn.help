@@ -17,7 +17,7 @@ function Badge({ type }: BadgeProps) {
   const style = { width: 120, margin: "0.125rem" };
   const className = classnames(
     `type-bg-dark type-${type}`,
-    "ba b--black-20",
+    "ba b--black-10",
     "pv2 br1",
     "ttc tc b f5"
   );
@@ -92,7 +92,7 @@ export interface DefenseProps {
 
 export function Defense({ type1, type2 }: DefenseProps) {
   const matchups = defensiveMatchups(type1, type2);
-  return <Matchups makePrefix={x => `takes ${x} from`} matchups={matchups} />;
+  return <Matchups makePrefix={x => `Takes ${x} from`} matchups={matchups} />;
 }
 
 Defense.displayName = "Matchups.Defense";
@@ -103,7 +103,7 @@ export interface OffenseProps {
 
 export function Offense({ type }: OffenseProps) {
   const matchups = offensiveMatchups(type);
-  return <Matchups makePrefix={x => `deals ${x} to`} matchups={matchups} />;
+  return <Matchups makePrefix={x => `Deals ${x} to`} matchups={matchups} />;
 }
 
 Offense.displayName = "Matchups.Offense";
