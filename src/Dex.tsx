@@ -27,7 +27,7 @@ function makeType(t: Type, i: number) {
   );
 }
 
-function makePKMN(p: Pokemon, i: number, a: Pokemon[], props: DexProps) {
+function makePKMN(p: Pokemon, i: number, _a: Pokemon[], props: DexProps) {
   const className = classnames(
     "pa2",
     "flex items-center b--black-10",
