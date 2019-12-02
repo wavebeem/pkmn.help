@@ -57,6 +57,7 @@ function App() {
               currentPage={currentPage}
               pkmn={pkmn}
               search={search}
+              updateType0={updateType0}
               updateType1={updateType1}
               updateType2={updateType2}
               changeTab={changeTab}
