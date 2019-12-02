@@ -30,7 +30,7 @@ function Search(props: SearchProps) {
         inputMode="verbatim"
         autoCapitalize="none"
         className={classnames(
-          "f2 w-100 border-box",
+          "f3 w-100 border-box",
           "pv2",
           "chunky-focus",
           "inset-shadow",

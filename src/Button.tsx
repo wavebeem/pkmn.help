@@ -11,7 +11,7 @@ function Button(props: ButtonProps) {
         "db w-100",
         "ba br3",
         "pv3 ph4",
-        "b f3",
+        "b f4",
         "chunky-focus",
         "active-squish",
         props.disabled

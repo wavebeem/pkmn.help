@@ -16,7 +16,7 @@ function makeType(t: Type, i: number) {
     `type-bg-dark type-${t} b--black-10`,
     "ttc tc b",
     "db ph0 pv1",
-    "br1 ba f6",
+    "br1 ba f5",
     { ml1: i > 0 }
   );
   const style = { minWidth: "6em" };
@@ -61,7 +61,7 @@ function makePKMN(p: Pokemon, i: number, _a: Pokemon[], props: DexProps) {
               clickPokemon(p.id);
             }}
           >
-            <h2 className="di truncate mv0 f3">{p.name}</h2>
+            <h2 className="di truncate mv0 f4">{p.name}</h2>
           </a>
         </div>
         <div className="flex">{p.types.map(makeType)}</div>
@@ -92,7 +92,7 @@ function Dex(props: DexProps) {
         updatePageNext={() => updateCurrentPage(currentPage + 1)}
         updatePagePrev={() => updateCurrentPage(currentPage - 1)}
         pageSize={PAGE_SIZE}
-        emptyState={<p className="silver f1 b tc m0">No Pokémon found</p>}
+        emptyState={<p className="silver f2 b tc m0">No Pokémon found</p>}
         items={pkmn}
         renderPage={page => (
           <div className="bg-white br2 ba b--black-20">
