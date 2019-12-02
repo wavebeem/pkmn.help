@@ -70,8 +70,7 @@ button {
 
 .chunky-focus:focus {
   outline: none;
-  border-color: black;
-  box-shadow: 0 0 0 1px black, 0 0 0 4px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 0 3px white, 0 0 0 5px black;
 }
 
 .text-shadow-black {

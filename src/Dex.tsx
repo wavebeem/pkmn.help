@@ -12,16 +12,32 @@ import { clickPokemon } from "./ga";
 const PAGE_SIZE = 100;
 
 function makeType(t: Type, i: number) {
-  const className = classnames(
-    `type-bg-dark type-${t} b--black-10`,
-    "ttc tc b",
-    "db ph0 pv1",
-    "br1 ba f5",
-    { ml1: i > 0 }
-  );
-  const style = { minWidth: "6em" };
+  const size = "0.75em";
   return (
-    <span key={`type-${t}`} className={className} style={style}>
+    <span
+      key={`type-${t}`}
+      className={classnames(
+        `type-${t} black`,
+        "ttc tc b flex items-center",
+        "db ph1 pv0",
+        "br-pill ba f6",
+        { ml1: i > 0 }
+      )}
+      style={{
+        padding: "0.125rem 0.5rem",
+        minWidth: "6em",
+        background: "var(--type-color-3)",
+        borderColor: "var(--type-color-2)"
+      }}
+    >
+      <span
+        className="dib br-pill mr2"
+        style={{
+          height: size,
+          width: size,
+          background: "var(--type-color-2)"
+        }}
+      />
       {t}
     </span>
   );
