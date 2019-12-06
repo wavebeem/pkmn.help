@@ -23,19 +23,17 @@ function MonsterType(props: MonsterTypeProps) {
       className={classnames(
         `type-${props.type} black`,
         "ttc tc flex items-center",
-        "ph1 pv0",
+        "pv0 ph2 lh-copy",
         "br-pill ba f6",
         { ml1: props.index > 0 }
       )}
       style={{
-        padding: "0.125rem 0.5rem",
-        minWidth: "6em",
         background: "var(--type-color-3)",
         borderColor: "var(--type-color-2)"
       }}
     >
       <span
-        className="dib br-pill mr2"
+        className="dib br-pill mr1"
         style={{
           height: size,
           width: size,
