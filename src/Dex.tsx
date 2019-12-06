@@ -11,17 +11,21 @@ import { clickPokemon } from "./ga";
 
 const PAGE_SIZE = 100;
 
-function makeType(t: Type, i: number) {
+interface MonsterTypeProps {
+  type: Type;
+  index: number;
+}
+
+function MonsterType(props: MonsterTypeProps) {
   const size = "0.75em";
   return (
     <div
-      key={`type-${t}`}
       className={classnames(
-        `type-${t} black`,
+        `type-${props.type} black`,
         "ttc tc flex items-center",
         "ph1 pv0",
         "br-pill ba f6",
-        { ml1: i > 0 }
+        { ml1: props.index > 0 }
       )}
       style={{
         padding: "0.125rem 0.5rem",
@@ -38,7 +42,7 @@ function makeType(t: Type, i: number) {
           background: "var(--type-color-2)"
         }}
       />
-      {t}
+      {props.type}
     </div>
   );
 }
@@ -91,7 +95,9 @@ function Monster(props: MonsterProps) {
           </a>
         </div>
         <div className="flex">
-          {props.pokemon.types.map((t, i) => makeType(t, i))}
+          {props.pokemon.types.map((t, i) => (
+            <MonsterType key={i} type={t} index={i} />
+          ))}
         </div>
       </div>
     </div>
