@@ -11,7 +11,7 @@ export default function Footer() {
         <p>
           <a
             href="#"
-            className="ThickUnderline b near-black hover-gray ChunkyFocus"
+            className="ThickUnderline b near-black hover-gray DashedFocus"
             onClick={event => {
               event.preventDefault();
               setIsReleaseNotesOpen(!isReleaseNotesOpen);
@@ -23,8 +23,8 @@ export default function Footer() {
               <React.Fragment>Show release notes</React.Fragment>
             )}
           </a>
-          {isReleaseNotesOpen ? <ReleaseNotes /> : null}
         </p>
+        {isReleaseNotesOpen ? <ReleaseNotes /> : null}
         <p>
           Pokémon &copy; 2002-{year} Pokémon. &copy; 1995-{year}{" "}
           Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &reg; and Pokémon
@@ -38,7 +38,7 @@ export default function Footer() {
           pkmn.help &copy; 2013-{year}{" "}
           <a
             href="https://mockbrian.com"
-            className="b ThickUnderline near-black hover-gray ChunkyFocus"
+            className="b ThickUnderline near-black hover-gray DashedFocus"
           >
             Brian Mock
           </a>

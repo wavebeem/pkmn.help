@@ -2,7 +2,7 @@ import React from "react";
 
 export function ReleaseNotes(props: React.BaseHTMLAttributes<never>) {
   return (
-    <p className="bg-washed-yellow pa2 br3 ba b--black-20" {...props}>
+    <div className="bg-washed-yellow mv3 pa3 br3 ba b--black-20" {...props}>
       <h2 className="lh-title f5 mv0">December 2019 Updates</h2>
       <ul className="lh-copy mb0 mt1 ph3">
         <li>Clicking a Pokémon reveals their defense matchups</li>
@@ -18,6 +18,6 @@ export function ReleaseNotes(props: React.BaseHTMLAttributes<never>) {
         <li>Added Pokédex images</li>
         <li>Added search by number and better search algorithm</li>
       </ul>
-    </p>
+    </div>
   );
 }

@@ -47,8 +47,8 @@ function Monster(props: MonsterProps) {
     <a
       href={`#${props.pokemon.id}`}
       className={classnames(
-        "no-underline hover-bg-washed-blue",
-        "flex items-center b--black-10 InnerFocus",
+        "near-black no-underline hover-bg-washed-blue",
+        "flex items-center b--black-10 InnerDashedFocus",
         props.index === 0 ? "" : "bt"
       )}
       onClick={event => {
@@ -71,9 +71,7 @@ function Monster(props: MonsterProps) {
         <div className="flex mb2 items-center">
           <div className="gray mv0 f5 code">{displayNumber}</div>
           <div className="ph1" />
-          <a className="near-black ChunkyFocus">
-            <h2 className="di truncate mv0 f4">{props.pokemon.name}</h2>
-          </a>
+          <h2 className="di truncate mv0 f4">{props.pokemon.name}</h2>
         </div>
         <div className="flex">
           {props.pokemon.types.map((t, i) => (
