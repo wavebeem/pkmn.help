@@ -14,7 +14,7 @@
 
 .TypeSelector-Container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 0.5rem;
 }
 
@@ -71,6 +71,17 @@ button {
 .chunky-focus:focus {
   outline: none;
   box-shadow: 0 0 0 3px white, 0 0 0 5px black;
+}
+
+.SimpleFocus:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: inset 0 0 0 1px black;
+}
+
+.InnerFocus:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 3px white, inset 0 0 0 5px black;
 }
 
 .text-shadow-black {

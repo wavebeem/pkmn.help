@@ -34,7 +34,7 @@ function Search(props: SearchProps) {
         className={classnames(
           "f5 w-100 border-box",
           "pv2",
-          "chunky-focus",
+          "SimpleFocus",
           "inset-shadow",
           "br-pill ba",
           "bg-white",

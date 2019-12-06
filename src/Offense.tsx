@@ -31,7 +31,7 @@ function Offense(props: OffenseProps) {
           />
         </div>
       </div>
-      <div className="dib w-50-ns w-100 v-top pl3-ns mt4-ns">
+      <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups.Offense type={type0} />
       </div>

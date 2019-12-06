@@ -40,7 +40,7 @@ const buttonClasses = [
   "pa1",
   "f5 b",
   "ttc",
-  "chunky-focus",
+  "SimpleFocus",
   "active-squish"
 ];
 

@@ -57,16 +57,23 @@ interface MonsterProps {
 
 function Monster(props: MonsterProps) {
   const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
-  const style = { minHeight: "100px" };
   const imgSize = 40 * 2;
   return (
-    <div
+    <a
+      href={`#${props.pokemon.id}`}
       className={classnames(
-        "pa2",
-        "flex items-center b--black-10",
+        "no-underline hover-bg-washed-blue",
+        "flex items-center b--black-10 InnerFocus",
         props.index === 0 ? "" : "bt"
       )}
-      style={style}
+      onClick={event => {
+        event.preventDefault();
+        const [type1, type2] = props.pokemon.types;
+        props.updateType1(type1);
+        props.updateType2(type2 || Type.NONE);
+        props.changeTab(1);
+        clickPokemon(props.pokemon.id);
+      }}
     >
       <img
         src={getImage(props.pokemon.id)}
@@ -79,18 +86,7 @@ function Monster(props: MonsterProps) {
         <div className="flex mb2 items-center">
           <div className="gray mv0 f5 code">{displayNumber}</div>
           <div className="ph1" />
-          <a
-            href="#"
-            className="near-black chunky-focus ThickUnderline"
-            onClick={event => {
-              event.preventDefault();
-              const [type1, type2] = props.pokemon.types;
-              props.updateType1(type1);
-              props.updateType2(type2 || Type.NONE);
-              props.changeTab(1);
-              clickPokemon(props.pokemon.id);
-            }}
-          >
+          <a className="near-black chunky-focus ThickUnderline">
             <h2 className="di truncate mv0 f4">{props.pokemon.name}</h2>
           </a>
         </div>
@@ -100,7 +96,7 @@ function Monster(props: MonsterProps) {
           ))}
         </div>
       </div>
-    </div>
+    </a>
   );
 }
 
@@ -130,7 +126,7 @@ function Dex(props: DexProps) {
         emptyState={<p className="silver f2 b tc m0">No Pokémon found</p>}
         items={pkmn}
         renderPage={page => (
-          <div className="bg-white br2 ba b--black-20">
+          <div className="bg-white br3 ba b--black-20 overflow-hidden">
             {page.map((pokemon, index) => (
               <Monster
                 key={pokemon.id}

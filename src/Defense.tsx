@@ -32,7 +32,7 @@ function Defense(props: DefenseProps) {
           includeNone={true}
         />
       </div>
-      <div className="dib w-50-ns w-100 v-top pl3-ns mt4-ns">
+      <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups.Defense type1={type1} type2={type2} />
       </div>

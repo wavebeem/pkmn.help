@@ -9,7 +9,7 @@ export function RoundButton(props: React.ButtonHTMLAttributes<never>) {
         "db",
         "ba br-pill pv1 ph2",
         "b f5",
-        "chunky-focus",
+        "SimpleFocus",
         "active-squish",
         props.disabled
           ? "b--black-10 black-20 bg-transparent"

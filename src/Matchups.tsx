@@ -19,10 +19,10 @@ function Badge(props: BadgeProps) {
       className={classnames(
         `type-bg-dark type-${props.type}`,
         "ba b--black-10",
-        "pv2 br1",
+        "ph1 pv1 br1",
         "ttc tc b f5"
       )}
-      style={{ width: 120, margin: "0.125rem" }}
+      style={{ width: 80, margin: "0.125rem" }}
     >
       {props.type}
     </div>
