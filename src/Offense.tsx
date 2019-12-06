@@ -17,6 +17,7 @@ function Offense(props: OffenseProps) {
       <div className="dib w-50-ns w-100 v-top">
         <h2 className={classH2}>Choose type</h2>
         <TypeSelector
+          disabledTypes={[]}
           value={type0}
           onChange={updateType0}
           includeNone={false}
@@ -25,6 +26,7 @@ function Offense(props: OffenseProps) {
         <div className="HACK-hidden-ns">
           <h2 className={classH2}>Choose type</h2>
           <TypeSelector
+            disabledTypes={[]}
             value={type0}
             onChange={updateType0}
             includeNone={true}

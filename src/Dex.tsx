@@ -17,29 +17,16 @@ interface MonsterTypeProps {
 }
 
 function MonsterType(props: MonsterTypeProps) {
-  const size = "0.75em";
   return (
     <div
       className={classnames(
-        `type-${props.type} black`,
-        "ttc tc flex items-center",
+        `type-${props.type} type-bg-light`,
+        "ttc tc flex",
         "pv0 ph2 lh-copy",
-        "br-pill ba f6",
+        "br1 ba b--black-10 f6",
         { ml1: props.index > 0 }
       )}
-      style={{
-        background: "var(--type-color-3)",
-        borderColor: "var(--type-color-2)"
-      }}
     >
-      <span
-        className="dib br-pill mr1"
-        style={{
-          height: size,
-          width: size,
-          background: "var(--type-color-2)"
-        }}
-      />
       {props.type}
     </div>
   );
