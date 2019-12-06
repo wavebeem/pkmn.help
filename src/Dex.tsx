@@ -43,19 +43,29 @@ function makeType(t: Type, i: number) {
   );
 }
 
-function makePKMN(p: Pokemon, i: number, _a: Pokemon[], props: DexProps) {
-  const className = classnames(
-    "pa2",
-    "flex items-center b--black-10",
-    i === 0 ? "" : "bt"
-  );
-  const displayNumber = "#" + String(p.number).padStart(3, "0");
+interface MonsterProps {
+  pokemon: Pokemon;
+  index: number;
+  updateType1(type1: Type): void;
+  updateType2(type2: Type): void;
+  changeTab(tab: number): void;
+}
+
+function Monster(props: MonsterProps) {
+  const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
   const style = { minHeight: "100px" };
   const imgSize = 40 * 2;
   return (
-    <div key={p.id} className={className} style={style}>
+    <div
+      className={classnames(
+        "pa2",
+        "flex items-center b--black-10",
+        props.index === 0 ? "" : "bt"
+      )}
+      style={style}
+    >
       <img
-        src={getImage(p.id)}
+        src={getImage(props.pokemon.id)}
         role="presentation"
         className="mr3 Pixelated"
         width={imgSize}
@@ -70,17 +80,19 @@ function makePKMN(p: Pokemon, i: number, _a: Pokemon[], props: DexProps) {
             className="near-black chunky-focus ThickUnderline"
             onClick={event => {
               event.preventDefault();
-              const [type1, type2] = p.types;
+              const [type1, type2] = props.pokemon.types;
               props.updateType1(type1);
               props.updateType2(type2 || Type.NONE);
               props.changeTab(1);
-              clickPokemon(p.id);
+              clickPokemon(props.pokemon.id);
             }}
           >
-            <h2 className="di truncate mv0 f4">{p.name}</h2>
+            <h2 className="di truncate mv0 f4">{props.pokemon.name}</h2>
           </a>
         </div>
-        <div className="flex">{p.types.map((p, i) => makeType(p, i))}</div>
+        <div className="flex">
+          {props.pokemon.types.map((t, i) => makeType(t, i))}
+        </div>
       </div>
     </div>
   );
@@ -113,7 +125,16 @@ function Dex(props: DexProps) {
         items={pkmn}
         renderPage={page => (
           <div className="bg-white br2 ba b--black-20">
-            {page.map((p, i, a) => makePKMN(p, i, a, props))}
+            {page.map((pokemon, index) => (
+              <Monster
+                key={pokemon.id}
+                pokemon={pokemon}
+                index={index}
+                updateType1={props.updateType1}
+                updateType2={props.updateType2}
+                changeTab={props.changeTab}
+              />
+            ))}
           </div>
         )}
       />

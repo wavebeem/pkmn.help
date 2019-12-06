@@ -42,7 +42,7 @@ function Search(props: SearchProps) {
           "b--black-30",
           "search-placeholder-light"
         )}
-        style={{ paddingLeft: 65, paddingRight: 65, height: inputHeight }}
+        style={{ paddingLeft: 40, paddingRight: 40, height: inputHeight }}
         value={search}
         onChange={event => {
           updateSearch(event.target.value);
