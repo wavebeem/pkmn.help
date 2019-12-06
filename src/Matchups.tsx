@@ -41,7 +41,7 @@ function Section(props: SectionProps) {
   return (
     <div>
       <h3 className="f5 mt3 mb0 dark-gray">{props.title}</h3>
-      <div className="mw6 center MatchupsSection-Container">
+      <div className="mw5 center MatchupsSection-Container">
         {props.types.map(t => (
           <Badge key={`type-${t}`} type={t} />
         ))}

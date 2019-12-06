@@ -75,7 +75,7 @@ export function TabContainer(props: TabContainerProps) {
         className={classnames([
           "flex justify-center",
           "bg-white",
-          "bb tab-bar-border b--black-20",
+          "bb TabBarBorder b--black-20",
           "pt3"
         ])}
       >

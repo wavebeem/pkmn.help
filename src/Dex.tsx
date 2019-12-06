@@ -84,7 +84,7 @@ function Monster(props: MonsterProps) {
         <div className="flex mb2 items-center">
           <div className="gray mv0 f5 code">{displayNumber}</div>
           <div className="ph1" />
-          <a className="near-black chunky-focus ThickUnderline">
+          <a className="near-black ChunkyFocus">
             <h2 className="di truncate mv0 f4">{props.pokemon.name}</h2>
           </a>
         </div>
@@ -121,7 +121,7 @@ function Dex(props: DexProps) {
         updatePageNext={() => updateCurrentPage(currentPage + 1)}
         updatePagePrev={() => updateCurrentPage(currentPage - 1)}
         pageSize={PAGE_SIZE}
-        emptyState={<p className="silver f2 b tc m0">No Pokémon found</p>}
+        emptyState={<p className="silver f4 b tc m0">No Pokémon found</p>}
         items={pkmn}
         renderPage={page => (
           <div className="bg-white br3 ba b--black-20 overflow-hidden">
