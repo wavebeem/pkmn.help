@@ -7,9 +7,8 @@ export function RoundButton(props: React.ButtonHTMLAttributes<never>) {
       {...props}
       className={classnames(
         "db",
-        "ba br-pill",
-        "w3 h3",
-        "b f3",
+        "ba br-pill pv1 ph2",
+        "b f5",
         "chunky-focus",
         "active-squish",
         props.disabled
