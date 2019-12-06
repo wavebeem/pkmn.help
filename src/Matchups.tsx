@@ -51,35 +51,35 @@ function Section(props: SectionProps) {
 }
 
 interface MatchupsProps {
-  makePrefix: (value: string) => string;
+  formatTitle: (value: string) => string;
   matchups: GroupedMatchups;
 }
 
-function Matchups({ makePrefix, matchups }: MatchupsProps) {
+function Matchups({ formatTitle, matchups }: MatchupsProps) {
   return (
     <div className="tc">
       <Section
-        title={makePrefix("4×")}
+        title={formatTitle("4×")}
         types={matchups.typesFor(Effectiveness.QUADRUPLE)}
       />
       <Section
-        title={makePrefix("2×")}
+        title={formatTitle("2×")}
         types={matchups.typesFor(Effectiveness.DOUBLE)}
       />
       <Section
-        title={makePrefix("1×")}
+        title={formatTitle("1×")}
         types={matchups.typesFor(Effectiveness.REGULAR)}
       />
       <Section
-        title={makePrefix("½×")}
+        title={formatTitle("½×")}
         types={matchups.typesFor(Effectiveness.HALF)}
       />
       <Section
-        title={makePrefix("¼×")}
+        title={formatTitle("¼×")}
         types={matchups.typesFor(Effectiveness.QUARTER)}
       />
       <Section
-        title={makePrefix("0×")}
+        title={formatTitle("0×")}
         types={matchups.typesFor(Effectiveness.ZERO)}
       />
     </div>
@@ -94,7 +94,7 @@ export interface DefenseProps {
 export function Defense(props: DefenseProps) {
   return (
     <Matchups
-      makePrefix={x => `Takes ${x} from`}
+      formatTitle={x => `Takes ${x} from`}
       matchups={defensiveMatchups(props.type1, props.type2)}
     />
   );
@@ -109,7 +109,7 @@ export interface OffenseProps {
 export function Offense(props: OffenseProps) {
   return (
     <Matchups
-      makePrefix={x => `Deals ${x} to`}
+      formatTitle={x => `Deals ${x} to`}
       matchups={offensiveMatchups(props.type)}
     />
   );

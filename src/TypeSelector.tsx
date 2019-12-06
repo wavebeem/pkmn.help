@@ -1,36 +1,9 @@
 import React from "react";
 import classnames from "classnames";
 
-import * as Data from "./data";
-import { Type } from "./data";
+import { Type, types, typesOrNone } from "./data";
 
-const labelClasses = ["tl", "pl2 pr1", "flex-auto", "truncate"];
-
-const BUTTON_INNER_HEIGHT = "1.5rem";
-
-function makeCircle(type: Type, isFocused: boolean) {
-  const size = BUTTON_INNER_HEIGHT;
-  const className = classnames(
-    `type-${type} b--black br-pill ba`,
-    isFocused ? "b--black-70 type-bg-light" : "b--black-30 type-bg-dark"
-  );
-  const style = {
-    flexShrink: 0,
-    width: size,
-    height: size
-  };
-  return <span className={className} style={style} />;
-}
-
-const buttonClasses = [
-  "db w-100",
-  "ba br-pill",
-  "pa1",
-  "f5 b",
-  "ttc",
-  "SimpleFocus",
-  "active-squish"
-];
+const buttonInnerHeight = "1.5rem";
 
 interface TypeSelectorProps {
   onChange(type: Type): void;
@@ -40,7 +13,7 @@ interface TypeSelectorProps {
 }
 
 function TypeSelector(props: TypeSelectorProps) {
-  const types = props.includeNone ? Data.typesOrNone : Data.types;
+  const theTypes = props.includeNone ? typesOrNone : types;
   const styles = {
     disabled: "b--black-10 bg-near-white o-60",
     selected: "b--black-30 type-bg-dark no-box-shadow button-shadow",
@@ -49,7 +22,7 @@ function TypeSelector(props: TypeSelectorProps) {
   };
   return (
     <div className="TypeSelector-Container">
-      {types.map(type => {
+      {theTypes.map(type => {
         const isDisabled = props.disabledTypes.includes(type);
         const style = isDisabled
           ? styles.disabled
@@ -60,16 +33,36 @@ function TypeSelector(props: TypeSelectorProps) {
           <button
             key={`type-${type}`}
             disabled={isDisabled}
-            className={classnames(style, buttonClasses, `type-${type}`)}
+            className={classnames(
+              style,
+              "db w-100",
+              "ba br-pill",
+              "pv1 ph2",
+              "f5 b",
+              "ttc",
+              "SimpleFocus",
+              "active-squish",
+              `type-${type}`
+            )}
             onClick={() => props.onChange(type)}
           >
             <span className="flex flex-row items-center justify-center">
-              {makeCircle(type, type === props.value)}
               <span
-                className={classnames(labelClasses)}
+                className={classnames(
+                  `type-${type} b--black br-pill ba`,
+                  type === props.value
+                    ? "b--black-70 type-bg-light"
+                    : "b--black-30 type-bg-dark"
+                )}
                 style={{
-                  lineHeight: BUTTON_INNER_HEIGHT
+                  width: "1rem",
+                  height: "1rem"
                 }}
+              />
+
+              <span
+                className="tl pl2 pr1 flex-auto truncate"
+                style={{ lineHeight: buttonInnerHeight }}
               >
                 {type}
               </span>
