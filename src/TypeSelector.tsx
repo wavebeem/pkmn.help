@@ -6,7 +6,7 @@ import { Type } from "./data";
 
 const labelClasses = ["tl", "pl2 pr1", "flex-auto", "truncate"];
 
-const BUTTON_INNER_HEIGHT = "20px";
+const BUTTON_INNER_HEIGHT = "1.5rem";
 
 function makeCircle(type: Type, isFocused: boolean) {
   const size = BUTTON_INNER_HEIGHT;
@@ -37,8 +37,8 @@ function makeLabel(type: Type) {
 const buttonClasses = [
   "db w-100",
   "ba br-pill",
-  "pa2",
-  "b f5",
+  "pa1",
+  "f5 b",
   "ttc",
   "chunky-focus",
   "active-squish"

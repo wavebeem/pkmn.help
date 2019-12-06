@@ -11,21 +11,15 @@ import { clickPokemon } from "./ga";
 
 const PAGE_SIZE = 100;
 
-function makeType(t: Type, i: number, props: DexProps) {
+function makeType(t: Type, i: number) {
   const size = "0.75em";
   return (
-    <a
-      href="#"
-      onClick={event => {
-        event.preventDefault();
-        props.updateType0(t);
-        props.changeTab(0);
-      }}
+    <div
       key={`type-${t}`}
       className={classnames(
-        `no-underline underline-hover type-${t} black`,
-        "ttc tc b flex items-center",
-        "db ph1 pv0",
+        `type-${t} black`,
+        "ttc tc flex items-center",
+        "ph1 pv0",
         "br-pill ba f6",
         { ml1: i > 0 }
       )}
@@ -45,7 +39,7 @@ function makeType(t: Type, i: number, props: DexProps) {
         }}
       />
       {t}
-    </a>
+    </div>
   );
 }
 
@@ -86,9 +80,7 @@ function makePKMN(p: Pokemon, i: number, _a: Pokemon[], props: DexProps) {
             <h2 className="di truncate mv0 f4">{p.name}</h2>
           </a>
         </div>
-        <div className="flex">
-          {p.types.map((p, i) => makeType(p, i, props))}
-        </div>
+        <div className="flex">{p.types.map((p, i) => makeType(p, i))}</div>
       </div>
     </div>
   );
