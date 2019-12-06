@@ -11,7 +11,7 @@ export default function Footer() {
         <p>
           <a
             href="#"
-            className="ThickUnderline b near-black hover-gray chunky-focus"
+            className="ThickUnderline b near-black hover-gray ChunkyFocus"
             onClick={event => {
               event.preventDefault();
               setIsReleaseNotesOpen(!isReleaseNotesOpen);
@@ -38,7 +38,7 @@ export default function Footer() {
           pkmn.help &copy; 2013-{year}{" "}
           <a
             href="https://mockbrian.com"
-            className="b ThickUnderline near-black hover-gray chunky-focus"
+            className="b ThickUnderline near-black hover-gray ChunkyFocus"
           >
             Brian Mock
           </a>

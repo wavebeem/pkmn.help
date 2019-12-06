@@ -12,15 +12,17 @@ interface SearchProps {
 function Search(props: SearchProps) {
   const { updateSearch, search } = props;
   const ref = React.useRef<HTMLInputElement>(null);
+  const iconSize = 24;
+  const inputHeight = 36;
   return (
-    <div className="relative mv4">
+    <div className="relative mv3">
       <img
         src={imageSearchURL}
-        width={40}
-        height={40}
+        width={iconSize}
+        height={iconSize}
         role="presentation"
         className="o-50 absolute"
-        style={{ left: 12, top: 10 }}
+        style={{ left: 10, top: 8 }}
       />
       <input
         aria-label="Search"
@@ -30,9 +32,9 @@ function Search(props: SearchProps) {
         inputMode="verbatim"
         autoCapitalize="none"
         className={classnames(
-          "f3 w-100 border-box",
+          "f5 w-100 border-box",
           "pv2",
-          "chunky-focus",
+          "SimpleFocus",
           "inset-shadow",
           "br-pill ba",
           "bg-white",
@@ -40,7 +42,7 @@ function Search(props: SearchProps) {
           "b--black-30",
           "search-placeholder-light"
         )}
-        style={{ paddingLeft: 65, paddingRight: 65, height: 55 }}
+        style={{ paddingLeft: 40, paddingRight: 40, height: inputHeight }}
         value={search}
         onChange={event => {
           updateSearch(event.target.value);
@@ -49,8 +51,8 @@ function Search(props: SearchProps) {
       />
       <img
         src={imageClearURL}
-        width={40}
-        height={40}
+        width={iconSize}
+        height={iconSize}
         role="presentation"
         onClick={() => {
           updateSearch("");
@@ -59,7 +61,7 @@ function Search(props: SearchProps) {
           }
         }}
         className={classnames("o-50 absolute pointer", { dn: search === "" })}
-        style={{ right: 8, top: 8 }}
+        style={{ right: 6, top: 6 }}
       />
     </div>
   );

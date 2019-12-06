@@ -3,44 +3,42 @@ import classnames from "classnames";
 
 import { clickNav } from "./ga";
 
-function makeTab(
-  props: TabContainerProps,
-  index: number,
-  { title, name }: TabItemProps
-) {
-  const { current, changeTab } = props;
-  const className = classnames([
-    "pv3 ph3 f4 w-third",
-    "pv3-ns ph4-ns",
-    "dib",
-    "no-outline tab-bottom-focus",
-    "b bn",
-    "br--top br4",
-    "bg-transparent",
-    "hover-black-90",
-    index === current
-      ? "black bottom-border-thick-current"
-      : "black-50 bottom-border-thick pointer"
-  ]);
-  const style = {
-    maxWidth: "150px"
-  };
-  const onClick = () => {
-    changeTab(index);
-    clickNav(name);
-  };
+interface TabProps {
+  current: number;
+  changeTab(tab: number): void;
+  index: number;
+  title: string;
+  name: string;
+}
+
+function Tab(props: TabProps) {
   return (
     <button
-      key={`tab-${index}`}
-      className={className}
-      onClick={onClick}
-      style={style}
-      disabled={index === current}
+      type="button"
+      style={{ width: 90 }}
+      className={classnames([
+        "pv2 ph2 f5",
+        "no-outline tab-bottom-focus",
+        "b bn",
+        "br--top br4",
+        "bg-transparent",
+        "hover-black-90",
+        props.index === props.current
+          ? "black bottom-border-thick-current"
+          : "black-50 bottom-border-thick pointer"
+      ])}
+      onClick={() => {
+        props.changeTab(props.index);
+        clickNav(name);
+      }}
+      disabled={props.index === props.current}
     >
-      {title}
+      {props.title}
     </button>
   );
 }
+
+Tab.displayName = "Tab";
 
 interface TabItemProps {
   title: string;
@@ -62,18 +60,27 @@ interface TabContainerProps {
 
 export function TabContainer(props: TabContainerProps) {
   const { children, current } = props;
-  const className = classnames([
-    "tc w-100",
-    "bg-white",
-    "bb tab-bar-border b--black-20",
-    "pt4"
-  ]);
-  const kids: any = React.Children.map(children, (kid: any, i: number) => {
-    return makeTab(props, i, kid.props);
-  });
+  const tabs = React.Children.map(children, (kid, i) => (
+    <Tab
+      title={kid.props.title}
+      name={kid.props.name}
+      current={current}
+      changeTab={props.changeTab}
+      index={i}
+    />
+  ));
   return (
     <div>
-      <div className={className}>{kids}</div>
+      <div
+        className={classnames([
+          "flex justify-center",
+          "bg-white",
+          "bb TabBarBorder b--black-20",
+          "pt3"
+        ])}
+      >
+        {tabs}
+      </div>
       {children[current]}
     </div>
   );

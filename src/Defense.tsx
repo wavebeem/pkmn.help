@@ -13,7 +13,7 @@ interface DefenseProps {
 
 function Defense(props: DefenseProps) {
   const { updateType1, updateType2, type1, type2 } = props;
-  const classH2 = "tc f4 mt4 mb2";
+  const classH2 = "tc f5 mv3";
   return (
     <main className="ph3 pt1 pb4 mw6 mw9-ns center">
       <div className="dib w-50-ns w-100 v-top">
@@ -32,7 +32,7 @@ function Defense(props: DefenseProps) {
           includeNone={true}
         />
       </div>
-      <div className="dib w-50-ns w-100 v-top pl3-ns mt4-ns">
+      <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups.Defense type1={type1} type2={type2} />
       </div>

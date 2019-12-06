@@ -14,16 +14,12 @@
 
 .TypeSelector-Container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 0.5rem;
 }
 
 button {
   -webkit-appearance: none;
-}
-
-.hidden {
-  visibility: hidden;
 }
 
 .inset-shadow {
@@ -63,14 +59,25 @@ button {
   background: rgba(0, 0, 0, 0.05);
 }
 
-.tab-bar-border {
+.TabBarBorder {
   border-width: 1px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 }
 
-.chunky-focus:focus {
+.ChunkyFocus:focus {
   outline: none;
   box-shadow: 0 0 0 3px white, 0 0 0 5px black;
+}
+
+.SimpleFocus:focus {
+  outline: none;
+  border-color: black;
+  box-shadow: inset 0 0 0 1px black;
+}
+
+.InnerFocus:focus {
+  outline: none;
+  box-shadow: inset 0 0 0 3px white, inset 0 0 0 5px black;
 }
 
 .text-shadow-black {
@@ -109,21 +116,22 @@ button {
 }
 
 .PokeballHeader {
-  --PokeballHeader-borderSize: 12px;
-  --PokeballHeader-circleSize: 40px;
+  --PokeballHeader-borderSize: 8px;
+  --PokeballHeader-circleSize: 30px;
   border-bottom: var(--PokeballHeader-borderSize) solid black;
-  padding: 20px;
-  padding-top: calc(1 * var(--PokeballHeader-circleSize));
-  padding-bottom: calc(1.1 * var(--PokeballHeader-circleSize));
+  padding: 1rem;
+  padding-top: calc(0.8 * var(--PokeballHeader-circleSize));
+  padding-bottom: calc(0.8 * var(--PokeballHeader-circleSize));
   margin-top: 0;
   margin-bottom: 0;
 }
 
 /* The little Pokéball button */
 .PokeballHeader:after {
+  pointer-events: none;
   content: " ";
   background: white;
-  border: 8px solid black;
+  border: 6px solid black;
   box-shadow: inset 0 0 0 5px white, inset 0 0 0 7px #ccc;
   width: var(--PokeballHeader-circleSize);
   height: var(--PokeballHeader-circleSize);

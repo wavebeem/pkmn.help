@@ -24,7 +24,7 @@ function PageSelector(props: PageSelectorProps) {
   return (
     <div
       className={classnames(
-        "items-center mv4",
+        "items-center mv3",
         props.pageItems.length === 0 ? "dn" : "flex"
       )}
     >
@@ -38,9 +38,9 @@ function PageSelector(props: PageSelectorProps) {
         disabled={!props.hasPrev}
         aria-label="Previous"
       >
-        &laquo;
+        <span role="presentation">&lsaquo; </span>Previous
       </RoundButton>
-      <div className="flex-auto tc b f4">
+      <div className="flex-auto tc b f5">
         Page {props.currentPage + 1} of {props.numPages}
       </div>
       <RoundButton
@@ -53,7 +53,7 @@ function PageSelector(props: PageSelectorProps) {
         disabled={!props.hasNext}
         aria-label="Next"
       >
-        &raquo;
+        Next<span role="presentation"> &rsaquo;</span>
       </RoundButton>
     </div>
   );
