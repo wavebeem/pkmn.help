@@ -1,5 +1,8 @@
 // Don't track analytics on localhost or development sites.
-if (window.location.hostname === "pkmn.help") {
+if (
+  window.location.hostname === "pkmn.help" ||
+  window.location.hostname === "www.pkmn.help"
+) {
   (function(i, s, o, g, r, a, m) {
     i["GoogleAnalyticsObject"] = r;
     (i[r] =
