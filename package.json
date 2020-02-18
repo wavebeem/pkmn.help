@@ -8,7 +8,7 @@
     "upgrade": "npm-check -u",
     "start": "webpack-dev-server",
     "build:ico": "bash bin/make-ico.sh",
-    "build": "mkdir -p dist && cp build/favicon.ico dist && webpack -p",
+    "build": "mkdir -p dist && cp build/favicon* manifest.json dist && webpack -p",
     "_pretty": "prettier \"src/**/*.{ts,tsx,js}\"",
     "pretty:fix": "npm run -s _pretty -- --write",
     "pretty:test": "npm run -s _pretty -- --list-different",
