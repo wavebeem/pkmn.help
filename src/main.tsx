@@ -7,4 +7,9 @@ import "./style.css";
 import { App } from "./App";
 
 SmoothScroll.polyfill();
-render(<App />, document.querySelector("#app"));
+render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.querySelector("#app")
+);
