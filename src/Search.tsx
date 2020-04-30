@@ -29,7 +29,7 @@ function Search(props: SearchProps) {
         type="text"
         autoComplete="off"
         autoCorrect="off"
-        inputMode="verbatim"
+        inputMode="search"
         autoCapitalize="none"
         className={classnames(
           "f5 w-100 border-box",
@@ -44,7 +44,7 @@ function Search(props: SearchProps) {
         )}
         style={{ paddingLeft: 40, paddingRight: 40, height: inputHeight }}
         value={search}
-        onChange={event => {
+        onChange={(event) => {
           updateSearch(event.target.value);
         }}
         ref={ref}
