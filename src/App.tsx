@@ -1,15 +1,15 @@
-import React from "react";
+import * as React from "react";
 import matchSorter from "match-sorter";
 
-import Offense from "./Offense";
-import Defense from "./Defense";
-import Dex from "./Dex";
+import { Offense } from "./Offense";
+import { Defense } from "./Defense";
+import { Dex } from "./Dex";
 import { TabContainer, TabItem } from "./Tab";
 import { Type } from "./data";
 import { AllPokemon } from "./pkmn";
-import Footer from "./Footer";
+import { Footer } from "./Footer";
 
-function App() {
+export function App() {
   const [tab, changeTab] = React.useState(1);
   const [type0, updateType0] = React.useState(Type.NORMAL);
   const [type1, updateType1] = React.useState(Type.NORMAL);
@@ -21,7 +21,7 @@ function App() {
     const s = search.trim();
     if (/^[0-9]+$/.test(s)) {
       const number = Number(s);
-      return AllPokemon.filter(p => p.number === number);
+      return AllPokemon.filter((p) => p.number === number);
     }
     return matchSorter(AllPokemon, s, { keys: ["name", "number"] });
   }, [search]);
@@ -71,5 +71,3 @@ function App() {
 }
 
 App.displayName = "App";
-
-export default App;

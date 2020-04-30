@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import classnames from "classnames";
 
 import imageClearURL from "../svg/clear.svg";
@@ -9,7 +9,7 @@ interface SearchProps {
   search: string;
 }
 
-function Search(props: SearchProps) {
+export function Search(props: SearchProps) {
   const { updateSearch, search } = props;
   const ref = React.useRef<HTMLInputElement>(null);
   const iconSize = 24;
@@ -68,5 +68,3 @@ function Search(props: SearchProps) {
 }
 
 Search.displayName = "Search";
-
-export default Search;

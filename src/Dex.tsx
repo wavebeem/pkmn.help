@@ -1,12 +1,12 @@
-import React from "react";
+import * as React from "react";
 import classnames from "classnames";
 import _ from "lodash";
 
-import Paginator from "./Paginator";
-import Search from "./Search";
+import { Paginator } from "./Paginator";
+import { Search } from "./Search";
 import { Type } from "./data";
 import { Pokemon } from "./pkmn";
-import getImage from "./getImage";
+import { getImage } from "./getImage";
 import { clickPokemon } from "./ga";
 
 const PAGE_SIZE = 100;
@@ -51,7 +51,7 @@ function Monster(props: MonsterProps) {
         "flex items-center b--black-10 InnerDashedFocus",
         props.index === 0 ? "" : "bt"
       )}
-      onClick={event => {
+      onClick={(event) => {
         event.preventDefault();
         const [type1, type2] = props.pokemon.types;
         props.updateType1(type1);
@@ -95,7 +95,7 @@ interface DexProps {
   changeTab(tab: number): void;
 }
 
-function Dex(props: DexProps) {
+export function Dex(props: DexProps) {
   const { pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
   return (
     <div className="ph2 mt3 center mw7">
@@ -108,7 +108,7 @@ function Dex(props: DexProps) {
         pageSize={PAGE_SIZE}
         emptyState={<p className="silver f4 b tc m0">No Pokémon found</p>}
         items={pkmn}
-        renderPage={page => (
+        renderPage={(page) => (
           <div className="bg-white br3 ba b--black-20 overflow-hidden">
             {page.map((pokemon, index) => (
               <Monster
@@ -128,5 +128,3 @@ function Dex(props: DexProps) {
 }
 
 Dex.displayName = "Dex";
-
-export default Dex;

@@ -1,7 +1,7 @@
-import React from "react";
+import * as React from "react";
 
 import { Type } from "./data";
-import TypeSelector from "./TypeSelector";
+import { TypeSelector } from "./TypeSelector";
 import * as Matchups from "./Matchups";
 
 interface OffenseProps {
@@ -9,7 +9,7 @@ interface OffenseProps {
   type0: Type;
 }
 
-function Offense(props: OffenseProps) {
+export function Offense(props: OffenseProps) {
   const { type0, updateType0 } = props;
   const classH2 = "tc f5 mv3";
   return (
@@ -42,5 +42,3 @@ function Offense(props: OffenseProps) {
 }
 
 Offense.displayName = "Offense";
-
-export default Offense;

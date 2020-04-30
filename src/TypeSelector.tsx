@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import classnames from "classnames";
 
 import { Type, types, typesOrNone } from "./data";
@@ -12,17 +12,17 @@ interface TypeSelectorProps {
   disabledTypes: Type[];
 }
 
-function TypeSelector(props: TypeSelectorProps) {
+export function TypeSelector(props: TypeSelectorProps) {
   const theTypes = props.includeNone ? typesOrNone : types;
   const styles = {
     disabled: "b--black-10 bg-near-white o-60",
     selected: "b--black-30 type-bg-dark no-box-shadow button-shadow",
     normal:
-      "b--black-30 bg-white black bg-white hover-bg-washed-blue button-shadow"
+      "b--black-30 bg-white black bg-white hover-bg-washed-blue button-shadow",
   };
   return (
     <div className="TypeSelector-Container">
-      {theTypes.map(type => {
+      {theTypes.map((type) => {
         const isDisabled = props.disabledTypes.includes(type);
         const style = isDisabled
           ? styles.disabled
@@ -56,7 +56,7 @@ function TypeSelector(props: TypeSelectorProps) {
                 )}
                 style={{
                   width: "1rem",
-                  height: "1rem"
+                  height: "1rem",
                 }}
               />
 
@@ -75,5 +75,3 @@ function TypeSelector(props: TypeSelectorProps) {
 }
 
 TypeSelector.displayName = "TypeSelector";
-
-export default TypeSelector;

@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import classnames from "classnames";
 
 import { RoundButton } from "./RoundButton";
@@ -6,7 +6,7 @@ import { scrollToTop } from "./scrollToTop";
 
 enum Location {
   TOP = "top",
-  BOTTOM = "bottom"
+  BOTTOM = "bottom",
 }
 
 interface PageSelectorProps {
@@ -69,7 +69,7 @@ interface PaginatorProps<T> {
   renderPage: (items: T[]) => any;
 }
 
-function Paginator<T>(props: PaginatorProps<T>) {
+export function Paginator<T>(props: PaginatorProps<T>) {
   const {
     currentPage,
     pageSize,
@@ -77,7 +77,7 @@ function Paginator<T>(props: PaginatorProps<T>) {
     emptyState,
     renderPage,
     updatePagePrev,
-    updatePageNext
+    updatePageNext,
   } = props;
   const numPages = Math.ceil(items.length / pageSize);
   const hasPrev = currentPage > 0;
@@ -112,5 +112,3 @@ function Paginator<T>(props: PaginatorProps<T>) {
 }
 
 Paginator.displayName = "Paginator";
-
-export default Paginator;
