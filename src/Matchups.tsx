@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import classnames from "classnames";
 
 import {
@@ -6,7 +6,7 @@ import {
   Effectiveness,
   GroupedMatchups,
   defensiveMatchups,
-  offensiveMatchups
+  offensiveMatchups,
 } from "./data";
 
 interface BadgeProps {
@@ -42,7 +42,7 @@ function Section(props: SectionProps) {
     <div>
       <h3 className="f5 mt3 mb0 dark-gray">{props.title}</h3>
       <div className="mw5 center MatchupsSection-Container">
-        {props.types.map(t => (
+        {props.types.map((t) => (
           <Badge key={`type-${t}`} type={t} />
         ))}
       </div>
@@ -94,7 +94,7 @@ export interface DefenseProps {
 export function Defense(props: DefenseProps) {
   return (
     <Matchups
-      formatTitle={x => `Takes ${x} from`}
+      formatTitle={(x) => `Takes ${x} from`}
       matchups={defensiveMatchups(props.type1, props.type2)}
     />
   );
@@ -109,7 +109,7 @@ export interface OffenseProps {
 export function Offense(props: OffenseProps) {
   return (
     <Matchups
-      formatTitle={x => `Deals ${x} to`}
+      formatTitle={(x) => `Deals ${x} to`}
       matchups={offensiveMatchups(props.type)}
     />
   );

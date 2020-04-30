@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import classnames from "classnames";
 
 import imageClearURL from "../svg/clear.svg";
@@ -9,7 +9,7 @@ interface SearchProps {
   search: string;
 }
 
-function Search(props: SearchProps) {
+export function Search(props: SearchProps) {
   const { updateSearch, search } = props;
   const ref = React.useRef<HTMLInputElement>(null);
   const iconSize = 24;
@@ -29,7 +29,7 @@ function Search(props: SearchProps) {
         type="text"
         autoComplete="off"
         autoCorrect="off"
-        inputMode="verbatim"
+        inputMode="search"
         autoCapitalize="none"
         className={classnames(
           "f5 w-100 border-box",
@@ -44,7 +44,7 @@ function Search(props: SearchProps) {
         )}
         style={{ paddingLeft: 40, paddingRight: 40, height: inputHeight }}
         value={search}
-        onChange={event => {
+        onChange={(event) => {
           updateSearch(event.target.value);
         }}
         ref={ref}
@@ -68,5 +68,3 @@ function Search(props: SearchProps) {
 }
 
 Search.displayName = "Search";
-
-export default Search;

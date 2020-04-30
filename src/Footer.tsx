@@ -1,8 +1,8 @@
-import React from "react";
+import * as React from "react";
 
 import { ReleaseNotes } from "./ReleaseNotes";
 
-export default function Footer() {
+export function Footer() {
   const [isReleaseNotesOpen, setIsReleaseNotesOpen] = React.useState(false);
   const year = new Date().getFullYear();
   return (
@@ -12,7 +12,7 @@ export default function Footer() {
           <a
             href="#"
             className="ThickUnderline b near-black hover-gray DashedFocus"
-            onClick={event => {
+            onClick={(event) => {
               event.preventDefault();
               setIsReleaseNotesOpen(!isReleaseNotesOpen);
             }}
