@@ -20,7 +20,7 @@ export enum Type {
   DRAGON = "dragon",
   DARK = "dark",
   FAIRY = "fairy",
-  NONE = "none"
+  NONE = "none",
 }
 
 export const types = [
@@ -41,7 +41,7 @@ export const types = [
   Type.ICE,
   Type.DRAGON,
   Type.DARK,
-  Type.FAIRY
+  Type.FAIRY,
 ];
 
 export const typesOrNone = [...types, Type.NONE];
@@ -52,7 +52,7 @@ export enum Effectiveness {
   REGULAR = 1,
   HALF = 0.5,
   QUARTER = 0.25,
-  ZERO = 0
+  ZERO = 0,
 }
 
 const rawData = [
@@ -73,7 +73,7 @@ const rawData = [
   [1, 1, 2, 1, 2, 1, 1, 1, 0.5, 0.5, 0.5, 2, 1, 1, 0.5, 2, 1, 1],
   [1, 1, 1, 1, 1, 1, 1, 1, 0.5, 1, 1, 1, 1, 1, 1, 2, 1, 0],
   [1, 0.5, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1, 2, 1, 1, 0.5, 0.5],
-  [1, 2, 1, 0.5, 1, 1, 1, 1, 0.5, 0.5, 1, 1, 1, 1, 1, 2, 2, 1]
+  [1, 2, 1, 0.5, 1, 1, 1, 1, 0.5, 0.5, 1, 1, 1, 1, 1, 2, 2, 1],
 ];
 
 function keyForTypes(t1: Type, t2: Type) {
@@ -125,13 +125,13 @@ export class GroupedMatchups {
 
   typesFor(effectivenes: Effectiveness): Type[] {
     return this.matchups
-      .filter(m => m.effectiveness === effectivenes)
-      .map(m => m.type);
+      .filter((m) => m.effectiveness === effectivenes)
+      .map((m) => m.type);
   }
 }
 
 export function offensiveMatchups(type: Type) {
-  const matchups = types.map(t => {
+  const matchups = types.map((t) => {
     const eff = matchupFor(t, Type.NONE, type);
     return new Matchup(t, eff);
   });
@@ -139,7 +139,7 @@ export function offensiveMatchups(type: Type) {
 }
 
 export function defensiveMatchups(t1: Type, t2: Type) {
-  const matchups = types.map(t => {
+  const matchups = types.map((t) => {
     const eff = matchupFor(t1, t2, t);
     return new Matchup(t, eff);
   });
