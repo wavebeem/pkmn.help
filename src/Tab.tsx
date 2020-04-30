@@ -5,7 +5,7 @@ import { clickNav } from "./ga";
 
 interface TabProps {
   current: number;
-  changeTab(tab: number): void;
+  changeTab: (tab: number) => void;
   index: number;
   title: string;
   name: string;
@@ -25,11 +25,11 @@ function Tab(props: TabProps) {
         "hover-black-90",
         props.index === props.current
           ? "black bottom-border-thick-current"
-          : "black-50 bottom-border-thick pointer"
+          : "black-50 bottom-border-thick pointer",
       ])}
       onClick={() => {
         props.changeTab(props.index);
-        clickNav(name);
+        clickNav(props.name);
       }}
       disabled={props.index === props.current}
     >
@@ -76,7 +76,7 @@ export function TabContainer(props: TabContainerProps) {
           "flex justify-center",
           "bg-white",
           "bb TabBarBorder b--black-20",
-          "pt3"
+          "pt3",
         ])}
       >
         {tabs}
