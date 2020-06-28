@@ -3,13 +3,6 @@
   overflow-y: scroll;
 }
 
-.Pixelated {
-  /* Firefox */
-  image-rendering: crisp-edges;
-  /* Chrome */
-  image-rendering: pixelated;
-}
-
 .MatchupsSection-Container {
   display: flex;
   justify-content: center;

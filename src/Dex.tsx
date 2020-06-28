@@ -42,7 +42,7 @@ interface MonsterProps {
 
 function Monster(props: MonsterProps) {
   const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
-  const imgSize = 40 * 2;
+  const imgSize = 68 * 2;
   return (
     <a
       href={`#${props.pokemon.id}`}
@@ -63,15 +63,15 @@ function Monster(props: MonsterProps) {
       <img
         src={getImage(props.pokemon.id)}
         role="presentation"
-        className="mr3 Pixelated"
+        className="mr3"
         width={imgSize}
         height={imgSize}
       />
       <div className="flex-auto mv0">
         <div className="flex mb2 items-center">
-          <div className="gray mv0 f5 code">{displayNumber}</div>
+          <div className="gray mv0 code f6 f5-ns">{displayNumber}</div>
           <div className="ph1" />
-          <h2 className="di truncate mv0 f4">{props.pokemon.name}</h2>
+          <h2 className="di truncate mv0 f5 f4-ns">{props.pokemon.name}</h2>
         </div>
         <div className="flex">
           {props.pokemon.types.map((t, i) => (
@@ -98,7 +98,7 @@ interface DexProps {
 export function Dex(props: DexProps) {
   const { pkmn, search, updateSearch, updateCurrentPage, currentPage } = props;
   return (
-    <div className="ph2 mt3 center mw7">
+    <div className="ph2-ns mt3 center mw7">
       <div className="ph1" />
       <Search search={search} updateSearch={updateSearch} />
       <Paginator
@@ -109,7 +109,7 @@ export function Dex(props: DexProps) {
         emptyState={<p className="silver f4 b tc m0">No Pokémon found</p>}
         items={pkmn}
         renderPage={(page) => (
-          <div className="bg-white br3 ba b--black-20 overflow-hidden">
+          <div className="bg-white br3-ns bt bb bl-ns br-ns b--black-20 overflow-hidden">
             {page.map((pokemon, index) => (
               <Monster
                 key={pokemon.id}

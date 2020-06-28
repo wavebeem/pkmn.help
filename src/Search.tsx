@@ -15,7 +15,7 @@ export function Search(props: SearchProps) {
   const iconSize = 24;
   const inputHeight = 36;
   return (
-    <div className="relative mv3">
+    <div className="relative mv3 mh2">
       <img
         src={imageSearchURL}
         width={iconSize}
