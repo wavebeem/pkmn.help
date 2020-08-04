@@ -15,7 +15,6 @@ function Tab(props: TabProps) {
   return (
     <button
       type="button"
-      style={{ width: 90 }}
       className={classnames([
         "pv2 ph2 f5",
         "no-outline tab-bottom-focus",

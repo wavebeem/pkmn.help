@@ -22,16 +22,6 @@ export function Offense(props: OffenseProps) {
           onChange={updateType0}
           includeNone={false}
         />
-        {/* Here for equal padding between screens */}
-        <div className="HACK-hidden-ns">
-          <h2 className={classH2}>Choose type</h2>
-          <TypeSelector
-            disabledTypes={[]}
-            value={type0}
-            onChange={updateType0}
-            includeNone={true}
-          />
-        </div>
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />

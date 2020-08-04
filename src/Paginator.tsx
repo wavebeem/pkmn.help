@@ -62,7 +62,7 @@ function PageSelector(props: PageSelectorProps) {
       >
         <span role="presentation">&lsaquo; </span>Prev
       </RoundButton>
-      <div className="flex-auto tc b f5">
+      <div className="flex-auto tc b f5 tabular-nums">
         {(props.currentPage + 1)
           .toString()
           .padStart(props.numPages.toString().length, "0")}

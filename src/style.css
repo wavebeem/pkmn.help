@@ -1,6 +1,9 @@
 :root {
   scrollbar-color: #444 #e8e8e8;
   overflow-y: scroll;
+}
+
+.tabular-nums {
   font-variant-numeric: tabular-nums;
 }
 
@@ -83,6 +86,11 @@ button {
   outline-offset: 4px;
 }
 
+.OutlineFocus:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
 .ChunkyFocus:focus {
   outline: none;
   box-shadow: 0 0 0 3px white, 0 0 0 5px black;
@@ -132,12 +140,6 @@ button {
   box-shadow: none !important;
 }
 
-@media screen and (max-width: 30em) {
-  .HACK-hidden-ns {
-    display: none;
-  }
-}
-
 .ThickUnderline {
   text-decoration-color: rgba(0, 0, 0, 0.2);
   text-decoration-thickness: 2px;
@@ -146,10 +148,6 @@ button {
 .ThickUnderline:focus,
 .ThickUnderline:hover {
   text-decoration-color: currentColor;
-}
-
-.HACK-hidden-ns {
-  visibility: hidden;
 }
 
 .PokeballHeader {

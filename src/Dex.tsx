@@ -50,13 +50,14 @@ function Monster(props: MonsterProps) {
     <div
       className={classnames(
         "near-black pv3",
-        "flex-ns bt b--black-10 InnerDashedFocus",
-        "Monster"
+        "flex-ns bb b--black-10 InnerDashedFocus",
+        "Monster",
+        props.index === 0 ? "bt" : ""
       )}
     >
       <div className="flex flex-column">
         <div className="flex mb2 items-center">
-          <div className="gray mv0 code f4">{displayNumber}</div>
+          <div className="gray mv0 tabular-nums f4">{displayNumber}</div>
           <div className="ph1" />
           <h2 className="mv0 f3">
             <a
