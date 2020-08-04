@@ -38,7 +38,7 @@ function PageSelector(props: PageSelectorProps) {
         disabled={!props.hasPrev}
         aria-label="Previous"
       >
-        <span role="presentation">&lsaquo; </span>Previous
+        <span role="presentation">&lsaquo; </span>Prev
       </RoundButton>
       <div className="flex-auto tc b f5">
         Page {props.currentPage + 1} of {props.numPages}

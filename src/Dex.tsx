@@ -24,7 +24,7 @@ function MonsterType(props: MonsterTypeProps) {
         `type-${props.type} type-bg-light`,
         "ttc tc flex",
         "pv0 ph2 lh-copy",
-        "br1 ba b--black-10 f6",
+        "br1 ba b--black-20 f6",
         { ml1: props.index > 0 }
       )}
     >

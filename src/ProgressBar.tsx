@@ -1,13 +1,14 @@
 import * as React from "react";
+import { Type } from "./data";
 
 export interface ProgressBarProps {
   value: number;
   max: number;
-  color: string;
+  type: Type;
 }
 
 export function ProgressBar(props: ProgressBarProps) {
-  const { value, max, color } = props;
+  const { value, max, type } = props;
   return (
     <div
       style={{
@@ -21,9 +22,9 @@ export function ProgressBar(props: ProgressBarProps) {
       <div
         style={{
           width: Math.floor((value / max) * 100) + "%",
-          background: color,
+          background: "var(--type-color-2)",
         }}
-        className="ba b--black-50"
+        className={`ba b--black-20 type-${type}`}
       ></div>
     </div>
   );
