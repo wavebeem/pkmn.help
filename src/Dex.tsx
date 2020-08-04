@@ -8,6 +8,7 @@ import { Type } from "./data";
 import { Pokemon } from "./pkmn";
 import { getImage } from "./getImage";
 import { clickPokemon } from "./ga";
+import { StatsTable } from "./StatsTable";
 
 const PAGE_SIZE = 20;
 
@@ -44,21 +45,12 @@ function Monster(props: MonsterProps) {
   const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
   const imgSize = 68 * 2;
   return (
-    <a
-      href={`#${props.pokemon.id}`}
+    <div
       className={classnames(
-        "near-black no-underline hover-bg-washed-blue",
+        "near-black pv3",
         "flex items-center b--black-10 InnerDashedFocus",
         props.index === 0 ? "" : "bt"
       )}
-      onClick={(event) => {
-        event.preventDefault();
-        const [type1, type2] = props.pokemon.types;
-        props.updateType1(type1);
-        props.updateType2(type2 || Type.NONE);
-        props.changeTab(1);
-        clickPokemon(props.pokemon.id);
-      }}
     >
       <img
         src={getImage(props.pokemon.id)}
@@ -71,15 +63,33 @@ function Monster(props: MonsterProps) {
         <div className="flex mb2 items-center">
           <div className="gray mv0 code f6 f5-ns">{displayNumber}</div>
           <div className="ph1" />
-          <h2 className="di truncate mv0 f5 f4-ns">{props.pokemon.name}</h2>
+          <h2 className="di truncate mv0 f5 f4-ns">
+            <a
+              className="near-black hover-mid-gray no-underline underline-hover SimpleFocus"
+              href={`#${props.pokemon.id}`}
+              onClick={(event) => {
+                event.preventDefault();
+                const [type1, type2] = props.pokemon.types;
+                props.updateType1(type1);
+                props.updateType2(type2 || Type.NONE);
+                props.changeTab(1);
+                clickPokemon(props.pokemon.id);
+              }}
+            >
+              {props.pokemon.name}
+            </a>
+          </h2>
         </div>
         <div className="flex">
           {props.pokemon.types.map((t, i) => (
             <MonsterType key={i} type={t} index={i} />
           ))}
         </div>
+        <div className="mt2">
+          <StatsTable pokemon={props.pokemon} />
+        </div>
       </div>
-    </a>
+    </div>
   );
 }
 

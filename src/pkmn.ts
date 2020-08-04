@@ -6,6 +6,12 @@ export interface Pokemon {
   name: string;
   number: number;
   types: Type[];
+  hp: number;
+  attack: number;
+  defense: number;
+  spAttack: number;
+  spDefense: number;
+  speed: number;
 }
 
 export const AllPokemon: Pokemon[] = data;
