@@ -83,6 +83,12 @@ button {
   outline-offset: -6px;
 }
 
+.StatsTable {
+  display: grid;
+  grid-gap: 0.25rem;
+  grid-template-columns: max-content max-content 1fr;
+}
+
 .text-shadow-black {
   text-shadow: 0 0 3px black;
 }

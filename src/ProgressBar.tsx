@@ -12,14 +12,15 @@ export function ProgressBar(props: ProgressBarProps) {
     <div
       style={{
         height: 24,
-        width: max,
+        width: "100%",
+        maxWidth: "255px",
         color: color,
       }}
       className="flex ba bg-white b--black-10"
     >
       <div
         style={{
-          width: value,
+          width: Math.floor((value / max) * 100) + "%",
           background: color,
           boxShadow: "inset 0 0 0 1px rgba(0, 0, 0, 0.5)",
         }}

@@ -48,46 +48,48 @@ function Monster(props: MonsterProps) {
     <div
       className={classnames(
         "near-black pv3",
-        "flex items-center b--black-10 InnerDashedFocus",
+        "flex flex-column b--black-10 InnerDashedFocus",
         props.index === 0 ? "" : "bt"
       )}
     >
-      <img
-        src={getImage(props.pokemon.id)}
-        role="presentation"
-        className="mr3"
-        width={imgSize}
-        height={imgSize}
-      />
-      <div className="flex-auto mv0">
-        <div className="flex mb2 items-center">
-          <div className="gray mv0 code f6 f5-ns">{displayNumber}</div>
-          <div className="ph1" />
-          <h2 className="di truncate mv0 f5 f4-ns">
-            <a
-              className="near-black hover-mid-gray no-underline underline-hover SimpleFocus"
-              href={`#${props.pokemon.id}`}
-              onClick={(event) => {
-                event.preventDefault();
-                const [type1, type2] = props.pokemon.types;
-                props.updateType1(type1);
-                props.updateType2(type2 || Type.NONE);
-                props.changeTab(1);
-                clickPokemon(props.pokemon.id);
-              }}
-            >
-              {props.pokemon.name}
-            </a>
-          </h2>
+      <div className="flex-ns ph2">
+        <img
+          src={getImage(props.pokemon.id)}
+          role="presentation"
+          className="mr3"
+          width={imgSize}
+          height={imgSize}
+        />
+        <div className="flex-auto mv0">
+          <div className="flex mb2 items-center">
+            <div className="gray mv0 code f6 f5-ns">{displayNumber}</div>
+            <div className="ph1" />
+            <h2 className="di truncate mv0 f5 f4-ns">
+              <a
+                className="near-black hover-mid-gray no-underline underline-hover SimpleFocus"
+                href={`#${props.pokemon.id}`}
+                onClick={(event) => {
+                  event.preventDefault();
+                  const [type1, type2] = props.pokemon.types;
+                  props.updateType1(type1);
+                  props.updateType2(type2 || Type.NONE);
+                  props.changeTab(1);
+                  clickPokemon(props.pokemon.id);
+                }}
+              >
+                {props.pokemon.name}
+              </a>
+            </h2>
+          </div>
+          <div className="flex">
+            {props.pokemon.types.map((t, i) => (
+              <MonsterType key={i} type={t} index={i} />
+            ))}
+          </div>
         </div>
-        <div className="flex">
-          {props.pokemon.types.map((t, i) => (
-            <MonsterType key={i} type={t} index={i} />
-          ))}
-        </div>
-        <div className="mt2">
-          <StatsTable pokemon={props.pokemon} />
-        </div>
+      </div>
+      <div className="pt3 ph2">
+        <StatsTable pokemon={props.pokemon} />
       </div>
     </div>
   );
