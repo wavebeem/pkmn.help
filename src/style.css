@@ -17,6 +17,21 @@
   gap: 0.5rem;
 }
 
+.Spinner {
+  border-radius: 9999px;
+  width: 4rem;
+  height: 4rem;
+  border: 3px solid;
+  border-right-color: transparent;
+  animation: 1s linear infinite Spinner-spin;
+}
+
+@keyframes Spinner-spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
 button {
   -webkit-appearance: none;
 }

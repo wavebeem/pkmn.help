@@ -10,48 +10,49 @@ const fileLoader = {
   test: /\.(png|svg)$/,
   loader: "file-loader",
   options: {
-    name: "files/[path][name].[contenthash:8].[ext]"
+    name: "files/[path][name].[contenthash:8].[ext]",
   },
-  include: [path.resolve(__dirname, "img"), path.resolve(__dirname, "svg")]
+  include: [path.resolve(__dirname, "img"), path.resolve(__dirname, "svg")],
 };
 
 const cssLoader = {
   test: /\.css$/,
-  use: ["style-loader", "css-loader"]
+  use: ["style-loader", "css-loader"],
   // We need to load Tachyons which is in node_modules
   // include: path.resolve(__dirname, "src")
 };
 
 const tsLoader = {
   // Not actually loading any JS files any more, but whatever
-  test: /\.[tj]sx?$/,
+  test: /\.(ts|tsx|js)?$/,
   loader: "ts-loader",
-  include: path.resolve(__dirname, "src")
+  include: path.resolve(__dirname, "src"),
 };
 
 module.exports = {
   entry: [path.join(__dirname, "src/main.tsx")],
   output: {
     path: path.join(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "[name].bundle.js",
+    chunkFilename: "[name].bundle.js",
   },
   devtool: "source-map",
   devServer: {
     contentBase: __dirname,
-    compress: true
+    compress: true,
   },
   resolve: {
-    extensions: [".tsx", ".ts", ".js"]
+    extensions: [".tsx", ".ts", ".js"],
   },
   module: {
-    rules: [tsLoader, cssLoader, fileLoader]
+    rules: [tsLoader, cssLoader, fileLoader],
   },
   plugins: [
     new webpack.EnvironmentPlugin(["NODE_ENV"]),
     new HtmlWebpackPlugin({
       filename: path.join(__dirname, "dist/index.html"),
       template: path.join(__dirname, "template/index.html"),
-      hash: true
-    })
-  ]
+      hash: true,
+    }),
+  ],
 };
