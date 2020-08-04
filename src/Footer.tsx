@@ -2,9 +2,10 @@ import * as React from "react";
 
 import { ReleaseNotes } from "./ReleaseNotes";
 
+const year = new Date().getFullYear();
+
 export function Footer() {
   const [isReleaseNotesOpen, setIsReleaseNotesOpen] = React.useState(false);
-  const year = new Date().getFullYear();
   return (
     <footer className="black dark-gray bt b--black-05 ph3 pv2">
       <div className="mw7 center">
@@ -37,7 +38,7 @@ export function Footer() {
         <p>
           pkmn.help &copy; 2013-{year}{" "}
           <a
-            href="https://mockbrian.com"
+            href="https://www.mockbrian.com"
             className="b ThickUnderline near-black hover-gray DashedFocus"
           >
             Brian Mock
