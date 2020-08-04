@@ -2,7 +2,6 @@ import * as React from "react";
 import classnames from "classnames";
 
 import { RoundButton } from "./RoundButton";
-import { scrollToTop } from "./scrollToTop";
 
 enum Location {
   TOP = "top",
@@ -14,6 +13,7 @@ interface PageSelectorProps {
   pageItems: any[];
   location: Location;
   currentPage: number;
+  updatePage(page: number): void;
   updatePagePrev(): void;
   updatePageNext(): void;
   hasPrev: boolean;
@@ -21,6 +21,19 @@ interface PageSelectorProps {
 }
 
 function PageSelector(props: PageSelectorProps) {
+  // Attempt to stay anchored to the top or bottom of the page when using
+  // pagination buttons to avoid the screen jumping around and stuff
+  const [scrollTo, setScrollTo] = React.useState<Location | undefined>(
+    undefined
+  );
+  React.useLayoutEffect(() => {
+    if (scrollTo === Location.TOP) {
+      window.scrollTo(0, 0);
+    } else if (scrollTo === Location.BOTTOM) {
+      window.scrollTo(0, document.body.scrollHeight);
+    }
+    setScrollTo(undefined);
+  }, [scrollTo]);
   return (
     <div
       className={classnames(
@@ -30,10 +43,19 @@ function PageSelector(props: PageSelectorProps) {
     >
       <RoundButton
         onClick={() => {
-          if (props.location === Location.BOTTOM) {
-            scrollToTop();
-          }
+          props.updatePage(0);
+          setScrollTo(props.location);
+        }}
+        disabled={!props.hasPrev}
+        aria-label="First"
+      >
+        &laquo;
+      </RoundButton>
+      <div className="pr1" />
+      <RoundButton
+        onClick={() => {
           props.updatePagePrev();
+          setScrollTo(props.location);
         }}
         disabled={!props.hasPrev}
         aria-label="Previous"
@@ -41,25 +63,39 @@ function PageSelector(props: PageSelectorProps) {
         <span role="presentation">&lsaquo; </span>Prev
       </RoundButton>
       <div className="flex-auto tc b f5">
-        Page {props.currentPage + 1} of {props.numPages}
+        {(props.currentPage + 1)
+          .toString()
+          .padStart(props.numPages.toString().length, "0")}
+        {" / "}
+        {props.numPages}
       </div>
       <RoundButton
         onClick={() => {
-          if (props.location === Location.BOTTOM) {
-            scrollToTop();
-          }
           props.updatePageNext();
+          setScrollTo(props.location);
         }}
         disabled={!props.hasNext}
         aria-label="Next"
       >
         Next<span role="presentation"> &rsaquo;</span>
       </RoundButton>
+      <div className="pr1" />
+      <RoundButton
+        onClick={() => {
+          props.updatePage(props.numPages - 1);
+          setScrollTo(props.location);
+        }}
+        disabled={!props.hasNext}
+        aria-label="Last"
+      >
+        &raquo;
+      </RoundButton>
     </div>
   );
 }
 
 interface PaginatorProps<T> {
+  updatePage: (page: number) => void;
   updatePagePrev: () => void;
   updatePageNext: () => void;
   currentPage: number;
@@ -76,6 +112,7 @@ export function Paginator<T>(props: PaginatorProps<T>) {
     items,
     emptyState,
     renderPage,
+    updatePage,
     updatePagePrev,
     updatePageNext,
   } = props;
@@ -93,6 +130,7 @@ export function Paginator<T>(props: PaginatorProps<T>) {
         hasPrev={hasPrev}
         hasNext={hasNext}
         currentPage={currentPage}
+        updatePage={updatePage}
         updatePagePrev={updatePagePrev}
         updatePageNext={updatePageNext}
       />
@@ -104,6 +142,7 @@ export function Paginator<T>(props: PaginatorProps<T>) {
         hasPrev={hasPrev}
         hasNext={hasNext}
         currentPage={currentPage}
+        updatePage={updatePage}
         updatePagePrev={updatePagePrev}
         updatePageNext={updatePageNext}
       />

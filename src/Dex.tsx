@@ -120,6 +120,7 @@ export function Dex(props: DexProps) {
       <Search search={search} updateSearch={updateSearch} />
       <Paginator
         currentPage={currentPage}
+        updatePage={(page) => updateCurrentPage(page)}
         updatePageNext={() => updateCurrentPage(currentPage + 1)}
         updatePagePrev={() => updateCurrentPage(currentPage - 1)}
         pageSize={PAGE_SIZE}
