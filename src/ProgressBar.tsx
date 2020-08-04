@@ -14,7 +14,7 @@ export function ProgressBar(props: ProgressBarProps) {
         height: 24,
         width: "100%",
         maxWidth: "255px",
-        color: color,
+        padding: 1,
       }}
       className="flex ba b--black-10"
     >
@@ -22,9 +22,8 @@ export function ProgressBar(props: ProgressBarProps) {
         style={{
           width: Math.floor((value / max) * 100) + "%",
           background: color,
-          boxShadow: "inset 0 0 0 1px rgba(0, 0, 0, 0.5)",
         }}
-        className="ba b--white"
+        className="ba b--black-50"
       ></div>
     </div>
   );
