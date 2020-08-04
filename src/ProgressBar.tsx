@@ -15,16 +15,17 @@ export function ProgressBar(props: ProgressBarProps) {
         height: 24,
         width: "100%",
         maxWidth: "255px",
-        padding: 1,
+        boxShadow: "inset 0 0 0 1px rgba(0, 0, 0, 0.1)",
       }}
-      className="flex ba b--black-10"
+      className="flex"
     >
       <div
         style={{
           width: (value / max) * 100 + "%",
           background: "var(--type-color-2)",
+          boxShadow: "inset 0 0 0 1px rgba(0, 0, 0, 0.2)",
         }}
-        className={`ba b--black-20 type-${type}`}
+        className={`type-${type}`}
       ></div>
     </div>
   );
