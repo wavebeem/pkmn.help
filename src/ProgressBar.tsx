@@ -16,7 +16,7 @@ export function ProgressBar(props: ProgressBarProps) {
         maxWidth: "255px",
         color: color,
       }}
-      className="flex ba bg-white b--black-10"
+      className="flex ba b--black-10"
     >
       <div
         style={{

@@ -24,7 +24,7 @@ function PageSelector(props: PageSelectorProps) {
   return (
     <div
       className={classnames(
-        "items-center mv3 ph2",
+        "items-center mv3",
         props.pageItems.length === 0 ? "dn" : "flex"
       )}
     >

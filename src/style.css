@@ -87,6 +87,18 @@ button {
   display: grid;
   grid-gap: 0.25rem;
   grid-template-columns: max-content max-content 1fr;
+  align-items: center;
+}
+
+.Monster {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 600px) {
+  .Monster {
+    grid-template-columns: 250px 1fr;
+  }
 }
 
 .text-shadow-black {
