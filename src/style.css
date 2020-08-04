@@ -157,7 +157,7 @@ button {
   --PokeballHeader-circleSize: 30px;
   border-bottom: var(--PokeballHeader-borderSize) solid black;
   padding: 1rem;
-  padding-top: calc(0.8 * var(--PokeballHeader-circleSize));
+  padding-top: calc(0.6 * var(--PokeballHeader-circleSize));
   padding-bottom: calc(0.8 * var(--PokeballHeader-circleSize));
   margin-top: 0;
   margin-bottom: 0;
