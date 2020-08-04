@@ -9,7 +9,7 @@ import { Pokemon } from "./pkmn";
 import { getImage } from "./getImage";
 import { clickPokemon } from "./ga";
 
-const PAGE_SIZE = 100;
+const PAGE_SIZE = 20;
 
 interface MonsterTypeProps {
   type: Type;
