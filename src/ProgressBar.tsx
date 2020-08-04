@@ -21,7 +21,7 @@ export function ProgressBar(props: ProgressBarProps) {
     >
       <div
         style={{
-          width: Math.floor((value / max) * 100) + "%",
+          width: (value / max) * 100 + "%",
           background: "var(--type-color-2)",
         }}
         className={`ba b--black-20 type-${type}`}

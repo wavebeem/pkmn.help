@@ -108,6 +108,9 @@ async function fetchData(): Promise<{
         const image = elements[2]
           ? elements[2].querySelector("img")?.src.replace(/^[/]{2}/, "https://")
           : null;
+        if (!image) {
+          continue;
+        }
         monsters.push({
           id,
           name,
