@@ -60,7 +60,7 @@ export function Search(props: SearchProps) {
             ref.current.focus();
           }
         }}
-        className={classnames("o-50 absolute pointer", { dn: search === "" })}
+        className={classnames("o-50 absolute", { dn: search === "" })}
         style={{ right: 6, top: 6 }}
       />
     </div>
