@@ -9,6 +9,8 @@ export function InfoScreen() {
       <ul className="lh-copy mt1 ph3">
         <li>Added base stats to the Pokédex</li>
         <li>Added more Pokémon to the Pokédex</li>
+        <li>Improved pagination on the Pokédex</li>
+        <li>Replaced page footer with Info screen</li>
       </ul>
       <h2 className="lh-title f5">December 2019</h2>
       <ul className="lh-copy mt1 ph3">
