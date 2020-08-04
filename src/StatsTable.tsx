@@ -12,7 +12,7 @@ export function StatsTable(props: StatsTableProps) {
   const { pokemon } = props;
   const { hp, attack, defense, spAttack, spDefense, speed } = pokemon;
   return (
-    <div className="StatsTable">
+    <div className="StatsTable tabular-nums">
       <div className="b tl">HP</div>
       <div className="tr ph2">{hp}</div>
       <ProgressBar max={255} value={hp} type={Type.FIGHTING} />
