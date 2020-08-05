@@ -37,7 +37,7 @@ export function InfoScreen() {
         </a>{" "}
         repository on GitHub.
       </p>
-      <h2 className="lh-title f5">Legal</h2>
+      <h2 className="lh-title f5">Legal Info</h2>
       <p>
         Pokémon &copy; 2002-{year} Pokémon. &copy; 1995-{year}{" "}
         Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &reg; and Pokémon
@@ -46,6 +46,23 @@ export function InfoScreen() {
       <p>
         No copyright or trademark infringement is intended in using Pokémon
         content on this page.
+      </p>
+      <p>
+        Pokédex data scraped from Bulbapedia&apos;s{" "}
+        <a
+          className="underline dark-blue hover-blue OutlineFocus"
+          href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number"
+        >
+          National Pokédex
+        </a>{" "}
+        and{" "}
+        <a
+          className="underline dark-blue hover-blue OutlineFocus"
+          href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_VIII-present)"
+        >
+          List of Pokémon by base stats
+        </a>{" "}
+        pages.
       </p>
       <p>
         pkmn.help &copy; 2013-{year}{" "}
