@@ -27,6 +27,7 @@ interface Download {
 
 interface Monster {
   id: string;
+  imageID: string;
   name: string;
   number: number;
   types: string[];
@@ -108,11 +109,10 @@ async function fetchData(): Promise<{
         const image = elements[2]
           ? elements[2].querySelector("img")?.src.replace(/^[/]{2}/, "https://")
           : null;
-        if (!image) {
-          continue;
-        }
+        const imageID = image ? id : "";
         monsters.push({
           id,
+          imageID,
           name,
           number,
           types,

@@ -6,7 +6,7 @@ const req = (() => {
 })();
 
 export function getImage(id: string): string | undefined {
-  const file = `./${id}.png`;
+  const file = `./${id || "not-found"}.png`;
   try {
     return req(file).default;
   } catch (err) {
