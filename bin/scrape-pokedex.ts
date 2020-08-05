@@ -3,6 +3,7 @@ import { JSDOM } from "jsdom";
 import path from "path";
 import fs from "fs";
 import { execSync } from "child_process";
+import { URL } from "url";
 
 const mainURL =
   "https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number";
@@ -28,6 +29,7 @@ interface Download {
 interface Monster {
   id: string;
   imageID: string;
+  bulbapediaURL: string;
   name: string;
   number: number;
   types: string[];
@@ -60,6 +62,9 @@ async function fillStats(monsters: Monster[]): Promise<void> {
     map.set(number, count + 1);
     const suffix = count > 0 ? chr(count) : "";
     const id = `pkmn-${number}${suffix}`;
+    if (count > 0) {
+      console.log("PKMN", id, number);
+    }
     // TODO: How to deal with "forms"
     for (const mon of monsters) {
       if (mon.id === id) {
@@ -94,6 +99,10 @@ async function fetchData(): Promise<{
         const type1 = data[4].toLowerCase();
         const type2 = data[5] ? data[5].toLowerCase() : undefined;
         const name = data[3];
+        let bulbapediaURL = elements[3].querySelector("a")?.href ?? "";
+        if (bulbapediaURL) {
+          bulbapediaURL = new URL(bulbapediaURL, mainURL).toString();
+        }
         const number = Number(data[1].slice(1));
         if (Number.isNaN(number)) {
           continue;
@@ -110,9 +119,13 @@ async function fetchData(): Promise<{
           ? elements[2].querySelector("img")?.src.replace(/^[/]{2}/, "https://")
           : null;
         const imageID = image ? id : "";
+        // if (count > 0) {
+        //   console.log("PKMN", id, number);
+        // }
         monsters.push({
           id,
           imageID,
+          bulbapediaURL,
           name,
           number,
           types,

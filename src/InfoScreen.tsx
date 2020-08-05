@@ -10,6 +10,7 @@ export function InfoScreen() {
         <li>Added base stats to the Pokédex</li>
         <li>Added more Pokémon to the Pokédex</li>
         <li>Improved pagination on the Pokédex</li>
+        <li>Added a link to Bulbapedia for each Pokémon</li>
         <li>Replaced page footer with Info screen</li>
       </ul>
       <h2 className="lh-title f5">December 2019</h2>

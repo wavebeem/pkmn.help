@@ -59,32 +59,44 @@ function Monster(props: MonsterProps) {
         <div className="flex mb2 items-center">
           <div className="gray mv0 tabular-nums f4">{displayNumber}</div>
           <div className="ph1" />
-          <h2 className="mv0 f3">
-            <a
-              className="near-black hover-mid-gray no-underline underline-hover SimpleFocus"
-              href={`#${props.pokemon.id}`}
-              onClick={(event) => {
-                event.preventDefault();
-                const [type1, type2] = props.pokemon.types;
-                props.updateType1(type1);
-                props.updateType2(type2 || Type.NONE);
-                props.changeTab(1);
-                clickPokemon(props.pokemon.id);
-              }}
-            >
-              {props.pokemon.name}
-            </a>
-          </h2>
+          <h2 className="mv0 f3">{props.pokemon.name}</h2>
         </div>
         <div className="flex">
           {props.pokemon.types.map((t, i) => (
             <MonsterType key={i} type={t} index={i} />
           ))}
         </div>
+        <div className="mv2 lh-copy">
+          <a
+            className="underline dark-blue hover-blue OutlineFocus"
+            href={`#${props.pokemon.id}`}
+            onClick={(event) => {
+              event.preventDefault();
+              const [type1, type2] = props.pokemon.types;
+              props.updateType1(type1);
+              props.updateType2(type2 || Type.NONE);
+              props.changeTab(1);
+              clickPokemon(props.pokemon.id);
+            }}
+            aria-label={`Defense for ${props.pokemon.name}`}
+          >
+            Defense
+          </a>{" "}
+          &middot;{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href={props.pokemon.bulbapediaURL}
+            className="underline dark-blue hover-blue OutlineFocus"
+            aria-label={`${props.pokemon.name} on Bulbapedia`}
+          >
+            Bulbapedia
+          </a>
+        </div>
         <img
           src={getImage(props.pokemon.imageID)}
           role="presentation"
-          className="pa1 mt3 bg-white br2 ba b--black-20"
+          className="pa1 mt2 bg-white br2 ba b--black-20"
           width={imgSize}
           height={imgSize}
         />
@@ -127,20 +139,18 @@ export function Dex(props: DexProps) {
         pageSize={PAGE_SIZE}
         emptyState={<p className="silver f4 b tc m0">No Pokémon found</p>}
         items={pkmn}
-        renderPage={(page) => (
-          <div className="overflow-hidden">
-            {page.map((pokemon, index) => (
-              <Monster
-                key={pokemon.id}
-                pokemon={pokemon}
-                index={index}
-                updateType1={props.updateType1}
-                updateType2={props.updateType2}
-                changeTab={props.changeTab}
-              />
-            ))}
-          </div>
-        )}
+        renderPage={(page) =>
+          page.map((pokemon, index) => (
+            <Monster
+              key={pokemon.id}
+              pokemon={pokemon}
+              index={index}
+              updateType1={props.updateType1}
+              updateType2={props.updateType2}
+              changeTab={props.changeTab}
+            />
+          ))
+        }
       />
     </div>
   );
