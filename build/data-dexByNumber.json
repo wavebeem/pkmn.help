@@ -1,0 +1,1311 @@
+{
+  "19": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rattata_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/4d/019MS.png",
+      "name": "Rattata",
+      "number": 19,
+      "types": [
+        "normal"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rattata_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/28/019AMS.png",
+      "name": "Rattata",
+      "number": 19,
+      "types": [
+        "dark",
+        "normal"
+      ]
+    }
+  ],
+  "20": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/4d/020MS.png",
+      "name": "Raticate",
+      "number": 20,
+      "types": [
+        "normal"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/56/020AMS.png",
+      "name": "Raticate",
+      "number": 20,
+      "types": [
+        "dark",
+        "normal"
+      ]
+    }
+  ],
+  "26": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raichu_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/da/026MS.png",
+      "name": "Raichu",
+      "number": 26,
+      "types": [
+        "electric"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raichu_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a4/026AMS.png",
+      "name": "Raichu",
+      "number": 26,
+      "types": [
+        "electric",
+        "psychic"
+      ]
+    }
+  ],
+  "27": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandshrew_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/c/c3/027MS.png",
+      "name": "Sandshrew",
+      "number": 27,
+      "types": [
+        "ground"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandshrew_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/46/027AMS.png",
+      "name": "Sandshrew",
+      "number": 27,
+      "types": [
+        "ice",
+        "steel"
+      ]
+    }
+  ],
+  "28": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandslash_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/e0/028MS.png",
+      "name": "Sandslash",
+      "number": 28,
+      "types": [
+        "ground"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandslash_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/c/c1/028AMS.png",
+      "name": "Sandslash",
+      "number": 28,
+      "types": [
+        "ice",
+        "steel"
+      ]
+    }
+  ],
+  "37": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Vulpix_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/85/037MS.png",
+      "name": "Vulpix",
+      "number": 37,
+      "types": [
+        "fire"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Vulpix_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/20/037AMS.png",
+      "name": "Vulpix",
+      "number": 37,
+      "types": [
+        "ice"
+      ]
+    }
+  ],
+  "38": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ninetales_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/10/038MS.png",
+      "name": "Ninetales",
+      "number": 38,
+      "types": [
+        "fire"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ninetales_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/13/038AMS.png",
+      "name": "Ninetales",
+      "number": 38,
+      "types": [
+        "ice",
+        "fairy"
+      ]
+    }
+  ],
+  "50": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Diglett_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/8b/050MS.png",
+      "name": "Diglett",
+      "number": 50,
+      "types": [
+        "ground"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Diglett_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/61/050AMS.png",
+      "name": "Diglett",
+      "number": 50,
+      "types": [
+        "ground",
+        "steel"
+      ]
+    }
+  ],
+  "51": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Dugtrio_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/86/051MS.png",
+      "name": "Dugtrio",
+      "number": 51,
+      "types": [
+        "ground"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Dugtrio_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a6/051AMS.png",
+      "name": "Dugtrio",
+      "number": 51,
+      "types": [
+        "ground",
+        "steel"
+      ]
+    }
+  ],
+  "52": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/50/052MS.png",
+      "name": "Meowth",
+      "number": 52,
+      "types": [
+        "normal"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/b/b1/052AMS.png",
+      "name": "Meowth",
+      "number": 52,
+      "types": [
+        "dark"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/3/3e/052GMS.png",
+      "name": "Meowth",
+      "number": 52,
+      "types": [
+        "steel"
+      ]
+    }
+  ],
+  "53": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Persian_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a7/053MS.png",
+      "name": "Persian",
+      "number": 53,
+      "types": [
+        "normal"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Persian_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/ff/053AMS.png",
+      "name": "Persian",
+      "number": 53,
+      "types": [
+        "dark"
+      ]
+    }
+  ],
+  "74": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Geodude_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/04/074MS.png",
+      "name": "Geodude",
+      "number": 74,
+      "types": [
+        "rock",
+        "ground"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Geodude_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/d8/074AMS.png",
+      "name": "Geodude",
+      "number": 74,
+      "types": [
+        "rock",
+        "electric"
+      ]
+    }
+  ],
+  "75": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Graveler_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/5c/075MS.png",
+      "name": "Graveler",
+      "number": 75,
+      "types": [
+        "rock",
+        "ground"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Graveler_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/41/075AMS.png",
+      "name": "Graveler",
+      "number": 75,
+      "types": [
+        "rock",
+        "electric"
+      ]
+    }
+  ],
+  "76": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Golem_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/e6/076XYMS.png",
+      "name": "Golem",
+      "number": 76,
+      "types": [
+        "rock",
+        "ground"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Golem_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/80/076ASMMS.png",
+      "name": "Golem",
+      "number": 76,
+      "types": [
+        "rock",
+        "electric"
+      ]
+    }
+  ],
+  "77": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ponyta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/55/077MS.png",
+      "name": "Ponyta",
+      "number": 77,
+      "types": [
+        "fire"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ponyta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/01/077GMS.png",
+      "name": "Ponyta",
+      "number": 77,
+      "types": [
+        "psychic"
+      ]
+    }
+  ],
+  "78": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rapidash_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/ef/078XYMS.png",
+      "name": "Rapidash",
+      "number": 78,
+      "types": [
+        "fire"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rapidash_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a8/078GMS.png",
+      "name": "Rapidash",
+      "number": 78,
+      "types": [
+        "psychic",
+        "fairy"
+      ]
+    }
+  ],
+  "79": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowpoke_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/6a/079MS.png",
+      "name": "Slowpoke",
+      "number": 79,
+      "types": [
+        "water",
+        "psychic"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowpoke_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/20/079GMS.png",
+      "name": "Slowpoke",
+      "number": 79,
+      "types": [
+        "psychic"
+      ]
+    }
+  ],
+  "80": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowbro_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/ae/080XYMS.png",
+      "name": "Slowbro",
+      "number": 80,
+      "types": [
+        "water",
+        "psychic"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowbro_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/58/080GMS.png",
+      "name": "Slowbro",
+      "number": 80,
+      "types": [
+        "poison",
+        "psychic"
+      ]
+    }
+  ],
+  "83": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Farfetch%27d_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/57/083MS.png",
+      "name": "Farfetch'd",
+      "number": 83,
+      "types": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Farfetch%27d_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/63/083GMS.png",
+      "name": "Farfetch'd",
+      "number": 83,
+      "types": [
+        "fighting"
+      ]
+    }
+  ],
+  "88": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Grimer_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/50/088MS.png",
+      "name": "Grimer",
+      "number": 88,
+      "types": [
+        "poison"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Grimer_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/9/9e/088AMS.png",
+      "name": "Grimer",
+      "number": 88,
+      "types": [
+        "poison",
+        "dark"
+      ]
+    }
+  ],
+  "89": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Muk_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/b/b4/089MS.png",
+      "name": "Muk",
+      "number": 89,
+      "types": [
+        "poison"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Muk_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/e4/089AMS.png",
+      "name": "Muk",
+      "number": 89,
+      "types": [
+        "poison",
+        "dark"
+      ]
+    }
+  ],
+  "103": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Exeggutor_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/06/103XYMS.png",
+      "name": "Exeggutor",
+      "number": 103,
+      "types": [
+        "grass",
+        "psychic"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Exeggutor_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/b/bf/103ASMMS.png",
+      "name": "Exeggutor",
+      "number": 103,
+      "types": [
+        "grass",
+        "dragon"
+      ]
+    }
+  ],
+  "105": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Marowak_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/6f/105MS.png",
+      "name": "Marowak",
+      "number": 105,
+      "types": [
+        "ground"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Marowak_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/e5/105AMS.png",
+      "name": "Marowak",
+      "number": 105,
+      "types": [
+        "fire",
+        "ghost"
+      ]
+    }
+  ],
+  "110": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Weezing_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/22/110MS.png",
+      "name": "Weezing",
+      "number": 110,
+      "types": [
+        "poison"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Weezing_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/8a/110GMS.png",
+      "name": "Weezing",
+      "number": 110,
+      "types": [
+        "poison",
+        "fairy"
+      ]
+    }
+  ],
+  "122": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mr._Mime_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/4b/122XYMS.png",
+      "name": "Mr. Mime",
+      "number": 122,
+      "types": [
+        "psychic",
+        "fairy"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mr._Mime_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/7/77/122GMS.png",
+      "name": "Mr. Mime",
+      "number": 122,
+      "types": [
+        "ice",
+        "psychic"
+      ]
+    }
+  ],
+  "144": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Articuno_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/fe/144XYMS.png",
+      "name": "Articuno",
+      "number": 144,
+      "types": [
+        "ice",
+        "flying"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Articuno_(Pok%C3%A9mon)",
+      "imageURL": "",
+      "name": "Articuno",
+      "number": 144,
+      "types": [
+        "psychic",
+        "flying"
+      ]
+    }
+  ],
+  "145": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zapdos_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/86/145XYMS.png",
+      "name": "Zapdos",
+      "number": 145,
+      "types": [
+        "electric",
+        "flying"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zapdos_(Pok%C3%A9mon)",
+      "imageURL": "",
+      "name": "Zapdos",
+      "number": 145,
+      "types": [
+        "fighting",
+        "flying"
+      ]
+    }
+  ],
+  "146": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Moltres_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/9/90/146XYMS.png",
+      "name": "Moltres",
+      "number": 146,
+      "types": [
+        "fire",
+        "flying"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Moltres_(Pok%C3%A9mon)",
+      "imageURL": "",
+      "name": "Moltres",
+      "number": 146,
+      "types": [
+        "dark",
+        "flying"
+      ]
+    }
+  ],
+  "199": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowking_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/80/199MS.png",
+      "name": "Slowking",
+      "number": 199,
+      "types": [
+        "water",
+        "psychic"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowking_(Pok%C3%A9mon)",
+      "imageURL": "",
+      "name": "Slowking",
+      "number": 199,
+      "types": [
+        "???"
+      ]
+    }
+  ],
+  "222": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Corsola_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/9/97/222MS.png",
+      "name": "Corsola",
+      "number": 222,
+      "types": [
+        "water",
+        "rock"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Corsola_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/27/222GMS.png",
+      "name": "Corsola",
+      "number": 222,
+      "types": [
+        "ghost"
+      ]
+    }
+  ],
+  "263": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zigzagoon_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a5/263MS.png",
+      "name": "Zigzagoon",
+      "number": 263,
+      "types": [
+        "normal"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zigzagoon_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/08/263GMS.png",
+      "name": "Zigzagoon",
+      "number": 263,
+      "types": [
+        "dark",
+        "normal"
+      ]
+    }
+  ],
+  "264": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Linoone_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/7/71/264MS.png",
+      "name": "Linoone",
+      "number": 264,
+      "types": [
+        "normal"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Linoone_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/3/3c/264GMS.png",
+      "name": "Linoone",
+      "number": 264,
+      "types": [
+        "dark",
+        "normal"
+      ]
+    }
+  ],
+  "351": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Castform_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/fc/351MS.png",
+      "name": "Castform",
+      "number": 351,
+      "types": [
+        "normal"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Castform_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/9/9d/351SMS.png",
+      "name": "Castform",
+      "number": 351,
+      "types": [
+        "fire"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Castform_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/3/3c/351RMS.png",
+      "name": "Castform",
+      "number": 351,
+      "types": [
+        "water"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Castform_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/8d/351HMS.png",
+      "name": "Castform",
+      "number": 351,
+      "types": [
+        "ice"
+      ]
+    }
+  ],
+  "386": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/86/386MS.png",
+      "name": "Deoxys",
+      "number": 386,
+      "types": [
+        "psychic"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/07/386AMS.png",
+      "name": "Deoxys",
+      "number": 386,
+      "types": [
+        "psychic"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/20/386DMS.png",
+      "name": "Deoxys",
+      "number": 386,
+      "types": [
+        "psychic"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/fa/386SMS.png",
+      "name": "Deoxys",
+      "number": 386,
+      "types": [
+        "psychic"
+      ]
+    }
+  ],
+  "412": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Burmy_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/87/412MS.png",
+      "name": "Burmy",
+      "number": 412,
+      "types": [
+        "bug"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Burmy_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/3/39/412GMS.png",
+      "name": "Burmy",
+      "number": 412,
+      "types": [
+        "bug"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Burmy_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/0b/412SMS.png",
+      "name": "Burmy",
+      "number": 412,
+      "types": [
+        "bug"
+      ]
+    }
+  ],
+  "413": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/fa/413MS.png",
+      "name": "Wormadam",
+      "number": 413,
+      "types": [
+        "bug",
+        "grass"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/86/413GMS.png",
+      "name": "Wormadam",
+      "number": 413,
+      "types": [
+        "bug",
+        "ground"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/8e/413SMS.png",
+      "name": "Wormadam",
+      "number": 413,
+      "types": [
+        "bug",
+        "steel"
+      ]
+    }
+  ],
+  "422": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shellos_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/f1/422MS.png",
+      "name": "Shellos",
+      "number": 422,
+      "types": [
+        "water"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shellos_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/17/422EMS.png",
+      "name": "Shellos",
+      "number": 422,
+      "types": [
+        "water"
+      ]
+    }
+  ],
+  "423": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gastrodon_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/44/423MS.png",
+      "name": "Gastrodon",
+      "number": 423,
+      "types": [
+        "water",
+        "ground"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gastrodon_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/69/423EMS.png",
+      "name": "Gastrodon",
+      "number": 423,
+      "types": [
+        "water",
+        "ground"
+      ]
+    }
+  ],
+  "479": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/14/479MS.png",
+      "name": "Rotom",
+      "number": 479,
+      "types": [
+        "electric",
+        "ghost"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/87/479OMS.png",
+      "name": "Rotom",
+      "number": 479,
+      "types": [
+        "electric",
+        "fire"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/54/479WMS.png",
+      "name": "Rotom",
+      "number": 479,
+      "types": [
+        "electric",
+        "water"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/d8/479RMS.png",
+      "name": "Rotom",
+      "number": 479,
+      "types": [
+        "electric",
+        "ice"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/3/3a/479FMS.png",
+      "name": "Rotom",
+      "number": 479,
+      "types": [
+        "electric",
+        "flying"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/dc/479LMS.png",
+      "name": "Rotom",
+      "number": 479,
+      "types": [
+        "electric",
+        "grass"
+      ]
+    }
+  ],
+  "487": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Giratina_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/e8/487MS.png",
+      "name": "Giratina",
+      "number": 487,
+      "types": [
+        "ghost",
+        "dragon"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Giratina_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/2f/487OMS.png",
+      "name": "Giratina",
+      "number": 487,
+      "types": [
+        "ghost",
+        "dragon"
+      ]
+    }
+  ],
+  "492": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shaymin_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a6/492MS.png",
+      "name": "Shaymin",
+      "number": 492,
+      "types": [
+        "grass"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shaymin_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/68/492SMS.png",
+      "name": "Shaymin",
+      "number": 492,
+      "types": [
+        "grass",
+        "flying"
+      ]
+    }
+  ],
+  "521": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Unfezant_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a9/521MS.png",
+      "name": "Unfezant",
+      "number": 521,
+      "types": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Unfezant_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/e4/521FMS.png",
+      "name": "Unfezant",
+      "number": 521,
+      "types": [
+        "normal",
+        "flying"
+      ]
+    }
+  ],
+  "550": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Basculin_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a7/550MS.png",
+      "name": "Basculin",
+      "number": 550,
+      "types": [
+        "water"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Basculin_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/1e/550BMS.png",
+      "name": "Basculin",
+      "number": 550,
+      "types": [
+        "water"
+      ]
+    }
+  ],
+  "554": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darumaka_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/8f/554MS.png",
+      "name": "Darumaka",
+      "number": 554,
+      "types": [
+        "fire"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darumaka_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/f8/554GMS.png",
+      "name": "Darumaka",
+      "number": 554,
+      "types": [
+        "ice"
+      ]
+    }
+  ],
+  "555": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/52/555MS.png",
+      "name": "Darmanitan",
+      "number": 555,
+      "types": [
+        "fire"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/66/555ZMS.png",
+      "name": "Darmanitan",
+      "number": 555,
+      "types": [
+        "fire",
+        "psychic"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/4c/555GMS.png",
+      "name": "Darmanitan",
+      "number": 555,
+      "types": [
+        "ice"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/b/ba/555GZMS.png",
+      "name": "Darmanitan",
+      "number": 555,
+      "types": [
+        "ice",
+        "fire"
+      ]
+    }
+  ],
+  "562": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Yamask_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a9/562MS.png",
+      "name": "Yamask",
+      "number": 562,
+      "types": [
+        "ghost"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Yamask_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/09/562GMS.png",
+      "name": "Yamask",
+      "number": 562,
+      "types": [
+        "ground",
+        "ghost"
+      ]
+    }
+  ],
+  "592": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Frillish_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/09/592MS.png",
+      "name": "Frillish",
+      "number": 592,
+      "types": [
+        "water",
+        "ghost"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Frillish_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/b/bb/592FMS.png",
+      "name": "Frillish",
+      "number": 592,
+      "types": [
+        "water",
+        "ghost"
+      ]
+    }
+  ],
+  "593": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Jellicent_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/7/71/593MS.png",
+      "name": "Jellicent",
+      "number": 593,
+      "types": [
+        "water",
+        "ghost"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Jellicent_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/01/593FMS.png",
+      "name": "Jellicent",
+      "number": 593,
+      "types": [
+        "water",
+        "ghost"
+      ]
+    }
+  ],
+  "618": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Stunfisk_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/3/31/618MS.png",
+      "name": "Stunfisk",
+      "number": 618,
+      "types": [
+        "ground",
+        "electric"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Stunfisk_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/2a/618GMS.png",
+      "name": "Stunfisk",
+      "number": 618,
+      "types": [
+        "ground",
+        "steel"
+      ]
+    }
+  ],
+  "648": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meloetta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/1f/648MS.png",
+      "name": "Meloetta",
+      "number": 648,
+      "types": [
+        "normal",
+        "psychic"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meloetta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/9/93/648PMS.png",
+      "name": "Meloetta",
+      "number": 648,
+      "types": [
+        "normal",
+        "fighting"
+      ]
+    }
+  ],
+  "720": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/d0/720MS.png",
+      "name": "Hoopa",
+      "number": 720,
+      "types": [
+        "psychic",
+        "ghost"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/64/720UMS.png",
+      "name": "Hoopa",
+      "number": 720,
+      "types": [
+        "psychic",
+        "dark"
+      ]
+    }
+  ],
+  "741": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Oricorio_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/7/72/741MS.png",
+      "name": "Oricorio",
+      "number": 741,
+      "types": [
+        "fire",
+        "flying"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Oricorio_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/51/741PoMS.png",
+      "name": "Oricorio",
+      "number": 741,
+      "types": [
+        "electric",
+        "flying"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Oricorio_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/f7/741PaMS.png",
+      "name": "Oricorio",
+      "number": 741,
+      "types": [
+        "psychic",
+        "flying"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Oricorio_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/60/741SeMS.png",
+      "name": "Oricorio",
+      "number": 741,
+      "types": [
+        "ghost",
+        "flying"
+      ]
+    }
+  ],
+  "888": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zacian_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/d5/888MS.png",
+      "name": "Zacian",
+      "number": 888,
+      "types": [
+        "fairy"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zacian_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/d0/888CMS.png",
+      "name": "Zacian",
+      "number": 888,
+      "types": [
+        "fairy",
+        "steel"
+      ]
+    }
+  ],
+  "889": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zamazenta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/b/be/889MS.png",
+      "name": "Zamazenta",
+      "number": 889,
+      "types": [
+        "fighting"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zamazenta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/14/889CMS.png",
+      "name": "Zamazenta",
+      "number": 889,
+      "types": [
+        "fighting",
+        "steel"
+      ]
+    }
+  ],
+  "892": [
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/41/892MS.png",
+      "name": "Urshifu",
+      "number": 892,
+      "types": [
+        "fighting",
+        "dark"
+      ]
+    },
+    {
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/41/892MS.png",
+      "name": "Urshifu",
+      "number": 892,
+      "types": [
+        "fighting",
+        "water"
+      ]
+    }
+  ]
+}

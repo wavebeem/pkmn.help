@@ -1,0 +1,1408 @@
+{
+  "19": [
+    {
+      "name": "Rattata",
+      "number": 19,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rattata_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/4d/019MS.png",
+      "hp": 30,
+      "attack": 56,
+      "defense": 35,
+      "spAttack": 25,
+      "spDefense": 35,
+      "speed": 72
+    },
+    {
+      "name": "Rattata (Alolan Form)",
+      "number": 19,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rattata_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/28/019AMS.png",
+      "hp": 30,
+      "attack": 56,
+      "defense": 35,
+      "spAttack": 25,
+      "spDefense": 35,
+      "speed": 72
+    }
+  ],
+  "20": [
+    {
+      "name": "Raticate",
+      "number": 20,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/4d/020MS.png",
+      "hp": 55,
+      "attack": 81,
+      "defense": 60,
+      "spAttack": 50,
+      "spDefense": 70,
+      "speed": 97
+    },
+    {
+      "name": "Raticate (Alolan Form)",
+      "number": 20,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/56/020AMS.png",
+      "hp": 75,
+      "attack": 71,
+      "defense": 70,
+      "spAttack": 40,
+      "spDefense": 80,
+      "speed": 77
+    }
+  ],
+  "26": [
+    {
+      "name": "Raichu",
+      "number": 26,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raichu_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/da/026MS.png",
+      "hp": 60,
+      "attack": 90,
+      "defense": 55,
+      "spAttack": 90,
+      "spDefense": 80,
+      "speed": 110
+    },
+    {
+      "name": "Raichu (Alolan Form)",
+      "number": 26,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raichu_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a4/026AMS.png",
+      "hp": 60,
+      "attack": 85,
+      "defense": 50,
+      "spAttack": 95,
+      "spDefense": 85,
+      "speed": 110
+    }
+  ],
+  "27": [
+    {
+      "name": "Sandshrew",
+      "number": 27,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandshrew_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/c/c3/027MS.png",
+      "hp": 50,
+      "attack": 75,
+      "defense": 85,
+      "spAttack": 20,
+      "spDefense": 30,
+      "speed": 40
+    },
+    {
+      "name": "Sandshrew (Alolan Form)",
+      "number": 27,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandshrew_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/46/027AMS.png",
+      "hp": 50,
+      "attack": 75,
+      "defense": 90,
+      "spAttack": 10,
+      "spDefense": 35,
+      "speed": 40
+    }
+  ],
+  "28": [
+    {
+      "name": "Sandslash",
+      "number": 28,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandslash_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/e0/028MS.png",
+      "hp": 75,
+      "attack": 100,
+      "defense": 110,
+      "spAttack": 45,
+      "spDefense": 55,
+      "speed": 65
+    },
+    {
+      "name": "Sandslash (Alolan Form)",
+      "number": 28,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandslash_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/c/c1/028AMS.png",
+      "hp": 75,
+      "attack": 100,
+      "defense": 120,
+      "spAttack": 25,
+      "spDefense": 65,
+      "speed": 65
+    }
+  ],
+  "37": [
+    {
+      "name": "Vulpix",
+      "number": 37,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Vulpix_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/85/037MS.png",
+      "hp": 38,
+      "attack": 41,
+      "defense": 40,
+      "spAttack": 50,
+      "spDefense": 65,
+      "speed": 65
+    },
+    {
+      "name": "Vulpix (Alolan Form)",
+      "number": 37,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Vulpix_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/20/037AMS.png",
+      "hp": 38,
+      "attack": 41,
+      "defense": 40,
+      "spAttack": 50,
+      "spDefense": 65,
+      "speed": 65
+    }
+  ],
+  "38": [
+    {
+      "name": "Ninetales",
+      "number": 38,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ninetales_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/10/038MS.png",
+      "hp": 73,
+      "attack": 76,
+      "defense": 75,
+      "spAttack": 81,
+      "spDefense": 100,
+      "speed": 100
+    },
+    {
+      "name": "Ninetales (Alolan Form)",
+      "number": 38,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ninetales_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/13/038AMS.png",
+      "hp": 73,
+      "attack": 67,
+      "defense": 75,
+      "spAttack": 81,
+      "spDefense": 100,
+      "speed": 109
+    }
+  ],
+  "50": [
+    {
+      "name": "Diglett",
+      "number": 50,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Diglett_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/8b/050MS.png",
+      "hp": 10,
+      "attack": 55,
+      "defense": 25,
+      "spAttack": 35,
+      "spDefense": 45,
+      "speed": 95
+    },
+    {
+      "name": "Diglett (Alolan Form)",
+      "number": 50,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Diglett_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/61/050AMS.png",
+      "hp": 10,
+      "attack": 55,
+      "defense": 30,
+      "spAttack": 35,
+      "spDefense": 45,
+      "speed": 90
+    }
+  ],
+  "51": [
+    {
+      "name": "Dugtrio",
+      "number": 51,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Dugtrio_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/86/051MS.png",
+      "hp": 35,
+      "attack": 100,
+      "defense": 50,
+      "spAttack": 50,
+      "spDefense": 70,
+      "speed": 120
+    },
+    {
+      "name": "Dugtrio (Alolan Form)",
+      "number": 51,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Dugtrio_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a6/051AMS.png",
+      "hp": 35,
+      "attack": 100,
+      "defense": 60,
+      "spAttack": 50,
+      "spDefense": 70,
+      "speed": 110
+    }
+  ],
+  "52": [
+    {
+      "name": "Meowth",
+      "number": 52,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/50/052MS.png",
+      "hp": 40,
+      "attack": 45,
+      "defense": 35,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 90
+    },
+    {
+      "name": "Meowth (Alolan Form)",
+      "number": 52,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/b/b1/052AMS.png",
+      "hp": 40,
+      "attack": 35,
+      "defense": 35,
+      "spAttack": 50,
+      "spDefense": 40,
+      "speed": 90
+    },
+    {
+      "name": "Meowth (Galarian Form)",
+      "number": 52,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/3/3e/052GMS.png",
+      "hp": 50,
+      "attack": 65,
+      "defense": 55,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 40
+    }
+  ],
+  "53": [
+    {
+      "name": "Persian",
+      "number": 53,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Persian_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a7/053MS.png",
+      "hp": 65,
+      "attack": 70,
+      "defense": 60,
+      "spAttack": 65,
+      "spDefense": 65,
+      "speed": 115
+    },
+    {
+      "name": "Persian (Alolan Form)",
+      "number": 53,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Persian_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/ff/053AMS.png",
+      "hp": 65,
+      "attack": 60,
+      "defense": 60,
+      "spAttack": 75,
+      "spDefense": 65,
+      "speed": 115
+    }
+  ],
+  "74": [
+    {
+      "name": "Geodude",
+      "number": 74,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Geodude_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/04/074MS.png",
+      "hp": 40,
+      "attack": 80,
+      "defense": 100,
+      "spAttack": 30,
+      "spDefense": 30,
+      "speed": 20
+    },
+    {
+      "name": "Geodude (Alolan Form)",
+      "number": 74,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Geodude_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/d8/074AMS.png",
+      "hp": 40,
+      "attack": 80,
+      "defense": 100,
+      "spAttack": 30,
+      "spDefense": 30,
+      "speed": 20
+    }
+  ],
+  "75": [
+    {
+      "name": "Graveler",
+      "number": 75,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Graveler_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/5c/075MS.png",
+      "hp": 55,
+      "attack": 95,
+      "defense": 115,
+      "spAttack": 45,
+      "spDefense": 45,
+      "speed": 35
+    },
+    {
+      "name": "Graveler (Alolan Form)",
+      "number": 75,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Graveler_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/41/075AMS.png",
+      "hp": 55,
+      "attack": 95,
+      "defense": 115,
+      "spAttack": 45,
+      "spDefense": 45,
+      "speed": 35
+    }
+  ],
+  "76": [
+    {
+      "name": "Golem",
+      "number": 76,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Golem_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/e6/076XYMS.png",
+      "hp": 80,
+      "attack": 120,
+      "defense": 130,
+      "spAttack": 55,
+      "spDefense": 65,
+      "speed": 45
+    },
+    {
+      "name": "Golem (Alolan Form)",
+      "number": 76,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Golem_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/80/076ASMMS.png",
+      "hp": 80,
+      "attack": 120,
+      "defense": 130,
+      "spAttack": 55,
+      "spDefense": 65,
+      "speed": 45
+    }
+  ],
+  "77": [
+    {
+      "name": "Ponyta",
+      "number": 77,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ponyta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/55/077MS.png",
+      "hp": 50,
+      "attack": 85,
+      "defense": 55,
+      "spAttack": 65,
+      "spDefense": 65,
+      "speed": 90
+    },
+    {
+      "name": "Ponyta (Galarian Form)",
+      "number": 77,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ponyta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/01/077GMS.png",
+      "hp": 50,
+      "attack": 85,
+      "defense": 55,
+      "spAttack": 65,
+      "spDefense": 65,
+      "speed": 90
+    }
+  ],
+  "78": [
+    {
+      "name": "Rapidash",
+      "number": 78,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rapidash_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/ef/078XYMS.png",
+      "hp": 65,
+      "attack": 100,
+      "defense": 70,
+      "spAttack": 80,
+      "spDefense": 80,
+      "speed": 105
+    },
+    {
+      "name": "Rapidash (Galarian Form)",
+      "number": 78,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rapidash_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a8/078GMS.png",
+      "hp": 65,
+      "attack": 100,
+      "defense": 70,
+      "spAttack": 80,
+      "spDefense": 80,
+      "speed": 105
+    }
+  ],
+  "79": [
+    {
+      "name": "Slowpoke",
+      "number": 79,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowpoke_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/6a/079MS.png",
+      "hp": 90,
+      "attack": 65,
+      "defense": 65,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 15
+    },
+    {
+      "name": "Slowpoke (Galarian Form)",
+      "number": 79,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowpoke_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/20/079GMS.png",
+      "hp": 90,
+      "attack": 65,
+      "defense": 65,
+      "spAttack": 40,
+      "spDefense": 40,
+      "speed": 15
+    }
+  ],
+  "80": [
+    {
+      "name": "Slowbro",
+      "number": 80,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowbro_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/ae/080XYMS.png",
+      "hp": 95,
+      "attack": 75,
+      "defense": 110,
+      "spAttack": 100,
+      "spDefense": 80,
+      "speed": 30
+    },
+    {
+      "name": "Slowbro (Mega Slowbro)",
+      "number": 80,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowbro_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/65/080MMS.png",
+      "hp": 95,
+      "attack": 75,
+      "defense": 180,
+      "spAttack": 130,
+      "spDefense": 80,
+      "speed": 30
+    },
+    {
+      "name": "Slowbro (Galarian Form)",
+      "number": 80,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowbro_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/58/080GMS.png",
+      "hp": 95,
+      "attack": 100,
+      "defense": 95,
+      "spAttack": 100,
+      "spDefense": 70,
+      "speed": 30
+    }
+  ],
+  "83": [
+    {
+      "name": "Farfetch'd",
+      "number": 83,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Farfetch%27d_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/57/083MS.png",
+      "hp": 52,
+      "attack": 90,
+      "defense": 55,
+      "spAttack": 58,
+      "spDefense": 62,
+      "speed": 60
+    },
+    {
+      "name": "Farfetch'd (Galarian Form)",
+      "number": 83,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Farfetch%27d_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/63/083GMS.png",
+      "hp": 52,
+      "attack": 95,
+      "defense": 55,
+      "spAttack": 58,
+      "spDefense": 62,
+      "speed": 55
+    }
+  ],
+  "88": [
+    {
+      "name": "Grimer",
+      "number": 88,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Grimer_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/50/088MS.png",
+      "hp": 80,
+      "attack": 80,
+      "defense": 50,
+      "spAttack": 40,
+      "spDefense": 50,
+      "speed": 25
+    },
+    {
+      "name": "Grimer (Alolan Form)",
+      "number": 88,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Grimer_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/9/9e/088AMS.png",
+      "hp": 80,
+      "attack": 80,
+      "defense": 50,
+      "spAttack": 40,
+      "spDefense": 50,
+      "speed": 25
+    }
+  ],
+  "89": [
+    {
+      "name": "Muk",
+      "number": 89,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Muk_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/b/b4/089MS.png",
+      "hp": 105,
+      "attack": 105,
+      "defense": 75,
+      "spAttack": 65,
+      "spDefense": 100,
+      "speed": 50
+    },
+    {
+      "name": "Muk (Alolan Form)",
+      "number": 89,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Muk_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/e4/089AMS.png",
+      "hp": 105,
+      "attack": 105,
+      "defense": 75,
+      "spAttack": 65,
+      "spDefense": 100,
+      "speed": 50
+    }
+  ],
+  "103": [
+    {
+      "name": "Exeggutor",
+      "number": 103,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Exeggutor_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/06/103XYMS.png",
+      "hp": 95,
+      "attack": 95,
+      "defense": 85,
+      "spAttack": 125,
+      "spDefense": 75,
+      "speed": 55
+    },
+    {
+      "name": "Exeggutor (Alolan Form)",
+      "number": 103,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Exeggutor_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/b/bf/103ASMMS.png",
+      "hp": 95,
+      "attack": 105,
+      "defense": 85,
+      "spAttack": 125,
+      "spDefense": 75,
+      "speed": 45
+    }
+  ],
+  "105": [
+    {
+      "name": "Marowak",
+      "number": 105,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Marowak_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/6f/105MS.png",
+      "hp": 60,
+      "attack": 80,
+      "defense": 110,
+      "spAttack": 50,
+      "spDefense": 80,
+      "speed": 45
+    },
+    {
+      "name": "Marowak (Alolan Form)",
+      "number": 105,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Marowak_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/e5/105AMS.png",
+      "hp": 60,
+      "attack": 80,
+      "defense": 110,
+      "spAttack": 50,
+      "spDefense": 80,
+      "speed": 45
+    }
+  ],
+  "110": [
+    {
+      "name": "Weezing",
+      "number": 110,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Weezing_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/22/110MS.png",
+      "hp": 65,
+      "attack": 90,
+      "defense": 120,
+      "spAttack": 85,
+      "spDefense": 70,
+      "speed": 60
+    },
+    {
+      "name": "Weezing (Galarian Form)",
+      "number": 110,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Weezing_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/8a/110GMS.png",
+      "hp": 65,
+      "attack": 90,
+      "defense": 120,
+      "spAttack": 85,
+      "spDefense": 70,
+      "speed": 60
+    }
+  ],
+  "122": [
+    {
+      "name": "Mr. Mime",
+      "number": 122,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mr._Mime_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/4b/122XYMS.png",
+      "hp": 40,
+      "attack": 45,
+      "defense": 65,
+      "spAttack": 100,
+      "spDefense": 120,
+      "speed": 90
+    },
+    {
+      "name": "Mr. Mime (Galarian Form)",
+      "number": 122,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mr._Mime_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/7/77/122GMS.png",
+      "hp": 50,
+      "attack": 65,
+      "defense": 65,
+      "spAttack": 90,
+      "spDefense": 90,
+      "speed": 100
+    }
+  ],
+  "144": [
+    {
+      "name": "Articuno",
+      "number": 144,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Articuno_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/fe/144XYMS.png",
+      "hp": 90,
+      "attack": 85,
+      "defense": 100,
+      "spAttack": 95,
+      "spDefense": 125,
+      "speed": 85
+    }
+  ],
+  "145": [
+    {
+      "name": "Zapdos",
+      "number": 145,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zapdos_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/86/145XYMS.png",
+      "hp": 90,
+      "attack": 90,
+      "defense": 85,
+      "spAttack": 125,
+      "spDefense": 90,
+      "speed": 100
+    }
+  ],
+  "146": [
+    {
+      "name": "Moltres",
+      "number": 146,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Moltres_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/9/90/146XYMS.png",
+      "hp": 90,
+      "attack": 100,
+      "defense": 90,
+      "spAttack": 125,
+      "spDefense": 85,
+      "speed": 90
+    }
+  ],
+  "199": [
+    {
+      "name": "Slowking",
+      "number": 199,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowking_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/80/199MS.png",
+      "hp": 95,
+      "attack": 75,
+      "defense": 80,
+      "spAttack": 100,
+      "spDefense": 110,
+      "speed": 30
+    }
+  ],
+  "222": [
+    {
+      "name": "Corsola",
+      "number": 222,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Corsola_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/9/97/222MS.png",
+      "hp": 65,
+      "attack": 55,
+      "defense": 95,
+      "spAttack": 65,
+      "spDefense": 95,
+      "speed": 35
+    },
+    {
+      "name": "Corsola (Galarian Form)",
+      "number": 222,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Corsola_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/27/222GMS.png",
+      "hp": 60,
+      "attack": 55,
+      "defense": 100,
+      "spAttack": 65,
+      "spDefense": 100,
+      "speed": 30
+    }
+  ],
+  "263": [
+    {
+      "name": "Zigzagoon",
+      "number": 263,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zigzagoon_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a5/263MS.png",
+      "hp": 38,
+      "attack": 30,
+      "defense": 41,
+      "spAttack": 30,
+      "spDefense": 41,
+      "speed": 60
+    },
+    {
+      "name": "Zigzagoon (Galarian Form)",
+      "number": 263,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zigzagoon_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/08/263GMS.png",
+      "hp": 38,
+      "attack": 30,
+      "defense": 41,
+      "spAttack": 30,
+      "spDefense": 41,
+      "speed": 60
+    }
+  ],
+  "264": [
+    {
+      "name": "Linoone",
+      "number": 264,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Linoone_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/7/71/264MS.png",
+      "hp": 78,
+      "attack": 70,
+      "defense": 61,
+      "spAttack": 50,
+      "spDefense": 61,
+      "speed": 100
+    },
+    {
+      "name": "Linoone (Galarian Form)",
+      "number": 264,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Linoone_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/3/3c/264GMS.png",
+      "hp": 78,
+      "attack": 70,
+      "defense": 61,
+      "spAttack": 50,
+      "spDefense": 61,
+      "speed": 100
+    }
+  ],
+  "351": [
+    {
+      "name": "Castform",
+      "number": 351,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Castform_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/fc/351MS.png",
+      "hp": 70,
+      "attack": 70,
+      "defense": 70,
+      "spAttack": 70,
+      "spDefense": 70,
+      "speed": 70
+    }
+  ],
+  "386": [
+    {
+      "name": "Deoxys (Normal Forme)",
+      "number": 386,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/86/386MS.png",
+      "hp": 50,
+      "attack": 150,
+      "defense": 50,
+      "spAttack": 150,
+      "spDefense": 50,
+      "speed": 150
+    },
+    {
+      "name": "Deoxys (Attack Forme)",
+      "number": 386,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/07/386AMS.png",
+      "hp": 50,
+      "attack": 180,
+      "defense": 20,
+      "spAttack": 180,
+      "spDefense": 20,
+      "speed": 150
+    },
+    {
+      "name": "Deoxys (Defense Forme)",
+      "number": 386,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/20/386DMS.png",
+      "hp": 50,
+      "attack": 70,
+      "defense": 160,
+      "spAttack": 70,
+      "spDefense": 160,
+      "speed": 90
+    },
+    {
+      "name": "Deoxys (Speed Forme)",
+      "number": 386,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/fa/386SMS.png",
+      "hp": 50,
+      "attack": 95,
+      "defense": 90,
+      "spAttack": 95,
+      "spDefense": 90,
+      "speed": 180
+    }
+  ],
+  "412": [
+    {
+      "name": "Burmy",
+      "number": 412,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Burmy_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/87/412MS.png",
+      "hp": 40,
+      "attack": 29,
+      "defense": 45,
+      "spAttack": 29,
+      "spDefense": 45,
+      "speed": 36
+    }
+  ],
+  "413": [
+    {
+      "name": "Wormadam (Plant Cloak)",
+      "number": 413,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/fa/413MS.png",
+      "hp": 60,
+      "attack": 59,
+      "defense": 85,
+      "spAttack": 79,
+      "spDefense": 105,
+      "speed": 36
+    },
+    {
+      "name": "Wormadam (Sandy Cloak)",
+      "number": 413,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/86/413GMS.png",
+      "hp": 60,
+      "attack": 79,
+      "defense": 105,
+      "spAttack": 59,
+      "spDefense": 85,
+      "speed": 36
+    },
+    {
+      "name": "Wormadam (Trash Cloak)",
+      "number": 413,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/8e/413SMS.png",
+      "hp": 60,
+      "attack": 69,
+      "defense": 95,
+      "spAttack": 69,
+      "spDefense": 95,
+      "speed": 36
+    }
+  ],
+  "422": [
+    {
+      "name": "Shellos",
+      "number": 422,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shellos_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/f1/422MS.png",
+      "hp": 76,
+      "attack": 48,
+      "defense": 48,
+      "spAttack": 57,
+      "spDefense": 62,
+      "speed": 34
+    }
+  ],
+  "423": [
+    {
+      "name": "Gastrodon",
+      "number": 423,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gastrodon_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/44/423MS.png",
+      "hp": 111,
+      "attack": 83,
+      "defense": 68,
+      "spAttack": 92,
+      "spDefense": 82,
+      "speed": 39
+    }
+  ],
+  "479": [
+    {
+      "name": "Rotom",
+      "number": 479,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/14/479MS.png",
+      "hp": 50,
+      "attack": 50,
+      "defense": 77,
+      "spAttack": 95,
+      "spDefense": 77,
+      "speed": 91
+    },
+    {
+      "name": "Rotom (Heat Rotom)",
+      "number": 479,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/87/479OMS.png",
+      "hp": 50,
+      "attack": 65,
+      "defense": 107,
+      "spAttack": 105,
+      "spDefense": 107,
+      "speed": 86
+    },
+    {
+      "name": "Rotom (Wash Rotom)",
+      "number": 479,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/54/479WMS.png",
+      "hp": 50,
+      "attack": 65,
+      "defense": 107,
+      "spAttack": 105,
+      "spDefense": 107,
+      "speed": 86
+    },
+    {
+      "name": "Rotom (Frost Rotom)",
+      "number": 479,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/d8/479RMS.png",
+      "hp": 50,
+      "attack": 65,
+      "defense": 107,
+      "spAttack": 105,
+      "spDefense": 107,
+      "speed": 86
+    },
+    {
+      "name": "Rotom (Fan Rotom)",
+      "number": 479,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/3/3a/479FMS.png",
+      "hp": 50,
+      "attack": 65,
+      "defense": 107,
+      "spAttack": 105,
+      "spDefense": 107,
+      "speed": 86
+    },
+    {
+      "name": "Rotom (Mow Rotom)",
+      "number": 479,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/dc/479LMS.png",
+      "hp": 50,
+      "attack": 65,
+      "defense": 107,
+      "spAttack": 105,
+      "spDefense": 107,
+      "speed": 86
+    }
+  ],
+  "487": [
+    {
+      "name": "Giratina (Altered Forme)",
+      "number": 487,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Giratina_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/e/e8/487MS.png",
+      "hp": 150,
+      "attack": 100,
+      "defense": 120,
+      "spAttack": 100,
+      "spDefense": 120,
+      "speed": 90
+    },
+    {
+      "name": "Giratina (Origin Forme)",
+      "number": 487,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Giratina_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/2f/487OMS.png",
+      "hp": 150,
+      "attack": 120,
+      "defense": 100,
+      "spAttack": 120,
+      "spDefense": 100,
+      "speed": 90
+    }
+  ],
+  "492": [
+    {
+      "name": "Shaymin (Land Forme)",
+      "number": 492,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shaymin_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a6/492MS.png",
+      "hp": 100,
+      "attack": 100,
+      "defense": 100,
+      "spAttack": 100,
+      "spDefense": 100,
+      "speed": 100
+    },
+    {
+      "name": "Shaymin (Sky Forme)",
+      "number": 492,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shaymin_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/68/492SMS.png",
+      "hp": 100,
+      "attack": 103,
+      "defense": 75,
+      "spAttack": 120,
+      "spDefense": 75,
+      "speed": 127
+    }
+  ],
+  "521": [
+    {
+      "name": "Unfezant",
+      "number": 521,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Unfezant_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a9/521MS.png",
+      "hp": 80,
+      "attack": 115,
+      "defense": 80,
+      "spAttack": 65,
+      "spDefense": 55,
+      "speed": 93
+    }
+  ],
+  "550": [
+    {
+      "name": "Basculin",
+      "number": 550,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Basculin_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a7/550MS.png",
+      "hp": 70,
+      "attack": 92,
+      "defense": 65,
+      "spAttack": 80,
+      "spDefense": 55,
+      "speed": 98
+    }
+  ],
+  "554": [
+    {
+      "name": "Darumaka",
+      "number": 554,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darumaka_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/8/8f/554MS.png",
+      "hp": 70,
+      "attack": 90,
+      "defense": 45,
+      "spAttack": 15,
+      "spDefense": 45,
+      "speed": 50
+    },
+    {
+      "name": "Darumaka (Galarian Form)",
+      "number": 554,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darumaka_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/f/f8/554GMS.png",
+      "hp": 70,
+      "attack": 90,
+      "defense": 45,
+      "spAttack": 15,
+      "spDefense": 45,
+      "speed": 50
+    }
+  ],
+  "555": [
+    {
+      "name": "Darmanitan (Standard Mode)",
+      "number": 555,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/5/52/555MS.png",
+      "hp": 105,
+      "attack": 140,
+      "defense": 55,
+      "spAttack": 30,
+      "spDefense": 55,
+      "speed": 95
+    },
+    {
+      "name": "Darmanitan (Zen Mode)",
+      "number": 555,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/66/555ZMS.png",
+      "hp": 105,
+      "attack": 30,
+      "defense": 105,
+      "spAttack": 140,
+      "spDefense": 105,
+      "speed": 55
+    },
+    {
+      "name": "Darmanitan (Galarian Form)",
+      "number": 555,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/4c/555GMS.png",
+      "hp": 105,
+      "attack": 140,
+      "defense": 55,
+      "spAttack": 30,
+      "spDefense": 55,
+      "speed": 95
+    },
+    {
+      "name": "Darmanitan (Galarian Form, Zen Mode)",
+      "number": 555,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/b/ba/555GZMS.png",
+      "hp": 105,
+      "attack": 160,
+      "defense": 55,
+      "spAttack": 30,
+      "spDefense": 55,
+      "speed": 135
+    }
+  ],
+  "562": [
+    {
+      "name": "Yamask",
+      "number": 562,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Yamask_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/a/a9/562MS.png",
+      "hp": 38,
+      "attack": 30,
+      "defense": 85,
+      "spAttack": 55,
+      "spDefense": 65,
+      "speed": 30
+    },
+    {
+      "name": "Yamask (Galarian Form)",
+      "number": 562,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Yamask_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/09/562GMS.png",
+      "hp": 38,
+      "attack": 55,
+      "defense": 85,
+      "spAttack": 30,
+      "spDefense": 65,
+      "speed": 30
+    }
+  ],
+  "592": [
+    {
+      "name": "Frillish",
+      "number": 592,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Frillish_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/0/09/592MS.png",
+      "hp": 55,
+      "attack": 40,
+      "defense": 50,
+      "spAttack": 65,
+      "spDefense": 85,
+      "speed": 40
+    }
+  ],
+  "593": [
+    {
+      "name": "Jellicent",
+      "number": 593,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Jellicent_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/7/71/593MS.png",
+      "hp": 100,
+      "attack": 60,
+      "defense": 70,
+      "spAttack": 85,
+      "spDefense": 105,
+      "speed": 60
+    }
+  ],
+  "618": [
+    {
+      "name": "Stunfisk",
+      "number": 618,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Stunfisk_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/3/31/618MS.png",
+      "hp": 109,
+      "attack": 66,
+      "defense": 84,
+      "spAttack": 81,
+      "spDefense": 99,
+      "speed": 32
+    },
+    {
+      "name": "Stunfisk (Galarian Form)",
+      "number": 618,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Stunfisk_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/2/2a/618GMS.png",
+      "hp": 109,
+      "attack": 81,
+      "defense": 99,
+      "spAttack": 66,
+      "spDefense": 84,
+      "speed": 32
+    }
+  ],
+  "648": [
+    {
+      "name": "Meloetta (Aria Forme)",
+      "number": 648,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meloetta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/1f/648MS.png",
+      "hp": 100,
+      "attack": 77,
+      "defense": 77,
+      "spAttack": 128,
+      "spDefense": 128,
+      "speed": 90
+    },
+    {
+      "name": "Meloetta (Pirouette Forme)",
+      "number": 648,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meloetta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/9/93/648PMS.png",
+      "hp": 100,
+      "attack": 128,
+      "defense": 90,
+      "spAttack": 77,
+      "spDefense": 77,
+      "speed": 128
+    }
+  ],
+  "720": [
+    {
+      "name": "Hoopa (Hoopa Confined)",
+      "number": 720,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/d0/720MS.png",
+      "hp": 80,
+      "attack": 110,
+      "defense": 60,
+      "spAttack": 150,
+      "spDefense": 130,
+      "speed": 70
+    },
+    {
+      "name": "Hoopa (Hoopa Unbound)",
+      "number": 720,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/6/64/720UMS.png",
+      "hp": 80,
+      "attack": 160,
+      "defense": 60,
+      "spAttack": 170,
+      "spDefense": 130,
+      "speed": 80
+    }
+  ],
+  "741": [
+    {
+      "name": "Oricorio",
+      "number": 741,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Oricorio_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/7/72/741MS.png",
+      "hp": 75,
+      "attack": 70,
+      "defense": 70,
+      "spAttack": 98,
+      "spDefense": 70,
+      "speed": 93
+    }
+  ],
+  "888": [
+    {
+      "name": "Zacian (Hero of Many Battles)",
+      "number": 888,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zacian_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/d5/888MS.png",
+      "hp": 92,
+      "attack": 130,
+      "defense": 115,
+      "spAttack": 80,
+      "spDefense": 115,
+      "speed": 138
+    },
+    {
+      "name": "Zacian (Crowned Sword)",
+      "number": 888,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zacian_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/d/d0/888CMS.png",
+      "hp": 92,
+      "attack": 170,
+      "defense": 115,
+      "spAttack": 80,
+      "spDefense": 115,
+      "speed": 148
+    }
+  ],
+  "889": [
+    {
+      "name": "Zamazenta (Hero of Many Battles)",
+      "number": 889,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zamazenta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/b/be/889MS.png",
+      "hp": 92,
+      "attack": 130,
+      "defense": 115,
+      "spAttack": 80,
+      "spDefense": 115,
+      "speed": 138
+    },
+    {
+      "name": "Zamazenta (Crowned Shield)",
+      "number": 889,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zamazenta_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/1/14/889CMS.png",
+      "hp": 92,
+      "attack": 130,
+      "defense": 145,
+      "spAttack": 80,
+      "spDefense": 145,
+      "speed": 128
+    }
+  ],
+  "892": [
+    {
+      "name": "Urshifu (Single Strike Style)",
+      "number": 892,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/41/892MS.png",
+      "hp": 100,
+      "attack": 130,
+      "defense": 100,
+      "spAttack": 63,
+      "spDefense": 60,
+      "speed": 97
+    },
+    {
+      "name": "Urshifu (Rapid Strike Style)",
+      "number": 892,
+      "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pok%C3%A9mon)",
+      "imageURL": "https://cdn.bulbagarden.net/upload/4/41/892MS.png",
+      "hp": 100,
+      "attack": 130,
+      "defense": 100,
+      "spAttack": 63,
+      "spDefense": 60,
+      "speed": 97
+    }
+  ]
+}

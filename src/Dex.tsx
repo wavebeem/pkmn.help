@@ -94,7 +94,7 @@ function Monster(props: MonsterProps) {
           </a>
         </div>
         <img
-          src={getImage(props.pokemon.imageID)}
+          src={getImage(props.pokemon.id)}
           role="presentation"
           className="pa1 mt2 bg-white br2 ba b--black-20"
           width={imgSize}

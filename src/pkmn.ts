@@ -3,7 +3,6 @@ import data from "./data-pkmn.json";
 
 export interface Pokemon {
   id: string;
-  imageID: string;
   bulbapediaURL: string;
   name: string;
   number: number;
