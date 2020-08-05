@@ -2,7 +2,7 @@ import fetch from "node-fetch";
 import { JSDOM } from "jsdom";
 import path from "path";
 import fs from "fs";
-// import { execSync } from "child_process";
+import { execSync } from "child_process";
 import { URL } from "url";
 import groupBy from "lodash.groupby";
 import sortBy from "lodash.sortby";
@@ -207,6 +207,25 @@ function saveJSON(filename: string, data: any): void {
   );
 }
 
+async function downloadImages() {
+  for (const mon of monsters) {
+    const filename = path.resolve(__dirname, `../img/${mon.id}.png`);
+    if (!fs.existsSync(filename)) {
+      console.log(`${mon.id} => ${mon.imageURL}`);
+      const buffer = await fetch(mon.imageURL).then((r) => r.buffer());
+      fs.writeFileSync(filename, buffer);
+      execSync(`\
+        mogrify \
+          -background none \
+          -gravity center \
+          -extent 68x68 \
+          -scale 272x272 \
+          '${filename}' \
+      `);
+    }
+  }
+}
+
 async function main(): Promise<void> {
   await fillDex();
   await fillStats();
@@ -214,22 +233,7 @@ async function main(): Promise<void> {
   saveJSON("../build/data-dex.json", dex);
   combineData();
   saveJSON("../build/data-pkmn.json", monsters);
-  // for (const dl of downloads) {
-  //   const filename = path.resolve(__dirname, `../img/${dl.id}.png`);
-  //   if (!fs.existsSync(filename)) {
-  //     console.log(`${dl.id} => ${dl.image}`);
-  //     const buffer = await fetch(dl.image).then((r) => r.buffer());
-  //     fs.writeFileSync(filename, buffer);
-  //     execSync(`\
-  //       mogrify \
-  //         -background none \
-  //         -gravity center \
-  //         -extent 68x68 \
-  //         -scale 272x272 \
-  //         '${filename}' \
-  //     `);
-  //   }
-  // }
+  await downloadImages();
 }
 
 main().catch((err) => {
