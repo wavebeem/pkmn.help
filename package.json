@@ -53,7 +53,6 @@
     "jest-svg-transformer": "^1.0.0",
     "jsdom": "^16.2.2",
     "lodash.groupby": "^4.6.0",
-    "lodash.sortby": "^4.7.0",
     "node-fetch": "^2.6.0",
     "npm-check": "^5.9.2",
     "prettier": "^2.0.5",

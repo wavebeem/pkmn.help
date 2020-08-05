@@ -5,7 +5,6 @@ import fs from "fs";
 import { execSync } from "child_process";
 import { URL } from "url";
 import groupBy from "lodash.groupby";
-import sortBy from "lodash.sortby";
 
 const mainURL =
   "https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number";
@@ -84,7 +83,7 @@ async function fillStats(): Promise<void> {
       continue;
     }
     const [, name = "", formName = ""] =
-      columns[2].match(/([^()]+)\s*(?:[(]([^()]+)[)])?/) || [];
+      columns[2].match(/^([^()]+?)\s*(?:[(]([^()]+)[)])?$/) || [];
     const imageURL = normalizeURL(
       elements[1]?.querySelector("img")?.src,
       statsURL
@@ -190,6 +189,8 @@ function combineData() {
         });
         i++;
       }
+    } else {
+      console.log(`Skipping #${num} (dex=${da.length} stats=${sa.length})`);
     }
     delete dexByNumber[num];
     delete statsByNumber[num];

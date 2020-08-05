@@ -56,7 +56,7 @@
       "grass",
       "poison"
     ],
-    "name": "Venusaur ",
+    "name": "Venusaur",
     "formName": "Mega Venusaur",
     "number": 3,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Venusaur_(Pok%C3%A9mon)",
@@ -122,7 +122,7 @@
       "fire",
       "flying"
     ],
-    "name": "Charizard ",
+    "name": "Charizard",
     "formName": "Mega Charizard X",
     "number": 6,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pok%C3%A9mon)",
@@ -139,7 +139,7 @@
       "fire",
       "flying"
     ],
-    "name": "Charizard ",
+    "name": "Charizard",
     "formName": "Mega Charizard Y",
     "number": 6,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pok%C3%A9mon)",
@@ -203,7 +203,7 @@
     "types": [
       "water"
     ],
-    "name": "Blastoise ",
+    "name": "Blastoise",
     "formName": "Mega Blastoise",
     "number": 9,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Blastoise_(Pok%C3%A9mon)",
@@ -320,7 +320,7 @@
       "bug",
       "poison"
     ],
-    "name": "Beedrill ",
+    "name": "Beedrill",
     "formName": "Mega Beedrill",
     "number": 15,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Beedrill_(Pok%C3%A9mon)",
@@ -388,7 +388,7 @@
       "normal",
       "flying"
     ],
-    "name": "Pidgeot ",
+    "name": "Pidgeot",
     "formName": "Mega Pidgeot",
     "number": 18,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pidgeot_(Pok%C3%A9mon)",
@@ -421,7 +421,7 @@
       "dark",
       "normal"
     ],
-    "name": "Rattata ",
+    "name": "Rattata",
     "formName": "Alolan Form",
     "number": 19,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rattata_(Pok%C3%A9mon)",
@@ -454,7 +454,7 @@
       "dark",
       "normal"
     ],
-    "name": "Raticate ",
+    "name": "Raticate",
     "formName": "Alolan Form",
     "number": 20,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pok%C3%A9mon)",
@@ -552,7 +552,7 @@
     "types": [
       "electric"
     ],
-    "name": "Pikachu ",
+    "name": "Pikachu",
     "formName": "Partner Pikachu",
     "number": 25,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)",
@@ -585,7 +585,7 @@
       "electric",
       "psychic"
     ],
-    "name": "Raichu ",
+    "name": "Raichu",
     "formName": "Alolan Form",
     "number": 26,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raichu_(Pok%C3%A9mon)",
@@ -618,7 +618,7 @@
       "ice",
       "steel"
     ],
-    "name": "Sandshrew ",
+    "name": "Sandshrew",
     "formName": "Alolan Form",
     "number": 27,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandshrew_(Pok%C3%A9mon)",
@@ -651,7 +651,7 @@
       "ice",
       "steel"
     ],
-    "name": "Sandslash ",
+    "name": "Sandslash",
     "formName": "Alolan Form",
     "number": 28,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandslash_(Pok%C3%A9mon)",
@@ -813,7 +813,7 @@
     "types": [
       "ice"
     ],
-    "name": "Vulpix ",
+    "name": "Vulpix",
     "formName": "Alolan Form",
     "number": 37,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Vulpix_(Pok%C3%A9mon)",
@@ -846,7 +846,7 @@
       "ice",
       "fairy"
     ],
-    "name": "Ninetales ",
+    "name": "Ninetales",
     "formName": "Alolan Form",
     "number": 38,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ninetales_(Pok%C3%A9mon)",
@@ -1066,7 +1066,7 @@
       "ground",
       "steel"
     ],
-    "name": "Diglett ",
+    "name": "Diglett",
     "formName": "Alolan Form",
     "number": 50,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Diglett_(Pok%C3%A9mon)",
@@ -1099,7 +1099,7 @@
       "ground",
       "steel"
     ],
-    "name": "Dugtrio ",
+    "name": "Dugtrio",
     "formName": "Alolan Form",
     "number": 51,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Dugtrio_(Pok%C3%A9mon)",
@@ -1131,7 +1131,7 @@
     "types": [
       "dark"
     ],
-    "name": "Meowth ",
+    "name": "Meowth",
     "formName": "Alolan Form",
     "number": 52,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)",
@@ -1147,7 +1147,7 @@
     "types": [
       "steel"
     ],
-    "name": "Meowth ",
+    "name": "Meowth",
     "formName": "Galarian Form",
     "number": 52,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)",
@@ -1179,7 +1179,7 @@
     "types": [
       "dark"
     ],
-    "name": "Persian ",
+    "name": "Persian",
     "formName": "Alolan Form",
     "number": 53,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Persian_(Pok%C3%A9mon)",
@@ -1388,7 +1388,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Alakazam ",
+    "name": "Alakazam",
     "formName": "Mega Alakazam",
     "number": 65,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Alakazam_(Pok%C3%A9mon)",
@@ -1555,7 +1555,7 @@
       "rock",
       "electric"
     ],
-    "name": "Geodude ",
+    "name": "Geodude",
     "formName": "Alolan Form",
     "number": 74,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Geodude_(Pok%C3%A9mon)",
@@ -1589,7 +1589,7 @@
       "rock",
       "electric"
     ],
-    "name": "Graveler ",
+    "name": "Graveler",
     "formName": "Alolan Form",
     "number": 75,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Graveler_(Pok%C3%A9mon)",
@@ -1623,7 +1623,7 @@
       "rock",
       "electric"
     ],
-    "name": "Golem ",
+    "name": "Golem",
     "formName": "Alolan Form",
     "number": 76,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Golem_(Pok%C3%A9mon)",
@@ -1655,7 +1655,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Ponyta ",
+    "name": "Ponyta",
     "formName": "Galarian Form",
     "number": 77,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ponyta_(Pok%C3%A9mon)",
@@ -1688,7 +1688,7 @@
       "psychic",
       "fairy"
     ],
-    "name": "Rapidash ",
+    "name": "Rapidash",
     "formName": "Galarian Form",
     "number": 78,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rapidash_(Pok%C3%A9mon)",
@@ -1721,7 +1721,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Slowpoke ",
+    "name": "Slowpoke",
     "formName": "Galarian Form",
     "number": 79,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowpoke_(Pok%C3%A9mon)",
@@ -1788,7 +1788,7 @@
     "types": [
       "fighting"
     ],
-    "name": "Farfetch'd ",
+    "name": "Farfetch'd",
     "formName": "Galarian Form",
     "number": 83,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Farfetch%27d_(Pok%C3%A9mon)",
@@ -1888,7 +1888,7 @@
       "poison",
       "dark"
     ],
-    "name": "Grimer ",
+    "name": "Grimer",
     "formName": "Alolan Form",
     "number": 88,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Grimer_(Pok%C3%A9mon)",
@@ -1921,7 +1921,7 @@
       "poison",
       "dark"
     ],
-    "name": "Muk ",
+    "name": "Muk",
     "formName": "Alolan Form",
     "number": 89,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Muk_(Pok%C3%A9mon)",
@@ -2022,7 +2022,7 @@
       "ghost",
       "poison"
     ],
-    "name": "Gengar ",
+    "name": "Gengar",
     "formName": "Mega Gengar",
     "number": 94,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gengar_(Pok%C3%A9mon)",
@@ -2186,7 +2186,7 @@
       "grass",
       "dragon"
     ],
-    "name": "Exeggutor ",
+    "name": "Exeggutor",
     "formName": "Alolan Form",
     "number": 103,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Exeggutor_(Pok%C3%A9mon)",
@@ -2235,7 +2235,7 @@
       "fire",
       "ghost"
     ],
-    "name": "Marowak ",
+    "name": "Marowak",
     "formName": "Alolan Form",
     "number": 105,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Marowak_(Pok%C3%A9mon)",
@@ -2332,7 +2332,7 @@
       "poison",
       "fairy"
     ],
-    "name": "Weezing ",
+    "name": "Weezing",
     "formName": "Galarian Form",
     "number": 110,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Weezing_(Pok%C3%A9mon)",
@@ -2430,7 +2430,7 @@
     "types": [
       "normal"
     ],
-    "name": "Kangaskhan ",
+    "name": "Kangaskhan",
     "formName": "Mega Kangaskhan",
     "number": 115,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Kangaskhan_(Pok%C3%A9mon)",
@@ -2561,7 +2561,7 @@
       "ice",
       "psychic"
     ],
-    "name": "Mr. Mime ",
+    "name": "Mr. Mime",
     "formName": "Galarian Form",
     "number": 122,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mr._Mime_(Pok%C3%A9mon)",
@@ -2659,7 +2659,7 @@
     "types": [
       "bug"
     ],
-    "name": "Pinsir ",
+    "name": "Pinsir",
     "formName": "Mega Pinsir",
     "number": 127,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pinsir_(Pok%C3%A9mon)",
@@ -2725,7 +2725,7 @@
       "water",
       "flying"
     ],
-    "name": "Gyarados ",
+    "name": "Gyarados",
     "formName": "Mega Gyarados",
     "number": 130,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gyarados_(Pok%C3%A9mon)",
@@ -2790,7 +2790,7 @@
     "types": [
       "normal"
     ],
-    "name": "Eevee ",
+    "name": "Eevee",
     "formName": "Partner Eevee",
     "number": 133,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Eevee_(Pok%C3%A9mon)",
@@ -2956,7 +2956,7 @@
       "rock",
       "flying"
     ],
-    "name": "Aerodactyl ",
+    "name": "Aerodactyl",
     "formName": "Mega Aerodactyl",
     "number": 142,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Aerodactyl_(Pok%C3%A9mon)",
@@ -3053,7 +3053,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Mewtwo ",
+    "name": "Mewtwo",
     "formName": "Mega Mewtwo X",
     "number": 150,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mewtwo_(Pok%C3%A9mon)",
@@ -3069,7 +3069,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Mewtwo ",
+    "name": "Mewtwo",
     "formName": "Mega Mewtwo Y",
     "number": 150,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mewtwo_(Pok%C3%A9mon)",
@@ -3594,7 +3594,7 @@
     "types": [
       "electric"
     ],
-    "name": "Ampharos ",
+    "name": "Ampharos",
     "formName": "Mega Ampharos",
     "number": 181,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ampharos_(Pok%C3%A9mon)",
@@ -4040,7 +4040,7 @@
       "steel",
       "ground"
     ],
-    "name": "Steelix ",
+    "name": "Steelix",
     "formName": "Mega Steelix",
     "number": 208,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Steelix_(Pok%C3%A9mon)",
@@ -4123,7 +4123,7 @@
       "bug",
       "steel"
     ],
-    "name": "Scizor ",
+    "name": "Scizor",
     "formName": "Mega Scizor",
     "number": 212,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Scizor_(Pok%C3%A9mon)",
@@ -4174,7 +4174,7 @@
       "bug",
       "fighting"
     ],
-    "name": "Heracross ",
+    "name": "Heracross",
     "formName": "Mega Heracross",
     "number": 214,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Heracross_(Pok%C3%A9mon)",
@@ -4323,7 +4323,7 @@
     "types": [
       "ghost"
     ],
-    "name": "Corsola ",
+    "name": "Corsola",
     "formName": "Galarian Form",
     "number": 222,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Corsola_(Pok%C3%A9mon)",
@@ -4457,7 +4457,7 @@
       "dark",
       "fire"
     ],
-    "name": "Houndoom ",
+    "name": "Houndoom",
     "formName": "Mega Houndoom",
     "number": 229,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Houndoom_(Pok%C3%A9mon)",
@@ -4783,7 +4783,7 @@
       "rock",
       "dark"
     ],
-    "name": "Tyranitar ",
+    "name": "Tyranitar",
     "formName": "Mega Tyranitar",
     "number": 248,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Tyranitar_(Pok%C3%A9mon)",
@@ -4898,7 +4898,7 @@
     "types": [
       "grass"
     ],
-    "name": "Sceptile ",
+    "name": "Sceptile",
     "formName": "Mega Sceptile",
     "number": 254,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sceptile_(Pok%C3%A9mon)",
@@ -4965,7 +4965,7 @@
       "fire",
       "fighting"
     ],
-    "name": "Blaziken ",
+    "name": "Blaziken",
     "formName": "Mega Blaziken",
     "number": 257,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Blaziken_(Pok%C3%A9mon)",
@@ -5032,7 +5032,7 @@
       "water",
       "ground"
     ],
-    "name": "Swampert ",
+    "name": "Swampert",
     "formName": "Mega Swampert",
     "number": 260,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Swampert_(Pok%C3%A9mon)",
@@ -5097,7 +5097,7 @@
       "dark",
       "normal"
     ],
-    "name": "Zigzagoon ",
+    "name": "Zigzagoon",
     "formName": "Galarian Form",
     "number": 263,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zigzagoon_(Pok%C3%A9mon)",
@@ -5130,7 +5130,7 @@
       "dark",
       "normal"
     ],
-    "name": "Linoone ",
+    "name": "Linoone",
     "formName": "Galarian Form",
     "number": 264,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Linoone_(Pok%C3%A9mon)",
@@ -5449,7 +5449,7 @@
       "psychic",
       "fairy"
     ],
-    "name": "Gardevoir ",
+    "name": "Gardevoir",
     "formName": "Mega Gardevoir",
     "number": 282,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gardevoir_(Pok%C3%A9mon)",
@@ -5794,7 +5794,7 @@
       "dark",
       "ghost"
     ],
-    "name": "Sableye ",
+    "name": "Sableye",
     "formName": "Mega Sableye",
     "number": 302,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sableye_(Pok%C3%A9mon)",
@@ -5828,7 +5828,7 @@
       "steel",
       "fairy"
     ],
-    "name": "Mawile ",
+    "name": "Mawile",
     "formName": "Mega Mawile",
     "number": 303,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mawile_(Pok%C3%A9mon)",
@@ -5896,7 +5896,7 @@
       "steel",
       "rock"
     ],
-    "name": "Aggron ",
+    "name": "Aggron",
     "formName": "Mega Aggron",
     "number": 306,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Aggron_(Pok%C3%A9mon)",
@@ -5947,7 +5947,7 @@
       "fighting",
       "psychic"
     ],
-    "name": "Medicham ",
+    "name": "Medicham",
     "formName": "Mega Medicham",
     "number": 308,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Medicham_(Pok%C3%A9mon)",
@@ -5995,7 +5995,7 @@
     "types": [
       "electric"
     ],
-    "name": "Manectric ",
+    "name": "Manectric",
     "formName": "Mega Manectric",
     "number": 310,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Manectric_(Pok%C3%A9mon)",
@@ -6159,7 +6159,7 @@
       "water",
       "dark"
     ],
-    "name": "Sharpedo ",
+    "name": "Sharpedo",
     "formName": "Mega Sharpedo",
     "number": 319,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sharpedo_(Pok%C3%A9mon)",
@@ -6242,7 +6242,7 @@
       "fire",
       "ground"
     ],
-    "name": "Camerupt ",
+    "name": "Camerupt",
     "formName": "Mega Camerupt",
     "number": 323,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Camerupt_(Pok%C3%A9mon)",
@@ -6440,7 +6440,7 @@
       "dragon",
       "flying"
     ],
-    "name": "Altaria ",
+    "name": "Altaria",
     "formName": "Mega Altaria",
     "number": 334,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Altaria_(Pok%C3%A9mon)",
@@ -6771,7 +6771,7 @@
     "types": [
       "ghost"
     ],
-    "name": "Banette ",
+    "name": "Banette",
     "formName": "Mega Banette",
     "number": 354,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Banette_(Pok%C3%A9mon)",
@@ -6868,7 +6868,7 @@
     "types": [
       "dark"
     ],
-    "name": "Absol ",
+    "name": "Absol",
     "formName": "Mega Absol",
     "number": 359,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Absol_(Pok%C3%A9mon)",
@@ -6932,7 +6932,7 @@
     "types": [
       "ice"
     ],
-    "name": "Glalie ",
+    "name": "Glalie",
     "formName": "Mega Glalie",
     "number": 362,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Glalie_(Pok%C3%A9mon)",
@@ -7130,7 +7130,7 @@
       "dragon",
       "flying"
     ],
-    "name": "Salamence ",
+    "name": "Salamence",
     "formName": "Mega Salamence",
     "number": 373,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Salamence_(Pok%C3%A9mon)",
@@ -7198,7 +7198,7 @@
       "steel",
       "psychic"
     ],
-    "name": "Metagross ",
+    "name": "Metagross",
     "formName": "Mega Metagross",
     "number": 376,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Metagross_(Pok%C3%A9mon)",
@@ -7280,7 +7280,7 @@
       "dragon",
       "psychic"
     ],
-    "name": "Latias ",
+    "name": "Latias",
     "formName": "Mega Latias",
     "number": 380,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Latias_(Pok%C3%A9mon)",
@@ -7314,7 +7314,7 @@
       "dragon",
       "psychic"
     ],
-    "name": "Latios ",
+    "name": "Latios",
     "formName": "Mega Latios",
     "number": 381,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Latios_(Pok%C3%A9mon)",
@@ -7346,7 +7346,7 @@
     "types": [
       "water"
     ],
-    "name": "Kyogre ",
+    "name": "Kyogre",
     "formName": "Primal Kyogre",
     "number": 382,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Kyogre_(Pok%C3%A9mon)",
@@ -7378,7 +7378,7 @@
     "types": [
       "ground"
     ],
-    "name": "Groudon ",
+    "name": "Groudon",
     "formName": "Primal Groudon",
     "number": 383,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Groudon_(Pok%C3%A9mon)",
@@ -7412,7 +7412,7 @@
       "dragon",
       "flying"
     ],
-    "name": "Rayquaza ",
+    "name": "Rayquaza",
     "formName": "Mega Rayquaza",
     "number": 384,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rayquaza_(Pok%C3%A9mon)",
@@ -7445,7 +7445,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Deoxys ",
+    "name": "Deoxys",
     "formName": "Normal Forme",
     "number": 386,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
@@ -7461,7 +7461,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Deoxys ",
+    "name": "Deoxys",
     "formName": "Attack Forme",
     "number": 386,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
@@ -7477,7 +7477,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Deoxys ",
+    "name": "Deoxys",
     "formName": "Defense Forme",
     "number": 386,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
@@ -7493,7 +7493,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Deoxys ",
+    "name": "Deoxys",
     "formName": "Speed Forme",
     "number": 386,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
@@ -7922,7 +7922,7 @@
       "bug",
       "grass"
     ],
-    "name": "Wormadam ",
+    "name": "Wormadam",
     "formName": "Plant Cloak",
     "number": 413,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
@@ -7939,7 +7939,7 @@
       "bug",
       "ground"
     ],
-    "name": "Wormadam ",
+    "name": "Wormadam",
     "formName": "Sandy Cloak",
     "number": 413,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
@@ -7956,7 +7956,7 @@
       "bug",
       "steel"
     ],
-    "name": "Wormadam ",
+    "name": "Wormadam",
     "formName": "Trash Cloak",
     "number": 413,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
@@ -8185,7 +8185,7 @@
     "types": [
       "normal"
     ],
-    "name": "Lopunny ",
+    "name": "Lopunny",
     "formName": "Mega Lopunny",
     "number": 428,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Lopunny_(Pok%C3%A9mon)",
@@ -8485,7 +8485,7 @@
       "dragon",
       "ground"
     ],
-    "name": "Garchomp ",
+    "name": "Garchomp",
     "formName": "Mega Garchomp",
     "number": 445,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Garchomp_(Pok%C3%A9mon)",
@@ -8551,7 +8551,7 @@
       "fighting",
       "steel"
     ],
-    "name": "Lucario ",
+    "name": "Lucario",
     "formName": "Mega Lucario",
     "number": 448,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Lucario_(Pok%C3%A9mon)",
@@ -8767,7 +8767,7 @@
       "grass",
       "ice"
     ],
-    "name": "Abomasnow ",
+    "name": "Abomasnow",
     "formName": "Mega Abomasnow",
     "number": 460,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Abomasnow_(Pok%C3%A9mon)",
@@ -9032,7 +9032,7 @@
       "psychic",
       "fighting"
     ],
-    "name": "Gallade ",
+    "name": "Gallade",
     "formName": "Mega Gallade",
     "number": 475,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gallade_(Pok%C3%A9mon)",
@@ -9116,7 +9116,7 @@
       "electric",
       "fire"
     ],
-    "name": "Rotom ",
+    "name": "Rotom",
     "formName": "Heat Rotom",
     "number": 479,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
@@ -9133,7 +9133,7 @@
       "electric",
       "water"
     ],
-    "name": "Rotom ",
+    "name": "Rotom",
     "formName": "Wash Rotom",
     "number": 479,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
@@ -9150,7 +9150,7 @@
       "electric",
       "ice"
     ],
-    "name": "Rotom ",
+    "name": "Rotom",
     "formName": "Frost Rotom",
     "number": 479,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
@@ -9167,7 +9167,7 @@
       "electric",
       "flying"
     ],
-    "name": "Rotom ",
+    "name": "Rotom",
     "formName": "Fan Rotom",
     "number": 479,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
@@ -9184,7 +9184,7 @@
       "electric",
       "grass"
     ],
-    "name": "Rotom ",
+    "name": "Rotom",
     "formName": "Mow Rotom",
     "number": 479,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
@@ -9316,7 +9316,7 @@
       "ghost",
       "dragon"
     ],
-    "name": "Giratina ",
+    "name": "Giratina",
     "formName": "Altered Forme",
     "number": 487,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Giratina_(Pok%C3%A9mon)",
@@ -9333,7 +9333,7 @@
       "ghost",
       "dragon"
     ],
-    "name": "Giratina ",
+    "name": "Giratina",
     "formName": "Origin Forme",
     "number": 487,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Giratina_(Pok%C3%A9mon)",
@@ -9413,7 +9413,7 @@
     "types": [
       "grass"
     ],
-    "name": "Shaymin ",
+    "name": "Shaymin",
     "formName": "Land Forme",
     "number": 492,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shaymin_(Pok%C3%A9mon)",
@@ -9430,7 +9430,7 @@
       "grass",
       "flying"
     ],
-    "name": "Shaymin ",
+    "name": "Shaymin",
     "formName": "Sky Forme",
     "number": 492,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shaymin_(Pok%C3%A9mon)",
@@ -10062,7 +10062,7 @@
     "types": [
       "normal"
     ],
-    "name": "Audino ",
+    "name": "Audino",
     "formName": "Mega Audino",
     "number": 531,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Audino_(Pok%C3%A9mon)",
@@ -10443,7 +10443,7 @@
     "types": [
       "ice"
     ],
-    "name": "Darumaka ",
+    "name": "Darumaka",
     "formName": "Galarian Form",
     "number": 554,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darumaka_(Pok%C3%A9mon)",
@@ -10459,7 +10459,7 @@
     "types": [
       "fire"
     ],
-    "name": "Darmanitan ",
+    "name": "Darmanitan",
     "formName": "Standard Mode",
     "number": 555,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
@@ -10476,7 +10476,7 @@
       "fire",
       "psychic"
     ],
-    "name": "Darmanitan ",
+    "name": "Darmanitan",
     "formName": "Zen Mode",
     "number": 555,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
@@ -10492,7 +10492,7 @@
     "types": [
       "ice"
     ],
-    "name": "Darmanitan ",
+    "name": "Darmanitan",
     "formName": "Galarian Form",
     "number": 555,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
@@ -10509,7 +10509,7 @@
       "ice",
       "fire"
     ],
-    "name": "Darmanitan ",
+    "name": "Darmanitan",
     "formName": "Galarian Form, Zen Mode",
     "number": 555,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
@@ -10643,7 +10643,7 @@
       "ground",
       "ghost"
     ],
-    "name": "Yamask ",
+    "name": "Yamask",
     "formName": "Galarian Form",
     "number": 562,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Yamask_(Pok%C3%A9mon)",
@@ -11544,7 +11544,7 @@
       "ground",
       "steel"
     ],
-    "name": "Stunfisk ",
+    "name": "Stunfisk",
     "formName": "Galarian Form",
     "number": 618,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Stunfisk_(Pok%C3%A9mon)",
@@ -11929,7 +11929,7 @@
     "types": [
       "flying"
     ],
-    "name": "Tornadus ",
+    "name": "Tornadus",
     "formName": "Incarnate Forme",
     "number": 641,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Tornadus_(Pok%C3%A9mon)",
@@ -11945,7 +11945,7 @@
     "types": [
       "flying"
     ],
-    "name": "Tornadus ",
+    "name": "Tornadus",
     "formName": "Therian Forme",
     "number": 641,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Tornadus_(Pok%C3%A9mon)",
@@ -11962,7 +11962,7 @@
       "electric",
       "flying"
     ],
-    "name": "Thundurus ",
+    "name": "Thundurus",
     "formName": "Incarnate Forme",
     "number": 642,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Thundurus_(Pok%C3%A9mon)",
@@ -11979,7 +11979,7 @@
       "electric",
       "flying"
     ],
-    "name": "Thundurus ",
+    "name": "Thundurus",
     "formName": "Therian Forme",
     "number": 642,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Thundurus_(Pok%C3%A9mon)",
@@ -12030,7 +12030,7 @@
       "ground",
       "flying"
     ],
-    "name": "Landorus ",
+    "name": "Landorus",
     "formName": "Incarnate Forme",
     "number": 645,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Landorus_(Pok%C3%A9mon)",
@@ -12047,7 +12047,7 @@
       "ground",
       "flying"
     ],
-    "name": "Landorus ",
+    "name": "Landorus",
     "formName": "Therian Forme",
     "number": 645,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Landorus_(Pok%C3%A9mon)",
@@ -12064,7 +12064,7 @@
       "dragon",
       "ice"
     ],
-    "name": "Kyurem ",
+    "name": "Kyurem",
     "formName": "Normal Kyurem",
     "number": 646,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Kyurem_(Pok%C3%A9mon)",
@@ -12081,7 +12081,7 @@
       "dragon",
       "ice"
     ],
-    "name": "Kyurem ",
+    "name": "Kyurem",
     "formName": "Black Kyurem",
     "number": 646,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Kyurem_(Pok%C3%A9mon)",
@@ -12098,7 +12098,7 @@
       "dragon",
       "ice"
     ],
-    "name": "Kyurem ",
+    "name": "Kyurem",
     "formName": "White Kyurem",
     "number": 646,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Kyurem_(Pok%C3%A9mon)",
@@ -12132,7 +12132,7 @@
       "normal",
       "psychic"
     ],
-    "name": "Meloetta ",
+    "name": "Meloetta",
     "formName": "Aria Forme",
     "number": 648,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meloetta_(Pok%C3%A9mon)",
@@ -12149,7 +12149,7 @@
       "normal",
       "fighting"
     ],
-    "name": "Meloetta ",
+    "name": "Meloetta",
     "formName": "Pirouette Forme",
     "number": 648,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meloetta_(Pok%C3%A9mon)",
@@ -12330,7 +12330,7 @@
       "water",
       "dark"
     ],
-    "name": "Greninja ",
+    "name": "Greninja",
     "formName": "Ash-Greninja",
     "number": 658,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Greninja_(Pok%C3%A9mon)",
@@ -12709,7 +12709,7 @@
       "steel",
       "ghost"
     ],
-    "name": "Aegislash ",
+    "name": "Aegislash",
     "formName": "Shield Forme",
     "number": 681,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Aegislash_(Pok%C3%A9mon)",
@@ -12726,7 +12726,7 @@
       "steel",
       "ghost"
     ],
-    "name": "Aegislash ",
+    "name": "Aegislash",
     "formName": "Blade Forme",
     "number": 681,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Aegislash_(Pok%C3%A9mon)",
@@ -13209,7 +13209,7 @@
       "ghost",
       "grass"
     ],
-    "name": "Pumpkaboo ",
+    "name": "Pumpkaboo",
     "formName": "Small Size",
     "number": 710,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pumpkaboo_(Pok%C3%A9mon)",
@@ -13226,7 +13226,7 @@
       "ghost",
       "grass"
     ],
-    "name": "Pumpkaboo ",
+    "name": "Pumpkaboo",
     "formName": "Average Size",
     "number": 710,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pumpkaboo_(Pok%C3%A9mon)",
@@ -13243,7 +13243,7 @@
       "ghost",
       "grass"
     ],
-    "name": "Pumpkaboo ",
+    "name": "Pumpkaboo",
     "formName": "Large Size",
     "number": 710,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pumpkaboo_(Pok%C3%A9mon)",
@@ -13260,7 +13260,7 @@
       "ghost",
       "grass"
     ],
-    "name": "Pumpkaboo ",
+    "name": "Pumpkaboo",
     "formName": "Super Size",
     "number": 710,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pumpkaboo_(Pok%C3%A9mon)",
@@ -13277,7 +13277,7 @@
       "ghost",
       "grass"
     ],
-    "name": "Gourgeist ",
+    "name": "Gourgeist",
     "formName": "Small Size",
     "number": 711,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gourgeist_(Pok%C3%A9mon)",
@@ -13294,7 +13294,7 @@
       "ghost",
       "grass"
     ],
-    "name": "Gourgeist ",
+    "name": "Gourgeist",
     "formName": "Average Size",
     "number": 711,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gourgeist_(Pok%C3%A9mon)",
@@ -13311,7 +13311,7 @@
       "ghost",
       "grass"
     ],
-    "name": "Gourgeist ",
+    "name": "Gourgeist",
     "formName": "Large Size",
     "number": 711,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gourgeist_(Pok%C3%A9mon)",
@@ -13328,7 +13328,7 @@
       "ghost",
       "grass"
     ],
-    "name": "Gourgeist ",
+    "name": "Gourgeist",
     "formName": "Super Size",
     "number": 711,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gourgeist_(Pok%C3%A9mon)",
@@ -13444,7 +13444,7 @@
       "dragon",
       "ground"
     ],
-    "name": "Zygarde ",
+    "name": "Zygarde",
     "formName": "50% Forme",
     "number": 718,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zygarde_(Pok%C3%A9mon)",
@@ -13461,7 +13461,7 @@
       "dragon",
       "ground"
     ],
-    "name": "Zygarde ",
+    "name": "Zygarde",
     "formName": "10% Forme",
     "number": 718,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zygarde_(Pok%C3%A9mon)",
@@ -13478,7 +13478,7 @@
       "dragon",
       "ground"
     ],
-    "name": "Zygarde ",
+    "name": "Zygarde",
     "formName": "Complete Forme",
     "number": 718,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zygarde_(Pok%C3%A9mon)",
@@ -13512,7 +13512,7 @@
       "rock",
       "fairy"
     ],
-    "name": "Diancie ",
+    "name": "Diancie",
     "formName": "Mega Diancie",
     "number": 719,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Diancie_(Pok%C3%A9mon)",
@@ -13529,7 +13529,7 @@
       "psychic",
       "ghost"
     ],
-    "name": "Hoopa ",
+    "name": "Hoopa",
     "formName": "Hoopa Confined",
     "number": 720,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)",
@@ -13546,7 +13546,7 @@
       "psychic",
       "dark"
     ],
-    "name": "Hoopa ",
+    "name": "Hoopa",
     "formName": "Hoopa Unbound",
     "number": 720,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)",
@@ -13944,7 +13944,7 @@
     "types": [
       "rock"
     ],
-    "name": "Lycanroc ",
+    "name": "Lycanroc",
     "formName": "Midday Form",
     "number": 745,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Lycanroc_(Pok%C3%A9mon)",
@@ -13960,7 +13960,7 @@
     "types": [
       "rock"
     ],
-    "name": "Lycanroc ",
+    "name": "Lycanroc",
     "formName": "Midnight Form",
     "number": 745,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Lycanroc_(Pok%C3%A9mon)",
@@ -13976,7 +13976,7 @@
     "types": [
       "rock"
     ],
-    "name": "Lycanroc ",
+    "name": "Lycanroc",
     "formName": "Dusk Form",
     "number": 745,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Lycanroc_(Pok%C3%A9mon)",
@@ -13992,7 +13992,7 @@
     "types": [
       "water"
     ],
-    "name": "Wishiwashi ",
+    "name": "Wishiwashi",
     "formName": "Solo Form",
     "number": 746,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wishiwashi_(Pok%C3%A9mon)",
@@ -14008,7 +14008,7 @@
     "types": [
       "water"
     ],
-    "name": "Wishiwashi ",
+    "name": "Wishiwashi",
     "formName": "School Form",
     "number": 746,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wishiwashi_(Pok%C3%A9mon)",
@@ -14472,7 +14472,7 @@
       "rock",
       "flying"
     ],
-    "name": "Minior ",
+    "name": "Minior",
     "formName": "Meteor Form",
     "number": 774,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)",
@@ -14489,7 +14489,7 @@
       "rock",
       "flying"
     ],
-    "name": "Minior ",
+    "name": "Minior",
     "formName": "Core Form",
     "number": 774,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)",
@@ -14941,7 +14941,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Necrozma ",
+    "name": "Necrozma",
     "formName": "Dusk Mane",
     "number": 800,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Necrozma_(Pok%C3%A9mon)",
@@ -14957,7 +14957,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Necrozma ",
+    "name": "Necrozma",
     "formName": "Dawn Wings",
     "number": 800,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Necrozma_(Pok%C3%A9mon)",
@@ -14973,7 +14973,7 @@
     "types": [
       "psychic"
     ],
-    "name": "Necrozma ",
+    "name": "Necrozma",
     "formName": "Ultra Necrozma",
     "number": 800,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Necrozma_(Pok%C3%A9mon)",
@@ -15774,7 +15774,7 @@
       "electric",
       "poison"
     ],
-    "name": "Toxtricity ",
+    "name": "Toxtricity",
     "formName": "Amped Form",
     "number": 849,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Toxtricity_(Pok%C3%A9mon)",
@@ -15791,7 +15791,7 @@
       "electric",
       "poison"
     ],
-    "name": "Toxtricity ",
+    "name": "Toxtricity",
     "formName": "Low Key Form",
     "number": 849,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Toxtricity_(Pok%C3%A9mon)",
@@ -16218,7 +16218,7 @@
     "types": [
       "ice"
     ],
-    "name": "Eiscue ",
+    "name": "Eiscue",
     "formName": "Ice Face",
     "number": 875,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Eiscue_(Pok%C3%A9mon)",
@@ -16234,7 +16234,7 @@
     "types": [
       "ice"
     ],
-    "name": "Eiscue ",
+    "name": "Eiscue",
     "formName": "Noice Face",
     "number": 875,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Eiscue_(Pok%C3%A9mon)",
@@ -16251,7 +16251,7 @@
       "psychic",
       "normal"
     ],
-    "name": "Indeedee ",
+    "name": "Indeedee",
     "formName": "Male",
     "number": 876,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Indeedee_(Pok%C3%A9mon)",
@@ -16268,7 +16268,7 @@
       "psychic",
       "normal"
     ],
-    "name": "Indeedee ",
+    "name": "Indeedee",
     "formName": "Female",
     "number": 876,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Indeedee_(Pok%C3%A9mon)",
@@ -16469,7 +16469,7 @@
     "types": [
       "fairy"
     ],
-    "name": "Zacian ",
+    "name": "Zacian",
     "formName": "Hero of Many Battles",
     "number": 888,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zacian_(Pok%C3%A9mon)",
@@ -16486,7 +16486,7 @@
       "fairy",
       "steel"
     ],
-    "name": "Zacian ",
+    "name": "Zacian",
     "formName": "Crowned Sword",
     "number": 888,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zacian_(Pok%C3%A9mon)",
@@ -16502,7 +16502,7 @@
     "types": [
       "fighting"
     ],
-    "name": "Zamazenta ",
+    "name": "Zamazenta",
     "formName": "Hero of Many Battles",
     "number": 889,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zamazenta_(Pok%C3%A9mon)",
@@ -16519,7 +16519,7 @@
       "fighting",
       "steel"
     ],
-    "name": "Zamazenta ",
+    "name": "Zamazenta",
     "formName": "Crowned Shield",
     "number": 889,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zamazenta_(Pok%C3%A9mon)",
@@ -16553,7 +16553,7 @@
       "poison",
       "dragon"
     ],
-    "name": "Eternatus ",
+    "name": "Eternatus",
     "formName": "Eternamax",
     "number": 890,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Eternatus_(Pok%C3%A9mon)",
@@ -16586,7 +16586,7 @@
       "fighting",
       "dark"
     ],
-    "name": "Urshifu ",
+    "name": "Urshifu",
     "formName": "Single Strike Style",
     "number": 892,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pok%C3%A9mon)",
@@ -16603,7 +16603,7 @@
       "fighting",
       "water"
     ],
-    "name": "Urshifu ",
+    "name": "Urshifu",
     "formName": "Rapid Strike Style",
     "number": 892,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pok%C3%A9mon)",
