@@ -2,6 +2,7 @@
   "19": [
     {
       "name": "Rattata",
+      "formName": "",
       "number": 19,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rattata_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/4/4d/019MS.png",
@@ -13,7 +14,8 @@
       "speed": 72
     },
     {
-      "name": "Rattata (Alolan Form)",
+      "name": "Rattata ",
+      "formName": "Alolan Form",
       "number": 19,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rattata_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/2/28/019AMS.png",
@@ -28,6 +30,7 @@
   "20": [
     {
       "name": "Raticate",
+      "formName": "",
       "number": 20,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/4/4d/020MS.png",
@@ -39,7 +42,8 @@
       "speed": 97
     },
     {
-      "name": "Raticate (Alolan Form)",
+      "name": "Raticate ",
+      "formName": "Alolan Form",
       "number": 20,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/5/56/020AMS.png",
@@ -54,6 +58,7 @@
   "26": [
     {
       "name": "Raichu",
+      "formName": "",
       "number": 26,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raichu_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/d/da/026MS.png",
@@ -65,7 +70,8 @@
       "speed": 110
     },
     {
-      "name": "Raichu (Alolan Form)",
+      "name": "Raichu ",
+      "formName": "Alolan Form",
       "number": 26,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raichu_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/a/a4/026AMS.png",
@@ -80,6 +86,7 @@
   "27": [
     {
       "name": "Sandshrew",
+      "formName": "",
       "number": 27,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandshrew_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/c/c3/027MS.png",
@@ -91,7 +98,8 @@
       "speed": 40
     },
     {
-      "name": "Sandshrew (Alolan Form)",
+      "name": "Sandshrew ",
+      "formName": "Alolan Form",
       "number": 27,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandshrew_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/4/46/027AMS.png",
@@ -106,6 +114,7 @@
   "28": [
     {
       "name": "Sandslash",
+      "formName": "",
       "number": 28,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandslash_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/e/e0/028MS.png",
@@ -117,7 +126,8 @@
       "speed": 65
     },
     {
-      "name": "Sandslash (Alolan Form)",
+      "name": "Sandslash ",
+      "formName": "Alolan Form",
       "number": 28,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandslash_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/c/c1/028AMS.png",
@@ -132,6 +142,7 @@
   "37": [
     {
       "name": "Vulpix",
+      "formName": "",
       "number": 37,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Vulpix_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/85/037MS.png",
@@ -143,7 +154,8 @@
       "speed": 65
     },
     {
-      "name": "Vulpix (Alolan Form)",
+      "name": "Vulpix ",
+      "formName": "Alolan Form",
       "number": 37,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Vulpix_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/2/20/037AMS.png",
@@ -158,6 +170,7 @@
   "38": [
     {
       "name": "Ninetales",
+      "formName": "",
       "number": 38,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ninetales_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/1/10/038MS.png",
@@ -169,7 +182,8 @@
       "speed": 100
     },
     {
-      "name": "Ninetales (Alolan Form)",
+      "name": "Ninetales ",
+      "formName": "Alolan Form",
       "number": 38,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ninetales_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/1/13/038AMS.png",
@@ -184,6 +198,7 @@
   "50": [
     {
       "name": "Diglett",
+      "formName": "",
       "number": 50,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Diglett_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/8b/050MS.png",
@@ -195,7 +210,8 @@
       "speed": 95
     },
     {
-      "name": "Diglett (Alolan Form)",
+      "name": "Diglett ",
+      "formName": "Alolan Form",
       "number": 50,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Diglett_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/6/61/050AMS.png",
@@ -210,6 +226,7 @@
   "51": [
     {
       "name": "Dugtrio",
+      "formName": "",
       "number": 51,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Dugtrio_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/86/051MS.png",
@@ -221,7 +238,8 @@
       "speed": 120
     },
     {
-      "name": "Dugtrio (Alolan Form)",
+      "name": "Dugtrio ",
+      "formName": "Alolan Form",
       "number": 51,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Dugtrio_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/a/a6/051AMS.png",
@@ -236,6 +254,7 @@
   "52": [
     {
       "name": "Meowth",
+      "formName": "",
       "number": 52,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/5/50/052MS.png",
@@ -247,7 +266,8 @@
       "speed": 90
     },
     {
-      "name": "Meowth (Alolan Form)",
+      "name": "Meowth ",
+      "formName": "Alolan Form",
       "number": 52,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/b/b1/052AMS.png",
@@ -259,7 +279,8 @@
       "speed": 90
     },
     {
-      "name": "Meowth (Galarian Form)",
+      "name": "Meowth ",
+      "formName": "Galarian Form",
       "number": 52,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/3/3e/052GMS.png",
@@ -274,6 +295,7 @@
   "53": [
     {
       "name": "Persian",
+      "formName": "",
       "number": 53,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Persian_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/a/a7/053MS.png",
@@ -285,7 +307,8 @@
       "speed": 115
     },
     {
-      "name": "Persian (Alolan Form)",
+      "name": "Persian ",
+      "formName": "Alolan Form",
       "number": 53,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Persian_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/f/ff/053AMS.png",
@@ -300,6 +323,7 @@
   "74": [
     {
       "name": "Geodude",
+      "formName": "",
       "number": 74,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Geodude_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/0/04/074MS.png",
@@ -311,7 +335,8 @@
       "speed": 20
     },
     {
-      "name": "Geodude (Alolan Form)",
+      "name": "Geodude ",
+      "formName": "Alolan Form",
       "number": 74,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Geodude_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/d/d8/074AMS.png",
@@ -326,6 +351,7 @@
   "75": [
     {
       "name": "Graveler",
+      "formName": "",
       "number": 75,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Graveler_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/5/5c/075MS.png",
@@ -337,7 +363,8 @@
       "speed": 35
     },
     {
-      "name": "Graveler (Alolan Form)",
+      "name": "Graveler ",
+      "formName": "Alolan Form",
       "number": 75,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Graveler_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/4/41/075AMS.png",
@@ -352,6 +379,7 @@
   "76": [
     {
       "name": "Golem",
+      "formName": "",
       "number": 76,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Golem_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/e/e6/076XYMS.png",
@@ -363,7 +391,8 @@
       "speed": 45
     },
     {
-      "name": "Golem (Alolan Form)",
+      "name": "Golem ",
+      "formName": "Alolan Form",
       "number": 76,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Golem_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/80/076ASMMS.png",
@@ -378,6 +407,7 @@
   "77": [
     {
       "name": "Ponyta",
+      "formName": "",
       "number": 77,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ponyta_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/5/55/077MS.png",
@@ -389,7 +419,8 @@
       "speed": 90
     },
     {
-      "name": "Ponyta (Galarian Form)",
+      "name": "Ponyta ",
+      "formName": "Galarian Form",
       "number": 77,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ponyta_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/0/01/077GMS.png",
@@ -404,6 +435,7 @@
   "78": [
     {
       "name": "Rapidash",
+      "formName": "",
       "number": 78,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rapidash_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/e/ef/078XYMS.png",
@@ -415,7 +447,8 @@
       "speed": 105
     },
     {
-      "name": "Rapidash (Galarian Form)",
+      "name": "Rapidash ",
+      "formName": "Galarian Form",
       "number": 78,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rapidash_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/a/a8/078GMS.png",
@@ -430,6 +463,7 @@
   "79": [
     {
       "name": "Slowpoke",
+      "formName": "",
       "number": 79,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowpoke_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/6/6a/079MS.png",
@@ -441,7 +475,8 @@
       "speed": 15
     },
     {
-      "name": "Slowpoke (Galarian Form)",
+      "name": "Slowpoke ",
+      "formName": "Galarian Form",
       "number": 79,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowpoke_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/2/20/079GMS.png",
@@ -456,6 +491,7 @@
   "80": [
     {
       "name": "Slowbro",
+      "formName": "",
       "number": 80,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowbro_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/a/ae/080XYMS.png",
@@ -467,7 +503,8 @@
       "speed": 30
     },
     {
-      "name": "Slowbro (Mega Slowbro)",
+      "name": "Slowbro ",
+      "formName": "Mega Slowbro",
       "number": 80,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowbro_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/6/65/080MMS.png",
@@ -479,7 +516,8 @@
       "speed": 30
     },
     {
-      "name": "Slowbro (Galarian Form)",
+      "name": "Slowbro ",
+      "formName": "Galarian Form",
       "number": 80,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowbro_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/5/58/080GMS.png",
@@ -494,6 +532,7 @@
   "83": [
     {
       "name": "Farfetch'd",
+      "formName": "",
       "number": 83,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Farfetch%27d_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/5/57/083MS.png",
@@ -505,7 +544,8 @@
       "speed": 60
     },
     {
-      "name": "Farfetch'd (Galarian Form)",
+      "name": "Farfetch'd ",
+      "formName": "Galarian Form",
       "number": 83,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Farfetch%27d_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/6/63/083GMS.png",
@@ -520,6 +560,7 @@
   "88": [
     {
       "name": "Grimer",
+      "formName": "",
       "number": 88,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Grimer_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/5/50/088MS.png",
@@ -531,7 +572,8 @@
       "speed": 25
     },
     {
-      "name": "Grimer (Alolan Form)",
+      "name": "Grimer ",
+      "formName": "Alolan Form",
       "number": 88,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Grimer_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/9/9e/088AMS.png",
@@ -546,6 +588,7 @@
   "89": [
     {
       "name": "Muk",
+      "formName": "",
       "number": 89,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Muk_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/b/b4/089MS.png",
@@ -557,7 +600,8 @@
       "speed": 50
     },
     {
-      "name": "Muk (Alolan Form)",
+      "name": "Muk ",
+      "formName": "Alolan Form",
       "number": 89,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Muk_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/e/e4/089AMS.png",
@@ -572,6 +616,7 @@
   "103": [
     {
       "name": "Exeggutor",
+      "formName": "",
       "number": 103,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Exeggutor_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/0/06/103XYMS.png",
@@ -583,7 +628,8 @@
       "speed": 55
     },
     {
-      "name": "Exeggutor (Alolan Form)",
+      "name": "Exeggutor ",
+      "formName": "Alolan Form",
       "number": 103,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Exeggutor_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/b/bf/103ASMMS.png",
@@ -598,6 +644,7 @@
   "105": [
     {
       "name": "Marowak",
+      "formName": "",
       "number": 105,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Marowak_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/6/6f/105MS.png",
@@ -609,7 +656,8 @@
       "speed": 45
     },
     {
-      "name": "Marowak (Alolan Form)",
+      "name": "Marowak ",
+      "formName": "Alolan Form",
       "number": 105,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Marowak_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/e/e5/105AMS.png",
@@ -624,6 +672,7 @@
   "110": [
     {
       "name": "Weezing",
+      "formName": "",
       "number": 110,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Weezing_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/2/22/110MS.png",
@@ -635,7 +684,8 @@
       "speed": 60
     },
     {
-      "name": "Weezing (Galarian Form)",
+      "name": "Weezing ",
+      "formName": "Galarian Form",
       "number": 110,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Weezing_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/8a/110GMS.png",
@@ -650,6 +700,7 @@
   "122": [
     {
       "name": "Mr. Mime",
+      "formName": "",
       "number": 122,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mr._Mime_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/4/4b/122XYMS.png",
@@ -661,7 +712,8 @@
       "speed": 90
     },
     {
-      "name": "Mr. Mime (Galarian Form)",
+      "name": "Mr. Mime ",
+      "formName": "Galarian Form",
       "number": 122,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mr._Mime_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/7/77/122GMS.png",
@@ -676,6 +728,7 @@
   "144": [
     {
       "name": "Articuno",
+      "formName": "",
       "number": 144,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Articuno_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/f/fe/144XYMS.png",
@@ -690,6 +743,7 @@
   "145": [
     {
       "name": "Zapdos",
+      "formName": "",
       "number": 145,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zapdos_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/86/145XYMS.png",
@@ -704,6 +758,7 @@
   "146": [
     {
       "name": "Moltres",
+      "formName": "",
       "number": 146,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Moltres_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/9/90/146XYMS.png",
@@ -718,6 +773,7 @@
   "199": [
     {
       "name": "Slowking",
+      "formName": "",
       "number": 199,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowking_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/80/199MS.png",
@@ -732,6 +788,7 @@
   "222": [
     {
       "name": "Corsola",
+      "formName": "",
       "number": 222,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Corsola_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/9/97/222MS.png",
@@ -743,7 +800,8 @@
       "speed": 35
     },
     {
-      "name": "Corsola (Galarian Form)",
+      "name": "Corsola ",
+      "formName": "Galarian Form",
       "number": 222,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Corsola_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/2/27/222GMS.png",
@@ -758,6 +816,7 @@
   "263": [
     {
       "name": "Zigzagoon",
+      "formName": "",
       "number": 263,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zigzagoon_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/a/a5/263MS.png",
@@ -769,7 +828,8 @@
       "speed": 60
     },
     {
-      "name": "Zigzagoon (Galarian Form)",
+      "name": "Zigzagoon ",
+      "formName": "Galarian Form",
       "number": 263,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zigzagoon_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/0/08/263GMS.png",
@@ -784,6 +844,7 @@
   "264": [
     {
       "name": "Linoone",
+      "formName": "",
       "number": 264,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Linoone_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/7/71/264MS.png",
@@ -795,7 +856,8 @@
       "speed": 100
     },
     {
-      "name": "Linoone (Galarian Form)",
+      "name": "Linoone ",
+      "formName": "Galarian Form",
       "number": 264,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Linoone_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/3/3c/264GMS.png",
@@ -810,6 +872,7 @@
   "351": [
     {
       "name": "Castform",
+      "formName": "",
       "number": 351,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Castform_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/f/fc/351MS.png",
@@ -823,7 +886,8 @@
   ],
   "386": [
     {
-      "name": "Deoxys (Normal Forme)",
+      "name": "Deoxys ",
+      "formName": "Normal Forme",
       "number": 386,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/86/386MS.png",
@@ -835,7 +899,8 @@
       "speed": 150
     },
     {
-      "name": "Deoxys (Attack Forme)",
+      "name": "Deoxys ",
+      "formName": "Attack Forme",
       "number": 386,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/0/07/386AMS.png",
@@ -847,7 +912,8 @@
       "speed": 150
     },
     {
-      "name": "Deoxys (Defense Forme)",
+      "name": "Deoxys ",
+      "formName": "Defense Forme",
       "number": 386,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/2/20/386DMS.png",
@@ -859,7 +925,8 @@
       "speed": 90
     },
     {
-      "name": "Deoxys (Speed Forme)",
+      "name": "Deoxys ",
+      "formName": "Speed Forme",
       "number": 386,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Deoxys_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/f/fa/386SMS.png",
@@ -874,6 +941,7 @@
   "412": [
     {
       "name": "Burmy",
+      "formName": "",
       "number": 412,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Burmy_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/87/412MS.png",
@@ -887,7 +955,8 @@
   ],
   "413": [
     {
-      "name": "Wormadam (Plant Cloak)",
+      "name": "Wormadam ",
+      "formName": "Plant Cloak",
       "number": 413,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/f/fa/413MS.png",
@@ -899,7 +968,8 @@
       "speed": 36
     },
     {
-      "name": "Wormadam (Sandy Cloak)",
+      "name": "Wormadam ",
+      "formName": "Sandy Cloak",
       "number": 413,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/86/413GMS.png",
@@ -911,7 +981,8 @@
       "speed": 36
     },
     {
-      "name": "Wormadam (Trash Cloak)",
+      "name": "Wormadam ",
+      "formName": "Trash Cloak",
       "number": 413,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Wormadam_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/8e/413SMS.png",
@@ -926,6 +997,7 @@
   "422": [
     {
       "name": "Shellos",
+      "formName": "",
       "number": 422,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shellos_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/f/f1/422MS.png",
@@ -940,6 +1012,7 @@
   "423": [
     {
       "name": "Gastrodon",
+      "formName": "",
       "number": 423,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gastrodon_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/4/44/423MS.png",
@@ -954,6 +1027,7 @@
   "479": [
     {
       "name": "Rotom",
+      "formName": "",
       "number": 479,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/1/14/479MS.png",
@@ -965,7 +1039,8 @@
       "speed": 91
     },
     {
-      "name": "Rotom (Heat Rotom)",
+      "name": "Rotom ",
+      "formName": "Heat Rotom",
       "number": 479,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/87/479OMS.png",
@@ -977,7 +1052,8 @@
       "speed": 86
     },
     {
-      "name": "Rotom (Wash Rotom)",
+      "name": "Rotom ",
+      "formName": "Wash Rotom",
       "number": 479,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/5/54/479WMS.png",
@@ -989,7 +1065,8 @@
       "speed": 86
     },
     {
-      "name": "Rotom (Frost Rotom)",
+      "name": "Rotom ",
+      "formName": "Frost Rotom",
       "number": 479,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/d/d8/479RMS.png",
@@ -1001,7 +1078,8 @@
       "speed": 86
     },
     {
-      "name": "Rotom (Fan Rotom)",
+      "name": "Rotom ",
+      "formName": "Fan Rotom",
       "number": 479,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/3/3a/479FMS.png",
@@ -1013,7 +1091,8 @@
       "speed": 86
     },
     {
-      "name": "Rotom (Mow Rotom)",
+      "name": "Rotom ",
+      "formName": "Mow Rotom",
       "number": 479,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rotom_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/d/dc/479LMS.png",
@@ -1027,7 +1106,8 @@
   ],
   "487": [
     {
-      "name": "Giratina (Altered Forme)",
+      "name": "Giratina ",
+      "formName": "Altered Forme",
       "number": 487,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Giratina_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/e/e8/487MS.png",
@@ -1039,7 +1119,8 @@
       "speed": 90
     },
     {
-      "name": "Giratina (Origin Forme)",
+      "name": "Giratina ",
+      "formName": "Origin Forme",
       "number": 487,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Giratina_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/2/2f/487OMS.png",
@@ -1053,7 +1134,8 @@
   ],
   "492": [
     {
-      "name": "Shaymin (Land Forme)",
+      "name": "Shaymin ",
+      "formName": "Land Forme",
       "number": 492,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shaymin_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/a/a6/492MS.png",
@@ -1065,7 +1147,8 @@
       "speed": 100
     },
     {
-      "name": "Shaymin (Sky Forme)",
+      "name": "Shaymin ",
+      "formName": "Sky Forme",
       "number": 492,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Shaymin_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/6/68/492SMS.png",
@@ -1080,6 +1163,7 @@
   "521": [
     {
       "name": "Unfezant",
+      "formName": "",
       "number": 521,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Unfezant_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/a/a9/521MS.png",
@@ -1094,6 +1178,7 @@
   "550": [
     {
       "name": "Basculin",
+      "formName": "",
       "number": 550,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Basculin_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/a/a7/550MS.png",
@@ -1108,6 +1193,7 @@
   "554": [
     {
       "name": "Darumaka",
+      "formName": "",
       "number": 554,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darumaka_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/8/8f/554MS.png",
@@ -1119,7 +1205,8 @@
       "speed": 50
     },
     {
-      "name": "Darumaka (Galarian Form)",
+      "name": "Darumaka ",
+      "formName": "Galarian Form",
       "number": 554,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darumaka_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/f/f8/554GMS.png",
@@ -1133,7 +1220,8 @@
   ],
   "555": [
     {
-      "name": "Darmanitan (Standard Mode)",
+      "name": "Darmanitan ",
+      "formName": "Standard Mode",
       "number": 555,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/5/52/555MS.png",
@@ -1145,7 +1233,8 @@
       "speed": 95
     },
     {
-      "name": "Darmanitan (Zen Mode)",
+      "name": "Darmanitan ",
+      "formName": "Zen Mode",
       "number": 555,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/6/66/555ZMS.png",
@@ -1157,7 +1246,8 @@
       "speed": 55
     },
     {
-      "name": "Darmanitan (Galarian Form)",
+      "name": "Darmanitan ",
+      "formName": "Galarian Form",
       "number": 555,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/4/4c/555GMS.png",
@@ -1169,7 +1259,8 @@
       "speed": 95
     },
     {
-      "name": "Darmanitan (Galarian Form, Zen Mode)",
+      "name": "Darmanitan ",
+      "formName": "Galarian Form, Zen Mode",
       "number": 555,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Darmanitan_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/b/ba/555GZMS.png",
@@ -1184,6 +1275,7 @@
   "562": [
     {
       "name": "Yamask",
+      "formName": "",
       "number": 562,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Yamask_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/a/a9/562MS.png",
@@ -1195,7 +1287,8 @@
       "speed": 30
     },
     {
-      "name": "Yamask (Galarian Form)",
+      "name": "Yamask ",
+      "formName": "Galarian Form",
       "number": 562,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Yamask_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/0/09/562GMS.png",
@@ -1210,6 +1303,7 @@
   "592": [
     {
       "name": "Frillish",
+      "formName": "",
       "number": 592,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Frillish_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/0/09/592MS.png",
@@ -1224,6 +1318,7 @@
   "593": [
     {
       "name": "Jellicent",
+      "formName": "",
       "number": 593,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Jellicent_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/7/71/593MS.png",
@@ -1238,6 +1333,7 @@
   "618": [
     {
       "name": "Stunfisk",
+      "formName": "",
       "number": 618,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Stunfisk_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/3/31/618MS.png",
@@ -1249,7 +1345,8 @@
       "speed": 32
     },
     {
-      "name": "Stunfisk (Galarian Form)",
+      "name": "Stunfisk ",
+      "formName": "Galarian Form",
       "number": 618,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Stunfisk_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/2/2a/618GMS.png",
@@ -1263,7 +1360,8 @@
   ],
   "648": [
     {
-      "name": "Meloetta (Aria Forme)",
+      "name": "Meloetta ",
+      "formName": "Aria Forme",
       "number": 648,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meloetta_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/1/1f/648MS.png",
@@ -1275,7 +1373,8 @@
       "speed": 90
     },
     {
-      "name": "Meloetta (Pirouette Forme)",
+      "name": "Meloetta ",
+      "formName": "Pirouette Forme",
       "number": 648,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meloetta_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/9/93/648PMS.png",
@@ -1289,7 +1388,8 @@
   ],
   "720": [
     {
-      "name": "Hoopa (Hoopa Confined)",
+      "name": "Hoopa ",
+      "formName": "Hoopa Confined",
       "number": 720,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/d/d0/720MS.png",
@@ -1301,7 +1401,8 @@
       "speed": 70
     },
     {
-      "name": "Hoopa (Hoopa Unbound)",
+      "name": "Hoopa ",
+      "formName": "Hoopa Unbound",
       "number": 720,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Hoopa_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/6/64/720UMS.png",
@@ -1316,6 +1417,7 @@
   "741": [
     {
       "name": "Oricorio",
+      "formName": "",
       "number": 741,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Oricorio_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/7/72/741MS.png",
@@ -1329,7 +1431,8 @@
   ],
   "888": [
     {
-      "name": "Zacian (Hero of Many Battles)",
+      "name": "Zacian ",
+      "formName": "Hero of Many Battles",
       "number": 888,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zacian_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/d/d5/888MS.png",
@@ -1341,7 +1444,8 @@
       "speed": 138
     },
     {
-      "name": "Zacian (Crowned Sword)",
+      "name": "Zacian ",
+      "formName": "Crowned Sword",
       "number": 888,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zacian_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/d/d0/888CMS.png",
@@ -1355,7 +1459,8 @@
   ],
   "889": [
     {
-      "name": "Zamazenta (Hero of Many Battles)",
+      "name": "Zamazenta ",
+      "formName": "Hero of Many Battles",
       "number": 889,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zamazenta_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/b/be/889MS.png",
@@ -1367,7 +1472,8 @@
       "speed": 138
     },
     {
-      "name": "Zamazenta (Crowned Shield)",
+      "name": "Zamazenta ",
+      "formName": "Crowned Shield",
       "number": 889,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zamazenta_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/1/14/889CMS.png",
@@ -1381,7 +1487,8 @@
   ],
   "892": [
     {
-      "name": "Urshifu (Single Strike Style)",
+      "name": "Urshifu ",
+      "formName": "Single Strike Style",
       "number": 892,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/4/41/892MS.png",
@@ -1393,7 +1500,8 @@
       "speed": 97
     },
     {
-      "name": "Urshifu (Rapid Strike Style)",
+      "name": "Urshifu ",
+      "formName": "Rapid Strike Style",
       "number": 892,
       "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pok%C3%A9mon)",
       "imageURL": "https://cdn.bulbagarden.net/upload/4/41/892MS.png",

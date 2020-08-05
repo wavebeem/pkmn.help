@@ -30,17 +30,11 @@ function text(elem: Element): string {
   return (elem.textContent || "").trim();
 }
 
-interface Download {
-  image: string;
-  id: string;
-}
-
 interface MonsterStats {
   bulbapediaURL: string;
   imageURL: string;
   name: string;
-  // TODO: Add form name as a separate field
-  // formName: string;
+  formName: string;
   number: number;
   hp: number;
   attack: number;
@@ -89,7 +83,8 @@ async function fillStats(): Promise<void> {
     if (Number.isNaN(number)) {
       continue;
     }
-    const name = columns[2];
+    const [, name = "", formName = ""] =
+      columns[2].match(/([^()]+)\s*(?:[(]([^()]+)[)])?/) || [];
     const imageURL = normalizeURL(
       elements[1]?.querySelector("img")?.src,
       statsURL
@@ -103,6 +98,7 @@ async function fillStats(): Promise<void> {
       .map(Number);
     stats.push({
       name,
+      formName,
       number,
       bulbapediaURL,
       imageURL,
@@ -232,7 +228,12 @@ async function main(): Promise<void> {
   saveJSON("../build/data-stats.json", stats);
   saveJSON("../build/data-dex.json", dex);
   combineData();
-  saveJSON("../build/data-pkmn.json", monsters);
+  saveJSON(
+    "../src/data-pkmn.json",
+    monsters.map((mon) => {
+      return { ...mon, imageURL: undefined };
+    })
+  );
   await downloadImages();
 }
 
