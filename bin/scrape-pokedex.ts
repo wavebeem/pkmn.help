@@ -190,7 +190,9 @@ function combineData() {
         i++;
       }
     } else {
-      console.log(`Skipping #${num} (dex=${da.length} stats=${sa.length})`);
+      console.log(
+        `Skipping #${num} ${da[0].name} (dex=${da.length} stats=${sa.length})`
+      );
     }
     delete dexByNumber[num];
     delete statsByNumber[num];
