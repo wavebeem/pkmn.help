@@ -4,7 +4,7 @@ const year = new Date().getFullYear();
 
 export function InfoScreen() {
   return (
-    <div className="pa3 center mw7">
+    <div className="pa3 center mw7 lh-copy">
       <h2 className="lh-title f5">August 2020</h2>
       <ul className="lh-copy mt1 ph3">
         <li>Added base stats to the Pokédex</li>
@@ -27,19 +27,35 @@ export function InfoScreen() {
         <li>Added Pokédex images</li>
         <li>Added search by number and better search algorithm</li>
       </ul>
-      <h2 className="lh-title f5">Source Code</h2>
+      <h2 className="lh-title f5">Source Code and Issues</h2>
       <p>
+        Check out the{" "}
         <a
           href="https://github.com/wavebeem/pkmn.help"
           className="underline dark-blue hover-blue OutlineFocus"
         >
           pkmn.help
         </a>{" "}
-        repository on GitHub.
+        repository on GitHub. Issues and feature requests are best reported
+        there. Otherwise you can email me{" "}
+        <a
+          className="underline dark-blue hover-blue OutlineFocus"
+          href="mailto:brian@mockbrian.com"
+        >
+          brian@mockbrian.com
+        </a>
+        .
+      </p>
+      <h2 className="lh-title f5">Giving Back</h2>
+      <p>
+        I have spent countless hours polishing this site to perfection. I will
+        never run ads or steal your personal data. If you appreciate what
+        I&apos;ve made, please consider donating to support black lives and
+        trans rights.
       </p>
       <h2 className="lh-title f5">Legal Info</h2>
       <p>
-        Pokémon &copy; 2002-{year} Pokémon. &copy; 1995-{year}{" "}
+        Pokémon &copy; 2002&ndash;{year} Pokémon. &copy; 1995&ndash;{year}{" "}
         Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &reg; and Pokémon
         character names are trademarks of Nintendo.
       </p>
@@ -65,7 +81,7 @@ export function InfoScreen() {
         pages.
       </p>
       <p>
-        pkmn.help &copy; 2013-{year}{" "}
+        pkmn.help &copy; 2013&ndash;{year}{" "}
         <a
           href="https://www.mockbrian.com"
           className="underline dark-blue hover-blue OutlineFocus"
