@@ -112,6 +112,7 @@ button {
   grid-gap: 0.25rem;
   grid-template-columns: max-content max-content 1fr;
   align-items: center;
+  height: min-content;
 }
 
 .Monster {

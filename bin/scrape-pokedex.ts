@@ -166,16 +166,19 @@ function combineData() {
   for (const num of Object.keys(dexByNumber)) {
     const da = dexByNumber[num];
     const sa = statsByNumber[num];
-    if (da.length === 1 && sa.length === 1) {
-      const [d] = da;
-      const [s] = sa;
-      monsters.push({
-        id: `pkmn-${num}`,
-        types: d.types,
-        ...s,
-      });
-      delete dexByNumber[num];
-      delete statsByNumber[num];
+    // I'm going to assume that if the stats page and dex page have the same
+    // number of entries for a particular Pokémon number, they are for the same
+    // forms in the same order. I hope I'm not wrong on this one!
+    if (da.length === sa.length) {
+      for (let i = 0; i < da.length; i++) {
+        const d = da[i];
+        const s = sa[i];
+        monsters.push({
+          id: `pkmn-${suffix(Number(num), i)}`,
+          types: d.types,
+          ...s,
+        });
+      }
     } else if (da.length === 1) {
       const [d] = da;
       let i = 0;
@@ -187,9 +190,9 @@ function combineData() {
         });
         i++;
       }
-      delete dexByNumber[num];
-      delete statsByNumber[num];
     }
+    delete dexByNumber[num];
+    delete statsByNumber[num];
   }
   saveJSON("../build/data-dexByNumber.json", dexByNumber);
   saveJSON("../build/data-statsByNumber.json", statsByNumber);
