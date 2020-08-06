@@ -18,6 +18,7 @@ export function App() {
   const [type1, updateType1] = React.useState(Type.NORMAL);
   const [type2, updateType2] = React.useState(Type.NONE);
   const [currentPage, updateCurrentPage] = React.useState(0);
+  const [search, updateSearch] = React.useState("");
 
   return (
     <div className="sans-serif bg-near-white near-black min-vh-100 flex flex-column">
@@ -48,6 +49,8 @@ export function App() {
               }
             >
               <Dex
+                search={search}
+                updateSearch={updateSearch}
                 updateCurrentPage={updateCurrentPage}
                 currentPage={currentPage}
                 updateType0={updateType0}

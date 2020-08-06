@@ -109,6 +109,8 @@ function Monster(props: MonsterProps) {
 }
 
 interface DexProps {
+  search: string;
+  updateSearch(newSearch: string): void;
   updateCurrentPage(page: number): void;
   currentPage: number;
   updateType0(type: Type): void;
@@ -118,9 +120,7 @@ interface DexProps {
 }
 
 export function Dex(props: DexProps) {
-  const { updateCurrentPage, currentPage } = props;
-
-  const [search, updateSearch] = React.useState("");
+  const { search, updateSearch, updateCurrentPage, currentPage } = props;
 
   React.useEffect(() => {
     updateCurrentPage(0);

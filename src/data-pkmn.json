@@ -130,7 +130,7 @@
     "id": "pkmn-6b",
     "types": [
       "fire",
-      "flying"
+      "dragon"
     ]
   },
   {
@@ -2718,7 +2718,8 @@
     "speed": 105,
     "id": "pkmn-127b",
     "types": [
-      "bug"
+      "bug",
+      "flying"
     ]
   },
   {
@@ -2784,7 +2785,7 @@
     "id": "pkmn-130b",
     "types": [
       "water",
-      "flying"
+      "dark"
     ]
   },
   {
@@ -3214,7 +3215,8 @@
     "speed": 130,
     "id": "pkmn-150b",
     "types": [
-      "psychic"
+      "psychic",
+      "fighting"
     ]
   },
   {
@@ -3755,7 +3757,8 @@
     "speed": 45,
     "id": "pkmn-181b",
     "types": [
-      "electric"
+      "electric",
+      "dragon"
     ]
   },
   {
@@ -5092,7 +5095,8 @@
     "speed": 145,
     "id": "pkmn-254b",
     "types": [
-      "grass"
+      "grass",
+      "dragon"
     ]
   },
   {
@@ -6089,8 +6093,7 @@
     "speed": 50,
     "id": "pkmn-306b",
     "types": [
-      "steel",
-      "rock"
+      "steel"
     ]
   },
   {
@@ -6634,7 +6637,7 @@
     "id": "pkmn-334b",
     "types": [
       "dragon",
-      "flying"
+      "fairy"
     ]
   },
   {
@@ -8557,7 +8560,8 @@
     "speed": 135,
     "id": "pkmn-428b",
     "types": [
-      "normal"
+      "normal",
+      "fighting"
     ]
   },
   {
@@ -10468,7 +10472,8 @@
     "speed": 50,
     "id": "pkmn-531b",
     "types": [
-      "normal"
+      "normal",
+      "fairy"
     ]
   },
   {

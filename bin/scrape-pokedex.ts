@@ -8,6 +8,29 @@ import groupBy from "lodash.groupby";
 
 const DEX_SLOWBRO = 80;
 
+const typeCorrections: Record<string, string[] | undefined> = {
+  // Mega Charizard X
+  "pkmn-6b": ["fire", "dragon"],
+  // Mega Pinsir
+  "pkmn-127b": ["bug", "flying"],
+  // Mega Gyarados
+  "pkmn-130b": ["water", "dark"],
+  // Mega Mewtwo X
+  "pkmn-150b": ["psychic", "fighting"],
+  // Mega Ampharos
+  "pkmn-181b": ["electric", "dragon"],
+  // Mega Sceptile
+  "pkmn-254b": ["grass", "dragon"],
+  // Mega Aggron
+  "pkmn-306b": ["steel"],
+  // Mega Altaria
+  "pkmn-334b": ["dragon", "fairy"],
+  // Mega Lopunny
+  "pkmn-428b": ["normal", "fighting"],
+  // Mega Audino
+  "pkmn-531b": ["normal", "fairy"],
+};
+
 const mainURL =
   "https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number";
 
@@ -209,21 +232,18 @@ function combineData() {
         ...sa[0],
         id: `pkmn-${suffix(Number(num), 0)}`,
         types: da[0].types,
-        imageURL: da[0].imageURL,
       });
       // Mega Slowbro
       monsters.push({
         ...sa[1],
         id: `pkmn-${suffix(Number(num), 1)}`,
         types: da[0].types,
-        imageURL: da[0].imageURL,
       });
       // Galarian Slowbro
       monsters.push({
         ...sa[2],
         id: `pkmn-${suffix(Number(num), 2)}`,
         types: da[1].types,
-        imageURL: da[1].imageURL,
       });
     } else {
       console.error(
@@ -273,12 +293,22 @@ async function downloadImages() {
   }
 }
 
+function addDataCorrections() {
+  for (const mon of monsters) {
+    const correction = typeCorrections[mon.id];
+    if (correction) {
+      mon.types = correction;
+    }
+  }
+}
+
 async function main(): Promise<void> {
   await fillDex();
   await fillStats();
   // saveJSON("../build/data-stats.json", stats);
   // saveJSON("../build/data-dex.json", dex);
   combineData();
+  addDataCorrections();
   saveJSON(
     "../src/data-pkmn.json",
     monsters.map((mon) => {
