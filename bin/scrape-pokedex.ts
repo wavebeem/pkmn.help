@@ -233,8 +233,8 @@ function combineData() {
     delete dexByNumber[num];
     delete statsByNumber[num];
   }
-  saveJSON("../build/data-dexByNumber.json", dexByNumber);
-  saveJSON("../build/data-statsByNumber.json", statsByNumber);
+  // saveJSON("../build/data-dexByNumber.json", dexByNumber);
+  // saveJSON("../build/data-statsByNumber.json", statsByNumber);
 }
 
 function saveJSON(filename: string, data: any): void {
@@ -276,8 +276,8 @@ async function downloadImages() {
 async function main(): Promise<void> {
   await fillDex();
   await fillStats();
-  saveJSON("../build/data-stats.json", stats);
-  saveJSON("../build/data-dex.json", dex);
+  // saveJSON("../build/data-stats.json", stats);
+  // saveJSON("../build/data-dex.json", dex);
   combineData();
   saveJSON(
     "../src/data-pkmn.json",
