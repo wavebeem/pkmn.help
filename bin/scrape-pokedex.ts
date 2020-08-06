@@ -252,14 +252,23 @@ async function downloadImages() {
       console.log(`${mon.id} => ${mon.imageURL}`);
       const buffer = await fetch(mon.imageURL).then((r) => r.buffer());
       fs.writeFileSync(filename, buffer);
-      execSync(`\
+      execSync(
+        `\
         mogrify \
+          -strip \
           -background none \
           -gravity center \
           -extent 68x68 \
           -scale 272x272 \
-          '${filename}' \
-      `);
+          "$filename" \
+      `,
+        {
+          env: {
+            ...process.env,
+            filename,
+          },
+        }
+      );
     }
   }
 }
