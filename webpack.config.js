@@ -1,6 +1,7 @@
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
 // Hack to put the NODE_ENV to production when we ask for minified code.
 const isProd = process.argv.indexOf("-p") >= 0;
@@ -54,5 +55,6 @@ module.exports = {
       template: path.join(__dirname, "template/index.html"),
       hash: true,
     }),
+    new BundleAnalyzerPlugin(),
   ],
 };

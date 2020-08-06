@@ -17,12 +17,7 @@ export function App() {
   const [type0, updateType0] = React.useState(Type.NORMAL);
   const [type1, updateType1] = React.useState(Type.NORMAL);
   const [type2, updateType2] = React.useState(Type.NONE);
-  const [search, updateSearch] = React.useState("");
   const [currentPage, updateCurrentPage] = React.useState(0);
-
-  React.useEffect(() => {
-    updateCurrentPage(0);
-  }, [search]);
 
   return (
     <div className="sans-serif bg-near-white near-black min-vh-100 flex flex-column">

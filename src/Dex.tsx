@@ -1,7 +1,6 @@
 import * as React from "react";
 import classnames from "classnames";
 import matchSorter from "match-sorter";
-import _ from "lodash";
 
 import { AllPokemon } from "./pkmn";
 import { Paginator } from "./Paginator";
@@ -121,7 +120,14 @@ interface DexProps {
 }
 
 export function Dex(props: DexProps) {
-  const { search, updateSearch, updateCurrentPage, currentPage } = props;
+  const { updateCurrentPage, currentPage } = props;
+
+  const [search, updateSearch] = React.useState("");
+
+  React.useEffect(() => {
+    updateCurrentPage(0);
+  }, [search]);
+
   const pkmn = React.useMemo(() => {
     const s = search.trim();
     if (/^[0-9]+$/.test(s)) {
@@ -130,6 +136,7 @@ export function Dex(props: DexProps) {
     }
     return matchSorter(AllPokemon, s, { keys: ["name", "number"] });
   }, [search]);
+
   return (
     <div className="ph3 mt3 center mw7">
       <div className="ph1" />
