@@ -6,6 +6,8 @@ import { execSync } from "child_process";
 import { URL } from "url";
 import groupBy from "lodash.groupby";
 
+const DEX_SLOWBRO = 80;
+
 const mainURL =
   "https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number";
 
@@ -201,8 +203,30 @@ function combineData() {
         });
         i++;
       }
+    } else if (Number(num) === DEX_SLOWBRO) {
+      // Regular Slowbro
+      monsters.push({
+        ...sa[0],
+        id: `pkmn-${suffix(Number(num), 0)}`,
+        types: da[0].types,
+        imageURL: da[0].imageURL,
+      });
+      // Mega Slowbro
+      monsters.push({
+        ...sa[1],
+        id: `pkmn-${suffix(Number(num), 1)}`,
+        types: da[0].types,
+        imageURL: da[0].imageURL,
+      });
+      // Galarian Slowbro
+      monsters.push({
+        ...sa[2],
+        id: `pkmn-${suffix(Number(num), 2)}`,
+        types: da[1].types,
+        imageURL: da[1].imageURL,
+      });
     } else {
-      console.log(
+      console.error(
         `Skipping #${num} ${da[0].name} (dex=${da.length} stats=${sa.length})`
       );
     }

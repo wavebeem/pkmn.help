@@ -1733,6 +1733,57 @@
     ]
   },
   {
+    "name": "Slowbro",
+    "formName": "",
+    "number": 80,
+    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowbro_(Pok%C3%A9mon)",
+    "hp": 95,
+    "attack": 75,
+    "defense": 110,
+    "spAttack": 100,
+    "spDefense": 80,
+    "speed": 30,
+    "id": "pkmn-80",
+    "types": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Slowbro",
+    "formName": "Mega Slowbro",
+    "number": 80,
+    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowbro_(Pok%C3%A9mon)",
+    "hp": 95,
+    "attack": 75,
+    "defense": 180,
+    "spAttack": 130,
+    "spDefense": 80,
+    "speed": 30,
+    "id": "pkmn-80b",
+    "types": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "name": "Slowbro",
+    "formName": "Galarian Form",
+    "number": 80,
+    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowbro_(Pok%C3%A9mon)",
+    "hp": 95,
+    "attack": 100,
+    "defense": 95,
+    "spAttack": 100,
+    "spDefense": 70,
+    "speed": 30,
+    "id": "pkmn-80c",
+    "types": [
+      "poison",
+      "psychic"
+    ]
+  },
+  {
     "name": "Magnemite",
     "formName": "",
     "number": 81,
