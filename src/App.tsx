@@ -49,9 +49,7 @@ export function App() {
             >
               <Dex
                 updateCurrentPage={updateCurrentPage}
-                updateSearch={updateSearch}
                 currentPage={currentPage}
-                search={search}
                 updateType0={updateType0}
                 updateType1={updateType1}
                 updateType2={updateType2}

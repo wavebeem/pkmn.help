@@ -109,10 +109,8 @@ function Monster(props: MonsterProps) {
 }
 
 interface DexProps {
-  updateSearch(search: string): void;
   updateCurrentPage(page: number): void;
   currentPage: number;
-  search: string;
   updateType0(type: Type): void;
   updateType1(type: Type): void;
   updateType2(type: Type): void;
