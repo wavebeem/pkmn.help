@@ -173,9 +173,9 @@ function combineData() {
         const d = da[i];
         const s = sa[i];
         monsters.push({
+          ...s,
           id: `pkmn-${suffix(Number(num), i)}`,
           types: d.types,
-          ...s,
         });
       }
     } else if (da.length === 1) {
@@ -183,9 +183,21 @@ function combineData() {
       let i = 0;
       for (const s of sa) {
         monsters.push({
+          ...s,
           id: `pkmn-${suffix(Number(num), i)}`,
           types: d.types,
+        });
+        i++;
+      }
+    } else if (sa.length === 1) {
+      const [s] = sa;
+      let i = 0;
+      for (const d of da) {
+        monsters.push({
           ...s,
+          id: `pkmn-${suffix(Number(num), i)}`,
+          types: d.types,
+          imageURL: d.imageURL,
         });
         i++;
       }
@@ -212,7 +224,7 @@ function saveJSON(filename: string, data: any): void {
 async function downloadImages() {
   for (const mon of monsters) {
     const filename = path.resolve(__dirname, `../img/${mon.id}.png`);
-    if (!fs.existsSync(filename)) {
+    if (!fs.existsSync(filename) && mon.imageURL) {
       console.log(`${mon.id} => ${mon.imageURL}`);
       const buffer = await fetch(mon.imageURL).then((r) => r.buffer());
       fs.writeFileSync(filename, buffer);
