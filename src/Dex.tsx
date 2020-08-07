@@ -49,8 +49,8 @@ function Monster(props: MonsterProps) {
     <div
       className={classnames(
         "near-black pv3",
-        "flex-ns bb b--black-10 InnerDashedFocus",
-        "Monster",
+        "flex-ns items-center bb b--black-10",
+        "Monster InnerDashedFocus",
         props.index === 0 ? "bt" : ""
       )}
     >
@@ -72,7 +72,7 @@ function Monster(props: MonsterProps) {
           <a
             className="underline dark-blue hover-blue OutlineFocus"
             href={`#${props.pokemon.id}`}
-            onClick={(event) => {
+            onClick={event => {
               event.preventDefault();
               const [type1, type2] = props.pokemon.types;
               props.updateType1(type1);
@@ -130,7 +130,7 @@ export function Dex(props: DexProps) {
     const s = search.trim();
     if (/^[0-9]+$/.test(s)) {
       const number = Number(s);
-      return AllPokemon.filter((p) => p.number === number);
+      return AllPokemon.filter(p => p.number === number);
     }
     return matchSorter(AllPokemon, s, { keys: ["name", "number"] });
   }, [search]);
@@ -141,13 +141,13 @@ export function Dex(props: DexProps) {
       <Search search={search} updateSearch={updateSearch} />
       <Paginator
         currentPage={currentPage}
-        updatePage={(page) => updateCurrentPage(page)}
+        updatePage={page => updateCurrentPage(page)}
         updatePageNext={() => updateCurrentPage(currentPage + 1)}
         updatePagePrev={() => updateCurrentPage(currentPage - 1)}
         pageSize={PAGE_SIZE}
         emptyState={<p className="silver f4 b tc m0">No Pokémon found</p>}
         items={pkmn}
-        renderPage={(page) =>
+        renderPage={page =>
           page.map((pokemon, index) => (
             <Monster
               key={pokemon.id}
