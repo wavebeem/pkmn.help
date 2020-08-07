@@ -15,7 +15,7 @@ export function Search(props: SearchProps) {
   const iconSize = 24;
   const inputHeight = 36;
   return (
-    <div className="relative mv3 mh2">
+    <div className="relative mv3">
       <img
         src={imageSearchURL}
         width={iconSize}
@@ -60,7 +60,7 @@ export function Search(props: SearchProps) {
             ref.current.focus();
           }
         }}
-        className={classnames("o-50 absolute pointer", { dn: search === "" })}
+        className={classnames("o-50 absolute", { dn: search === "" })}
         style={{ right: 6, top: 6 }}
       />
     </div>

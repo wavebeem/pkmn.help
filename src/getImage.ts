@@ -1,6 +1,6 @@
-const req = (() => {
+const req: (id: string) => { default: string } = (() => {
   if (process.env.NODE_ENV !== "test") {
-    return (require as any).context("../img", false, /\.png$/);
+    return require.context("../img", false, /\.png$/);
   }
   return (x: any) => ({ default: x });
 })();
@@ -10,7 +10,6 @@ export function getImage(id: string): string | undefined {
   try {
     return req(file).default;
   } catch (err) {
-    console.error(err);
-    return undefined;
+    return req("./not-found.png").default;
   }
 }
