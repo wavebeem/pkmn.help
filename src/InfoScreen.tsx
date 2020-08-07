@@ -54,6 +54,10 @@ export function InfoScreen() {
         I&apos;ve made, please consider donating to support black lives and
         trans rights.
       </p>
+      <h2 className="lh-title f5">Special Thanks</h2>
+      <ul className="lh-copy mt1 ph3">
+        <li>Jansjo (testing, research)</li>
+      </ul>
       <h2 className="lh-title f5">Legal Info</h2>
       <p>
         Pokémon &copy; 2002&ndash;{year} Pokémon. &copy; 1995&ndash;{year}{" "}
