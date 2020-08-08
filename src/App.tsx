@@ -20,6 +20,10 @@ export function App() {
   const [currentPage, updateCurrentPage] = React.useState(0);
   const [search, updateSearch] = React.useState("");
 
+  React.useEffect(() => {
+    updateCurrentPage(0);
+  }, [search]);
+
   return (
     <div className="sans-serif bg-near-white near-black min-vh-100 flex flex-column">
       <div className="flex-auto">
