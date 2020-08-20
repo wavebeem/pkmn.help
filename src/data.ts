@@ -130,10 +130,16 @@ export class GroupedMatchups {
   }
 }
 
-export function offensiveMatchups(type: Type) {
+export function offensiveMatchups(offenseTypes: Type[]) {
   const matchups = types.map((t) => {
-    const eff = matchupFor(t, Type.NONE, type);
-    return new Matchup(t, eff);
+    if (offenseTypes.length === 0) {
+      return new Matchup(t, Effectiveness.REGULAR);
+    }
+    const effs = offenseTypes.map((offense) => {
+      return matchupFor(t, Type.NONE, offense);
+    });
+    const max = Math.max(...effs);
+    return new Matchup(t, max);
   });
   return new GroupedMatchups(matchups);
 }

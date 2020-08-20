@@ -113,7 +113,6 @@ interface DexProps {
   updateSearch(newSearch: string): void;
   updateCurrentPage(page: number): void;
   currentPage: number;
-  updateType0(type: Type): void;
   updateType1(type: Type): void;
   updateType2(type: Type): void;
   changeTab(tab: number): void;

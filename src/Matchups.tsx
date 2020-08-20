@@ -103,14 +103,14 @@ export function Defense(props: DefenseProps) {
 Defense.displayName = "Matchups.Defense";
 
 export interface OffenseProps {
-  type: Type;
+  types: Type[];
 }
 
 export function Offense(props: OffenseProps) {
   return (
     <Matchups
       formatTitle={(x) => `Deals ${x} to`}
-      matchups={offensiveMatchups(props.type)}
+      matchups={offensiveMatchups(props.types)}
     />
   );
 }

@@ -14,6 +14,7 @@
   flex-wrap: wrap;
 }
 
+.MultiTypeSelector-Container,
 .TypeSelector-Container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
