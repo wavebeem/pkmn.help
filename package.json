@@ -6,9 +6,9 @@
   "scripts": {
     "scrape-pokedex": "ts-node --project ./bin/tsconfig.json ./bin/scrape-pokedex.ts",
     "upgrade": "npm-check -u",
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --mode development",
     "build:ico": "bash bin/make-ico.sh",
-    "build": "mkdir -p dist && cp build/favicon* manifest.json dist && webpack -p",
+    "build": "mkdir -p dist && cp build/favicon* manifest.json dist && webpack --mode production",
     "_pretty": "prettier \"src/**/*.{ts,tsx,js}\"",
     "pretty:fix": "npm run -s _pretty -- --write",
     "pretty:test": "npm run -s _pretty -- --list-different",
