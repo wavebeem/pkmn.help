@@ -29,7 +29,7 @@ export function MultiTypeSelector(props: TypeSelectorProps) {
             className={classnames(
               style,
               "db w-100",
-              "ba",
+              "ba br1",
               "pv1 ph2",
               "f5 b",
               "ttc",
@@ -50,7 +50,7 @@ export function MultiTypeSelector(props: TypeSelectorProps) {
             <span className="flex flex-row items-center justify-center">
               <span
                 className={classnames(
-                  `type-${type} b--black ba`,
+                  `type-${type} b--black ba br1`,
                   isChecked
                     ? "b--black-70 type-bg-light"
                     : "b--black-30 type-bg-dark"

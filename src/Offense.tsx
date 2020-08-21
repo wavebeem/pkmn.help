@@ -15,7 +15,7 @@ export function Offense(props: OffenseProps) {
   return (
     <main className="ph3 pt1 pb4 mw6 mw9-ns center">
       <div className="dib w-50-ns w-100 v-top">
-        <h2 className={classH2}>Choose types</h2>
+        <h2 className={classH2}>Choose Types</h2>
         <MultiTypeSelector value={offenseTypes} onChange={updateOffenseTypes} />
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">

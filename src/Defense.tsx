@@ -17,14 +17,14 @@ export function Defense(props: DefenseProps) {
   return (
     <main className="ph3 pt1 pb4 mw6 mw9-ns center">
       <div className="dib w-50-ns w-100 v-top">
-        <h2 className={classH2}>Choose primary type</h2>
+        <h2 className={classH2}>Choose Primary Type</h2>
         <TypeSelector
           value={type1}
           onChange={updateType1}
           disabledTypes={[]}
           includeNone={false}
         />
-        <h2 className={`${classH2} mt4`}>Choose secondary type</h2>
+        <h2 className={`${classH2} mt4`}>Choose Secondary Type</h2>
         <TypeSelector
           value={type2}
           onChange={updateType2}

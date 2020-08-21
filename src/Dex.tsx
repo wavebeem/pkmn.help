@@ -2,11 +2,10 @@ import * as React from "react";
 import classnames from "classnames";
 import matchSorter from "match-sorter";
 
-import { AllPokemon } from "./pkmn";
+import { AllPokemon, Pokemon } from "./pkmn";
 import { Paginator } from "./Paginator";
 import { Search } from "./Search";
 import { Type } from "./data";
-import { Pokemon } from "./pkmn";
 import { getImage } from "./getImage";
 import { clickPokemon } from "./ga";
 import { StatsTable } from "./StatsTable";

@@ -9,6 +9,13 @@ import {
   offensiveMatchups,
 } from "./data";
 
+const DexCoverage = React.lazy(async () => {
+  const { DexCoverage } = await import(
+    /* webpackChunkName: "DexCoverage" */ "./DexCoverage"
+  );
+  return { default: DexCoverage };
+});
+
 interface BadgeProps {
   type: Type;
 }
@@ -51,36 +58,48 @@ function Section(props: SectionProps) {
 }
 
 interface MatchupsProps {
+  kind: "offense" | "defense";
+  types: Type[];
   formatTitle: (value: string) => string;
   matchups: GroupedMatchups;
 }
 
-function Matchups({ formatTitle, matchups }: MatchupsProps) {
+function Matchups(props: MatchupsProps) {
   return (
-    <div className="tc">
+    <div className="tc pt2">
+      {props.kind === "offense" ? (
+        <div>
+          <h3 className="f5 mt3 mb0 dark-gray">Weakness Coverage</h3>
+          <div className="pt2 mw5 center">
+            <React.Suspense fallback={<div>&ndash;</div>}>
+              <DexCoverage types={props.types} />
+            </React.Suspense>
+          </div>
+        </div>
+      ) : null}
       <Section
-        title={formatTitle("4×")}
-        types={matchups.typesFor(Effectiveness.QUADRUPLE)}
+        title={props.formatTitle("4×")}
+        types={props.matchups.typesFor(Effectiveness.QUADRUPLE)}
       />
       <Section
-        title={formatTitle("2×")}
-        types={matchups.typesFor(Effectiveness.DOUBLE)}
+        title={props.formatTitle("2×")}
+        types={props.matchups.typesFor(Effectiveness.DOUBLE)}
       />
       <Section
-        title={formatTitle("1×")}
-        types={matchups.typesFor(Effectiveness.REGULAR)}
+        title={props.formatTitle("1×")}
+        types={props.matchups.typesFor(Effectiveness.REGULAR)}
       />
       <Section
-        title={formatTitle("½×")}
-        types={matchups.typesFor(Effectiveness.HALF)}
+        title={props.formatTitle("½×")}
+        types={props.matchups.typesFor(Effectiveness.HALF)}
       />
       <Section
-        title={formatTitle("¼×")}
-        types={matchups.typesFor(Effectiveness.QUARTER)}
+        title={props.formatTitle("¼×")}
+        types={props.matchups.typesFor(Effectiveness.QUARTER)}
       />
       <Section
-        title={formatTitle("0×")}
-        types={matchups.typesFor(Effectiveness.ZERO)}
+        title={props.formatTitle("0×")}
+        types={props.matchups.typesFor(Effectiveness.ZERO)}
       />
     </div>
   );
@@ -94,7 +113,9 @@ export interface DefenseProps {
 export function Defense(props: DefenseProps) {
   return (
     <Matchups
-      formatTitle={(x) => `Takes ${x} from`}
+      kind="defense"
+      types={[props.type1, props.type2]}
+      formatTitle={(x) => `Takes ${x} From`}
       matchups={defensiveMatchups(props.type1, props.type2)}
     />
   );
@@ -109,6 +130,8 @@ export interface OffenseProps {
 export function Offense(props: OffenseProps) {
   return (
     <Matchups
+      kind="offense"
+      types={props.types}
       formatTitle={(x) => `Deals ${x} to`}
       matchups={offensiveMatchups(props.types)}
     />

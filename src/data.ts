@@ -90,7 +90,7 @@ const pairs = flatMap(rawData, (row, i) => {
 // TODO: Types seem wrong here
 const table = fromPairs(pairs);
 
-function matchupFor(ta1: Type, ta2: Type, tb: Type) {
+export function matchupFor(ta1: Type, ta2: Type, tb: Type) {
   const x1 = table[keyForTypes(tb, ta1)];
   // Don't allow bogus type combinations, such as Fire/Fire or Fire/None
   const x2 = ta1 !== ta2 && ta2 !== Type.NONE ? table[keyForTypes(tb, ta2)] : 1;
