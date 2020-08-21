@@ -7,10 +7,11 @@ export function InfoScreen() {
     <div className="pa3 center mw7 lh-copy">
       <h2 className="lh-title f5">August 2020</h2>
       <ul className="lh-copy mt1 ph3">
+        <li>Added multi-type support to Offense tab</li>
         <li>Added base stats to the Pokédex</li>
         <li>Added more Pokémon to the Pokédex</li>
-        <li>Improved pagination on the Pokédex</li>
         <li>Added a link to Bulbapedia for each Pokémon</li>
+        <li>Improved pagination on the Pokédex</li>
         <li>Replaced page footer with Info screen</li>
       </ul>
       <h2 className="lh-title f5">December 2019</h2>

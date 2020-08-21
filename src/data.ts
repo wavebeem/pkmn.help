@@ -90,7 +90,7 @@ const pairs = flatMap(rawData, (row, i) => {
 // TODO: Types seem wrong here
 const table = fromPairs(pairs);
 
-function matchupFor(ta1: Type, ta2: Type, tb: Type) {
+export function matchupFor(ta1: Type, ta2: Type, tb: Type) {
   const x1 = table[keyForTypes(tb, ta1)];
   // Don't allow bogus type combinations, such as Fire/Fire or Fire/None
   const x2 = ta1 !== ta2 && ta2 !== Type.NONE ? table[keyForTypes(tb, ta2)] : 1;
@@ -130,10 +130,16 @@ export class GroupedMatchups {
   }
 }
 
-export function offensiveMatchups(type: Type) {
+export function offensiveMatchups(offenseTypes: Type[]) {
   const matchups = types.map((t) => {
-    const eff = matchupFor(t, Type.NONE, type);
-    return new Matchup(t, eff);
+    if (offenseTypes.length === 0) {
+      return new Matchup(t, Effectiveness.REGULAR);
+    }
+    const effs = offenseTypes.map((offense) => {
+      return matchupFor(t, Type.NONE, offense);
+    });
+    const max = Math.max(...effs);
+    return new Matchup(t, max);
   });
   return new GroupedMatchups(matchups);
 }

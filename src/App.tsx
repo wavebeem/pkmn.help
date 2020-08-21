@@ -1,6 +1,5 @@
 import * as React from "react";
 
-import { Spinner } from "./Spinner";
 import { Offense } from "./Offense";
 import { Defense } from "./Defense";
 import { InfoScreen } from "./InfoScreen";
@@ -14,7 +13,7 @@ const Dex = React.lazy(async () => {
 
 export function App() {
   const [tab, changeTab] = React.useState(1);
-  const [type0, updateType0] = React.useState(Type.NORMAL);
+  const [offenseTypes, updateOffenseTypes] = React.useState([] as Type[]);
   const [type1, updateType1] = React.useState(Type.NORMAL);
   const [type2, updateType2] = React.useState(Type.NONE);
   const [currentPage, updateCurrentPage] = React.useState(0);
@@ -34,7 +33,10 @@ export function App() {
         </h1>
         <TabContainer changeTab={changeTab} current={tab}>
           <TabItem name="offense" title="Offense">
-            <Offense type0={type0} updateType0={updateType0} />
+            <Offense
+              offenseTypes={offenseTypes}
+              updateOffenseTypes={updateOffenseTypes}
+            />
           </TabItem>
           <TabItem name="defense" title="Defense">
             <Defense
@@ -46,18 +48,13 @@ export function App() {
           </TabItem>
           <TabItem name="pokedex" title="Pokédex">
             <React.Suspense
-              fallback={
-                <div className="flex justify-center mt4">
-                  <Spinner />
-                </div>
-              }
+              fallback={<div className="Spinner center mt4 f2" />}
             >
               <Dex
                 search={search}
                 updateSearch={updateSearch}
                 updateCurrentPage={updateCurrentPage}
                 currentPage={currentPage}
-                updateType0={updateType0}
                 updateType1={updateType1}
                 updateType2={updateType2}
                 changeTab={changeTab}
