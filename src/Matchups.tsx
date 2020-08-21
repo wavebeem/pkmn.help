@@ -11,7 +11,9 @@ import {
 
 const DexCoverage = React.lazy(async () => {
   const { DexCoverage } = await import(
-    /* webpackChunkName: "DexCoverage" */ "./DexCoverage"
+    /* webpackChunkName: "DexCoverage" */
+    /* webpackPrefetch: true */
+    "./DexCoverage"
   );
   return { default: DexCoverage };
 });
