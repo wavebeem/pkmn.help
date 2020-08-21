@@ -7,7 +7,11 @@ import { TabContainer, TabItem } from "./Tab";
 import { Type } from "./data";
 
 const Dex = React.lazy(async () => {
-  const { Dex } = await import(/* webpackChunkName: "Dex" */ "./Dex");
+  const { Dex } = await import(
+    /* webpackChunkName: "Dex" */
+    /* webpackPrefetch: true */
+    "./Dex"
+  );
   return { default: Dex };
 });
 
