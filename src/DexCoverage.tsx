@@ -2,6 +2,7 @@ import * as React from "react";
 
 import { AllPokemon } from "./pkmn";
 import { Type, matchupFor, Effectiveness } from "./data";
+import { PercentBar } from "./PercentBar";
 
 interface DexCoverageProps {
   types: Type[];
@@ -21,7 +22,18 @@ export const DexCoverage: React.FC<DexCoverageProps> = (props) => {
       return effectiveness > Effectiveness.REGULAR;
     });
   }).length;
-  const ratio = count / mostPokemon.length;
-  const percent = (ratio * 100).toFixed(1);
-  return <span className="tabular-nums">{percent}% of all forms</span>;
+  const total = mostPokemon.length;
+  const ratio = count / total;
+  const percent = (ratio * 100).toFixed(0);
+  return (
+    <div className="pt1 tabular-nums flex flex-column lh-copy">
+      <PercentBar value={count} max={total} />
+      <div className="flex items-center">
+        <div className="tl mr2 w3">{percent}%</div>
+        <div className="flex-auto tr">
+          {count} / {total} forms
+        </div>
+      </div>
+    </div>
+  );
 };
