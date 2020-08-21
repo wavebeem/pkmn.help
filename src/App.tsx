@@ -1,6 +1,5 @@
 import * as React from "react";
 
-import { Spinner } from "./Spinner";
 import { Offense } from "./Offense";
 import { Defense } from "./Defense";
 import { InfoScreen } from "./InfoScreen";
@@ -49,11 +48,7 @@ export function App() {
           </TabItem>
           <TabItem name="pokedex" title="Pokédex">
             <React.Suspense
-              fallback={
-                <div className="flex justify-center mt4">
-                  <Spinner />
-                </div>
-              }
+              fallback={<div className="Spinner center mt4 f2" />}
             >
               <Dex
                 search={search}

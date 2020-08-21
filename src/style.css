@@ -23,9 +23,9 @@
 
 .Spinner {
   border-radius: 9999px;
-  width: 4rem;
-  height: 4rem;
-  border: 3px solid;
+  width: 1em;
+  height: 1em;
+  border: 2px solid;
   border-right-color: transparent;
   animation: 1s linear infinite Spinner-spin;
 }
