@@ -5,6 +5,8 @@ import "tachyons/css/tachyons.css";
 import "./style.css";
 import { App } from "./App";
 
+console.log(`NODE_ENV = ${process.env.NODE_ENV}`);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />

@@ -1,10 +1,5 @@
 const path = require("path");
-const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-
-// Hack to put the NODE_ENV to production when we ask for minified code.
-const isProd = process.argv.indexOf("-p") >= 0;
-process.env.NODE_ENV = isProd ? "production" : "development";
 
 const fileLoader = {
   test: /\.(png|svg)$/,
@@ -34,7 +29,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, "dist"),
     filename: "[name].bundle.js",
-    chunkFilename: "[name].bundle.js",
+    chunkFilename: "[name].chunk.js",
   },
   devtool: "source-map",
   devServer: {
@@ -48,7 +43,6 @@ module.exports = {
     rules: [tsLoader, cssLoader, fileLoader],
   },
   plugins: [
-    new webpack.EnvironmentPlugin(["NODE_ENV"]),
     new HtmlWebpackPlugin({
       filename: path.join(__dirname, "dist/index.html"),
       template: path.join(__dirname, "template/index.html"),
