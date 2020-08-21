@@ -70,7 +70,7 @@ function Matchups(props: MatchupsProps) {
       {props.kind === "offense" ? (
         <div>
           <h3 className="f5 mt3 mb0 dark-gray">Weakness Coverage</h3>
-          <div className="pt2 mw5 center">
+          <div className="pt1 mw5 center">
             <React.Suspense fallback={<div>&ndash;</div>}>
               <DexCoverage types={props.types} />
             </React.Suspense>
