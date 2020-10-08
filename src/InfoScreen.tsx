@@ -42,9 +42,9 @@ export function InfoScreen() {
         there. Otherwise you can email me{" "}
         <a
           className="underline dark-blue hover-blue OutlineFocus"
-          href="mailto:brian@mockbrian.com"
+          href="mailto:brian@wavebeem.com"
         >
-          brian@mockbrian.com
+          brian@wavebeem.com
         </a>
         .
       </p>
