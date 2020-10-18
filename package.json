@@ -41,6 +41,7 @@
     "@types/node-fetch": "^2.5.7",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.7",
+    "@types/react-router-dom": "^5.1.6",
     "@types/webpack-env": "^1.15.2",
     "babel-preset-es2015": "^6.24.1",
     "css-loader": "^3.5.3",
@@ -73,6 +74,7 @@
     "match-sorter": "^4.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
     "tachyons": "^4.12.0"
   },
   "jest": {

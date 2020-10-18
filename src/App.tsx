@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useHistory } from "react-router-dom";
 
 import { Offense } from "./Offense";
 import { Defense } from "./Defense";
@@ -16,7 +17,8 @@ const Dex = React.lazy(async () => {
 });
 
 export function App() {
-  const [tab, changeTab] = React.useState(1);
+  const history = useHistory();
+  const [loaded, updateLoaded] = React.useState(false);
   const [offenseTypes, updateOffenseTypes] = React.useState([] as Type[]);
   const [type1, updateType1] = React.useState(Type.NORMAL);
   const [type2, updateType2] = React.useState(Type.NONE);
@@ -24,8 +26,12 @@ export function App() {
   const [search, updateSearch] = React.useState("");
 
   React.useEffect(() => {
-    updateCurrentPage(0);
+    if (loaded && history.location.pathname === "/pokedex") {
+      updateCurrentPage(0);
+    }
   }, [search]);
+
+  React.useEffect(() => updateLoaded(true), []);
 
   return (
     <div className="sans-serif bg-near-white near-black min-vh-100 flex flex-column">
@@ -35,7 +41,7 @@ export function App() {
             Pokémon Type Calculator
           </a>
         </h1>
-        <TabContainer changeTab={changeTab} current={tab}>
+        <TabContainer>
           <TabItem name="offense" title="Offense">
             <Offense
               offenseTypes={offenseTypes}
@@ -61,7 +67,6 @@ export function App() {
                 currentPage={currentPage}
                 updateType1={updateType1}
                 updateType2={updateType2}
-                changeTab={changeTab}
               />
             </React.Suspense>
           </TabItem>

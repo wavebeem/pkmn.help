@@ -1,39 +1,36 @@
 import * as React from "react";
+import { NavLink, Route } from "react-router-dom";
 import classnames from "classnames";
 
 import { clickNav } from "./ga";
 
 interface TabProps {
-  current: number;
-  changeTab: (tab: number) => void;
-  index: number;
   title: string;
   name: string;
 }
 
 function Tab(props: TabProps) {
   return (
-    <button
-      type="button"
+    <NavLink
+      to={`/${props.name}`}
       className={classnames([
+        "no-underline",
         "pv2 ph2 f5",
         "no-outline tab-bottom-focus",
         "b bn",
         "br--top br4",
         "bg-transparent",
         "hover-black-90",
-        props.index === props.current
-          ? "black bottom-border-thick-current"
-          : "black-50 bottom-border-thick pointer",
+        "black-50 bottom-border-thick",
       ])}
-      onClick={() => {
-        props.changeTab(props.index);
-        clickNav(props.name);
-      }}
-      disabled={props.index === props.current}
+      activeClassName={classnames([
+        "black bottom-border-thick-current",
+        "no-pointer",
+      ])}
+      onClick={() => clickNav(props.name)}
     >
       {props.title}
-    </button>
+    </NavLink>
   );
 }
 
@@ -52,21 +49,21 @@ export function TabItem(props: TabItemProps) {
 TabItem.displayName = "TabItem";
 
 interface TabContainerProps {
-  changeTab: (index: number) => void;
-  current: number;
   children: any;
 }
 
 export function TabContainer(props: TabContainerProps) {
-  const { children, current } = props;
-  const tabs = React.Children.map(children, (kid, i) => (
+  const { children } = props;
+  const tabs = React.Children.map(children, kid => (
     <Tab
       title={kid.props.title}
       name={kid.props.name}
-      current={current}
-      changeTab={props.changeTab}
-      index={i}
     />
+  ));
+  const routes = React.Children.map(children, kid => (
+    <Route path={`/${kid.props.name}`}>
+      {kid}
+    </Route>
   ));
   return (
     <div>
@@ -80,7 +77,7 @@ export function TabContainer(props: TabContainerProps) {
       >
         {tabs}
       </div>
-      {children[current]}
+      {routes}
     </div>
   );
 }
