@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useHistory } from "react-router-dom";
+import * as Router from "react-router";
 
 import { Offense } from "./Offense";
 import { Defense } from "./Defense";
@@ -16,8 +16,9 @@ const Dex = React.lazy(async () => {
   return { default: Dex };
 });
 
-export function App() {
-  const history = useHistory();
+export const App = Router.withRouter(RouterApp);
+
+function RouterApp(props: Router.RouteComponentProps) {
   const [loaded, updateLoaded] = React.useState(false);
   const [offenseTypes, updateOffenseTypes] = React.useState([] as Type[]);
   const [type1, updateType1] = React.useState(Type.NORMAL);
@@ -26,10 +27,48 @@ export function App() {
   const [search, updateSearch] = React.useState("");
 
   React.useEffect(() => {
-    if (loaded && history.location.pathname === "/pokedex") {
+    if (loaded && props.location.pathname === "/pokedex") {
       updateCurrentPage(0);
     }
   }, [search]);
+
+  React.useEffect(() => {
+    if (props.location.pathname === "/pokedex") {
+      const params = new URLSearchParams();
+      if (search) {
+        params.set("q", search);
+      }
+      if (currentPage) {
+        params.set("page", (currentPage + 1).toString());
+      }
+      const url = search || currentPage ? `/pokedex?${params}` : "/pokedex";
+      if (search && props.location.search.indexOf("q=") !== -1) {
+        props.history.replace(url);
+      } else {
+        props.history.push(url);
+      }
+    }
+  }, [search, currentPage, props.location.pathname]);
+
+  React.useEffect(() => {
+    if (props.location.pathname === "/offense") {
+      if (offenseTypes.length === 0) {
+        props.history.replace("/offense");
+      } else {
+        props.history.replace(`/offense?types=${offenseTypes.join("+")}`);
+      }
+    }
+  }, [offenseTypes, props.location.pathname]);
+
+  React.useEffect(() => {
+    if (props.location.pathname === "/defense") {
+      let url = `/defense?types=${type1}`;
+      if (type2 && type2 !== Type.NONE && type2 !== type1) {
+        url += `+${type2}`;
+      }
+      props.history.replace(url);
+    }
+  }, [type1, type2, props.location.pathname]);
 
   React.useEffect(() => updateLoaded(true), []);
 
