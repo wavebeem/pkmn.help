@@ -6,6 +6,7 @@ import ScreenOffense from "./ScreenOffense";
 import TabItem from "./TabItem";
 import TabContainer from "./TabContainer";
 import { useSearch } from "./useSearch";
+import { useHistory } from "react-router-dom";
 
 const Dex = React.lazy(async () => {
   return await import(
@@ -43,10 +44,9 @@ export interface AppState {
 }
 
 export default function App() {
-  const search = useSearch();
-  const [defenseParams, setDefenseParams] = React.useState("?" + search);
-  const [offenseParams, setOffenseParams] = React.useState("?" + search);
-  const [dexParams, setDexParams] = React.useState("?" + search);
+  const [defenseParams, setDefenseParams] = React.useState("");
+  const [offenseParams, setOffenseParams] = React.useState("");
+  const [dexParams, setDexParams] = React.useState("");
   return (
     <div className="sans-serif bg-near-white near-black min-vh-100 flex flex-column">
       <div className="flex-auto">

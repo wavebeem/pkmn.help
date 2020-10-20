@@ -1,7 +1,6 @@
 import classnames from "classnames";
 import * as React from "react";
-import { NavLink, Route, Switch } from "react-router-dom";
-import { clickNav } from "./ga";
+import { NavLink, Redirect, Route, Switch } from "react-router-dom";
 
 interface TabProps {
   title: string;
@@ -27,7 +26,6 @@ function Tab(props: TabProps) {
         "black bottom-border-thick-current",
         "no-pointer",
       ])}
-      onClick={() => clickNav(props.name)}
     >
       {props.title}
     </NavLink>
@@ -58,7 +56,10 @@ export default function TabContainer(props: TabContainerProps) {
       >
         {tabs}
       </div>
-      <Switch>{routes}</Switch>
+      <Switch>
+        {routes}
+        <Redirect to="/offense" />
+      </Switch>
     </div>
   );
 }

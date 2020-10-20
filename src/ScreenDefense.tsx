@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useHistory } from "react-router-dom";
 import { Type, typesFromString } from "./data";
+import { sendPageView } from "./ga";
 import * as Matchups from "./Matchups";
 import TypeSelector from "./TypeSelector";
 import { useSearch } from "./useSearch";
@@ -16,6 +17,10 @@ export default function ScreenDefense(props: DefenseProps) {
   const [type1 = Type.NORMAL, type2 = Type.NONE] = typesFromString(
     search.get("types") || ""
   );
+
+  React.useEffect(() => {
+    sendPageView();
+  }, []);
 
   function updateTypes(types: Type[]) {
     const params = new URLSearchParams();

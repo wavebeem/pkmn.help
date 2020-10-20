@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useHistory } from "react-router-dom";
 import { Type, typesFromString } from "./data";
+import { sendPageView } from "./ga";
 import * as Matchups from "./Matchups";
 import MultiTypeSelector from "./MultiTypeSelector";
 import { useSearch } from "./useSearch";
@@ -22,6 +23,10 @@ export default function ScreenOffense(props: OffenseProps) {
     history.replace({ search: "?" + params });
     props.setOffenseParams("?" + params);
   };
+
+  React.useEffect(() => {
+    sendPageView();
+  }, []);
 
   const classH2 = "tc f5 mv3";
   return (
