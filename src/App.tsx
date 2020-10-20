@@ -5,7 +5,7 @@ import { Offense } from "./Offense";
 import { Defense } from "./Defense";
 import { InfoScreen } from "./InfoScreen";
 import { TabContainer, TabItem } from "./Tab";
-import { Type } from "./data";
+import { Type, types } from "./data";
 
 const Dex = React.lazy(async () => {
   const { Dex } = await import(
@@ -16,15 +16,57 @@ const Dex = React.lazy(async () => {
   return { default: Dex };
 });
 
+const typeNames = new Map(types.map(t => [t.valueOf(), t]));
+const params = new URLSearchParams(window.location.search.toLowerCase());
+const paramTypes = params.get("types");
+const initTypes: Type[] = [];
+if (paramTypes) {
+  for (const paramType of paramTypes.split(" ")) {
+    const parsedType = typeNames.get(paramType);
+    if (parsedType !== undefined) {
+      initTypes.push(parsedType);
+    }
+  }
+}
+
 export const App = Router.withRouter(RouterApp);
 
 function RouterApp(props: Router.RouteComponentProps) {
   const [loaded, updateLoaded] = React.useState(false);
-  const [offenseTypes, updateOffenseTypes] = React.useState([] as Type[]);
-  const [type1, updateType1] = React.useState(Type.NORMAL);
-  const [type2, updateType2] = React.useState(Type.NONE);
-  const [currentPage, updateCurrentPage] = React.useState(0);
-  const [search, updateSearch] = React.useState("");
+  const [offenseTypes, updateOffenseTypes] = React.useState(() =>
+    props.location.pathname === "/offense"
+      ? initTypes
+      : []
+  );
+  const [type1, updateType1] = React.useState(() =>
+    props.location.pathname === "/defense"
+      ? initTypes[0] || Type.NORMAL
+      : Type.NORMAL
+  );
+  const [type2, updateType2] = React.useState(() =>
+    props.location.pathname === "/defense"
+      ? initTypes[1] || Type.NONE
+      : Type.NONE
+  );
+  const [currentPage, updateCurrentPage] = React.useState(() => {
+    if (props.location.pathname !== "/pokedex") {
+      return 0;
+    }
+    const paramPage = params.get("page");
+    if (paramPage === null) {
+      return 0;
+    }
+    const parsedPage = parseInt(paramPage);
+    if (parsedPage === undefined || parsedPage < 1) {
+      return 0;
+    }
+    return parsedPage - 1;
+  });
+  const [search, updateSearch] = React.useState(() =>
+    props.location.pathname === "/pokedex"
+      ? params.get("q") || ""
+      : ""
+  );
 
   React.useEffect(() => {
     if (loaded && props.location.pathname === "/pokedex") {
