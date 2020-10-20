@@ -1,15 +1,16 @@
 import * as React from "react";
 import classnames from "classnames";
 import matchSorter from "match-sorter";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import { AllPokemon, Pokemon } from "./pkmn";
 import { Paginator } from "./Paginator";
 import { Search } from "./Search";
 import { Type } from "./data";
 import { getImage } from "./getImage";
-import { clickPokemon } from "./ga";
+import { clickPokemon, sendPageView } from "./ga";
 import { StatsTable } from "./StatsTable";
+import { useSearch } from "./useSearch";
 
 const PAGE_SIZE = 20;
 
@@ -37,8 +38,6 @@ function MonsterType(props: MonsterTypeProps) {
 interface MonsterProps {
   pokemon: Pokemon;
   index: number;
-  updateType1(type1: Type): void;
-  updateType2(type2: Type): void;
 }
 
 function Monster(props: MonsterProps) {
@@ -70,11 +69,10 @@ function Monster(props: MonsterProps) {
         <div className="mv2 lh-copy">
           <Link
             className="underline dark-blue hover-blue OutlineFocus"
-            to={`/defense#${props.pokemon.id}`}
+            to={`/defense?${new URLSearchParams({
+              types: props.pokemon.types.join(" "),
+            })}`}
             onClick={() => {
-              const [type1, type2] = props.pokemon.types;
-              props.updateType1(type1);
-              props.updateType2(type2 || Type.NONE);
               clickPokemon(props.pokemon.id);
             }}
             aria-label={`Defense for ${props.pokemon.name}`}
@@ -106,47 +104,61 @@ function Monster(props: MonsterProps) {
 }
 
 interface DexProps {
-  search: string;
-  updateSearch(newSearch: string): void;
-  updateCurrentPage(page: number): void;
-  currentPage: number;
-  updateType1(type: Type): void;
-  updateType2(type: Type): void;
+  setDexParams: (params: string) => void;
 }
 
-export default function Dex(props: DexProps) {
-  const { search, updateSearch, updateCurrentPage, currentPage } = props;
+export default function ScreenDex(props: DexProps) {
+  const search = useSearch();
+  const history = useHistory();
+
+  const query = search.get("q") || "";
+  const page = Number(search.get("page") || 0);
 
   const pkmn = React.useMemo(() => {
-    const s = search.trim();
+    const s = query.trim();
     if (/^[0-9]+$/.test(s)) {
       const number = Number(s);
       return AllPokemon.filter((p) => p.number === number);
     }
     return matchSorter(AllPokemon, s, { keys: ["name", "number"] });
-  }, [search]);
+  }, [query]);
+
+  function update(newQuery: string, newPage: number) {
+    const params = new URLSearchParams();
+    if (newQuery) {
+      params.set("q", newQuery);
+    }
+    if (Number(newPage) > 0) {
+      params.set("page", String(newPage));
+    }
+    history.replace({ search: "?" + params });
+    props.setDexParams("?" + params);
+  }
+
+  React.useEffect(() => {
+    sendPageView();
+  }, []);
 
   return (
     <div className="ph3 mt3 center mw7">
       <div className="ph1" />
-      <Search search={search} updateSearch={updateSearch} />
+      <Search
+        search={query}
+        updateSearch={(newQuery) => {
+          update(newQuery, 0);
+        }}
+      />
       <Paginator
-        currentPage={currentPage}
-        updatePage={(page) => updateCurrentPage(page)}
-        updatePageNext={() => updateCurrentPage(currentPage + 1)}
-        updatePagePrev={() => updateCurrentPage(currentPage - 1)}
+        currentPage={page}
+        updatePage={(newPage) => update(query, newPage)}
+        updatePageNext={() => update(query, page + 1)}
+        updatePagePrev={() => update(query, page - 1)}
         pageSize={PAGE_SIZE}
         emptyState={<p className="silver f4 b tc m0">No Pokémon found</p>}
         items={pkmn}
         renderPage={(page) =>
           page.map((pokemon, index) => (
-            <Monster
-              key={pokemon.id}
-              pokemon={pokemon}
-              index={index}
-              updateType1={props.updateType1}
-              updateType2={props.updateType2}
-            />
+            <Monster key={pokemon.id} pokemon={pokemon} index={index} />
           ))
         }
       />
@@ -154,4 +166,4 @@ export default function Dex(props: DexProps) {
   );
 }
 
-Dex.displayName = "Dex";
+ScreenDex.displayName = "ScreenDex";

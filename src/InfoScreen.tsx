@@ -5,6 +5,10 @@ const year = new Date().getFullYear();
 export default function InfoScreen() {
   return (
     <div className="pa3 center mw7 lh-copy">
+      <h2 className="lh-title f5">October 2020</h2>
+      <ul className="lh-copy mt1 ph3">
+        <li>URL support for bookmarks and links</li>
+      </ul>
       <h2 className="lh-title f5">August 2020</h2>
       <ul className="lh-copy mt1 ph3">
         <li>Added multi-type support to Offense tab</li>

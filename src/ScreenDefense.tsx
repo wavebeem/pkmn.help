@@ -70,4 +70,4 @@ export default function ScreenDefense(props: DefenseProps) {
   );
 }
 
-ScreenDefense.displayName = "Defense";
+ScreenDefense.displayName = "ScreenDefense";

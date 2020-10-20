@@ -43,4 +43,4 @@ export default function ScreenOffense(props: OffenseProps) {
   );
 }
 
-ScreenOffense.displayName = "Offense";
+ScreenOffense.displayName = "ScreenOffense";

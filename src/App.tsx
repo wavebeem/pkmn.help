@@ -1,47 +1,17 @@
 import * as React from "react";
-import { Type, types } from "./data";
 import InfoScreen from "./InfoScreen";
 import ScreenDefense from "./ScreenDefense";
 import ScreenOffense from "./ScreenOffense";
 import TabItem from "./TabItem";
 import TabContainer from "./TabContainer";
-import { useSearch } from "./useSearch";
-import { useHistory } from "react-router-dom";
 
-const Dex = React.lazy(async () => {
+const ScreenDex = React.lazy(async () => {
   return await import(
     /* webpackChunkName: "Dex" */
     /* webpackPrefetch: true */
-    "./Dex"
+    "./ScreenDex"
   );
 });
-
-if (window.location.pathname === "/") {
-  window.history.replaceState(
-    undefined,
-    "Pokémon Type Calculator",
-    "/defense?types=normal"
-  );
-}
-
-const typeNames = new Map(types.map((t) => [t.valueOf(), t]));
-const params = new URLSearchParams(window.location.search.toLowerCase());
-const paramTypes = params.get("types");
-const initTypes: Type[] = [];
-if (paramTypes) {
-  for (const paramType of paramTypes.split(" ")) {
-    const parsedType = typeNames.get(paramType);
-    if (parsedType !== undefined) {
-      initTypes.push(parsedType);
-    }
-  }
-}
-
-export interface AppState {
-  defenseParams: string;
-  offenseParams: string;
-  dexParams: string;
-}
 
 export default function App() {
   const [defenseParams, setDefenseParams] = React.useState("");
@@ -70,13 +40,13 @@ export default function App() {
           >
             <ScreenDefense setDefenseParams={setDefenseParams} />
           </TabItem>
-          {/* <TabItem name="pokedex" title="Pokédex">
+          <TabItem url={`/pokedex${dexParams}`} name="pokedex" title="Pokédex">
             <React.Suspense
               fallback={<div className="Spinner center mt4 f2" />}
             >
-              <Dex state={state} setState={setState} />
+              <ScreenDex setDexParams={setDexParams} />
             </React.Suspense>
-          </TabItem> */}
+          </TabItem>
           <TabItem url="/info" name="info" title="Info">
             <InfoScreen />
           </TabItem>
