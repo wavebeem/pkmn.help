@@ -16,6 +16,10 @@ const Dex = React.lazy(async () => {
   return { default: Dex };
 });
 
+if (window.location.pathname === "/") {
+  window.history.replaceState(undefined, "Pokémon Type Calculator", "/defense?types=normal");
+}
+
 const typeNames = new Map(types.map(t => [t.valueOf(), t]));
 const params = new URLSearchParams(window.location.search.toLowerCase());
 const paramTypes = params.get("types");
@@ -74,7 +78,7 @@ function RouterApp(props: Router.RouteComponentProps) {
     }
   }, [search]);
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     if (props.location.pathname === "/pokedex") {
       const params = new URLSearchParams();
       if (search) {
@@ -92,7 +96,7 @@ function RouterApp(props: Router.RouteComponentProps) {
     }
   }, [search, currentPage, props.location.pathname]);
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     if (props.location.pathname === "/offense") {
       if (offenseTypes.length === 0) {
         props.history.replace("/offense");
@@ -102,7 +106,7 @@ function RouterApp(props: Router.RouteComponentProps) {
     }
   }, [offenseTypes, props.location.pathname]);
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     if (props.location.pathname === "/defense") {
       let url = `/defense?types=${type1}`;
       if (type2 && type2 !== Type.NONE && type2 !== type1) {
