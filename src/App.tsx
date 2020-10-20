@@ -78,7 +78,7 @@ function RouterApp(props: Router.RouteComponentProps) {
     }
   }, [search]);
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     if (props.location.pathname === "/pokedex") {
       const params = new URLSearchParams();
       if (search) {
@@ -96,7 +96,7 @@ function RouterApp(props: Router.RouteComponentProps) {
     }
   }, [search, currentPage, props.location.pathname]);
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     if (props.location.pathname === "/offense") {
       if (offenseTypes.length === 0) {
         props.history.replace("/offense");
@@ -106,7 +106,7 @@ function RouterApp(props: Router.RouteComponentProps) {
     }
   }, [offenseTypes, props.location.pathname]);
 
-  React.useLayoutEffect(() => {
+  React.useEffect(() => {
     if (props.location.pathname === "/defense") {
       let url = `/defense?types=${type1}`;
       if (type2 && type2 !== Type.NONE && type2 !== type1) {
