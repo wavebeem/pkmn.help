@@ -65,8 +65,8 @@ button {
   outline: none;
 }
 
-.bottom-border-thick-current {
-  border-bottom: 4px solid currentColor;
+.no-pointer {
+    pointer-events: none;
 }
 
 .bottom-border-thick {
@@ -75,6 +75,13 @@ button {
 
 .bottom-border-thick:focus {
   background: rgba(0, 0, 0, 0.05);
+}
+
+.bottom-border-thick-current {
+  border-bottom: 4px solid currentColor;
+}
+.bottom-border-thick-current:focus {
+    background: unset;
 }
 
 .TabBarBorder {

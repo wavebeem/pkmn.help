@@ -1,6 +1,7 @@
 import * as React from "react";
 import classnames from "classnames";
 import matchSorter from "match-sorter";
+import { Link } from "react-router-dom";
 
 import { AllPokemon, Pokemon } from "./pkmn";
 import { Paginator } from "./Paginator";
@@ -38,7 +39,6 @@ interface MonsterProps {
   index: number;
   updateType1(type1: Type): void;
   updateType2(type2: Type): void;
-  changeTab(tab: number): void;
 }
 
 function Monster(props: MonsterProps) {
@@ -68,21 +68,19 @@ function Monster(props: MonsterProps) {
           ))}
         </div>
         <div className="mv2 lh-copy">
-          <a
+          <Link
             className="underline dark-blue hover-blue OutlineFocus"
-            href={`#${props.pokemon.id}`}
-            onClick={(event) => {
-              event.preventDefault();
+            to={`/defense#${props.pokemon.id}`}
+            onClick={() => {
               const [type1, type2] = props.pokemon.types;
               props.updateType1(type1);
               props.updateType2(type2 || Type.NONE);
-              props.changeTab(1);
               clickPokemon(props.pokemon.id);
             }}
             aria-label={`Defense for ${props.pokemon.name}`}
           >
             Defense
-          </a>{" "}
+          </Link>{" "}
           &middot;{" "}
           <a
             target="_blank"
@@ -114,7 +112,6 @@ interface DexProps {
   currentPage: number;
   updateType1(type: Type): void;
   updateType2(type: Type): void;
-  changeTab(tab: number): void;
 }
 
 export function Dex(props: DexProps) {
@@ -149,7 +146,6 @@ export function Dex(props: DexProps) {
               index={index}
               updateType1={props.updateType1}
               updateType2={props.updateType2}
-              changeTab={props.changeTab}
             />
           ))
         }

@@ -1,10 +1,11 @@
 import * as React from "react";
+import * as Router from "react-router";
 
 import { Offense } from "./Offense";
 import { Defense } from "./Defense";
 import { InfoScreen } from "./InfoScreen";
 import { TabContainer, TabItem } from "./Tab";
-import { Type } from "./data";
+import { Type, types } from "./data";
 
 const Dex = React.lazy(async () => {
   const { Dex } = await import(
@@ -15,17 +16,107 @@ const Dex = React.lazy(async () => {
   return { default: Dex };
 });
 
-export function App() {
-  const [tab, changeTab] = React.useState(1);
-  const [offenseTypes, updateOffenseTypes] = React.useState([] as Type[]);
-  const [type1, updateType1] = React.useState(Type.NORMAL);
-  const [type2, updateType2] = React.useState(Type.NONE);
-  const [currentPage, updateCurrentPage] = React.useState(0);
-  const [search, updateSearch] = React.useState("");
+if (window.location.pathname === "/") {
+  window.history.replaceState(undefined, "Pokémon Type Calculator", "/defense?types=normal");
+}
+
+const typeNames = new Map(types.map(t => [t.valueOf(), t]));
+const params = new URLSearchParams(window.location.search.toLowerCase());
+const paramTypes = params.get("types");
+const initTypes: Type[] = [];
+if (paramTypes) {
+  for (const paramType of paramTypes.split(" ")) {
+    const parsedType = typeNames.get(paramType);
+    if (parsedType !== undefined) {
+      initTypes.push(parsedType);
+    }
+  }
+}
+
+export const App = Router.withRouter(RouterApp);
+
+function RouterApp(props: Router.RouteComponentProps) {
+  const [loaded, updateLoaded] = React.useState(false);
+  const [offenseTypes, updateOffenseTypes] = React.useState(() =>
+    props.location.pathname === "/offense"
+      ? initTypes
+      : []
+  );
+  const [type1, updateType1] = React.useState(() =>
+    props.location.pathname === "/defense"
+      ? initTypes[0] || Type.NORMAL
+      : Type.NORMAL
+  );
+  const [type2, updateType2] = React.useState(() =>
+    props.location.pathname === "/defense"
+      ? initTypes[1] || Type.NONE
+      : Type.NONE
+  );
+  const [currentPage, updateCurrentPage] = React.useState(() => {
+    if (props.location.pathname !== "/pokedex") {
+      return 0;
+    }
+    const paramPage = params.get("page");
+    if (paramPage === null) {
+      return 0;
+    }
+    const parsedPage = parseInt(paramPage);
+    if (parsedPage === undefined || parsedPage < 1) {
+      return 0;
+    }
+    return parsedPage - 1;
+  });
+  const [search, updateSearch] = React.useState(() =>
+    props.location.pathname === "/pokedex"
+      ? params.get("q") || ""
+      : ""
+  );
 
   React.useEffect(() => {
-    updateCurrentPage(0);
+    if (loaded && props.location.pathname === "/pokedex") {
+      updateCurrentPage(0);
+    }
   }, [search]);
+
+  React.useEffect(() => {
+    if (props.location.pathname === "/pokedex") {
+      const params = new URLSearchParams();
+      if (search) {
+        params.set("q", search);
+      }
+      if (currentPage) {
+        params.set("page", (currentPage + 1).toString());
+      }
+      const url = search || currentPage ? `/pokedex?${params}` : "/pokedex";
+      if (search && props.location.search.indexOf("q=") !== -1) {
+        props.history.replace(url);
+      } else {
+        props.history.push(url);
+      }
+    }
+  }, [search, currentPage, props.location.pathname]);
+
+  React.useEffect(() => {
+    if (props.location.pathname === "/offense") {
+      if (offenseTypes.length === 0) {
+        props.history.replace("/offense");
+      } else {
+        props.history.replace(`/offense?types=${offenseTypes.join("+")}`);
+      }
+    }
+  }, [offenseTypes, props.location.pathname]);
+
+  React.useEffect(() => {
+    if (props.location.pathname === "/defense") {
+      let url = `/defense?types=${type1}`;
+      if (type2 && type2 !== Type.NONE && type2 !== type1) {
+        url += `+${type2}`;
+      }
+      props.history.replace(url);
+    }
+  }, [type1, type2, props.location.pathname]);
+
+  React.useEffect(() => updateLoaded(true), []);
 
   return (
     <div className="sans-serif bg-near-white near-black min-vh-100 flex flex-column">
@@ -35,7 +126,7 @@ export function App() {
             Pokémon Type Calculator
           </a>
         </h1>
-        <TabContainer changeTab={changeTab} current={tab}>
+        <TabContainer>
           <TabItem name="offense" title="Offense">
             <Offense
               offenseTypes={offenseTypes}
@@ -61,7 +152,6 @@ export function App() {
                 currentPage={currentPage}
                 updateType1={updateType1}
                 updateType2={updateType2}
-                changeTab={changeTab}
               />
             </React.Suspense>
           </TabItem>

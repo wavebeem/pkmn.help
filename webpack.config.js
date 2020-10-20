@@ -12,6 +12,7 @@ module.exports = {
   devServer: {
     contentBase: __dirname,
     compress: true,
+    historyApiFallback: true,
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
