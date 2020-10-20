@@ -107,12 +107,12 @@ interface DexProps {
   setDexParams: (params: string) => void;
 }
 
-export default function ScreenDex(props: DexProps) {
+export default function ScreenPokedex(props: DexProps) {
   const search = useSearch();
   const history = useHistory();
 
   const query = search.get("q") || "";
-  const page = Number(search.get("page") || 0);
+  const page = Number(search.get("page") || 1) - 1;
 
   const pkmn = React.useMemo(() => {
     const s = query.trim();
@@ -129,7 +129,7 @@ export default function ScreenDex(props: DexProps) {
       params.set("q", newQuery);
     }
     if (Number(newPage) > 0) {
-      params.set("page", String(newPage));
+      params.set("page", String(newPage + 1));
     }
     history.replace({ search: "?" + params });
     props.setDexParams("?" + params);
@@ -150,9 +150,15 @@ export default function ScreenDex(props: DexProps) {
       />
       <Paginator
         currentPage={page}
-        updatePage={(newPage) => update(query, newPage)}
-        updatePageNext={() => update(query, page + 1)}
-        updatePagePrev={() => update(query, page - 1)}
+        updatePage={(newPage) => {
+          update(query, newPage);
+        }}
+        updatePageNext={() => {
+          update(query, page + 1);
+        }}
+        updatePagePrev={() => {
+          update(query, page - 1);
+        }}
         pageSize={PAGE_SIZE}
         emptyState={<p className="silver f4 b tc m0">No Pokémon found</p>}
         items={pkmn}
@@ -166,4 +172,4 @@ export default function ScreenDex(props: DexProps) {
   );
 }
 
-ScreenDex.displayName = "ScreenDex";
+ScreenPokedex.displayName = "ScreenPokedex";

@@ -5,11 +5,11 @@ import ScreenOffense from "./ScreenOffense";
 import TabItem from "./TabItem";
 import TabContainer from "./TabContainer";
 
-const ScreenDex = React.lazy(async () => {
+const ScreenPokedex = React.lazy(async () => {
   return await import(
-    /* webpackChunkName: "Dex" */
+    /* webpackChunkName: "ScreenPokedex" */
     /* webpackPrefetch: true */
-    "./ScreenDex"
+    "./ScreenPokedex"
   );
 });
 
@@ -44,7 +44,7 @@ export default function App() {
             <React.Suspense
               fallback={<div className="Spinner center mt4 f2" />}
             >
-              <ScreenDex setDexParams={setDexParams} />
+              <ScreenPokedex setDexParams={setDexParams} />
             </React.Suspense>
           </TabItem>
           <TabItem url="/info" name="info" title="Info">

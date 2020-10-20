@@ -1,0 +1,4 @@
+- Switch to link buttons on Paginator
+- Store state when clicking a Pokemon's defense matchup
+- Automatically sync params to App state?
+- Remove TabItem and TabContainer
