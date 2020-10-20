@@ -114,7 +114,7 @@ interface DexProps {
   updateType2(type: Type): void;
 }
 
-export function Dex(props: DexProps) {
+export default function Dex(props: DexProps) {
   const { search, updateSearch, updateCurrentPage, currentPage } = props;
 
   const pkmn = React.useMemo(() => {

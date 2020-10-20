@@ -1,8 +1,7 @@
 import * as React from "react";
-
-import { TypeSelector } from "./TypeSelector";
-import * as Matchups from "./Matchups";
 import { Type } from "./data";
+import * as Matchups from "./Matchups";
+import TypeSelector from "./TypeSelector";
 
 interface DefenseProps {
   updateType1(type: Type): void;
@@ -11,7 +10,7 @@ interface DefenseProps {
   type2: Type;
 }
 
-export function Defense(props: DefenseProps) {
+export default function Defense(props: DefenseProps) {
   const { updateType1, updateType2, type1, type2 } = props;
   const classH2 = "tc f5 mv3";
   return (

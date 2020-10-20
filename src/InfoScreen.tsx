@@ -2,7 +2,7 @@ import * as React from "react";
 
 const year = new Date().getFullYear();
 
-export function InfoScreen() {
+export default function InfoScreen() {
   return (
     <div className="pa3 center mw7 lh-copy">
       <h2 className="lh-title f5">August 2020</h2>

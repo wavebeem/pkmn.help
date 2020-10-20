@@ -1,16 +1,43 @@
 import * as React from "react";
-
-import { Type } from "./data";
-import { MultiTypeSelector } from "./MultiTypeSelector";
+import { useHistory } from "react-router-dom";
+import { AppState } from "./App";
+import { Type, types } from "./data";
 import * as Matchups from "./Matchups";
+import { MultiTypeSelector } from "./MultiTypeSelector";
+import { useSearch } from "./useSearch";
 
 interface OffenseProps {
-  updateOffenseTypes(types: Type[]): void;
-  offenseTypes: Type[];
+  setState: React.Dispatch<React.SetStateAction<AppState>>;
 }
 
-export function Offense(props: OffenseProps) {
-  const { offenseTypes, updateOffenseTypes } = props;
+export default function Offense(props: OffenseProps) {
+  const { setState } = props;
+  const search = useSearch();
+  const history = useHistory();
+  const offenseTypes = (search.get("types") || "")
+    .split(/\s+/)
+    .filter((s) => types.some((t) => t === s)) as Type[];
+
+  const typesString = offenseTypes.join(" ");
+
+  const updateQuery = (query: string) => {
+    const params = new URLSearchParams();
+    if (types.length > 0) {
+      params.set("types", query);
+    }
+    const search = `?${params}`;
+    history.replace({ search: search });
+    setState((state) => ({ ...state, offenseParams: search }));
+  };
+
+  const updateOffenseTypes = (types: Type[]) => {
+    updateQuery(types.join(" "));
+  };
+
+  React.useEffect(() => {
+    updateQuery(typesString);
+  }, [typesString]);
+
   const classH2 = "tc f5 mv3";
   return (
     <main className="ph3 pt1 pb4 mw6 mw9-ns center">

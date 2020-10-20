@@ -10,12 +10,11 @@ import {
 } from "./data";
 
 const DexCoverage = React.lazy(async () => {
-  const { DexCoverage } = await import(
+  return await import(
     /* webpackChunkName: "DexCoverage" */
     /* webpackPrefetch: true */
     "./DexCoverage"
   );
-  return { default: DexCoverage };
 });
 
 interface BadgeProps {

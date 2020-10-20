@@ -44,7 +44,9 @@ export function MultiTypeSelector(props: TypeSelectorProps) {
               } else {
                 types.add(type);
               }
-              props.onChange([...types]);
+              // Should we sort based on the type order on the page rather than
+              // alphabetical? I'll just stick with alphabetical for now.
+              props.onChange([...types].sort());
             }}
           >
             <span className="flex flex-row items-center justify-center">
