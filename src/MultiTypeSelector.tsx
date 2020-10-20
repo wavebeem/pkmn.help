@@ -10,7 +10,7 @@ interface TypeSelectorProps {
   value: Type[];
 }
 
-export function MultiTypeSelector(props: TypeSelectorProps) {
+export default function MultiTypeSelector(props: TypeSelectorProps) {
   const styles = {
     selected: "b--black-30 type-bg-dark no-box-shadow button-shadow",
     normal:

@@ -5,8 +5,10 @@ interface TabItemProps {
   children: any;
 }
 
-export function TabItem(props: TabItemProps) {
+function TabItem(props: TabItemProps) {
   return props.children;
 }
 
 TabItem.displayName = "TabItem";
+
+export default TabItem;

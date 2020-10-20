@@ -1,0 +1,68 @@
+import * as React from "react";
+import { useHistory } from "react-router-dom";
+import { Type, typesFromString } from "./data";
+import * as Matchups from "./Matchups";
+import TypeSelector from "./TypeSelector";
+import { useSearch } from "./useSearch";
+
+interface DefenseProps {
+  setDefenseParams: (params: string) => void;
+}
+
+export default function ScreenDefense(props: DefenseProps) {
+  const search = useSearch();
+  const history = useHistory();
+
+  const [type1 = Type.NORMAL, type2 = Type.NONE] = typesFromString(
+    search.get("types") || ""
+  );
+
+  function updateTypes(types: Type[]) {
+    const params = new URLSearchParams();
+    if (types.length >= 0) {
+      if (types[1] === Type.NONE) {
+        params.set("types", types[0]);
+      } else {
+        params.set("types", types.join(" "));
+      }
+    }
+    history.replace({ search: "?" + params });
+    props.setDefenseParams("?" + params);
+  }
+
+  function updateType1(t: Type) {
+    updateTypes([t, type2]);
+  }
+
+  function updateType2(t: Type) {
+    updateTypes([type1, t]);
+  }
+
+  const classH2 = "tc f5 mv3";
+  return (
+    <main className="ph3 pt1 pb4 mw6 mw9-ns center">
+      <div className="dib w-50-ns w-100 v-top">
+        <h2 className={classH2}>Choose Primary Type</h2>
+        <TypeSelector
+          value={type1}
+          onChange={updateType1}
+          disabledTypes={[]}
+          includeNone={false}
+        />
+        <h2 className={`${classH2} mt4`}>Choose Secondary Type</h2>
+        <TypeSelector
+          value={type2}
+          onChange={updateType2}
+          disabledTypes={[type1]}
+          includeNone={true}
+        />
+      </div>
+      <div className="dib w-50-ns w-100 v-top pl3-ns">
+        <hr className="dn-ns subtle-hr mv4" />
+        <Matchups.Defense type1={type1} type2={type2} />
+      </div>
+    </main>
+  );
+}
+
+ScreenDefense.displayName = "Defense";

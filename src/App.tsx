@@ -1,12 +1,11 @@
 import * as React from "react";
-import * as Router from "react-router";
-
-import Offense from "./Offense";
-import Defense from "./Defense";
-import InfoScreen from "./InfoScreen";
-import { TabItem } from "./Tab";
-import TabContainer from "./TabContainer";
 import { Type, types } from "./data";
+import InfoScreen from "./InfoScreen";
+import ScreenDefense from "./ScreenDefense";
+import ScreenOffense from "./ScreenOffense";
+import TabItem from "./TabItem";
+import TabContainer from "./TabContainer";
+import { useSearch } from "./useSearch";
 
 const Dex = React.lazy(async () => {
   return await import(
@@ -44,11 +43,10 @@ export interface AppState {
 }
 
 export default function App() {
-  const [state, setState] = React.useState<AppState>({
-    defenseParams: "",
-    offenseParams: "",
-    dexParams: "",
-  });
+  const search = useSearch();
+  const [defenseParams, setDefenseParams] = React.useState("?" + search);
+  const [offenseParams, setOffenseParams] = React.useState("?" + search);
+  const [dexParams, setDexParams] = React.useState("?" + search);
   return (
     <div className="sans-serif bg-near-white near-black min-vh-100 flex flex-column">
       <div className="flex-auto">
@@ -59,16 +57,20 @@ export default function App() {
         </h1>
         <TabContainer>
           <TabItem
-            url={`/offense${state.offenseParams}`}
+            url={`/offense${offenseParams}`}
             name="offense"
             title="Offense"
           >
-            <Offense setState={setState} />
+            <ScreenOffense setOffenseParams={setOffenseParams} />
           </TabItem>
-          {/* <TabItem name="defense" title="Defense">
-            <Defense state={state} setState={setState} />
+          <TabItem
+            url={`/defense${defenseParams}`}
+            name="defense"
+            title="Defense"
+          >
+            <ScreenDefense setDefenseParams={setDefenseParams} />
           </TabItem>
-          <TabItem name="pokedex" title="Pokédex">
+          {/* <TabItem name="pokedex" title="Pokédex">
             <React.Suspense
               fallback={<div className="Spinner center mt4 f2" />}
             >
