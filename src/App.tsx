@@ -16,7 +16,7 @@ const ScreenPokedex = React.lazy(async () => {
 export default function App() {
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
-  const [dexParams, setDexParams] = React.useState("");
+  const [pokedexParams, setPokedexParams] = React.useState("");
   return (
     <div className="sans-serif bg-near-white near-black min-vh-100 flex flex-column">
       <div className="flex-auto">
@@ -40,11 +40,15 @@ export default function App() {
           >
             <ScreenDefense setDefenseParams={setDefenseParams} />
           </TabItem>
-          <TabItem url={`/pokedex${dexParams}`} name="pokedex" title="Pokédex">
+          <TabItem
+            url={`/pokedex${pokedexParams}`}
+            name="pokedex"
+            title="Pokédex"
+          >
             <React.Suspense
               fallback={<div className="Spinner center mt4 f2" />}
             >
-              <ScreenPokedex setDexParams={setDexParams} />
+              <ScreenPokedex setPokedexParams={setPokedexParams} />
             </React.Suspense>
           </TabItem>
           <TabItem url="/info" name="info" title="Info">

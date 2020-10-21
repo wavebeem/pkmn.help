@@ -1,15 +1,14 @@
-import * as React from "react";
 import classnames from "classnames";
 import matchSorter from "match-sorter";
+import * as React from "react";
 import { Link, useHistory } from "react-router-dom";
-
-import { AllPokemon, Pokemon } from "./pkmn";
-import { Paginator } from "./Paginator";
-import { Search } from "./Search";
 import { Type } from "./data";
-import { getImage } from "./getImage";
 import { clickPokemon, sendPageView } from "./ga";
-import { StatsTable } from "./StatsTable";
+import { getImage } from "./getImage";
+import Paginator from "./Paginator";
+import { AllPokemon, Pokemon } from "./pkmn";
+import Search from "./Search";
+import StatsTable from "./StatsTable";
 import { useSearch } from "./useSearch";
 
 const PAGE_SIZE = 20;
@@ -104,7 +103,7 @@ function Monster(props: MonsterProps) {
 }
 
 interface DexProps {
-  setDexParams: (params: string) => void;
+  setPokedexParams: (params: string) => void;
 }
 
 export default function ScreenPokedex(props: DexProps) {
@@ -123,7 +122,7 @@ export default function ScreenPokedex(props: DexProps) {
     return matchSorter(AllPokemon, s, { keys: ["name", "number"] });
   }, [query]);
 
-  function update(newQuery: string, newPage: number) {
+  function createParams(newQuery: string, newPage: number): string {
     const params = new URLSearchParams();
     if (newQuery) {
       params.set("q", newQuery);
@@ -131,8 +130,14 @@ export default function ScreenPokedex(props: DexProps) {
     if (Number(newPage) > 0) {
       params.set("page", String(newPage + 1));
     }
-    history.replace({ search: "?" + params });
-    props.setDexParams("?" + params);
+    const s = params.toString();
+    return s ? "?" + s : "";
+  }
+
+  function update(newQuery: string, newPage: number) {
+    const params = createParams(newQuery, newPage);
+    history.replace({ search: params });
+    props.setPokedexParams(params);
   }
 
   React.useEffect(() => {
@@ -150,14 +155,8 @@ export default function ScreenPokedex(props: DexProps) {
       />
       <Paginator
         currentPage={page}
-        updatePage={(newPage) => {
-          update(query, newPage);
-        }}
-        updatePageNext={() => {
-          update(query, page + 1);
-        }}
-        updatePagePrev={() => {
-          update(query, page - 1);
+        urlForPage={(newPage) => {
+          return createParams(query, newPage);
         }}
         pageSize={PAGE_SIZE}
         emptyState={<p className="silver f4 b tc m0">No Pokémon found</p>}

@@ -1,15 +1,14 @@
-import * as React from "react";
 import classnames from "classnames";
-
+import * as React from "react";
 import imageClearURL from "../svg/clear.svg";
 import imageSearchURL from "../svg/search.svg";
 
 interface SearchProps {
-  updateSearch(search: string): any;
+  updateSearch: (search: string) => void;
   search: string;
 }
 
-export function Search(props: SearchProps) {
+export default function Search(props: SearchProps) {
   const { updateSearch, search } = props;
   const ref = React.useRef<HTMLInputElement>(null);
   const iconSize = 24;
