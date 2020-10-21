@@ -18,14 +18,6 @@ export default function ScreenDefense(props: DefenseProps) {
     search.get("types") || ""
   );
 
-  React.useEffect(() => {
-    props.setDefenseParams(createParams([type1, type2]));
-  }, [type1, type2]);
-
-  React.useEffect(() => {
-    sendPageView();
-  }, []);
-
   function createParams(types: Type[]): string {
     const params = new URLSearchParams();
     if (types.length >= 0) {
@@ -53,6 +45,15 @@ export default function ScreenDefense(props: DefenseProps) {
   function updateType2(t: Type) {
     updateTypes([type1, t]);
   }
+
+  React.useEffect(() => {
+    sendPageView();
+  }, []);
+
+  const params = createParams([type1, type2]);
+  React.useEffect(() => {
+    props.setDefenseParams(params);
+  }, [params]);
 
   const classH2 = "tc f5 mv3";
   return (

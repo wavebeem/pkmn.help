@@ -137,12 +137,16 @@ export default function ScreenPokedex(props: DexProps) {
   function update(newQuery: string, newPage: number) {
     const params = createParams(newQuery, newPage);
     history.replace({ search: params });
-    props.setPokedexParams(params);
   }
 
   React.useEffect(() => {
     sendPageView();
   }, []);
+
+  const params = createParams(query, page);
+  React.useEffect(() => {
+    props.setPokedexParams(params);
+  }, [params]);
 
   return (
     <div className="ph3 mt3 center mw7">

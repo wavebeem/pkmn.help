@@ -14,12 +14,6 @@ export default function ScreenOffense(props: OffenseProps) {
   const search = useSearch();
   const history = useHistory();
   const offenseTypes = typesFromString(search.get("types") || "");
-  const typeString = offenseTypes.join(" ");
-
-  React.useEffect(() => {
-    console.log("setOffenseParams", offenseTypes);
-    props.setOffenseParams(createParams(offenseTypes));
-  }, [typeString]);
 
   function createParams(types: Type[]): string {
     const params = new URLSearchParams();
@@ -40,6 +34,11 @@ export default function ScreenOffense(props: OffenseProps) {
   React.useEffect(() => {
     sendPageView();
   }, []);
+
+  const params = createParams(offenseTypes);
+  React.useEffect(() => {
+    props.setOffenseParams(params);
+  }, [params]);
 
   const classH2 = "tc f5 mv3";
   return (
