@@ -1,9 +1,9 @@
 import * as React from "react";
 import { useHistory } from "react-router-dom";
 import { Type, typesFromString } from "./data";
-import { sendPageView } from "./ga";
 import * as Matchups from "./Matchups";
 import TypeSelector from "./TypeSelector";
+import { usePageView } from "./usePageView";
 import { useSearch } from "./useSearch";
 
 interface DefenseProps {
@@ -11,6 +11,8 @@ interface DefenseProps {
 }
 
 export default function ScreenDefense(props: DefenseProps) {
+  usePageView();
+
   const search = useSearch();
   const history = useHistory();
 
@@ -45,10 +47,6 @@ export default function ScreenDefense(props: DefenseProps) {
   function updateType2(t: Type) {
     updateTypes([type1, t]);
   }
-
-  React.useEffect(() => {
-    sendPageView();
-  }, []);
 
   const params = createParams([type1, type2]);
   React.useEffect(() => {

@@ -9,6 +9,7 @@ import Paginator from "./Paginator";
 import { AllPokemon, Pokemon } from "./pkmn";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
+import { usePageView } from "./usePageView";
 import { useSearch } from "./useSearch";
 
 const PAGE_SIZE = 20;
@@ -107,6 +108,8 @@ interface DexProps {
 }
 
 export default function ScreenPokedex(props: DexProps) {
+  usePageView();
+
   const search = useSearch();
   const history = useHistory();
 
@@ -138,10 +141,6 @@ export default function ScreenPokedex(props: DexProps) {
     const params = createParams(newQuery, newPage);
     history.replace({ search: params });
   }
-
-  React.useEffect(() => {
-    sendPageView();
-  }, []);
 
   const params = createParams(query, page);
   React.useEffect(() => {

@@ -1,7 +1,7 @@
 import classnames from "classnames";
 import * as React from "react";
 import { NavLink, Redirect, Route, Switch } from "react-router-dom";
-import InfoScreen from "./InfoScreen";
+import ScreenInfo from "./ScreenInfo";
 import ScreenDefense from "./ScreenDefense";
 import ScreenOffense from "./ScreenOffense";
 
@@ -93,7 +93,7 @@ export default function App() {
                 </React.Suspense>
               )}
             />
-            <Route path="/info" component={InfoScreen} />
+            <Route path="/info" component={ScreenInfo} />
             <Redirect to="/offense" />
           </Switch>
         </div>

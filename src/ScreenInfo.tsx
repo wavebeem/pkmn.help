@@ -1,8 +1,10 @@
 import * as React from "react";
+import { usePageView } from "./usePageView";
 
 const year = new Date().getFullYear();
 
-export default function InfoScreen() {
+export default function ScreenInfo() {
+  usePageView();
   return (
     <div className="pa3 center mw7 lh-copy">
       <h2 className="lh-title f5">October 2020</h2>
