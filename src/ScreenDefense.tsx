@@ -19,10 +19,14 @@ export default function ScreenDefense(props: DefenseProps) {
   );
 
   React.useEffect(() => {
+    props.setDefenseParams(createParams([type1, type2]));
+  }, [type1, type2]);
+
+  React.useEffect(() => {
     sendPageView();
   }, []);
 
-  function updateTypes(types: Type[]) {
+  function createParams(types: Type[]): string {
     const params = new URLSearchParams();
     if (types.length >= 0) {
       if (types[1] === Type.NONE) {
@@ -31,8 +35,15 @@ export default function ScreenDefense(props: DefenseProps) {
         params.set("types", types.join(" "));
       }
     }
-    history.replace({ search: "?" + params });
-    props.setDefenseParams("?" + params);
+    const s = params.toString();
+    if (s) {
+      return "?" + s;
+    }
+    return "";
+  }
+
+  function updateTypes(types: Type[]) {
+    history.replace({ search: createParams(types) });
   }
 
   function updateType1(t: Type) {

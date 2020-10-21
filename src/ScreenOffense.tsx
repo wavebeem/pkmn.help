@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useRouteMatch } from "react-router-dom";
 import { Type, typesFromString } from "./data";
 import { sendPageView } from "./ga";
 import * as Matchups from "./Matchups";
@@ -14,14 +14,27 @@ export default function ScreenOffense(props: OffenseProps) {
   const search = useSearch();
   const history = useHistory();
   const offenseTypes = typesFromString(search.get("types") || "");
+  const typeString = offenseTypes.join(" ");
 
-  const updateOffenseTypes = (types: Type[]) => {
+  React.useEffect(() => {
+    console.log("setOffenseParams", offenseTypes);
+    props.setOffenseParams(createParams(offenseTypes));
+  }, [typeString]);
+
+  function createParams(types: Type[]): string {
     const params = new URLSearchParams();
     if (types.length > 0) {
       params.set("types", types.join(" "));
     }
-    history.replace({ search: "?" + params });
-    props.setOffenseParams("?" + params);
+    const s = params.toString();
+    if (s) {
+      return "?" + s;
+    }
+    return "";
+  }
+
+  const updateOffenseTypes = (types: Type[]) => {
+    history.replace({ search: createParams(types) });
   };
 
   React.useEffect(() => {
