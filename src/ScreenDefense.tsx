@@ -29,11 +29,7 @@ export default function ScreenDefense(props: DefenseProps) {
         params.set("types", types.join(" "));
       }
     }
-    const s = params.toString();
-    if (s) {
-      return "?" + s;
-    }
-    return "";
+    return "?" + params;
   }
 
   function updateTypes(types: Type[]) {

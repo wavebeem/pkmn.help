@@ -6,7 +6,7 @@ const year = new Date().getFullYear();
 export default function ScreenInfo() {
   usePageView();
   return (
-    <div className="pa3 center mw7 lh-copy">
+    <main className="pa3 center mw7 lh-copy">
       <h2 className="lh-title f5">October 2020</h2>
       <ul className="lh-copy mt1 ph3">
         <li>URL support for bookmarks and links</li>
@@ -102,6 +102,6 @@ export default function ScreenInfo() {
         </a>
         .
       </p>
-    </div>
+    </main>
   );
 }

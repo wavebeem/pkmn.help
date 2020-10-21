@@ -90,8 +90,8 @@ button {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 }
 
-.DashedFocus:focus {
-  outline: 2px dashed currentColor;
+.DottedFocus:focus {
+  outline: 2px dotted currentColor;
   outline-offset: 4px;
 }
 
@@ -109,11 +109,6 @@ button {
   outline: none;
   border-color: black;
   box-shadow: inset 0 0 0 1px black;
-}
-
-.InnerDashedFocus:focus {
-  outline: 2px dashed currentColor;
-  outline-offset: -6px;
 }
 
 .StatsTable {

@@ -9,7 +9,7 @@ exports[`Footer renders correctly 1`] = `
   >
     <p>
       <a
-        className="ThickUnderline b near-black hover-gray DashedFocus"
+        className="ThickUnderline b near-black hover-gray DottedFocus"
         href="#"
         onClick={[Function]}
       >
@@ -32,7 +32,7 @@ exports[`Footer renders correctly 1`] = `
       2020
        
       <a
-        className="b ThickUnderline near-black hover-gray DashedFocus"
+        className="b ThickUnderline near-black hover-gray DottedFocus"
         href="https://mockbrian.com"
       >
         Brian Mock

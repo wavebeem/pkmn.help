@@ -22,11 +22,7 @@ export default function ScreenOffense(props: OffenseProps) {
     if (types.length > 0) {
       params.set("types", types.join(" "));
     }
-    const s = params.toString();
-    if (s) {
-      return "?" + s;
-    }
-    return "";
+    return "?" + params;
   }
 
   const updateOffenseTypes = (types: Type[]) => {

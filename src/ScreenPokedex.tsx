@@ -48,7 +48,7 @@ function Monster(props: MonsterProps) {
       className={classnames(
         "near-black pv3",
         "flex-ns items-center bb b--black-10",
-        "Monster InnerDashedFocus",
+        "Monster",
         props.index === 0 ? "bt" : ""
       )}
     >
@@ -133,8 +133,7 @@ export default function ScreenPokedex(props: DexProps) {
     if (Number(newPage) > 0) {
       params.set("page", String(newPage + 1));
     }
-    const s = params.toString();
-    return s ? "?" + s : "";
+    return "?" + params;
   }
 
   function update(newQuery: string, newPage: number) {
@@ -148,8 +147,7 @@ export default function ScreenPokedex(props: DexProps) {
   }, [params]);
 
   return (
-    <div className="ph3 mt3 center mw7">
-      <div className="ph1" />
+    <main className="ph3 mt3 center mw7">
       <Search
         search={query}
         updateSearch={(newQuery) => {
@@ -170,7 +168,7 @@ export default function ScreenPokedex(props: DexProps) {
           ))
         }
       />
-    </div>
+    </main>
   );
 }
 
