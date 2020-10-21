@@ -94,7 +94,7 @@ export default function App() {
               )}
             />
             <Route path="/info" component={ScreenInfo} />
-            <Redirect to="/offense" />
+            <Redirect to="/defense" />
           </Switch>
         </div>
       </div>
