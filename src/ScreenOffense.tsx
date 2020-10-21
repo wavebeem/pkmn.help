@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useHistory, useRouteMatch } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { Type, typesFromString } from "./data";
 import { sendPageView } from "./ga";
 import * as Matchups from "./Matchups";

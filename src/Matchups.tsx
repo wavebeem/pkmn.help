@@ -1,12 +1,11 @@
-import * as React from "react";
 import classnames from "classnames";
-
+import * as React from "react";
 import {
-  Type,
+  defensiveMatchups,
   Effectiveness,
   GroupedMatchups,
-  defensiveMatchups,
   offensiveMatchups,
+  Type,
 } from "./data";
 
 const DexCoverage = React.lazy(async () => {
