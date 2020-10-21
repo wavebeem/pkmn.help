@@ -1,6 +1,5 @@
-import * as React from "react";
 import classnames from "classnames";
-
+import * as React from "react";
 import { Type, types } from "./data";
 
 const buttonInnerHeight = "1.5rem";
@@ -10,7 +9,7 @@ interface TypeSelectorProps {
   value: Type[];
 }
 
-export function MultiTypeSelector(props: TypeSelectorProps) {
+export default function MultiTypeSelector(props: TypeSelectorProps) {
   const styles = {
     selected: "b--black-30 type-bg-dark no-box-shadow button-shadow",
     normal:
@@ -44,7 +43,9 @@ export function MultiTypeSelector(props: TypeSelectorProps) {
               } else {
                 types.add(type);
               }
-              props.onChange([...types]);
+              // Should we sort based on the type order on the page rather than
+              // alphabetical? I'll just stick with alphabetical for now.
+              props.onChange([...types].sort());
             }}
           >
             <span className="flex flex-row items-center justify-center">

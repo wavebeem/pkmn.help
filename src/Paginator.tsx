@@ -1,7 +1,6 @@
-import * as React from "react";
 import classnames from "classnames";
-
-import { RoundButton } from "./RoundButton";
+import * as React from "react";
+import { LinkButton } from "./LinkButton";
 
 enum Location {
   TOP = "top",
@@ -13,9 +12,7 @@ interface PageSelectorProps {
   pageItems: any[];
   location: Location;
   currentPage: number;
-  updatePage(page: number): void;
-  updatePagePrev(): void;
-  updatePageNext(): void;
+  urlForPage: (page: number) => string;
   hasPrev: boolean;
   hasNext: boolean;
 }
@@ -26,6 +23,7 @@ function PageSelector(props: PageSelectorProps) {
   const [scrollTo, setScrollTo] = React.useState<Location | undefined>(
     undefined
   );
+
   React.useLayoutEffect(() => {
     if (scrollTo === Location.TOP) {
       window.scrollTo(0, 0);
@@ -34,6 +32,7 @@ function PageSelector(props: PageSelectorProps) {
     }
     setScrollTo(undefined);
   }, [scrollTo]);
+
   return (
     <div
       className={classnames(
@@ -41,27 +40,27 @@ function PageSelector(props: PageSelectorProps) {
         props.pageItems.length === 0 ? "dn" : "flex"
       )}
     >
-      <RoundButton
+      <LinkButton
         onClick={() => {
-          props.updatePage(0);
           setScrollTo(props.location);
         }}
-        disabled={!props.hasPrev}
+        aria-disabled={props.hasPrev ? "false" : "true"}
+        to={props.urlForPage(0)}
         aria-label="First"
       >
         &laquo;
-      </RoundButton>
+      </LinkButton>
       <div className="pr1" />
-      <RoundButton
+      <LinkButton
         onClick={() => {
-          props.updatePagePrev();
           setScrollTo(props.location);
         }}
-        disabled={!props.hasPrev}
+        aria-disabled={props.hasPrev ? "false" : "true"}
+        to={props.urlForPage(props.currentPage - 1)}
         aria-label="Previous"
       >
         <span role="presentation">&lsaquo; </span>Prev
-      </RoundButton>
+      </LinkButton>
       <div className="flex-auto tc b f5 tabular-nums">
         {(props.currentPage + 1)
           .toString()
@@ -69,35 +68,33 @@ function PageSelector(props: PageSelectorProps) {
         {" / "}
         {props.numPages}
       </div>
-      <RoundButton
+      <LinkButton
         onClick={() => {
-          props.updatePageNext();
           setScrollTo(props.location);
         }}
-        disabled={!props.hasNext}
+        aria-disabled={props.hasNext ? "false" : "true"}
+        to={props.urlForPage(props.currentPage + 1)}
         aria-label="Next"
       >
         Next<span role="presentation"> &rsaquo;</span>
-      </RoundButton>
+      </LinkButton>
       <div className="pr1" />
-      <RoundButton
+      <LinkButton
         onClick={() => {
-          props.updatePage(props.numPages - 1);
           setScrollTo(props.location);
         }}
-        disabled={!props.hasNext}
+        aria-disabled={props.hasNext ? "false" : "true"}
+        to={props.urlForPage(props.numPages - 1)}
         aria-label="Last"
       >
         &raquo;
-      </RoundButton>
+      </LinkButton>
     </div>
   );
 }
 
 interface PaginatorProps<T> {
-  updatePage: (page: number) => void;
-  updatePagePrev: () => void;
-  updatePageNext: () => void;
+  urlForPage: (page: number) => string;
   currentPage: number;
   pageSize: number;
   emptyState: any;
@@ -105,16 +102,14 @@ interface PaginatorProps<T> {
   renderPage: (items: T[]) => any;
 }
 
-export function Paginator<T>(props: PaginatorProps<T>) {
+export default function Paginator<T>(props: PaginatorProps<T>) {
   const {
     currentPage,
     pageSize,
     items,
     emptyState,
     renderPage,
-    updatePage,
-    updatePagePrev,
-    updatePageNext,
+    urlForPage,
   } = props;
   const numPages = Math.ceil(items.length / pageSize);
   const hasPrev = currentPage > 0;
@@ -130,9 +125,7 @@ export function Paginator<T>(props: PaginatorProps<T>) {
         hasPrev={hasPrev}
         hasNext={hasNext}
         currentPage={currentPage}
-        updatePage={updatePage}
-        updatePagePrev={updatePagePrev}
-        updatePageNext={updatePageNext}
+        urlForPage={urlForPage}
       />
       {pageItems.length === 0 ? emptyState : renderPage(pageItems)}
       <PageSelector
@@ -142,9 +135,7 @@ export function Paginator<T>(props: PaginatorProps<T>) {
         hasPrev={hasPrev}
         hasNext={hasNext}
         currentPage={currentPage}
-        updatePage={updatePage}
-        updatePagePrev={updatePagePrev}
-        updatePageNext={updatePageNext}
+        urlForPage={urlForPage}
       />
     </div>
   );

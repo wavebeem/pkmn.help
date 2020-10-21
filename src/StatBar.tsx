@@ -7,7 +7,7 @@ export interface StatBarProps {
   type: Type;
 }
 
-export function StatBar(props: StatBarProps) {
+export default function StatBar(props: StatBarProps) {
   const { value, max, type } = props;
   return (
     <div

@@ -1,6 +1,5 @@
-import * as React from "react";
 import classnames from "classnames";
-
+import * as React from "react";
 import { Type, types, typesOrNone } from "./data";
 
 const buttonInnerHeight = "1.5rem";
@@ -12,7 +11,7 @@ interface TypeSelectorProps {
   disabledTypes: Type[];
 }
 
-export function TypeSelector(props: TypeSelectorProps) {
+export default function TypeSelector(props: TypeSelectorProps) {
   const theTypes = props.includeNone ? typesOrNone : types;
   const styles = {
     disabled: "b--black-10 bg-near-white o-60",

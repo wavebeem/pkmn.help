@@ -1,10 +1,16 @@
 import * as React from "react";
+import { usePageView } from "./usePageView";
 
 const year = new Date().getFullYear();
 
-export function InfoScreen() {
+export default function ScreenInfo() {
+  usePageView();
   return (
-    <div className="pa3 center mw7 lh-copy">
+    <main className="pa3 center mw7 lh-copy">
+      <h2 className="lh-title f5">October 2020</h2>
+      <ul className="lh-copy mt1 ph3">
+        <li>URL support for bookmarks and links</li>
+      </ul>
       <h2 className="lh-title f5">August 2020</h2>
       <ul className="lh-copy mt1 ph3">
         <li>Added multi-type support to Offense tab</li>
@@ -96,6 +102,6 @@ export function InfoScreen() {
         </a>
         .
       </p>
-    </div>
+    </main>
   );
 }

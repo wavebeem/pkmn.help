@@ -23,6 +23,14 @@ export enum Type {
   NONE = "none",
 }
 
+function isType(str: string): str is Type {
+  return types.some((t) => t === str);
+}
+
+export function typesFromString(str: string): Type[] {
+  return str.split(/\s+/).filter(isType);
+}
+
 export const types = [
   Type.NORMAL,
   Type.FIGHTING,
