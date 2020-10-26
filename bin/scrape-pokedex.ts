@@ -253,8 +253,6 @@ function combineData() {
     delete dexByNumber[num];
     delete statsByNumber[num];
   }
-  // saveJSON("../build/data-dexByNumber.json", dexByNumber);
-  // saveJSON("../build/data-statsByNumber.json", statsByNumber);
 }
 
 function saveJSON(filename: string, data: any): void {
@@ -305,12 +303,12 @@ function addDataCorrections() {
 async function main(): Promise<void> {
   await fillDex();
   await fillStats();
-  // saveJSON("../build/data-stats.json", stats);
-  // saveJSON("../build/data-dex.json", dex);
   combineData();
   addDataCorrections();
   saveJSON(
     "../src/data-pkmn.json",
+    // Remove the Bulbapedia image URL before saving the JSON file to disk; we
+    // use the ID to load the file through webpack instead.
     monsters.map((mon) => {
       return { ...mon, imageURL: undefined };
     })
