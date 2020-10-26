@@ -2,6 +2,26 @@
 <html lang="en-US" dir="ltr">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      http-equiv="content-security-policy"
+      content="
+        default-src
+          'self';
+
+        img-src
+          'self'
+          https://www.google-analytics.com;
+
+        script-src
+          'self'
+          https://www.googletagmanager.com
+          https://www.google-analytics.com;
+        
+        style-src
+          'self'
+          'unsafe-inline';
+      "
+    />
     <title>Pokémon Type Calculator</title>
     <meta name="og:title" content="Pokémon Type Calculator" />
     <link rel="icon" sizes="16x16" href="/favicon-16.png" />
@@ -33,23 +53,6 @@
       async
       src="https://www.googletagmanager.com/gtag/js?id=UA-52704502-5"
     ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      if (
-        window.location.hostname === "pkmn.help" ||
-        window.location.hostname === "www.pkmn.help"
-      ) {
-        gtag("config", "UA-52704502-5", {
-          send_page_view: false,
-        });
-      } else {
-        window.gtag = console.info.bind(console, "gtag");
-      }
-    </script>
   </head>
   <body>
     <div id="app"></div>
