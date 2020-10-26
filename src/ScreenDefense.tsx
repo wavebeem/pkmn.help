@@ -4,6 +4,7 @@ import { Type, typesFromString } from "./data";
 import * as Matchups from "./Matchups";
 import TypeSelector from "./TypeSelector";
 import { usePageView } from "./usePageView";
+import { useScrollToFragment } from "./useScrollToFragment";
 import { useSearch } from "./useSearch";
 
 interface DefenseProps {
@@ -12,6 +13,7 @@ interface DefenseProps {
 
 export default function ScreenDefense(props: DefenseProps) {
   usePageView();
+  useScrollToFragment();
 
   const search = useSearch();
   const history = useHistory();

@@ -71,7 +71,7 @@ function Monster(props: MonsterProps) {
             className="underline dark-blue hover-blue OutlineFocus"
             to={`/defense?${new URLSearchParams({
               types: props.pokemon.types.join(" "),
-            })}`}
+            })}#matchup-defense`}
             onClick={() => {
               clickPokemon(props.pokemon.id);
             }}

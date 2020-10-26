@@ -66,7 +66,7 @@ interface MatchupsProps {
 
 function Matchups(props: MatchupsProps) {
   return (
-    <div className="tc pt2">
+    <div className="tc pt2" id={`matchup-${props.kind}`}>
       {props.kind === "offense" ? (
         <div>
           <h3 className="f5 mt3 mb0 dark-gray">Weakness Coverage</h3>
