@@ -12,7 +12,7 @@ initGA();
 
 ReactDOM.render(
   <React.StrictMode>
-    <ErrorBoundary fallback={<ScreenError />}>
+    <ErrorBoundary render={(error) => <ScreenError error={error} />}>
       <BrowserRouter>
         <App />
       </BrowserRouter>

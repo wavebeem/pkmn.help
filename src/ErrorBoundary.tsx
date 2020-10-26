@@ -1,7 +1,7 @@
 import * as React from "react";
 
 type ErrorBoundaryProps = {
-  fallback: React.ReactNode;
+  render: (error: Error) => React.ReactNode;
 };
 
 type ErrorBoundaryState = {
@@ -23,7 +23,7 @@ export default class ErrorBoundary extends React.Component<
 
   render() {
     if (this.state.error) {
-      return this.props.fallback;
+      return this.props.render(this.state.error);
     }
     return this.props.children;
   }
