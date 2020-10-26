@@ -10,8 +10,7 @@ module.exports = {
   },
   devtool: "source-map",
   devServer: {
-    contentBase: __dirname,
-    compress: true,
+    contentBase: path.join(__dirname, "public"),
     historyApiFallback: true,
   },
   resolve: {
@@ -20,7 +19,6 @@ module.exports = {
   module: {
     rules: [
       {
-        // Not actually loading any JS files any more, but whatever
         test: /\.(ts|tsx|js)?$/,
         loader: "ts-loader",
         include: path.resolve(__dirname, "src"),

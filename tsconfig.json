@@ -10,7 +10,8 @@
     "target": "es2017",
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "allowUmdGlobalAccess": false
   },
   "include": ["src", "bin"],
   "exclude": ["node_modules"]
