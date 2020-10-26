@@ -3054,15 +3054,15 @@
   },
   {
     "name": "Articuno",
-    "formName": "",
+    "formName": "Galarian Form",
     "number": 144,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Articuno_(Pok%C3%A9mon)",
     "hp": 90,
     "attack": 85,
-    "defense": 100,
-    "spAttack": 95,
-    "spDefense": 125,
-    "speed": 85,
+    "defense": 85,
+    "spAttack": 125,
+    "spDefense": 100,
+    "speed": 95,
     "id": "pkmn-144b",
     "types": [
       "psychic",
@@ -3088,13 +3088,13 @@
   },
   {
     "name": "Zapdos",
-    "formName": "",
+    "formName": "Galarian Form",
     "number": 145,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zapdos_(Pok%C3%A9mon)",
     "hp": 90,
-    "attack": 90,
-    "defense": 85,
-    "spAttack": 125,
+    "attack": 125,
+    "defense": 90,
+    "spAttack": 85,
     "spDefense": 90,
     "speed": 100,
     "id": "pkmn-145b",
@@ -3122,14 +3122,14 @@
   },
   {
     "name": "Moltres",
-    "formName": "",
+    "formName": "Galarian Form",
     "number": 146,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Moltres_(Pok%C3%A9mon)",
     "hp": 90,
-    "attack": 100,
+    "attack": 85,
     "defense": 90,
-    "spAttack": 125,
-    "spDefense": 85,
+    "spAttack": 100,
+    "spDefense": 125,
     "speed": 90,
     "id": "pkmn-146b",
     "types": [
@@ -4061,18 +4061,19 @@
   },
   {
     "name": "Slowking",
-    "formName": "",
+    "formName": "Galarian form",
     "number": 199,
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Slowking_(Pok%C3%A9mon)",
     "hp": 95,
-    "attack": 75,
+    "attack": 65,
     "defense": 80,
-    "spAttack": 100,
+    "spAttack": 110,
     "spDefense": 110,
     "speed": 30,
     "id": "pkmn-199b",
     "types": [
-      "???"
+      "poison",
+      "psychic"
     ]
   },
   {
@@ -17200,6 +17201,121 @@
     "types": [
       "dark",
       "grass"
+    ]
+  },
+  {
+    "name": "Regieleki",
+    "formName": "",
+    "number": 894,
+    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Regieleki_(Pok%C3%A9mon)",
+    "hp": 80,
+    "attack": 100,
+    "defense": 50,
+    "spAttack": 100,
+    "spDefense": 50,
+    "speed": 200,
+    "id": "pkmn-894",
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "Regidrago",
+    "formName": "",
+    "number": 895,
+    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Regidrago_(Pok%C3%A9mon)",
+    "hp": 200,
+    "attack": 100,
+    "defense": 50,
+    "spAttack": 100,
+    "spDefense": 50,
+    "speed": 80,
+    "id": "pkmn-895",
+    "types": [
+      "dragon"
+    ]
+  },
+  {
+    "name": "Glastrier",
+    "formName": "",
+    "number": 896,
+    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Glastrier_(Pok%C3%A9mon)",
+    "hp": 100,
+    "attack": 145,
+    "defense": 130,
+    "spAttack": 65,
+    "spDefense": 110,
+    "speed": 30,
+    "id": "pkmn-896",
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "Spectrier",
+    "formName": "",
+    "number": 897,
+    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Spectrier_(Pok%C3%A9mon)",
+    "hp": 100,
+    "attack": 65,
+    "defense": 60,
+    "spAttack": 145,
+    "spDefense": 80,
+    "speed": 130,
+    "id": "pkmn-897",
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "Calyrex",
+    "formName": "",
+    "number": 898,
+    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Calyrex_(Pok%C3%A9mon)",
+    "hp": 100,
+    "attack": 80,
+    "defense": 80,
+    "spAttack": 80,
+    "spDefense": 80,
+    "speed": 80,
+    "id": "pkmn-898",
+    "types": [
+      "psychic",
+      "grass"
+    ]
+  },
+  {
+    "name": "Calyrex",
+    "formName": "Ice Rider",
+    "number": 898,
+    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Calyrex_(Pok%C3%A9mon)",
+    "hp": 100,
+    "attack": 165,
+    "defense": 150,
+    "spAttack": 85,
+    "spDefense": 130,
+    "speed": 50,
+    "id": "pkmn-898b",
+    "types": [
+      "psychic",
+      "ice"
+    ]
+  },
+  {
+    "name": "Calyrex",
+    "formName": "Shadow Rider",
+    "number": 898,
+    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Calyrex_(Pok%C3%A9mon)",
+    "hp": 100,
+    "attack": 85,
+    "defense": 80,
+    "spAttack": 165,
+    "spDefense": 100,
+    "speed": 150,
+    "id": "pkmn-898c",
+    "types": [
+      "psychic",
+      "ghost"
     ]
   }
 ]
