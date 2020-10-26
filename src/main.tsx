@@ -3,16 +3,20 @@ import * as ReactDOM from "react-dom";
 import { BrowserRouter } from "react-router-dom";
 import "tachyons/css/tachyons.css";
 import App from "./App";
+import ErrorBoundary from "./ErrorBoundary";
 import { initGA } from "./init-ga";
+import ScreenError from "./ScreenError";
 import "./style.css";
 
 initGA();
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ErrorBoundary fallback={<ScreenError />}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ErrorBoundary>
   </React.StrictMode>,
   document.querySelector("#app")
 );
