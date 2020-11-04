@@ -37,7 +37,6 @@ export default function Search(props: SearchProps) {
           "inset-shadow",
           "br-pill ba",
           "bg-white",
-          "hover-bg-washed-blue",
           "b--black-30",
           "search-placeholder-light"
         )}

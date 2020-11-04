@@ -28,4 +28,6 @@ const ScreenError: React.FC<ScreenErrorProps> = ({ error }) => {
   );
 };
 
+ScreenError.displayName = "ScreenError";
+
 export default ScreenError;

@@ -40,10 +40,6 @@ button {
   -webkit-appearance: none;
 }
 
-.inset-shadow {
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 .active-squish {
   transition: transform 50ms;
 }
@@ -56,8 +52,24 @@ button {
   color: rgba(0, 0, 0, 0.15);
 }
 
+.button-bg {
+  background: linear-gradient(to bottom, hsl(0, 0%, 100%) 20%, hsl(0, 0%, 96%));
+}
+
+.button-bg:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(200, 100%, 98%) 20%,
+    hsl(200, 100%, 96%)
+  );
+}
+
 .button-shadow {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+}
+
+.inset-shadow {
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .no-outline,
@@ -113,7 +125,7 @@ button {
 
 .StatsTable {
   display: grid;
-  grid-gap: 0.25rem;
+  grid-gap: 0.5rem;
   grid-template-columns: max-content max-content 1fr;
   align-items: center;
   height: min-content;

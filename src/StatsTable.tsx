@@ -46,3 +46,5 @@ export default function StatsTable(props: StatsTableProps) {
     </div>
   );
 }
+
+StatsTable.displayName = "StatsTable";

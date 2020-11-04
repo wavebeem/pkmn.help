@@ -25,7 +25,7 @@ function Badge(props: BadgeProps) {
     <div
       className={classnames(
         `type-bg-dark type-${props.type}`,
-        "ba b--black-20",
+        "ba b--black-30",
         "ph1 pv1 br1",
         "ttc tc b f5"
       )}
@@ -35,6 +35,8 @@ function Badge(props: BadgeProps) {
     </div>
   );
 }
+
+Badge.displayName = "Badge";
 
 interface SectionProps {
   title: string;
@@ -56,6 +58,8 @@ function Section(props: SectionProps) {
     </div>
   );
 }
+
+Section.displayName = "Section";
 
 interface MatchupsProps {
   kind: "offense" | "defense";
@@ -106,6 +110,8 @@ function Matchups(props: MatchupsProps) {
     </div>
   );
 }
+
+Matchups.displayName = "Matchups";
 
 export interface DefenseProps {
   type1: Type;

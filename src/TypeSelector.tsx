@@ -16,8 +16,7 @@ export default function TypeSelector(props: TypeSelectorProps) {
   const styles = {
     disabled: "b--black-10 bg-near-white o-60",
     selected: "b--black-30 type-bg-dark no-box-shadow button-shadow",
-    normal:
-      "b--black-30 bg-white black bg-white hover-bg-washed-blue button-shadow",
+    normal: "b--black-30 bg-white black button-bg button-shadow",
   };
   return (
     <div className="TypeSelector-Container">

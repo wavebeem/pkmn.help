@@ -26,7 +26,7 @@ function MonsterType(props: MonsterTypeProps) {
         `type-${props.type} type-bg-light`,
         "ttc tc flex",
         "pv0 ph2 lh-copy",
-        "br1 ba b--black-20 f6",
+        "br1 ba b--black-30 f6",
         { ml1: props.index > 0 }
       )}
     >
@@ -34,6 +34,8 @@ function MonsterType(props: MonsterTypeProps) {
     </div>
   );
 }
+
+MonsterType.displayName = "MonsterType";
 
 interface MonsterProps {
   pokemon: Pokemon;
@@ -93,7 +95,7 @@ function Monster(props: MonsterProps) {
         <img
           src={getImage(props.pokemon.id)}
           role="presentation"
-          className="pa1 mt2 bg-white br2 ba b--black-20"
+          className="pa1 mt2 bg-white-30 bw1 br4 ba b--white"
           width={imgSize}
           height={imgSize}
         />
@@ -102,6 +104,8 @@ function Monster(props: MonsterProps) {
     </div>
   );
 }
+
+Monster.displayName = "Monster";
 
 interface DexProps {
   setPokedexParams: (params: string) => void;
