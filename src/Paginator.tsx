@@ -93,6 +93,8 @@ function PageSelector(props: PageSelectorProps) {
   );
 }
 
+PageSelector.displayName = "PageSelector";
+
 interface PaginatorProps<T> {
   urlForPage: (page: number) => string;
   currentPage: number;

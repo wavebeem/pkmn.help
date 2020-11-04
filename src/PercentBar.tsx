@@ -10,11 +10,10 @@ export function PercentBar(props: PercentBarProps) {
   return (
     <div
       style={{
-        height: "1em",
-        width: "100%",
-        boxShadow: "inset 0 0 0 1px rgba(0, 0, 0, 0.1)",
+        boxShadow: "inset 0 0 0 1px rgba(0, 0, 0, 0.05)",
+        background: "rgba(0, 0, 0, 0.025)",
       }}
-      className="flex"
+      className="flex h1 w-100"
     >
       <div
         style={{
@@ -26,3 +25,5 @@ export function PercentBar(props: PercentBarProps) {
     </div>
   );
 }
+
+PercentBar.displayName = "PercentBar";

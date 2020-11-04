@@ -6,7 +6,7 @@ const year = new Date().getFullYear();
 export default function ScreenInfo() {
   usePageView();
   return (
-    <main className="pa3 center mw7 lh-copy">
+    <main className="pa3 center content-narrow lh-copy">
       <h2 className="lh-title f5">October 2020</h2>
       <ul className="lh-copy mt1 ph3">
         <li>Added Crown Tundra DLC Pokémon</li>
@@ -106,3 +106,5 @@ export default function ScreenInfo() {
     </main>
   );
 }
+
+ScreenInfo.displayName = "ScreenInfo";

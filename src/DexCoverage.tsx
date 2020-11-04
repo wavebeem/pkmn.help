@@ -37,4 +37,6 @@ const DexCoverage: React.FC<DexCoverageProps> = (props) => {
   );
 };
 
+DexCoverage.displayName = "DexCoverage";
+
 export default DexCoverage;

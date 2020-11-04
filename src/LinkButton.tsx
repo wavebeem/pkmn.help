@@ -17,7 +17,7 @@ export function LinkButton(props: LinkProps) {
         "active-squish",
         props["aria-disabled"] === "true"
           ? "b--black-10 black-20 bg-transparent no-pointer"
-          : "b--black-30 button-shadow bg-white hover-bg-washed-blue color-inherit",
+          : "b--black-30 button-shadow button-bg button-bg-hover color-inherit",
         props.className
       )}
     />

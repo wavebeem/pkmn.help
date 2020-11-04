@@ -48,7 +48,7 @@ export default function App() {
           className={classnames([
             "flex justify-center",
             "bg-white",
-            "bb TabBarBorder b--black-20",
+            "bb TabBarBorder b--black-30",
             "pt3",
           ])}
         >
@@ -107,3 +107,5 @@ export default function App() {
     </div>
   );
 }
+
+App.displayName = "App";

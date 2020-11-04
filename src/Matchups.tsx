@@ -36,6 +36,8 @@ function Badge(props: BadgeProps) {
   );
 }
 
+Badge.displayName = "Badge";
+
 interface SectionProps {
   title: string;
   types: Type[];
@@ -56,6 +58,8 @@ function Section(props: SectionProps) {
     </div>
   );
 }
+
+Section.displayName = "Section";
 
 interface MatchupsProps {
   kind: "offense" | "defense";
@@ -106,6 +110,8 @@ function Matchups(props: MatchupsProps) {
     </div>
   );
 }
+
+Matchups.displayName = "Matchups";
 
 export interface DefenseProps {
   type1: Type;

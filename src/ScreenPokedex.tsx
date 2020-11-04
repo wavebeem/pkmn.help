@@ -35,6 +35,8 @@ function MonsterType(props: MonsterTypeProps) {
   );
 }
 
+MonsterType.displayName = "MonsterType";
+
 interface MonsterProps {
   pokemon: Pokemon;
   index: number;
@@ -47,8 +49,9 @@ function Monster(props: MonsterProps) {
     <div
       className={classnames(
         "near-black pv3",
-        "flex-ns items-center bb b--black-10",
+        "flex-ns items-center",
         "Monster",
+        "bb b--black-10",
         props.index === 0 ? "bt" : ""
       )}
     >
@@ -93,7 +96,7 @@ function Monster(props: MonsterProps) {
         <img
           src={getImage(props.pokemon.id)}
           role="presentation"
-          className="pa1 mt2 bg-white br2 ba b--black-20"
+          className="pa1 mt2 bg-white-30 bw1 br4 ba b--white"
           width={imgSize}
           height={imgSize}
         />
@@ -102,6 +105,8 @@ function Monster(props: MonsterProps) {
     </div>
   );
 }
+
+Monster.displayName = "Monster";
 
 interface DexProps {
   setPokedexParams: (params: string) => void;
@@ -147,7 +152,7 @@ export default function ScreenPokedex(props: DexProps) {
   }, [params]);
 
   return (
-    <main className="ph3 mt3 center mw7">
+    <main className="ph3 mt3 center content-narrow">
       <Search
         search={query}
         updateSearch={(newQuery) => {
