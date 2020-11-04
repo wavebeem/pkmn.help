@@ -6,7 +6,7 @@ type ScreenErrorProps = {
 
 const ScreenError: React.FC<ScreenErrorProps> = ({ error }) => {
   return (
-    <div className="sans-serif ph4 mw7 f4 center dark-gray lh-copy">
+    <div className="sans-serif ph4 content-narrow f4 center dark-gray lh-copy">
       <h1>pkmn.help: Error</h1>
       <p>
         Please send an email to{" "}

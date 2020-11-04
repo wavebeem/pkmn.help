@@ -26,7 +26,7 @@ function MonsterType(props: MonsterTypeProps) {
         `type-${props.type} type-bg-light`,
         "ttc tc flex",
         "pv0 ph2 lh-copy",
-        "br1 ba b--black-30 f6",
+        "br1 ba b--black-20 f6",
         { ml1: props.index > 0 }
       )}
     >
@@ -49,8 +49,9 @@ function Monster(props: MonsterProps) {
     <div
       className={classnames(
         "near-black pv3",
-        "flex-ns items-center bb b--black-10",
+        "flex-ns items-center",
         "Monster",
+        "bb b--black-10",
         props.index === 0 ? "bt" : ""
       )}
     >
@@ -151,7 +152,7 @@ export default function ScreenPokedex(props: DexProps) {
   }, [params]);
 
   return (
-    <main className="ph3 mt3 center mw7">
+    <main className="ph3 mt3 center content-narrow">
       <Search
         search={query}
         updateSearch={(newQuery) => {

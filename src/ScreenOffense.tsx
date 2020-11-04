@@ -36,7 +36,7 @@ export default function ScreenOffense(props: OffenseProps) {
 
   const classH2 = "tc f5 mv3";
   return (
-    <main className="ph3 pt1 pb4 mw6 mw9-ns center">
+    <main className="ph3 pt1 pb4 content-wide center">
       <div className="dib w-50-ns w-100 v-top">
         <h2 className={classH2}>Choose Types</h2>
         <MultiTypeSelector value={offenseTypes} onChange={updateOffenseTypes} />

@@ -25,7 +25,7 @@ function Badge(props: BadgeProps) {
     <div
       className={classnames(
         `type-bg-dark type-${props.type}`,
-        "ba b--black-30",
+        "ba b--black-20",
         "ph1 pv1 br1",
         "ttc tc b f5"
       )}
