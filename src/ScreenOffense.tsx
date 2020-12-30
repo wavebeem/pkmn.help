@@ -3,7 +3,6 @@ import { useHistory } from "react-router-dom";
 import { Type, typesFromString } from "./data";
 import * as Matchups from "./Matchups";
 import MultiTypeSelector from "./MultiTypeSelector";
-import { usePageView } from "./usePageView";
 import { useSearch } from "./useSearch";
 
 interface OffenseProps {
@@ -11,8 +10,6 @@ interface OffenseProps {
 }
 
 export default function ScreenOffense(props: OffenseProps) {
-  usePageView();
-
   const search = useSearch();
   const history = useHistory();
   const offenseTypes = typesFromString(search.get("types") || "");
