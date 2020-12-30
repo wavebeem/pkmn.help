@@ -3,13 +3,11 @@ import matchSorter from "match-sorter";
 import * as React from "react";
 import { Link, useHistory } from "react-router-dom";
 import { Type } from "./data";
-import { clickPokemon, sendPageView } from "./ga";
 import { getImage } from "./getImage";
 import Paginator from "./Paginator";
 import { AllPokemon, Pokemon } from "./pkmn";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
-import { usePageView } from "./usePageView";
 import { useSearch } from "./useSearch";
 
 const PAGE_SIZE = 20;
@@ -75,9 +73,6 @@ function Monster(props: MonsterProps) {
             to={`/defense?${new URLSearchParams({
               types: props.pokemon.types.join(" "),
             })}#matchup-defense`}
-            onClick={() => {
-              clickPokemon(props.pokemon.id);
-            }}
             aria-label={`Defense for ${props.pokemon.name}`}
           >
             Defense
@@ -113,8 +108,6 @@ interface DexProps {
 }
 
 export default function ScreenPokedex(props: DexProps) {
-  usePageView();
-
   const search = useSearch();
   const history = useHistory();
 
