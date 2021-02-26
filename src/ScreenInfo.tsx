@@ -5,35 +5,6 @@ const year = new Date().getFullYear();
 export default function ScreenInfo() {
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f5">October 2020</h2>
-      <ul className="lh-copy mt1 ph3">
-        <li>Added Crown Tundra DLC Pokémon</li>
-        <li>URL support for bookmarks and links</li>
-      </ul>
-      <h2 className="lh-title f5">August 2020</h2>
-      <ul className="lh-copy mt1 ph3">
-        <li>Added multi-type support to Offense tab</li>
-        <li>Added base stats to the Pokédex</li>
-        <li>Added more Pokémon to the Pokédex</li>
-        <li>Added a link to Bulbapedia for each Pokémon</li>
-        <li>Improved pagination on the Pokédex</li>
-        <li>Replaced page footer with Info screen</li>
-      </ul>
-      <h2 className="lh-title f5">December 2019</h2>
-      <ul className="lh-copy mt1 ph3">
-        <li>Clicking a Pokémon reveals their defense matchups</li>
-        <li>Tightened up the UI to save more space on mobile</li>
-      </ul>
-      <div className="mt3" />
-      <h2 className="lh-title f5">November 2019</h2>
-      <ul className="lh-copy mt1 ph3">
-        <li>Added most Pokémon Sword & Shield Pokémon</li>
-        <li>
-          Added regional variants (e.g. Alolan Raichu, Galarian Farfetch'd)
-        </li>
-        <li>Added Pokédex images</li>
-        <li>Added search by number and better search algorithm</li>
-      </ul>
       <h2 className="lh-title f5">Source Code and Issues</h2>
       <p>
         Check out the{" "}
