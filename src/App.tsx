@@ -16,7 +16,7 @@ const ScreenPokedex = React.lazy(async () => {
 const tabClass = classnames([
   "no-underline",
   "pv2 ph2 f5",
-  "DottedFocus tab-bottom-focus",
+  "TabFocus",
   "b bn",
   "br--top br2",
   "bg-transparent",

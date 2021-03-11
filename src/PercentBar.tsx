@@ -8,19 +8,13 @@ export interface PercentBarProps {
 export function PercentBar(props: PercentBarProps) {
   const { value, max } = props;
   return (
-    <div
-      style={{
-        boxShadow: "inset 0 0 0 1px rgba(0, 0, 0, 0.05)",
-        background: "rgba(0, 0, 0, 0.025)",
-      }}
-      className="flex h1 w-100"
-    >
+    <div className="flex h1 w-100 Bar-Container">
       <div
         style={{
           width: (value / max) * 100 + "%",
-          boxShadow: "inset 0 0 0 1px rgba(0, 0, 0, 0.2)",
+          background: "var(--color-fg3)",
         }}
-        className="bg-gray"
+        className="Bar-Fill"
       ></div>
     </div>
   );

@@ -8,6 +8,7 @@ import Paginator from "./Paginator";
 import { AllPokemon, Pokemon } from "./pkmn";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
+import { useDarkMode } from "./useDarkMode";
 import { useSearch } from "./useSearch";
 
 const PAGE_SIZE = 20;
@@ -43,6 +44,8 @@ interface MonsterProps {
 function Monster(props: MonsterProps) {
   const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
   const imgSize = 68 * 2;
+  const isDarkMode = useDarkMode();
+  const bg = isDarkMode ? "bg-white-10" : "bg-black-05";
   return (
     <div
       className={classnames(
@@ -91,7 +94,7 @@ function Monster(props: MonsterProps) {
         <img
           src={getImage(props.pokemon.id)}
           role="presentation"
-          className="pa1 mt2 bg1-30 br2 ba bg-white-50 b--white-70"
+          className={`pa1 mt2 bg1-30 br4 bn b--white-70 ${bg}`}
           width={imgSize}
           height={imgSize}
         />
