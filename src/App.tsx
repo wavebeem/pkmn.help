@@ -47,7 +47,7 @@ export default function App() {
           className={classnames([
             "flex justify-center",
             "bg1",
-            "bb TabBarBorder border2",
+            "bb TabBarBorder",
             "pt3",
           ])}
         >
