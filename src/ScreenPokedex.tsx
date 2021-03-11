@@ -91,7 +91,7 @@ function Monster(props: MonsterProps) {
         <img
           src={getImage(props.pokemon.id)}
           role="presentation"
-          className="pa1 mt2 bg1-30 br2 ba bg-white-50 b--white"
+          className="pa1 mt2 bg1-30 br2 ba bg-white-50 b--white-70"
           width={imgSize}
           height={imgSize}
         />

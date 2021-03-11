@@ -198,7 +198,8 @@ button {
 
 .SimpleFocus:focus {
   outline: none;
-  box-shadow: 0 0 0 2px var(--color-bg2), 0 0 0 4px var(--color-fg1);
+  border-color: transparent;
+  box-shadow: 0 0 0 2px var(--color-fg1);
 }
 
 .StatsTable {
