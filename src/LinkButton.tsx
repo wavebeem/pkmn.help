@@ -16,8 +16,8 @@ export function LinkButton(props: LinkProps) {
         "SimpleFocus",
         "active-squish",
         props["aria-disabled"] === "true"
-          ? "b--black-10 black-20 bg-transparent no-pointer"
-          : "b--black-30 button-shadow button-bg button-bg-hover color-inherit",
+          ? "border4 fg4 bg-transparent no-pointer"
+          : "border2 button-shadow button-bg button-bg-hover color-inherit",
         props.className
       )}
     />

@@ -16,16 +16,15 @@ const ScreenPokedex = React.lazy(async () => {
 const tabClass = classnames([
   "no-underline",
   "pv2 ph2 f5",
-  "no-outline tab-bottom-focus",
+  "DottedFocus tab-bottom-focus",
   "b bn",
   "br--top br2",
   "bg-transparent",
-  "hover-black-90",
-  "black-50 bottom-border-thick",
+  "fg3 bottom-border-thick",
 ]);
 
 const tabClassActive = classnames([
-  "black bottom-border-thick-current",
+  "fg1 bottom-border-thick-current",
   "no-pointer",
 ]);
 
@@ -34,9 +33,9 @@ export default function App() {
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
   return (
-    <div className="sans-serif bg-near-white near-black min-vh-100 flex flex-column">
+    <div className="sans-serif bg2 fg1 min-vh-100 flex flex-column">
       <div className="flex-auto">
-        <h1 className="f3-ns f4 tc relative white bg-dark-red PokeballHeader">
+        <h1 className="f3-ns f4 tc relative white PokeballHeader">
           <Link
             to="/"
             className="no-underline white hover-white-90 DottedFocus"
@@ -47,8 +46,8 @@ export default function App() {
         <nav
           className={classnames([
             "flex justify-center",
-            "bg-white",
-            "bb TabBarBorder b--black-30",
+            "bg1",
+            "bb TabBarBorder border2",
             "pt3",
           ])}
         >

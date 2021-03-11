@@ -25,7 +25,7 @@ function Badge(props: BadgeProps) {
     <div
       className={classnames(
         `type-bg-dark type-${props.type}`,
-        "ba b--black-20",
+        "ba border3",
         "ph1 pv1 br1",
         "ttc tc b f5"
       )}
@@ -49,7 +49,7 @@ function Section(props: SectionProps) {
   }
   return (
     <div>
-      <h3 className="f5 mt3 mb0 dark-gray">{props.title}</h3>
+      <h3 className="f5 mt3 mb0">{props.title}</h3>
       <div className="mw5 center MatchupsSection-Container">
         {props.types.map((t) => (
           <Badge key={`type-${t}`} type={t} />
@@ -73,7 +73,7 @@ function Matchups(props: MatchupsProps) {
     <div className="tc pt2" id={`matchup-${props.kind}`}>
       {props.kind === "offense" ? (
         <div>
-          <h3 className="f5 mt3 mb0 dark-gray">Weakness Coverage</h3>
+          <h3 className="f5 mt3 mb0">Weakness Coverage</h3>
           <div className="pt1 mw5 center tc">
             <React.Suspense
               fallback={<div className="Spinner mt2 f2 center" />}

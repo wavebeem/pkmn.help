@@ -10,14 +10,14 @@ export default function ScreenInfo() {
         Check out the{" "}
         <a
           href="https://github.com/wavebeem/pkmn.help"
-          className="underline dark-blue hover-blue OutlineFocus"
+          className="underline fg-link OutlineFocus"
         >
           pkmn.help
         </a>{" "}
         repository on GitHub. Issues and feature requests are best reported
         there. Otherwise you can email me{" "}
         <a
-          className="underline dark-blue hover-blue OutlineFocus"
+          className="underline fg-link OutlineFocus"
           href="mailto:brian@wavebeem.com"
         >
           brian@wavebeem.com
@@ -48,14 +48,14 @@ export default function ScreenInfo() {
       <p>
         Pokédex data scraped from Bulbapedia&apos;s{" "}
         <a
-          className="underline dark-blue hover-blue OutlineFocus"
+          className="underline fg-link OutlineFocus"
           href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number"
         >
           National Pokédex
         </a>{" "}
         and{" "}
         <a
-          className="underline dark-blue hover-blue OutlineFocus"
+          className="underline fg-link OutlineFocus"
           href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_VIII-present)"
         >
           List of Pokémon by base stats
@@ -66,7 +66,7 @@ export default function ScreenInfo() {
         pkmn.help &copy; 2013&ndash;{year}{" "}
         <a
           href="https://www.mockbrian.com"
-          className="underline dark-blue hover-blue OutlineFocus"
+          className="underline fg-link OutlineFocus"
         >
           Brian Mock
         </a>
