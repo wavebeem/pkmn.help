@@ -17,7 +17,7 @@
   --color-border3: hsla(0, 0%, 0%, 0.2);
   --color-border4: hsla(0, 0%, 0%, 0.1);
   --color-border5: hsla(0, 0%, 0%, 0.05);
-  --color-tabbar-border: hsla(0, 0%, 0%, 0.05);
+  --color-tabbar-border: hsla(0, 0%, 0%, 0.2);
   --color-scroll-fg: hsl(0, 0%, 40%);
   --color-scroll-bg: hsl(0, 0%, 90%);
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
