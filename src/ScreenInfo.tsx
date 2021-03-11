@@ -28,7 +28,7 @@ export default function ScreenInfo() {
       <p>
         I have spent countless hours polishing this site to perfection. I will
         never run ads or steal your personal data. If you appreciate what
-        I&apos;ve made, please consider donating to support black lives and
+        I&apos;ve made, please consider donating to support Black lives and
         trans rights.
       </p>
       <h2 className="lh-title f5">Special Thanks</h2>
