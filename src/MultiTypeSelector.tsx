@@ -11,8 +11,8 @@ interface TypeSelectorProps {
 
 export default function MultiTypeSelector(props: TypeSelectorProps) {
   const styles = {
-    selected: "b--black-30 type-bg-dark no-box-shadow button-shadow",
-    normal: "b--black-30 bg-white black button-bg button-shadow",
+    selected: "border2 type-bg-dark no-box-shadow button-shadow",
+    normal: "border2 bg1 fg1 button-bg button-shadow",
   };
   return (
     <div className="MultiTypeSelector-Container">
@@ -51,9 +51,7 @@ export default function MultiTypeSelector(props: TypeSelectorProps) {
               <span
                 className={classnames(
                   `type-${type} b--black ba br1`,
-                  isChecked
-                    ? "b--black-70 type-bg-light"
-                    : "b--black-30 type-bg-dark"
+                  isChecked ? "border1 type-bg-light" : "border2 type-bg-dark"
                 )}
                 style={{
                   width: "1rem",

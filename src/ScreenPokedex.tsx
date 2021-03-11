@@ -8,6 +8,7 @@ import Paginator from "./Paginator";
 import { AllPokemon, Pokemon } from "./pkmn";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
+import { useDarkMode } from "./useDarkMode";
 import { useSearch } from "./useSearch";
 
 const PAGE_SIZE = 20;
@@ -24,7 +25,7 @@ function MonsterType(props: MonsterTypeProps) {
         `type-${props.type} type-bg-light`,
         "ttc tc flex",
         "pv0 ph2 lh-copy",
-        "br1 ba b--black-20 f6",
+        "br1 ba border3 f6",
         { ml1: props.index > 0 }
       )}
     >
@@ -43,19 +44,21 @@ interface MonsterProps {
 function Monster(props: MonsterProps) {
   const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
   const imgSize = 68 * 2;
+  const isDarkMode = useDarkMode();
+  const bg = isDarkMode ? "bg-white-10" : "bg-black-05";
   return (
     <div
       className={classnames(
-        "near-black pv3",
+        "fg1 pv3",
         "flex-ns items-center",
         "Monster",
-        "bb b--black-10",
+        "bb border4",
         props.index === 0 ? "bt" : ""
       )}
     >
       <div className="flex flex-column">
         <div className="flex mb2 items-center">
-          <div className="gray mv0 tabular-nums f4">{displayNumber}</div>
+          <div className="fg3 mv0 tabular-nums f4">{displayNumber}</div>
           <div className="ph1" />
           <h2 className="mv0 f3">{props.pokemon.name}</h2>
         </div>
@@ -69,7 +72,7 @@ function Monster(props: MonsterProps) {
         </div>
         <div className="mv2 lh-copy">
           <Link
-            className="underline dark-blue hover-blue OutlineFocus"
+            className="underline fg-link OutlineFocus"
             to={`/defense?${new URLSearchParams({
               types: props.pokemon.types.join(" "),
             })}#matchup-defense`}
@@ -77,12 +80,12 @@ function Monster(props: MonsterProps) {
           >
             Defense
           </Link>{" "}
-          &middot;{" "}
+          &bull;{" "}
           <a
             target="_blank"
             rel="noopener noreferrer"
             href={props.pokemon.bulbapediaURL}
-            className="underline dark-blue hover-blue OutlineFocus"
+            className="underline fg-link OutlineFocus"
             aria-label={`${props.pokemon.name} on Bulbapedia`}
           >
             Bulbapedia
@@ -91,7 +94,7 @@ function Monster(props: MonsterProps) {
         <img
           src={getImage(props.pokemon.id)}
           role="presentation"
-          className="pa1 mt2 bg-white-30 bw1 br4 ba b--white"
+          className={`pa1 mt2 bg1-30 br4 bn b--white-70 ${bg}`}
           width={imgSize}
           height={imgSize}
         />
@@ -158,7 +161,7 @@ export default function ScreenPokedex(props: DexProps) {
           return createParams(query, newPage);
         }}
         pageSize={PAGE_SIZE}
-        emptyState={<p className="silver f4 b tc m0">No Pokémon found</p>}
+        emptyState={<p className="fg4 f4 b tc m0">No Pokémon found</p>}
         items={pkmn}
         renderPage={(page) =>
           page.map((pokemon, index) => (

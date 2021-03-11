@@ -1,7 +1,10 @@
 import classnames from "classnames";
 import * as React from "react";
-import imageClearURL from "../svg/clear.svg";
-import imageSearchURL from "../svg/search.svg";
+import { useDarkMode } from "./useDarkMode";
+import imageClearLightURL from "../svg/clear-light.svg";
+import imageSearchLightURL from "../svg/search-light.svg";
+import imageClearDarkURL from "../svg/clear-dark.svg";
+import imageSearchDarkURL from "../svg/search-dark.svg";
 
 interface SearchProps {
   updateSearch: (search: string) => void;
@@ -11,6 +14,16 @@ interface SearchProps {
 export default function Search(props: SearchProps) {
   const { updateSearch, search } = props;
   const ref = React.useRef<HTMLInputElement>(null);
+  const isDarkMode = useDarkMode();
+  const { imageSearchURL, imageClearURL } = isDarkMode
+    ? {
+        imageClearURL: imageClearLightURL,
+        imageSearchURL: imageSearchLightURL,
+      }
+    : {
+        imageClearURL: imageClearDarkURL,
+        imageSearchURL: imageSearchDarkURL,
+      };
   const iconSize = 24;
   const inputHeight = 36;
   return (
@@ -36,9 +49,9 @@ export default function Search(props: SearchProps) {
           "SimpleFocus",
           "inset-shadow",
           "br-pill ba",
-          "bg-white",
-          "b--black-30",
-          "search-placeholder-light"
+          "bg1",
+          "fg1",
+          "border2"
         )}
         style={{ paddingLeft: 40, paddingRight: 40, height: inputHeight }}
         value={search}

@@ -14,9 +14,9 @@ interface TypeSelectorProps {
 export default function TypeSelector(props: TypeSelectorProps) {
   const theTypes = props.includeNone ? typesOrNone : types;
   const styles = {
-    disabled: "b--black-10 bg-near-white o-60",
-    selected: "b--black-30 type-bg-dark no-box-shadow button-shadow",
-    normal: "b--black-30 bg-white black button-bg button-shadow",
+    disabled: "border4 bg2 o-60",
+    selected: "border2 type-bg-dark no-box-shadow button-shadow",
+    normal: "border2 bg1 fg1 button-bg button-shadow",
   };
   return (
     <div className="TypeSelector-Container">
@@ -49,8 +49,8 @@ export default function TypeSelector(props: TypeSelectorProps) {
                 className={classnames(
                   `type-${type} b--black br-pill ba`,
                   type === props.value
-                    ? "b--black-70 type-bg-light"
-                    : "b--black-30 type-bg-dark"
+                    ? "border1 type-bg-light"
+                    : "border2 type-bg-dark"
                 )}
                 style={{
                   width: "1rem",
