@@ -14,7 +14,7 @@ interface TypeSelectorProps {
 export default function TypeSelector(props: TypeSelectorProps) {
   const theTypes = props.includeNone ? typesOrNone : types;
   const styles = {
-    disabled: "border4 bg2 o-60",
+    disabled: "border4 fg4 bg2 o-60",
     selected: "border2 type-bg-dark no-box-shadow button-shadow",
     normal: "border2 bg1 fg1 button-bg button-shadow",
   };
@@ -65,9 +65,9 @@ export default function TypeSelector(props: TypeSelectorProps) {
                 {type}
               </span>
               {isSelected ? (
-                <span aria-label=""> &#9679;&nbsp;</span>
+                <small aria-label=""> &#9679;&nbsp;</small>
               ) : (
-                <span />
+                <small />
               )}
             </span>
           </button>
