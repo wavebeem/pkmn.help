@@ -65,7 +65,7 @@ export default function MultiTypeSelector(props: TypeSelectorProps) {
               >
                 {type}
               </span>
-              {isChecked ? <span aria-label=""> ✓</span> : <span />}
+              {isChecked ? <span aria-label=""> &#10003;</span> : <span />}
             </span>
           </button>
         );

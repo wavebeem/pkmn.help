@@ -22,9 +22,10 @@ export default function TypeSelector(props: TypeSelectorProps) {
     <div className="TypeSelector-Container">
       {theTypes.map((type) => {
         const isDisabled = props.disabledTypes.includes(type);
+        const isSelected = type === props.value;
         const style = isDisabled
           ? styles.disabled
-          : type === props.value
+          : isSelected
           ? styles.selected
           : styles.normal;
         return (
@@ -57,13 +58,17 @@ export default function TypeSelector(props: TypeSelectorProps) {
                   height: "1rem",
                 }}
               />
-
               <span
                 className="tl pl2 pr1 flex-auto truncate"
                 style={{ lineHeight: buttonInnerHeight }}
               >
                 {type}
               </span>
+              {isSelected ? (
+                <span aria-label=""> &#9679;&nbsp;</span>
+              ) : (
+                <span />
+              )}
             </span>
           </button>
         );
