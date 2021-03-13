@@ -5,22 +5,21 @@ const year = new Date().getFullYear();
 export default function ScreenInfo() {
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f5">Source Code and Issues</h2>
+      <h2 className="lh-title f5">Contact Me</h2>
       <p>
-        Check out the{" "}
-        <a
-          href="https://github.com/wavebeem/pkmn.help"
-          className="underline fg-link OutlineFocus"
-        >
-          pkmn.help
-        </a>{" "}
-        repository on GitHub. Issues and feature requests are best reported
-        there. Otherwise you can email me{" "}
+        Questions, suggestions, or just want to say thank you? Email me at{" "}
         <a
           className="underline fg-link OutlineFocus"
           href="mailto:brian@wavebeem.com"
         >
           brian@wavebeem.com
+        </a>
+        . Source code is available on{" "}
+        <a
+          href="https://github.com/wavebeem/pkmn.help"
+          className="underline fg-link OutlineFocus"
+        >
+          GitHub
         </a>
         .
       </p>

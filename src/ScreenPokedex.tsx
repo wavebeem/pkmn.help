@@ -12,6 +12,7 @@ import { useDarkMode } from "./useDarkMode";
 import { useSearch } from "./useSearch";
 
 const PAGE_SIZE = 20;
+const nbsp = "\u00a0";
 
 interface MonsterTypeProps {
   type: Type;
@@ -62,9 +63,7 @@ function Monster(props: MonsterProps) {
           <div className="ph1" />
           <h2 className="mv0 f3">{props.pokemon.name}</h2>
         </div>
-        {props.pokemon.formName ? (
-          <h3 className="nt2 mb2 f4 normal">({props.pokemon.formName})</h3>
-        ) : null}
+        <h3 className="nt2 mb2 f4 normal">{props.pokemon.formName || nbsp}</h3>
         <div className="flex">
           {props.pokemon.types.map((t, i) => (
             <MonsterType key={i} type={t} index={i} />
