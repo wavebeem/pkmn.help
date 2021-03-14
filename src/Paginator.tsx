@@ -44,7 +44,7 @@ function PageSelector(props: PageSelectorProps) {
         onClick={() => {
           setScrollTo(props.location);
         }}
-        aria-disabled={props.hasPrev ? "false" : "true"}
+        disabled={!props.hasPrev}
         to={props.urlForPage(0)}
         aria-label="First"
       >
@@ -55,7 +55,7 @@ function PageSelector(props: PageSelectorProps) {
         onClick={() => {
           setScrollTo(props.location);
         }}
-        aria-disabled={props.hasPrev ? "false" : "true"}
+        disabled={!props.hasPrev}
         to={props.urlForPage(props.currentPage - 1)}
         aria-label="Previous"
       >
@@ -72,7 +72,7 @@ function PageSelector(props: PageSelectorProps) {
         onClick={() => {
           setScrollTo(props.location);
         }}
-        aria-disabled={props.hasNext ? "false" : "true"}
+        disabled={!props.hasNext}
         to={props.urlForPage(props.currentPage + 1)}
         aria-label="Next"
       >
@@ -83,7 +83,7 @@ function PageSelector(props: PageSelectorProps) {
         onClick={() => {
           setScrollTo(props.location);
         }}
-        aria-disabled={props.hasNext ? "false" : "true"}
+        disabled={!props.hasNext}
         to={props.urlForPage(props.numPages - 1)}
         aria-label="Last"
       >
