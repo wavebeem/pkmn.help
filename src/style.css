@@ -1,6 +1,7 @@
 :root {
   --color-bg1: hsl(0, 0%, 100%);
   --color-bg2: hsl(0, 0%, 96%);
+  --color-bg3: hsl(0, 0%, 90%);
   --color-fg1: hsl(0, 0%, 7%);
   --color-fg2: hsl(0, 0%, 20%);
   --color-fg3: hsl(0, 0%, 47%);
@@ -28,6 +29,7 @@
   :root {
     --color-bg1: hsl(220, 20%, 25%);
     --color-bg2: hsl(220, 20%, 20%);
+    --color-bg3: hsl(220, 20%, 30%);
     --color-fg1: hsl(220, 20%, 90%);
     --color-fg2: hsl(220, 20%, 80%);
     --color-fg3: hsl(220, 20%, 70%);
@@ -48,8 +50,15 @@
     --color-scroll-fg: hsl(220, 20%, 70%);
     --color-scroll-bg: hsl(220, 20%, 30%);
   }
+
+  .dark\:invert {
+    filter: invert(1);
+  }
 }
 
+.bg3 {
+  background-color: var(--color-bg3);
+}
 .bg2 {
   background-color: var(--color-bg2);
 }

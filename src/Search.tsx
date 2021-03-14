@@ -1,10 +1,7 @@
 import classnames from "classnames";
 import * as React from "react";
-import { useDarkMode } from "./useDarkMode";
-import imageClearLightURL from "../svg/clear-light.svg";
-import imageSearchLightURL from "../svg/search-light.svg";
-import imageClearDarkURL from "../svg/clear-dark.svg";
-import imageSearchDarkURL from "../svg/search-dark.svg";
+import imageClearURL from "../svg/clear.svg";
+import imageSearchURL from "../svg/search.svg";
 
 interface SearchProps {
   updateSearch: (search: string) => void;
@@ -14,16 +11,6 @@ interface SearchProps {
 export default function Search(props: SearchProps) {
   const { updateSearch, search } = props;
   const ref = React.useRef<HTMLInputElement>(null);
-  const isDarkMode = useDarkMode();
-  const { imageSearchURL, imageClearURL } = isDarkMode
-    ? {
-        imageClearURL: imageClearLightURL,
-        imageSearchURL: imageSearchLightURL,
-      }
-    : {
-        imageClearURL: imageClearDarkURL,
-        imageSearchURL: imageSearchDarkURL,
-      };
   const iconSize = 24;
   const inputHeight = 36;
   return (
@@ -33,7 +20,7 @@ export default function Search(props: SearchProps) {
         width={iconSize}
         height={iconSize}
         role="presentation"
-        className="o-50 absolute"
+        className="o-50 absolute dark:invert"
         style={{ left: 10, top: 8 }}
       />
       <input
@@ -71,7 +58,9 @@ export default function Search(props: SearchProps) {
             ref.current.focus();
           }
         }}
-        className={classnames("o-50 absolute", { dn: search === "" })}
+        className={classnames("o-50 absolute dark:invert", {
+          dn: search === "",
+        })}
         style={{ right: 6, top: 6 }}
       />
     </div>
