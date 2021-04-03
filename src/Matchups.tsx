@@ -64,7 +64,7 @@ Section.displayName = "Section";
 
 interface MatchupsProps {
   coverageTypes?: CoverageType[];
-  setCoverageTypes: (types: any[]) => void;
+  setCoverageTypes: (types: CoverageType[]) => void;
   kind: "offense" | "defense";
   types: Type[];
   formatTitle: (value: string) => string;
@@ -148,7 +148,7 @@ Defense.displayName = "Matchups.Defense";
 
 export interface OffenseProps {
   coverageTypes?: CoverageType[];
-  setCoverageTypes: (types: any[]) => void;
+  setCoverageTypes: (types: CoverageType[]) => void;
   types: Type[];
 }
 

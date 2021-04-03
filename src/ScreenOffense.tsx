@@ -8,7 +8,7 @@ import { useSearch } from "./useSearch";
 
 interface OffenseProps {
   coverageTypes?: CoverageType[];
-  setCoverageTypes: (types: any[]) => void;
+  setCoverageTypes: (types: CoverageType[]) => void;
   setOffenseParams: (params: string) => void;
 }
 

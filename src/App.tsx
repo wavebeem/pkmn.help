@@ -32,7 +32,7 @@ const tabClassActive = classnames([
 export interface CoverageType {
   number: string;
   name: string;
-  formName: string;
+  form: string;
   type1: Type;
   type2: Type;
 }
