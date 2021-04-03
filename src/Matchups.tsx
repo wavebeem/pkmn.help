@@ -1,5 +1,6 @@
 import classnames from "classnames";
 import * as React from "react";
+import { CoverageType } from "./App";
 import {
   defensiveMatchups,
   Effectiveness,
@@ -20,18 +21,18 @@ interface BadgeProps {
   type: Type;
 }
 
-function Badge(props: BadgeProps) {
+function Badge({ type }: BadgeProps) {
   return (
     <div
       className={classnames(
-        `type-bg-dark type-${props.type}`,
+        `type-bg-dark type-${type}`,
         "ba border3",
         "ph1 pv1 br1",
         "ttc tc b f5"
       )}
       style={{ width: 80, margin: "0.125rem" }}
     >
-      {props.type}
+      {type}
     </div>
   );
 }
@@ -43,15 +44,15 @@ interface SectionProps {
   types: Type[];
 }
 
-function Section(props: SectionProps) {
-  if (props.types.length === 0) {
+function Section({ title, types }: SectionProps) {
+  if (types.length === 0) {
     return null;
   }
   return (
     <div>
-      <h3 className="f5 mt3 mb0">{props.title}</h3>
+      <h3 className="f5 mt3 mb0">{title}</h3>
       <div className="mw5 center MatchupsSection-Container">
-        {props.types.map((t) => (
+        {types.map((t) => (
           <Badge key={`type-${t}`} type={t} />
         ))}
       </div>
@@ -62,50 +63,63 @@ function Section(props: SectionProps) {
 Section.displayName = "Section";
 
 interface MatchupsProps {
+  coverageTypes?: CoverageType[];
+  setCoverageTypes: (types: any[]) => void;
   kind: "offense" | "defense";
   types: Type[];
   formatTitle: (value: string) => string;
   matchups: GroupedMatchups;
 }
 
-function Matchups(props: MatchupsProps) {
+function Matchups({
+  coverageTypes,
+  setCoverageTypes,
+  kind,
+  types,
+  formatTitle,
+  matchups,
+}: MatchupsProps) {
   return (
-    <div className="tc pt2" id={`matchup-${props.kind}`}>
-      {props.kind === "offense" ? (
+    <div className="tc pt2" id={`matchup-${kind}`}>
+      {kind === "offense" ? (
         <div>
           <h3 className="f5 mt3 mb0">Weakness Coverage</h3>
           <div className="pt1 mw5 center tc">
             <React.Suspense
               fallback={<div className="Spinner mt2 f2 center" />}
             >
-              <DexCoverage types={props.types} />
+              <DexCoverage
+                coverageTypes={coverageTypes}
+                setCoverageTypes={setCoverageTypes}
+                types={types}
+              />
             </React.Suspense>
           </div>
         </div>
       ) : null}
       <Section
-        title={props.formatTitle("4×")}
-        types={props.matchups.typesFor(Effectiveness.QUADRUPLE)}
+        title={formatTitle("4×")}
+        types={matchups.typesFor(Effectiveness.QUADRUPLE)}
       />
       <Section
-        title={props.formatTitle("2×")}
-        types={props.matchups.typesFor(Effectiveness.DOUBLE)}
+        title={formatTitle("2×")}
+        types={matchups.typesFor(Effectiveness.DOUBLE)}
       />
       <Section
-        title={props.formatTitle("1×")}
-        types={props.matchups.typesFor(Effectiveness.REGULAR)}
+        title={formatTitle("1×")}
+        types={matchups.typesFor(Effectiveness.REGULAR)}
       />
       <Section
-        title={props.formatTitle("½×")}
-        types={props.matchups.typesFor(Effectiveness.HALF)}
+        title={formatTitle("½×")}
+        types={matchups.typesFor(Effectiveness.HALF)}
       />
       <Section
-        title={props.formatTitle("¼×")}
-        types={props.matchups.typesFor(Effectiveness.QUARTER)}
+        title={formatTitle("¼×")}
+        types={matchups.typesFor(Effectiveness.QUARTER)}
       />
       <Section
-        title={props.formatTitle("0×")}
-        types={props.matchups.typesFor(Effectiveness.ZERO)}
+        title={formatTitle("0×")}
+        types={matchups.typesFor(Effectiveness.ZERO)}
       />
     </div>
   );
@@ -118,13 +132,14 @@ export interface DefenseProps {
   type2: Type;
 }
 
-export function Defense(props: DefenseProps) {
+export function Defense({ type1, type2 }: DefenseProps) {
   return (
     <Matchups
       kind="defense"
-      types={[props.type1, props.type2]}
+      setCoverageTypes={() => {}}
+      types={[type1, type2]}
       formatTitle={(x) => `Takes ${x} From`}
-      matchups={defensiveMatchups(props.type1, props.type2)}
+      matchups={defensiveMatchups(type1, type2)}
     />
   );
 }
@@ -132,16 +147,24 @@ export function Defense(props: DefenseProps) {
 Defense.displayName = "Matchups.Defense";
 
 export interface OffenseProps {
+  coverageTypes?: CoverageType[];
+  setCoverageTypes: (types: any[]) => void;
   types: Type[];
 }
 
-export function Offense(props: OffenseProps) {
+export function Offense({
+  coverageTypes,
+  setCoverageTypes,
+  types,
+}: OffenseProps) {
   return (
     <Matchups
       kind="offense"
-      types={props.types}
+      types={types}
+      coverageTypes={coverageTypes}
+      setCoverageTypes={setCoverageTypes}
       formatTitle={(x) => `Deals ${x} to`}
-      matchups={offensiveMatchups(props.types)}
+      matchups={offensiveMatchups(types)}
     />
   );
 }

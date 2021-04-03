@@ -4,6 +4,7 @@ import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import ScreenInfo from "./ScreenInfo";
 import ScreenDefense from "./ScreenDefense";
 import ScreenOffense from "./ScreenOffense";
+import { Type } from "./data";
 
 const ScreenPokedex = React.lazy(async () => {
   return await import(
@@ -28,10 +29,19 @@ const tabClassActive = classnames([
   "no-pointer",
 ]);
 
+export interface CoverageType {
+  number: string;
+  name: string;
+  formName: string;
+  type1: Type;
+  type2: Type;
+}
+
 export default function App() {
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
+  const [coverageTypes, setCoverageTypes] = React.useState<CoverageType[]>();
   return (
     <div className="sans-serif bg2 fg1 min-vh-100 flex flex-column">
       <div className="flex-auto">
@@ -83,7 +93,13 @@ export default function App() {
         <Switch>
           <Route
             path="/offense"
-            render={() => <ScreenOffense setOffenseParams={setOffenseParams} />}
+            render={() => (
+              <ScreenOffense
+                coverageTypes={coverageTypes}
+                setCoverageTypes={setCoverageTypes}
+                setOffenseParams={setOffenseParams}
+              />
+            )}
           />
           <Route
             path="/defense"

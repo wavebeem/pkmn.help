@@ -1,15 +1,22 @@
 import * as React from "react";
 import { useHistory } from "react-router-dom";
+import { CoverageType } from "./App";
 import { Type, typesFromString } from "./data";
 import * as Matchups from "./Matchups";
 import MultiTypeSelector from "./MultiTypeSelector";
 import { useSearch } from "./useSearch";
 
 interface OffenseProps {
+  coverageTypes?: CoverageType[];
+  setCoverageTypes: (types: any[]) => void;
   setOffenseParams: (params: string) => void;
 }
 
-export default function ScreenOffense(props: OffenseProps) {
+export default function ScreenOffense({
+  coverageTypes,
+  setCoverageTypes,
+  setOffenseParams,
+}: OffenseProps) {
   const search = useSearch();
   const history = useHistory();
   const offenseTypes = typesFromString(search.get("types") || "");
@@ -28,7 +35,7 @@ export default function ScreenOffense(props: OffenseProps) {
 
   const params = createParams(offenseTypes);
   React.useEffect(() => {
-    props.setOffenseParams(params);
+    setOffenseParams(params);
   }, [params]);
 
   const classH2 = "tc f5 mv3";
@@ -40,7 +47,11 @@ export default function ScreenOffense(props: OffenseProps) {
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
-        <Matchups.Offense types={offenseTypes} />
+        <Matchups.Offense
+          coverageTypes={coverageTypes}
+          setCoverageTypes={setCoverageTypes}
+          types={offenseTypes}
+        />
       </div>
     </main>
   );
