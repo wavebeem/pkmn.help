@@ -53,12 +53,12 @@ const DexCoverage: React.FC<DexCoverageProps> = ({
   const ratio = count / total;
   const percent = (ratio * 100).toFixed(0);
   function saveCSV() {
-    const headers = ["Number", "Name", "Form", "Type 1", "Type 2"];
-    const fields = ["number", "name", "form", "type1", "type2"] as const;
     const csv = Papa.unparse(
       {
-        fields: headers,
-        data: fallbackCoverageTypes.map((t) => fields.map((f) => t[f])),
+        fields: ["Number", "Name", "Form", "Type 1", "Type 2"],
+        data: fallbackCoverageTypes.map((t) => {
+          return [t.number, t.name, t.form, t.type1, t.type2];
+        }),
       },
       {
         header: true,
