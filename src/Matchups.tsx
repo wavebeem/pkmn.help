@@ -86,7 +86,14 @@ function Matchups({
           <h3 className="f5 mt3 mb0">Weakness Coverage</h3>
           <div className="pt1 mw5 center tc">
             <React.Suspense
-              fallback={<div className="Spinner mt2 f2 center" />}
+              fallback={
+                <div
+                  style={{ minHeight: 84 }}
+                  className="flex justify-center items-center"
+                >
+                  <div className="Spinner f2 center" />
+                </div>
+              }
             >
               <DexCoverage
                 coverageTypes={coverageTypes}
