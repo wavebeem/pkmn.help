@@ -1,16 +1,24 @@
 import classnames from "classnames";
 import * as React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
-import ScreenInfo from "./ScreenInfo";
+import { CoverageType } from "./data";
 import ScreenDefense from "./ScreenDefense";
+import ScreenInfo from "./ScreenInfo";
 import ScreenOffense from "./ScreenOffense";
-import { Type } from "./data";
 
 const ScreenPokedex = React.lazy(async () => {
   return await import(
     /* webpackChunkName: "ScreenPokedex" */
     /* webpackPrefetch: true */
     "./ScreenPokedex"
+  );
+});
+
+const ScreenWeaknessCoverage = React.lazy(async () => {
+  return await import(
+    /* webpackChunkName: "ScreenWeaknessCoverage" */
+    /* webpackPrefetch: true */
+    "./ScreenWeaknessCoverage"
   );
 });
 
@@ -24,10 +32,7 @@ const tabClass = classnames([
   "fg3 bottom-border-thick",
 ]);
 
-const tabClassActive = classnames([
-  "fg1 bottom-border-thick-current",
-  "no-pointer",
-]);
+const tabClassActive = classnames(["fg1 bottom-border-thick-current"]);
 
 export default function App() {
   const [defenseParams, setDefenseParams] = React.useState("");
@@ -83,6 +88,21 @@ export default function App() {
           </NavLink>
         </nav>
         <Switch>
+          <Route
+            path="/offense/coverage"
+            render={() => (
+              <React.Suspense
+                fallback={<div className="Spinner center mt4 f2" />}
+              >
+                <ScreenWeaknessCoverage
+                  coverageTypes={coverageTypes}
+                  setCoverageTypes={setCoverageTypes}
+                  offenseParams={offenseParams}
+                  setOffenseParams={setOffenseParams}
+                />
+              </React.Suspense>
+            )}
+          />
           <Route
             path="/offense"
             render={() => (

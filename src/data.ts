@@ -1,6 +1,7 @@
 import { closest } from "fastest-levenshtein";
 import flatMap from "lodash.flatmap";
 import fromPairs from "lodash.frompairs";
+import { AllPokemon } from "./pkmn";
 
 export enum Type {
   NORMAL = "normal",
@@ -187,3 +188,17 @@ export function defensiveMatchups(t1: Type, t2: Type) {
   });
   return new GroupedMatchups(matchups);
 }
+
+export const fallbackCoverageTypes = AllPokemon.filter((pkmn) => {
+  // Slowking is weird right now... thanks Bulbapedia
+  const [t1, t2] = pkmn.types as string[];
+  return t1 !== "???" && t2 !== "???";
+}).map<CoverageType>((pkmn) => {
+  return {
+    number: String(pkmn.number),
+    name: pkmn.name,
+    form: pkmn.formName,
+    type1: pkmn.types[0],
+    type2: pkmn.types[1] ?? Type.NONE,
+  };
+});

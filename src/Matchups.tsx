@@ -1,5 +1,6 @@
 import classnames from "classnames";
 import * as React from "react";
+import { Link } from "react-router-dom";
 import {
   CoverageType,
   defensiveMatchups,
@@ -83,7 +84,19 @@ function Matchups({
     <div className="tc pt2" id={`matchup-${kind}`}>
       {kind === "offense" ? (
         <div>
-          <h3 className="f5 mt3 mb0">Weakness Coverage</h3>
+          <h3 className="f5 mt3 mb0">
+            Weakness Coverage{" "}
+            <span className="normal">
+              (
+              <Link
+                to="/offense/coverage"
+                className="underline fg-link OutlineFocus"
+              >
+                edit
+              </Link>
+              )
+            </span>
+          </h3>
           <div className="pt1 mw5 center tc">
             <React.Suspense
               fallback={
