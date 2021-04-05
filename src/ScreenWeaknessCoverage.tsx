@@ -54,7 +54,7 @@ export default function ScreenWeaknessCoverage({
   }
 
   async function loadCSV() {
-    const file = await pickFile({ accept: "text/csv" });
+    const file = await pickFile({ accept: "*.csv" });
     if (!file) {
       return;
     }
