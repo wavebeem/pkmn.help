@@ -23,16 +23,28 @@ export default function ScreenInfo() {
         </a>
         .
       </p>
+      <h2 className="lh-title f5">Privacy</h2>
+      <p>
+        I will never runs ads or steal your personal data. I use{" "}
+        <a
+          href="https://plausible.io"
+          className="underline fg-link OutlineFocus"
+        >
+          Plausible Analytics
+        </a>
+        , which is self-funded, independent, hosted in the EU, and doesn't store
+        any cookies on your computer.
+      </p>
       <h2 className="lh-title f5">Giving Back</h2>
       <p>
-        I have spent countless hours polishing this site to perfection. I will
-        never run ads or steal your personal data. If you appreciate what
-        I&apos;ve made, please consider donating to support Black lives and
-        trans rights.
+        I have spent countless hours improving this site. If you appreciate what
+        I've made, please consider donating to charities that support BIPOC and
+        transgender rights.
       </p>
       <h2 className="lh-title f5">Special Thanks</h2>
       <ul className="lh-copy mt1 ph3">
         <li>Jansjo (testing, research)</li>
+        <li>Several anonymous Poké Fans</li>
       </ul>
       <h2 className="lh-title f5">Legal Info</h2>
       <p>
@@ -45,7 +57,7 @@ export default function ScreenInfo() {
         content on this page.
       </p>
       <p>
-        Pokédex data scraped from Bulbapedia&apos;s{" "}
+        Pokédex data scraped from Bulbapedia's{" "}
         <a
           className="underline fg-link OutlineFocus"
           href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number"

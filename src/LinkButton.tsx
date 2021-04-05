@@ -35,7 +35,7 @@ export function LinkButton({
       className={classnames(
         className,
         baseClasses,
-        "border2 button-shadow button-bg button-bg-hover color-inherit"
+        "border2 button-shadow button-bg button-bg-hover color-inherit active-squish"
       )}
     />
   );
@@ -46,6 +46,5 @@ const baseClasses = classnames(
   "db",
   "ba br2 pv1 ph2",
   "b f5",
-  "SimpleFocus",
-  "active-squish"
+  "SimpleFocus"
 );
