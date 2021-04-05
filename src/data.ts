@@ -56,10 +56,10 @@ export const types = [
 
 export const typesOrNone = [...types, Type.NONE];
 
-export function stringToType(string: string): Type {
+export function stringToType(string: string, fallback: Type): Type {
   string = string.toLowerCase().replace(/[^a-z]/, "");
   if (string === "") {
-    return Type.NONE;
+    return fallback;
   }
   return closest(string, typesOrNone) as Type;
 }
@@ -112,8 +112,8 @@ export function objectToCoverageType(obj: unknown): CoverageType {
     number: ct.number || "",
     name: ct.name || "",
     form: ct.form || "",
-    type1: stringToType(ct.type1 || ""),
-    type2: stringToType(ct.type2 || ""),
+    type1: stringToType(ct.type1 || "", Type.NORMAL),
+    type2: stringToType(ct.type2 || "", Type.NONE),
   };
 }
 

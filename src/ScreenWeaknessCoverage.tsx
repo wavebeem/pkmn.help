@@ -8,6 +8,7 @@ import {
   fallbackCoverageTypes,
   objectToCoverageType,
   stringToType,
+  Type,
 } from "./data";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
@@ -23,24 +24,21 @@ const buttonClasses = classnames(
 );
 
 interface WeaknessCoverageProps {
-  coverageTypes?: CoverageType[];
   setCoverageTypes: (types: CoverageType[]) => void;
   offenseParams: string;
-  setOffenseParams: (params: string) => void;
 }
 
 export default function ScreenWeaknessCoverage({
-  coverageTypes = fallbackCoverageTypes,
   setCoverageTypes,
   offenseParams,
-  setOffenseParams,
 }: WeaknessCoverageProps) {
   function saveCSV() {
     const csv = Papa.unparse(
       {
         fields: ["Number", "Name", "Form", "Type 1", "Type 2"],
         data: fallbackCoverageTypes.map((t) => {
-          return [t.number, t.name, t.form, t.type1, t.type2];
+          const type2 = t.type2 === Type.NONE ? "" : t.type2;
+          return [t.number, t.name, t.form, t.type1, type2];
         }),
       },
       {
@@ -74,8 +72,11 @@ export default function ScreenWeaknessCoverage({
         ]);
       },
       transform: (value, field) => {
-        if (field === "type1" || field === "type2") {
-          return stringToType(value);
+        if (field === "type1") {
+          return stringToType(value, Type.NORMAL);
+        }
+        if (field === "type2") {
+          return stringToType(value, Type.NONE);
         }
         return value;
       },
@@ -99,6 +100,11 @@ export default function ScreenWeaknessCoverage({
         Import/export custom Pokédex CSV files to see weakness coverage for
         different Pokémon. Create a custom CSV file with just the OU tier
         Pokémon, or even create your own Pokémon from scratch.
+      </p>
+      <p>
+        CSV data is loaded by column header name, not column order, so you can
+        add or re-order columns if you want (e.g. add a "tier" column, or a
+        "notes" column).
       </p>
       <div className="pt2 ButtonGrid">
         <button

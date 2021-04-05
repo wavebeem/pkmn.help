@@ -95,10 +95,8 @@ export default function App() {
                 fallback={<div className="Spinner center mt4 f2" />}
               >
                 <ScreenWeaknessCoverage
-                  coverageTypes={coverageTypes}
                   setCoverageTypes={setCoverageTypes}
                   offenseParams={offenseParams}
-                  setOffenseParams={setOffenseParams}
                 />
               </React.Suspense>
             )}
