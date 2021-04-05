@@ -7,17 +7,14 @@ import {
   Type,
 } from "./data";
 import { PercentBar } from "./PercentBar";
-import { AllPokemon } from "./pkmn";
 
 interface DexCoverageProps {
   coverageTypes?: CoverageType[];
-  setCoverageTypes: (types: CoverageType[]) => void;
   types: Type[];
 }
 
 const DexCoverage: React.FC<DexCoverageProps> = ({
   coverageTypes = fallbackCoverageTypes,
-  setCoverageTypes,
   types,
 }) => {
   const count = coverageTypes.filter(({ type1, type2 }) => {

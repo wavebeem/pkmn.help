@@ -101,18 +101,14 @@ function Matchups({
             <React.Suspense
               fallback={
                 <div
-                  style={{ minHeight: 84 }}
+                  style={{ minHeight: 44 }}
                   className="flex justify-center items-center"
                 >
                   <div className="Spinner f2 center" />
                 </div>
               }
             >
-              <DexCoverage
-                coverageTypes={coverageTypes}
-                setCoverageTypes={setCoverageTypes}
-                types={types}
-              />
+              <DexCoverage coverageTypes={coverageTypes} types={types} />
             </React.Suspense>
           </div>
         </div>
