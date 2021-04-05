@@ -95,6 +95,11 @@ export default function ScreenWeaknessCoverage({
   return (
     <main className="pa3 center content-narrow lh-copy">
       <h2 className="lh-title f5">Weakness Coverage</h2>
+      <p>
+        Import/export custom Pokédex CSV files to see weakness coverage for
+        different Pokémon. Create a custom CSV file with just the OU tier
+        Pokémon, or even create your own Pokémon from scratch.
+      </p>
       <div className="pt2 ButtonGrid">
         <button
           type="button"
