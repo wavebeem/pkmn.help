@@ -106,6 +106,10 @@ export default function ScreenWeaknessCoverage({
         add or re-order columns if you want (e.g. add a "tier" column, or a
         "notes" column).
       </p>
+      <p>
+        CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice,
+        LibreOffice, Notepad, and more.
+      </p>
       <div className="pt2 ButtonGrid">
         <button
           type="button"
@@ -116,7 +120,7 @@ export default function ScreenWeaknessCoverage({
         >
           Export
         </button>
-        <p className="ma0">Export the default Pokédex to a CSV file</p>
+        <span>Export the default Pokédex to a CSV file</span>
 
         <button
           type="button"
@@ -127,7 +131,7 @@ export default function ScreenWeaknessCoverage({
         >
           Import
         </button>
-        <p className="ma0">Import an edited Pokédex CSV file</p>
+        <span>Import an edited Pokédex CSV file</span>
 
         <button
           type="button"
@@ -138,7 +142,7 @@ export default function ScreenWeaknessCoverage({
         >
           Reset
         </button>
-        <p className="ma0">Reset to the default Pokédex</p>
+        <span>Reset to the default Pokédex</span>
       </div>
       <div className="pt4" />
       <Link
