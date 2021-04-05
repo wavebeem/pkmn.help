@@ -29,14 +29,6 @@ const tabClassActive = classnames([
   "no-pointer",
 ]);
 
-export interface CoverageType {
-  number: string;
-  name: string;
-  form: string;
-  type1: Type;
-  type2: Type;
-}
-
 export default function App() {
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");

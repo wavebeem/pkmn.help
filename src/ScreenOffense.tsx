@@ -1,7 +1,6 @@
 import * as React from "react";
 import { useHistory } from "react-router-dom";
-import { CoverageType } from "./App";
-import { Type, typesFromString } from "./data";
+import { CoverageType, Type, typesFromString } from "./data";
 import * as Matchups from "./Matchups";
 import MultiTypeSelector from "./MultiTypeSelector";
 import { useSearch } from "./useSearch";

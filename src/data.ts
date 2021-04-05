@@ -1,3 +1,4 @@
+import { closest } from "fastest-levenshtein";
 import flatMap from "lodash.flatmap";
 import fromPairs from "lodash.frompairs";
 
@@ -54,6 +55,14 @@ export const types = [
 
 export const typesOrNone = [...types, Type.NONE];
 
+export function stringToType(string: string): Type {
+  string = string.toLowerCase().replace(/[^a-z]/, "");
+  if (string === "") {
+    return Type.NONE;
+  }
+  return closest(string, typesOrNone) as Type;
+}
+
 export enum Effectiveness {
   QUADRUPLE = 4,
   DOUBLE = 2,
@@ -86,6 +95,25 @@ const rawData = [
 
 function keyForTypes(t1: Type, t2: Type) {
   return t1 + " ~ " + t2;
+}
+
+export interface CoverageType {
+  number: string;
+  name: string;
+  form: string;
+  type1: Type;
+  type2: Type;
+}
+
+export function objectToCoverageType(obj: unknown): CoverageType {
+  const ct = obj as Partial<CoverageType>;
+  return {
+    number: ct.number || "",
+    name: ct.name || "",
+    form: ct.form || "",
+    type1: stringToType(ct.type1 || ""),
+    type2: stringToType(ct.type2 || ""),
+  };
 }
 
 // TODO: Types seem wrong here

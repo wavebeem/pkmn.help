@@ -1,7 +1,7 @@
 import classnames from "classnames";
 import * as React from "react";
-import { CoverageType } from "./App";
 import {
+  CoverageType,
   defensiveMatchups,
   Effectiveness,
   GroupedMatchups,

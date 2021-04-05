@@ -1,11 +1,18 @@
 import classnames from "classnames";
+import { closest } from "fastest-levenshtein";
+import Papa from "papaparse";
 import * as React from "react";
-import { CoverageType } from "./App";
-import { Effectiveness, matchupFor, Type } from "./data";
+import {
+  CoverageType,
+  Effectiveness,
+  matchupFor,
+  objectToCoverageType,
+  stringToType,
+  Type,
+} from "./data";
 import { PercentBar } from "./PercentBar";
 import { pickFile } from "./pickFile";
 import { AllPokemon } from "./pkmn";
-import Papa from "papaparse";
 import { saveFile } from "./saveFile";
 
 const fallbackCoverageTypes = AllPokemon.filter((pkmn) => {
@@ -81,15 +88,17 @@ const DexCoverage: React.FC<DexCoverageProps> = ({
       header: true,
       skipEmptyLines: true,
       transformHeader: (header) => {
-        return header.toLowerCase().split(/\s+/).join("");
+        return closest(header.toLowerCase().replace(/[a-z0-9]/i, ""), [
+          "number",
+          "name",
+          "form",
+          "type1",
+          "type2",
+        ]);
       },
       transform: (value, field) => {
         if (field === "type1" || field === "type2") {
-          if (value === "") {
-            return "none";
-          } else {
-            return value.toLowerCase();
-          }
+          return stringToType(value);
         }
         return value;
       },
@@ -98,9 +107,8 @@ const DexCoverage: React.FC<DexCoverageProps> = ({
       alert("Error loading CSV. Don't change header names.");
       return;
     }
-    console.log(result.data);
-    // TODO: Verify the data is formed correctly
-    setCoverageTypes(result.data as any);
+    const newCoverageTypes = result.data.map(objectToCoverageType);
+    setCoverageTypes(newCoverageTypes);
   }
   return (
     <div className="pt1 tabular-nums flex flex-column lh-copy">
