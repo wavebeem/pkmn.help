@@ -32,6 +32,16 @@ export default function ScreenWeaknessCoverage({
   setCoverageTypes,
   offenseParams,
 }: WeaknessCoverageProps) {
+  const [lastUpdated, setLastUpdated] = React.useState(new Date());
+  const [statusText, setStatusText] = React.useState("");
+  const statusRef = React.useRef<HTMLParagraphElement | null>(null);
+
+  React.useEffect(() => {
+    if (statusRef.current instanceof HTMLElement) {
+      statusRef.current.scrollIntoView();
+    }
+  }, [lastUpdated]);
+
   function saveCSV() {
     const csv = Papa.unparse(
       {
@@ -51,6 +61,8 @@ export default function ScreenWeaknessCoverage({
       type: "text/csv",
       data: csv,
     });
+    setStatusText("Exported default Pokémon forms");
+    setLastUpdated(new Date());
   }
 
   async function loadCSV() {
@@ -86,11 +98,17 @@ export default function ScreenWeaknessCoverage({
       return;
     }
     const newCoverageTypes = result.data.map(objectToCoverageType);
+    setStatusText(
+      `Imported ${newCoverageTypes.length} Pokémon forms from "${file.name}"`
+    );
     setCoverageTypes(newCoverageTypes);
+    setLastUpdated(new Date());
   }
 
   function loadDefault() {
+    setStatusText("Loaded default Pokémon forms");
     setCoverageTypes(fallbackCoverageTypes);
+    setLastUpdated(new Date());
   }
 
   return (
@@ -144,14 +162,18 @@ export default function ScreenWeaknessCoverage({
         </button>
         <span>Reset to the default Pokédex</span>
       </div>
-      <div className="pt4" />
-      <Link
-        to={`/offense${offenseParams}`}
-        className="underline fg-link OutlineFocus"
-        aria-label="Back to offense"
-      >
-        &larr; Back to offense
-      </Link>
+      <p className="f4 b" hidden={!statusText} ref={statusRef}>
+        {statusText}
+      </p>
+      <p>
+        <Link
+          to={`/offense${offenseParams}`}
+          className="underline fg-link OutlineFocus"
+          aria-label="Back to offense"
+        >
+          &larr; Back to offense
+        </Link>
+      </p>
     </main>
   );
 }
