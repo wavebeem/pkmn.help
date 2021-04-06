@@ -1,8 +1,9 @@
 import classnames from "classnames";
 import * as React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
-import ScreenInfo from "./ScreenInfo";
+import { CoverageType } from "./data";
 import ScreenDefense from "./ScreenDefense";
+import ScreenInfo from "./ScreenInfo";
 import ScreenOffense from "./ScreenOffense";
 
 const ScreenPokedex = React.lazy(async () => {
@@ -10,6 +11,14 @@ const ScreenPokedex = React.lazy(async () => {
     /* webpackChunkName: "ScreenPokedex" */
     /* webpackPrefetch: true */
     "./ScreenPokedex"
+  );
+});
+
+const ScreenWeaknessCoverage = React.lazy(async () => {
+  return await import(
+    /* webpackChunkName: "ScreenWeaknessCoverage" */
+    /* webpackPrefetch: true */
+    "./ScreenWeaknessCoverage"
   );
 });
 
@@ -23,15 +32,13 @@ const tabClass = classnames([
   "fg3 bottom-border-thick",
 ]);
 
-const tabClassActive = classnames([
-  "fg1 bottom-border-thick-current",
-  "no-pointer",
-]);
+const tabClassActive = classnames(["fg1 bottom-border-thick-current"]);
 
 export default function App() {
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
+  const [coverageTypes, setCoverageTypes] = React.useState<CoverageType[]>();
   return (
     <div className="sans-serif bg2 fg1 min-vh-100 flex flex-column">
       <div className="flex-auto">
@@ -82,8 +89,27 @@ export default function App() {
         </nav>
         <Switch>
           <Route
+            path="/offense/coverage"
+            render={() => (
+              <React.Suspense
+                fallback={<div className="Spinner center mt4 f2" />}
+              >
+                <ScreenWeaknessCoverage
+                  setCoverageTypes={setCoverageTypes}
+                  offenseParams={offenseParams}
+                />
+              </React.Suspense>
+            )}
+          />
+          <Route
             path="/offense"
-            render={() => <ScreenOffense setOffenseParams={setOffenseParams} />}
+            render={() => (
+              <ScreenOffense
+                coverageTypes={coverageTypes}
+                setCoverageTypes={setCoverageTypes}
+                setOffenseParams={setOffenseParams}
+              />
+            )}
           />
           <Route
             path="/defense"

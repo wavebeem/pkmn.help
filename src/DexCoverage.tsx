@@ -1,27 +1,29 @@
 import * as React from "react";
-import { Effectiveness, matchupFor, Type } from "./data";
+import {
+  CoverageType,
+  Effectiveness,
+  fallbackCoverageTypes,
+  matchupFor,
+  Type,
+} from "./data";
 import { PercentBar } from "./PercentBar";
-import { AllPokemon } from "./pkmn";
 
 interface DexCoverageProps {
+  coverageTypes?: CoverageType[];
   types: Type[];
 }
 
-const mostPokemon = AllPokemon.filter((pkmn) => {
-  const [t1, t2 = Type.NONE] = pkmn.types;
-  // Slowking is weird right now... thanks Bulbapedia
-  return (t1 as any) !== "???" && (t2 as any) !== "???";
-});
-
-const DexCoverage: React.FC<DexCoverageProps> = (props) => {
-  const count = mostPokemon.filter((pkmn) => {
-    const [t1, t2 = Type.NONE] = pkmn.types;
-    const matchups = props.types.map((t) => matchupFor(t1, t2, t));
+const DexCoverage: React.FC<DexCoverageProps> = ({
+  coverageTypes = fallbackCoverageTypes,
+  types,
+}) => {
+  const count = coverageTypes.filter(({ type1, type2 }) => {
+    const matchups = types.map((t) => matchupFor(type1, type2, t));
     return matchups.some((effectiveness) => {
       return effectiveness > Effectiveness.REGULAR;
     });
   }).length;
-  const total = mostPokemon.length;
+  const total = coverageTypes.length;
   const ratio = count / total;
   const percent = (ratio * 100).toFixed(0);
   return (

@@ -1,5 +1,7 @@
+import { closest } from "fastest-levenshtein";
 import flatMap from "lodash.flatmap";
 import fromPairs from "lodash.frompairs";
+import { AllPokemon } from "./pkmn";
 
 export enum Type {
   NORMAL = "normal",
@@ -54,6 +56,14 @@ export const types = [
 
 export const typesOrNone = [...types, Type.NONE];
 
+export function stringToType(string: string, fallback: Type): Type {
+  string = string.toLowerCase().replace(/[^a-z]/, "");
+  if (string === "") {
+    return fallback;
+  }
+  return closest(string, typesOrNone) as Type;
+}
+
 export enum Effectiveness {
   QUADRUPLE = 4,
   DOUBLE = 2,
@@ -86,6 +96,25 @@ const rawData = [
 
 function keyForTypes(t1: Type, t2: Type) {
   return t1 + " ~ " + t2;
+}
+
+export interface CoverageType {
+  number: string;
+  name: string;
+  form: string;
+  type1: Type;
+  type2: Type;
+}
+
+export function objectToCoverageType(obj: unknown): CoverageType {
+  const ct = obj as Partial<CoverageType>;
+  return {
+    number: ct.number || "",
+    name: ct.name || "",
+    form: ct.form || "",
+    type1: stringToType(ct.type1 || "", Type.NORMAL),
+    type2: stringToType(ct.type2 || "", Type.NONE),
+  };
 }
 
 // TODO: Types seem wrong here
@@ -159,3 +188,17 @@ export function defensiveMatchups(t1: Type, t2: Type) {
   });
   return new GroupedMatchups(matchups);
 }
+
+export const fallbackCoverageTypes = AllPokemon.filter((pkmn) => {
+  // Slowking is weird right now... thanks Bulbapedia
+  const [t1, t2] = pkmn.types as string[];
+  return t1 !== "???" && t2 !== "???";
+}).map<CoverageType>((pkmn) => {
+  return {
+    number: String(pkmn.number),
+    name: pkmn.name,
+    form: pkmn.formName,
+    type1: pkmn.types[0],
+    type2: pkmn.types[1] ?? Type.NONE,
+  };
+});

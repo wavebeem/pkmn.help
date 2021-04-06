@@ -5,6 +5,7 @@ module.exports = {
   entry: [path.join(__dirname, "src/main.tsx")],
   output: {
     path: path.join(__dirname, "dist"),
+    publicPath: "/",
     filename: "[name].bundle.js",
     chunkFilename: "[name].chunk.js",
   },

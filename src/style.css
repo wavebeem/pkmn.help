@@ -120,6 +120,12 @@
   gap: 0.5rem;
 }
 
+.ButtonGrid {
+  display: grid;
+  grid-gap: 1rem;
+  align-items: start;
+}
+
 .Spinner {
   border-radius: 9999px;
   width: 1em;
@@ -235,6 +241,10 @@ button {
 @media (min-width: 600px) {
   .Monster {
     grid-template-columns: 250px 1fr;
+  }
+
+  .ButtonGrid {
+    grid-template-columns: 1fr 4fr;
   }
 }
 
