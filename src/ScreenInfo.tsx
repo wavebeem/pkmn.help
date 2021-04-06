@@ -27,7 +27,7 @@ export default function ScreenInfo() {
       <p>
         I will never runs ads or steal your personal data. I use{" "}
         <a
-          href="https://plausible.io"
+          href="https://plausible.io/privacy"
           className="underline fg-link OutlineFocus"
         >
           Plausible Analytics
