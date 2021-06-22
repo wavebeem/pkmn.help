@@ -75,24 +75,16 @@ function Monster(props: MonsterProps) {
           >
             Defense
           </Link>{" "}
-          &bull;{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={props.pokemon.bulbapediaURL}
-            className="underline fg-link OutlineFocus"
-            aria-label={`${props.pokemon.name} on Bulbapedia`}
-          >
-            Bulbapedia
-          </a>
         </div>
-        <img
-          src={getImage(props.pokemon.id)}
-          role="presentation"
-          className={`pa1 mt2 bg3 br4 bn b--white-70 img-crisp`}
-          width={96}
-          height={96}
-        />
+        <div className="pa3 br3 mt2 bg3 flex justify-center">
+          <img
+            src={getImage(props.pokemon.id)}
+            role="presentation"
+            className="db img-crisp"
+            width={96}
+            height={96}
+          />
+        </div>
       </div>
       <StatsTable pokemon={props.pokemon} />
     </div>

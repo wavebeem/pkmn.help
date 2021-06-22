@@ -1,9 +1,9 @@
 import fetch from "node-fetch";
 import path from "path";
 import fs from "fs";
-import { URL } from "url";
 
 const SRC = path.resolve(__dirname, "../data/pokemon.json");
+const NOT_FOUND = path.resolve(__dirname, "not-found.png");
 const IMG_DEST = path.resolve(__dirname, "../img");
 const DATA_DEST = path.resolve(__dirname, "../src/data-pkmn.json");
 
@@ -29,9 +29,14 @@ async function main(): Promise<void> {
   for (const item of list) {
     const imgFilename = path.resolve(IMG_DEST, `${item.id}.png`);
     if (!fs.existsSync(imgFilename)) {
-      const img = await fetchBuffer(item.spriteURL);
-      fs.writeFileSync(imgFilename, img);
-      console.log(item.id);
+      if (!item.spriteURL) {
+        fs.writeFileSync(imgFilename, fs.readFileSync(NOT_FOUND));
+        console.log("NOT FOUND", item.id);
+      } else {
+        const img = await fetchBuffer(item.spriteURL);
+        fs.writeFileSync(imgFilename, img);
+        console.log("DOWNLOADED", item.id);
+      }
     }
     delete item.spriteURL;
   }

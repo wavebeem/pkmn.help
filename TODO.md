@@ -1,4 +1,3 @@
 - Use localized names for Pokémon
 - Double check data is sensible
-- Download images
-- Correct Gigantamax form names...
+- Show species name AND form name
