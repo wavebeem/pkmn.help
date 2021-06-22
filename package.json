@@ -5,6 +5,7 @@
   "description": "Pokémon type calculator",
   "scripts": {
     "scrape-pokedex": "ts-node --project ./bin/tsconfig.json ./bin/scrape-pokedex.ts",
+    "scrape-pokeapi": "ts-node --project ./bin/tsconfig.json ./bin/scrape-pokeapi.ts",
     "upgrade": "npm-check -u",
     "start": "webpack-dev-server --mode development",
     "build:ico": "bash bin/make-ico.sh",

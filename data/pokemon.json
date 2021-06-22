@@ -11,7 +11,10 @@
     "spDefense": 65,
     "speed": 45,
     "id": 1,
-    "types": ["grass", "poison"]
+    "types": [
+      "grass",
+      "poison"
+    ]
   },
   {
     "name": "ivysaur",
@@ -25,7 +28,10 @@
     "spDefense": 80,
     "speed": 60,
     "id": 2,
-    "types": ["grass", "poison"]
+    "types": [
+      "grass",
+      "poison"
+    ]
   },
   {
     "name": "venusaur",
@@ -39,7 +45,10 @@
     "spDefense": 100,
     "speed": 80,
     "id": 3,
-    "types": ["grass", "poison"]
+    "types": [
+      "grass",
+      "poison"
+    ]
   },
   {
     "name": "charmander",
@@ -53,7 +62,9 @@
     "spDefense": 50,
     "speed": 65,
     "id": 4,
-    "types": ["fire"]
+    "types": [
+      "fire"
+    ]
   },
   {
     "name": "charmeleon",
@@ -67,7 +78,9 @@
     "spDefense": 65,
     "speed": 80,
     "id": 5,
-    "types": ["fire"]
+    "types": [
+      "fire"
+    ]
   },
   {
     "name": "charizard",
@@ -81,7 +94,10 @@
     "spDefense": 85,
     "speed": 100,
     "id": 6,
-    "types": ["fire", "flying"]
+    "types": [
+      "fire",
+      "flying"
+    ]
   },
   {
     "name": "squirtle",
@@ -95,7 +111,9 @@
     "spDefense": 64,
     "speed": 43,
     "id": 7,
-    "types": ["water"]
+    "types": [
+      "water"
+    ]
   },
   {
     "name": "wartortle",
@@ -109,7 +127,9 @@
     "spDefense": 80,
     "speed": 58,
     "id": 8,
-    "types": ["water"]
+    "types": [
+      "water"
+    ]
   },
   {
     "name": "blastoise",
@@ -123,7 +143,9 @@
     "spDefense": 105,
     "speed": 78,
     "id": 9,
-    "types": ["water"]
+    "types": [
+      "water"
+    ]
   },
   {
     "name": "caterpie",
@@ -137,6 +159,8 @@
     "spDefense": 20,
     "speed": 45,
     "id": 10,
-    "types": ["bug"]
+    "types": [
+      "bug"
+    ]
   }
 ]
