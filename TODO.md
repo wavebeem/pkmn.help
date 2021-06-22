@@ -1,0 +1,4 @@
+- Use localized names for Pokémon
+- Double check data is sensible
+- Download images
+- Remove deprecated form name field

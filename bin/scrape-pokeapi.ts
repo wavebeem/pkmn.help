@@ -6,14 +6,46 @@ import { URL } from "url";
 const API = "https://pokeapi.co/api/v2/";
 const DEST = path.resolve(__dirname, "../data");
 
-interface PokemonBasicInfo {
+interface PokemonSpeciesBasic {
   name: string;
   url: string;
+}
+
+interface PokemonSpeciesDetail {
+  id: number;
+  names: {
+    name: string;
+    language: {
+      name: string;
+      url: string;
+    };
+  }[];
+  varieties: {
+    is_default: boolean;
+    pokemon: {
+      name: string;
+      url: string;
+    };
+  }[];
+}
+
+interface PokemonForm {
+  form_names: {
+    name: string;
+    language: {
+      name: string;
+      url: string;
+    };
+  }[];
 }
 
 interface PokemonDetail {
   id: number;
   name: string;
+  forms: {
+    name: string;
+    url: string;
+  }[];
   types: {
     slot: number;
     type: {
@@ -35,6 +67,7 @@ interface PokemonDetail {
 
 interface PokemonSimple {
   name: string;
+  names: Record<string, string>;
   formName: string;
   number: number;
   spriteURL: string;
@@ -79,36 +112,65 @@ function saveJSON(filename: string, data: any): void {
   );
 }
 
+function toObject<T, K extends string, V>({
+  data,
+  key,
+  value,
+}: {
+  data: T[];
+  key: (item: T) => K;
+  value: (item: T) => V;
+}): Record<K, V> {
+  const obj = {} as Record<K, V>;
+  for (const item of data) {
+    obj[key(item)] = value(item);
+  }
+  return obj;
+}
+
 async function main(): Promise<void> {
-  const pokemonList = await fetchPaginated<PokemonBasicInfo>(
-    new URL("pokemon", API).toString(),
+  const speciesList = await fetchPaginated<PokemonSpeciesBasic>(
+    new URL("pokemon-species", API).toString(),
     10
   );
   const pokemonSimpleList: PokemonSimple[] = [];
-  for (const pkmn of pokemonList) {
-    const detail = await fetchJSON<PokemonDetail>(pkmn.url);
-    const stats = new Map<string, number>();
-    for (const s of detail.stats) {
-      stats.set(s.stat.name, s.base_stat);
+  for (const species of speciesList) {
+    const speciesDetail = await fetchJSON<PokemonSpeciesDetail>(species.url);
+    const speciesNames = toObject({
+      data: speciesDetail.names,
+      key: (item) => item.language.name,
+      value: (item) => item.name,
+    });
+    for (const variety of speciesDetail.varieties) {
+      const detail = await fetchJSON<PokemonDetail>(variety.pokemon.url);
+      const stats = toObject({
+        data: detail.stats,
+        key: (item) => item.stat.name,
+        value: (item) => item.base_stat,
+      });
+      const form = await fetchJSON<PokemonForm>(detail.forms[0].url);
+      const formNames = toObject({
+        data: form.form_names,
+        key: (item) => item.language.name,
+        value: (item) => item.name,
+      });
+      const mon: PokemonSimple = {
+        name: detail.name,
+        names: { ...speciesNames, ...formNames },
+        formName: "", // TODO: Deprecated field
+        number: speciesDetail.id,
+        spriteURL: detail.sprites.front_default,
+        hp: stats["hp"] ?? 0,
+        attack: stats["attack"] ?? 0,
+        defense: stats["defense"] ?? 0,
+        spAttack: stats["special-attack"] ?? 0,
+        spDefense: stats["special-defense"] ?? 0,
+        speed: stats["speed"] ?? 0,
+        id: String(detail.id),
+        types: detail.types.map((t) => t.type.name),
+      };
+      pokemonSimpleList.push(mon);
     }
-    // TODO: Use `pokemon-species` instead so we can fetch the `varieties` and
-    // enumerate their details to get all sprites, types, form names, and stat
-    // totals
-    const mon: PokemonSimple = {
-      name: detail.name,
-      formName: "", // TODO: Scrape forms also
-      number: detail.id,
-      spriteURL: detail.sprites.front_default,
-      hp: stats.get("hp") ?? 0,
-      attack: stats.get("attack") ?? 0,
-      defense: stats.get("defense") ?? 0,
-      spAttack: stats.get("special-attack") ?? 0,
-      spDefense: stats.get("special-defense") ?? 0,
-      speed: stats.get("speed") ?? 0,
-      id: String(detail.id),
-      types: detail.types.map((t) => t.type.name),
-    };
-    pokemonSimpleList.push(mon);
   }
   saveJSON(path.resolve(DEST, "pokemon.json"), pokemonSimpleList);
 }
