@@ -6,6 +6,8 @@
   "scripts": {
     "scrape-pokedex": "ts-node --project ./bin/tsconfig.json ./bin/scrape-pokedex.ts",
     "scrape-pokeapi": "ts-node --project ./bin/tsconfig.json ./bin/scrape-pokeapi.ts",
+    "scrape-pokeapi:local": "API=http://localhost:8000/api/v2/ npm run -s scrape-pokeapi",
+    "fetch-images": "ts-node --project ./bin/tsconfig.json ./bin/fetch-images.ts",
     "upgrade": "npm-check -u",
     "start": "webpack-dev-server --mode development",
     "build:ico": "bash bin/make-ico.sh",

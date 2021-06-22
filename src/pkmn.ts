@@ -5,7 +5,7 @@ export interface Pokemon {
   id: string;
   bulbapediaURL: string;
   name: string;
-  formName: string;
+  names: Record<string, string>;
   number: number;
   types: Type[];
   hp: number;

@@ -14,9 +14,7 @@
       "ja": "フシギダネ",
       "zh-Hans": "妙蛙种子"
     },
-    "formName": "",
     "number": 1,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
     "hp": 45,
     "attack": 49,
     "defense": 49,
@@ -44,9 +42,7 @@
       "ja": "フシギソウ",
       "zh-Hans": "妙蛙草"
     },
-    "formName": "",
     "number": 2,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
     "hp": 60,
     "attack": 62,
     "defense": 63,
@@ -74,9 +70,7 @@
       "ja": "フシギバナ",
       "zh-Hans": "妙蛙花"
     },
-    "formName": "",
     "number": 3,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
     "hp": 80,
     "attack": 82,
     "defense": 83,
@@ -104,9 +98,7 @@
       "ja": "メガフシギバナ",
       "zh-Hans": "超级妙蛙花"
     },
-    "formName": "",
     "number": 3,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10033.png",
     "hp": 80,
     "attack": 100,
     "defense": 123,
@@ -134,9 +126,7 @@
       "ja": "フシギバナ",
       "zh-Hans": "妙蛙花"
     },
-    "formName": "",
     "number": 3,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10186.png",
     "hp": 80,
     "attack": 82,
     "defense": 83,
@@ -164,9 +154,7 @@
       "ja": "ヒトカゲ",
       "zh-Hans": "小火龙"
     },
-    "formName": "",
     "number": 4,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
     "hp": 39,
     "attack": 52,
     "defense": 43,
@@ -193,9 +181,7 @@
       "ja": "リザード",
       "zh-Hans": "火恐龙"
     },
-    "formName": "",
     "number": 5,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
     "hp": 58,
     "attack": 64,
     "defense": 58,
@@ -222,9 +208,7 @@
       "ja": "リザードン",
       "zh-Hans": "喷火龙"
     },
-    "formName": "",
     "number": 6,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
     "hp": 78,
     "attack": 84,
     "defense": 78,
@@ -252,9 +236,7 @@
       "ja": "メガリザードンＸ",
       "zh-Hans": "超级喷火龙Ｘ"
     },
-    "formName": "",
     "number": 6,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10034.png",
     "hp": 78,
     "attack": 130,
     "defense": 111,
@@ -282,9 +264,7 @@
       "ja": "メガリザードンＹ",
       "zh-Hans": "超级喷火龙Ｙ"
     },
-    "formName": "",
     "number": 6,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10035.png",
     "hp": 78,
     "attack": 104,
     "defense": 78,
@@ -312,9 +292,7 @@
       "ja": "リザードン",
       "zh-Hans": "喷火龙"
     },
-    "formName": "",
     "number": 6,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10187.png",
     "hp": 78,
     "attack": 84,
     "defense": 78,
@@ -342,9 +320,7 @@
       "ja": "ゼニガメ",
       "zh-Hans": "杰尼龟"
     },
-    "formName": "",
     "number": 7,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
     "hp": 44,
     "attack": 48,
     "defense": 65,
@@ -371,9 +347,7 @@
       "ja": "カメール",
       "zh-Hans": "卡咪龟"
     },
-    "formName": "",
     "number": 8,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
     "hp": 59,
     "attack": 63,
     "defense": 80,
@@ -400,9 +374,7 @@
       "ja": "カメックス",
       "zh-Hans": "水箭龟"
     },
-    "formName": "",
     "number": 9,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
     "hp": 79,
     "attack": 83,
     "defense": 100,
@@ -429,9 +401,7 @@
       "ja": "メガカメックス",
       "zh-Hans": "超级水箭龟"
     },
-    "formName": "",
     "number": 9,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10036.png",
     "hp": 79,
     "attack": 103,
     "defense": 120,
@@ -458,9 +428,7 @@
       "ja": "カメックス",
       "zh-Hans": "水箭龟"
     },
-    "formName": "",
     "number": 9,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10188.png",
     "hp": 79,
     "attack": 83,
     "defense": 100,
@@ -487,9 +455,7 @@
       "ja": "キャタピー",
       "zh-Hans": "绿毛虫"
     },
-    "formName": "",
     "number": 10,
-    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
     "hp": 45,
     "attack": 30,
     "defense": 35,

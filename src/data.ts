@@ -101,7 +101,6 @@ function keyForTypes(t1: Type, t2: Type) {
 export interface CoverageType {
   number: string;
   name: string;
-  form: string;
   type1: Type;
   type2: Type;
 }
@@ -111,7 +110,6 @@ export function objectToCoverageType(obj: unknown): CoverageType {
   return {
     number: ct.number || "",
     name: ct.name || "",
-    form: ct.form || "",
     type1: stringToType(ct.type1 || "", Type.NORMAL),
     type2: stringToType(ct.type2 || "", Type.NONE),
   };
@@ -197,7 +195,6 @@ export const fallbackCoverageTypes = AllPokemon.filter((pkmn) => {
   return {
     number: String(pkmn.number),
     name: pkmn.name,
-    form: pkmn.formName,
     type1: pkmn.types[0],
     type2: pkmn.types[1] ?? Type.NONE,
   };

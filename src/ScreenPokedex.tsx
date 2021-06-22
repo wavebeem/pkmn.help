@@ -43,7 +43,6 @@ interface MonsterProps {
 
 function Monster(props: MonsterProps) {
   const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
-  const imgSize = 68 * 2;
   return (
     <div
       className={classnames(
@@ -58,9 +57,9 @@ function Monster(props: MonsterProps) {
         <div className="flex mb2 items-center">
           <div className="fg3 mv0 tabular-nums f4">{displayNumber}</div>
           <div className="ph1" />
-          <h2 className="mv0 f3">{props.pokemon.name}</h2>
+          {/* TODO: Pick best option based on navigator.languages */}
+          <h2 className="mv0 f4">{props.pokemon.names.en}</h2>
         </div>
-        <h3 className="nt2 mb2 f4 normal">{props.pokemon.formName || nbsp}</h3>
         <div className="flex">
           {props.pokemon.types.map((t, i) => (
             <MonsterType key={i} type={t} index={i} />
@@ -90,9 +89,9 @@ function Monster(props: MonsterProps) {
         <img
           src={getImage(props.pokemon.id)}
           role="presentation"
-          className={`pa1 mt2 bg3 br4 bn b--white-70`}
-          width={imgSize}
-          height={imgSize}
+          className={`pa1 mt2 bg3 br4 bn b--white-70 img-crisp`}
+          width={96}
+          height={96}
         />
       </div>
       <StatsTable pokemon={props.pokemon} />

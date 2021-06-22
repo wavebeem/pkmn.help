@@ -3,7 +3,7 @@ import path from "path";
 import fs from "fs";
 import { URL } from "url";
 
-const API = "https://pokeapi.co/api/v2/";
+const API = process.env.API || "https://pokeapi.co/api/v2/";
 const DEST = path.resolve(__dirname, "../data");
 
 interface PokemonSpeciesBasic {
@@ -68,7 +68,6 @@ interface PokemonDetail {
 interface PokemonSimple {
   name: string;
   names: Record<string, string>;
-  formName: string;
   number: number;
   spriteURL: string;
   hp: number;
@@ -100,7 +99,9 @@ async function fetchPaginated<T>(url: string, limit = Infinity): Promise<T[]> {
     results.push(...resp.results);
     nextURL = resp.next;
   } while (nextURL && results.length < limit);
-  results.length = limit;
+  if (Number.isFinite(limit)) {
+    results.length = limit;
+  }
   return results;
 }
 
@@ -131,7 +132,7 @@ function toObject<T, K extends string, V>({
 async function main(): Promise<void> {
   const speciesList = await fetchPaginated<PokemonSpeciesBasic>(
     new URL("pokemon-species", API).toString(),
-    10
+    Number(process.env.LIMIT || "Infinity")
   );
   const pokemonSimpleList: PokemonSimple[] = [];
   for (const species of speciesList) {
@@ -157,7 +158,6 @@ async function main(): Promise<void> {
       const mon: PokemonSimple = {
         name: detail.name,
         names: { ...speciesNames, ...formNames },
-        formName: "", // TODO: Deprecated field
         number: speciesDetail.id,
         spriteURL: detail.sprites.front_default,
         hp: stats["hp"] ?? 0,
@@ -170,6 +170,7 @@ async function main(): Promise<void> {
         types: detail.types.map((t) => t.type.name),
       };
       pokemonSimpleList.push(mon);
+      console.log(speciesDetail.id, detail.id);
     }
   }
   saveJSON(path.resolve(DEST, "pokemon.json"), pokemonSimpleList);

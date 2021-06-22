@@ -198,6 +198,11 @@ button {
   border-bottom: 4px solid currentColor;
 }
 
+.img-crisp {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: pixelated;
+}
+
 .TabBarBorder {
   border-width: 1px;
   border-color: var(--color-tabbar-border);
