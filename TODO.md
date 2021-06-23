@@ -1,3 +1,2 @@
 - Use localized names for Pokémon
 - Double check data is sensible
-- Put Pokémon number in less prominent spot
