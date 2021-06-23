@@ -4,7 +4,6 @@ import data from "./data-pkmn.json";
 export interface Pokemon {
   id: string;
   name: string;
-  isDefault: boolean;
   speciesNames: Record<string, string>;
   formNames: Record<string, string>;
   number: number;

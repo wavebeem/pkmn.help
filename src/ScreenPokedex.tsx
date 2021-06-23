@@ -1,10 +1,11 @@
 import classnames from "classnames";
 import matchSorter from "match-sorter";
 import * as React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { Type } from "./data";
 import { getImage } from "./getImage";
 import Paginator from "./Paginator";
+import { pickTranslation } from "./pickTranslation";
 import { AllPokemon, Pokemon } from "./pkmn";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
@@ -48,13 +49,15 @@ function Monster(props: MonsterProps) {
       <div className="flex flex-column">
         <div className="flex flex-column pa3 br4 bg1 flex ba border4">
           <div className="flex items-center">
-            {/* TODO: Pick best option based on navigator.languages */}
-            <h2 className="mv0 f4">{props.pokemon.speciesNames.en}</h2>
+            <h2 className="mv0 f4">
+              {pickTranslation(props.pokemon.speciesNames)}
+            </h2>
             <div className="ph1 flex-auto" />
             <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
           </div>
-          {/* TODO: Pick best option based on navigator.languages */}
-          <div className="nv2 fg3 f5">{props.pokemon.formNames.en || nbsp}</div>
+          <div className="nv2 fg3 f5">
+            {pickTranslation(props.pokemon.formNames) || nbsp}
+          </div>
 
           <div className="pv3 flex justify-center">
             <img

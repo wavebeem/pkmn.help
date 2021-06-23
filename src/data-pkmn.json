@@ -15,7 +15,6 @@
       "zh-Hans": "妙蛙种子"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 1,
     "hp": 45,
     "attack": 49,
@@ -42,7 +41,6 @@
       "zh-Hans": "妙蛙草"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 2,
     "hp": 60,
     "attack": 62,
@@ -69,7 +67,6 @@
       "zh-Hans": "妙蛙花"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 3,
     "hp": 80,
     "attack": 82,
@@ -107,7 +104,6 @@
       "ja": "メガフシギバナ",
       "zh-Hans": "超级妙蛙花"
     },
-    "isDefault": false,
     "number": 3,
     "hp": 80,
     "attack": 100,
@@ -136,7 +132,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 3,
     "hp": 80,
     "attack": 82,
@@ -163,7 +158,6 @@
       "zh-Hans": "小火龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 4,
     "hp": 39,
     "attack": 52,
@@ -190,7 +184,6 @@
       "zh-Hans": "火恐龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 5,
     "hp": 58,
     "attack": 64,
@@ -217,7 +210,6 @@
       "zh-Hans": "喷火龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 6,
     "hp": 78,
     "attack": 84,
@@ -255,7 +247,6 @@
       "ja": "メガリザードンＸ",
       "zh-Hans": "超级喷火龙Ｘ"
     },
-    "isDefault": false,
     "number": 6,
     "hp": 78,
     "attack": 130,
@@ -293,7 +284,6 @@
       "ja": "メガリザードンＹ",
       "zh-Hans": "超级喷火龙Ｙ"
     },
-    "isDefault": false,
     "number": 6,
     "hp": 78,
     "attack": 104,
@@ -322,7 +312,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 6,
     "hp": 78,
     "attack": 84,
@@ -349,7 +338,6 @@
       "zh-Hans": "杰尼龟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 7,
     "hp": 44,
     "attack": 48,
@@ -376,7 +364,6 @@
       "zh-Hans": "卡咪龟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 8,
     "hp": 59,
     "attack": 63,
@@ -403,7 +390,6 @@
       "zh-Hans": "水箭龟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 9,
     "hp": 79,
     "attack": 83,
@@ -441,7 +427,6 @@
       "ja": "メガカメックス",
       "zh-Hans": "超级水箭龟"
     },
-    "isDefault": false,
     "number": 9,
     "hp": 79,
     "attack": 103,
@@ -470,7 +455,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 9,
     "hp": 79,
     "attack": 83,
@@ -497,7 +481,6 @@
       "zh-Hans": "绿毛虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 10,
     "hp": 45,
     "attack": 30,
@@ -524,7 +507,6 @@
       "zh-Hans": "铁甲蛹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 11,
     "hp": 50,
     "attack": 20,
@@ -551,7 +533,6 @@
       "zh-Hans": "巴大蝶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 12,
     "hp": 60,
     "attack": 45,
@@ -580,7 +561,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 12,
     "hp": 60,
     "attack": 45,
@@ -607,7 +587,6 @@
       "zh-Hans": "独角虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 13,
     "hp": 40,
     "attack": 35,
@@ -634,7 +613,6 @@
       "zh-Hans": "铁壳蛹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 14,
     "hp": 45,
     "attack": 25,
@@ -661,7 +639,6 @@
       "zh-Hans": "大针蜂"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 15,
     "hp": 65,
     "attack": 90,
@@ -699,7 +676,6 @@
       "ja": "メガスピアー",
       "zh-Hans": "超级大针蜂"
     },
-    "isDefault": false,
     "number": 15,
     "hp": 65,
     "attack": 150,
@@ -726,7 +702,6 @@
       "zh-Hans": "波波"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 16,
     "hp": 40,
     "attack": 45,
@@ -753,7 +728,6 @@
       "zh-Hans": "比比鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 17,
     "hp": 63,
     "attack": 60,
@@ -780,7 +754,6 @@
       "zh-Hans": "大比鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 18,
     "hp": 83,
     "attack": 80,
@@ -818,7 +791,6 @@
       "ja": "メガピジョット",
       "zh-Hans": "超级大比鸟"
     },
-    "isDefault": false,
     "number": 18,
     "hp": 83,
     "attack": 80,
@@ -845,7 +817,6 @@
       "zh-Hans": "小拉达"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 19,
     "hp": 30,
     "attack": 56,
@@ -883,7 +854,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 19,
     "hp": 30,
     "attack": 56,
@@ -910,7 +880,6 @@
       "zh-Hans": "拉达"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 20,
     "hp": 55,
     "attack": 81,
@@ -948,7 +917,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 20,
     "hp": 75,
     "attack": 71,
@@ -975,7 +943,6 @@
       "zh-Hans": "拉达"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 20,
     "hp": 75,
     "attack": 71,
@@ -1002,7 +969,6 @@
       "zh-Hans": "烈雀"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 21,
     "hp": 40,
     "attack": 60,
@@ -1029,7 +995,6 @@
       "zh-Hans": "大嘴雀"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 22,
     "hp": 65,
     "attack": 90,
@@ -1056,7 +1021,6 @@
       "zh-Hans": "阿柏蛇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 23,
     "hp": 35,
     "attack": 60,
@@ -1083,7 +1047,6 @@
       "zh-Hans": "阿柏怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 24,
     "hp": 60,
     "attack": 95,
@@ -1110,7 +1073,6 @@
       "zh-Hans": "皮卡丘"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1140,7 +1102,6 @@
       "fr": "Pikachu Rockeur",
       "en": "Pikachu Rock Star"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1170,7 +1131,6 @@
       "fr": "Pikachu Lady",
       "en": "Pikachu Belle"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1200,7 +1160,6 @@
       "fr": "Pikachu Star",
       "en": "Pikachu Pop Star"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1230,7 +1189,6 @@
       "fr": "Pikachu Docteur",
       "en": "Pikachu Ph.D."
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1260,7 +1218,6 @@
       "fr": "Pikachu Catcheur",
       "en": "Pikachu Libre"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1290,7 +1247,6 @@
       "fr": "Pikachu Cosplayeur",
       "en": "Cosplay Pikachu"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1328,7 +1284,6 @@
       "ja": "オリジナルキャップ",
       "zh-Hans": "初始帽子"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1366,7 +1321,6 @@
       "ja": "ホウエンキャップ",
       "zh-Hans": "丰缘帽子"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1404,7 +1358,6 @@
       "ja": "シンオウキャップ",
       "zh-Hans": "神奥帽子"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1442,7 +1395,6 @@
       "ja": "イッシュキャップ",
       "zh-Hans": "合众帽子"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1480,7 +1432,6 @@
       "ja": "カロスキャップ",
       "zh-Hans": "卡洛斯帽子"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1518,7 +1469,6 @@
       "ja": "アローラキャップ",
       "zh-Hans": "阿罗拉帽子"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1556,7 +1506,6 @@
       "ja": "キミにきめたキャップ",
       "zh-Hans": "就决定是你了之帽子"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1585,7 +1534,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 25,
     "hp": 35,
     "attack": 55,
@@ -1612,7 +1560,6 @@
       "zh-Hans": "雷丘"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 26,
     "hp": 60,
     "attack": 90,
@@ -1650,7 +1597,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 26,
     "hp": 60,
     "attack": 85,
@@ -1677,7 +1623,6 @@
       "zh-Hans": "穿山鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 27,
     "hp": 50,
     "attack": 75,
@@ -1715,7 +1660,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 27,
     "hp": 50,
     "attack": 75,
@@ -1742,7 +1686,6 @@
       "zh-Hans": "穿山王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 28,
     "hp": 75,
     "attack": 100,
@@ -1780,7 +1723,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 28,
     "hp": 75,
     "attack": 100,
@@ -1807,7 +1749,6 @@
       "zh-Hans": "尼多兰"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 29,
     "hp": 55,
     "attack": 47,
@@ -1834,7 +1775,6 @@
       "zh-Hans": "尼多娜"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 30,
     "hp": 70,
     "attack": 62,
@@ -1861,7 +1801,6 @@
       "zh-Hans": "尼多后"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 31,
     "hp": 90,
     "attack": 92,
@@ -1888,7 +1827,6 @@
       "zh-Hans": "尼多朗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 32,
     "hp": 46,
     "attack": 57,
@@ -1915,7 +1853,6 @@
       "zh-Hans": "尼多力诺"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 33,
     "hp": 61,
     "attack": 72,
@@ -1942,7 +1879,6 @@
       "zh-Hans": "尼多王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 34,
     "hp": 81,
     "attack": 102,
@@ -1969,7 +1905,6 @@
       "zh-Hans": "皮皮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 35,
     "hp": 70,
     "attack": 45,
@@ -1996,7 +1931,6 @@
       "zh-Hans": "皮可西"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 36,
     "hp": 95,
     "attack": 70,
@@ -2023,7 +1957,6 @@
       "zh-Hans": "六尾"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 37,
     "hp": 38,
     "attack": 41,
@@ -2061,7 +1994,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 37,
     "hp": 38,
     "attack": 41,
@@ -2088,7 +2020,6 @@
       "zh-Hans": "九尾"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 38,
     "hp": 73,
     "attack": 76,
@@ -2126,7 +2057,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 38,
     "hp": 73,
     "attack": 67,
@@ -2153,7 +2083,6 @@
       "zh-Hans": "胖丁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 39,
     "hp": 115,
     "attack": 45,
@@ -2180,7 +2109,6 @@
       "zh-Hans": "胖可丁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 40,
     "hp": 140,
     "attack": 70,
@@ -2207,7 +2135,6 @@
       "zh-Hans": "超音蝠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 41,
     "hp": 40,
     "attack": 45,
@@ -2234,7 +2161,6 @@
       "zh-Hans": "大嘴蝠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 42,
     "hp": 75,
     "attack": 80,
@@ -2261,7 +2187,6 @@
       "zh-Hans": "走路草"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 43,
     "hp": 45,
     "attack": 50,
@@ -2288,7 +2213,6 @@
       "zh-Hans": "臭臭花"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 44,
     "hp": 60,
     "attack": 65,
@@ -2315,7 +2239,6 @@
       "zh-Hans": "霸王花"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 45,
     "hp": 75,
     "attack": 80,
@@ -2342,7 +2265,6 @@
       "zh-Hans": "派拉斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 46,
     "hp": 35,
     "attack": 70,
@@ -2369,7 +2291,6 @@
       "zh-Hans": "派拉斯特"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 47,
     "hp": 60,
     "attack": 95,
@@ -2396,7 +2317,6 @@
       "zh-Hans": "毛球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 48,
     "hp": 60,
     "attack": 55,
@@ -2423,7 +2343,6 @@
       "zh-Hans": "摩鲁蛾"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 49,
     "hp": 70,
     "attack": 65,
@@ -2450,7 +2369,6 @@
       "zh-Hans": "地鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 50,
     "hp": 10,
     "attack": 55,
@@ -2488,7 +2406,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 50,
     "hp": 10,
     "attack": 55,
@@ -2515,7 +2432,6 @@
       "zh-Hans": "三地鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 51,
     "hp": 35,
     "attack": 100,
@@ -2553,7 +2469,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 51,
     "hp": 35,
     "attack": 100,
@@ -2580,7 +2495,6 @@
       "zh-Hans": "喵喵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 52,
     "hp": 40,
     "attack": 45,
@@ -2618,7 +2532,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 52,
     "hp": 40,
     "attack": 35,
@@ -2647,7 +2560,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 52,
     "hp": 50,
     "attack": 65,
@@ -2676,7 +2588,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 52,
     "hp": 40,
     "attack": 45,
@@ -2703,7 +2614,6 @@
       "zh-Hans": "猫老大"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 53,
     "hp": 65,
     "attack": 70,
@@ -2741,7 +2651,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 53,
     "hp": 65,
     "attack": 60,
@@ -2768,7 +2677,6 @@
       "zh-Hans": "可达鸭"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 54,
     "hp": 50,
     "attack": 52,
@@ -2795,7 +2703,6 @@
       "zh-Hans": "哥达鸭"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 55,
     "hp": 80,
     "attack": 82,
@@ -2822,7 +2729,6 @@
       "zh-Hans": "猴怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 56,
     "hp": 40,
     "attack": 80,
@@ -2849,7 +2755,6 @@
       "zh-Hans": "火暴猴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 57,
     "hp": 65,
     "attack": 105,
@@ -2876,7 +2781,6 @@
       "zh-Hans": "卡蒂狗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 58,
     "hp": 55,
     "attack": 70,
@@ -2903,7 +2807,6 @@
       "zh-Hans": "风速狗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 59,
     "hp": 90,
     "attack": 110,
@@ -2930,7 +2833,6 @@
       "zh-Hans": "蚊香蝌蚪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 60,
     "hp": 40,
     "attack": 50,
@@ -2957,7 +2859,6 @@
       "zh-Hans": "蚊香君"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 61,
     "hp": 65,
     "attack": 65,
@@ -2984,7 +2885,6 @@
       "zh-Hans": "蚊香泳士"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 62,
     "hp": 90,
     "attack": 95,
@@ -3011,7 +2911,6 @@
       "zh-Hans": "凯西"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 63,
     "hp": 25,
     "attack": 20,
@@ -3038,7 +2937,6 @@
       "zh-Hans": "勇基拉"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 64,
     "hp": 40,
     "attack": 35,
@@ -3065,7 +2963,6 @@
       "zh-Hans": "胡地"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 65,
     "hp": 55,
     "attack": 50,
@@ -3103,7 +3000,6 @@
       "ja": "メガフーディン",
       "zh-Hans": "超级胡地"
     },
-    "isDefault": false,
     "number": 65,
     "hp": 55,
     "attack": 50,
@@ -3130,7 +3026,6 @@
       "zh-Hans": "腕力"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 66,
     "hp": 70,
     "attack": 80,
@@ -3157,7 +3052,6 @@
       "zh-Hans": "豪力"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 67,
     "hp": 80,
     "attack": 100,
@@ -3184,7 +3078,6 @@
       "zh-Hans": "怪力"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 68,
     "hp": 90,
     "attack": 130,
@@ -3213,7 +3106,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 68,
     "hp": 90,
     "attack": 130,
@@ -3240,7 +3132,6 @@
       "zh-Hans": "喇叭芽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 69,
     "hp": 50,
     "attack": 75,
@@ -3267,7 +3158,6 @@
       "zh-Hans": "口呆花"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 70,
     "hp": 65,
     "attack": 90,
@@ -3294,7 +3184,6 @@
       "zh-Hans": "大食花"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 71,
     "hp": 80,
     "attack": 105,
@@ -3321,7 +3210,6 @@
       "zh-Hans": "玛瑙水母"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 72,
     "hp": 40,
     "attack": 40,
@@ -3348,7 +3236,6 @@
       "zh-Hans": "毒刺水母"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 73,
     "hp": 80,
     "attack": 70,
@@ -3375,7 +3262,6 @@
       "zh-Hans": "小拳石"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 74,
     "hp": 40,
     "attack": 80,
@@ -3413,7 +3299,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 74,
     "hp": 40,
     "attack": 80,
@@ -3440,7 +3325,6 @@
       "zh-Hans": "隆隆石"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 75,
     "hp": 55,
     "attack": 95,
@@ -3478,7 +3362,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 75,
     "hp": 55,
     "attack": 95,
@@ -3505,7 +3388,6 @@
       "zh-Hans": "隆隆岩"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 76,
     "hp": 80,
     "attack": 120,
@@ -3543,7 +3425,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 76,
     "hp": 80,
     "attack": 120,
@@ -3570,7 +3451,6 @@
       "zh-Hans": "小火马"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 77,
     "hp": 50,
     "attack": 85,
@@ -3599,7 +3479,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 77,
     "hp": 50,
     "attack": 85,
@@ -3626,7 +3505,6 @@
       "zh-Hans": "烈焰马"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 78,
     "hp": 65,
     "attack": 100,
@@ -3655,7 +3533,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 78,
     "hp": 65,
     "attack": 100,
@@ -3682,7 +3559,6 @@
       "zh-Hans": "呆呆兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 79,
     "hp": 90,
     "attack": 65,
@@ -3711,7 +3587,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 79,
     "hp": 90,
     "attack": 65,
@@ -3738,7 +3613,6 @@
       "zh-Hans": "呆壳兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 80,
     "hp": 95,
     "attack": 75,
@@ -3776,7 +3650,6 @@
       "ja": "メガヤドラン",
       "zh-Hans": "超级呆壳兽"
     },
-    "isDefault": false,
     "number": 80,
     "hp": 95,
     "attack": 75,
@@ -3805,7 +3678,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 80,
     "hp": 95,
     "attack": 100,
@@ -3832,7 +3704,6 @@
       "zh-Hans": "小磁怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 81,
     "hp": 25,
     "attack": 35,
@@ -3859,7 +3730,6 @@
       "zh-Hans": "三合一磁怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 82,
     "hp": 50,
     "attack": 60,
@@ -3886,7 +3756,6 @@
       "zh-Hans": "大葱鸭"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 83,
     "hp": 52,
     "attack": 90,
@@ -3915,7 +3784,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 83,
     "hp": 52,
     "attack": 95,
@@ -3942,7 +3810,6 @@
       "zh-Hans": "嘟嘟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 84,
     "hp": 35,
     "attack": 85,
@@ -3969,7 +3836,6 @@
       "zh-Hans": "嘟嘟利"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 85,
     "hp": 60,
     "attack": 110,
@@ -3996,7 +3862,6 @@
       "zh-Hans": "小海狮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 86,
     "hp": 65,
     "attack": 45,
@@ -4023,7 +3888,6 @@
       "zh-Hans": "白海狮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 87,
     "hp": 90,
     "attack": 70,
@@ -4050,7 +3914,6 @@
       "zh-Hans": "臭泥"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 88,
     "hp": 80,
     "attack": 80,
@@ -4088,7 +3951,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 88,
     "hp": 80,
     "attack": 80,
@@ -4115,7 +3977,6 @@
       "zh-Hans": "臭臭泥"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 89,
     "hp": 105,
     "attack": 105,
@@ -4153,7 +4014,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 89,
     "hp": 105,
     "attack": 105,
@@ -4180,7 +4040,6 @@
       "zh-Hans": "大舌贝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 90,
     "hp": 30,
     "attack": 65,
@@ -4207,7 +4066,6 @@
       "zh-Hans": "刺甲贝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 91,
     "hp": 50,
     "attack": 95,
@@ -4234,7 +4092,6 @@
       "zh-Hans": "鬼斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 92,
     "hp": 30,
     "attack": 35,
@@ -4261,7 +4118,6 @@
       "zh-Hans": "鬼斯通"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 93,
     "hp": 45,
     "attack": 50,
@@ -4288,7 +4144,6 @@
       "zh-Hans": "耿鬼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 94,
     "hp": 60,
     "attack": 65,
@@ -4326,7 +4181,6 @@
       "ja": "メガゲンガー",
       "zh-Hans": "超级耿鬼"
     },
-    "isDefault": false,
     "number": 94,
     "hp": 60,
     "attack": 65,
@@ -4355,7 +4209,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 94,
     "hp": 60,
     "attack": 65,
@@ -4382,7 +4235,6 @@
       "zh-Hans": "大岩蛇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 95,
     "hp": 35,
     "attack": 45,
@@ -4409,7 +4261,6 @@
       "zh-Hans": "催眠貘"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 96,
     "hp": 60,
     "attack": 48,
@@ -4436,7 +4287,6 @@
       "zh-Hans": "引梦貘人"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 97,
     "hp": 85,
     "attack": 73,
@@ -4463,7 +4313,6 @@
       "zh-Hans": "大钳蟹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 98,
     "hp": 30,
     "attack": 105,
@@ -4490,7 +4339,6 @@
       "zh-Hans": "巨钳蟹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 99,
     "hp": 55,
     "attack": 130,
@@ -4519,7 +4367,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 99,
     "hp": 55,
     "attack": 130,
@@ -4546,7 +4393,6 @@
       "zh-Hans": "霹雳电球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 100,
     "hp": 40,
     "attack": 30,
@@ -4573,7 +4419,6 @@
       "zh-Hans": "顽皮雷弹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 101,
     "hp": 60,
     "attack": 50,
@@ -4600,7 +4445,6 @@
       "zh-Hans": "蛋蛋"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 102,
     "hp": 60,
     "attack": 40,
@@ -4627,7 +4471,6 @@
       "zh-Hans": "椰蛋树"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 103,
     "hp": 95,
     "attack": 95,
@@ -4665,7 +4508,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 103,
     "hp": 95,
     "attack": 105,
@@ -4692,7 +4534,6 @@
       "zh-Hans": "卡拉卡拉"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 104,
     "hp": 50,
     "attack": 50,
@@ -4719,7 +4560,6 @@
       "zh-Hans": "嘎啦嘎啦"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 105,
     "hp": 60,
     "attack": 80,
@@ -4757,7 +4597,6 @@
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
     },
-    "isDefault": false,
     "number": 105,
     "hp": 60,
     "attack": 80,
@@ -4786,7 +4625,6 @@
     "formNames": {
       "ko": "알로라의 모습"
     },
-    "isDefault": false,
     "number": 105,
     "hp": 60,
     "attack": 80,
@@ -4813,7 +4651,6 @@
       "zh-Hans": "飞腿郎"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 106,
     "hp": 50,
     "attack": 120,
@@ -4840,7 +4677,6 @@
       "zh-Hans": "快拳郎"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 107,
     "hp": 50,
     "attack": 105,
@@ -4867,7 +4703,6 @@
       "zh-Hans": "大舌头"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 108,
     "hp": 90,
     "attack": 55,
@@ -4894,7 +4729,6 @@
       "zh-Hans": "瓦斯弹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 109,
     "hp": 40,
     "attack": 65,
@@ -4921,7 +4755,6 @@
       "zh-Hans": "双弹瓦斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 110,
     "hp": 65,
     "attack": 90,
@@ -4950,7 +4783,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 110,
     "hp": 65,
     "attack": 90,
@@ -4977,7 +4809,6 @@
       "zh-Hans": "独角犀牛"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 111,
     "hp": 80,
     "attack": 85,
@@ -5004,7 +4835,6 @@
       "zh-Hans": "钻角犀兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 112,
     "hp": 105,
     "attack": 130,
@@ -5031,7 +4861,6 @@
       "zh-Hans": "吉利蛋"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 113,
     "hp": 250,
     "attack": 5,
@@ -5058,7 +4887,6 @@
       "zh-Hans": "蔓藤怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 114,
     "hp": 65,
     "attack": 55,
@@ -5085,7 +4913,6 @@
       "zh-Hans": "袋兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 115,
     "hp": 105,
     "attack": 95,
@@ -5123,7 +4950,6 @@
       "ja": "メガガルーラ",
       "zh-Hans": "超级袋兽"
     },
-    "isDefault": false,
     "number": 115,
     "hp": 105,
     "attack": 125,
@@ -5150,7 +4976,6 @@
       "zh-Hans": "墨海马"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 116,
     "hp": 30,
     "attack": 40,
@@ -5177,7 +5002,6 @@
       "zh-Hans": "海刺龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 117,
     "hp": 55,
     "attack": 65,
@@ -5204,7 +5028,6 @@
       "zh-Hans": "角金鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 118,
     "hp": 45,
     "attack": 67,
@@ -5231,7 +5054,6 @@
       "zh-Hans": "金鱼王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 119,
     "hp": 80,
     "attack": 92,
@@ -5258,7 +5080,6 @@
       "zh-Hans": "海星星"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 120,
     "hp": 30,
     "attack": 45,
@@ -5285,7 +5106,6 @@
       "zh-Hans": "宝石海星"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 121,
     "hp": 60,
     "attack": 75,
@@ -5312,7 +5132,6 @@
       "zh-Hans": "魔墙人偶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 122,
     "hp": 40,
     "attack": 45,
@@ -5341,7 +5160,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 122,
     "hp": 50,
     "attack": 65,
@@ -5368,7 +5186,6 @@
       "zh-Hans": "飞天螳螂"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 123,
     "hp": 70,
     "attack": 110,
@@ -5395,7 +5212,6 @@
       "zh-Hans": "迷唇姐"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 124,
     "hp": 65,
     "attack": 50,
@@ -5422,7 +5238,6 @@
       "zh-Hans": "电击兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 125,
     "hp": 65,
     "attack": 83,
@@ -5449,7 +5264,6 @@
       "zh-Hans": "鸭嘴火兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 126,
     "hp": 65,
     "attack": 95,
@@ -5476,7 +5290,6 @@
       "zh-Hans": "凯罗斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 127,
     "hp": 65,
     "attack": 125,
@@ -5514,7 +5327,6 @@
       "ja": "メガカイロス",
       "zh-Hans": "超级凯罗斯"
     },
-    "isDefault": false,
     "number": 127,
     "hp": 65,
     "attack": 155,
@@ -5541,7 +5353,6 @@
       "zh-Hans": "肯泰罗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 128,
     "hp": 75,
     "attack": 100,
@@ -5568,7 +5379,6 @@
       "zh-Hans": "鲤鱼王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 129,
     "hp": 20,
     "attack": 10,
@@ -5595,7 +5405,6 @@
       "zh-Hans": "暴鲤龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 130,
     "hp": 95,
     "attack": 125,
@@ -5633,7 +5442,6 @@
       "ja": "メガギャラドス",
       "zh-Hans": "超级暴鲤龙"
     },
-    "isDefault": false,
     "number": 130,
     "hp": 95,
     "attack": 155,
@@ -5660,7 +5468,6 @@
       "zh-Hans": "拉普拉斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 131,
     "hp": 130,
     "attack": 85,
@@ -5689,7 +5496,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 131,
     "hp": 130,
     "attack": 85,
@@ -5716,7 +5522,6 @@
       "zh-Hans": "百变怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 132,
     "hp": 48,
     "attack": 48,
@@ -5743,7 +5548,6 @@
       "zh-Hans": "伊布"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 133,
     "hp": 55,
     "attack": 55,
@@ -5772,7 +5576,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 133,
     "hp": 55,
     "attack": 55,
@@ -5799,7 +5602,6 @@
       "zh-Hans": "水伊布"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 134,
     "hp": 130,
     "attack": 65,
@@ -5826,7 +5628,6 @@
       "zh-Hans": "雷伊布"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 135,
     "hp": 65,
     "attack": 65,
@@ -5853,7 +5654,6 @@
       "zh-Hans": "火伊布"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 136,
     "hp": 65,
     "attack": 130,
@@ -5880,7 +5680,6 @@
       "zh-Hans": "多边兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 137,
     "hp": 65,
     "attack": 60,
@@ -5907,7 +5706,6 @@
       "zh-Hans": "菊石兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 138,
     "hp": 35,
     "attack": 40,
@@ -5934,7 +5732,6 @@
       "zh-Hans": "多刺菊石兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 139,
     "hp": 70,
     "attack": 60,
@@ -5961,7 +5758,6 @@
       "zh-Hans": "化石盔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 140,
     "hp": 30,
     "attack": 80,
@@ -5988,7 +5784,6 @@
       "zh-Hans": "镰刀盔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 141,
     "hp": 60,
     "attack": 115,
@@ -6015,7 +5810,6 @@
       "zh-Hans": "化石翼龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 142,
     "hp": 80,
     "attack": 105,
@@ -6053,7 +5847,6 @@
       "ja": "メガプテラ",
       "zh-Hans": "超级化石翼龙"
     },
-    "isDefault": false,
     "number": 142,
     "hp": 80,
     "attack": 135,
@@ -6080,7 +5873,6 @@
       "zh-Hans": "卡比兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 143,
     "hp": 160,
     "attack": 110,
@@ -6109,7 +5901,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 143,
     "hp": 160,
     "attack": 110,
@@ -6136,7 +5927,6 @@
       "zh-Hans": "急冻鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 144,
     "hp": 90,
     "attack": 85,
@@ -6165,7 +5955,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 144,
     "hp": 90,
     "attack": 85,
@@ -6192,7 +5981,6 @@
       "zh-Hans": "闪电鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 145,
     "hp": 90,
     "attack": 90,
@@ -6221,7 +6009,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 145,
     "hp": 90,
     "attack": 125,
@@ -6248,7 +6035,6 @@
       "zh-Hans": "火焰鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 146,
     "hp": 90,
     "attack": 100,
@@ -6277,7 +6063,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 146,
     "hp": 90,
     "attack": 85,
@@ -6304,7 +6089,6 @@
       "zh-Hans": "迷你龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 147,
     "hp": 41,
     "attack": 64,
@@ -6331,7 +6115,6 @@
       "zh-Hans": "哈克龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 148,
     "hp": 61,
     "attack": 84,
@@ -6358,7 +6141,6 @@
       "zh-Hans": "快龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 149,
     "hp": 91,
     "attack": 134,
@@ -6385,7 +6167,6 @@
       "zh-Hans": "超梦"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 150,
     "hp": 106,
     "attack": 110,
@@ -6423,7 +6204,6 @@
       "ja": "メガミュウツーＸ",
       "zh-Hans": "超级超梦Ｘ"
     },
-    "isDefault": false,
     "number": 150,
     "hp": 106,
     "attack": 190,
@@ -6461,7 +6241,6 @@
       "ja": "メガミュウツーＹ",
       "zh-Hans": "超级超梦Ｙ"
     },
-    "isDefault": false,
     "number": 150,
     "hp": 106,
     "attack": 150,
@@ -6488,7 +6267,6 @@
       "zh-Hans": "梦幻"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 151,
     "hp": 100,
     "attack": 100,
@@ -6515,7 +6293,6 @@
       "zh-Hans": "菊草叶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 152,
     "hp": 45,
     "attack": 49,
@@ -6542,7 +6319,6 @@
       "zh-Hans": "月桂叶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 153,
     "hp": 60,
     "attack": 62,
@@ -6569,7 +6345,6 @@
       "zh-Hans": "大竺葵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 154,
     "hp": 80,
     "attack": 82,
@@ -6596,7 +6371,6 @@
       "zh-Hans": "火球鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 155,
     "hp": 39,
     "attack": 52,
@@ -6623,7 +6397,6 @@
       "zh-Hans": "火岩鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 156,
     "hp": 58,
     "attack": 64,
@@ -6650,7 +6423,6 @@
       "zh-Hans": "火暴兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 157,
     "hp": 78,
     "attack": 84,
@@ -6677,7 +6449,6 @@
       "zh-Hans": "小锯鳄"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 158,
     "hp": 50,
     "attack": 65,
@@ -6704,7 +6475,6 @@
       "zh-Hans": "蓝鳄"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 159,
     "hp": 65,
     "attack": 80,
@@ -6731,7 +6501,6 @@
       "zh-Hans": "大力鳄"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 160,
     "hp": 85,
     "attack": 105,
@@ -6758,7 +6527,6 @@
       "zh-Hans": "尾立"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 161,
     "hp": 35,
     "attack": 46,
@@ -6785,7 +6553,6 @@
       "zh-Hans": "大尾立"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 162,
     "hp": 85,
     "attack": 76,
@@ -6812,7 +6579,6 @@
       "zh-Hans": "咕咕"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 163,
     "hp": 60,
     "attack": 30,
@@ -6839,7 +6605,6 @@
       "zh-Hans": "猫头夜鹰"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 164,
     "hp": 100,
     "attack": 50,
@@ -6866,7 +6631,6 @@
       "zh-Hans": "芭瓢虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 165,
     "hp": 40,
     "attack": 20,
@@ -6893,7 +6657,6 @@
       "zh-Hans": "安瓢虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 166,
     "hp": 55,
     "attack": 35,
@@ -6920,7 +6683,6 @@
       "zh-Hans": "圆丝蛛"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 167,
     "hp": 40,
     "attack": 60,
@@ -6947,7 +6709,6 @@
       "zh-Hans": "阿利多斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 168,
     "hp": 70,
     "attack": 90,
@@ -6974,7 +6735,6 @@
       "zh-Hans": "叉字蝠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 169,
     "hp": 85,
     "attack": 90,
@@ -7001,7 +6761,6 @@
       "zh-Hans": "灯笼鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 170,
     "hp": 75,
     "attack": 38,
@@ -7028,7 +6787,6 @@
       "zh-Hans": "电灯怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 171,
     "hp": 125,
     "attack": 58,
@@ -7055,7 +6813,6 @@
       "zh-Hans": "皮丘"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 172,
     "hp": 20,
     "attack": 40,
@@ -7082,7 +6839,6 @@
       "zh-Hans": "皮宝宝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 173,
     "hp": 50,
     "attack": 25,
@@ -7109,7 +6865,6 @@
       "zh-Hans": "宝宝丁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 174,
     "hp": 90,
     "attack": 30,
@@ -7136,7 +6891,6 @@
       "zh-Hans": "波克比"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 175,
     "hp": 35,
     "attack": 20,
@@ -7163,7 +6917,6 @@
       "zh-Hans": "波克基古"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 176,
     "hp": 55,
     "attack": 40,
@@ -7190,7 +6943,6 @@
       "zh-Hans": "天然雀"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 177,
     "hp": 40,
     "attack": 50,
@@ -7217,7 +6969,6 @@
       "zh-Hans": "天然鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 178,
     "hp": 65,
     "attack": 75,
@@ -7244,7 +6995,6 @@
       "zh-Hans": "咩利羊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 179,
     "hp": 55,
     "attack": 40,
@@ -7271,7 +7021,6 @@
       "zh-Hans": "茸茸羊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 180,
     "hp": 70,
     "attack": 55,
@@ -7298,7 +7047,6 @@
       "zh-Hans": "电龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 181,
     "hp": 90,
     "attack": 75,
@@ -7336,7 +7084,6 @@
       "ja": "メガデンリュウ",
       "zh-Hans": "超级电龙"
     },
-    "isDefault": false,
     "number": 181,
     "hp": 90,
     "attack": 95,
@@ -7363,7 +7110,6 @@
       "zh-Hans": "美丽花"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 182,
     "hp": 75,
     "attack": 80,
@@ -7390,7 +7136,6 @@
       "zh-Hans": "玛力露"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 183,
     "hp": 70,
     "attack": 20,
@@ -7417,7 +7162,6 @@
       "zh-Hans": "玛力露丽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 184,
     "hp": 100,
     "attack": 50,
@@ -7444,7 +7188,6 @@
       "zh-Hans": "树才怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 185,
     "hp": 70,
     "attack": 100,
@@ -7471,7 +7214,6 @@
       "zh-Hans": "蚊香蛙皇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 186,
     "hp": 90,
     "attack": 75,
@@ -7498,7 +7240,6 @@
       "zh-Hans": "毽子草"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 187,
     "hp": 35,
     "attack": 35,
@@ -7525,7 +7266,6 @@
       "zh-Hans": "毽子花"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 188,
     "hp": 55,
     "attack": 45,
@@ -7552,7 +7292,6 @@
       "zh-Hans": "毽子棉"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 189,
     "hp": 75,
     "attack": 55,
@@ -7579,7 +7318,6 @@
       "zh-Hans": "长尾怪手"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 190,
     "hp": 55,
     "attack": 70,
@@ -7606,7 +7344,6 @@
       "zh-Hans": "向日种子"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 191,
     "hp": 30,
     "attack": 30,
@@ -7633,7 +7370,6 @@
       "zh-Hans": "向日花怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 192,
     "hp": 75,
     "attack": 75,
@@ -7660,7 +7396,6 @@
       "zh-Hans": "蜻蜻蜓"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 193,
     "hp": 65,
     "attack": 65,
@@ -7687,7 +7422,6 @@
       "zh-Hans": "乌波"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 194,
     "hp": 55,
     "attack": 45,
@@ -7714,7 +7448,6 @@
       "zh-Hans": "沼王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 195,
     "hp": 95,
     "attack": 85,
@@ -7741,7 +7474,6 @@
       "zh-Hans": "太阳伊布"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 196,
     "hp": 65,
     "attack": 65,
@@ -7768,7 +7500,6 @@
       "zh-Hans": "月亮伊布"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 197,
     "hp": 95,
     "attack": 65,
@@ -7795,7 +7526,6 @@
       "zh-Hans": "黑暗鸦"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 198,
     "hp": 60,
     "attack": 85,
@@ -7822,7 +7552,6 @@
       "zh-Hans": "呆呆王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 199,
     "hp": 95,
     "attack": 75,
@@ -7851,7 +7580,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 199,
     "hp": 95,
     "attack": 65,
@@ -7878,7 +7606,6 @@
       "zh-Hans": "梦妖"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 200,
     "hp": 60,
     "attack": 60,
@@ -7913,7 +7640,6 @@
       "it": "A",
       "en": "A"
     },
-    "isDefault": true,
     "number": 201,
     "hp": 48,
     "attack": 72,
@@ -7940,7 +7666,6 @@
       "zh-Hans": "果然翁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 202,
     "hp": 190,
     "attack": 33,
@@ -7967,7 +7692,6 @@
       "zh-Hans": "麒麟奇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 203,
     "hp": 70,
     "attack": 80,
@@ -7994,7 +7718,6 @@
       "zh-Hans": "榛果球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 204,
     "hp": 50,
     "attack": 65,
@@ -8021,7 +7744,6 @@
       "zh-Hans": "佛烈托斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 205,
     "hp": 75,
     "attack": 90,
@@ -8048,7 +7770,6 @@
       "zh-Hans": "土龙弟弟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 206,
     "hp": 100,
     "attack": 70,
@@ -8075,7 +7796,6 @@
       "zh-Hans": "天蝎"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 207,
     "hp": 65,
     "attack": 75,
@@ -8102,7 +7822,6 @@
       "zh-Hans": "大钢蛇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 208,
     "hp": 75,
     "attack": 85,
@@ -8140,7 +7859,6 @@
       "ja": "メガハガネール",
       "zh-Hans": "超级大钢蛇"
     },
-    "isDefault": false,
     "number": 208,
     "hp": 75,
     "attack": 125,
@@ -8167,7 +7885,6 @@
       "zh-Hans": "布鲁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 209,
     "hp": 60,
     "attack": 80,
@@ -8194,7 +7911,6 @@
       "zh-Hans": "布鲁皇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 210,
     "hp": 90,
     "attack": 120,
@@ -8221,7 +7937,6 @@
       "zh-Hans": "千针鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 211,
     "hp": 65,
     "attack": 95,
@@ -8248,7 +7963,6 @@
       "zh-Hans": "巨钳螳螂"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 212,
     "hp": 70,
     "attack": 130,
@@ -8286,7 +8000,6 @@
       "ja": "メガハッサム",
       "zh-Hans": "超级巨钳螳螂"
     },
-    "isDefault": false,
     "number": 212,
     "hp": 70,
     "attack": 150,
@@ -8313,7 +8026,6 @@
       "zh-Hans": "壶壶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 213,
     "hp": 20,
     "attack": 10,
@@ -8340,7 +8052,6 @@
       "zh-Hans": "赫拉克罗斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 214,
     "hp": 80,
     "attack": 125,
@@ -8378,7 +8089,6 @@
       "ja": "メガヘラクロス",
       "zh-Hans": "超级赫拉克罗斯"
     },
-    "isDefault": false,
     "number": 214,
     "hp": 80,
     "attack": 185,
@@ -8405,7 +8115,6 @@
       "zh-Hans": "狃拉"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 215,
     "hp": 55,
     "attack": 95,
@@ -8432,7 +8141,6 @@
       "zh-Hans": "熊宝宝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 216,
     "hp": 60,
     "attack": 80,
@@ -8459,7 +8167,6 @@
       "zh-Hans": "圈圈熊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 217,
     "hp": 90,
     "attack": 130,
@@ -8486,7 +8193,6 @@
       "zh-Hans": "熔岩虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 218,
     "hp": 40,
     "attack": 40,
@@ -8513,7 +8219,6 @@
       "zh-Hans": "熔岩蜗牛"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 219,
     "hp": 60,
     "attack": 50,
@@ -8540,7 +8245,6 @@
       "zh-Hans": "小山猪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 220,
     "hp": 50,
     "attack": 50,
@@ -8567,7 +8271,6 @@
       "zh-Hans": "长毛猪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 221,
     "hp": 100,
     "attack": 100,
@@ -8594,7 +8297,6 @@
       "zh-Hans": "太阳珊瑚"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 222,
     "hp": 65,
     "attack": 55,
@@ -8623,7 +8325,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 222,
     "hp": 60,
     "attack": 55,
@@ -8650,7 +8351,6 @@
       "zh-Hans": "铁炮鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 223,
     "hp": 35,
     "attack": 65,
@@ -8677,7 +8377,6 @@
       "zh-Hans": "章鱼桶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 224,
     "hp": 75,
     "attack": 105,
@@ -8704,7 +8403,6 @@
       "zh-Hans": "信使鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 225,
     "hp": 45,
     "attack": 55,
@@ -8731,7 +8429,6 @@
       "zh-Hans": "巨翅飞鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 226,
     "hp": 85,
     "attack": 40,
@@ -8758,7 +8455,6 @@
       "zh-Hans": "盔甲鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 227,
     "hp": 65,
     "attack": 80,
@@ -8785,7 +8481,6 @@
       "zh-Hans": "戴鲁比"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 228,
     "hp": 45,
     "attack": 60,
@@ -8812,7 +8507,6 @@
       "zh-Hans": "黑鲁加"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 229,
     "hp": 75,
     "attack": 90,
@@ -8850,7 +8544,6 @@
       "ja": "メガヘルガー",
       "zh-Hans": "超级黑鲁加"
     },
-    "isDefault": false,
     "number": 229,
     "hp": 75,
     "attack": 90,
@@ -8877,7 +8570,6 @@
       "zh-Hans": "刺龙王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 230,
     "hp": 75,
     "attack": 95,
@@ -8904,7 +8596,6 @@
       "zh-Hans": "小小象"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 231,
     "hp": 90,
     "attack": 60,
@@ -8931,7 +8622,6 @@
       "zh-Hans": "顿甲"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 232,
     "hp": 90,
     "attack": 120,
@@ -8958,7 +8648,6 @@
       "zh-Hans": "多边兽２"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 233,
     "hp": 85,
     "attack": 80,
@@ -8985,7 +8674,6 @@
       "zh-Hans": "惊角鹿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 234,
     "hp": 73,
     "attack": 95,
@@ -9012,7 +8700,6 @@
       "zh-Hans": "图图犬"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 235,
     "hp": 55,
     "attack": 20,
@@ -9039,7 +8726,6 @@
       "zh-Hans": "无畏小子"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 236,
     "hp": 35,
     "attack": 35,
@@ -9066,7 +8752,6 @@
       "zh-Hans": "战舞郎"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 237,
     "hp": 50,
     "attack": 95,
@@ -9093,7 +8778,6 @@
       "zh-Hans": "迷唇娃"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 238,
     "hp": 45,
     "attack": 30,
@@ -9120,7 +8804,6 @@
       "zh-Hans": "电击怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 239,
     "hp": 45,
     "attack": 63,
@@ -9147,7 +8830,6 @@
       "zh-Hans": "鸭嘴宝宝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 240,
     "hp": 45,
     "attack": 75,
@@ -9174,7 +8856,6 @@
       "zh-Hans": "大奶罐"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 241,
     "hp": 95,
     "attack": 80,
@@ -9201,7 +8882,6 @@
       "zh-Hans": "幸福蛋"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 242,
     "hp": 255,
     "attack": 10,
@@ -9228,7 +8908,6 @@
       "zh-Hans": "雷公"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 243,
     "hp": 90,
     "attack": 85,
@@ -9255,7 +8934,6 @@
       "zh-Hans": "炎帝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 244,
     "hp": 115,
     "attack": 115,
@@ -9282,7 +8960,6 @@
       "zh-Hans": "水君"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 245,
     "hp": 100,
     "attack": 75,
@@ -9309,7 +8986,6 @@
       "zh-Hans": "幼基拉斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 246,
     "hp": 50,
     "attack": 64,
@@ -9336,7 +9012,6 @@
       "zh-Hans": "沙基拉斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 247,
     "hp": 70,
     "attack": 84,
@@ -9363,7 +9038,6 @@
       "zh-Hans": "班基拉斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 248,
     "hp": 100,
     "attack": 134,
@@ -9401,7 +9075,6 @@
       "ja": "メガバンギラス",
       "zh-Hans": "超级班基拉斯"
     },
-    "isDefault": false,
     "number": 248,
     "hp": 100,
     "attack": 164,
@@ -9428,7 +9101,6 @@
       "zh-Hans": "洛奇亚"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 249,
     "hp": 106,
     "attack": 90,
@@ -9455,7 +9127,6 @@
       "zh-Hans": "凤王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 250,
     "hp": 106,
     "attack": 130,
@@ -9482,7 +9153,6 @@
       "zh-Hans": "时拉比"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 251,
     "hp": 100,
     "attack": 100,
@@ -9509,7 +9179,6 @@
       "zh-Hans": "木守宫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 252,
     "hp": 40,
     "attack": 45,
@@ -9536,7 +9205,6 @@
       "zh-Hans": "森林蜥蜴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 253,
     "hp": 50,
     "attack": 65,
@@ -9563,7 +9231,6 @@
       "zh-Hans": "蜥蜴王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 254,
     "hp": 70,
     "attack": 85,
@@ -9601,7 +9268,6 @@
       "ja": "メガジュカイン",
       "zh-Hans": "超级蜥蜴王"
     },
-    "isDefault": false,
     "number": 254,
     "hp": 70,
     "attack": 110,
@@ -9628,7 +9294,6 @@
       "zh-Hans": "火稚鸡"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 255,
     "hp": 45,
     "attack": 60,
@@ -9655,7 +9320,6 @@
       "zh-Hans": "力壮鸡"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 256,
     "hp": 60,
     "attack": 85,
@@ -9682,7 +9346,6 @@
       "zh-Hans": "火焰鸡"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 257,
     "hp": 80,
     "attack": 120,
@@ -9720,7 +9383,6 @@
       "ja": "メガバシャーモ",
       "zh-Hans": "超级火焰鸡"
     },
-    "isDefault": false,
     "number": 257,
     "hp": 80,
     "attack": 160,
@@ -9747,7 +9409,6 @@
       "zh-Hans": "水躍鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 258,
     "hp": 50,
     "attack": 70,
@@ -9774,7 +9435,6 @@
       "zh-Hans": "沼躍鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 259,
     "hp": 70,
     "attack": 85,
@@ -9801,7 +9461,6 @@
       "zh-Hans": "巨沼怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 260,
     "hp": 100,
     "attack": 110,
@@ -9839,7 +9498,6 @@
       "ja": "メガラグラージ",
       "zh-Hans": "超级巨沼怪"
     },
-    "isDefault": false,
     "number": 260,
     "hp": 100,
     "attack": 150,
@@ -9866,7 +9524,6 @@
       "zh-Hans": "土狼犬"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 261,
     "hp": 35,
     "attack": 55,
@@ -9893,7 +9550,6 @@
       "zh-Hans": "大狼犬"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 262,
     "hp": 70,
     "attack": 90,
@@ -9920,7 +9576,6 @@
       "zh-Hans": "蛇纹熊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 263,
     "hp": 38,
     "attack": 30,
@@ -9949,7 +9604,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 263,
     "hp": 38,
     "attack": 30,
@@ -9976,7 +9630,6 @@
       "zh-Hans": "直冲熊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 264,
     "hp": 78,
     "attack": 70,
@@ -10005,7 +9658,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 264,
     "hp": 78,
     "attack": 70,
@@ -10032,7 +9684,6 @@
       "zh-Hans": "刺尾虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 265,
     "hp": 45,
     "attack": 45,
@@ -10059,7 +9710,6 @@
       "zh-Hans": "甲壳茧"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 266,
     "hp": 50,
     "attack": 35,
@@ -10086,7 +9736,6 @@
       "zh-Hans": "狩猎凤蝶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 267,
     "hp": 60,
     "attack": 70,
@@ -10113,7 +9762,6 @@
       "zh-Hans": "盾甲茧"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 268,
     "hp": 50,
     "attack": 35,
@@ -10140,7 +9788,6 @@
       "zh-Hans": "毒粉蛾"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 269,
     "hp": 60,
     "attack": 50,
@@ -10167,7 +9814,6 @@
       "zh-Hans": "莲叶童子"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 270,
     "hp": 40,
     "attack": 30,
@@ -10194,7 +9840,6 @@
       "zh-Hans": "莲帽小童"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 271,
     "hp": 60,
     "attack": 50,
@@ -10221,7 +9866,6 @@
       "zh-Hans": "乐天河童"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 272,
     "hp": 80,
     "attack": 70,
@@ -10248,7 +9892,6 @@
       "zh-Hans": "橡实果"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 273,
     "hp": 40,
     "attack": 40,
@@ -10275,7 +9918,6 @@
       "zh-Hans": "长鼻叶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 274,
     "hp": 70,
     "attack": 70,
@@ -10302,7 +9944,6 @@
       "zh-Hans": "狡猾天狗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 275,
     "hp": 90,
     "attack": 100,
@@ -10329,7 +9970,6 @@
       "zh-Hans": "傲骨燕"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 276,
     "hp": 40,
     "attack": 55,
@@ -10356,7 +9996,6 @@
       "zh-Hans": "大王燕"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 277,
     "hp": 60,
     "attack": 85,
@@ -10383,7 +10022,6 @@
       "zh-Hans": "长翅鸥"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 278,
     "hp": 40,
     "attack": 30,
@@ -10410,7 +10048,6 @@
       "zh-Hans": "大嘴鸥"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 279,
     "hp": 60,
     "attack": 50,
@@ -10437,7 +10074,6 @@
       "zh-Hans": "拉鲁拉丝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 280,
     "hp": 28,
     "attack": 25,
@@ -10464,7 +10100,6 @@
       "zh-Hans": "奇鲁莉安"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 281,
     "hp": 38,
     "attack": 35,
@@ -10491,7 +10126,6 @@
       "zh-Hans": "沙奈朵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 282,
     "hp": 68,
     "attack": 65,
@@ -10529,7 +10163,6 @@
       "ja": "メガサーナイト",
       "zh-Hans": "超级沙奈朵"
     },
-    "isDefault": false,
     "number": 282,
     "hp": 68,
     "attack": 85,
@@ -10556,7 +10189,6 @@
       "zh-Hans": "溜溜糖球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 283,
     "hp": 40,
     "attack": 30,
@@ -10583,7 +10215,6 @@
       "zh-Hans": "雨翅蛾"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 284,
     "hp": 70,
     "attack": 60,
@@ -10610,7 +10241,6 @@
       "zh-Hans": "蘑蘑菇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 285,
     "hp": 60,
     "attack": 40,
@@ -10637,7 +10267,6 @@
       "zh-Hans": "斗笠菇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 286,
     "hp": 60,
     "attack": 130,
@@ -10664,7 +10293,6 @@
       "zh-Hans": "懒人獭"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 287,
     "hp": 60,
     "attack": 60,
@@ -10691,7 +10319,6 @@
       "zh-Hans": "过动猿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 288,
     "hp": 80,
     "attack": 80,
@@ -10718,7 +10345,6 @@
       "zh-Hans": "请假王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 289,
     "hp": 150,
     "attack": 160,
@@ -10745,7 +10371,6 @@
       "zh-Hans": "土居忍士"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 290,
     "hp": 31,
     "attack": 45,
@@ -10772,7 +10397,6 @@
       "zh-Hans": "铁面忍者"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 291,
     "hp": 61,
     "attack": 90,
@@ -10799,7 +10423,6 @@
       "zh-Hans": "脱壳忍者"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 292,
     "hp": 1,
     "attack": 90,
@@ -10826,7 +10449,6 @@
       "zh-Hans": "咕妞妞"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 293,
     "hp": 64,
     "attack": 51,
@@ -10853,7 +10475,6 @@
       "zh-Hans": "吼爆弹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 294,
     "hp": 84,
     "attack": 71,
@@ -10880,7 +10501,6 @@
       "zh-Hans": "爆音怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 295,
     "hp": 104,
     "attack": 91,
@@ -10907,7 +10527,6 @@
       "zh-Hans": "幕下力士"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 296,
     "hp": 72,
     "attack": 60,
@@ -10934,7 +10553,6 @@
       "zh-Hans": "铁掌力士"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 297,
     "hp": 144,
     "attack": 120,
@@ -10961,7 +10579,6 @@
       "zh-Hans": "露力丽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 298,
     "hp": 50,
     "attack": 20,
@@ -10988,7 +10605,6 @@
       "zh-Hans": "朝北鼻"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 299,
     "hp": 30,
     "attack": 45,
@@ -11015,7 +10631,6 @@
       "zh-Hans": "向尾喵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 300,
     "hp": 50,
     "attack": 45,
@@ -11042,7 +10657,6 @@
       "zh-Hans": "优雅猫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 301,
     "hp": 70,
     "attack": 65,
@@ -11069,7 +10683,6 @@
       "zh-Hans": "勾魂眼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 302,
     "hp": 50,
     "attack": 75,
@@ -11107,7 +10720,6 @@
       "ja": "メガヤミラミ",
       "zh-Hans": "超级勾魂眼"
     },
-    "isDefault": false,
     "number": 302,
     "hp": 50,
     "attack": 85,
@@ -11134,7 +10746,6 @@
       "zh-Hans": "大嘴娃"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 303,
     "hp": 50,
     "attack": 85,
@@ -11172,7 +10783,6 @@
       "ja": "メガクチート",
       "zh-Hans": "超级大嘴娃"
     },
-    "isDefault": false,
     "number": 303,
     "hp": 50,
     "attack": 105,
@@ -11199,7 +10809,6 @@
       "zh-Hans": "可可多拉"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 304,
     "hp": 50,
     "attack": 70,
@@ -11226,7 +10835,6 @@
       "zh-Hans": "可多拉"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 305,
     "hp": 60,
     "attack": 90,
@@ -11253,7 +10861,6 @@
       "zh-Hans": "波士可多拉"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 306,
     "hp": 70,
     "attack": 110,
@@ -11291,7 +10898,6 @@
       "ja": "メガボスゴドラ",
       "zh-Hans": "超级波士可多拉"
     },
-    "isDefault": false,
     "number": 306,
     "hp": 70,
     "attack": 140,
@@ -11318,7 +10924,6 @@
       "zh-Hans": "玛沙那"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 307,
     "hp": 30,
     "attack": 40,
@@ -11345,7 +10950,6 @@
       "zh-Hans": "恰雷姆"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 308,
     "hp": 60,
     "attack": 60,
@@ -11383,7 +10987,6 @@
       "ja": "メガチャーレム",
       "zh-Hans": "超级恰雷姆"
     },
-    "isDefault": false,
     "number": 308,
     "hp": 60,
     "attack": 100,
@@ -11410,7 +11013,6 @@
       "zh-Hans": "落雷兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 309,
     "hp": 40,
     "attack": 45,
@@ -11437,7 +11039,6 @@
       "zh-Hans": "雷电兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 310,
     "hp": 70,
     "attack": 75,
@@ -11475,7 +11076,6 @@
       "ja": "メガライボルト",
       "zh-Hans": "超级雷电兽"
     },
-    "isDefault": false,
     "number": 310,
     "hp": 70,
     "attack": 75,
@@ -11502,7 +11102,6 @@
       "zh-Hans": "正电拍拍"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 311,
     "hp": 60,
     "attack": 50,
@@ -11529,7 +11128,6 @@
       "zh-Hans": "負电拍拍"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 312,
     "hp": 60,
     "attack": 40,
@@ -11556,7 +11154,6 @@
       "zh-Hans": "电萤虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 313,
     "hp": 65,
     "attack": 73,
@@ -11583,7 +11180,6 @@
       "zh-Hans": "甜甜萤"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 314,
     "hp": 65,
     "attack": 47,
@@ -11610,7 +11206,6 @@
       "zh-Hans": "毒蔷薇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 315,
     "hp": 50,
     "attack": 60,
@@ -11637,7 +11232,6 @@
       "zh-Hans": "溶食兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 316,
     "hp": 70,
     "attack": 43,
@@ -11664,7 +11258,6 @@
       "zh-Hans": "吞食兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 317,
     "hp": 100,
     "attack": 73,
@@ -11691,7 +11284,6 @@
       "zh-Hans": "利牙鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 318,
     "hp": 45,
     "attack": 90,
@@ -11718,7 +11310,6 @@
       "zh-Hans": "巨牙鲨"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 319,
     "hp": 70,
     "attack": 120,
@@ -11756,7 +11347,6 @@
       "ja": "メガサメハダー",
       "zh-Hans": "超级巨牙鲨"
     },
-    "isDefault": false,
     "number": 319,
     "hp": 70,
     "attack": 140,
@@ -11783,7 +11373,6 @@
       "zh-Hans": "吼吼鲸"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 320,
     "hp": 130,
     "attack": 70,
@@ -11810,7 +11399,6 @@
       "zh-Hans": "吼鲸王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 321,
     "hp": 170,
     "attack": 90,
@@ -11837,7 +11425,6 @@
       "zh-Hans": "呆火驼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 322,
     "hp": 60,
     "attack": 60,
@@ -11864,7 +11451,6 @@
       "zh-Hans": "喷火驼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 323,
     "hp": 70,
     "attack": 100,
@@ -11902,7 +11488,6 @@
       "ja": "メガバクーダ",
       "zh-Hans": "超级喷火驼"
     },
-    "isDefault": false,
     "number": 323,
     "hp": 70,
     "attack": 120,
@@ -11929,7 +11514,6 @@
       "zh-Hans": "煤炭龟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 324,
     "hp": 70,
     "attack": 85,
@@ -11956,7 +11540,6 @@
       "zh-Hans": "跳跳猪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 325,
     "hp": 60,
     "attack": 25,
@@ -11983,7 +11566,6 @@
       "zh-Hans": "噗噗猪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 326,
     "hp": 80,
     "attack": 45,
@@ -12010,7 +11592,6 @@
       "zh-Hans": "晃晃斑"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 327,
     "hp": 60,
     "attack": 60,
@@ -12037,7 +11618,6 @@
       "zh-Hans": "大颚蚁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 328,
     "hp": 45,
     "attack": 100,
@@ -12064,7 +11644,6 @@
       "zh-Hans": "超音波幼虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 329,
     "hp": 50,
     "attack": 70,
@@ -12091,7 +11670,6 @@
       "zh-Hans": "沙漠蜻蜓"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 330,
     "hp": 80,
     "attack": 100,
@@ -12118,7 +11696,6 @@
       "zh-Hans": "刺球仙人掌"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 331,
     "hp": 50,
     "attack": 85,
@@ -12145,7 +11722,6 @@
       "zh-Hans": "梦歌仙人掌"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 332,
     "hp": 70,
     "attack": 115,
@@ -12172,7 +11748,6 @@
       "zh-Hans": "青绵鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 333,
     "hp": 45,
     "attack": 40,
@@ -12199,7 +11774,6 @@
       "zh-Hans": "七夕青鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 334,
     "hp": 75,
     "attack": 70,
@@ -12237,7 +11811,6 @@
       "ja": "メガチルタリス",
       "zh-Hans": "超级七夕青鸟"
     },
-    "isDefault": false,
     "number": 334,
     "hp": 75,
     "attack": 110,
@@ -12264,7 +11837,6 @@
       "zh-Hans": "猫鼬斩"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 335,
     "hp": 73,
     "attack": 115,
@@ -12291,7 +11863,6 @@
       "zh-Hans": "饭匙蛇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 336,
     "hp": 73,
     "attack": 100,
@@ -12318,7 +11889,6 @@
       "zh-Hans": "月石"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 337,
     "hp": 90,
     "attack": 55,
@@ -12345,7 +11915,6 @@
       "zh-Hans": "太阳岩"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 338,
     "hp": 90,
     "attack": 95,
@@ -12372,7 +11941,6 @@
       "zh-Hans": "泥泥鰍"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 339,
     "hp": 50,
     "attack": 48,
@@ -12399,7 +11967,6 @@
       "zh-Hans": "鲶鱼王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 340,
     "hp": 110,
     "attack": 78,
@@ -12426,7 +11993,6 @@
       "zh-Hans": "龙虾小兵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 341,
     "hp": 43,
     "attack": 80,
@@ -12453,7 +12019,6 @@
       "zh-Hans": "铁螯龙虾"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 342,
     "hp": 63,
     "attack": 120,
@@ -12480,7 +12045,6 @@
       "zh-Hans": "天秤偶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 343,
     "hp": 40,
     "attack": 40,
@@ -12507,7 +12071,6 @@
       "zh-Hans": "念力土偶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 344,
     "hp": 60,
     "attack": 70,
@@ -12534,7 +12097,6 @@
       "zh-Hans": "触手百合"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 345,
     "hp": 66,
     "attack": 41,
@@ -12561,7 +12123,6 @@
       "zh-Hans": "摇篮百合"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 346,
     "hp": 86,
     "attack": 81,
@@ -12588,7 +12149,6 @@
       "zh-Hans": "太古羽虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 347,
     "hp": 45,
     "attack": 95,
@@ -12615,7 +12175,6 @@
       "zh-Hans": "太古盔甲"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 348,
     "hp": 75,
     "attack": 125,
@@ -12642,7 +12201,6 @@
       "zh-Hans": "丑丑鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 349,
     "hp": 20,
     "attack": 15,
@@ -12669,7 +12227,6 @@
       "zh-Hans": "美纳斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 350,
     "hp": 95,
     "attack": 60,
@@ -12707,7 +12264,6 @@
       "ja": "ポワルンのすがた",
       "zh-Hans": "飘浮泡泡的样子"
     },
-    "isDefault": true,
     "number": 351,
     "hp": 70,
     "attack": 70,
@@ -12745,7 +12301,6 @@
       "ja": "たいようのすがた",
       "zh-Hans": "太阳的样子"
     },
-    "isDefault": false,
     "number": 351,
     "hp": 70,
     "attack": 70,
@@ -12783,7 +12338,6 @@
       "ja": "あまみずのすがた",
       "zh-Hans": "雨水的样子"
     },
-    "isDefault": false,
     "number": 351,
     "hp": 70,
     "attack": 70,
@@ -12821,7 +12375,6 @@
       "ja": "ゆきぐものすがた",
       "zh-Hans": "雪云的样子"
     },
-    "isDefault": false,
     "number": 351,
     "hp": 70,
     "attack": 70,
@@ -12848,7 +12401,6 @@
       "zh-Hans": "变隐龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 352,
     "hp": 60,
     "attack": 90,
@@ -12875,7 +12427,6 @@
       "zh-Hans": "怨影娃娃"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 353,
     "hp": 44,
     "attack": 75,
@@ -12902,7 +12453,6 @@
       "zh-Hans": "诅咒娃娃"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 354,
     "hp": 64,
     "attack": 115,
@@ -12940,7 +12490,6 @@
       "ja": "メガジュペッタ",
       "zh-Hans": "超级诅咒娃娃"
     },
-    "isDefault": false,
     "number": 354,
     "hp": 64,
     "attack": 165,
@@ -12967,7 +12516,6 @@
       "zh-Hans": "夜巡灵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 355,
     "hp": 20,
     "attack": 40,
@@ -12994,7 +12542,6 @@
       "zh-Hans": "彷徨夜灵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 356,
     "hp": 40,
     "attack": 70,
@@ -13021,7 +12568,6 @@
       "zh-Hans": "热带龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 357,
     "hp": 99,
     "attack": 68,
@@ -13048,7 +12594,6 @@
       "zh-Hans": "风铃铃"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 358,
     "hp": 75,
     "attack": 50,
@@ -13075,7 +12620,6 @@
       "zh-Hans": "阿勃梭鲁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 359,
     "hp": 65,
     "attack": 130,
@@ -13113,7 +12657,6 @@
       "ja": "メガアブソル",
       "zh-Hans": "超级阿勃梭鲁"
     },
-    "isDefault": false,
     "number": 359,
     "hp": 65,
     "attack": 150,
@@ -13140,7 +12683,6 @@
       "zh-Hans": "小果然"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 360,
     "hp": 95,
     "attack": 23,
@@ -13167,7 +12709,6 @@
       "zh-Hans": "雪童子"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 361,
     "hp": 50,
     "attack": 50,
@@ -13194,7 +12735,6 @@
       "zh-Hans": "冰鬼护"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 362,
     "hp": 80,
     "attack": 80,
@@ -13232,7 +12772,6 @@
       "ja": "メガオニゴーリ",
       "zh-Hans": "超级冰鬼护"
     },
-    "isDefault": false,
     "number": 362,
     "hp": 80,
     "attack": 120,
@@ -13259,7 +12798,6 @@
       "zh-Hans": "海豹球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 363,
     "hp": 70,
     "attack": 40,
@@ -13286,7 +12824,6 @@
       "zh-Hans": "海魔狮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 364,
     "hp": 90,
     "attack": 60,
@@ -13313,7 +12850,6 @@
       "zh-Hans": "帝牙海狮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 365,
     "hp": 110,
     "attack": 80,
@@ -13340,7 +12876,6 @@
       "zh-Hans": "珍珠贝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 366,
     "hp": 35,
     "attack": 64,
@@ -13367,7 +12902,6 @@
       "zh-Hans": "猎斑鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 367,
     "hp": 55,
     "attack": 104,
@@ -13394,7 +12928,6 @@
       "zh-Hans": "樱花鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 368,
     "hp": 55,
     "attack": 84,
@@ -13421,7 +12954,6 @@
       "zh-Hans": "古空棘鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 369,
     "hp": 100,
     "attack": 90,
@@ -13448,7 +12980,6 @@
       "zh-Hans": "爱心鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 370,
     "hp": 43,
     "attack": 30,
@@ -13475,7 +13006,6 @@
       "zh-Hans": "宝贝龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 371,
     "hp": 45,
     "attack": 75,
@@ -13502,7 +13032,6 @@
       "zh-Hans": "甲壳龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 372,
     "hp": 65,
     "attack": 95,
@@ -13529,7 +13058,6 @@
       "zh-Hans": "暴飞龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 373,
     "hp": 95,
     "attack": 135,
@@ -13567,7 +13095,6 @@
       "ja": "メガボーマンダ",
       "zh-Hans": "超级暴飞龙"
     },
-    "isDefault": false,
     "number": 373,
     "hp": 95,
     "attack": 145,
@@ -13594,7 +13121,6 @@
       "zh-Hans": "铁哑铃"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 374,
     "hp": 40,
     "attack": 55,
@@ -13621,7 +13147,6 @@
       "zh-Hans": "金属怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 375,
     "hp": 60,
     "attack": 75,
@@ -13648,7 +13173,6 @@
       "zh-Hans": "巨金怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 376,
     "hp": 80,
     "attack": 135,
@@ -13686,7 +13210,6 @@
       "ja": "メガメタグロス",
       "zh-Hans": "超级巨金怪"
     },
-    "isDefault": false,
     "number": 376,
     "hp": 80,
     "attack": 145,
@@ -13713,7 +13236,6 @@
       "zh-Hans": "雷吉洛克"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 377,
     "hp": 80,
     "attack": 100,
@@ -13740,7 +13262,6 @@
       "zh-Hans": "雷吉艾斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 378,
     "hp": 80,
     "attack": 50,
@@ -13767,7 +13288,6 @@
       "zh-Hans": "雷吉斯奇鲁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 379,
     "hp": 80,
     "attack": 75,
@@ -13794,7 +13314,6 @@
       "zh-Hans": "拉帝亚斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 380,
     "hp": 80,
     "attack": 80,
@@ -13832,7 +13351,6 @@
       "ja": "メガラティアス",
       "zh-Hans": "超级拉帝亚斯"
     },
-    "isDefault": false,
     "number": 380,
     "hp": 80,
     "attack": 100,
@@ -13859,7 +13377,6 @@
       "zh-Hans": "拉帝欧斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 381,
     "hp": 80,
     "attack": 90,
@@ -13897,7 +13414,6 @@
       "ja": "メガラティオス",
       "zh-Hans": "超级拉帝欧斯"
     },
-    "isDefault": false,
     "number": 381,
     "hp": 80,
     "attack": 130,
@@ -13934,7 +13450,6 @@
       "ja": "カイオーガのすがた",
       "zh-Hans": "盖欧卡的样子"
     },
-    "isDefault": true,
     "number": 382,
     "hp": 100,
     "attack": 100,
@@ -13972,7 +13487,6 @@
       "ja": "ゲンシカイキのすがた",
       "zh-Hans": "原始回归的样子"
     },
-    "isDefault": false,
     "number": 382,
     "hp": 100,
     "attack": 150,
@@ -14009,7 +13523,6 @@
       "ja": "グラードンのすがた",
       "zh-Hans": "固拉多的样子"
     },
-    "isDefault": true,
     "number": 383,
     "hp": 100,
     "attack": 150,
@@ -14047,7 +13560,6 @@
       "ja": "ゲンシカイキのすがた",
       "zh-Hans": "原始回归的样子"
     },
-    "isDefault": false,
     "number": 383,
     "hp": 100,
     "attack": 180,
@@ -14074,7 +13586,6 @@
       "zh-Hans": "烈空坐"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 384,
     "hp": 105,
     "attack": 150,
@@ -14112,7 +13623,6 @@
       "ja": "メガレックウザ",
       "zh-Hans": "超级烈空坐"
     },
-    "isDefault": false,
     "number": 384,
     "hp": 105,
     "attack": 180,
@@ -14139,7 +13649,6 @@
       "zh-Hans": "基拉祈"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 385,
     "hp": 100,
     "attack": 100,
@@ -14177,7 +13686,6 @@
       "ja": "ノーマルフォルム",
       "zh-Hans": "普通形态"
     },
-    "isDefault": true,
     "number": 386,
     "hp": 50,
     "attack": 150,
@@ -14215,7 +13723,6 @@
       "ja": "アタックフォルム",
       "zh-Hans": "攻击形态"
     },
-    "isDefault": false,
     "number": 386,
     "hp": 50,
     "attack": 180,
@@ -14253,7 +13760,6 @@
       "ja": "ディフェンスフォルム",
       "zh-Hans": "防御形态"
     },
-    "isDefault": false,
     "number": 386,
     "hp": 50,
     "attack": 70,
@@ -14291,7 +13797,6 @@
       "ja": "スピードフォルム",
       "zh-Hans": "速度形态"
     },
-    "isDefault": false,
     "number": 386,
     "hp": 50,
     "attack": 95,
@@ -14318,7 +13823,6 @@
       "zh-Hans": "草苗龟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 387,
     "hp": 55,
     "attack": 68,
@@ -14345,7 +13849,6 @@
       "zh-Hans": "树林龟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 388,
     "hp": 75,
     "attack": 89,
@@ -14372,7 +13875,6 @@
       "zh-Hans": "土台龟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 389,
     "hp": 95,
     "attack": 109,
@@ -14399,7 +13901,6 @@
       "zh-Hans": "小火焰猴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 390,
     "hp": 44,
     "attack": 58,
@@ -14426,7 +13927,6 @@
       "zh-Hans": "猛火猴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 391,
     "hp": 64,
     "attack": 78,
@@ -14453,7 +13953,6 @@
       "zh-Hans": "烈焰猴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 392,
     "hp": 76,
     "attack": 104,
@@ -14480,7 +13979,6 @@
       "zh-Hans": "波加曼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 393,
     "hp": 53,
     "attack": 51,
@@ -14507,7 +14005,6 @@
       "zh-Hans": "波皇子"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 394,
     "hp": 64,
     "attack": 66,
@@ -14534,7 +14031,6 @@
       "zh-Hans": "帝王拿波"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 395,
     "hp": 84,
     "attack": 86,
@@ -14561,7 +14057,6 @@
       "zh-Hans": "姆克儿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 396,
     "hp": 40,
     "attack": 55,
@@ -14588,7 +14083,6 @@
       "zh-Hans": "姆克鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 397,
     "hp": 55,
     "attack": 75,
@@ -14615,7 +14109,6 @@
       "zh-Hans": "姆克鹰"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 398,
     "hp": 85,
     "attack": 120,
@@ -14642,7 +14135,6 @@
       "zh-Hans": "大牙狸"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 399,
     "hp": 59,
     "attack": 45,
@@ -14669,7 +14161,6 @@
       "zh-Hans": "大尾狸"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 400,
     "hp": 79,
     "attack": 85,
@@ -14696,7 +14187,6 @@
       "zh-Hans": "圆法师"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 401,
     "hp": 37,
     "attack": 25,
@@ -14723,7 +14213,6 @@
       "zh-Hans": "音箱蟀"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 402,
     "hp": 77,
     "attack": 85,
@@ -14750,7 +14239,6 @@
       "zh-Hans": "小猫怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 403,
     "hp": 45,
     "attack": 65,
@@ -14777,7 +14265,6 @@
       "zh-Hans": "勒克猫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 404,
     "hp": 60,
     "attack": 85,
@@ -14804,7 +14291,6 @@
       "zh-Hans": "伦琴猫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 405,
     "hp": 80,
     "attack": 120,
@@ -14831,7 +14317,6 @@
       "zh-Hans": "含羞苞"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 406,
     "hp": 40,
     "attack": 30,
@@ -14858,7 +14343,6 @@
       "zh-Hans": "罗丝雷朵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 407,
     "hp": 60,
     "attack": 70,
@@ -14885,7 +14369,6 @@
       "zh-Hans": "头盖龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 408,
     "hp": 67,
     "attack": 125,
@@ -14912,7 +14395,6 @@
       "zh-Hans": "战槌龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 409,
     "hp": 97,
     "attack": 165,
@@ -14939,7 +14421,6 @@
       "zh-Hans": "盾甲龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 410,
     "hp": 30,
     "attack": 42,
@@ -14966,7 +14447,6 @@
       "zh-Hans": "护城龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 411,
     "hp": 60,
     "attack": 52,
@@ -15001,7 +14481,6 @@
       "it": "Manto Pianta",
       "en": "Plant Cloak"
     },
-    "isDefault": true,
     "number": 412,
     "hp": 40,
     "attack": 29,
@@ -15039,7 +14518,6 @@
       "ja": "くさきのミノ",
       "zh-Hans": "草木蓑衣"
     },
-    "isDefault": true,
     "number": 413,
     "hp": 60,
     "attack": 59,
@@ -15077,7 +14555,6 @@
       "ja": "すなちのミノ",
       "zh-Hans": "砂土蓑衣"
     },
-    "isDefault": false,
     "number": 413,
     "hp": 60,
     "attack": 79,
@@ -15115,7 +14592,6 @@
       "ja": "ゴミのミノ",
       "zh-Hans": "垃圾蓑衣"
     },
-    "isDefault": false,
     "number": 413,
     "hp": 60,
     "attack": 69,
@@ -15142,7 +14618,6 @@
       "zh-Hans": "绅士蛾"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 414,
     "hp": 70,
     "attack": 94,
@@ -15169,7 +14644,6 @@
       "zh-Hans": "三蜜蜂"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 415,
     "hp": 30,
     "attack": 30,
@@ -15196,7 +14670,6 @@
       "zh-Hans": "蜂女王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 416,
     "hp": 70,
     "attack": 80,
@@ -15223,7 +14696,6 @@
       "zh-Hans": "帕奇利兹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 417,
     "hp": 60,
     "attack": 45,
@@ -15250,7 +14722,6 @@
       "zh-Hans": "泳圈鼬"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 418,
     "hp": 55,
     "attack": 65,
@@ -15277,7 +14748,6 @@
       "zh-Hans": "浮潜鼬"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 419,
     "hp": 85,
     "attack": 105,
@@ -15304,7 +14774,6 @@
       "zh-Hans": "樱花宝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 420,
     "hp": 45,
     "attack": 35,
@@ -15339,7 +14808,6 @@
       "it": "Forma Nuvola",
       "en": "Overcast Form"
     },
-    "isDefault": true,
     "number": 421,
     "hp": 70,
     "attack": 60,
@@ -15374,7 +14842,6 @@
       "it": "Mare Ovest",
       "en": "West Sea"
     },
-    "isDefault": true,
     "number": 422,
     "hp": 76,
     "attack": 48,
@@ -15409,7 +14876,6 @@
       "it": "Mare Ovest",
       "en": "West Sea"
     },
-    "isDefault": true,
     "number": 423,
     "hp": 111,
     "attack": 83,
@@ -15436,7 +14902,6 @@
       "zh-Hans": "双尾怪手"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 424,
     "hp": 75,
     "attack": 100,
@@ -15463,7 +14928,6 @@
       "zh-Hans": "飘飘球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 425,
     "hp": 90,
     "attack": 50,
@@ -15490,7 +14954,6 @@
       "zh-Hans": "随风球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 426,
     "hp": 150,
     "attack": 80,
@@ -15517,7 +14980,6 @@
       "zh-Hans": "卷卷耳"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 427,
     "hp": 55,
     "attack": 66,
@@ -15544,7 +15006,6 @@
       "zh-Hans": "长耳兔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 428,
     "hp": 65,
     "attack": 76,
@@ -15582,7 +15043,6 @@
       "ja": "メガミミロップ",
       "zh-Hans": "超级长耳兔"
     },
-    "isDefault": false,
     "number": 428,
     "hp": 65,
     "attack": 136,
@@ -15609,7 +15069,6 @@
       "zh-Hans": "梦妖魔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 429,
     "hp": 60,
     "attack": 60,
@@ -15636,7 +15095,6 @@
       "zh-Hans": "乌鸦头头"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 430,
     "hp": 100,
     "attack": 125,
@@ -15663,7 +15121,6 @@
       "zh-Hans": "魅力喵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 431,
     "hp": 49,
     "attack": 55,
@@ -15690,7 +15147,6 @@
       "zh-Hans": "东施喵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 432,
     "hp": 71,
     "attack": 82,
@@ -15717,7 +15173,6 @@
       "zh-Hans": "铃铛响"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 433,
     "hp": 45,
     "attack": 30,
@@ -15744,7 +15199,6 @@
       "zh-Hans": "臭鼬噗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 434,
     "hp": 63,
     "attack": 63,
@@ -15771,7 +15225,6 @@
       "zh-Hans": "坦克臭鼬"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 435,
     "hp": 103,
     "attack": 93,
@@ -15798,7 +15251,6 @@
       "zh-Hans": "铜镜怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 436,
     "hp": 57,
     "attack": 24,
@@ -15825,7 +15277,6 @@
       "zh-Hans": "青铜钟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 437,
     "hp": 67,
     "attack": 89,
@@ -15852,7 +15303,6 @@
       "zh-Hans": "盆才怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 438,
     "hp": 50,
     "attack": 80,
@@ -15879,7 +15329,6 @@
       "zh-Hans": "魔尼尼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 439,
     "hp": 20,
     "attack": 25,
@@ -15906,7 +15355,6 @@
       "zh-Hans": "小福蛋"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 440,
     "hp": 100,
     "attack": 5,
@@ -15933,7 +15381,6 @@
       "zh-Hans": "聒噪鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 441,
     "hp": 76,
     "attack": 65,
@@ -15960,7 +15407,6 @@
       "zh-Hans": "花岩怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 442,
     "hp": 50,
     "attack": 92,
@@ -15987,7 +15433,6 @@
       "zh-Hans": "圆陆鲨"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 443,
     "hp": 58,
     "attack": 70,
@@ -16014,7 +15459,6 @@
       "zh-Hans": "尖牙陆鲨"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 444,
     "hp": 68,
     "attack": 90,
@@ -16041,7 +15485,6 @@
       "zh-Hans": "烈咬陆鲨"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 445,
     "hp": 108,
     "attack": 130,
@@ -16079,7 +15522,6 @@
       "ja": "メガガブリアス",
       "zh-Hans": "超级烈咬陆鲨"
     },
-    "isDefault": false,
     "number": 445,
     "hp": 108,
     "attack": 170,
@@ -16106,7 +15548,6 @@
       "zh-Hans": "小卡比兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 446,
     "hp": 135,
     "attack": 85,
@@ -16133,7 +15574,6 @@
       "zh-Hans": "利欧路"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 447,
     "hp": 40,
     "attack": 70,
@@ -16160,7 +15600,6 @@
       "zh-Hans": "路卡利欧"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 448,
     "hp": 70,
     "attack": 110,
@@ -16198,7 +15637,6 @@
       "ja": "メガルカリオ",
       "zh-Hans": "超级路卡利欧"
     },
-    "isDefault": false,
     "number": 448,
     "hp": 70,
     "attack": 145,
@@ -16225,7 +15663,6 @@
       "zh-Hans": "沙河马"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 449,
     "hp": 68,
     "attack": 72,
@@ -16252,7 +15689,6 @@
       "zh-Hans": "河马兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 450,
     "hp": 108,
     "attack": 112,
@@ -16279,7 +15715,6 @@
       "zh-Hans": "钳尾蝎"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 451,
     "hp": 40,
     "attack": 50,
@@ -16306,7 +15741,6 @@
       "zh-Hans": "龙王蝎"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 452,
     "hp": 70,
     "attack": 90,
@@ -16333,7 +15767,6 @@
       "zh-Hans": "不良蛙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 453,
     "hp": 48,
     "attack": 61,
@@ -16360,7 +15793,6 @@
       "zh-Hans": "毒骷蛙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 454,
     "hp": 83,
     "attack": 106,
@@ -16387,7 +15819,6 @@
       "zh-Hans": "尖牙笼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 455,
     "hp": 74,
     "attack": 100,
@@ -16414,7 +15845,6 @@
       "zh-Hans": "荧光鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 456,
     "hp": 49,
     "attack": 49,
@@ -16441,7 +15871,6 @@
       "zh-Hans": "霓虹鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 457,
     "hp": 69,
     "attack": 69,
@@ -16468,7 +15897,6 @@
       "zh-Hans": "小球飞鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 458,
     "hp": 45,
     "attack": 20,
@@ -16495,7 +15923,6 @@
       "zh-Hans": "雪笠怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 459,
     "hp": 60,
     "attack": 62,
@@ -16522,7 +15949,6 @@
       "zh-Hans": "暴雪王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 460,
     "hp": 90,
     "attack": 92,
@@ -16560,7 +15986,6 @@
       "ja": "メガユキノオー",
       "zh-Hans": "超级暴雪王"
     },
-    "isDefault": false,
     "number": 460,
     "hp": 90,
     "attack": 132,
@@ -16587,7 +16012,6 @@
       "zh-Hans": "玛狃拉"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 461,
     "hp": 70,
     "attack": 120,
@@ -16614,7 +16038,6 @@
       "zh-Hans": "自爆磁怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 462,
     "hp": 70,
     "attack": 70,
@@ -16641,7 +16064,6 @@
       "zh-Hans": "大舌舔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 463,
     "hp": 110,
     "attack": 85,
@@ -16668,7 +16090,6 @@
       "zh-Hans": "超甲狂犀"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 464,
     "hp": 115,
     "attack": 140,
@@ -16695,7 +16116,6 @@
       "zh-Hans": "巨蔓藤"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 465,
     "hp": 100,
     "attack": 100,
@@ -16722,7 +16142,6 @@
       "zh-Hans": "电击魔兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 466,
     "hp": 75,
     "attack": 123,
@@ -16749,7 +16168,6 @@
       "zh-Hans": "鸭嘴炎兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 467,
     "hp": 75,
     "attack": 95,
@@ -16776,7 +16194,6 @@
       "zh-Hans": "波克基斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 468,
     "hp": 85,
     "attack": 50,
@@ -16803,7 +16220,6 @@
       "zh-Hans": "远古巨蜓"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 469,
     "hp": 86,
     "attack": 76,
@@ -16830,7 +16246,6 @@
       "zh-Hans": "叶伊布"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 470,
     "hp": 65,
     "attack": 110,
@@ -16857,7 +16272,6 @@
       "zh-Hans": "冰伊布"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 471,
     "hp": 65,
     "attack": 60,
@@ -16884,7 +16298,6 @@
       "zh-Hans": "天蝎王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 472,
     "hp": 75,
     "attack": 95,
@@ -16911,7 +16324,6 @@
       "zh-Hans": "象牙猪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 473,
     "hp": 110,
     "attack": 130,
@@ -16938,7 +16350,6 @@
       "zh-Hans": "多边兽Ｚ"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 474,
     "hp": 85,
     "attack": 80,
@@ -16965,7 +16376,6 @@
       "zh-Hans": "艾路雷朵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 475,
     "hp": 68,
     "attack": 125,
@@ -17003,7 +16413,6 @@
       "ja": "メガエルレイド",
       "zh-Hans": "超级艾路雷朵"
     },
-    "isDefault": false,
     "number": 475,
     "hp": 68,
     "attack": 165,
@@ -17030,7 +16439,6 @@
       "zh-Hans": "大朝北鼻"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 476,
     "hp": 60,
     "attack": 55,
@@ -17057,7 +16465,6 @@
       "zh-Hans": "黑夜魔灵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 477,
     "hp": 45,
     "attack": 100,
@@ -17084,7 +16491,6 @@
       "zh-Hans": "雪妖女"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 478,
     "hp": 70,
     "attack": 80,
@@ -17122,7 +16528,6 @@
       "ja": "ロトムのすがた",
       "zh-Hans": "洛托姆的样子"
     },
-    "isDefault": true,
     "number": 479,
     "hp": 50,
     "attack": 50,
@@ -17160,7 +16565,6 @@
       "ja": "ヒートロトム",
       "zh-Hans": "加热洛托姆"
     },
-    "isDefault": false,
     "number": 479,
     "hp": 50,
     "attack": 65,
@@ -17198,7 +16602,6 @@
       "ja": "ウォッシュロトム",
       "zh-Hans": "清洗洛托姆"
     },
-    "isDefault": false,
     "number": 479,
     "hp": 50,
     "attack": 65,
@@ -17236,7 +16639,6 @@
       "ja": "フロストロトム",
       "zh-Hans": "结冰洛托姆"
     },
-    "isDefault": false,
     "number": 479,
     "hp": 50,
     "attack": 65,
@@ -17274,7 +16676,6 @@
       "ja": "スピンロトム",
       "zh-Hans": "旋转洛托姆"
     },
-    "isDefault": false,
     "number": 479,
     "hp": 50,
     "attack": 65,
@@ -17312,7 +16713,6 @@
       "ja": "カットロトム",
       "zh-Hans": "切割洛托姆"
     },
-    "isDefault": false,
     "number": 479,
     "hp": 50,
     "attack": 65,
@@ -17339,7 +16739,6 @@
       "zh-Hans": "由克希"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 480,
     "hp": 75,
     "attack": 75,
@@ -17366,7 +16765,6 @@
       "zh-Hans": "艾姆利多"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 481,
     "hp": 80,
     "attack": 105,
@@ -17393,7 +16791,6 @@
       "zh-Hans": "亚克诺姆"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 482,
     "hp": 75,
     "attack": 125,
@@ -17420,7 +16817,6 @@
       "zh-Hans": "帝牙卢卡"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 483,
     "hp": 100,
     "attack": 120,
@@ -17447,7 +16843,6 @@
       "zh-Hans": "帕路奇亚"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 484,
     "hp": 90,
     "attack": 120,
@@ -17474,7 +16869,6 @@
       "zh-Hans": "席多蓝恩"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 485,
     "hp": 91,
     "attack": 90,
@@ -17501,7 +16895,6 @@
       "zh-Hans": "雷吉奇卡斯"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 486,
     "hp": 110,
     "attack": 160,
@@ -17539,7 +16932,6 @@
       "ja": "アナザーフォルム",
       "zh-Hans": "别种形态"
     },
-    "isDefault": true,
     "number": 487,
     "hp": 150,
     "attack": 100,
@@ -17577,7 +16969,6 @@
       "ja": "オリジンフォルム",
       "zh-Hans": "起源形态"
     },
-    "isDefault": false,
     "number": 487,
     "hp": 150,
     "attack": 120,
@@ -17604,7 +16995,6 @@
       "zh-Hans": "克雷色利亚"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 488,
     "hp": 120,
     "attack": 70,
@@ -17631,7 +17021,6 @@
       "zh-Hans": "霏欧纳"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 489,
     "hp": 80,
     "attack": 80,
@@ -17658,7 +17047,6 @@
       "zh-Hans": "玛纳霏"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 490,
     "hp": 100,
     "attack": 100,
@@ -17685,7 +17073,6 @@
       "zh-Hans": "达克莱伊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 491,
     "hp": 70,
     "attack": 90,
@@ -17723,7 +17110,6 @@
       "ja": "ランドフォルム",
       "zh-Hans": "陆上形态"
     },
-    "isDefault": true,
     "number": 492,
     "hp": 100,
     "attack": 100,
@@ -17761,7 +17147,6 @@
       "ja": "スカイフォルム",
       "zh-Hans": "天空形态"
     },
-    "isDefault": false,
     "number": 492,
     "hp": 100,
     "attack": 103,
@@ -17795,7 +17180,6 @@
       "it": "Tipo Normale",
       "en": "Normal Type"
     },
-    "isDefault": true,
     "number": 493,
     "hp": 120,
     "attack": 120,
@@ -17821,7 +17205,6 @@
       "zh-Hans": "比克提尼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 494,
     "hp": 100,
     "attack": 100,
@@ -17847,7 +17230,6 @@
       "zh-Hans": "藤藤蛇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 495,
     "hp": 45,
     "attack": 45,
@@ -17873,7 +17255,6 @@
       "zh-Hans": "青藤蛇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 496,
     "hp": 60,
     "attack": 60,
@@ -17899,7 +17280,6 @@
       "zh-Hans": "君主蛇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 497,
     "hp": 75,
     "attack": 75,
@@ -17925,7 +17305,6 @@
       "zh-Hans": "暖暖猪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 498,
     "hp": 65,
     "attack": 63,
@@ -17951,7 +17330,6 @@
       "zh-Hans": "炒炒猪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 499,
     "hp": 90,
     "attack": 93,
@@ -17977,7 +17355,6 @@
       "zh-Hans": "炎武王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 500,
     "hp": 110,
     "attack": 123,
@@ -18003,7 +17380,6 @@
       "zh-Hans": "水水獭"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 501,
     "hp": 55,
     "attack": 55,
@@ -18029,7 +17405,6 @@
       "zh-Hans": "双刃丸"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 502,
     "hp": 75,
     "attack": 75,
@@ -18055,7 +17430,6 @@
       "zh-Hans": "大剑鬼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 503,
     "hp": 95,
     "attack": 100,
@@ -18081,7 +17455,6 @@
       "zh-Hans": "探探鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 504,
     "hp": 45,
     "attack": 55,
@@ -18107,7 +17480,6 @@
       "zh-Hans": "步哨鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 505,
     "hp": 60,
     "attack": 85,
@@ -18133,7 +17505,6 @@
       "zh-Hans": "小约克"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 506,
     "hp": 45,
     "attack": 60,
@@ -18159,7 +17530,6 @@
       "zh-Hans": "哈约克"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 507,
     "hp": 65,
     "attack": 80,
@@ -18185,7 +17555,6 @@
       "zh-Hans": "长毛狗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 508,
     "hp": 85,
     "attack": 110,
@@ -18211,7 +17580,6 @@
       "zh-Hans": "扒手猫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 509,
     "hp": 41,
     "attack": 50,
@@ -18237,7 +17605,6 @@
       "zh-Hans": "酷豹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 510,
     "hp": 64,
     "attack": 88,
@@ -18263,7 +17630,6 @@
       "zh-Hans": "花椰猴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 511,
     "hp": 50,
     "attack": 53,
@@ -18289,7 +17655,6 @@
       "zh-Hans": "花椰猿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 512,
     "hp": 75,
     "attack": 98,
@@ -18315,7 +17680,6 @@
       "zh-Hans": "爆香猴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 513,
     "hp": 50,
     "attack": 53,
@@ -18341,7 +17705,6 @@
       "zh-Hans": "爆香猿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 514,
     "hp": 75,
     "attack": 98,
@@ -18367,7 +17730,6 @@
       "zh-Hans": "冷水猴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 515,
     "hp": 50,
     "attack": 53,
@@ -18393,7 +17755,6 @@
       "zh-Hans": "冷水猿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 516,
     "hp": 75,
     "attack": 98,
@@ -18419,7 +17780,6 @@
       "zh-Hans": "食梦梦"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 517,
     "hp": 76,
     "attack": 25,
@@ -18445,7 +17805,6 @@
       "zh-Hans": "梦梦蚀"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 518,
     "hp": 116,
     "attack": 55,
@@ -18471,7 +17830,6 @@
       "zh-Hans": "豆豆鸽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 519,
     "hp": 50,
     "attack": 55,
@@ -18497,7 +17855,6 @@
       "zh-Hans": "咕咕鸽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 520,
     "hp": 62,
     "attack": 77,
@@ -18523,7 +17880,6 @@
       "zh-Hans": "高傲雉鸡"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 521,
     "hp": 80,
     "attack": 115,
@@ -18549,7 +17905,6 @@
       "zh-Hans": "斑斑马"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 522,
     "hp": 45,
     "attack": 60,
@@ -18575,7 +17930,6 @@
       "zh-Hans": "雷电斑马"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 523,
     "hp": 75,
     "attack": 100,
@@ -18601,7 +17955,6 @@
       "zh-Hans": "石丸子"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 524,
     "hp": 55,
     "attack": 75,
@@ -18627,7 +17980,6 @@
       "zh-Hans": "地幔岩"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 525,
     "hp": 70,
     "attack": 105,
@@ -18653,7 +18005,6 @@
       "zh-Hans": "庞岩怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 526,
     "hp": 85,
     "attack": 135,
@@ -18679,7 +18030,6 @@
       "zh-Hans": "滚滚蝙蝠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 527,
     "hp": 65,
     "attack": 45,
@@ -18705,7 +18055,6 @@
       "zh-Hans": "心蝙蝠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 528,
     "hp": 67,
     "attack": 57,
@@ -18731,7 +18080,6 @@
       "zh-Hans": "螺钉地鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 529,
     "hp": 60,
     "attack": 85,
@@ -18757,7 +18105,6 @@
       "zh-Hans": "龙头地鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 530,
     "hp": 110,
     "attack": 135,
@@ -18783,7 +18130,6 @@
       "zh-Hans": "差不多娃娃"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 531,
     "hp": 103,
     "attack": 60,
@@ -18820,7 +18166,6 @@
       "ja": "メガタブンネ",
       "zh-Hans": "超级差不多娃娃"
     },
-    "isDefault": false,
     "number": 531,
     "hp": 103,
     "attack": 60,
@@ -18846,7 +18191,6 @@
       "zh-Hans": "搬运小匠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 532,
     "hp": 75,
     "attack": 80,
@@ -18872,7 +18216,6 @@
       "zh-Hans": "铁骨土人"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 533,
     "hp": 85,
     "attack": 105,
@@ -18898,7 +18241,6 @@
       "zh-Hans": "修建老匠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 534,
     "hp": 105,
     "attack": 140,
@@ -18924,7 +18266,6 @@
       "zh-Hans": "圆蝌蚪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 535,
     "hp": 50,
     "attack": 50,
@@ -18950,7 +18291,6 @@
       "zh-Hans": "蓝蟾蜍"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 536,
     "hp": 75,
     "attack": 65,
@@ -18976,7 +18316,6 @@
       "zh-Hans": "蟾蜍王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 537,
     "hp": 105,
     "attack": 95,
@@ -19002,7 +18341,6 @@
       "zh-Hans": "投摔鬼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 538,
     "hp": 120,
     "attack": 100,
@@ -19028,7 +18366,6 @@
       "zh-Hans": "打击鬼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 539,
     "hp": 75,
     "attack": 125,
@@ -19054,7 +18391,6 @@
       "zh-Hans": "虫宝包"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 540,
     "hp": 45,
     "attack": 53,
@@ -19080,7 +18416,6 @@
       "zh-Hans": "宝包茧"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 541,
     "hp": 55,
     "attack": 63,
@@ -19106,7 +18441,6 @@
       "zh-Hans": "保姆虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 542,
     "hp": 75,
     "attack": 103,
@@ -19132,7 +18466,6 @@
       "zh-Hans": "百足蜈蚣"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 543,
     "hp": 30,
     "attack": 45,
@@ -19158,7 +18491,6 @@
       "zh-Hans": "车轮球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 544,
     "hp": 40,
     "attack": 55,
@@ -19184,7 +18516,6 @@
       "zh-Hans": "蜈蚣王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 545,
     "hp": 60,
     "attack": 100,
@@ -19210,7 +18541,6 @@
       "zh-Hans": "木棉球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 546,
     "hp": 40,
     "attack": 27,
@@ -19236,7 +18566,6 @@
       "zh-Hans": "风妖精"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 547,
     "hp": 60,
     "attack": 67,
@@ -19262,7 +18591,6 @@
       "zh-Hans": "百合根娃娃"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 548,
     "hp": 45,
     "attack": 35,
@@ -19288,7 +18616,6 @@
       "zh-Hans": "裙儿小姐"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 549,
     "hp": 70,
     "attack": 60,
@@ -19325,7 +18652,6 @@
       "ja": "あかすじのすがた",
       "zh-Hans": "红条纹的样子"
     },
-    "isDefault": true,
     "number": 550,
     "hp": 70,
     "attack": 92,
@@ -19362,7 +18688,6 @@
       "ja": "あおすじのすがた",
       "zh-Hans": "蓝条纹的样子"
     },
-    "isDefault": false,
     "number": 550,
     "hp": 70,
     "attack": 92,
@@ -19388,7 +18713,6 @@
       "zh-Hans": "黑眼鳄"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 551,
     "hp": 50,
     "attack": 72,
@@ -19414,7 +18738,6 @@
       "zh-Hans": "混混鳄"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 552,
     "hp": 60,
     "attack": 82,
@@ -19440,7 +18763,6 @@
       "zh-Hans": "流氓鳄"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 553,
     "hp": 95,
     "attack": 117,
@@ -19466,7 +18788,6 @@
       "zh-Hans": "火红不倒翁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 554,
     "hp": 70,
     "attack": 90,
@@ -19494,7 +18815,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 554,
     "hp": 70,
     "attack": 90,
@@ -19531,7 +18851,6 @@
       "ja": "ノーマルモード",
       "zh-Hans": "普通模式"
     },
-    "isDefault": true,
     "number": 555,
     "hp": 105,
     "attack": 140,
@@ -19568,7 +18887,6 @@
       "ja": "ダルマモード",
       "zh-Hans": "达摩模式"
     },
-    "isDefault": false,
     "number": 555,
     "hp": 105,
     "attack": 30,
@@ -19596,7 +18914,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 555,
     "hp": 105,
     "attack": 140,
@@ -19624,7 +18941,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 555,
     "hp": 105,
     "attack": 160,
@@ -19650,7 +18966,6 @@
       "zh-Hans": "沙铃仙人掌"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 556,
     "hp": 75,
     "attack": 86,
@@ -19676,7 +18991,6 @@
       "zh-Hans": "石居蟹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 557,
     "hp": 50,
     "attack": 65,
@@ -19702,7 +19016,6 @@
       "zh-Hans": "岩殿居蟹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 558,
     "hp": 70,
     "attack": 105,
@@ -19728,7 +19041,6 @@
       "zh-Hans": "滑滑小子"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 559,
     "hp": 50,
     "attack": 75,
@@ -19754,7 +19066,6 @@
       "zh-Hans": "头巾混混"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 560,
     "hp": 65,
     "attack": 90,
@@ -19780,7 +19091,6 @@
       "zh-Hans": "象征鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 561,
     "hp": 72,
     "attack": 58,
@@ -19806,7 +19116,6 @@
       "zh-Hans": "哭哭面具"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 562,
     "hp": 38,
     "attack": 30,
@@ -19834,7 +19143,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 562,
     "hp": 38,
     "attack": 55,
@@ -19860,7 +19168,6 @@
       "zh-Hans": "死神棺"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 563,
     "hp": 58,
     "attack": 50,
@@ -19886,7 +19193,6 @@
       "zh-Hans": "原盖海龟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 564,
     "hp": 54,
     "attack": 78,
@@ -19912,7 +19218,6 @@
       "zh-Hans": "肋骨海龟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 565,
     "hp": 74,
     "attack": 108,
@@ -19938,7 +19243,6 @@
       "zh-Hans": "始祖小鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 566,
     "hp": 55,
     "attack": 112,
@@ -19964,7 +19268,6 @@
       "zh-Hans": "始祖大鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 567,
     "hp": 75,
     "attack": 140,
@@ -19990,7 +19293,6 @@
       "zh-Hans": "破破袋"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 568,
     "hp": 50,
     "attack": 50,
@@ -20016,7 +19318,6 @@
       "zh-Hans": "灰尘山"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 569,
     "hp": 80,
     "attack": 95,
@@ -20044,7 +19345,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 569,
     "hp": 80,
     "attack": 95,
@@ -20070,7 +19370,6 @@
       "zh-Hans": "索罗亚"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 570,
     "hp": 40,
     "attack": 65,
@@ -20096,7 +19395,6 @@
       "zh-Hans": "索罗亚克"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 571,
     "hp": 60,
     "attack": 105,
@@ -20122,7 +19420,6 @@
       "zh-Hans": "泡沫栗鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 572,
     "hp": 55,
     "attack": 50,
@@ -20148,7 +19445,6 @@
       "zh-Hans": "奇诺栗鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 573,
     "hp": 75,
     "attack": 95,
@@ -20174,7 +19470,6 @@
       "zh-Hans": "哥德宝宝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 574,
     "hp": 45,
     "attack": 30,
@@ -20200,7 +19495,6 @@
       "zh-Hans": "哥德小童"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 575,
     "hp": 60,
     "attack": 45,
@@ -20226,7 +19520,6 @@
       "zh-Hans": "哥德小姐"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 576,
     "hp": 70,
     "attack": 55,
@@ -20252,7 +19545,6 @@
       "zh-Hans": "单卵细胞球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 577,
     "hp": 45,
     "attack": 30,
@@ -20278,7 +19570,6 @@
       "zh-Hans": "双卵细胞球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 578,
     "hp": 65,
     "attack": 40,
@@ -20304,7 +19595,6 @@
       "zh-Hans": "人造细胞卵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 579,
     "hp": 110,
     "attack": 65,
@@ -20330,7 +19620,6 @@
       "zh-Hans": "鸭宝宝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 580,
     "hp": 62,
     "attack": 44,
@@ -20356,7 +19645,6 @@
       "zh-Hans": "舞天鹅"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 581,
     "hp": 75,
     "attack": 87,
@@ -20382,7 +19670,6 @@
       "zh-Hans": "迷你冰"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 582,
     "hp": 36,
     "attack": 50,
@@ -20408,7 +19695,6 @@
       "zh-Hans": "多多冰"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 583,
     "hp": 51,
     "attack": 65,
@@ -20434,7 +19720,6 @@
       "zh-Hans": "双倍多多冰"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 584,
     "hp": 71,
     "attack": 95,
@@ -20468,7 +19753,6 @@
       "it": "Forma Primavera",
       "en": "Spring Form"
     },
-    "isDefault": true,
     "number": 585,
     "hp": 60,
     "attack": 60,
@@ -20502,7 +19786,6 @@
       "it": "Forma Primavera",
       "en": "Spring Form"
     },
-    "isDefault": true,
     "number": 586,
     "hp": 80,
     "attack": 100,
@@ -20528,7 +19811,6 @@
       "zh-Hans": "电飞鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 587,
     "hp": 55,
     "attack": 75,
@@ -20554,7 +19836,6 @@
       "zh-Hans": "盖盖虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 588,
     "hp": 50,
     "attack": 75,
@@ -20580,7 +19861,6 @@
       "zh-Hans": "骑士蜗牛"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 589,
     "hp": 70,
     "attack": 135,
@@ -20606,7 +19886,6 @@
       "zh-Hans": "哎呀球菇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 590,
     "hp": 69,
     "attack": 55,
@@ -20632,7 +19911,6 @@
       "zh-Hans": "败露球菇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 591,
     "hp": 114,
     "attack": 85,
@@ -20658,7 +19936,6 @@
       "zh-Hans": "轻飘飘"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 592,
     "hp": 55,
     "attack": 40,
@@ -20684,7 +19961,6 @@
       "zh-Hans": "胖嘟嘟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 593,
     "hp": 100,
     "attack": 60,
@@ -20710,7 +19986,6 @@
       "zh-Hans": "保姆曼波"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 594,
     "hp": 165,
     "attack": 75,
@@ -20736,7 +20011,6 @@
       "zh-Hans": "电电虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 595,
     "hp": 50,
     "attack": 47,
@@ -20762,7 +20036,6 @@
       "zh-Hans": "电蜘蛛"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 596,
     "hp": 70,
     "attack": 77,
@@ -20788,7 +20061,6 @@
       "zh-Hans": "种子铁球"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 597,
     "hp": 44,
     "attack": 50,
@@ -20814,7 +20086,6 @@
       "zh-Hans": "坚果哑铃"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 598,
     "hp": 74,
     "attack": 94,
@@ -20840,7 +20111,6 @@
       "zh-Hans": "齿轮儿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 599,
     "hp": 40,
     "attack": 55,
@@ -20866,7 +20136,6 @@
       "zh-Hans": "齿轮组"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 600,
     "hp": 60,
     "attack": 80,
@@ -20892,7 +20161,6 @@
       "zh-Hans": "齿轮怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 601,
     "hp": 60,
     "attack": 100,
@@ -20918,7 +20186,6 @@
       "zh-Hans": "麻麻小鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 602,
     "hp": 35,
     "attack": 55,
@@ -20944,7 +20211,6 @@
       "zh-Hans": "麻麻鳗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 603,
     "hp": 65,
     "attack": 85,
@@ -20970,7 +20236,6 @@
       "zh-Hans": "麻麻鳗鱼王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 604,
     "hp": 85,
     "attack": 115,
@@ -20996,7 +20261,6 @@
       "zh-Hans": "小灰怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 605,
     "hp": 55,
     "attack": 55,
@@ -21022,7 +20286,6 @@
       "zh-Hans": "大宇怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 606,
     "hp": 75,
     "attack": 75,
@@ -21048,7 +20311,6 @@
       "zh-Hans": "烛光灵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 607,
     "hp": 50,
     "attack": 30,
@@ -21074,7 +20336,6 @@
       "zh-Hans": "灯火幽灵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 608,
     "hp": 60,
     "attack": 40,
@@ -21100,7 +20361,6 @@
       "zh-Hans": "水晶灯火灵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 609,
     "hp": 60,
     "attack": 55,
@@ -21126,7 +20386,6 @@
       "zh-Hans": "牙牙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 610,
     "hp": 46,
     "attack": 87,
@@ -21152,7 +20411,6 @@
       "zh-Hans": "斧牙龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 611,
     "hp": 66,
     "attack": 117,
@@ -21178,7 +20436,6 @@
       "zh-Hans": "双斧战龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 612,
     "hp": 76,
     "attack": 147,
@@ -21204,7 +20461,6 @@
       "zh-Hans": "喷嚏熊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 613,
     "hp": 55,
     "attack": 70,
@@ -21230,7 +20486,6 @@
       "zh-Hans": "冻原熊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 614,
     "hp": 95,
     "attack": 130,
@@ -21256,7 +20511,6 @@
       "zh-Hans": "几何雪花"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 615,
     "hp": 80,
     "attack": 50,
@@ -21282,7 +20536,6 @@
       "zh-Hans": "小嘴蜗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 616,
     "hp": 50,
     "attack": 40,
@@ -21308,7 +20561,6 @@
       "zh-Hans": "敏捷虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 617,
     "hp": 80,
     "attack": 70,
@@ -21334,7 +20586,6 @@
       "zh-Hans": "泥巴鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 618,
     "hp": 109,
     "attack": 66,
@@ -21362,7 +20613,6 @@
     "formNames": {
       "en": "Galarian Form"
     },
-    "isDefault": false,
     "number": 618,
     "hp": 109,
     "attack": 81,
@@ -21388,7 +20638,6 @@
       "zh-Hans": "功夫鼬"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 619,
     "hp": 45,
     "attack": 85,
@@ -21414,7 +20663,6 @@
       "zh-Hans": "师父鼬"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 620,
     "hp": 65,
     "attack": 125,
@@ -21440,7 +20688,6 @@
       "zh-Hans": "赤面龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 621,
     "hp": 77,
     "attack": 120,
@@ -21466,7 +20713,6 @@
       "zh-Hans": "泥偶小人"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 622,
     "hp": 59,
     "attack": 74,
@@ -21492,7 +20738,6 @@
       "zh-Hans": "泥偶巨人"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 623,
     "hp": 89,
     "attack": 124,
@@ -21518,7 +20763,6 @@
       "zh-Hans": "驹刀小兵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 624,
     "hp": 45,
     "attack": 85,
@@ -21544,7 +20788,6 @@
       "zh-Hans": "劈斩司令"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 625,
     "hp": 65,
     "attack": 125,
@@ -21570,7 +20813,6 @@
       "zh-Hans": "爆炸头水牛"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 626,
     "hp": 95,
     "attack": 110,
@@ -21596,7 +20838,6 @@
       "zh-Hans": "毛头小鹰"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 627,
     "hp": 70,
     "attack": 83,
@@ -21622,7 +20863,6 @@
       "zh-Hans": "勇士雄鹰"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 628,
     "hp": 100,
     "attack": 123,
@@ -21648,7 +20888,6 @@
       "zh-Hans": "秃鹰丫头"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 629,
     "hp": 70,
     "attack": 55,
@@ -21674,7 +20913,6 @@
       "zh-Hans": "秃鹰娜"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 630,
     "hp": 110,
     "attack": 65,
@@ -21700,7 +20938,6 @@
       "zh-Hans": "熔蚁兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 631,
     "hp": 85,
     "attack": 97,
@@ -21726,7 +20963,6 @@
       "zh-Hans": "铁蚁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 632,
     "hp": 58,
     "attack": 109,
@@ -21752,7 +20988,6 @@
       "zh-Hans": "单首龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 633,
     "hp": 52,
     "attack": 65,
@@ -21778,7 +21013,6 @@
       "zh-Hans": "双首暴龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 634,
     "hp": 72,
     "attack": 85,
@@ -21804,7 +21038,6 @@
       "zh-Hans": "三首恶龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 635,
     "hp": 92,
     "attack": 105,
@@ -21830,7 +21063,6 @@
       "zh-Hans": "燃烧虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 636,
     "hp": 55,
     "attack": 85,
@@ -21856,7 +21088,6 @@
       "zh-Hans": "火神蛾"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 637,
     "hp": 85,
     "attack": 60,
@@ -21882,7 +21113,6 @@
       "zh-Hans": "勾帕路翁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 638,
     "hp": 91,
     "attack": 90,
@@ -21908,7 +21138,6 @@
       "zh-Hans": "代拉基翁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 639,
     "hp": 91,
     "attack": 129,
@@ -21934,7 +21163,6 @@
       "zh-Hans": "毕力吉翁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 640,
     "hp": 91,
     "attack": 90,
@@ -21971,7 +21199,6 @@
       "ja": "けしんフォルム",
       "zh-Hans": "化身形态"
     },
-    "isDefault": true,
     "number": 641,
     "hp": 79,
     "attack": 115,
@@ -22008,7 +21235,6 @@
       "ja": "れいじゅうフォルム",
       "zh-Hans": "灵兽形态"
     },
-    "isDefault": false,
     "number": 641,
     "hp": 79,
     "attack": 100,
@@ -22045,7 +21271,6 @@
       "ja": "けしんフォルム",
       "zh-Hans": "化身形态"
     },
-    "isDefault": true,
     "number": 642,
     "hp": 79,
     "attack": 115,
@@ -22082,7 +21307,6 @@
       "ja": "れいじゅうフォルム",
       "zh-Hans": "灵兽形态"
     },
-    "isDefault": false,
     "number": 642,
     "hp": 79,
     "attack": 105,
@@ -22108,7 +21332,6 @@
       "zh-Hans": "莱希拉姆"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 643,
     "hp": 100,
     "attack": 120,
@@ -22134,7 +21357,6 @@
       "zh-Hans": "捷克罗姆"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 644,
     "hp": 100,
     "attack": 150,
@@ -22171,7 +21393,6 @@
       "ja": "けしんフォルム",
       "zh-Hans": "化身形态"
     },
-    "isDefault": true,
     "number": 645,
     "hp": 89,
     "attack": 125,
@@ -22208,7 +21429,6 @@
       "ja": "れいじゅうフォルム",
       "zh-Hans": "灵兽形态"
     },
-    "isDefault": false,
     "number": 645,
     "hp": 89,
     "attack": 145,
@@ -22245,7 +21465,6 @@
       "ja": "キュレムのすがた",
       "zh-Hans": "酋雷姆的样子"
     },
-    "isDefault": true,
     "number": 646,
     "hp": 125,
     "attack": 130,
@@ -22282,7 +21501,6 @@
       "ja": "ブラックキュレム",
       "zh-Hans": "暗黑酋雷姆"
     },
-    "isDefault": false,
     "number": 646,
     "hp": 125,
     "attack": 170,
@@ -22319,7 +21537,6 @@
       "ja": "ホワイトキュレム",
       "zh-Hans": "焰白酋雷姆"
     },
-    "isDefault": false,
     "number": 646,
     "hp": 125,
     "attack": 120,
@@ -22356,7 +21573,6 @@
       "ja": "いつものすがた",
       "zh-Hans": "平常的样子"
     },
-    "isDefault": true,
     "number": 647,
     "hp": 91,
     "attack": 72,
@@ -22393,7 +21609,6 @@
       "ja": "かくごのすがた",
       "zh-Hans": "觉悟的样子"
     },
-    "isDefault": false,
     "number": 647,
     "hp": 91,
     "attack": 72,
@@ -22430,7 +21645,6 @@
       "ja": "ボイスフォルム",
       "zh-Hans": "歌声形态"
     },
-    "isDefault": true,
     "number": 648,
     "hp": 100,
     "attack": 77,
@@ -22467,7 +21681,6 @@
       "ja": "ステップフォルム",
       "zh-Hans": "舞步形态"
     },
-    "isDefault": false,
     "number": 648,
     "hp": 100,
     "attack": 128,
@@ -22493,7 +21706,6 @@
       "zh-Hans": "盖诺赛克特"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 649,
     "hp": 71,
     "attack": 120,
@@ -22519,7 +21731,6 @@
       "zh-Hans": "哈力栗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 650,
     "hp": 56,
     "attack": 61,
@@ -22545,7 +21756,6 @@
       "zh-Hans": "胖胖哈力"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 651,
     "hp": 61,
     "attack": 78,
@@ -22571,7 +21781,6 @@
       "zh-Hans": "布里卡隆"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 652,
     "hp": 88,
     "attack": 107,
@@ -22597,7 +21806,6 @@
       "zh-Hans": "火狐狸"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 653,
     "hp": 40,
     "attack": 45,
@@ -22623,7 +21831,6 @@
       "zh-Hans": "长尾火狐"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 654,
     "hp": 59,
     "attack": 59,
@@ -22649,7 +21856,6 @@
       "zh-Hans": "妖火红狐"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 655,
     "hp": 75,
     "attack": 69,
@@ -22675,7 +21881,6 @@
       "zh-Hans": "呱呱泡蛙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 656,
     "hp": 41,
     "attack": 56,
@@ -22701,7 +21906,6 @@
       "zh-Hans": "呱头蛙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 657,
     "hp": 54,
     "attack": 63,
@@ -22727,7 +21931,6 @@
       "zh-Hans": "甲贺忍蛙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 658,
     "hp": 72,
     "attack": 95,
@@ -22753,7 +21956,6 @@
       "zh-Hans": "甲贺忍蛙"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 658,
     "hp": 72,
     "attack": 95,
@@ -22790,7 +21992,6 @@
       "ja": "サトシゲッコウガ",
       "zh-Hans": "小智版甲贺忍蛙"
     },
-    "isDefault": false,
     "number": 658,
     "hp": 72,
     "attack": 145,
@@ -22816,7 +22017,6 @@
       "zh-Hans": "掘掘兔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 659,
     "hp": 38,
     "attack": 36,
@@ -22842,7 +22042,6 @@
       "zh-Hans": "掘地兔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 660,
     "hp": 85,
     "attack": 56,
@@ -22868,7 +22067,6 @@
       "zh-Hans": "小箭雀"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 661,
     "hp": 45,
     "attack": 50,
@@ -22894,7 +22092,6 @@
       "zh-Hans": "火箭雀"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 662,
     "hp": 62,
     "attack": 73,
@@ -22920,7 +22117,6 @@
       "zh-Hans": "烈箭鹰"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 663,
     "hp": 78,
     "attack": 81,
@@ -22946,7 +22142,6 @@
       "zh-Hans": "粉蝶虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 664,
     "hp": 38,
     "attack": 35,
@@ -22972,7 +22167,6 @@
       "zh-Hans": "粉蝶蛹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 665,
     "hp": 45,
     "attack": 22,
@@ -23006,7 +22200,6 @@
       "it": "Motivo Giardinfiore",
       "en": "Meadow Pattern"
     },
-    "isDefault": true,
     "number": 666,
     "hp": 80,
     "attack": 52,
@@ -23032,7 +22225,6 @@
       "zh-Hans": "小狮狮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 667,
     "hp": 62,
     "attack": 50,
@@ -23058,7 +22250,6 @@
       "zh-Hans": "火炎狮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 668,
     "hp": 86,
     "attack": 68,
@@ -23092,7 +22283,6 @@
       "it": "Fiore Rosso",
       "en": "Red Flower"
     },
-    "isDefault": true,
     "number": 669,
     "hp": 44,
     "attack": 38,
@@ -23126,7 +22316,6 @@
       "it": "Fiore Rosso",
       "en": "Red Flower"
     },
-    "isDefault": true,
     "number": 670,
     "hp": 54,
     "attack": 45,
@@ -23160,7 +22349,6 @@
       "it": "Fiore Eterno",
       "en": "Eternal Flower"
     },
-    "isDefault": false,
     "number": 670,
     "hp": 74,
     "attack": 65,
@@ -23194,7 +22382,6 @@
       "it": "Fiore Rosso",
       "en": "Red Flower"
     },
-    "isDefault": true,
     "number": 671,
     "hp": 78,
     "attack": 65,
@@ -23220,7 +22407,6 @@
       "zh-Hans": "坐骑小羊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 672,
     "hp": 66,
     "attack": 65,
@@ -23246,7 +22432,6 @@
       "zh-Hans": "坐骑山羊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 673,
     "hp": 123,
     "attack": 100,
@@ -23272,7 +22457,6 @@
       "zh-Hans": "顽皮熊猫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 674,
     "hp": 67,
     "attack": 82,
@@ -23298,7 +22482,6 @@
       "zh-Hans": "流氓熊猫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 675,
     "hp": 95,
     "attack": 124,
@@ -23332,7 +22515,6 @@
       "it": "Forma Selvatica",
       "en": "Natural Form"
     },
-    "isDefault": true,
     "number": 676,
     "hp": 75,
     "attack": 80,
@@ -23358,7 +22540,6 @@
       "zh-Hans": "妙喵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 677,
     "hp": 62,
     "attack": 48,
@@ -23395,7 +22576,6 @@
       "ja": "オスのすがた",
       "zh-Hans": "雄性的样子"
     },
-    "isDefault": true,
     "number": 678,
     "hp": 74,
     "attack": 48,
@@ -23432,7 +22612,6 @@
       "ja": "メスのすがた",
       "zh-Hans": "雌性的样子"
     },
-    "isDefault": false,
     "number": 678,
     "hp": 74,
     "attack": 48,
@@ -23458,7 +22637,6 @@
       "zh-Hans": "独剑鞘"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 679,
     "hp": 45,
     "attack": 80,
@@ -23484,7 +22662,6 @@
       "zh-Hans": "双剑鞘"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 680,
     "hp": 59,
     "attack": 110,
@@ -23521,7 +22698,6 @@
       "ja": "シールドフォルム",
       "zh-Hans": "盾牌形态"
     },
-    "isDefault": true,
     "number": 681,
     "hp": 60,
     "attack": 50,
@@ -23558,7 +22734,6 @@
       "ja": "ブレードフォルム",
       "zh-Hans": "刀剑形态"
     },
-    "isDefault": false,
     "number": 681,
     "hp": 60,
     "attack": 140,
@@ -23584,7 +22759,6 @@
       "zh-Hans": "粉香香"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 682,
     "hp": 78,
     "attack": 52,
@@ -23610,7 +22784,6 @@
       "zh-Hans": "芳香精"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 683,
     "hp": 101,
     "attack": 72,
@@ -23636,7 +22809,6 @@
       "zh-Hans": "绵绵泡芙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 684,
     "hp": 62,
     "attack": 48,
@@ -23662,7 +22834,6 @@
       "zh-Hans": "胖甜妮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 685,
     "hp": 82,
     "attack": 80,
@@ -23688,7 +22859,6 @@
       "zh-Hans": "好啦鱿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 686,
     "hp": 53,
     "attack": 54,
@@ -23714,7 +22884,6 @@
       "zh-Hans": "乌贼王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 687,
     "hp": 86,
     "attack": 92,
@@ -23740,7 +22909,6 @@
       "zh-Hans": "龟脚脚"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 688,
     "hp": 42,
     "attack": 52,
@@ -23766,7 +22934,6 @@
       "zh-Hans": "龟足巨铠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 689,
     "hp": 72,
     "attack": 105,
@@ -23792,7 +22959,6 @@
       "zh-Hans": "垃垃藻"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 690,
     "hp": 50,
     "attack": 60,
@@ -23818,7 +22984,6 @@
       "zh-Hans": "毒藻龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 691,
     "hp": 65,
     "attack": 75,
@@ -23844,7 +23009,6 @@
       "zh-Hans": "铁臂枪虾"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 692,
     "hp": 50,
     "attack": 53,
@@ -23870,7 +23034,6 @@
       "zh-Hans": "钢炮臂虾"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 693,
     "hp": 71,
     "attack": 73,
@@ -23896,7 +23059,6 @@
       "zh-Hans": "伞电蜥"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 694,
     "hp": 44,
     "attack": 38,
@@ -23922,7 +23084,6 @@
       "zh-Hans": "光电伞蜥"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 695,
     "hp": 62,
     "attack": 55,
@@ -23948,7 +23109,6 @@
       "zh-Hans": "宝宝暴龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 696,
     "hp": 58,
     "attack": 89,
@@ -23974,7 +23134,6 @@
       "zh-Hans": "怪颚龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 697,
     "hp": 82,
     "attack": 121,
@@ -24000,7 +23159,6 @@
       "zh-Hans": "冰雪龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 698,
     "hp": 77,
     "attack": 59,
@@ -24026,7 +23184,6 @@
       "zh-Hans": "冰雪巨龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 699,
     "hp": 123,
     "attack": 77,
@@ -24052,7 +23209,6 @@
       "zh-Hans": "仙子伊布"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 700,
     "hp": 95,
     "attack": 65,
@@ -24078,7 +23234,6 @@
       "zh-Hans": "摔角鹰人"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 701,
     "hp": 78,
     "attack": 92,
@@ -24104,7 +23259,6 @@
       "zh-Hans": "咚咚鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 702,
     "hp": 67,
     "attack": 58,
@@ -24130,7 +23284,6 @@
       "zh-Hans": "小碎钻"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 703,
     "hp": 50,
     "attack": 50,
@@ -24156,7 +23309,6 @@
       "zh-Hans": "黏黏宝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 704,
     "hp": 45,
     "attack": 50,
@@ -24182,7 +23334,6 @@
       "zh-Hans": "黏美儿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 705,
     "hp": 68,
     "attack": 75,
@@ -24208,7 +23359,6 @@
       "zh-Hans": "黏美龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 706,
     "hp": 90,
     "attack": 100,
@@ -24234,7 +23384,6 @@
       "zh-Hans": "钥圈儿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 707,
     "hp": 57,
     "attack": 80,
@@ -24260,7 +23409,6 @@
       "zh-Hans": "小木灵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 708,
     "hp": 43,
     "attack": 70,
@@ -24286,7 +23434,6 @@
       "zh-Hans": "朽木妖"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 709,
     "hp": 85,
     "attack": 110,
@@ -24323,7 +23470,6 @@
       "ja": "ふつうのサイズ",
       "zh-Hans": "普通尺寸"
     },
-    "isDefault": true,
     "number": 710,
     "hp": 49,
     "attack": 66,
@@ -24360,7 +23506,6 @@
       "ja": "ちいさいサイズ",
       "zh-Hans": "小尺寸"
     },
-    "isDefault": false,
     "number": 710,
     "hp": 44,
     "attack": 66,
@@ -24397,7 +23542,6 @@
       "ja": "おおきいサイズ",
       "zh-Hans": "大尺寸"
     },
-    "isDefault": false,
     "number": 710,
     "hp": 54,
     "attack": 66,
@@ -24434,7 +23578,6 @@
       "ja": "とくだいサイズ",
       "zh-Hans": "特大尺寸"
     },
-    "isDefault": false,
     "number": 710,
     "hp": 59,
     "attack": 66,
@@ -24471,7 +23614,6 @@
       "ja": "ふつうのサイズ",
       "zh-Hans": "普通尺寸"
     },
-    "isDefault": true,
     "number": 711,
     "hp": 65,
     "attack": 90,
@@ -24508,7 +23650,6 @@
       "ja": "ちいさいサイズ",
       "zh-Hans": "小尺寸"
     },
-    "isDefault": false,
     "number": 711,
     "hp": 55,
     "attack": 85,
@@ -24545,7 +23686,6 @@
       "ja": "おおきいサイズ",
       "zh-Hans": "大尺寸"
     },
-    "isDefault": false,
     "number": 711,
     "hp": 75,
     "attack": 95,
@@ -24582,7 +23722,6 @@
       "ja": "とくだいサイズ",
       "zh-Hans": "特大尺寸"
     },
-    "isDefault": false,
     "number": 711,
     "hp": 85,
     "attack": 100,
@@ -24608,7 +23747,6 @@
       "zh-Hans": "冰宝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 712,
     "hp": 55,
     "attack": 69,
@@ -24634,7 +23772,6 @@
       "zh-Hans": "冰岩怪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 713,
     "hp": 95,
     "attack": 117,
@@ -24660,7 +23797,6 @@
       "zh-Hans": "嗡蝠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 714,
     "hp": 40,
     "attack": 30,
@@ -24686,7 +23822,6 @@
       "zh-Hans": "音波龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 715,
     "hp": 85,
     "attack": 70,
@@ -24720,7 +23855,6 @@
       "it": "Modo Attivo",
       "en": "Active Mode"
     },
-    "isDefault": true,
     "number": 716,
     "hp": 126,
     "attack": 131,
@@ -24746,7 +23880,6 @@
       "zh-Hans": "伊裴尔塔尔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 717,
     "hp": 126,
     "attack": 131,
@@ -24783,7 +23916,6 @@
       "ja": "５０％フォルム",
       "zh-Hans": "５０％形态"
     },
-    "isDefault": true,
     "number": 718,
     "hp": 108,
     "attack": 100,
@@ -24820,7 +23952,6 @@
       "ja": "１０％フォルム",
       "zh-Hans": "１０％形态"
     },
-    "isDefault": false,
     "number": 718,
     "hp": 54,
     "attack": 100,
@@ -24857,7 +23988,6 @@
       "ja": "５０％フォルム",
       "zh-Hans": "５０％形态"
     },
-    "isDefault": false,
     "number": 718,
     "hp": 108,
     "attack": 100,
@@ -24894,7 +24024,6 @@
       "ja": "パーフェクトフォルム",
       "zh-Hans": "完全体形态"
     },
-    "isDefault": false,
     "number": 718,
     "hp": 216,
     "attack": 100,
@@ -24920,7 +24049,6 @@
       "zh-Hans": "蒂安希"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 719,
     "hp": 50,
     "attack": 100,
@@ -24957,7 +24085,6 @@
       "ja": "メガディアンシー",
       "zh-Hans": "超级蒂安希"
     },
-    "isDefault": false,
     "number": 719,
     "hp": 50,
     "attack": 160,
@@ -24994,7 +24121,6 @@
       "ja": "いましめられしフーパ",
       "zh-Hans": "惩戒胡帕"
     },
-    "isDefault": true,
     "number": 720,
     "hp": 80,
     "attack": 110,
@@ -25031,7 +24157,6 @@
       "ja": "ときはなたれしフーパ",
       "zh-Hans": "解放胡帕"
     },
-    "isDefault": false,
     "number": 720,
     "hp": 80,
     "attack": 160,
@@ -25057,7 +24182,6 @@
       "zh-Hans": "波尔凯尼恩"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 721,
     "hp": 80,
     "attack": 110,
@@ -25083,7 +24207,6 @@
       "zh-Hans": "木木枭"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 722,
     "hp": 68,
     "attack": 55,
@@ -25109,7 +24232,6 @@
       "zh-Hans": "投羽枭"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 723,
     "hp": 78,
     "attack": 75,
@@ -25135,7 +24257,6 @@
       "zh-Hans": "狙射树枭"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 724,
     "hp": 78,
     "attack": 107,
@@ -25161,7 +24282,6 @@
       "zh-Hans": "火斑喵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 725,
     "hp": 45,
     "attack": 65,
@@ -25187,7 +24307,6 @@
       "zh-Hans": "炎热喵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 726,
     "hp": 65,
     "attack": 85,
@@ -25213,7 +24332,6 @@
       "zh-Hans": "炽焰咆哮虎"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 727,
     "hp": 95,
     "attack": 115,
@@ -25239,7 +24357,6 @@
       "zh-Hans": "球球海狮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 728,
     "hp": 50,
     "attack": 54,
@@ -25265,7 +24382,6 @@
       "zh-Hans": "花漾海狮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 729,
     "hp": 60,
     "attack": 69,
@@ -25291,7 +24407,6 @@
       "zh-Hans": "西狮海壬"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 730,
     "hp": 80,
     "attack": 74,
@@ -25317,7 +24432,6 @@
       "zh-Hans": "小笃儿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 731,
     "hp": 35,
     "attack": 75,
@@ -25343,7 +24457,6 @@
       "zh-Hans": "喇叭啄鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 732,
     "hp": 55,
     "attack": 85,
@@ -25369,7 +24482,6 @@
       "zh-Hans": "铳嘴大鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 733,
     "hp": 80,
     "attack": 120,
@@ -25395,7 +24507,6 @@
       "zh-Hans": "猫鼬少"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 734,
     "hp": 48,
     "attack": 70,
@@ -25421,7 +24532,6 @@
       "zh-Hans": "猫鼬探长"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 735,
     "hp": 88,
     "attack": 110,
@@ -25447,7 +24557,6 @@
       "zh-Hans": "猫鼬探长"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 735,
     "hp": 88,
     "attack": 110,
@@ -25473,7 +24582,6 @@
       "zh-Hans": "强颚鸡母虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 736,
     "hp": 47,
     "attack": 62,
@@ -25499,7 +24607,6 @@
       "zh-Hans": "虫电宝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 737,
     "hp": 57,
     "attack": 82,
@@ -25525,7 +24632,6 @@
       "zh-Hans": "锹农炮虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 738,
     "hp": 77,
     "attack": 70,
@@ -25551,7 +24657,6 @@
       "zh-Hans": "锹农炮虫"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 738,
     "hp": 77,
     "attack": 70,
@@ -25577,7 +24682,6 @@
       "zh-Hans": "好胜蟹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 739,
     "hp": 47,
     "attack": 82,
@@ -25603,7 +24707,6 @@
       "zh-Hans": "好胜毛蟹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 740,
     "hp": 97,
     "attack": 132,
@@ -25640,7 +24743,6 @@
       "ja": "めらめらスタイル",
       "zh-Hans": "热辣热辣风格"
     },
-    "isDefault": true,
     "number": 741,
     "hp": 75,
     "attack": 70,
@@ -25677,7 +24779,6 @@
       "ja": "ぱちぱちスタイル",
       "zh-Hans": "啪滋啪滋风格"
     },
-    "isDefault": false,
     "number": 741,
     "hp": 75,
     "attack": 70,
@@ -25714,7 +24815,6 @@
       "ja": "ふらふらスタイル",
       "zh-Hans": "呼拉呼拉风格"
     },
-    "isDefault": false,
     "number": 741,
     "hp": 75,
     "attack": 70,
@@ -25751,7 +24851,6 @@
       "ja": "まいまいスタイル",
       "zh-Hans": "轻盈轻盈风格"
     },
-    "isDefault": false,
     "number": 741,
     "hp": 75,
     "attack": 70,
@@ -25777,7 +24876,6 @@
       "zh-Hans": "萌虻"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 742,
     "hp": 40,
     "attack": 45,
@@ -25803,7 +24901,6 @@
       "zh-Hans": "蝶结萌虻"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 743,
     "hp": 60,
     "attack": 55,
@@ -25829,7 +24926,6 @@
       "zh-Hans": "蝶结萌虻"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 743,
     "hp": 60,
     "attack": 55,
@@ -25855,7 +24951,6 @@
       "zh-Hans": "岩狗狗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 744,
     "hp": 45,
     "attack": 65,
@@ -25881,7 +24976,6 @@
       "zh-Hans": "岩狗狗"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 744,
     "hp": 45,
     "attack": 65,
@@ -25918,7 +25012,6 @@
       "ja": "まひるのすがた",
       "zh-Hans": "白昼的样子"
     },
-    "isDefault": true,
     "number": 745,
     "hp": 75,
     "attack": 115,
@@ -25955,7 +25048,6 @@
       "ja": "まよなかのすがた",
       "zh-Hans": "黑夜的样子"
     },
-    "isDefault": false,
     "number": 745,
     "hp": 85,
     "attack": 115,
@@ -25992,7 +25084,6 @@
       "ja": "たそがれのすがた",
       "zh-Hans": "黄昏的样子"
     },
-    "isDefault": false,
     "number": 745,
     "hp": 75,
     "attack": 117,
@@ -26029,7 +25120,6 @@
       "ja": "たんどくのすがた",
       "zh-Hans": "单独的样子"
     },
-    "isDefault": true,
     "number": 746,
     "hp": 45,
     "attack": 20,
@@ -26066,7 +25156,6 @@
       "ja": "むれたすがた",
       "zh-Hans": "鱼群的样子"
     },
-    "isDefault": false,
     "number": 746,
     "hp": 45,
     "attack": 140,
@@ -26092,7 +25181,6 @@
       "zh-Hans": "好坏星"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 747,
     "hp": 50,
     "attack": 53,
@@ -26118,7 +25206,6 @@
       "zh-Hans": "超坏星"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 748,
     "hp": 50,
     "attack": 63,
@@ -26144,7 +25231,6 @@
       "zh-Hans": "泥驴仔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 749,
     "hp": 70,
     "attack": 100,
@@ -26170,7 +25256,6 @@
       "zh-Hans": "重泥挽马"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 750,
     "hp": 100,
     "attack": 125,
@@ -26196,7 +25281,6 @@
       "zh-Hans": "滴蛛"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 751,
     "hp": 38,
     "attack": 40,
@@ -26222,7 +25306,6 @@
       "zh-Hans": "滴蛛霸"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 752,
     "hp": 68,
     "attack": 70,
@@ -26248,7 +25331,6 @@
       "zh-Hans": "滴蛛霸"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 752,
     "hp": 68,
     "attack": 70,
@@ -26274,7 +25356,6 @@
       "zh-Hans": "伪螳草"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 753,
     "hp": 40,
     "attack": 55,
@@ -26300,7 +25381,6 @@
       "zh-Hans": "兰螳花"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 754,
     "hp": 70,
     "attack": 105,
@@ -26326,7 +25406,6 @@
       "zh-Hans": "兰螳花"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 754,
     "hp": 70,
     "attack": 105,
@@ -26352,7 +25431,6 @@
       "zh-Hans": "睡睡菇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 755,
     "hp": 40,
     "attack": 35,
@@ -26378,7 +25456,6 @@
       "zh-Hans": "灯罩夜菇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 756,
     "hp": 60,
     "attack": 45,
@@ -26404,7 +25481,6 @@
       "zh-Hans": "夜盗火蜥"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 757,
     "hp": 48,
     "attack": 44,
@@ -26430,7 +25506,6 @@
       "zh-Hans": "焰后蜥"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 758,
     "hp": 68,
     "attack": 64,
@@ -26456,7 +25531,6 @@
       "zh-Hans": "焰后蜥"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 758,
     "hp": 68,
     "attack": 64,
@@ -26482,7 +25556,6 @@
       "zh-Hans": "童偶熊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 759,
     "hp": 70,
     "attack": 75,
@@ -26508,7 +25581,6 @@
       "zh-Hans": "穿着熊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 760,
     "hp": 120,
     "attack": 125,
@@ -26534,7 +25606,6 @@
       "zh-Hans": "甜竹竹"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 761,
     "hp": 42,
     "attack": 30,
@@ -26560,7 +25631,6 @@
       "zh-Hans": "甜舞妮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 762,
     "hp": 52,
     "attack": 40,
@@ -26586,7 +25656,6 @@
       "zh-Hans": "甜冷美后"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 763,
     "hp": 72,
     "attack": 120,
@@ -26612,7 +25681,6 @@
       "zh-Hans": "花疗环环"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 764,
     "hp": 51,
     "attack": 52,
@@ -26638,7 +25706,6 @@
       "zh-Hans": "智挥猩"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 765,
     "hp": 90,
     "attack": 60,
@@ -26664,7 +25731,6 @@
       "zh-Hans": "投掷猴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 766,
     "hp": 100,
     "attack": 120,
@@ -26690,7 +25756,6 @@
       "zh-Hans": "胆小虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 767,
     "hp": 25,
     "attack": 35,
@@ -26716,7 +25781,6 @@
       "zh-Hans": "具甲武者"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 768,
     "hp": 75,
     "attack": 125,
@@ -26742,7 +25806,6 @@
       "zh-Hans": "沙丘娃"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 769,
     "hp": 55,
     "attack": 55,
@@ -26768,7 +25831,6 @@
       "zh-Hans": "噬沙堡爷"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 770,
     "hp": 85,
     "attack": 75,
@@ -26794,7 +25856,6 @@
       "zh-Hans": "拳海参"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 771,
     "hp": 55,
     "attack": 60,
@@ -26820,7 +25881,6 @@
       "zh-Hans": "属性：空"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 772,
     "hp": 95,
     "attack": 95,
@@ -26846,7 +25906,6 @@
       "zh-Hans": "银伴战兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 773,
     "hp": 95,
     "attack": 95,
@@ -26883,7 +25942,6 @@
       "ja": "りゅうせいのすがた",
       "zh-Hans": "流星的样子"
     },
-    "isDefault": true,
     "number": 774,
     "hp": 60,
     "attack": 60,
@@ -26920,7 +25978,6 @@
       "ja": "りゅうせいのすがた",
       "zh-Hans": "流星的样子"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 60,
@@ -26957,7 +26014,6 @@
       "ja": "りゅうせいのすがた",
       "zh-Hans": "流星的样子"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 60,
@@ -26994,7 +26050,6 @@
       "ja": "りゅうせいのすがた",
       "zh-Hans": "流星的样子"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 60,
@@ -27031,7 +26086,6 @@
       "ja": "りゅうせいのすがた",
       "zh-Hans": "流星的样子"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 60,
@@ -27068,7 +26122,6 @@
       "ja": "りゅうせいのすがた",
       "zh-Hans": "流星的样子"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 60,
@@ -27105,7 +26158,6 @@
       "ja": "りゅうせいのすがた",
       "zh-Hans": "流星的样子"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 60,
@@ -27142,7 +26194,6 @@
       "ja": "あかいろのコア",
       "zh-Hans": "红色核心"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 100,
@@ -27179,7 +26230,6 @@
       "ja": "だいだいいろのコア",
       "zh-Hans": "橙色核心"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 100,
@@ -27216,7 +26266,6 @@
       "ja": "きいろのコア",
       "zh-Hans": "黄色核心"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 100,
@@ -27253,7 +26302,6 @@
       "ja": "みどりいろのコア",
       "zh-Hans": "绿色核心"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 100,
@@ -27290,7 +26338,6 @@
       "ja": "みずいろのコア",
       "zh-Hans": "浅蓝色核心"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 100,
@@ -27327,7 +26374,6 @@
       "ja": "あおいろのコア",
       "zh-Hans": "蓝色核心"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 100,
@@ -27364,7 +26410,6 @@
       "ja": "むらさきいろのコア",
       "zh-Hans": "紫色核心"
     },
-    "isDefault": false,
     "number": 774,
     "hp": 60,
     "attack": 100,
@@ -27390,7 +26435,6 @@
       "zh-Hans": "树枕尾熊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 775,
     "hp": 65,
     "attack": 115,
@@ -27416,7 +26460,6 @@
       "zh-Hans": "爆焰龟兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 776,
     "hp": 60,
     "attack": 78,
@@ -27442,7 +26485,6 @@
       "zh-Hans": "托戈德玛尔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 777,
     "hp": 65,
     "attack": 98,
@@ -27468,7 +26510,6 @@
       "zh-Hans": "托戈德玛尔"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 777,
     "hp": 65,
     "attack": 98,
@@ -27505,7 +26546,6 @@
       "ja": "ばけたすがた",
       "zh-Hans": "化形的样子"
     },
-    "isDefault": true,
     "number": 778,
     "hp": 55,
     "attack": 90,
@@ -27542,7 +26582,6 @@
       "ja": "ばれたすがた",
       "zh-Hans": "现形的样子"
     },
-    "isDefault": false,
     "number": 778,
     "hp": 55,
     "attack": 90,
@@ -27568,7 +26607,6 @@
       "zh-Hans": "谜拟Ｑ"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 778,
     "hp": 55,
     "attack": 90,
@@ -27594,7 +26632,6 @@
       "zh-Hans": "谜拟Ｑ"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 778,
     "hp": 55,
     "attack": 90,
@@ -27620,7 +26657,6 @@
       "zh-Hans": "磨牙彩皮鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 779,
     "hp": 68,
     "attack": 105,
@@ -27646,7 +26682,6 @@
       "zh-Hans": "老翁龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 780,
     "hp": 78,
     "attack": 60,
@@ -27672,7 +26707,6 @@
       "zh-Hans": "破破舵轮"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 781,
     "hp": 70,
     "attack": 131,
@@ -27698,7 +26732,6 @@
       "zh-Hans": "心鳞宝"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 782,
     "hp": 45,
     "attack": 55,
@@ -27724,7 +26757,6 @@
       "zh-Hans": "鳞甲龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 783,
     "hp": 55,
     "attack": 75,
@@ -27750,7 +26782,6 @@
       "zh-Hans": "杖尾鳞甲龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 784,
     "hp": 75,
     "attack": 110,
@@ -27776,7 +26807,6 @@
       "zh-Hans": "杖尾鳞甲龙"
     },
     "formNames": {},
-    "isDefault": false,
     "number": 784,
     "hp": 75,
     "attack": 110,
@@ -27802,7 +26832,6 @@
       "zh-Hans": "卡璞・鸣鸣"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 785,
     "hp": 70,
     "attack": 115,
@@ -27828,7 +26857,6 @@
       "zh-Hans": "卡璞・蝶蝶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 786,
     "hp": 70,
     "attack": 85,
@@ -27854,7 +26882,6 @@
       "zh-Hans": "卡璞・哞哞"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 787,
     "hp": 70,
     "attack": 130,
@@ -27880,7 +26907,6 @@
       "zh-Hans": "卡璞・鳍鳍"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 788,
     "hp": 70,
     "attack": 75,
@@ -27906,7 +26932,6 @@
       "zh-Hans": "科斯莫古"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 789,
     "hp": 43,
     "attack": 29,
@@ -27932,7 +26957,6 @@
       "zh-Hans": "科斯莫姆"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 790,
     "hp": 43,
     "attack": 29,
@@ -27958,7 +26982,6 @@
       "zh-Hans": "索尔迦雷欧"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 791,
     "hp": 137,
     "attack": 137,
@@ -27984,7 +27007,6 @@
       "zh-Hans": "露奈雅拉"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 792,
     "hp": 137,
     "attack": 113,
@@ -28010,7 +27032,6 @@
       "zh-Hans": "虛吾伊德"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 793,
     "hp": 109,
     "attack": 53,
@@ -28036,7 +27057,6 @@
       "zh-Hans": "爆肌蚊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 794,
     "hp": 107,
     "attack": 139,
@@ -28062,7 +27082,6 @@
       "zh-Hans": "费洛美螂"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 795,
     "hp": 71,
     "attack": 137,
@@ -28088,7 +27107,6 @@
       "zh-Hans": "电束木"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 796,
     "hp": 83,
     "attack": 89,
@@ -28114,7 +27132,6 @@
       "zh-Hans": "铁火辉夜"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 797,
     "hp": 97,
     "attack": 101,
@@ -28140,7 +27157,6 @@
       "zh-Hans": "纸御剑"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 798,
     "hp": 59,
     "attack": 181,
@@ -28166,7 +27182,6 @@
       "zh-Hans": "恶食大王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 799,
     "hp": 223,
     "attack": 101,
@@ -28192,7 +27207,6 @@
       "zh-Hans": "奈克洛兹玛"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 800,
     "hp": 97,
     "attack": 107,
@@ -28229,7 +27243,6 @@
       "ja": "たそがれのたてがみ",
       "zh-Hans": "黄昏之鬃"
     },
-    "isDefault": false,
     "number": 800,
     "hp": 97,
     "attack": 157,
@@ -28266,7 +27279,6 @@
       "ja": "あかつきのつばさ",
       "zh-Hans": "拂晓之翼"
     },
-    "isDefault": false,
     "number": 800,
     "hp": 97,
     "attack": 113,
@@ -28303,7 +27315,6 @@
       "ja": "ウルトラネクロズマ",
       "zh-Hans": "究极奈克洛兹玛"
     },
-    "isDefault": false,
     "number": 800,
     "hp": 97,
     "attack": 167,
@@ -28329,7 +27340,6 @@
       "zh-Hans": "玛机雅娜"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 801,
     "hp": 80,
     "attack": 95,
@@ -28366,7 +27376,6 @@
       "ja": "５００ねんまえのいろ",
       "zh-Hans": "５００年前的颜色"
     },
-    "isDefault": false,
     "number": 801,
     "hp": 80,
     "attack": 95,
@@ -28392,7 +27401,6 @@
       "zh-Hans": "玛夏多"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 802,
     "hp": 90,
     "attack": 125,
@@ -28418,7 +27426,6 @@
       "zh-Hans": "毒贝比"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 803,
     "hp": 67,
     "attack": 73,
@@ -28444,7 +27451,6 @@
       "zh-Hans": "四颚针龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 804,
     "hp": 73,
     "attack": 73,
@@ -28470,7 +27476,6 @@
       "zh-Hans": "垒磊石"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 805,
     "hp": 61,
     "attack": 131,
@@ -28496,7 +27501,6 @@
       "zh-Hans": "砰头小丑"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 806,
     "hp": 53,
     "attack": 127,
@@ -28522,7 +27526,6 @@
       "zh-Hans": "捷拉奥拉"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 807,
     "hp": 88,
     "attack": 112,
@@ -28548,7 +27551,6 @@
       "zh-Hans": "美录坦"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 808,
     "hp": 46,
     "attack": 65,
@@ -28574,7 +27576,6 @@
       "zh-Hans": "美录梅塔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 809,
     "hp": 135,
     "attack": 143,
@@ -28602,7 +27603,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 809,
     "hp": 135,
     "attack": 143,
@@ -28628,7 +27628,6 @@
       "zh-Hans": "敲音猴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 810,
     "hp": 50,
     "attack": 65,
@@ -28654,7 +27653,6 @@
       "zh-Hans": "啪咚猴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 811,
     "hp": 70,
     "attack": 85,
@@ -28680,7 +27678,6 @@
       "zh-Hans": "轰擂金刚猩"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 812,
     "hp": 100,
     "attack": 125,
@@ -28708,7 +27705,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 812,
     "hp": 100,
     "attack": 125,
@@ -28734,7 +27730,6 @@
       "zh-Hans": "炎兔儿"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 813,
     "hp": 50,
     "attack": 71,
@@ -28760,7 +27755,6 @@
       "zh-Hans": "腾蹴小将"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 814,
     "hp": 65,
     "attack": 86,
@@ -28786,7 +27780,6 @@
       "zh-Hans": "闪焰王牌"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 815,
     "hp": 80,
     "attack": 116,
@@ -28814,7 +27807,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 815,
     "hp": 80,
     "attack": 116,
@@ -28840,7 +27832,6 @@
       "zh-Hans": "泪眼蜥"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 816,
     "hp": 50,
     "attack": 40,
@@ -28866,7 +27857,6 @@
       "zh-Hans": "变涩蜥"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 817,
     "hp": 65,
     "attack": 60,
@@ -28892,7 +27882,6 @@
       "zh-Hans": "千面避役"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 818,
     "hp": 70,
     "attack": 85,
@@ -28920,7 +27909,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 818,
     "hp": 70,
     "attack": 85,
@@ -28946,7 +27934,6 @@
       "zh-Hans": "贪心栗鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 819,
     "hp": 70,
     "attack": 55,
@@ -28972,7 +27959,6 @@
       "zh-Hans": "藏饱栗鼠"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 820,
     "hp": 120,
     "attack": 95,
@@ -28998,7 +27984,6 @@
       "zh-Hans": "稚山雀"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 821,
     "hp": 38,
     "attack": 47,
@@ -29024,7 +28009,6 @@
       "zh-Hans": "蓝鸦"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 822,
     "hp": 68,
     "attack": 67,
@@ -29050,7 +28034,6 @@
       "zh-Hans": "钢铠鸦"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 823,
     "hp": 98,
     "attack": 87,
@@ -29078,7 +28061,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 823,
     "hp": 98,
     "attack": 87,
@@ -29104,7 +28086,6 @@
       "zh-Hans": "索侦虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 824,
     "hp": 25,
     "attack": 20,
@@ -29130,7 +28111,6 @@
       "zh-Hans": "天罩虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 825,
     "hp": 50,
     "attack": 35,
@@ -29156,7 +28136,6 @@
       "zh-Hans": "以欧路普"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 826,
     "hp": 60,
     "attack": 45,
@@ -29184,7 +28163,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 826,
     "hp": 60,
     "attack": 45,
@@ -29210,7 +28188,6 @@
       "zh-Hans": "偷儿狐"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 827,
     "hp": 40,
     "attack": 28,
@@ -29236,7 +28213,6 @@
       "zh-Hans": "狐大盗"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 828,
     "hp": 70,
     "attack": 58,
@@ -29262,7 +28238,6 @@
       "zh-Hans": "幼棉棉"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 829,
     "hp": 40,
     "attack": 40,
@@ -29288,7 +28263,6 @@
       "zh-Hans": "白蓬蓬"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 830,
     "hp": 60,
     "attack": 50,
@@ -29314,7 +28288,6 @@
       "zh-Hans": "毛辫羊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 831,
     "hp": 42,
     "attack": 40,
@@ -29340,7 +28313,6 @@
       "zh-Hans": "毛毛角羊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 832,
     "hp": 72,
     "attack": 80,
@@ -29366,7 +28338,6 @@
       "zh-Hans": "咬咬龟 "
     },
     "formNames": {},
-    "isDefault": true,
     "number": 833,
     "hp": 50,
     "attack": 64,
@@ -29392,7 +28363,6 @@
       "zh-Hans": "暴噬龟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 834,
     "hp": 90,
     "attack": 115,
@@ -29420,7 +28390,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 834,
     "hp": 90,
     "attack": 115,
@@ -29446,7 +28415,6 @@
       "zh-Hans": "来电汪"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 835,
     "hp": 59,
     "attack": 45,
@@ -29472,7 +28440,6 @@
       "zh-Hans": "逐电犬"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 836,
     "hp": 69,
     "attack": 90,
@@ -29498,7 +28465,6 @@
       "zh-Hans": "小炭仔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 837,
     "hp": 30,
     "attack": 40,
@@ -29524,7 +28490,6 @@
       "zh-Hans": "大炭车"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 838,
     "hp": 80,
     "attack": 60,
@@ -29550,7 +28515,6 @@
       "zh-Hans": "巨炭山"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 839,
     "hp": 110,
     "attack": 80,
@@ -29578,7 +28542,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 839,
     "hp": 110,
     "attack": 80,
@@ -29604,7 +28567,6 @@
       "zh-Hans": "啃果虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 840,
     "hp": 40,
     "attack": 40,
@@ -29630,7 +28592,6 @@
       "zh-Hans": "苹裹龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 841,
     "hp": 70,
     "attack": 110,
@@ -29658,7 +28619,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 841,
     "hp": 70,
     "attack": 110,
@@ -29684,7 +28644,6 @@
       "zh-Hans": "丰蜜龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 842,
     "hp": 110,
     "attack": 85,
@@ -29712,7 +28671,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 842,
     "hp": 110,
     "attack": 85,
@@ -29738,7 +28696,6 @@
       "zh-Hans": "沙包蛇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 843,
     "hp": 52,
     "attack": 57,
@@ -29764,7 +28721,6 @@
       "zh-Hans": "沙螺蟒"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 844,
     "hp": 72,
     "attack": 107,
@@ -29792,7 +28748,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 844,
     "hp": 72,
     "attack": 107,
@@ -29818,7 +28773,6 @@
       "zh-Hans": "古月鸟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 845,
     "hp": 70,
     "attack": 85,
@@ -29844,7 +28798,6 @@
       "zh-Hans": "刺梭鱼"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 846,
     "hp": 41,
     "attack": 63,
@@ -29870,7 +28823,6 @@
       "zh-Hans": "戽斗尖梭"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 847,
     "hp": 61,
     "attack": 123,
@@ -29896,7 +28848,6 @@
       "zh-Hans": "毒电婴"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 848,
     "hp": 40,
     "attack": 38,
@@ -29924,7 +28875,6 @@
     "formNames": {
       "en": "Amped Form"
     },
-    "isDefault": true,
     "number": 849,
     "hp": 75,
     "attack": 98,
@@ -29952,7 +28902,6 @@
     "formNames": {
       "en": "Low Key Form"
     },
-    "isDefault": false,
     "number": 849,
     "hp": 75,
     "attack": 98,
@@ -29980,7 +28929,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 849,
     "hp": 75,
     "attack": 98,
@@ -30008,7 +28956,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 849,
     "hp": 75,
     "attack": 98,
@@ -30034,7 +28981,6 @@
       "zh-Hans": "烧火蚣"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 850,
     "hp": 50,
     "attack": 65,
@@ -30060,7 +29006,6 @@
       "zh-Hans": "焚焰蚣"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 851,
     "hp": 100,
     "attack": 115,
@@ -30088,7 +29033,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 851,
     "hp": 100,
     "attack": 115,
@@ -30114,7 +29058,6 @@
       "zh-Hans": "拳拳蛸"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 852,
     "hp": 50,
     "attack": 68,
@@ -30140,7 +29083,6 @@
       "zh-Hans": "八爪武师"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 853,
     "hp": 80,
     "attack": 118,
@@ -30168,7 +29110,6 @@
     "formNames": {
       "en": "Phony Form"
     },
-    "isDefault": true,
     "number": 854,
     "hp": 40,
     "attack": 45,
@@ -30196,7 +29137,6 @@
     "formNames": {
       "en": "Phony Form"
     },
-    "isDefault": true,
     "number": 855,
     "hp": 60,
     "attack": 65,
@@ -30222,7 +29162,6 @@
       "zh-Hans": "迷布莉姆"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 856,
     "hp": 42,
     "attack": 30,
@@ -30248,7 +29187,6 @@
       "zh-Hans": "提布莉姆"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 857,
     "hp": 57,
     "attack": 40,
@@ -30274,7 +29212,6 @@
       "zh-Hans": "布莉姆温"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 858,
     "hp": 57,
     "attack": 90,
@@ -30302,7 +29239,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 858,
     "hp": 57,
     "attack": 90,
@@ -30328,7 +29264,6 @@
       "zh-Hans": "捣蛋小妖"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 859,
     "hp": 45,
     "attack": 45,
@@ -30354,7 +29289,6 @@
       "zh-Hans": "诈唬魔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 860,
     "hp": 65,
     "attack": 60,
@@ -30380,7 +29314,6 @@
       "zh-Hans": "长毛巨魔"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 861,
     "hp": 95,
     "attack": 120,
@@ -30408,7 +29341,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 861,
     "hp": 95,
     "attack": 120,
@@ -30434,7 +29366,6 @@
       "zh-Hans": "堵拦熊"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 862,
     "hp": 93,
     "attack": 90,
@@ -30460,7 +29391,6 @@
       "zh-Hans": "喵头目"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 863,
     "hp": 70,
     "attack": 110,
@@ -30486,7 +29416,6 @@
       "zh-Hans": "魔灵珊瑚"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 864,
     "hp": 60,
     "attack": 95,
@@ -30512,7 +29441,6 @@
       "zh-Hans": "葱游兵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 865,
     "hp": 62,
     "attack": 135,
@@ -30538,7 +29466,6 @@
       "zh-Hans": "踏冰人偶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 866,
     "hp": 80,
     "attack": 85,
@@ -30564,7 +29491,6 @@
       "zh-Hans": "死神板"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 867,
     "hp": 58,
     "attack": 95,
@@ -30590,7 +29516,6 @@
       "zh-Hans": "小仙奶"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 868,
     "hp": 45,
     "attack": 40,
@@ -30616,7 +29541,6 @@
       "zh-Hans": "霜奶仙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 869,
     "hp": 65,
     "attack": 60,
@@ -30644,7 +29568,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 869,
     "hp": 65,
     "attack": 60,
@@ -30670,7 +29593,6 @@
       "zh-Hans": "列阵兵"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 870,
     "hp": 65,
     "attack": 100,
@@ -30696,7 +29618,6 @@
       "zh-Hans": "啪嚓海胆"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 871,
     "hp": 48,
     "attack": 101,
@@ -30722,7 +29643,6 @@
       "zh-Hans": "雪吞虫"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 872,
     "hp": 30,
     "attack": 25,
@@ -30748,7 +29668,6 @@
       "zh-Hans": "雪绒蛾"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 873,
     "hp": 70,
     "attack": 65,
@@ -30774,7 +29693,6 @@
       "zh-Hans": "巨石丁"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 874,
     "hp": 100,
     "attack": 125,
@@ -30802,7 +29720,6 @@
     "formNames": {
       "en": "Ice Face"
     },
-    "isDefault": true,
     "number": 875,
     "hp": 75,
     "attack": 80,
@@ -30830,7 +29747,6 @@
     "formNames": {
       "en": "Noice Face"
     },
-    "isDefault": false,
     "number": 875,
     "hp": 75,
     "attack": 80,
@@ -30858,7 +29774,6 @@
     "formNames": {
       "en": "Male"
     },
-    "isDefault": true,
     "number": 876,
     "hp": 60,
     "attack": 65,
@@ -30886,7 +29801,6 @@
     "formNames": {
       "en": "Female"
     },
-    "isDefault": false,
     "number": 876,
     "hp": 70,
     "attack": 55,
@@ -30914,7 +29828,6 @@
     "formNames": {
       "en": "Full Belly Mode"
     },
-    "isDefault": true,
     "number": 877,
     "hp": 58,
     "attack": 95,
@@ -30940,7 +29853,6 @@
       "zh-Hans": "铜象"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 878,
     "hp": 72,
     "attack": 80,
@@ -30966,7 +29878,6 @@
       "zh-Hans": "大王铜象"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 879,
     "hp": 122,
     "attack": 130,
@@ -30994,7 +29905,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 879,
     "hp": 122,
     "attack": 130,
@@ -31020,7 +29930,6 @@
       "zh-Hans": "雷鸟龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 880,
     "hp": 90,
     "attack": 100,
@@ -31046,7 +29955,6 @@
       "zh-Hans": "雷鸟海兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 881,
     "hp": 90,
     "attack": 100,
@@ -31072,7 +29980,6 @@
       "zh-Hans": "鳃鱼龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 882,
     "hp": 90,
     "attack": 90,
@@ -31098,7 +30005,6 @@
       "zh-Hans": "鳃鱼海兽"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 883,
     "hp": 90,
     "attack": 90,
@@ -31124,7 +30030,6 @@
       "zh-Hans": "铝钢龙"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 884,
     "hp": 70,
     "attack": 95,
@@ -31152,7 +30057,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 884,
     "hp": 70,
     "attack": 95,
@@ -31178,7 +30082,6 @@
       "zh-Hans": "多龙梅西亚"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 885,
     "hp": 28,
     "attack": 60,
@@ -31204,7 +30107,6 @@
       "zh-Hans": "多龙奇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 886,
     "hp": 68,
     "attack": 80,
@@ -31230,7 +30132,6 @@
       "zh-Hans": "多龙巴鲁托"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 887,
     "hp": 88,
     "attack": 120,
@@ -31258,7 +30159,6 @@
     "formNames": {
       "en": "Hero of Many Battles"
     },
-    "isDefault": true,
     "number": 888,
     "hp": 92,
     "attack": 130,
@@ -31286,7 +30186,6 @@
     "formNames": {
       "en": "Crowned Sword"
     },
-    "isDefault": false,
     "number": 888,
     "hp": 92,
     "attack": 170,
@@ -31314,7 +30213,6 @@
     "formNames": {
       "en": "Hero of Many Battles"
     },
-    "isDefault": true,
     "number": 889,
     "hp": 92,
     "attack": 130,
@@ -31342,7 +30240,6 @@
     "formNames": {
       "en": "Crowned Shield"
     },
-    "isDefault": false,
     "number": 889,
     "hp": 92,
     "attack": 130,
@@ -31368,7 +30265,6 @@
       "zh-Hans": "无极汰那"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 890,
     "hp": 140,
     "attack": 85,
@@ -31396,7 +30292,6 @@
     "formNames": {
       "en": "Eternamax Form"
     },
-    "isDefault": false,
     "number": 890,
     "hp": 255,
     "attack": 115,
@@ -31422,7 +30317,6 @@
       "zh-Hans": "熊徒弟"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 891,
     "hp": 60,
     "attack": 90,
@@ -31450,7 +30344,6 @@
     "formNames": {
       "en": "Single Strike Style"
     },
-    "isDefault": true,
     "number": 892,
     "hp": 100,
     "attack": 130,
@@ -31478,7 +30371,6 @@
     "formNames": {
       "en": "Rapid Strike Style"
     },
-    "isDefault": false,
     "number": 892,
     "hp": 100,
     "attack": 130,
@@ -31506,7 +30398,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 892,
     "hp": 100,
     "attack": 130,
@@ -31534,7 +30425,6 @@
     "formNames": {
       "en": "Gigantamax Form"
     },
-    "isDefault": false,
     "number": 892,
     "hp": 100,
     "attack": 130,
@@ -31560,7 +30450,6 @@
       "zh-Hans": "萨戮德"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 893,
     "hp": 105,
     "attack": 120,
@@ -31586,7 +30475,6 @@
       "zh-Hans": "雷吉艾勒奇"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 894,
     "hp": 80,
     "attack": 100,
@@ -31612,7 +30500,6 @@
       "zh-Hans": "雷吉铎拉戈"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 895,
     "hp": 200,
     "attack": 100,
@@ -31638,7 +30525,6 @@
       "zh-Hans": "雪暴马"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 896,
     "hp": 100,
     "attack": 145,
@@ -31664,7 +30550,6 @@
       "zh-Hans": "灵幽马"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 897,
     "hp": 100,
     "attack": 65,
@@ -31690,7 +30575,6 @@
       "zh-Hans": "蕾冠王"
     },
     "formNames": {},
-    "isDefault": true,
     "number": 898,
     "hp": 100,
     "attack": 80,
@@ -31718,7 +30602,6 @@
     "formNames": {
       "en": "Ice Rider Form"
     },
-    "isDefault": false,
     "number": 898,
     "hp": 100,
     "attack": 165,
@@ -31746,7 +30629,6 @@
     "formNames": {
       "en": "Shadow Rider Form"
     },
-    "isDefault": false,
     "number": 898,
     "hp": 100,
     "attack": 85,

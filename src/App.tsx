@@ -4,7 +4,6 @@ import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { CoverageType } from "./data";
 import ScreenDefense from "./ScreenDefense";
 import ScreenInfo from "./ScreenInfo";
-import ScreenOffense from "./ScreenOffense";
 
 const ScreenPokedex = React.lazy(async () => {
   return await import(
@@ -19,6 +18,14 @@ const ScreenWeaknessCoverage = React.lazy(async () => {
     /* webpackChunkName: "ScreenWeaknessCoverage" */
     /* webpackPrefetch: true */
     "./ScreenWeaknessCoverage"
+  );
+});
+
+const ScreenOffense = React.lazy(async () => {
+  return await import(
+    /* webpackChunkName: "ScreenOffense" */
+    /* webpackPrefetch: true */
+    "./ScreenOffense"
   );
 });
 
@@ -104,11 +111,15 @@ export default function App() {
           <Route
             path="/offense"
             render={() => (
-              <ScreenOffense
-                coverageTypes={coverageTypes}
-                setCoverageTypes={setCoverageTypes}
-                setOffenseParams={setOffenseParams}
-              />
+              <React.Suspense
+                fallback={<div className="Spinner center mt4 f2" />}
+              >
+                <ScreenOffense
+                  coverageTypes={coverageTypes}
+                  setCoverageTypes={setCoverageTypes}
+                  setOffenseParams={setOffenseParams}
+                />
+              </React.Suspense>
             )}
           />
           <Route

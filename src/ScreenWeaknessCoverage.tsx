@@ -48,7 +48,7 @@ export default function ScreenWeaknessCoverage({
         fields: ["Number", "Name", "Form", "Type 1", "Type 2"],
         data: fallbackCoverageTypes.map((t) => {
           const type2 = t.type2 === Type.NONE ? "" : t.type2;
-          return [t.number, t.name, t.form, t.type1, type2];
+          return [t.number, t.name, t.type1, type2];
         }),
       },
       {
@@ -78,7 +78,6 @@ export default function ScreenWeaknessCoverage({
         return closest(header.toLowerCase().replace(/[a-z0-9]/i, ""), [
           "number",
           "name",
-          "form",
           "type1",
           "type2",
         ]);

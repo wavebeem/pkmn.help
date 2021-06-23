@@ -1,2 +1,3 @@
-- Use localized names for Pokémon
 - Double check data is sensible
+- Translate the rest of the UI
+- Get the Pokédex back out of the main JS bundle

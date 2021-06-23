@@ -68,7 +68,6 @@ interface PokemonDetail {
 
 interface PokemonSimple {
   name: string;
-  isDefault: boolean;
   speciesNames: Record<string, string>;
   formNames: Record<string, string>;
   number: number;
@@ -157,7 +156,6 @@ async function main(): Promise<void> {
         name: detail.name,
         speciesNames,
         formNames,
-        isDefault: detail.is_default,
         number: speciesDetail.id,
         spriteURL: detail.sprites.front_default,
         hp: stats["hp"] ?? 0,
