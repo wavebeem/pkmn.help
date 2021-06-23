@@ -1,6 +1,4 @@
 import { closest } from "fastest-levenshtein";
-import flatMap from "lodash.flatmap";
-import fromPairs from "lodash.frompairs";
 
 export enum Type {
   NORMAL = "normal",
@@ -114,15 +112,13 @@ export function objectToCoverageType(obj: unknown): CoverageType {
   };
 }
 
-// TODO: Types seem wrong here
-const pairs = flatMap(rawData, (row, i) => {
-  return row.map((data, j) => {
+const pairs = rawData.flatMap((row, i) => {
+  return row.map<[string, number]>((data, j) => {
     return [keyForTypes(types[i], types[j]), data];
   });
 });
 
-// TODO: Types seem wrong here
-const table = fromPairs(pairs);
+const table = Object.fromEntries(pairs);
 
 export function matchupFor(ta1: Type, ta2: Type, tb: Type) {
   const x1 = table[keyForTypes(tb, ta1)];

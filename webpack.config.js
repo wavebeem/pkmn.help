@@ -64,7 +64,7 @@ const production = {
   ...development,
   plugins: [
     ...development.plugins,
-    new BundleAnalyzerPlugin(),
+    process.env.CI ? undefined : new BundleAnalyzerPlugin(),
     new PurgecssPlugin({
       paths: glob.sync(path.join(__dirname, "src/**/*.{ts,tsx,js}"), {
         nodir: true,
@@ -74,7 +74,7 @@ const production = {
       // purged
       safelist: [/^type-/],
     }),
-  ],
+  ].filter((x) => x),
   optimization: {
     minimizer: [new CssMinimizerPlugin()],
   },

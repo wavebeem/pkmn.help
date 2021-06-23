@@ -7,7 +7,7 @@
     "sourceMap": true,
     "strict": true,
     "module": "es2020",
-    "target": "es2017",
+    "target": "es2019",
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
