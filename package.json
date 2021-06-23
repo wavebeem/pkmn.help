@@ -10,7 +10,7 @@
     "fetch-images": "ts-node --project ./bin/tsconfig.json ./bin/fetch-images.ts",
     "upgrade": "npm-check -u",
     "start": "webpack-dev-server --mode development",
-    "build": "webpack --mode production",
+    "build": "env; exit 1; webpack --mode production",
     "_pretty": "prettier \"src/**/*.{ts,tsx,js}\"",
     "pretty:fix": "npm run -s _pretty -- --write",
     "pretty:test": "npm run -s _pretty -- --check",
