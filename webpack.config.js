@@ -11,6 +11,7 @@ const CopyPlugin = require("copy-webpack-plugin");
 const publicPath = "/";
 
 const development = {
+  stats: "minimal",
   entry: [path.join(__dirname, "src/main.tsx")],
   output: {
     path: path.join(__dirname, "dist"),
