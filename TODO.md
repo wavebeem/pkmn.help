@@ -1,3 +1,3 @@
 - Use localized names for Pokémon
 - Double check data is sensible
-- Show species name AND form name
+- Put Pokémon number in less prominent spot

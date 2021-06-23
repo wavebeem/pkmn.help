@@ -25,7 +25,7 @@ function MonsterType(props: MonsterTypeProps) {
         `type-${props.type} type-bg-light`,
         "ttc tc flex",
         "pv0 ph2 lh-copy",
-        "br4 ba border3 f6",
+        "br-pill ba border3 f6",
         { ml1: props.index > 0 }
       )}
     >
@@ -46,7 +46,7 @@ function Monster(props: MonsterProps) {
   return (
     <div className={classnames("fg1 pv3", "flex-ns items-center", "Monster")}>
       <div className="flex flex-column">
-        <div className="flex flex-column pa3 br4 bg3 flex">
+        <div className="flex flex-column pa3 br4 bg1 flex ba border4">
           <div className="flex items-center">
             <div className="fg3 mv0 tabular-nums f4">{displayNumber}</div>
             <div className="ph1" />
@@ -54,9 +54,7 @@ function Monster(props: MonsterProps) {
             <h2 className="mv0 f4">{props.pokemon.speciesNames.en}</h2>
           </div>
           {/* TODO: Pick best option based on navigator.languages */}
-          <div className="nv2 o-70 f5">
-            {props.pokemon.formNames.en || nbsp}
-          </div>
+          <div className="nv2 fg3 f5">{props.pokemon.formNames.en || nbsp}</div>
 
           <div className="pv3 flex justify-center">
             <img
