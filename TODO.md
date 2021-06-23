@@ -1,3 +1,3 @@
 - Double check data is sensible
 - Translate the rest of the UI
-- Get the Pokédex back out of the main JS bundle
+- Why is the main bundle so big? Is it including the Pokédex?
