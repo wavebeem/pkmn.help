@@ -28,15 +28,10 @@ async function main(): Promise<void> {
   const list = loadJSON(SRC);
   for (const item of list) {
     const imgFilename = path.resolve(IMG_DEST, `${item.id}.png`);
-    if (!fs.existsSync(imgFilename)) {
-      if (!item.spriteURL) {
-        fs.writeFileSync(imgFilename, fs.readFileSync(NOT_FOUND));
-        console.log("NOT FOUND", item.id);
-      } else {
-        const img = await fetchBuffer(item.spriteURL);
-        fs.writeFileSync(imgFilename, img);
-        console.log("DOWNLOADED", item.id);
-      }
+    if (item.spriteURL && !fs.existsSync(imgFilename)) {
+      const img = await fetchBuffer(item.spriteURL);
+      fs.writeFileSync(imgFilename, img);
+      console.log(item.id);
     }
     delete item.spriteURL;
   }
