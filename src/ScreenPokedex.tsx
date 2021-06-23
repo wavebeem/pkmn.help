@@ -25,7 +25,7 @@ function MonsterType(props: MonsterTypeProps) {
         `type-${props.type} type-bg-light`,
         "ttc tc flex",
         "pv0 ph2 lh-copy",
-        "br1 ba border3 f6",
+        "br4 ba border3 f6",
         { ml1: props.index > 0 }
       )}
     >
@@ -44,49 +44,36 @@ interface MonsterProps {
 function Monster(props: MonsterProps) {
   const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
   return (
-    <div
-      className={classnames(
-        "fg1 pv3",
-        "flex-ns items-center",
-        "Monster",
-        "bb border4",
-        props.index === 0 ? "bt" : ""
-      )}
-    >
+    <div className={classnames("fg1 pv3", "flex-ns items-center", "Monster")}>
       <div className="flex flex-column">
-        <div className="flex items-center">
-          <div className="fg3 mv0 tabular-nums f4">{displayNumber}</div>
-          <div className="ph1" />
+        <div className="flex flex-column pa3 br4 bg3 flex">
+          <div className="flex items-center">
+            <div className="fg3 mv0 tabular-nums f4">{displayNumber}</div>
+            <div className="ph1" />
+            {/* TODO: Pick best option based on navigator.languages */}
+            <h2 className="mv0 f4">{props.pokemon.speciesNames.en}</h2>
+          </div>
           {/* TODO: Pick best option based on navigator.languages */}
-          <h2 className="mv0 f4">{props.pokemon.speciesNames.en}</h2>
+          <div className="nv2 o-70 f5">
+            {props.pokemon.formNames.en || nbsp}
+          </div>
+
+          <div className="pv3 flex justify-center">
+            <img
+              src={getImage(props.pokemon.id)}
+              role="presentation"
+              className="db img-crisp"
+              width={96}
+              height={96}
+            />
+          </div>
+
+          <div className="mt2 self-end flex">
+            {props.pokemon.types.map((t, i) => (
+              <MonsterType key={i} type={t} index={i} />
+            ))}
+          </div>
         </div>
-        {/* TODO: Pick best option based on navigator.languages */}
-        <div className="nv2 o-70 f5">{props.pokemon.formNames.en || nbsp}</div>
-        <div className="pa3 br3 mt2 bg3 flex justify-center">
-          <img
-            src={getImage(props.pokemon.id)}
-            role="presentation"
-            className="db img-crisp"
-            width={96}
-            height={96}
-          />
-        </div>
-        <div className="mt2 flex">
-          {props.pokemon.types.map((t, i) => (
-            <MonsterType key={i} type={t} index={i} />
-          ))}
-          <div className="flex-auto" />
-          <Link
-            className="underline fg-link OutlineFocus"
-            to={`/defense?${new URLSearchParams({
-              types: props.pokemon.types.join(" "),
-            })}#matchup-defense`}
-            aria-label={`Defense for ${props.pokemon.name}`}
-          >
-            Defense
-          </Link>
-        </div>
-        {/* <div className="mv2 lh-copy"></div> */}
       </div>
       <StatsTable pokemon={props.pokemon} />
     </div>
