@@ -1,7 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 
-module.exports = {
+const development = {
   entry: [path.join(__dirname, "src/main.tsx")],
   output: {
     path: path.join(__dirname, "dist"),
@@ -50,4 +51,13 @@ module.exports = {
       hash: true,
     }),
   ],
+};
+
+const production = {
+  ...development,
+  plugins: [...development.plugins, new BundleAnalyzerPlugin()],
+};
+
+module.exports = (_, { mode }) => {
+  return { development, production }[mode];
 };

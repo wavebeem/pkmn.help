@@ -67,6 +67,7 @@
     "ts-node": "^8.9.1",
     "typescript": "^3.8.3",
     "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   },

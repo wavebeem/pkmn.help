@@ -1,3 +1,4 @@
 - Double check data is sensible
 - Translate the rest of the UI
 - Why is the main bundle so big? Is it including the Pokédex?
+- Use webpack CSS minify plugin to strip unused Tachyons styles
