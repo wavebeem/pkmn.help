@@ -1,3 +1,3 @@
 - Double check data is sensible
 - Translate the rest of the UI
-- Use webpack CSS minify plugin to strip unused Tachyons styles
+- Switch to Next.js?
