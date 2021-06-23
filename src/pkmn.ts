@@ -3,9 +3,10 @@ import data from "./data-pkmn.json";
 
 export interface Pokemon {
   id: string;
-  bulbapediaURL: string;
   name: string;
-  names: Record<string, string>;
+  isDefault: boolean;
+  speciesNames: Record<string, string>;
+  formNames: Record<string, string>;
   number: number;
   types: Type[];
   hp: number;

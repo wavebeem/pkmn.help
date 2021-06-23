@@ -42,6 +42,7 @@ interface PokemonForm {
 interface PokemonDetail {
   id: number;
   name: string;
+  is_default: boolean;
   forms: {
     name: string;
     url: string;
@@ -67,7 +68,9 @@ interface PokemonDetail {
 
 interface PokemonSimple {
   name: string;
-  names: Record<string, string>;
+  isDefault: boolean;
+  speciesNames: Record<string, string>;
+  formNames: Record<string, string>;
   number: number;
   spriteURL: string;
   hp: number;
@@ -83,11 +86,6 @@ interface PokemonSimple {
 async function fetchJSON<T>(url: string): Promise<T> {
   const resp = await fetch(url);
   return await resp.json();
-}
-
-async function fetchBuffer(url: string): Promise<Buffer> {
-  const resp = await fetch(url);
-  return await resp.buffer();
 }
 
 async function fetchPaginated<T>(url: string, limit = Infinity): Promise<T[]> {
@@ -157,7 +155,9 @@ async function main(): Promise<void> {
       });
       const mon: PokemonSimple = {
         name: detail.name,
-        names: { ...speciesNames, ...formNames },
+        speciesNames,
+        formNames,
+        isDefault: detail.is_default,
         number: speciesDetail.id,
         spriteURL: detail.sprites.front_default,
         hp: stats["hp"] ?? 0,
