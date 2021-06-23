@@ -1,12 +1,7 @@
 import * as React from "react";
-import {
-  CoverageType,
-  Effectiveness,
-  fallbackCoverageTypes,
-  matchupFor,
-  Type,
-} from "./data";
+import { CoverageType, Effectiveness, matchupFor, Type } from "./data";
 import { PercentBar } from "./PercentBar";
+import { fallbackCoverageTypes } from "./pkmn";
 
 interface DexCoverageProps {
   coverageTypes?: CoverageType[];

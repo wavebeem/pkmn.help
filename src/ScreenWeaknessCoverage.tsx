@@ -3,14 +3,9 @@ import { closest } from "fastest-levenshtein";
 import Papa from "papaparse";
 import * as React from "react";
 import { Link } from "react-router-dom";
-import {
-  CoverageType,
-  fallbackCoverageTypes,
-  objectToCoverageType,
-  stringToType,
-  Type,
-} from "./data";
+import { CoverageType, objectToCoverageType, stringToType, Type } from "./data";
 import { pickFile } from "./pickFile";
+import { fallbackCoverageTypes } from "./pkmn";
 import { saveFile } from "./saveFile";
 
 const buttonClasses = classnames(
@@ -45,7 +40,7 @@ export default function ScreenWeaknessCoverage({
   function saveCSV() {
     const csv = Papa.unparse(
       {
-        fields: ["Number", "Name", "Form", "Type 1", "Type 2"],
+        fields: ["Number", "Name", "Type 1", "Type 2"],
         data: fallbackCoverageTypes.map((t) => {
           const type2 = t.type2 === Type.NONE ? "" : t.type2;
           return [t.number, t.name, t.type1, type2];
