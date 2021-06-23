@@ -63,6 +63,7 @@ function Monster(props: MonsterProps) {
             <img
               src={getImage(props.pokemon.id)}
               role="presentation"
+              alt=""
               className="db img-crisp"
               width={96}
               height={96}

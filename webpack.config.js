@@ -1,22 +1,27 @@
 const path = require("path");
 const glob = require("glob");
+const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
 const PurgecssPlugin = require("purgecss-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
+
+const publicPath = "/";
 
 const development = {
   entry: [path.join(__dirname, "src/main.tsx")],
   output: {
     path: path.join(__dirname, "dist"),
-    publicPath: "/",
+    publicPath,
     filename: "[name].bundle.js",
     chunkFilename: "[name].chunk.js",
   },
   devtool: "source-map",
   devServer: {
     contentBase: path.join(__dirname, "public"),
+    stats: "minimal",
     historyApiFallback: true,
   },
   resolve: {
@@ -32,8 +37,6 @@ const development = {
       {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
-        // We need to load Tachyons which is in node_modules
-        // include: path.resolve(__dirname, "src")
       },
       {
         test: /\.(png|svg)$/,
@@ -49,6 +52,9 @@ const development = {
     ],
   },
   plugins: [
+    new CopyPlugin({
+      patterns: [{ from: "public", to: "dist" }],
+    }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
     }),
@@ -56,6 +62,9 @@ const development = {
       filename: path.join(__dirname, "dist/index.html"),
       template: path.join(__dirname, "template/index.html"),
       hash: true,
+    }),
+    new webpack.DefinePlugin({
+      "process.env.PUBLIC_PATH": JSON.stringify(publicPath),
     }),
   ],
 };
