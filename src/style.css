@@ -1,3 +1,5 @@
+@import "~tachyons/css/tachyons.css";
+
 :root {
   --color-bg1: hsl(0, 0%, 100%);
   --color-bg2: hsl(0, 0%, 96%);

@@ -1,6 +1,10 @@
 const path = require("path");
+const glob = require("glob");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+const PurgecssPlugin = require("purgecss-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 
 const development = {
   entry: [path.join(__dirname, "src/main.tsx")],
@@ -27,7 +31,7 @@ const development = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
         // We need to load Tachyons which is in node_modules
         // include: path.resolve(__dirname, "src")
       },
@@ -45,6 +49,9 @@ const development = {
     ],
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: "[name].css",
+    }),
     new HtmlWebpackPlugin({
       filename: path.join(__dirname, "dist/index.html"),
       template: path.join(__dirname, "template/index.html"),
@@ -55,7 +62,22 @@ const development = {
 
 const production = {
   ...development,
-  plugins: [...development.plugins, new BundleAnalyzerPlugin()],
+  plugins: [
+    ...development.plugins,
+    new BundleAnalyzerPlugin(),
+    new PurgecssPlugin({
+      paths: glob.sync(path.join(__dirname, "src/**/*.{ts,tsx,js}"), {
+        nodir: true,
+      }),
+      // e.g. `.type-grass` or `.type-fire`, these classes are constructed
+      // dynamically right now, so we have to safelist them so they won't get
+      // purged
+      safelist: [/^type-/],
+    }),
+  ],
+  optimization: {
+    minimizer: [new CssMinimizerPlugin()],
+  },
 };
 
 module.exports = (_, { mode }) => {
