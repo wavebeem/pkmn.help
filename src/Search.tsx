@@ -1,7 +1,6 @@
 import classnames from "classnames";
 import * as React from "react";
-import imageClearURL from "../svg/clear.svg";
-import imageSearchURL from "../svg/search.svg";
+import { PUBLIC_PATH } from "./settings";
 
 interface SearchProps {
   updateSearch: (search: string) => void;
@@ -16,7 +15,7 @@ export default function Search(props: SearchProps) {
   return (
     <div className="relative mv3">
       <img
-        src={imageSearchURL}
+        src={`${PUBLIC_PATH}svg/search.svg`}
         width={iconSize}
         height={iconSize}
         role="presentation"
@@ -48,7 +47,7 @@ export default function Search(props: SearchProps) {
         ref={ref}
       />
       <img
-        src={imageClearURL}
+        src={`${PUBLIC_PATH}svg/clear.svg`}
         width={iconSize}
         height={iconSize}
         role="presentation"
