@@ -1,3 +1,4 @@
 - Translate the rest of the UI
-- Switch to Next.js?
+- Can you search in your native language?
+- Switch to Next.js? https://github.com/cassidoo/next-netlify-starter/blob/main/package.json
 - Some forms are weird? Lurantis, Ribombee, Minior, Kommo-o, Mimikyu, etc
