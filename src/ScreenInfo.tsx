@@ -57,21 +57,14 @@ export default function ScreenInfo() {
         content on this page.
       </p>
       <p>
-        Pokédex data scraped from Bulbapedia's{" "}
+        Pokédex data from{" "}
         <a
           className="underline fg-link OutlineFocus"
-          href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_National_Pok%C3%A9dex_number"
+          href="https://pokeapi.co/"
         >
-          National Pokédex
-        </a>{" "}
-        and{" "}
-        <a
-          className="underline fg-link OutlineFocus"
-          href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_stats_(Generation_VIII-present)"
-        >
-          List of Pokémon by base stats
-        </a>{" "}
-        pages.
+          PokéAPI
+        </a>
+        .
       </p>
       <p>
         pkmn.help &copy; 2013&ndash;{year}{" "}

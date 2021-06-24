@@ -1,10 +1,11 @@
 import classnames from "classnames";
 import matchSorter from "match-sorter";
 import * as React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { Type } from "./data";
 import { getImage } from "./getImage";
 import Paginator from "./Paginator";
+import { pickTranslation } from "./pickTranslation";
 import { AllPokemon, Pokemon } from "./pkmn";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
@@ -22,10 +23,10 @@ function MonsterType(props: MonsterTypeProps) {
   return (
     <div
       className={classnames(
-        `type-${props.type} type-bg-light`,
+        `type-${props.type} type-bg-dark`,
         "ttc tc flex",
-        "pv0 ph2 lh-copy",
-        "br1 ba border3 f6",
+        "pv0 ph2 lh-copy b",
+        "br-pill ba border3 f6",
         { ml1: props.index > 0 }
       )}
     >
@@ -43,57 +44,38 @@ interface MonsterProps {
 
 function Monster(props: MonsterProps) {
   const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
-  const imgSize = 68 * 2;
   return (
-    <div
-      className={classnames(
-        "fg1 pv3",
-        "flex-ns items-center",
-        "Monster",
-        "bb border4",
-        props.index === 0 ? "bt" : ""
-      )}
-    >
+    <div className={classnames("fg1 pv3", "flex-ns items-center", "Monster")}>
       <div className="flex flex-column">
-        <div className="flex mb2 items-center">
-          <div className="fg3 mv0 tabular-nums f4">{displayNumber}</div>
-          <div className="ph1" />
-          <h2 className="mv0 f3">{props.pokemon.name}</h2>
+        <div className="flex flex-column pa3 br4 bg1 flex ba border4">
+          <div className="flex items-center">
+            <h2 className="mv0 f4">
+              {pickTranslation(props.pokemon.speciesNames)}
+            </h2>
+            <div className="ph1 flex-auto" />
+            <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
+          </div>
+          <div className="nv2 fg3 f5">
+            {pickTranslation(props.pokemon.formNames) || nbsp}
+          </div>
+
+          <div className="pv3 flex justify-center">
+            <img
+              src={getImage(props.pokemon.id)}
+              role="presentation"
+              alt=""
+              className="db img-crisp"
+              width={96}
+              height={96}
+            />
+          </div>
+
+          <div className="mt2 self-end flex">
+            {props.pokemon.types.map((t, i) => (
+              <MonsterType key={i} type={t} index={i} />
+            ))}
+          </div>
         </div>
-        <h3 className="nt2 mb2 f4 normal">{props.pokemon.formName || nbsp}</h3>
-        <div className="flex">
-          {props.pokemon.types.map((t, i) => (
-            <MonsterType key={i} type={t} index={i} />
-          ))}
-        </div>
-        <div className="mv2 lh-copy">
-          <Link
-            className="underline fg-link OutlineFocus"
-            to={`/defense?${new URLSearchParams({
-              types: props.pokemon.types.join(" "),
-            })}#matchup-defense`}
-            aria-label={`Defense for ${props.pokemon.name}`}
-          >
-            Defense
-          </Link>{" "}
-          &bull;{" "}
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href={props.pokemon.bulbapediaURL}
-            className="underline fg-link OutlineFocus"
-            aria-label={`${props.pokemon.name} on Bulbapedia`}
-          >
-            Bulbapedia
-          </a>
-        </div>
-        <img
-          src={getImage(props.pokemon.id)}
-          role="presentation"
-          className={`pa1 mt2 bg3 br4 bn b--white-70`}
-          width={imgSize}
-          height={imgSize}
-        />
       </div>
       <StatsTable pokemon={props.pokemon} />
     </div>

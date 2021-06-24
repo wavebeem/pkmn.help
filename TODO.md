@@ -1,0 +1,3 @@
+- Translate the rest of the UI
+- Switch to Next.js?
+- Some forms are weird? Lurantis, Ribombee, Minior, Kommo-o, Mimikyu, etc

@@ -1,15 +1,5 @@
-const req: (id: string) => { default: string } = (() => {
-  if (process.env.NODE_ENV !== "test") {
-    return require.context("../img", false, /\.png$/);
-  }
-  return (x: any) => ({ default: x });
-})();
+import { PUBLIC_PATH } from "./settings";
 
-export function getImage(id: string): string | undefined {
-  const file = `./${id}.png`;
-  try {
-    return req(file).default;
-  } catch (err) {
-    return req("./not-found.png").default;
-  }
+export function getImage(id: string): string {
+  return `${PUBLIC_PATH}img/${id}.png`;
 }
