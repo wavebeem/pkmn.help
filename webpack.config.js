@@ -89,7 +89,7 @@ const production = {
   },
 };
 
-if (!process.env.CI) {
+if (!(process.env.CI || process.env.NETLIFY)) {
   production.plugins.push(new BundleAnalyzerPlugin());
 }
 
