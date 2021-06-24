@@ -39,26 +39,11 @@ const development = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
-      {
-        test: /\.(png|svg)$/,
-        loader: "file-loader",
-        options: {
-          name: "files/[path][name].[contenthash:8].[ext]",
-        },
-        include: [
-          path.resolve(__dirname, "img"),
-          path.resolve(__dirname, "svg"),
-        ],
-      },
     ],
   },
   plugins: [
-    new CopyPlugin({
-      patterns: ["public"],
-    }),
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-    }),
+    new CopyPlugin({ patterns: ["public"] }),
+    new MiniCssExtractPlugin({ filename: "[name].css" }),
     new HtmlWebpackPlugin({
       filename: path.join(__dirname, "dist/index.html"),
       template: path.join(__dirname, "template/index.html"),
