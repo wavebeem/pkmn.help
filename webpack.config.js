@@ -54,7 +54,7 @@ const development = {
   },
   plugins: [
     new CopyPlugin({
-      patterns: [{ from: "public", to: "dist" }],
+      patterns: ["public"],
     }),
     new MiniCssExtractPlugin({
       filename: "[name].css",
