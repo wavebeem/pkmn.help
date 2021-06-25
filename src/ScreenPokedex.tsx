@@ -44,9 +44,7 @@ interface MonsterProps {
 
 function Monster(props: MonsterProps) {
   const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
-  const params = new URLSearchParams({
-    types: props.pokemon.types.join(" "),
-  });
+  const params = new URLSearchParams({ types: props.pokemon.types.join(" ") });
   const speciesName = pickTranslation(props.pokemon.speciesNames);
   const formName = pickTranslation(props.pokemon.formNames);
   return (
@@ -88,7 +86,9 @@ function Monster(props: MonsterProps) {
           >
             Offense
           </Link>
-          <span className="o-50">&nbsp;&bull;&nbsp;</span>
+          <span aria-hidden="true" className="o-50">
+            &nbsp;&bull;&nbsp;
+          </span>
           <Link
             aria-label={`Defense for ${speciesName} (${formName})`}
             className="underline fg-link OutlineFocus"
