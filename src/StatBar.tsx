@@ -10,19 +10,14 @@ export interface StatBarProps {
 export default function StatBar(props: StatBarProps) {
   const { value, max, type } = props;
   return (
-    <div className="flex justify-end">
+    <div className="flex h1 w-100 Bar-Container">
       <div
-        style={{ maxWidth: "255px" }}
-        className="flex h1 w-100 Bar-Container"
-      >
-        <div
-          style={{
-            width: (value / max) * 100 + "%",
-            background: "var(--type-color-2)",
-          }}
-          className={`type-${type} Bar-Fill`}
-        ></div>
-      </div>
+        style={{
+          width: (value / max) * 100 + "%",
+          background: "var(--type-color-2)",
+        }}
+        className={`type-${type} Bar-Fill`}
+      ></div>
     </div>
   );
 }

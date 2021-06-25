@@ -1,7 +1,7 @@
 import classnames from "classnames";
 import matchSorter from "match-sorter";
 import * as React from "react";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { Type } from "./data";
 import { getImage } from "./getImage";
 import Paginator from "./Paginator";
@@ -44,20 +44,19 @@ interface MonsterProps {
 
 function Monster(props: MonsterProps) {
   const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
+  const params = new URLSearchParams({ types: props.pokemon.types.join(" ") });
+  const speciesName = pickTranslation(props.pokemon.speciesNames);
+  const formName = pickTranslation(props.pokemon.formNames);
   return (
     <div className={classnames("fg1 pv3", "flex-ns items-center", "Monster")}>
       <div className="flex flex-column">
         <div className="flex flex-column pa3 br4 bg1 flex ba border4">
           <div className="flex items-center">
-            <h2 className="mv0 f4">
-              {pickTranslation(props.pokemon.speciesNames)}
-            </h2>
+            <h2 className="mv0 f4">{speciesName}</h2>
             <div className="ph1 flex-auto" />
             <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
           </div>
-          <div className="nv2 fg3 f5">
-            {pickTranslation(props.pokemon.formNames) || nbsp}
-          </div>
+          <div className="nv2 fg3 f5">{formName || nbsp}</div>
 
           <div className="pv3 flex justify-center">
             <img
@@ -70,14 +69,35 @@ function Monster(props: MonsterProps) {
             />
           </div>
 
-          <div className="mt2 self-end flex">
+          <div className="pt2 flex justify-end">
             {props.pokemon.types.map((t, i) => (
               <MonsterType key={i} type={t} index={i} />
             ))}
           </div>
         </div>
       </div>
-      <StatsTable pokemon={props.pokemon} />
+      <div className="flex flex-column">
+        <StatsTable pokemon={props.pokemon} />
+        <div className="flex justify-end">
+          <Link
+            aria-label={`Offense for ${speciesName} (${formName})`}
+            className="underline fg-link OutlineFocus"
+            to={`/offense?${params}`}
+          >
+            Offense
+          </Link>
+          <span aria-hidden="true" className="o-50">
+            &nbsp;&bull;&nbsp;
+          </span>
+          <Link
+            aria-label={`Defense for ${speciesName} (${formName})`}
+            className="underline fg-link OutlineFocus"
+            to={`/defense?${params}`}
+          >
+            Defense
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }
