@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
+/* eslint-env node */
 const path = require("path");
 const glob = require("glob");
 const webpack = require("webpack");
@@ -74,7 +76,7 @@ const production = {
   },
 };
 
-if (!(process.env.CI || process.env.NETLIFY)) {
+if (process.env.ANALYZE) {
   production.plugins.push(new BundleAnalyzerPlugin());
 }
 

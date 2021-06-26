@@ -32,14 +32,14 @@ export default function ScreenInfo() {
         >
           Plausible Analytics
         </a>
-        , which is self-funded, independent, hosted in the EU, and doesn't store
-        any cookies on your computer.
+        , which is self-funded, independent, hosted in the EU, and doesn&apos;t
+        store any cookies on your computer.
       </p>
       <h2 className="lh-title f5">Giving Back</h2>
       <p>
         I have spent countless hours improving this site. If you appreciate what
-        I've made, please consider donating to charities that support BIPOC and
-        transgender rights.
+        I&apos;ve made, please consider donating to charities that support BIPOC
+        and transgender rights.
       </p>
       <h2 className="lh-title f5">Special Thanks</h2>
       <ul className="lh-copy mt1 ph3">

@@ -5,7 +5,6 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import { CoverageType, objectToCoverageType, stringToType, Type } from "./data";
 import { pickFile } from "./pickFile";
-import { fallbackCoverageTypes } from "./pkmn";
 import { saveFile } from "./saveFile";
 
 const buttonClasses = classnames(
@@ -21,11 +20,15 @@ const buttonClasses = classnames(
 interface WeaknessCoverageProps {
   setCoverageTypes: (types: CoverageType[]) => void;
   offenseParams: string;
+  fallbackCoverageTypes: CoverageType[];
+  isLoading: boolean;
 }
 
 export default function ScreenWeaknessCoverage({
   setCoverageTypes,
   offenseParams,
+  fallbackCoverageTypes,
+  isLoading,
 }: WeaknessCoverageProps) {
   const [lastUpdated, setLastUpdated] = React.useState(new Date());
   const [statusText, setStatusText] = React.useState("");
@@ -115,47 +118,51 @@ export default function ScreenWeaknessCoverage({
       </p>
       <p>
         CSV data is loaded by column header name, not column order, so you can
-        add or re-order columns if you want (e.g. add a "tier" column, or a
-        "notes" column).
+        add or re-order columns if you want (e.g. add a &quot;tier&quot; column,
+        or a &quot;notes&quot; column).
       </p>
       <p>
         CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice,
         LibreOffice, Notepad, and more.
       </p>
-      <div className="pt2 ButtonGrid">
-        <button
-          type="button"
-          className={buttonClasses}
-          onClick={() => {
-            saveCSV();
-          }}
-        >
-          Export
-        </button>
-        <span>Export the default Pokédex to a CSV file</span>
+      {isLoading ? (
+        <div className="Spinner center mt4 f2" />
+      ) : (
+        <div className="pt2 ButtonGrid">
+          <button
+            type="button"
+            className={buttonClasses}
+            onClick={() => {
+              saveCSV();
+            }}
+          >
+            Export
+          </button>
+          <span>Export the default Pokédex to a CSV file</span>
 
-        <button
-          type="button"
-          className={buttonClasses}
-          onClick={() => {
-            loadCSV();
-          }}
-        >
-          Import
-        </button>
-        <span>Import an edited Pokédex CSV file</span>
+          <button
+            type="button"
+            className={buttonClasses}
+            onClick={() => {
+              loadCSV();
+            }}
+          >
+            Import
+          </button>
+          <span>Import an edited Pokédex CSV file</span>
 
-        <button
-          type="button"
-          className={buttonClasses}
-          onClick={() => {
-            loadDefault();
-          }}
-        >
-          Reset
-        </button>
-        <span>Reset to the default Pokédex</span>
-      </div>
+          <button
+            type="button"
+            className={buttonClasses}
+            onClick={() => {
+              loadDefault();
+            }}
+          >
+            Reset
+          </button>
+          <span>Reset to the default Pokédex</span>
+        </div>
+      )}
       <p className="f4 b" hidden={!statusText} ref={statusRef}>
         {statusText}
       </p>

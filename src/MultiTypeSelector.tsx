@@ -9,7 +9,10 @@ interface TypeSelectorProps {
   value: Type[];
 }
 
-export default function MultiTypeSelector(props: TypeSelectorProps) {
+export default function MultiTypeSelector({
+  onChange,
+  value,
+}: TypeSelectorProps) {
   const styles = {
     selected: "border2 type-bg-dark no-box-shadow button-shadow",
     normal: "border2 bg1 fg1 button-bg button-shadow",
@@ -17,7 +20,7 @@ export default function MultiTypeSelector(props: TypeSelectorProps) {
   return (
     <div className="MultiTypeSelector-Container">
       {types.map((type) => {
-        const isChecked = props.value.includes(type);
+        const isChecked = value.includes(type);
         const style = isChecked ? styles.selected : styles.normal;
         return (
           <button
@@ -36,7 +39,7 @@ export default function MultiTypeSelector(props: TypeSelectorProps) {
               `type-${type}`
             )}
             onClick={() => {
-              const types = new Set(props.value);
+              const types = new Set(value);
               if (isChecked) {
                 types.delete(type);
               } else {
@@ -44,7 +47,7 @@ export default function MultiTypeSelector(props: TypeSelectorProps) {
               }
               // Should we sort based on the type order on the page rather than
               // alphabetical? I'll just stick with alphabetical for now.
-              props.onChange([...types].sort());
+              onChange([...types].sort());
             }}
           >
             <span className="flex flex-row items-center justify-center">

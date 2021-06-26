@@ -1,5 +1,20 @@
 import { closest } from "fastest-levenshtein";
 
+export interface Pokemon {
+  id: string;
+  name: string;
+  speciesNames: Record<string, string>;
+  formNames: Record<string, string>;
+  number: number;
+  types: Type[];
+  hp: number;
+  attack: number;
+  defense: number;
+  spAttack: number;
+  spDefense: number;
+  speed: number;
+}
+
 export enum Type {
   NORMAL = "normal",
   FIGHTING = "fighting",

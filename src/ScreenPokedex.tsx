@@ -2,11 +2,10 @@ import classnames from "classnames";
 import matchSorter from "match-sorter";
 import * as React from "react";
 import { Link, useHistory } from "react-router-dom";
-import { Type } from "./data";
+import { Pokemon, Type } from "./data";
 import { getImage } from "./getImage";
 import Paginator from "./Paginator";
 import { pickTranslation } from "./pickTranslation";
-import { AllPokemon, Pokemon } from "./pkmn";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
 import { useSearch } from "./useSearch";
@@ -19,18 +18,18 @@ interface MonsterTypeProps {
   index: number;
 }
 
-function MonsterType(props: MonsterTypeProps) {
+function MonsterType({ type, index }: MonsterTypeProps) {
   return (
     <div
       className={classnames(
-        `type-${props.type} type-bg-dark`,
+        `type-${type} type-bg-dark`,
         "ttc tc flex",
         "pv0 ph2 lh-copy b",
         "br-pill ba border3 f6",
-        { ml1: props.index > 0 }
+        { ml1: index > 0 }
       )}
     >
-      {props.type}
+      {type}
     </div>
   );
 }
@@ -39,14 +38,13 @@ MonsterType.displayName = "MonsterType";
 
 interface MonsterProps {
   pokemon: Pokemon;
-  index: number;
 }
 
-function Monster(props: MonsterProps) {
-  const displayNumber = "#" + String(props.pokemon.number).padStart(3, "0");
-  const params = new URLSearchParams({ types: props.pokemon.types.join(" ") });
-  const speciesName = pickTranslation(props.pokemon.speciesNames);
-  const formName = pickTranslation(props.pokemon.formNames);
+function Monster({ pokemon }: MonsterProps) {
+  const displayNumber = "#" + String(pokemon.number).padStart(3, "0");
+  const params = new URLSearchParams({ types: pokemon.types.join(" ") });
+  const speciesName = pickTranslation(pokemon.speciesNames);
+  const formName = pickTranslation(pokemon.formNames);
   return (
     <div className={classnames("fg1 pv3", "flex-ns items-center", "Monster")}>
       <div className="flex flex-column">
@@ -60,7 +58,7 @@ function Monster(props: MonsterProps) {
 
           <div className="pv3 flex justify-center">
             <img
-              src={getImage(props.pokemon.id)}
+              src={getImage(pokemon.id)}
               role="presentation"
               alt=""
               className="db img-crisp"
@@ -70,14 +68,14 @@ function Monster(props: MonsterProps) {
           </div>
 
           <div className="pt2 flex justify-end">
-            {props.pokemon.types.map((t, i) => (
+            {pokemon.types.map((t, i) => (
               <MonsterType key={i} type={t} index={i} />
             ))}
           </div>
         </div>
       </div>
       <div className="flex flex-column">
-        <StatsTable pokemon={props.pokemon} />
+        <StatsTable pokemon={pokemon} />
         <div className="flex justify-end">
           <Link
             aria-label={`Offense for ${speciesName} (${formName})`}
@@ -105,24 +103,28 @@ function Monster(props: MonsterProps) {
 Monster.displayName = "Monster";
 
 interface DexProps {
+  allPokemon: Pokemon[];
   setPokedexParams: (params: string) => void;
+  isLoading: boolean;
 }
 
-export default function ScreenPokedex(props: DexProps) {
+export default function ScreenPokedex({
+  allPokemon,
+  setPokedexParams,
+  isLoading,
+}: DexProps) {
   const search = useSearch();
   const history = useHistory();
-
   const query = search.get("q") || "";
   const page = Number(search.get("page") || 1) - 1;
-
   const pkmn = React.useMemo(() => {
     const s = query.trim();
     if (/^[0-9]+$/.test(s)) {
       const number = Number(s);
-      return AllPokemon.filter((p) => p.number === number);
+      return allPokemon.filter((p) => p.number === number);
     }
-    return matchSorter(AllPokemon, s, { keys: ["name", "number"] });
-  }, [query]);
+    return matchSorter(allPokemon, s, { keys: ["name", "number"] });
+  }, [query, allPokemon]);
 
   function createParams(newQuery: string, newPage: number): string {
     const params = new URLSearchParams();
@@ -142,7 +144,8 @@ export default function ScreenPokedex(props: DexProps) {
 
   const params = createParams(query, page);
   React.useEffect(() => {
-    props.setPokedexParams(params);
+    setPokedexParams(params);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params]);
 
   return (
@@ -153,20 +156,24 @@ export default function ScreenPokedex(props: DexProps) {
           update(newQuery, 0);
         }}
       />
-      <Paginator
-        currentPage={page}
-        urlForPage={(newPage) => {
-          return createParams(query, newPage);
-        }}
-        pageSize={PAGE_SIZE}
-        emptyState={<p className="fg4 f4 b tc m0">No Pokémon found</p>}
-        items={pkmn}
-        renderPage={(page) =>
-          page.map((pokemon, index) => (
-            <Monster key={pokemon.id} pokemon={pokemon} index={index} />
-          ))
-        }
-      />
+      {isLoading ? (
+        <div className="Spinner center mt4 f2" />
+      ) : (
+        <Paginator
+          currentPage={page}
+          urlForPage={(newPage) => {
+            return createParams(query, newPage);
+          }}
+          pageSize={PAGE_SIZE}
+          emptyState={<p className="fg4 f4 b tc m0">No Pokémon found</p>}
+          items={pkmn}
+          renderPage={(page) =>
+            page.map((pokemon) => (
+              <Monster key={pokemon.id} pokemon={pokemon} />
+            ))
+          }
+        />
+      )}
     </main>
   );
 }

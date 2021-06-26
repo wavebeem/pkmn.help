@@ -1,20 +1,20 @@
 import * as React from "react";
 
-type ErrorBoundaryProps = {
+interface ErrorBoundaryProps {
   render: (error: Error) => React.ReactNode;
-};
+}
 
-type ErrorBoundaryState = {
+interface ErrorBoundaryState {
   error?: Error;
-};
+}
 
 export default class ErrorBoundary extends React.Component<
   ErrorBoundaryProps,
   ErrorBoundaryState
 > {
   static displayName = "ErrorBoundary";
-  constructor(props: ErrorBoundaryProps) {
-    super(props);
+  constructor({ render }: ErrorBoundaryProps) {
+    super({ render });
     this.state = {};
   }
 

@@ -17,7 +17,15 @@ interface PageSelectorProps {
   hasNext: boolean;
 }
 
-function PageSelector(props: PageSelectorProps) {
+function PageSelector({
+  numPages,
+  pageItems,
+  location,
+  currentPage,
+  urlForPage,
+  hasPrev,
+  hasNext,
+}: PageSelectorProps) {
   // Attempt to stay anchored to the top or bottom of the page when using
   // pagination buttons to avoid the screen jumping around and stuff
   const [scrollTo, setScrollTo] = React.useState<Location | undefined>(
@@ -37,15 +45,15 @@ function PageSelector(props: PageSelectorProps) {
     <div
       className={classnames(
         "items-center mv3",
-        props.pageItems.length === 0 ? "dn" : "flex"
+        pageItems.length === 0 ? "dn" : "flex"
       )}
     >
       <LinkButton
         onClick={() => {
-          setScrollTo(props.location);
+          setScrollTo(location);
         }}
-        disabled={!props.hasPrev}
-        to={props.urlForPage(0)}
+        disabled={!hasPrev}
+        to={urlForPage(0)}
         aria-label="First"
       >
         &laquo;
@@ -53,27 +61,25 @@ function PageSelector(props: PageSelectorProps) {
       <div className="pr1" />
       <LinkButton
         onClick={() => {
-          setScrollTo(props.location);
+          setScrollTo(location);
         }}
-        disabled={!props.hasPrev}
-        to={props.urlForPage(props.currentPage - 1)}
+        disabled={!hasPrev}
+        to={urlForPage(currentPage - 1)}
         aria-label="Previous"
       >
         <span role="presentation">&lsaquo; </span>Prev
       </LinkButton>
       <div className="flex-auto tc b f5 tabular-nums">
-        {(props.currentPage + 1)
-          .toString()
-          .padStart(props.numPages.toString().length, "0")}
+        {(currentPage + 1).toString().padStart(numPages.toString().length, "0")}
         {" / "}
-        {props.numPages}
+        {numPages}
       </div>
       <LinkButton
         onClick={() => {
-          setScrollTo(props.location);
+          setScrollTo(location);
         }}
-        disabled={!props.hasNext}
-        to={props.urlForPage(props.currentPage + 1)}
+        disabled={!hasNext}
+        to={urlForPage(currentPage + 1)}
         aria-label="Next"
       >
         Next<span role="presentation"> &rsaquo;</span>
@@ -81,10 +87,10 @@ function PageSelector(props: PageSelectorProps) {
       <div className="pr1" />
       <LinkButton
         onClick={() => {
-          setScrollTo(props.location);
+          setScrollTo(location);
         }}
-        disabled={!props.hasNext}
-        to={props.urlForPage(props.numPages - 1)}
+        disabled={!hasNext}
+        to={urlForPage(numPages - 1)}
         aria-label="Last"
       >
         &raquo;
@@ -104,15 +110,14 @@ interface PaginatorProps<T> {
   renderPage: (items: T[]) => any;
 }
 
-export default function Paginator<T>(props: PaginatorProps<T>) {
-  const {
-    currentPage,
-    pageSize,
-    items,
-    emptyState,
-    renderPage,
-    urlForPage,
-  } = props;
+export default function Paginator<T>({
+  urlForPage,
+  currentPage,
+  pageSize,
+  emptyState,
+  items,
+  renderPage,
+}: PaginatorProps<T>) {
   const numPages = Math.ceil(items.length / pageSize);
   const hasPrev = currentPage > 0;
   const hasNext = currentPage < numPages - 1;

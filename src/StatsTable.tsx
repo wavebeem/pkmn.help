@@ -1,6 +1,5 @@
 import * as React from "react";
-import { Type } from "./data";
-import { Pokemon } from "./pkmn";
+import { Pokemon, Type } from "./data";
 import StatBar from "./StatBar";
 
 const STAT_MAX = 255;
@@ -9,8 +8,7 @@ export interface StatsTableProps {
   pokemon: Pokemon;
 }
 
-export default function StatsTable(props: StatsTableProps) {
-  const { pokemon } = props;
+export default function StatsTable({ pokemon }: StatsTableProps) {
   const { hp, attack, defense, spAttack, spDefense, speed } = pokemon;
   return (
     <div className="StatsTable tabular-nums">

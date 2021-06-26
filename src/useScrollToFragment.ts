@@ -12,5 +12,5 @@ export function useScrollToFragment() {
     if (element instanceof HTMLElement) {
       element.scrollIntoView();
     }
-  }, []);
+  }, [fragment]);
 }

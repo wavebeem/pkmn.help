@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useHistory } from "react-router-dom";
-import { Type, typesFromString } from "./data";
+import { CoverageType, Type, typesFromString } from "./data";
 import * as Matchups from "./Matchups";
 import TypeSelector from "./TypeSelector";
 import { useScrollToFragment } from "./useScrollToFragment";
@@ -8,9 +8,13 @@ import { useSearch } from "./useSearch";
 
 interface DefenseProps {
   setDefenseParams: (params: string) => void;
+  fallbackCoverageTypes: CoverageType[];
 }
 
-export default function ScreenDefense(props: DefenseProps) {
+export default function ScreenDefense({
+  setDefenseParams,
+  fallbackCoverageTypes,
+}: DefenseProps) {
   useScrollToFragment();
 
   const search = useSearch();
@@ -46,7 +50,8 @@ export default function ScreenDefense(props: DefenseProps) {
 
   const params = createParams([type1, type2]);
   React.useEffect(() => {
-    props.setDefenseParams(params);
+    setDefenseParams(params);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params]);
 
   const classH2 = "tc f5 mv3";
@@ -70,7 +75,11 @@ export default function ScreenDefense(props: DefenseProps) {
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
-        <Matchups.Defense type1={type1} type2={type2} />
+        <Matchups.Defense
+          type1={type1}
+          type2={type2}
+          fallbackCoverageTypes={fallbackCoverageTypes}
+        />
       </div>
     </main>
   );

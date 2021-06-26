@@ -11,8 +11,13 @@ interface TypeSelectorProps {
   disabledTypes: Type[];
 }
 
-export default function TypeSelector(props: TypeSelectorProps) {
-  const theTypes = props.includeNone ? typesOrNone : types;
+export default function TypeSelector({
+  onChange,
+  value,
+  includeNone,
+  disabledTypes,
+}: TypeSelectorProps) {
+  const theTypes = includeNone ? typesOrNone : types;
   const styles = {
     disabled: "border4 fg4 bg2 o-60",
     selected: "border2 type-bg-dark no-box-shadow button-shadow",
@@ -21,8 +26,8 @@ export default function TypeSelector(props: TypeSelectorProps) {
   return (
     <div className="TypeSelector-Container">
       {theTypes.map((type) => {
-        const isDisabled = props.disabledTypes.includes(type);
-        const isSelected = type === props.value;
+        const isDisabled = disabledTypes.includes(type);
+        const isSelected = type === value;
         const style = isDisabled
           ? styles.disabled
           : isSelected
@@ -43,13 +48,13 @@ export default function TypeSelector(props: TypeSelectorProps) {
               "active-squish",
               `type-${type}`
             )}
-            onClick={() => props.onChange(type)}
+            onClick={() => onChange(type)}
           >
             <span className="flex flex-row items-center justify-center">
               <span
                 className={classnames(
                   `type-${type} b--black br-pill ba`,
-                  type === props.value
+                  type === value
                     ? "border1 type-bg-light"
                     : "border2 type-bg-dark"
                 )}

@@ -16,7 +16,7 @@ const ScreenError: React.FC<ScreenErrorProps> = ({ error }) => {
         describing how to reproduce this error, and include the following error
         message:
       </p>
-      <pre className="f5 bg2 pa2 br2 ba border4 overflow-x-auto">
+      <pre className="f5 bg1 pa2 br2 ba border3 overflow-x-auto">
         {error.message}
       </pre>
       <p>
