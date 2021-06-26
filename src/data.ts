@@ -45,6 +45,14 @@ export function typesFromString(str: string): Type[] {
   return str.split(/\s+/).filter(isType);
 }
 
+function isTypeOrNone(str: string): str is Type {
+  return typesOrNone.some((t) => t === str);
+}
+
+export function typesOrNoneFromString(str: string): Type[] {
+  return str.split(/\s+/).filter(isTypeOrNone);
+}
+
 export const types = [
   Type.NORMAL,
   Type.FIGHTING,
