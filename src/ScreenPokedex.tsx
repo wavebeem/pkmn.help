@@ -2,11 +2,10 @@ import classnames from "classnames";
 import matchSorter from "match-sorter";
 import * as React from "react";
 import { Link, useHistory } from "react-router-dom";
-import { Type } from "./data";
+import { Pokemon, Type } from "./data";
 import { getImage } from "./getImage";
 import Paginator from "./Paginator";
 import { pickTranslation } from "./pickTranslation";
-import { AllPokemon, Pokemon } from "./pkmn";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
 import { useSearch } from "./useSearch";
@@ -105,16 +104,17 @@ function Monster(props: MonsterProps) {
 Monster.displayName = "Monster";
 
 interface DexProps {
+  allPokemon: Pokemon[];
   setPokedexParams: (params: string) => void;
+  isLoading: boolean;
 }
 
 export default function ScreenPokedex(props: DexProps) {
+  const AllPokemon = props.allPokemon;
   const search = useSearch();
   const history = useHistory();
-
   const query = search.get("q") || "";
   const page = Number(search.get("page") || 1) - 1;
-
   const pkmn = React.useMemo(() => {
     const s = query.trim();
     if (/^[0-9]+$/.test(s)) {
@@ -122,7 +122,7 @@ export default function ScreenPokedex(props: DexProps) {
       return AllPokemon.filter((p) => p.number === number);
     }
     return matchSorter(AllPokemon, s, { keys: ["name", "number"] });
-  }, [query]);
+  }, [query, AllPokemon]);
 
   function createParams(newQuery: string, newPage: number): string {
     const params = new URLSearchParams();
@@ -143,6 +143,7 @@ export default function ScreenPokedex(props: DexProps) {
   const params = createParams(query, page);
   React.useEffect(() => {
     props.setPokedexParams(params);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params]);
 
   return (
@@ -153,20 +154,24 @@ export default function ScreenPokedex(props: DexProps) {
           update(newQuery, 0);
         }}
       />
-      <Paginator
-        currentPage={page}
-        urlForPage={(newPage) => {
-          return createParams(query, newPage);
-        }}
-        pageSize={PAGE_SIZE}
-        emptyState={<p className="fg4 f4 b tc m0">No Pokémon found</p>}
-        items={pkmn}
-        renderPage={(page) =>
-          page.map((pokemon, index) => (
-            <Monster key={pokemon.id} pokemon={pokemon} index={index} />
-          ))
-        }
-      />
+      {props.isLoading ? (
+        <div className="Spinner center mt4 f2" />
+      ) : (
+        <Paginator
+          currentPage={page}
+          urlForPage={(newPage) => {
+            return createParams(query, newPage);
+          }}
+          pageSize={PAGE_SIZE}
+          emptyState={<p className="fg4 f4 b tc m0">No Pokémon found</p>}
+          items={pkmn}
+          renderPage={(page) =>
+            page.map((pokemon, index) => (
+              <Monster key={pokemon.id} pokemon={pokemon} index={index} />
+            ))
+          }
+        />
+      )}
     </main>
   );
 }

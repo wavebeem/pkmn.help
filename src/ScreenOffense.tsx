@@ -9,12 +9,16 @@ interface OffenseProps {
   coverageTypes?: CoverageType[];
   setCoverageTypes: (types: CoverageType[]) => void;
   setOffenseParams: (params: string) => void;
+  fallbackCoverageTypes: CoverageType[];
+  isLoading: boolean;
 }
 
 export default function ScreenOffense({
   coverageTypes,
   setCoverageTypes,
   setOffenseParams,
+  fallbackCoverageTypes,
+  isLoading,
 }: OffenseProps) {
   const search = useSearch();
   const history = useHistory();
@@ -35,6 +39,7 @@ export default function ScreenOffense({
   const params = createParams(offenseTypes);
   React.useEffect(() => {
     setOffenseParams(params);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params]);
 
   const classH2 = "tc f5 mv3";
@@ -50,6 +55,8 @@ export default function ScreenOffense({
           coverageTypes={coverageTypes}
           setCoverageTypes={setCoverageTypes}
           types={offenseTypes}
+          fallbackCoverageTypes={fallbackCoverageTypes}
+          isLoading={isLoading}
         />
       </div>
     </main>

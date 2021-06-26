@@ -97,6 +97,14 @@
   border-color: var(--color-border1);
 }
 
+.no-pointer {
+  pointer-events: none;
+}
+
+.cursor-na {
+  cursor: not-allowed;
+}
+
 .fg-link {
   color: var(--color-link);
 }

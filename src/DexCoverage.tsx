@@ -1,16 +1,17 @@
 import * as React from "react";
 import { CoverageType, Effectiveness, matchupFor, Type } from "./data";
 import { PercentBar } from "./PercentBar";
-import { fallbackCoverageTypes } from "./pkmn";
 
 interface DexCoverageProps {
-  coverageTypes?: CoverageType[];
+  coverageTypes: CoverageType[];
   types: Type[];
+  isLoading: boolean;
 }
 
 const DexCoverage: React.FC<DexCoverageProps> = ({
-  coverageTypes = fallbackCoverageTypes,
+  coverageTypes,
   types,
+  isLoading,
 }) => {
   const count = coverageTypes.filter(({ type1, type2 }) => {
     const matchups = types.map((t) => matchupFor(type1, type2, t));
@@ -19,16 +20,22 @@ const DexCoverage: React.FC<DexCoverageProps> = ({
     });
   }).length;
   const total = coverageTypes.length;
-  const ratio = count / total;
+  const ratio = count / total || 0;
   const percent = (ratio * 100).toFixed(0);
   return (
     <div className="pt1 tabular-nums flex flex-column lh-copy">
       <PercentBar value={count} max={total} />
       <div className="flex items-center">
-        <div className="tl mr2 w3">{percent}%</div>
-        <div className="flex-auto tr">
-          {count} / {total} forms
-        </div>
+        {isLoading ? (
+          <div className="flex-auto tc">Loading...</div>
+        ) : (
+          <>
+            <div className="tl mr2 w3">{percent}%</div>
+            <div className="flex-auto tr">
+              {count} / {total} forms
+            </div>
+          </>
+        )}
       </div>
     </div>
   );

@@ -9,14 +9,7 @@ import {
   offensiveMatchups,
   Type,
 } from "./data";
-
-const DexCoverage = React.lazy(async () => {
-  return await import(
-    /* webpackChunkName: "DexCoverage" */
-    /* webpackPrefetch: true */
-    "./DexCoverage"
-  );
-});
+import DexCoverage from "./DexCoverage";
 
 interface BadgeProps {
   type: Type;
@@ -65,20 +58,22 @@ Section.displayName = "Section";
 
 interface MatchupsProps {
   coverageTypes?: CoverageType[];
-  setCoverageTypes: (types: CoverageType[]) => void;
   kind: "offense" | "defense";
   types: Type[];
   formatTitle: (value: string) => string;
   matchups: GroupedMatchups;
+  fallbackCoverageTypes: CoverageType[];
+  isLoading: boolean;
 }
 
 function Matchups({
   coverageTypes,
-  setCoverageTypes,
   kind,
   types,
   formatTitle,
   matchups,
+  fallbackCoverageTypes,
+  isLoading,
 }: MatchupsProps) {
   return (
     <div className="tc pt2" id={`matchup-${kind}`}>
@@ -97,19 +92,17 @@ function Matchups({
               )
             </span>
           </h3>
-          <div className="pt1 mw5 center tc">
-            <React.Suspense
-              fallback={
-                <div
-                  style={{ minHeight: 44 }}
-                  className="flex justify-center items-center"
-                >
-                  <div className="Spinner f2 center" />
-                </div>
-              }
-            >
-              <DexCoverage coverageTypes={coverageTypes} types={types} />
-            </React.Suspense>
+          <div
+            className={classnames(
+              "pt1 mw5 center tc",
+              isLoading && ["o-30 no-pointer cursor-na"]
+            )}
+          >
+            <DexCoverage
+              coverageTypes={coverageTypes ?? fallbackCoverageTypes}
+              types={types}
+              isLoading={isLoading}
+            />
           </div>
         </div>
       ) : null}
@@ -146,16 +139,18 @@ Matchups.displayName = "Matchups";
 export interface DefenseProps {
   type1: Type;
   type2: Type;
+  fallbackCoverageTypes: CoverageType[];
 }
 
-export function Defense({ type1, type2 }: DefenseProps) {
+export function Defense({ type1, type2, fallbackCoverageTypes }: DefenseProps) {
   return (
     <Matchups
       kind="defense"
-      setCoverageTypes={() => {}}
       types={[type1, type2]}
       formatTitle={(x) => `Takes ${x} From`}
       matchups={defensiveMatchups(type1, type2)}
+      fallbackCoverageTypes={fallbackCoverageTypes}
+      isLoading={false}
     />
   );
 }
@@ -166,21 +161,25 @@ export interface OffenseProps {
   coverageTypes?: CoverageType[];
   setCoverageTypes: (types: CoverageType[]) => void;
   types: Type[];
+  fallbackCoverageTypes: CoverageType[];
+  isLoading: boolean;
 }
 
 export function Offense({
   coverageTypes,
-  setCoverageTypes,
   types,
+  fallbackCoverageTypes,
+  isLoading,
 }: OffenseProps) {
   return (
     <Matchups
       kind="offense"
       types={types}
       coverageTypes={coverageTypes}
-      setCoverageTypes={setCoverageTypes}
       formatTitle={(x) => `Deals ${x} to`}
       matchups={offensiveMatchups(types)}
+      fallbackCoverageTypes={fallbackCoverageTypes}
+      isLoading={isLoading}
     />
   );
 }

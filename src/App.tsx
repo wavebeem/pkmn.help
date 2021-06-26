@@ -1,33 +1,12 @@
 import classnames from "classnames";
 import * as React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
-import { CoverageType } from "./data";
+import { CoverageType, Pokemon } from "./data";
+import ScreenOffense from "./ScreenOffense";
 import ScreenDefense from "./ScreenDefense";
 import ScreenInfo from "./ScreenInfo";
-
-const ScreenPokedex = React.lazy(async () => {
-  return await import(
-    /* webpackChunkName: "ScreenPokedex" */
-    /* webpackPrefetch: true */
-    "./ScreenPokedex"
-  );
-});
-
-const ScreenWeaknessCoverage = React.lazy(async () => {
-  return await import(
-    /* webpackChunkName: "ScreenWeaknessCoverage" */
-    /* webpackPrefetch: true */
-    "./ScreenWeaknessCoverage"
-  );
-});
-
-const ScreenOffense = React.lazy(async () => {
-  return await import(
-    /* webpackChunkName: "ScreenOffense" */
-    /* webpackPrefetch: true */
-    "./ScreenOffense"
-  );
-});
+import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
+import ScreenPokedex from "./ScreenPokedex";
 
 const tabClass = classnames([
   "no-underline",
@@ -45,7 +24,29 @@ export default function App() {
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
-  const [coverageTypes, setCoverageTypes] = React.useState<CoverageType[]>();
+  const [isLoading, setIsLoading] = React.useState(true);
+  const [coverageTypes, setCoverageTypes] = React.useState<CoverageType[]>([]);
+  const [fallbackCoverageTypes, setFallbackCoverageTypes] = React.useState<
+    CoverageType[]
+  >([]);
+  const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
+  React.useEffect(() => {
+    async function load() {
+      const bigPKMN = await import(
+        /* webpackChunkName: "big-pkmn" */
+        /* webpackPrefetch: true */
+        "./big-pkmn"
+      );
+      await new Promise((resolve) => {
+        setTimeout(resolve, 5000);
+      });
+      setIsLoading(false);
+      setCoverageTypes(bigPKMN.fallbackCoverageTypes);
+      setFallbackCoverageTypes(bigPKMN.fallbackCoverageTypes);
+      setAllPokemon(bigPKMN.AllPokemon);
+    }
+    load();
+  }, []);
   return (
     <div className="sans-serif bg2 fg1 min-vh-100 flex flex-column">
       <div className="flex-auto">
@@ -98,42 +99,43 @@ export default function App() {
           <Route
             path="/offense/coverage"
             render={() => (
-              <React.Suspense
-                fallback={<div className="Spinner center mt4 f2" />}
-              >
-                <ScreenWeaknessCoverage
-                  setCoverageTypes={setCoverageTypes}
-                  offenseParams={offenseParams}
-                />
-              </React.Suspense>
+              <ScreenWeaknessCoverage
+                setCoverageTypes={setCoverageTypes}
+                offenseParams={offenseParams}
+                fallbackCoverageTypes={fallbackCoverageTypes}
+                isLoading={isLoading}
+              />
             )}
           />
           <Route
             path="/offense"
             render={() => (
-              <React.Suspense
-                fallback={<div className="Spinner center mt4 f2" />}
-              >
-                <ScreenOffense
-                  coverageTypes={coverageTypes}
-                  setCoverageTypes={setCoverageTypes}
-                  setOffenseParams={setOffenseParams}
-                />
-              </React.Suspense>
+              <ScreenOffense
+                coverageTypes={coverageTypes}
+                setCoverageTypes={setCoverageTypes}
+                setOffenseParams={setOffenseParams}
+                fallbackCoverageTypes={fallbackCoverageTypes}
+                isLoading={isLoading}
+              />
             )}
           />
           <Route
             path="/defense"
-            render={() => <ScreenDefense setDefenseParams={setDefenseParams} />}
+            render={() => (
+              <ScreenDefense
+                setDefenseParams={setDefenseParams}
+                fallbackCoverageTypes={fallbackCoverageTypes}
+              />
+            )}
           />
           <Route
             path="/pokedex"
             render={() => (
-              <React.Suspense
-                fallback={<div className="Spinner center mt4 f2" />}
-              >
-                <ScreenPokedex setPokedexParams={setPokedexParams} />
-              </React.Suspense>
+              <ScreenPokedex
+                setPokedexParams={setPokedexParams}
+                allPokemon={AllPokemon}
+                isLoading={isLoading}
+              />
             )}
           />
           <Route path="/info" component={ScreenInfo} />
