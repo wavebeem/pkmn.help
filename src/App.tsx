@@ -37,9 +37,6 @@ export default function App() {
         /* webpackPrefetch: true */
         "./big-pkmn"
       );
-      await new Promise((resolve) => {
-        setTimeout(resolve, 5000);
-      });
       setIsLoading(false);
       setCoverageTypes(bigPKMN.fallbackCoverageTypes);
       setFallbackCoverageTypes(bigPKMN.fallbackCoverageTypes);
