@@ -7,8 +7,7 @@ interface SearchProps {
   search: string;
 }
 
-export default function Search(props: SearchProps) {
-  const { updateSearch, search } = props;
+export default function Search({ updateSearch, search }: SearchProps) {
   const ref = React.useRef<HTMLInputElement>(null);
   const iconSize = 24;
   const inputHeight = 36;

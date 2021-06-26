@@ -5,8 +5,7 @@ export interface PercentBarProps {
   max: number;
 }
 
-export function PercentBar(props: PercentBarProps) {
-  const { value, max } = props;
+export function PercentBar({ value, max }: PercentBarProps) {
   return (
     <div className="flex h1 w-100 Bar-Container">
       <div

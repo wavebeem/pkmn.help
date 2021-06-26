@@ -11,7 +11,10 @@ interface DefenseProps {
   fallbackCoverageTypes: CoverageType[];
 }
 
-export default function ScreenDefense(props: DefenseProps) {
+export default function ScreenDefense({
+  setDefenseParams,
+  fallbackCoverageTypes,
+}: DefenseProps) {
   useScrollToFragment();
 
   const search = useSearch();
@@ -47,7 +50,7 @@ export default function ScreenDefense(props: DefenseProps) {
 
   const params = createParams([type1, type2]);
   React.useEffect(() => {
-    props.setDefenseParams(params);
+    setDefenseParams(params);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params]);
 
@@ -75,7 +78,7 @@ export default function ScreenDefense(props: DefenseProps) {
         <Matchups.Defense
           type1={type1}
           type2={type2}
-          fallbackCoverageTypes={props.fallbackCoverageTypes}
+          fallbackCoverageTypes={fallbackCoverageTypes}
         />
       </div>
     </main>

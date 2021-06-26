@@ -8,8 +8,7 @@ export interface StatsTableProps {
   pokemon: Pokemon;
 }
 
-export default function StatsTable(props: StatsTableProps) {
-  const { pokemon } = props;
+export default function StatsTable({ pokemon }: StatsTableProps) {
   const { hp, attack, defense, spAttack, spDefense, speed } = pokemon;
   return (
     <div className="StatsTable tabular-nums">
