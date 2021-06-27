@@ -2,11 +2,12 @@ import classnames from "classnames";
 import * as React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { CoverageType, Pokemon } from "./data";
-import ScreenOffense from "./ScreenOffense";
 import ScreenDefense from "./ScreenDefense";
 import ScreenInfo from "./ScreenInfo";
-import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
+import ScreenOffense from "./ScreenOffense";
 import ScreenPokedex from "./ScreenPokedex";
+import ScreenPokedexHelp from "./ScreenPokedexHelp";
+import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 
 const tabClass = classnames([
   "no-underline",
@@ -124,6 +125,10 @@ export default function App() {
                 fallbackCoverageTypes={fallbackCoverageTypes}
               />
             )}
+          />
+          <Route
+            path="/pokedex/help"
+            render={() => <ScreenPokedexHelp pokedexParams={pokedexParams} />}
           />
           <Route
             path="/pokedex"

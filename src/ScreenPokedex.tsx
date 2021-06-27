@@ -172,6 +172,12 @@ export default function ScreenPokedex({
           update(newQuery, 0);
         }}
       />
+      <div className="flex justify-between ph2 nt2 pb3 bb border4">
+        <span className="fg3">Search by name, number, or types</span>
+        <Link to="/pokedex/help" className="underline fg-link OutlineFocus">
+          Search help
+        </Link>
+      </div>
       {isLoading ? (
         <div className="Spinner center mt4 f2" />
       ) : (
