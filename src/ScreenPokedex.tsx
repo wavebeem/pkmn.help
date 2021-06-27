@@ -81,7 +81,7 @@ function Monster({ pokemon }: MonsterProps) {
           <Link
             aria-label={`Offense for ${speciesName} (${formName})`}
             className="underline fg-link OutlineFocus"
-            to={`/offense?${params}`}
+            to={`/offense?${params}#matchup-offense`}
           >
             Offense
           </Link>
@@ -91,7 +91,7 @@ function Monster({ pokemon }: MonsterProps) {
           <Link
             aria-label={`Defense for ${speciesName} (${formName})`}
             className="underline fg-link OutlineFocus"
-            to={`/defense?${params}`}
+            to={`/defense?${params}#matchup-defense`}
           >
             Defense
           </Link>
@@ -185,10 +185,10 @@ export default function ScreenPokedex({
           update(newQuery, 0);
         }}
       />
-      <div className="flex justify-between ph2 nt2 pb3 bb border4">
+      <div className="flex justify-between ph2 nt2 pb3 bb border4 f6">
         <span className="fg3">Search by name, number, or types</span>
         <Link to="/pokedex/help" className="underline fg-link OutlineFocus">
-          Search help
+          Help
         </Link>
       </div>
       {isLoading ? (
