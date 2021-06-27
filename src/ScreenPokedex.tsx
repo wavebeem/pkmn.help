@@ -117,15 +117,26 @@ export default function ScreenPokedex({
   const history = useHistory();
   const query = search.get("q") || "";
   const page = Number(search.get("page") || 1) - 1;
+
+  const searchablePkmn = React.useMemo(() => {
+    return allPokemon.map((p) => {
+      return {
+        ...p,
+        speciesName: pickTranslation(p.speciesNames),
+        formName: pickTranslation(p.formNames),
+      };
+    });
+  }, [allPokemon]);
+
   const pkmn = React.useMemo(() => {
     const s = query.trim();
     if (/^[0-9]+$/.test(s)) {
       const number = Number(s);
-      return allPokemon.filter((p) => p.number === number);
+      return searchablePkmn.filter((p) => p.number === number);
     }
     const types = typesOrNoneFromString(s);
     if (types.length > 0) {
-      return allPokemon.filter((p) => {
+      return searchablePkmn.filter((p) => {
         if (types.length === 1) {
           return p.types[0] === types[0] || p.types[1] === types[0];
         }
@@ -137,10 +148,10 @@ export default function ScreenPokedex({
         );
       });
     }
-    return matchSorter(allPokemon, s, {
-      keys: ["name", "number"],
+    return matchSorter(searchablePkmn, s, {
+      keys: ["speciesName", "formName", "number"],
     });
-  }, [query, allPokemon]);
+  }, [query, searchablePkmn]);
 
   function createParams(newQuery: string, newPage: number): string {
     const params = new URLSearchParams();
