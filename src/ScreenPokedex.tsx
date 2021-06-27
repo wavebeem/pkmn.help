@@ -9,6 +9,7 @@ import { pickTranslation } from "./pickTranslation";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
 import { useSearch } from "./useSearch";
+import { useDebounce } from "use-debounce";
 
 const PAGE_SIZE = 20;
 const nbsp = "\u00a0";
@@ -80,7 +81,7 @@ function Monster({ pokemon }: MonsterProps) {
           <Link
             aria-label={`Offense for ${speciesName} (${formName})`}
             className="underline fg-link OutlineFocus"
-            to={`/offense?${params}`}
+            to={`/offense?${params}#matchup-offense`}
           >
             Offense
           </Link>
@@ -90,7 +91,7 @@ function Monster({ pokemon }: MonsterProps) {
           <Link
             aria-label={`Defense for ${speciesName} (${formName})`}
             className="underline fg-link OutlineFocus"
-            to={`/defense?${params}`}
+            to={`/defense?${params}#matchup-defense`}
           >
             Defense
           </Link>
@@ -116,16 +117,28 @@ export default function ScreenPokedex({
   const search = useSearch();
   const history = useHistory();
   const query = search.get("q") || "";
+  const [debouncedQuery] = useDebounce(query, 500);
   const page = Number(search.get("page") || 1) - 1;
+
+  const searchablePkmn = React.useMemo(() => {
+    return allPokemon.map((p) => {
+      return {
+        ...p,
+        speciesName: pickTranslation(p.speciesNames),
+        formName: pickTranslation(p.formNames),
+      };
+    });
+  }, [allPokemon]);
+
   const pkmn = React.useMemo(() => {
-    const s = query.trim();
+    const s = debouncedQuery.trim();
     if (/^[0-9]+$/.test(s)) {
       const number = Number(s);
-      return allPokemon.filter((p) => p.number === number);
+      return searchablePkmn.filter((p) => p.number === number);
     }
     const types = typesOrNoneFromString(s);
     if (types.length > 0) {
-      return allPokemon.filter((p) => {
+      return searchablePkmn.filter((p) => {
         if (types.length === 1) {
           return p.types[0] === types[0] || p.types[1] === types[0];
         }
@@ -137,10 +150,10 @@ export default function ScreenPokedex({
         );
       });
     }
-    return matchSorter(allPokemon, s, {
-      keys: ["name", "number"],
+    return matchSorter(searchablePkmn, s, {
+      keys: ["speciesName", "formName", "number"],
     });
-  }, [query, allPokemon]);
+  }, [debouncedQuery, searchablePkmn]);
 
   function createParams(newQuery: string, newPage: number): string {
     const params = new URLSearchParams();
@@ -172,10 +185,10 @@ export default function ScreenPokedex({
           update(newQuery, 0);
         }}
       />
-      <div className="flex justify-between ph2 nt2 pb3 bb border4">
+      <div className="flex justify-between ph2 nt2 pb3 bb border4 f6">
         <span className="fg3">Search by name, number, or types</span>
         <Link to="/pokedex/help" className="underline fg-link OutlineFocus">
-          Search help
+          Help
         </Link>
       </div>
       {isLoading ? (
