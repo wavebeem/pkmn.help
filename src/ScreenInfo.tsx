@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
 export default function ScreenInfo() {
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f5">Contact Me</h2>
+      <h2 className="lh-title f4">Contact Me</h2>
       <p>
         Questions, suggestions, or just want to say thank you? Email me at{" "}
         <a
@@ -23,7 +23,7 @@ export default function ScreenInfo() {
         </a>
         .
       </p>
-      <h2 className="lh-title f5">Privacy</h2>
+      <h2 className="lh-title f4">Privacy</h2>
       <p>
         I will never runs ads or steal your personal data. I use{" "}
         <a
@@ -35,18 +35,18 @@ export default function ScreenInfo() {
         , which is self-funded, independent, hosted in the EU, and doesn&apos;t
         store any cookies on your computer.
       </p>
-      <h2 className="lh-title f5">Giving Back</h2>
+      <h2 className="lh-title f4">Giving Back</h2>
       <p>
         I have spent countless hours improving this site. If you appreciate what
         I&apos;ve made, please consider donating to charities that support BIPOC
         and transgender rights.
       </p>
-      <h2 className="lh-title f5">Special Thanks</h2>
+      <h2 className="lh-title f4">Special Thanks</h2>
       <ul className="lh-copy mt1 ph3">
         <li>Jansjo (testing, research)</li>
         <li>Several anonymous Poké Fans</li>
       </ul>
-      <h2 className="lh-title f5">Legal Info</h2>
+      <h2 className="lh-title f4">Legal Info</h2>
       <p>
         Pokémon &copy; 2002&ndash;{year} Pokémon. &copy; 1995&ndash;{year}{" "}
         Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &reg; and Pokémon

@@ -13,8 +13,8 @@ export default class ErrorBoundary extends React.Component<
   ErrorBoundaryState
 > {
   static displayName = "ErrorBoundary";
-  constructor({ render }: ErrorBoundaryProps) {
-    super({ render });
+  constructor(props: ErrorBoundaryProps) {
+    super(props);
     this.state = {};
   }
 
