@@ -9,6 +9,7 @@ import { pickTranslation } from "./pickTranslation";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
 import { useSearch } from "./useSearch";
+import { useDebounce } from "use-debounce";
 
 const PAGE_SIZE = 20;
 const nbsp = "\u00a0";
@@ -116,6 +117,7 @@ export default function ScreenPokedex({
   const search = useSearch();
   const history = useHistory();
   const query = search.get("q") || "";
+  const [debouncedQuery] = useDebounce(query, 500);
   const page = Number(search.get("page") || 1) - 1;
 
   const searchablePkmn = React.useMemo(() => {
@@ -129,7 +131,7 @@ export default function ScreenPokedex({
   }, [allPokemon]);
 
   const pkmn = React.useMemo(() => {
-    const s = query.trim();
+    const s = debouncedQuery.trim();
     if (/^[0-9]+$/.test(s)) {
       const number = Number(s);
       return searchablePkmn.filter((p) => p.number === number);
@@ -151,7 +153,7 @@ export default function ScreenPokedex({
     return matchSorter(searchablePkmn, s, {
       keys: ["speciesName", "formName", "number"],
     });
-  }, [query, searchablePkmn]);
+  }, [debouncedQuery, searchablePkmn]);
 
   function createParams(newQuery: string, newPage: number): string {
     const params = new URLSearchParams();
