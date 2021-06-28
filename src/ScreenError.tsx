@@ -20,8 +20,9 @@ const ScreenError: React.FC<ScreenErrorProps> = ({ error }) => {
         {error.message}
       </pre>
       <p>
+        <b aria-hidden="true">&larr;</b>{" "}
         <a href="/" className="f3 fg-link">
-          &larr; Back to pkmn.help
+          Back to pkmn.help
         </a>
       </p>
     </div>

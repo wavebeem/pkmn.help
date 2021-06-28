@@ -47,12 +47,12 @@ export default function ScreenPokdexHelp({
         </li>
       </ul>
       <p>
+        <b aria-hidden="true">&larr;</b>{" "}
         <Link
           to={`/pokedex${pokedexParams}`}
           className="underline fg-link OutlineFocus"
-          aria-label="Back to Pokédex"
         >
-          &larr; Back to Pokédex
+          Back to Pokédex
         </Link>
       </p>
     </main>
