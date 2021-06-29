@@ -25,7 +25,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
         width={iconSize}
         height={iconSize}
         role="presentation"
-        className="o-50 absolute dark:invert"
+        className="o-50 absolute dark--invert"
         style={{ left: 10, top: 8 }}
       />
       <input
@@ -63,7 +63,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
             ref.current.focus();
           }
         }}
-        className={classnames("o-50 absolute dark:invert", {
+        className={classnames("o-50 absolute dark--invert", {
           dn: search === "",
         })}
         style={{ right: 6, top: 6 }}

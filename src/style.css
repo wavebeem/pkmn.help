@@ -53,7 +53,7 @@
     --color-scroll-bg: hsl(220, 20%, 30%);
   }
 
-  .dark\:invert {
+  .dark--invert {
     filter: invert(1);
   }
 }
