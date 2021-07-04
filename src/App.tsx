@@ -1,6 +1,13 @@
 import classnames from "classnames";
 import * as React from "react";
-import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
+import {
+  Link,
+  NavLink,
+  Redirect,
+  Route,
+  Switch,
+  useHistory,
+} from "react-router-dom";
 import { CoverageType, Pokemon } from "./data";
 import ScreenDefense from "./ScreenDefense";
 import ScreenInfo from "./ScreenInfo";
@@ -8,6 +15,7 @@ import ScreenOffense from "./ScreenOffense";
 import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
+import useShortcut, { cmdCtrlKey } from "./useShortcut";
 
 const tabClass = classnames([
   "no-underline",
@@ -22,6 +30,7 @@ const tabClass = classnames([
 const tabClassActive = classnames(["fg1 bottom-border-thick-current"]);
 
 export default function App() {
+  const history = useHistory();
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
@@ -31,6 +40,18 @@ export default function App() {
     CoverageType[]
   >([]);
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
+
+  // Navigate to pokedex page on pressing cmd/ctrl-f
+  useShortcut(
+    (event: KeyboardEvent): void => {
+      if (event[cmdCtrlKey] && event.key === "f") {
+        event.preventDefault();
+        history.push(`/pokedex${pokedexParams}`);
+      }
+    },
+    [history, pokedexParams]
+  );
+
   React.useEffect(() => {
     async function load() {
       const bigPKMN = await import(

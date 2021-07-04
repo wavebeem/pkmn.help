@@ -1,6 +1,7 @@
 import classnames from "classnames";
 import * as React from "react";
 import { PUBLIC_PATH } from "./settings";
+import useShortcut, { cmdCtrlKey } from "./useShortcut";
 
 interface SearchProps {
   updateSearch: (search: string) => void;
@@ -18,6 +19,23 @@ export default function Search({ updateSearch, search }: SearchProps) {
   const ref = React.useRef<HTMLInputElement>(null);
   const iconSize = 24;
   const inputHeight = 36;
+
+  // Select contents of search input when switching to the page
+  React.useEffect(() => {
+    ref?.current?.select();
+  }, [ref]);
+
+  // Select contents of search input when pressing cmd/ctrl-f
+  useShortcut(
+    (event: KeyboardEvent): void => {
+      if (event[cmdCtrlKey] && event.key === "f") {
+        event.preventDefault();
+        ref?.current?.select();
+      }
+    },
+    [ref]
+  );
+
   return (
     <div className="relative mv3">
       <img
