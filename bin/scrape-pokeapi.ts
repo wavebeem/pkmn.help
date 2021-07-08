@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import path from "path";
-import fs from "fs";
 import { URL } from "url";
+import { saveJSON } from "./saveJSON";
 
 const API = process.env.API || "https://pokeapi.co/api/v2/";
 const DEST = path.resolve(__dirname, "../data");
@@ -100,14 +100,6 @@ async function fetchPaginated<T>(url: string, limit = Infinity): Promise<T[]> {
     results.length = limit;
   }
   return results;
-}
-
-function saveJSON(filename: string, data: any): void {
-  fs.writeFileSync(
-    path.resolve(__dirname, filename),
-    JSON.stringify(data, null, 2),
-    "utf-8"
-  );
 }
 
 function toObject<T, K extends string, V>({

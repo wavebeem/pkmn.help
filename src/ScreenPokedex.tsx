@@ -78,6 +78,16 @@ function Monster({ pokemon }: MonsterProps) {
       <div className="flex flex-column">
         <StatsTable pokemon={pokemon} />
         <div className="flex justify-end">
+          <a
+            aria-label={`Bulbapedia page for ${speciesName}`}
+            className="underline fg-link OutlineFocus"
+            href={pokemon.bulbapediaURL}
+          >
+            Bulbapedia
+          </a>
+          <span aria-hidden="true" className="o-50">
+            &nbsp;&bull;&nbsp;
+          </span>
           <Link
             aria-label={`Offense for ${speciesName} (${formName})`}
             className="underline fg-link OutlineFocus"
