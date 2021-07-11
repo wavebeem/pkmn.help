@@ -7,6 +7,7 @@ interface PurgePluginOptions {
   exclude?: FilterPattern;
 }
 
+// TODO: This function is a mess. Refactor it a bit, please...
 export function purgePlugin({
   include,
   exclude,
