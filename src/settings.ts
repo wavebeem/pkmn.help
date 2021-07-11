@@ -1,1 +1,4 @@
-export const PUBLIC_PATH = import.meta.env.BASE_URL;
+export const PUBLIC_PATH = new URL(
+  import.meta.env.BASE_URL,
+  window.location.href
+).href;

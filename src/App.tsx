@@ -1,13 +1,14 @@
 import classnames from "classnames";
 import * as React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
-import { CoverageType, Pokemon } from "./data";
+import { CoverageType, Pokemon, Type } from "./data";
 import ScreenDefense from "./ScreenDefense";
 import ScreenInfo from "./ScreenInfo";
 import ScreenOffense from "./ScreenOffense";
 import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
+import { PUBLIC_PATH } from "./settings";
 
 const tabClass = classnames([
   "no-underline",
@@ -33,15 +34,21 @@ export default function App() {
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
   React.useEffect(() => {
     async function load() {
-      const bigPKMN = await import(
-        /* webpackChunkName: "big-pkmn" */
-        /* webpackPrefetch: true */
-        "./big-pkmn"
-      );
+      const bigURL = new URL("data-pkmn.json", PUBLIC_PATH).href;
+      const resp = await fetch(bigURL);
+      const allPokemon: Pokemon[] = await resp.json();
+      const fallbackCoverageTypes = allPokemon.map<CoverageType>((pkmn) => {
+        return {
+          number: String(pkmn.number),
+          name: pkmn.name,
+          type1: pkmn.types[0],
+          type2: pkmn.types[1] ?? Type.NONE,
+        };
+      });
       setIsLoading(false);
-      setCoverageTypes(bigPKMN.fallbackCoverageTypes);
-      setFallbackCoverageTypes(bigPKMN.fallbackCoverageTypes);
-      setAllPokemon(bigPKMN.AllPokemon);
+      setCoverageTypes(fallbackCoverageTypes);
+      setFallbackCoverageTypes(fallbackCoverageTypes);
+      setAllPokemon(allPokemon);
     }
     load();
   }, []);
