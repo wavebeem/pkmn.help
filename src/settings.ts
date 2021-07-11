@@ -1,1 +1,1 @@
-export const PUBLIC_PATH = process.env.PUBLIC_PATH;
+export const PUBLIC_PATH = import.meta.env.BASE_URL;

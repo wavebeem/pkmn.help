@@ -1,6 +1,7 @@
 import classnames from "classnames";
 import * as React from "react";
 import { Type, types } from "./data";
+import { cssType } from "./main";
 
 const buttonInnerHeight = "1.5rem";
 
@@ -36,7 +37,7 @@ export default function MultiTypeSelector({
               "ttc",
               "SimpleFocus",
               "active-squish",
-              `type-${type}`
+              cssType(type)
             )}
             onClick={() => {
               const types = new Set(value);

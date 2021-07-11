@@ -1,6 +1,7 @@
 import classnames from "classnames";
 import * as React from "react";
 import { Type, types, typesOrNone } from "./data";
+import { cssType } from "./main";
 
 const buttonInnerHeight = "1.5rem";
 
@@ -46,14 +47,15 @@ export default function TypeSelector({
               "ttc",
               "SimpleFocus",
               "active-squish",
-              `type-${type}`
+              cssType(type)
             )}
             onClick={() => onChange(type)}
           >
             <span className="flex flex-row items-center justify-center">
               <span
                 className={classnames(
-                  `type-${type} b--black br-pill ba`,
+                  cssType(type),
+                  `b--black br-pill ba`,
                   type === value
                     ? "border1 type-bg-light"
                     : "border2 type-bg-dark"

@@ -10,6 +10,7 @@ import {
   Type,
 } from "./data";
 import DexCoverage from "./DexCoverage";
+import { cssType } from "./main";
 
 interface BadgeProps {
   type: Type;
@@ -19,7 +20,8 @@ function Badge({ type }: BadgeProps) {
   return (
     <div
       className={classnames(
-        `type-bg-dark type-${type}`,
+        `type-bg-dark`,
+        cssType(type),
         "ba border3",
         "ph1 pv1 br1",
         "ttc tc b f5"

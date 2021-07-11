@@ -10,6 +10,7 @@ import Search from "./Search";
 import StatsTable from "./StatsTable";
 import { useSearch } from "./useSearch";
 import { useDebounce } from "use-debounce";
+import { cssType } from "./main";
 
 const PAGE_SIZE = 20;
 const nbsp = "\u00a0";
@@ -23,7 +24,8 @@ function MonsterType({ type, index }: MonsterTypeProps) {
   return (
     <div
       className={classnames(
-        `type-${type} type-bg-dark`,
+        cssType(type),
+        `type-bg-dark`,
         "ttc tc flex",
         "pv0 ph2 lh-copy b",
         "br-pill ba border3 f6",

@@ -12,3 +12,7 @@ Pokémon Type Calculator helps you figure out offense/defense matchups for Poké
 $ npm install
 $ npm start
 ```
+
+## TODO
+
+Importing a massive JSON file seems to slow down the TS server, so let's switch to loading it with `fetch` instead...
