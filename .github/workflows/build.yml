@@ -166,6 +166,12 @@ jobs:
        cd $GITHUB_WORKSPACE
        7z a -tzip -p${MY_ZIP_PASSWORD} keys.zip -r keys
 
+
+    - name: Build web to deploy to github page
+      if: runner.os != 'windows'
+      run: |
+        rm -rf dist || true
+        PUBLIC_URL="https://nguoianphu.github.io/pkmn.help" CI=false npm run build
     - name: Deploy build/dist folder to github pages
       uses: s0/git-publish-subdir-action@develop
       env:
