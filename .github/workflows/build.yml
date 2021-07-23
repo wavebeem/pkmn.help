@@ -166,7 +166,13 @@ jobs:
        cd $GITHUB_WORKSPACE
        7z a -tzip -p${MY_ZIP_PASSWORD} keys.zip -r keys
 
-
+    - name: Deploy build/dist folder to github pages
+      uses: s0/git-publish-subdir-action@develop
+      env:
+        REPO: self
+        BRANCH: gh-pages
+        FOLDER: dist
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Release
       if: startsWith(github.ref, 'refs/tags/')
@@ -183,18 +189,20 @@ jobs:
 
     - uses: actions/upload-artifact@v2
       with:
-       name: CapacitorAPKs
-       retention-days: 3
+       name: Capacitor_APKs_Release
        path: |
-        ./android/app/build/outputs/apk/debug/
         ./android/app/build/outputs/apk/release/
         ./android/app/build/outputs/bundle/release/
 
+    - uses: actions/upload-artifact@v2
+      with:
+       name: Capacitor_APKs_Debug
+       path: |
+        ./android/app/build/outputs/apk/debug/
 
     - uses: actions/upload-artifact@v2
       with:
        name: Web
-       retention-days: 3
        path: |
         ./web.zip
 
