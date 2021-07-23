@@ -171,7 +171,8 @@ jobs:
       if: runner.os != 'windows'
       run: |
         rm -rf dist || true
-        PUBLIC_URL="https://nguoianphu.github.io/pkmn.help" CI=false npm run build
+        cp -Rf webpack.config.gh-pages.js webpack.config.js
+        npm run build
     - name: Deploy build/dist folder to github pages
       uses: s0/git-publish-subdir-action@develop
       env:
