@@ -1,7 +1,7 @@
 import classnames from "classnames";
 import * as React from "react";
 import { Type, types } from "./data";
-import { cssType } from "./main";
+import { cssType } from "./cssType";
 
 const buttonInnerHeight = "1.5rem";
 

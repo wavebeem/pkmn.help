@@ -10,7 +10,7 @@ import Search from "./Search";
 import StatsTable from "./StatsTable";
 import { useSearch } from "./useSearch";
 import { useDebounce } from "use-debounce";
-import { cssType } from "./main";
+import { cssType } from "./cssType";
 
 const PAGE_SIZE = 20;
 const nbsp = "\u00a0";

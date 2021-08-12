@@ -10,7 +10,7 @@ import {
   Type,
 } from "./data";
 import DexCoverage from "./DexCoverage";
-import { cssType } from "./main";
+import { cssType } from "./cssType";
 
 interface BadgeProps {
   type: Type;

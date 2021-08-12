@@ -1,7 +1,7 @@
 import classnames from "classnames";
 import * as React from "react";
 import { Type } from "./data";
-import { cssType } from "./main";
+import { cssType } from "./cssType";
 
 export interface StatBarProps {
   value: number;

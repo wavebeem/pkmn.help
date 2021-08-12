@@ -15,8 +15,7 @@ export function purgePlugin({
   const filter = createFilter(include, exclude);
   return {
     name: "purge",
-    async generateBundle(options, bundle) {
-      // console.log(bundle);
+    async generateBundle(_options, bundle) {
       const files = Object.keys(bundle);
       const purge = new PurgeCSS();
       const content = [
