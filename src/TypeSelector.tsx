@@ -84,4 +84,3 @@ export default function TypeSelector({
   );
 }
 
-TypeSelector.displayName = "TypeSelector";

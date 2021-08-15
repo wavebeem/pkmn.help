@@ -33,7 +33,6 @@ function Badge({ type }: BadgeProps) {
   );
 }
 
-Badge.displayName = "Badge";
 
 interface SectionProps {
   title: string;
@@ -56,7 +55,6 @@ function Section({ title, types }: SectionProps) {
   );
 }
 
-Section.displayName = "Section";
 
 interface MatchupsProps {
   coverageTypes?: CoverageType[];
@@ -136,7 +134,6 @@ function Matchups({
   );
 }
 
-Matchups.displayName = "Matchups";
 
 export interface DefenseProps {
   type1: Type;
@@ -157,7 +154,6 @@ export function Defense({ type1, type2, fallbackCoverageTypes }: DefenseProps) {
   );
 }
 
-Defense.displayName = "Matchups.Defense";
 
 export interface OffenseProps {
   coverageTypes?: CoverageType[];
@@ -186,4 +182,3 @@ export function Offense({
   );
 }
 
-Offense.displayName = "Matchups.Offense";

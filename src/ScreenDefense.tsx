@@ -85,4 +85,3 @@ export default function ScreenDefense({
   );
 }
 
-ScreenDefense.displayName = "ScreenDefense";

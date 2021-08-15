@@ -179,4 +179,3 @@ export default function ScreenWeaknessCoverage({
   );
 }
 
-ScreenWeaknessCoverage.displayName = "ScreenWeaknessCoverage";

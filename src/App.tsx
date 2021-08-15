@@ -154,5 +154,3 @@ export default function App() {
     </div>
   );
 }
-
-App.displayName = "App";

@@ -45,4 +45,3 @@ export default function StatsTable({ pokemon }: StatsTableProps) {
   );
 }
 
-StatsTable.displayName = "StatsTable";

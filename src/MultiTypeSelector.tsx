@@ -78,4 +78,3 @@ export default function MultiTypeSelector({
   );
 }
 
-MultiTypeSelector.displayName = "MultiTypeSelector";

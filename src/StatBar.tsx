@@ -23,4 +23,3 @@ export default function StatBar({ value, max, type }: StatBarProps) {
   );
 }
 
-StatBar.displayName = "StatBar";

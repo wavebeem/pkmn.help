@@ -19,4 +19,3 @@ export function PercentBar({ value, max }: PercentBarProps) {
   );
 }
 
-PercentBar.displayName = "PercentBar";

@@ -80,4 +80,3 @@ export default function ScreenInfo() {
   );
 }
 
-ScreenInfo.displayName = "ScreenInfo";

@@ -72,4 +72,3 @@ export default function Search({ updateSearch, search }: SearchProps) {
   );
 }
 
-Search.displayName = "Search";
