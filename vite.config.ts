@@ -9,7 +9,7 @@ export default defineConfig({
     postcss: {
       plugins: [
         purgecss({
-          content: ["./src/**/*.{ts,tsx,js}"],
+          content: ["./index.html", "./src/**/*.{ts,tsx,js,html}"],
         }) as Plugin,
       ],
     },
