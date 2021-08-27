@@ -15,8 +15,8 @@ export default function MultiTypeSelector({
   value,
 }: TypeSelectorProps) {
   const styles = {
-    selected: "border2 type-bg-dark no-box-shadow button-shadow",
-    normal: "border2 bg1 fg1 button-bg button-shadow",
+    selected: "border2 type-bg-dark SelectedFocus",
+    normal: "border2 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
     <div className="MultiTypeSelector-Container">
@@ -35,7 +35,6 @@ export default function MultiTypeSelector({
               "pv1 ph2",
               "f5 b",
               "ttc",
-              "SimpleFocus",
               "active-squish",
               cssType(type)
             )}
