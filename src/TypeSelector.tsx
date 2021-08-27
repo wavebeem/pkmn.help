@@ -20,9 +20,9 @@ export default function TypeSelector({
 }: TypeSelectorProps) {
   const theTypes = includeNone ? typesOrNone : types;
   const styles = {
-    disabled: "border4 fg4 bg2 o-60",
-    selected: "border2 type-bg-dark no-box-shadow button-shadow",
-    normal: "border2 bg1 fg1 button-bg button-shadow",
+    disabled: "border4 fg4 bg2 o-60 SimpleFocus",
+    selected: "border2 type-bg-dark SelectedFocus",
+    normal: "border2 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
     <div className="TypeSelector-Container">
@@ -45,7 +45,6 @@ export default function TypeSelector({
               "pv1 ph2",
               "f5 b",
               "ttc",
-              "SimpleFocus",
               "active-squish",
               cssType(type)
             )}
@@ -83,4 +82,3 @@ export default function TypeSelector({
     </div>
   );
 }
-

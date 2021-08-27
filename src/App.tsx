@@ -55,7 +55,7 @@ export default function App() {
   return (
     <div className="flex-auto">
       <h1 className="f3-ns f4 tc relative white PokeballHeader">
-        <Link to="/" className="no-underline white hover-white-90 DottedFocus">
+        <Link to="/" className="no-underline white OutlineFocus">
           Pokémon Type Calculator
         </Link>
       </h1>
