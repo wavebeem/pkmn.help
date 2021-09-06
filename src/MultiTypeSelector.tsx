@@ -35,6 +35,7 @@ export default function MultiTypeSelector({
               "pv1 ph2",
               "f5 b",
               "ttc",
+              isChecked ? "SelectedFocus" : "SimpleFocus",
               "SimpleFocus",
               "active-squish",
               cssType(type)
@@ -77,4 +78,3 @@ export default function MultiTypeSelector({
     </div>
   );
 }
-
