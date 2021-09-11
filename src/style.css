@@ -168,12 +168,8 @@ button {
   -webkit-appearance: none;
 }
 
-.active-squish {
-  transition: transform 50ms;
-}
-
 .active-squish:active:not(:disabled) {
-  transform: scale(0.95);
+  transform: translateY(1px) scale(0.98);
 }
 
 .button-bg {
