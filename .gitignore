@@ -6,3 +6,6 @@ node_modules/
 /favicon-*.png
 
 .DS_Store
+
+.env.local
+.env.*.local

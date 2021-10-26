@@ -119,11 +119,8 @@
 }
 
 @keyframes fallback-content-animation {
-  0% {
-    opacity: 0;
-  }
-
-  90% {
+  0%,
+  99% {
     opacity: 0;
   }
 
@@ -171,12 +168,8 @@ button {
   -webkit-appearance: none;
 }
 
-.active-squish {
-  transition: transform 50ms;
-}
-
 .active-squish:active:not(:disabled) {
-  transform: scale(0.95);
+  transform: translateY(1px) scale(0.98);
 }
 
 .button-bg {
@@ -225,7 +218,8 @@ button {
 }
 
 .img-crisp {
-  image-rendering: -moz-crisp-edges;
+  /* https://caniuse.com/css-crisp-edges */
+  image-rendering: crisp-edges;
   image-rendering: pixelated;
 }
 
