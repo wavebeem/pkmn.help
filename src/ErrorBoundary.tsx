@@ -12,13 +12,12 @@ export default class ErrorBoundary extends React.Component<
   ErrorBoundaryProps,
   ErrorBoundaryState
 > {
-  static displayName = "ErrorBoundary";
   constructor(props: ErrorBoundaryProps) {
     super(props);
     this.state = {};
   }
 
-  static getDerivedStateFromError(error: Error) {
+  static getDerivedStateFromError(error: Error): ErrorBoundaryState {
     return { error };
   }
 

@@ -69,7 +69,7 @@ export default function ScreenInfo() {
       <p>
         pkmn.help &copy; 2013&ndash;{year}{" "}
         <a
-          href="https://www.mockbrian.com"
+          href="https://www.wavebeem.com"
           className="underline fg-link OutlineFocus"
         >
           Brian Mock
@@ -79,4 +79,3 @@ export default function ScreenInfo() {
     </main>
   );
 }
-

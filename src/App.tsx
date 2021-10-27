@@ -63,42 +63,43 @@ export default function App() {
         className={classnames([
           "flex justify-center",
           "bg1",
-          "bb TabBarBorder",
+          "bb border2 TabBarShadow",
           "pt3",
         ])}
       >
         <NavLink
           className={tabClass}
           activeClassName={tabClassActive}
-          to={`/offense${offenseParams}`}
+          to={`/offense/${offenseParams}`}
         >
           Offense
         </NavLink>
         <NavLink
           className={tabClass}
           activeClassName={tabClassActive}
-          to={`/defense${defenseParams}`}
+          to={`/defense/${defenseParams}`}
         >
           Defense
         </NavLink>
         <NavLink
           className={tabClass}
           activeClassName={tabClassActive}
-          to={`/pokedex${pokedexParams}`}
+          to={`/pokedex/${pokedexParams}`}
         >
           Pokédex
         </NavLink>
         <NavLink
           className={tabClass}
           activeClassName={tabClassActive}
-          to="/info"
+          to="/info/"
         >
           Info
         </NavLink>
       </nav>
       <Switch>
         <Route
-          path="/offense/coverage"
+          exact
+          path="/offense/coverage/"
           render={() => (
             <ScreenWeaknessCoverage
               setCoverageTypes={setCoverageTypes}
@@ -109,7 +110,8 @@ export default function App() {
           )}
         />
         <Route
-          path="/offense"
+          exact
+          path="/offense/"
           render={() => (
             <ScreenOffense
               coverageTypes={coverageTypes}
@@ -121,7 +123,8 @@ export default function App() {
           )}
         />
         <Route
-          path="/defense"
+          exact
+          path="/defense/"
           render={() => (
             <ScreenDefense
               setDefenseParams={setDefenseParams}
@@ -130,11 +133,13 @@ export default function App() {
           )}
         />
         <Route
-          path="/pokedex/help"
+          exact
+          path="/pokedex/help/"
           render={() => <ScreenPokedexHelp pokedexParams={pokedexParams} />}
         />
         <Route
-          path="/pokedex"
+          exact
+          path="/pokedex/"
           render={() => (
             <ScreenPokedex
               setPokedexParams={setPokedexParams}
@@ -143,8 +148,8 @@ export default function App() {
             />
           )}
         />
-        <Route path="/info" component={ScreenInfo} />
-        <Redirect to="/defense" />
+        <Route exact path="/info/" component={ScreenInfo} />
+        <Redirect to="/defense/" />
       </Switch>
     </div>
   );
