@@ -22,7 +22,7 @@ function Badge({ type }: BadgeProps) {
       className={classnames(
         `type-bg-dark`,
         cssType(type),
-        "ba border3",
+        "ba border-vibrant",
         "ph1 pv1 br1",
         "ttc tc b f5"
       )}
@@ -32,7 +32,6 @@ function Badge({ type }: BadgeProps) {
     </div>
   );
 }
-
 
 interface SectionProps {
   title: string;
@@ -54,7 +53,6 @@ function Section({ title, types }: SectionProps) {
     </div>
   );
 }
-
 
 interface MatchupsProps {
   coverageTypes?: CoverageType[];
@@ -134,7 +132,6 @@ function Matchups({
   );
 }
 
-
 export interface DefenseProps {
   type1: Type;
   type2: Type;
@@ -153,7 +150,6 @@ export function Defense({ type1, type2, fallbackCoverageTypes }: DefenseProps) {
     />
   );
 }
-
 
 export interface OffenseProps {
   coverageTypes?: CoverageType[];
@@ -181,4 +177,3 @@ export function Offense({
     />
   );
 }
-

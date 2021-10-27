@@ -28,7 +28,7 @@ function MonsterType({ type, index }: MonsterTypeProps) {
         `type-bg-dark`,
         "ttc tc flex",
         "pv0 ph2 lh-copy b",
-        "br-pill ba border3 f6",
+        "br-pill ba border-vibrant f6",
         { ml1: index > 0 }
       )}
     >
@@ -36,7 +36,6 @@ function MonsterType({ type, index }: MonsterTypeProps) {
     </div>
   );
 }
-
 
 interface MonsterProps {
   pokemon: Pokemon;
@@ -111,7 +110,6 @@ function Monster({ pokemon }: MonsterProps) {
     </div>
   );
 }
-
 
 interface DexProps {
   allPokemon: Pokemon[];
@@ -222,4 +220,3 @@ export default function ScreenPokedex({
     </main>
   );
 }
-
