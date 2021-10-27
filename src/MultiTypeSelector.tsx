@@ -15,8 +15,9 @@ export default function MultiTypeSelector({
   value,
 }: TypeSelectorProps) {
   const styles = {
-    selected: "border2 type-bg-dark no-box-shadow button-shadow",
-    normal: "border2 bg1 fg1 button-bg button-shadow",
+    selected:
+      "border-vibrant2 type-bg-dark no-box-shadow button-shadow SelectedFocus",
+    normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
     <div className="MultiTypeSelector-Container">
@@ -35,7 +36,6 @@ export default function MultiTypeSelector({
               "pv1 ph2",
               "f5 b",
               "ttc",
-              isChecked ? "SelectedFocus" : "SimpleFocus",
               "SimpleFocus",
               "active-squish",
               cssType(type)
@@ -55,8 +55,10 @@ export default function MultiTypeSelector({
             <span className="flex flex-row items-center justify-center">
               <span
                 className={classnames(
-                  `type-${type} b--black ba br1`,
-                  isChecked ? "border1 type-bg-light" : "border2 type-bg-dark"
+                  `type-${type} ba br1`,
+                  isChecked
+                    ? "b--black type-bg-light"
+                    : "border-vibrant type-bg-dark"
                 )}
                 style={{
                   width: "1rem",

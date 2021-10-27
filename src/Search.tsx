@@ -29,7 +29,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
         style={{ left: 10, top: 8 }}
       />
       <input
-        aria-label="Search"
+        aria-label="Search by name, number, or types"
         type="text"
         autoComplete="off"
         autoCorrect="off"
@@ -43,7 +43,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
           "br-pill ba",
           "bg1",
           "fg1",
-          "border2"
+          "border1"
         )}
         style={{ paddingLeft: 40, paddingRight: 40, height: inputHeight }}
         value={search}
@@ -71,4 +71,3 @@ export default function Search({ updateSearch, search }: SearchProps) {
     </div>
   );
 }
-

@@ -20,9 +20,9 @@ export default function TypeSelector({
 }: TypeSelectorProps) {
   const theTypes = includeNone ? typesOrNone : types;
   const styles = {
-    disabled: "border4 fg4 bg2 o-60 SimpleFocus",
+    disabled: "border3 fg4 bg2 o-60 SimpleFocus",
     selected: "border-vibrant2 type-bg-dark SelectedFocus",
-    normal: "border2 bg1 fg1 button-bg button-shadow SimpleFocus",
+    normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
     <div className="TypeSelector-Container">
@@ -56,7 +56,7 @@ export default function TypeSelector({
                   cssType(type),
                   `b--black br-pill ba`,
                   type === value
-                    ? "border-vibrant2 type-bg-light"
+                    ? "b--black type-bg-light"
                     : "border-vibrant type-bg-dark"
                 )}
                 style={{

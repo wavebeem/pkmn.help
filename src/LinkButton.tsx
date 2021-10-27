@@ -21,7 +21,7 @@ export function LinkButton({
         className={classnames(
           className,
           baseClasses,
-          "border4 fg4 bg-transparent no-pointer"
+          "border3 fg4 bg-transparent no-pointer"
         )}
       />
     );
@@ -35,7 +35,7 @@ export function LinkButton({
       className={classnames(
         className,
         baseClasses,
-        "border2 button-shadow button-bg button-bg-hover color-inherit active-squish"
+        "border1 button-shadow button-bg button-bg-hover color-inherit active-squish"
       )}
     />
   );

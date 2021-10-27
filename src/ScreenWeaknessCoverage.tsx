@@ -14,7 +14,7 @@ const buttonClasses = classnames(
   "b f5",
   "SimpleFocus",
   "active-squish",
-  "border2 button-shadow button-bg button-bg-hover color-inherit"
+  "border1 button-shadow button-bg button-bg-hover color-inherit"
 );
 
 interface WeaknessCoverageProps {
@@ -169,7 +169,7 @@ export default function ScreenWeaknessCoverage({
       <p>
         <b aria-hidden="true">&larr;</b>{" "}
         <Link
-          to={`/offense${offenseParams}`}
+          to={`/offense/${offenseParams}`}
           className="underline fg-link OutlineFocus"
         >
           Back to offense
@@ -178,4 +178,3 @@ export default function ScreenWeaknessCoverage({
     </main>
   );
 }
-

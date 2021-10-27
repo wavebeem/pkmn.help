@@ -49,7 +49,7 @@ function Monster({ pokemon }: MonsterProps) {
   return (
     <div className={classnames("fg1 pv3", "flex-ns items-center", "Monster")}>
       <div className="flex flex-column">
-        <div className="flex flex-column pa3 br4 bg1 flex ba border4">
+        <div className="flex flex-column pa3 br4 bg1 flex ba border3">
           <div className="flex items-center">
             <h2 className="mv0 f4">{speciesName}</h2>
             <div className="ph1 flex-auto" />
@@ -91,7 +91,7 @@ function Monster({ pokemon }: MonsterProps) {
           <Link
             aria-label={`Offense for ${speciesName} (${formName})`}
             className="underline fg-link OutlineFocus"
-            to={`/offense?${params}#matchup-offense`}
+            to={`/offense/?${params}#matchup-offense`}
           >
             Offense
           </Link>
@@ -101,7 +101,7 @@ function Monster({ pokemon }: MonsterProps) {
           <Link
             aria-label={`Defense for ${speciesName} (${formName})`}
             className="underline fg-link OutlineFocus"
-            to={`/defense?${params}#matchup-defense`}
+            to={`/defense/?${params}#matchup-defense`}
           >
             Defense
           </Link>
@@ -193,9 +193,11 @@ export default function ScreenPokedex({
           update(newQuery, 0);
         }}
       />
-      <div className="flex justify-between ph2 nt2 pb3 bb border4 f6">
-        <span className="fg3">Search by name, number, or types</span>
-        <Link to="/pokedex/help" className="underline fg-link OutlineFocus">
+      <div className="flex justify-between ph2 nt2 pb3 bb border3 f6">
+        <span className="fg3" aria-hidden="true">
+          Search by name, number, or types
+        </span>
+        <Link to="/pokedex/help/" className="underline fg-link OutlineFocus">
           Help
         </Link>
       </div>

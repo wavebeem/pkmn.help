@@ -13,14 +13,12 @@
   --color-button-hover1b: hsl(200, 100%, 96%);
   --color-link: hsl(240, 100%, 50%);
   --color-link-hover: hsl(240, 60%, 60%);
-  --color-border1: hsl(0, 0%, 30%);
-  --color-border2: hsl(0, 0%, 60%);
-  --color-border3: hsl(0, 0%, 75%);
-  --color-border4: hsl(0, 0%, 85%);
-  --color-border5: hsl(0, 0%, 90%);
-  --color-tabbar-border: hsl(0, 0%, 75%);
+  --color-border1: hsl(0, 0%, 50%);
+  --color-border2: hsl(0, 0%, 75%);
+  --color-border3: hsl(0, 0%, 85%);
+  --color-border4: hsl(0, 0%, 90%);
   --color-vibrant-border: hsla(0, 0%, 0%, 0.2);
-  --color-vibrant-border2: hsla(0, 0%, 0%, 0.8);
+  --color-vibrant-border1: hsla(0, 0%, 0%, 0.6);
   --color-scroll-fg: hsl(0, 0%, 40%);
   --color-scroll-bg: hsl(0, 0%, 90%);
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
@@ -43,14 +41,12 @@
     --color-button-hover1b: hsl(220, 20%, 28%);
     --color-link: hsl(180, 100%, 70%);
     --color-link-hover: hsl(180, 80%, 95%);
-    --color-border1: hsl(220, 20%, 60%);
-    --color-border2: hsl(220, 20%, 50%);
-    --color-border3: hsl(220, 20%, 35%);
-    --color-border4: hsl(220, 20%, 30%);
-    --color-border5: hsl(220, 20%, 25%);
-    --color-tabbar-border: hsl(220, 20%, 35%);
+    --color-border1: hsl(220, 20%, 55%);
+    --color-border2: hsl(220, 20%, 35%);
+    --color-border3: hsl(220, 20%, 30%);
+    --color-border4: hsl(220, 20%, 25%);
     --color-vibrant-border: hsla(0, 0%, 100%, 0.2);
-    --color-vibrant-border2: hsla(0, 0%, 100%, 0.8);
+    --color-vibrant-border1: hsla(0, 0%, 100%, 0.6);
     --color-scroll-fg: hsl(220, 20%, 70%);
     --color-scroll-bg: hsl(220, 20%, 30%);
   }
@@ -58,14 +54,6 @@
   .dark--invert {
     filter: invert(1);
   }
-}
-
-.debug-swatch {
-  background: var(--color-bg2);
-  color: var(--color-fg2);
-  padding: 1rem;
-  font-weight: bold;
-  border-left: 4rem solid var(--color);
 }
 
 .bg3 {
@@ -91,15 +79,13 @@
   color: var(--color-fg1);
 }
 
+.border-vibrant2 {
+  border-color: var(--color-vibrant-border1);
+}
 .border-vibrant {
   border-color: var(--color-vibrant-border);
 }
-.border-vibrant2 {
-  border-color: var(--color-vibrant-border2);
-}
-.border5 {
-  border-color: var(--color-border5);
-}
+
 .border4 {
   border-color: var(--color-border4);
 }
@@ -241,9 +227,8 @@ button {
   image-rendering: pixelated;
 }
 
-.TabBarBorder {
-  border-width: 1px;
-  border-color: var(--color-tabbar-border);
+.TabBarShadow {
+  border-color: var(--color-border2);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
 }
 
@@ -298,12 +283,12 @@ button {
 
 .Bar-Container {
   align-self: center;
-  box-shadow: inset 0 0 0 1px var(--color-border4);
-  background: var(--color-border5);
+  box-shadow: inset 0 0 0 1px var(--color-border3);
+  background: var(--color-border4);
 }
 
 .Bar-Fill {
-  box-shadow: inset 0 0 0 1px var(--color-border1);
+  box-shadow: inset 0 0 0 1px var(--color-vibrant-border1);
 }
 
 .PokeballHeader {
@@ -486,7 +471,7 @@ button {
 .SimpleFocus:focus {
   outline: 2px solid transparent;
   border-color: var(--color-fg1);
-  box-shadow: inset 0 0 0 2px var(--color-border2);
+  box-shadow: inset 0 0 0 2px var(--color-border1);
 }
 
 .SelectedFocus:focus {

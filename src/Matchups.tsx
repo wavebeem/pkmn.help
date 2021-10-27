@@ -82,7 +82,7 @@ function Matchups({
             <span className="normal">
               (
               <Link
-                to="/offense/coverage"
+                to="/offense/coverage/"
                 className="underline fg-link OutlineFocus"
               >
                 edit

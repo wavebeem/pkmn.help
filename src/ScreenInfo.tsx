@@ -5,23 +5,6 @@ const year = new Date().getFullYear();
 export default function ScreenInfo() {
   return (
     <main className="pa3 center content-narrow lh-copy">
-      {[1, 2, 3, 4, 5].map((n) => {
-        return (
-          <div
-            className="debug-swatch"
-            style={{ "--color": `var(--color-border${n})` } as any}
-          >
-            color-border-{n}
-          </div>
-        );
-      })}
-      <div
-        className="debug-swatch"
-        style={{ "--color": `var(--color-tabbar-border)` } as any}
-      >
-        color-tabbar-border
-      </div>
-
       <h2 className="lh-title f4">Contact Me</h2>
       <p>
         Questions, suggestions, or just want to say thank you? Email me at{" "}
