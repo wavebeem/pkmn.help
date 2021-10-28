@@ -20,15 +20,15 @@ function Badge({ type }: BadgeProps) {
   return (
     <div
       className={classnames(
-        `type-bg-dark`,
+        "type-bg-dark",
         cssType(type),
         "ba border-vibrant",
-        "ph1 pv1 br1",
-        "ttc tc b f5"
+        "br2",
+        "ttc tc b f5 lh-title"
       )}
-      style={{ width: 80, margin: "0.125rem" }}
+      style={{ width: 80, margin: "0.125rem", padding: 2 }}
     >
-      {type}
+      <div className="bg-black-40 br1 ba b--black-10 white">{type}</div>
     </div>
   );
 }
