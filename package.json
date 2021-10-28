@@ -12,7 +12,7 @@
     "upgrade": "npm-check -u",
     "start": "vite",
     "prebuild": "rimraf dist",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --mode production",
     "preview": "vite preview",
     "lint": "eslint src --ext .ts,.tsx,.js",
     "pretty": "prettier \"src/**/*.{ts,tsx,js}\" --check",

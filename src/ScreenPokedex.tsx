@@ -25,14 +25,15 @@ function MonsterType({ type, index }: MonsterTypeProps) {
     <div
       className={classnames(
         cssType(type),
-        `type-bg-dark`,
+        "type-bg-dark",
         "ttc tc flex",
-        "pv0 ph2 lh-copy b",
+        "lh-title b",
         "br-pill ba border-vibrant f6",
         { ml1: index > 0 }
       )}
+      style={{ padding: 2 }}
     >
-      {type}
+      <div className="bg-black-40 white br-pill ba b--black-10 ph2">{type}</div>
     </div>
   );
 }
