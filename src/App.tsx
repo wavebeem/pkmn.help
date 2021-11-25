@@ -63,7 +63,7 @@ export default function App() {
     <div className="flex-auto">
       <h1 className="f3-ns f4 tc relative white PokeballHeader">
         <Link to="/" className="no-underline white OutlineFocus">
-          Pokémon Type Calculator
+          Pokémon 2021-11-25 11.29.44
         </Link>
       </h1>
       <nav
