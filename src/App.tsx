@@ -1,7 +1,9 @@
 import classnames from "classnames";
 import * as React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
+import { useRegisterSW } from "virtual:pwa-register/react";
 import { CoverageType, Pokemon, Type } from "./data";
+import { Button } from "./Button";
 import ScreenDefense from "./ScreenDefense";
 import ScreenInfo from "./ScreenInfo";
 import ScreenOffense from "./ScreenOffense";
@@ -23,6 +25,11 @@ const tabClass = classnames([
 const tabClassActive = classnames(["fg1 bottom-border-thick-current"]);
 
 export default function App() {
+  const {
+    needRefresh: [needRefresh],
+    // offlineReady: [offlineReady, setOfflineReady],
+    updateServiceWorker,
+  } = useRegisterSW({});
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
@@ -96,6 +103,19 @@ export default function App() {
           Info
         </NavLink>
       </nav>
+      {needRefresh && (
+        <div className="bg1 fg1 border2 bb pa3 flex tc justify-center">
+          <span className="mr2 flex items-center">An update is available</span>
+          <Button
+            type="button"
+            onClick={() => {
+              updateServiceWorker(true);
+            }}
+          >
+            Update
+          </Button>
+        </div>
+      )}
       <Switch>
         <Route
           exact
