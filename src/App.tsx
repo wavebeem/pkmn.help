@@ -29,7 +29,7 @@ export default function App() {
   const updateInterval = 60 * 60 * 1000;
   const {
     needRefresh: [needRefresh],
-    // offlineReady: [offlineReady, setOfflineReady],
+    offlineReady: [offlineReady],
     updateServiceWorker,
   } = useRegisterSW({
     onRegistered: (reg) => {
@@ -44,6 +44,9 @@ export default function App() {
       setTimeout(loop, updateInterval);
     },
   });
+  React.useEffect(() => {
+    console.log({ needRefresh, offlineReady });
+  }, [needRefresh, offlineReady]);
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
