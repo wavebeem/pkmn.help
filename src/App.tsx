@@ -25,11 +25,25 @@ const tabClass = classnames([
 const tabClassActive = classnames(["fg1 bottom-border-thick-current"]);
 
 export default function App() {
+  // 1 hour
+  const updateInterval = 60 * 60 * 1000;
   const {
     needRefresh: [needRefresh],
     // offlineReady: [offlineReady, setOfflineReady],
     updateServiceWorker,
-  } = useRegisterSW({});
+  } = useRegisterSW({
+    onRegistered: (reg) => {
+      // Periodically check for code updates, in case someone leaves the website
+      // open for a really long time
+      const loop = async () => {
+        if (reg) {
+          await reg.update();
+        }
+        setTimeout(loop, updateInterval);
+      };
+      setTimeout(loop, updateInterval);
+    },
+  });
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
