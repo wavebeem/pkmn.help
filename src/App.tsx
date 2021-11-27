@@ -93,7 +93,7 @@ export default function App() {
     <div className="flex-auto">
       <h1 className="f3-ns f4 tc relative white PokeballHeader">
         <Link to="/" className="no-underline white OutlineFocus">
-          Pokémon 2021-11-27 10.46.23
+          Pokémon Type Calculator
         </Link>
       </h1>
       <nav
@@ -133,6 +133,12 @@ export default function App() {
           Info
         </NavLink>
       </nav>
+      <div className="bg1 fg1 border2 bb pa3 tc">
+        <code>2021-11-27 11.06.06</code>
+        <br />
+        <br />
+        <code>{JSON.stringify({ needRefresh, offlineReady }, null, 2)}</code>
+      </div>
       {needRefresh && (
         <div className="bg1 fg1 border2 bb pa3 flex tc justify-center">
           <span className="flex items-center">An update is available</span>
