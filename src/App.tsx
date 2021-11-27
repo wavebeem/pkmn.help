@@ -57,10 +57,6 @@ export default function App() {
   >([]);
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
   const [attemptTime, setAttemptTime] = React.useState(Date.now());
-  const closeBanner = () => {
-    setOfflineReady(false);
-    setNeedRefresh(false);
-  };
   React.useEffect(() => {
     async function load() {
       try {
@@ -145,15 +141,18 @@ export default function App() {
           >
             Update
           </Button>
-          <Button className="ml2" type="button" onClick={closeBanner}>
-            Cancel
-          </Button>
         </div>
       )}
       {offlineReady && !needRefresh && (
         <div className="bg1 fg1 border2 bb pa3 flex tc justify-center">
           <span className="mr2 flex items-center">Ready to use offline</span>
-          <Button className="ml2" type="button" onClick={closeBanner}>
+          <Button
+            className="ml2"
+            type="button"
+            onClick={() => {
+              setOfflineReady(false);
+            }}
+          >
             OK
           </Button>
         </div>
