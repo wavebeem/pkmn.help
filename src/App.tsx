@@ -1,7 +1,7 @@
 import classnames from "classnames";
 import * as React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
-import { useRegisterSW } from "virtual:pwa-register/react";
+import { registerSW, RegisterSWOptions } from "virtual:pwa-register";
 import { Button } from "./Button";
 import { CoverageType, Pokemon, Type } from "./data";
 import ScreenDefense from "./ScreenDefense";
@@ -24,16 +24,27 @@ const tabClass = classnames([
 
 const tabClassActive = classnames(["fg1 bottom-border-thick-current"]);
 
+function useRegisterSW(options?: RegisterSWOptions) {
+  const updateServiceWorker = React.useCallback(async (reload: boolean) => {
+    const reg = await navigator.serviceWorker.ready;
+    reg.update();
+    if (reload) {
+      location.reload();
+    }
+  }, []);
+  React.useEffect(() => {
+    registerSW(options);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+  return updateServiceWorker;
+}
+
 export default function App() {
   // 1 hour
   const updateInterval = 60 * 60 * 1000;
-  const {
-    needRefresh: [needRefresh],
-    offlineReady: [offlineReady, setOfflineReady],
-    updateServiceWorker,
-  } = useRegisterSW({
+  const updateServiceWorker = useRegisterSW({
     onOfflineReady: () => {
-      console.log("onOfflineReady", offlineReady);
+      console.log("onOfflineReady");
     },
     onRegistered: (reg) => {
       console.log("onRegistered");
