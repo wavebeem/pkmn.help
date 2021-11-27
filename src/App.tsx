@@ -28,8 +28,8 @@ export default function App() {
   // 1 hour
   const updateInterval = 60 * 60 * 1000;
   const {
-    needRefresh: [needRefresh],
-    offlineReady: [offlineReady],
+    needRefresh: [needRefresh, setNeedRefresh],
+    offlineReady: [offlineReady, setOfflineReady],
     updateServiceWorker,
   } = useRegisterSW({
     onRegistered: (reg) => {
@@ -57,6 +57,10 @@ export default function App() {
   >([]);
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
   const [attemptTime, setAttemptTime] = React.useState(Date.now());
+  const closeBanner = () => {
+    setOfflineReady(false);
+    setNeedRefresh(false);
+  };
   React.useEffect(() => {
     async function load() {
       try {
@@ -131,14 +135,26 @@ export default function App() {
       </nav>
       {needRefresh && (
         <div className="bg1 fg1 border2 bb pa3 flex tc justify-center">
-          <span className="mr2 flex items-center">An update is available</span>
+          <span className="flex items-center">An update is available</span>
           <Button
+            className="ml2"
             type="button"
             onClick={() => {
               updateServiceWorker(true);
             }}
           >
             Update
+          </Button>
+          <Button className="ml2" type="button" onClick={closeBanner}>
+            Cancel
+          </Button>
+        </div>
+      )}
+      {offlineReady && !needRefresh && (
+        <div className="bg1 fg1 border2 bb pa3 flex tc justify-center">
+          <span className="mr2 flex items-center">Ready to use offline</span>
+          <Button className="ml2" type="button" onClick={closeBanner}>
+            OK
           </Button>
         </div>
       )}
