@@ -3,7 +3,6 @@ import path from "path";
 import fs from "fs";
 
 const SRC = path.resolve(__dirname, "../data/pokemon.json");
-const NOT_FOUND = path.resolve(__dirname, "not-found.png");
 const IMG_DEST = path.resolve(__dirname, "../img");
 const DATA_DEST = path.resolve(__dirname, "../src/data-pkmn.json");
 
