@@ -28,10 +28,13 @@ export default function App() {
   // 1 hour
   const updateInterval = 60 * 60 * 1000;
   const {
-    needRefresh: [needRefresh, setNeedRefresh],
+    needRefresh: [needRefresh],
     offlineReady: [offlineReady, setOfflineReady],
     updateServiceWorker,
   } = useRegisterSW({
+    onOfflineReady: () => {
+      console.log("onOfflineReady");
+    },
     onRegistered: (reg) => {
       // Periodically check for code updates, in case someone leaves the website
       // open for a really long time
