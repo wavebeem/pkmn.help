@@ -2,8 +2,8 @@ import classnames from "classnames";
 import * as React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { useRegisterSW } from "virtual:pwa-register/react";
-import { CoverageType, Pokemon, Type } from "./data";
 import { Button } from "./Button";
+import { CoverageType, Pokemon, Type } from "./data";
 import ScreenDefense from "./ScreenDefense";
 import ScreenInfo from "./ScreenInfo";
 import ScreenOffense from "./ScreenOffense";
@@ -53,26 +53,35 @@ export default function App() {
     CoverageType[]
   >([]);
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
+  const [attemptTime, setAttemptTime] = React.useState(Date.now());
   React.useEffect(() => {
     async function load() {
-      const bigURL = new URL("data-pkmn.json", PUBLIC_PATH).href;
-      const resp = await fetch(bigURL);
-      const allPokemon: Pokemon[] = await resp.json();
-      const fallbackCoverageTypes = allPokemon.map<CoverageType>((pkmn) => {
-        return {
-          number: String(pkmn.number),
-          name: pkmn.name,
-          type1: pkmn.types[0],
-          type2: pkmn.types[1] ?? Type.NONE,
-        };
-      });
-      setIsLoading(false);
-      setCoverageTypes(fallbackCoverageTypes);
-      setFallbackCoverageTypes(fallbackCoverageTypes);
-      setAllPokemon(allPokemon);
+      try {
+        const bigURL = new URL("data-pkmn.json", PUBLIC_PATH).href;
+        const resp = await fetch(bigURL);
+        const allPokemon: Pokemon[] = await resp.json();
+        const fallbackCoverageTypes = allPokemon.map<CoverageType>((pkmn) => {
+          return {
+            number: String(pkmn.number),
+            name: pkmn.name,
+            type1: pkmn.types[0],
+            type2: pkmn.types[1] ?? Type.NONE,
+          };
+        });
+        setIsLoading(false);
+        setCoverageTypes(fallbackCoverageTypes);
+        setFallbackCoverageTypes(fallbackCoverageTypes);
+        setAllPokemon(allPokemon);
+      } catch (err) {
+        const retryDelay = 60 * 1000;
+        // Retry every minute until the JSON finishes downloading
+        setTimeout(() => {
+          setAttemptTime(Date.now());
+        }, retryDelay);
+      }
     }
     load();
-  }, []);
+  }, [attemptTime]);
   return (
     <div className="flex-auto">
       <h1 className="f3-ns f4 tc relative white PokeballHeader">
