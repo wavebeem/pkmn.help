@@ -33,9 +33,10 @@ export default function App() {
     updateServiceWorker,
   } = useRegisterSW({
     onOfflineReady: () => {
-      console.log("onOfflineReady");
+      console.log("onOfflineReady", offlineReady);
     },
     onRegistered: (reg) => {
+      console.log("onRegistered");
       // Periodically check for code updates, in case someone leaves the website
       // open for a really long time
       const loop = async () => {
@@ -92,7 +93,7 @@ export default function App() {
     <div className="flex-auto">
       <h1 className="f3-ns f4 tc relative white PokeballHeader">
         <Link to="/" className="no-underline white OutlineFocus">
-          Pokémon 2021-11-27 10.38.30
+          Pokémon 2021-11-27 10.46.23
         </Link>
       </h1>
       <nav
