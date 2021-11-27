@@ -42,9 +42,15 @@ function useRegisterSW(options?: RegisterSWOptions) {
 export default function App() {
   // 1 hour
   const updateInterval = 60 * 60 * 1000;
+  const [needRefresh, setNeedRefesh] = React.useState(false);
+  const [offlineReady, setOfflineReady] = React.useState(false);
   const updateServiceWorker = useRegisterSW({
+    onNeedRefresh: () => {
+      setNeedRefesh(true);
+    },
     onOfflineReady: () => {
       console.log("onOfflineReady");
+      setOfflineReady(true);
     },
     onRegistered: (reg) => {
       console.log("onRegistered");
