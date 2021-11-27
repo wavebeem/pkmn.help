@@ -14,7 +14,7 @@ export default defineConfig((env) => {
       reactRefresh(),
       VitePWA({
         mode: env.mode !== "development" ? "production" : "development",
-        includeAssets: ["data-pkmn.json", "svg/*.svg", "favicon-*.png"],
+        includeAssets: ["data-pkmn.json", "svg/*.svg"],
         manifest: {
           name: "Pokémon Type Calculator",
           short_name: "pkmn.help",
