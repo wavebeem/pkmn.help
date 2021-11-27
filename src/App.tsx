@@ -93,7 +93,7 @@ export default function App() {
     <div className="flex-auto">
       <h1 className="f3-ns f4 tc relative white PokeballHeader">
         <Link to="/" className="no-underline white OutlineFocus">
-          Pokémon 2021-11-25 11.36.31
+          Pokémon 2021-11-27 10.23.24
         </Link>
       </h1>
       <nav
