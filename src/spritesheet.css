@@ -1,0 +1,6691 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<i class="icon-home"></i>
+```
+*/
+.pkmn-1 {
+  background-image: url(/spritesheet.png);
+  background-position: -260px -520px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10 {
+  background-image: url(/spritesheet.png);
+  background-position: -358px -520px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-100 {
+  background-image: url(/spritesheet.png);
+  background-position: -456px -520px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10001 {
+  background-image: url(/spritesheet.png);
+  background-position: -650px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10002 {
+  background-image: url(/spritesheet.png);
+  background-position: -650px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10003 {
+  background-image: url(/spritesheet.png);
+  background-position: -650px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10004 {
+  background-image: url(/spritesheet.png);
+  background-position: -650px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10005 {
+  background-image: url(/spritesheet.png);
+  background-position: -650px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10006 {
+  background-image: url(/spritesheet.png);
+  background-position: -650px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10007 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -650px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10008 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -650px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10009 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -650px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10010 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -650px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10011 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -650px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10012 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -650px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10013 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -650px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10014 {
+  background-image: url(/spritesheet.png);
+  background-position: -748px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10015 {
+  background-image: url(/spritesheet.png);
+  background-position: -748px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10016 {
+  background-image: url(/spritesheet.png);
+  background-position: -748px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10017 {
+  background-image: url(/spritesheet.png);
+  background-position: -748px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10018 {
+  background-image: url(/spritesheet.png);
+  background-position: -748px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10019 {
+  background-image: url(/spritesheet.png);
+  background-position: -748px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10020 {
+  background-image: url(/spritesheet.png);
+  background-position: -748px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10021 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -748px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10022 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -748px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10023 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -748px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10024 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -748px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10025 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -748px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10026 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -748px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10027 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -748px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10028 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -748px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10029 {
+  background-image: url(/spritesheet.png);
+  background-position: -846px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10030 {
+  background-image: url(/spritesheet.png);
+  background-position: -846px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10031 {
+  background-image: url(/spritesheet.png);
+  background-position: -846px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10032 {
+  background-image: url(/spritesheet.png);
+  background-position: -846px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10033 {
+  background-image: url(/spritesheet.png);
+  background-position: -846px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10034 {
+  background-image: url(/spritesheet.png);
+  background-position: -846px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10035 {
+  background-image: url(/spritesheet.png);
+  background-position: -846px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10036 {
+  background-image: url(/spritesheet.png);
+  background-position: -846px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10037 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -846px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10038 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -846px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10039 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -846px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10040 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -846px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10041 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -846px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10042 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -846px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10043 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -846px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10044 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -846px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10045 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -846px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10046 {
+  background-image: url(/spritesheet.png);
+  background-position: -944px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10047 {
+  background-image: url(/spritesheet.png);
+  background-position: -944px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10048 {
+  background-image: url(/spritesheet.png);
+  background-position: -944px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10049 {
+  background-image: url(/spritesheet.png);
+  background-position: -944px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10050 {
+  background-image: url(/spritesheet.png);
+  background-position: -944px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10051 {
+  background-image: url(/spritesheet.png);
+  background-position: -944px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10052 {
+  background-image: url(/spritesheet.png);
+  background-position: -944px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10053 {
+  background-image: url(/spritesheet.png);
+  background-position: -944px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10054 {
+  background-image: url(/spritesheet.png);
+  background-position: -944px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10055 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -944px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10056 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -944px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10057 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -944px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10058 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -944px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10059 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -944px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10060 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -944px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10061 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -944px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10062 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -944px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10063 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -944px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10064 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -944px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10065 {
+  background-image: url(/spritesheet.png);
+  background-position: -1042px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10066 {
+  background-image: url(/spritesheet.png);
+  background-position: -1042px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10067 {
+  background-image: url(/spritesheet.png);
+  background-position: -1042px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10068 {
+  background-image: url(/spritesheet.png);
+  background-position: -1042px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10069 {
+  background-image: url(/spritesheet.png);
+  background-position: -1042px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10070 {
+  background-image: url(/spritesheet.png);
+  background-position: -1042px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10071 {
+  background-image: url(/spritesheet.png);
+  background-position: -1042px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10072 {
+  background-image: url(/spritesheet.png);
+  background-position: -1042px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10073 {
+  background-image: url(/spritesheet.png);
+  background-position: -1042px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10074 {
+  background-image: url(/spritesheet.png);
+  background-position: -1042px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10075 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -1042px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10076 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -1042px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10077 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -1042px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10078 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -1042px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10079 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -1042px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10080 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -1042px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10081 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -1042px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10082 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -1042px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10083 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -1042px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10084 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -1042px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10085 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -1042px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10086 {
+  background-image: url(/spritesheet.png);
+  background-position: -1140px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10087 {
+  background-image: url(/spritesheet.png);
+  background-position: -1140px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10088 {
+  background-image: url(/spritesheet.png);
+  background-position: -1140px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10089 {
+  background-image: url(/spritesheet.png);
+  background-position: -1140px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10090 {
+  background-image: url(/spritesheet.png);
+  background-position: -1140px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10091 {
+  background-image: url(/spritesheet.png);
+  background-position: -1140px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10092 {
+  background-image: url(/spritesheet.png);
+  background-position: -1140px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10093 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px 0px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10094 {
+  background-image: url(/spritesheet.png);
+  background-position: -130px 0px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10095 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -130px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10096 {
+  background-image: url(/spritesheet.png);
+  background-position: -130px -130px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10097 {
+  background-image: url(/spritesheet.png);
+  background-position: -260px 0px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10098 {
+  background-image: url(/spritesheet.png);
+  background-position: -260px -130px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10099 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -260px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-101 {
+  background-image: url(/spritesheet.png);
+  background-position: -1140px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10100 {
+  background-image: url(/spritesheet.png);
+  background-position: -1140px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10101 {
+  background-image: url(/spritesheet.png);
+  background-position: -1140px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10102 {
+  background-image: url(/spritesheet.png);
+  background-position: -1140px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10103 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10104 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10105 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10106 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10107 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10108 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10109 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10110 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10111 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10112 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10113 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10114 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -1140px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10115 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10116 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10117 {
+  background-image: url(/spritesheet.png);
+  background-position: -130px -260px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10118 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10119 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10120 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10121 {
+  background-image: url(/spritesheet.png);
+  background-position: -260px -260px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10122 {
+  background-image: url(/spritesheet.png);
+  background-position: -390px 0px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10123 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10124 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10125 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10126 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10127 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10130 {
+  background-image: url(/spritesheet.png);
+  background-position: -390px -130px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10131 {
+  background-image: url(/spritesheet.png);
+  background-position: -390px -260px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10132 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -390px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10133 {
+  background-image: url(/spritesheet.png);
+  background-position: -130px -390px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10134 {
+  background-image: url(/spritesheet.png);
+  background-position: -260px -390px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10135 {
+  background-image: url(/spritesheet.png);
+  background-position: -390px -390px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10136 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10137 {
+  background-image: url(/spritesheet.png);
+  background-position: -1238px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10138 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10139 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10140 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10141 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10142 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10143 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10144 {
+  background-image: url(/spritesheet.png);
+  background-position: -520px 0px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10145 {
+  background-image: url(/spritesheet.png);
+  background-position: -520px -130px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10147 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10148 {
+  background-image: url(/spritesheet.png);
+  background-position: -520px -260px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10149 {
+  background-image: url(/spritesheet.png);
+  background-position: -520px -390px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10150 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -520px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10151 {
+  background-image: url(/spritesheet.png);
+  background-position: -130px -520px;
+  width: 128px;
+  height: 128px;
+}
+.pkmn-10152 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10155 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10156 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10157 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10158 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10159 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -1238px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10160 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10161 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10162 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10163 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10164 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10165 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10166 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10167 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10168 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10169 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10170 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10171 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10172 {
+  background-image: url(/spritesheet.png);
+  background-position: -1336px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10173 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10174 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10175 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10176 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10177 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10178 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10179 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10180 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10181 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10182 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10183 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10184 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10185 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10186 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -1336px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10187 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10188 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10189 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10190 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10191 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10192 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10193 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10194 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10195 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10196 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10197 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10198 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10199 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-102 {
+  background-image: url(/spritesheet.png);
+  background-position: -1434px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10200 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10201 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10202 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10203 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10204 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10205 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10206 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10207 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10208 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10209 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10210 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10211 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10212 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10213 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10214 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -1434px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10215 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10216 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10217 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10218 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10219 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-10220 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-103 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-104 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-105 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-106 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-107 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-108 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-109 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-11 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-110 {
+  background-image: url(/spritesheet.png);
+  background-position: -1532px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-111 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-112 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-113 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-114 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-115 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-116 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-117 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-118 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-119 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-12 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-120 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-121 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-122 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-123 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-124 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-125 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -1532px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-126 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-127 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-128 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-129 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-13 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-130 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-131 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-132 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-133 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-134 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-135 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-136 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-137 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-138 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-139 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-14 {
+  background-image: url(/spritesheet.png);
+  background-position: -1630px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-140 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-141 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-142 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-143 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-144 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-145 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-146 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-147 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-148 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-149 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-15 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-150 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-151 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-152 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-153 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-154 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-155 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -1630px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-156 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-157 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-158 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-159 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-16 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-160 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-161 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-162 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-163 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-164 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-165 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-166 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-167 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-168 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-169 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-17 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-170 {
+  background-image: url(/spritesheet.png);
+  background-position: -1728px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-171 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-172 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-173 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-174 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-175 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-176 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-177 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-178 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-179 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-18 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-180 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-181 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-182 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-183 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-184 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-185 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-186 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-187 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -1728px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-188 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-189 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-19 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-190 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-191 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-192 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-193 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-194 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-195 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-196 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-197 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-198 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-199 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-2 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-20 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-200 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-201 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-202 {
+  background-image: url(/spritesheet.png);
+  background-position: -1826px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-203 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-204 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-205 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-206 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-207 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-208 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-209 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-21 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-210 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-211 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-212 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-213 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-214 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-215 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-216 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-217 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-218 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-219 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-22 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -1826px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-220 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-221 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-222 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-223 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-224 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-225 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-226 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-227 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-228 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-229 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-23 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-230 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-231 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-232 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-233 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-234 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-235 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-236 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-237 {
+  background-image: url(/spritesheet.png);
+  background-position: -1924px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-238 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-239 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-24 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-240 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-241 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-242 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-243 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-244 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-245 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-246 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-247 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-248 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-249 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-25 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-250 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-251 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-252 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-253 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-254 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-255 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -1924px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-256 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-257 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-258 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-259 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-26 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-260 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-261 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-262 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-263 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-264 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-265 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-266 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-267 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-268 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-269 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-27 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-270 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-271 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-272 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-273 {
+  background-image: url(/spritesheet.png);
+  background-position: -2022px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-274 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-275 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-276 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-277 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-278 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-279 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-28 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-280 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-281 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-282 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-283 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-284 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-285 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-286 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-287 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-288 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-289 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-29 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-290 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-291 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-292 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -2022px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-293 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-294 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-295 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-296 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-297 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-298 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-299 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-3 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-30 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-300 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-301 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-302 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-303 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-304 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-305 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-306 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-307 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-308 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-309 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-31 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-310 {
+  background-image: url(/spritesheet.png);
+  background-position: -2120px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-311 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-312 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-313 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-314 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-315 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-316 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-317 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-318 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-319 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-32 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-320 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-321 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-322 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-323 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-324 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-325 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-326 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-327 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-328 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-329 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-33 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-330 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -2120px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-331 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-332 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-333 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-334 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-335 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-336 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-337 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-338 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-339 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-34 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-340 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-341 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-342 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-343 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-344 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-345 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-346 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-347 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-348 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-349 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-35 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-350 {
+  background-image: url(/spritesheet.png);
+  background-position: -2218px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-351 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-352 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-353 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-354 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-355 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-356 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-357 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-358 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-359 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-36 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-360 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-361 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-362 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-363 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-364 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-365 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-366 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-367 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-368 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-369 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-37 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-370 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-371 {
+  background-image: url(/spritesheet.png);
+  background-position: -2156px -2218px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-372 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-373 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-374 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-375 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-376 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-377 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-378 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-379 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-38 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-380 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-381 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-382 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-383 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-384 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-385 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-386 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-387 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-388 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-389 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-39 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-390 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-391 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-392 {
+  background-image: url(/spritesheet.png);
+  background-position: -2316px -2156px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-393 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-394 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-395 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-396 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-397 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-398 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-399 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-4 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-40 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-400 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-401 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-402 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-403 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-404 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-405 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-406 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-407 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-408 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-409 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-41 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-410 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-411 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-412 {
+  background-image: url(/spritesheet.png);
+  background-position: -2156px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-413 {
+  background-image: url(/spritesheet.png);
+  background-position: -2254px -2316px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-414 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-415 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-416 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-417 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-418 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-419 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-42 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-420 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-421 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-422 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-423 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-424 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-425 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-426 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-427 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-428 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-429 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-43 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-430 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-431 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-432 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-433 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-434 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -2156px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-435 {
+  background-image: url(/spritesheet.png);
+  background-position: -2414px -2254px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-436 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-437 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-438 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-439 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-44 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-440 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-441 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-442 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-443 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-444 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-445 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-446 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-447 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-448 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-449 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-45 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-450 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-451 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-452 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-453 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-454 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-455 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-456 {
+  background-image: url(/spritesheet.png);
+  background-position: -2156px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-457 {
+  background-image: url(/spritesheet.png);
+  background-position: -2254px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-458 {
+  background-image: url(/spritesheet.png);
+  background-position: -2352px -2414px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-459 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-46 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-460 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-461 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-462 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-463 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-464 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-465 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-466 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-467 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-468 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-469 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-47 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-470 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-471 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-472 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-473 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-474 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-475 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-476 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-477 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-478 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-479 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -2156px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-48 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -2254px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-480 {
+  background-image: url(/spritesheet.png);
+  background-position: -2512px -2352px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-481 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-482 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-483 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-484 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-485 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-486 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-487 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-488 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-489 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-49 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-490 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-491 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-492 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-493 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-494 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-495 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-496 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-497 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-498 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-499 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-5 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-50 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-500 {
+  background-image: url(/spritesheet.png);
+  background-position: -2156px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-501 {
+  background-image: url(/spritesheet.png);
+  background-position: -2254px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-502 {
+  background-image: url(/spritesheet.png);
+  background-position: -2352px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-503 {
+  background-image: url(/spritesheet.png);
+  background-position: -2450px -2512px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-504 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-505 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-506 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-507 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-508 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-509 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-51 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-510 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-511 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-512 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-513 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-514 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-515 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-516 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-517 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-518 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-519 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-52 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-520 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-521 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-522 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-523 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-524 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -2156px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-525 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -2254px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-526 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -2352px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-527 {
+  background-image: url(/spritesheet.png);
+  background-position: -2610px -2450px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-528 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-529 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-53 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-530 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-531 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-532 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-533 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-534 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-535 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-536 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-537 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-538 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-539 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-54 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-540 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-541 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-542 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-543 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-544 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-545 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-546 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-547 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-548 {
+  background-image: url(/spritesheet.png);
+  background-position: -2156px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-549 {
+  background-image: url(/spritesheet.png);
+  background-position: -2254px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-55 {
+  background-image: url(/spritesheet.png);
+  background-position: -2352px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-550 {
+  background-image: url(/spritesheet.png);
+  background-position: -2450px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-551 {
+  background-image: url(/spritesheet.png);
+  background-position: -2548px -2610px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-552 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-553 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-554 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-555 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-556 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-557 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-558 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-559 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-56 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-560 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-561 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-562 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-563 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-564 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-565 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-566 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-567 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-568 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-569 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-57 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-570 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-571 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-572 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -2156px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-573 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -2254px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-574 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -2352px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-575 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -2450px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-576 {
+  background-image: url(/spritesheet.png);
+  background-position: -2708px -2548px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-577 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-578 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-579 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-58 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-580 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-581 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-582 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-583 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-584 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-585 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-586 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-587 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-588 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-589 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-59 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-590 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-591 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-592 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-593 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-594 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-595 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-596 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-597 {
+  background-image: url(/spritesheet.png);
+  background-position: -2156px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-598 {
+  background-image: url(/spritesheet.png);
+  background-position: -2254px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-599 {
+  background-image: url(/spritesheet.png);
+  background-position: -2352px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-6 {
+  background-image: url(/spritesheet.png);
+  background-position: -2450px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-60 {
+  background-image: url(/spritesheet.png);
+  background-position: -2548px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-600 {
+  background-image: url(/spritesheet.png);
+  background-position: -2646px -2708px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-601 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-602 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-603 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-604 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-605 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-606 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-607 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-608 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-609 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-61 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-610 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-611 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-612 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-613 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-614 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-615 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-616 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-617 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-618 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-619 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-62 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-620 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-621 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -2156px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-622 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -2254px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-623 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -2352px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-624 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -2450px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-625 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -2548px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-626 {
+  background-image: url(/spritesheet.png);
+  background-position: -2806px -2646px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-627 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-628 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-629 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-63 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-630 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-631 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-632 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-633 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-634 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-635 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-636 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-637 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-638 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-639 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-64 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-640 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-641 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-642 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-643 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-644 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-645 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-646 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-647 {
+  background-image: url(/spritesheet.png);
+  background-position: -2156px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-648 {
+  background-image: url(/spritesheet.png);
+  background-position: -2254px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-649 {
+  background-image: url(/spritesheet.png);
+  background-position: -2352px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-65 {
+  background-image: url(/spritesheet.png);
+  background-position: -2450px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-650 {
+  background-image: url(/spritesheet.png);
+  background-position: -2548px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-651 {
+  background-image: url(/spritesheet.png);
+  background-position: -2646px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-652 {
+  background-image: url(/spritesheet.png);
+  background-position: -2744px -2806px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-653 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-654 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-655 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-656 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-657 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-658 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-659 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-66 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-660 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-661 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-662 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-663 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-664 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-665 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-666 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-667 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-668 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-669 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-67 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-670 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-671 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-672 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-673 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -2156px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-674 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -2254px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-675 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -2352px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-676 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -2450px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-677 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -2548px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-678 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -2646px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-679 {
+  background-image: url(/spritesheet.png);
+  background-position: -2904px -2744px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-68 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-680 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-681 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-682 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-683 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-684 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-685 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-686 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-687 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-688 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-689 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-69 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-690 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-691 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-692 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-693 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-694 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-695 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-696 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-697 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-698 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-699 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-7 {
+  background-image: url(/spritesheet.png);
+  background-position: -2156px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-70 {
+  background-image: url(/spritesheet.png);
+  background-position: -2254px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-700 {
+  background-image: url(/spritesheet.png);
+  background-position: -2352px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-701 {
+  background-image: url(/spritesheet.png);
+  background-position: -2450px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-702 {
+  background-image: url(/spritesheet.png);
+  background-position: -2548px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-703 {
+  background-image: url(/spritesheet.png);
+  background-position: -2646px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-704 {
+  background-image: url(/spritesheet.png);
+  background-position: -2744px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-705 {
+  background-image: url(/spritesheet.png);
+  background-position: -2842px -2904px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-706 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-707 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-708 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-709 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-71 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-710 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-711 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-712 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-713 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-714 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-715 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-716 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-717 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-718 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-719 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-72 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-720 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-721 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-722 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-723 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-724 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-725 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-726 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -2156px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-727 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -2254px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-728 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -2352px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-729 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -2450px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-73 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -2548px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-730 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -2646px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-731 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -2744px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-732 {
+  background-image: url(/spritesheet.png);
+  background-position: -3002px -2842px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-733 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-734 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-735 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-736 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-737 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-738 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-739 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-74 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-740 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-741 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-742 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-743 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-744 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-745 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-746 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-747 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-748 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-749 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-75 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-750 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-751 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-752 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-753 {
+  background-image: url(/spritesheet.png);
+  background-position: -2156px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-754 {
+  background-image: url(/spritesheet.png);
+  background-position: -2254px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-755 {
+  background-image: url(/spritesheet.png);
+  background-position: -2352px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-756 {
+  background-image: url(/spritesheet.png);
+  background-position: -2450px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-757 {
+  background-image: url(/spritesheet.png);
+  background-position: -2548px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-758 {
+  background-image: url(/spritesheet.png);
+  background-position: -2646px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-759 {
+  background-image: url(/spritesheet.png);
+  background-position: -2744px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-76 {
+  background-image: url(/spritesheet.png);
+  background-position: -2842px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-760 {
+  background-image: url(/spritesheet.png);
+  background-position: -2940px -3002px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-761 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-762 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-763 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-764 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-765 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-766 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-767 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-768 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-769 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-77 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-770 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-771 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-772 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-773 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-774 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-775 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-776 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-777 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-778 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-779 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-78 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-780 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-781 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -2156px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-782 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -2254px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-783 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -2352px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-784 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -2450px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-785 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -2548px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-786 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -2646px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-787 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -2744px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-788 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -2842px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-789 {
+  background-image: url(/spritesheet.png);
+  background-position: -3100px -2940px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-79 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-790 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-791 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-792 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-793 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-794 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-795 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-796 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-797 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-798 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-799 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-8 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-80 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-800 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-801 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-802 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-803 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-804 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-805 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-806 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-807 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-808 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-809 {
+  background-image: url(/spritesheet.png);
+  background-position: -2156px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-81 {
+  background-image: url(/spritesheet.png);
+  background-position: -2254px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-810 {
+  background-image: url(/spritesheet.png);
+  background-position: -2352px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-811 {
+  background-image: url(/spritesheet.png);
+  background-position: -2450px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-812 {
+  background-image: url(/spritesheet.png);
+  background-position: -2548px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-813 {
+  background-image: url(/spritesheet.png);
+  background-position: -2646px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-814 {
+  background-image: url(/spritesheet.png);
+  background-position: -2744px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-815 {
+  background-image: url(/spritesheet.png);
+  background-position: -2842px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-816 {
+  background-image: url(/spritesheet.png);
+  background-position: -2940px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-817 {
+  background-image: url(/spritesheet.png);
+  background-position: -3038px -3100px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-818 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-819 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-82 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-820 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-821 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-822 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-823 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-824 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-825 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-826 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-827 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-828 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-829 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-83 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-830 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-831 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-832 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-833 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-834 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-835 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-836 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-837 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-838 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -2156px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-839 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -2254px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-84 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -2352px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-840 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -2450px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-841 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -2548px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-842 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -2646px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-843 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -2744px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-844 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -2842px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-845 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -2940px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-846 {
+  background-image: url(/spritesheet.png);
+  background-position: -3198px -3038px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-847 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-848 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-849 {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-85 {
+  background-image: url(/spritesheet.png);
+  background-position: -294px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-850 {
+  background-image: url(/spritesheet.png);
+  background-position: -392px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-851 {
+  background-image: url(/spritesheet.png);
+  background-position: -490px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-852 {
+  background-image: url(/spritesheet.png);
+  background-position: -588px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-853 {
+  background-image: url(/spritesheet.png);
+  background-position: -686px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-854 {
+  background-image: url(/spritesheet.png);
+  background-position: -784px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-855 {
+  background-image: url(/spritesheet.png);
+  background-position: -882px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-856 {
+  background-image: url(/spritesheet.png);
+  background-position: -980px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-857 {
+  background-image: url(/spritesheet.png);
+  background-position: -1078px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-858 {
+  background-image: url(/spritesheet.png);
+  background-position: -1176px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-859 {
+  background-image: url(/spritesheet.png);
+  background-position: -1274px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-86 {
+  background-image: url(/spritesheet.png);
+  background-position: -1372px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-860 {
+  background-image: url(/spritesheet.png);
+  background-position: -1470px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-861 {
+  background-image: url(/spritesheet.png);
+  background-position: -1568px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-862 {
+  background-image: url(/spritesheet.png);
+  background-position: -1666px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-863 {
+  background-image: url(/spritesheet.png);
+  background-position: -1764px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-864 {
+  background-image: url(/spritesheet.png);
+  background-position: -1862px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-865 {
+  background-image: url(/spritesheet.png);
+  background-position: -1960px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-866 {
+  background-image: url(/spritesheet.png);
+  background-position: -2058px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-867 {
+  background-image: url(/spritesheet.png);
+  background-position: -2156px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-868 {
+  background-image: url(/spritesheet.png);
+  background-position: -2254px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-869 {
+  background-image: url(/spritesheet.png);
+  background-position: -2352px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-87 {
+  background-image: url(/spritesheet.png);
+  background-position: -2450px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-870 {
+  background-image: url(/spritesheet.png);
+  background-position: -2548px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-871 {
+  background-image: url(/spritesheet.png);
+  background-position: -2646px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-872 {
+  background-image: url(/spritesheet.png);
+  background-position: -2744px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-873 {
+  background-image: url(/spritesheet.png);
+  background-position: -2842px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-874 {
+  background-image: url(/spritesheet.png);
+  background-position: -2940px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-875 {
+  background-image: url(/spritesheet.png);
+  background-position: -3038px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-876 {
+  background-image: url(/spritesheet.png);
+  background-position: -3136px -3198px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-877 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px 0px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-878 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -98px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-879 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -196px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-88 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -294px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-880 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -392px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-881 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -490px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-882 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -588px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-883 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -686px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-884 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -784px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-885 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -882px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-886 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -980px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-887 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -1078px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-888 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -1176px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-889 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -1274px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-89 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -1372px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-890 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -1470px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-891 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -1568px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-892 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -1666px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-893 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -1764px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-894 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -1862px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-895 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -1960px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-896 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -2058px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-897 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -2156px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-898 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -2254px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-9 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -2352px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-90 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -2450px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-91 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -2548px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-92 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -2646px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-93 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -2744px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-94 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -2842px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-95 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -2940px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-96 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -3038px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-97 {
+  background-image: url(/spritesheet.png);
+  background-position: -3296px -3136px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-98 {
+  background-image: url(/spritesheet.png);
+  background-position: 0px -3296px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-99 {
+  background-image: url(/spritesheet.png);
+  background-position: -98px -3296px;
+  width: 96px;
+  height: 96px;
+}
+.pkmn-not-found {
+  background-image: url(/spritesheet.png);
+  background-position: -196px -3296px;
+  width: 96px;
+  height: 96px;
+}

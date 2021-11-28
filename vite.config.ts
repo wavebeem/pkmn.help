@@ -14,7 +14,7 @@ export default defineConfig((env) => {
       reactRefresh(),
       VitePWA({
         mode: env.mode !== "development" ? "production" : "development",
-        includeAssets: ["data-pkmn.json", "svg/*.svg"],
+        includeAssets: ["data-pkmn.json", "*.svg", "spritesheet.png"],
         manifest: {
           name: "Pokémon Type Calculator",
           short_name: "pkmn.help",
@@ -59,6 +59,7 @@ export default defineConfig((env) => {
         plugins: [
           purgecss({
             content: ["./index.html", "./src/**/*.{ts,tsx,js,html}"],
+            safelist: [/pkmn-/],
           }) as Plugin,
         ],
       },

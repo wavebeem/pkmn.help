@@ -6,6 +6,7 @@ import App from "./App";
 import ErrorBoundary from "./ErrorBoundary";
 import ScreenError from "./ScreenError";
 import "./style.css";
+import "./spritesheet.css";
 
 ReactDOM.render(
   <React.StrictMode>
