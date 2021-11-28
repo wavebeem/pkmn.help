@@ -178,40 +178,42 @@ export default function App() {
           Info
         </NavLink>
       </nav>
-      <div className="ph3 mw6 center grid gap3 pa3">
-        {needRefresh && (
-          <div className={bannerClass}>
-            <span className="flex flex-auto items-center">
-              An update is available
-            </span>
-            <Button
-              className="ml3"
-              type="button"
-              onClick={() => {
-                updateServiceWorker(true);
-              }}
-            >
-              Update
-            </Button>
-          </div>
-        )}
-        {offlineReady && (
-          <div className={bannerClass}>
-            <span className="flex flex-auto items-center">
-              Offline mode is now available
-            </span>
-            <Button
-              className="ml3"
-              type="button"
-              onClick={() => {
-                setOfflineReady(false);
-              }}
-            >
-              Dismiss
-            </Button>
-          </div>
-        )}
-      </div>
+      {(needRefresh || offlineReady) && (
+        <div className="ph3 mw6 center grid gap3 pa3">
+          {needRefresh && (
+            <div className={bannerClass}>
+              <span className="flex flex-auto items-center">
+                An update is available
+              </span>
+              <Button
+                className="ml3"
+                type="button"
+                onClick={() => {
+                  updateServiceWorker(true);
+                }}
+              >
+                Update
+              </Button>
+            </div>
+          )}
+          {offlineReady && (
+            <div className={bannerClass}>
+              <span className="flex flex-auto items-center">
+                Offline mode is now available
+              </span>
+              <Button
+                className="ml3"
+                type="button"
+                onClick={() => {
+                  setOfflineReady(false);
+                }}
+              >
+                Dismiss
+              </Button>
+            </div>
+          )}
+        </div>
+      )}
       <Switch>
         <Route
           exact
