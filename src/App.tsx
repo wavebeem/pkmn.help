@@ -24,33 +24,60 @@ const tabClass = classnames([
 
 const tabClassActive = classnames(["fg1 bottom-border-thick-current"]);
 
-function useRegisterSW(options?: RegisterSWOptions) {
-  const updateServiceWorker = React.useCallback(async (reload: boolean) => {
-    const reg = await navigator.serviceWorker.ready;
-    reg.update();
-    if (reload) {
-      location.reload();
+function useRegisterSW(options: RegisterSWOptions = {}) {
+  const {
+    immediate = true,
+    onNeedRefresh,
+    onOfflineReady,
+    onRegistered,
+    onRegisterError,
+  } = options;
+  const [needRefresh, setNeedRefresh] = React.useState(false);
+  const [offlineReady, setOfflineReady] = React.useState(false);
+  const [updateServiceWorker] = React.useState(() => {
+    if (typeof window !== "undefined") {
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      return (_reloadPage: boolean) => {
+        // Intentionally empty for server-side rendering
+      };
     }
-  }, []);
-  React.useEffect(() => {
-    registerSW(options);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-  return updateServiceWorker;
+    return registerSW({
+      immediate,
+      onOfflineReady() {
+        setOfflineReady(true);
+        onOfflineReady?.();
+      },
+      onNeedRefresh() {
+        setNeedRefresh(true);
+        onNeedRefresh?.();
+      },
+      onRegistered,
+      onRegisterError,
+    });
+  });
+  return {
+    needRefresh: [needRefresh, setNeedRefresh] as const,
+    offlineReady: [offlineReady, setOfflineReady] as const,
+    updateServiceWorker,
+  };
 }
 
 export default function App() {
   // 1 hour
   const updateInterval = 60 * 60 * 1000;
-  const [needRefresh, setNeedRefesh] = React.useState(false);
-  const [offlineReady, setOfflineReady] = React.useState(false);
-  const updateServiceWorker = useRegisterSW({
+  const {
+    needRefresh: [needRefresh],
+    offlineReady: [offlineReady, setOfflineReady],
+    updateServiceWorker,
+  } = useRegisterSW({
+    onRegisterError: () => {
+      console.log("onRegisterError");
+    },
     onNeedRefresh: () => {
-      setNeedRefesh(true);
+      console.log("onNeedRefresh");
     },
     onOfflineReady: () => {
       console.log("onOfflineReady");
-      setOfflineReady(true);
     },
     onRegistered: (reg) => {
       console.log("onRegistered");
@@ -65,9 +92,6 @@ export default function App() {
       setTimeout(loop, updateInterval);
     },
   });
-  React.useEffect(() => {
-    console.log({ needRefresh, offlineReady });
-  }, [needRefresh, offlineReady]);
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
@@ -150,12 +174,10 @@ export default function App() {
           Info
         </NavLink>
       </nav>
-      <div className="bg1 fg1 border2 bb pa3 tc">
-        <code>2021-11-27 11.06.06</code>
-        <br />
-        <br />
-        <code>{JSON.stringify({ needRefresh, offlineReady }, null, 2)}</code>
-      </div>
+      <pre className="bg1 fg1 border2 bb pa3 tl ma0">2021-11-27 20.28.57</pre>
+      <pre className="bg1 fg1 border2 bb pa3 tl ma0">
+        {JSON.stringify({ needRefresh, offlineReady }, null, 2)}
+      </pre>
       {needRefresh && (
         <div className="bg1 fg1 border2 bb pa3 flex tc justify-center">
           <span className="flex items-center">An update is available</span>
