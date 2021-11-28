@@ -171,7 +171,7 @@ export default function App() {
         </NavLink>
       </nav>
       {needRefresh && (
-        <div className="bg1 fg1 border2 bb pa3 flex tc justify-center">
+        <div className="bg1 fg1 border2 bb pa3 justify-center center flex">
           <span className="flex items-center">An update is available</span>
           <Button
             className="ml2"
@@ -185,7 +185,7 @@ export default function App() {
         </div>
       )}
       {offlineReady && !needRefresh && (
-        <div className="bg1 fg1 border2 bb pa3 flex tc justify-center">
+        <div className="bg1 fg1 border2 bb pa3 justify-center center flex">
           <span className="mr2 flex items-center">Ready to use offline</span>
           <Button
             className="ml2"
