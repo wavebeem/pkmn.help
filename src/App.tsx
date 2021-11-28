@@ -1,7 +1,7 @@
 import classnames from "classnames";
 import * as React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
-import { registerSW, RegisterSWOptions } from "virtual:pwa-register";
+import { useRegisterSW } from "virtual:pwa-register/react";
 import { Button } from "./Button";
 import { CoverageType, Pokemon, Type } from "./data";
 import ScreenDefense from "./ScreenDefense";
@@ -11,6 +11,8 @@ import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
+
+console.log("vite-plugin-pwa nice");
 
 const bannerClass = classnames([
   "button-shadow",
@@ -31,38 +33,6 @@ const tabClass = classnames([
 ]);
 
 const tabClassActive = classnames(["fg1 bottom-border-thick-current"]);
-
-function useRegisterSW(options: RegisterSWOptions = {}) {
-  const needRefresh = React.useState(false);
-  const offlineReady = React.useState(false);
-  const [updateServiceWorker] = React.useState(() => {
-    const {
-      immediate = true,
-      onNeedRefresh,
-      onOfflineReady,
-      onRegistered,
-      onRegisterError,
-    } = options;
-    return registerSW({
-      immediate,
-      onOfflineReady() {
-        offlineReady[1](true);
-        onOfflineReady?.();
-      },
-      onNeedRefresh() {
-        needRefresh[1](true);
-        onNeedRefresh?.();
-      },
-      onRegistered,
-      onRegisterError,
-    });
-  });
-  return {
-    needRefresh,
-    offlineReady,
-    updateServiceWorker,
-  };
-}
 
 export default function App() {
   // 1 hour
