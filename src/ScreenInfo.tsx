@@ -4,10 +4,13 @@ import { Button } from "./Button";
 const year = new Date().getFullYear();
 
 async function unregisterServiceWorker() {
-  for (const reg of await navigator.serviceWorker.getRegistrations()) {
-    await reg.unregister();
+  try {
+    for (const reg of await navigator.serviceWorker.getRegistrations()) {
+      await reg.unregister();
+    }
+  } finally {
+    location.reload();
   }
-  location.reload();
 }
 
 export default function ScreenInfo() {

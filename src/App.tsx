@@ -168,7 +168,7 @@ export default function App() {
           Info
         </NavLink>
       </nav>
-      <pre className="bg1 fg1 border2 bb pa3 tl ma0">2021-11-27 20.28.57</pre>
+      <pre className="bg1 fg1 border2 bb pa3 tl ma0">2021-11-27 21.12.01</pre>
       <pre className="bg1 fg1 border2 bb pa3 tl ma0">
         {JSON.stringify({ needRefresh, offlineReady }, null, 2)}
       </pre>
