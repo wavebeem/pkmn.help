@@ -12,6 +12,14 @@ import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
 
+const bannerClass = classnames([
+  "button-shadow",
+  "bg1 fg1",
+  "border2 ba",
+  "br2 pa3",
+  "justify-center flex",
+]);
+
 const tabClass = classnames([
   "no-underline",
   "pv2 ph2 f5",
@@ -170,34 +178,40 @@ export default function App() {
           Info
         </NavLink>
       </nav>
-      {needRefresh && (
-        <div className="bg1 fg1 border2 bb pa3 justify-center center flex">
-          <span className="flex items-center">An update is available</span>
-          <Button
-            className="ml2"
-            type="button"
-            onClick={() => {
-              updateServiceWorker(true);
-            }}
-          >
-            Update
-          </Button>
-        </div>
-      )}
-      {offlineReady && !needRefresh && (
-        <div className="bg1 fg1 border2 bb pa3 justify-center center flex">
-          <span className="mr2 flex items-center">Ready to use offline</span>
-          <Button
-            className="ml2"
-            type="button"
-            onClick={() => {
-              setOfflineReady(false);
-            }}
-          >
-            OK
-          </Button>
-        </div>
-      )}
+      <div className="ph3 mw6 center grid gap3 pa3">
+        {needRefresh && (
+          <div className={bannerClass}>
+            <span className="flex flex-auto items-center">
+              An update is available
+            </span>
+            <Button
+              className="ml3"
+              type="button"
+              onClick={() => {
+                updateServiceWorker(true);
+              }}
+            >
+              Update
+            </Button>
+          </div>
+        )}
+        {offlineReady && (
+          <div className={bannerClass}>
+            <span className="flex flex-auto items-center">
+              Offline mode is now available
+            </span>
+            <Button
+              className="ml3"
+              type="button"
+              onClick={() => {
+                setOfflineReady(false);
+              }}
+            >
+              Dismiss
+            </Button>
+          </div>
+        )}
+      </div>
       <Switch>
         <Route
           exact

@@ -99,6 +99,20 @@
   border-color: var(--color-border1);
 }
 
+.grid {
+  display: grid;
+}
+
+.gap3 {
+  gap: 1rem;
+}
+.gap2 {
+  gap: 0.5rem;
+}
+.gap1 {
+  gap: 0.25rem;
+}
+
 .no-pointer {
   pointer-events: none;
 }
@@ -169,7 +183,9 @@
 }
 
 button {
+  /* https://caniuse.com/css-appearance */
   -webkit-appearance: none;
+  appearance: none;
 }
 
 .active-squish:active:not(:disabled) {
