@@ -12,8 +12,6 @@ import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
 
-console.log("vite-plugin-pwa nice");
-
 const bannerClass = classnames([
   "button-shadow",
   "bg1 fg1",
@@ -42,17 +40,7 @@ export default function App() {
     offlineReady: [offlineReady, setOfflineReady],
     updateServiceWorker,
   } = useRegisterSW({
-    onRegisterError: () => {
-      console.log("onRegisterError");
-    },
-    onNeedRefresh: () => {
-      console.log("onNeedRefresh");
-    },
-    onOfflineReady: () => {
-      console.log("onOfflineReady");
-    },
     onRegistered: (reg) => {
-      console.log("onRegistered");
       // Periodically check for code updates, in case someone leaves the website
       // open for a really long time
       const loop = async () => {
