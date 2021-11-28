@@ -71,7 +71,7 @@ export default function ScreenInfo() {
       <ul className="lh-copy mt1 ph3">
         <li>Jansjo (testing, research)</li>
         <li>Several anonymous Poké Fans</li>
-        <li>2021-11-27 21.52.37</li>
+        <li>2021-11-27 23.01.49</li>
       </ul>
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">Legal Info</h2>
