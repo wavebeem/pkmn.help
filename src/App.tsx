@@ -25,30 +25,24 @@ const tabClass = classnames([
 const tabClassActive = classnames(["fg1 bottom-border-thick-current"]);
 
 function useRegisterSW(options: RegisterSWOptions = {}) {
-  const {
-    immediate = true,
-    onNeedRefresh,
-    onOfflineReady,
-    onRegistered,
-    onRegisterError,
-  } = options;
-  const [needRefresh, setNeedRefresh] = React.useState(false);
-  const [offlineReady, setOfflineReady] = React.useState(false);
+  const needRefresh = React.useState(false);
+  const offlineReady = React.useState(false);
   const [updateServiceWorker] = React.useState(() => {
-    if (typeof window !== "undefined") {
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      return (_reloadPage: boolean) => {
-        // Intentionally empty for server-side rendering
-      };
-    }
+    const {
+      immediate = true,
+      onNeedRefresh,
+      onOfflineReady,
+      onRegistered,
+      onRegisterError,
+    } = options;
     return registerSW({
       immediate,
       onOfflineReady() {
-        setOfflineReady(true);
+        offlineReady[1](true);
         onOfflineReady?.();
       },
       onNeedRefresh() {
-        setNeedRefresh(true);
+        needRefresh[1](true);
         onNeedRefresh?.();
       },
       onRegistered,
@@ -56,8 +50,8 @@ function useRegisterSW(options: RegisterSWOptions = {}) {
     });
   });
   return {
-    needRefresh: [needRefresh, setNeedRefresh] as const,
-    offlineReady: [offlineReady, setOfflineReady] as const,
+    needRefresh,
+    offlineReady,
     updateServiceWorker,
   };
 }
