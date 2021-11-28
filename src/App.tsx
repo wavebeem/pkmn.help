@@ -98,8 +98,9 @@ export default function App() {
   const [attemptTime, setAttemptTime] = React.useState(Date.now());
   React.useEffect(() => {
     async function load() {
+      const filename = "data-pkmn.json";
       try {
-        const bigURL = new URL("data-pkmn.json", PUBLIC_PATH).href;
+        const bigURL = new URL(filename, PUBLIC_PATH).href;
         const resp = await fetch(bigURL);
         const allPokemon: Pokemon[] = await resp.json();
         const fallbackCoverageTypes = allPokemon.map<CoverageType>((pkmn) => {
@@ -115,6 +116,7 @@ export default function App() {
         setFallbackCoverageTypes(fallbackCoverageTypes);
         setAllPokemon(allPokemon);
       } catch (err) {
+        console.warn(`Failed to download ${filename}`, err);
         const retryDelay = 60 * 1000;
         // Retry every minute until the JSON finishes downloading
         setTimeout(() => {
@@ -168,10 +170,6 @@ export default function App() {
           Info
         </NavLink>
       </nav>
-      <pre className="bg1 fg1 border2 bb pa3 tl ma0">2021-11-27 21.14.39</pre>
-      <pre className="bg1 fg1 border2 bb pa3 tl ma0">
-        {JSON.stringify({ needRefresh, offlineReady }, null, 2)}
-      </pre>
       {needRefresh && (
         <div className="bg1 fg1 border2 bb pa3 flex tc justify-center">
           <span className="flex items-center">An update is available</span>
