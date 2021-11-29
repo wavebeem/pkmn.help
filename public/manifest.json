@@ -35,6 +35,5 @@
     }
   ],
   "theme_color": "hsl(357, 97%, 46%)",
-  "background_color": "hsl(357, 97%, 46%)",
   "display": "standalone"
 }
