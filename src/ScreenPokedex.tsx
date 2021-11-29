@@ -20,8 +20,6 @@ interface MonsterTypeProps {
   index: number;
 }
 
-const preloadMap = new Map<string, string>();
-
 function MonsterType({ type, index }: MonsterTypeProps) {
   return (
     <div
