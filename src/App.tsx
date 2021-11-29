@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import classNames from "classnames";
 import * as React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { useRegisterSW } from "virtual:pwa-register/react";
@@ -12,7 +12,7 @@ import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
 
-const bannerClass = classnames([
+const bannerClass = classNames([
   "button-shadow",
   "bg1 fg1",
   "border2 ba",
@@ -20,7 +20,7 @@ const bannerClass = classnames([
   "justify-center flex",
 ]);
 
-const tabClass = classnames([
+const tabClass = classNames([
   "no-underline",
   "pv2 ph2 f5",
   "TabFocus",
@@ -30,7 +30,7 @@ const tabClass = classnames([
   "fg3 bottom-border-thick",
 ]);
 
-const tabClassActive = classnames(["fg1 bottom-border-thick-current"]);
+const tabClassActive = classNames(["fg1 bottom-border-thick-current"]);
 
 export default function App() {
   // 1 hour
@@ -100,7 +100,7 @@ export default function App() {
         </Link>
       </h1>
       <nav
-        className={classnames([
+        className={classNames([
           "flex justify-center",
           "bg1",
           "bb border2 TabBarShadow",

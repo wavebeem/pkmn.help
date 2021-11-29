@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import classNames from "classnames";
 import * as React from "react";
 import { Link, LinkProps } from "react-router-dom";
 
@@ -18,7 +18,7 @@ export function LinkButton({
     return (
       <a
         {...props}
-        className={classnames(
+        className={classNames(
           className,
           baseClasses,
           "border3 fg4 bg-transparent no-pointer"
@@ -32,7 +32,7 @@ export function LinkButton({
       to={to}
       tabIndex={0}
       onClick={props.onClick}
-      className={classnames(
+      className={classNames(
         className,
         baseClasses,
         "border1 button-shadow button-bg button-bg-hover color-inherit active-squish"
@@ -41,7 +41,7 @@ export function LinkButton({
   );
 }
 
-const baseClasses = classnames(
+const baseClasses = classNames(
   "no-underline",
   "db",
   "ba br2 pv1 ph2",

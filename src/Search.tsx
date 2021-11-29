@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import classNames from "classnames";
 import * as React from "react";
 import { PUBLIC_PATH } from "./settings";
 
@@ -28,7 +28,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
         autoCorrect="off"
         inputMode="search"
         autoCapitalize="none"
-        className={classnames(
+        className={classNames(
           "f5 w-100 border-box",
           "pv2",
           "SimpleFocus",
@@ -56,7 +56,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
             ref.current.focus();
           }
         }}
-        className={classnames("o-50 absolute dark--invert", {
+        className={classNames("o-50 absolute dark--invert", {
           dn: search === "",
         })}
         style={{ right: 6, top: 6 }}

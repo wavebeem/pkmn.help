@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import classNames from "classnames";
 import { closest } from "fastest-levenshtein";
 import Papa from "papaparse";
 import * as React from "react";
@@ -7,7 +7,7 @@ import { CoverageType, objectToCoverageType, stringToType, Type } from "./data";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
 
-const buttonClasses = classnames(
+const buttonClasses = classNames(
   "no-underline",
   "db",
   "ba br2 pv1 ph2",
