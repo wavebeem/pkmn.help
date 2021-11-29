@@ -14,7 +14,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
   return (
     <div className="relative mv3">
       <img
-        src={`${PUBLIC_PATH}svg/search.svg`}
+        src={new URL("search.svg", PUBLIC_PATH).href}
         width={iconSize}
         height={iconSize}
         role="presentation"
@@ -46,7 +46,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
         ref={ref}
       />
       <img
-        src={`${PUBLIC_PATH}svg/clear.svg`}
+        src={new URL("clear.svg", PUBLIC_PATH).href}
         width={iconSize}
         height={iconSize}
         role="presentation"
