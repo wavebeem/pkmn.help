@@ -14,42 +14,7 @@ export default defineConfig((env) => {
       reactRefresh(),
       VitePWA({
         mode: env.mode !== "development" ? "production" : "development",
-        includeAssets: ["data-pkmn.json", "svg/*.svg"],
-        manifest: {
-          name: "Pokémon Type Calculator",
-          short_name: "pkmn.help",
-          description:
-            "A Pokémon type calculator to show strengths/weaknesses of different type combinations",
-          theme_color: "#ffffff",
-          icons: [
-            {
-              src: "favicon-16x16.png",
-              sizes: "16x16",
-              type: "image/png",
-            },
-            {
-              src: "favicon-32x32.png",
-              sizes: "32x32",
-              type: "image/png",
-            },
-            {
-              src: "favicon-192x192.png",
-              sizes: "192x192",
-              type: "image/png",
-            },
-            {
-              src: "favicon-512x512.png",
-              sizes: "512x512",
-              type: "image/png",
-            },
-            {
-              src: "favicon-512x512.png",
-              sizes: "512x512",
-              type: "image/png",
-              purpose: "any maskable",
-            },
-          ],
-        },
+        includeAssets: ["data-pkmn.json"],
       }),
     ],
   };

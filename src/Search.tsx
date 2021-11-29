@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
-import { PUBLIC_PATH } from "./settings";
+import { IconSearch } from "./IconSearch";
+import { IconClear } from "./IconClear";
 
 interface SearchProps {
   updateSearch: (search: string) => void;
@@ -13,12 +14,11 @@ export default function Search({ updateSearch, search }: SearchProps) {
   const inputHeight = 36;
   return (
     <div className="relative mv3">
-      <img
-        src={`${PUBLIC_PATH}svg/search.svg`}
+      <IconSearch
         width={iconSize}
         height={iconSize}
         role="presentation"
-        className="o-50 absolute dark--invert"
+        className="absolute fg3 fill-currentColor"
         style={{ left: 10, top: 8 }}
       />
       <input
@@ -45,8 +45,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
         }}
         ref={ref}
       />
-      <img
-        src={`${PUBLIC_PATH}svg/clear.svg`}
+      <IconClear
         width={iconSize}
         height={iconSize}
         role="presentation"
@@ -56,7 +55,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
             ref.current.focus();
           }
         }}
-        className={classNames("o-50 absolute dark--invert", {
+        className={classNames("absolute fg3 fill-currentColor", {
           dn: search === "",
         })}
         style={{ right: 6, top: 6 }}
