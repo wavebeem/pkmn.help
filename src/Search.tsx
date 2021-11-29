@@ -7,13 +7,6 @@ interface SearchProps {
   search: string;
 }
 
-function preloadImage(src: string): void {
-  new Image().src = src;
-}
-
-preloadImage("/svg/search.svg");
-preloadImage("/svg/clear.svg");
-
 export default function Search({ updateSearch, search }: SearchProps) {
   const ref = React.useRef<HTMLInputElement>(null);
   const iconSize = 24;
