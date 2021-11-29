@@ -41,15 +41,16 @@ export default function App() {
     updateServiceWorker,
   } = useRegisterSW({
     onRegistered: (reg) => {
+      if (!reg) {
+        return;
+      }
       // Periodically check for code updates, in case someone leaves the website
       // open for a really long time
       const loop = async () => {
-        if (reg) {
-          await reg.update();
-        }
+        await reg.update();
         setTimeout(loop, updateInterval);
       };
-      setTimeout(loop, updateInterval);
+      loop();
     },
   });
   const [defenseParams, setDefenseParams] = React.useState("");
