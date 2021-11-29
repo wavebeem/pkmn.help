@@ -59,9 +59,13 @@ function Monster({ pokemon }: MonsterProps) {
           <div className="nv2 fg3 f5">{formName || nbsp}</div>
 
           <div className="pv3 flex justify-center">
-            <div
+            <img
+              src={getImage(pokemon.id)}
               role="presentation"
-              className={`db img-crisp pkmn-${pokemon.id}`}
+              alt=""
+              className="db img-crisp"
+              width={96}
+              height={96}
             />
           </div>
 

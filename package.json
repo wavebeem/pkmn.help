@@ -4,7 +4,6 @@
   "name": "pkmn.help",
   "description": "Pokémon type calculator",
   "scripts": {
-    "create-spritesheet": "spritesmith",
     "merge-data": "ts-node --project ./bin/tsconfig.json ./bin/merge-data.ts",
     "scrape-bulba": "ts-node --project ./bin/tsconfig.json ./bin/scrape-bulba.ts",
     "scrape-pokeapi": "ts-node --project ./bin/tsconfig.json ./bin/scrape-pokeapi.ts",
@@ -50,7 +49,6 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.1",
     "rimraf": "^3.0.2",
-    "spritesmith-cli": "^1.1.2",
     "ts-node": "^8.9.1",
     "typescript": "^4.3.2",
     "vite": "^2.4.1",

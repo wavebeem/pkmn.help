@@ -7,12 +7,12 @@ interface SearchProps {
   search: string;
 }
 
-// function preloadImage(src: string): void {
-//   new Image().src = src;
-// }
+function preloadImage(src: string): void {
+  new Image().src = src;
+}
 
-// preloadImage("/search.svg");
-// preloadImage("/clear.svg");
+preloadImage("/svg/search.svg");
+preloadImage("/svg/clear.svg");
 
 export default function Search({ updateSearch, search }: SearchProps) {
   const ref = React.useRef<HTMLInputElement>(null);
@@ -21,7 +21,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
   return (
     <div className="relative mv3">
       <img
-        src={`${PUBLIC_PATH}search.svg`}
+        src={`${PUBLIC_PATH}svg/search.svg`}
         width={iconSize}
         height={iconSize}
         role="presentation"
@@ -53,7 +53,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
         ref={ref}
       />
       <img
-        src={`${PUBLIC_PATH}clear.svg`}
+        src={`${PUBLIC_PATH}svg/clear.svg`}
         width={iconSize}
         height={iconSize}
         role="presentation"
