@@ -307,6 +307,11 @@ button {
   box-shadow: inset 0 0 0 1px var(--color-vibrant-border1);
 }
 
+.MonsterImage {
+  box-shadow: inset 0 0 0 1px var(--color-vibrant-border);
+  background: var(--type-color2);
+}
+
 .PokeballHeader {
   --PokeballHeader-borderSize: 8px;
   --PokeballHeader-circleSize: 30px;
@@ -337,19 +342,19 @@ button {
 }
 
 .type-bg {
-  background-color: var(--type-color-1, #888);
+  background-color: var(--type-color1, #888);
   color: black;
   text-shadow: 0 0 1px white, 0 0 2px white;
 }
 
 .type-bg-light {
-  background: var(--type-color-3, #fff);
+  background: var(--type-color3, #fff);
   color: black;
   text-shadow: 0 0 1px white, 0 0 2px white;
 }
 
 .type-bg-dark {
-  background: var(--type-color-2, #333);
+  background: var(--type-color2, #333);
   color: white;
   text-shadow: 0 1px 0 black, 0 0 1px rgba(0, 0, 0, 0.6),
     0 0 2px rgba(0, 0, 0, 0.7), 0 0 3px rgba(0, 0, 0, 0.8),
@@ -361,117 +366,117 @@ button {
 }
 
 .type-fire {
-  --type-color-1: #ff9d54;
-  --type-color-2: #ff9d54;
-  --type-color-3: #fde2ab;
+  --type-color1: #ff9d54;
+  --type-color2: #ff9d54;
+  --type-color3: #fde2ab;
 }
 
 .type-water {
-  --type-color-1: #68abf1;
-  --type-color-2: #4f92d6;
-  --type-color-3: #9ee6ff;
+  --type-color1: #68abf1;
+  --type-color2: #4f92d6;
+  --type-color3: #9ee6ff;
 }
 
 .type-grass {
-  --type-color-1: #7ed874;
-  --type-color-2: #65bd55;
-  --type-color-3: #cfffc3;
+  --type-color1: #7ed874;
+  --type-color2: #65bd55;
+  --type-color3: #cfffc3;
 }
 
 .type-electric {
-  --type-color-1: #f4d23b;
-  --type-color-2: #fad143;
-  --type-color-3: #feff99;
+  --type-color1: #f4d23b;
+  --type-color2: #fad143;
+  --type-color3: #feff99;
 }
 
 .type-psychic {
-  --type-color-1: #ff8a90;
-  --type-color-2: #f97175;
-  --type-color-3: #ffd5e3;
+  --type-color1: #ff8a90;
+  --type-color2: #f97175;
+  --type-color3: #ffd5e3;
 }
 
 .type-ice {
-  --type-color-1: #87e3d4;
-  --type-color-2: #72cfbd;
-  --type-color-3: #cbffff;
+  --type-color1: #87e3d4;
+  --type-color2: #72cfbd;
+  --type-color3: #cbffff;
 }
 
 .type-dragon {
-  --type-color-1: #53a3d8;
-  --type-color-2: #116ac4;
-  --type-color-3: #95e4ff;
+  --type-color1: #53a3d8;
+  --type-color2: #116ac4;
+  --type-color3: #95e4ff;
 }
 
 .type-dark {
-  --type-color-1: #a18dd5;
-  --type-color-2: #5b5464;
-  --type-color-3: #ccc4f3;
+  --type-color1: #a18dd5;
+  --type-color2: #5b5464;
+  --type-color3: #ccc4f3;
 }
 
 .type-fairy {
-  --type-color-1: #f08ee5;
-  --type-color-2: #eb92e4;
-  --type-color-3: #ffc7fc;
+  --type-color1: #f08ee5;
+  --type-color2: #eb92e4;
+  --type-color3: #ffc7fc;
 }
 
 .type-normal {
-  --type-color-1: #d1dadf;
-  --type-color-2: #929da3;
-  --type-color-3: #ffffff;
+  --type-color1: #d1dadf;
+  --type-color2: #929da3;
+  --type-color3: #ffffff;
 }
 
 .type-fighting {
-  --type-color-1: #e46a93;
-  --type-color-2: #ce436a;
-  --type-color-3: #ffb0d0;
+  --type-color1: #e46a93;
+  --type-color2: #ce436a;
+  --type-color3: #ffb0d0;
 }
 
 .type-flying {
-  --type-color-1: #8fb5e6;
-  --type-color-2: #8caadc;
-  --type-color-3: #c5dcfc;
+  --type-color1: #8fb5e6;
+  --type-color2: #8caadc;
+  --type-color3: #c5dcfc;
 }
 
 .type-poison {
-  --type-color-1: #c685e3;
-  --type-color-2: #ac66c8;
-  --type-color-3: #f6bcf9;
+  --type-color1: #c685e3;
+  --type-color2: #ac66c8;
+  --type-color3: #f6bcf9;
 }
 
 .type-ground {
-  --type-color-1: #f2915e;
-  --type-color-2: #d97946;
-  --type-color-3: #feca98;
+  --type-color1: #f2915e;
+  --type-color2: #d97946;
+  --type-color3: #feca98;
 }
 
 .type-rock {
-  --type-color-1: #c8b78b;
-  --type-color-2: #c6b887;
-  --type-color-3: #eee6a5;
+  --type-color1: #c8b78b;
+  --type-color2: #c6b887;
+  --type-color3: #eee6a5;
 }
 
 .type-bug {
-  --type-color-1: #addf4a;
-  --type-color-2: #90c127;
-  --type-color-3: #f6ffa6;
+  --type-color1: #addf4a;
+  --type-color2: #90c127;
+  --type-color3: #f6ffa6;
 }
 
 .type-ghost {
-  --type-color-1: #8293d8;
-  --type-color-2: #4e6caa;
-  --type-color-3: #b6c7ff;
+  --type-color1: #8293d8;
+  --type-color2: #4e6caa;
+  --type-color3: #b6c7ff;
 }
 
 .type-steel {
-  --type-color-1: #79adc2;
-  --type-color-2: #518ea3;
-  --type-color-3: #b3f3ff;
+  --type-color1: #79adc2;
+  --type-color2: #518ea3;
+  --type-color3: #b3f3ff;
 }
 
 .type-none {
-  --type-color-1: #dedede;
-  --type-color-2: #808080;
-  --type-color-3: #fafafa;
+  --type-color1: #dedede;
+  --type-color2: #808080;
+  --type-color3: #fafafa;
 }
 
 .TabFocus:focus {
