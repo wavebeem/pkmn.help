@@ -1,5 +1,5 @@
 import { PUBLIC_PATH } from "./settings";
 
 export function getImage(id: string): string {
-  return `${PUBLIC_PATH}img/${id}.png`;
+  return new URL(`img/${id}.png`, PUBLIC_PATH).href;
 }
