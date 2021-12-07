@@ -33,7 +33,7 @@ const tabClass = classNames([
 const tabClassActive = classNames(["fg1 bottom-border-thick-current"]);
 
 export default function App() {
-  // 1 hour
+  // Check for updates every 1 hour
   const updateInterval = 60 * 60 * 1000;
   const {
     needRefresh: [needRefresh],
