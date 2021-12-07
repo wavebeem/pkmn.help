@@ -60,7 +60,7 @@ export default function ScreenInfo() {
       </p>
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">Help</h2>
-      <p>Just in case offline mode isn&apos;t working correctly.</p>
+      <p>This button can help fix issues in the app.</p>
       <div className="mv3">
         <Button onClick={unregisterServiceWorker}>
           Unregister service worker
