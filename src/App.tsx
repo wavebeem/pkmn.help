@@ -134,7 +134,7 @@ export default function App() {
                   whiteSpace: "pre-wrap",
                 }}
               >
-                {"2021-12-07 18.03.10"}
+                {"2021-12-07 18.10.00"}
                 {"\n"}
                 {updateData.type}
                 {"\n"}
