@@ -134,6 +134,8 @@ export default function App() {
                   whiteSpace: "pre-wrap",
                 }}
               >
+                {"2021-12-07 18.03.10"}
+                {"\n"}
                 {updateData.type}
                 {"\n"}
                 {new Date(updateData.lastUpdateCheck).toLocaleTimeString()}
