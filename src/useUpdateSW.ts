@@ -3,6 +3,7 @@ import * as React from "react";
 interface UpdateSW {
   type: "updating" | "pending";
   eventType: string;
+  date: string;
 }
 
 export function useUpdateSW(): UpdateSW {
@@ -10,6 +11,7 @@ export function useUpdateSW(): UpdateSW {
   const [state, setState] = React.useState<UpdateSW>({
     type: "pending",
     eventType: "",
+    date: new Date().toISOString(),
   });
   React.useEffect(() => {
     const update = async (event: Event) => {
@@ -19,10 +21,18 @@ export function useUpdateSW(): UpdateSW {
       const reg = await navigator.serviceWorker.getRegistration();
       if (reg) {
         try {
-          setState({ type: "updating", eventType: event.type });
+          setState({
+            type: "updating",
+            eventType: event.type,
+            date: new Date().toISOString(),
+          });
           await reg.update();
         } finally {
-          setState({ type: "pending", eventType: event.type });
+          setState({
+            type: "pending",
+            eventType: event.type,
+            date: new Date().toISOString(),
+          });
         }
       }
     };
