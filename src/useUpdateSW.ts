@@ -19,9 +19,9 @@ export function useUpdateSW(): UpdateSW {
         }
       }
     };
-    addEventListener("focus", update);
+    addEventListener("pageshow", update);
     return () => {
-      removeEventListener("focus", update);
+      removeEventListener("pageshow", update);
     };
   }, []);
   return state;
