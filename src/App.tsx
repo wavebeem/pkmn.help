@@ -34,7 +34,9 @@ const tabClassActive = classNames(["fg1 bottom-border-thick-current"]);
 
 export default function App() {
   // Check for updates every 1 hour
-  const updateInterval = 60 * 60 * 1000;
+  // const updateInterval = 60 * 60 * 1000;
+  const updateInterval = 60 * 1000;
+  const [isUpdating, setIsUpdating] = React.useState(false);
   const {
     needRefresh: [needRefresh],
     offlineReady: [offlineReady, setOfflineReady],
@@ -47,8 +49,13 @@ export default function App() {
       // Periodically check for code updates, in case someone leaves the website
       // open for a really long time
       const loop = async () => {
-        await reg.update();
-        setTimeout(loop, updateInterval);
+        try {
+          setIsUpdating(true);
+          await reg.update();
+        } finally {
+          setIsUpdating(false);
+          setTimeout(loop, updateInterval);
+        }
       };
       loop();
     },
@@ -137,8 +144,15 @@ export default function App() {
           Info
         </NavLink>
       </nav>
-      {(needRefresh || offlineReady) && (
+      {(needRefresh || offlineReady || isUpdating) && (
         <div className="ph3 mw6 center grid gap3 pa3">
+          {isUpdating && (
+            <div className={bannerClass}>
+              <span className="flex flex-auto items-center">
+                Checking for updates...
+              </span>
+            </div>
+          )}
           {needRefresh && (
             <div className={bannerClass}>
               <span className="flex flex-auto items-center">
