@@ -11,6 +11,7 @@ import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
+import { useUpdateSW } from "./useUpdateSW";
 
 const bannerClass = classNames([
   "button-shadow",
@@ -33,33 +34,12 @@ const tabClass = classNames([
 const tabClassActive = classNames(["fg1 bottom-border-thick-current"]);
 
 export default function App() {
-  // Check for updates every 1 hour
-  // const updateInterval = 60 * 60 * 1000;
-  const updateInterval = 60 * 1000;
-  const [isUpdating, setIsUpdating] = React.useState(false);
   const {
     needRefresh: [needRefresh],
     offlineReady: [offlineReady, setOfflineReady],
     updateServiceWorker,
-  } = useRegisterSW({
-    onRegistered: (reg) => {
-      if (!reg) {
-        return;
-      }
-      // Periodically check for code updates, in case someone leaves the website
-      // open for a really long time
-      const loop = async () => {
-        try {
-          setIsUpdating(true);
-          await reg.update();
-        } finally {
-          setIsUpdating(false);
-          setTimeout(loop, updateInterval);
-        }
-      };
-      loop();
-    },
-  });
+  } = useRegisterSW();
+  const updateData = useUpdateSW();
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
@@ -144,13 +124,13 @@ export default function App() {
           Info
         </NavLink>
       </nav>
-      {(needRefresh || offlineReady || isUpdating) && (
+      {(needRefresh || offlineReady || updateData.type) && (
         <div className="ph3 mw6 center grid gap3 pa3">
-          {isUpdating && (
+          {updateData.type && (
             <div className={bannerClass}>
-              <span className="flex flex-auto items-center">
-                Checking for updates...
-              </span>
+              <pre className="flex flex-auto items-center ma0">
+                {JSON.stringify(updateData, null, 2)}
+              </pre>
             </div>
           )}
           {needRefresh && (
