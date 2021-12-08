@@ -128,8 +128,15 @@ export default function App() {
         <div className="ph3 mw6 center grid gap3 pa3">
           {updateData.type && (
             <div className={bannerClass}>
-              <pre className="flex flex-auto items-center ma0">
-                {JSON.stringify(updateData, null, 2)}
+              <pre
+                className="flex flex-auto items-center ma0"
+                style={{
+                  whiteSpace: "pre-wrap",
+                }}
+              >
+                {updateData.type}
+                {"\n"}
+                {new Date(updateData.lastUpdateCheck).toLocaleTimeString()}
               </pre>
             </div>
           )}

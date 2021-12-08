@@ -2,20 +2,24 @@ import * as React from "react";
 
 interface UpdateSW {
   type: "updating" | "pending";
-  eventType: string;
-  date: string;
+  lastUpdateCheck: number;
 }
 
+// const checkInterval = 60 * 60 * 1000;
+const checkInterval = 2 * 60 * 1000;
+
 export function useUpdateSW(): UpdateSW {
-  // TODO: Don't check too frequently
   const [state, setState] = React.useState<UpdateSW>({
     type: "pending",
-    eventType: "",
-    date: new Date().toISOString(),
+    lastUpdateCheck: Date.now(),
   });
   React.useEffect(() => {
-    const update = async (event: Event) => {
+    const update = async () => {
       if (document.hidden) {
+        return;
+      }
+      const date = new Date();
+      if (date.valueOf() - state.lastUpdateCheck < checkInterval) {
         return;
       }
       const reg = await navigator.serviceWorker.getRegistration();
@@ -23,15 +27,13 @@ export function useUpdateSW(): UpdateSW {
         try {
           setState({
             type: "updating",
-            eventType: event.type,
-            date: new Date().toISOString(),
+            lastUpdateCheck: date.valueOf(),
           });
           await reg.update();
         } finally {
           setState({
             type: "pending",
-            eventType: event.type,
-            date: new Date().toISOString(),
+            lastUpdateCheck: date.valueOf(),
           });
         }
       }
@@ -42,6 +44,6 @@ export function useUpdateSW(): UpdateSW {
       document.removeEventListener("visibilitychange", update);
       document.removeEventListener("focus", update);
     };
-  }, []);
+  }, [state]);
   return state;
 }
