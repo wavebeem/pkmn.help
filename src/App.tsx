@@ -34,6 +34,15 @@ const tabClass = classNames([
 const tabClassActive = classNames(["fg1 bottom-border-thick-current"]);
 
 export default function App() {
+  const [time, setTime] = React.useState(Date.now());
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setTime(Date.now());
+    }, 60 * 1000);
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
   const {
     needRefresh: [needRefresh],
     offlineReady: [offlineReady, setOfflineReady],
@@ -124,24 +133,22 @@ export default function App() {
           Info
         </NavLink>
       </nav>
-      {(needRefresh || offlineReady || updateData.type) && (
+      {(needRefresh || offlineReady || updateData.type || time) && (
         <div className="ph3 mw6 center grid gap3 pa3">
-          {updateData.type && (
-            <div className={bannerClass}>
-              <pre
-                className="flex flex-auto items-center ma0"
-                style={{
-                  whiteSpace: "pre-wrap",
-                }}
-              >
-                {"2021-12-07 18.14.45"}
-                {"\n"}
-                {updateData.type}
-                {"\n"}
-                {new Date(updateData.lastUpdateCheck).toLocaleTimeString()}
-              </pre>
-            </div>
-          )}
+          <div className={bannerClass}>
+            <pre
+              className="flex flex-auto items-center ma0"
+              style={{
+                whiteSpace: "pre-wrap",
+              }}
+            >
+              {new Date(time).toLocaleTimeString()}
+              {"\n"}
+              {updateData.type}
+              {"\n"}
+              {new Date(updateData.lastUpdateCheck).toLocaleTimeString()}
+            </pre>
+          </div>
           {needRefresh && (
             <div className={bannerClass}>
               <span className="flex flex-auto items-center">
