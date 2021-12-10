@@ -37,7 +37,7 @@ const languages: Language[] = [
   { name: "Spanish", code: "es" },
 ];
 
-export default function ScreenInfo() {
+export default function ScreenMore(): JSX.Element {
   const [language, setLanguage] = useLanguage();
   return (
     <main className="pa3 center content-narrow lh-copy">

@@ -5,7 +5,7 @@ import { useRegisterSW } from "virtual:pwa-register/react";
 import { Button } from "./Button";
 import { CoverageType, Pokemon, Type } from "./data";
 import ScreenDefense from "./ScreenDefense";
-import ScreenInfo from "./ScreenInfo";
+import ScreenMore from "./ScreenMore";
 import ScreenOffense from "./ScreenOffense";
 import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
@@ -119,9 +119,9 @@ export default function App() {
         <NavLink
           className={tabClass}
           activeClassName={tabClassActive}
-          to="/info/"
+          to="/more/"
         >
-          Info
+          More
         </NavLink>
       </nav>
       {(needRefresh || offlineReady) && (
@@ -213,7 +213,7 @@ export default function App() {
             />
           )}
         />
-        <Route exact path="/info/" component={ScreenInfo} />
+        <Route exact path="/more/" component={ScreenMore} />
         <Redirect to="/defense/" />
       </Switch>
     </div>
