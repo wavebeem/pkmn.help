@@ -2,6 +2,7 @@ import * as React from "react";
 import { Button } from "./Button";
 import { Select } from "./Select";
 import { useLanguage } from "./useLanguage";
+import { useTheme } from "./useTheme";
 
 const year = new Date().getFullYear();
 
@@ -20,25 +21,37 @@ async function unregisterServiceWorker() {
 }
 
 interface Language {
-  name: string;
-  code: string;
+  title: string;
+  value: string;
 }
 
 const languages: Language[] = [
-  { name: "English", code: "en" },
-  { name: "Japanese", code: "ja" },
-  { name: "Japanese (Hiragana/Katakana)", code: "ja-Hrkt" },
-  { name: "Chinese (Simplified)", code: "zh-Hans" },
-  { name: "Chinese (Traditional)", code: "zh-Hant" },
-  { name: "French", code: "fr" },
-  { name: "German", code: "de" },
-  { name: "Italian", code: "it" },
-  { name: "Korean", code: "ko" },
-  { name: "Spanish", code: "es" },
+  { title: "English", value: "en" },
+  { title: "Japanese", value: "ja" },
+  { title: "Japanese (Hiragana/Katakana)", value: "ja-Hrkt" },
+  { title: "Chinese (Simplified)", value: "zh-Hans" },
+  { title: "Chinese (Traditional)", value: "zh-Hant" },
+  { title: "French", value: "fr" },
+  { title: "German", value: "de" },
+  { title: "Italian", value: "it" },
+  { title: "Korean", value: "ko" },
+  { title: "Spanish", value: "es" },
+];
+
+interface Theme {
+  title: string;
+  value: string;
+}
+
+const themes: Theme[] = [
+  { title: "Auto", value: "auto" },
+  { title: "Light", value: "light" },
+  { title: "Dark", value: "dark" },
 ];
 
 export default function ScreenMore(): JSX.Element {
   const [language, setLanguage] = useLanguage();
+  const [theme, setTheme] = useTheme();
   return (
     <main className="pa3 center content-narrow lh-copy">
       <h2 className="lh-title f4">Contact Me</h2>
@@ -72,16 +85,33 @@ export default function ScreenMore(): JSX.Element {
           >
             {languages.map((lang) => {
               return (
-                <option key={lang.code} value={lang.code}>
-                  {lang.name}
+                <option key={lang.value} value={lang.value}>
+                  {lang.title}
                 </option>
               );
             })}
           </Select>
         </label>
-        <p className="ma0 nt3 pt1">
+        <p className="ma0 nt3 pt1 fg3 f6">
           Language support is incomplete. Only Pokémon names are translated.
         </p>
+        <label className="db">
+          <div className="pr2 pb1">Theme</div>
+          <Select
+            value={theme}
+            onChange={(event) => {
+              setTheme(event.target.value);
+            }}
+          >
+            {themes.map((theme) => {
+              return (
+                <option key={theme.value} value={theme.value}>
+                  {theme.title}
+                </option>
+              );
+            })}
+          </Select>
+        </label>
       </div>
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">Help</h2>

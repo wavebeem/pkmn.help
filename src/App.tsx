@@ -1,6 +1,8 @@
 import classNames from "classnames";
 import * as React from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
+import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Button } from "./Button";
 import { CoverageType, Pokemon, Type } from "./data";
@@ -11,6 +13,7 @@ import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
+import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
 
 const bannerClass = classNames([
@@ -80,142 +83,172 @@ export default function App() {
     }
     load();
   }, [attemptTime]);
+  const [theme] = useTheme();
+  const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   return (
-    <div className="flex-auto">
-      <h1 className="f3-ns f4 tc relative white PokeballHeader">
-        <Link to="/" className="no-underline white OutlineFocus">
-          Pokémon Type Calculator
-        </Link>
-      </h1>
-      <nav
-        className={classNames([
-          "flex justify-center",
-          "bg1",
-          "bb border2 TabBarShadow",
-          "pt3",
-        ])}
-      >
-        <NavLink
-          className={tabClass}
-          activeClassName={tabClassActive}
-          to={`/offense/${offenseParams}`}
+    <HelmetProvider>
+      <div className="flex-auto">
+        <Helmet>
+          <html
+            data-theme={theme}
+            data-theme-auto={isDarkMode ? "dark" : "light"}
+          />
+          {theme === "light" && (
+            <meta name="theme-color" content="hsl(357, 97%, 46%)" />
+          )}
+          {theme === "dark" && (
+            <meta name="theme-color" content="hsl(350, 70%, 40%)" />
+          )}
+          {theme === "auto" && [
+            <meta
+              key="light"
+              name="theme-color"
+              content="hsl(357, 97%, 46%)"
+            />,
+            <meta
+              key="dark"
+              name="theme-color"
+              content="hsl(350, 70%, 40%)"
+              // @ts-expect-error media attribute not supported yet
+              media="(prefers-color-scheme: dark)"
+            />,
+          ]}
+        </Helmet>
+        <h1 className="f3-ns f4 tc relative white PokeballHeader">
+          <Link to="/" className="no-underline white OutlineFocus">
+            Pokémon Type Calculator
+          </Link>
+        </h1>
+        <nav
+          className={classNames([
+            "flex justify-center",
+            "bg1",
+            "bb border2 TabBarShadow",
+            "pt3",
+          ])}
         >
-          Offense
-        </NavLink>
-        <NavLink
-          className={tabClass}
-          activeClassName={tabClassActive}
-          to={`/defense/${defenseParams}`}
-        >
-          Defense
-        </NavLink>
-        <NavLink
-          className={tabClass}
-          activeClassName={tabClassActive}
-          to={`/pokedex/${pokedexParams}`}
-        >
-          Pokédex
-        </NavLink>
-        <NavLink
-          className={tabClass}
-          activeClassName={tabClassActive}
-          to="/more/"
-        >
-          More
-        </NavLink>
-      </nav>
-      {(needRefresh || offlineReady) && (
-        <div className="ph3 mw6 center grid gap3 pa3">
-          {needRefresh && (
-            <div className={bannerClass}>
-              <span className="flex flex-auto items-center">
-                An update is available
-              </span>
-              <Button
-                className="ml3"
-                type="button"
-                onClick={() => {
-                  updateServiceWorker(true);
-                  setNeedRefresh(false);
-                }}
-              >
-                Update
-              </Button>
-            </div>
-          )}
-          {offlineReady && (
-            <div className={bannerClass}>
-              <span className="flex flex-auto items-center">
-                Offline mode is now available
-              </span>
-              <Button
-                className="ml3"
-                type="button"
-                onClick={() => {
-                  setOfflineReady(false);
-                }}
-              >
-                Dismiss
-              </Button>
-            </div>
-          )}
-        </div>
-      )}
-      <Switch>
-        <Route
-          exact
-          path="/offense/coverage/"
-          render={() => (
-            <ScreenWeaknessCoverage
-              setCoverageTypes={setCoverageTypes}
-              offenseParams={offenseParams}
-              fallbackCoverageTypes={fallbackCoverageTypes}
-              isLoading={isLoading}
-            />
-          )}
-        />
-        <Route
-          exact
-          path="/offense/"
-          render={() => (
-            <ScreenOffense
-              coverageTypes={coverageTypes}
-              setCoverageTypes={setCoverageTypes}
-              setOffenseParams={setOffenseParams}
-              fallbackCoverageTypes={fallbackCoverageTypes}
-              isLoading={isLoading}
-            />
-          )}
-        />
-        <Route
-          exact
-          path="/defense/"
-          render={() => (
-            <ScreenDefense
-              setDefenseParams={setDefenseParams}
-              fallbackCoverageTypes={fallbackCoverageTypes}
-            />
-          )}
-        />
-        <Route
-          exact
-          path="/pokedex/help/"
-          render={() => <ScreenPokedexHelp pokedexParams={pokedexParams} />}
-        />
-        <Route
-          exact
-          path="/pokedex/"
-          render={() => (
-            <ScreenPokedex
-              setPokedexParams={setPokedexParams}
-              allPokemon={AllPokemon}
-              isLoading={isLoading}
-            />
-          )}
-        />
-        <Route exact path="/more/" component={ScreenMore} />
-        <Redirect to="/defense/" />
-      </Switch>
-    </div>
+          <NavLink
+            className={tabClass}
+            activeClassName={tabClassActive}
+            to={`/offense/${offenseParams}`}
+          >
+            Offense
+          </NavLink>
+          <NavLink
+            className={tabClass}
+            activeClassName={tabClassActive}
+            to={`/defense/${defenseParams}`}
+          >
+            Defense
+          </NavLink>
+          <NavLink
+            className={tabClass}
+            activeClassName={tabClassActive}
+            to={`/pokedex/${pokedexParams}`}
+          >
+            Pokédex
+          </NavLink>
+          <NavLink
+            className={tabClass}
+            activeClassName={tabClassActive}
+            to="/more/"
+          >
+            More
+          </NavLink>
+        </nav>
+        {(needRefresh || offlineReady) && (
+          <div className="ph3 mw6 center grid gap3 pa3">
+            {needRefresh && (
+              <div className={bannerClass}>
+                <span className="flex flex-auto items-center">
+                  An update is available
+                </span>
+                <Button
+                  className="ml3"
+                  type="button"
+                  onClick={() => {
+                    updateServiceWorker(true);
+                    setNeedRefresh(false);
+                  }}
+                >
+                  Update
+                </Button>
+              </div>
+            )}
+            {offlineReady && (
+              <div className={bannerClass}>
+                <span className="flex flex-auto items-center">
+                  Offline mode is now available
+                </span>
+                <Button
+                  className="ml3"
+                  type="button"
+                  onClick={() => {
+                    setOfflineReady(false);
+                  }}
+                >
+                  Dismiss
+                </Button>
+              </div>
+            )}
+          </div>
+        )}
+        <Switch>
+          <Route
+            exact
+            path="/offense/coverage/"
+            render={() => (
+              <ScreenWeaknessCoverage
+                setCoverageTypes={setCoverageTypes}
+                offenseParams={offenseParams}
+                fallbackCoverageTypes={fallbackCoverageTypes}
+                isLoading={isLoading}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/offense/"
+            render={() => (
+              <ScreenOffense
+                coverageTypes={coverageTypes}
+                setCoverageTypes={setCoverageTypes}
+                setOffenseParams={setOffenseParams}
+                fallbackCoverageTypes={fallbackCoverageTypes}
+                isLoading={isLoading}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/defense/"
+            render={() => (
+              <ScreenDefense
+                setDefenseParams={setDefenseParams}
+                fallbackCoverageTypes={fallbackCoverageTypes}
+              />
+            )}
+          />
+          <Route
+            exact
+            path="/pokedex/help/"
+            render={() => <ScreenPokedexHelp pokedexParams={pokedexParams} />}
+          />
+          <Route
+            exact
+            path="/pokedex/"
+            render={() => (
+              <ScreenPokedex
+                setPokedexParams={setPokedexParams}
+                allPokemon={AllPokemon}
+                isLoading={isLoading}
+              />
+            )}
+          />
+          <Route exact path="/more/" component={ScreenMore} />
+          <Redirect to="/defense/" />
+        </Switch>
+      </div>
+    </HelmetProvider>
   );
 }
