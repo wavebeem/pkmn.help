@@ -85,34 +85,15 @@ export default function App() {
   }, [attemptTime]);
   const [theme] = useTheme();
   const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const isDark = theme === "dark" || (theme === "auto" && isDarkMode);
+  const themeColor = isDark ? "hsl(350, 70%, 40%)" : "hsl(357, 97%, 46%)";
+  const themeAuto = isDarkMode ? "dark" : "light";
   return (
     <HelmetProvider>
       <div className="flex-auto">
         <Helmet>
-          <html
-            data-theme={theme}
-            data-theme-auto={isDarkMode ? "dark" : "light"}
-          />
-          {theme === "light" && (
-            <meta name="theme-color" content="hsl(357, 97%, 46%)" />
-          )}
-          {theme === "dark" && (
-            <meta name="theme-color" content="hsl(350, 70%, 40%)" />
-          )}
-          {theme === "auto" && [
-            <meta
-              key="light"
-              name="theme-color"
-              content="hsl(357, 97%, 46%)"
-            />,
-            <meta
-              key="dark"
-              name="theme-color"
-              content="hsl(350, 70%, 40%)"
-              // @ts-expect-error media attribute not supported yet
-              media="(prefers-color-scheme: dark)"
-            />,
-          ]}
+          <html data-theme={theme} data-theme-auto={themeAuto} />
+          <meta name="theme-color" content={themeColor} />
         </Helmet>
         <h1 className="f3-ns f4 tc relative white PokeballHeader">
           <Link to="/" className="no-underline white OutlineFocus">
