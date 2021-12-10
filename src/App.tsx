@@ -87,18 +87,22 @@ export default function App() {
     <div className="flex-auto">
       <Helmet>
         <html data-theme={theme} />
-        {theme !== "dark" && (
+        {theme === "light" && (
           <meta name="theme-color" content="hsl(357, 97%, 46%)" />
         )}
-        {theme !== "light" && (
-          <meta
-            name="theme-color"
-            content="hsl(350, 70%, 40%)"
-            // @ts-expect-error media attribute not supported yet
-            media={
-              theme === "auto" ? "(prefers-color-scheme: dark)" : undefined
-            }
-          />
+        {theme === "dark" && (
+          <meta name="theme-color" content="hsl(350, 70%, 40%)" />
+        )}
+        {theme === "auto" && (
+          <>
+            <meta name="theme-color" content="hsl(357, 97%, 46%)" />
+            <meta
+              name="theme-color"
+              content="hsl(350, 70%, 40%)"
+              // @ts-expect-error media attribute not supported yet
+              media="(prefers-color-scheme: dark)"
+            />
+          </>
         )}
       </Helmet>
       <h1 className="f3-ns f4 tc relative white PokeballHeader">
