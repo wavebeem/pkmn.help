@@ -128,7 +128,7 @@ export default function App() {
           Info
         </NavLink>
       </nav>
-      {(needRefresh || offlineReady || updateData.type) && (
+      {(needRefresh || offlineReady) && (
         <div className="ph3 mw6 center grid gap3 pa3">
           {needRefresh && (
             <div className={bannerClass}>
