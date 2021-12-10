@@ -14,6 +14,9 @@ export function useUpdateSW(): UpdateSW {
     lastUpdateCheck: Date.now(),
   });
   React.useEffect(() => {
+    if (import.meta.env.DEV) {
+      return;
+    }
     const update = async () => {
       if (document.hidden) {
         return;
@@ -30,6 +33,8 @@ export function useUpdateSW(): UpdateSW {
             lastUpdateCheck: date.valueOf(),
           });
           await reg.update();
+        } catch (err) {
+          console.error(err);
         } finally {
           setState({
             type: "pending",
