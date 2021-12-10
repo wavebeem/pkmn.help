@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { Helmet } from "react-helmet";
 import * as React from "react";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { useRegisterSW } from "virtual:pwa-register/react";
@@ -11,6 +12,7 @@ import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
+import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
 
 const bannerClass = classNames([
@@ -80,8 +82,25 @@ export default function App() {
     }
     load();
   }, [attemptTime]);
+  const [theme] = useTheme();
   return (
     <div className="flex-auto">
+      <Helmet>
+        <html data-theme={theme} />
+        {theme !== "dark" && (
+          <meta name="theme-color" content="hsl(357, 97%, 46%)" />
+        )}
+        {theme !== "light" && (
+          <meta
+            name="theme-color"
+            content="hsl(350, 70%, 40%)"
+            // @ts-expect-error media attribute not supported yet
+            media={
+              theme === "auto" ? "(prefers-color-scheme: dark)" : undefined
+            }
+          />
+        )}
+      </Helmet>
       <h1 className="f3-ns f4 tc relative white PokeballHeader">
         <Link to="/" className="no-underline white OutlineFocus">
           Pokémon Type Calculator
