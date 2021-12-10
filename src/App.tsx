@@ -35,7 +35,7 @@ const tabClassActive = classNames(["fg1 bottom-border-thick-current"]);
 
 export default function App() {
   const {
-    needRefresh: [needRefresh],
+    needRefresh: [needRefresh, setNeedRefresh],
     offlineReady: [offlineReady, setOfflineReady],
     updateServiceWorker,
   } = useRegisterSW({
@@ -43,7 +43,7 @@ export default function App() {
       console.log("onRegistered");
     },
   });
-  const updateData = useUpdateSW();
+  useUpdateSW();
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
@@ -140,6 +140,7 @@ export default function App() {
                 type="button"
                 onClick={() => {
                   updateServiceWorker(true);
+                  setNeedRefresh(false);
                 }}
               >
                 Update
