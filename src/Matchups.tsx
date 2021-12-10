@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import classNames from "classnames";
 import * as React from "react";
 import { Link } from "react-router-dom";
 import {
@@ -19,7 +19,7 @@ interface BadgeProps {
 function Badge({ type }: BadgeProps) {
   return (
     <div
-      className={classnames(
+      className={classNames(
         "type-bg-dark",
         cssType(type),
         "ba border-vibrant",
@@ -91,7 +91,7 @@ function Matchups({
             </span>
           </h3>
           <div
-            className={classnames(
+            className={classNames(
               "pt1 mw5 center tc",
               isLoading && ["o-30 no-pointer cursor-na"]
             )}

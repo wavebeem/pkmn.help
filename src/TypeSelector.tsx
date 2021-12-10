@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import classNames from "classnames";
 import * as React from "react";
 import { Type, types, typesOrNone } from "./data";
 import { cssType } from "./cssType";
@@ -38,7 +38,7 @@ export default function TypeSelector({
           <button
             key={`type-${type}`}
             disabled={isDisabled}
-            className={classnames(
+            className={classNames(
               style,
               "db w-100",
               "ba br-pill",
@@ -52,7 +52,7 @@ export default function TypeSelector({
           >
             <span className="flex flex-row items-center justify-center">
               <span
-                className={classnames(
+                className={classNames(
                   cssType(type),
                   `b--black br-pill ba`,
                   type === value

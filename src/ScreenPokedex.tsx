@@ -1,16 +1,16 @@
-import classnames from "classnames";
+import classNames from "classnames";
 import matchSorter from "match-sorter";
 import * as React from "react";
 import { Link, useHistory } from "react-router-dom";
+import { useDebounce } from "use-debounce";
+import { cssType } from "./cssType";
 import { Pokemon, Type, typesOrNoneFromString } from "./data";
-import { getImage } from "./getImage";
+import { MonsterImage } from "./MonsterImage";
 import Paginator from "./Paginator";
 import { pickTranslation } from "./pickTranslation";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
 import { useSearch } from "./useSearch";
-import { useDebounce } from "use-debounce";
-import { cssType } from "./cssType";
 
 const PAGE_SIZE = 20;
 const nbsp = "\u00a0";
@@ -23,7 +23,7 @@ interface MonsterTypeProps {
 function MonsterType({ type, index }: MonsterTypeProps) {
   return (
     <div
-      className={classnames(
+      className={classNames(
         cssType(type),
         "type-bg-dark",
         "ttc tc flex",
@@ -48,7 +48,7 @@ function Monster({ pokemon }: MonsterProps) {
   const speciesName = pickTranslation(pokemon.speciesNames);
   const formName = pickTranslation(pokemon.formNames);
   return (
-    <div className={classnames("fg1 pv3", "flex-ns items-center", "Monster")}>
+    <div className={classNames("fg1 pv3", "flex-ns items-center", "Monster")}>
       <div className="flex flex-column">
         <div className="flex flex-column pa3 br4 bg1 flex ba border3">
           <div className="flex items-center">
@@ -59,14 +59,7 @@ function Monster({ pokemon }: MonsterProps) {
           <div className="nv2 fg3 f5">{formName || nbsp}</div>
 
           <div className="pv3 flex justify-center">
-            <img
-              src={getImage(pokemon.id)}
-              role="presentation"
-              alt=""
-              className="db img-crisp"
-              width={96}
-              height={96}
-            />
+            <MonsterImage pokemonID={pokemon.id} types={pokemon.types} />
           </div>
 
           <div className="pt2 flex justify-end">

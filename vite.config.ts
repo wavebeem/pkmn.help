@@ -2,6 +2,7 @@ import purgecss from "@fullhuman/postcss-purgecss";
 import reactRefresh from "@vitejs/plugin-react-refresh";
 import { Plugin } from "postcss";
 import { defineConfig, UserConfigExport } from "vite";
+import { VitePWA } from "vite-plugin-pwa";
 
 // https://vitejs.dev/config/
 export default defineConfig((env) => {
@@ -9,7 +10,13 @@ export default defineConfig((env) => {
     build: {
       sourcemap: true,
     },
-    plugins: [reactRefresh()],
+    plugins: [
+      reactRefresh(),
+      VitePWA({
+        mode: env.mode !== "development" ? "production" : "development",
+        includeAssets: ["data-pkmn.json"],
+      }),
+    ],
   };
   if (env.mode !== "development") {
     config.css = {

@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import classNames from "classnames";
 import * as React from "react";
 import { LinkButton } from "./LinkButton";
 
@@ -43,7 +43,7 @@ function PageSelector({
 
   return (
     <div
-      className={classnames(
+      className={classNames(
         "items-center mv3",
         pageItems.length === 0 ? "dn" : "flex"
       )}
@@ -99,7 +99,6 @@ function PageSelector({
   );
 }
 
-
 interface PaginatorProps<T> {
   urlForPage: (page: number) => string;
   currentPage: number;
@@ -146,4 +145,3 @@ export default function Paginator<T>({
     </div>
   );
 }
-

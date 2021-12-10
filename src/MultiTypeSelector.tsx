@@ -1,4 +1,4 @@
-import classnames from "classnames";
+import classNames from "classnames";
 import * as React from "react";
 import { Type, types } from "./data";
 import { cssType } from "./cssType";
@@ -29,7 +29,7 @@ export default function MultiTypeSelector({
             role="checkbox"
             aria-checked={isChecked ? "true" : "false"}
             key={`type-${type}`}
-            className={classnames(
+            className={classNames(
               style,
               "db w-100",
               "ba br1",
@@ -54,7 +54,7 @@ export default function MultiTypeSelector({
           >
             <span className="flex flex-row items-center justify-center">
               <span
-                className={classnames(
+                className={classNames(
                   `type-${type} ba br1`,
                   isChecked
                     ? "b--black type-bg-light"
