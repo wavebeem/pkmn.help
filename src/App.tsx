@@ -38,11 +38,7 @@ export default function App() {
     needRefresh: [needRefresh, setNeedRefresh],
     offlineReady: [offlineReady, setOfflineReady],
     updateServiceWorker,
-  } = useRegisterSW({
-    onRegistered() {
-      console.log("onRegistered");
-    },
-  });
+  } = useRegisterSW();
   useUpdateSW();
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
