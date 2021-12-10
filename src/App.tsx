@@ -11,7 +11,7 @@ import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
-import { useUpdateSW } from "./useUpdateSW";
+// import { useUpdateSW } from "./useUpdateSW";
 
 const bannerClass = classNames([
   "button-shadow",
@@ -43,7 +43,7 @@ export default function App() {
       console.log("onRegistered");
     },
   });
-  useUpdateSW();
+  // useUpdateSW();
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
