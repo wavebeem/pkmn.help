@@ -52,6 +52,30 @@
   }
 }
 
+.Select {
+  position: relative;
+}
+
+.Select > select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+}
+
+.Select:after {
+  content: "▼";
+  position: absolute;
+  right: 0.5rem;
+  top: 0.125rem;
+}
+
+.Select > select > option {
+  background: initial;
+  color: initial;
+  font-weight: initial;
+}
+
 .bg3 {
   background-color: var(--color-bg3);
 }

@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Button } from "./Button";
+import { Select } from "./Select";
+import { useLanguage } from "./useLanguage";
 
 const year = new Date().getFullYear();
 
@@ -17,7 +19,26 @@ async function unregisterServiceWorker() {
   }
 }
 
+interface Language {
+  name: string;
+  code: string;
+}
+
+const languages: Language[] = [
+  { name: "English", code: "en" },
+  { name: "Japanese", code: "ja" },
+  { name: "Japanese (Hiragana/Katakana)", code: "ja-Hrkt" },
+  { name: "Chinese (Simplified)", code: "zh-Hans" },
+  { name: "Chinese (Traditional)", code: "zh-Hant" },
+  { name: "French", code: "fr" },
+  { name: "German", code: "de" },
+  { name: "Italian", code: "it" },
+  { name: "Korean", code: "ko" },
+  { name: "Spanish", code: "es" },
+];
+
 export default function ScreenInfo() {
+  const [language, setLanguage] = useLanguage();
   return (
     <main className="pa3 center content-narrow lh-copy">
       <h2 className="lh-title f4">Contact Me</h2>
@@ -39,6 +60,38 @@ export default function ScreenInfo() {
         .
       </p>
       <div role="presentation" className="mv2 bt border3" />
+      <h2 className="lh-title f4">Settings</h2>
+      <div className="grid gap3 pb2">
+        <label className="db">
+          <div className="pr2 pb1">Language</div>
+          <Select
+            value={language}
+            onChange={(event) => {
+              setLanguage(event.target.value);
+            }}
+          >
+            {languages.map((lang) => {
+              return (
+                <option key={lang.code} value={lang.code}>
+                  {lang.name}
+                </option>
+              );
+            })}
+          </Select>
+        </label>
+        <p className="ma0 nt3 pt1">
+          Language support is incomplete. Only Pokémon names are translated.
+        </p>
+      </div>
+      <div role="presentation" className="mv2 bt border3" />
+      <h2 className="lh-title f4">Help</h2>
+      <p>This button can help fix issues in the app.</p>
+      <div className="mv3">
+        <Button onClick={unregisterServiceWorker}>
+          Unregister service worker
+        </Button>
+      </div>
+      <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">Privacy</h2>
       <p>
         I will never runs ads or steal your personal data. I use{" "}
@@ -58,14 +111,6 @@ export default function ScreenInfo() {
         I&apos;ve made, please consider donating to charities that support BIPOC
         and transgender rights.
       </p>
-      <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Help</h2>
-      <p>This button can help fix issues in the app.</p>
-      <div className="mv3">
-        <Button onClick={unregisterServiceWorker}>
-          Unregister service worker
-        </Button>
-      </div>
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">Special Thanks</h2>
       <ul className="lh-copy mt1 ph3">

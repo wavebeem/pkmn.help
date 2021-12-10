@@ -10,6 +10,7 @@ import Paginator from "./Paginator";
 import { pickTranslation } from "./pickTranslation";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
+import { useLanguage } from "./useLanguage";
 import { useSearch } from "./useSearch";
 
 const PAGE_SIZE = 20;
@@ -43,10 +44,11 @@ interface MonsterProps {
 }
 
 function Monster({ pokemon }: MonsterProps) {
+  const [language] = useLanguage();
   const displayNumber = "#" + String(pokemon.number).padStart(3, "0");
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
-  const speciesName = pickTranslation(pokemon.speciesNames);
-  const formName = pickTranslation(pokemon.formNames);
+  const speciesName = pokemon.speciesNames[language];
+  const formName = pokemon.formNames[language];
   return (
     <div className={classNames("fg1 pv3", "flex-ns items-center", "Monster")}>
       <div className="flex flex-column">
