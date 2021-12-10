@@ -1,7 +1,8 @@
 import classNames from "classnames";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 import * as React from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
+import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Button } from "./Button";
 import { CoverageType, Pokemon, Type } from "./data";
@@ -83,11 +84,15 @@ export default function App() {
     load();
   }, [attemptTime]);
   const [theme] = useTheme();
+  const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   return (
     <HelmetProvider>
       <div className="flex-auto">
         <Helmet>
-          <html data-theme={theme} />
+          <html
+            data-theme={theme}
+            data-theme-auto={isDarkMode ? "dark" : "light"}
+          />
           {theme === "light" && (
             <meta name="theme-color" content="hsl(357, 97%, 46%)" />
           )}

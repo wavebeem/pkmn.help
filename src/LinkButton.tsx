@@ -44,7 +44,8 @@ export function LinkButton({
 const baseClasses = classNames(
   "no-underline",
   "db",
-  "ba br2 pv1 ph2",
+  "pv1 ph2 pv2-ns ph3-ns",
+  "ba br2",
   "b f5",
   "SimpleFocus"
 );
