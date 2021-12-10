@@ -58,7 +58,6 @@ export default function ScreenInfo() {
         I&apos;ve made, please consider donating to charities that support BIPOC
         and transgender rights.
       </p>
-      <p>2021-12-09 16.58.25</p>
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">Help</h2>
       <p>This button can help fix issues in the app.</p>
