@@ -75,43 +75,37 @@ export default function ScreenMore(): JSX.Element {
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">Settings</h2>
       <div className="grid gap3 pb2">
-        <label className="db">
-          <div className="pr2 pb1">Language</div>
-          <Select
-            value={language}
-            onChange={(event) => {
-              setLanguage(event.target.value);
-            }}
-          >
-            {languages.map((lang) => {
-              return (
-                <option key={lang.value} value={lang.value}>
-                  {lang.title}
-                </option>
-              );
-            })}
-          </Select>
-        </label>
-        <p className="ma0 nt3 pt1 fg3 f6">
-          Language support is incomplete. Only Pokémon names are translated.
-        </p>
-        <label className="db">
-          <div className="pr2 pb1">Theme</div>
-          <Select
-            value={theme}
-            onChange={(event) => {
-              setTheme(event.target.value);
-            }}
-          >
-            {themes.map((theme) => {
-              return (
-                <option key={theme.value} value={theme.value}>
-                  {theme.title}
-                </option>
-              );
-            })}
-          </Select>
-        </label>
+        <Select
+          label="Language"
+          value={language}
+          helpText="Language support is incomplete. Only Pokémon names are translated."
+          onChange={(event) => {
+            setLanguage(event.target.value);
+          }}
+        >
+          {languages.map((lang) => {
+            return (
+              <option key={lang.value} value={lang.value}>
+                {lang.title}
+              </option>
+            );
+          })}
+        </Select>
+        <Select
+          label="Theme"
+          value={theme}
+          onChange={(event) => {
+            setTheme(event.target.value);
+          }}
+        >
+          {themes.map((theme) => {
+            return (
+              <option key={theme.value} value={theme.value}>
+                {theme.title}
+              </option>
+            );
+          })}
+        </Select>
       </div>
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">Help</h2>

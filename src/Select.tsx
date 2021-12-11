@@ -1,13 +1,25 @@
 import classNames from "classnames";
 import * as React from "react";
 
+interface SelectProps
+  extends Omit<React.SelectHTMLAttributes<HTMLSelectElement>, "className"> {
+  label: string;
+  helpText?: string;
+}
+
 export function Select({
-  className,
+  label,
+  "aria-label": ariaLabel = label,
+  helpText,
   ...props
-}: React.SelectHTMLAttributes<HTMLSelectElement>) {
+}: SelectProps) {
   return (
-    <div className={classNames(className, "Select")}>
-      <select {...props} className={baseClasses} />
+    <div>
+      {label && <div className="pb1">{label}</div>}
+      <div className="Select">
+        <select {...props} aria-label={ariaLabel} className={baseClasses} />
+      </div>
+      {helpText && <p className="ma0 pt1 fg3 f6">{helpText}</p>}
     </div>
   );
 }
