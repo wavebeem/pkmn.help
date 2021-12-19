@@ -41,7 +41,6 @@ export default function TypeSelector({
             key={type}
             className={classNames(
               style,
-              "input-reset",
               "db w-100",
               "ba br-pill",
               "f5 b",

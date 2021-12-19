@@ -15,12 +15,19 @@ export default function MultiTypeSelector({
   value,
 }: TypeSelectorProps) {
   const styles = {
-    selected:
-      "border-vibrant2 type-bg-dark no-box-shadow button-shadow SelectedFocus",
-    normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
+    selected: "border-vibrant2 type-bg-dark",
+    normal: "border1 bg1 fg1",
   };
   return (
-    <div className="MultiTypeSelector-Container">
+    <div
+      className={classNames(
+        "MultiTypeSelector-Container",
+        "button-shadow",
+        "bg1 fg1",
+        "border2 ba",
+        "br2 pa2"
+      )}
+    >
       {types.map((type) => {
         const isChecked = value.includes(type);
         const style = isChecked ? styles.selected : styles.normal;
@@ -29,14 +36,12 @@ export default function MultiTypeSelector({
             key={type}
             className={classNames(
               style,
-              "input-reset",
               "db w-100",
-              "ba br1",
+              "br1",
               "f5 b",
               "ttc",
-              "SimpleFocus",
+              "OutlineFGFocus",
               "active-squish",
-              "overflow-hidden",
               "select-none",
               cssType(type)
             )}
@@ -45,9 +50,6 @@ export default function MultiTypeSelector({
               <span
                 className={classNames(
                   cssType(type),
-                  "ba",
-                  "b--transparent",
-                  "bg-clip-padding",
                   "br1",
                   "pa2",
                   isChecked ? "type-bg-light" : "type-bg-dark"
@@ -56,7 +58,11 @@ export default function MultiTypeSelector({
                 <input
                   type="checkbox"
                   checked={isChecked}
-                  className={classNames("db radiocheck-type", cssType(type))}
+                  className={classNames(
+                    "db radiocheck-type",
+                    "NoFocus",
+                    cssType(type)
+                  )}
                   onChange={() => {
                     const types = new Set(value);
                     if (isChecked) {

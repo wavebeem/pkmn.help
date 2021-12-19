@@ -468,27 +468,32 @@ button {
   user-select: none;
 }
 
-.bg-clip-padding {
-  background-clip: padding-box;
-}
-
-.TabFocus:focus {
+.TabFocus:focus-within {
   outline: 2px solid currentColor;
   outline-offset: -2px;
 }
 
-.OutlineFocus:focus {
+.OutlineFocus:focus-within {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
 
-.SimpleFocus:focus {
+.OutlineFGFocus:focus-within {
+  outline: 2px solid var(--color-fg1);
+  outline-offset: 2px;
+}
+
+.SimpleFocus:focus-within {
   outline: 2px solid transparent;
   border-color: var(--color-fg1);
   box-shadow: inset 0 0 0 2px var(--color-border1);
 }
 
-.SelectedFocus:focus {
+.SelectedFocus:focus-within {
   outline: 2px solid transparent;
   box-shadow: inset 0 0 0 2px var(--color-bg1), inset 0 0 0 4px var(--color-fg1);
+}
+
+.NoFocus:focus {
+  outline: none;
 }
