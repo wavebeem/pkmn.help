@@ -26,7 +26,7 @@ function MonsterType({ type, index }: MonsterTypeProps) {
     <div
       className={classNames(
         cssType(type),
-        "type-bg-dark",
+        "type-bg",
         "ttc tc flex",
         "lh-title b",
         "br-pill ba border-vibrant f6",

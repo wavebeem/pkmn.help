@@ -20,7 +20,7 @@ function Badge({ type }: BadgeProps) {
   return (
     <div
       className={classNames(
-        "type-bg-dark",
+        "type-bg",
         cssType(type),
         "ba border-vibrant",
         "br2",

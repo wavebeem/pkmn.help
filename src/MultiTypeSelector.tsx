@@ -14,10 +14,6 @@ export default function MultiTypeSelector({
   onChange,
   value,
 }: TypeSelectorProps) {
-  const styles = {
-    selected: "border-vibrant2 type-bg-dark",
-    normal: "border1 bg1 fg1",
-  };
   return (
     <div
       className={classNames(
@@ -30,14 +26,13 @@ export default function MultiTypeSelector({
     >
       {types.map((type) => {
         const isChecked = value.includes(type);
-        const style = isChecked ? styles.selected : styles.normal;
         return (
           <label
             key={type}
             className={classNames(
-              style,
+              isChecked ? "border-vibrant2 type-bg" : "b--transparent",
               "db w-100",
-              "br1",
+              "ba br1",
               "f5 b",
               "ttc",
               "OutlineFGFocus",
@@ -50,9 +45,11 @@ export default function MultiTypeSelector({
               <span
                 className={classNames(
                   cssType(type),
+                  isChecked ? "b--transparent" : "border-vibrant2",
+                  "ba",
                   "br1",
                   "pa2",
-                  isChecked ? "type-bg-light" : "type-bg-dark"
+                  "type-bg"
                 )}
               >
                 <input

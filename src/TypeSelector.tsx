@@ -23,7 +23,7 @@ export default function TypeSelector({
   const theTypes = includeNone ? typesOrNone : types;
   const styles = {
     disabled: "border3 fg4 bg2 o-60 SimpleFocus",
-    selected: "border-vibrant2 type-bg-dark SelectedFocus",
+    selected: "border-vibrant2 type-bg SelectedFocus",
     normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
@@ -61,7 +61,7 @@ export default function TypeSelector({
                   "bg-clip-padding",
                   "br-pill br--left",
                   "pa2",
-                  isSelected ? "type-bg-light" : "type-bg-dark"
+                  "type-bg"
                 )}
               >
                 <input
