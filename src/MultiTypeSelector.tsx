@@ -72,7 +72,7 @@ export default function MultiTypeSelector({
               >
                 {type}
               </span>
-              {isChecked ? <span aria-label=""> &#10003;</span> : <span />}
+              {isChecked && <span aria-hidden="true">&#10003;</span>}
             </span>
           </button>
         );
