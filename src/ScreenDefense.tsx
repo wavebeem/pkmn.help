@@ -60,6 +60,7 @@ export default function ScreenDefense({
       <div className="dib w-50-ns w-100 v-top">
         <h2 className={classH2}>Choose Primary Type</h2>
         <TypeSelector
+          name="primary"
           value={type1}
           onChange={updateType1}
           disabledTypes={[]}
@@ -67,6 +68,7 @@ export default function ScreenDefense({
         />
         <h2 className={`${classH2} mt4`}>Choose Secondary Type</h2>
         <TypeSelector
+          name="secondary"
           value={type2}
           onChange={updateType2}
           disabledTypes={[type1]}
@@ -84,4 +86,3 @@ export default function ScreenDefense({
     </main>
   );
 }
-

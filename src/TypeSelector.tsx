@@ -10,6 +10,7 @@ interface TypeSelectorProps {
   value: Type;
   includeNone: boolean;
   disabledTypes: Type[];
+  name: string;
 }
 
 export default function TypeSelector({
@@ -17,6 +18,7 @@ export default function TypeSelector({
   value,
   includeNone,
   disabledTypes,
+  name,
 }: TypeSelectorProps) {
   const theTypes = includeNone ? typesOrNone : types;
   const styles = {
@@ -34,6 +36,55 @@ export default function TypeSelector({
           : isSelected
           ? styles.selected
           : styles.normal;
+        return (
+          <label
+            key={type}
+            className={classNames(
+              style,
+              "input-reset",
+              "db w-100",
+              "ba br-pill",
+              "f5 b",
+              "ttc",
+              "SimpleFocus",
+              "active-squish",
+              "overflow-hidden",
+              "select-none",
+              cssType(type)
+            )}
+          >
+            <span className="flex flex-row items-center justify-center">
+              <span
+                className={classNames(
+                  cssType(type),
+                  "ba",
+                  "b--transparent",
+                  "bg-clip-padding",
+                  "br-pill br--left",
+                  "pa2",
+                  isSelected ? "type-bg-light" : "type-bg-dark"
+                )}
+              >
+                <input
+                  type="radio"
+                  name={name}
+                  checked={isSelected}
+                  className={classNames("db radiocheck-type", cssType(type))}
+                  onChange={() => {
+                    onChange(type);
+                  }}
+                />
+              </span>
+
+              <span
+                className="tl pl2 pr1 flex-auto truncate"
+                style={{ lineHeight: buttonInnerHeight }}
+              >
+                {type}
+              </span>
+            </span>
+          </label>
+        );
         return (
           <button
             key={`type-${type}`}
