@@ -85,7 +85,7 @@ function Monster({ pokemon }: MonsterProps) {
             &nbsp;&bull;&nbsp;
           </span>
           <Link
-            aria-label={`Offense for ${speciesName} (${formName})`}
+            aria-label={`Offense for ${speciesName} ${parenthesize(formName)}`}
             className="underline fg-link OutlineFocus"
             to={`/offense/?${params}#matchup-offense`}
           >
@@ -95,7 +95,7 @@ function Monster({ pokemon }: MonsterProps) {
             &nbsp;&bull;&nbsp;
           </span>
           <Link
-            aria-label={`Defense for ${speciesName} (${formName})`}
+            aria-label={`Defense for ${speciesName} ${parenthesize(formName)}`}
             className="underline fg-link OutlineFocus"
             to={`/defense/?${params}#matchup-defense`}
           >
@@ -193,7 +193,11 @@ export default function ScreenPokedex({
         <span className="fg3" aria-hidden="true">
           Search by name, number, or types
         </span>
-        <Link to="/pokedex/help/" className="underline fg-link OutlineFocus">
+        <Link
+          to="/pokedex/help/"
+          className="underline fg-link OutlineFocus"
+          aria-label="Help, search Pokédex"
+        >
           Help
         </Link>
       </div>
@@ -217,4 +221,11 @@ export default function ScreenPokedex({
       )}
     </main>
   );
+}
+
+function parenthesize(string?: string): string {
+  if (string) {
+    return `(${string})`;
+  }
+  return "";
 }

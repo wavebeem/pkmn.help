@@ -84,6 +84,7 @@ function Matchups({
               <Link
                 to="/offense/coverage/"
                 className="underline fg-link OutlineFocus"
+                aria-label="Edit weakness coverage"
               >
                 edit
               </Link>
