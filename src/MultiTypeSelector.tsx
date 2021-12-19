@@ -25,46 +25,51 @@ export default function MultiTypeSelector({
         const isChecked = value.includes(type);
         const style = isChecked ? styles.selected : styles.normal;
         return (
-          <button
-            role="checkbox"
-            aria-checked={isChecked ? "true" : "false"}
-            key={`type-${type}`}
+          <label
+            key={type}
             className={classNames(
               style,
+              "input-reset",
               "db w-100",
               "ba br1",
-              "pv1 ph2",
               "f5 b",
               "ttc",
               "SimpleFocus",
               "active-squish",
+              "overflow-hidden",
+              "select-none",
               cssType(type)
             )}
-            onClick={() => {
-              const types = new Set(value);
-              if (isChecked) {
-                types.delete(type);
-              } else {
-                types.add(type);
-              }
-              // Should we sort based on the type order on the page rather than
-              // alphabetical? I'll just stick with alphabetical for now.
-              onChange([...types].sort());
-            }}
           >
             <span className="flex flex-row items-center justify-center">
               <span
                 className={classNames(
-                  `type-${type} ba br1`,
-                  isChecked
-                    ? "b--black type-bg-light"
-                    : "border-vibrant type-bg-dark"
+                  cssType(type),
+                  "ba",
+                  "b--transparent",
+                  "bg-clip-padding",
+                  "br1",
+                  "pa2",
+                  isChecked ? "type-bg-light" : "type-bg-dark"
                 )}
-                style={{
-                  width: "1rem",
-                  height: "1rem",
-                }}
-              />
+              >
+                <input
+                  type="checkbox"
+                  checked={isChecked}
+                  className={classNames("db radiocheck-type", cssType(type))}
+                  onChange={() => {
+                    const types = new Set(value);
+                    if (isChecked) {
+                      types.delete(type);
+                    } else {
+                      types.add(type);
+                    }
+                    // Should we sort based on the type order on the page rather than
+                    // alphabetical? I'll just stick with alphabetical for now.
+                    onChange([...types].sort());
+                  }}
+                />
+              </span>
 
               <span
                 className="tl pl2 pr1 flex-auto truncate"
@@ -72,9 +77,8 @@ export default function MultiTypeSelector({
               >
                 {type}
               </span>
-              {isChecked && <span aria-hidden="true">&#10003;</span>}
             </span>
-          </button>
+          </label>
         );
       })}
     </div>
