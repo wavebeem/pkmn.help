@@ -10,6 +10,7 @@ interface TypeSelectorProps {
   value: Type;
   includeNone: boolean;
   disabledTypes: Type[];
+  name: string;
 }
 
 export default function TypeSelector({
@@ -17,66 +18,71 @@ export default function TypeSelector({
   value,
   includeNone,
   disabledTypes,
+  name,
 }: TypeSelectorProps) {
   const theTypes = includeNone ? typesOrNone : types;
   const styles = {
-    disabled: "border3 fg4 bg2 o-60 SimpleFocus",
-    selected: "border-vibrant2 type-bg-dark SelectedFocus",
+    disabled: "border3 fg4 bg2 o-60 SimpleFocus pointer-none",
+    selected: "border-vibrant2 type-bg SelectedFocus",
     normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
-    <div className="TypeSelector-Container">
+    <div className="MultiTypeSelector-Container">
       {theTypes.map((type) => {
         const isDisabled = disabledTypes.includes(type);
         const isSelected = type === value;
-        const style = isDisabled
-          ? styles.disabled
+        const styleKey = isDisabled
+          ? "disabled"
           : isSelected
-          ? styles.selected
-          : styles.normal;
+          ? "selected"
+          : "normal";
         return (
-          <button
-            key={`type-${type}`}
-            disabled={isDisabled}
+          <label
+            key={type}
             className={classNames(
-              style,
-              "db w-100",
+              styles[styleKey],
+              "db",
               "ba br-pill",
               "pv1 ph2",
               "f5 b",
               "ttc",
+              "select-none",
+              "SimpleFocus",
               "active-squish",
               cssType(type)
             )}
-            onClick={() => onChange(type)}
           >
             <span className="flex flex-row items-center justify-center">
-              <span
+              <input
+                type="radio"
+                name={name}
+                checked={isSelected}
+                disabled={isDisabled}
                 className={classNames(
                   cssType(type),
-                  `b--black br-pill ba`,
-                  type === value
-                    ? "b--black type-bg-light"
-                    : "border-vibrant type-bg-dark"
+                  "db RadioCheckType",
+                  {
+                    disabled: "border1 o-50",
+                    selected: "b--black type-bg",
+                    normal: "border-vibrant type-bg",
+                  }[styleKey],
+                  "ba br1",
+                  "NoFocus"
                 )}
-                style={{
-                  width: "1rem",
-                  height: "1rem",
+                onChange={() => {
+                  onChange(type);
                 }}
               />
+
               <span
                 className="tl pl2 pr1 flex-auto truncate"
                 style={{ lineHeight: buttonInnerHeight }}
               >
                 {type}
+                {isSelected && <span aria-hidden="true">&nbsp;&bull;</span>}
               </span>
-              {isSelected ? (
-                <small aria-label=""> &#9679;&nbsp;</small>
-              ) : (
-                <small />
-              )}
             </span>
-          </button>
+          </label>
         );
       })}
     </div>

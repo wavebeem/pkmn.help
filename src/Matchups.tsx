@@ -20,7 +20,7 @@ function Badge({ type }: BadgeProps) {
   return (
     <div
       className={classNames(
-        "type-bg-dark",
+        "type-bg",
         cssType(type),
         "ba border-vibrant",
         "br2",
@@ -44,7 +44,7 @@ function Section({ title, types }: SectionProps) {
   }
   return (
     <div>
-      <h3 className="f5 mt3 mb0">{title}</h3>
+      <h2 className="f5 mt3 mb0">{title}</h2>
       <div className="mw5 center MatchupsSection-Container">
         {types.map((t) => (
           <Badge key={`type-${t}`} type={t} />
@@ -77,19 +77,20 @@ function Matchups({
     <div className="tc pt2" id={`matchup-${kind}`}>
       {kind === "offense" ? (
         <div>
-          <h3 className="f5 mt3 mb0">
+          <h2 className="f5 mt3 mb0">
             Weakness Coverage{" "}
             <span className="normal">
               (
               <Link
                 to="/offense/coverage/"
                 className="underline fg-link OutlineFocus"
+                aria-label="Edit weakness coverage"
               >
                 edit
               </Link>
               )
             </span>
-          </h3>
+          </h2>
           <div
             className={classNames(
               "pt1 mw5 center tc",

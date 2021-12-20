@@ -15,7 +15,7 @@ export default function StatBar({ value, max, type }: StatBarProps) {
       <div
         style={{
           width: (value / max) * 100 + "%",
-          background: "var(--type-color2)",
+          background: "var(--type-color)",
         }}
         className={classNames(cssType(type), "Bar-Fill")}
       ></div>
