@@ -46,7 +46,7 @@ export default function MultiTypeSelector({
                 checked={isChecked}
                 className={classNames(
                   cssType(type),
-                  "db radiocheck-type",
+                  "db RadioCheckType",
                   {
                     selected: "b--black type-bg",
                     normal: "border-vibrant type-bg",
@@ -72,6 +72,7 @@ export default function MultiTypeSelector({
                 style={{ lineHeight: buttonInnerHeight }}
               >
                 {type}
+                {isChecked && <span aria-hidden="true">&nbsp;&bull;</span>}
               </span>
             </span>
           </label>

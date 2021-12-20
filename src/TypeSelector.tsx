@@ -60,7 +60,7 @@ export default function TypeSelector({
                 disabled={isDisabled}
                 className={classNames(
                   cssType(type),
-                  "db radiocheck-type",
+                  "db RadioCheckType",
                   {
                     disabled: "border1 o-50",
                     selected: "b--black type-bg",
@@ -79,114 +79,10 @@ export default function TypeSelector({
                 style={{ lineHeight: buttonInnerHeight }}
               >
                 {type}
+                {isSelected && <span aria-hidden="true">&nbsp;&bull;</span>}
               </span>
             </span>
           </label>
-        );
-      })}
-    </div>
-  );
-  return (
-    <div className="TypeSelector-Container">
-      {theTypes.map((type) => {
-        const isDisabled = disabledTypes.includes(type);
-        const isSelected = type === value;
-        const style = isDisabled
-          ? styles.disabled
-          : isSelected
-          ? styles.selected
-          : styles.normal;
-        return (
-          <label
-            key={type}
-            className={classNames(
-              style,
-              "db w-100",
-              "ba br-pill",
-              "f5 b",
-              "ttc",
-              "SimpleFocus",
-              "active-squish",
-              "overflow-hidden",
-              "select-none",
-              cssType(type)
-            )}
-          >
-            <span className="flex flex-row items-center justify-center">
-              <span
-                className={classNames(
-                  cssType(type),
-                  "ba",
-                  "b--transparent",
-                  "bg-clip-padding",
-                  "br-pill br--left",
-                  "pa2",
-                  "type-bg"
-                )}
-              >
-                <input
-                  type="radio"
-                  name={name}
-                  checked={isSelected}
-                  className={classNames("db radiocheck-type", cssType(type))}
-                  onChange={() => {
-                    onChange(type);
-                  }}
-                />
-              </span>
-
-              <span
-                className="tl pl2 pr1 flex-auto truncate"
-                style={{ lineHeight: buttonInnerHeight }}
-              >
-                {type}
-              </span>
-            </span>
-          </label>
-        );
-        return (
-          <button
-            key={`type-${type}`}
-            disabled={isDisabled}
-            className={classNames(
-              style,
-              "db w-100",
-              "ba br-pill",
-              "pv1 ph2",
-              "f5 b",
-              "ttc",
-              "active-squish",
-              cssType(type)
-            )}
-            onClick={() => onChange(type)}
-          >
-            <span className="flex flex-row items-center justify-center">
-              <span
-                className={classNames(
-                  cssType(type),
-                  `b--black br-pill ba`,
-                  type === value
-                    ? "b--black type-bg-light"
-                    : "border-vibrant type-bg-dark"
-                )}
-                style={{
-                  width: "1rem",
-                  height: "1rem",
-                }}
-              />
-              <span
-                className="tl pl2 pr1 flex-auto truncate"
-                style={{ lineHeight: buttonInnerHeight }}
-              >
-                {type}
-              </span>
-              {isSelected ? (
-                <small aria-label=""> &#9679;&nbsp;</small>
-              ) : (
-                <small />
-              )}
-            </span>
-          </button>
         );
       })}
     </div>

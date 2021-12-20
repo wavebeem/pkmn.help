@@ -454,7 +454,7 @@ button {
   --type-color: #808080;
 }
 
-.radiocheck-type {
+.RadioCheckType {
   accent-color: black;
   appearance: none;
   width: 1rem;
@@ -463,20 +463,20 @@ button {
   border: 0.0625rem solid black;
 }
 
-input[type="checkbox"].radiocheck-type {
+input[type="checkbox"].RadioCheckType {
   border-radius: 0.125rem;
 }
 
-input[type="radio"].radiocheck-type {
+input[type="radio"].RadioCheckType {
   border-radius: 9999px;
 }
 
-.radiocheck-type:checked {
+.RadioCheckType:checked {
   background: black;
   box-shadow: inset 0 0 0 0.125rem white;
 }
 
-.radiocheck-type:disabled {
+.RadioCheckType:disabled {
   background: var(--color-bg2);
   border-color: var(--color-fg3);
 }
