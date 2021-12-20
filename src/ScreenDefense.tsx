@@ -20,11 +20,12 @@ export default function ScreenDefense({
   const search = useSearch();
   const history = useHistory();
 
-  const [type1 = Type.NORMAL, type2 = Type.NONE] = typesFromString(
-    search.get("types") || ""
+  const [type1 = Type.NORMAL, type2 = Type.NONE] = new Set(
+    typesFromString(search.get("types") || "")
   );
 
   function createParams(types: Type[]): string {
+    types = [...new Set(types)];
     const params = new URLSearchParams();
     if (types.length >= 0) {
       if (types[1] === Type.NONE) {

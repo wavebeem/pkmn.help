@@ -14,65 +14,58 @@ export default function MultiTypeSelector({
   onChange,
   value,
 }: TypeSelectorProps) {
+  const styles = {
+    selected:
+      "border-vibrant2 type-bg no-box-shadow button-shadow SelectedFocus",
+    normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
+  };
   return (
-    <div
-      className={classNames(
-        "MultiTypeSelector-Container",
-        "button-shadow",
-        "bg1 fg1",
-        "border2 ba",
-        "br2 pa2"
-      )}
-    >
+    <div className="MultiTypeSelector-Container">
       {types.map((type) => {
         const isChecked = value.includes(type);
+        const styleKey = isChecked ? "selected" : "normal";
         return (
           <label
             key={type}
             className={classNames(
-              isChecked ? "border-vibrant2 type-bg" : "b--transparent",
-              "db w-100",
+              styles[styleKey],
+              "db",
               "ba br1",
+              "pv1 ph2",
               "f5 b",
               "ttc",
-              "OutlineFGFocus",
-              "active-squish",
               "select-none",
+              "SimpleFocus",
+              "active-squish",
               cssType(type)
             )}
           >
             <span className="flex flex-row items-center justify-center">
-              <span
+              <input
+                type="checkbox"
+                checked={isChecked}
                 className={classNames(
                   cssType(type),
-                  isChecked ? "b--transparent" : "border-vibrant2",
-                  "ba",
-                  "br1",
-                  "pa2",
-                  "type-bg"
+                  "db radiocheck-type",
+                  {
+                    selected: "b--black type-bg",
+                    normal: "border-vibrant type-bg",
+                  }[styleKey],
+                  "ba br1",
+                  "NoFocus"
                 )}
-              >
-                <input
-                  type="checkbox"
-                  checked={isChecked}
-                  className={classNames(
-                    "db radiocheck-type",
-                    "NoFocus",
-                    cssType(type)
-                  )}
-                  onChange={() => {
-                    const types = new Set(value);
-                    if (isChecked) {
-                      types.delete(type);
-                    } else {
-                      types.add(type);
-                    }
-                    // Should we sort based on the type order on the page rather than
-                    // alphabetical? I'll just stick with alphabetical for now.
-                    onChange([...types].sort());
-                  }}
-                />
-              </span>
+                onChange={() => {
+                  const types = new Set(value);
+                  if (isChecked) {
+                    types.delete(type);
+                  } else {
+                    types.add(type);
+                  }
+                  // Should we sort based on the type order on the page rather than
+                  // alphabetical? I'll just stick with alphabetical for now.
+                  onChange([...types].sort());
+                }}
+              />
 
               <span
                 className="tl pl2 pr1 flex-auto truncate"

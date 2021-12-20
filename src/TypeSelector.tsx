@@ -22,10 +22,70 @@ export default function TypeSelector({
 }: TypeSelectorProps) {
   const theTypes = includeNone ? typesOrNone : types;
   const styles = {
-    disabled: "border3 fg4 bg2 o-60 SimpleFocus",
+    disabled: "border3 fg4 bg2 o-60 SimpleFocus pointer-none",
     selected: "border-vibrant2 type-bg SelectedFocus",
     normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
+  return (
+    <div className="MultiTypeSelector-Container">
+      {theTypes.map((type) => {
+        const isDisabled = disabledTypes.includes(type);
+        const isSelected = type === value;
+        const styleKey = isDisabled
+          ? "disabled"
+          : isSelected
+          ? "selected"
+          : "normal";
+        return (
+          <label
+            key={type}
+            className={classNames(
+              styles[styleKey],
+              "db",
+              "ba br-pill",
+              "pv1 ph2",
+              "f5 b",
+              "ttc",
+              "select-none",
+              "SimpleFocus",
+              "active-squish",
+              cssType(type)
+            )}
+          >
+            <span className="flex flex-row items-center justify-center">
+              <input
+                type="radio"
+                name={name}
+                checked={isSelected}
+                disabled={isDisabled}
+                className={classNames(
+                  cssType(type),
+                  "db radiocheck-type",
+                  {
+                    disabled: "border1 o-50",
+                    selected: "b--black type-bg",
+                    normal: "border-vibrant type-bg",
+                  }[styleKey],
+                  "ba br1",
+                  "NoFocus"
+                )}
+                onChange={() => {
+                  onChange(type);
+                }}
+              />
+
+              <span
+                className="tl pl2 pr1 flex-auto truncate"
+                style={{ lineHeight: buttonInnerHeight }}
+              >
+                {type}
+              </span>
+            </span>
+          </label>
+        );
+      })}
+    </div>
+  );
   return (
     <div className="TypeSelector-Container">
       {theTypes.map((type) => {
