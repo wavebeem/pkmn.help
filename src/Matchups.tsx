@@ -86,7 +86,7 @@ function Matchups({
                 className="underline fg-link OutlineFocus"
                 aria-label="Edit weakness coverage"
               >
-                edit
+                Edit
               </Link>
               )
             </span>
