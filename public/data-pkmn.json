@@ -119,35 +119,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Venusaur_(Pok%C3%A9mon)"
   },
   {
-    "name": "venusaur-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "フシギバナ",
-      "roomaji": "Fushigibana",
-      "ko": "이상해꽃",
-      "zh-Hant": "妙蛙花",
-      "fr": "Florizarre",
-      "de": "Bisaflor",
-      "es": "Venusaur",
-      "it": "Venusaur",
-      "en": "Venusaur",
-      "ja": "フシギバナ",
-      "zh-Hans": "妙蛙花"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 3,
-    "hp": 80,
-    "attack": 82,
-    "defense": 83,
-    "spAttack": 100,
-    "spDefense": 100,
-    "speed": 80,
-    "id": "10186",
-    "types": ["grass", "poison"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Venusaur_(Pok%C3%A9mon)"
-  },
-  {
     "name": "charmander",
     "speciesNames": {
       "ja-Hrkt": "ヒトカゲ",
@@ -305,35 +276,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pok%C3%A9mon)"
   },
   {
-    "name": "charizard-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "リザードン",
-      "roomaji": "Lizardon",
-      "ko": "리자몽",
-      "zh-Hant": "噴火龍",
-      "fr": "Dracaufeu",
-      "de": "Glurak",
-      "es": "Charizard",
-      "it": "Charizard",
-      "en": "Charizard",
-      "ja": "リザードン",
-      "zh-Hans": "喷火龙"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 6,
-    "hp": 78,
-    "attack": 84,
-    "defense": 78,
-    "spAttack": 109,
-    "spDefense": 85,
-    "speed": 100,
-    "id": "10187",
-    "types": ["fire", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pok%C3%A9mon)"
-  },
-  {
     "name": "squirtle",
     "speciesNames": {
       "ja-Hrkt": "ゼニガメ",
@@ -453,35 +395,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Blastoise_(Pok%C3%A9mon)"
   },
   {
-    "name": "blastoise-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "カメックス",
-      "roomaji": "Kamex",
-      "ko": "거북왕",
-      "zh-Hant": "水箭龜",
-      "fr": "Tortank",
-      "de": "Turtok",
-      "es": "Blastoise",
-      "it": "Blastoise",
-      "en": "Blastoise",
-      "ja": "カメックス",
-      "zh-Hans": "水箭龟"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 9,
-    "hp": 79,
-    "attack": 83,
-    "defense": 100,
-    "spAttack": 85,
-    "spDefense": 105,
-    "speed": 78,
-    "id": "10188",
-    "types": ["water"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Blastoise_(Pok%C3%A9mon)"
-  },
-  {
     "name": "caterpie",
     "speciesNames": {
       "ja-Hrkt": "キャタピー",
@@ -559,35 +472,6 @@
     "spDefense": 80,
     "speed": 70,
     "id": "12",
-    "types": ["bug", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Butterfree_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "butterfree-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "バタフリー",
-      "roomaji": "Butterfree",
-      "ko": "버터플",
-      "zh-Hant": "巴大蝶",
-      "fr": "Papilusion",
-      "de": "Smettbo",
-      "es": "Butterfree",
-      "it": "Butterfree",
-      "en": "Butterfree",
-      "ja": "バタフリー",
-      "zh-Hans": "巴大蝶"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 12,
-    "hp": 60,
-    "attack": 45,
-    "defense": 50,
-    "spAttack": 90,
-    "spDefense": 80,
-    "speed": 70,
-    "id": "10189",
     "types": ["bug", "flying"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Butterfree_(Pok%C3%A9mon)"
   },
@@ -960,33 +844,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pok%C3%A9mon)"
   },
   {
-    "name": "raticate-totem-alola",
-    "speciesNames": {
-      "ja-Hrkt": "ラッタ",
-      "roomaji": "Ratta",
-      "ko": "레트라",
-      "zh-Hant": "拉達",
-      "fr": "Rattatac",
-      "de": "Rattikarl",
-      "es": "Raticate",
-      "it": "Raticate",
-      "en": "Raticate",
-      "ja": "ラッタ",
-      "zh-Hans": "拉达"
-    },
-    "formNames": {},
-    "number": 20,
-    "hp": 75,
-    "attack": 71,
-    "defense": 70,
-    "spAttack": 40,
-    "spDefense": 80,
-    "speed": 77,
-    "id": "10093",
-    "types": ["dark", "normal"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Raticate_(Pok%C3%A9mon)"
-  },
-  {
     "name": "spearow",
     "speciesNames": {
       "ja-Hrkt": "オニスズメ",
@@ -1118,481 +975,6 @@
     "spDefense": 50,
     "speed": 90,
     "id": "25",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-rock-star",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "fr": "Pikachu Rockeur",
-      "en": "Pikachu Rock Star"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10080",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-belle",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "fr": "Pikachu Lady",
-      "en": "Pikachu Belle"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10081",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-pop-star",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "fr": "Pikachu Star",
-      "en": "Pikachu Pop Star"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10082",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-phd",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "fr": "Pikachu Docteur",
-      "en": "Pikachu Ph.D."
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10083",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-libre",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "fr": "Pikachu Catcheur",
-      "en": "Pikachu Libre"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10084",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-cosplay",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "fr": "Pikachu Cosplayeur",
-      "en": "Cosplay Pikachu"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10085",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-original-cap",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "ja-Hrkt": "オリジナルキャップ",
-      "ko": "오리지널캡",
-      "zh-Hant": "初始帽子",
-      "fr": "Casquette Originale",
-      "de": "Original-Kappe",
-      "es": "Gorra Original",
-      "it": "Berretto Originale",
-      "en": "Original Cap",
-      "ja": "オリジナルキャップ",
-      "zh-Hans": "初始帽子"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10094",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-hoenn-cap",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "ja-Hrkt": "ホウエンキャップ",
-      "ko": "호연캡",
-      "zh-Hant": "豐緣帽子",
-      "fr": "Casquette de Hoenn",
-      "de": "Hoenn-Kappe",
-      "es": "Gorra Hoenn",
-      "it": "Berretto Hoenn",
-      "en": "Hoenn Cap",
-      "ja": "ホウエンキャップ",
-      "zh-Hans": "丰缘帽子"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10095",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-sinnoh-cap",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "ja-Hrkt": "シンオウキャップ",
-      "ko": "신오캡",
-      "zh-Hant": "神奧帽子",
-      "fr": "Casquette de Sinnoh",
-      "de": "Sinnoh-Kappe",
-      "es": "Gorra Sinnoh",
-      "it": "Berretto Sinnoh",
-      "en": "Sinnoh Cap",
-      "ja": "シンオウキャップ",
-      "zh-Hans": "神奥帽子"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10096",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-unova-cap",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "ja-Hrkt": "イッシュキャップ",
-      "ko": "하나캡",
-      "zh-Hant": "合眾帽子",
-      "fr": "Casquette d’Unys",
-      "de": "Einall-Kappe",
-      "es": "Gorra Teselia",
-      "it": "Berretto Unima",
-      "en": "Unova Cap",
-      "ja": "イッシュキャップ",
-      "zh-Hans": "合众帽子"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10097",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-kalos-cap",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "ja-Hrkt": "カロスキャップ",
-      "ko": "칼로스캡",
-      "zh-Hant": "卡洛斯帽子",
-      "fr": "Casquette de Kalos",
-      "de": "Kalos-Kappe",
-      "es": "Gorra Kalos",
-      "it": "Berretto Kalos",
-      "en": "Kalos Cap",
-      "ja": "カロスキャップ",
-      "zh-Hans": "卡洛斯帽子"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10098",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-alola-cap",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "ja-Hrkt": "アローラキャップ",
-      "ko": "알로라캡",
-      "zh-Hant": "阿羅拉帽子",
-      "fr": "Casquette d’Alola",
-      "de": "Alola-Kappe",
-      "es": "Gorra Alola",
-      "it": "Berretto Alola",
-      "en": "Alola Cap",
-      "ja": "アローラキャップ",
-      "zh-Hans": "阿罗拉帽子"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10099",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-partner-cap",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "ja-Hrkt": "キミにきめたキャップ",
-      "ko": "너로정했다캡",
-      "zh-Hant": "就決定是你了之帽子",
-      "fr": "Casquette Partenaire",
-      "de": "Partner-Kappe",
-      "es": "Gorra Compañero",
-      "it": "Berretto Compagni",
-      "en": "Partner Cap",
-      "ja": "キミにきめたキャップ",
-      "zh-Hans": "就决定是你了之帽子"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10148",
-    "types": ["electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "pikachu-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 25,
-    "hp": 35,
-    "attack": 55,
-    "defense": 40,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 90,
-    "id": "10190",
     "types": ["electric"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)"
   },
@@ -2659,35 +2041,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)"
   },
   {
-    "name": "meowth-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ニャース",
-      "roomaji": "Nyarth",
-      "ko": "나옹",
-      "zh-Hant": "喵喵",
-      "fr": "Miaouss",
-      "de": "Mauzi",
-      "es": "Meowth",
-      "it": "Meowth",
-      "en": "Meowth",
-      "ja": "ニャース",
-      "zh-Hans": "喵喵"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 52,
-    "hp": 40,
-    "attack": 45,
-    "defense": 35,
-    "spAttack": 40,
-    "spDefense": 40,
-    "speed": 90,
-    "id": "10191",
-    "types": ["normal"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowth_(Pok%C3%A9mon)"
-  },
-  {
     "name": "persian",
     "speciesNames": {
       "ja-Hrkt": "ペルシアン",
@@ -3192,35 +2545,6 @@
     "spDefense": 85,
     "speed": 55,
     "id": "68",
-    "types": ["fighting"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Machamp_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "machamp-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "カイリキー",
-      "roomaji": "Kairiky",
-      "ko": "괴력몬",
-      "zh-Hant": "怪力",
-      "fr": "Mackogneur",
-      "de": "Machomei",
-      "es": "Machamp",
-      "it": "Machamp",
-      "en": "Machamp",
-      "ja": "カイリキー",
-      "zh-Hans": "怪力"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 68,
-    "hp": 90,
-    "attack": 130,
-    "defense": 80,
-    "spAttack": 65,
-    "spDefense": 85,
-    "speed": 55,
-    "id": "10192",
     "types": ["fighting"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Machamp_(Pok%C3%A9mon)"
   },
@@ -4338,35 +3662,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gengar_(Pok%C3%A9mon)"
   },
   {
-    "name": "gengar-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ゲンガー",
-      "roomaji": "Gangar",
-      "ko": "팬텀",
-      "zh-Hant": "耿鬼",
-      "fr": "Ectoplasma",
-      "de": "Gengar",
-      "es": "Gengar",
-      "it": "Gengar",
-      "en": "Gengar",
-      "ja": "ゲンガー",
-      "zh-Hans": "耿鬼"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 94,
-    "hp": 60,
-    "attack": 65,
-    "defense": 60,
-    "spAttack": 130,
-    "spDefense": 75,
-    "speed": 110,
-    "id": "10193",
-    "types": ["ghost", "poison"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gengar_(Pok%C3%A9mon)"
-  },
-  {
     "name": "onix",
     "speciesNames": {
       "ja-Hrkt": "イワーク",
@@ -4498,35 +3793,6 @@
     "spDefense": 50,
     "speed": 75,
     "id": "99",
-    "types": ["water"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Kingler_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "kingler-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "キングラー",
-      "roomaji": "Kingler",
-      "ko": "킹크랩",
-      "zh-Hant": "巨鉗蟹",
-      "fr": "Krabboss",
-      "de": "Kingler",
-      "es": "Kingler",
-      "it": "Kingler",
-      "en": "Kingler",
-      "ja": "キングラー",
-      "zh-Hans": "巨钳蟹"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 99,
-    "hp": 55,
-    "attack": 130,
-    "defense": 115,
-    "spAttack": 50,
-    "spDefense": 50,
-    "speed": 75,
-    "id": "10194",
     "types": ["water"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Kingler_(Pok%C3%A9mon)"
   },
@@ -4765,35 +4031,6 @@
     "spDefense": 80,
     "speed": 45,
     "id": "10115",
-    "types": ["fire", "ghost"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Marowak_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "marowak-totem",
-    "speciesNames": {
-      "ja-Hrkt": "ガラガラ",
-      "roomaji": "Garagara",
-      "ko": "텅구리",
-      "zh-Hant": "嘎啦嘎啦",
-      "fr": "Ossatueur",
-      "de": "Knogga",
-      "es": "Marowak",
-      "it": "Marowak",
-      "en": "Marowak",
-      "ja": "ガラガラ",
-      "zh-Hans": "嘎啦嘎啦"
-    },
-    "formNames": {
-      "ko": "알로라의 모습"
-    },
-    "number": 105,
-    "hp": 60,
-    "attack": 80,
-    "defense": 110,
-    "spAttack": 50,
-    "spDefense": 80,
-    "speed": 45,
-    "id": "10149",
     "types": ["fire", "ghost"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Marowak_(Pok%C3%A9mon)"
   },
@@ -5672,35 +4909,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Lapras_(Pok%C3%A9mon)"
   },
   {
-    "name": "lapras-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ラプラス",
-      "roomaji": "Laplace",
-      "ko": "라프라스",
-      "zh-Hant": "拉普拉斯",
-      "fr": "Lokhlass",
-      "de": "Lapras",
-      "es": "Lapras",
-      "it": "Lapras",
-      "en": "Lapras",
-      "ja": "ラプラス",
-      "zh-Hans": "拉普拉斯"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 131,
-    "hp": 130,
-    "attack": 85,
-    "defense": 80,
-    "spAttack": 85,
-    "spDefense": 95,
-    "speed": 60,
-    "id": "10195",
-    "types": ["water", "ice"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Lapras_(Pok%C3%A9mon)"
-  },
-  {
     "name": "ditto",
     "speciesNames": {
       "ja-Hrkt": "メタモン",
@@ -5751,35 +4959,6 @@
     "spDefense": 65,
     "speed": 55,
     "id": "133",
-    "types": ["normal"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Eevee_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "eevee-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "イーブイ",
-      "roomaji": "Eievui",
-      "ko": "이브이",
-      "zh-Hant": "伊布",
-      "fr": "Évoli",
-      "de": "Evoli",
-      "es": "Eevee",
-      "it": "Eevee",
-      "en": "Eevee",
-      "ja": "イーブイ",
-      "zh-Hans": "伊布"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 133,
-    "hp": 55,
-    "attack": 55,
-    "defense": 50,
-    "spAttack": 45,
-    "spDefense": 65,
-    "speed": 55,
-    "id": "10196",
     "types": ["normal"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Eevee_(Pok%C3%A9mon)"
   },
@@ -6088,35 +5267,6 @@
     "spDefense": 110,
     "speed": 30,
     "id": "143",
-    "types": ["normal"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Snorlax_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "snorlax-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "カビゴン",
-      "roomaji": "Kabigon",
-      "ko": "잠만보",
-      "zh-Hant": "卡比獸",
-      "fr": "Ronflex",
-      "de": "Relaxo",
-      "es": "Snorlax",
-      "it": "Snorlax",
-      "en": "Snorlax",
-      "ja": "カビゴン",
-      "zh-Hans": "卡比兽"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 143,
-    "hp": 160,
-    "attack": 110,
-    "defense": 65,
-    "spAttack": 65,
-    "spDefense": 110,
-    "speed": 30,
-    "id": "10197",
     "types": ["normal"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Snorlax_(Pok%C3%A9mon)"
   },
@@ -19337,43 +18487,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Basculin_(Pok%C3%A9mon)"
   },
   {
-    "name": "basculin-blue-striped",
-    "speciesNames": {
-      "ja-Hrkt": "バスラオ",
-      "ko": "배쓰나이",
-      "zh-Hant": "野蠻鱸魚",
-      "fr": "Bargantua",
-      "de": "Barschuft",
-      "es": "Basculin",
-      "it": "Basculin",
-      "en": "Basculin",
-      "ja": "バスラオ",
-      "zh-Hans": "野蛮鲈鱼"
-    },
-    "formNames": {
-      "ja-Hrkt": "あおすじのすがた",
-      "ko": "청색근의 모습",
-      "zh-Hant": "藍條紋的樣子",
-      "fr": "Motif Bleu",
-      "de": "Blaulinige Form",
-      "es": "Forma Raya Azul",
-      "it": "Forma Lineablu",
-      "en": "Blue-Striped Form",
-      "ja": "あおすじのすがた",
-      "zh-Hans": "蓝条纹的样子"
-    },
-    "number": 550,
-    "hp": 70,
-    "attack": 92,
-    "defense": 65,
-    "spAttack": 80,
-    "spDefense": 55,
-    "speed": 98,
-    "id": "10016",
-    "types": ["water"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Basculin_(Pok%C3%A9mon)"
-  },
-  {
     "name": "sandile",
     "speciesNames": {
       "ja-Hrkt": "メグロコ",
@@ -20024,34 +19137,6 @@
     "spDefense": 82,
     "speed": 75,
     "id": "569",
-    "types": ["poison"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Garbodor_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "garbodor-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ダストダス",
-      "ko": "더스트나",
-      "zh-Hant": "灰塵山",
-      "fr": "Miasmax",
-      "de": "Deponitox",
-      "es": "Garbodor",
-      "it": "Garbodor",
-      "en": "Garbodor",
-      "ja": "ダストダス",
-      "zh-Hans": "灰尘山"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 569,
-    "hp": 80,
-    "attack": 95,
-    "defense": 82,
-    "spAttack": 60,
-    "spDefense": 82,
-    "speed": 75,
-    "id": "10198",
     "types": ["poison"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Garbodor_(Pok%C3%A9mon)"
   },
@@ -22368,43 +21453,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Keldeo_(Pok%C3%A9mon)"
   },
   {
-    "name": "keldeo-resolute",
-    "speciesNames": {
-      "ja-Hrkt": "ケルディオ",
-      "ko": "케르디오",
-      "zh-Hant": "凱路迪歐",
-      "fr": "Keldeo",
-      "de": "Keldeo",
-      "es": "Keldeo",
-      "it": "Keldeo",
-      "en": "Keldeo",
-      "ja": "ケルディオ",
-      "zh-Hans": "凯路迪欧"
-    },
-    "formNames": {
-      "ja-Hrkt": "かくごのすがた",
-      "ko": "각오의 모습",
-      "zh-Hant": "覺悟的樣子",
-      "fr": "Aspect Décidé",
-      "de": "Resolutform",
-      "es": "Forma Brío",
-      "it": "Forma Risoluta",
-      "en": "Resolute Form",
-      "ja": "かくごのすがた",
-      "zh-Hans": "觉悟的样子"
-    },
-    "number": 647,
-    "hp": 91,
-    "attack": 72,
-    "defense": 90,
-    "spAttack": 129,
-    "spDefense": 90,
-    "speed": 108,
-    "id": "10024",
-    "types": ["water", "fighting"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Keldeo_(Pok%C3%A9mon)"
-  },
-  {
     "name": "meloetta-aria",
     "speciesNames": {
       "ja-Hrkt": "メロエッタ",
@@ -22735,32 +21783,6 @@
     "spDefense": 71,
     "speed": 122,
     "id": "658",
-    "types": ["water", "dark"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Greninja_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "greninja-battle-bond",
-    "speciesNames": {
-      "ja-Hrkt": "ゲッコウガ",
-      "ko": "개굴닌자",
-      "zh-Hant": "甲賀忍蛙",
-      "fr": "Amphinobi",
-      "de": "Quajutsu",
-      "es": "Greninja",
-      "it": "Greninja",
-      "en": "Greninja",
-      "ja": "ゲッコウガ",
-      "zh-Hans": "甲贺忍蛙"
-    },
-    "formNames": {},
-    "number": 658,
-    "hp": 72,
-    "attack": 95,
-    "defense": 67,
-    "spAttack": 103,
-    "spDefense": 71,
-    "speed": 122,
-    "id": "10116",
     "types": ["water", "dark"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Greninja_(Pok%C3%A9mon)"
   },
@@ -23403,43 +22425,6 @@
     "spDefense": 81,
     "speed": 104,
     "id": "678",
-    "types": ["psychic"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowstic_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "meowstic-female",
-    "speciesNames": {
-      "ja-Hrkt": "ニャオニクス",
-      "ko": "냐오닉스",
-      "zh-Hant": "超能妙喵",
-      "fr": "Mistigrix",
-      "de": "Psiaugon",
-      "es": "Meowstic",
-      "it": "Meowstic",
-      "en": "Meowstic",
-      "ja": "ニャオニクス",
-      "zh-Hans": "超能妙喵"
-    },
-    "formNames": {
-      "ja-Hrkt": "メスのすがた",
-      "ko": "암컷의 모습",
-      "zh-Hant": "雌性的樣子",
-      "fr": "Femelle",
-      "de": "Weiblich",
-      "es": "Hembra",
-      "it": "Femmina",
-      "en": "Female",
-      "ja": "メスのすがた",
-      "zh-Hans": "雌性的样子"
-    },
-    "number": 678,
-    "hp": 74,
-    "attack": 48,
-    "defense": 76,
-    "spAttack": 83,
-    "spDefense": 81,
-    "speed": 104,
-    "id": "10025",
     "types": ["psychic"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Meowstic_(Pok%C3%A9mon)"
   },
@@ -24832,43 +23817,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zygarde_(Pok%C3%A9mon)"
   },
   {
-    "name": "zygarde-50",
-    "speciesNames": {
-      "ja-Hrkt": "ジガルデ",
-      "ko": "지가르데",
-      "zh-Hant": "基格爾德",
-      "fr": "Zygarde",
-      "de": "Zygarde",
-      "es": "Zygarde",
-      "it": "Zygarde",
-      "en": "Zygarde",
-      "ja": "ジガルデ",
-      "zh-Hans": "基格尔德"
-    },
-    "formNames": {
-      "ja-Hrkt": "５０％フォルム",
-      "ko": "50%폼",
-      "zh-Hant": "５０％形態",
-      "fr": "Forme 50 %",
-      "de": "50%-Form",
-      "es": "Forma 50%",
-      "it": "Forma 50%",
-      "en": "50% Forme",
-      "ja": "５０％フォルム",
-      "zh-Hans": "５０％形态"
-    },
-    "number": 718,
-    "hp": 108,
-    "attack": 100,
-    "defense": 121,
-    "spAttack": 81,
-    "spDefense": 95,
-    "speed": 95,
-    "id": "10119",
-    "types": ["dragon", "ground"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Zygarde_(Pok%C3%A9mon)"
-  },
-  {
     "name": "zygarde-complete",
     "speciesNames": {
       "ja-Hrkt": "ジガルデ",
@@ -25433,32 +24381,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gumshoos_(Pok%C3%A9mon)"
   },
   {
-    "name": "gumshoos-totem",
-    "speciesNames": {
-      "ja-Hrkt": "デカグース",
-      "ko": "형사구스",
-      "zh-Hant": "貓鼬探長",
-      "fr": "Argouste",
-      "de": "Manguspektor",
-      "es": "Gumshoos",
-      "it": "Gumshoos",
-      "en": "Gumshoos",
-      "ja": "デカグース",
-      "zh-Hans": "猫鼬探长"
-    },
-    "formNames": {},
-    "number": 735,
-    "hp": 88,
-    "attack": 110,
-    "defense": 60,
-    "spAttack": 55,
-    "spDefense": 60,
-    "speed": 45,
-    "id": "10121",
-    "types": ["normal"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Gumshoos_(Pok%C3%A9mon)"
-  },
-  {
     "name": "grubbin",
     "speciesNames": {
       "ja-Hrkt": "アゴジムシ",
@@ -25533,32 +24455,6 @@
     "spDefense": 75,
     "speed": 43,
     "id": "738",
-    "types": ["bug", "electric"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Vikavolt_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "vikavolt-totem",
-    "speciesNames": {
-      "ja-Hrkt": "クワガノン",
-      "ko": "투구뿌논",
-      "zh-Hant": "鍬農砲蟲",
-      "fr": "Lucanon",
-      "de": "Donarion",
-      "es": "Vikavolt",
-      "it": "Vikavolt",
-      "en": "Vikavolt",
-      "ja": "クワガノン",
-      "zh-Hans": "锹农炮虫"
-    },
-    "formNames": {},
-    "number": 738,
-    "hp": 77,
-    "attack": 70,
-    "defense": 90,
-    "spAttack": 145,
-    "spDefense": 75,
-    "speed": 43,
-    "id": "10122",
     "types": ["bug", "electric"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Vikavolt_(Pok%C3%A9mon)"
   },
@@ -25815,32 +24711,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ribombee_(Pok%C3%A9mon)"
   },
   {
-    "name": "ribombee-totem",
-    "speciesNames": {
-      "ja-Hrkt": "アブリボン",
-      "ko": "에리본",
-      "zh-Hant": "蝶結萌虻",
-      "fr": "Rubombelle",
-      "de": "Bandelby",
-      "es": "Ribombee",
-      "it": "Ribombee",
-      "en": "Ribombee",
-      "ja": "アブリボン",
-      "zh-Hans": "蝶结萌虻"
-    },
-    "formNames": {},
-    "number": 743,
-    "hp": 60,
-    "attack": 55,
-    "defense": 60,
-    "spAttack": 95,
-    "spDefense": 70,
-    "speed": 124,
-    "id": "10150",
-    "types": ["bug", "fairy"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Ribombee_(Pok%C3%A9mon)"
-  },
-  {
     "name": "rockruff",
     "speciesNames": {
       "ja-Hrkt": "イワンコ",
@@ -25863,32 +24733,6 @@
     "spDefense": 40,
     "speed": 60,
     "id": "744",
-    "types": ["rock"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rockruff_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "rockruff-own-tempo",
-    "speciesNames": {
-      "ja-Hrkt": "イワンコ",
-      "ko": "암멍이",
-      "zh-Hant": "岩狗狗",
-      "fr": "Rocabot",
-      "de": "Wuffels",
-      "es": "Rockruff",
-      "it": "Rockruff",
-      "en": "Rockruff",
-      "ja": "イワンコ",
-      "zh-Hans": "岩狗狗"
-    },
-    "formNames": {},
-    "number": 744,
-    "hp": 45,
-    "attack": 65,
-    "defense": 40,
-    "spAttack": 30,
-    "spDefense": 40,
-    "speed": 60,
-    "id": "10151",
     "types": ["rock"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rockruff_(Pok%C3%A9mon)"
   },
@@ -26234,32 +25078,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Araquanid_(Pok%C3%A9mon)"
   },
   {
-    "name": "araquanid-totem",
-    "speciesNames": {
-      "ja-Hrkt": "オニシズクモ",
-      "ko": "깨비물거미",
-      "zh-Hant": "滴蛛霸",
-      "fr": "Tarenbulle",
-      "de": "Aranestro",
-      "es": "Araquanid",
-      "it": "Araquanid",
-      "en": "Araquanid",
-      "ja": "オニシズクモ",
-      "zh-Hans": "滴蛛霸"
-    },
-    "formNames": {},
-    "number": 752,
-    "hp": 68,
-    "attack": 70,
-    "defense": 92,
-    "spAttack": 50,
-    "spDefense": 132,
-    "speed": 42,
-    "id": "10153",
-    "types": ["water", "bug"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Araquanid_(Pok%C3%A9mon)"
-  },
-  {
     "name": "fomantis",
     "speciesNames": {
       "ja-Hrkt": "カリキリ",
@@ -26308,32 +25126,6 @@
     "spDefense": 90,
     "speed": 45,
     "id": "754",
-    "types": ["grass"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Lurantis_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "lurantis-totem",
-    "speciesNames": {
-      "ja-Hrkt": "ラランテス",
-      "ko": "라란티스",
-      "zh-Hant": "蘭螳花",
-      "fr": "Floramantis",
-      "de": "Mantidea",
-      "es": "Lurantis",
-      "it": "Lurantis",
-      "en": "Lurantis",
-      "ja": "ラランテス",
-      "zh-Hans": "兰螳花"
-    },
-    "formNames": {},
-    "number": 754,
-    "hp": 70,
-    "attack": 105,
-    "defense": 90,
-    "spAttack": 80,
-    "spDefense": 90,
-    "speed": 45,
-    "id": "10128",
     "types": ["grass"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Lurantis_(Pok%C3%A9mon)"
   },
@@ -26438,32 +25230,6 @@
     "spDefense": 60,
     "speed": 117,
     "id": "758",
-    "types": ["poison", "fire"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Salazzle_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "salazzle-totem",
-    "speciesNames": {
-      "ja-Hrkt": "エンニュート",
-      "ko": "염뉴트",
-      "zh-Hant": "焰后蜥",
-      "fr": "Malamandre",
-      "de": "Amfira",
-      "es": "Salazzle",
-      "it": "Salazzle",
-      "en": "Salazzle",
-      "ja": "エンニュート",
-      "zh-Hans": "焰后蜥"
-    },
-    "formNames": {},
-    "number": 758,
-    "hp": 68,
-    "attack": 64,
-    "defense": 60,
-    "spAttack": 111,
-    "spDefense": 60,
-    "speed": 117,
-    "id": "10129",
     "types": ["poison", "fire"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Salazzle_(Pok%C3%A9mon)"
   },
@@ -26895,228 +25661,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
   },
   {
-    "name": "minior-orange-meteor",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "りゅうせいのすがた",
-      "ko": "유성의 모습",
-      "zh-Hant": "流星的樣子",
-      "fr": "Forme Météore",
-      "de": "Meteorform",
-      "es": "Forma Meteorito",
-      "it": "Forma Meteora",
-      "en": "Meteor Form",
-      "ja": "りゅうせいのすがた",
-      "zh-Hans": "流星的样子"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 60,
-    "defense": 100,
-    "spAttack": 60,
-    "spDefense": 100,
-    "speed": 60,
-    "id": "10130",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "minior-yellow-meteor",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "りゅうせいのすがた",
-      "ko": "유성의 모습",
-      "zh-Hant": "流星的樣子",
-      "fr": "Forme Météore",
-      "de": "Meteorform",
-      "es": "Forma Meteorito",
-      "it": "Forma Meteora",
-      "en": "Meteor Form",
-      "ja": "りゅうせいのすがた",
-      "zh-Hans": "流星的样子"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 60,
-    "defense": 100,
-    "spAttack": 60,
-    "spDefense": 100,
-    "speed": 60,
-    "id": "10131",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "minior-green-meteor",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "りゅうせいのすがた",
-      "ko": "유성의 모습",
-      "zh-Hant": "流星的樣子",
-      "fr": "Forme Météore",
-      "de": "Meteorform",
-      "es": "Forma Meteorito",
-      "it": "Forma Meteora",
-      "en": "Meteor Form",
-      "ja": "りゅうせいのすがた",
-      "zh-Hans": "流星的样子"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 60,
-    "defense": 100,
-    "spAttack": 60,
-    "spDefense": 100,
-    "speed": 60,
-    "id": "10132",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "minior-blue-meteor",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "りゅうせいのすがた",
-      "ko": "유성의 모습",
-      "zh-Hant": "流星的樣子",
-      "fr": "Forme Météore",
-      "de": "Meteorform",
-      "es": "Forma Meteorito",
-      "it": "Forma Meteora",
-      "en": "Meteor Form",
-      "ja": "りゅうせいのすがた",
-      "zh-Hans": "流星的样子"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 60,
-    "defense": 100,
-    "spAttack": 60,
-    "spDefense": 100,
-    "speed": 60,
-    "id": "10133",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "minior-indigo-meteor",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "りゅうせいのすがた",
-      "ko": "유성의 모습",
-      "zh-Hant": "流星的樣子",
-      "fr": "Forme Météore",
-      "de": "Meteorform",
-      "es": "Forma Meteorito",
-      "it": "Forma Meteora",
-      "en": "Meteor Form",
-      "ja": "りゅうせいのすがた",
-      "zh-Hans": "流星的样子"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 60,
-    "defense": 100,
-    "spAttack": 60,
-    "spDefense": 100,
-    "speed": 60,
-    "id": "10134",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "minior-violet-meteor",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "りゅうせいのすがた",
-      "ko": "유성의 모습",
-      "zh-Hant": "流星的樣子",
-      "fr": "Forme Météore",
-      "de": "Meteorform",
-      "es": "Forma Meteorito",
-      "it": "Forma Meteora",
-      "en": "Meteor Form",
-      "ja": "りゅうせいのすがた",
-      "zh-Hans": "流星的样子"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 60,
-    "defense": 100,
-    "spAttack": 60,
-    "spDefense": 100,
-    "speed": 60,
-    "id": "10135",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
     "name": "minior-red",
     "speciesNames": {
       "ja-Hrkt": "メテノ",
@@ -27150,228 +25694,6 @@
     "spDefense": 60,
     "speed": 120,
     "id": "10136",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "minior-orange",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "だいだいいろのコア",
-      "ko": "주황색 코어",
-      "zh-Hant": "橙色核心",
-      "fr": "Noyau Orange",
-      "de": "Oranger Kern",
-      "es": "Núcleo Naranja",
-      "it": "Nucleo Arancione",
-      "en": "Orange Core",
-      "ja": "だいだいいろのコア",
-      "zh-Hans": "橙色核心"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 100,
-    "defense": 60,
-    "spAttack": 100,
-    "spDefense": 60,
-    "speed": 120,
-    "id": "10137",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "minior-yellow",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "きいろのコア",
-      "ko": "노란색 코어",
-      "zh-Hant": "黃色核心",
-      "fr": "Noyau Jaune",
-      "de": "Gelber Kern",
-      "es": "Núcleo Amarillo",
-      "it": "Nucleo Giallo",
-      "en": "Yellow Core",
-      "ja": "きいろのコア",
-      "zh-Hans": "黄色核心"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 100,
-    "defense": 60,
-    "spAttack": 100,
-    "spDefense": 60,
-    "speed": 120,
-    "id": "10138",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "minior-green",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "みどりいろのコア",
-      "ko": "초록색 코어",
-      "zh-Hant": "綠色核心",
-      "fr": "Noyau Vert",
-      "de": "Grüner Kern",
-      "es": "Núcleo Verde",
-      "it": "Nucleo Verde",
-      "en": "Green Core",
-      "ja": "みどりいろのコア",
-      "zh-Hans": "绿色核心"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 100,
-    "defense": 60,
-    "spAttack": 100,
-    "spDefense": 60,
-    "speed": 120,
-    "id": "10139",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "minior-blue",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "みずいろのコア",
-      "ko": "옥색 코어",
-      "zh-Hant": "淺藍色核心",
-      "fr": "Noyau Bleu",
-      "de": "Hellblauer Kern",
-      "es": "Núcleo Azul",
-      "it": "Nucleo Azzurro",
-      "en": "Blue Core",
-      "ja": "みずいろのコア",
-      "zh-Hans": "浅蓝色核心"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 100,
-    "defense": 60,
-    "spAttack": 100,
-    "spDefense": 60,
-    "speed": 120,
-    "id": "10140",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "minior-indigo",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "あおいろのコア",
-      "ko": "파란색 코어",
-      "zh-Hant": "藍色核心",
-      "fr": "Noyau Indigo",
-      "de": "Blauer Kern",
-      "es": "Núcleo Añil",
-      "it": "Nucleo Indaco",
-      "en": "Indigo Core",
-      "ja": "あおいろのコア",
-      "zh-Hans": "蓝色核心"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 100,
-    "defense": 60,
-    "spAttack": 100,
-    "spDefense": 60,
-    "speed": 120,
-    "id": "10141",
-    "types": ["rock", "flying"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "minior-violet",
-    "speciesNames": {
-      "ja-Hrkt": "メテノ",
-      "ko": "메테노",
-      "zh-Hant": "小隕星",
-      "fr": "Météno",
-      "de": "Meteno",
-      "es": "Minior",
-      "it": "Minior",
-      "en": "Minior",
-      "ja": "メテノ",
-      "zh-Hans": "小陨星"
-    },
-    "formNames": {
-      "ja-Hrkt": "むらさきいろのコア",
-      "ko": "보라색 코어",
-      "zh-Hant": "紫色核心",
-      "fr": "Noyau Violet",
-      "de": "Violetter Kern",
-      "es": "Núcleo Violeta",
-      "it": "Nucleo Violetto",
-      "en": "Violet Core",
-      "ja": "むらさきいろのコア",
-      "zh-Hans": "紫色核心"
-    },
-    "number": 774,
-    "hp": 60,
-    "attack": 100,
-    "defense": 60,
-    "spAttack": 100,
-    "spDefense": 60,
-    "speed": 120,
-    "id": "10142",
     "types": ["rock", "flying"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Minior_(Pok%C3%A9mon)"
   },
@@ -27454,32 +25776,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Togedemaru_(Pok%C3%A9mon)"
   },
   {
-    "name": "togedemaru-totem",
-    "speciesNames": {
-      "ja-Hrkt": "トゲデマル",
-      "ko": "토게데마루",
-      "zh-Hant": "托戈德瑪爾",
-      "fr": "Togedemaru",
-      "de": "Togedemaru",
-      "es": "Togedemaru",
-      "it": "Togedemaru",
-      "en": "Togedemaru",
-      "ja": "トゲデマル",
-      "zh-Hans": "托戈德玛尔"
-    },
-    "formNames": {},
-    "number": 777,
-    "hp": 65,
-    "attack": 98,
-    "defense": 63,
-    "spAttack": 40,
-    "spDefense": 73,
-    "speed": 96,
-    "id": "10154",
-    "types": ["electric", "steel"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Togedemaru_(Pok%C3%A9mon)"
-  },
-  {
     "name": "mimikyu-disguised",
     "speciesNames": {
       "ja-Hrkt": "ミミッキュ",
@@ -27513,95 +25809,6 @@
     "spDefense": 105,
     "speed": 96,
     "id": "778",
-    "types": ["ghost", "fairy"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mimikyu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "mimikyu-busted",
-    "speciesNames": {
-      "ja-Hrkt": "ミミッキュ",
-      "ko": "따라큐",
-      "zh-Hant": "謎擬Ｑ",
-      "fr": "Mimiqui",
-      "de": "Mimigma",
-      "es": "Mimikyu",
-      "it": "Mimikyu",
-      "en": "Mimikyu",
-      "ja": "ミミッキュ",
-      "zh-Hans": "谜拟Ｑ"
-    },
-    "formNames": {
-      "ja-Hrkt": "ばれたすがた",
-      "ko": "들킨 모습",
-      "zh-Hant": "現形的樣子",
-      "fr": "Forme Démasquée",
-      "de": "Entlarvte Form",
-      "es": "Forma Descubierta",
-      "it": "Forma Smascherata",
-      "en": "Busted Form",
-      "ja": "ばれたすがた",
-      "zh-Hans": "现形的样子"
-    },
-    "number": 778,
-    "hp": 55,
-    "attack": 90,
-    "defense": 80,
-    "spAttack": 50,
-    "spDefense": 105,
-    "speed": 96,
-    "id": "10143",
-    "types": ["ghost", "fairy"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mimikyu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "mimikyu-totem-disguised",
-    "speciesNames": {
-      "ja-Hrkt": "ミミッキュ",
-      "ko": "따라큐",
-      "zh-Hant": "謎擬Ｑ",
-      "fr": "Mimiqui",
-      "de": "Mimigma",
-      "es": "Mimikyu",
-      "it": "Mimikyu",
-      "en": "Mimikyu",
-      "ja": "ミミッキュ",
-      "zh-Hans": "谜拟Ｑ"
-    },
-    "formNames": {},
-    "number": 778,
-    "hp": 55,
-    "attack": 90,
-    "defense": 80,
-    "spAttack": 50,
-    "spDefense": 105,
-    "speed": 96,
-    "id": "10144",
-    "types": ["ghost", "fairy"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mimikyu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "mimikyu-totem-busted",
-    "speciesNames": {
-      "ja-Hrkt": "ミミッキュ",
-      "ko": "따라큐",
-      "zh-Hant": "謎擬Ｑ",
-      "fr": "Mimiqui",
-      "de": "Mimigma",
-      "es": "Mimikyu",
-      "it": "Mimikyu",
-      "en": "Mimikyu",
-      "ja": "ミミッキュ",
-      "zh-Hans": "谜拟Ｑ"
-    },
-    "formNames": {},
-    "number": 778,
-    "hp": 55,
-    "attack": 90,
-    "defense": 80,
-    "spAttack": 50,
-    "spDefense": 105,
-    "speed": 96,
-    "id": "10145",
     "types": ["ghost", "fairy"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Mimikyu_(Pok%C3%A9mon)"
   },
@@ -27758,32 +25965,6 @@
     "spDefense": 105,
     "speed": 85,
     "id": "784",
-    "types": ["dragon", "fighting"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Kommo-o_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "kommo-o-totem",
-    "speciesNames": {
-      "ja-Hrkt": "ジャラランガ",
-      "ko": "짜랑고우거",
-      "zh-Hant": "杖尾鱗甲龍",
-      "fr": "Ékaïser",
-      "de": "Grandiras",
-      "es": "Kommo-o",
-      "it": "Kommo-o",
-      "en": "Kommo-o",
-      "ja": "ジャラランガ",
-      "zh-Hans": "杖尾鳞甲龙"
-    },
-    "formNames": {},
-    "number": 784,
-    "hp": 75,
-    "attack": 110,
-    "defense": 125,
-    "spAttack": 100,
-    "spDefense": 105,
-    "speed": 85,
-    "id": "10146",
     "types": ["dragon", "fighting"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Kommo-o_(Pok%C3%A9mon)"
   },
@@ -28341,43 +26522,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Magearna_(Pok%C3%A9mon)"
   },
   {
-    "name": "magearna-original",
-    "speciesNames": {
-      "ja-Hrkt": "マギアナ",
-      "ko": "마기아나",
-      "zh-Hant": "瑪機雅娜",
-      "fr": "Magearna",
-      "de": "Magearna",
-      "es": "Magearna",
-      "it": "Magearna",
-      "en": "Magearna",
-      "ja": "マギアナ",
-      "zh-Hans": "玛机雅娜"
-    },
-    "formNames": {
-      "ja-Hrkt": "５００ねんまえのいろ",
-      "ko": "500년 전의 색",
-      "zh-Hant": "５００年前的顏色",
-      "fr": "Couleur du Passé",
-      "de": "Originalfarbe",
-      "es": "Color Vetusto",
-      "it": "Colore Antico",
-      "en": "Original Color",
-      "ja": "５００ねんまえのいろ",
-      "zh-Hans": "５００年前的颜色"
-    },
-    "number": 801,
-    "hp": 80,
-    "attack": 95,
-    "defense": 115,
-    "spAttack": 130,
-    "spDefense": 115,
-    "speed": 65,
-    "id": "10147",
-    "types": ["steel", "fairy"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Magearna_(Pok%C3%A9mon)"
-  },
-  {
     "name": "marshadow",
     "speciesNames": {
       "ja-Hrkt": "マーシャドー",
@@ -28586,34 +26730,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Melmetal_(Pok%C3%A9mon)"
   },
   {
-    "name": "melmetal-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "メルメタル",
-      "ko": "멜메탈",
-      "zh-Hant": "美錄梅塔",
-      "fr": "Melmetal",
-      "de": "Melmetal",
-      "es": "Melmetal",
-      "it": "Melmetal",
-      "en": "Melmetal",
-      "ja": "メルメタル",
-      "zh-Hans": "美录梅塔"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 809,
-    "hp": 135,
-    "attack": 143,
-    "defense": 143,
-    "spAttack": 80,
-    "spDefense": 65,
-    "speed": 34,
-    "id": "10199",
-    "types": ["steel"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Melmetal_(Pok%C3%A9mon)"
-  },
-  {
     "name": "grookey",
     "speciesNames": {
       "ja-Hrkt": "サルノリ",
@@ -28688,34 +26804,6 @@
     "spDefense": 70,
     "speed": 85,
     "id": "812",
-    "types": ["grass"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rillaboom_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "rillaboom-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ゴリランダー",
-      "ko": "고릴타",
-      "zh-Hant": "轟擂金剛猩",
-      "fr": "Gorythmic",
-      "de": "Gortrom",
-      "es": "Rillaboom",
-      "it": "Rillaboom",
-      "en": "Rillaboom",
-      "ja": "ゴリランダー",
-      "zh-Hans": "轰擂金刚猩"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 812,
-    "hp": 100,
-    "attack": 125,
-    "defense": 90,
-    "spAttack": 60,
-    "spDefense": 70,
-    "speed": 85,
-    "id": "10200",
     "types": ["grass"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Rillaboom_(Pok%C3%A9mon)"
   },
@@ -28798,34 +26886,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Cinderace_(Pok%C3%A9mon)"
   },
   {
-    "name": "cinderace-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "エースバーン",
-      "ko": "에이스번",
-      "zh-Hant": "閃焰王牌",
-      "fr": "Pyrobut",
-      "de": "Liberlo",
-      "es": "Cinderace",
-      "it": "Cinderace",
-      "en": "Cinderace",
-      "ja": "エースバーン",
-      "zh-Hans": "闪焰王牌"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 815,
-    "hp": 80,
-    "attack": 116,
-    "defense": 75,
-    "spAttack": 65,
-    "spDefense": 75,
-    "speed": 119,
-    "id": "10201",
-    "types": ["fire"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Cinderace_(Pok%C3%A9mon)"
-  },
-  {
     "name": "sobble",
     "speciesNames": {
       "ja-Hrkt": "メッソン",
@@ -28900,34 +26960,6 @@
     "spDefense": 65,
     "speed": 120,
     "id": "818",
-    "types": ["water"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Inteleon_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "inteleon-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "インテレオン",
-      "ko": "인텔리레온",
-      "zh-Hant": "千面避役",
-      "fr": "Lézargus",
-      "de": "Intelleon",
-      "es": "Inteleon",
-      "it": "Inteleon",
-      "en": "Inteleon",
-      "ja": "インテレオン",
-      "zh-Hans": "千面避役"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 818,
-    "hp": 70,
-    "attack": 85,
-    "defense": 65,
-    "spAttack": 125,
-    "spDefense": 65,
-    "speed": 120,
-    "id": "10202",
     "types": ["water"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Inteleon_(Pok%C3%A9mon)"
   },
@@ -29062,34 +27094,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Corviknight_(Pok%C3%A9mon)"
   },
   {
-    "name": "corviknight-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "アーマーガア",
-      "ko": "아머까오",
-      "zh-Hant": "鋼鎧鴉",
-      "fr": "Corvaillus",
-      "de": "Krarmor",
-      "es": "Corviknight",
-      "it": "Corviknight",
-      "en": "Corviknight",
-      "ja": "アーマーガア",
-      "zh-Hans": "钢铠鸦"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 823,
-    "hp": 98,
-    "attack": 87,
-    "defense": 105,
-    "spAttack": 53,
-    "spDefense": 85,
-    "speed": 67,
-    "id": "10203",
-    "types": ["flying", "steel"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Corviknight_(Pok%C3%A9mon)"
-  },
-  {
     "name": "blipbug",
     "speciesNames": {
       "ja-Hrkt": "サッチムシ",
@@ -29164,34 +27168,6 @@
     "spDefense": 120,
     "speed": 90,
     "id": "826",
-    "types": ["bug", "psychic"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Orbeetle_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "orbeetle-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "イオルブ",
-      "ko": "이올브",
-      "zh-Hant": "以歐路普",
-      "fr": "Astronelle",
-      "de": "Maritellit",
-      "es": "Orbeetle",
-      "it": "Orbeetle",
-      "en": "Orbeetle",
-      "ja": "イオルブ",
-      "zh-Hans": "以欧路普"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 826,
-    "hp": 60,
-    "attack": 45,
-    "defense": 110,
-    "spAttack": 80,
-    "spDefense": 120,
-    "speed": 90,
-    "id": "10204",
     "types": ["bug", "psychic"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Orbeetle_(Pok%C3%A9mon)"
   },
@@ -29404,34 +27380,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Drednaw_(Pok%C3%A9mon)"
   },
   {
-    "name": "drednaw-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "カジリガメ",
-      "ko": "갈가부기",
-      "zh-Hant": "暴噬龜",
-      "fr": "Torgamord",
-      "de": "Kamalm",
-      "es": "Drednaw",
-      "it": "Drednaw",
-      "en": "Drednaw",
-      "ja": "カジリガメ",
-      "zh-Hans": "暴噬龟"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 834,
-    "hp": 90,
-    "attack": 115,
-    "defense": 90,
-    "spAttack": 48,
-    "spDefense": 68,
-    "speed": 74,
-    "id": "10205",
-    "types": ["water", "rock"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Drednaw_(Pok%C3%A9mon)"
-  },
-  {
     "name": "yamper",
     "speciesNames": {
       "ja-Hrkt": "ワンパチ",
@@ -29562,34 +27510,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Coalossal_(Pok%C3%A9mon)"
   },
   {
-    "name": "coalossal-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "セキタンザン",
-      "ko": "석탄산",
-      "zh-Hant": "巨炭山",
-      "fr": "Monthracite",
-      "de": "Montecarbo",
-      "es": "Coalossal",
-      "it": "Coalossal",
-      "en": "Coalossal",
-      "ja": "セキタンザン",
-      "zh-Hans": "巨炭山"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 839,
-    "hp": 110,
-    "attack": 80,
-    "defense": 120,
-    "spAttack": 80,
-    "spDefense": 90,
-    "speed": 30,
-    "id": "10206",
-    "types": ["rock", "fire"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Coalossal_(Pok%C3%A9mon)"
-  },
-  {
     "name": "applin",
     "speciesNames": {
       "ja-Hrkt": "カジッチュ",
@@ -29642,34 +27562,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Flapple_(Pok%C3%A9mon)"
   },
   {
-    "name": "flapple-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "アップリュー",
-      "ko": "애프룡",
-      "zh-Hant": "蘋裹龍",
-      "fr": "Pomdrapi",
-      "de": "Drapfel",
-      "es": "Flapple",
-      "it": "Flapple",
-      "en": "Flapple",
-      "ja": "アップリュー",
-      "zh-Hans": "苹裹龙"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 841,
-    "hp": 70,
-    "attack": 110,
-    "defense": 80,
-    "spAttack": 95,
-    "spDefense": 60,
-    "speed": 70,
-    "id": "10207",
-    "types": ["grass", "dragon"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Flapple_(Pok%C3%A9mon)"
-  },
-  {
     "name": "appletun",
     "speciesNames": {
       "ja-Hrkt": "タルップル",
@@ -29692,34 +27584,6 @@
     "spDefense": 80,
     "speed": 30,
     "id": "842",
-    "types": ["grass", "dragon"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Appletun_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "appletun-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "タルップル",
-      "ko": "단지래플",
-      "zh-Hant": "豐蜜龍",
-      "fr": "Dratatin",
-      "de": "Schlapfel",
-      "es": "Appletun",
-      "it": "Appletun",
-      "en": "Appletun",
-      "ja": "タルップル",
-      "zh-Hans": "丰蜜龙"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 842,
-    "hp": 110,
-    "attack": 85,
-    "defense": 80,
-    "spAttack": 100,
-    "spDefense": 80,
-    "speed": 30,
-    "id": "10208",
     "types": ["grass", "dragon"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Appletun_(Pok%C3%A9mon)"
   },
@@ -29772,34 +27636,6 @@
     "spDefense": 70,
     "speed": 71,
     "id": "844",
-    "types": ["ground"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandaconda_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "sandaconda-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "サダイジャ",
-      "ko": "사다이사",
-      "zh-Hant": "沙螺蟒",
-      "fr": "Dunaconda",
-      "de": "Sanaconda",
-      "es": "Sandaconda",
-      "it": "Sandaconda",
-      "en": "Sandaconda",
-      "ja": "サダイジャ",
-      "zh-Hans": "沙螺蟒"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 844,
-    "hp": 72,
-    "attack": 107,
-    "defense": 125,
-    "spAttack": 65,
-    "spDefense": 70,
-    "speed": 71,
-    "id": "10209",
     "types": ["ground"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Sandaconda_(Pok%C3%A9mon)"
   },
@@ -29936,90 +27772,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Toxtricity_(Pok%C3%A9mon)"
   },
   {
-    "name": "toxtricity-low-key",
-    "speciesNames": {
-      "ja-Hrkt": "ストリンダー",
-      "ko": "스트린더",
-      "zh-Hant": "顫弦蠑螈",
-      "fr": "Salarsen",
-      "de": "Riffex",
-      "es": "Toxtricity",
-      "it": "Toxtricity",
-      "en": "Toxtricity",
-      "ja": "ストリンダー",
-      "zh-Hans": "颤弦蝾螈"
-    },
-    "formNames": {
-      "en": "Low Key Form"
-    },
-    "number": 849,
-    "hp": 75,
-    "attack": 98,
-    "defense": 70,
-    "spAttack": 114,
-    "spDefense": 70,
-    "speed": 75,
-    "id": "10178",
-    "types": ["electric", "poison"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Toxtricity_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "toxtricity-amped-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ストリンダー",
-      "ko": "스트린더",
-      "zh-Hant": "顫弦蠑螈",
-      "fr": "Salarsen",
-      "de": "Riffex",
-      "es": "Toxtricity",
-      "it": "Toxtricity",
-      "en": "Toxtricity",
-      "ja": "ストリンダー",
-      "zh-Hans": "颤弦蝾螈"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 849,
-    "hp": 75,
-    "attack": 98,
-    "defense": 70,
-    "spAttack": 114,
-    "spDefense": 70,
-    "speed": 75,
-    "id": "10210",
-    "types": ["electric", "poison"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Toxtricity_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "toxtricity-low-key-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ストリンダー",
-      "ko": "스트린더",
-      "zh-Hant": "顫弦蠑螈",
-      "fr": "Salarsen",
-      "de": "Riffex",
-      "es": "Toxtricity",
-      "it": "Toxtricity",
-      "en": "Toxtricity",
-      "ja": "ストリンダー",
-      "zh-Hans": "颤弦蝾螈"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 849,
-    "hp": 75,
-    "attack": 98,
-    "defense": 70,
-    "spAttack": 114,
-    "spDefense": 70,
-    "speed": 75,
-    "id": "10220",
-    "types": ["electric", "poison"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Toxtricity_(Pok%C3%A9mon)"
-  },
-  {
     "name": "sizzlipede",
     "speciesNames": {
       "ja-Hrkt": "ヤクデ",
@@ -30068,34 +27820,6 @@
     "spDefense": 90,
     "speed": 65,
     "id": "851",
-    "types": ["fire", "bug"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Centiskorch_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "centiskorch-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "マルヤクデ",
-      "ko": "다태우지네",
-      "zh-Hant": "焚焰蚣",
-      "fr": "Scolocendre",
-      "de": "Infernopod",
-      "es": "Centiskorch",
-      "it": "Centiskorch",
-      "en": "Centiskorch",
-      "ja": "マルヤクデ",
-      "zh-Hans": "焚焰蚣"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 851,
-    "hp": 100,
-    "attack": 115,
-    "defense": 65,
-    "spAttack": 90,
-    "spDefense": 90,
-    "speed": 65,
-    "id": "10211",
     "types": ["fire", "bug"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Centiskorch_(Pok%C3%A9mon)"
   },
@@ -30286,34 +28010,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Hatterene_(Pok%C3%A9mon)"
   },
   {
-    "name": "hatterene-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ブリムオン",
-      "ko": "브리무음",
-      "zh-Hant": "布莉姆溫",
-      "fr": "Sorcilence",
-      "de": "Silembrim",
-      "es": "Hatterene",
-      "it": "Hatterene",
-      "en": "Hatterene",
-      "ja": "ブリムオン",
-      "zh-Hans": "布莉姆温"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 858,
-    "hp": 57,
-    "attack": 90,
-    "defense": 95,
-    "spAttack": 136,
-    "spDefense": 103,
-    "speed": 29,
-    "id": "10212",
-    "types": ["psychic", "fairy"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Hatterene_(Pok%C3%A9mon)"
-  },
-  {
     "name": "impidimp",
     "speciesNames": {
       "ja-Hrkt": "ベロバー",
@@ -30388,34 +28084,6 @@
     "spDefense": 75,
     "speed": 60,
     "id": "861",
-    "types": ["dark", "fairy"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Grimmsnarl_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "grimmsnarl-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "オーロンゲ",
-      "ko": "오롱털",
-      "zh-Hant": "長毛巨魔",
-      "fr": "Angoliath",
-      "de": "Olangaa",
-      "es": "Grimmsnarl",
-      "it": "Grimmsnarl",
-      "en": "Grimmsnarl",
-      "ja": "オーロンゲ",
-      "zh-Hans": "长毛巨魔"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 861,
-    "hp": 95,
-    "attack": 120,
-    "defense": 65,
-    "spAttack": 95,
-    "spDefense": 75,
-    "speed": 60,
-    "id": "10213",
     "types": ["dark", "fairy"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Grimmsnarl_(Pok%C3%A9mon)"
   },
@@ -30624,34 +28292,6 @@
     "spDefense": 121,
     "speed": 64,
     "id": "869",
-    "types": ["fairy"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Alcremie_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "alcremie-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "マホイップ",
-      "ko": "마휘핑",
-      "zh-Hant": "霜奶仙",
-      "fr": "Charmilly",
-      "de": "Pokusan",
-      "es": "Alcremie",
-      "it": "Alcremie",
-      "en": "Alcremie",
-      "ja": "マホイップ",
-      "zh-Hans": "霜奶仙"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 869,
-    "hp": 65,
-    "attack": 60,
-    "defense": 75,
-    "spAttack": 110,
-    "spDefense": 121,
-    "speed": 64,
-    "id": "10214",
     "types": ["fairy"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Alcremie_(Pok%C3%A9mon)"
   },
@@ -30978,34 +28618,6 @@
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Copperajah_(Pok%C3%A9mon)"
   },
   {
-    "name": "copperajah-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ダイオウドウ",
-      "ko": "대왕끼리동",
-      "zh-Hant": "大王銅象",
-      "fr": "Pachyradjah",
-      "de": "Patinaraja",
-      "es": "Copperajah",
-      "it": "Copperajah",
-      "en": "Copperajah",
-      "ja": "ダイオウドウ",
-      "zh-Hans": "大王铜象"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 879,
-    "hp": 122,
-    "attack": 130,
-    "defense": 69,
-    "spAttack": 80,
-    "spDefense": 69,
-    "speed": 30,
-    "id": "10215",
-    "types": ["steel"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Copperajah_(Pok%C3%A9mon)"
-  },
-  {
     "name": "dracozolt",
     "speciesNames": {
       "ja-Hrkt": "パッチラゴン",
@@ -31132,34 +28744,6 @@
     "spDefense": 50,
     "speed": 85,
     "id": "884",
-    "types": ["steel", "dragon"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Duraludon_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "duraludon-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ジュラルドン",
-      "ko": "두랄루돈",
-      "zh-Hant": "鋁鋼龍",
-      "fr": "Duralugon",
-      "de": "Duraludon",
-      "es": "Duraludon",
-      "it": "Duraludon",
-      "en": "Duraludon",
-      "ja": "ジュラルドン",
-      "zh-Hans": "铝钢龙"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 884,
-    "hp": 70,
-    "attack": 95,
-    "defense": 115,
-    "spAttack": 120,
-    "spDefense": 50,
-    "speed": 85,
-    "id": "10216",
     "types": ["steel", "dragon"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Duraludon_(Pok%C3%A9mon)"
   },
@@ -31486,62 +29070,6 @@
     "spDefense": 60,
     "speed": 97,
     "id": "10183",
-    "types": ["fighting", "water"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "urshifu-single-strike-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ウーラオス",
-      "ko": "우라오스",
-      "zh-Hant": "武道熊師",
-      "fr": "Shifours",
-      "de": "Wulaosu",
-      "es": "Urshifu",
-      "it": "Urshifu",
-      "en": "Urshifu",
-      "ja": "ウーラオス",
-      "zh-Hans": "武道熊师"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 892,
-    "hp": 100,
-    "attack": 130,
-    "defense": 100,
-    "spAttack": 63,
-    "spDefense": 60,
-    "speed": 97,
-    "id": "10218",
-    "types": ["fighting", "dark"],
-    "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pok%C3%A9mon)"
-  },
-  {
-    "name": "urshifu-rapid-strike-gmax",
-    "speciesNames": {
-      "ja-Hrkt": "ウーラオス",
-      "ko": "우라오스",
-      "zh-Hant": "武道熊師",
-      "fr": "Shifours",
-      "de": "Wulaosu",
-      "es": "Urshifu",
-      "it": "Urshifu",
-      "en": "Urshifu",
-      "ja": "ウーラオス",
-      "zh-Hans": "武道熊师"
-    },
-    "formNames": {
-      "en": "Gigantamax Form"
-    },
-    "number": 892,
-    "hp": 100,
-    "attack": 130,
-    "defense": 100,
-    "spAttack": 63,
-    "spDefense": 60,
-    "speed": 97,
-    "id": "10219",
     "types": ["fighting", "water"],
     "bulbapediaURL": "https://bulbapedia.bulbagarden.net/wiki/Urshifu_(Pok%C3%A9mon)"
   },
