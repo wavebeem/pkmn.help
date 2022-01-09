@@ -59,9 +59,9 @@ export default function ScreenMore(): JSX.Element {
         Questions, suggestions, or just want to say thank you? Email me at{" "}
         <a
           className="underline fg-link OutlineFocus"
-          href="mailto:brian@wavebeem.com"
+          href="mailto:pkmn@wavebeem.com"
         >
-          brian@wavebeem.com
+          pkmn@wavebeem.com
         </a>
         . Source code is available on{" "}
         <a
