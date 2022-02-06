@@ -457,6 +457,7 @@ button {
 
 .RadioCheckType {
   accent-color: black;
+  -webkit-appearance: none;
   appearance: none;
   width: 1rem;
   height: 1rem;
