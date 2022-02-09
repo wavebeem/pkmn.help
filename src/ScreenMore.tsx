@@ -56,19 +56,22 @@ export default function ScreenMore(): JSX.Element {
     <main className="pa3 center content-narrow lh-copy">
       <h2 className="lh-title f4">Contact Me</h2>
       <p>
-        Questions, suggestions, or just want to say thank you? Email me at{" "}
+        Hi, I&apos;m{" "}
+        <a
+          href="https://www.wavebeem.com"
+          className="underline fg-link OutlineFocus"
+        >
+          Brian
+        </a>{" "}
+        (they/them), and I made Pokémon Type Calculator (pkmn.help).
+      </p>
+      <p>
+        Please email your thoughts and thank-yous to{" "}
         <a
           className="underline fg-link OutlineFocus"
           href="mailto:pkmn@wavebeem.com"
         >
           pkmn@wavebeem.com
-        </a>
-        . Source code is available on{" "}
-        <a
-          href="https://github.com/wavebeem/pkmn.help"
-          className="underline fg-link OutlineFocus"
-        >
-          GitHub
         </a>
         .
       </p>
@@ -141,6 +144,18 @@ export default function ScreenMore(): JSX.Element {
         <li>Jansjo (testing, research)</li>
         <li>Several anonymous Poké Fans</li>
       </ul>
+      <div role="presentation" className="mv2 bt border3" />
+      <h2 className="lh-title f4">Open Source</h2>
+      <p>
+        Source code is available on{" "}
+        <a
+          href="https://github.com/wavebeem/pkmn.help"
+          className="underline fg-link OutlineFocus"
+        >
+          GitHub
+        </a>
+        .
+      </p>
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">Legal Info</h2>
       <p>
