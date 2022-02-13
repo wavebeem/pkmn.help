@@ -24,7 +24,7 @@ export default function ScreenDefense({
   const types = [...new Set(typesFromString(search.get("types") || ""))];
 
   function createParams(types: Type[]): string {
-    // types = [...new Set(types)];
+    types = [...new Set(types)];
     const params = new URLSearchParams();
     if (types.length >= 0) {
       params.set("types", types.join(" "));
