@@ -1,8 +1,9 @@
 import * as React from "react";
 import { useHistory } from "react-router-dom";
-import { CoverageType, Type, typesFromString } from "./data";
+import { CoverageType, removeNones, Type, typesFromString } from "./data";
 import * as Matchups from "./Matchups";
 import TypeSelector from "./TypeSelector";
+import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
 import { useSearch } from "./useSearch";
 
@@ -20,19 +21,13 @@ export default function ScreenDefense({
   const search = useSearch();
   const history = useHistory();
 
-  const [type1 = Type.NORMAL, type2 = Type.NONE] = new Set(
-    typesFromString(search.get("types") || "")
-  );
+  const types = [...new Set(typesFromString(search.get("types") || ""))];
 
   function createParams(types: Type[]): string {
-    types = [...new Set(types)];
+    // types = [...new Set(types)];
     const params = new URLSearchParams();
     if (types.length >= 0) {
-      if (types[1] === Type.NONE) {
-        params.set("types", types[0]);
-      } else {
-        params.set("types", types.join(" "));
-      }
+      params.set("types", types.join(" "));
     }
     return "?" + params;
   }
@@ -42,14 +37,14 @@ export default function ScreenDefense({
   }
 
   function updateType1(t: Type) {
-    updateTypes([t, type2]);
+    updateTypes(removeNones(updateArrayAt(types, 0, t)));
   }
 
   function updateType2(t: Type) {
-    updateTypes([type1, t]);
+    updateTypes(removeNones(updateArrayAt(types, 1, t)));
   }
 
-  const params = createParams([type1, type2]);
+  const params = createParams(types);
   React.useEffect(() => {
     setDefenseParams(params);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -62,7 +57,7 @@ export default function ScreenDefense({
         <h2 className={classH2}>Choose Primary Type</h2>
         <TypeSelector
           name="primary"
-          value={type1}
+          value={types[0]}
           onChange={updateType1}
           disabledTypes={[]}
           includeNone={false}
@@ -70,17 +65,16 @@ export default function ScreenDefense({
         <h2 className={`${classH2} mt4`}>Choose Secondary Type</h2>
         <TypeSelector
           name="secondary"
-          value={type2}
+          value={types[1] || Type.NONE}
           onChange={updateType2}
-          disabledTypes={[type1]}
+          disabledTypes={[types[0]]}
           includeNone={true}
         />
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups.Defense
-          type1={type1}
-          type2={type2}
+          types={types}
           fallbackCoverageTypes={fallbackCoverageTypes}
         />
       </div>

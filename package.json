@@ -12,6 +12,7 @@
     "upgrade": "npm-check -u",
     "start": "vite",
     "prebuild": "rimraf dist",
+    "typecheck": "tsc -p .",
     "build": "tsc && vite build --mode production",
     "test-sw": "npm run -s build && npx serve -s dist",
     "preview": "vite preview",

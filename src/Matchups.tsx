@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import {
   CoverageType,
   defensiveMatchups,
-  Effectiveness,
   GroupedMatchups,
   offensiveMatchups,
   Type,
@@ -105,47 +104,30 @@ function Matchups({
           </div>
         </div>
       ) : null}
-      <Section
-        title={formatTitle("4×")}
-        types={matchups.typesFor(Effectiveness.QUADRUPLE)}
-      />
-      <Section
-        title={formatTitle("2×")}
-        types={matchups.typesFor(Effectiveness.DOUBLE)}
-      />
-      <Section
-        title={formatTitle("1×")}
-        types={matchups.typesFor(Effectiveness.REGULAR)}
-      />
-      <Section
-        title={formatTitle("½×")}
-        types={matchups.typesFor(Effectiveness.HALF)}
-      />
-      <Section
-        title={formatTitle("¼×")}
-        types={matchups.typesFor(Effectiveness.QUARTER)}
-      />
-      <Section
-        title={formatTitle("0×")}
-        types={matchups.typesFor(Effectiveness.ZERO)}
-      />
+      <Section title={formatTitle("6×")} types={matchups.typesFor(6)} />
+      <Section title={formatTitle("4×")} types={matchups.typesFor(4)} />
+      <Section title={formatTitle("2×")} types={matchups.typesFor(2)} />
+      <Section title={formatTitle("1×")} types={matchups.typesFor(1)} />
+      <Section title={formatTitle("½×")} types={matchups.typesFor(1 / 2)} />
+      <Section title={formatTitle("¼×")} types={matchups.typesFor(1 / 4)} />
+      <Section title={formatTitle("⅙×")} types={matchups.typesFor(1 / 6)} />
+      <Section title={formatTitle("0×")} types={matchups.typesFor(0)} />
     </div>
   );
 }
 
 export interface DefenseProps {
-  type1: Type;
-  type2: Type;
+  types: Type[];
   fallbackCoverageTypes: CoverageType[];
 }
 
-export function Defense({ type1, type2, fallbackCoverageTypes }: DefenseProps) {
+export function Defense({ types, fallbackCoverageTypes }: DefenseProps) {
   return (
     <Matchups
       kind="defense"
-      types={[type1, type2]}
+      types={types}
       formatTitle={(x) => `Takes ${x} From`}
-      matchups={defensiveMatchups(type1, type2)}
+      matchups={defensiveMatchups(types)}
       fallbackCoverageTypes={fallbackCoverageTypes}
       isLoading={false}
     />
