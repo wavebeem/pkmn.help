@@ -104,17 +104,31 @@ function Matchups({
           </div>
         </div>
       ) : null}
-      <Section title={formatTitle("6×")} types={matchups.typesFor(6)} />
-      <Section title={formatTitle("4×")} types={matchups.typesFor(4)} />
-      <Section title={formatTitle("2×")} types={matchups.typesFor(2)} />
-      <Section title={formatTitle("1×")} types={matchups.typesFor(1)} />
-      <Section title={formatTitle("½×")} types={matchups.typesFor(1 / 2)} />
-      <Section title={formatTitle("¼×")} types={matchups.typesFor(1 / 4)} />
-      <Section title={formatTitle("⅙×")} types={matchups.typesFor(1 / 6)} />
-      <Section title={formatTitle("0×")} types={matchups.typesFor(0)} />
+      {effectivenessLevels.map((eff) => {
+        return (
+          <Section
+            key={eff}
+            title={formatTitle(displayEffectiveness[eff])}
+            types={matchups.typesFor(eff)}
+          />
+        );
+      })}
     </div>
   );
 }
+
+const effectivenessLevels = [8, 4, 2, 1, 1 / 2, 1 / 4, 1 / 8, 0];
+
+const displayEffectiveness = {
+  [8]: "8×",
+  [4]: "4×",
+  [2]: "2×",
+  [1]: "1×",
+  [1 / 2]: "½×",
+  [1 / 4]: "¼×",
+  [1 / 8]: "⅛×",
+  [0]: "0×",
+};
 
 export interface DefenseProps {
   types: Type[];

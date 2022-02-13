@@ -36,12 +36,10 @@ export default function ScreenDefense({
     history.replace({ search: createParams(types) });
   }
 
-  function updateType1(t: Type) {
-    updateTypes(removeNones(updateArrayAt(types, 0, t)));
-  }
-
-  function updateType2(t: Type) {
-    updateTypes(removeNones(updateArrayAt(types, 1, t)));
+  function updateTypeAt(index: number): (t: Type) => void {
+    return (t: Type) => {
+      updateTypes(removeNones(updateArrayAt(types, index, t)));
+    };
   }
 
   const params = createParams(types);
@@ -58,7 +56,7 @@ export default function ScreenDefense({
         <TypeSelector
           name="primary"
           value={types[0]}
-          onChange={updateType1}
+          onChange={updateTypeAt(0)}
           disabledTypes={[]}
           includeNone={false}
         />
@@ -66,8 +64,16 @@ export default function ScreenDefense({
         <TypeSelector
           name="secondary"
           value={types[1] || Type.NONE}
-          onChange={updateType2}
-          disabledTypes={[types[0]]}
+          onChange={updateTypeAt(1)}
+          disabledTypes={types.slice(0, 1)}
+          includeNone={true}
+        />
+        <h2 className={`${classH2} mt4`}>Choose Tertiary Type</h2>
+        <TypeSelector
+          name="tertiary"
+          value={types[2] || Type.NONE}
+          onChange={updateTypeAt(2)}
+          disabledTypes={types.slice(0, 2)}
           includeNone={true}
         />
       </div>
