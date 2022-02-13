@@ -158,7 +158,6 @@ export function matchupFor(defenseTypes: Type[], offenseType: Type): number {
     .map((t) => matchupForPair(t, offenseType))
     .reduce(multiply, 1);
 }
-Object.assign(window, { matchupFor, matchupForPair });
 
 export class Matchup {
   constructor(public type: Type, public effectiveness: number) {}
