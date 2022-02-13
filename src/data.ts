@@ -43,7 +43,7 @@ function isType(str: string): str is Type {
 }
 
 export function typesFromString(str: string): Type[] {
-  return str.split(/\s+/).filter(isType);
+  return [...new Set(str.split(/\s+/).filter(isType))];
 }
 
 function isTypeOrNone(str: string): str is Type {

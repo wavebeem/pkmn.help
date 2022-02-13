@@ -21,7 +21,7 @@ export default function ScreenDefense({
   const search = useSearch();
   const history = useHistory();
 
-  const types = [...new Set(typesFromString(search.get("types") || ""))];
+  const types = typesFromString(search.get("types") || "normal");
 
   function createParams(types: Type[]): string {
     types = [...new Set(types)];
