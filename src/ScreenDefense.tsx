@@ -6,6 +6,7 @@ import TypeSelector from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
 import { useSearch } from "./useSearch";
+import { useTypeCount } from "./useTypeCount";
 
 interface DefenseProps {
   setDefenseParams: (params: string) => void;
@@ -21,7 +22,10 @@ export default function ScreenDefense({
   const search = useSearch();
   const history = useHistory();
 
-  const types = typesFromString(search.get("types") || "normal");
+  const [typeCount] = useTypeCount();
+
+  const typesString = search.get("types") || "normal";
+  const types = typesFromString(typesString).slice(0, Number(typeCount));
 
   function createParams(types: Type[]): string {
     types = [...new Set(types)];
@@ -48,11 +52,11 @@ export default function ScreenDefense({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params]);
 
-  const classH2 = "tc f5 mv3";
+  const classH2 = "tc f5 mb2 mt4";
   return (
     <main className="ph3 pt1 pb4 content-wide center">
       <div className="dib w-50-ns w-100 v-top">
-        <h2 className={classH2}>Choose Primary Type</h2>
+        <h2 className={classH2}>Choose First Type</h2>
         <TypeSelector
           name="primary"
           value={types[0]}
@@ -60,7 +64,7 @@ export default function ScreenDefense({
           disabledTypes={[]}
           includeNone={false}
         />
-        <h2 className={`${classH2} mt4`}>Choose Secondary Type</h2>
+        <h2 className={classH2}>Choose Second Type</h2>
         <TypeSelector
           name="secondary"
           value={types[1] || Type.NONE}
@@ -68,14 +72,18 @@ export default function ScreenDefense({
           disabledTypes={types.slice(0, 1)}
           includeNone={true}
         />
-        <h2 className={`${classH2} mt4`}>Choose Tertiary Type</h2>
-        <TypeSelector
-          name="tertiary"
-          value={types[2] || Type.NONE}
-          onChange={updateTypeAt(2)}
-          disabledTypes={types.slice(0, 2)}
-          includeNone={true}
-        />
+        {Number(typeCount) === 3 && (
+          <>
+            <h2 className={classH2}>Choose Third Type</h2>
+            <TypeSelector
+              name="third"
+              value={types[2] || Type.NONE}
+              onChange={updateTypeAt(2)}
+              disabledTypes={types.slice(0, 2)}
+              includeNone={true}
+            />
+          </>
+        )}
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
