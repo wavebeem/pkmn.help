@@ -54,7 +54,7 @@ export default function ScreenDefense({
 
   const classH2 = "tc f5 mb2 mt4";
   return (
-    <main className="ph3 pt1 pb4 content-wide center">
+    <main className="ph3 pt0 pb4 content-wide center">
       <div className="dib w-50-ns w-100 v-top">
         <h2 className={classH2}>Choose First Type</h2>
         <TypeSelector
