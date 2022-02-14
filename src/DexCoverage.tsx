@@ -1,5 +1,5 @@
 import * as React from "react";
-import { CoverageType, Effectiveness, matchupFor, Type } from "./data";
+import { CoverageType, matchupFor, Type } from "./data";
 import { PercentBar } from "./PercentBar";
 
 interface DexCoverageProps {
@@ -13,10 +13,10 @@ const DexCoverage: React.FC<DexCoverageProps> = ({
   types,
   isLoading,
 }) => {
-  const count = coverageTypes.filter(({ type1, type2 }) => {
-    const matchups = types.map((t) => matchupFor(type1, type2, t));
+  const count = coverageTypes.filter((ct) => {
+    const matchups = types.map((t) => matchupFor(ct.types, t));
     return matchups.some((effectiveness) => {
-      return effectiveness > Effectiveness.REGULAR;
+      return effectiveness > 1;
     });
   }).length;
   const total = coverageTypes.length;
@@ -40,6 +40,5 @@ const DexCoverage: React.FC<DexCoverageProps> = ({
     </div>
   );
 };
-
 
 export default DexCoverage;

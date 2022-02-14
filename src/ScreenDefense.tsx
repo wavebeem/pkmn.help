@@ -1,10 +1,12 @@
 import * as React from "react";
 import { useHistory } from "react-router-dom";
-import { CoverageType, Type, typesFromString } from "./data";
+import { CoverageType, removeNones, Type, typesFromString } from "./data";
 import * as Matchups from "./Matchups";
 import TypeSelector from "./TypeSelector";
+import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
 import { useSearch } from "./useSearch";
+import { useTypeCount } from "./useTypeCount";
 
 interface DefenseProps {
   setDefenseParams: (params: string) => void;
@@ -20,19 +22,16 @@ export default function ScreenDefense({
   const search = useSearch();
   const history = useHistory();
 
-  const [type1 = Type.NORMAL, type2 = Type.NONE] = new Set(
-    typesFromString(search.get("types") || "")
-  );
+  const [typeCount] = useTypeCount();
+
+  const typesString = search.get("types") || "normal";
+  const types = typesFromString(typesString).slice(0, Number(typeCount));
 
   function createParams(types: Type[]): string {
     types = [...new Set(types)];
     const params = new URLSearchParams();
     if (types.length >= 0) {
-      if (types[1] === Type.NONE) {
-        params.set("types", types[0]);
-      } else {
-        params.set("types", types.join(" "));
-      }
+      params.set("types", types.join(" "));
     }
     return "?" + params;
   }
@@ -41,46 +40,55 @@ export default function ScreenDefense({
     history.replace({ search: createParams(types) });
   }
 
-  function updateType1(t: Type) {
-    updateTypes([t, type2]);
+  function updateTypeAt(index: number): (t: Type) => void {
+    return (t: Type) => {
+      updateTypes(removeNones(updateArrayAt(types, index, t)));
+    };
   }
 
-  function updateType2(t: Type) {
-    updateTypes([type1, t]);
-  }
-
-  const params = createParams([type1, type2]);
+  const params = createParams(types);
   React.useEffect(() => {
     setDefenseParams(params);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params]);
 
-  const classH2 = "tc f5 mv3";
+  const classH2 = "tc f5 mb2 mt4";
   return (
-    <main className="ph3 pt1 pb4 content-wide center">
+    <main className="ph3 pt0 pb4 content-wide center">
       <div className="dib w-50-ns w-100 v-top">
-        <h2 className={classH2}>Choose Primary Type</h2>
+        <h2 className={classH2}>Choose First Type</h2>
         <TypeSelector
           name="primary"
-          value={type1}
-          onChange={updateType1}
+          value={types[0]}
+          onChange={updateTypeAt(0)}
           disabledTypes={[]}
           includeNone={false}
         />
-        <h2 className={`${classH2} mt4`}>Choose Secondary Type</h2>
+        <h2 className={classH2}>Choose Second Type</h2>
         <TypeSelector
           name="secondary"
-          value={type2}
-          onChange={updateType2}
-          disabledTypes={[type1]}
+          value={types[1] || Type.NONE}
+          onChange={updateTypeAt(1)}
+          disabledTypes={types.slice(0, 1)}
           includeNone={true}
         />
+        {Number(typeCount) === 3 && (
+          <>
+            <h2 className={classH2}>Choose Third Type</h2>
+            <TypeSelector
+              name="third"
+              value={types[2] || Type.NONE}
+              onChange={updateTypeAt(2)}
+              disabledTypes={types.slice(0, 2)}
+              includeNone={true}
+            />
+          </>
+        )}
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups.Defense
-          type1={type1}
-          type2={type2}
+          types={types}
           fallbackCoverageTypes={fallbackCoverageTypes}
         />
       </div>
