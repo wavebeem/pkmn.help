@@ -6,6 +6,7 @@ import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Button } from "./Button";
 import { CoverageType, Pokemon } from "./data";
+import { parenthesize } from "./parenthesize";
 import ScreenDefense from "./ScreenDefense";
 import ScreenMore from "./ScreenMore";
 import ScreenOffense from "./ScreenOffense";
@@ -13,6 +14,7 @@ import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
+import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
 
@@ -53,6 +55,7 @@ export default function App() {
   >([]);
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
   const [attemptTime, setAttemptTime] = React.useState(Date.now());
+  const [language] = useLanguage();
   React.useEffect(() => {
     async function load() {
       const filename = "data-pkmn.json";
@@ -60,13 +63,19 @@ export default function App() {
         const bigURL = new URL(filename, PUBLIC_PATH).href;
         const resp = await fetch(bigURL);
         const allPokemon: Pokemon[] = await resp.json();
-        const fallbackCoverageTypes = allPokemon.map<CoverageType>((pkmn) => {
-          return {
-            number: String(pkmn.number),
-            name: pkmn.name,
-            types: pkmn.types,
-          };
-        });
+        const fallbackCoverageTypes = allPokemon.map<CoverageType>(
+          (pkmn, i) => {
+            const speciesName = pkmn.speciesNames[language];
+            const formName = pkmn.formNames[language];
+            const name = [speciesName, parenthesize(formName)]
+              .filter((s) => s)
+              .join(" ");
+            const number = String(pkmn.number);
+            const types = pkmn.types;
+            if (i === 0) console.log({ number, name, types });
+            return { number, name, types };
+          }
+        );
         setIsLoading(false);
         setCoverageTypes(fallbackCoverageTypes);
         setFallbackCoverageTypes(fallbackCoverageTypes);

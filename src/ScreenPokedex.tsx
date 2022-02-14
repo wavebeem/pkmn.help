@@ -7,6 +7,7 @@ import { cssType } from "./cssType";
 import { Pokemon, Type, typesOrNoneFromString } from "./data";
 import { MonsterImage } from "./MonsterImage";
 import Paginator from "./Paginator";
+import { parenthesize } from "./parenthesize";
 import { pickTranslation } from "./pickTranslation";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
@@ -221,11 +222,4 @@ export default function ScreenPokedex({
       )}
     </main>
   );
-}
-
-function parenthesize(string?: string): string {
-  if (string) {
-    return `(${string})`;
-  }
-  return "";
 }
