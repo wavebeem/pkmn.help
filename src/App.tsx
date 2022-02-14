@@ -6,7 +6,7 @@ import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Button } from "./Button";
 import { CoverageType, Pokemon } from "./data";
-import { parenthesize } from "./parenthesize";
+import { formatPokemonName } from "./formatPokemonName";
 import ScreenDefense from "./ScreenDefense";
 import ScreenMore from "./ScreenMore";
 import ScreenOffense from "./ScreenOffense";
@@ -63,19 +63,15 @@ export default function App() {
         const bigURL = new URL(filename, PUBLIC_PATH).href;
         const resp = await fetch(bigURL);
         const allPokemon: Pokemon[] = await resp.json();
-        const fallbackCoverageTypes = allPokemon.map<CoverageType>(
-          (pkmn, i) => {
-            const speciesName = pkmn.speciesNames[language];
-            const formName = pkmn.formNames[language];
-            const name = [speciesName, parenthesize(formName)]
-              .filter((s) => s)
-              .join(" ");
-            const number = String(pkmn.number);
-            const types = pkmn.types;
-            if (i === 0) console.log({ number, name, types });
-            return { number, name, types };
-          }
-        );
+        const fallbackCoverageTypes = allPokemon.map<CoverageType>((pkmn) => {
+          const name = formatPokemonName({
+            speciesName: pkmn.speciesNames[language],
+            formName: pkmn.formNames[language],
+          });
+          const number = String(pkmn.number);
+          const types = pkmn.types;
+          return { number, name, types };
+        });
         setIsLoading(false);
         setCoverageTypes(fallbackCoverageTypes);
         setFallbackCoverageTypes(fallbackCoverageTypes);

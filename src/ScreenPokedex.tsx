@@ -5,9 +5,9 @@ import { Link, useHistory } from "react-router-dom";
 import { useDebounce } from "use-debounce";
 import { cssType } from "./cssType";
 import { Pokemon, Type, typesOrNoneFromString } from "./data";
+import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import Paginator from "./Paginator";
-import { parenthesize } from "./parenthesize";
 import { pickTranslation } from "./pickTranslation";
 import Search from "./Search";
 import StatsTable from "./StatsTable";
@@ -50,6 +50,7 @@ function Monster({ pokemon }: MonsterProps) {
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
   const speciesName = pokemon.speciesNames[language];
   const formName = pokemon.formNames[language];
+  const pokemonName = formatPokemonName({ speciesName, formName });
   return (
     <div className={classNames("fg1 pv3", "flex-ns items-center", "Monster")}>
       <div className="flex flex-column">
@@ -86,7 +87,7 @@ function Monster({ pokemon }: MonsterProps) {
             &nbsp;&bull;&nbsp;
           </span>
           <Link
-            aria-label={`Offense for ${speciesName} ${parenthesize(formName)}`}
+            aria-label={`Offense for ${pokemonName}`}
             className="underline fg-link OutlineFocus"
             to={`/offense/?${params}#matchup-offense`}
           >
@@ -96,7 +97,7 @@ function Monster({ pokemon }: MonsterProps) {
             &nbsp;&bull;&nbsp;
           </span>
           <Link
-            aria-label={`Defense for ${speciesName} ${parenthesize(formName)}`}
+            aria-label={`Defense for ${pokemonName}`}
             className="underline fg-link OutlineFocus"
             to={`/defense/?${params}#matchup-defense`}
           >
