@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { CoverageType, objectToCoverageType, stringToType, Type } from "./data";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
+import { useTypeCount } from "./useTypeCount";
 
 const buttonClasses = classNames(
   "no-underline",
@@ -32,6 +33,7 @@ export default function ScreenWeaknessCoverage({
 }: WeaknessCoverageProps) {
   const [lastUpdated, setLastUpdated] = React.useState(new Date());
   const [statusText, setStatusText] = React.useState("");
+  const [typeCount] = useTypeCount();
   const statusRef = React.useRef<HTMLParagraphElement | null>(null);
 
   React.useEffect(() => {
@@ -41,12 +43,19 @@ export default function ScreenWeaknessCoverage({
   }, [lastUpdated]);
 
   function saveCSV() {
+    const fields = ["Number", "Name", "Type 1", "Type 2"];
+    if (Number(typeCount) === 3) {
+      fields.push("Type 3");
+    }
     const csv = Papa.unparse(
       {
-        fields: ["Number", "Name", "Type 1", "Type 2"],
+        fields,
         data: fallbackCoverageTypes.map((t) => {
-          const type2 = t.type2 === Type.NONE ? "" : t.type2;
-          return [t.number, t.name, t.type1, type2];
+          const data = [t.number, t.name, t.types[0], t.types[1] || ""];
+          if (Number(typeCount) === 3) {
+            data.push(t.types[2] || "");
+          }
+          return data;
         }),
       },
       {
@@ -78,13 +87,14 @@ export default function ScreenWeaknessCoverage({
           "name",
           "type1",
           "type2",
+          "type3",
         ]);
       },
       transform: (value, field) => {
         if (field === "type1") {
           return stringToType(value, Type.NORMAL);
         }
-        if (field === "type2") {
+        if (field === "type2" || field === "type3") {
           return stringToType(value, Type.NONE);
         }
         return value;

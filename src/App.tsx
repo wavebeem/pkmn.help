@@ -5,7 +5,7 @@ import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Button } from "./Button";
-import { CoverageType, Pokemon, Type } from "./data";
+import { CoverageType, Pokemon } from "./data";
 import ScreenDefense from "./ScreenDefense";
 import ScreenMore from "./ScreenMore";
 import ScreenOffense from "./ScreenOffense";
@@ -64,8 +64,7 @@ export default function App() {
           return {
             number: String(pkmn.number),
             name: pkmn.name,
-            type1: pkmn.types[0],
-            type2: pkmn.types[1] ?? Type.NONE,
+            types: pkmn.types,
           };
         });
         setIsLoading(false);

@@ -13,8 +13,8 @@ const DexCoverage: React.FC<DexCoverageProps> = ({
   types,
   isLoading,
 }) => {
-  const count = coverageTypes.filter(({ type1, type2 }) => {
-    const matchups = types.map((t) => matchupFor([type1, type2], t));
+  const count = coverageTypes.filter((ct) => {
+    const matchups = types.map((t) => matchupFor(ct.types, t));
     return matchups.some((effectiveness) => {
       return effectiveness > 1;
     });

@@ -113,18 +113,23 @@ function keyForTypes(t1: Type, t2: Type) {
 export interface CoverageType {
   number: string;
   name: string;
-  type1: Type;
-  type2: Type;
+  types: Type[];
 }
 
 export function objectToCoverageType(obj: unknown): CoverageType {
-  const ct = obj as Partial<CoverageType>;
-  return {
-    number: ct.number || "",
-    name: ct.name || "",
-    type1: stringToType(ct.type1 || "", Type.NORMAL),
-    type2: stringToType(ct.type2 || "", Type.NONE),
-  };
+  const {
+    number = "",
+    name = "",
+    type1 = "",
+    type2 = "",
+    type3 = "",
+  } = obj as Record<string, string | undefined>;
+  const types = removeNones(
+    [type1, type2, type3]
+      .filter((t) => t)
+      .map((t) => stringToType(t, Type.NONE))
+  );
+  return { number, name, types };
 }
 
 const pairs = rawData.flatMap((row, i) => {
