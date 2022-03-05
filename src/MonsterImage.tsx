@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import * as React from "react";
-import { cssType } from "./cssType";
+import { typeColor } from "./colors";
 import { Type } from "./data";
 import { getImage } from "./getImage";
 
@@ -24,9 +24,10 @@ export function MonsterImage({
   }, []);
   return (
     <div
-      className={classNames(
-        state === "errored" && ["MonsterImage br-pill", cssType(types[0])]
-      )}
+      className={classNames(state === "errored" && ["MonsterImage br-pill"])}
+      style={{
+        ["--type-color" as any]: typeColor(types[0]),
+      }}
     >
       <img
         src={getImage(pokemonID)}

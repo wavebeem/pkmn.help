@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
+import { typeColor } from "./colors";
 import { Type, types, typesOrNone } from "./data";
-import { cssType } from "./cssType";
 
 const buttonInnerHeight = "1.5rem";
 
@@ -48,9 +48,11 @@ export default function TypeSelector({
               "ttc",
               "select-none",
               "SimpleFocus",
-              "active-squish",
-              cssType(type)
+              "active-squish"
             )}
+            style={{
+              ["--type-color" as any]: typeColor(type),
+            }}
           >
             <span className="flex flex-row items-center justify-center">
               <input
@@ -59,7 +61,6 @@ export default function TypeSelector({
                 checked={isSelected}
                 disabled={isDisabled}
                 className={classNames(
-                  cssType(type),
                   "db RadioCheckType",
                   {
                     disabled: "border1 o-50",
@@ -69,6 +70,9 @@ export default function TypeSelector({
                   "ba br1",
                   "NoFocus"
                 )}
+                style={{
+                  ["--type-color" as any]: typeColor(type),
+                }}
                 onChange={() => {
                   onChange(type);
                 }}

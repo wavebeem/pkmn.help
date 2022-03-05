@@ -3,7 +3,7 @@ import matchSorter from "match-sorter";
 import * as React from "react";
 import { Link, useHistory } from "react-router-dom";
 import { useDebounce } from "use-debounce";
-import { cssType } from "./cssType";
+import { typeColor, typeColorBG, typeColorBorder } from "./colors";
 import { Pokemon, Type, typesOrNoneFromString } from "./data";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
@@ -26,16 +26,26 @@ function MonsterType({ type, index }: MonsterTypeProps) {
   return (
     <div
       className={classNames(
-        cssType(type),
         "type-bg",
         "ttc tc flex",
         "lh-title b",
         "br-pill ba border-vibrant f6",
         { ml1: index > 0 }
       )}
-      style={{ padding: 2 }}
+      style={{
+        padding: 2,
+        ["--type-color" as any]: typeColor(type),
+      }}
     >
-      <div className="bg-black-40 white br-pill ba b--black-10 ph2">{type}</div>
+      <div
+        className="white br-pill ba b--black-10 ph2"
+        style={{
+          background: typeColorBG(type),
+          borderColor: typeColorBorder(type),
+        }}
+      >
+        {type}
+      </div>
     </div>
   );
 }
