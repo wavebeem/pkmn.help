@@ -64,13 +64,11 @@ const themes: Theme[] = [
 ];
 
 export default function ScreenMore(): JSX.Element {
-  // const { t, ready } = useTranslation(undefined, { useSuspense: false });
-  const { t, ready } = useTranslation();
+  const { t } = useTranslation();
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();
   const [typeCount, setTypeCount] = useTypeCount();
   const year = new Date().getFullYear();
-  console.log({ ready }, t("hello"));
   return (
     <main className="pa3 center content-narrow lh-copy">
       <h2 className="lh-title f4">{t("contact-me")}</h2>
