@@ -14,7 +14,7 @@ export default defineConfig((env) => {
       reactRefresh(),
       VitePWA({
         mode: env.mode !== "development" ? "production" : "development",
-        includeAssets: ["data-pkmn.json"],
+        includeAssets: ["data-pkmn.json", "locales/*.json"],
       }),
     ],
   };
