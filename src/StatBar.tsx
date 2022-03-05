@@ -1,7 +1,6 @@
-import classNames from "classnames";
 import * as React from "react";
+import { typeColor } from "./colors";
 import { Type } from "./data";
-import { cssType } from "./cssType";
 
 export interface StatBarProps {
   value: number;
@@ -16,8 +15,9 @@ export default function StatBar({ value, max, type }: StatBarProps) {
         style={{
           width: (value / max) * 100 + "%",
           background: "var(--type-color)",
+          ["--type-color" as any]: typeColor(type),
         }}
-        className={classNames(cssType(type), "Bar-Fill")}
+        className="Bar-Fill"
       ></div>
     </div>
   );

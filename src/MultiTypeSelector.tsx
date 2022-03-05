@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
+import { typeColor } from "./colors";
 import { Type, types } from "./data";
-import { cssType } from "./cssType";
 
 const buttonInnerHeight = "1.5rem";
 
@@ -36,16 +36,17 @@ export default function MultiTypeSelector({
               "ttc",
               "select-none",
               "SimpleFocus",
-              "active-squish",
-              cssType(type)
+              "active-squish"
             )}
+            style={{
+              ["--type-color" as any]: typeColor(type),
+            }}
           >
             <span className="flex flex-row items-center justify-center">
               <input
                 type="checkbox"
                 checked={isChecked}
                 className={classNames(
-                  cssType(type),
                   "db RadioCheckType",
                   {
                     selected: "b--black type-bg",
@@ -54,6 +55,9 @@ export default function MultiTypeSelector({
                   "ba br1",
                   "NoFocus"
                 )}
+                style={{
+                  ["--type-color" as any]: typeColor(type),
+                }}
                 onChange={() => {
                   const types = new Set(value);
                   if (isChecked) {

@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 import { Link } from "react-router-dom";
+import { typeColor, typeColorBG, typeColorBorder } from "./colors";
 import {
   CoverageType,
   defensiveMatchups,
@@ -9,7 +10,6 @@ import {
   Type,
 } from "./data";
 import DexCoverage from "./DexCoverage";
-import { cssType } from "./cssType";
 
 interface BadgeProps {
   type: Type;
@@ -20,14 +20,26 @@ function Badge({ type }: BadgeProps) {
     <div
       className={classNames(
         "type-bg",
-        cssType(type),
         "ba border-vibrant",
         "br2",
         "ttc tc b f5 lh-title"
       )}
-      style={{ width: 80, margin: "0.125rem", padding: 2 }}
+      style={{
+        width: 80,
+        margin: "0.125rem",
+        padding: 2,
+        ["--type-color" as any]: typeColor(type),
+      }}
     >
-      <div className="bg-black-40 br1 ba b--black-10 white">{type}</div>
+      <div
+        className="br1 ba b--transparent white"
+        style={{
+          background: typeColorBG(type),
+          borderColor: typeColorBorder(type),
+        }}
+      >
+        {type}
+      </div>
     </div>
   );
 }

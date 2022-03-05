@@ -1,4 +1,10 @@
-export const typeColors = {
+import { colord, extend } from "colord";
+import a11yPlugin from "colord/plugins/a11y";
+import lchPlugin from "colord/plugins/lch";
+
+extend([a11yPlugin, lchPlugin]);
+
+const typeColors = {
   fire: "#ff9d54",
   water: "#4f92d6",
   grass: "#65bd55",
@@ -20,7 +26,55 @@ export const typeColors = {
   none: "#808080",
 } as const;
 
-export function typeColorBG(key: keyof typeof typeColors): string {
-  // TODO
-  return typeColors.fire;
+export function typeColor(key: keyof typeof typeColors): string {
+  return typeColors[key];
 }
+
+export function typeColorBG(key: keyof typeof typeColors): string {
+  return darken({
+    bg: typeColors[key],
+    fg: "#fff",
+    contrast: 4.5,
+    min: 10,
+  });
+}
+
+export function typeColorBorder(key: keyof typeof typeColors): string {
+  return darken({
+    bg: typeColors[key],
+    fg: "#fff",
+    contrast: 4.5,
+    min: 15,
+  });
+}
+
+function darken({
+  bg,
+  fg,
+  min,
+  contrast,
+}: {
+  bg: string;
+  fg: string;
+  min: number;
+  contrast: number;
+}): string {
+  const key = [bg, fg, min, contrast].join(" ");
+  let val = cache.get(key);
+  if (val) {
+    return val;
+  }
+  const lch = colord(bg).toLch();
+  const { l } = lch;
+  while (colord(lch).contrast(fg) < contrast) {
+    lch.l--;
+  }
+  if (Math.abs(lch.l - l) < min) {
+    lch.l = l - min;
+  }
+  val = colord(lch).toHex();
+  cache.set(key, val);
+  return val;
+}
+
+const cache = new Map<string, string>();
