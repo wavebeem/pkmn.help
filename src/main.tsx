@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import "tachyons";
 import App from "./App";
 import ErrorBoundary from "./ErrorBoundary";
+import "./i18n";
 import ScreenError from "./ScreenError";
 import "./style.css";
 

@@ -179,61 +179,63 @@ export default function App() {
             )}
           </div>
         )}
-        <Switch>
-          <Route
-            exact
-            path="/offense/coverage/"
-            render={() => (
-              <ScreenWeaknessCoverage
-                setCoverageTypes={setCoverageTypes}
-                offenseParams={offenseParams}
-                fallbackCoverageTypes={fallbackCoverageTypes}
-                isLoading={isLoading}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/offense/"
-            render={() => (
-              <ScreenOffense
-                coverageTypes={coverageTypes}
-                setCoverageTypes={setCoverageTypes}
-                setOffenseParams={setOffenseParams}
-                fallbackCoverageTypes={fallbackCoverageTypes}
-                isLoading={isLoading}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/defense/"
-            render={() => (
-              <ScreenDefense
-                setDefenseParams={setDefenseParams}
-                fallbackCoverageTypes={fallbackCoverageTypes}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/pokedex/help/"
-            render={() => <ScreenPokedexHelp pokedexParams={pokedexParams} />}
-          />
-          <Route
-            exact
-            path="/pokedex/"
-            render={() => (
-              <ScreenPokedex
-                setPokedexParams={setPokedexParams}
-                allPokemon={AllPokemon}
-                isLoading={isLoading}
-              />
-            )}
-          />
-          <Route exact path="/more/" component={ScreenMore} />
-          <Redirect to="/defense/" />
-        </Switch>
+        <React.Suspense fallback={<div className="Spinner center mt4 f2" />}>
+          <Switch>
+            <Route
+              exact
+              path="/offense/coverage/"
+              render={() => (
+                <ScreenWeaknessCoverage
+                  setCoverageTypes={setCoverageTypes}
+                  offenseParams={offenseParams}
+                  fallbackCoverageTypes={fallbackCoverageTypes}
+                  isLoading={isLoading}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/offense/"
+              render={() => (
+                <ScreenOffense
+                  coverageTypes={coverageTypes}
+                  setCoverageTypes={setCoverageTypes}
+                  setOffenseParams={setOffenseParams}
+                  fallbackCoverageTypes={fallbackCoverageTypes}
+                  isLoading={isLoading}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/defense/"
+              render={() => (
+                <ScreenDefense
+                  setDefenseParams={setDefenseParams}
+                  fallbackCoverageTypes={fallbackCoverageTypes}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/pokedex/help/"
+              render={() => <ScreenPokedexHelp pokedexParams={pokedexParams} />}
+            />
+            <Route
+              exact
+              path="/pokedex/"
+              render={() => (
+                <ScreenPokedex
+                  setPokedexParams={setPokedexParams}
+                  allPokemon={AllPokemon}
+                  isLoading={isLoading}
+                />
+              )}
+            />
+            <Route exact path="/more/" component={ScreenMore} />
+            <Redirect to="/defense/" />
+          </Switch>
+        </React.Suspense>
       </div>
     </HelmetProvider>
   );
