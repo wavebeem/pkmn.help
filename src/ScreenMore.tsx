@@ -73,7 +73,7 @@ export default function ScreenMore(): JSX.Element {
   console.log({ ready }, t("hello"));
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f4">{t("contact_me")}</h2>
+      <h2 className="lh-title f4">{t("contact-me")}</h2>
       <p>
         Hi, I&apos;m{" "}
         <a
