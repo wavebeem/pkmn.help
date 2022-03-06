@@ -76,10 +76,10 @@ export default function ScreenMore(): JSX.Element {
 
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f4">{t("more.contactMe")}</h2>
+      <h2 className="lh-title f4">{t("more.contact.heading")}</h2>
       <p>
         <Trans
-          i18nKey="more.whoIAm"
+          i18nKey="more.contact.intro"
           values={{}}
           components={{
             homepage: (
@@ -93,7 +93,7 @@ export default function ScreenMore(): JSX.Element {
       </p>
       <p>
         <Trans
-          i18nKey="more.emailMe"
+          i18nKey="more.contact.email"
           components={{
             email: (
               <a
@@ -105,12 +105,12 @@ export default function ScreenMore(): JSX.Element {
         />
       </p>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">{t("more.settings")}</h2>
+      <h2 className="lh-title f4">{t("more.settings.heading")}</h2>
       <div className="grid gap3 pb2">
         <Select
-          label={t("more.language.label")}
+          label={t("more.settings.language.label")}
           value={language}
-          helpText={t("more.language.helpText")}
+          helpText={t("more.settings.language.helpText")}
           onChange={(event) => {
             setLanguage(event.target.value);
           }}
@@ -124,9 +124,9 @@ export default function ScreenMore(): JSX.Element {
           })}
         </Select>
         <Select
-          label={t("more.theme.label")}
+          label={t("more.settings.theme.label")}
           value={theme}
-          helpText={t("more.theme.help")}
+          helpText={t("more.settings.theme.help")}
           onChange={(event) => {
             setTheme(event.target.value);
           }}
@@ -140,9 +140,9 @@ export default function ScreenMore(): JSX.Element {
           })}
         </Select>
         <Select
-          label={t("more.typeCount.label")}
+          label={t("more.settings.typeCount.label")}
           value={typeCount}
-          helpText={t("more.typeCount.help")}
+          helpText={t("more.settings.typeCount.help")}
           onChange={(event) => {
             setTypeCount(event.target.value);
           }}
@@ -157,11 +157,11 @@ export default function ScreenMore(): JSX.Element {
         </Select>
       </div>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Help</h2>
-      <p>This button can help fix issues in the app.</p>
+      <h2 className="lh-title f4">{t("more.help.heading")}</h2>
+      <p>{t("more.help.serviceWorker.description")}</p>
       <div className="mv3">
         <Button onClick={unregisterServiceWorker}>
-          Unregister service worker
+          {t("more.help.serviceWorker.button")}
         </Button>
       </div>
       <div role="presentation" className="mv2 bt border3" />
@@ -178,12 +178,8 @@ export default function ScreenMore(): JSX.Element {
         store any cookies on your computer.
       </p>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Giving Back</h2>
-      <p>
-        I have spent countless hours improving this site. If you appreciate what
-        I&apos;ve made, please consider donating to charities that support BIPOC
-        and transgender rights.
-      </p>
+      <h2 className="lh-title f4">{t("more.givingBack.heading")}</h2>
+      <p>{t("more.givingBack.description")}</p>
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">Special Thanks</h2>
       <ul className="lh-copy mt1 ph3">
@@ -191,47 +187,52 @@ export default function ScreenMore(): JSX.Element {
         <li>Several anonymous Poké Fans</li>
       </ul>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Open Source</h2>
+      <h2 className="lh-title f4">{t("more.openSource.heading")}</h2>
       <p>
-        Source code is available on{" "}
-        <a
-          href="https://github.com/wavebeem/pkmn.help"
-          className="underline fg-link OutlineFocus"
-        >
-          GitHub
-        </a>
-        .
+        <Trans
+          i18nKey="more.openSource.description"
+          components={{
+            github: (
+              <a
+                href="https://github.com/wavebeem/pkmn.help"
+                className="underline fg-link OutlineFocus"
+              />
+            ),
+          }}
+        />
       </p>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Legal Info</h2>
+      <h2 className="lh-title f4">{t("more.legalInfo.heading")}</h2>
       <p>
-        Pokémon &copy; 2002&ndash;{year} Pokémon. &copy; 1995&ndash;{year}{" "}
-        Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &reg; and Pokémon
-        character names are trademarks of Nintendo.
+        <Trans i18nKey="more.legalInfo.pokemon" values={{ year }} />
+      </p>
+      <p>{t("more.legalInfo.dontSueMe")}</p>
+      <p>
+        <Trans
+          i18nKey="more.legalInfo.pokeAPI"
+          components={{
+            pokeapi: (
+              <a
+                className="underline fg-link OutlineFocus"
+                href="https://pokeapi.co/"
+              />
+            ),
+          }}
+        />
       </p>
       <p>
-        No copyright or trademark infringement is intended in using Pokémon
-        content on this page.
-      </p>
-      <p>
-        Pokédex data from{" "}
-        <a
-          className="underline fg-link OutlineFocus"
-          href="https://pokeapi.co/"
-        >
-          PokéAPI
-        </a>
-        .
-      </p>
-      <p>
-        pkmn.help &copy; 2013&ndash;{year}{" "}
-        <a
-          href="https://www.wavebeem.com"
-          className="underline fg-link OutlineFocus"
-        >
-          Brian Mock
-        </a>
-        .
+        <Trans
+          i18nKey="more.legalInfo.wavebeem"
+          values={{ year }}
+          components={{
+            wavebeem: (
+              <a
+                className="underline fg-link OutlineFocus"
+                href="https://www.wavebeem.com"
+              />
+            ),
+          }}
+        />
       </p>
     </main>
   );

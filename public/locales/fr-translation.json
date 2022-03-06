@@ -1,19 +1,46 @@
 {
   "more": {
-    "contactMe": "",
-    "whoIAm": "",
-    "emailMe": "Please email your thoughts and thank-yous to <2>pkmn@wavebeem.com</2>.",
-    "settings": "",
-    "language": {
-      "label": "",
-      "helpText": ""
+    "contact": {
+      "heading": "",
+      "intro": "",
+      "email": ""
     },
-    "theme": {
-      "label": "",
-      "help": ""
+    "settings": {
+      "heading": "",
+      "language": {
+        "label": "",
+        "helpText": ""
+      },
+      "theme": {
+        "label": "",
+        "help": ""
+      },
+      "typeCount": {
+        "label": "",
+        "help": ""
+      }
     },
-    "typeCount": {
-      "help": ""
+    "help": {
+      "heading": "",
+      "serviceWorker": {
+        "description": "",
+        "button": ""
+      }
+    },
+    "givingBack": {
+      "heading": "",
+      "description": ""
+    },
+    "openSource": {
+      "heading": "",
+      "description": ""
+    },
+    "legalInfo": {
+      "heading": "",
+      "pokemon": "",
+      "dontSueMe": "",
+      "pokeAPI": "",
+      "wavebeem": ""
     }
   }
 }
