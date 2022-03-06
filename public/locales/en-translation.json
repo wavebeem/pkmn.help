@@ -11,6 +11,12 @@
     "chooseSecond": "Choose Second Type",
     "chooseThird": "Choose Third Type"
   },
+  "pokedex": {
+    "search": {
+      "description": "Search by name, number, or types",
+      "help": "Help"
+    }
+  },
   "more": {
     "contact": {
       "heading": "Contact Me",

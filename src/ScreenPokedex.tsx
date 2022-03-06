@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import matchSorter from "match-sorter";
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { Link, useHistory } from "react-router-dom";
 import { useDebounce } from "use-debounce";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
@@ -130,6 +131,7 @@ export default function ScreenPokedex({
   setPokedexParams,
   isLoading,
 }: DexProps) {
+  const { t } = useTranslation();
   const search = useSearch();
   const history = useHistory();
   const query = search.get("q") || "";
@@ -203,14 +205,14 @@ export default function ScreenPokedex({
       />
       <div className="flex justify-between ph2 nt2 pb3 bb border3 f6">
         <span className="fg3" aria-hidden="true">
-          Search by name, number, or types
+          {t("pokedex.search.description")}
         </span>
         <Link
           to="/pokedex/help/"
           className="underline fg-link OutlineFocus"
           aria-label="Help, search Pokédex"
         >
-          Help
+          {t("pokedex.search.help")}
         </Link>
       </div>
       {isLoading ? (
