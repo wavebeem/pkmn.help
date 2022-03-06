@@ -56,6 +56,7 @@ interface MonsterProps {
 }
 
 function Monster({ pokemon }: MonsterProps) {
+  const { t } = useTranslation();
   const [language] = useLanguage();
   const displayNumber = "#" + String(pokemon.number).padStart(3, "0");
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
@@ -88,7 +89,9 @@ function Monster({ pokemon }: MonsterProps) {
         <StatsTable pokemon={pokemon} />
         <div className="flex justify-end">
           <a
-            aria-label={`Bulbapedia page for ${speciesName}`}
+            aria-label={t("pokedex.bulbapedia.label", {
+              replace: { pokemon: speciesName },
+            })}
             className="underline fg-link OutlineFocus"
             href={pokemon.bulbapediaURL}
           >
@@ -98,21 +101,25 @@ function Monster({ pokemon }: MonsterProps) {
             &nbsp;&bull;&nbsp;
           </span>
           <Link
-            aria-label={`Offense for ${pokemonName}`}
+            aria-label={t("pokedex.offense.label", {
+              replace: { pokemon: speciesName },
+            })}
             className="underline fg-link OutlineFocus"
             to={`/offense/?${params}#matchup-offense`}
           >
-            Offense
+            {t("pokemon.offense.text")}
           </Link>
           <span aria-hidden="true" className="o-50">
             &nbsp;&bull;&nbsp;
           </span>
           <Link
-            aria-label={`Defense for ${pokemonName}`}
+            aria-label={t("pokedex.defense.label", {
+              replace: { pokemon: speciesName },
+            })}
             className="underline fg-link OutlineFocus"
             to={`/defense/?${params}#matchup-defense`}
           >
-            Defense
+            {t("pokemon.defense.text")}
           </Link>
         </div>
       </div>
