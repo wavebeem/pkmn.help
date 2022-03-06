@@ -34,6 +34,22 @@
       "previousLong": "Previous",
       "firstLong": "First",
       "lastLong": "Last"
+    },
+    "stats": {
+      "hp": "HP",
+      "hpLong": "HP",
+      "attack": "Attack",
+      "attackLong": "Attack",
+      "defense": "Defense",
+      "defenseLong": "Defense",
+      "specialAttack": "Sp. Atk.",
+      "specialAttackLong": "Special Attack",
+      "specialDefense": "Sp. Def.",
+      "specialDefenseLong": "Special Defense",
+      "speed": "Speed",
+      "speedLong": "Speed",
+      "total": "Total",
+      "totalLong": "Total"
     }
   },
   "more": {

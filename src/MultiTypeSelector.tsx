@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import * as React from "react";
-import { typeColor } from "./colors";
+import { typeColor, typeColorBG } from "./colors";
 import { Type, types } from "./data";
 
 const buttonInnerHeight = "1.5rem";
@@ -39,7 +39,7 @@ export default function MultiTypeSelector({
               "active-squish"
             )}
             style={{
-              ["--type-color" as any]: typeColor(type),
+              ["--type-color" as any]: typeColorBG(type),
             }}
           >
             <span className="flex flex-row items-center justify-center">

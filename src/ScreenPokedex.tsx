@@ -107,7 +107,7 @@ function Monster({ pokemon }: MonsterProps) {
             className="underline fg-link OutlineFocus"
             to={`/offense/?${params}#matchup-offense`}
           >
-            {t("pokemon.offense.text")}
+            {t("pokedex.offense.text")}
           </Link>
           <span aria-hidden="true" className="o-50">
             &nbsp;&bull;&nbsp;
@@ -119,7 +119,7 @@ function Monster({ pokemon }: MonsterProps) {
             className="underline fg-link OutlineFocus"
             to={`/defense/?${params}#matchup-defense`}
           >
-            {t("pokemon.defense.text")}
+            {t("pokedex.defense.text")}
           </Link>
         </div>
       </div>

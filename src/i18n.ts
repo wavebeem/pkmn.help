@@ -9,7 +9,7 @@ export const i18n = i18next
   .use(initReactI18next)
   //  https://www.i18next.com/overview/configuration-options
   .init({
-    lng: "cimode",
+    // lng: "cimode",
     fallbackLng: "en",
     debug: true,
 
