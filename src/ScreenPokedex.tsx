@@ -90,7 +90,7 @@ function Monster({ pokemon }: MonsterProps) {
         <div className="flex justify-end">
           <a
             aria-label={t("pokedex.bulbapedia.label", {
-              replace: { pokemon: speciesName },
+              replace: { pokemon: pokemonName },
             })}
             className="underline fg-link OutlineFocus"
             href={pokemon.bulbapediaURL}
@@ -102,7 +102,7 @@ function Monster({ pokemon }: MonsterProps) {
           </span>
           <Link
             aria-label={t("pokedex.offense.label", {
-              replace: { pokemon: speciesName },
+              replace: { pokemon: pokemonName },
             })}
             className="underline fg-link OutlineFocus"
             to={`/offense/?${params}#matchup-offense`}
@@ -114,7 +114,7 @@ function Monster({ pokemon }: MonsterProps) {
           </span>
           <Link
             aria-label={t("pokedex.defense.label", {
-              replace: { pokemon: speciesName },
+              replace: { pokemon: pokemonName },
             })}
             className="underline fg-link OutlineFocus"
             to={`/defense/?${params}#matchup-defense`}
