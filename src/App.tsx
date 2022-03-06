@@ -40,15 +40,15 @@ const tabClass = classNames([
 
 const tabClassActive = classNames(["fg1 bottom-border-thick-current"]);
 
-function getNBSP() {
-  return "\u00A0";
+function getFallback() {
+  return "…";
 }
 
 function useTranslationsWithBlankFallback() {
   const { t: translation, ready } = useTranslation(undefined, {
     useSuspense: false,
   });
-  return ready ? translation : getNBSP;
+  return ready ? translation : getFallback;
 }
 
 export default function App() {
@@ -132,28 +132,28 @@ export default function App() {
             activeClassName={tabClassActive}
             to={`/offense/${offenseParams}`}
           >
-            Offense
+            {t("navigation.offense")}
           </NavLink>
           <NavLink
             className={tabClass}
             activeClassName={tabClassActive}
             to={`/defense/${defenseParams}`}
           >
-            Defense
+            {t("navigation.defense")}
           </NavLink>
           <NavLink
             className={tabClass}
             activeClassName={tabClassActive}
             to={`/pokedex/${pokedexParams}`}
           >
-            Pokédex
+            {t("navigation.pokedex")}
           </NavLink>
           <NavLink
             className={tabClass}
             activeClassName={tabClassActive}
             to="/more/"
           >
-            More
+            {t("navigation.more")}
           </NavLink>
         </nav>
         {(needRefresh || offlineReady) && (

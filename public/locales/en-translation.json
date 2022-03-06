@@ -1,5 +1,11 @@
 {
   "title": "Pokémon Type Calculator",
+  "navigation": {
+    "offense": "Offense",
+    "defense": "Defense",
+    "pokedex": "Pokédex",
+    "more": "More"
+  },
   "more": {
     "contact": {
       "heading": "Contact Me",
