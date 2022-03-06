@@ -40,7 +40,10 @@ const tabClass = classNames([
 
 const tabClassActive = classNames(["fg1 bottom-border-thick-current"]);
 
-function getFallback() {
+function getFallback(key: string): string {
+  if (key === "title") {
+    return "Pokémon Type Calculator";
+  }
   return "…";
 }
 
