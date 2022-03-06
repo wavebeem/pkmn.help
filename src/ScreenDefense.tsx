@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import { CoverageType, removeNones, Type, typesFromString } from "./data";
 import * as Matchups from "./Matchups";
@@ -18,6 +19,8 @@ export default function ScreenDefense({
   fallbackCoverageTypes,
 }: DefenseProps) {
   useScrollToFragment();
+
+  const { t } = useTranslation();
 
   const search = useSearch();
   const history = useHistory();
@@ -56,7 +59,7 @@ export default function ScreenDefense({
   return (
     <main className="ph3 pt0 pb4 content-wide center">
       <div className="dib w-50-ns w-100 v-top">
-        <h2 className={classH2}>Choose First Type</h2>
+        <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
         <TypeSelector
           name="primary"
           value={types[0]}
@@ -64,7 +67,7 @@ export default function ScreenDefense({
           disabledTypes={[]}
           includeNone={false}
         />
-        <h2 className={classH2}>Choose Second Type</h2>
+        <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
         <TypeSelector
           name="secondary"
           value={types[1] || Type.NONE}
@@ -74,7 +77,7 @@ export default function ScreenDefense({
         />
         {Number(typeCount) === 3 && (
           <>
-            <h2 className={classH2}>Choose Third Type</h2>
+            <h2 className={classH2}>{t("defense.chooseThird")}</h2>
             <TypeSelector
               name="third"
               value={types[2] || Type.NONE}

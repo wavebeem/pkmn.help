@@ -48,10 +48,6 @@ export default function ScreenMore(): JSX.Element {
   const [typeCount, setTypeCount] = useTypeCount();
   const year = new Date().getFullYear();
 
-  React.useEffect(() => {
-    i18n.changeLanguage(language);
-  }, [i18n, language]);
-
   return (
     <main className="pa3 center content-narrow lh-copy">
       <h2 className="lh-title f4">{t("more.contact.heading")}</h2>
@@ -91,6 +87,7 @@ export default function ScreenMore(): JSX.Element {
           helpText={t("more.settings.language.helpText")}
           onChange={(event) => {
             setLanguage(event.target.value);
+            i18n.changeLanguage(language);
           }}
         >
           {languages.map((lang) => {

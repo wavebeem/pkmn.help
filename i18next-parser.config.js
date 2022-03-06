@@ -3,6 +3,7 @@ module.exports = {
   output: "public/locales/$LOCALE-$NAMESPACE.json",
   input: "src/**/*.{ts,tsx}",
   createOldCatalogs: false,
+  keepRemoved: true,
   locales: [
     "en",
     "ja",

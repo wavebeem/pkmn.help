@@ -6,6 +6,11 @@
     "pokedex": "Pokédex",
     "more": "More"
   },
+  "defense": {
+    "chooseFirst": "Choose First Type",
+    "chooseSecond": "Choose Second Type",
+    "chooseThird": "Choose Third Type"
+  },
   "more": {
     "contact": {
       "heading": "Contact Me",
@@ -20,11 +25,20 @@
       },
       "theme": {
         "label": "Theme",
-        "help": "“System default” will change automatically depending on your operating system settings."
+        "help": "“System default” will change automatically depending on your operating system settings.",
+        "values": {
+          "auto": "System default",
+          "light": "Light",
+          "dark": "Dark"
+        }
       },
       "typeCount": {
         "label": "Number of types",
-        "help": "Pokémon can briefly have three types at once if hit with Forests's Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used."
+        "help": "Pokémon can briefly have three types at once if hit with Forests's Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.",
+        "values": {
+          "2": "Two types (2)",
+          "3": "Three types (3)"
+        }
       }
     },
     "help": {
