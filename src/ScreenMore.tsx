@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import { Button } from "./Button";
 import { Select } from "./Select";
 import { useLanguage } from "./useLanguage";
@@ -64,41 +64,53 @@ const themes: Theme[] = [
 ];
 
 export default function ScreenMore(): JSX.Element {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();
   const [typeCount, setTypeCount] = useTypeCount();
   const year = new Date().getFullYear();
+
+  React.useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [i18n, language]);
+
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f4">{t("contact-me")}</h2>
+      <h2 className="lh-title f4">{t("more.contactMe")}</h2>
       <p>
-        Hi, I&apos;m{" "}
-        <a
-          href="https://www.wavebeem.com"
-          className="underline fg-link OutlineFocus"
-        >
-          Brian
-        </a>{" "}
-        (they/them), and I made Pokémon Type Calculator (pkmn.help).
+        <Trans
+          i18nKey="more.whoIAm"
+          values={{}}
+          components={{
+            homepage: (
+              <a
+                href="https://www.wavebeem.com"
+                className="underline fg-link OutlineFocus"
+              />
+            ),
+          }}
+        />
       </p>
       <p>
-        Please email your thoughts and thank-yous to{" "}
-        <a
-          className="underline fg-link OutlineFocus"
-          href="mailto:pkmn@wavebeem.com"
-        >
-          pkmn@wavebeem.com
-        </a>
-        .
+        <Trans
+          i18nKey="more.emailMe"
+          components={{
+            email: (
+              <a
+                className="underline fg-link OutlineFocus"
+                href="mailto:pkmn@wavebeem.com"
+              />
+            ),
+          }}
+        />
       </p>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Settings</h2>
+      <h2 className="lh-title f4">{t("more.settings")}</h2>
       <div className="grid gap3 pb2">
         <Select
-          label="Language"
+          label={t("more.language.label")}
           value={language}
-          helpText="Language support is incomplete. Only Pokémon names are translated."
+          helpText={t("more.language.helpText")}
           onChange={(event) => {
             setLanguage(event.target.value);
           }}
@@ -112,9 +124,9 @@ export default function ScreenMore(): JSX.Element {
           })}
         </Select>
         <Select
-          label="Theme"
+          label={t("more.theme.label")}
           value={theme}
-          helpText="&ldquo;System default&rdquo; will change automatically depending on your operating system settings."
+          helpText={t("more.theme.help")}
           onChange={(event) => {
             setTheme(event.target.value);
           }}
@@ -128,9 +140,9 @@ export default function ScreenMore(): JSX.Element {
           })}
         </Select>
         <Select
-          label="Number of types"
+          label={t("more.typeCount.label")}
           value={typeCount}
-          helpText="Pokémon can briefly have three types at once if hit with Forests's Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used."
+          helpText={t("more.typeCount.help")}
           onChange={(event) => {
             setTypeCount(event.target.value);
           }}

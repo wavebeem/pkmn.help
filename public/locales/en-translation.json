@@ -1,3 +1,20 @@
 {
-  "contact-me": "Contact Me"
+  "more": {
+    "contactMe": "Contact Me",
+    "whoIAm": "Hi, I'm <homepage>Brian</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",
+    "emailMe": "Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.",
+    "settings": "Settings",
+    "language": {
+      "label": "Language",
+      "helpText": "Language support is incomplete. Only Pokémon names are translated."
+    },
+    "theme": {
+      "label": "Theme",
+      "help": "“System default” will change automatically depending on your operating system settings."
+    },
+    "typeCount": {
+      "label": "Number of types",
+      "help": "Pokémon can briefly have three types at once if hit with Forests's Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used."
+    }
+  }
 }

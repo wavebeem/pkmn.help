@@ -1,3 +1,19 @@
 {
-  "contact-me": ""
+  "more": {
+    "contactMe": "",
+    "whoIAm": "",
+    "emailMe": "Please email your thoughts and thank-yous to <2>pkmn@wavebeem.com</2>.",
+    "settings": "",
+    "language": {
+      "label": "",
+      "helpText": ""
+    },
+    "theme": {
+      "label": "",
+      "help": ""
+    },
+    "typeCount": {
+      "help": ""
+    }
+  }
 }
