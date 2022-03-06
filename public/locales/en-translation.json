@@ -1,4 +1,5 @@
 {
+  "title": "Pokémon Type Calculator",
   "more": {
     "contact": {
       "heading": "Contact Me",
@@ -27,9 +28,20 @@
         "button": "Unregister service worker"
       }
     },
+    "privacy": {
+      "heading": "Privacy",
+      "description": "I will never runs ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn' store any cookies on your computer."
+    },
     "givingBack": {
       "heading": "Giving Back",
       "description": "I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights."
+    },
+    "thanks": {
+      "heading": "Special Thanks",
+      "credits": {
+        "jansjo": "Jansjo (testing, research)",
+        "other": "Several anonymous Poké Fans"
+      }
     },
     "openSource": {
       "heading": "Open Source",

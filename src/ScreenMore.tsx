@@ -27,41 +27,19 @@ interface Language {
 
 const languages: Language[] = [
   { title: "English", value: "en" },
-  { title: "Japanese", value: "ja" },
-  { title: "Japanese (Hiragana/Katakana)", value: "ja-Hrkt" },
-  { title: "Chinese (Simplified)", value: "zh-Hans" },
-  { title: "Chinese (Traditional)", value: "zh-Hant" },
-  { title: "French", value: "fr" },
-  { title: "German", value: "de" },
-  { title: "Italian", value: "it" },
-  { title: "Korean", value: "ko" },
-  { title: "Spanish", value: "es" },
+  { title: "日本語 (Japanese)", value: "ja" },
+  { title: "にほんご (Japanese Kana-only)", value: "ja-Hrkt" },
+  { title: "汉语 (Simplified Chinese)", value: "zh-Hans" },
+  { title: "漢語 (Traditional Chinese)", value: "zh-Hant" },
+  { title: "Français (French)", value: "fr" },
+  { title: "Deutsch (German)", value: "de" },
+  { title: "Italiano (Italian)", value: "it" },
+  { title: "한국어 (Korean)", value: "ko" },
+  { title: "Español (Spanish)", value: "es" },
 ];
 
-type TypeCountValue = "2" | "3";
-
-interface TypeCount {
-  title: string;
-  value: TypeCountValue;
-}
-
-const typeCounts: TypeCount[] = [
-  { title: "Two types (2)", value: "2" },
-  { title: "Three types (3)", value: "3" },
-];
-
-type ThemeValue = "auto" | "light" | "dark";
-
-interface Theme {
-  title: string;
-  value: ThemeValue;
-}
-
-const themes: Theme[] = [
-  { title: "System default", value: "auto" },
-  { title: "Light", value: "light" },
-  { title: "Dark", value: "dark" },
-];
+const typeCountValues = ["2", "3"] as const;
+const themeValues = ["auto", "light", "dark"] as const;
 
 export default function ScreenMore(): JSX.Element {
   const { t, i18n } = useTranslation();
@@ -131,10 +109,10 @@ export default function ScreenMore(): JSX.Element {
             setTheme(event.target.value);
           }}
         >
-          {themes.map((theme) => {
+          {themeValues.map((value) => {
             return (
-              <option key={theme.value} value={theme.value}>
-                {theme.title}
+              <option key={value} value={value}>
+                {t(`more.settings.theme.values.${value}`)}
               </option>
             );
           })}
@@ -147,10 +125,10 @@ export default function ScreenMore(): JSX.Element {
             setTypeCount(event.target.value);
           }}
         >
-          {typeCounts.map((tc) => {
+          {typeCountValues.map((value) => {
             return (
-              <option key={tc.value} value={tc.value}>
-                {tc.title}
+              <option key={value} value={value}>
+                {t(`more.settings.typeCount.values.${value}`)}
               </option>
             );
           })}
@@ -165,26 +143,28 @@ export default function ScreenMore(): JSX.Element {
         </Button>
       </div>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Privacy</h2>
+      <h2 className="lh-title f4">{t("more.privacy.heading")}</h2>
       <p>
-        I will never runs ads or steal your personal data. I use{" "}
-        <a
-          href="https://plausible.io/privacy"
-          className="underline fg-link OutlineFocus"
-        >
-          Plausible Analytics
-        </a>
-        , which is self-funded, independent, hosted in the EU, and doesn&apos;t
-        store any cookies on your computer.
+        <Trans
+          i18nKey="more.privacy.description"
+          components={{
+            plausible: (
+              <a
+                href="https://plausible.io/privacy"
+                className="underline fg-link OutlineFocus"
+              />
+            ),
+          }}
+        />
       </p>
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">{t("more.givingBack.heading")}</h2>
       <p>{t("more.givingBack.description")}</p>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Special Thanks</h2>
+      <h2 className="lh-title f4">{t("more.thanks.heading")}</h2>
       <ul className="lh-copy mt1 ph3">
-        <li>Jansjo (testing, research)</li>
-        <li>Several anonymous Poké Fans</li>
+        <li>{t("more.thanks.credits.jansjo")}</li>
+        <li>{t("more.thanks.credits.other")}</li>
       </ul>
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">{t("more.openSource.heading")}</h2>

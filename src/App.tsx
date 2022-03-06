@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
@@ -39,6 +40,17 @@ const tabClass = classNames([
 
 const tabClassActive = classNames(["fg1 bottom-border-thick-current"]);
 
+function getNBSP() {
+  return "\u00A0";
+}
+
+function useTranslationsWithBlankFallback() {
+  const { t: translation, ready } = useTranslation(undefined, {
+    useSuspense: false,
+  });
+  return ready ? translation : getNBSP;
+}
+
 export default function App() {
   // Service worker
   const {
@@ -47,6 +59,8 @@ export default function App() {
     updateServiceWorker,
   } = useRegisterSW();
   useUpdateSW();
+
+  const t = useTranslationsWithBlankFallback();
 
   // State...
   const [defenseParams, setDefenseParams] = React.useState("");
@@ -102,7 +116,7 @@ export default function App() {
         </Helmet>
         <h1 className="f3-ns f4 tc relative white PokeballHeader">
           <Link to="/" className="no-underline white OutlineFocus">
-            Pokémon Type Calculator
+            {t("title")}
           </Link>
         </h1>
         <nav

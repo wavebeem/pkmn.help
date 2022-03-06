@@ -27,9 +27,20 @@
         "button": ""
       }
     },
+    "privacy": {
+      "heading": "",
+      "description": ""
+    },
     "givingBack": {
       "heading": "",
       "description": ""
+    },
+    "thanks": {
+      "heading": "",
+      "credits": {
+        "jansjo": "",
+        "other": ""
+      }
     },
     "openSource": {
       "heading": "",
