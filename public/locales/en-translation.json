@@ -52,6 +52,35 @@
       "totalLong": "Total"
     }
   },
+  "pokedexHelp": {
+    "searchByName": {
+      "heading": "Search by name",
+      "description": "You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though."
+    },
+    "searchByNumber": {
+      "heading": "Search by number",
+      "description": "Search by national dex number. If you want Bulbsaur, just type 1, not #001."
+    },
+    "searchByType": {
+      "heading": "Search by type",
+      "description": "Here are a few examples of how to seach by type."
+    },
+    "searchExamples": {
+      "type": {
+        "query": "fire",
+        "description": "Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom)."
+      },
+      "doubleType": {
+        "query": "water flying",
+        "description": "Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant)."
+      },
+      "singleType": {
+        "query": "grass none",
+        "description": "Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita)."
+      }
+    },
+    "back": "Back to Pokédex"
+  },
   "more": {
     "contact": {
       "heading": "Contact Me",
