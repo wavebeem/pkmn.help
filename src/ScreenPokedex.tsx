@@ -138,7 +138,8 @@ export default function ScreenPokedex({
   setPokedexParams,
   isLoading,
 }: DexProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const { language } = i18n;
   const search = useSearch();
   const history = useHistory();
   const query = search.get("q") || "";
@@ -149,11 +150,13 @@ export default function ScreenPokedex({
     return allPokemon.map((p) => {
       return {
         ...p,
-        speciesName: pickTranslation(p.speciesNames),
-        formName: pickTranslation(p.formNames),
+        speciesName: pickTranslation(p.speciesNames, language),
+        formName: pickTranslation(p.formNames, language),
       };
     });
-  }, [allPokemon]);
+  }, [allPokemon, language]);
+
+  console.log(language, searchablePkmn.slice(0, 4));
 
   const pkmn = React.useMemo(() => {
     const s = debouncedQuery.trim();
@@ -161,6 +164,7 @@ export default function ScreenPokedex({
       const number = Number(s);
       return searchablePkmn.filter((p) => p.number === number);
     }
+    // TODO: Translate types from current language
     const types = typesOrNoneFromString(s);
     if (types.length > 0) {
       return searchablePkmn.filter((p) => {
@@ -178,7 +182,7 @@ export default function ScreenPokedex({
     return matchSorter(searchablePkmn, s, {
       keys: ["speciesName", "formName", "number"],
     });
-  }, [debouncedQuery, searchablePkmn]);
+  }, [debouncedQuery, searchablePkmn, language]);
 
   function createParams(newQuery: string, newPage: number): string {
     const params = new URLSearchParams();

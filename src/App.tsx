@@ -64,6 +64,7 @@ export default function App() {
   useUpdateSW();
 
   const t = useTranslationsWithBlankFallback();
+  const { i18n } = useTranslation(undefined, { useSuspense: false });
 
   // State...
   const [defenseParams, setDefenseParams] = React.useState("");
@@ -77,6 +78,10 @@ export default function App() {
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
 
   const [language] = useLanguage();
+
+  React.useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [language, i18n]);
 
   // Theme stuff
   const [theme] = useTheme();

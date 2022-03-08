@@ -10,6 +10,7 @@ export const i18n = i18next
   //  https://www.i18next.com/overview/configuration-options
   .init({
     // lng: "cimode",
+    lng: JSON.parse(localStorage.getItem("language") || JSON.stringify("en")),
     fallbackLng: "en",
     debug: true,
 
