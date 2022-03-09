@@ -54,6 +54,26 @@ export function typesOrNoneFromString(str: string): Type[] {
   return str.split(/\s+/).filter(isTypeOrNone);
 }
 
+export function typeFromUserInput({
+  type,
+  t,
+}: {
+  type: string;
+  t: (key: string) => string;
+}): Type {
+  const typeToLoc = Object.fromEntries(
+    typesOrNone.map((type) => [type, t(`types.${type}`)])
+  );
+  const locToType = Object.fromEntries(
+    typesOrNone.map((type) => [t(`types.${type}`), type])
+  );
+  const locs = Object.values(typeToLoc);
+  const loc = closest(type, locs);
+  return locToType[loc] as Type;
+}
+
+Object.assign(globalThis, { typeFromUserInput });
+
 export const types = [
   Type.NORMAL,
   Type.FIGHTING,
