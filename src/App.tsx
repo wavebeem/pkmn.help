@@ -65,7 +65,6 @@ export default function App() {
 
   const t = useTranslationsWithBlankFallback();
   const { i18n } = useTranslation(undefined, { useSuspense: false });
-  Object.assign(globalThis, { t });
 
   // State...
   const [defenseParams, setDefenseParams] = React.useState("");

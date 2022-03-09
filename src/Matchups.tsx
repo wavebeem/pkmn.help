@@ -86,12 +86,13 @@ function Matchups({
   fallbackCoverageTypes,
   isLoading,
 }: MatchupsProps) {
+  const { t } = useTranslation();
   return (
     <div className="tc pt2" id={`matchup-${kind}`}>
       {kind === "offense" ? (
         <div>
           <h2 className="f5 mt3 mb0">
-            Weakness Coverage{" "}
+            {t("offense.weaknessCoverage")}{" "}
             <span className="normal">
               (
               <Link
@@ -99,7 +100,7 @@ function Matchups({
                 className="underline fg-link OutlineFocus"
                 aria-label="Edit weakness coverage"
               >
-                Edit
+                {t("offense.weaknessCoverageEdit")}
               </Link>
               )
             </span>

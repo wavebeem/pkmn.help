@@ -8,11 +8,8 @@ interface DexCoverageProps {
   isLoading: boolean;
 }
 
-const DexCoverage: React.FC<DexCoverageProps> = ({
-  coverageTypes,
-  types,
-  isLoading,
-}) => {
+// TODO: Translation
+function DexCoverage({ coverageTypes, types, isLoading }: DexCoverageProps) {
   const count = coverageTypes.filter((ct) => {
     const matchups = types.map((t) => matchupFor(ct.types, t));
     return matchups.some((effectiveness) => {
@@ -39,6 +36,6 @@ const DexCoverage: React.FC<DexCoverageProps> = ({
       </div>
     </div>
   );
-};
+}
 
 export default DexCoverage;

@@ -6,6 +6,11 @@
     "pokedex": "Pokédex",
     "more": "More"
   },
+  "offense": {
+    "chooseTypes": "Choose Types",
+    "weaknessCoverage": "Weakness Coverage",
+    "weaknessCoverageEdit": "Edit"
+  },
   "defense": {
     "chooseFirst": "Choose First Type",
     "chooseSecond": "Choose Second Type",
