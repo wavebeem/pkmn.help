@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
 import {
@@ -16,6 +17,7 @@ interface BadgeProps {
 }
 
 function Badge({ type }: BadgeProps) {
+  const { t } = useTranslation();
   return (
     <div
       className={classNames(
@@ -38,7 +40,7 @@ function Badge({ type }: BadgeProps) {
           borderColor: typeColorBorder(type),
         }}
       >
-        {type}
+        {t(`types.${type}`)}
       </div>
     </div>
   );

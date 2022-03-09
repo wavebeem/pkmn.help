@@ -24,6 +24,7 @@ interface MonsterTypeProps {
 }
 
 function MonsterType({ type, index }: MonsterTypeProps) {
+  const { t } = useTranslation();
   return (
     <div
       className={classNames(
@@ -45,7 +46,7 @@ function MonsterType({ type, index }: MonsterTypeProps) {
           borderColor: typeColorBorder(type),
         }}
       >
-        {type}
+        {t(`types.${type}`)}
       </div>
     </div>
   );
@@ -155,8 +156,6 @@ export default function ScreenPokedex({
       };
     });
   }, [allPokemon, language]);
-
-  console.log(language, searchablePkmn.slice(0, 4));
 
   const pkmn = React.useMemo(() => {
     const s = debouncedQuery.trim();
