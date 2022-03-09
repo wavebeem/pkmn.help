@@ -46,33 +46,25 @@ export function typesFromString(str: string): Type[] {
   return [...new Set(str.split(/\s+/).filter(isType))];
 }
 
-function isTypeOrNone(str: string): str is Type {
-  return typesOrNone.some((t) => t === str);
-}
-
-export function typesOrNoneFromString(str: string): Type[] {
-  return str.split(/\s+/).filter(isTypeOrNone);
-}
-
 export function typeFromUserInput({
-  type,
+  types,
   t,
 }: {
-  type: string;
+  types: string;
   t: (key: string) => string;
-}): Type {
+}): Type[] {
   const typeToLoc = Object.fromEntries(
     typesOrNone.map((type) => [type, t(`types.${type}`)])
   );
   const locToType = Object.fromEntries(
     typesOrNone.map((type) => [t(`types.${type}`), type])
   );
-  const locs = Object.values(typeToLoc);
-  const loc = closest(type, locs);
-  return locToType[loc] as Type;
+  return types.split(/\s+/).map((type) => {
+    const locs = Object.values(typeToLoc);
+    const loc = closest(type, locs);
+    return locToType[loc] as Type;
+  });
 }
-
-Object.assign(globalThis, { typeFromUserInput });
 
 export const types = [
   Type.NORMAL,

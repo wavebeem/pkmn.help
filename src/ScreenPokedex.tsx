@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { Link, useHistory } from "react-router-dom";
 import { useDebounce } from "use-debounce";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
-import { Pokemon, Type, typesOrNoneFromString } from "./data";
+import { Pokemon, Type, typeFromUserInput } from "./data";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import Paginator from "./Paginator";
@@ -163,8 +163,11 @@ export default function ScreenPokedex({
       const number = Number(s);
       return searchablePkmn.filter((p) => p.number === number);
     }
-    // TODO: Translate types from current language
-    const types = typesOrNoneFromString(s);
+    // The return value of `t` depends on the current value of `language`, but
+    // the rules of hooks can't realize these. Pretend to use `language` here to
+    // make it happy.
+    language;
+    const types = typeFromUserInput({ types: s, t });
     if (types.length > 0) {
       return searchablePkmn.filter((p) => {
         if (types.length === 1) {
@@ -181,7 +184,7 @@ export default function ScreenPokedex({
     return matchSorter(searchablePkmn, s, {
       keys: ["speciesName", "formName", "number"],
     });
-  }, [debouncedQuery, searchablePkmn, language]);
+  }, [debouncedQuery, searchablePkmn, language, t]);
 
   function createParams(newQuery: string, newPage: number): string {
     const params = new URLSearchParams();
