@@ -207,6 +207,16 @@
     "fairy": "Fairy",
     "none": "None"
   },
+  "banners": {
+    "updateReady": {
+      "description": "An update is available",
+      "update": "Update"
+    },
+    "offlineReady": {
+      "description": "Offline mode is now available",
+      "dismiss": "Dismiss"
+    }
+  },
   "general": {
     "loading": "Loading…"
   }

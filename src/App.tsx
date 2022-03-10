@@ -77,8 +77,6 @@ export default function App() {
   >([]);
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
 
-  console.log(coverageTypes);
-
   const [language] = useLanguage();
 
   React.useEffect(() => {
@@ -171,7 +169,7 @@ export default function App() {
             {needRefresh && (
               <div className={bannerClass}>
                 <span className="flex flex-auto items-center">
-                  An update is available
+                  {t("banners.updateReady.description")}
                 </span>
                 <Button
                   className="ml3"
@@ -181,14 +179,14 @@ export default function App() {
                     setNeedRefresh(false);
                   }}
                 >
-                  Update
+                  {t("banners.updateReady.update")}
                 </Button>
               </div>
             )}
             {offlineReady && (
               <div className={bannerClass}>
                 <span className="flex flex-auto items-center">
-                  Offline mode is now available
+                  {t("banners.offlineReady.description")}
                 </span>
                 <Button
                   className="ml3"
@@ -197,7 +195,7 @@ export default function App() {
                     setOfflineReady(false);
                   }}
                 >
-                  Dismiss
+                  {t("banners.offlineReady.description")}
                 </Button>
               </div>
             )}

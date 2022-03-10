@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import { closest } from "fastest-levenshtein";
 import Papa from "papaparse";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
@@ -51,7 +50,6 @@ export default function ScreenWeaknessCoverage({
   }, [lastUpdated]);
 
   function saveCSV() {
-    // const fields = ["Number", "Name", "Type 1", "Type 2"];
     const fields = [
       t("coverage.csvHeaders.number"),
       t("coverage.csvHeaders.name"),
@@ -112,7 +110,6 @@ export default function ScreenWeaknessCoverage({
         return reverseClosestLookup(key, map);
       },
       transform: (value, field) => {
-        console.log({ [field]: value });
         if (field === "type1") {
           const [type = Type.NORMAL] = typesFromUserInput({ types: value, t });
           return type;
@@ -131,7 +128,6 @@ export default function ScreenWeaknessCoverage({
     const newCoverageTypes = result.data.map((obj) => {
       return objectToCoverageType({ obj, t });
     });
-    console.log({ newCoverageTypes });
 
     setStatusText(
       t("coverage.status.imported", {

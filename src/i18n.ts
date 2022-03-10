@@ -1,8 +1,6 @@
 import i18next from "i18next";
 import Backend from "i18next-http-backend";
 import { initReactI18next } from "react-i18next";
-// NOTE: Detect language automatically, could be useful later
-// https://github.com/i18next/i18next-browser-languageDetector
 
 export const i18n = i18next
   .use(Backend)
@@ -11,10 +9,11 @@ export const i18n = i18next
   .init({
     lng: JSON.parse(localStorage.getItem("language") || JSON.stringify("en")),
     fallbackLng: "en",
-    debug: true,
+    debug: import.meta.env.DEV,
 
     interpolation: {
-      escapeValue: false, // not needed for react as it escapes by default
+      // Not needed for React lol
+      escapeValue: false,
     },
 
     backend: {
