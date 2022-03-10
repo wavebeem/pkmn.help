@@ -34,7 +34,7 @@ function Badge({ type }: BadgeProps) {
       }}
     >
       <div
-        className="br1 ba b--transparent white"
+        className="br1 ba b--transparent white truncate"
         style={{
           background: typeColorBG(type),
           borderColor: typeColorBorder(type),
