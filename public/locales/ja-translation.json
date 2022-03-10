@@ -9,6 +9,24 @@
       "type3": "TODO:タイプ３"
     }
   },
+  "pokedex": {
+    "stats": {
+      "hp": "HP",
+      "hpLong": "HP",
+      "attack": "こうげき",
+      "attackLong": "こうげき",
+      "defense": "ぼうぎょ",
+      "defenseLong": "ぼうぎょ",
+      "specialAttack": "とくこう",
+      "specialAttackLong": "とくこう",
+      "specialDefense": "とくぼう",
+      "specialDefenseLong": "とくぼう",
+      "speed": "すばやさ",
+      "speedLong": "すばやさ",
+      "total": "合計",
+      "totalLong": "合計"
+    }
+  },
   "types": {
     "normal": "ノーマル",
     "fighting": "かくとう",
