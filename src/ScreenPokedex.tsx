@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 import { Link, useHistory } from "react-router-dom";
 import { useDebounce } from "use-debounce";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
-import { Pokemon, Type, typeFromUserInput } from "./data";
+import { Pokemon, Type, typesFromUserInput } from "./data";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import Paginator from "./Paginator";
@@ -167,7 +167,7 @@ export default function ScreenPokedex({
     // the rules of hooks can't realize these. Pretend to use `language` here to
     // make it happy.
     language;
-    const types = typeFromUserInput({ types: s, t });
+    const types = typesFromUserInput({ types: s, t });
     if (types.length > 0) {
       return searchablePkmn.filter((p) => {
         if (types.length === 1) {

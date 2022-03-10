@@ -4,7 +4,12 @@ import Papa from "papaparse";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { CoverageType, objectToCoverageType, stringToType, Type } from "./data";
+import {
+  CoverageType,
+  objectToCoverageType,
+  Type,
+  typesFromUserInput,
+} from "./data";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
 import { useTypeCount } from "./useTypeCount";
@@ -45,17 +50,28 @@ export default function ScreenWeaknessCoverage({
   }, [lastUpdated]);
 
   function saveCSV() {
-    const fields = ["Number", "Name", "Type 1", "Type 2"];
+    // const fields = ["Number", "Name", "Type 1", "Type 2"];
+    const fields = [
+      t("coverage.csvHeaders.number"),
+      t("coverage.csvHeaders.name"),
+      t("coverage.csvHeaders.type1"),
+      t("coverage.csvHeaders.type2"),
+    ];
     if (Number(typeCount) === 3) {
-      fields.push("Type 3");
+      fields.push(t("coverage.csvHeaders.type3"));
     }
     const csv = Papa.unparse(
       {
         fields,
-        data: fallbackCoverageTypes.map((t) => {
-          const data = [t.number, t.name, t.types[0], t.types[1] || ""];
+        data: fallbackCoverageTypes.map((pkmn) => {
+          const data = [
+            pkmn.number,
+            pkmn.name,
+            t(`types.${pkmn.types[0]}`),
+            pkmn.types[1] ? t(`types.${pkmn.types[1]}`) : "",
+          ];
           if (Number(typeCount) === 3) {
-            data.push(t.types[2] || "");
+            data.push(pkmn.types[2] ? t(`types.${pkmn.types[2]}`) : "");
           }
           return data;
         }),
@@ -94,10 +110,10 @@ export default function ScreenWeaknessCoverage({
       },
       transform: (value, field) => {
         if (field === "type1") {
-          return stringToType(value, Type.NORMAL);
+          return [...typesFromUserInput({ types: value, t }), Type.NORMAL][0];
         }
         if (field === "type2" || field === "type3") {
-          return stringToType(value, Type.NONE);
+          return [...typesFromUserInput({ types: value, t }), Type.NONE][0];
         }
         return value;
       },
@@ -106,7 +122,9 @@ export default function ScreenWeaknessCoverage({
       alert(t("coverage.status.errored"));
       return;
     }
-    const newCoverageTypes = result.data.map(objectToCoverageType);
+    const newCoverageTypes = result.data.map((obj) => {
+      return objectToCoverageType({ obj, t });
+    });
     setStatusText(
       t("coverage.status.imported", {
         n: newCoverageTypes.length,

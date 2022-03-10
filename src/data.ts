@@ -46,23 +46,18 @@ export function typesFromString(str: string): Type[] {
   return [...new Set(str.split(/\s+/).filter(isType))];
 }
 
-export function typeFromUserInput({
+export function typesFromUserInput({
   types,
   t,
 }: {
   types: string;
   t: (key: string) => string;
 }): Type[] {
-  const typeToLoc = Object.fromEntries(
+  const map = Object.fromEntries(
     typesOrNone.map((type) => [type, t(`types.${type}`)])
   );
-  const locToType = Object.fromEntries(
-    typesOrNone.map((type) => [t(`types.${type}`), type])
-  );
   return types.split(/\s+/).map((type) => {
-    const locs = Object.values(typeToLoc);
-    const loc = closest(type, locs);
-    return locToType[loc] as Type;
+    return reverseClosestLookup(type, map) as Type;
   });
 }
 
@@ -89,12 +84,21 @@ export const types = [
 
 export const typesOrNone = [...types, Type.NONE];
 
-export function stringToType(string: string, fallback: Type): Type {
-  string = string.toLowerCase().replace(/[^a-z]/, "");
-  if (string === "") {
-    return fallback;
-  }
-  return closest(string, typesOrNone) as Type;
+// whatYouMeant("こおり", {
+//   ice: "こおり",
+//   fire: "ほのお"
+// });
+
+// find closest(key, Object.values(obj)))
+// return key of first value that matches
+
+export function reverseClosestLookup<K extends string, V extends string>(
+  value: V,
+  obj: Record<K, V>
+): K {
+  const val = closest(value, Object.values(obj));
+  const [key] = Object.entries<V>(obj).find(([, v]) => v === val) || [""];
+  return key as K;
 }
 
 const rawData = [
@@ -128,7 +132,13 @@ export interface CoverageType {
   types: Type[];
 }
 
-export function objectToCoverageType(obj: unknown): CoverageType {
+export function objectToCoverageType({
+  obj,
+  t,
+}: {
+  obj: unknown;
+  t: (key: string) => string;
+}): CoverageType {
   const {
     number = "",
     name = "",
@@ -137,9 +147,10 @@ export function objectToCoverageType(obj: unknown): CoverageType {
     type3 = "",
   } = obj as Record<string, string | undefined>;
   const types = removeNones(
-    [type1, type2, type3]
-      .filter((t) => t)
-      .map((t) => stringToType(t, Type.NONE))
+    typesFromUserInput({
+      types: [type1, type2, type3].join(" "),
+      t,
+    })
   );
   return { number, name, types };
 }
