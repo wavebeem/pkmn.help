@@ -195,7 +195,7 @@ export default function App() {
                     setOfflineReady(false);
                   }}
                 >
-                  {t("banners.offlineReady.description")}
+                  {t("banners.offlineReady.dismiss")}
                 </Button>
               </div>
             )}
