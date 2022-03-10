@@ -10,6 +10,9 @@
     }
   },
   "pokedex": {
+    "search": {
+      "description": "名前・番号・タイプで検索できます"
+    },
     "stats": {
       "hp": "HP",
       "hpLong": "HP",
