@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 import {
   CoverageType,
   objectToCoverageType,
+  reverseClosestLookup,
   Type,
   typesFromUserInput,
 } from "./data";
@@ -100,20 +101,25 @@ export default function ScreenWeaknessCoverage({
       header: true,
       skipEmptyLines: true,
       transformHeader: (header) => {
-        return closest(header.toLowerCase().replace(/[a-z0-9]/i, ""), [
-          "number",
-          "name",
-          "type1",
-          "type2",
-          "type3",
-        ]);
+        const map = {
+          number: t("coverage.csvHeaders.number"),
+          name: t("coverage.csvHeaders.name"),
+          type1: t("coverage.csvHeaders.type1"),
+          type2: t("coverage.csvHeaders.type2"),
+          type3: t("coverage.csvHeaders.type3"),
+        };
+        const key = header.toLowerCase().replace(/[a-z0-9]/i, "");
+        return reverseClosestLookup(key, map);
       },
       transform: (value, field) => {
+        console.log({ [field]: value });
         if (field === "type1") {
-          return [...typesFromUserInput({ types: value, t }), Type.NORMAL][0];
+          const [type = Type.NORMAL] = typesFromUserInput({ types: value, t });
+          return type;
         }
         if (field === "type2" || field === "type3") {
-          return [...typesFromUserInput({ types: value, t }), Type.NONE][0];
+          const [type = Type.NONE] = typesFromUserInput({ types: value, t });
+          return type;
         }
         return value;
       },
@@ -125,6 +131,8 @@ export default function ScreenWeaknessCoverage({
     const newCoverageTypes = result.data.map((obj) => {
       return objectToCoverageType({ obj, t });
     });
+    console.log({ newCoverageTypes });
+
     setStatusText(
       t("coverage.status.imported", {
         n: newCoverageTypes.length,

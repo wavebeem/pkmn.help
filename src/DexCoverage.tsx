@@ -26,7 +26,7 @@ function DexCoverage({ coverageTypes, types, isLoading }: DexCoverageProps) {
       <PercentBar value={count} max={total} />
       <div className="flex items-center">
         {isLoading ? (
-          <div className="flex-auto tc">Loading...</div>
+          <div className="flex-auto tc">{t("general.loading")}</div>
         ) : (
           <>
             <div className="tl mr2 w3">{percent}%</div>

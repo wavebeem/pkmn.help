@@ -1,5 +1,14 @@
 {
   "title": "ポケモン・タイプ・けいさんき",
+  "coverage": {
+    "csvHeaders": {
+      "number": "TODO:数字",
+      "name": "TODO:名前",
+      "type1": "TODO:タイプ１",
+      "type2": "TODO:タイプ２",
+      "type3": "TODO:タイプ３"
+    }
+  },
   "types": {
     "normal": "ノーマル",
     "fighting": "かくとう",

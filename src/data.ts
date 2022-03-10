@@ -56,9 +56,10 @@ export function typesFromUserInput({
   const map = Object.fromEntries(
     typesOrNone.map((type) => [type, t(`types.${type}`)])
   );
-  return types.split(/\s+/).map((type) => {
-    return reverseClosestLookup(type, map) as Type;
-  });
+  return types
+    .split(/\s+/)
+    .filter((s) => s)
+    .map((type) => reverseClosestLookup(type, map) as Type);
 }
 
 export const types = [
@@ -146,12 +147,7 @@ export function objectToCoverageType({
     type2 = "",
     type3 = "",
   } = obj as Record<string, string | undefined>;
-  const types = removeNones(
-    typesFromUserInput({
-      types: [type1, type2, type3].join(" "),
-      t,
-    })
-  );
+  const types = removeNones([type1, type2, type3].filter((s) => s) as Type[]);
   return { number, name, types };
 }
 

@@ -77,11 +77,12 @@ export default function App() {
   >([]);
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
 
+  console.log(coverageTypes);
+
   const [language] = useLanguage();
 
   React.useEffect(() => {
     i18n.changeLanguage(language);
-    // i18n.changeLanguage("cimode");
   }, [language, i18n]);
 
   // Theme stuff

@@ -39,7 +39,7 @@
     },
     "filename": "pkmn.help type coverage.csv",
     "status": {
-      "imported": "Imported {{ n }} Pokémon forms from \"{{ file }}\"",
+      "imported": "Imported {{ n }} Pokémon forms from “{{ file }}”",
       "exported": "Exported default Pokémon forms",
       "reset": "Loaded default Pokémon forms",
       "errored": "Error loading CSV. Don't change header names."
@@ -206,5 +206,8 @@
     "dark": "Dark",
     "fairy": "Fairy",
     "none": "None"
+  },
+  "general": {
+    "loading": "Loading…"
   }
 }
