@@ -151,11 +151,12 @@ export interface DefenseProps {
 }
 
 export function Defense({ types, fallbackCoverageTypes }: DefenseProps) {
+  const { t } = useTranslation();
   return (
     <Matchups
       kind="defense"
       types={types}
-      formatTitle={(x) => `Takes ${x} From`}
+      formatTitle={(x) => t("defense.takesXFrom", { x })}
       matchups={defensiveMatchups(types)}
       fallbackCoverageTypes={fallbackCoverageTypes}
       isLoading={false}
@@ -177,12 +178,13 @@ export function Offense({
   fallbackCoverageTypes,
   isLoading,
 }: OffenseProps) {
+  const { t } = useTranslation();
   return (
     <Matchups
       kind="offense"
       types={types}
       coverageTypes={coverageTypes}
-      formatTitle={(x) => `Deals ${x} to`}
+      formatTitle={(x) => t("offense.dealsXTo", { x })}
       matchups={offensiveMatchups(types)}
       fallbackCoverageTypes={fallbackCoverageTypes}
       isLoading={isLoading}

@@ -81,6 +81,7 @@ export default function App() {
 
   React.useEffect(() => {
     i18n.changeLanguage(language);
+    // i18n.changeLanguage("cimode");
   }, [language, i18n]);
 
   // Theme stuff

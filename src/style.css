@@ -461,6 +461,7 @@ button {
   appearance: none;
   width: 1rem;
   height: 1rem;
+  flex: none;
   background: var(--type-color);
   border: 1px solid var(--color-vibrant-border1);
 }
