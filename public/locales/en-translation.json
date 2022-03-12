@@ -10,6 +10,7 @@
     "chooseTypes": "Choose Types",
     "weaknessCoverage": "Weakness Coverage",
     "weaknessCoverageEdit": "Edit",
+    "weaknessCoverageEditLong": "Edit weakness coverage",
     "weaknessCoverageForms": "{{ count }} / {{ total }} forms",
     "dealsXTo": "Deals {{ x }} to"
   },
@@ -55,7 +56,8 @@
   "pokedex": {
     "search": {
       "description": "Search by name, number, or types",
-      "help": "Help"
+      "help": "Help",
+      "helpLong": "Help, search Pokédex"
     },
     "bulbapedia": {
       "label": "Bulbapedia page for {{ pokemon }}"
@@ -170,6 +172,7 @@
     "thanks": {
       "heading": "Special Thanks",
       "credits": {
+        "minamorl": "Minamorl (Japanese translation)",
         "jansjo": "Jansjo (testing, research)",
         "other": "Several anonymous Poké Fans"
       }

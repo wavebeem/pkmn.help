@@ -223,7 +223,7 @@ export default function ScreenPokedex({
         <Link
           to="/pokedex/help/"
           className="underline fg-link OutlineFocus"
-          aria-label="Help, search Pokédex"
+          aria-label={t("pokedex.search.helpLong")}
         >
           {t("pokedex.search.help")}
         </Link>

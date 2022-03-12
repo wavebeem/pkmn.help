@@ -2,6 +2,7 @@ import classNames from "classnames";
 import * as React from "react";
 import { IconSearch } from "./IconSearch";
 import { IconClear } from "./IconClear";
+import { useTranslation } from "react-i18next";
 
 interface SearchProps {
   updateSearch: (search: string) => void;
@@ -9,6 +10,7 @@ interface SearchProps {
 }
 
 export default function Search({ updateSearch, search }: SearchProps) {
+  const { t } = useTranslation();
   const ref = React.useRef<HTMLInputElement>(null);
   const iconSize = 24;
   const inputHeight = 36;
@@ -22,7 +24,7 @@ export default function Search({ updateSearch, search }: SearchProps) {
         style={{ left: 10, top: 8 }}
       />
       <input
-        aria-label="Search by name, number, or types"
+        aria-label={t("pokedex.search.description")}
         type="text"
         autoComplete="off"
         autoCorrect="off"

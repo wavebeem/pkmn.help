@@ -11,7 +11,16 @@
   },
   "pokedex": {
     "search": {
-      "description": "名前・番号・タイプで検索できます"
+      "description": "名前・番号・タイプで検索できます",
+      "help": "ヘルプ"
+    },
+    "pagination": {
+      "next": "次",
+      "nextLong": "次",
+      "previous": "前",
+      "previousLong": "前",
+      "firstLong": "最初",
+      "lastLong": "最終"
     },
     "stats": {
       "hp": "HP",

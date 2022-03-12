@@ -55,6 +55,7 @@ function PageSelector({
         }}
         disabled={!hasPrev}
         to={urlForPage(0)}
+        title={t("pokedex.pagination.firstLong")}
         aria-label={t("pokedex.pagination.firstLong")}
       >
         &laquo;
@@ -94,6 +95,7 @@ function PageSelector({
         }}
         disabled={!hasNext}
         to={urlForPage(numPages - 1)}
+        title={t("pokedex.pagination.lastLong")}
         aria-label={t("pokedex.pagination.lastLong")}
       >
         &raquo;
