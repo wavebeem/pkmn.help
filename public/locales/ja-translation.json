@@ -1,5 +1,11 @@
 {
   "title": "ポケモン・タイプ・けいさんき",
+  "navigation": {
+    "offense": "オフェンス",
+    "defense": "デフェンス",
+    "pokedex": "ポケモン図鑑",
+    "more": "その他"
+  },
   "coverage": {
     "csvHeaders": {
       "number": "TODO:数字",

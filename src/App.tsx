@@ -30,15 +30,15 @@ const bannerClass = classNames([
 
 const tabClass = classNames([
   "no-underline",
-  "pv2 ph2 f5",
+  "pv1 ph2 f5",
   "TabFocus",
   "b bn",
-  "br--top br2",
+  "br-pill br2",
   "bg-transparent",
-  "fg3 bottom-border-thick",
+  "fg3",
 ]);
 
-const tabClassActive = classNames(["fg1 bottom-border-thick-current"]);
+const tabClassActive = classNames(["TabBar-Item-Selected"]);
 
 function getFallback(key: string): string {
   if (key === "title") {
@@ -132,7 +132,7 @@ export default function App() {
             "flex justify-center",
             "bg1",
             "bb border2 TabBar",
-            "pt3",
+            "pb2 ph2",
           ])}
         >
           <NavLink
