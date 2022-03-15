@@ -32,7 +32,7 @@ const tabClass = classNames([
   "no-underline",
   "pv1 ph2 f5",
   "TabFocus",
-  "b bn",
+  "tc b bn",
   "br-pill br2",
   "bg-transparent",
   "fg3",
@@ -127,14 +127,7 @@ export default function App() {
             {t("title")}
           </Link>
         </h1>
-        <nav
-          className={classNames([
-            "flex justify-center",
-            "bg1",
-            "bb border2 TabBar",
-            "pb2 ph2",
-          ])}
-        >
+        <nav className={classNames(["bg1", "bb border2 TabBar", "pb2 ph2"])}>
           <NavLink
             className={tabClass}
             activeClassName={tabClassActive}
