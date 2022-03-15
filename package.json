@@ -8,6 +8,7 @@
     "scrape-bulba": "ts-node ./bin/scrape-bulba.ts",
     "scrape-pokeapi": "ts-node ./bin/scrape-pokeapi.ts",
     "scrape-pokeapi:local": "API=http://localhost:8000/api/v2/ npm run -s scrape-pokeapi",
+    "make-language-csv": "ts-node ./bin/make-language-csv.ts",
     "i18n-scrape": "i18next",
     "fetch-images": "ts-node ./bin/fetch-images.ts",
     "upgrade": "npm-check -u",

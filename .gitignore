@@ -4,6 +4,7 @@ node_modules/
 
 /bundle.*
 /favicon-*.png
+/*.csv
 
 .DS_Store
 
