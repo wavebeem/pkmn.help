@@ -59,7 +59,7 @@ export default function ScreenMore(): JSX.Element {
             homepage: (
               <a
                 href="https://www.wavebeem.com"
-                className="underline fg-link OutlineFocus"
+                className="br1 underline fg-link OutlineFocus"
               />
             ),
           }}
@@ -71,7 +71,7 @@ export default function ScreenMore(): JSX.Element {
           components={{
             email: (
               <a
-                className="underline fg-link OutlineFocus"
+                className="br1 underline fg-link OutlineFocus"
                 href="mailto:pkmn@wavebeem.com"
               />
             ),
@@ -148,7 +148,7 @@ export default function ScreenMore(): JSX.Element {
             plausible: (
               <a
                 href="https://plausible.io/privacy"
-                className="underline fg-link OutlineFocus"
+                className="br1 underline fg-link OutlineFocus"
               />
             ),
           }}
@@ -173,7 +173,7 @@ export default function ScreenMore(): JSX.Element {
             github: (
               <a
                 href="https://github.com/wavebeem/pkmn.help"
-                className="underline fg-link OutlineFocus"
+                className="br1 underline fg-link OutlineFocus"
               />
             ),
           }}
@@ -191,7 +191,7 @@ export default function ScreenMore(): JSX.Element {
           components={{
             pokeapi: (
               <a
-                className="underline fg-link OutlineFocus"
+                className="br1 underline fg-link OutlineFocus"
                 href="https://pokeapi.co/"
               />
             ),
@@ -205,7 +205,7 @@ export default function ScreenMore(): JSX.Element {
           components={{
             wavebeem: (
               <a
-                className="underline fg-link OutlineFocus"
+                className="br1 underline fg-link OutlineFocus"
                 href="https://www.wavebeem.com"
               />
             ),

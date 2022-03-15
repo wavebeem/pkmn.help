@@ -273,6 +273,7 @@ button {
 }
 
 .TabBar-Item-Selected {
+  border-color: var(--color-fg1);
   background: var(--color-fg1);
   color: var(--color-bg1);
 }

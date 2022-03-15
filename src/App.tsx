@@ -32,10 +32,9 @@ const tabClass = classNames([
   "no-underline",
   "pv1 ph2 f5",
   "TabFocus",
-  "tc b bn",
-  "br-pill br2",
-  "bg-transparent",
-  "fg3",
+  "tc b",
+  "ba border1 br-pill",
+  "bg1 fg1",
 ]);
 
 const tabClassActive = classNames(["TabBar-Item-Selected"]);
@@ -123,7 +122,7 @@ export default function App() {
           <meta name="theme-color" content={themeColor} />
         </Helmet>
         <h1 className="f3-ns f4 tc relative white PokeballHeader">
-          <Link to="/" className="no-underline white OutlineFocus">
+          <Link to="/" className="no-underline white OutlineFocus br1">
             {t("title")}
           </Link>
         </h1>

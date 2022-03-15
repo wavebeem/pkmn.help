@@ -93,7 +93,7 @@ function Monster({ pokemon }: MonsterProps) {
             aria-label={t("pokedex.bulbapedia.label", {
               replace: { pokemon: pokemonName },
             })}
-            className="underline fg-link OutlineFocus"
+            className="br1 underline fg-link OutlineFocus"
             href={pokemon.bulbapediaURL}
           >
             Bulbapedia
@@ -105,7 +105,7 @@ function Monster({ pokemon }: MonsterProps) {
             aria-label={t("pokedex.offense.label", {
               replace: { pokemon: pokemonName },
             })}
-            className="underline fg-link OutlineFocus"
+            className="br1 underline fg-link OutlineFocus"
             to={`/offense/?${params}#matchup-offense`}
           >
             {t("pokedex.offense.text")}
@@ -117,7 +117,7 @@ function Monster({ pokemon }: MonsterProps) {
             aria-label={t("pokedex.defense.label", {
               replace: { pokemon: pokemonName },
             })}
-            className="underline fg-link OutlineFocus"
+            className="br1 underline fg-link OutlineFocus"
             to={`/defense/?${params}#matchup-defense`}
           >
             {t("pokedex.defense.text")}
@@ -222,7 +222,7 @@ export default function ScreenPokedex({
         </span>
         <Link
           to="/pokedex/help/"
-          className="underline fg-link OutlineFocus ml3 flex-none"
+          className="br1 underline fg-link OutlineFocus ml3 flex-none"
           aria-label={t("pokedex.search.helpLong")}
         >
           {t("pokedex.search.help")}
