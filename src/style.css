@@ -266,7 +266,8 @@ button {
   gap: 0.5rem;
   flex-wrap: wrap;
   padding: 1rem;
-  padding-top: 1.5rem;
+  padding-bottom: 0.75rem;
+  padding-top: 1.25rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
