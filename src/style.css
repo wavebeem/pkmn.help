@@ -348,7 +348,7 @@ button {
 
 .PokeballHeader {
   --PokeballHeader-borderSize: 8px;
-  --PokeballHeader-circleSize: 30px;
+  --PokeballHeader-circleSize: 24px;
   background-color: var(--color-pokeball);
   border-bottom: var(--PokeballHeader-borderSize) solid #111;
   padding: 1rem;
