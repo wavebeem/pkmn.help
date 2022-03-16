@@ -254,14 +254,6 @@ button {
   user-select: none;
 }
 
-.bottom-border-thick {
-  border-bottom: 4px solid transparent;
-}
-
-.bottom-border-thick-current {
-  border-bottom: 4px solid currentColor;
-}
-
 .img-crisp {
   /* https://caniuse.com/css-crisp-edges */
   image-rendering: crisp-edges;
@@ -271,7 +263,20 @@ button {
 .TabBar {
   border-color: var(--color-border2);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  padding-bottom: 0.75rem;
   padding-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+.TabBar-Item-Selected {
+  border-color: var(--color-fg1);
+  background: var(--color-fg1);
+  color: var(--color-bg1);
 }
 
 .StatsTable {
@@ -289,6 +294,10 @@ button {
 @media (min-width: 600px) {
   .ButtonGrid {
     grid-template-columns: 1fr 4fr;
+  }
+
+  .TabBar {
+    display: flex;
   }
 }
 
@@ -340,7 +349,7 @@ button {
 
 .PokeballHeader {
   --PokeballHeader-borderSize: 8px;
-  --PokeballHeader-circleSize: 30px;
+  --PokeballHeader-circleSize: 24px;
   background-color: var(--color-pokeball);
   border-bottom: var(--PokeballHeader-borderSize) solid #111;
   padding: 1rem;
@@ -461,6 +470,7 @@ button {
   appearance: none;
   width: 1rem;
   height: 1rem;
+  flex: none;
   background: var(--type-color);
   border: 1px solid var(--color-vibrant-border1);
 }
@@ -490,8 +500,8 @@ input[type="radio"].RadioCheckType {
 }
 
 .TabFocus:focus-within {
-  outline: 2px solid currentColor;
-  outline-offset: -2px;
+  outline: 2px solid var(--color-fg1);
+  outline-offset: 2px;
 }
 
 .OutlineFocus:focus-within {

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { CoverageType, matchupFor, Type } from "./data";
 import { PercentBar } from "./PercentBar";
 
@@ -8,11 +9,9 @@ interface DexCoverageProps {
   isLoading: boolean;
 }
 
-const DexCoverage: React.FC<DexCoverageProps> = ({
-  coverageTypes,
-  types,
-  isLoading,
-}) => {
+// TODO: Translation
+function DexCoverage({ coverageTypes, types, isLoading }: DexCoverageProps) {
+  const { t } = useTranslation();
   const count = coverageTypes.filter((ct) => {
     const matchups = types.map((t) => matchupFor(ct.types, t));
     return matchups.some((effectiveness) => {
@@ -27,18 +26,18 @@ const DexCoverage: React.FC<DexCoverageProps> = ({
       <PercentBar value={count} max={total} />
       <div className="flex items-center">
         {isLoading ? (
-          <div className="flex-auto tc">Loading...</div>
+          <div className="flex-auto tc">{t("general.loading")}</div>
         ) : (
           <>
             <div className="tl mr2 w3">{percent}%</div>
             <div className="flex-auto tr">
-              {count} / {total} forms
+              {t("offense.weaknessCoverageForms", { count, total })}
             </div>
           </>
         )}
       </div>
     </div>
   );
-};
+}
 
 export default DexCoverage;

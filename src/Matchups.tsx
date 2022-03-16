@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
 import {
@@ -16,6 +17,7 @@ interface BadgeProps {
 }
 
 function Badge({ type }: BadgeProps) {
+  const { t } = useTranslation();
   return (
     <div
       className={classNames(
@@ -32,13 +34,13 @@ function Badge({ type }: BadgeProps) {
       }}
     >
       <div
-        className="br1 ba b--transparent white"
+        className="br1 ba b--transparent white truncate"
         style={{
           background: typeColorBG(type),
           borderColor: typeColorBorder(type),
         }}
       >
-        {type}
+        {t(`types.${type}`)}
       </div>
     </div>
   );
@@ -84,20 +86,21 @@ function Matchups({
   fallbackCoverageTypes,
   isLoading,
 }: MatchupsProps) {
+  const { t } = useTranslation();
   return (
     <div className="tc pt2" id={`matchup-${kind}`}>
       {kind === "offense" ? (
         <div>
           <h2 className="f5 mt3 mb0">
-            Weakness Coverage{" "}
+            {t("offense.weaknessCoverage")}{" "}
             <span className="normal">
               (
               <Link
                 to="/offense/coverage/"
                 className="underline fg-link OutlineFocus"
-                aria-label="Edit weakness coverage"
+                aria-label={t("offense.weaknessCoverageEditLong")}
               >
-                Edit
+                {t("offense.weaknessCoverageEdit")}
               </Link>
               )
             </span>
@@ -148,11 +151,12 @@ export interface DefenseProps {
 }
 
 export function Defense({ types, fallbackCoverageTypes }: DefenseProps) {
+  const { t } = useTranslation();
   return (
     <Matchups
       kind="defense"
       types={types}
-      formatTitle={(x) => `Takes ${x} From`}
+      formatTitle={(x) => t("defense.takesXFrom", { x })}
       matchups={defensiveMatchups(types)}
       fallbackCoverageTypes={fallbackCoverageTypes}
       isLoading={false}
@@ -174,12 +178,13 @@ export function Offense({
   fallbackCoverageTypes,
   isLoading,
 }: OffenseProps) {
+  const { t } = useTranslation();
   return (
     <Matchups
       kind="offense"
       types={types}
       coverageTypes={coverageTypes}
-      formatTitle={(x) => `Deals ${x} to`}
+      formatTitle={(x) => t("offense.dealsXTo", { x })}
       matchups={offensiveMatchups(types)}
       fallbackCoverageTypes={fallbackCoverageTypes}
       isLoading={isLoading}

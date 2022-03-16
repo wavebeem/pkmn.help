@@ -46,12 +46,20 @@ export function typesFromString(str: string): Type[] {
   return [...new Set(str.split(/\s+/).filter(isType))];
 }
 
-function isTypeOrNone(str: string): str is Type {
-  return typesOrNone.some((t) => t === str);
-}
-
-export function typesOrNoneFromString(str: string): Type[] {
-  return str.split(/\s+/).filter(isTypeOrNone);
+export function typesFromUserInput({
+  types,
+  t,
+}: {
+  types: string;
+  t: (key: string) => string;
+}): Type[] {
+  const map = Object.fromEntries(
+    typesOrNone.map((type) => [type, t(`types.${type}`)])
+  );
+  return types
+    .split(/\s+/)
+    .filter((s) => s)
+    .map((type) => reverseClosestLookup(type, map) as Type);
 }
 
 export const types = [
@@ -77,12 +85,21 @@ export const types = [
 
 export const typesOrNone = [...types, Type.NONE];
 
-export function stringToType(string: string, fallback: Type): Type {
-  string = string.toLowerCase().replace(/[^a-z]/, "");
-  if (string === "") {
-    return fallback;
-  }
-  return closest(string, typesOrNone) as Type;
+// whatYouMeant("こおり", {
+//   ice: "こおり",
+//   fire: "ほのお"
+// });
+
+// find closest(key, Object.values(obj)))
+// return key of first value that matches
+
+export function reverseClosestLookup<K extends string, V extends string>(
+  value: V,
+  obj: Record<K, V>
+): K {
+  const val = closest(value, Object.values(obj));
+  const [key] = Object.entries<V>(obj).find(([, v]) => v === val) || [""];
+  return key as K;
 }
 
 const rawData = [
@@ -116,7 +133,13 @@ export interface CoverageType {
   types: Type[];
 }
 
-export function objectToCoverageType(obj: unknown): CoverageType {
+export function objectToCoverageType({
+  obj,
+  t,
+}: {
+  obj: unknown;
+  t: (key: string) => string;
+}): CoverageType {
   const {
     number = "",
     name = "",
@@ -124,11 +147,7 @@ export function objectToCoverageType(obj: unknown): CoverageType {
     type2 = "",
     type3 = "",
   } = obj as Record<string, string | undefined>;
-  const types = removeNones(
-    [type1, type2, type3]
-      .filter((t) => t)
-      .map((t) => stringToType(t, Type.NONE))
-  );
+  const types = removeNones([type1, type2, type3].filter((s) => s) as Type[]);
   return { number, name, types };
 }
 

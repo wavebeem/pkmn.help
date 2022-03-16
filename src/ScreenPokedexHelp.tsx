@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 interface ScreenPokdexHelpProps {
@@ -8,51 +9,46 @@ interface ScreenPokdexHelpProps {
 export default function ScreenPokdexHelp({
   pokedexParams,
 }: ScreenPokdexHelpProps) {
+  const { t } = useTranslation();
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f4">Search by name</h2>
-      <p>
-        You can search for a Pokémon by name. If you only remember part of the
-        Pokémon&apos;s name, It can still probably find it for you. It
-        can&apos;t deal with typos right now though.
-      </p>
-      <h2 className="lh-title f4">Search by number</h2>
-      <p>
-        Search by national dex number. If you want Bulbsaur, just type <i>1</i>,
-        not <i>#001</i>.
-      </p>
-      <h2 className="lh-title f4">Search by type</h2>
-      <p>Here are a few examples of how to seach by type.</p>
+      <h2 className="lh-title f4">{t("pokedexHelp.searchByName.heading")}</h2>
+      <p>{t("pokedexHelp.searchByName.description")}</p>
+
+      <h2 className="lh-title f4">{t("pokedexHelp.searchByNumber.heading")}</h2>
+      <p>{t("pokedexHelp.searchByNumber.description")}</p>
+
+      <h2 className="lh-title f4">{t("pokedexHelp.searchByType.heading")}</h2>
+      <p>{t("pokedexHelp.searchByType.description")}</p>
+
       <ul className="pl3">
         <li>
-          <code className="dib br2 ph2 bg3">fire</code>
-          <p>
-            Search for Pokémon that have a fire as either of their types in any
-            form (e.g. Charmander, Charizard, Rotom).
-          </p>
+          <code className="dib br2 ph2 bg3">
+            {t("pokedexHelp.searchExamples.type.query")}
+          </code>
+          <p>{t("pokedexHelp.searchExamples.type.description")}</p>
         </li>
         <li>
-          <code className="dib br2 ph2 bg3">water flying</code>
-          <p>
-            Search for Pokémon that are either water/flying (e.g. Gyarados) or
-            flying/water (e.g. Cramorant).
-          </p>
+          <code className="dib br2 ph2 bg3">
+            {t("pokedexHelp.searchExamples.doubleType.query")}
+          </code>
+          <p>{t("pokedexHelp.searchExamples.doubleType.description")}</p>
         </li>
         <li>
-          <code className="dib br2 ph2 bg3">grass none</code>
-          <p>
-            Search for Pokémon that are only grass type, no 2nd type (e.g.
-            Tangela, Chikorita).
-          </p>
+          <code className="dib br2 ph2 bg3">
+            {t("pokedexHelp.searchExamples.singleType.query")}
+          </code>
+          <p>{t("pokedexHelp.searchExamples.singleType.description")}</p>
         </li>
       </ul>
+
       <p>
         <b aria-hidden="true">&larr;</b>{" "}
         <Link
           to={`/pokedex/${pokedexParams}`}
           className="underline fg-link OutlineFocus"
         >
-          Back to Pokédex
+          {t("pokedexHelp.back")}
         </Link>
       </p>
     </main>

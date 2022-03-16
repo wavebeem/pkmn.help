@@ -1,9 +1,15 @@
 import classNames from "classnames";
-import { closest } from "fastest-levenshtein";
 import Papa from "papaparse";
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { CoverageType, objectToCoverageType, stringToType, Type } from "./data";
+import {
+  CoverageType,
+  objectToCoverageType,
+  reverseClosestLookup,
+  Type,
+  typesFromUserInput,
+} from "./data";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
 import { useTypeCount } from "./useTypeCount";
@@ -31,10 +37,11 @@ export default function ScreenWeaknessCoverage({
   fallbackCoverageTypes,
   isLoading,
 }: WeaknessCoverageProps) {
+  const { t } = useTranslation();
   const [lastUpdated, setLastUpdated] = React.useState(new Date());
   const [statusText, setStatusText] = React.useState("");
   const [typeCount] = useTypeCount();
-  const statusRef = React.useRef<HTMLParagraphElement | null>(null);
+  const statusRef = React.useRef<HTMLParagraphElement>(null);
 
   React.useEffect(() => {
     if (statusRef.current instanceof HTMLElement) {
@@ -43,17 +50,27 @@ export default function ScreenWeaknessCoverage({
   }, [lastUpdated]);
 
   function saveCSV() {
-    const fields = ["Number", "Name", "Type 1", "Type 2"];
+    const fields = [
+      t("coverage.csvHeaders.number"),
+      t("coverage.csvHeaders.name"),
+      t("coverage.csvHeaders.type1"),
+      t("coverage.csvHeaders.type2"),
+    ];
     if (Number(typeCount) === 3) {
-      fields.push("Type 3");
+      fields.push(t("coverage.csvHeaders.type3"));
     }
     const csv = Papa.unparse(
       {
         fields,
-        data: fallbackCoverageTypes.map((t) => {
-          const data = [t.number, t.name, t.types[0], t.types[1] || ""];
+        data: fallbackCoverageTypes.map((pkmn) => {
+          const data = [
+            pkmn.number,
+            pkmn.name,
+            t(`types.${pkmn.types[0]}`),
+            pkmn.types[1] ? t(`types.${pkmn.types[1]}`) : "",
+          ];
           if (Number(typeCount) === 3) {
-            data.push(t.types[2] || "");
+            data.push(pkmn.types[2] ? t(`types.${pkmn.types[2]}`) : "");
           }
           return data;
         }),
@@ -64,11 +81,11 @@ export default function ScreenWeaknessCoverage({
       }
     );
     saveFile({
-      filename: "pkmn.help type coverage.csv",
+      filename: t("coverage.filename"),
       type: "text/csv",
       data: csv,
     });
-    setStatusText("Exported default Pokémon forms");
+    setStatusText(t("coverage.status.exported"));
     setLastUpdated(new Date());
   }
 
@@ -82,59 +99,58 @@ export default function ScreenWeaknessCoverage({
       header: true,
       skipEmptyLines: true,
       transformHeader: (header) => {
-        return closest(header.toLowerCase().replace(/[a-z0-9]/i, ""), [
-          "number",
-          "name",
-          "type1",
-          "type2",
-          "type3",
-        ]);
+        const map = {
+          number: t("coverage.csvHeaders.number"),
+          name: t("coverage.csvHeaders.name"),
+          type1: t("coverage.csvHeaders.type1"),
+          type2: t("coverage.csvHeaders.type2"),
+          type3: t("coverage.csvHeaders.type3"),
+        };
+        const key = header.toLowerCase().replace(/[a-z0-9]/i, "");
+        return reverseClosestLookup(key, map);
       },
       transform: (value, field) => {
         if (field === "type1") {
-          return stringToType(value, Type.NORMAL);
+          const [type = Type.NORMAL] = typesFromUserInput({ types: value, t });
+          return type;
         }
         if (field === "type2" || field === "type3") {
-          return stringToType(value, Type.NONE);
+          const [type = Type.NONE] = typesFromUserInput({ types: value, t });
+          return type;
         }
         return value;
       },
     });
     if (result.errors.length > 0) {
-      alert("Error loading CSV. Don't change header names.");
+      alert(t("coverage.status.errored"));
       return;
     }
-    const newCoverageTypes = result.data.map(objectToCoverageType);
+    const newCoverageTypes = result.data.map((obj) => {
+      return objectToCoverageType({ obj, t });
+    });
+
     setStatusText(
-      `Imported ${newCoverageTypes.length} Pokémon forms from "${file.name}"`
+      t("coverage.status.imported", {
+        n: newCoverageTypes.length,
+        file: file.name,
+      })
     );
     setCoverageTypes(newCoverageTypes);
     setLastUpdated(new Date());
   }
 
   function loadDefault() {
-    setStatusText("Loaded default Pokémon forms");
+    setStatusText(t("coverage.status.reset"));
     setCoverageTypes(fallbackCoverageTypes);
     setLastUpdated(new Date());
   }
 
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f5">Weakness Coverage</h2>
-      <p>
-        Import/export custom Pokédex CSV files to see weakness coverage for
-        different Pokémon. Create a custom CSV file with just the OU tier
-        Pokémon, or even create your own Pokémon from scratch.
-      </p>
-      <p>
-        CSV data is loaded by column header name, not column order, so you can
-        add or re-order columns if you want (e.g. add a &quot;tier&quot; column,
-        or a &quot;notes&quot; column).
-      </p>
-      <p>
-        CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice,
-        LibreOffice, Notepad, and more.
-      </p>
+      <h2 className="lh-title f5">{t("coverage.heading")}</h2>
+      <p>{t("coverage.paragraph1")}</p>
+      <p>{t("coverage.paragraph2")}</p>
+      <p>{t("coverage.paragraph3")}</p>
       {isLoading ? (
         <div className="Spinner center mt4 f2" />
       ) : (
@@ -146,9 +162,9 @@ export default function ScreenWeaknessCoverage({
               saveCSV();
             }}
           >
-            Export
+            {t("coverage.export.button")}
           </button>
-          <span>Export the default Pokédex to a CSV file</span>
+          <span>{t("coverage.export.description")}</span>
 
           <button
             type="button"
@@ -157,9 +173,9 @@ export default function ScreenWeaknessCoverage({
               loadCSV();
             }}
           >
-            Import
+            {t("coverage.import.button")}
           </button>
-          <span>Import an edited Pokédex CSV file</span>
+          <span>{t("coverage.import.description")}</span>
 
           <button
             type="button"
@@ -168,9 +184,9 @@ export default function ScreenWeaknessCoverage({
               loadDefault();
             }}
           >
-            Reset
+            {t("coverage.reset.button")}
           </button>
-          <span>Reset to the default Pokédex</span>
+          <span>{t("coverage.reset.description")}</span>
         </div>
       )}
       <p className="f4 b" hidden={!statusText} ref={statusRef}>
@@ -182,7 +198,7 @@ export default function ScreenWeaknessCoverage({
           to={`/offense/${offenseParams}`}
           className="underline fg-link OutlineFocus"
         >
-          Back to offense
+          {t("coverage.back")}
         </Link>
       </p>
     </main>

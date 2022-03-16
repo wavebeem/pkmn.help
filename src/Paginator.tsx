@@ -1,5 +1,6 @@
 import classNames from "classnames";
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { LinkButton } from "./LinkButton";
 
 enum Location {
@@ -28,9 +29,9 @@ function PageSelector({
 }: PageSelectorProps) {
   // Attempt to stay anchored to the top or bottom of the page when using
   // pagination buttons to avoid the screen jumping around and stuff
-  const [scrollTo, setScrollTo] = React.useState<Location | undefined>(
-    undefined
-  );
+  const [scrollTo, setScrollTo] = React.useState<Location>();
+
+  const { t } = useTranslation();
 
   React.useLayoutEffect(() => {
     if (scrollTo === Location.TOP) {
@@ -54,7 +55,8 @@ function PageSelector({
         }}
         disabled={!hasPrev}
         to={urlForPage(0)}
-        aria-label="First"
+        title={t("pokedex.pagination.firstLong")}
+        aria-label={t("pokedex.pagination.firstLong")}
       >
         &laquo;
       </LinkButton>
@@ -65,9 +67,10 @@ function PageSelector({
         }}
         disabled={!hasPrev}
         to={urlForPage(currentPage - 1)}
-        aria-label="Previous"
+        aria-label={t("pokedex.pagination.previousLong")}
       >
-        <span role="presentation">&lsaquo; </span>Prev
+        <span aria-hidden="true">&lsaquo; </span>
+        {t("pokedex.pagination.previous")}
       </LinkButton>
       <div className="flex-auto tc b f5 tabular-nums">
         {(currentPage + 1).toString().padStart(numPages.toString().length, "0")}
@@ -80,9 +83,10 @@ function PageSelector({
         }}
         disabled={!hasNext}
         to={urlForPage(currentPage + 1)}
-        aria-label="Next"
+        aria-label={t("pokedex.pagination.nextLong")}
       >
-        Next<span role="presentation"> &rsaquo;</span>
+        {t("pokedex.pagination.next")}
+        <span aria-hidden="true"> &rsaquo;</span>
       </LinkButton>
       <div className="pr1" />
       <LinkButton
@@ -91,7 +95,8 @@ function PageSelector({
         }}
         disabled={!hasNext}
         to={urlForPage(numPages - 1)}
-        aria-label="Last"
+        title={t("pokedex.pagination.lastLong")}
+        aria-label={t("pokedex.pagination.lastLong")}
       >
         &raquo;
       </LinkButton>

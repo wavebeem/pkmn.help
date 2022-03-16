@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Trans, useTranslation } from "react-i18next";
 import { Button } from "./Button";
 import { Select } from "./Select";
 import { useLanguage } from "./useLanguage";
@@ -26,79 +27,67 @@ interface Language {
 
 const languages: Language[] = [
   { title: "English", value: "en" },
-  { title: "Japanese", value: "ja" },
-  { title: "Japanese (Hiragana/Katakana)", value: "ja-Hrkt" },
-  { title: "Chinese (Simplified)", value: "zh-Hans" },
-  { title: "Chinese (Traditional)", value: "zh-Hant" },
-  { title: "French", value: "fr" },
-  { title: "German", value: "de" },
-  { title: "Italian", value: "it" },
-  { title: "Korean", value: "ko" },
-  { title: "Spanish", value: "es" },
+  { title: "日本語 (Japanese)", value: "ja" },
+  { title: "にほんご (Japanese Kana-only)", value: "ja-Hrkt" },
+  { title: "汉语 (Simplified Chinese)", value: "zh-Hans" },
+  { title: "漢語 (Traditional Chinese)", value: "zh-Hant" },
+  { title: "Français (French)", value: "fr" },
+  { title: "Deutsch (German)", value: "de" },
+  { title: "Italiano (Italian)", value: "it" },
+  { title: "한국어 (Korean)", value: "ko" },
+  { title: "Español (Spanish)", value: "es" },
 ];
 
-type TypeCountValue = "2" | "3";
-
-interface TypeCount {
-  title: string;
-  value: TypeCountValue;
-}
-
-const typeCounts: TypeCount[] = [
-  { title: "Two types (2)", value: "2" },
-  { title: "Three types (3)", value: "3" },
-];
-
-type ThemeValue = "auto" | "light" | "dark";
-
-interface Theme {
-  title: string;
-  value: ThemeValue;
-}
-
-const themes: Theme[] = [
-  { title: "System default", value: "auto" },
-  { title: "Light", value: "light" },
-  { title: "Dark", value: "dark" },
-];
+const typeCountValues = ["2", "3"] as const;
+const themeValues = ["auto", "light", "dark"] as const;
 
 export default function ScreenMore(): JSX.Element {
+  const { t, i18n } = useTranslation();
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();
   const [typeCount, setTypeCount] = useTypeCount();
   const year = new Date().getFullYear();
+
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f4">Contact Me</h2>
+      <h2 className="lh-title f4">{t("more.contact.heading")}</h2>
       <p>
-        Hi, I&apos;m{" "}
-        <a
-          href="https://www.wavebeem.com"
-          className="underline fg-link OutlineFocus"
-        >
-          Brian
-        </a>{" "}
-        (they/them), and I made Pokémon Type Calculator (pkmn.help).
+        <Trans
+          i18nKey="more.contact.intro"
+          values={{}}
+          components={{
+            homepage: (
+              <a
+                href="https://www.wavebeem.com"
+                className="br1 underline fg-link OutlineFocus"
+              />
+            ),
+          }}
+        />
       </p>
       <p>
-        Please email your thoughts and thank-yous to{" "}
-        <a
-          className="underline fg-link OutlineFocus"
-          href="mailto:pkmn@wavebeem.com"
-        >
-          pkmn@wavebeem.com
-        </a>
-        .
+        <Trans
+          i18nKey="more.contact.email"
+          components={{
+            email: (
+              <a
+                className="br1 underline fg-link OutlineFocus"
+                href="mailto:pkmn@wavebeem.com"
+              />
+            ),
+          }}
+        />
       </p>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Settings</h2>
+      <h2 className="lh-title f4">{t("more.settings.heading")}</h2>
       <div className="grid gap3 pb2">
         <Select
-          label="Language"
+          label={t("more.settings.language.label")}
           value={language}
-          helpText="Language support is incomplete. Only Pokémon names are translated."
+          helpText={t("more.settings.language.helpText")}
           onChange={(event) => {
             setLanguage(event.target.value);
+            i18n.changeLanguage(language);
           }}
         >
           {languages.map((lang) => {
@@ -110,114 +99,118 @@ export default function ScreenMore(): JSX.Element {
           })}
         </Select>
         <Select
-          label="Theme"
+          label={t("more.settings.theme.label")}
           value={theme}
-          helpText="&ldquo;System default&rdquo; will change automatically depending on your operating system settings."
+          helpText={t("more.settings.theme.help")}
           onChange={(event) => {
             setTheme(event.target.value);
           }}
         >
-          {themes.map((theme) => {
+          {themeValues.map((value) => {
             return (
-              <option key={theme.value} value={theme.value}>
-                {theme.title}
+              <option key={value} value={value}>
+                {t(`more.settings.theme.values.${value}`)}
               </option>
             );
           })}
         </Select>
         <Select
-          label="Number of types"
+          label={t("more.settings.typeCount.label")}
           value={typeCount}
-          helpText="Pokémon can briefly have three types at once if hit with Forests's Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used."
+          helpText={t("more.settings.typeCount.help")}
           onChange={(event) => {
             setTypeCount(event.target.value);
           }}
         >
-          {typeCounts.map((tc) => {
+          {typeCountValues.map((value) => {
             return (
-              <option key={tc.value} value={tc.value}>
-                {tc.title}
+              <option key={value} value={value}>
+                {t(`more.settings.typeCount.values.${value}`)}
               </option>
             );
           })}
         </Select>
       </div>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Help</h2>
-      <p>This button can help fix issues in the app.</p>
+      <h2 className="lh-title f4">{t("more.help.heading")}</h2>
+      <p>{t("more.help.serviceWorker.description")}</p>
       <div className="mv3">
         <Button onClick={unregisterServiceWorker}>
-          Unregister service worker
+          {t("more.help.serviceWorker.button")}
         </Button>
       </div>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Privacy</h2>
+      <h2 className="lh-title f4">{t("more.privacy.heading")}</h2>
       <p>
-        I will never runs ads or steal your personal data. I use{" "}
-        <a
-          href="https://plausible.io/privacy"
-          className="underline fg-link OutlineFocus"
-        >
-          Plausible Analytics
-        </a>
-        , which is self-funded, independent, hosted in the EU, and doesn&apos;t
-        store any cookies on your computer.
+        <Trans
+          i18nKey="more.privacy.description"
+          components={{
+            plausible: (
+              <a
+                href="https://plausible.io/privacy"
+                className="br1 underline fg-link OutlineFocus"
+              />
+            ),
+          }}
+        />
       </p>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Giving Back</h2>
-      <p>
-        I have spent countless hours improving this site. If you appreciate what
-        I&apos;ve made, please consider donating to charities that support BIPOC
-        and transgender rights.
-      </p>
+      <h2 className="lh-title f4">{t("more.givingBack.heading")}</h2>
+      <p>{t("more.givingBack.description")}</p>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Special Thanks</h2>
+      <h2 className="lh-title f4">{t("more.thanks.heading")}</h2>
       <ul className="lh-copy mt1 ph3">
-        <li>Jansjo (testing, research)</li>
-        <li>Several anonymous Poké Fans</li>
+        <li>{t("more.thanks.credits.minamorl")}</li>
+        <li>{t("more.thanks.credits.jansjo")}</li>
+        <li>{t("more.thanks.credits.other")}</li>
       </ul>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Open Source</h2>
+      <h2 className="lh-title f4">{t("more.openSource.heading")}</h2>
       <p>
-        Source code is available on{" "}
-        <a
-          href="https://github.com/wavebeem/pkmn.help"
-          className="underline fg-link OutlineFocus"
-        >
-          GitHub
-        </a>
-        .
+        <Trans
+          i18nKey="more.openSource.description"
+          components={{
+            github: (
+              <a
+                href="https://github.com/wavebeem/pkmn.help"
+                className="br1 underline fg-link OutlineFocus"
+              />
+            ),
+          }}
+        />
       </p>
       <div role="presentation" className="mv2 bt border3" />
-      <h2 className="lh-title f4">Legal Info</h2>
+      <h2 className="lh-title f4">{t("more.legalInfo.heading")}</h2>
       <p>
-        Pokémon &copy; 2002&ndash;{year} Pokémon. &copy; 1995&ndash;{year}{" "}
-        Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &reg; and Pokémon
-        character names are trademarks of Nintendo.
+        <Trans i18nKey="more.legalInfo.pokemon" values={{ year }} />
+      </p>
+      <p>{t("more.legalInfo.dontSueMe")}</p>
+      <p>
+        <Trans
+          i18nKey="more.legalInfo.pokeAPI"
+          components={{
+            pokeapi: (
+              <a
+                className="br1 underline fg-link OutlineFocus"
+                href="https://pokeapi.co/"
+              />
+            ),
+          }}
+        />
       </p>
       <p>
-        No copyright or trademark infringement is intended in using Pokémon
-        content on this page.
-      </p>
-      <p>
-        Pokédex data from{" "}
-        <a
-          className="underline fg-link OutlineFocus"
-          href="https://pokeapi.co/"
-        >
-          PokéAPI
-        </a>
-        .
-      </p>
-      <p>
-        pkmn.help &copy; 2013&ndash;{year}{" "}
-        <a
-          href="https://www.wavebeem.com"
-          className="underline fg-link OutlineFocus"
-        >
-          Brian Mock
-        </a>
-        .
+        <Trans
+          i18nKey="more.legalInfo.wavebeem"
+          values={{ year }}
+          components={{
+            wavebeem: (
+              <a
+                className="br1 underline fg-link OutlineFocus"
+                href="https://www.wavebeem.com"
+              />
+            ),
+          }}
+        />
       </p>
     </main>
   );

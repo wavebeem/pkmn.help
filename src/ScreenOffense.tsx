@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import { CoverageType, Type, typesFromString } from "./data";
 import * as Matchups from "./Matchups";
@@ -20,6 +21,7 @@ export default function ScreenOffense({
   fallbackCoverageTypes,
   isLoading,
 }: OffenseProps) {
+  const { t } = useTranslation();
   const search = useSearch();
   const history = useHistory();
   const offenseTypes = typesFromString(search.get("types") || "");
@@ -46,7 +48,7 @@ export default function ScreenOffense({
   return (
     <main className="ph3 pt0 pb4 content-wide center">
       <div className="dib w-50-ns w-100 v-top">
-        <h2 className={classH2}>Choose Types</h2>
+        <h2 className={classH2}>{t("offense.chooseTypes")}</h2>
         <MultiTypeSelector value={offenseTypes} onChange={updateOffenseTypes} />
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">

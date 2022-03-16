@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+import { useTranslation } from "react-i18next";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
@@ -29,15 +30,28 @@ const bannerClass = classNames([
 
 const tabClass = classNames([
   "no-underline",
-  "pv2 ph2 f5",
+  "pv1 ph2 f5",
   "TabFocus",
-  "b bn",
-  "br--top br2",
-  "bg-transparent",
-  "fg3 bottom-border-thick",
+  "tc b",
+  "ba border1 br-pill",
+  "bg1 fg1",
 ]);
 
-const tabClassActive = classNames(["fg1 bottom-border-thick-current"]);
+const tabClassActive = classNames(["TabBar-Item-Selected"]);
+
+function getFallback(key: string): string {
+  if (key === "title") {
+    return "Pokémon Type Calculator";
+  }
+  return "…";
+}
+
+function useTranslationsWithBlankFallback() {
+  const { t: translation, ready } = useTranslation(undefined, {
+    useSuspense: false,
+  });
+  return ready ? translation : getFallback;
+}
 
 export default function App() {
   // Service worker
@@ -47,6 +61,9 @@ export default function App() {
     updateServiceWorker,
   } = useRegisterSW();
   useUpdateSW();
+
+  const t = useTranslationsWithBlankFallback();
+  const { i18n } = useTranslation(undefined, { useSuspense: false });
 
   // State...
   const [defenseParams, setDefenseParams] = React.useState("");
@@ -60,6 +77,10 @@ export default function App() {
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
 
   const [language] = useLanguage();
+
+  React.useEffect(() => {
+    i18n.changeLanguage(language);
+  }, [language, i18n]);
 
   // Theme stuff
   const [theme] = useTheme();
@@ -101,45 +122,38 @@ export default function App() {
           <meta name="theme-color" content={themeColor} />
         </Helmet>
         <h1 className="f3-ns f4 tc relative white PokeballHeader">
-          <Link to="/" className="no-underline white OutlineFocus">
-            Pokémon Type Calculator
+          <Link to="/" className="no-underline white OutlineFocus br1">
+            {t("title")}
           </Link>
         </h1>
-        <nav
-          className={classNames([
-            "flex justify-center",
-            "bg1",
-            "bb border2 TabBar",
-            "pt3",
-          ])}
-        >
+        <nav className={classNames(["bg1", "bb border2 TabBar", "pb2 ph2"])}>
           <NavLink
             className={tabClass}
             activeClassName={tabClassActive}
             to={`/offense/${offenseParams}`}
           >
-            Offense
+            {t("navigation.offense")}
           </NavLink>
           <NavLink
             className={tabClass}
             activeClassName={tabClassActive}
             to={`/defense/${defenseParams}`}
           >
-            Defense
+            {t("navigation.defense")}
           </NavLink>
           <NavLink
             className={tabClass}
             activeClassName={tabClassActive}
             to={`/pokedex/${pokedexParams}`}
           >
-            Pokédex
+            {t("navigation.pokedex")}
           </NavLink>
           <NavLink
             className={tabClass}
             activeClassName={tabClassActive}
             to="/more/"
           >
-            More
+            {t("navigation.more")}
           </NavLink>
         </nav>
         {(needRefresh || offlineReady) && (
@@ -147,7 +161,7 @@ export default function App() {
             {needRefresh && (
               <div className={bannerClass}>
                 <span className="flex flex-auto items-center">
-                  An update is available
+                  {t("banners.updateReady.description")}
                 </span>
                 <Button
                   className="ml3"
@@ -157,14 +171,14 @@ export default function App() {
                     setNeedRefresh(false);
                   }}
                 >
-                  Update
+                  {t("banners.updateReady.update")}
                 </Button>
               </div>
             )}
             {offlineReady && (
               <div className={bannerClass}>
                 <span className="flex flex-auto items-center">
-                  Offline mode is now available
+                  {t("banners.offlineReady.description")}
                 </span>
                 <Button
                   className="ml3"
@@ -173,67 +187,69 @@ export default function App() {
                     setOfflineReady(false);
                   }}
                 >
-                  Dismiss
+                  {t("banners.offlineReady.dismiss")}
                 </Button>
               </div>
             )}
           </div>
         )}
-        <Switch>
-          <Route
-            exact
-            path="/offense/coverage/"
-            render={() => (
-              <ScreenWeaknessCoverage
-                setCoverageTypes={setCoverageTypes}
-                offenseParams={offenseParams}
-                fallbackCoverageTypes={fallbackCoverageTypes}
-                isLoading={isLoading}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/offense/"
-            render={() => (
-              <ScreenOffense
-                coverageTypes={coverageTypes}
-                setCoverageTypes={setCoverageTypes}
-                setOffenseParams={setOffenseParams}
-                fallbackCoverageTypes={fallbackCoverageTypes}
-                isLoading={isLoading}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/defense/"
-            render={() => (
-              <ScreenDefense
-                setDefenseParams={setDefenseParams}
-                fallbackCoverageTypes={fallbackCoverageTypes}
-              />
-            )}
-          />
-          <Route
-            exact
-            path="/pokedex/help/"
-            render={() => <ScreenPokedexHelp pokedexParams={pokedexParams} />}
-          />
-          <Route
-            exact
-            path="/pokedex/"
-            render={() => (
-              <ScreenPokedex
-                setPokedexParams={setPokedexParams}
-                allPokemon={AllPokemon}
-                isLoading={isLoading}
-              />
-            )}
-          />
-          <Route exact path="/more/" component={ScreenMore} />
-          <Redirect to="/defense/" />
-        </Switch>
+        <React.Suspense fallback={<div className="Spinner center mt4 f2" />}>
+          <Switch>
+            <Route
+              exact
+              path="/offense/coverage/"
+              render={() => (
+                <ScreenWeaknessCoverage
+                  setCoverageTypes={setCoverageTypes}
+                  offenseParams={offenseParams}
+                  fallbackCoverageTypes={fallbackCoverageTypes}
+                  isLoading={isLoading}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/offense/"
+              render={() => (
+                <ScreenOffense
+                  coverageTypes={coverageTypes}
+                  setCoverageTypes={setCoverageTypes}
+                  setOffenseParams={setOffenseParams}
+                  fallbackCoverageTypes={fallbackCoverageTypes}
+                  isLoading={isLoading}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/defense/"
+              render={() => (
+                <ScreenDefense
+                  setDefenseParams={setDefenseParams}
+                  fallbackCoverageTypes={fallbackCoverageTypes}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/pokedex/help/"
+              render={() => <ScreenPokedexHelp pokedexParams={pokedexParams} />}
+            />
+            <Route
+              exact
+              path="/pokedex/"
+              render={() => (
+                <ScreenPokedex
+                  setPokedexParams={setPokedexParams}
+                  allPokemon={AllPokemon}
+                  isLoading={isLoading}
+                />
+              )}
+            />
+            <Route exact path="/more/" component={ScreenMore} />
+            <Redirect to="/defense/" />
+          </Switch>
+        </React.Suspense>
       </div>
     </HelmetProvider>
   );

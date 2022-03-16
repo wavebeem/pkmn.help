@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
-import { typeColor } from "./colors";
+import { useTranslation } from "react-i18next";
+import { typeColor, typeColorBG } from "./colors";
 import { Type, types, typesOrNone } from "./data";
 
 const buttonInnerHeight = "1.5rem";
@@ -20,6 +21,7 @@ export default function TypeSelector({
   disabledTypes,
   name,
 }: TypeSelectorProps) {
+  const { t } = useTranslation();
   const theTypes = includeNone ? typesOrNone : types;
   const styles = {
     disabled: "border3 fg4 bg2 o-60 SimpleFocus pointer-none",
@@ -51,7 +53,7 @@ export default function TypeSelector({
               "active-squish"
             )}
             style={{
-              ["--type-color" as any]: typeColor(type),
+              ["--type-color" as any]: typeColorBG(type),
             }}
           >
             <span className="flex flex-row items-center justify-center">
@@ -82,7 +84,7 @@ export default function TypeSelector({
                 className="tl pl2 pr1 flex-auto truncate"
                 style={{ lineHeight: buttonInnerHeight }}
               >
-                {type}
+                {t(`types.${type}`)}
                 {isSelected && <span aria-hidden="true">&nbsp;&bull;</span>}
               </span>
             </span>

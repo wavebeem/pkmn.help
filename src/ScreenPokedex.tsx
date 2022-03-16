@@ -1,10 +1,11 @@
 import classNames from "classnames";
 import matchSorter from "match-sorter";
 import * as React from "react";
+import { useTranslation } from "react-i18next";
 import { Link, useHistory } from "react-router-dom";
 import { useDebounce } from "use-debounce";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
-import { Pokemon, Type, typesOrNoneFromString } from "./data";
+import { Pokemon, Type, typesFromUserInput } from "./data";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import Paginator from "./Paginator";
@@ -23,6 +24,7 @@ interface MonsterTypeProps {
 }
 
 function MonsterType({ type, index }: MonsterTypeProps) {
+  const { t } = useTranslation();
   return (
     <div
       className={classNames(
@@ -44,7 +46,7 @@ function MonsterType({ type, index }: MonsterTypeProps) {
           borderColor: typeColorBorder(type),
         }}
       >
-        {type}
+        {t(`types.${type}`)}
       </div>
     </div>
   );
@@ -55,6 +57,7 @@ interface MonsterProps {
 }
 
 function Monster({ pokemon }: MonsterProps) {
+  const { t } = useTranslation();
   const [language] = useLanguage();
   const displayNumber = "#" + String(pokemon.number).padStart(3, "0");
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
@@ -87,8 +90,10 @@ function Monster({ pokemon }: MonsterProps) {
         <StatsTable pokemon={pokemon} />
         <div className="flex justify-end">
           <a
-            aria-label={`Bulbapedia page for ${speciesName}`}
-            className="underline fg-link OutlineFocus"
+            aria-label={t("pokedex.bulbapedia.label", {
+              replace: { pokemon: pokemonName },
+            })}
+            className="br1 underline fg-link OutlineFocus"
             href={pokemon.bulbapediaURL}
           >
             Bulbapedia
@@ -97,21 +102,25 @@ function Monster({ pokemon }: MonsterProps) {
             &nbsp;&bull;&nbsp;
           </span>
           <Link
-            aria-label={`Offense for ${pokemonName}`}
-            className="underline fg-link OutlineFocus"
+            aria-label={t("pokedex.offense.label", {
+              replace: { pokemon: pokemonName },
+            })}
+            className="br1 underline fg-link OutlineFocus"
             to={`/offense/?${params}#matchup-offense`}
           >
-            Offense
+            {t("pokedex.offense.text")}
           </Link>
           <span aria-hidden="true" className="o-50">
             &nbsp;&bull;&nbsp;
           </span>
           <Link
-            aria-label={`Defense for ${pokemonName}`}
-            className="underline fg-link OutlineFocus"
+            aria-label={t("pokedex.defense.label", {
+              replace: { pokemon: pokemonName },
+            })}
+            className="br1 underline fg-link OutlineFocus"
             to={`/defense/?${params}#matchup-defense`}
           >
-            Defense
+            {t("pokedex.defense.text")}
           </Link>
         </div>
       </div>
@@ -130,6 +139,8 @@ export default function ScreenPokedex({
   setPokedexParams,
   isLoading,
 }: DexProps) {
+  const { t, i18n } = useTranslation();
+  const { language } = i18n;
   const search = useSearch();
   const history = useHistory();
   const query = search.get("q") || "";
@@ -140,11 +151,11 @@ export default function ScreenPokedex({
     return allPokemon.map((p) => {
       return {
         ...p,
-        speciesName: pickTranslation(p.speciesNames),
-        formName: pickTranslation(p.formNames),
+        speciesName: pickTranslation(p.speciesNames, language),
+        formName: pickTranslation(p.formNames, language),
       };
     });
-  }, [allPokemon]);
+  }, [allPokemon, language]);
 
   const pkmn = React.useMemo(() => {
     const s = debouncedQuery.trim();
@@ -152,7 +163,11 @@ export default function ScreenPokedex({
       const number = Number(s);
       return searchablePkmn.filter((p) => p.number === number);
     }
-    const types = typesOrNoneFromString(s);
+    // The return value of `t` depends on the current value of `language`, but
+    // the rules of hooks can't realize these. Pretend to use `language` here to
+    // make it happy.
+    language;
+    const types = typesFromUserInput({ types: s, t });
     if (types.length > 0) {
       return searchablePkmn.filter((p) => {
         if (types.length === 1) {
@@ -169,7 +184,7 @@ export default function ScreenPokedex({
     return matchSorter(searchablePkmn, s, {
       keys: ["speciesName", "formName", "number"],
     });
-  }, [debouncedQuery, searchablePkmn]);
+  }, [debouncedQuery, searchablePkmn, language, t]);
 
   function createParams(newQuery: string, newPage: number): string {
     const params = new URLSearchParams();
@@ -203,14 +218,14 @@ export default function ScreenPokedex({
       />
       <div className="flex justify-between ph2 nt2 pb3 bb border3 f6">
         <span className="fg3" aria-hidden="true">
-          Search by name, number, or types
+          {t("pokedex.search.description")}
         </span>
         <Link
           to="/pokedex/help/"
-          className="underline fg-link OutlineFocus"
-          aria-label="Help, search Pokédex"
+          className="br1 underline fg-link OutlineFocus ml3 flex-none"
+          aria-label={t("pokedex.search.helpLong")}
         >
-          Help
+          {t("pokedex.search.help")}
         </Link>
       </div>
       {isLoading ? (

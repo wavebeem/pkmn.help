@@ -1,0 +1,78 @@
+{
+  "title": "ポケモン・タイプ・けいさんき",
+  "navigation": {
+    "offense": "オフェンス",
+    "defense": "デフェンス",
+    "pokedex": "ポケモン図鑑",
+    "more": "その他"
+  },
+  "offense": {
+    "chooseTypes": "複数のタイプを選択"
+  },
+  "defense": {
+    "chooseFirst": "１つ目のタイプ",
+    "chooseSecond": "２つ目のタイプ",
+    "chooseThird": "３つ目のタイプ",
+    "takesXFrom": "{{ x }} 受ける"
+  },
+  "coverage": {
+    "csvHeaders": {
+      "number": "TODO:数字",
+      "name": "TODO:名前",
+      "type1": "TODO:１つ目のタイプ",
+      "type2": "TODO:２つ目のタイプ",
+      "type3": "TODO:３つ目のタイプ"
+    }
+  },
+  "pokedex": {
+    "search": {
+      "description": "名前・番号・タイプで検索できます",
+      "help": "ヘルプ"
+    },
+    "pagination": {
+      "next": "次",
+      "nextLong": "次",
+      "previous": "前",
+      "previousLong": "前",
+      "firstLong": "最初",
+      "lastLong": "最終"
+    },
+    "stats": {
+      "hp": "HP",
+      "hpLong": "HP",
+      "attack": "こうげき",
+      "attackLong": "こうげき",
+      "defense": "ぼうぎょ",
+      "defenseLong": "ぼうぎょ",
+      "specialAttack": "とくこう",
+      "specialAttackLong": "とくこう",
+      "specialDefense": "とくぼう",
+      "specialDefenseLong": "とくぼう",
+      "speed": "すばやさ",
+      "speedLong": "すばやさ",
+      "total": "合計",
+      "totalLong": "合計"
+    }
+  },
+  "types": {
+    "normal": "ノーマル",
+    "fighting": "かくとう",
+    "flying": "ひこう",
+    "poison": "どく",
+    "ground": "じめん",
+    "rock": "いわ",
+    "bug": "むし",
+    "ghost": "ゴースト",
+    "steel": "はがね",
+    "fire": "ほのお",
+    "water": "みず",
+    "grass": "くさ",
+    "electric": "でんき",
+    "psychic": "エスパー",
+    "ice": "こおり",
+    "dragon": "ドラゴン",
+    "dark": "あく",
+    "fairy": "フェアリー",
+    "none": "なし"
+  }
+}
