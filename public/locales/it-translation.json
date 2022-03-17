@@ -51,7 +51,7 @@
     "chooseFirst": "Scegli il Primo Tipo",
     "chooseSecond": "Scegli il Secondo Tipo",
     "chooseThird": "Scegli il Terzo Tipo",
-    "takesXFrom": "Prendi {{ x }} da"
+    "takesXFrom": "Subisce {{ x }} da"
   },
   "pokedex": {
     "search": {
@@ -71,9 +71,9 @@
       "text": "Difensiva"
     },
     "pagination": {
-      "next": "Successiva",
+      "next": "Succ.",
       "nextLong": "Successiva",
-      "previous": "Precedente",
+      "previous": "Prec.",
       "previousLong": "Precedente",
       "firstLong": "Prima",
       "lastLong": "Ultima"
@@ -118,7 +118,7 @@
         "description": "Cerca i Pokémon che sono sia acqua/volante (es: Gyarados) che volante/acqua (es: Cramorant)"
       },
       "singleType": {
-        "query": "erba niente",
+        "query": "erba nessuno",
         "description": "Cerca i Pokémon che hanno solo il tipo erba, senza tipo secondario (es: Tangela, Chikorita)."
       }
     },
