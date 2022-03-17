@@ -80,7 +80,7 @@
     },
     "stats": {
       "hp": "HP",
-      "hpLong": "HP",
+      "hpLong": "Hit Points",
       "attack": "Attack",
       "attackLong": "Attack",
       "defense": "Defense",

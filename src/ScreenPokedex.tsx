@@ -67,7 +67,7 @@ function Monster({ pokemon }: MonsterProps) {
   return (
     <div className={classNames("fg1 pv3", "flex-ns items-center", "Monster")}>
       <div className="flex flex-column">
-        <div className="flex flex-column pa3 br4 bg1 flex ba border3">
+        <div className="flex flex-column pa3 br3 bg1 flex ba border3">
           <div className="flex items-center">
             <h2 className="mv0 f4">{speciesName}</h2>
             <div className="ph1 flex-auto" />
