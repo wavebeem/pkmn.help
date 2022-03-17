@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
+import { useMediaQuery } from "usehooks-ts";
 import { LinkButton } from "./LinkButton";
 
 enum Location {
@@ -42,6 +43,8 @@ function PageSelector({
     setScrollTo(undefined);
   }, [scrollTo]);
 
+  const hasRoomForLargeButtons = useMediaQuery("(min-width: 600px)");
+
   return (
     <div
       className={classNames(
@@ -67,10 +70,13 @@ function PageSelector({
         }}
         disabled={!hasPrev}
         to={urlForPage(currentPage - 1)}
+        title={t("pokedex.pagination.previousLong")}
         aria-label={t("pokedex.pagination.previousLong")}
       >
         <span aria-hidden="true">&lsaquo; </span>
-        {t("pokedex.pagination.previous")}
+        {hasRoomForLargeButtons
+          ? t("pokedex.pagination.previousLong")
+          : t("pokedex.pagination.previous")}
       </LinkButton>
       <div className="flex-auto tc b f5 tabular-nums">
         {(currentPage + 1).toString().padStart(numPages.toString().length, "0")}
@@ -83,9 +89,12 @@ function PageSelector({
         }}
         disabled={!hasNext}
         to={urlForPage(currentPage + 1)}
+        title={t("pokedex.pagination.nextLong")}
         aria-label={t("pokedex.pagination.nextLong")}
       >
-        {t("pokedex.pagination.next")}
+        {hasRoomForLargeButtons
+          ? t("pokedex.pagination.nextLong")
+          : t("pokedex.pagination.next")}
         <span aria-hidden="true"> &rsaquo;</span>
       </LinkButton>
       <div className="pr1" />
