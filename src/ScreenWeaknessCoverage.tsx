@@ -126,7 +126,7 @@ export default function ScreenWeaknessCoverage({
       return;
     }
     const newCoverageTypes = result.data.map((obj) => {
-      return objectToCoverageType({ obj, t });
+      return objectToCoverageType({ obj });
     });
 
     setStatusText(
