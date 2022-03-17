@@ -53,7 +53,7 @@ export function typesFromUserInput({
 }: {
   types: string;
   t: (key: string) => string;
-  strict: boolean;
+  strict?: boolean;
 }): Type[] {
   const map = Object.fromEntries(
     typesOrNone.map((type) => [type, t(`types.${type}`).toLocaleLowerCase()])
