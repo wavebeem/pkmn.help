@@ -49,17 +49,25 @@ export function typesFromString(str: string): Type[] {
 export function typesFromUserInput({
   types,
   t,
+  strict = false,
 }: {
   types: string;
   t: (key: string) => string;
+  strict: boolean;
 }): Type[] {
   const map = Object.fromEntries(
-    typesOrNone.map((type) => [type, t(`types.${type}`)])
+    typesOrNone.map((type) => [type, t(`types.${type}`).toLocaleLowerCase()])
   );
   return types
     .split(/\s+/)
     .filter((s) => s)
-    .map((type) => reverseClosestLookup(type, map) as Type);
+    .map((type) => {
+      if (strict) {
+        return reverseLookup(type, map) as Type;
+      }
+      return reverseClosestLookup(type, map) as Type;
+    })
+    .filter((s) => s);
 }
 
 export const types = [
@@ -102,6 +110,14 @@ export function reverseClosestLookup<K extends string, V extends string>(
   return key as K;
 }
 
+export function reverseLookup<K extends string, V extends string>(
+  value: V,
+  obj: Record<K, V>
+): K {
+  const [key] = Object.entries<V>(obj).find(([, v]) => v === value) || [""];
+  return key as K;
+}
+
 const rawData = [
   [1, 1, 1, 1, 1, 0.5, 1, 0, 0.5, 1, 1, 1, 1, 1, 1, 1, 1, 1],
   [2, 1, 0.5, 0.5, 1, 2, 0.5, 0, 2, 1, 1, 1, 1, 0.5, 2, 1, 2, 0.5],
@@ -133,13 +149,7 @@ export interface CoverageType {
   types: Type[];
 }
 
-export function objectToCoverageType({
-  obj,
-  t,
-}: {
-  obj: unknown;
-  t: (key: string) => string;
-}): CoverageType {
+export function objectToCoverageType({ obj }: { obj: unknown }): CoverageType {
   const {
     number = "",
     name = "",

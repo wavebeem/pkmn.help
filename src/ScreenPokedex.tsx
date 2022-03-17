@@ -158,7 +158,7 @@ export default function ScreenPokedex({
   }, [allPokemon, language]);
 
   const pkmn = React.useMemo(() => {
-    const s = debouncedQuery.trim();
+    const s = debouncedQuery.trim().toLocaleLowerCase();
     if (/^[0-9]+$/.test(s)) {
       const number = Number(s);
       return searchablePkmn.filter((p) => p.number === number);
@@ -167,7 +167,7 @@ export default function ScreenPokedex({
     // the rules of hooks can't realize these. Pretend to use `language` here to
     // make it happy.
     language;
-    const types = typesFromUserInput({ types: s, t });
+    const types = typesFromUserInput({ types: s, t, strict: true });
     if (types.length > 0) {
       return searchablePkmn.filter((p) => {
         if (types.length === 1) {
