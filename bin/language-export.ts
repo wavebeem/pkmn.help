@@ -3,17 +3,15 @@ import path from "path";
 import fs from "fs";
 import { readJSON } from "./readJSON";
 
-function walk({
+function* walk({
   english,
   other,
-  csvData,
-  ancestors,
+  ancestors = [],
 }: {
   english: Record<string, unknown>;
   other: Record<string, unknown>;
-  csvData: string[][];
-  ancestors: string[];
-}): void {
+  ancestors?: string[];
+}): Generator<string[]> {
   if (!(typeof english === "object" && english)) {
     return;
   }
@@ -21,16 +19,15 @@ function walk({
     const englishValue = english?.[key] ?? "";
     const otherValue = other?.[key] ?? "";
     if (typeof englishValue === "string") {
-      csvData.push([
+      yield [
         [...ancestors, key].join("."),
         englishValue,
         typeof otherValue === "string" ? otherValue : "",
-      ]);
+      ];
     } else {
-      walk({
+      yield* walk({
         english: englishValue as any,
         other: otherValue as any,
-        csvData,
         ancestors: [...ancestors, key],
       });
     }
@@ -44,8 +41,7 @@ async function main() {
   }
   const english = readJSON("../public/locales/en-translation.json");
   const other = readJSON(`../public/locales/${lang}-translation.json`) || {};
-  const csvData = [["Key", "en", lang]];
-  walk({ english, other, csvData, ancestors: [] });
+  const csvData = [["Key", "en", lang], ...walk({ english, other })];
   const csv = Papa.unparse(csvData, { header: true });
   fs.writeFileSync(path.resolve(__dirname, `../${lang}.csv`), csv, "utf-8");
 }
