@@ -1,5 +1,5 @@
 {
-  "title": "ポケモン・タイプ・けいさんき",
+  "title": "ポケモン　タイプ　けいさんき",
   "navigation": {
     "offense": "オフェンス",
     "defense": "デフェンス",
@@ -26,7 +26,7 @@
   },
   "pokedex": {
     "search": {
-      "description": "名前・番号・タイプで検索できます",
+      "description": "名前、番号、タイプで検索できます",
       "help": "ヘルプ"
     },
     "pagination": {

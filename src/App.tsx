@@ -80,6 +80,7 @@ export default function App() {
 
   React.useEffect(() => {
     i18n.changeLanguage(language);
+    document.documentElement.lang = language;
   }, [language, i18n]);
 
   // Theme stuff
