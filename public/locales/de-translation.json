@@ -12,7 +12,7 @@
     "weaknessCoverageEdit": "Bearbeiten",
     "weaknessCoverageEditLong": "Bearbeiten Schwächen-Abdeckung",
     "weaknessCoverageForms": "{{ count }} / {{ total }} Formen",
-    "dealsXTo": "Schädigt {{ x }} zu"
+    "dealsXTo": "Fügt {{ x }} Schaden zu"
   },
   "coverage": {
     "heading": "Schwächen-Abdeckung",
@@ -51,7 +51,7 @@
     "chooseFirst": "Ersten Typ wählen",
     "chooseSecond": "Zweiten Typ wählen",
     "chooseThird": "Dritten Typ wählen",
-    "takesXFrom": "Nimmt {{ x }} Von"
+    "takesXFrom": "Nimmt {{ x }} Schaden von"
   },
   "pokedex": {
     "search": {
