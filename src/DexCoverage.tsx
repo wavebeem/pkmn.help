@@ -36,15 +36,12 @@ function DexCoverage({ coverageTypes, types, isLoading }: DexCoverageProps) {
                 i18nKey="offense.weaknessCoverageForms"
                 values={{ count, total }}
                 components={{
-                  formslink:
-                    count === 0 ? (
-                      <span />
-                    ) : (
-                      <Link
-                        className="br1 underline fg-link OutlineFocus"
-                        to={`/offense/weakness-list`}
-                      />
-                    ),
+                  formslink: (
+                    <Link
+                      className="br1 underline fg-link OutlineFocus"
+                      to="/offense/weakness-list/"
+                    />
+                  ),
                 }}
               />
             </div>

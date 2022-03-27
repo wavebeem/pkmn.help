@@ -196,7 +196,7 @@ export default function ScreenWeaknessCoverage({
         <b aria-hidden="true">&larr;</b>{" "}
         <Link
           to={`/offense/${offenseParams}`}
-          className="underline fg-link OutlineFocus"
+          className="underline fg-link br1 OutlineFocus"
         >
           {t("coverage.back")}
         </Link>

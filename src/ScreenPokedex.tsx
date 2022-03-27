@@ -16,7 +16,6 @@ import StatsTable from "./StatsTable";
 import { useLanguage } from "./useLanguage";
 import { useSearch } from "./useSearch";
 
-const PAGE_SIZE = 20;
 const nbsp = "\u00a0";
 
 interface MonsterProps {
@@ -46,9 +45,9 @@ function Monster({ pokemon }: MonsterProps) {
             <MonsterImage pokemonID={pokemon.id} types={pokemon.types} />
           </div>
 
-          <div className="pt2 flex justify-end">
+          <div className="pt2 flex gap1 justify-end">
             {pokemon.types.map((t, i) => (
-              <MonsterType key={i} type={t} index={i} />
+              <MonsterType key={i} type={t} />
             ))}
           </div>
         </div>
@@ -203,8 +202,10 @@ export default function ScreenPokedex({
           urlForPage={(newPage) => {
             return createParams(query, newPage);
           }}
-          pageSize={PAGE_SIZE}
-          emptyState={<p className="fg4 f4 b tc m0">No Pokémon found</p>}
+          pageSize={20}
+          emptyState={
+            <p className="fg4 f4 b tc m0">{t("pokedex.search.notFound")}</p>
+          }
           items={pkmn}
           renderPage={(page) =>
             page.map((pokemon) => (

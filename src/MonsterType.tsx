@@ -6,10 +6,9 @@ import { Type } from "./data";
 
 interface MonsterTypeProps {
   type: Type;
-  index: number;
 }
 
-export function MonsterType({ type, index }: MonsterTypeProps) {
+export function MonsterType({ type }: MonsterTypeProps) {
   const { t } = useTranslation();
   return (
     <div
@@ -17,8 +16,7 @@ export function MonsterType({ type, index }: MonsterTypeProps) {
         "type-bg",
         "ttc tc flex",
         "lh-title b",
-        "br-pill ba border-vibrant f6",
-        { ml1: index > 0 }
+        "br-pill ba border-vibrant f6"
       )}
       style={{
         padding: 2,

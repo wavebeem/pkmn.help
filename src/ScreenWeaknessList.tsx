@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { CoverageType, matchupFor, typesFromString } from "./data";
 import { formatMonsterNumber } from "./formatMonsterNumber";
 import { MonsterType } from "./MonsterType";
+import Paginator from "./Paginator";
+import { useSearch } from "./useSearch";
 
 interface WeaknessListProps {
   coverageTypes: CoverageType[];
@@ -15,6 +17,8 @@ export default function ScreenWeaknessList({
   offenseParams,
 }: WeaknessListProps) {
   const { t } = useTranslation();
+  const search = useSearch();
+  const page = Number(search.get("page") || 1) - 1;
   const types = typesFromString(
     new URLSearchParams(offenseParams).get("types") || ""
   );
@@ -26,40 +30,80 @@ export default function ScreenWeaknessList({
   });
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f5">{t("coverage.heading")}</h2>
+      <h2 className="lh-title f5">{t("coverageList.heading")}</h2>
       <p>
         <b aria-hidden="true">&larr;</b>{" "}
         <Link
           to={`/offense/${offenseParams}`}
-          className="underline fg-link OutlineFocus"
+          className="underline fg-link br1 OutlineFocus"
         >
           {t("coverage.back")}
         </Link>
       </p>
-      <ul className="list pa0 border3 bt">
-        {weak.map(({ number, name, types }, i) => {
+      {types.length > 0 && (
+        <>
+          <p>{t("coverageList.description")}</p>
+          <div className="flex flex-wrap gap2">
+            {types.map((t) => (
+              <MonsterType key={t} type={t} />
+            ))}
+          </div>
+        </>
+      )}
+      <hr className="subtle-hr mt4" />
+      <Paginator
+        urlForPage={(number) => {
+          const path = "/offense/weakness-list";
+          if (number === 0) {
+            return path;
+          }
+          const params = new URLSearchParams();
+          params.set("page", String(number + 1));
+          return `${path}?${params}`;
+        }}
+        currentPage={page}
+        pageSize={20}
+        emptyState={
+          <p className="fg4 f4 b tc m0">{t("offense.weaknessNotFound")}</p>
+        }
+        items={weak}
+        renderPage={(items) => {
           return (
-            <li key={i} className="pv2 bb border3 flex gap2">
-              <span className="fg3">{formatMonsterNumber(Number(number))}</span>
-              <span className="b flex-auto">{name}</span>
-              <div className="flex">
-                {types.map((t, i) => (
-                  <MonsterType key={t} type={t} index={i} />
-                ))}
-              </div>
-            </li>
+            <ul className="list pa0 border3 bt">
+              {items.map(({ number, name, types }, i) => {
+                return (
+                  <li
+                    key={i}
+                    className="pv2 bb border3 flex flex-wrap justify-between gap2"
+                  >
+                    <span className="fg3">
+                      {formatMonsterNumber(Number(number))}
+                    </span>
+                    <span className="b flex-auto">{name}</span>
+                    <div className="flex flex-auto gap1 justify-end">
+                      {types.map((t) => (
+                        <MonsterType key={t} type={t} />
+                      ))}
+                    </div>
+                  </li>
+                );
+              })}
+            </ul>
           );
-        })}
-      </ul>
-      <p>
-        <b aria-hidden="true">&larr;</b>{" "}
-        <Link
-          to={`/offense/${offenseParams}`}
-          className="underline fg-link OutlineFocus"
-        >
-          {t("coverage.back")}
-        </Link>
-      </p>
+        }}
+      />
+      <hr className="subtle-hr mb4" />
+      {weak.length > 0 && (
+        <p>
+          <b aria-hidden="true">&larr;</b>{" "}
+          <Link
+            to={`/offense/${offenseParams}`}
+            className="underline fg-link br1 OutlineFocus"
+          >
+            {t("coverage.back")}
+          </Link>
+        </p>
+      )}
     </main>
   );
 }

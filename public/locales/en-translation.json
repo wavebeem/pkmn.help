@@ -12,7 +12,12 @@
     "weaknessCoverageEdit": "Edit",
     "weaknessCoverageEditLong": "Edit weakness coverage",
     "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>forms</formslink>",
+    "weaknessNotFound": "No Pokémon forms with weakness found",
     "dealsXTo": "Deals {{ x }} to"
+  },
+  "coverageList": {
+    "heading": "Weakness Coverage List",
+    "description": "These Pokémon forms are weak to at least one of the following types:"
   },
   "coverage": {
     "heading": "Weakness Coverage",
@@ -57,7 +62,8 @@
     "search": {
       "description": "Search by name, number, or types",
       "help": "Help",
-      "helpLong": "Help, search Pokédex"
+      "helpLong": "Help, search Pokédex",
+      "notFound": "No Pokémon found"
     },
     "bulbapedia": {
       "label": "Bulbapedia page for {{ pokemon }}"
