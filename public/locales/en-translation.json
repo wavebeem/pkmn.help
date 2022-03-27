@@ -11,7 +11,7 @@
     "weaknessCoverage": "Weakness Coverage",
     "weaknessCoverageEdit": "Edit",
     "weaknessCoverageEditLong": "Edit weakness coverage",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} forms",
+    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>forms</formslink>",
     "dealsXTo": "Deals {{ x }} to"
   },
   "coverage": {

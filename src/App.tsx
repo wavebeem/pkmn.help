@@ -14,6 +14,7 @@ import ScreenOffense from "./ScreenOffense";
 import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
+import ScreenWeaknessList from "./ScreenWeaknessList";
 import { PUBLIC_PATH } from "./settings";
 import { useFetchJSON } from "./useFetchJSON";
 import { useLanguage } from "./useLanguage";
@@ -196,6 +197,16 @@ export default function App() {
         )}
         <React.Suspense fallback={<div className="Spinner center mt4 f2" />}>
           <Switch>
+            <Route
+              exact
+              path="/offense/weakness-list/"
+              render={() => (
+                <ScreenWeaknessList
+                  coverageTypes={coverageTypes}
+                  offenseParams={offenseParams}
+                />
+              )}
+            />
             <Route
               exact
               path="/offense/coverage/"

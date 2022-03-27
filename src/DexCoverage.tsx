@@ -1,5 +1,6 @@
 import * as React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 import { CoverageType, matchupFor, Type } from "./data";
 import { PercentBar } from "./PercentBar";
 
@@ -9,15 +10,15 @@ interface DexCoverageProps {
   isLoading: boolean;
 }
 
-// TODO: Translation
 function DexCoverage({ coverageTypes, types, isLoading }: DexCoverageProps) {
   const { t } = useTranslation();
-  const count = coverageTypes.filter((ct) => {
+  const weak = coverageTypes.filter((ct) => {
     const matchups = types.map((t) => matchupFor(ct.types, t));
     return matchups.some((effectiveness) => {
       return effectiveness > 1;
     });
-  }).length;
+  });
+  const count = weak.length;
   const total = coverageTypes.length;
   const ratio = count / total || 0;
   const percent = (ratio * 100).toFixed(0);
@@ -31,7 +32,21 @@ function DexCoverage({ coverageTypes, types, isLoading }: DexCoverageProps) {
           <>
             <div className="tl mr2 w3">{percent}%</div>
             <div className="flex-auto tr">
-              {t("offense.weaknessCoverageForms", { count, total })}
+              <Trans
+                i18nKey="offense.weaknessCoverageForms"
+                values={{ count, total }}
+                components={{
+                  formslink:
+                    count === 0 ? (
+                      <span />
+                    ) : (
+                      <Link
+                        className="br1 underline fg-link OutlineFocus"
+                        to={`/offense/weakness-list`}
+                      />
+                    ),
+                }}
+              />
             </div>
           </>
         )}

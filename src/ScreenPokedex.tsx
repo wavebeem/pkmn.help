@@ -4,10 +4,11 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useHistory } from "react-router-dom";
 import { useDebounce } from "use-debounce";
-import { typeColor, typeColorBG, typeColorBorder } from "./colors";
 import { Pokemon, Type, typesFromUserInput } from "./data";
+import { formatMonsterNumber } from "./formatMonsterNumber";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
+import { MonsterType } from "./MonsterType";
 import Paginator from "./Paginator";
 import { pickTranslation } from "./pickTranslation";
 import Search from "./Search";
@@ -18,40 +19,6 @@ import { useSearch } from "./useSearch";
 const PAGE_SIZE = 20;
 const nbsp = "\u00a0";
 
-interface MonsterTypeProps {
-  type: Type;
-  index: number;
-}
-
-function MonsterType({ type, index }: MonsterTypeProps) {
-  const { t } = useTranslation();
-  return (
-    <div
-      className={classNames(
-        "type-bg",
-        "ttc tc flex",
-        "lh-title b",
-        "br-pill ba border-vibrant f6",
-        { ml1: index > 0 }
-      )}
-      style={{
-        padding: 2,
-        ["--type-color" as any]: typeColor(type),
-      }}
-    >
-      <div
-        className="white br-pill ba b--black-10 ph2"
-        style={{
-          background: typeColorBG(type),
-          borderColor: typeColorBorder(type),
-        }}
-      >
-        {t(`types.${type}`)}
-      </div>
-    </div>
-  );
-}
-
 interface MonsterProps {
   pokemon: Pokemon;
 }
@@ -59,7 +26,7 @@ interface MonsterProps {
 function Monster({ pokemon }: MonsterProps) {
   const { t } = useTranslation();
   const [language] = useLanguage();
-  const displayNumber = "#" + String(pokemon.number).padStart(3, "0");
+  const displayNumber = formatMonsterNumber(pokemon.number);
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
   const speciesName = pokemon.speciesNames[language];
   const formName = pokemon.formNames[language];
