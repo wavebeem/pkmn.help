@@ -201,10 +201,7 @@ export default function App() {
               exact
               path="/offense/weakness-list/"
               render={() => (
-                <ScreenWeaknessList
-                  coverageTypes={coverageTypes}
-                  offenseParams={offenseParams}
-                />
+                <ScreenWeaknessList coverageTypes={coverageTypes} />
               )}
             />
             <Route

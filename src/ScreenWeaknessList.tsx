@@ -9,32 +9,29 @@ import { useSearch } from "./useSearch";
 
 interface WeaknessListProps {
   coverageTypes: CoverageType[];
-  offenseParams: string;
 }
 
 export default function ScreenWeaknessList({
   coverageTypes,
-  offenseParams,
 }: WeaknessListProps) {
   const { t } = useTranslation();
   const search = useSearch();
   const page = Number(search.get("page") || 1) - 1;
-  const types = typesFromString(
-    new URLSearchParams(offenseParams).get("types") || ""
-  );
+  const types = typesFromString(search.get("types") || "");
   const weak = coverageTypes.filter((ct) => {
     const matchups = types.map((t) => matchupFor(ct.types, t));
     return matchups.some((effectiveness) => {
       return effectiveness > 1;
     });
   });
+  const offenseParams = new URLSearchParams({ types: types.join(" ") });
   return (
     <main className="pa3 center content-narrow lh-copy">
       <h2 className="lh-title f5">{t("coverageList.heading")}</h2>
       <p>
         <b aria-hidden="true">&larr;</b>{" "}
         <Link
-          to={`/offense/${offenseParams}`}
+          to={`/offense/?${offenseParams}`}
           className="underline fg-link br1 OutlineFocus"
         >
           {t("coverage.back")}
@@ -53,12 +50,11 @@ export default function ScreenWeaknessList({
       <hr className="subtle-hr mt4" />
       <Paginator
         urlForPage={(number) => {
-          const path = "/offense/weakness-list";
-          if (number === 0) {
-            return path;
+          const path = "/offense/weakness-list/";
+          const params = new URLSearchParams({ types: types.join(" ") });
+          if (number > 0) {
+            params.set("page", String(number + 1));
           }
-          const params = new URLSearchParams();
-          params.set("page", String(number + 1));
           return `${path}?${params}`;
         }}
         currentPage={page}
@@ -97,7 +93,7 @@ export default function ScreenWeaknessList({
         <p>
           <b aria-hidden="true">&larr;</b>{" "}
           <Link
-            to={`/offense/${offenseParams}`}
+            to={`/offense/?${offenseParams}`}
             className="underline fg-link br1 OutlineFocus"
           >
             {t("coverage.back")}

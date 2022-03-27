@@ -22,6 +22,7 @@ function DexCoverage({ coverageTypes, types, isLoading }: DexCoverageProps) {
   const total = coverageTypes.length;
   const ratio = count / total || 0;
   const percent = (ratio * 100).toFixed(0);
+  const weaknessListParams = new URLSearchParams({ types: types.join(" ") });
   return (
     <div className="pt1 tabular-nums flex flex-column lh-copy">
       <PercentBar value={count} max={total} />
@@ -39,7 +40,7 @@ function DexCoverage({ coverageTypes, types, isLoading }: DexCoverageProps) {
                   formslink: (
                     <Link
                       className="br1 underline fg-link OutlineFocus"
-                      to="/offense/weakness-list/"
+                      to={`/offense/weakness-list/?${weaknessListParams}`}
                     />
                   ),
                 }}
