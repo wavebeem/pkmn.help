@@ -258,6 +258,10 @@ button {
   image-rendering: pixelated;
 }
 
+.img-shadow {
+  filter: drop-shadow(4px 4px 4px rgb(0 0 0 / 20%));
+}
+
 .TabBar {
   border-color: var(--color-border2);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
