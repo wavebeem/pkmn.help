@@ -30,7 +30,7 @@ export default function ScreenWeaknessList({
     <main className="pa3 center content-narrow lh-copy">
       <h2 className="lh-title f5">{t("coverageList.heading")}</h2>
       <p className="flex gap1 items-center">
-        <IconArrowLeft width="1rem" height="1rem" aria-hidden="true" />
+        <IconArrowLeft className="w1 h1" aria-hidden="true" />
         <Link
           to={`/offense/?${offenseParams}`}
           className="underline fg-link br1 OutlineFocus"
@@ -94,7 +94,7 @@ export default function ScreenWeaknessList({
       <hr className="subtle-hr mb4" />
       {weak.length > 0 && (
         <p className="flex gap1 items-center">
-          <IconArrowLeft width="1rem" height="1rem" aria-hidden="true" />
+          <IconArrowLeft className="w1 h1" aria-hidden="true" />
           <Link
             to={`/offense/?${offenseParams}`}
             className="underline fg-link br1 OutlineFocus"

@@ -194,7 +194,7 @@ export default function ScreenWeaknessCoverage({
         {statusText}
       </p>
       <p className="flex gap1 items-center">
-        <IconArrowLeft width="1rem" height="1rem" aria-hidden="true" />
+        <IconArrowLeft className="w1 h1" aria-hidden="true" />
         <Link
           to={`/offense/${offenseParams}`}
           className="underline fg-link br1 OutlineFocus"

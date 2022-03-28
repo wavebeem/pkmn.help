@@ -44,7 +44,7 @@ export default function ScreenPokdexHelp({
       </ul>
 
       <p className="flex gap1 items-center">
-        <IconArrowLeft width="1rem" height="1rem" aria-hidden="true" />
+        <IconArrowLeft className="w1 h1" aria-hidden="true" />
         <Link
           to={`/pokedex/${pokedexParams}`}
           className="underline fg-link br1 OutlineFocus"

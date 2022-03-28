@@ -52,16 +52,16 @@ function PageSelector({
         aria-label={t("pokedex.pagination.firstLong")}
         className="flex items-center"
       >
-        <IconArrowLeftDouble width="1rem" height="1rem" aria-hidden="true" />
+        <IconArrowLeftDouble className="w1 h1" aria-hidden="true" />
       </LinkButton>
       <LinkButton
         disabled={!hasPrev}
         to={urlForPage(currentPage - 1)}
         title={t("pokedex.pagination.previousLong")}
         aria-label={t("pokedex.pagination.previousLong")}
-        className="flex items-center gap1"
+        className="flex items-center gap1 ph3 ph1-ns"
       >
-        <IconArrowLeft width="1rem" height="1rem" aria-hidden="true" />
+        <IconArrowLeft className="w1 h1" aria-hidden="true" />
         {buttonSize === "medium" && t("pokedex.pagination.previous")}
         {buttonSize === "large" && t("pokedex.pagination.previousLong")}
       </LinkButton>
@@ -75,11 +75,11 @@ function PageSelector({
         to={urlForPage(currentPage + 1)}
         title={t("pokedex.pagination.nextLong")}
         aria-label={t("pokedex.pagination.nextLong")}
-        className="flex items-center gap1"
+        className="flex items-center gap1 ph3 ph1-ns"
       >
         {buttonSize === "medium" && t("pokedex.pagination.next")}
         {buttonSize === "large" && t("pokedex.pagination.nextLong")}
-        <IconArrowRight width="1rem" height="1rem" aria-hidden="true" />
+        <IconArrowRight className="w1 h1" aria-hidden="true" />
       </LinkButton>
       <LinkButton
         disabled={!hasNext}
@@ -88,7 +88,7 @@ function PageSelector({
         aria-label={t("pokedex.pagination.lastLong")}
         className="flex items-center"
       >
-        <IconArrowRightDouble width="1rem" height="1rem" aria-hidden="true" />
+        <IconArrowRightDouble className="w1 h1" aria-hidden="true" />
       </LinkButton>
     </div>
   );
