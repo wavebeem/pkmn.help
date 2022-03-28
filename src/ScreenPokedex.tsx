@@ -42,7 +42,11 @@ function Monster({ pokemon }: MonsterProps) {
           <div className="nv2 fg3 f5">{formName || nbsp}</div>
 
           <div className="pv3 flex justify-center">
-            <MonsterImage pokemonID={pokemon.id} types={pokemon.types} />
+            <MonsterImage
+              scale={2}
+              pokemonID={pokemon.id}
+              types={pokemon.types}
+            />
           </div>
 
           <div className="pt2 flex gap1 justify-end">

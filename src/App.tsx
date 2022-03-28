@@ -144,7 +144,6 @@ export default function App() {
             <div
               className="EasterEgg"
               data-animate={easterEggLoadedID === easterEgg.id}
-              key={easterEgg.id}
             >
               <MonsterImage
                 pokemonID={easterEgg.id}
@@ -152,6 +151,7 @@ export default function App() {
                 onLoad={({ pokemonID }) => {
                   setEasterEggLoadedID(pokemonID);
                 }}
+                scale={2}
               />
             </div>
           )}
