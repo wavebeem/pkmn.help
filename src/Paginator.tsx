@@ -10,15 +10,9 @@ import {
 } from "./IconArrows";
 import { LinkButton } from "./LinkButton";
 
-enum Location {
-  TOP = "top",
-  BOTTOM = "bottom",
-}
-
 interface PageSelectorProps {
   numPages: number;
   pageItems: any[];
-  location: Location;
   currentPage: number;
   urlForPage: (page: number) => string;
   hasPrev: boolean;
@@ -28,26 +22,12 @@ interface PageSelectorProps {
 function PageSelector({
   numPages,
   pageItems,
-  location,
   currentPage,
   urlForPage,
   hasPrev,
   hasNext,
 }: PageSelectorProps) {
-  // Attempt to stay anchored to the top or bottom of the page when using
-  // pagination buttons to avoid the screen jumping around and stuff
-  const [scrollTo, setScrollTo] = React.useState<Location>();
-
   const { t } = useTranslation();
-
-  React.useLayoutEffect(() => {
-    if (scrollTo === Location.TOP) {
-      window.scrollTo(0, 0);
-    } else if (scrollTo === Location.BOTTOM) {
-      window.scrollTo(0, document.body.scrollHeight);
-    }
-    setScrollTo(undefined);
-  }, [scrollTo]);
 
   const hasRoomForMediumButtons = useMediaQuery("(min-width: 450px)");
   const hasRoomForLargeButtons = useMediaQuery("(min-width: 600px)");
@@ -61,14 +41,11 @@ function PageSelector({
   return (
     <div
       className={classNames(
-        "items-stretch mv3",
+        "items-stretch mv3 gap2",
         pageItems.length === 0 ? "dn" : "flex"
       )}
     >
       <LinkButton
-        onClick={() => {
-          setScrollTo(location);
-        }}
         disabled={!hasPrev}
         to={urlForPage(0)}
         title={t("pokedex.pagination.firstLong")}
@@ -77,11 +54,7 @@ function PageSelector({
       >
         <IconArrowLeftDouble width="1rem" height="1rem" aria-hidden="true" />
       </LinkButton>
-      <div className="pr1" />
       <LinkButton
-        onClick={() => {
-          setScrollTo(location);
-        }}
         disabled={!hasPrev}
         to={urlForPage(currentPage - 1)}
         title={t("pokedex.pagination.previousLong")}
@@ -92,15 +65,12 @@ function PageSelector({
         {buttonSize === "medium" && t("pokedex.pagination.previous")}
         {buttonSize === "large" && t("pokedex.pagination.previousLong")}
       </LinkButton>
-      <div className="flex-auto tc b f5 tabular-nums">
+      <div className="flex-auto b f5 tabular-nums flex items-center justify-center">
         {(currentPage + 1).toString().padStart(numPages.toString().length, "0")}
         {" / "}
         {numPages}
       </div>
       <LinkButton
-        onClick={() => {
-          setScrollTo(location);
-        }}
         disabled={!hasNext}
         to={urlForPage(currentPage + 1)}
         title={t("pokedex.pagination.nextLong")}
@@ -111,11 +81,7 @@ function PageSelector({
         {buttonSize === "large" && t("pokedex.pagination.nextLong")}
         <IconArrowRight width="1rem" height="1rem" aria-hidden="true" />
       </LinkButton>
-      <div className="pr1" />
       <LinkButton
-        onClick={() => {
-          setScrollTo(location);
-        }}
         disabled={!hasNext}
         to={urlForPage(numPages - 1)}
         title={t("pokedex.pagination.lastLong")}
@@ -153,7 +119,6 @@ export default function Paginator<T>({
   return (
     <div>
       <PageSelector
-        location={Location.TOP}
         numPages={numPages}
         pageItems={pageItems}
         hasPrev={hasPrev}
@@ -163,7 +128,6 @@ export default function Paginator<T>({
       />
       {pageItems.length === 0 ? emptyState : renderPage(pageItems)}
       <PageSelector
-        location={Location.BOTTOM}
         numPages={numPages}
         pageItems={pageItems}
         hasPrev={hasPrev}

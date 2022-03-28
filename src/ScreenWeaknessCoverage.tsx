@@ -10,6 +10,7 @@ import {
   Type,
   typesFromUserInput,
 } from "./data";
+import { IconArrowLeft } from "./IconArrows";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
 import { useTypeCount } from "./useTypeCount";
@@ -192,8 +193,8 @@ export default function ScreenWeaknessCoverage({
       <p className="f4 b" hidden={!statusText} ref={statusRef}>
         {statusText}
       </p>
-      <p>
-        <b aria-hidden="true">&larr;</b>{" "}
+      <p className="flex gap1 items-center">
+        <IconArrowLeft width="1rem" height="1rem" aria-hidden="true" />
         <Link
           to={`/offense/${offenseParams}`}
           className="underline fg-link br1 OutlineFocus"

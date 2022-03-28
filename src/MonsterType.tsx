@@ -24,7 +24,7 @@ export function MonsterType({ type }: MonsterTypeProps) {
       }}
     >
       <div
-        className="white br-pill ba b--black-10 ph2"
+        className="white br-pill ba b--black-10 ph2 nowrap"
         style={{
           background: typeColorBG(type),
           borderColor: typeColorBorder(type),

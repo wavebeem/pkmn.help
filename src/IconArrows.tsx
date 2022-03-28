@@ -22,7 +22,7 @@ function arrowPath({
   const p1 = flipXY(size - paddingH + offsetX, paddingV, flipH);
   const p2 = flipXY(paddingH + offsetX, size / 2, flipH);
   const p3 = flipXY(size - paddingH + offsetX, size - paddingV, flipH);
-  return ["M", p1, "L", p2, "L", p3].join("\n");
+  return ["M", p1, "L", p2, "L", p3].join(" ");
 }
 
 const arrowLeftPath = arrowPath({ offsetX: 0, flipH: false });

@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { IconArrowLeft } from "./IconArrows";
 
 interface ScreenPokdexHelpProps {
   pokedexParams: string;
@@ -42,11 +43,11 @@ export default function ScreenPokdexHelp({
         </li>
       </ul>
 
-      <p>
-        <b aria-hidden="true">&larr;</b>{" "}
+      <p className="flex gap1 items-center">
+        <IconArrowLeft width="1rem" height="1rem" aria-hidden="true" />
         <Link
           to={`/pokedex/${pokedexParams}`}
-          className="underline fg-link OutlineFocus"
+          className="underline fg-link br1 OutlineFocus"
         >
           {t("pokedexHelp.back")}
         </Link>

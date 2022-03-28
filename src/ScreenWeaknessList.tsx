@@ -3,12 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { CoverageType, matchupFor, typesFromString } from "./data";
 import { formatMonsterNumber } from "./formatMonsterNumber";
-import {
-  IconArrowLeft,
-  IconArrowLeftDouble,
-  IconArrowRight,
-  IconArrowRightDouble,
-} from "./IconArrows";
+import { IconArrowLeft } from "./IconArrows";
 import { MonsterType } from "./MonsterType";
 import Paginator from "./Paginator";
 import { useSearch } from "./useSearch";
@@ -46,7 +41,7 @@ export default function ScreenWeaknessList({
       {types.length > 0 && (
         <>
           <p>{t("coverageList.description")}</p>
-          <div className="flex flex-wrap gap2">
+          <div className="flex gap2">
             {types.map((t) => (
               <MonsterType key={t} type={t} />
             ))}
@@ -76,13 +71,15 @@ export default function ScreenWeaknessList({
                 return (
                   <li
                     key={i}
-                    className="pv2 bb border3 flex flex-wrap justify-between gap2"
+                    className="pv2 bb border3 flex justify-between gap2"
                   >
-                    <span className="fg3">
-                      {formatMonsterNumber(Number(number))}
-                    </span>
-                    <span className="b flex-auto">{name}</span>
-                    <div className="flex flex-auto gap1 justify-end">
+                    <div className="flex-ns gap2">
+                      <div className="fg3">
+                        {formatMonsterNumber(Number(number))}
+                      </div>
+                      <div className="b flex-auto">{name}</div>
+                    </div>
+                    <div className="flex gap1 items-center">
                       {types.map((t) => (
                         <MonsterType key={t} type={t} />
                       ))}
