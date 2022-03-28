@@ -31,13 +31,20 @@ function Monster({ pokemon }: MonsterProps) {
   const formName = pokemon.formNames[language];
   const pokemonName = formatPokemonName({ speciesName, formName });
   return (
-    <div className={classNames("fg1 pv3", "flex-ns items-center", "Monster")}>
+    <div
+      className={classNames(
+        "fg1 mv3",
+        "flex-ns items-stretch",
+        "Monster",
+        "gap4",
+        "pa3 br3 bg1 ba border3"
+      )}
+    >
       <div className="flex flex-column">
-        <div className="flex flex-column pa3 br3 bg1 flex ba border3">
-          <div className="flex items-center">
-            <h2 className="mv0 f4">{speciesName}</h2>
-            <div className="ph1 flex-auto" />
+        <div className="flex flex-column flex">
+          <div className="flex items-center gap2">
             <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
+            <h2 className="mv0 f4 flex-auto">{speciesName}</h2>
           </div>
           <div className="nv2 fg3 f5">{formName || nbsp}</div>
 
@@ -49,20 +56,18 @@ function Monster({ pokemon }: MonsterProps) {
             />
           </div>
 
-          <div className="pt2 flex gap1 justify-end">
+          <div className="pt2 flex gap1 justify-start">
             {pokemon.types.map((t, i) => (
               <MonsterType key={i} type={t} />
             ))}
           </div>
         </div>
       </div>
-      <div className="flex flex-column">
+      <div className="flex flex-column justify-center flex-auto gap3">
         <StatsTable pokemon={pokemon} />
         <div className="flex justify-end">
           <a
-            aria-label={t("pokedex.bulbapedia.label", {
-              replace: { pokemon: pokemonName },
-            })}
+            aria-label={t("pokedex.bulbapedia.label", { pokemon: pokemonName })}
             className="br1 underline fg-link OutlineFocus"
             href={pokemon.bulbapediaURL}
           >
@@ -72,9 +77,7 @@ function Monster({ pokemon }: MonsterProps) {
             &nbsp;&bull;&nbsp;
           </span>
           <Link
-            aria-label={t("pokedex.offense.label", {
-              replace: { pokemon: pokemonName },
-            })}
+            aria-label={t("pokedex.offense.label", { pokemon: pokemonName })}
             className="br1 underline fg-link OutlineFocus"
             to={`/offense/?${params}#matchup-offense`}
           >
@@ -84,9 +87,7 @@ function Monster({ pokemon }: MonsterProps) {
             &nbsp;&bull;&nbsp;
           </span>
           <Link
-            aria-label={t("pokedex.defense.label", {
-              replace: { pokemon: pokemonName },
-            })}
+            aria-label={t("pokedex.defense.label", { pokemon: pokemonName })}
             className="br1 underline fg-link OutlineFocus"
             to={`/defense/?${params}#matchup-defense`}
           >
