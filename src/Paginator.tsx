@@ -2,6 +2,12 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
+import {
+  IconArrowLeft,
+  IconArrowLeftDouble,
+  IconArrowRight,
+  IconArrowRightDouble,
+} from "./IconArrows";
 import { LinkButton } from "./LinkButton";
 
 enum Location {
@@ -43,12 +49,19 @@ function PageSelector({
     setScrollTo(undefined);
   }, [scrollTo]);
 
+  const hasRoomForMediumButtons = useMediaQuery("(min-width: 450px)");
   const hasRoomForLargeButtons = useMediaQuery("(min-width: 600px)");
+
+  const buttonSize = hasRoomForLargeButtons
+    ? "large"
+    : hasRoomForMediumButtons
+    ? "medium"
+    : "small";
 
   return (
     <div
       className={classNames(
-        "items-center mv3",
+        "items-stretch mv3",
         pageItems.length === 0 ? "dn" : "flex"
       )}
     >
@@ -60,8 +73,9 @@ function PageSelector({
         to={urlForPage(0)}
         title={t("pokedex.pagination.firstLong")}
         aria-label={t("pokedex.pagination.firstLong")}
+        className="flex items-center"
       >
-        &laquo;
+        <IconArrowLeftDouble width="1rem" height="1rem" aria-hidden="true" />
       </LinkButton>
       <div className="pr1" />
       <LinkButton
@@ -72,11 +86,11 @@ function PageSelector({
         to={urlForPage(currentPage - 1)}
         title={t("pokedex.pagination.previousLong")}
         aria-label={t("pokedex.pagination.previousLong")}
+        className="flex items-center gap1"
       >
-        <span aria-hidden="true">&lsaquo; </span>
-        {hasRoomForLargeButtons
-          ? t("pokedex.pagination.previousLong")
-          : t("pokedex.pagination.previous")}
+        <IconArrowLeft width="1rem" height="1rem" aria-hidden="true" />
+        {buttonSize === "medium" && t("pokedex.pagination.previous")}
+        {buttonSize === "large" && t("pokedex.pagination.previousLong")}
       </LinkButton>
       <div className="flex-auto tc b f5 tabular-nums">
         {(currentPage + 1).toString().padStart(numPages.toString().length, "0")}
@@ -91,11 +105,11 @@ function PageSelector({
         to={urlForPage(currentPage + 1)}
         title={t("pokedex.pagination.nextLong")}
         aria-label={t("pokedex.pagination.nextLong")}
+        className="flex items-center gap1"
       >
-        {hasRoomForLargeButtons
-          ? t("pokedex.pagination.nextLong")
-          : t("pokedex.pagination.next")}
-        <span aria-hidden="true"> &rsaquo;</span>
+        {buttonSize === "medium" && t("pokedex.pagination.next")}
+        {buttonSize === "large" && t("pokedex.pagination.nextLong")}
+        <IconArrowRight width="1rem" height="1rem" aria-hidden="true" />
       </LinkButton>
       <div className="pr1" />
       <LinkButton
@@ -106,8 +120,9 @@ function PageSelector({
         to={urlForPage(numPages - 1)}
         title={t("pokedex.pagination.lastLong")}
         aria-label={t("pokedex.pagination.lastLong")}
+        className="flex items-center"
       >
-        &raquo;
+        <IconArrowRightDouble width="1rem" height="1rem" aria-hidden="true" />
       </LinkButton>
     </div>
   );

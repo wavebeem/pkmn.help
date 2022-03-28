@@ -3,6 +3,12 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { CoverageType, matchupFor, typesFromString } from "./data";
 import { formatMonsterNumber } from "./formatMonsterNumber";
+import {
+  IconArrowLeft,
+  IconArrowLeftDouble,
+  IconArrowRight,
+  IconArrowRightDouble,
+} from "./IconArrows";
 import { MonsterType } from "./MonsterType";
 import Paginator from "./Paginator";
 import { useSearch } from "./useSearch";
@@ -28,8 +34,8 @@ export default function ScreenWeaknessList({
   return (
     <main className="pa3 center content-narrow lh-copy">
       <h2 className="lh-title f5">{t("coverageList.heading")}</h2>
-      <p>
-        <b aria-hidden="true">&larr;</b>{" "}
+      <p className="flex gap1 items-center">
+        <IconArrowLeft width="1rem" height="1rem" aria-hidden="true" />
         <Link
           to={`/offense/?${offenseParams}`}
           className="underline fg-link br1 OutlineFocus"
@@ -90,8 +96,8 @@ export default function ScreenWeaknessList({
       />
       <hr className="subtle-hr mb4" />
       {weak.length > 0 && (
-        <p>
-          <b aria-hidden="true">&larr;</b>{" "}
+        <p className="flex gap1 items-center">
+          <IconArrowLeft width="1rem" height="1rem" aria-hidden="true" />
           <Link
             to={`/offense/?${offenseParams}`}
             className="underline fg-link br1 OutlineFocus"
