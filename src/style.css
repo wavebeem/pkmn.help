@@ -216,7 +216,7 @@ button {
 }
 
 .active-squish:active:not(:disabled) {
-  transform: translateY(1px) scale(0.98);
+  transform: translateY(0.5px) scale(0.97);
 }
 
 .button-bg {

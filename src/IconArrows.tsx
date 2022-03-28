@@ -25,62 +25,44 @@ function arrowPath({
   return ["M", p1, "L", p2, "L", p3].join(" ");
 }
 
-const arrowLeftPath = arrowPath({ offsetX: 0, flipH: false });
-const arrowRightPath = arrowPath({ offsetX: 0, flipH: true });
-const arrowLeftDoublePath = [
-  arrowPath({ offsetX: -4, flipH: false }),
-  arrowPath({ offsetX: 4, flipH: false }),
-].join("\n");
-const arrowRightDoublePath = [
-  arrowPath({ offsetX: -4, flipH: true }),
-  arrowPath({ offsetX: 4, flipH: true }),
-].join("\n");
+const paths = {
+  Left: arrowPath({ offsetX: 0, flipH: false }),
+  Right: arrowPath({ offsetX: 0, flipH: true }),
+  LeftDouble: [
+    arrowPath({ offsetX: -4, flipH: false }),
+    arrowPath({ offsetX: 4, flipH: false }),
+  ].join("\n"),
+  RightDouble: [
+    arrowPath({ offsetX: -4, flipH: true }),
+    arrowPath({ offsetX: 4, flipH: true }),
+  ].join("\n"),
+} as const;
 
-const svgProps: React.SVGProps<SVGSVGElement> = {
-  xmlns: "http://www.w3.org/2000/svg",
-  viewBox: `0 0 ${size} ${size}`,
-  width: size,
-  height: size,
-  fill: "none",
-  strokeWidth: strokeWidth,
-  stroke: "currentColor",
-};
-
-export function IconArrowLeft(
-  props: React.SVGProps<SVGSVGElement>
-): JSX.Element {
-  return (
-    <svg {...svgProps} {...props}>
-      <path d={arrowLeftPath} />
-    </svg>
-  );
+function createComponent(
+  name: keyof typeof paths
+): (props: React.SVGProps<SVGSVGElement>) => JSX.Element {
+  const path = paths[name];
+  function IconArrow(props: React.SVGProps<SVGSVGElement>): JSX.Element {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox={`0 0 ${size} ${size}`}
+        width={size}
+        height={size}
+        fill="none"
+        strokeWidth={strokeWidth}
+        stroke="currentColor"
+        {...props}
+      >
+        <path d={path} />
+      </svg>
+    );
+  }
+  IconArrow.displayName = `IconArrow${name}`;
+  return IconArrow;
 }
 
-export function IconArrowRight(
-  props: React.SVGProps<SVGSVGElement>
-): JSX.Element {
-  return (
-    <svg {...svgProps} {...props}>
-      <path d={arrowRightPath} />
-    </svg>
-  );
-}
-export function IconArrowLeftDouble(
-  props: React.SVGProps<SVGSVGElement>
-): JSX.Element {
-  return (
-    <svg {...svgProps} {...props}>
-      <path d={arrowLeftDoublePath} />
-    </svg>
-  );
-}
-
-export function IconArrowRightDouble(
-  props: React.SVGProps<SVGSVGElement>
-): JSX.Element {
-  return (
-    <svg {...svgProps} {...props}>
-      <path d={arrowRightDoublePath} />
-    </svg>
-  );
-}
+export const IconArrowLeft = createComponent("Left");
+export const IconArrowRight = createComponent("Right");
+export const IconArrowLeftDouble = createComponent("LeftDouble");
+export const IconArrowRightDouble = createComponent("RightDouble");
