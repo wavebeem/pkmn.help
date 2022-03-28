@@ -41,7 +41,7 @@ export default function ScreenWeaknessList({
       {types.length > 0 && (
         <>
           <p>{t("coverageList.description")}</p>
-          <div className="flex gap2">
+          <div className="flex flex-wrap gap2">
             {types.map((t) => (
               <MonsterType key={t} type={t} />
             ))}
