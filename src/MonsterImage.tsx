@@ -9,16 +9,19 @@ type State = "loading" | "loaded" | "errored";
 interface MonsterImageProps {
   pokemonID: string;
   types: Type[];
+  onLoad?: ({ pokemonID }: { pokemonID: string }) => void;
 }
 
 export function MonsterImage({
   pokemonID,
   types,
+  onLoad,
 }: MonsterImageProps): JSX.Element {
   const [state, setState] = React.useState<State>("loading");
   const setLoaded = React.useCallback(() => {
     setState("loaded");
-  }, []);
+    onLoad?.({ pokemonID });
+  }, [onLoad, pokemonID]);
   const setErrored = React.useCallback(() => {
     setState("errored");
   }, []);
