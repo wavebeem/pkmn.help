@@ -2,17 +2,17 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
+import {
+  IconArrowLeft,
+  IconArrowLeftDouble,
+  IconArrowRight,
+  IconArrowRightDouble,
+} from "./IconArrows";
 import { LinkButton } from "./LinkButton";
-
-enum Location {
-  TOP = "top",
-  BOTTOM = "bottom",
-}
 
 interface PageSelectorProps {
   numPages: number;
   pageItems: any[];
-  location: Location;
   currentPage: number;
   urlForPage: (page: number) => string;
   hasPrev: boolean;
@@ -22,92 +22,73 @@ interface PageSelectorProps {
 function PageSelector({
   numPages,
   pageItems,
-  location,
   currentPage,
   urlForPage,
   hasPrev,
   hasNext,
 }: PageSelectorProps) {
-  // Attempt to stay anchored to the top or bottom of the page when using
-  // pagination buttons to avoid the screen jumping around and stuff
-  const [scrollTo, setScrollTo] = React.useState<Location>();
-
   const { t } = useTranslation();
 
-  React.useLayoutEffect(() => {
-    if (scrollTo === Location.TOP) {
-      window.scrollTo(0, 0);
-    } else if (scrollTo === Location.BOTTOM) {
-      window.scrollTo(0, document.body.scrollHeight);
-    }
-    setScrollTo(undefined);
-  }, [scrollTo]);
-
+  const hasRoomForMediumButtons = useMediaQuery("(min-width: 450px)");
   const hasRoomForLargeButtons = useMediaQuery("(min-width: 600px)");
+
+  const buttonSize = hasRoomForLargeButtons
+    ? "large"
+    : hasRoomForMediumButtons
+    ? "medium"
+    : "small";
 
   return (
     <div
       className={classNames(
-        "items-center mv3",
+        "items-stretch mv3 gap2",
         pageItems.length === 0 ? "dn" : "flex"
       )}
     >
       <LinkButton
-        onClick={() => {
-          setScrollTo(location);
-        }}
         disabled={!hasPrev}
         to={urlForPage(0)}
         title={t("pokedex.pagination.firstLong")}
         aria-label={t("pokedex.pagination.firstLong")}
+        className="flex items-center"
       >
-        &laquo;
+        <IconArrowLeftDouble className="w1 h1" aria-hidden="true" />
       </LinkButton>
-      <div className="pr1" />
       <LinkButton
-        onClick={() => {
-          setScrollTo(location);
-        }}
         disabled={!hasPrev}
         to={urlForPage(currentPage - 1)}
         title={t("pokedex.pagination.previousLong")}
         aria-label={t("pokedex.pagination.previousLong")}
+        className="flex items-center gap1 ph3 ph1-ns"
       >
-        <span aria-hidden="true">&lsaquo; </span>
-        {hasRoomForLargeButtons
-          ? t("pokedex.pagination.previousLong")
-          : t("pokedex.pagination.previous")}
+        <IconArrowLeft className="w1 h1" aria-hidden="true" />
+        {buttonSize === "medium" && t("pokedex.pagination.previous")}
+        {buttonSize === "large" && t("pokedex.pagination.previousLong")}
       </LinkButton>
-      <div className="flex-auto tc b f5 tabular-nums">
+      <div className="flex-auto b f5 tabular-nums flex items-center justify-center">
         {(currentPage + 1).toString().padStart(numPages.toString().length, "0")}
         {" / "}
         {numPages}
       </div>
       <LinkButton
-        onClick={() => {
-          setScrollTo(location);
-        }}
         disabled={!hasNext}
         to={urlForPage(currentPage + 1)}
         title={t("pokedex.pagination.nextLong")}
         aria-label={t("pokedex.pagination.nextLong")}
+        className="flex items-center gap1 ph3 ph1-ns"
       >
-        {hasRoomForLargeButtons
-          ? t("pokedex.pagination.nextLong")
-          : t("pokedex.pagination.next")}
-        <span aria-hidden="true"> &rsaquo;</span>
+        {buttonSize === "medium" && t("pokedex.pagination.next")}
+        {buttonSize === "large" && t("pokedex.pagination.nextLong")}
+        <IconArrowRight className="w1 h1" aria-hidden="true" />
       </LinkButton>
-      <div className="pr1" />
       <LinkButton
-        onClick={() => {
-          setScrollTo(location);
-        }}
         disabled={!hasNext}
         to={urlForPage(numPages - 1)}
         title={t("pokedex.pagination.lastLong")}
         aria-label={t("pokedex.pagination.lastLong")}
+        className="flex items-center"
       >
-        &raquo;
+        <IconArrowRightDouble className="w1 h1" aria-hidden="true" />
       </LinkButton>
     </div>
   );
@@ -138,7 +119,6 @@ export default function Paginator<T>({
   return (
     <div>
       <PageSelector
-        location={Location.TOP}
         numPages={numPages}
         pageItems={pageItems}
         hasPrev={hasPrev}
@@ -148,7 +128,6 @@ export default function Paginator<T>({
       />
       {pageItems.length === 0 ? emptyState : renderPage(pageItems)}
       <PageSelector
-        location={Location.BOTTOM}
         numPages={numPages}
         pageItems={pageItems}
         hasPrev={hasPrev}

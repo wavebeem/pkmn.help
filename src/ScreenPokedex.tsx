@@ -4,10 +4,11 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useHistory } from "react-router-dom";
 import { useDebounce } from "use-debounce";
-import { typeColor, typeColorBG, typeColorBorder } from "./colors";
 import { Pokemon, Type, typesFromUserInput } from "./data";
+import { formatMonsterNumber } from "./formatMonsterNumber";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
+import { MonsterType } from "./MonsterType";
 import Paginator from "./Paginator";
 import { pickTranslation } from "./pickTranslation";
 import Search from "./Search";
@@ -15,42 +16,7 @@ import StatsTable from "./StatsTable";
 import { useLanguage } from "./useLanguage";
 import { useSearch } from "./useSearch";
 
-const PAGE_SIZE = 20;
 const nbsp = "\u00a0";
-
-interface MonsterTypeProps {
-  type: Type;
-  index: number;
-}
-
-function MonsterType({ type, index }: MonsterTypeProps) {
-  const { t } = useTranslation();
-  return (
-    <div
-      className={classNames(
-        "type-bg",
-        "ttc tc flex",
-        "lh-title b",
-        "br-pill ba border-vibrant f6",
-        { ml1: index > 0 }
-      )}
-      style={{
-        padding: 2,
-        ["--type-color" as any]: typeColor(type),
-      }}
-    >
-      <div
-        className="white br-pill ba b--black-10 ph2"
-        style={{
-          background: typeColorBG(type),
-          borderColor: typeColorBorder(type),
-        }}
-      >
-        {t(`types.${type}`)}
-      </div>
-    </div>
-  );
-}
 
 interface MonsterProps {
   pokemon: Pokemon;
@@ -59,69 +25,77 @@ interface MonsterProps {
 function Monster({ pokemon }: MonsterProps) {
   const { t } = useTranslation();
   const [language] = useLanguage();
-  const displayNumber = "#" + String(pokemon.number).padStart(3, "0");
+  const displayNumber = formatMonsterNumber(pokemon.number);
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
   const speciesName = pokemon.speciesNames[language];
   const formName = pokemon.formNames[language];
   const pokemonName = formatPokemonName({ speciesName, formName });
   return (
-    <div className={classNames("fg1 pv3", "flex-ns items-center", "Monster")}>
+    <div
+      className={classNames(
+        "fg1 mv3",
+        "flex flex-column items-stretch",
+        "gap4",
+        "pa3 br3 bg1 ba border2 button-shadow"
+      )}
+    >
       <div className="flex flex-column">
-        <div className="flex flex-column pa3 br3 bg1 flex ba border3">
-          <div className="flex items-center">
-            <h2 className="mv0 f4">{speciesName}</h2>
-            <div className="ph1 flex-auto" />
-            <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
-          </div>
-          <div className="nv2 fg3 f5">{formName || nbsp}</div>
-
-          <div className="pv3 flex justify-center">
-            <MonsterImage pokemonID={pokemon.id} types={pokemon.types} />
-          </div>
-
-          <div className="pt2 flex justify-end">
-            {pokemon.types.map((t, i) => (
-              <MonsterType key={i} type={t} index={i} />
-            ))}
+        <div className="flex items-center gap2">
+          <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
+          <h2 className="mv0 f4 flex-auto">{speciesName}</h2>
+        </div>
+        <div className="nv2 fg3 f5">{formName || nbsp}</div>
+      </div>
+      <div className="flex flex-column flex-row-l gap3">
+        <div className="flex flex-column">
+          <div className="flex flex-column">
+            <div className="pv3 flex justify-center">
+              <MonsterImage
+                scale={2}
+                pokemonID={pokemon.id}
+                types={pokemon.types}
+              />
+            </div>
+            <div className="flex gap1 justify-center">
+              {pokemon.types.map((t, i) => (
+                <MonsterType key={i} type={t} />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-      <div className="flex flex-column">
-        <StatsTable pokemon={pokemon} />
-        <div className="flex justify-end">
-          <a
-            aria-label={t("pokedex.bulbapedia.label", {
-              replace: { pokemon: pokemonName },
-            })}
-            className="br1 underline fg-link OutlineFocus"
-            href={pokemon.bulbapediaURL}
-          >
-            Bulbapedia
-          </a>
-          <span aria-hidden="true" className="o-50">
-            &nbsp;&bull;&nbsp;
-          </span>
-          <Link
-            aria-label={t("pokedex.offense.label", {
-              replace: { pokemon: pokemonName },
-            })}
-            className="br1 underline fg-link OutlineFocus"
-            to={`/offense/?${params}#matchup-offense`}
-          >
-            {t("pokedex.offense.text")}
-          </Link>
-          <span aria-hidden="true" className="o-50">
-            &nbsp;&bull;&nbsp;
-          </span>
-          <Link
-            aria-label={t("pokedex.defense.label", {
-              replace: { pokemon: pokemonName },
-            })}
-            className="br1 underline fg-link OutlineFocus"
-            to={`/defense/?${params}#matchup-defense`}
-          >
-            {t("pokedex.defense.text")}
-          </Link>
+        <div className="flex flex-column justify-center flex-auto gap3">
+          <StatsTable pokemon={pokemon} />
+          <div className="flex flex-auto items-end justify-end">
+            <a
+              aria-label={t("pokedex.bulbapedia.label", {
+                pokemon: pokemonName,
+              })}
+              className="br1 underline fg-link OutlineFocus"
+              href={pokemon.bulbapediaURL}
+            >
+              Bulbapedia
+            </a>
+            <span aria-hidden="true" className="o-50">
+              &nbsp;&bull;&nbsp;
+            </span>
+            <Link
+              aria-label={t("pokedex.offense.label", { pokemon: pokemonName })}
+              className="br1 underline fg-link OutlineFocus"
+              to={`/offense/?${params}#matchup-offense`}
+            >
+              {t("pokedex.offense.text")}
+            </Link>
+            <span aria-hidden="true" className="o-50">
+              &nbsp;&bull;&nbsp;
+            </span>
+            <Link
+              aria-label={t("pokedex.defense.label", { pokemon: pokemonName })}
+              className="br1 underline fg-link OutlineFocus"
+              to={`/defense/?${params}#matchup-defense`}
+            >
+              {t("pokedex.defense.text")}
+            </Link>
+          </div>
         </div>
       </div>
     </div>
@@ -236,8 +210,10 @@ export default function ScreenPokedex({
           urlForPage={(newPage) => {
             return createParams(query, newPage);
           }}
-          pageSize={PAGE_SIZE}
-          emptyState={<p className="fg4 f4 b tc m0">No Pokémon found</p>}
+          pageSize={20}
+          emptyState={
+            <p className="fg4 f4 b tc m0">{t("pokedex.search.notFound")}</p>
+          }
           items={pkmn}
           renderPage={(page) =>
             page.map((pokemon) => (
@@ -246,6 +222,7 @@ export default function ScreenPokedex({
           }
         />
       )}
+      <div className="pb4" />
     </main>
   );
 }

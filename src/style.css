@@ -16,7 +16,6 @@
   --color-border1: hsl(0, 0%, 50%);
   --color-border2: hsl(0, 0%, 75%);
   --color-border3: hsl(0, 0%, 85%);
-  --color-border4: hsl(0, 0%, 90%);
   --color-vibrant-border: hsla(0, 0%, 0%, 0.2);
   --color-vibrant-border1: hsla(0, 0%, 0%, 0.6);
   --color-scroll-fg: hsl(0, 0%, 40%);
@@ -44,7 +43,6 @@
   --color-border1: hsl(220, 20%, 55%);
   --color-border2: hsl(220, 20%, 35%);
   --color-border3: hsl(220, 20%, 30%);
-  --color-border4: hsl(220, 20%, 25%);
   --color-vibrant-border: hsla(0, 0%, 100%, 0.2);
   --color-vibrant-border1: hsla(0, 0%, 100%, 0.6);
   --color-scroll-fg: hsl(220, 20%, 70%);
@@ -109,9 +107,6 @@
   border-color: var(--color-vibrant-border);
 }
 
-.border4 {
-  border-color: var(--color-border4);
-}
 .border3 {
   border-color: var(--color-border3);
 }
@@ -126,6 +121,9 @@
   display: grid;
 }
 
+.gap4 {
+  gap: 2rem;
+}
 .gap3 {
   gap: 1rem;
 }
@@ -216,7 +214,7 @@ button {
 }
 
 .active-squish:active:not(:disabled) {
-  transform: translateY(1px) scale(0.98);
+  transform: translateY(0.5px) scale(0.97);
 }
 
 .button-bg {
@@ -260,6 +258,12 @@ button {
   image-rendering: pixelated;
 }
 
+.img-shadow {
+  filter: drop-shadow(2px 2px 0 rgb(0 0 0 / 10%))
+    drop-shadow(4px 4px 0 rgb(0 0 0 / 5%))
+    drop-shadow(6px 6px 0 rgb(0 0 0 / 2.5%));
+}
+
 .TabBar {
   border-color: var(--color-border2);
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
@@ -288,7 +292,6 @@ button {
 
 .Monster {
   display: grid;
-  grid-gap: 1rem;
 }
 
 @media (min-width: 600px) {
@@ -335,7 +338,6 @@ button {
 .Bar-Container {
   align-self: center;
   box-shadow: inset 0 0 0 1px var(--color-border3);
-  background: var(--color-border4);
 }
 
 .Bar-Fill {
@@ -348,32 +350,71 @@ button {
 }
 
 .PokeballHeader {
-  --PokeballHeader-borderSize: 8px;
-  --PokeballHeader-circleSize: 24px;
+  --border-size: 8px;
+  --circle-size: 36px;
   background-color: var(--color-pokeball);
-  border-bottom: var(--PokeballHeader-borderSize) solid #111;
+  border-bottom: var(--border-size) solid #111;
   padding: 1rem;
-  padding-top: calc(0.6 * var(--PokeballHeader-circleSize));
-  padding-bottom: calc(0.8 * var(--PokeballHeader-circleSize));
+  padding-top: calc(0.55 * var(--circle-size));
+  padding-bottom: calc(0.55 * var(--circle-size));
   margin-top: 0;
   margin-bottom: 0;
 }
 
-/* The little Pokéball button */
-.PokeballHeader:after {
-  pointer-events: none;
-  content: " ";
+.PokeballHeaderButton {
   background: #fff;
   border: 6px solid #111;
   box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 7px #ccc;
-  width: var(--PokeballHeader-circleSize);
-  height: var(--PokeballHeader-circleSize);
+  width: var(--circle-size);
+  height: var(--circle-size);
   border-radius: 50%;
   position: absolute;
   left: 50%;
-  bottom: calc(-0.5 * var(--PokeballHeader-borderSize));
+  bottom: calc(-0.5 * var(--border-size));
   transform: translateX(-50%) translateY(50%);
   background-clip: content-box;
+}
+
+.PokeballHeaderButton:hover {
+  filter: brightness(0.95);
+}
+
+.PokeballHeaderButton:active {
+  transform: translateX(-50%) translateY(50%) translateY(0.5px) scale(0.97);
+}
+
+.EasterEgg {
+  pointer-events: none;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 50vw;
+  transform: translateX(-50%) translateY(10vh);
+  opacity: 0;
+}
+
+.EasterEgg[data-animate="true"] {
+  animation: 2s EasterEggAnimation;
+}
+
+@keyframes EasterEggAnimation {
+  10%,
+  95% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10.5vh) rotateZ(2deg);
+  }
+  15%,
+  90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10vh);
+  }
+}
+
+.EasterEgg img {
+  filter: drop-shadow(0 0 1px white) drop-shadow(0 0 2px white)
+    drop-shadow(0 0 3px white) drop-shadow(0 0 4px white)
+    drop-shadow(0 0 5px white) drop-shadow(0 0 6px white)
+    drop-shadow(0 0 7px rgb(0 0 0 / 20%));
 }
 
 .type-bg {

@@ -97,7 +97,7 @@ function Matchups({
               (
               <Link
                 to="/offense/coverage/"
-                className="underline fg-link OutlineFocus"
+                className="underline fg-link br1 OutlineFocus"
                 aria-label={t("offense.weaknessCoverageEditLong")}
               >
                 {t("offense.weaknessCoverageEdit")}

@@ -8,12 +8,14 @@ import { useRegisterSW } from "virtual:pwa-register/react";
 import { Button } from "./Button";
 import { CoverageType, Pokemon } from "./data";
 import { formatPokemonName } from "./formatPokemonName";
+import { MonsterImage } from "./MonsterImage";
 import ScreenDefense from "./ScreenDefense";
 import ScreenMore from "./ScreenMore";
 import ScreenOffense from "./ScreenOffense";
 import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
+import ScreenWeaknessList from "./ScreenWeaknessList";
 import { PUBLIC_PATH } from "./settings";
 import { useFetchJSON } from "./useFetchJSON";
 import { useLanguage } from "./useLanguage";
@@ -75,6 +77,8 @@ export default function App() {
     CoverageType[]
   >([]);
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
+  const [easterEgg, setEasterEgg] = React.useState<Pokemon>();
+  const [easterEggLoadedID, setEasterEggLoadedID] = React.useState("");
 
   const [language] = useLanguage();
 
@@ -126,6 +130,31 @@ export default function App() {
           <Link to="/" className="no-underline white OutlineFocus br1">
             {t("title")}
           </Link>
+          <div
+            className="PokeballHeaderButton"
+            onClick={(event) => {
+              event.preventDefault();
+              const i = Math.floor(Math.random() * AllPokemon.length);
+              const pkmn = AllPokemon[i];
+              if (!pkmn) return;
+              setEasterEgg(pkmn);
+            }}
+          />
+          {easterEgg && (
+            <div
+              className="EasterEgg"
+              data-animate={easterEggLoadedID === easterEgg.id}
+            >
+              <MonsterImage
+                pokemonID={easterEgg.id}
+                types={easterEgg.types}
+                onLoad={({ pokemonID }) => {
+                  setEasterEggLoadedID(pokemonID);
+                }}
+                scale={2}
+              />
+            </div>
+          )}
         </h1>
         <nav className={classNames(["bg1", "bb border2 TabBar", "pb2 ph2"])}>
           <NavLink
@@ -196,6 +225,13 @@ export default function App() {
         )}
         <React.Suspense fallback={<div className="Spinner center mt4 f2" />}>
           <Switch>
+            <Route
+              exact
+              path="/offense/weakness-list/"
+              render={() => (
+                <ScreenWeaknessList coverageTypes={coverageTypes} />
+              )}
+            />
             <Route
               exact
               path="/offense/coverage/"

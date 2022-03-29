@@ -11,7 +11,7 @@
     "weaknessCoverage": "Schwäche-Coverage",
     "weaknessCoverageEdit": "Bearbeiten",
     "weaknessCoverageEditLong": "Bearbeiten Schwächen-Abdeckung",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} Formen",
+    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>Formen</<formslink>",
     "dealsXTo": "Fügt {{ x }} Schaden zu"
   },
   "coverage": {
