@@ -34,65 +34,68 @@ function Monster({ pokemon }: MonsterProps) {
     <div
       className={classNames(
         "fg1 mv3",
-        "flex-ns items-stretch",
-        "Monster",
+        "flex flex-column items-stretch",
         "gap4",
-        "pa3 br3 bg1 ba border3"
+        "pa3 br3 bg1 ba border2 button-shadow"
       )}
     >
       <div className="flex flex-column">
-        <div className="flex flex-column flex">
-          <div className="flex items-center gap2">
-            <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
-            <h2 className="mv0 f4 flex-auto">{speciesName}</h2>
-          </div>
-          <div className="nv2 fg3 f5">{formName || nbsp}</div>
-
-          <div className="pv3 flex justify-center">
-            <MonsterImage
-              scale={2}
-              pokemonID={pokemon.id}
-              types={pokemon.types}
-            />
-          </div>
-
-          <div className="pt2 flex gap1 justify-start">
-            {pokemon.types.map((t, i) => (
-              <MonsterType key={i} type={t} />
-            ))}
+        <div className="flex items-center gap2">
+          <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
+          <h2 className="mv0 f4 flex-auto">{speciesName}</h2>
+        </div>
+        <div className="nv2 fg3 f5">{formName || nbsp}</div>
+      </div>
+      <div className="flex flex-column flex-row-l gap3">
+        <div className="flex flex-column">
+          <div className="flex flex-column">
+            <div className="pv3 flex justify-center">
+              <MonsterImage
+                scale={2}
+                pokemonID={pokemon.id}
+                types={pokemon.types}
+              />
+            </div>
+            <div className="flex gap1 justify-center">
+              {pokemon.types.map((t, i) => (
+                <MonsterType key={i} type={t} />
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-      <div className="flex flex-column justify-center flex-auto gap3">
-        <StatsTable pokemon={pokemon} />
-        <div className="flex justify-end">
-          <a
-            aria-label={t("pokedex.bulbapedia.label", { pokemon: pokemonName })}
-            className="br1 underline fg-link OutlineFocus"
-            href={pokemon.bulbapediaURL}
-          >
-            Bulbapedia
-          </a>
-          <span aria-hidden="true" className="o-50">
-            &nbsp;&bull;&nbsp;
-          </span>
-          <Link
-            aria-label={t("pokedex.offense.label", { pokemon: pokemonName })}
-            className="br1 underline fg-link OutlineFocus"
-            to={`/offense/?${params}#matchup-offense`}
-          >
-            {t("pokedex.offense.text")}
-          </Link>
-          <span aria-hidden="true" className="o-50">
-            &nbsp;&bull;&nbsp;
-          </span>
-          <Link
-            aria-label={t("pokedex.defense.label", { pokemon: pokemonName })}
-            className="br1 underline fg-link OutlineFocus"
-            to={`/defense/?${params}#matchup-defense`}
-          >
-            {t("pokedex.defense.text")}
-          </Link>
+        <div className="flex flex-column justify-center flex-auto gap3">
+          <StatsTable pokemon={pokemon} />
+          <div className="flex flex-auto items-end justify-end">
+            <a
+              aria-label={t("pokedex.bulbapedia.label", {
+                pokemon: pokemonName,
+              })}
+              className="br1 underline fg-link OutlineFocus"
+              href={pokemon.bulbapediaURL}
+            >
+              Bulbapedia
+            </a>
+            <span aria-hidden="true" className="o-50">
+              &nbsp;&bull;&nbsp;
+            </span>
+            <Link
+              aria-label={t("pokedex.offense.label", { pokemon: pokemonName })}
+              className="br1 underline fg-link OutlineFocus"
+              to={`/offense/?${params}#matchup-offense`}
+            >
+              {t("pokedex.offense.text")}
+            </Link>
+            <span aria-hidden="true" className="o-50">
+              &nbsp;&bull;&nbsp;
+            </span>
+            <Link
+              aria-label={t("pokedex.defense.label", { pokemon: pokemonName })}
+              className="br1 underline fg-link OutlineFocus"
+              to={`/defense/?${params}#matchup-defense`}
+            >
+              {t("pokedex.defense.text")}
+            </Link>
+          </div>
         </div>
       </div>
     </div>
