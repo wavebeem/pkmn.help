@@ -219,6 +219,7 @@ export default function ScreenPokedex({
           }
         />
       )}
+      <div className="pb4" />
     </main>
   );
 }
