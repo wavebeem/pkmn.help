@@ -45,7 +45,7 @@ const baseClasses = classNames(
   "no-underline",
   "db",
   "pv3 ph2 pv2-ns ph3-ns",
-  "ba br1",
+  "ba br2",
   "b f5",
   "SimpleFocus"
 );
