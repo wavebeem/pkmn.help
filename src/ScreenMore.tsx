@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "./Button";
+import { IconGlobe } from "./IconGlobe";
 import { Select } from "./Select";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
@@ -50,6 +51,7 @@ export default function ScreenMore(): JSX.Element {
 
   return (
     <main className="pa3 center content-narrow lh-copy">
+      <IconGlobe className="w2 h2" aria-hidden="true" />
       <h2 className="lh-title f4">{t("more.contact.heading")}</h2>
       <p>
         <Trans
