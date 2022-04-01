@@ -138,10 +138,6 @@
   fill: currentColor;
 }
 
-.no-pointer {
-  pointer-events: none;
-}
-
 .cursor-na {
   cursor: not-allowed;
 }
@@ -259,9 +255,7 @@ button {
 }
 
 .img-shadow {
-  filter: drop-shadow(2px 2px 0 rgb(0 0 0 / 10%))
-    drop-shadow(4px 4px 0 rgb(0 0 0 / 5%))
-    drop-shadow(6px 6px 0 rgb(0 0 0 / 2.5%));
+  filter: drop-shadow(4px 4px 0 rgb(0 0 0 / 10%));
 }
 
 .TabBar {
