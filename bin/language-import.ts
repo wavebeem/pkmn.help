@@ -1,7 +1,5 @@
-import Papa from "papaparse";
-import path from "path";
 import fs from "fs";
-import { readJSON } from "./readJSON";
+import Papa from "papaparse";
 import { saveJSON } from "./saveJSON";
 
 function set(object: Record<string, any>, keys: string[], value: any): void {
@@ -24,7 +22,7 @@ function set(object: Record<string, any>, keys: string[], value: any): void {
 }
 
 async function main() {
-  const lang = process.argv[2];
+  const [, , lang] = process.argv;
   if (!lang) {
     throw new Error(`no such language ${lang}`);
   }
@@ -33,7 +31,9 @@ async function main() {
   const [, ...rows] = data;
   const translation = {};
   for (const [key, , other] of rows) {
-    set(translation, key.split(/[.]/), other);
+    if (other) {
+      set(translation, key.split("."), other);
+    }
   }
   saveJSON(`../public/locales/${lang}-translation.json`, translation);
 }

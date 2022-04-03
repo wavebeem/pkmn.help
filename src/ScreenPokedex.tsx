@@ -30,6 +30,7 @@ function Monster({ pokemon }: MonsterProps) {
   const speciesName = pokemon.speciesNames[language];
   const formName = pokemon.formNames[language];
   const pokemonName = formatPokemonName({ speciesName, formName });
+  const formattedFormName = formName ? `(${formName})` : nbsp;
   return (
     <div
       className={classNames(
@@ -39,12 +40,12 @@ function Monster({ pokemon }: MonsterProps) {
         "pa3 br3 bg1 ba border2 button-shadow"
       )}
     >
-      <div className="flex flex-column">
+      <div className="flex flex flex-column flex-row-ns items-center-ns gap2">
         <div className="flex items-center gap2">
           <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
           <h2 className="mv0 f4 flex-auto">{speciesName}</h2>
         </div>
-        <div className="nv2 fg3 f5">{formName || nbsp}</div>
+        <div className="nv2 fg3 f5">{formattedFormName}</div>
       </div>
       <div className="flex flex-column flex-row-l gap3">
         <div className="flex flex-column">
