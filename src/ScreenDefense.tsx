@@ -36,6 +36,9 @@ export default function ScreenDefense({
   function createParams(types: Type[]): string {
     types = [...new Set(types)];
     const params = new URLSearchParams();
+    if (generation !== "default") {
+      params.set("game", generation);
+    }
     if (types.length >= 0) {
       params.set("types", types.join(" "));
     }

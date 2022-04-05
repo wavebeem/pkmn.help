@@ -160,8 +160,6 @@ export function Defense({
   fallbackCoverageTypes,
 }: DefenseProps) {
   const { t } = useTranslation();
-  console.log("defensiveMatchups", generation, types);
-  console.log(defensiveMatchups(generation, types));
   return (
     <Matchups
       generation={generation}
