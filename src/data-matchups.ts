@@ -1,6 +1,27 @@
 import { Generation } from "./data-generations";
 import { Type, typesForGeneration } from "./data-types";
 
+const typesInPokemondbOrder = [
+  Type.NORMAL,
+  Type.FIRE,
+  Type.WATER,
+  Type.ELECTRIC,
+  Type.GRASS,
+  Type.ICE,
+  Type.FIGHTING,
+  Type.POISON,
+  Type.GROUND,
+  Type.FLYING,
+  Type.PSYCHIC,
+  Type.BUG,
+  Type.ROCK,
+  Type.GHOST,
+  Type.DRAGON,
+  Type.DARK,
+  Type.STEEL,
+  Type.FAIRY,
+];
+
 const _ = 1;
 const H = 1 / 2;
 const X = NaN;
@@ -75,9 +96,13 @@ const generationMatchupData = {
   default: genDefault,
 };
 
-function matchupForPair(gen: Generation, t1: Type, t2: Type): number {
+function matchupForPair(
+  gen: Generation,
+  defenseType: Type,
+  offenseType: Type
+): number {
   const map = generationMatchupMaps[gen];
-  const key = getKey(t1, t2);
+  const key = getKey(offenseType, defenseType);
   const val = map.get(key);
   if (val === undefined) {
     throw new Error(`matchupForPair: ${key}`);
@@ -100,15 +125,13 @@ export function matchupFor(
     .reduce(multiply, 1);
 }
 
-// TODO: I think this function is producing garbage data
 function createMatchupMap(gen: Generation): Map<string, number> {
   const map = new Map<string, number>();
   const data = generationMatchupData[gen];
-  const theTypes = typesForGeneration(gen);
   for (const [r, row] of data.entries()) {
     for (const [c, col] of row.entries()) {
-      const t1 = theTypes[r];
-      const t2 = theTypes[c];
+      const t1 = typesInPokemondbOrder[r];
+      const t2 = typesInPokemondbOrder[c];
       const key = getKey(t1, t2);
       map.set(key, col);
     }
