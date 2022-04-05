@@ -255,6 +255,7 @@ export default function App() {
               render={() => (
                 <ScreenOffense
                   generation={generation}
+                  setGeneration={setGeneration}
                   coverageTypes={coverageTypes}
                   setCoverageTypes={setCoverageTypes}
                   setOffenseParams={setOffenseParams}
@@ -269,6 +270,7 @@ export default function App() {
               render={() => (
                 <ScreenDefense
                   generation={generation}
+                  setGeneration={setGeneration}
                   setDefenseParams={setDefenseParams}
                   fallbackCoverageTypes={fallbackCoverageTypes}
                 />

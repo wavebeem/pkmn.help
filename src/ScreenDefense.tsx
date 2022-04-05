@@ -1,9 +1,11 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
-import { Generation } from "./data-generations";
+import { CommonSettings } from "./CommonSettings";
+import { Generation, generations, isGeneration } from "./data-generations";
 import { CoverageType, removeNones, Type, typesFromString } from "./data-types";
 import * as Matchups from "./Matchups";
+import { Select } from "./Select";
 import TypeSelector from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
@@ -12,12 +14,14 @@ import { useTypeCount } from "./useTypeCount";
 
 interface DefenseProps {
   generation: Generation;
+  setGeneration: (generation: Generation) => void;
   setDefenseParams: (params: string) => void;
   fallbackCoverageTypes: CoverageType[];
 }
 
 export default function ScreenDefense({
   generation,
+  setGeneration,
   setDefenseParams,
   fallbackCoverageTypes,
 }: DefenseProps) {
@@ -30,10 +34,26 @@ export default function ScreenDefense({
 
   const [typeCount] = useTypeCount();
 
+  const sGeneration = search.get("game") || "";
+
   const typesString = search.get("types") || "normal";
   const types = typesFromString(typesString).slice(0, Number(typeCount));
 
-  function createParams(types: Type[]): string {
+  // TODO: I need to make ESLint happy here. I want to sync state->URL and
+  // URL->state, but if I make it happen unrestricted in both directions you
+  // just get an infinite loop, lol.
+  React.useEffect(() => {
+    updateTypes(types);
+  }, [generation, types]);
+
+  React.useEffect(() => {
+    console.log({ sGeneration, generation });
+    if (isGeneration(sGeneration) && sGeneration !== generation) {
+      setGeneration(sGeneration);
+    }
+  }, []);
+
+  function createParams(generation: Generation, types: Type[]): string {
     types = [...new Set(types)];
     const params = new URLSearchParams();
     if (generation !== "default") {
@@ -46,7 +66,10 @@ export default function ScreenDefense({
   }
 
   function updateTypes(types: Type[]) {
-    history.replace({ search: createParams(types) });
+    const search = createParams(generation, types);
+    if (search !== location.search) {
+      history.replace({ search });
+    }
   }
 
   function updateTypeAt(index: number): (t: Type) => void {
@@ -64,6 +87,9 @@ export default function ScreenDefense({
   const classH2 = "tc f5 mb2 mt4";
   return (
     <main className="ph3 pt0 pb4 content-wide center">
+      <div className="pt3 pb4 bb border3">
+        <CommonSettings generation={generation} setGeneration={setGeneration} />
+      </div>
       <div className="dib w-50-ns w-100 v-top">
         <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
         <TypeSelector

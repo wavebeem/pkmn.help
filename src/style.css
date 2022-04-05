@@ -296,6 +296,10 @@ button {
   .TabBar {
     display: flex;
   }
+
+  .grid-col2 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 700px) {
