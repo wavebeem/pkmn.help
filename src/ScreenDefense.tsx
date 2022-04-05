@@ -2,10 +2,9 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import { CommonSettings } from "./CommonSettings";
-import { Generation, generations, isGeneration } from "./data-generations";
+import { Generation, isGeneration } from "./data-generations";
 import { CoverageType, removeNones, Type, typesFromString } from "./data-types";
 import * as Matchups from "./Matchups";
-import { Select } from "./Select";
 import TypeSelector from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
@@ -53,7 +52,7 @@ export default function ScreenDefense({
     }
   }, []);
 
-  function createParams(generation: Generation, types: Type[]): string {
+  function createParams(types: Type[]): string {
     types = [...new Set(types)];
     const params = new URLSearchParams();
     if (generation !== "default") {
@@ -66,7 +65,7 @@ export default function ScreenDefense({
   }
 
   function updateTypes(types: Type[]) {
-    const search = createParams(generation, types);
+    const search = createParams(types);
     if (search !== location.search) {
       history.replace({ search });
     }
