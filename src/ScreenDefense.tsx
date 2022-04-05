@@ -1,6 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
+import { Generation } from "./data-generations";
 import { CoverageType, removeNones, Type, typesFromString } from "./data-types";
 import * as Matchups from "./Matchups";
 import TypeSelector from "./TypeSelector";
@@ -10,11 +11,13 @@ import { useSearch } from "./useSearch";
 import { useTypeCount } from "./useTypeCount";
 
 interface DefenseProps {
+  generation: Generation;
   setDefenseParams: (params: string) => void;
   fallbackCoverageTypes: CoverageType[];
 }
 
 export default function ScreenDefense({
+  generation,
   setDefenseParams,
   fallbackCoverageTypes,
 }: DefenseProps) {
@@ -61,6 +64,7 @@ export default function ScreenDefense({
       <div className="dib w-50-ns w-100 v-top">
         <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
         <TypeSelector
+          generation={generation}
           name="primary"
           value={types[0]}
           onChange={updateTypeAt(0)}
@@ -69,6 +73,7 @@ export default function ScreenDefense({
         />
         <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
         <TypeSelector
+          generation={generation}
           name="secondary"
           value={types[1] || Type.NONE}
           onChange={updateTypeAt(1)}
@@ -79,6 +84,7 @@ export default function ScreenDefense({
           <>
             <h2 className={classH2}>{t("defense.chooseThird")}</h2>
             <TypeSelector
+              generation={generation}
               name="third"
               value={types[2] || Type.NONE}
               onChange={updateTypeAt(2)}
@@ -91,6 +97,7 @@ export default function ScreenDefense({
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups.Defense
+          generation={generation}
           types={types}
           fallbackCoverageTypes={fallbackCoverageTypes}
         />

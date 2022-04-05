@@ -1,4 +1,5 @@
 import { closest } from "fastest-levenshtein";
+import { Generation } from "./data-generations";
 
 export interface Pokemon {
   id: string;
@@ -90,6 +91,24 @@ export const types = [
   Type.DARK,
   Type.FAIRY,
 ];
+
+const typesGen2 = types.filter((t) => t !== Type.FAIRY);
+const typesGen1 = typesGen2.filter(
+  (t) => !(t === Type.DARK || t === Type.STEEL)
+);
+
+export function typesForGeneration(generation: Generation): Type[] {
+  switch (generation) {
+    case "default":
+      return types;
+    case "gen1":
+      return typesGen1;
+    case "gen2":
+      return typesGen2;
+    default:
+      throw new Error(`typesForGeneration: ${generation}`);
+  }
+}
 
 export const typesOrNone = [...types, Type.NONE];
 

@@ -1,7 +1,8 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Generation, matchupFor } from "./data-matchups";
+import { matchupFor } from "./data-matchups";
+import { Generation } from "./data-generations";
 import { CoverageType, typesFromString } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
 import { IconArrowLeft } from "./IconArrows";

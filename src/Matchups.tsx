@@ -5,10 +5,10 @@ import { Link } from "react-router-dom";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
 import {
   defensiveMatchups,
-  Generation,
   GroupedMatchups,
   offensiveMatchups,
 } from "./data-matchups";
+import { Generation } from "./data-generations";
 import { CoverageType, Type } from "./data-types";
 import DexCoverage from "./DexCoverage";
 
@@ -68,6 +68,7 @@ function Section({ title, types }: SectionProps) {
 }
 
 interface MatchupsProps {
+  generation: Generation;
   coverageTypes?: CoverageType[];
   kind: "offense" | "defense";
   types: Type[];
@@ -78,6 +79,7 @@ interface MatchupsProps {
 }
 
 function Matchups({
+  generation,
   coverageTypes,
   kind,
   types,
@@ -112,6 +114,7 @@ function Matchups({
             )}
           >
             <DexCoverage
+              generation={generation}
               coverageTypes={coverageTypes ?? fallbackCoverageTypes}
               types={types}
               isLoading={isLoading}
@@ -157,8 +160,11 @@ export function Defense({
   fallbackCoverageTypes,
 }: DefenseProps) {
   const { t } = useTranslation();
+  console.log("defensiveMatchups", generation, types);
+  console.log(defensiveMatchups(generation, types));
   return (
     <Matchups
+      generation={generation}
       kind="defense"
       types={types}
       formatTitle={(x) => t("defense.takesXFrom", { x })}
@@ -188,6 +194,7 @@ export function Offense({
   const { t } = useTranslation();
   return (
     <Matchups
+      generation={generation}
       kind="offense"
       types={types}
       coverageTypes={coverageTypes}

@@ -1,12 +1,14 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
+import { Generation } from "./data-generations";
 import { CoverageType, Type, typesFromString } from "./data-types";
 import * as Matchups from "./Matchups";
 import MultiTypeSelector from "./MultiTypeSelector";
 import { useSearch } from "./useSearch";
 
 interface OffenseProps {
+  generation: Generation;
   coverageTypes?: CoverageType[];
   setCoverageTypes: (types: CoverageType[]) => void;
   setOffenseParams: (params: string) => void;
@@ -15,6 +17,7 @@ interface OffenseProps {
 }
 
 export default function ScreenOffense({
+  generation,
   coverageTypes,
   setCoverageTypes,
   setOffenseParams,
@@ -54,6 +57,7 @@ export default function ScreenOffense({
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups.Offense
+          generation={generation}
           coverageTypes={coverageTypes}
           setCoverageTypes={setCoverageTypes}
           types={offenseTypes}
