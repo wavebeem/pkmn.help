@@ -100,6 +100,7 @@ export function matchupFor(
     .reduce(multiply, 1);
 }
 
+// TODO: I think this function is producing garbage data
 function createMatchupMap(gen: Generation): Map<string, number> {
   const map = new Map<string, number>();
   const data = generationMatchupData[gen];
