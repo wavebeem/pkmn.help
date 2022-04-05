@@ -1,6 +1,6 @@
 import * as React from "react";
 import { typeColor } from "./colors";
-import { Type } from "./data";
+import { Type } from "./data-types";
 
 export interface StatBarProps {
   value: number;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
-import { CoverageType, removeNones, Type, typesFromString } from "./data";
+import { CoverageType, removeNones, Type, typesFromString } from "./data-types";
 import * as Matchups from "./Matchups";
 import TypeSelector from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";

@@ -2,7 +2,7 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG } from "./colors";
-import { Type, types, typesOrNone } from "./data";
+import { Type, types, typesOrNone } from "./data-types";
 
 const buttonInnerHeight = "1.5rem";
 

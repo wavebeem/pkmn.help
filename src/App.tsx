@@ -6,7 +6,7 @@ import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Button } from "./Button";
-import { CoverageType, Pokemon } from "./data";
+import { CoverageType, Pokemon } from "./data-types";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import ScreenDefense from "./ScreenDefense";

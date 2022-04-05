@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
-import { Pokemon, Type } from "./data";
+import { Pokemon, Type } from "./data-types";
 import StatBar from "./StatBar";
 
 const STAT_MAX = 255;

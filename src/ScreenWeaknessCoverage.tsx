@@ -9,7 +9,7 @@ import {
   reverseClosestLookup,
   Type,
   typesFromUserInput,
-} from "./data";
+} from "./data-types";
 import { IconArrowLeft } from "./IconArrows";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";

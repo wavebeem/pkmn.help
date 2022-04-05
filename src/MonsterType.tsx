@@ -2,7 +2,7 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
-import { Type } from "./data";
+import { Type } from "./data-types";
 
 interface MonsterTypeProps {
   type: Type;

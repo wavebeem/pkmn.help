@@ -4,12 +4,12 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
 import {
-  CoverageType,
   defensiveMatchups,
+  Generation,
   GroupedMatchups,
   offensiveMatchups,
-  Type,
-} from "./data";
+} from "./data-matchups";
+import { CoverageType, Type } from "./data-types";
 import DexCoverage from "./DexCoverage";
 
 interface BadgeProps {
@@ -146,18 +146,23 @@ const displayEffectiveness = {
 };
 
 export interface DefenseProps {
+  generation: Generation;
   types: Type[];
   fallbackCoverageTypes: CoverageType[];
 }
 
-export function Defense({ types, fallbackCoverageTypes }: DefenseProps) {
+export function Defense({
+  generation,
+  types,
+  fallbackCoverageTypes,
+}: DefenseProps) {
   const { t } = useTranslation();
   return (
     <Matchups
       kind="defense"
       types={types}
       formatTitle={(x) => t("defense.takesXFrom", { x })}
-      matchups={defensiveMatchups(types)}
+      matchups={defensiveMatchups(generation, types)}
       fallbackCoverageTypes={fallbackCoverageTypes}
       isLoading={false}
     />
@@ -165,6 +170,7 @@ export function Defense({ types, fallbackCoverageTypes }: DefenseProps) {
 }
 
 export interface OffenseProps {
+  generation: Generation;
   coverageTypes?: CoverageType[];
   setCoverageTypes: (types: CoverageType[]) => void;
   types: Type[];
@@ -173,6 +179,7 @@ export interface OffenseProps {
 }
 
 export function Offense({
+  generation,
   coverageTypes,
   types,
   fallbackCoverageTypes,
@@ -185,7 +192,7 @@ export function Offense({
       types={types}
       coverageTypes={coverageTypes}
       formatTitle={(x) => t("offense.dealsXTo", { x })}
-      matchups={offensiveMatchups(types)}
+      matchups={offensiveMatchups(generation, types)}
       fallbackCoverageTypes={fallbackCoverageTypes}
       isLoading={isLoading}
     />

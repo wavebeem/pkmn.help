@@ -1,7 +1,8 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { CoverageType, matchupFor, typesFromString } from "./data";
+import { Generation, matchupFor } from "./data-matchups";
+import { CoverageType, typesFromString } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
 import { IconArrowLeft } from "./IconArrows";
 import { MonsterType } from "./MonsterType";
@@ -9,10 +10,12 @@ import Paginator from "./Paginator";
 import { useSearch } from "./useSearch";
 
 interface WeaknessListProps {
+  generation: Generation;
   coverageTypes: CoverageType[];
 }
 
 export default function ScreenWeaknessList({
+  generation,
   coverageTypes,
 }: WeaknessListProps) {
   const { t } = useTranslation();
@@ -20,7 +23,7 @@ export default function ScreenWeaknessList({
   const page = Number(search.get("page") || 1) - 1;
   const types = typesFromString(search.get("types") || "");
   const weak = coverageTypes.filter((ct) => {
-    const matchups = types.map((t) => matchupFor(ct.types, t));
+    const matchups = types.map((t) => matchupFor(generation, ct.types, t));
     return matchups.some((effectiveness) => {
       return effectiveness > 1;
     });
