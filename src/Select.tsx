@@ -15,7 +15,7 @@ export function Select({
 }: SelectProps) {
   return (
     <div>
-      {label && <div className="pb1">{label}</div>}
+      {label && <div className="b pb1">{label}</div>}
       <div className="Select">
         <select {...props} aria-label={ariaLabel} className={baseClasses} />
       </div>
@@ -28,7 +28,7 @@ const baseClasses = classNames(
   "db w-100",
   "no-underline",
   "ba br2 pa2 pr4",
-  "b f5",
+  "f5",
   "SimpleFocus",
   "border1 button-shadow button-bg button-bg-hover color-inherit"
 );

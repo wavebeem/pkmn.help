@@ -6,7 +6,8 @@ import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { Button } from "./Button";
-import { CoverageType, Pokemon } from "./data";
+import { Generation } from "./data-generations";
+import { CoverageType, Pokemon } from "./data-types";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import ScreenDefense from "./ScreenDefense";
@@ -68,6 +69,7 @@ export default function App() {
   const { i18n } = useTranslation(undefined, { useSuspense: false });
 
   // State...
+  const [generation, setGeneration] = React.useState<Generation>("default");
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
@@ -229,7 +231,10 @@ export default function App() {
               exact
               path="/offense/weakness-list/"
               render={() => (
-                <ScreenWeaknessList coverageTypes={coverageTypes} />
+                <ScreenWeaknessList
+                  generation={generation}
+                  coverageTypes={coverageTypes}
+                />
               )}
             />
             <Route
@@ -249,6 +254,8 @@ export default function App() {
               path="/offense/"
               render={() => (
                 <ScreenOffense
+                  generation={generation}
+                  setGeneration={setGeneration}
                   coverageTypes={coverageTypes}
                   setCoverageTypes={setCoverageTypes}
                   setOffenseParams={setOffenseParams}
@@ -262,6 +269,8 @@ export default function App() {
               path="/defense/"
               render={() => (
                 <ScreenDefense
+                  generation={generation}
+                  setGeneration={setGeneration}
                   setDefenseParams={setDefenseParams}
                   fallbackCoverageTypes={fallbackCoverageTypes}
                 />
@@ -283,7 +292,16 @@ export default function App() {
                 />
               )}
             />
-            <Route exact path="/more/" component={ScreenMore} />
+            <Route
+              exact
+              path="/more/"
+              render={() => (
+                <ScreenMore
+                  generation={generation}
+                  setGeneration={setGeneration}
+                />
+              )}
+            />
             <Redirect to="/defense/" />
           </Switch>
         </React.Suspense>

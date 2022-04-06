@@ -1,6 +1,8 @@
 import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "./Button";
+import { Generation, generations, isGeneration } from "./data-generations";
+import { languages } from "./languages";
 import { Select } from "./Select";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
@@ -20,28 +22,23 @@ async function unregisterServiceWorker() {
   }
 }
 
-interface Language {
+export interface Language {
   title: string;
   value: string;
 }
 
-const languages: Language[] = [
-  { title: "English", value: "en" },
-  { title: "日本語 (Japanese)", value: "ja" },
-  { title: "にほんご (Japanese Kana-only)", value: "ja-Hrkt" },
-  { title: "汉语 (Simplified Chinese)", value: "zh-Hans" },
-  { title: "漢語 (Traditional Chinese)", value: "zh-Hant" },
-  { title: "Français (French)", value: "fr" },
-  { title: "Deutsch (German)", value: "de" },
-  { title: "Italiano (Italian)", value: "it" },
-  { title: "한국어 (Korean)", value: "ko" },
-  { title: "Español (Spanish)", value: "es" },
-];
-
 const typeCountValues = ["2", "3"] as const;
 const themeValues = ["auto", "light", "dark"] as const;
 
-export default function ScreenMore(): JSX.Element {
+interface ScreenMoreProps {
+  generation: Generation;
+  setGeneration: (generation: Generation) => void;
+}
+
+export default function ScreenMore({
+  generation,
+  setGeneration,
+}: ScreenMoreProps): JSX.Element {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();

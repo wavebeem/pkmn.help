@@ -2,11 +2,13 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG } from "./colors";
-import { Type, types, typesOrNone } from "./data";
+import { Generation } from "./data-generations";
+import { Type, typesForGeneration } from "./data-types";
 
 const buttonInnerHeight = "1.5rem";
 
 interface TypeSelectorProps {
+  generation: Generation;
   onChange(type: Type): void;
   value: Type;
   includeNone: boolean;
@@ -15,6 +17,7 @@ interface TypeSelectorProps {
 }
 
 export default function TypeSelector({
+  generation,
   onChange,
   value,
   includeNone,
@@ -22,10 +25,11 @@ export default function TypeSelector({
   name,
 }: TypeSelectorProps) {
   const { t } = useTranslation();
-  const theTypes = includeNone ? typesOrNone : types;
+  const baseTypes = typesForGeneration(generation);
+  const theTypes = includeNone ? [...baseTypes, Type.NONE] : baseTypes;
   const styles = {
     disabled: "border3 fg4 bg2 o-60 SimpleFocus pointer-none",
-    selected: "border-vibrant2 type-bg SelectedFocus",
+    selected: "border-vibrant2 type-bg SelectedFocus b",
     normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
@@ -46,7 +50,7 @@ export default function TypeSelector({
               "db",
               "ba br-pill",
               "pv1 ph2",
-              "f5 b",
+              "f5",
               "ttc",
               "select-none",
               "SimpleFocus",

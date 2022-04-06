@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 import { typeColor } from "./colors";
-import { Type } from "./data";
+import { Type } from "./data-types";
 import { getImage } from "./getImage";
 
 type State = "loading" | "loaded" | "errored";

@@ -4,12 +4,12 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
 import {
-  CoverageType,
   defensiveMatchups,
   GroupedMatchups,
   offensiveMatchups,
-  Type,
-} from "./data";
+} from "./data-matchups";
+import { Generation } from "./data-generations";
+import { CoverageType, Type } from "./data-types";
 import DexCoverage from "./DexCoverage";
 
 interface BadgeProps {
@@ -24,11 +24,10 @@ function Badge({ type }: BadgeProps) {
         "type-bg",
         "ba border-vibrant",
         "br2",
-        "ttc tc b f5 lh-title"
+        "b f5 lh-title"
       )}
       style={{
-        width: 80,
-        margin: "0.125rem",
+        width: 120,
         padding: 2,
         ["--type-color" as any]: typeColor(type),
       }}
@@ -36,6 +35,8 @@ function Badge({ type }: BadgeProps) {
       <div
         className="br1 ba b--transparent white truncate"
         style={{
+          paddingLeft: 4,
+          paddingRight: 4,
           background: typeColorBG(type),
           borderColor: typeColorBorder(type),
         }}
@@ -58,7 +59,7 @@ function Section({ title, types }: SectionProps) {
   return (
     <div>
       <h2 className="f5 mt3 mb0">{title}</h2>
-      <div className="mw5 center MatchupsSection-Container">
+      <div className="center MatchupsSection-Container">
         {types.map((t) => (
           <Badge key={`type-${t}`} type={t} />
         ))}
@@ -68,6 +69,7 @@ function Section({ title, types }: SectionProps) {
 }
 
 interface MatchupsProps {
+  generation: Generation;
   coverageTypes?: CoverageType[];
   kind: "offense" | "defense";
   types: Type[];
@@ -78,6 +80,7 @@ interface MatchupsProps {
 }
 
 function Matchups({
+  generation,
   coverageTypes,
   kind,
   types,
@@ -89,7 +92,7 @@ function Matchups({
   const { t } = useTranslation();
   return (
     <div className="tc pt2" id={`matchup-${kind}`}>
-      {kind === "offense" ? (
+      {kind === "offense" && generation === "default" && (
         <div>
           <h2 className="f5 mt3 mb0">
             {t("offense.weaknessCoverage")}{" "}
@@ -112,13 +115,14 @@ function Matchups({
             )}
           >
             <DexCoverage
+              generation={generation}
               coverageTypes={coverageTypes ?? fallbackCoverageTypes}
               types={types}
               isLoading={isLoading}
             />
           </div>
         </div>
-      ) : null}
+      )}
       {effectivenessLevels.map((eff) => {
         return (
           <Section
@@ -146,18 +150,24 @@ const displayEffectiveness = {
 };
 
 export interface DefenseProps {
+  generation: Generation;
   types: Type[];
   fallbackCoverageTypes: CoverageType[];
 }
 
-export function Defense({ types, fallbackCoverageTypes }: DefenseProps) {
+export function Defense({
+  generation,
+  types,
+  fallbackCoverageTypes,
+}: DefenseProps) {
   const { t } = useTranslation();
   return (
     <Matchups
+      generation={generation}
       kind="defense"
       types={types}
       formatTitle={(x) => t("defense.takesXFrom", { x })}
-      matchups={defensiveMatchups(types)}
+      matchups={defensiveMatchups(generation, types)}
       fallbackCoverageTypes={fallbackCoverageTypes}
       isLoading={false}
     />
@@ -165,6 +175,7 @@ export function Defense({ types, fallbackCoverageTypes }: DefenseProps) {
 }
 
 export interface OffenseProps {
+  generation: Generation;
   coverageTypes?: CoverageType[];
   setCoverageTypes: (types: CoverageType[]) => void;
   types: Type[];
@@ -173,6 +184,7 @@ export interface OffenseProps {
 }
 
 export function Offense({
+  generation,
   coverageTypes,
   types,
   fallbackCoverageTypes,
@@ -181,11 +193,12 @@ export function Offense({
   const { t } = useTranslation();
   return (
     <Matchups
+      generation={generation}
       kind="offense"
       types={types}
       coverageTypes={coverageTypes}
       formatTitle={(x) => t("offense.dealsXTo", { x })}
-      matchups={offensiveMatchups(types)}
+      matchups={offensiveMatchups(generation, types)}
       fallbackCoverageTypes={fallbackCoverageTypes}
       isLoading={isLoading}
     />

@@ -1,19 +1,27 @@
 import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { CoverageType, matchupFor, Type } from "./data";
+import { matchupFor } from "./data-matchups";
+import { Generation } from "./data-generations";
+import { CoverageType, Type } from "./data-types";
 import { PercentBar } from "./PercentBar";
 
 interface DexCoverageProps {
+  generation: Generation;
   coverageTypes: CoverageType[];
   types: Type[];
   isLoading: boolean;
 }
 
-function DexCoverage({ coverageTypes, types, isLoading }: DexCoverageProps) {
+function DexCoverage({
+  generation,
+  coverageTypes,
+  types,
+  isLoading,
+}: DexCoverageProps) {
   const { t } = useTranslation();
   const weak = coverageTypes.filter((ct) => {
-    const matchups = types.map((t) => matchupFor(ct.types, t));
+    const matchups = types.map((t) => matchupFor(generation, ct.types, t));
     return matchups.some((effectiveness) => {
       return effectiveness > 1;
     });

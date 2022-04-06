@@ -171,8 +171,9 @@
 .MatchupsSection-Container {
   display: flex;
   justify-content: center;
-  padding: 0.125rem;
+  gap: 0.25rem;
   flex-wrap: wrap;
+  max-width: 400px;
 }
 
 .MultiTypeSelector-Container,
@@ -296,6 +297,10 @@ button {
   .TabBar {
     display: flex;
   }
+
+  .grid-col2 {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (min-width: 700px) {
@@ -331,7 +336,7 @@ button {
 
 .Bar-Container {
   align-self: center;
-  box-shadow: inset 0 0 0 1px var(--color-border3);
+  box-shadow: inset 0 0 0 1px var(--color-border2);
 }
 
 .Bar-Fill {

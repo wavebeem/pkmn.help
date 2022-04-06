@@ -4,7 +4,7 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useHistory } from "react-router-dom";
 import { useDebounce } from "use-debounce";
-import { Pokemon, Type, typesFromUserInput } from "./data";
+import { Pokemon, Type, typesFromUserInput } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";

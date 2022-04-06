@@ -46,6 +46,6 @@ const baseClasses = classNames(
   "db",
   "pv3 ph2 pv2-ns ph3-ns",
   "ba br2",
-  "b f5",
+  "f5",
   "SimpleFocus"
 );

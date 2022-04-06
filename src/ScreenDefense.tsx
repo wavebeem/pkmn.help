@@ -1,7 +1,15 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
-import { CoverageType, removeNones, Type, typesFromString } from "./data";
+import { CommonSettings } from "./CommonSettings";
+import { Generation } from "./data-generations";
+import {
+  CoverageType,
+  removeInvalidDefenseTypesForGeneration,
+  removeNones,
+  Type,
+  typesFromString,
+} from "./data-types";
 import * as Matchups from "./Matchups";
 import TypeSelector from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
@@ -10,11 +18,15 @@ import { useSearch } from "./useSearch";
 import { useTypeCount } from "./useTypeCount";
 
 interface DefenseProps {
+  generation: Generation;
+  setGeneration: (generation: Generation) => void;
   setDefenseParams: (params: string) => void;
   fallbackCoverageTypes: CoverageType[];
 }
 
 export default function ScreenDefense({
+  generation,
+  setGeneration,
   setDefenseParams,
   fallbackCoverageTypes,
 }: DefenseProps) {
@@ -30,6 +42,11 @@ export default function ScreenDefense({
   const typesString = search.get("types") || "normal";
   const types = typesFromString(typesString).slice(0, Number(typeCount));
 
+  React.useEffect(() => {
+    updateTypes(removeInvalidDefenseTypesForGeneration(generation, types));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [generation]);
+
   function createParams(types: Type[]): string {
     types = [...new Set(types)];
     const params = new URLSearchParams();
@@ -40,7 +57,10 @@ export default function ScreenDefense({
   }
 
   function updateTypes(types: Type[]) {
-    history.replace({ search: createParams(types) });
+    const search = createParams(types);
+    if (search !== location.search) {
+      history.replace({ search });
+    }
   }
 
   function updateTypeAt(index: number): (t: Type) => void {
@@ -52,15 +72,18 @@ export default function ScreenDefense({
   const params = createParams(types);
   React.useEffect(() => {
     setDefenseParams(params);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [params]);
+  }, [params, setDefenseParams]);
 
   const classH2 = "tc f5 mb2 mt4";
   return (
     <main className="ph3 pt0 pb4 content-wide center">
+      <div className="pt3 pb4 bb border3">
+        <CommonSettings generation={generation} setGeneration={setGeneration} />
+      </div>
       <div className="dib w-50-ns w-100 v-top">
         <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
         <TypeSelector
+          generation={generation}
           name="primary"
           value={types[0]}
           onChange={updateTypeAt(0)}
@@ -69,6 +92,7 @@ export default function ScreenDefense({
         />
         <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
         <TypeSelector
+          generation={generation}
           name="secondary"
           value={types[1] || Type.NONE}
           onChange={updateTypeAt(1)}
@@ -79,6 +103,7 @@ export default function ScreenDefense({
           <>
             <h2 className={classH2}>{t("defense.chooseThird")}</h2>
             <TypeSelector
+              generation={generation}
               name="third"
               value={types[2] || Type.NONE}
               onChange={updateTypeAt(2)}
@@ -91,6 +116,7 @@ export default function ScreenDefense({
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups.Defense
+          generation={generation}
           types={types}
           fallbackCoverageTypes={fallbackCoverageTypes}
         />
