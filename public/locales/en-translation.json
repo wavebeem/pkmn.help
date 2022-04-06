@@ -237,8 +237,8 @@
     "help": "Select a generation to use type effectiveness data from different games.",
     "byID": {
       "gen1": "Generation 1",
-      "gen2": "Generation 2",
-      "default": "Default"
+      "gen2": "Generations 2–5",
+      "default": "Default (Generation 6+)"
     }
   }
 }
