@@ -33,7 +33,7 @@ export default function TypeSelector({
     normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
-    <div className="MultiTypeSelector-Container">
+    <div className="grid gap2 MultiTypeSelector-Container">
       {theTypes.map((type) => {
         const isDisabled = disabledTypes.includes(type);
         const isSelected = type === value;

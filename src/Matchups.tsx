@@ -27,7 +27,6 @@ function Badge({ type }: BadgeProps) {
         "b f5 lh-title"
       )}
       style={{
-        width: 120,
         padding: 2,
         ["--type-color" as any]: typeColor(type),
       }}
@@ -58,8 +57,8 @@ function Section({ title, types }: SectionProps) {
   }
   return (
     <div>
-      <h2 className="f5 mt3 mb0">{title}</h2>
-      <div className="center MatchupsSection-Container">
+      <h2 className="f5 mt4 mb2">{title}</h2>
+      <div className="center grid gap1 justify-center MatchupsSection-Container">
         {types.map((t) => (
           <Badge key={`type-${t}`} type={t} />
         ))}
@@ -91,7 +90,7 @@ function Matchups({
 }: MatchupsProps) {
   const { t } = useTranslation();
   return (
-    <div className="tc pt2" id={`matchup-${kind}`}>
+    <div className="tc" id={`matchup-${kind}`}>
       {kind === "offense" && generation === "default" && (
         <div>
           <h2 className="f5 mt3 mb0">

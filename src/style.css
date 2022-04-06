@@ -169,18 +169,13 @@
 }
 
 .MatchupsSection-Container {
-  display: flex;
-  justify-content: center;
-  gap: 0.25rem;
-  flex-wrap: wrap;
+  grid-template-columns: repeat(auto-fit, minmax(90px, max-content));
   max-width: 400px;
 }
 
 .MultiTypeSelector-Container,
 .TypeSelector-Container {
-  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 0.5rem;
 }
 
 .ButtonGrid {

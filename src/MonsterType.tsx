@@ -16,7 +16,7 @@ export function MonsterType({ type }: MonsterTypeProps) {
         "type-bg",
         "ttc tc flex",
         "lh-title b",
-        "br-pill ba border-vibrant f6"
+        "br2 ba border-vibrant f6"
       )}
       style={{
         padding: 2,
@@ -24,7 +24,7 @@ export function MonsterType({ type }: MonsterTypeProps) {
       }}
     >
       <div
-        className="white br-pill ba b--black-10 ph2 nowrap"
+        className="white br1 ba b--black-10 ph2 nowrap"
         style={{
           background: typeColorBG(type),
           borderColor: typeColorBorder(type),
