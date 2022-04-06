@@ -92,7 +92,7 @@ function Matchups({
   const { t } = useTranslation();
   return (
     <div className="tc pt2" id={`matchup-${kind}`}>
-      {kind === "offense" ? (
+      {kind === "offense" && generation === "default" && (
         <div>
           <h2 className="f5 mt3 mb0">
             {t("offense.weaknessCoverage")}{" "}
@@ -122,7 +122,7 @@ function Matchups({
             />
           </div>
         </div>
-      ) : null}
+      )}
       {effectivenessLevels.map((eff) => {
         return (
           <Section
