@@ -24,11 +24,10 @@ function Badge({ type }: BadgeProps) {
         "type-bg",
         "ba border-vibrant",
         "br2",
-        "ttc tc b f5 lh-title"
+        "b f5 lh-title"
       )}
       style={{
-        width: 80,
-        margin: "0.125rem",
+        width: 120,
         padding: 2,
         ["--type-color" as any]: typeColor(type),
       }}
@@ -36,6 +35,8 @@ function Badge({ type }: BadgeProps) {
       <div
         className="br1 ba b--transparent white truncate"
         style={{
+          paddingLeft: 4,
+          paddingRight: 4,
           background: typeColorBG(type),
           borderColor: typeColorBorder(type),
         }}
@@ -58,7 +59,7 @@ function Section({ title, types }: SectionProps) {
   return (
     <div>
       <h2 className="f5 mt3 mb0">{title}</h2>
-      <div className="mw5 center MatchupsSection-Container">
+      <div className="center MatchupsSection-Container">
         {types.map((t) => (
           <Badge key={`type-${t}`} type={t} />
         ))}

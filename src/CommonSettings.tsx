@@ -19,9 +19,9 @@ export function CommonSettings({
   return (
     <div className="grid grid-col2 gap3">
       <Select
-        label={t("generations.label")}
+        label={t("games.label")}
         value={generation}
-        helpText={t("generations.help")}
+        helpText={t("games.help")}
         onChange={(event) => {
           const { value } = event.target;
           if (isGeneration(value)) {
@@ -34,7 +34,7 @@ export function CommonSettings({
         {generations.map((gen) => {
           return (
             <option key={gen} value={gen}>
-              {t(`generations.byID.${gen}`)}
+              {t(`games.byID.${gen}`)}
             </option>
           );
         })}

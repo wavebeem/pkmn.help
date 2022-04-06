@@ -2,8 +2,14 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import { CommonSettings } from "./CommonSettings";
-import { Generation, isGeneration } from "./data-generations";
-import { CoverageType, removeNones, Type, typesFromString } from "./data-types";
+import { Generation } from "./data-generations";
+import {
+  CoverageType,
+  removeInvalidDefenseTypesForGeneration,
+  removeNones,
+  Type,
+  typesFromString,
+} from "./data-types";
 import * as Matchups from "./Matchups";
 import TypeSelector from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
@@ -33,31 +39,17 @@ export default function ScreenDefense({
 
   const [typeCount] = useTypeCount();
 
-  const sGeneration = search.get("game") || "";
-
   const typesString = search.get("types") || "normal";
   const types = typesFromString(typesString).slice(0, Number(typeCount));
 
-  // TODO: I need to make ESLint happy here. I want to sync state->URL and
-  // URL->state, but if I make it happen unrestricted in both directions you
-  // just get an infinite loop, lol.
   React.useEffect(() => {
-    updateTypes(types);
-  }, [generation, types]);
-
-  React.useEffect(() => {
-    console.log({ sGeneration, generation });
-    if (isGeneration(sGeneration) && sGeneration !== generation) {
-      setGeneration(sGeneration);
-    }
-  }, []);
+    updateTypes(removeInvalidDefenseTypesForGeneration(generation, types));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [generation]);
 
   function createParams(types: Type[]): string {
     types = [...new Set(types)];
     const params = new URLSearchParams();
-    if (generation !== "default") {
-      params.set("game", generation);
-    }
     if (types.length >= 0) {
       params.set("types", types.join(" "));
     }
@@ -80,8 +72,7 @@ export default function ScreenDefense({
   const params = createParams(types);
   React.useEffect(() => {
     setDefenseParams(params);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [params]);
+  }, [params, setDefenseParams]);
 
   const classH2 = "tc f5 mb2 mt4";
   return (

@@ -110,6 +110,26 @@ export function typesForGeneration(generation: Generation): Type[] {
   }
 }
 
+export function removeInvalidOffenseTypesForGeneration(
+  generation: Generation,
+  types: Type[]
+): Type[] {
+  const set = new Set(typesForGeneration(generation));
+  return types.filter((t) => set.has(t));
+}
+
+export function removeInvalidDefenseTypesForGeneration(
+  generation: Generation,
+  types: Type[]
+): Type[] {
+  const set = new Set(typesForGeneration(generation));
+  return types.flatMap((t, i) => {
+    if (set.has(t)) return [t];
+    if (i === 0) return [Type.NORMAL];
+    return [];
+  });
+}
+
 export const typesOrNone = [...types, Type.NONE];
 
 // whatYouMeant("こおり", {

@@ -2,28 +2,31 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG } from "./colors";
-import { Type, types } from "./data-types";
+import { Generation } from "./data-generations";
+import { Type, typesForGeneration } from "./data-types";
 
 const buttonInnerHeight = "1.5rem";
 
-interface TypeSelectorProps {
+interface MultiTypeSelectorProps {
+  generation: Generation;
   onChange(types: Type[]): void;
   value: Type[];
 }
 
 export default function MultiTypeSelector({
+  generation,
   onChange,
   value,
-}: TypeSelectorProps) {
+}: MultiTypeSelectorProps) {
   const { t } = useTranslation();
   const styles = {
     selected:
-      "border-vibrant2 type-bg no-box-shadow button-shadow SelectedFocus",
+      "border-vibrant2 type-bg no-box-shadow button-shadow SelectedFocus b",
     normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
     <div className="MultiTypeSelector-Container">
-      {types.map((type) => {
+      {typesForGeneration(generation).map((type) => {
         const isChecked = value.includes(type);
         const styleKey = isChecked ? "selected" : "normal";
         return (
@@ -34,7 +37,7 @@ export default function MultiTypeSelector({
               "db",
               "ba br1",
               "pv1 ph2",
-              "f5 b",
+              "f5",
               "ttc",
               "select-none",
               "SimpleFocus",

@@ -29,7 +29,7 @@ export default function TypeSelector({
   const theTypes = includeNone ? [...baseTypes, Type.NONE] : baseTypes;
   const styles = {
     disabled: "border3 fg4 bg2 o-60 SimpleFocus pointer-none",
-    selected: "border-vibrant2 type-bg SelectedFocus",
+    selected: "border-vibrant2 type-bg SelectedFocus b",
     normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
@@ -50,7 +50,7 @@ export default function TypeSelector({
               "db",
               "ba br-pill",
               "pv1 ph2",
-              "f5 b",
+              "f5",
               "ttc",
               "select-none",
               "SimpleFocus",

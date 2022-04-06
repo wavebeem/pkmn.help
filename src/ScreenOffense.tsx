@@ -3,7 +3,12 @@ import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import { CommonSettings } from "./CommonSettings";
 import { Generation } from "./data-generations";
-import { CoverageType, Type, typesFromString } from "./data-types";
+import {
+  CoverageType,
+  removeInvalidOffenseTypesForGeneration,
+  Type,
+  typesFromString,
+} from "./data-types";
 import * as Matchups from "./Matchups";
 import MultiTypeSelector from "./MultiTypeSelector";
 import { useSearch } from "./useSearch";
@@ -40,6 +45,13 @@ export default function ScreenOffense({
     return "?" + params;
   }
 
+  React.useEffect(() => {
+    updateOffenseTypes(
+      removeInvalidOffenseTypesForGeneration(generation, offenseTypes)
+    );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [generation]);
+
   const updateOffenseTypes = (types: Type[]) => {
     history.replace({ search: createParams(types) });
   };
@@ -47,8 +59,7 @@ export default function ScreenOffense({
   const params = createParams(offenseTypes);
   React.useEffect(() => {
     setOffenseParams(params);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [params]);
+  }, [params, setOffenseParams]);
 
   const classH2 = "tc f5 mb2 mt4";
   return (
@@ -58,7 +69,11 @@ export default function ScreenOffense({
       </div>
       <div className="dib w-50-ns w-100 v-top">
         <h2 className={classH2}>{t("offense.chooseTypes")}</h2>
-        <MultiTypeSelector value={offenseTypes} onChange={updateOffenseTypes} />
+        <MultiTypeSelector
+          generation={generation}
+          value={offenseTypes}
+          onChange={updateOffenseTypes}
+        />
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />

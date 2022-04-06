@@ -232,12 +232,12 @@
   "general": {
     "loading": "Loading…"
   },
-  "generations": {
-    "label": "Generation",
-    "help": "Select a generation to use type effectiveness data from different games.",
+  "games": {
+    "label": "Game Generation",
+    "help": "Use type effectiveness from different game generations.",
     "byID": {
       "gen1": "Generation 1",
-      "gen2": "Generations 2–5",
+      "gen2": "Generation 2–5",
       "default": "Default (Generation 6+)"
     }
   }
