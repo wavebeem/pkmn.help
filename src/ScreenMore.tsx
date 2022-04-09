@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "./Button";
-import { Generation, generations, isGeneration } from "./data-generations";
 import { languages } from "./languages";
 import { Select } from "./Select";
 import { useLanguage } from "./useLanguage";
@@ -30,15 +29,7 @@ export interface Language {
 const typeCountValues = ["2", "3"] as const;
 const themeValues = ["auto", "light", "dark"] as const;
 
-interface ScreenMoreProps {
-  generation: Generation;
-  setGeneration: (generation: Generation) => void;
-}
-
-export default function ScreenMore({
-  generation,
-  setGeneration,
-}: ScreenMoreProps): JSX.Element {
+export default function ScreenMore(): JSX.Element {
   const { t, i18n } = useTranslation();
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();

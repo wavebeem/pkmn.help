@@ -292,16 +292,7 @@ export default function App() {
                 />
               )}
             />
-            <Route
-              exact
-              path="/more/"
-              render={() => (
-                <ScreenMore
-                  generation={generation}
-                  setGeneration={setGeneration}
-                />
-              )}
-            />
+            <Route exact path="/more/" render={() => <ScreenMore />} />
             <Redirect to="/defense/" />
           </Switch>
         </React.Suspense>
