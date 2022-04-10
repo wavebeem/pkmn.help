@@ -8,7 +8,7 @@ export const languages: Language[] = [
   { title: "Français (French)", value: "fr" },
   { title: "日本語 (Japanese)", value: "ja" },
   { title: "にほんご (Japanese Kana-only)", value: "ja-Hrkt" },
-  { title: "汉语 (Simplified Chinese)", value: "zh-Hans" },
-  { title: "漢語 (Traditional Chinese)", value: "zh-Hant" },
+  { title: "简体中文 (Simplified Chinese)", value: "zh-Hans" },
+  { title: "繁體中文 (Traditional Chinese)", value: "zh-Hant" },
   { title: "한국어 (Korean)", value: "ko" },
 ];
