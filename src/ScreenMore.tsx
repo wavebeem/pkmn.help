@@ -148,6 +148,8 @@ export default function ScreenMore(): JSX.Element {
       <div role="presentation" className="mv2 bt border3" />
       <h2 className="lh-title f4">{t("more.thanks.heading")}</h2>
       <ul className="lh-copy mt1 ph3">
+        <li>{t("more.thanks.credits.azertor")}</li>
+        <li>{t("more.thanks.credits.kaishidow")}</li>
         <li>{t("more.thanks.credits.cozzzy")}</li>
         <li>{t("more.thanks.credits.luziferSenpai")}</li>
         <li>{t("more.thanks.credits.gabrieleGiugno")}</li>

@@ -125,7 +125,7 @@
       },
       "singleType": {
         "query": "grass none",
-        "description": "Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita)."
+        "description": "Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant)."
       }
     },
     "back": "Back to Pokédex"
@@ -164,7 +164,7 @@
       "heading": "Help",
       "serviceWorker": {
         "description": "This button can help fix issues in the app.",
-        "button": "Unregister service worker"
+        "button": "Reset"
       }
     },
     "privacy": {
@@ -172,12 +172,14 @@
       "description": "I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn' store any cookies on your computer."
     },
     "givingBack": {
-      "heading": "Giving Back",
+      "heading": "Showing Appreciation",
       "description": "I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights."
     },
     "thanks": {
       "heading": "Special Thanks",
       "credits": {
+        "azertor": "Azertor (French translation)",
+        "kaishidow": "Kaishidow (French translation)",
         "cozzzy": "Cozzzy (German translation)",
         "luziferSenpai": "Luzifer Senpai (German translation)",
         "gabrieleGiugno": "Gabriele Giugno (Italian translation)",

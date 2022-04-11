@@ -1,0 +1,246 @@
+{
+  "title": "Calculateur de types Pokémon",
+  "navigation": {
+    "offense": "Couverture offensive",
+    "defense": "Couverture défensive",
+    "pokedex": "Pokédex",
+    "more": "Autres"
+  },
+  "offense": {
+    "chooseTypes": "Choisissez les types",
+    "weaknessCoverage": "Couverture de faiblesse",
+    "weaknessCoverageEdit": "Modifier",
+    "weaknessCoverageEditLong": "Modifier la couverture de faiblesse",
+    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>formes</formslink>",
+    "weaknessNotFound": "Aucun Pokémon trouvé avec ces faiblesse",
+    "dealsXTo": "Inflige {{ x }} à"
+  },
+  "coverageList": {
+    "heading": "Liste de couverture de faiblesses",
+    "description": "Ces Pokémon sont faibles à au moins l'un de ces types suivants:"
+  },
+  "coverage": {
+    "heading": "Couverture de faiblesses",
+    "paragraph1": "Importez/exportez des fichiers CSV Pokédex personnalisés pour voir la couverture des faiblesses pour différents Pokémons. Créeez un fichier CSV personnalisé avec juste le tier Pokémon OU, ou créez votre pokémon depuis zéro.",
+    "paragraph2": "Les données CSV sont chargées par nom d'en-tête de colonne, et non par odre de colonne. Vous pouvez donc ajouter ou réorganiser des colonnes si vous le souhaitez (par exemple, ajouter une colonne \"tier\" ou une colonne \"notes\").",
+    "paragraph3": "Les dossiers CSV peuvent être modifiés avec Google doc, Microsoft Excel, OpenOffice, LibreOffice, Notepad et d'autres.",
+    "csvHeaders": {
+      "number": "Numéro",
+      "name": "Nom",
+      "type1": "Type 1",
+      "type2": "Type 2",
+      "type3": "Type 3"
+    },
+    "export": {
+      "button": "Exporter",
+      "description": "Exporter le Pokédex par défaut vers un dossier CSV."
+    },
+    "import": {
+      "button": "Importer",
+      "description": "Importer un dossier Pokédex CSV édité"
+    },
+    "reset": {
+      "button": "Réinisialiser",
+      "description": "Réinisialiser vers le Pokédex par défaut"
+    },
+    "filename": "pkmn.help couverture de type.csv",
+    "status": {
+      "imported": "Importer {{ n }} forme Pokémon depuis “{{ file }}”",
+      "exported": "Pokémon exporté par défaut",
+      "reset": "Pokémon chargé par défaut",
+      "errored": "Erreur de chargement CSV. Ne changez pas le nom des entêtes ."
+    },
+    "back": "Retour à l'onglet \"Couverture offensive\""
+  },
+  "defense": {
+    "chooseFirst": "Choisir le premier type",
+    "chooseSecond": "Choisir le second type",
+    "chooseThird": "Choisir le troisème type",
+    "takesXFrom": "Subit {{ x }} De"
+  },
+  "pokedex": {
+    "search": {
+      "description": "Recherche par nom, nombre ou type",
+      "help": "Aide",
+      "helpLong": "Aide, recherche Pokédex",
+      "notFound": "Aucun pokémon trouvé"
+    },
+    "bulbapedia": {
+      "label": "Page Bulbapédia pour {{ pokemon }}"
+    },
+    "offense": {
+      "label": "Couverture offensive pour {{ pokemon }}",
+      "text": "Couverture offensive"
+    },
+    "defense": {
+      "label": "Couverture défensive pour {{ pokemon }}",
+      "text": "Couverture défensive"
+    },
+    "pagination": {
+      "next": "Suiv",
+      "nextLong": "Suivant",
+      "previous": "Préc",
+      "previousLong": "Précédent",
+      "firstLong": "Premier",
+      "lastLong": "Dernier"
+    },
+    "stats": {
+      "hp": "PV",
+      "hpLong": "Points de Vie",
+      "attack": "Atk",
+      "attackLong": "Attaque",
+      "defense": "Déf",
+      "defenseLong": "Défense",
+      "specialAttack": "Atk Spé",
+      "specialAttackLong": "Attaque Spéciale",
+      "specialDefense": "Déf Spé",
+      "specialDefenseLong": "Défense Spéciale",
+      "speed": "Vit",
+      "speedLong": "Vitesse",
+      "total": "Total",
+      "totalLong": "Total"
+    }
+  },
+  "pokedexHelp": {
+    "searchByName": {
+      "heading": "Rechercher par nom",
+      "description": "Vous pouvez rechercher un Pokémon par nom. Si vous ne vous rappelez que d'une partie du nom du Pokémon, cela devrait probablement le trouver. Le site ne peut pas gérer les fautes de frappes pour le moment."
+    },
+    "searchByNumber": {
+      "heading": "Rechercher par nombre",
+      "description": "Recherche par numéro de Pokédex national. Si vous souhaitez rechercher Bulbizarre, tapez 1, et non #001."
+    },
+    "searchByType": {
+      "heading": "Recherche par type",
+      "description": "Voici quelques exemples de recherches par types"
+    },
+    "searchExamples": {
+      "type": {
+        "query": "feu",
+        "description": "Rechercher des Pokémon qui ont le type feu dans n'importe la quelle de leur forme (ex Salamèche, Dracaufeu, Motisma)."
+      },
+      "doubleType": {
+        "query": "eau vol",
+        "description": "Rechercher des Pokémon qui sont soit de types eau/vol (ex Léviator) soit de type vol/eau (Nigosier)."
+      },
+      "singleType": {
+        "query": "Plante aucun",
+        "description": "Rechercher pour les pokémon qui ont seulment le type plante, pas de 2e type (ex Saquedeneu, Germinon, Fragilady)"
+      }
+    },
+    "back": "Revenir au Pokédex"
+  },
+  "more": {
+    "contact": {
+      "heading": "Me contacter",
+      "intro": "Bonjour, je suis <homepage>Brian</homepage> (iel), et j'ai créé le Calculateur de types Pokémon (pkmn.help).",
+      "email": "Veuillez envoyer vos idées et vos remerciements à <email>pkmn@wavebeem.com</email>."
+    },
+    "settings": {
+      "heading": "Paramètres",
+      "language": {
+        "label": "Langage",
+        "helpText": "Merci de me contacter si certaines traductions sont manquantes ou erronées et que vous vous sentez capable d'aider."
+      },
+      "theme": {
+        "label": "Thème",
+        "help": "\"Thème du système par défaut\" changera automatiquement en fonction de vos paramètres de votre système d'exploitation.",
+        "values": {
+          "auto": "Thème du système par défaut",
+          "light": "Clair",
+          "dark": "Sombre"
+        }
+      },
+      "typeCount": {
+        "label": "Nombre de types",
+        "help": "Un pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est utilisé rarement",
+        "values": {
+          "2": "Deux types (2)",
+          "3": "Trois types (3)"
+        }
+      }
+    },
+    "help": {
+      "heading": "Aide",
+      "serviceWorker": {
+        "description": "Ce bouton peut aider à résoudre les problèmes dans l'applicaton.",
+        "button": "Réinitialiser"
+      }
+    },
+    "privacy": {
+      "heading": "Confidentialité",
+      "description": "Je ne diffuserais jamais de publicité ni ne volerais vos données personelles. J'utilise <plausible>Plausible Analytics</plausible>, qui est autofinancé, indépendant, hébergé dans l'Union Européenne et ne stocke aucun cookie sur votre oridnateur."
+    },
+    "givingBack": {
+      "heading": "Me remercier",
+      "description": "J'ai passé d'innombrables heures à améliorer ce site. Si vous appréciez ce que j'ai fait, veuillez envisager de faire un don à des organismes de bienfaisance qui soutiennent le BIPOC et les droits des transgenres."
+    },
+    "thanks": {
+      "heading": "Remerciements spéciaux",
+      "credits": {
+        "azertor": "Azertor (Traduction en Française)",
+        "kaishidow": "Kaishidow (Traduction en Française)",
+        "cozzzy": "Cozzzy (Traduction en Allemand)",
+        "luziferSenpai": "Luzifer Senpai (traduction en Allemand)",
+        "gabrieleGiugno": "Gabriele Giugno (Traduction en Italien)",
+        "minamorl": "Minamorl (Traduction en Japonais)",
+        "jansjo": "Jansjo (Tests, recherche)",
+        "other": "Plusieurs PokéFans annonymes"
+      }
+    },
+    "openSource": {
+      "heading": "Open source",
+      "description": "Le code source est disponible sur <github>GitHub</github>."
+    },
+    "legalInfo": {
+      "heading": "Informations légales",
+      "pokemon": "Pokémon © 2002-{{ year }} Pokémon © 1995-{{ year }} Nintendo/Creatures Inc./GAME FREAK inc. ™, ® et les noms des personnages Pokémon sont des marques commerciales de Nintendo.",
+      "dontSueMe": "L'utilisation du contenu de Pokémon sur cette page ne constitue pas une violation des droits d'auteur ou des marques commerciales.",
+      "pokeAPI": "Les données de Pokédex viennent de <pokeapi>PokéAPI</pokeapi>.",
+      "wavebeem": "pkmn.help © 2013–{{ year }} <wavebeem>Brian Mock</wavebeem>."
+    }
+  },
+  "types": {
+    "normal": "Normal",
+    "fighting": "Combat",
+    "flying": "Vol",
+    "poison": "Poison",
+    "ground": "Sol",
+    "rock": "Roche",
+    "bug": "Insecte",
+    "ghost": "Spectre",
+    "steel": "Acier",
+    "fire": "Feu",
+    "water": "Eau",
+    "grass": "Plante",
+    "electric": "Électrik",
+    "psychic": "Psy",
+    "ice": "Glace",
+    "dragon": "Dragon",
+    "dark": "Ténèbres",
+    "fairy": "Fée",
+    "none": "Aucun"
+  },
+  "banners": {
+    "updateReady": {
+      "description": "Une mise à jour est disponible",
+      "update": "Mettre à jour"
+    },
+    "offlineReady": {
+      "description": "Le mode hors ligne est maintenant disponible",
+      "dismiss": "Ok"
+    }
+  },
+  "general": {
+    "loading": "Chargement…"
+  },
+  "games": {
+    "label": "Génaration de jeu",
+    "help": "Utiliser les efficacités de types des différentes générations de jeux.",
+    "byID": {
+      "gen1": "Génération 1",
+      "gen2": "Génération 2-5",
+      "default": "Par défaut (Génération 6+)"
+    }
+  }
+}
