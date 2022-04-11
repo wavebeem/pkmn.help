@@ -1,8 +1,8 @@
 {
   "title": "Calculateur de types Pokémon",
   "navigation": {
-    "offense": "Couverture offensive",
-    "defense": "Couverture défensive",
+    "offense": "Offense",
+    "defense": "Défense",
     "pokedex": "Pokédex",
     "more": "Autres"
   },
@@ -178,7 +178,7 @@
     "thanks": {
       "heading": "Remerciements spéciaux",
       "credits": {
-        "azertor": "Azertor (Traduction en Française)",
+        "drakoshen": "Drakoshen (Traduction en Française)",
         "kaishidow": "Kaishidow (Traduction en Française)",
         "cozzzy": "Cozzzy (Traduction en Allemand)",
         "luziferSenpai": "Luzifer Senpai (traduction en Allemand)",
