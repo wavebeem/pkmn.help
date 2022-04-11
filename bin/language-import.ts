@@ -32,7 +32,7 @@ async function main() {
   const translation = {};
   for (const [key, , other] of rows) {
     if (other) {
-      set(translation, key.split("."), other);
+      set(translation, key.split("."), other.trim());
     }
   }
   saveJSON(`../public/locales/${lang}-translation.json`, translation);
