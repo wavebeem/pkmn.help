@@ -143,7 +143,7 @@
       },
       "theme": {
         "label": "Thème",
-        "help": "\"Thème système par défaut\" changera automatiquement en fonction de vos paramètres de votre système d'exploitation.",
+        "help": "\"Thème du système par défaut\" changera automatiquement en fonction de vos paramètres de votre système d'exploitation.",
         "values": {
           "auto": "Thème du système par défaut",
           "light": "Clair",
