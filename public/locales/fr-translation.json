@@ -70,11 +70,11 @@
     },
     "offense": {
       "label": "Couverture offensive pour {{ pokemon }}",
-      "text": "Couverture offensive"
+      "text": "Offense"
     },
     "defense": {
       "label": "Couverture défensive pour {{ pokemon }}",
-      "text": "Couverture défensive"
+      "text": "Défense"
     },
     "pagination": {
       "next": "Suiv",
