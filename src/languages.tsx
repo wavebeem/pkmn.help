@@ -6,6 +6,7 @@ export const languages: Language[] = [
   { title: "Deutsch (German)", value: "de" },
   { title: "Italiano (Italian)", value: "it" },
   { title: "Français (French)", value: "fr" },
+  { title: "Română (Romanian)", value: "ro" },
   { title: "日本語 (Japanese)", value: "ja" },
   { title: "にほんご (Japanese Kana-only)", value: "ja-Hrkt" },
   { title: "简体中文 (Simplified Chinese)", value: "zh-Hans" },

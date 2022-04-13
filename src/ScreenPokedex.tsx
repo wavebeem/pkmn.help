@@ -27,8 +27,8 @@ function Monster({ pokemon }: MonsterProps) {
   const [language] = useLanguage();
   const displayNumber = formatMonsterNumber(pokemon.number);
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
-  const speciesName = pokemon.speciesNames[language];
-  const formName = pokemon.formNames[language];
+  const speciesName = pokemon.speciesNames[language] ?? pokemon.speciesNames.en;
+  const formName = pokemon.formNames[language] ?? pokemon.formNames.en;
   const pokemonName = formatPokemonName({ speciesName, formName });
   const formattedFormName = formName ? `(${formName})` : nbsp;
   return (
