@@ -1,35 +1,35 @@
 {
-  "title": "Calculator de fel de Pokémon",
+  "title": "Calculator tip Pokémon",
   "navigation": {
-    "offense": "Attack",
+    "offense": "Atac",
     "defense": "Protectie",
     "pokedex": "Pokédex",
     "more": "Mai mult"
   },
   "offense": {
-    "chooseTypes": "Alege fel",
-    "weaknessCoverage": "Acoperire de slabiciuni",
-    "weaknessCoverageEdit": "Schimba",
-    "weaknessCoverageEditLong": "Schimba acoperirea de slabiciuni",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>forma</formslink>",
+    "chooseTypes": "Alege tipuri",
+    "weaknessCoverage": "Acoperire slabiciuni",
+    "weaknessCoverageEdit": "Editeaza",
+    "weaknessCoverageEditLong": "Schimba acoperire slabiciuni",
+    "weaknessCoverageForms": "{{ count }} / {{ total }} <formaconnectie>formulare</formaconnectie>",
     "weaknessNotFound": "Nici un Pokemon cu slabiciuni găsit",
-    "dealsXTo": "Face {{ x }} spre"
+    "dealsXTo": "Oferte {{ x }} spre"
   },
   "coverageList": {
-    "heading": "Lista de acoperire de slabiciuni",
-    "description": "Formele astea de Pokemon sunt slabi la macar un fel din astea"
+    "heading": "Lista acoperire slabiciuni",
+    "description": "Tipurile astea de Pokémon sunt slabe la macar unul din urmatoarele tipuri:"
   },
   "coverage": {
-    "heading": "Acoperire de slabiciuni",
-    "paragraph1": "Importa/exporta fișiere personalizate Pokedex CSV sa vezi acoperirea de slabiciuni pentru alti Pokemon. Crea un fișier CSV cu doar OU nlivelul Pokemon, sau fa un Pokemon al tau.",
+    "heading": "Acoperire slabiciuni",
+    "paragraph1": "Importa/exporta fișiere personalizate Pokédex CSV sa vezi acoperirea de slabiciuni pentru diferiti Pokémon. Creaza un fișier CSV cu doar OU nlivelul Pokémon, sau creaza propriul Pokémon.",
     "paragraph2": "Date de CSV e încarcat de numele de numele de colum, nu ordinea de colum, deci poti sa adaugi sau reordonezi columurile daca vrei (de exemplu: alege un colum de nivel sau de note",
-    "paragraph3": "fișerele de CSV pot sa fiu editate cu Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, notepad, și mai multe",
+    "paragraph3": "Fișierele CSV pot fi editate cu Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad și multe altele.",
     "csvHeaders": {
       "number": "Numar",
       "name": "Nume",
-      "type1": "Fel 1",
-      "type2": "Fel 2",
-      "type3": "Fel 3"
+      "type1": "Tip 1",
+      "type2": "Tip 2",
+      "type3": "Tip 3"
     },
     "export": {
       "button": "Exporteaza",
@@ -43,12 +43,12 @@
       "button": "Reseteaza",
       "description": "Reseteaze Pokedexul la mod implicit"
     },
-    "filename": "pkmn.help acoperire de tipui.csv",
+    "filename": "pkmn.help tip coverage.csv",
     "status": {
       "imported": "Importat {{ n }} forme de Pokemon de la \"{{ file }}\"",
       "exported": "Exporteaza forme de Pokemon implicit",
       "reset": "Incarca forme de Pokemon implicit",
-      "errored": "Error de încarcat CSV. Nu schimba rubrichele"
+      "errored": "Eroare la încărcarea CSV. Nu schimbați numele antetului."
     },
     "back": "Înapoi la atac"
   },
@@ -70,11 +70,11 @@
     },
     "offense": {
       "label": "Atac pentru {{ pokemon }}",
-      "text": "Attack"
+      "text": "Atac pentru {{ pokemon }}"
     },
     "defense": {
       "label": "Aparare pentru {{ pokemon }}",
-      "text": "Protectie"
+      "text": "Aparare"
     },
     "pagination": {
       "next": "Urmatoarea",
@@ -85,8 +85,8 @@
       "lastLong": "Ultimul"
     },
     "stats": {
-      "hp": "PV",
-      "hpLong": "Puncte de viata",
+      "hp": "HP",
+      "hpLong": "Puncte hit",
       "attack": "Atac",
       "attackLong": "Atac",
       "defense": "Protectie",
@@ -104,28 +104,28 @@
   "pokedexHelp": {
     "searchByName": {
       "heading": "Cauta nume",
-      "description": "Poti sa cauti un Pokemon dupa nume. Daca doar poti sa ti minde de o bucata din dumele de Pokemon, Inca poate sa gaseste. Nu proceseasa greșeli de scriere."
+      "description": "Puteți căuta un Pokémon după nume. Dacă îți amintești doar o parte din numele Pokémonului, probabil că îl poate găsi pentru tine. Totuși, nu poate face față greșelilor de scriere acum."
     },
     "searchByNumber": {
-      "heading": "Cauta dupa nume",
-      "description": "Cauta dupa numar de Pokedex national. Daca vrei bulbasaur, pune 1, nu #001."
+      "heading": "Cauta dupa numar",
+      "description": "Cauta dupa numar de Pokedex national. Daca vrei bulbasaur, pune doar 1, nu #001."
     },
     "searchByType": {
-      "heading": "Cauta dupa fel",
-      "description": "Aicia sunt exempluri dupa cum sa cauti dupa fel"
+      "heading": "Cauta dupa tip",
+      "description": "Iată câteva exemple despre cum să căutați după tip."
     },
     "searchExamples": {
       "type": {
         "query": "Foc",
-        "description": "Cauta Pokemoni care au foc ca oricare fel in oricare forma (de exemplu: Charmander, Charizard, Rotom)."
+        "description": "Căutați Pokémon care au foc ca oricare dintre tipurile lor, sub orice formă (de exemplu, Charmander, Charizard, Rotom)."
       },
       "doubleType": {
-        "query": "apa zburator",
+        "query": "apa zburand",
         "description": "Cauta Pokemoni care sunt apa/zburator ( de exemplu: Gyrados) sau zburator/apa (de exemplu: Cramorant)"
       },
       "singleType": {
         "query": "iarba nimic",
-        "description": "Cauta Pokemoni care sunt doar iarba, fara al doilea fel (de exemplu: Tangela, Chikorita, Lilligant."
+        "description": "Căutați Pokémon care sunt doar tip iarbă, fără al doilea tip (de exemplu, Tangela, Chikorita, Lilligant)."
       }
     },
     "back": "Înapoi la Pokedex"
@@ -133,18 +133,18 @@
   "more": {
     "contact": {
       "heading": "Contacteaza-ma",
-      "intro": "Buna, eu sunt Brian (Iei) si eu am facut calculator de fel de Pokemon.",
-      "email": "Trimite idei si mulțumiri la <email>pkmn@wavebeem.com</email>."
+      "intro": "Bună, sunt <homepage>Brian</homepage> (ei) și am creat Calculatorul de tip Pokémon (pkmn.help).",
+      "email": "Trimite idei si mulțumiri la <email> pkmn@wavebeem.com</email>."
     },
     "settings": {
       "heading": "Setari",
       "language": {
-        "label": "Limba",
-        "helpText": "Support de limbi este incomplet. Da-mi un email, osa-iti dau bani sa tranlezi."
+        "label": "Limbi",
+        "helpText": "Suportul lingvistic este incomplet. Vă rog să-mi trimiteți un e-mail, vă voi plăti pentru traducere."
       },
       "theme": {
         "label": "Tema",
-        "help": "Mod implicit se schimba dependent de setarile tale de sistem.",
+        "help": "„Implicit sistem” se va schimba automat în funcție de setările sistemului de operare.",
         "values": {
           "auto": "Mod implicit",
           "light": "Lumina",
@@ -152,11 +152,11 @@
         }
       },
       "typeCount": {
-        "label": "Numar de feluri",
-        "help": "Pokemoni pot rar sa au trei tipuri cand lovit cu Ne dati sau nu ne dati sau Blestemul Padurii. Al treilea fel este ascuns de obicei pentru ca e folosit rar.",
+        "label": "Numarul de tipuri",
+        "help": "Pokemonul poate avea trei tipuri simultan dacă este lovit cu Blestemul Forests sau Trick-or-Treat. Al treilea câmp de tip este ascuns în mod implicit, deoarece este rar folosit.",
         "values": {
-          "2": "Doua feluri (2)",
-          "3": "Trei feluri (3)"
+          "2": "Doua tipuri (2)",
+          "3": "Tri tipuri (3)"
         }
       }
     },
@@ -169,43 +169,44 @@
     },
     "privacy": {
       "heading": "Intimitate",
-      "description": "Eu nici o data osa-iti fur date sau pun advertismente. Eu folosesc <plausible>Plausible Abalytics</plausible>, care e auto finantat, basat in Uniunea Europeana, si nu pune fursecuri pe calculatorul tau."
+      "description": "Nu voi difuza niciodată reclame sau nu voi fura datele dumneavoastră personale. Folosesc <plausible>Plausible Analytics</plausible>, care este autofinanțat, independent, găzduit în UE și nu stochează niciun cookie pe computerul dvs."
     },
     "givingBack": {
       "heading": "Aratare de apreciare",
-      "description": "Eu am dat o multime de ore facând site-ul asta mai bun. Daca apreciesi ce am facut, te rog poti considera donare la organizatii de caritate care support drepturi de transgender."
+      "description": "Eu am petrecut o multime de ore imbunatatind acest site. Daca apreciezi ce am facut, te rog considera donare la organizatii de caritate care supporta BIPOC si drepturile transgender."
     },
     "thanks": {
-      "heading": "Multumiri Specialt",
+      "heading": "Multumri speciale",
       "credits": {
-        "drakoshen": "Drakoshen (Translatie Franceză)",
-        "azertor": "Azertor (Translatie Franceză)",
-        "kaishidow": "Kaishidow (Translatie Franceză)",
-        "cozzzy": "Cozzie (Translatie Germana)",
-        "luziferSenpai": "Luzifer Senpai (Translatie Germana",
-        "gabrieleGiugno": "Gabriele Guingo (Translatie Italiana)",
-        "minamorl": "Minamorl (Translatie Japonesa)",
+        "adamHayes": "Adam Hayes (Traducere Română)",
+        "drakoshen": "Drakoshen (Traducere Franceză)",
+        "azertor": "Azertor (Traducere Franceză)",
+        "kaishidow": "Kaishidow (Traducere Franceză)",
+        "cozzzy": "Cozzie (Traducere Germana)",
+        "luziferSenpai": "Luzifer Senpai (Traducere Germana)",
+        "gabrieleGiugno": "Gabriele Guingo (Traducere Italiana)",
+        "minamorl": "Minamorl (Traducere Japoneza)",
         "jansjo": "Jansjo (testare, cercetare)",
-        "other": "Multi Poke fani anonim"
+        "other": "Cativa fani anomimi Pokémon"
       }
     },
     "openSource": {
       "heading": "Sursa Deschisa",
-      "description": "Codul de sursa e valabil pe <github>GitHub</github>."
+      "description": "Codul de sursa e valabil pe <github>Github</github>."
     },
     "legalInfo": {
-      "heading": "Informatie Legala",
-      "pokemon": "Pokemon © 202-{{ year }} Pokemon. © 1995-{{ year}} Nintendo/Creatures Inc./GAME FREAK Inc.™ , © si nele de character Pokemon sunt marci comerciale de Nintendo.",
-      "dontSueMe": "Nue e intendat sa fie o incalcare de reguli de drepturi de autor sau marci commerciale este pe pagina asta.",
+      "heading": "Informatie legala",
+      "pokemon": "Pokemon © 202-{{ year }} Pokemon. © 1995-{{ year}} Nintendo/Creatures Inc./GAME FREAK Inc.™ , © si numele caracterelor Pokemon sunt marci comerciale de Nintendo.",
+      "dontSueMe": "Nu se intenționează încălcarea drepturilor de autor sau a mărcii comerciale în utilizarea conținutului Pokémon de pe această pagină.",
       "pokeAPI": "Date de Pokédex de la <pokeapi>PokéAPi</pokeapi>",
       "wavebeem": "pkmn.help © 2013-{{ year }} <wavebeem>Brian Mock</wavebeem>."
     }
   },
   "types": {
     "normal": "Normal",
-    "fighting": "Lupta",
-    "flying": "Zburator",
-    "poison": "Otrave",
+    "fighting": "Luptand",
+    "flying": "Zburand",
+    "poison": "Otrava",
     "ground": "Pamânt",
     "rock": "Piatra",
     "bug": "Insecta",
@@ -213,19 +214,19 @@
     "steel": "Oțel",
     "fire": "Foc",
     "water": "Apa",
-    "grass": "Iarba",
-    "electric": "Electricitate",
-    "psychic": "Psihic",
-    "ice": "Gheața",
-    "dragon": "Dragon",
+    "grass": "iarba",
+    "electric": "electricitate",
+    "psychic": "psihic",
+    "ice": "gheața",
+    "dragon": "dragon",
     "dark": "Întuneric",
-    "fairy": "Zana",
-    "none": "Nimic"
+    "fairy": "zana",
+    "none": "nimic"
   },
   "banners": {
     "updateReady": {
       "description": "Poti sa updatezi",
-      "update": "Updateaza"
+      "update": "updateaza"
     },
     "offlineReady": {
       "description": "Poti sa te deconectezi",
