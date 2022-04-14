@@ -214,19 +214,19 @@
     "steel": "Oțel",
     "fire": "Foc",
     "water": "Apa",
-    "grass": "iarba",
-    "electric": "electricitate",
+    "grass": "Iarba",
+    "electric": "Electricitate",
     "psychic": "psihic",
     "ice": "gheața",
     "dragon": "dragon",
     "dark": "Întuneric",
-    "fairy": "zana",
-    "none": "nimic"
+    "fairy": "Zana",
+    "none": "Nimic"
   },
   "banners": {
     "updateReady": {
       "description": "Poti sa updatezi",
-      "update": "updateaza"
+      "update": "Updateaza"
     },
     "offlineReady": {
       "description": "Poti sa te deconectezi",
