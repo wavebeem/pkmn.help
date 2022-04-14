@@ -26,9 +26,10 @@ import { useUpdateSW } from "./useUpdateSW";
 const bannerClass = classNames([
   "button-shadow",
   "bg1 fg1",
-  "border2 ba",
-  "br2 pa3",
-  "justify-center flex",
+  "border2 ba br2",
+  "pa3 ma3",
+  "center",
+  "flex justify-center",
 ]);
 
 const tabClass = classNames([
@@ -188,41 +189,41 @@ export default function App() {
             {t("navigation.more")}
           </NavLink>
         </nav>
-        {(needRefresh || offlineReady) && (
-          <div className="ph3 mw6 center grid gap3 pa3">
-            {needRefresh && (
-              <div className={bannerClass}>
-                <span className="flex flex-auto items-center">
-                  {t("banners.updateReady.description")}
-                </span>
-                <Button
-                  className="ml3"
-                  type="button"
-                  onClick={() => {
-                    updateServiceWorker(true);
-                    setNeedRefresh(false);
-                  }}
-                >
-                  {t("banners.updateReady.update")}
-                </Button>
-              </div>
-            )}
-            {offlineReady && (
-              <div className={bannerClass}>
-                <span className="flex flex-auto items-center">
-                  {t("banners.offlineReady.description")}
-                </span>
-                <Button
-                  className="ml3"
-                  type="button"
-                  onClick={() => {
-                    setOfflineReady(false);
-                  }}
-                >
-                  {t("banners.offlineReady.dismiss")}
-                </Button>
-              </div>
-            )}
+        {needRefresh && (
+          <div className="ph3 mv3 center mw6">
+            <div className={bannerClass}>
+              <span className="flex flex-auto items-center">
+                {t("banners.updateReady.description")}
+              </span>
+              <Button
+                className="ml3"
+                type="button"
+                onClick={() => {
+                  updateServiceWorker(true);
+                  setNeedRefresh(false);
+                }}
+              >
+                {t("banners.updateReady.update")}
+              </Button>
+            </div>
+          </div>
+        )}
+        {offlineReady && (
+          <div className="ph3 mv3 center mw6">
+            <div className={bannerClass}>
+              <span className="flex flex-auto items-center">
+                {t("banners.offlineReady.description")}
+              </span>
+              <Button
+                className="ml3"
+                type="button"
+                onClick={() => {
+                  setOfflineReady(false);
+                }}
+              >
+                {t("banners.offlineReady.dismiss")}
+              </Button>
+            </div>
           </div>
         )}
         <React.Suspense fallback={<div className="Spinner center mt4 f2" />}>
