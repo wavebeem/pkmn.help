@@ -11,7 +11,7 @@
     "weaknessCoverage": "Acoperire slabiciuni",
     "weaknessCoverageEdit": "Editeaza",
     "weaknessCoverageEditLong": "Schimba acoperire slabiciuni",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formaconnectie>formulare</formaconnectie>",
+    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>formulare</formslink>",
     "weaknessNotFound": "Nici un Pokemon cu slabiciuni găsit",
     "dealsXTo": "Oferte {{ x }} spre"
   },
