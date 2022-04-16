@@ -12,7 +12,7 @@
     "weaknessCoverageEdit": "Editeaza",
     "weaknessCoverageEditLong": "Schimba acoperire slabiciuni",
     "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>formulare</formslink>",
-    "weaknessNotFound": "Nici un Pokemon cu slabiciuni găsit",
+    "weaknessNotFound": "Nici un Pokémon cu slabiciuni găsit",
     "dealsXTo": "Oferte {{ x }} spre"
   },
   "coverageList": {
@@ -45,9 +45,9 @@
     },
     "filename": "pkmn.help tip coverage.csv",
     "status": {
-      "imported": "Importat {{ n }} forme de Pokemon de la „{{ file }}”",
-      "exported": "Exporteaza forme de Pokemon implicit",
-      "reset": "Incarca forme de Pokemon implicit",
+      "imported": "Importat {{ n }} forme de Pokémon de la „{{ file }}”",
+      "exported": "Exporteaza forme de Pokémon implicit",
+      "reset": "Incarca forme de Pokémon implicit",
       "errored": "Eroare la încărcarea CSV. Nu schimbați numele antetului."
     },
     "back": "Înapoi la atac"
@@ -63,7 +63,7 @@
       "description": "Cauta nume, numar sau feluri",
       "help": "Ajutor",
       "helpLong": "Ajutor, cauta în Pokedex",
-      "notFound": "Nici un Pokemon gasit"
+      "notFound": "Nici un Pokémon gasit"
     },
     "bulbapedia": {
       "label": "Pagina de Bulbapedia pentru {{ pokemon }}"
@@ -196,7 +196,7 @@
     },
     "legalInfo": {
       "heading": "Informatie legala",
-      "pokemon": "Pokemon © 202-{{ year }} Pokemon. © 1995-{{ year}} Nintendo/Creatures Inc./GAME FREAK Inc.™ , © si numele caracterelor Pokemon sunt marci comerciale de Nintendo.",
+      "pokemon": "Pokémon © 202-{{ year }} Pokémon. © 1995-{{ year}} Nintendo/Creatures Inc./GAME FREAK Inc.™ , © si numele caracterelor Pokémon sunt marci comerciale de Nintendo.",
       "dontSueMe": "Nu se intenționează încălcarea drepturilor de autor sau a mărcii comerciale în utilizarea conținutului Pokémon de pe această pagină.",
       "pokeAPI": "Date de Pokédex de la <pokeapi>PokéAPi</pokeapi>",
       "wavebeem": "pkmn.help © 2013-{{ year }} <wavebeem>Brian Mock</wavebeem>."
