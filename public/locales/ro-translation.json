@@ -33,7 +33,7 @@
     },
     "export": {
       "button": "Exporteaza",
-      "description": "Exporteaza Pokemonul implicit spre un fișier CSV"
+      "description": "Exporteaza Pokémonul implicit spre un fișier CSV"
     },
     "import": {
       "button": "Importa",
@@ -121,7 +121,7 @@
       },
       "doubleType": {
         "query": "apa zburand",
-        "description": "Cauta Pokemoni care sunt apa/zburator ( de exemplu: Gyrados) sau zburator/apa (de exemplu: Cramorant)"
+        "description": "Cauta Pokémoni care sunt apa/zburator ( de exemplu: Gyrados) sau zburator/apa (de exemplu: Cramorant)"
       },
       "singleType": {
         "query": "iarba nimic",
@@ -153,7 +153,7 @@
       },
       "typeCount": {
         "label": "Numarul de tipuri",
-        "help": "Pokemonul poate avea trei tipuri simultan dacă este lovit cu Blestemul Forests sau Trick-or-Treat. Al treilea câmp de tip este ascuns în mod implicit, deoarece este rar folosit.",
+        "help": "Pokémonul poate avea trei tipuri simultan dacă este lovit cu Blestemul Forests sau Trick-or-Treat. Al treilea câmp de tip este ascuns în mod implicit, deoarece este rar folosit.",
         "values": {
           "2": "Doua tipuri (2)",
           "3": "Tri tipuri (3)"
