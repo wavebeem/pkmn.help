@@ -70,7 +70,7 @@
     },
     "offense": {
       "label": "Atac pentru {{ pokemon }}",
-      "text": "Atac pentru {{ pokemon }}"
+      "text": "Atac"
     },
     "defense": {
       "label": "Aparare pentru {{ pokemon }}",
