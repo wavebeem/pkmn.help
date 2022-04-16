@@ -235,5 +235,14 @@
   },
   "general": {
     "loading": "Cargando..."
+  },
+  "games": {
+    "label": "Generación del juego",
+    "help": "Usa la efectividad de tipo de diferentes generaciones.",
+    "byID": {
+      "gen1": "Generación 1",
+      "gen2": "Generación 2–5",
+      "default": "Predeterminada (Generación 6+)"
+    }
   }
 }
