@@ -121,7 +121,7 @@
       },
       "doubleType": {
         "query": "apa zburand",
-        "description": "Cauta Pokémoni care sunt apa/zburator ( de exemplu: Gyrados) sau zburator/apa (de exemplu: Cramorant)"
+        "description": "Cauta Pokémoni care sunt apa/zburand ( de exemplu: Gyrados) sau zburand/apa (de exemplu: Cramorant)"
       },
       "singleType": {
         "query": "iarba nimic",
