@@ -45,7 +45,7 @@
     },
     "filename": "pkmn.help tip coverage.csv",
     "status": {
-      "imported": "Importat {{ n }} forme de Pokemon de la \"{{ file }}\"",
+      "imported": "Importat {{ n }} forme de Pokemon de la „{{ file }}”",
       "exported": "Exporteaza forme de Pokemon implicit",
       "reset": "Incarca forme de Pokemon implicit",
       "errored": "Eroare la încărcarea CSV. Nu schimbați numele antetului."
