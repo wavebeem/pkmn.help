@@ -16,7 +16,7 @@
     "start": "vite",
     "prebuild": "rimraf dist",
     "typecheck": "tsc -p .",
-    "build": "tsc && vite build --mode production && find dist",
+    "build": "tsc && vite build --mode production && find dist | grep -v png",
     "test-sw": "npm run -s build && npx serve -s dist",
     "preview": "vite preview",
     "lint": "eslint src --ext .ts,.tsx,.js",
