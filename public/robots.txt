@@ -1,0 +1,3 @@
+# Empty robots.txt allows all crawlers. This empty file is required because the
+# redirect rules for this page are configured to serve the index.html file
+# rather than returning a 404 response.
