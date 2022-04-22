@@ -1,4 +1,5 @@
 import { closest } from "fastest-levenshtein";
+import removeAccents from "remove-accents";
 import { Generation } from "./data-generations";
 
 export interface Pokemon {
@@ -43,6 +44,10 @@ function isType(str: string): str is Type {
   return types.some((t) => t === str);
 }
 
+function normalizeTypeString(str: string): string {
+  return removeAccents(str.toLocaleLowerCase());
+}
+
 export function typesFromString(str: string): Type[] {
   return [...new Set(str.split(/\s+/).filter(isType))];
 }
@@ -57,17 +62,14 @@ export function typesFromUserInput({
   strict?: boolean;
 }): Type[] {
   const map = Object.fromEntries(
-    typesOrNone.map((type) => [type, t(`types.${type}`).toLocaleLowerCase()])
+    typesOrNone.map((type) => [type, normalizeTypeString(t(`types.${type}`))])
   );
+  const lookup = strict ? reverseLookup : reverseClosestLookup;
   return types
     .split(/\s+/)
     .filter((s) => s)
-    .map((type) => {
-      if (strict) {
-        return reverseLookup(type, map) as Type;
-      }
-      return reverseClosestLookup(type, map) as Type;
-    })
+    .map(normalizeTypeString)
+    .map((type) => lookup(type, map) as Type)
     .filter((s) => s);
 }
 
