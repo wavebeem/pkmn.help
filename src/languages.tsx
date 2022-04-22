@@ -3,6 +3,7 @@ import { Language } from "./ScreenMore";
 export const languages: Language[] = [
   { title: "English", value: "en" },
   { title: "Español (Spanish)", value: "es" },
+  { title: "Português Brasileiro (Brazilian Portuguese)", value: "pt-BR" },
   { title: "Deutsch (German)", value: "de" },
   { title: "Italiano (Italian)", value: "it" },
   { title: "Français (French)", value: "fr" },
