@@ -107,7 +107,7 @@
       "description": "Pode procurar um Pokémon pelo nome. Mesmo se lembrar apenas uma parte do nome, ainda assim pode ser encontrado para você. No entanto, não encontra se tiver erros de digitação"
     },
     "searchByNumber": {
-      "heading": "Procura por nome",
+      "heading": "Procura por número",
       "description": "Procura por número na NacionalDex. Se quiser Bulbasauro, por exemplo, procure por 1, não #001!"
     },
     "searchByType": {
@@ -121,7 +121,7 @@
       },
       "doubleType": {
         "query": "água voador",
-        "description": "Procure por um Pokémon que tenha água/voador (por exemplo Gyarados)ou voador/água (por exemplo Cramorant)."
+        "description": "Procure por um Pokémon que tenha água/voador (por exemplo Gyarados) ou voador/água (por exemplo Cramorant)."
       },
       "singleType": {
         "query": "planta nenhum",
@@ -134,7 +134,7 @@
     "contact": {
       "heading": "Entre em contato comigo",
       "intro": "Olá, eu sou  <homepage>Brian</homepage> (they/them), eu fiz a Calculadora de Tipos Pokémon (pkmn.help).",
-      "email": "Por favor me mande pensamentos e agradecimentos para <email>pkmn@wavebeem.com</email>."
+      "email": "Por favor, pode mandar opiniões e agradecimentos para <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
       "heading": "Configurações",
@@ -153,7 +153,7 @@
       },
       "typeCount": {
         "label": "Número de tipos",
-        "help": "Pokémon podem brevemente ter 3 tipos ao mesmo tempo se atingido por Maldição da Floresta (Forests's Curse) ou Doçura ou Travessura (Trick-or-Treat). O campo para terceiro tipo é escondido por padrão desde que é raramente utilizado.",
+        "help": "Pokémon podem brevemente ter 3 tipos ao mesmo tempo se atingido por Maldição da Floresta (Forests's Curse) ou Doçura ou Travessura (Trick-or-Treat). O campo para terceiro tipo é escondido por padrão por ser raramente utilizado.",
         "values": {
           "2": "Dois tipos (2)",
           "3": "Três tipos (3)"
@@ -243,7 +243,7 @@
     "help": "Usar efetividade de tipos de diferentes gerações",
     "byID": {
       "gen1": "1° Geração",
-      "gen2": "2° Geração",
+      "gen2": "2-5° Geração",
       "default": "Padrão (6° Geração +)"
     }
   }
