@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import * as React from "react";
-import { unregisterServiceWorker } from "./unregisterServiceWorker";
+import { resetApp } from "./resetApp";
 
 interface ScreenErrorProps {
   error: Error;
@@ -15,10 +15,6 @@ const buttonClasses = classNames(
 );
 
 function ScreenError({ error }: ScreenErrorProps) {
-  function reset() {
-    localStorage.clear();
-    unregisterServiceWorker().catch(() => undefined);
-  }
   return (
     <div className="sans-serif ph4 content-narrow f4 center fg2 lh-copy">
       <h1>pkmn.help: Error</h1>
@@ -34,7 +30,7 @@ function ScreenError({ error }: ScreenErrorProps) {
         {error.message}
       </pre>
       <p>If the problem persists, you can try resetting the page:</p>
-      <button type="button" onClick={reset} className={buttonClasses}>
+      <button type="button" onClick={resetApp} className={buttonClasses}>
         Reset
       </button>
       <p>

@@ -2,8 +2,8 @@ import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "./Button";
 import { generations, isGeneration } from "./data-generations";
+import { resetApp } from "./resetApp";
 import { Select } from "./Select";
-import { unregisterServiceWorker } from "./unregisterServiceWorker";
 import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
@@ -149,7 +149,7 @@ export default function ScreenMore(): JSX.Element {
       <h2 className="lh-title f4">{t("more.help.heading")}</h2>
       <p>{t("more.help.serviceWorker.description")}</p>
       <div className="mv3">
-        <Button onClick={unregisterServiceWorker}>
+        <Button onClick={resetApp}>
           {t("more.help.serviceWorker.button")}
         </Button>
       </div>
