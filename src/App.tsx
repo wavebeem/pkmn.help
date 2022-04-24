@@ -6,6 +6,7 @@ import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { CoverageType, Pokemon } from "./data-types";
+import { detectLanguage } from "./detectLanguage";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import ScreenDefense from "./ScreenDefense";
@@ -24,7 +25,7 @@ import { useUpdateSW } from "./useUpdateSW";
 
 const tabClass = classNames([
   "no-underline",
-  "pv1 ph2 f5",
+  "pv1 ph3 f5",
   "TabFocus",
   "tc b",
   "ba border1 br-pill",
@@ -81,8 +82,11 @@ export default function App() {
   const [language] = useLanguage();
 
   React.useEffect(() => {
-    i18n.changeLanguage(language);
-    document.documentElement.lang = language;
+    async function load() {
+      await i18n.changeLanguage(language || detectLanguage());
+      document.documentElement.lang = i18n.language;
+    }
+    load();
   }, [language, i18n]);
 
   // Theme stuff

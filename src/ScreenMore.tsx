@@ -10,30 +10,6 @@ import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useTypeCount } from "./useTypeCount";
 
-interface Language {
-  title: string;
-  value: string;
-}
-
-const languages: Language[] = [
-  { title: "Default", value: "default" },
-  { title: "English", value: "en" },
-  { title: "Español (Spanish)", value: "es" },
-  { title: "Português Brasileiro (Brazilian Portuguese)", value: "pt-BR" },
-  { title: "Deutsch (German)", value: "de" },
-  { title: "Italiano (Italian)", value: "it" },
-  { title: "Français (French)", value: "fr" },
-  { title: "Română (Romanian)", value: "ro" },
-  { title: "日本語 (Japanese)", value: "ja" },
-  { title: "にほんご (Japanese Kana-only)", value: "ja-Hrkt" },
-  { title: "简体中文 (Simplified Chinese)", value: "zh-Hans" },
-  { title: "繁體中文 (Traditional Chinese)", value: "zh-Hant" },
-  { title: "한국어 (Korean)", value: "ko" },
-];
-
-const typeCountValues = ["2", "3"] as const;
-const themeValues = ["auto", "light", "dark"] as const;
-
 export interface ScreenMoreProps {
   needsAppUpdate: boolean;
   updateApp: () => Promise<void>;
@@ -116,13 +92,22 @@ export default function ScreenMore({
             i18n.changeLanguage(language);
           }}
         >
-          {languages.map((lang) => {
-            return (
-              <option key={lang.value} value={lang.value}>
-                {lang.title}
-              </option>
-            );
-          })}
+          <option value="">{t("more.settings.language.default")}</option>
+          <option disabled>{"-".repeat(20)}</option>
+          <option value="en">English</option>
+          <option value="es">Español (Spanish)</option>
+          <option value="pt-BR">
+            Português Brasileiro (Brazilian Portuguese)
+          </option>
+          <option value="de">Deutsch (German)</option>
+          <option value="it">Italiano (Italian)</option>
+          <option value="fr">Français (French)</option>
+          <option value="ro">Română (Romanian)</option>
+          <option value="ja">日本語 (Japanese)</option>
+          <option value="ja-Hrkt">にほんご (Japanese Kana-only)</option>
+          <option value="zh-Hans">简体中文 (Simplified Chinese)</option>
+          <option value="zh-Hant">繁體中文 (Traditional Chinese)</option>
+          <option value="ko">한국어 (Korean)</option>
         </Select>
 
         <Select
@@ -133,13 +118,9 @@ export default function ScreenMore({
             setTheme(event.target.value);
           }}
         >
-          {themeValues.map((value) => {
-            return (
-              <option key={value} value={value}>
-                {t(`more.settings.theme.values.${value}`)}
-              </option>
-            );
-          })}
+          <option value="auto">{t("more.settings.theme.values.auto")}</option>
+          <option value="light">{t("more.settings.theme.values.light")}</option>
+          <option value="dark">{t("more.settings.theme.values.dark")}</option>
         </Select>
 
         <Select
@@ -172,13 +153,8 @@ export default function ScreenMore({
             setTypeCount(event.target.value);
           }}
         >
-          {typeCountValues.map((value) => {
-            return (
-              <option key={value} value={value}>
-                {t(`more.settings.typeCount.values.${value}`)}
-              </option>
-            );
-          })}
+          <option value="2">{t("more.settings.typeCount.values.2")}</option>
+          <option value="3">{t("more.settings.typeCount.values.3")}</option>
         </Select>
       </div>
 
