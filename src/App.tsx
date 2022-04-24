@@ -5,9 +5,8 @@ import { useTranslation } from "react-i18next";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
-import { Button } from "./Button";
-import { Generation } from "./data-generations";
 import { CoverageType, Pokemon } from "./data-types";
+import { detectLanguage } from "./detectLanguage";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import ScreenDefense from "./ScreenDefense";
@@ -19,22 +18,14 @@ import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 import ScreenWeaknessList from "./ScreenWeaknessList";
 import { PUBLIC_PATH } from "./settings";
 import { useFetchJSON } from "./useFetchJSON";
+import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
 
-const bannerClass = classNames([
-  "button-shadow",
-  "bg1 fg1",
-  "border2 ba br2",
-  "pa3 ma3",
-  "center",
-  "flex justify-center",
-]);
-
 const tabClass = classNames([
   "no-underline",
-  "pv1 ph2 f5",
+  "pv1 ph3 f5",
   "TabFocus",
   "tc b",
   "ba border1 br-pill",
@@ -61,16 +52,21 @@ export default function App() {
   // Service worker
   const {
     needRefresh: [needRefresh, setNeedRefresh],
-    offlineReady: [offlineReady, setOfflineReady],
+    // offlineReady: [offlineReady, setOfflineReady],
     updateServiceWorker,
   } = useRegisterSW();
   useUpdateSW();
+
+  async function updateApp() {
+    setNeedRefresh(false);
+    await updateServiceWorker(true);
+  }
 
   const t = useTranslationsWithBlankFallback();
   const { i18n } = useTranslation(undefined, { useSuspense: false });
 
   // State...
-  const [generation, setGeneration] = React.useState<Generation>("default");
+  const [generation] = useGeneration();
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
@@ -86,8 +82,11 @@ export default function App() {
   const [language] = useLanguage();
 
   React.useEffect(() => {
-    i18n.changeLanguage(language);
-    document.documentElement.lang = language;
+    async function load() {
+      await i18n.changeLanguage(language || detectLanguage());
+      document.documentElement.lang = i18n.language;
+    }
+    load();
   }, [language, i18n]);
 
   // Theme stuff
@@ -182,50 +181,13 @@ export default function App() {
             {t("navigation.pokedex")}
           </NavLink>
           <NavLink
-            className={tabClass}
+            className={classNames(tabClass, needRefresh && "PleaseUpdate")}
             activeClassName={tabClassActive}
             to="/more/"
           >
             {t("navigation.more")}
           </NavLink>
         </nav>
-        {needRefresh && (
-          <div className="ph3 mv3 center mw6">
-            <div className={bannerClass}>
-              <span className="flex flex-auto items-center">
-                {t("banners.updateReady.description")}
-              </span>
-              <Button
-                className="ml3"
-                type="button"
-                onClick={() => {
-                  updateServiceWorker(true);
-                  setNeedRefresh(false);
-                }}
-              >
-                {t("banners.updateReady.update")}
-              </Button>
-            </div>
-          </div>
-        )}
-        {offlineReady && (
-          <div className="ph3 mv3 center mw6">
-            <div className={bannerClass}>
-              <span className="flex flex-auto items-center">
-                {t("banners.offlineReady.description")}
-              </span>
-              <Button
-                className="ml3"
-                type="button"
-                onClick={() => {
-                  setOfflineReady(false);
-                }}
-              >
-                {t("banners.offlineReady.dismiss")}
-              </Button>
-            </div>
-          </div>
-        )}
         <React.Suspense fallback={<div className="Spinner center mt4 f2" />}>
           <Switch>
             <Route
@@ -256,7 +218,6 @@ export default function App() {
               render={() => (
                 <ScreenOffense
                   generation={generation}
-                  setGeneration={setGeneration}
                   coverageTypes={coverageTypes}
                   setCoverageTypes={setCoverageTypes}
                   setOffenseParams={setOffenseParams}
@@ -271,7 +232,6 @@ export default function App() {
               render={() => (
                 <ScreenDefense
                   generation={generation}
-                  setGeneration={setGeneration}
                   setDefenseParams={setDefenseParams}
                   fallbackCoverageTypes={fallbackCoverageTypes}
                 />
@@ -293,7 +253,16 @@ export default function App() {
                 />
               )}
             />
-            <Route exact path="/more/" render={() => <ScreenMore />} />
+            <Route
+              exact
+              path="/more/"
+              render={() => (
+                <ScreenMore
+                  needsAppUpdate={needRefresh}
+                  updateApp={updateApp}
+                />
+              )}
+            />
             <Redirect to="/defense/" />
           </Switch>
         </React.Suspense>

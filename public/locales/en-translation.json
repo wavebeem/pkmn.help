@@ -140,6 +140,7 @@
       "heading": "Settings",
       "language": {
         "label": "Language",
+        "default": "Auto detect language",
         "helpText": "Language support is incomplete. Please email me, I will pay you to translate."
       },
       "theme": {
@@ -229,10 +230,6 @@
     "updateReady": {
       "description": "An update is available",
       "update": "Update"
-    },
-    "offlineReady": {
-      "description": "Offline mode is now available",
-      "dismiss": "Dismiss"
     }
   },
   "general": {

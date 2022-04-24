@@ -229,10 +229,6 @@
     "updateReady": {
       "description": "Poti sa updatezi",
       "update": "Updateaza"
-    },
-    "offlineReady": {
-      "description": "Poti sa te deconectezi",
-      "dismiss": "Ignora"
     }
   },
   "general": {

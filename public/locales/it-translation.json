@@ -223,10 +223,6 @@
     "updateReady": {
       "description": "È disponibile un aggiornamento",
       "update": "Aggiorna"
-    },
-    "offlineReady": {
-      "description": "La modalità offline è ora disponibile",
-      "dismiss": "Chiudi"
     }
   },
   "general": {

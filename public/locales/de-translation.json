@@ -194,7 +194,7 @@
       "heading": "Rechtliche Hinweise.",
       "pokemon": "Pokémon © 2002-{{ year }} Pokémon. © 1995-{{ year }} Nintendo/Creatures Inc./GAME FREAK inc. ™, ® und die Namen der Pokémon-Figuren sind Marken von Nintendo.",
       "dontSueMe": "Mit der Verwendung von Pokémon-Inhalten auf dieser Seite wird keine Urheberrechts- oder Markenrechtsverletzung beabsichtigt.",
-      "pokeAPI": "Pokédex-Daten aus <pokeapi>PokéAPI<pokeapi>.",
+      "pokeAPI": "Pokédex-Daten aus <pokeapi>PokéAPI</pokeapi>.",
       "wavebeem": "pkmn.help © 2013-{{ year }} <wavebeem>Brian Mock</wavebeem>."
     }
   },
@@ -223,10 +223,6 @@
     "updateReady": {
       "description": "Ein Update ist verfügbar",
       "update": "Aktualisierung"
-    },
-    "offlineReady": {
-      "description": "Der Offline-Modus ist jetzt verfügbar",
-      "dismiss": "Verwerfen"
     }
   },
   "general": {

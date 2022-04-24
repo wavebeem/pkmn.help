@@ -5,8 +5,7 @@ interface UpdateSW {
   lastUpdateCheck: number;
 }
 
-// const checkInterval = 60 * 60 * 1000;
-const checkInterval = 2 * 60 * 1000;
+const checkInterval = 10 * 60 * 1000;
 
 export function useUpdateSW(): UpdateSW {
   const [state, setState] = React.useState<UpdateSW>({
