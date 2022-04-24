@@ -1,36 +1,41 @@
 import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "./Button";
-import { languages } from "./languages";
+import { generations, isGeneration } from "./data-generations";
 import { Select } from "./Select";
+import { unregisterServiceWorker } from "./unregisterServiceWorker";
+import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useTypeCount } from "./useTypeCount";
 
-async function unregisterServiceWorker() {
-  try {
-    for (const reg of await navigator.serviceWorker.getRegistrations()) {
-      try {
-        await reg.unregister();
-      } catch (err) {
-        console.warn("Failed to unregister service worker", err);
-      }
-    }
-  } finally {
-    location.reload();
-  }
-}
-
-export interface Language {
+interface Language {
   title: string;
   value: string;
 }
+
+const languages: Language[] = [
+  { title: "Default", value: "default" },
+  { title: "English", value: "en" },
+  { title: "Español (Spanish)", value: "es" },
+  { title: "Português Brasileiro (Brazilian Portuguese)", value: "pt-BR" },
+  { title: "Deutsch (German)", value: "de" },
+  { title: "Italiano (Italian)", value: "it" },
+  { title: "Français (French)", value: "fr" },
+  { title: "Română (Romanian)", value: "ro" },
+  { title: "日本語 (Japanese)", value: "ja" },
+  { title: "にほんご (Japanese Kana-only)", value: "ja-Hrkt" },
+  { title: "简体中文 (Simplified Chinese)", value: "zh-Hans" },
+  { title: "繁體中文 (Traditional Chinese)", value: "zh-Hant" },
+  { title: "한국어 (Korean)", value: "ko" },
+];
 
 const typeCountValues = ["2", "3"] as const;
 const themeValues = ["auto", "light", "dark"] as const;
 
 export default function ScreenMore(): JSX.Element {
   const { t, i18n } = useTranslation();
+  const [generation, setGeneration] = useGeneration();
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();
   const [typeCount, setTypeCount] = useTypeCount();
@@ -98,6 +103,27 @@ export default function ScreenMore(): JSX.Element {
             return (
               <option key={value} value={value}>
                 {t(`more.settings.theme.values.${value}`)}
+              </option>
+            );
+          })}
+        </Select>
+        <Select
+          label={t("games.label")}
+          value={generation}
+          helpText={t("games.help")}
+          onChange={(event) => {
+            const { value } = event.target;
+            if (isGeneration(value)) {
+              setGeneration(value);
+            } else {
+              console.error("not a generation:", value);
+            }
+          }}
+        >
+          {generations.map((gen) => {
+            return (
+              <option key={gen} value={gen}>
+                {t(`games.byID.${gen}`)}
               </option>
             );
           })}

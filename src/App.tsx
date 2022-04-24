@@ -19,6 +19,7 @@ import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
 import ScreenWeaknessList from "./ScreenWeaknessList";
 import { PUBLIC_PATH } from "./settings";
 import { useFetchJSON } from "./useFetchJSON";
+import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
@@ -70,7 +71,7 @@ export default function App() {
   const { i18n } = useTranslation(undefined, { useSuspense: false });
 
   // State...
-  const [generation, setGeneration] = React.useState<Generation>("default");
+  const [generation] = useGeneration();
   const [defenseParams, setDefenseParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
@@ -182,7 +183,8 @@ export default function App() {
             {t("navigation.pokedex")}
           </NavLink>
           <NavLink
-            className={tabClass}
+            // className={classNames(tabClass, needRefresh && "PleaseUpdate")}
+            className={classNames(tabClass, "PleaseUpdate")}
             activeClassName={tabClassActive}
             to="/more/"
           >
@@ -256,7 +258,6 @@ export default function App() {
               render={() => (
                 <ScreenOffense
                   generation={generation}
-                  setGeneration={setGeneration}
                   coverageTypes={coverageTypes}
                   setCoverageTypes={setCoverageTypes}
                   setOffenseParams={setOffenseParams}
@@ -271,7 +272,6 @@ export default function App() {
               render={() => (
                 <ScreenDefense
                   generation={generation}
-                  setGeneration={setGeneration}
                   setDefenseParams={setDefenseParams}
                   fallbackCoverageTypes={fallbackCoverageTypes}
                 />

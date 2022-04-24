@@ -5,6 +5,6 @@ export function useLanguage(): [
   string,
   React.Dispatch<React.SetStateAction<string>>
 ] {
-  const [language, setLanguage] = useLocalStorage("language", "en");
+  const [language, setLanguage] = useLocalStorage("language", "default");
   return [language, setLanguage];
 }
