@@ -51,6 +51,10 @@
   --color-scroll-bg: hsl(220, 20%, 30%);
 }
 
+[hidden] {
+  display: none;
+}
+
 .Select {
   position: relative;
 }

@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "./Button";
@@ -33,7 +34,15 @@ const languages: Language[] = [
 const typeCountValues = ["2", "3"] as const;
 const themeValues = ["auto", "light", "dark"] as const;
 
-export default function ScreenMore(): JSX.Element {
+export interface ScreenMoreProps {
+  needsAppUpdate: boolean;
+  updateApp: () => Promise<void>;
+}
+
+export default function ScreenMore({
+  needsAppUpdate,
+  updateApp,
+}: ScreenMoreProps): JSX.Element {
   const { t, i18n } = useTranslation();
   const [generation, setGeneration] = useGeneration();
   const [language, setLanguage] = useLanguage();
@@ -43,7 +52,27 @@ export default function ScreenMore(): JSX.Element {
 
   return (
     <main className="pa3 center content-narrow lh-copy">
+      <div
+        hidden={!needsAppUpdate}
+        className={classNames([
+          "button-shadow",
+          "bg1 fg1",
+          "border2 ba br2",
+          "pa3",
+          "center",
+          "flex justify-center",
+        ])}
+      >
+        <span className="flex flex-auto items-center">
+          {t("banners.updateReady.description")}
+        </span>
+        <Button className="ml3" type="button" onClick={updateApp}>
+          {t("banners.updateReady.update")}
+        </Button>
+      </div>
+
       <h2 className="lh-title f4">{t("more.contact.heading")}</h2>
+
       <p>
         <Trans
           i18nKey="more.contact.intro"
@@ -58,6 +87,7 @@ export default function ScreenMore(): JSX.Element {
           }}
         />
       </p>
+
       <p>
         <Trans
           i18nKey="more.contact.email"
@@ -71,8 +101,11 @@ export default function ScreenMore(): JSX.Element {
           }}
         />
       </p>
+
       <div role="presentation" className="mv2 bt border3" />
+
       <h2 className="lh-title f4">{t("more.settings.heading")}</h2>
+
       <div className="grid gap3 pb2">
         <Select
           label={t("more.settings.language.label")}
@@ -91,6 +124,7 @@ export default function ScreenMore(): JSX.Element {
             );
           })}
         </Select>
+
         <Select
           label={t("more.settings.theme.label")}
           value={theme}
@@ -107,6 +141,7 @@ export default function ScreenMore(): JSX.Element {
             );
           })}
         </Select>
+
         <Select
           label={t("games.label")}
           value={generation}
@@ -128,6 +163,7 @@ export default function ScreenMore(): JSX.Element {
             );
           })}
         </Select>
+
         <Select
           label={t("more.settings.typeCount.label")}
           value={typeCount}
@@ -145,16 +181,23 @@ export default function ScreenMore(): JSX.Element {
           })}
         </Select>
       </div>
+
       <div role="presentation" className="mv2 bt border3" />
+
       <h2 className="lh-title f4">{t("more.help.heading")}</h2>
+
       <p>{t("more.help.serviceWorker.description")}</p>
+
       <div className="mv3">
         <Button onClick={resetApp}>
           {t("more.help.serviceWorker.button")}
         </Button>
       </div>
+
       <div role="presentation" className="mv2 bt border3" />
+
       <h2 className="lh-title f4">{t("more.privacy.heading")}</h2>
+
       <p>
         <Trans
           i18nKey="more.privacy.description"
@@ -168,11 +211,17 @@ export default function ScreenMore(): JSX.Element {
           }}
         />
       </p>
+
       <div role="presentation" className="mv2 bt border3" />
+
       <h2 className="lh-title f4">{t("more.givingBack.heading")}</h2>
+
       <p>{t("more.givingBack.description")}</p>
+
       <div role="presentation" className="mv2 bt border3" />
+
       <h2 className="lh-title f4">{t("more.thanks.heading")}</h2>
+
       <ul className="lh-copy mt1 ph3">
         <li>{t("more.thanks.credits.vio")}</li>
         <li>{t("more.thanks.credits.dragonify")}</li>
@@ -187,8 +236,11 @@ export default function ScreenMore(): JSX.Element {
         <li>{t("more.thanks.credits.jansjo")}</li>
         <li>{t("more.thanks.credits.other")}</li>
       </ul>
+
       <div role="presentation" className="mv2 bt border3" />
+
       <h2 className="lh-title f4">{t("more.openSource.heading")}</h2>
+
       <p>
         <Trans
           i18nKey="more.openSource.description"
@@ -202,12 +254,17 @@ export default function ScreenMore(): JSX.Element {
           }}
         />
       </p>
+
       <div role="presentation" className="mv2 bt border3" />
+
       <h2 className="lh-title f4">{t("more.legalInfo.heading")}</h2>
+
       <p>
         <Trans i18nKey="more.legalInfo.pokemon" values={{ year }} />
       </p>
+
       <p>{t("more.legalInfo.dontSueMe")}</p>
+
       <p>
         <Trans
           i18nKey="more.legalInfo.pokeAPI"
@@ -221,6 +278,7 @@ export default function ScreenMore(): JSX.Element {
           }}
         />
       </p>
+
       <p>
         <Trans
           i18nKey="more.legalInfo.wavebeem"

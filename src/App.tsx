@@ -5,8 +5,6 @@ import { useTranslation } from "react-i18next";
 import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
-import { Button } from "./Button";
-import { Generation } from "./data-generations";
 import { CoverageType, Pokemon } from "./data-types";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
@@ -23,15 +21,6 @@ import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
-
-const bannerClass = classNames([
-  "button-shadow",
-  "bg1 fg1",
-  "border2 ba br2",
-  "pa3 ma3",
-  "center",
-  "flex justify-center",
-]);
 
 const tabClass = classNames([
   "no-underline",
@@ -62,10 +51,15 @@ export default function App() {
   // Service worker
   const {
     needRefresh: [needRefresh, setNeedRefresh],
-    offlineReady: [offlineReady, setOfflineReady],
+    // offlineReady: [offlineReady, setOfflineReady],
     updateServiceWorker,
   } = useRegisterSW();
   useUpdateSW();
+
+  async function updateApp() {
+    setNeedRefresh(false);
+    await updateServiceWorker(true);
+  }
 
   const t = useTranslationsWithBlankFallback();
   const { i18n } = useTranslation(undefined, { useSuspense: false });
@@ -183,51 +177,13 @@ export default function App() {
             {t("navigation.pokedex")}
           </NavLink>
           <NavLink
-            // className={classNames(tabClass, needRefresh && "PleaseUpdate")}
-            className={classNames(tabClass, "PleaseUpdate")}
+            className={classNames(tabClass, needRefresh && "PleaseUpdate")}
             activeClassName={tabClassActive}
             to="/more/"
           >
             {t("navigation.more")}
           </NavLink>
         </nav>
-        {needRefresh && (
-          <div className="ph3 mv3 center mw6">
-            <div className={bannerClass}>
-              <span className="flex flex-auto items-center">
-                {t("banners.updateReady.description")}
-              </span>
-              <Button
-                className="ml3"
-                type="button"
-                onClick={() => {
-                  updateServiceWorker(true);
-                  setNeedRefresh(false);
-                }}
-              >
-                {t("banners.updateReady.update")}
-              </Button>
-            </div>
-          </div>
-        )}
-        {offlineReady && (
-          <div className="ph3 mv3 center mw6">
-            <div className={bannerClass}>
-              <span className="flex flex-auto items-center">
-                {t("banners.offlineReady.description")}
-              </span>
-              <Button
-                className="ml3"
-                type="button"
-                onClick={() => {
-                  setOfflineReady(false);
-                }}
-              >
-                {t("banners.offlineReady.dismiss")}
-              </Button>
-            </div>
-          </div>
-        )}
         <React.Suspense fallback={<div className="Spinner center mt4 f2" />}>
           <Switch>
             <Route
@@ -293,7 +249,16 @@ export default function App() {
                 />
               )}
             />
-            <Route exact path="/more/" render={() => <ScreenMore />} />
+            <Route
+              exact
+              path="/more/"
+              render={() => (
+                <ScreenMore
+                  needsAppUpdate={needRefresh}
+                  updateApp={updateApp}
+                />
+              )}
+            />
             <Redirect to="/defense/" />
           </Switch>
         </React.Suspense>
