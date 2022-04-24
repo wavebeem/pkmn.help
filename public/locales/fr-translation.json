@@ -229,10 +229,6 @@
     "updateReady": {
       "description": "Une mise à jour est disponible",
       "update": "Mettre à jour"
-    },
-    "offlineReady": {
-      "description": "Le mode hors ligne est maintenant disponible",
-      "dismiss": "Ok"
     }
   },
   "general": {

@@ -132,10 +132,6 @@
     "updateReady": {
       "description": "アップデートが利用可能です",
       "update": "更新"
-    },
-    "offlineReady": {
-      "description": "オフラインモードが利用可能です",
-      "dismiss": "無視"
     }
   },
   "general": {

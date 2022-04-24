@@ -229,10 +229,6 @@
     "updateReady": {
       "description": "有更新可用",
       "update": "更新"
-    },
-    "offlineReady": {
-      "description": "离线模式现已可用",
-      "dismiss": "驳回"
     }
   },
   "general": {
