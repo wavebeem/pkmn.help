@@ -108,8 +108,8 @@ export default function App() {
     const allPokemon = allPokemonResponse.data;
     const fallbackCoverageTypes = allPokemon.map<CoverageType>((pkmn) => {
       const name = formatPokemonName({
-        speciesName: pkmn.speciesNames[language],
-        formName: pkmn.formNames[language],
+        speciesName: pkmn.speciesNames[language] || pkmn.speciesNames.en,
+        formName: pkmn.formNames[language] || pkmn.formNames.en,
       });
       const number = String(pkmn.number);
       const types = pkmn.types;
