@@ -175,8 +175,8 @@
 }
 
 .MatchupsSection-Container {
-  grid-template-columns: repeat(auto-fit, minmax(90px, max-content));
-  max-width: 400px;
+  grid-template-columns: repeat(auto-fit, minmax(11ch, max-content));
+  max-width: calc(4 * 11ch + 3 * 0.25rem);
 }
 
 .MultiTypeSelector-Container,

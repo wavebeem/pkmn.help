@@ -179,6 +179,7 @@
     "thanks": {
       "heading": "Особая Благодарность",
       "credits": {
+        "abylayZhandarbek": "Abylay Zhandarbek (Русский перевод)",
         "vio": "Vio (Бразильский перевод)",
         "dragonify": "Dragonify (Китайский перевод)",
         "adamHayes": "Adam Hayes (Румынский перевод)",
@@ -206,20 +207,20 @@
     }
   },
   "types": {
-    "normal": "Нормальный",
+    "normal": "Нормаль",
     "fighting": "Боевой",
     "flying": "Летающий",
     "poison": "Ядовитый",
     "ground": "Земляной",
     "rock": "Каменный",
     "bug": "Жучиный",
-    "ghost": "Призрачный",
+    "ghost": "Призрак",
     "steel": "Стальной",
     "fire": "Огненный",
     "water": "Водяной",
     "grass": "Травяной",
-    "electric": "Электрический",
-    "psychic": "Психический",
+    "electric": "Электро",
+    "psychic": "Психо",
     "ice": "Ледяной",
     "dragon": "Драконий",
     "dark": "Тёмный",
