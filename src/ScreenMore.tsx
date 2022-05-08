@@ -104,7 +104,7 @@ export default function ScreenMore({
           <option value="fr">Français (French)</option>
           <option value="ro">Română (Romanian)</option>
           <option value="ru">Русский (Russian)</option>
-          <option value="ru">Қазақша (Kazakh)</option>
+          <option value="kk">Қазақша (Kazakh)</option>
           <option value="ja">日本語 (Japanese)</option>
           <option value="ja-Hrkt">にほんご (Japanese Kana-only)</option>
           <option value="zh-Hans">简体中文 (Simplified Chinese)</option>
