@@ -93,7 +93,7 @@ export default function ScreenMore({
           }}
         >
           <option value="">{t("more.settings.language.default")}</option>
-          <option disabled>{"-".repeat(20)}</option>
+          <option disabled />
           <option value="en">English</option>
           <option value="es">Español (Spanish)</option>
           <option value="pt-BR">
@@ -103,6 +103,8 @@ export default function ScreenMore({
           <option value="it">Italiano (Italian)</option>
           <option value="fr">Français (French)</option>
           <option value="ro">Română (Romanian)</option>
+          <option value="ru">Русский (Russian)</option>
+          <option value="kk">Қазақша (Kazakh)</option>
           <option value="ja">日本語 (Japanese)</option>
           <option value="ja-Hrkt">にほんご (Japanese Kana-only)</option>
           <option value="zh-Hans">简体中文 (Simplified Chinese)</option>
@@ -199,6 +201,7 @@ export default function ScreenMore({
       <h2 className="lh-title f4">{t("more.thanks.heading")}</h2>
 
       <ul className="lh-copy mt1 ph3">
+        <li>{t("more.thanks.credits.abylayZhandarbek")}</li>
         <li>{t("more.thanks.credits.vio")}</li>
         <li>{t("more.thanks.credits.dragonify")}</li>
         <li>{t("more.thanks.credits.adamHayes")}</li>
