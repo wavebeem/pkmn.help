@@ -185,6 +185,7 @@
   min-width: var(--type-min-width);
 }
 
+.MultiTypeSelector-Container,
 .TypeSelector-Container {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }
