@@ -58,7 +58,7 @@ function Section({ title, types }: SectionProps) {
   return (
     <div>
       <h2 className="f5 mt4 mb2">{title}</h2>
-      <div className="center grid gap1 justify-center MatchupsSection-Container">
+      <div className="center flex flex-wrap gap1 justify-center MatchupsSection-Container">
         {types.map((t) => (
           <Badge key={`type-${t}`} type={t} />
         ))}

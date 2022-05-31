@@ -175,11 +175,16 @@
 }
 
 .MatchupsSection-Container {
-  grid-template-columns: repeat(auto-fit, minmax(11ch, max-content));
-  max-width: calc(4 * 11ch + 3 * 0.25rem);
+  --type-min-width: 80px;
+  --gap: 0.25rem;
+  /* Max of 4 types per line */
+  max-width: calc(4 * var(--type-min-width) + 3 * var(--gap));
 }
 
-.MultiTypeSelector-Container,
+.MatchupsSection-Container > * {
+  min-width: var(--type-min-width);
+}
+
 .TypeSelector-Container {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 }

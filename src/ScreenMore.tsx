@@ -93,7 +93,7 @@ export default function ScreenMore({
           }}
         >
           <option value="">{t("more.settings.language.default")}</option>
-          <option disabled />
+          <option disabled>&ndash;</option>
           <option value="en">English</option>
           <option value="es">Español (Spanish)</option>
           <option value="pt-BR">
