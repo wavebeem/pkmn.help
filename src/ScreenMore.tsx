@@ -182,7 +182,7 @@ export default function ScreenMore({
           components={{
             plausible: (
               <a
-                href="https://plausible.io/privacy"
+                href="https://plausible.io/pkmn.help"
                 className="br1 underline fg-link OutlineFocus"
               />
             ),
