@@ -65,8 +65,8 @@
       "helpLong": "ヘルプ、Pokédexを検索",
       "notFound": "ポケモンが見つかりませんでした"
     },
-    "bulbapedia": {
-      "label": "{{ pokemon }}のBulbapediaページ"
+    "wiki": {
+      "label": "{{ pokemon }}のポケモンWikiページ"
     },
     "offense": {
       "label": "{{ pokemon }}のこうげき",

@@ -65,8 +65,8 @@
       "helpLong": "帮助，搜索图鉴",
       "notFound": "未找到相符宝可梦"
     },
-    "bulbapedia": {
-      "label": "{{ pokemon }} 的英文百科页面"
+    "wiki": {
+      "label": "{{ pokemon }} 的神奇宝贝百科页面"
     },
     "offense": {
       "label": "{{ pokemon }} 为攻击方",

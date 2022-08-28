@@ -3,16 +3,15 @@ import * as path from "path";
 import { uniqBy } from "lodash";
 import { saveJSON } from "./saveJSON";
 
-const BULBA = path.resolve(__dirname, "../data/bulba.json");
-const POKEAPI = path.resolve(__dirname, "../data/pokemon.json");
-const DEST = path.resolve(__dirname, "../public/data-pkmn.json");
+const pokeapiJSON = path.resolve(__dirname, "../data/pokemon.json");
+const destJSON = path.resolve(__dirname, "../public/data-pkmn.json");
 
 function loadJSON(filename: string): any {
   const json = fs.readFileSync(filename, "utf-8");
   return JSON.parse(json);
 }
 
-function pkmnUniqBy(mon: any): string {
+function pkmnUniqBy(mon: Record<string, any>): string {
   return JSON.stringify([
     mon.number,
     mon.hp,
@@ -26,19 +25,9 @@ function pkmnUniqBy(mon: any): string {
 }
 
 async function main() {
-  const bulba = loadJSON(BULBA);
-  const pokeapi = loadJSON(POKEAPI);
-  for (const mon of pokeapi) {
-    const url = bulba[mon.number];
-    if (!url) {
-      throw new Error(
-        `missing Bulbapedia URL for ${mon.name} (#${mon.number})`
-      );
-    }
-    mon.bulbapediaURL = url;
-  }
+  const pokeapi: Record<string, any>[] = loadJSON(pokeapiJSON);
   const uniqMons = uniqBy(pokeapi, pkmnUniqBy);
-  saveJSON(DEST, uniqMons);
+  saveJSON(destJSON, uniqMons, { indent: 0 });
 }
 
 main().catch((err) => {

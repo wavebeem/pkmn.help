@@ -59,8 +59,8 @@
       "help": "Aiuto",
       "helpLong": "Aiuto, cerca Pokédex"
     },
-    "bulbapedia": {
-      "label": "Pagina Bulbapedia di {{ pokemon }}"
+    "wiki": {
+      "label": "Pagina Pokémon Central di {{ pokemon }}"
     },
     "offense": {
       "label": "Offensiva di {{ pokemon }}",

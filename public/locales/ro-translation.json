@@ -65,7 +65,7 @@
       "helpLong": "Ajutor, cauta în Pokedex",
       "notFound": "Nici un Pokémon gasit"
     },
-    "bulbapedia": {
+    "wiki": {
       "label": "Pagina de Bulbapedia pentru {{ pokemon }}"
     },
     "offense": {

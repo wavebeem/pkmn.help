@@ -65,8 +65,8 @@
       "helpLong": "Ayuda, buscar en la Pokédex",
       "notFound": "No se encontró el Pokémon"
     },
-    "bulbapedia": {
-      "label": "Página en Bulbapedia de {{ pokemon }}"
+    "wiki": {
+      "label": "Página en WikiDex de {{ pokemon }}"
     },
     "offense": {
       "label": "Ataque de {{ pokemon }}",

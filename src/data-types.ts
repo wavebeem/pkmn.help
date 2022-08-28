@@ -15,7 +15,6 @@ export interface Pokemon {
   spAttack: number;
   spDefense: number;
   speed: number;
-  bulbapediaURL: string;
 }
 
 export enum Type {

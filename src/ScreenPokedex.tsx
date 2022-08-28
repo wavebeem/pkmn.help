@@ -18,12 +18,55 @@ import { useSearch } from "./useSearch";
 
 const nbsp = "\u00a0";
 
+function getWikiLink(lang: string, pkmn: Pokemon): string {
+  const name = pickTranslation(pkmn.speciesNames, lang);
+  switch (lang) {
+    default:
+    case "en":
+      return `https://bulbapedia.bulbagarden.net/wiki/${name}`;
+    case "de":
+      return `https://www.pokewiki.de/${name}`;
+    case "es":
+      return `https://www.wikidex.net/wiki/${name}`;
+    case "fr":
+      return `https://www.pokepedia.fr/${name}`;
+    case "it":
+      return `https://wiki.pokemoncentral.it/${name}`;
+    case "ja":
+      return `https://wiki.ポケモン.com/wiki/${name}`;
+    case "zh-Hans":
+    case "zh-Hant":
+      return `https://wiki.52poke.com/wiki/${name}`;
+  }
+}
+
+function getWikiName(lang: string): string {
+  switch (lang) {
+    default:
+    case "en":
+      return "Bulbapedia";
+    case "de":
+      return "PokéWiki";
+    case "es":
+      return "WikiDex";
+    case "fr":
+      return "Poképédia";
+    case "it":
+      return "Pokémon Central";
+    case "ja":
+      return "ポケモンWiki";
+    case "zh-Hans":
+    case "zh-Hant":
+      return "神奇宝贝百科";
+  }
+}
+
 interface MonsterProps {
   pokemon: Pokemon;
 }
 
 function Monster({ pokemon }: MonsterProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [language] = useLanguage();
   const displayNumber = formatMonsterNumber(pokemon.number);
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
@@ -68,18 +111,18 @@ function Monster({ pokemon }: MonsterProps) {
           <StatsTable pokemon={pokemon} />
           <div className="flex flex-auto items-end justify-end">
             <a
-              aria-label={t("pokedex.bulbapedia.label", {
-                pokemon: pokemonName,
-              })}
+              title={t("pokedex.wiki.label", { pokemon: pokemonName })}
+              aria-label={t("pokedex.wiki.label", { pokemon: pokemonName })}
               className="br1 underline fg-link OutlineFocus"
-              href={pokemon.bulbapediaURL}
+              href={getWikiLink(i18n.language, pokemon)}
             >
-              Bulbapedia
+              {getWikiName(i18n.language)}
             </a>
             <span aria-hidden="true" className="o-50">
               &nbsp;&bull;&nbsp;
             </span>
             <Link
+              title={t("pokedex.offense.label", { pokemon: pokemonName })}
               aria-label={t("pokedex.offense.label", { pokemon: pokemonName })}
               className="br1 underline fg-link OutlineFocus"
               to={`/offense/?${params}#matchup-offense`}
@@ -90,6 +133,7 @@ function Monster({ pokemon }: MonsterProps) {
               &nbsp;&bull;&nbsp;
             </span>
             <Link
+              title={t("pokedex.defense.label", { pokemon: pokemonName })}
               aria-label={t("pokedex.defense.label", { pokemon: pokemonName })}
               className="br1 underline fg-link OutlineFocus"
               to={`/defense/?${params}#matchup-defense`}
