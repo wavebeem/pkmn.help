@@ -111,9 +111,8 @@ function Monster({ pokemon }: MonsterProps) {
           <StatsTable pokemon={pokemon} />
           <div className="flex flex-auto items-end justify-end">
             <a
-              aria-label={t("pokedex.bulbapedia.label", {
-                pokemon: pokemonName,
-              })}
+              title={t("pokedex.wiki.label", { pokemon: pokemonName })}
+              aria-label={t("pokedex.wiki.label", { pokemon: pokemonName })}
               className="br1 underline fg-link OutlineFocus"
               href={getWikiLink(i18n.language, pokemon)}
             >
@@ -123,6 +122,7 @@ function Monster({ pokemon }: MonsterProps) {
               &nbsp;&bull;&nbsp;
             </span>
             <Link
+              title={t("pokedex.offense.label", { pokemon: pokemonName })}
               aria-label={t("pokedex.offense.label", { pokemon: pokemonName })}
               className="br1 underline fg-link OutlineFocus"
               to={`/offense/?${params}#matchup-offense`}
@@ -133,6 +133,7 @@ function Monster({ pokemon }: MonsterProps) {
               &nbsp;&bull;&nbsp;
             </span>
             <Link
+              title={t("pokedex.defense.label", { pokemon: pokemonName })}
               aria-label={t("pokedex.defense.label", { pokemon: pokemonName })}
               className="br1 underline fg-link OutlineFocus"
               to={`/defense/?${params}#matchup-defense`}

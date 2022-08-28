@@ -65,8 +65,8 @@
       "helpLong": "Aide, recherche Pokédex",
       "notFound": "Aucun pokémon trouvé"
     },
-    "bulbapedia": {
-      "label": "Page Bulbapédia pour {{ pokemon }}"
+    "wiki": {
+      "label": "Page Poképédia pour {{ pokemon }}"
     },
     "offense": {
       "label": "Couverture offensive pour {{ pokemon }}",
