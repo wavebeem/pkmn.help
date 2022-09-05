@@ -92,8 +92,12 @@ function Matchups({
   return (
     <div className="tc" id={`matchup-${kind}`}>
       {kind === "offense" && generation === "default" && (
-        <div>
-          <h2 className="f5 mt3 mb0">{t("offense.coverage.heading")}</h2>
+        <details className="mt3 mb0" open>
+          <summary className="br2 pointer select-none OutlineFocus">
+            <h2 className="f5 ma0 di clickable">
+              {t("offense.coverage.heading")}
+            </h2>
+          </summary>
           <div className="pt2">
             <Link
               to="/offense/coverage/"
@@ -116,7 +120,7 @@ function Matchups({
               isLoading={isLoading}
             />
           </div>
-        </div>
+        </details>
       )}
       {effectivenessLevels.map((eff) => {
         return (

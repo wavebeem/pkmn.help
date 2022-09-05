@@ -192,7 +192,7 @@ export default function App() {
           <Switch>
             <Route
               exact
-              path="/offense/weakness-list/"
+              path="/offense/coverage/weakness/"
               render={() => (
                 <ScreenCoverageList
                   type="weakness"
@@ -203,7 +203,7 @@ export default function App() {
             />
             <Route
               exact
-              path="/offense/resistance-list/"
+              path="/offense/coverage/resistance/"
               render={() => (
                 <ScreenCoverageList
                   type="resistance"

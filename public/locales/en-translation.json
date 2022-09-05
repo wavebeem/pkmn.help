@@ -14,6 +14,7 @@
       "resistance": "resist all"
     },
     "coverageList": {
+      "empty": "No Pokémon found or no types selected",
       "weakness": {
         "heading": "Weakness Coverage List",
         "description": "These Pokémon are weak to at least one of the selected types."
@@ -160,7 +161,7 @@
         }
       },
       "typeCount": {
-        "label": "Number of types",
+        "label": "Number of Types",
         "help": "Pokémon can briefly have three types at once if hit with Forests's Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.",
         "values": {
           "2": "Two types (2)",

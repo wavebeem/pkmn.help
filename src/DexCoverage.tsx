@@ -36,7 +36,7 @@ function DexCoverage({
   }
   const typeParams = new URLSearchParams({ types: types.join(" ") });
   return (
-    <div className="pt1 tabular-nums flex flex-column lh-copy">
+    <div className="pt2 tabular-nums flex flex-column lh-copy">
       <PercentBar value={weakToAny.length} max={total} />
       <div className="flex items-center">
         {isLoading ? (
@@ -45,7 +45,7 @@ function DexCoverage({
           <>
             <div>{getPercent(weakToAny.length)}%&nbsp;</div>
             <Link
-              to={`/offense/weakness-list/?${typeParams}`}
+              to={`/offense/coverage/weakness/?${typeParams}`}
               className="underline fg-link br1 OutlineFocus"
             >
               {t("offense.coverage.weakness")}
@@ -63,7 +63,7 @@ function DexCoverage({
           <>
             <div>{getPercent(resistAll.length)}%&nbsp;</div>
             <Link
-              to={`/offense/resistance-list/?${typeParams}`}
+              to={`/offense/coverage/resistance/?${typeParams}`}
               className="underline fg-link br1 OutlineFocus"
             >
               {t("offense.coverage.resistance")}

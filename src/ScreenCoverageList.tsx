@@ -70,7 +70,7 @@ export default function ScreenCoverageList({
       <hr className="subtle-hr mt4" />
       <Paginator
         urlForPage={(number) => {
-          const path = "/offense/weakness-list/";
+          const path = `/offense/coverage/${type}/`;
           const params = new URLSearchParams({ types: types.join(" ") });
           if (number > 0) {
             params.set("page", String(number + 1));
@@ -80,7 +80,7 @@ export default function ScreenCoverageList({
         currentPage={page}
         pageSize={20}
         emptyState={
-          <p className="fg4 f4 b tc m0">{t("offense.weaknessNotFound")}</p>
+          <p className="fg4 f4 b tc m0">{t("offense.coverageList.empty")}</p>
         }
         items={items}
         renderPage={(items) => {
