@@ -10,10 +10,6 @@
     "chooseTypes": "Alege tipuri",
     "dealsXTo": "Oferte {{ x }} spre"
   },
-  "coverageList": {
-    "heading": "Lista acoperire slabiciuni",
-    "description": "Tipurile astea de Pokémon sunt slabe la macar unul din urmatoarele tipuri:"
-  },
   "coverage": {
     "heading": "Acoperire slabiciuni",
     "paragraph1": "Importa/exporta fișiere personalizate Pokédex CSV sa vezi acoperirea de slabiciuni pentru diferiti Pokémon. Creaza un fișier CSV cu doar OU nlivelul Pokémon, sau creaza propriul Pokémon.",

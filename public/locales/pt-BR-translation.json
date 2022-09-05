@@ -10,10 +10,6 @@
     "chooseTypes": "Escolher Tipos",
     "dealsXTo": "Causa {{ x }} mais dano contra"
   },
-  "coverageList": {
-    "heading": "Lista de Cobertura a Fraquezas",
-    "description": "Essas formas Pokémon são fracas a pelo menos um dos seguintes tipos:"
-  },
   "coverage": {
     "heading": "Cobertura a Fraquezas",
     "paragraph1": "Importar/exportar arquivos CSV costumizados da Pokédex para ver cobertura de tipos para diferentes Pokémon. Crie um arquivo CSV customizado com só Pokémon de categoria OU ou até criar seu próprio Pokémon do zero!",

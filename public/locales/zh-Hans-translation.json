@@ -10,10 +10,6 @@
     "chooseTypes": "选择属性",
     "dealsXTo": "产生 {{ x }} 伤害"
   },
-  "coverageList": {
-    "heading": "弱点覆盖范围列表",
-    "description": "以下至少一种属性对这些宝可梦有加倍伤害："
-  },
   "coverage": {
     "heading": "弱点覆盖范围",
     "paragraph1": "导入或导出定制的图鉴CSV文件以参考不同宝可梦的弱点覆盖范围。你可制作只有OU阶级宝可梦的特制CSV文件，或是甚至从零制作你自己的宝可梦。",

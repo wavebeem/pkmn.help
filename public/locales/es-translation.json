@@ -10,10 +10,6 @@
     "chooseTypes": "Elige los tipos",
     "dealsXTo": "Inflige {{ x }} a"
   },
-  "coverageList": {
-    "heading": "Lista de efectividad",
-    "description": "Estas formas de Pokémon son débiles al menos a uno de los siguientes tipos:"
-  },
   "coverage": {
     "heading": "Rango de efectividad",
     "paragraph1": "Importa/exporta un archivo CSV con una Pokédex personalizada para ver el rango de efectividad de distintos Pokémon. Crea un archivo CSV personalizado con solo los Pokémon de la tier OverUsed (OU), o incluso crea tus propios Pokémon desde cero.",

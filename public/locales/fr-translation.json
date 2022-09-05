@@ -10,10 +10,6 @@
     "chooseTypes": "Choisissez les types",
     "dealsXTo": "Inflige {{ x }} à"
   },
-  "coverageList": {
-    "heading": "Liste de couverture de faiblesses",
-    "description": "Ces Pokémon sont faibles à au moins l'un de ces types suivants:"
-  },
   "coverage": {
     "heading": "Couverture de faiblesses",
     "paragraph1": "Importez/exportez des fichiers CSV Pokédex personnalisés pour voir la couverture des faiblesses pour différents Pokémons. Créeez un fichier CSV personnalisé avec juste le tier Pokémon OU, ou créez votre pokémon depuis zéro.",
