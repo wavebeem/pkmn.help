@@ -13,12 +13,12 @@
       "weakAny": "weak",
       "resistAll": "resist"
     },
+    "coverageList": {
+      "weak": "Weakness Coverage List",
+      "resist": "Resistance Coverage List"
+    },
     "chooseTypes": "Choose Types",
     "dealsXTo": "Deals {{ x }} to"
-  },
-  "coverageList": {
-    "heading": "Weakness Coverage List",
-    "description": "These Pokémon forms are weak to at least one of the following types:"
   },
   "coverage": {
     "heading": "Weakness Coverage",

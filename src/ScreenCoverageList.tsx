@@ -10,29 +10,46 @@ import { MonsterType } from "./MonsterType";
 import Paginator from "./Paginator";
 import { useSearch } from "./useSearch";
 
-interface WeaknessListProps {
+interface CoverageListProps {
+  type: "weakness" | "resistance";
   generation: Generation;
   coverageTypes: CoverageType[];
 }
 
-export default function ScreenWeaknessList({
+export default function ScreenCoverageList({
+  type,
   generation,
   coverageTypes,
-}: WeaknessListProps) {
+}: CoverageListProps) {
   const { t } = useTranslation();
+  const headingKey =
+    type === "weakness"
+      ? "offense.coverageList.weak"
+      : "offense.coverageList.resist";
   const search = useSearch();
   const page = Number(search.get("page") || 1) - 1;
   const types = typesFromString(search.get("types") || "");
-  const weak = coverageTypes.filter((ct) => {
-    const matchups = types.map((t) => matchupFor(generation, ct.types, t));
-    return matchups.some((effectiveness) => {
-      return effectiveness > 1;
-    });
-  });
+
+  function weaknessFilter(ct: CoverageType): boolean {
+    return types
+      .map((t) => matchupFor(generation, ct.types, t))
+      .some((x) => x > 1);
+  }
+
+  function resistanceFilter(ct: CoverageType): boolean {
+    return types
+      .map((t) => matchupFor(generation, ct.types, t))
+      .every((x) => x < 1);
+  }
+
+  const coverageFilter =
+    type === "weakness" ? weaknessFilter : resistanceFilter;
+  console.log({ type, coverageFilter });
+  const items = coverageTypes.filter(coverageFilter);
   const offenseParams = new URLSearchParams({ types: types.join(" ") });
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f5">{t("coverageList.heading")}</h2>
+      <h2 className="lh-title f5">{t(headingKey)}</h2>
       <p className="flex gap1 items-center">
         <IconArrowLeft className="w1 h1" aria-hidden="true" />
         <Link
@@ -44,7 +61,7 @@ export default function ScreenWeaknessList({
       </p>
       {types.length > 0 && (
         <>
-          <p>{t("coverageList.description")}</p>
+          {/* <p>{t("coverageList.description")}</p> */}
           <div className="flex flex-wrap gap2">
             {types.map((t) => (
               <MonsterType key={t} type={t} />
@@ -67,7 +84,7 @@ export default function ScreenWeaknessList({
         emptyState={
           <p className="fg4 f4 b tc m0">{t("offense.weaknessNotFound")}</p>
         }
-        items={weak}
+        items={items}
         renderPage={(items) => {
           return (
             <ul className="list pa0 border3 bt">
@@ -96,7 +113,7 @@ export default function ScreenWeaknessList({
         }}
       />
       <hr className="subtle-hr mb4" />
-      {weak.length > 0 && (
+      {items.length > 0 && (
         <p className="flex gap1 items-center">
           <IconArrowLeft className="w1 h1" aria-hidden="true" />
           <Link

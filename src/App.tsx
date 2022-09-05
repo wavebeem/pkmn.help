@@ -15,7 +15,7 @@ import ScreenOffense from "./ScreenOffense";
 import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
-import ScreenWeaknessList from "./ScreenWeaknessList";
+import ScreenCoverageList from "./ScreenCoverageList";
 import { PUBLIC_PATH } from "./settings";
 import { useFetchJSON } from "./useFetchJSON";
 import { useGeneration } from "./useGeneration";
@@ -194,7 +194,19 @@ export default function App() {
               exact
               path="/offense/weakness-list/"
               render={() => (
-                <ScreenWeaknessList
+                <ScreenCoverageList
+                  type="weakness"
+                  generation={generation}
+                  coverageTypes={coverageTypes}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/offense/resistance-list/"
+              render={() => (
+                <ScreenCoverageList
+                  type="resistance"
                   generation={generation}
                   coverageTypes={coverageTypes}
                 />

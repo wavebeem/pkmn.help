@@ -32,7 +32,7 @@ function DexCoverage({
   });
   const total = coverageTypes.length;
   function getPercent(count: number): string {
-    return ((count / total || 0) * 100).toFixed(0);
+    return ((count / total || 0) * 100).toFixed(1);
   }
   const typeParams = new URLSearchParams({ types: types.join(" ") });
   return (
