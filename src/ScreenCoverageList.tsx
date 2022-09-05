@@ -22,10 +22,6 @@ export default function ScreenCoverageList({
   coverageTypes,
 }: CoverageListProps) {
   const { t } = useTranslation();
-  const headingKey =
-    type === "weakness"
-      ? "offense.coverageList.weak"
-      : "offense.coverageList.resist";
   const search = useSearch();
   const page = Number(search.get("page") || 1) - 1;
   const types = typesFromString(search.get("types") || "");
@@ -49,7 +45,9 @@ export default function ScreenCoverageList({
   const offenseParams = new URLSearchParams({ types: types.join(" ") });
   return (
     <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f5">{t(headingKey)}</h2>
+      <h2 className="lh-title f5">
+        {t(`offense.coverageList.${type}.heading`)}
+      </h2>
       <p className="flex gap1 items-center">
         <IconArrowLeft className="w1 h1" aria-hidden="true" />
         <Link
@@ -61,7 +59,7 @@ export default function ScreenCoverageList({
       </p>
       {types.length > 0 && (
         <>
-          {/* <p>{t("coverageList.description")}</p> */}
+          <p>{t(`offense.coverageList.${type}.description`)}</p>
           <div className="flex flex-wrap gap2">
             {types.map((t) => (
               <MonsterType key={t} type={t} />

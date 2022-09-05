@@ -48,7 +48,7 @@ function DexCoverage({
               to={`/offense/weakness-list/?${typeParams}`}
               className="underline fg-link br1 OutlineFocus"
             >
-              {t("offense.coverage.weakAny")}
+              {t("offense.coverage.weakness")}
             </Link>
             <div className="flex-auto tr ml2">({weakToAny.length})</div>
           </>
@@ -66,7 +66,7 @@ function DexCoverage({
               to={`/offense/resistance-list/?${typeParams}`}
               className="underline fg-link br1 OutlineFocus"
             >
-              {t("offense.coverage.resistAll")}
+              {t("offense.coverage.resistance")}
             </Link>
             <div className="flex-auto tr ml2">({resistAll.length})</div>
           </>
