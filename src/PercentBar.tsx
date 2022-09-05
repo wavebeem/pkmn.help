@@ -6,11 +6,16 @@ export interface PercentBarProps {
 }
 
 export function PercentBar({ value, max }: PercentBarProps) {
+  const percent = (value / max) * 100;
   return (
-    <div className="flex h1 w-100 Bar-Container">
+    <div
+      className="flex h1 w-100 Bar-Container"
+      role="progressbar"
+      aria-valuenow={percent}
+    >
       <div
         style={{
-          width: (value / max) * 100 + "%",
+          width: `${percent}%`,
           background: "var(--color-fg3)",
         }}
         className="Bar-Fill"
@@ -18,4 +23,3 @@ export function PercentBar({ value, max }: PercentBarProps) {
     </div>
   );
 }
-

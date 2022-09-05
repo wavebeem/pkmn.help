@@ -93,23 +93,19 @@ function Matchups({
     <div className="tc" id={`matchup-${kind}`}>
       {kind === "offense" && generation === "default" && (
         <div>
-          <h2 className="f5 mt3 mb0">
-            {t("offense.weaknessCoverage")}{" "}
-            <span className="normal">
-              (
-              <Link
-                to="/offense/coverage/"
-                className="underline fg-link br1 OutlineFocus"
-                aria-label={t("offense.weaknessCoverageEditLong")}
-              >
-                {t("offense.weaknessCoverageEdit")}
-              </Link>
-              )
-            </span>
-          </h2>
+          <h2 className="f5 mt3 mb0">{t("offense.coverage.heading")}</h2>
+          <div className="pt2">
+            <Link
+              to="/offense/coverage/"
+              className="underline fg-link br1 OutlineFocus"
+            >
+              {t("offense.coverage.edit")}
+            </Link>{" "}
+            ({coverageTypes?.length ?? 0})
+          </div>
           <div
             className={classNames(
-              "pt1 mw5 center tc",
+              "pt2 mw5 center tc",
               isLoading && ["o-30 no-pointer cursor-na"]
             )}
           >

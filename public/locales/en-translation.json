@@ -7,12 +7,13 @@
     "more": "More"
   },
   "offense": {
+    "coverage": {
+      "heading": "Pokédex Coverage",
+      "edit": "Edit list",
+      "weakAny": "weak",
+      "resistAll": "resist"
+    },
     "chooseTypes": "Choose Types",
-    "weaknessCoverage": "Weakness Coverage",
-    "weaknessCoverageEdit": "Edit",
-    "weaknessCoverageEditLong": "Edit weakness coverage",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>forms</formslink>",
-    "weaknessNotFound": "No Pokémon forms with weakness found",
     "dealsXTo": "Deals {{ x }} to"
   },
   "coverageList": {

@@ -20,40 +20,55 @@ function DexCoverage({
   isLoading,
 }: DexCoverageProps) {
   const { t } = useTranslation();
-  const weak = coverageTypes.filter((ct) => {
-    const matchups = types.map((t) => matchupFor(generation, ct.types, t));
-    return matchups.some((effectiveness) => {
-      return effectiveness > 1;
-    });
+  const weakToAny = coverageTypes.filter((ct) => {
+    return types
+      .map((t) => matchupFor(generation, ct.types, t))
+      .some((x) => x > 1);
   });
-  const count = weak.length;
+  const resistAll = coverageTypes.filter((ct) => {
+    return types
+      .map((t) => matchupFor(generation, ct.types, t))
+      .every((x) => x < 1);
+  });
   const total = coverageTypes.length;
-  const ratio = count / total || 0;
-  const percent = (ratio * 100).toFixed(0);
-  const weaknessListParams = new URLSearchParams({ types: types.join(" ") });
+  function getPercent(count: number): string {
+    return ((count / total || 0) * 100).toFixed(0);
+  }
+  const typeParams = new URLSearchParams({ types: types.join(" ") });
   return (
     <div className="pt1 tabular-nums flex flex-column lh-copy">
-      <PercentBar value={count} max={total} />
+      <PercentBar value={weakToAny.length} max={total} />
       <div className="flex items-center">
         {isLoading ? (
           <div className="flex-auto tc">{t("general.loading")}</div>
         ) : (
           <>
-            <div className="tl mr2 w3">{percent}%</div>
-            <div className="flex-auto tr">
-              <Trans
-                i18nKey="offense.weaknessCoverageForms"
-                values={{ count, total }}
-                components={{
-                  formslink: (
-                    <Link
-                      className="br1 underline fg-link OutlineFocus"
-                      to={`/offense/weakness-list/?${weaknessListParams}`}
-                    />
-                  ),
-                }}
-              />
-            </div>
+            <div>{getPercent(weakToAny.length)}%&nbsp;</div>
+            <Link
+              to={`/offense/weakness-list/?${typeParams}`}
+              className="underline fg-link br1 OutlineFocus"
+            >
+              {t("offense.coverage.weakAny")}
+            </Link>
+            <div className="flex-auto tr ml2">({weakToAny.length})</div>
+          </>
+        )}
+      </div>
+      <div className="pt2" />
+      <PercentBar value={resistAll.length} max={total} />
+      <div className="flex items-center">
+        {isLoading ? (
+          <div className="flex-auto tc">{t("general.loading")}</div>
+        ) : (
+          <>
+            <div>{getPercent(resistAll.length)}%&nbsp;</div>
+            <Link
+              to={`/offense/resistance-list/?${typeParams}`}
+              className="underline fg-link br1 OutlineFocus"
+            >
+              {t("offense.coverage.resistAll")}
+            </Link>
+            <div className="flex-auto tr ml2">({resistAll.length})</div>
           </>
         )}
       </div>
