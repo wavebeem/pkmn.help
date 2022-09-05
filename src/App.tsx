@@ -9,13 +9,13 @@ import { CoverageType, Pokemon } from "./data-types";
 import { detectLanguage } from "./detectLanguage";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
+import ScreenCoverageList from "./ScreenCoverageList";
 import ScreenDefense from "./ScreenDefense";
 import ScreenMore from "./ScreenMore";
 import ScreenOffense from "./ScreenOffense";
 import ScreenPokedex from "./ScreenPokedex";
 import ScreenPokedexHelp from "./ScreenPokedexHelp";
 import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
-import ScreenCoverageList from "./ScreenCoverageList";
 import { PUBLIC_PATH } from "./settings";
 import { useFetchJSON } from "./useFetchJSON";
 import { useGeneration } from "./useGeneration";
@@ -231,7 +231,6 @@ export default function App() {
                 <ScreenOffense
                   generation={generation}
                   coverageTypes={coverageTypes}
-                  setCoverageTypes={setCoverageTypes}
                   setOffenseParams={setOffenseParams}
                   fallbackCoverageTypes={fallbackCoverageTypes}
                   isLoading={isLoading}
@@ -245,7 +244,6 @@ export default function App() {
                 <ScreenDefense
                   generation={generation}
                   setDefenseParams={setDefenseParams}
-                  fallbackCoverageTypes={fallbackCoverageTypes}
                 />
               )}
             />
