@@ -8,7 +8,24 @@
   },
   "offense": {
     "chooseTypes": "Choisissez les types",
-    "dealsXTo": "Inflige {{ x }} à"
+    "dealsXTo": "Inflige {{ x }} à",
+    "coverage": {
+      "heading": "Couverture du Pokédex",
+      "edit": "Modifier la liste",
+      "weakness": "Faible",
+      "resistance": "Résiste"
+    },
+    "coverageList": {
+      "empty": "Aucun Pokémon trouvé ou aucun type séléctionné",
+      "weakness": {
+        "heading": "Liste des Pokémon qui te sont faible",
+        "description": "Ces Pokémon sont faibles à au moins l'un des deux types séléctionnés."
+      },
+      "resistance": {
+        "heading": "Liste des Pokémon qui te résiste",
+        "description": "Ces Pokémon résistent aux deux types séléctionnés."
+      }
+    }
   },
   "coverage": {
     "heading": "Couverture de faiblesses",

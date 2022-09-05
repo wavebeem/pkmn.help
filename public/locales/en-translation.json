@@ -7,11 +7,13 @@
     "more": "More"
   },
   "offense": {
+    "chooseTypes": "Choose Types",
+    "dealsXTo": "Deals {{ x }} to",
     "coverage": {
       "heading": "Pokédex Coverage",
       "edit": "Edit list",
-      "weakness": "weak to any",
-      "resistance": "resist all"
+      "weakness": "Weak",
+      "resistance": "Resist"
     },
     "coverageList": {
       "empty": "No Pokémon found or no types selected",
@@ -23,9 +25,7 @@
         "heading": "Resistance Coverage List",
         "description": "These Pokémon are resistant to all of the selected types."
       }
-    },
-    "chooseTypes": "Choose Types",
-    "dealsXTo": "Deals {{ x }} to"
+    }
   },
   "coverage": {
     "heading": "Pokédex Coverage",
