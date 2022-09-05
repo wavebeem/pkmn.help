@@ -8,6 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Alege tipuri",
+    "weaknessNotFound": "Nici un Pokémon cu slabiciuni găsit",
     "dealsXTo": "Oferte {{ x }} spre"
   },
   "coverageList": {

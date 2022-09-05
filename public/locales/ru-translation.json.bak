@@ -8,6 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Выберите Типы",
+    "weaknessNotFound": "Не было найдено форм Покемонов со слабостью",
     "dealsXTo": "Наносит {{ x }}"
   },
   "coverageList": {

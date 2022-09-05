@@ -8,6 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Escolher Tipos",
+    "weaknessNotFound": "Nenhuma forma Pokémon com fraqueza encontrada",
     "dealsXTo": "Causa {{ x }} mais dano contra"
   },
   "coverageList": {

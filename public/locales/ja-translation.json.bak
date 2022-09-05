@@ -8,6 +8,7 @@
   },
   "offense": {
     "chooseTypes": "複数のタイプを選択",
+    "weaknessNotFound": "弱点を持ったポケモンのすがたが見つかりませんでした",
     "dealsXTo": "{{ x }}を与える"
   },
   "coverageList": {

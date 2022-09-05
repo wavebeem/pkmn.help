@@ -8,6 +8,7 @@
   },
   "offense": {
     "chooseTypes": "选择属性",
+    "weaknessNotFound": "未能找到符合弱点的宝可梦",
     "dealsXTo": "产生 {{ x }} 伤害"
   },
   "coverageList": {

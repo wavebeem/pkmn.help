@@ -8,6 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Elige los tipos",
+    "weaknessNotFound": "No se encontraron formas de Pokémon débiles a los tipos seleccionados",
     "dealsXTo": "Inflige {{ x }} a"
   },
   "coverageList": {

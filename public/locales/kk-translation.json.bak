@@ -8,6 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Типтер Таңдау",
+    "weaknessNotFound": "Әлсіздігі бар бірде-бір Покемон табылмады",
     "dealsXTo": "{{ x }} келтіреді"
   },
   "coverageList": {
