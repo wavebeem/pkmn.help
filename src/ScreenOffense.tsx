@@ -10,14 +10,13 @@ import {
   typesFromString,
 } from "./data-types";
 import DexCoverage from "./DexCoverage";
-import * as Matchups from "./Matchups";
+import { Matchups } from "./Matchups";
 import MultiTypeSelector from "./MultiTypeSelector";
 import { useSearch } from "./useSearch";
 
 interface OffenseProps {
   generation: Generation;
   coverageTypes?: CoverageType[];
-  setCoverageTypes: (types: CoverageType[]) => void;
   setOffenseParams: (params: string) => void;
   fallbackCoverageTypes: CoverageType[];
   isLoading: boolean;
@@ -26,7 +25,6 @@ interface OffenseProps {
 export default function ScreenOffense({
   generation,
   coverageTypes,
-  setCoverageTypes,
   setOffenseParams,
   fallbackCoverageTypes,
   isLoading,
@@ -101,14 +99,7 @@ export default function ScreenOffense({
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
-        <Matchups.Offense
-          generation={generation}
-          coverageTypes={coverageTypes}
-          setCoverageTypes={setCoverageTypes}
-          types={offenseTypes}
-          fallbackCoverageTypes={fallbackCoverageTypes}
-          isLoading={isLoading}
-        />
+        <Matchups kind="offense" generation={generation} types={offenseTypes} />
       </div>
     </main>
   );

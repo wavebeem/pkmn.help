@@ -3,13 +3,12 @@ import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import { Generation } from "./data-generations";
 import {
-  CoverageType,
   removeInvalidDefenseTypesForGeneration,
   removeNones,
   Type,
   typesFromString,
 } from "./data-types";
-import * as Matchups from "./Matchups";
+import { Matchups } from "./Matchups";
 import TypeSelector from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
@@ -19,13 +18,11 @@ import { useTypeCount } from "./useTypeCount";
 interface DefenseProps {
   generation: Generation;
   setDefenseParams: (params: string) => void;
-  fallbackCoverageTypes: CoverageType[];
 }
 
 export default function ScreenDefense({
   generation,
   setDefenseParams,
-  fallbackCoverageTypes,
 }: DefenseProps) {
   useScrollToFragment();
 
@@ -109,11 +106,7 @@ export default function ScreenDefense({
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
-        <Matchups.Defense
-          generation={generation}
-          types={types}
-          fallbackCoverageTypes={fallbackCoverageTypes}
-        />
+        <Matchups kind="defense" generation={generation} types={types} />
       </div>
     </main>
   );

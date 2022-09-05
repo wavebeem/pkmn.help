@@ -1,16 +1,10 @@
 import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
-import {
-  defensiveMatchups,
-  GroupedMatchups,
-  offensiveMatchups,
-} from "./data-matchups";
 import { Generation } from "./data-generations";
-import { CoverageType, Type } from "./data-types";
-import DexCoverage from "./DexCoverage";
+import { defensiveMatchups, offensiveMatchups } from "./data-matchups";
+import { Type } from "./data-types";
 
 interface BadgeProps {
   type: Type;
@@ -69,11 +63,20 @@ function Section({ title, types }: SectionProps) {
 
 interface MatchupsProps {
   kind: "offense" | "defense";
-  formatTitle: (value: string) => string;
-  matchups: GroupedMatchups;
+  generation: Generation;
+  types: Type[];
 }
 
-function Matchups({ kind, formatTitle, matchups }: MatchupsProps) {
+export function Matchups({ kind, generation, types }: MatchupsProps) {
+  const { t } = useTranslation();
+  const formatTitle: (x: string) => string =
+    kind === "offense"
+      ? (x) => t("offense.dealsXTo", { x })
+      : (x) => t("defense.takesXFrom", { x });
+  const matchups =
+    kind === "offense"
+      ? offensiveMatchups(generation, types)
+      : defensiveMatchups(generation, types);
   return (
     <div className="tc" id={`matchup-${kind}`}>
       {effectivenessLevels.map((eff) => {
@@ -101,35 +104,3 @@ const displayEffectiveness = {
   [1 / 8]: "⅛×",
   [0]: "0×",
 };
-
-export interface DefenseProps {
-  generation: Generation;
-  types: Type[];
-}
-
-export function Defense({ generation, types }: DefenseProps) {
-  const { t } = useTranslation();
-  return (
-    <Matchups
-      kind="defense"
-      formatTitle={(x) => t("defense.takesXFrom", { x })}
-      matchups={defensiveMatchups(generation, types)}
-    />
-  );
-}
-
-export interface OffenseProps {
-  generation: Generation;
-  types: Type[];
-}
-
-export function Offense({ generation, types }: OffenseProps) {
-  const { t } = useTranslation();
-  return (
-    <Matchups
-      kind="offense"
-      formatTitle={(x) => t("offense.dealsXTo", { x })}
-      matchups={offensiveMatchups(generation, types)}
-    />
-  );
-}
