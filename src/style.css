@@ -144,12 +144,6 @@
   fill: currentColor;
 }
 
-summary:hover > .clickable,
-.clickable:hover {
-  cursor: pointer;
-  text-decoration: underline;
-}
-
 .cursor-na {
   cursor: not-allowed;
 }

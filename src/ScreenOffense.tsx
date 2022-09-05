@@ -68,13 +68,10 @@ export default function ScreenOffense({
           value={offenseTypes}
           onChange={updateOffenseTypes}
         />
+        <hr className="dn-ns subtle-hr mv4" />
         {generation === "default" && (
-          <details className="mt4 mb0" open>
-            <summary className="br2 pointer select-none OutlineFocus">
-              <h2 className="f5 ma0 di clickable">
-                {t("offense.coverage.heading")}
-              </h2>
-            </summary>
+          <div className="mt4 mb0">
+            <h2 className="f5 ma0">{t("offense.coverage.heading")}</h2>
             <div className="pt2">
               <Link
                 to="/offense/coverage/"
@@ -94,7 +91,7 @@ export default function ScreenOffense({
                 isLoading={isLoading}
               />
             </div>
-          </details>
+          </div>
         )}
       </div>
       <div className="dib w-50-ns w-100 v-top pl5-ns">
