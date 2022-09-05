@@ -1,6 +1,7 @@
+import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { Generation } from "./data-generations";
 import {
   CoverageType,
@@ -8,14 +9,14 @@ import {
   Type,
   typesFromString,
 } from "./data-types";
-import * as Matchups from "./Matchups";
+import DexCoverage from "./DexCoverage";
+import { Matchups } from "./Matchups";
 import MultiTypeSelector from "./MultiTypeSelector";
 import { useSearch } from "./useSearch";
 
 interface OffenseProps {
   generation: Generation;
   coverageTypes?: CoverageType[];
-  setCoverageTypes: (types: CoverageType[]) => void;
   setOffenseParams: (params: string) => void;
   fallbackCoverageTypes: CoverageType[];
   isLoading: boolean;
@@ -24,7 +25,6 @@ interface OffenseProps {
 export default function ScreenOffense({
   generation,
   coverageTypes,
-  setCoverageTypes,
   setOffenseParams,
   fallbackCoverageTypes,
   isLoading,
@@ -58,7 +58,7 @@ export default function ScreenOffense({
     setOffenseParams(params);
   }, [params, setOffenseParams]);
 
-  const classH2 = "tc f5 mb2 mt4";
+  const classH2 = "f5 mb2 mt4";
   return (
     <main className="ph3 pt0 pb4 content-wide center">
       <div className="dib w-50-ns w-100 v-top">
@@ -68,17 +68,35 @@ export default function ScreenOffense({
           value={offenseTypes}
           onChange={updateOffenseTypes}
         />
-      </div>
-      <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />
-        <Matchups.Offense
-          generation={generation}
-          coverageTypes={coverageTypes}
-          setCoverageTypes={setCoverageTypes}
-          types={offenseTypes}
-          fallbackCoverageTypes={fallbackCoverageTypes}
-          isLoading={isLoading}
-        />
+        {generation === "default" && (
+          <div className="mt4 mb0">
+            <h2 className="f5 ma0">{t("offense.coverage.heading")}</h2>
+            <div className="pt2">
+              <Link
+                to="/offense/coverage/"
+                className="underline fg-link br1 OutlineFocus"
+              >
+                {t("offense.coverage.edit")}
+              </Link>{" "}
+              ({coverageTypes?.length ?? 0})
+            </div>
+            <div
+              className={classNames(isLoading && ["o-30 no-pointer cursor-na"])}
+            >
+              <DexCoverage
+                generation={generation}
+                coverageTypes={coverageTypes ?? fallbackCoverageTypes}
+                types={offenseTypes}
+                isLoading={isLoading}
+              />
+            </div>
+          </div>
+        )}
+      </div>
+      <div className="dib w-50-ns w-100 v-top pl5-ns">
+        <hr className="dn-ns subtle-hr mv4" />
+        <Matchups kind="offense" generation={generation} types={offenseTypes} />
       </div>
     </main>
   );

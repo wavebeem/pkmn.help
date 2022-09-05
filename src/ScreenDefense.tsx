@@ -3,13 +3,12 @@ import { useTranslation } from "react-i18next";
 import { useHistory } from "react-router-dom";
 import { Generation } from "./data-generations";
 import {
-  CoverageType,
   removeInvalidDefenseTypesForGeneration,
   removeNones,
   Type,
   typesFromString,
 } from "./data-types";
-import * as Matchups from "./Matchups";
+import { Matchups } from "./Matchups";
 import TypeSelector from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
@@ -19,13 +18,11 @@ import { useTypeCount } from "./useTypeCount";
 interface DefenseProps {
   generation: Generation;
   setDefenseParams: (params: string) => void;
-  fallbackCoverageTypes: CoverageType[];
 }
 
 export default function ScreenDefense({
   generation,
   setDefenseParams,
-  fallbackCoverageTypes,
 }: DefenseProps) {
   useScrollToFragment();
 
@@ -71,7 +68,7 @@ export default function ScreenDefense({
     setDefenseParams(params);
   }, [params, setDefenseParams]);
 
-  const classH2 = "tc f5 mb2 mt4";
+  const classH2 = "f5 mb2 mt4";
   return (
     <main className="ph3 pt0 pb4 content-wide center">
       <div className="dib w-50-ns w-100 v-top">
@@ -107,13 +104,9 @@ export default function ScreenDefense({
           </>
         )}
       </div>
-      <div className="dib w-50-ns w-100 v-top pl3-ns">
+      <div className="dib w-50-ns w-100 v-top pl5-ns">
         <hr className="dn-ns subtle-hr mv4" />
-        <Matchups.Defense
-          generation={generation}
-          types={types}
-          fallbackCoverageTypes={fallbackCoverageTypes}
-        />
+        <Matchups kind="defense" generation={generation} types={types} />
       </div>
     </main>
   );

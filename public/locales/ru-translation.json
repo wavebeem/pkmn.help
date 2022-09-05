@@ -8,16 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Выберите Типы",
-    "weaknessCoverage": "Охват Слабостей",
-    "weaknessCoverageEdit": "Редактировать",
-    "weaknessCoverageEditLong": "Редактировать Охват Слабостей",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>Форм</formslink>",
-    "weaknessNotFound": "Не было найдено форм Покемонов со слабостью",
     "dealsXTo": "Наносит {{ x }}"
-  },
-  "coverageList": {
-    "heading": "Лист Охвата Слабостей",
-    "description": "Эти формы Покемонов слабы хотя бы одному из перечисленных типов:"
   },
   "coverage": {
     "heading": "Охват Слабостей",

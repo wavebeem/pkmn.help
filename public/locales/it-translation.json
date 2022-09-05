@@ -8,10 +8,6 @@
   },
   "offense": {
     "chooseTypes": "Scegli i Tipi",
-    "weaknessCoverage": "Copertura Debolezze",
-    "weaknessCoverageEdit": "Modifica",
-    "weaknessCoverageEditLong": "Modifica la Copertura Debolezze",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>forme</formslink>",
     "dealsXTo": "Infligge {{ x }} a"
   },
   "coverage": {

@@ -8,16 +8,7 @@
   },
   "offense": {
     "chooseTypes": "複数のタイプを選択",
-    "weaknessCoverage": "弱点のカバー範囲",
-    "weaknessCoverageEdit": "編集",
-    "weaknessCoverageEditLong": "弱点のカバー範囲を編集",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>すがた</formslink>",
-    "weaknessNotFound": "弱点を持ったポケモンのすがたが見つかりませんでした",
     "dealsXTo": "{{ x }}を与える"
-  },
-  "coverageList": {
-    "heading": "弱点のカバー範囲リスト",
-    "description": "これらのポケモンのすがたは次のいずれかのタイプに弱い:"
   },
   "coverage": {
     "heading": "弱点のカバー範囲",

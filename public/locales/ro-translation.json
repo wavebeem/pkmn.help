@@ -8,16 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Alege tipuri",
-    "weaknessCoverage": "Acoperire slabiciuni",
-    "weaknessCoverageEdit": "Editeaza",
-    "weaknessCoverageEditLong": "Schimba acoperire slabiciuni",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>formulare</formslink>",
-    "weaknessNotFound": "Nici un Pokémon cu slabiciuni găsit",
     "dealsXTo": "Oferte {{ x }} spre"
-  },
-  "coverageList": {
-    "heading": "Lista acoperire slabiciuni",
-    "description": "Tipurile astea de Pokémon sunt slabe la macar unul din urmatoarele tipuri:"
   },
   "coverage": {
     "heading": "Acoperire slabiciuni",

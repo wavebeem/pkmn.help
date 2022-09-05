@@ -8,16 +8,7 @@
   },
   "offense": {
     "chooseTypes": "选择属性",
-    "weaknessCoverage": "弱点覆盖范围",
-    "weaknessCoverageEdit": "编辑",
-    "weaknessCoverageEditLong": "编辑弱点覆盖范围",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>宝可梦</formslink>",
-    "weaknessNotFound": "未能找到符合弱点的宝可梦",
     "dealsXTo": "产生 {{ x }} 伤害"
-  },
-  "coverageList": {
-    "heading": "弱点覆盖范围列表",
-    "description": "以下至少一种属性对这些宝可梦有加倍伤害："
   },
   "coverage": {
     "heading": "弱点覆盖范围",

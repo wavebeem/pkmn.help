@@ -177,8 +177,8 @@
 .MatchupsSection-Container {
   --type-min-width: 80px;
   --gap: 0.25rem;
-  /* Max of 4 types per line */
-  max-width: calc(4 * var(--type-min-width) + 3 * var(--gap));
+  /* Approximate max of 4 types per line */
+  max-width: 400px;
 }
 
 .MatchupsSection-Container > * {

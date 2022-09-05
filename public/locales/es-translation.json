@@ -8,16 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Elige los tipos",
-    "weaknessCoverage": "Rango de efectividad",
-    "weaknessCoverageEdit": "Editar",
-    "weaknessCoverageEditLong": "Edita el rango de efectividad",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>formas</formslink>",
-    "weaknessNotFound": "No se encontraron formas de Pokémon débiles a los tipos seleccionados",
     "dealsXTo": "Inflige {{ x }} a"
-  },
-  "coverageList": {
-    "heading": "Lista de efectividad",
-    "description": "Estas formas de Pokémon son débiles al menos a uno de los siguientes tipos:"
   },
   "coverage": {
     "heading": "Rango de efectividad",

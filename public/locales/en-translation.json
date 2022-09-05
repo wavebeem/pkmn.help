@@ -7,21 +7,29 @@
     "more": "More"
   },
   "offense": {
+    "coverage": {
+      "heading": "Pokédex Coverage",
+      "edit": "Edit list",
+      "weakness": "weak to any",
+      "resistance": "resist all"
+    },
+    "coverageList": {
+      "empty": "No Pokémon found or no types selected",
+      "weakness": {
+        "heading": "Weakness Coverage List",
+        "description": "These Pokémon are weak to at least one of the selected types."
+      },
+      "resistance": {
+        "heading": "Resistance Coverage List",
+        "description": "These Pokémon are resistant to all of the selected types."
+      }
+    },
     "chooseTypes": "Choose Types",
-    "weaknessCoverage": "Weakness Coverage",
-    "weaknessCoverageEdit": "Edit",
-    "weaknessCoverageEditLong": "Edit weakness coverage",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>forms</formslink>",
-    "weaknessNotFound": "No Pokémon forms with weakness found",
     "dealsXTo": "Deals {{ x }} to"
   },
-  "coverageList": {
-    "heading": "Weakness Coverage List",
-    "description": "These Pokémon forms are weak to at least one of the following types:"
-  },
   "coverage": {
-    "heading": "Weakness Coverage",
-    "paragraph1": "Import/export custom Pokédex CSV files to see weakness coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",
+    "heading": "Pokédex Coverage",
+    "paragraph1": "Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",
     "paragraph2": "CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",
     "paragraph3": "CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.",
     "csvHeaders": {
@@ -153,7 +161,7 @@
         }
       },
       "typeCount": {
-        "label": "Number of types",
+        "label": "Number of Types",
         "help": "Pokémon can briefly have three types at once if hit with Forests's Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.",
         "values": {
           "2": "Two types (2)",

@@ -8,10 +8,6 @@
   },
   "offense": {
     "chooseTypes": "Typen auswählen",
-    "weaknessCoverage": "Schwäche-Coverage",
-    "weaknessCoverageEdit": "Bearbeiten",
-    "weaknessCoverageEditLong": "Bearbeiten Schwächen-Abdeckung",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>Formen</<formslink>",
     "dealsXTo": "Fügt {{ x }} Schaden zu"
   },
   "coverage": {

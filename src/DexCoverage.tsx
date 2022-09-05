@@ -1,8 +1,8 @@
 import * as React from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { matchupFor } from "./data-matchups";
 import { Generation } from "./data-generations";
+import { matchupFor } from "./data-matchups";
 import { CoverageType, Type } from "./data-types";
 import { PercentBar } from "./PercentBar";
 
@@ -20,40 +20,56 @@ function DexCoverage({
   isLoading,
 }: DexCoverageProps) {
   const { t } = useTranslation();
-  const weak = coverageTypes.filter((ct) => {
-    const matchups = types.map((t) => matchupFor(generation, ct.types, t));
-    return matchups.some((effectiveness) => {
-      return effectiveness > 1;
-    });
+  const weakToAny = coverageTypes.filter((ct) => {
+    return types
+      .map((t) => matchupFor(generation, ct.types, t))
+      .some((x) => x > 1);
   });
-  const count = weak.length;
+  const resistAll = coverageTypes.filter((ct) => {
+    return types
+      .map((t) => matchupFor(generation, ct.types, t))
+      .every((x) => x < 1);
+  });
   const total = coverageTypes.length;
-  const ratio = count / total || 0;
-  const percent = (ratio * 100).toFixed(0);
-  const weaknessListParams = new URLSearchParams({ types: types.join(" ") });
+  function getPercent(count: number): string {
+    return ((count / total || 0) * 100).toFixed(1);
+  }
+  const typeParams = new URLSearchParams({ types: types.join(" ") });
   return (
-    <div className="pt1 tabular-nums flex flex-column lh-copy">
-      <PercentBar value={count} max={total} />
-      <div className="flex items-center">
+    <div className="tabular-nums mw5 flex flex-column lh-copy">
+      <div className="pt3" />
+      <PercentBar value={weakToAny.length} max={total} />
+      <div className="flex w-100">
         {isLoading ? (
-          <div className="flex-auto tc">{t("general.loading")}</div>
+          <div className="flex-auto">{t("general.loading")}</div>
         ) : (
           <>
-            <div className="tl mr2 w3">{percent}%</div>
-            <div className="flex-auto tr">
-              <Trans
-                i18nKey="offense.weaknessCoverageForms"
-                values={{ count, total }}
-                components={{
-                  formslink: (
-                    <Link
-                      className="br1 underline fg-link OutlineFocus"
-                      to={`/offense/weakness-list/?${weaknessListParams}`}
-                    />
-                  ),
-                }}
-              />
-            </div>
+            <div>{getPercent(weakToAny.length)}%&nbsp;</div>
+            <Link
+              to={`/offense/coverage/weakness/?${typeParams}`}
+              className="underline fg-link br1 OutlineFocus"
+            >
+              {t("offense.coverage.weakness")}
+            </Link>
+            <div className="flex-auto tr ml2">({weakToAny.length})</div>
+          </>
+        )}
+      </div>
+      <div className="pt3" />
+      <PercentBar value={resistAll.length} max={total} />
+      <div className="flex w-100">
+        {isLoading ? (
+          <div className="flex-auto">{t("general.loading")}</div>
+        ) : (
+          <>
+            <div>{getPercent(resistAll.length)}%&nbsp;</div>
+            <Link
+              to={`/offense/coverage/resistance/?${typeParams}`}
+              className="underline fg-link br1 OutlineFocus"
+            >
+              {t("offense.coverage.resistance")}
+            </Link>
+            <div className="flex-auto tr ml2">({resistAll.length})</div>
           </>
         )}
       </div>

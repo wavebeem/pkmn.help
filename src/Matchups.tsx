@@ -1,16 +1,10 @@
 import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
-import {
-  defensiveMatchups,
-  GroupedMatchups,
-  offensiveMatchups,
-} from "./data-matchups";
 import { Generation } from "./data-generations";
-import { CoverageType, Type } from "./data-types";
-import DexCoverage from "./DexCoverage";
+import { defensiveMatchups, offensiveMatchups } from "./data-matchups";
+import { Type } from "./data-types";
 
 interface BadgeProps {
   type: Type;
@@ -24,7 +18,7 @@ function Badge({ type }: BadgeProps) {
         "type-bg",
         "ba border-vibrant",
         "br2",
-        "b f5 lh-title"
+        "b f5 lh-title tc"
       )}
       style={{
         padding: 2,
@@ -58,7 +52,7 @@ function Section({ title, types }: SectionProps) {
   return (
     <div>
       <h2 className="f5 mt4 mb2">{title}</h2>
-      <div className="center flex flex-wrap gap1 justify-center MatchupsSection-Container">
+      <div className="flex flex-wrap gap1 MatchupsSection-Container">
         {types.map((t) => (
           <Badge key={`type-${t}`} type={t} />
         ))}
@@ -68,60 +62,23 @@ function Section({ title, types }: SectionProps) {
 }
 
 interface MatchupsProps {
-  generation: Generation;
-  coverageTypes?: CoverageType[];
   kind: "offense" | "defense";
+  generation: Generation;
   types: Type[];
-  formatTitle: (value: string) => string;
-  matchups: GroupedMatchups;
-  fallbackCoverageTypes: CoverageType[];
-  isLoading: boolean;
 }
 
-function Matchups({
-  generation,
-  coverageTypes,
-  kind,
-  types,
-  formatTitle,
-  matchups,
-  fallbackCoverageTypes,
-  isLoading,
-}: MatchupsProps) {
+export function Matchups({ kind, generation, types }: MatchupsProps) {
   const { t } = useTranslation();
+  const formatTitle: (x: string) => string =
+    kind === "offense"
+      ? (x) => t("offense.dealsXTo", { x })
+      : (x) => t("defense.takesXFrom", { x });
+  const matchups =
+    kind === "offense"
+      ? offensiveMatchups(generation, types)
+      : defensiveMatchups(generation, types);
   return (
-    <div className="tc" id={`matchup-${kind}`}>
-      {kind === "offense" && generation === "default" && (
-        <div>
-          <h2 className="f5 mt3 mb0">
-            {t("offense.weaknessCoverage")}{" "}
-            <span className="normal">
-              (
-              <Link
-                to="/offense/coverage/"
-                className="underline fg-link br1 OutlineFocus"
-                aria-label={t("offense.weaknessCoverageEditLong")}
-              >
-                {t("offense.weaknessCoverageEdit")}
-              </Link>
-              )
-            </span>
-          </h2>
-          <div
-            className={classNames(
-              "pt1 mw5 center tc",
-              isLoading && ["o-30 no-pointer cursor-na"]
-            )}
-          >
-            <DexCoverage
-              generation={generation}
-              coverageTypes={coverageTypes ?? fallbackCoverageTypes}
-              types={types}
-              isLoading={isLoading}
-            />
-          </div>
-        </div>
-      )}
+    <div id={`matchup-${kind}`}>
       {effectivenessLevels.map((eff) => {
         return (
           <Section
@@ -147,59 +104,3 @@ const displayEffectiveness = {
   [1 / 8]: "⅛×",
   [0]: "0×",
 };
-
-export interface DefenseProps {
-  generation: Generation;
-  types: Type[];
-  fallbackCoverageTypes: CoverageType[];
-}
-
-export function Defense({
-  generation,
-  types,
-  fallbackCoverageTypes,
-}: DefenseProps) {
-  const { t } = useTranslation();
-  return (
-    <Matchups
-      generation={generation}
-      kind="defense"
-      types={types}
-      formatTitle={(x) => t("defense.takesXFrom", { x })}
-      matchups={defensiveMatchups(generation, types)}
-      fallbackCoverageTypes={fallbackCoverageTypes}
-      isLoading={false}
-    />
-  );
-}
-
-export interface OffenseProps {
-  generation: Generation;
-  coverageTypes?: CoverageType[];
-  setCoverageTypes: (types: CoverageType[]) => void;
-  types: Type[];
-  fallbackCoverageTypes: CoverageType[];
-  isLoading: boolean;
-}
-
-export function Offense({
-  generation,
-  coverageTypes,
-  types,
-  fallbackCoverageTypes,
-  isLoading,
-}: OffenseProps) {
-  const { t } = useTranslation();
-  return (
-    <Matchups
-      generation={generation}
-      kind="offense"
-      types={types}
-      coverageTypes={coverageTypes}
-      formatTitle={(x) => t("offense.dealsXTo", { x })}
-      matchups={offensiveMatchups(generation, types)}
-      fallbackCoverageTypes={fallbackCoverageTypes}
-      isLoading={isLoading}
-    />
-  );
-}

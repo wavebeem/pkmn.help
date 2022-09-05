@@ -8,16 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Choisissez les types",
-    "weaknessCoverage": "Couverture de faiblesse",
-    "weaknessCoverageEdit": "Modifier",
-    "weaknessCoverageEditLong": "Modifier la couverture de faiblesse",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>formes</formslink>",
-    "weaknessNotFound": "Aucun Pokémon trouvé avec ces faiblesse",
     "dealsXTo": "Inflige {{ x }} à"
-  },
-  "coverageList": {
-    "heading": "Liste de couverture de faiblesses",
-    "description": "Ces Pokémon sont faibles à au moins l'un de ces types suivants:"
   },
   "coverage": {
     "heading": "Couverture de faiblesses",

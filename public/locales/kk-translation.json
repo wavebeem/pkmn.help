@@ -8,16 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Типтер Таңдау",
-    "weaknessCoverage": "Әлсіздік Қамтуы",
-    "weaknessCoverageEdit": "Өңдеу",
-    "weaknessCoverageEditLong": "Әлсіздік қамтуын өңдеу",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>түр</formslink>",
-    "weaknessNotFound": "Әлсіздігі бар бірде-бір Покемон табылмады",
     "dealsXTo": "{{ x }} келтіреді"
-  },
-  "coverageList": {
-    "heading": "Әлсіздік Қамту Тізімі",
-    "description": "Осы Покемон түрлері келесі типтердің кем дегенде біреуіне әлсіз:"
   },
   "coverage": {
     "heading": "Әлсіздік Қамтуы",

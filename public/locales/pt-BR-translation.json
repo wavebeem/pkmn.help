@@ -8,16 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Escolher Tipos",
-    "weaknessCoverage": "Cobertura a Fraquezas",
-    "weaknessCoverageEdit": "Editar",
-    "weaknessCoverageEditLong": "Editar Cobertura a Fraquezas",
-    "weaknessCoverageForms": "{{ count }} / {{ total }} <formslink>forms</formslink>",
-    "weaknessNotFound": "Nenhuma forma Pokémon com fraqueza encontrada",
     "dealsXTo": "Causa {{ x }} mais dano contra"
-  },
-  "coverageList": {
-    "heading": "Lista de Cobertura a Fraquezas",
-    "description": "Essas formas Pokémon são fracas a pelo menos um dos seguintes tipos:"
   },
   "coverage": {
     "heading": "Cobertura a Fraquezas",
