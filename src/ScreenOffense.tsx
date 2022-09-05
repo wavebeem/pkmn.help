@@ -1,6 +1,7 @@
+import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { Generation } from "./data-generations";
 import {
   CoverageType,
@@ -8,6 +9,7 @@ import {
   Type,
   typesFromString,
 } from "./data-types";
+import DexCoverage from "./DexCoverage";
 import * as Matchups from "./Matchups";
 import MultiTypeSelector from "./MultiTypeSelector";
 import { useSearch } from "./useSearch";
@@ -68,6 +70,34 @@ export default function ScreenOffense({
           value={offenseTypes}
           onChange={updateOffenseTypes}
         />
+        {generation === "default" && (
+          <details className="mt4 mb0 tc" open>
+            <summary className="br2 pointer select-none OutlineFocus">
+              <h2 className="f5 ma0 di clickable">
+                {t("offense.coverage.heading")}
+              </h2>
+            </summary>
+            <div className="pt2">
+              <Link
+                to="/offense/coverage/"
+                className="underline fg-link br1 OutlineFocus"
+              >
+                {t("offense.coverage.edit")}
+              </Link>{" "}
+              ({coverageTypes?.length ?? 0})
+            </div>
+            <div
+              className={classNames(isLoading && ["o-30 no-pointer cursor-na"])}
+            >
+              <DexCoverage
+                generation={generation}
+                coverageTypes={coverageTypes ?? fallbackCoverageTypes}
+                types={offenseTypes}
+                isLoading={isLoading}
+              />
+            </div>
+          </details>
+        )}
       </div>
       <div className="dib w-50-ns w-100 v-top pl3-ns">
         <hr className="dn-ns subtle-hr mv4" />

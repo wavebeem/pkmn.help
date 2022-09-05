@@ -68,60 +68,14 @@ function Section({ title, types }: SectionProps) {
 }
 
 interface MatchupsProps {
-  generation: Generation;
-  coverageTypes?: CoverageType[];
   kind: "offense" | "defense";
-  types: Type[];
   formatTitle: (value: string) => string;
   matchups: GroupedMatchups;
-  fallbackCoverageTypes: CoverageType[];
-  isLoading: boolean;
 }
 
-function Matchups({
-  generation,
-  coverageTypes,
-  kind,
-  types,
-  formatTitle,
-  matchups,
-  fallbackCoverageTypes,
-  isLoading,
-}: MatchupsProps) {
-  const { t } = useTranslation();
+function Matchups({ kind, formatTitle, matchups }: MatchupsProps) {
   return (
     <div className="tc" id={`matchup-${kind}`}>
-      {kind === "offense" && generation === "default" && (
-        <details className="mt3 mb0" open>
-          <summary className="br2 pointer select-none OutlineFocus">
-            <h2 className="f5 ma0 di clickable">
-              {t("offense.coverage.heading")}
-            </h2>
-          </summary>
-          <div className="pt2">
-            <Link
-              to="/offense/coverage/"
-              className="underline fg-link br1 OutlineFocus"
-            >
-              {t("offense.coverage.edit")}
-            </Link>{" "}
-            ({coverageTypes?.length ?? 0})
-          </div>
-          <div
-            className={classNames(
-              "pt2 mw5 center tc",
-              isLoading && ["o-30 no-pointer cursor-na"]
-            )}
-          >
-            <DexCoverage
-              generation={generation}
-              coverageTypes={coverageTypes ?? fallbackCoverageTypes}
-              types={types}
-              isLoading={isLoading}
-            />
-          </div>
-        </details>
-      )}
       {effectivenessLevels.map((eff) => {
         return (
           <Section
@@ -151,55 +105,31 @@ const displayEffectiveness = {
 export interface DefenseProps {
   generation: Generation;
   types: Type[];
-  fallbackCoverageTypes: CoverageType[];
 }
 
-export function Defense({
-  generation,
-  types,
-  fallbackCoverageTypes,
-}: DefenseProps) {
+export function Defense({ generation, types }: DefenseProps) {
   const { t } = useTranslation();
   return (
     <Matchups
-      generation={generation}
       kind="defense"
-      types={types}
       formatTitle={(x) => t("defense.takesXFrom", { x })}
       matchups={defensiveMatchups(generation, types)}
-      fallbackCoverageTypes={fallbackCoverageTypes}
-      isLoading={false}
     />
   );
 }
 
 export interface OffenseProps {
   generation: Generation;
-  coverageTypes?: CoverageType[];
-  setCoverageTypes: (types: CoverageType[]) => void;
   types: Type[];
-  fallbackCoverageTypes: CoverageType[];
-  isLoading: boolean;
 }
 
-export function Offense({
-  generation,
-  coverageTypes,
-  types,
-  fallbackCoverageTypes,
-  isLoading,
-}: OffenseProps) {
+export function Offense({ generation, types }: OffenseProps) {
   const { t } = useTranslation();
   return (
     <Matchups
-      generation={generation}
       kind="offense"
-      types={types}
-      coverageTypes={coverageTypes}
       formatTitle={(x) => t("offense.dealsXTo", { x })}
       matchups={offensiveMatchups(generation, types)}
-      fallbackCoverageTypes={fallbackCoverageTypes}
-      isLoading={isLoading}
     />
   );
 }
