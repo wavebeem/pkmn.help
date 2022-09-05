@@ -58,7 +58,7 @@ export default function ScreenOffense({
     setOffenseParams(params);
   }, [params, setOffenseParams]);
 
-  const classH2 = "tc f5 mb2 mt4";
+  const classH2 = "f5 mb2 mt4";
   return (
     <main className="ph3 pt0 pb4 content-wide center">
       <div className="dib w-50-ns w-100 v-top">
@@ -69,7 +69,7 @@ export default function ScreenOffense({
           onChange={updateOffenseTypes}
         />
         {generation === "default" && (
-          <details className="mt4 mb0 tc" open>
+          <details className="mt4 mb0" open>
             <summary className="br2 pointer select-none OutlineFocus">
               <h2 className="f5 ma0 di clickable">
                 {t("offense.coverage.heading")}
@@ -97,7 +97,7 @@ export default function ScreenOffense({
           </details>
         )}
       </div>
-      <div className="dib w-50-ns w-100 v-top pl3-ns">
+      <div className="dib w-50-ns w-100 v-top pl5-ns">
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups kind="offense" generation={generation} types={offenseTypes} />
       </div>

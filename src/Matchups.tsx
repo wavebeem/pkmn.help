@@ -18,7 +18,7 @@ function Badge({ type }: BadgeProps) {
         "type-bg",
         "ba border-vibrant",
         "br2",
-        "b f5 lh-title"
+        "b f5 lh-title tc"
       )}
       style={{
         padding: 2,
@@ -52,7 +52,7 @@ function Section({ title, types }: SectionProps) {
   return (
     <div>
       <h2 className="f5 mt4 mb2">{title}</h2>
-      <div className="center flex flex-wrap gap1 justify-center MatchupsSection-Container">
+      <div className="flex flex-wrap gap1 MatchupsSection-Container">
         {types.map((t) => (
           <Badge key={`type-${t}`} type={t} />
         ))}
@@ -78,7 +78,7 @@ export function Matchups({ kind, generation, types }: MatchupsProps) {
       ? offensiveMatchups(generation, types)
       : defensiveMatchups(generation, types);
   return (
-    <div className="tc" id={`matchup-${kind}`}>
+    <div id={`matchup-${kind}`}>
       {effectivenessLevels.map((eff) => {
         return (
           <Section

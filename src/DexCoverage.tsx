@@ -36,12 +36,12 @@ function DexCoverage({
   }
   const typeParams = new URLSearchParams({ types: types.join(" ") });
   return (
-    <div className="tabular-nums mw5 center flex flex-column lh-copy items-center justify-center">
+    <div className="tabular-nums mw5 flex flex-column lh-copy">
       <div className="pt3" />
       <PercentBar value={weakToAny.length} max={total} />
       <div className="flex w-100">
         {isLoading ? (
-          <div className="flex-auto tc">{t("general.loading")}</div>
+          <div className="flex-auto">{t("general.loading")}</div>
         ) : (
           <>
             <div>{getPercent(weakToAny.length)}%&nbsp;</div>
@@ -59,7 +59,7 @@ function DexCoverage({
       <PercentBar value={resistAll.length} max={total} />
       <div className="flex w-100">
         {isLoading ? (
-          <div className="flex-auto tc">{t("general.loading")}</div>
+          <div className="flex-auto">{t("general.loading")}</div>
         ) : (
           <>
             <div>{getPercent(resistAll.length)}%&nbsp;</div>
