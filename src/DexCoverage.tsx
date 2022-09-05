@@ -1,8 +1,8 @@
 import * as React from "react";
-import { Trans, useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { matchupFor } from "./data-matchups";
 import { Generation } from "./data-generations";
+import { matchupFor } from "./data-matchups";
 import { CoverageType, Type } from "./data-types";
 import { PercentBar } from "./PercentBar";
 
