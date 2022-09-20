@@ -186,9 +186,10 @@
     "thanks": {
       "heading": "Remerciements spéciaux",
       "credits": {
+        "abylayZhandarbek": "Abylay Zhandarbek (Traduction en Russe, Traduction en Kazackh)",
         "vio": "Vio (Traduction en Portugais Brésilien)",
         "dragonify": "Dragonify (Traduction en Chinois)",
-        "adamHayes": "Adam Hayes (Traduction en Roumaine)",
+        "adamHayes": "Adam Hayes (Traduction en Roumain)",
         "drakoshen": "Drakoshen (Traduction en Français)",
         "azertor": "Azertor (Traduction en Français)",
         "kaishidow": "Kaishidow (Traduction en Français)",
@@ -196,7 +197,7 @@
         "luziferSenpai": "Luzifer Senpai (Traduction en Allemand)",
         "gabrieleGiugno": "Gabriele Giugno (Traduction en Italien)",
         "minamorl": "Minamorl (Traduction en Japonais)",
-        "jansjo": "Jansjo (Tests, recherche)",
+        "jansjo": "Jansjo (Tests, recherches)",
         "other": "Plusieurs PokéFans anonymes"
       }
     },

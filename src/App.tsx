@@ -127,6 +127,7 @@ export default function App() {
         <Helmet>
           <html data-theme={theme} data-theme-auto={themeAuto} />
           <meta name="theme-color" content={themeColor} />
+          <title>{t("title")}</title>
         </Helmet>
         <h1 className="f3-ns f4 tc relative white PokeballHeader">
           <Link to="/" className="no-underline white OutlineFocus br1">
