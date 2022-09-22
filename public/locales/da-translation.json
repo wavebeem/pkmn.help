@@ -1,0 +1,239 @@
+{
+  "title": "Pokémon Type lommeregner",
+  "navigation": {
+    "offense": "Angreb",
+    "defense": "Beskyttelse",
+    "pokedex": "Pokédex",
+    "more": "Mere"
+  },
+  "offense": {
+    "chooseTypes": "Vælg typer/type",
+    "dealsXTo": "Skader {{ x }} til",
+    "coverage": {
+      "heading": "Pokédex dækning",
+      "edit": "Rediger listen/liste",
+      "weakness": "Svag",
+      "resistance": "Modstå/resistent"
+    },
+    "coverageList": {
+      "empty": "Ingen Pokèmon blev fundet eller ingen typer valgt",
+      "weakness": {
+        "heading": "Liste der dækker over svagheder",
+        "description": "Disse Pokémon er svage overfor mindst en af de valgte typer"
+      },
+      "resistance": {
+        "heading": "Liste der dækker over resistens",
+        "description": "Disse Pokémon er modstandsdygtige imod alle valgte typer"
+      }
+    }
+  },
+  "coverage": {
+    "heading": "Pokèdex dækning",
+    "paragraph1": "Importer/Eksporter Hjemmelavede pokédex CSV filer for at se dækningen på forskellige pokemons. Lav en hjemmelavet CSV file kun med OU Tier pokémons eller lav dine egne Pokemons.",
+    "paragraph2": "Csv data er loaded fra kolonne sidehoved navn, ikke kolonne rækkefølge, så du kan tilføje eller ændre på kolonner hvis du vil (Fx tilføje en note eller liste kolonne).",
+    "paragraph3": "CSV filer kan blive redigeret med Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad og flere produkter.",
+    "csvHeaders": {
+      "number": "Nummer",
+      "name": "Navn",
+      "type1": "Type 1",
+      "type2": "Type 2",
+      "type3": "Type 3"
+    },
+    "export": {
+      "button": "Eksporter",
+      "description": "Eksporter standard pokédexet til en CSV fil"
+    },
+    "import": {
+      "button": "Importer",
+      "description": "Importer en redigeret pokédex CSV fil"
+    },
+    "reset": {
+      "button": "Genstart",
+      "description": "Genstart til standard pokèdex"
+    },
+    "filename": "pkmn.help type dækning.csv",
+    "status": {
+      "imported": "Importeret {{ n }} Pokèmon former fra \"{{ file }}\"",
+      "exported": "Eksporterede standard Pokémon former",
+      "reset": "Loadede standard Pokémon",
+      "errored": "Fejl ved loading af CSV. Ændre ikke sidehoved navne"
+    },
+    "back": "Tilbage til Angreb"
+  },
+  "defense": {
+    "chooseFirst": "Vælg første type",
+    "chooseSecond": "Vælg anden type",
+    "chooseThird": "Vælg tredje type",
+    "takesXFrom": "Tager {{ x }} Fra"
+  },
+  "pokedex": {
+    "search": {
+      "description": "Søg fra navn, nummer/tal eller typer",
+      "help": "Hjælp",
+      "helpLong": "Hjælp, Søg på pokédexet",
+      "notFound": "Ingen Pokémons blev fundet"
+    },
+    "wiki": { "label": "Bulbapedia side for {{ pokemon }}" },
+    "offense": { "label": "Angreb for {{ pokemon }}", "text": "Angreb" },
+    "defense": { "label": "Forsvar for {{ pokemon }}", "text": "forsvar" },
+    "pagination": {
+      "next": "Næste",
+      "nextLong": "Næste",
+      "previous": "Forrige",
+      "previousLong": "Forrige",
+      "firstLong": "Første",
+      "lastLong": "Sidste"
+    },
+    "stats": {
+      "hp": "HP",
+      "hpLong": "Livpoint",
+      "attack": "Angreb",
+      "attackLong": "Angreb",
+      "defense": "Forsvar",
+      "defenseLong": "Forsvar",
+      "specialAttack": "Special angreb",
+      "specialAttackLong": "Special angreb",
+      "specialDefense": "Special forsvar",
+      "specialDefenseLong": "Special forsvar",
+      "speed": "Fart",
+      "speedLong": "Fart",
+      "total": "Total",
+      "totalLong": "Total"
+    }
+  },
+  "pokedexHelp": {
+    "searchByName": {
+      "heading": "Søg via navn",
+      "description": "Du can søge efter en pokémon via navnet. Hvis du kun kan huske en del af navnet kan den nok stadig finde den for dig. Den virker ikke hvis der der stavefejl lige nu."
+    },
+    "searchByNumber": {
+      "heading": "Søg via nummer/tal",
+      "description": "Søg via national dex nummer. Hvis du vil finde Bulbasaur skal du skrive 1, ikke #001."
+    },
+    "searchByType": {
+      "heading": "Søg via type",
+      "description": "Her er et par eksempler på hvordan man søger via typer"
+    },
+    "searchExamples": {
+      "type": {
+        "query": "Ild",
+        "description": "Søg efter Pokémons der har ild type i en hvilken som helst form(Fx Charmander, Charizard eller Rotom)"
+      },
+      "doubleType": {
+        "query": "Vand Flyvende",
+        "description": "Søg efter Pokémon som enten har vand/flyvende (fx Gyarados) eller flyvende/vand (fx Cramorant)"
+      },
+      "singleType": {
+        "query": "Gras ingen",
+        "description": "Søg efter Pokémon der kun er gras typer, ingen anden type (Fx Tangela, Chikorita, Lilligant)"
+      }
+    },
+    "back": "Gå tilbage til Pokédexet"
+  },
+  "more": {
+    "contact": {
+      "heading": "Kontakt mig",
+      "intro": "Hej, jeg <homepage>Brian</homepage> (they/them) og jeg lavede Pokémon type lommeregner/calculator (pkmn.help)",
+      "email": "Email venligst din taknemmelighed til <email>pkmn@wavebeem.com</email>."
+    },
+    "settings": {
+      "heading": "Indstillinger",
+      "language": {
+        "label": "Sprog",
+        "default": "Opdag automatisk sprog",
+        "helpText": "Sprog understyttelsen er ukomplet. Venligst email mig, Jeg vil betale dig for at oversætte."
+      },
+      "theme": {
+        "label": "Tema",
+        "help": "\"System standard\" vil ændre automatisk alt efter dine OS indstillinger.",
+        "values": { "auto": "System Standard", "light": "Lys", "dark": "Mørk" }
+      },
+      "typeCount": {
+        "label": "Antal typer",
+        "help": "Pokemon kan midlertidigt have 3 typer på samme tid hvis de bliver ramt af Forest's curse eller Trick or Treat. Det trejde type felt bliver som standard gemt siden den sjældent bliver brugt.",
+        "values": { "2": "To typer (2)", "3": "Tre typer (3)" }
+      }
+    },
+    "help": {
+      "heading": "Hjælp",
+      "serviceWorker": {
+        "description": "Denne knap kan fikse problemer i appen",
+        "button": "Genstart"
+      }
+    },
+    "privacy": {
+      "heading": "Privatliv",
+      "description": "Jeg vil aldrig bruge reklamer eller stjæle din data. Jeg bruger <plausible>Plausible Analytics</plausible>, hvilket er selvfinanseret, uafhængig, hosted i EU og gemmer ingen cookies i din computer/pc."
+    },
+    "givingBack": {
+      "heading": "Viser taknemmelighed",
+      "description": "Jeg har brugt utallige timer på at forbedre denne hjemmeside. Hvis du er glad for hvad jeg har lavet, så tænk venligst over at donere til velgørenheder der stytter BIPOC og transkønnets rettigheder"
+    },
+    "thanks": {
+      "heading": "Tusind tak til",
+      "credits": {
+        "abylayZhandarbek": "Abylay Zhandarbek (Russisk og kazakhstan oversættelser)",
+        "vio": "Vio (Brazillensk portugisisk oversættelse)",
+        "dragonify": "Dragonify (Kinesisk oversættelse)",
+        "adamHayes": "Adam Hayes (Rumænsk oversættelse)",
+        "drakoshen": "Drakoshen (Fransk oversættelse)",
+        "azertor": "Azertor (Fransk oversættelse)",
+        "kaishidow": "Kaishidow (Fransk oversættelse)",
+        "cozzzy": "Cozzzy (tysk oversættelse)",
+        "luziferSenpai": "Luzifer Senpai (tysk oversættelse)",
+        "gabrieleGiugno": "Gabriele Giugno (Italiensk oversættelse)",
+        "minamorl": "Minamorl (Japansk oversættelse)",
+        "jansjo": "Jansjo (Tests og research)",
+        "other": "Mange anonyme Poké fans"
+      }
+    },
+    "openSource": {
+      "heading": "Open source",
+      "description": "Du kan finde kildekoden på <github>GitHub</github>."
+    },
+    "legalInfo": {
+      "heading": "Legal info",
+      "pokemon": "Pokémon © 2002-{{ year }} Pokémon. © 1995-{{ year }} Nintendo/Creatures Inc./GAME FREAK inc. ™, ® og Pokemon character navne er varemærke fra Nintendo.",
+      "dontSueMe": "Ingen copyright eller trademark overtrædelse er ment i at bruge pokémon ting på denne side.",
+      "pokeAPI": "Pokédex data fra <pokeapi>PokéAPI</pokeapi>.",
+      "wavebeem": "pkmn.help © 2013–{{ year }} <wavebeem>Brian Mock</wavebeem>."
+    }
+  },
+  "types": {
+    "normal": "Normal",
+    "fighting": "Kamp/slås",
+    "flying": "flyvende",
+    "poison": "Gift",
+    "ground": "Jord",
+    "rock": "Sten",
+    "bug": "Insekt",
+    "ghost": "Spøgelse",
+    "steel": "Stål",
+    "fire": "Ild",
+    "water": "Vand",
+    "grass": "Gras",
+    "electric": "Elektricitet",
+    "psychic": "Psykisk",
+    "ice": "Is",
+    "dragon": "Drage",
+    "dark": "Mørk",
+    "fairy": "Fe",
+    "none": "Ingen"
+  },
+  "banners": {
+    "updateReady": {
+      "description": "En opdatering er mulig at udføre",
+      "update": "Opdater"
+    }
+  },
+  "general": { "loading": "Loader..." },
+  "games": {
+    "label": "Spil generation",
+    "help": "Brug type effektiviteter fra andre spil generationer",
+    "byID": {
+      "gen1": "Generation 1",
+      "gen2": "Generation 2-5",
+      "default": "Standard (Generation 6+)"
+    }
+  }
+}

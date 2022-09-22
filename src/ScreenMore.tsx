@@ -100,6 +100,7 @@ export default function ScreenMore({
             Português Brasileiro (Brazilian Portuguese)
           </option>
           <option value="de">Deutsch (German)</option>
+          <option value="da">Dansk (Danish)</option>
           <option value="it">Italiano (Italian)</option>
           <option value="fr">Français (French)</option>
           <option value="ro">Română (Romanian)</option>
