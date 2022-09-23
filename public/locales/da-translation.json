@@ -11,9 +11,9 @@
     "dealsXTo": "Skader {{ x }} til",
     "coverage": {
       "heading": "Pokédex dækning",
-      "edit": "Rediger listen/liste",
+      "edit": "Rediger listen",
       "weakness": "Svag",
-      "resistance": "Modstå/resistent"
+      "resistance": "Resistent"
     },
     "coverageList": {
       "empty": "Ingen Pokèmon blev fundet eller ingen typer valgt",
@@ -30,7 +30,7 @@
   "coverage": {
     "heading": "Pokèdex dækning",
     "paragraph1": "Importer/Eksporter Hjemmelavede pokédex CSV filer for at se dækningen på forskellige pokemons. Lav en hjemmelavet CSV file kun med OU Tier pokémons eller lav dine egne Pokemons.",
-    "paragraph2": "Csv data er loaded fra kolonne sidehoved navn, ikke kolonne rækkefølge, så du kan tilføje eller ændre på kolonner hvis du vil (Fx tilføje en note eller liste kolonne).",
+    "paragraph2": "CSV data er loaded fra kolonne sidehoved navn, ikke kolonne rækkefølge, så du kan tilføje eller ændre på kolonner hvis du vil (Fx tilføje en note eller liste kolonne).",
     "paragraph3": "CSV filer kan blive redigeret med Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad og flere produkter.",
     "csvHeaders": {
       "number": "Nummer",
@@ -75,7 +75,7 @@
     },
     "wiki": { "label": "Bulbapedia side for {{ pokemon }}" },
     "offense": { "label": "Angreb for {{ pokemon }}", "text": "Angreb" },
-    "defense": { "label": "Forsvar for {{ pokemon }}", "text": "forsvar" },
+    "defense": { "label": "Forsvar for {{ pokemon }}", "text": "Forsvar" },
     "pagination": {
       "next": "Næste",
       "nextLong": "Næste",
@@ -201,7 +201,7 @@
   },
   "types": {
     "normal": "Normal",
-    "fighting": "Kamp/slås",
+    "fighting": "Kamp",
     "flying": "flyvende",
     "poison": "Gift",
     "ground": "Jord",
