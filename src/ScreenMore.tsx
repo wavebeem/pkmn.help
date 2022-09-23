@@ -100,6 +100,7 @@ export default function ScreenMore({
             Português Brasileiro (Brazilian Portuguese)
           </option>
           <option value="de">Deutsch (German)</option>
+          <option value="da">Dansk (Danish)</option>
           <option value="it">Italiano (Italian)</option>
           <option value="fr">Français (French)</option>
           <option value="ro">Română (Romanian)</option>
@@ -201,6 +202,7 @@ export default function ScreenMore({
       <h2 className="lh-title f4">{t("more.thanks.heading")}</h2>
 
       <ul className="lh-copy mt1 ph3">
+        <li>{t("more.thanks.credits.simon")}</li>
         <li>{t("more.thanks.credits.abylayZhandarbek")}</li>
         <li>{t("more.thanks.credits.vio")}</li>
         <li>{t("more.thanks.credits.dragonify")}</li>
