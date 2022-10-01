@@ -163,7 +163,9 @@ async function main(): Promise<void> {
       console.log(speciesDetail.id, detail.id);
     }
   }
-  saveJSON(path.resolve(DEST, "pokemon.json"), pokemonSimpleList);
+  saveJSON(path.resolve(DEST, "pokemon.json"), pokemonSimpleList, {
+    indent: 2,
+  });
 }
 
 main().catch((err) => {
