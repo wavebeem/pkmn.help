@@ -1,7 +1,7 @@
 import fetch from "node-fetch";
 import path from "path";
 import { URL } from "url";
-import { saveJSON } from "./saveJSON";
+import { saveJSON } from "./util";
 
 const API = process.env.API || "https://pokeapi.co/api/v2/";
 const DEST = path.resolve(__dirname, "../data");

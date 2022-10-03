@@ -1,8 +1,7 @@
+import fs from "fs";
 import fetch from "node-fetch";
 import path from "path";
-import fs from "fs";
-import { readJSON } from "./readJSON";
-import { saveJSON } from "./saveJSON";
+import { readJSON, saveJSON } from "./util";
 
 const SRC = path.resolve(__dirname, "../data/pokemon.json");
 const IMG_DEST = path.resolve(__dirname, "../public/img");

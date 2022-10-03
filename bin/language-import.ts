@@ -1,6 +1,6 @@
 import fs from "fs";
 import Papa from "papaparse";
-import { saveJSON } from "./saveJSON";
+import { saveJSON } from "./util";
 
 function set(object: Record<string, any>, keys: string[], value: any): void {
   switch (keys.length) {

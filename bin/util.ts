@@ -12,3 +12,12 @@ export function saveJSON(
     "utf-8"
   );
 }
+
+export function readJSON(filename: string): any {
+  try {
+    const json = fs.readFileSync(path.resolve(__dirname, filename), "utf-8");
+    return JSON.parse(json);
+  } catch (err) {
+    return undefined;
+  }
+}

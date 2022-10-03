@@ -1,7 +1,7 @@
 import * as fs from "fs";
-import * as path from "path";
 import { uniqBy } from "lodash";
-import { saveJSON } from "./saveJSON";
+import * as path from "path";
+import { saveJSON } from "./util";
 
 const pokeapiJSON = path.resolve(__dirname, "../data/pokemon.json");
 const mergedJSON = path.resolve(__dirname, "../data/merged-pokemon.json");

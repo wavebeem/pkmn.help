@@ -1,7 +1,7 @@
+import fs from "fs";
 import Papa from "papaparse";
 import path from "path";
-import fs from "fs";
-import { readJSON } from "./readJSON";
+import { readJSON } from "./util";
 
 function* walk({
   english,
