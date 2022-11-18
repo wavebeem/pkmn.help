@@ -1,5 +1,5 @@
 import * as fs from "fs";
-import { uniqBy } from "lodash";
+import { uniqBy, sortBy } from "lodash";
 import * as path from "path";
 import { saveJSON } from "./util";
 
@@ -31,8 +31,9 @@ async function main() {
   const gen9: Record<string, any>[] = loadJSON(pokemondbJSON);
   const mons = [...pokeapi, ...gen9];
   const uniqMons = uniqBy(mons, pkmnUniqBy);
-  saveJSON(mergedJSON, uniqMons, { indent: 2 });
-  saveJSON(destJSON, uniqMons, { indent: 0 });
+  const sortedMons = sortBy(uniqMons, (mon) => mon.number);
+  saveJSON(mergedJSON, sortedMons, { indent: 2 });
+  saveJSON(destJSON, sortedMons, { indent: 0 });
 }
 
 main().catch((err) => {

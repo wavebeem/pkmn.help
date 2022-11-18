@@ -21,6 +21,7 @@
         cellName,
         cellTypes,
         cellTotal,
+        cellHP,
         cellAttack,
         cellDefense,
         cellSpAtk,
@@ -37,6 +38,7 @@
         t.textContent.toLowerCase()
       );
       const total = Number(cellTotal.textContent);
+      const hp = Number(cellHP.textContent);
       const attack = Number(cellAttack.textContent);
       const defense = Number(cellDefense.textContent);
       const spAttack = Number(cellSpAtk.textContent);
@@ -55,6 +57,7 @@
         form,
         types,
         total,
+        hp,
         attack,
         defense,
         spAttack,
