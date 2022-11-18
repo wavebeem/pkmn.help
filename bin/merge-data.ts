@@ -3,6 +3,7 @@ import { uniqBy } from "lodash";
 import * as path from "path";
 import { saveJSON } from "./util";
 
+const pokemondbJSON = path.resolve(__dirname, "../data/pokemondb-gen9.json");
 const pokeapiJSON = path.resolve(__dirname, "../data/pokemon.json");
 const mergedJSON = path.resolve(__dirname, "../data/merged-pokemon.json");
 const destJSON = path.resolve(__dirname, "../public/data-pkmn.json");
@@ -27,7 +28,9 @@ function pkmnUniqBy(mon: Record<string, any>): string {
 
 async function main() {
   const pokeapi: Record<string, any>[] = loadJSON(pokeapiJSON);
-  const uniqMons = uniqBy(pokeapi, pkmnUniqBy);
+  const gen9: Record<string, any>[] = loadJSON(pokemondbJSON);
+  const mons = [...pokeapi, ...gen9];
+  const uniqMons = uniqBy(mons, pkmnUniqBy);
   saveJSON(mergedJSON, uniqMons, { indent: 2 });
   saveJSON(destJSON, uniqMons, { indent: 0 });
 }

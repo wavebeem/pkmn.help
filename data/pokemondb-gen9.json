@@ -1,0 +1,1896 @@
+[
+  {
+    "name": "Tauros",
+    "speciesNames": {
+      "en": "Tauros"
+    },
+    "formNames": {
+      "en": "Paldean Tauros"
+    },
+    "number": 128,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tauros-paldean.png",
+    "form": "Paldean Tauros",
+    "types": ["fighting"],
+    "total": 490,
+    "attack": 75,
+    "defense": 110,
+    "spAttack": 105,
+    "spDefense": 30,
+    "speed": 70
+  },
+  {
+    "name": "Tauros",
+    "speciesNames": {
+      "en": "Tauros"
+    },
+    "formNames": {
+      "en": "Paldean Fire Tauros"
+    },
+    "number": 128,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tauros-paldean-fire.png",
+    "form": "Paldean Fire Tauros",
+    "types": ["fighting", "fire"],
+    "total": 490,
+    "attack": 75,
+    "defense": 110,
+    "spAttack": 105,
+    "spDefense": 30,
+    "speed": 70
+  },
+  {
+    "name": "Tauros",
+    "speciesNames": {
+      "en": "Tauros"
+    },
+    "formNames": {
+      "en": "Paldean Water Tauros"
+    },
+    "number": 128,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tauros-paldean-water.png",
+    "form": "Paldean Water Tauros",
+    "types": ["fighting", "water"],
+    "total": 490,
+    "attack": 75,
+    "defense": 110,
+    "spAttack": 105,
+    "spDefense": 30,
+    "speed": 70
+  },
+  {
+    "name": "Wooper",
+    "speciesNames": {
+      "en": "Wooper"
+    },
+    "formNames": {
+      "en": "Paldean Wooper"
+    },
+    "number": 194,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wooper-paldean.png",
+    "form": "Paldean Wooper",
+    "types": ["poison", "ground"],
+    "total": 210,
+    "attack": 55,
+    "defense": 45,
+    "spAttack": 45,
+    "spDefense": 25,
+    "speed": 25
+  },
+  {
+    "name": "Sprigatito",
+    "speciesNames": {
+      "en": "Sprigatito"
+    },
+    "formNames": {},
+    "number": 906,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sprigatito.png",
+    "types": ["grass"],
+    "total": 310,
+    "attack": 40,
+    "defense": 61,
+    "spAttack": 54,
+    "spDefense": 45,
+    "speed": 45
+  },
+  {
+    "name": "Floragato",
+    "speciesNames": {
+      "en": "Floragato"
+    },
+    "formNames": {},
+    "number": 907,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/floragato.png",
+    "types": ["grass"],
+    "total": 410,
+    "attack": 61,
+    "defense": 80,
+    "spAttack": 63,
+    "spDefense": 60,
+    "speed": 63
+  },
+  {
+    "name": "Meowscarada",
+    "speciesNames": {
+      "en": "Meowscarada"
+    },
+    "formNames": {},
+    "number": 908,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/meowscarada.png",
+    "types": ["grass", "dark"],
+    "total": 530,
+    "attack": 76,
+    "defense": 110,
+    "spAttack": 70,
+    "spDefense": 81,
+    "speed": 70
+  },
+  {
+    "name": "Fuecoco",
+    "speciesNames": {
+      "en": "Fuecoco"
+    },
+    "formNames": {},
+    "number": 909,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/fuecoco.png",
+    "types": ["fire"],
+    "total": 310,
+    "attack": 67,
+    "defense": 45,
+    "spAttack": 59,
+    "spDefense": 63,
+    "speed": 40
+  },
+  {
+    "name": "Crocalor",
+    "speciesNames": {
+      "en": "Crocalor"
+    },
+    "formNames": {},
+    "number": 910,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/crocalor.png",
+    "types": ["fire"],
+    "total": 411,
+    "attack": 81,
+    "defense": 55,
+    "spAttack": 78,
+    "spDefense": 90,
+    "speed": 58
+  },
+  {
+    "name": "Skeledirge",
+    "speciesNames": {
+      "en": "Skeledirge"
+    },
+    "formNames": {},
+    "number": 911,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/skeledirge.png",
+    "types": ["fire", "ghost"],
+    "total": 530,
+    "attack": 104,
+    "defense": 75,
+    "spAttack": 100,
+    "spDefense": 110,
+    "speed": 75
+  },
+  {
+    "name": "Quaxly",
+    "speciesNames": {
+      "en": "Quaxly"
+    },
+    "formNames": {},
+    "number": 912,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/quaxly.png",
+    "types": ["water"],
+    "total": 310,
+    "attack": 55,
+    "defense": 65,
+    "spAttack": 45,
+    "spDefense": 50,
+    "speed": 45
+  },
+  {
+    "name": "Quaxwell",
+    "speciesNames": {
+      "en": "Quaxwell"
+    },
+    "formNames": {},
+    "number": 913,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/quaxwell.png",
+    "types": ["water"],
+    "total": 410,
+    "attack": 70,
+    "defense": 85,
+    "spAttack": 65,
+    "spDefense": 65,
+    "speed": 60
+  },
+  {
+    "name": "Quaquaval",
+    "speciesNames": {
+      "en": "Quaquaval"
+    },
+    "formNames": {},
+    "number": 914,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/quaquaval.png",
+    "types": ["water", "fighting"],
+    "total": 530,
+    "attack": 85,
+    "defense": 120,
+    "spAttack": 80,
+    "spDefense": 85,
+    "speed": 75
+  },
+  {
+    "name": "Lechonk",
+    "speciesNames": {
+      "en": "Lechonk"
+    },
+    "formNames": {},
+    "number": 915,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lechonk.png",
+    "types": ["normal"],
+    "total": 254,
+    "attack": 54,
+    "defense": 45,
+    "spAttack": 40,
+    "spDefense": 35,
+    "speed": 45
+  },
+  {
+    "name": "Oinkologne",
+    "speciesNames": {
+      "en": "Oinkologne"
+    },
+    "formNames": {
+      "en": "Male"
+    },
+    "number": 916,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/oinkologne-male.png",
+    "form": "Male",
+    "types": ["normal"],
+    "total": 489,
+    "attack": 110,
+    "defense": 100,
+    "spAttack": 75,
+    "spDefense": 59,
+    "speed": 80
+  },
+  {
+    "name": "Oinkologne",
+    "speciesNames": {
+      "en": "Oinkologne"
+    },
+    "formNames": {
+      "en": "Female"
+    },
+    "number": 916,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/oinkologne-female.png",
+    "form": "Female",
+    "types": ["normal"],
+    "total": 489,
+    "attack": 115,
+    "defense": 90,
+    "spAttack": 70,
+    "spDefense": 59,
+    "speed": 90
+  },
+  {
+    "name": "Dudunsparce",
+    "speciesNames": {
+      "en": "Dudunsparce"
+    },
+    "formNames": {
+      "en": "Two-Segment Form"
+    },
+    "number": 917,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dudunsparce-two-segment.png",
+    "form": "Two-Segment Form",
+    "types": ["normal"],
+    "total": 520,
+    "attack": 125,
+    "defense": 100,
+    "spAttack": 80,
+    "spDefense": 85,
+    "speed": 75
+  },
+  {
+    "name": "Dudunsparce",
+    "speciesNames": {
+      "en": "Dudunsparce"
+    },
+    "formNames": {
+      "en": "Three-Segment Form"
+    },
+    "number": 917,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dudunsparce-three-segment.png",
+    "form": "Three-Segment Form",
+    "types": ["normal"],
+    "total": 520,
+    "attack": 125,
+    "defense": 100,
+    "spAttack": 80,
+    "spDefense": 85,
+    "speed": 75
+  },
+  {
+    "name": "Tarountula",
+    "speciesNames": {
+      "en": "Tarountula"
+    },
+    "formNames": {},
+    "number": 918,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tarountula.png",
+    "types": ["bug"],
+    "total": 210,
+    "attack": 35,
+    "defense": 41,
+    "spAttack": 45,
+    "spDefense": 29,
+    "speed": 40
+  },
+  {
+    "name": "Spidops",
+    "speciesNames": {
+      "en": "Spidops"
+    },
+    "formNames": {},
+    "number": 919,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/spidops.png",
+    "types": ["bug"],
+    "total": 404,
+    "attack": 60,
+    "defense": 79,
+    "spAttack": 92,
+    "spDefense": 52,
+    "speed": 86
+  },
+  {
+    "name": "Nymble",
+    "speciesNames": {
+      "en": "Nymble"
+    },
+    "formNames": {},
+    "number": 920,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/nymble.png",
+    "types": ["bug"],
+    "total": 210,
+    "attack": 33,
+    "defense": 46,
+    "spAttack": 40,
+    "spDefense": 21,
+    "speed": 25
+  },
+  {
+    "name": "Lokix",
+    "speciesNames": {
+      "en": "Lokix"
+    },
+    "formNames": {},
+    "number": 921,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/lokix.png",
+    "types": ["bug", "dark"],
+    "total": 450,
+    "attack": 71,
+    "defense": 102,
+    "spAttack": 78,
+    "spDefense": 52,
+    "speed": 55
+  },
+  {
+    "name": "Rellor",
+    "speciesNames": {
+      "en": "Rellor"
+    },
+    "formNames": {},
+    "number": 922,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rellor.png",
+    "types": ["bug"],
+    "total": 270,
+    "attack": 41,
+    "defense": 50,
+    "spAttack": 60,
+    "spDefense": 31,
+    "speed": 58
+  },
+  {
+    "name": "Rabsca",
+    "speciesNames": {
+      "en": "Rabsca"
+    },
+    "formNames": {},
+    "number": 923,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/rabsca.png",
+    "types": ["bug", "psychic"],
+    "total": 470,
+    "attack": 75,
+    "defense": 50,
+    "spAttack": 85,
+    "spDefense": 115,
+    "speed": 100
+  },
+  {
+    "name": "Greavard",
+    "speciesNames": {
+      "en": "Greavard"
+    },
+    "formNames": {},
+    "number": 924,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/greavard.png",
+    "types": ["ghost"],
+    "total": 290,
+    "attack": 50,
+    "defense": 61,
+    "spAttack": 60,
+    "spDefense": 30,
+    "speed": 55
+  },
+  {
+    "name": "Houndstone",
+    "speciesNames": {
+      "en": "Houndstone"
+    },
+    "formNames": {},
+    "number": 925,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/houndstone.png",
+    "types": ["ghost"],
+    "total": 488,
+    "attack": 72,
+    "defense": 101,
+    "spAttack": 100,
+    "spDefense": 50,
+    "speed": 97
+  },
+  {
+    "name": "Flittle",
+    "speciesNames": {
+      "en": "Flittle"
+    },
+    "formNames": {},
+    "number": 926,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/flittle.png",
+    "types": ["psychic"],
+    "total": 255,
+    "attack": 30,
+    "defense": 35,
+    "spAttack": 30,
+    "spDefense": 55,
+    "speed": 30
+  },
+  {
+    "name": "Espathra",
+    "speciesNames": {
+      "en": "Espathra"
+    },
+    "formNames": {},
+    "number": 927,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/espathra.png",
+    "types": ["psychic"],
+    "total": 481,
+    "attack": 95,
+    "defense": 60,
+    "spAttack": 60,
+    "spDefense": 101,
+    "speed": 60
+  },
+  {
+    "name": "Farigiraf",
+    "speciesNames": {
+      "en": "Farigiraf"
+    },
+    "formNames": {},
+    "number": 928,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/farigiraf.png",
+    "types": ["normal", "psychic"],
+    "total": 520,
+    "attack": 120,
+    "defense": 90,
+    "spAttack": 70,
+    "spDefense": 110,
+    "speed": 70
+  },
+  {
+    "name": "Wiglett",
+    "speciesNames": {
+      "en": "Wiglett"
+    },
+    "formNames": {},
+    "number": 929,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wiglett.png",
+    "types": ["water"],
+    "total": 245,
+    "attack": 10,
+    "defense": 55,
+    "spAttack": 25,
+    "spDefense": 35,
+    "speed": 25
+  },
+  {
+    "name": "Wugtrio",
+    "speciesNames": {
+      "en": "Wugtrio"
+    },
+    "formNames": {},
+    "number": 930,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wugtrio.png",
+    "types": ["water"],
+    "total": 425,
+    "attack": 35,
+    "defense": 100,
+    "spAttack": 50,
+    "spDefense": 50,
+    "speed": 70
+  },
+  {
+    "name": "Dondozo",
+    "speciesNames": {
+      "en": "Dondozo"
+    },
+    "formNames": {},
+    "number": 931,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dondozo.png",
+    "types": ["water"],
+    "total": 530,
+    "attack": 150,
+    "defense": 100,
+    "spAttack": 115,
+    "spDefense": 65,
+    "speed": 65
+  },
+  {
+    "name": "Veluza",
+    "speciesNames": {
+      "en": "Veluza"
+    },
+    "formNames": {},
+    "number": 932,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/veluza.png",
+    "types": ["water", "psychic"],
+    "total": 478,
+    "attack": 90,
+    "defense": 102,
+    "spAttack": 73,
+    "spDefense": 78,
+    "speed": 65
+  },
+  {
+    "name": "Finizen",
+    "speciesNames": {
+      "en": "Finizen"
+    },
+    "formNames": {},
+    "number": 933,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/finizen.png",
+    "types": ["water"],
+    "total": 315,
+    "attack": 70,
+    "defense": 45,
+    "spAttack": 40,
+    "spDefense": 45,
+    "speed": 40
+  },
+  {
+    "name": "Palafin",
+    "speciesNames": {
+      "en": "Palafin"
+    },
+    "formNames": {
+      "en": "Zero Form"
+    },
+    "number": 934,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/palafin-zero.png",
+    "form": "Zero Form",
+    "types": ["water"],
+    "total": 457,
+    "attack": 100,
+    "defense": 70,
+    "spAttack": 72,
+    "spDefense": 53,
+    "speed": 62
+  },
+  {
+    "name": "Palafin",
+    "speciesNames": {
+      "en": "Palafin"
+    },
+    "formNames": {
+      "en": "Hero Form"
+    },
+    "number": 934,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/palafin-hero.png",
+    "form": "Hero Form",
+    "types": ["water"],
+    "total": 650,
+    "attack": 100,
+    "defense": 160,
+    "spAttack": 97,
+    "spDefense": 106,
+    "speed": 87
+  },
+  {
+    "name": "Smoliv",
+    "speciesNames": {
+      "en": "Smoliv"
+    },
+    "formNames": {},
+    "number": 935,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/smoliv.png",
+    "types": ["grass", "normal"],
+    "total": 260,
+    "attack": 41,
+    "defense": 35,
+    "spAttack": 45,
+    "spDefense": 58,
+    "speed": 51
+  },
+  {
+    "name": "Dolliv",
+    "speciesNames": {
+      "en": "Dolliv"
+    },
+    "formNames": {},
+    "number": 936,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dolliv.png",
+    "types": ["grass", "normal"],
+    "total": 354,
+    "attack": 52,
+    "defense": 53,
+    "spAttack": 60,
+    "spDefense": 78,
+    "speed": 78
+  },
+  {
+    "name": "Arboliva",
+    "speciesNames": {
+      "en": "Arboliva"
+    },
+    "formNames": {},
+    "number": 937,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/arboliva.png",
+    "types": ["grass", "normal"],
+    "total": 510,
+    "attack": 78,
+    "defense": 69,
+    "spAttack": 90,
+    "spDefense": 125,
+    "speed": 109
+  },
+  {
+    "name": "Capsakid",
+    "speciesNames": {
+      "en": "Capsakid"
+    },
+    "formNames": {},
+    "number": 938,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/capsakid.png",
+    "types": ["grass"],
+    "total": 304,
+    "attack": 50,
+    "defense": 62,
+    "spAttack": 40,
+    "spDefense": 62,
+    "speed": 40
+  },
+  {
+    "name": "Scovillain",
+    "speciesNames": {
+      "en": "Scovillain"
+    },
+    "formNames": {},
+    "number": 939,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/scovillain.png",
+    "types": ["grass", "fire"],
+    "total": 486,
+    "attack": 65,
+    "defense": 108,
+    "spAttack": 65,
+    "spDefense": 108,
+    "speed": 65
+  },
+  {
+    "name": "Tadbulb",
+    "speciesNames": {
+      "en": "Tadbulb"
+    },
+    "formNames": {},
+    "number": 940,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tadbulb.png",
+    "types": ["electric"],
+    "total": 272,
+    "attack": 61,
+    "defense": 31,
+    "spAttack": 41,
+    "spDefense": 59,
+    "speed": 35
+  },
+  {
+    "name": "Bellibolt",
+    "speciesNames": {
+      "en": "Bellibolt"
+    },
+    "formNames": {},
+    "number": 941,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/bellibolt.png",
+    "types": ["electric"],
+    "total": 495,
+    "attack": 109,
+    "defense": 64,
+    "spAttack": 91,
+    "spDefense": 103,
+    "speed": 83
+  },
+  {
+    "name": "Varoom",
+    "speciesNames": {
+      "en": "Varoom"
+    },
+    "formNames": {},
+    "number": 942,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/varoom.png",
+    "types": ["steel", "poison"],
+    "total": 300,
+    "attack": 45,
+    "defense": 70,
+    "spAttack": 63,
+    "spDefense": 30,
+    "speed": 45
+  },
+  {
+    "name": "Revavroom",
+    "speciesNames": {
+      "en": "Revavroom"
+    },
+    "formNames": {},
+    "number": 943,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/revavroom.png",
+    "types": ["steel", "poison"],
+    "total": 500,
+    "attack": 80,
+    "defense": 119,
+    "spAttack": 90,
+    "spDefense": 54,
+    "speed": 67
+  },
+  {
+    "name": "Orthworm",
+    "speciesNames": {
+      "en": "Orthworm"
+    },
+    "formNames": {},
+    "number": 944,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/orthworm.png",
+    "types": ["steel"],
+    "total": 480,
+    "attack": 70,
+    "defense": 85,
+    "spAttack": 145,
+    "spDefense": 60,
+    "speed": 55
+  },
+  {
+    "name": "Tandemaus",
+    "speciesNames": {
+      "en": "Tandemaus"
+    },
+    "formNames": {},
+    "number": 945,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tandemaus.png",
+    "types": ["normal"],
+    "total": 305,
+    "attack": 50,
+    "defense": 50,
+    "spAttack": 45,
+    "spDefense": 40,
+    "speed": 45
+  },
+  {
+    "name": "Maushold",
+    "speciesNames": {
+      "en": "Maushold"
+    },
+    "formNames": {
+      "en": "Family of Three"
+    },
+    "number": 946,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/maushold-family3.png",
+    "form": "Family of Three",
+    "types": ["normal"],
+    "total": 470,
+    "attack": 74,
+    "defense": 75,
+    "spAttack": 70,
+    "spDefense": 65,
+    "speed": 75
+  },
+  {
+    "name": "Maushold",
+    "speciesNames": {
+      "en": "Maushold"
+    },
+    "formNames": {
+      "en": "Family of Four"
+    },
+    "number": 946,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/maushold-family4.png",
+    "form": "Family of Four",
+    "types": ["normal"],
+    "total": 470,
+    "attack": 74,
+    "defense": 75,
+    "spAttack": 70,
+    "spDefense": 65,
+    "speed": 75
+  },
+  {
+    "name": "Cetoddle",
+    "speciesNames": {
+      "en": "Cetoddle"
+    },
+    "formNames": {},
+    "number": 947,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cetoddle.png",
+    "types": ["ice"],
+    "total": 334,
+    "attack": 108,
+    "defense": 68,
+    "spAttack": 45,
+    "spDefense": 30,
+    "speed": 40
+  },
+  {
+    "name": "Cetitan",
+    "speciesNames": {
+      "en": "Cetitan"
+    },
+    "formNames": {},
+    "number": 948,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cetitan.png",
+    "types": ["ice"],
+    "total": 521,
+    "attack": 170,
+    "defense": 113,
+    "spAttack": 65,
+    "spDefense": 45,
+    "speed": 55
+  },
+  {
+    "name": "Frigibax",
+    "speciesNames": {
+      "en": "Frigibax"
+    },
+    "formNames": {},
+    "number": 949,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/frigibax.png",
+    "types": ["dragon", "ice"],
+    "total": 320,
+    "attack": 65,
+    "defense": 75,
+    "spAttack": 45,
+    "spDefense": 35,
+    "speed": 45
+  },
+  {
+    "name": "Arctibax",
+    "speciesNames": {
+      "en": "Arctibax"
+    },
+    "formNames": {},
+    "number": 950,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/arctibax.png",
+    "types": ["dragon", "ice"],
+    "total": 423,
+    "attack": 90,
+    "defense": 95,
+    "spAttack": 66,
+    "spDefense": 45,
+    "speed": 65
+  },
+  {
+    "name": "Baxcalibur",
+    "speciesNames": {
+      "en": "Baxcalibur"
+    },
+    "formNames": {},
+    "number": 951,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/baxcalibur.png",
+    "types": ["dragon", "ice"],
+    "total": 600,
+    "attack": 115,
+    "defense": 145,
+    "spAttack": 92,
+    "spDefense": 75,
+    "speed": 86
+  },
+  {
+    "name": "Tatsugiri",
+    "speciesNames": {
+      "en": "Tatsugiri"
+    },
+    "formNames": {},
+    "number": 952,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tatsugiri.png",
+    "types": ["dragon", "water"],
+    "total": 475,
+    "attack": 68,
+    "defense": 50,
+    "spAttack": 60,
+    "spDefense": 120,
+    "speed": 95
+  },
+  {
+    "name": "Cyclizar",
+    "speciesNames": {
+      "en": "Cyclizar"
+    },
+    "formNames": {},
+    "number": 953,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/cyclizar.png",
+    "types": ["dragon", "normal"],
+    "total": 501,
+    "attack": 70,
+    "defense": 95,
+    "spAttack": 65,
+    "spDefense": 85,
+    "speed": 65
+  },
+  {
+    "name": "Pawmi",
+    "speciesNames": {
+      "en": "Pawmi"
+    },
+    "formNames": {},
+    "number": 954,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pawmi.png",
+    "types": ["electric"],
+    "total": 240,
+    "attack": 45,
+    "defense": 50,
+    "spAttack": 20,
+    "spDefense": 40,
+    "speed": 25
+  },
+  {
+    "name": "Pawmo",
+    "speciesNames": {
+      "en": "Pawmo"
+    },
+    "formNames": {},
+    "number": 955,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pawmo.png",
+    "types": ["electric", "fighting"],
+    "total": 350,
+    "attack": 60,
+    "defense": 75,
+    "spAttack": 40,
+    "spDefense": 50,
+    "speed": 40
+  },
+  {
+    "name": "Pawmot",
+    "speciesNames": {
+      "en": "Pawmot"
+    },
+    "formNames": {},
+    "number": 956,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/pawmot.png",
+    "types": ["electric", "fighting"],
+    "total": 490,
+    "attack": 70,
+    "defense": 115,
+    "spAttack": 70,
+    "spDefense": 70,
+    "speed": 60
+  },
+  {
+    "name": "Wattrel",
+    "speciesNames": {
+      "en": "Wattrel"
+    },
+    "formNames": {},
+    "number": 957,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wattrel.png",
+    "types": ["electric", "flying"],
+    "total": 280,
+    "attack": 40,
+    "defense": 40,
+    "spAttack": 35,
+    "spDefense": 55,
+    "speed": 40
+  },
+  {
+    "name": "Kilowattrel",
+    "speciesNames": {
+      "en": "Kilowattrel"
+    },
+    "formNames": {},
+    "number": 958,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kilowattrel.png",
+    "types": ["electric", "flying"],
+    "total": 490,
+    "attack": 70,
+    "defense": 70,
+    "spAttack": 60,
+    "spDefense": 105,
+    "speed": 60
+  },
+  {
+    "name": "Bombirdier",
+    "speciesNames": {
+      "en": "Bombirdier"
+    },
+    "formNames": {},
+    "number": 959,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/bombirdier.png",
+    "types": ["flying", "dark"],
+    "total": 485,
+    "attack": 70,
+    "defense": 103,
+    "spAttack": 85,
+    "spDefense": 60,
+    "speed": 85
+  },
+  {
+    "name": "Squawkabilly",
+    "speciesNames": {
+      "en": "Squawkabilly"
+    },
+    "formNames": {
+      "en": "White Plumage"
+    },
+    "number": 960,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/squawkabilly-white.png",
+    "form": "White Plumage",
+    "types": ["normal", "flying"],
+    "total": 417,
+    "attack": 82,
+    "defense": 96,
+    "spAttack": 51,
+    "spDefense": 45,
+    "speed": 51
+  },
+  {
+    "name": "Squawkabilly",
+    "speciesNames": {
+      "en": "Squawkabilly"
+    },
+    "formNames": {
+      "en": "Yellow Plumage"
+    },
+    "number": 960,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/squawkabilly-yellow.png",
+    "form": "Yellow Plumage",
+    "types": ["normal", "flying"],
+    "total": 417,
+    "attack": 82,
+    "defense": 96,
+    "spAttack": 51,
+    "spDefense": 45,
+    "speed": 51
+  },
+  {
+    "name": "Squawkabilly",
+    "speciesNames": {
+      "en": "Squawkabilly"
+    },
+    "formNames": {
+      "en": "Green Plumage"
+    },
+    "number": 960,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/squawkabilly-green.png",
+    "form": "Green Plumage",
+    "types": ["normal", "flying"],
+    "total": 417,
+    "attack": 82,
+    "defense": 96,
+    "spAttack": 51,
+    "spDefense": 45,
+    "speed": 51
+  },
+  {
+    "name": "Squawkabilly",
+    "speciesNames": {
+      "en": "Squawkabilly"
+    },
+    "formNames": {
+      "en": "Blue Plumage"
+    },
+    "number": 960,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/squawkabilly-blue.png",
+    "form": "Blue Plumage",
+    "types": ["normal", "flying"],
+    "total": 417,
+    "attack": 82,
+    "defense": 96,
+    "spAttack": 51,
+    "spDefense": 45,
+    "speed": 51
+  },
+  {
+    "name": "Flamigo",
+    "speciesNames": {
+      "en": "Flamigo"
+    },
+    "formNames": {},
+    "number": 961,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/flamigo.png",
+    "types": ["flying", "fighting"],
+    "total": 500,
+    "attack": 82,
+    "defense": 115,
+    "spAttack": 74,
+    "spDefense": 75,
+    "speed": 64
+  },
+  {
+    "name": "Klawf",
+    "speciesNames": {
+      "en": "Klawf"
+    },
+    "formNames": {},
+    "number": 962,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/klawf.png",
+    "types": ["rock"],
+    "total": 450,
+    "attack": 70,
+    "defense": 100,
+    "spAttack": 115,
+    "spDefense": 35,
+    "speed": 55
+  },
+  {
+    "name": "Nacli",
+    "speciesNames": {
+      "en": "Nacli"
+    },
+    "formNames": {},
+    "number": 963,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/nacli.png",
+    "types": ["rock"],
+    "total": 280,
+    "attack": 55,
+    "defense": 55,
+    "spAttack": 75,
+    "spDefense": 35,
+    "speed": 35
+  },
+  {
+    "name": "Naclstack",
+    "speciesNames": {
+      "en": "Naclstack"
+    },
+    "formNames": {},
+    "number": 964,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/naclstack.png",
+    "types": ["rock"],
+    "total": 355,
+    "attack": 60,
+    "defense": 60,
+    "spAttack": 100,
+    "spDefense": 35,
+    "speed": 65
+  },
+  {
+    "name": "Garganacl",
+    "speciesNames": {
+      "en": "Garganacl"
+    },
+    "formNames": {},
+    "number": 965,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/garganacl.png",
+    "types": ["rock"],
+    "total": 500,
+    "attack": 100,
+    "defense": 100,
+    "spAttack": 130,
+    "spDefense": 45,
+    "speed": 90
+  },
+  {
+    "name": "Glimmet",
+    "speciesNames": {
+      "en": "Glimmet"
+    },
+    "formNames": {},
+    "number": 966,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/glimmet.png",
+    "types": ["rock", "poison"],
+    "total": 350,
+    "attack": 48,
+    "defense": 35,
+    "spAttack": 42,
+    "spDefense": 105,
+    "speed": 60
+  },
+  {
+    "name": "Glimmora",
+    "speciesNames": {
+      "en": "Glimmora"
+    },
+    "formNames": {},
+    "number": 967,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/glimmora.png",
+    "types": ["rock", "poison"],
+    "total": 525,
+    "attack": 83,
+    "defense": 55,
+    "spAttack": 90,
+    "spDefense": 130,
+    "speed": 81
+  },
+  {
+    "name": "Shroodle",
+    "speciesNames": {
+      "en": "Shroodle"
+    },
+    "formNames": {},
+    "number": 968,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/shroodle.png",
+    "types": ["poison", "normal"],
+    "total": 290,
+    "attack": 40,
+    "defense": 65,
+    "spAttack": 35,
+    "spDefense": 40,
+    "speed": 35
+  },
+  {
+    "name": "Grafaiai",
+    "speciesNames": {
+      "en": "Grafaiai"
+    },
+    "formNames": {},
+    "number": 969,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/grafaiai.png",
+    "types": ["poison", "normal"],
+    "total": 485,
+    "attack": 63,
+    "defense": 95,
+    "spAttack": 65,
+    "spDefense": 80,
+    "speed": 72
+  },
+  {
+    "name": "Fidough",
+    "speciesNames": {
+      "en": "Fidough"
+    },
+    "formNames": {},
+    "number": 970,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/fidough.png",
+    "types": ["fairy"],
+    "total": 312,
+    "attack": 37,
+    "defense": 55,
+    "spAttack": 70,
+    "spDefense": 30,
+    "speed": 55
+  },
+  {
+    "name": "Dachsbun",
+    "speciesNames": {
+      "en": "Dachsbun"
+    },
+    "formNames": {},
+    "number": 971,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/dachsbun.png",
+    "types": ["fairy"],
+    "total": 477,
+    "attack": 57,
+    "defense": 80,
+    "spAttack": 115,
+    "spDefense": 50,
+    "speed": 80
+  },
+  {
+    "name": "Maschiff",
+    "speciesNames": {
+      "en": "Maschiff"
+    },
+    "formNames": {},
+    "number": 972,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/maschiff.png",
+    "types": ["dark"],
+    "total": 340,
+    "attack": 60,
+    "defense": 78,
+    "spAttack": 60,
+    "spDefense": 40,
+    "speed": 51
+  },
+  {
+    "name": "Mabosstiff",
+    "speciesNames": {
+      "en": "Mabosstiff"
+    },
+    "formNames": {},
+    "number": 973,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/mabosstiff.png",
+    "types": ["dark"],
+    "total": 505,
+    "attack": 80,
+    "defense": 120,
+    "spAttack": 90,
+    "spDefense": 60,
+    "speed": 70
+  },
+  {
+    "name": "Bramblin",
+    "speciesNames": {
+      "en": "Bramblin"
+    },
+    "formNames": {},
+    "number": 974,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/bramblin.png",
+    "types": ["grass", "ghost"],
+    "total": 275,
+    "attack": 40,
+    "defense": 65,
+    "spAttack": 30,
+    "spDefense": 45,
+    "speed": 35
+  },
+  {
+    "name": "Brambleghast",
+    "speciesNames": {
+      "en": "Brambleghast"
+    },
+    "formNames": {},
+    "number": 975,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/brambleghast.png",
+    "types": ["grass", "ghost"],
+    "total": 480,
+    "attack": 55,
+    "defense": 115,
+    "spAttack": 70,
+    "spDefense": 80,
+    "speed": 70
+  },
+  {
+    "name": "Gimmighoul",
+    "speciesNames": {
+      "en": "Gimmighoul"
+    },
+    "formNames": {
+      "en": "Chest Form"
+    },
+    "number": 976,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gimmighoul-chest.png",
+    "form": "Chest Form",
+    "types": ["ghost"],
+    "total": 300,
+    "attack": 45,
+    "defense": 30,
+    "spAttack": 70,
+    "spDefense": 75,
+    "speed": 70
+  },
+  {
+    "name": "Gimmighoul",
+    "speciesNames": {
+      "en": "Gimmighoul"
+    },
+    "formNames": {
+      "en": "Roaming Form"
+    },
+    "number": 976,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gimmighoul-roaming.png",
+    "form": "Roaming Form",
+    "types": ["ghost"],
+    "total": 300,
+    "attack": 45,
+    "defense": 30,
+    "spAttack": 25,
+    "spDefense": 75,
+    "speed": 45
+  },
+  {
+    "name": "Gholdengo",
+    "speciesNames": {
+      "en": "Gholdengo"
+    },
+    "formNames": {},
+    "number": 977,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/gholdengo.png",
+    "types": ["steel", "ghost"],
+    "total": 550,
+    "attack": 87,
+    "defense": 60,
+    "spAttack": 95,
+    "spDefense": 133,
+    "speed": 91
+  },
+  {
+    "name": "Great Tusk",
+    "speciesNames": {
+      "en": "Great Tusk"
+    },
+    "formNames": {},
+    "number": 978,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/great-tusk.png",
+    "types": ["ground", "fighting"],
+    "total": 570,
+    "attack": 115,
+    "defense": 131,
+    "spAttack": 131,
+    "spDefense": 53,
+    "speed": 53
+  },
+  {
+    "name": "Brute Bonnet",
+    "speciesNames": {
+      "en": "Brute Bonnet"
+    },
+    "formNames": {},
+    "number": 979,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/brute-bonnet.png",
+    "types": ["grass", "dark"],
+    "total": 570,
+    "attack": 111,
+    "defense": 127,
+    "spAttack": 99,
+    "spDefense": 79,
+    "speed": 99
+  },
+  {
+    "name": "Sandy Shocks",
+    "speciesNames": {
+      "en": "Sandy Shocks"
+    },
+    "formNames": {},
+    "number": 981,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/sandy-shocks.png",
+    "types": ["electric", "ground"],
+    "total": 570,
+    "attack": 85,
+    "defense": 81,
+    "spAttack": 97,
+    "spDefense": 121,
+    "speed": 85
+  },
+  {
+    "name": "Scream Tail",
+    "speciesNames": {
+      "en": "Scream Tail"
+    },
+    "formNames": {},
+    "number": 982,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/scream-tail.png",
+    "types": ["fairy", "psychic"],
+    "total": 570,
+    "attack": 115,
+    "defense": 65,
+    "spAttack": 99,
+    "spDefense": 65,
+    "speed": 115
+  },
+  {
+    "name": "Flutter Mane",
+    "speciesNames": {
+      "en": "Flutter Mane"
+    },
+    "formNames": {},
+    "number": 983,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/flutter-mane.png",
+    "types": ["ghost", "fairy"],
+    "total": 570,
+    "attack": 55,
+    "defense": 55,
+    "spAttack": 55,
+    "spDefense": 135,
+    "speed": 135
+  },
+  {
+    "name": "Slither Wing",
+    "speciesNames": {
+      "en": "Slither Wing"
+    },
+    "formNames": {},
+    "number": 984,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/slither-wing.png",
+    "types": ["bug", "fighting"],
+    "total": 570,
+    "attack": 85,
+    "defense": 135,
+    "spAttack": 79,
+    "spDefense": 85,
+    "speed": 105
+  },
+  {
+    "name": "Roaring Moon",
+    "speciesNames": {
+      "en": "Roaring Moon"
+    },
+    "formNames": {},
+    "number": 985,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/roaring-moon.png",
+    "types": ["dragon", "dark"],
+    "total": 590,
+    "attack": 105,
+    "defense": 139,
+    "spAttack": 71,
+    "spDefense": 55,
+    "speed": 101
+  },
+  {
+    "name": "Iron Treads",
+    "speciesNames": {
+      "en": "Iron Treads"
+    },
+    "formNames": {},
+    "number": 986,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/iron-treads.png",
+    "types": ["ground", "steel"],
+    "total": 570,
+    "attack": 90,
+    "defense": 112,
+    "spAttack": 120,
+    "spDefense": 72,
+    "speed": 70
+  },
+  {
+    "name": "Iron Moth",
+    "speciesNames": {
+      "en": "Iron Moth"
+    },
+    "formNames": {},
+    "number": 988,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/iron-moth.png",
+    "types": ["fire", "poison"],
+    "total": 570,
+    "attack": 80,
+    "defense": 70,
+    "spAttack": 60,
+    "spDefense": 140,
+    "speed": 110
+  },
+  {
+    "name": "Iron Hands",
+    "speciesNames": {
+      "en": "Iron Hands"
+    },
+    "formNames": {},
+    "number": 989,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/iron-hands.png",
+    "types": ["fighting", "electric"],
+    "total": 570,
+    "attack": 154,
+    "defense": 140,
+    "spAttack": 108,
+    "spDefense": 50,
+    "speed": 68
+  },
+  {
+    "name": "Iron Jugulis",
+    "speciesNames": {
+      "en": "Iron Jugulis"
+    },
+    "formNames": {},
+    "number": 990,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/iron-jugulis.png",
+    "types": ["dark", "flying"],
+    "total": 570,
+    "attack": 94,
+    "defense": 80,
+    "spAttack": 86,
+    "spDefense": 122,
+    "speed": 80
+  },
+  {
+    "name": "Iron Thorns",
+    "speciesNames": {
+      "en": "Iron Thorns"
+    },
+    "formNames": {},
+    "number": 991,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/iron-thorns.png",
+    "types": ["rock", "electric"],
+    "total": 570,
+    "attack": 100,
+    "defense": 134,
+    "spAttack": 110,
+    "spDefense": 70,
+    "speed": 84
+  },
+  {
+    "name": "Iron Bundle",
+    "speciesNames": {
+      "en": "Iron Bundle"
+    },
+    "formNames": {},
+    "number": 992,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/iron-bundle.png",
+    "types": ["ice", "water"],
+    "total": 570,
+    "attack": 56,
+    "defense": 80,
+    "spAttack": 114,
+    "spDefense": 124,
+    "speed": 60
+  },
+  {
+    "name": "Iron Valiant",
+    "speciesNames": {
+      "en": "Iron Valiant"
+    },
+    "formNames": {},
+    "number": 993,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/iron-valiant.png",
+    "types": ["fairy", "fighting"],
+    "total": 590,
+    "attack": 74,
+    "defense": 130,
+    "spAttack": 90,
+    "spDefense": 120,
+    "speed": 60
+  },
+  {
+    "name": "Ting-Lu",
+    "speciesNames": {
+      "en": "Ting-Lu"
+    },
+    "formNames": {},
+    "number": 994,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ting-lu.png",
+    "types": ["dark", "ground"],
+    "total": 570,
+    "attack": 155,
+    "defense": 110,
+    "spAttack": 125,
+    "spDefense": 55,
+    "speed": 80
+  },
+  {
+    "name": "Chien-Pao",
+    "speciesNames": {
+      "en": "Chien-Pao"
+    },
+    "formNames": {},
+    "number": 995,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/chien-pao.png",
+    "types": ["dark", "ice"],
+    "total": 570,
+    "attack": 80,
+    "defense": 120,
+    "spAttack": 80,
+    "spDefense": 90,
+    "speed": 65
+  },
+  {
+    "name": "Wo-Chien",
+    "speciesNames": {
+      "en": "Wo-Chien"
+    },
+    "formNames": {},
+    "number": 996,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/wo-chien.png",
+    "types": ["dark", "grass"],
+    "total": 570,
+    "attack": 85,
+    "defense": 85,
+    "spAttack": 100,
+    "spDefense": 95,
+    "speed": 135
+  },
+  {
+    "name": "Chi-Yu",
+    "speciesNames": {
+      "en": "Chi-Yu"
+    },
+    "formNames": {},
+    "number": 997,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/chi-yu.png",
+    "types": ["dark", "fire"],
+    "total": 570,
+    "attack": 55,
+    "defense": 80,
+    "spAttack": 80,
+    "spDefense": 135,
+    "speed": 120
+  },
+  {
+    "name": "Koraidon",
+    "speciesNames": {
+      "en": "Koraidon"
+    },
+    "formNames": {},
+    "number": 998,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/koraidon.png",
+    "types": ["fighting", "dragon"],
+    "total": 670,
+    "attack": 100,
+    "defense": 135,
+    "spAttack": 115,
+    "spDefense": 85,
+    "speed": 100
+  },
+  {
+    "name": "Miraidon",
+    "speciesNames": {
+      "en": "Miraidon"
+    },
+    "formNames": {},
+    "number": 999,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/miraidon.png",
+    "types": ["electric", "dragon"],
+    "total": 670,
+    "attack": 100,
+    "defense": 85,
+    "spAttack": 100,
+    "spDefense": 135,
+    "speed": 115
+  },
+  {
+    "name": "Tinkatink",
+    "speciesNames": {
+      "en": "Tinkatink"
+    },
+    "formNames": {},
+    "number": 1000,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tinkatink.png",
+    "types": ["fairy", "steel"],
+    "total": 297,
+    "attack": 50,
+    "defense": 45,
+    "spAttack": 45,
+    "spDefense": 35,
+    "speed": 64
+  },
+  {
+    "name": "Tinkatuff",
+    "speciesNames": {
+      "en": "Tinkatuff"
+    },
+    "formNames": {},
+    "number": 1001,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tinkatuff.png",
+    "types": ["fairy", "steel"],
+    "total": 380,
+    "attack": 65,
+    "defense": 55,
+    "spAttack": 55,
+    "spDefense": 45,
+    "speed": 82
+  },
+  {
+    "name": "Tinkaton",
+    "speciesNames": {
+      "en": "Tinkaton"
+    },
+    "formNames": {},
+    "number": 1002,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tinkaton.png",
+    "types": ["fairy", "steel"],
+    "total": 506,
+    "attack": 85,
+    "defense": 75,
+    "spAttack": 77,
+    "spDefense": 70,
+    "speed": 105
+  },
+  {
+    "name": "Charcadet",
+    "speciesNames": {
+      "en": "Charcadet"
+    },
+    "formNames": {},
+    "number": 1003,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/charcadet.png",
+    "types": ["fire"],
+    "total": 255,
+    "attack": 40,
+    "defense": 50,
+    "spAttack": 40,
+    "spDefense": 50,
+    "speed": 40
+  },
+  {
+    "name": "Armarouge",
+    "speciesNames": {
+      "en": "Armarouge"
+    },
+    "formNames": {},
+    "number": 1004,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/armarouge.png",
+    "types": ["fire", "psychic"],
+    "total": 525,
+    "attack": 85,
+    "defense": 60,
+    "spAttack": 100,
+    "spDefense": 125,
+    "speed": 80
+  },
+  {
+    "name": "Ceruledge",
+    "speciesNames": {
+      "en": "Ceruledge"
+    },
+    "formNames": {},
+    "number": 1005,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/ceruledge.png",
+    "types": ["fire", "ghost"],
+    "total": 525,
+    "attack": 75,
+    "defense": 125,
+    "spAttack": 80,
+    "spDefense": 60,
+    "speed": 100
+  },
+  {
+    "name": "Toedscool",
+    "speciesNames": {
+      "en": "Toedscool"
+    },
+    "formNames": {},
+    "number": 1006,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/toedscool.png",
+    "types": ["ground", "grass"],
+    "total": 335,
+    "attack": 40,
+    "defense": 40,
+    "spAttack": 35,
+    "spDefense": 50,
+    "speed": 100
+  },
+  {
+    "name": "Toedscruel",
+    "speciesNames": {
+      "en": "Toedscruel"
+    },
+    "formNames": {},
+    "number": 1007,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/toedscruel.png",
+    "types": ["ground", "grass"],
+    "total": 515,
+    "attack": 80,
+    "defense": 70,
+    "spAttack": 65,
+    "spDefense": 80,
+    "speed": 120
+  },
+  {
+    "name": "Kingambit",
+    "speciesNames": {
+      "en": "Kingambit"
+    },
+    "formNames": {},
+    "number": 1008,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/kingambit.png",
+    "types": ["dark", "steel"],
+    "total": 550,
+    "attack": 100,
+    "defense": 135,
+    "spAttack": 120,
+    "spDefense": 60,
+    "speed": 85
+  },
+  {
+    "name": "Clodsire",
+    "speciesNames": {
+      "en": "Clodsire"
+    },
+    "formNames": {},
+    "number": 1009,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/clodsire.png",
+    "types": ["poison", "ground"],
+    "total": 430,
+    "attack": 130,
+    "defense": 75,
+    "spAttack": 60,
+    "spDefense": 45,
+    "speed": 100
+  },
+  {
+    "name": "Annihilape",
+    "speciesNames": {
+      "en": "Annihilape"
+    },
+    "formNames": {},
+    "number": 1010,
+    "imageURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/annihilape.png",
+    "types": ["fighting", "ghost"],
+    "total": 535,
+    "attack": 110,
+    "defense": 115,
+    "spAttack": 80,
+    "spDefense": 50,
+    "speed": 90
+  }
+]
