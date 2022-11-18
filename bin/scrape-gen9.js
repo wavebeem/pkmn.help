@@ -28,7 +28,7 @@
         cellSpDef,
         cellSpeed,
       ] = $$("td", row);
-      const imageURL = $("img", cellIconAndNumber).src;
+      const spriteURL = $("img", cellIconAndNumber).src;
       const number = Number(
         $(".infocard-cell-data", cellIconAndNumber).textContent
       );
@@ -53,7 +53,7 @@
           en: form,
         },
         number,
-        imageURL,
+        spriteURL,
         form,
         types,
         total,
