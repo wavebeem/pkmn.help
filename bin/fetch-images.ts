@@ -16,18 +16,17 @@ async function main(): Promise<void> {
   const list = readJSON(SRC);
   for (const item of list) {
     const imgFilename = path.resolve(IMG_DEST, `${item.id}.png`);
-    if (item.spriteURL && !fs.existsSync(imgFilename)) {
+    if (item.spriteURL && item.spriteURL.includes("img.pokemondb.net")) {
       console.log(imgFilename);
-      if (item.spriteURL.includes("img.pokemondb.net")) {
-        const url = item.spriteURL.replace("/icon/", "/normal/");
-        console.log(url);
-        const img = await fetchBuffer(url);
-        fs.writeFileSync(path.resolve(IMG_DEST, `${item.id}.tmp.png`), img);
-      } else {
-        const img = await fetchBuffer(item.spriteURL);
-        fs.writeFileSync(imgFilename, img);
-      }
+      const url = item.spriteURL.replace("/icon/", "/normal/");
+      console.log(url);
+      const img = await fetchBuffer(url);
+      fs.writeFileSync(imgFilename, img);
+      // fs.writeFileSync(path.resolve(IMG_DEST, `${item.id}.tmp.png`), img);
       console.log(item.id);
+    } else if (item.spriteURL && !fs.existsSync(imgFilename)) {
+      const img = await fetchBuffer(item.spriteURL);
+      fs.writeFileSync(imgFilename, img);
     }
     delete item.spriteURL;
   }
