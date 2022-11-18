@@ -98,6 +98,7 @@ function Monster({ pokemon }: MonsterProps) {
                 scale={2}
                 pokemonID={pokemon.id}
                 types={pokemon.types}
+                imageType={pokemon.imageType}
               />
             </div>
             <div className="flex gap1 justify-center">

@@ -15,6 +15,7 @@ export interface Pokemon {
   spAttack: number;
   spDefense: number;
   speed: number;
+  imageType: "sprite" | "hd";
 }
 
 export enum Type {

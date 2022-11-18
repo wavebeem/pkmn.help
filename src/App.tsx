@@ -151,6 +151,7 @@ export default function App() {
               <MonsterImage
                 pokemonID={easterEgg.id}
                 types={easterEgg.types}
+                imageType={easterEgg.imageType}
                 onLoad={({ pokemonID }) => {
                   setEasterEggLoadedID(pokemonID);
                 }}

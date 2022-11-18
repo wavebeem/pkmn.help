@@ -10,6 +10,7 @@ interface MonsterImageProps {
   pokemonID: string;
   types: Type[];
   onLoad?: ({ pokemonID }: { pokemonID: string }) => void;
+  imageType: "sprite" | "hd";
   scale?: number;
 }
 
@@ -17,6 +18,7 @@ export function MonsterImage({
   pokemonID,
   types,
   onLoad,
+  imageType,
   scale = 1,
 }: MonsterImageProps): JSX.Element {
   const [state, setState] = React.useState<State>("loading");
@@ -38,8 +40,9 @@ export function MonsterImage({
         src={getImage(pokemonID)}
         role="presentation"
         alt=""
-        className={classNames("db img-crisp img-shadow h-auto", {
+        className={classNames("db img-shadow h-auto", {
           "o-0": state === "errored",
+          "img-crisp": imageType==="sprite"
         })}
         width={96 * scale}
         height={96 * scale}

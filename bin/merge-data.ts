@@ -29,6 +29,15 @@ function pkmnUniqBy(mon: Record<string, any>): string {
 async function main() {
   const pokeapi: Record<string, any>[] = loadJSON(pokeapiJSON);
   const gen9: Record<string, any>[] = loadJSON(pokemondbJSON);
+
+  for (const mon of pokeapi) {
+    mon.imageType = "sprite";
+  }
+
+  for (const mon of gen9) {
+    mon.imageType = "hd";
+  }
+
   const mons = [...pokeapi, ...gen9];
   const idSet = new Set<string>();
 
