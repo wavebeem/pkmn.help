@@ -30,8 +30,28 @@ async function main() {
   const pokeapi: Record<string, any>[] = loadJSON(pokeapiJSON);
   const gen9: Record<string, any>[] = loadJSON(pokemondbJSON);
   const mons = [...pokeapi, ...gen9];
+  const idSet = new Set<string>();
+
   const uniqMons = uniqBy(mons, pkmnUniqBy);
   const sortedMons = sortBy(uniqMons, (mon) => mon.number);
+
+  // Create unique IDs for gen9 data
+  for (const m of sortedMons) {
+    const id = String(m.id || m.number);
+    if (idSet.has(id)) {
+      console.log(m.name, m.formNames.en, id, "exists...");
+      let i = 1;
+      while (idSet.has(id + "-" + i)) {
+        i++;
+      }
+      m.id = id + "-" + i;
+      console.log(m.name, m.formNames.en, m.id);
+    } else {
+      m.id = id;
+    }
+    idSet.add(m.id);
+  }
+
   saveJSON(mergedJSON, sortedMons, { indent: 2 });
   saveJSON(destJSON, sortedMons, { indent: 0 });
 }

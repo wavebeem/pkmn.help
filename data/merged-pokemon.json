@@ -5451,7 +5451,8 @@
     "defense": 105,
     "spAttack": 30,
     "spDefense": 70,
-    "speed": 100
+    "speed": 100,
+    "id": "128-1"
   },
   {
     "name": "Tauros",
@@ -5474,7 +5475,8 @@
     "defense": 105,
     "spAttack": 30,
     "spDefense": 70,
-    "speed": 100
+    "speed": 100,
+    "id": "128-2"
   },
   {
     "name": "Tauros",
@@ -5497,7 +5499,8 @@
     "defense": 105,
     "spAttack": 30,
     "spDefense": 70,
-    "speed": 100
+    "speed": 100,
+    "id": "128-3"
   },
   {
     "name": "magikarp",
@@ -7853,7 +7856,8 @@
     "defense": 45,
     "spAttack": 25,
     "spDefense": 25,
-    "speed": 15
+    "speed": 15,
+    "id": "194-1"
   },
   {
     "name": "quagsire",
@@ -33716,7 +33720,8 @@
     "defense": 54,
     "spAttack": 45,
     "spDefense": 45,
-    "speed": 65
+    "speed": 65,
+    "id": "906"
   },
   {
     "name": "Floragato",
@@ -33735,7 +33740,8 @@
     "defense": 63,
     "spAttack": 60,
     "spDefense": 63,
-    "speed": 83
+    "speed": 83,
+    "id": "907"
   },
   {
     "name": "Meowscarada",
@@ -33755,7 +33761,8 @@
     "defense": 70,
     "spAttack": 81,
     "spDefense": 70,
-    "speed": 123
+    "speed": 123,
+    "id": "908"
   },
   {
     "name": "Fuecoco",
@@ -33774,7 +33781,8 @@
     "defense": 59,
     "spAttack": 63,
     "spDefense": 40,
-    "speed": 36
+    "speed": 36,
+    "id": "909"
   },
   {
     "name": "Crocalor",
@@ -33793,7 +33801,8 @@
     "defense": 78,
     "spAttack": 90,
     "spDefense": 58,
-    "speed": 49
+    "speed": 49,
+    "id": "910"
   },
   {
     "name": "Skeledirge",
@@ -33813,7 +33822,8 @@
     "defense": 100,
     "spAttack": 110,
     "spDefense": 75,
-    "speed": 66
+    "speed": 66,
+    "id": "911"
   },
   {
     "name": "Quaxly",
@@ -33832,7 +33842,8 @@
     "defense": 45,
     "spAttack": 50,
     "spDefense": 45,
-    "speed": 50
+    "speed": 50,
+    "id": "912"
   },
   {
     "name": "Quaxwell",
@@ -33851,7 +33862,8 @@
     "defense": 65,
     "spAttack": 65,
     "spDefense": 60,
-    "speed": 65
+    "speed": 65,
+    "id": "913"
   },
   {
     "name": "Quaquaval",
@@ -33871,7 +33883,8 @@
     "defense": 80,
     "spAttack": 85,
     "spDefense": 75,
-    "speed": 85
+    "speed": 85,
+    "id": "914"
   },
   {
     "name": "Lechonk",
@@ -33890,7 +33903,8 @@
     "defense": 40,
     "spAttack": 35,
     "spDefense": 45,
-    "speed": 35
+    "speed": 35,
+    "id": "915"
   },
   {
     "name": "Oinkologne",
@@ -33912,7 +33926,8 @@
     "defense": 75,
     "spAttack": 59,
     "spDefense": 80,
-    "speed": 65
+    "speed": 65,
+    "id": "916"
   },
   {
     "name": "Oinkologne",
@@ -33934,7 +33949,8 @@
     "defense": 70,
     "spAttack": 59,
     "spDefense": 90,
-    "speed": 65
+    "speed": 65,
+    "id": "916-1"
   },
   {
     "name": "Dudunsparce",
@@ -33956,7 +33972,8 @@
     "defense": 80,
     "spAttack": 85,
     "spDefense": 75,
-    "speed": 55
+    "speed": 55,
+    "id": "917"
   },
   {
     "name": "Tarountula",
@@ -33975,7 +33992,8 @@
     "defense": 45,
     "spAttack": 29,
     "spDefense": 40,
-    "speed": 20
+    "speed": 20,
+    "id": "918"
   },
   {
     "name": "Spidops",
@@ -33994,7 +34012,8 @@
     "defense": 92,
     "spAttack": 52,
     "spDefense": 86,
-    "speed": 35
+    "speed": 35,
+    "id": "919"
   },
   {
     "name": "Nymble",
@@ -34013,7 +34032,8 @@
     "defense": 40,
     "spAttack": 21,
     "spDefense": 25,
-    "speed": 45
+    "speed": 45,
+    "id": "920"
   },
   {
     "name": "Lokix",
@@ -34033,7 +34053,8 @@
     "defense": 78,
     "spAttack": 52,
     "spDefense": 55,
-    "speed": 92
+    "speed": 92,
+    "id": "921"
   },
   {
     "name": "Rellor",
@@ -34052,7 +34073,8 @@
     "defense": 60,
     "spAttack": 31,
     "spDefense": 58,
-    "speed": 30
+    "speed": 30,
+    "id": "922"
   },
   {
     "name": "Rabsca",
@@ -34072,7 +34094,8 @@
     "defense": 85,
     "spAttack": 115,
     "spDefense": 100,
-    "speed": 45
+    "speed": 45,
+    "id": "923"
   },
   {
     "name": "Greavard",
@@ -34091,7 +34114,8 @@
     "defense": 60,
     "spAttack": 30,
     "spDefense": 55,
-    "speed": 34
+    "speed": 34,
+    "id": "924"
   },
   {
     "name": "Houndstone",
@@ -34110,7 +34134,8 @@
     "defense": 100,
     "spAttack": 50,
     "spDefense": 97,
-    "speed": 68
+    "speed": 68,
+    "id": "925"
   },
   {
     "name": "Flittle",
@@ -34129,7 +34154,8 @@
     "defense": 30,
     "spAttack": 55,
     "spDefense": 30,
-    "speed": 75
+    "speed": 75,
+    "id": "926"
   },
   {
     "name": "Espathra",
@@ -34148,7 +34174,8 @@
     "defense": 60,
     "spAttack": 101,
     "spDefense": 60,
-    "speed": 105
+    "speed": 105,
+    "id": "927"
   },
   {
     "name": "Farigiraf",
@@ -34168,7 +34195,8 @@
     "defense": 70,
     "spAttack": 110,
     "spDefense": 70,
-    "speed": 60
+    "speed": 60,
+    "id": "928"
   },
   {
     "name": "Wiglett",
@@ -34187,7 +34215,8 @@
     "defense": 25,
     "spAttack": 35,
     "spDefense": 25,
-    "speed": 95
+    "speed": 95,
+    "id": "929"
   },
   {
     "name": "Wugtrio",
@@ -34206,7 +34235,8 @@
     "defense": 50,
     "spAttack": 50,
     "spDefense": 70,
-    "speed": 120
+    "speed": 120,
+    "id": "930"
   },
   {
     "name": "Dondozo",
@@ -34225,7 +34255,8 @@
     "defense": 115,
     "spAttack": 65,
     "spDefense": 65,
-    "speed": 35
+    "speed": 35,
+    "id": "931"
   },
   {
     "name": "Veluza",
@@ -34245,7 +34276,8 @@
     "defense": 73,
     "spAttack": 78,
     "spDefense": 65,
-    "speed": 70
+    "speed": 70,
+    "id": "932"
   },
   {
     "name": "Finizen",
@@ -34264,7 +34296,8 @@
     "defense": 40,
     "spAttack": 45,
     "spDefense": 40,
-    "speed": 75
+    "speed": 75,
+    "id": "933"
   },
   {
     "name": "Palafin",
@@ -34286,7 +34319,8 @@
     "defense": 72,
     "spAttack": 53,
     "spDefense": 62,
-    "speed": 100
+    "speed": 100,
+    "id": "934"
   },
   {
     "name": "Palafin",
@@ -34308,7 +34342,8 @@
     "defense": 97,
     "spAttack": 106,
     "spDefense": 87,
-    "speed": 100
+    "speed": 100,
+    "id": "934-1"
   },
   {
     "name": "Smoliv",
@@ -34328,7 +34363,8 @@
     "defense": 45,
     "spAttack": 58,
     "spDefense": 51,
-    "speed": 30
+    "speed": 30,
+    "id": "935"
   },
   {
     "name": "Dolliv",
@@ -34348,7 +34384,8 @@
     "defense": 60,
     "spAttack": 78,
     "spDefense": 78,
-    "speed": 33
+    "speed": 33,
+    "id": "936"
   },
   {
     "name": "Arboliva",
@@ -34368,7 +34405,8 @@
     "defense": 90,
     "spAttack": 125,
     "spDefense": 109,
-    "speed": 39
+    "speed": 39,
+    "id": "937"
   },
   {
     "name": "Capsakid",
@@ -34387,7 +34425,8 @@
     "defense": 40,
     "spAttack": 62,
     "spDefense": 40,
-    "speed": 50
+    "speed": 50,
+    "id": "938"
   },
   {
     "name": "Scovillain",
@@ -34407,7 +34446,8 @@
     "defense": 65,
     "spAttack": 108,
     "spDefense": 65,
-    "speed": 75
+    "speed": 75,
+    "id": "939"
   },
   {
     "name": "Tadbulb",
@@ -34426,7 +34466,8 @@
     "defense": 41,
     "spAttack": 59,
     "spDefense": 35,
-    "speed": 45
+    "speed": 45,
+    "id": "940"
   },
   {
     "name": "Bellibolt",
@@ -34445,7 +34486,8 @@
     "defense": 91,
     "spAttack": 103,
     "spDefense": 83,
-    "speed": 45
+    "speed": 45,
+    "id": "941"
   },
   {
     "name": "Varoom",
@@ -34465,7 +34507,8 @@
     "defense": 63,
     "spAttack": 30,
     "spDefense": 45,
-    "speed": 47
+    "speed": 47,
+    "id": "942"
   },
   {
     "name": "Revavroom",
@@ -34485,7 +34528,8 @@
     "defense": 90,
     "spAttack": 54,
     "spDefense": 67,
-    "speed": 90
+    "speed": 90,
+    "id": "943"
   },
   {
     "name": "Orthworm",
@@ -34504,7 +34548,8 @@
     "defense": 145,
     "spAttack": 60,
     "spDefense": 55,
-    "speed": 65
+    "speed": 65,
+    "id": "944"
   },
   {
     "name": "Tandemaus",
@@ -34523,7 +34568,8 @@
     "defense": 45,
     "spAttack": 40,
     "spDefense": 45,
-    "speed": 75
+    "speed": 75,
+    "id": "945"
   },
   {
     "name": "Maushold",
@@ -34545,7 +34591,8 @@
     "defense": 70,
     "spAttack": 65,
     "spDefense": 75,
-    "speed": 111
+    "speed": 111,
+    "id": "946"
   },
   {
     "name": "Cetoddle",
@@ -34564,7 +34611,8 @@
     "defense": 45,
     "spAttack": 30,
     "spDefense": 40,
-    "speed": 43
+    "speed": 43,
+    "id": "947"
   },
   {
     "name": "Cetitan",
@@ -34583,7 +34631,8 @@
     "defense": 65,
     "spAttack": 45,
     "spDefense": 55,
-    "speed": 73
+    "speed": 73,
+    "id": "948"
   },
   {
     "name": "Frigibax",
@@ -34603,7 +34652,8 @@
     "defense": 45,
     "spAttack": 35,
     "spDefense": 45,
-    "speed": 55
+    "speed": 55,
+    "id": "949"
   },
   {
     "name": "Arctibax",
@@ -34623,7 +34673,8 @@
     "defense": 66,
     "spAttack": 45,
     "spDefense": 65,
-    "speed": 62
+    "speed": 62,
+    "id": "950"
   },
   {
     "name": "Baxcalibur",
@@ -34643,7 +34694,8 @@
     "defense": 92,
     "spAttack": 75,
     "spDefense": 86,
-    "speed": 87
+    "speed": 87,
+    "id": "951"
   },
   {
     "name": "Tatsugiri",
@@ -34663,7 +34715,8 @@
     "defense": 60,
     "spAttack": 120,
     "spDefense": 95,
-    "speed": 82
+    "speed": 82,
+    "id": "952"
   },
   {
     "name": "Cyclizar",
@@ -34683,7 +34736,8 @@
     "defense": 65,
     "spAttack": 85,
     "spDefense": 65,
-    "speed": 121
+    "speed": 121,
+    "id": "953"
   },
   {
     "name": "Pawmi",
@@ -34702,7 +34756,8 @@
     "defense": 20,
     "spAttack": 40,
     "spDefense": 25,
-    "speed": 60
+    "speed": 60,
+    "id": "954"
   },
   {
     "name": "Pawmo",
@@ -34722,7 +34777,8 @@
     "defense": 40,
     "spAttack": 50,
     "spDefense": 40,
-    "speed": 85
+    "speed": 85,
+    "id": "955"
   },
   {
     "name": "Pawmot",
@@ -34742,7 +34798,8 @@
     "defense": 70,
     "spAttack": 70,
     "spDefense": 60,
-    "speed": 105
+    "speed": 105,
+    "id": "956"
   },
   {
     "name": "Wattrel",
@@ -34762,7 +34819,8 @@
     "defense": 35,
     "spAttack": 55,
     "spDefense": 40,
-    "speed": 70
+    "speed": 70,
+    "id": "957"
   },
   {
     "name": "Kilowattrel",
@@ -34782,7 +34840,8 @@
     "defense": 60,
     "spAttack": 105,
     "spDefense": 60,
-    "speed": 125
+    "speed": 125,
+    "id": "958"
   },
   {
     "name": "Bombirdier",
@@ -34802,7 +34861,8 @@
     "defense": 85,
     "spAttack": 60,
     "spDefense": 85,
-    "speed": 82
+    "speed": 82,
+    "id": "959"
   },
   {
     "name": "Squawkabilly",
@@ -34825,7 +34885,8 @@
     "defense": 51,
     "spAttack": 45,
     "spDefense": 51,
-    "speed": 92
+    "speed": 92,
+    "id": "960"
   },
   {
     "name": "Flamigo",
@@ -34845,7 +34906,8 @@
     "defense": 74,
     "spAttack": 75,
     "spDefense": 64,
-    "speed": 90
+    "speed": 90,
+    "id": "961"
   },
   {
     "name": "Klawf",
@@ -34864,7 +34926,8 @@
     "defense": 115,
     "spAttack": 35,
     "spDefense": 55,
-    "speed": 75
+    "speed": 75,
+    "id": "962"
   },
   {
     "name": "Nacli",
@@ -34883,7 +34946,8 @@
     "defense": 75,
     "spAttack": 35,
     "spDefense": 35,
-    "speed": 25
+    "speed": 25,
+    "id": "963"
   },
   {
     "name": "Naclstack",
@@ -34902,7 +34966,8 @@
     "defense": 100,
     "spAttack": 35,
     "spDefense": 65,
-    "speed": 35
+    "speed": 35,
+    "id": "964"
   },
   {
     "name": "Garganacl",
@@ -34921,7 +34986,8 @@
     "defense": 130,
     "spAttack": 45,
     "spDefense": 90,
-    "speed": 35
+    "speed": 35,
+    "id": "965"
   },
   {
     "name": "Glimmet",
@@ -34941,7 +35007,8 @@
     "defense": 42,
     "spAttack": 105,
     "spDefense": 60,
-    "speed": 60
+    "speed": 60,
+    "id": "966"
   },
   {
     "name": "Glimmora",
@@ -34961,7 +35028,8 @@
     "defense": 90,
     "spAttack": 130,
     "spDefense": 81,
-    "speed": 86
+    "speed": 86,
+    "id": "967"
   },
   {
     "name": "Shroodle",
@@ -34981,7 +35049,8 @@
     "defense": 35,
     "spAttack": 40,
     "spDefense": 35,
-    "speed": 75
+    "speed": 75,
+    "id": "968"
   },
   {
     "name": "Grafaiai",
@@ -35001,7 +35070,8 @@
     "defense": 65,
     "spAttack": 80,
     "spDefense": 72,
-    "speed": 110
+    "speed": 110,
+    "id": "969"
   },
   {
     "name": "Fidough",
@@ -35020,7 +35090,8 @@
     "defense": 70,
     "spAttack": 30,
     "spDefense": 55,
-    "speed": 65
+    "speed": 65,
+    "id": "970"
   },
   {
     "name": "Dachsbun",
@@ -35039,7 +35110,8 @@
     "defense": 115,
     "spAttack": 50,
     "spDefense": 80,
-    "speed": 95
+    "speed": 95,
+    "id": "971"
   },
   {
     "name": "Maschiff",
@@ -35058,7 +35130,8 @@
     "defense": 60,
     "spAttack": 40,
     "spDefense": 51,
-    "speed": 51
+    "speed": 51,
+    "id": "972"
   },
   {
     "name": "Mabosstiff",
@@ -35077,7 +35150,8 @@
     "defense": 90,
     "spAttack": 60,
     "spDefense": 70,
-    "speed": 85
+    "speed": 85,
+    "id": "973"
   },
   {
     "name": "Bramblin",
@@ -35097,7 +35171,8 @@
     "defense": 30,
     "spAttack": 45,
     "spDefense": 35,
-    "speed": 60
+    "speed": 60,
+    "id": "974"
   },
   {
     "name": "Brambleghast",
@@ -35117,7 +35192,8 @@
     "defense": 70,
     "spAttack": 80,
     "spDefense": 70,
-    "speed": 90
+    "speed": 90,
+    "id": "975"
   },
   {
     "name": "Gimmighoul",
@@ -35139,7 +35215,8 @@
     "defense": 70,
     "spAttack": 75,
     "spDefense": 70,
-    "speed": 10
+    "speed": 10,
+    "id": "976"
   },
   {
     "name": "Gimmighoul",
@@ -35161,7 +35238,8 @@
     "defense": 25,
     "spAttack": 75,
     "spDefense": 45,
-    "speed": 80
+    "speed": 80,
+    "id": "976-1"
   },
   {
     "name": "Gholdengo",
@@ -35181,7 +35259,8 @@
     "defense": 95,
     "spAttack": 133,
     "spDefense": 91,
-    "speed": 84
+    "speed": 84,
+    "id": "977"
   },
   {
     "name": "Great Tusk",
@@ -35201,7 +35280,8 @@
     "defense": 131,
     "spAttack": 53,
     "spDefense": 53,
-    "speed": 87
+    "speed": 87,
+    "id": "978"
   },
   {
     "name": "Brute Bonnet",
@@ -35221,7 +35301,8 @@
     "defense": 99,
     "spAttack": 79,
     "spDefense": 99,
-    "speed": 55
+    "speed": 55,
+    "id": "979"
   },
   {
     "name": "Sandy Shocks",
@@ -35241,7 +35322,8 @@
     "defense": 97,
     "spAttack": 121,
     "spDefense": 85,
-    "speed": 101
+    "speed": 101,
+    "id": "981"
   },
   {
     "name": "Scream Tail",
@@ -35261,7 +35343,8 @@
     "defense": 99,
     "spAttack": 65,
     "spDefense": 115,
-    "speed": 111
+    "speed": 111,
+    "id": "982"
   },
   {
     "name": "Flutter Mane",
@@ -35281,7 +35364,8 @@
     "defense": 55,
     "spAttack": 135,
     "spDefense": 135,
-    "speed": 135
+    "speed": 135,
+    "id": "983"
   },
   {
     "name": "Slither Wing",
@@ -35301,7 +35385,8 @@
     "defense": 79,
     "spAttack": 85,
     "spDefense": 105,
-    "speed": 81
+    "speed": 81,
+    "id": "984"
   },
   {
     "name": "Roaring Moon",
@@ -35321,7 +35406,8 @@
     "defense": 71,
     "spAttack": 55,
     "spDefense": 101,
-    "speed": 119
+    "speed": 119,
+    "id": "985"
   },
   {
     "name": "Iron Treads",
@@ -35341,7 +35427,8 @@
     "defense": 120,
     "spAttack": 72,
     "spDefense": 70,
-    "speed": 106
+    "speed": 106,
+    "id": "986"
   },
   {
     "name": "Iron Moth",
@@ -35361,7 +35448,8 @@
     "defense": 60,
     "spAttack": 140,
     "spDefense": 110,
-    "speed": 110
+    "speed": 110,
+    "id": "988"
   },
   {
     "name": "Iron Hands",
@@ -35381,7 +35469,8 @@
     "defense": 108,
     "spAttack": 50,
     "spDefense": 68,
-    "speed": 50
+    "speed": 50,
+    "id": "989"
   },
   {
     "name": "Iron Jugulis",
@@ -35401,7 +35490,8 @@
     "defense": 86,
     "spAttack": 122,
     "spDefense": 80,
-    "speed": 108
+    "speed": 108,
+    "id": "990"
   },
   {
     "name": "Iron Thorns",
@@ -35421,7 +35511,8 @@
     "defense": 110,
     "spAttack": 70,
     "spDefense": 84,
-    "speed": 72
+    "speed": 72,
+    "id": "991"
   },
   {
     "name": "Iron Bundle",
@@ -35441,7 +35532,8 @@
     "defense": 114,
     "spAttack": 124,
     "spDefense": 60,
-    "speed": 136
+    "speed": 136,
+    "id": "992"
   },
   {
     "name": "Iron Valiant",
@@ -35461,7 +35553,8 @@
     "defense": 90,
     "spAttack": 120,
     "spDefense": 60,
-    "speed": 116
+    "speed": 116,
+    "id": "993"
   },
   {
     "name": "Ting-Lu",
@@ -35481,7 +35574,8 @@
     "defense": 125,
     "spAttack": 55,
     "spDefense": 80,
-    "speed": 45
+    "speed": 45,
+    "id": "994"
   },
   {
     "name": "Chien-Pao",
@@ -35501,7 +35595,8 @@
     "defense": 80,
     "spAttack": 90,
     "spDefense": 65,
-    "speed": 135
+    "speed": 135,
+    "id": "995"
   },
   {
     "name": "Wo-Chien",
@@ -35521,7 +35616,8 @@
     "defense": 100,
     "spAttack": 95,
     "spDefense": 135,
-    "speed": 70
+    "speed": 70,
+    "id": "996"
   },
   {
     "name": "Chi-Yu",
@@ -35541,7 +35637,8 @@
     "defense": 80,
     "spAttack": 135,
     "spDefense": 120,
-    "speed": 100
+    "speed": 100,
+    "id": "997"
   },
   {
     "name": "Koraidon",
@@ -35561,7 +35658,8 @@
     "defense": 115,
     "spAttack": 85,
     "spDefense": 100,
-    "speed": 135
+    "speed": 135,
+    "id": "998"
   },
   {
     "name": "Miraidon",
@@ -35581,7 +35679,8 @@
     "defense": 100,
     "spAttack": 135,
     "spDefense": 115,
-    "speed": 135
+    "speed": 135,
+    "id": "999"
   },
   {
     "name": "Tinkatink",
@@ -35601,7 +35700,8 @@
     "defense": 45,
     "spAttack": 35,
     "spDefense": 64,
-    "speed": 58
+    "speed": 58,
+    "id": "1000"
   },
   {
     "name": "Tinkatuff",
@@ -35621,7 +35721,8 @@
     "defense": 55,
     "spAttack": 45,
     "spDefense": 82,
-    "speed": 78
+    "speed": 78,
+    "id": "1001"
   },
   {
     "name": "Tinkaton",
@@ -35641,7 +35742,8 @@
     "defense": 77,
     "spAttack": 70,
     "spDefense": 105,
-    "speed": 94
+    "speed": 94,
+    "id": "1002"
   },
   {
     "name": "Charcadet",
@@ -35660,7 +35762,8 @@
     "defense": 40,
     "spAttack": 50,
     "spDefense": 40,
-    "speed": 35
+    "speed": 35,
+    "id": "1003"
   },
   {
     "name": "Armarouge",
@@ -35680,7 +35783,8 @@
     "defense": 100,
     "spAttack": 125,
     "spDefense": 80,
-    "speed": 75
+    "speed": 75,
+    "id": "1004"
   },
   {
     "name": "Ceruledge",
@@ -35700,7 +35804,8 @@
     "defense": 80,
     "spAttack": 60,
     "spDefense": 100,
-    "speed": 85
+    "speed": 85,
+    "id": "1005"
   },
   {
     "name": "Toedscool",
@@ -35720,7 +35825,8 @@
     "defense": 35,
     "spAttack": 50,
     "spDefense": 100,
-    "speed": 70
+    "speed": 70,
+    "id": "1006"
   },
   {
     "name": "Toedscruel",
@@ -35740,7 +35846,8 @@
     "defense": 65,
     "spAttack": 80,
     "spDefense": 120,
-    "speed": 100
+    "speed": 100,
+    "id": "1007"
   },
   {
     "name": "Kingambit",
@@ -35760,7 +35867,8 @@
     "defense": 120,
     "spAttack": 60,
     "spDefense": 85,
-    "speed": 50
+    "speed": 50,
+    "id": "1008"
   },
   {
     "name": "Clodsire",
@@ -35780,7 +35888,8 @@
     "defense": 60,
     "spAttack": 45,
     "spDefense": 100,
-    "speed": 20
+    "speed": 20,
+    "id": "1009"
   },
   {
     "name": "Annihilape",
@@ -35800,6 +35909,7 @@
     "defense": 80,
     "spAttack": 50,
     "spDefense": 90,
-    "speed": 90
+    "speed": 90,
+    "id": "1010"
   }
 ]
