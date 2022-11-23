@@ -178,7 +178,7 @@ export default function ScreenMore({
           onClick={async () => {
             try {
               log("Starting NATURAL lock");
-              await document.body.requestFullscreen();
+              await document.documentElement.requestFullscreen();
               await screen.orientation.lock("natural");
               log("FINISHED NATURAL lock");
             } catch (err) {
