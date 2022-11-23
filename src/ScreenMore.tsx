@@ -20,6 +20,7 @@ export default function ScreenMore({
   updateApp,
 }: ScreenMoreProps): JSX.Element {
   const { t, i18n } = useTranslation();
+  const [isOrientationLocked, setIsOrientationLocked] = React.useState(false);
   const [generation, setGeneration] = useGeneration();
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();
@@ -170,6 +171,24 @@ export default function ScreenMore({
       <div className="mv3">
         <Button onClick={resetApp}>
           {t("more.help.serviceWorker.button")}
+        </Button>
+      </div>
+
+      <div className="mv3 flex gap2">
+        <Button
+          onClick={async () => {
+            screen.orientation.unlock();
+            await screen.orientation.lock("natural");
+          }}
+        >
+          Lock rotation
+        </Button>
+        <Button
+          onClick={async () => {
+            screen.orientation.unlock();
+          }}
+        >
+          Unlock rotation
         </Button>
       </div>
 

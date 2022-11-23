@@ -19,8 +19,17 @@ ReactDOM.render(
   document.querySelector("#app")
 );
 
-document.body.append(`Screen orientation: ${screen.orientation.type}`);
+function log(str: string) {
+  const p = document.createElement("p");
+  p.textContent = str;
+  p.className = "mv2 mh3";
+  document.querySelector("#app")?.appendChild(p);
+}
+
+log(`Screen orientation: ${screen.orientation.type}`);
+log(`Resolution: ${screen.width}x${screen.height}`);
 
 screen.orientation.onchange = () => {
-  document.body.append(`Rotate? ${screen.orientation.type}`);
+  log(`Rotate? ${screen.orientation.type}`);
+  log(`Resolution: ${screen.width}x${screen.height}`);
 };
