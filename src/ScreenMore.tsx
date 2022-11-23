@@ -177,14 +177,16 @@ export default function ScreenMore({
       <div className="mv3 flex gap2">
         <Button
           onClick={async () => {
-            screen.orientation.unlock();
+            log("Starting NATURAL lock");
             await screen.orientation.lock("natural");
+            log("FINISHED NATURAL lock");
           }}
         >
           Lock rotation
         </Button>
         <Button
           onClick={async () => {
+            log("Starting unlock");
             screen.orientation.unlock();
           }}
         >
@@ -295,4 +297,11 @@ export default function ScreenMore({
       </p>
     </main>
   );
+}
+
+function log(str: string) {
+  const p = document.createElement("p");
+  p.textContent = str;
+  p.className = "mv2 mh3";
+  document.querySelector("#app")?.appendChild(p);
 }
