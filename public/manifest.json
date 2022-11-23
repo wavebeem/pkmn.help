@@ -3,6 +3,7 @@
   "short_name": "pkmn.help",
   "lang": "en",
   "start_url": "/",
+  "orientation": "any",
   "icons": [
     {
       "src": "/favicon-16.png",
