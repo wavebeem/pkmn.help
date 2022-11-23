@@ -20,7 +20,6 @@ export default function ScreenMore({
   updateApp,
 }: ScreenMoreProps): JSX.Element {
   const { t, i18n } = useTranslation();
-  const [isOrientationLocked, setIsOrientationLocked] = React.useState(false);
   const [generation, setGeneration] = useGeneration();
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();
@@ -177,9 +176,13 @@ export default function ScreenMore({
       <div className="mv3 flex gap2">
         <Button
           onClick={async () => {
-            log("Starting NATURAL lock");
-            await screen.orientation.lock("natural");
-            log("FINISHED NATURAL lock");
+            try {
+              log("Starting NATURAL lock");
+              await screen.orientation.lock("natural");
+              log("FINISHED NATURAL lock");
+            } catch (err) {
+              log(`ERROR: ${err.message}`);
+            }
           }}
         >
           Lock rotation
