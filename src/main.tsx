@@ -18,3 +18,9 @@ ReactDOM.render(
   </React.StrictMode>,
   document.querySelector("#app")
 );
+
+document.body.append(`Screen orientation: ${screen.orientation.type}`);
+
+screen.orientation.onchange = () => {
+  document.body.append(`Rotate? ${screen.orientation.type}`);
+};
