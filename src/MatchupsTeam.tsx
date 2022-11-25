@@ -1,44 +1,14 @@
-import classNames from "classnames";
 import * as React from "react";
+import { groupBy, mapValues, sortBy } from "lodash";
 import { useTranslation } from "react-i18next";
-import { typeColor, typeColorBG, typeColorBorder } from "./colors";
+import { Badge } from "./Badge";
 import { Generation } from "./data-generations";
-import { defensiveMatchups, offensiveMatchups } from "./data-matchups";
-import { Type } from "./data-types";
-
-interface BadgeProps {
-  type: Type;
-}
-
-function Badge({ type }: BadgeProps) {
-  const { t } = useTranslation();
-  return (
-    <div
-      className={classNames(
-        "type-bg",
-        "ba border-vibrant",
-        "br2",
-        "b f5 lh-title tc"
-      )}
-      style={{
-        padding: 2,
-        ["--type-color" as any]: typeColor(type),
-      }}
-    >
-      <div
-        className="br1 ba b--transparent white truncate"
-        style={{
-          paddingLeft: 4,
-          paddingRight: 4,
-          background: typeColorBG(type),
-          borderColor: typeColorBorder(type),
-        }}
-      >
-        {t(`types.${type}`)}
-      </div>
-    </div>
-  );
-}
+import { defensiveMatchups } from "./data-matchups";
+import { Type, typesForGeneration } from "./data-types";
+import {
+  matchupEffectivenessLevels,
+  matchupDisplayEffectiveness,
+} from "./Matchups";
 
 interface SectionProps {
   title: string;
@@ -62,45 +32,69 @@ function Section({ title, types }: SectionProps) {
 }
 
 interface MatchupsTeamProps {
-  kind: "offense" | "defense";
+  kind: "defense";
   generation: Generation;
-  types: Type[];
+  typesList: Type[][];
 }
 
-export function MatchupsTeam({ kind, generation, types }: MatchupsTeamProps) {
+export function MatchupsTeam({
+  kind,
+  generation,
+  typesList,
+}: MatchupsTeamProps) {
   const { t } = useTranslation();
-  const formatTitle: (x: string) => string =
-    kind === "offense"
-      ? (x) => t("offense.dealsXTo", { x })
-      : (x) => t("defense.takesXFrom", { x });
-  const matchups =
-    kind === "offense"
-      ? offensiveMatchups(generation, types)
-      : defensiveMatchups(generation, types);
+  const formatTitle: (x: string) => string = (x) =>
+    t("defense.takesXFrom", { x });
+
+  // Type + Effectiveness => amount
+  const map = new Map<string, number>();
+  for (const types of typesList) {
+    const groupedMatchups = defensiveMatchups(generation, types);
+    for (const matchup of groupedMatchups.matchups) {
+      const key = JSON.stringify({
+        type: matchup.type,
+        effectiveness: matchup.effectiveness,
+      });
+      map.set(key, (map.get(key) ?? 0) + 1);
+    }
+  }
+
+  const data1 = Array.from(map.entries()).map(([key, count]) => {
+    const obj: { type: Type; effectiveness: number } = JSON.parse(key);
+    return [obj, count] as const;
+  });
+  // TODO: Sort data by effectiveness level, then type
+  const data2 = sortBy(
+    data1,
+    ([key]) => -key.effectiveness,
+    ([key]) => key.type
+  );
+
   return (
-    <div id={`matchup-${kind}`}>
-      {effectivenessLevels.map((eff) => {
+    <div id={`MatchupsTeam-${kind}`}>
+      {data2.map(([{ type, effectiveness }, count]) => {
+        return (
+          <div
+            key={`${type}.${effectiveness}`}
+            className="flex justify-between gap2"
+          >
+            {formatTitle(matchupDisplayEffectiveness[effectiveness])}: {count}
+            <Badge type={type} />
+          </div>
+        );
+      })}
+      <pre style={{ whiteSpace: "pre-wrap" }}>
+        {JSON.stringify(data2, null, 2)}
+      </pre>
+      {/* {matchupEffectivenessLevels.map((eff) => {
         return (
           <Section
             key={eff}
-            title={formatTitle(displayEffectiveness[eff])}
+            title={formatTitle(matchupDisplayEffectiveness[eff])}
             types={matchups.typesFor(eff)}
           />
         );
-      })}
+      })} */}
     </div>
   );
 }
-
-const effectivenessLevels = [8, 4, 2, 1, 1 / 2, 1 / 4, 1 / 8, 0];
-
-const displayEffectiveness = {
-  [8]: "8×",
-  [4]: "4×",
-  [2]: "2×",
-  [1]: "1×",
-  [1 / 2]: "½×",
-  [1 / 4]: "¼×",
-  [1 / 8]: "⅛×",
-  [0]: "0×",
-};

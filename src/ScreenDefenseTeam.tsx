@@ -205,7 +205,7 @@ export function ScreenDefenseTeam({
           // TODO: Call this correctly...
           kind="defense"
           generation={generation}
-          types={typesList[0] ?? []}
+          typesList={typesList}
         />
       </div>
     </main>
