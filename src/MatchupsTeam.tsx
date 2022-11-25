@@ -70,23 +70,32 @@ export function MatchupsTeam({
     ({ type }) => type,
     ({ effectiveness }) => -effectiveness
   );
-  const data3 = groupBy(data2, ({ type }) => type);
+  // const data3 = groupBy(data2, ({ type }) => type);
+  const data3 = groupBy(data2, ({ type }) => type) as any as Record<
+    Type,
+    typeof data2
+  >;
 
   return (
     <div id={`MatchupsTeam-${kind}`}>
-      {data2.map(({ type, effectiveness, count }) => {
+      {Object.entries(data3).map(([type_, matchups]) => {
+        const type = type_ as Type;
         return (
-          <div
-            key={`${type}.${effectiveness}`}
-            className="flex justify-between gap2 bb border3 pv2"
-          >
-            <span className="tabular-nums">
-              <b className="dib" style={{ minWidth: "6ch" }}>
-                {matchupDisplayEffectiveness[effectiveness]}
-              </b>{" "}
-              {count}
-            </span>
+          <div key={type} className="flex justify-between gap2 bb border3 pv2">
             <Badge type={type} />
+
+            <div className="flex flex-wrap gap3">
+              {matchups.map(({ effectiveness, count }) => {
+                return (
+                  <>
+                    <span className="tabular-nums">
+                      <b>{matchupDisplayEffectiveness[effectiveness]}</b>
+                      {} &rarr; {count}
+                    </span>
+                  </>
+                );
+              })}
+            </div>
           </div>
         );
       })}
