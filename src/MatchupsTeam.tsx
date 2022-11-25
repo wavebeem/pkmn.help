@@ -60,32 +60,39 @@ export function MatchupsTeam({
   }
 
   const data1 = Array.from(map.entries()).map(([key, count]) => {
-    const obj: { type: Type; effectiveness: number } = JSON.parse(key);
-    return [obj, count] as const;
+    const { type, effectiveness }: { type: Type; effectiveness: number } =
+      JSON.parse(key);
+    return { type, effectiveness, count };
   });
   // TODO: Sort data by effectiveness level, then type
   const data2 = sortBy(
     data1,
-    ([key]) => -key.effectiveness,
-    ([key]) => key.type
+    ({ type }) => type,
+    ({ effectiveness }) => -effectiveness
   );
+  const data3 = groupBy(data2, ({ type }) => type);
 
   return (
     <div id={`MatchupsTeam-${kind}`}>
-      {data2.map(([{ type, effectiveness }, count]) => {
+      {data2.map(({ type, effectiveness, count }) => {
         return (
           <div
             key={`${type}.${effectiveness}`}
-            className="flex justify-between gap2"
+            className="flex justify-between gap2 bb border3 pv2"
           >
-            {formatTitle(matchupDisplayEffectiveness[effectiveness])}: {count}
+            <span className="tabular-nums">
+              <b className="dib" style={{ minWidth: "6ch" }}>
+                {matchupDisplayEffectiveness[effectiveness]}
+              </b>{" "}
+              {count}
+            </span>
             <Badge type={type} />
           </div>
         );
       })}
-      <pre style={{ whiteSpace: "pre-wrap" }}>
-        {JSON.stringify(data2, null, 2)}
-      </pre>
+      {/* <pre style={{ whiteSpace: "pre-wrap" }}>
+        {JSON.stringify(data3, null, 2)}
+      </pre> */}
       {/* {matchupEffectivenessLevels.map((eff) => {
         return (
           <Section
