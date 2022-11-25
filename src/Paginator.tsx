@@ -103,7 +103,7 @@ interface PaginatorProps<T> {
   renderPage: (items: T[]) => any;
 }
 
-export default function Paginator<T>({
+export function Paginator<T>({
   urlForPage,
   currentPage,
   pageSize,

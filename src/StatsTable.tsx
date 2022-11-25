@@ -2,7 +2,7 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
 import { Pokemon, Type } from "./data-types";
-import StatBar from "./StatBar";
+import { StatBar } from "./StatBar";
 
 const STAT_MAX = 255;
 
@@ -10,7 +10,7 @@ export interface StatsTableProps {
   pokemon: Pokemon;
 }
 
-export default function StatsTable({ pokemon }: StatsTableProps) {
+export function StatsTable({ pokemon }: StatsTableProps) {
   const { hp, attack, defense, spAttack, spDefense, speed } = pokemon;
   const { t } = useTranslation();
   const hasRoomForFullText = useMediaQuery("(min-width: 600px)");

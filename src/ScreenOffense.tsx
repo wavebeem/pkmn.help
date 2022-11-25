@@ -9,9 +9,9 @@ import {
   Type,
   typesFromString,
 } from "./data-types";
-import DexCoverage from "./DexCoverage";
+import { DexCoverage } from "./DexCoverage";
 import { Matchups } from "./Matchups";
-import MultiTypeSelector from "./MultiTypeSelector";
+import { MultiTypeSelector } from "./MultiTypeSelector";
 import { useSearch } from "./useSearch";
 
 interface OffenseProps {

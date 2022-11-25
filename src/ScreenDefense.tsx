@@ -9,7 +9,7 @@ import {
   typesFromString,
 } from "./data-types";
 import { Matchups } from "./Matchups";
-import TypeSelector from "./TypeSelector";
+import { TypeSelector } from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
 import { useSearch } from "./useSearch";

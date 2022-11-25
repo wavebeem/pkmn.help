@@ -11,7 +11,7 @@ import {
 } from "./data-types";
 import { MatchupsTeam } from "./MatchupsTeam";
 import { MonsterType } from "./MonsterType";
-import TypeSelector from "./TypeSelector";
+import { TypeSelector } from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
 import { useSearch } from "./useSearch";

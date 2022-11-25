@@ -7,7 +7,7 @@ import { CoverageType, typesFromString } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
 import { IconArrowLeft } from "./IconArrows";
 import { MonsterType } from "./MonsterType";
-import Paginator from "./Paginator";
+import { Paginator } from "./Paginator";
 import { useSearch } from "./useSearch";
 
 interface CoverageListProps {

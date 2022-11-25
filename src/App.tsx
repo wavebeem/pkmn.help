@@ -49,7 +49,7 @@ function useTranslationsWithBlankFallback() {
   return ready ? translation : getFallback;
 }
 
-export default function App() {
+export function App() {
   // Service worker
   const {
     needRefresh: [needRefresh, setNeedRefresh],
