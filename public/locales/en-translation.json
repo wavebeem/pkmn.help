@@ -63,6 +63,8 @@
   "defense": {
     "team": {
       "name": "Pokémon #{{ teamNumber }}",
+      "save": "Save",
+      "saveLong": "Save {{ name }}",
       "edit": "Edit",
       "editLong": "Edit {{ name }}",
       "remove": "Remove",
