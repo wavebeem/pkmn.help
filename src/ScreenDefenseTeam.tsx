@@ -103,12 +103,47 @@ export function ScreenDefenseTeam({
                 key={typeIndex}
                 className="bg1 br3 ba border2 pa3 button-shadow"
               >
-                <div className="flex gap2 items-center">
-                  <h2 className="f4 flex-auto pt3 ma0">{name}</h2>
+                <div className="flex gap2 items-center justify-between">
                   <div className="inline-flex flex-wrap gap2">
                     {types.map((t) => (
                       <MonsterType key={t} type={t} />
                     ))}
+                  </div>
+                  {/* TODO: Each Pokémon should have a heading of some kind... */}
+                  {/* <h2 className="f4 flex-auto ma0">{name}</h2> */}
+                  <div className="flex gap2">
+                    <Button
+                      hidden={typeIndex === currentIndex}
+                      onClick={() => {
+                        setCurrentIndex(typeIndex);
+                      }}
+                      aria-label={t("defense.team.editLong", { name })}
+                      title={t("defense.team.editLong", { name })}
+                    >
+                      {t("defense.team.edit")}
+                    </Button>
+                    <Button
+                      hidden={typeIndex !== currentIndex}
+                      onClick={() => {
+                        setCurrentIndex(-1);
+                      }}
+                      aria-label={t("defense.team.saveLong", { name })}
+                      title={t("defense.team.saveLong", { name })}
+                    >
+                      {t("defense.team.save")}
+                    </Button>
+                    <Button
+                      onClick={() => {
+                        setCurrentIndex(-1);
+                        const list = [...typesList];
+                        list.splice(typeIndex, 1);
+                        updateTypes(list);
+                      }}
+                      aria-label={t("defense.team.removeLong", { name })}
+                      title={t("defense.team.removeLong", { name })}
+                    >
+                      {t("defense.team.remove")}
+                    </Button>
                   </div>
                 </div>
                 <div
@@ -147,42 +182,6 @@ export function ScreenDefenseTeam({
                     </>
                   )}
                 </div>
-                <div className="w-100 mt3 flex items-center bt pt3 mt3 border3">
-                  <div className="flex gap2">
-                    <Button
-                      hidden={typeIndex === currentIndex}
-                      onClick={() => {
-                        setCurrentIndex(typeIndex);
-                      }}
-                      aria-label={t("defense.team.editLong", { name })}
-                      title={t("defense.team.editLong", { name })}
-                    >
-                      {t("defense.team.edit")}
-                    </Button>
-                    <Button
-                      hidden={typeIndex !== currentIndex}
-                      onClick={() => {
-                        setCurrentIndex(-1);
-                      }}
-                      aria-label={t("defense.team.saveLong", { name })}
-                      title={t("defense.team.saveLong", { name })}
-                    >
-                      {t("defense.team.save")}
-                    </Button>
-                    <Button
-                      onClick={() => {
-                        setCurrentIndex(-1);
-                        const list = [...typesList];
-                        list.splice(typeIndex, 1);
-                        updateTypes(list);
-                      }}
-                      aria-label={t("defense.team.removeLong", { name })}
-                      title={t("defense.team.removeLong", { name })}
-                    >
-                      {t("defense.team.remove")}
-                    </Button>
-                  </div>
-                </div>
               </div>
             );
           })}
@@ -201,6 +200,7 @@ export function ScreenDefenseTeam({
       </div>
       <div className="dib w-50-ns w-100 v-top pl5-ns">
         <hr className="dn-ns subtle-hr mv4" />
+        <div className="pt2" />
         <MatchupsTeam
           // TODO: Call this correctly...
           kind="defense"
