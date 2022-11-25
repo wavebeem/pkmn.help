@@ -16,7 +16,7 @@ interface CoverageListProps {
   coverageTypes: CoverageType[];
 }
 
-export default function ScreenCoverageList({
+export function ScreenCoverageList({
   type,
   generation,
   coverageTypes,

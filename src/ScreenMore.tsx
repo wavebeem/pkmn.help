@@ -15,7 +15,7 @@ export interface ScreenMoreProps {
   updateApp: () => Promise<void>;
 }
 
-export default function ScreenMore({
+export function ScreenMore({
   needsAppUpdate,
   updateApp,
 }: ScreenMoreProps): JSX.Element {

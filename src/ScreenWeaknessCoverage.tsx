@@ -32,7 +32,7 @@ interface WeaknessCoverageProps {
   isLoading: boolean;
 }
 
-export default function ScreenWeaknessCoverage({
+export function ScreenWeaknessCoverage({
   setCoverageTypes,
   offenseParams,
   fallbackCoverageTypes,

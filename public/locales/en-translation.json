@@ -61,6 +61,13 @@
     "back": "Back to offense"
   },
   "defense": {
+    "team": {
+      "name": "Pokémon #{{ teamNumber }}",
+      "edit": "Edit",
+      "editLong": "Edit {{ name }}",
+      "remove": "Remove",
+      "removeLong": "Remove {{ name }}"
+    },
     "chooseFirst": "Choose First Type",
     "chooseSecond": "Choose Second Type",
     "chooseThird": "Choose Third Type",

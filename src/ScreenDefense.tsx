@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { Generation } from "./data-generations";
 import {
   removeInvalidDefenseTypesForGeneration,
@@ -18,11 +18,13 @@ import { useTypeCount } from "./useTypeCount";
 interface DefenseProps {
   generation: Generation;
   setDefenseParams: (params: string) => void;
+  defenseTeamParams: string;
 }
 
-export default function ScreenDefense({
+export function ScreenDefense({
   generation,
   setDefenseParams,
+  defenseTeamParams,
 }: DefenseProps) {
   useScrollToFragment();
 
@@ -72,6 +74,7 @@ export default function ScreenDefense({
   return (
     <main className="ph3 pt0 pb4 content-wide center">
       <div className="dib w-50-ns w-100 v-top">
+        <Link to={`/defense/team/${defenseTeamParams}`}>Team &rarr;</Link>
         <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
         <TypeSelector
           generation={generation}

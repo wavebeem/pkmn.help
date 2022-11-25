@@ -9,13 +9,14 @@ import { CoverageType, Pokemon } from "./data-types";
 import { detectLanguage } from "./detectLanguage";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
-import ScreenCoverageList from "./ScreenCoverageList";
-import ScreenDefense from "./ScreenDefense";
-import ScreenMore from "./ScreenMore";
-import ScreenOffense from "./ScreenOffense";
-import ScreenPokedex from "./ScreenPokedex";
-import ScreenPokedexHelp from "./ScreenPokedexHelp";
-import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
+import { ScreenCoverageList } from "./ScreenCoverageList";
+import { ScreenDefense } from "./ScreenDefense";
+import { ScreenDefenseTeam } from "./ScreenDefenseTeam";
+import { ScreenMore } from "./ScreenMore";
+import { ScreenOffense } from "./ScreenOffense";
+import { ScreenPokedex } from "./ScreenPokedex";
+import { ScreenPokdexHelp as ScreenPokedexHelp } from "./ScreenPokedexHelp";
+import { ScreenWeaknessCoverage } from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
 import { useFetchJSON } from "./useFetchJSON";
 import { useGeneration } from "./useGeneration";
@@ -68,6 +69,7 @@ export default function App() {
   // State...
   const [generation] = useGeneration();
   const [defenseParams, setDefenseParams] = React.useState("");
+  const [defenseTeamParams, setDefenseTeamParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(true);
@@ -246,6 +248,18 @@ export default function App() {
                 <ScreenDefense
                   generation={generation}
                   setDefenseParams={setDefenseParams}
+                  defenseTeamParams={defenseTeamParams}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/defense/team/"
+              render={() => (
+                <ScreenDefenseTeam
+                  generation={generation}
+                  setDefenseTeamParams={setDefenseTeamParams}
+                  defenseParams={defenseParams}
                 />
               )}
             />

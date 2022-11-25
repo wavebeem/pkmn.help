@@ -154,7 +154,7 @@ interface DexProps {
   isLoading: boolean;
 }
 
-export default function ScreenPokedex({
+export function ScreenPokedex({
   allPokemon,
   setPokedexParams,
   isLoading,

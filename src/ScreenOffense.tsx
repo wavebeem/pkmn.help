@@ -22,7 +22,7 @@ interface OffenseProps {
   isLoading: boolean;
 }
 
-export default function ScreenOffense({
+export function ScreenOffense({
   generation,
   coverageTypes,
   setOffenseParams,
