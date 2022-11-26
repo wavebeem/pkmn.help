@@ -136,9 +136,15 @@ export function ScreenDefense({
       <main className="ph3 pt0 pb4 content-wide center">
         <div className="dib w-50-ns w-100 v-top">
           {/* TODO: Solo/Team selector */}
+          <h2 className={classH2}>{t("defense.mode.heading")}</h2>
           <div className="flex flex-wrap gap2">
             <b>Solo</b>
-            <Link to={oppositeParams}>Team</Link>
+            <Link
+              to={oppositeParams}
+              className="underline fg-link br1 OutlineFocus"
+            >
+              Team
+            </Link>
           </div>
           <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
           <TypeSelector
@@ -191,11 +197,17 @@ export function ScreenDefense({
         className="dib w-50-l w-100 v-top"
       >
         {/* TODO: Solo/Team selector */}
+        <h2 className={classH2}>{t("defense.mode.heading")}</h2>
         <div className="flex flex-wrap gap2">
-          <Link to={oppositeParams}>Solo</Link>
+          <Link
+            to={oppositeParams}
+            className="underline fg-link br1 OutlineFocus"
+          >
+            Solo
+          </Link>
           <b>Team</b>
         </div>
-        <div className="flex flex-column gap3">
+        <div className="flex flex-column gap3 pt2">
           {state.teamTypesList.map((types, typeIndex) => {
             const name = t("defense.team.name", { teamNumber: typeIndex + 1 });
             return (
