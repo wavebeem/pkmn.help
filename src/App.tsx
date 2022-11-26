@@ -11,7 +11,6 @@ import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import { ScreenCoverageList } from "./ScreenCoverageList";
 import { ScreenDefense } from "./ScreenDefense";
-import { ScreenDefenseTeam } from "./ScreenDefenseTeam";
 import { ScreenMore } from "./ScreenMore";
 import { ScreenOffense } from "./ScreenOffense";
 import { ScreenPokedex } from "./ScreenPokedex";
@@ -69,7 +68,6 @@ export function App() {
   // State...
   const [generation] = useGeneration();
   const [defenseParams, setDefenseParams] = React.useState("");
-  const [defenseTeamParams, setDefenseTeamParams] = React.useState("");
   const [offenseParams, setOffenseParams] = React.useState("");
   const [pokedexParams, setPokedexParams] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(true);
@@ -248,18 +246,6 @@ export function App() {
                 <ScreenDefense
                   generation={generation}
                   setDefenseParams={setDefenseParams}
-                  defenseTeamParams={defenseTeamParams}
-                />
-              )}
-            />
-            <Route
-              exact
-              path="/defense/team/"
-              render={() => (
-                <ScreenDefenseTeam
-                  generation={generation}
-                  setDefenseTeamParams={setDefenseTeamParams}
-                  defenseParams={defenseParams}
                 />
               )}
             />
