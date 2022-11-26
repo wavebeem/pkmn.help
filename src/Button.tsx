@@ -1,16 +1,27 @@
 import classNames from "classnames";
 import * as React from "react";
 
-export function Button({
-  className,
-  ...props
-}: React.ButtonHTMLAttributes<HTMLButtonElement>) {
-  return <button {...props} className={classNames(className, baseClasses)} />;
+export interface ButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+  size?: "medium" | "small";
+}
+
+export function Button({ className, size = "medium", ...props }: ButtonProps) {
+  return (
+    <button
+      {...props}
+      className={classNames(
+        className,
+        baseClasses,
+        size === "medium" ? "pv2 ph3" : "pv1 ph3"
+      )}
+    />
+  );
 }
 
 const baseClasses = classNames(
   "no-underline",
-  "ba br2 pv2 ph3",
+  "ba br2",
   "f5",
   "SimpleFocus",
   "border1 button-shadow button-bg button-bg-hover color-inherit active-squish"

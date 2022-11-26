@@ -198,6 +198,7 @@ export function ScreenDefense({
       >
         {/* TODO: Solo/Team selector */}
         <h2 className={classH2}>{t("defense.mode.heading")}</h2>
+
         <div className="flex flex-wrap gap2">
           <Link
             to={oppositeParams}
@@ -216,15 +217,16 @@ export function ScreenDefense({
                 className="bg1 br3 ba border2 pa3 button-shadow"
               >
                 <div className="flex flex-wrap gap2 items-center justify-between">
-                  <div className="inline-flex flex-wrap gap2">
+                  <div className="flex flex-column flex-row-ns flex-wrap gap2">
                     {types.map((t) => (
                       <MonsterType key={t} type={t} />
                     ))}
                   </div>
                   {/* TODO: Each Pokémon should have a heading of some kind... */}
                   {/* <h2 className="f4 flex-auto ma0">{name}</h2> */}
-                  <div className="flex gap2">
+                  <div className="flex flex-column flex-row-ns gap2">
                     <Button
+                      size="small"
                       onClick={() => {
                         if (typeIndex === teamIndex) {
                           setTeamIndex(-1);
@@ -252,6 +254,7 @@ export function ScreenDefense({
                       )}
                     </Button>
                     <Button
+                      size="small"
                       onClick={() => {
                         setTeamIndex(-1);
                         const list = [...state.teamTypesList];
