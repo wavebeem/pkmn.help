@@ -79,11 +79,11 @@ export function Matchups({ kind, generation, types }: MatchupsProps) {
       : defensiveMatchups(generation, types);
   return (
     <div id={`matchup-${kind}`}>
-      {matchupEffectivenessLevels.map((eff) => {
+      {effectivenessLevels.map((eff) => {
         return (
           <Section
             key={eff}
-            title={formatTitle(matchupDisplayEffectiveness[eff])}
+            title={formatTitle(effectivenessDisplay[eff])}
             types={matchups.typesFor(eff)}
           />
         );
@@ -92,9 +92,9 @@ export function Matchups({ kind, generation, types }: MatchupsProps) {
   );
 }
 
-export const matchupEffectivenessLevels = [8, 4, 2, 1, 1 / 2, 1 / 4, 1 / 8, 0];
+const effectivenessLevels = [8, 4, 2, 1, 1 / 2, 1 / 4, 1 / 8, 0];
 
-export const matchupDisplayEffectiveness = {
+const effectivenessDisplay = {
   [8]: "8×",
   [4]: "4×",
   [2]: "2×",

@@ -9,8 +9,9 @@ import {
   Type,
   typesFromString,
 } from "./data-types";
-import { MatchupsTeam } from "./MatchupsTeam";
+import { MatchupsTeam, MatchupsTeamProps } from "./MatchupsTeam";
 import { MonsterType } from "./MonsterType";
+import { Select } from "./Select";
 import { TypeSelector } from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
@@ -39,31 +40,37 @@ export function ScreenDefenseTeam({
 
   const [currentIndex, setCurrentIndex] = React.useState(-1);
 
+  const displayType = (search.get("display_type") ||
+    "simple") as MatchupsTeamProps["displayType"];
+  console.log({ displayType });
+
   const typesStringList = search.getAll("types");
   const typesList = typesStringList.map((t) =>
     typesFromString(t).slice(0, Number(typeCount))
   );
 
   React.useEffect(() => {
-    updateTypes(
+    update(
       typesList.map((t) =>
         removeInvalidDefenseTypesForGeneration(generation, t)
-      )
+      ),
+      displayType
     );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [generation]);
 
-  function createParams(typesList: Type[][]): string {
+  function createParams(typesList: Type[][], displayType: string): string {
     typesList = [...new Set(typesList)];
     const params = new URLSearchParams();
     for (const types of typesList) {
       params.append("types", types.join(" "));
     }
+    params.set("display_type", displayType);
     return "?" + params;
   }
 
-  function updateTypes(typesList: Type[][]) {
-    const search = createParams(typesList);
+  function update(typesList: Type[][], newDisplayType: typeof displayType) {
+    const search = createParams(typesList, newDisplayType);
     if (search !== location.search) {
       history.replace({ search });
     }
@@ -74,18 +81,19 @@ export function ScreenDefenseTeam({
     typeIndex: number
   ): (t: Type) => void {
     return (t) => {
-      updateTypes(
+      update(
         typesList.map((types, i) => {
           if (i === listIndex) {
             return removeNones(updateArrayAt(types, typeIndex, t));
           }
           return types;
-        })
+        }),
+        displayType
       );
     };
   }
 
-  const params = createParams(typesList);
+  const params = createParams(typesList, displayType);
   React.useEffect(() => {
     setDefenseTeamParams(params);
   }, [params, setDefenseTeamParams]);
@@ -137,7 +145,7 @@ export function ScreenDefenseTeam({
                         setCurrentIndex(-1);
                         const list = [...typesList];
                         list.splice(typeIndex, 1);
-                        updateTypes(list);
+                        update(list, displayType);
                       }}
                       aria-label={t("defense.team.removeLong", { name })}
                       title={t("defense.team.removeLong", { name })}
@@ -190,7 +198,7 @@ export function ScreenDefenseTeam({
           <Button
             onClick={() => {
               const newTypes = [...typesList, [Type.NORMAL]];
-              updateTypes(newTypes);
+              update(newTypes, displayType);
               setCurrentIndex(newTypes.length - 1);
             }}
           >
@@ -198,14 +206,29 @@ export function ScreenDefenseTeam({
           </Button>
         </div>
       </div>
-      <div className="dib w-50-ns w-100 v-top pl5-ns">
+      <div className="dib w-50-l w-100 v-top pl5-l">
         <hr className="dn-ns subtle-hr mv4" />
+        <Select
+          onChange={(event) => {
+            update(typesList, event.target.value as any);
+          }}
+          value={displayType}
+          label={t("defense.team.displayType")}
+        >
+          <option value="simple">{t("defense.team.simple")}</option>
+          <option value="complex">{t("defense.team.complex")}</option>
+          <option value="weak">{t("defense.team.weak")}</option>
+          <option value="resist">{t("defense.team.resist")}</option>
+        </Select>
         <div className="pt2" />
         <MatchupsTeam
           // TODO: Call this correctly...
           kind="defense"
           generation={generation}
           typesList={typesList}
+          // TODO: Add a select for picking this...
+          // displayType="complex"
+          displayType={displayType}
         />
       </div>
     </main>

@@ -62,6 +62,12 @@
   },
   "defense": {
     "team": {
+      "displayType": "Table format",
+      "weak": "Weak",
+      "resist": "Resist",
+      "simple": "Simple",
+      "complex": "Complex",
+      "type": "Type",
       "name": "Pokémon #{{ teamNumber }}",
       "save": "Save",
       "saveLong": "Save {{ name }}",
