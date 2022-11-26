@@ -253,34 +253,6 @@ export function MatchupsTeam({
           </tbody>
         </table>
       </div>
-      {/* {Object.entries(data3).map(([type_, matchups]) => {
-        const type = type_ as Type;
-        return (
-          <div
-            key={type}
-            className="flex justify-between items-start gap2 bb border3 pv2"
-          >
-            <Badge type={type} />
-            <div className="flex flex-wrap gap3">
-              {matchups.map(({ effectiveness, count }) => {
-                const key = [type, effectiveness, count].join(".");
-                return (
-                  <div
-                    key={key}
-                    className="tabular-nums ba ph2 bg1 border3 pa1 br-pill"
-                  >
-                    <b>{matchupDisplayEffectiveness[effectiveness]}</b>
-                    {}&nbsp;&rarr;&nbsp;{count}
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        );
-      })} */}
-      {/* <pre style={{ whiteSpace: "pre-wrap" }}>
-        {JSON.stringify(data3, null, 2)}
-      </pre> */}
     </div>
   );
 }

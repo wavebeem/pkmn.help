@@ -101,7 +101,10 @@ export function ScreenDefenseTeam({
   const classH2 = "f5 mb2 mt4";
   return (
     <main className="ph3 pt0 pb4 content-wide center">
-      <div className="dib w-50-l w-100 v-top">
+      <div
+        // TODO: Use flex instead of inline-block for this layout...
+        className="dib w-50-l w-100 v-top"
+      >
         <Link to={`/defense/${defenseParams}`}>Solo &rarr;</Link>
         <div className="flex flex-column gap3">
           {typesList.map((types, typeIndex) => {
