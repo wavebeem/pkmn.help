@@ -591,6 +591,13 @@ input[type="radio"].RadioCheckType {
   box-shadow: 0 0 0 2px var(--color-border1);
 }
 
+.TableFocus:focus-within {
+  outline: 2px solid transparent;
+  border-color: var(--color-fg1);
+  box-shadow: 0 0 0 2px var(--color-bg2), 0 0 0 3px var(--color-fg1),
+    0 0 0 5px var(--color-border1);
+}
+
 .SelectedFocus:focus-within {
   outline: 2px solid transparent;
   box-shadow: 0 0 0 2px var(--color-bg1), 0 0 0 4px var(--color-fg1);

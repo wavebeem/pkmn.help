@@ -36,7 +36,10 @@ export function ScreenDefense({
   const [typeCount] = useTypeCount();
 
   const typesString = search.get("types") || "normal";
-  const types = typesFromString(typesString).slice(0, Number(typeCount));
+  const types = typesFromString(search.get("types") || "normal").slice(
+    0,
+    Number(typeCount)
+  );
 
   React.useEffect(() => {
     updateTypes(removeInvalidDefenseTypesForGeneration(generation, types));

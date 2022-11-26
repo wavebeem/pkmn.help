@@ -50,14 +50,14 @@ export interface MatchupsTeamProps {
   kind: "defense";
   generation: Generation;
   typesList: Type[][];
-  displayType: "complex" | "simple" | "resist" | "weak";
+  format: "complex" | "simple" | "resist" | "weak";
 }
 
 export function MatchupsTeam({
   kind,
   generation,
   typesList,
-  displayType,
+  format,
 }: MatchupsTeamProps) {
   const { t } = useTranslation();
 
@@ -93,7 +93,7 @@ export function MatchupsTeam({
 
   let matchers: Matcher[] = [];
 
-  switch (displayType) {
+  switch (format) {
     case "complex":
       // Already has the correct default value above
       matchers = [
@@ -212,16 +212,16 @@ export function MatchupsTeam({
       ];
       break;
     default:
-      assertNever(displayType);
+      assertNever(format);
   }
 
   if (typesList.length === 0) {
-    return <div className="fg3 tc pa3">{t("defense.team.empty")}</div>;
+    return <p className="fg4 f4 b tc m0">{t("defense.team.empty")}</p>;
   }
 
   return (
     <div id={`MatchupsTeam-${kind}`}>
-      <div className="overflow-x-auto">
+      <div tabIndex={0} className="overflow-x-auto br1 TableFocus">
         <table className="collapse tc tabular-nums">
           <thead>
             <tr>
