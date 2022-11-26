@@ -62,6 +62,7 @@
   },
   "defense": {
     "team": {
+      "empty": "No Pokémon selected",
       "displayType": "Table format",
       "weak": "Weak",
       "resist": "Resist",

@@ -8,6 +8,9 @@ import { useTranslation } from "react-i18next";
 import { assertNever } from "./assertNever";
 
 const effectivenessDisplay = {
+  weak: "≥ 2×",
+  resist: "≤ ½×",
+  immune: "0×",
   [8]: "8×",
   [4]: "4×",
   [2]: "2×",
@@ -141,13 +144,13 @@ export function MatchupsTeam({
     case "simple":
       matchers = [
         new Matcher({
-          name: "≥ " + effectivenessDisplay[2],
+          name: effectivenessDisplay.weak,
           createMatcher: (type) => (matchup) => {
             return type === matchup.type && matchup.effectiveness > 1;
           },
         }),
         new Matcher({
-          name: "≤ " + effectivenessDisplay[1 / 2],
+          name: effectivenessDisplay.resist,
           createMatcher: (type) => (matchup) => {
             return (
               type === matchup.type &&
@@ -157,7 +160,7 @@ export function MatchupsTeam({
           },
         }),
         new Matcher({
-          name: effectivenessDisplay[0],
+          name: effectivenessDisplay.immune,
           createMatcher: (type) => (matchup) => {
             return type === matchup.type && matchup.effectiveness === 0;
           },
@@ -210,6 +213,10 @@ export function MatchupsTeam({
       break;
     default:
       assertNever(displayType);
+  }
+
+  if (typesList.length === 0) {
+    return <div className="fg3 tc pa3">{t("defense.team.empty")}</div>;
   }
 
   return (

@@ -100,7 +100,7 @@ export function ScreenDefenseTeam({
 
   const classH2 = "f5 mb2 mt4";
   return (
-    <main className="ph3 pt0 pb4 content-wide center">
+    <main className="ph3 pt2 pb4 content-wide center">
       <div
         // TODO: Use flex instead of inline-block for this layout...
         className="dib w-50-l w-100 v-top"
@@ -124,24 +124,31 @@ export function ScreenDefenseTeam({
                   {/* <h2 className="f4 flex-auto ma0">{name}</h2> */}
                   <div className="flex gap2">
                     <Button
-                      hidden={typeIndex === currentIndex}
                       onClick={() => {
-                        setCurrentIndex(typeIndex);
+                        if (typeIndex === currentIndex) {
+                          setCurrentIndex(-1);
+                        } else {
+                          setCurrentIndex(typeIndex);
+                        }
                       }}
-                      aria-label={t("defense.team.editLong", { name })}
-                      title={t("defense.team.editLong", { name })}
+                      aria-label={t(
+                        typeIndex === currentIndex
+                          ? "defense.team.saveLong"
+                          : "defense.team.editLong",
+                        { name }
+                      )}
+                      title={t(
+                        typeIndex === currentIndex
+                          ? "defense.team.saveLong"
+                          : "defense.team.editLong",
+                        { name }
+                      )}
                     >
-                      {t("defense.team.edit")}
-                    </Button>
-                    <Button
-                      hidden={typeIndex !== currentIndex}
-                      onClick={() => {
-                        setCurrentIndex(-1);
-                      }}
-                      aria-label={t("defense.team.saveLong", { name })}
-                      title={t("defense.team.saveLong", { name })}
-                    >
-                      {t("defense.team.save")}
+                      {t(
+                        typeIndex === currentIndex
+                          ? "defense.team.save"
+                          : "defense.team.edit"
+                      )}
                     </Button>
                     <Button
                       onClick={() => {
@@ -210,7 +217,8 @@ export function ScreenDefenseTeam({
         </div>
       </div>
       <div className="dib w-50-l w-100 v-top pl5-l">
-        <hr className="dn-ns subtle-hr mv4" />
+        <hr className="dn-l subtle-hr mv4" />
+        <div className="pt2" />
         <Select
           onChange={(event) => {
             update(typesList, event.target.value as any);
@@ -225,12 +233,9 @@ export function ScreenDefenseTeam({
         </Select>
         <div className="pt2" />
         <MatchupsTeam
-          // TODO: Call this correctly...
           kind="defense"
           generation={generation}
           typesList={typesList}
-          // TODO: Add a select for picking this...
-          // displayType="complex"
           displayType={displayType}
         />
       </div>
