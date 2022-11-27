@@ -60,8 +60,8 @@ export function ScreenOffense({
 
   const classH2 = "f5 mb2 mt4";
   return (
-    <main className="ph3 pt0 pb4 content-wide center">
-      <div className="dib w-50-ns w-100 v-top">
+    <main className="ph3 pt0 pb4 content-wide center flex flex-column flex-row-ns">
+      <div className="flex-auto w-50-ns">
         <h2 className={classH2}>{t("offense.chooseTypes")}</h2>
         <MultiTypeSelector
           generation={generation}
@@ -94,7 +94,7 @@ export function ScreenOffense({
           </div>
         )}
       </div>
-      <div className="dib w-50-ns w-100 v-top pl5-ns">
+      <div className="flex-auto w-50-ns pl5-ns">
         <hr className="dn-ns subtle-hr mv4" />
         <Matchups kind="offense" generation={generation} types={offenseTypes} />
       </div>

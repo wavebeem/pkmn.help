@@ -145,8 +145,8 @@ export function ScreenDefense({
 
   if (state.mode === "solo") {
     return (
-      <main className="ph3 pt0 pb4 content-wide center">
-        <div className="dib w-50-ns w-100 v-top">
+      <main className="ph3 pt0 pb4 content-wide center flex flex-column flex-row-ns">
+        <div className="flex-auto w-50-ns">
           <h2 className={classH2}>{t("defense.mode.heading")}</h2>
           <div className="flex flex-wrap gap2">
             <NavLink
@@ -198,7 +198,7 @@ export function ScreenDefense({
             </>
           )}
         </div>
-        <div className="dib w-50-ns w-100 v-top pl5-ns">
+        <div className="flex-auto w-50-ns pl5-ns">
           <hr className="dn-ns subtle-hr mv4" />
           <Matchups
             kind="defense"
@@ -211,11 +211,8 @@ export function ScreenDefense({
   }
 
   return (
-    <main className="ph3 pt0 pb4 content-wide center">
-      <div
-        // TODO: Use flex instead of inline-block for this layout...
-        className="dib w-50-l w-100 v-top"
-      >
+    <main className="ph3 pt0 pb4 content-wide center flex flex-column flex-row-l">
+      <div className="flex-auto w-50-l">
         <h2 className={classH2}>{t("defense.mode.heading")}</h2>
         <div className="flex flex-wrap gap2">
           <NavLink
@@ -359,7 +356,7 @@ export function ScreenDefense({
           </Button>
         </div>
       </div>
-      <div className="dib w-50-l w-100 v-top pl5-l">
+      <div className="flex-auto w-50-l pl5-l">
         <hr className="dn-l subtle-hr mv4" />
         <div className="pt0 pt4-l mw-max">
           <Select
