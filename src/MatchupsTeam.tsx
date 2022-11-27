@@ -228,7 +228,7 @@ export function MatchupsTeam({
         <div className="overflow-x-auto" tabIndex={0}>
           <table className="collapse tc w-100 tabular-nums mr2">
             <thead>
-              <tr>
+              <tr className="bb border3">
                 <th className="pa2 w0">{t("defense.team.type")}</th>
                 {matchers.map((m) => {
                   return (
@@ -243,8 +243,8 @@ export function MatchupsTeam({
               {Object.entries(data3).map(([type_, matchups]) => {
                 const type = type_ as Type;
                 return (
-                  <tr key={type}>
-                    <th className="pr2">
+                  <tr key={type} className="bt border3">
+                    <th className="pv1">
                       <Badge type={type} />
                     </th>
                     {matchers.map((m) => {
@@ -253,7 +253,7 @@ export function MatchupsTeam({
                       const count = matchups.find(m.createMatcher(type))
                         ?.count ?? <span className="o-10">-</span>;
                       return (
-                        <td key={m.name + type} className="pv2 ph3 bt border3">
+                        <td key={m.name + type} className="pv2 ph3">
                           {count}
                         </td>
                       );
