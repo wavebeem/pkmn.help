@@ -19,11 +19,11 @@
     "build": "tsc && vite build --mode production",
     "test-sw": "npm run -s build && npx serve -s dist",
     "preview": "vite preview",
-    "lint:js": "eslint src --ext .ts,.tsx,.js",
-    "lint:css": "stylelint \"src/**/*.css\"",
-    "pretty": "prettier \"src/**/*.{ts,tsx,js}\" --check",
-    "pretty:fix": "prettier \"src/**/*.{ts,tsx,js}\" --write",
-    "test": "npm-run-all -s lint:js pretty"
+    "lint:js": "eslint src -f unix --ext .ts,.tsx,.js",
+    "lint:css": "stylelint -f unix \"src/**/*.css\"",
+    "format": "prettier \"src/**/*.{ts,tsx,js}\" --check",
+    "format:fix": "prettier \"src/**/*.{ts,tsx,js}\" --write",
+    "test": "npm-run-all -s lint:js lint:css format"
   },
   "repository": {
     "type": "git",
