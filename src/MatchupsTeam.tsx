@@ -228,7 +228,7 @@ export function MatchupsTeam({
               <th className="pv2 ph2 w0">{t("defense.team.type")}</th>
               {matchers.map((m) => {
                 return (
-                  <th key={m.name} className="pv2 ph2 bb border3">
+                  <th key={m.name} className="pv2 ph2 bn border3">
                     {m.name}
                   </th>
                 );

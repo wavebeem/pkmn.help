@@ -1,6 +1,7 @@
+import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useHistory } from "react-router-dom";
+import { NavLink, useHistory } from "react-router-dom";
 import { Button } from "./Button";
 import { Generation } from "./data-generations";
 import {
@@ -21,6 +22,19 @@ import { useTypeCount } from "./useTypeCount";
 
 const modes = ["solo", "team"] as const;
 type Mode = typeof modes[number];
+
+const classH2 = "f5 mb2 mt4";
+
+const tabClass = classNames([
+  "no-underline",
+  "pv1 ph3 f5",
+  "TabFocus",
+  "tc",
+  "ba border1 br-pill",
+  "bg1 fg1",
+]);
+
+const tabClassActive = classNames(["TabBar-Item-Selected"]);
 
 interface State {
   mode: Mode;
@@ -129,22 +143,28 @@ export function ScreenDefense({
     mode: state.mode === "solo" ? "team" : "solo",
   });
 
-  const classH2 = "f5 mb2 mt4";
-
   if (state.mode === "solo") {
     return (
       <main className="ph3 pt0 pb4 content-wide center">
         <div className="dib w-50-ns w-100 v-top">
-          {/* TODO: Solo/Team selector */}
           <h2 className={classH2}>{t("defense.mode.heading")}</h2>
           <div className="flex flex-wrap gap2">
-            <b>Solo</b>
-            <Link
-              to={oppositeParams}
-              className="underline fg-link br1 OutlineFocus"
+            <NavLink
+              to={params}
+              className={tabClass}
+              activeClassName={tabClassActive}
+              isActive={() => true}
             >
-              Team
-            </Link>
+              {t("defense.mode.solo")}
+            </NavLink>
+            <NavLink
+              to={oppositeParams}
+              className={tabClass}
+              activeClassName={tabClassActive}
+              isActive={() => false}
+            >
+              {t("defense.mode.team")}
+            </NavLink>
           </div>
           <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
           <TypeSelector
@@ -190,128 +210,139 @@ export function ScreenDefense({
     );
   }
 
+  // TODO: Fix the heading level on the type selectors
+
   return (
-    <main className="ph3 pt2 pb4 content-wide center">
+    <main className="ph3 pt0 pb4 content-wide center">
       <div
         // TODO: Use flex instead of inline-block for this layout...
         className="dib w-50-l w-100 v-top"
       >
-        {/* TODO: Solo/Team selector */}
         <h2 className={classH2}>{t("defense.mode.heading")}</h2>
-
         <div className="flex flex-wrap gap2">
-          <Link
+          <NavLink
             to={oppositeParams}
-            className="underline fg-link br1 OutlineFocus"
+            className={tabClass}
+            activeClassName={tabClassActive}
+            isActive={() => false}
           >
-            Solo
-          </Link>
-          <b>Team</b>
+            {t("defense.mode.solo")}
+          </NavLink>
+          <NavLink
+            to={params}
+            className={tabClass}
+            activeClassName={tabClassActive}
+            isActive={() => true}
+          >
+            {t("defense.mode.team")}
+          </NavLink>
         </div>
-        <div className="flex flex-column gap3 pt2">
+        <div className="flex flex-column">
           {state.teamTypesList.map((types, typeIndex) => {
             const name = t("defense.team.name", { teamNumber: typeIndex + 1 });
             return (
-              <div
-                key={typeIndex}
-                className="bg1 br3 ba border2 pa3 button-shadow"
-              >
-                <div className="flex flex-wrap gap2 items-center justify-between">
-                  <div className="flex flex-column flex-row-ns flex-wrap gap2">
-                    {types.map((t) => (
-                      <MonsterType key={t} type={t} />
-                    ))}
-                  </div>
-                  {/* TODO: Each Pokémon should have a heading of some kind... */}
-                  {/* <h2 className="f4 flex-auto ma0">{name}</h2> */}
-                  <div className="flex flex-column flex-row-ns gap2">
-                    <Button
-                      size="small"
-                      onClick={() => {
-                        if (typeIndex === teamIndex) {
-                          setTeamIndex(-1);
-                        } else {
-                          setTeamIndex(typeIndex);
-                        }
-                      }}
-                      aria-label={t(
-                        typeIndex === teamIndex
-                          ? "defense.team.saveLong"
-                          : "defense.team.editLong",
-                        { name }
-                      )}
-                      title={t(
-                        typeIndex === teamIndex
-                          ? "defense.team.saveLong"
-                          : "defense.team.editLong",
-                        { name }
-                      )}
-                    >
-                      {t(
-                        typeIndex === teamIndex
-                          ? "defense.team.save"
-                          : "defense.team.edit"
-                      )}
-                    </Button>
-                    <Button
-                      size="small"
-                      onClick={() => {
-                        setTeamIndex(-1);
-                        const list = [...state.teamTypesList];
-                        list.splice(typeIndex, 1);
-                        update({
-                          ...state,
-                          teamTypesList: list,
-                        });
-                      }}
-                      aria-label={t("defense.team.removeLong", { name })}
-                      title={t("defense.team.removeLong", { name })}
-                    >
-                      {t("defense.team.remove")}
-                    </Button>
-                  </div>
-                </div>
+              <div>
+                <h2 className="f5 flex-auto mt4 mb2">{name}</h2>
+
                 <div
-                  hidden={typeIndex !== teamIndex}
-                  className="bt border3 mt3"
+                  key={typeIndex}
+                  className="bg1 br3 ba border2 pa3 button-shadow"
                 >
-                  <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
-                  <TypeSelector
-                    generation={generation}
-                    name="primary"
-                    value={types[0]}
-                    onChange={updateTeamTypesAt(typeIndex, 0)}
-                    disabledTypes={[]}
-                    includeNone={false}
-                  />
-                  <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
-                  <TypeSelector
-                    generation={generation}
-                    name="secondary"
-                    value={types[1] || Type.NONE}
-                    onChange={updateTeamTypesAt(typeIndex, 1)}
-                    disabledTypes={types.slice(0, 1)}
-                    includeNone={true}
-                  />
-                  {Number(typeCount) === 3 && (
-                    <>
-                      <h2 className={classH2}>{t("defense.chooseThird")}</h2>
-                      <TypeSelector
-                        generation={generation}
-                        name="third"
-                        value={types[2] || Type.NONE}
-                        onChange={updateTeamTypesAt(typeIndex, 2)}
-                        disabledTypes={types.slice(0, 2)}
-                        includeNone={true}
-                      />
-                    </>
-                  )}
+                  <div className="flex flex-wrap gap2 items-center justify-between">
+                    <div className="flex flex-column flex-row-ns flex-wrap gap2">
+                      {types.map((t) => (
+                        <MonsterType key={t} type={t} />
+                      ))}
+                    </div>
+                    <div className="flex flex-column flex-row-ns gap2">
+                      <Button
+                        size="small"
+                        onClick={() => {
+                          if (typeIndex === teamIndex) {
+                            setTeamIndex(-1);
+                          } else {
+                            setTeamIndex(typeIndex);
+                          }
+                        }}
+                        aria-label={t(
+                          typeIndex === teamIndex
+                            ? "defense.team.saveLong"
+                            : "defense.team.editLong",
+                          { name }
+                        )}
+                        title={t(
+                          typeIndex === teamIndex
+                            ? "defense.team.saveLong"
+                            : "defense.team.editLong",
+                          { name }
+                        )}
+                      >
+                        {t(
+                          typeIndex === teamIndex
+                            ? "defense.team.save"
+                            : "defense.team.edit"
+                        )}
+                      </Button>
+                      <Button
+                        size="small"
+                        onClick={() => {
+                          setTeamIndex(-1);
+                          const list = [...state.teamTypesList];
+                          list.splice(typeIndex, 1);
+                          update({
+                            ...state,
+                            teamTypesList: list,
+                          });
+                        }}
+                        aria-label={t("defense.team.removeLong", { name })}
+                        title={t("defense.team.removeLong", { name })}
+                      >
+                        {t("defense.team.remove")}
+                      </Button>
+                    </div>
+                  </div>
+                  <div
+                    hidden={typeIndex !== teamIndex}
+                    className="bt border3 mt3"
+                  >
+                    <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
+                    <TypeSelector
+                      generation={generation}
+                      name="primary"
+                      value={types[0]}
+                      onChange={updateTeamTypesAt(typeIndex, 0)}
+                      disabledTypes={[]}
+                      includeNone={false}
+                    />
+                    <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
+                    <TypeSelector
+                      generation={generation}
+                      name="secondary"
+                      value={types[1] || Type.NONE}
+                      onChange={updateTeamTypesAt(typeIndex, 1)}
+                      disabledTypes={types.slice(0, 1)}
+                      includeNone={true}
+                    />
+                    {Number(typeCount) === 3 && (
+                      <>
+                        <h2 className={classH2}>{t("defense.chooseThird")}</h2>
+                        <TypeSelector
+                          generation={generation}
+                          name="third"
+                          value={types[2] || Type.NONE}
+                          onChange={updateTeamTypesAt(typeIndex, 2)}
+                          disabledTypes={types.slice(0, 2)}
+                          includeNone={true}
+                        />
+                      </>
+                    )}
+                  </div>
                 </div>
               </div>
             );
           })}
         </div>
-        <div className="pt3">
+        <div className="pt4">
           <Button
             onClick={() => {
               const newTypes = [...state.teamTypesList, [Type.NORMAL]];
@@ -322,29 +353,30 @@ export function ScreenDefense({
               setTeamIndex(newTypes.length - 1);
             }}
           >
-            Add Pokémon
+            {t("defense.team.add")}
           </Button>
         </div>
       </div>
       <div className="dib w-50-l w-100 v-top pl5-l">
         <hr className="dn-l subtle-hr mv4" />
-        <div className="pt2" />
-        <Select
-          onChange={(event) => {
-            update({
-              ...state,
-              format: event.target.value as any,
-            });
-          }}
-          value={state.format}
-          label={t("defense.team.displayType")}
-        >
-          <option value="simple">{t("defense.team.simple")}</option>
-          <option value="complex">{t("defense.team.complex")}</option>
-          <option value="weak">{t("defense.team.weak")}</option>
-          <option value="resist">{t("defense.team.resist")}</option>
-        </Select>
-        <div className="pt2" />
+        <div className="pt0 pt4-l mw-max">
+          <Select
+            onChange={(event) => {
+              update({
+                ...state,
+                format: event.target.value as any,
+              });
+            }}
+            value={state.format}
+            label={t("defense.team.displayType")}
+          >
+            <option value="simple">{t("defense.team.simple")}</option>
+            <option value="complex">{t("defense.team.complex")}</option>
+            <option value="weak">{t("defense.team.weak")}</option>
+            <option value="resist">{t("defense.team.resist")}</option>
+          </Select>
+        </div>
+        <div className="pt4" />
         <MatchupsTeam
           kind="defense"
           generation={generation}

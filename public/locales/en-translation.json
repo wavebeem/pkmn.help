@@ -61,9 +61,15 @@
     "back": "Back to offense"
   },
   "defense": {
+    "mode": {
+      "heading": "Choose Mode",
+      "solo": "Solo",
+      "team": "Team"
+    },
     "team": {
+      "add": "Add Pokémon",
       "empty": "No Pokémon selected",
-      "displayType": "Table format",
+      "displayType": "Table Format",
       "weak": "Weak",
       "resist": "Resist",
       "simple": "Simple",

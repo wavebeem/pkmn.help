@@ -148,6 +148,10 @@
   width: 0;
 }
 
+.mw-max {
+  max-width: max-content;
+}
+
 .sticky {
   position: sticky;
 }
