@@ -237,106 +237,108 @@ export function ScreenDefense({
             {t("defense.mode.team")}
           </NavLink>
         </div>
-        <div className="flex flex-column">
+        <h2 className={classH2}>{t("defense.team.heading")}</h2>
+        <div className="flex flex-column gap3">
+          {state.teamTypesList.length === 0 && (
+            <p className="fg4 f4 b m0 ba tc ma0 ph2 pv4 border3 br2">
+              {t("defense.team.empty")}
+            </p>
+          )}
           {state.teamTypesList.map((types, typeIndex) => {
-            const name = t("defense.team.name", { teamNumber: typeIndex + 1 });
+            const name = `#${typeIndex + 1}`;
             return (
-              <div>
-                <h2 className="f5 flex-auto mt4 mb2">{name}</h2>
-
-                <div
-                  key={typeIndex}
-                  className="bg1 br3 ba border2 pa3 button-shadow"
-                >
-                  <div className="flex flex-wrap gap2 items-center justify-between">
-                    <div className="flex flex-column flex-row-ns flex-wrap gap2">
-                      {types.map((t) => (
-                        <MonsterType key={t} type={t} />
-                      ))}
-                    </div>
-                    <div className="flex flex-column flex-row-ns gap2">
-                      <Button
-                        size="small"
-                        onClick={() => {
-                          if (typeIndex === teamIndex) {
-                            setTeamIndex(-1);
-                          } else {
-                            setTeamIndex(typeIndex);
-                          }
-                        }}
-                        aria-label={t(
-                          typeIndex === teamIndex
-                            ? "defense.team.saveLong"
-                            : "defense.team.editLong",
-                          { name }
-                        )}
-                        title={t(
-                          typeIndex === teamIndex
-                            ? "defense.team.saveLong"
-                            : "defense.team.editLong",
-                          { name }
-                        )}
-                      >
-                        {t(
-                          typeIndex === teamIndex
-                            ? "defense.team.save"
-                            : "defense.team.edit"
-                        )}
-                      </Button>
-                      <Button
-                        size="small"
-                        onClick={() => {
+              <div
+                key={typeIndex}
+                className="bg1 br3 ba border2 pa3 button-shadow"
+              >
+                <div className="flex flex-wrap gap2 items-center justify-between">
+                  <div className="flex flex-column flex-row-ns flex-wrap justify-center gap2">
+                    {types.map((t) => (
+                      <MonsterType key={t} type={t} />
+                    ))}
+                  </div>
+                  <div className="flex flex-column flex-row-ns gap2">
+                    <Button
+                      size="small"
+                      onClick={() => {
+                        if (typeIndex === teamIndex) {
                           setTeamIndex(-1);
-                          const list = [...state.teamTypesList];
-                          list.splice(typeIndex, 1);
-                          update({
-                            ...state,
-                            teamTypesList: list,
-                          });
-                        }}
-                        aria-label={t("defense.team.removeLong", { name })}
-                        title={t("defense.team.removeLong", { name })}
-                      >
-                        {t("defense.team.remove")}
-                      </Button>
-                    </div>
+                        } else {
+                          setTeamIndex(typeIndex);
+                        }
+                      }}
+                      aria-label={t(
+                        typeIndex === teamIndex
+                          ? "defense.team.saveLong"
+                          : "defense.team.editLong",
+                        { name }
+                      )}
+                      title={t(
+                        typeIndex === teamIndex
+                          ? "defense.team.saveLong"
+                          : "defense.team.editLong",
+                        { name }
+                      )}
+                    >
+                      {t(
+                        typeIndex === teamIndex
+                          ? "defense.team.save"
+                          : "defense.team.edit"
+                      )}
+                    </Button>
+                    <Button
+                      size="small"
+                      onClick={() => {
+                        setTeamIndex(-1);
+                        const list = [...state.teamTypesList];
+                        list.splice(typeIndex, 1);
+                        update({
+                          ...state,
+                          teamTypesList: list,
+                        });
+                      }}
+                      aria-label={t("defense.team.removeLong", { name })}
+                      title={t("defense.team.removeLong", { name })}
+                    >
+                      {t("defense.team.remove")}
+                    </Button>
                   </div>
-                  <div
-                    hidden={typeIndex !== teamIndex}
-                    className="bt border3 mt3"
-                  >
-                    <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
-                    <TypeSelector
-                      generation={generation}
-                      name="primary"
-                      value={types[0]}
-                      onChange={updateTeamTypesAt(typeIndex, 0)}
-                      disabledTypes={[]}
-                      includeNone={false}
-                    />
-                    <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
-                    <TypeSelector
-                      generation={generation}
-                      name="secondary"
-                      value={types[1] || Type.NONE}
-                      onChange={updateTeamTypesAt(typeIndex, 1)}
-                      disabledTypes={types.slice(0, 1)}
-                      includeNone={true}
-                    />
-                    {Number(typeCount) === 3 && (
-                      <>
-                        <h2 className={classH2}>{t("defense.chooseThird")}</h2>
-                        <TypeSelector
-                          generation={generation}
-                          name="third"
-                          value={types[2] || Type.NONE}
-                          onChange={updateTeamTypesAt(typeIndex, 2)}
-                          disabledTypes={types.slice(0, 2)}
-                          includeNone={true}
-                        />
-                      </>
-                    )}
-                  </div>
+                </div>
+                <div
+                  hidden={typeIndex !== teamIndex}
+                  className="bt border3 mt3"
+                >
+                  <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
+                  <TypeSelector
+                    generation={generation}
+                    name="primary"
+                    value={types[0]}
+                    onChange={updateTeamTypesAt(typeIndex, 0)}
+                    disabledTypes={[]}
+                    includeNone={false}
+                  />
+                  <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
+                  <TypeSelector
+                    generation={generation}
+                    name="secondary"
+                    value={types[1] || Type.NONE}
+                    onChange={updateTeamTypesAt(typeIndex, 1)}
+                    disabledTypes={types.slice(0, 1)}
+                    includeNone={true}
+                  />
+                  {Number(typeCount) === 3 && (
+                    <>
+                      <h2 className={classH2}>{t("defense.chooseThird")}</h2>
+                      <TypeSelector
+                        generation={generation}
+                        name="third"
+                        value={types[2] || Type.NONE}
+                        onChange={updateTeamTypesAt(typeIndex, 2)}
+                        disabledTypes={types.slice(0, 2)}
+                        includeNone={true}
+                      />
+                    </>
+                  )}
                 </div>
               </div>
             );
@@ -376,7 +378,7 @@ export function ScreenDefense({
             <option value="resist">{t("defense.team.resist")}</option>
           </Select>
         </div>
-        <div className="pt4" />
+        <h2 className={classH2}>{t("defense.team.tableHeading")}</h2>
         <MatchupsTeam
           kind="defense"
           generation={generation}

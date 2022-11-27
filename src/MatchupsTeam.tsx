@@ -6,6 +6,7 @@ import { defensiveMatchups } from "./data-matchups";
 import { Type } from "./data-types";
 import { useTranslation } from "react-i18next";
 import { assertNever } from "./assertNever";
+import classNames from "classnames";
 
 const effectivenessDisplay = {
   weak: "≥ 2×",
@@ -95,7 +96,6 @@ export function MatchupsTeam({
 
   switch (format) {
     case "complex":
-      // Already has the correct default value above
       matchers = [
         // TODO: Add 8x matcher if 3 types are enabled...
         new Matcher({
@@ -216,49 +216,55 @@ export function MatchupsTeam({
   }
 
   if (typesList.length === 0) {
-    return <p className="fg4 f4 b tc m0">{t("defense.team.empty")}</p>;
+    return (
+      <p className="fg4 f4 b m0 ba tc ma0 ph2 pv4 border3 br2">
+        {t("defense.team.empty")}
+      </p>
+    );
   }
 
   return (
     <div id={`MatchupsTeam-${kind}`}>
-      <div tabIndex={0} className="overflow-x-auto br1 TableFocus">
-        <table className="collapse tc tabular-nums">
-          <thead>
-            <tr>
-              <th className="pv2 ph2 w0">{t("defense.team.type")}</th>
-              {matchers.map((m) => {
+      <div className="br2 SimpleFocus ba pa2 border3">
+        <div className="overflow-x-auto" tabIndex={0}>
+          <table className="collapse tc w-100 tabular-nums mr2">
+            <thead>
+              <tr>
+                <th className="pa2">{t("defense.team.type")}</th>
+                {matchers.map((m) => {
+                  return (
+                    <th key={m.name} className="pa2">
+                      {m.name}
+                    </th>
+                  );
+                })}
+              </tr>
+            </thead>
+            <tbody>
+              {Object.entries(data3).map(([type_, matchups]) => {
+                const type = type_ as Type;
                 return (
-                  <th key={m.name} className="pv2 ph2 bn border3">
-                    {m.name}
-                  </th>
+                  <tr key={type}>
+                    <th className="pr3">
+                      <Badge type={type} />
+                    </th>
+                    {matchers.map((m) => {
+                      // TODO: Fix the data structure to match the UI so I don't
+                      // have to use `.find` inside a `.map` lol
+                      const count = matchups.find(m.createMatcher(type))
+                        ?.count ?? <span className="o-10">-</span>;
+                      return (
+                        <td key={m.name + type} className="pv2 ph3 bt border3">
+                          {count}
+                        </td>
+                      );
+                    })}
+                  </tr>
                 );
               })}
-            </tr>
-          </thead>
-          <tbody>
-            {Object.entries(data3).map(([type_, matchups]) => {
-              const type = type_ as Type;
-              return (
-                <tr key={type} className="">
-                  <th className="pv1 pr2">
-                    <Badge type={type} />
-                  </th>
-                  {matchers.map((m) => {
-                    // TODO: Fix the data structure to match the UI so I don't
-                    // have to use `.find` inside a `.map` lol
-                    const count = matchups.find(m.createMatcher(type))
-                      ?.count ?? <span className="o-0">0</span>;
-                    return (
-                      <td key={m.name + type} className="pv2 ph3 ba border3">
-                        {count}
-                      </td>
-                    );
-                  })}
-                </tr>
-              );
-            })}
-          </tbody>
-        </table>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
