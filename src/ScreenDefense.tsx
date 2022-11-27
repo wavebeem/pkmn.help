@@ -210,8 +210,6 @@ export function ScreenDefense({
     );
   }
 
-  // TODO: Fix the heading level on the type selectors
-
   return (
     <main className="ph3 pt0 pb4 content-wide center">
       <div
