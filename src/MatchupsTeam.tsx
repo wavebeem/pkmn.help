@@ -1,11 +1,12 @@
 import * as React from "react";
-import { groupBy, sortBy } from "lodash";
+import { compact, groupBy, sortBy } from "lodash";
 import { Badge } from "./Badge";
 import { Generation } from "./data-generations";
 import { defensiveMatchups } from "./data-matchups";
 import { Type } from "./data-types";
 import { useTranslation } from "react-i18next";
 import { assertNever } from "./assertNever";
+import { useTypeCount } from "./useTypeCount";
 
 const effectivenessDisplay = {
   weak: "≥ 2×",
@@ -61,6 +62,8 @@ export function MatchupsTeam({
 }: MatchupsTeamProps) {
   const { t } = useTranslation();
 
+  const [typeCount] = useTypeCount();
+
   // Type + Effectiveness => amount
   const map = new Map<string, number>();
   for (const types of typesList) {
@@ -95,12 +98,18 @@ export function MatchupsTeam({
 
   switch (format) {
     case "complex":
-      matchers = [
-        // TODO: Add 8x matcher if 3 types are enabled...
+      matchers = compact([
+        typeCount === "3" &&
+          new Matcher({
+            name: effectivenessDisplay[8],
+            createMatcher: (type) => (matchup) => {
+              return matchup.type === type && matchup.effectiveness === 8;
+            },
+          }),
         new Matcher({
           name: effectivenessDisplay[4],
           createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness >= 4;
+            return matchup.type === type && matchup.effectiveness === 4;
           },
         }),
         new Matcher({
@@ -124,21 +133,23 @@ export function MatchupsTeam({
         new Matcher({
           name: effectivenessDisplay[1 / 4],
           createMatcher: (type) => (matchup) => {
-            return (
-              matchup.type === type &&
-              matchup.effectiveness <= 1 / 4 &&
-              matchup.effectiveness !== 0
-            );
+            return matchup.type === type && matchup.effectiveness === 1 / 4;
           },
         }),
-        // TODO: Add 1/8x matcher if 3 types are enabled...
+        typeCount === "3" &&
+          new Matcher({
+            name: effectivenessDisplay[1 / 8],
+            createMatcher: (type) => (matchup) => {
+              return matchup.type === type && matchup.effectiveness === 1 / 8;
+            },
+          }),
         new Matcher({
           name: effectivenessDisplay[0],
           createMatcher: (type) => (matchup) => {
             return matchup.type === type && matchup.effectiveness === 0;
           },
         }),
-      ];
+      ]);
       break;
     case "simple":
       matchers = [
@@ -167,7 +178,7 @@ export function MatchupsTeam({
       ];
       break;
     case "resist":
-      matchers = [
+      matchers = compact([
         new Matcher({
           name: effectivenessDisplay[1 / 2],
           createMatcher: (type) => (matchup) => {
@@ -177,29 +188,37 @@ export function MatchupsTeam({
         new Matcher({
           name: effectivenessDisplay[1 / 4],
           createMatcher: (type) => (matchup) => {
-            return (
-              matchup.type === type &&
-              matchup.effectiveness <= 1 / 4 &&
-              matchup.effectiveness !== 0
-            );
+            return matchup.type === type && matchup.effectiveness === 1 / 4;
           },
         }),
-        // TODO: Add 1/8x matcher if 3 types are enabled...
+        typeCount === "3" &&
+          new Matcher({
+            name: effectivenessDisplay[1 / 8],
+            createMatcher: (type) => (matchup) => {
+              return matchup.type === type && matchup.effectiveness === 1 / 8;
+            },
+          }),
         new Matcher({
           name: effectivenessDisplay[0],
           createMatcher: (type) => (matchup) => {
             return matchup.type === type && matchup.effectiveness === 0;
           },
         }),
-      ];
+      ]);
       break;
     case "weak":
-      matchers = [
-        // TODO: Add 8x matcher if 3 types are enabled...
+      matchers = compact([
+        typeCount === "3" &&
+          new Matcher({
+            name: effectivenessDisplay[8],
+            createMatcher: (type) => (matchup) => {
+              return matchup.type === type && matchup.effectiveness === 8;
+            },
+          }),
         new Matcher({
           name: effectivenessDisplay[4],
           createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness >= 4;
+            return matchup.type === type && matchup.effectiveness === 4;
           },
         }),
         new Matcher({
@@ -208,7 +227,7 @@ export function MatchupsTeam({
             return matchup.type === type && matchup.effectiveness === 2;
           },
         }),
-      ];
+      ]);
       break;
     default:
       assertNever(format);
