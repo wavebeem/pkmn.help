@@ -19,10 +19,11 @@
     "build": "tsc && vite build --mode production",
     "test-sw": "npm run -s build && npx serve -s dist",
     "preview": "vite preview",
-    "lint": "eslint src --ext .ts,.tsx,.js",
+    "lint:js": "eslint src --ext .ts,.tsx,.js",
+    "lint:css": "stylelint \"src/**/*.css\"",
     "pretty": "prettier \"src/**/*.{ts,tsx,js}\" --check",
     "pretty:fix": "prettier \"src/**/*.{ts,tsx,js}\" --write",
-    "test": "npm-run-all -s lint pretty"
+    "test": "npm-run-all -s lint:js pretty"
   },
   "repository": {
     "type": "git",
@@ -82,6 +83,8 @@
     "react-i18next": "^11.15.5",
     "react-router-dom": "^5.2.0",
     "remove-accents": "^0.4.2",
+    "stylelint": "^14.15.0",
+    "stylelint-config-standard": "^29.0.0",
     "tachyons": "^4.12.0",
     "use-debounce": "^7.0.0",
     "usehooks-ts": "^2.1.1"
