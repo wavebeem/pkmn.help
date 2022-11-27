@@ -6,7 +6,6 @@ import { defensiveMatchups } from "./data-matchups";
 import { Type } from "./data-types";
 import { useTranslation } from "react-i18next";
 import { assertNever } from "./assertNever";
-import classNames from "classnames";
 
 const effectivenessDisplay = {
   weak: "≥ 2×",
@@ -225,12 +224,12 @@ export function MatchupsTeam({
 
   return (
     <div id={`MatchupsTeam-${kind}`}>
-      <div className="br2 SimpleFocus ba pa2 border3">
+      <div className="br2 SimpleFocus ba bg1 button-shadow pa2 border2">
         <div className="overflow-x-auto" tabIndex={0}>
           <table className="collapse tc w-100 tabular-nums mr2">
             <thead>
               <tr>
-                <th className="pa2">{t("defense.team.type")}</th>
+                <th className="pa2 w0">{t("defense.team.type")}</th>
                 {matchers.map((m) => {
                   return (
                     <th key={m.name} className="pa2">
@@ -245,7 +244,7 @@ export function MatchupsTeam({
                 const type = type_ as Type;
                 return (
                   <tr key={type}>
-                    <th className="pr3">
+                    <th className="pr2">
                       <Badge type={type} />
                     </th>
                     {matchers.map((m) => {

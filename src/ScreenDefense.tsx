@@ -245,18 +245,20 @@ export function ScreenDefense({
             </p>
           )}
           {state.teamTypesList.map((types, typeIndex) => {
-            const name = `#${typeIndex + 1}`;
+            const name = `${typeIndex + 1}`;
             return (
               <div
                 key={typeIndex}
-                className="bg1 br3 ba border2 pa3 button-shadow"
+                className="br3 ba border2 pa3 bg1 button-shadow"
               >
-                <div className="flex flex-wrap gap2 items-center justify-between">
+                <div className="flex flex-wrap gap2 items-center">
+                  <div className="f5 b pr2 tabular-nums">{typeIndex + 1}</div>
                   <div className="flex flex-column flex-row-ns flex-wrap justify-center gap2">
                     {types.map((t) => (
                       <MonsterType key={t} type={t} />
                     ))}
                   </div>
+                  <div className="flex-auto" />
                   <div className="flex flex-column flex-row-ns gap2">
                     <Button
                       size="small"
@@ -344,7 +346,7 @@ export function ScreenDefense({
             );
           })}
         </div>
-        <div className="pt4">
+        <div className="pt3">
           <Button
             onClick={() => {
               const newTypes = [...state.teamTypesList, [Type.NORMAL]];
