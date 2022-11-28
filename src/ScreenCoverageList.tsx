@@ -7,7 +7,7 @@ import { CoverageType, typesFromString } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
 import { IconArrowLeft } from "./IconArrows";
 import { MonsterType } from "./MonsterType";
-import Paginator from "./Paginator";
+import { Paginator } from "./Paginator";
 import { useSearch } from "./useSearch";
 
 interface CoverageListProps {
@@ -16,7 +16,7 @@ interface CoverageListProps {
   coverageTypes: CoverageType[];
 }
 
-export default function ScreenCoverageList({
+export function ScreenCoverageList({
   type,
   generation,
   coverageTypes,
@@ -80,7 +80,7 @@ export default function ScreenCoverageList({
         currentPage={page}
         pageSize={20}
         emptyState={
-          <p className="fg4 f4 b tc m0">{t("offense.coverageList.empty")}</p>
+          <p className="fg4 f4 b tc mv4">{t("offense.coverageList.empty")}</p>
         }
         items={items}
         renderPage={(items) => {

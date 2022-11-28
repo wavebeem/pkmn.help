@@ -13,7 +13,7 @@ interface DexCoverageProps {
   isLoading: boolean;
 }
 
-function DexCoverage({
+export function DexCoverage({
   generation,
   coverageTypes,
   types,
@@ -76,5 +76,3 @@ function DexCoverage({
     </div>
   );
 }
-
-export default DexCoverage;

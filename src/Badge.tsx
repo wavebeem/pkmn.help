@@ -4,19 +4,19 @@ import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG, typeColorBorder } from "./colors";
 import { Type } from "./data-types";
 
-interface MonsterTypeProps {
+interface BadgeProps {
   type: Type;
 }
 
-export function MonsterType({ type }: MonsterTypeProps) {
+export function Badge({ type }: BadgeProps) {
   const { t } = useTranslation();
   return (
     <div
       className={classNames(
         "type-bg",
-        "ttc tc flex",
-        "lh-title b",
-        "br2 ba border-vibrant f6"
+        "ba border-vibrant",
+        "br2",
+        "b f5 lh-title tc"
       )}
       style={{
         padding: 2,
@@ -24,8 +24,10 @@ export function MonsterType({ type }: MonsterTypeProps) {
       }}
     >
       <div
-        className="white w-100 br1 ba b--black-10 ph2 nowrap"
+        className="br1 ba b--transparent white truncate"
         style={{
+          paddingLeft: 4,
+          paddingRight: 4,
           background: typeColorBG(type),
           borderColor: typeColorBorder(type),
         }}

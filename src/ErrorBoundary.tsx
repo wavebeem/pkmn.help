@@ -8,7 +8,7 @@ interface ErrorBoundaryState {
   error?: Error;
 }
 
-export default class ErrorBoundary extends React.Component<
+export class ErrorBoundary extends React.Component<
   ErrorBoundaryProps,
   ErrorBoundaryState
 > {

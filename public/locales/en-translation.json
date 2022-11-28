@@ -61,6 +61,29 @@
     "back": "Back to offense"
   },
   "defense": {
+    "mode": {
+      "heading": "Choose Mode",
+      "solo": "Solo",
+      "team": "Team"
+    },
+    "team": {
+      "tableHeading": "Matchup Counts",
+      "heading": "Edit Pokémon Team",
+      "add": "Add Pokémon",
+      "empty": "No Pokémon selected",
+      "displayType": "Table Format",
+      "weak": "Weak",
+      "resist": "Resist",
+      "simple": "Simple",
+      "complex": "Complex",
+      "type": "Type",
+      "save": "Save",
+      "saveLong": "Save {{ name }}",
+      "edit": "Edit",
+      "editLong": "Edit {{ name }}",
+      "remove": "Remove",
+      "removeLong": "Remove {{ name }}"
+    },
     "chooseFirst": "Choose First Type",
     "chooseSecond": "Choose Second Type",
     "chooseThird": "Choose Third Type",

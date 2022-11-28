@@ -83,7 +83,7 @@ export function Matchups({ kind, generation, types }: MatchupsProps) {
         return (
           <Section
             key={eff}
-            title={formatTitle(displayEffectiveness[eff])}
+            title={formatTitle(effectivenessDisplay[eff])}
             types={matchups.typesFor(eff)}
           />
         );
@@ -94,7 +94,7 @@ export function Matchups({ kind, generation, types }: MatchupsProps) {
 
 const effectivenessLevels = [8, 4, 2, 1, 1 / 2, 1 / 4, 1 / 8, 0];
 
-const displayEffectiveness = {
+const effectivenessDisplay = {
   [8]: "8×",
   [4]: "4×",
   [2]: "2×",

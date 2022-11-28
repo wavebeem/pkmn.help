@@ -14,7 +14,7 @@ const buttonClasses = classNames(
   "border1 button-shadow button-bg button-bg-hover color-inherit active-squish"
 );
 
-function ScreenError({ error }: ScreenErrorProps) {
+export function ScreenError({ error }: ScreenErrorProps) {
   return (
     <div className="sans-serif ph4 content-narrow f4 center fg2 lh-copy">
       <h1>pkmn.help: Error</h1>
@@ -42,5 +42,3 @@ function ScreenError({ error }: ScreenErrorProps) {
     </div>
   );
 }
-
-export default ScreenError;

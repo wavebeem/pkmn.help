@@ -134,11 +134,6 @@ export function removeInvalidDefenseTypesForGeneration(
 
 export const typesOrNone = [...types, Type.NONE];
 
-// whatYouMeant("こおり", {
-//   ice: "こおり",
-//   fire: "ほのお"
-// });
-
 // find closest(key, Object.values(obj)))
 // return key of first value that matches
 

@@ -9,13 +9,13 @@ import { CoverageType, Pokemon } from "./data-types";
 import { detectLanguage } from "./detectLanguage";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
-import ScreenCoverageList from "./ScreenCoverageList";
-import ScreenDefense from "./ScreenDefense";
-import ScreenMore from "./ScreenMore";
-import ScreenOffense from "./ScreenOffense";
-import ScreenPokedex from "./ScreenPokedex";
-import ScreenPokedexHelp from "./ScreenPokedexHelp";
-import ScreenWeaknessCoverage from "./ScreenWeaknessCoverage";
+import { ScreenCoverageList } from "./ScreenCoverageList";
+import { ScreenDefense } from "./ScreenDefense";
+import { ScreenMore } from "./ScreenMore";
+import { ScreenOffense } from "./ScreenOffense";
+import { ScreenPokedex } from "./ScreenPokedex";
+import { ScreenPokedexHelp } from "./ScreenPokedexHelp";
+import { ScreenWeaknessCoverage } from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
 import { useFetchJSON } from "./useFetchJSON";
 import { useGeneration } from "./useGeneration";
@@ -48,7 +48,7 @@ function useTranslationsWithBlankFallback() {
   return ready ? translation : getFallback;
 }
 
-export default function App() {
+export function App() {
   // Service worker
   const {
     needRefresh: [needRefresh, setNeedRefresh],
@@ -160,7 +160,7 @@ export default function App() {
             </div>
           )}
         </h1>
-        <nav className={classNames(["bg1", "bb border2 TabBar", "pb2 ph2"])}>
+        <nav className="bg1 bb border2 TabBar pb2 ph2">
           <NavLink
             className={tabClass}
             activeClassName={tabClassActive}

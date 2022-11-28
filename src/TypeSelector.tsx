@@ -16,7 +16,7 @@ interface TypeSelectorProps {
   name: string;
 }
 
-export default function TypeSelector({
+export function TypeSelector({
   generation,
   onChange,
   value,

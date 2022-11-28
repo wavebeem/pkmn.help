@@ -27,7 +27,7 @@ export function Select({
 const baseClasses = classNames(
   "db w-100",
   "no-underline",
-  "ba br2 pa2 pr4",
+  "ba br2 pa2 pr5",
   "f5",
   "SimpleFocus",
   "border1 button-shadow button-bg button-bg-hover color-inherit"

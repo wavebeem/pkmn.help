@@ -9,10 +9,10 @@ import { formatMonsterNumber } from "./formatMonsterNumber";
 import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import { MonsterType } from "./MonsterType";
-import Paginator from "./Paginator";
+import { Paginator } from "./Paginator";
 import { pickTranslation } from "./pickTranslation";
-import Search from "./Search";
-import StatsTable from "./StatsTable";
+import { Search } from "./Search";
+import { StatsTable } from "./StatsTable";
 import { useLanguage } from "./useLanguage";
 import { useSearch } from "./useSearch";
 
@@ -154,7 +154,7 @@ interface DexProps {
   isLoading: boolean;
 }
 
-export default function ScreenPokedex({
+export function ScreenPokedex({
   allPokemon,
   setPokedexParams,
   isLoading,

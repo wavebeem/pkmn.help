@@ -9,7 +9,7 @@ interface SearchProps {
   search: string;
 }
 
-export default function Search({ updateSearch, search }: SearchProps) {
+export function Search({ updateSearch, search }: SearchProps) {
   const { t } = useTranslation();
   const ref = React.useRef<HTMLInputElement>(null);
   const iconSize = 24;

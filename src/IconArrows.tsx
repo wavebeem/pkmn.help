@@ -29,12 +29,12 @@ const paths = {
   Left: arrowPath({ offsetX: 0, flipH: false }),
   Right: arrowPath({ offsetX: 0, flipH: true }),
   LeftDouble: [
-    arrowPath({ offsetX: -4, flipH: false }),
-    arrowPath({ offsetX: 4, flipH: false }),
+    arrowPath({ offsetX: -strokeWidth, flipH: false }),
+    arrowPath({ offsetX: strokeWidth, flipH: false }),
   ].join("\n"),
   RightDouble: [
-    arrowPath({ offsetX: -4, flipH: true }),
-    arrowPath({ offsetX: 4, flipH: true }),
+    arrowPath({ offsetX: -strokeWidth, flipH: true }),
+    arrowPath({ offsetX: strokeWidth, flipH: true }),
   ].join("\n"),
 } as const;
 

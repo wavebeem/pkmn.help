@@ -8,7 +8,7 @@ export interface StatBarProps {
   type: Type;
 }
 
-export default function StatBar({ value, max, type }: StatBarProps) {
+export function StatBar({ value, max, type }: StatBarProps) {
   return (
     <div className="flex h1 w-100 Bar-Container">
       <div

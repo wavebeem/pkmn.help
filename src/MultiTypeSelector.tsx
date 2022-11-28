@@ -13,7 +13,7 @@ interface MultiTypeSelectorProps {
   value: Type[];
 }
 
-export default function MultiTypeSelector({
+export function MultiTypeSelector({
   generation,
   onChange,
   value,
