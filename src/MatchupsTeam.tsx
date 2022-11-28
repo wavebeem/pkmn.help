@@ -147,44 +147,42 @@ export function MatchupsTeam({
   }
 
   return (
-    <div id={`MatchupsTeam-${kind}`}>
-      <div className="br2 SimpleFocus ba bg1 button-shadow pa2 border2">
-        <div className="overflow-x-auto NoFocus" tabIndex={0}>
-          <table className="collapse tc w-100 tabular-nums mr2">
-            <thead>
-              <tr className="bb border3">
-                <th className="pa2 w0">{t("defense.team.type")}</th>
-                {matchers.map((m) => {
-                  return (
-                    <th key={m.name} className="pa2">
-                      {m.name}
-                    </th>
-                  );
-                })}
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map(([type, ...counts]) => {
+    <div className="br2 SimpleFocus ba bg1 button-shadow pa2 border2">
+      <div className="overflow-x-auto NoFocus" tabIndex={0}>
+        <table className="collapse tc w-100 tabular-nums">
+          <thead>
+            <tr className="bb border3">
+              <th className="pa2 w0">{t("defense.team.type")}</th>
+              {matchers.map((m) => {
                 return (
-                  <tr key={type} className="bt border3">
-                    <th className="pv1">
-                      <Badge type={type} />
-                    </th>
-                    {counts.map((count, i) => {
-                      const display =
-                        count === 0 ? <span className="o-10">-</span> : count;
-                      return (
-                        <td key={i} className="pv2 ph3">
-                          {display}
-                        </td>
-                      );
-                    })}
-                  </tr>
+                  <th key={m.name} className="pa2">
+                    {m.name}
+                  </th>
                 );
               })}
-            </tbody>
-          </table>
-        </div>
+            </tr>
+          </thead>
+          <tbody>
+            {rows.map(([type, ...counts]) => {
+              return (
+                <tr key={type} className="bt border3">
+                  <th className="pv1">
+                    <Badge type={type} />
+                  </th>
+                  {counts.map((count, i) => {
+                    const display =
+                      count === 0 ? <span className="o-10">-</span> : count;
+                    return (
+                      <td key={i} className="pv2 ph3">
+                        {display}
+                      </td>
+                    );
+                  })}
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
       </div>
     </div>
   );
