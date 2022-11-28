@@ -80,7 +80,7 @@ export function ScreenCoverageList({
         currentPage={page}
         pageSize={20}
         emptyState={
-          <p className="fg4 f4 b tc m0">{t("offense.coverageList.empty")}</p>
+          <p className="fg4 f4 b tc mv4">{t("offense.coverageList.empty")}</p>
         }
         items={items}
         renderPage={(items) => {

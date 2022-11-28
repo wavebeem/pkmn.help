@@ -1,8 +1,8 @@
-import classNames from "classnames";
 import Papa from "papaparse";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { Button } from "./Button";
 import {
   CoverageType,
   objectToCoverageType,
@@ -14,16 +14,6 @@ import { IconArrowLeft } from "./IconArrows";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
 import { useTypeCount } from "./useTypeCount";
-
-const buttonClasses = classNames(
-  "no-underline",
-  "db",
-  "ba br2 pv1 ph2",
-  "b f5",
-  "SimpleFocus",
-  "active-squish",
-  "border1 button-shadow button-bg button-bg-hover color-inherit"
-);
 
 interface WeaknessCoverageProps {
   setCoverageTypes: (types: CoverageType[]) => void;
@@ -155,38 +145,32 @@ export function ScreenWeaknessCoverage({
       {isLoading ? (
         <div className="Spinner center mt4 f2" />
       ) : (
-        <div className="pt2 ButtonGrid">
-          <button
-            type="button"
-            className={buttonClasses}
+        <div className="pt2 items-center ButtonGrid">
+          <Button
             onClick={() => {
               saveCSV();
             }}
           >
             {t("coverage.export.button")}
-          </button>
+          </Button>
           <span>{t("coverage.export.description")}</span>
 
-          <button
-            type="button"
-            className={buttonClasses}
+          <Button
             onClick={() => {
               loadCSV();
             }}
           >
             {t("coverage.import.button")}
-          </button>
+          </Button>
           <span>{t("coverage.import.description")}</span>
 
-          <button
-            type="button"
-            className={buttonClasses}
+          <Button
             onClick={() => {
               loadDefault();
             }}
           >
             {t("coverage.reset.button")}
-          </button>
+          </Button>
           <span>{t("coverage.reset.description")}</span>
         </div>
       )}
