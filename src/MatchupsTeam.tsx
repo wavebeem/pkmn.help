@@ -124,7 +124,6 @@ export function MatchupsTeam({
 
   const rows: [Type, ...number[]][] = [];
   for (const genType of generationTypes) {
-    // const row: number[] = [];
     const row: typeof rows[number] = [genType];
     for (const m of matchers) {
       let num = 0;
