@@ -14,7 +14,7 @@ import { ScreenDefense } from "./ScreenDefense";
 import { ScreenMore } from "./ScreenMore";
 import { ScreenOffense } from "./ScreenOffense";
 import { ScreenPokedex } from "./ScreenPokedex";
-import { ScreenPokdexHelp as ScreenPokedexHelp } from "./ScreenPokedexHelp";
+import { ScreenPokedexHelp } from "./ScreenPokedexHelp";
 import { ScreenWeaknessCoverage } from "./ScreenWeaknessCoverage";
 import { PUBLIC_PATH } from "./settings";
 import { useFetchJSON } from "./useFetchJSON";

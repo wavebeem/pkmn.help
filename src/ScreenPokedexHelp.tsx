@@ -7,7 +7,7 @@ interface ScreenPokdexHelpProps {
   pokedexParams: string;
 }
 
-export function ScreenPokdexHelp({ pokedexParams }: ScreenPokdexHelpProps) {
+export function ScreenPokedexHelp({ pokedexParams }: ScreenPokdexHelpProps) {
   const { t } = useTranslation();
   return (
     <main className="pa3 center content-narrow lh-copy">
