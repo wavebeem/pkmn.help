@@ -1,49 +1,72 @@
 import * as React from "react";
-import { compact, groupBy, sortBy } from "lodash";
 import { Badge } from "./Badge";
 import { Generation } from "./data-generations";
-import { defensiveMatchups } from "./data-matchups";
-import { Type } from "./data-types";
+import { matchupFor } from "./data-matchups";
+import { Type, typesForGeneration } from "./data-types";
 import { useTranslation } from "react-i18next";
 import { assertNever } from "./assertNever";
 import { useTypeCount } from "./useTypeCount";
+import { compact } from "./compact";
+
+const matchupKeys = [
+  "weak",
+  "resist",
+  "8",
+  "4",
+  "2",
+  "1",
+  "1/2",
+  "1/4",
+  "1/8",
+  "0",
+] as const;
+type MatchupKey = typeof matchupKeys[number];
 
 const effectivenessDisplay = {
   weak: "≥ 2×",
   resist: "≤ ½×",
-  immune: "0×",
-  [8]: "8×",
-  [4]: "4×",
-  [2]: "2×",
-  [1]: "1×",
-  [1 / 2]: "½×",
-  [1 / 4]: "¼×",
-  [1 / 8]: "⅛×",
-  [0]: "0×",
+  "8": "8×",
+  "4": "4×",
+  "2": "2×",
+  "1": "1×",
+  "1/2": "½×",
+  "1/4": "¼×",
+  "1/8": "⅛×",
+  "0": "0×",
 };
 
-// TODO: Simplify this abstraction by pulling all the logic into a type enum and
-// a switch statement with all the logic in here... then the UI can just use
-// lists of predefined matchers easily
 class Matcher {
-  readonly name: string;
-  readonly createMatcher: (
-    type: Type
-  ) => (matchup: {
-    type: Type;
-    effectiveness: number;
-    count: number;
-  }) => boolean;
+  constructor(readonly key: MatchupKey) {}
 
-  constructor({
-    name,
-    createMatcher,
-  }: {
-    name: Matcher["name"];
-    createMatcher: Matcher["createMatcher"];
-  }) {
-    this.name = name;
-    this.createMatcher = createMatcher;
+  get name(): string {
+    return effectivenessDisplay[this.key];
+  }
+
+  match(eff: number): boolean {
+    switch (this.key) {
+      case "weak":
+        return eff > 1;
+      case "resist":
+        return eff < 1 && eff !== 0;
+      case "8":
+        return eff === 8;
+      case "4":
+        return eff === 4;
+      case "2":
+        return eff === 2;
+      case "1":
+        return eff === 1;
+      case "1/2":
+        return eff === 1 / 2;
+      case "1/4":
+        return eff === 1 / 4;
+      case "1/8":
+        return eff === 1 / 8;
+      case "0":
+        return eff === 0;
+      default:
+        assertNever(this.key);
+    }
   }
 }
 
@@ -64,173 +87,56 @@ export function MatchupsTeam({
 
   const [typeCount] = useTypeCount();
 
-  // Type + Effectiveness => amount
-  const map = new Map<string, number>();
-  for (const types of typesList) {
-    const groupedMatchups = defensiveMatchups(generation, types);
-    for (const matchup of groupedMatchups.matchups) {
-      const key = JSON.stringify({
-        type: matchup.type,
-        effectiveness: matchup.effectiveness,
-      });
-      map.set(key, (map.get(key) ?? 0) + 1);
+  const generationTypes = typesForGeneration(generation);
+
+  const matchers: Matcher[] = (() => {
+    switch (format) {
+      case "complex":
+        return compact([
+          typeCount === "3" && new Matcher("8"),
+          new Matcher("4"),
+          new Matcher("2"),
+          new Matcher("1"),
+          new Matcher("1/2"),
+          new Matcher("1/4"),
+          typeCount === "3" && new Matcher("1/8"),
+          new Matcher("0"),
+        ]);
+      case "simple":
+        return [new Matcher("weak"), new Matcher("resist"), new Matcher("0")];
+      case "resist":
+        return compact([
+          new Matcher("1/2"),
+          new Matcher("1/4"),
+          typeCount === "3" && new Matcher("1/8"),
+          new Matcher("0"),
+        ]);
+      case "weak":
+        return compact([
+          typeCount === "3" && new Matcher("8"),
+          new Matcher("4"),
+          new Matcher("2"),
+        ]);
+      default:
+        assertNever(format);
     }
-  }
+  })();
 
-  const data1 = Array.from(map.entries()).map(([key, count]) => {
-    const { type, effectiveness }: { type: Type; effectiveness: number } =
-      JSON.parse(key);
-    return { type, effectiveness, count };
-  });
-  const data2 = sortBy(
-    data1,
-    ({ type }) => type,
-    ({ effectiveness }) => -effectiveness
-  );
-  // const data3 = groupBy(data2, ({ type }) => type);
-  // Type error with lodash groupBy...
-  const data3 = groupBy(data2, ({ type }) => type) as any as Record<
-    Type,
-    typeof data2
-  >;
-
-  let matchers: Matcher[] = [];
-
-  switch (format) {
-    case "complex":
-      matchers = compact([
-        typeCount === "3" &&
-          new Matcher({
-            name: effectivenessDisplay[8],
-            createMatcher: (type) => (matchup) => {
-              return matchup.type === type && matchup.effectiveness === 8;
-            },
-          }),
-        new Matcher({
-          name: effectivenessDisplay[4],
-          createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness === 4;
-          },
-        }),
-        new Matcher({
-          name: effectivenessDisplay[2],
-          createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness === 2;
-          },
-        }),
-        new Matcher({
-          name: effectivenessDisplay[1],
-          createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness === 1;
-          },
-        }),
-        new Matcher({
-          name: effectivenessDisplay[1 / 2],
-          createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness === 1 / 2;
-          },
-        }),
-        new Matcher({
-          name: effectivenessDisplay[1 / 4],
-          createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness === 1 / 4;
-          },
-        }),
-        typeCount === "3" &&
-          new Matcher({
-            name: effectivenessDisplay[1 / 8],
-            createMatcher: (type) => (matchup) => {
-              return matchup.type === type && matchup.effectiveness === 1 / 8;
-            },
-          }),
-        new Matcher({
-          name: effectivenessDisplay[0],
-          createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness === 0;
-          },
-        }),
-      ]);
-      break;
-    case "simple":
-      matchers = [
-        new Matcher({
-          name: effectivenessDisplay.weak,
-          createMatcher: (type) => (matchup) => {
-            return type === matchup.type && matchup.effectiveness > 1;
-          },
-        }),
-        new Matcher({
-          name: effectivenessDisplay.resist,
-          createMatcher: (type) => (matchup) => {
-            return (
-              type === matchup.type &&
-              matchup.effectiveness < 1 &&
-              matchup.effectiveness !== 0
-            );
-          },
-        }),
-        new Matcher({
-          name: effectivenessDisplay.immune,
-          createMatcher: (type) => (matchup) => {
-            return type === matchup.type && matchup.effectiveness === 0;
-          },
-        }),
-      ];
-      break;
-    case "resist":
-      matchers = compact([
-        new Matcher({
-          name: effectivenessDisplay[1 / 2],
-          createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness === 1 / 2;
-          },
-        }),
-        new Matcher({
-          name: effectivenessDisplay[1 / 4],
-          createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness === 1 / 4;
-          },
-        }),
-        typeCount === "3" &&
-          new Matcher({
-            name: effectivenessDisplay[1 / 8],
-            createMatcher: (type) => (matchup) => {
-              return matchup.type === type && matchup.effectiveness === 1 / 8;
-            },
-          }),
-        new Matcher({
-          name: effectivenessDisplay[0],
-          createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness === 0;
-          },
-        }),
-      ]);
-      break;
-    case "weak":
-      matchers = compact([
-        typeCount === "3" &&
-          new Matcher({
-            name: effectivenessDisplay[8],
-            createMatcher: (type) => (matchup) => {
-              return matchup.type === type && matchup.effectiveness === 8;
-            },
-          }),
-        new Matcher({
-          name: effectivenessDisplay[4],
-          createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness === 4;
-          },
-        }),
-        new Matcher({
-          name: effectivenessDisplay[2],
-          createMatcher: (type) => (matchup) => {
-            return matchup.type === type && matchup.effectiveness === 2;
-          },
-        }),
-      ]);
-      break;
-    default:
-      assertNever(format);
+  const rows: [Type, ...number[]][] = [];
+  for (const genType of generationTypes) {
+    // const row: number[] = [];
+    const row: typeof rows[number] = [genType];
+    for (const m of matchers) {
+      let num = 0;
+      for (const types of typesList) {
+        const eff = matchupFor(generation, types, genType);
+        if (m.match(eff)) {
+          num++;
+        }
+      }
+      row.push(num);
+    }
+    rows.push(row);
   }
 
   if (typesList.length === 0) {
@@ -259,21 +165,18 @@ export function MatchupsTeam({
               </tr>
             </thead>
             <tbody>
-              {Object.entries(data3).map(([type_, matchups]) => {
-                const type = type_ as Type;
+              {rows.map(([type, ...counts]) => {
                 return (
                   <tr key={type} className="bt border3">
                     <th className="pv1">
                       <Badge type={type} />
                     </th>
-                    {matchers.map((m) => {
-                      // TODO: Fix the data structure to match the UI so I don't
-                      // have to use `.find` inside a `.map` lol
-                      const count = matchups.find(m.createMatcher(type))
-                        ?.count ?? <span className="o-10">-</span>;
+                    {counts.map((count, i) => {
+                      const display =
+                        count === 0 ? <span className="o-10">-</span> : count;
                       return (
-                        <td key={m.name + type} className="pv2 ph3">
-                          {count}
+                        <td key={i} className="pv2 ph3">
+                          {display}
                         </td>
                       );
                     })}

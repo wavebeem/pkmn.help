@@ -110,10 +110,6 @@ function matchupForPair(
   return val;
 }
 
-function multiply(a: number, b: number): number {
-  return a * b;
-}
-
 export function matchupFor(
   gen: Generation,
   defenseTypes: Type[],
@@ -122,7 +118,7 @@ export function matchupFor(
   return defenseTypes
     .filter((t) => t !== Type.NONE)
     .map((t) => matchupForPair(gen, t, offenseType))
-    .reduce(multiply, 1);
+    .reduce((a, b) => a * b, 1);
 }
 
 function createMatchupMap(gen: Generation): Map<string, number> {
@@ -148,8 +144,6 @@ const generationMatchupMaps = {
   gen2: createMatchupMap("gen2"),
   default: createMatchupMap("default"),
 };
-
-Object.assign(window, { generationMatchupMaps, gen2 });
 
 class Matchup {
   constructor(
