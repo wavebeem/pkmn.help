@@ -64,7 +64,32 @@
     "chooseFirst": "Choisir le premier type",
     "chooseSecond": "Choisir le second type",
     "chooseThird": "Choisir le troisème type",
-    "takesXFrom": "Subit {{ x }} De"
+    "takesXFrom": "Subit {{ x }} De",
+
+    "mode": {
+      "heading": "Sélection du mode",
+      "solo": "Solo",
+      "team": "Équipe"
+    },
+
+    "team": {
+      "tableHeading": "Nombre de match-ups",
+      "heading": "Modifier l'équipe Pokémon",
+      "add": "Ajouter un Pokémon",
+      "empty": "Aucun Pokémon sélectionné",
+      "displayType": "Format du tableau",
+      "weak": "Faible",
+      "resist": "Résistant",
+      "simple": "Simple",
+      "complex": "Complexe",
+      "type": "Type",
+      "save": "Sauvegarder",
+      "saveLong": "Sauvegarde {{ name }}",
+      "edit": "Modifier",
+      "editLong": "Modifier {{ name }}",
+      "remove": "Supprimer",
+      "removeLong": "Supprimer {{ name }}"
+    }
   },
   "pokedex": {
     "search": {
