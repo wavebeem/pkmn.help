@@ -2,6 +2,7 @@ import classNames from "classnames";
 import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "./Button";
+import { CollapsibleSection } from "./CollapsibleSection";
 import { generations, isGeneration } from "./data-generations";
 import { resetApp } from "./resetApp";
 import { Select } from "./Select";
@@ -163,117 +164,179 @@ export function ScreenMore({
 
       <div role="presentation" className="mv2 bt border3" />
 
-      <h2 className="lh-title f4">{t("more.help.heading")}</h2>
+      <CollapsibleSection
+        heading={<h2 className="lh-title f4 dib">{t("more.help.heading")}</h2>}
+      >
+        <div className="mv3">
+          <Button onClick={resetApp}>
+            {t("more.help.serviceWorker.button")}
+          </Button>
+        </div>
 
-      <p>{t("more.help.serviceWorker.description")}</p>
-
-      <div className="mv3">
-        <Button onClick={resetApp}>
-          {t("more.help.serviceWorker.button")}
-        </Button>
-      </div>
-
-      <div role="presentation" className="mv2 bt border3" />
-
-      <h2 className="lh-title f4">{t("more.privacy.heading")}</h2>
-
-      <p>
-        <Trans
-          i18nKey="more.privacy.description"
-          components={{
-            plausible: (
-              <a
-                href="https://plausible.io/pkmn.help"
-                className="br1 underline fg-link OutlineFocus"
-              />
-            ),
-          }}
-        />
-      </p>
+        <p>{t("more.help.serviceWorker.description")}</p>
+      </CollapsibleSection>
 
       <div role="presentation" className="mv2 bt border3" />
 
-      <h2 className="lh-title f4">{t("more.givingBack.heading")}</h2>
-
-      <p>{t("more.givingBack.description")}</p>
-
-      <div role="presentation" className="mv2 bt border3" />
-
-      <h2 className="lh-title f4">{t("more.thanks.heading")}</h2>
-
-      <ul className="lh-copy mt1 ph3">
-        <li>{t("more.thanks.credits.simon")}</li>
-        <li>{t("more.thanks.credits.abylayZhandarbek")}</li>
-        <li>{t("more.thanks.credits.vio")}</li>
-        <li>{t("more.thanks.credits.dragonify")}</li>
-        <li>{t("more.thanks.credits.adamHayes")}</li>
-        <li>{t("more.thanks.credits.drakoshen")}</li>
-        <li>{t("more.thanks.credits.azertor")}</li>
-        <li>{t("more.thanks.credits.kaishidow")}</li>
-        <li>{t("more.thanks.credits.cozzzy")}</li>
-        <li>{t("more.thanks.credits.luziferSenpai")}</li>
-        <li>{t("more.thanks.credits.gabrieleGiugno")}</li>
-        <li>{t("more.thanks.credits.minamorl")}</li>
-        <li>{t("more.thanks.credits.jansjo")}</li>
-        <li>{t("more.thanks.credits.other")}</li>
-      </ul>
+      <CollapsibleSection
+        heading={
+          <h2 className="lh-title f4 dib">{t("more.privacy.heading")}</h2>
+        }
+      >
+        <p>
+          <Trans
+            i18nKey="more.privacy.description"
+            components={{
+              plausible: (
+                <a
+                  href="https://plausible.io/pkmn.help"
+                  className="br1 underline fg-link OutlineFocus"
+                />
+              ),
+            }}
+          />
+        </p>
+      </CollapsibleSection>
 
       <div role="presentation" className="mv2 bt border3" />
 
-      <h2 className="lh-title f4">{t("more.openSource.heading")}</h2>
-
-      <p>
-        <Trans
-          i18nKey="more.openSource.description"
-          components={{
-            github: (
-              <a
-                href="https://github.com/wavebeem/pkmn.help"
-                className="br1 underline fg-link OutlineFocus"
-              />
-            ),
-          }}
-        />
-      </p>
+      <CollapsibleSection
+        heading={
+          <h2 className="lh-title f4 dib">{t("more.givingBack.heading")}</h2>
+        }
+      >
+        <p>{t("more.givingBack.description")}</p>
+      </CollapsibleSection>
 
       <div role="presentation" className="mv2 bt border3" />
 
-      <h2 className="lh-title f4">{t("more.legalInfo.heading")}</h2>
+      <CollapsibleSection
+        heading={
+          <h2 className="lh-title f4 dib">{t("more.thanks.heading")}</h2>
+        }
+      >
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.da")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Simon</li>
+        </ul>
 
-      <p>
-        <Trans i18nKey="more.legalInfo.pokemon" values={{ year }} />
-      </p>
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ru")}</h3>
+        <h3 className="lh-title f5 mt1 mb0">{t("more.thanks.sections.kk")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Abylay Zhandarbek</li>
+        </ul>
 
-      <p>{t("more.legalInfo.dontSueMe")}</p>
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.pt-BR")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Vio</li>
+        </ul>
 
-      <p>
-        <Trans
-          i18nKey="more.legalInfo.pokeAPI"
-          components={{
-            pokeapi: (
-              <a
-                className="br1 underline fg-link OutlineFocus"
-                href="https://pokeapi.co/"
-              />
-            ),
-          }}
-        />
-      </p>
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.zh-Hans")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Dragonify</li>
+        </ul>
 
-      <p>
-        <Trans
-          i18nKey="more.legalInfo.wavebeem"
-          values={{ year }}
-          components={{
-            wavebeem: (
-              <a
-                className="br1 underline fg-link OutlineFocus"
-                href="https://www.wavebeem.com"
-              />
-            ),
-          }}
-        />
-      </p>
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ro")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Adam Hayes</li>
+        </ul>
+
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.fr")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Kaishidow</li>
+          <li>Drakoshen</li>
+          <li>Azertor</li>
+        </ul>
+
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.de")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Cozzzy</li>
+          <li>Luzifer Senpai</li>
+        </ul>
+
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.it")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Gabriele Giugno</li>
+        </ul>
+
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ja")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Minamorl</li>
+        </ul>
+
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.testing")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Jansjo</li>
+          <li>Marten</li>
+        </ul>
+
+        <h3 className="lh-title f5">{t("more.thanks.sections.other")}</h3>
+      </CollapsibleSection>
+
+      <div role="presentation" className="mv2 bt border3" />
+
+      <CollapsibleSection
+        heading={
+          <h2 className="lh-title f4 dib">{t("more.openSource.heading")}</h2>
+        }
+      >
+        <p>
+          <Trans
+            i18nKey="more.openSource.description"
+            components={{
+              github: (
+                <a
+                  href="https://github.com/wavebeem/pkmn.help"
+                  className="br1 underline fg-link OutlineFocus"
+                />
+              ),
+            }}
+          />
+        </p>
+      </CollapsibleSection>
+
+      <div role="presentation" className="mv2 bt border3" />
+
+      <CollapsibleSection
+        heading={
+          <h2 className="lh-title f4 dib">{t("more.legalInfo.heading")}</h2>
+        }
+      >
+        <p>
+          <Trans i18nKey="more.legalInfo.pokemon" values={{ year }} />
+        </p>
+
+        <p>{t("more.legalInfo.dontSueMe")}</p>
+
+        <p>
+          <Trans
+            i18nKey="more.legalInfo.pokeAPI"
+            components={{
+              pokeapi: (
+                <a
+                  className="br1 underline fg-link OutlineFocus"
+                  href="https://pokeapi.co/"
+                />
+              ),
+            }}
+          />
+        </p>
+
+        <p>
+          <Trans
+            i18nKey="more.legalInfo.wavebeem"
+            values={{ year }}
+            components={{
+              wavebeem: (
+                <a
+                  className="br1 underline fg-link OutlineFocus"
+                  href="https://www.wavebeem.com"
+                />
+              ),
+            }}
+          />
+        </p>
+      </CollapsibleSection>
     </main>
   );
 }

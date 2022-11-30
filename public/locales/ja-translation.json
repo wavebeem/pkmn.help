@@ -168,19 +168,18 @@
     },
     "thanks": {
       "heading": "助けた人々",
-      "credits": {
-        "abylayZhandarbek": "Abylay Zhandarbek (ロシア語翻訳、 カザフ語翻訳)",
-        "vio": "Vio (ブラジルポルトガル語翻訳)",
-        "dragonify": "Dragonify (中国語翻訳)",
-        "adamHayes": "Adam Hayes (ルーマニア語翻訳)",
-        "drakoshen": "Drakoshen (フランス語翻訳)",
-        "azertor": "Azertor (フランス語翻訳)",
-        "kaishidow": "Kaishidow (フランス語翻訳)",
-        "cozzzy": "Cozzzy (ドイツ語翻訳)",
-        "luziferSenpai": "Luzifer Senpai (ドイツ語翻訳)",
-        "gabrieleGiugno": "Gabriele Giugno (イタリア語翻訳)",
-        "minamorl": "Minamorl (日本語翻訳)",
-        "jansjo": "Jansjo (テスト、調査)",
+      "sections": {
+        "da": "デンマーク語訳",
+        "ru": "ロシア語翻訳",
+        "kk": "カザフ語翻訳",
+        "pt-BR": "ブラジルポルトガル語翻訳",
+        "zh-Hans": "中国語翻訳",
+        "ro": "ルーマニア語翻訳",
+        "fr": "フランス語翻訳",
+        "de": "ドイツ語翻訳",
+        "it": "イタリア語翻訳",
+        "ja": "日本語翻訳",
+        "testing": "テスト",
         "other": "無名のポケモン・ファンたち"
       }
     },

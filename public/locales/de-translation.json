@@ -167,18 +167,18 @@
     },
     "thanks": {
       "heading": "Besonderer Dank",
-      "credits": {
-        "vio": "Vio (brasilianische portugiesische Übersetzung)",
-        "dragonify": "Dragonify (chinesische Übersetzung)",
-        "adamHayes": "Adam Hayes (rumänisch Übersetzung)",
-        "drakoshen": "Drakoshen (französische Übersetzung)",
-        "azertor": "Azertor (französische Übersetzung)",
-        "kaishidow": "Kaishidow (französische Übersetzung)",
-        "cozzzy": "Cozzzy (deutsche Übersetzung)",
-        "luziferSenpai": "Luzifer Senpai (deutsche Übersetzung)",
-        "gabrieleGiugno": "Gabriele Giugno (italienische Übersetzung)",
-        "minamorl": "Minamorl (japanische Übersetzung)",
-        "jansjo": "Jansjo (Testen, Forschung)",
+      "sections": {
+        "da": "Dänische Übersetzung",
+        "ru": "Russische Übersetzung",
+        "kk": "Kasachische Übersetzung",
+        "pt-BR": "Brasilianische Portugiesische Übersetzung",
+        "zh-Hans": "Chinesische Übersetzung",
+        "ro": "Rumänisch Übersetzung",
+        "fr": "Französische Übersetzung",
+        "de": "Deutsche Übersetzung",
+        "it": "Italienische Übersetzung",
+        "ja": "Japanische Übersetzung",
+        "testing": "Testen",
         "other": "Mehrere anonyme Poké-Fans"
       }
     },

@@ -271,6 +271,10 @@ button {
   user-select: none;
 }
 
+.no-select {
+  user-select: none;
+}
+
 .img-crisp {
   /* https://caniuse.com/css-crisp-edges */
   image-rendering: crisp-edges;
@@ -606,6 +610,16 @@ input[type="radio"].RadioCheckType {
 }
 
 .SelectedFocus:focus-within {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 2px var(--color-bg1), 0 0 0 4px var(--color-fg1);
+}
+
+.DetailsFocus > summary:focus {
+  outline: none;
+}
+
+.DetailsFocus > summary:focus > * {
+  border-radius: 2px;
   outline: 2px solid transparent;
   box-shadow: 0 0 0 2px var(--color-bg1), 0 0 0 4px var(--color-fg1);
 }

@@ -168,18 +168,18 @@
     },
     "thanks": {
       "heading": "特别感谢",
-      "credits": {
-        "vio": "Vio（巴西葡萄牙语翻译）",
-        "dragonify": "Dragonify（简体中文翻译）",
-        "adamHayes": "Adam Hayes（罗马尼亚文翻译）",
-        "drakoshen": "Drakoshen（法文翻译）",
-        "azertor": "Azertor（法文翻译）",
-        "kaishidow": "Kaishidow（法文翻译）",
-        "cozzzy": "Cozzzy（德文翻译）",
-        "luziferSenpai": "Luzifer Senpai（德文翻译）",
-        "gabrieleGiugno": "Gabirele Giugno（意大利文翻译）",
-        "minamorl": "Minamorl（日文翻译）",
-        "jansjo": "Jansjo（测试，研究）",
+      "sections": {
+        "da": "丹麦语翻译",
+        "ru": "俄语翻译",
+        "kk": "哈萨克语翻译",
+        "pt-BR": "巴西葡萄牙语翻译",
+        "zh-Hans": "简体中文翻译",
+        "ro": "罗马尼亚文翻译",
+        "fr": "法文翻译",
+        "de": "德文翻译",
+        "it": "意大利文翻译",
+        "ja": "日文翻译",
+        "testing": "测试",
         "other": "数位匿名宝可梦玩家"
       }
     },
