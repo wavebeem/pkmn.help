@@ -168,16 +168,16 @@
     "thanks": {
       "heading": "Besonderer Dank",
       "sections": {
-        "da": "dänische Übersetzung",
-        "ru": "russische Übersetzung",
-        "kk": "kasachische Übersetzung",
-        "pt-BR": "brasilianische portugiesische Übersetzung",
-        "zh-Hans": "chinesische Übersetzung",
-        "ro": "rumänisch Übersetzung",
-        "fr": "französische Übersetzung",
-        "de": "deutsche Übersetzung",
-        "it": "italienische Übersetzung",
-        "ja": "japanische Übersetzung",
+        "da": "Dänische Übersetzung",
+        "ru": "Russische Übersetzung",
+        "kk": "Kasachische Übersetzung",
+        "pt-BR": "Brasilianische Portugiesische Übersetzung",
+        "zh-Hans": "Chinesische Übersetzung",
+        "ro": "Rumänisch Übersetzung",
+        "fr": "Französische Übersetzung",
+        "de": "Deutsche Übersetzung",
+        "it": "Italienische Übersetzung",
+        "ja": "Japanische Übersetzung",
         "testing": "Testen",
         "other": "Mehrere anonyme Poké-Fans"
       }
