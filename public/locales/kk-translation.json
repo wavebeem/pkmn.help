@@ -169,19 +169,18 @@
     },
     "thanks": {
       "heading": "Арнайы Алғыс",
-      "credits": {
-        "abylayZhandarbek": "Abylay Zhandarbek (Орысша аудармасы, Қазақша аудармасы)",
-        "vio": "Vio (Бразильша Португалша аудармасы)",
-        "dragonify": "Dragonify (Қытайша аудармасы)",
-        "adamHayes": "Adam Hayes (Румынша аудармасы)",
-        "drakoshen": "Drakoshen (Французша аудармасы)",
-        "azertor": "Azertor (Французша аудармасы)",
-        "kaishidow": "Kaishidow (Французша аудармасы)",
-        "cozzzy": "Cozzzy (Немісше аудармасы)",
-        "luziferSenpai": "Luzifer Senpai (Немісше аудармасы)",
-        "gabrieleGiugno": "Gabriele Giugno (Италианша аудармасы)",
-        "minamorl": "Minamorl (Жапонша аудармасы)",
-        "jansjo": "Jansjo (тестілеу, зерттеу)",
+      "sections": {
+        "da": "Danish translation",
+        "ru": "Орысша аудармасы",
+        "kk": "Қазақша аудармасы",
+        "pt-BR": "Бразильша Португалша аудармасы",
+        "zh-Hans": "Қытайша аудармасы",
+        "ro": "Румынша аудармасы",
+        "fr": "Французша аудармасы",
+        "de": "Немісше аудармасы",
+        "it": "Италианша аудармасы",
+        "ja": "Жапонша аудармасы",
+        "testing": "Тестілеу",
         "other": "Бірнеше анонимды Поке Фандар"
       }
     },

@@ -167,18 +167,18 @@
     },
     "thanks": {
       "heading": "Ringraziamenti Speciali",
-      "credits": {
-        "vio": "Vio (traduttore Portoghese Brasiliano)",
-        "dragonify": "Dragonify (traduttore Cinesi)",
-        "adamHayes": "Adam Hayes (traduttore Rumeno)",
-        "drakoshen": "Drakoshen (traduttore Francese)",
-        "azertor": "Azertor (traduttore Francese)",
-        "kaishidow": "Kaishidow (traduttore Francese)",
-        "cozzzy": "Cozzzy (traduttore Tedesco)",
-        "luziferSenpai": "Luzifer Senpai (traduttore Tedesco)",
-        "gabrieleGiugno": "Gabriele Giugno (traduttore Italiano)",
-        "minamorl": "Minamorl (traduttore Giapponese)",
-        "jansjo": "Jansjo (test, ricerca)",
+      "sections": {
+        "da": "traduttore Danese",
+        "ru": "traduttore Russa",
+        "kk": "traduttore Kazaka",
+        "pt-BR": "traduttore Portoghese Brasiliano",
+        "zh-Hans": "traduttore Cinesi",
+        "ro": "traduttore Rumeno",
+        "fr": "traduttore Francese",
+        "de": "traduttore Tedesco",
+        "it": "traduttore Italiano",
+        "ja": "traduttore Giapponese",
+        "testing": "Test",
         "other": "Diversi Fan anonimi di Pokémon"
       }
     },

@@ -168,18 +168,18 @@
     },
     "thanks": {
       "heading": "Multumri speciale",
-      "credits": {
-        "vio": "Vio (Traducere Portugheză Braziliană)",
-        "dragonify": "Dragonify (Traducere Chineză)",
-        "adamHayes": "Adam Hayes (Traducere Română)",
-        "drakoshen": "Drakoshen (Traducere Franceză)",
-        "azertor": "Azertor (Traducere Franceză)",
-        "kaishidow": "Kaishidow (Traducere Franceză)",
-        "cozzzy": "Cozzie (Traducere Germana)",
-        "luziferSenpai": "Luzifer Senpai (Traducere Germana)",
-        "gabrieleGiugno": "Gabriele Guingo (Traducere Italiana)",
-        "minamorl": "Minamorl (Traducere Japoneza)",
-        "jansjo": "Jansjo (testare, cercetare)",
+      "sections": {
+        "da": "Danish translation",
+        "ru": "Russian translation",
+        "kk": "Kazakh translation",
+        "pt-BR": "Traducere Portugheză Braziliană",
+        "zh-Hans": "Traducere Chineză",
+        "ro": "Traducere Română",
+        "fr": "Traducere Franceză",
+        "de": "Traducere Germana",
+        "it": "Traducere Italiana",
+        "ja": "Traducere Japoneza",
+        "testing": "Testare",
         "other": "Cativa fani anomimi Pokémon"
       }
     },

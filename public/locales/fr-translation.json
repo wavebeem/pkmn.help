@@ -210,19 +210,18 @@
     },
     "thanks": {
       "heading": "Remerciements spéciaux",
-      "credits": {
-        "abylayZhandarbek": "Abylay Zhandarbek (Traduction en Russe, Traduction en Kazackh)",
-        "vio": "Vio (Traduction en Portugais Brésilien)",
-        "dragonify": "Dragonify (Traduction en Chinois)",
-        "adamHayes": "Adam Hayes (Traduction en Roumain)",
-        "drakoshen": "Drakoshen (Traduction en Français)",
-        "azertor": "Azertor (Traduction en Français)",
-        "kaishidow": "Kaishidow (Traduction en Français)",
-        "cozzzy": "Cozzzy (Traduction en Allemand)",
-        "luziferSenpai": "Luzifer Senpai (Traduction en Allemand)",
-        "gabrieleGiugno": "Gabriele Giugno (Traduction en Italien)",
-        "minamorl": "Minamorl (Traduction en Japonais)",
-        "jansjo": "Jansjo (Tests, recherches)",
+      "sections": {
+        "da": "Danish translation",
+        "ru": "Traduction en Russe",
+        "kk": "Traduction en Kazackh",
+        "pt-BR": "Traduction en Portugais Brésilien",
+        "zh-Hans": "Traduction en Chinois",
+        "ro": "Traduction en Roumain",
+        "fr": "Traduction en Français",
+        "de": "Traduction en Allemand",
+        "it": "Traduction en Italien",
+        "ja": "Traduction en Japonais",
+        "testing": "Tests",
         "other": "Plusieurs PokéFans anonymes"
       }
     },

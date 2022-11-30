@@ -201,22 +201,62 @@ export function ScreenMore({
 
       <h2 className="lh-title f4">{t("more.thanks.heading")}</h2>
 
-      <ul className="lh-copy mt1 ph3">
-        <li>{t("more.thanks.credits.simon")}</li>
-        <li>{t("more.thanks.credits.abylayZhandarbek")}</li>
-        <li>{t("more.thanks.credits.vio")}</li>
-        <li>{t("more.thanks.credits.dragonify")}</li>
-        <li>{t("more.thanks.credits.adamHayes")}</li>
-        <li>{t("more.thanks.credits.drakoshen")}</li>
-        <li>{t("more.thanks.credits.azertor")}</li>
-        <li>{t("more.thanks.credits.kaishidow")}</li>
-        <li>{t("more.thanks.credits.cozzzy")}</li>
-        <li>{t("more.thanks.credits.luziferSenpai")}</li>
-        <li>{t("more.thanks.credits.gabrieleGiugno")}</li>
-        <li>{t("more.thanks.credits.minamorl")}</li>
-        <li>{t("more.thanks.credits.jansjo")}</li>
-        <li>{t("more.thanks.credits.other")}</li>
+      <h3 className="lh-title f5 mb0">{t("more.thanks.sections.da")}</h3>
+      <ul className="list mb0 mt1 pl3">
+        <li>Simon</li>
       </ul>
+
+      <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ru")}</h3>
+      <h3 className="lh-title f5 mt1 mb0">{t("more.thanks.sections.kk")}</h3>
+      <ul className="list mb0 mt1 pl3">
+        <li>Abylay Zhandarbek</li>
+      </ul>
+
+      <h3 className="lh-title f5 mb0">{t("more.thanks.sections.pt-BR")}</h3>
+      <ul className="list mb0 mt1 pl3">
+        <li>Vio</li>
+      </ul>
+
+      <h3 className="lh-title f5 mb0">{t("more.thanks.sections.zh-Hans")}</h3>
+      <ul className="list mb0 mt1 pl3">
+        <li>Dragonify</li>
+      </ul>
+
+      <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ro")}</h3>
+      <ul className="list mb0 mt1 pl3">
+        <li>Adam Hayes</li>
+      </ul>
+
+      <h3 className="lh-title f5 mb0">{t("more.thanks.sections.fr")}</h3>
+      <ul className="list mb0 mt1 pl3">
+        <li>Kaishidow</li>
+        <li>Drakoshen</li>
+        <li>Azertor</li>
+      </ul>
+
+      <h3 className="lh-title f5 mb0">{t("more.thanks.sections.de")}</h3>
+      <ul className="list mb0 mt1 pl3">
+        <li>Cozzzy</li>
+        <li>Luzifer Senpai</li>
+      </ul>
+
+      <h3 className="lh-title f5 mb0">{t("more.thanks.sections.it")}</h3>
+      <ul className="list mb0 mt1 pl3">
+        <li>Gabriele Giugno</li>
+      </ul>
+
+      <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ja")}</h3>
+      <ul className="list mb0 mt1 pl3">
+        <li>Minamorl</li>
+      </ul>
+
+      <h3 className="lh-title f5 mb0">{t("more.thanks.sections.testing")}</h3>
+      <ul className="list mb0 mt1 pl3">
+        <li>Jansjo</li>
+        <li>Marten</li>
+      </ul>
+
+      <h3 className="lh-title f5">{t("more.thanks.sections.other")}</h3>
 
       <div role="presentation" className="mv2 bt border3" />
 
