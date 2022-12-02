@@ -61,6 +61,10 @@
     "back": "Back to offense"
   },
   "defense": {
+    "chooseFirst": "Choose First Type",
+    "chooseSecond": "Choose Second Type",
+    "chooseThird": "Choose Third Type",
+    "takesXFrom": "Takes {{ x }} From",
     "mode": {
       "heading": "Choose Mode",
       "solo": "Solo",
@@ -83,11 +87,7 @@
       "editLong": "Edit {{ name }}",
       "remove": "Remove",
       "removeLong": "Remove {{ name }}"
-    },
-    "chooseFirst": "Choose First Type",
-    "chooseSecond": "Choose Second Type",
-    "chooseThird": "Choose Third Type",
-    "takesXFrom": "Takes {{ x }} From"
+    }
   },
   "pokedex": {
     "search": {

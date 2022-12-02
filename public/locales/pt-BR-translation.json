@@ -47,7 +47,30 @@
     "chooseFirst": "Escolher 1° Tipo",
     "chooseSecond": "Escolher 2° Tipo",
     "chooseThird": "Escolher 3° Tipo",
-    "takesXFrom": "Leva {{ x }} mais dano de"
+    "takesXFrom": "Leva {{ x }} mais dano de",
+    "mode": {
+      "heading": "Escolher Modo",
+      "solo": "Solo",
+      "team": "Time"
+    },
+    "team": {
+      "tableHeading": "Contagem de Combinações ",
+      "heading": "Editar Time Pokémon",
+      "add": "Adicionar Pokémon",
+      "empty": "Nenhum Pokémon Selecionado",
+      "displayType": "Formato da Tabela",
+      "weak": "Fraqueza",
+      "resist": "Resistência",
+      "simple": "Simples",
+      "complex": "Complexo",
+      "type": "Tipo",
+      "save": "Salvar",
+      "saveLong": "Salvar {{ name }}",
+      "edit": "Editar",
+      "editLong": "Editar {{ name }}",
+      "remove": "Remover",
+      "removeLong": "Remover {{ name }}"
+    }
   },
   "pokedex": {
     "search": {
