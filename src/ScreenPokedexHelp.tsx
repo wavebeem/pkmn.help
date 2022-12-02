@@ -3,11 +3,11 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { IconArrowLeft } from "./IconArrows";
 
-interface ScreenPokdexHelpProps {
+interface ScreenPokedexHelpProps {
   pokedexParams: string;
 }
 
-export function ScreenPokedexHelp({ pokedexParams }: ScreenPokdexHelpProps) {
+export function ScreenPokedexHelp({ pokedexParams }: ScreenPokedexHelpProps) {
   const { t } = useTranslation();
   return (
     <main className="pa3 center content-narrow lh-copy">

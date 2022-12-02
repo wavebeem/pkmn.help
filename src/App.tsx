@@ -197,7 +197,7 @@ export function App() {
               path="/offense/coverage/weakness/"
               render={() => (
                 <ScreenCoverageList
-                  type="weakness"
+                  mode="weakness"
                   generation={generation}
                   coverageTypes={coverageTypes}
                 />
@@ -208,7 +208,18 @@ export function App() {
               path="/offense/coverage/resistance/"
               render={() => (
                 <ScreenCoverageList
-                  type="resistance"
+                  mode="resistance"
+                  generation={generation}
+                  coverageTypes={coverageTypes}
+                />
+              )}
+            />
+            <Route
+              exact
+              path="/offense/coverage/normal/"
+              render={() => (
+                <ScreenCoverageList
+                  mode="normal"
                   generation={generation}
                   coverageTypes={coverageTypes}
                 />

@@ -13,6 +13,7 @@
       "heading": "Pokédex Coverage",
       "edit": "Edit list",
       "weakness": "Weak",
+      "normal": "Normal",
       "resistance": "Resist"
     },
     "coverageList": {
@@ -20,6 +21,10 @@
       "weakness": {
         "heading": "Weakness Coverage List",
         "description": "These Pokémon are weak to at least one of the selected types."
+      },
+      "normal": {
+        "heading": "Normal Effectiveness Coverage List",
+        "description": "These Pokémon are normally affected by all of the selected types."
       },
       "resistance": {
         "heading": "Resistance Coverage List",

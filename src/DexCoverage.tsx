@@ -30,6 +30,11 @@ export function DexCoverage({
       .map((t) => matchupFor(generation, ct.types, t))
       .every((x) => x < 1);
   });
+  const normalAll = coverageTypes.filter((ct) => {
+    return types
+      .map((t) => matchupFor(generation, ct.types, t))
+      .every((x) => x === 1);
+  });
   const total = coverageTypes.length;
   function getPercent(count: number): string {
     return ((count / total || 0) * 100).toFixed(1);
@@ -52,6 +57,24 @@ export function DexCoverage({
               {t("offense.coverage.weakness")}
             </Link>
             <div className="flex-auto tr ml2">({weakToAny.length})</div>
+          </>
+        )}
+      </div>
+      <div className="pt3" />
+      <PercentBar value={normalAll.length} max={total} />
+      <div className="flex w-100">
+        {isLoading ? (
+          <div className="flex-auto">{t("general.loading")}</div>
+        ) : (
+          <>
+            <div>{getPercent(normalAll.length)}%&nbsp;</div>
+            <Link
+              to={`/offense/coverage/normal/?${typeParams}`}
+              className="underline fg-link br1 OutlineFocus"
+            >
+              {t("offense.coverage.normal")}
+            </Link>
+            <div className="flex-auto tr ml2">({normalAll.length})</div>
           </>
         )}
       </div>

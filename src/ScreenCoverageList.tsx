@@ -11,13 +11,13 @@ import { Paginator } from "./Paginator";
 import { useSearch } from "./useSearch";
 
 interface CoverageListProps {
-  type: "weakness" | "resistance";
+  mode: "weakness" | "resistance" | "normal";
   generation: Generation;
   coverageTypes: CoverageType[];
 }
 
 export function ScreenCoverageList({
-  type,
+  mode,
   generation,
   coverageTypes,
 }: CoverageListProps) {
@@ -25,6 +25,8 @@ export function ScreenCoverageList({
   const search = useSearch();
   const page = Number(search.get("page") || 1) - 1;
   const types = typesFromString(search.get("types") || "");
+
+  type TypeFilter = typeof weaknessFilter;
 
   function weaknessFilter(ct: CoverageType): boolean {
     return types
@@ -38,15 +40,23 @@ export function ScreenCoverageList({
       .every((x) => x < 1);
   }
 
-  const coverageFilter =
-    type === "weakness" ? weaknessFilter : resistanceFilter;
-  console.log({ type, coverageFilter });
+  function normalFilter(ct: CoverageType): boolean {
+    return types
+      .map((t) => matchupFor(generation, ct.types, t))
+      .every((x) => x === 1);
+  }
+
+  const coverageFilter: TypeFilter = {
+    weakness: weaknessFilter,
+    resistance: resistanceFilter,
+    normal: normalFilter,
+  }[mode];
   const items = coverageTypes.filter(coverageFilter);
   const offenseParams = new URLSearchParams({ types: types.join(" ") });
   return (
     <main className="pa3 center content-narrow lh-copy">
       <h2 className="lh-title f5">
-        {t(`offense.coverageList.${type}.heading`)}
+        {t(`offense.coverageList.${mode}.heading`)}
       </h2>
       <p className="flex gap1 items-center">
         <IconArrowLeft className="w1 h1" aria-hidden="true" />
@@ -59,7 +69,7 @@ export function ScreenCoverageList({
       </p>
       {types.length > 0 && (
         <>
-          <p>{t(`offense.coverageList.${type}.description`)}</p>
+          <p>{t(`offense.coverageList.${mode}.description`)}</p>
           <div className="flex flex-wrap gap2">
             {types.map((t) => (
               <MonsterType key={t} type={t} />
@@ -70,7 +80,7 @@ export function ScreenCoverageList({
       <hr className="subtle-hr mt4" />
       <Paginator
         urlForPage={(number) => {
-          const path = `/offense/coverage/${type}/`;
+          const path = `/offense/coverage/${mode}/`;
           const params = new URLSearchParams({ types: types.join(" ") });
           if (number > 0) {
             params.set("page", String(number + 1));
