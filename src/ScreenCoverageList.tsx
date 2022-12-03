@@ -43,7 +43,7 @@ export function ScreenCoverageList({
   function normalFilter(ct: CoverageType): boolean {
     return types
       .map((t) => matchupFor(generation, ct.types, t))
-      .every((x) => x === 1);
+      .some((x) => x === 1);
   }
 
   const coverageFilter: TypeFilter = {

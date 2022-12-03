@@ -24,7 +24,7 @@
       },
       "normal": {
         "heading": "Normal Effectiveness Coverage List",
-        "description": "These Pokémon are normally affected by all of the selected types."
+        "description": "These Pokémon are normally affected by at least one of the selected types."
       },
       "resistance": {
         "heading": "Resistance Coverage List",
