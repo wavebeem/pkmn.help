@@ -303,38 +303,43 @@ export function ScreenMore({
         }
       >
         <p>
-          <Trans i18nKey="more.legalInfo.pokemon" values={{ year }} />
-        </p>
-
-        <p>{t("more.legalInfo.dontSueMe")}</p>
-
-        <p>
-          <Trans
-            i18nKey="more.legalInfo.pokeAPI"
-            components={{
-              pokeapi: (
-                <a
-                  className="br1 underline fg-link OutlineFocus"
-                  href="https://pokeapi.co/"
-                />
-              ),
-            }}
-          />
+          Pokémon &copy; 2002&ndash;{year} Pokémon. &copy; 1995&ndash;{year}{" "}
+          Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &reg; and Pokémon
+          character names are trademarks of Nintendo.
         </p>
 
         <p>
-          <Trans
-            i18nKey="more.legalInfo.wavebeem"
-            values={{ year }}
-            components={{
-              wavebeem: (
-                <a
-                  className="br1 underline fg-link OutlineFocus"
-                  href="https://www.wavebeem.com"
-                />
-              ),
-            }}
-          />
+          No copyright or trademark infringement is intended in using Pokémon
+          content on this page.
+        </p>
+
+        <p>
+          Pokédex data is from {}
+          <a
+            className="br1 underline fg-link OutlineFocus"
+            href="https://pokeapi.co/"
+          >
+            PokéAPI
+          </a>
+          {" & "}
+          <a
+            className="br1 underline fg-link OutlineFocus"
+            href="https://pokemondb.net/"
+          >
+            Pokémon Database
+          </a>
+          .
+        </p>
+
+        <p>
+          pkmn.help &copy; 2013&ndash;{year}{" "}
+          <a
+            className="br1 underline fg-link OutlineFocus"
+            href="https://www.wavebeem.com"
+          >
+            Brian Mock
+          </a>
+          .
         </p>
       </CollapsibleSection>
     </main>

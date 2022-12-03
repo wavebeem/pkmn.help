@@ -187,11 +187,7 @@
       "description": "Il codice sorgente è disponibile su <github>GitHub</github>."
     },
     "legalInfo": {
-      "heading": "Informazioni Legali",
-      "pokemon": "Pokémon © 2002–{{ year }} Pokémon. © 1995–{{ year }} Nintendo/Creatures Inc./GAME FREAK inc. ™, ® e i nomi dei personaggi Pokémon sono marchi di Nintendo.",
-      "dontSueMe": "Nessuna violazione del copyright o del marchio è intesa nell'utilizzo dei contenuti Pokémon in questa pagina.",
-      "pokeAPI": "Dati del Pokédex da <pokeapi>PokéAPI</pokeapi>.",
-      "wavebeem": "pkmn.help © 2013–{{ year }} <wavebeem>Brian Mock</wavebeem>."
+      "heading": "Informazioni Legali"
     }
   },
   "types": {

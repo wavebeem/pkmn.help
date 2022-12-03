@@ -191,11 +191,7 @@
       "description": "Du kan finde kildekoden på <github>GitHub</github>."
     },
     "legalInfo": {
-      "heading": "Legal info",
-      "pokemon": "Pokémon © 2002-{{ year }} Pokémon. © 1995-{{ year }} Nintendo/Creatures Inc./GAME FREAK inc. ™, ® og Pokemon character navne er varemærke fra Nintendo.",
-      "dontSueMe": "Ingen copyright eller trademark overtrædelse er ment i at bruge pokémon ting på denne side.",
-      "pokeAPI": "Pokédex data fra <pokeapi>PokéAPI</pokeapi>.",
-      "wavebeem": "pkmn.help © 2013–{{ year }} <wavebeem>Brian Mock</wavebeem>."
+      "heading": "Legal info"
     }
   },
   "types": {

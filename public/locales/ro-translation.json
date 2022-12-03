@@ -188,11 +188,7 @@
       "description": "Codul de sursa e valabil pe <github>Github</github>."
     },
     "legalInfo": {
-      "heading": "Informatie legala",
-      "pokemon": "Pokémon © 202-{{ year }} Pokémon. © 1995-{{ year}} Nintendo/Creatures Inc./GAME FREAK Inc.™ , © si numele caracterelor Pokémon sunt marci comerciale de Nintendo.",
-      "dontSueMe": "Nu se intenționează încălcarea drepturilor de autor sau a mărcii comerciale în utilizarea conținutului Pokémon de pe această pagină.",
-      "pokeAPI": "Date de Pokédex de la <pokeapi>PokéAPi</pokeapi>",
-      "wavebeem": "pkmn.help © 2013-{{ year }} <wavebeem>Brian Mock</wavebeem>."
+      "heading": "Informatie legala"
     }
   },
   "types": {

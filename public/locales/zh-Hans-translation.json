@@ -188,11 +188,7 @@
       "description": "源代码可在 <github>GitHub</github> 上获得。"
     },
     "legalInfo": {
-      "heading": "法律信息",
-      "pokemon": "Pokémon © 2002–{{ year }} Pokémon. © 1995–{{ year }} Nintendo/Creatures Inc./GAME FREAK inc. ™, ® 和宝可梦角色名称为 Nintendo 版权。",
-      "dontSueMe": "此页使用的宝可梦内容无意侵犯版权或商标。",
-      "pokeAPI": "宝可梦图鉴资料取自 <pokeapi>PokéAPI</pokeapi>。",
-      "wavebeem": "pkmn.help © 2013–{{ year }} <wavebeem>Brian Mock</wavebeem>."
+      "heading": "法律信息"
     }
   },
   "types": {
