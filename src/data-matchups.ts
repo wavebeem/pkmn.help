@@ -1,5 +1,5 @@
 import { Generation } from "./data-generations";
-import { Type, typesForGeneration } from "./data-types";
+import { CoverageType, Type, typesForGeneration } from "./data-types";
 
 const typesInPokemondbOrder = [
   Type.NORMAL,
@@ -108,6 +108,48 @@ function matchupForPair(
     throw new Error(`matchupForPair: ${key}`);
   }
   return val;
+}
+
+interface PartitionedMatchups {
+  weakness: CoverageType[];
+  resistance: CoverageType[];
+  normal: CoverageType[];
+}
+
+export function partitionMatchups({
+  coverageTypes,
+  generation,
+  types,
+}: {
+  coverageTypes: CoverageType[];
+  generation: Generation;
+  types: Type[];
+}): PartitionedMatchups {
+  if (types.length === 0) {
+    return {
+      weakness: [],
+      resistance: [],
+      normal: coverageTypes,
+    };
+  }
+  const ret: PartitionedMatchups = {
+    weakness: [],
+    resistance: [],
+    normal: [],
+  };
+  for (const ct of coverageTypes) {
+    const arr = types.map((t) => matchupFor(generation, ct.types, t));
+    const max = Math.max(...arr);
+    const min = Math.min(...arr);
+    if (max > 1) {
+      ret.weakness.push(ct);
+    } else if (min < 1 && max < 1) {
+      ret.resistance.push(ct);
+    } else {
+      ret.normal.push(ct);
+    }
+  }
+  return ret;
 }
 
 export function matchupFor(
