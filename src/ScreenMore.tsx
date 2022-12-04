@@ -37,15 +37,31 @@ export function ScreenMore({
           "border2 ba br2",
           "pa3",
           "center",
-          "flex justify-center",
+          "flex flex-column gap1",
         ])}
       >
-        <span className="flex flex-auto items-center">
-          {t("banners.updateReady.description")}
-        </span>
-        <Button className="ml3" type="button" onClick={updateApp}>
-          {t("banners.updateReady.update")}
-        </Button>
+        <div className="flex gap1">
+          <span className="flex flex-auto items-center">
+            {t("banners.updateReady.description")}
+          </span>
+          <Button
+            className="ml3"
+            size="small"
+            type="button"
+            onClick={updateApp}
+          >
+            {t("banners.updateReady.update")}
+          </Button>
+        </div>
+        <div role="presentation" className="mv2 bt border3" />
+        <div>
+          <a
+            href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md"
+            className="br1 underline fg-link OutlineFocus"
+          >
+            {t("banners.updateReady.whatsNew")}
+          </a>
+        </div>
       </div>
 
       <h2 className="lh-title f4">{t("more.contact.heading")}</h2>
@@ -161,6 +177,28 @@ export function ScreenMore({
           <option value="3">{t("more.settings.typeCount.values.3")}</option>
         </Select>
       </div>
+
+      <div role="presentation" className="mv2 bt border3" />
+
+      <CollapsibleSection
+        heading={
+          <h2 className="lh-title f4 dib">{t("more.changes.heading")}</h2>
+        }
+      >
+        <p>
+          <Trans
+            i18nKey="more.changes.description"
+            components={{
+              changelog: (
+                <a
+                  href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md"
+                  className="br1 underline fg-link OutlineFocus"
+                />
+              ),
+            }}
+          />
+        </p>
+      </CollapsibleSection>
 
       <div role="presentation" className="mv2 bt border3" />
 

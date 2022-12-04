@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { matchupFor } from "./data-matchups";
+import { partitionMatchups } from "./data-matchups";
 import { Generation } from "./data-generations";
 import { CoverageType, typesFromString } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
@@ -25,33 +25,12 @@ export function ScreenCoverageList({
   const search = useSearch();
   const page = Number(search.get("page") || 1) - 1;
   const types = typesFromString(search.get("types") || "");
-
-  type TypeFilter = typeof weaknessFilter;
-
-  function weaknessFilter(ct: CoverageType): boolean {
-    return types
-      .map((t) => matchupFor(generation, ct.types, t))
-      .some((x) => x > 1);
-  }
-
-  function resistanceFilter(ct: CoverageType): boolean {
-    return types
-      .map((t) => matchupFor(generation, ct.types, t))
-      .every((x) => x < 1);
-  }
-
-  function normalFilter(ct: CoverageType): boolean {
-    return types
-      .map((t) => matchupFor(generation, ct.types, t))
-      .every((x) => x === 1);
-  }
-
-  const coverageFilter: TypeFilter = {
-    weakness: weaknessFilter,
-    resistance: resistanceFilter,
-    normal: normalFilter,
-  }[mode];
-  const items = coverageTypes.filter(coverageFilter);
+  const partitionedMatchups = partitionMatchups({
+    coverageTypes,
+    types,
+    generation,
+  });
+  const items = partitionedMatchups[mode];
   const offenseParams = new URLSearchParams({ types: types.join(" ") });
   return (
     <main className="pa3 center content-narrow lh-copy">

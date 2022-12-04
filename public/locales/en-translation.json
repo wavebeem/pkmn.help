@@ -24,7 +24,7 @@
       },
       "normal": {
         "heading": "Normal Effectiveness Coverage List",
-        "description": "These Pokémon are normally affected by all of the selected types."
+        "description": "These Pokémon are not in the weakness or resistance lists for the selected types."
       },
       "resistance": {
         "heading": "Resistance Coverage List",
@@ -190,12 +190,16 @@
       },
       "typeCount": {
         "label": "Number of Types",
-        "help": "Pokémon can briefly have three types at once if hit with Forests's Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.",
+        "help": "Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.",
         "values": {
           "2": "Two types (2)",
           "3": "Three types (3)"
         }
       }
+    },
+    "changes": {
+      "heading": "What’s new",
+      "description": "See what's new in the <changelog>changelog</changelog>."
     },
     "help": {
       "heading": "Help",
@@ -261,6 +265,7 @@
   "banners": {
     "updateReady": {
       "description": "An update is available",
+      "whatsNew": "What’s new",
       "update": "Update"
     }
   },

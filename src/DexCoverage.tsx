@@ -2,7 +2,7 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Generation } from "./data-generations";
-import { matchupFor } from "./data-matchups";
+import { partitionMatchups } from "./data-matchups";
 import { CoverageType, Type } from "./data-types";
 import { PercentBar } from "./PercentBar";
 
@@ -20,20 +20,14 @@ export function DexCoverage({
   isLoading,
 }: DexCoverageProps) {
   const { t } = useTranslation();
-  const weakToAny = coverageTypes.filter((ct) => {
-    return types
-      .map((t) => matchupFor(generation, ct.types, t))
-      .some((x) => x > 1);
-  });
-  const resistAll = coverageTypes.filter((ct) => {
-    return types
-      .map((t) => matchupFor(generation, ct.types, t))
-      .every((x) => x < 1);
-  });
-  const normalAll = coverageTypes.filter((ct) => {
-    return types
-      .map((t) => matchupFor(generation, ct.types, t))
-      .every((x) => x === 1);
+  const {
+    resistance: resist,
+    normal,
+    weakness: weak,
+  } = partitionMatchups({
+    coverageTypes,
+    types,
+    generation,
   });
   const total = coverageTypes.length;
   function getPercent(count: number): string {
@@ -43,56 +37,56 @@ export function DexCoverage({
   return (
     <div className="tabular-nums mw5 flex flex-column lh-copy">
       <div className="pt3" />
-      <PercentBar value={weakToAny.length} max={total} />
+      <PercentBar value={weak.length} max={total} />
       <div className="flex w-100">
         {isLoading ? (
           <div className="flex-auto">{t("general.loading")}</div>
         ) : (
           <>
-            <div>{getPercent(weakToAny.length)}%&nbsp;</div>
+            <div>{getPercent(weak.length)}%&nbsp;</div>
             <Link
               to={`/offense/coverage/weakness/?${typeParams}`}
               className="underline fg-link br1 OutlineFocus"
             >
               {t("offense.coverage.weakness")}
             </Link>
-            <div className="flex-auto tr ml2">({weakToAny.length})</div>
+            <div className="flex-auto tr ml2">({weak.length})</div>
           </>
         )}
       </div>
       <div className="pt3" />
-      <PercentBar value={normalAll.length} max={total} />
+      <PercentBar value={normal.length} max={total} />
       <div className="flex w-100">
         {isLoading ? (
           <div className="flex-auto">{t("general.loading")}</div>
         ) : (
           <>
-            <div>{getPercent(normalAll.length)}%&nbsp;</div>
+            <div>{getPercent(normal.length)}%&nbsp;</div>
             <Link
               to={`/offense/coverage/normal/?${typeParams}`}
               className="underline fg-link br1 OutlineFocus"
             >
               {t("offense.coverage.normal")}
             </Link>
-            <div className="flex-auto tr ml2">({normalAll.length})</div>
+            <div className="flex-auto tr ml2">({normal.length})</div>
           </>
         )}
       </div>
       <div className="pt3" />
-      <PercentBar value={resistAll.length} max={total} />
+      <PercentBar value={resist.length} max={total} />
       <div className="flex w-100">
         {isLoading ? (
           <div className="flex-auto">{t("general.loading")}</div>
         ) : (
           <>
-            <div>{getPercent(resistAll.length)}%&nbsp;</div>
+            <div>{getPercent(resist.length)}%&nbsp;</div>
             <Link
               to={`/offense/coverage/resistance/?${typeParams}`}
               className="underline fg-link br1 OutlineFocus"
             >
               {t("offense.coverage.resistance")}
             </Link>
-            <div className="flex-auto tr ml2">({resistAll.length})</div>
+            <div className="flex-auto tr ml2">({resist.length})</div>
           </>
         )}
       </div>
