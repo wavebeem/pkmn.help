@@ -1,0 +1,265 @@
+{
+  "title": "Kalkulator typów Pokémonów",
+  "navigation": {
+    "offense": "Ofensywa",
+    "defense": "Defensywa",
+    "pokedex": "Pokédex",
+    "more": "Więcej"
+  },
+  "offense": {
+    "chooseTypes": "Wybierz typy",
+    "dealsXTo": "Zadaje {{ x }} do",
+    "coverage": {
+      "heading": "Pokrycie Pokédexa",
+      "edit": "Edytuj listę",
+      "weakness": "Słabość",
+      "normal": "Normalne",
+      "resistance": "Opór"
+    },
+    "coverageList": {
+      "empty": "Nie znaleziono Pokémona lub nie wybrano żadnego typu",
+      "weakness": {
+        "heading": "Lista pokrycia słabości",
+        "description": "Te Pokémony są słabe do co najmniej jednego z wybranych typów."
+      },
+      "normal": {
+        "heading": "Lista Pokrycia Normalnej Skuteczności",
+        "description": "Te Pokémony nie znajdują się na listach słabości ani odporności dla wybranych typów."
+      },
+      "resistance": {
+        "heading": "Lista Pokrycia Oporów",
+        "description": "Te Pokémony są odporne na wszystkie wybrane typy."
+      }
+    }
+  },
+  "coverage": {
+    "heading": "Pokrycie Pokédexa",
+    "paragraph1": "Importuj/eksportuj niestandardowe pliki Pokédex CSV, aby zobaczyć pokrycie dla różnych Pokémonów. Utwórz niestandardowy plik CSV tylko z Pokémonem poziomu OU, a nawet stwórz własnego Pokémona od podstaw.",
+    "paragraph2": "Dane CSV są ładowane według nazwy nagłówka kolumny, a nie kolejności kolumn, więc możesz dodawać kolumny lub zmieniać ich kolejność, jeśli chcesz (np. dodaj kolumnę „poziom” lub „uwagi”).",
+    "paragraph3": "Pliki CSV można edytować za pomocą Arkuszy Google, Microsoft Excel, OpenOffice, LibreOffice, Notatnika i innych.",
+    "csvHeaders": {
+      "number": "Numer",
+      "name": "Nazwa",
+      "type1": "1-szy Tryb",
+      "type2": "2-gi Tryb",
+      "type3": "3-ci Tryb"
+    },
+    "export": {
+      "button": "Eksportuj",
+      "description": "Wyeksportuj domyślny Pokédex do pliku CSV"
+    },
+    "import": {
+      "button": "Importuj",
+      "description": "Zaimportuj edytowany plik Pokédex CSV"
+    },
+    "reset": {
+      "button": "Zresetuj",
+      "description": "Zresetuj do domyślnego Pokédexu"
+    },
+    "status": {
+      "imported": "Zaimportowano {{ n }} formularzy Pokémonów z „{{ file }}”",
+      "exported": "Wyeksportowane domyślne formy Pokémonów",
+      "reset": "Załadowane domyślne formy Pokémonów",
+      "errored": "Błąd ładowania pliku CSV. Nie zmieniaj nazw nagłówków."
+    },
+    "back": "Wróć do ofensywy"
+  },
+  "defense": {
+    "chooseFirst": "Wybierz Pierwszy Typ",
+    "chooseSecond": "Wybierz Drugi Typ",
+    "chooseThird": "Wybierz Trzeci Typ",
+    "takesXFrom": "Dostaje {{ x }} od",
+    "mode": { "heading": "Wybierz tryb", "solo": "Solo", "team": "Drużyna" },
+    "team": {
+      "tableHeading": "Liczba kombinacji",
+      "heading": "Edytuj drużynę Pokémon",
+      "add": "Dodaj Pokémonów",
+      "empty": "Nie wybrano Pokémona",
+      "displayType": "Format Tabeli",
+      "weak": "Słabość do",
+      "resist": "Opór do",
+      "simple": "Prosty",
+      "complex": "Skomplikowany",
+      "type": "Typ",
+      "save": "Zapisz",
+      "saveLong": "Zapisz {{ name }}",
+      "edit": "Edytuj",
+      "editLong": "Edytuj {{ name }}",
+      "remove": "Usuń",
+      "removeLong": "Usuń {{ name }}"
+    }
+  },
+  "pokedex": {
+    "search": {
+      "description": "Szukaj według nazwy, numeru lub typu",
+      "help": "Pomoc",
+      "helpLong": "Pomoc, wyszukaj Pokédex",
+      "notFound": "Nie znaleziono Pokémona"
+    },
+    "wiki": { "label": "Strona Bulbapedia dla {{ pokemon }}" },
+    "offense": { "label": "Ofensywa dla {{ pokemon }}", "text": "Ofensywa" },
+    "defense": { "label": "Defensywa dla {{ pokemon }}", "text": "Defensywa" },
+    "pagination": {
+      "next": "Nast.",
+      "nextLong": "Następny",
+      "previous": "Poprz.",
+      "previousLong": "Poprzedni",
+      "firstLong": "Pierwszy",
+      "lastLong": "Ostatni"
+    },
+    "stats": {
+      "hp": "PŻ",
+      "hpLong": "Punkty Życia",
+      "attack": "Atak",
+      "attackLong": "Atak",
+      "defense": "Defensywa",
+      "defenseLong": "Defensywa",
+      "specialAttack": "Sp. Atk.",
+      "specialAttackLong": "Specjalny Atak",
+      "specialDefense": "Sp. Def.",
+      "specialDefenseLong": "Specjalna Defensywa",
+      "speed": "Szybk.",
+      "speedLong": "Szybkość",
+      "total": "Totalne",
+      "totalLong": "Totalne"
+    }
+  },
+  "pokedexHelp": {
+    "searchByName": {
+      "heading": "Szukaj według nazwy",
+      "description": "Możesz wyszukać Pokémona według nazwy. Jeśli pamiętasz tylko część imienia Pokémona, prawdopodobnie nadal może go dla ciebie znaleźć. Teraz nie radzi sobie z literówkami."
+    },
+    "searchByNumber": {
+      "heading": "Szukaj według numeru",
+      "description": "Szukaj według krajowego numeru dex. Jeśli chcesz Bulbasaura, po prostu wpisz 1, a nie #001."
+    },
+    "searchByType": {
+      "heading": "Search by typu",
+      "description": "Oto kilka przykładów wyszukiwania według typu."
+    },
+    "searchExamples": {
+      "type": {
+        "query": "ognisty",
+        "description": "Szukaj Pokémonów, które mają ogień jako jeden ze swoich typów w dowolnej formie (np. Charmander, Charizard, Rotom)."
+      },
+      "doubleType": {
+        "query": "wodny latający",
+        "description": "Szukaj Pokémonów woda/latanie (np. Gyarados) lub latanie/woda(np. Cramorant)."
+      },
+      "singleType": {
+        "query": "trawiasty nic",
+        "description": "Szukaj Pokémonów, które są tylko typu trawiastego, bez drugiego typu (np. Tangela, Chikorita, Lilligant)."
+      }
+    },
+    "back": "Wróc do Pokédexu"
+  },
+  "more": {
+    "contact": {
+      "heading": "Skontaktuj się ze mną",
+      "intro": "Cześć, jestem <homepage>Brian</homepage> (oni) i stworzyłem kalkulator typów Pokémonów (pkmn.help).",
+      "email": "Wyślij swoje myśli i podziękowania e-mailem na adres <email>pkmn@wavebeem.com</email>."
+    },
+    "settings": {
+      "heading": "Ustawienia",
+      "language": {
+        "label": "Język",
+        "default": "Automatyczne wykrywanie języka",
+        "helpText": "Obsługa języków jest niekompletna. Proszę o kontakt mailowy, zapłacę za tłumaczenie."
+      },
+      "theme": {
+        "label": "Motyw",
+        "help": "„Domyślne ustawienie” zmieni się automatycznie w zależności od ustawień systemu operacyjnego.",
+        "values": {
+          "auto": "Domyślne ustawienie",
+          "light": "Tryb Jasny",
+          "dark": "Tryb Ciemny"
+        }
+      },
+      "typeCount": {
+        "label": "Ilość typów",
+        "help": "Pokémony mogą przez krótki czas mieć trzy typy jednocześnie, jeśli zostaną trafieni Klątwą Lasu lub Cukierek albo psikus. Pole trzeciego typu jest domyślnie ukryte, ponieważ jest rzadko używane.",
+        "values": { "2": "Dwa typy (2)", "3": "Trzy typy (3)" }
+      }
+    },
+    "changes": {
+      "heading": "Co nowego",
+      "description": "Zobacz, co nowego w <changelog>dzienniku zmian</changelog>."
+    },
+    "help": {
+      "heading": "Pomoc",
+      "serviceWorker": {
+        "description": "Ten przycisk może pomóc rozwiązać problemy w aplikacji.",
+        "button": "Zresetuj"
+      }
+    },
+    "privacy": {
+      "heading": "Prywatność",
+      "description": "Nigdy nie będę wyświetlać reklam ani kraść Twoich danych osobowych. Używam <plausible>Plausible Analytics</plausible>, która jest samofinansująca się, niezależna, hostowana w UE i nie przechowuje żadnych plików cookie na Twoim komputerze."
+    },
+    "givingBack": {
+      "heading": "Okazywanie uznania",
+      "description": "Spędziłem niezliczone godziny ulepszając tę stronę. Jeśli doceniasz to, co zrobiłem, rozważ przekazanie darowizny na rzecz organizacji charytatywnych, które wspierają prawa BIPOC i osób transpłciowych."
+    },
+    "thanks": {
+      "heading": "Szczególne podziękowania",
+      "sections": {
+        "da": "Tłumaczenie duńskie",
+        "ru": "Tłumaczenie rosyjskie",
+        "kk": "Tłumaczenie kazachskie",
+        "pt-BR": "Tłumaczenie brazylijskiego portugalskiego",
+        "zh-Hans": "Tłumaczenie uproszczonego chińskiego",
+        "ro": "Tłumaczenie rumuńskie",
+        "pl": "Tłumaczenie polskie",
+        "fr": "Tłumaczenie francuskie",
+        "de": "Tłumaczenie niemieckie",
+        "it": "Tłumaczenie włoskie",
+        "ja": "Tłumaczenie japońskie",
+        "testing": "Testowanie",
+        "other": "Kilku anonimowych fanów Poké"
+      }
+    },
+    "openSource": {
+      "heading": "Otwarte źródło",
+      "description": "Otwarte źródło jest dostępne na <github>GitHubie</github>."
+    },
+    "legalInfo": { "heading": "Informacje prawne" }
+  },
+  "types": {
+    "normal": "Normalny",
+    "fighting": "Walczący",
+    "flying": "Latający",
+    "poison": "Trujący",
+    "ground": "Ziemny",
+    "rock": "Kamienny",
+    "bug": "Robaczy",
+    "ghost": "Duch",
+    "steel": "Stalowy",
+    "fire": "Ognisty",
+    "water": "Wodny",
+    "grass": "Trawiasty",
+    "electric": "Elektryczny",
+    "psychic": "Psychiczny",
+    "ice": "Lodowy",
+    "dragon": "Smoczy",
+    "dark": "Mroczy",
+    "fairy": "Bajkowy",
+    "none": "Nic"
+  },
+  "banners": {
+    "updateReady": {
+      "description": "Aktualizacja jest dostępna",
+      "whatsNew": "Co nowego",
+      "update": "Aktualizacja"
+    }
+  },
+  "general": { "loading": "Ładowanie…" },
+  "games": {
+    "label": "Generacja Gry",
+    "help": "Wykorzystaj skuteczność typu z różnych generacji gier.",
+    "byID": {
+      "gen1": "Generacja 1-sza",
+      "gen2": "Generacja 2-5",
+      "default": "Domyślne (Generacja 6+)"
+    }
+  }
+}

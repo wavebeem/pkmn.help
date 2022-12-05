@@ -121,6 +121,7 @@ export function ScreenMore({
           <option value="it">Italiano (Italian)</option>
           <option value="fr">Français (French)</option>
           <option value="ro">Română (Romanian)</option>
+          <option value="pl">Polski (Polish)</option>
           <option value="ru">Русский (Russian)</option>
           <option value="kk">Қазақша (Kazakh)</option>
           <option value="ja">日本語 (Japanese)</option>
@@ -277,6 +278,11 @@ export function ScreenMore({
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ro")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Adam Hayes</li>
+        </ul>
+
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.pl")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Sebastian Biegaj</li>
         </ul>
 
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.fr")}</h3>
