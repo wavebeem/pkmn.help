@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-12-04
+
+- Added Polish translations
+
 ## 2022-12-03
 
 - Updated the logic for "normal" effectiveness coverage so that Pokémon aren't counted more than once across the three choices
