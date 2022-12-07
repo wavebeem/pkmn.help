@@ -17,8 +17,8 @@
   --color-border1: hsl(0 0% 50%);
   --color-border2: hsl(0 0% 80%);
   --color-border3: hsl(0 0% 90%);
-  --color-vibrant-border: hsl(0 0% 0% / 0.2);
-  --color-vibrant-border1: hsl(0 0% 0% / 0.6);
+  --color-vibrant-border: hsl(0 0% 0% / 20%);
+  --color-vibrant-border1: hsl(0 0% 0% / 60%);
   --color-scroll-fg: hsl(0 0% 40%);
   --color-scroll-bg: hsl(0 0% 90%);
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
@@ -45,8 +45,8 @@
   --color-border1: hsl(220 20% 55%);
   --color-border2: hsl(220 20% 35%);
   --color-border3: hsl(220 20% 30%);
-  --color-vibrant-border: hsl(0 0% 100% / 0.2);
-  --color-vibrant-border1: hsl(0 0% 100% / 0.6);
+  --color-vibrant-border: hsl(0 0% 100% / 20%);
+  --color-vibrant-border1: hsl(0 0% 100% / 60%);
   --color-scroll-fg: hsl(220 20% 70%);
   --color-scroll-bg: hsl(220 20% 30%);
 }
@@ -145,6 +145,10 @@
 
 .fill-currentColor {
   fill: currentColor;
+}
+
+.sticky {
+  position: sticky;
 }
 
 .w0 {
@@ -259,11 +263,11 @@ button {
 }
 
 .button-shadow {
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 2px rgb(0 0 0 / 5%);
 }
 
 .inset-shadow {
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 2px 4px rgb(0 0 0 / 10%);
 }
 
 .no-pointer {
@@ -286,8 +290,7 @@ button {
 }
 
 .TabBar {
-  border-color: var(--color-border2);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
   gap: 0.5rem;
   flex-wrap: wrap;
   padding: 1rem;
@@ -341,7 +344,7 @@ button {
 
 .subtle-hr {
   border: 0;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgb(0 0 0 / 5%);
   height: 1px;
 }
 
@@ -351,7 +354,7 @@ button {
 }
 
 .ThickUnderline {
-  text-decoration-color: rgba(0, 0, 0, 0.2);
+  text-decoration-color: rgb(0 0 0 / 20%);
   text-decoration-thickness: 2px;
 }
 
@@ -445,13 +448,12 @@ button {
 .type-bg {
   background: var(--type-color, #333);
   color: white;
-  text-shadow: 0 1px 0 black, 0 0 1px rgba(0, 0, 0, 0.6),
-    0 0 2px rgba(0, 0, 0, 0.7), 0 0 3px rgba(0, 0, 0, 0.8),
-    0 0 4px rgba(0, 0, 0, 0.9);
+  text-shadow: 0 1px 0 black, 0 0 1px rgb(0 0 0 / 60%), 0 0 2px rgb(0 0 0 / 70%),
+    0 0 3px rgb(0 0 0 / 80%), 0 0 4px rgb(0 0 0 / 90%);
 }
 
 .type.with-border-color {
-  border-color: rgba(0, 0, 0, 0.2);
+  border-color: rgb(0 0 0 / 20%);
 }
 
 .type-fire {

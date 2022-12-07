@@ -129,67 +129,69 @@ export function App() {
           <meta name="theme-color" content={themeColor} />
           <title>{t("title")}</title>
         </Helmet>
-        <h1 className="f3-ns f4 tc relative white PokeballHeader">
-          <Link to="/" className="no-underline white OutlineFocus br1">
-            {t("title")}
-          </Link>
-          <div
-            className="PokeballHeaderButton"
-            onClick={(event) => {
-              event.preventDefault();
-              const i = Math.floor(Math.random() * AllPokemon.length);
-              const pkmn = AllPokemon[i];
-              if (!pkmn) return;
-              setEasterEgg(pkmn);
-            }}
-          />
-          {easterEgg && (
+        <header className="sticky top-0 z-1">
+          <h1 className="f3-ns f4 tc relative white PokeballHeader">
+            <Link to="/" className="no-underline white OutlineFocus br1">
+              {t("title")}
+            </Link>
             <div
-              className="EasterEgg"
-              data-animate={easterEggLoadedID === easterEgg.id}
+              className="PokeballHeaderButton"
+              onClick={(event) => {
+                event.preventDefault();
+                const i = Math.floor(Math.random() * AllPokemon.length);
+                const pkmn = AllPokemon[i];
+                if (!pkmn) return;
+                setEasterEgg(pkmn);
+              }}
+            />
+            {easterEgg && (
+              <div
+                className="EasterEgg"
+                data-animate={easterEggLoadedID === easterEgg.id}
+              >
+                <MonsterImage
+                  pokemonID={easterEgg.id}
+                  types={easterEgg.types}
+                  imageType={easterEgg.imageType}
+                  onLoad={({ pokemonID }) => {
+                    setEasterEggLoadedID(pokemonID);
+                  }}
+                  scale={2}
+                />
+              </div>
+            )}
+          </h1>
+          <nav className="bg1 bb border2 gap2 pb2 ph2 TabBar">
+            <NavLink
+              className={tabClass}
+              activeClassName={tabClassActive}
+              to={`/offense/${offenseParams}`}
             >
-              <MonsterImage
-                pokemonID={easterEgg.id}
-                types={easterEgg.types}
-                imageType={easterEgg.imageType}
-                onLoad={({ pokemonID }) => {
-                  setEasterEggLoadedID(pokemonID);
-                }}
-                scale={2}
-              />
-            </div>
-          )}
-        </h1>
-        <nav className="bg1 bb border2 TabBar pb2 ph2">
-          <NavLink
-            className={tabClass}
-            activeClassName={tabClassActive}
-            to={`/offense/${offenseParams}`}
-          >
-            {t("navigation.offense")}
-          </NavLink>
-          <NavLink
-            className={tabClass}
-            activeClassName={tabClassActive}
-            to={`/defense/${defenseParams}`}
-          >
-            {t("navigation.defense")}
-          </NavLink>
-          <NavLink
-            className={tabClass}
-            activeClassName={tabClassActive}
-            to={`/pokedex/${pokedexParams}`}
-          >
-            {t("navigation.pokedex")}
-          </NavLink>
-          <NavLink
-            className={classNames(tabClass, needRefresh && "PleaseUpdate")}
-            activeClassName={tabClassActive}
-            to="/more/"
-          >
-            {t("navigation.more")}
-          </NavLink>
-        </nav>
+              {t("navigation.offense")}
+            </NavLink>
+            <NavLink
+              className={tabClass}
+              activeClassName={tabClassActive}
+              to={`/defense/${defenseParams}`}
+            >
+              {t("navigation.defense")}
+            </NavLink>
+            <NavLink
+              className={tabClass}
+              activeClassName={tabClassActive}
+              to={`/pokedex/${pokedexParams}`}
+            >
+              {t("navigation.pokedex")}
+            </NavLink>
+            <NavLink
+              className={classNames(tabClass, needRefresh && "PleaseUpdate")}
+              activeClassName={tabClassActive}
+              to="/more/"
+            >
+              {t("navigation.more")}
+            </NavLink>
+          </nav>
+        </header>
         <React.Suspense fallback={<div className="Spinner center mt4 f2" />}>
           <Switch>
             <Route
