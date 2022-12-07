@@ -290,7 +290,6 @@ button {
 }
 
 .TabBar {
-  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
   gap: 0.5rem;
   flex-wrap: wrap;
   padding: 1rem;

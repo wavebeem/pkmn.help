@@ -161,7 +161,7 @@ export function App() {
               </div>
             )}
           </h1>
-          <nav className="bg1 bb border2 gap2 pb2 ph2 TabBar">
+          <nav className="bg1 bb border2 button-shadow gap2 pb2 ph2 TabBar">
             <NavLink
               className={tabClass}
               activeClassName={tabClassActive}
