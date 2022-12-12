@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-12-11
+
+- Store the previous defense team even if you close the page
+
 ## 2022-12-04
 
 - Added Polish translations
