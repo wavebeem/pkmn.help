@@ -18,6 +18,7 @@ import { TypeSelector } from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
 import { useSearch } from "./useSearch";
+import { useTeamTypes } from "./useTeamTypes";
 import { useTypeCount } from "./useTypeCount";
 
 const modes = ["solo", "team"] as const;
@@ -59,6 +60,8 @@ export function ScreenDefense({
   const search = useSearch();
   const history = useHistory();
 
+  const [teamTypes, setTeamTypes] = useTeamTypes();
+
   const [typeCount] = useTypeCount();
 
   const [teamIndex, setTeamIndex] = React.useState(-1);
@@ -70,9 +73,15 @@ export function ScreenDefense({
       Number(typeCount)
     ),
     format: (search.get("format") || "simple") as any,
-    teamTypesList: search.getAll("team_types").map((t) => {
-      return typesFromString(t).slice(0, Number(typeCount));
-    }),
+    teamTypesList: (() => {
+      if (search.get("team_types") === null && search.get("mode") !== "team") {
+        return teamTypes;
+      }
+      return search.getAll("team_types").map((t) => {
+        console.log({ t });
+        return typesFromString(t).slice(0, Number(typeCount));
+      });
+    })(),
   };
 
   React.useEffect(() => {
@@ -102,6 +111,7 @@ export function ScreenDefense({
 
   function update(state: State) {
     const search = createParams(state);
+    setTeamTypes(state.teamTypesList);
     if (search !== location.search) {
       history.replace({ search });
     }
