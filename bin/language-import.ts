@@ -2,6 +2,12 @@ import fs from "fs";
 import Papa from "papaparse";
 import { saveJSON } from "./util";
 
+/**
+ * Set a deeply nested property on an object
+ *
+ * @example
+ * set(object, ["key1", "key2", 3, "key4"], "value");
+ */
 function set(object: Record<string, any>, keys: string[], value: any): void {
   switch (keys.length) {
     case 0:
