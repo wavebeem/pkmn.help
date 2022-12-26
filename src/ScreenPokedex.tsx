@@ -68,6 +68,7 @@ interface MonsterProps {
 function Monster({ pokemon }: MonsterProps) {
   const { t, i18n } = useTranslation();
   const [language] = useLanguage();
+  const [shiny, setShiny] = React.useState(false);
   const displayNumber = formatMonsterNumber(pokemon.number);
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
   const speciesName = pokemon.speciesNames[language] || pokemon.speciesNames.en;
@@ -90,8 +91,8 @@ function Monster({ pokemon }: MonsterProps) {
         </div>
         <div className="nv2 fg3 f5">{formattedFormName}</div>
       </div>
-      <div className="flex flex-column flex-row-l gap3">
-        <div className="flex flex-column">
+      <div className="Monster gap3">
+        <div className="Monster-icon flex flex-column">
           <div className="flex flex-column">
             <div className="pv3 flex justify-center">
               <MonsterImage
@@ -99,6 +100,7 @@ function Monster({ pokemon }: MonsterProps) {
                 pokemonID={pokemon.id}
                 types={pokemon.types}
                 imageType={pokemon.imageType}
+                shiny={shiny}
               />
             </div>
             <div className="flex gap1 justify-center">
@@ -108,40 +110,46 @@ function Monster({ pokemon }: MonsterProps) {
             </div>
           </div>
         </div>
-        <div className="flex flex-column justify-center flex-auto gap3">
+        <div className="Monster-links flex flex-auto flex-wrap gap3 items-center justify-center">
+          <a
+            title={t("pokedex.shiny.label", { pokemon: pokemonName })}
+            aria-label={t("pokedex.shiny.label", { pokemon: pokemonName })}
+            className="br1 underline fg-link OutlineFocus"
+            href="#shiny"
+            onClick={(event) => {
+              event.preventDefault();
+              setShiny(!shiny);
+            }}
+          >
+            {t("pokedex.shiny.text")}
+          </a>
+          <a
+            title={t("pokedex.wiki.label", { pokemon: pokemonName })}
+            aria-label={t("pokedex.wiki.label", { pokemon: pokemonName })}
+            className="br1 underline fg-link OutlineFocus"
+            href={getWikiLink(i18n.language, pokemon)}
+          >
+            {getWikiName(i18n.language)}
+          </a>
+          <Link
+            title={t("pokedex.offense.label", { pokemon: pokemonName })}
+            aria-label={t("pokedex.offense.label", { pokemon: pokemonName })}
+            className="br1 underline fg-link OutlineFocus"
+            to={`/offense/?${params}#matchup-offense`}
+          >
+            {t("pokedex.offense.text")}
+          </Link>
+          <Link
+            title={t("pokedex.defense.label", { pokemon: pokemonName })}
+            aria-label={t("pokedex.defense.label", { pokemon: pokemonName })}
+            className="br1 underline fg-link OutlineFocus"
+            to={`/defense/?${params}#matchup-defense`}
+          >
+            {t("pokedex.defense.text")}
+          </Link>
+        </div>
+        <div className="Monster-stats flex flex-column justify-center flex-auto gap3">
           <StatsTable pokemon={pokemon} />
-          <div className="flex flex-auto items-end justify-end">
-            <a
-              title={t("pokedex.wiki.label", { pokemon: pokemonName })}
-              aria-label={t("pokedex.wiki.label", { pokemon: pokemonName })}
-              className="br1 underline fg-link OutlineFocus"
-              href={getWikiLink(i18n.language, pokemon)}
-            >
-              {getWikiName(i18n.language)}
-            </a>
-            <span aria-hidden="true" className="o-50">
-              &nbsp;&bull;&nbsp;
-            </span>
-            <Link
-              title={t("pokedex.offense.label", { pokemon: pokemonName })}
-              aria-label={t("pokedex.offense.label", { pokemon: pokemonName })}
-              className="br1 underline fg-link OutlineFocus"
-              to={`/offense/?${params}#matchup-offense`}
-            >
-              {t("pokedex.offense.text")}
-            </Link>
-            <span aria-hidden="true" className="o-50">
-              &nbsp;&bull;&nbsp;
-            </span>
-            <Link
-              title={t("pokedex.defense.label", { pokemon: pokemonName })}
-              aria-label={t("pokedex.defense.label", { pokemon: pokemonName })}
-              className="br1 underline fg-link OutlineFocus"
-              to={`/defense/?${params}#matchup-defense`}
-            >
-              {t("pokedex.defense.text")}
-            </Link>
-          </div>
         </div>
       </div>
     </div>
