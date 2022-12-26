@@ -22,6 +22,7 @@ export function MonsterImage({
   scale = 1,
 }: MonsterImageProps): JSX.Element {
   const [state, setState] = React.useState<State>("loading");
+  const [shiny, setShiny] = React.useState<boolean>(false);
   const setLoaded = React.useCallback(() => {
     setState("loaded");
     onLoad?.({ pokemonID });
@@ -37,7 +38,7 @@ export function MonsterImage({
       }}
     >
       <img
-        src={getImage(pokemonID)}
+        src={getImage(pokemonID + (shiny ? "-shiny" : ""))}
         role="presentation"
         alt=""
         className={classNames("db img-shadow h-auto", {
@@ -48,6 +49,9 @@ export function MonsterImage({
         height={96 * scale}
         onLoad={setLoaded}
         onError={setErrored}
+        onClick={() => {
+          setShiny(!shiny);
+        }}
       />
     </div>
   );

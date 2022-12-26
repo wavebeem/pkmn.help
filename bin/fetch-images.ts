@@ -25,6 +25,16 @@ async function main(): Promise<void> {
       fs.writeFileSync(imgFilename, img);
     }
     delete item.spriteURL;
+    const shinyImgFilename = path.resolve(IMG_DEST, `${item.id}-shiny.png`);
+    if (item.shinySpriteURL && item.shinySpriteURL.includes("img.pokemondb.net")) {
+      const url = item.shinySpriteURL.replace("/icon/", "/normal/");
+      const img = await fetchBuffer(url);
+      fs.writeFileSync(shinyImgFilename, img);
+    } else if (item.shinySpriteURL && !fs.existsSync(shinyImgFilename)) {
+      const img = await fetchBuffer(item.shinySpriteURL);
+      fs.writeFileSync(shinyImgFilename, img);
+    }
+    delete item.shinySpriteURL;
   }
   saveJSON(DATA_DEST, list);
 }

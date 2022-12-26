@@ -63,6 +63,7 @@ interface PokemonDetail {
   }[];
   sprites: {
     front_default: string;
+    front_shiny: string;
   };
 }
 
@@ -72,6 +73,7 @@ interface PokemonSimple {
   formNames: Record<string, string>;
   number: number;
   spriteURL: string;
+  shinySpriteURL: string;
   hp: number;
   attack: number;
   defense: number;
@@ -138,18 +140,22 @@ async function main(): Promise<void> {
         key: (item) => item.stat.name,
         value: (item) => item.base_stat,
       });
-      const form = await fetchJSON<PokemonForm>(detail.forms[0].url);
-      const formNames = toObject({
-        data: form.form_names,
-        key: (item) => item.language.name,
-        value: (item) => item.name,
-      });
+      var formNames = {};
+      if (detail.forms.length > 0) {
+        const form = await fetchJSON<PokemonForm>(detail.forms[0].url);
+        formNames = toObject({
+          data: form.form_names,
+          key: (item) => item.language.name,
+          value: (item) => item.name,
+        });
+      }
       const mon: PokemonSimple = {
         name: detail.name,
         speciesNames,
         formNames,
         number: speciesDetail.id,
         spriteURL: detail.sprites.front_default,
+        shinySpriteURL: detail.sprites.front_shiny ?? null,
         hp: stats["hp"] ?? 0,
         attack: stats["attack"] ?? 0,
         defense: stats["defense"] ?? 0,
