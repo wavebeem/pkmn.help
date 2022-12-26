@@ -12,6 +12,7 @@ interface MonsterImageProps {
   onLoad?: ({ pokemonID }: { pokemonID: string }) => void;
   imageType: "sprite" | "hd";
   scale?: number;
+  shiny?: boolean;
 }
 
 export function MonsterImage({
@@ -20,9 +21,9 @@ export function MonsterImage({
   onLoad,
   imageType,
   scale = 1,
+  shiny = false,
 }: MonsterImageProps): JSX.Element {
   const [state, setState] = React.useState<State>("loading");
-  const [shiny, setShiny] = React.useState<boolean>(false);
   const setLoaded = React.useCallback(() => {
     setState("loaded");
     onLoad?.({ pokemonID });
@@ -49,9 +50,6 @@ export function MonsterImage({
         height={96 * scale}
         onLoad={setLoaded}
         onError={setErrored}
-        onClick={() => {
-          setShiny(!shiny);
-        }}
       />
     </div>
   );
