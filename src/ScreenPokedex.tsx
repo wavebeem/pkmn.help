@@ -68,6 +68,7 @@ interface MonsterProps {
 function Monster({ pokemon }: MonsterProps) {
   const { t, i18n } = useTranslation();
   const [language] = useLanguage();
+  const [shiny, setShiny] = React.useState(false);
   const displayNumber = formatMonsterNumber(pokemon.number);
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
   const speciesName = pokemon.speciesNames[language] || pokemon.speciesNames.en;
@@ -99,6 +100,7 @@ function Monster({ pokemon }: MonsterProps) {
                 pokemonID={pokemon.id}
                 types={pokemon.types}
                 imageType={pokemon.imageType}
+                shiny={shiny}
               />
             </div>
             <div className="flex gap1 justify-center">
@@ -141,6 +143,20 @@ function Monster({ pokemon }: MonsterProps) {
             >
               {t("pokedex.defense.text")}
             </Link>
+            <span aria-hidden="true" className="o-50">
+              &nbsp;&bull;&nbsp;
+            </span>
+            <a
+              title={t("pokedex.shiny.label", { pokemon: pokemonName })}
+              aria-label={t("pokedex.shiny.label", { pokemon: pokemonName })}
+              className="br1 underline fg-link OutlineFocus"
+              onClick={(event) => {
+                event.preventDefault();
+                setShiny(!shiny);
+              }}
+            >
+              {"Toggle Shiny"}
+            </a>
           </div>
         </div>
       </div>
