@@ -112,6 +112,10 @@
       "label": "Defense for {{ pokemon }}",
       "text": "Defense"
     },
+    "shiny": {
+      "label": "Shiny for {{ pokemon }}",
+      "text": "Shiny"
+    },
     "pagination": {
       "next": "Next",
       "nextLong": "Next",

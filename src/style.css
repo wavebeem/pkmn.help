@@ -313,6 +313,23 @@ button {
 
 .Monster {
   display: grid;
+  row-gap: 1rem;
+  grid-template-areas:
+    "icon"
+    "links"
+    "stats";
+}
+
+.Monster-icon {
+  grid-area: icon;
+}
+
+.Monster-links {
+  grid-area: links;
+}
+
+.Monster-stats {
+  grid-area: stats;
 }
 
 @media (min-width: 600px) {
@@ -332,6 +349,15 @@ button {
 @media (min-width: 700px) {
   .Monster {
     grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "icon stats"
+      "icon links";
+  }
+
+  .Monster-links {
+    grid-area: links;
+    justify-content: end;
+    align-items: end;
   }
 }
 
