@@ -1,5 +1,10 @@
 # Changelog
 
+## 2022-12-29
+
+- Simplified selected state for types so that they aren't truncated in certain
+  languages
+
 ## 2022-12-26
 
 - Added support for shiny sprites
