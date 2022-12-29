@@ -21,7 +21,7 @@ export function MultiTypeSelector({
   const { t } = useTranslation();
   const styles = {
     selected:
-      "border-vibrant2 type-bg no-box-shadow button-shadow SelectedFocus b",
+      "border-vibrant2 type-bg no-box-shadow button-shadow SelectedFocus",
     normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
@@ -81,7 +81,6 @@ export function MultiTypeSelector({
                 style={{ lineHeight: buttonInnerHeight }}
               >
                 {t(`types.${type}`)}
-                {isChecked && <span aria-hidden="true">&nbsp;&bull;</span>}
               </span>
             </span>
           </label>

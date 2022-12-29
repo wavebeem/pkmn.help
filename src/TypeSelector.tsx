@@ -29,7 +29,7 @@ export function TypeSelector({
   const theTypes = includeNone ? [...baseTypes, Type.NONE] : baseTypes;
   const styles = {
     disabled: "border3 fg4 bg2 o-60 SimpleFocus pointer-none",
-    selected: "border-vibrant2 type-bg SelectedFocus b",
+    selected: "border-vibrant2 type-bg SelectedFocus",
     normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
   };
   return (
@@ -89,7 +89,6 @@ export function TypeSelector({
                 style={{ lineHeight: buttonInnerHeight }}
               >
                 {t(`types.${type}`)}
-                {isSelected && <span aria-hidden="true">&nbsp;&bull;</span>}
               </span>
             </span>
           </label>
