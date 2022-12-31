@@ -1,5 +1,9 @@
 # Changelog
 
+## 2022-12-31
+
+- Fixed an issue where auto-detect language wasn't respected for Pokemon names (https://github.com/wavebeem/pkmn.help/issues/192)
+
 ## 2022-12-29
 
 - Simplified selected state for types so that they aren't truncated in certain
