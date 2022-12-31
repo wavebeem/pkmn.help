@@ -13,6 +13,7 @@ import { Paginator } from "./Paginator";
 import { pickTranslation } from "./pickTranslation";
 import { Search } from "./Search";
 import { StatsTable } from "./StatsTable";
+import { useComputedLanguage } from "./useComputedLanguage";
 import { useLanguage } from "./useLanguage";
 import { useSearch } from "./useSearch";
 
@@ -67,7 +68,7 @@ interface MonsterProps {
 
 function Monster({ pokemon }: MonsterProps) {
   const { t, i18n } = useTranslation();
-  const [language] = useLanguage();
+  const language = useComputedLanguage();
   const [shiny, setShiny] = React.useState(false);
   const displayNumber = formatMonsterNumber(pokemon.number);
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
