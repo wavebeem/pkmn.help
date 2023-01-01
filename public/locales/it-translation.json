@@ -8,7 +8,29 @@
   },
   "offense": {
     "chooseTypes": "Scegli i Tipi",
-    "dealsXTo": "Infligge {{ x }} a"
+    "dealsXTo": "Infligge {{ x }} a",
+    "coverage": {
+      "heading": "Copertura debolezze",
+      "edit": "Modifica lista",
+      "weakness": "Debole",
+      "normal": "Normale",
+      "resistance": "Resistente"
+    },
+    "coverageList": {
+      "empty": "Nessun Pokémon trovato o nessun tipo selezionato",
+      "weakness": {
+        "heading": "Lista della copertura debolezze",
+        "description": "Questi Pokémon sono deboli ad almeno uno dei tipi selezionati"
+      },
+      "normal": {
+        "heading": "Lista della copertura efficacia normale",
+        "description": "Questi Pokémon non sono né nella lista delle debolezze né nella lista delle resistenze per i tipi selezionati"
+      },
+      "resistance": {
+        "heading": "Lista della copertura resistenze",
+        "description": "Questi Pokémon resistono tutti i tipi selezionatii"
+      }
+    }
   },
   "coverage": {
     "heading": "Copertura Debolezze",
@@ -47,24 +69,40 @@
     "chooseFirst": "Scegli il Primo Tipo",
     "chooseSecond": "Scegli il Secondo Tipo",
     "chooseThird": "Scegli il Terzo Tipo",
-    "takesXFrom": "Subisce {{ x }} da"
+    "takesXFrom": "Subisce {{ x }} da",
+    "mode": { "heading": "Scegli Modalità", "solo": "Solo", "team": "Squadra" },
+    "team": {
+      "tableHeading": "Conteggio dei Rapporti",
+      "heading": "Modifica Squadra Pokémon",
+      "add": "Aggiungi Pokémon",
+      "empty": "Nessun Pokémon selezionato",
+      "displayType": "Formato della Tabella",
+      "weak": "Debolezze",
+      "resist": "Resistenze",
+      "simple": "Semplice",
+      "complex": "Complesso",
+      "type": "Tipo",
+      "save": "Salva",
+      "saveLong": "Salva {{ name }}",
+      "edit": "Modifica",
+      "editLong": "Modifica {{ name }}",
+      "remove": "Rimuovi",
+      "removeLong": "Rimuovi {{ name }}"
+    }
   },
   "pokedex": {
     "search": {
       "description": "Cerca tramite nome, numero o tipi",
       "help": "Aiuto",
-      "helpLong": "Aiuto, cerca Pokédex"
+      "helpLong": "Aiuto, cerca Pokédex",
+      "notFound": "Nessun Pokémon trovato"
     },
-    "wiki": {
-      "label": "Pagina Pokémon Central di {{ pokemon }}"
-    },
-    "offense": {
-      "label": "Offensiva di {{ pokemon }}",
-      "text": "Offensiva"
-    },
-    "defense": {
-      "label": "Difensiva di {{ pokemon }}",
-      "text": "Difensiva"
+    "wiki": { "label": "Pagina Pokémon Central di {{ pokemon }}" },
+    "offense": { "label": "Offensiva di {{ pokemon }}", "text": "Offensiva" },
+    "defense": { "label": "Difensiva di {{ pokemon }}", "text": "Difensiva" },
+    "shiny": {
+      "label": "Forma cromatica di {{ pokemon }}",
+      "text": "Forma cromatica"
     },
     "pagination": {
       "next": "Succ.",
@@ -130,6 +168,7 @@
       "heading": "Impostazioni",
       "language": {
         "label": "Lingua",
+        "default": "Individua lingua automaticamente",
         "helpText": "Il supporto alle lingue è incompleto. Per favore scrivimi una mail, ti pagherò per tradurre"
       },
       "theme": {
@@ -144,11 +183,12 @@
       "typeCount": {
         "label": "Numero di tipi",
         "help": "Un Pokémon può avere brevemente tre tipi allo stesso tempo se viene colpito da Boscomalocchio o Halloween. Il campo del terzo tipo di solito è nascosto poiché è raramente usato.",
-        "values": {
-          "2": "Due tipi (2)",
-          "3": "Tre tipi (3)"
-        }
+        "values": { "2": "Due tipi (2)", "3": "Tre tipi (3)" }
       }
+    },
+    "changes": {
+      "heading": "Cosa c'è di nuovo",
+      "description": "Scopri cosa c'è di nuovo nel <changelog>registro degli aggiornamenti</changelog>."
     },
     "help": {
       "heading": "Aiuto",
@@ -162,33 +202,32 @@
       "description": "Non pubblicherò mai annunci o ruberò i tuoi dati personali. Uso <plausible>Plausible Analytics</plausible>, che è autofinanziato, indipendente, ospitato nell'UE e non memorizza alcun cookie sul tuo computer."
     },
     "givingBack": {
-      "heading": "Restituisci",
+      "heading": "Mostra Il Tuo Apprezzamento",
       "description": "Ho passato innumerevoli ore a migliorare questo sito. Se apprezzi quello che ho fatto, per favore considera di fare una donazione a enti di beneficenza che supportano BIPOC e i diritti delle persone transgender."
     },
     "thanks": {
       "heading": "Ringraziamenti Speciali",
       "sections": {
-        "da": "Traduttore Danese",
-        "ru": "Traduttore Russa",
-        "kk": "Traduttore Kazaka",
-        "pt-BR": "Traduttore Portoghese Brasiliano",
-        "zh-Hans": "Traduttore Cinesi",
-        "ro": "Traduttore Rumeno",
-        "fr": "Traduttore Francese",
-        "de": "Traduttore Tedesco",
-        "it": "Traduttore Italiano",
-        "ja": "Traduttore Giapponese",
+        "da": "Traduzione Danese",
+        "ru": "Traduzione Russa",
+        "kk": "Traduzione Kazaka",
+        "pt-BR": "Traduzione Portoghese Brasiliana",
+        "zh-Hans": "Traduzione Cinese",
+        "ro": "Traduzione Rumena",
+        "pl": "Traduzione Polacca",
+        "fr": "Traduzione Francese",
+        "de": "Traduzione Tedesca",
+        "it": "Traduzione Italiana",
+        "ja": "Traduzione Giapponese",
         "testing": "Test",
         "other": "Diversi Fan anonimi di Pokémon"
       }
     },
     "openSource": {
-      "heading": "Open Source",
+      "heading": "Codice Sorgente",
       "description": "Il codice sorgente è disponibile su <github>GitHub</github>."
     },
-    "legalInfo": {
-      "heading": "Informazioni Legali"
-    }
+    "legalInfo": { "heading": "Informazioni Legali" }
   },
   "types": {
     "normal": "Normale",
@@ -214,10 +253,18 @@
   "banners": {
     "updateReady": {
       "description": "È disponibile un aggiornamento",
+      "whatsNew": "Cosa c'è di nuovo",
       "update": "Aggiorna"
     }
   },
-  "general": {
-    "loading": "Caricamento..."
+  "general": { "loading": "Caricamento..." },
+  "games": {
+    "label": "Generazione di Gioco",
+    "help": "Usa i rapporti tra tipi di diverse generazioni di gioco",
+    "byID": {
+      "gen1": "Generazione 1",
+      "gen2": "Generazioni 2–5",
+      "default": "Predefinito (Generazioni 6+)"
+    }
   }
 }
