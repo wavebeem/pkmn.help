@@ -202,7 +202,7 @@ export function ScreenPokedex({
         if (types.length === 1) {
           return p.types[0] === types[0] || p.types[1] === types[0];
         }
-        if (types.length === 2 && types[1] === Type.NONE) {
+        if (types.length === 2 && types[1] === Type.none) {
           return p.types.length === 1 && p.types[0] === types[0];
         }
         return (

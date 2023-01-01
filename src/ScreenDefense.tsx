@@ -189,7 +189,7 @@ export function ScreenDefense({
           <TypeSelector
             generation={generation}
             name="secondary"
-            value={state.types[1] || Type.NONE}
+            value={state.types[1] || Type.none}
             onChange={updateTypeAt(1)}
             disabledTypes={state.types.slice(0, 1)}
             includeNone={true}
@@ -200,7 +200,7 @@ export function ScreenDefense({
               <TypeSelector
                 generation={generation}
                 name="third"
-                value={state.types[2] || Type.NONE}
+                value={state.types[2] || Type.none}
                 onChange={updateTypeAt(2)}
                 disabledTypes={state.types.slice(0, 2)}
                 includeNone={true}
@@ -328,7 +328,7 @@ export function ScreenDefense({
                   <TypeSelector
                     generation={generation}
                     name="secondary"
-                    value={types[1] || Type.NONE}
+                    value={types[1] || Type.none}
                     onChange={updateTeamTypesAt(typeIndex, 1)}
                     disabledTypes={types.slice(0, 1)}
                     includeNone={true}
@@ -339,7 +339,7 @@ export function ScreenDefense({
                       <TypeSelector
                         generation={generation}
                         name="third"
-                        value={types[2] || Type.NONE}
+                        value={types[2] || Type.none}
                         onChange={updateTeamTypesAt(typeIndex, 2)}
                         disabledTypes={types.slice(0, 2)}
                         includeNone={true}
@@ -354,7 +354,7 @@ export function ScreenDefense({
         <div className="pt3">
           <Button
             onClick={() => {
-              const newTypes = [...state.teamTypesList, [Type.NORMAL]];
+              const newTypes = [...state.teamTypesList, [Type.normal]];
               update({
                 ...state,
                 teamTypesList: newTypes,

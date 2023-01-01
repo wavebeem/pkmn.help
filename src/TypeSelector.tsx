@@ -26,7 +26,7 @@ export function TypeSelector({
 }: TypeSelectorProps) {
   const { t } = useTranslation();
   const baseTypes = typesForGeneration(generation);
-  const theTypes = includeNone ? [...baseTypes, Type.NONE] : baseTypes;
+  const theTypes = includeNone ? [...baseTypes, Type.none] : baseTypes;
   const styles = {
     disabled: "border3 fg4 bg2 o-60 SimpleFocus pointer-none",
     selected: "border-vibrant2 type-bg SelectedFocus",
