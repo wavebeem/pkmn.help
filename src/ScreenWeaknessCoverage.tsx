@@ -102,11 +102,11 @@ export function ScreenWeaknessCoverage({
       },
       transform: (value, field) => {
         if (field === "type1") {
-          const [type = Type.NORMAL] = typesFromUserInput({ types: value, t });
+          const [type = Type.normal] = typesFromUserInput({ types: value, t });
           return type;
         }
         if (field === "type2" || field === "type3") {
-          const [type = Type.NONE] = typesFromUserInput({ types: value, t });
+          const [type = Type.none] = typesFromUserInput({ types: value, t });
           return type;
         }
         return value;

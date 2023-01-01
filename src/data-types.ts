@@ -1,6 +1,7 @@
 import { closest } from "fastest-levenshtein";
 import removeAccents from "remove-accents";
 import { Generation } from "./data-generations";
+import { ValueOf } from "./util";
 
 export interface Pokemon {
   id: string;
@@ -18,30 +19,34 @@ export interface Pokemon {
   imageType: "sprite" | "hd";
 }
 
-export enum Type {
-  NORMAL = "normal",
-  FIGHTING = "fighting",
-  FLYING = "flying",
-  POISON = "poison",
-  GROUND = "ground",
-  ROCK = "rock",
-  BUG = "bug",
-  GHOST = "ghost",
-  STEEL = "steel",
-  FIRE = "fire",
-  WATER = "water",
-  GRASS = "grass",
-  ELECTRIC = "electric",
-  PSYCHIC = "psychic",
-  ICE = "ice",
-  DRAGON = "dragon",
-  DARK = "dark",
-  FAIRY = "fairy",
-  NONE = "none",
-}
+export const Type = {
+  normal: "normal",
+  fighting: "fighting",
+  flying: "flying",
+  poison: "poison",
+  ground: "ground",
+  rock: "rock",
+  bug: "bug",
+  ghost: "ghost",
+  steel: "steel",
+  fire: "fire",
+  water: "water",
+  grass: "grass",
+  electric: "electric",
+  psychic: "psychic",
+  ice: "ice",
+  dragon: "dragon",
+  dark: "dark",
+  fairy: "fairy",
+  none: "none",
+} as const;
+
+const typeSet = new Set(Object.values(Type));
+
+export type Type = ValueOf<typeof Type>;
 
 function isType(str: string): str is Type {
-  return types.some((t) => t === str);
+  return typeSet.has(str as Type);
 }
 
 function normalizeTypeString(str: string): string {
@@ -74,29 +79,29 @@ export function typesFromUserInput({
 }
 
 export const types = [
-  Type.NORMAL,
-  Type.FIGHTING,
-  Type.FLYING,
-  Type.POISON,
-  Type.GROUND,
-  Type.ROCK,
-  Type.BUG,
-  Type.GHOST,
-  Type.STEEL,
-  Type.FIRE,
-  Type.WATER,
-  Type.GRASS,
-  Type.ELECTRIC,
-  Type.PSYCHIC,
-  Type.ICE,
-  Type.DRAGON,
-  Type.DARK,
-  Type.FAIRY,
+  Type.normal,
+  Type.fighting,
+  Type.flying,
+  Type.poison,
+  Type.ground,
+  Type.rock,
+  Type.bug,
+  Type.ghost,
+  Type.steel,
+  Type.fire,
+  Type.water,
+  Type.grass,
+  Type.electric,
+  Type.psychic,
+  Type.ice,
+  Type.dragon,
+  Type.dark,
+  Type.fairy,
 ];
 
-const typesGen2 = types.filter((t) => t !== Type.FAIRY);
+const typesGen2 = types.filter((t) => t !== Type.fairy);
 const typesGen1 = typesGen2.filter(
-  (t) => !(t === Type.DARK || t === Type.STEEL)
+  (t) => !(t === Type.dark || t === Type.steel)
 );
 
 export function typesForGeneration(generation: Generation): Type[] {
@@ -127,12 +132,12 @@ export function removeInvalidDefenseTypesForGeneration(
   const set = new Set(typesForGeneration(generation));
   return types.flatMap((t, i) => {
     if (set.has(t)) return [t];
-    if (i === 0) return [Type.NORMAL];
+    if (i === 0) return [Type.normal];
     return [];
   });
 }
 
-export const typesOrNone = [...types, Type.NONE];
+export const typesOrNone = [...types, Type.none];
 
 // find closest(key, Object.values(obj)))
 // return key of first value that matches
@@ -173,5 +178,5 @@ export function objectToCoverageType({ obj }: { obj: unknown }): CoverageType {
 }
 
 export function removeNones(types: Type[]): Type[] {
-  return types.filter((t) => t !== Type.NONE);
+  return types.filter((t) => t !== Type.none);
 }
