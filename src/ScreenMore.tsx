@@ -301,6 +301,7 @@ export function ScreenMore({
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.it")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Gabriele Giugno</li>
+          <li>Fabio “N™” Ilari</li>
         </ul>
 
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ja")}</h3>
