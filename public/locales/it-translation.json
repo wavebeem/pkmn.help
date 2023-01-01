@@ -208,16 +208,17 @@
     "thanks": {
       "heading": "Ringraziamenti Speciali",
       "sections": {
-        "da": "Traduttore Danese",
-        "ru": "Traduttore Russa",
-        "kk": "Traduttore Kazaka",
-        "pt-BR": "Traduttore Portoghese Brasiliano",
-        "zh-Hans": "Traduttore Cinesi",
-        "ro": "Traduttore Rumeno",
-        "fr": "Traduttore Francese",
-        "de": "Traduttore Tedesco",
-        "it": "Traduttore Italiano",
-        "ja": "Traduttore Giapponese",
+        "da": "Traduzione Danese",
+        "ru": "Traduzione Russa",
+        "kk": "Traduzione Kazaka",
+        "pt-BR": "Traduzione Portoghese Brasiliana",
+        "zh-Hans": "Traduzione Cinese",
+        "ro": "Traduzione Rumena",
+        "pl": "Traduzione Polacca",
+        "fr": "Traduzione Francese",
+        "de": "Traduzione Tedesca",
+        "it": "Traduzione Italiana",
+        "ja": "Traduzione Giapponese",
         "testing": "Test",
         "other": "Diversi Fan anonimi di Pokémon"
       }
