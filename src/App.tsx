@@ -16,7 +16,7 @@ import { ScreenOffense } from "./ScreenOffense";
 import { ScreenPokedex } from "./ScreenPokedex";
 import { ScreenPokedexHelp } from "./ScreenPokedexHelp";
 import { ScreenWeaknessCoverage } from "./ScreenWeaknessCoverage";
-import { PUBLIC_PATH } from "./settings";
+import { publicPath } from "./settings";
 import { useFetchJSON } from "./useFetchJSON";
 import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
@@ -97,7 +97,7 @@ export function App() {
   const themeAuto = isDarkMode ? "dark" : "light";
 
   // Load Pokédex JSON
-  const jsonURL = new URL("data-pkmn.json", PUBLIC_PATH).href;
+  const jsonURL = new URL("data-pkmn.json", publicPath).href;
   const allPokemonResponse = useFetchJSON<Pokemon[]>(jsonURL);
 
   // Fallback coverage types

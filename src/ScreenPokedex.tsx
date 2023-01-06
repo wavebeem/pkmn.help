@@ -13,6 +13,7 @@ import { Paginator } from "./Paginator";
 import { pickTranslation } from "./pickTranslation";
 import { Search } from "./Search";
 import { StatsTable } from "./StatsTable";
+import { useComputedLanguage } from "./useComputedLanguage";
 import { useLanguage } from "./useLanguage";
 import { useSearch } from "./useSearch";
 
@@ -67,7 +68,7 @@ interface MonsterProps {
 
 function Monster({ pokemon }: MonsterProps) {
   const { t, i18n } = useTranslation();
-  const [language] = useLanguage();
+  const language = useComputedLanguage();
   const [shiny, setShiny] = React.useState(false);
   const displayNumber = formatMonsterNumber(pokemon.number);
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
@@ -201,7 +202,7 @@ export function ScreenPokedex({
         if (types.length === 1) {
           return p.types[0] === types[0] || p.types[1] === types[0];
         }
-        if (types.length === 2 && types[1] === Type.NONE) {
+        if (types.length === 2 && types[1] === Type.none) {
           return p.types.length === 1 && p.types[0] === types[0];
         }
         return (

@@ -4,7 +4,7 @@ import { useMediaQuery } from "usehooks-ts";
 import { Pokemon, Type } from "./data-types";
 import { StatBar } from "./StatBar";
 
-const STAT_MAX = 255;
+const statMax = 255;
 
 export interface StatsTableProps {
   pokemon: Pokemon;
@@ -25,7 +25,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
         {t("pokedex.stats.hp")}
       </div>
       <div className="tr">{hp}</div>
-      <StatBar max={STAT_MAX} value={hp} type={Type.FIGHTING} />
+      <StatBar max={statMax} value={hp} type={Type.fighting} />
 
       <div
         className="b tl"
@@ -37,7 +37,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           : t("pokedex.stats.attack")}
       </div>
       <div className="tr">{attack}</div>
-      <StatBar max={STAT_MAX} value={attack} type={Type.FIRE} />
+      <StatBar max={statMax} value={attack} type={Type.fire} />
 
       <div
         className="b tl"
@@ -49,7 +49,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           : t("pokedex.stats.defense")}
       </div>
       <div className="tr">{defense}</div>
-      <StatBar max={STAT_MAX} value={defense} type={Type.ELECTRIC} />
+      <StatBar max={statMax} value={defense} type={Type.electric} />
 
       <div
         className="b tl"
@@ -63,7 +63,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           : t("pokedex.stats.specialAttack")}
       </div>
       <div className="tr">{spAttack}</div>
-      <StatBar max={STAT_MAX} value={spAttack} type={Type.GRASS} />
+      <StatBar max={statMax} value={spAttack} type={Type.grass} />
 
       <div
         className="b tl"
@@ -77,7 +77,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           : t("pokedex.stats.specialDefense")}
       </div>
       <div className="tr">{spDefense}</div>
-      <StatBar max={STAT_MAX} value={spDefense} type={Type.WATER} />
+      <StatBar max={statMax} value={spDefense} type={Type.water} />
 
       <div
         className="b tl"
@@ -89,7 +89,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           : t("pokedex.stats.speed")}
       </div>
       <div className="tr">{speed}</div>
-      <StatBar max={STAT_MAX} value={speed} type={Type.FAIRY} />
+      <StatBar max={statMax} value={speed} type={Type.fairy} />
 
       <div
         className="b tl"
