@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-01-06
+
+- Added Korean translation
+
 ## 2022-12-31
 
 - Fixed an issue where auto-detect language wasn't respected for Pokemon names (https://github.com/wavebeem/pkmn.help/issues/192)
