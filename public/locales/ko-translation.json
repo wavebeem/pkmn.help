@@ -8,16 +8,29 @@
   },
   "offense": {
     "chooseTypes": "타입 선택",
-    "weaknessCoverage": "효과적인 커버력입니다",
-    "weaknessCoverageEdit": "편집하다",
-    "weaknessCoverageEditLong": "효과적인 커버력입니다 편집",
-    "weaknessCoverageForms": "<formslink>형태</formslink>",
-    "weaknessNotFound": "이 약점을 가진 포켓몬은 존재하지 않는다",
-    "dealsXTo": "공격은 {{x}} 데미지"
-  },
-  "coverageList": {
-    "heading": "약점 목록",
-    "description": "이 포켓몬 형태는 다음 유형 중 적어도 하나에 약합니다:"
+    "dealsXTo": "공격은 {{x}} 데미지",
+    "coverage": {
+      "heading": "포켓몬 도감 커버리지",
+      "edit": "편집 목록",
+      "weakness": "약점",
+      "normal": "정상",
+      "resistance": "저항하다"
+    },
+    "coverageList": {
+      "empty": "포켓몬을 찾을 수 없거나 유형을 선택하지 않았습니다.",
+      "weakness": {
+        "heading": "약점 커버리지 목록",
+        "description": "이 포켓몬은 선택한 유형 중 적어도 하나에 약합니다."
+      },
+      "normal": {
+        "heading": "정상 유효성 적용 범위 목록",
+        "description": "이 포켓몬은 선택한 유형의 약점 또는 저항 목록에 없습니다."
+      },
+      "resistance": {
+        "heading": "저항 범위 목록",
+        "description": "이 포켓몬은 선택한 모든 유형에 내성이 있습니다."
+      }
+    }
   },
   "coverage": {
     "heading": "약점 목록",
@@ -56,7 +69,26 @@
     "chooseFirst": "첫 번째 유형 선택",
     "chooseSecond": "두 번째 유형 선택",
     "chooseThird": "세 번째 유형 선택",
-    "takesXFrom": "{{ x }} 피해를 입다"
+    "takesXFrom": "{{ x }} 피해를 입다",
+    "mode": { "heading": "모드 선택", "solo": "독주", "team": "팀" },
+    "team": {
+      "tableHeading": "매치업 카운트",
+      "heading": "포켓몬 팀 편집",
+      "add": "포켓몬 추가",
+      "empty": "선택한 포켓몬 없음",
+      "displayType": "테이블 형식",
+      "weak": "약점",
+      "resist": "저항하다",
+      "simple": "단순한",
+      "complex": "복잡한",
+      "type": "유형",
+      "save": "저장",
+      "saveLong": "{{ name }} 저장",
+      "edit": "편집하다",
+      "editLong": "{{ name }} 편집",
+      "remove": "제거하다",
+      "removeLong": "{{ name }}  제거"
+    }
   },
   "pokedex": {
     "search": {
@@ -65,9 +97,10 @@
       "helpLong": "도움말, 검색 포켓몬 도감",
       "notFound": "포켓몬을 찾을 수 없습니다"
     },
-    "bulbapedia": { "label": "{{ pokemon }}를 위한 Bulbapedia 웹페이지" },
+    "wiki": { "label": "{{ pokemon }} Bulbapedia 페이지" },
     "offense": { "label": "{{ pokemon }} 공격", "text": "공격" },
     "defense": { "label": "{{ pokemon }} 방어", "text": "방어" },
+    "shiny": { "label": "색이 다른 {{ pokemon }}", "text": "색이 다른" },
     "pagination": {
       "next": "다음",
       "nextLong": "다음",
@@ -132,6 +165,7 @@
       "heading": "조절",
       "language": {
         "label": "언어",
+        "default": "언어 자동 감지",
         "helpText": "언어 지원이 불완전합니다. 저에게 이메일을 보내주시면 번역 비용을 지불하겠습니다."
       },
       "theme": {
@@ -148,6 +182,10 @@
         "help": "포켓몬은 숲의 저주나 트릭 오어 트릿에 맞으면 잠시 동안 한 번에 세 가지 유형을 가질 수 있습니다. 세 번째 유형 필드는 거의 사용되지 않기 때문에 기본적으로 숨겨져 있습니다.",
         "values": { "2": "두 가지 유형(2)", "3": "세 가지 유형 (3)" }
       }
+    },
+    "changes": {
+      "heading": "새로운 기능",
+      "description": "<changelog>변경 로그</changelog> 에서 변경 사항 보기"
     },
     "help": {
       "heading": "도움",
@@ -166,18 +204,20 @@
     },
     "thanks": {
       "heading": "특별한 감사",
-      "credits": {
-        "vio": "Vio (브라질 포르투갈어 번역)",
-        "dragonify": "Dragonify (중국어 번역)",
-        "adamHayes": "Adam Hayes (루마니아어 번역)",
-        "drakoshen": "Drakoshen (프랑스어 번역)",
-        "azertor": "Azertor (프랑스어 번역)",
-        "kaishidow": "Kaishidow (프랑스어 번역)",
-        "cozzzy": "Cozzzy (독일어 번역)",
-        "luziferSenpai": "Luzifer Senpai (독일어 번역)",
-        "gabrieleGiugno": "Gabriele Giugno (이탈리아어 번역)",
-        "minamorl": "Minamorl (일본어 번역)",
-        "jansjo": "Jansjo (테스트 및 연구)",
+      "sections": {
+        "da": "덴마크어 번역",
+        "ru": "러시아어 번역",
+        "kk": "카자흐어 번역",
+        "pt-BR": "브라질 포르투갈어 번역",
+        "zh-Hans": "중국어 번역",
+        "ro": "루마니아어 번역",
+        "pl": "폴란드어 번역",
+        "fr": "프랑스어 번역",
+        "de": "독일어 번역",
+        "it": "이탈리아어 번역",
+        "ja": "일본어 번역",
+        "ko": "한국어 번역",
+        "testing": "테스트",
         "other": "여러 익명의 포켓몬 팬"
       }
     },
@@ -185,13 +225,7 @@
       "heading": "오픈 소스",
       "description": "소스 코드는 <github>GitHub</github>에서 확인할 수 있습니다."
     },
-    "legalInfo": {
-      "heading": "법률 정보",
-      "pokemon": "포켓몬 © 2002–{{ year }} 포켓몬. © 1995–{{ year }} Nintendo/Creatures Inc./GAME FREAK inc. ™, ® 및 Pokémon 캐릭터 이름은 Nintendo의 상표입니다.",
-      "dontSueMe": "이 페이지에서 포켓몬 콘텐츠를 사용하는 데 저작권이나 상표권을 침해하려는 의도가 없습니다.",
-      "pokeAPI": "<pokeapi>PokéAPI</pokeapi>의 포켓몬 도감 데이터.",
-      "wavebeem": "pkmn.help © 2013–{{ year }} <wavebeem>Brian Mock</wavebeem>."
-    }
+    "legalInfo": { "heading": "법률 정보" }
   },
   "types": {
     "normal": "노말",
@@ -217,11 +251,8 @@
   "banners": {
     "updateReady": {
       "description": "업데이트를 사용할 수 있습니다",
+      "whatsNew": "새로운 기능",
       "update": "업데이트"
-    },
-    "offlineReady": {
-      "description": "지금 오프라인 모드를 사용할 수 있습니다",
-      "dismiss": "해고하다"
     }
   },
   "general": { "loading": "기다리세요..." },
