@@ -12,6 +12,7 @@ module.exports = {
     "plugin:react-hooks/recommended",
   ],
   rules: {
+    "no-console": "warn",
     "react/prop-types": "off",
     "@typescript-eslint/no-explicit-any": "off",
     // TODO: I would like to enable this rule eventually

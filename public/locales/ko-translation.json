@@ -1,0 +1,268 @@
+{
+  "title": "포켓몬 타입 계산기",
+  "navigation": {
+    "offense": "공격",
+    "defense": "방어",
+    "pokedex": "포켓몬 도감",
+    "more": "더"
+  },
+  "offense": {
+    "chooseTypes": "타입 선택",
+    "dealsXTo": "공격은 {{x}} 데미지",
+    "coverage": {
+      "heading": "포켓몬 도감 커버리지",
+      "edit": "편집 목록",
+      "weakness": "약점",
+      "normal": "정상",
+      "resistance": "저항하다"
+    },
+    "coverageList": {
+      "empty": "포켓몬을 찾을 수 없거나 유형을 선택하지 않았습니다.",
+      "weakness": {
+        "heading": "약점 커버리지 목록",
+        "description": "이 포켓몬은 선택한 유형 중 적어도 하나에 약합니다."
+      },
+      "normal": {
+        "heading": "정상 유효성 적용 범위 목록",
+        "description": "이 포켓몬은 선택한 유형의 약점 또는 저항 목록에 없습니다."
+      },
+      "resistance": {
+        "heading": "저항 범위 목록",
+        "description": "이 포켓몬은 선택한 모든 유형에 내성이 있습니다."
+      }
+    }
+  },
+  "coverage": {
+    "heading": "약점 목록",
+    "paragraph1": "사용자 정의 포켓몬 도감 CSV 파일을 가져오거나 내보내서 다른 포켓몬의 약점 범위를 확인합니다. OU 등급 포켓몬만으로 사용자 지정 CSV 파일을 만들거나 처음부터 나만의 포켓몬을 만들 수도 있습니다.",
+    "paragraph2": "CSV 데이터는 열 순서가 아닌 열 머리글 이름으로 로드되므로 원하는 경우 열을 추가하거나 재정렬할 수 있습니다(예: \"계층\" 열 또는 \"메모\" 열 추가).",
+    "paragraph3": "CSV 파일은 Google 스프레드시트, Microsoft Excel, OpenOffice, LibreOffice, 메모장 등으로 편집할 수 있습니다.",
+    "csvHeaders": {
+      "number": "숫자",
+      "name": "이름",
+      "type1": "첫 번째 타입",
+      "type2": "두 번째 타입",
+      "type3": "세 번째 타입"
+    },
+    "export": {
+      "button": "내보내다",
+      "description": "기본 포켓몬 도감을 CSV 파일로 내보내기"
+    },
+    "import": {
+      "button": "수입하다",
+      "description": "편집한 포켓몬 도감 CSV 파일 가져오기"
+    },
+    "reset": {
+      "button": "초기화",
+      "description": "기본 포켓몬 도감으로 재설정"
+    },
+    "filename": "pkmn.help type coverage.csv",
+    "status": {
+      "imported": "\"{{ file }}\" 에서 가져온 {{ n }} 포켓몬 양식",
+      "exported": "내보낸 기본 포켓몬 양식",
+      "reset": "로드된 기본 포켓몬 양식",
+      "errored": "CSV를 로드하는 중에 오류가 발생했습니다. 헤더 이름을 변경하지 마십시오."
+    },
+    "back": "공격으로 돌아가기"
+  },
+  "defense": {
+    "chooseFirst": "첫 번째 유형 선택",
+    "chooseSecond": "두 번째 유형 선택",
+    "chooseThird": "세 번째 유형 선택",
+    "takesXFrom": "{{ x }} 피해를 입다",
+    "mode": { "heading": "모드 선택", "solo": "독주", "team": "팀" },
+    "team": {
+      "tableHeading": "매치업 카운트",
+      "heading": "포켓몬 팀 편집",
+      "add": "포켓몬 추가",
+      "empty": "선택한 포켓몬 없음",
+      "displayType": "테이블 형식",
+      "weak": "약점",
+      "resist": "저항하다",
+      "simple": "단순한",
+      "complex": "복잡한",
+      "type": "유형",
+      "save": "저장",
+      "saveLong": "{{ name }} 저장",
+      "edit": "편집하다",
+      "editLong": "{{ name }} 편집",
+      "remove": "제거하다",
+      "removeLong": "{{ name }}  제거"
+    }
+  },
+  "pokedex": {
+    "search": {
+      "description": "이름, 번호 또는 유형으로 검색",
+      "help": "도움",
+      "helpLong": "도움말, 검색 포켓몬 도감",
+      "notFound": "포켓몬을 찾을 수 없습니다"
+    },
+    "wiki": { "label": "{{ pokemon }} Bulbapedia 페이지" },
+    "offense": { "label": "{{ pokemon }} 공격", "text": "공격" },
+    "defense": { "label": "{{ pokemon }} 방어", "text": "방어" },
+    "shiny": { "label": "색이 다른 {{ pokemon }}", "text": "색이 다른" },
+    "pagination": {
+      "next": "다음",
+      "nextLong": "다음",
+      "previous": "이전",
+      "previousLong": "이전",
+      "firstLong": "첫 번째",
+      "lastLong": "마지막"
+    },
+    "stats": {
+      "hp": "HP",
+      "hpLong": "히트 포인트",
+      "attack": "공격",
+      "attackLong": "공격",
+      "defense": "방어",
+      "defenseLong": "방어",
+      "specialAttack": "특수공격",
+      "specialAttackLong": "특수공격",
+      "specialDefense": "특수방어",
+      "specialDefenseLong": "특수방어",
+      "speed": "스피드",
+      "speedLong": "스피드",
+      "total": "총합",
+      "totalLong": "총합"
+    }
+  },
+  "pokedexHelp": {
+    "searchByName": {
+      "heading": "이름으로 검색",
+      "description": "이름으로 포켓몬을 검색할 수 있습니다. 포켓몬 이름의 일부만 기억하더라도 찾을 수 있습니다. 하지만 지금은 맞춤법 오류를 처리할 수 없습니다."
+    },
+    "searchByNumber": {
+      "heading": "번호로 검색",
+      "description": "전국 포켓몬 도감 번호로 검색하세요. 이상해씨를 원하시면 #001이 아닌 1을 입력하세요."
+    },
+    "searchByType": {
+      "heading": "유형별 검색",
+      "description": "다음은 유형별로 검색하는 방법에 대한 몇 가지 예입니다."
+    },
+    "searchExamples": {
+      "type": {
+        "query": "불꽃",
+        "description": "파이리, 리자몽, 로토무 등 어떤 형태로든 불을 가진 포켓몬을 찾습니다."
+      },
+      "doubleType": {
+        "query": "물 비행",
+        "description": "물/비행(예: 갸라도스) 또는 비행/물(예: 윽우지) 포켓몬을 검색합니다."
+      },
+      "singleType": {
+        "query": "풀 없음",
+        "description": "2형이 아닌 풀형 포켓몬을 찾으세요(예: 덩쿠리, 치코리타, 드레디어)."
+      }
+    },
+    "back": "포켓몬 백과사전으로 돌아가기"
+  },
+  "more": {
+    "contact": {
+      "heading": "저에게 연락",
+      "intro": "안녕하세요, 저는 <homepage>Brian</homepage> (그들/그들의) 이고 Pokémon Type Calculator (pkmn.help)를 만들었습니다.",
+      "email": "<email>pkmn@wavebeem.com</email> 으로 귀하의 생각과 감사를 이메일로 보내주십시오."
+    },
+    "settings": {
+      "heading": "조절",
+      "language": {
+        "label": "언어",
+        "default": "언어 자동 감지",
+        "helpText": "언어 지원이 불완전합니다. 저에게 이메일을 보내주시면 번역 비용을 지불하겠습니다."
+      },
+      "theme": {
+        "label": "디스플레이",
+        "help": "\"시스템 기본값\" 은 운영 체제 설정에 따라 자동으로 변경됩니다.",
+        "values": {
+          "auto": "시스템 기본값",
+          "light": "라이트 모드",
+          "dark": "다크 모드"
+        }
+      },
+      "typeCount": {
+        "label": "타입의 수",
+        "help": "포켓몬은 숲의 저주나 트릭 오어 트릿에 맞으면 잠시 동안 한 번에 세 가지 유형을 가질 수 있습니다. 세 번째 유형 필드는 거의 사용되지 않기 때문에 기본적으로 숨겨져 있습니다.",
+        "values": { "2": "두 가지 유형(2)", "3": "세 가지 유형 (3)" }
+      }
+    },
+    "changes": {
+      "heading": "새로운 기능",
+      "description": "<changelog>변경 로그</changelog> 에서 변경 사항 보기"
+    },
+    "help": {
+      "heading": "도움",
+      "serviceWorker": {
+        "description": "이 버튼은 앱의 문제를 해결하는 데 도움이 될 수 있습니다.",
+        "button": "초기화"
+      }
+    },
+    "privacy": {
+      "heading": "개인정보 보호정책",
+      "description": "절대 광고를 게재하거나 개인정보를 도용하지 않겠습니다. 저는 <plausible>Plausible Analytics</plausible>를 사용합니다. 이 분석은 유럽 연합에서 자체적으로 자금을 조달하고 독립적이며 귀하의 컴퓨터에 쿠키를 저장하지 않습니다."
+    },
+    "givingBack": {
+      "heading": "감사를 표시",
+      "description": "저는 이 사이트를 개선하는 데 수많은 시간을 보냈습니다. 내가 만든 것에 감사한다면 흑인과 원주민 및 트랜스젠더 권리를 지원하는 자선 단체에 기부하는 것을 고려해 주세요."
+    },
+    "thanks": {
+      "heading": "특별한 감사",
+      "sections": {
+        "da": "덴마크어 번역",
+        "ru": "러시아어 번역",
+        "kk": "카자흐어 번역",
+        "pt-BR": "브라질 포르투갈어 번역",
+        "zh-Hans": "중국어 번역",
+        "ro": "루마니아어 번역",
+        "pl": "폴란드어 번역",
+        "fr": "프랑스어 번역",
+        "de": "독일어 번역",
+        "it": "이탈리아어 번역",
+        "ja": "일본어 번역",
+        "ko": "한국어 번역",
+        "testing": "테스트",
+        "other": "여러 익명의 포켓몬 팬"
+      }
+    },
+    "openSource": {
+      "heading": "오픈 소스",
+      "description": "소스 코드는 <github>GitHub</github>에서 확인할 수 있습니다."
+    },
+    "legalInfo": { "heading": "법률 정보" }
+  },
+  "types": {
+    "normal": "노말",
+    "fighting": "격투",
+    "flying": "비행",
+    "poison": "독",
+    "ground": "땅",
+    "rock": "바위",
+    "bug": "벌레",
+    "ghost": "고스트",
+    "steel": "강철",
+    "fire": "불꽃",
+    "water": "물",
+    "grass": "풀",
+    "electric": "전기",
+    "psychic": "에스퍼",
+    "ice": "얼음",
+    "dragon": "드래곤",
+    "dark": "악",
+    "fairy": "페어리",
+    "none": "없음"
+  },
+  "banners": {
+    "updateReady": {
+      "description": "업데이트를 사용할 수 있습니다",
+      "whatsNew": "새로운 기능",
+      "update": "업데이트"
+    }
+  },
+  "general": { "loading": "기다리세요..." },
+  "games": {
+    "label": "세대",
+    "help": "다양한 게임 세대의 유형 효율성 사용",
+    "byID": {
+      "gen1": "1세대",
+      "gen2": "2~5세대",
+      "default": "오토매틱 (6+세대)"
+    }
+  }
+}
