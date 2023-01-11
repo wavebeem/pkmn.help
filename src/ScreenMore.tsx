@@ -153,6 +153,7 @@ export function ScreenMore({
             if (isGeneration(value)) {
               setGeneration(value);
             } else {
+              // eslint-disable-next-line no-console
               console.error("not a generation:", value);
             }
           }}

@@ -5,7 +5,7 @@ interface UpdateSW {
   lastUpdateCheck: number;
 }
 
-const checkInterval = 10 * 60 * 1000;
+const checkInterval = 4 * 60 * 60 * 1000;
 
 export function useUpdateSW(): UpdateSW {
   const [state, setState] = React.useState<UpdateSW>({
@@ -20,8 +20,8 @@ export function useUpdateSW(): UpdateSW {
       if (document.hidden) {
         return;
       }
-      const date = new Date();
-      if (date.valueOf() - state.lastUpdateCheck < checkInterval) {
+      const date = Date.now();
+      if (date - state.lastUpdateCheck < checkInterval) {
         return;
       }
       const reg = await navigator.serviceWorker.getRegistration();
@@ -29,15 +29,16 @@ export function useUpdateSW(): UpdateSW {
         try {
           setState({
             type: "updating",
-            lastUpdateCheck: date.valueOf(),
+            lastUpdateCheck: date,
           });
           await reg.update();
         } catch (err) {
+          // eslint-disable-next-line no-console
           console.error(err);
         } finally {
           setState({
             type: "pending",
-            lastUpdateCheck: date.valueOf(),
+            lastUpdateCheck: date,
           });
         }
       }

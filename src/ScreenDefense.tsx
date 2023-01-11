@@ -78,7 +78,6 @@ export function ScreenDefense({
         return teamTypes;
       }
       return search.getAll("team_types").map((t) => {
-        console.log({ t });
         return typesFromString(t).slice(0, Number(typeCount));
       });
     })(),
