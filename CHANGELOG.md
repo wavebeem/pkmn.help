@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-02-15
+
+- Updated Korean translation
+
 ## 2023-01-06
 
 - Added Korean translation
