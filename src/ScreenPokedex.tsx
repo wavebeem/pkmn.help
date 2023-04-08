@@ -270,6 +270,7 @@ export function ScreenPokedex({
             <p className="fg4 f4 b tc m0">{t("pokedex.search.notFound")}</p>
           }
           items={pkmn}
+          renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
           renderPage={(page) =>
             page.map((pokemon) => (
               <Monster key={pokemon.id} pokemon={pokemon} />
