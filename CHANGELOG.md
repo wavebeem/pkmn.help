@@ -1,5 +1,10 @@
 # Changelog
 
+## 2023-04-08
+
+- Fixed an issue where browser default font sizes larger than 16 pixels could cause buttons to be cut off
+- Fixed Danish capitalization of "Flyvende"
+
 ## 2023-01-06
 
 - Added Korean translation
