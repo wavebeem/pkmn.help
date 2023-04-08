@@ -1,5 +1,11 @@
 # Changelog
 
+## 2023-04-08
+
+- Fixed layout issues for browser default font sizes greater than 16px
+- Improved pagination to show first and last Pokemon numbers in addition to page numbers
+- Fixed Danish capitalization of "Flyvende"
+
 ## 2023-01-06
 
 - Added Korean translation

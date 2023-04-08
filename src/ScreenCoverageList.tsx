@@ -72,6 +72,7 @@ export function ScreenCoverageList({
           <p className="fg4 f4 b tc mv4">{t("offense.coverageList.empty")}</p>
         }
         items={items}
+        renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
         renderPage={(items) => {
           return (
             <ul className="list pa0 border3 bt">
