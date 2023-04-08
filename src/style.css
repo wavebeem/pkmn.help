@@ -52,7 +52,7 @@
   --color-scroll-bg: hsl(220 20% 30%);
 }
 
-/* Adjust for better grid sizes with different lengthtranslations */
+/* Adjust for better grid sizes with different length translations */
 :root[lang="ja"],
 :root[lang="it"],
 :root[lang="da"] {
@@ -347,7 +347,7 @@ button {
   grid-area: stats;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 40em) {
   .ButtonGrid {
     grid-template-columns: 1fr 4fr;
   }
@@ -361,7 +361,7 @@ button {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 60em) {
   .Monster {
     grid-template-columns: 220px 1fr;
     grid-template-areas:

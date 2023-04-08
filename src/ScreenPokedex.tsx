@@ -14,13 +14,12 @@ import { pickTranslation } from "./pickTranslation";
 import { Search } from "./Search";
 import { StatsTable } from "./StatsTable";
 import { useComputedLanguage } from "./useComputedLanguage";
-import { useLanguage } from "./useLanguage";
 import { useSearch } from "./useSearch";
 
 const nbsp = "\u00a0";
 
 function getWikiLink(lang: string, pkmn: Pokemon): string {
-  const name = pickTranslation(pkmn.speciesNames, lang);
+  const name = encodeURIComponent(pickTranslation(pkmn.speciesNames, lang));
   switch (lang) {
     default:
     case "en":
