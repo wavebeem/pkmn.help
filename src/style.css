@@ -21,7 +21,7 @@
   --color-vibrant-border1: hsl(0 0% 0% / 0.6);
   --color-scroll-fg: hsl(0 0% 40%);
   --color-scroll-bg: hsl(0 0% 90%);
-  --type-min-width: 10ch;
+  --type-min-width: 12ch;
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
   overflow-y: scroll;
 }
@@ -203,9 +203,9 @@
 }
 
 .MatchupsSection-Container {
-  --gap: 0.25rem;
-  /* Approximate max of 4 types per line */
-  max-width: calc(4 * var(--type-min-width) + 4 * 4ch + 2 * 4 * var(--gap));
+  display: grid;
+  gap: 0.25rem;
+  grid-template-columns: repeat(auto-fit, var(--type-min-width));
 }
 
 .MatchupsSection-Container > * {

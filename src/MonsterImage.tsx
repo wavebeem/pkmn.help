@@ -44,7 +44,7 @@ export function MonsterImage({
         alt=""
         className={classNames("db img-shadow h-auto", {
           "o-0": state === "errored",
-          "img-crisp": imageType==="sprite"
+          "img-crisp": imageType === "sprite",
         })}
         width={96 * scale}
         height={96 * scale}

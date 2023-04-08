@@ -2,9 +2,9 @@
 
 ## 2023-04-08
 
-- Fixed an issue where browser default font sizes larger than 16 pixels could cause buttons to be cut off
-- Fixed Danish capitalization of "Flyvende"
+- Fixed layout issues for browser default font sizes greater than 16px
 - Improved pagination to show first and last Pokemon numbers in addition to page numbers
+- Fixed Danish capitalization of "Flyvende"
 
 ## 2023-01-06
 

@@ -31,8 +31,8 @@ function PageSelector<T>({
 }: PageSelectorProps<T>) {
   const { t } = useTranslation();
 
-  const hasRoomForMediumButtons = useMediaQuery("(min-width: 56ch)");
-  const hasRoomForLargeButtons = useMediaQuery("(min-width: 75ch");
+  const hasRoomForMediumButtons = useMediaQuery("(min-width: 45ch)");
+  const hasRoomForLargeButtons = useMediaQuery("(min-width: 60ch");
 
   const buttonSize = hasRoomForLargeButtons
     ? "large"
