@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-04-09
+
+- Fixed a bug where search queries with zero results crashed the page
+
 ## 2023-04-08
 
 - Fixed layout issues for browser default font sizes greater than 16px

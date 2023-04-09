@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 import { resetApp } from "./resetApp";
+import { sleep } from "./sleep";
 
 interface ScreenErrorProps {
   error: Error;
@@ -21,15 +22,16 @@ ${error.name}: ${error.message}
 ${location.href}
 
 ${navigator.userAgent}
+
+${JSON.stringify(localStorage)}
 `.trim();
 
   async function copyMessage() {
     try {
       await navigator.clipboard.writeText(message);
       setClickMessage("Copied!");
-      setTimeout(() => {
-        setClickMessage("");
-      }, 2000);
+      await sleep(2000);
+      setClickMessage("");
     } catch (err) {
       setClickMessage("Failed to copy message");
     }
@@ -53,7 +55,9 @@ ${navigator.userAgent}
         <button type="button" onClick={copyMessage} className={buttonClasses}>
           Copy error message
         </button>
-        <span className="f5 fg3">{clickMessage}</span>
+        <span hidden={!clickMessage} className="f5 fg3 bg3 br2 pv1 ph3">
+          {clickMessage}
+        </span>
       </div>
       <p>If the problem persists, you can try resetting the page:</p>
       <button type="button" onClick={resetApp} className={buttonClasses}>

@@ -12,7 +12,7 @@ import { LinkButton } from "./LinkButton";
 
 interface PageSelectorProps<T> {
   numPages: number;
-  pageItems: any[];
+  pageItems: T[];
   currentPage: number;
   urlForPage: (page: number) => string;
   hasPrev: boolean;
@@ -40,22 +40,27 @@ function PageSelector<T>({
     ? "medium"
     : "small";
 
+  const first = pageItems[0] || undefined;
+  const last = pageItems[pageItems.length - 1] || undefined;
+
   return (
     <>
-      <div className="flex mt3 tabular-nums f5 b">
-        <div className="flex-auto">
-          {renderID(pageItems[0])} &ndash;{" "}
-          {renderID(pageItems[pageItems.length - 1])}
+      {first && last && (
+        <div className="flex mt3 tabular-nums f5 b">
+          <div className="flex-auto">
+            {renderID(first)} &ndash; {renderID(last)}
+          </div>
+
+          <div>
+            (
+            {(currentPage + 1)
+              .toString()
+              .padStart(numPages.toString().length, "0")}
+            {" / "}
+            {numPages})
+          </div>
         </div>
-        <div>
-          (
-          {(currentPage + 1)
-            .toString()
-            .padStart(numPages.toString().length, "0")}
-          {" / "}
-          {numPages})
-        </div>
-      </div>
+      )}
 
       <div
         className={classNames(
