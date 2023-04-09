@@ -15,6 +15,28 @@ const buttonClasses = classNames(
 );
 
 export function ScreenError({ error }: ScreenErrorProps) {
+  const message = `
+${error.name}: ${error.message}
+
+${location.href}
+
+${navigator.userAgent}
+`.trim();
+
+  async function copyMessage() {
+    try {
+      await navigator.clipboard.writeText(message);
+      setClickMessage("Copied!");
+      setTimeout(() => {
+        setClickMessage("");
+      }, 2000);
+    } catch (err) {
+      setClickMessage("Failed to copy message");
+    }
+  }
+
+  const [clickMessage, setClickMessage] = React.useState("");
+
   return (
     <div className="sans-serif ph4 content-narrow f4 center fg2 lh-copy">
       <h1>pkmn.help: Error</h1>
@@ -26,9 +48,13 @@ export function ScreenError({ error }: ScreenErrorProps) {
         describing how to reproduce this error, and include the following error
         message:
       </p>
-      <pre className="f5 bg1 pa2 br2 ba border2 overflow-x-auto">
-        {error.message}
-      </pre>
+      <pre className="f5 bg1 pa2 br2 ba border2 pre-wrap">{message} </pre>
+      <div className="flex flex-wrap gap3 items-center">
+        <button type="button" onClick={copyMessage} className={buttonClasses}>
+          Copy error message
+        </button>
+        <span className="f5 fg3">{clickMessage}</span>
+      </div>
       <p>If the problem persists, you can try resetting the page:</p>
       <button type="button" onClick={resetApp} className={buttonClasses}>
         Reset

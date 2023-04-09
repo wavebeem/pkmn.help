@@ -156,6 +156,10 @@
   gap: 0.25rem;
 }
 
+.pre-wrap {
+  white-space: pre-wrap;
+}
+
 .fill-currentColor {
   fill: currentColor;
 }
