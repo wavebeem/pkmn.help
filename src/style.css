@@ -52,18 +52,6 @@
   --color-scroll-bg: hsl(220 20% 30%);
 }
 
-/* Adjust for better grid sizes with different length translations */
-:root[lang="ja"],
-:root[lang="it"],
-:root[lang="da"] {
-  --type-min-width: 11ch;
-}
-
-:root[lang="ru"],
-:root[lang="pl"] {
-  --type-min-width: 12ch;
-}
-
 [hidden] {
   display: none;
 }
@@ -210,10 +198,6 @@
   display: grid;
   gap: 0.25rem;
   grid-template-columns: repeat(auto-fit, var(--type-min-width));
-}
-
-.MatchupsSection-Container > * {
-  min-width: var(--type-min-width);
 }
 
 .MultiTypeSelector-Container,

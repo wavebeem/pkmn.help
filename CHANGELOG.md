@@ -4,6 +4,7 @@
 
 - Added Iron Leaves and Walking Wake
 - Maushold's sprite is now Maushold-4 not Maushold-3
+- Fixed a layout bug for the type grid in matchups
 
 ## 2023-04-09
 
