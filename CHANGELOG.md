@@ -1,5 +1,10 @@
 # Changelog
 
+## 2023-04-11
+
+- Added Iron Leaves and Walking Wake
+- Maushold's sprite is now Maushold-4 not Maushold-3
+
 ## 2023-04-09
 
 - Fixed a bug where search queries with zero results crashed the page
