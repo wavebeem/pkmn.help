@@ -36275,11 +36275,11 @@
       "en": "Maushold"
     },
     "formNames": {
-      "en": "Family of Three"
+      "en": "Family of Four"
     },
     "number": 925,
-    "spriteURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/maushold-family3.png",
-    "form": "Family of Three",
+    "spriteURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/maushold-family4.png",
+    "form": "Family of Four",
     "types": [
       "normal"
     ],
@@ -37447,9 +37447,12 @@
     "speciesNames": {
       "en": "Tatsugiri"
     },
-    "formNames": {},
+    "formNames": {
+      "en": "Curly Form"
+    },
     "number": 978,
-    "spriteURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tatsugiri.png",
+    "spriteURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/tatsugiri-curly.png",
+    "form": "Curly Form",
     "types": [
       "dragon",
       "water"
@@ -38151,5 +38154,49 @@
     "speed": 135,
     "imageType": "hd",
     "id": "1008"
+  },
+  {
+    "name": "Walking Wake",
+    "speciesNames": {
+      "en": "Walking Wake"
+    },
+    "formNames": {},
+    "number": 1009,
+    "spriteURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/walking-wake.png",
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "total": 590,
+    "hp": 99,
+    "attack": 83,
+    "defense": 91,
+    "spAttack": 125,
+    "spDefense": 83,
+    "speed": 109,
+    "imageType": "hd",
+    "id": "1009"
+  },
+  {
+    "name": "Iron Leaves",
+    "speciesNames": {
+      "en": "Iron Leaves"
+    },
+    "formNames": {},
+    "number": 1010,
+    "spriteURL": "https://img.pokemondb.net/sprites/scarlet-violet/icon/iron-leaves.png",
+    "types": [
+      "grass",
+      "psychic"
+    ],
+    "total": 590,
+    "hp": 90,
+    "attack": 130,
+    "defense": 88,
+    "spAttack": 70,
+    "spDefense": 108,
+    "speed": 104,
+    "imageType": "hd",
+    "id": "1010"
   }
 ]
