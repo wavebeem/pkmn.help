@@ -19,11 +19,11 @@ import { useSearch } from "./useSearch";
 const nbsp = "\u00a0";
 
 function getWikiLink(lang: string, pkmn: Pokemon): string {
-  const name = encodeURIComponent(pickTranslation(pkmn.speciesNames, lang));
+  const name = encodeURIComponent(pickTranslation(pkmn.speciesNames, lang).replace(/ /g,"_"));
   switch (lang) {
     default:
     case "en":
-      return `https://bulbapedia.bulbagarden.net/wiki/${name}`;
+      return `https://bulbapedia.bulbagarden.net/wiki/${name}_(Pokémon)`;
     case "de":
       return `https://www.pokewiki.de/${name}`;
     case "es":
