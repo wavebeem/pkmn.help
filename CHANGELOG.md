@@ -3,9 +3,13 @@
 ## 2023-04-11
 
 - Added Iron Leaves and Walking Wake
-- Maushold's sprite is now Maushold-4 not Maushold-3
+- Maushold's sprite is now Maushold (4) not Maushold (3)
 - Fixed a layout bug for the type grid in matchups
 - Better fill available space with grid layouts
+  - Some languages have longer words for types and will not fit as many columns
+    on screen
+- Updated to Scarlet/Violet color palette for types
+- Increased scrollbar contrast in Firefox
 
 ## 2023-04-09
 
