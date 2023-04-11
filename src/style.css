@@ -197,14 +197,14 @@
 .MatchupsSection-Container {
   display: grid;
   gap: 0.25rem;
-  grid-template-columns: repeat(auto-fit, var(--type-min-width));
+  grid-template-columns: repeat(auto-fill, minmax(var(--type-min-width), 1fr));
 }
 
 .MultiTypeSelector-Container,
 .TypeSelector-Container {
   grid-template-columns: repeat(
-    auto-fit,
-    minmax(calc(var(--type-min-width) + 2ch), 1fr)
+    auto-fill,
+    minmax(calc(var(--type-min-width) + 2rem), 1fr)
   );
 }
 
