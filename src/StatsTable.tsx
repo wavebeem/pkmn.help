@@ -25,7 +25,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
         {t("pokedex.stats.hp")}
       </div>
       <div className="tr">{hp}</div>
-      <StatBar max={statMax} value={hp} type={Type.fighting} />
+      <StatBar max={statMax} value={hp} type={Type.fire} />
 
       <div
         className="b tl"
@@ -37,7 +37,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           : t("pokedex.stats.attack")}
       </div>
       <div className="tr">{attack}</div>
-      <StatBar max={statMax} value={attack} type={Type.fire} />
+      <StatBar max={statMax} value={attack} type={Type.fighting} />
 
       <div
         className="b tl"

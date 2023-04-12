@@ -11,6 +11,8 @@
     on screen
 - Updated to Scarlet/Violet color palette for types
 - Increased scrollbar contrast in Firefox
+- Tweaked header color in dark mode
+- Fixed rainbow colors for types to be in the right order
 
 ## 2023-04-09
 
