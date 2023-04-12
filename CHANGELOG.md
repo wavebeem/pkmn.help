@@ -5,6 +5,7 @@
 - Added Iron Leaves and Walking Wake
 - Maushold's sprite is now Maushold (4) not Maushold (3)
 - Fixed a layout bug for the type grid in matchups
+- Fixed wiki links for names with spaces ([@kittenchilly](https://github.com/kittenchilly))
 - Better fill available space with grid layouts
   - Some languages have longer words for types and will not fit as many columns
     on screen
