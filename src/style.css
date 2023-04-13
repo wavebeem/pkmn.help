@@ -21,9 +21,14 @@
   --color-vibrant-border1: hsl(0 0% 0% / 0.6);
   --color-scroll-fg: hsl(0 0% 20%);
   --color-scroll-bg: hsl(0 0% 90%);
-  --type-min-width: 9ch;
+  --type-min-width: 5rem;
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
   overflow-y: scroll;
+}
+
+:root[lang="pl"],
+:root[lang="ru"] {
+  --type-min-width: 8rem;
 }
 
 :root[data-theme="dark"],

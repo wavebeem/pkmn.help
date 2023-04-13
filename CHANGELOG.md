@@ -1,5 +1,14 @@
 # Changelog
 
+## 2023-04-12
+
+- OK, hopefully this is the last grid layout update for a while
+  - Getting the grid sizing to look good on Windows + macOS in 14 languages
+    while supporting custom font sizes is quite challenging
+  - Now every language except Polish and Russian can fit 4 columns of types on a
+    desktop monitor
+    - Polish and Russian only fit 3, sorry
+
 ## 2023-04-11
 
 - Added Iron Leaves and Walking Wake
