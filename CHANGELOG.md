@@ -1,5 +1,11 @@
 # Changelog
 
+## 2023-04-14
+
+- Checkboxes on the Offense page type selector are now filled with "X" when
+  checked rather than a square, to make them look more different from the radio
+  buttons on the Defense page
+
 ## 2023-04-12
 
 - OK, hopefully this is the last grid layout update for a while
