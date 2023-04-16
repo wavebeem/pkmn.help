@@ -56,15 +56,10 @@
       "helpLong": "帮助，搜索图鉴",
       "notFound": "未找到相符宝可梦"
     },
-    "wiki": {
-      "label": "{{ pokemon }} 的神奇宝贝百科页面"
-    },
     "offense": {
-      "label": "{{ pokemon }} 为攻击方",
       "text": "攻击方"
     },
     "defense": {
-      "label": "{{ pokemon }} 为防御方",
       "text": "防御方"
     },
     "pagination": {

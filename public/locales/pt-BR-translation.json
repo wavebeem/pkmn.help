@@ -79,15 +79,10 @@
       "helpLong": "Ajuda, procurar na Pokédex",
       "notFound": "Nenhum Pokémon encontrado"
     },
-    "wiki": {
-      "label": "Página no Bulbapedia para {{ pokemon }}"
-    },
     "offense": {
-      "label": "Ataque para {{ pokemon }}",
       "text": "Ataque"
     },
     "defense": {
-      "label": "Defesa para {{ pokemon }}",
       "text": "Defesa"
     },
     "pagination": {

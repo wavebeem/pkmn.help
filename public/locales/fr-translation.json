@@ -65,13 +65,11 @@
     "chooseSecond": "Choisir le second type",
     "chooseThird": "Choisir le troisème type",
     "takesXFrom": "Subit {{ x }} De",
-
     "mode": {
       "heading": "Sélection du mode",
       "solo": "Pokémon",
       "team": "Équipe"
     },
-
     "team": {
       "tableHeading": "Nombre de match-ups",
       "heading": "Modifier l'équipe Pokémon",
@@ -98,15 +96,10 @@
       "helpLong": "Aide, recherche Pokédex",
       "notFound": "Aucun pokémon trouvé"
     },
-    "wiki": {
-      "label": "Page Poképédia pour {{ pokemon }}"
-    },
     "offense": {
-      "label": "Couverture offensive pour {{ pokemon }}",
       "text": "Offense"
     },
     "defense": {
-      "label": "Couverture défensive pour {{ pokemon }}",
       "text": "Défense"
     },
     "pagination": {

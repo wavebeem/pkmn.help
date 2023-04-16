@@ -56,15 +56,10 @@
       "helpLong": "Ayuda, buscar en la Pokédex",
       "notFound": "No se encontró el Pokémon"
     },
-    "wiki": {
-      "label": "Página en WikiDex de {{ pokemon }}"
-    },
     "offense": {
-      "label": "Ataque de {{ pokemon }}",
       "text": "Ataque"
     },
     "defense": {
-      "label": "Defensa de {{ pokemon }}",
       "text": "Defensa"
     },
     "pagination": {

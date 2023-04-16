@@ -101,15 +101,10 @@
       "helpLong": "Help, search Pokédex",
       "notFound": "No Pokémon found"
     },
-    "wiki": {
-      "label": "Bulbapedia page for {{ pokemon }}"
-    },
     "offense": {
-      "label": "Offense for {{ pokemon }}",
       "text": "Offense"
     },
     "defense": {
-      "label": "Defense for {{ pokemon }}",
       "text": "Defense"
     },
     "shiny": {

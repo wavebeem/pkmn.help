@@ -56,15 +56,10 @@
       "helpLong": "Ajutor, cauta în Pokedex",
       "notFound": "Nici un Pokémon gasit"
     },
-    "wiki": {
-      "label": "Pagina de Bulbapedia pentru {{ pokemon }}"
-    },
     "offense": {
-      "label": "Atac pentru {{ pokemon }}",
       "text": "Atac"
     },
     "defense": {
-      "label": "Aparare pentru {{ pokemon }}",
       "text": "Aparare"
     },
     "pagination": {
