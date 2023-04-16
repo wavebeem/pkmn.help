@@ -34,6 +34,7 @@ async function main(): Promise<void> {
       const img = await fetchBuffer(item.shinySpriteURL);
       fs.writeFileSync(shinyImgFilename, img);
     }
+    item.hasShiny = Boolean(item.shinySpriteURL);
     delete item.shinySpriteURL;
   }
   saveJSON(DATA_DEST, list);

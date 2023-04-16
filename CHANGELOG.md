@@ -1,5 +1,10 @@
 # Changelog
 
+## 2023-04-16
+
+- Hide shiny link for Scarlet/Violet Pokemon since we don't have shiny images for them
+- Improve accessibility for Pokemon links so it's clearer
+
 ## 2023-04-14
 
 - Checkboxes on the Offense page type selector are now filled with "X" when
