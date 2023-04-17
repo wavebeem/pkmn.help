@@ -1116,7 +1116,7 @@
       "de": "Partnerform"
     },
     "number": 25,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 45,
     "attack": 80,
@@ -5936,7 +5936,7 @@
       "de": "Partnerform"
     },
     "number": 133,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 65,
     "attack": 75,
@@ -37727,6 +37727,7 @@
       "en": "Koraidon",
       "ja": "コライドン"
     },
+    "formNames": {},
     "number": 1007,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png",
     "shinySpriteURL": "",
@@ -37753,6 +37754,7 @@
       "en": "Miraidon",
       "ja": "ミライドン"
     },
+    "formNames": {},
     "number": 1008,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png",
     "shinySpriteURL": "",

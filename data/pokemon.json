@@ -1779,7 +1779,7 @@
       "de": "Partnerform"
     },
     "number": 25,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 45,
     "attack": 80,
@@ -1820,7 +1820,7 @@
       "zh-Hans": "世界帽子"
     },
     "number": 25,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 35,
     "attack": 55,
@@ -6880,7 +6880,7 @@
       "de": "Partnerform"
     },
     "number": 133,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 65,
     "attack": 75,
@@ -29388,7 +29388,7 @@
       "zh-Hans": "１０％形态"
     },
     "number": 718,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/718-10.png",
     "hp": 54,
     "attack": 100,
@@ -31006,7 +31006,7 @@
       "de": "Totemform"
     },
     "number": 752,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 68,
     "attack": 70,
@@ -31099,7 +31099,7 @@
       "de": "Totemform"
     },
     "number": 754,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 70,
     "attack": 105,
@@ -31255,7 +31255,7 @@
       "de": "Totemform"
     },
     "number": 758,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 68,
     "attack": 64,
@@ -32436,7 +32436,7 @@
       "de": "Totemform"
     },
     "number": 777,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 65,
     "attack": 98,
@@ -32804,7 +32804,7 @@
       "de": "Totemform"
     },
     "number": 784,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 75,
     "attack": 110,
@@ -35251,7 +35251,7 @@
       "zh-Hans": "一口吞的样子"
     },
     "number": 845,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 70,
     "attack": 85,
@@ -35293,7 +35293,7 @@
       "zh-Hans": "大口吞的样子"
     },
     "number": 845,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 70,
     "attack": 85,
@@ -36709,7 +36709,7 @@
       "zh-Hans": "空腹花纹"
     },
     "number": 877,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 58,
     "attack": 95,
@@ -37582,7 +37582,7 @@
       "zh-Hans": "阿爸"
     },
     "number": 893,
-    "spriteURL": null,
+    "spriteURL": "",
     "shinySpriteURL": "",
     "hp": 105,
     "attack": 120,
@@ -41151,6 +41151,7 @@
       "en": "Koraidon",
       "ja": "コライドン"
     },
+    "formNames": {},
     "number": 1007,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png",
     "shinySpriteURL": "",
@@ -41177,6 +41178,7 @@
       "en": "Miraidon",
       "ja": "ミライドン"
     },
+    "formNames": {},
     "number": 1008,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png",
     "shinySpriteURL": "",
