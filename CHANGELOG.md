@@ -1,7 +1,8 @@
 # Changelog
 
-## 2023-04-16
+## 2023-04-17
 
+- Shiny link is now a toggle button in the top right of each Pokedex entry
 - Hide shiny link for Scarlet/Violet Pokemon since we don't have shiny images for them
 - Improve accessibility for Pokemon links so it's clearer
 
