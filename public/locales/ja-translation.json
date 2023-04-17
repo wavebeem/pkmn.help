@@ -56,15 +56,10 @@
       "helpLong": "ヘルプ、Pokédexを検索",
       "notFound": "ポケモンが見つかりませんでした"
     },
-    "wiki": {
-      "label": "{{ pokemon }}のポケモンWikiページ"
-    },
     "offense": {
-      "label": "{{ pokemon }}のこうげき",
       "text": "こうげき"
     },
     "defense": {
-      "label": "{{ pokemon }}のぼうぎょ",
       "text": "ぼうぎょ"
     },
     "pagination": {
