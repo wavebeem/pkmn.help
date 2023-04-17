@@ -5,6 +5,7 @@
 - Shiny link is now a toggle button in the top right of each Pokedex entry
 - Hide shiny link for Scarlet/Violet Pokemon since we don't have shiny images for them
 - Improve accessibility for Pokemon links so it's clearer
+- Use PokeAPI for Scarlet/Violet Pokemon ([@kittenchilly](https://github.com/kittenchilly))
 
 ## 2023-04-14
 
