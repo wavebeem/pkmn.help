@@ -120,12 +120,11 @@ function Monster({ pokemon }: MonsterProps) {
             <label className="br1 flex select-none gap1 items-center OutlineFocus">
               <input
                 aria-labelledby={`${idPrefix}-shiny ${idPrefix}-name ${idPrefix}-form`}
-                name={pokemon.id}
                 type="checkbox"
                 checked={shiny}
                 className="ShinyCheck"
-                onChange={() => {
-                  setShiny(!shiny);
+                onChange={(event) => {
+                  setShiny(event.target.checked);
                 }}
               />
               <span id={`${idPrefix}-shiny`}>{t("pokedex.shiny.text")}</span>
