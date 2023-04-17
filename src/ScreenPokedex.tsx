@@ -14,8 +14,10 @@ import { Search } from "./Search";
 import { StatsTable } from "./StatsTable";
 import { useComputedLanguage } from "./useComputedLanguage";
 import { useSearch } from "./useSearch";
+import { IconSparkles } from "./IconSparkles";
 
 const nbsp = "\u00a0";
+const shinyCharacter = "※";
 
 function getWikiLink(lang: string, pkmn: Pokemon): string {
   const name = encodeURIComponent(
@@ -82,6 +84,7 @@ function Monster({ pokemon }: MonsterProps) {
         "fg1 mv3",
         "flex flex-column items-stretch",
         "gap4",
+        "relative",
         "pa3 br3 bg1 ba border2 button-shadow"
       )}
     >
@@ -115,45 +118,52 @@ function Monster({ pokemon }: MonsterProps) {
             </div>
           </div>
         </div>
-        <div className="Monster-links flex flex-auto flex-wrap gap3 items-center justify-center">
-          {pokemon.hasShiny && (
-            <label className="br1 flex select-none gap1 items-center OutlineFocus">
-              <input
-                aria-labelledby={`${idPrefix}-shiny ${idPrefix}-name ${idPrefix}-form`}
-                type="checkbox"
-                checked={shiny}
-                className="ShinyCheck"
-                onChange={(event) => {
-                  setShiny(event.target.checked);
+        <div className="Monster-links flex flex-column gap2">
+          <div className="flex flex-auto flex-wrap gap3 items-center justify-end">
+            {pokemon.hasShiny && (
+              <button
+                className={classNames(
+                  "br-pill ba pa2 flex select-none gap1 items-center active-squish fill-currentColor",
+                  "ShinyButton button-shadow"
+                )}
+                aria-pressed={shiny ? "true" : "false"}
+                onClick={() => {
+                  setShiny(!shiny);
                 }}
-              />
-              <span id={`${idPrefix}-shiny`}>{t("pokedex.shiny.text")}</span>
-            </label>
-          )}
-          <a
-            aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}
-            className="br1 underline fg-link OutlineFocus"
-            href={getWikiLink(i18n.language, pokemon)}
-            id={`${idPrefix}-wiki`}
-          >
-            {getWikiName(i18n.language)}
-          </a>
-          <Link
-            aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
-            className="br1 underline fg-link OutlineFocus"
-            to={`/offense/?${params}#matchup-offense`}
-            id={`${idPrefix}-offense`}
-          >
-            {t("pokedex.offense.text")}
-          </Link>
-          <Link
-            aria-labelledby={`${idPrefix}-defense ${idPrefix}-name ${idPrefix}-form`}
-            className="br1 underline fg-link OutlineFocus"
-            to={`/defense/?${params}#matchup-defense`}
-            id={`${idPrefix}-defense`}
-          >
-            {t("pokedex.defense.text")}
-          </Link>
+              >
+                <IconSparkles />
+                <span hidden id={`${idPrefix}-shiny`}>
+                  {t("pokedex.shiny.text")}
+                </span>
+              </button>
+            )}
+          </div>
+          <div className="flex flex-auto flex-wrap gap3 items-center justify-end">
+            <a
+              aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}
+              className="br1 underline fg-link OutlineFocus"
+              href={getWikiLink(i18n.language, pokemon)}
+              id={`${idPrefix}-wiki`}
+            >
+              {getWikiName(i18n.language)}
+            </a>
+            <Link
+              aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
+              className="br1 underline fg-link OutlineFocus"
+              to={`/offense/?${params}#matchup-offense`}
+              id={`${idPrefix}-offense`}
+            >
+              {t("pokedex.offense.text")}
+            </Link>
+            <Link
+              aria-labelledby={`${idPrefix}-defense ${idPrefix}-name ${idPrefix}-form`}
+              className="br1 underline fg-link OutlineFocus"
+              to={`/defense/?${params}#matchup-defense`}
+              id={`${idPrefix}-defense`}
+            >
+              {t("pokedex.defense.text")}
+            </Link>
+          </div>
         </div>
         <div className="Monster-stats flex flex-column justify-center flex-auto gap3">
           <StatsTable pokemon={pokemon} />

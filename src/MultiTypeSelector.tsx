@@ -76,7 +76,6 @@ export function MultiTypeSelector({
                   onChange([...types].sort());
                 }}
               />
-
               <span
                 className="tl pl2 pr1 flex-auto truncate"
                 style={{ lineHeight: buttonInnerHeight }}
