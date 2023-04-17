@@ -70,7 +70,11 @@
     "chooseSecond": "두 번째 유형 선택",
     "chooseThird": "세 번째 유형 선택",
     "takesXFrom": "{{ x }} 피해를 입다",
-    "mode": { "heading": "모드 선택", "solo": "독주", "team": "팀" },
+    "mode": {
+      "heading": "모드 선택",
+      "solo": "독주",
+      "team": "팀"
+    },
     "team": {
       "tableHeading": "매치업 카운트",
       "heading": "포켓몬 팀 편집",
@@ -97,10 +101,16 @@
       "helpLong": "도움말, 검색 포켓몬 도감",
       "notFound": "포켓몬을 찾을 수 없습니다"
     },
-    "wiki": { "label": "{{ pokemon }} Bulbapedia 페이지" },
-    "offense": { "label": "{{ pokemon }} 공격", "text": "공격" },
-    "defense": { "label": "{{ pokemon }} 방어", "text": "방어" },
-    "shiny": { "label": "색이 다른 {{ pokemon }}", "text": "색이 다른" },
+    "offense": {
+      "text": "공격"
+    },
+    "defense": {
+      "text": "방어"
+    },
+    "shiny": {
+      "label": "색이 다른 {{ pokemon }}",
+      "text": "색이 다른"
+    },
     "pagination": {
       "next": "다음",
       "nextLong": "다음",
@@ -180,7 +190,10 @@
       "typeCount": {
         "label": "타입의 수",
         "help": "포켓몬은 숲의 저주나 트릭 오어 트릿에 맞으면 잠시 동안 한 번에 세 가지 유형을 가질 수 있습니다. 세 번째 유형 필드는 거의 사용되지 않기 때문에 기본적으로 숨겨져 있습니다.",
-        "values": { "2": "두 가지 유형(2)", "3": "세 가지 유형 (3)" }
+        "values": {
+          "2": "두 가지 유형(2)",
+          "3": "세 가지 유형 (3)"
+        }
       }
     },
     "changes": {
@@ -225,7 +238,9 @@
       "heading": "오픈 소스",
       "description": "소스 코드는 <github>GitHub</github>에서 확인할 수 있습니다."
     },
-    "legalInfo": { "heading": "법률 정보" }
+    "legalInfo": {
+      "heading": "법률 정보"
+    }
   },
   "types": {
     "normal": "노말",
@@ -255,7 +270,9 @@
       "update": "업데이트"
     }
   },
-  "general": { "loading": "기다리세요..." },
+  "general": {
+    "loading": "기다리세요..."
+  },
   "games": {
     "label": "세대",
     "help": "다양한 게임 세대의 유형 효율성 사용",

@@ -49,6 +49,7 @@ export function MultiTypeSelector({
           >
             <span className="flex flex-row items-center justify-center">
               <input
+                name={type}
                 type="checkbox"
                 checked={isChecked}
                 className={classNames(
@@ -75,7 +76,6 @@ export function MultiTypeSelector({
                   onChange([...types].sort());
                 }}
               />
-
               <span
                 className="tl pl2 pr1 flex-auto truncate"
                 style={{ lineHeight: buttonInnerHeight }}

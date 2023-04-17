@@ -6,7 +6,6 @@ import { Link, useHistory } from "react-router-dom";
 import { useDebounce } from "use-debounce";
 import { Pokemon, Type, typesFromUserInput } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
-import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import { MonsterType } from "./MonsterType";
 import { Paginator } from "./Paginator";
@@ -15,11 +14,14 @@ import { Search } from "./Search";
 import { StatsTable } from "./StatsTable";
 import { useComputedLanguage } from "./useComputedLanguage";
 import { useSearch } from "./useSearch";
+import { IconSparkles } from "./IconSparkles";
 
 const nbsp = "\u00a0";
 
 function getWikiLink(lang: string, pkmn: Pokemon): string {
-  const name = encodeURIComponent(pickTranslation(pkmn.speciesNames, lang).replace(/ /g,"_"));
+  const name = encodeURIComponent(
+    pickTranslation(pkmn.speciesNames, lang).replace(/ /g, "_")
+  );
   switch (lang) {
     default:
     case "en":
@@ -73,23 +75,47 @@ function Monster({ pokemon }: MonsterProps) {
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
   const speciesName = pokemon.speciesNames[language] || pokemon.speciesNames.en;
   const formName = pokemon.formNames[language] || pokemon.formNames.en;
-  const pokemonName = formatPokemonName({ speciesName, formName });
   const formattedFormName = formName ? `(${formName})` : nbsp;
+  const idPrefix = `pokemon-${pokemon.id}`;
   return (
     <div
       className={classNames(
         "fg1 mv3",
         "flex flex-column items-stretch",
         "gap4",
+        "relative",
         "pa3 br3 bg1 ba border2 button-shadow"
       )}
     >
       <div className="flex flex flex-column flex-row-ns items-center-ns gap2">
         <div className="flex items-center gap2">
           <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
-          <h2 className="mv0 f4 flex-auto">{speciesName}</h2>
+          <h2 className="mv0 f4 flex-auto" id={`${idPrefix}-name`}>
+            {speciesName}
+          </h2>
         </div>
-        <div className="nv2 fg3 f5">{formattedFormName}</div>
+        <div className="nv2 fg3 f5" id={`${idPrefix}-form`}>
+          {formattedFormName}
+        </div>
+        {pokemon.hasShiny && (
+          <button
+            className={classNames(
+              "br-pill ba pa2 flex select-none gap1 items-center active-squish fill-currentColor",
+              "ShinyButton button-shadow"
+            )}
+            title={t("pokedex.shiny.text")}
+            aria-labelledby={`${idPrefix}-shiny ${idPrefix}-name ${idPrefix}-form`}
+            aria-pressed={shiny ? "true" : "false"}
+            onClick={() => {
+              setShiny(!shiny);
+            }}
+          >
+            <IconSparkles />
+            <span hidden id={`${idPrefix}-shiny`}>
+              {t("pokedex.shiny.text")}
+            </span>
+          </button>
+        )}
       </div>
       <div className="Monster gap3">
         <div className="Monster-icon flex flex-column">
@@ -110,40 +136,28 @@ function Monster({ pokemon }: MonsterProps) {
             </div>
           </div>
         </div>
-        <div className="Monster-links flex flex-auto flex-wrap gap3 items-center justify-center">
+        <div className="Monster-links flex flex-wrap gap3">
           <a
-            title={t("pokedex.shiny.label", { pokemon: pokemonName })}
-            aria-label={t("pokedex.shiny.label", { pokemon: pokemonName })}
-            className="br1 underline fg-link OutlineFocus"
-            href="#shiny"
-            onClick={(event) => {
-              event.preventDefault();
-              setShiny(!shiny);
-            }}
-          >
-            {t("pokedex.shiny.text")}
-          </a>
-          <a
-            title={t("pokedex.wiki.label", { pokemon: pokemonName })}
-            aria-label={t("pokedex.wiki.label", { pokemon: pokemonName })}
+            aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}
             className="br1 underline fg-link OutlineFocus"
             href={getWikiLink(i18n.language, pokemon)}
+            id={`${idPrefix}-wiki`}
           >
             {getWikiName(i18n.language)}
           </a>
           <Link
-            title={t("pokedex.offense.label", { pokemon: pokemonName })}
-            aria-label={t("pokedex.offense.label", { pokemon: pokemonName })}
+            aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
             className="br1 underline fg-link OutlineFocus"
             to={`/offense/?${params}#matchup-offense`}
+            id={`${idPrefix}-offense`}
           >
             {t("pokedex.offense.text")}
           </Link>
           <Link
-            title={t("pokedex.defense.label", { pokemon: pokemonName })}
-            aria-label={t("pokedex.defense.label", { pokemon: pokemonName })}
+            aria-labelledby={`${idPrefix}-defense ${idPrefix}-name ${idPrefix}-form`}
             className="br1 underline fg-link OutlineFocus"
             to={`/defense/?${params}#matchup-defense`}
+            id={`${idPrefix}-defense`}
           >
             {t("pokedex.defense.text")}
           </Link>

@@ -56,15 +56,10 @@
       "helpLong": "Көмек, Покедекс іздеу",
       "notFound": "Бірде-бір Покемон табылмады"
     },
-    "wiki": {
-      "label": "{{ pokemon }} Бульбапедия парақшасы"
-    },
     "offense": {
-      "label": "{{ pokemon }} шабуылы",
       "text": "Шабуыл"
     },
     "defense": {
-      "label": "{{ pokemon }} қорғанысы",
       "text": "Қорғаныс"
     },
     "pagination": {

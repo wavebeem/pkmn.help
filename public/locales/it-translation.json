@@ -70,7 +70,11 @@
     "chooseSecond": "Scegli il Secondo Tipo",
     "chooseThird": "Scegli il Terzo Tipo",
     "takesXFrom": "Subisce {{ x }} da",
-    "mode": { "heading": "Scegli Modalità", "solo": "Solo", "team": "Squadra" },
+    "mode": {
+      "heading": "Scegli Modalità",
+      "solo": "Solo",
+      "team": "Squadra"
+    },
     "team": {
       "tableHeading": "Conteggio dei Rapporti",
       "heading": "Modifica Squadra Pokémon",
@@ -97,9 +101,12 @@
       "helpLong": "Aiuto, cerca Pokédex",
       "notFound": "Nessun Pokémon trovato"
     },
-    "wiki": { "label": "Pagina Pokémon Central di {{ pokemon }}" },
-    "offense": { "label": "Offensiva di {{ pokemon }}", "text": "Offensiva" },
-    "defense": { "label": "Difensiva di {{ pokemon }}", "text": "Difensiva" },
+    "offense": {
+      "text": "Offensiva"
+    },
+    "defense": {
+      "text": "Difensiva"
+    },
     "shiny": {
       "label": "Forma cromatica di {{ pokemon }}",
       "text": "Forma cromatica"
@@ -183,7 +190,10 @@
       "typeCount": {
         "label": "Numero di tipi",
         "help": "Un Pokémon può avere brevemente tre tipi allo stesso tempo se viene colpito da Boscomalocchio o Halloween. Il campo del terzo tipo di solito è nascosto poiché è raramente usato.",
-        "values": { "2": "Due tipi (2)", "3": "Tre tipi (3)" }
+        "values": {
+          "2": "Due tipi (2)",
+          "3": "Tre tipi (3)"
+        }
       }
     },
     "changes": {
@@ -227,7 +237,9 @@
       "heading": "Codice Sorgente",
       "description": "Il codice sorgente è disponibile su <github>GitHub</github>."
     },
-    "legalInfo": { "heading": "Informazioni Legali" }
+    "legalInfo": {
+      "heading": "Informazioni Legali"
+    }
   },
   "types": {
     "normal": "Normale",
@@ -257,7 +269,9 @@
       "update": "Aggiorna"
     }
   },
-  "general": { "loading": "Caricamento..." },
+  "general": {
+    "loading": "Caricamento..."
+  },
   "games": {
     "label": "Generazione di Gioco",
     "help": "Usa i rapporti tra tipi di diverse generazioni di gioco",

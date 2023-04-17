@@ -56,15 +56,10 @@
       "helpLong": "Помощь, искать Покедекс",
       "notFound": "Нет найденных Покемонов"
     },
-    "wiki": {
-      "label": "Страница Бульбапедии для {{ pokemon }}"
-    },
     "offense": {
-      "label": "Нападение для {{ pokemon }}",
       "text": "Нападение"
     },
     "defense": {
-      "label": "Оборона для {{ pokemon }}",
       "text": "Оборона"
     },
     "pagination": {

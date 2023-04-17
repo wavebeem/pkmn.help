@@ -69,7 +69,11 @@
     "chooseSecond": "Wybierz Drugi Typ",
     "chooseThird": "Wybierz Trzeci Typ",
     "takesXFrom": "Dostaje {{ x }} od",
-    "mode": { "heading": "Wybierz tryb", "solo": "Solo", "team": "Drużyna" },
+    "mode": {
+      "heading": "Wybierz tryb",
+      "solo": "Solo",
+      "team": "Drużyna"
+    },
     "team": {
       "tableHeading": "Liczba kombinacji",
       "heading": "Edytuj drużynę Pokémon",
@@ -96,9 +100,12 @@
       "helpLong": "Pomoc, wyszukaj Pokédex",
       "notFound": "Nie znaleziono Pokémona"
     },
-    "wiki": { "label": "Strona Bulbapedia dla {{ pokemon }}" },
-    "offense": { "label": "Ofensywa dla {{ pokemon }}", "text": "Ofensywa" },
-    "defense": { "label": "Defensywa dla {{ pokemon }}", "text": "Defensywa" },
+    "offense": {
+      "text": "Ofensywa"
+    },
+    "defense": {
+      "text": "Defensywa"
+    },
     "pagination": {
       "next": "Nast.",
       "nextLong": "Następny",
@@ -178,7 +185,10 @@
       "typeCount": {
         "label": "Ilość typów",
         "help": "Pokémony mogą przez krótki czas mieć trzy typy jednocześnie, jeśli zostaną trafieni Klątwą Lasu lub Cukierek albo psikus. Pole trzeciego typu jest domyślnie ukryte, ponieważ jest rzadko używane.",
-        "values": { "2": "Dwa typy (2)", "3": "Trzy typy (3)" }
+        "values": {
+          "2": "Dwa typy (2)",
+          "3": "Trzy typy (3)"
+        }
       }
     },
     "changes": {
@@ -222,7 +232,9 @@
       "heading": "Otwarte źródło",
       "description": "Otwarte źródło jest dostępne na <github>GitHubie</github>."
     },
-    "legalInfo": { "heading": "Informacje prawne" }
+    "legalInfo": {
+      "heading": "Informacje prawne"
+    }
   },
   "types": {
     "normal": "Normalny",
@@ -252,7 +264,9 @@
       "update": "Aktualizacja"
     }
   },
-  "general": { "loading": "Ładowanie…" },
+  "general": {
+    "loading": "Ładowanie…"
+  },
   "games": {
     "label": "Generacja Gry",
     "help": "Wykorzystaj skuteczność typu z różnych generacji gier.",

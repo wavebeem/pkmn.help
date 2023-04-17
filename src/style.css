@@ -133,9 +133,6 @@
   display: grid;
 }
 
-.gap5 {
-  gap: 4rem;
-}
 .gap4 {
   gap: 2rem;
 }
@@ -337,6 +334,7 @@ button {
 
 .Monster-links {
   grid-area: links;
+  justify-content: center;
 }
 
 .Monster-stats {
@@ -503,8 +501,38 @@ button {
   box-shadow: 0 0 0 2px var(--color-bg1);
 }
 
+.ShinyButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  background: var(--color-button1)
+    linear-gradient(to bottom, var(--color-button1) 20%, var(--color-button1b));
+  color: var(--color-fg1);
+  border-color: var(--color-border1);
+}
+
+.ShinyButton:hover {
+  background: var(--color-button-hover1)
+    linear-gradient(
+      to bottom,
+      var(--color-button-hover1) 20%,
+      var(--color-button-hover1b)
+    );
+}
+
+.ShinyButton[aria-pressed="true"] {
+  border-color: var(--color-fg1);
+  background: var(--color-fg1);
+  color: var(--color-bg1);
+}
+
+.ShinyButton:focus {
+  outline: 2px solid var(--color-fg1);
+  outline-offset: 2px;
+}
+
 .RadioCheckType {
-  accent-color: black;
   -webkit-appearance: none;
   appearance: none;
   width: 1rem;

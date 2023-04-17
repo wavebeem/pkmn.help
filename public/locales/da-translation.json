@@ -73,9 +73,12 @@
       "helpLong": "Hjælp, Søg på pokédexet",
       "notFound": "Ingen Pokémons blev fundet"
     },
-    "wiki": { "label": "Bulbapedia side for {{ pokemon }}" },
-    "offense": { "label": "Angreb for {{ pokemon }}", "text": "Angreb" },
-    "defense": { "label": "Forsvar for {{ pokemon }}", "text": "Forsvar" },
+    "offense": {
+      "text": "Angreb"
+    },
+    "defense": {
+      "text": "Forsvar"
+    },
     "pagination": {
       "next": "Næste",
       "nextLong": "Næste",
@@ -146,12 +149,19 @@
       "theme": {
         "label": "Tema",
         "help": "\"System standard\" vil ændre automatisk alt efter dine OS indstillinger.",
-        "values": { "auto": "System Standard", "light": "Lys", "dark": "Mørk" }
+        "values": {
+          "auto": "System Standard",
+          "light": "Lys",
+          "dark": "Mørk"
+        }
       },
       "typeCount": {
         "label": "Antal typer",
         "help": "Pokemon kan midlertidigt have 3 typer på samme tid hvis de bliver ramt af Forest's curse eller Trick or Treat. Det trejde type felt bliver som standard gemt siden den sjældent bliver brugt.",
-        "values": { "2": "To typer (2)", "3": "Tre typer (3)" }
+        "values": {
+          "2": "To typer (2)",
+          "3": "Tre typer (3)"
+        }
       }
     },
     "help": {
@@ -221,7 +231,9 @@
       "update": "Opdater"
     }
   },
-  "general": { "loading": "Loader..." },
+  "general": {
+    "loading": "Loader..."
+  },
   "games": {
     "label": "Spil generation",
     "help": "Brug type effektiviteter fra andre spil generationer",
