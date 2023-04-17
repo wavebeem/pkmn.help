@@ -1,6 +1,5 @@
 import purgecss from "@fullhuman/postcss-purgecss";
-import reactRefresh from "@vitejs/plugin-react-refresh";
-import { Plugin } from "postcss";
+import react from "@vitejs/plugin-react";
 import { defineConfig, UserConfigExport } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 
@@ -11,7 +10,7 @@ export default defineConfig((env) => {
       sourcemap: true,
     },
     plugins: [
-      reactRefresh(),
+      react(),
       VitePWA({
         mode: env.mode !== "development" ? "production" : "development",
         includeAssets: ["data-pkmn.json", "locales/*.json"],
@@ -24,7 +23,7 @@ export default defineConfig((env) => {
         plugins: [
           purgecss({
             content: ["./index.html", "./src/**/*.{ts,tsx,js,html}"],
-          }) as Plugin,
+          }),
         ],
       },
     };

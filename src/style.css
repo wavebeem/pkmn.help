@@ -506,8 +506,8 @@ button {
 .ShinyCheck {
   -webkit-appearance: none;
   appearance: none;
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   flex: none;
   background: var(--color-bg1);
   box-shadow: inset 0 1px 1px var(--color-border2);
@@ -555,7 +555,7 @@ input[type="checkbox"].ShinyCheck:checked {
       transparent calc(var(--_end) + var(--_blur)),
       transparent
     );
-  box-shadow: inset 0 0 0 2px var(--color-fg1);
+  box-shadow: inset 0 0 0 4px var(--color-fg1);
 }
 
 .ShinyCheck:focus {
