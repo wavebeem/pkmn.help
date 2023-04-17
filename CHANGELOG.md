@@ -1,5 +1,20 @@
 # Changelog
 
+## 2023-04-14
+
+- Checkboxes on the Offense page type selector are now filled with "X" when
+  checked rather than a square, to make them look more different from the radio
+  buttons on the Defense page
+
+## 2023-04-12
+
+- OK, hopefully this is the last grid layout update for a while
+  - Getting the grid sizing to look good on Windows + macOS in 14 languages
+    while supporting custom font sizes is quite challenging
+  - Now every language except Polish and Russian can fit 4 columns of types on a
+    desktop monitor
+    - Polish and Russian only fit 3, sorry
+
 ## 2023-04-11
 
 - Added Iron Leaves and Walking Wake
@@ -11,6 +26,8 @@
     on screen
 - Updated to Scarlet/Violet color palette for types
 - Increased scrollbar contrast in Firefox
+- Tweaked header color in dark mode
+- Fixed rainbow colors for types to be in the right order
 
 ## 2023-04-09
 
