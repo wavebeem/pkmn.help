@@ -503,8 +503,71 @@ button {
   box-shadow: 0 0 0 2px var(--color-bg1);
 }
 
+.ShinyCheck {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+  background: var(--color-bg1);
+  box-shadow: inset 0 1px 1px var(--color-border2);
+  border: 1px solid var(--color-border1);
+}
+
+input[type="checkbox"].ShinyCheck {
+  border-radius: 0.125rem;
+}
+
+input[type="radio"].ShinyCheck {
+  border-radius: 9999px;
+}
+
+input[type="radio"].ShinyCheck:checked {
+  background: var(--color-fg1);
+  box-shadow: inset 0 0 0 2px var(--color-fg1);
+  border-color: var(--color-border1);
+  background-clip: padding-box;
+}
+
+input[type="checkbox"].ShinyCheck:checked {
+  background-clip: padding-box;
+  --_blur: 0.5px;
+  --_size: 0.125em;
+  --_start: calc(50% - 0.5 * var(--_size));
+  --_end: calc(var(--_start) + var(--_size));
+  border-color: var(--color-fg1);
+  background-color: var(--color-fg1);
+  background-image: linear-gradient(
+      45deg,
+      transparent,
+      transparent calc(var(--_start) - var(--_blur)),
+      var(--color-bg2) var(--_start),
+      var(--color-bg2) var(--_end),
+      transparent calc(var(--_end) + var(--_blur)),
+      transparent
+    ),
+    linear-gradient(
+      -45deg,
+      transparent,
+      transparent calc(var(--_start) - var(--_blur)),
+      var(--color-bg2) var(--_start),
+      var(--color-bg2) var(--_end),
+      transparent calc(var(--_end) + var(--_blur)),
+      transparent
+    );
+  box-shadow: inset 0 0 0 2px var(--color-fg1);
+}
+
+.ShinyCheck:focus {
+  outline: none;
+}
+
+.ShinyCheck:disabled {
+  background: var(--color-bg2);
+  border-color: var(--color-fg4);
+}
+
 .RadioCheckType {
-  accent-color: black;
   -webkit-appearance: none;
   appearance: none;
   width: 1rem;

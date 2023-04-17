@@ -6,7 +6,6 @@ import { Link, useHistory } from "react-router-dom";
 import { useDebounce } from "use-debounce";
 import { Pokemon, Type, typesFromUserInput } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
-import { formatPokemonName } from "./formatPokemonName";
 import { MonsterImage } from "./MonsterImage";
 import { MonsterType } from "./MonsterType";
 import { Paginator } from "./Paginator";
@@ -17,8 +16,6 @@ import { useComputedLanguage } from "./useComputedLanguage";
 import { useSearch } from "./useSearch";
 
 const nbsp = "\u00a0";
-const star = "\u2606";
-const starf = "\u2605";
 
 function getWikiLink(lang: string, pkmn: Pokemon): string {
   const name = encodeURIComponent(
@@ -77,7 +74,6 @@ function Monster({ pokemon }: MonsterProps) {
   const params = new URLSearchParams({ types: pokemon.types.join(" ") });
   const speciesName = pokemon.speciesNames[language] || pokemon.speciesNames.en;
   const formName = pokemon.formNames[language] || pokemon.formNames.en;
-  const pokemonName = formatPokemonName({ speciesName, formName });
   const formattedFormName = formName ? `(${formName})` : nbsp;
   const idPrefix = `pokemon-${pokemon.id}`;
   return (
@@ -121,25 +117,19 @@ function Monster({ pokemon }: MonsterProps) {
         </div>
         <div className="Monster-links flex flex-auto flex-wrap gap3 items-center justify-center">
           {pokemon.hasShiny && (
-            <a
-              aria-labelledby={`${idPrefix}-shiny ${idPrefix}-name ${idPrefix}-form`}
-              className="br1 underline fg-link OutlineFocus"
-              href="#shiny"
-              onClick={(event) => {
-                event.preventDefault();
-                setShiny(!shiny);
-              }}
-            >
-              <span aria-hidden={true}>
-                {shiny ? starf : star}
-                {nbsp}
-              </span>
+            <label className="br1 flex select-none gap1 items-center OutlineFocus">
+              <input
+                aria-labelledby={`${idPrefix}-shiny ${idPrefix}-name ${idPrefix}-form`}
+                name={pokemon.id}
+                type="checkbox"
+                checked={shiny}
+                className="ShinyCheck"
+                onChange={() => {
+                  setShiny(!shiny);
+                }}
+              />
               <span id={`${idPrefix}-shiny`}>{t("pokedex.shiny.text")}</span>
-              <span aria-hidden={true}>
-                {nbsp}
-                {shiny ? starf : star}
-              </span>
-            </a>
+            </label>
           )}
           <a
             aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}

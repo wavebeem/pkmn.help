@@ -49,6 +49,7 @@ export function MultiTypeSelector({
           >
             <span className="flex flex-row items-center justify-center">
               <input
+                name={type}
                 type="checkbox"
                 checked={isChecked}
                 className={classNames(
