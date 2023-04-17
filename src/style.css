@@ -365,6 +365,8 @@ button {
 
   .Monster-links {
     grid-area: links;
+    justify-content: end;
+    align-items: end;
   }
 }
 
