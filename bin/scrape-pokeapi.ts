@@ -140,21 +140,18 @@ async function main(): Promise<void> {
         key: (item) => item.stat.name,
         value: (item) => item.base_stat,
       });
-      let formNames = {};
-      if (detail.forms.length > 0) {
-        const form = await fetchJSON<PokemonForm>(detail.forms[0].url);
-        formNames = toObject({
-          data: form.form_names,
-          key: (item) => item.language.name,
-          value: (item) => item.name,
-        });
-      }
+      const form = await fetchJSON<PokemonForm>(detail.forms[0].url);
+      const formNames = toObject({
+        data: form.form_names,
+        key: (item) => item.language.name,
+        value: (item) => item.name,
+      });
       const mon: PokemonSimple = {
         name: detail.name,
         speciesNames,
         formNames,
         number: speciesDetail.id,
-        spriteURL: detail.sprites.front_default,
+        spriteURL: detail.sprites.front_default ?? "",
         shinySpriteURL: detail.sprites.front_shiny ?? "",
         hp: stats["hp"] ?? 0,
         attack: stats["attack"] ?? 0,
