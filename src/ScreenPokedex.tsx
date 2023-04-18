@@ -15,7 +15,7 @@ import { StatsTable } from "./StatsTable";
 import { useComputedLanguage } from "./useComputedLanguage";
 import { useSearch } from "./useSearch";
 import { IconSparkles } from "./IconSparkles";
-import "./ScreenPokedex.css";
+import styles from "./ScreenPokedex.module.css";
 
 const nbsp = "\u00a0";
 
@@ -102,7 +102,8 @@ function Monster({ pokemon }: MonsterProps) {
           <button
             className={classNames(
               "br-pill ba pa2 flex select-none gap1 items-center active-squish fill-currentColor",
-              "ScreenPokedex--ShinyButton button-shadow"
+              styles.shinyButton,
+              "button-shadow"
             )}
             title={t("pokedex.shiny.text")}
             aria-labelledby={`${idPrefix}-shiny ${idPrefix}-name ${idPrefix}-form`}

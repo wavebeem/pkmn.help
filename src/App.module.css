@@ -1,4 +1,4 @@
-.App--EasterEgg {
+.easterEgg {
   pointer-events: none;
   position: fixed;
   z-index: 1;
@@ -8,18 +8,18 @@
   opacity: 0;
 }
 
-.App--EasterEgg[data-animate="true"] {
-  animation: 2s App--EasterEgg-Animation;
+.easterEgg[data-animate="true"] {
+  animation: 2s easterEgg-Animation;
 }
 
-.App--EasterEgg img {
+.easterEgg img {
   filter: drop-shadow(0 0 1px white) drop-shadow(0 0 2px white)
     drop-shadow(0 0 3px white) drop-shadow(0 0 4px white)
     drop-shadow(0 0 5px white) drop-shadow(0 0 6px white)
     drop-shadow(0 0 7px rgb(0 0 0 / 20%));
 }
 
-@keyframes App--EasterEgg-Animation {
+@keyframes easterEgg-Animation {
   10%,
   95% {
     opacity: 1;

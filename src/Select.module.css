@@ -1,13 +1,13 @@
-.Select--Wrapper {
+.wrapper {
   position: relative;
 }
 
-.Select--Wrapper > select {
+.wrapper > select {
   -webkit-appearance: none;
   appearance: none;
 }
 
-.Select--Wrapper:after {
+.wrapper:after {
   content: "";
   position: absolute;
   width: 0.5rem;
@@ -21,6 +21,6 @@
   pointer-events: none;
 }
 
-.Select--Wrapper > select > option {
+.wrapper > select > option {
   font-weight: initial;
 }
