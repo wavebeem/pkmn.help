@@ -61,34 +61,6 @@
   display: none;
 }
 
-.Select {
-  position: relative;
-}
-
-.Select > select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
-.Select:after {
-  content: "";
-  position: absolute;
-  width: 0.5rem;
-  height: 0.5rem;
-  border: 3px solid;
-  border-top: 0;
-  border-left: 0;
-  transform: rotate(45deg);
-  right: 1rem;
-  top: 30%;
-  pointer-events: none;
-}
-
-.Select > select > option {
-  font-weight: initial;
-}
-
 .bg3 {
   background-color: var(--color-bg3);
 }
@@ -443,40 +415,6 @@ button {
   transform: translateX(-50%) translateY(50%) translateY(0.5px) scale(0.97);
 }
 
-.EasterEgg {
-  pointer-events: none;
-  position: fixed;
-  z-index: 1;
-  bottom: 0;
-  left: 50vw;
-  transform: translateX(-50%) translateY(10vh);
-  opacity: 0;
-}
-
-.EasterEgg[data-animate="true"] {
-  animation: 2s EasterEggAnimation;
-}
-
-@keyframes EasterEggAnimation {
-  10%,
-  95% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(-10.5vh) rotateZ(2deg);
-  }
-  15%,
-  90% {
-    opacity: 1;
-    transform: translateX(-50%) translateY(-10vh);
-  }
-}
-
-.EasterEgg img {
-  filter: drop-shadow(0 0 1px white) drop-shadow(0 0 2px white)
-    drop-shadow(0 0 3px white) drop-shadow(0 0 4px white)
-    drop-shadow(0 0 5px white) drop-shadow(0 0 6px white)
-    drop-shadow(0 0 7px rgb(0 0 0 / 20%));
-}
-
 .type-bg {
   background: var(--type-color, #333);
   color: white;
@@ -499,37 +437,6 @@ button {
   border-radius: 9999px;
   background: var(--color-badge);
   box-shadow: 0 0 0 2px var(--color-bg1);
-}
-
-.ShinyButton {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: 1rem;
-  background: var(--color-button1)
-    linear-gradient(to bottom, var(--color-button1) 20%, var(--color-button1b));
-  color: var(--color-fg1);
-  border-color: var(--color-border1);
-}
-
-.ShinyButton:hover {
-  background: var(--color-button-hover1)
-    linear-gradient(
-      to bottom,
-      var(--color-button-hover1) 20%,
-      var(--color-button-hover1b)
-    );
-}
-
-.ShinyButton[aria-pressed="true"] {
-  border-color: var(--color-fg1);
-  background: var(--color-fg1);
-  color: var(--color-bg1);
-}
-
-.ShinyButton:focus {
-  outline: 2px solid var(--color-fg1);
-  outline-offset: 2px;
 }
 
 .RadioCheckType {

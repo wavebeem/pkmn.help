@@ -22,6 +22,7 @@ import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
+import "./App.css";
 
 const tabClass = classNames([
   "no-underline",
@@ -145,7 +146,7 @@ export function App() {
           />
           {easterEgg && (
             <div
-              className="EasterEgg"
+              className="App--EasterEgg"
               data-animate={easterEggLoadedID === easterEgg.id}
             >
               <MonsterImage
