@@ -31,6 +31,7 @@ const tabClass = classNames([
   "tc b",
   "ba border1 br-pill",
   "bg1 fg1",
+  "active-squish",
 ]);
 
 const tabClassActive = classNames(["TabBar-Item-Selected"]);

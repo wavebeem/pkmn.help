@@ -381,6 +381,22 @@ button {
   background: var(--type-color);
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .MonsterImage-Bounce > img[data-shiny="true"] {
+    animation: 250ms MonsterImage-Bounce;
+    transform-origin: bottom center;
+  }
+}
+
+@keyframes MonsterImage-Bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05, 0.95);
+  }
+}
+
 .PokeballHeader {
   --border-size: 8px;
   --circle-size: 36px;
