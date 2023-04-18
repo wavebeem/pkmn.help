@@ -3,6 +3,7 @@ import * as React from "react";
 import { typeColor } from "./colors";
 import { Type } from "./data-types";
 import { getImage } from "./getImage";
+import styles from "./MonsterImage.module.css";
 
 type State = "loading" | "loaded" | "errored";
 
@@ -34,8 +35,8 @@ export function MonsterImage({
   return (
     <div
       className={classNames(
-        state === "errored" && ["MonsterImage br-pill"],
-        "MonsterImage-Bounce"
+        state === "errored" && [styles.image, "br-pill"],
+        styles.bounce
       )}
       style={{
         ["--type-color" as any]: typeColor(types[0]),
