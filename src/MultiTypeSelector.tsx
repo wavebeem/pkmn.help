@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG } from "./colors";
 import { Generation } from "./data-generations";
 import { Type, typesForGeneration } from "./data-types";
+import styles from "./MultiTypeSelector.module.css";
 
 const buttonInnerHeight = "1.5rem";
 
@@ -19,7 +20,7 @@ export function MultiTypeSelector({
   value,
 }: MultiTypeSelectorProps) {
   const { t } = useTranslation();
-  const styles = {
+  const styleMap = {
     selected:
       "border-vibrant2 type-bg no-box-shadow button-shadow SelectedFocus",
     normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
@@ -33,7 +34,7 @@ export function MultiTypeSelector({
           <label
             key={type}
             className={classNames(
-              styles[styleKey],
+              styleMap[styleKey],
               "db",
               "ba br1",
               "pv1 ph2",
@@ -53,7 +54,8 @@ export function MultiTypeSelector({
                 type="checkbox"
                 checked={isChecked}
                 className={classNames(
-                  "db RadioCheckType",
+                  "db",
+                  styles.checkbox,
                   {
                     selected: "b--black type-bg",
                     normal: "border-vibrant type-bg",
