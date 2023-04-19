@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-04-19
+
+- Fixed a bug where button animations disappeared
+
 ## 2023-04-18
 
 - Pokemon bounce when entering their shiny form in the Pokedex

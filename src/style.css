@@ -203,13 +203,9 @@ button {
   appearance: none;
 }
 
-.active-squish:active:not(:disabled) {
-  transform: translateY(0.5px) scale(0.97);
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .active-squish:active:not(:disabled) {
-    transform: none;
+    transform: translateY(1px);
   }
 }
 
