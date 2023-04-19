@@ -332,28 +332,28 @@ button {
   user-select: none;
 }
 
-.TabFocus:focus-within {
+.focus-tab:focus-within {
   outline: 2px solid var(--color-fg1);
   outline-offset: 2px;
 }
 
-.OutlineFocus:focus-within {
+.focus-outline:focus-within {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
 
-.SimpleFocus:focus-within {
+.focus-simple:focus-within {
   outline: 2px solid transparent;
   border-color: var(--color-fg1);
   box-shadow: 0 0 0 2px var(--color-border1);
 }
 
-.SelectedFocus:focus-within {
+.focus-selected:focus-within {
   outline: 2px solid transparent;
   box-shadow: 0 0 0 2px var(--color-bg1), 0 0 0 4px var(--color-fg1);
 }
 
-.NoFocus:focus {
+.focus-none:focus {
   outline: none;
 }
 

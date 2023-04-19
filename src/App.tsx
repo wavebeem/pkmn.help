@@ -27,7 +27,7 @@ import styles from "./App.module.css";
 const tabClass = classNames([
   "no-underline",
   "pv1 ph3 f5",
-  "TabFocus",
+  "focus-tab",
   "tc b",
   "ba border1 br-pill",
   "bg1 fg1",
@@ -132,7 +132,7 @@ export function App() {
           <title>{t("title")}</title>
         </Helmet>
         <h1 className={`f3-ns f4 tc relative white ${styles.header}`}>
-          <Link to="/" className="no-underline white OutlineFocus br1">
+          <Link to="/" className="no-underline white focus-outline br1">
             {t("title")}
           </Link>
           <div

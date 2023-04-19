@@ -41,7 +41,7 @@ export function ScreenCoverageList({
         <IconArrowLeft className="w1 h1" aria-hidden="true" />
         <Link
           to={`/offense/?${offenseParams}`}
-          className="underline fg-link br1 OutlineFocus"
+          className="underline fg-link br1 focus-outline"
         >
           {t("coverage.back")}
         </Link>
@@ -106,7 +106,7 @@ export function ScreenCoverageList({
           <IconArrowLeft className="w1 h1" aria-hidden="true" />
           <Link
             to={`/offense/?${offenseParams}`}
-            className="underline fg-link br1 OutlineFocus"
+            className="underline fg-link br1 focus-outline"
           >
             {t("coverage.back")}
           </Link>

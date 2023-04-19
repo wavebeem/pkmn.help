@@ -147,8 +147,8 @@ export function MatchupsTeam({
   }
 
   return (
-    <div className="br2 SimpleFocus ba bg1 button-shadow pa2 border2">
-      <div className="overflow-x-auto NoFocus" tabIndex={0}>
+    <div className="br2 focus-simple ba bg1 button-shadow pa2 border2">
+      <div className="overflow-x-auto focus-none" tabIndex={0}>
         <table className="collapse tc w-100 tabular-nums">
           <thead>
             <tr className="bb border3">

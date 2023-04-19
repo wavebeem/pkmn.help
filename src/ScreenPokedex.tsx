@@ -141,7 +141,7 @@ function Monster({ pokemon }: MonsterProps) {
         <div className={`${styles.monsterLinks} flex flex-wrap gap3`}>
           <a
             aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}
-            className="br1 underline fg-link OutlineFocus"
+            className="br1 underline fg-link focus-outline"
             href={getWikiLink(i18n.language, pokemon)}
             id={`${idPrefix}-wiki`}
           >
@@ -149,7 +149,7 @@ function Monster({ pokemon }: MonsterProps) {
           </a>
           <Link
             aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
-            className="br1 underline fg-link OutlineFocus"
+            className="br1 underline fg-link focus-outline"
             to={`/offense/?${params}#matchup-offense`}
             id={`${idPrefix}-offense`}
           >
@@ -157,7 +157,7 @@ function Monster({ pokemon }: MonsterProps) {
           </Link>
           <Link
             aria-labelledby={`${idPrefix}-defense ${idPrefix}-name ${idPrefix}-form`}
-            className="br1 underline fg-link OutlineFocus"
+            className="br1 underline fg-link focus-outline"
             to={`/defense/?${params}#matchup-defense`}
             id={`${idPrefix}-defense`}
           >
@@ -268,7 +268,7 @@ export function ScreenPokedex({
         </span>
         <Link
           to="/pokedex/help/"
-          className="br1 underline fg-link OutlineFocus ml3 flex-none"
+          className="br1 underline fg-link focus-outline ml3 flex-none"
           aria-label={t("pokedex.search.helpLong")}
         >
           {t("pokedex.search.help")}

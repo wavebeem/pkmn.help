@@ -29,9 +29,9 @@ export function TypeSelector({
   const baseTypes = typesForGeneration(generation);
   const theTypes = includeNone ? [...baseTypes, Type.none] : baseTypes;
   const stylesObj = {
-    disabled: "border3 fg4 bg2 o-60 SimpleFocus pointer-none",
-    selected: "border-vibrant2 type-bg SelectedFocus",
-    normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
+    disabled: "border3 fg4 bg2 o-60 focus-simple pointer-none",
+    selected: "border-vibrant2 type-bg focus-selected",
+    normal: "border1 bg1 fg1 button-bg button-shadow focus-simple",
   };
   return (
     <div className="grid gap2 MultiTypeSelector-Container">
@@ -54,7 +54,7 @@ export function TypeSelector({
               "f5",
               "ttc",
               "select-none",
-              "SimpleFocus",
+              "focus-simple",
               "active-squish"
             )}
             style={{
@@ -76,7 +76,7 @@ export function TypeSelector({
                     normal: "border-vibrant type-bg",
                   }[styleKey],
                   "ba br1",
-                  "NoFocus"
+                  "focus-none"
                 )}
                 style={{
                   ["--type-color" as any]: typeColor(type),

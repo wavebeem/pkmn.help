@@ -33,7 +33,7 @@ export function Search({ updateSearch, search }: SearchProps) {
         className={classNames(
           "f5 w-100 border-box",
           "pv2",
-          "SimpleFocus",
+          "focus-simple",
           "inset-shadow",
           "br-pill ba",
           "bg1",
