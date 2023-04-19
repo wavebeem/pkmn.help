@@ -168,15 +168,6 @@
   }
 }
 
-.MatchupsSection-Container {
-  display: grid;
-  gap: 0.25rem;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(calc(var(--type-min-width) + 16px), 1fr)
-  );
-}
-
 .MultiTypeSelector-Container,
 .TypeSelector-Container {
   grid-template-columns: repeat(

@@ -4,6 +4,7 @@ import { Generation } from "./data-generations";
 import { defensiveMatchups, offensiveMatchups } from "./data-matchups";
 import { Type } from "./data-types";
 import { Badge } from "./Badge";
+import styles from "./Matchups.module.css";
 
 interface SectionProps {
   title: string;
@@ -17,7 +18,7 @@ function Section({ title, types }: SectionProps) {
   return (
     <div>
       <h2 className="f5 mt4 mb2">{title}</h2>
-      <div className="MatchupsSection-Container">
+      <div className={styles.matchups}>
         {types.map((t) => (
           <Badge key={`type-${t}`} type={t} />
         ))}
