@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG } from "./colors";
 import { Generation } from "./data-generations";
 import { Type, typesForGeneration } from "./data-types";
+import styles from "./TypeSelector.module.css";
 
 const buttonInnerHeight = "1.5rem";
 
@@ -27,7 +28,7 @@ export function TypeSelector({
   const { t } = useTranslation();
   const baseTypes = typesForGeneration(generation);
   const theTypes = includeNone ? [...baseTypes, Type.none] : baseTypes;
-  const styles = {
+  const stylesObj = {
     disabled: "border3 fg4 bg2 o-60 SimpleFocus pointer-none",
     selected: "border-vibrant2 type-bg SelectedFocus",
     normal: "border1 bg1 fg1 button-bg button-shadow SimpleFocus",
@@ -46,7 +47,7 @@ export function TypeSelector({
           <label
             key={type}
             className={classNames(
-              styles[styleKey],
+              stylesObj[styleKey],
               "db",
               "ba br-pill",
               "pv1 ph2",
@@ -67,7 +68,8 @@ export function TypeSelector({
                 checked={isSelected}
                 disabled={isDisabled}
                 className={classNames(
-                  "db RadioCheckType",
+                  "db",
+                  styles.radio,
                   {
                     disabled: "border1 o-50",
                     selected: "b--black type-bg",

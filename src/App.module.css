@@ -9,7 +9,7 @@
 }
 
 .easterEgg[data-animate="true"] {
-  animation: 2s easterEgg-Animation;
+  animation: 2s easterEgg_animation;
 }
 
 .easterEgg img {
@@ -19,7 +19,7 @@
     drop-shadow(0 0 7px rgb(0 0 0 / 20%));
 }
 
-@keyframes easterEgg-Animation {
+@keyframes easterEgg_animation {
   10%,
   95% {
     opacity: 1;

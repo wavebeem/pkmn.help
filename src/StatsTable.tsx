@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
 import { Pokemon, Type } from "./data-types";
 import { StatBar } from "./StatBar";
+import styles from "./StatsTable.module.css";
 
 const statMax = 255;
 
@@ -16,7 +17,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
   const hasRoomForFullText = useMediaQuery("(min-width: 600px)");
 
   return (
-    <div className="StatsTable tabular-nums">
+    <div className={`${styles.table} tabular-nums`}>
       <div
         className="b tl"
         title={t("pokedex.stats.hpLong")}
