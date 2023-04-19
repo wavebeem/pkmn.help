@@ -1,4 +1,5 @@
 import * as React from "react";
+import styles from "./CollapsibleSection.module.css";
 
 interface CollapsibleSectionProps {
   initiallyOpen?: boolean;
@@ -12,7 +13,7 @@ export function CollapsibleSection({
   children,
 }: CollapsibleSectionProps): JSX.Element {
   return (
-    <details className="DetailsFocus" open={initiallyOpen}>
+    <details className={styles.details} open={initiallyOpen}>
       <summary className="pointer no-select">{heading}</summary>
       {children}
     </details>

@@ -131,12 +131,12 @@ export function App() {
           <meta name="theme-color" content={themeColor} />
           <title>{t("title")}</title>
         </Helmet>
-        <h1 className="f3-ns f4 tc relative white PokeballHeader">
+        <h1 className={`f3-ns f4 tc relative white ${styles.header}`}>
           <Link to="/" className="no-underline white OutlineFocus br1">
             {t("title")}
           </Link>
           <div
-            className="PokeballHeaderButton"
+            className={styles.headerButton}
             onClick={(event) => {
               event.preventDefault();
               const i = Math.floor(Math.random() * AllPokemon.length);
@@ -185,7 +185,7 @@ export function App() {
             {t("navigation.pokedex")}
           </NavLink>
           <NavLink
-            className={classNames(tabClass, needRefresh && "PleaseUpdate")}
+            className={classNames(tabClass, needRefresh && styles.pleaseUpdate)}
             activeClassName={tabClassActive}
             to="/more/"
           >
