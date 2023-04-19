@@ -47,5 +47,5 @@ const baseClasses = classNames(
   "pv3 ph2 pv2-ns ph3-ns",
   "ba br2",
   "f5",
-  "SimpleFocus"
+  "focus-simple"
 );

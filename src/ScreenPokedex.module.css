@@ -1,0 +1,67 @@
+.shinyButton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+  background: var(--color-button1)
+    linear-gradient(to bottom, var(--color-button1) 20%, var(--color-button1b));
+  color: var(--color-fg1);
+  border-color: var(--color-border1);
+}
+
+.shinyButton:hover {
+  background: var(--color-button-hover1)
+    linear-gradient(
+      to bottom,
+      var(--color-button-hover1) 20%,
+      var(--color-button-hover1b)
+    );
+}
+
+.shinyButton[aria-pressed="true"] {
+  border-color: var(--color-fg1);
+  background: var(--color-fg1);
+  color: var(--color-bg1);
+}
+
+.shinyButton:focus {
+  outline: 2px solid var(--color-fg1);
+  outline-offset: 2px;
+}
+
+.monster {
+  display: grid;
+  row-gap: 1rem;
+  grid-template-areas:
+    "icon"
+    "links"
+    "stats";
+}
+
+.monsterIcon {
+  grid-area: icon;
+}
+
+.monsterLinks {
+  grid-area: links;
+  justify-content: center;
+}
+
+.monsterStats {
+  grid-area: stats;
+}
+
+@media (min-width: 60em) {
+  .monster {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "icon stats"
+      "icon links";
+  }
+
+  .monsterLinks {
+    grid-area: links;
+    justify-content: end;
+    align-items: end;
+  }
+}

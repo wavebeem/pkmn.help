@@ -1,0 +1,44 @@
+.checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+  background: var(--type-color);
+  border: 1px solid var(--color-vibrant-border1);
+  border-radius: 0.125rem;
+}
+
+.checkbox:checked {
+  background-clip: padding-box;
+  --_blur: 0.5px;
+  --_size: 0.125em;
+  --_start: calc(50% - 0.5 * var(--_size));
+  --_end: calc(var(--_start) + var(--_size));
+  border-color: hsl(0, 0%, 0%, 0.5);
+  background-color: white;
+  background-image: linear-gradient(
+      45deg,
+      transparent,
+      transparent calc(var(--_start) - var(--_blur)),
+      black var(--_start),
+      black var(--_end),
+      transparent calc(var(--_end) + var(--_blur)),
+      transparent
+    ),
+    linear-gradient(
+      -45deg,
+      transparent,
+      transparent calc(var(--_start) - var(--_blur)),
+      black var(--_start),
+      black var(--_end),
+      transparent calc(var(--_end) + var(--_blur)),
+      transparent
+    );
+  box-shadow: inset 0 0 0 2px white;
+}
+
+.checkbox:disabled {
+  background: var(--color-bg2);
+  border-color: var(--color-fg4);
+}

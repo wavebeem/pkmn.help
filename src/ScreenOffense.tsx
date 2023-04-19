@@ -75,7 +75,7 @@ export function ScreenOffense({
             <div className="pt2">
               <Link
                 to="/offense/coverage/"
-                className="underline fg-link br1 OutlineFocus"
+                className="underline fg-link br1 focus-outline"
               >
                 {t("offense.coverage.edit")}
               </Link>{" "}

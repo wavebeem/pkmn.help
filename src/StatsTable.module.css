@@ -1,0 +1,6 @@
+.table {
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: max-content max-content 1fr;
+  height: min-content;
+}

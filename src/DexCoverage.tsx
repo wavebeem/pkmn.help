@@ -46,7 +46,7 @@ export function DexCoverage({
             <div>{getPercent(weak.length)}%&nbsp;</div>
             <Link
               to={`/offense/coverage/weakness/?${typeParams}`}
-              className="underline fg-link br1 OutlineFocus"
+              className="underline fg-link br1 focus-outline"
             >
               {t("offense.coverage.weakness")}
             </Link>
@@ -64,7 +64,7 @@ export function DexCoverage({
             <div>{getPercent(normal.length)}%&nbsp;</div>
             <Link
               to={`/offense/coverage/normal/?${typeParams}`}
-              className="underline fg-link br1 OutlineFocus"
+              className="underline fg-link br1 focus-outline"
             >
               {t("offense.coverage.normal")}
             </Link>
@@ -82,7 +82,7 @@ export function DexCoverage({
             <div>{getPercent(resist.length)}%&nbsp;</div>
             <Link
               to={`/offense/coverage/resistance/?${typeParams}`}
-              className="underline fg-link br1 OutlineFocus"
+              className="underline fg-link br1 focus-outline"
             >
               {t("offense.coverage.resistance")}
             </Link>
