@@ -101,7 +101,7 @@ function Monster({ pokemon }: MonsterProps) {
         {pokemon.hasShiny && (
           <button
             className={classNames(
-              "br-pill ba pa2 flex select-none gap1 items-center active-squish fill-currentColor",
+              "br-pill ba pa2 flex select-none gap1 items-center active-squish fill-currentcolor",
               styles.shinyButton,
               "button-shadow"
             )}
@@ -119,8 +119,8 @@ function Monster({ pokemon }: MonsterProps) {
           </button>
         )}
       </div>
-      <div className="Monster gap3">
-        <div className="Monster-icon flex flex-column">
+      <div className={`${styles.monster} gap3`}>
+        <div className={`${styles.monsterIcon} flex flex-column`}>
           <div className="flex flex-column">
             <div className="pv3 flex justify-center">
               <MonsterImage
@@ -138,7 +138,7 @@ function Monster({ pokemon }: MonsterProps) {
             </div>
           </div>
         </div>
-        <div className="Monster-links flex flex-wrap gap3">
+        <div className={`${styles.monsterLinks} flex flex-wrap gap3`}>
           <a
             aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}
             className="br1 underline fg-link OutlineFocus"
@@ -164,7 +164,9 @@ function Monster({ pokemon }: MonsterProps) {
             {t("pokedex.defense.text")}
           </Link>
         </div>
-        <div className="Monster-stats flex flex-column justify-center flex-auto gap3">
+        <div
+          className={`${styles.monsterStats} flex flex-column justify-center flex-auto gap3`}
+        >
           <StatsTable pokemon={pokemon} />
         </div>
       </div>

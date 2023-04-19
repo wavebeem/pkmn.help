@@ -122,8 +122,8 @@
   white-space: pre-wrap;
 }
 
-.fill-currentColor {
-  fill: currentColor;
+.fill-currentcolor {
+  fill: currentcolor;
 }
 
 .w0 {
@@ -290,28 +290,6 @@ button {
   color: var(--color-bg1);
 }
 
-.Monster {
-  display: grid;
-  row-gap: 1rem;
-  grid-template-areas:
-    "icon"
-    "links"
-    "stats";
-}
-
-.Monster-icon {
-  grid-area: icon;
-}
-
-.Monster-links {
-  grid-area: links;
-  justify-content: center;
-}
-
-.Monster-stats {
-  grid-area: stats;
-}
-
 @media (min-width: 40em) {
   .ButtonGrid {
     grid-template-columns: 1fr 4fr;
@@ -323,21 +301,6 @@ button {
 
   .grid-col2 {
     grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media (min-width: 60em) {
-  .Monster {
-    grid-template-columns: 220px 1fr;
-    grid-template-areas:
-      "icon stats"
-      "icon links";
-  }
-
-  .Monster-links {
-    grid-area: links;
-    justify-content: end;
-    align-items: end;
   }
 }
 

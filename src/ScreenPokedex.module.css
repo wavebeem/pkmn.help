@@ -28,3 +28,40 @@
   outline: 2px solid var(--color-fg1);
   outline-offset: 2px;
 }
+
+.monster {
+  display: grid;
+  row-gap: 1rem;
+  grid-template-areas:
+    "icon"
+    "links"
+    "stats";
+}
+
+.monsterIcon {
+  grid-area: icon;
+}
+
+.monsterLinks {
+  grid-area: links;
+  justify-content: center;
+}
+
+.monsterStats {
+  grid-area: stats;
+}
+
+@media (min-width: 60em) {
+  .monster {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "icon stats"
+      "icon links";
+  }
+
+  .monsterLinks {
+    grid-area: links;
+    justify-content: end;
+    align-items: end;
+  }
+}
