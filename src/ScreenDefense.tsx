@@ -36,7 +36,7 @@ const tabClass = classNames([
   "active-squish",
 ]);
 
-const tabClassActive = classNames(["TabBar-Item-Selected"]);
+const tabClassActive = classNames(["button-selected"]);
 
 interface State {
   mode: Mode;

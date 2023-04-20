@@ -26,7 +26,7 @@ export function MultiTypeSelector({
     normal: "border1 bg1 fg1 button-bg button-shadow focus-simple",
   };
   return (
-    <div className="grid gap2 MultiTypeSelector-Container">
+    <div className="grid gap2 columns-type-selector">
       {typesForGeneration(generation).map((type) => {
         const isChecked = value.includes(type);
         const styleKey = isChecked ? "selected" : "normal";

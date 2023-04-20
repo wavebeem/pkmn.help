@@ -35,7 +35,7 @@ const tabClass = classNames([
   "active-squish",
 ]);
 
-const tabClassActive = classNames(["TabBar-Item-Selected"]);
+const tabClassActive = classNames(["button-selected"]);
 
 function getFallback(key: string): string {
   if (key === "title") {

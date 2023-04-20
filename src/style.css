@@ -168,8 +168,7 @@
   }
 }
 
-.MultiTypeSelector-Container,
-.TypeSelector-Container {
+.columns-type-selector {
   grid-template-columns: repeat(
     auto-fill,
     minmax(calc(var(--type-min-width) + 2.5rem + 2px), 1fr)
@@ -237,7 +236,7 @@ button {
   filter: drop-shadow(4px 4px 0 rgb(0 0 0 / 10%));
 }
 
-.TabBar-Item-Selected {
+.button-selected {
   border-color: var(--color-fg1);
   background: var(--color-fg1);
   color: var(--color-bg1);
