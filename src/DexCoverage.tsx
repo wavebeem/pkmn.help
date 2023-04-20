@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Generation } from "./data-generations";
 import { partitionMatchups } from "./data-matchups";
 import { CoverageType, Type } from "./data-types";
-import { PercentBar } from "./PercentBar";
+import { Meter } from "./Meter";
 
 interface DexCoverageProps {
   generation: Generation;
@@ -37,7 +37,7 @@ export function DexCoverage({
   return (
     <div className="tabular-nums mw5 flex flex-column lh-copy">
       <div className="pt3" />
-      <PercentBar value={weak.length} max={total} />
+      <Meter value={weak.length} max={total} />
       <div className="flex w-100">
         {isLoading ? (
           <div className="flex-auto">{t("general.loading")}</div>
@@ -55,7 +55,7 @@ export function DexCoverage({
         )}
       </div>
       <div className="pt3" />
-      <PercentBar value={normal.length} max={total} />
+      <Meter value={normal.length} max={total} />
       <div className="flex w-100">
         {isLoading ? (
           <div className="flex-auto">{t("general.loading")}</div>
@@ -73,7 +73,7 @@ export function DexCoverage({
         )}
       </div>
       <div className="pt3" />
-      <PercentBar value={resist.length} max={total} />
+      <Meter value={resist.length} max={total} />
       <div className="flex w-100">
         {isLoading ? (
           <div className="flex-auto">{t("general.loading")}</div>
