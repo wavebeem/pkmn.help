@@ -176,12 +176,6 @@
   );
 }
 
-.ButtonGrid {
-  display: grid;
-  grid-gap: 1rem;
-  align-items: start;
-}
-
 button {
   /* https://caniuse.com/css-appearance */
   -webkit-appearance: none;
@@ -243,19 +237,6 @@ button {
   filter: drop-shadow(4px 4px 0 rgb(0 0 0 / 10%));
 }
 
-.TabBar {
-  border-color: var(--color-border2);
-  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
-  gap: 0.5rem;
-  flex-wrap: wrap;
-  padding: 1rem;
-  padding-bottom: 0.75rem;
-  padding-top: 1.25rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-}
-
 .TabBar-Item-Selected {
   border-color: var(--color-fg1);
   background: var(--color-fg1);
@@ -263,14 +244,6 @@ button {
 }
 
 @media (min-width: 40em) {
-  .ButtonGrid {
-    grid-template-columns: 1fr 4fr;
-  }
-
-  .TabBar {
-    display: flex;
-  }
-
   .grid-col2 {
     grid-template-columns: 1fr 1fr;
   }

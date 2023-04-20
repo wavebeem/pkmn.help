@@ -81,3 +81,22 @@
   background: var(--color-badge);
   box-shadow: 0 0 0 2px var(--color-bg1);
 }
+
+.tabBar {
+  border-color: var(--color-border2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  padding-bottom: 0.75rem;
+  padding-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+@media (min-width: 40em) {
+  .tabBar {
+    display: flex;
+  }
+}

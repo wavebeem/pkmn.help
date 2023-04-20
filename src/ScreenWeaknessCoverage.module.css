@@ -1,0 +1,10 @@
+.buttonGrid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 40em) {
+  .buttonGrid {
+    grid-template-columns: 1fr 4fr;
+  }
+}

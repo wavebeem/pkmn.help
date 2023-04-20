@@ -15,6 +15,7 @@ import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
 import { useTypeCount } from "./useTypeCount";
 import Spinner from "./Spinner";
+import styles from "./ScreenWeaknessCoverage.module.css";
 
 interface WeaknessCoverageProps {
   setCoverageTypes: (types: CoverageType[]) => void;
@@ -146,7 +147,7 @@ export function ScreenWeaknessCoverage({
       {isLoading ? (
         <Spinner />
       ) : (
-        <div className="pt2 items-center ButtonGrid">
+        <div className={`pt2 items-center ${styles.buttonGrid}`}>
           <Button
             onClick={() => {
               saveCSV();
