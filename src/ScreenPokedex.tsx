@@ -16,6 +16,7 @@ import { useComputedLanguage } from "./useComputedLanguage";
 import { useSearch } from "./useSearch";
 import { IconSparkles } from "./IconSparkles";
 import styles from "./ScreenPokedex.module.css";
+import Spinner from "./Spinner";
 
 const nbsp = "\u00a0";
 
@@ -275,7 +276,7 @@ export function ScreenPokedex({
         </Link>
       </div>
       {isLoading ? (
-        <div className="Spinner center mt4 f2" />
+        <Spinner />
       ) : (
         <Paginator
           currentPage={page}

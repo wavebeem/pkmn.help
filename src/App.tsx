@@ -23,6 +23,7 @@ import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
 import styles from "./App.module.css";
+import Spinner from "./Spinner";
 
 const tabClass = classNames([
   "no-underline",
@@ -192,7 +193,7 @@ export function App() {
             {t("navigation.more")}
           </NavLink>
         </nav>
-        <React.Suspense fallback={<div className="Spinner center mt4 f2" />}>
+        <React.Suspense fallback={<Spinner />}>
           <Switch>
             <Route
               exact

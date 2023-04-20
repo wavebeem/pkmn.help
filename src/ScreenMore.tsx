@@ -10,6 +10,7 @@ import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useTypeCount } from "./useTypeCount";
+import Spinner from "./Spinner";
 
 export interface ScreenMoreProps {
   needsAppUpdate: boolean;

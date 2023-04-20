@@ -182,21 +182,6 @@
   align-items: start;
 }
 
-.Spinner {
-  border-radius: 9999px;
-  width: 1em;
-  height: 1em;
-  border: 2px solid;
-  border-right-color: transparent;
-  animation: 1s linear infinite Spinner-spin;
-}
-
-@keyframes Spinner-spin {
-  100% {
-    transform: rotate(1turn);
-  }
-}
-
 button {
   /* https://caniuse.com/css-appearance */
   -webkit-appearance: none;

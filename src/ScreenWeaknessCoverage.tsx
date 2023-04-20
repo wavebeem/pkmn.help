@@ -14,6 +14,7 @@ import { IconArrowLeft } from "./IconArrows";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
 import { useTypeCount } from "./useTypeCount";
+import Spinner from "./Spinner";
 
 interface WeaknessCoverageProps {
   setCoverageTypes: (types: CoverageType[]) => void;
@@ -143,7 +144,7 @@ export function ScreenWeaknessCoverage({
       <p>{t("coverage.paragraph2")}</p>
       <p>{t("coverage.paragraph3")}</p>
       {isLoading ? (
-        <div className="Spinner center mt4 f2" />
+        <Spinner />
       ) : (
         <div className="pt2 items-center ButtonGrid">
           <Button
