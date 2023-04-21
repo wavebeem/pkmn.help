@@ -134,10 +134,6 @@
   max-width: max-content;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .cursor-na {
   cursor: not-allowed;
 }
@@ -246,10 +242,6 @@ button {
   .grid-col2 {
     grid-template-columns: 1fr 1fr;
   }
-}
-
-.text-shadow-black {
-  text-shadow: 0 0 3px black;
 }
 
 .subtle-hr {
