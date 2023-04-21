@@ -1,0 +1,102 @@
+.easterEgg {
+  pointer-events: none;
+  position: fixed;
+  z-index: 1;
+  bottom: 0;
+  left: 50vw;
+  transform: translateX(-50%) translateY(10vh);
+  opacity: 0;
+}
+
+.easterEgg[data-animate="true"] {
+  animation: 2s easterEgg_animation;
+}
+
+.easterEgg img {
+  filter: drop-shadow(0 0 1px white) drop-shadow(0 0 2px white)
+    drop-shadow(0 0 3px white) drop-shadow(0 0 4px white)
+    drop-shadow(0 0 5px white) drop-shadow(0 0 6px white)
+    drop-shadow(0 0 7px rgb(0 0 0 / 20%));
+}
+
+@keyframes easterEgg_animation {
+  10%,
+  95% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10.5vh) rotateZ(2deg);
+  }
+  15%,
+  90% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-10vh);
+  }
+}
+
+.header {
+  --border-size: 8px;
+  --circle-size: 36px;
+  background-color: var(--color-pokeball);
+  border-bottom: var(--border-size) solid #111;
+  padding: 1rem;
+  padding-top: calc(0.55 * var(--circle-size));
+  padding-bottom: calc(0.55 * var(--circle-size));
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.headerButton {
+  background: #fff;
+  border: 6px solid #111;
+  box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 7px #ccc;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: calc(-0.5 * var(--border-size));
+  transform: translateX(-50%) translateY(50%);
+  background-clip: content-box;
+}
+
+.headerButton:hover {
+  filter: brightness(0.95);
+}
+
+.headerButton:active {
+  transform: translateX(-50%) translateY(50%) translateY(0.5px) scale(0.97);
+}
+
+.pleaseUpdate {
+  position: relative;
+}
+
+.pleaseUpdate::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 9999px;
+  background: var(--color-badge);
+  box-shadow: 0 0 0 2px var(--color-bg1);
+}
+
+.tabBar {
+  border-color: var(--color-border2);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.05);
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 1rem;
+  padding-bottom: 0.75rem;
+  padding-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+@media (min-width: 40em) {
+  .tabBar {
+    display: flex;
+  }
+}

@@ -20,7 +20,7 @@ export function Search({ updateSearch, search }: SearchProps) {
         width={iconSize}
         height={iconSize}
         role="presentation"
-        className="absolute fg3 fill-currentColor"
+        className="absolute fg3 fill-currentcolor"
         style={{ left: 10, top: 8 }}
       />
       <input
@@ -33,7 +33,7 @@ export function Search({ updateSearch, search }: SearchProps) {
         className={classNames(
           "f5 w-100 border-box",
           "pv2",
-          "SimpleFocus",
+          "focus-simple",
           "inset-shadow",
           "br-pill ba",
           "bg1",
@@ -57,7 +57,7 @@ export function Search({ updateSearch, search }: SearchProps) {
             ref.current.focus();
           }
         }}
-        className={classNames("absolute fg3 fill-currentColor", {
+        className={classNames("absolute fg3 fill-currentcolor", {
           dn: search === "",
         })}
         style={{ right: 6, top: 6 }}

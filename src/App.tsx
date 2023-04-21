@@ -22,17 +22,20 @@ import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
+import styles from "./App.module.css";
+import Spinner from "./Spinner";
 
 const tabClass = classNames([
   "no-underline",
   "pv1 ph3 f5",
-  "TabFocus",
+  "focus-tab",
   "tc b",
   "ba border1 br-pill",
   "bg1 fg1",
+  "active-squish",
 ]);
 
-const tabClassActive = classNames(["TabBar-Item-Selected"]);
+const tabClassActive = classNames(["button-selected"]);
 
 function getFallback(key: string): string {
   if (key === "title") {
@@ -129,12 +132,12 @@ export function App() {
           <meta name="theme-color" content={themeColor} />
           <title>{t("title")}</title>
         </Helmet>
-        <h1 className="f3-ns f4 tc relative white PokeballHeader">
-          <Link to="/" className="no-underline white OutlineFocus br1">
+        <h1 className={`f3-ns f4 tc relative white ${styles.header}`}>
+          <Link to="/" className="no-underline white focus-outline br1">
             {t("title")}
           </Link>
           <div
-            className="PokeballHeaderButton"
+            className={styles.headerButton}
             onClick={(event) => {
               event.preventDefault();
               const i = Math.floor(Math.random() * AllPokemon.length);
@@ -145,7 +148,7 @@ export function App() {
           />
           {easterEgg && (
             <div
-              className="EasterEgg"
+              className={styles.easterEgg}
               data-animate={easterEggLoadedID === easterEgg.id}
             >
               <MonsterImage
@@ -160,7 +163,7 @@ export function App() {
             </div>
           )}
         </h1>
-        <nav className="bg1 bb border2 TabBar pb2 ph2">
+        <nav className={`bg1 bb border2 ${styles.tabBar} pb2 ph2`}>
           <NavLink
             className={tabClass}
             activeClassName={tabClassActive}
@@ -183,14 +186,14 @@ export function App() {
             {t("navigation.pokedex")}
           </NavLink>
           <NavLink
-            className={classNames(tabClass, needRefresh && "PleaseUpdate")}
+            className={classNames(tabClass, needRefresh && styles.pleaseUpdate)}
             activeClassName={tabClassActive}
             to="/more/"
           >
             {t("navigation.more")}
           </NavLink>
         </nav>
-        <React.Suspense fallback={<div className="Spinner center mt4 f2" />}>
+        <React.Suspense fallback={<Spinner />}>
           <Switch>
             <Route
               exact

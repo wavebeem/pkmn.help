@@ -1,0 +1,26 @@
+.wrapper {
+  position: relative;
+}
+
+.wrapper > select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.wrapper:after {
+  content: "";
+  position: absolute;
+  width: 0.5rem;
+  height: 0.5rem;
+  border: 3px solid;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45deg);
+  right: 1rem;
+  top: 30%;
+  pointer-events: none;
+}
+
+.wrapper > select > option {
+  font-weight: initial;
+}

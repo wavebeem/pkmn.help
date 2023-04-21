@@ -45,7 +45,7 @@ export function ScreenPokedexHelp({ pokedexParams }: ScreenPokedexHelpProps) {
         <IconArrowLeft className="w1 h1" aria-hidden="true" />
         <Link
           to={`/pokedex/${pokedexParams}`}
-          className="underline fg-link br1 OutlineFocus"
+          className="underline fg-link br1 focus-outline"
         >
           {t("pokedexHelp.back")}
         </Link>

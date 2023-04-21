@@ -15,6 +15,8 @@ import { StatsTable } from "./StatsTable";
 import { useComputedLanguage } from "./useComputedLanguage";
 import { useSearch } from "./useSearch";
 import { IconSparkles } from "./IconSparkles";
+import styles from "./ScreenPokedex.module.css";
+import Spinner from "./Spinner";
 
 const nbsp = "\u00a0";
 
@@ -100,8 +102,9 @@ function Monster({ pokemon }: MonsterProps) {
         {pokemon.hasShiny && (
           <button
             className={classNames(
-              "br-pill ba pa2 flex select-none gap1 items-center active-squish fill-currentColor",
-              "ShinyButton button-shadow"
+              "br-pill ba pa2 flex select-none gap1 items-center active-squish fill-currentcolor",
+              styles.shinyButton,
+              "button-shadow"
             )}
             title={t("pokedex.shiny.text")}
             aria-labelledby={`${idPrefix}-shiny ${idPrefix}-name ${idPrefix}-form`}
@@ -117,8 +120,8 @@ function Monster({ pokemon }: MonsterProps) {
           </button>
         )}
       </div>
-      <div className="Monster gap3">
-        <div className="Monster-icon flex flex-column">
+      <div className={`${styles.monster} gap3`}>
+        <div className={`${styles.monsterIcon} flex flex-column`}>
           <div className="flex flex-column">
             <div className="pv3 flex justify-center">
               <MonsterImage
@@ -136,10 +139,10 @@ function Monster({ pokemon }: MonsterProps) {
             </div>
           </div>
         </div>
-        <div className="Monster-links flex flex-wrap gap3">
+        <div className={`${styles.monsterLinks} flex flex-wrap gap3`}>
           <a
             aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}
-            className="br1 underline fg-link OutlineFocus"
+            className="br1 underline fg-link focus-outline"
             href={getWikiLink(i18n.language, pokemon)}
             id={`${idPrefix}-wiki`}
           >
@@ -147,7 +150,7 @@ function Monster({ pokemon }: MonsterProps) {
           </a>
           <Link
             aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
-            className="br1 underline fg-link OutlineFocus"
+            className="br1 underline fg-link focus-outline"
             to={`/offense/?${params}#matchup-offense`}
             id={`${idPrefix}-offense`}
           >
@@ -155,14 +158,16 @@ function Monster({ pokemon }: MonsterProps) {
           </Link>
           <Link
             aria-labelledby={`${idPrefix}-defense ${idPrefix}-name ${idPrefix}-form`}
-            className="br1 underline fg-link OutlineFocus"
+            className="br1 underline fg-link focus-outline"
             to={`/defense/?${params}#matchup-defense`}
             id={`${idPrefix}-defense`}
           >
             {t("pokedex.defense.text")}
           </Link>
         </div>
-        <div className="Monster-stats flex flex-column justify-center flex-auto gap3">
+        <div
+          className={`${styles.monsterStats} flex flex-column justify-center flex-auto gap3`}
+        >
           <StatsTable pokemon={pokemon} />
         </div>
       </div>
@@ -264,14 +269,14 @@ export function ScreenPokedex({
         </span>
         <Link
           to="/pokedex/help/"
-          className="br1 underline fg-link OutlineFocus ml3 flex-none"
+          className="br1 underline fg-link focus-outline ml3 flex-none"
           aria-label={t("pokedex.search.helpLong")}
         >
           {t("pokedex.search.help")}
         </Link>
       </div>
       {isLoading ? (
-        <div className="Spinner center mt4 f2" />
+        <Spinner />
       ) : (
         <Paginator
           currentPage={page}

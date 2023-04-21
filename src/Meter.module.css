@@ -1,0 +1,10 @@
+.meter {
+  box-shadow: inset 0 0 0 1px var(--color-border2);
+}
+
+.meterFill {
+  width: var(--meter-width);
+  background: var(--meter-color);
+  box-shadow: inset 0 0 0 1px var(--color-vibrant-border1);
+  transition: width 250ms;
+}

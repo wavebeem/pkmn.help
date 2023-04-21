@@ -11,7 +11,7 @@ const buttonClasses = classNames(
   "no-underline",
   "ba br2 pv2 ph3",
   "f5",
-  "SimpleFocus",
+  "focus-simple",
   "border1 button-shadow button-bg button-bg-hover color-inherit active-squish"
 );
 

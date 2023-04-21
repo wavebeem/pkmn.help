@@ -2,7 +2,9 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
 import { Pokemon, Type } from "./data-types";
-import { StatBar } from "./StatBar";
+import { Meter } from "./Meter";
+import styles from "./StatsTable.module.css";
+import { typeColor } from "./colors";
 
 const statMax = 255;
 
@@ -16,7 +18,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
   const hasRoomForFullText = useMediaQuery("(min-width: 600px)");
 
   return (
-    <div className="StatsTable tabular-nums">
+    <div className={`${styles.table} tabular-nums`}>
       <div
         className="b tl"
         title={t("pokedex.stats.hpLong")}
@@ -25,7 +27,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
         {t("pokedex.stats.hp")}
       </div>
       <div className="tr">{hp}</div>
-      <StatBar max={statMax} value={hp} type={Type.fire} />
+      <Meter max={statMax} value={hp} color={typeColor(Type.fire)} />
 
       <div
         className="b tl"
@@ -37,7 +39,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           : t("pokedex.stats.attack")}
       </div>
       <div className="tr">{attack}</div>
-      <StatBar max={statMax} value={attack} type={Type.fighting} />
+      <Meter max={statMax} value={attack} color={typeColor(Type.fighting)} />
 
       <div
         className="b tl"
@@ -49,7 +51,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           : t("pokedex.stats.defense")}
       </div>
       <div className="tr">{defense}</div>
-      <StatBar max={statMax} value={defense} type={Type.electric} />
+      <Meter max={statMax} value={defense} color={typeColor(Type.electric)} />
 
       <div
         className="b tl"
@@ -63,7 +65,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           : t("pokedex.stats.specialAttack")}
       </div>
       <div className="tr">{spAttack}</div>
-      <StatBar max={statMax} value={spAttack} type={Type.grass} />
+      <Meter max={statMax} value={spAttack} color={typeColor(Type.grass)} />
 
       <div
         className="b tl"
@@ -77,7 +79,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           : t("pokedex.stats.specialDefense")}
       </div>
       <div className="tr">{spDefense}</div>
-      <StatBar max={statMax} value={spDefense} type={Type.water} />
+      <Meter max={statMax} value={spDefense} color={typeColor(Type.water)} />
 
       <div
         className="b tl"
@@ -89,7 +91,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           : t("pokedex.stats.speed")}
       </div>
       <div className="tr">{speed}</div>
-      <StatBar max={statMax} value={speed} type={Type.fairy} />
+      <Meter max={statMax} value={speed} color={typeColor(Type.fairy)} />
 
       <div
         className="b tl"

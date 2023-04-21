@@ -1,5 +1,14 @@
 # Changelog
 
+## 2023-04-19
+
+- Fixed a bug where button animations disappeared
+
+## 2023-04-18
+
+- Pokemon bounce when entering their shiny form in the Pokedex
+- Percentage bars on the offense page animate when changing now
+
 ## 2023-04-17
 
 - Shiny link is now a toggle button in the top right of each Pokedex entry

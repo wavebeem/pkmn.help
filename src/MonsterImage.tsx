@@ -3,6 +3,7 @@ import * as React from "react";
 import { typeColor } from "./colors";
 import { Type } from "./data-types";
 import { getImage } from "./getImage";
+import styles from "./MonsterImage.module.css";
 
 type State = "loading" | "loaded" | "errored";
 
@@ -33,7 +34,10 @@ export function MonsterImage({
   }, []);
   return (
     <div
-      className={classNames(state === "errored" && ["MonsterImage br-pill"])}
+      className={classNames(
+        state === "errored" && [styles.image, "br-pill"],
+        styles.bounce
+      )}
       style={{
         ["--type-color" as any]: typeColor(types[0]),
       }}
@@ -42,6 +46,7 @@ export function MonsterImage({
         src={getImage(pokemonID + (shiny ? "-shiny" : ""))}
         role="presentation"
         alt=""
+        data-shiny={shiny}
         className={classNames("db img-shadow h-auto", {
           "o-0": state === "errored",
           "img-crisp": true,

@@ -29,13 +29,14 @@ const classH2 = "f5 mb2 mt4";
 const tabClass = classNames([
   "no-underline",
   "pv1 ph3 f5",
-  "TabFocus",
+  "focus-tab",
   "tc",
   "ba border1 br-pill",
   "bg1 fg1",
+  "active-squish",
 ]);
 
-const tabClassActive = classNames(["TabBar-Item-Selected"]);
+const tabClassActive = classNames(["button-selected"]);
 
 interface State {
   mode: Mode;

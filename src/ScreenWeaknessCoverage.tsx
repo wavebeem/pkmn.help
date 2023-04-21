@@ -14,6 +14,8 @@ import { IconArrowLeft } from "./IconArrows";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
 import { useTypeCount } from "./useTypeCount";
+import Spinner from "./Spinner";
+import styles from "./ScreenWeaknessCoverage.module.css";
 
 interface WeaknessCoverageProps {
   setCoverageTypes: (types: CoverageType[]) => void;
@@ -143,9 +145,9 @@ export function ScreenWeaknessCoverage({
       <p>{t("coverage.paragraph2")}</p>
       <p>{t("coverage.paragraph3")}</p>
       {isLoading ? (
-        <div className="Spinner center mt4 f2" />
+        <Spinner />
       ) : (
-        <div className="pt2 items-center ButtonGrid">
+        <div className={`pt2 items-center ${styles.buttonGrid}`}>
           <Button
             onClick={() => {
               saveCSV();
@@ -181,7 +183,7 @@ export function ScreenWeaknessCoverage({
         <IconArrowLeft className="w1 h1" aria-hidden="true" />
         <Link
           to={`/offense/${offenseParams}`}
-          className="underline fg-link br1 OutlineFocus"
+          className="underline fg-link br1 focus-outline"
         >
           {t("coverage.back")}
         </Link>

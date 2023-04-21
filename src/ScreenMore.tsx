@@ -10,6 +10,7 @@ import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useTypeCount } from "./useTypeCount";
+import Spinner from "./Spinner";
 
 export interface ScreenMoreProps {
   needsAppUpdate: boolean;
@@ -57,7 +58,7 @@ export function ScreenMore({
         <div>
           <a
             href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md"
-            className="br1 underline fg-link OutlineFocus"
+            className="br1 underline fg-link focus-outline"
           >
             {t("banners.updateReady.whatsNew")}
           </a>
@@ -74,7 +75,7 @@ export function ScreenMore({
             homepage: (
               <a
                 href="https://www.wavebeem.com"
-                className="br1 underline fg-link OutlineFocus"
+                className="br1 underline fg-link focus-outline"
               />
             ),
           }}
@@ -87,7 +88,7 @@ export function ScreenMore({
           components={{
             email: (
               <a
-                className="br1 underline fg-link OutlineFocus"
+                className="br1 underline fg-link focus-outline"
                 href="mailto:pkmn@wavebeem.com"
               />
             ),
@@ -194,7 +195,7 @@ export function ScreenMore({
               changelog: (
                 <a
                   href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md"
-                  className="br1 underline fg-link OutlineFocus"
+                  className="br1 underline fg-link focus-outline"
                 />
               ),
             }}
@@ -230,7 +231,7 @@ export function ScreenMore({
               plausible: (
                 <a
                   href="https://plausible.io/pkmn.help"
-                  className="br1 underline fg-link OutlineFocus"
+                  className="br1 underline fg-link focus-outline"
                 />
               ),
             }}
@@ -338,7 +339,7 @@ export function ScreenMore({
               github: (
                 <a
                   href="https://github.com/wavebeem/pkmn.help"
-                  className="br1 underline fg-link OutlineFocus"
+                  className="br1 underline fg-link focus-outline"
                 />
               ),
             }}
@@ -367,14 +368,14 @@ export function ScreenMore({
         <p>
           Pokédex data is from {}
           <a
-            className="br1 underline fg-link OutlineFocus"
+            className="br1 underline fg-link focus-outline"
             href="https://pokeapi.co/"
           >
             PokéAPI
           </a>
           {" & "}
           <a
-            className="br1 underline fg-link OutlineFocus"
+            className="br1 underline fg-link focus-outline"
             href="https://pokemondb.net/"
           >
             Pokémon Database
@@ -385,7 +386,7 @@ export function ScreenMore({
         <p>
           pkmn.help &copy; 2013&ndash;{year}{" "}
           <a
-            className="br1 underline fg-link OutlineFocus"
+            className="br1 underline fg-link focus-outline"
             href="https://www.wavebeem.com"
           >
             Brian Mock
