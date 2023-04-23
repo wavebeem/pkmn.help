@@ -11,6 +11,7 @@ export const i18n = i18next
     lng: detectLanguage(),
     fallbackLng: "en",
     debug: import.meta.env.DEV,
+    returnNull: false,
     interpolation: {
       // Not needed for React lol
       escapeValue: false,

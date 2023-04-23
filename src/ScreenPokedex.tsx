@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import matchSorter from "match-sorter";
+import { matchSorter } from "match-sorter";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useHistory } from "react-router-dom";
