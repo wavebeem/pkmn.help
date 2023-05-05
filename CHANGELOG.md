@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-05-04
+
+- Updated Spanish translations
+
 ## 2023-04-19
 
 - Fixed a bug where button animations disappeared
