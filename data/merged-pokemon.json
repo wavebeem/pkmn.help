@@ -1131,37 +1131,6 @@
     "imageType": "sprite"
   },
   {
-    "name": "pikachu-starter",
-    "speciesNames": {
-      "ja-Hrkt": "ピカチュウ",
-      "roomaji": "Pikachu",
-      "ko": "피카츄",
-      "zh-Hant": "皮卡丘",
-      "fr": "Pikachu",
-      "de": "Pikachu",
-      "es": "Pikachu",
-      "it": "Pikachu",
-      "en": "Pikachu",
-      "ja": "ピカチュウ",
-      "zh-Hans": "皮卡丘"
-    },
-    "formNames": {},
-    "number": 25,
-    "spriteURL": null,
-    "shinySpriteURL": null,
-    "hp": 45,
-    "attack": 80,
-    "defense": 50,
-    "spAttack": 75,
-    "spDefense": 60,
-    "speed": 120,
-    "id": "10158",
-    "types": [
-      "electric"
-    ],
-    "imageType": "sprite"
-  },
-  {
     "name": "raichu",
     "speciesNames": {
       "ja-Hrkt": "ライチュウ",
