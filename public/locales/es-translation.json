@@ -8,13 +8,35 @@
   },
   "offense": {
     "chooseTypes": "Elige los tipos",
-    "dealsXTo": "Inflige {{ x }} a"
+    "dealsXTo": "Inflige {{ x }} a",
+    "coverage": {
+      "heading": "Cobertura Pokédex",
+      "edit": "Modificar lista",
+      "weakness": "Debilidad",
+      "normal": "Normal",
+      "resistance": "Resistencia"
+    },
+    "coverageList": {
+      "empty": "No se han encontrado Pokémon o no se han seleccionado tipos",
+      "weakness": {
+        "heading": "Lista de debilidad",
+        "description": "Estos Pokémon son débiles a al menos uno de los tipos seleccionados."
+      },
+      "normal": {
+        "heading": "Lista de efectividad normal",
+        "description": "Estos Pokémon no están en las listas de debilidades o resistencias de los tipos seleccionados."
+      },
+      "resistance": {
+        "heading": "Lista de resistencia",
+        "description": "Estos Pokémon son resistentes a todos los tipos seleccionados."
+      }
+    }
   },
   "coverage": {
-    "heading": "Rango de efectividad",
+    "heading": "Cobertura Pokédex",
     "paragraph1": "Importa/exporta un archivo CSV con una Pokédex personalizada para ver el rango de efectividad de distintos Pokémon. Crea un archivo CSV personalizado con solo los Pokémon de la tier OverUsed (OU), o incluso crea tus propios Pokémon desde cero.",
     "paragraph2": "Los datos del archivo CSV se cargan por el nombre de la cabecera de la columna, no por el orden de la misma, por lo que puedes añadir o reordenar las columnas si lo deseas (ej. Añade una columna de “tier”, o una de “notas”).",
-    "paragraph3": "Los archivos CSV pueden ser editado con Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, entre otros.",
+    "paragraph3": "Los archivos CSV pueden ser modificados con Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, entre otros.",
     "csvHeaders": {
       "number": "Number",
       "name": "Name",
@@ -31,14 +53,14 @@
       "description": "Importar un archivo CSV con una Pokédex modificada"
     },
     "reset": {
-      "button": "Reiniciar",
-      "description": "Reiniciar a la Pokedéx predeterminada"
+      "button": "Restablecer",
+      "description": "Restablecer a la Pokedéx predeterminada"
     },
     "filename": "pkmn.help type coverage.csv",
     "status": {
-      "imported": "Se importaron {{ n }} formas de Pokémon desde “{{ file }}”",
-      "exported": "Se exportaron las formas predeterminadas de Pokémon",
-      "reset": "Se cargaron las formas predeterminadas de Pokémon",
+      "imported": "Se importaron {{ n }} formularios de Pokémon desde “{{ file }}”",
+      "exported": "Se exportaron los formularios predeterminados de Pokémon",
+      "reset": "Se cargaron los formularios predeterminados de Pokémon",
       "errored": "Error cargando el CSV. No cambies los nombres de los encabezados."
     },
     "back": "Volver a Ataque"
@@ -47,7 +69,30 @@
     "chooseFirst": "Elige el tipo primario",
     "chooseSecond": "Elige el tipo secundario",
     "chooseThird": "Elige el tipo terciario",
-    "takesXFrom": "Sufre {{ x }} por"
+    "takesXFrom": "Sufre {{ x }} por",
+    "mode": {
+      "heading": "Elige un modo",
+      "solo": "Solo",
+      "team": "Equipo"
+    },
+    "team": {
+      "tableHeading": "Recuento de enfrentamientos",
+      "heading": "Modifica el equipo Pokémon",
+      "add": "Añadir Pokémon",
+      "empty": "Ningún Pokémon seleccionado",
+      "displayType": "Formato de la tabla",
+      "weak": "Debilidad",
+      "resist": "Resistencia",
+      "simple": "Simple",
+      "complex": "Complejo",
+      "type": "Tipo",
+      "save": "Guardar",
+      "saveLong": "Guardar {{ name }}",
+      "edit": "Modificar",
+      "editLong": "Modificar {{ name }}",
+      "remove": "Eliminar",
+      "removeLong": "Eliminar {{ name }}"
+    }
   },
   "pokedex": {
     "search": {
@@ -61,6 +106,10 @@
     },
     "defense": {
       "text": "Defensa"
+    },
+    "shiny": {
+      "label": "{{ pokemon }} variocolor",
+      "text": "Variocolor"
     },
     "pagination": {
       "next": "Sig.",
@@ -98,7 +147,7 @@
     },
     "searchByType": {
       "heading": "Busca por tipo",
-      "description": "Aquí hay algunos ejemplo de cómo buscar por tipo."
+      "description": "Aquí hay algunos ejemplos de cómo buscar por tipo."
     },
     "searchExamples": {
       "type": {
@@ -120,12 +169,13 @@
     "contact": {
       "heading": "Contáctame",
       "intro": "Hola, soy <homepage>Brian</homepage> (they/them) e hice la Calculadora de tipos de Pokémon (pkmn.help).",
-      "email": "Por favor, envíe sus pensamientos y agradecimientos por correo electrónico a <email>pkmn@wavebeem.com</email>"
+      "email": "Por favor, envíe sus comentarios y agradecimientos por correo electrónico a <email>pkmn@wavebeem.com</email>"
     },
     "settings": {
       "heading": "Ajustes",
       "language": {
         "label": "Idioma",
+        "default": "Detección automática del idioma",
         "helpText": "El soporte de idiomas está incompleto. Por favor escríbeme por correo electrónico, te pagaré para que traduzcas."
       },
       "theme": {
@@ -139,18 +189,22 @@
       },
       "typeCount": {
         "label": "Número de tipo",
-        "help": "Los Pokémon pueden tener brevemente tres tipos a la vez si son golpeados con “Condena silvana” o “Halloween”. El campo del tipo terciario está oculto de manera predeterminada ya que raramente se usa.",
+        "help": "Los Pokémon pueden tener brevemente tres tipos a la vez si son golpeados con “Condena silvana” o “Halloween”. El campo del tipo terciario está oculto de manera predeterminada, ya que raramente se usa.",
         "values": {
           "2": "Tipo secundario (2)",
           "3": "Tipo terciario (3)"
         }
       }
     },
+    "changes": {
+      "heading": "Novedades",
+      "description": "Consulta las novedades en el <changelog>registro de cambios</changelog>."
+    },
     "help": {
       "heading": "Ayuda",
       "serviceWorker": {
         "description": "Este botón puede ayudar a solucionar problemas en la aplicación.",
-        "button": "Anular el registro del service worker"
+        "button": "Restablecer"
       }
     },
     "privacy": {
@@ -164,15 +218,17 @@
     "thanks": {
       "heading": "Agradecimientos especiales",
       "sections": {
-        "da": "Danish translation",
-        "ru": "Russian translation",
-        "kk": "Kazakh translation",
-        "pt-BR": "Traducción al Portugues Brasilero",
+        "da": "Traducción al Danés",
+        "ru": "Traducción al Ruso",
+        "kk": "Traducción al Kazajo",
+        "pt-BR": "Traducción al Portugués Brasilero",
         "zh-Hans": "Traducción al Chino",
         "ro": "Traducción al Rumano",
+        "pl": "Traducción al Polaco",
         "fr": "Traducción al Francés",
         "de": "Traducción al Alemán",
-        "it": "Traducción al Ataliano",
+        "it": "Traducción al Italiano",
+        "ko": "Traducción al Coreano",
         "ja": "Traducción al Japonés",
         "testing": "Pruebas",
         "other": "Varios Poké Fans anónimos"
@@ -210,6 +266,7 @@
   "banners": {
     "updateReady": {
       "description": "Está disponible una actualización",
+      "whatsNew": "Novedades",
       "update": "Actualizar"
     }
   },
@@ -221,7 +278,7 @@
     "help": "Usa la efectividad de tipo de diferentes generaciones.",
     "byID": {
       "gen1": "Generación 1",
-      "gen2": "Generación 2–5",
+      "gen2": "Generación 2-5",
       "default": "Predeterminada (Generación 6+)"
     }
   }
