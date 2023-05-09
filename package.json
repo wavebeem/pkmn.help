@@ -62,7 +62,6 @@
     "vite-plugin-pwa": "^0.14.7"
   },
   "dependencies": {
-    "@tsconfig/node18": "^1.0.1",
     "@types/classnames": "^2.3.1",
     "@types/match-sorter": "^4.0.0",
     "@types/papaparse": "^5.2.5",

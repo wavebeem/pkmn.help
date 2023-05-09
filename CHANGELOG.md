@@ -1,17 +1,21 @@
 # Changelog
 
+## 2023-05-08
+
+- Fixed a bug where Pikachu showed up twice in the Pokédex
+
 ## 2023-04-19
 
 - Fixed a bug where button animations disappeared
 
 ## 2023-04-18
 
-- Pokemon bounce when entering their shiny form in the Pokedex
+- Pokemon bounce when entering their shiny form in the Pokédex
 - Percentage bars on the offense page animate when changing now
 
 ## 2023-04-17
 
-- Shiny link is now a toggle button in the top right of each Pokedex entry
+- Shiny link is now a toggle button in the top right of each Pokédex entry
 - Hide shiny link for Scarlet/Violet Pokemon since we don't have shiny images for them
 - Improve accessibility for Pokemon links so it's clearer
 
