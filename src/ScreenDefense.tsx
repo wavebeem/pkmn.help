@@ -46,7 +46,7 @@ interface State {
   mode: Mode;
   format: MatchupsTeamProps["format"];
   types: Type[];
-  ability: AbilityName | undefined;
+  ability: AbilityName;
   teamTypesList: Type[][];
   teamAbilityList: AbilityName[];
 }
@@ -99,8 +99,8 @@ export function ScreenDefense({
       }
       return (search.get("team_abilities") || "")
         .split(/\s+/)
-        .map(abilityNameFromString)
-        .filter((t): t is AbilityName => t !== undefined);
+        .filter((str) => str)
+        .map(abilityNameFromString);
     })(),
   };
 
@@ -360,12 +360,11 @@ export function ScreenDefense({
                       size="small"
                       onClick={() => {
                         setTeamIndex(-1);
-                        const list = [...state.teamTypesList];
-                        list.splice(typeIndex, 1);
-                        update({
-                          ...state,
-                          teamTypesList: list,
-                        });
+                        const teamTypesList = [...state.teamTypesList];
+                        teamTypesList.splice(typeIndex, 1);
+                        const teamAbilityList = [...state.teamAbilityList];
+                        teamAbilityList.splice(typeIndex, 1);
+                        update({ ...state, teamTypesList, teamAbilityList });
                       }}
                       aria-label={t("defense.team.removeLong", { name })}
                       title={t("defense.team.removeLong", { name })}
@@ -414,7 +413,20 @@ export function ScreenDefense({
                       label={t("defense.chooseAbility")}
                       value={state.teamAbilityList[typeIndex]}
                       onChange={(event) => {
-                        console.error("TODO: Blah blah", event.target.value);
+                        const ability = abilityNameFromString(
+                          event.target.value
+                        );
+                        if (!ability) {
+                          return;
+                        }
+                        update({
+                          ...state,
+                          teamAbilityList: updateArrayAt(
+                            state.teamAbilityList,
+                            typeIndex,
+                            ability
+                          ),
+                        });
                       }}
                     >
                       <option value="">{t("defense.abilityNames.none")}</option>

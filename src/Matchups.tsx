@@ -31,7 +31,7 @@ interface MatchupsProps {
   kind: "offense" | "defense";
   generation: Generation;
   types: Type[];
-  ability: AbilityName | undefined;
+  ability: AbilityName;
 }
 
 export function Matchups({ kind, generation, types, ability }: MatchupsProps) {

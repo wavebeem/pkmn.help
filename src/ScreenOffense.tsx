@@ -100,7 +100,7 @@ export function ScreenOffense({
           kind="offense"
           generation={generation}
           types={offenseTypes}
-          ability={undefined}
+          ability="none"
         />
       </div>
     </main>

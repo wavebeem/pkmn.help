@@ -149,7 +149,7 @@ export function partitionMatchups({
         generation,
         defenseTypes: ct.types,
         offenseType: t,
-        abilityName: undefined,
+        abilityName: "none",
       })
     );
     const max = Math.max(...arr);
@@ -174,7 +174,7 @@ export function matchupFor({
   generation: Generation;
   defenseTypes: Type[];
   offenseType: Type;
-  abilityName: AbilityName | undefined;
+  abilityName: AbilityName;
 }): number {
   return defenseTypes
     .filter((t) => t !== Type.none)
@@ -248,7 +248,7 @@ export function offensiveMatchups(
         generation: gen,
         defenseTypes: [t],
         offenseType: offense,
-        abilityName: undefined,
+        abilityName: "none",
       });
     });
     const max = Math.max(...effs);
@@ -260,7 +260,7 @@ export function offensiveMatchups(
 export function defensiveMatchups(
   gen: Generation,
   defenseTypes: Type[],
-  abilityName: AbilityName | undefined
+  abilityName: AbilityName
 ): GroupedMatchups {
   const matchups = typesForGeneration(gen).map((t) => {
     const eff = matchupFor({

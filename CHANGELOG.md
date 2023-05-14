@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-05-13
+
+- Added Pokémon abilities such as "Thick Fat" and "Volt Absorb" to the defense page for solo and team matchups
+
 ## 2023-05-08
 
 - Fixed a bug where Pikachu showed up twice in the Pokédex

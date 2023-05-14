@@ -48,34 +48,29 @@ export type Type = ValueOf<typeof Type>;
 
 export type Ability = { type: Type; value: number }[];
 
-function abilityResist(...types: Type[]): Ability {
-  const value = 0.5;
-  return types.map((type) => ({ type, value }));
-}
-
-function abilityImmune(...types: Type[]): Ability {
-  const value = 0;
+function createAbility(value: number, ...types: Type[]): Ability {
   return types.map((type) => ({ type, value }));
 }
 
 export const abilities = {
+  none: createAbility(1),
   // Resistances
-  purifying_salt: abilityResist(Type.ghost),
-  heatproof: abilityResist(Type.fire),
-  water_bubble: abilityResist(Type.fire),
-  thick_fat: abilityResist(Type.fire, Type.ice),
+  purifying_salt: createAbility(0.5, Type.ghost),
+  heatproof: createAbility(0.5, Type.fire),
+  water_bubble: createAbility(0.5, Type.fire),
+  thick_fat: createAbility(0.5, Type.fire, Type.ice),
   // Immunities
-  earth_eater: abilityImmune(Type.ground),
-  levitate: abilityImmune(Type.ground),
-  flash_fire: abilityImmune(Type.fire),
-  well_baked_body: abilityImmune(Type.fire),
-  dry_skin: abilityImmune(Type.water),
-  storm_drain: abilityImmune(Type.water),
-  water_absorb: abilityImmune(Type.water),
-  sap_sipper: abilityImmune(Type.grass),
-  lightning_rod: abilityImmune(Type.electric),
-  motor_drive: abilityImmune(Type.electric),
-  volt_absorb: abilityImmune(Type.electric),
+  earth_eater: createAbility(0, Type.ground),
+  levitate: createAbility(0, Type.ground),
+  flash_fire: createAbility(0, Type.fire),
+  well_baked_body: createAbility(0, Type.fire),
+  dry_skin: createAbility(0, Type.water),
+  storm_drain: createAbility(0, Type.water),
+  water_absorb: createAbility(0, Type.water),
+  sap_sipper: createAbility(0, Type.grass),
+  lightning_rod: createAbility(0, Type.electric),
+  motor_drive: createAbility(0, Type.electric),
+  volt_absorb: createAbility(0, Type.electric),
 } as const;
 
 const abilitySet = new Set(Object.keys(abilities));
@@ -86,13 +81,11 @@ function isAbility(str: string): str is AbilityName {
 
 export type AbilityName = keyof typeof abilities;
 
-export function abilityNameFromString(
-  str: string | undefined
-): AbilityName | undefined {
+export function abilityNameFromString(str: string | undefined): AbilityName {
   if (str && isAbility(str)) {
     return str;
   }
-  return undefined;
+  return "none";
 }
 
 function isType(str: string): str is Type {
