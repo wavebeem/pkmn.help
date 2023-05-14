@@ -8,7 +8,10 @@ import {
   removeInvalidDefenseTypesForGeneration,
   removeNones,
   Type,
+  abilityNameFromString,
+  AbilityName,
   typesFromString,
+  abilities,
 } from "./data-types";
 import { Matchups } from "./Matchups";
 import { MatchupsTeam, MatchupsTeamProps } from "./MatchupsTeam";
@@ -20,6 +23,7 @@ import { useScrollToFragment } from "./useScrollToFragment";
 import { useSearch } from "./useSearch";
 import { useTeamTypes } from "./useTeamTypes";
 import { useTypeCount } from "./useTypeCount";
+import { useTeamAbilities } from "./useTeamAbilities";
 
 const modes = ["solo", "team"] as const;
 type Mode = typeof modes[number];
@@ -42,7 +46,9 @@ interface State {
   mode: Mode;
   format: MatchupsTeamProps["format"];
   types: Type[];
+  ability: AbilityName | undefined;
   teamTypesList: Type[][];
+  teamAbilityList: AbilityName[];
 }
 
 interface ScreenDefenseTeamProps {
@@ -62,6 +68,7 @@ export function ScreenDefense({
   const history = useHistory();
 
   const [teamTypes, setTeamTypes] = useTeamTypes();
+  const [teamAbilities, setTeamAbilities] = useTeamAbilities();
 
   const [typeCount] = useTypeCount();
 
@@ -73,6 +80,7 @@ export function ScreenDefense({
       0,
       Number(typeCount)
     ),
+    ability: abilityNameFromString(search.get("ability") || undefined),
     format: (search.get("format") || "simple") as any,
     teamTypesList: (() => {
       if (search.get("team_types") === null && search.get("mode") !== "team") {
@@ -81,6 +89,18 @@ export function ScreenDefense({
       return search.getAll("team_types").map((t) => {
         return typesFromString(t).slice(0, Number(typeCount));
       });
+    })(),
+    teamAbilityList: (() => {
+      if (
+        search.get("team_abilities") === null &&
+        search.get("mode") !== "team"
+      ) {
+        return teamAbilities;
+      }
+      return (search.get("team_abilities") || "")
+        .split(/\s+/)
+        .map(abilityNameFromString)
+        .filter((t): t is AbilityName => t !== undefined);
     })(),
   };
 
@@ -94,7 +114,14 @@ export function ScreenDefense({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [generation]);
 
-  function createParams({ mode, format, teamTypesList, types }: State): string {
+  function createParams({
+    mode,
+    ability,
+    format,
+    teamTypesList,
+    teamAbilityList,
+    types,
+  }: State): string {
     teamTypesList = teamTypesList.map((types) => [...new Set(types)]);
     types = [...new Set(types)];
     const params = new URLSearchParams();
@@ -102,8 +129,14 @@ export function ScreenDefense({
     if (types.length >= 0) {
       params.set("types", types.join(" "));
     }
+    if (ability) {
+      params.set("ability", ability);
+    }
     for (const types of teamTypesList) {
       params.append("team_types", types.join(" "));
+    }
+    if (teamAbilityList.length > 0) {
+      params.append("team_abilities", teamAbilityList.join(" "));
     }
     params.set("format", format);
     return "?" + params;
@@ -112,6 +145,7 @@ export function ScreenDefense({
   function update(state: State) {
     const search = createParams(state);
     setTeamTypes(state.teamTypesList);
+    setTeamAbilities(state.teamAbilityList);
     if (search !== location.search) {
       history.replace({ search });
     }
@@ -207,6 +241,26 @@ export function ScreenDefense({
               />
             </>
           )}
+          <div className="pt4" />
+          <Select
+            label={t("defense.chooseAbility")}
+            value={state.ability}
+            onChange={(event) => {
+              update({
+                ...state,
+                ability: abilityNameFromString(event.target.value),
+              });
+            }}
+          >
+            <option value="">{t("defense.abilityNames.none")}</option>
+            {Object.keys(abilities).map((name) => {
+              return (
+                <option key={name} value={name}>
+                  {t(`defense.abilityNames.${name}`)}
+                </option>
+              );
+            })}
+          </Select>
         </div>
         <div className="flex-auto w-50-ns pl5-ns">
           <hr className="dn-ns subtle-hr mv4" />

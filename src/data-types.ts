@@ -46,6 +46,55 @@ const typeSet = new Set(Object.values(Type));
 
 export type Type = ValueOf<typeof Type>;
 
+export type Ability = { type: Type; value: number }[];
+
+function abilityResist(...types: Type[]): Ability {
+  const value = 0.5;
+  return types.map((type) => ({ type, value }));
+}
+
+function abilityImmune(...types: Type[]): Ability {
+  const value = 0;
+  return types.map((type) => ({ type, value }));
+}
+
+export const abilities = {
+  // RESISTANCE
+  purifying_salt: abilityResist(Type.ghost),
+  heatproof: abilityResist(Type.fire),
+  water_bubble: abilityResist(Type.fire),
+  thick_fat: abilityResist(Type.fire, Type.ice),
+  // IMMUNITIES
+  earth_eater: abilityImmune(Type.ground),
+  levitate: abilityImmune(Type.ground),
+  flash_fire: abilityImmune(Type.fire),
+  well_baked_body: abilityImmune(Type.fire),
+  dry_skin: abilityImmune(Type.water),
+  storm_drain: abilityImmune(Type.water),
+  water_absorb: abilityImmune(Type.water),
+  sap_sipper: abilityImmune(Type.grass),
+  lightning_rod: abilityImmune(Type.electric),
+  motor_drive: abilityImmune(Type.electric),
+  volt_absorb: abilityImmune(Type.electric),
+} as const;
+
+const abilitySet = new Set(Object.keys(abilities));
+
+function isAbility(str: string): str is AbilityName {
+  return abilitySet.has(str);
+}
+
+export type AbilityName = keyof typeof abilities;
+
+export function abilityNameFromString(
+  str: string | undefined
+): AbilityName | undefined {
+  if (str && isAbility(str)) {
+    return str;
+  }
+  return undefined;
+}
+
 function isType(str: string): str is Type {
   return typeSet.has(str as Type);
 }
