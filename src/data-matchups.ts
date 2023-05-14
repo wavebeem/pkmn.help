@@ -1,5 +1,11 @@
 import { Generation } from "./data-generations";
-import { CoverageType, Type, typesForGeneration } from "./data-types";
+import {
+  AbilityName,
+  CoverageType,
+  Type,
+  abilities,
+  typesForGeneration,
+} from "./data-types";
 
 const typesInPokemondbOrder = [
   Type.normal,
@@ -224,10 +230,19 @@ export function offensiveMatchups(
 
 export function defensiveMatchups(
   gen: Generation,
-  defenseTypes: Type[]
+  defenseTypes: Type[],
+  abilityName: AbilityName | undefined
 ): GroupedMatchups {
   const matchups = typesForGeneration(gen).map((t) => {
-    const eff = matchupFor(gen, defenseTypes, t);
+    let eff = matchupFor(gen, defenseTypes, t);
+    if (abilityName) {
+      const ability = abilities[abilityName];
+      for (const abilityInfo of ability) {
+        if (abilityInfo.type === t) {
+          eff *= abilityInfo.value;
+        }
+      }
+    }
     return new Matchup(gen, t, eff);
   });
   return new GroupedMatchups(matchups);

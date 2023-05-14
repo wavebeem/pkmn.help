@@ -96,7 +96,12 @@ export function ScreenOffense({
       </div>
       <div className="flex-auto w-50-ns pl5-ns">
         <hr className="dn-ns subtle-hr mv4" />
-        <Matchups kind="offense" generation={generation} types={offenseTypes} />
+        <Matchups
+          kind="offense"
+          generation={generation}
+          types={offenseTypes}
+          ability={undefined}
+        />
       </div>
     </main>
   );

@@ -241,26 +241,27 @@ export function ScreenDefense({
               />
             </>
           )}
-          <div className="pt4" />
-          <Select
-            label={t("defense.chooseAbility")}
-            value={state.ability}
-            onChange={(event) => {
-              update({
-                ...state,
-                ability: abilityNameFromString(event.target.value),
-              });
-            }}
-          >
-            <option value="">{t("defense.abilityNames.none")}</option>
-            {Object.keys(abilities).map((name) => {
-              return (
-                <option key={name} value={name}>
-                  {t(`defense.abilityNames.${name}`)}
-                </option>
-              );
-            })}
-          </Select>
+          <div className="pt4 mw-max">
+            <Select
+              label={t("defense.chooseAbility")}
+              value={state.ability}
+              onChange={(event) => {
+                update({
+                  ...state,
+                  ability: abilityNameFromString(event.target.value),
+                });
+              }}
+            >
+              <option value="">{t("defense.abilityNames.none")}</option>
+              {Object.keys(abilities).map((name) => {
+                return (
+                  <option key={name} value={name}>
+                    {t(`defense.abilityNames.${name}`)}
+                  </option>
+                );
+              })}
+            </Select>
+          </div>
         </div>
         <div className="flex-auto w-50-ns pl5-ns">
           <hr className="dn-ns subtle-hr mv4" />
@@ -268,6 +269,7 @@ export function ScreenDefense({
             kind="defense"
             generation={generation}
             types={state.types}
+            ability={state.ability}
           />
         </div>
       </main>

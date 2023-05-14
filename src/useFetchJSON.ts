@@ -18,6 +18,7 @@ export function useFetchJSON<T = unknown>(url: string): FetchJSONResponse<T> {
         const data: T = await resp.json();
         setState({ type: "done", data });
       } catch (err) {
+        // eslint-disable-next-line no-console
         console.warn(`Failed to download ${url}`, err);
         const retryDelay = 60 * 1000;
         // Retry every minute until the JSON finishes downloading

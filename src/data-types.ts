@@ -59,12 +59,12 @@ function abilityImmune(...types: Type[]): Ability {
 }
 
 export const abilities = {
-  // RESISTANCE
+  // Resistances
   purifying_salt: abilityResist(Type.ghost),
   heatproof: abilityResist(Type.fire),
   water_bubble: abilityResist(Type.fire),
   thick_fat: abilityResist(Type.fire, Type.ice),
-  // IMMUNITIES
+  // Immunities
   earth_eater: abilityImmune(Type.ground),
   levitate: abilityImmune(Type.ground),
   flash_fire: abilityImmune(Type.fire),
