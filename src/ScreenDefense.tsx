@@ -187,6 +187,12 @@ export function ScreenDefense({
     mode: state.mode === "solo" ? "team" : "solo",
   });
 
+  const sortedAbilityNames = Object.keys(abilities).sort((a, b) => {
+    const ta = t(`defense.abilityNames.${a}`);
+    const tb = t(`defense.abilityNames.${b}`);
+    return ta.localeCompare(tb);
+  });
+
   if (state.mode === "solo") {
     return (
       <main className="ph3 pt0 pb4 content-wide center flex flex-column flex-row-ns">
@@ -253,7 +259,8 @@ export function ScreenDefense({
               }}
             >
               <option value="">{t("defense.abilityNames.none")}</option>
-              {Object.keys(abilities).map((name) => {
+              <option disabled>&ndash;</option>
+              {sortedAbilityNames.map((name) => {
                 return (
                   <option key={name} value={name}>
                     {t(`defense.abilityNames.${name}`)}
