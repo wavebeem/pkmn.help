@@ -409,6 +409,25 @@ export function ScreenDefense({
                       />
                     </>
                   )}
+                  <div className="pt4 mw-max">
+                    <Select
+                      label={t("defense.chooseAbility")}
+                      value={state.teamAbilityList[typeIndex]}
+                      onChange={(event) => {
+                        console.error("TODO: Blah blah", event.target.value);
+                      }}
+                    >
+                      <option value="">{t("defense.abilityNames.none")}</option>
+                      <option disabled>&ndash;</option>
+                      {sortedAbilityNames.map((name) => {
+                        return (
+                          <option key={name} value={name}>
+                            {t(`defense.abilityNames.${name}`)}
+                          </option>
+                        );
+                      })}
+                    </Select>
+                  </div>
                 </div>
               </div>
             );
@@ -450,9 +469,9 @@ export function ScreenDefense({
         </div>
         <h2 className={classH2}>{t("defense.team.tableHeading")}</h2>
         <MatchupsTeam
-          kind="defense"
           generation={generation}
           typesList={state.teamTypesList}
+          abilityList={state.teamAbilityList}
           format={state.format}
         />
       </div>
