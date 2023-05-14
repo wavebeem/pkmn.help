@@ -1,5 +1,11 @@
 import { Generation } from "./data-generations";
-import { CoverageType, Type, typesForGeneration } from "./data-types";
+import {
+  AbilityName,
+  CoverageType,
+  Type,
+  abilities,
+  typesForGeneration,
+} from "./data-types";
 
 const typesInPokemondbOrder = [
   Type.normal,
@@ -138,7 +144,14 @@ export function partitionMatchups({
     normal: [],
   };
   for (const ct of coverageTypes) {
-    const arr = types.map((t) => matchupFor(generation, ct.types, t));
+    const arr = types.map((t) =>
+      matchupFor({
+        generation,
+        defenseTypes: ct.types,
+        offenseType: t,
+        abilityName: "none",
+      })
+    );
     const max = Math.max(...arr);
     const min = Math.min(...arr);
     if (max > 1) {
@@ -152,14 +165,31 @@ export function partitionMatchups({
   return ret;
 }
 
-export function matchupFor(
-  gen: Generation,
-  defenseTypes: Type[],
-  offenseType: Type
-): number {
+export function matchupFor({
+  generation,
+  defenseTypes,
+  offenseType,
+  abilityName,
+}: {
+  generation: Generation;
+  defenseTypes: Type[];
+  offenseType: Type;
+  abilityName: AbilityName;
+}): number {
   return defenseTypes
     .filter((t) => t !== Type.none)
-    .map((t) => matchupForPair(gen, t, offenseType))
+    .map((t) => {
+      let eff = matchupForPair(generation, t, offenseType);
+      if (abilityName) {
+        const ability = abilities[abilityName];
+        for (const abilityInfo of ability) {
+          if (abilityInfo.type === offenseType) {
+            eff *= abilityInfo.value;
+          }
+        }
+      }
+      return eff;
+    })
     .reduce((a, b) => a * b, 1);
 }
 
@@ -214,7 +244,12 @@ export function offensiveMatchups(
       return new Matchup(gen, t, 1);
     }
     const effs = offenseTypes.map((offense) => {
-      return matchupFor(gen, [t], offense);
+      return matchupFor({
+        generation: gen,
+        defenseTypes: [t],
+        offenseType: offense,
+        abilityName: "none",
+      });
     });
     const max = Math.max(...effs);
     return new Matchup(gen, t, max);
@@ -224,10 +259,16 @@ export function offensiveMatchups(
 
 export function defensiveMatchups(
   gen: Generation,
-  defenseTypes: Type[]
+  defenseTypes: Type[],
+  abilityName: AbilityName
 ): GroupedMatchups {
   const matchups = typesForGeneration(gen).map((t) => {
-    const eff = matchupFor(gen, defenseTypes, t);
+    const eff = matchupFor({
+      generation: gen,
+      defenseTypes,
+      offenseType: t,
+      abilityName,
+    });
     return new Matchup(gen, t, eff);
   });
   return new GroupedMatchups(matchups);

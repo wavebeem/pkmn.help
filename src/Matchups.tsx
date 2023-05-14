@@ -2,7 +2,7 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Generation } from "./data-generations";
 import { defensiveMatchups, offensiveMatchups } from "./data-matchups";
-import { Type } from "./data-types";
+import { AbilityName, Type } from "./data-types";
 import { Badge } from "./Badge";
 import styles from "./Matchups.module.css";
 
@@ -31,9 +31,10 @@ interface MatchupsProps {
   kind: "offense" | "defense";
   generation: Generation;
   types: Type[];
+  ability: AbilityName;
 }
 
-export function Matchups({ kind, generation, types }: MatchupsProps) {
+export function Matchups({ kind, generation, types, ability }: MatchupsProps) {
   const { t } = useTranslation();
   const formatTitle: (x: string) => string =
     kind === "offense"
@@ -42,7 +43,7 @@ export function Matchups({ kind, generation, types }: MatchupsProps) {
   const matchups =
     kind === "offense"
       ? offensiveMatchups(generation, types)
-      : defensiveMatchups(generation, types);
+      : defensiveMatchups(generation, types, ability);
   return (
     <div id={`matchup-${kind}`}>
       {effectivenessLevels.map((eff) => {

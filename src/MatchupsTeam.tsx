@@ -2,7 +2,7 @@ import * as React from "react";
 import { Badge } from "./Badge";
 import { Generation } from "./data-generations";
 import { matchupFor } from "./data-matchups";
-import { Type, typesForGeneration } from "./data-types";
+import { AbilityName, Type, typesForGeneration } from "./data-types";
 import { useTranslation } from "react-i18next";
 import { assertNever } from "./assertNever";
 import { useTypeCount } from "./useTypeCount";
@@ -71,17 +71,17 @@ class Matcher {
 }
 
 export interface MatchupsTeamProps {
-  kind: "defense";
   generation: Generation;
   typesList: Type[][];
+  abilityList: AbilityName[];
   format: "complex" | "simple" | "resist" | "weak";
 }
 
 export function MatchupsTeam({
-  kind,
   generation,
   typesList,
   format,
+  abilityList,
 }: MatchupsTeamProps) {
   const { t } = useTranslation();
 
@@ -127,8 +127,14 @@ export function MatchupsTeam({
     const row: typeof rows[number] = [genType];
     for (const m of matchers) {
       let num = 0;
-      for (const types of typesList) {
-        const eff = matchupFor(generation, types, genType);
+      for (const [typeIndex, types] of typesList.entries()) {
+        const abilityName = abilityList[typeIndex];
+        const eff = matchupFor({
+          generation,
+          defenseTypes: types,
+          offenseType: genType,
+          abilityName,
+        });
         if (m.match(eff)) {
           num++;
         }
