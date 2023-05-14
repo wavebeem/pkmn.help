@@ -187,11 +187,15 @@ export function ScreenDefense({
     mode: state.mode === "solo" ? "team" : "solo",
   });
 
-  const sortedAbilityNames = Object.keys(abilities).sort((a, b) => {
-    const ta = t(`defense.abilityNames.${a}`);
-    const tb = t(`defense.abilityNames.${b}`);
-    return ta.localeCompare(tb);
-  });
+  // Sort names alphabetically and remove "none" since we put that first
+  // manually and add a divider after it
+  const sortedAbilityNames = Object.keys(abilities)
+    .filter((name) => name !== "none")
+    .sort((a, b) => {
+      const ta = t(`defense.abilityNames.${a}`);
+      const tb = t(`defense.abilityNames.${b}`);
+      return ta.localeCompare(tb);
+    });
 
   if (state.mode === "solo") {
     return (
