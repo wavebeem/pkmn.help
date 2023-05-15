@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-05-14
+
+- Fixed an issue where abilities were counted more than once for Pokémon with multiple types
+
 ## 2023-05-13
 
 - Added Pokémon abilities such as "Thick Fat" and "Volt Absorb" to the defense page for solo and team matchups

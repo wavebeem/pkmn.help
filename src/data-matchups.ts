@@ -176,21 +176,18 @@ export function matchupFor({
   offenseType: Type;
   abilityName: AbilityName;
 }): number {
+  let base = 1;
+  if (abilityName) {
+    for (const abilityInfo of abilities[abilityName]) {
+      if (abilityInfo.type === offenseType) {
+        base *= abilityInfo.value;
+      }
+    }
+  }
   return defenseTypes
     .filter((t) => t !== Type.none)
-    .map((t) => {
-      let eff = matchupForPair(generation, t, offenseType);
-      if (abilityName) {
-        const ability = abilities[abilityName];
-        for (const abilityInfo of ability) {
-          if (abilityInfo.type === offenseType) {
-            eff *= abilityInfo.value;
-          }
-        }
-      }
-      return eff;
-    })
-    .reduce((a, b) => a * b, 1);
+    .map((t) => matchupForPair(generation, t, offenseType))
+    .reduce((a, b) => a * b, base);
 }
 
 function createMatchupMap(gen: Generation): Map<string, number> {

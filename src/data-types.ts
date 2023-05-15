@@ -46,31 +46,46 @@ const typeSet = new Set(Object.values(Type));
 
 export type Type = ValueOf<typeof Type>;
 
-export type Ability = { type: Type; value: number }[];
+interface AbilityInfo {
+  type: Type;
+  value: number;
+}
 
-function createAbility(value: number, ...types: Type[]): Ability {
-  return types.map((type) => ({ type, value }));
+export type Ability = AbilityInfo[];
+
+function createAbility(...abilityInfo: AbilityInfo[]): Ability {
+  return abilityInfo;
 }
 
 export const abilities = {
-  none: createAbility(1),
+  none: createAbility(),
+  // Weakness
+  fluffy: createAbility({ type: Type.fire, value: 2 }),
   // Resistances
-  purifying_salt: createAbility(0.5, Type.ghost),
-  heatproof: createAbility(0.5, Type.fire),
-  water_bubble: createAbility(0.5, Type.fire),
-  thick_fat: createAbility(0.5, Type.fire, Type.ice),
+  purifying_salt: createAbility({ type: Type.ghost, value: 0.5 }),
+  heatproof: createAbility({ type: Type.fire, value: 0.5 }),
+  water_bubble: createAbility({ type: Type.fire, value: 0.5 }),
+  thick_fat: createAbility(
+    { type: Type.fire, value: 0.5 },
+    { type: Type.ice, value: 0.5 }
+  ),
   // Immunities
-  earth_eater: createAbility(0, Type.ground),
-  levitate: createAbility(0, Type.ground),
-  flash_fire: createAbility(0, Type.fire),
-  well_baked_body: createAbility(0, Type.fire),
-  dry_skin: createAbility(0, Type.water),
-  storm_drain: createAbility(0, Type.water),
-  water_absorb: createAbility(0, Type.water),
-  sap_sipper: createAbility(0, Type.grass),
-  lightning_rod: createAbility(0, Type.electric),
-  motor_drive: createAbility(0, Type.electric),
-  volt_absorb: createAbility(0, Type.electric),
+  earth_eater: createAbility({ type: Type.ground, value: 0 }),
+  levitate: createAbility({ type: Type.ground, value: 0 }),
+  flash_fire: createAbility({ type: Type.fire, value: 0 }),
+  well_baked_body: createAbility({ type: Type.fire, value: 0 }),
+  dry_skin: createAbility(
+    // TODO: Fix this issue
+    // https://github.com/wavebeem/pkmn.help/issues/218
+    // { type: Type.fire, value: 1.25 },
+    { type: Type.water, value: 0 }
+  ),
+  storm_drain: createAbility({ type: Type.water, value: 0 }),
+  water_absorb: createAbility({ type: Type.water, value: 0 }),
+  sap_sipper: createAbility({ type: Type.grass, value: 0 }),
+  lightning_rod: createAbility({ type: Type.electric, value: 0 }),
+  motor_drive: createAbility({ type: Type.electric, value: 0 }),
+  volt_absorb: createAbility({ type: Type.electric, value: 0 }),
 } as const;
 
 const abilitySet = new Set(Object.keys(abilities));
