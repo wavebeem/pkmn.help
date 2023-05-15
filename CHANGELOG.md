@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-05-15
+
+- Fixed an issue where all shiny sprites had been removed accidentally
+
 ## 2023-05-14
 
 - Fixed an issue where abilities were counted more than once for Pokémon with multiple types
