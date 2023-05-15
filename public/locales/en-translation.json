@@ -73,6 +73,7 @@
     "chooseAbility": "Choose Ability",
     "abilityNames": {
       "none": "None",
+      "fluffy": "Fluffy",
       "purifying_salt": "Purifying Salt",
       "heatproof": "Heatproof",
       "water_bubble": "Water Bubble",
