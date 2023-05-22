@@ -63,6 +63,8 @@ export function Matchups({ kind, generation, types, ability }: MatchupsProps) {
 
 function formatEffectiveness(eff: number | undefined): string {
   switch (eff) {
+    case 16:
+      return "16×";
     case 8:
       return "8×";
     case 4:
@@ -72,11 +74,13 @@ function formatEffectiveness(eff: number | undefined): string {
     case 1:
       return "1×";
     case 1 / 2:
-      return "½×";
+      return "1⁄2×";
     case 1 / 4:
-      return "¼×";
+      return "1⁄4×";
     case 1 / 8:
-      return "⅛×";
+      return "1⁄8×";
+    case 1 / 16:
+      return "1⁄16×";
     case 0:
       return "0×";
     case undefined:
