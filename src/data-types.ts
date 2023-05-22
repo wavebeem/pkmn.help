@@ -75,9 +75,7 @@ export const abilities = {
   flash_fire: createAbility({ type: Type.fire, value: 0 }),
   well_baked_body: createAbility({ type: Type.fire, value: 0 }),
   dry_skin: createAbility(
-    // TODO: Fix this issue
-    // https://github.com/wavebeem/pkmn.help/issues/218
-    // { type: Type.fire, value: 1.25 },
+    { type: Type.fire, value: 1.25 },
     { type: Type.water, value: 0 }
   ),
   storm_drain: createAbility({ type: Type.water, value: 0 }),
