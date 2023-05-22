@@ -1,5 +1,11 @@
 # Changelog
 
+## 2023-05-21
+
+- Fixed an issue where multipliers greater than 8 or below 1/8 wouldn't appear
+- Changed team offense matchups to round the multiplier to the nearest power of 2 rather than omitting it entirely from the table
+- Added Dry Skin's 1.25x weakness to Fire, which wasn't possible to represent before this update
+
 ## 2023-05-15
 
 - Fixed an issue where all shiny sprites had been removed accidentally

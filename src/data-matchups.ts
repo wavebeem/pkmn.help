@@ -230,6 +230,26 @@ export class GroupedMatchups {
       .filter((m) => m.effectiveness === effectivenes)
       .map((m) => m.type);
   }
+
+  groupByEffectiveness(): Matchup[][] {
+    const map: Map<number, Matchup[]> = new Map();
+    for (const matchup of this.matchups) {
+      const list = map.get(matchup.effectiveness);
+      if (list) {
+        list.push(matchup);
+      } else {
+        map.set(matchup.effectiveness, [matchup]);
+      }
+    }
+    const effectivenesses = Array.from(map.keys()).sort((a, b) => b - a);
+    return effectivenesses.map((eff) => {
+      const list = map.get(eff);
+      if (list) {
+        return list;
+      }
+      throw new Error(`groupByEffectiveness: ${eff}`);
+    });
+  }
 }
 
 export function offensiveMatchups(

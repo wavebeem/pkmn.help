@@ -44,14 +44,16 @@ export function Matchups({ kind, generation, types, ability }: MatchupsProps) {
     kind === "offense"
       ? offensiveMatchups(generation, types)
       : defensiveMatchups(generation, types, ability);
+  const grouped = matchups.groupByEffectiveness();
   return (
     <div id={`matchup-${kind}`}>
-      {effectivenessLevels.map((eff) => {
+      {grouped.map((list) => {
+        const eff = list.length > 0 ? list[0].effectiveness : undefined;
         return (
           <Section
             key={eff}
-            title={formatTitle(effectivenessDisplay[eff])}
-            types={matchups.typesFor(eff)}
+            title={formatTitle(formatEffectiveness(eff))}
+            types={list.map((x) => x.type)}
           />
         );
       })}
@@ -59,15 +61,21 @@ export function Matchups({ kind, generation, types, ability }: MatchupsProps) {
   );
 }
 
-const effectivenessLevels = [8, 4, 2, 1, 1 / 2, 1 / 4, 1 / 8, 0];
-
-const effectivenessDisplay = {
-  [8]: "8×",
-  [4]: "4×",
-  [2]: "2×",
-  [1]: "1×",
-  [1 / 2]: "½×",
-  [1 / 4]: "¼×",
-  [1 / 8]: "⅛×",
-  [0]: "0×",
-};
+function formatEffectiveness(eff: number | undefined): string {
+  switch (eff) {
+    case 1 / 2:
+      return "1⁄2×";
+    case 1 / 4:
+      return "1⁄4×";
+    case 1 / 8:
+      return "1⁄8×";
+    case 1 / 16:
+      return "1⁄16×";
+    case 0:
+      return "0×";
+    case undefined:
+      return "–"; // n-dash
+    default:
+      return `${eff}×`;
+  }
+}
