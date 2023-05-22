@@ -5,7 +5,6 @@ import { defensiveMatchups, offensiveMatchups } from "./data-matchups";
 import { AbilityName, Type } from "./data-types";
 import { Badge } from "./Badge";
 import styles from "./Matchups.module.css";
-import { match } from "assert";
 
 interface SectionProps {
   title: string;
