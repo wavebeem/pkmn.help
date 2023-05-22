@@ -1,5 +1,10 @@
 # Changelog
 
+## 2023-05-21
+
+- Fixed an issue where multipliers greater than 8 or below 1/8 wouldn't appear
+- Added Dry Skin's 1.25x weakness to Fire
+
 ## 2023-05-15
 
 - Fixed an issue where all shiny sprites had been removed accidentally
