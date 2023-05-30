@@ -84,6 +84,8 @@ export const abilities = {
   lightning_rod: createAbility({ type: Type.electric, value: 0 }),
   motor_drive: createAbility({ type: Type.electric, value: 0 }),
   volt_absorb: createAbility({ type: Type.electric, value: 0 }),
+  // Other
+  wonder_guard: createAbility(),
 } as const;
 
 const abilitySet = new Set(Object.keys(abilities));

@@ -73,6 +73,7 @@
     "chooseAbility": "Choose Ability",
     "abilityNames": {
       "none": "None",
+      "wonder_guard": "Wonder Guard",
       "fluffy": "Fluffy",
       "purifying_salt": "Purifying Salt",
       "heatproof": "Heatproof",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-05-29
+
+- Added the "Wonder Guard" ability
+
 ## 2023-05-21
 
 - Fixed an issue where multipliers greater than 8 or below 1/8 wouldn't appear
