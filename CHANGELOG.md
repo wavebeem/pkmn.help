@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-06-02
+
+- Added Spanish translation for abilities dropdown
+
 ## 2023-05-29
 
 - Added the "Wonder Guard" ability
