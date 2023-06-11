@@ -120,7 +120,7 @@ function toObject<T, K extends string, V>({
   return obj;
 }
 
-async function main(): Promise<void> {
+export async function scrapePokeapi(): Promise<void> {
   const speciesList = await fetchPaginated<PokemonSpeciesBasic>(
     new URL("pokemon-species", API).toString(),
     Number(process.env.LIMIT || "Infinity")
@@ -173,8 +173,3 @@ async function main(): Promise<void> {
     indent: 2,
   });
 }
-
-main().catch((err) => {
-  console.error(err);
-  process.exit(1);
-});

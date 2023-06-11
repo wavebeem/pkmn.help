@@ -12,3 +12,17 @@ Pokémon Type Calculator helps you figure out offense/defense matchups for Poké
 $ npm install
 $ npm start
 ```
+
+## Updating Pokédex data
+
+Make sure to delete all the images in `public/img` before running this command or all existing images will be kept
+
+```
+$ npm run update-pokedex
+```
+
+or if you just want to update images without updating the Pokédex
+
+```
+$ npm run update-pokedex fast
+```

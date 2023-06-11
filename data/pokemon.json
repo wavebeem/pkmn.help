@@ -112,7 +112,7 @@
       "ko": "메가이상해꽃",
       "zh-Hant": "超級妙蛙花",
       "fr": "Méga-Florizarre",
-      "de": "Mega-Bisaflor",
+      "de": "Mega-Form",
       "es": "Mega-Venusaur",
       "it": "MegaVenusaur",
       "en": "Mega Venusaur",
@@ -150,6 +150,8 @@
       "zh-Hans": "妙蛙花"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 3,
@@ -278,7 +280,7 @@
       "ko": "메가리자몽X",
       "zh-Hant": "超級噴火龍Ｘ",
       "fr": "Méga-Dracaufeu X",
-      "de": "Mega-Glurak X",
+      "de": "Mega-Form",
       "es": "Mega-Charizard X",
       "it": "MegaCharizard X",
       "en": "Mega Charizard X",
@@ -320,7 +322,7 @@
       "ko": "메가리자몽Y",
       "zh-Hant": "超級噴火龍Ｙ",
       "fr": "Méga-Dracaufeu Y",
-      "de": "Mega-Glurak Y",
+      "de": "Mega-Form",
       "es": "Mega-Charizard Y",
       "it": "MegaCharizard Y",
       "en": "Mega Charizard Y",
@@ -358,6 +360,8 @@
       "zh-Hans": "喷火龙"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 6,
@@ -485,7 +489,7 @@
       "ko": "메가거북왕",
       "zh-Hant": "超級水箭龜",
       "fr": "Méga-Tortank",
-      "de": "Mega-Turtok",
+      "de": "Mega-Form",
       "es": "Mega-Blastoise",
       "it": "MegaBlastoise",
       "en": "Mega Blastoise",
@@ -522,6 +526,8 @@
       "zh-Hans": "水箭龟"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 9,
@@ -645,6 +651,8 @@
       "zh-Hans": "巴大蝶"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 12,
@@ -775,7 +783,7 @@
       "ko": "메가독침붕",
       "zh-Hant": "超級大針蜂",
       "fr": "Méga-Dardargnan",
-      "de": "Mega-Bibor",
+      "de": "Mega-Form",
       "es": "Mega-Beedrill",
       "it": "MegaBeedrill",
       "en": "Mega Beedrill",
@@ -910,7 +918,7 @@
       "ko": "메가피죤투",
       "zh-Hant": "超級大比鳥",
       "fr": "Méga-Roucarnage",
-      "de": "Mega-Tauboss",
+      "de": "Mega-Form",
       "es": "Mega-Pidgeot",
       "it": "MegaPidgeot",
       "en": "Mega Pidgeot",
@@ -1091,7 +1099,9 @@
       "ja": "ラッタ",
       "zh-Hans": "拉达"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Totemform"
+    },
     "number": 20,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10093.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10093.png",
@@ -1276,6 +1286,7 @@
     },
     "formNames": {
       "fr": "Pikachu Rockeur",
+      "de": "Cosplayform",
       "en": "Pikachu Rock Star"
     },
     "number": 25,
@@ -1309,6 +1320,7 @@
     },
     "formNames": {
       "fr": "Pikachu Lady",
+      "de": "Cosplayform",
       "en": "Pikachu Belle"
     },
     "number": 25,
@@ -1342,6 +1354,7 @@
     },
     "formNames": {
       "fr": "Pikachu Star",
+      "de": "Cosplayform",
       "en": "Pikachu Pop Star"
     },
     "number": 25,
@@ -1375,6 +1388,7 @@
     },
     "formNames": {
       "fr": "Pikachu Docteur",
+      "de": "Cosplayform",
       "en": "Pikachu Ph.D."
     },
     "number": 25,
@@ -1408,6 +1422,7 @@
     },
     "formNames": {
       "fr": "Pikachu Catcheur",
+      "de": "Cosplayform",
       "en": "Pikachu Libre"
     },
     "number": 25,
@@ -1441,6 +1456,7 @@
     },
     "formNames": {
       "fr": "Pikachu Cosplayeur",
+      "de": "Cosplayform",
       "en": "Cosplay Pikachu"
     },
     "number": 25,
@@ -1759,10 +1775,12 @@
       "ja": "ピカチュウ",
       "zh-Hans": "皮卡丘"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Partnerform"
+    },
     "number": 25,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 45,
     "attack": 80,
     "defense": 50,
@@ -1803,7 +1821,7 @@
     },
     "number": 25,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 35,
     "attack": 55,
     "defense": 40,
@@ -1831,6 +1849,8 @@
       "zh-Hans": "皮卡丘"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 25,
@@ -3061,6 +3081,8 @@
       "zh-Hans": "喵喵"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 52,
@@ -3314,7 +3336,11 @@
       "zh-Hans": "卡蒂狗"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 58,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10229.png",
@@ -3377,7 +3403,11 @@
       "zh-Hans": "风速狗"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 59,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10230.png",
@@ -3595,7 +3625,7 @@
       "ko": "메가후딘",
       "zh-Hant": "超級胡地",
       "fr": "Méga-Alakazam",
-      "de": "Mega-Simsala",
+      "de": "Mega-Form",
       "es": "Mega-Alakazam",
       "it": "MegaAlakazam",
       "en": "Mega Alakazam",
@@ -3722,6 +3752,8 @@
       "zh-Hans": "怪力"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 68,
@@ -4378,7 +4410,7 @@
       "ko": "메가야도란",
       "zh-Hant": "超級呆殼獸",
       "fr": "Méga-Flagadoss",
-      "de": "Mega-Lahmus",
+      "de": "Mega-Form",
       "es": "Mega-Slowbro",
       "it": "MegaSlowbro",
       "en": "Mega Slowbro",
@@ -5017,7 +5049,7 @@
       "ko": "메가팬텀",
       "zh-Hant": "超級耿鬼",
       "fr": "Méga-Ectoplasma",
-      "de": "Mega-Gengar",
+      "de": "Mega-Form",
       "es": "Mega-Gengar",
       "it": "MegaGengar",
       "en": "Mega Gengar",
@@ -5055,6 +5087,8 @@
       "zh-Hans": "耿鬼"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 94,
@@ -5239,6 +5273,8 @@
       "zh-Hans": "巨钳蟹"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 99,
@@ -5301,7 +5337,11 @@
       "zh-Hans": "霹雳电球"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 100,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10231.png",
@@ -5364,7 +5404,11 @@
       "zh-Hans": "顽皮雷弹"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 101,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10232.png",
@@ -5603,7 +5647,8 @@
       "zh-Hans": "嘎啦嘎啦"
     },
     "formNames": {
-      "ko": "알로라의 모습"
+      "ko": "알로라의 모습",
+      "de": "Totemform"
     },
     "number": 105,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10149.png",
@@ -5984,7 +6029,7 @@
       "ko": "메가캥카",
       "zh-Hant": "超級袋獸",
       "fr": "Méga-Kangourex",
-      "de": "Mega-Kangama",
+      "de": "Mega-Form",
       "es": "Mega-Kangaskhan",
       "it": "MegaKangaskhan",
       "en": "Mega Kangaskhan",
@@ -6431,7 +6476,7 @@
       "ko": "메가쁘사이저",
       "zh-Hant": "超級凱羅斯",
       "fr": "Méga-Scarabrute",
-      "de": "Mega-Pinsir",
+      "de": "Mega-Form",
       "es": "Mega-Pinsir",
       "it": "MegaPinsir",
       "en": "Mega Pinsir",
@@ -6481,6 +6526,110 @@
     "id": "128",
     "types": [
       "normal"
+    ]
+  },
+  {
+    "name": "tauros-paldea-combat-breed",
+    "speciesNames": {
+      "ja-Hrkt": "ケンタロス",
+      "roomaji": "Kentauros",
+      "ko": "켄타로스",
+      "zh-Hant": "肯泰羅",
+      "fr": "Tauros",
+      "de": "Tauros",
+      "es": "Tauros",
+      "it": "Tauros",
+      "en": "Tauros",
+      "ja": "ケンタロス",
+      "zh-Hans": "肯泰罗"
+    },
+    "formNames": {
+      "ja-Hrkt": "パルデアのすがた",
+      "en": "Paldean Form",
+      "ja": "パルデアのすがた"
+    },
+    "number": 128,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10250.png",
+    "shinySpriteURL": "",
+    "hp": 75,
+    "attack": 110,
+    "defense": 105,
+    "spAttack": 30,
+    "spDefense": 70,
+    "speed": 100,
+    "id": "10250",
+    "types": [
+      "fighting"
+    ]
+  },
+  {
+    "name": "tauros-paldea-blaze-breed",
+    "speciesNames": {
+      "ja-Hrkt": "ケンタロス",
+      "roomaji": "Kentauros",
+      "ko": "켄타로스",
+      "zh-Hant": "肯泰羅",
+      "fr": "Tauros",
+      "de": "Tauros",
+      "es": "Tauros",
+      "it": "Tauros",
+      "en": "Tauros",
+      "ja": "ケンタロス",
+      "zh-Hans": "肯泰罗"
+    },
+    "formNames": {
+      "ja-Hrkt": "パルデアのすがた",
+      "en": "Paldean Form",
+      "ja": "パルデアのすがた"
+    },
+    "number": 128,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10251.png",
+    "shinySpriteURL": "",
+    "hp": 75,
+    "attack": 110,
+    "defense": 105,
+    "spAttack": 30,
+    "spDefense": 70,
+    "speed": 100,
+    "id": "10251",
+    "types": [
+      "fighting",
+      "fire"
+    ]
+  },
+  {
+    "name": "tauros-paldea-aqua-breed",
+    "speciesNames": {
+      "ja-Hrkt": "ケンタロス",
+      "roomaji": "Kentauros",
+      "ko": "켄타로스",
+      "zh-Hant": "肯泰羅",
+      "fr": "Tauros",
+      "de": "Tauros",
+      "es": "Tauros",
+      "it": "Tauros",
+      "en": "Tauros",
+      "ja": "ケンタロス",
+      "zh-Hans": "肯泰罗"
+    },
+    "formNames": {
+      "ja-Hrkt": "パルデアのすがた",
+      "en": "Paldean Form",
+      "ja": "パルデアのすがた"
+    },
+    "number": 128,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10252.png",
+    "shinySpriteURL": "",
+    "hp": 75,
+    "attack": 110,
+    "defense": 105,
+    "spAttack": 30,
+    "spDefense": 70,
+    "speed": 100,
+    "id": "10252",
+    "types": [
+      "fighting",
+      "water"
     ]
   },
   {
@@ -6564,7 +6713,7 @@
       "ko": "메가갸라도스",
       "zh-Hant": "超級暴鯉龍",
       "fr": "Méga-Léviator",
-      "de": "Mega-Garados",
+      "de": "Mega-Form",
       "es": "Mega-Gyarados",
       "it": "MegaGyarados",
       "en": "Mega Gyarados",
@@ -6633,6 +6782,8 @@
       "zh-Hans": "拉普拉斯"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 131,
@@ -6725,10 +6876,12 @@
       "ja": "イーブイ",
       "zh-Hans": "伊布"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Partnerform"
+    },
     "number": 133,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 65,
     "attack": 75,
     "defense": 70,
@@ -6756,6 +6909,8 @@
       "zh-Hans": "伊布"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 133,
@@ -7067,7 +7222,7 @@
       "ko": "메가프테라",
       "zh-Hant": "超級化石翼龍",
       "fr": "Méga-Ptéra",
-      "de": "Mega-Aerodactyl",
+      "de": "Mega-Form",
       "es": "Mega-Aerodactyl",
       "it": "MegaAerodactyl",
       "en": "Mega Aerodactyl",
@@ -7135,6 +7290,8 @@
       "zh-Hans": "卡比兽"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 143,
@@ -7511,7 +7668,7 @@
       "ko": "메가뮤츠X",
       "zh-Hant": "超級超夢Ｘ",
       "fr": "Méga-Mewtwo X",
-      "de": "Mega-Mewtu X",
+      "de": "Mega-Form",
       "es": "Mega-Mewtwo X",
       "it": "MegaMewtwo X",
       "en": "Mega Mewtwo X",
@@ -7553,7 +7710,7 @@
       "ko": "메가뮤츠Y",
       "zh-Hant": "超級超夢Ｙ",
       "fr": "Méga-Mewtwo Y",
-      "de": "Mega-Mewtu Y",
+      "de": "Mega-Form",
       "es": "Mega-Mewtwo Y",
       "it": "MegaMewtwo Y",
       "en": "Mega Mewtwo Y",
@@ -7800,7 +7957,11 @@
       "zh-Hans": "火暴兽"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 157,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10233.png",
@@ -8570,7 +8731,7 @@
       "ko": "메가전룡",
       "zh-Hant": "超級電龍",
       "fr": "Méga-Pharamp",
-      "de": "Mega-Ampharos",
+      "de": "Mega-Form",
       "es": "Mega-Ampharos",
       "it": "MegaAmpharos",
       "en": "Mega Ampharos",
@@ -8986,6 +9147,41 @@
     "id": "194",
     "types": [
       "water",
+      "ground"
+    ]
+  },
+  {
+    "name": "wooper-paldea",
+    "speciesNames": {
+      "ja-Hrkt": "ウパー",
+      "roomaji": "Upah",
+      "ko": "우파",
+      "zh-Hant": "烏波",
+      "fr": "Axoloto",
+      "de": "Felino",
+      "es": "Wooper",
+      "it": "Wooper",
+      "en": "Wooper",
+      "ja": "ウパー",
+      "zh-Hans": "乌波"
+    },
+    "formNames": {
+      "ja-Hrkt": "パルデアのすがた",
+      "en": "Paldean Form",
+      "ja": "パルデアのすがた"
+    },
+    "number": 194,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10253.png",
+    "shinySpriteURL": "",
+    "hp": 55,
+    "attack": 45,
+    "defense": 45,
+    "spAttack": 25,
+    "spDefense": 25,
+    "speed": 15,
+    "id": "10253",
+    "types": [
+      "poison",
       "ground"
     ]
   },
@@ -9486,7 +9682,7 @@
       "ko": "메가강철톤",
       "zh-Hant": "超級大鋼蛇",
       "fr": "Méga-Steelix",
-      "de": "Mega-Stahlos",
+      "de": "Mega-Form",
       "es": "Mega-Steelix",
       "it": "MegaSteelix",
       "en": "Mega Steelix",
@@ -9615,7 +9811,11 @@
       "zh-Hans": "千针鱼"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 211,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10234.png",
@@ -9683,7 +9883,7 @@
       "ko": "메가핫삼",
       "zh-Hant": "超級巨鉗螳螂",
       "fr": "Méga-Cizayox",
-      "de": "Mega-Scherox",
+      "de": "Mega-Form",
       "es": "Mega-Scizor",
       "it": "MegaScizor",
       "en": "Mega Scizor",
@@ -9787,7 +9987,7 @@
       "ko": "메가헤라크로스",
       "zh-Hant": "超級赫拉克羅斯",
       "fr": "Méga-Scarhino",
-      "de": "Mega-Skaraborn",
+      "de": "Mega-Form",
       "es": "Mega-Heracross",
       "it": "MegaHeracross",
       "en": "Mega Heracross",
@@ -9856,7 +10056,11 @@
       "zh-Hans": "狃拉"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 215,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10235.png",
@@ -10363,7 +10567,7 @@
       "ko": "메가헬가",
       "zh-Hant": "超級黑魯加",
       "fr": "Méga-Démolosse",
-      "de": "Mega-Hundemon",
+      "de": "Mega-Form",
       "es": "Mega-Houndoom",
       "it": "MegaHoundoom",
       "en": "Mega Houndoom",
@@ -10980,7 +11184,7 @@
       "ko": "메가마기라스",
       "zh-Hant": "超級班基拉斯",
       "fr": "Méga-Tyranocif",
-      "de": "Mega-Despotar",
+      "de": "Mega-Form",
       "es": "Mega-Tyranitar",
       "it": "MegaTyranitar",
       "en": "Mega Tyranitar",
@@ -11205,7 +11409,7 @@
       "ko": "메가나무킹",
       "zh-Hant": "超級蜥蜴王",
       "fr": "Méga-Jungko",
-      "de": "Mega-Gewaldro",
+      "de": "Mega-Form",
       "es": "Mega-Sceptile",
       "it": "MegaSceptile",
       "en": "Mega Sceptile",
@@ -11339,7 +11543,7 @@
       "ko": "메가번치코",
       "zh-Hant": "超級火焰雞",
       "fr": "Méga-Braségali",
-      "de": "Mega-Lohgock",
+      "de": "Mega-Form",
       "es": "Mega-Blaziken",
       "it": "MegaBlaziken",
       "en": "Mega Blaziken",
@@ -11473,7 +11677,7 @@
       "ko": "메가대짱이",
       "zh-Hant": "超級巨沼怪",
       "fr": "Méga-Laggron",
-      "de": "Mega-Sumpex",
+      "de": "Mega-Form",
       "es": "Mega-Swampert",
       "it": "MegaSwampert",
       "en": "Mega Swampert",
@@ -12273,7 +12477,7 @@
       "ko": "메가가디안",
       "zh-Hant": "超級沙奈朵",
       "fr": "Méga-Gardevoir",
-      "de": "Mega-Guardevoir",
+      "de": "Mega-Form",
       "es": "Mega-Gardevoir",
       "it": "MegaGardevoir",
       "en": "Mega Gardevoir",
@@ -12923,7 +13127,7 @@
       "ko": "메가깜까미",
       "zh-Hant": "超級勾魂眼",
       "fr": "Méga-Ténéfix",
-      "de": "Mega-Zobiris",
+      "de": "Mega-Form",
       "es": "Mega-Sableye",
       "it": "MegaSableye",
       "en": "Mega Sableye",
@@ -12996,7 +13200,7 @@
       "ko": "메가입치트",
       "zh-Hant": "超級大嘴娃",
       "fr": "Méga-Mysdibule",
-      "de": "Mega-Flunkifer",
+      "de": "Mega-Form",
       "es": "Mega-Mawile",
       "it": "MegaMawile",
       "en": "Mega Mawile",
@@ -13131,7 +13335,7 @@
       "ko": "메가보스로라",
       "zh-Hant": "超級波士可多拉",
       "fr": "Méga-Galeking",
-      "de": "Mega-Stolloss",
+      "de": "Mega-Form",
       "es": "Mega-Aggron",
       "it": "MegaAggron",
       "en": "Mega Aggron",
@@ -13234,7 +13438,7 @@
       "ko": "메가요가램",
       "zh-Hant": "超級恰雷姆",
       "fr": "Méga-Charmina",
-      "de": "Mega-Meditalis",
+      "de": "Mega-Form",
       "es": "Mega-Medicham",
       "it": "MegaMedicham",
       "en": "Mega Medicham",
@@ -13336,7 +13540,7 @@
       "ko": "메가썬더볼트",
       "zh-Hant": "超級雷電獸",
       "fr": "Méga-Élecsprint",
-      "de": "Mega-Voltenso",
+      "de": "Mega-Form",
       "es": "Mega-Manectric",
       "it": "MegaManectric",
       "en": "Mega Manectric",
@@ -13650,7 +13854,7 @@
       "ko": "메가샤크니아",
       "zh-Hant": "超級巨牙鯊",
       "fr": "Méga-Sharpedo",
-      "de": "Mega-Tohaido",
+      "de": "Mega-Form",
       "es": "Mega-Sharpedo",
       "it": "MegaSharpedo",
       "en": "Mega Sharpedo",
@@ -13814,7 +14018,7 @@
       "ko": "메가폭타",
       "zh-Hant": "超級噴火駝",
       "fr": "Méga-Camérupt",
-      "de": "Mega-Camerupt",
+      "de": "Mega-Form",
       "es": "Mega-Camerupt",
       "it": "MegaCamerupt",
       "en": "Mega Camerupt",
@@ -14191,7 +14395,7 @@
       "ko": "메가파비코리",
       "zh-Hant": "超級七夕青鳥",
       "fr": "Méga-Altaria",
-      "de": "Mega-Altaria",
+      "de": "Mega-Form",
       "es": "Mega-Altaria",
       "it": "MegaAltaria",
       "en": "Mega Altaria",
@@ -14978,7 +15182,7 @@
       "ko": "메가다크펫",
       "zh-Hant": "超級詛咒娃娃",
       "fr": "Méga-Branette",
-      "de": "Mega-Banette",
+      "de": "Mega-Form",
       "es": "Mega-Banette",
       "it": "MegaBanette",
       "en": "Mega Banette",
@@ -15170,7 +15374,7 @@
       "ko": "메가앱솔",
       "zh-Hant": "超級阿勃梭魯",
       "fr": "Méga-Absol",
-      "de": "Mega-Absol",
+      "de": "Mega-Form",
       "es": "Mega-Absol",
       "it": "MegaAbsol",
       "en": "Mega Absol",
@@ -15301,7 +15505,7 @@
       "ko": "메가얼음귀신",
       "zh-Hant": "超級冰鬼護",
       "fr": "Méga-Oniglali",
-      "de": "Mega-Firnontor",
+      "de": "Mega-Form",
       "es": "Mega-Glalie",
       "it": "MegaGlalie",
       "en": "Mega Glalie",
@@ -15677,7 +15881,7 @@
       "ko": "메가보만다",
       "zh-Hant": "超級暴飛龍",
       "fr": "Méga-Drattak",
-      "de": "Mega-Brutalanda",
+      "de": "Mega-Form",
       "es": "Mega-Salamence",
       "it": "MegaSalamence",
       "en": "Mega Salamence",
@@ -15812,7 +16016,7 @@
       "ko": "메가메타그로스",
       "zh-Hant": "超級巨金怪",
       "fr": "Méga-Métalosse",
-      "de": "Mega-Metagross",
+      "de": "Mega-Form",
       "es": "Mega-Metagross",
       "it": "MegaMetagross",
       "en": "Mega Metagross",
@@ -15975,7 +16179,7 @@
       "ko": "메가라티아스",
       "zh-Hant": "超級拉帝亞斯",
       "fr": "Méga-Latias",
-      "de": "Mega-Latias",
+      "de": "Mega-Form",
       "es": "Mega-Latias",
       "it": "MegaLatias",
       "en": "Mega Latias",
@@ -16048,7 +16252,7 @@
       "ko": "메가라티오스",
       "zh-Hant": "超級拉帝歐斯",
       "fr": "Méga-Latios",
-      "de": "Mega-Latios",
+      "de": "Mega-Form",
       "es": "Mega-Latios",
       "it": "MegaLatios",
       "en": "Mega Latios",
@@ -16284,7 +16488,7 @@
       "ko": "메가레쿠쟈",
       "zh-Hant": "超級烈空坐",
       "fr": "Méga-Rayquaza",
-      "de": "Mega-Rayquaza",
+      "de": "Mega-Form",
       "es": "Mega-Rayquaza",
       "it": "MegaRayquaza",
       "en": "Mega Rayquaza",
@@ -17936,7 +18140,7 @@
       "ko": "메가이어롭",
       "zh-Hant": "超級長耳兔",
       "fr": "Méga-Lockpin",
-      "de": "Mega-Schlapor",
+      "de": "Mega-Form",
       "es": "Mega-Lopunny",
       "it": "MegaLopunny",
       "en": "Mega Lopunny",
@@ -18499,7 +18703,7 @@
       "ko": "메가한카리아스",
       "zh-Hant": "超級烈咬陸鯊",
       "fr": "Méga-Carchacrok",
-      "de": "Mega-Knakrack",
+      "de": "Mega-Form",
       "es": "Mega-Garchomp",
       "it": "MegaGarchomp",
       "en": "Mega Garchomp",
@@ -18632,7 +18836,7 @@
       "ko": "메가루카리오",
       "zh-Hant": "超級路卡利歐",
       "fr": "Méga-Lucario",
-      "de": "Mega-Lucario",
+      "de": "Mega-Form",
       "es": "Mega-Lucario",
       "it": "MegaLucario",
       "en": "Mega Lucario",
@@ -19041,7 +19245,7 @@
       "ko": "메가눈설왕",
       "zh-Hant": "超級暴雪王",
       "fr": "Méga-Blizzaroi",
-      "de": "Mega-Rexblisar",
+      "de": "Mega-Form",
       "es": "Mega-Abomasnow",
       "it": "MegaAbomasnow",
       "en": "Mega Abomasnow",
@@ -19541,7 +19745,7 @@
       "ko": "메가엘레이드",
       "zh-Hant": "超級艾路雷朵",
       "fr": "Méga-Gallame",
-      "de": "Mega-Galagladi",
+      "de": "Mega-Form",
       "es": "Mega-Gallade",
       "it": "MegaGallade",
       "en": "Mega Gallade",
@@ -20044,7 +20248,11 @@
       "zh-Hans": "帝牙卢卡"
     },
     "formNames": {
-      "en": "Origin Forme"
+      "ja-Hrkt": "オリジンフォルム",
+      "fr": "Forme Originelle",
+      "de": "Urform",
+      "en": "Origin Forme",
+      "ja": "オリジンフォルム"
     },
     "number": 483,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10245.png",
@@ -20108,7 +20316,11 @@
       "zh-Hans": "帕路奇亚"
     },
     "formNames": {
-      "en": "Origin Forme"
+      "ja-Hrkt": "オリジンフォルム",
+      "fr": "Forme Originelle",
+      "de": "Urform",
+      "en": "Origin Forme",
+      "ja": "オリジンフォルム"
     },
     "number": 484,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10246.png",
@@ -20491,7 +20703,7 @@
     "formNames": {
       "ja-Hrkt": "ノーマルタイプ",
       "fr": "Normal",
-      "de": "Normal",
+      "de": "Normalform",
       "es": "Tipo Normal",
       "it": "Tipo Normale",
       "en": "Normal Type"
@@ -20829,7 +21041,11 @@
       "zh-Hans": "大剑鬼"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 503,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10236.png",
@@ -21712,7 +21928,7 @@
       "ko": "메가다부니",
       "zh-Hant": "超級差不多娃娃",
       "fr": "Méga-Nanméouïe",
-      "de": "Mega-Ohrdoch",
+      "de": "Mega-Form",
       "es": "Mega-Audino",
       "it": "MegaAudino",
       "en": "Mega Audino",
@@ -22300,7 +22516,11 @@
       "zh-Hans": "裙儿小姐"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 549,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10237.png",
@@ -22415,7 +22635,11 @@
       "zh-Hans": "野蛮鲈鱼"
     },
     "formNames": {
-      "en": "White-Striped Form"
+      "ja-Hrkt": "しろすじのすがた",
+      "fr": "Motif Blanch",
+      "de": "Weißlinienform",
+      "en": "White-Striped Form",
+      "ja": "しろすじのすがた"
     },
     "number": 550,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10247.png",
@@ -23248,6 +23472,8 @@
       "zh-Hans": "灰尘山"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 569,
@@ -23310,7 +23536,11 @@
       "zh-Hans": "索罗亚"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 570,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10238.png",
@@ -23373,7 +23603,11 @@
       "zh-Hans": "索罗亚克"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 571,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10239.png",
@@ -25198,7 +25432,11 @@
       "zh-Hans": "勇士雄鹰"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 628,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10240.png",
@@ -26511,7 +26749,9 @@
       "ja": "ゲッコウガ",
       "zh-Hans": "甲贺忍蛙"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Freundschaftsaktform"
+    },
     "number": 658,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10116.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10116.png",
@@ -27295,7 +27535,7 @@
     },
     "number": 678,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10025.png",
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 74,
     "attack": 48,
     "defense": 76,
@@ -28204,7 +28444,11 @@
       "zh-Hans": "黏美儿"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 705,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10241.png",
@@ -28267,7 +28511,11 @@
       "zh-Hans": "黏美龙"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 706,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10242.png",
@@ -28789,7 +29037,11 @@
       "zh-Hans": "冰岩怪"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 713,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10243.png",
@@ -29201,7 +29453,7 @@
       "ko": "메가디안시",
       "zh-Hant": "超級蒂安希",
       "fr": "Méga-Diancie",
-      "de": "Mega-Diancie",
+      "de": "Mega-Form",
       "es": "Mega-Diancie",
       "it": "MegaDiancie",
       "en": "Mega Diancie",
@@ -29447,7 +29699,11 @@
       "zh-Hans": "狙射树枭"
     },
     "formNames": {
-      "en": "Hisuian Form"
+      "ja-Hrkt": "ヒスイのすがた",
+      "fr": "Forme de Hisui",
+      "de": "Hisui-Form",
+      "en": "Hisuian Form",
+      "ja": "ヒスイのすがた"
     },
     "number": 724,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10244.png",
@@ -29814,7 +30070,9 @@
       "ja": "デカグース",
       "zh-Hans": "猫鼬探长"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Totemform"
+    },
     "number": 735,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10121.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/735-totem.png",
@@ -29936,7 +30194,9 @@
       "ja": "クワガノン",
       "zh-Hans": "锹农炮虫"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Totemform"
+    },
     "number": 738,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10122.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/738-totem.png",
@@ -30258,7 +30518,9 @@
       "ja": "アブリボン",
       "zh-Hans": "蝶结萌虻"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Totemform"
+    },
     "number": 743,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10150.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/743-totem.png",
@@ -30319,7 +30581,9 @@
       "ja": "イワンコ",
       "zh-Hans": "岩狗狗"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Tempomacherform"
+    },
     "number": 744,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10151.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/744-own-tempo.png",
@@ -30738,10 +31002,12 @@
       "ja": "オニシズクモ",
       "zh-Hans": "滴蛛霸"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Totemform"
+    },
     "number": 752,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 68,
     "attack": 70,
     "defense": 92,
@@ -30829,10 +31095,12 @@
       "ja": "ラランテス",
       "zh-Hans": "兰螳花"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Totemform"
+    },
     "number": 754,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 70,
     "attack": 105,
     "defense": 90,
@@ -30983,10 +31251,12 @@
       "ja": "エンニュート",
       "zh-Hans": "焰后蜥"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Totemform"
+    },
     "number": 758,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 68,
     "attack": 64,
     "defense": 60,
@@ -32162,10 +32432,12 @@
       "ja": "トゲデマル",
       "zh-Hans": "托戈德玛尔"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Totemform"
+    },
     "number": 777,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 65,
     "attack": 98,
     "defense": 63,
@@ -32277,7 +32549,9 @@
       "ja": "ミミッキュ",
       "zh-Hans": "谜拟丘"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Totemform"
+    },
     "number": 778,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10144.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/778-totem-disguised.png",
@@ -32308,7 +32582,9 @@
       "ja": "ミミッキュ",
       "zh-Hans": "谜拟丘"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Totemform"
+    },
     "number": 778,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10145.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/778-totem-busted.png",
@@ -32524,10 +32800,12 @@
       "ja": "ジャラランガ",
       "zh-Hans": "杖尾鳞甲龙"
     },
-    "formNames": {},
+    "formNames": {
+      "de": "Totemform"
+    },
     "number": 784,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 75,
     "attack": 110,
     "defense": 125,
@@ -33136,7 +33414,7 @@
       "ko": "울트라네크로즈마",
       "zh-Hant": "究極奈克洛茲瑪",
       "fr": "Ultra-Necrozma",
-      "de": "Ultra-Necrozma",
+      "de": "Ultra",
       "es": "Ultra-Necrozma",
       "it": "UltraNecrozma",
       "en": "Ultra Necrozma",
@@ -33491,6 +33769,8 @@
       "zh-Hans": "美录梅塔"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 809,
@@ -33613,6 +33893,8 @@
       "zh-Hans": "轰擂金刚猩"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 812,
@@ -33735,6 +34017,8 @@
       "zh-Hans": "闪焰王牌"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 815,
@@ -33857,6 +34141,8 @@
       "zh-Hans": "千面避役"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 818,
@@ -34040,6 +34326,8 @@
       "zh-Hans": "钢铠鸦"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 823,
@@ -34165,6 +34453,8 @@
       "zh-Hans": "以欧路普"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 826,
@@ -34439,6 +34729,8 @@
       "zh-Hans": "暴噬龟"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 834,
@@ -34624,6 +34916,8 @@
       "zh-Hans": "巨炭山"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 839,
@@ -34719,11 +35013,13 @@
       "zh-Hans": "苹裹龙"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 841,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10216.png",
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 70,
     "attack": 110,
     "defense": 80,
@@ -34783,11 +35079,13 @@
       "zh-Hans": "丰蜜龙"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 842,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10217.png",
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 110,
     "attack": 85,
     "defense": 80,
@@ -34876,6 +35174,8 @@
       "zh-Hans": "沙螺蟒"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 844,
@@ -34952,7 +35252,7 @@
     },
     "number": 845,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 70,
     "attack": 85,
     "defense": 55,
@@ -34994,7 +35294,7 @@
     },
     "number": 845,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 70,
     "attack": 85,
     "defense": 55,
@@ -35198,6 +35498,8 @@
       "zh-Hans": "颤弦蝾螈"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 849,
@@ -35231,6 +35533,8 @@
       "zh-Hans": "颤弦蝾螈"
     },
     "formNames": {
+      "fr": "Gigantamax Form",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 849,
@@ -35326,6 +35630,8 @@
       "zh-Hans": "焚焰蚣"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 851,
@@ -35418,7 +35724,12 @@
       "ja": "ヤバチャ",
       "zh-Hans": "来悲茶"
     },
-    "formNames": {},
+    "formNames": {
+      "ja-Hrkt": "がんさくフォルム",
+      "de": "Fälschungsform",
+      "en": "Phony Form",
+      "ja": "がんさくフォルム"
+    },
     "number": 854,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/854.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/854.png",
@@ -35448,7 +35759,12 @@
       "ja": "ポットデス",
       "zh-Hans": "怖思壶"
     },
-    "formNames": {},
+    "formNames": {
+      "ja-Hrkt": "がんさくフォルム",
+      "de": "Fälschungsform",
+      "en": "Phony Form",
+      "ja": "がんさくフォルム"
+    },
     "number": 855,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/855.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/855.png",
@@ -35570,6 +35886,8 @@
       "zh-Hans": "布莉姆温"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 858,
@@ -35696,6 +36014,8 @@
       "zh-Hans": "长毛巨魔"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 861,
@@ -35983,6 +36303,8 @@
       "zh-Hans": "霜奶仙"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 869,
@@ -36304,7 +36626,7 @@
     },
     "number": 876,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10186.png",
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 70,
     "attack": 55,
     "defense": 65,
@@ -36388,7 +36710,7 @@
     },
     "number": 877,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 58,
     "attack": 95,
     "defense": 58,
@@ -36477,6 +36799,8 @@
       "zh-Hans": "大王铜象"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 879,
@@ -36664,6 +36988,8 @@
       "zh-Hans": "铝钢龙"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 884,
@@ -37000,7 +37326,7 @@
     },
     "number": 890,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10190.png",
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 255,
     "attack": 115,
     "defense": 250,
@@ -37143,6 +37469,8 @@
       "zh-Hans": "武道熊师"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 892,
@@ -37176,6 +37504,8 @@
       "zh-Hans": "武道熊师"
     },
     "formNames": {
+      "fr": "Forme Gigamax",
+      "de": "Gigadynamax-Form",
       "en": "Gigantamax Form"
     },
     "number": 892,
@@ -37253,7 +37583,7 @@
     },
     "number": 893,
     "spriteURL": null,
-    "shinySpriteURL": null,
+    "shinySpriteURL": "",
     "hp": 105,
     "attack": 120,
     "defense": 105,
@@ -37606,7 +37936,9 @@
       "zh-Hans": "幽尾玄鱼"
     },
     "formNames": {
-      "en": "Male"
+      "ja-Hrkt": "オスのすがた",
+      "en": "Male",
+      "ja": "オスのすがた"
     },
     "number": 902,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/902.png",
@@ -37637,7 +37969,13 @@
       "ja": "イダイトウ",
       "zh-Hans": "幽尾玄鱼"
     },
-    "formNames": {},
+    "formNames": {
+      "ja-Hrkt": "メスのすがた",
+      "fr": "Femelle",
+      "de": "Weiblich",
+      "en": "Female",
+      "ja": "メスのすがた"
+    },
     "number": 902,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10248.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10248.png",
@@ -37692,7 +38030,7 @@
       "zh-Hant": "萬針魚",
       "fr": "Qwilpik",
       "de": "Myriador",
-      "it": "Overqwill",
+      "it": "Overqwil",
       "en": "Overqwil",
       "ja": "ハリーマン",
       "zh-Hans": "万针鱼"
@@ -37728,7 +38066,9 @@
       "zh-Hans": "眷恋云"
     },
     "formNames": {
-      "en": "Incarnate Forme"
+      "ja-Hrkt": "けしんフォルム",
+      "en": "Incarnate Forme",
+      "ja": "けしんフォルム"
     },
     "number": 905,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png",
@@ -37759,7 +38099,13 @@
       "ja": "ラブトロス",
       "zh-Hans": "眷恋云"
     },
-    "formNames": {},
+    "formNames": {
+      "ja-Hrkt": "れいじゅうフォルム",
+      "fr": "Forme Avatar",
+      "de": "Tiergeistform",
+      "en": "Therian Forme",
+      "ja": "れいじゅうフォルム"
+    },
     "number": 905,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10249.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10249.png",
@@ -37773,6 +38119,3635 @@
     "types": [
       "fairy",
       "flying"
+    ]
+  },
+  {
+    "name": "sprigatito",
+    "speciesNames": {
+      "zh-Hans": "新叶喵",
+      "ja-Hrkt": "ニャオハ",
+      "roomaji": "Nyahoja",
+      "ko": "나오하",
+      "zh-Hant": "新葉喵",
+      "fr": "Poussacha",
+      "de": "Felori",
+      "en": "Sprigatito",
+      "ja": "ニャオハ"
+    },
+    "formNames": {},
+    "number": 906,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/906.png",
+    "shinySpriteURL": "",
+    "hp": 40,
+    "attack": 61,
+    "defense": 54,
+    "spAttack": 45,
+    "spDefense": 45,
+    "speed": 65,
+    "id": "906",
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "floragato",
+    "speciesNames": {
+      "ja-Hrkt": "ニャローテ",
+      "roomaji": "Nyarote",
+      "ko": "나로테",
+      "zh-Hant": "蒂蕾喵",
+      "fr": "Matourgeon",
+      "de": "Feliospa",
+      "en": "Floragato",
+      "ja": "ニャローテ",
+      "zh-Hans": "蒂蕾喵"
+    },
+    "formNames": {},
+    "number": 907,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/907.png",
+    "shinySpriteURL": "",
+    "hp": 61,
+    "attack": 80,
+    "defense": 63,
+    "spAttack": 60,
+    "spDefense": 63,
+    "speed": 83,
+    "id": "907",
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "meowscarada",
+    "speciesNames": {
+      "ja-Hrkt": "マスカーニャ",
+      "roomaji": "Masquernya",
+      "ko": "마스카나",
+      "zh-Hant": "魔幻假面喵",
+      "fr": "Miascarade",
+      "de": "Maskagato",
+      "en": "Meowscarada",
+      "ja": "マスカーニャ",
+      "zh-Hans": "魔幻假面喵"
+    },
+    "formNames": {},
+    "number": 908,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png",
+    "shinySpriteURL": "",
+    "hp": 76,
+    "attack": 110,
+    "defense": 70,
+    "spAttack": 81,
+    "spDefense": 70,
+    "speed": 123,
+    "id": "908",
+    "types": [
+      "grass",
+      "dark"
+    ]
+  },
+  {
+    "name": "fuecoco",
+    "speciesNames": {
+      "ja-Hrkt": "ホゲータ",
+      "roomaji": "Hogator",
+      "ko": "뜨아거",
+      "zh-Hant": "呆火鱷",
+      "fr": "Chochodile",
+      "de": "Krokel",
+      "en": "Fuecoco",
+      "ja": "ホゲータ",
+      "zh-Hans": "呆火鳄"
+    },
+    "formNames": {},
+    "number": 909,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/909.png",
+    "shinySpriteURL": "",
+    "hp": 67,
+    "attack": 45,
+    "defense": 59,
+    "spAttack": 63,
+    "spDefense": 40,
+    "speed": 36,
+    "id": "909",
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "crocalor",
+    "speciesNames": {
+      "ja-Hrkt": "アチゲータ",
+      "roomaji": "Achigator",
+      "ko": "악뜨거",
+      "zh-Hant": "炙燙鱷",
+      "fr": "Crocogril",
+      "de": "Lokroko",
+      "en": "Crocalor",
+      "ja": "アチゲータ",
+      "zh-Hans": "炙烫鳄"
+    },
+    "formNames": {},
+    "number": 910,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/910.png",
+    "shinySpriteURL": "",
+    "hp": 81,
+    "attack": 55,
+    "defense": 78,
+    "spAttack": 90,
+    "spDefense": 58,
+    "speed": 49,
+    "id": "910",
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "skeledirge",
+    "speciesNames": {
+      "ja-Hrkt": "ラウドボーン",
+      "roomaji": "Loudbone",
+      "ko": "라우드본",
+      "zh-Hant": "骨紋巨聲鱷",
+      "fr": "Flâmigator",
+      "de": "Skelokrok",
+      "en": "Skeledirge",
+      "ja": "ラウドボーン",
+      "zh-Hans": "骨纹巨声鳄"
+    },
+    "formNames": {},
+    "number": 911,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png",
+    "shinySpriteURL": "",
+    "hp": 104,
+    "attack": 75,
+    "defense": 100,
+    "spAttack": 110,
+    "spDefense": 75,
+    "speed": 66,
+    "id": "911",
+    "types": [
+      "fire",
+      "ghost"
+    ]
+  },
+  {
+    "name": "quaxly",
+    "speciesNames": {
+      "ja-Hrkt": "クワッス",
+      "roomaji": "Kuwassu",
+      "ko": "꾸왁스",
+      "zh-Hant": "潤水鴨",
+      "fr": "Coiffeton",
+      "de": "Kwaks",
+      "en": "Quaxly",
+      "ja": "クワッス",
+      "zh-Hans": "润水鸭"
+    },
+    "formNames": {},
+    "number": 912,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png",
+    "shinySpriteURL": "",
+    "hp": 55,
+    "attack": 65,
+    "defense": 45,
+    "spAttack": 50,
+    "spDefense": 45,
+    "speed": 50,
+    "id": "912",
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "quaxwell",
+    "speciesNames": {
+      "ja-Hrkt": "ウェルカモ",
+      "roomaji": "Welkamo",
+      "ko": "아꾸왁",
+      "zh-Hant": "湧躍鴨",
+      "fr": "Canarbello",
+      "de": "Fuentente",
+      "en": "Quaxwell",
+      "ja": "ウェルカモ",
+      "zh-Hans": "涌跃鸭"
+    },
+    "formNames": {},
+    "number": 913,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/913.png",
+    "shinySpriteURL": "",
+    "hp": 70,
+    "attack": 85,
+    "defense": 65,
+    "spAttack": 65,
+    "spDefense": 60,
+    "speed": 65,
+    "id": "913",
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "quaquaval",
+    "speciesNames": {
+      "ja-Hrkt": "ウェーニバル",
+      "roomaji": "Wanival",
+      "ko": "웨이니발",
+      "zh-Hant": "狂歡浪舞鴨",
+      "fr": "Palmaval",
+      "de": "Bailonda",
+      "en": "Quaquaval",
+      "ja": "ウェーニバル",
+      "zh-Hans": "狂欢浪舞鸭"
+    },
+    "formNames": {},
+    "number": 914,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/914.png",
+    "shinySpriteURL": "",
+    "hp": 85,
+    "attack": 120,
+    "defense": 80,
+    "spAttack": 85,
+    "spDefense": 75,
+    "speed": 85,
+    "id": "914",
+    "types": [
+      "water",
+      "fighting"
+    ]
+  },
+  {
+    "name": "lechonk",
+    "speciesNames": {
+      "ja-Hrkt": "グルトン",
+      "roomaji": "Gourton",
+      "ko": "맛보돈",
+      "zh-Hant": "愛吃豚",
+      "fr": "Gourmelet",
+      "de": "Ferkuli",
+      "en": "Lechonk",
+      "ja": "グルトン",
+      "zh-Hans": "爱吃豚"
+    },
+    "formNames": {},
+    "number": 915,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/915.png",
+    "shinySpriteURL": "",
+    "hp": 54,
+    "attack": 45,
+    "defense": 40,
+    "spAttack": 35,
+    "spDefense": 45,
+    "speed": 35,
+    "id": "915",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "oinkologne",
+    "speciesNames": {
+      "ja-Hrkt": "パフュートン",
+      "roomaji": "Perfuton",
+      "ko": "퍼퓨돈",
+      "zh-Hant": "飄香豚",
+      "fr": "Fragroin",
+      "de": "Fragrunz",
+      "en": "Oinkologne",
+      "ja": "パフュートン",
+      "zh-Hans": "飘香豚"
+    },
+    "formNames": {
+      "ja-Hrkt": "オスのすがた",
+      "en": "Male",
+      "ja": "オスのすがた"
+    },
+    "number": 916,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/916.png",
+    "shinySpriteURL": "",
+    "hp": 110,
+    "attack": 100,
+    "defense": 75,
+    "spAttack": 59,
+    "spDefense": 80,
+    "speed": 65,
+    "id": "916",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "oinkologne-female",
+    "speciesNames": {
+      "ja-Hrkt": "パフュートン",
+      "roomaji": "Perfuton",
+      "ko": "퍼퓨돈",
+      "zh-Hant": "飄香豚",
+      "fr": "Fragroin",
+      "de": "Fragrunz",
+      "en": "Oinkologne",
+      "ja": "パフュートン",
+      "zh-Hans": "飘香豚"
+    },
+    "formNames": {
+      "ja-Hrkt": "メスのすがた",
+      "en": "Female",
+      "ja": "メスのすがた"
+    },
+    "number": 916,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10254.png",
+    "shinySpriteURL": "",
+    "hp": 115,
+    "attack": 90,
+    "defense": 70,
+    "spAttack": 59,
+    "spDefense": 90,
+    "speed": 65,
+    "id": "10254",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "tarountula",
+    "speciesNames": {
+      "ja-Hrkt": "タマンチュラ",
+      "roomaji": "Tamanchura",
+      "ko": "타랜툴라",
+      "zh-Hant": "團珠蛛",
+      "fr": "Tissenboule",
+      "de": "Tarundel",
+      "en": "Tarountula",
+      "ja": "タマンチュラ",
+      "zh-Hans": "团珠蛛"
+    },
+    "formNames": {},
+    "number": 917,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/917.png",
+    "shinySpriteURL": "",
+    "hp": 35,
+    "attack": 41,
+    "defense": 45,
+    "spAttack": 29,
+    "spDefense": 40,
+    "speed": 20,
+    "id": "917",
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "spidops",
+    "speciesNames": {
+      "ja-Hrkt": "ワナイダー",
+      "roomaji": "Wanaidā",
+      "ko": "트래피더",
+      "zh-Hant": "操陷蛛",
+      "fr": "Filentrappe",
+      "de": "Spinsidias",
+      "en": "Spidops",
+      "ja": "ワナイダー",
+      "zh-Hans": "操陷蛛"
+    },
+    "formNames": {},
+    "number": 918,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/918.png",
+    "shinySpriteURL": "",
+    "hp": 60,
+    "attack": 79,
+    "defense": 92,
+    "spAttack": 52,
+    "spDefense": 86,
+    "speed": 35,
+    "id": "918",
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "nymble",
+    "speciesNames": {
+      "ja-Hrkt": "マメバッタ",
+      "roomaji": "Mamebatta",
+      "ko": "콩알뚜기",
+      "zh-Hant": "豆蟋蟀",
+      "fr": "Lilliterelle",
+      "de": "Micrick",
+      "en": "Nymble",
+      "ja": "マメバッタ",
+      "zh-Hans": "豆蟋蟀"
+    },
+    "formNames": {},
+    "number": 919,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/919.png",
+    "shinySpriteURL": "",
+    "hp": 33,
+    "attack": 46,
+    "defense": 40,
+    "spAttack": 21,
+    "spDefense": 25,
+    "speed": 45,
+    "id": "919",
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "lokix",
+    "speciesNames": {
+      "ja-Hrkt": "エクスレッグ",
+      "roomaji": "Exleg",
+      "ko": "엑스레그",
+      "zh-Hant": "烈腿蝗",
+      "fr": "Gambex",
+      "de": "Lextremo",
+      "en": "Lokix",
+      "ja": "エクスレッグ",
+      "zh-Hans": "烈腿蝗"
+    },
+    "formNames": {},
+    "number": 920,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/920.png",
+    "shinySpriteURL": "",
+    "hp": 71,
+    "attack": 102,
+    "defense": 78,
+    "spAttack": 52,
+    "spDefense": 55,
+    "speed": 92,
+    "id": "920",
+    "types": [
+      "bug",
+      "dark"
+    ]
+  },
+  {
+    "name": "pawmi",
+    "speciesNames": {
+      "ja-Hrkt": "パモ",
+      "roomaji": "Pamo",
+      "ko": "빠모",
+      "zh-Hant": "布撥",
+      "fr": "Pohm",
+      "de": "Pamo",
+      "en": "Pawmi",
+      "ja": "パモ",
+      "zh-Hans": "布拨"
+    },
+    "formNames": {},
+    "number": 921,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/921.png",
+    "shinySpriteURL": "",
+    "hp": 45,
+    "attack": 50,
+    "defense": 20,
+    "spAttack": 40,
+    "spDefense": 25,
+    "speed": 60,
+    "id": "921",
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "pawmo",
+    "speciesNames": {
+      "ja-Hrkt": "パモット",
+      "roomaji": "Pamot",
+      "ko": "빠모트",
+      "zh-Hant": "布土撥",
+      "fr": "Pohmotte",
+      "de": "Pamamo",
+      "en": "Pawmo",
+      "ja": "パモット",
+      "zh-Hans": "布土拨"
+    },
+    "formNames": {},
+    "number": 922,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/922.png",
+    "shinySpriteURL": "",
+    "hp": 60,
+    "attack": 75,
+    "defense": 40,
+    "spAttack": 50,
+    "spDefense": 40,
+    "speed": 85,
+    "id": "922",
+    "types": [
+      "electric",
+      "fighting"
+    ]
+  },
+  {
+    "name": "pawmot",
+    "speciesNames": {
+      "ja-Hrkt": "パーモット",
+      "roomaji": "Parmot",
+      "ko": "빠르모트",
+      "zh-Hant": "巴布土撥",
+      "fr": "Pohmarmotte",
+      "de": "Pamomamo",
+      "en": "Pawmot",
+      "ja": "パーモット",
+      "zh-Hans": "巴布土拨"
+    },
+    "formNames": {},
+    "number": 923,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/923.png",
+    "shinySpriteURL": "",
+    "hp": 70,
+    "attack": 115,
+    "defense": 70,
+    "spAttack": 70,
+    "spDefense": 60,
+    "speed": 105,
+    "id": "923",
+    "types": [
+      "electric",
+      "fighting"
+    ]
+  },
+  {
+    "name": "tandemaus",
+    "speciesNames": {
+      "ja-Hrkt": "ワッカネズミ",
+      "roomaji": "Wakkanezumi",
+      "ko": "두리쥐",
+      "zh-Hant": "一對鼠",
+      "fr": "Compagnol",
+      "de": "Zwieps",
+      "en": "Tandemaus",
+      "ja": "ワッカネズミ",
+      "zh-Hans": "一对鼠"
+    },
+    "formNames": {},
+    "number": 924,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/924.png",
+    "shinySpriteURL": "",
+    "hp": 50,
+    "attack": 50,
+    "defense": 45,
+    "spAttack": 40,
+    "spDefense": 45,
+    "speed": 75,
+    "id": "924",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "maushold",
+    "speciesNames": {
+      "ja-Hrkt": "イッカネズミ",
+      "roomaji": "Ikkanezumi",
+      "ko": "파밀리쥐",
+      "zh-Hant": "一家鼠",
+      "fr": "Famignol",
+      "de": "Famieps",
+      "en": "Maushold",
+      "ja": "イッカネズミ",
+      "zh-Hans": "一家鼠"
+    },
+    "formNames": {
+      "ja-Hrkt": "４ひきかぞく",
+      "en": "Family of Four",
+      "ja": "４ひきかぞく"
+    },
+    "number": 925,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png",
+    "shinySpriteURL": "",
+    "hp": 74,
+    "attack": 75,
+    "defense": 70,
+    "spAttack": 65,
+    "spDefense": 75,
+    "speed": 111,
+    "id": "925",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "maushold-family-of-three",
+    "speciesNames": {
+      "ja-Hrkt": "イッカネズミ",
+      "roomaji": "Ikkanezumi",
+      "ko": "파밀리쥐",
+      "zh-Hant": "一家鼠",
+      "fr": "Famignol",
+      "de": "Famieps",
+      "en": "Maushold",
+      "ja": "イッカネズミ",
+      "zh-Hans": "一家鼠"
+    },
+    "formNames": {
+      "ja-Hrkt": "３びきかぞく",
+      "en": "Family of Three",
+      "ja": "３びきかぞく"
+    },
+    "number": 925,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10257.png",
+    "shinySpriteURL": "",
+    "hp": 74,
+    "attack": 75,
+    "defense": 70,
+    "spAttack": 65,
+    "spDefense": 75,
+    "speed": 111,
+    "id": "10257",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "fidough",
+    "speciesNames": {
+      "ja-Hrkt": "パピモッチ",
+      "roomaji": "Papimocchi",
+      "ko": "쫀도기",
+      "zh-Hant": "狗仔包",
+      "fr": "Pâtachiot",
+      "de": "Hefel",
+      "en": "Fidough",
+      "ja": "パピモッチ",
+      "zh-Hans": "狗仔包"
+    },
+    "formNames": {},
+    "number": 926,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/926.png",
+    "shinySpriteURL": "",
+    "hp": 37,
+    "attack": 55,
+    "defense": 70,
+    "spAttack": 30,
+    "spDefense": 55,
+    "speed": 65,
+    "id": "926",
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "dachsbun",
+    "speciesNames": {
+      "ja-Hrkt": "バウッツェル",
+      "roomaji": "Bowtzel",
+      "ko": "바우첼",
+      "zh-Hant": "麻花犬",
+      "fr": "Briochien",
+      "de": "Backel",
+      "en": "Dachsbun",
+      "ja": "バウッツェル",
+      "zh-Hans": "麻花犬"
+    },
+    "formNames": {},
+    "number": 927,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/927.png",
+    "shinySpriteURL": "",
+    "hp": 57,
+    "attack": 80,
+    "defense": 115,
+    "spAttack": 50,
+    "spDefense": 80,
+    "speed": 95,
+    "id": "927",
+    "types": [
+      "fairy"
+    ]
+  },
+  {
+    "name": "smoliv",
+    "speciesNames": {
+      "ja-Hrkt": "ミニーブ",
+      "roomaji": "Minību",
+      "ko": "미니브",
+      "zh-Hant": "迷你芙",
+      "fr": "Olivini",
+      "de": "Olini",
+      "en": "Smoliv",
+      "ja": "ミニーブ",
+      "zh-Hans": "迷你芙"
+    },
+    "formNames": {},
+    "number": 928,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png",
+    "shinySpriteURL": "",
+    "hp": 41,
+    "attack": 35,
+    "defense": 45,
+    "spAttack": 58,
+    "spDefense": 51,
+    "speed": 30,
+    "id": "928",
+    "types": [
+      "grass",
+      "normal"
+    ]
+  },
+  {
+    "name": "dolliv",
+    "speciesNames": {
+      "ja-Hrkt": "オリーニョ",
+      "roomaji": "Orīnyo",
+      "ko": "올리뇨",
+      "zh-Hant": "奧利紐",
+      "fr": "Olivado",
+      "de": "Olivinio",
+      "en": "Dolliv",
+      "ja": "オリーニョ",
+      "zh-Hans": "奥利纽"
+    },
+    "formNames": {},
+    "number": 929,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/929.png",
+    "shinySpriteURL": "",
+    "hp": 52,
+    "attack": 53,
+    "defense": 60,
+    "spAttack": 78,
+    "spDefense": 78,
+    "speed": 33,
+    "id": "929",
+    "types": [
+      "grass",
+      "normal"
+    ]
+  },
+  {
+    "name": "arboliva",
+    "speciesNames": {
+      "ja-Hrkt": "オリーヴァ",
+      "roomaji": "Orīva",
+      "ko": "올리르바",
+      "zh-Hant": "奧利瓦",
+      "fr": "Arboliva",
+      "de": "Olithena",
+      "en": "Arboliva",
+      "ja": "オリーヴァ",
+      "zh-Hans": "奥利瓦"
+    },
+    "formNames": {},
+    "number": 930,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/930.png",
+    "shinySpriteURL": "",
+    "hp": 78,
+    "attack": 69,
+    "defense": 90,
+    "spAttack": 125,
+    "spDefense": 109,
+    "speed": 39,
+    "id": "930",
+    "types": [
+      "grass",
+      "normal"
+    ]
+  },
+  {
+    "name": "squawkabilly",
+    "speciesNames": {
+      "ja-Hrkt": "イキリンコ",
+      "roomaji": "Ikirinko",
+      "ko": "시비꼬",
+      "zh-Hant": "怒鸚哥",
+      "fr": "Tapatoès",
+      "de": "Krawalloro",
+      "en": "Squawkabilly",
+      "ja": "イキリンコ",
+      "zh-Hans": "怒鹦哥"
+    },
+    "formNames": {
+      "ja-Hrkt": "グリーンフェザー",
+      "en": "Green Plumage",
+      "ja": "グリーンフェザー"
+    },
+    "number": 931,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/931.png",
+    "shinySpriteURL": "",
+    "hp": 82,
+    "attack": 96,
+    "defense": 51,
+    "spAttack": 45,
+    "spDefense": 51,
+    "speed": 92,
+    "id": "931",
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "squawkabilly-blue-plumage",
+    "speciesNames": {
+      "ja-Hrkt": "イキリンコ",
+      "roomaji": "Ikirinko",
+      "ko": "시비꼬",
+      "zh-Hant": "怒鸚哥",
+      "fr": "Tapatoès",
+      "de": "Krawalloro",
+      "en": "Squawkabilly",
+      "ja": "イキリンコ",
+      "zh-Hans": "怒鹦哥"
+    },
+    "formNames": {
+      "ja-Hrkt": "ブルーフェザー",
+      "en": "Blue Plumage",
+      "ja": "ブルーフェザー"
+    },
+    "number": 931,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10260.png",
+    "shinySpriteURL": "",
+    "hp": 82,
+    "attack": 96,
+    "defense": 51,
+    "spAttack": 45,
+    "spDefense": 51,
+    "speed": 92,
+    "id": "10260",
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "squawkabilly-yellow-plumage",
+    "speciesNames": {
+      "ja-Hrkt": "イキリンコ",
+      "roomaji": "Ikirinko",
+      "ko": "시비꼬",
+      "zh-Hant": "怒鸚哥",
+      "fr": "Tapatoès",
+      "de": "Krawalloro",
+      "en": "Squawkabilly",
+      "ja": "イキリンコ",
+      "zh-Hans": "怒鹦哥"
+    },
+    "formNames": {
+      "ja-Hrkt": "イエローフェザー",
+      "en": "Yellow Plumage",
+      "ja": "イエローフェザー"
+    },
+    "number": 931,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10261.png",
+    "shinySpriteURL": "",
+    "hp": 82,
+    "attack": 96,
+    "defense": 51,
+    "spAttack": 45,
+    "spDefense": 51,
+    "speed": 92,
+    "id": "10261",
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "squawkabilly-white-plumage",
+    "speciesNames": {
+      "ja-Hrkt": "イキリンコ",
+      "roomaji": "Ikirinko",
+      "ko": "시비꼬",
+      "zh-Hant": "怒鸚哥",
+      "fr": "Tapatoès",
+      "de": "Krawalloro",
+      "en": "Squawkabilly",
+      "ja": "イキリンコ",
+      "zh-Hans": "怒鹦哥"
+    },
+    "formNames": {
+      "ja-Hrkt": "ホワイトフェザー",
+      "en": "White Plumage",
+      "ja": "ホワイトフェザー"
+    },
+    "number": 931,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10262.png",
+    "shinySpriteURL": "",
+    "hp": 82,
+    "attack": 96,
+    "defense": 51,
+    "spAttack": 45,
+    "spDefense": 51,
+    "speed": 92,
+    "id": "10262",
+    "types": [
+      "normal",
+      "flying"
+    ]
+  },
+  {
+    "name": "nacli",
+    "speciesNames": {
+      "ja-Hrkt": "コジオ",
+      "roomaji": "Kojio",
+      "ko": "베베솔트",
+      "zh-Hant": "鹽石寶",
+      "fr": "Selutin",
+      "de": "Geosali",
+      "en": "Nacli",
+      "ja": "コジオ",
+      "zh-Hans": "盐石宝"
+    },
+    "formNames": {},
+    "number": 932,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/932.png",
+    "shinySpriteURL": "",
+    "hp": 55,
+    "attack": 55,
+    "defense": 75,
+    "spAttack": 35,
+    "spDefense": 35,
+    "speed": 25,
+    "id": "932",
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "naclstack",
+    "speciesNames": {
+      "ja-Hrkt": "ジオヅム",
+      "roomaji": "Jiozumu",
+      "ko": "스태솔트",
+      "zh-Hant": "鹽石壘",
+      "fr": "Amassel",
+      "de": "Sedisal",
+      "en": "Naclstack",
+      "ja": "ジオヅム",
+      "zh-Hans": "盐石垒"
+    },
+    "formNames": {},
+    "number": 933,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/933.png",
+    "shinySpriteURL": "",
+    "hp": 60,
+    "attack": 60,
+    "defense": 100,
+    "spAttack": 35,
+    "spDefense": 65,
+    "speed": 35,
+    "id": "933",
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "garganacl",
+    "speciesNames": {
+      "ja-Hrkt": "キョジオーン",
+      "roomaji": "Kyojiōn",
+      "ko": "콜로솔트",
+      "zh-Hant": "鹽石巨靈",
+      "fr": "Gigansel",
+      "de": "Saltigant",
+      "en": "Garganacl",
+      "ja": "キョジオーン",
+      "zh-Hans": "盐石巨灵"
+    },
+    "formNames": {},
+    "number": 934,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/934.png",
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 100,
+    "defense": 130,
+    "spAttack": 45,
+    "spDefense": 90,
+    "speed": 35,
+    "id": "934",
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "charcadet",
+    "speciesNames": {
+      "ja-Hrkt": "カルボウ",
+      "roomaji": "Carbou",
+      "ko": "카르본",
+      "zh-Hant": "炭小侍",
+      "fr": "Charbambin",
+      "de": "Knarbon",
+      "en": "Charcadet",
+      "ja": "カルボウ",
+      "zh-Hans": "炭小侍"
+    },
+    "formNames": {},
+    "number": 935,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/935.png",
+    "shinySpriteURL": "",
+    "hp": 40,
+    "attack": 50,
+    "defense": 40,
+    "spAttack": 50,
+    "spDefense": 40,
+    "speed": 35,
+    "id": "935",
+    "types": [
+      "fire"
+    ]
+  },
+  {
+    "name": "armarouge",
+    "speciesNames": {
+      "ja-Hrkt": "グレンアルマ",
+      "roomaji": "Gurenarma",
+      "ko": "카디나르마",
+      "zh-Hant": "紅蓮鎧騎",
+      "fr": "Carmadura",
+      "de": "Crimanzo",
+      "en": "Armarouge",
+      "ja": "グレンアルマ",
+      "zh-Hans": "红莲铠骑"
+    },
+    "formNames": {},
+    "number": 936,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/936.png",
+    "shinySpriteURL": "",
+    "hp": 85,
+    "attack": 60,
+    "defense": 100,
+    "spAttack": 125,
+    "spDefense": 80,
+    "speed": 75,
+    "id": "936",
+    "types": [
+      "fire",
+      "psychic"
+    ]
+  },
+  {
+    "name": "ceruledge",
+    "speciesNames": {
+      "ja-Hrkt": "ソウブレイズ",
+      "roomaji": "Soublades",
+      "ko": "파라블레이즈",
+      "zh-Hant": "蒼炎刃鬼",
+      "fr": "Malvalame",
+      "de": "Azugladis",
+      "en": "Ceruledge",
+      "ja": "ソウブレイズ",
+      "zh-Hans": "苍炎刃鬼"
+    },
+    "formNames": {},
+    "number": 937,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/937.png",
+    "shinySpriteURL": "",
+    "hp": 75,
+    "attack": 125,
+    "defense": 80,
+    "spAttack": 60,
+    "spDefense": 100,
+    "speed": 85,
+    "id": "937",
+    "types": [
+      "fire",
+      "ghost"
+    ]
+  },
+  {
+    "name": "tadbulb",
+    "speciesNames": {
+      "ja-Hrkt": "ズピカ",
+      "roomaji": "Zupika",
+      "ko": "빈나두",
+      "zh-Hant": "光蚪仔",
+      "fr": "Têtampoule",
+      "de": "Blipp",
+      "en": "Tadbulb",
+      "ja": "ズピカ",
+      "zh-Hans": "光蚪仔"
+    },
+    "formNames": {},
+    "number": 938,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/938.png",
+    "shinySpriteURL": "",
+    "hp": 61,
+    "attack": 31,
+    "defense": 41,
+    "spAttack": 59,
+    "spDefense": 35,
+    "speed": 45,
+    "id": "938",
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "bellibolt",
+    "speciesNames": {
+      "ja-Hrkt": "ハラバリー",
+      "roomaji": "Harabarī",
+      "ko": "찌리배리",
+      "zh-Hant": "電肚蛙",
+      "fr": "Ampibidou",
+      "de": "Wampitz",
+      "en": "Bellibolt",
+      "ja": "ハラバリー",
+      "zh-Hans": "电肚蛙"
+    },
+    "formNames": {},
+    "number": 939,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/939.png",
+    "shinySpriteURL": "",
+    "hp": 109,
+    "attack": 64,
+    "defense": 91,
+    "spAttack": 103,
+    "spDefense": 83,
+    "speed": 45,
+    "id": "939",
+    "types": [
+      "electric"
+    ]
+  },
+  {
+    "name": "wattrel",
+    "speciesNames": {
+      "ja-Hrkt": "カイデン",
+      "roomaji": "Kaiden",
+      "ko": "찌리비",
+      "zh-Hant": "電海燕",
+      "fr": "Zapétrel",
+      "de": "Voltrel",
+      "en": "Wattrel",
+      "ja": "カイデン",
+      "zh-Hans": "电海燕"
+    },
+    "formNames": {},
+    "number": 940,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/940.png",
+    "shinySpriteURL": "",
+    "hp": 40,
+    "attack": 40,
+    "defense": 35,
+    "spAttack": 55,
+    "spDefense": 40,
+    "speed": 70,
+    "id": "940",
+    "types": [
+      "electric",
+      "flying"
+    ]
+  },
+  {
+    "name": "kilowattrel",
+    "speciesNames": {
+      "ja-Hrkt": "タイカイデン",
+      "roomaji": "Taikaiden",
+      "ko": "찌리비크",
+      "zh-Hant": "大電海燕",
+      "fr": "Fulgulairo",
+      "de": "Voltrean",
+      "en": "Kilowattrel",
+      "ja": "タイカイデン",
+      "zh-Hans": "大电海燕"
+    },
+    "formNames": {},
+    "number": 941,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/941.png",
+    "shinySpriteURL": "",
+    "hp": 70,
+    "attack": 70,
+    "defense": 60,
+    "spAttack": 105,
+    "spDefense": 60,
+    "speed": 125,
+    "id": "941",
+    "types": [
+      "electric",
+      "flying"
+    ]
+  },
+  {
+    "name": "maschiff",
+    "speciesNames": {
+      "ja-Hrkt": "オラチフ",
+      "roomaji": "Orachifu",
+      "ko": "오라티프",
+      "zh-Hant": "偶叫獒",
+      "fr": "Grondogue",
+      "de": "Mobtiff",
+      "en": "Maschiff",
+      "ja": "オラチフ",
+      "zh-Hans": "偶叫獒"
+    },
+    "formNames": {},
+    "number": 942,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/942.png",
+    "shinySpriteURL": "",
+    "hp": 60,
+    "attack": 78,
+    "defense": 60,
+    "spAttack": 40,
+    "spDefense": 51,
+    "speed": 51,
+    "id": "942",
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "mabosstiff",
+    "speciesNames": {
+      "ja-Hrkt": "マフィティフ",
+      "roomaji": "Mafitifu",
+      "ko": "마피티프",
+      "zh-Hant": "獒教父",
+      "fr": "Dogrino",
+      "de": "Mastifioso",
+      "en": "Mabosstiff",
+      "ja": "マフィティフ",
+      "zh-Hans": "獒教父"
+    },
+    "formNames": {},
+    "number": 943,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/943.png",
+    "shinySpriteURL": "",
+    "hp": 80,
+    "attack": 120,
+    "defense": 90,
+    "spAttack": 60,
+    "spDefense": 70,
+    "speed": 85,
+    "id": "943",
+    "types": [
+      "dark"
+    ]
+  },
+  {
+    "name": "shroodle",
+    "speciesNames": {
+      "ja-Hrkt": "シルシュルー",
+      "roomaji": "Shirushurū",
+      "ko": "땃쭈르",
+      "zh-Hant": "滋汁鼴",
+      "fr": "Gribouraigne",
+      "de": "Sproxi",
+      "en": "Shroodle",
+      "ja": "シルシュルー",
+      "zh-Hans": "滋汁鼹"
+    },
+    "formNames": {},
+    "number": 944,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/944.png",
+    "shinySpriteURL": "",
+    "hp": 40,
+    "attack": 65,
+    "defense": 35,
+    "spAttack": 40,
+    "spDefense": 35,
+    "speed": 75,
+    "id": "944",
+    "types": [
+      "poison",
+      "normal"
+    ]
+  },
+  {
+    "name": "grafaiai",
+    "speciesNames": {
+      "ja-Hrkt": "タギングル",
+      "roomaji": "Taginguru",
+      "ko": "태깅구르",
+      "zh-Hant": "塗標客",
+      "fr": "Tag-Tag",
+      "de": "Affiti",
+      "en": "Grafaiai",
+      "ja": "タギングル",
+      "zh-Hans": "涂标客"
+    },
+    "formNames": {},
+    "number": 945,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/945.png",
+    "shinySpriteURL": "",
+    "hp": 63,
+    "attack": 95,
+    "defense": 65,
+    "spAttack": 80,
+    "spDefense": 72,
+    "speed": 110,
+    "id": "945",
+    "types": [
+      "poison",
+      "normal"
+    ]
+  },
+  {
+    "name": "bramblin",
+    "speciesNames": {
+      "ja-Hrkt": "アノクサ",
+      "roomaji": "Anokusa",
+      "ko": "그푸리",
+      "zh-Hant": "納噬草",
+      "fr": "Virovent",
+      "de": "Weherba",
+      "en": "Bramblin",
+      "ja": "アノクサ",
+      "zh-Hans": "纳噬草"
+    },
+    "formNames": {},
+    "number": 946,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/946.png",
+    "shinySpriteURL": "",
+    "hp": 40,
+    "attack": 65,
+    "defense": 30,
+    "spAttack": 45,
+    "spDefense": 35,
+    "speed": 60,
+    "id": "946",
+    "types": [
+      "grass",
+      "ghost"
+    ]
+  },
+  {
+    "name": "brambleghast",
+    "speciesNames": {
+      "ja-Hrkt": "アノホラグサ",
+      "roomaji": "Anohoragusa",
+      "ko": "공푸리",
+      "zh-Hant": "怖納噬草",
+      "fr": "Virevorreur",
+      "de": "Horrerba",
+      "en": "Brambleghast",
+      "ja": "アノホラグサ",
+      "zh-Hans": "怖纳噬草"
+    },
+    "formNames": {},
+    "number": 947,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/947.png",
+    "shinySpriteURL": "",
+    "hp": 55,
+    "attack": 115,
+    "defense": 70,
+    "spAttack": 80,
+    "spDefense": 70,
+    "speed": 90,
+    "id": "947",
+    "types": [
+      "grass",
+      "ghost"
+    ]
+  },
+  {
+    "name": "toedscool",
+    "speciesNames": {
+      "ja-Hrkt": "ノノクラゲ",
+      "roomaji": "Nonokurage",
+      "ko": "들눈해",
+      "zh-Hant": "原野水母",
+      "fr": "Terracool",
+      "de": "Tentagra",
+      "en": "Toedscool",
+      "ja": "ノノクラゲ",
+      "zh-Hans": "原野水母"
+    },
+    "formNames": {},
+    "number": 948,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/948.png",
+    "shinySpriteURL": "",
+    "hp": 40,
+    "attack": 40,
+    "defense": 35,
+    "spAttack": 50,
+    "spDefense": 100,
+    "speed": 70,
+    "id": "948",
+    "types": [
+      "ground",
+      "grass"
+    ]
+  },
+  {
+    "name": "toedscruel",
+    "speciesNames": {
+      "ja-Hrkt": "リククラゲ",
+      "roomaji": "Rikukurage",
+      "ko": "육파리",
+      "zh-Hant": "陸地水母",
+      "fr": "Terracruel",
+      "de": "Tenterra",
+      "en": "Toedscruel",
+      "ja": "リククラゲ",
+      "zh-Hans": "陆地水母"
+    },
+    "formNames": {},
+    "number": 949,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/949.png",
+    "shinySpriteURL": "",
+    "hp": 80,
+    "attack": 70,
+    "defense": 65,
+    "spAttack": 80,
+    "spDefense": 120,
+    "speed": 100,
+    "id": "949",
+    "types": [
+      "ground",
+      "grass"
+    ]
+  },
+  {
+    "name": "klawf",
+    "speciesNames": {
+      "ja-Hrkt": "ガケガニ",
+      "roomaji": "Gakegani",
+      "ko": "절벼게",
+      "zh-Hant": "毛崖蟹",
+      "fr": "Craparoi",
+      "de": "Klibbe",
+      "en": "Klawf",
+      "ja": "ガケガニ",
+      "zh-Hans": "毛崖蟹"
+    },
+    "formNames": {},
+    "number": 950,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/950.png",
+    "shinySpriteURL": "",
+    "hp": 70,
+    "attack": 100,
+    "defense": 115,
+    "spAttack": 35,
+    "spDefense": 55,
+    "speed": 75,
+    "id": "950",
+    "types": [
+      "rock"
+    ]
+  },
+  {
+    "name": "capsakid",
+    "speciesNames": {
+      "ja-Hrkt": "カプサイジ",
+      "roomaji": "Kapusaiji",
+      "ko": "캡싸이",
+      "zh-Hant": "熱辣娃",
+      "fr": "Pimito",
+      "de": "Chilingel",
+      "en": "Capsakid",
+      "ja": "カプサイジ",
+      "zh-Hans": "热辣娃"
+    },
+    "formNames": {},
+    "number": 951,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/951.png",
+    "shinySpriteURL": "",
+    "hp": 50,
+    "attack": 62,
+    "defense": 40,
+    "spAttack": 62,
+    "spDefense": 40,
+    "speed": 50,
+    "id": "951",
+    "types": [
+      "grass"
+    ]
+  },
+  {
+    "name": "scovillain",
+    "speciesNames": {
+      "ja-Hrkt": "スコヴィラン",
+      "roomaji": "Sukoviran",
+      "ko": "스코빌런",
+      "zh-Hant": "狠辣椒",
+      "fr": "Scovilain",
+      "de": "Halupenjo",
+      "en": "Scovillain",
+      "ja": "スコヴィラン",
+      "zh-Hans": "狠辣椒"
+    },
+    "formNames": {},
+    "number": 952,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png",
+    "shinySpriteURL": "",
+    "hp": 65,
+    "attack": 108,
+    "defense": 65,
+    "spAttack": 108,
+    "spDefense": 65,
+    "speed": 75,
+    "id": "952",
+    "types": [
+      "grass",
+      "fire"
+    ]
+  },
+  {
+    "name": "rellor",
+    "speciesNames": {
+      "ja-Hrkt": "シガロコ",
+      "roomaji": "Shigaroko",
+      "ko": "구르데",
+      "zh-Hant": "蟲滾泥",
+      "fr": "Léboulérou",
+      "de": "Relluk",
+      "en": "Rellor",
+      "ja": "シガロコ",
+      "zh-Hans": "虫滚泥"
+    },
+    "formNames": {},
+    "number": 953,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/953.png",
+    "shinySpriteURL": "",
+    "hp": 41,
+    "attack": 50,
+    "defense": 60,
+    "spAttack": 31,
+    "spDefense": 58,
+    "speed": 30,
+    "id": "953",
+    "types": [
+      "bug"
+    ]
+  },
+  {
+    "name": "rabsca",
+    "speciesNames": {
+      "ja-Hrkt": "ベラカス",
+      "roomaji": "Berakasu",
+      "ko": "베라카스",
+      "zh-Hant": "蟲甲聖",
+      "fr": "Bérasca",
+      "de": "Skarabaks",
+      "en": "Rabsca",
+      "ja": "ベラカス",
+      "zh-Hans": "虫甲圣"
+    },
+    "formNames": {},
+    "number": 954,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png",
+    "shinySpriteURL": "",
+    "hp": 75,
+    "attack": 50,
+    "defense": 85,
+    "spAttack": 115,
+    "spDefense": 100,
+    "speed": 45,
+    "id": "954",
+    "types": [
+      "bug",
+      "psychic"
+    ]
+  },
+  {
+    "name": "flittle",
+    "speciesNames": {
+      "ja-Hrkt": "ヒラヒナ",
+      "roomaji": "Hirahina",
+      "ko": "하느라기",
+      "zh-Hant": "飄飄雛",
+      "fr": "Flotillon",
+      "de": "Flattutu",
+      "en": "Flittle",
+      "ja": "ヒラヒナ",
+      "zh-Hans": "飘飘雏"
+    },
+    "formNames": {},
+    "number": 955,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/955.png",
+    "shinySpriteURL": "",
+    "hp": 30,
+    "attack": 35,
+    "defense": 30,
+    "spAttack": 55,
+    "spDefense": 30,
+    "speed": 75,
+    "id": "955",
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "espathra",
+    "speciesNames": {
+      "ja-Hrkt": "クエスパトラ",
+      "roomaji": "Kaesupatora",
+      "ko": "클레스퍼트라",
+      "zh-Hant": "超能艷鴕",
+      "fr": "Cléopsytra",
+      "de": "Psiopatra",
+      "en": "Espathra",
+      "ja": "クエスパトラ",
+      "zh-Hans": "超能艳鸵"
+    },
+    "formNames": {},
+    "number": 956,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/956.png",
+    "shinySpriteURL": "",
+    "hp": 95,
+    "attack": 60,
+    "defense": 60,
+    "spAttack": 101,
+    "spDefense": 60,
+    "speed": 105,
+    "id": "956",
+    "types": [
+      "psychic"
+    ]
+  },
+  {
+    "name": "tinkatink",
+    "speciesNames": {
+      "ja-Hrkt": "カヌチャン",
+      "roomaji": "Kanuchan",
+      "ko": "어리짱",
+      "zh-Hant": "小鍛匠",
+      "fr": "Forgerette",
+      "de": "Forgita",
+      "en": "Tinkatink",
+      "ja": "カヌチャン",
+      "zh-Hans": "小锻匠"
+    },
+    "formNames": {},
+    "number": 957,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/957.png",
+    "shinySpriteURL": "",
+    "hp": 50,
+    "attack": 45,
+    "defense": 45,
+    "spAttack": 35,
+    "spDefense": 64,
+    "speed": 58,
+    "id": "957",
+    "types": [
+      "fairy",
+      "steel"
+    ]
+  },
+  {
+    "name": "tinkatuff",
+    "speciesNames": {
+      "ja-Hrkt": "ナカヌチャン",
+      "roomaji": "Nakanuchan",
+      "ko": "벼리짱",
+      "zh-Hant": "巧鍛匠",
+      "fr": "Forgella",
+      "de": "Tafforgita",
+      "en": "Tinkatuff",
+      "ja": "ナカヌチャン",
+      "zh-Hans": "巧锻匠"
+    },
+    "formNames": {},
+    "number": 958,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/958.png",
+    "shinySpriteURL": "",
+    "hp": 65,
+    "attack": 55,
+    "defense": 55,
+    "spAttack": 45,
+    "spDefense": 82,
+    "speed": 78,
+    "id": "958",
+    "types": [
+      "fairy",
+      "steel"
+    ]
+  },
+  {
+    "name": "tinkaton",
+    "speciesNames": {
+      "ja-Hrkt": "デカヌチャン",
+      "roomaji": "Dekanuchan",
+      "ko": "두드리짱",
+      "zh-Hant": "巨鍛匠",
+      "fr": "Forgelina",
+      "de": "Granforgita",
+      "en": "Tinkaton",
+      "ja": "デカヌチャン",
+      "zh-Hans": "巨锻匠"
+    },
+    "formNames": {},
+    "number": 959,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png",
+    "shinySpriteURL": "",
+    "hp": 85,
+    "attack": 75,
+    "defense": 77,
+    "spAttack": 70,
+    "spDefense": 105,
+    "speed": 94,
+    "id": "959",
+    "types": [
+      "fairy",
+      "steel"
+    ]
+  },
+  {
+    "name": "wiglett",
+    "speciesNames": {
+      "ja-Hrkt": "ウミディグダ",
+      "roomaji": "Umidigda",
+      "ko": "바다그다",
+      "zh-Hant": "海地鼠",
+      "fr": "Taupikeau",
+      "de": "Schligda",
+      "en": "Wiglett",
+      "ja": "ウミディグダ",
+      "zh-Hans": "海地鼠"
+    },
+    "formNames": {},
+    "number": 960,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/960.png",
+    "shinySpriteURL": "",
+    "hp": 10,
+    "attack": 55,
+    "defense": 25,
+    "spAttack": 35,
+    "spDefense": 25,
+    "speed": 95,
+    "id": "960",
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "wugtrio",
+    "speciesNames": {
+      "ja-Hrkt": "ウミトリオ",
+      "roomaji": "Umitrio",
+      "ko": "바닥트리오",
+      "zh-Hant": "三海地鼠",
+      "fr": "Triopikeau",
+      "de": "Schligdri",
+      "en": "Wugtrio",
+      "ja": "ウミトリオ",
+      "zh-Hans": "三海地鼠"
+    },
+    "formNames": {},
+    "number": 961,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/961.png",
+    "shinySpriteURL": "",
+    "hp": 35,
+    "attack": 100,
+    "defense": 50,
+    "spAttack": 50,
+    "spDefense": 70,
+    "speed": 120,
+    "id": "961",
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "bombirdier",
+    "speciesNames": {
+      "ja-Hrkt": "オトシドリ",
+      "roomaji": "Otoshidori",
+      "ko": "떨구새",
+      "zh-Hant": "下石鳥",
+      "fr": "Lestombaile",
+      "de": "Adebom",
+      "en": "Bombirdier",
+      "ja": "オトシドリ",
+      "zh-Hans": "下石鸟"
+    },
+    "formNames": {},
+    "number": 962,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/962.png",
+    "shinySpriteURL": "",
+    "hp": 70,
+    "attack": 103,
+    "defense": 85,
+    "spAttack": 60,
+    "spDefense": 85,
+    "speed": 82,
+    "id": "962",
+    "types": [
+      "flying",
+      "dark"
+    ]
+  },
+  {
+    "name": "finizen",
+    "speciesNames": {
+      "ja-Hrkt": "ナミイルカ",
+      "roomaji": "Namiiruka",
+      "ko": "맨돌핀",
+      "zh-Hant": "波普海豚",
+      "fr": "Dofin",
+      "de": "Normifin",
+      "en": "Finizen",
+      "ja": "ナミイルカ",
+      "zh-Hans": "波普海豚"
+    },
+    "formNames": {},
+    "number": 963,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/963.png",
+    "shinySpriteURL": "",
+    "hp": 70,
+    "attack": 45,
+    "defense": 40,
+    "spAttack": 45,
+    "spDefense": 40,
+    "speed": 75,
+    "id": "963",
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "palafin",
+    "speciesNames": {
+      "ja-Hrkt": "イルカマン",
+      "roomaji": "Irukaman",
+      "ko": "돌핀맨",
+      "zh-Hant": "海豚俠",
+      "fr": "Superdofin",
+      "de": "Delfinator",
+      "en": "Palafin",
+      "ja": "イルカマン",
+      "zh-Hans": "海豚侠"
+    },
+    "formNames": {
+      "ja-Hrkt": "ナイーブフォルム",
+      "en": "Zero Form",
+      "ja": "ナイーブフォルム"
+    },
+    "number": 964,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/964.png",
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 70,
+    "defense": 72,
+    "spAttack": 53,
+    "spDefense": 62,
+    "speed": 100,
+    "id": "964",
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "palafin-hero",
+    "speciesNames": {
+      "ja-Hrkt": "イルカマン",
+      "roomaji": "Irukaman",
+      "ko": "돌핀맨",
+      "zh-Hant": "海豚俠",
+      "fr": "Superdofin",
+      "de": "Delfinator",
+      "en": "Palafin",
+      "ja": "イルカマン",
+      "zh-Hans": "海豚侠"
+    },
+    "formNames": {
+      "ja-Hrkt": "マイティフォルム",
+      "en": "Hero Form",
+      "ja": "マイティフォルム"
+    },
+    "number": 964,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10256.png",
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 160,
+    "defense": 97,
+    "spAttack": 106,
+    "spDefense": 87,
+    "speed": 100,
+    "id": "10256",
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "varoom",
+    "speciesNames": {
+      "ja-Hrkt": "ブロロン",
+      "roomaji": "Buroron",
+      "ko": "부르롱",
+      "zh-Hant": "噗隆隆",
+      "fr": "Vrombi",
+      "de": "Knattox",
+      "en": "Varoom",
+      "ja": "ブロロン",
+      "zh-Hans": "噗隆隆"
+    },
+    "formNames": {},
+    "number": 965,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/965.png",
+    "shinySpriteURL": "",
+    "hp": 45,
+    "attack": 70,
+    "defense": 63,
+    "spAttack": 30,
+    "spDefense": 45,
+    "speed": 47,
+    "id": "965",
+    "types": [
+      "steel",
+      "poison"
+    ]
+  },
+  {
+    "name": "revavroom",
+    "speciesNames": {
+      "ja-Hrkt": "ブロロローム",
+      "roomaji": "Burororōmu",
+      "ko": "부르르룸",
+      "zh-Hant": "普隆隆姆",
+      "fr": "Vrombotor",
+      "de": "Knattatox",
+      "en": "Revavroom",
+      "ja": "ブロロローム",
+      "zh-Hans": "普隆隆姆"
+    },
+    "formNames": {},
+    "number": 966,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/966.png",
+    "shinySpriteURL": "",
+    "hp": 80,
+    "attack": 119,
+    "defense": 90,
+    "spAttack": 54,
+    "spDefense": 67,
+    "speed": 90,
+    "id": "966",
+    "types": [
+      "steel",
+      "poison"
+    ]
+  },
+  {
+    "name": "cyclizar",
+    "speciesNames": {
+      "ja-Hrkt": "モトトカゲ",
+      "roomaji": "Mototokage",
+      "ko": "모토마",
+      "zh-Hant": "摩托蜥",
+      "fr": "Motorizard",
+      "de": "Mopex",
+      "en": "Cyclizar",
+      "ja": "モトトカゲ",
+      "zh-Hans": "摩托蜥"
+    },
+    "formNames": {},
+    "number": 967,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/967.png",
+    "shinySpriteURL": "",
+    "hp": 70,
+    "attack": 95,
+    "defense": 65,
+    "spAttack": 85,
+    "spDefense": 65,
+    "speed": 121,
+    "id": "967",
+    "types": [
+      "dragon",
+      "normal"
+    ]
+  },
+  {
+    "name": "orthworm",
+    "speciesNames": {
+      "ja-Hrkt": "ミミズズ",
+      "roomaji": "Mimizuzu",
+      "ko": "꿈트렁",
+      "zh-Hant": "拖拖蚓",
+      "fr": "Ferdeter",
+      "de": "Schlurm",
+      "en": "Orthworm",
+      "ja": "ミミズズ",
+      "zh-Hans": "拖拖蚓"
+    },
+    "formNames": {},
+    "number": 968,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/968.png",
+    "shinySpriteURL": "",
+    "hp": 70,
+    "attack": 85,
+    "defense": 145,
+    "spAttack": 60,
+    "spDefense": 55,
+    "speed": 65,
+    "id": "968",
+    "types": [
+      "steel"
+    ]
+  },
+  {
+    "name": "glimmet",
+    "speciesNames": {
+      "ja-Hrkt": "キラーメ",
+      "roomaji": "Kirāme",
+      "ko": "초롱순",
+      "zh-Hant": "晶光芽",
+      "fr": "Germéclat",
+      "de": "Lumispross",
+      "en": "Glimmet",
+      "ja": "キラーメ",
+      "zh-Hans": "晶光芽"
+    },
+    "formNames": {},
+    "number": 969,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/969.png",
+    "shinySpriteURL": "",
+    "hp": 48,
+    "attack": 35,
+    "defense": 42,
+    "spAttack": 105,
+    "spDefense": 60,
+    "speed": 60,
+    "id": "969",
+    "types": [
+      "rock",
+      "poison"
+    ]
+  },
+  {
+    "name": "glimmora",
+    "speciesNames": {
+      "ja-Hrkt": "キラフロル",
+      "roomaji": "Kirafuroru",
+      "ko": "킬라플로르",
+      "zh-Hant": "晶光花",
+      "fr": "Floréclat",
+      "de": "Lumiflora",
+      "en": "Glimmora",
+      "ja": "キラフロル",
+      "zh-Hans": "晶光花"
+    },
+    "formNames": {},
+    "number": 970,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/970.png",
+    "shinySpriteURL": "",
+    "hp": 83,
+    "attack": 55,
+    "defense": 90,
+    "spAttack": 130,
+    "spDefense": 81,
+    "speed": 86,
+    "id": "970",
+    "types": [
+      "rock",
+      "poison"
+    ]
+  },
+  {
+    "name": "greavard",
+    "speciesNames": {
+      "ja-Hrkt": "ボチ",
+      "roomaji": "Bochi",
+      "ko": "망망이",
+      "zh-Hant": "墓仔狗",
+      "fr": "Toutombe",
+      "de": "Gruff",
+      "en": "Greavard",
+      "ja": "ボチ",
+      "zh-Hans": "墓仔狗"
+    },
+    "formNames": {},
+    "number": 971,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/971.png",
+    "shinySpriteURL": "",
+    "hp": 50,
+    "attack": 61,
+    "defense": 60,
+    "spAttack": 30,
+    "spDefense": 55,
+    "speed": 34,
+    "id": "971",
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "houndstone",
+    "speciesNames": {
+      "ja-Hrkt": "ハカドッグ",
+      "roomaji": "Hakadoggu",
+      "ko": "묘두기",
+      "zh-Hant": "墓揚犬",
+      "fr": "Tomberro",
+      "de": "Friedwuff",
+      "en": "Houndstone",
+      "ja": "ハカドッグ",
+      "zh-Hans": "墓扬犬"
+    },
+    "formNames": {},
+    "number": 972,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png",
+    "shinySpriteURL": "",
+    "hp": 72,
+    "attack": 101,
+    "defense": 100,
+    "spAttack": 50,
+    "spDefense": 97,
+    "speed": 68,
+    "id": "972",
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "flamigo",
+    "speciesNames": {
+      "ja-Hrkt": "カラミンゴ",
+      "roomaji": "Karamingo",
+      "ko": "꼬이밍고",
+      "zh-Hant": "纏紅鶴",
+      "fr": "Flamenroule",
+      "de": "Flaminkno",
+      "en": "Flamigo",
+      "ja": "カラミンゴ",
+      "zh-Hans": "纏红鹤"
+    },
+    "formNames": {},
+    "number": 973,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/973.png",
+    "shinySpriteURL": "",
+    "hp": 82,
+    "attack": 115,
+    "defense": 74,
+    "spAttack": 75,
+    "spDefense": 64,
+    "speed": 90,
+    "id": "973",
+    "types": [
+      "flying",
+      "fighting"
+    ]
+  },
+  {
+    "name": "cetoddle",
+    "speciesNames": {
+      "ja-Hrkt": "アルクジラ",
+      "roomaji": "Arukujira",
+      "ko": "터벅고래",
+      "zh-Hant": "走鯨",
+      "fr": "Piétacé",
+      "de": "Flaniwal",
+      "en": "Cetoddle",
+      "ja": "アルクジラ",
+      "zh-Hans": "走鲸"
+    },
+    "formNames": {},
+    "number": 974,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/974.png",
+    "shinySpriteURL": "",
+    "hp": 108,
+    "attack": 68,
+    "defense": 45,
+    "spAttack": 30,
+    "spDefense": 40,
+    "speed": 43,
+    "id": "974",
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "cetitan",
+    "speciesNames": {
+      "ja-Hrkt": "ハルクジラ",
+      "roomaji": "Harukajira",
+      "ko": "우락고래",
+      "zh-Hant": "浩大鯨",
+      "fr": "Balbalèze",
+      "de": "Kolowal",
+      "en": "Cetitan",
+      "ja": "ハルクジラ",
+      "zh-Hans": "浩大鲸"
+    },
+    "formNames": {},
+    "number": 975,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/975.png",
+    "shinySpriteURL": "",
+    "hp": 170,
+    "attack": 113,
+    "defense": 65,
+    "spAttack": 45,
+    "spDefense": 55,
+    "speed": 73,
+    "id": "975",
+    "types": [
+      "ice"
+    ]
+  },
+  {
+    "name": "veluza",
+    "speciesNames": {
+      "ja-Hrkt": "ミガルーサ",
+      "roomaji": "Migarūsa",
+      "ko": "가비루사",
+      "zh-Hant": "輕身鱈",
+      "fr": "Délestin",
+      "de": "Agiluza",
+      "en": "Veluza",
+      "ja": "ミガルーサ",
+      "zh-Hans": "轻身鳕"
+    },
+    "formNames": {},
+    "number": 976,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/976.png",
+    "shinySpriteURL": "",
+    "hp": 90,
+    "attack": 102,
+    "defense": 73,
+    "spAttack": 78,
+    "spDefense": 65,
+    "speed": 70,
+    "id": "976",
+    "types": [
+      "water",
+      "psychic"
+    ]
+  },
+  {
+    "name": "dondozo",
+    "speciesNames": {
+      "ja-Hrkt": "ヘイラッシャ",
+      "roomaji": "Heyrusher",
+      "ko": "어써러셔",
+      "zh-Hant": "吃吼霸",
+      "fr": "Oyacata",
+      "de": "Heerashai",
+      "en": "Dondozo",
+      "ja": "ヘイラッシャ",
+      "zh-Hans": "吃吼霸"
+    },
+    "formNames": {},
+    "number": 977,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/977.png",
+    "shinySpriteURL": "",
+    "hp": 150,
+    "attack": 100,
+    "defense": 115,
+    "spAttack": 65,
+    "spDefense": 65,
+    "speed": 35,
+    "id": "977",
+    "types": [
+      "water"
+    ]
+  },
+  {
+    "name": "tatsugiri",
+    "speciesNames": {
+      "ja-Hrkt": "シャリタツ",
+      "roomaji": "Syaritatsu",
+      "ko": "싸리용",
+      "zh-Hant": "米立龍",
+      "fr": "Nigirigon",
+      "de": "Nigiragi",
+      "en": "Tatsugiri",
+      "ja": "シャリタツ",
+      "zh-Hans": "米立龙"
+    },
+    "formNames": {
+      "ja-Hrkt": "そったすがた",
+      "en": "Curly Form",
+      "ja": "そったすがた"
+    },
+    "number": 978,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/978.png",
+    "shinySpriteURL": "",
+    "hp": 68,
+    "attack": 50,
+    "defense": 60,
+    "spAttack": 120,
+    "spDefense": 95,
+    "speed": 82,
+    "id": "978",
+    "types": [
+      "dragon",
+      "water"
+    ]
+  },
+  {
+    "name": "tatsugiri-droopy",
+    "speciesNames": {
+      "ja-Hrkt": "シャリタツ",
+      "roomaji": "Syaritatsu",
+      "ko": "싸리용",
+      "zh-Hant": "米立龍",
+      "fr": "Nigirigon",
+      "de": "Nigiragi",
+      "en": "Tatsugiri",
+      "ja": "シャリタツ",
+      "zh-Hans": "米立龙"
+    },
+    "formNames": {
+      "ja-Hrkt": "たれたすがた",
+      "en": "Droopy Form",
+      "ja": "たれたすがた"
+    },
+    "number": 978,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10258.png",
+    "shinySpriteURL": "",
+    "hp": 68,
+    "attack": 50,
+    "defense": 60,
+    "spAttack": 120,
+    "spDefense": 95,
+    "speed": 82,
+    "id": "10258",
+    "types": [
+      "dragon",
+      "water"
+    ]
+  },
+  {
+    "name": "tatsugiri-stretchy",
+    "speciesNames": {
+      "ja-Hrkt": "シャリタツ",
+      "roomaji": "Syaritatsu",
+      "ko": "싸리용",
+      "zh-Hant": "米立龍",
+      "fr": "Nigirigon",
+      "de": "Nigiragi",
+      "en": "Tatsugiri",
+      "ja": "シャリタツ",
+      "zh-Hans": "米立龙"
+    },
+    "formNames": {
+      "ja-Hrkt": "のびたすがた",
+      "en": "Stretchy Form",
+      "ja": "のびたすがた"
+    },
+    "number": 978,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10259.png",
+    "shinySpriteURL": "",
+    "hp": 68,
+    "attack": 50,
+    "defense": 60,
+    "spAttack": 120,
+    "spDefense": 95,
+    "speed": 82,
+    "id": "10259",
+    "types": [
+      "dragon",
+      "water"
+    ]
+  },
+  {
+    "name": "annihilape",
+    "speciesNames": {
+      "ja-Hrkt": "コノヨザル",
+      "roomaji": "Konoyozaru",
+      "ko": "저승갓숭",
+      "zh-Hant": "棄世猴",
+      "fr": "Courrousinge",
+      "de": "Epitaff",
+      "en": "Annihilape",
+      "ja": "コノヨザル",
+      "zh-Hans": "弃世猴"
+    },
+    "formNames": {},
+    "number": 979,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/979.png",
+    "shinySpriteURL": "",
+    "hp": 110,
+    "attack": 115,
+    "defense": 80,
+    "spAttack": 50,
+    "spDefense": 90,
+    "speed": 90,
+    "id": "979",
+    "types": [
+      "fighting",
+      "ghost"
+    ]
+  },
+  {
+    "name": "clodsire",
+    "speciesNames": {
+      "ja-Hrkt": "ドオー",
+      "roomaji": "Dooh",
+      "ko": "토오",
+      "zh-Hant": "土王",
+      "fr": "Terraiste",
+      "de": "Suelord",
+      "en": "Clodsire",
+      "ja": "ドオー",
+      "zh-Hans": "土王"
+    },
+    "formNames": {},
+    "number": 980,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/980.png",
+    "shinySpriteURL": "",
+    "hp": 130,
+    "attack": 75,
+    "defense": 60,
+    "spAttack": 45,
+    "spDefense": 100,
+    "speed": 20,
+    "id": "980",
+    "types": [
+      "poison",
+      "ground"
+    ]
+  },
+  {
+    "name": "farigiraf",
+    "speciesNames": {
+      "ja-Hrkt": "リキキリン",
+      "roomaji": "Rikikirn",
+      "ko": "키키링",
+      "zh-Hant": "奇麒麟",
+      "fr": "Farigiraf",
+      "de": "Farigiraf",
+      "en": "Farigiraf",
+      "ja": "リキキリン",
+      "zh-Hans": "奇麒麟"
+    },
+    "formNames": {},
+    "number": 981,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/981.png",
+    "shinySpriteURL": "",
+    "hp": 120,
+    "attack": 90,
+    "defense": 70,
+    "spAttack": 110,
+    "spDefense": 70,
+    "speed": 60,
+    "id": "981",
+    "types": [
+      "normal",
+      "psychic"
+    ]
+  },
+  {
+    "name": "dudunsparce",
+    "speciesNames": {
+      "ja-Hrkt": "ノココッチ",
+      "roomaji": "Nokokotchi",
+      "ko": "노고고치",
+      "zh-Hant": "土龍節節",
+      "fr": "Deusolourdo",
+      "de": "Dummimisel",
+      "en": "Dudunsparce",
+      "ja": "ノココッチ",
+      "zh-Hans": "土龙节节"
+    },
+    "formNames": {
+      "ja-Hrkt": "ふたふしフォルム",
+      "en": "Two-Segment Form",
+      "ja": "ふたふしフォルム"
+    },
+    "number": 982,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/982.png",
+    "shinySpriteURL": "",
+    "hp": 125,
+    "attack": 100,
+    "defense": 80,
+    "spAttack": 85,
+    "spDefense": 75,
+    "speed": 55,
+    "id": "982",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "dudunsparce-three-segment",
+    "speciesNames": {
+      "ja-Hrkt": "ノココッチ",
+      "roomaji": "Nokokotchi",
+      "ko": "노고고치",
+      "zh-Hant": "土龍節節",
+      "fr": "Deusolourdo",
+      "de": "Dummimisel",
+      "en": "Dudunsparce",
+      "ja": "ノココッチ",
+      "zh-Hans": "土龙节节"
+    },
+    "formNames": {
+      "ja-Hrkt": "みつふしフォルム",
+      "en": "Three-Segment Form",
+      "ja": "みつふしフォルム"
+    },
+    "number": 982,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10255.png",
+    "shinySpriteURL": "",
+    "hp": 125,
+    "attack": 100,
+    "defense": 80,
+    "spAttack": 85,
+    "spDefense": 75,
+    "speed": 55,
+    "id": "10255",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "kingambit",
+    "speciesNames": {
+      "ja-Hrkt": "ドドゲザン",
+      "roomaji": "Dodogezan",
+      "ko": "대도각참",
+      "zh-Hant": "仆刀將軍",
+      "fr": "Scalpereur",
+      "de": "Gladimperio",
+      "en": "Kingambit",
+      "ja": "ドドゲザン",
+      "zh-Hans": "仆刀将军"
+    },
+    "formNames": {},
+    "number": 983,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/983.png",
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 135,
+    "defense": 120,
+    "spAttack": 60,
+    "spDefense": 85,
+    "speed": 50,
+    "id": "983",
+    "types": [
+      "dark",
+      "steel"
+    ]
+  },
+  {
+    "name": "great-tusk",
+    "speciesNames": {
+      "ja-Hrkt": "イダイナキバ",
+      "roomaji": "Idaina Kiba",
+      "ko": "위대한엄니",
+      "zh-Hant": "雄偉牙",
+      "fr": "Fort-Ivoire",
+      "de": "Riesenzahn",
+      "en": "Great Tusk",
+      "ja": "イダイナキバ",
+      "zh-Hans": "雄伟牙"
+    },
+    "formNames": {},
+    "number": 984,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/984.png",
+    "shinySpriteURL": "",
+    "hp": 115,
+    "attack": 131,
+    "defense": 131,
+    "spAttack": 53,
+    "spDefense": 53,
+    "speed": 87,
+    "id": "984",
+    "types": [
+      "ground",
+      "fighting"
+    ]
+  },
+  {
+    "name": "scream-tail",
+    "speciesNames": {
+      "ja-Hrkt": "サケブシッポ",
+      "roomaji": "Sakebushippo",
+      "ko": "우렁찬꼬리",
+      "zh-Hant": "吼叫尾",
+      "fr": "Hurle-Queue",
+      "de": "Brüllschweif",
+      "en": "Scream Tail",
+      "ja": "サケブシッポ",
+      "zh-Hans": "吼叫尾"
+    },
+    "formNames": {},
+    "number": 985,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/985.png",
+    "shinySpriteURL": "",
+    "hp": 115,
+    "attack": 65,
+    "defense": 99,
+    "spAttack": 65,
+    "spDefense": 115,
+    "speed": 111,
+    "id": "985",
+    "types": [
+      "fairy",
+      "psychic"
+    ]
+  },
+  {
+    "name": "brute-bonnet",
+    "speciesNames": {
+      "ja-Hrkt": "アラブルタケ",
+      "roomaji": "Araburutake",
+      "ko": "사나운버섯",
+      "zh-Hant": "猛惡菇",
+      "fr": "Fongus-Furie",
+      "de": "Wutpilz",
+      "en": "Brute Bonnet",
+      "ja": "アラブルタケ",
+      "zh-Hans": "猛恶菇"
+    },
+    "formNames": {},
+    "number": 986,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/986.png",
+    "shinySpriteURL": "",
+    "hp": 111,
+    "attack": 127,
+    "defense": 99,
+    "spAttack": 79,
+    "spDefense": 99,
+    "speed": 55,
+    "id": "986",
+    "types": [
+      "grass",
+      "dark"
+    ]
+  },
+  {
+    "name": "flutter-mane",
+    "speciesNames": {
+      "ja-Hrkt": "ハバタクカミ",
+      "roomaji": "Habtakukami",
+      "ko": "날개치는머리",
+      "zh-Hant": "振翼髮",
+      "fr": "Flotte-Mèche",
+      "de": "Flatterhaar",
+      "en": "Flutter Mane",
+      "ja": "ハバタクカミ",
+      "zh-Hans": "振翼发"
+    },
+    "formNames": {},
+    "number": 987,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/987.png",
+    "shinySpriteURL": "",
+    "hp": 55,
+    "attack": 55,
+    "defense": 55,
+    "spAttack": 135,
+    "spDefense": 135,
+    "speed": 135,
+    "id": "987",
+    "types": [
+      "ghost",
+      "fairy"
+    ]
+  },
+  {
+    "name": "slither-wing",
+    "speciesNames": {
+      "ja-Hrkt": "チヲハウハネ",
+      "roomaji": "Chiohauhane",
+      "ko": "땅을기는날개",
+      "zh-Hant": "爬地翅",
+      "fr": "Rampe-Ailes",
+      "de": "Kriechflügel",
+      "en": "Slither Wing",
+      "ja": "チヲハウハネ",
+      "zh-Hans": "爬地翅"
+    },
+    "formNames": {},
+    "number": 988,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/988.png",
+    "shinySpriteURL": "",
+    "hp": 85,
+    "attack": 135,
+    "defense": 79,
+    "spAttack": 85,
+    "spDefense": 105,
+    "speed": 81,
+    "id": "988",
+    "types": [
+      "bug",
+      "fighting"
+    ]
+  },
+  {
+    "name": "sandy-shocks",
+    "speciesNames": {
+      "ja-Hrkt": "スナノケガワ",
+      "roomaji": "Sunanokegawa",
+      "ko": "모래털가죽",
+      "zh-Hant": "沙鐵皮",
+      "fr": "Pelage-Sablé",
+      "de": "Sandfell",
+      "en": "Sandy Shocks",
+      "ja": "スナノケガワ",
+      "zh-Hans": "沙铁皮"
+    },
+    "formNames": {},
+    "number": 989,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/989.png",
+    "shinySpriteURL": "",
+    "hp": 85,
+    "attack": 81,
+    "defense": 97,
+    "spAttack": 121,
+    "spDefense": 85,
+    "speed": 101,
+    "id": "989",
+    "types": [
+      "electric",
+      "ground"
+    ]
+  },
+  {
+    "name": "iron-treads",
+    "speciesNames": {
+      "ja-Hrkt": "テツノワダチ",
+      "roomaji": "Tetsunowadachi",
+      "ko": "무쇠바퀴",
+      "zh-Hant": "鐵轍跡",
+      "fr": "Roue-de-Fer",
+      "de": "Eisenrad",
+      "en": "Iron Treads",
+      "ja": "テツノワダチ",
+      "zh-Hans": "铁轍迹"
+    },
+    "formNames": {},
+    "number": 990,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/990.png",
+    "shinySpriteURL": "",
+    "hp": 90,
+    "attack": 112,
+    "defense": 120,
+    "spAttack": 72,
+    "spDefense": 70,
+    "speed": 106,
+    "id": "990",
+    "types": [
+      "ground",
+      "steel"
+    ]
+  },
+  {
+    "name": "iron-bundle",
+    "speciesNames": {
+      "ja-Hrkt": "テツノツツミ",
+      "roomaji": "Tetsunotsutsumi",
+      "ko": "무쇠보따리",
+      "zh-Hant": "鐵包袱",
+      "fr": "Hotte-de-Fer",
+      "de": "Eisenbündel",
+      "en": "Iron Bundle",
+      "ja": "テツノツツミ",
+      "zh-Hans": "铁包袱"
+    },
+    "formNames": {},
+    "number": 991,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/991.png",
+    "shinySpriteURL": "",
+    "hp": 56,
+    "attack": 80,
+    "defense": 114,
+    "spAttack": 124,
+    "spDefense": 60,
+    "speed": 136,
+    "id": "991",
+    "types": [
+      "ice",
+      "water"
+    ]
+  },
+  {
+    "name": "iron-hands",
+    "speciesNames": {
+      "ja-Hrkt": "テツノカイナ",
+      "roomaji": "Tetsunokaina",
+      "ko": "무쇠손",
+      "zh-Hant": "鐵臂膀",
+      "fr": "Paume-de-Fer",
+      "de": "Eisenhand",
+      "en": "Iron Hands",
+      "ja": "テツノカイナ",
+      "zh-Hans": "铁臂膀"
+    },
+    "formNames": {},
+    "number": 992,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/992.png",
+    "shinySpriteURL": "",
+    "hp": 154,
+    "attack": 140,
+    "defense": 108,
+    "spAttack": 50,
+    "spDefense": 68,
+    "speed": 50,
+    "id": "992",
+    "types": [
+      "fighting",
+      "electric"
+    ]
+  },
+  {
+    "name": "iron-jugulis",
+    "speciesNames": {
+      "ja-Hrkt": "テツノコウベ",
+      "roomaji": "Tetsunokoube",
+      "ko": "무쇠머리",
+      "zh-Hant": "鐵脖頸",
+      "fr": "Têtes-de-Fer",
+      "de": "Eisenhals",
+      "en": "Iron Jugulis",
+      "ja": "テツノコウベ",
+      "zh-Hans": "铁脖颈"
+    },
+    "formNames": {},
+    "number": 993,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/993.png",
+    "shinySpriteURL": "",
+    "hp": 94,
+    "attack": 80,
+    "defense": 86,
+    "spAttack": 122,
+    "spDefense": 80,
+    "speed": 108,
+    "id": "993",
+    "types": [
+      "dark",
+      "flying"
+    ]
+  },
+  {
+    "name": "iron-moth",
+    "speciesNames": {
+      "ja-Hrkt": "テツノドクガ",
+      "roomaji": "Tetsunodokuga",
+      "ko": "무쇠독나방",
+      "zh-Hant": "鐵毒蛾",
+      "fr": "Mite-de-Fer",
+      "de": "Eisenfalter",
+      "en": "Iron Moth",
+      "ja": "テツノドクガ",
+      "zh-Hans": "铁毒蛾"
+    },
+    "formNames": {},
+    "number": 994,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/994.png",
+    "shinySpriteURL": "",
+    "hp": 80,
+    "attack": 70,
+    "defense": 60,
+    "spAttack": 140,
+    "spDefense": 110,
+    "speed": 110,
+    "id": "994",
+    "types": [
+      "fire",
+      "poison"
+    ]
+  },
+  {
+    "name": "iron-thorns",
+    "speciesNames": {
+      "ja-Hrkt": "テツノイバラ",
+      "roomaji": "Tetsunoibara",
+      "ko": "무쇠가시",
+      "zh-Hant": "鐵荊棘",
+      "fr": "Épine-de-Fer",
+      "de": "Eisendorn",
+      "en": "Iron Thorns",
+      "ja": "テツノイバラ",
+      "zh-Hans": "铁荆棘"
+    },
+    "formNames": {},
+    "number": 995,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/995.png",
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 134,
+    "defense": 110,
+    "spAttack": 70,
+    "spDefense": 84,
+    "speed": 72,
+    "id": "995",
+    "types": [
+      "rock",
+      "electric"
+    ]
+  },
+  {
+    "name": "frigibax",
+    "speciesNames": {
+      "ja-Hrkt": "セビエ",
+      "roomaji": "Sebie",
+      "ko": "드니차",
+      "zh-Hant": "涼脊龍",
+      "fr": "Frigodo",
+      "de": "Frospino",
+      "en": "Frigibax",
+      "ja": "セビエ",
+      "zh-Hans": "凉脊龙"
+    },
+    "formNames": {},
+    "number": 996,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/996.png",
+    "shinySpriteURL": "",
+    "hp": 65,
+    "attack": 75,
+    "defense": 45,
+    "spAttack": 35,
+    "spDefense": 45,
+    "speed": 55,
+    "id": "996",
+    "types": [
+      "dragon",
+      "ice"
+    ]
+  },
+  {
+    "name": "arctibax",
+    "speciesNames": {
+      "ja-Hrkt": "セゴール",
+      "roomaji": "Segōru",
+      "ko": "드니꽁",
+      "zh-Hant": "凍脊龍",
+      "fr": "Cryodo",
+      "de": "Cryospino",
+      "en": "Arctibax",
+      "ja": "セゴール",
+      "zh-Hans": "冻脊龙"
+    },
+    "formNames": {},
+    "number": 997,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/997.png",
+    "shinySpriteURL": "",
+    "hp": 90,
+    "attack": 95,
+    "defense": 66,
+    "spAttack": 45,
+    "spDefense": 65,
+    "speed": 62,
+    "id": "997",
+    "types": [
+      "dragon",
+      "ice"
+    ]
+  },
+  {
+    "name": "baxcalibur",
+    "speciesNames": {
+      "ja-Hrkt": "セグレイブ",
+      "roomaji": "Seglaive",
+      "ko": "드닐레이브",
+      "zh-Hant": "戟脊龍",
+      "fr": "Glaivodo",
+      "de": "Espinodon",
+      "en": "Baxcalibur",
+      "ja": "セグレイブ",
+      "zh-Hans": "戟脊龙"
+    },
+    "formNames": {},
+    "number": 998,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/998.png",
+    "shinySpriteURL": "",
+    "hp": 115,
+    "attack": 145,
+    "defense": 92,
+    "spAttack": 75,
+    "spDefense": 86,
+    "speed": 87,
+    "id": "998",
+    "types": [
+      "dragon",
+      "ice"
+    ]
+  },
+  {
+    "name": "gimmighoul",
+    "speciesNames": {
+      "ja-Hrkt": "コレクレー",
+      "roomaji": "Collecurei",
+      "ko": "모으령",
+      "zh-Hant": "索財靈",
+      "fr": "Mordudor",
+      "de": "Gierspenst",
+      "en": "Gimmighoul",
+      "ja": "コレクレー",
+      "zh-Hans": "索财灵"
+    },
+    "formNames": {
+      "ja-Hrkt": "はこフォルム",
+      "en": "Chest Form",
+      "ja": "はこフォルム"
+    },
+    "number": 999,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/999.png",
+    "shinySpriteURL": "",
+    "hp": 45,
+    "attack": 30,
+    "defense": 70,
+    "spAttack": 75,
+    "spDefense": 70,
+    "speed": 10,
+    "id": "999",
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "gimmighoul-roaming",
+    "speciesNames": {
+      "ja-Hrkt": "コレクレー",
+      "roomaji": "Collecurei",
+      "ko": "모으령",
+      "zh-Hant": "索財靈",
+      "fr": "Mordudor",
+      "de": "Gierspenst",
+      "en": "Gimmighoul",
+      "ja": "コレクレー",
+      "zh-Hans": "索财灵"
+    },
+    "formNames": {
+      "ja-Hrkt": "とほフォルム",
+      "en": "Roaming Form",
+      "ja": "とほフォルム"
+    },
+    "number": 999,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10263.png",
+    "shinySpriteURL": "",
+    "hp": 45,
+    "attack": 30,
+    "defense": 25,
+    "spAttack": 75,
+    "spDefense": 45,
+    "speed": 80,
+    "id": "10263",
+    "types": [
+      "ghost"
+    ]
+  },
+  {
+    "name": "gholdengo",
+    "speciesNames": {
+      "ja-Hrkt": "サーフゴー",
+      "roomaji": "Surfugo",
+      "ko": "타부자고",
+      "zh-Hant": "賽富豪",
+      "fr": "Gromago",
+      "de": "Monetigo",
+      "en": "Gholdengo",
+      "ja": "サーフゴー",
+      "zh-Hans": "赛富豪"
+    },
+    "formNames": {},
+    "number": 1000,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1000.png",
+    "shinySpriteURL": "",
+    "hp": 87,
+    "attack": 60,
+    "defense": 95,
+    "spAttack": 133,
+    "spDefense": 91,
+    "speed": 84,
+    "id": "1000",
+    "types": [
+      "steel",
+      "ghost"
+    ]
+  },
+  {
+    "name": "wo-chien",
+    "speciesNames": {
+      "ja-Hrkt": "チオンジェン",
+      "roomaji": "Chionjen",
+      "ko": "총지엔",
+      "zh-Hant": "古簡蝸",
+      "fr": "Chongjian",
+      "de": "Chongjian",
+      "en": "Wo-Chien",
+      "ja": "チオンジェン",
+      "zh-Hans": "古简蜗"
+    },
+    "formNames": {},
+    "number": 1001,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1001.png",
+    "shinySpriteURL": "",
+    "hp": 85,
+    "attack": 85,
+    "defense": 100,
+    "spAttack": 95,
+    "spDefense": 135,
+    "speed": 70,
+    "id": "1001",
+    "types": [
+      "dark",
+      "grass"
+    ]
+  },
+  {
+    "name": "chien-pao",
+    "speciesNames": {
+      "ja-Hrkt": "パオジアン",
+      "roomaji": "Paojian",
+      "ko": "파오젠",
+      "zh-Hant": "古劍豹",
+      "fr": "Baojian",
+      "de": "Baojian",
+      "en": "Chien-Pao",
+      "ja": "パオジアン",
+      "zh-Hans": "古剑豹"
+    },
+    "formNames": {},
+    "number": 1002,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1002.png",
+    "shinySpriteURL": "",
+    "hp": 80,
+    "attack": 120,
+    "defense": 80,
+    "spAttack": 90,
+    "spDefense": 65,
+    "speed": 135,
+    "id": "1002",
+    "types": [
+      "dark",
+      "ice"
+    ]
+  },
+  {
+    "name": "ting-lu",
+    "speciesNames": {
+      "ja-Hrkt": "ディンルー",
+      "roomaji": "Dinlu",
+      "ko": "딩루",
+      "zh-Hant": "古鼎鹿",
+      "fr": "Dinglu",
+      "de": "Dinglu",
+      "en": "Ting-Lu",
+      "ja": "ディンルー",
+      "zh-Hans": "古鼎鹿"
+    },
+    "formNames": {},
+    "number": 1003,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1003.png",
+    "shinySpriteURL": "",
+    "hp": 155,
+    "attack": 110,
+    "defense": 125,
+    "spAttack": 55,
+    "spDefense": 80,
+    "speed": 45,
+    "id": "1003",
+    "types": [
+      "dark",
+      "ground"
+    ]
+  },
+  {
+    "name": "chi-yu",
+    "speciesNames": {
+      "ja-Hrkt": "イーユイ",
+      "roomaji": "Īyui",
+      "ko": "위유이",
+      "zh-Hant": "古玉魚",
+      "fr": "Yuyu",
+      "de": "Yuyu",
+      "en": "Chi-Yu",
+      "ja": "イーユイ",
+      "zh-Hans": "古玉鱼"
+    },
+    "formNames": {},
+    "number": 1004,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png",
+    "shinySpriteURL": "",
+    "hp": 55,
+    "attack": 80,
+    "defense": 80,
+    "spAttack": 135,
+    "spDefense": 120,
+    "speed": 100,
+    "id": "1004",
+    "types": [
+      "dark",
+      "fire"
+    ]
+  },
+  {
+    "name": "roaring-moon",
+    "speciesNames": {
+      "ja-Hrkt": "トドロクツキ",
+      "roomaji": "Todorokutsuki",
+      "ko": "고동치는달",
+      "zh-Hant": "轟鳴月",
+      "fr": "Rugit-Lune",
+      "de": "Donnersichel",
+      "en": "Roaring Moon",
+      "ja": "トドロクツキ",
+      "zh-Hans": "轰鸣月"
+    },
+    "formNames": {},
+    "number": 1005,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1005.png",
+    "shinySpriteURL": "",
+    "hp": 105,
+    "attack": 139,
+    "defense": 71,
+    "spAttack": 55,
+    "spDefense": 101,
+    "speed": 119,
+    "id": "1005",
+    "types": [
+      "dragon",
+      "dark"
+    ]
+  },
+  {
+    "name": "iron-valiant",
+    "speciesNames": {
+      "ja-Hrkt": "テツノブジン",
+      "roomaji": "Tetsunobujin",
+      "ko": "무쇠무인",
+      "zh-Hant": "鐵武者",
+      "fr": "Garde-de-Fer",
+      "de": "Eisenkrieger",
+      "en": "Iron Valiant",
+      "ja": "テツノブジン",
+      "zh-Hans": "铁武者"
+    },
+    "formNames": {},
+    "number": 1006,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1006.png",
+    "shinySpriteURL": "",
+    "hp": 74,
+    "attack": 130,
+    "defense": 90,
+    "spAttack": 120,
+    "spDefense": 60,
+    "speed": 116,
+    "id": "1006",
+    "types": [
+      "fairy",
+      "fighting"
+    ]
+  },
+  {
+    "name": "koraidon",
+    "speciesNames": {
+      "ja-Hrkt": "コライドン",
+      "roomaji": "Koraidon",
+      "ko": "코라이돈",
+      "zh-Hant": "故勒頓",
+      "fr": "Koraidon",
+      "de": "Koraidon",
+      "en": "Koraidon",
+      "ja": "コライドン",
+      "zh-Hans": "故勒顿"
+    },
+    "formNames": {
+      "ja-Hrkt": "かんぜんけいたい",
+      "en": "Apex Build",
+      "ja": "かんぜんけいたい"
+    },
+    "number": 1007,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png",
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 135,
+    "defense": 115,
+    "spAttack": 85,
+    "spDefense": 100,
+    "speed": 135,
+    "id": "1007",
+    "types": [
+      "fighting",
+      "dragon"
+    ]
+  },
+  {
+    "name": "koraidon-limited-build",
+    "speciesNames": {
+      "ja-Hrkt": "コライドン",
+      "roomaji": "Koraidon",
+      "ko": "코라이돈",
+      "zh-Hant": "故勒頓",
+      "fr": "Koraidon",
+      "de": "Koraidon",
+      "en": "Koraidon",
+      "ja": "コライドン",
+      "zh-Hans": "故勒顿"
+    },
+    "formNames": {
+      "ja-Hrkt": "せいげんけいたい",
+      "en": "Limited Build",
+      "ja": "せいげんけいたい"
+    },
+    "number": 1007,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 135,
+    "defense": 115,
+    "spAttack": 85,
+    "spDefense": 100,
+    "speed": 135,
+    "id": "10264",
+    "types": [
+      "fighting",
+      "dragon"
+    ]
+  },
+  {
+    "name": "koraidon-sprinting-build",
+    "speciesNames": {
+      "ja-Hrkt": "コライドン",
+      "roomaji": "Koraidon",
+      "ko": "코라이돈",
+      "zh-Hant": "故勒頓",
+      "fr": "Koraidon",
+      "de": "Koraidon",
+      "en": "Koraidon",
+      "ja": "コライドン",
+      "zh-Hans": "故勒顿"
+    },
+    "formNames": {
+      "ja-Hrkt": "しっそうけいたい",
+      "en": "Sprinting Build",
+      "ja": "しっそうけいたい"
+    },
+    "number": 1007,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 135,
+    "defense": 115,
+    "spAttack": 85,
+    "spDefense": 100,
+    "speed": 135,
+    "id": "10265",
+    "types": [
+      "fighting",
+      "dragon"
+    ]
+  },
+  {
+    "name": "koraidon-swimming-build",
+    "speciesNames": {
+      "ja-Hrkt": "コライドン",
+      "roomaji": "Koraidon",
+      "ko": "코라이돈",
+      "zh-Hant": "故勒頓",
+      "fr": "Koraidon",
+      "de": "Koraidon",
+      "en": "Koraidon",
+      "ja": "コライドン",
+      "zh-Hans": "故勒顿"
+    },
+    "formNames": {
+      "ja-Hrkt": "ゆうえいけいたい",
+      "en": "Swimming Build",
+      "ja": "ゆうえいけいたい"
+    },
+    "number": 1007,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 135,
+    "defense": 115,
+    "spAttack": 85,
+    "spDefense": 100,
+    "speed": 135,
+    "id": "10266",
+    "types": [
+      "fighting",
+      "dragon"
+    ]
+  },
+  {
+    "name": "koraidon-gliding-build",
+    "speciesNames": {
+      "ja-Hrkt": "コライドン",
+      "roomaji": "Koraidon",
+      "ko": "코라이돈",
+      "zh-Hant": "故勒頓",
+      "fr": "Koraidon",
+      "de": "Koraidon",
+      "en": "Koraidon",
+      "ja": "コライドン",
+      "zh-Hans": "故勒顿"
+    },
+    "formNames": {
+      "ja-Hrkt": "かっくうけいたい",
+      "en": "Gliding Build",
+      "ja": "かっくうけいたい"
+    },
+    "number": 1007,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 135,
+    "defense": 115,
+    "spAttack": 85,
+    "spDefense": 100,
+    "speed": 135,
+    "id": "10267",
+    "types": [
+      "fighting",
+      "dragon"
+    ]
+  },
+  {
+    "name": "miraidon",
+    "speciesNames": {
+      "ja-Hrkt": "ミライドン",
+      "roomaji": "Miraidon",
+      "ko": "미라이돈",
+      "zh-Hant": "密勒頓",
+      "fr": "Miraidon",
+      "de": "Miraidon",
+      "en": "Miraidon",
+      "ja": "ミライドン",
+      "zh-Hans": "密勒顿"
+    },
+    "formNames": {
+      "ja-Hrkt": "コンプリートモード",
+      "en": "Ultimate Mode",
+      "ja": "コンプリートモード"
+    },
+    "number": 1008,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png",
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 85,
+    "defense": 100,
+    "spAttack": 135,
+    "spDefense": 115,
+    "speed": 135,
+    "id": "1008",
+    "types": [
+      "electric",
+      "dragon"
+    ]
+  },
+  {
+    "name": "miraidon-low-power-mode",
+    "speciesNames": {
+      "ja-Hrkt": "ミライドン",
+      "roomaji": "Miraidon",
+      "ko": "미라이돈",
+      "zh-Hant": "密勒頓",
+      "fr": "Miraidon",
+      "de": "Miraidon",
+      "en": "Miraidon",
+      "ja": "ミライドン",
+      "zh-Hans": "密勒顿"
+    },
+    "formNames": {
+      "ja-Hrkt": "リミテッドモード",
+      "en": "Low-Power Mode",
+      "ja": "リミテッドモード"
+    },
+    "number": 1008,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 85,
+    "defense": 100,
+    "spAttack": 135,
+    "spDefense": 115,
+    "speed": 135,
+    "id": "10268",
+    "types": [
+      "electric",
+      "dragon"
+    ]
+  },
+  {
+    "name": "miraidon-drive-mode",
+    "speciesNames": {
+      "ja-Hrkt": "ミライドン",
+      "roomaji": "Miraidon",
+      "ko": "미라이돈",
+      "zh-Hant": "密勒頓",
+      "fr": "Miraidon",
+      "de": "Miraidon",
+      "en": "Miraidon",
+      "ja": "ミライドン",
+      "zh-Hans": "密勒顿"
+    },
+    "formNames": {
+      "ja-Hrkt": "ドライブモード",
+      "en": "Drive Mode",
+      "ja": "ドライブモード"
+    },
+    "number": 1008,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 85,
+    "defense": 100,
+    "spAttack": 135,
+    "spDefense": 115,
+    "speed": 135,
+    "id": "10269",
+    "types": [
+      "electric",
+      "dragon"
+    ]
+  },
+  {
+    "name": "miraidon-aquatic-mode",
+    "speciesNames": {
+      "ja-Hrkt": "ミライドン",
+      "roomaji": "Miraidon",
+      "ko": "미라이돈",
+      "zh-Hant": "密勒頓",
+      "fr": "Miraidon",
+      "de": "Miraidon",
+      "en": "Miraidon",
+      "ja": "ミライドン",
+      "zh-Hans": "密勒顿"
+    },
+    "formNames": {
+      "ja-Hrkt": "フロートモード",
+      "en": "Aquatic Mode",
+      "ja": "フロートモード"
+    },
+    "number": 1008,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 85,
+    "defense": 100,
+    "spAttack": 135,
+    "spDefense": 115,
+    "speed": 135,
+    "id": "10270",
+    "types": [
+      "electric",
+      "dragon"
+    ]
+  },
+  {
+    "name": "miraidon-glide-mode",
+    "speciesNames": {
+      "ja-Hrkt": "ミライドン",
+      "roomaji": "Miraidon",
+      "ko": "미라이돈",
+      "zh-Hant": "密勒頓",
+      "fr": "Miraidon",
+      "de": "Miraidon",
+      "en": "Miraidon",
+      "ja": "ミライドン",
+      "zh-Hans": "密勒顿"
+    },
+    "formNames": {
+      "ja-Hrkt": "グライドモード",
+      "en": "Glide Mode",
+      "ja": "グライドモード"
+    },
+    "number": 1008,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 100,
+    "attack": 85,
+    "defense": 100,
+    "spAttack": 135,
+    "spDefense": 115,
+    "speed": 135,
+    "id": "10271",
+    "types": [
+      "electric",
+      "dragon"
+    ]
+  },
+  {
+    "name": "walking-wake",
+    "speciesNames": {
+      "ja-Hrkt": "ウネルミナモ",
+      "roomaji": "Uneruminamo",
+      "ko": "굽이치는물결",
+      "zh-Hant": "波盪水",
+      "fr": "Serpente-Eau",
+      "de": "Windewoge",
+      "en": "Walking Wake",
+      "ja": "ウネルミナモ",
+      "zh-Hans": "波荡水"
+    },
+    "formNames": {},
+    "number": 1009,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1009.png",
+    "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1009.png",
+    "hp": 99,
+    "attack": 83,
+    "defense": 91,
+    "spAttack": 125,
+    "spDefense": 83,
+    "speed": 109,
+    "id": "1009",
+    "types": [
+      "water",
+      "dragon"
+    ]
+  },
+  {
+    "name": "iron-leaves",
+    "speciesNames": {
+      "ja-Hrkt": "テツノイサハ",
+      "roomaji": "Tetsunoisaha",
+      "ko": "무쇠잎새",
+      "zh-Hant": "鐵斑葉",
+      "fr": "Vert-de-Fer",
+      "de": "Eisenblatt",
+      "en": "Iron Leaves",
+      "ja": "テツノイサハ",
+      "zh-Hans": "铁斑叶"
+    },
+    "formNames": {},
+    "number": 1010,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1010.png",
+    "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1010.png",
+    "hp": 90,
+    "attack": 130,
+    "defense": 88,
+    "spAttack": 70,
+    "spDefense": 108,
+    "speed": 104,
+    "id": "1010",
+    "types": [
+      "grass",
+      "psychic"
     ]
   }
 ]
