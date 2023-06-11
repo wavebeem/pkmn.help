@@ -1,5 +1,10 @@
 # Changelog
 
+## 2023-06-11
+
+- Updated Pokédex with latest PokéAPI data
+- Updated generation 9 Pokémon sprites with latest PokéAPI data
+
 ## 2023-05-29
 
 - Added the "Wonder Guard" ability
