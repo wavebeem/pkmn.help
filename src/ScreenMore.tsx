@@ -388,7 +388,7 @@ export function ScreenMore({
             className="br1 underline fg-link focus-outline"
             href="https://www.wavebeem.com"
           >
-            Brian Mock
+            Sage Fennel
           </a>
           .
         </p>
