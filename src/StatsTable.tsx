@@ -99,11 +99,13 @@ export function StatsTable({ pokemon }: StatsTableProps) {
         aria-label={hasRoomForFullText ? "" : t("pokedex.stats.totalLong")}
       >
         {hasRoomForFullText
-          ? t("pokedex.stats.totalLong")
-          : t("pokedex.stats.total")}
+          ? t("pokedex.stats.totalLong")+ " / EVs"
+          : t("pokedex.stats.total") + " / EVs"}
       </div>
       <div className="tr" style={{ height: 26 }}>
-        {hp + attack + defense + spAttack + spDefense + speed}
+        {(hp + attack + defense + spAttack + spDefense + speed) + " / "
+          + (efforts["hp"] + efforts["attack"] + efforts["defense"] 
+          + efforts["special-attack"] + efforts["special-defense"] + efforts["speed"])}
       </div>
       <div />
     </div>
