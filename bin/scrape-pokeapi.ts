@@ -56,6 +56,7 @@ interface PokemonDetail {
   }[];
   stats: {
     base_stat: number;
+    effort: number;
     stat: {
       name: string;
       url: string;
@@ -81,6 +82,7 @@ interface PokemonSimple {
   spDefense: number;
   speed: number;
   id: string;
+  efforts: Record<string, number>;
   types: string[];
 }
 
@@ -140,6 +142,11 @@ export async function scrapePokeapi(): Promise<void> {
         key: (item) => item.stat.name,
         value: (item) => item.base_stat,
       });
+      const efforts = toObject({
+        data: detail.stats,
+        key: (item) => item.stat.name,
+        value: (item) => item.effort,
+      });
       let formNames = {};
       if (detail.forms.length > 0) {
         const form = await fetchJSON<PokemonForm>(detail.forms[0].url);
@@ -163,10 +170,12 @@ export async function scrapePokeapi(): Promise<void> {
         spDefense: stats["special-defense"] ?? 0,
         speed: stats["speed"] ?? 0,
         id: String(detail.id),
+        efforts: efforts,
         types: detail.types.map((t) => t.type.name),
       };
       pokemonSimpleList.push(mon);
       console.log(speciesDetail.id, detail.id);
+     // console.log(mon);
     }
   }
   saveJSON(path.resolve(DEST, "pokemon.json"), pokemonSimpleList, {
