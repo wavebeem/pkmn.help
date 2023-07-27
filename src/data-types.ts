@@ -17,6 +17,7 @@ export interface Pokemon {
   spDefense: number;
   speed: number;
   hasShiny: boolean;
+  efforts: Record<string, string>;
   imageType: "sprite" | "hd";
 }
 

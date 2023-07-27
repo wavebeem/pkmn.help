@@ -13,7 +13,7 @@ export interface StatsTableProps {
 }
 
 export function StatsTable({ pokemon }: StatsTableProps) {
-  const { hp, attack, defense, spAttack, spDefense, speed } = pokemon;
+  const { hp, attack, defense, spAttack, spDefense, speed, efforts } = pokemon;
   const { t } = useTranslation();
   const hasRoomForFullText = useMediaQuery("(min-width: 600px)");
 
@@ -26,7 +26,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
       >
         {t("pokedex.stats.hp")}
       </div>
-      <div className="tr">{hp}</div>
+      <div className="tr">{hp} / {efforts["hp"]}</div>
       <Meter max={statMax} value={hp} color={typeColor(Type.fire)} />
 
       <div
@@ -38,7 +38,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           ? t("pokedex.stats.attackLong")
           : t("pokedex.stats.attack")}
       </div>
-      <div className="tr">{attack}</div>
+      <div className="tr">{attack} / {efforts["attack"]}</div>
       <Meter max={statMax} value={attack} color={typeColor(Type.fighting)} />
 
       <div
@@ -50,7 +50,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           ? t("pokedex.stats.defenseLong")
           : t("pokedex.stats.defense")}
       </div>
-      <div className="tr">{defense}</div>
+      <div className="tr">{defense} / {efforts["defense"]}</div>
       <Meter max={statMax} value={defense} color={typeColor(Type.electric)} />
 
       <div
@@ -64,7 +64,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           ? t("pokedex.stats.specialAttackLong")
           : t("pokedex.stats.specialAttack")}
       </div>
-      <div className="tr">{spAttack}</div>
+      <div className="tr">{spAttack} / {efforts["special-attack"]}</div>
       <Meter max={statMax} value={spAttack} color={typeColor(Type.grass)} />
 
       <div
@@ -78,7 +78,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           ? t("pokedex.stats.specialDefenseLong")
           : t("pokedex.stats.specialDefense")}
       </div>
-      <div className="tr">{spDefense}</div>
+      <div className="tr">{spDefense} / {efforts["special-defense"]}</div>
       <Meter max={statMax} value={spDefense} color={typeColor(Type.water)} />
 
       <div
@@ -90,7 +90,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           ? t("pokedex.stats.speedLong")
           : t("pokedex.stats.speed")}
       </div>
-      <div className="tr">{speed}</div>
+      <div className="tr">{speed} / {efforts["speed"]}</div>
       <Meter max={statMax} value={speed} color={typeColor(Type.fairy)} />
 
       <div
