@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-08-17
+
+- Fixed a slight color mismatch between the page header and the app theme in dark mode
+
 ## 2023-06-11
 
 - Updated Pokédex with latest PokéAPI data

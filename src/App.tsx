@@ -96,7 +96,7 @@ export function App() {
   const [theme] = useTheme();
   const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const isDark = theme === "dark" || (theme === "auto" && isDarkMode);
-  const themeColor = isDark ? "hsl(350, 70%, 40%)" : "hsl(357, 97%, 46%)";
+  const themeColor = isDark ? "hsl(357, 70%, 40%)" : "hsl(357, 97%, 46%)";
   const themeAuto = isDarkMode ? "dark" : "light";
 
   // Load Pokédex JSON
