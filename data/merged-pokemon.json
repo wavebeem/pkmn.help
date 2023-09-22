@@ -20646,9 +20646,9 @@
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/488.png",
     "hp": 120,
     "attack": 70,
-    "defense": 120,
+    "defense": 110,
     "spAttack": 75,
-    "spDefense": 130,
+    "spDefense": 120,
     "speed": 85,
     "id": "488",
     "types": [
@@ -36084,7 +36084,7 @@
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/888.png",
     "hp": 92,
-    "attack": 130,
+    "attack": 120,
     "defense": 115,
     "spAttack": 80,
     "spDefense": 115,
@@ -36127,7 +36127,7 @@
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10188.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10188.png",
     "hp": 92,
-    "attack": 170,
+    "attack": 150,
     "defense": 115,
     "spAttack": 80,
     "spDefense": 115,
@@ -36171,7 +36171,7 @@
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/889.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/889.png",
     "hp": 92,
-    "attack": 130,
+    "attack": 120,
     "defense": 115,
     "spAttack": 80,
     "spDefense": 115,
@@ -36214,10 +36214,10 @@
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10189.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10189.png",
     "hp": 92,
-    "attack": 130,
-    "defense": 145,
+    "attack": 120,
+    "defense": 140,
     "spAttack": 80,
-    "spDefense": 145,
+    "spDefense": 140,
     "speed": 128,
     "id": "10189",
     "types": [
@@ -36802,6 +36802,37 @@
     "hasShiny": true
   },
   {
+    "name": "ursaluna-bloodmoon",
+    "speciesNames": {
+      "ja-Hrkt": "ガチグマ",
+      "roomaji": "Gachiguma",
+      "ko": "다투곰",
+      "zh-Hant": "月月熊",
+      "fr": "Ursaking",
+      "de": "Ursaluna",
+      "it": "Ursaluna",
+      "en": "Ursaluna",
+      "ja": "ガチグマ",
+      "zh-Hans": "月月熊"
+    },
+    "formNames": {},
+    "number": 901,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 113,
+    "attack": 70,
+    "defense": 120,
+    "spAttack": 135,
+    "spDefense": 65,
+    "speed": 52,
+    "id": "10272",
+    "types": [
+      "ground",
+      "normal"
+    ],
+    "imageType": "sprite"
+  },
+  {
     "name": "basculegion-male",
     "speciesNames": {
       "ja-Hrkt": "イダイトウ",
@@ -37163,7 +37194,7 @@
     "name": "skeledirge",
     "speciesNames": {
       "ja-Hrkt": "ラウドボーン",
-      "roomaji": "Loudbone",
+      "roomaji": "Laudbon",
       "ko": "라우드본",
       "zh-Hant": "骨紋巨聲鱷",
       "fr": "Flâmigator",
@@ -37376,7 +37407,7 @@
     "name": "tarountula",
     "speciesNames": {
       "ja-Hrkt": "タマンチュラ",
-      "roomaji": "Tamanchura",
+      "roomaji": "Tamantula",
       "ko": "타랜툴라",
       "zh-Hant": "團珠蛛",
       "fr": "Tissenboule",
@@ -37405,7 +37436,7 @@
     "name": "spidops",
     "speciesNames": {
       "ja-Hrkt": "ワナイダー",
-      "roomaji": "Wanaidā",
+      "roomaji": "Wanaider",
       "ko": "트래피더",
       "zh-Hant": "操陷蛛",
       "fr": "Filentrappe",
@@ -37644,7 +37675,7 @@
     "name": "fidough",
     "speciesNames": {
       "ja-Hrkt": "パピモッチ",
-      "roomaji": "Papimocchi",
+      "roomaji": "Pupimocchi",
       "ko": "쫀도기",
       "zh-Hant": "狗仔包",
       "fr": "Pâtachiot",
@@ -37702,7 +37733,7 @@
     "name": "smoliv",
     "speciesNames": {
       "ja-Hrkt": "ミニーブ",
-      "roomaji": "Minību",
+      "roomaji": "Minive",
       "ko": "미니브",
       "zh-Hant": "迷你芙",
       "fr": "Olivini",
@@ -37732,7 +37763,7 @@
     "name": "dolliv",
     "speciesNames": {
       "ja-Hrkt": "オリーニョ",
-      "roomaji": "Orīnyo",
+      "roomaji": "Olinyo",
       "ko": "올리뇨",
       "zh-Hant": "奧利紐",
       "fr": "Olivado",
@@ -37762,7 +37793,7 @@
     "name": "arboliva",
     "speciesNames": {
       "ja-Hrkt": "オリーヴァ",
-      "roomaji": "Orīva",
+      "roomaji": "Oliva",
       "ko": "올리르바",
       "zh-Hant": "奧利瓦",
       "fr": "Arboliva",
@@ -37855,7 +37886,7 @@
     "name": "naclstack",
     "speciesNames": {
       "ja-Hrkt": "ジオヅム",
-      "roomaji": "Jiozumu",
+      "roomaji": "Jiodumu",
       "ko": "스태솔트",
       "zh-Hant": "鹽石壘",
       "fr": "Amassel",
@@ -37884,7 +37915,7 @@
     "name": "garganacl",
     "speciesNames": {
       "ja-Hrkt": "キョジオーン",
-      "roomaji": "Kyojiōn",
+      "roomaji": "Kyojiohn",
       "ko": "콜로솔트",
       "zh-Hant": "鹽石巨靈",
       "fr": "Gigansel",
@@ -38031,7 +38062,7 @@
     "name": "bellibolt",
     "speciesNames": {
       "ja-Hrkt": "ハラバリー",
-      "roomaji": "Harabarī",
+      "roomaji": "Harabarie",
       "ko": "찌리배리",
       "zh-Hant": "電肚蛙",
       "fr": "Ampibidou",
@@ -38149,7 +38180,7 @@
     "name": "mabosstiff",
     "speciesNames": {
       "ja-Hrkt": "マフィティフ",
-      "roomaji": "Mafitifu",
+      "roomaji": "Mafitiff",
       "ko": "마피티프",
       "zh-Hant": "獒教父",
       "fr": "Dogrino",
@@ -38178,7 +38209,7 @@
     "name": "shroodle",
     "speciesNames": {
       "ja-Hrkt": "シルシュルー",
-      "roomaji": "Shirushurū",
+      "roomaji": "Shirushrew",
       "ko": "땃쭈르",
       "zh-Hant": "滋汁鼴",
       "fr": "Gribouraigne",
@@ -38208,7 +38239,7 @@
     "name": "grafaiai",
     "speciesNames": {
       "ja-Hrkt": "タギングル",
-      "roomaji": "Taginguru",
+      "roomaji": "Taggingru",
       "ko": "태깅구르",
       "zh-Hant": "塗標客",
       "fr": "Tag-Tag",
@@ -38387,7 +38418,7 @@
     "name": "capsakid",
     "speciesNames": {
       "ja-Hrkt": "カプサイジ",
-      "roomaji": "Kapusaiji",
+      "roomaji": "Capsaiji",
       "ko": "캡싸이",
       "zh-Hant": "熱辣娃",
       "fr": "Pimito",
@@ -38416,7 +38447,7 @@
     "name": "scovillain",
     "speciesNames": {
       "ja-Hrkt": "スコヴィラン",
-      "roomaji": "Sukoviran",
+      "roomaji": "Scovillain",
       "ko": "스코빌런",
       "zh-Hant": "狠辣椒",
       "fr": "Scovilain",
@@ -38475,7 +38506,7 @@
     "name": "rabsca",
     "speciesNames": {
       "ja-Hrkt": "ベラカス",
-      "roomaji": "Berakasu",
+      "roomaji": "Beracas",
       "ko": "베라카스",
       "zh-Hant": "蟲甲聖",
       "fr": "Bérasca",
@@ -38534,7 +38565,7 @@
     "name": "espathra",
     "speciesNames": {
       "ja-Hrkt": "クエスパトラ",
-      "roomaji": "Kaesupatora",
+      "roomaji": "Cuespatra",
       "ko": "클레스퍼트라",
       "zh-Hant": "超能艷鴕",
       "fr": "Cléopsytra",
@@ -38866,7 +38897,7 @@
     "name": "revavroom",
     "speciesNames": {
       "ja-Hrkt": "ブロロローム",
-      "roomaji": "Burororōmu",
+      "roomaji": "Burororoom",
       "ko": "부르르룸",
       "zh-Hant": "普隆隆姆",
       "fr": "Vrombotor",
@@ -38955,7 +38986,7 @@
     "name": "glimmet",
     "speciesNames": {
       "ja-Hrkt": "キラーメ",
-      "roomaji": "Kirāme",
+      "roomaji": "Kirame",
       "ko": "초롱순",
       "zh-Hant": "晶光芽",
       "fr": "Germéclat",
@@ -38985,7 +39016,7 @@
     "name": "glimmora",
     "speciesNames": {
       "ja-Hrkt": "キラフロル",
-      "roomaji": "Kirafuroru",
+      "roomaji": "Kiraflor",
       "ko": "킬라플로르",
       "zh-Hant": "晶光花",
       "fr": "Floréclat",
@@ -39044,7 +39075,7 @@
     "name": "houndstone",
     "speciesNames": {
       "ja-Hrkt": "ハカドッグ",
-      "roomaji": "Hakadoggu",
+      "roomaji": "Hakadog",
       "ko": "묘두기",
       "zh-Hant": "墓揚犬",
       "fr": "Tomberro",
@@ -39132,7 +39163,7 @@
     "name": "cetitan",
     "speciesNames": {
       "ja-Hrkt": "ハルクジラ",
-      "roomaji": "Harukajira",
+      "roomaji": "Hulkujira",
       "ko": "우락고래",
       "zh-Hant": "浩大鯨",
       "fr": "Balbalèze",
@@ -39161,7 +39192,7 @@
     "name": "veluza",
     "speciesNames": {
       "ja-Hrkt": "ミガルーサ",
-      "roomaji": "Migarūsa",
+      "roomaji": "Migalusa",
       "ko": "가비루사",
       "zh-Hant": "輕身鱈",
       "fr": "Délestin",
@@ -39314,7 +39345,7 @@
     "name": "farigiraf",
     "speciesNames": {
       "ja-Hrkt": "リキキリン",
-      "roomaji": "Rikikirn",
+      "roomaji": "Rikikirin",
       "ko": "키키링",
       "zh-Hant": "奇麒麟",
       "fr": "Farigiraf",
@@ -39344,7 +39375,7 @@
     "name": "dudunsparce",
     "speciesNames": {
       "ja-Hrkt": "ノココッチ",
-      "roomaji": "Nokokotchi",
+      "roomaji": "Nokokocchi",
       "ko": "노고고치",
       "zh-Hant": "土龍節節",
       "fr": "Deusolourdo",
@@ -39407,7 +39438,7 @@
     "name": "great-tusk",
     "speciesNames": {
       "ja-Hrkt": "イダイナキバ",
-      "roomaji": "Idaina Kiba",
+      "roomaji": "Idainakiba",
       "ko": "위대한엄니",
       "zh-Hant": "雄偉牙",
       "fr": "Fort-Ivoire",
@@ -39497,7 +39528,7 @@
     "name": "flutter-mane",
     "speciesNames": {
       "ja-Hrkt": "ハバタクカミ",
-      "roomaji": "Habtakukami",
+      "roomaji": "Habatakukami",
       "ko": "날개치는머리",
       "zh-Hant": "振翼髮",
       "fr": "Flotte-Mèche",
@@ -39527,7 +39558,7 @@
     "name": "slither-wing",
     "speciesNames": {
       "ja-Hrkt": "チヲハウハネ",
-      "roomaji": "Chiohauhane",
+      "roomaji": "Chiwohauhane",
       "ko": "땅을기는날개",
       "zh-Hant": "爬地翅",
       "fr": "Rampe-Ailes",
@@ -39797,7 +39828,7 @@
     "name": "arctibax",
     "speciesNames": {
       "ja-Hrkt": "セゴール",
-      "roomaji": "Segōru",
+      "roomaji": "Segohru",
       "ko": "드니꽁",
       "zh-Hant": "凍脊龍",
       "fr": "Cryodo",
@@ -40043,7 +40074,7 @@
     "name": "chi-yu",
     "speciesNames": {
       "ja-Hrkt": "イーユイ",
-      "roomaji": "Īyui",
+      "roomaji": "Yiyui",
       "ko": "위유이",
       "zh-Hant": "古玉魚",
       "fr": "Yuyu",
@@ -40258,5 +40289,224 @@
     ],
     "imageType": "sprite",
     "hasShiny": true
+  },
+  {
+    "name": "dipplin",
+    "speciesNames": {
+      "en": "Dipplin"
+    },
+    "formNames": {},
+    "number": 1011,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 80,
+    "attack": 80,
+    "defense": 110,
+    "spAttack": 95,
+    "spDefense": 80,
+    "speed": 40,
+    "id": "1011",
+    "types": [
+      "grass",
+      "dragon"
+    ],
+    "imageType": "sprite"
+  },
+  {
+    "name": "poltchageist",
+    "speciesNames": {
+      "en": "Poltchageist"
+    },
+    "formNames": {},
+    "number": 1012,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 40,
+    "attack": 45,
+    "defense": 45,
+    "spAttack": 74,
+    "spDefense": 54,
+    "speed": 50,
+    "id": "1012",
+    "types": [
+      "grass",
+      "ghost"
+    ],
+    "imageType": "sprite"
+  },
+  {
+    "name": "sinistcha",
+    "speciesNames": {
+      "en": "Sinistcha"
+    },
+    "formNames": {},
+    "number": 1013,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 71,
+    "attack": 60,
+    "defense": 106,
+    "spAttack": 121,
+    "spDefense": 80,
+    "speed": 70,
+    "id": "1013",
+    "types": [
+      "grass",
+      "ghost"
+    ],
+    "imageType": "sprite"
+  },
+  {
+    "name": "okidogi",
+    "speciesNames": {
+      "en": "Okidogi"
+    },
+    "formNames": {},
+    "number": 1014,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 88,
+    "attack": 128,
+    "defense": 115,
+    "spAttack": 58,
+    "spDefense": 86,
+    "speed": 80,
+    "id": "1014",
+    "types": [
+      "poison",
+      "fighting"
+    ],
+    "imageType": "sprite"
+  },
+  {
+    "name": "munkidori",
+    "speciesNames": {
+      "en": "Munkidori"
+    },
+    "formNames": {},
+    "number": 1015,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 88,
+    "attack": 75,
+    "defense": 66,
+    "spAttack": 130,
+    "spDefense": 90,
+    "speed": 106,
+    "id": "1015",
+    "types": [
+      "poison",
+      "psychic"
+    ],
+    "imageType": "sprite"
+  },
+  {
+    "name": "fezandipiti",
+    "speciesNames": {
+      "en": "Fezandipiti"
+    },
+    "formNames": {},
+    "number": 1016,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 88,
+    "attack": 91,
+    "defense": 82,
+    "spAttack": 70,
+    "spDefense": 125,
+    "speed": 99,
+    "id": "1016",
+    "types": [
+      "poison",
+      "fairy"
+    ],
+    "imageType": "sprite"
+  },
+  {
+    "name": "ogerpon",
+    "speciesNames": {
+      "en": "Ogerpon"
+    },
+    "formNames": {},
+    "number": 1017,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 80,
+    "attack": 120,
+    "defense": 84,
+    "spAttack": 60,
+    "spDefense": 96,
+    "speed": 110,
+    "id": "1017",
+    "types": [
+      "grass"
+    ],
+    "imageType": "sprite"
+  },
+  {
+    "name": "ogerpon-wellspring-mask",
+    "speciesNames": {
+      "en": "Ogerpon"
+    },
+    "formNames": {},
+    "number": 1017,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 80,
+    "attack": 120,
+    "defense": 84,
+    "spAttack": 60,
+    "spDefense": 96,
+    "speed": 110,
+    "id": "10273",
+    "types": [
+      "grass",
+      "water"
+    ],
+    "imageType": "sprite"
+  },
+  {
+    "name": "ogerpon-hearthflame-mask",
+    "speciesNames": {
+      "en": "Ogerpon"
+    },
+    "formNames": {},
+    "number": 1017,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 80,
+    "attack": 120,
+    "defense": 84,
+    "spAttack": 60,
+    "spDefense": 96,
+    "speed": 110,
+    "id": "10274",
+    "types": [
+      "grass",
+      "fire"
+    ],
+    "imageType": "sprite"
+  },
+  {
+    "name": "ogerpon-cornerstone-mask",
+    "speciesNames": {
+      "en": "Ogerpon"
+    },
+    "formNames": {},
+    "number": 1017,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 80,
+    "attack": 120,
+    "defense": 84,
+    "spAttack": 60,
+    "spDefense": 96,
+    "speed": 110,
+    "id": "10275",
+    "types": [
+      "grass",
+      "rock"
+    ],
+    "imageType": "sprite"
   }
 ]
