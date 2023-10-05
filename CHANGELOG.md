@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-10-04
+
+- Added the "Delta Stream" ability
+
 ## 2023-09-21
 
 - Added The Teal Mask DLC Pokémon

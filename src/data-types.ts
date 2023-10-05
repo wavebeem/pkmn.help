@@ -86,6 +86,7 @@ export const abilities = {
   volt_absorb: createAbility({ type: Type.electric, value: 0 }),
   // Other
   wonder_guard: createAbility(),
+  delta_stream: createAbility(),
 } as const;
 
 const abilitySet = new Set(Object.keys(abilities));

@@ -177,6 +177,7 @@ export function matchupFor({
   abilityName: AbilityName;
 }): number {
   let n = 1;
+  // Apply multipliers based on ability
   if (abilityName) {
     for (const info of abilities[abilityName]) {
       if (info.type === offenseType) {
@@ -184,11 +185,20 @@ export function matchupFor({
       }
     }
   }
+  // Apply multipliers based on defense types
   for (const t of defenseTypes) {
+    let x = 1;
+    // Don't crash if the type is none
     if (t !== Type.none) {
-      n *= matchupForPair(generation, t, offenseType);
+      x = matchupForPair(generation, t, offenseType);
     }
+    // Delta stream protects flying types from super effective damage
+    if (t === Type.flying && abilityName === "delta_stream" && x > 1) {
+      x = 1;
+    }
+    n *= x;
   }
+  // Wonder guard is magic
   if (abilityName === "wonder_guard") {
     if (n <= 1) {
       n = 0;
