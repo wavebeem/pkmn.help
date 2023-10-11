@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-10-10
+
+- Added French translations for offense abilities
+
 ## 2023-10-04
 
 - Added the "Delta Stream" ability
