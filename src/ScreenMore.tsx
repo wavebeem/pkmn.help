@@ -67,13 +67,17 @@ export function ScreenMore({
       <h2 className="lh-title f4">{t("more.contact.heading")}</h2>
 
       <p>
+          Find <a href="/pokemon-type-calculator">Pokemon Type Chart</a>
+        </p>
+
+      <p>
         <Trans
           i18nKey="more.contact.intro"
           values={{}}
           components={{
             homepage: (
               <a
-                href="https://www.wavebeem.com"
+                href="https://rohitkesharwani.com"
                 className="br1 underline fg-link focus-outline"
               />
             ),
@@ -88,7 +92,7 @@ export function ScreenMore({
             email: (
               <a
                 className="br1 underline fg-link focus-outline"
-                href="mailto:pkmn@wavebeem.com"
+                href="mailto:me@rohitkesharwani.com"
               />
             ),
           }}
@@ -181,7 +185,7 @@ export function ScreenMore({
       </div>
 
       <div role="presentation" className="mv2 bt border3" />
-
+{/*
       <CollapsibleSection
         heading={
           <h2 className="lh-title f4 dib">{t("more.changes.heading")}</h2>
@@ -201,7 +205,7 @@ export function ScreenMore({
           />
         </p>
       </CollapsibleSection>
-
+          */}
       <div role="presentation" className="mv2 bt border3" />
 
       <CollapsibleSection
@@ -249,8 +253,8 @@ export function ScreenMore({
       </CollapsibleSection>
 
       <div role="presentation" className="mv2 bt border3" />
-
-      <CollapsibleSection
+  {/*    
+        <CollapsibleSection
         heading={
           <h2 className="lh-title f4 dib">{t("more.thanks.heading")}</h2>
         }
@@ -323,6 +327,7 @@ export function ScreenMore({
 
         <h3 className="lh-title f5">{t("more.thanks.sections.other")}</h3>
       </CollapsibleSection>
+      */}
 
       <div role="presentation" className="mv2 bt border3" />
 
@@ -337,7 +342,7 @@ export function ScreenMore({
             components={{
               github: (
                 <a
-                  href="https://github.com/wavebeem/pkmn.help"
+                  href="https://rohitkesharwani.com"
                   className="br1 underline fg-link focus-outline"
                 />
               ),
@@ -354,41 +359,33 @@ export function ScreenMore({
         }
       >
         <p>
-          Pokémon &copy; 2002&ndash;{year} Pokémon. &copy; 1995&ndash;{year}{" "}
-          Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &reg; and Pokémon
-          character names are trademarks of Nintendo.
+          This page utilizes Pokémon content, which is under the copyright of Pokémon &copy; 2002&ndash;{year} Pokémon, &copy; 1995&ndash;{year} Nintendo/Creatures Inc./GAME FREAK inc. &trade;, &copy;. All Pokémon character names are trademarks of Nintendo. It is important to note that there is no intent for copyright or trademark infringement in the use of Pokémon content on this page.
         </p>
-
-        <p>
-          No copyright or trademark infringement is intended in using Pokémon
-          content on this page.
-        </p>
-
         <p>
           Pokédex data is from {}
           <a
             className="br1 underline fg-link focus-outline"
             href="https://pokeapi.co/"
           >
-            PokéAPI By GitHub
+            PokéAPI.
           </a>
-          {" & "}
+          {" And Pokémon Database By "}
           <a
             className="br1 underline fg-link focus-outline"
             href="https://github.com/"
           >
-            Pokémon Database
+            GitHub
           </a>
           .
         </p>
 
         <p>
-          pkmn.help &copy; 2013&ndash;{year}{" "}
+          coderobo.org &copy; 2013&ndash;{year}{" "}
           <a
             className="br1 underline fg-link focus-outline"
-            href="https://www.wavebeem.com"
+            href="https://coderobo.org"
           >
-            Sage Fennel
+            WebTech By Rohit
           </a>
           .
         </p>

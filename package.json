@@ -1,8 +1,8 @@
 {
   "private": true,
   "version": "0.0.0",
-  "name": "pkmn.help",
-  "description": "The Pokémon Type Calculator (https://pkmn.help)",
+  "name": "pokemon.coderobo.org",
+  "description": "The Pokémon Type Calculator",
   "scripts": {
     "update-pokedex": "ts-node ./bin/update-pokedex.ts",
     "scrape-bulba": "ts-node ./bin/scrape-bulba.ts",
@@ -24,15 +24,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wavebeem/pkmn.help.git"
+    "url": "git+https://github.com/"
   },
   "keywords": [],
-  "author": "Sage Fennel <sage@wavebeem.com>",
+  "author": "Rohit <me@rohitkesharwani.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wavebeem/pkmn.help/issues"
+    "url": "https://coderobo.org/"
   },
-  "homepage": "https://github.com/wavebeem/pkmn.help#readme",
+  "homepage": "https://rohitkesharwani.com",
+  "pokemonchart": "https://pokemon.coderobo.org",
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.3",
     "@types/jsdom": "^16.2.13",

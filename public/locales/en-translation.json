@@ -160,43 +160,43 @@
   },
   "pokedexHelp": {
     "searchByName": {
-      "heading": "Search by name",
-      "description": "You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though."
+      "heading": "Search pokemon by name",
+      "description": "Looking for a Pokémon? Enter its name, and even if you remember just part of it, the system should be able to locate it."
     },
     "searchByNumber": {
-      "heading": "Search by number",
-      "description": "Search by national dex number. If you want Bulbsaur, just type 1, not #001."
+      "heading": "Search pokemon by number",
+      "description": "Find Pokémon using their national dex number. For example if you want Bulbasaur, just enter 1, not #001."
     },
     "searchByType": {
-      "heading": "Search by type",
-      "description": "Here are a few examples of how to seach by type."
+      "heading": "Search pokemon by type",
+      "description": "Explore various search options based on types."
     },
     "searchExamples": {
       "type": {
         "query": "fire",
-        "description": "Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom)."
+        "description": "Find Pokémon that include fire as one of their types, such as Charmander, Charizard, and Rotom."
       },
       "doubleType": {
         "query": "water flying",
-        "description": "Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant)."
+        "description": "Explore Pokémon that have a water/flying combination (like Gyarados) or a flying/water combination (such as Cramorant)."
       },
       "singleType": {
         "query": "grass none",
-        "description": "Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant)."
+        "description": "Look for Pokémon specifically categorized as grass type with no additional secondary type, such as Tangela, Chikorita, and Lilligant."
       }
     },
-    "back": "Back to Pokédex"
+    "back": "Back to Pokédex page"
   },
   "more": {
     "contact": {
-      "heading": "Contact Me",
-      "intro": "Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",
-      "email": "Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>."
+      "heading": "Reach out to me...",
+      "intro": "Hey there! My name is <homepage>Rohit Kesharwani</homepage>, and I'm the mind behind the Pokémon Type Calculator website. As a freelance developer, I specialize in creating websites and other projects. If you have a need, don't hesitate to contact me.",
+      "email": "Feel free to share your thoughts and expressions of gratitude by sending an email to <email>me@rohitkesharwani.com</email>."
     },
     "settings": {
-      "heading": "Settings",
+      "heading": "Site Settings -",
       "language": {
-        "label": "Language",
+        "label": "Change Language",
         "default": "Auto detect language",
         "helpText": "Language support is incomplete. Please email me, I will pay you to translate."
       },
@@ -223,19 +223,19 @@
       "description": "See what's new in the <changelog>changelog</changelog>."
     },
     "help": {
-      "heading": "Help",
+      "heading": "Need any support?",
       "serviceWorker": {
-        "description": "This button can help fix issues in the app.",
-        "button": "Reset"
+        "description": "Resolve app-related issues by simply pressing this button.",
+        "button": "Reset The App"
       }
     },
     "privacy": {
-      "heading": "Privacy",
-      "description": "I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer."
+      "heading": "Privacy Policy",
+      "description": "Your experience here is ad-free, and your personal data is secure. This platform is powered by open hosting, is self-funded, independent, hosted in the EU, and operates without storing any cookies on your computer."
     },
     "givingBack": {
-      "heading": "Showing Appreciation",
-      "description": "I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights."
+      "heading": "Conveying Thanks",
+      "description": "Could you please consider linking this website to your webpage, sharing it on your social media, discussing it in groups, or including it in any of your streams or YouTube videos? I've dedicated numerous hours to improving this site, and if you appreciate what I've created, your support in spreading the word would be greatly appreciated."
     },
     "thanks": {
       "heading": "Special Thanks",
@@ -257,11 +257,11 @@
       }
     },
     "openSource": {
-      "heading": "Open Source",
-      "description": "Source code is available on <github>GitHub</github>."
+      "heading": "Download Source Code",
+      "description": "Source code is available on <github>WebTech By Rohit</github>."
     },
     "legalInfo": {
-      "heading": "Legal Info"
+      "heading": "Legal Information"
     }
   },
   "types": {

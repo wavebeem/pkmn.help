@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pokemon-type-calculator/static/css/main.a8f3d57b.css",
+    "main.js": "/pokemon-type-calculator/static/js/main.7e28d771.js",
+    "static/js/787.6d7e036b.chunk.js": "/pokemon-type-calculator/static/js/787.6d7e036b.chunk.js",
+    "index.html": "/pokemon-type-calculator/index.html",
+    "main.a8f3d57b.css.map": "/pokemon-type-calculator/static/css/main.a8f3d57b.css.map",
+    "main.7e28d771.js.map": "/pokemon-type-calculator/static/js/main.7e28d771.js.map",
+    "787.6d7e036b.chunk.js.map": "/pokemon-type-calculator/static/js/787.6d7e036b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a8f3d57b.css",
+    "static/js/main.7e28d771.js"
+  ]
+}
