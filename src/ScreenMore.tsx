@@ -370,12 +370,12 @@ export function ScreenMore({
             className="br1 underline fg-link focus-outline"
             href="https://pokeapi.co/"
           >
-            PokéAPI
+            PokéAPI By GitHub
           </a>
           {" & "}
           <a
             className="br1 underline fg-link focus-outline"
-            href="https://pokemondb.net/"
+            href="https://github.com/"
           >
             Pokémon Database
           </a>
