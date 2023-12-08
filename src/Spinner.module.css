@@ -15,3 +15,10 @@
     transform: rotate(1turn);
   }
 }
+
+@media (prefers-reduced-motion) {
+  .spinner {
+    animation-duration: 6s !important;
+    animation-iteration-count: 6 !important;
+  }
+}

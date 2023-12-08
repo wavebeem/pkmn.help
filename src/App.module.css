@@ -12,6 +12,16 @@
   animation: 2s easterEgg_animation;
 }
 
+@media (prefers-reduced-motion) {
+  .easterEgg {
+    transform: translateX(-50%) translateY(-10vh);
+  }
+
+  .easterEgg[data-animate="true"] {
+    animation: 4s easterEgg_animation_reduced !important;
+  }
+}
+
 .easterEgg img {
   filter: drop-shadow(0 0 1px white) drop-shadow(0 0 2px white)
     drop-shadow(0 0 3px white) drop-shadow(0 0 4px white)
@@ -29,6 +39,17 @@
   90% {
     opacity: 1;
     transform: translateX(-50%) translateY(-10vh);
+  }
+}
+
+@keyframes easterEgg_animation_reduced {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  25%,
+  75% {
+    opacity: 1;
   }
 }
 

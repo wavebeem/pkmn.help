@@ -61,6 +61,13 @@
   display: none;
 }
 
+@media (prefers-reduced-motion) {
+  * {
+    transition: none !important;
+    animation-duration: 0 !important;
+  }
+}
+
 .bg3 {
   background-color: var(--color-bg3);
 }
@@ -175,12 +182,6 @@ button {
   /* https://caniuse.com/css-appearance */
   -webkit-appearance: none;
   appearance: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .active-squish:active:not(:disabled) {
-    transform: translateY(1px);
-  }
 }
 
 .button-bg {

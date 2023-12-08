@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-12-08
+
+- Added support for reduced motion user preference
+
 ## 2023-10-10
 
 - Added French translations for offense abilities
