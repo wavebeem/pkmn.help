@@ -3,6 +3,7 @@
 ## 2023-12-08
 
 - Added support for reduced motion user preference
+- Updated Firefox scrollbar colors in dark mode
 
 ## 2023-10-10
 
