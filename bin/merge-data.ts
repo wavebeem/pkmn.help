@@ -49,6 +49,8 @@ export async function mergeData(): Promise<void> {
 
   // Create unique IDs for gen9 data
   for (const m of mons) {
+    delete m.spriteURL;
+    delete m.shinySpriteURL;
     if (
       fs.existsSync(path.resolve(__dirname, `../public/img/${m.id}-shiny.png`))
     ) {

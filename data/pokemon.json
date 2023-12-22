@@ -37840,6 +37840,7 @@
       "zh-Hant": "詭角鹿",
       "fr": "Cerbyllin",
       "de": "Damythir",
+      "es": "Wyrdeer",
       "it": "Wyrdeer",
       "en": "Wyrdeer",
       "ja": "アヤシシ",
@@ -37870,6 +37871,7 @@
       "zh-Hant": "劈斧螳螂",
       "fr": "Hachécateur",
       "de": "Axantor",
+      "es": "Kleavor",
       "it": "Kleavor",
       "en": "Kleavor",
       "ja": "バサギリ",
@@ -37900,6 +37902,7 @@
       "zh-Hant": "月月熊",
       "fr": "Ursaking",
       "de": "Ursaluna",
+      "es": "Ursaluna",
       "it": "Ursaluna",
       "en": "Ursaluna",
       "ja": "ガチグマ",
@@ -37930,14 +37933,26 @@
       "zh-Hant": "月月熊",
       "fr": "Ursaking",
       "de": "Ursaluna",
+      "es": "Ursaluna",
       "it": "Ursaluna",
       "en": "Ursaluna",
       "ja": "ガチグマ",
       "zh-Hans": "月月熊"
     },
-    "formNames": {},
+    "formNames": {
+      "ja-Hrkt": "アカツキ",
+      "ko": "붉은 달",
+      "zh-Hant": "赫月",
+      "fr": "Lune Vermeille",
+      "de": "Blutmond",
+      "es": "Luna Carmesí",
+      "it": "Luna Cremisi",
+      "en": "Bloodmoon",
+      "ja": "アカツキ",
+      "zh-Hans": "赫月"
+    },
     "number": 901,
-    "spriteURL": null,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10272.png",
     "shinySpriteURL": "",
     "hp": 113,
     "attack": 70,
@@ -37960,6 +37975,7 @@
       "zh-Hant": "幽尾玄魚",
       "fr": "Paragruel",
       "de": "Salmagnis",
+      "es": "Basculegion",
       "it": "Basculegion",
       "en": "Basculegion",
       "ja": "イダイトウ",
@@ -37994,6 +38010,7 @@
       "zh-Hant": "幽尾玄魚",
       "fr": "Paragruel",
       "de": "Salmagnis",
+      "es": "Basculegion",
       "it": "Basculegion",
       "en": "Basculegion",
       "ja": "イダイトウ",
@@ -38030,6 +38047,7 @@
       "zh-Hant": "大狃拉",
       "fr": "Farfurex",
       "de": "Snieboss",
+      "es": "Sneasler",
       "it": "Sneasler",
       "en": "Sneasler",
       "ja": "オオニューラ",
@@ -38060,6 +38078,7 @@
       "zh-Hant": "萬針魚",
       "fr": "Qwilpik",
       "de": "Myriador",
+      "es": "Overqwil",
       "it": "Overqwil",
       "en": "Overqwil",
       "ja": "ハリーマン",
@@ -38090,6 +38109,7 @@
       "zh-Hant": "眷戀雲",
       "fr": "Amovénus",
       "de": "Cupidos",
+      "es": "Enamorus",
       "it": "Enamorus",
       "en": "Enamorus",
       "ja": "ラブトロス",
@@ -38124,6 +38144,7 @@
       "zh-Hant": "眷戀雲",
       "fr": "Amovénus",
       "de": "Cupidos",
+      "es": "Enamorus",
       "it": "Enamorus",
       "en": "Enamorus",
       "ja": "ラブトロス",
@@ -38154,15 +38175,17 @@
   {
     "name": "sprigatito",
     "speciesNames": {
-      "zh-Hans": "新叶喵",
+      "ko": "나오하",
       "ja-Hrkt": "ニャオハ",
       "roomaji": "Nyahoja",
-      "ko": "나오하",
       "zh-Hant": "新葉喵",
       "fr": "Poussacha",
       "de": "Felori",
+      "es": "Sprigatito",
+      "it": "Sprigatito",
       "en": "Sprigatito",
-      "ja": "ニャオハ"
+      "ja": "ニャオハ",
+      "zh-Hans": "新叶喵"
     },
     "formNames": {},
     "number": 906,
@@ -38188,6 +38211,8 @@
       "zh-Hant": "蒂蕾喵",
       "fr": "Matourgeon",
       "de": "Feliospa",
+      "es": "Floragato",
+      "it": "Floragato",
       "en": "Floragato",
       "ja": "ニャローテ",
       "zh-Hans": "蒂蕾喵"
@@ -38216,6 +38241,8 @@
       "zh-Hant": "魔幻假面喵",
       "fr": "Miascarade",
       "de": "Maskagato",
+      "es": "Meowscarada",
+      "it": "Meowscarada",
       "en": "Meowscarada",
       "ja": "マスカーニャ",
       "zh-Hans": "魔幻假面喵"
@@ -38245,6 +38272,8 @@
       "zh-Hant": "呆火鱷",
       "fr": "Chochodile",
       "de": "Krokel",
+      "es": "Fuecoco",
+      "it": "Fuecoco",
       "en": "Fuecoco",
       "ja": "ホゲータ",
       "zh-Hans": "呆火鳄"
@@ -38273,6 +38302,8 @@
       "zh-Hant": "炙燙鱷",
       "fr": "Crocogril",
       "de": "Lokroko",
+      "es": "Crocalor",
+      "it": "Crocalor",
       "en": "Crocalor",
       "ja": "アチゲータ",
       "zh-Hans": "炙烫鳄"
@@ -38301,6 +38332,8 @@
       "zh-Hant": "骨紋巨聲鱷",
       "fr": "Flâmigator",
       "de": "Skelokrok",
+      "es": "Skeledirge",
+      "it": "Skeledirge",
       "en": "Skeledirge",
       "ja": "ラウドボーン",
       "zh-Hans": "骨纹巨声鳄"
@@ -38330,6 +38363,8 @@
       "zh-Hant": "潤水鴨",
       "fr": "Coiffeton",
       "de": "Kwaks",
+      "es": "Quaxly",
+      "it": "Quaxly",
       "en": "Quaxly",
       "ja": "クワッス",
       "zh-Hans": "润水鸭"
@@ -38358,6 +38393,8 @@
       "zh-Hant": "湧躍鴨",
       "fr": "Canarbello",
       "de": "Fuentente",
+      "es": "Quaxwell",
+      "it": "Quaxwell",
       "en": "Quaxwell",
       "ja": "ウェルカモ",
       "zh-Hans": "涌跃鸭"
@@ -38386,6 +38423,8 @@
       "zh-Hant": "狂歡浪舞鴨",
       "fr": "Palmaval",
       "de": "Bailonda",
+      "es": "Quaquaval",
+      "it": "Quaquaval",
       "en": "Quaquaval",
       "ja": "ウェーニバル",
       "zh-Hans": "狂欢浪舞鸭"
@@ -38415,6 +38454,8 @@
       "zh-Hant": "愛吃豚",
       "fr": "Gourmelet",
       "de": "Ferkuli",
+      "es": "Lechonk",
+      "it": "Lechonk",
       "en": "Lechonk",
       "ja": "グルトン",
       "zh-Hans": "爱吃豚"
@@ -38443,6 +38484,8 @@
       "zh-Hant": "飄香豚",
       "fr": "Fragroin",
       "de": "Fragrunz",
+      "es": "Oinkologne",
+      "it": "Oinkologne",
       "en": "Oinkologne",
       "ja": "パフュートン",
       "zh-Hans": "飘香豚"
@@ -38475,6 +38518,8 @@
       "zh-Hant": "飄香豚",
       "fr": "Fragroin",
       "de": "Fragrunz",
+      "es": "Oinkologne",
+      "it": "Oinkologne",
       "en": "Oinkologne",
       "ja": "パフュートン",
       "zh-Hans": "飘香豚"
@@ -38507,6 +38552,8 @@
       "zh-Hant": "團珠蛛",
       "fr": "Tissenboule",
       "de": "Tarundel",
+      "es": "Tarountula",
+      "it": "Tarountula",
       "en": "Tarountula",
       "ja": "タマンチュラ",
       "zh-Hans": "团珠蛛"
@@ -38535,6 +38582,8 @@
       "zh-Hant": "操陷蛛",
       "fr": "Filentrappe",
       "de": "Spinsidias",
+      "es": "Spidops",
+      "it": "Spidops",
       "en": "Spidops",
       "ja": "ワナイダー",
       "zh-Hans": "操陷蛛"
@@ -38563,6 +38612,8 @@
       "zh-Hant": "豆蟋蟀",
       "fr": "Lilliterelle",
       "de": "Micrick",
+      "es": "Nymble",
+      "it": "Nymble",
       "en": "Nymble",
       "ja": "マメバッタ",
       "zh-Hans": "豆蟋蟀"
@@ -38591,6 +38642,8 @@
       "zh-Hant": "烈腿蝗",
       "fr": "Gambex",
       "de": "Lextremo",
+      "es": "Lokix",
+      "it": "Lokix",
       "en": "Lokix",
       "ja": "エクスレッグ",
       "zh-Hans": "烈腿蝗"
@@ -38620,6 +38673,8 @@
       "zh-Hant": "布撥",
       "fr": "Pohm",
       "de": "Pamo",
+      "es": "Pawmi",
+      "it": "Pawmi",
       "en": "Pawmi",
       "ja": "パモ",
       "zh-Hans": "布拨"
@@ -38648,6 +38703,8 @@
       "zh-Hant": "布土撥",
       "fr": "Pohmotte",
       "de": "Pamamo",
+      "es": "Pawmo",
+      "it": "Pawmo",
       "en": "Pawmo",
       "ja": "パモット",
       "zh-Hans": "布土拨"
@@ -38677,6 +38734,8 @@
       "zh-Hant": "巴布土撥",
       "fr": "Pohmarmotte",
       "de": "Pamomamo",
+      "es": "Pawmot",
+      "it": "Pawmot",
       "en": "Pawmot",
       "ja": "パーモット",
       "zh-Hans": "巴布土拨"
@@ -38706,6 +38765,8 @@
       "zh-Hant": "一對鼠",
       "fr": "Compagnol",
       "de": "Zwieps",
+      "es": "Tandemaus",
+      "it": "Tandemaus",
       "en": "Tandemaus",
       "ja": "ワッカネズミ",
       "zh-Hans": "一对鼠"
@@ -38734,6 +38795,8 @@
       "zh-Hant": "一家鼠",
       "fr": "Famignol",
       "de": "Famieps",
+      "es": "Maushold",
+      "it": "Maushold",
       "en": "Maushold",
       "ja": "イッカネズミ",
       "zh-Hans": "一家鼠"
@@ -38766,6 +38829,8 @@
       "zh-Hant": "一家鼠",
       "fr": "Famignol",
       "de": "Famieps",
+      "es": "Maushold",
+      "it": "Maushold",
       "en": "Maushold",
       "ja": "イッカネズミ",
       "zh-Hans": "一家鼠"
@@ -38798,6 +38863,8 @@
       "zh-Hant": "狗仔包",
       "fr": "Pâtachiot",
       "de": "Hefel",
+      "es": "Fidough",
+      "it": "Fidough",
       "en": "Fidough",
       "ja": "パピモッチ",
       "zh-Hans": "狗仔包"
@@ -38826,6 +38893,8 @@
       "zh-Hant": "麻花犬",
       "fr": "Briochien",
       "de": "Backel",
+      "es": "Dachsbun",
+      "it": "Dachsbun",
       "en": "Dachsbun",
       "ja": "バウッツェル",
       "zh-Hans": "麻花犬"
@@ -38854,6 +38923,8 @@
       "zh-Hant": "迷你芙",
       "fr": "Olivini",
       "de": "Olini",
+      "es": "Smoliv",
+      "it": "Smoliv",
       "en": "Smoliv",
       "ja": "ミニーブ",
       "zh-Hans": "迷你芙"
@@ -38883,6 +38954,8 @@
       "zh-Hant": "奧利紐",
       "fr": "Olivado",
       "de": "Olivinio",
+      "es": "Dolliv",
+      "it": "Dolliv",
       "en": "Dolliv",
       "ja": "オリーニョ",
       "zh-Hans": "奥利纽"
@@ -38912,6 +38985,8 @@
       "zh-Hant": "奧利瓦",
       "fr": "Arboliva",
       "de": "Olithena",
+      "es": "Arboliva",
+      "it": "Arboliva",
       "en": "Arboliva",
       "ja": "オリーヴァ",
       "zh-Hans": "奥利瓦"
@@ -38941,6 +39016,8 @@
       "zh-Hant": "怒鸚哥",
       "fr": "Tapatoès",
       "de": "Krawalloro",
+      "es": "Squawkabilly",
+      "it": "Squawkabilly",
       "en": "Squawkabilly",
       "ja": "イキリンコ",
       "zh-Hans": "怒鹦哥"
@@ -38974,6 +39051,8 @@
       "zh-Hant": "怒鸚哥",
       "fr": "Tapatoès",
       "de": "Krawalloro",
+      "es": "Squawkabilly",
+      "it": "Squawkabilly",
       "en": "Squawkabilly",
       "ja": "イキリンコ",
       "zh-Hans": "怒鹦哥"
@@ -39007,6 +39086,8 @@
       "zh-Hant": "怒鸚哥",
       "fr": "Tapatoès",
       "de": "Krawalloro",
+      "es": "Squawkabilly",
+      "it": "Squawkabilly",
       "en": "Squawkabilly",
       "ja": "イキリンコ",
       "zh-Hans": "怒鹦哥"
@@ -39040,6 +39121,8 @@
       "zh-Hant": "怒鸚哥",
       "fr": "Tapatoès",
       "de": "Krawalloro",
+      "es": "Squawkabilly",
+      "it": "Squawkabilly",
       "en": "Squawkabilly",
       "ja": "イキリンコ",
       "zh-Hans": "怒鹦哥"
@@ -39073,6 +39156,8 @@
       "zh-Hant": "鹽石寶",
       "fr": "Selutin",
       "de": "Geosali",
+      "es": "Nacli",
+      "it": "Nacli",
       "en": "Nacli",
       "ja": "コジオ",
       "zh-Hans": "盐石宝"
@@ -39101,6 +39186,8 @@
       "zh-Hant": "鹽石壘",
       "fr": "Amassel",
       "de": "Sedisal",
+      "es": "Naclstack",
+      "it": "Naclstack",
       "en": "Naclstack",
       "ja": "ジオヅム",
       "zh-Hans": "盐石垒"
@@ -39129,6 +39216,8 @@
       "zh-Hant": "鹽石巨靈",
       "fr": "Gigansel",
       "de": "Saltigant",
+      "es": "Garganacl",
+      "it": "Garganacl",
       "en": "Garganacl",
       "ja": "キョジオーン",
       "zh-Hans": "盐石巨灵"
@@ -39157,6 +39246,8 @@
       "zh-Hant": "炭小侍",
       "fr": "Charbambin",
       "de": "Knarbon",
+      "es": "Charcadet",
+      "it": "Charcadet",
       "en": "Charcadet",
       "ja": "カルボウ",
       "zh-Hans": "炭小侍"
@@ -39185,6 +39276,8 @@
       "zh-Hant": "紅蓮鎧騎",
       "fr": "Carmadura",
       "de": "Crimanzo",
+      "es": "Armarouge",
+      "it": "Armarouge",
       "en": "Armarouge",
       "ja": "グレンアルマ",
       "zh-Hans": "红莲铠骑"
@@ -39214,6 +39307,8 @@
       "zh-Hant": "蒼炎刃鬼",
       "fr": "Malvalame",
       "de": "Azugladis",
+      "es": "Ceruledge",
+      "it": "Ceruledge",
       "en": "Ceruledge",
       "ja": "ソウブレイズ",
       "zh-Hans": "苍炎刃鬼"
@@ -39243,6 +39338,8 @@
       "zh-Hant": "光蚪仔",
       "fr": "Têtampoule",
       "de": "Blipp",
+      "es": "Tadbulb",
+      "it": "Tadbulb",
       "en": "Tadbulb",
       "ja": "ズピカ",
       "zh-Hans": "光蚪仔"
@@ -39271,6 +39368,8 @@
       "zh-Hant": "電肚蛙",
       "fr": "Ampibidou",
       "de": "Wampitz",
+      "es": "Bellibolt",
+      "it": "Bellibolt",
       "en": "Bellibolt",
       "ja": "ハラバリー",
       "zh-Hans": "电肚蛙"
@@ -39299,6 +39398,8 @@
       "zh-Hant": "電海燕",
       "fr": "Zapétrel",
       "de": "Voltrel",
+      "es": "Wattrel",
+      "it": "Wattrel",
       "en": "Wattrel",
       "ja": "カイデン",
       "zh-Hans": "电海燕"
@@ -39328,6 +39429,8 @@
       "zh-Hant": "大電海燕",
       "fr": "Fulgulairo",
       "de": "Voltrean",
+      "es": "Kilowattrel",
+      "it": "Kilowattrel",
       "en": "Kilowattrel",
       "ja": "タイカイデン",
       "zh-Hans": "大电海燕"
@@ -39357,6 +39460,8 @@
       "zh-Hant": "偶叫獒",
       "fr": "Grondogue",
       "de": "Mobtiff",
+      "es": "Maschiff",
+      "it": "Maschiff",
       "en": "Maschiff",
       "ja": "オラチフ",
       "zh-Hans": "偶叫獒"
@@ -39385,6 +39490,8 @@
       "zh-Hant": "獒教父",
       "fr": "Dogrino",
       "de": "Mastifioso",
+      "es": "Mabosstiff",
+      "it": "Mabosstiff",
       "en": "Mabosstiff",
       "ja": "マフィティフ",
       "zh-Hans": "獒教父"
@@ -39413,6 +39520,8 @@
       "zh-Hant": "滋汁鼴",
       "fr": "Gribouraigne",
       "de": "Sproxi",
+      "es": "Shroodle",
+      "it": "Shroodle",
       "en": "Shroodle",
       "ja": "シルシュルー",
       "zh-Hans": "滋汁鼹"
@@ -39442,6 +39551,8 @@
       "zh-Hant": "塗標客",
       "fr": "Tag-Tag",
       "de": "Affiti",
+      "es": "Grafaiai",
+      "it": "Grafaiai",
       "en": "Grafaiai",
       "ja": "タギングル",
       "zh-Hans": "涂标客"
@@ -39471,6 +39582,8 @@
       "zh-Hant": "納噬草",
       "fr": "Virovent",
       "de": "Weherba",
+      "es": "Bramblin",
+      "it": "Bramblin",
       "en": "Bramblin",
       "ja": "アノクサ",
       "zh-Hans": "纳噬草"
@@ -39500,6 +39613,8 @@
       "zh-Hant": "怖納噬草",
       "fr": "Virevorreur",
       "de": "Horrerba",
+      "es": "Brambleghast",
+      "it": "Brambleghast",
       "en": "Brambleghast",
       "ja": "アノホラグサ",
       "zh-Hans": "怖纳噬草"
@@ -39529,6 +39644,8 @@
       "zh-Hant": "原野水母",
       "fr": "Terracool",
       "de": "Tentagra",
+      "es": "Toedscool",
+      "it": "Toedscool",
       "en": "Toedscool",
       "ja": "ノノクラゲ",
       "zh-Hans": "原野水母"
@@ -39558,6 +39675,8 @@
       "zh-Hant": "陸地水母",
       "fr": "Terracruel",
       "de": "Tenterra",
+      "es": "Toedscruel",
+      "it": "Toedscruel",
       "en": "Toedscruel",
       "ja": "リククラゲ",
       "zh-Hans": "陆地水母"
@@ -39587,6 +39706,8 @@
       "zh-Hant": "毛崖蟹",
       "fr": "Craparoi",
       "de": "Klibbe",
+      "es": "Klawf",
+      "it": "Klawf",
       "en": "Klawf",
       "ja": "ガケガニ",
       "zh-Hans": "毛崖蟹"
@@ -39615,6 +39736,8 @@
       "zh-Hant": "熱辣娃",
       "fr": "Pimito",
       "de": "Chilingel",
+      "es": "Capsakid",
+      "it": "Capsakid",
       "en": "Capsakid",
       "ja": "カプサイジ",
       "zh-Hans": "热辣娃"
@@ -39643,6 +39766,8 @@
       "zh-Hant": "狠辣椒",
       "fr": "Scovilain",
       "de": "Halupenjo",
+      "es": "Scovillain",
+      "it": "Scovillain",
       "en": "Scovillain",
       "ja": "スコヴィラン",
       "zh-Hans": "狠辣椒"
@@ -39672,6 +39797,8 @@
       "zh-Hant": "蟲滾泥",
       "fr": "Léboulérou",
       "de": "Relluk",
+      "es": "Rellor",
+      "it": "Rellor",
       "en": "Rellor",
       "ja": "シガロコ",
       "zh-Hans": "虫滚泥"
@@ -39700,6 +39827,8 @@
       "zh-Hant": "蟲甲聖",
       "fr": "Bérasca",
       "de": "Skarabaks",
+      "es": "Rabsca",
+      "it": "Rabsca",
       "en": "Rabsca",
       "ja": "ベラカス",
       "zh-Hans": "虫甲圣"
@@ -39729,6 +39858,8 @@
       "zh-Hant": "飄飄雛",
       "fr": "Flotillon",
       "de": "Flattutu",
+      "es": "Flittle",
+      "it": "Flittle",
       "en": "Flittle",
       "ja": "ヒラヒナ",
       "zh-Hans": "飘飘雏"
@@ -39757,6 +39888,8 @@
       "zh-Hant": "超能艷鴕",
       "fr": "Cléopsytra",
       "de": "Psiopatra",
+      "es": "Espathra",
+      "it": "Espathra",
       "en": "Espathra",
       "ja": "クエスパトラ",
       "zh-Hans": "超能艳鸵"
@@ -39785,6 +39918,8 @@
       "zh-Hant": "小鍛匠",
       "fr": "Forgerette",
       "de": "Forgita",
+      "es": "Tinkatink",
+      "it": "Tinkatink",
       "en": "Tinkatink",
       "ja": "カヌチャン",
       "zh-Hans": "小锻匠"
@@ -39814,6 +39949,8 @@
       "zh-Hant": "巧鍛匠",
       "fr": "Forgella",
       "de": "Tafforgita",
+      "es": "Tinkatuff",
+      "it": "Tinkatuff",
       "en": "Tinkatuff",
       "ja": "ナカヌチャン",
       "zh-Hans": "巧锻匠"
@@ -39843,6 +39980,8 @@
       "zh-Hant": "巨鍛匠",
       "fr": "Forgelina",
       "de": "Granforgita",
+      "es": "Tinkaton",
+      "it": "Tinkaton",
       "en": "Tinkaton",
       "ja": "デカヌチャン",
       "zh-Hans": "巨锻匠"
@@ -39872,6 +40011,8 @@
       "zh-Hant": "海地鼠",
       "fr": "Taupikeau",
       "de": "Schligda",
+      "es": "Wiglett",
+      "it": "Wiglett",
       "en": "Wiglett",
       "ja": "ウミディグダ",
       "zh-Hans": "海地鼠"
@@ -39900,6 +40041,8 @@
       "zh-Hant": "三海地鼠",
       "fr": "Triopikeau",
       "de": "Schligdri",
+      "es": "Wugtrio",
+      "it": "Wugtrio",
       "en": "Wugtrio",
       "ja": "ウミトリオ",
       "zh-Hans": "三海地鼠"
@@ -39928,6 +40071,8 @@
       "zh-Hant": "下石鳥",
       "fr": "Lestombaile",
       "de": "Adebom",
+      "es": "Bombirdier",
+      "it": "Bombirdier",
       "en": "Bombirdier",
       "ja": "オトシドリ",
       "zh-Hans": "下石鸟"
@@ -39957,6 +40102,8 @@
       "zh-Hant": "波普海豚",
       "fr": "Dofin",
       "de": "Normifin",
+      "es": "Finizen",
+      "it": "Finizen",
       "en": "Finizen",
       "ja": "ナミイルカ",
       "zh-Hans": "波普海豚"
@@ -39985,6 +40132,8 @@
       "zh-Hant": "海豚俠",
       "fr": "Superdofin",
       "de": "Delfinator",
+      "es": "Palafin",
+      "it": "Palafin",
       "en": "Palafin",
       "ja": "イルカマン",
       "zh-Hans": "海豚侠"
@@ -40017,6 +40166,8 @@
       "zh-Hant": "海豚俠",
       "fr": "Superdofin",
       "de": "Delfinator",
+      "es": "Palafin",
+      "it": "Palafin",
       "en": "Palafin",
       "ja": "イルカマン",
       "zh-Hans": "海豚侠"
@@ -40049,6 +40200,8 @@
       "zh-Hant": "噗隆隆",
       "fr": "Vrombi",
       "de": "Knattox",
+      "es": "Varoom",
+      "it": "Varoom",
       "en": "Varoom",
       "ja": "ブロロン",
       "zh-Hans": "噗隆隆"
@@ -40078,6 +40231,8 @@
       "zh-Hant": "普隆隆姆",
       "fr": "Vrombotor",
       "de": "Knattatox",
+      "es": "Revavroom",
+      "it": "Revavroom",
       "en": "Revavroom",
       "ja": "ブロロローム",
       "zh-Hans": "普隆隆姆"
@@ -40107,6 +40262,8 @@
       "zh-Hant": "摩托蜥",
       "fr": "Motorizard",
       "de": "Mopex",
+      "es": "Cyclizar",
+      "it": "Cyclizar",
       "en": "Cyclizar",
       "ja": "モトトカゲ",
       "zh-Hans": "摩托蜥"
@@ -40136,6 +40293,8 @@
       "zh-Hant": "拖拖蚓",
       "fr": "Ferdeter",
       "de": "Schlurm",
+      "es": "Orthworm",
+      "it": "Orthworm",
       "en": "Orthworm",
       "ja": "ミミズズ",
       "zh-Hans": "拖拖蚓"
@@ -40164,6 +40323,8 @@
       "zh-Hant": "晶光芽",
       "fr": "Germéclat",
       "de": "Lumispross",
+      "es": "Glimmet",
+      "it": "Glimmet",
       "en": "Glimmet",
       "ja": "キラーメ",
       "zh-Hans": "晶光芽"
@@ -40193,6 +40354,8 @@
       "zh-Hant": "晶光花",
       "fr": "Floréclat",
       "de": "Lumiflora",
+      "es": "Glimmora",
+      "it": "Glimmora",
       "en": "Glimmora",
       "ja": "キラフロル",
       "zh-Hans": "晶光花"
@@ -40222,6 +40385,8 @@
       "zh-Hant": "墓仔狗",
       "fr": "Toutombe",
       "de": "Gruff",
+      "es": "Greavard",
+      "it": "Greavard",
       "en": "Greavard",
       "ja": "ボチ",
       "zh-Hans": "墓仔狗"
@@ -40250,6 +40415,8 @@
       "zh-Hant": "墓揚犬",
       "fr": "Tomberro",
       "de": "Friedwuff",
+      "es": "Houndstone",
+      "it": "Houndstone",
       "en": "Houndstone",
       "ja": "ハカドッグ",
       "zh-Hans": "墓扬犬"
@@ -40278,6 +40445,8 @@
       "zh-Hant": "纏紅鶴",
       "fr": "Flamenroule",
       "de": "Flaminkno",
+      "es": "Flamigo",
+      "it": "Flamigo",
       "en": "Flamigo",
       "ja": "カラミンゴ",
       "zh-Hans": "纏红鹤"
@@ -40307,6 +40476,8 @@
       "zh-Hant": "走鯨",
       "fr": "Piétacé",
       "de": "Flaniwal",
+      "es": "Cetoddle",
+      "it": "Cetoddle",
       "en": "Cetoddle",
       "ja": "アルクジラ",
       "zh-Hans": "走鲸"
@@ -40335,6 +40506,8 @@
       "zh-Hant": "浩大鯨",
       "fr": "Balbalèze",
       "de": "Kolowal",
+      "es": "Cetitan",
+      "it": "Cetitan",
       "en": "Cetitan",
       "ja": "ハルクジラ",
       "zh-Hans": "浩大鲸"
@@ -40363,6 +40536,8 @@
       "zh-Hant": "輕身鱈",
       "fr": "Délestin",
       "de": "Agiluza",
+      "es": "Veluza",
+      "it": "Veluza",
       "en": "Veluza",
       "ja": "ミガルーサ",
       "zh-Hans": "轻身鳕"
@@ -40392,6 +40567,8 @@
       "zh-Hant": "吃吼霸",
       "fr": "Oyacata",
       "de": "Heerashai",
+      "es": "Dondozo",
+      "it": "Dondozo",
       "en": "Dondozo",
       "ja": "ヘイラッシャ",
       "zh-Hans": "吃吼霸"
@@ -40420,6 +40597,8 @@
       "zh-Hant": "米立龍",
       "fr": "Nigirigon",
       "de": "Nigiragi",
+      "es": "Tatsugiri",
+      "it": "Tatsugiri",
       "en": "Tatsugiri",
       "ja": "シャリタツ",
       "zh-Hans": "米立龙"
@@ -40453,6 +40632,8 @@
       "zh-Hant": "米立龍",
       "fr": "Nigirigon",
       "de": "Nigiragi",
+      "es": "Tatsugiri",
+      "it": "Tatsugiri",
       "en": "Tatsugiri",
       "ja": "シャリタツ",
       "zh-Hans": "米立龙"
@@ -40486,6 +40667,8 @@
       "zh-Hant": "米立龍",
       "fr": "Nigirigon",
       "de": "Nigiragi",
+      "es": "Tatsugiri",
+      "it": "Tatsugiri",
       "en": "Tatsugiri",
       "ja": "シャリタツ",
       "zh-Hans": "米立龙"
@@ -40519,6 +40702,8 @@
       "zh-Hant": "棄世猴",
       "fr": "Courrousinge",
       "de": "Epitaff",
+      "es": "Annihilape",
+      "it": "Annihilape",
       "en": "Annihilape",
       "ja": "コノヨザル",
       "zh-Hans": "弃世猴"
@@ -40548,6 +40733,8 @@
       "zh-Hant": "土王",
       "fr": "Terraiste",
       "de": "Suelord",
+      "es": "Clodsire",
+      "it": "Clodsire",
       "en": "Clodsire",
       "ja": "ドオー",
       "zh-Hans": "土王"
@@ -40577,6 +40764,8 @@
       "zh-Hant": "奇麒麟",
       "fr": "Farigiraf",
       "de": "Farigiraf",
+      "es": "Farigiraf",
+      "it": "Farigiraf",
       "en": "Farigiraf",
       "ja": "リキキリン",
       "zh-Hans": "奇麒麟"
@@ -40606,6 +40795,8 @@
       "zh-Hant": "土龍節節",
       "fr": "Deusolourdo",
       "de": "Dummimisel",
+      "es": "Dudunsparce",
+      "it": "Dudunsparce",
       "en": "Dudunsparce",
       "ja": "ノココッチ",
       "zh-Hans": "土龙节节"
@@ -40638,6 +40829,8 @@
       "zh-Hant": "土龍節節",
       "fr": "Deusolourdo",
       "de": "Dummimisel",
+      "es": "Dudunsparce",
+      "it": "Dudunsparce",
       "en": "Dudunsparce",
       "ja": "ノココッチ",
       "zh-Hans": "土龙节节"
@@ -40670,6 +40863,8 @@
       "zh-Hant": "仆刀將軍",
       "fr": "Scalpereur",
       "de": "Gladimperio",
+      "es": "Kingambit",
+      "it": "Kingambit",
       "en": "Kingambit",
       "ja": "ドドゲザン",
       "zh-Hans": "仆刀将军"
@@ -40699,6 +40894,8 @@
       "zh-Hant": "雄偉牙",
       "fr": "Fort-Ivoire",
       "de": "Riesenzahn",
+      "es": "Colmilargo",
+      "it": "Grandizanne",
       "en": "Great Tusk",
       "ja": "イダイナキバ",
       "zh-Hans": "雄伟牙"
@@ -40728,6 +40925,8 @@
       "zh-Hant": "吼叫尾",
       "fr": "Hurle-Queue",
       "de": "Brüllschweif",
+      "es": "Colagrito",
+      "it": "Codaurlante",
       "en": "Scream Tail",
       "ja": "サケブシッポ",
       "zh-Hans": "吼叫尾"
@@ -40757,6 +40956,8 @@
       "zh-Hant": "猛惡菇",
       "fr": "Fongus-Furie",
       "de": "Wutpilz",
+      "es": "Furioseta",
+      "it": "Fungofurioso",
       "en": "Brute Bonnet",
       "ja": "アラブルタケ",
       "zh-Hans": "猛恶菇"
@@ -40786,6 +40987,8 @@
       "zh-Hant": "振翼髮",
       "fr": "Flotte-Mèche",
       "de": "Flatterhaar",
+      "es": "Melenaleteo",
+      "it": "Crinealato",
       "en": "Flutter Mane",
       "ja": "ハバタクカミ",
       "zh-Hans": "振翼发"
@@ -40815,6 +41018,8 @@
       "zh-Hant": "爬地翅",
       "fr": "Rampe-Ailes",
       "de": "Kriechflügel",
+      "es": "Reptalada",
+      "it": "Alirasenti",
       "en": "Slither Wing",
       "ja": "チヲハウハネ",
       "zh-Hans": "爬地翅"
@@ -40838,12 +41043,14 @@
   {
     "name": "sandy-shocks",
     "speciesNames": {
+      "es": "Pelarena",
       "ja-Hrkt": "スナノケガワ",
       "roomaji": "Sunanokegawa",
       "ko": "모래털가죽",
       "zh-Hant": "沙鐵皮",
       "fr": "Pelage-Sablé",
       "de": "Sandfell",
+      "it": "Peldisabbia",
       "en": "Sandy Shocks",
       "ja": "スナノケガワ",
       "zh-Hans": "沙铁皮"
@@ -40873,6 +41080,8 @@
       "zh-Hant": "鐵轍跡",
       "fr": "Roue-de-Fer",
       "de": "Eisenrad",
+      "es": "Ferrodada",
+      "it": "Solcoferreo",
       "en": "Iron Treads",
       "ja": "テツノワダチ",
       "zh-Hans": "铁轍迹"
@@ -40902,6 +41111,8 @@
       "zh-Hant": "鐵包袱",
       "fr": "Hotte-de-Fer",
       "de": "Eisenbündel",
+      "es": "Ferrosaco",
+      "it": "Saccoferreo",
       "en": "Iron Bundle",
       "ja": "テツノツツミ",
       "zh-Hans": "铁包袱"
@@ -40931,6 +41142,8 @@
       "zh-Hant": "鐵臂膀",
       "fr": "Paume-de-Fer",
       "de": "Eisenhand",
+      "es": "Ferropalmas",
+      "it": "Manoferrea",
       "en": "Iron Hands",
       "ja": "テツノカイナ",
       "zh-Hans": "铁臂膀"
@@ -40960,6 +41173,8 @@
       "zh-Hant": "鐵脖頸",
       "fr": "Têtes-de-Fer",
       "de": "Eisenhals",
+      "es": "Ferrocuello",
+      "it": "Colloferreo",
       "en": "Iron Jugulis",
       "ja": "テツノコウベ",
       "zh-Hans": "铁脖颈"
@@ -40989,6 +41204,8 @@
       "zh-Hant": "鐵毒蛾",
       "fr": "Mite-de-Fer",
       "de": "Eisenfalter",
+      "es": "Ferropolilla",
+      "it": "Falenaferrea",
       "en": "Iron Moth",
       "ja": "テツノドクガ",
       "zh-Hans": "铁毒蛾"
@@ -41018,6 +41235,8 @@
       "zh-Hant": "鐵荊棘",
       "fr": "Épine-de-Fer",
       "de": "Eisendorn",
+      "es": "Ferropúas",
+      "it": "Spineferree",
       "en": "Iron Thorns",
       "ja": "テツノイバラ",
       "zh-Hans": "铁荆棘"
@@ -41047,6 +41266,8 @@
       "zh-Hant": "涼脊龍",
       "fr": "Frigodo",
       "de": "Frospino",
+      "es": "Frigibax",
+      "it": "Frigibax",
       "en": "Frigibax",
       "ja": "セビエ",
       "zh-Hans": "凉脊龙"
@@ -41076,6 +41297,8 @@
       "zh-Hant": "凍脊龍",
       "fr": "Cryodo",
       "de": "Cryospino",
+      "es": "Arctibax",
+      "it": "Arctibax",
       "en": "Arctibax",
       "ja": "セゴール",
       "zh-Hans": "冻脊龙"
@@ -41105,6 +41328,8 @@
       "zh-Hant": "戟脊龍",
       "fr": "Glaivodo",
       "de": "Espinodon",
+      "es": "Baxcalibur",
+      "it": "Baxcalibur",
       "en": "Baxcalibur",
       "ja": "セグレイブ",
       "zh-Hans": "戟脊龙"
@@ -41134,6 +41359,8 @@
       "zh-Hant": "索財靈",
       "fr": "Mordudor",
       "de": "Gierspenst",
+      "es": "Gimmighoul",
+      "it": "Gimmighoul",
       "en": "Gimmighoul",
       "ja": "コレクレー",
       "zh-Hans": "索财灵"
@@ -41166,6 +41393,8 @@
       "zh-Hant": "索財靈",
       "fr": "Mordudor",
       "de": "Gierspenst",
+      "es": "Gimmighoul",
+      "it": "Gimmighoul",
       "en": "Gimmighoul",
       "ja": "コレクレー",
       "zh-Hans": "索财灵"
@@ -41198,6 +41427,8 @@
       "zh-Hant": "賽富豪",
       "fr": "Gromago",
       "de": "Monetigo",
+      "es": "Gholdengo",
+      "it": "Gholdengo",
       "en": "Gholdengo",
       "ja": "サーフゴー",
       "zh-Hans": "赛富豪"
@@ -41227,6 +41458,8 @@
       "zh-Hant": "古簡蝸",
       "fr": "Chongjian",
       "de": "Chongjian",
+      "es": "Wo-Chien",
+      "it": "Wo-Chien",
       "en": "Wo-Chien",
       "ja": "チオンジェン",
       "zh-Hans": "古简蜗"
@@ -41256,6 +41489,8 @@
       "zh-Hant": "古劍豹",
       "fr": "Baojian",
       "de": "Baojian",
+      "es": "Chien-Pao",
+      "it": "Chien-Pao",
       "en": "Chien-Pao",
       "ja": "パオジアン",
       "zh-Hans": "古剑豹"
@@ -41285,6 +41520,8 @@
       "zh-Hant": "古鼎鹿",
       "fr": "Dinglu",
       "de": "Dinglu",
+      "es": "Ting-Lu",
+      "it": "Ting-Lu",
       "en": "Ting-Lu",
       "ja": "ディンルー",
       "zh-Hans": "古鼎鹿"
@@ -41314,6 +41551,8 @@
       "zh-Hant": "古玉魚",
       "fr": "Yuyu",
       "de": "Yuyu",
+      "es": "Chi-Yu",
+      "it": "Chi-Yu",
       "en": "Chi-Yu",
       "ja": "イーユイ",
       "zh-Hans": "古玉鱼"
@@ -41343,6 +41582,8 @@
       "zh-Hant": "轟鳴月",
       "fr": "Rugit-Lune",
       "de": "Donnersichel",
+      "es": "Bramaluna",
+      "it": "Lunaruggente",
       "en": "Roaring Moon",
       "ja": "トドロクツキ",
       "zh-Hans": "轰鸣月"
@@ -41372,6 +41613,8 @@
       "zh-Hant": "鐵武者",
       "fr": "Garde-de-Fer",
       "de": "Eisenkrieger",
+      "es": "Ferropaladín",
+      "it": "Eroeferreo",
       "en": "Iron Valiant",
       "ja": "テツノブジン",
       "zh-Hans": "铁武者"
@@ -41401,6 +41644,8 @@
       "zh-Hant": "故勒頓",
       "fr": "Koraidon",
       "de": "Koraidon",
+      "es": "Koraidon",
+      "it": "Koraidon",
       "en": "Koraidon",
       "ja": "コライドン",
       "zh-Hans": "故勒顿"
@@ -41434,6 +41679,8 @@
       "zh-Hant": "故勒頓",
       "fr": "Koraidon",
       "de": "Koraidon",
+      "es": "Koraidon",
+      "it": "Koraidon",
       "en": "Koraidon",
       "ja": "コライドン",
       "zh-Hans": "故勒顿"
@@ -41467,6 +41714,8 @@
       "zh-Hant": "故勒頓",
       "fr": "Koraidon",
       "de": "Koraidon",
+      "es": "Koraidon",
+      "it": "Koraidon",
       "en": "Koraidon",
       "ja": "コライドン",
       "zh-Hans": "故勒顿"
@@ -41500,6 +41749,8 @@
       "zh-Hant": "故勒頓",
       "fr": "Koraidon",
       "de": "Koraidon",
+      "es": "Koraidon",
+      "it": "Koraidon",
       "en": "Koraidon",
       "ja": "コライドン",
       "zh-Hans": "故勒顿"
@@ -41533,6 +41784,8 @@
       "zh-Hant": "故勒頓",
       "fr": "Koraidon",
       "de": "Koraidon",
+      "es": "Koraidon",
+      "it": "Koraidon",
       "en": "Koraidon",
       "ja": "コライドン",
       "zh-Hans": "故勒顿"
@@ -41566,6 +41819,8 @@
       "zh-Hant": "密勒頓",
       "fr": "Miraidon",
       "de": "Miraidon",
+      "es": "Miraidon",
+      "it": "Miraidon",
       "en": "Miraidon",
       "ja": "ミライドン",
       "zh-Hans": "密勒顿"
@@ -41599,6 +41854,8 @@
       "zh-Hant": "密勒頓",
       "fr": "Miraidon",
       "de": "Miraidon",
+      "es": "Miraidon",
+      "it": "Miraidon",
       "en": "Miraidon",
       "ja": "ミライドン",
       "zh-Hans": "密勒顿"
@@ -41632,6 +41889,8 @@
       "zh-Hant": "密勒頓",
       "fr": "Miraidon",
       "de": "Miraidon",
+      "es": "Miraidon",
+      "it": "Miraidon",
       "en": "Miraidon",
       "ja": "ミライドン",
       "zh-Hans": "密勒顿"
@@ -41665,6 +41924,8 @@
       "zh-Hant": "密勒頓",
       "fr": "Miraidon",
       "de": "Miraidon",
+      "es": "Miraidon",
+      "it": "Miraidon",
       "en": "Miraidon",
       "ja": "ミライドン",
       "zh-Hans": "密勒顿"
@@ -41698,6 +41959,8 @@
       "zh-Hant": "密勒頓",
       "fr": "Miraidon",
       "de": "Miraidon",
+      "es": "Miraidon",
+      "it": "Miraidon",
       "en": "Miraidon",
       "ja": "ミライドン",
       "zh-Hans": "密勒顿"
@@ -41731,6 +41994,8 @@
       "zh-Hant": "波盪水",
       "fr": "Serpente-Eau",
       "de": "Windewoge",
+      "es": "Ondulagua",
+      "it": "Acquecrespe",
       "en": "Walking Wake",
       "ja": "ウネルミナモ",
       "zh-Hans": "波荡水"
@@ -41760,6 +42025,8 @@
       "zh-Hant": "鐵斑葉",
       "fr": "Vert-de-Fer",
       "de": "Eisenblatt",
+      "es": "Ferroverdor",
+      "it": "Fogliaferrea",
       "en": "Iron Leaves",
       "ja": "テツノイサハ",
       "zh-Hans": "铁斑叶"
@@ -41783,11 +42050,20 @@
   {
     "name": "dipplin",
     "speciesNames": {
-      "en": "Dipplin"
+      "ja-Hrkt": "カミッチュ",
+      "ko": "과미르",
+      "zh-Hant": "裹蜜蟲",
+      "fr": "Pomdramour",
+      "de": "Sirapfel",
+      "es": "Dipplin",
+      "it": "Dipplin",
+      "en": "Dipplin",
+      "ja": "カミッチュ",
+      "zh-Hans": "裹蜜虫"
     },
     "formNames": {},
     "number": 1011,
-    "spriteURL": null,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png",
     "shinySpriteURL": "",
     "hp": 80,
     "attack": 80,
@@ -41804,11 +42080,20 @@
   {
     "name": "poltchageist",
     "speciesNames": {
-      "en": "Poltchageist"
+      "ja-Hrkt": "チャデス",
+      "ko": "차데스",
+      "zh-Hant": "斯魔茶",
+      "fr": "Poltchageist",
+      "de": "Mortcha",
+      "es": "Poltchageist",
+      "it": "Poltchageist",
+      "en": "Poltchageist",
+      "ja": "チャデス",
+      "zh-Hans": "斯魔茶"
     },
     "formNames": {},
     "number": 1012,
-    "spriteURL": null,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1012.png",
     "shinySpriteURL": "",
     "hp": 40,
     "attack": 45,
@@ -41825,11 +42110,20 @@
   {
     "name": "sinistcha",
     "speciesNames": {
-      "en": "Sinistcha"
+      "ja-Hrkt": "ヤバソチャ",
+      "ko": "그우린차",
+      "zh-Hant": "來悲粗茶",
+      "fr": "Théffroyable",
+      "de": "Fatalitcha",
+      "es": "Sinistcha",
+      "it": "Sinistcha",
+      "en": "Sinistcha",
+      "ja": "ヤバソチャ",
+      "zh-Hans": "来悲粗茶"
     },
     "formNames": {},
     "number": 1013,
-    "spriteURL": null,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1013.png",
     "shinySpriteURL": "",
     "hp": 71,
     "attack": 60,
@@ -41846,11 +42140,20 @@
   {
     "name": "okidogi",
     "speciesNames": {
-      "en": "Okidogi"
+      "ja-Hrkt": "イイネイヌ",
+      "ko": "조타구",
+      "zh-Hant": "夠讚狗",
+      "fr": "Félicanis",
+      "de": "Boninu",
+      "es": "Okidogi",
+      "it": "Okidogi",
+      "en": "Okidogi",
+      "ja": "イイネイヌ",
+      "zh-Hans": "够赞狗"
     },
     "formNames": {},
     "number": 1014,
-    "spriteURL": null,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1014.png",
     "shinySpriteURL": "",
     "hp": 88,
     "attack": 128,
@@ -41867,11 +42170,20 @@
   {
     "name": "munkidori",
     "speciesNames": {
-      "en": "Munkidori"
+      "ja-Hrkt": "マシマシラ",
+      "ko": "이야후",
+      "zh-Hant": "願增猿",
+      "fr": "Fortusimia",
+      "de": "Benesaru",
+      "es": "Munkidori",
+      "it": "Munkidori",
+      "en": "Munkidori",
+      "ja": "マシマシラ",
+      "zh-Hans": "愿增猿"
     },
     "formNames": {},
     "number": 1015,
-    "spriteURL": null,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1015.png",
     "shinySpriteURL": "",
     "hp": 88,
     "attack": 75,
@@ -41888,11 +42200,20 @@
   {
     "name": "fezandipiti",
     "speciesNames": {
-      "en": "Fezandipiti"
+      "ja-Hrkt": "キチキギス",
+      "ko": "기로치",
+      "zh-Hant": "吉雉雞",
+      "fr": "Favianos",
+      "de": "Beatori",
+      "es": "Fezandipiti",
+      "it": "Fezandipiti",
+      "en": "Fezandipiti",
+      "ja": "キチキギス",
+      "zh-Hans": "吉雉鸡"
     },
     "formNames": {},
     "number": 1016,
-    "spriteURL": null,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1016.png",
     "shinySpriteURL": "",
     "hp": 88,
     "attack": 91,
@@ -41909,11 +42230,31 @@
   {
     "name": "ogerpon",
     "speciesNames": {
-      "en": "Ogerpon"
+      "ja-Hrkt": "オーガポン",
+      "ko": "오거폰",
+      "zh-Hant": "厄鬼椪",
+      "fr": "Ogerpon",
+      "de": "Ogerpon",
+      "es": "Ogerpon",
+      "it": "Ogerpon",
+      "en": "Ogerpon",
+      "ja": "オーガポン",
+      "zh-Hans": "厄诡椪"
     },
-    "formNames": {},
+    "formNames": {
+      "ja-Hrkt": "みどりのめん",
+      "ko": "벽록의가면",
+      "zh-Hant": "碧草面具",
+      "fr": "Masque Turquoise",
+      "de": "Türkisgrüne Maske",
+      "es": "Máscara Turquesa",
+      "it": "Maschera Turchese",
+      "en": "Teal Mask",
+      "ja": "みどりのめん",
+      "zh-Hans": "碧草面具"
+    },
     "number": 1017,
-    "spriteURL": null,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1017.png",
     "shinySpriteURL": "",
     "hp": 80,
     "attack": 120,
@@ -41929,11 +42270,31 @@
   {
     "name": "ogerpon-wellspring-mask",
     "speciesNames": {
-      "en": "Ogerpon"
+      "ja-Hrkt": "オーガポン",
+      "ko": "오거폰",
+      "zh-Hant": "厄鬼椪",
+      "fr": "Ogerpon",
+      "de": "Ogerpon",
+      "es": "Ogerpon",
+      "it": "Ogerpon",
+      "en": "Ogerpon",
+      "ja": "オーガポン",
+      "zh-Hans": "厄诡椪"
     },
-    "formNames": {},
+    "formNames": {
+      "ja-Hrkt": "いどのめん",
+      "ko": "우물의가면",
+      "zh-Hant": "水井面具",
+      "fr": "Masque du Puits",
+      "de": "Brunnenmaske",
+      "es": "Máscara Fuente",
+      "it": "Maschera Pozzo",
+      "en": "Wellspring Mask",
+      "ja": "いどのめん",
+      "zh-Hans": "水井面具"
+    },
     "number": 1017,
-    "spriteURL": null,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10273.png",
     "shinySpriteURL": "",
     "hp": 80,
     "attack": 120,
@@ -41950,11 +42311,31 @@
   {
     "name": "ogerpon-hearthflame-mask",
     "speciesNames": {
-      "en": "Ogerpon"
+      "ja-Hrkt": "オーガポン",
+      "ko": "오거폰",
+      "zh-Hant": "厄鬼椪",
+      "fr": "Ogerpon",
+      "de": "Ogerpon",
+      "es": "Ogerpon",
+      "it": "Ogerpon",
+      "en": "Ogerpon",
+      "ja": "オーガポン",
+      "zh-Hans": "厄诡椪"
     },
-    "formNames": {},
+    "formNames": {
+      "ja-Hrkt": "かまどのめん",
+      "ko": "화덕의가면",
+      "zh-Hant": "火灶面具",
+      "fr": "Masque du Fourneau",
+      "de": "Ofenmaske",
+      "es": "Máscara Horno",
+      "it": "Maschera Focolare",
+      "en": "Hearthflame Mask",
+      "ja": "かまどのめん",
+      "zh-Hans": "火灶面具"
+    },
     "number": 1017,
-    "spriteURL": null,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10274.png",
     "shinySpriteURL": "",
     "hp": 80,
     "attack": 120,
@@ -41971,11 +42352,31 @@
   {
     "name": "ogerpon-cornerstone-mask",
     "speciesNames": {
-      "en": "Ogerpon"
+      "ja-Hrkt": "オーガポン",
+      "ko": "오거폰",
+      "zh-Hant": "厄鬼椪",
+      "fr": "Ogerpon",
+      "de": "Ogerpon",
+      "es": "Ogerpon",
+      "it": "Ogerpon",
+      "en": "Ogerpon",
+      "ja": "オーガポン",
+      "zh-Hans": "厄诡椪"
     },
-    "formNames": {},
+    "formNames": {
+      "ja-Hrkt": "いしずえのめん",
+      "ko": "주춧돌의가면",
+      "zh-Hant": "礎石面具",
+      "fr": "Masque de la Pierre",
+      "de": "Fundamentmaske",
+      "es": "Máscara Cimiento",
+      "it": "Maschera Fondamenta",
+      "en": "Cornerstone Mask",
+      "ja": "いしずえのめん",
+      "zh-Hans": "礎石面具"
+    },
     "number": 1017,
-    "spriteURL": null,
+    "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10275.png",
     "shinySpriteURL": "",
     "hp": 80,
     "attack": 120,
@@ -41987,6 +42388,323 @@
     "types": [
       "grass",
       "rock"
+    ]
+  },
+  {
+    "name": "archaludon",
+    "speciesNames": {
+      "ja-Hrkt": "ブリジュラス",
+      "ko": "브리두라스",
+      "zh-Hant": "鋁鋼橋龍",
+      "fr": "Pondralugon",
+      "de": "Briduradon",
+      "es": "Archaludon",
+      "it": "Archaludon",
+      "en": "Archaludon",
+      "ja": "ブリジュラス",
+      "zh-Hans": "铝钢桥龙"
+    },
+    "formNames": {},
+    "number": 1018,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 90,
+    "attack": 105,
+    "defense": 130,
+    "spAttack": 125,
+    "spDefense": 65,
+    "speed": 85,
+    "id": "1018",
+    "types": [
+      "steel",
+      "dragon"
+    ]
+  },
+  {
+    "name": "hydrapple",
+    "speciesNames": {
+      "ja-Hrkt": "カミツオロチ",
+      "ko": "과미드라",
+      "zh-Hant": "蜜集大蛇",
+      "fr": "Pomdorochi",
+      "de": "Hydrapfel",
+      "es": "Hydrapple",
+      "it": "Hydrapple",
+      "en": "Hydrapple",
+      "ja": "カミツオロチ",
+      "zh-Hans": "蜜集大蛇"
+    },
+    "formNames": {},
+    "number": 1019,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 106,
+    "attack": 80,
+    "defense": 110,
+    "spAttack": 120,
+    "spDefense": 80,
+    "speed": 44,
+    "id": "1019",
+    "types": [
+      "grass",
+      "dragon"
+    ]
+  },
+  {
+    "name": "gouging-fire",
+    "speciesNames": {
+      "ja-Hrkt": "ウガツホムラ",
+      "ko": "꿰뚫는화염",
+      "zh-Hant": "破空焰",
+      "fr": "Feu-Perçant",
+      "de": "Keilflamme",
+      "es": "Flamariete",
+      "it": "Vampeaguzze",
+      "en": "Gouging Fire",
+      "ja": "ウガツホムラ",
+      "zh-Hans": "破空焰"
+    },
+    "formNames": {},
+    "number": 1020,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 105,
+    "attack": 115,
+    "defense": 121,
+    "spAttack": 65,
+    "spDefense": 93,
+    "speed": 91,
+    "id": "1020",
+    "types": [
+      "fire",
+      "dragon"
+    ]
+  },
+  {
+    "name": "raging-bolt",
+    "speciesNames": {
+      "ja-Hrkt": "タケルライコ",
+      "ko": "날뛰는우레",
+      "zh-Hant": "猛雷鼓",
+      "fr": "Ire-Foudre",
+      "de": "Furienblitz",
+      "es": "Electrofuria",
+      "it": "Furiatonante",
+      "en": "Raging Bolt",
+      "ja": "タケルライコ",
+      "zh-Hans": "猛雷鼓"
+    },
+    "formNames": {},
+    "number": 1021,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 125,
+    "attack": 73,
+    "defense": 91,
+    "spAttack": 137,
+    "spDefense": 89,
+    "speed": 75,
+    "id": "1021",
+    "types": [
+      "electric",
+      "dragon"
+    ]
+  },
+  {
+    "name": "iron-boulder",
+    "speciesNames": {
+      "ja-Hrkt": "テツノイワオ",
+      "ko": "무쇠암석",
+      "zh-Hant": "铁磐岩",
+      "fr": "Roc-de-Fer",
+      "de": "Eisenfels",
+      "es": "Ferromole",
+      "it": "Massoferreo",
+      "en": "Iron Boulder",
+      "ja": "テツノイワオ",
+      "zh-Hans": "鐵磐岩"
+    },
+    "formNames": {},
+    "number": 1022,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 90,
+    "attack": 120,
+    "defense": 80,
+    "spAttack": 68,
+    "spDefense": 108,
+    "speed": 124,
+    "id": "1022",
+    "types": [
+      "rock",
+      "psychic"
+    ]
+  },
+  {
+    "name": "iron-crown",
+    "speciesNames": {
+      "ja-Hrkt": "テツノカシラ",
+      "ko": "무쇠감투",
+      "zh-Hant": "铁头壳",
+      "fr": "Chef-de-Fer",
+      "de": "Eisenhaupt",
+      "es": "Ferrotesta",
+      "it": "Capoferreo",
+      "en": "Iron Crown",
+      "ja": "テツノカシラ",
+      "zh-Hans": "鐵頭殼"
+    },
+    "formNames": {},
+    "number": 1023,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 90,
+    "attack": 72,
+    "defense": 100,
+    "spAttack": 122,
+    "spDefense": 108,
+    "speed": 98,
+    "id": "1023",
+    "types": [
+      "steel",
+      "psychic"
+    ]
+  },
+  {
+    "name": "terapagos",
+    "speciesNames": {
+      "ja-Hrkt": "テラパゴス",
+      "ko": "테라파고스",
+      "zh-Hant": "太樂巴戈斯",
+      "fr": "Terapagos",
+      "de": "Terapagos",
+      "es": "Terapagos",
+      "it": "Terapagos",
+      "en": "Terapagos",
+      "ja": "テラパゴス",
+      "zh-Hans": "太乐巴戈斯"
+    },
+    "formNames": {
+      "ja-Hrkt": "ノーマルフォルム",
+      "fr": "Forme Normale",
+      "es": "Forma normal",
+      "it": "Forma Normale",
+      "en": "Normal Form",
+      "ja": "ノーマルフォルム"
+    },
+    "number": 1024,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 90,
+    "attack": 65,
+    "defense": 85,
+    "spAttack": 65,
+    "spDefense": 85,
+    "speed": 60,
+    "id": "1024",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "terapagos-terastal",
+    "speciesNames": {
+      "ja-Hrkt": "テラパゴス",
+      "ko": "테라파고스",
+      "zh-Hant": "太樂巴戈斯",
+      "fr": "Terapagos",
+      "de": "Terapagos",
+      "es": "Terapagos",
+      "it": "Terapagos",
+      "en": "Terapagos",
+      "ja": "テラパゴス",
+      "zh-Hans": "太乐巴戈斯"
+    },
+    "formNames": {
+      "ja-Hrkt": "テラスタルフォルム",
+      "fr": "Forme Téracristal",
+      "de": "Terakristall-Form",
+      "es": "Forma teracristal",
+      "it": "Forma Teracristal",
+      "en": "Terastal Form",
+      "ja": "テラスタルフォルム"
+    },
+    "number": 1024,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 95,
+    "attack": 95,
+    "defense": 110,
+    "spAttack": 105,
+    "spDefense": 110,
+    "speed": 85,
+    "id": "10276",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "terapagos-stellar",
+    "speciesNames": {
+      "ja-Hrkt": "テラパゴス",
+      "ko": "테라파고스",
+      "zh-Hant": "太樂巴戈斯",
+      "fr": "Terapagos",
+      "de": "Terapagos",
+      "es": "Terapagos",
+      "it": "Terapagos",
+      "en": "Terapagos",
+      "ja": "テラパゴス",
+      "zh-Hans": "太乐巴戈斯"
+    },
+    "formNames": {
+      "ja-Hrkt": "ステラフォルム",
+      "de": "Stellarform",
+      "es": "Forma astral",
+      "en": "Stellar Form",
+      "ja": "ステラフォルム"
+    },
+    "number": 1024,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 95,
+    "attack": 95,
+    "defense": 110,
+    "spAttack": 105,
+    "spDefense": 110,
+    "speed": 85,
+    "id": "10277",
+    "types": [
+      "normal"
+    ]
+  },
+  {
+    "name": "pecharunt",
+    "speciesNames": {
+      "ja-Hrkt": "モモワロウ",
+      "zh-Hant": "桃歹郎",
+      "fr": "Pêchaminus",
+      "de": "Infamomo",
+      "es": "Pecharunt",
+      "it": "Pecharunt",
+      "en": "Pecharunt",
+      "ja": "モモワロウ",
+      "zh-Hans": "桃歹郎"
+    },
+    "formNames": {},
+    "number": 1025,
+    "spriteURL": null,
+    "shinySpriteURL": "",
+    "hp": 88,
+    "attack": 88,
+    "defense": 160,
+    "spAttack": 88,
+    "spDefense": 88,
+    "speed": 88,
+    "id": "1025",
+    "types": [
+      "poison",
+      "ghost"
     ]
   }
 ]

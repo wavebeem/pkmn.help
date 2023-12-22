@@ -1,5 +1,10 @@
 # Changelog
 
+## 2023-12-22
+
+- Added new Pokémon from the The Indigo Disk DLC
+- Added some missing images
+
 ## 2023-12-08
 
 - Added support for reduced motion user preference
