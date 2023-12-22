@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 import fetch from "node-fetch";
 import path from "path";
 import { URL } from "url";
@@ -85,6 +86,7 @@ interface PokemonSimple {
 }
 
 async function fetchJSON<T>(url: string): Promise<T> {
+  console.info("Fetching JSON", url);
   const resp = await fetch(url);
   return await resp.json();
 }
