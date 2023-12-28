@@ -1,5 +1,9 @@
 # Changelog
 
+## 2023-12-28
+
+- Enabled dark scrollbars in Chrome and Safari
+
 ## 2023-12-22
 
 - Added new Pokémon from the The Indigo Disk DLC
