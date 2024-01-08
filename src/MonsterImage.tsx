@@ -31,9 +31,7 @@ export function MonsterImage({
   }, []);
   return (
     <div
-      data-shiny={shiny}
-      data-state={state}
-      className={classNames(styles.container, styles.bounce)}
+      className={classNames(styles.container)}
       style={{ ["--size-px" as any]: `${size}px` }}
     >
       <div
@@ -47,7 +45,8 @@ export function MonsterImage({
         role="presentation"
         alt=""
         hidden={state !== "loaded"}
-        className={classNames("db img-shadow h-auto", {
+        data-shiny={shiny}
+        className={classNames("db img-shadow h-auto", styles.image, {
           "img-crisp": imageType === "sprite",
         })}
         width={size}

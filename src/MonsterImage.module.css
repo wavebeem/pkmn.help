@@ -20,16 +20,8 @@
   font-size: 2rem;
 }
 
-.image[data-state="loading"] > img {
-  opacity: 0;
-}
-
 @media (prefers-reduced-motion: no-preference) {
-  .image > img {
-    transition: 100ms opacity;
-  }
-
-  .bounce[data-shiny="true"] > img {
+  .image[data-shiny="true"] {
     animation: 250ms bounce;
     transform-origin: bottom center;
   }
