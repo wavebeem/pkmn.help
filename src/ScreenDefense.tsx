@@ -37,10 +37,28 @@ const tabClass = classNames([
   "tc",
   "ba border1 br-pill",
   "bg1 fg1",
-  "active-squish",
 ]);
 
 const tabClassActive = classNames(["button-selected"]);
+
+function setAbilityAt({
+  list,
+  index,
+  value,
+  length,
+}: {
+  list: AbilityName[];
+  index: number;
+  value: AbilityName;
+  length: number;
+}): AbilityName[] {
+  const sparseArray = updateArrayAt(list, index, value);
+  if (sparseArray.length < length) {
+    sparseArray.length = length;
+  }
+  const fullArray = Array.from(sparseArray);
+  return fullArray.map((v) => v || "none");
+}
 
 interface State {
   mode: Mode;
@@ -425,11 +443,12 @@ export function ScreenDefense({
                         }
                         update({
                           ...state,
-                          teamAbilityList: updateArrayAt(
-                            state.teamAbilityList,
-                            typeIndex,
-                            ability
-                          ),
+                          teamAbilityList: setAbilityAt({
+                            list: state.teamAbilityList,
+                            index: typeIndex,
+                            value: ability,
+                            length: state.teamTypesList.length,
+                          }),
                         });
                       }}
                     >

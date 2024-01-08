@@ -1,6 +1,7 @@
 import * as React from "react";
 
-const strokeWidth = 4;
+const strokeWidth = 3;
+const strokeGap = 4;
 const size = 24;
 const paddingH = 8;
 const paddingV = 4;
@@ -29,12 +30,12 @@ const paths = {
   Left: arrowPath({ offsetX: 0, flipH: false }),
   Right: arrowPath({ offsetX: 0, flipH: true }),
   LeftDouble: [
-    arrowPath({ offsetX: -strokeWidth, flipH: false }),
-    arrowPath({ offsetX: strokeWidth, flipH: false }),
+    arrowPath({ offsetX: -strokeGap, flipH: false }),
+    arrowPath({ offsetX: strokeGap, flipH: false }),
   ].join("\n"),
   RightDouble: [
-    arrowPath({ offsetX: -strokeWidth, flipH: true }),
-    arrowPath({ offsetX: strokeWidth, flipH: true }),
+    arrowPath({ offsetX: -strokeGap, flipH: true }),
+    arrowPath({ offsetX: strokeGap, flipH: true }),
   ].join("\n"),
 } as const;
 

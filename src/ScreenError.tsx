@@ -12,7 +12,7 @@ const buttonClasses = classNames(
   "ba br2 pv2 ph3",
   "f5",
   "focus-simple",
-  "border1 button-shadow button-bg button-bg-hover color-inherit active-squish"
+  "border1 button-shadow button-bg button-bg-hover color-inherit"
 );
 
 export function ScreenError({ error }: ScreenErrorProps) {
@@ -50,7 +50,9 @@ ${JSON.stringify(localStorage)}
         describing how to reproduce this error, and include the following error
         message:
       </p>
-      <pre className="f5 bg1 pa2 br2 ba border2 pre-wrap">{message} </pre>
+      <pre className="f5 bg1 pa2 br2 ba border2 pre-wrap word-break-all">
+        {message}
+      </pre>
       <div className="flex flex-wrap gap3 items-center">
         <button type="button" onClick={copyMessage} className={buttonClasses}>
           Copy error message

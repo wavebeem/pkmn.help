@@ -9,16 +9,21 @@ export function useTeamAbilities(): [
   AbilityName[],
   (teamTypes: AbilityName[]) => void
 ] {
-  const [teamAbilities] = React.useState<AbilityName[]>(() => {
+  const [teamAbilities, internalSet] = React.useState<AbilityName[]>(() => {
     const string = localStorage.getItem(key);
     if (string) {
-      return JSON.parse(string);
+      const array: (AbilityName | null)[] = JSON.parse(string);
+      return array.map((a) => a || "none");
     }
     return [];
   });
 
   const setTeamAbilities = React.useCallback((teamAbilities: AbilityName[]) => {
-    localStorage.setItem(key, JSON.stringify(teamAbilities));
+    // Use Array.from to remove holes in the array & replace holes with "none"
+    const value = Array.from(teamAbilities).map((a) => a || "none");
+    const json = JSON.stringify(value);
+    internalSet(value);
+    localStorage.setItem(key, json);
   }, []);
 
   return [teamAbilities, setTeamAbilities];

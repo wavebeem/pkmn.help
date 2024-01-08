@@ -35,7 +35,7 @@ export function LinkButton({
       className={classNames(
         className,
         baseClasses,
-        "border1 button-shadow button-bg button-bg-hover color-inherit active-squish"
+        "border1 button-shadow button-bg button-bg-hover color-inherit"
       )}
     />
   );

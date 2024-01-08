@@ -4,7 +4,7 @@
   z-index: 1;
   bottom: 0;
   left: 50vw;
-  transform: translateX(-50%) translateY(10vh);
+  translate: -50% 10vh;
   opacity: 0;
 }
 
@@ -14,7 +14,7 @@
 
 @media (prefers-reduced-motion) {
   .easterEgg {
-    transform: translateX(-50%) translateY(-10vh);
+    translate: -50% -10vh;
   }
 
   .easterEgg[data-animate="true"] {
@@ -33,12 +33,13 @@
   10%,
   95% {
     opacity: 1;
-    transform: translateX(-50%) translateY(-10.5vh) rotateZ(2deg);
+    translate: -50% -10.5vh;
+    rotate: 0 0 2deg;
   }
   15%,
   90% {
     opacity: 1;
-    transform: translateX(-50%) translateY(-10vh);
+    translate: -50% -10vh;
   }
 }
 
@@ -75,7 +76,7 @@
   position: absolute;
   left: 50%;
   bottom: calc(-0.5 * var(--border-size));
-  transform: translateX(-50%) translateY(50%);
+  translate: -50% 50%;
   background-clip: content-box;
 }
 
@@ -84,7 +85,8 @@
 }
 
 .headerButton:active {
-  transform: translateX(-50%) translateY(50%) translateY(0.5px) scale(0.97);
+  translate: -50% 50%;
+  scale: 0.97;
 }
 
 .pleaseUpdate {
