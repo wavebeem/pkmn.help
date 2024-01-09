@@ -102,7 +102,7 @@ function Monster({ pokemon }: MonsterProps) {
         {pokemon.hasShiny && (
           <button
             className={classNames(
-              "br-pill ba pa2 flex select-none gap1 items-center active-squish fill-currentcolor",
+              "br-pill ba pa2 flex select-none gap1 items-center fill-currentcolor",
               styles.shinyButton,
               "button-shadow"
             )}
@@ -127,7 +127,6 @@ function Monster({ pokemon }: MonsterProps) {
               <MonsterImage
                 scale={2}
                 pokemonID={pokemon.id}
-                types={pokemon.types}
                 imageType={pokemon.imageType}
                 shiny={shiny}
               />

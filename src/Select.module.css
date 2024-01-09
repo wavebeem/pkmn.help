@@ -12,12 +12,12 @@
   position: absolute;
   width: 0.5rem;
   height: 0.5rem;
-  border: 3px solid;
+  border: 2px solid;
   border-top: 0;
   border-left: 0;
-  transform: rotate(45deg);
-  right: 1rem;
-  top: 30%;
+  rotate: 45deg;
+  right: 0.75rem;
+  top: calc(50% - 0.5rem);
   pointer-events: none;
 }
 

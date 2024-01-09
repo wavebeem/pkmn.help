@@ -41,8 +41,7 @@ export function MultiTypeSelector({
               "f5",
               "ttc",
               "select-none",
-              "focus-simple",
-              "active-squish"
+              "focus-simple"
             )}
             style={{
               ["--type-color" as any]: typeColorBG(type),

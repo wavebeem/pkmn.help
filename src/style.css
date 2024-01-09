@@ -130,6 +130,10 @@
   white-space: pre-wrap;
 }
 
+.word-break-all {
+  word-break: break-all;
+}
+
 .fill-currentcolor {
   fill: currentcolor;
 }

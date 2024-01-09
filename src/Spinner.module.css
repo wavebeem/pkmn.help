@@ -12,7 +12,7 @@
 
 @keyframes spin {
   100% {
-    transform: rotate(1turn);
+    rotate: 1turn;
   }
 }
 

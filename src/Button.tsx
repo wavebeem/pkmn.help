@@ -24,5 +24,5 @@ const baseClasses = classNames(
   "ba br2",
   "f5",
   "focus-simple",
-  "border1 button-shadow button-bg button-bg-hover color-inherit active-squish"
+  "border1 button-shadow button-bg button-bg-hover color-inherit"
 );

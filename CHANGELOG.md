@@ -1,5 +1,14 @@
 # Changelog
 
+## 2024-01-08
+
+- Fixed a bug where team abilities would have their order lost upon refreshing
+  the page or opening a new tab
+
+- Made arrow icons a little bit thinner
+
+- Simplified the "missing image" image in the Pokédex
+
 ## 2023-12-28
 
 - Enabled dark scrollbars in Chrome and Safari
@@ -7,11 +16,13 @@
 ## 2023-12-22
 
 - Added new Pokémon from the The Indigo Disk DLC
+
 - Added some missing images
 
 ## 2023-12-08
 
 - Added support for reduced motion user preference
+
 - Updated Firefox scrollbar colors in dark mode
 
 ## 2023-10-10
@@ -33,6 +44,7 @@
 ## 2023-06-11
 
 - Updated Pokédex with latest PokéAPI data
+
 - Updated generation 9 Pokémon sprites with latest PokéAPI data
 
 ## 2023-06-02
@@ -46,7 +58,9 @@
 ## 2023-05-21
 
 - Fixed an issue where multipliers greater than 8 or below 1/8 wouldn't appear
+
 - Changed team offense matchups to round the multiplier to the nearest power of 2 rather than omitting it entirely from the table
+
 - Added Dry Skin's 1.25x weakness to Fire, which wasn't possible to represent before this update
 
 ## 2023-05-15
@@ -76,12 +90,15 @@
 ## 2023-04-18
 
 - Pokemon bounce when entering their shiny form in the Pokédex
+
 - Percentage bars on the offense page animate when changing now
 
 ## 2023-04-17
 
 - Shiny link is now a toggle button in the top right of each Pokédex entry
+
 - Hide shiny link for Scarlet/Violet Pokemon since we don't have shiny images for them
+
 - Improve accessibility for Pokemon links so it's clearer
 
 ## 2023-04-14
@@ -93,24 +110,36 @@
 ## 2023-04-12
 
 - OK, hopefully this is the last grid layout update for a while
+
   - Getting the grid sizing to look good on Windows + macOS in 14 languages
     while supporting custom font sizes is quite challenging
+
   - Now every language except Polish and Russian can fit 4 columns of types on a
     desktop monitor
+
     - Polish and Russian only fit 3, sorry
 
 ## 2023-04-11
 
 - Added Iron Leaves and Walking Wake
+
 - Maushold's sprite is now Maushold (4) not Maushold (3)
+
 - Fixed a layout bug for the type grid in matchups
+
 - Fixed wiki links for names with spaces ([@kittenchilly](https://github.com/kittenchilly))
+
 - Better fill available space with grid layouts
+
   - Some languages have longer words for types and will not fit as many columns
     on screen
+
 - Updated to Scarlet/Violet color palette for types
+
 - Increased scrollbar contrast in Firefox
+
 - Tweaked header color in dark mode
+
 - Fixed rainbow colors for types to be in the right order
 
 ## 2023-04-09
@@ -120,7 +149,9 @@
 ## 2023-04-08
 
 - Fixed layout issues for browser default font sizes greater than 16px
+
 - Improved pagination to show first and last Pokemon numbers in addition to page numbers
+
 - Fixed Danish capitalization of "Flyvende"
 
 ## 2023-01-06

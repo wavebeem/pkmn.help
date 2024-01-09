@@ -32,7 +32,6 @@ const tabClass = classNames([
   "tc b",
   "ba border1 br-pill",
   "bg1 fg1",
-  "active-squish",
 ]);
 
 const tabClassActive = classNames(["button-selected"]);
@@ -153,7 +152,6 @@ export function App() {
             >
               <MonsterImage
                 pokemonID={easterEgg.id}
-                types={easterEgg.types}
                 imageType={easterEgg.imageType}
                 onLoad={({ pokemonID }) => {
                   setEasterEggLoadedID(pokemonID);
