@@ -1,5 +1,10 @@
 # Changelog
 
+## 2024-01-16
+
+- iframe embedding is now blocked to prevent low-effort scam sites from
+  profiting off of Pokémon Type Calculator
+
 ## 2024-01-08
 
 - Fixed a bug where team abilities would have their order lost upon refreshing
