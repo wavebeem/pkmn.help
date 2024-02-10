@@ -1,5 +1,13 @@
 # Changelog
 
+## 2024-02-10
+
+- Updated Brazilian Portuguese translation
+
+- Added section showing translation completion
+
+  - Please help me translate this site!
+
 ## 2024-01-16
 
 - iframe embedding is now blocked to prevent low-effort scam sites from

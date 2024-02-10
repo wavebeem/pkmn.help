@@ -7,10 +7,10 @@
     "more": "More"
   },
   "offense": {
-    "chooseTypes": "Choose Types",
+    "chooseTypes": "Choose types",
     "dealsXTo": "Deals {{ x }} to",
     "coverage": {
-      "heading": "Pokédex Coverage",
+      "heading": "Pokédex coverage",
       "edit": "Edit list",
       "weakness": "Weak",
       "normal": "Normal",
@@ -66,11 +66,11 @@
     "back": "Back to offense"
   },
   "defense": {
-    "chooseFirst": "Choose First Type",
-    "chooseSecond": "Choose Second Type",
-    "chooseThird": "Choose Third Type",
-    "takesXFrom": "Takes {{ x }} From",
-    "chooseAbility": "Choose Ability",
+    "chooseFirst": "Choose first type",
+    "chooseSecond": "Choose second type",
+    "chooseThird": "Choose third type",
+    "takesXFrom": "Takes {{ x }} from",
+    "chooseAbility": "Choose ability",
     "abilityNames": {
       "none": "None",
       "wonder_guard": "Wonder Guard",
@@ -93,16 +93,16 @@
       "volt_absorb": "Volt Absorb"
     },
     "mode": {
-      "heading": "Choose Mode",
+      "heading": "Choose mode",
       "solo": "Solo",
       "team": "Team"
     },
     "team": {
-      "tableHeading": "Matchup Counts",
-      "heading": "Edit Pokémon Team",
+      "tableHeading": "Matchup counts",
+      "heading": "Edit Pokémon team",
       "add": "Add Pokémon",
       "empty": "No Pokémon selected",
-      "displayType": "Table Format",
+      "displayType": "Table format",
       "weak": "Weak",
       "resist": "Resist",
       "simple": "Simple",
@@ -189,7 +189,7 @@
   },
   "more": {
     "contact": {
-      "heading": "Contact Me",
+      "heading": "Contact me",
       "intro": "Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",
       "email": "Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>."
     },
@@ -210,7 +210,7 @@
         }
       },
       "typeCount": {
-        "label": "Number of Types",
+        "label": "Number of types",
         "help": "Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.",
         "values": {
           "2": "Two types (2)",
@@ -220,7 +220,7 @@
     },
     "changes": {
       "heading": "What’s new",
-      "description": "See what's new in the <changelog>changelog</changelog>."
+      "description": "See what’s new in the <changelog>changelog</changelog>."
     },
     "help": {
       "heading": "Help",
@@ -234,11 +234,11 @@
       "description": "I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer."
     },
     "givingBack": {
-      "heading": "Showing Appreciation",
+      "heading": "Showing appreciation",
       "description": "I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights."
     },
     "thanks": {
-      "heading": "Special Thanks",
+      "heading": "Special thanks",
       "sections": {
         "da": "Danish translation",
         "ru": "Russian translation",
@@ -257,11 +257,11 @@
       }
     },
     "openSource": {
-      "heading": "Open Source",
+      "heading": "Open source",
       "description": "Source code is available on <github>GitHub</github>."
     },
     "legalInfo": {
-      "heading": "Legal Info"
+      "heading": "Legal info"
     }
   },
   "types": {
@@ -296,12 +296,12 @@
     "loading": "Loading…"
   },
   "games": {
-    "label": "Game Generation",
+    "label": "Game generation",
     "help": "Use type effectiveness from different game generations.",
     "byID": {
       "gen1": "Generation 1",
       "gen2": "Generation 2–5",
-      "default": "Default (Generation 6+)"
+      "default": "Default (generation 6+)"
     }
   }
 }
