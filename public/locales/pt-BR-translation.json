@@ -8,7 +8,14 @@
   },
   "offense": {
     "chooseTypes": "Escolher Tipos",
-    "dealsXTo": "Causa {{ x }} mais dano contra"
+    "dealsXTo": "Causa {{ x }} mais dano contra",
+    "coverage": {
+      "heading": "Cobertura da Pokédex",
+      "edit": "Editar lista",
+      "weakness": "Fraquezas",
+      "normal": "Normal",
+      "resistance": "Resistências"
+    }
   },
   "coverage": {
     "heading": "Cobertura a Fraquezas",
@@ -48,6 +55,10 @@
     "chooseSecond": "Escolher 2° Tipo",
     "chooseThird": "Escolher 3° Tipo",
     "takesXFrom": "Leva {{ x }} mais dano de",
+    "chooseAbility": "Escolher Habilidade",
+    "abilityNames": {
+      "none": "Nenhuma"
+    },
     "mode": {
       "heading": "Escolher Modo",
       "solo": "Solo",
@@ -169,6 +180,10 @@
         }
       }
     },
+    "changes": {
+      "heading": "O que há de novo",
+      "description": "Acompanhe novas mudanças no <changelog>changelog</changelog>."
+    },
     "help": {
       "heading": "Ajuda",
       "serviceWorker": {
@@ -233,6 +248,7 @@
   "banners": {
     "updateReady": {
       "description": "Uma atualização está disponível",
+      "whatsNew": "O que há de novo",
       "update": "Atualizar"
     }
   },

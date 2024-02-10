@@ -10,10 +10,74 @@ import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useTypeCount } from "./useTypeCount";
+import {
+  Lang,
+  detectLanguage,
+  getDesiredLanguage,
+  isLang,
+  supportedLanguages,
+} from "./detectLanguage";
 
 export interface ScreenMoreProps {
   needsAppUpdate: boolean;
   updateApp: () => Promise<void>;
+}
+
+const languageCompletions =
+  typeof __TRANSLATION_COMPLETION__ === "undefined"
+    ? {}
+    : __TRANSLATION_COMPLETION__;
+
+const ndash = "\u2013";
+
+const languageNamesNative: Record<Lang, string> = {
+  en: `English`,
+  es: `Español`,
+  "pt-BR": `Português Brasileiro`,
+  de: `Deutsch`,
+  da: `Dansk`,
+  it: `Italiano`,
+  fr: `Français`,
+  ro: `Română`,
+  pl: `Polski`,
+  ru: `Русский`,
+  kk: `Қазақша`,
+  ja: `日本語`,
+  "ja-Hrkt": `にほんご`,
+  "zh-Hans": `简体中文`,
+  "zh-Hant": `繁體中文`,
+  ko: `한국어`,
+};
+
+const languageNamesEnglish: Record<Lang, string> = {
+  en: "",
+  es: `Spanish`,
+  "pt-BR": `Brazilian Portuguese`,
+  de: `German`,
+  da: `Danish`,
+  it: `Italian`,
+  fr: `French`,
+  ro: `Romanian`,
+  pl: `Polish`,
+  ru: `Russian`,
+  kk: `Kazakh`,
+  ja: `Japanese`,
+  "ja-Hrkt": `Japanese Kana-only`,
+  "zh-Hans": `Simplified Chinese`,
+  "zh-Hant": `Traditional Chinese`,
+  ko: `Korean`,
+};
+
+function formatLanguageCompletion(lang: string): string {
+  const value = languageCompletions[lang] || 0;
+  const n = (value * 100).toFixed(1);
+  return `${n}%`;
+}
+
+function showLang(lang: Lang): string {
+  return [languageNamesNative[lang], languageNamesEnglish[lang]]
+    .filter((x) => x)
+    .join(` ${ndash} `);
 }
 
 export function ScreenMore({
@@ -26,6 +90,7 @@ export function ScreenMore({
   const [theme, setTheme] = useTheme();
   const [typeCount, setTypeCount] = useTypeCount();
   const year = new Date().getFullYear();
+  const autoLang = getDesiredLanguage() || "en";
 
   return (
     <main className="pa3 center content-narrow lh-copy">
@@ -103,32 +168,27 @@ export function ScreenMore({
         <Select
           label={t("more.settings.language.label")}
           value={language}
-          helpText={t("more.settings.language.helpText")}
+          helpText="Please help me translate this site. Read the next section to help."
           onChange={(event) => {
             setLanguage(event.target.value);
             i18n.changeLanguage(language);
           }}
         >
-          <option value="">{t("more.settings.language.default")}</option>
-          <option disabled>&ndash;</option>
-          <option value="en">English</option>
-          <option value="es">Español (Spanish)</option>
-          <option value="pt-BR">
-            Português Brasileiro (Brazilian Portuguese)
+          <option value="">
+            {t("more.settings.language.default")} &ndash; {showLang(autoLang)}{" "}
+            &ndash; {formatLanguageCompletion(autoLang)}
           </option>
-          <option value="de">Deutsch (German)</option>
-          <option value="da">Dansk (Danish)</option>
-          <option value="it">Italiano (Italian)</option>
-          <option value="fr">Français (French)</option>
-          <option value="ro">Română (Romanian)</option>
-          <option value="pl">Polski (Polish)</option>
-          <option value="ru">Русский (Russian)</option>
-          <option value="kk">Қазақша (Kazakh)</option>
-          <option value="ja">日本語 (Japanese)</option>
-          <option value="ja-Hrkt">にほんご (Japanese Kana-only)</option>
-          <option value="zh-Hans">简体中文 (Simplified Chinese)</option>
-          <option value="zh-Hant">繁體中文 (Traditional Chinese)</option>
-          <option value="ko">한국어 (Korean)</option>
+          <option disabled>&ndash;</option>
+          {Object.keys(languageNamesNative).map((lang) => {
+            if (!isLang(lang)) {
+              throw new Error(`${lang} is not a valid language`);
+            }
+            return (
+              <option value={lang} key={lang}>
+                {showLang(lang)} &ndash; {formatLanguageCompletion(lang)}
+              </option>
+            );
+          })}
         </Select>
 
         <Select
@@ -179,6 +239,55 @@ export function ScreenMore({
           <option value="3">{t("more.settings.typeCount.values.3")}</option>
         </Select>
       </div>
+
+      <div role="presentation" className="mv2 bt border3" />
+
+      <CollapsibleSection
+        heading={
+          <h2 className="lh-title f4 dib">
+            Help me translate this site <span aria-hidden="true">🌎</span>
+          </h2>
+        }
+      >
+        <p>
+          Please help me translate Pokémon Type Calculator. Email me (
+          <a
+            className="br1 underline fg-link focus-outline"
+            href="mailto:pkmn@wavebeem.com"
+          >
+            pkmn@wavebeem.com
+          </a>
+          ) and I will send you a Google Sheet to translate. I'm willing to pay
+          for native translations.
+        </p>
+
+        <p>
+          This table shows translation progress for every supported language.
+        </p>
+
+        <div className="ba border2 mb3 br2 bg1 pa2 button-shadow">
+          <table className="collapse w-100">
+            <thead>
+              <tr>
+                <th className="ph2 pv1 bb border3 tr w0">Completion</th>
+                <th className="ph2 pv1 bb border3 tl">Language</th>
+              </tr>
+            </thead>
+            <tbody>
+              {supportedLanguages.map((lang) => {
+                return (
+                  <tr key={lang}>
+                    <td className="tabular-nums tr ph2 pv1 bt border3">
+                      {formatLanguageCompletion(lang)}
+                    </td>
+                    <td className="ph2 pv1 tl bt border3">{showLang(lang)}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+      </CollapsibleSection>
 
       <div role="presentation" className="mv2 bt border3" />
 
