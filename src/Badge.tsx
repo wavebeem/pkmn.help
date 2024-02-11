@@ -31,6 +31,7 @@ export function Badge({ type }: BadgeProps) {
           background: typeColorBG(type),
           borderColor: typeColorBorder(type),
         }}
+        data-testid={ `result-${type}` }
       >
         {t(`types.${type}`)}
       </div>

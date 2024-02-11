@@ -46,6 +46,7 @@ export function MultiTypeSelector({
             style={{
               ["--type-color" as any]: typeColorBG(type),
             }}
+            data-testid={`option-${type}`}
           >
             <span className="flex flex-row items-center justify-center">
               <input

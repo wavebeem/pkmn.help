@@ -166,6 +166,7 @@ export function App() {
             className={tabClass}
             activeClassName={tabClassActive}
             to={`/offense/${offenseParams}`}
+            data-testid="tab-offense"
           >
             {t("navigation.offense")}
           </NavLink>
@@ -173,6 +174,7 @@ export function App() {
             className={tabClass}
             activeClassName={tabClassActive}
             to={`/defense/${defenseParams}`}
+            data-testid="tab-defense"
           >
             {t("navigation.defense")}
           </NavLink>
@@ -180,6 +182,7 @@ export function App() {
             className={tabClass}
             activeClassName={tabClassActive}
             to={`/pokedex/${pokedexParams}`}
+            data-testid="tab-pokedex"
           >
             {t("navigation.pokedex")}
           </NavLink>
@@ -187,6 +190,7 @@ export function App() {
             className={classNames(tabClass, needRefresh && styles.pleaseUpdate)}
             activeClassName={tabClassActive}
             to="/more/"
+            data-testid="tab-more"
           >
             {t("navigation.more")}
           </NavLink>

@@ -15,12 +15,24 @@ function Section({ title, types }: SectionProps) {
   if (types.length === 0) {
     return null;
   }
+
+  let sectionTestId;
+  if (title.includes("0×")) {
+    sectionTestId = "section-0x";
+  } else if (title.includes("1/2×")) {
+    sectionTestId = "section-1-2x";
+  } else if (title.includes("1×")) {
+    sectionTestId = "section-1x";
+  } else if (title.includes("2×")) {
+    sectionTestId = "section-2x";
+  }
+
   return (
     <div>
       <h2 className="f5 mt4 mb2">{title}</h2>
-      <div className={styles.matchups}>
+      <div className={styles.matchups} data-testid={ sectionTestId }>
         {types.map((t) => (
-          <Badge key={`type-${t}`} type={t} />
+          <Badge key={`type-${t}`} type={t}/>
         ))}
       </div>
     </div>
