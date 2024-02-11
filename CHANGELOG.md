@@ -6,6 +6,8 @@
 
 - Updated section about helping me translate the site
 
+- Improved the translation table appearance on mobile
+
 ## 2024-02-10
 
 - Updated Brazilian Portuguese translation
