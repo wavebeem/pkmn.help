@@ -315,6 +315,7 @@ export function ScreenDefense({
             className={tabClass}
             activeClassName={tabClassActive}
             isActive={() => false}
+            data-testid="option-solo"
           >
             {t("defense.mode.solo")}
           </NavLink>
@@ -437,7 +438,7 @@ export function ScreenDefense({
                       onChange={(event) => {
                         const ability = abilityNameFromString(
                           event.target.value
-                        );
+                        );  
                         if (!ability) {
                           return;
                         }
@@ -452,7 +453,7 @@ export function ScreenDefense({
                         });
                       }}
                     >
-                      <option value="">{t("defense.abilityNames.none")}</option>
+                      <option value="" data-testid="select-none">{t("defense.abilityNames.none")}</option>
                       <option disabled>&ndash;</option>
                       {sortedAbilityNames.map((name) => {
                         return (

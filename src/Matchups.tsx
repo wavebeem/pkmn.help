@@ -19,7 +19,7 @@ function Section({ title, types }: SectionProps) {
   let sectionTestId;
   if (title.includes("0×")) {
     sectionTestId = "section-0x";
-  } else if (title.includes("1/2×")) {
+  } else if (title.includes("1⁄2×")) {
     sectionTestId = "section-1-2x";
   } else if (title.includes("1×")) {
     sectionTestId = "section-1x";

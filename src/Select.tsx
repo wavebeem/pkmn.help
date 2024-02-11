@@ -18,7 +18,7 @@ export function Select({
     <div>
       {label && <div className="b pb1">{label}</div>}
       <div className={styles.wrapper}>
-        <select {...props} aria-label={ariaLabel} className={baseClasses} />
+        <select {...props} aria-label={ariaLabel} className={baseClasses} data-testid="selector"/>
       </div>
       {helpText && <p className="ma0 pt1 fg3 f6">{helpText}</p>}
     </div>

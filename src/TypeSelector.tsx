@@ -59,6 +59,7 @@ export function TypeSelector({
             style={{
               ["--type-color" as any]: typeColorBG(type),
             }}
+            data-testid={ `radio-${type}` }
           >
             <span className="flex flex-row items-center justify-center">
               <input
