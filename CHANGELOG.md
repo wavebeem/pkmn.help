@@ -1,5 +1,11 @@
 # Changelog
 
+## 2024-02-11
+
+- Added translation CSV file downloads
+
+- Updated section about helping me translate the site
+
 ## 2024-02-10
 
 - Updated Brazilian Portuguese translation

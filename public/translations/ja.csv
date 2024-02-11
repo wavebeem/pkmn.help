@@ -1,0 +1,178 @@
+Key,en,ja
+title,Pokémon Type Calculator,ポケモン　タイプ　けいさんき
+navigation.offense,Offense,オフェンス
+navigation.defense,Defense,デフェンス
+navigation.pokedex,Pokédex,ポケモンずかん
+navigation.more,More,その他
+offense.chooseTypes,Choose types,複数のタイプを選択
+offense.dealsXTo,Deals {{ x }} to,{{ x }}を与える
+offense.coverage.heading,Pokédex coverage,
+offense.coverage.edit,Edit list,
+offense.coverage.weakness,Weak,
+offense.coverage.normal,Normal,
+offense.coverage.resistance,Resist,
+offense.coverageList.empty,No Pokémon found or no types selected,
+offense.coverageList.weakness.heading,Weakness Coverage List,
+offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,
+offense.coverageList.normal.heading,Normal Effectiveness Coverage List,
+offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,
+offense.coverageList.resistance.heading,Resistance Coverage List,
+offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,
+coverage.heading,Pokédex Coverage,弱点のカバー範囲
+coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",異なるポケモンのための弱点カバー範囲を見るためにカスタムポケモンずかんのCSVファイルを読み込み/エクスポートします。
+coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",CSVデータはカラムの順番ではなくカラムのヘッダーネーム順で呼ばれます。追加したり並べ替えても処理に影響はありません。（例:「ランク」カラムを足す、「注釈」カラムを足す）
+coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.",CSVファイルはGoogle Sheets、Microsoft Excel、OpenOffice、LibreOffice、Notepadなどで編集できます
+coverage.csvHeaders.number,Number,数字
+coverage.csvHeaders.name,Name,名前
+coverage.csvHeaders.type1,Type 1,１つ目のタイプ
+coverage.csvHeaders.type2,Type 2,２つ目のタイプ
+coverage.csvHeaders.type3,Type 3,３つ目のタイプ
+coverage.export.button,Export,書き出し
+coverage.export.description,Export the default Pokédex to a CSV file,デフォルトのポケモンずかんをCSVに書き出す
+coverage.import.button,Import,インポート
+coverage.import.description,Import an edited Pokédex CSV file,編集されたポケモンずかんのCSVファイルをインポートする
+coverage.reset.button,Reset,リセット
+coverage.reset.description,Reset to the default Pokédex,デフォルトのポケモンずかんにリセットする
+coverage.filename,pkmn.help type coverage.csv,pkmn.helpのタイプ.csv
+coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,「{{ file }}」から{{ n }}のポケモンのすがたをインポートした
+coverage.status.exported,Exported default Pokémon forms,デフォルトのポケモンのすがたを書き出した
+coverage.status.reset,Loaded default Pokémon forms,デフォルトのポケモンのすがたを読み込んだ
+coverage.status.errored,Error loading CSV. Don't change header names.,CSV読み込みエラー。ヘッダーの名前を変えないでください
+coverage.back,Back to offense,こうげきに戻る
+defense.chooseFirst,Choose first type,１つ目のタイプ
+defense.chooseSecond,Choose second type,２つ目のタイプ
+defense.chooseThird,Choose third type,３つ目のタイプ
+defense.takesXFrom,Takes {{ x }} from,{{ x }}を受ける
+defense.chooseAbility,Choose ability,
+defense.abilityNames.none,None,
+defense.mode.heading,Choose mode,
+defense.mode.solo,Solo,
+defense.mode.team,Team,
+defense.team.tableHeading,Matchup counts,
+defense.team.heading,Edit Pokémon team,
+defense.team.add,Add Pokémon,
+defense.team.empty,No Pokémon selected,
+defense.team.displayType,Table format,
+defense.team.weak,Weak,
+defense.team.resist,Resist,
+defense.team.simple,Simple,
+defense.team.complex,Complex,
+defense.team.type,Type,
+defense.team.save,Save,
+defense.team.saveLong,Save {{ name }},
+defense.team.edit,Edit,
+defense.team.editLong,Edit {{ name }},
+defense.team.remove,Remove,
+defense.team.removeLong,Remove {{ name }},
+pokedex.search.description,"Search by name, number, or types",名前、番号、タイプで検索できます
+pokedex.search.help,Help,ヘルプ
+pokedex.search.helpLong,"Help, search Pokédex",ヘルプ、Pokédexを検索
+pokedex.search.notFound,No Pokémon found,ポケモンが見つかりませんでした
+pokedex.offense.text,Offense,こうげき
+pokedex.defense.text,Defense,ぼうぎょ
+pokedex.shiny.label,Shiny for {{ pokemon }},
+pokedex.shiny.text,Shiny,
+pokedex.pagination.next,Next,次
+pokedex.pagination.nextLong,Next,次
+pokedex.pagination.previous,Prev,前
+pokedex.pagination.previousLong,Previous,前
+pokedex.pagination.firstLong,First,最初
+pokedex.pagination.lastLong,Last,最終
+pokedex.stats.hp,HP,HP
+pokedex.stats.hpLong,Hit Points,HP
+pokedex.stats.attack,Attack,こうげき
+pokedex.stats.attackLong,Attack,こうげき
+pokedex.stats.defense,Defense,ぼうぎょ
+pokedex.stats.defenseLong,Defense,ぼうぎょ
+pokedex.stats.specialAttack,Sp. Atk.,とくこう
+pokedex.stats.specialAttackLong,Special Attack,とくこう
+pokedex.stats.specialDefense,Sp. Def.,とくぼう
+pokedex.stats.specialDefenseLong,Special Defense,とくぼう
+pokedex.stats.speed,Speed,すばやさ
+pokedex.stats.speedLong,Speed,すばやさ
+pokedex.stats.total,Total,合計
+pokedex.stats.totalLong,Total,合計
+pokedexHelp.searchByName.heading,Search by name,名前で検索
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",ポケモン名で検索することが出来ます。部分一致でも検索することが出来ます。誤字は検索できません。
+pokedexHelp.searchByNumber.heading,Search by number,番号で検索
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.",#001のかわりに1のような自然な番号で検索する。
+pokedexHelp.searchByType.heading,Search by type,タイプで検索
+pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,タイプで検索する方法についてのいくつかの例
+pokedexHelp.searchExamples.type.query,fire,ほのお
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).",どのすがたであっても「ほのお」を含むポケモンを検索する（例：ヒトカゲ、リザードン、ロトム）。
+pokedexHelp.searchExamples.doubleType.query,water flying,みず　ひこう
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,みず／ひこう（例：ギャラドス）またはひこう/みず（例：ウッウ）に一致するポケモンを検索する。
+pokedexHelp.searchExamples.singleType.query,grass none,くさ　なし
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",くさタイプだけをもち、2つ目のタイプを持たないポケモンを検索する。(例モンジャラ、チコリータ)
+pokedexHelp.back,Back to Pokédex,ポケモンずかんにもどる
+more.contact.heading,Contact me,運営者に連絡
+more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",こんにちは、私は<homepage>セージ・フェンネル</homepage>です。ポケモン・タイプ・けいさんきを作りました。
+more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,考えとありがとうを<email>pkmn@wavebeem.com</email>に電子メールで送ってください。
+more.settings.heading,Settings,設定
+more.settings.language.label,Language,言語
+more.settings.language.default,Auto detect language,
+more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",言語サポートは不完全です。 私に電子メールを送ってください、私はあなたに翻訳するために支払います。
+more.settings.theme.label,Theme,テーマ
+more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,「システムのデフォルト」は、オペレーティングシステムの設定に応じて自動的に変更されます。
+more.settings.theme.values.auto,System default,システムのデフォルト
+more.settings.theme.values.light,Light,ライト（光）
+more.settings.theme.values.dark,Dark,ダーク（闇）
+more.settings.typeCount.label,Number of types,タイプの数
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,「もりののろい」か「ハロウィン」を使うとき、このセッティングを使います。
+more.settings.typeCount.values.2,Two types (2),２つのタイプ
+more.settings.typeCount.values.3,Three types (3),３つのタイプ
+more.changes.heading,What’s new,
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,
+more.help.heading,Help,ヘルプ
+more.help.serviceWorker.description,This button can help fix issues in the app.,このボタンはアプリの問題をなおすのを手伝えることがあります。
+more.help.serviceWorker.button,Reset,リセット
+more.privacy.heading,Privacy,プライバシー
+more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.",広告を掲載したり、個人データを盗んだりすることは決してありません。 私は<plausible>Plausible Analytics</plausible>を使用しています。これは、自己資金で独立しており、EUでホストされており、コンピューターにcookieを保存しません。
+more.givingBack.heading,Showing appreciation,感謝の気持ちを表す
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.",私はこのサイトの改善に数えられないほどの時間を費やしています。もしサイトが気に入ったらBIPOCとトランスジェンダーの権利のためのチャリティーに寄付することを検討下さい。
+more.thanks.heading,Special thanks,助けた人々
+more.thanks.sections.da,Danish translation,デンマーク語訳
+more.thanks.sections.ru,Russian translation,ロシア語翻訳
+more.thanks.sections.kk,Kazakh translation,カザフ語翻訳
+more.thanks.sections.pt-BR,Brazilian Portuguese translation,ブラジルポルトガル語翻訳
+more.thanks.sections.zh-Hans,Simplified Chinese translation,中国語翻訳
+more.thanks.sections.ro,Romanian translation,ルーマニア語翻訳
+more.thanks.sections.pl,Polish translation,
+more.thanks.sections.fr,French translation,フランス語翻訳
+more.thanks.sections.de,German translation,ドイツ語翻訳
+more.thanks.sections.it,Italian translation,イタリア語翻訳
+more.thanks.sections.ko,Korean translation,
+more.thanks.sections.ja,Japanese translation,日本語翻訳
+more.thanks.sections.testing,Testing,テスト
+more.thanks.sections.other,Several anonymous Poké Fans,無名のポケモン・ファンたち
+more.openSource.heading,Open source,オープンソース
+more.openSource.description,Source code is available on <github>GitHub</github>.,ソースコードは<github>GitHub</github>上で有効です。
+more.legalInfo.heading,Legal info,法的情報
+types.normal,Normal,ノーマル
+types.fighting,Fighting,かくとう
+types.flying,Flying,ひこう
+types.poison,Poison,どく
+types.ground,Ground,じめん
+types.rock,Rock,いわ
+types.bug,Bug,むし
+types.ghost,Ghost,ゴースト
+types.steel,Steel,はがね
+types.fire,Fire,ほのお
+types.water,Water,みず
+types.grass,Grass,くさ
+types.electric,Electric,でんき
+types.psychic,Psychic,エスパー
+types.ice,Ice,こおり
+types.dragon,Dragon,ドラゴン
+types.dark,Dark,あく
+types.fairy,Fairy,フェアリー
+types.none,None,なし
+banners.updateReady.description,An update is available,アップデートが利用可能です
+banners.updateReady.whatsNew,What’s new,
+banners.updateReady.update,Update,更新
+general.loading,Loading…,読み込み中…
+games.label,Game generation,ゲームのジェネレーション1
+games.help,Use type effectiveness from different game generations.,さまざまなゲームジェネレーション1タイプの効果を使用します。
+games.byID.gen1,Generation 1,ジェネレーション１
+games.byID.gen2,Generation 2–5,ジェネレーション２〜５
+games.byID.default,Default (generation 6+),デフォルト（ジェネレーション６〜）

@@ -1,0 +1,178 @@
+Key,en,es
+title,Pokémon Type Calculator,Calculadora de tipos de Pokémon
+navigation.offense,Offense,Ataque
+navigation.defense,Defense,Defensa
+navigation.pokedex,Pokédex,Pokédex
+navigation.more,More,Más
+offense.chooseTypes,Choose types,Elige los tipos
+offense.dealsXTo,Deals {{ x }} to,Inflige {{ x }} a
+offense.coverage.heading,Pokédex coverage,Cobertura Pokédex
+offense.coverage.edit,Edit list,Modificar lista
+offense.coverage.weakness,Weak,Debilidad
+offense.coverage.normal,Normal,Normal
+offense.coverage.resistance,Resist,Resistencia
+offense.coverageList.empty,No Pokémon found or no types selected,No se han encontrado Pokémon o no se han seleccionado tipos
+offense.coverageList.weakness.heading,Weakness Coverage List,Lista de debilidad
+offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Estos Pokémon son débiles a al menos uno de los tipos seleccionados.
+offense.coverageList.normal.heading,Normal Effectiveness Coverage List,Lista de efectividad normal
+offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,Estos Pokémon no están en las listas de debilidades o resistencias de los tipos seleccionados.
+offense.coverageList.resistance.heading,Resistance Coverage List,Lista de resistencia
+offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,Estos Pokémon son resistentes a todos los tipos seleccionados.
+coverage.heading,Pokédex Coverage,Cobertura Pokédex
+coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importa/exporta un archivo CSV con una Pokédex personalizada para ver el rango de efectividad de distintos Pokémon. Crea un archivo CSV personalizado con solo los Pokémon de la tier OverUsed (OU), o incluso crea tus propios Pokémon desde cero."
+coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Los datos del archivo CSV se cargan por el nombre de la cabecera de la columna, no por el orden de la misma, por lo que puedes añadir o reordenar las columnas si lo deseas (ej. Añade una columna de “tier”, o una de “notas”)."
+coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","Los archivos CSV pueden ser modificados con Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, entre otros."
+coverage.csvHeaders.number,Number,Number
+coverage.csvHeaders.name,Name,Name
+coverage.csvHeaders.type1,Type 1,Type 1
+coverage.csvHeaders.type2,Type 2,Type 2
+coverage.csvHeaders.type3,Type 3,Type 3
+coverage.export.button,Export,Exportar
+coverage.export.description,Export the default Pokédex to a CSV file,Exportar un archivo CSV con la Pokédex predeterminada
+coverage.import.button,Import,Importar
+coverage.import.description,Import an edited Pokédex CSV file,Importar un archivo CSV con una Pokédex modificada
+coverage.reset.button,Reset,Restablecer
+coverage.reset.description,Reset to the default Pokédex,Restablecer a la Pokedéx predeterminada
+coverage.filename,pkmn.help type coverage.csv,pkmn.help type coverage.csv
+coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,Se importaron {{ n }} formularios de Pokémon desde “{{ file }}”
+coverage.status.exported,Exported default Pokémon forms,Se exportaron los formularios predeterminados de Pokémon
+coverage.status.reset,Loaded default Pokémon forms,Se cargaron los formularios predeterminados de Pokémon
+coverage.status.errored,Error loading CSV. Don't change header names.,Error cargando el CSV. No cambies los nombres de los encabezados.
+coverage.back,Back to offense,Volver a Ataque
+defense.chooseFirst,Choose first type,Elige el tipo primario
+defense.chooseSecond,Choose second type,Elige el tipo secundario
+defense.chooseThird,Choose third type,Elige el tipo terciario
+defense.takesXFrom,Takes {{ x }} from,Sufre {{ x }} por
+defense.chooseAbility,Choose ability,Elige Habilidad
+defense.abilityNames.none,None,Ninguna
+defense.mode.heading,Choose mode,Elige un modo
+defense.mode.solo,Solo,Solo
+defense.mode.team,Team,Equipo
+defense.team.tableHeading,Matchup counts,Recuento de enfrentamientos
+defense.team.heading,Edit Pokémon team,Modifica el equipo Pokémon
+defense.team.add,Add Pokémon,Añadir Pokémon
+defense.team.empty,No Pokémon selected,Ningún Pokémon seleccionado
+defense.team.displayType,Table format,Formato de la tabla
+defense.team.weak,Weak,Debilidad
+defense.team.resist,Resist,Resistencia
+defense.team.simple,Simple,Simple
+defense.team.complex,Complex,Complejo
+defense.team.type,Type,Tipo
+defense.team.save,Save,Guardar
+defense.team.saveLong,Save {{ name }},Guardar {{ name }}
+defense.team.edit,Edit,Modificar
+defense.team.editLong,Edit {{ name }},Modificar {{ name }}
+defense.team.remove,Remove,Eliminar
+defense.team.removeLong,Remove {{ name }},Eliminar {{ name }}
+pokedex.search.description,"Search by name, number, or types","Busca por nombre, número o tipo"
+pokedex.search.help,Help,Ayuda
+pokedex.search.helpLong,"Help, search Pokédex","Ayuda, buscar en la Pokédex"
+pokedex.search.notFound,No Pokémon found,No se encontró el Pokémon
+pokedex.offense.text,Offense,Ataque
+pokedex.defense.text,Defense,Defensa
+pokedex.shiny.label,Shiny for {{ pokemon }},{{ pokemon }} variocolor
+pokedex.shiny.text,Shiny,Variocolor
+pokedex.pagination.next,Next,Sig.
+pokedex.pagination.nextLong,Next,Siguiente
+pokedex.pagination.previous,Prev,Ant.
+pokedex.pagination.previousLong,Previous,Anterior
+pokedex.pagination.firstLong,First,Primera
+pokedex.pagination.lastLong,Last,Última
+pokedex.stats.hp,HP,PS
+pokedex.stats.hpLong,Hit Points,Puntos de Salud
+pokedex.stats.attack,Attack,Ataque
+pokedex.stats.attackLong,Attack,Ataque
+pokedex.stats.defense,Defense,Defensa
+pokedex.stats.defenseLong,Defense,Defensa
+pokedex.stats.specialAttack,Sp. Atk.,At. Esp.
+pokedex.stats.specialAttackLong,Special Attack,Ataque Especial
+pokedex.stats.specialDefense,Sp. Def.,Def. Esp.
+pokedex.stats.specialDefenseLong,Special Defense,Defensa Especial
+pokedex.stats.speed,Speed,Velocidad
+pokedex.stats.speedLong,Speed,Velocidad
+pokedex.stats.total,Total,Total
+pokedex.stats.totalLong,Total,Total
+pokedexHelp.searchByName.heading,Search by name,Busca por nombre
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puedes buscar un Pokémon por nombre. Si solo recuerdas parte del nombre del Pokémon, probablemente aún pueda encontrarlo. Sin embargo, aún no puede lidiar con errores tipográficos."
+pokedexHelp.searchByNumber.heading,Search by number,Busca por número
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Busca usando el número de la Pokédex Nacional. Si buscas a Bulbasaur, simplemente ingresa 1, no #001."
+pokedexHelp.searchByType.heading,Search by type,Busca por tipo
+pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Aquí hay algunos ejemplos de cómo buscar por tipo.
+pokedexHelp.searchExamples.type.query,fire,fuego
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Busca Pokémon que tengan fuego como alguno de sus tipos en cualquiera de sus formas (ejs. Charmander, Charizard, Rotom)."
+pokedexHelp.searchExamples.doubleType.query,water flying,agua volador
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Busca Pokémon que son agua/volador (ej. Gyarados) o volador/agua (ej. Cramorant)
+pokedexHelp.searchExamples.singleType.query,grass none,planta ninguno
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Busca Pokémon que son únicamente tipo planta, sin tipo secundario (ej. Tangela, Chikorita)."
+pokedexHelp.back,Back to Pokédex,Volver a la Pokédex
+more.contact.heading,Contact me,Contáctame
+more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hola, soy <homepage>Sage Fennel</homepage> (they/them) e hice la Calculadora de tipos de Pokémon (pkmn.help)."
+more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Por favor, envíe sus comentarios y agradecimientos por correo electrónico a <email>pkmn@wavebeem.com</email>"
+more.settings.heading,Settings,Ajustes
+more.settings.language.label,Language,Idioma
+more.settings.language.default,Auto detect language,Detección automática del idioma
+more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","El soporte de idiomas está incompleto. Por favor escríbeme por correo electrónico, te pagaré para que traduzcas."
+more.settings.theme.label,Theme,Tema
+more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“Predefinido por el sistema” cambiará automáticamente dependiendo de los ajustes de tu sistema operativo.
+more.settings.theme.values.auto,System default,Predefinido por el sistema
+more.settings.theme.values.light,Light,Claro
+more.settings.theme.values.dark,Dark,Oscuro
+more.settings.typeCount.label,Number of types,Número de tipo
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Los Pokémon pueden tener brevemente tres tipos a la vez si son golpeados con “Condena silvana” o “Halloween”. El campo del tipo terciario está oculto de manera predeterminada, ya que raramente se usa."
+more.settings.typeCount.values.2,Two types (2),Tipo secundario (2)
+more.settings.typeCount.values.3,Three types (3),Tipo terciario (3)
+more.changes.heading,What’s new,Novedades
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Consulta las novedades en el <changelog>registro de cambios</changelog>.
+more.help.heading,Help,Ayuda
+more.help.serviceWorker.description,This button can help fix issues in the app.,Este botón puede ayudar a solucionar problemas en la aplicación.
+more.help.serviceWorker.button,Reset,Restablecer
+more.privacy.heading,Privacy,Confidencialidad
+more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Nunca pondré anuncios ni robaré tus datos personales. Uso <plausible>Plausible Analytics</plausible>, que se auto financia, es independiente, se aloja en la Unión Europea (UE) y no almacena ninguna cookie en tu computadora."
+more.givingBack.heading,Showing appreciation,Retribuciones
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.","He dedicado innumerables horas a mejorar este sitio. Si aprecias lo que he hecho, por favor considera realizar una donación a organizaciones benéficas que apoyen los derechos de las comunidades BIPOC y transgéneros."
+more.thanks.heading,Special thanks,Agradecimientos especiales
+more.thanks.sections.da,Danish translation,Traducción al Danés
+more.thanks.sections.ru,Russian translation,Traducción al Ruso
+more.thanks.sections.kk,Kazakh translation,Traducción al Kazajo
+more.thanks.sections.pt-BR,Brazilian Portuguese translation,Traducción al Portugués Brasilero
+more.thanks.sections.zh-Hans,Simplified Chinese translation,Traducción al Chino
+more.thanks.sections.ro,Romanian translation,Traducción al Rumano
+more.thanks.sections.pl,Polish translation,Traducción al Polaco
+more.thanks.sections.fr,French translation,Traducción al Francés
+more.thanks.sections.de,German translation,Traducción al Alemán
+more.thanks.sections.it,Italian translation,Traducción al Italiano
+more.thanks.sections.ko,Korean translation,Traducción al Coreano
+more.thanks.sections.ja,Japanese translation,Traducción al Japonés
+more.thanks.sections.testing,Testing,Pruebas
+more.thanks.sections.other,Several anonymous Poké Fans,Varios Poké Fans anónimos
+more.openSource.heading,Open source,Código Abierto
+more.openSource.description,Source code is available on <github>GitHub</github>.,El código fuente está disponible en <github>GitHub</github>.
+more.legalInfo.heading,Legal info,Información legal
+types.normal,Normal,Normal
+types.fighting,Fighting,Lucha
+types.flying,Flying,Volador
+types.poison,Poison,Veneno
+types.ground,Ground,Tierra
+types.rock,Rock,Roca
+types.bug,Bug,Bicho
+types.ghost,Ghost,Fantasma
+types.steel,Steel,Acero
+types.fire,Fire,Fuego
+types.water,Water,Agua
+types.grass,Grass,Planta
+types.electric,Electric,Eléctrico
+types.psychic,Psychic,Psíquico
+types.ice,Ice,Hielo
+types.dragon,Dragon,Dragón
+types.dark,Dark,Siniestro
+types.fairy,Fairy,Hada
+types.none,None,Ninguno
+banners.updateReady.description,An update is available,Está disponible una actualización
+banners.updateReady.whatsNew,What’s new,Novedades
+banners.updateReady.update,Update,Actualizar
+general.loading,Loading…,Cargando...
+games.label,Game generation,Generación del juego
+games.help,Use type effectiveness from different game generations.,Usa la efectividad de tipo de diferentes generaciones.
+games.byID.gen1,Generation 1,Generación 1
+games.byID.gen2,Generation 2–5,Generación 2-5
+games.byID.default,Default (generation 6+),Predeterminada (Generación 6+)

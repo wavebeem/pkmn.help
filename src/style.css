@@ -69,6 +69,10 @@
   }
 }
 
+[id] {
+  scroll-margin-top: 1rem;
+}
+
 .bg3 {
   background-color: var(--color-bg3);
 }

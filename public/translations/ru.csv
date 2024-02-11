@@ -1,0 +1,178 @@
+Key,en,ru
+title,Pokémon Type Calculator,Калькулятор Типов Покемонов
+navigation.offense,Offense,Нападение
+navigation.defense,Defense,Оборона
+navigation.pokedex,Pokédex,Покедекс
+navigation.more,More,Больше
+offense.chooseTypes,Choose types,Выберите Типы
+offense.dealsXTo,Deals {{ x }} to,Наносит {{ x }}
+offense.coverage.heading,Pokédex coverage,
+offense.coverage.edit,Edit list,
+offense.coverage.weakness,Weak,
+offense.coverage.normal,Normal,
+offense.coverage.resistance,Resist,
+offense.coverageList.empty,No Pokémon found or no types selected,
+offense.coverageList.weakness.heading,Weakness Coverage List,
+offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,
+offense.coverageList.normal.heading,Normal Effectiveness Coverage List,
+offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,
+offense.coverageList.resistance.heading,Resistance Coverage List,
+offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,
+coverage.heading,Pokédex Coverage,Охват Слабостей
+coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Импортируйте/экспортируйте пользовательские CSV файлы Покедекса чтобы посмотреть охват слабостей для разных Покемонов. Создайте пользовательский CSV файл только с одним Покемоном уровня OU, или даже создайте своего Покемона с нуля."
+coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Данные CSV загружаются по имени заголовка столбца, а не по порядку столбцов, поэтому вы можете добавлять или изменять порядок столбцов если хотите (например, добавить столбец «уровень» или столбец «примечания»)."
+coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","Файлы CVS могут быть редактированы с помощью Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad и других программ."
+coverage.csvHeaders.number,Number,Номер
+coverage.csvHeaders.name,Name,Имя
+coverage.csvHeaders.type1,Type 1,Тип 1
+coverage.csvHeaders.type2,Type 2,Тип 2
+coverage.csvHeaders.type3,Type 3,Тип 3
+coverage.export.button,Export,Экспортировать
+coverage.export.description,Export the default Pokédex to a CSV file,Экспортировать Покедекс по умолчанию к CSV файлу.
+coverage.import.button,Import,Импортировать
+coverage.import.description,Import an edited Pokédex CSV file,Импортировать редактированный CSV файл Покедекса
+coverage.reset.button,Reset,Сбросить
+coverage.reset.description,Reset to the default Pokédex,Сбросить до Покедекса по умолчанию
+coverage.filename,pkmn.help type coverage.csv,pkmn.help охват типов.csv
+coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,Импортировано {{ n }} форм Покемонов из “{{ file }}”
+coverage.status.exported,Exported default Pokémon forms,Экспортированы формы Покемонов по умолчанию
+coverage.status.reset,Loaded default Pokémon forms,Загружены формы Покемонов по умолчанию
+coverage.status.errored,Error loading CSV. Don't change header names.,Ошибка загрузки CSV. Не изменяйте имени заголовок.
+coverage.back,Back to offense,Назад к Нападению
+defense.chooseFirst,Choose first type,Выберите Первый Тип
+defense.chooseSecond,Choose second type,Выберите Второй Тип
+defense.chooseThird,Choose third type,Выберите Третий Тип
+defense.takesXFrom,Takes {{ x }} from,Принимает {{ x }} от
+defense.chooseAbility,Choose ability,
+defense.abilityNames.none,None,
+defense.mode.heading,Choose mode,
+defense.mode.solo,Solo,
+defense.mode.team,Team,
+defense.team.tableHeading,Matchup counts,
+defense.team.heading,Edit Pokémon team,
+defense.team.add,Add Pokémon,
+defense.team.empty,No Pokémon selected,
+defense.team.displayType,Table format,
+defense.team.weak,Weak,
+defense.team.resist,Resist,
+defense.team.simple,Simple,
+defense.team.complex,Complex,
+defense.team.type,Type,
+defense.team.save,Save,
+defense.team.saveLong,Save {{ name }},
+defense.team.edit,Edit,
+defense.team.editLong,Edit {{ name }},
+defense.team.remove,Remove,
+defense.team.removeLong,Remove {{ name }},
+pokedex.search.description,"Search by name, number, or types","Искать по имени, номеру, или типам"
+pokedex.search.help,Help,Помощь
+pokedex.search.helpLong,"Help, search Pokédex","Помощь, искать Покедекс"
+pokedex.search.notFound,No Pokémon found,Нет найденных Покемонов
+pokedex.offense.text,Offense,Нападение
+pokedex.defense.text,Defense,Оборона
+pokedex.shiny.label,Shiny for {{ pokemon }},
+pokedex.shiny.text,Shiny,
+pokedex.pagination.next,Next,След
+pokedex.pagination.nextLong,Next,Следующий
+pokedex.pagination.previous,Prev,Пред
+pokedex.pagination.previousLong,Previous,Предыдущий
+pokedex.pagination.firstLong,First,Первый
+pokedex.pagination.lastLong,Last,Последний
+pokedex.stats.hp,HP,ХП
+pokedex.stats.hpLong,Hit Points,Хит Пойнты
+pokedex.stats.attack,Attack,Атака
+pokedex.stats.attackLong,Attack,Атака
+pokedex.stats.defense,Defense,Оборона
+pokedex.stats.defenseLong,Defense,Оборона
+pokedex.stats.specialAttack,Sp. Atk.,Сп. Атк.
+pokedex.stats.specialAttackLong,Special Attack,Специальная Атака
+pokedex.stats.specialDefense,Sp. Def.,Сп. Обр.
+pokedex.stats.specialDefenseLong,Special Defense,Специальная Оборона
+pokedex.stats.speed,Speed,Скорость
+pokedex.stats.speedLong,Speed,Скорость
+pokedex.stats.total,Total,Общее
+pokedex.stats.totalLong,Total,Общее
+pokedexHelp.searchByName.heading,Search by name,Искать по имени
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Вы можете искать Покемона по имени. Если вы помните только часть имени Покемона, он всё ещё может вам найти это для вас. Но пока поиск с опечатками невозможны."
+pokedexHelp.searchByNumber.heading,Search by number,Искать по номеру
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Искать по номеру Национального Декса. Если вы хотите найти Бульбазавра, то просто наберите 1, не #001."
+pokedexHelp.searchByType.heading,Search by type,Искать по типу
+pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Вот некоторые примеры по поиску по типу.
+pokedexHelp.searchExamples.type.query,fire,огненный
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Поиск Покемонов с огненным типом как один из их типов в любой форме (например, Чармандер, Чаризард, Ротом)."
+pokedexHelp.searchExamples.doubleType.query,water flying,Водяной Летающий
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,"Поиск Покемонов, у которых тип Водяной Летающий (например, Гиярадос) или Летающий Водяной (например, Краморант)."
+pokedexHelp.searchExamples.singleType.query,grass none,Травяной ничего
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Поиск Покемонов только с травяным типом (например, Танджелла, Чикорита, Лилигант)."
+pokedexHelp.back,Back to Pokédex,Назад к Покедексу
+more.contact.heading,Contact me,Свяжитесь Со Мной
+more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Привет, Я <homepage>Брайан</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (pkmn.help)."
+more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Пожалуйста, пишите свои мысли и благодарности по Имейл адресу   <email>pkmn@wavebeem.com</email>."
+more.settings.heading,Settings,Настройки
+more.settings.language.label,Language,Язык
+more.settings.language.default,Auto detect language,Автоопределенный язык
+more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Языковая поддержка пока не закончена. Пожалуйста пишите мне, я заплачу вам за перевод."
+more.settings.theme.label,Theme,Тема
+more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Системная по умолчанию"" изменится автоматически смотря на ваши настройки оперативной системы."
+more.settings.theme.values.auto,System default,Системная по умолчанию
+more.settings.theme.values.light,Light,Светлая
+more.settings.theme.values.dark,Dark,Тёмная
+more.settings.typeCount.label,Number of types,Число типов
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Покемоны реально могут иметь три типа за раз если по ним были использованы атаки Forests's Curse или Trick-or-Treat. Поле третьего типа скрыто по умолчанию, так как им пользуются редко."
+more.settings.typeCount.values.2,Two types (2),Два типа(2)
+more.settings.typeCount.values.3,Three types (3),Три типа(3)
+more.changes.heading,What’s new,
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,
+more.help.heading,Help,Помощь
+more.help.serviceWorker.description,This button can help fix issues in the app.,Эта кнопка поможет исправить ошибки в программе.
+more.help.serviceWorker.button,Reset,Перезагрузить
+more.privacy.heading,Privacy,Конфиденциальность
+more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Я никогда не буду ничего рекламировать или красть ваши личные данные. Я использую <plausible>Plausible Analytics</plausible>, что является самофинансируемым, независимым, размещенным в ЕС сайтом, который не сохраняет куки на вашем компьютере."
+more.givingBack.heading,Showing appreciation,Выражение Признательности
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.","Я потратил бесчисленное количество часов совершенствуя этот сайт. Если вы цените то, что я сделал, то пожалуйста, рассмотрите возможность пожертвования благотворительным учреждениям, которые поддерживают BIPOC и права трансгендеров."
+more.thanks.heading,Special thanks,Особая Благодарность
+more.thanks.sections.da,Danish translation,Датский перевод
+more.thanks.sections.ru,Russian translation,Русский перевод
+more.thanks.sections.kk,Kazakh translation,Казахский перевод
+more.thanks.sections.pt-BR,Brazilian Portuguese translation,Бразильский перевод
+more.thanks.sections.zh-Hans,Simplified Chinese translation,Китайский перевод
+more.thanks.sections.ro,Romanian translation,Румынский перевод
+more.thanks.sections.pl,Polish translation,
+more.thanks.sections.fr,French translation,Французский перевод
+more.thanks.sections.de,German translation,Немецкий перевод
+more.thanks.sections.it,Italian translation,Итальянский перевод
+more.thanks.sections.ko,Korean translation,
+more.thanks.sections.ja,Japanese translation,Японский перевод
+more.thanks.sections.testing,Testing,Тестирование
+more.thanks.sections.other,Several anonymous Poké Fans,Несколько анонимных Поке Фанов
+more.openSource.heading,Open source,Открытый Источник
+more.openSource.description,Source code is available on <github>GitHub</github>.,Исходный код доступен на <github>GitHub</github>.
+more.legalInfo.heading,Legal info,Легальная Информация
+types.normal,Normal,Нормаль
+types.fighting,Fighting,Боевой
+types.flying,Flying,Летающий
+types.poison,Poison,Ядовитый
+types.ground,Ground,Земляной
+types.rock,Rock,Каменный
+types.bug,Bug,Жучиный
+types.ghost,Ghost,Призрак
+types.steel,Steel,Стальной
+types.fire,Fire,Огненный
+types.water,Water,Водяной
+types.grass,Grass,Травяной
+types.electric,Electric,Электро
+types.psychic,Psychic,Психо
+types.ice,Ice,Ледяной
+types.dragon,Dragon,Драконий
+types.dark,Dark,Тёмный
+types.fairy,Fairy,Сказочный
+types.none,None,Никакой
+banners.updateReady.description,An update is available,Доступно обновление
+banners.updateReady.whatsNew,What’s new,
+banners.updateReady.update,Update,Обновить
+general.loading,Loading…,Загрузка...
+games.label,Game generation,Поколение Игры
+games.help,Use type effectiveness from different game generations.,Используйте эффективности типов из разных поколений игр.
+games.byID.gen1,Generation 1,Поколение 1.
+games.byID.gen2,Generation 2–5,Поколение 2-5
+games.byID.default,Default (generation 6+),По умолчанию(Поколение 6+)

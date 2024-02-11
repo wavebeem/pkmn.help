@@ -4,7 +4,7 @@ set -eu
 # Small jq wrapper script to remove fields from translation files that are no
 # longer needed...
 
-for file in public/locales/*-translation.json; do
+for file in public/locales/*.json; do
   echo "Processing $file"
   jq '
     del(

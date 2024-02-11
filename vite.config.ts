@@ -1,3 +1,4 @@
+import Papa from "papaparse";
 import purgecss from "@fullhuman/postcss-purgecss";
 import react from "@vitejs/plugin-react";
 import { defineConfig, UserConfigExport } from "vite";
@@ -17,7 +18,7 @@ function getTranslationFilenames(): string[] {
 }
 
 function getLanguageFromFilename(filename: string): string {
-  return path.basename(filename, "-translation.json");
+  return path.basename(filename, ".json");
 }
 
 function* dottedPaths(data: any): Generator<string> {
@@ -71,16 +72,35 @@ const officialOnlyKeys = new Set([
   "defense.abilityNames.volt_absorb",
 ]);
 
+const allLanguages = new Set([
+  "en",
+  "es",
+  "pt-BR",
+  "da",
+  "de",
+  "it",
+  "fr",
+  "pl",
+  "ru",
+  "kk",
+  "ro",
+  "ja",
+  "ja-Hrkt",
+  "zh-Hans",
+  "zh-Hant",
+  "ko",
+]);
+
 const officialLanguages = new Set([
   "en",
-  "ja",
-  "fr",
   "es",
   "de",
   "it",
-  "ko",
+  "fr",
+  "ja",
   "zh-Hans",
   "zh-Hant",
+  "ko",
 ]);
 
 const trans: Record<string, any> = {};
@@ -101,6 +121,57 @@ for (const lang of langs) {
     completions[lang] =
       pathSets[lang].size / (pathSets.en.size - officialOnlyKeys.size);
   }
+}
+
+function* walk({
+  english,
+  other,
+  ancestors = [],
+}: {
+  english: Record<string, unknown>;
+  other: Record<string, unknown>;
+  ancestors?: string[];
+}): Generator<string[]> {
+  if (!(typeof english === "object" && english)) {
+    return;
+  }
+  for (const key of Object.keys(english)) {
+    const englishValue = english?.[key] ?? "";
+    const otherValue = other?.[key] ?? "";
+    if (typeof englishValue === "string") {
+      yield [
+        [...ancestors, key].join("."),
+        englishValue,
+        typeof otherValue === "string" ? otherValue : "",
+      ];
+    } else {
+      yield* walk({
+        english: englishValue as any,
+        other: otherValue as any,
+        ancestors: [...ancestors, key],
+      });
+    }
+  }
+}
+
+function saveMissingTranslationsFor(lang: string) {
+  const english = trans.en;
+  const other = trans[lang];
+  const data = walk({ english, other });
+  const headers = ["Key", "en", lang];
+  const csvData = [headers, ...data].filter(([key, en, other]) => {
+    if (officialOnlyKeys.has(key)) {
+      return false;
+    }
+    return true;
+  });
+  const csv = Papa.unparse(csvData, { header: true });
+  const filename = path.resolve(__dirname, `./public/translations/${lang}.csv`);
+  fs.writeFileSync(filename, csv, "utf-8");
+}
+
+for (const lang of allLanguages) {
+  saveMissingTranslationsFor(lang);
 }
 
 // https://vitejs.dev/config/

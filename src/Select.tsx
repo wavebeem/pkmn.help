@@ -5,7 +5,7 @@ import styles from "./Select.module.css";
 interface SelectProps
   extends Omit<React.SelectHTMLAttributes<HTMLSelectElement>, "className"> {
   label: string;
-  helpText?: string;
+  helpText?: React.ReactNode;
 }
 
 export function Select({

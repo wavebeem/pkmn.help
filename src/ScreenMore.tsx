@@ -168,7 +168,29 @@ export function ScreenMore({
         <Select
           label={t("more.settings.language.label")}
           value={language}
-          helpText="Please help me translate this site. Read the next section to help."
+          helpText={
+            <>
+              <span aria-hidden="true">🌎</span> Please{" "}
+              <a
+                className="br1 underline fg-link focus-outline"
+                href="#translate"
+                onClick={(event) => {
+                  const element = event.target as HTMLAnchorElement;
+                  const href = element.getAttribute("href") || "";
+                  const section = document
+                    .querySelector(href)
+                    ?.closest("details");
+                  if (!section) {
+                    throw new Error("couldn't find " + href);
+                  }
+                  section.open = true;
+                }}
+              >
+                help me translate
+              </a>{" "}
+              this site. Payment offered for quality translations.
+            </>
+          }
           onChange={(event) => {
             setLanguage(event.target.value);
             i18n.changeLanguage(language);
@@ -244,46 +266,95 @@ export function ScreenMore({
 
       <CollapsibleSection
         heading={
-          <h2 className="lh-title f4 dib">
-            Help me translate this site <span aria-hidden="true">🌎</span>
+          <h2 className="lh-title f4 dib" id="translate">
+            <span aria-hidden="true">🌎</span> Help me translate
           </h2>
         }
       >
         <p>
-          Please help me translate Pokémon Type Calculator. Email me (
+          Download a translation file below to get started. You can edit CSV
+          files with{" "}
+          <a
+            className="br1 underline fg-link focus-outline"
+            href="https://docs.google.com/"
+          >
+            Google Docs
+          </a>
+          ,{" "}
+          <a
+            className="br1 underline fg-link focus-outline"
+            href="https://www.moderncsv.com/"
+          >
+            Modern CSV
+          </a>
+          ,{" "}
+          <a
+            className="br1 underline fg-link focus-outline"
+            href="https://www.editcsvonline.com/"
+          >
+            editCSVonline
+          </a>
+          , or many other apps.
+        </p>
+        <p>
+          Send me (
           <a
             className="br1 underline fg-link focus-outline"
             href="mailto:pkmn@wavebeem.com"
           >
             pkmn@wavebeem.com
           </a>
-          ) and I will send you a Google Sheet to translate. I'm willing to pay
-          for native translations.
+          ) the translated file via email when you're done. I'm willing to pay
+          for native translations. If you have questions, feel free to ask. I
+          can also set up a Google Sheet for you if you don't feel comfortable
+          downloading and editing a CSV file.
         </p>
-
         <p>
           This table shows translation progress for every supported language.
         </p>
-
         <div className="ba border2 mb3 br2 bg1 pa2 button-shadow">
           <table className="collapse w-100">
             <thead>
               <tr>
                 <th className="ph2 pv1 bb border3 tr w0">Completion</th>
+                <th className="ph2 pv1 bb border3 tl w0">File</th>
                 <th className="ph2 pv1 bb border3 tl">Language</th>
               </tr>
             </thead>
             <tbody>
-              {supportedLanguages.map((lang) => {
-                return (
-                  <tr key={lang}>
-                    <td className="tabular-nums tr ph2 pv1 bt border3">
-                      {formatLanguageCompletion(lang)}
-                    </td>
-                    <td className="ph2 pv1 tl bt border3">{showLang(lang)}</td>
-                  </tr>
-                );
-              })}
+              {supportedLanguages
+                .slice(0)
+                .sort((a, b) => {
+                  const na = languageCompletions[a] || 0;
+                  const nb = languageCompletions[b] || 0;
+                  if (na === nb) {
+                    if (a < b) return -1;
+                    if (a > b) return 1;
+                    return 0;
+                  }
+                  return nb - na;
+                })
+                .map((lang) => {
+                  return (
+                    <tr key={lang}>
+                      <td className="tabular-nums tr ph2 pv1 bt border3">
+                        {formatLanguageCompletion(lang)}
+                      </td>
+                      <td className="ph2 pv1 tl bt border3">
+                        <a
+                          href={`/translations/${lang}.csv`}
+                          download={`pkmn.help - translation - ${lang}.csv`}
+                          className="underline fg-link nowrap OutlineFocus"
+                        >
+                          {lang}.csv
+                        </a>
+                      </td>
+                      <td className="ph2 pv1 tl bt border3">
+                        {showLang(lang)}
+                      </td>
+                    </tr>
+                  );
+                })}
             </tbody>
           </table>
         </div>

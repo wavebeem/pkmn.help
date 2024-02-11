@@ -41,7 +41,9 @@ async function main() {
       set(translation, key.split("."), other.trim());
     }
   }
-  saveJSON(`../public/locales/${lang}-translation.json`, translation);
+  saveJSON(`../public/locales/${lang}.json`, translation, {
+    indent: 2,
+  });
 }
 
 main().catch((err) => {
