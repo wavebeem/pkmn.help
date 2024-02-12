@@ -1,0 +1,290 @@
+{
+  "title": "Pokémon Type Rekenmachine",
+  "navigation": {
+    "offense": "Offensief",
+    "defense": "Defensief",
+    "pokedex": "Pokédex",
+    "more": "Meer"
+  },
+  "offense": {
+    "chooseTypes": "Kies Types",
+    "dealsXTo": "Deelt {{ x }} schade aan",
+    "coverage": {
+      "heading": "Pokédex overschaduwing",
+      "edit": "Bewerk lijst",
+      "weakness": "Zwak",
+      "normal": "Normaal",
+      "resistance": "Weerstand"
+    },
+    "coverageList": {
+      "empty": "Geen Pokémon gevonden of geen types geselecteerd",
+      "weakness": {
+        "heading": "Zwakte Overschaduwingslijst",
+        "description": "Deze Pokémon zijn zwak tegen ten minste één van de geselecteerde types."
+      },
+      "normal": {
+        "heading": "Normale Overschaduwingslijst",
+        "description": "Deze Pokémon zijn niet in de zwakheid- of weerstandlijsten voor de geselecteerde types."
+      },
+      "resistance": {
+        "heading": "Weerstandige Overschaduwingslijst",
+        "description": "Deze Pokémon hebben een weerstand tegen alle geselecteerde types."
+      }
+    }
+  },
+  "coverage": {
+    "heading": "Pokedexoverschaduwing",
+    "paragraph1": "Importeer/exporteer aangepaste Pokédex CSV-bestanden om overschaduwing te zien voor verschillende Pokémon. Maak een aangepast CSV-bestand met alleen de OU-niveau Pokémon, of maak je eigen Pokémon vanaf het begin.",
+    "paragraph2": "CSV data wordt geladen op kolomnaam, niet kolomvolgorde, je kan dus kolommen toevogen en verplaatsen als je dat wilt. (bijv. voeg een “niveau” kolom of een “notities” kolom toe).",
+    "paragraph3": "CSV-bestanden kunnen worden bewerkt met Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, en meer.",
+    "csvHeaders": {
+      "number": "Nummer",
+      "name": "Naam",
+      "type1": "Type 1",
+      "type2": "Type 2",
+      "type3": "Type 3"
+    },
+    "export": {
+      "button": "Exporteren",
+      "description": "Exporteer de normale Pokédex naar een CSV-bestand."
+    },
+    "import": {
+      "button": "Importeren",
+      "description": "Importeer een bewerkt Pokédex CSV-Bestand."
+    },
+    "reset": {
+      "button": "Reset",
+      "description": "Reset naar de normale Pokédex"
+    },
+    "filename": "pkmn.help type overschaduwing.csv",
+    "status": {
+      "imported": "{{ n }} Pokémon vormen geïmporteerd vanaf “{{ file }}”",
+      "exported": "Geëxporteerde standaard Pokémonvormen",
+      "reset": "Geladen standaard Pokémonvormen",
+      "errored": "Error met het laden van CSV. Verander kopnamen niet."
+    },
+    "back": "Terug naar offensief"
+  },
+  "defense": {
+    "chooseFirst": "Kies eerste type",
+    "chooseSecond": "Kies tweede type",
+    "chooseThird": "Kies derde type",
+    "takesXFrom": "Krijgt {{ x }} van",
+    "chooseAbility": "Kies vaardigheid",
+    "abilityNames": {
+      "none": "Geen"
+    },
+    "mode": {
+      "heading": "Kies modus",
+      "solo": "Solo",
+      "team": "Team"
+    },
+    "team": {
+      "tableHeading": "Wedstrijdtelling",
+      "heading": "Bewerk Pokémon team",
+      "add": "Voeg Pokémon toe",
+      "empty": "Geen Pokémon geselecteerd",
+      "displayType": "Tabelformaat",
+      "weak": "Zwak",
+      "resist": "Weerstand",
+      "simple": "Simpel",
+      "complex": "Complex",
+      "type": "Type",
+      "save": "Opslaan",
+      "saveLong": "Opslaan {{ name }}",
+      "edit": "Bewerk",
+      "editLong": "Bewerk {{ name }}",
+      "remove": "Verwijder",
+      "removeLong": "Verwijder {{ name }}"
+    }
+  },
+  "pokedex": {
+    "search": {
+      "description": "Zoek op naam, nummer of types",
+      "help": "Hulp",
+      "helpLong": "Hulp, doorzoek Pokédex",
+      "notFound": "Geen Pokémon gevonden"
+    },
+    "offense": {
+      "text": "Offensief"
+    },
+    "defense": {
+      "text": "Defensief"
+    },
+    "shiny": {
+      "label": "Shiny voor {{ pokemon }}",
+      "text": "Shiny"
+    },
+    "pagination": {
+      "next": "Volgende",
+      "nextLong": "Volgende",
+      "previous": "Vorige",
+      "previousLong": "Vorige",
+      "firstLong": "Eerste",
+      "lastLong": "Laatste"
+    },
+    "stats": {
+      "hp": "GP",
+      "hpLong": "Gezondheidspunten",
+      "attack": "Aanval",
+      "attackLong": "Aanval",
+      "defense": "Verdediging",
+      "defenseLong": "Verdediging",
+      "specialAttack": "Sp. Aanval",
+      "specialAttackLong": "Speciale Aanval",
+      "specialDefense": "Sp. Verdediging",
+      "specialDefenseLong": "Speciale Verdediging",
+      "speed": "Snelheid",
+      "speedLong": "Snelheid",
+      "total": "Totaal",
+      "totalLong": "Totaal"
+    }
+  },
+  "pokedexHelp": {
+    "searchByName": {
+      "heading": "Zoeken op naam",
+      "description": "Je kan zoeken op een Pokémon bij naam. Als je alleen een gedeelte herinnert van de Pokémonnaam, kan hij het waarschijnlijk nog steeds vinden voor je. Hij kan alleen nog niet goed omgaan met typfouten."
+    },
+    "searchByNumber": {
+      "heading": "Zoeken op nummer",
+      "description": "Zoek op nationaal dex nummer. Als je Bulbasaur wilt, typ gewoon 1, niet #001"
+    },
+    "searchByType": {
+      "heading": "Zoeken op type",
+      "description": "Hier zijn een paar voorbeelden van hoe je zoekt op type."
+    },
+    "searchExamples": {
+      "type": {
+        "query": "vuur",
+        "description": "Zoekt op Pokémon die vuur als ten minste één van de types hebben in ten minste één van zijn vorm (bijv. Charmander, Charizard of Rotom)."
+      },
+      "doubleType": {
+        "query": "water vliegend",
+        "description": "Zoekt op Pokémon die òf water/vliegend (zoals Gyarados) of vliegend/water (zoals Cramorant) zijn."
+      },
+      "singleType": {
+        "query": "gras geen",
+        "description": "Zoekt op Pokémon die alleen gras type zijn, geen 2e type (bijv. Tangela, Chikorita, Lilligant)."
+      }
+    },
+    "back": "Terug naar Pokédex"
+  },
+  "more": {
+    "contact": {
+      "heading": "Neem contact met mij op",
+      "intro": "Hoi, ik ben <homepage>Sage Fennel</homepage> (die), en ik heb de Pokémon Type Rekenmachine gemaakt (pkmn.help).",
+      "email": "E-mail alsjeblieft je gedachtes en bedankjes naar <email>pkmn@wavebeem.com</email>."
+    },
+    "settings": {
+      "heading": "Instellingen",
+      "language": {
+        "label": "Taal",
+        "default": "Automatisch taal detecteren",
+        "helpText": "Taalondersteuning is nog niet compleet. E-mail mij alsjeblieft, ik zal je betalen om te vertalen."
+      },
+      "theme": {
+        "label": "Thema",
+        "help": "“Systeemstandaard” zal automatisch veranderen naar je systeeminstellingen.",
+        "values": {
+          "auto": "Systeemstandaard",
+          "light": "Licht",
+          "dark": "Donker"
+        }
+      },
+      "typeCount": {
+        "label": "Aantal types",
+        "help": "Pokémon kunnen tijdelijk drie types tegelijkertijd hebben als ze zijn geraakt met Bosvloek of Trick-or-Treat. Het derde typeveld is standaard verstopt aangezien hij zeldzaam wordt gebruikt.",
+        "values": {
+          "2": "Twee types (2)",
+          "3": "Drie types (3)"
+        }
+      }
+    },
+    "changes": {
+      "heading": "Wat is nieuw",
+      "description": "Kijk wat er nieuw is in de <changelog>changelog</changelog>"
+    },
+    "help": {
+      "heading": "Hulp",
+      "serviceWorker": {
+        "description": "Deze knop kan helpen om problemen in de app op te lossen.",
+        "button": "Reset"
+      }
+    },
+    "privacy": {
+      "heading": "Privacy",
+      "description": "Ik zal nooit advertenties laten zien of je persoonlijke data gebruiken. Ik gebruik <plausible>Plausible Analytics</plausible>, dat zelf-gefinancieerd is, onafhankelijk, gehost in Europa, en slaat geen cookies op in je computer."
+    },
+    "givingBack": {
+      "heading": "Waardering",
+      "description": "Er zitten ontelbaar veel uren in het verbeteren van deze website. Als je waardeert wat ik heb gemaakt, alsjeblieft overweeg iets te doneren aan liefdadigheden die BIPOC en transgenderrechten ondersteunen."
+    },
+    "thanks": {
+      "heading": "Speciale dank",
+      "sections": {
+        "da": "Deense vertaling",
+        "ru": "Russische vertaling",
+        "kk": "Kazachse vertaling",
+        "pt-BR": "Brazilisch Portugese vertaling",
+        "zh-Hans": "Versimpeld Chinese vertaling",
+        "ro": "Romeense vertaling",
+        "pl": "Poolse vertaling",
+        "fr": "Franse vertaling",
+        "de": "Duitse vertaling",
+        "it": "Italiaanse vertaling",
+        "ko": "Koreaanse vertaling",
+        "ja": "Japanse vertaling",
+        "nl": "Nederlandse vertaling",
+        "testing": "Testen",
+        "other": "Wat anonieme Poké Fans"
+      }
+    },
+    "openSource": {
+      "heading": "Open source",
+      "description": "Broncode is verkrijgbaar op <github>GitHub</github>"
+    },
+    "legalInfo": {
+      "heading": "Legale info"
+    }
+  },
+  "types": {
+    "normal": "Normaal",
+    "fighting": "Vechtend",
+    "flying": "Vliegend",
+    "poison": "Gif",
+    "ground": "Grond",
+    "rock": "Rots",
+    "bug": "Insect",
+    "ghost": "Geest",
+    "steel": "Staal",
+    "fire": "Vuur",
+    "water": "Water",
+    "grass": "Gras",
+    "electric": "Elektrisch",
+    "psychic": "Psychisch",
+    "ice": "IJs",
+    "dragon": "Draak",
+    "dark": "Duister",
+    "fairy": "Fee",
+    "none": "Geen"
+  },
+  "banners": {
+    "updateReady": {
+      "description": "Een update is verkrijgbaar",
+      "whatsNew": "Wat is nieuw",
+      "update": "Update"
+    }
+  },
+  "general": {
+    "loading": "Laden..."
+  },
+  "games": {
+    "label": "Game generatie",
+    "help": "Gebruik type effectiefheid van verschillende game generaties.",
+    "byID": {
+      "gen1": "Generatie 1",
+      "gen2": "Generatie 2-5",
+      "default": "Standaard (generatie 6+)"
+    }
+  }
+}

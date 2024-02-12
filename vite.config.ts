@@ -82,6 +82,7 @@ const allLanguages = new Set([
   "fr",
   "pl",
   "ru",
+  "nl",
   "kk",
   "ro",
   "ja",
@@ -113,8 +114,25 @@ for (const name of names) {
   trans[lang] = json;
   pathSets[lang] = new Set(dottedPaths(json));
 }
-const completions: Record<string, number> = {};
 for (const lang of langs) {
+  if (lang === "en") {
+    continue;
+  }
+  for (const transPath of pathSets[lang]) {
+    if (!pathSets.en.has(transPath)) {
+      // eslint-disable-next-line no-console
+      console.error(`${lang} has unused translation: ${transPath}`);
+    }
+  }
+}
+const completions: Record<string, number> = {};
+// eslint-disable-next-line no-console
+console.info("Translations");
+// eslint-disable-next-line no-console
+console.info("------------");
+for (const lang of langs) {
+  // eslint-disable-next-line no-console
+  console.info(`${pathSets[lang].size} | ${lang}`);
   if (officialLanguages.has(lang)) {
     completions[lang] = pathSets[lang].size / pathSets.en.size;
   } else {
@@ -159,7 +177,7 @@ function saveMissingTranslationsFor(lang: string) {
   const other = trans[lang];
   const data = walk({ english, other });
   const headers = ["Key", "en", lang];
-  const csvData = [headers, ...data].filter(([key, en, other]) => {
+  const csvData = [headers, ...data].filter(([key]) => {
     if (officialOnlyKeys.has(key)) {
       return false;
     }

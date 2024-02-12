@@ -1,0 +1,179 @@
+Key,en,nl
+title,Pokémon Type Calculator,Pokémon Type Rekenmachine
+navigation.offense,Offense,Offensief
+navigation.defense,Defense,Defensief
+navigation.pokedex,Pokédex,Pokédex
+navigation.more,More,Meer
+offense.chooseTypes,Choose types,Kies Types
+offense.dealsXTo,Deals {{ x }} to,Deelt {{ x }} schade aan
+offense.coverage.heading,Pokédex coverage,Pokédex overschaduwing
+offense.coverage.edit,Edit list,Bewerk lijst
+offense.coverage.weakness,Weak,Zwak
+offense.coverage.normal,Normal,Normaal
+offense.coverage.resistance,Resist,Weerstand
+offense.coverageList.empty,No Pokémon found or no types selected,Geen Pokémon gevonden of geen types geselecteerd
+offense.coverageList.weakness.heading,Weakness Coverage List,Zwakte Overschaduwingslijst
+offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Deze Pokémon zijn zwak tegen ten minste één van de geselecteerde types.
+offense.coverageList.normal.heading,Normal Effectiveness Coverage List,Normale Overschaduwingslijst
+offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,Deze Pokémon zijn niet in de zwakheid- of weerstandlijsten voor de geselecteerde types.
+offense.coverageList.resistance.heading,Resistance Coverage List,Weerstandige Overschaduwingslijst
+offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,Deze Pokémon hebben een weerstand tegen alle geselecteerde types.
+coverage.heading,Pokédex Coverage,Pokedexoverschaduwing
+coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importeer/exporteer aangepaste Pokédex CSV-bestanden om overschaduwing te zien voor verschillende Pokémon. Maak een aangepast CSV-bestand met alleen de OU-niveau Pokémon, of maak je eigen Pokémon vanaf het begin."
+coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","CSV data wordt geladen op kolomnaam, niet kolomvolgorde, je kan dus kolommen toevogen en verplaatsen als je dat wilt. (bijv. voeg een “niveau” kolom of een “notities” kolom toe)."
+coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","CSV-bestanden kunnen worden bewerkt met Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, en meer."
+coverage.csvHeaders.number,Number,Nummer
+coverage.csvHeaders.name,Name,Naam
+coverage.csvHeaders.type1,Type 1,Type 1
+coverage.csvHeaders.type2,Type 2,Type 2
+coverage.csvHeaders.type3,Type 3,Type 3
+coverage.export.button,Export,Exporteren
+coverage.export.description,Export the default Pokédex to a CSV file,Exporteer de normale Pokédex naar een CSV-bestand.
+coverage.import.button,Import,Importeren
+coverage.import.description,Import an edited Pokédex CSV file,Importeer een bewerkt Pokédex CSV-Bestand.
+coverage.reset.button,Reset,Reset
+coverage.reset.description,Reset to the default Pokédex,Reset naar de normale Pokédex
+coverage.filename,pkmn.help type coverage.csv,pkmn.help type overschaduwing.csv
+coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,{{ n }} Pokémon vormen geïmporteerd vanaf “{{ file }}”
+coverage.status.exported,Exported default Pokémon forms,Geëxporteerde standaard Pokémonvormen
+coverage.status.reset,Loaded default Pokémon forms,Geladen standaard Pokémonvormen
+coverage.status.errored,Error loading CSV. Don't change header names.,Error met het laden van CSV. Verander kopnamen niet.
+coverage.back,Back to offense,Terug naar offensief
+defense.chooseFirst,Choose first type,Kies eerste type
+defense.chooseSecond,Choose second type,Kies tweede type
+defense.chooseThird,Choose third type,Kies derde type
+defense.takesXFrom,Takes {{ x }} from,Krijgt {{ x }} van
+defense.chooseAbility,Choose ability,Kies vaardigheid
+defense.abilityNames.none,None,Geen
+defense.mode.heading,Choose mode,Kies modus
+defense.mode.solo,Solo,Solo
+defense.mode.team,Team,Team
+defense.team.tableHeading,Matchup counts,Wedstrijdtelling
+defense.team.heading,Edit Pokémon team,Bewerk Pokémon team
+defense.team.add,Add Pokémon,Voeg Pokémon toe
+defense.team.empty,No Pokémon selected,Geen Pokémon geselecteerd
+defense.team.displayType,Table format,Tabelformaat
+defense.team.weak,Weak,Zwak
+defense.team.resist,Resist,Weerstand
+defense.team.simple,Simple,Simpel
+defense.team.complex,Complex,Complex
+defense.team.type,Type,Type
+defense.team.save,Save,Opslaan
+defense.team.saveLong,Save {{ name }},Opslaan {{ name }}
+defense.team.edit,Edit,Bewerk
+defense.team.editLong,Edit {{ name }},Bewerk {{ name }}
+defense.team.remove,Remove,Verwijder
+defense.team.removeLong,Remove {{ name }},Verwijder {{ name }}
+pokedex.search.description,"Search by name, number, or types","Zoek op naam, nummer of types"
+pokedex.search.help,Help,Hulp
+pokedex.search.helpLong,"Help, search Pokédex","Hulp, doorzoek Pokédex"
+pokedex.search.notFound,No Pokémon found,Geen Pokémon gevonden
+pokedex.offense.text,Offense,Offensief
+pokedex.defense.text,Defense,Defensief
+pokedex.shiny.label,Shiny for {{ pokemon }},Shiny voor {{ pokemon }}
+pokedex.shiny.text,Shiny,Shiny
+pokedex.pagination.next,Next,Volgende
+pokedex.pagination.nextLong,Next,Volgende
+pokedex.pagination.previous,Prev,Vorige
+pokedex.pagination.previousLong,Previous,Vorige
+pokedex.pagination.firstLong,First,Eerste
+pokedex.pagination.lastLong,Last,Laatste
+pokedex.stats.hp,HP,GP
+pokedex.stats.hpLong,Hit Points,Gezondheidspunten
+pokedex.stats.attack,Attack,Aanval
+pokedex.stats.attackLong,Attack,Aanval
+pokedex.stats.defense,Defense,Verdediging
+pokedex.stats.defenseLong,Defense,Verdediging
+pokedex.stats.specialAttack,Sp. Atk.,Sp. Aanval
+pokedex.stats.specialAttackLong,Special Attack,Speciale Aanval
+pokedex.stats.specialDefense,Sp. Def.,Sp. Verdediging
+pokedex.stats.specialDefenseLong,Special Defense,Speciale Verdediging
+pokedex.stats.speed,Speed,Snelheid
+pokedex.stats.speedLong,Speed,Snelheid
+pokedex.stats.total,Total,Totaal
+pokedex.stats.totalLong,Total,Totaal
+pokedexHelp.searchByName.heading,Search by name,Zoeken op naam
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Je kan zoeken op een Pokémon bij naam. Als je alleen een gedeelte herinnert van de Pokémonnaam, kan hij het waarschijnlijk nog steeds vinden voor je. Hij kan alleen nog niet goed omgaan met typfouten."
+pokedexHelp.searchByNumber.heading,Search by number,Zoeken op nummer
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Zoek op nationaal dex nummer. Als je Bulbasaur wilt, typ gewoon 1, niet #001"
+pokedexHelp.searchByType.heading,Search by type,Zoeken op type
+pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Hier zijn een paar voorbeelden van hoe je zoekt op type.
+pokedexHelp.searchExamples.type.query,fire,vuur
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Zoekt op Pokémon die vuur als ten minste één van de types hebben in ten minste één van zijn vorm (bijv. Charmander, Charizard of Rotom)."
+pokedexHelp.searchExamples.doubleType.query,water flying,water vliegend
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Zoekt op Pokémon die òf water/vliegend (zoals Gyarados) of vliegend/water (zoals Cramorant) zijn.
+pokedexHelp.searchExamples.singleType.query,grass none,gras geen
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Zoekt op Pokémon die alleen gras type zijn, geen 2e type (bijv. Tangela, Chikorita, Lilligant)."
+pokedexHelp.back,Back to Pokédex,Terug naar Pokédex
+more.contact.heading,Contact me,Neem contact met mij op
+more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hoi, ik ben <homepage>Sage Fennel</homepage> (die), en ik heb de Pokémon Type Rekenmachine gemaakt (pkmn.help)."
+more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,E-mail alsjeblieft je gedachtes en bedankjes naar <email>pkmn@wavebeem.com</email>.
+more.settings.heading,Settings,Instellingen
+more.settings.language.label,Language,Taal
+more.settings.language.default,Auto detect language,Automatisch taal detecteren
+more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Taalondersteuning is nog niet compleet. E-mail mij alsjeblieft, ik zal je betalen om te vertalen."
+more.settings.theme.label,Theme,Thema
+more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“Systeemstandaard” zal automatisch veranderen naar je systeeminstellingen.
+more.settings.theme.values.auto,System default,Systeemstandaard
+more.settings.theme.values.light,Light,Licht
+more.settings.theme.values.dark,Dark,Donker
+more.settings.typeCount.label,Number of types,Aantal types
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon kunnen tijdelijk drie types tegelijkertijd hebben als ze zijn geraakt met Bosvloek of Trick-or-Treat. Het derde typeveld is standaard verstopt aangezien hij zeldzaam wordt gebruikt.
+more.settings.typeCount.values.2,Two types (2),Twee types (2)
+more.settings.typeCount.values.3,Three types (3),Drie types (3)
+more.changes.heading,What’s new,Wat is nieuw
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Kijk wat er nieuw is in de <changelog>changelog</changelog>
+more.help.heading,Help,Hulp
+more.help.serviceWorker.description,This button can help fix issues in the app.,Deze knop kan helpen om problemen in de app op te lossen.
+more.help.serviceWorker.button,Reset,Reset
+more.privacy.heading,Privacy,Privacy
+more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Ik zal nooit advertenties laten zien of je persoonlijke data gebruiken. Ik gebruik <plausible>Plausible Analytics</plausible>, dat zelf-gefinancieerd is, onafhankelijk, gehost in Europa, en slaat geen cookies op in je computer."
+more.givingBack.heading,Showing appreciation,Waardering
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.","Er zitten ontelbaar veel uren in het verbeteren van deze website. Als je waardeert wat ik heb gemaakt, alsjeblieft overweeg iets te doneren aan liefdadigheden die BIPOC en transgenderrechten ondersteunen."
+more.thanks.heading,Special thanks,Speciale dank
+more.thanks.sections.da,Danish translation,Deense vertaling
+more.thanks.sections.ru,Russian translation,Russische vertaling
+more.thanks.sections.kk,Kazakh translation,Kazachse vertaling
+more.thanks.sections.pt-BR,Brazilian Portuguese translation,Brazilisch Portugese vertaling
+more.thanks.sections.zh-Hans,Simplified Chinese translation,Versimpeld Chinese vertaling
+more.thanks.sections.ro,Romanian translation,Romeense vertaling
+more.thanks.sections.pl,Polish translation,Poolse vertaling
+more.thanks.sections.fr,French translation,Franse vertaling
+more.thanks.sections.de,German translation,Duitse vertaling
+more.thanks.sections.it,Italian translation,Italiaanse vertaling
+more.thanks.sections.ko,Korean translation,Koreaanse vertaling
+more.thanks.sections.ja,Japanese translation,Japanse vertaling
+more.thanks.sections.nl,Dutch translation,Nederlandse vertaling
+more.thanks.sections.testing,Testing,Testen
+more.thanks.sections.other,Several anonymous Poké Fans,Wat anonieme Poké Fans
+more.openSource.heading,Open source,Open source
+more.openSource.description,Source code is available on <github>GitHub</github>.,Broncode is verkrijgbaar op <github>GitHub</github>
+more.legalInfo.heading,Legal info,Legale info
+types.normal,Normal,Normaal
+types.fighting,Fighting,Vechtend
+types.flying,Flying,Vliegend
+types.poison,Poison,Gif
+types.ground,Ground,Grond
+types.rock,Rock,Steen
+types.bug,Bug,Insect
+types.ghost,Ghost,Geest
+types.steel,Steel,Staal
+types.fire,Fire,Vuur
+types.water,Water,Water
+types.grass,Grass,Gras
+types.electric,Electric,Elektrisch
+types.psychic,Psychic,Psychisch
+types.ice,Ice,IJs
+types.dragon,Dragon,Draak
+types.dark,Dark,Duister
+types.fairy,Fairy,Fee
+types.none,None,Geen
+banners.updateReady.description,An update is available,Een update is verkrijgbaar
+banners.updateReady.whatsNew,What’s new,Wat is nieuw
+banners.updateReady.update,Update,Update
+general.loading,Loading…,Laden...
+games.label,Game generation,Game generatie
+games.help,Use type effectiveness from different game generations.,Gebruik type effectiefheid van verschillende game generaties.
+games.byID.gen1,Generation 1,Generatie 1
+games.byID.gen2,Generation 2–5,Generatie 2-5
+games.byID.default,Default (generation 6+),Standaard (generatie 6+)
