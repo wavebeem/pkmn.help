@@ -12,7 +12,6 @@ import { useTheme } from "./useTheme";
 import { useTypeCount } from "./useTypeCount";
 import {
   Lang,
-  detectLanguage,
   getDesiredLanguage,
   isLang,
   supportedLanguages,
@@ -41,6 +40,7 @@ const languageNamesNative: Record<Lang, string> = {
   ro: `Română`,
   pl: `Polski`,
   ru: `Русский`,
+  nl: `Nederlands`,
   kk: `Қазақша`,
   ja: `日本語`,
   "ja-Hrkt": `にほんご`,
@@ -60,6 +60,7 @@ const languageNamesEnglish: Record<Lang, string> = {
   ro: `Romanian`,
   pl: `Polish`,
   ru: `Russian`,
+  nl: `Dutch`,
   kk: `Kazakh`,
   ja: `Japanese`,
   "ja-Hrkt": `Japanese Kana-only`,
@@ -304,7 +305,7 @@ export function ScreenMore({
           , and many other apps.
         </p>
         <p>
-          Send me the translated file via email when you're done (
+          Send me the translated file via email when you&apos;e done (
           <a
             className="br1 underline fg-link focus-outline"
             href="mailto:pkmn@wavebeem.com"

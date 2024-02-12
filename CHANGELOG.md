@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-02-12
+
+- Added Dutch translation
+
 ## 2024-02-11
 
 - Added translation CSV file downloads
