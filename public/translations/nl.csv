@@ -130,7 +130,7 @@ more.privacy.heading,Privacy,Privacy
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Ik zal nooit advertenties laten zien of je persoonlijke data gebruiken. Ik gebruik <plausible>Plausible Analytics</plausible>, dat zelf-gefinancieerd is, onafhankelijk, gehost in Europa, en slaat geen cookies op in je computer."
 more.givingBack.heading,Showing appreciation,Waardering
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.","Er zitten ontelbaar veel uren in het verbeteren van deze website. Als je waardeert wat ik heb gemaakt, alsjeblieft overweeg iets te doneren aan liefdadigheden die BIPOC en transgenderrechten ondersteunen."
-more.thanks.heading,Special thanks,
+more.thanks.heading,Special thanks,Speciale dank
 more.thanks.sections.da,Danish translation,Deense vertaling
 more.thanks.sections.ru,Russian translation,Russische vertaling
 more.thanks.sections.kk,Kazakh translation,Kazachse vertaling
@@ -143,11 +143,12 @@ more.thanks.sections.de,German translation,Duitse vertaling
 more.thanks.sections.it,Italian translation,Italiaanse vertaling
 more.thanks.sections.ko,Korean translation,Koreaanse vertaling
 more.thanks.sections.ja,Japanese translation,Japanse vertaling
+more.thanks.sections.nl,Dutch translation,Nederlandse vertaling
 more.thanks.sections.testing,Testing,Testen
 more.thanks.sections.other,Several anonymous Poké Fans,Wat anonieme Poké Fans
 more.openSource.heading,Open source,Open source
 more.openSource.description,Source code is available on <github>GitHub</github>.,Broncode is verkrijgbaar op <github>GitHub</github>
-more.legalInfo.heading,Legal info,
+more.legalInfo.heading,Legal info,Legale info
 types.normal,Normal,Normaal
 types.fighting,Fighting,Vechtend
 types.flying,Flying,Vliegend

@@ -220,6 +220,7 @@
       "description": "Er zitten ontelbaar veel uren in het verbeteren van deze website. Als je waardeert wat ik heb gemaakt, alsjeblieft overweeg iets te doneren aan liefdadigheden die BIPOC en transgenderrechten ondersteunen."
     },
     "thanks": {
+      "heading": "Speciale dank",
       "sections": {
         "da": "Deense vertaling",
         "ru": "Russische vertaling",
@@ -233,6 +234,7 @@
         "it": "Italiaanse vertaling",
         "ko": "Koreaanse vertaling",
         "ja": "Japanse vertaling",
+        "nl": "Nederlandse vertaling",
         "testing": "Testen",
         "other": "Wat anonieme Poké Fans"
       }
@@ -240,6 +242,9 @@
     "openSource": {
       "heading": "Open source",
       "description": "Broncode is verkrijgbaar op <github>GitHub</github>"
+    },
+    "legalInfo": {
+      "heading": "Legale info"
     }
   },
   "types": {
