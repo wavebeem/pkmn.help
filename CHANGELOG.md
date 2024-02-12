@@ -8,6 +8,10 @@
 
 - Improved the translation table appearance on mobile
 
+- Improved the readability of the translation sentence asking for CSV emails
+
+- Added mention for LibreOffice Calc
+
 ## 2024-02-10
 
 - Updated Brazilian Portuguese translation

@@ -283,6 +283,13 @@ export function ScreenMore({
           ,{" "}
           <a
             className="br1 underline fg-link focus-outline"
+            href="https://www.libreoffice.org/download/download-libreoffice/"
+          >
+            LibreOffice Calc
+          </a>
+          ,{" "}
+          <a
+            className="br1 underline fg-link focus-outline"
             href="https://www.moderncsv.com/"
           >
             Modern CSV
@@ -294,20 +301,19 @@ export function ScreenMore({
           >
             editCSVonline
           </a>
-          , or many other apps.
+          , and many other apps.
         </p>
         <p>
-          Send me (
+          Send me the translated file via email when you're done (
           <a
             className="br1 underline fg-link focus-outline"
             href="mailto:pkmn@wavebeem.com"
           >
             pkmn@wavebeem.com
           </a>
-          ) the translated file via email when you're done. I'm willing to pay
-          for native translations. If you have questions, feel free to ask. I
-          can also set up a Google Sheet for you if you don't feel comfortable
-          downloading and editing a CSV file.
+          ). I offer payment for quality translations. If you have questions,
+          feel free to ask. Confused about CSV files? I can set up a Google
+          Sheet for you.
         </p>
         <p>
           This table shows translation progress for every supported language.
@@ -329,9 +335,7 @@ export function ScreenMore({
                     const na = languageCompletions[a] || 0;
                     const nb = languageCompletions[b] || 0;
                     if (na === nb) {
-                      if (a < b) return -1;
-                      if (a > b) return 1;
-                      return 0;
+                      return a.localeCompare(b);
                     }
                     return nb - na;
                   })
