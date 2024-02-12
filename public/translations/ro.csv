@@ -45,6 +45,24 @@ defense.chooseThird,Choose third type,Alege al treilea fel
 defense.takesXFrom,Takes {{ x }} from,Ia {{ x }} de la
 defense.chooseAbility,Choose ability,
 defense.abilityNames.none,None,
+defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard
+defense.abilityNames.delta_stream,Delta Stream,Delta Stream
+defense.abilityNames.fluffy,Fluffy,Fluffy
+defense.abilityNames.purifying_salt,Purifying Salt,Purifying Salt
+defense.abilityNames.heatproof,Heatproof,Heatproof
+defense.abilityNames.water_bubble,Water Bubble,Water Bubble
+defense.abilityNames.thick_fat,Thick Fat,Thick Fat
+defense.abilityNames.earth_eater,Earth Eater,Earth Eater
+defense.abilityNames.levitate,Levitate,Levitate
+defense.abilityNames.flash_fire,Flash Fire,Flash Fire
+defense.abilityNames.well_baked_body,Well-Baked Body,Well-Baked Body
+defense.abilityNames.dry_skin,Dry Skin,Dry Skin
+defense.abilityNames.storm_drain,Storm Drain,Storm Drain
+defense.abilityNames.water_absorb,Water Absorb,Water Absorb
+defense.abilityNames.sap_sipper,Sap Sipper,Sap Sipper
+defense.abilityNames.lightning_rod,Lightning Rod,Lightning Rod
+defense.abilityNames.motor_drive,Motor Drive,Motor Drive
+defense.abilityNames.volt_absorb,Volt Absorb,Volt Absorb
 defense.mode.heading,Choose mode,
 defense.mode.solo,Solo,
 defense.mode.team,Team,

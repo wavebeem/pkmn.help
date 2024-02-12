@@ -64,7 +64,27 @@
     "chooseFirst": "Vælg første type",
     "chooseSecond": "Vælg anden type",
     "chooseThird": "Vælg tredje type",
-    "takesXFrom": "Tager {{ x }} Fra"
+    "takesXFrom": "Tager {{ x }} Fra",
+    "abilityNames": {
+      "wonder_guard": "Wonder Guard",
+      "delta_stream": "Delta Stream",
+      "fluffy": "Fluffy",
+      "purifying_salt": "Purifying Salt",
+      "heatproof": "Heatproof",
+      "water_bubble": "Water Bubble",
+      "thick_fat": "Thick Fat",
+      "earth_eater": "Earth Eater",
+      "levitate": "Levitate",
+      "flash_fire": "Flash Fire",
+      "well_baked_body": "Well-Baked Body",
+      "dry_skin": "Dry Skin",
+      "storm_drain": "Storm Drain",
+      "water_absorb": "Water Absorb",
+      "sap_sipper": "Sap Sipper",
+      "lightning_rod": "Lightning Rod",
+      "motor_drive": "Motor Drive",
+      "volt_absorb": "Volt Absorb"
+    }
   },
   "pokedex": {
     "search": {

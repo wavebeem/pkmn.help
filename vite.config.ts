@@ -51,59 +51,6 @@ function* dottedPathsHelper(base: string, data: any): Generator<string> {
   }
 }
 
-const officialOnlyKeys = new Set([
-  "defense.abilityNames.wonder_guard",
-  "defense.abilityNames.delta_stream",
-  "defense.abilityNames.fluffy",
-  "defense.abilityNames.purifying_salt",
-  "defense.abilityNames.heatproof",
-  "defense.abilityNames.water_bubble",
-  "defense.abilityNames.thick_fat",
-  "defense.abilityNames.earth_eater",
-  "defense.abilityNames.levitate",
-  "defense.abilityNames.flash_fire",
-  "defense.abilityNames.well_baked_body",
-  "defense.abilityNames.dry_skin",
-  "defense.abilityNames.storm_drain",
-  "defense.abilityNames.water_absorb",
-  "defense.abilityNames.sap_sipper",
-  "defense.abilityNames.lightning_rod",
-  "defense.abilityNames.motor_drive",
-  "defense.abilityNames.volt_absorb",
-]);
-
-const allLanguages = new Set([
-  "en",
-  "es",
-  "pt-BR",
-  "da",
-  "de",
-  "it",
-  "fr",
-  "pl",
-  "ru",
-  "nl",
-  "kk",
-  "ro",
-  "ja",
-  "ja-Hrkt",
-  "zh-Hans",
-  "zh-Hant",
-  "ko",
-]);
-
-const officialLanguages = new Set([
-  "en",
-  "es",
-  "de",
-  "it",
-  "fr",
-  "ja",
-  "zh-Hans",
-  "zh-Hant",
-  "ko",
-]);
-
 const trans: Record<string, any> = {};
 const pathSets: Record<string, Set<string>> = {};
 const names = getTranslationFilenames();
@@ -126,19 +73,8 @@ for (const lang of langs) {
   }
 }
 const completions: Record<string, number> = {};
-// eslint-disable-next-line no-console
-console.info("Translations");
-// eslint-disable-next-line no-console
-console.info("------------");
 for (const lang of langs) {
-  // eslint-disable-next-line no-console
-  console.info(`${pathSets[lang].size} | ${lang}`);
-  if (officialLanguages.has(lang)) {
-    completions[lang] = pathSets[lang].size / pathSets.en.size;
-  } else {
-    completions[lang] =
-      pathSets[lang].size / (pathSets.en.size - officialOnlyKeys.size);
-  }
+  completions[lang] = pathSets[lang].size / pathSets.en.size;
 }
 
 function* walk({
@@ -177,18 +113,13 @@ function saveMissingTranslationsFor(lang: string) {
   const other = trans[lang];
   const data = walk({ english, other });
   const headers = ["Key", "en", lang];
-  const csvData = [headers, ...data].filter(([key]) => {
-    if (officialOnlyKeys.has(key)) {
-      return false;
-    }
-    return true;
-  });
+  const csvData = [headers, ...data];
   const csv = Papa.unparse(csvData, { header: true });
   const filename = path.resolve(__dirname, `./public/translations/${lang}.csv`);
   fs.writeFileSync(filename, csv, "utf-8");
 }
 
-for (const lang of allLanguages) {
+for (const lang of langs) {
   saveMissingTranslationsFor(lang);
 }
 

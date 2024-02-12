@@ -45,6 +45,24 @@ defense.chooseThird,Choose third type,Elige el tipo terciario
 defense.takesXFrom,Takes {{ x }} from,Sufre {{ x }} por
 defense.chooseAbility,Choose ability,Elige Habilidad
 defense.abilityNames.none,None,Ninguna
+defense.abilityNames.wonder_guard,Wonder Guard,Superguarda
+defense.abilityNames.delta_stream,Delta Stream,Ráfaga Delta
+defense.abilityNames.fluffy,Fluffy,Peluche
+defense.abilityNames.purifying_salt,Purifying Salt,Sal purificadora
+defense.abilityNames.heatproof,Heatproof,Ignífugo
+defense.abilityNames.water_bubble,Water Bubble,Pompa
+defense.abilityNames.thick_fat,Thick Fat,Sebo
+defense.abilityNames.earth_eater,Earth Eater,Geofagia
+defense.abilityNames.levitate,Levitate,Levitación
+defense.abilityNames.flash_fire,Flash Fire,Absorbe fuego
+defense.abilityNames.well_baked_body,Well-Baked Body,Cuerpo horneado
+defense.abilityNames.dry_skin,Dry Skin,Piel seca
+defense.abilityNames.storm_drain,Storm Drain,Colector
+defense.abilityNames.water_absorb,Water Absorb,Absorbe agua
+defense.abilityNames.sap_sipper,Sap Sipper,Herbívoro
+defense.abilityNames.lightning_rod,Lightning Rod,Pararrayos
+defense.abilityNames.motor_drive,Motor Drive,Electromotor
+defense.abilityNames.volt_absorb,Volt Absorb,Absorbe electricidad
 defense.mode.heading,Choose mode,Elige un modo
 defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Equipo

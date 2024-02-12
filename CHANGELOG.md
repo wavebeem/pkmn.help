@@ -4,6 +4,8 @@
 
 - Added Dutch translation
 
+- Fixed translations percentage value for unofficial language translations
+
 ## 2024-02-11
 
 - Added translation CSV file downloads

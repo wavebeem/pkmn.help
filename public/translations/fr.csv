@@ -45,6 +45,24 @@ defense.chooseThird,Choose third type,Choisir le troisème type
 defense.takesXFrom,Takes {{ x }} from,Subit {{ x }} De
 defense.chooseAbility,Choose ability,Choisir le talent
 defense.abilityNames.none,None,Aucun
+defense.abilityNames.wonder_guard,Wonder Guard,Garde Mystik
+defense.abilityNames.delta_stream,Delta Stream,Souffle Delta
+defense.abilityNames.fluffy,Fluffy,Boule de Poils
+defense.abilityNames.purifying_salt,Purifying Salt,Sel Purificateur
+defense.abilityNames.heatproof,Heatproof,Ignifugé
+defense.abilityNames.water_bubble,Water Bubble,Aquabulle
+defense.abilityNames.thick_fat,Thick Fat,Isograisse
+defense.abilityNames.earth_eater,Earth Eater,Absorbe-Terre
+defense.abilityNames.levitate,Levitate,Lévitation
+defense.abilityNames.flash_fire,Flash Fire,Torche
+defense.abilityNames.well_baked_body,Well-Baked Body,Bien Cuit
+defense.abilityNames.dry_skin,Dry Skin,Peau Sèche
+defense.abilityNames.storm_drain,Storm Drain,Lavabo
+defense.abilityNames.water_absorb,Water Absorb,Absorbe-Eau
+defense.abilityNames.sap_sipper,Sap Sipper,Herbivore
+defense.abilityNames.lightning_rod,Lightning Rod,Paratonerre
+defense.abilityNames.motor_drive,Motor Drive,Motorisé
+defense.abilityNames.volt_absorb,Volt Absorb,Absorbe-Volt
 defense.mode.heading,Choose mode,Sélection du mode
 defense.mode.solo,Solo,Pokémon
 defense.mode.team,Team,Équipe
