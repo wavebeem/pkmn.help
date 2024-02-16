@@ -16,6 +16,7 @@ import {
   isLang,
   supportedLanguages,
 } from "./detectLanguage";
+import { TranslationCard } from "./TranslationCard";
 
 export interface ScreenMoreProps {
   needsAppUpdate: boolean;
@@ -29,7 +30,7 @@ const languageCompletions =
 
 const ndash = "\u2013";
 
-const languageNamesNative: Record<Lang, string> = {
+export const languageNamesNative: Record<Lang, string> = {
   en: `English`,
   es: `Español`,
   "pt-BR": `Português Brasileiro`,
@@ -49,8 +50,8 @@ const languageNamesNative: Record<Lang, string> = {
   ko: `한국어`,
 };
 
-const languageNamesEnglish: Record<Lang, string> = {
-  en: "",
+export const languageNamesEnglish: Record<Lang, string> = {
+  en: ``,
   es: `Spanish`,
   "pt-BR": `Brazilian Portuguese`,
   de: `German`,
@@ -69,16 +70,44 @@ const languageNamesEnglish: Record<Lang, string> = {
   ko: `Korean`,
 };
 
-function formatLanguageCompletion(lang: string): string {
+export const languageBounty: Record<Lang, number> = {
+  en: 0,
+  es: 0,
+  "pt-BR": 0,
+  de: 0,
+  da: 0,
+  it: 0,
+  fr: 0,
+  ro: 0,
+  pl: 0,
+  ru: 0,
+  nl: 0,
+  kk: 0,
+  ja: 50,
+  "ja-Hrkt": 0,
+  "zh-Hans": 50,
+  "zh-Hant": 100,
+  ko: 50,
+};
+
+export function formatLanguageCompletion(lang: string): string {
   const value = languageCompletions[lang] || 0;
   const n = (value * 100).toFixed(1);
   return `${n}%`;
 }
 
+function joinStrings(strings: (string | undefined)[]): string {
+  return strings.filter((x) => x).join(` ${ndash} `);
+}
+
 function showLang(lang: Lang): string {
-  return [languageNamesNative[lang], languageNamesEnglish[lang]]
-    .filter((x) => x)
-    .join(` ${ndash} `);
+  return joinStrings([languageNamesNative[lang], languageNamesEnglish[lang]]);
+}
+
+function compare<T>(a: T, b: T): number {
+  if (a < b) return -1;
+  if (a > b) return 1;
+  return 0;
 }
 
 export function ScreenMore({
@@ -189,7 +218,7 @@ export function ScreenMore({
               >
                 help me translate
               </a>{" "}
-              this site. Payment offered for quality translations.
+              this site.
             </>
           }
           onChange={(event) => {
@@ -310,61 +339,35 @@ export function ScreenMore({
             className="br1 underline fg-link focus-outline"
             href="mailto:pkmn@wavebeem.com"
           >
-            pkmn@wavebeem.com
+            pkmn
+            <wbr />
+            @wavebeem
+            <wbr />
+            .com
           </a>
-          ). I offer payment for quality translations. If you have questions,
-          feel free to ask. Confused about CSV files? I can set up a Google
-          Sheet for you.
+          ). If you have questions, feel free to ask. Confused about CSV files?
+          I can set up a Google Sheet for you.
         </p>
-        <p>
-          This table shows translation progress for every supported language.
-        </p>
-        <div className="ba border2 mb3 br2 bg1 pa2 button-shadow">
-          <div className="overflow-x-auto focus-none" tabIndex={0}>
-            <table className="collapse w-100">
-              <thead>
-                <tr>
-                  <th className="ph2 pv2 bb border3 tr w0">%</th>
-                  <th className="ph2 pv2 bb border3 tl w0">File</th>
-                  <th className="ph2 pv2 bb border3 tl">Language</th>
-                </tr>
-              </thead>
-              <tbody>
-                {supportedLanguages
-                  .slice(0)
-                  .sort((a, b) => {
-                    const na = languageCompletions[a] || 0;
-                    const nb = languageCompletions[b] || 0;
-                    if (na === nb) {
-                      return a.localeCompare(b);
-                    }
-                    return nb - na;
-                  })
-                  .map((lang) => {
-                    return (
-                      <tr key={lang}>
-                        <td className="tabular-nums tr ph2 pv2 bt border3">
-                          {formatLanguageCompletion(lang)}
-                        </td>
-                        <td className="ph2 pv2 tl bt border3">
-                          <a
-                            href={`/translations/${lang}.csv`}
-                            download={`pkmn.help - translation - ${lang}.csv`}
-                            className="underline fg-link nowrap OutlineFocus"
-                          >
-                            {lang}.csv
-                          </a>
-                        </td>
-                        <td className="ph2 pv2 tl bt border3 nowrap">
-                          {showLang(lang)}
-                        </td>
-                      </tr>
-                    );
-                  })}
-              </tbody>
-            </table>
-          </div>
+        <p>I&apos;m offering payment for translation in some languages.</p>
+        <div className="flex flex-column gap3">
+          {supportedLanguages
+            .slice(0)
+            .filter((lang) => !(lang === "en" || lang === "ja-Hrkt"))
+            .sort((a, b) => {
+              return (
+                compare(languageBounty[b], languageBounty[a]) ||
+                compare(
+                  languageCompletions[a] || 0,
+                  languageCompletions[b] || 0
+                ) ||
+                compare(a, b)
+              );
+            })
+            .map((lang) => {
+              return <TranslationCard key={lang} lang={lang} />;
+            })}
         </div>
+        <div className="pt2" />
       </CollapsibleSection>
 
       <div role="presentation" className="mv2 bt border3" />

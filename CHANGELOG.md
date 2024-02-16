@@ -1,5 +1,11 @@
 # Changelog
 
+## 2024-02-15
+
+- Changed translation section formatting
+
+- Clarified translation payment
+
 ## 2024-02-12
 
 - Added Dutch translation
