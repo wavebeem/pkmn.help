@@ -9,14 +9,14 @@ offense.dealsXTo,Deals {{ x }} to,Inflige {{ x }} à
 offense.coverage.heading,Pokédex coverage,Couverture du Pokédex
 offense.coverage.edit,Edit list,Modifier la liste
 offense.coverage.weakness,Weak,Faible
-offense.coverage.normal,Normal,
+offense.coverage.normal,Normal,Neutre
 offense.coverage.resistance,Resist,Résiste
 offense.coverageList.empty,No Pokémon found or no types selected,Aucun Pokémon trouvé ou aucun type séléctionné
-offense.coverageList.weakness.heading,Weakness Coverage List,Liste des Pokémon qui te sont faible
+offense.coverageList.weakness.heading,Weakness Coverage List,Liste des Pokémon qui te sont faibles
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Ces Pokémon sont faibles à au moins l'un des deux types séléctionnés.
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,
-offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,
-offense.coverageList.resistance.heading,Resistance Coverage List,Liste des Pokémon qui te résiste
+offense.coverageList.normal.heading,Normal Effectiveness Coverage List,Liste des Pokémon qui te sont neutres
+offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,Ces Pokémon ne sont pas dans la liste des faiblaisses/résistances pour les types séléctionés
+offense.coverageList.resistance.heading,Resistance Coverage List,Liste des Pokémon qui te résistent
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,Ces Pokémon résistent aux deux types séléctionnés.
 coverage.heading,Pokédex Coverage,Couverture de faiblesses
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importez/exportez des fichiers CSV Pokédex personnalisés pour voir la couverture des faiblesses pour différents Pokémons. Créeez un fichier CSV personnalisé avec juste le tier Pokémon OU, ou créez votre pokémon depuis zéro."
@@ -88,8 +88,8 @@ pokedex.search.helpLong,"Help, search Pokédex","Aide, recherche Pokédex"
 pokedex.search.notFound,No Pokémon found,Aucun pokémon trouvé
 pokedex.offense.text,Offense,Offense
 pokedex.defense.text,Defense,Défense
-pokedex.shiny.label,Shiny for {{ pokemon }},
-pokedex.shiny.text,Shiny,
+pokedex.shiny.label,Shiny for {{ pokemon }},Chromatique de {{ pokemon }}
+pokedex.shiny.text,Shiny,Chromatique
 pokedex.pagination.next,Next,Suiv
 pokedex.pagination.nextLong,Next,Suivant
 pokedex.pagination.previous,Prev,Préc
@@ -98,37 +98,37 @@ pokedex.pagination.firstLong,First,Premier
 pokedex.pagination.lastLong,Last,Dernier
 pokedex.stats.hp,HP,PV
 pokedex.stats.hpLong,Hit Points,Points de Vie
-pokedex.stats.attack,Attack,Atk
+pokedex.stats.attack,Attack,Atk.
 pokedex.stats.attackLong,Attack,Attaque
-pokedex.stats.defense,Defense,Déf
+pokedex.stats.defense,Defense,Déf.
 pokedex.stats.defenseLong,Defense,Défense
-pokedex.stats.specialAttack,Sp. Atk.,Atk Spé
+pokedex.stats.specialAttack,Sp. Atk.,Atk. Spé.
 pokedex.stats.specialAttackLong,Special Attack,Attaque Spéciale
-pokedex.stats.specialDefense,Sp. Def.,Déf Spé
+pokedex.stats.specialDefense,Sp. Def.,Déf. Spé.
 pokedex.stats.specialDefenseLong,Special Defense,Défense Spéciale
-pokedex.stats.speed,Speed,Vit
+pokedex.stats.speed,Speed,Vit.
 pokedex.stats.speedLong,Speed,Vitesse
 pokedex.stats.total,Total,Total
 pokedex.stats.totalLong,Total,Total
 pokedexHelp.searchByName.heading,Search by name,Rechercher par nom
-pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Vous pouvez rechercher un Pokémon par nom. Si vous ne vous rappelez que d'une partie du nom du Pokémon, cela devrait probablement le trouver. Le site ne peut pas gérer les fautes de frappes pour le moment."
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Vous pouvez rechercher un Pokémon par nom. Si vous ne vous rappelez que d'une partie du nom du Pokémon, ça fera probablement l'affaire. Le site ne peut pas gérer les fautes de frappes pour l'instant."
 pokedexHelp.searchByNumber.heading,Search by number,Rechercher par nombre
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Recherche par numéro de Pokédex national. Si vous souhaitez rechercher Bulbizarre, tapez 1, et non #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Recherche par numéro de Pokédex national. Si vous souhaitez rechercher Bulbizarre, tapez 1 et non #001."
 pokedexHelp.searchByType.heading,Search by type,Recherche par type
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Voici quelques exemples de recherches par types
 pokedexHelp.searchExamples.type.query,fire,feu
 pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Rechercher des Pokémon qui ont le type feu dans n'importe la quelle de leur forme (ex Salamèche, Dracaufeu, Motisma)."
 pokedexHelp.searchExamples.doubleType.query,water flying,eau vol
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Rechercher des Pokémon qui sont soit de types eau/vol (ex Léviator) soit de type vol/eau (Nigosier).
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Rechercher des Pokémon qui sont de types eau/vol (ex Léviator) ou de type vol/eau (Nigosier).
 pokedexHelp.searchExamples.singleType.query,grass none,Plante aucun
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Rechercher pour les pokémon qui ont seulment le type plante, pas de 2e type (ex Saquedeneu, Germinon, Fragilady)"
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Rechercher les Pokémon qui ont seulment le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)"
 pokedexHelp.back,Back to Pokédex,Revenir au Pokédex
 more.contact.heading,Contact me,Me contacter
 more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Bonjour, je suis <homepage>Sage Fennel</homepage> (iel), et j'ai créé le Calculateur de types Pokémon (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Veuillez envoyer vos idées et vos remerciements à <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Paramètres
 more.settings.language.label,Language,Langage
-more.settings.language.default,Auto detect language,
+more.settings.language.default,Auto detect language,Détecter automatiquement la langue
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",Merci de me contacter si certaines traductions sont manquantes ou erronées et que vous vous sentez capable d'aider.
 more.settings.theme.label,Theme,Thème
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Thème du système par défaut"" changera automatiquement en fonction de vos paramètres de votre système d'exploitation."
@@ -136,11 +136,11 @@ more.settings.theme.values.auto,System default,Thème du système par défaut
 more.settings.theme.values.light,Light,Clair
 more.settings.theme.values.dark,Dark,Sombre
 more.settings.typeCount.label,Number of types,Nombre de types
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Un pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est utilisé rarement
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Un pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est rarement utilisé
 more.settings.typeCount.values.2,Two types (2),Deux types (2)
 more.settings.typeCount.values.3,Three types (3),Trois types (3)
-more.changes.heading,What’s new,
-more.changes.description,See what’s new in the <changelog>changelog</changelog>.,
+more.changes.heading,What’s new,Quoi de neuf
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Voici ce qui a changé dans les <changelog>notes de mise à jour</changelog>
 more.help.heading,Help,Aide
 more.help.serviceWorker.description,This button can help fix issues in the app.,Ce bouton peut aider à résoudre les problèmes dans l'applicaton.
 more.help.serviceWorker.button,Reset,Réinitialiser
@@ -155,13 +155,13 @@ more.thanks.sections.kk,Kazakh translation,Traduction en Kazackh
 more.thanks.sections.pt-BR,Brazilian Portuguese translation,Traduction en Portugais Brésilien
 more.thanks.sections.zh-Hans,Simplified Chinese translation,Traduction en Chinois
 more.thanks.sections.ro,Romanian translation,Traduction en Roumain
-more.thanks.sections.pl,Polish translation,
+more.thanks.sections.pl,Polish translation,Traduction en Polonais
 more.thanks.sections.fr,French translation,Traduction en Français
 more.thanks.sections.de,German translation,Traduction en Allemand
 more.thanks.sections.it,Italian translation,Traduction en Italien
-more.thanks.sections.ko,Korean translation,
+more.thanks.sections.ko,Korean translation,Traduction en Coréen
 more.thanks.sections.ja,Japanese translation,Traduction en Japonais
-more.thanks.sections.nl,Dutch translation,
+more.thanks.sections.nl,Dutch translation,Traduction en Néerlandais
 more.thanks.sections.testing,Testing,Tests
 more.thanks.sections.other,Several anonymous Poké Fans,Plusieurs PokéFans anonymes
 more.openSource.heading,Open source,Open source
@@ -187,7 +187,7 @@ types.dark,Dark,Ténèbres
 types.fairy,Fairy,Fée
 types.none,None,Aucun
 banners.updateReady.description,An update is available,Une mise à jour est disponible
-banners.updateReady.whatsNew,What’s new,
+banners.updateReady.whatsNew,What’s new,Quoi de neuf
 banners.updateReady.update,Update,Mettre à jour
 general.loading,Loading…,Chargement…
 games.label,Game generation,Génaration de jeu
