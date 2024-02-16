@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-02-16
+
+- Updated Italian translation
+
 ## 2024-02-15
 
 - Changed translation section formatting
