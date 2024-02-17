@@ -2,6 +2,8 @@
 
 ## 2024-02-16
 
+- Updated Italian translation
+
 - Updated French translations
 
 ## 2024-02-15
