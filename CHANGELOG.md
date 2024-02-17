@@ -4,6 +4,8 @@
 
 - Updated Italian translation
 
+- Updated French translations
+
 ## 2024-02-15
 
 - Changed translation section formatting

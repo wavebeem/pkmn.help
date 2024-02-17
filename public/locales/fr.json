@@ -13,16 +13,21 @@
       "heading": "Couverture du Pokédex",
       "edit": "Modifier la liste",
       "weakness": "Faible",
+      "normal": "Neutre",
       "resistance": "Résiste"
     },
     "coverageList": {
       "empty": "Aucun Pokémon trouvé ou aucun type séléctionné",
       "weakness": {
-        "heading": "Liste des Pokémon qui te sont faible",
+        "heading": "Liste des Pokémon qui te sont faibles",
         "description": "Ces Pokémon sont faibles à au moins l'un des deux types séléctionnés."
       },
+      "normal": {
+        "heading": "Liste des Pokémon qui te sont neutres",
+        "description": "Ces Pokémon ne sont pas dans la liste des faiblaisses/résistances pour les types séléctionés"
+      },
       "resistance": {
-        "heading": "Liste des Pokémon qui te résiste",
+        "heading": "Liste des Pokémon qui te résistent",
         "description": "Ces Pokémon résistent aux deux types séléctionnés."
       }
     }
@@ -68,24 +73,24 @@
     "chooseAbility": "Choisir le talent",
     "abilityNames": {
       "none": "Aucun",
+      "wonder_guard": "Garde Mystik",
       "delta_stream": "Souffle Delta",
-      "dry_skin": "Peau Sèche",
-      "earth_eater": "Absorbe-Terre",
-      "flash_fire": "Torche",
       "fluffy": "Boule de Poils",
+      "purifying_salt": "Sel Purificateur",
       "heatproof": "Ignifugé",
+      "water_bubble": "Aquabulle",
+      "thick_fat": "Isograisse",
+      "earth_eater": "Absorbe-Terre",
       "levitate": "Lévitation",
+      "flash_fire": "Torche",
+      "well_baked_body": "Bien Cuit",
+      "dry_skin": "Peau Sèche",
+      "storm_drain": "Lavabo",
+      "water_absorb": "Absorbe-Eau",
+      "sap_sipper": "Herbivore",
       "lightning_rod": "Paratonerre",
       "motor_drive": "Motorisé",
-      "purifying_salt": "Sel Purificateur",
-      "sap_sipper": "Herbivore",
-      "storm_drain": "Lavabo",
-      "thick_fat": "Isograisse",
-      "volt_absorb": "Absorbe-Volt",
-      "water_absorb": "Absorbe-Eau",
-      "water_bubble": "Aquabulle",
-      "well_baked_body": "Bien Cuit",
-      "wonder_guard": "Garde Mystik"
+      "volt_absorb": "Absorbe-Volt"
     },
     "mode": {
       "heading": "Sélection du mode",
@@ -124,6 +129,10 @@
     "defense": {
       "text": "Défense"
     },
+    "shiny": {
+      "label": "Chromatique de {{ pokemon }}",
+      "text": "Chromatique"
+    },
     "pagination": {
       "next": "Suiv",
       "nextLong": "Suivant",
@@ -135,15 +144,15 @@
     "stats": {
       "hp": "PV",
       "hpLong": "Points de Vie",
-      "attack": "Atk",
+      "attack": "Atk.",
       "attackLong": "Attaque",
-      "defense": "Déf",
+      "defense": "Déf.",
       "defenseLong": "Défense",
-      "specialAttack": "Atk Spé",
+      "specialAttack": "Atk. Spé.",
       "specialAttackLong": "Attaque Spéciale",
-      "specialDefense": "Déf Spé",
+      "specialDefense": "Déf. Spé.",
       "specialDefenseLong": "Défense Spéciale",
-      "speed": "Vit",
+      "speed": "Vit.",
       "speedLong": "Vitesse",
       "total": "Total",
       "totalLong": "Total"
@@ -152,11 +161,11 @@
   "pokedexHelp": {
     "searchByName": {
       "heading": "Rechercher par nom",
-      "description": "Vous pouvez rechercher un Pokémon par nom. Si vous ne vous rappelez que d'une partie du nom du Pokémon, cela devrait probablement le trouver. Le site ne peut pas gérer les fautes de frappes pour le moment."
+      "description": "Vous pouvez rechercher un Pokémon par nom. Si vous ne vous rappelez que d'une partie du nom du Pokémon, ça fera probablement l'affaire. Le site ne peut pas gérer les fautes de frappes pour l'instant."
     },
     "searchByNumber": {
       "heading": "Rechercher par nombre",
-      "description": "Recherche par numéro de Pokédex national. Si vous souhaitez rechercher Bulbizarre, tapez 1, et non #001."
+      "description": "Recherche par numéro de Pokédex national. Si vous souhaitez rechercher Bulbizarre, tapez 1 et non #001."
     },
     "searchByType": {
       "heading": "Recherche par type",
@@ -169,11 +178,11 @@
       },
       "doubleType": {
         "query": "eau vol",
-        "description": "Rechercher des Pokémon qui sont soit de types eau/vol (ex Léviator) soit de type vol/eau (Nigosier)."
+        "description": "Rechercher des Pokémon qui sont de types eau/vol (ex Léviator) ou de type vol/eau (Nigosier)."
       },
       "singleType": {
         "query": "Plante aucun",
-        "description": "Rechercher pour les pokémon qui ont seulment le type plante, pas de 2e type (ex Saquedeneu, Germinon, Fragilady)"
+        "description": "Rechercher les Pokémon qui ont seulment le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)"
       }
     },
     "back": "Revenir au Pokédex"
@@ -188,6 +197,7 @@
       "heading": "Paramètres",
       "language": {
         "label": "Langage",
+        "default": "Détecter automatiquement la langue",
         "helpText": "Merci de me contacter si certaines traductions sont manquantes ou erronées et que vous vous sentez capable d'aider."
       },
       "theme": {
@@ -201,12 +211,16 @@
       },
       "typeCount": {
         "label": "Nombre de types",
-        "help": "Un pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est utilisé rarement",
+        "help": "Un pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est rarement utilisé",
         "values": {
           "2": "Deux types (2)",
           "3": "Trois types (3)"
         }
       }
+    },
+    "changes": {
+      "heading": "Quoi de neuf",
+      "description": "Voici ce qui a changé dans les <changelog>notes de mise à jour</changelog>"
     },
     "help": {
       "heading": "Aide",
@@ -226,16 +240,19 @@
     "thanks": {
       "heading": "Remerciements spéciaux",
       "sections": {
-        "da": "Danish translation",
+        "da": "Traduction en Danois",
         "ru": "Traduction en Russe",
         "kk": "Traduction en Kazackh",
         "pt-BR": "Traduction en Portugais Brésilien",
         "zh-Hans": "Traduction en Chinois",
         "ro": "Traduction en Roumain",
+        "pl": "Traduction en Polonais",
         "fr": "Traduction en Français",
         "de": "Traduction en Allemand",
         "it": "Traduction en Italien",
+        "ko": "Traduction en Coréen",
         "ja": "Traduction en Japonais",
+        "nl": "Traduction en Néerlandais",
         "testing": "Tests",
         "other": "Plusieurs PokéFans anonymes"
       }
@@ -272,6 +289,7 @@
   "banners": {
     "updateReady": {
       "description": "Une mise à jour est disponible",
+      "whatsNew": "Quoi de neuf",
       "update": "Mettre à jour"
     }
   },
