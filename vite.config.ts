@@ -138,11 +138,23 @@ export default defineConfig((env) => {
       react(),
       VitePWA({
         mode: env.mode !== "development" ? "production" : "development",
+        manifestFilename: "manifest.json",
+        // These files are downloaded in the background automatically and stored
+        // in the service worker cache.
         includeAssets: [
           "data-pkmn.json",
           "locales/*.json",
-          "translations/*.json",
+          "manifest.json",
+          "favicon-*.png",
         ],
+        workbox: {
+          // These files are excluded from the service worker cache. Given there
+          // are over 1000 images, we don't want to cache them all, much less
+          // force the user to download them on first page load. Translations
+          // should be downloaded by very few users, so we don't want to cache
+          // them either.
+          navigateFallbackDenylist: [/^\/translations\//, /^\/img\//],
+        },
         devOptions: {
           enabled: devUserServiceWorker === "true",
         },
