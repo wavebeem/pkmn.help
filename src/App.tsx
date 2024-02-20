@@ -58,6 +58,7 @@ export function App() {
     updateServiceWorker,
   } = useRegisterSW();
   useUpdateSW();
+  // TODO: Fix this CSV download when using SW in Firefox
 
   async function updateApp() {
     setNeedRefresh(false);
