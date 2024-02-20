@@ -18,7 +18,7 @@ offense.coverageList.normal.heading,Normal Effectiveness Coverage List,Elenco de
 offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,Questi Pokémon non sono né nella lista delle debolezze né nella lista delle resistenze per i tipi selezionati.
 offense.coverageList.resistance.heading,Resistance Coverage List,ELenco della copertura resistenze
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,Questi Pokémon resistono tutti i tipi selezionatii.
-coverage.heading,Pokédex Coverage,Copertura bebolezze
+coverage.heading,Pokédex Coverage,Copertura debolezze
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",Importa/esporta file CSV Pokédex personalizzati per vedere la copertura delle debolezze per diversi Pokémon. Crea un file CSV personalizzato solo con i Pokémon di tier OU (Estremamente usati) o creare perfino i tuoi Pokémon da zero.
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","I dati CSV vengono caricati dal nome dell'intestazione della colonna, non dall'ordine delle colonne, quindi puoi aggiungere o riordinare le colonne se vuoi (es: aggiungi una colonna ""livello"" o una colonna ""note"")."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","I file CSV possono essere modificati con Fogli Google, Microsoft Excel, OpenOffice, LibreOffice, Blocco note e altro."
@@ -125,7 +125,7 @@ pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are 
 pokedexHelp.back,Back to Pokédex,Torna al Pokédex
 more.contact.heading,Contact me,Contattami
 more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Ciao, sono <homepage>Sage Fennel</homepage> (they/them) e ho creato il Calcolatore di Tipi Pokémon (pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Per cortesia, invia un'e-mail con i tuoi pensieri e ringraziamenti a <email>pkmn@wavebeem.com</email>."
+more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Per favore, invia un'e-mail con i tuoi pensieri e ringraziamenti a <email>pkmn@wavebeem.com</email>."
 more.settings.heading,Settings,Impostazioni
 more.settings.language.label,Language,Lingua
 more.settings.language.default,Auto detect language,Individua lingua automaticamente

@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Generation } from "./data-generations";
 import {
   CoverageType,
@@ -31,7 +31,7 @@ export function ScreenOffense({
 }: OffenseProps) {
   const { t } = useTranslation();
   const search = useSearch();
-  const history = useHistory();
+  const navigate = useNavigate();
   const offenseTypes = typesFromString(search.get("types") || "");
 
   function createParams(types: Type[]): string {
@@ -50,7 +50,7 @@ export function ScreenOffense({
   }, [generation]);
 
   const updateOffenseTypes = (types: Type[]) => {
-    history.replace({ search: createParams(types) });
+    navigate({ search: createParams(types) }, { replace: true });
   };
 
   const params = createParams(offenseTypes);

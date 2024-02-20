@@ -2,7 +2,7 @@ import classNames from "classnames";
 import * as React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { Link, NavLink, Redirect, Route, Switch } from "react-router-dom";
+import { Link, NavLink, Navigate, Route, Routes } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { CoverageType, Pokemon } from "./data-types";
@@ -35,6 +35,10 @@ const tabClass = classNames([
 ]);
 
 const tabClassActive = classNames(["button-selected"]);
+
+function getTabClass({ isActive }: { isActive: boolean }): string {
+  return classNames(tabClass, isActive && tabClassActive);
+}
 
 function getFallback(key: string): string {
   if (key === "title") {
@@ -163,86 +167,73 @@ export function App() {
           )}
         </h1>
         <nav className={`bg1 bb border2 ${styles.tabBar} pb2 ph2`}>
-          <NavLink
-            className={tabClass}
-            activeClassName={tabClassActive}
-            to={`/offense/${offenseParams}`}
-          >
+          <NavLink className={getTabClass} to={`/offense/${offenseParams}`}>
             {t("navigation.offense")}
           </NavLink>
-          <NavLink
-            className={tabClass}
-            activeClassName={tabClassActive}
-            to={`/defense/${defenseParams}`}
-          >
+          <NavLink className={getTabClass} to={`/defense/${defenseParams}`}>
             {t("navigation.defense")}
           </NavLink>
-          <NavLink
-            className={tabClass}
-            activeClassName={tabClassActive}
-            to={`/pokedex/${pokedexParams}`}
-          >
+          <NavLink className={getTabClass} to={`/pokedex/${pokedexParams}`}>
             {t("navigation.pokedex")}
           </NavLink>
           <NavLink
-            className={classNames(tabClass, needRefresh && styles.pleaseUpdate)}
-            activeClassName={tabClassActive}
+            className={({ isActive }) => {
+              return classNames(
+                getTabClass({ isActive }),
+                needRefresh && styles.pleaseUpdate
+              );
+            }}
             to="/more/"
           >
             {t("navigation.more")}
           </NavLink>
         </nav>
         <React.Suspense fallback={<Spinner />}>
-          <Switch>
+          <Routes>
             <Route
-              exact
               path="/offense/coverage/weakness/"
-              render={() => (
+              element={
                 <ScreenCoverageList
                   mode="weakness"
                   generation={generation}
                   coverageTypes={coverageTypes}
                 />
-              )}
+              }
             />
             <Route
-              exact
               path="/offense/coverage/resistance/"
-              render={() => (
+              element={
                 <ScreenCoverageList
                   mode="resistance"
                   generation={generation}
                   coverageTypes={coverageTypes}
                 />
-              )}
+              }
             />
             <Route
-              exact
               path="/offense/coverage/normal/"
-              render={() => (
+              element={
                 <ScreenCoverageList
                   mode="normal"
                   generation={generation}
                   coverageTypes={coverageTypes}
                 />
-              )}
+              }
             />
             <Route
-              exact
               path="/offense/coverage/"
-              render={() => (
+              element={
                 <ScreenWeaknessCoverage
                   setCoverageTypes={setCoverageTypes}
                   offenseParams={offenseParams}
                   fallbackCoverageTypes={fallbackCoverageTypes}
                   isLoading={isLoading}
                 />
-              )}
+              }
             />
             <Route
-              exact
               path="/offense/"
-              render={() => (
+              element={
                 <ScreenOffense
                   generation={generation}
                   coverageTypes={coverageTypes}
@@ -250,46 +241,42 @@ export function App() {
                   fallbackCoverageTypes={fallbackCoverageTypes}
                   isLoading={isLoading}
                 />
-              )}
+              }
             />
             <Route
-              exact
               path="/defense/"
-              render={() => (
+              element={
                 <ScreenDefense
                   generation={generation}
                   setDefenseParams={setDefenseParams}
                 />
-              )}
+              }
             />
             <Route
-              exact
               path="/pokedex/help/"
-              render={() => <ScreenPokedexHelp pokedexParams={pokedexParams} />}
+              element={<ScreenPokedexHelp pokedexParams={pokedexParams} />}
             />
             <Route
-              exact
               path="/pokedex/"
-              render={() => (
+              element={
                 <ScreenPokedex
                   setPokedexParams={setPokedexParams}
                   allPokemon={AllPokemon}
                   isLoading={isLoading}
                 />
-              )}
+              }
             />
             <Route
-              exact
               path="/more/"
-              render={() => (
+              element={
                 <ScreenMore
                   needsAppUpdate={needRefresh}
                   updateApp={updateApp}
                 />
-              )}
+              }
             />
-            <Redirect to="/defense/" />
-          </Switch>
+            <Route path="/*" element={<Navigate to="/defense/" />} />
+          </Routes>
         </React.Suspense>
       </div>
     </HelmetProvider>

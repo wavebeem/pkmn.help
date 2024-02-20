@@ -1,6 +1,7 @@
 import * as React from "react";
 
 interface ErrorBoundaryProps {
+  children: React.ReactNode;
   render: (error: Error) => React.ReactNode;
 }
 
