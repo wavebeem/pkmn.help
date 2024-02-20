@@ -27,7 +27,7 @@ export function TranslationCard({ lang }: TranslationCardProps): JSX.Element {
       <p className="ma0 bt border3 ph3 pt2 pb2 mt3">
         <a
           href={`/translations/${lang}.csv`}
-          download={`pkmn.help - ${languageNamesEnglish[lang]}.csv`}
+          // download={`pkmn.help - ${languageNamesEnglish[lang]}.csv`}
           className="no-underline fg-link focus-outline br2"
         >
           Download {languageNamesEnglish[lang]} CSV
