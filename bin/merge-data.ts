@@ -1,13 +1,13 @@
 /* eslint-disable no-console */
 import * as fs from "fs";
-import { uniqBy, sortBy } from "lodash";
+import { uniqBy, sortBy } from "lodash-es";
 import * as path from "path";
-import { saveJSON } from "./util";
+import { saveJSON } from "./util.js";
 
-// const pokemondbJSON = path.resolve(__dirname, "../data/pokemondb-gen9.json");
-const pokeapiJSON = path.resolve(__dirname, "../data/pokemon.json");
-const mergedJSON = path.resolve(__dirname, "../data/merged-pokemon.json");
-const destJSON = path.resolve(__dirname, "../public/data-pkmn.json");
+// const pokemondbJSON = "data/pokemondb-gen9.json";
+const pokeapiJSON = "data/pokemon.json";
+const mergedJSON = "data/merged-pokemon.json";
+const destJSON = "public/data-pkmn.json";
 
 function loadJSON(filename: string): any {
   const json = fs.readFileSync(filename, "utf-8");
@@ -51,9 +51,7 @@ export async function mergeData(): Promise<void> {
   for (const m of mons) {
     delete m.spriteURL;
     delete m.shinySpriteURL;
-    if (
-      fs.existsSync(path.resolve(__dirname, `../public/img/${m.id}-shiny.png`))
-    ) {
+    if (fs.existsSync(`public/img/${m.id}-shiny.png`)) {
       m.hasShiny = true;
     }
     const id = String(m.id || m.number);

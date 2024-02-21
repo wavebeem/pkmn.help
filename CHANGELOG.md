@@ -1,5 +1,10 @@
 # Changelog
 
+## 2024-02-20
+
+- Trying to fix a bug where Firefox won't download translation CSV files
+  correctly
+
 ## 2024-02-16
 
 - Updated Italian translation

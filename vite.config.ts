@@ -6,6 +6,8 @@ import { VitePWA } from "vite-plugin-pwa";
 import * as fs from "fs";
 import * as path from "path";
 
+const devUserServiceWorker = process.env.DEV_USE_SERVICE_WORKER;
+
 function readJSON(filename: string): any {
   const text = fs.readFileSync(filename, "utf-8");
   const json = JSON.parse(text);
@@ -115,7 +117,7 @@ function saveMissingTranslationsFor(lang: string) {
   const headers = ["Key", "en", lang];
   const csvData = [headers, ...data];
   const csv = Papa.unparse(csvData, { header: true });
-  const filename = path.resolve(__dirname, `./public/translations/${lang}.csv`);
+  const filename = `./public/translations/${lang}.csv`;
   fs.writeFileSync(filename, csv, "utf-8");
 }
 
@@ -136,7 +138,62 @@ export default defineConfig((env) => {
       react(),
       VitePWA({
         mode: env.mode !== "development" ? "production" : "development",
-        includeAssets: ["data-pkmn.json", "locales/*.json"],
+        manifest: {
+          name: "Pokémon Type Calculator",
+          short_name: "pkmn.help",
+          lang: "en",
+          start_url: "/",
+          orientation: "any",
+          icons: [
+            {
+              src: "/favicon-16.png",
+              sizes: "16x16",
+              type: "image/png",
+            },
+            {
+              src: "/favicon-32.png",
+              sizes: "32x32",
+              type: "image/png",
+            },
+            {
+              src: "/favicon-180.png",
+              sizes: "180x180",
+              type: "image/png",
+              purpose: "any maskable",
+            },
+            {
+              src: "/favicon-192.png",
+              sizes: "192x192",
+              type: "image/png",
+              purpose: "any maskable",
+            },
+            {
+              src: "/favicon-512.png",
+              sizes: "512x512",
+              type: "image/png",
+              purpose: "any maskable",
+            },
+          ],
+          theme_color: "hsl(357, 97%, 46%)",
+          background_color: "hsl(357, 97%, 46%)",
+          display: "standalone",
+        },
+        // These files are downloaded in the background automatically and stored
+        // in the service worker cache.
+        includeAssets: [
+          "data-pkmn.json",
+          "locales/*.json",
+          "manifest.json",
+          "favicon-*.png",
+        ],
+        workbox: {
+          // These files are excluded from the service worker cache. Given there
+          // are over 1000 images, we don't want to cache them all, much less
+          // force the user to download them on first page load. Translations
+          // should be downloaded by very few users, so we don't want to cache
+          // them either.
+          navigateFallbackDenylist: [/^\/translations\//, /^\/img\//],
+        },
       }),
     ],
   };

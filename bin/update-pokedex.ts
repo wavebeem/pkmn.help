@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 import { argv } from "process";
-import { fetchImages } from "./fetch-images";
-import { mergeData } from "./merge-data";
-import { scrapePokeapi } from "./scrape-pokeapi";
+import { fetchImages } from "./fetch-images.js";
+import { mergeData } from "./merge-data.js";
+import { scrapePokeapi } from "./scrape-pokeapi.js";
 
 async function main(flags: string[]) {
   if (!flags.includes("fast")) {

@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Button } from "./Button";
 import { Generation } from "./data-generations";
 import {
@@ -40,6 +40,10 @@ const tabClass = classNames([
 ]);
 
 const tabClassActive = classNames(["button-selected"]);
+
+function getTabClass({ isActive }: { isActive: boolean }): string {
+  return classNames(tabClass, isActive && tabClassActive);
+}
 
 function setAbilityAt({
   list,
@@ -83,7 +87,7 @@ export function ScreenDefense({
   const { t } = useTranslation();
 
   const search = useSearch();
-  const history = useHistory();
+  const navigate = useNavigate();
 
   const [teamTypes, setTeamTypes] = useTeamTypes();
   const [teamAbilities, setTeamAbilities] = useTeamAbilities();
@@ -165,7 +169,7 @@ export function ScreenDefense({
     setTeamTypes(state.teamTypesList);
     setTeamAbilities(state.teamAbilityList);
     if (search !== location.search) {
-      history.replace({ search });
+      navigate({ search }, { replace: true });
     }
   }
 
@@ -221,19 +225,12 @@ export function ScreenDefense({
         <div className="flex-auto w-50-ns">
           <h2 className={classH2}>{t("defense.mode.heading")}</h2>
           <div className="flex flex-wrap gap2">
-            <NavLink
-              to={params}
-              className={tabClass}
-              activeClassName={tabClassActive}
-              isActive={() => true}
-            >
+            <NavLink to={params} className={getTabClass({ isActive: true })}>
               {t("defense.mode.solo")}
             </NavLink>
             <NavLink
               to={oppositeParams}
-              className={tabClass}
-              activeClassName={tabClassActive}
-              isActive={() => false}
+              className={getTabClass({ isActive: false })}
             >
               {t("defense.mode.team")}
             </NavLink>
@@ -312,18 +309,11 @@ export function ScreenDefense({
         <div className="flex flex-wrap gap2">
           <NavLink
             to={oppositeParams}
-            className={tabClass}
-            activeClassName={tabClassActive}
-            isActive={() => false}
+            className={getTabClass({ isActive: false })}
           >
             {t("defense.mode.solo")}
           </NavLink>
-          <NavLink
-            to={params}
-            className={tabClass}
-            activeClassName={tabClassActive}
-            isActive={() => true}
-          >
+          <NavLink to={params} className={getTabClass({ isActive: true })}>
             {t("defense.mode.team")}
           </NavLink>
         </div>

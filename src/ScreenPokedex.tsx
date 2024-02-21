@@ -2,7 +2,7 @@ import classNames from "classnames";
 import matchSorter from "match-sorter";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDebounce } from "use-debounce";
 import { Pokemon, Type, typesFromUserInput } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
@@ -188,7 +188,7 @@ export function ScreenPokedex({
   const { t, i18n } = useTranslation();
   const { language } = i18n;
   const search = useSearch();
-  const history = useHistory();
+  const navigate = useNavigate();
   const query = search.get("q") || "";
   const [debouncedQuery] = useDebounce(query, 500);
   const page = Number(search.get("page") || 1) - 1;
@@ -245,7 +245,7 @@ export function ScreenPokedex({
 
   function update(newQuery: string, newPage: number) {
     const params = createParams(newQuery, newPage);
-    history.replace({ search: params });
+    navigate({ search: params }, { replace: true });
   }
 
   const params = createParams(query, page);
