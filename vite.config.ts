@@ -194,9 +194,6 @@ export default defineConfig((env) => {
           // them either.
           navigateFallbackDenylist: [/^\/translations\//, /^\/img\//],
         },
-        devOptions: {
-          enabled: devUserServiceWorker === "true",
-        },
       }),
     ],
   };
