@@ -117,7 +117,7 @@ function saveMissingTranslationsFor(lang: string) {
   const headers = ["Key", "en", lang];
   const csvData = [headers, ...data];
   const csv = Papa.unparse(csvData, { header: true });
-  const filename = path.resolve(__dirname, `./public/translations/${lang}.csv`);
+  const filename = `./public/translations/${lang}.csv`;
   fs.writeFileSync(filename, csv, "utf-8");
 }
 

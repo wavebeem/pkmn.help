@@ -2,11 +2,11 @@
 import fs from "fs";
 import fetch from "node-fetch";
 import path from "path";
-import { readJSON, saveJSON } from "./util";
+import { readJSON, saveJSON } from "./util.js";
 
-const SRC = path.resolve(__dirname, "../data/merged-pokemon.json");
-const IMG_DEST = path.resolve(__dirname, "../public/img");
-const DATA_DEST = path.resolve(__dirname, "../public/data-pkmn.json");
+const SRC = "data/merged-pokemon.json";
+const IMG_DEST = "public/img";
+const DATA_DEST = "public/data-pkmn.json";
 
 async function fetchBuffer(url: string): Promise<Buffer> {
   const resp = await fetch(url);

@@ -2,10 +2,10 @@
 import fetch from "node-fetch";
 import path from "path";
 import { URL } from "url";
-import { saveJSON } from "./util";
+import { saveJSON } from "./util.js";
 
 const API = process.env.API || "https://pokeapi.co/api/v2/";
-const DEST = path.resolve(__dirname, "../data");
+const DEST = "data";
 
 interface PokemonSpeciesBasic {
   name: string;

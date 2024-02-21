@@ -1,6 +1,6 @@
 import fs from "fs";
 import Papa from "papaparse";
-import { saveJSON } from "./util";
+import { saveJSON } from "./util.js";
 
 /**
  * Set a deeply nested property on an object

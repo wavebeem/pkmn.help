@@ -1,7 +1,6 @@
 import fs from "fs";
 import Papa from "papaparse";
-import path from "path";
-import { readJSON } from "./util";
+import { readJSON } from "./util.js";
 
 function* walk({
   english,
@@ -43,7 +42,7 @@ async function main() {
   const other = readJSON(`../public/locales/${lang}.json`) || {};
   const csvData = [["Key", "en", lang], ...walk({ english, other })];
   const csv = Papa.unparse(csvData, { header: true });
-  fs.writeFileSync(path.resolve(__dirname, `../${lang}.csv`), csv, "utf-8");
+  fs.writeFileSync(`../${lang}.csv`, csv, "utf-8");
 }
 
 main().catch((err) => {
