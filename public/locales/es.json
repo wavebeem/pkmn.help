@@ -252,6 +252,7 @@
         "it": "Traducción al Italiano",
         "ko": "Traducción al Coreano",
         "ja": "Traducción al Japonés",
+        "nl": "Traducción al Neerlandés",
         "testing": "Pruebas",
         "other": "Varios Poké Fans anónimos"
       }
@@ -287,7 +288,7 @@
   },
   "banners": {
     "updateReady": {
-      "description": "Está disponible una actualización",
+      "description": "Hay una actualización disponible",
       "whatsNew": "Novedades",
       "update": "Actualizar"
     }
