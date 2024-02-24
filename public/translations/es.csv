@@ -161,7 +161,7 @@ more.thanks.sections.de,German translation,Traducción al Alemán
 more.thanks.sections.it,Italian translation,Traducción al Italiano
 more.thanks.sections.ko,Korean translation,Traducción al Coreano
 more.thanks.sections.ja,Japanese translation,Traducción al Japonés
-more.thanks.sections.nl,Dutch translation,
+more.thanks.sections.nl,Dutch translation,Traducción al Neerlandés
 more.thanks.sections.testing,Testing,Pruebas
 more.thanks.sections.other,Several anonymous Poké Fans,Varios Poké Fans anónimos
 more.openSource.heading,Open source,Código Abierto
@@ -186,7 +186,7 @@ types.dragon,Dragon,Dragón
 types.dark,Dark,Siniestro
 types.fairy,Fairy,Hada
 types.none,None,Ninguno
-banners.updateReady.description,An update is available,Está disponible una actualización
+banners.updateReady.description,An update is available,Hay una actualización disponible
 banners.updateReady.whatsNew,What’s new,Novedades
 banners.updateReady.update,Update,Actualizar
 general.loading,Loading…,Cargando...
