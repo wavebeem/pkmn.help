@@ -1,5 +1,13 @@
 # Changelog
 
+## 2024-02-26
+
+- Updated Brazilian Portuguese translations
+
+## 2024-02-24
+
+- Updated Spanish translations
+
 ## 2024-02-20
 
 - Trying to fix a bug where Firefox won't download translation CSV files
