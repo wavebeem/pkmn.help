@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-03-01
+
+- Added Traditional Chinese translation
+
 ## 2024-02-26
 
 - Updated Brazilian Portuguese translations
