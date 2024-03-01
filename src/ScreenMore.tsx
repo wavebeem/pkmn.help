@@ -465,6 +465,9 @@ export function ScreenMore({
         <ul className="list mb0 mt1 pl3">
           <li>Dragonify</li>
         </ul>
+        <ul className="list mb0 mt1 pl3">
+          <li>Tin</li>
+        </ul>
 
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ro")}</h3>
         <ul className="list mb0 mt1 pl3">
