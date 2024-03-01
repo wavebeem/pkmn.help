@@ -50,6 +50,24 @@ export const languageNamesNative: Record<Lang, string> = {
   ko: `한국어`,
 };
 
+const officialLanguages = [
+  "en",
+  "es",
+  "de",
+  "it",
+  "fr",
+  "ja",
+  "zh-Hans",
+  "zh-Hant",
+  "ko",
+] as const;
+
+export const officialLanguagesSet = new Set(officialLanguages);
+
+const unofficialLanguages = Object.keys(languageNamesNative).filter((lang) => {
+  return !officialLanguagesSet.has(lang as any);
+});
+
 export const languageNamesEnglish: Record<Lang, string> = {
   en: ``,
   es: `Spanish`,
@@ -92,7 +110,7 @@ export const languageBounty: Record<Lang, number> = {
 
 export function formatLanguageCompletion(lang: string): string {
   const value = languageCompletions[lang] || 0;
-  const n = (value * 100).toFixed(1);
+  const n = Math.floor(value * 100);
   return `${n}%`;
 }
 
@@ -230,14 +248,25 @@ export function ScreenMore({
             {t("more.settings.language.default")} &ndash; {showLang(autoLang)}{" "}
             &ndash; {formatLanguageCompletion(autoLang)}
           </option>
-          <option disabled>&ndash;</option>
-          {Object.keys(languageNamesNative).map((lang) => {
+          <hr />
+          {officialLanguages.map((lang) => {
             if (!isLang(lang)) {
               throw new Error(`${lang} is not a valid language`);
             }
             return (
               <option value={lang} key={lang}>
-                {showLang(lang)} &ndash; {formatLanguageCompletion(lang)}
+                {showLang(lang)} ({formatLanguageCompletion(lang)})
+              </option>
+            );
+          })}
+          <hr />
+          {unofficialLanguages.map((lang) => {
+            if (!isLang(lang)) {
+              throw new Error(`${lang} is not a valid language`);
+            }
+            return (
+              <option value={lang} key={lang}>
+                {showLang(lang)} ({formatLanguageCompletion(lang)})
               </option>
             );
           })}
