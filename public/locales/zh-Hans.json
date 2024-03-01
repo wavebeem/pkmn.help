@@ -1,5 +1,5 @@
 {
-  "title": "宝可梦属性计算机",
+  "title": "宝可梦属性计算器",
   "navigation": {
     "offense": "攻击方",
     "defense": "防御方",
@@ -8,10 +8,32 @@
   },
   "offense": {
     "chooseTypes": "选择属性",
-    "dealsXTo": "产生 {{ x }} 伤害"
+    "dealsXTo": "产生 {{ x }} 伤害",
+    "coverage": {
+      "heading": "宝可梦图鉴覆盖率",
+      "edit": "编辑列表",
+      "weakness": "被克制",
+      "normal": "没有属性相克",
+      "resistance": "抵抗"
+    },
+    "coverageList": {
+      "empty": "没有找到宝可梦或没有选择属性",
+      "weakness": {
+        "heading": "效果绝佳列表",
+        "description": "这些宝可梦克制被选择的属性"
+      },
+      "normal": {
+        "heading": "效果一般列表",
+        "description": "这些宝可梦不抵抗也不克制被选择的属性"
+      },
+      "resistance": {
+        "heading": "效果不好列表",
+        "description": "这些宝可梦抵抗被选择的属性"
+      }
+    }
   },
   "coverage": {
-    "heading": "弱点覆盖范围",
+    "heading": "宝可梦图鉴覆盖范围",
     "paragraph1": "导入或导出定制的图鉴CSV文件以参考不同宝可梦的弱点覆盖范围。你可制作只有OU阶级宝可梦的特制CSV文件，或是甚至从零制作你自己的宝可梦。",
     "paragraph2": "CSV的资料是以列标题名称加载，而非列顺序，因此你可随意增加或重排列（例：加个“阶级”列，或者“注明”列）",
     "paragraph3": "CSV文件可用Google 表格、Microsoft Excel、OpenOffice、LibreOffice、记事本等编辑。",
@@ -47,20 +69,69 @@
     "chooseFirst": "选择第一属性",
     "chooseSecond": "选择第二属性",
     "chooseThird": "选择第三属性",
-    "takesXFrom": "受到 {{ x }} 伤害"
+    "takesXFrom": "受到 {{ x }} 伤害",
+    "chooseAbility": "特性",
+    "abilityNames": {
+      "none": "无",
+      "wonder_guard": "神奇守护",
+      "delta_stream": "德尔塔气流",
+      "fluffy": "毛茸茸",
+      "purifying_salt": "洁净之盐",
+      "heatproof": "耐热",
+      "water_bubble": "水泡",
+      "thick_fat": "厚脂肪",
+      "earth_eater": "食土",
+      "levitate": "飘浮",
+      "flash_fire": "引火",
+      "well_baked_body": "焦香之躯",
+      "dry_skin": "干燥皮肤",
+      "storm_drain": "引水",
+      "water_absorb": "储水",
+      "sap_sipper": "食草",
+      "lightning_rod": "避雷针",
+      "motor_drive": "电气引擎",
+      "volt_absorb": "蓄电"
+    },
+    "mode": {
+      "heading": "选择模式",
+      "solo": "单只模式",
+      "team": "队伍模式"
+    },
+    "team": {
+      "tableHeading": "对战统计",
+      "heading": "编辑队伍",
+      "add": "添加宝可梦",
+      "empty": "没有选择的宝可梦",
+      "displayType": "列表样式",
+      "weak": "被克制",
+      "resist": "抵抗",
+      "simple": "简单表格",
+      "complex": "复杂表格",
+      "type": "属性",
+      "save": "保存",
+      "saveLong": "保存 {{ name }}",
+      "edit": "编辑",
+      "editLong": "编辑 {{ name }}",
+      "remove": "移除",
+      "removeLong": "移除 {{ name }}"
+    }
   },
   "pokedex": {
     "search": {
       "description": "按名称、编号或属性搜索",
       "help": "帮助",
       "helpLong": "帮助，搜索图鉴",
-      "notFound": "未找到相符宝可梦"
+      "notFound": "未找到符合的宝可梦"
     },
     "offense": {
       "text": "攻击方"
     },
     "defense": {
       "text": "防御方"
+    },
+    "shiny": {
+      "label": "{{ pokemon }} 的闪光",
+      "text": "闪光"
     },
     "pagination": {
       "next": "下页",
@@ -118,33 +189,38 @@
   },
   "more": {
     "contact": {
-      "heading": "联系",
-      "intro": "你好，我是 <homepage>Sage Fennel</homepage>（they/them)，是宝可梦属性计算机（pkmn.help）的作者。",
+      "heading": "联系我",
+      "intro": "你好，我是 <homepage>Sage Fennel</homepage>（they/them)，是宝可梦属性计算器（pkmn.help）的作者。",
       "email": "请将你的想法和感谢寄到 <email>pkmn@wavebeem.com</email>。"
     },
     "settings": {
       "heading": "设定",
       "language": {
         "label": "语言",
-        "helpText": "语言支持不完整。请电邮我，我会支付你翻译。"
+        "default": "自动检测语言",
+        "helpText": "语言支持不完整。请给我发邮件，我会有偿请你翻译。"
       },
       "theme": {
         "label": "背景",
         "help": "“系统默认”会根据你的系统设定自动调整。",
         "values": {
           "auto": "系统默认",
-          "light": "亮色",
-          "dark": "深色"
+          "light": "浅色主题",
+          "dark": "深色主题"
         }
       },
       "typeCount": {
         "label": "属性的数量",
-        "help": "宝可梦偶尔如果被森林诅咒或万圣夜攻击后会被追加第三种属性。由于极少使用的原因，第三属性的栏位默认为隐藏。",
+        "help": "如果宝可梦被森林诅咒或万圣夜攻击后则会被追加第三种属性。由于例子很少的原因，第三属性的栏位默认为隐藏。",
         "values": {
           "2": "两种属性（2）",
           "3": "三种属性（3）"
         }
       }
+    },
+    "changes": {
+      "heading": "新闻",
+      "description": "点这里 <changelog>changelog</changelog> 查看更新"
     },
     "help": {
       "heading": "帮助",
@@ -169,11 +245,14 @@
         "kk": "哈萨克语翻译",
         "pt-BR": "巴西葡萄牙语翻译",
         "zh-Hans": "简体中文翻译",
-        "ro": "罗马尼亚文翻译",
-        "fr": "法文翻译",
-        "de": "德文翻译",
-        "it": "意大利文翻译",
-        "ja": "日文翻译",
+        "ro": "罗马尼亚语翻译",
+        "pl": "波兰语翻译",
+        "fr": "法语翻译",
+        "de": "德语翻译",
+        "it": "意大利语翻译",
+        "ko": "韩语翻译",
+        "ja": "日语翻译",
+        "nl": "荷兰语翻译",
         "testing": "测试",
         "other": "数位匿名宝可梦玩家"
       }
@@ -210,6 +289,7 @@
   "banners": {
     "updateReady": {
       "description": "有更新可用",
+      "whatsNew": "近期新闻",
       "update": "更新"
     }
   },

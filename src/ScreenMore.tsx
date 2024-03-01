@@ -74,7 +74,7 @@ export const languageBounty: Record<Lang, number> = {
   en: 0,
   es: 0,
   "pt-BR": 0,
-  de: 0,
+  de: 30,
   da: 0,
   it: 0,
   fr: 0,
@@ -85,7 +85,7 @@ export const languageBounty: Record<Lang, number> = {
   kk: 0,
   ja: 50,
   "ja-Hrkt": 0,
-  "zh-Hans": 50,
+  "zh-Hans": 0,
   "zh-Hant": 100,
   ko: 50,
 };
@@ -464,6 +464,9 @@ export function ScreenMore({
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.zh-Hans")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Dragonify</li>
+        </ul>
+        <ul className="list mb0 mt1 pl3">
+          <li>Tin</li>
         </ul>
 
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ro")}</h3>
