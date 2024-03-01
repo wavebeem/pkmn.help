@@ -1,24 +1,24 @@
 Key,en,zh-Hans
-title,Pokémon Type Calculator,宝可梦属性计算机
+title,Pokémon Type Calculator,宝可梦属性计算器
 navigation.offense,Offense,攻击方
 navigation.defense,Defense,防御方
 navigation.pokedex,Pokédex,图鉴
 navigation.more,More,更多
 offense.chooseTypes,Choose types,选择属性
 offense.dealsXTo,Deals {{ x }} to,产生 {{ x }} 伤害
-offense.coverage.heading,Pokédex coverage,
-offense.coverage.edit,Edit list,
-offense.coverage.weakness,Weak,
-offense.coverage.normal,Normal,
-offense.coverage.resistance,Resist,
-offense.coverageList.empty,No Pokémon found or no types selected,
-offense.coverageList.weakness.heading,Weakness Coverage List,
-offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,
-offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,
-offense.coverageList.resistance.heading,Resistance Coverage List,
-offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,
-coverage.heading,Pokédex Coverage,弱点覆盖范围
+offense.coverage.heading,Pokédex coverage,宝可梦图鉴覆盖率
+offense.coverage.edit,Edit list,编辑列表
+offense.coverage.weakness,Weak,被克制
+offense.coverage.normal,Normal,没有属性相克
+offense.coverage.resistance,Resist,抵抗
+offense.coverageList.empty,No Pokémon found or no types selected,没有找到宝可梦或没有选择属性
+offense.coverageList.weakness.heading,Weakness Coverage List,效果绝佳列表
+offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,这些宝可梦克制被选择的属性
+offense.coverageList.normal.heading,Normal Effectiveness Coverage List,效果一般列表
+offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,这些宝可梦不抵抗也不克制被选择的属性
+offense.coverageList.resistance.heading,Resistance Coverage List,效果不好列表
+offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,这些宝可梦抵抗被选择的属性
+coverage.heading,Pokédex Coverage,宝可梦图鉴覆盖范围
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",导入或导出定制的图鉴CSV文件以参考不同宝可梦的弱点覆盖范围。你可制作只有OU阶级宝可梦的特制CSV文件，或是甚至从零制作你自己的宝可梦。
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",CSV的资料是以列标题名称加载，而非列顺序，因此你可随意增加或重排列（例：加个“阶级”列，或者“注明”列）
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.",CSV文件可用Google 表格、Microsoft Excel、OpenOffice、LibreOffice、记事本等编辑。
@@ -43,53 +43,53 @@ defense.chooseFirst,Choose first type,选择第一属性
 defense.chooseSecond,Choose second type,选择第二属性
 defense.chooseThird,Choose third type,选择第三属性
 defense.takesXFrom,Takes {{ x }} from,受到 {{ x }} 伤害
-defense.chooseAbility,Choose ability,
-defense.abilityNames.none,None,
-defense.abilityNames.wonder_guard,Wonder Guard,
-defense.abilityNames.delta_stream,Delta Stream,
-defense.abilityNames.fluffy,Fluffy,
-defense.abilityNames.purifying_salt,Purifying Salt,
-defense.abilityNames.heatproof,Heatproof,
-defense.abilityNames.water_bubble,Water Bubble,
-defense.abilityNames.thick_fat,Thick Fat,
-defense.abilityNames.earth_eater,Earth Eater,
-defense.abilityNames.levitate,Levitate,
-defense.abilityNames.flash_fire,Flash Fire,
-defense.abilityNames.well_baked_body,Well-Baked Body,
-defense.abilityNames.dry_skin,Dry Skin,
-defense.abilityNames.storm_drain,Storm Drain,
-defense.abilityNames.water_absorb,Water Absorb,
-defense.abilityNames.sap_sipper,Sap Sipper,
-defense.abilityNames.lightning_rod,Lightning Rod,
-defense.abilityNames.motor_drive,Motor Drive,
-defense.abilityNames.volt_absorb,Volt Absorb,
-defense.mode.heading,Choose mode,
-defense.mode.solo,Solo,
-defense.mode.team,Team,
-defense.team.tableHeading,Matchup counts,
-defense.team.heading,Edit Pokémon team,
-defense.team.add,Add Pokémon,
-defense.team.empty,No Pokémon selected,
-defense.team.displayType,Table format,
-defense.team.weak,Weak,
-defense.team.resist,Resist,
-defense.team.simple,Simple,
-defense.team.complex,Complex,
-defense.team.type,Type,
-defense.team.save,Save,
-defense.team.saveLong,Save {{ name }},
-defense.team.edit,Edit,
-defense.team.editLong,Edit {{ name }},
-defense.team.remove,Remove,
-defense.team.removeLong,Remove {{ name }},
+defense.chooseAbility,Choose ability,特性
+defense.abilityNames.none,None,无
+defense.abilityNames.wonder_guard,Wonder Guard,神奇守护
+defense.abilityNames.delta_stream,Delta Stream,德尔塔气流
+defense.abilityNames.fluffy,Fluffy,毛茸茸
+defense.abilityNames.purifying_salt,Purifying Salt,洁净之盐
+defense.abilityNames.heatproof,Heatproof,耐热
+defense.abilityNames.water_bubble,Water Bubble,水泡
+defense.abilityNames.thick_fat,Thick Fat,厚脂肪
+defense.abilityNames.earth_eater,Earth Eater,食土
+defense.abilityNames.levitate,Levitate,飘浮
+defense.abilityNames.flash_fire,Flash Fire,引火
+defense.abilityNames.well_baked_body,Well-Baked Body,焦香之躯
+defense.abilityNames.dry_skin,Dry Skin,干燥皮肤
+defense.abilityNames.storm_drain,Storm Drain,引水
+defense.abilityNames.water_absorb,Water Absorb,储水
+defense.abilityNames.sap_sipper,Sap Sipper,食草
+defense.abilityNames.lightning_rod,Lightning Rod,避雷针
+defense.abilityNames.motor_drive,Motor Drive,电气引擎
+defense.abilityNames.volt_absorb,Volt Absorb,蓄电
+defense.mode.heading,Choose mode,选择模式
+defense.mode.solo,Solo,单只模式
+defense.mode.team,Team,队伍模式
+defense.team.tableHeading,Matchup counts,对战统计
+defense.team.heading,Edit Pokémon team,编辑队伍
+defense.team.add,Add Pokémon,添加宝可梦
+defense.team.empty,No Pokémon selected,没有选择的宝可梦
+defense.team.displayType,Table format,列表样式
+defense.team.weak,Weak,被克制
+defense.team.resist,Resist,抵抗
+defense.team.simple,Simple,简单表格
+defense.team.complex,Complex,复杂表格
+defense.team.type,Type,属性
+defense.team.save,Save,保存
+defense.team.saveLong,Save {{ name }},保存 {{ name }}
+defense.team.edit,Edit,编辑
+defense.team.editLong,Edit {{ name }},编辑 {{ name }}
+defense.team.remove,Remove,移除
+defense.team.removeLong,Remove {{ name }},移除 {{ name }}
 pokedex.search.description,"Search by name, number, or types",按名称、编号或属性搜索
 pokedex.search.help,Help,帮助
 pokedex.search.helpLong,"Help, search Pokédex",帮助，搜索图鉴
-pokedex.search.notFound,No Pokémon found,未找到相符宝可梦
+pokedex.search.notFound,No Pokémon found,未找到符合的宝可梦
 pokedex.offense.text,Offense,攻击方
 pokedex.defense.text,Defense,防御方
-pokedex.shiny.label,Shiny for {{ pokemon }},
-pokedex.shiny.text,Shiny,
+pokedex.shiny.label,Shiny for {{ pokemon }},{{ pokemon }} 的闪光
+pokedex.shiny.text,Shiny,闪光
 pokedex.pagination.next,Next,下页
 pokedex.pagination.nextLong,Next,下页
 pokedex.pagination.previous,Prev,上页
@@ -123,24 +123,24 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,草 无
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",搜索只有草属性，没有第二属性的宝可梦（例：蔓藤怪、菊草叶、裙儿小姐）。
 pokedexHelp.back,Back to Pokédex,返回图鉴
-more.contact.heading,Contact me,联系
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",你好，我是 <homepage>Sage Fennel</homepage>（they/them)，是宝可梦属性计算机（pkmn.help）的作者。
+more.contact.heading,Contact me,联系我
+more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",你好，我是 <homepage>Sage Fennel</homepage>（they/them)，是宝可梦属性计算器（pkmn.help）的作者。
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,请将你的想法和感谢寄到 <email>pkmn@wavebeem.com</email>。
 more.settings.heading,Settings,设定
 more.settings.language.label,Language,语言
-more.settings.language.default,Auto detect language,
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",语言支持不完整。请电邮我，我会支付你翻译。
+more.settings.language.default,Auto detect language,自动检测语言
+more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",语言支持不完整。请给我发邮件，我会有偿请你翻译。
 more.settings.theme.label,Theme,背景
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“系统默认”会根据你的系统设定自动调整。
 more.settings.theme.values.auto,System default,系统默认
-more.settings.theme.values.light,Light,亮色
-more.settings.theme.values.dark,Dark,深色
+more.settings.theme.values.light,Light,浅色主题
+more.settings.theme.values.dark,Dark,深色主题
 more.settings.typeCount.label,Number of types,属性的数量
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,宝可梦偶尔如果被森林诅咒或万圣夜攻击后会被追加第三种属性。由于极少使用的原因，第三属性的栏位默认为隐藏。
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,如果宝可梦被森林诅咒或万圣夜攻击后则会被追加第三种属性。由于例子很少的原因，第三属性的栏位默认为隐藏。
 more.settings.typeCount.values.2,Two types (2),两种属性（2）
 more.settings.typeCount.values.3,Three types (3),三种属性（3）
-more.changes.heading,What’s new,
-more.changes.description,See what’s new in the <changelog>changelog</changelog>.,
+more.changes.heading,What’s new,新闻
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,点这里 <changelog>changelog</changelog> 查看更新
 more.help.heading,Help,帮助
 more.help.serviceWorker.description,This button can help fix issues in the app.,这个按钮能帮助修复程序的问题。
 more.help.serviceWorker.button,Reset,重置
@@ -154,14 +154,14 @@ more.thanks.sections.ru,Russian translation,俄语翻译
 more.thanks.sections.kk,Kazakh translation,哈萨克语翻译
 more.thanks.sections.pt-BR,Brazilian Portuguese translation,巴西葡萄牙语翻译
 more.thanks.sections.zh-Hans,Simplified Chinese translation,简体中文翻译
-more.thanks.sections.ro,Romanian translation,罗马尼亚文翻译
-more.thanks.sections.pl,Polish translation,
-more.thanks.sections.fr,French translation,法文翻译
-more.thanks.sections.de,German translation,德文翻译
-more.thanks.sections.it,Italian translation,意大利文翻译
-more.thanks.sections.ko,Korean translation,
-more.thanks.sections.ja,Japanese translation,日文翻译
-more.thanks.sections.nl,Dutch translation,
+more.thanks.sections.ro,Romanian translation,罗马尼亚语翻译
+more.thanks.sections.pl,Polish translation,波兰语翻译
+more.thanks.sections.fr,French translation,法语翻译
+more.thanks.sections.de,German translation,德语翻译
+more.thanks.sections.it,Italian translation,意大利语翻译
+more.thanks.sections.ko,Korean translation,韩语翻译
+more.thanks.sections.ja,Japanese translation,日语翻译
+more.thanks.sections.nl,Dutch translation,荷兰语翻译
 more.thanks.sections.testing,Testing,测试
 more.thanks.sections.other,Several anonymous Poké Fans,数位匿名宝可梦玩家
 more.openSource.heading,Open source,开放原始码
@@ -187,7 +187,7 @@ types.dark,Dark,恶
 types.fairy,Fairy,妖精
 types.none,None,无
 banners.updateReady.description,An update is available,有更新可用
-banners.updateReady.whatsNew,What’s new,
+banners.updateReady.whatsNew,What’s new,近期新闻
 banners.updateReady.update,Update,更新
 general.loading,Loading…,加载中……
 games.label,Game generation,游戏世代
