@@ -74,7 +74,7 @@ export const languageBounty: Record<Lang, number> = {
   en: 0,
   es: 0,
   "pt-BR": 0,
-  de: 0,
+  de: 30,
   da: 0,
   it: 0,
   fr: 0,
@@ -85,7 +85,7 @@ export const languageBounty: Record<Lang, number> = {
   kk: 0,
   ja: 50,
   "ja-Hrkt": 0,
-  "zh-Hans": 50,
+  "zh-Hans": 0,
   "zh-Hant": 100,
   ko: 50,
 };
