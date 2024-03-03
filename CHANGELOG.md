@@ -1,5 +1,11 @@
 # Changelog
 
+## 2024-03-03
+
+- Updated Korean translation
+
+- Fixed an issue where clicking the Bulbapedia link with Korean translations enabled would take you to the Bulbapedia page for the Korean name of the Pokemon, which would always result in a page not found error
+
 ## 2024-03-01
 
 - Updated Simplified Chinese translation
