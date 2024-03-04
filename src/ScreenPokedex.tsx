@@ -45,6 +45,8 @@ function getWikiLink(lang: string, pkmn: Pokemon): string {
     case "zh-Hans":
     case "zh-Hant":
       return `https://wiki.52poke.com/wiki/${getName("zt-Hans")}`;
+    case "ko":
+      return `https://namu.wiki/w/${getName("ko")}`;
   }
 }
 
@@ -66,6 +68,8 @@ function getWikiName(lang: string): string {
     case "zh-Hans":
     case "zh-Hant":
       return "神奇宝贝百科";
+    case "ko":
+      return "나무위키";
   }
 }
 
