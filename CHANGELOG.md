@@ -1,6 +1,6 @@
 # Changelog
 
-## 2024-03-03
+## 2024-03-04
 
 - Updated Korean translation
 
