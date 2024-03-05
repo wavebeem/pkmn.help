@@ -278,7 +278,7 @@ export function ScreenDefense({
               }}
             >
               <option value="">{t("defense.abilityNames.none")}</option>
-              <option disabled>&ndash;</option>
+              <hr />
               {sortedAbilityNames.map((name) => {
                 return (
                   <option key={name} value={name}>
@@ -443,7 +443,7 @@ export function ScreenDefense({
                       }}
                     >
                       <option value="">{t("defense.abilityNames.none")}</option>
-                      <option disabled>&ndash;</option>
+                      <hr />
                       {sortedAbilityNames.map((name) => {
                         return (
                           <option key={name} value={name}>

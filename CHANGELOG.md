@@ -1,5 +1,11 @@
 # Changelog
 
+## 2024-03-04
+
+- Updated Korean translation
+
+- Replaced Bulbapedia link with Namu Wiki link for Korean translation
+
 ## 2024-03-01
 
 - Updated Simplified Chinese translation
