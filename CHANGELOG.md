@@ -4,7 +4,7 @@
 
 - Updated Korean translation
 
-- Fixed an issue where clicking the Bulbapedia link with Korean translations enabled would take you to the Bulbapedia page for the Korean name of the Pokemon, which would always result in a page not found error
+- Replaced Bulbapedia link with Namu Wiki link for Korean translation
 
 ## 2024-03-01
 
