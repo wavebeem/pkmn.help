@@ -104,8 +104,8 @@ export const languageBounty: Record<Lang, number> = {
   ja: 50,
   "ja-Hrkt": 0,
   "zh-Hans": 0,
-  "zh-Hant": 100,
-  ko: 50,
+  "zh-Hant": 0,
+  ko: 0,
 };
 
 export function formatLanguageCompletion(lang: string): string {
@@ -498,6 +498,11 @@ export function ScreenMore({
           <li>Tin</li>
         </ul>
 
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.zh-Hant")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Nan Zheng</li>
+        </ul>
+
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ro")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Adam Hayes</li>
@@ -533,6 +538,7 @@ export function ScreenMore({
             Fabio <q>N&trade;</q> Ilari
           </li>
           <li>Banshee</li>
+          <li>Mathieu Licata</li>
         </ul>
 
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ko")}</h3>
