@@ -30,7 +30,7 @@ export function TranslationCard({ lang }: TranslationCardProps): JSX.Element {
         )}
       </div>
       <p className="ma0 ph3">{formatLanguageCompletion(lang)} translated</p>
-      <p className="ma0 bt border3 ph3 pt2 pb2 mt3">
+      <p className="mv0 mh2 bt border3 ph2 pt2 pb2 mt3">
         <a
           href={`/translations/${lang}.csv`}
           download={`pkmn.help - ${languageNamesEnglish[lang]}.csv`}

@@ -1,1 +1,309 @@
-{}
+{
+  "title": "神奇寶貝屬性計算器",
+  "navigation": {
+    "offense": "攻擊",
+    "defense": "防禦",
+    "pokedex": "寶可夢圖鑑",
+    "more": "更多"
+  },
+  "offense": {
+    "chooseTypes": "選擇屬性",
+    "dealsXTo": "對 {{ x }} 造成傷害",
+    "coverage": {
+      "heading": "寶可夢圖鑑涵蓋範圍",
+      "edit": "編輯列表",
+      "weakness": "弱點",
+      "normal": "正常",
+      "resistance": "抵抗"
+    },
+    "coverageList": {
+      "empty": "未找到寶可夢或未選擇屬性",
+      "weakness": {
+        "heading": "弱點涵蓋列表",
+        "description": "這些寶可夢對所選擇的屬性至少有一個弱點。"
+      },
+      "normal": {
+        "heading": "正常效果涵蓋列表",
+        "description": "這些寶可夢不在所選擇的屬性的弱點或抵抗列表中。"
+      },
+      "resistance": {
+        "heading": "抵抗涵蓋列表",
+        "description": "這些寶可夢對所有選定的屬性都具有抵抗力。"
+      }
+    }
+  },
+  "coverage": {
+    "heading": "寶可夢圖鑑涵蓋",
+    "paragraph1": "匯入/匯出自定義寶可夢圖鑑 CSV 檔案以查看不同寶可夢的涵蓋範圍。只需創建一個包含OU級寶可夢的自定義 CSV 檔案，甚至可以從頭開始創建您自己的寶可夢。",
+    "paragraph2": "CSV 數據是按列標題名稱加載的，而不是按列順序加載的，因此您可以根據需要添加或重新排序列 (例如添加“層級”列或“備註”列)。",
+    "paragraph3": "CSV 檔案可使用 Google Sheets、Microsoft Excel、OpenOffice、LibreOffice、記事本等編輯。",
+    "csvHeaders": {
+      "number": "編號",
+      "name": "名稱",
+      "type1": "屬性1",
+      "type2": "屬性2",
+      "type3": "屬性3"
+    },
+    "export": {
+      "button": "匯出",
+      "description": "將默認寶可夢圖鑑匯出為 CSV 檔案"
+    },
+    "import": {
+      "button": "匯入",
+      "description": "匯入編輯過的寶可夢圖鑑 CSV 檔案"
+    },
+    "reset": {
+      "button": "重置",
+      "description": "重置為默認寶可夢圖鑑"
+    },
+    "filename": "pkmn.help 屬性覆蓋範圍.csv",
+    "status": {
+      "imported": "從“{{ 檔案 }}”導入了 {{ n }} 個寶可夢形式",
+      "exported": "匯出了預設的寶可夢形式",
+      "reset": "載入了預設的寶可夢形式",
+      "errored": "載入 CSV 時出錯。不要更改標題名稱。"
+    },
+    "back": "返回攻擊"
+  },
+  "defense": {
+    "chooseFirst": "選擇第一個屬性",
+    "chooseSecond": "選擇第二個屬性",
+    "chooseThird": "選擇第三個屬性",
+    "takesXFrom": "從中取 {{ x }}",
+    "chooseAbility": "選擇技能",
+    "abilityNames": {
+      "none": "無",
+      "wonder_guard": "奇跡防守",
+      "delta_stream": "德爾塔氣流",
+      "fluffy": "毛茸茸",
+      "purifying_salt": "淨化之鹽",
+      "heatproof": "防熱",
+      "water_bubble": "水泡",
+      "thick_fat": "厚脂",
+      "earth_eater": "吞土",
+      "levitate": "飄浮",
+      "flash_fire": "熾熱火焰",
+      "well_baked_body": "烤得好的身體",
+      "dry_skin": "乾燥皮膚",
+      "storm_drain": "排水孔",
+      "water_absorb": "吸水",
+      "sap_sipper": "吸汁器",
+      "lightning_rod": "閃電棒",
+      "motor_drive": "電能引擎",
+      "volt_absorb": "吸電"
+    },
+    "mode": {
+      "heading": "選擇模式",
+      "solo": "單打",
+      "team": "隊伍"
+    },
+    "team": {
+      "tableHeading": "對戰次數",
+      "heading": "編輯寶可夢隊伍",
+      "add": "添加寶可夢",
+      "empty": "未選擇寶可夢",
+      "displayType": "表格格式",
+      "weak": "弱點",
+      "resist": "抵抗",
+      "simple": "簡單",
+      "complex": "複雜",
+      "type": "屬性",
+      "save": "保存",
+      "saveLong": "保存{{ 名稱 }}",
+      "edit": "編輯",
+      "editLong": "編輯{{ 名稱 }}",
+      "remove": "移除",
+      "removeLong": "移除{{ 名稱 }}"
+    }
+  },
+  "pokedex": {
+    "search": {
+      "description": "通過名稱、編號或屬性搜索",
+      "help": "幫助",
+      "helpLong": "幫助，搜索寶可夢圖鑑",
+      "notFound": "未找到寶可夢"
+    },
+    "offense": {
+      "text": "攻擊"
+    },
+    "defense": {
+      "text": "防禦"
+    },
+    "shiny": {
+      "label": "{{ 寶可夢 }} 的閃光",
+      "text": "閃光"
+    },
+    "pagination": {
+      "next": "下一個",
+      "nextLong": "下一個",
+      "previous": "上一個",
+      "previousLong": "上一個",
+      "firstLong": "第一個",
+      "lastLong": "最後一個"
+    },
+    "stats": {
+      "hp": "生命值",
+      "hpLong": "生命點數",
+      "attack": "攻擊",
+      "attackLong": "攻擊",
+      "defense": "防禦",
+      "defenseLong": "防禦",
+      "specialAttack": "特攻",
+      "specialAttackLong": "特攻",
+      "specialDefense": "特防",
+      "specialDefenseLong": "特防",
+      "speed": "速度",
+      "speedLong": "速度",
+      "total": "總計",
+      "totalLong": "總計"
+    }
+  },
+  "pokedexHelp": {
+    "searchByName": {
+      "heading": "按名稱搜索",
+      "description": "您可以通過名稱搜索寶可夢。如果您只記得寶可夢名稱的一部分，它仍然可能會為您找到。但是，它現在無法處理錯別字。"
+    },
+    "searchByNumber": {
+      "heading": "按編號搜索",
+      "description": "按國家圖鑑編號搜索。如果您想找妙蛙種子，只需輸入1，而不是＃001。"
+    },
+    "searchByType": {
+      "heading": "按類型搜索",
+      "description": "這裡有幾個示例，說明如何按類型搜索。"
+    },
+    "searchExamples": {
+      "type": {
+        "query": "火",
+        "description": "搜索具有火屬性的寶可夢的任何形式（例如，小火龍，噴火龍，洛托姆）。"
+      },
+      "doubleType": {
+        "query": "水 飛行",
+        "description": "搜索水/飛行屬性的寶可夢（例如，暴鯉龍）或飛行/水屬性的寶可夢（例如，飛蟲鳥）。"
+      },
+      "singleType": {
+        "query": "草 無",
+        "description": "搜索僅具有草屬性的寶可夢，沒有第二屬性（例如，蔓藤怪，菊草葉，裙兒小姐）。"
+      }
+    },
+    "back": "返回寶可夢圖鑑"
+  },
+  "more": {
+    "contact": {
+      "heading": "聯繫我",
+      "intro": "你好，我是 <homepage>Sage Fennel</homepage>（他們），我製作了 神奇寶貝屬性計算器 (pkmn.help）。",
+      "email": "請將您的想法和感謝發送到 <email>pkmn@wavebeem.com</email>。"
+    },
+    "settings": {
+      "heading": "設置",
+      "language": {
+        "label": "語言",
+        "default": "自動檢測語言",
+        "helpText": "語言支持不完整。請給我發電子郵件，我將支付您翻譯的費用。"
+      },
+      "theme": {
+        "label": "主題",
+        "help": "“系統默認”將根據您的操作系統設置自動更改。",
+        "values": {
+          "auto": "系統默認",
+          "light": "亮色",
+          "dark": "暗色"
+        }
+      },
+      "typeCount": {
+        "label": "屬性數量",
+        "help": "如果受到「森林詛咒」或「不夜城的詛咒」的影響，寶可夢暫時可以同時擁有三種屬性。由於第三個屬性很少使用，因此默認情況下隱藏了第三個屬性字段。",
+        "values": {
+          "2": "兩種類型 (2)",
+          "3": "三種類型 (3)"
+        }
+      }
+    },
+    "changes": {
+      "heading": "新功能",
+      "description": "查看 <changelog>更改日誌</changelog> 中的新功能。"
+    },
+    "help": {
+      "heading": "幫助",
+      "serviceWorker": {
+        "description": "此按鈕可幫助解決應用程序中的問題。",
+        "button": "重置"
+      }
+    },
+    "privacy": {
+      "heading": "隱私權",
+      "description": "我永遠不會放置廣告或竊取您的個人數據。我使用的 <plausible>合理的分析</plausible> 是自資助的、獨立的、設在歐盟的，不會在您的計算機上存儲任何 cookie。"
+    },
+    "givingBack": {
+      "heading": "表達感激之情",
+      "description": "我已經花費了無數時間來改進這個網站。如果您欣賞我的成果，請考慮捐款支持支持非裔和跨性別人士權利的慈善機構。"
+    },
+    "thanks": {
+      "heading": "特別感謝",
+      "sections": {
+        "da": "丹麥翻譯",
+        "ru": "俄羅斯翻譯",
+        "kk": "哈薩克翻譯",
+        "pt-BR": "巴西葡萄牙語翻譯",
+        "zh-Hans": "簡體中文翻譯",
+        "zh-Hant": "繁體中文翻譯",
+        "ro": "羅馬尼亞翻譯",
+        "pl": "波蘭翻譯",
+        "fr": "法語翻譯",
+        "de": "德語翻譯",
+        "it": "意大利語翻譯",
+        "ko": "韓語翻譯",
+        "ja": "日語翻譯",
+        "nl": "荷蘭翻譯",
+        "testing": "測試",
+        "other": "幾位匿名的粉絲"
+      }
+    },
+    "openSource": {
+      "heading": "開源",
+      "description": "源代碼可在 <github>GitHub</github> 上找到。"
+    },
+    "legalInfo": {
+      "heading": "法律信息"
+    }
+  },
+  "types": {
+    "normal": "一般",
+    "fighting": "格鬥",
+    "flying": "飛行",
+    "poison": "毒",
+    "ground": "地面",
+    "rock": "岩石",
+    "bug": "蟲",
+    "ghost": "幽靈",
+    "steel": "鋼",
+    "fire": "火",
+    "water": "水",
+    "grass": "草",
+    "electric": "電",
+    "psychic": "超能力",
+    "ice": "冰",
+    "dragon": "龍",
+    "dark": "黑暗",
+    "fairy": "妖精",
+    "none": "無"
+  },
+  "banners": {
+    "updateReady": {
+      "description": "有更新可用",
+      "whatsNew": "有什麼新功能",
+      "update": "更新"
+    }
+  },
+  "general": {
+    "loading": "載入中…"
+  },
+  "games": {
+    "label": "遊戲世代",
+    "help": "使用不同遊戲世代的屬性效果。",
+    "byID": {
+      "gen1": "第一世代",
+      "gen2": "第二到第五世代",
+      "default": "默認（第六世代及以上）"
+    }
+  }
+}
