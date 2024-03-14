@@ -1,5 +1,5 @@
 {
-  "title": "Calcolatore di Tipi Pokémon",
+  "title": "Calcolatore dei Tipi di Pokémon",
   "navigation": {
     "offense": "Offensiva",
     "defense": "Difensiva",
@@ -27,8 +27,8 @@
         "description": "Questi Pokémon non sono né nella lista delle debolezze né nella lista delle resistenze per i tipi selezionati."
       },
       "resistance": {
-        "heading": "ELenco della copertura resistenze",
-        "description": "Questi Pokémon resistono tutti i tipi selezionatii."
+        "heading": "Elenco della copertura resistenze",
+        "description": "Questi Pokémon resistono tutti i tipi selezionati."
       }
     }
   },
@@ -70,7 +70,7 @@
     "chooseSecond": "Scegli il secondo tipo",
     "chooseThird": "Scegli il terzo tipo",
     "takesXFrom": "Subisce {{ x }} da",
-    "chooseAbility": "Scegli un'abilité",
+    "chooseAbility": "Scegli un'abilità",
     "abilityNames": {
       "none": "Nessuna",
       "wonder_guard": "Magidifesa",
@@ -93,7 +93,7 @@
       "volt_absorb": "Assorbivolt"
     },
     "mode": {
-      "heading": "Scegli modalité",
+      "heading": "Scegli modalità",
       "solo": "Solo",
       "team": "Squadra"
     },
@@ -152,8 +152,8 @@
       "specialAttackLong": "Attacco Speciale",
       "specialDefense": "Dif. Sp.",
       "specialDefenseLong": "Difesa Speciale",
-      "speed": "Velocité",
-      "speedLong": "Velocité",
+      "speed": "Velocità",
+      "speedLong": "Velocità",
       "total": "Totale",
       "totalLong": "Totale"
     }
@@ -161,7 +161,7 @@
   "pokedexHelp": {
     "searchByName": {
       "heading": "Cerca per nome",
-      "description": "Puoi cercare un Pokémon per nome. Se ricordi solo una parte del nome del Pokémon, probabilmente pué ancora trovarlo per te. Tuttavia, al momento non pué gestire errori di battitura."
+      "description": "Puoi cercare un Pokémon per nome. Se ricordi solo una parte del nome del Pokémon, probabilmente può ancora trovarlo per te. Tuttavia, al momento non può gestire errori di battitura."
     },
     "searchByNumber": {
       "heading": "Cerca per numero",
@@ -190,7 +190,7 @@
   "more": {
     "contact": {
       "heading": "Contattami",
-      "intro": "Ciao, sono <homepage>Sage Fennel</homepage> (they/them) e ho creato il Calcolatore di Tipi Pokémon (pkmn.help).",
+      "intro": "Ciao, sono <homepage>Sage Fennel</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (pkmn.help).",
       "email": "Per favore, invia un'e-mail con i tuoi pensieri e ringraziamenti a <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
@@ -198,11 +198,11 @@
       "language": {
         "label": "Lingua",
         "default": "Individua lingua automaticamente",
-        "helpText": "Il supporto alle lingue é incompleto. Per favore scrivimi una mail, ti pagheré per tradurre."
+        "helpText": "Il supporto alle lingue è incompleto. Per favore scrivimi una mail, ti pagherò per tradurre."
       },
       "theme": {
         "label": "Tema",
-        "help": "\"Predefinito di sistema\" cambieré automaticamente in base alle tue impostazioni attive.",
+        "help": "\"Predefinito di sistema\" cambierà automaticamente in base alle tue impostazioni attive.",
         "values": {
           "auto": "Predefinito di sistema",
           "light": "Chiaro",
@@ -211,7 +211,7 @@
       },
       "typeCount": {
         "label": "Numero di tipi",
-        "help": "Un Pokémon pué avere brevemente tre tipi allo stesso tempo se viene colpito da Boscomalocchio o Halloween. Il campo del terzo tipo di solito é nascosto poiché é raramente usato.",
+        "help": "Un Pokémon può avere brevemente tre tipi allo stesso tempo se viene colpito da Boscomalocchio o Halloween. Il campo del terzo tipo di solito è nascosto poiché è raramente usato.",
         "values": {
           "2": "Due tipi (2)",
           "3": "Tre tipi (3)"
@@ -219,19 +219,19 @@
       }
     },
     "changes": {
-      "heading": "Cosa c'é di nuovo",
-      "description": "Scopri cosa c'é di nuovo nel <changelog>registro degli aggiornamenti</changelog>."
+      "heading": "Cosa c'è di nuovo",
+      "description": "Scopri cosa c’è di nuovo nel <changelog>registro degli aggiornamenti</changelog>."
     },
     "help": {
       "heading": "Aiuto",
       "serviceWorker": {
-        "description": "Questo bottone pué aiutare a sistemare gli errori nell'app.",
+        "description": "Questo bottone può aiutare a sistemare gli errori nell'app.",
         "button": "Annulla registrazione del service worker"
       }
     },
     "privacy": {
       "heading": "Privacy",
-      "description": "Non pubblicheré mai annunci o ruberé i tuoi dati personali. Uso <plausible>Plausible Analytics</plausible>, che é autofinanziato, indipendente, ospitato nell'UE e non memorizza alcun cookie sul tuo computer."
+      "description": "Non pubblicherò mai annunci o ruberò i tuoi dati personali. Uso <plausible>Plausible Analytics</plausible>, che è autofinanziato, indipendente, ospitato nell'UE e non memorizza alcun cookie sul tuo computer."
     },
     "givingBack": {
       "heading": "Mostra il tuo apprezzamento",
@@ -259,7 +259,7 @@
     },
     "openSource": {
       "heading": "Sorgente aperta",
-      "description": "Il codice sorgente é disponibile su <github>GitHub</github>."
+      "description": "Il codice sorgente è disponibile su <github>GitHub</github>."
     },
     "legalInfo": {
       "heading": "Informazioni legali"
@@ -288,8 +288,8 @@
   },
   "banners": {
     "updateReady": {
-      "description": "é disponibile un aggiornamento",
-      "whatsNew": "Cosa c'é di nuovo",
+      "description": "è disponibile un aggiornamento",
+      "whatsNew": "Cosa c'è di nuovo",
       "update": "Aggiorna"
     }
   },
