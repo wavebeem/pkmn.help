@@ -1,5 +1,11 @@
 # Changelog
 
+## 2024-03-13
+
+- Added Traditional Chinese translation
+
+- Updated Italian translation
+
 ## 2024-03-04
 
 - Updated Korean translation
