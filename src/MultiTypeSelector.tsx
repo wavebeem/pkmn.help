@@ -27,10 +27,8 @@ export function MultiTypeSelector({
       {types.map((type) => {
         const styleMap = {
           selected: [
-            "no-box-shadow button-shadow focus-selected",
-            type === Type.stellar
-              ? "type-stellar-dark type-bg-text"
-              : "type-bg border-vibrant2",
+            "no-box-shadow button-shadow focus-selected border-vibrant2",
+            styles.label,
           ],
           normal: "border1 bg1 fg1 button-bg button-shadow focus-simple",
         };
@@ -39,6 +37,8 @@ export function MultiTypeSelector({
         return (
           <label
             key={type}
+            data-type={type}
+            data-checked={isChecked}
             className={classNames(
               styleMap[styleKey],
               "db",
@@ -58,6 +58,7 @@ export function MultiTypeSelector({
                 name={type}
                 type="checkbox"
                 checked={isChecked}
+                data-type={type}
                 className={classNames(
                   "db",
                   styles.checkbox,
@@ -66,8 +67,7 @@ export function MultiTypeSelector({
                     normal: "border-vibrant type-bg",
                   }[styleKey],
                   "ba br1",
-                  "focus-none",
-                  type === Type.stellar && "type-stellar-conic"
+                  "focus-none"
                 )}
                 style={{
                   ["--type-color" as any]: typeColor(type),

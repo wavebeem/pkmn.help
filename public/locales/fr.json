@@ -9,6 +9,7 @@
   "offense": {
     "chooseTypes": "Choisissez les types",
     "dealsXTo": "Inflige {{ x }} à",
+    "teraPokemon": "Pokémon Téracristallisé",
     "coverage": {
       "heading": "Couverture du Pokédex",
       "edit": "Modifier la liste",
@@ -71,6 +72,7 @@
     "chooseThird": "Choisir le troisème type",
     "takesXFrom": "Subit {{ x }} De",
     "chooseAbility": "Choisir le talent",
+    "chooseTeraType": "Choisir le type téracristal",
     "abilityNames": {
       "none": "Aucun",
       "wonder_guard": "Garde Mystik",

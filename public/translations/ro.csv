@@ -11,6 +11,7 @@ offense.coverage.edit,Edit list,
 offense.coverage.weakness,Weak,
 offense.coverage.normal,Normal,
 offense.coverage.resistance,Resist,
+offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,
 offense.coverageList.weakness.heading,Weakness Coverage List,
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,
@@ -44,6 +45,7 @@ defense.chooseSecond,Choose second type,Alege al doilea fel
 defense.chooseThird,Choose third type,Alege al treilea fel
 defense.takesXFrom,Takes {{ x }} from,Ia {{ x }} de la
 defense.chooseAbility,Choose ability,
+defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,
 defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard
 defense.abilityNames.delta_stream,Delta Stream,Delta Stream

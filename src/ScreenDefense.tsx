@@ -17,7 +17,6 @@ import {
 } from "./data-types";
 import { Matchups } from "./Matchups";
 import { MatchupsTeam, MatchupsTeamProps } from "./MatchupsTeam";
-import { MonsterType } from "./MonsterType";
 import { Select } from "./Select";
 import { TypeSelector } from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
@@ -27,6 +26,7 @@ import { useTeamTypes } from "./useTeamTypes";
 import { useTypeCount } from "./useTypeCount";
 import { useTeamAbilities } from "./useTeamAbilities";
 import { useTeamTeraTypes } from "./useTeamTeraTypes";
+import { Badge } from "./Badge";
 
 const modes = ["solo", "team"] as const;
 type Mode = typeof modes[number];
@@ -404,7 +404,7 @@ export function ScreenDefense({
                   <div className="f5 b pr2 tabular-nums">{typeIndex + 1}</div>
                   <div className="flex flex-column flex-row-ns flex-wrap justify-center gap2">
                     {types.map((t) => (
-                      <MonsterType key={t} type={t} />
+                      <Badge key={t} type={t} />
                     ))}
                   </div>
                   <div className="flex-auto" />

@@ -11,6 +11,7 @@ offense.coverage.edit,Edit list,Modifica elenco
 offense.coverage.weakness,Weak,Debole
 offense.coverage.normal,Normal,Normale
 offense.coverage.resistance,Resist,Resistente
+offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,Nessun Pokémon trovato o nessun tipo selezionato
 offense.coverageList.weakness.heading,Weakness Coverage List,Elenco della copertura debolezze
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Questi Pokémon sono deboli ad almeno uno dei tipi selezionati.
@@ -44,6 +45,7 @@ defense.chooseSecond,Choose second type,Scegli il secondo tipo
 defense.chooseThird,Choose third type,Scegli il terzo tipo
 defense.takesXFrom,Takes {{ x }} from,Subisce {{ x }} da
 defense.chooseAbility,Choose ability,Scegli un'abilità
+defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,Nessuna
 defense.abilityNames.wonder_guard,Wonder Guard,Magidifesa
 defense.abilityNames.delta_stream,Delta Stream,Flusso Delta
@@ -186,7 +188,7 @@ types.ice,Ice,Ghiaccio
 types.dragon,Dragon,Drago
 types.dark,Dark,Buio
 types.fairy,Fairy,Folletto
-types.stellar,Stellar,
+types.stellar,Stellar,Astrale
 types.none,None,Nessuno
 banners.updateReady.description,An update is available,è disponibile un aggiornamento
 banners.updateReady.whatsNew,What’s new,Cosa c'è di nuovo
