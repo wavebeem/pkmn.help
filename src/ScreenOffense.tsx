@@ -101,6 +101,7 @@ export function ScreenOffense({
           generation={generation}
           types={offenseTypes}
           ability="none"
+          teraType={Type.none}
         />
       </div>
     </main>
