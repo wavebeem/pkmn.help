@@ -312,7 +312,7 @@ export function ScreenDefense({
               />
             </>
           )}
-          <div className="pt4 mw-max">
+          <div className="pt4">
             <Select
               label={t("defense.chooseAbility")}
               value={state.ability}
@@ -334,7 +334,7 @@ export function ScreenDefense({
               })}
             </Select>
           </div>
-          <div className="pt4 mw-max">
+          <div className="pt4">
             <Select
               label={t("defense.chooseTeraType")}
               value={state.teraType}
@@ -489,7 +489,7 @@ export function ScreenDefense({
                       />
                     </>
                   )}
-                  <div className="pt4 mw-max">
+                  <div className="pt4">
                     <Select
                       label={t("defense.chooseAbility")}
                       value={state.teamAbilityList[typeIndex]}
@@ -522,7 +522,7 @@ export function ScreenDefense({
                       })}
                     </Select>
                   </div>
-                  <div className="pt4 mw-max">
+                  <div className="pt4">
                     <Select
                       label={t("defense.chooseTeraType")}
                       value={state.teamTeraTypeList[typeIndex]}
@@ -575,7 +575,7 @@ export function ScreenDefense({
       </div>
       <div className="flex-auto w-50-l pl5-l">
         <hr className="dn-l subtle-hr mv4" />
-        <div className="pt0 pt4-l mw-max">
+        <div className="pt0 pt4-l">
           <Select
             onChange={(event) => {
               update({

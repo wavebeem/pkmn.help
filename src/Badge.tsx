@@ -16,7 +16,7 @@ export function Badge({ type }: BadgeProps) {
       className={classNames(
         "type-bg",
         "br2",
-        "b f5 lh-title tc",
+        "f5 lh-title tc",
         styles.badgeContainer
       )}
       data-type={type}

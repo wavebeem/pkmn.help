@@ -26,10 +26,8 @@ export function MultiTypeSelector({
     <div className="grid gap2 columns-type-selector">
       {types.map((type) => {
         const styleMap = {
-          selected: [
+          selected:
             "no-box-shadow button-shadow focus-selected border-vibrant2",
-            styles.label,
-          ],
           normal: "border1 bg1 fg1 button-bg button-shadow focus-simple",
         };
         const isChecked = value.includes(type);
@@ -41,6 +39,7 @@ export function MultiTypeSelector({
             data-checked={isChecked}
             className={classNames(
               styleMap[styleKey],
+              styles.label,
               "db",
               "ba br1",
               "pv1 ph2",

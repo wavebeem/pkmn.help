@@ -208,10 +208,6 @@
   width: 0;
 }
 
-.mw-max {
-  max-width: max-content;
-}
-
 .cursor-na {
   cursor: not-allowed;
 }

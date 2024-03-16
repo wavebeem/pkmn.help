@@ -5,6 +5,8 @@
 .wrapper > select {
   -webkit-appearance: none;
   appearance: none;
+  /* padding-top: 0.75rem;
+  padding-bottom: 0.75rem; */
 }
 
 .wrapper:after {
@@ -16,7 +18,7 @@
   border-top: 0;
   border-left: 0;
   rotate: 45deg;
-  right: 0.75rem;
+  right: 1.25rem;
   top: calc(50% - 0.5rem);
   pointer-events: none;
 }
