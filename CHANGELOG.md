@@ -4,6 +4,8 @@
 
 - Added support for the new Stellar type
 
+- Added support for selecting Tera types for Solo and Team Defense modes
+
 - Removed focus styles when not using keyboard
 
   - The website will look especially better on mobile now since there won't be as many distracting borders on buttons and links

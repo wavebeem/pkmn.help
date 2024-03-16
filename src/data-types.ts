@@ -159,6 +159,8 @@ export const types = [
   Type.stellar,
 ];
 
+export const typesWithoutNone = [...types];
+
 const typesGen2 = types.filter(
   (t) => !(t === Type.fairy || t === Type.stellar)
 );

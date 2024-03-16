@@ -82,6 +82,7 @@ class Matcher {
 export interface MatchupsTeamProps {
   generation: Generation;
   typesList: Type[][];
+  teraTypes: Type[];
   abilityList: AbilityName[];
   format: "complex" | "simple" | "resist" | "weak";
 }
@@ -89,6 +90,7 @@ export interface MatchupsTeamProps {
 export function MatchupsTeam({
   generation,
   typesList,
+  teraTypes,
   format,
   abilityList,
 }: MatchupsTeamProps) {
@@ -140,10 +142,12 @@ export function MatchupsTeam({
       let num = 0;
       for (const [typeIndex, types] of typesList.entries()) {
         const abilityName = abilityList[typeIndex];
+        const teraType = teraTypes[typeIndex];
         const eff = matchupFor({
           generation,
           defenseTypes: types,
           offenseType: genType,
+          defenseTeraType: teraType,
           abilityName,
         });
         if (m.match(eff)) {

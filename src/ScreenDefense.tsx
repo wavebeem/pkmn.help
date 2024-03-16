@@ -13,6 +13,7 @@ import {
   typesFromString,
   abilities,
   types,
+  typesWithoutNone,
 } from "./data-types";
 import { Matchups } from "./Matchups";
 import { MatchupsTeam, MatchupsTeamProps } from "./MatchupsTeam";
@@ -64,6 +65,25 @@ function setAbilityAt({
   }
   const fullArray = Array.from(sparseArray);
   return fullArray.map((v) => v || "none");
+}
+
+function setTeraTypeAt({
+  list,
+  index,
+  value,
+  length,
+}: {
+  list: Type[];
+  index: number;
+  value: Type;
+  length: number;
+}): Type[] {
+  const sparseArray = updateArrayAt(list, index, value);
+  if (sparseArray.length < length) {
+    sparseArray.length = length;
+  }
+  const fullArray = Array.from(sparseArray);
+  return fullArray.map((v) => v || Type.none);
 }
 
 interface State {
@@ -502,6 +522,37 @@ export function ScreenDefense({
                       })}
                     </Select>
                   </div>
+                  <div className="pt4 mw-max">
+                    <Select
+                      label={t("defense.chooseTeraType")}
+                      value={state.teamTeraTypeList[typeIndex]}
+                      onChange={(event) => {
+                        const type = typesFromString(event.target.value)[0];
+                        if (!type) {
+                          return;
+                        }
+                        update({
+                          ...state,
+                          teamTeraTypeList: setTeraTypeAt({
+                            list: state.teamTeraTypeList,
+                            index: typeIndex,
+                            value: type,
+                            length: state.teamTypesList.length,
+                          }),
+                        });
+                      }}
+                    >
+                      <option value={Type.none}>{t("types.none")}</option>
+                      <hr />
+                      {typesWithoutNone.map((name) => {
+                        return (
+                          <option key={name} value={name}>
+                            {t(`types.${name}`)}
+                          </option>
+                        );
+                      })}
+                    </Select>
+                  </div>
                 </div>
               </div>
             );
@@ -545,6 +596,7 @@ export function ScreenDefense({
         <MatchupsTeam
           generation={generation}
           typesList={state.teamTypesList}
+          teraTypes={state.teamTeraTypeList}
           abilityList={state.teamAbilityList}
           format={state.format}
         />

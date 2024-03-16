@@ -174,7 +174,7 @@ export function matchupFor({
   generation,
   defenseTypes,
   offenseType,
-  defenseTeraType,
+  defenseTeraType = Type.none,
   abilityName,
 }: {
   generation: Generation;
@@ -185,7 +185,7 @@ export function matchupFor({
 }): number {
   let n = 1;
   if (defenseTeraType !== Type.none) {
-    defenseTypes = [defenseTeraType];
+    defenseTypes = [defenseTeraType, Type.none];
   }
   // Apply multipliers based on ability
   if (abilityName) {
