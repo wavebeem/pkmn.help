@@ -21,7 +21,11 @@
   --color-vibrant-border1: hsl(0 0% 0% / 0.6);
   --color-scroll-fg: hsl(0 0% 20%);
   --color-scroll-bg: hsl(0 0% 90%);
+
   --type-min-width: 5rem;
+  --type-text-shadow: 0 1px 0 black, 0 0 1px rgb(0 0 0 / 60%),
+    0 0 2px rgb(0 0 0 / 70%), 0 0 3px rgb(0 0 0 / 80%), 0 0 4px rgb(0 0 0 / 90%);
+
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
   overflow-y: scroll;
   color-scheme: dark light;
@@ -115,6 +119,10 @@
 
 .grid {
   display: grid;
+}
+
+.grid-span-all {
+  grid-column: 1 / -1;
 }
 
 .gap4 {
@@ -268,9 +276,12 @@ button {
 .type-bg {
   background: var(--type-color, #333);
   color: white;
-  text-shadow: 0 1px 0 black, 0 0 1px rgba(0, 0, 0, 0.6),
-    0 0 2px rgba(0, 0, 0, 0.7), 0 0 3px rgba(0, 0, 0, 0.8),
-    0 0 4px rgba(0, 0, 0, 0.9);
+  text-shadow: var(--type-text-shadow);
+}
+
+.type-bg-text {
+  color: white;
+  text-shadow: var(--type-text-shadow);
 }
 
 .type-any-label {
@@ -282,23 +293,27 @@ button {
   user-select: none;
 }
 
-.focus-tab:focus-within {
+.focus-tab:focus-visible,
+.focus-tab:has(:focus-visible) {
   outline: 2px solid var(--color-fg1);
   outline-offset: 2px;
 }
 
-.focus-outline:focus-within {
+.focus-outline:focus-visible,
+.focus-outline:has(:focus-visible) {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
 
-.focus-simple:focus-within {
+.focus-simple:focus-visible,
+.focus-simple:has(:focus-visible) {
   outline: 2px solid transparent;
   border-color: var(--color-fg1);
   box-shadow: 0 0 0 2px var(--color-border1);
 }
 
-.focus-selected:focus-within {
+.focus-selected:focus-visible,
+.focus-selected:has(:focus-visible) {
   outline: 2px solid transparent;
   box-shadow: 0 0 0 2px var(--color-bg1), 0 0 0 4px var(--color-fg1);
 }

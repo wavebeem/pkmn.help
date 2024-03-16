@@ -239,7 +239,8 @@ class Matchup {
   constructor(
     public generation: Generation,
     public type: Type,
-    public effectiveness: number
+    public effectiveness: number,
+    public formName?: string
   ) {}
 }
 

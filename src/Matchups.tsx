@@ -5,6 +5,7 @@ import { defensiveMatchups, offensiveMatchups } from "./data-matchups";
 import { AbilityName, Type } from "./data-types";
 import { Badge } from "./Badge";
 import styles from "./Matchups.module.css";
+import { PlainBadge } from "./PlainBadge";
 
 interface SectionProps {
   title: string;
@@ -37,20 +38,33 @@ export function Matchups({ kind, generation, types, ability }: MatchupsProps) {
     kind === "offense"
       ? offensiveMatchups(generation, types)
       : defensiveMatchups(generation, types, ability);
+  if (types.includes(Type.stellar)) {
+    matchups.matchups.unshift({
+      type: Type.stellar,
+      generation,
+      effectiveness: 2,
+      formName: "stellar",
+    });
+  }
   const grouped = matchups.groupByEffectiveness();
   return (
     <div id={`matchup-${kind}`}>
       {grouped.map((list) => {
-        const eff = list.length > 0 ? list[0].effectiveness : undefined;
         if (list.length === 0) {
           return null;
         }
+        const eff = list[0].effectiveness;
         return (
           <Section key={eff} title={formatTitle(formatEffectiveness(eff))}>
-            {list.map((x) => (
-              // TODO: Add some other kind of "plain" badge type
-              <Badge key={`type-${x.type}`} type={x.type} />
-            ))}
+            {list.map((x) => {
+              if (kind === "offense" && x.formName === "stellar") {
+                // TODO: Translation
+                return <PlainBadge key="form-tera">Tera Pokémon</PlainBadge>;
+              }
+              // TODO: Add some other kind of "plain" badge
+              return <Badge key={`type-${x.type}`} type={x.type} />;
+            })}
+            {/* {kind === "offense" && eff === 2 && <Badge type={Type.stellar} />} */}
           </Section>
         );
       })}

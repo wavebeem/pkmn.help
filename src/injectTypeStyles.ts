@@ -9,19 +9,28 @@ function injectCSS() {
 
 function createCSS() {
   return css`
+    :root {
+      --stellar-color-border: hsl(0 0% 10%);
+    }
+
+    :root[data-theme="dark"],
+    :root[data-theme="auto"][data-theme-auto="dark"] {
+      --stellar-color-border: hsl(220 20% 85%);
+    }
+
     .type-stellar {
       background: ${createStellarGradientLinear()};
-      border-color: hsl(0 0% 40%);
+      border-color: var(--stellar-color-border);
     }
 
     .type-stellar-conic {
       background: ${createStellarGradientConic()};
-      border-color: hsl(0 0% 40%);
+      border-color: var(--stellar-color-border);
     }
 
-    :is(:root[data-theme="dark"], :root[data-theme="auto"][data-theme-auto="dark"])
-      .type-stellar {
-      border-color: hsl(220 20% 55%);
+    .type-stellar-dark {
+      background: ${createStellarGradientDark()};
+      border-color: var(--stellar-color-border);
     }
 
     .type-stellar-label {
@@ -50,6 +59,21 @@ function createStellarGradientLinear() {
     const p2 = `calc(${i * (100 / count)}% + ${fudge})`;
     const hue = j * (360 / count);
     const color = hsl(hue, 100, 50);
+    steps.push([color, p1, p2].join(" "));
+  }
+  return `linear-gradient(-225deg, ${steps.join(", ")})`;
+}
+
+function createStellarGradientDark() {
+  const count = 16;
+  const steps: string[] = [];
+  const fudge = "1px";
+  for (const i of range(1, count)) {
+    const j = i - 1;
+    const p1 = j === 0 ? "0" : `calc(${j * (100 / count)}% - ${fudge})`;
+    const p2 = `calc(${i * (100 / count)}% + ${fudge})`;
+    const hue = j * (360 / count);
+    const color = hsl(hue, 100, 20);
     steps.push([color, p1, p2].join(" "));
   }
   return `linear-gradient(-225deg, ${steps.join(", ")})`;

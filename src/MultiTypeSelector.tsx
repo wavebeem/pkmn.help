@@ -21,15 +21,19 @@ export function MultiTypeSelector({
 }: MultiTypeSelectorProps) {
   console.log(MultiTypeSelector, { value });
   const { t } = useTranslation();
-  const styleMap = {
-    selected:
-      "border-vibrant2 type-bg no-box-shadow button-shadow focus-selected",
-    normal: "border1 bg1 fg1 button-bg button-shadow focus-simple",
-  };
   const types = typesForGeneration(generation);
   return (
     <div className="grid gap2 columns-type-selector">
       {types.map((type) => {
+        const styleMap = {
+          selected: [
+            "no-box-shadow button-shadow focus-selected",
+            type === Type.stellar
+              ? "type-stellar-dark type-bg-text"
+              : "type-bg border-vibrant2",
+          ],
+          normal: "border1 bg1 fg1 button-bg button-shadow focus-simple",
+        };
         const isChecked = value.includes(type);
         const styleKey = isChecked ? "selected" : "normal";
         return (

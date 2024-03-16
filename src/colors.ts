@@ -24,7 +24,7 @@ const typeColors = {
   dark: "#50413f",
   fairy: "#ef70ef",
   none: "#808080",
-  stellar: "#000000",
+  stellar: "#44628d",
 } as const;
 
 export function typeColor(key: keyof typeof typeColors): string {
