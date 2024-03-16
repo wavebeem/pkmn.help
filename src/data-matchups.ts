@@ -184,6 +184,9 @@ export function matchupFor({
   abilityName: AbilityName;
 }): number {
   let n = 1;
+  if (defenseTeraType !== Type.none) {
+    defenseTypes = [defenseTeraType];
+  }
   // Apply multipliers based on ability
   if (abilityName) {
     for (const info of abilities[abilityName]) {
