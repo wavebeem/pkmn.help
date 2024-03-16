@@ -10,7 +10,12 @@ function injectCSS() {
 function createCSS() {
   return css`
     .type-stellar {
-      background: ${createStellarGradient()};
+      background: ${createStellarGradientLinear()};
+      border-color: hsl(0 0% 40%);
+    }
+
+    .type-stellar-conic {
+      background: ${createStellarGradientConic()};
       border-color: hsl(0 0% 40%);
     }
 
@@ -35,7 +40,7 @@ function hsl(h: number, s: number, l: number) {
   return `hsl(${h} ${s}% ${l}%)`;
 }
 
-function createStellarGradient() {
+function createStellarGradientLinear() {
   const count = 16;
   const steps: string[] = [];
   const fudge = "1px";
@@ -48,6 +53,20 @@ function createStellarGradient() {
     steps.push([color, p1, p2].join(" "));
   }
   return `linear-gradient(-225deg, ${steps.join(", ")})`;
+}
+
+function createStellarGradientConic() {
+  const count = 16;
+  const steps: string[] = [];
+  for (const i of range(1, count)) {
+    const j = i - 1;
+    const angle2 = i * (360 / count) - 4 + "deg";
+    const angle1 = j * (360 / count) + "deg";
+    const hue = j * (360 / count);
+    const color = hsl(hue, 100, 50);
+    steps.push([color, angle1, angle2].join(" "));
+  }
+  return `conic-gradient(${steps.join(", ")})`;
 }
 
 injectCSS();

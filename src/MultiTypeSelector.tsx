@@ -63,7 +63,7 @@ export function MultiTypeSelector({
                   }[styleKey],
                   "ba br1",
                   "focus-none",
-                  type === Type.stellar && "type-stellar"
+                  type === Type.stellar && "type-stellar-conic"
                 )}
                 style={{
                   ["--type-color" as any]: typeColor(type),

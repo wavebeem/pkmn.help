@@ -1,3 +1,4 @@
+import { compare } from "./compare";
 import { Generation } from "./data-generations";
 import {
   AbilityName,
@@ -261,7 +262,7 @@ export class GroupedMatchups {
         map.set(matchup.effectiveness, [matchup]);
       }
     }
-    const effectivenesses = Array.from(map.keys()).sort((a, b) => b - a);
+    const effectivenesses = Array.from(map.keys()).sort(compare).reverse();
     return effectivenesses.map((eff) => {
       const list = map.get(eff);
       if (list) {
@@ -276,21 +277,23 @@ export function offensiveMatchups(
   gen: Generation,
   offenseTypes: Type[]
 ): GroupedMatchups {
-  const matchups = typesForGeneration(gen).map((t) => {
-    if (offenseTypes.length === 0) {
-      return new Matchup(gen, t, 1);
-    }
-    const effs = offenseTypes.map((offense) => {
-      return matchupFor({
-        generation: gen,
-        defenseTypes: [t],
-        offenseType: offense,
-        abilityName: "none",
+  const matchups = typesForGeneration(gen)
+    .filter((t) => t !== Type.stellar)
+    .map((t) => {
+      if (offenseTypes.length === 0) {
+        return new Matchup(gen, t, 1);
+      }
+      const effs = offenseTypes.map((offense) => {
+        return matchupFor({
+          generation: gen,
+          defenseTypes: [t],
+          offenseType: offense,
+          abilityName: "none",
+        });
       });
+      const max = Math.max(...effs);
+      return new Matchup(gen, t, max);
     });
-    const max = Math.max(...effs);
-    return new Matchup(gen, t, max);
-  });
   return new GroupedMatchups(matchups);
 }
 

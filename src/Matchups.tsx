@@ -8,21 +8,14 @@ import styles from "./Matchups.module.css";
 
 interface SectionProps {
   title: string;
-  types: Type[];
+  children: React.ReactNode;
 }
 
-function Section({ title, types }: SectionProps) {
-  if (types.length === 0) {
-    return null;
-  }
+function Section({ title, children }: SectionProps) {
   return (
     <div>
       <h2 className="f5 mt4 mb2">{title}</h2>
-      <div className={styles.matchups}>
-        {types.map((t) => (
-          <Badge key={`type-${t}`} type={t} />
-        ))}
-      </div>
+      <div className={styles.matchups}>{children}</div>
     </div>
   );
 }
@@ -49,12 +42,16 @@ export function Matchups({ kind, generation, types, ability }: MatchupsProps) {
     <div id={`matchup-${kind}`}>
       {grouped.map((list) => {
         const eff = list.length > 0 ? list[0].effectiveness : undefined;
+        if (list.length === 0) {
+          return null;
+        }
         return (
-          <Section
-            key={eff}
-            title={formatTitle(formatEffectiveness(eff))}
-            types={list.map((x) => x.type)}
-          />
+          <Section key={eff} title={formatTitle(formatEffectiveness(eff))}>
+            {list.map((x) => (
+              // TODO: Add some other kind of "plain" badge type
+              <Badge key={`type-${x.type}`} type={x.type} />
+            ))}
+          </Section>
         );
       })}
     </div>
