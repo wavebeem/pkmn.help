@@ -152,6 +152,7 @@ export function partitionMatchups({
       matchupFor({
         generation,
         defenseTypes: ct.types,
+        defenseTeraType: Type.none,
         offenseType: t,
         abilityName: "none",
       })
@@ -173,10 +174,12 @@ export function matchupFor({
   generation,
   defenseTypes,
   offenseType,
+  defenseTeraType,
   abilityName,
 }: {
   generation: Generation;
   defenseTypes: Type[];
+  defenseTeraType: Type;
   offenseType: Type;
   abilityName: AbilityName;
 }): number {
@@ -207,6 +210,9 @@ export function matchupFor({
     if (n <= 1) {
       n = 0;
     }
+  }
+  if (defenseTeraType !== Type.none && offenseType === Type.stellar) {
+    n *= 2;
   }
   return n;
 }
@@ -274,10 +280,13 @@ export class GroupedMatchups {
   }
 }
 
-export function offensiveMatchups(
-  gen: Generation,
-  offenseTypes: Type[]
-): GroupedMatchups {
+export function offensiveMatchups({
+  gen,
+  offenseTypes,
+}: {
+  gen: Generation;
+  offenseTypes: Type[];
+}): GroupedMatchups {
   const matchups = typesForGeneration(gen)
     .filter((t) => t !== Type.stellar)
     .map((t) => {
@@ -288,6 +297,7 @@ export function offensiveMatchups(
         return matchupFor({
           generation: gen,
           defenseTypes: [t],
+          defenseTeraType: "none",
           offenseType: offense,
           abilityName: "none",
         });
@@ -298,15 +308,22 @@ export function offensiveMatchups(
   return new GroupedMatchups(matchups);
 }
 
-export function defensiveMatchups(
-  gen: Generation,
-  defenseTypes: Type[],
-  abilityName: AbilityName
-): GroupedMatchups {
+export function defensiveMatchups({
+  gen,
+  defenseTypes,
+  defenseTeraType,
+  abilityName,
+}: {
+  gen: Generation;
+  defenseTypes: Type[];
+  defenseTeraType: Type;
+  abilityName: AbilityName;
+}): GroupedMatchups {
   const matchups = typesForGeneration(gen).map((t) => {
     const eff = matchupFor({
       generation: gen,
       defenseTypes,
+      defenseTeraType,
       offenseType: t,
       abilityName,
     });

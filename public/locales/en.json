@@ -72,6 +72,7 @@
     "chooseThird": "Choose third type",
     "takesXFrom": "Takes {{ x }} from",
     "chooseAbility": "Choose ability",
+    "chooseTeraType": "Choose tera type",
     "abilityNames": {
       "none": "None",
       "wonder_guard": "Wonder Guard",

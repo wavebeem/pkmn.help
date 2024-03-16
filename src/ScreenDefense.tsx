@@ -12,6 +12,7 @@ import {
   AbilityName,
   typesFromString,
   abilities,
+  types,
 } from "./data-types";
 import { Matchups } from "./Matchups";
 import { MatchupsTeam, MatchupsTeamProps } from "./MatchupsTeam";
@@ -24,6 +25,7 @@ import { useSearch } from "./useSearch";
 import { useTeamTypes } from "./useTeamTypes";
 import { useTypeCount } from "./useTypeCount";
 import { useTeamAbilities } from "./useTeamAbilities";
+import { useTeamTeraTypes } from "./useTeamTeraTypes";
 
 const modes = ["solo", "team"] as const;
 type Mode = typeof modes[number];
@@ -68,8 +70,10 @@ interface State {
   mode: Mode;
   format: MatchupsTeamProps["format"];
   types: Type[];
+  teraType: Type;
   ability: AbilityName;
   teamTypesList: Type[][];
+  teamTeraTypeList: Type[];
   teamAbilityList: AbilityName[];
 }
 
@@ -90,6 +94,7 @@ export function ScreenDefense({
   const navigate = useNavigate();
 
   const [teamTypes, setTeamTypes] = useTeamTypes();
+  const [teamTeraTypes, setTeamTeraTypes] = useTeamTeraTypes();
   const [teamAbilities, setTeamAbilities] = useTeamAbilities();
 
   const [typeCount] = useTypeCount();
@@ -102,6 +107,7 @@ export function ScreenDefense({
       0,
       Number(typeCount)
     ),
+    teraType: typesFromString(search.get("tera_type") || "none")[0],
     ability: abilityNameFromString(search.get("ability") || undefined),
     format: (search.get("format") || "simple") as any,
     teamTypesList: (() => {
@@ -110,6 +116,17 @@ export function ScreenDefense({
       }
       return search.getAll("team_types").map((t) => {
         return typesFromString(t).slice(0, Number(typeCount));
+      });
+    })(),
+    teamTeraTypeList: (() => {
+      if (
+        search.get("team_tera_types") === null &&
+        search.get("mode") !== "team"
+      ) {
+        return teamTeraTypes;
+      }
+      return search.getAll("team_tera_types").map((t) => {
+        return typesFromString(t)[0];
       });
     })(),
     teamAbilityList: (() => {
@@ -143,6 +160,8 @@ export function ScreenDefense({
     teamTypesList,
     teamAbilityList,
     types,
+    teraType,
+    teamTeraTypeList,
   }: State): string {
     teamTypesList = teamTypesList.map((types) => [...new Set(types)]);
     types = [...new Set(types)];
@@ -154,8 +173,14 @@ export function ScreenDefense({
     if (ability) {
       params.set("ability", ability);
     }
+    if (teraType) {
+      params.set("tera_type", teraType);
+    }
     for (const types of teamTypesList) {
       params.append("team_types", types.join(" "));
+    }
+    for (const type of teamTeraTypeList) {
+      params.append("team_tera_types", type);
     }
     if (teamAbilityList.length > 0) {
       params.append("team_abilities", teamAbilityList.join(" "));
@@ -167,6 +192,7 @@ export function ScreenDefense({
   function update(state: State) {
     const search = createParams(state);
     setTeamTypes(state.teamTypesList);
+    setTeamTeraTypes(state.teamTeraTypeList);
     setTeamAbilities(state.teamAbilityList);
     if (search !== location.search) {
       navigate({ search }, { replace: true });
@@ -288,6 +314,28 @@ export function ScreenDefense({
               })}
             </Select>
           </div>
+          <div className="pt4 mw-max">
+            <Select
+              label={t("defense.chooseTeraType")}
+              value={state.teraType}
+              onChange={(event) => {
+                update({
+                  ...state,
+                  teraType: typesFromString(event.target.value)[0],
+                });
+              }}
+            >
+              <option value="">{t("types.none")}</option>
+              <hr />
+              {types.map((name) => {
+                return (
+                  <option key={name} value={name}>
+                    {t(`types.${name}`)}
+                  </option>
+                );
+              })}
+            </Select>
+          </div>
         </div>
         <div className="flex-auto w-50-ns pl5-ns">
           <hr className="dn-ns subtle-hr mv4" />
@@ -296,6 +344,7 @@ export function ScreenDefense({
             generation={generation}
             types={state.types}
             ability={state.ability}
+            teraType={state.teraType}
           />
         </div>
       </main>

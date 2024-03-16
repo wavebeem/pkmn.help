@@ -25,10 +25,17 @@ interface MatchupsProps {
   kind: "offense" | "defense";
   generation: Generation;
   types: Type[];
+  teraType: Type;
   ability: AbilityName;
 }
 
-export function Matchups({ kind, generation, types, ability }: MatchupsProps) {
+export function Matchups({
+  kind,
+  generation,
+  types,
+  teraType,
+  ability,
+}: MatchupsProps) {
   const { t } = useTranslation();
   const formatTitle: (x: string) => string =
     kind === "offense"
@@ -36,8 +43,13 @@ export function Matchups({ kind, generation, types, ability }: MatchupsProps) {
       : (x) => t("defense.takesXFrom", { x });
   const matchups =
     kind === "offense"
-      ? offensiveMatchups(generation, types)
-      : defensiveMatchups(generation, types, ability);
+      ? offensiveMatchups({ gen: generation, offenseTypes: types })
+      : defensiveMatchups({
+          gen: generation,
+          defenseTypes: types,
+          defenseTeraType: teraType,
+          abilityName: ability,
+        });
   if (types.includes(Type.stellar)) {
     matchups.matchups.unshift({
       type: Type.stellar,

@@ -40,8 +40,8 @@ export const Type = {
   dragon: "dragon",
   dark: "dark",
   fairy: "fairy",
-  none: "none",
   stellar: "stellar",
+  none: "none",
 } as const;
 
 const typeSet = new Set(Object.values(Type));
@@ -159,7 +159,9 @@ export const types = [
   Type.stellar,
 ];
 
-const typesGen2 = types.filter((t) => !(t === Type.fairy));
+const typesGen2 = types.filter(
+  (t) => !(t === Type.fairy || t === Type.stellar)
+);
 const typesGen1 = typesGen2.filter(
   (t) => !(t === Type.dark || t === Type.steel)
 );
