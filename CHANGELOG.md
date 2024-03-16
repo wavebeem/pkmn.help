@@ -1,5 +1,29 @@
 # Changelog
 
+## 2024-03-13
+
+- Added Traditional Chinese translation
+
+- Updated Italian translation
+
+## 2024-03-04
+
+- Updated Korean translation
+
+- Replaced Bulbapedia link with Namu Wiki link for Korean translation
+
+## 2024-03-01
+
+- Updated Simplified Chinese translation
+
+## 2024-02-26
+
+- Updated Brazilian Portuguese translations
+
+## 2024-02-24
+
+- Updated Spanish translations
+
 ## 2024-02-20
 
 - Trying to fix a bug where Firefox won't download translation CSV files

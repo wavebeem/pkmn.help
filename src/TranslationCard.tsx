@@ -5,6 +5,7 @@ import {
   languageNamesNative,
   formatLanguageCompletion,
   languageBounty,
+  officialLanguagesSet,
 } from "./ScreenMore";
 
 interface TranslationCardProps {
@@ -17,6 +18,11 @@ export function TranslationCard({ lang }: TranslationCardProps): JSX.Element {
       <div className="flex flex-wrap gap1 pt3 ph3">
         <h3 className="f5 ma0">{languageNamesNative[lang]}</h3>
         <div className="flex-auto" />
+        {!Boolean(officialLanguagesSet.has(lang as any)) && (
+          <span className="ph2 bg1 br-pill ba border3">
+            <span aria-hidden="true">🏗️</span> Unofficial
+          </span>
+        )}
         {Boolean(languageBounty[lang]) && (
           <span className="ph2 bg1 br-pill ba border3">
             <span aria-hidden="true">💰</span> {languageBounty[lang]} USD
@@ -24,7 +30,7 @@ export function TranslationCard({ lang }: TranslationCardProps): JSX.Element {
         )}
       </div>
       <p className="ma0 ph3">{formatLanguageCompletion(lang)} translated</p>
-      <p className="ma0 bt border3 ph3 pt2 pb2 mt3">
+      <p className="mv0 mh2 bt border3 ph2 pt2 pb2 mt3">
         <a
           href={`/translations/${lang}.csv`}
           download={`pkmn.help - ${languageNamesEnglish[lang]}.csv`}

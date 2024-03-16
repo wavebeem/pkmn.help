@@ -1,179 +1,198 @@
 Key,en,zh-Hant
-title,Pokémon Type Calculator,
-navigation.offense,Offense,
-navigation.defense,Defense,
-navigation.pokedex,Pokédex,
-navigation.more,More,
-offense.chooseTypes,Choose types,
-offense.dealsXTo,Deals {{ x }} to,
-offense.coverage.heading,Pokédex coverage,
-offense.coverage.edit,Edit list,
-offense.coverage.weakness,Weak,
-offense.coverage.normal,Normal,
-offense.coverage.resistance,Resist,
-offense.coverageList.empty,No Pokémon found or no types selected,
-offense.coverageList.weakness.heading,Weakness Coverage List,
-offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,
-offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,
-offense.coverageList.resistance.heading,Resistance Coverage List,
-offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,
-coverage.heading,Pokédex Coverage,
-coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",
-coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",
-coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.",
-coverage.csvHeaders.number,Number,
-coverage.csvHeaders.name,Name,
-coverage.csvHeaders.type1,Type 1,
-coverage.csvHeaders.type2,Type 2,
-coverage.csvHeaders.type3,Type 3,
-coverage.export.button,Export,
-coverage.export.description,Export the default Pokédex to a CSV file,
-coverage.import.button,Import,
-coverage.import.description,Import an edited Pokédex CSV file,
-coverage.reset.button,Reset,
-coverage.reset.description,Reset to the default Pokédex,
-coverage.filename,pkmn.help type coverage.csv,
-coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,
-coverage.status.exported,Exported default Pokémon forms,
-coverage.status.reset,Loaded default Pokémon forms,
-coverage.status.errored,Error loading CSV. Don't change header names.,
-coverage.back,Back to offense,
-defense.chooseFirst,Choose first type,
-defense.chooseSecond,Choose second type,
-defense.chooseThird,Choose third type,
-defense.takesXFrom,Takes {{ x }} from,
-defense.chooseAbility,Choose ability,
-defense.abilityNames.none,None,
-defense.mode.heading,Choose mode,
-defense.mode.solo,Solo,
-defense.mode.team,Team,
-defense.team.tableHeading,Matchup counts,
-defense.team.heading,Edit Pokémon team,
-defense.team.add,Add Pokémon,
-defense.team.empty,No Pokémon selected,
-defense.team.displayType,Table format,
-defense.team.weak,Weak,
-defense.team.resist,Resist,
-defense.team.simple,Simple,
-defense.team.complex,Complex,
-defense.team.type,Type,
-defense.team.save,Save,
-defense.team.saveLong,Save {{ name }},
-defense.team.edit,Edit,
-defense.team.editLong,Edit {{ name }},
-defense.team.remove,Remove,
-defense.team.removeLong,Remove {{ name }},
-pokedex.search.description,"Search by name, number, or types",
-pokedex.search.help,Help,
-pokedex.search.helpLong,"Help, search Pokédex",
-pokedex.search.notFound,No Pokémon found,
-pokedex.offense.text,Offense,
-pokedex.defense.text,Defense,
-pokedex.shiny.label,Shiny for {{ pokemon }},
-pokedex.shiny.text,Shiny,
-pokedex.pagination.next,Next,
-pokedex.pagination.nextLong,Next,
-pokedex.pagination.previous,Prev,
-pokedex.pagination.previousLong,Previous,
-pokedex.pagination.firstLong,First,
-pokedex.pagination.lastLong,Last,
-pokedex.stats.hp,HP,
-pokedex.stats.hpLong,Hit Points,
-pokedex.stats.attack,Attack,
-pokedex.stats.attackLong,Attack,
-pokedex.stats.defense,Defense,
-pokedex.stats.defenseLong,Defense,
-pokedex.stats.specialAttack,Sp. Atk.,
-pokedex.stats.specialAttackLong,Special Attack,
-pokedex.stats.specialDefense,Sp. Def.,
-pokedex.stats.specialDefenseLong,Special Defense,
-pokedex.stats.speed,Speed,
-pokedex.stats.speedLong,Speed,
-pokedex.stats.total,Total,
-pokedex.stats.totalLong,Total,
-pokedexHelp.searchByName.heading,Search by name,
-pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",
-pokedexHelp.searchByNumber.heading,Search by number,
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.",
-pokedexHelp.searchByType.heading,Search by type,
-pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,
-pokedexHelp.searchExamples.type.query,fire,
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).",
-pokedexHelp.searchExamples.doubleType.query,water flying,
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,
-pokedexHelp.searchExamples.singleType.query,grass none,
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",
-pokedexHelp.back,Back to Pokédex,
-more.contact.heading,Contact me,
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,
-more.settings.heading,Settings,
-more.settings.language.label,Language,
-more.settings.language.default,Auto detect language,
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",
-more.settings.theme.label,Theme,
-more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,
-more.settings.theme.values.auto,System default,
-more.settings.theme.values.light,Light,
-more.settings.theme.values.dark,Dark,
-more.settings.typeCount.label,Number of types,
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,
-more.settings.typeCount.values.2,Two types (2),
-more.settings.typeCount.values.3,Three types (3),
-more.changes.heading,What’s new,
-more.changes.description,See what’s new in the <changelog>changelog</changelog>.,
-more.help.heading,Help,
-more.help.serviceWorker.description,This button can help fix issues in the app.,
-more.help.serviceWorker.button,Reset,
-more.privacy.heading,Privacy,
-more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.",
-more.givingBack.heading,Showing appreciation,
-more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.",
-more.thanks.heading,Special thanks,
-more.thanks.sections.da,Danish translation,
-more.thanks.sections.ru,Russian translation,
-more.thanks.sections.kk,Kazakh translation,
-more.thanks.sections.pt-BR,Brazilian Portuguese translation,
-more.thanks.sections.zh-Hans,Simplified Chinese translation,
-more.thanks.sections.ro,Romanian translation,
-more.thanks.sections.pl,Polish translation,
-more.thanks.sections.fr,French translation,
-more.thanks.sections.de,German translation,
-more.thanks.sections.it,Italian translation,
-more.thanks.sections.ko,Korean translation,
-more.thanks.sections.ja,Japanese translation,
-more.thanks.sections.nl,Dutch translation,
-more.thanks.sections.testing,Testing,
-more.thanks.sections.other,Several anonymous Poké Fans,
-more.openSource.heading,Open source,
-more.openSource.description,Source code is available on <github>GitHub</github>.,
-more.legalInfo.heading,Legal info,
-types.normal,Normal,
-types.fighting,Fighting,
-types.flying,Flying,
-types.poison,Poison,
-types.ground,Ground,
-types.rock,Rock,
-types.bug,Bug,
-types.ghost,Ghost,
-types.steel,Steel,
-types.fire,Fire,
-types.water,Water,
-types.grass,Grass,
-types.electric,Electric,
-types.psychic,Psychic,
-types.ice,Ice,
-types.dragon,Dragon,
-types.dark,Dark,
-types.fairy,Fairy,
-types.none,None,
-banners.updateReady.description,An update is available,
-banners.updateReady.whatsNew,What’s new,
-banners.updateReady.update,Update,
-general.loading,Loading…,
-games.label,Game generation,
-games.help,Use type effectiveness from different game generations.,
-games.byID.gen1,Generation 1,
-games.byID.gen2,Generation 2–5,
-games.byID.default,Default (generation 6+),
+title,Pokémon Type Calculator,神奇寶貝屬性計算器
+navigation.offense,Offense,攻擊
+navigation.defense,Defense,防禦
+navigation.pokedex,Pokédex,寶可夢圖鑑
+navigation.more,More,更多
+offense.chooseTypes,Choose types,選擇屬性
+offense.dealsXTo,Deals {{ x }} to,對 {{ x }} 造成傷害
+offense.coverage.heading,Pokédex coverage,寶可夢圖鑑涵蓋範圍
+offense.coverage.edit,Edit list,編輯列表
+offense.coverage.weakness,Weak,弱點
+offense.coverage.normal,Normal,正常
+offense.coverage.resistance,Resist,抵抗
+offense.coverageList.empty,No Pokémon found or no types selected,未找到寶可夢或未選擇屬性
+offense.coverageList.weakness.heading,Weakness Coverage List,弱點涵蓋列表
+offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,這些寶可夢對所選擇的屬性至少有一個弱點。
+offense.coverageList.normal.heading,Normal Effectiveness Coverage List,正常效果涵蓋列表
+offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,這些寶可夢不在所選擇的屬性的弱點或抵抗列表中。
+offense.coverageList.resistance.heading,Resistance Coverage List,抵抗涵蓋列表
+offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,這些寶可夢對所有選定的屬性都具有抵抗力。
+coverage.heading,Pokédex Coverage,寶可夢圖鑑涵蓋
+coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",匯入/匯出自定義寶可夢圖鑑 CSV 檔案以查看不同寶可夢的涵蓋範圍。只需創建一個包含OU級寶可夢的自定義 CSV 檔案，甚至可以從頭開始創建您自己的寶可夢。
+coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",CSV 數據是按列標題名稱加載的，而不是按列順序加載的，因此您可以根據需要添加或重新排序列 (例如添加“層級”列或“備註”列)。
+coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.",CSV 檔案可使用 Google Sheets、Microsoft Excel、OpenOffice、LibreOffice、記事本等編輯。
+coverage.csvHeaders.number,Number,編號
+coverage.csvHeaders.name,Name,名稱
+coverage.csvHeaders.type1,Type 1,屬性1
+coverage.csvHeaders.type2,Type 2,屬性2
+coverage.csvHeaders.type3,Type 3,屬性3
+coverage.export.button,Export,匯出
+coverage.export.description,Export the default Pokédex to a CSV file,將默認寶可夢圖鑑匯出為 CSV 檔案
+coverage.import.button,Import,匯入
+coverage.import.description,Import an edited Pokédex CSV file,匯入編輯過的寶可夢圖鑑 CSV 檔案
+coverage.reset.button,Reset,重置
+coverage.reset.description,Reset to the default Pokédex,重置為默認寶可夢圖鑑
+coverage.filename,pkmn.help type coverage.csv,pkmn.help 屬性覆蓋範圍.csv
+coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,從“{{ 檔案 }}”導入了 {{ n }} 個寶可夢形式
+coverage.status.exported,Exported default Pokémon forms,匯出了預設的寶可夢形式
+coverage.status.reset,Loaded default Pokémon forms,載入了預設的寶可夢形式
+coverage.status.errored,Error loading CSV. Don't change header names.,載入 CSV 時出錯。不要更改標題名稱。
+coverage.back,Back to offense,返回攻擊
+defense.chooseFirst,Choose first type,選擇第一個屬性
+defense.chooseSecond,Choose second type,選擇第二個屬性
+defense.chooseThird,Choose third type,選擇第三個屬性
+defense.takesXFrom,Takes {{ x }} from,從中取 {{ x }}
+defense.chooseAbility,Choose ability,選擇技能
+defense.abilityNames.none,None,無
+defense.abilityNames.wonder_guard,Wonder Guard,奇跡防守
+defense.abilityNames.delta_stream,Delta Stream,德爾塔氣流
+defense.abilityNames.fluffy,Fluffy,毛茸茸
+defense.abilityNames.purifying_salt,Purifying Salt,淨化之鹽
+defense.abilityNames.heatproof,Heatproof,防熱
+defense.abilityNames.water_bubble,Water Bubble,水泡
+defense.abilityNames.thick_fat,Thick Fat,厚脂
+defense.abilityNames.earth_eater,Earth Eater,吞土
+defense.abilityNames.levitate,Levitate,飄浮
+defense.abilityNames.flash_fire,Flash Fire,熾熱火焰
+defense.abilityNames.well_baked_body,Well-Baked Body,烤得好的身體
+defense.abilityNames.dry_skin,Dry Skin,乾燥皮膚
+defense.abilityNames.storm_drain,Storm Drain,排水孔
+defense.abilityNames.water_absorb,Water Absorb,吸水
+defense.abilityNames.sap_sipper,Sap Sipper,吸汁器
+defense.abilityNames.lightning_rod,Lightning Rod,閃電棒
+defense.abilityNames.motor_drive,Motor Drive,電能引擎
+defense.abilityNames.volt_absorb,Volt Absorb,吸電
+defense.mode.heading,Choose mode,選擇模式
+defense.mode.solo,Solo,單打
+defense.mode.team,Team,隊伍
+defense.team.tableHeading,Matchup counts,對戰次數
+defense.team.heading,Edit Pokémon team,編輯寶可夢隊伍
+defense.team.add,Add Pokémon,添加寶可夢
+defense.team.empty,No Pokémon selected,未選擇寶可夢
+defense.team.displayType,Table format,表格格式
+defense.team.weak,Weak,弱點
+defense.team.resist,Resist,抵抗
+defense.team.simple,Simple,簡單
+defense.team.complex,Complex,複雜
+defense.team.type,Type,屬性
+defense.team.save,Save,保存
+defense.team.saveLong,Save {{ name }},保存{{ 名稱 }}
+defense.team.edit,Edit,編輯
+defense.team.editLong,Edit {{ name }},編輯{{ 名稱 }}
+defense.team.remove,Remove,移除
+defense.team.removeLong,Remove {{ name }},移除{{ 名稱 }}
+pokedex.search.description,"Search by name, number, or types",通過名稱、編號或屬性搜索
+pokedex.search.help,Help,幫助
+pokedex.search.helpLong,"Help, search Pokédex",幫助，搜索寶可夢圖鑑
+pokedex.search.notFound,No Pokémon found,未找到寶可夢
+pokedex.offense.text,Offense,攻擊
+pokedex.defense.text,Defense,防禦
+pokedex.shiny.label,Shiny for {{ pokemon }},{{ 寶可夢 }} 的閃光
+pokedex.shiny.text,Shiny,閃光
+pokedex.pagination.next,Next,下一個
+pokedex.pagination.nextLong,Next,下一個
+pokedex.pagination.previous,Prev,上一個
+pokedex.pagination.previousLong,Previous,上一個
+pokedex.pagination.firstLong,First,第一個
+pokedex.pagination.lastLong,Last,最後一個
+pokedex.stats.hp,HP,生命值
+pokedex.stats.hpLong,Hit Points,生命點數
+pokedex.stats.attack,Attack,攻擊
+pokedex.stats.attackLong,Attack,攻擊
+pokedex.stats.defense,Defense,防禦
+pokedex.stats.defenseLong,Defense,防禦
+pokedex.stats.specialAttack,Sp. Atk.,特攻
+pokedex.stats.specialAttackLong,Special Attack,特攻
+pokedex.stats.specialDefense,Sp. Def.,特防
+pokedex.stats.specialDefenseLong,Special Defense,特防
+pokedex.stats.speed,Speed,速度
+pokedex.stats.speedLong,Speed,速度
+pokedex.stats.total,Total,總計
+pokedex.stats.totalLong,Total,總計
+pokedexHelp.searchByName.heading,Search by name,按名稱搜索
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",您可以通過名稱搜索寶可夢。如果您只記得寶可夢名稱的一部分，它仍然可能會為您找到。但是，它現在無法處理錯別字。
+pokedexHelp.searchByNumber.heading,Search by number,按編號搜索
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.",按國家圖鑑編號搜索。如果您想找妙蛙種子，只需輸入1，而不是＃001。
+pokedexHelp.searchByType.heading,Search by type,按類型搜索
+pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,這裡有幾個示例，說明如何按類型搜索。
+pokedexHelp.searchExamples.type.query,fire,火
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).",搜索具有火屬性的寶可夢的任何形式（例如，小火龍，噴火龍，洛托姆）。
+pokedexHelp.searchExamples.doubleType.query,water flying,水 飛行
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,搜索水/飛行屬性的寶可夢（例如，暴鯉龍）或飛行/水屬性的寶可夢（例如，飛蟲鳥）。
+pokedexHelp.searchExamples.singleType.query,grass none,草 無
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",搜索僅具有草屬性的寶可夢，沒有第二屬性（例如，蔓藤怪，菊草葉，裙兒小姐）。
+pokedexHelp.back,Back to Pokédex,返回寶可夢圖鑑
+more.contact.heading,Contact me,聯繫我
+more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",你好，我是 <homepage>Sage Fennel</homepage>（他們），我製作了 神奇寶貝屬性計算器 (pkmn.help）。
+more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,請將您的想法和感謝發送到 <email>pkmn@wavebeem.com</email>。
+more.settings.heading,Settings,設置
+more.settings.language.label,Language,語言
+more.settings.language.default,Auto detect language,自動檢測語言
+more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",語言支持不完整。請給我發電子郵件，我將支付您翻譯的費用。
+more.settings.theme.label,Theme,主題
+more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“系統默認”將根據您的操作系統設置自動更改。
+more.settings.theme.values.auto,System default,系統默認
+more.settings.theme.values.light,Light,亮色
+more.settings.theme.values.dark,Dark,暗色
+more.settings.typeCount.label,Number of types,屬性數量
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,如果受到「森林詛咒」或「不夜城的詛咒」的影響，寶可夢暫時可以同時擁有三種屬性。由於第三個屬性很少使用，因此默認情況下隱藏了第三個屬性字段。
+more.settings.typeCount.values.2,Two types (2),兩種類型 (2)
+more.settings.typeCount.values.3,Three types (3),三種類型 (3)
+more.changes.heading,What’s new,新功能
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,查看 <changelog>更改日誌</changelog> 中的新功能。
+more.help.heading,Help,幫助
+more.help.serviceWorker.description,This button can help fix issues in the app.,此按鈕可幫助解決應用程序中的問題。
+more.help.serviceWorker.button,Reset,重置
+more.privacy.heading,Privacy,隱私權
+more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.",我永遠不會放置廣告或竊取您的個人數據。我使用的 <plausible>合理的分析</plausible> 是自資助的、獨立的、設在歐盟的，不會在您的計算機上存儲任何 cookie。
+more.givingBack.heading,Showing appreciation,表達感激之情
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.",我已經花費了無數時間來改進這個網站。如果您欣賞我的成果，請考慮捐款支持支持非裔和跨性別人士權利的慈善機構。
+more.thanks.heading,Special thanks,特別感謝
+more.thanks.sections.da,Danish translation,丹麥翻譯
+more.thanks.sections.ru,Russian translation,俄羅斯翻譯
+more.thanks.sections.kk,Kazakh translation,哈薩克翻譯
+more.thanks.sections.pt-BR,Brazilian Portuguese translation,巴西葡萄牙語翻譯
+more.thanks.sections.zh-Hans,Simplified Chinese translation,簡體中文翻譯
+more.thanks.sections.zh-Hant,Traditional Chinese translation,繁體中文翻譯
+more.thanks.sections.ro,Romanian translation,羅馬尼亞翻譯
+more.thanks.sections.pl,Polish translation,波蘭翻譯
+more.thanks.sections.fr,French translation,法語翻譯
+more.thanks.sections.de,German translation,德語翻譯
+more.thanks.sections.it,Italian translation,意大利語翻譯
+more.thanks.sections.ko,Korean translation,韓語翻譯
+more.thanks.sections.ja,Japanese translation,日語翻譯
+more.thanks.sections.nl,Dutch translation,荷蘭翻譯
+more.thanks.sections.testing,Testing,測試
+more.thanks.sections.other,Several anonymous Poké Fans,幾位匿名的粉絲
+more.openSource.heading,Open source,開源
+more.openSource.description,Source code is available on <github>GitHub</github>.,源代碼可在 <github>GitHub</github> 上找到。
+more.legalInfo.heading,Legal info,法律信息
+types.normal,Normal,一般
+types.fighting,Fighting,格鬥
+types.flying,Flying,飛行
+types.poison,Poison,毒
+types.ground,Ground,地面
+types.rock,Rock,岩石
+types.bug,Bug,蟲
+types.ghost,Ghost,幽靈
+types.steel,Steel,鋼
+types.fire,Fire,火
+types.water,Water,水
+types.grass,Grass,草
+types.electric,Electric,電
+types.psychic,Psychic,超能力
+types.ice,Ice,冰
+types.dragon,Dragon,龍
+types.dark,Dark,黑暗
+types.fairy,Fairy,妖精
+types.none,None,無
+banners.updateReady.description,An update is available,有更新可用
+banners.updateReady.whatsNew,What’s new,有什麼新功能
+banners.updateReady.update,Update,更新
+general.loading,Loading…,載入中…
+games.label,Game generation,遊戲世代
+games.help,Use type effectiveness from different game generations.,使用不同遊戲世代的屬性效果。
+games.byID.gen1,Generation 1,第一世代
+games.byID.gen2,Generation 2–5,第二到第五世代
+games.byID.default,Default (generation 6+),默認（第六世代及以上）

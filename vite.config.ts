@@ -6,8 +6,6 @@ import { VitePWA } from "vite-plugin-pwa";
 import * as fs from "fs";
 import * as path from "path";
 
-const devUserServiceWorker = process.env.DEV_USE_SERVICE_WORKER;
-
 function readJSON(filename: string): any {
   const text = fs.readFileSync(filename, "utf-8");
   const json = JSON.parse(text);

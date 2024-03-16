@@ -21,26 +21,32 @@ import Spinner from "./Spinner";
 const nbsp = "\u00a0";
 
 function getWikiLink(lang: string, pkmn: Pokemon): string {
-  const name = encodeURIComponent(
-    pickTranslation(pkmn.speciesNames, lang).replace(/ /g, "_")
-  );
+  function getName(lang: string) {
+    return encodeURIComponent(
+      pickTranslation(pkmn.speciesNames, lang).replace(/ /g, "_")
+    );
+  }
   switch (lang) {
     default:
     case "en":
-      return `https://bulbapedia.bulbagarden.net/wiki/${name}_(Pokémon)`;
+      return `https://bulbapedia.bulbagarden.net/wiki/${getName(
+        "en"
+      )}_(Pokémon)`;
     case "de":
-      return `https://www.pokewiki.de/${name}`;
+      return `https://www.pokewiki.de/${getName("de")}`;
     case "es":
-      return `https://www.wikidex.net/wiki/${name}`;
+      return `https://www.wikidex.net/wiki/${getName("es")}`;
     case "fr":
-      return `https://www.pokepedia.fr/${name}`;
+      return `https://www.pokepedia.fr/${getName("fr")}`;
     case "it":
-      return `https://wiki.pokemoncentral.it/${name}`;
+      return `https://wiki.pokemoncentral.it/${getName("it")}`;
     case "ja":
-      return `https://wiki.ポケモン.com/wiki/${name}`;
+      return `https://wiki.ポケモン.com/wiki/${getName("ja")}`;
     case "zh-Hans":
     case "zh-Hant":
-      return `https://wiki.52poke.com/wiki/${name}`;
+      return `https://wiki.52poke.com/wiki/${getName("zt-Hans")}`;
+    case "ko":
+      return `https://namu.wiki/w/${getName("ko")}`;
   }
 }
 
@@ -62,6 +68,8 @@ function getWikiName(lang: string): string {
     case "zh-Hans":
     case "zh-Hant":
       return "神奇宝贝百科";
+    case "ko":
+      return "나무위키";
   }
 }
 

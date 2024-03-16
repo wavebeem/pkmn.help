@@ -150,10 +150,11 @@ more.givingBack.heading,Showing appreciation,Demonstrando Carinho
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.","Dediquei incontáveis horas melhorando este site. Se aprecia o que fiz, por favor, considere doar para caridades que apoiam os direitos BIPOC e transsexuais."
 more.thanks.heading,Special thanks,Agradecimentos especiais
 more.thanks.sections.da,Danish translation,Tradução dinamarquesa
-more.thanks.sections.ru,Russian translation,Tradução russa
-more.thanks.sections.kk,Kazakh translation,Tradução cazaque
+more.thanks.sections.ru,Russian translation,Tradução Russa
+more.thanks.sections.kk,Kazakh translation,Tradução Cazaque
 more.thanks.sections.pt-BR,Brazilian Portuguese translation,Tradução Português Brasileiro
 more.thanks.sections.zh-Hans,Simplified Chinese translation,Tradução Chinesa
+more.thanks.sections.zh-Hant,Traditional Chinese translation,
 more.thanks.sections.ro,Romanian translation,Tradução Romena
 more.thanks.sections.pl,Polish translation,Tradução Polonesa
 more.thanks.sections.fr,French translation,Tradução Francesa
@@ -161,7 +162,7 @@ more.thanks.sections.de,German translation,Tradução Alemã
 more.thanks.sections.it,Italian translation,Tradução Italiana
 more.thanks.sections.ko,Korean translation,Tradução Coreana
 more.thanks.sections.ja,Japanese translation,Tradução Japonesa
-more.thanks.sections.nl,Dutch translation,
+more.thanks.sections.nl,Dutch translation,Tradução Holandesa
 more.thanks.sections.testing,Testing,Testes
 more.thanks.sections.other,Several anonymous Poké Fans,Vários Pokéfãs anônimos
 more.openSource.heading,Open source,Fonte

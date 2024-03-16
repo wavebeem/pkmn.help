@@ -50,6 +50,24 @@ export const languageNamesNative: Record<Lang, string> = {
   ko: `한국어`,
 };
 
+const officialLanguages = [
+  "en",
+  "es",
+  "de",
+  "it",
+  "fr",
+  "ja",
+  "zh-Hans",
+  "zh-Hant",
+  "ko",
+] as const;
+
+export const officialLanguagesSet = new Set(officialLanguages);
+
+const unofficialLanguages = Object.keys(languageNamesNative).filter((lang) => {
+  return !officialLanguagesSet.has(lang as any);
+});
+
 export const languageNamesEnglish: Record<Lang, string> = {
   en: ``,
   es: `Spanish`,
@@ -74,7 +92,7 @@ export const languageBounty: Record<Lang, number> = {
   en: 0,
   es: 0,
   "pt-BR": 0,
-  de: 0,
+  de: 30,
   da: 0,
   it: 0,
   fr: 0,
@@ -85,14 +103,14 @@ export const languageBounty: Record<Lang, number> = {
   kk: 0,
   ja: 50,
   "ja-Hrkt": 0,
-  "zh-Hans": 50,
-  "zh-Hant": 100,
-  ko: 50,
+  "zh-Hans": 0,
+  "zh-Hant": 0,
+  ko: 0,
 };
 
 export function formatLanguageCompletion(lang: string): string {
   const value = languageCompletions[lang] || 0;
-  const n = (value * 100).toFixed(1);
+  const n = Math.floor(value * 100);
   return `${n}%`;
 }
 
@@ -230,14 +248,25 @@ export function ScreenMore({
             {t("more.settings.language.default")} &ndash; {showLang(autoLang)}{" "}
             &ndash; {formatLanguageCompletion(autoLang)}
           </option>
-          <option disabled>&ndash;</option>
-          {Object.keys(languageNamesNative).map((lang) => {
+          <hr />
+          {officialLanguages.map((lang) => {
             if (!isLang(lang)) {
               throw new Error(`${lang} is not a valid language`);
             }
             return (
               <option value={lang} key={lang}>
-                {showLang(lang)} &ndash; {formatLanguageCompletion(lang)}
+                {showLang(lang)} ({formatLanguageCompletion(lang)})
+              </option>
+            );
+          })}
+          <hr />
+          {unofficialLanguages.map((lang) => {
+            if (!isLang(lang)) {
+              throw new Error(`${lang} is not a valid language`);
+            }
+            return (
+              <option value={lang} key={lang}>
+                {showLang(lang)} ({formatLanguageCompletion(lang)})
               </option>
             );
           })}
@@ -465,6 +494,14 @@ export function ScreenMore({
         <ul className="list mb0 mt1 pl3">
           <li>Dragonify</li>
         </ul>
+        <ul className="list mb0 mt1 pl3">
+          <li>Tin</li>
+        </ul>
+
+        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.zh-Hant")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Nan Zheng</li>
+        </ul>
 
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ro")}</h3>
         <ul className="list mb0 mt1 pl3">
@@ -497,11 +534,17 @@ export function ScreenMore({
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.it")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Gabriele Giugno</li>
-          <li>Fabio “N™” Ilari</li>
+          <li>
+            Fabio <q>N&trade;</q> Ilari
+          </li>
           <li>Banshee</li>
+          <li>Mathieu Licata</li>
         </ul>
 
         <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ko")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>BetterBritter</li>
+        </ul>
         <ul className="list mb0 mt1 pl3">
           <li>Eric Marriott</li>
         </ul>

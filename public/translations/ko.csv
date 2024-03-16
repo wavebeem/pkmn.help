@@ -3,157 +3,158 @@ title,Pokémon Type Calculator,포켓몬 타입 계산기
 navigation.offense,Offense,공격
 navigation.defense,Defense,방어
 navigation.pokedex,Pokédex,포켓몬 도감
-navigation.more,More,더
+navigation.more,More,더보기
 offense.chooseTypes,Choose types,타입 선택
-offense.dealsXTo,Deals {{ x }} to,공격은 {{x}} 데미지
-offense.coverage.heading,Pokédex coverage,포켓몬 도감 커버리지
-offense.coverage.edit,Edit list,편집 목록
-offense.coverage.weakness,Weak,약점
-offense.coverage.normal,Normal,정상
-offense.coverage.resistance,Resist,저항하다
-offense.coverageList.empty,No Pokémon found or no types selected,포켓몬을 찾을 수 없거나 유형을 선택하지 않았습니다.
-offense.coverageList.weakness.heading,Weakness Coverage List,약점 커버리지 목록
+offense.dealsXTo,Deals {{ x }} to,{{x}} 데미지
+offense.coverage.heading,Pokédex coverage,포켓몬 도감과 비교하기
+offense.coverage.edit,Edit list,포켓몬 목록 편집
+offense.coverage.weakness,Weak,약점인 포켓몬
+offense.coverage.normal,Normal,1배인 포켓몬
+offense.coverage.resistance,Resist,내성인 포켓몬
+offense.coverageList.empty,No Pokémon found or no types selected,포켓몬을 찾을 수 없거나 유형이 선택되지 않았습니다.
+offense.coverageList.weakness.heading,Weakness Coverage List,약점인 포켓몬 목록
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,이 포켓몬은 선택한 유형 중 적어도 하나에 약합니다.
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,정상 유효성 적용 범위 목록
-offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,이 포켓몬은 선택한 유형의 약점 또는 저항 목록에 없습니다.
-offense.coverageList.resistance.heading,Resistance Coverage List,저항 범위 목록
+offense.coverageList.normal.heading,Normal Effectiveness Coverage List,1배인 포켓몬 목록
+offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,이 포켓몬은 선택한 유형에 대해 약점도 아니고 내성도 없습니다.
+offense.coverageList.resistance.heading,Resistance Coverage List,내성인 포켓몬 목록
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,이 포켓몬은 선택한 모든 유형에 내성이 있습니다.
-coverage.heading,Pokédex Coverage,약점 목록
-coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",사용자 정의 포켓몬 도감 CSV 파일을 가져오거나 내보내서 다른 포켓몬의 약점 범위를 확인합니다. OU 등급 포켓몬만으로 사용자 지정 CSV 파일을 만들거나 처음부터 나만의 포켓몬을 만들 수도 있습니다.
-coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","CSV 데이터는 열 순서가 아닌 열 머리글 이름으로 로드되므로 원하는 경우 열을 추가하거나 재정렬할 수 있습니다(예: ""계층"" 열 또는 ""메모"" 열 추가)."
+coverage.heading,Pokédex Coverage,비교할 포켓몬 목록
+coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",커스텀 Pokédex CSV 파일을 가져오거나 내보내서 다른 포켓몬에게의 공격 상성을 확인할 수 있습니다. OU 티어 포켓몬만으로 CSV 파일을 만들거나 처음부터 나만의 포켓몬을 만들 수도 있습니다.
+coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","CSV 데이터는 열 순서가 아닌 열 헤더 명칭으로 로드되므로 필요한 경우 열을 추가하거나 재정렬할 수 있습니다(예: ""티어"" 열 또는 ""메모"" 열 추가)."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","CSV 파일은 Google 스프레드시트, Microsoft Excel, OpenOffice, LibreOffice, 메모장 등으로 편집할 수 있습니다."
 coverage.csvHeaders.number,Number,숫자
 coverage.csvHeaders.name,Name,이름
 coverage.csvHeaders.type1,Type 1,첫 번째 타입
 coverage.csvHeaders.type2,Type 2,두 번째 타입
 coverage.csvHeaders.type3,Type 3,세 번째 타입
-coverage.export.button,Export,내보내다
-coverage.export.description,Export the default Pokédex to a CSV file,기본 포켓몬 도감을 CSV 파일로 내보내기
-coverage.import.button,Import,수입하다
-coverage.import.description,Import an edited Pokédex CSV file,편집한 포켓몬 도감 CSV 파일 가져오기
+coverage.export.button,Export,내보내기
+coverage.export.description,Export the default Pokédex to a CSV file,기본 포켓몬 도감을 CSV 파일로 내보냅니다.
+coverage.import.button,Import,가져오기
+coverage.import.description,Import an edited Pokédex CSV file,편집한 포켓몬 도감 CSV 파일을 가져옵니다.
 coverage.reset.button,Reset,초기화
-coverage.reset.description,Reset to the default Pokédex,기본 포켓몬 도감으로 재설정
+coverage.reset.description,Reset to the default Pokédex,기본 포켓몬 도감으로 초기화
 coverage.filename,pkmn.help type coverage.csv,pkmn.help type coverage.csv
-coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,"""{{ file }}"" 에서 가져온 {{ n }} 포켓몬 양식"
-coverage.status.exported,Exported default Pokémon forms,내보낸 기본 포켓몬 양식
-coverage.status.reset,Loaded default Pokémon forms,로드된 기본 포켓몬 양식
-coverage.status.errored,Error loading CSV. Don't change header names.,CSV를 로드하는 중에 오류가 발생했습니다. 헤더 이름을 변경하지 마십시오.
+coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,"""{{ file }}"" 에서 가져온 {{ n }} 포켓몬의 모습"
+coverage.status.exported,Exported default Pokémon forms,내보낸 포켓몬의 기본 모습
+coverage.status.reset,Loaded default Pokémon forms,로드된 포켓몬의 기본 모습
+coverage.status.errored,Error loading CSV. Don't change header names.,CSV를 로드하는 중에 오류가 발생했습니다. 헤더 이름을 변경하지 마세요.
 coverage.back,Back to offense,공격으로 돌아가기
-defense.chooseFirst,Choose first type,첫 번째 유형 선택
-defense.chooseSecond,Choose second type,두 번째 유형 선택
-defense.chooseThird,Choose third type,세 번째 유형 선택
-defense.takesXFrom,Takes {{ x }} from,{{ x }} 피해를 입다
-defense.chooseAbility,Choose ability,
-defense.abilityNames.none,None,
-defense.abilityNames.wonder_guard,Wonder Guard,
-defense.abilityNames.delta_stream,Delta Stream,
-defense.abilityNames.fluffy,Fluffy,
-defense.abilityNames.purifying_salt,Purifying Salt,
-defense.abilityNames.heatproof,Heatproof,
-defense.abilityNames.water_bubble,Water Bubble,
-defense.abilityNames.thick_fat,Thick Fat,
-defense.abilityNames.earth_eater,Earth Eater,
-defense.abilityNames.levitate,Levitate,
-defense.abilityNames.flash_fire,Flash Fire,
-defense.abilityNames.well_baked_body,Well-Baked Body,
-defense.abilityNames.dry_skin,Dry Skin,
-defense.abilityNames.storm_drain,Storm Drain,
-defense.abilityNames.water_absorb,Water Absorb,
-defense.abilityNames.sap_sipper,Sap Sipper,
-defense.abilityNames.lightning_rod,Lightning Rod,
-defense.abilityNames.motor_drive,Motor Drive,
-defense.abilityNames.volt_absorb,Volt Absorb,
-defense.mode.heading,Choose mode,모드 선택
-defense.mode.solo,Solo,독주
-defense.mode.team,Team,팀
+defense.chooseFirst,Choose first type,첫 번째 타입 선택
+defense.chooseSecond,Choose second type,두 번째 타입 선택
+defense.chooseThird,Choose third type,세 번째 타입 선택
+defense.takesXFrom,Takes {{ x }} from,{{ x }} 피해
+defense.chooseAbility,Choose ability,특성을 선택하세요
+defense.abilityNames.none,None,없음
+defense.abilityNames.wonder_guard,Wonder Guard,불가사의부적
+defense.abilityNames.delta_stream,Delta Stream,델타스트림
+defense.abilityNames.fluffy,Fluffy,복슬복슬
+defense.abilityNames.purifying_salt,Purifying Salt,정화의소금
+defense.abilityNames.heatproof,Heatproof,내열
+defense.abilityNames.water_bubble,Water Bubble,수포
+defense.abilityNames.thick_fat,Thick Fat,두꺼운지방
+defense.abilityNames.earth_eater,Earth Eater,흙먹기
+defense.abilityNames.levitate,Levitate,부유
+defense.abilityNames.flash_fire,Flash Fire,타오르는불꽃
+defense.abilityNames.well_baked_body,Well-Baked Body,노릇노릇바디
+defense.abilityNames.dry_skin,Dry Skin,건조피부
+defense.abilityNames.storm_drain,Storm Drain,마중물
+defense.abilityNames.water_absorb,Water Absorb,저수
+defense.abilityNames.sap_sipper,Sap Sipper,흡수
+defense.abilityNames.lightning_rod,Lightning Rod,피뢰침
+defense.abilityNames.motor_drive,Motor Drive,전기엔진
+defense.abilityNames.volt_absorb,Volt Absorb,축전
+defense.mode.heading,Choose mode,배틀 룰 선택
+defense.mode.solo,Solo,싱글
+defense.mode.team,Team,더블
 defense.team.tableHeading,Matchup counts,매치업 카운트
-defense.team.heading,Edit Pokémon team,포켓몬 팀 편집
+defense.team.heading,Edit Pokémon team,팀 편집
 defense.team.add,Add Pokémon,포켓몬 추가
 defense.team.empty,No Pokémon selected,선택한 포켓몬 없음
-defense.team.displayType,Table format,테이블 형식
+defense.team.displayType,Table format,표 형식
 defense.team.weak,Weak,약점
-defense.team.resist,Resist,저항하다
-defense.team.simple,Simple,단순한
-defense.team.complex,Complex,복잡한
+defense.team.resist,Resist,내성
+defense.team.simple,Simple,심플
+defense.team.complex,Complex,고급
 defense.team.type,Type,유형
 defense.team.save,Save,저장
 defense.team.saveLong,Save {{ name }},{{ name }} 저장
-defense.team.edit,Edit,편집하다
+defense.team.edit,Edit,편집
 defense.team.editLong,Edit {{ name }},{{ name }} 편집
-defense.team.remove,Remove,제거하다
+defense.team.remove,Remove,제거
 defense.team.removeLong,Remove {{ name }},{{ name }}  제거
 pokedex.search.description,"Search by name, number, or types","이름, 번호 또는 유형으로 검색"
-pokedex.search.help,Help,도움
-pokedex.search.helpLong,"Help, search Pokédex","도움말, 검색 포켓몬 도감"
+pokedex.search.help,Help,도움말
+pokedex.search.helpLong,"Help, search Pokédex","도움말, 포켓몬 도감 검색"
 pokedex.search.notFound,No Pokémon found,포켓몬을 찾을 수 없습니다
 pokedex.offense.text,Offense,공격
 pokedex.defense.text,Defense,방어
 pokedex.shiny.label,Shiny for {{ pokemon }},색이 다른 {{ pokemon }}
-pokedex.shiny.text,Shiny,색이 다른
+pokedex.shiny.text,Shiny,이로치
 pokedex.pagination.next,Next,다음
 pokedex.pagination.nextLong,Next,다음
 pokedex.pagination.previous,Prev,이전
 pokedex.pagination.previousLong,Previous,이전
-pokedex.pagination.firstLong,First,첫 번째
-pokedex.pagination.lastLong,Last,마지막
+pokedex.pagination.firstLong,First,처음으로
+pokedex.pagination.lastLong,Last,끝으로
 pokedex.stats.hp,HP,HP
-pokedex.stats.hpLong,Hit Points,히트 포인트
+pokedex.stats.hpLong,Hit Points,HP
 pokedex.stats.attack,Attack,공격
 pokedex.stats.attackLong,Attack,공격
 pokedex.stats.defense,Defense,방어
 pokedex.stats.defenseLong,Defense,방어
-pokedex.stats.specialAttack,Sp. Atk.,특수공격
+pokedex.stats.specialAttack,Sp. Atk.,특공
 pokedex.stats.specialAttackLong,Special Attack,특수공격
-pokedex.stats.specialDefense,Sp. Def.,특수방어
+pokedex.stats.specialDefense,Sp. Def.,특방
 pokedex.stats.specialDefenseLong,Special Defense,특수방어
 pokedex.stats.speed,Speed,스피드
 pokedex.stats.speedLong,Speed,스피드
 pokedex.stats.total,Total,총합
 pokedex.stats.totalLong,Total,총합
 pokedexHelp.searchByName.heading,Search by name,이름으로 검색
-pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",이름으로 포켓몬을 검색할 수 있습니다. 포켓몬 이름의 일부만 기억하더라도 찾을 수 있습니다. 하지만 지금은 맞춤법 오류를 처리할 수 없습니다.
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",이름으로 포켓몬을 검색할 수 있습니다. 포켓몬 이름의 일부만 입력해도 찾을 수 있습니다. 다만 아직은 오타가 나면 찾기 어렵습니다.
 pokedexHelp.searchByNumber.heading,Search by number,번호로 검색
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.",전국 포켓몬 도감 번호로 검색하세요. 이상해씨를 원하시면 #001이 아닌 1을 입력하세요.
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.",전국도감 번호로 검색하세요. 이상해씨를 찾는다면 #001이 아니라 1을 입력하세요.
 pokedexHelp.searchByType.heading,Search by type,유형별 검색
-pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,다음은 유형별로 검색하는 방법에 대한 몇 가지 예입니다.
+pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,다음은 유형별로 검색하는 방법에 대한 몇 가지 예시입니다.
 pokedexHelp.searchExamples.type.query,fire,불꽃
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","파이리, 리자몽, 로토무 등 어떤 형태로든 불을 가진 포켓몬을 찾습니다."
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","파이리, 리자몽, 로토무 등 어떤 형태로든 불꽃 타입을 가진 포켓몬을 찾습니다."
 pokedexHelp.searchExamples.doubleType.query,water flying,물 비행
 pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,물/비행(예: 갸라도스) 또는 비행/물(예: 윽우지) 포켓몬을 검색합니다.
 pokedexHelp.searchExamples.singleType.query,grass none,풀 없음
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","2형이 아닌 풀형 포켓몬을 찾으세요(예: 덩쿠리, 치코리타, 드레디어)."
-pokedexHelp.back,Back to Pokédex,포켓몬 백과사전으로 돌아가기
-more.contact.heading,Contact me,저에게 연락
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","안녕하세요, 저는 <homepage>Sage Fennel</homepage> (그들/그들의) 이고 Pokémon Type Calculator (pkmn.help)를 만들었습니다."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,<email>pkmn@wavebeem.com</email> 으로 귀하의 생각과 감사를 이메일로 보내주십시오.
-more.settings.heading,Settings,조절
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","단일 풀 타입 포켓몬을 검색합니다.(예: 덩쿠리, 치코리타, 드레디어)."
+pokedexHelp.back,Back to Pokédex,포켓몬 도감으로 돌아가기
+more.contact.heading,Contact me,문의
+more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","안녕하세요, 저는 <homepage>Sage Fennel</homepage> (they/them으로 지칭해 주세요) 이고 Pokémon Type Calculator (pkmn.help)를 만들었습니다."
+more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,여러분의 생각과 감사를 <email>pkmn@wavebeem.com</email> 로 보내주세요.
+more.settings.heading,Settings,설정
 more.settings.language.label,Language,언어
 more.settings.language.default,Auto detect language,언어 자동 감지
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",언어 지원이 불완전합니다. 저에게 이메일을 보내주시면 번역 비용을 지불하겠습니다.
-more.settings.theme.label,Theme,디스플레이
-more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""시스템 기본값"" 은 운영 체제 설정에 따라 자동으로 변경됩니다."
+more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",아직 언어 지원이 완벽하지 않습니다. 저에게 이메일을 보내주시면 번역 시 보수를 제공하겠습니다.
+more.settings.theme.label,Theme,테마
+more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""시스템 기본값"" 은 시스템 설정에 따라 자동으로 변경됩니다."
 more.settings.theme.values.auto,System default,시스템 기본값
 more.settings.theme.values.light,Light,라이트 모드
 more.settings.theme.values.dark,Dark,다크 모드
 more.settings.typeCount.label,Number of types,타입의 수
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,포켓몬은 숲의 저주나 트릭 오어 트릿에 맞으면 잠시 동안 한 번에 세 가지 유형을 가질 수 있습니다. 세 번째 유형 필드는 거의 사용되지 않기 때문에 기본적으로 숨겨져 있습니다.
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,포켓몬이 '숲의저주'나 '핼러윈'에 맞으면 잠시 동안 한 번에 세 가지 유형을 가질 수 있습니다. 세 번째 유형은 거의 사용되지 않기 때문에 기본적으로 숨겨져 있습니다.
 more.settings.typeCount.values.2,Two types (2),두 가지 유형(2)
 more.settings.typeCount.values.3,Three types (3),세 가지 유형 (3)
 more.changes.heading,What’s new,새로운 기능
-more.changes.description,See what’s new in the <changelog>changelog</changelog>.,<changelog>변경 로그</changelog> 에서 변경 사항 보기
-more.help.heading,Help,도움
-more.help.serviceWorker.description,This button can help fix issues in the app.,이 버튼은 앱의 문제를 해결하는 데 도움이 될 수 있습니다.
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,<changelog>변경 로그</changelog> 에서 변경 사항을 볼 수 있습니다.
+more.help.heading,Help,도움말
+more.help.serviceWorker.description,This button can help fix issues in the app.,위 버튼을 누르면 앱의 문제를 해결하는 데 도움이 될 수 있습니다.
 more.help.serviceWorker.button,Reset,초기화
-more.privacy.heading,Privacy,개인정보 보호정책
-more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.",절대 광고를 게재하거나 개인정보를 도용하지 않겠습니다. 저는 <plausible>Plausible Analytics</plausible>를 사용합니다. 이 분석은 유럽 연합에서 자체적으로 자금을 조달하고 독립적이며 귀하의 컴퓨터에 쿠키를 저장하지 않습니다.
-more.givingBack.heading,Showing appreciation,감사를 표시
-more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.",저는 이 사이트를 개선하는 데 수많은 시간을 보냈습니다. 내가 만든 것에 감사한다면 흑인과 원주민 및 트랜스젠더 권리를 지원하는 자선 단체에 기부하는 것을 고려해 주세요.
-more.thanks.heading,Special thanks,특별한 감사
+more.privacy.heading,Privacy,개인정보 보호
+more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","절대 광고를 게재하거나 개인정보를 도용하지 않습니다. 저는 <plausible>Plausible Analytics</plausible>를 사용하고 있으며, 이곳은 유럽 연합에서 자체적으로 자금을 조달하고 독립적이며 당신의 컴퓨터에 쿠키를 저장하지 않습니다."
+more.givingBack.heading,Showing appreciation,감사 표하기
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.",저는 이 사이트를 개선하는 데 많은 시간을 보냈습니다. 제가 만든 것에 고마움을 표하고 싶으시다면 흑인과 원주민 및 트랜스젠더 권리를 지원하는 자선 단체에 기부하는 것을 고려해 주세요.
+more.thanks.heading,Special thanks,도움을 주신 분들
 more.thanks.sections.da,Danish translation,덴마크어 번역
 more.thanks.sections.ru,Russian translation,러시아어 번역
 more.thanks.sections.kk,Kazakh translation,카자흐어 번역
 more.thanks.sections.pt-BR,Brazilian Portuguese translation,브라질 포르투갈어 번역
 more.thanks.sections.zh-Hans,Simplified Chinese translation,중국어 번역
+more.thanks.sections.zh-Hant,Traditional Chinese translation,
 more.thanks.sections.ro,Romanian translation,루마니아어 번역
 more.thanks.sections.pl,Polish translation,폴란드어 번역
 more.thanks.sections.fr,French translation,프랑스어 번역
@@ -161,8 +162,8 @@ more.thanks.sections.de,German translation,독일어 번역
 more.thanks.sections.it,Italian translation,이탈리아어 번역
 more.thanks.sections.ko,Korean translation,한국어 번역
 more.thanks.sections.ja,Japanese translation,일본어 번역
-more.thanks.sections.nl,Dutch translation,
-more.thanks.sections.testing,Testing,테스트
+more.thanks.sections.nl,Dutch translation,네델란드어
+more.thanks.sections.testing,Testing,테스터
 more.thanks.sections.other,Several anonymous Poké Fans,여러 익명의 포켓몬 팬
 more.openSource.heading,Open source,오픈 소스
 more.openSource.description,Source code is available on <github>GitHub</github>.,소스 코드는 <github>GitHub</github>에서 확인할 수 있습니다.
@@ -186,12 +187,12 @@ types.dragon,Dragon,드래곤
 types.dark,Dark,악
 types.fairy,Fairy,페어리
 types.none,None,없음
-banners.updateReady.description,An update is available,업데이트를 사용할 수 있습니다
+banners.updateReady.description,An update is available,새 버전이 있습니다!
 banners.updateReady.whatsNew,What’s new,새로운 기능
 banners.updateReady.update,Update,업데이트
-general.loading,Loading…,기다리세요...
+general.loading,Loading…,로딩 중...
 games.label,Game generation,세대
-games.help,Use type effectiveness from different game generations.,다양한 게임 세대의 유형 효율성 사용
+games.help,Use type effectiveness from different game generations.,다른 세대의 상성 사용하기
 games.byID.gen1,Generation 1,1세대
 games.byID.gen2,Generation 2–5,2~5세대
-games.byID.default,Default (generation 6+),오토매틱 (6+세대)
+games.byID.default,Default (generation 6+),기본 (6세대~)
