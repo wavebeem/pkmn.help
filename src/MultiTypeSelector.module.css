@@ -25,7 +25,6 @@
 
 .checkbox[data-type="stellar"] {
   background: var(--stellar-background-conic);
-  --checkbox-color-border: hsl(0 0% 100% / 50%);
 }
 
 .checkbox:checked {

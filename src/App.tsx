@@ -101,7 +101,7 @@ export function App() {
   const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const isDark = theme === "dark" || (theme === "auto" && isDarkMode);
   const themeColor = isDark ? "hsl(357, 70%, 40%)" : "hsl(357, 97%, 46%)";
-  const themeAuto = isDarkMode ? "dark" : "light";
+  const themeAuto = isDark ? "dark" : "light";
 
   // Load Pokédex JSON
   const jsonURL = new URL("data-pkmn.json", publicPath).href;
@@ -132,7 +132,7 @@ export function App() {
     <HelmetProvider>
       <div className="flex-auto">
         <Helmet>
-          <html data-theme={theme} data-theme-auto={themeAuto} />
+          <html data-theme={themeAuto} />
           <meta name="theme-color" content={themeColor} />
           <title>{t("title")}</title>
         </Helmet>

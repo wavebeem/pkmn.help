@@ -6,6 +6,8 @@
 
 - Added support for selecting Tera types for Solo and Team Defense modes
 
+- Changed offense checkboxes and defense radio buttons to use dark mode when selected, so they're easier to see against the dark background
+
 - Removed focus styles when not using keyboard
 
   - The website will look especially better on mobile now since there won't be as many distracting borders on buttons and links

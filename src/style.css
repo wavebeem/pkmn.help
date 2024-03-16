@@ -91,8 +91,7 @@
   --type-min-width: 8rem;
 }
 
-:root[data-theme="dark"],
-:root[data-theme="auto"][data-theme-auto="dark"] {
+:root[data-theme="dark"] {
   --color-bg1: hsl(220 20% 25%);
   --color-bg2: hsl(220 20% 20%);
   --color-bg3: hsl(220 20% 30%);
@@ -111,7 +110,7 @@
   --color-border1: hsl(220 20% 55%);
   --color-border2: hsl(220 20% 35%);
   --color-border3: hsl(220 20% 30%);
-  --color-vibrant-border: hsl(0 0% 100% / 0.2);
+  --color-vibrant-border: hsl(0 0% 100% / 0.4);
   --color-vibrant-border1: hsl(0 0% 100% / 0.8);
   --color-scroll-fg: hsl(220 20% 70%);
   --color-scroll-bg: hsl(220 20% 10%);
