@@ -16,6 +16,7 @@
       "normal": "Normal",
       "resistance": "Resist"
     },
+    "teraPokemon": "Tera Pokémon",
     "coverageList": {
       "empty": "No Pokémon found or no types selected",
       "weakness": {

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2024-03-16
+
+- Added support for the new Stellar type
+
+- Removed focus styles when not using keyboard
+
+  - The website will look especially better on mobile now since there won't be as many distracting borders on buttons and links
+
 ## 2024-03-13
 
 - Added Traditional Chinese translation

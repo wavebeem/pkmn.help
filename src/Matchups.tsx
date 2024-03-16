@@ -58,13 +58,14 @@ export function Matchups({ kind, generation, types, ability }: MatchupsProps) {
           <Section key={eff} title={formatTitle(formatEffectiveness(eff))}>
             {list.map((x) => {
               if (kind === "offense" && x.formName === "stellar") {
-                // TODO: Translation
-                return <PlainBadge key="form-tera">Tera Pokémon</PlainBadge>;
+                return (
+                  <PlainBadge key="form-tera">
+                    {t("offense.teraPokemon")}
+                  </PlainBadge>
+                );
               }
-              // TODO: Add some other kind of "plain" badge
               return <Badge key={`type-${x.type}`} type={x.type} />;
             })}
-            {/* {kind === "offense" && eff === 2 && <Badge type={Type.stellar} />} */}
           </Section>
         );
       })}
