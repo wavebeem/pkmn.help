@@ -186,6 +186,7 @@ types.ice,Ice,冰
 types.dragon,Dragon,龙
 types.dark,Dark,恶
 types.fairy,Fairy,妖精
+types.stellar,Stellar,
 types.none,None,无
 banners.updateReady.description,An update is available,有更新可用
 banners.updateReady.whatsNew,What’s new,近期新闻

@@ -16,7 +16,8 @@ export function Badge({ type }: BadgeProps) {
         "type-bg",
         "ba border-vibrant",
         "br2",
-        "b f5 lh-title tc"
+        "b f5 lh-title tc",
+        type === Type.stellar && "type-stellar"
       )}
       style={{
         padding: 2,
@@ -24,12 +25,15 @@ export function Badge({ type }: BadgeProps) {
       }}
     >
       <div
-        className="br1 ba b--transparent white truncate"
+        className={classNames(
+          "br1 ba b--transparent white truncate",
+          type === Type.stellar ? "type-stellar-label" : "type-any-label"
+        )}
         style={{
           paddingLeft: 4,
           paddingRight: 4,
-          background: typeColorBG(type),
-          borderColor: typeColorBorder(type),
+          ["--type-color-bg" as any]: typeColorBG(type),
+          ["--type-color-border" as any]: typeColorBorder(type),
         }}
       >
         {t(`types.${type}`)}

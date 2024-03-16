@@ -186,6 +186,7 @@ types.ice,Ice,Lodowy
 types.dragon,Dragon,Smoczy
 types.dark,Dark,Mroczy
 types.fairy,Fairy,Bajkowy
+types.stellar,Stellar,
 types.none,None,Nic
 banners.updateReady.description,An update is available,Aktualizacja jest dostępna
 banners.updateReady.whatsNew,What’s new,Co nowego

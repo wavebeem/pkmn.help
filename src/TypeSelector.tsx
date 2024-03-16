@@ -26,7 +26,9 @@ export function TypeSelector({
   name,
 }: TypeSelectorProps) {
   const { t } = useTranslation();
-  const baseTypes = typesForGeneration(generation);
+  const baseTypes = typesForGeneration(generation).filter(
+    (t) => t !== Type.stellar
+  );
   const theTypes = includeNone ? [...baseTypes, Type.none] : baseTypes;
   const stylesObj = {
     disabled: "border3 fg4 bg2 o-60 focus-simple pointer-none",

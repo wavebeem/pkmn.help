@@ -8,26 +8,28 @@ import styles from "./MultiTypeSelector.module.css";
 
 const buttonInnerHeight = "1.5rem";
 
-interface MultiTypeSelectorProps {
+type MultiTypeSelectorProps = {
   generation: Generation;
   onChange(types: Type[]): void;
   value: Type[];
-}
+};
 
 export function MultiTypeSelector({
   generation,
   onChange,
   value,
 }: MultiTypeSelectorProps) {
+  console.log(MultiTypeSelector, { value });
   const { t } = useTranslation();
   const styleMap = {
     selected:
       "border-vibrant2 type-bg no-box-shadow button-shadow focus-selected",
     normal: "border1 bg1 fg1 button-bg button-shadow focus-simple",
   };
+  const types = typesForGeneration(generation);
   return (
     <div className="grid gap2 columns-type-selector">
-      {typesForGeneration(generation).map((type) => {
+      {types.map((type) => {
         const isChecked = value.includes(type);
         const styleKey = isChecked ? "selected" : "normal";
         return (
@@ -60,7 +62,8 @@ export function MultiTypeSelector({
                     normal: "border-vibrant type-bg",
                   }[styleKey],
                   "ba br1",
-                  "focus-none"
+                  "focus-none",
+                  type === Type.stellar && "type-stellar"
                 )}
                 style={{
                   ["--type-color" as any]: typeColor(type),

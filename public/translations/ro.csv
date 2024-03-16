@@ -186,6 +186,7 @@ types.ice,Ice,Gheața
 types.dragon,Dragon,Dragon
 types.dark,Dark,Întuneric
 types.fairy,Fairy,Zana
+types.stellar,Stellar,
 types.none,None,Nimic
 banners.updateReady.description,An update is available,Poti sa updatezi
 banners.updateReady.whatsNew,What’s new,

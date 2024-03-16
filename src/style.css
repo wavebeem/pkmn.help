@@ -273,6 +273,11 @@ button {
     0 0 4px rgba(0, 0, 0, 0.9);
 }
 
+.type-any-label {
+  background: var(--type-color-bg);
+  border-color: var(--type-color-border);
+}
+
 .select-none {
   user-select: none;
 }

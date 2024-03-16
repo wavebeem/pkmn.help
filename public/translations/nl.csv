@@ -186,6 +186,7 @@ types.ice,Ice,IJs
 types.dragon,Dragon,Draak
 types.dark,Dark,Duister
 types.fairy,Fairy,Fee
+types.stellar,Stellar,
 types.none,None,Geen
 banners.updateReady.description,An update is available,Een update is verkrijgbaar
 banners.updateReady.whatsNew,What’s new,Wat is nieuw

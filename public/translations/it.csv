@@ -186,6 +186,7 @@ types.ice,Ice,Ghiaccio
 types.dragon,Dragon,Drago
 types.dark,Dark,Buio
 types.fairy,Fairy,Folletto
+types.stellar,Stellar,
 types.none,None,Nessuno
 banners.updateReady.description,An update is available,è disponibile un aggiornamento
 banners.updateReady.whatsNew,What’s new,Cosa c'è di nuovo

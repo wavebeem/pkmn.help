@@ -76,6 +76,9 @@ function formatEffectiveness(eff: number | undefined): string {
     case undefined:
       return "–"; // n-dash
     default:
+      if (Number.isNaN(eff)) {
+        return "???";
+      }
       return `${eff}×`;
   }
 }

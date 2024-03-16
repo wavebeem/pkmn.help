@@ -186,6 +186,7 @@ types.ice,Ice,Gelo
 types.dragon,Dragon,Dragão
 types.dark,Dark,Sombrio
 types.fairy,Fairy,Fada
+types.stellar,Stellar,
 types.none,None,Nenhum
 banners.updateReady.description,An update is available,Uma atualização está disponível
 banners.updateReady.whatsNew,What’s new,O que há de novo

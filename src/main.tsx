@@ -7,6 +7,7 @@ import { ErrorBoundary } from "./ErrorBoundary";
 import "./i18n";
 import { ScreenError } from "./ScreenError";
 import "./style.css";
+import "./injectTypeStyles";
 
 const element = document.querySelector("#app");
 if (!element) {
