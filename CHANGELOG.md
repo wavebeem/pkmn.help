@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-03-17
+
+- Fixed Linux font issue
+
 ## 2024-03-16
 
 - Added support for the new Stellar type
