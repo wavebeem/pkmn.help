@@ -24,7 +24,6 @@
 .wrapper > select {
   padding: 0.5rem 1rem;
   padding-right: 3rem;
-  text-overflow: ellipsis;
 }
 
 .wrapper > select > option {

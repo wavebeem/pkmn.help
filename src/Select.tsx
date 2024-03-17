@@ -30,6 +30,6 @@ const baseClasses = classNames(
   "no-underline",
   "ba br2 pv2 pl3 pr5",
   "f5",
-  "focus-simple",
+  "focus-simple truncate",
   "border1 button-shadow button-bg button-bg-hover color-inherit"
 );
