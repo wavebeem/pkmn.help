@@ -12,7 +12,7 @@
 
   - The website will look especially better on mobile now since there won't be as many distracting borders on buttons and links
 
-- Type badges are no longer bold weight
+- Changed some font size and padding values
 
 ## 2024-03-13
 
