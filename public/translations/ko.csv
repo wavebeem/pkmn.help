@@ -11,6 +11,7 @@ offense.coverage.edit,Edit list,포켓몬 목록 편집
 offense.coverage.weakness,Weak,약점인 포켓몬
 offense.coverage.normal,Normal,1배인 포켓몬
 offense.coverage.resistance,Resist,내성인 포켓몬
+offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,포켓몬을 찾을 수 없거나 유형이 선택되지 않았습니다.
 offense.coverageList.weakness.heading,Weakness Coverage List,약점인 포켓몬 목록
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,이 포켓몬은 선택한 유형 중 적어도 하나에 약합니다.
@@ -44,6 +45,7 @@ defense.chooseSecond,Choose second type,두 번째 타입 선택
 defense.chooseThird,Choose third type,세 번째 타입 선택
 defense.takesXFrom,Takes {{ x }} from,{{ x }} 피해
 defense.chooseAbility,Choose ability,특성을 선택하세요
+defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,없음
 defense.abilityNames.wonder_guard,Wonder Guard,불가사의부적
 defense.abilityNames.delta_stream,Delta Stream,델타스트림
@@ -186,6 +188,7 @@ types.ice,Ice,얼음
 types.dragon,Dragon,드래곤
 types.dark,Dark,악
 types.fairy,Fairy,페어리
+types.stellar,Stellar,스텔라
 types.none,None,없음
 banners.updateReady.description,An update is available,새 버전이 있습니다!
 banners.updateReady.whatsNew,What’s new,새로운 기능

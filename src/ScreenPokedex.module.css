@@ -24,7 +24,7 @@
   color: var(--color-bg1);
 }
 
-.shinyButton:focus {
+.shinyButton:focus-visible {
   outline: 2px solid var(--color-fg1);
   outline-offset: 2px;
 }

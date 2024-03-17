@@ -1,5 +1,19 @@
 # Changelog
 
+## 2024-03-16
+
+- Added support for the new Stellar type
+
+- Added support for selecting Tera types for Solo and Team Defense modes
+
+- Changed offense checkboxes and defense radio buttons to use dark mode when selected, so they're easier to see against the dark background
+
+- Removed focus styles when not using keyboard
+
+  - The website will look especially better on mobile now since there won't be as many distracting borders on buttons and links
+
+- Changed some font size and padding values
+
 ## 2024-03-13
 
 - Added Traditional Chinese translation

@@ -17,6 +17,7 @@ import {
   supportedLanguages,
 } from "./detectLanguage";
 import { TranslationCard } from "./TranslationCard";
+import { compare } from "./compare";
 
 export interface ScreenMoreProps {
   needsAppUpdate: boolean;
@@ -120,12 +121,6 @@ function joinStrings(strings: (string | undefined)[]): string {
 
 function showLang(lang: Lang): string {
   return joinStrings([languageNamesNative[lang], languageNamesEnglish[lang]]);
-}
-
-function compare<T>(a: T, b: T): number {
-  if (a < b) return -1;
-  if (a > b) return 1;
-  return 0;
 }
 
 export function ScreenMore({

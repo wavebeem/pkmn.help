@@ -20,6 +20,7 @@ export interface Pokemon {
   imageType: "sprite" | "hd";
 }
 
+export type Type = ValueOf<typeof Type>;
 export const Type = {
   normal: "normal",
   fighting: "fighting",
@@ -39,12 +40,11 @@ export const Type = {
   dragon: "dragon",
   dark: "dark",
   fairy: "fairy",
+  stellar: "stellar",
   none: "none",
 } as const;
 
 const typeSet = new Set(Object.values(Type));
-
-export type Type = ValueOf<typeof Type>;
 
 interface AbilityInfo {
   type: Type;
@@ -156,9 +156,14 @@ export const types = [
   Type.dragon,
   Type.dark,
   Type.fairy,
+  Type.stellar,
 ];
 
-const typesGen2 = types.filter((t) => t !== Type.fairy);
+export const typesWithoutNone = [...types];
+
+const typesGen2 = types.filter(
+  (t) => !(t === Type.fairy || t === Type.stellar)
+);
 const typesGen1 = typesGen2.filter(
   (t) => !(t === Type.dark || t === Type.steel)
 );
@@ -166,11 +171,11 @@ const typesGen1 = typesGen2.filter(
 export function typesForGeneration(generation: Generation): Type[] {
   switch (generation) {
     case "default":
-      return types;
+      return [...types];
     case "gen1":
-      return typesGen1;
+      return [...typesGen1];
     case "gen2":
-      return typesGen2;
+      return [...typesGen2];
     default:
       throw new Error(`typesForGeneration: ${generation}`);
   }

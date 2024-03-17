@@ -10,9 +10,11 @@
 }
 
 .radio:checked {
-  background: black;
-  box-shadow: inset 0 0 0 2px white;
-  border-color: hsl(0, 0%, 0%, 0.5);
+  --_bg: black;
+  --_fg: white;
+  background: var(--_fg);
+  box-shadow: inset 0 0 0 4px var(--_bg);
+  border-color: var(--_fg);
   background-clip: padding-box;
 }
 

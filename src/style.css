@@ -21,7 +21,66 @@
   --color-vibrant-border1: hsl(0 0% 0% / 0.6);
   --color-scroll-fg: hsl(0 0% 20%);
   --color-scroll-bg: hsl(0 0% 90%);
+
   --type-min-width: 5rem;
+  --type-text-shadow: 0 1px 0 black, 0 0 1px rgb(0 0 0 / 60%),
+    0 0 2px rgb(0 0 0 / 70%), 0 0 3px rgb(0 0 0 / 80%), 0 0 4px rgb(0 0 0 / 90%);
+
+  /* Created bey stellar-styles.ts */
+  --stellar-background-linear: linear-gradient(
+    -225deg,
+    hsl(0 100% 50%) 0 calc(6.25% + 1px),
+    hsl(22.5 100% 50%) calc(6.25% - 1px) calc(12.5% + 1px),
+    hsl(45 100% 50%) calc(12.5% - 1px) calc(18.75% + 1px),
+    hsl(67.5 100% 50%) calc(18.75% - 1px) calc(25% + 1px),
+    hsl(90 100% 50%) calc(25% - 1px) calc(31.25% + 1px),
+    hsl(112.5 100% 50%) calc(31.25% - 1px) calc(37.5% + 1px),
+    hsl(135 100% 50%) calc(37.5% - 1px) calc(43.75% + 1px),
+    hsl(157.5 100% 50%) calc(43.75% - 1px) calc(50% + 1px),
+    hsl(180 100% 50%) calc(50% - 1px) calc(56.25% + 1px),
+    hsl(202.5 100% 50%) calc(56.25% - 1px) calc(62.5% + 1px),
+    hsl(225 100% 50%) calc(62.5% - 1px) calc(68.75% + 1px),
+    hsl(247.5 100% 50%) calc(68.75% - 1px) calc(75% + 1px),
+    hsl(270 100% 50%) calc(75% - 1px) calc(81.25% + 1px),
+    hsl(292.5 100% 50%) calc(81.25% - 1px) calc(87.5% + 1px),
+    hsl(315 100% 50%) calc(87.5% - 1px) calc(93.75% + 1px)
+  );
+  --stellar-background-conic: conic-gradient(
+    hsl(0 100% 50%) 0deg 18.5deg,
+    hsl(22.5 100% 50%) 22.5deg 41deg,
+    hsl(45 100% 50%) 45deg 63.5deg,
+    hsl(67.5 100% 50%) 67.5deg 86deg,
+    hsl(90 100% 50%) 90deg 108.5deg,
+    hsl(112.5 100% 50%) 112.5deg 131deg,
+    hsl(135 100% 50%) 135deg 153.5deg,
+    hsl(157.5 100% 50%) 157.5deg 176deg,
+    hsl(180 100% 50%) 180deg 198.5deg,
+    hsl(202.5 100% 50%) 202.5deg 221deg,
+    hsl(225 100% 50%) 225deg 243.5deg,
+    hsl(247.5 100% 50%) 247.5deg 266deg,
+    hsl(270 100% 50%) 270deg 288.5deg,
+    hsl(292.5 100% 50%) 292.5deg 311deg,
+    hsl(315 100% 50%) 315deg 333.5deg
+  );
+  --stellar-background-dark: linear-gradient(
+    -225deg,
+    hsl(0 100% 20%) 0 calc(6.25% + 1px),
+    hsl(22.5 100% 20%) calc(6.25% - 1px) calc(12.5% + 1px),
+    hsl(45 100% 20%) calc(12.5% - 1px) calc(18.75% + 1px),
+    hsl(67.5 100% 20%) calc(18.75% - 1px) calc(25% + 1px),
+    hsl(90 100% 20%) calc(25% - 1px) calc(31.25% + 1px),
+    hsl(112.5 100% 20%) calc(31.25% - 1px) calc(37.5% + 1px),
+    hsl(135 100% 20%) calc(37.5% - 1px) calc(43.75% + 1px),
+    hsl(157.5 100% 20%) calc(43.75% - 1px) calc(50% + 1px),
+    hsl(180 100% 20%) calc(50% - 1px) calc(56.25% + 1px),
+    hsl(202.5 100% 20%) calc(56.25% - 1px) calc(62.5% + 1px),
+    hsl(225 100% 20%) calc(62.5% - 1px) calc(68.75% + 1px),
+    hsl(247.5 100% 20%) calc(68.75% - 1px) calc(75% + 1px),
+    hsl(270 100% 20%) calc(75% - 1px) calc(81.25% + 1px),
+    hsl(292.5 100% 20%) calc(81.25% - 1px) calc(87.5% + 1px),
+    hsl(315 100% 20%) calc(87.5% - 1px) calc(93.75% + 1px)
+  );
+
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
   overflow-y: scroll;
   color-scheme: dark light;
@@ -32,8 +91,7 @@
   --type-min-width: 8rem;
 }
 
-:root[data-theme="dark"],
-:root[data-theme="auto"][data-theme-auto="dark"] {
+:root[data-theme="dark"] {
   --color-bg1: hsl(220 20% 25%);
   --color-bg2: hsl(220 20% 20%);
   --color-bg3: hsl(220 20% 30%);
@@ -52,7 +110,7 @@
   --color-border1: hsl(220 20% 55%);
   --color-border2: hsl(220 20% 35%);
   --color-border3: hsl(220 20% 30%);
-  --color-vibrant-border: hsl(0 0% 100% / 0.2);
+  --color-vibrant-border: hsl(0 0% 100% / 0.4);
   --color-vibrant-border1: hsl(0 0% 100% / 0.8);
   --color-scroll-fg: hsl(220 20% 70%);
   --color-scroll-bg: hsl(220 20% 10%);
@@ -117,6 +175,10 @@
   display: grid;
 }
 
+.grid-span-all {
+  grid-column: 1 / -1;
+}
+
 .gap4 {
   gap: 2rem;
 }
@@ -144,10 +206,6 @@
 
 .w0 {
   width: 0;
-}
-
-.mw-max {
-  max-width: max-content;
 }
 
 .cursor-na {
@@ -268,32 +326,44 @@ button {
 .type-bg {
   background: var(--type-color, #333);
   color: white;
-  text-shadow: 0 1px 0 black, 0 0 1px rgba(0, 0, 0, 0.6),
-    0 0 2px rgba(0, 0, 0, 0.7), 0 0 3px rgba(0, 0, 0, 0.8),
-    0 0 4px rgba(0, 0, 0, 0.9);
+  text-shadow: var(--type-text-shadow);
+}
+
+.type-bg-text {
+  color: white;
+  text-shadow: var(--type-text-shadow);
+}
+
+.type-any-label {
+  background: var(--type-color-bg);
+  box-shadow: 0 0 0 1px var(--type-color-border);
 }
 
 .select-none {
   user-select: none;
 }
 
-.focus-tab:focus-within {
+.focus-tab:focus-visible,
+.focus-tab:has(:focus-visible) {
   outline: 2px solid var(--color-fg1);
   outline-offset: 2px;
 }
 
-.focus-outline:focus-within {
+.focus-outline:focus-visible,
+.focus-outline:has(:focus-visible) {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
 
-.focus-simple:focus-within {
+.focus-simple:focus-visible,
+.focus-simple:has(:focus-visible) {
   outline: 2px solid transparent;
   border-color: var(--color-fg1);
   box-shadow: 0 0 0 2px var(--color-border1);
 }
 
-.focus-selected:focus-within {
+.focus-selected:focus-visible,
+.focus-selected:has(:focus-visible) {
   outline: 2px solid transparent;
   box-shadow: 0 0 0 2px var(--color-bg1), 0 0 0 4px var(--color-fg1);
 }

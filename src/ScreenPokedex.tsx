@@ -7,7 +7,6 @@ import { useDebounce } from "use-debounce";
 import { Pokemon, Type, typesFromUserInput } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
 import { MonsterImage } from "./MonsterImage";
-import { MonsterType } from "./MonsterType";
 import { Paginator } from "./Paginator";
 import { pickTranslation } from "./pickTranslation";
 import { Search } from "./Search";
@@ -17,6 +16,7 @@ import { useSearch } from "./useSearch";
 import { IconSparkles } from "./IconSparkles";
 import styles from "./ScreenPokedex.module.css";
 import Spinner from "./Spinner";
+import { Badge } from "./Badge";
 
 const nbsp = "\u00a0";
 
@@ -141,7 +141,7 @@ function Monster({ pokemon }: MonsterProps) {
             </div>
             <div className="flex gap1 justify-center">
               {pokemon.types.map((t, i) => (
-                <MonsterType key={i} type={t} />
+                <Badge key={i} type={t} />
               ))}
             </div>
           </div>
