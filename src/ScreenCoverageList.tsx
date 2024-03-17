@@ -6,9 +6,9 @@ import { Generation } from "./data-generations";
 import { CoverageType, typesFromString } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
 import { IconArrowLeft } from "./IconArrows";
-import { MonsterType } from "./MonsterType";
 import { Paginator } from "./Paginator";
 import { useSearch } from "./useSearch";
+import { Badge } from "./Badge";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";
@@ -51,7 +51,7 @@ export function ScreenCoverageList({
           <p>{t(`offense.coverageList.${mode}.description`)}</p>
           <div className="flex flex-wrap gap2">
             {types.map((t) => (
-              <MonsterType key={t} type={t} />
+              <Badge key={t} type={t} />
             ))}
           </div>
         </>
@@ -90,7 +90,7 @@ export function ScreenCoverageList({
                     </div>
                     <div className="flex gap1 items-center">
                       {types.map((t) => (
-                        <MonsterType key={t} type={t} />
+                        <Badge key={t} type={t} />
                       ))}
                     </div>
                   </li>

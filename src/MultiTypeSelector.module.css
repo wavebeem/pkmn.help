@@ -1,28 +1,48 @@
+.label[data-checked="true"] {
+  background: var(--type-color);
+  color: white;
+  text-shadow: var(--type-text-shadow);
+}
+
+.label[data-type="stellar"][data-checked="true"] {
+  background: var(--stellar-background-dark);
+}
+
 .checkbox {
+  --checkbox-color-border: var(--color-vibrant-border);
+  --checkbox-border: inset 0 0 0 1px var(--checkbox-color-border);
   -webkit-appearance: none;
   appearance: none;
+  box-sizing: border-box;
   width: 1rem;
   height: 1rem;
   flex: none;
+  border: 0;
   background: var(--type-color);
-  border: 1px solid var(--color-vibrant-border1);
+  box-shadow: var(--checkbox-border);
   border-radius: 0.125rem;
+}
+
+.checkbox[data-type="stellar"] {
+  background: var(--stellar-background-conic);
 }
 
 .checkbox:checked {
   background-clip: padding-box;
-  --_blur: 0.5px;
-  --_size: 0.125em;
+  --_blur: 0.6px;
+  --_size: calc(1em / 8);
   --_start: calc(50% - 0.5 * var(--_size));
   --_end: calc(var(--_start) + var(--_size));
-  border-color: hsl(0, 0%, 0%, 0.5);
-  background-color: white;
+  --_fg: white;
+  --_bg: black;
+  --checkbox-color-border: var(--_fg);
+  background-color: var(--_bg);
   background-image: linear-gradient(
       45deg,
       transparent,
       transparent calc(var(--_start) - var(--_blur)),
-      black var(--_start),
-      black var(--_end),
+      var(--_fg) var(--_start),
+      var(--_fg) var(--_end),
       transparent calc(var(--_end) + var(--_blur)),
       transparent
     ),
@@ -30,12 +50,12 @@
       -45deg,
       transparent,
       transparent calc(var(--_start) - var(--_blur)),
-      black var(--_start),
-      black var(--_end),
+      var(--_fg) var(--_start),
+      var(--_fg) var(--_end),
       transparent calc(var(--_end) + var(--_blur)),
       transparent
     );
-  box-shadow: inset 0 0 0 2px white;
+  box-shadow: var(--checkbox-border), inset 0 0 0 4px var(--_bg);
 }
 
 .checkbox:disabled {

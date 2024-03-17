@@ -8,33 +8,38 @@ import styles from "./MultiTypeSelector.module.css";
 
 const buttonInnerHeight = "1.5rem";
 
-interface MultiTypeSelectorProps {
+type MultiTypeSelectorProps = {
   generation: Generation;
   onChange(types: Type[]): void;
   value: Type[];
-}
+};
 
 export function MultiTypeSelector({
   generation,
   onChange,
   value,
 }: MultiTypeSelectorProps) {
+  console.log(MultiTypeSelector, { value });
   const { t } = useTranslation();
-  const styleMap = {
-    selected:
-      "border-vibrant2 type-bg no-box-shadow button-shadow focus-selected",
-    normal: "border1 bg1 fg1 button-bg button-shadow focus-simple",
-  };
+  const types = typesForGeneration(generation);
   return (
     <div className="grid gap2 columns-type-selector">
-      {typesForGeneration(generation).map((type) => {
+      {types.map((type) => {
+        const styleMap = {
+          selected:
+            "no-box-shadow button-shadow focus-selected border-vibrant2",
+          normal: "border1 bg1 fg1 button-bg button-shadow focus-simple",
+        };
         const isChecked = value.includes(type);
         const styleKey = isChecked ? "selected" : "normal";
         return (
           <label
             key={type}
+            data-type={type}
+            data-checked={isChecked}
             className={classNames(
               styleMap[styleKey],
+              styles.label,
               "db",
               "ba br1",
               "pv1 ph2",
@@ -52,6 +57,7 @@ export function MultiTypeSelector({
                 name={type}
                 type="checkbox"
                 checked={isChecked}
+                data-type={type}
                 className={classNames(
                   "db",
                   styles.checkbox,

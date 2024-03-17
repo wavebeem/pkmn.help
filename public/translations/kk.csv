@@ -11,6 +11,7 @@ offense.coverage.edit,Edit list,
 offense.coverage.weakness,Weak,
 offense.coverage.normal,Normal,
 offense.coverage.resistance,Resist,
+offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,
 offense.coverageList.weakness.heading,Weakness Coverage List,
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,
@@ -44,6 +45,7 @@ defense.chooseSecond,Choose second type,Екінші Тип Таңдаңыз
 defense.chooseThird,Choose third type,Үшінші Тип Таңдаңыз
 defense.takesXFrom,Takes {{ x }} from,{{ x }} Алады
 defense.chooseAbility,Choose ability,
+defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,
 defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard
 defense.abilityNames.delta_stream,Delta Stream,Delta Stream
@@ -186,6 +188,7 @@ types.ice,Ice,Мұзды
 types.dragon,Dragon,Айдаһар
 types.dark,Dark,Қараңғы
 types.fairy,Fairy,Ғажайып
+types.stellar,Stellar,
 types.none,None,Ешқай
 banners.updateReady.description,An update is available,Жаңарту жүргізуге болады
 banners.updateReady.whatsNew,What’s new,

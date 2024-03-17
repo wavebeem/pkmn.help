@@ -11,6 +11,7 @@ offense.coverage.edit,Edit list,编辑列表
 offense.coverage.weakness,Weak,被克制
 offense.coverage.normal,Normal,没有属性相克
 offense.coverage.resistance,Resist,抵抗
+offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,没有找到宝可梦或没有选择属性
 offense.coverageList.weakness.heading,Weakness Coverage List,效果绝佳列表
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,这些宝可梦克制被选择的属性
@@ -44,6 +45,7 @@ defense.chooseSecond,Choose second type,选择第二属性
 defense.chooseThird,Choose third type,选择第三属性
 defense.takesXFrom,Takes {{ x }} from,受到 {{ x }} 伤害
 defense.chooseAbility,Choose ability,特性
+defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,无
 defense.abilityNames.wonder_guard,Wonder Guard,神奇守护
 defense.abilityNames.delta_stream,Delta Stream,德尔塔气流
@@ -186,6 +188,7 @@ types.ice,Ice,冰
 types.dragon,Dragon,龙
 types.dark,Dark,恶
 types.fairy,Fairy,妖精
+types.stellar,Stellar,星晶
 types.none,None,无
 banners.updateReady.description,An update is available,有更新可用
 banners.updateReady.whatsNew,What’s new,近期新闻

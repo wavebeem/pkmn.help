@@ -5,24 +5,18 @@ import { defensiveMatchups, offensiveMatchups } from "./data-matchups";
 import { AbilityName, Type } from "./data-types";
 import { Badge } from "./Badge";
 import styles from "./Matchups.module.css";
+import { PlainBadge } from "./PlainBadge";
 
 interface SectionProps {
   title: string;
-  types: Type[];
+  children: React.ReactNode;
 }
 
-function Section({ title, types }: SectionProps) {
-  if (types.length === 0) {
-    return null;
-  }
+function Section({ title, children }: SectionProps) {
   return (
     <div>
-      <h2 className="f5 mt4 mb2">{title}</h2>
-      <div className={styles.matchups}>
-        {types.map((t) => (
-          <Badge key={`type-${t}`} type={t} />
-        ))}
-      </div>
+      <h2 className="f4 mt4 mb2">{title}</h2>
+      <div className={styles.matchups}>{children}</div>
     </div>
   );
 }
@@ -31,10 +25,17 @@ interface MatchupsProps {
   kind: "offense" | "defense";
   generation: Generation;
   types: Type[];
+  teraType: Type;
   ability: AbilityName;
 }
 
-export function Matchups({ kind, generation, types, ability }: MatchupsProps) {
+export function Matchups({
+  kind,
+  generation,
+  types,
+  teraType,
+  ability,
+}: MatchupsProps) {
   const { t } = useTranslation();
   const formatTitle: (x: string) => string =
     kind === "offense"
@@ -42,19 +43,42 @@ export function Matchups({ kind, generation, types, ability }: MatchupsProps) {
       : (x) => t("defense.takesXFrom", { x });
   const matchups =
     kind === "offense"
-      ? offensiveMatchups(generation, types)
-      : defensiveMatchups(generation, types, ability);
+      ? offensiveMatchups({ gen: generation, offenseTypes: types })
+      : defensiveMatchups({
+          gen: generation,
+          defenseTypes: types,
+          defenseTeraType: teraType,
+          abilityName: ability,
+        });
+  if (types.includes(Type.stellar)) {
+    matchups.matchups.unshift({
+      type: Type.stellar,
+      generation,
+      effectiveness: 2,
+      formName: "stellar",
+    });
+  }
   const grouped = matchups.groupByEffectiveness();
   return (
     <div id={`matchup-${kind}`}>
       {grouped.map((list) => {
-        const eff = list.length > 0 ? list[0].effectiveness : undefined;
+        if (list.length === 0) {
+          return null;
+        }
+        const eff = list[0].effectiveness;
         return (
-          <Section
-            key={eff}
-            title={formatTitle(formatEffectiveness(eff))}
-            types={list.map((x) => x.type)}
-          />
+          <Section key={eff} title={formatTitle(formatEffectiveness(eff))}>
+            {list.map((x) => {
+              if (kind === "offense" && x.formName === "stellar") {
+                return (
+                  <PlainBadge key="form-tera">
+                    {t("offense.teraPokemon")}
+                  </PlainBadge>
+                );
+              }
+              return <Badge key={`type-${x.type}`} type={x.type} />;
+            })}
+          </Section>
         );
       })}
     </div>
@@ -76,6 +100,9 @@ function formatEffectiveness(eff: number | undefined): string {
     case undefined:
       return "–"; // n-dash
     default:
+      if (Number.isNaN(eff)) {
+        return "???";
+      }
       return `${eff}×`;
   }
 }

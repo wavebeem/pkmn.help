@@ -12,10 +12,11 @@ import {
   AbilityName,
   typesFromString,
   abilities,
+  types,
+  typesWithoutNone,
 } from "./data-types";
 import { Matchups } from "./Matchups";
 import { MatchupsTeam, MatchupsTeamProps } from "./MatchupsTeam";
-import { MonsterType } from "./MonsterType";
 import { Select } from "./Select";
 import { TypeSelector } from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
@@ -24,11 +25,13 @@ import { useSearch } from "./useSearch";
 import { useTeamTypes } from "./useTeamTypes";
 import { useTypeCount } from "./useTypeCount";
 import { useTeamAbilities } from "./useTeamAbilities";
+import { useTeamTeraTypes } from "./useTeamTeraTypes";
+import { Badge } from "./Badge";
 
 const modes = ["solo", "team"] as const;
 type Mode = typeof modes[number];
 
-const classH2 = "f5 mb2 mt4";
+const classH2 = "f4 mb2 mt4";
 
 const tabClass = classNames([
   "no-underline",
@@ -64,12 +67,33 @@ function setAbilityAt({
   return fullArray.map((v) => v || "none");
 }
 
+function setTeraTypeAt({
+  list,
+  index,
+  value,
+  length,
+}: {
+  list: Type[];
+  index: number;
+  value: Type;
+  length: number;
+}): Type[] {
+  const sparseArray = updateArrayAt(list, index, value);
+  if (sparseArray.length < length) {
+    sparseArray.length = length;
+  }
+  const fullArray = Array.from(sparseArray);
+  return fullArray.map((v) => v || Type.none);
+}
+
 interface State {
   mode: Mode;
   format: MatchupsTeamProps["format"];
   types: Type[];
+  teraType: Type;
   ability: AbilityName;
   teamTypesList: Type[][];
+  teamTeraTypeList: Type[];
   teamAbilityList: AbilityName[];
 }
 
@@ -90,6 +114,7 @@ export function ScreenDefense({
   const navigate = useNavigate();
 
   const [teamTypes, setTeamTypes] = useTeamTypes();
+  const [teamTeraTypes, setTeamTeraTypes] = useTeamTeraTypes();
   const [teamAbilities, setTeamAbilities] = useTeamAbilities();
 
   const [typeCount] = useTypeCount();
@@ -102,6 +127,7 @@ export function ScreenDefense({
       0,
       Number(typeCount)
     ),
+    teraType: typesFromString(search.get("tera_type") || "none")[0],
     ability: abilityNameFromString(search.get("ability") || undefined),
     format: (search.get("format") || "simple") as any,
     teamTypesList: (() => {
@@ -110,6 +136,17 @@ export function ScreenDefense({
       }
       return search.getAll("team_types").map((t) => {
         return typesFromString(t).slice(0, Number(typeCount));
+      });
+    })(),
+    teamTeraTypeList: (() => {
+      if (
+        search.get("team_tera_types") === null &&
+        search.get("mode") !== "team"
+      ) {
+        return teamTeraTypes;
+      }
+      return search.getAll("team_tera_types").map((t) => {
+        return typesFromString(t)[0];
       });
     })(),
     teamAbilityList: (() => {
@@ -143,6 +180,8 @@ export function ScreenDefense({
     teamTypesList,
     teamAbilityList,
     types,
+    teraType,
+    teamTeraTypeList,
   }: State): string {
     teamTypesList = teamTypesList.map((types) => [...new Set(types)]);
     types = [...new Set(types)];
@@ -154,8 +193,14 @@ export function ScreenDefense({
     if (ability) {
       params.set("ability", ability);
     }
+    if (teraType) {
+      params.set("tera_type", teraType);
+    }
     for (const types of teamTypesList) {
       params.append("team_types", types.join(" "));
+    }
+    for (const type of teamTeraTypeList) {
+      params.append("team_tera_types", type);
     }
     if (teamAbilityList.length > 0) {
       params.append("team_abilities", teamAbilityList.join(" "));
@@ -167,6 +212,7 @@ export function ScreenDefense({
   function update(state: State) {
     const search = createParams(state);
     setTeamTypes(state.teamTypesList);
+    setTeamTeraTypes(state.teamTeraTypeList);
     setTeamAbilities(state.teamAbilityList);
     if (search !== location.search) {
       navigate({ search }, { replace: true });
@@ -266,7 +312,7 @@ export function ScreenDefense({
               />
             </>
           )}
-          <div className="pt4 mw-max">
+          <div className="pt4">
             <Select
               label={t("defense.chooseAbility")}
               value={state.ability}
@@ -288,6 +334,28 @@ export function ScreenDefense({
               })}
             </Select>
           </div>
+          <div className="pt4">
+            <Select
+              label={t("defense.chooseTeraType")}
+              value={state.teraType}
+              onChange={(event) => {
+                update({
+                  ...state,
+                  teraType: typesFromString(event.target.value)[0],
+                });
+              }}
+            >
+              <option value="">{t("types.none")}</option>
+              <hr />
+              {types.map((name) => {
+                return (
+                  <option key={name} value={name}>
+                    {t(`types.${name}`)}
+                  </option>
+                );
+              })}
+            </Select>
+          </div>
         </div>
         <div className="flex-auto w-50-ns pl5-ns">
           <hr className="dn-ns subtle-hr mv4" />
@@ -296,6 +364,7 @@ export function ScreenDefense({
             generation={generation}
             types={state.types}
             ability={state.ability}
+            teraType={state.teraType}
           />
         </div>
       </main>
@@ -335,7 +404,7 @@ export function ScreenDefense({
                   <div className="f5 b pr2 tabular-nums">{typeIndex + 1}</div>
                   <div className="flex flex-column flex-row-ns flex-wrap justify-center gap2">
                     {types.map((t) => (
-                      <MonsterType key={t} type={t} />
+                      <Badge key={t} type={t} />
                     ))}
                   </div>
                   <div className="flex-auto" />
@@ -420,7 +489,7 @@ export function ScreenDefense({
                       />
                     </>
                   )}
-                  <div className="pt4 mw-max">
+                  <div className="pt4">
                     <Select
                       label={t("defense.chooseAbility")}
                       value={state.teamAbilityList[typeIndex]}
@@ -453,6 +522,37 @@ export function ScreenDefense({
                       })}
                     </Select>
                   </div>
+                  <div className="pt4">
+                    <Select
+                      label={t("defense.chooseTeraType")}
+                      value={state.teamTeraTypeList[typeIndex]}
+                      onChange={(event) => {
+                        const type = typesFromString(event.target.value)[0];
+                        if (!type) {
+                          return;
+                        }
+                        update({
+                          ...state,
+                          teamTeraTypeList: setTeraTypeAt({
+                            list: state.teamTeraTypeList,
+                            index: typeIndex,
+                            value: type,
+                            length: state.teamTypesList.length,
+                          }),
+                        });
+                      }}
+                    >
+                      <option value={Type.none}>{t("types.none")}</option>
+                      <hr />
+                      {typesWithoutNone.map((name) => {
+                        return (
+                          <option key={name} value={name}>
+                            {t(`types.${name}`)}
+                          </option>
+                        );
+                      })}
+                    </Select>
+                  </div>
                 </div>
               </div>
             );
@@ -475,7 +575,7 @@ export function ScreenDefense({
       </div>
       <div className="flex-auto w-50-l pl5-l">
         <hr className="dn-l subtle-hr mv4" />
-        <div className="pt0 pt4-l mw-max">
+        <div className="pt0 pt4-l">
           <Select
             onChange={(event) => {
               update({
@@ -496,6 +596,7 @@ export function ScreenDefense({
         <MatchupsTeam
           generation={generation}
           typesList={state.teamTypesList}
+          teraTypes={state.teamTeraTypeList}
           abilityList={state.teamAbilityList}
           format={state.format}
         />

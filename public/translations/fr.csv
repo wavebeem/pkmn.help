@@ -11,6 +11,7 @@ offense.coverage.edit,Edit list,Modifier la liste
 offense.coverage.weakness,Weak,Faible
 offense.coverage.normal,Normal,Neutre
 offense.coverage.resistance,Resist,Résiste
+offense.teraPokemon,Tera Pokémon,Pokémon Téracristallisé
 offense.coverageList.empty,No Pokémon found or no types selected,Aucun Pokémon trouvé ou aucun type séléctionné
 offense.coverageList.weakness.heading,Weakness Coverage List,Liste des Pokémon qui te sont faibles
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Ces Pokémon sont faibles à au moins l'un des deux types séléctionnés.
@@ -44,6 +45,7 @@ defense.chooseSecond,Choose second type,Choisir le second type
 defense.chooseThird,Choose third type,Choisir le troisème type
 defense.takesXFrom,Takes {{ x }} from,Subit {{ x }} De
 defense.chooseAbility,Choose ability,Choisir le talent
+defense.chooseTeraType,Choose tera type,Choisir le type téracristal
 defense.abilityNames.none,None,Aucun
 defense.abilityNames.wonder_guard,Wonder Guard,Garde Mystik
 defense.abilityNames.delta_stream,Delta Stream,Souffle Delta
@@ -153,8 +155,8 @@ more.thanks.sections.da,Danish translation,Traduction en Danois
 more.thanks.sections.ru,Russian translation,Traduction en Russe
 more.thanks.sections.kk,Kazakh translation,Traduction en Kazackh
 more.thanks.sections.pt-BR,Brazilian Portuguese translation,Traduction en Portugais Brésilien
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Traduction en Chinois
-more.thanks.sections.zh-Hant,Traditional Chinese translation,
+more.thanks.sections.zh-Hans,Simplified Chinese translation,Traduction en Chinois Simplifié
+more.thanks.sections.zh-Hant,Traditional Chinese translation,Traduction en Chinois Traditionnel
 more.thanks.sections.ro,Romanian translation,Traduction en Roumain
 more.thanks.sections.pl,Polish translation,Traduction en Polonais
 more.thanks.sections.fr,French translation,Traduction en Français
@@ -186,6 +188,7 @@ types.ice,Ice,Glace
 types.dragon,Dragon,Dragon
 types.dark,Dark,Ténèbres
 types.fairy,Fairy,Fée
+types.stellar,Stellar,Stellaire
 types.none,None,Aucun
 banners.updateReady.description,An update is available,Une mise à jour est disponible
 banners.updateReady.whatsNew,What’s new,Quoi de neuf

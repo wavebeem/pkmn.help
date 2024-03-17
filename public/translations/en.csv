@@ -11,6 +11,7 @@ offense.coverage.edit,Edit list,Edit list
 offense.coverage.weakness,Weak,Weak
 offense.coverage.normal,Normal,Normal
 offense.coverage.resistance,Resist,Resist
+offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,No Pokémon found or no types selected
 offense.coverageList.weakness.heading,Weakness Coverage List,Weakness Coverage List
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,These Pokémon are weak to at least one of the selected types.
@@ -44,6 +45,7 @@ defense.chooseSecond,Choose second type,Choose second type
 defense.chooseThird,Choose third type,Choose third type
 defense.takesXFrom,Takes {{ x }} from,Takes {{ x }} from
 defense.chooseAbility,Choose ability,Choose ability
+defense.chooseTeraType,Choose tera type,Choose tera type
 defense.abilityNames.none,None,None
 defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard
 defense.abilityNames.delta_stream,Delta Stream,Delta Stream
@@ -186,6 +188,7 @@ types.ice,Ice,Ice
 types.dragon,Dragon,Dragon
 types.dark,Dark,Dark
 types.fairy,Fairy,Fairy
+types.stellar,Stellar,Stellar
 types.none,None,None
 banners.updateReady.description,An update is available,An update is available
 banners.updateReady.whatsNew,What’s new,What’s new

@@ -11,6 +11,7 @@ offense.coverage.edit,Edit list,Bewerk lijst
 offense.coverage.weakness,Weak,Zwak
 offense.coverage.normal,Normal,Normaal
 offense.coverage.resistance,Resist,Weerstand
+offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,Geen Pokémon gevonden of geen types geselecteerd
 offense.coverageList.weakness.heading,Weakness Coverage List,Zwakte Overschaduwingslijst
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Deze Pokémon zijn zwak tegen ten minste één van de geselecteerde types.
@@ -44,6 +45,7 @@ defense.chooseSecond,Choose second type,Kies tweede type
 defense.chooseThird,Choose third type,Kies derde type
 defense.takesXFrom,Takes {{ x }} from,Krijgt {{ x }} van
 defense.chooseAbility,Choose ability,Kies vaardigheid
+defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,Geen
 defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard
 defense.abilityNames.delta_stream,Delta Stream,Delta Stream
@@ -186,6 +188,7 @@ types.ice,Ice,IJs
 types.dragon,Dragon,Draak
 types.dark,Dark,Duister
 types.fairy,Fairy,Fee
+types.stellar,Stellar,
 types.none,None,Geen
 banners.updateReady.description,An update is available,Een update is verkrijgbaar
 banners.updateReady.whatsNew,What’s new,Wat is nieuw
