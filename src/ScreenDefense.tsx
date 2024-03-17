@@ -31,7 +31,7 @@ import { Badge } from "./Badge";
 const modes = ["solo", "team"] as const;
 type Mode = typeof modes[number];
 
-const classH2 = "f5 mb2 mt4";
+const classH2 = "f4 mb2 mt4";
 
 const tabClass = classNames([
   "no-underline",

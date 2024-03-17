@@ -11,7 +11,7 @@ export function PlainBadge({ children }: PlainBadgeProps) {
       className={classNames(
         "ba border2",
         "br2 bg3",
-        "f5 lh-title tc",
+        "b f5 lh-title tc",
         "grid-span-all"
       )}
       style={{ padding: 2 }}

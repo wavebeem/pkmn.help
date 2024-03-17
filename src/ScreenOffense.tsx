@@ -58,7 +58,7 @@ export function ScreenOffense({
     setOffenseParams(params);
   }, [params, setOffenseParams]);
 
-  const classH2 = "f5 mb2 mt4";
+  const classH2 = "f4 mb2 mt4";
   return (
     <main className="ph3 pt0 pb4 content-wide center flex flex-column flex-row-ns">
       <div className="flex-auto w-50-ns">
@@ -71,7 +71,7 @@ export function ScreenOffense({
         <hr className="dn-ns subtle-hr mv4" />
         {generation === "default" && (
           <div className="mt4 mb0">
-            <h2 className="f5 ma0">{t("offense.coverage.heading")}</h2>
+            <h2 className="f4 ma0">{t("offense.coverage.heading")}</h2>
             <div className="pt2">
               <Link
                 to="/offense/coverage/"
