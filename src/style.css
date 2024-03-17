@@ -81,6 +81,9 @@
     hsl(315 100% 20%) calc(87.5% - 1px) calc(93.75% + 1px)
   );
 
+  --font-sans: system-ui, sans-serif;
+
+  font-family: var(--font-sans);
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
   overflow-y: scroll;
   color-scheme: dark light;
@@ -125,6 +128,13 @@
     transition: none !important;
     animation-duration: 0 !important;
   }
+}
+
+select,
+button,
+input {
+  font: inherit;
+  line-height: inherit;
 }
 
 [id] {
