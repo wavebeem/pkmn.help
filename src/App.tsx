@@ -25,6 +25,7 @@ import { useUpdateSW } from "./useUpdateSW";
 import styles from "./App.module.css";
 import Spinner from "./Spinner";
 import { randomItem } from "./random";
+import { iterCycle, iterNext, iterStutter } from "./iter";
 
 const tabClass = classNames([
   "active-darken",
@@ -57,6 +58,11 @@ function useTranslationsWithBlankFallback() {
   return ready ? translation : getFallback;
 }
 
+const pokeballThemes = ["premier", "regular"] as const;
+type PokeballTheme = typeof pokeballThemes[number];
+
+const pokeballThemeCycle = iterStutter(iterCycle(pokeballThemes), 2);
+
 export function App() {
   // Service worker
   const {
@@ -65,7 +71,6 @@ export function App() {
     updateServiceWorker,
   } = useRegisterSW();
   useUpdateSW();
-  // TODO: Fix this CSV download when using SW in Firefox
 
   async function updateApp() {
     setNeedRefresh(false);
@@ -88,6 +93,12 @@ export function App() {
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
   const [easterEgg, setEasterEgg] = React.useState<Pokemon>();
   const [easterEggLoadedID, setEasterEggLoadedID] = React.useState("");
+  const [pokeballTheme, setPokeballTheme] =
+    React.useState<PokeballTheme>("premier");
+
+  React.useEffect(() => {
+    setPokeballTheme(iterNext(pokeballThemeCycle));
+  }, []);
 
   const [language] = useLanguage();
 
@@ -166,7 +177,7 @@ export function App() {
         >
           <div
             className={styles.headerButton}
-            data-theme="premier"
+            data-theme={pokeballTheme}
             onClick={(event) => {
               event.preventDefault();
               const pkmn = randomItem(AllPokemon);
@@ -174,6 +185,7 @@ export function App() {
                 return;
               }
               setEasterEgg(pkmn);
+              setPokeballTheme(iterNext(pokeballThemeCycle));
             }}
           />
           <div>{t("title")}</div>

@@ -92,6 +92,14 @@
   --color-border: hsl(0 90% 30%);
 }
 
+.headerButton[data-theme="regular"] {
+  --color-top1: hsl(0 90% 70%);
+  --color-top2: hsl(0 90% 60%);
+  --color-bottom1: hsl(0 0% 90%);
+  --color-bottom2: hsl(0 0% 80%);
+  --color-border: hsl(0 0% 20%);
+}
+
 @keyframes pokeballJiggle {
   30% {
     transform: rotateZ(-20deg);
