@@ -3,6 +3,7 @@
 ## 2024-03-17
 
 - Fixed Linux font issue
+- Translates the "thanks" section into Spanish (zh-Hans, zh-Hant) and messages related to the tera types
 
 ## 2024-03-16
 

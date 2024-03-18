@@ -16,6 +16,7 @@
       "normal": "Normal",
       "resistance": "Resistencia"
     },
+    "teraPokemon": "Tera Pokémon",
     "coverageList": {
       "empty": "No se han encontrado Pokémon o no se han seleccionado tipos",
       "weakness": {
@@ -71,6 +72,7 @@
     "chooseThird": "Elige el tipo terciario",
     "takesXFrom": "Sufre {{ x }} por",
     "chooseAbility": "Elige Habilidad",
+    "chooseTeraType": "Elige teratipo",
     "abilityNames": {
       "none": "Ninguna",
       "wonder_guard": "Superguarda",
@@ -244,7 +246,8 @@
         "ru": "Traducción al Ruso",
         "kk": "Traducción al Kazajo",
         "pt-BR": "Traducción al Portugués Brasilero",
-        "zh-Hans": "Traducción al Chino",
+        "zh-Hans": "Traducción al Chino Simplificado",
+        "zh-Hant": "Traducción al Chino Tradicional",
         "ro": "Traducción al Rumano",
         "pl": "Traducción al Polaco",
         "fr": "Traducción al Francés",
