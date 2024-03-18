@@ -214,6 +214,27 @@ input {
   font-weight: 700;
 }
 
+:root[lang="ko"] .weight-medium,
+:root[lang="ja"] .weight-medium,
+:root[lang="zh-Hant"] .weight-medium,
+:root[lang="zh-Hans"] .weight-medium {
+  font-weight: 400;
+}
+
+:root[lang="ko"] .weight-semibold,
+:root[lang="ja"] .weight-semibold,
+:root[lang="zh-Hant"] .weight-semibold,
+:root[lang="zh-Hans"] .weight-semibold {
+  font-weight: 500;
+}
+
+:root[lang="ko"] .weight-bold,
+:root[lang="ja"] .weight-bold,
+:root[lang="zh-Hant"] .weight-bold,
+:root[lang="zh-Hans"] .weight-bold {
+  font-weight: 600;
+}
+
 .bg3 {
   background-color: var(--color-bg3);
 }
