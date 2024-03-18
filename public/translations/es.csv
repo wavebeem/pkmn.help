@@ -11,7 +11,7 @@ offense.coverage.edit,Edit list,Modificar lista
 offense.coverage.weakness,Weak,Debilidad
 offense.coverage.normal,Normal,Normal
 offense.coverage.resistance,Resist,Resistencia
-offense.teraPokemon,Tera Pokémon,
+offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,No se han encontrado Pokémon o no se han seleccionado tipos
 offense.coverageList.weakness.heading,Weakness Coverage List,Lista de debilidad
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Estos Pokémon son débiles a al menos uno de los tipos seleccionados.
@@ -45,7 +45,7 @@ defense.chooseSecond,Choose second type,Elige el tipo secundario
 defense.chooseThird,Choose third type,Elige el tipo terciario
 defense.takesXFrom,Takes {{ x }} from,Sufre {{ x }} por
 defense.chooseAbility,Choose ability,Elige Habilidad
-defense.chooseTeraType,Choose tera type,
+defense.chooseTeraType,Choose tera type,Elige teratipo
 defense.abilityNames.none,None,Ninguna
 defense.abilityNames.wonder_guard,Wonder Guard,Superguarda
 defense.abilityNames.delta_stream,Delta Stream,Ráfaga Delta
@@ -155,8 +155,8 @@ more.thanks.sections.da,Danish translation,Traducción al Danés
 more.thanks.sections.ru,Russian translation,Traducción al Ruso
 more.thanks.sections.kk,Kazakh translation,Traducción al Kazajo
 more.thanks.sections.pt-BR,Brazilian Portuguese translation,Traducción al Portugués Brasilero
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Traducción al Chino
-more.thanks.sections.zh-Hant,Traditional Chinese translation,
+more.thanks.sections.zh-Hans,Simplified Chinese translation,Traducción al Chino Simplificado
+more.thanks.sections.zh-Hant,Traditional Chinese translation,Traducción al Chino Tradicional
 more.thanks.sections.ro,Romanian translation,Traducción al Rumano
 more.thanks.sections.pl,Polish translation,Traducción al Polaco
 more.thanks.sections.fr,French translation,Traducción al Francés
