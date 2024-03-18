@@ -175,7 +175,7 @@ export function App() {
             styles.header
           )}
         >
-          <div
+          <button
             className={styles.headerButton}
             data-theme={pokeballTheme}
             onClick={(event) => {

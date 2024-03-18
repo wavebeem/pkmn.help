@@ -63,6 +63,7 @@
 
   position: relative;
   border: 0;
+  color: white;
   background: linear-gradient(
     to bottom,
     var(--color-top1),
@@ -137,6 +138,15 @@
 
 .headerButton:active {
   filter: var(--filter-darken);
+}
+
+.headerButton:focus {
+  outline: none;
+}
+
+.headerButton:focus-visible {
+  outline: 2px solid;
+  outline-offset: 2px;
 }
 
 .pleaseUpdate {
