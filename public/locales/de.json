@@ -169,7 +169,7 @@
       "heading": "Hilfe",
       "serviceWorker": {
         "description": "Diese Schaltfläche kann helfen, Probleme in der Anwendung zu beheben.",
-        "button": "Service Worker abmelden"
+        "button": "Zurücksetzen"
       }
     },
     "privacy": {

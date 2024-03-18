@@ -135,8 +135,13 @@ export function ScreenMore({
   const year = new Date().getFullYear();
   const autoLang = getDesiredLanguage() || "en";
 
+  const classH3Last = "normal weight-medium lh-title f4";
+  const classH3 = classNames(classH3Last, "mb0");
+  const classH2 = "lh-title f3 weight-semibold";
+  const classH2InlineBlock = classNames(classH2, "dib");
+
   return (
-    <main className="pa3 center content-narrow lh-copy">
+    <main className="pa3 center content-narrow">
       <div
         hidden={!needsAppUpdate}
         className={classNames([
@@ -172,7 +177,7 @@ export function ScreenMore({
         </div>
       </div>
 
-      <h2 className="lh-title f4">{t("more.contact.heading")}</h2>
+      <h2 className={classH2}>{t("more.contact.heading")}</h2>
 
       <p>
         <Trans
@@ -205,7 +210,7 @@ export function ScreenMore({
 
       <div role="presentation" className="mv2 bt border3" />
 
-      <h2 className="lh-title f4">{t("more.settings.heading")}</h2>
+      <h2 className={classH2}>{t("more.settings.heading")}</h2>
 
       <div className="grid gap3 pb2">
         <Select
@@ -320,7 +325,7 @@ export function ScreenMore({
 
       <CollapsibleSection
         heading={
-          <h2 className="lh-title f4 dib" id="translate">
+          <h2 className={classH2InlineBlock} id="translate">
             <span aria-hidden="true">🌎</span> Help me translate
           </h2>
         }
@@ -398,7 +403,7 @@ export function ScreenMore({
 
       <CollapsibleSection
         heading={
-          <h2 className="lh-title f4 dib">{t("more.changes.heading")}</h2>
+          <h2 className={classH2InlineBlock}>{t("more.changes.heading")}</h2>
         }
       >
         <p>
@@ -419,7 +424,9 @@ export function ScreenMore({
       <div role="presentation" className="mv2 bt border3" />
 
       <CollapsibleSection
-        heading={<h2 className="lh-title f4 dib">{t("more.help.heading")}</h2>}
+        heading={
+          <h2 className={classH2InlineBlock}>{t("more.help.heading")}</h2>
+        }
       >
         <div className="mv3">
           <Button onClick={resetApp}>
@@ -434,7 +441,7 @@ export function ScreenMore({
 
       <CollapsibleSection
         heading={
-          <h2 className="lh-title f4 dib">{t("more.privacy.heading")}</h2>
+          <h2 className={classH2InlineBlock}>{t("more.privacy.heading")}</h2>
         }
       >
         <p>
@@ -456,7 +463,7 @@ export function ScreenMore({
 
       <CollapsibleSection
         heading={
-          <h2 className="lh-title f4 dib">{t("more.givingBack.heading")}</h2>
+          <h2 className={classH2InlineBlock}>{t("more.givingBack.heading")}</h2>
         }
       >
         <p>{t("more.givingBack.description")}</p>
@@ -466,26 +473,30 @@ export function ScreenMore({
 
       <CollapsibleSection
         heading={
-          <h2 className="lh-title f4 dib">{t("more.thanks.heading")}</h2>
+          <h2 className={classH2InlineBlock}>{t("more.thanks.heading")}</h2>
         }
       >
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.da")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.da")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Simon</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ru")}</h3>
-        <h3 className="lh-title f5 mt1 mb0">{t("more.thanks.sections.kk")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.ru")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Abylay Zhandarbek</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.pt-BR")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.kk")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Abylay Zhandarbek</li>
+        </ul>
+
+        <h3 className={classH3}>{t("more.thanks.sections.pt-BR")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Vio</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.zh-Hans")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.zh-Hans")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Dragonify</li>
         </ul>
@@ -493,40 +504,40 @@ export function ScreenMore({
           <li>Tin</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.zh-Hant")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.zh-Hant")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Nan Zheng</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ro")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.ro")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Adam Hayes</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.pl")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.pl")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Sebastian Biegaj</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.fr")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.fr")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Kaishidow</li>
           <li>Drakoshen</li>
           <li>Azertor</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.de")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.de")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Cozzzy</li>
           <li>Luzifer Senpai</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.nl")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.nl")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Julking</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.it")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.it")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Gabriele Giugno</li>
           <li>
@@ -536,7 +547,7 @@ export function ScreenMore({
           <li>Mathieu Licata</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ko")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.ko")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>BetterBritter</li>
         </ul>
@@ -544,25 +555,25 @@ export function ScreenMore({
           <li>Eric Marriott</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.ja")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.ja")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Minamorl</li>
         </ul>
 
-        <h3 className="lh-title f5 mb0">{t("more.thanks.sections.testing")}</h3>
+        <h3 className={classH3}>{t("more.thanks.sections.testing")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Jansjo</li>
           <li>Marten</li>
         </ul>
 
-        <h3 className="lh-title f5">{t("more.thanks.sections.other")}</h3>
+        <h3 className={classH3Last}>{t("more.thanks.sections.other")}</h3>
       </CollapsibleSection>
 
       <div role="presentation" className="mv2 bt border3" />
 
       <CollapsibleSection
         heading={
-          <h2 className="lh-title f4 dib">{t("more.openSource.heading")}</h2>
+          <h2 className={classH2InlineBlock}>{t("more.openSource.heading")}</h2>
         }
       >
         <p>
@@ -584,7 +595,7 @@ export function ScreenMore({
 
       <CollapsibleSection
         heading={
-          <h2 className="lh-title f4 dib">{t("more.legalInfo.heading")}</h2>
+          <h2 className={classH2InlineBlock}>{t("more.legalInfo.heading")}</h2>
         }
       >
         <p>

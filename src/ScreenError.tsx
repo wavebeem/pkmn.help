@@ -40,7 +40,7 @@ ${JSON.stringify(localStorage)}
   const [clickMessage, setClickMessage] = React.useState("");
 
   return (
-    <div className="ph4 content-narrow f4 center fg2 lh-copy">
+    <div className="ph4 content-narrow f4 center fg2">
       <h1>pkmn.help: Error</h1>
       <p>
         Please send an email to{" "}

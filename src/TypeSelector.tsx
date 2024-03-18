@@ -52,7 +52,7 @@ export function TypeSelector({
               stylesObj[styleKey],
               "db",
               "ba br-pill",
-              "pv1 ph2",
+              "pv2 ph3",
               "f5",
               "ttc",
               "select-none",
@@ -87,10 +87,7 @@ export function TypeSelector({
                 }}
               />
 
-              <span
-                className="tl pl2 pr1 flex-auto truncate"
-                style={{ lineHeight: buttonInnerHeight }}
-              >
+              <span className="tl pl2 pr1 flex-auto truncate">
                 {t(`types.${type}`)}
               </span>
             </span>

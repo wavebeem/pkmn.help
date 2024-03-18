@@ -172,8 +172,8 @@ export default defineConfig((env) => {
               purpose: "any maskable",
             },
           ],
-          theme_color: "hsl(357, 97%, 46%)",
-          background_color: "hsl(357, 97%, 46%)",
+          theme_color: "hsl(0 90% 45%)",
+          background_color: "hsl(0 90% 45%)",
           display: "standalone",
         },
         // These files are downloaded in the background automatically and stored

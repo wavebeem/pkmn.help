@@ -10,7 +10,7 @@ interface ScreenPokedexHelpProps {
 export function ScreenPokedexHelp({ pokedexParams }: ScreenPokedexHelpProps) {
   const { t } = useTranslation();
   return (
-    <main className="pa3 center content-narrow lh-copy">
+    <main className="pa3 center content-narrow">
       <h2 className="lh-title f4">{t("pokedexHelp.searchByName.heading")}</h2>
       <p>{t("pokedexHelp.searchByName.description")}</p>
 

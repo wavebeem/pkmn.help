@@ -42,7 +42,7 @@ export function MultiTypeSelector({
               styles.label,
               "db",
               "ba br1",
-              "pv1 ph2",
+              "pv2 ph3",
               "f5",
               "ttc",
               "select-none",
@@ -83,10 +83,7 @@ export function MultiTypeSelector({
                   onChange([...types].sort());
                 }}
               />
-              <span
-                className="tl pl2 pr1 flex-auto truncate"
-                style={{ lineHeight: buttonInnerHeight }}
-              >
+              <span className="tl pl2 pr1 flex-auto truncate">
                 {t(`types.${type}`)}
               </span>
             </span>

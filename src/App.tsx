@@ -27,9 +27,10 @@ import Spinner from "./Spinner";
 
 const tabClass = classNames([
   "no-underline",
-  "pv1 ph3 f5",
+  "pv2 ph3 f5",
   "focus-tab",
-  "tc b",
+  "weight-medium",
+  "tc",
   "ba border1 br-pill",
   "bg1 fg1",
 ]);
@@ -100,7 +101,7 @@ export function App() {
   const [theme] = useTheme();
   const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const isDark = theme === "dark" || (theme === "auto" && isDarkMode);
-  const themeColor = isDark ? "hsl(357, 70%, 40%)" : "hsl(357, 97%, 46%)";
+  const themeColor = isDark ? "hsl(0 90% 45%)" : "hsl(0 70% 40%)";
   const themeAuto = isDark ? "dark" : "light";
 
   // Load Pokédex JSON

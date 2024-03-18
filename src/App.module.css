@@ -57,11 +57,12 @@
 .header {
   --border-size: 8px;
   --circle-size: 36px;
+  --offset: calc(0.55 * var(--circle-size));
   background-color: var(--color-pokeball);
   border-bottom: var(--border-size) solid #111;
   padding: 1rem;
-  padding-top: calc(0.55 * var(--circle-size));
-  padding-bottom: calc(0.55 * var(--circle-size));
+  padding-top: calc(0.25rem + var(--offset));
+  padding-bottom: calc(0.25rem + var(--offset));
   margin-top: 0;
   margin-bottom: 0;
 }

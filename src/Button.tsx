@@ -13,7 +13,8 @@ export function Button({ className, size = "medium", ...props }: ButtonProps) {
       className={classNames(
         className,
         baseClasses,
-        size === "medium" ? "pv2 ph3" : "pv1 ph3"
+        // size === "medium" ? "pv2 ph3" : "pv1 ph3"
+        "pv2 ph3"
       )}
     />
   );

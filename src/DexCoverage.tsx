@@ -35,7 +35,7 @@ export function DexCoverage({
   }
   const typeParams = new URLSearchParams({ types: types.join(" ") });
   return (
-    <div className="tabular-nums mw5 flex flex-column lh-copy">
+    <div className="tabular-nums mw5 flex flex-column">
       <div className="pt3" />
       <Meter value={weak.length} max={total} />
       <div className="flex w-100">

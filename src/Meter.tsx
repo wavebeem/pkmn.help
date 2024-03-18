@@ -9,7 +9,7 @@ export interface MeterProps {
 
 export function Meter({ value, max, color = "var(--color-fg3)" }: MeterProps) {
   return (
-    <div className={`flex h1 w-100 ${styles.meter}`}>
+    <div className={`flex ${styles.meter}`}>
       <div
         className={styles.meterFill}
         style={{

@@ -31,11 +31,11 @@ import { Badge } from "./Badge";
 const modes = ["solo", "team"] as const;
 type Mode = typeof modes[number];
 
-const classH2 = "f4 mb2 mt4";
+const classH2 = "f4 weight-semibold mb2 mt4";
 
 const tabClass = classNames([
   "no-underline",
-  "pv1 ph3 f5",
+  "pv2 ph3 f5",
   "focus-tab",
   "tc",
   "ba border1 br-pill",
@@ -408,7 +408,7 @@ export function ScreenDefense({
                     ))}
                   </div>
                   <div className="flex-auto" />
-                  <div className="flex flex-column flex-row-ns gap2">
+                  <div className="flex flex-column gap2">
                     <Button
                       size="small"
                       onClick={() => {

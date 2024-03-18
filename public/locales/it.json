@@ -226,7 +226,7 @@
       "heading": "Aiuto",
       "serviceWorker": {
         "description": "Questo bottone può aiutare a sistemare gli errori nell'app.",
-        "button": "Annulla registrazione del service worker"
+        "button": "Ripristina"
       }
     },
     "privacy": {

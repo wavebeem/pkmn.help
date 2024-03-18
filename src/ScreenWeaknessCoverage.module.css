@@ -1,6 +1,6 @@
 .buttonGrid {
   display: grid;
-  grid-gap: 1rem;
+  gap: 1rem;
 }
 
 @media (min-width: 40em) {

@@ -1,8 +1,17 @@
 # Changelog
 
+## ????-??-??
+
+- Switched from system fonts to "Noto Sans"
+
+- Adjusted font sizes, font weights, and padding values
+
+- Adjusted the Pokéball header colors
+
 ## 2024-03-17
 
 - Fixed Linux font issue
+
 - Translates the "thanks" section into Spanish (zh-Hans, zh-Hant) and messages related to the tera types
 
 ## 2024-03-16

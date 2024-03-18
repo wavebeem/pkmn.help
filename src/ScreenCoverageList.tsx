@@ -33,8 +33,8 @@ export function ScreenCoverageList({
   const items = partitionedMatchups[mode];
   const offenseParams = new URLSearchParams({ types: types.join(" ") });
   return (
-    <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f5">
+    <main className="pa3 center content-narrow">
+      <h2 className="lh-title f4 weight-semibold">
         {t(`offense.coverageList.${mode}.heading`)}
       </h2>
       <p className="flex gap1 items-center">
@@ -69,7 +69,7 @@ export function ScreenCoverageList({
         currentPage={page}
         pageSize={20}
         emptyState={
-          <p className="fg4 f4 b tc mv4">{t("offense.coverageList.empty")}</p>
+          <p className="fg4 f4 tc mv4">{t("offense.coverageList.empty")}</p>
         }
         items={items}
         renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
@@ -80,15 +80,15 @@ export function ScreenCoverageList({
                 return (
                   <li
                     key={i}
-                    className="pv2 bb border3 flex justify-between gap2"
+                    className="pv2 bb border3 flex flex-column flex-row-ns justify-between gap2"
                   >
-                    <div className="flex-ns gap2">
+                    <div className="flex flex-column align-center f4">
                       <div className="fg3">
                         {formatMonsterNumber(Number(number))}
                       </div>
-                      <div className="b flex-auto">{name}</div>
+                      <div className="weight-medium flex-auto">{name}</div>
                     </div>
-                    <div className="flex gap1 items-center">
+                    <div className="flex flex-wrap gap2 justify-start items-center">
                       {types.map((t) => (
                         <Badge key={t} type={t} />
                       ))}

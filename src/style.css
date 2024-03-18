@@ -1,3 +1,46 @@
+/* https://gwfh.mranftl.com/fonts */
+/* https://cloudconvert.com/ttf-to-woff2 */
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: italic;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("/fonts/noto-sans-italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("/fonts/noto-sans.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans JP";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("/fonts/noto-sans-jp.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans SC";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("/fonts/noto-sans-sc.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url("/fonts/noto-sans-tc.woff2") format("woff2");
+}
+
 :root {
   --color-bg1: hsl(0 0% 100%);
   --color-bg2: hsl(0 0% 96%);
@@ -6,7 +49,7 @@
   --color-fg2: hsl(0 0% 20%);
   --color-fg3: hsl(0 0% 40%);
   --color-fg4: hsl(0 0% 60%);
-  --color-pokeball: hsl(357 97% 46%);
+  --color-pokeball: hsl(0 90% 45%);
   --color-button1: hsl(0 0% 100%);
   --color-button1b: hsl(0 0% 96%);
   --color-button-hover1: hsl(200 100% 98%);
@@ -22,7 +65,9 @@
   --color-scroll-fg: hsl(0 0% 20%);
   --color-scroll-bg: hsl(0 0% 90%);
 
-  --type-min-width: 5rem;
+  --font-sans: "Noto Sans", system-ui, sans-serif;
+
+  --type-min-width: 6rem;
   --type-text-shadow: 0 1px 0 black, 0 0 1px rgb(0 0 0 / 60%),
     0 0 2px rgb(0 0 0 / 70%), 0 0 3px rgb(0 0 0 / 80%), 0 0 4px rgb(0 0 0 / 90%);
 
@@ -81,17 +126,27 @@
     hsl(315 100% 20%) calc(87.5% - 1px) calc(93.75% + 1px)
   );
 
-  --font-sans: system-ui, sans-serif;
-
   font-family: var(--font-sans);
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
   overflow-y: scroll;
   color-scheme: dark light;
 }
 
+:root[lang="ja"] {
+  --font-sans: "Noto Sans JP", "Noto Sans", system-ui, sans-serif;
+}
+
+:root[lang="zh-Hans"] {
+  --font-sans: "Noto Sans SC", "Noto Sans", system-ui, sans-serif;
+}
+
+:root[lang="zh-Hant"] {
+  --font-sans: "Noto Sans TC", "Noto Sans", system-ui, sans-serif;
+}
+
 :root[lang="pl"],
 :root[lang="ru"] {
-  --type-min-width: 8rem;
+  --type-min-width: 9rem;
 }
 
 :root[data-theme="dark"] {
@@ -102,7 +157,7 @@
   --color-fg2: hsl(220 20% 80%);
   --color-fg3: hsl(220 20% 70%);
   --color-fg4: hsl(220 20% 60%);
-  --color-pokeball: hsl(357 70% 40%);
+  --color-pokeball: hsl(0 70% 40%);
   --color-button1: hsl(220 20% 28%);
   --color-button1b: hsl(220 20% 24%);
   --color-button-hover1: hsl(220 20% 32%);
@@ -139,6 +194,22 @@ input {
 
 [id] {
   scroll-margin-top: 1rem;
+}
+
+.weight-normal {
+  font-weight: 400;
+}
+
+.weight-medium {
+  font-weight: 500;
+}
+
+.weight-semibold {
+  font-weight: 600;
+}
+
+.weight-bold {
+  font-weight: 700;
 }
 
 .bg3 {
@@ -276,7 +347,7 @@ button {
 }
 
 .content-wide {
-  max-width: 1100px;
+  max-width: 1280px;
 }
 
 .content-narrow {

@@ -46,7 +46,7 @@ function PageSelector<T>({
   return (
     <>
       {first && last && (
-        <div className="flex mt3 tabular-nums f5 b">
+        <div className="flex mt3 tabular-nums f4 weight-semibold">
           <div className="flex-auto">
             {renderID(first)} &ndash; {renderID(last)}
           </div>
@@ -82,7 +82,7 @@ function PageSelector<T>({
           to={urlForPage(currentPage - 1)}
           title={t("pokedex.pagination.previousLong")}
           aria-label={t("pokedex.pagination.previousLong")}
-          className="flex items-center gap1 ph3 ph1-ns"
+          className="flex items-center gap1"
         >
           <IconArrowLeft className="w1 h1" aria-hidden="true" />
           {buttonSize === "medium" && t("pokedex.pagination.previous")}
@@ -94,7 +94,7 @@ function PageSelector<T>({
           to={urlForPage(currentPage + 1)}
           title={t("pokedex.pagination.nextLong")}
           aria-label={t("pokedex.pagination.nextLong")}
-          className="flex items-center gap1 ph3 ph1-ns"
+          className="flex items-center gap1"
         >
           {buttonSize === "medium" && t("pokedex.pagination.next")}
           {buttonSize === "large" && t("pokedex.pagination.nextLong")}
