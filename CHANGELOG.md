@@ -8,6 +8,8 @@
 
 - Adjusted the Pokéball header colors
 
+- Fixed an issue where team type selection was visually broken
+
 ## 2024-03-17
 
 - Fixed Linux font issue

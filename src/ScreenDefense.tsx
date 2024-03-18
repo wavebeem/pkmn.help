@@ -285,7 +285,6 @@ export function ScreenDefense({
           <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
           <TypeSelector
             generation={generation}
-            name="primary"
             value={state.types[0]}
             onChange={updateTypeAt(0)}
             disabledTypes={[]}
@@ -294,7 +293,6 @@ export function ScreenDefense({
           <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
           <TypeSelector
             generation={generation}
-            name="secondary"
             value={state.types[1] || Type.none}
             onChange={updateTypeAt(1)}
             disabledTypes={state.types.slice(0, 1)}
@@ -305,7 +303,6 @@ export function ScreenDefense({
               <h2 className={classH2}>{t("defense.chooseThird")}</h2>
               <TypeSelector
                 generation={generation}
-                name="third"
                 value={state.types[2] || Type.none}
                 onChange={updateTypeAt(2)}
                 disabledTypes={state.types.slice(0, 2)}
@@ -460,7 +457,6 @@ export function ScreenDefense({
                   <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
                   <TypeSelector
                     generation={generation}
-                    name="primary"
                     value={types[0]}
                     onChange={updateTeamTypesAt(typeIndex, 0)}
                     disabledTypes={[]}
@@ -469,7 +465,6 @@ export function ScreenDefense({
                   <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
                   <TypeSelector
                     generation={generation}
-                    name="secondary"
                     value={types[1] || Type.none}
                     onChange={updateTeamTypesAt(typeIndex, 1)}
                     disabledTypes={types.slice(0, 1)}
@@ -480,7 +475,6 @@ export function ScreenDefense({
                       <h2 className={classH2}>{t("defense.chooseThird")}</h2>
                       <TypeSelector
                         generation={generation}
-                        name="third"
                         value={types[2] || Type.none}
                         onChange={updateTeamTypesAt(typeIndex, 2)}
                         disabledTypes={types.slice(0, 2)}

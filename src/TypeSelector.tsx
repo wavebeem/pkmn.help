@@ -6,15 +6,12 @@ import { Generation } from "./data-generations";
 import { Type, typesForGeneration } from "./data-types";
 import styles from "./TypeSelector.module.css";
 
-const buttonInnerHeight = "1.5rem";
-
 interface TypeSelectorProps {
   generation: Generation;
   onChange(type: Type): void;
   value: Type;
   includeNone: boolean;
   disabledTypes: Type[];
-  name: string;
 }
 
 export function TypeSelector({
@@ -23,8 +20,8 @@ export function TypeSelector({
   value,
   includeNone,
   disabledTypes,
-  name,
 }: TypeSelectorProps) {
+  const name = React.useId();
   const { t } = useTranslation();
   const baseTypes = typesForGeneration(generation).filter(
     (t) => t !== Type.stellar
