@@ -28,7 +28,7 @@ import Spinner from "./Spinner";
 const tabClass = classNames([
   "active-darken",
   "no-underline",
-  "pv2 ph3 f5",
+  "pv1 ph3 f5",
   "focus-tab",
   "weight-medium",
   "tc",
@@ -132,16 +132,37 @@ export function App() {
 
   return (
     <HelmetProvider>
+      {easterEgg && (
+        <div
+          className={styles.easterEgg}
+          data-animate={easterEggLoadedID === easterEgg.id}
+        >
+          <MonsterImage
+            pokemonID={easterEgg.id}
+            imageType={easterEgg.imageType}
+            onLoad={({ pokemonID }) => {
+              setEasterEggLoadedID(pokemonID);
+            }}
+            scale={2}
+          />
+        </div>
+      )}
       <div className="flex-auto">
         <Helmet>
           <html data-theme={themeAuto} />
           <meta name="theme-color" content={themeColor} />
           <title>{t("title")}</title>
         </Helmet>
-        <h1 className={`f3-ns f4 tc relative white ${styles.header}`}>
-          <Link to="/" className="no-underline white focus-outline br1">
-            {t("title")}
-          </Link>
+        <h1
+          className={classNames(
+            `f3-ns f4 weight-medium`,
+            `flex justify-center gap1 white`,
+            "pv2 ph3",
+            "bb ma0",
+            // "fg1 bg1 border3",
+            "bg-poke border-vibrant"
+          )}
+        >
           <div
             className={styles.headerButton}
             onClick={(event) => {
@@ -152,23 +173,11 @@ export function App() {
               setEasterEgg(pkmn);
             }}
           />
-          {easterEgg && (
-            <div
-              className={styles.easterEgg}
-              data-animate={easterEggLoadedID === easterEgg.id}
-            >
-              <MonsterImage
-                pokemonID={easterEgg.id}
-                imageType={easterEgg.imageType}
-                onLoad={({ pokemonID }) => {
-                  setEasterEggLoadedID(pokemonID);
-                }}
-                scale={2}
-              />
-            </div>
-          )}
+          {t("title")}
         </h1>
-        <nav className={`bg1 bb border2 ${styles.tabBar} pb2 ph2`}>
+        <nav
+          className={classNames(`bg1 bb border2 pv2 ph2 gap2`, styles.tabBar)}
+        >
           <NavLink className={getTabClass} to={`/offense/${offenseParams}`}>
             {t("navigation.offense")}
           </NavLink>

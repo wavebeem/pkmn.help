@@ -224,6 +224,10 @@ input {
   background-color: var(--color-bg1);
 }
 
+.bg-poke {
+  background-color: var(--color-pokeball);
+}
+
 .fg4 {
   color: var(--color-fg4);
 }
