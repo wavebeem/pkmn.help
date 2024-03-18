@@ -34,6 +34,7 @@ type Mode = typeof modes[number];
 const classH2 = "f4 weight-semibold mb2 mt4";
 
 const tabClass = classNames([
+  "active-darken",
   "no-underline",
   "pv2 ph3 f5",
   "focus-tab",
@@ -410,7 +411,6 @@ export function ScreenDefense({
                   <div className="flex-auto" />
                   <div className="flex flex-column gap2">
                     <Button
-                      size="small"
                       onClick={() => {
                         if (typeIndex === teamIndex) {
                           setTeamIndex(-1);
@@ -438,7 +438,6 @@ export function ScreenDefense({
                       )}
                     </Button>
                     <Button
-                      size="small"
                       onClick={() => {
                         setTeamIndex(-1);
                         const teamTypesList = [...state.teamTypesList];

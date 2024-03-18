@@ -295,7 +295,7 @@ export function ScreenPokedex({
           }}
           pageSize={20}
           emptyState={
-            <p className="fg4 f4 b tc m0">{t("pokedex.search.notFound")}</p>
+            <p className="fg4 f4 tc m0">{t("pokedex.search.notFound")}</p>
           }
           items={pkmn}
           renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}

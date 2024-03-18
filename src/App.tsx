@@ -26,6 +26,7 @@ import styles from "./App.module.css";
 import Spinner from "./Spinner";
 
 const tabClass = classNames([
+  "active-darken",
   "no-underline",
   "pv2 ph3 f5",
   "focus-tab",

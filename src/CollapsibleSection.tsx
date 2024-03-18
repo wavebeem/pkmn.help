@@ -14,7 +14,7 @@ export function CollapsibleSection({
 }: CollapsibleSectionProps): JSX.Element {
   return (
     <details className={styles.details} open={initiallyOpen}>
-      <summary className="pointer no-select">{heading}</summary>
+      <summary className="pointer no-select active-darken">{heading}</summary>
       {children}
     </details>
   );

@@ -26,6 +26,7 @@ export function Select({
 }
 
 const baseClasses = classNames(
+  "active-darken",
   "db w-100",
   "no-underline",
   "ba br2 pv2 pl3 pr5",

@@ -49,6 +49,7 @@ export function TypeSelector({
           <label
             key={type}
             className={classNames(
+              styles.label,
               stylesObj[styleKey],
               "db",
               "ba br-pill",

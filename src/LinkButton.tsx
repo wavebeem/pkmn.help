@@ -42,6 +42,7 @@ export function LinkButton({
 }
 
 const baseClasses = classNames(
+  "active-darken",
   "no-underline",
   "db",
   "pv2 ph3",

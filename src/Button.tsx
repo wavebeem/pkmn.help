@@ -2,25 +2,19 @@ import classNames from "classnames";
 import * as React from "react";
 
 export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  size?: "medium" | "small";
-}
+  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-export function Button({ className, size = "medium", ...props }: ButtonProps) {
+export function Button({ className, ...props }: ButtonProps) {
   return (
     <button
       {...props}
-      className={classNames(
-        className,
-        baseClasses,
-        // size === "medium" ? "pv2 ph3" : "pv1 ph3"
-        "pv2 ph3"
-      )}
+      className={classNames(className, baseClasses, "pv2 ph3")}
     />
   );
 }
 
 const baseClasses = classNames(
+  "active-darken",
   "no-underline",
   "ba br2",
   "f5",

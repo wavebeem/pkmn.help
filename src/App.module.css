@@ -62,7 +62,7 @@
   border-bottom: var(--border-size) solid #111;
   padding: 1rem;
   padding-top: calc(0.25rem + var(--offset));
-  padding-bottom: calc(0.25rem + var(--offset));
+  padding-bottom: calc(0.5rem + var(--offset));
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -113,7 +113,7 @@
   flex-wrap: wrap;
   padding: 1rem;
   padding-bottom: 0.75rem;
-  padding-top: 1.25rem;
+  padding-top: 1.75rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;

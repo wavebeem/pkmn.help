@@ -1,3 +1,7 @@
+.label:has(.checkbox:active) {
+  filter: var(--filter-darken);
+}
+
 .label[data-checked="true"] {
   background: var(--type-color);
   color: white;

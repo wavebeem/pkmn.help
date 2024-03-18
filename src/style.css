@@ -65,6 +65,8 @@
   --color-scroll-fg: hsl(0 0% 20%);
   --color-scroll-bg: hsl(0 0% 90%);
 
+  --filter-darken: brightness(90%);
+
   --font-sans: "Noto Sans", system-ui, sans-serif;
 
   --type-min-width: 6rem;
@@ -455,4 +457,8 @@ button {
 
 .pointer-none {
   pointer-events: none;
+}
+
+.active-darken:active {
+  filter: var(--filter-darken);
 }

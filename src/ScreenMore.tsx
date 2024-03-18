@@ -157,12 +157,7 @@ export function ScreenMore({
           <span className="flex flex-auto items-center">
             {t("banners.updateReady.description")}
           </span>
-          <Button
-            className="ml3"
-            size="small"
-            type="button"
-            onClick={updateApp}
-          >
+          <Button className="ml3" type="button" onClick={updateApp}>
             {t("banners.updateReady.update")}
           </Button>
         </div>
