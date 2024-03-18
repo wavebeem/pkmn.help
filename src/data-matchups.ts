@@ -184,7 +184,9 @@ export function matchupFor({
   abilityName: AbilityName;
 }): number {
   let n = 1;
-  if (defenseTeraType !== Type.none) {
+  // Tera Pokémon (other than Stellar type) use their Tera type as their sole
+  // defensive type
+  if (!(defenseTeraType === Type.none || defenseTeraType === Type.stellar)) {
     defenseTypes = [defenseTeraType, Type.none];
   }
   // Apply multipliers based on ability
@@ -214,6 +216,7 @@ export function matchupFor({
       n = 0;
     }
   }
+  // Tera Pokémon take double damage from Stellar attacks
   if (defenseTeraType !== Type.none && offenseType === Type.stellar) {
     n *= 2;
   }

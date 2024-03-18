@@ -2,6 +2,8 @@
 
 ## ????-??-??
 
+- Fixed a matchup bug: Stellar type doesn't replace the Pokémon's defensive types, unlike all other Tera types. Instead it just adds a 2x weakness to Stellar.
+
 - Reduced the size of the header and nav area
 
 - Updated the logo and added an icon... try pressing it!
