@@ -2,6 +2,10 @@
 
 ## ????-??-??
 
+- Reduced the size of the header and nav area
+
+- Updated the logo and added an icon... try pressing it!
+
 - Switched from system fonts to "Noto Sans"
 
 - Adjusted font sizes, font weights, and padding values
