@@ -156,11 +156,11 @@ export function App() {
         <h1
           className={classNames(
             `f3-ns f4 weight-medium`,
-            `flex justify-center gap1 white`,
+            `flex items-center justify-center gap2`,
             "pv2 ph3",
             "bb ma0",
-            // "fg1 bg1 border3",
-            "bg-poke border-vibrant"
+            "bg-poke white border-vibrant",
+            styles.header
           )}
         >
           <div
@@ -173,7 +173,7 @@ export function App() {
               setEasterEgg(pkmn);
             }}
           />
-          {t("title")}
+          <div>{t("title")}</div>
         </h1>
         <nav
           className={classNames(`bg1 bb border2 pv2 ph2 gap2`, styles.tabBar)}

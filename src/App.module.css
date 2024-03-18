@@ -54,23 +54,92 @@
   }
 }
 
+.header {
+  text-shadow: 0 0 8px hsl(0 0% 0% / 50%);
+}
+
 .headerButton {
-  --size: 1.5em;
-  background: #fff;
-  border: 2px solid #111;
-  box-shadow: inset 0 0 0 5px #fff, inset 0 0 0 7px #ccc;
+  --size: 1.25em;
+
+  /* Premier theme */
+  /* --color-top1: hsl(0 0% 100%);
+  --color-top2: hsl(0 0% 100%);
+  --color-bottom1: hsl(0 0% 100%);
+  --color-bottom2: hsl(0 0% 100%);
+  --color-border: hsl(0 90% 40%); */
+
+  /* Regular theme */
+  --color-top1: hsl(0 90% 70%);
+  --color-top2: hsl(0 90% 45%);
+  --color-bottom1: hsl(0 0% 100%);
+  --color-bottom2: hsl(0 0% 70%);
+  --color-border: hsl(0 0% 0%);
+
+  /* Flat theme */
+  /* --color-top1: hsl(0 90% 60%);
+  --color-top2: hsl(0 90% 60%);
+  --color-bottom1: hsl(0 0% 100%);
+  --color-bottom2: hsl(0 0% 100%);
+  --color-border: hsl(0 0% 0%); */
+
+  position: relative;
+  border: 0;
+  background: linear-gradient(
+    to bottom,
+    var(--color-top1),
+    var(--color-top2) calc(50% - 1.5px),
+    var(--color-border) calc(50% - 1px) calc(50% + 1px),
+    var(--color-bottom1) calc(50% + 1.5px),
+    var(--color-bottom2)
+  );
+  box-shadow: inset 0 0 0 1px hsl(0 0% 100% / 20%), 0 0 0 1px hsl(0 0% 0% / 25%),
+    0 2px 2px hsl(0 0% 0% / 30%);
   width: var(--size);
   height: var(--size);
-  border-radius: 50%;
-  background-clip: content-box;
+  border-radius: 9999px;
+  background-clip: border-box;
+  animation: 0.5s ease-in-out alternate pokeballJiggle;
+  animation-delay: 1s;
+  transition: transform 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+@keyframes pokeballJiggle {
+  30% {
+    transform: rotateZ(-20deg);
+  }
+  70% {
+    transform: rotateZ(20deg);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .headerButton {
+    animation: none;
+    transition: none;
+  }
+}
+
+.headerButton::after {
+  --size: 0.25em;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  border-radius: 9999px;
+  width: var(--size);
+  height: var(--size);
+  border: 2px solid var(--color-border);
+  background: hsl(0 0% 100%);
 }
 
 .headerButton:hover {
-  filter: brightness(0.95);
+  cursor: pointer;
+  transform: rotateZ(15deg);
 }
 
 .headerButton:active {
-  scale: 0.97;
   filter: var(--filter-darken);
 }
 
