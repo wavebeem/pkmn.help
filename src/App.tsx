@@ -42,6 +42,21 @@ function getTabClass({ isActive }: { isActive: boolean }): string {
   return classNames(tabClass, isActive && tabClassActive);
 }
 
+const pokeballThemes = ["premier", "normal", "flat"] as const;
+
+function* cycle<T>(array: readonly T[]): Generator<T> {
+  while (true) {
+    for (const item of array) {
+      yield item;
+    }
+  }
+}
+
+const pokeballThemeGenerator = cycle(pokeballThemes);
+function getNextPokeballTheme() {
+  return pokeballThemeGenerator.next().value;
+}
+
 function getFallback(key: string): string {
   if (key === "title") {
     return "Pokémon Type Calculator";
@@ -87,6 +102,13 @@ export function App() {
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
   const [easterEgg, setEasterEgg] = React.useState<Pokemon>();
   const [easterEggLoadedID, setEasterEggLoadedID] = React.useState("");
+  const [pokeballTheme, setPokeballTheme] = React.useState(() => {
+    return getNextPokeballTheme();
+  });
+
+  function updatePokeballTheme() {
+    setPokeballTheme(getNextPokeballTheme());
+  }
 
   const [language] = useLanguage();
 
@@ -157,7 +179,7 @@ export function App() {
           className={classNames(
             `f3-ns f4 weight-medium`,
             `flex items-center justify-center gap2`,
-            "pv2 ph3",
+            "pa3",
             "bb ma0",
             "bg-poke white border-vibrant",
             styles.header
@@ -165,8 +187,10 @@ export function App() {
         >
           <div
             className={styles.headerButton}
+            data-theme={pokeballTheme}
             onClick={(event) => {
               event.preventDefault();
+              updatePokeballTheme();
               const i = Math.floor(Math.random() * AllPokemon.length);
               const pkmn = AllPokemon[i];
               if (!pkmn) return;

@@ -61,27 +61,6 @@
 .headerButton {
   --size: 1.25em;
 
-  /* Premier theme */
-  /* --color-top1: hsl(0 0% 100%);
-  --color-top2: hsl(0 0% 100%);
-  --color-bottom1: hsl(0 0% 100%);
-  --color-bottom2: hsl(0 0% 100%);
-  --color-border: hsl(0 90% 40%); */
-
-  /* Regular theme */
-  --color-top1: hsl(0 90% 70%);
-  --color-top2: hsl(0 90% 45%);
-  --color-bottom1: hsl(0 0% 100%);
-  --color-bottom2: hsl(0 0% 70%);
-  --color-border: hsl(0 0% 0%);
-
-  /* Flat theme */
-  /* --color-top1: hsl(0 90% 60%);
-  --color-top2: hsl(0 90% 60%);
-  --color-bottom1: hsl(0 0% 100%);
-  --color-bottom2: hsl(0 0% 100%);
-  --color-border: hsl(0 0% 0%); */
-
   position: relative;
   border: 0;
   background: linear-gradient(
@@ -102,6 +81,30 @@
   animation-delay: 1s;
   transition: transform 200ms;
   transition-timing-function: ease-in-out;
+}
+
+.headerButton[data-theme="normal"] {
+  --color-top1: hsl(0 90% 70%);
+  --color-top2: hsl(0 90% 45%);
+  --color-bottom1: hsl(0 0% 100%);
+  --color-bottom2: hsl(0 0% 70%);
+  --color-border: hsl(0 0% 0%);
+}
+
+.headerButton[data-theme="premier"] {
+  --color-top1: hsl(0 0% 100%);
+  --color-top2: hsl(0 0% 100%);
+  --color-bottom1: hsl(0 0% 100%);
+  --color-bottom2: hsl(0 0% 100%);
+  --color-border: hsl(0 90% 30%);
+}
+
+.headerButton[data-theme="flat"] {
+  --color-top1: hsl(0 90% 60%);
+  --color-top2: hsl(0 90% 60%);
+  --color-bottom1: hsl(0 0% 100%);
+  --color-bottom2: hsl(0 0% 100%);
+  --color-border: hsl(0 0% 0%);
 }
 
 @keyframes pokeballJiggle {
