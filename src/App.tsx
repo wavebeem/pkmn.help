@@ -24,6 +24,7 @@ import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
 import styles from "./App.module.css";
 import Spinner from "./Spinner";
+import { randomItem } from "./random";
 
 const tabClass = classNames([
   "active-darken",
@@ -40,21 +41,6 @@ const tabClassActive = classNames(["button-selected"]);
 
 function getTabClass({ isActive }: { isActive: boolean }): string {
   return classNames(tabClass, isActive && tabClassActive);
-}
-
-const pokeballThemes = ["premier", "normal", "flat"] as const;
-
-function* cycle<T>(array: readonly T[]): Generator<T> {
-  while (true) {
-    for (const item of array) {
-      yield item;
-    }
-  }
-}
-
-const pokeballThemeGenerator = cycle(pokeballThemes);
-function getNextPokeballTheme() {
-  return pokeballThemeGenerator.next().value;
 }
 
 function getFallback(key: string): string {
@@ -102,13 +88,6 @@ export function App() {
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
   const [easterEgg, setEasterEgg] = React.useState<Pokemon>();
   const [easterEggLoadedID, setEasterEggLoadedID] = React.useState("");
-  const [pokeballTheme, setPokeballTheme] = React.useState(() => {
-    return getNextPokeballTheme();
-  });
-
-  function updatePokeballTheme() {
-    setPokeballTheme(getNextPokeballTheme());
-  }
 
   const [language] = useLanguage();
 
@@ -187,13 +166,13 @@ export function App() {
         >
           <div
             className={styles.headerButton}
-            data-theme={pokeballTheme}
+            data-theme="premier"
             onClick={(event) => {
               event.preventDefault();
-              updatePokeballTheme();
-              const i = Math.floor(Math.random() * AllPokemon.length);
-              const pkmn = AllPokemon[i];
-              if (!pkmn) return;
+              const pkmn = randomItem(AllPokemon);
+              if (!pkmn) {
+                return;
+              }
               setEasterEgg(pkmn);
             }}
           />

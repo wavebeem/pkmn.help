@@ -66,9 +66,9 @@
   background: linear-gradient(
     to bottom,
     var(--color-top1),
-    var(--color-top2) calc(50% - 1.5px),
-    var(--color-border) calc(50% - 1px) calc(50% + 1px),
-    var(--color-bottom1) calc(50% + 1.5px),
+    var(--color-top2) calc(50% - 2px),
+    var(--color-border) calc(50% - 1.5px) calc(50% + 1.5px),
+    var(--color-bottom1) calc(50% + 2px),
     var(--color-bottom2)
   );
   box-shadow: inset 0 0 0 1px hsl(0 0% 100% / 20%), 0 0 0 1px hsl(0 0% 0% / 25%),
@@ -83,28 +83,13 @@
   transition-timing-function: ease-in-out;
 }
 
-.headerButton[data-theme="normal"] {
-  --color-top1: hsl(0 90% 70%);
-  --color-top2: hsl(0 90% 45%);
-  --color-bottom1: hsl(0 0% 100%);
-  --color-bottom2: hsl(0 0% 70%);
-  --color-border: hsl(0 0% 0%);
-}
-
+.headerButton,
 .headerButton[data-theme="premier"] {
   --color-top1: hsl(0 0% 100%);
-  --color-top2: hsl(0 0% 100%);
-  --color-bottom1: hsl(0 0% 100%);
-  --color-bottom2: hsl(0 0% 100%);
+  --color-top2: hsl(0 0% 90%);
+  --color-bottom1: hsl(0 0% 90%);
+  --color-bottom2: hsl(0 0% 80%);
   --color-border: hsl(0 90% 30%);
-}
-
-.headerButton[data-theme="flat"] {
-  --color-top1: hsl(0 90% 60%);
-  --color-top2: hsl(0 90% 60%);
-  --color-bottom1: hsl(0 0% 100%);
-  --color-bottom2: hsl(0 0% 100%);
-  --color-border: hsl(0 0% 0%);
 }
 
 @keyframes pokeballJiggle {
@@ -133,13 +118,13 @@
   border-radius: 9999px;
   width: var(--size);
   height: var(--size);
-  border: 2px solid var(--color-border);
+  border: 3px solid var(--color-border);
   background: hsl(0 0% 100%);
 }
 
 .headerButton:hover {
   cursor: pointer;
-  transform: rotateZ(15deg);
+  filter: brightness(1.05);
 }
 
 .headerButton:active {
