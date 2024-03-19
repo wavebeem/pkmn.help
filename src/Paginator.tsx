@@ -46,7 +46,7 @@ function PageSelector<T>({
   return (
     <>
       {first && last && (
-        <div className="flex mt3 tabular-nums f4 weight-semibold">
+        <div className="flex mt3 tabular-nums f4 weight-medium">
           <div className="flex-auto">
             {renderID(first)} &ndash; {renderID(last)}
           </div>

@@ -16,7 +16,7 @@ interface SectionProps {
 function Section({ title, children }: SectionProps) {
   return (
     <div>
-      <h2 className="f4 weight-semibold mt4 mb2">{title}</h2>
+      <h2 className="f4 weight-medium mt4 mb2">{title}</h2>
       <div className={classNames("grid gap1", styles.matchups)}>{children}</div>
     </div>
   );

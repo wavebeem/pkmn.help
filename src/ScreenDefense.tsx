@@ -31,7 +31,7 @@ import { Badge } from "./Badge";
 const modes = ["solo", "team"] as const;
 type Mode = typeof modes[number];
 
-const classH2 = "f4 weight-semibold mb2 mt4";
+const classH2 = "f4 weight-medium mb2 mt4";
 
 const tabClass = classNames([
   "active-darken",

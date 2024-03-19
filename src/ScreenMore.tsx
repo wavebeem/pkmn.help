@@ -137,7 +137,7 @@ export function ScreenMore({
 
   const classH3Last = "normal weight-medium lh-title f4";
   const classH3 = classNames(classH3Last, "mb0");
-  const classH2 = "lh-title f3 weight-semibold";
+  const classH2 = "lh-title f3 weight-medium";
   const classH2InlineBlock = classNames(classH2, "dib");
 
   return (
