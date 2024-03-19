@@ -145,7 +145,7 @@ more.changes.heading,What’s new,Cosa c'è di nuovo
 more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Scopri cosa c’è di nuovo nel <changelog>registro degli aggiornamenti</changelog>.
 more.help.heading,Help,Aiuto
 more.help.serviceWorker.description,This button can help fix issues in the app.,Questo bottone può aiutare a sistemare gli errori nell'app.
-more.help.serviceWorker.button,Reset,Annulla registrazione del service worker
+more.help.serviceWorker.button,Reset,Ripristina
 more.privacy.heading,Privacy,Privacy
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Non pubblicherò mai annunci o ruberò i tuoi dati personali. Uso <plausible>Plausible Analytics</plausible>, che è autofinanziato, indipendente, ospitato nell'UE e non memorizza alcun cookie sul tuo computer."
 more.givingBack.heading,Showing appreciation,Mostra il tuo apprezzamento

@@ -9,9 +9,12 @@ export function PlainBadge({ children }: PlainBadgeProps) {
   return (
     <div
       className={classNames(
-        "ba border2",
-        "br2 bg3",
-        "b f5 lh-title tc",
+        "ba",
+        "border2",
+        "br2",
+        "bg3",
+        "f5",
+        "tc",
         "grid-span-all"
       )}
       style={{ padding: 2 }}

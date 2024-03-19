@@ -1,15 +1,17 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-
   "compilerOptions": {
     "lib": ["ES2021"],
     "module": "ES2020",
     "target": "ES2021",
-
+    "noEmit": true,
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node"
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "Node16",
+    "resolveJsonModule": true,
+    "isolatedModules": true
   }
 }

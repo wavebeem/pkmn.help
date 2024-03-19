@@ -1,8 +1,29 @@
 # Changelog
 
+## 2024-03-18
+
+- Fixed a matchup bug: Stellar type doesn't replace the Pokémon's defensive types, unlike all other Tera types. Instead it just adds a 2x weakness to Stellar.
+
+- Fixed an issue where team type selection was visually broken
+
+- Reduced the size of the header and nav area
+
+- Updated the logo and added an icon... Press it for a surprise!
+
+- Switched from system fonts to "Roboto"
+
+- Adjusted font sizes, font weights, and padding values
+
+- Adjusted the header colors
+
+- Updated German translation for the "Reset" button
+
+- Updated Italian translation for the "Reset" button
+
 ## 2024-03-17
 
 - Fixed Linux font issue
+
 - Translates the "thanks" section into Spanish (zh-Hans, zh-Hant) and messages related to the tera types
 
 ## 2024-03-16

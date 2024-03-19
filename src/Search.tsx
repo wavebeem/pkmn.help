@@ -12,8 +12,8 @@ interface SearchProps {
 export function Search({ updateSearch, search }: SearchProps) {
   const { t } = useTranslation();
   const ref = React.useRef<HTMLInputElement>(null);
-  const iconSize = 24;
-  const inputHeight = 36;
+  const iconSize = 30;
+  const inputHeight = 42;
   return (
     <div className="relative mv3">
       <IconSearch
@@ -32,7 +32,6 @@ export function Search({ updateSearch, search }: SearchProps) {
         autoCapitalize="none"
         className={classNames(
           "f5 w-100 border-box",
-          "pv2",
           "focus-simple",
           "inset-shadow",
           "br-pill ba",
@@ -40,7 +39,11 @@ export function Search({ updateSearch, search }: SearchProps) {
           "fg1",
           "border1"
         )}
-        style={{ paddingLeft: 40, paddingRight: 40, height: inputHeight }}
+        style={{
+          paddingLeft: `calc(1px * ${iconSize} + 1rem)`,
+          paddingRight: `calc(1px * ${iconSize} + 1rem)`,
+          height: inputHeight,
+        }}
         value={search}
         onChange={(event) => {
           updateSearch(event.target.value);

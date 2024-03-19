@@ -13,12 +13,7 @@ export function Badge({ type }: BadgeProps) {
   const { t } = useTranslation();
   return (
     <div
-      className={classNames(
-        "type-bg",
-        "br2",
-        "b f5 lh-title tc",
-        styles.badgeContainer
-      )}
+      className={classNames("type-bg", "br2", "f5 tc", styles.badgeContainer)}
       data-type={type}
       style={{
         ["--type-color" as any]: typeColor(type),
@@ -28,7 +23,7 @@ export function Badge({ type }: BadgeProps) {
     >
       <div
         className={classNames(
-          "br1 ba b--transparent white truncate",
+          "br1 ba b--transparent white truncat weight-normal",
           styles.badgeLabel
         )}
         data-type={type}

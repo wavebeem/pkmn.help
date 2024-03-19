@@ -139,8 +139,8 @@ export function ScreenWeaknessCoverage({
   }
 
   return (
-    <main className="pa3 center content-narrow lh-copy">
-      <h2 className="lh-title f5">{t("coverage.heading")}</h2>
+    <main className="pa3 center content-narrow">
+      <h2 className="lh-title f4">{t("coverage.heading")}</h2>
       <p>{t("coverage.paragraph1")}</p>
       <p>{t("coverage.paragraph2")}</p>
       <p>{t("coverage.paragraph3")}</p>

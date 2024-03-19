@@ -31,11 +31,12 @@ import { Badge } from "./Badge";
 const modes = ["solo", "team"] as const;
 type Mode = typeof modes[number];
 
-const classH2 = "f4 mb2 mt4";
+const classH2 = "f4 weight-medium mb2 mt4";
 
 const tabClass = classNames([
+  "active-darken",
   "no-underline",
-  "pv1 ph3 f5",
+  "pv2 ph3 f5",
   "focus-tab",
   "tc",
   "ba border1 br-pill",
@@ -284,7 +285,6 @@ export function ScreenDefense({
           <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
           <TypeSelector
             generation={generation}
-            name="primary"
             value={state.types[0]}
             onChange={updateTypeAt(0)}
             disabledTypes={[]}
@@ -293,7 +293,6 @@ export function ScreenDefense({
           <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
           <TypeSelector
             generation={generation}
-            name="secondary"
             value={state.types[1] || Type.none}
             onChange={updateTypeAt(1)}
             disabledTypes={state.types.slice(0, 1)}
@@ -304,7 +303,6 @@ export function ScreenDefense({
               <h2 className={classH2}>{t("defense.chooseThird")}</h2>
               <TypeSelector
                 generation={generation}
-                name="third"
                 value={state.types[2] || Type.none}
                 onChange={updateTypeAt(2)}
                 disabledTypes={state.types.slice(0, 2)}
@@ -408,9 +406,8 @@ export function ScreenDefense({
                     ))}
                   </div>
                   <div className="flex-auto" />
-                  <div className="flex flex-column flex-row-ns gap2">
+                  <div className="flex flex-column gap2">
                     <Button
-                      size="small"
                       onClick={() => {
                         if (typeIndex === teamIndex) {
                           setTeamIndex(-1);
@@ -438,7 +435,6 @@ export function ScreenDefense({
                       )}
                     </Button>
                     <Button
-                      size="small"
                       onClick={() => {
                         setTeamIndex(-1);
                         const teamTypesList = [...state.teamTypesList];
@@ -461,7 +457,6 @@ export function ScreenDefense({
                   <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
                   <TypeSelector
                     generation={generation}
-                    name="primary"
                     value={types[0]}
                     onChange={updateTeamTypesAt(typeIndex, 0)}
                     disabledTypes={[]}
@@ -470,7 +465,6 @@ export function ScreenDefense({
                   <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
                   <TypeSelector
                     generation={generation}
-                    name="secondary"
                     value={types[1] || Type.none}
                     onChange={updateTeamTypesAt(typeIndex, 1)}
                     disabledTypes={types.slice(0, 1)}
@@ -481,7 +475,6 @@ export function ScreenDefense({
                       <h2 className={classH2}>{t("defense.chooseThird")}</h2>
                       <TypeSelector
                         generation={generation}
-                        name="third"
                         value={types[2] || Type.none}
                         onChange={updateTeamTypesAt(typeIndex, 2)}
                         disabledTypes={types.slice(0, 2)}

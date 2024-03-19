@@ -6,15 +6,12 @@ import { Generation } from "./data-generations";
 import { Type, typesForGeneration } from "./data-types";
 import styles from "./TypeSelector.module.css";
 
-const buttonInnerHeight = "1.5rem";
-
 interface TypeSelectorProps {
   generation: Generation;
   onChange(type: Type): void;
   value: Type;
   includeNone: boolean;
   disabledTypes: Type[];
-  name: string;
 }
 
 export function TypeSelector({
@@ -23,8 +20,8 @@ export function TypeSelector({
   value,
   includeNone,
   disabledTypes,
-  name,
 }: TypeSelectorProps) {
+  const name = React.useId();
   const { t } = useTranslation();
   const baseTypes = typesForGeneration(generation).filter(
     (t) => t !== Type.stellar
@@ -49,10 +46,11 @@ export function TypeSelector({
           <label
             key={type}
             className={classNames(
+              styles.label,
               stylesObj[styleKey],
               "db",
               "ba br-pill",
-              "pv1 ph2",
+              "pv2 ph3",
               "f5",
               "ttc",
               "select-none",
@@ -87,10 +85,7 @@ export function TypeSelector({
                 }}
               />
 
-              <span
-                className="tl pl2 pr1 flex-auto truncate"
-                style={{ lineHeight: buttonInnerHeight }}
-              >
+              <span className="tl pl2 pr1 flex-auto truncate">
                 {t(`types.${type}`)}
               </span>
             </span>

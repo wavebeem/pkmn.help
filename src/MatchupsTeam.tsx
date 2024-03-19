@@ -173,10 +173,10 @@ export function MatchupsTeam({
         <table className="collapse tc w-100">
           <thead>
             <tr className="bb border3">
-              <th className="pa2 w0">{t("defense.team.type")}</th>
+              <th className="pa2 w0 weight-medium">{t("defense.team.type")}</th>
               {matchers.map((m) => {
                 return (
-                  <th key={m.name} className="pa2">
+                  <th key={m.name} className="pa2 weight-medium">
                     {m.name}
                   </th>
                 );

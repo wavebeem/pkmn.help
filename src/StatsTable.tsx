@@ -20,7 +20,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
   return (
     <div className={`${styles.table} tabular-nums`}>
       <div
-        className="b tl"
+        className="weight-medium tl"
         title={t("pokedex.stats.hpLong")}
         aria-label={t("pokedex.stats.hpLong")}
       >
@@ -30,7 +30,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
       <Meter max={statMax} value={hp} color={typeColor(Type.fire)} />
 
       <div
-        className="b tl"
+        className="weight-medium tl"
         title={hasRoomForFullText ? "" : t("pokedex.stats.attackLong")}
         aria-label={hasRoomForFullText ? "" : t("pokedex.stats.attackLong")}
       >
@@ -42,7 +42,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
       <Meter max={statMax} value={attack} color={typeColor(Type.fighting)} />
 
       <div
-        className="b tl"
+        className="weight-medium tl"
         title={hasRoomForFullText ? "" : t("pokedex.stats.defenseLong")}
         aria-label={hasRoomForFullText ? "" : t("pokedex.stats.defenseLong")}
       >
@@ -54,7 +54,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
       <Meter max={statMax} value={defense} color={typeColor(Type.electric)} />
 
       <div
-        className="b tl"
+        className="weight-medium tl"
         title={hasRoomForFullText ? "" : t("pokedex.stats.specialAttackLong")}
         aria-label={
           hasRoomForFullText ? "" : t("pokedex.stats.specialAttackLong")
@@ -68,7 +68,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
       <Meter max={statMax} value={spAttack} color={typeColor(Type.grass)} />
 
       <div
-        className="b tl"
+        className="weight-medium tl"
         title={hasRoomForFullText ? "" : t("pokedex.stats.specialDefenseLong")}
         aria-label={
           hasRoomForFullText ? "" : t("pokedex.stats.specialDefenseLong")
@@ -82,7 +82,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
       <Meter max={statMax} value={spDefense} color={typeColor(Type.water)} />
 
       <div
-        className="b tl"
+        className="weight-medium tl"
         title={hasRoomForFullText ? "" : t("pokedex.stats.speedLong")}
         aria-label={hasRoomForFullText ? "" : t("pokedex.stats.speedLong")}
       >
@@ -94,7 +94,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
       <Meter max={statMax} value={speed} color={typeColor(Type.fairy)} />
 
       <div
-        className="b tl"
+        className="weight-medium tl"
         title={hasRoomForFullText ? "" : t("pokedex.stats.totalLong")}
         aria-label={hasRoomForFullText ? "" : t("pokedex.stats.totalLong")}
       >

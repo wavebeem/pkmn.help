@@ -5,6 +5,8 @@
 .wrapper > select {
   -webkit-appearance: none;
   appearance: none;
+  padding: 0.5rem 1rem;
+  padding-right: 3rem;
 }
 
 .wrapper:after {
@@ -19,11 +21,6 @@
   right: 1rem;
   top: calc(50% - 0.5rem);
   pointer-events: none;
-}
-
-.wrapper > select {
-  padding: 0.5rem 1rem;
-  padding-right: 3rem;
 }
 
 .wrapper > select > option {

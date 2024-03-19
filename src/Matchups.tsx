@@ -6,6 +6,7 @@ import { AbilityName, Type } from "./data-types";
 import { Badge } from "./Badge";
 import styles from "./Matchups.module.css";
 import { PlainBadge } from "./PlainBadge";
+import classNames from "classnames";
 
 interface SectionProps {
   title: string;
@@ -15,8 +16,8 @@ interface SectionProps {
 function Section({ title, children }: SectionProps) {
   return (
     <div>
-      <h2 className="f4 mt4 mb2">{title}</h2>
-      <div className={styles.matchups}>{children}</div>
+      <h2 className="f4 weight-medium mt4 mb2">{title}</h2>
+      <div className={classNames("grid gap1", styles.matchups)}>{children}</div>
     </div>
   );
 }

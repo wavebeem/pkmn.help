@@ -100,7 +100,10 @@ function Monster({ pokemon }: MonsterProps) {
       <div className="flex flex flex-column flex-row-ns items-center-ns gap2">
         <div className="flex items-center gap2">
           <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
-          <h2 className="mv0 f4 flex-auto" id={`${idPrefix}-name`}>
+          <h2
+            className="mv0 f4 flex-auto weight-medium"
+            id={`${idPrefix}-name`}
+          >
             {speciesName}
           </h2>
         </div>
@@ -292,7 +295,7 @@ export function ScreenPokedex({
           }}
           pageSize={20}
           emptyState={
-            <p className="fg4 f4 b tc m0">{t("pokedex.search.notFound")}</p>
+            <p className="fg4 f4 tc m0">{t("pokedex.search.notFound")}</p>
           }
           items={pkmn}
           renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}

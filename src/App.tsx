@@ -24,12 +24,16 @@ import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
 import styles from "./App.module.css";
 import Spinner from "./Spinner";
+import { randomItem } from "./random";
+import { iterCycle, iterNext, iterStutter } from "./iter";
 
 const tabClass = classNames([
+  "active-darken",
   "no-underline",
   "pv1 ph3 f5",
   "focus-tab",
-  "tc b",
+  "weight-medium",
+  "tc",
   "ba border1 br-pill",
   "bg1 fg1",
 ]);
@@ -54,6 +58,11 @@ function useTranslationsWithBlankFallback() {
   return ready ? translation : getFallback;
 }
 
+const pokeballThemes = ["premier", "regular"] as const;
+type PokeballTheme = typeof pokeballThemes[number];
+
+const pokeballThemeCycle = iterStutter(iterCycle(pokeballThemes), 2);
+
 export function App() {
   // Service worker
   const {
@@ -62,7 +71,6 @@ export function App() {
     updateServiceWorker,
   } = useRegisterSW();
   useUpdateSW();
-  // TODO: Fix this CSV download when using SW in Firefox
 
   async function updateApp() {
     setNeedRefresh(false);
@@ -85,6 +93,12 @@ export function App() {
   const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
   const [easterEgg, setEasterEgg] = React.useState<Pokemon>();
   const [easterEggLoadedID, setEasterEggLoadedID] = React.useState("");
+  const [pokeballTheme, setPokeballTheme] =
+    React.useState<PokeballTheme>("premier");
+
+  React.useEffect(() => {
+    setPokeballTheme(iterNext(pokeballThemeCycle));
+  }, []);
 
   const [language] = useLanguage();
 
@@ -100,7 +114,7 @@ export function App() {
   const [theme] = useTheme();
   const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const isDark = theme === "dark" || (theme === "auto" && isDarkMode);
-  const themeColor = isDark ? "hsl(357, 70%, 40%)" : "hsl(357, 97%, 46%)";
+  const themeColor = isDark ? "hsl(0 90% 45%)" : "hsl(0 70% 40%)";
   const themeAuto = isDark ? "dark" : "light";
 
   // Load Pokédex JSON
@@ -130,43 +144,55 @@ export function App() {
 
   return (
     <HelmetProvider>
+      {easterEgg && (
+        <div
+          className={styles.easterEgg}
+          data-animate={easterEggLoadedID === easterEgg.id}
+        >
+          <MonsterImage
+            pokemonID={easterEgg.id}
+            imageType={easterEgg.imageType}
+            onLoad={({ pokemonID }) => {
+              setEasterEggLoadedID(pokemonID);
+            }}
+            scale={2}
+          />
+        </div>
+      )}
       <div className="flex-auto">
         <Helmet>
           <html data-theme={themeAuto} />
           <meta name="theme-color" content={themeColor} />
           <title>{t("title")}</title>
         </Helmet>
-        <h1 className={`f3-ns f4 tc relative white ${styles.header}`}>
-          <Link to="/" className="no-underline white focus-outline br1">
-            {t("title")}
-          </Link>
-          <div
+        <h1
+          className={classNames(
+            `f3-ns f4 weight-medium`,
+            `flex items-center justify-center gap2`,
+            "pa3",
+            "bb ma0",
+            "bg-poke white border-vibrant",
+            styles.header
+          )}
+        >
+          <button
             className={styles.headerButton}
+            data-theme={pokeballTheme}
             onClick={(event) => {
               event.preventDefault();
-              const i = Math.floor(Math.random() * AllPokemon.length);
-              const pkmn = AllPokemon[i];
-              if (!pkmn) return;
+              const pkmn = randomItem(AllPokemon);
+              if (!pkmn) {
+                return;
+              }
               setEasterEgg(pkmn);
+              setPokeballTheme(iterNext(pokeballThemeCycle));
             }}
           />
-          {easterEgg && (
-            <div
-              className={styles.easterEgg}
-              data-animate={easterEggLoadedID === easterEgg.id}
-            >
-              <MonsterImage
-                pokemonID={easterEgg.id}
-                imageType={easterEgg.imageType}
-                onLoad={({ pokemonID }) => {
-                  setEasterEggLoadedID(pokemonID);
-                }}
-                scale={2}
-              />
-            </div>
-          )}
+          <div>{t("title")}</div>
         </h1>
-        <nav className={`bg1 bb border2 ${styles.tabBar} pb2 ph2`}>
+        <nav
+          className={classNames(`bg1 bb border2 pv2 ph2 gap2`, styles.tabBar)}
+        >
           <NavLink className={getTabClass} to={`/offense/${offenseParams}`}>
             {t("navigation.offense")}
           </NavLink>
