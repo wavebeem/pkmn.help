@@ -10,7 +10,7 @@
 
 - Updated the logo and added an icon... Press it for a surprise!
 
-- Switched from system fonts to "Noto Sans"
+- Switched from system fonts to "Roboto"
 
 - Adjusted font sizes, font weights, and padding values
 
