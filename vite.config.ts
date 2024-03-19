@@ -183,6 +183,7 @@ export default defineConfig((env) => {
           "locales/*.json",
           "manifest.json",
           "favicon-*.png",
+          "fonts/*.woff2",
         ],
         workbox: {
           // These files are excluded from the service worker cache. Given there
