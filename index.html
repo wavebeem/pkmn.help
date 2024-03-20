@@ -11,38 +11,51 @@
         style-src 'self' 'unsafe-inline';
       "
     />
-    <title>Pokémon Type Calculator</title>
-    <meta name="og:title" content="Pokémon Type Calculator" />
+    <title>%VITE_HTML_TITLE%</title>
+    <meta name="og:title" content="%VITE_HTML_TITLE%" />
     <link
       rel="prefetch"
       href="/data-pkmn.json"
       as="fetch"
       type="application/json"
     />
-    <link rel="icon" sizes="16x16" href="/favicon-16.png" />
-    <link rel="icon" sizes="32x32" href="/favicon-32.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png" />
-    <meta name="og:image" content="https://www.pkmn.help/favicon-192.png" />
-    <meta
-      name="twitter:image"
-      content="https://www.pkmn.help/favicon-192.png"
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="/favicon-16.png?v=%VITE_ICON_VERSION%"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="/favicon-32.png?v=%VITE_ICON_VERSION%"
+    />
+    <link
+      rel="icon"
+      sizes="180x180"
+      href="/app-icon-regular-180.png?v=%VITE_ICON_VERSION%"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="/app-icon-regular-192.png?v=%VITE_ICON_VERSION%"
+    />
+    <link
+      rel="icon"
+      sizes="512x512"
+      href="/app-icon-regular-512.png?v=%VITE_ICON_VERSION%"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/app-icon-maskable-180.png?v=%VITE_ICON_VERSION%"
     />
     <meta
-      name="twitter:image:src"
-      content="https://www.pkmn.help/favicon-192.png"
+      name="og:image"
+      content="https://www.pkmn.help/app-icon-regular.png?v=%VITE_ICON_VERSION%"
     />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta
-      name="description"
-      content="A Pokémon type calculator to show strengths/weaknesses of different type combinations"
-    />
-    <meta
-      name="og:description"
-      content="A Pokémon type calculator to show strengths/weaknesses of different type combinations"
-    />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@wavebeem" />
-    <meta name="twitter:creator" content="@wavebeem" />
+    <meta name="description" content="%VITE_HTML_DESCRIPTION%" />
+    <meta name="og:description" content="%VITE_HTML_DESCRIPTION%" />
     <script type="module" src="/src/main.tsx"></script>
     <script
       async
@@ -54,7 +67,7 @@
   <body>
     <div id="app" class="min-vh-100 flex flex-column">
       <div class="center fallback-content">
-        <h1>Pokémon Type Calculator</h1>
+        <h1>%VITE_HTML_TITLE%</h1>
         <p>
           A Pokémon type calculator to show strengths/weaknesses of different
           type combinations.
