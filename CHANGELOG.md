@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-03-19
+
+- Updated the app icon for browser tabs and adding the app to your home screen, dock, or taskbar
+
 ## 2024-03-18
 
 - Fixed a matchup bug: Stellar type doesn't replace the Pokémon's defensive types, unlike all other Tera types. Instead it just adds a 2x weakness to Stellar.
