@@ -198,6 +198,7 @@ export default defineConfig((env) => {
           "locales/*.json",
           "manifest.json",
           "favicon-*.png",
+          "app-icon-*.png",
           "fonts/*.woff2",
         ],
         workbox: {
