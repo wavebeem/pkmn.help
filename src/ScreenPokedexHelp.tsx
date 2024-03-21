@@ -9,15 +9,16 @@ interface ScreenPokedexHelpProps {
 
 export function ScreenPokedexHelp({ pokedexParams }: ScreenPokedexHelpProps) {
   const { t } = useTranslation();
+  const classH2 = "lh-title f4 weight-medium";
   return (
     <main className="pa3 center content-narrow">
-      <h2 className="lh-title f4">{t("pokedexHelp.searchByName.heading")}</h2>
+      <h2 className={classH2}>{t("pokedexHelp.searchByName.heading")}</h2>
       <p>{t("pokedexHelp.searchByName.description")}</p>
 
-      <h2 className="lh-title f4">{t("pokedexHelp.searchByNumber.heading")}</h2>
+      <h2 className={classH2}>{t("pokedexHelp.searchByNumber.heading")}</h2>
       <p>{t("pokedexHelp.searchByNumber.description")}</p>
 
-      <h2 className="lh-title f4">{t("pokedexHelp.searchByType.heading")}</h2>
+      <h2 className={classH2}>{t("pokedexHelp.searchByType.heading")}</h2>
       <p>{t("pokedexHelp.searchByType.description")}</p>
 
       <ul className="pl3">
