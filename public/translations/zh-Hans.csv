@@ -47,6 +47,7 @@ defense.takesXFrom,Takes {{ x }} from,受到 {{ x }} 伤害
 defense.chooseAbility,Choose ability,特性
 defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,无
+defense.abilityNames.filter,Filter,過濾
 defense.abilityNames.wonder_guard,Wonder Guard,神奇守护
 defense.abilityNames.delta_stream,Delta Stream,德尔塔气流
 defense.abilityNames.fluffy,Fluffy,毛茸茸

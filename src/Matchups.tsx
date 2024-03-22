@@ -37,7 +37,7 @@ export function Matchups({
   teraType,
   ability,
 }: MatchupsProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const formatTitle: (x: string) => string =
     kind === "offense"
       ? (x) => t("offense.dealsXTo", { x })
@@ -68,7 +68,10 @@ export function Matchups({
         }
         const eff = list[0].effectiveness;
         return (
-          <Section key={eff} title={formatTitle(formatEffectiveness(eff))}>
+          <Section
+            key={eff}
+            title={formatTitle(formatEffectiveness(eff, i18n.languages))}
+          >
             {list.map((x) => {
               if (kind === "offense" && x.formName === "stellar") {
                 return (
@@ -86,24 +89,19 @@ export function Matchups({
   );
 }
 
-function formatEffectiveness(eff: number | undefined): string {
-  switch (eff) {
-    case 1 / 2:
-      return "1⁄2×";
-    case 1 / 4:
-      return "1⁄4×";
-    case 1 / 8:
-      return "1⁄8×";
-    case 1 / 16:
-      return "1⁄16×";
-    case 0:
-      return "0×";
-    case undefined:
-      return "–"; // n-dash
-    default:
-      if (Number.isNaN(eff)) {
-        return "???";
-      }
-      return `${eff}×`;
+function formatEffectiveness(
+  eff: number | undefined,
+  locales: readonly string[]
+): string {
+  const times = "\u{00d7}";
+  const ndash = "\u{2013}";
+  if (eff == undefined) {
+    return ndash; // n-dash
   }
+  if (Number.isNaN(eff)) {
+    return "???";
+  }
+  // Avoid showing too many decimal places
+  const number = Number(eff.toFixed(3));
+  return number.toLocaleString(locales) + times;
 }

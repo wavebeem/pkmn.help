@@ -49,6 +49,7 @@
     "chooseThird": "Dritten Typ wählen",
     "takesXFrom": "Nimmt {{ x }} Schaden von",
     "abilityNames": {
+      "filter": "Filter",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",

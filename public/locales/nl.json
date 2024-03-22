@@ -73,6 +73,7 @@
     "chooseAbility": "Kies vaardigheid",
     "abilityNames": {
       "none": "Geen",
+      "filter": "Filter",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",

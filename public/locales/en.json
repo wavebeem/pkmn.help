@@ -75,6 +75,7 @@
     "chooseTeraType": "Choose tera type",
     "abilityNames": {
       "none": "None",
+      "filter": "Filter",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",

@@ -75,6 +75,7 @@
     "chooseTeraType": "Choisir le type téracristal",
     "abilityNames": {
       "none": "Aucun",
+      "filter": "Filtre",
       "wonder_guard": "Garde Mystik",
       "delta_stream": "Souffle Delta",
       "fluffy": "Boule de Poils",

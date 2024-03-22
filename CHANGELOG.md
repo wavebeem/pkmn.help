@@ -1,5 +1,17 @@
 # Changelog
 
+## 2024-03-21
+
+- Added the ability "Filter" which reduces super effective damage by 25%
+
+- Added localized numeric formatting
+
+  - "1,134" for "1134" in English
+
+  - "0,25" for "0.25" in Spanish
+
+  - Removed fractions like "1 / 2" in favor of decimal numbers like "0.5"
+
 ## 2024-03-19
 
 - Updated the app icon for browser tabs and adding the app to your home screen, dock, or taskbar

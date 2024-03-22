@@ -19,7 +19,7 @@ export function DexCoverage({
   types,
   isLoading,
 }: DexCoverageProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const {
     resistance: resist,
     normal,
@@ -30,9 +30,12 @@ export function DexCoverage({
     generation,
   });
   const total = coverageTypes.length;
+
   function getPercent(count: number): string {
-    return ((count / total || 0) * 100).toFixed(1);
+    const value = Number(((count / total || 0) * 100).toFixed(1));
+    return value.toLocaleString(i18n.languages);
   }
+
   const typeParams = new URLSearchParams({ types: types.join(" ") });
   return (
     <div className="tabular-nums mw5 flex flex-column">
@@ -50,7 +53,9 @@ export function DexCoverage({
             >
               {t("offense.coverage.weakness")}
             </Link>
-            <div className="flex-auto tr ml2">({weak.length})</div>
+            <div className="flex-auto tr ml2">
+              ({weak.length.toLocaleString(i18n.languages)})
+            </div>
           </>
         )}
       </div>
@@ -68,7 +73,9 @@ export function DexCoverage({
             >
               {t("offense.coverage.normal")}
             </Link>
-            <div className="flex-auto tr ml2">({normal.length})</div>
+            <div className="flex-auto tr ml2">
+              ({normal.length.toLocaleString(i18n.languages)})
+            </div>
           </>
         )}
       </div>
@@ -86,7 +93,9 @@ export function DexCoverage({
             >
               {t("offense.coverage.resistance")}
             </Link>
-            <div className="flex-auto tr ml2">({resist.length})</div>
+            <div className="flex-auto tr ml2">
+              ({resist.length.toLocaleString(i18n.languages)})
+            </div>
           </>
         )}
       </div>

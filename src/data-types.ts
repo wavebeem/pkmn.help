@@ -85,6 +85,7 @@ export const abilities = {
   motor_drive: createAbility({ type: Type.electric, value: 0 }),
   volt_absorb: createAbility({ type: Type.electric, value: 0 }),
   // Other
+  filter: createAbility(),
   wonder_guard: createAbility(),
   delta_stream: createAbility(),
 } as const;

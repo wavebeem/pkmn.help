@@ -49,6 +49,7 @@
     "chooseThird": "Alege al treilea fel",
     "takesXFrom": "Ia {{ x }} de la",
     "abilityNames": {
+      "filter": "Filter",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",
