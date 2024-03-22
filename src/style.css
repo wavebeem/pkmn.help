@@ -39,7 +39,7 @@
   --color-vibrant-border: hsl(0 0% 0% / 0.2);
   --color-vibrant-border1: hsl(0 0% 0% / 0.6);
   --color-scroll-fg: hsl(0 0% 20%);
-  --color-scroll-bg: hsl(0 0% 90%);
+  --color-scroll-bg: hsl(0 0% 85%);
 
   --filter-darken: brightness(90%);
 
@@ -137,7 +137,7 @@
   --color-vibrant-border: hsl(0 0% 100% / 0.4);
   --color-vibrant-border1: hsl(0 0% 100% / 0.8);
   --color-scroll-fg: hsl(220 20% 70%);
-  --color-scroll-bg: hsl(220 20% 10%);
+  --color-scroll-bg: hsl(220 20% 15%);
 }
 
 [hidden] {

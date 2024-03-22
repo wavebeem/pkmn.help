@@ -12,6 +12,8 @@
 
   - Removed fractions like "1 / 2" in favor of decimal numbers like "0.5"
 
+- Updated the app icons with a bit more shading
+
 ## 2024-03-19
 
 - Updated the app icon for browser tabs and adding the app to your home screen, dock, or taskbar
