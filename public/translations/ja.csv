@@ -46,26 +46,26 @@ defense.chooseThird,Choose third type,３つ目のタイプ
 defense.takesXFrom,Takes {{ x }} from,{{ x }}を受ける
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
-defense.abilityNames.none,None,
-defense.abilityNames.filter,Filter,
-defense.abilityNames.wonder_guard,Wonder Guard,
-defense.abilityNames.delta_stream,Delta Stream,
-defense.abilityNames.fluffy,Fluffy,
-defense.abilityNames.purifying_salt,Purifying Salt,
-defense.abilityNames.heatproof,Heatproof,
-defense.abilityNames.water_bubble,Water Bubble,
-defense.abilityNames.thick_fat,Thick Fat,
-defense.abilityNames.earth_eater,Earth Eater,
-defense.abilityNames.levitate,Levitate,
-defense.abilityNames.flash_fire,Flash Fire,
-defense.abilityNames.well_baked_body,Well-Baked Body,
-defense.abilityNames.dry_skin,Dry Skin,
-defense.abilityNames.storm_drain,Storm Drain,
-defense.abilityNames.water_absorb,Water Absorb,
-defense.abilityNames.sap_sipper,Sap Sipper,
-defense.abilityNames.lightning_rod,Lightning Rod,
-defense.abilityNames.motor_drive,Motor Drive,
-defense.abilityNames.volt_absorb,Volt Absorb,
+defense.abilityNames.none,None,なし
+defense.abilityNames.filter,Filter,フィルター
+defense.abilityNames.wonder_guard,Wonder Guard,ふしぎなまもり
+defense.abilityNames.delta_stream,Delta Stream,デルタストリーム
+defense.abilityNames.fluffy,Fluffy,もふもふ
+defense.abilityNames.purifying_salt,Purifying Salt,きよめのしお
+defense.abilityNames.heatproof,Heatproof,たいねつ
+defense.abilityNames.water_bubble,Water Bubble,すいほう
+defense.abilityNames.thick_fat,Thick Fat,あついしぼう
+defense.abilityNames.earth_eater,Earth Eater,どしょく
+defense.abilityNames.levitate,Levitate,ふゆう
+defense.abilityNames.flash_fire,Flash Fire,もらいび
+defense.abilityNames.well_baked_body,Well-Baked Body,こんがりボディ
+defense.abilityNames.dry_skin,Dry Skin,かんそうはだ
+defense.abilityNames.storm_drain,Storm Drain,よびみず
+defense.abilityNames.water_absorb,Water Absorb,ちょすい
+defense.abilityNames.sap_sipper,Sap Sipper,そうしょく
+defense.abilityNames.lightning_rod,Lightning Rod,ひらいしん
+defense.abilityNames.motor_drive,Motor Drive,でんきエンジン
+defense.abilityNames.volt_absorb,Volt Absorb,ちくでん
 defense.mode.heading,Choose mode,
 defense.mode.solo,Solo,
 defense.mode.team,Team,

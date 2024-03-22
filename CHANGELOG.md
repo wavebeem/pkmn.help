@@ -14,6 +14,8 @@
 
 - Updated the app icons with a bit more shading
 
+- Updated Japanese translation to include abilities
+
 ## 2024-03-19
 
 - Updated the app icon for browser tabs and adding the app to your home screen, dock, or taskbar
