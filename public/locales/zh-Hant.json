@@ -73,6 +73,7 @@
     "chooseAbility": "選擇技能",
     "abilityNames": {
       "none": "無",
+      "filter": "過濾",
       "wonder_guard": "奇跡防守",
       "delta_stream": "德爾塔氣流",
       "fluffy": "毛茸茸",

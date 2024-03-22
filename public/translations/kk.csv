@@ -47,6 +47,7 @@ defense.takesXFrom,Takes {{ x }} from,{{ x }} Алады
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,
+defense.abilityNames.filter,Filter,Filter
 defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard
 defense.abilityNames.delta_stream,Delta Stream,Delta Stream
 defense.abilityNames.fluffy,Fluffy,Fluffy

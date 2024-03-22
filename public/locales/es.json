@@ -75,6 +75,7 @@
     "chooseTeraType": "Elige teratipo",
     "abilityNames": {
       "none": "Ninguna",
+      "filter": "Filtro",
       "wonder_guard": "Superguarda",
       "delta_stream": "Ráfaga Delta",
       "fluffy": "Peluche",

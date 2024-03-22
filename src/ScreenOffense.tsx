@@ -29,7 +29,7 @@ export function ScreenOffense({
   fallbackCoverageTypes,
   isLoading,
 }: OffenseProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const search = useSearch();
   const navigate = useNavigate();
   const offenseTypes = typesFromString(search.get("types") || "");
@@ -58,6 +58,9 @@ export function ScreenOffense({
     setOffenseParams(params);
   }, [params, setOffenseParams]);
 
+  const listLength = coverageTypes?.length ?? 0;
+  const listLengthFormatted = listLength.toLocaleString(i18n.languages);
+
   const classH2 = "f4 mb2 mt4 weight-medium";
   return (
     <main className="ph3 pt0 pb4 content-wide center flex flex-column flex-row-ns">
@@ -81,7 +84,7 @@ export function ScreenOffense({
               >
                 {t("offense.coverage.edit")}
               </Link>{" "}
-              ({coverageTypes?.length ?? 0})
+              ({listLengthFormatted})
             </div>
             <div
               className={classNames(isLoading && ["o-30 no-pointer cursor-na"])}

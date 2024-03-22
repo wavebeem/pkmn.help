@@ -19,7 +19,6 @@ export function MultiTypeSelector({
   onChange,
   value,
 }: MultiTypeSelectorProps) {
-  console.log(MultiTypeSelector, { value });
   const { t } = useTranslation();
   const types = typesForGeneration(generation);
   return (

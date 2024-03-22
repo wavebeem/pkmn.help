@@ -6,6 +6,8 @@ import { VitePWA } from "vite-plugin-pwa";
 import * as fs from "fs";
 import * as path from "path";
 
+const iconVersion = 5;
+
 function readJSON(filename: string): any {
   const text = fs.readFileSync(filename, "utf-8");
   const json = JSON.parse(text);
@@ -144,44 +146,44 @@ export default defineConfig((env) => {
           orientation: "any",
           icons: [
             {
-              src: "/favicon-16.png",
+              src: `/favicon-16.png?v=${iconVersion}`,
               sizes: "16x16",
               type: "image/png",
             },
             {
-              src: "/favicon-32.png",
+              src: `/favicon-32.png?v=${iconVersion}`,
               sizes: "32x32",
               type: "image/png",
             },
             {
-              src: "/app-icon-regular-180.png",
+              src: `/app-icon-regular-180.png?v=${iconVersion}`,
               sizes: "180x180",
               type: "image/png",
             },
             {
-              src: "/app-icon-regular-192.png",
+              src: `/app-icon-regular-192.png?v=${iconVersion}`,
               sizes: "192x192",
               type: "image/png",
             },
             {
-              src: "/app-icon-regular-512.png",
+              src: `/app-icon-regular-512.png?v=${iconVersion}`,
               sizes: "512x512",
               type: "image/png",
             },
             {
-              src: "/app-icon-maskable-180.png",
+              src: `/app-icon-maskable-180.png?v=${iconVersion}`,
               sizes: "180x180",
               type: "image/png",
               purpose: "maskable",
             },
             {
-              src: "/app-icon-maskable-192.png",
+              src: `/app-icon-maskable-192.png?v=${iconVersion}`,
               sizes: "192x192",
               type: "image/png",
               purpose: "maskable",
             },
             {
-              src: "/app-icon-maskable-512.png",
+              src: `/app-icon-maskable-512.png?v=${iconVersion}`,
               sizes: "512x512",
               type: "image/png",
               purpose: "maskable",

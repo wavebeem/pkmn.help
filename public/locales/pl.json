@@ -70,6 +70,7 @@
     "chooseThird": "Wybierz Trzeci Typ",
     "takesXFrom": "Dostaje {{ x }} od",
     "abilityNames": {
+      "filter": "Filter",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",

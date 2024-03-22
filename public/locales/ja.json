@@ -47,7 +47,31 @@
     "chooseFirst": "１つ目のタイプ",
     "chooseSecond": "２つ目のタイプ",
     "chooseThird": "３つ目のタイプ",
-    "takesXFrom": "{{ x }}を受ける"
+    "takesXFrom": "{{ x }}を受ける",
+    "chooseAbility": "特性",
+    "chooseTeraType": "テラスタイプ",
+    "abilityNames": {
+      "none": "なし",
+      "filter": "フィルター",
+      "wonder_guard": "ふしぎなまもり",
+      "delta_stream": "デルタストリーム",
+      "fluffy": "もふもふ",
+      "purifying_salt": "きよめのしお",
+      "heatproof": "たいねつ",
+      "water_bubble": "すいほう",
+      "thick_fat": "あついしぼう",
+      "earth_eater": "どしょく",
+      "levitate": "ふゆう",
+      "flash_fire": "もらいび",
+      "well_baked_body": "こんがりボディ",
+      "dry_skin": "かんそうはだ",
+      "storm_drain": "よびみず",
+      "water_absorb": "ちょすい",
+      "sap_sipper": "そうしょく",
+      "lightning_rod": "ひらいしん",
+      "motor_drive": "でんきエンジン",
+      "volt_absorb": "ちくでん"
+    }
   },
   "pokedex": {
     "search": {

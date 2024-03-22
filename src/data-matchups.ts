@@ -210,15 +210,21 @@ export function matchupFor({
     }
     n *= x;
   }
-  // Wonder guard is magic
+  // Tera Pokémon take double damage from Stellar attacks
+  if (defenseTeraType !== Type.none && offenseType === Type.stellar) {
+    n *= 2;
+  }
+  // Wonder guard blocks all non-super effective damage
   if (abilityName === "wonder_guard") {
     if (n <= 1) {
       n = 0;
     }
   }
-  // Tera Pokémon take double damage from Stellar attacks
-  if (defenseTeraType !== Type.none && offenseType === Type.stellar) {
-    n *= 2;
+  // Filter reduces all super effective damage by 25%
+  if (abilityName === "filter") {
+    if (n > 1) {
+      n *= 0.75;
+    }
   }
   return n;
 }
