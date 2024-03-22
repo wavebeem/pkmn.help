@@ -44,8 +44,8 @@ defense.chooseFirst,Choose first type,１つ目のタイプ
 defense.chooseSecond,Choose second type,２つ目のタイプ
 defense.chooseThird,Choose third type,３つ目のタイプ
 defense.takesXFrom,Takes {{ x }} from,{{ x }}を受ける
-defense.chooseAbility,Choose ability,
-defense.chooseTeraType,Choose tera type,
+defense.chooseAbility,Choose ability,特性
+defense.chooseTeraType,Choose tera type,テラスタイプ
 defense.abilityNames.none,None,なし
 defense.abilityNames.filter,Filter,フィルター
 defense.abilityNames.wonder_guard,Wonder Guard,ふしぎなまもり

@@ -368,7 +368,7 @@ button {
 
 .subtle-hr {
   border: 0;
-  background: rgba(0, 0, 0, 0.05);
+  background: var(--color-border3);
   height: 1px;
 }
 
