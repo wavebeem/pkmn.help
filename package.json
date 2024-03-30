@@ -5,11 +5,11 @@
   "type": "module",
   "description": "The Pokémon Type Calculator (https://pkmn.help)",
   "scripts": {
-    "stellar-styles": "ts-node --esm ./bin/stellar-styles.ts",
-    "update-pokedex": "ts-node --esm ./bin/update-pokedex.ts",
-    "scrape-bulba": "ts-node --esm ./bin/scrape-bulba.ts",
-    "language-export": "ts-node --esm ./bin/language-export.ts",
-    "language-import": "ts-node --esm ./bin/language-import.ts",
+    "stellar-styles": "tsx ./bin/stellar-styles.ts",
+    "update-pokedex": "tsx ./bin/update-pokedex.ts",
+    "scrape-bulba": "tsx ./bin/scrape-bulba.ts",
+    "language-export": "tsx ./bin/language-export.ts",
+    "language-import": "tsx ./bin/language-import.ts",
     "i18n-scrape": "i18next",
     "upgrade": "npm-check -u",
     "start": "vite",
@@ -57,7 +57,6 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.3.1",
     "rimraf": "^3.0.2",
-    "ts-node": "^10.9.2",
     "typescript": "^5.3.3",
     "vite": "^5.1.3",
     "vite-plugin-pwa": "^0.19.0"
@@ -86,10 +85,8 @@
     "stylelint": "^14.15.0",
     "stylelint-config-standard": "^29.0.0",
     "tachyons": "^4.12.0",
+    "tsx": "^4.7.1",
     "use-debounce": "^7.0.0",
     "usehooks-ts": "^2.14.0"
-  },
-  "volta": {
-    "node": "16.20.0"
   }
 }

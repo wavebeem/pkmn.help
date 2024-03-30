@@ -1,5 +1,11 @@
 # Changelog
 
+## 2024-03-30
+
+- Fixed lack of line wrapping in Pokedex types in Russian
+
+- Fixed Pokeball icon in header being squished at certain screen sizes
+
 ## 2024-03-21
 
 - Added the ability "Filter" which reduces super effective damage by 25%

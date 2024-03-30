@@ -14,9 +14,9 @@ export interface StatsTableProps {
 
 export function StatsTable({ pokemon }: StatsTableProps) {
   const { hp, attack, defense, spAttack, spDefense, speed } = pokemon;
+  const total = hp + attack + defense + spAttack + spDefense + speed;
   const { t } = useTranslation();
   const hasRoomForFullText = useMediaQuery("(min-width: 600px)");
-
   return (
     <div className={`${styles.table} tabular-nums`}>
       <div
@@ -102,9 +102,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
           ? t("pokedex.stats.totalLong")
           : t("pokedex.stats.total")}
       </div>
-      <div className="tr" style={{ height: 26 }}>
-        {hp + attack + defense + spAttack + spDefense + speed}
-      </div>
+      <div className="tr">{total}</div>
       <div />
     </div>
   );
