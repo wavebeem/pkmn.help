@@ -348,13 +348,6 @@ export function ScreenMore({
           >
             Modern CSV
           </a>
-          ,{" "}
-          <a
-            className="br1 underline fg-link focus-outline"
-            href="https://www.editcsvonline.com/"
-          >
-            editCSVonline
-          </a>
           , and many other apps.
         </p>
         <p>

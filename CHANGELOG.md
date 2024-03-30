@@ -12,6 +12,10 @@
 
 - Fixed Pokeball icon in the header being squished at certain screen sizes
 
+- Removed "editCSVonline" from list of CSV apps
+
+  - It doesn't handle items with commas correctly :(
+
 ## 2024-03-21
 
 - Added the ability "Filter" which reduces super effective damage by 25%
