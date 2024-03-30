@@ -6,6 +6,8 @@
 
 - Fixed Pokeball icon in header being squished at certain screen sizes
 
+- Improved the style of the easter egg when clicking the Pokeball in the header
+
 ## 2024-03-21
 
 - Added the ability "Filter" which reduces super effective damage by 25%
