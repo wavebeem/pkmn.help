@@ -5618,7 +5618,8 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "tauros-paldea-blaze-breed",
@@ -5652,7 +5653,8 @@
       "fighting",
       "fire"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "tauros-paldea-aqua-breed",
@@ -5686,7 +5688,8 @@
       "fighting",
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "magikarp",
@@ -8134,7 +8137,8 @@
       "poison",
       "ground"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "quagsire",
@@ -34715,7 +34719,8 @@
       "ground",
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "basculegion-male",
@@ -34950,7 +34955,8 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "floragato",
@@ -34979,7 +34985,8 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "meowscarada",
@@ -35009,7 +35016,8 @@
       "grass",
       "dark"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "fuecoco",
@@ -35038,7 +35046,8 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "crocalor",
@@ -35067,7 +35076,8 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "skeledirge",
@@ -35097,7 +35107,8 @@
       "fire",
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "quaxly",
@@ -35126,7 +35137,8 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "quaxwell",
@@ -35155,7 +35167,8 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "quaquaval",
@@ -35185,7 +35198,8 @@
       "water",
       "fighting"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "lechonk",
@@ -35214,7 +35228,8 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "oinkologne",
@@ -35247,7 +35262,8 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "oinkologne-female",
@@ -35265,9 +35281,9 @@
       "zh-Hans": "飘香豚"
     },
     "formNames": {
+      "ja": "メスのすがた",
       "ja-Hrkt": "メスのすがた",
-      "en": "Female",
-      "ja": "メスのすがた"
+      "en": "Female"
     },
     "number": 916,
     "hp": 115,
@@ -35280,7 +35296,8 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "tarountula",
@@ -35309,7 +35326,8 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "spidops",
@@ -35338,7 +35356,8 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "nymble",
@@ -35367,7 +35386,8 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "lokix",
@@ -35397,7 +35417,8 @@
       "bug",
       "dark"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "pawmi",
@@ -35426,7 +35447,8 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "pawmo",
@@ -35456,7 +35478,8 @@
       "electric",
       "fighting"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "pawmot",
@@ -35486,7 +35509,8 @@
       "electric",
       "fighting"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "tandemaus",
@@ -35515,7 +35539,8 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "maushold",
@@ -35548,7 +35573,8 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "fidough",
@@ -35577,7 +35603,8 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "dachsbun",
@@ -35606,7 +35633,8 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "smoliv",
@@ -35636,7 +35664,8 @@
       "grass",
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "dolliv",
@@ -35666,7 +35695,8 @@
       "grass",
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "arboliva",
@@ -35696,7 +35726,8 @@
       "grass",
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "squawkabilly",
@@ -35730,7 +35761,8 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "nacli",
@@ -35759,7 +35791,8 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "naclstack",
@@ -35788,7 +35821,8 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "garganacl",
@@ -35817,7 +35851,8 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "charcadet",
@@ -35846,7 +35881,8 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "armarouge",
@@ -35876,7 +35912,8 @@
       "fire",
       "psychic"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "ceruledge",
@@ -35906,7 +35943,8 @@
       "fire",
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "tadbulb",
@@ -35935,7 +35973,8 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "bellibolt",
@@ -35964,7 +36003,8 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "wattrel",
@@ -35994,7 +36034,8 @@
       "electric",
       "flying"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "kilowattrel",
@@ -36024,7 +36065,8 @@
       "electric",
       "flying"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "maschiff",
@@ -36053,7 +36095,8 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "mabosstiff",
@@ -36082,7 +36125,8 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "shroodle",
@@ -36112,7 +36156,8 @@
       "poison",
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "grafaiai",
@@ -36142,7 +36187,8 @@
       "poison",
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "bramblin",
@@ -36172,7 +36218,8 @@
       "grass",
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "brambleghast",
@@ -36202,7 +36249,8 @@
       "grass",
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "toedscool",
@@ -36232,7 +36280,8 @@
       "ground",
       "grass"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "toedscruel",
@@ -36262,7 +36311,8 @@
       "ground",
       "grass"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "klawf",
@@ -36291,7 +36341,8 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "capsakid",
@@ -36320,7 +36371,8 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "scovillain",
@@ -36350,7 +36402,8 @@
       "grass",
       "fire"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "rellor",
@@ -36379,7 +36432,8 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "rabsca",
@@ -36409,7 +36463,8 @@
       "bug",
       "psychic"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "flittle",
@@ -36438,7 +36493,8 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "espathra",
@@ -36467,7 +36523,8 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "tinkatink",
@@ -36497,7 +36554,8 @@
       "fairy",
       "steel"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "tinkatuff",
@@ -36527,7 +36585,8 @@
       "fairy",
       "steel"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "tinkaton",
@@ -36557,7 +36616,8 @@
       "fairy",
       "steel"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "wiglett",
@@ -36586,7 +36646,8 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "wugtrio",
@@ -36615,7 +36676,8 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "bombirdier",
@@ -36645,7 +36707,8 @@
       "flying",
       "dark"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "finizen",
@@ -36674,7 +36737,8 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "palafin",
@@ -36707,7 +36771,8 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "palafin-hero",
@@ -36740,7 +36805,8 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "varoom",
@@ -36770,7 +36836,8 @@
       "steel",
       "poison"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "revavroom",
@@ -36800,7 +36867,8 @@
       "steel",
       "poison"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "cyclizar",
@@ -36830,7 +36898,8 @@
       "dragon",
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "orthworm",
@@ -36859,7 +36928,8 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "glimmet",
@@ -36889,7 +36959,8 @@
       "rock",
       "poison"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "glimmora",
@@ -36919,7 +36990,8 @@
       "rock",
       "poison"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "greavard",
@@ -36948,7 +37020,8 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "houndstone",
@@ -36977,7 +37050,8 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "flamigo",
@@ -37007,7 +37081,8 @@
       "flying",
       "fighting"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "cetoddle",
@@ -37036,7 +37111,8 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "cetitan",
@@ -37065,7 +37141,8 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "veluza",
@@ -37095,7 +37172,8 @@
       "water",
       "psychic"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "dondozo",
@@ -37124,7 +37202,8 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "tatsugiri",
@@ -37158,7 +37237,8 @@
       "dragon",
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "annihilape",
@@ -37188,7 +37268,8 @@
       "fighting",
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "clodsire",
@@ -37218,7 +37299,8 @@
       "poison",
       "ground"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "farigiraf",
@@ -37248,7 +37330,8 @@
       "normal",
       "psychic"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "dudunsparce",
@@ -37281,7 +37364,8 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "kingambit",
@@ -37311,7 +37395,8 @@
       "dark",
       "steel"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "great-tusk",
@@ -37341,7 +37426,8 @@
       "ground",
       "fighting"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "scream-tail",
@@ -37371,7 +37457,8 @@
       "fairy",
       "psychic"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "brute-bonnet",
@@ -37401,7 +37488,8 @@
       "grass",
       "dark"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "flutter-mane",
@@ -37431,7 +37519,8 @@
       "ghost",
       "fairy"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "slither-wing",
@@ -37461,7 +37550,8 @@
       "bug",
       "fighting"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "sandy-shocks",
@@ -37491,7 +37581,8 @@
       "electric",
       "ground"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "iron-treads",
@@ -37521,7 +37612,8 @@
       "ground",
       "steel"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "iron-bundle",
@@ -37551,7 +37643,8 @@
       "ice",
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "iron-hands",
@@ -37581,7 +37674,8 @@
       "fighting",
       "electric"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "iron-jugulis",
@@ -37611,7 +37705,8 @@
       "dark",
       "flying"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "iron-moth",
@@ -37641,7 +37736,8 @@
       "fire",
       "poison"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "iron-thorns",
@@ -37671,7 +37767,8 @@
       "rock",
       "electric"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "frigibax",
@@ -37701,7 +37798,8 @@
       "dragon",
       "ice"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "arctibax",
@@ -37731,7 +37829,8 @@
       "dragon",
       "ice"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "baxcalibur",
@@ -37761,7 +37860,8 @@
       "dragon",
       "ice"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "gimmighoul",
@@ -37794,7 +37894,8 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "gimmighoul-roaming",
@@ -37827,7 +37928,8 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "gholdengo",
@@ -37857,7 +37959,8 @@
       "steel",
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "wo-chien",
@@ -37887,7 +37990,8 @@
       "dark",
       "grass"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "chien-pao",
@@ -37917,7 +38021,8 @@
       "dark",
       "ice"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "ting-lu",
@@ -37947,7 +38052,8 @@
       "dark",
       "ground"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "chi-yu",
@@ -37977,7 +38083,8 @@
       "dark",
       "fire"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "roaring-moon",
@@ -38007,7 +38114,8 @@
       "dragon",
       "dark"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "iron-valiant",
@@ -38037,7 +38145,8 @@
       "fairy",
       "fighting"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "koraidon",
@@ -38071,7 +38180,8 @@
       "fighting",
       "dragon"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "miraidon",
@@ -38105,7 +38215,8 @@
       "electric",
       "dragon"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "walking-wake",
@@ -38196,7 +38307,8 @@
       "grass",
       "dragon"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "poltchageist",
@@ -38212,7 +38324,18 @@
       "ja": "チャデス",
       "zh-Hans": "斯魔茶"
     },
-    "formNames": {},
+    "formNames": {
+      "ja-Hrkt": "マガイモノのすがた",
+      "ko": "가짜배기의 모습",
+      "zh-Hant": "冒牌貨的樣子",
+      "fr": "Forme Imitation",
+      "de": "Imitationsform",
+      "es": "Forma Fraudulenta",
+      "it": "Forma Taroccata",
+      "en": "Counterfeit Form",
+      "ja": "マガイモノのすがた",
+      "zh-Hans": "高檔貨的樣子"
+    },
     "number": 1012,
     "hp": 40,
     "attack": 45,
@@ -38225,7 +38348,8 @@
       "grass",
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "sinistcha",
@@ -38241,7 +38365,18 @@
       "ja": "ヤバソチャ",
       "zh-Hans": "来悲粗茶"
     },
-    "formNames": {},
+    "formNames": {
+      "ja-Hrkt": "ボンサクのすがた",
+      "ko": "범작의 모습",
+      "zh-Hant": "凡作的樣子",
+      "fr": "Forme Médiocre",
+      "de": "Simple Form",
+      "es": "Forma Mediocre",
+      "it": "Forma Dozzinale",
+      "en": "Unremarkable Form",
+      "ja": "ボンサクのすがた",
+      "zh-Hans": "凡作的样子"
+    },
     "number": 1013,
     "hp": 71,
     "attack": 60,
@@ -38254,7 +38389,8 @@
       "grass",
       "ghost"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "okidogi",
@@ -38283,7 +38419,8 @@
       "poison",
       "fighting"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "munkidori",
@@ -38312,7 +38449,8 @@
       "poison",
       "psychic"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "fezandipiti",
@@ -38341,7 +38479,8 @@
       "poison",
       "fairy"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "ogerpon",
@@ -38380,7 +38519,8 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "ogerpon-wellspring-mask",
@@ -38420,7 +38560,8 @@
       "grass",
       "water"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "ogerpon-hearthflame-mask",
@@ -38460,7 +38601,8 @@
       "grass",
       "fire"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "ogerpon-cornerstone-mask",
@@ -38500,7 +38642,8 @@
       "grass",
       "rock"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "archaludon",
@@ -38529,7 +38672,8 @@
       "steel",
       "dragon"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "hydrapple",
@@ -38558,7 +38702,8 @@
       "grass",
       "dragon"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "gouging-fire",
@@ -38587,7 +38732,8 @@
       "fire",
       "dragon"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "raging-bolt",
@@ -38616,7 +38762,8 @@
       "electric",
       "dragon"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "iron-boulder",
@@ -38645,7 +38792,8 @@
       "rock",
       "psychic"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "iron-crown",
@@ -38674,7 +38822,8 @@
       "steel",
       "psychic"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "terapagos",
@@ -38709,7 +38858,8 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "terapagos-terastal",
@@ -38745,7 +38895,8 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite"
+    "imageType": "sprite",
+    "hasShiny": true
   },
   {
     "name": "pecharunt",
