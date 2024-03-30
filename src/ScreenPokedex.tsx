@@ -142,7 +142,7 @@ function Monster({ pokemon }: MonsterProps) {
                 shiny={shiny}
               />
             </div>
-            <div className="flex gap1 justify-center">
+            <div className="flex flex-wrap gap1 justify-center items-start">
               {pokemon.types.map((t, i) => (
                 <Badge key={i} type={t} />
               ))}

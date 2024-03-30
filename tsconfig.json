@@ -17,9 +17,5 @@
     "allowUmdGlobalAccess": false,
     "types": ["vite-plugin-pwa/client"]
   },
-  "include": ["src", "bin"],
-  "ts-node": {
-    "esm": true,
-    "experimentalSpecifierResolution": "node"
-  }
+  "include": ["src", "bin"]
 }

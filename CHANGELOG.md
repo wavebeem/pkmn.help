@@ -1,5 +1,17 @@
 # Changelog
 
+## 2024-03-30
+
+- Improved the style of the easter egg when clicking the Pokeball in the header
+
+- Added lots of missing shiny forms
+
+  - The images are kind of low quality, but it's better than nothing!
+
+- Fixed lack of line wrapping in Pokedex types in Russian
+
+- Fixed Pokeball icon in the header being squished at certain screen sizes
+
 ## 2024-03-21
 
 - Added the ability "Filter" which reduces super effective damage by 25%

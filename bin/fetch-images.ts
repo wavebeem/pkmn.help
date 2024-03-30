@@ -4,7 +4,7 @@ import fetch from "node-fetch";
 import path from "path";
 import { readJSON, saveJSON } from "./util.js";
 
-const SRC = "data/merged-pokemon.json";
+const SRC = "data/pokemon.json";
 const IMG_DEST = "public/img";
 const DATA_DEST = "public/data-pkmn.json";
 

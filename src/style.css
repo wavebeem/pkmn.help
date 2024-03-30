@@ -3,18 +3,15 @@
 
 @font-face {
   font-family: "Roboto";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
   src: url("/fonts/roboto-regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Roboto";
-  font-style: normal;
-  font-display: swap;
-  font-weight: 500 700;
   src: url("/fonts/roboto-medium.woff2") format("woff2");
+  font-weight: 500 700;
+  font-display: swap;
 }
 
 :root {
