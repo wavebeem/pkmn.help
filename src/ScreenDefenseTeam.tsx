@@ -24,6 +24,7 @@ import { useSearch } from "./useSearch";
 import { useTypeCount } from "./useTypeCount";
 import { Badge } from "./Badge";
 import { useSessionStorage } from "usehooks-ts";
+import { CopyButton } from "./CopyButton";
 
 const classH2 = "f4 weight-medium mb2 mt4";
 
@@ -95,10 +96,8 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
   useScrollToFragment();
 
   const { t } = useTranslation();
-
   const search = useSearch();
   const navigate = useNavigate();
-
   const [format, setFormat] = useSessionStorage<MatchupsTeamProps["format"]>(
     "defense-team.format",
     "simple"
@@ -115,32 +114,36 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
     "defense-team.abilities",
     []
   );
-
   const [typeCount] = useTypeCount();
-
   const [teamIndex, setTeamIndex] = React.useState(-1);
 
   React.useEffect(() => {
     if (search.has("format")) {
       setFormat((search.get("format") || "simple") as any);
     }
-    if (search.has("team_types")) {
+    if (search.has("types")) {
+      console.log(
+        "SET TEAM TYPES???",
+        search.getAll("types").map((type) => {
+          return typesFromString(type).slice(0, Number(typeCount));
+        })
+      );
       setTeamTypes(
-        search.getAll("team_types").map((t) => {
-          return typesFromString(t).slice(0, Number(typeCount));
+        search.getAll("types").map((type) => {
+          return typesFromString(type).slice(0, Number(typeCount));
         })
       );
     }
-    if (search.has("team_types")) {
+    if (search.has("tera")) {
       setTeamTeraTypes(
-        search.getAll("team_tera_types").map((t) => {
-          return typesFromString(t)[0];
+        search.getAll("tera").map((type) => {
+          return typesFromString(type)[0];
         })
       );
     }
-    if (search.has("team_abilities")) {
+    if (search.has("abilities")) {
       setTeamAbilities(
-        (search.get("team_abilities") || "")
+        (search.get("abilities") || "")
           .split(/\s+/)
           .filter((str) => str)
           .map(abilityNameFromString)
@@ -150,12 +153,11 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
   }, []);
 
   React.useEffect(() => {
-    setTeamTypes(
-      teamTypes.map((t) =>
-        removeInvalidDefenseTypesForGeneration(generation, t)
-      )
-    );
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    setTeamTypes((teamTypes) => {
+      return teamTypes.map((type) => {
+        return removeInvalidDefenseTypesForGeneration(generation, type);
+      });
+    });
   }, [generation]);
 
   function updateTeamTypesAt(
@@ -176,17 +178,14 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
 
   const permalink = new URL(location.href);
   {
-    if (types.length >= 0) {
-      permalink.searchParams.set("types", types.join(" "));
-    }
     for (const types of teamTypes) {
-      permalink.searchParams.append("team_types", types.join(" "));
+      permalink.searchParams.append("types", types.join(" "));
     }
     for (const type of teamTeraTypes) {
-      permalink.searchParams.append("team_tera_types", type);
+      permalink.searchParams.append("tera", type);
     }
     if (teamAbilities.length > 0) {
-      permalink.searchParams.append("team_abilities", teamAbilities.join(" "));
+      permalink.searchParams.append("abilities", teamAbilities.join(" "));
     }
     permalink.searchParams.set("format", format);
   }
@@ -389,6 +388,9 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
           >
             {t("defense.team.add")}
           </Button>
+        </div>
+        <div className="pt4">
+          <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
         </div>
       </div>
       <div className="flex-auto w-50-l pl5-l">

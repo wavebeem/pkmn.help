@@ -194,9 +194,7 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
           </Select>
         </div>
         <div className="pt4">
-          <CopyButton text={permalink.href}>
-            {t("defense.permalink")}
-          </CopyButton>
+          <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
         </div>
       </div>
       <div className="flex-auto w-50-ns pl5-ns">

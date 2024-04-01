@@ -73,7 +73,6 @@
     "takesXFrom": "Takes {{ x }} from",
     "chooseAbility": "Choose ability",
     "chooseTeraType": "Choose tera type",
-    "permalink": "Copy link",
     "abilityNames": {
       "none": "None",
       "filter": "Filter",
@@ -300,7 +299,8 @@
     }
   },
   "general": {
-    "loading": "Loading…"
+    "loading": "Loading…",
+    "copyLink": "Copy link"
   },
   "games": {
     "label": "Game generation",
