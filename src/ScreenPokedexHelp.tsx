@@ -3,11 +3,9 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { IconArrowLeft } from "./IconArrows";
 
-interface ScreenPokedexHelpProps {
-  pokedexParams: string;
-}
+interface ScreenPokedexHelpProps {}
 
-export function ScreenPokedexHelp({ pokedexParams }: ScreenPokedexHelpProps) {
+export function ScreenPokedexHelp({}: ScreenPokedexHelpProps) {
   const { t } = useTranslation();
   const classH2 = "lh-title f4 weight-medium";
   return (
@@ -44,10 +42,7 @@ export function ScreenPokedexHelp({ pokedexParams }: ScreenPokedexHelpProps) {
 
       <p className="flex gap1 items-center">
         <IconArrowLeft className="w1 h1" aria-hidden="true" />
-        <Link
-          to={`/pokedex/${pokedexParams}`}
-          className="underline fg-link br1 focus-outline"
-        >
+        <Link to="/pokedex/" className="underline fg-link br1 focus-outline">
           {t("pokedexHelp.back")}
         </Link>
       </p>

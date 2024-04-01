@@ -1,5 +1,13 @@
 # Changelog
 
+## 2024-03-31
+
+- Cleaned up messy URLs
+
+  - You can copy a link to the current page if you want to share it with someone else
+
+- Simplified the Pokéball easter egg visual a little bit
+
 ## 2024-03-30
 
 - Improved the style of the easter egg when clicking the Pokeball in the header

@@ -17,6 +17,7 @@ import { IconSparkles } from "./IconSparkles";
 import styles from "./ScreenPokedex.module.css";
 import Spinner from "./Spinner";
 import { Badge } from "./Badge";
+import { useSessionStorage } from "usehooks-ts";
 
 const nbsp = "\u00a0";
 
@@ -187,22 +188,25 @@ function Monster({ pokemon }: MonsterProps) {
 
 interface ScreenPokedexProps {
   allPokemon: Pokemon[];
-  setPokedexParams: (params: string) => void;
   isLoading: boolean;
 }
 
-export function ScreenPokedex({
-  allPokemon,
-  setPokedexParams,
-  isLoading,
-}: ScreenPokedexProps) {
+export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
   const { t, i18n } = useTranslation();
   const { language } = i18n;
   const search = useSearch();
-  const navigate = useNavigate();
-  const query = search.get("q") || "";
+  const [query, setQuery] = useSessionStorage("pokedex.query", "");
   const [debouncedQuery] = useDebounce(query, 500);
-  const page = Number(search.get("page") || 1) - 1;
+  const [page, setPage] = useSessionStorage<number>("pokedex.page", 0);
+
+  React.useEffect(() => {
+    if (search.has("q")) {
+      setQuery(search.get("q") || "");
+    }
+    if (search.has("page")) {
+      setPage(Number(search.get("page") || 1) - 1);
+    }
+  }, []);
 
   const searchablePkmn = React.useMemo(() => {
     return allPokemon.map((p) => {
@@ -254,23 +258,14 @@ export function ScreenPokedex({
     return "?" + params;
   }
 
-  function update(newQuery: string, newPage: number) {
-    const params = createParams(newQuery, newPage);
-    navigate({ search: params }, { replace: true });
-  }
-
-  const params = createParams(query, page);
-  React.useEffect(() => {
-    setPokedexParams(params);
-  }, [params]);
-
   return (
     <main className="ph3 mt3 center content-narrow">
       <div className="pt2" />
       <Search
         search={query}
         updateSearch={(newQuery) => {
-          update(newQuery, 0);
+          setQuery(newQuery);
+          setPage(0);
         }}
       />
       <div className="flex justify-between ph2 nt2 pb3 bb border3 f6">
@@ -289,10 +284,8 @@ export function ScreenPokedex({
         <Spinner />
       ) : (
         <Paginator
-          currentPage={page}
-          urlForPage={(newPage) => {
-            return createParams(query, newPage);
-          }}
+          currentPage={Number(page)}
+          setPage={setPage}
           pageSize={20}
           emptyState={
             <p className="fg4 f4 tc m0">{t("pokedex.search.notFound")}</p>

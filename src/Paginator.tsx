@@ -8,13 +8,13 @@ import {
   IconArrowRight,
   IconArrowRightDouble,
 } from "./IconArrows";
-import { LinkButton } from "./LinkButton";
+import { Button } from "./Button";
 
 interface PageSelectorProps<T> {
   numPages: number;
   pageItems: T[];
   currentPage: number;
-  urlForPage: (page: number) => string;
+  setPage: (page: number) => void;
   hasPrev: boolean;
   hasNext: boolean;
   renderID: (item: T) => any;
@@ -24,7 +24,7 @@ function PageSelector<T>({
   numPages,
   pageItems,
   currentPage,
-  urlForPage,
+  setPage,
   hasPrev,
   hasNext,
   renderID,
@@ -68,18 +68,18 @@ function PageSelector<T>({
           pageItems.length === 0 ? "dn" : "flex"
         )}
       >
-        <LinkButton
+        <Button
           disabled={!hasPrev}
-          to={urlForPage(0)}
+          onClick={() => setPage(0)}
           title={t("pokedex.pagination.firstLong")}
           aria-label={t("pokedex.pagination.firstLong")}
           className="flex items-center"
         >
           <IconArrowLeftDouble className="w1 h1" aria-hidden="true" />
-        </LinkButton>
-        <LinkButton
+        </Button>
+        <Button
           disabled={!hasPrev}
-          to={urlForPage(currentPage - 1)}
+          onClick={() => setPage(currentPage - 1)}
           title={t("pokedex.pagination.previousLong")}
           aria-label={t("pokedex.pagination.previousLong")}
           className="flex items-center gap1"
@@ -87,11 +87,11 @@ function PageSelector<T>({
           <IconArrowLeft className="w1 h1" aria-hidden="true" />
           {buttonSize === "medium" && t("pokedex.pagination.previous")}
           {buttonSize === "large" && t("pokedex.pagination.previousLong")}
-        </LinkButton>
+        </Button>
         <div aria-hidden="true" className="flex-auto" />
-        <LinkButton
+        <Button
           disabled={!hasNext}
-          to={urlForPage(currentPage + 1)}
+          onClick={() => setPage(currentPage + 1)}
           title={t("pokedex.pagination.nextLong")}
           aria-label={t("pokedex.pagination.nextLong")}
           className="flex items-center gap1"
@@ -99,23 +99,23 @@ function PageSelector<T>({
           {buttonSize === "medium" && t("pokedex.pagination.next")}
           {buttonSize === "large" && t("pokedex.pagination.nextLong")}
           <IconArrowRight className="w1 h1" aria-hidden="true" />
-        </LinkButton>
-        <LinkButton
+        </Button>
+        <Button
           disabled={!hasNext}
-          to={urlForPage(numPages - 1)}
+          onClick={() => setPage(numPages - 1)}
           title={t("pokedex.pagination.lastLong")}
           aria-label={t("pokedex.pagination.lastLong")}
           className="flex items-center"
         >
           <IconArrowRightDouble className="w1 h1" aria-hidden="true" />
-        </LinkButton>
+        </Button>
       </div>
     </>
   );
 }
 
 interface PaginatorProps<T> {
-  urlForPage: (page: number) => string;
+  setPage: (page: number) => void;
   currentPage: number;
   pageSize: number;
   emptyState: any;
@@ -125,7 +125,7 @@ interface PaginatorProps<T> {
 }
 
 export function Paginator<T>({
-  urlForPage,
+  setPage,
   currentPage,
   pageSize,
   emptyState,
@@ -146,7 +146,7 @@ export function Paginator<T>({
         hasPrev={hasPrev}
         hasNext={hasNext}
         currentPage={currentPage}
-        urlForPage={urlForPage}
+        setPage={setPage}
         renderID={renderID}
       />
       {pageItems.length === 0 ? emptyState : renderPage(pageItems)}
@@ -156,7 +156,7 @@ export function Paginator<T>({
         hasPrev={hasPrev}
         hasNext={hasNext}
         currentPage={currentPage}
-        urlForPage={urlForPage}
+        setPage={setPage}
         renderID={renderID}
       />
     </div>
