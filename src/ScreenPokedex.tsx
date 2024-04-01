@@ -261,6 +261,9 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
         );
       });
     }
+    if (!s) {
+      return searchablePkmn;
+    }
     return matchSorter(searchablePkmn, s, {
       keys: ["speciesName", "formName", "number"],
     });
