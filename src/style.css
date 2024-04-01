@@ -46,65 +46,68 @@
   --type-text-shadow: 0 1px 0 black, 0 0 1px rgb(0 0 0 / 60%),
     0 0 2px rgb(0 0 0 / 70%), 0 0 3px rgb(0 0 0 / 80%), 0 0 4px rgb(0 0 0 / 90%);
 
-  /* Created bey stellar-styles.ts */
+  /* Created by stellar-styles.ts */
   --stellar-background-linear: linear-gradient(
     -225deg,
-    hsl(0 100% 50%) 0 calc(6.25% + 1px),
-    hsl(22.5 100% 50%) calc(6.25% - 1px) calc(12.5% + 1px),
-    hsl(45 100% 50%) calc(12.5% - 1px) calc(18.75% + 1px),
-    hsl(67.5 100% 50%) calc(18.75% - 1px) calc(25% + 1px),
-    hsl(90 100% 50%) calc(25% - 1px) calc(31.25% + 1px),
-    hsl(112.5 100% 50%) calc(31.25% - 1px) calc(37.5% + 1px),
-    hsl(135 100% 50%) calc(37.5% - 1px) calc(43.75% + 1px),
-    hsl(157.5 100% 50%) calc(43.75% - 1px) calc(50% + 1px),
-    hsl(180 100% 50%) calc(50% - 1px) calc(56.25% + 1px),
-    hsl(202.5 100% 50%) calc(56.25% - 1px) calc(62.5% + 1px),
-    hsl(225 100% 50%) calc(62.5% - 1px) calc(68.75% + 1px),
-    hsl(247.5 100% 50%) calc(68.75% - 1px) calc(75% + 1px),
-    hsl(270 100% 50%) calc(75% - 1px) calc(81.25% + 1px),
-    hsl(292.5 100% 50%) calc(81.25% - 1px) calc(87.5% + 1px),
-    hsl(315 100% 50%) calc(87.5% - 1px) calc(93.75% + 1px)
+    hsl(0 100% 55%),
+    hsl(22.5 100% 55%),
+    hsl(45 100% 55%),
+    hsl(67.5 100% 55%),
+    hsl(90 100% 55%),
+    hsl(112.5 100% 55%),
+    hsl(135 100% 55%),
+    hsl(157.5 100% 55%),
+    hsl(180 100% 55%),
+    hsl(202.5 100% 55%),
+    hsl(225 100% 55%),
+    hsl(247.5 100% 55%),
+    hsl(270 100% 55%),
+    hsl(292.5 100% 55%),
+    hsl(315 100% 55%),
+    hsl(337.5 100% 55%)
   );
   --stellar-background-conic: conic-gradient(
-    hsl(0 100% 50%) 0deg 18.5deg,
-    hsl(22.5 100% 50%) 22.5deg 41deg,
-    hsl(45 100% 50%) 45deg 63.5deg,
-    hsl(67.5 100% 50%) 67.5deg 86deg,
-    hsl(90 100% 50%) 90deg 108.5deg,
-    hsl(112.5 100% 50%) 112.5deg 131deg,
-    hsl(135 100% 50%) 135deg 153.5deg,
-    hsl(157.5 100% 50%) 157.5deg 176deg,
-    hsl(180 100% 50%) 180deg 198.5deg,
-    hsl(202.5 100% 50%) 202.5deg 221deg,
-    hsl(225 100% 50%) 225deg 243.5deg,
-    hsl(247.5 100% 50%) 247.5deg 266deg,
-    hsl(270 100% 50%) 270deg 288.5deg,
-    hsl(292.5 100% 50%) 292.5deg 311deg,
-    hsl(315 100% 50%) 315deg 333.5deg
+    hsl(0 90% 50%),
+    hsl(22.5 90% 50%),
+    hsl(45 90% 50%),
+    hsl(67.5 90% 50%),
+    hsl(90 90% 50%),
+    hsl(112.5 90% 50%),
+    hsl(135 90% 50%),
+    hsl(157.5 90% 50%),
+    hsl(180 90% 50%),
+    hsl(202.5 90% 50%),
+    hsl(225 90% 50%),
+    hsl(247.5 90% 50%),
+    hsl(270 90% 50%),
+    hsl(292.5 90% 50%),
+    hsl(315 90% 50%),
+    hsl(337.5 90% 50%)
   );
   --stellar-background-dark: linear-gradient(
     -225deg,
-    hsl(0 100% 20%) 0 calc(6.25% + 1px),
-    hsl(22.5 100% 20%) calc(6.25% - 1px) calc(12.5% + 1px),
-    hsl(45 100% 20%) calc(12.5% - 1px) calc(18.75% + 1px),
-    hsl(67.5 100% 20%) calc(18.75% - 1px) calc(25% + 1px),
-    hsl(90 100% 20%) calc(25% - 1px) calc(31.25% + 1px),
-    hsl(112.5 100% 20%) calc(31.25% - 1px) calc(37.5% + 1px),
-    hsl(135 100% 20%) calc(37.5% - 1px) calc(43.75% + 1px),
-    hsl(157.5 100% 20%) calc(43.75% - 1px) calc(50% + 1px),
-    hsl(180 100% 20%) calc(50% - 1px) calc(56.25% + 1px),
-    hsl(202.5 100% 20%) calc(56.25% - 1px) calc(62.5% + 1px),
-    hsl(225 100% 20%) calc(62.5% - 1px) calc(68.75% + 1px),
-    hsl(247.5 100% 20%) calc(68.75% - 1px) calc(75% + 1px),
-    hsl(270 100% 20%) calc(75% - 1px) calc(81.25% + 1px),
-    hsl(292.5 100% 20%) calc(81.25% - 1px) calc(87.5% + 1px),
-    hsl(315 100% 20%) calc(87.5% - 1px) calc(93.75% + 1px)
+    hsl(0 80% 20%),
+    hsl(22.5 80% 20%),
+    hsl(45 80% 20%),
+    hsl(67.5 80% 20%),
+    hsl(90 80% 20%),
+    hsl(112.5 80% 20%),
+    hsl(135 80% 20%),
+    hsl(157.5 80% 20%),
+    hsl(180 80% 20%),
+    hsl(202.5 80% 20%),
+    hsl(225 80% 20%),
+    hsl(247.5 80% 20%),
+    hsl(270 80% 20%),
+    hsl(292.5 80% 20%),
+    hsl(315 80% 20%),
+    hsl(337.5 80% 20%)
   );
 
   font-family: var(--font-sans);
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
   overflow-y: scroll;
-  color-scheme: dark light;
+  color-scheme: light;
 }
 
 :root[lang="pl"],
@@ -135,6 +138,35 @@
   --color-vibrant-border1: hsl(0 0% 100% / 0.8);
   --color-scroll-fg: hsl(220 20% 70%);
   --color-scroll-bg: hsl(220 20% 15%);
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root[data-theme="auto"] {
+    --color-bg1: hsl(220 20% 25%);
+    --color-bg2: hsl(220 20% 20%);
+    --color-bg3: hsl(220 20% 30%);
+    --color-fg1: hsl(220 20% 90%);
+    --color-fg2: hsl(220 20% 80%);
+    --color-fg3: hsl(220 20% 70%);
+    --color-fg4: hsl(220 20% 60%);
+    --color-pokeball: hsl(0 70% 40%);
+    --color-button1: hsl(220 20% 28%);
+    --color-button1b: hsl(220 20% 24%);
+    --color-button-hover1: hsl(220 20% 32%);
+    --color-button-hover1b: hsl(220 20% 28%);
+    --color-badge: hsl(120 60% 60%);
+    --color-link: hsl(180 100% 70%);
+    --color-link-hover: hsl(180 80% 95%);
+    --color-border1: hsl(220 20% 55%);
+    --color-border2: hsl(220 20% 35%);
+    --color-border3: hsl(220 20% 30%);
+    --color-vibrant-border: hsl(0 0% 100% / 0.4);
+    --color-vibrant-border1: hsl(0 0% 100% / 0.8);
+    --color-scroll-fg: hsl(220 20% 70%);
+    --color-scroll-bg: hsl(220 20% 15%);
+    color-scheme: dark;
+  }
 }
 
 [hidden] {

@@ -168,7 +168,7 @@
     },
     "searchByNumber": {
       "heading": "Search by number",
-      "description": "Search by national dex number. If you want Bulbsaur, just type 1, not #001."
+      "description": "Search by national dex number. If you want Bulbasaur, just type 1, not #001."
     },
     "searchByType": {
       "heading": "Search by type",
@@ -201,6 +201,8 @@
       "language": {
         "label": "Language",
         "default": "Auto detect language",
+        "official": "Official languages",
+        "unofficial": "Unofficial languages",
         "helpText": "Language support is incomplete. Please email me, I will pay you to translate."
       },
       "theme": {

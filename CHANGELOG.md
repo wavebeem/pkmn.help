@@ -1,6 +1,20 @@
 # Changelog
 
-## 2024-03-31
+## 2024-04-01
+
+- Made the Stellar type less visually distracting and easier to read
+
+- Added the ability to click on Pokédex links to direct link to a Pokémon
+
+- Simplified the Pokéball easter egg visual a little bit
+
+- Removed the flash of white when loading the page in dark mode
+
+- Fixed a bug where clicking "Defense" from a Pokémon in the Pokédex didn't reset abilities and tera types to none
+
+- The language selector is now clearly grouped and less visually confusing
+
+- Clearing the search field in the Pokédex screen no longer focuses the text field
 
 - Cleaned up messy URLs & added session storage support
 
@@ -9,12 +23,6 @@
   - If you refresh the page or duplicate a tab, you'll notice that your current information is preserved (Pokédex search query, page number, offense types selected, defense types selected)
 
   - I also changed the defense team storage to be session based so you can look at different teams in different tabs
-
-- Added the ability to click on Pokédex links to direct link to a Pokémon
-
-- Simplified the Pokéball easter egg visual a little bit
-
-- Fixed a bug where clicking "Defense" from a Pokémon in the Pokédex didn't reset abilities and tera types to none
 
 ## 2024-03-30
 

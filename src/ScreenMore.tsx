@@ -115,12 +115,8 @@ export function formatLanguageCompletion(lang: string): string {
   return `${n}%`;
 }
 
-function joinStrings(strings: (string | undefined)[]): string {
-  return strings.filter((x) => x).join(` ${ndash} `);
-}
-
 function showLang(lang: Lang): string {
-  return joinStrings([languageNamesNative[lang], languageNamesEnglish[lang]]);
+  return languageNamesNative[lang];
 }
 
 export function ScreenMore({
@@ -239,32 +235,35 @@ export function ScreenMore({
             i18n.changeLanguage(language);
           }}
         >
-          <option value="">
-            {t("more.settings.language.default")} &ndash; {showLang(autoLang)}{" "}
-            &ndash; {formatLanguageCompletion(autoLang)}
-          </option>
-          <hr />
-          {officialLanguages.map((lang) => {
-            if (!isLang(lang)) {
-              throw new Error(`${lang} is not a valid language`);
-            }
-            return (
-              <option value={lang} key={lang}>
-                {showLang(lang)} ({formatLanguageCompletion(lang)})
-              </option>
-            );
-          })}
-          <hr />
-          {unofficialLanguages.map((lang) => {
-            if (!isLang(lang)) {
-              throw new Error(`${lang} is not a valid language`);
-            }
-            return (
-              <option value={lang} key={lang}>
-                {showLang(lang)} ({formatLanguageCompletion(lang)})
-              </option>
-            );
-          })}
+          <optgroup label={t("more.settings.language.default")}>
+            <option value="">
+              * {showLang(autoLang)} ({formatLanguageCompletion(autoLang)})
+            </option>
+          </optgroup>
+          <optgroup label={t("more.settings.language.official")}>
+            {officialLanguages.map((lang) => {
+              if (!isLang(lang)) {
+                throw new Error(`${lang} is not a valid language`);
+              }
+              return (
+                <option value={lang} key={lang}>
+                  {showLang(lang)} ({formatLanguageCompletion(lang)})
+                </option>
+              );
+            })}
+          </optgroup>
+          <optgroup label={t("more.settings.language.unofficial")}>
+            {unofficialLanguages.map((lang) => {
+              if (!isLang(lang)) {
+                throw new Error(`${lang} is not a valid language`);
+              }
+              return (
+                <option value={lang} key={lang}>
+                  {showLang(lang)} ({formatLanguageCompletion(lang)})
+                </option>
+              );
+            })}
+          </optgroup>
         </Select>
 
         <Select

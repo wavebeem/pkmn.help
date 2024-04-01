@@ -299,7 +299,8 @@
     }
   },
   "general": {
-    "loading": "Chargement…"
+    "loading": "Chargement…",
+    "copyLink": "Copier le lien"
   },
   "games": {
     "label": "Génaration de jeu",
