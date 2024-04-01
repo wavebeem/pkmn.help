@@ -34,7 +34,7 @@ export function ScreenCoverageList({
   const offenseParams = new URLSearchParams({ types: types.join(" ") });
   return (
     <main className="pa3 center content-narrow">
-      <h2 className="lh-title f4 weight-medium">
+      <h2 className="lh-title f4 mv3 weight-medium">
         {t(`offense.coverageList.${mode}.heading`)}
       </h2>
       <p className="flex gap1 items-center">

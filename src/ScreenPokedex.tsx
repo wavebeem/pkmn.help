@@ -185,7 +185,7 @@ function Monster({ pokemon }: MonsterProps) {
   );
 }
 
-interface DexProps {
+interface ScreenPokedexProps {
   allPokemon: Pokemon[];
   setPokedexParams: (params: string) => void;
   isLoading: boolean;
@@ -195,7 +195,7 @@ export function ScreenPokedex({
   allPokemon,
   setPokedexParams,
   isLoading,
-}: DexProps) {
+}: ScreenPokedexProps) {
   const { t, i18n } = useTranslation();
   const { language } = i18n;
   const search = useSearch();
@@ -262,11 +262,11 @@ export function ScreenPokedex({
   const params = createParams(query, page);
   React.useEffect(() => {
     setPokedexParams(params);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [params]);
 
   return (
     <main className="ph3 mt3 center content-narrow">
+      <div className="pt2" />
       <Search
         search={query}
         updateSearch={(newQuery) => {
