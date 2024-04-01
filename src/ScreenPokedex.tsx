@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import matchSorter from "match-sorter";
+import { matchSorter } from "match-sorter";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
@@ -17,6 +17,8 @@ import { IconSparkles } from "./IconSparkles";
 import styles from "./ScreenPokedex.module.css";
 import Spinner from "./Spinner";
 import { Badge } from "./Badge";
+import { useSessionStorage } from "usehooks-ts";
+import { CopyButton } from "./CopyButton";
 
 const nbsp = "\u00a0";
 
@@ -75,18 +77,25 @@ function getWikiName(lang: string): string {
 
 interface MonsterProps {
   pokemon: Pokemon;
+  setQuery: (query: string) => void;
 }
 
-function Monster({ pokemon }: MonsterProps) {
+function Monster({ pokemon, setQuery }: MonsterProps) {
   const { t, i18n } = useTranslation();
   const language = useComputedLanguage();
   const [shiny, setShiny] = React.useState(false);
   const displayNumber = formatMonsterNumber(pokemon.number);
-  const params = new URLSearchParams({ types: pokemon.types.join(" ") });
+  const params = new URLSearchParams({
+    types: pokemon.types.join(" "),
+    ability: "none",
+    tera_type: "none",
+  });
   const speciesName = pokemon.speciesNames[language] || pokemon.speciesNames.en;
   const formName = pokemon.formNames[language] || pokemon.formNames.en;
   const formattedFormName = formName ? `(${formName})` : nbsp;
   const idPrefix = `pokemon-${pokemon.id}`;
+  const monsterParams = new URLSearchParams();
+  monsterParams.set("q", String(pokemon.number));
   return (
     <div
       className={classNames(
@@ -104,7 +113,16 @@ function Monster({ pokemon }: MonsterProps) {
             className="mv0 f4 flex-auto weight-medium"
             id={`${idPrefix}-name`}
           >
-            {speciesName}
+            <Link
+              to={{ search: monsterParams.toString() }}
+              onClick={(event) => {
+                event.preventDefault();
+                setQuery(String(pokemon.number));
+              }}
+              className="br1 no-underline fg-link focus-outline"
+            >
+              {speciesName}
+            </Link>
           </h2>
         </div>
         <div className="nv2 fg3 f5" id={`${idPrefix}-form`}>
@@ -185,24 +203,29 @@ function Monster({ pokemon }: MonsterProps) {
   );
 }
 
-interface DexProps {
+interface ScreenPokedexProps {
   allPokemon: Pokemon[];
-  setPokedexParams: (params: string) => void;
   isLoading: boolean;
 }
 
-export function ScreenPokedex({
-  allPokemon,
-  setPokedexParams,
-  isLoading,
-}: DexProps) {
+export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
   const { t, i18n } = useTranslation();
   const { language } = i18n;
   const search = useSearch();
-  const navigate = useNavigate();
-  const query = search.get("q") || "";
+  const [query, setQuery] = useSessionStorage("pokedex.query", "");
   const [debouncedQuery] = useDebounce(query, 500);
-  const page = Number(search.get("page") || 1) - 1;
+  const [page, setPage] = useSessionStorage<number>("pokedex.page", 0);
+  const navigate = useNavigate();
+
+  React.useEffect(() => {
+    if (search.has("q")) {
+      setQuery(search.get("q") || "");
+    }
+    if (search.has("page")) {
+      setPage(Number(search.get("page") || 1) - 1);
+    }
+    navigate({ search: "" }, { replace: true });
+  }, [search]);
 
   const searchablePkmn = React.useMemo(() => {
     return allPokemon.map((p) => {
@@ -238,39 +261,33 @@ export function ScreenPokedex({
         );
       });
     }
+    if (!s) {
+      return searchablePkmn;
+    }
     return matchSorter(searchablePkmn, s, {
       keys: ["speciesName", "formName", "number"],
     });
   }, [debouncedQuery, searchablePkmn, language, t]);
 
-  function createParams(newQuery: string, newPage: number): string {
-    const params = new URLSearchParams();
+  const permalink = new URL(window.location.href);
+  {
+    const newQuery = query.trim();
     if (newQuery) {
-      params.set("q", newQuery);
+      permalink.searchParams.set("q", newQuery);
     }
-    if (Number(newPage) > 0) {
-      params.set("page", String(newPage + 1));
+    if (Number(page) > 0) {
+      permalink.searchParams.set("page", String(page + 1));
     }
-    return "?" + params;
   }
-
-  function update(newQuery: string, newPage: number) {
-    const params = createParams(newQuery, newPage);
-    navigate({ search: params }, { replace: true });
-  }
-
-  const params = createParams(query, page);
-  React.useEffect(() => {
-    setPokedexParams(params);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [params]);
 
   return (
     <main className="ph3 mt3 center content-narrow">
+      <div className="pt2" />
       <Search
         search={query}
         updateSearch={(newQuery) => {
-          update(newQuery, 0);
+          setQuery(newQuery);
+          setPage(0);
         }}
       />
       <div className="flex justify-between ph2 nt2 pb3 bb border3 f6">
@@ -289,10 +306,8 @@ export function ScreenPokedex({
         <Spinner />
       ) : (
         <Paginator
-          currentPage={page}
-          urlForPage={(newPage) => {
-            return createParams(query, newPage);
-          }}
+          currentPage={Number(page)}
+          setPage={setPage}
           pageSize={20}
           emptyState={
             <p className="fg4 f4 tc m0">{t("pokedex.search.notFound")}</p>
@@ -301,12 +316,14 @@ export function ScreenPokedex({
           renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
           renderPage={(page) =>
             page.map((pokemon) => (
-              <Monster key={pokemon.id} pokemon={pokemon} />
+              <Monster key={pokemon.id} pokemon={pokemon} setQuery={setQuery} />
             ))
           }
         />
       )}
-      <div className="pb4" />
+      <div className="pt2 pb4">
+        <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
+      </div>
     </main>
   );
 }

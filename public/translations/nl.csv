@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,Totaal
 pokedexHelp.searchByName.heading,Search by name,Zoeken op naam
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Je kan zoeken op een Pokémon bij naam. Als je alleen een gedeelte herinnert van de Pokémonnaam, kan hij het waarschijnlijk nog steeds vinden voor je. Hij kan alleen nog niet goed omgaan met typfouten."
 pokedexHelp.searchByNumber.heading,Search by number,Zoeken op nummer
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Zoek op nationaal dex nummer. Als je Bulbasaur wilt, typ gewoon 1, niet #001"
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Zoek op nationaal dex nummer. Als je Bulbasaur wilt, typ gewoon 1, niet #001"
 pokedexHelp.searchByType.heading,Search by type,Zoeken op type
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Hier zijn een paar voorbeelden van hoe je zoekt op type.
 pokedexHelp.searchExamples.type.query,fire,vuur
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,Instellingen
 more.settings.language.label,Language,Taal
 more.settings.language.default,Auto detect language,Automatisch taal detecteren
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Taalondersteuning is nog niet compleet. E-mail mij alsjeblieft, ik zal je betalen om te vertalen."
 more.settings.theme.label,Theme,Thema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“Systeemstandaard” zal automatisch veranderen naar je systeeminstellingen.
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,Een update is verkrijgbaa
 banners.updateReady.whatsNew,What’s new,Wat is nieuw
 banners.updateReady.update,Update,Update
 general.loading,Loading…,Laden...
+general.copyLink,Copy link,
 games.label,Game generation,Game generatie
 games.help,Use type effectiveness from different game generations.,Gebruik type effectiefheid van verschillende game generaties.
 games.byID.gen1,Generation 1,Generatie 1

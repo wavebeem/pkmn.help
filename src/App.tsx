@@ -2,30 +2,31 @@ import classNames from "classnames";
 import * as React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { Link, NavLink, Navigate, Route, Routes } from "react-router-dom";
+import { NavLink, Navigate, Route, Routes } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
-import { CoverageType, Pokemon } from "./data-types";
-import { detectLanguage } from "./detectLanguage";
-import { formatPokemonName } from "./formatPokemonName";
+import styles from "./App.module.css";
 import { MonsterImage } from "./MonsterImage";
 import { ScreenCoverageList } from "./ScreenCoverageList";
 import { ScreenDefense } from "./ScreenDefense";
+import { ScreenDefenseTeam } from "./ScreenDefenseTeam";
 import { ScreenMore } from "./ScreenMore";
 import { ScreenOffense } from "./ScreenOffense";
 import { ScreenPokedex } from "./ScreenPokedex";
 import { ScreenPokedexHelp } from "./ScreenPokedexHelp";
 import { ScreenWeaknessCoverage } from "./ScreenWeaknessCoverage";
+import Spinner from "./Spinner";
+import { CoverageType, Pokemon } from "./data-types";
+import { detectLanguage } from "./detectLanguage";
+import { formatPokemonName } from "./formatPokemonName";
+import { iterCycle, iterNext, iterStutter } from "./iter";
+import { randomItem } from "./random";
 import { publicPath } from "./settings";
 import { useFetchJSON } from "./useFetchJSON";
 import { useGeneration } from "./useGeneration";
 import { useLanguage } from "./useLanguage";
 import { useTheme } from "./useTheme";
 import { useUpdateSW } from "./useUpdateSW";
-import styles from "./App.module.css";
-import Spinner from "./Spinner";
-import { randomItem } from "./random";
-import { iterCycle, iterNext, iterStutter } from "./iter";
 
 const tabClass = classNames([
   "active-darken",
@@ -75,6 +76,7 @@ export function App() {
   async function updateApp() {
     setNeedRefresh(false);
     await updateServiceWorker(true);
+    location.reload();
   }
 
   const t = useTranslationsWithBlankFallback();
@@ -82,9 +84,6 @@ export function App() {
 
   // State...
   const [generation] = useGeneration();
-  const [defenseParams, setDefenseParams] = React.useState("");
-  const [offenseParams, setOffenseParams] = React.useState("");
-  const [pokedexParams, setPokedexParams] = React.useState("");
   const [isLoading, setIsLoading] = React.useState(true);
   const [coverageTypes, setCoverageTypes] = React.useState<CoverageType[]>([]);
   const [fallbackCoverageTypes, setFallbackCoverageTypes] = React.useState<
@@ -193,13 +192,13 @@ export function App() {
         <nav
           className={classNames(`bg1 bb border2 pv2 ph2 gap2`, styles.tabBar)}
         >
-          <NavLink className={getTabClass} to={`/offense/${offenseParams}`}>
+          <NavLink className={getTabClass} to="/offense/">
             {t("navigation.offense")}
           </NavLink>
-          <NavLink className={getTabClass} to={`/defense/${defenseParams}`}>
+          <NavLink className={getTabClass} to="/defense/">
             {t("navigation.defense")}
           </NavLink>
-          <NavLink className={getTabClass} to={`/pokedex/${pokedexParams}`}>
+          <NavLink className={getTabClass} to="/pokedex/">
             {t("navigation.pokedex")}
           </NavLink>
           <NavLink
@@ -251,7 +250,6 @@ export function App() {
               element={
                 <ScreenWeaknessCoverage
                   setCoverageTypes={setCoverageTypes}
-                  offenseParams={offenseParams}
                   fallbackCoverageTypes={fallbackCoverageTypes}
                   isLoading={isLoading}
                 />
@@ -263,7 +261,6 @@ export function App() {
                 <ScreenOffense
                   generation={generation}
                   coverageTypes={coverageTypes}
-                  setOffenseParams={setOffenseParams}
                   fallbackCoverageTypes={fallbackCoverageTypes}
                   isLoading={isLoading}
                 />
@@ -271,25 +268,21 @@ export function App() {
             />
             <Route
               path="/defense/"
-              element={
-                <ScreenDefense
-                  generation={generation}
-                  setDefenseParams={setDefenseParams}
-                />
-              }
+              element={<ScreenDefense generation={generation} />}
             />
             <Route
-              path="/pokedex/help/"
-              element={<ScreenPokedexHelp pokedexParams={pokedexParams} />}
+              path="/defense/team/"
+              element={<ScreenDefenseTeam generation={generation} />}
             />
+            <Route
+              path="/defense/"
+              element={<ScreenDefense generation={generation} />}
+            />
+            <Route path="/pokedex/help/" element={<ScreenPokedexHelp />} />
             <Route
               path="/pokedex/"
               element={
-                <ScreenPokedex
-                  setPokedexParams={setPokedexParams}
-                  allPokemon={AllPokemon}
-                  isLoading={isLoading}
-                />
+                <ScreenPokedex allPokemon={AllPokemon} isLoading={isLoading} />
               }
             />
             <Route

@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,Totalne
 pokedexHelp.searchByName.heading,Search by name,Szukaj według nazwy
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Możesz wyszukać Pokémona według nazwy. Jeśli pamiętasz tylko część imienia Pokémona, prawdopodobnie nadal może go dla ciebie znaleźć. Teraz nie radzi sobie z literówkami."
 pokedexHelp.searchByNumber.heading,Search by number,Szukaj według numeru
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Szukaj według krajowego numeru dex. Jeśli chcesz Bulbasaura, po prostu wpisz 1, a nie #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Szukaj według krajowego numeru dex. Jeśli chcesz Bulbasaura, po prostu wpisz 1, a nie #001."
 pokedexHelp.searchByType.heading,Search by type,Search by typu
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Oto kilka przykładów wyszukiwania według typu.
 pokedexHelp.searchExamples.type.query,fire,ognisty
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,Ustawienia
 more.settings.language.label,Language,Język
 more.settings.language.default,Auto detect language,Automatyczne wykrywanie języka
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Obsługa języków jest niekompletna. Proszę o kontakt mailowy, zapłacę za tłumaczenie."
 more.settings.theme.label,Theme,Motyw
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,„Domyślne ustawienie” zmieni się automatycznie w zależności od ustawień systemu operacyjnego.
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,Aktualizacja jest dostęp
 banners.updateReady.whatsNew,What’s new,Co nowego
 banners.updateReady.update,Update,Aktualizacja
 general.loading,Loading…,Ładowanie…
+general.copyLink,Copy link,
 games.label,Game generation,Generacja Gry
 games.help,Use type effectiveness from different game generations.,Wykorzystaj skuteczność typu z różnych generacji gier.
 games.byID.gen1,Generation 1,Generacja 1-sza

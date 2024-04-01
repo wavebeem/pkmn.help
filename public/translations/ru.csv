@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,Общее
 pokedexHelp.searchByName.heading,Search by name,Искать по имени
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Вы можете искать Покемона по имени. Если вы помните только часть имени Покемона, он всё ещё может вам найти это для вас. Но пока поиск с опечатками невозможны."
 pokedexHelp.searchByNumber.heading,Search by number,Искать по номеру
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Искать по номеру Национального Декса. Если вы хотите найти Бульбазавра, то просто наберите 1, не #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Искать по номеру Национального Декса. Если вы хотите найти Бульбазавра, то просто наберите 1, не #001."
 pokedexHelp.searchByType.heading,Search by type,Искать по типу
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Вот некоторые примеры по поиску по типу.
 pokedexHelp.searchExamples.type.query,fire,огненный
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,Настройки
 more.settings.language.label,Language,Язык
 more.settings.language.default,Auto detect language,Автоопределенный язык
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Языковая поддержка пока не закончена. Пожалуйста пишите мне, я заплачу вам за перевод."
 more.settings.theme.label,Theme,Тема
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Системная по умолчанию"" изменится автоматически смотря на ваши настройки оперативной системы."
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,Доступно обно
 banners.updateReady.whatsNew,What’s new,
 banners.updateReady.update,Update,Обновить
 general.loading,Loading…,Загрузка...
+general.copyLink,Copy link,
 games.label,Game generation,Поколение Игры
 games.help,Use type effectiveness from different game generations.,Используйте эффективности типов из разных поколений игр.
 games.byID.gen1,Generation 1,Поколение 1.

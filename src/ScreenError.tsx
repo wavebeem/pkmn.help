@@ -24,6 +24,8 @@ ${location.href}
 ${navigator.userAgent}
 
 ${JSON.stringify(localStorage)}
+
+${JSON.stringify(sessionStorage)}
 `.trim();
 
   async function copyMessage() {
@@ -32,7 +34,7 @@ ${JSON.stringify(localStorage)}
       setClickMessage("Copied!");
       await sleep(2000);
       setClickMessage("");
-    } catch (err) {
+    } catch {
       setClickMessage("Failed to copy message");
     }
   }

@@ -13,6 +13,6 @@
 }
 
 .badgeLabel[data-type="stellar"] {
-  background: hsl(0 0% 25% / 50%);
-  backdrop-filter: blur(1px);
+  background: hsl(0 0% 10% / 50%);
+  backdrop-filter: blur(16px);
 }

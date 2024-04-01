@@ -88,7 +88,8 @@ interface PokemonSimple {
 async function fetchJSON<T>(url: string): Promise<T> {
   console.info("Fetching JSON", url);
   const resp = await fetch(url);
-  return await resp.json();
+  const data: any = await resp.json();
+  return data;
 }
 
 async function fetchPaginated<T>(url: string, limit = Infinity): Promise<T[]> {

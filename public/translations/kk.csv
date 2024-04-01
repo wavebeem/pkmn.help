@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,Жалпы
 pokedexHelp.searchByName.heading,Search by name,Атымен іздеу
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Сіз Покемонды атымен іздей аласыз. Егер Покемон атының тек бір бөлігі ғана есіңізде болса, ол әлі де Покемонды табуы мүмкін. Бірақ, әзірге қателіктермен іздей алмайды."
 pokedexHelp.searchByNumber.heading,Search by number,Нөмірмен іздеу
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Ұлттық декс нөмірімен іздеу. Егер Бульбазаврды тапқыңыз келсе, тек 1 деп теріңіз, #001 деп емес."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Ұлттық декс нөмірімен іздеу. Егер Бульбазаврды тапқыңыз келсе, тек 1 деп теріңіз, #001 деп емес."
 pokedexHelp.searchByType.heading,Search by type,Типі арқылы іздеу
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Мында тип арқылы іздеудің бірнеше мысалдары бар.
 pokedexHelp.searchExamples.type.query,fire,отты
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,Баптаулар
 more.settings.language.label,Language,Тіл
 more.settings.language.default,Auto detect language,Авто танылған тіл
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Тіл қолдауы әлі бітпеген. Өтініш, маған поштаға жазыңыз, мен сізге аударуыңызға төлеймін."
 more.settings.theme.label,Theme,Тақырып
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"Жүйелік бастапқы"" сіздің операциялық жүйе баптауларыңызға байланысты өзгереді."
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,Жаңарту жүргі
 banners.updateReady.whatsNew,What’s new,
 banners.updateReady.update,Update,Жаңарту
 general.loading,Loading…,Жүктелуде...
+general.copyLink,Copy link,
 games.label,Game generation,Ойын Ұрпақтары
 games.help,Use type effectiveness from different game generations.,Әртүрлі ойындар ұрпақтарынан типтік нәтижеліктерін қолдана аласыз.
 games.byID.gen1,Generation 1,Ұрпақ 1

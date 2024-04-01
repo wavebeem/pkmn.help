@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,Total
 pokedexHelp.searchByName.heading,Search by name,Busca por nombre
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puedes buscar un Pokémon por nombre. Si solo recuerdas parte del nombre del Pokémon, probablemente aún pueda encontrarlo. Sin embargo, aún no puede lidiar con errores tipográficos."
 pokedexHelp.searchByNumber.heading,Search by number,Busca por número
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Busca usando el número de la Pokédex Nacional. Si buscas a Bulbasaur, simplemente ingresa 1, no #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Busca usando el número de la Pokédex Nacional. Si buscas a Bulbasaur, simplemente ingresa 1, no #001."
 pokedexHelp.searchByType.heading,Search by type,Busca por tipo
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Aquí hay algunos ejemplos de cómo buscar por tipo.
 pokedexHelp.searchExamples.type.query,fire,fuego
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,Ajustes
 more.settings.language.label,Language,Idioma
 more.settings.language.default,Auto detect language,Detección automática del idioma
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","El soporte de idiomas está incompleto. Por favor escríbeme por correo electrónico, te pagaré para que traduzcas."
 more.settings.theme.label,Theme,Tema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“Predefinido por el sistema” cambiará automáticamente dependiendo de los ajustes de tu sistema operativo.
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,Hay una actualización di
 banners.updateReady.whatsNew,What’s new,Novedades
 banners.updateReady.update,Update,Actualizar
 general.loading,Loading…,Cargando...
+general.copyLink,Copy link,
 games.label,Game generation,Generación del juego
 games.help,Use type effectiveness from different game generations.,Usa la efectividad de tipo de diferentes generaciones.
 games.byID.gen1,Generation 1,Generación 1

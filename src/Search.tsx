@@ -11,7 +11,6 @@ interface SearchProps {
 
 export function Search({ updateSearch, search }: SearchProps) {
   const { t } = useTranslation();
-  const ref = React.useRef<HTMLInputElement>(null);
   const iconSize = 30;
   const inputHeight = 42;
   return (
@@ -48,7 +47,6 @@ export function Search({ updateSearch, search }: SearchProps) {
         onChange={(event) => {
           updateSearch(event.target.value);
         }}
-        ref={ref}
       />
       <IconClear
         width={iconSize}
@@ -56,11 +54,8 @@ export function Search({ updateSearch, search }: SearchProps) {
         role="presentation"
         onClick={() => {
           updateSearch("");
-          if (ref.current) {
-            ref.current.focus();
-          }
         }}
-        className={classNames("absolute fg3 fill-currentcolor", {
+        className={classNames("absolute fg1 fill-currentcolor", {
           dn: search === "",
         })}
         style={{ right: 6, top: 6 }}

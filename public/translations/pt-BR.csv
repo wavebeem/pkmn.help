@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,Total
 pokedexHelp.searchByName.heading,Search by name,Procura por nome
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Pode procurar um Pokémon pelo nome. Mesmo se lembrar apenas uma parte do nome, ainda assim pode ser encontrado para você. No entanto, não encontra se tiver erros de digitação"
 pokedexHelp.searchByNumber.heading,Search by number,Procura por número
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Procura por número na NacionalDex. Se quiser Bulbasauro, por exemplo, procure por 1, não #001!"
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Procura por número na NacionalDex. Se quiser Bulbasauro, por exemplo, procure por 1, não #001!"
 pokedexHelp.searchByType.heading,Search by type,Procura por tipo
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Aqui estão alguns exemplos de como procurar por algum tipo
 pokedexHelp.searchExamples.type.query,fire,fogo
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,Configurações
 more.settings.language.label,Language,Idioma
 more.settings.language.default,Auto detect language,Detectar idioma automaticamente
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","O suporte de idiomas está incompleto. Por favor, pode me chamar pelo email, pago pela sua tradução."
 more.settings.theme.label,Theme,Tema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Sistema padrão"" vai mudar automaticamente o tema dependendo das configurações de seu sistema operacional."
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,Uma atualização está d
 banners.updateReady.whatsNew,What’s new,O que há de novo
 banners.updateReady.update,Update,Atualizar
 general.loading,Loading…,Carregando...
+general.copyLink,Copy link,
 games.label,Game generation,Geração do Jogo
 games.help,Use type effectiveness from different game generations.,Usar efetividade de tipos de diferentes gerações
 games.byID.gen1,Generation 1,1° Geração

@@ -19,14 +19,12 @@ import styles from "./ScreenWeaknessCoverage.module.css";
 
 interface WeaknessCoverageProps {
   setCoverageTypes: (types: CoverageType[]) => void;
-  offenseParams: string;
   fallbackCoverageTypes: CoverageType[];
   isLoading: boolean;
 }
 
 export function ScreenWeaknessCoverage({
   setCoverageTypes,
-  offenseParams,
   fallbackCoverageTypes,
   isLoading,
 }: WeaknessCoverageProps) {
@@ -181,10 +179,7 @@ export function ScreenWeaknessCoverage({
       </p>
       <p className="flex gap1 items-center">
         <IconArrowLeft className="w1 h1" aria-hidden="true" />
-        <Link
-          to={`/offense/${offenseParams}`}
-          className="underline fg-link br1 focus-outline"
-        >
+        <Link to="/offense/" className="underline fg-link br1 focus-outline">
           {t("coverage.back")}
         </Link>
       </p>

@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,Total
 pokedexHelp.searchByName.heading,Search by name,Søg via navn
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",Du can søge efter en pokémon via navnet. Hvis du kun kan huske en del af navnet kan den nok stadig finde den for dig. Den virker ikke hvis der der stavefejl lige nu.
 pokedexHelp.searchByNumber.heading,Search by number,Søg via nummer/tal
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Søg via national dex nummer. Hvis du vil finde Bulbasaur skal du skrive 1, ikke #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Søg via national dex nummer. Hvis du vil finde Bulbasaur skal du skrive 1, ikke #001."
 pokedexHelp.searchByType.heading,Search by type,Søg via type
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Her er et par eksempler på hvordan man søger via typer
 pokedexHelp.searchExamples.type.query,fire,Ild
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,Indstillinger
 more.settings.language.label,Language,Sprog
 more.settings.language.default,Auto detect language,Opdag automatisk sprog
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Sprog understyttelsen er ukomplet. Venligst email mig, Jeg vil betale dig for at oversætte."
 more.settings.theme.label,Theme,Tema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""System standard"" vil ændre automatisk alt efter dine OS indstillinger."
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,En opdatering er mulig at
 banners.updateReady.whatsNew,What’s new,
 banners.updateReady.update,Update,Opdater
 general.loading,Loading…,Loader...
+general.copyLink,Copy link,
 games.label,Game generation,Spil generation
 games.help,Use type effectiveness from different game generations.,Brug type effektiviteter fra andre spil generationer
 games.byID.gen1,Generation 1,Generation 1

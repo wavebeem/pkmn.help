@@ -6,8 +6,6 @@ import { Generation } from "./data-generations";
 import { Type, typesForGeneration } from "./data-types";
 import styles from "./MultiTypeSelector.module.css";
 
-const buttonInnerHeight = "1.5rem";
-
 type MultiTypeSelectorProps = {
   generation: Generation;
   onChange(types: Type[]): void;

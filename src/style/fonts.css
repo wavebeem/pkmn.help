@@ -1,0 +1,15 @@
+/* https://gwfh.mranftl.com/fonts */
+/* https://cloudconvert.com/ttf-to-woff2 */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/roboto-medium.woff2") format("woff2");
+  font-weight: 500 700;
+  font-display: swap;
+}

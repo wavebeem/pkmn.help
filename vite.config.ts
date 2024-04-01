@@ -1,8 +1,8 @@
 import Papa from "papaparse";
-import purgecss from "@fullhuman/postcss-purgecss";
 import react from "@vitejs/plugin-react";
 import { defineConfig, UserConfigExport } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
+import pluginPurgeCss from "vite-plugin-purgecss-updated-v5";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -69,7 +69,6 @@ for (const lang of langs) {
   }
   for (const transPath of pathSets[lang]) {
     if (!pathSets.en.has(transPath)) {
-      // eslint-disable-next-line no-console
       console.error(`${lang} has unused translation: ${transPath}`);
     }
   }
@@ -136,8 +135,10 @@ export default defineConfig((env) => {
     },
     plugins: [
       react(),
+      pluginPurgeCss(),
       VitePWA({
         mode: env.mode !== "development" ? "production" : "development",
+        registerType: "prompt",
         manifest: {
           name: "Pokémon Type Calculator",
           short_name: "pkmn.help",
@@ -214,16 +215,5 @@ export default defineConfig((env) => {
       }),
     ],
   };
-  if (env.mode !== "development") {
-    config.css = {
-      postcss: {
-        plugins: [
-          purgecss({
-            content: ["./index.html", "./src/**/*.{ts,tsx,js,html}"],
-          }),
-        ],
-      },
-    };
-  }
   return config;
 });

@@ -13,11 +13,12 @@ import { DexCoverage } from "./DexCoverage";
 import { Matchups } from "./Matchups";
 import { MultiTypeSelector } from "./MultiTypeSelector";
 import { useSearch } from "./useSearch";
+import { useSessionStorage } from "usehooks-ts";
+import { CopyButton } from "./CopyButton";
 
 interface OffenseProps {
   generation: Generation;
   coverageTypes?: CoverageType[];
-  setOffenseParams: (params: string) => void;
   fallbackCoverageTypes: CoverageType[];
   isLoading: boolean;
 }
@@ -25,38 +26,34 @@ interface OffenseProps {
 export function ScreenOffense({
   generation,
   coverageTypes,
-  setOffenseParams,
   fallbackCoverageTypes,
   isLoading,
 }: OffenseProps) {
   const { t, i18n } = useTranslation();
   const search = useSearch();
   const navigate = useNavigate();
-  const offenseTypes = typesFromString(search.get("types") || "");
+  const [offenseTypes, setOffenseTypes] = useSessionStorage<Type[]>(
+    "offense.types",
+    []
+  );
 
-  function createParams(types: Type[]): string {
-    const params = new URLSearchParams();
-    if (types.length > 0) {
-      params.set("types", types.join(" "));
-    }
-    return "?" + params;
+  const permalink = new URL(window.location.href);
+  if (offenseTypes.length > 0) {
+    permalink.searchParams.set("types", offenseTypes.join(" "));
   }
 
   React.useEffect(() => {
-    updateOffenseTypes(
+    if (search.has("types")) {
+      setOffenseTypes(typesFromString(search.get("types") || ""));
+    }
+    navigate({ search: "" }, { replace: true });
+  }, [search]);
+
+  React.useEffect(() => {
+    setOffenseTypes((offenseTypes) =>
       removeInvalidOffenseTypesForGeneration(generation, offenseTypes)
     );
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [generation]);
-
-  const updateOffenseTypes = (types: Type[]) => {
-    navigate({ search: createParams(types) }, { replace: true });
-  };
-
-  const params = createParams(offenseTypes);
-  React.useEffect(() => {
-    setOffenseParams(params);
-  }, [params, setOffenseParams]);
 
   const listLength = coverageTypes?.length ?? 0;
   const listLengthFormatted = listLength.toLocaleString(i18n.languages);
@@ -69,7 +66,7 @@ export function ScreenOffense({
         <MultiTypeSelector
           generation={generation}
           value={offenseTypes}
-          onChange={updateOffenseTypes}
+          onChange={setOffenseTypes}
         />
         <hr className="dn-ns subtle-hr mv4" />
         {generation === "default" && (
@@ -95,6 +92,11 @@ export function ScreenOffense({
                 types={offenseTypes}
                 isLoading={isLoading}
               />
+            </div>
+            <div className="pt4">
+              <CopyButton text={permalink.href}>
+                {t("general.copyLink")}
+              </CopyButton>
             </div>
           </div>
         )}

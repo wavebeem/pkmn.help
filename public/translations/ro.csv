@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,Total
 pokedexHelp.searchByName.heading,Search by name,Cauta nume
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puteți căuta un Pokémon după nume. Dacă îți amintești doar o parte din numele Pokémonului, probabil că îl poate găsi pentru tine. Totuși, nu poate face față greșelilor de scriere acum."
 pokedexHelp.searchByNumber.heading,Search by number,Cauta dupa numar
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Cauta dupa numar de Pokedex national. Daca vrei bulbasaur, pune doar 1, nu #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Cauta dupa numar de Pokedex national. Daca vrei bulbasaur, pune doar 1, nu #001."
 pokedexHelp.searchByType.heading,Search by type,Cauta dupa tip
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Iată câteva exemple despre cum să căutați după tip.
 pokedexHelp.searchExamples.type.query,fire,Foc
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,Setari
 more.settings.language.label,Language,Limbi
 more.settings.language.default,Auto detect language,
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Suportul lingvistic este incomplet. Vă rog să-mi trimiteți un e-mail, vă voi plăti pentru traducere."
 more.settings.theme.label,Theme,Tema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,„Implicit sistem” se va schimba automat în funcție de setările sistemului de operare.
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,Poti sa updatezi
 banners.updateReady.whatsNew,What’s new,
 banners.updateReady.update,Update,Updateaza
 general.loading,Loading…,Se Incarca...
+general.copyLink,Copy link,
 games.label,Game generation,Generație de joc
 games.help,Use type effectiveness from different game generations.,Folosește efectivitate de fel de la generatii de joc diferite
 games.byID.gen1,Generation 1,Generatia 1
