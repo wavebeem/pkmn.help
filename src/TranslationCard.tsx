@@ -18,7 +18,7 @@ export function TranslationCard({ lang }: TranslationCardProps): JSX.Element {
       <div className="flex flex-wrap gap1 pt3 ph3">
         <h3 className="f4 weight-medium ma0">{languageNamesNative[lang]}</h3>
         <div className="flex-auto" />
-        {!Boolean(officialLanguagesSet.has(lang as any)) && (
+        {!officialLanguagesSet.has(lang as any) && (
           <span className="ph2 bg1 br-pill ba border3">
             <span aria-hidden="true">🏗️</span> Unofficial
           </span>

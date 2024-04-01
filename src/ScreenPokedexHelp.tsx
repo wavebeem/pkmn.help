@@ -5,7 +5,7 @@ import { IconArrowLeft } from "./IconArrows";
 
 interface ScreenPokedexHelpProps {}
 
-export function ScreenPokedexHelp({}: ScreenPokedexHelpProps) {
+export function ScreenPokedexHelp(_props: ScreenPokedexHelpProps) {
   const { t } = useTranslation();
   const classH2 = "lh-title f4 weight-medium";
   return (

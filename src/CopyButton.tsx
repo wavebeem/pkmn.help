@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import * as React from "react";
-import styles from "./CopyButton.module.css";
 import { sleep } from "./sleep";
 
 export interface CopyButtonProps {

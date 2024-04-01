@@ -69,7 +69,6 @@ for (const lang of langs) {
   }
   for (const transPath of pathSets[lang]) {
     if (!pathSets.en.has(transPath)) {
-      // eslint-disable-next-line no-console
       console.error(`${lang} has unused translation: ${transPath}`);
     }
   }

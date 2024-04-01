@@ -34,7 +34,7 @@ ${JSON.stringify(sessionStorage)}
       setClickMessage("Copied!");
       await sleep(2000);
       setClickMessage("");
-    } catch (err) {
+    } catch {
       setClickMessage("Failed to copy message");
     }
   }

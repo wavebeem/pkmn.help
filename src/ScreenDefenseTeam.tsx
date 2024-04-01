@@ -2,29 +2,28 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate } from "react-router-dom";
+import { useSessionStorage } from "usehooks-ts";
+import { Badge } from "./Badge";
 import { Button } from "./Button";
-import { Generation } from "./data-generations";
-import {
-  removeInvalidDefenseTypesForGeneration,
-  removeNones,
-  Type,
-  abilityNameFromString,
-  AbilityName,
-  typesFromString,
-  abilities,
-  types,
-  typesWithoutNone,
-} from "./data-types";
+import { CopyButton } from "./CopyButton";
 import { MatchupsTeam, MatchupsTeamProps } from "./MatchupsTeam";
 import { Select } from "./Select";
 import { TypeSelector } from "./TypeSelector";
+import { Generation } from "./data-generations";
+import {
+  AbilityName,
+  Type,
+  abilities,
+  abilityNameFromString,
+  removeInvalidDefenseTypesForGeneration,
+  removeNones,
+  typesFromString,
+  typesWithoutNone,
+} from "./data-types";
 import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
 import { useSearch } from "./useSearch";
 import { useTypeCount } from "./useTypeCount";
-import { Badge } from "./Badge";
-import { useSessionStorage } from "usehooks-ts";
-import { CopyButton } from "./CopyButton";
 
 const classH2 = "f4 weight-medium mb2 mt4";
 
@@ -80,12 +79,6 @@ function setTeraTypeAt({
   }
   const fullArray = Array.from(sparseArray);
   return fullArray.map((v) => v || Type.none);
-}
-
-interface State {
-  teamTypesList: Type[][];
-  teamTeraTypeList: Type[];
-  teamAbilityList: AbilityName[];
 }
 
 interface ScreenDefenseTeamProps {

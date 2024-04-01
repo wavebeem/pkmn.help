@@ -3,21 +3,21 @@ import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "./Button";
 import { CollapsibleSection } from "./CollapsibleSection";
-import { generations, isGeneration } from "./data-generations";
-import { resetApp } from "./resetApp";
 import { Select } from "./Select";
-import { useGeneration } from "./useGeneration";
-import { useLanguage } from "./useLanguage";
-import { useTheme } from "./useTheme";
-import { useTypeCount } from "./useTypeCount";
+import { TranslationCard } from "./TranslationCard";
+import { compare } from "./compare";
+import { generations, isGeneration } from "./data-generations";
 import {
   Lang,
   getDesiredLanguage,
   isLang,
   supportedLanguages,
 } from "./detectLanguage";
-import { TranslationCard } from "./TranslationCard";
-import { compare } from "./compare";
+import { resetApp } from "./resetApp";
+import { useGeneration } from "./useGeneration";
+import { useLanguage } from "./useLanguage";
+import { useTheme } from "./useTheme";
+import { useTypeCount } from "./useTypeCount";
 
 export interface ScreenMoreProps {
   needsAppUpdate: boolean;
@@ -28,8 +28,6 @@ const languageCompletions =
   typeof __TRANSLATION_COMPLETION__ === "undefined"
     ? {}
     : __TRANSLATION_COMPLETION__;
-
-const ndash = "\u2013";
 
 export const languageNamesNative: Record<Lang, string> = {
   en: `English`,
