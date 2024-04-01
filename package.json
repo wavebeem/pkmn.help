@@ -17,12 +17,12 @@
     "build": "vite build --mode production",
     "test-sw": "npm run -s build && npx serve -s dist",
     "preview": "vite preview",
-    "test:format": "prettier \"src/**/*.{ts,tsx,js}\" --check",
+    "test:format": "prettier \"src/**/*.{ts,tsx,js,css}\" --check",
     "test:lint:js": "eslint src -f unix",
     "test:lint:css": "stylelint -f unix \"src/**/*.css\"",
     "test:typecheck": "tsc -p .",
     "test": "concurrently --group \"npm:test:*\"",
-    "fix:format": "prettier \"src/**/*.{ts,tsx,js}\" --write"
+    "fix:format": "prettier \"src/**/*.{ts,tsx,js,css}\" --write"
   },
   "repository": {
     "type": "git",
