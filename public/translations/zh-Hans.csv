@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,总和
 pokedexHelp.searchByName.heading,Search by name,按名称搜索
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",你可以按名称搜索宝可梦。如果你只记得宝可梦名称的一部分，系统或许仍能帮你找到。但它现在无法处理拼字错误。
 pokedexHelp.searchByNumber.heading,Search by number,按编号搜索
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.",按全国图鉴编号搜索。如果你要找妙蛙种子，写1就行，而非#001。
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.",按全国图鉴编号搜索。如果你要找妙蛙种子，写1就行，而非#001。
 pokedexHelp.searchByType.heading,Search by type,按属性搜索
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,以下为按属性搜索的几个例子作为参考。
 pokedexHelp.searchExamples.type.query,fire,火
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,设定
 more.settings.language.label,Language,语言
 more.settings.language.default,Auto detect language,自动检测语言
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",语言支持不完整。请给我发邮件，我会有偿请你翻译。
 more.settings.theme.label,Theme,背景
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“系统默认”会根据你的系统设定自动调整。
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,有更新可用
 banners.updateReady.whatsNew,What’s new,近期新闻
 banners.updateReady.update,Update,更新
 general.loading,Loading…,加载中……
+general.copyLink,Copy link,
 games.label,Game generation,游戏世代
 games.help,Use type effectiveness from different game generations.,使用不同游戏世代的属性相克。
 games.byID.gen1,Generation 1,第一世代

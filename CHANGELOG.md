@@ -10,6 +10,8 @@
 
 - Removed the flash of white when loading the page in dark mode
 
+- Fixed several French spelling and grammar mistakes
+
 - Fixed a bug where clicking "Defense" from a Pokémon in the Pokédex didn't reset abilities and tera types to none
 
 - The language selector is now clearly grouped and less visually confusing

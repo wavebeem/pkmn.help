@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,合計
 pokedexHelp.searchByName.heading,Search by name,名前で検索
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",ポケモン名で検索することが出来ます。部分一致でも検索することが出来ます。誤字は検索できません。
 pokedexHelp.searchByNumber.heading,Search by number,番号で検索
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.",#001のかわりに1のような自然な番号で検索する。
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.",#001のかわりに1のような自然な番号で検索する。
 pokedexHelp.searchByType.heading,Search by type,タイプで検索
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,タイプで検索する方法についてのいくつかの例
 pokedexHelp.searchExamples.type.query,fire,ほのお
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,設定
 more.settings.language.label,Language,言語
 more.settings.language.default,Auto detect language,
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",言語サポートは不完全です。 私に電子メールを送ってください、私はあなたに翻訳するために支払います。
 more.settings.theme.label,Theme,テーマ
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,「システムのデフォルト」は、オペレーティングシステムの設定に応じて自動的に変更されます。
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,アップデートが利�
 banners.updateReady.whatsNew,What’s new,
 banners.updateReady.update,Update,更新
 general.loading,Loading…,読み込み中…
+general.copyLink,Copy link,
 games.label,Game generation,ゲームのジェネレーション1
 games.help,Use type effectiveness from different game generations.,さまざまなゲームジェネレーション1タイプの効果を使用します。
 games.byID.gen1,Generation 1,ジェネレーション１

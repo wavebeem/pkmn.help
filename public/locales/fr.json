@@ -9,7 +9,6 @@
   "offense": {
     "chooseTypes": "Choisissez les types",
     "dealsXTo": "Inflige {{ x }} à",
-    "teraPokemon": "Pokémon Téracristallisé",
     "coverage": {
       "heading": "Couverture du Pokédex",
       "edit": "Modifier la liste",
@@ -17,26 +16,27 @@
       "normal": "Neutre",
       "resistance": "Résiste"
     },
+    "teraPokemon": "Pokémon Téracristallisé",
     "coverageList": {
-      "empty": "Aucun Pokémon trouvé ou aucun type séléctionné",
+      "empty": "Aucun Pokémon trouvé ou aucun type sélectionné",
       "weakness": {
         "heading": "Liste des Pokémon qui te sont faibles",
-        "description": "Ces Pokémon sont faibles à au moins l'un des deux types séléctionnés."
+        "description": "Ces Pokémon sont faibles à au moins l'un des deux types sélectionnés"
       },
       "normal": {
         "heading": "Liste des Pokémon qui te sont neutres",
-        "description": "Ces Pokémon ne sont pas dans la liste des faiblaisses/résistances pour les types séléctionés"
+        "description": "Ces Pokémon ne sont pas dans la liste des faiblesses/résistances pour les types sélectionnés"
       },
       "resistance": {
         "heading": "Liste des Pokémon qui te résistent",
-        "description": "Ces Pokémon résistent aux deux types séléctionnés."
+        "description": "Ces Pokémon résistent aux deux types sélectionnés"
       }
     }
   },
   "coverage": {
     "heading": "Couverture de faiblesses",
-    "paragraph1": "Importez/exportez des fichiers CSV Pokédex personnalisés pour voir la couverture des faiblesses pour différents Pokémons. Créeez un fichier CSV personnalisé avec juste le tier Pokémon OU, ou créez votre pokémon depuis zéro.",
-    "paragraph2": "Les données CSV sont chargées par nom d'en-tête de colonne, et non par odre de colonne. Vous pouvez donc ajouter ou réorganiser des colonnes si vous le souhaitez (par exemple, ajouter une colonne \"tier\" ou une colonne \"notes\").",
+    "paragraph1": "Importez/exportez des fichiers CSV Pokédex personnalisés pour voir la couverture des faiblesses pour différents Pokémons. Créez un fichier CSV personnalisé avec juste le tier Pokémon OU (overused), ou créez votre Pokémon depuis zéro.",
+    "paragraph2": "Les données CSV sont chargées par nom d'en-tête de colonne, et non par ordre de colonne. Vous pouvez donc ajouter ou réorganiser des colonnes si vous le souhaitez (par exemple, ajouter une colonne \"tier\" ou une colonne \"notes\").",
     "paragraph3": "Les dossiers CSV peuvent être modifiés avec Google doc, Microsoft Excel, OpenOffice, LibreOffice, Notepad et d'autres.",
     "csvHeaders": {
       "number": "Numéro",
@@ -54,15 +54,15 @@
       "description": "Importer un dossier Pokédex CSV édité"
     },
     "reset": {
-      "button": "Réinisialiser",
-      "description": "Réinisialiser vers le Pokédex par défaut"
+      "button": "Réinitialiser",
+      "description": "Réinitialiser vers le Pokédex par défaut"
     },
     "filename": "pkmn.help couverture de type.csv",
     "status": {
       "imported": "Importer {{ n }} forme Pokémon depuis “{{ file }}”",
       "exported": "Pokémon exporté par défaut",
       "reset": "Pokémon chargé par défaut",
-      "errored": "Erreur de chargement CSV. Ne changez pas le nom des entêtes ."
+      "errored": "Erreur de chargement CSV. Ne pas changer le nom des entêtes ."
     },
     "back": "Retour à l'onglet \"Couverture offensive\""
   },
@@ -123,8 +123,8 @@
     "search": {
       "description": "Recherche par nom, nombre ou type",
       "help": "Aide",
-      "helpLong": "Aide, recherche Pokédex",
-      "notFound": "Aucun pokémon trouvé"
+      "helpLong": "Aide, rechercher dans le Pokédex",
+      "notFound": "Aucun Pokémon trouvé"
     },
     "offense": {
       "text": "Offense"
@@ -133,13 +133,13 @@
       "text": "Défense"
     },
     "shiny": {
-      "label": "Chromatique de {{ pokemon }}",
+      "label": "{{ pokemon }} chromatique",
       "text": "Chromatique"
     },
     "pagination": {
-      "next": "Suiv",
+      "next": "Suiv.",
       "nextLong": "Suivant",
-      "previous": "Préc",
+      "previous": "Préc.",
       "previousLong": "Précédent",
       "firstLong": "Premier",
       "lastLong": "Dernier"
@@ -164,7 +164,7 @@
   "pokedexHelp": {
     "searchByName": {
       "heading": "Rechercher par nom",
-      "description": "Vous pouvez rechercher un Pokémon par nom. Si vous ne vous rappelez que d'une partie du nom du Pokémon, ça fera probablement l'affaire. Le site ne peut pas gérer les fautes de frappes pour l'instant."
+      "description": "Vous pouvez rechercher un Pokémon par nom. Si vous ne vous rappelez que d'une partie du nom du Pokémon, cela fera probablement l'affaire. Le site ne peut pas gérer les fautes de frappes pour l'instant."
     },
     "searchByNumber": {
       "heading": "Rechercher par nombre",
@@ -176,7 +176,7 @@
     },
     "searchExamples": {
       "type": {
-        "query": "feu",
+        "query": "Feu",
         "description": "Rechercher des Pokémon qui ont le type feu dans n'importe la quelle de leur forme (ex Salamèche, Dracaufeu, Motisma)."
       },
       "doubleType": {
@@ -185,7 +185,7 @@
       },
       "singleType": {
         "query": "Plante aucun",
-        "description": "Rechercher les Pokémon qui ont seulment le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)"
+        "description": "Rechercher les Pokémon qui ont seulement le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)"
       }
     },
     "back": "Revenir au Pokédex"
@@ -201,6 +201,8 @@
       "language": {
         "label": "Langage",
         "default": "Détecter automatiquement la langue",
+        "official": "Langues officielles",
+        "unofficial": "Langues non-officielles",
         "helpText": "Merci de me contacter si certaines traductions sont manquantes ou erronées et que vous vous sentez capable d'aider."
       },
       "theme": {
@@ -214,7 +216,7 @@
       },
       "typeCount": {
         "label": "Nombre de types",
-        "help": "Un pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est rarement utilisé",
+        "help": "Un Pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est rarement utilisé",
         "values": {
           "2": "Deux types (2)",
           "3": "Trois types (3)"
@@ -228,24 +230,24 @@
     "help": {
       "heading": "Aide",
       "serviceWorker": {
-        "description": "Ce bouton peut aider à résoudre les problèmes dans l'applicaton.",
+        "description": "Ce bouton peut aider à résoudre les problèmes dans l’application",
         "button": "Réinitialiser"
       }
     },
     "privacy": {
       "heading": "Confidentialité",
-      "description": "Je ne diffuserais jamais de publicité ni ne volerais vos données personelles. J'utilise <plausible>Plausible Analytics</plausible>, qui est autofinancé, indépendant, hébergé dans l'Union Européenne et ne stocke aucun cookie sur votre oridnateur."
+      "description": "Je ne diffuserais jamais de publicité ni ne volerais vos données personnelles J'utilise <plausible>Plausible Analytics</plausible>, qui est autofinancé, indépendant, hébergé dans l'Union Européenne et ne stocke aucun cookie sur votre ordinateur"
     },
     "givingBack": {
       "heading": "Me remercier",
-      "description": "J'ai passé d'innombrables heures à améliorer ce site. Si vous appréciez ce que j'ai fait, veuillez envisager de faire un don à des organismes de bienfaisance qui soutiennent le BIPOC et les droits des transgenres."
+      "description": "J'ai passé d'innombrables heures à améliorer ce site. Si vous appréciez ce que j'ai fait, veuillez envisager s’il vous plaît de faire un don à des organismes de bienfaisance qui soutiennent le BIPOC et les droits des transgenres."
     },
     "thanks": {
       "heading": "Remerciements spéciaux",
       "sections": {
         "da": "Traduction en Danois",
         "ru": "Traduction en Russe",
-        "kk": "Traduction en Kazackh",
+        "kk": "Traduction en Kazakh",
         "pt-BR": "Traduction en Portugais Brésilien",
         "zh-Hans": "Traduction en Chinois Simplifié",
         "zh-Hant": "Traduction en Chinois Traditionnel",
@@ -293,7 +295,7 @@
   },
   "banners": {
     "updateReady": {
-      "description": "Une mise à jour est disponible",
+      "description": "Une mise à jour est disponible !",
       "whatsNew": "Quoi de neuf",
       "update": "Mettre à jour"
     }
@@ -303,7 +305,7 @@
     "copyLink": "Copier le lien"
   },
   "games": {
-    "label": "Génaration de jeu",
+    "label": "Génération du jeu",
     "help": "Utiliser les efficacités de types des différentes générations de jeux.",
     "byID": {
       "gen1": "Génération 1",

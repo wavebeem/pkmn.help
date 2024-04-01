@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,총합
 pokedexHelp.searchByName.heading,Search by name,이름으로 검색
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",이름으로 포켓몬을 검색할 수 있습니다. 포켓몬 이름의 일부만 입력해도 찾을 수 있습니다. 다만 아직은 오타가 나면 찾기 어렵습니다.
 pokedexHelp.searchByNumber.heading,Search by number,번호로 검색
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.",전국도감 번호로 검색하세요. 이상해씨를 찾는다면 #001이 아니라 1을 입력하세요.
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.",전국도감 번호로 검색하세요. 이상해씨를 찾는다면 #001이 아니라 1을 입력하세요.
 pokedexHelp.searchByType.heading,Search by type,유형별 검색
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,다음은 유형별로 검색하는 방법에 대한 몇 가지 예시입니다.
 pokedexHelp.searchExamples.type.query,fire,불꽃
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,설정
 more.settings.language.label,Language,언어
 more.settings.language.default,Auto detect language,언어 자동 감지
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",아직 언어 지원이 완벽하지 않습니다. 저에게 이메일을 보내주시면 번역 시 보수를 제공하겠습니다.
 more.settings.theme.label,Theme,테마
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""시스템 기본값"" 은 시스템 설정에 따라 자동으로 변경됩니다."
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,새 버전이 있습니�
 banners.updateReady.whatsNew,What’s new,새로운 기능
 banners.updateReady.update,Update,업데이트
 general.loading,Loading…,로딩 중...
+general.copyLink,Copy link,
 games.label,Game generation,세대
 games.help,Use type effectiveness from different game generations.,다른 세대의 상성 사용하기
 games.byID.gen1,Generation 1,1세대

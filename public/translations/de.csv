@@ -116,7 +116,7 @@ pokedex.stats.totalLong,Total,Gesamt
 pokedexHelp.searchByName.heading,Search by name,Suche nach Name
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Du kannst nach einem Pokémon anhand seines Namens suchen. Wenn du dich nur an einen Teil des Pokémon-Namens erinnerst, findet es das Pokémon wahrscheinlich trotzdem für dich. Mit Tippfehlern kann es im Moment allerdings nicht umgehen."
 pokedexHelp.searchByNumber.heading,Search by number,Suche nach Nummer
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbsaur, just type 1, not #001.","Suche nach der nationalen Dex-Nummer. Wenn du Bisasam suchst, gib einfach 1 ein, nicht #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Suche nach der nationalen Dex-Nummer. Wenn du Bisasam suchst, gib einfach 1 ein, nicht #001."
 pokedexHelp.searchByType.heading,Search by type,Suche nach Typ
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Hier sind ein paar Beispiele für die Suche nach Typen.
 pokedexHelp.searchExamples.type.query,fire,Feuer
@@ -132,6 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,Einstellungen
 more.settings.language.label,Language,Sprache
 more.settings.language.default,Auto detect language,
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",Die Sprachunterstützung ist unvollständig. Nur die Pokémon-Namen werden übersetzt.
 more.settings.theme.label,Theme,Thema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""System Standard"" ändert sich automatisch je nach den Einstellungen Ihres Betriebssystems."
@@ -195,6 +197,7 @@ banners.updateReady.description,An update is available,Ein Update ist verfügbar
 banners.updateReady.whatsNew,What’s new,
 banners.updateReady.update,Update,Aktualisierung
 general.loading,Loading…,Laden...
+general.copyLink,Copy link,
 games.label,Game generation,
 games.help,Use type effectiveness from different game generations.,
 games.byID.gen1,Generation 1,
