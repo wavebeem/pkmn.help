@@ -99,19 +99,19 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
   const search = useSearch();
   const navigate = useNavigate();
   const [format, setFormat] = useSessionStorage<MatchupsTeamProps["format"]>(
-    "defense-team.format",
+    "defenseTeam.format",
     "simple"
   );
   const [teamTypes, setTeamTypes] = useSessionStorage<Type[][]>(
-    "defense-team.types",
+    "defenseTeam.types",
     []
   );
   const [teamTeraTypes, setTeamTeraTypes] = useSessionStorage<Type[]>(
-    "defense-team.teraTypes",
+    "defenseTeam.teraTypes",
     []
   );
   const [teamAbilities, setTeamAbilities] = useSessionStorage<AbilityName[]>(
-    "defense-team.abilities",
+    "defenseTeam.abilities",
     []
   );
   const [typeCount] = useTypeCount();
@@ -122,12 +122,6 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
       setFormat((search.get("format") || "simple") as any);
     }
     if (search.has("types")) {
-      console.log(
-        "SET TEAM TYPES???",
-        search.getAll("types").map((type) => {
-          return typesFromString(type).slice(0, Number(typeCount));
-        })
-      );
       setTeamTypes(
         search.getAll("types").map((type) => {
           return typesFromString(type).slice(0, Number(typeCount));
@@ -150,7 +144,7 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
       );
     }
     navigate({ search: "" }, { replace: true });
-  }, []);
+  }, [search]);
 
   React.useEffect(() => {
     setTeamTypes((teamTypes) => {

@@ -18,6 +18,7 @@ import styles from "./ScreenPokedex.module.css";
 import Spinner from "./Spinner";
 import { Badge } from "./Badge";
 import { useSessionStorage } from "usehooks-ts";
+import { CopyButton } from "./CopyButton";
 
 const nbsp = "\u00a0";
 
@@ -76,9 +77,10 @@ function getWikiName(lang: string): string {
 
 interface MonsterProps {
   pokemon: Pokemon;
+  setQuery: (query: string) => void;
 }
 
-function Monster({ pokemon }: MonsterProps) {
+function Monster({ pokemon, setQuery }: MonsterProps) {
   const { t, i18n } = useTranslation();
   const language = useComputedLanguage();
   const [shiny, setShiny] = React.useState(false);
@@ -92,6 +94,8 @@ function Monster({ pokemon }: MonsterProps) {
   const formName = pokemon.formNames[language] || pokemon.formNames.en;
   const formattedFormName = formName ? `(${formName})` : nbsp;
   const idPrefix = `pokemon-${pokemon.id}`;
+  const monsterParams = new URLSearchParams();
+  monsterParams.set("q", String(pokemon.number));
   return (
     <div
       className={classNames(
@@ -109,7 +113,16 @@ function Monster({ pokemon }: MonsterProps) {
             className="mv0 f4 flex-auto weight-medium"
             id={`${idPrefix}-name`}
           >
-            {speciesName}
+            <Link
+              to={{ search: monsterParams.toString() }}
+              onClick={(event) => {
+                event.preventDefault();
+                setQuery(String(pokemon.number));
+              }}
+              className="br1 no-underline fg-link focus-outline"
+            >
+              {speciesName}
+            </Link>
           </h2>
         </div>
         <div className="nv2 fg3 f5" id={`${idPrefix}-form`}>
@@ -202,6 +215,7 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
   const [query, setQuery] = useSessionStorage("pokedex.query", "");
   const [debouncedQuery] = useDebounce(query, 500);
   const [page, setPage] = useSessionStorage<number>("pokedex.page", 0);
+  const navigate = useNavigate();
 
   React.useEffect(() => {
     if (search.has("q")) {
@@ -210,7 +224,8 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
     if (search.has("page")) {
       setPage(Number(search.get("page") || 1) - 1);
     }
-  }, []);
+    navigate({ search: "" }, { replace: true });
+  }, [search]);
 
   const searchablePkmn = React.useMemo(() => {
     return allPokemon.map((p) => {
@@ -251,15 +266,15 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
     });
   }, [debouncedQuery, searchablePkmn, language, t]);
 
-  function createParams(newQuery: string, newPage: number): string {
-    const params = new URLSearchParams();
+  const permalink = new URL(window.location.href);
+  {
+    const newQuery = query.trim();
     if (newQuery) {
-      params.set("q", newQuery);
+      permalink.searchParams.set("q", newQuery);
     }
-    if (Number(newPage) > 0) {
-      params.set("page", String(newPage + 1));
+    if (Number(page) > 0) {
+      permalink.searchParams.set("page", String(page + 1));
     }
-    return "?" + params;
   }
 
   return (
@@ -298,12 +313,14 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
           renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
           renderPage={(page) =>
             page.map((pokemon) => (
-              <Monster key={pokemon.id} pokemon={pokemon} />
+              <Monster key={pokemon.id} pokemon={pokemon} setQuery={setQuery} />
             ))
           }
         />
       )}
-      <div className="pb4" />
+      <div className="pt2 pb4">
+        <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
+      </div>
     </main>
   );
 }

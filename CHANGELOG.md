@@ -2,9 +2,15 @@
 
 ## 2024-03-31
 
-- Cleaned up messy URLs
+- Cleaned up messy URLs & added session storage support
 
   - You can copy a link to the current page if you want to share it with someone else
+
+  - If you refresh the page or duplicate a tab, you'll notice that your current information is preserved (Pokédex search query, page number, offense types selected, defense types selected)
+
+  - I also changed the defense team storage to be session based so you can look at different teams in different tabs
+
+- Added the ability to click on Pokédex links to direct link to a Pokémon
 
 - Simplified the Pokéball easter egg visual a little bit
 

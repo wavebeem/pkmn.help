@@ -80,7 +80,7 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
       setAbility(abilityNameFromString(search.get("ability") || undefined));
     }
     navigate({ search: "" }, { replace: true });
-  }, []);
+  }, [search]);
 
   const permalink = new URL(window.location.href);
   {

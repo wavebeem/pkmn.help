@@ -14,21 +14,20 @@ export function CopyButton({ text, children }: CopyButtonProps) {
   const [state, setState] = React.useState<State>("default");
   const disabled = state === "copied";
   return (
-    <a
+    <button
+      type="button"
       data-state={state}
       aria-disabled={disabled}
       className={classNames(
         "relative",
         "active-darken",
-        "pv1 ph2",
+        "pv1 ph3",
         "no-underline",
         "focus-outline",
         "br-pill ba",
-        state === "default" && ["fg-link", "border1"],
+        state === "default" && ["fg1", "bg2", "border1"],
         state === "copied" && ["fg1", "bg1", "border2"]
       )}
-      href={text}
-      target="_blank"
       onClick={async (event) => {
         try {
           event.preventDefault();
@@ -44,6 +43,6 @@ export function CopyButton({ text, children }: CopyButtonProps) {
       }}
     >
       {children}
-    </a>
+    </button>
   );
 }
