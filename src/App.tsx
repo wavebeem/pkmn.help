@@ -76,6 +76,7 @@ export function App() {
   async function updateApp() {
     setNeedRefresh(false);
     await updateServiceWorker(true);
+    location.reload();
   }
 
   const t = useTranslationsWithBlankFallback();

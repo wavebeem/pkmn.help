@@ -137,14 +137,15 @@ export function ScreenMore({
   return (
     <main className="pa3 center content-narrow">
       <div
-        hidden={!needsAppUpdate}
         className={classNames([
           "button-shadow",
           "bg1 fg1",
           "border2 ba br2",
           "pa3",
           "center",
-          "flex flex-column gap1",
+          "flex-column gap1",
+          needsAppUpdate && "flex",
+          !needsAppUpdate && "dn",
         ])}
       >
         <div className="flex gap1">

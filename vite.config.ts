@@ -2,6 +2,7 @@ import Papa from "papaparse";
 import react from "@vitejs/plugin-react";
 import { defineConfig, UserConfigExport } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
+import pluginPurgeCss from "vite-plugin-purgecss-updated-v5";
 import * as fs from "fs";
 import * as path from "path";
 
@@ -134,8 +135,10 @@ export default defineConfig((env) => {
     },
     plugins: [
       react(),
+      pluginPurgeCss(),
       VitePWA({
         mode: env.mode !== "development" ? "production" : "development",
+        registerType: "prompt",
         manifest: {
           name: "Pokémon Type Calculator",
           short_name: "pkmn.help",
