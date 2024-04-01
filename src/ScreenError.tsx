@@ -24,6 +24,8 @@ ${location.href}
 ${navigator.userAgent}
 
 ${JSON.stringify(localStorage)}
+
+${JSON.stringify(sessionStorage)}
 `.trim();
 
   async function copyMessage() {

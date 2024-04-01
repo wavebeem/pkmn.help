@@ -83,7 +83,11 @@ function Monster({ pokemon }: MonsterProps) {
   const language = useComputedLanguage();
   const [shiny, setShiny] = React.useState(false);
   const displayNumber = formatMonsterNumber(pokemon.number);
-  const params = new URLSearchParams({ types: pokemon.types.join(" ") });
+  const params = new URLSearchParams({
+    types: pokemon.types.join(" "),
+    ability: "none",
+    tera_type: "none",
+  });
   const speciesName = pokemon.speciesNames[language] || pokemon.speciesNames.en;
   const formName = pokemon.formNames[language] || pokemon.formNames.en;
   const formattedFormName = formName ? `(${formName})` : nbsp;

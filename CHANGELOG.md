@@ -8,6 +8,8 @@
 
 - Simplified the Pokéball easter egg visual a little bit
 
+- Fixed a bug where clicking "Defense" from a Pokémon in the Pokédex didn't reset abilities and tera types to none
+
 ## 2024-03-30
 
 - Improved the style of the easter egg when clicking the Pokeball in the header

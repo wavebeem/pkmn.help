@@ -17,7 +17,6 @@ import { useSearch } from "./useSearch";
 interface OffenseProps {
   generation: Generation;
   coverageTypes?: CoverageType[];
-  setOffenseParams: (params: string) => void;
   fallbackCoverageTypes: CoverageType[];
   isLoading: boolean;
 }
@@ -25,7 +24,6 @@ interface OffenseProps {
 export function ScreenOffense({
   generation,
   coverageTypes,
-  setOffenseParams,
   fallbackCoverageTypes,
   isLoading,
 }: OffenseProps) {
@@ -52,11 +50,6 @@ export function ScreenOffense({
   const updateOffenseTypes = (types: Type[]) => {
     navigate({ search: createParams(types) }, { replace: true });
   };
-
-  const params = createParams(offenseTypes);
-  React.useEffect(() => {
-    setOffenseParams(params);
-  }, [params, setOffenseParams]);
 
   const listLength = coverageTypes?.length ?? 0;
   const listLengthFormatted = listLength.toLocaleString(i18n.languages);

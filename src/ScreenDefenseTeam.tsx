@@ -15,18 +15,15 @@ import {
   types,
   typesWithoutNone,
 } from "./data-types";
-import { Matchups } from "./Matchups";
 import { MatchupsTeam, MatchupsTeamProps } from "./MatchupsTeam";
 import { Select } from "./Select";
 import { TypeSelector } from "./TypeSelector";
 import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
 import { useSearch } from "./useSearch";
-import { useTeamTypes } from "./useTeamTypes";
 import { useTypeCount } from "./useTypeCount";
-import { useTeamAbilities } from "./useTeamAbilities";
-import { useTeamTeraTypes } from "./useTeamTeraTypes";
 import { Badge } from "./Badge";
+import { useSessionStorage } from "usehooks-ts";
 
 const classH2 = "f4 weight-medium mb2 mt4";
 
@@ -85,10 +82,6 @@ function setTeraTypeAt({
 }
 
 interface State {
-  format: MatchupsTeamProps["format"];
-  types: Type[];
-  teraType: Type;
-  ability: AbilityName;
   teamTypesList: Type[][];
   teamTeraTypeList: Type[];
   teamAbilityList: AbilityName[];
@@ -106,136 +99,97 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
   const search = useSearch();
   const navigate = useNavigate();
 
-  const [teamTypes, setTeamTypes] = useTeamTypes();
-  const [teamTeraTypes, setTeamTeraTypes] = useTeamTeraTypes();
-  const [teamAbilities, setTeamAbilities] = useTeamAbilities();
+  const [format, setFormat] = useSessionStorage<MatchupsTeamProps["format"]>(
+    "defense-team.format",
+    "simple"
+  );
+  const [teamTypes, setTeamTypes] = useSessionStorage<Type[][]>(
+    "defense-team.types",
+    []
+  );
+  const [teamTeraTypes, setTeamTeraTypes] = useSessionStorage<Type[]>(
+    "defense-team.teraTypes",
+    []
+  );
+  const [teamAbilities, setTeamAbilities] = useSessionStorage<AbilityName[]>(
+    "defense-team.abilities",
+    []
+  );
 
   const [typeCount] = useTypeCount();
 
   const [teamIndex, setTeamIndex] = React.useState(-1);
 
-  const state: State = {
-    types: typesFromString(search.get("types") || "normal").slice(
-      0,
-      Number(typeCount)
-    ),
-    teraType: typesFromString(search.get("tera_type") || "none")[0],
-    ability: abilityNameFromString(search.get("ability") || undefined),
-    format: (search.get("format") || "simple") as any,
-    teamTypesList: (() => {
-      if (search.get("team_types") === null && search.get("mode") !== "team") {
-        return teamTypes;
-      }
-      return search.getAll("team_types").map((t) => {
-        return typesFromString(t).slice(0, Number(typeCount));
-      });
-    })(),
-    teamTeraTypeList: (() => {
-      if (
-        search.get("team_tera_types") === null &&
-        search.get("mode") !== "team"
-      ) {
-        return teamTeraTypes;
-      }
-      return search.getAll("team_tera_types").map((t) => {
-        return typesFromString(t)[0];
-      });
-    })(),
-    teamAbilityList: (() => {
-      if (
-        search.get("team_abilities") === null &&
-        search.get("mode") !== "team"
-      ) {
-        return teamAbilities;
-      }
-      return (search.get("team_abilities") || "")
-        .split(/\s+/)
-        .filter((str) => str)
-        .map(abilityNameFromString);
-    })(),
-  };
+  React.useEffect(() => {
+    if (search.has("format")) {
+      setFormat((search.get("format") || "simple") as any);
+    }
+    if (search.has("team_types")) {
+      setTeamTypes(
+        search.getAll("team_types").map((t) => {
+          return typesFromString(t).slice(0, Number(typeCount));
+        })
+      );
+    }
+    if (search.has("team_types")) {
+      setTeamTeraTypes(
+        search.getAll("team_tera_types").map((t) => {
+          return typesFromString(t)[0];
+        })
+      );
+    }
+    if (search.has("team_abilities")) {
+      setTeamAbilities(
+        (search.get("team_abilities") || "")
+          .split(/\s+/)
+          .filter((str) => str)
+          .map(abilityNameFromString)
+      );
+    }
+    navigate({ search: "" }, { replace: true });
+  }, []);
 
   React.useEffect(() => {
-    update({
-      ...state,
-      teamTypesList: state.teamTypesList.map((t) =>
+    setTeamTypes(
+      teamTypes.map((t) =>
         removeInvalidDefenseTypesForGeneration(generation, t)
-      ),
-    });
+      )
+    );
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [generation]);
-
-  function createParams({
-    ability,
-    format,
-    teamTypesList,
-    teamAbilityList,
-    types,
-    teraType,
-    teamTeraTypeList,
-  }: State): string {
-    teamTypesList = teamTypesList.map((types) => [...new Set(types)]);
-    types = [...new Set(types)];
-    const params = new URLSearchParams();
-    if (types.length >= 0) {
-      params.set("types", types.join(" "));
-    }
-    if (ability) {
-      params.set("ability", ability);
-    }
-    if (teraType) {
-      params.set("tera_type", teraType);
-    }
-    for (const types of teamTypesList) {
-      params.append("team_types", types.join(" "));
-    }
-    for (const type of teamTeraTypeList) {
-      params.append("team_tera_types", type);
-    }
-    if (teamAbilityList.length > 0) {
-      params.append("team_abilities", teamAbilityList.join(" "));
-    }
-    params.set("format", format);
-    return "?" + params;
-  }
-
-  function update(state: State) {
-    const search = createParams(state);
-    setTeamTypes(state.teamTypesList);
-    setTeamTeraTypes(state.teamTeraTypeList);
-    setTeamAbilities(state.teamAbilityList);
-    if (search !== location.search) {
-      navigate({ search }, { replace: true });
-    }
-  }
 
   function updateTeamTypesAt(
     listIndex: number,
     typeIndex: number
-  ): (t: Type) => void {
+  ): (type: Type) => void {
     return (t) => {
-      update({
-        ...state,
-        teamTypesList: state.teamTypesList.map((types, i) => {
+      setTeamTypes(
+        teamTypes.map((types, i) => {
           if (i === listIndex) {
             return removeNones(updateArrayAt(types, typeIndex, t));
           }
           return types;
-        }),
-      });
+        })
+      );
     };
   }
 
-  function updateTypeAt(index: number): (t: Type) => void {
-    return (t: Type) => {
-      update({
-        ...state,
-        types: removeNones(updateArrayAt(state.types, index, t)),
-      });
-    };
+  const permalink = new URL(location.href);
+  {
+    if (types.length >= 0) {
+      permalink.searchParams.set("types", types.join(" "));
+    }
+    for (const types of teamTypes) {
+      permalink.searchParams.append("team_types", types.join(" "));
+    }
+    for (const type of teamTeraTypes) {
+      permalink.searchParams.append("team_tera_types", type);
+    }
+    if (teamAbilities.length > 0) {
+      permalink.searchParams.append("team_abilities", teamAbilities.join(" "));
+    }
+    permalink.searchParams.set("format", format);
   }
-
-  const params = createParams(state);
 
   // Sort names alphabetically and remove "none" since we put that first
   // manually and add a divider after it
@@ -261,12 +215,12 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
         </div>
         <h2 className={classH2}>{t("defense.team.heading")}</h2>
         <div className="flex flex-column gap3">
-          {state.teamTypesList.length === 0 && (
+          {teamTypes.length === 0 && (
             <p className="fg4 f4 b m0 ba tc ma0 ph2 pv4 border3 br2">
               {t("defense.team.empty")}
             </p>
           )}
-          {state.teamTypesList.map((types, typeIndex) => {
+          {teamTypes.map((types, typeIndex) => {
             const name = String(typeIndex + 1);
             return (
               <div
@@ -312,11 +266,12 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
                     <Button
                       onClick={() => {
                         setTeamIndex(-1);
-                        const teamTypesList = [...state.teamTypesList];
+                        const teamTypesList = [...teamTypes];
                         teamTypesList.splice(typeIndex, 1);
-                        const teamAbilityList = [...state.teamAbilityList];
+                        const teamAbilityList = [...teamAbilities];
                         teamAbilityList.splice(typeIndex, 1);
-                        update({ ...state, teamTypesList, teamAbilityList });
+                        setTeamTypes(teamTypesList);
+                        setTeamAbilities(teamAbilityList);
                       }}
                       aria-label={t("defense.team.removeLong", { name })}
                       title={t("defense.team.removeLong", { name })}
@@ -360,7 +315,7 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
                   <div className="pt4">
                     <Select
                       label={t("defense.chooseAbility")}
-                      value={state.teamAbilityList[typeIndex]}
+                      value={teamAbilities[typeIndex]}
                       onChange={(event) => {
                         const ability = abilityNameFromString(
                           event.target.value
@@ -368,15 +323,14 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
                         if (!ability) {
                           return;
                         }
-                        update({
-                          ...state,
-                          teamAbilityList: setAbilityAt({
-                            list: state.teamAbilityList,
+                        setTeamAbilities(
+                          setAbilityAt({
+                            list: teamAbilities,
                             index: typeIndex,
                             value: ability,
-                            length: state.teamTypesList.length,
-                          }),
-                        });
+                            length: teamTypes.length,
+                          })
+                        );
                       }}
                     >
                       <option value="">{t("defense.abilityNames.none")}</option>
@@ -393,21 +347,20 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
                   <div className="pt4">
                     <Select
                       label={t("defense.chooseTeraType")}
-                      value={state.teamTeraTypeList[typeIndex]}
+                      value={teamTeraTypes[typeIndex]}
                       onChange={(event) => {
                         const type = typesFromString(event.target.value)[0];
                         if (!type) {
                           return;
                         }
-                        update({
-                          ...state,
-                          teamTeraTypeList: setTeraTypeAt({
-                            list: state.teamTeraTypeList,
+                        setTeamTeraTypes(
+                          setTeraTypeAt({
+                            list: teamTeraTypes,
                             index: typeIndex,
                             value: type,
-                            length: state.teamTypesList.length,
-                          }),
-                        });
+                            length: teamTypes.length,
+                          })
+                        );
                       }}
                     >
                       <option value={Type.none}>{t("types.none")}</option>
@@ -429,11 +382,8 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
         <div className="pt3">
           <Button
             onClick={() => {
-              const newTypes = [...state.teamTypesList, [Type.normal]];
-              update({
-                ...state,
-                teamTypesList: newTypes,
-              });
+              const newTypes = [...teamTypes, [Type.normal]];
+              setTeamTypes(newTypes);
               setTeamIndex(newTypes.length - 1);
             }}
           >
@@ -446,12 +396,9 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
         <div className="pt0 pt4-l">
           <Select
             onChange={(event) => {
-              update({
-                ...state,
-                format: event.target.value as any,
-              });
+              setFormat(event.target.value as any);
             }}
-            value={state.format}
+            value={format}
             label={t("defense.team.displayType")}
           >
             <option value="simple">{t("defense.team.simple")}</option>
@@ -463,10 +410,10 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
         <h2 className={classH2}>{t("defense.team.tableHeading")}</h2>
         <MatchupsTeam
           generation={generation}
-          typesList={state.teamTypesList}
-          teraTypes={state.teamTeraTypeList}
-          abilityList={state.teamAbilityList}
-          format={state.format}
+          typesList={teamTypes}
+          teraTypes={teamTeraTypes}
+          abilityList={teamAbilities}
+          format={format}
         />
       </div>
     </main>

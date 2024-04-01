@@ -23,7 +23,7 @@ export function ScreenCoverageList({
 }: CoverageListProps) {
   const { t } = useTranslation();
   const search = useSearch();
-  const page = Number(search.get("page") || 1) - 1;
+  const [page, setPage] = React.useState(0);
   const types = typesFromString(search.get("types") || "");
   const partitionedMatchups = partitionMatchups({
     coverageTypes,
@@ -31,7 +31,6 @@ export function ScreenCoverageList({
     generation,
   });
   const items = partitionedMatchups[mode];
-  const offenseParams = new URLSearchParams({ types: types.join(" ") });
   return (
     <main className="pa3 center content-narrow">
       <h2 className="lh-title f4 mv3 weight-medium">
@@ -39,10 +38,7 @@ export function ScreenCoverageList({
       </h2>
       <p className="flex gap1 items-center">
         <IconArrowLeft className="w1 h1" aria-hidden="true" />
-        <Link
-          to={`/offense/?${offenseParams}`}
-          className="underline fg-link br1 focus-outline"
-        >
+        <Link to="/offense/" className="underline fg-link br1 focus-outline">
           {t("coverage.back")}
         </Link>
       </p>
@@ -58,14 +54,7 @@ export function ScreenCoverageList({
       )}
       <hr className="subtle-hr mt4" />
       <Paginator
-        urlForPage={(number) => {
-          const path = `/offense/coverage/${mode}/`;
-          const params = new URLSearchParams({ types: types.join(" ") });
-          if (number > 0) {
-            params.set("page", String(number + 1));
-          }
-          return `${path}?${params}`;
-        }}
+        setPage={setPage}
         currentPage={page}
         pageSize={20}
         emptyState={
@@ -104,10 +93,7 @@ export function ScreenCoverageList({
       {items.length > 0 && (
         <p className="flex gap1 items-center">
           <IconArrowLeft className="w1 h1" aria-hidden="true" />
-          <Link
-            to={`/offense/?${offenseParams}`}
-            className="underline fg-link br1 focus-outline"
-          >
+          <Link to="/offense/" className="underline fg-link br1 focus-outline">
             {t("coverage.back")}
           </Link>
         </p>
