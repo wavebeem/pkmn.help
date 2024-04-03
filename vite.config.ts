@@ -190,8 +190,8 @@ export default defineConfig((env) => {
               purpose: "maskable",
             },
           ],
-          theme_color: "hsl(0 90% 45%)",
-          background_color: "hsl(0 90% 45%)",
+          theme_color: "hsl(0, 90%, 45%)",
+          background_color: "hsl(0, 90%, 45%)",
           display: "standalone",
         },
         // These files are downloaded in the background automatically and stored
