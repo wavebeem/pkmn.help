@@ -1,5 +1,13 @@
 # Changelog
 
+# 2024-04-03
+
+- Fixed an issue where Pokedex images would load slower than they should
+
+- Fixed an issue where buttons and select inputs were shorter than they should be
+
+- Improved initial loading speed for slow network connections
+
 ## 2024-04-01
 
 - Made the Stellar type less visually distracting and easier to read
