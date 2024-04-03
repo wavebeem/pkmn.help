@@ -132,17 +132,6 @@ export default defineConfig((env) => {
     },
     build: {
       sourcemap: true,
-      rollupOptions: {
-        output: {
-          // Put npm packages into separate bundles that can be cached longer
-          manualChunks: (id) => {
-            if (id.includes("node_modules")) {
-              return "vendor";
-            }
-            return undefined;
-          },
-        },
-      },
     },
     plugins: [
       react(),
