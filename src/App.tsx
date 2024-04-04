@@ -113,7 +113,7 @@ export function App() {
   const [theme] = useTheme();
   const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const isDark = theme === "dark" || (theme === "auto" && isDarkMode);
-  const themeColor = isDark ? "hsl(0 70% 40%)" : "hsl(0 90% 45%)";
+  const themeColor = isDark ? "hsl(0, 70%, 40%)" : "hsl(0, 90%, 45%)";
   const themeAuto = isDark ? "dark" : "light";
 
   // Load Pokédex JSON
@@ -177,6 +177,7 @@ export function App() {
           <button
             className={styles.headerButton}
             data-theme={pokeballTheme}
+            aria-label=""
             onClick={(event) => {
               event.preventDefault();
               const pkmn = randomItem(AllPokemon);
