@@ -73,6 +73,7 @@
     "chooseAbility": "Scegli un'abilità",
     "abilityNames": {
       "none": "Nessuna",
+      "tera_shell": "Teraguscio",
       "filter": "Filtro",
       "wonder_guard": "Magidifesa",
       "delta_stream": "Flusso Delta",

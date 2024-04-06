@@ -75,6 +75,7 @@
     "chooseTeraType": "Choisir le type téracristal",
     "abilityNames": {
       "none": "Aucun",
+      "tera_shell": "Téra-Carapace",
       "filter": "Filtre",
       "wonder_guard": "Garde Mystik",
       "delta_stream": "Souffle Delta",

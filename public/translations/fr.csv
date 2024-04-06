@@ -47,6 +47,7 @@ defense.takesXFrom,Takes {{ x }} from,Subit {{ x }} De
 defense.chooseAbility,Choose ability,Choisir le talent
 defense.chooseTeraType,Choose tera type,Choisir le type téracristal
 defense.abilityNames.none,None,Aucun
+defense.abilityNames.tera_shell,Tera Shell,Téra-Carapace
 defense.abilityNames.filter,Filter,Filtre
 defense.abilityNames.wonder_guard,Wonder Guard,Garde Mystik
 defense.abilityNames.delta_stream,Delta Stream,Souffle Delta

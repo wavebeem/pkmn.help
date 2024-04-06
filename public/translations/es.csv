@@ -47,6 +47,7 @@ defense.takesXFrom,Takes {{ x }} from,Sufre {{ x }} por
 defense.chooseAbility,Choose ability,Elige Habilidad
 defense.chooseTeraType,Choose tera type,Elige teratipo
 defense.abilityNames.none,None,Ninguna
+defense.abilityNames.tera_shell,Tera Shell,Teracaparazón
 defense.abilityNames.filter,Filter,Filtro
 defense.abilityNames.wonder_guard,Wonder Guard,Superguarda
 defense.abilityNames.delta_stream,Delta Stream,Ráfaga Delta

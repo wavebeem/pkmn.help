@@ -186,6 +186,8 @@ export function matchupFor({
   let n = 1;
   // Tera Pokémon (other than Stellar type) use their Tera type as their sole
   // defensive type
+  //
+  // https://bulbapedia.bulbagarden.net/wiki/Terastal_phenomenon
   if (!(defenseTeraType === Type.none || defenseTeraType === Type.stellar)) {
     defenseTypes = [defenseTeraType, Type.none];
   }
@@ -205,25 +207,45 @@ export function matchupFor({
       x = matchupForPair(generation, t, offenseType);
     }
     // Delta stream protects flying types from super effective damage
+    //
+    // https://bulbapedia.bulbagarden.net/wiki/Delta_Stream_(Ability)
     if (t === Type.flying && abilityName === "delta_stream" && x > 1) {
       x = 1;
     }
     n *= x;
   }
   // Tera Pokémon take double damage from Stellar attacks
+  //
+  // https://bulbapedia.bulbagarden.net/wiki/Stellar_(type)
   if (defenseTeraType !== Type.none && offenseType === Type.stellar) {
     n *= 2;
   }
   // Wonder guard blocks all non-super effective damage
+  //
+  // https://bulbapedia.bulbagarden.net/wiki/Wonder_Guard_(Ability)
   if (abilityName === "wonder_guard") {
     if (n <= 1) {
       n = 0;
     }
   }
   // Filter reduces all super effective damage by 25%
+  //
+  // https://bulbapedia.bulbagarden.net/wiki/Filter_(Ability)
   if (abilityName === "filter") {
     if (n > 1) {
       n *= 0.75;
+    }
+  }
+  // When Terapagos is hit by a damage-dealing move at full HP (that does not
+  // have no effect due to type matchups), it will always be not very effective.
+  //
+  // Seeing as we don't model HP, just assume we're at full HP the whole time
+  // and that people know what the ability actually does.
+  //
+  //https://bulbapedia.bulbagarden.net/wiki/Tera_Shell_(Ability)
+  if (abilityName === "tera_shell") {
+    if (n > 0) {
+      n = 0.5;
     }
   }
   return n;

@@ -50,6 +50,7 @@
     "takesXFrom": "Принимает {{ x }} от",
     "abilityNames": {
       "filter": "Filter",
+      "tera_shell": "Tera Shell",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",

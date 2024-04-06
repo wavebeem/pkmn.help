@@ -88,6 +88,7 @@ export const abilities = {
   filter: createAbility(),
   wonder_guard: createAbility(),
   delta_stream: createAbility(),
+  tera_shell: createAbility(),
 } as const;
 
 const abilitySet = new Set(Object.keys(abilities));

@@ -50,6 +50,7 @@
     "takesXFrom": "Nimmt {{ x }} Schaden von",
     "abilityNames": {
       "filter": "Filter",
+      "tera_shell": "Tera-Panzer",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",

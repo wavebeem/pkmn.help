@@ -52,6 +52,7 @@
     "chooseTeraType": "テラスタイプ",
     "abilityNames": {
       "none": "なし",
+      "tera_shell": "テラスシェル",
       "filter": "フィルター",
       "wonder_guard": "ふしぎなまもり",
       "delta_stream": "デルタストリーム",

@@ -73,6 +73,7 @@
     "chooseAbility": "特性",
     "abilityNames": {
       "none": "无",
+      "tera_shell": "太晶甲殼",
       "filter": "過濾",
       "wonder_guard": "神奇守护",
       "delta_stream": "德尔塔气流",
