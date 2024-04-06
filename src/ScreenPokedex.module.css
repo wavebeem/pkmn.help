@@ -53,7 +53,7 @@
 
 @media (min-width: 60em) {
   .monster {
-    grid-template-columns: 220px 1fr;
+    grid-template-columns: 256px 1fr;
     grid-template-areas:
       "icon stats"
       "icon links";

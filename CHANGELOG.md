@@ -1,5 +1,25 @@
 # Changelog
 
+# 2024-04-06
+
+- Fixed a bug where shiny Pokémon would do their bounce animation before the shiny sprite was loaded
+
+- Added a subtle glow to Pokédex sprites, making dark Pokémon stand out better when using a dark theme
+
+- Fixed Pokédex images to display at the correct size on desktop
+
+- Optimized Pokédex images as WebP format to increase site loading speed
+
+  - Images should load as WebP 512x512 on retina displays
+
+  - Images should load as WebP 256x256 on non-retina displays
+
+  - WebP images are encoded using `sharp` with the default settings (80% quality lossy compression, with 100% quality alpha compression)
+
+  - PNG files still exist and are automatically served to browser that don't support WebP
+
+  - If you want to download an image as PNG instead, just change the URL to end with `.png` instead of `.webp`
+
 # 2024-04-05
 
 - Upgraded to Pokémon Home images

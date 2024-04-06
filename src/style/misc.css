@@ -200,7 +200,8 @@ input {
 }
 
 .img-shadow {
-  filter: drop-shadow(4px 4px 16px rgb(0 0 0 / 20%));
+  filter: drop-shadow(0 0 1px hsl(0 0% 100% / 50%))
+    drop-shadow(4px 4px 16px hsl(0 0% 0% / 20%));
 }
 
 .button-selected {
