@@ -11,7 +11,7 @@ function getImage({
   size: 256 | 512;
   fileType: "webp" | "png";
 }): string {
-  const dir = "img/" + fileType + size;
+  const dir = `img/${size}`;
   const filename = shiny ? `${id}-shiny` : id;
   return new URL(`${dir}/${filename}.${fileType}`, publicPath).href;
 }
