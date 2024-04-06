@@ -1,5 +1,9 @@
 # Changelog
 
+# 2024-04-05
+
+- Added the ability Tera Shell
+
 # 2024-04-03
 
 - Fixed an issue where Pokedex images would load slower than they should
