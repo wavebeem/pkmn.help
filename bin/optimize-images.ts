@@ -20,10 +20,10 @@ export async function optimizeImages() {
     const nameWebp512 = path.join(path512, `${baseName}.webp`);
     console.log("Optimizing", fullName + "...");
     await Promise.all([
-      sharp(fullName).resize(256).toFile(namePNG256),
-      sharp(fullName).toFile(namePNG512),
-      sharp(fullName).resize(256).toFile(nameWebp256),
-      sharp(fullName).toFile(nameWebp512),
+      sharp(fullName).png({}).resize(256).toFile(namePNG256),
+      sharp(fullName).png({}).toFile(namePNG512),
+      sharp(fullName).webp({}).resize(256).toFile(nameWebp256),
+      sharp(fullName).webp({}).toFile(nameWebp512),
     ]);
   }
 }
