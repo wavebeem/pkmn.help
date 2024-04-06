@@ -16,7 +16,9 @@
 
   - WebP images are encoded using `sharp` with the default settings (80% quality lossy compression, with 100% quality alpha compression)
 
-  - In case you're using an ancient browser, or want to access the PNGs anyway, you can change the URL to end in `.png` instead of `.webp` to access the PNG version
+  - PNG files still exist and are automatically served to browser that don't support WebP
+
+  - If you want to download an image as PNG instead, just change the URL to end with `.png` instead of `.webp`
 
 # 2024-04-05
 
