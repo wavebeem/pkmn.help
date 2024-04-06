@@ -150,11 +150,9 @@ export function App() {
         >
           <MonsterImage
             pokemonID={easterEgg.id}
-            imageType={easterEgg.imageType}
             onLoad={({ pokemonID }) => {
               setEasterEggLoadedID(pokemonID);
             }}
-            scale={2}
           />
         </div>
       )}

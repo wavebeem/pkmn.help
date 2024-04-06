@@ -65,6 +65,12 @@ interface PokemonDetail {
   sprites: {
     front_default: string;
     front_shiny: string;
+    other: {
+      home: {
+        front_default: string;
+        front_shiny: string;
+      };
+    };
   };
 }
 
@@ -157,8 +163,8 @@ export async function scrapePokeapi(): Promise<void> {
         speciesNames,
         formNames,
         number: speciesDetail.id,
-        spriteURL: detail.sprites.front_default,
-        shinySpriteURL: detail.sprites.front_shiny ?? "",
+        spriteURL: detail.sprites.other.home.front_default,
+        shinySpriteURL: detail.sprites.other.home.front_shiny ?? "",
         hp: stats["hp"] ?? 0,
         attack: stats["attack"] ?? 0,
         defense: stats["defense"] ?? 0,
