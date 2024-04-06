@@ -1,5 +1,9 @@
 # Changelog
 
+# 2024-04-06
+
+- Optimized Pokédex images as WebP format to increase site loading speed
+
 # 2024-04-05
 
 - Upgraded to Pokémon Home images

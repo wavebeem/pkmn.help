@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import * as React from "react";
-import { getImage } from "./getImage";
+import { getPngSrc, getWebpSrcSet } from "./getImage";
 import styles from "./MonsterImage.module.css";
 
 type State = "default" | "errored";
@@ -38,19 +38,25 @@ export function MonsterImage({
       >
         ?
       </div>
-      <img
-        loading="lazy"
-        src={getImage(pokemonID + (shiny ? "-shiny" : ""))}
-        role="presentation"
-        alt=""
-        hidden={state === "errored"}
-        data-shiny={shiny}
-        className={classNames("db img-shadow h-auto", styles.image)}
-        width={size}
-        height={size}
-        onLoad={setLoaded}
-        onError={setErrored}
-      />
+      <picture>
+        <source
+          srcSet={getWebpSrcSet({ id: pokemonID, shiny })}
+          type="image/webp"
+        />
+        <img
+          loading="lazy"
+          src={getPngSrc({ id: pokemonID, shiny })}
+          role="presentation"
+          alt=""
+          hidden={state === "errored"}
+          data-shiny={shiny}
+          className={classNames("db img-shadow h-auto", styles.image)}
+          width={size}
+          height={size}
+          onLoad={setLoaded}
+          onError={setErrored}
+        />
+      </picture>
     </div>
   );
 }
