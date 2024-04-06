@@ -8,7 +8,6 @@ type State = "default" | "errored";
 interface MonsterImageProps {
   pokemonID: string;
   onLoad?: ({ pokemonID }: { pokemonID: string }) => void;
-  imageType: "sprite" | "hd";
   scale?: number;
   shiny?: boolean;
 }
@@ -16,11 +15,10 @@ interface MonsterImageProps {
 export function MonsterImage({
   pokemonID,
   onLoad,
-  imageType,
-  scale = 1,
+  scale = 0.5,
   shiny = false,
 }: MonsterImageProps): JSX.Element {
-  const size = 96 * scale;
+  const size = 512 * scale;
   const [state, setState] = React.useState<State>("default");
   const setLoaded = React.useCallback(() => {
     setState("default");
@@ -41,14 +39,13 @@ export function MonsterImage({
         ?
       </div>
       <img
+        loading="lazy"
         src={getImage(pokemonID + (shiny ? "-shiny" : ""))}
         role="presentation"
         alt=""
         hidden={state === "errored"}
         data-shiny={shiny}
-        className={classNames("db img-shadow h-auto", styles.image, {
-          "img-crisp": imageType === "sprite",
-        })}
+        className={classNames("db img-shadow h-auto", styles.image)}
         width={size}
         height={size}
         onLoad={setLoaded}

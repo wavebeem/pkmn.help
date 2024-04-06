@@ -199,14 +199,8 @@ input {
   user-select: none;
 }
 
-.img-crisp {
-  /* https://caniuse.com/css-crisp-edges */
-  image-rendering: crisp-edges;
-  image-rendering: pixelated;
-}
-
 .img-shadow {
-  filter: drop-shadow(4px 4px 0 rgb(0 0 0 / 10%));
+  filter: drop-shadow(4px 4px 16px rgb(0 0 0 / 20%));
 }
 
 .button-selected {

@@ -2,6 +2,14 @@
 
 # 2024-04-05
 
+- Upgraded to Pokémon Home images
+
+  - They are much larger and higher detail
+
+  - Many new shiny forms were added
+
+  - Many sprite errors were corrected with this change
+
 - Added the ability Tera Shell
 
 - Fixed an issue with the Pokédex pagination buttons being too short on mobile

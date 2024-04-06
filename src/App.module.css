@@ -29,7 +29,7 @@
 }
 
 .easterEgg img {
-  filter: drop-shadow(0 0 16px hsl(0 0% 100%));
+  filter: drop-shadow(4px 4px 16px rgb(0 0 0 / 40%));
 }
 
 @keyframes easterEgg_animation {
@@ -63,7 +63,6 @@
 
 .headerButton {
   --size: 1.25em;
-
   position: relative;
   border: 0;
   color: white;

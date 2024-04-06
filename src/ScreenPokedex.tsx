@@ -101,7 +101,6 @@ function Monster({ pokemon, setQuery }: MonsterProps) {
       className={classNames(
         "fg1 mv3",
         "flex flex-column items-stretch",
-        "gap4",
         "relative",
         "pa3 br3 bg1 ba border2 button-shadow"
       )}
@@ -153,12 +152,7 @@ function Monster({ pokemon, setQuery }: MonsterProps) {
         <div className={`${styles.monsterIcon} flex flex-column`}>
           <div className="flex flex-column">
             <div className="pv3 flex justify-center">
-              <MonsterImage
-                scale={2}
-                pokemonID={pokemon.id}
-                imageType={pokemon.imageType}
-                shiny={shiny}
-              />
+              <MonsterImage pokemonID={pokemon.id} shiny={shiny} />
             </div>
             <div className="flex flex-wrap gap1 justify-center items-start">
               {pokemon.types.map((t, i) => (
