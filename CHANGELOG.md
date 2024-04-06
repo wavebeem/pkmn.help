@@ -2,7 +2,17 @@
 
 # 2024-04-06
 
+- Fixed a bug where shiny Pokémon would do their bounce animation before the shiny sprite was loaded
+
 - Optimized Pokédex images as WebP format to increase site loading speed
+
+  - Images should load as WebP 512x512 on retina displays
+
+  - Images should load as WebP 256x256 on non-retina displays
+
+  - WebP images are encoded using `sharp` with the default settings (80% quality lossy compression, with 100% quality alpha compression)
+
+  - In case you're using an ancient browser, or want to access the PNGs anyway, you can change the URL to end in `.png` instead of `.webp` to access the PNG version
 
 # 2024-04-05
 

@@ -3,7 +3,7 @@ import * as React from "react";
 import { getPngSrc, getWebpSrcSet } from "./getImage";
 import styles from "./MonsterImage.module.css";
 
-type State = "default" | "errored";
+type State = "loaded" | "loading" | "errored";
 
 interface MonsterImageProps {
   pokemonID: string;
@@ -19,9 +19,9 @@ export function MonsterImage({
   shiny = false,
 }: MonsterImageProps): JSX.Element {
   const size = 512 * scale;
-  const [state, setState] = React.useState<State>("default");
+  const [state, setState] = React.useState<State>("loading");
   const setLoaded = React.useCallback(() => {
-    setState("default");
+    setState("loaded");
     onLoad?.({ pokemonID });
   }, [onLoad, pokemonID]);
   const setErrored = React.useCallback(() => {
@@ -49,7 +49,7 @@ export function MonsterImage({
           role="presentation"
           alt=""
           hidden={state === "errored"}
-          data-shiny={shiny}
+          data-shiny={shiny && state === "loaded"}
           className={classNames("db img-shadow h-auto", styles.image)}
           width={size}
           height={size}
