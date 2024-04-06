@@ -47,6 +47,7 @@ defense.takesXFrom,Takes {{ x }} from,{{ x }} 피해
 defense.chooseAbility,Choose ability,특성을 선택하세요
 defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,없음
+defense.abilityNames.tera_shell,Tera Shell,테라셸
 defense.abilityNames.filter,Filter,
 defense.abilityNames.wonder_guard,Wonder Guard,불가사의부적
 defense.abilityNames.delta_stream,Delta Stream,델타스트림

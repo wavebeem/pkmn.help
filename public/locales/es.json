@@ -75,6 +75,7 @@
     "chooseTeraType": "Elige teratipo",
     "abilityNames": {
       "none": "Ninguna",
+      "tera_shell": "Teracaparazón",
       "filter": "Filtro",
       "wonder_guard": "Superguarda",
       "delta_stream": "Ráfaga Delta",

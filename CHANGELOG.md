@@ -1,8 +1,14 @@
 # Changelog
 
+# 2024-04-05
+
+- Added the ability Tera Shell
+
+- Fixed an issue with the Pokédex pagination buttons being too short on mobile
+
 # 2024-04-03
 
-- Fixed an issue where Pokedex images would load slower than they should
+- Fixed an issue where Pokédex images would load slower than they should
 
 - Fixed an issue where buttons and select inputs were shorter than they should be
 
@@ -34,15 +40,15 @@
 
 ## 2024-03-30
 
-- Improved the style of the easter egg when clicking the Pokeball in the header
+- Improved the style of the easter egg when clicking the Pokéball in the header
 
 - Added lots of missing shiny forms
 
   - The images are kind of low quality, but it's better than nothing!
 
-- Fixed lack of line wrapping in Pokedex types in Russian
+- Fixed lack of line wrapping in Pokédex types in Russian
 
-- Fixed Pokeball icon in the header being squished at certain screen sizes
+- Fixed Pokéball icon in the header being squished at certain screen sizes
 
 - Removed "editCSVonline" from list of CSV apps
 
@@ -269,7 +275,7 @@
 
 ## 2023-04-18
 
-- Pokemon bounce when entering their shiny form in the Pokédex
+- Pokémon bounce when entering their shiny form in the Pokédex
 
 - Percentage bars on the offense page animate when changing now
 
@@ -277,9 +283,9 @@
 
 - Shiny link is now a toggle button in the top right of each Pokédex entry
 
-- Hide shiny link for Scarlet/Violet Pokemon since we don't have shiny images for them
+- Hide shiny link for Scarlet/Violet Pokémon since we don't have shiny images for them
 
-- Improve accessibility for Pokemon links so it's clearer
+- Improve accessibility for Pokémon links so it's clearer
 
 ## 2023-04-14
 
@@ -330,7 +336,7 @@
 
 - Fixed layout issues for browser default font sizes greater than 16px
 
-- Improved pagination to show first and last Pokemon numbers in addition to page numbers
+- Improved pagination to show first and last Pokémon numbers in addition to page numbers
 
 - Fixed Danish capitalization of "Flyvende"
 
@@ -340,7 +346,7 @@
 
 ## 2022-12-31
 
-- Fixed an issue where auto-detect language wasn't respected for Pokemon names (https://github.com/wavebeem/pkmn.help/issues/192)
+- Fixed an issue where auto-detect language wasn't respected for Pokémon names (https://github.com/wavebeem/pkmn.help/issues/192)
 
 ## 2022-12-29
 

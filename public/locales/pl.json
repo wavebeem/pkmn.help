@@ -71,6 +71,7 @@
     "takesXFrom": "Dostaje {{ x }} od",
     "abilityNames": {
       "filter": "Filter",
+      "tera_shell": "Tera Shell",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",

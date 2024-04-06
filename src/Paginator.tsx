@@ -31,8 +31,8 @@ function PageSelector<T>({
 }: PageSelectorProps<T>) {
   const { t } = useTranslation();
 
-  const hasRoomForMediumButtons = useMediaQuery("(min-width: 45ch)");
-  const hasRoomForLargeButtons = useMediaQuery("(min-width: 60ch");
+  const hasRoomForMediumButtons = useMediaQuery("(min-width: 420px)");
+  const hasRoomForLargeButtons = useMediaQuery("(min-width: 520px");
 
   const buttonSize = hasRoomForLargeButtons
     ? "large"
@@ -42,6 +42,8 @@ function PageSelector<T>({
 
   const first = pageItems[0] || undefined;
   const last = pageItems[pageItems.length - 1] || undefined;
+
+  const iconClasses = "w1 h1 mv1";
 
   return (
     <>
@@ -75,7 +77,7 @@ function PageSelector<T>({
           aria-label={t("pokedex.pagination.firstLong")}
           className="flex items-center"
         >
-          <IconArrowLeftDouble className="w1 h1" aria-hidden="true" />
+          <IconArrowLeftDouble className={iconClasses} aria-hidden="true" />
         </Button>
         <Button
           disabled={!hasPrev}
@@ -84,7 +86,7 @@ function PageSelector<T>({
           aria-label={t("pokedex.pagination.previousLong")}
           className="flex items-center gap1"
         >
-          <IconArrowLeft className="w1 h1" aria-hidden="true" />
+          <IconArrowLeft className={iconClasses} aria-hidden="true" />
           {buttonSize === "medium" && t("pokedex.pagination.previous")}
           {buttonSize === "large" && t("pokedex.pagination.previousLong")}
         </Button>
@@ -98,7 +100,7 @@ function PageSelector<T>({
         >
           {buttonSize === "medium" && t("pokedex.pagination.next")}
           {buttonSize === "large" && t("pokedex.pagination.nextLong")}
-          <IconArrowRight className="w1 h1" aria-hidden="true" />
+          <IconArrowRight className={iconClasses} aria-hidden="true" />
         </Button>
         <Button
           disabled={!hasNext}
@@ -107,7 +109,7 @@ function PageSelector<T>({
           aria-label={t("pokedex.pagination.lastLong")}
           className="flex items-center"
         >
-          <IconArrowRightDouble className="w1 h1" aria-hidden="true" />
+          <IconArrowRightDouble className={iconClasses} aria-hidden="true" />
         </Button>
       </div>
     </>
