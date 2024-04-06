@@ -4,6 +4,10 @@
 
 - Fixed a bug where shiny Pokémon would do their bounce animation before the shiny sprite was loaded
 
+- Added a subtle glow to Pokédex sprites, making dark Pokémon stand out better when using a dark theme
+
+- Fixed Pokédex images to display at the correct size on desktop
+
 - Optimized Pokédex images as WebP format to increase site loading speed
 
   - Images should load as WebP 512x512 on retina displays
