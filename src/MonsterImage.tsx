@@ -39,6 +39,7 @@ export function MonsterImage({
         ?
       </div>
       <img
+        loading="lazy"
         src={getImage(pokemonID + (shiny ? "-shiny" : ""))}
         role="presentation"
         alt=""
