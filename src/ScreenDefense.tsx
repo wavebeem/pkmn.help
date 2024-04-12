@@ -65,6 +65,10 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
   );
 
   React.useEffect(() => {
+    setTypes((types) => types.slice(0, Number(typeCount)));
+  }, [typeCount]);
+
+  React.useEffect(() => {
     if (search.has("types")) {
       setTypes(
         typesFromString(search.get("types") || "normal").slice(

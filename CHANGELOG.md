@@ -1,5 +1,9 @@
 # Changelog
 
+# 2024-04-11
+
+- Fixed an issue where changing from "three types" to "two types" mode would accidentally retain the third type on the defense pages
+
 # 2024-04-06
 
 - Fixed a bug where shiny Pokémon would do their bounce animation before the shiny sprite was loaded

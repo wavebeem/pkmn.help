@@ -111,6 +111,12 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
   const [teamIndex, setTeamIndex] = React.useState(-1);
 
   React.useEffect(() => {
+    setTeamTypes((teamTypes) =>
+      teamTypes.map((types) => types.slice(0, Number(typeCount)))
+    );
+  }, [typeCount]);
+
+  React.useEffect(() => {
     if (search.has("format")) {
       setFormat((search.get("format") || "simple") as any);
     }
