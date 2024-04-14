@@ -38,7 +38,7 @@ export async function mergeData(): Promise<void> {
 
   mons = uniqBy(mons, pkmnUniqBy);
   mons = sortBy(mons, (mon) => mon.number);
-  mons = mons.filter((mon) => blockList.has(mon.name));
+  mons = mons.filter((mon) => !blockList.has(mon.name));
 
   // Create unique IDs for gen9 data
   for (const m of mons) {
