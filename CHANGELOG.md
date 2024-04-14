@@ -1,5 +1,11 @@
 # Changelog
 
+# 2024-04-14
+
+- Removed "Starter Eevee" from the Pokédex
+
+- Reduced the size of the Pokédex database by removing an unused field from each entry
+
 # 2024-04-11
 
 - Fixed an issue where changing from "three types" to "two types" mode would accidentally retain the third type on the defense pages
