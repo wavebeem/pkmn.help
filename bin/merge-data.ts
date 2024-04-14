@@ -1,7 +1,6 @@
 /* eslint-disable no-console */
 import * as fs from "fs";
 import { uniqBy, sortBy } from "lodash-es";
-import * as path from "path";
 import { saveJSON } from "./util.js";
 
 // const pokemondbJSON = "data/pokemondb-gen9.json";
@@ -27,17 +26,11 @@ function pkmnUniqBy(mon: Record<string, any>): string {
   ]);
 }
 
+const blockList = new Set(["pikachu-starter", "eevee-starter"]);
+
 export async function mergeData(): Promise<void> {
   const pokeapi: Record<string, any>[] = loadJSON(pokeapiJSON);
   // const gen9: Record<string, any>[] = loadJSON(pokemondbJSON);
-
-  for (const mon of pokeapi) {
-    mon.imageType = "sprite";
-  }
-
-  // for (const mon of gen9) {
-  //   mon.imageType = "hd";
-  // }
 
   let mons = pokeapi;
   // let mons = [...pokeapi, ...gen9];
@@ -45,13 +38,13 @@ export async function mergeData(): Promise<void> {
 
   mons = uniqBy(mons, pkmnUniqBy);
   mons = sortBy(mons, (mon) => mon.number);
-  mons = mons.filter((mon) => mon.name !== "pikachu-starter");
+  mons = mons.filter((mon) => blockList.has(mon.name));
 
   // Create unique IDs for gen9 data
   for (const m of mons) {
     delete m.spriteURL;
     delete m.shinySpriteURL;
-    if (fs.existsSync(`public/img/${m.id}-shiny.png`)) {
+    if (fs.existsSync(`public/img/512/${m.id}-shiny.png`)) {
       m.hasShiny = true;
     }
     const id = String(m.id || m.number);
