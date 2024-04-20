@@ -27,7 +27,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -58,7 +57,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -89,7 +87,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -131,7 +128,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -161,7 +157,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -191,7 +186,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -222,7 +216,6 @@
       "fire",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -264,7 +257,6 @@
       "fire",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -306,7 +298,6 @@
       "fire",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -336,7 +327,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -366,7 +356,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -396,7 +385,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -437,7 +425,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -467,7 +454,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -497,7 +483,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -528,7 +513,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -559,7 +543,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -590,7 +573,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -621,7 +603,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -663,7 +644,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -694,7 +674,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -725,7 +704,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -756,7 +734,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -798,7 +775,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -828,7 +804,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -870,7 +845,6 @@
       "dark",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -900,7 +874,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -942,7 +915,6 @@
       "dark",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -973,7 +945,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1004,7 +975,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1034,7 +1004,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1064,7 +1033,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1094,7 +1062,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1124,7 +1091,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1166,7 +1132,6 @@
       "electric",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1196,7 +1161,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1238,7 +1202,6 @@
       "ice",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1268,7 +1231,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1310,7 +1272,6 @@
       "ice",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1340,7 +1301,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1370,7 +1330,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1401,7 +1360,6 @@
       "poison",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1431,7 +1389,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1461,7 +1418,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1492,7 +1448,6 @@
       "poison",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1522,7 +1477,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1552,7 +1506,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1582,7 +1535,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1623,7 +1575,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1653,7 +1604,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1695,7 +1645,6 @@
       "ice",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1726,7 +1675,6 @@
       "normal",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1757,7 +1705,6 @@
       "normal",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1788,7 +1735,6 @@
       "poison",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1819,7 +1765,6 @@
       "poison",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1850,7 +1795,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1881,7 +1825,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1912,7 +1855,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1943,7 +1885,6 @@
       "bug",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -1974,7 +1915,6 @@
       "bug",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2005,7 +1945,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2036,7 +1975,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2066,7 +2004,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2108,7 +2045,6 @@
       "ground",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2138,7 +2074,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2180,7 +2115,6 @@
       "ground",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2210,7 +2144,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2251,7 +2184,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2292,7 +2224,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2322,7 +2253,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2363,7 +2293,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2393,7 +2322,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2423,7 +2351,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2453,7 +2380,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2483,7 +2409,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2513,7 +2438,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2550,7 +2474,6 @@
       "fire",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2580,7 +2503,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2617,7 +2539,6 @@
       "fire",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2647,7 +2568,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2677,7 +2597,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2708,7 +2627,6 @@
       "water",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2738,7 +2656,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2768,7 +2685,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2798,7 +2714,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2839,7 +2754,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2869,7 +2783,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2899,7 +2812,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2929,7 +2841,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2960,7 +2871,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -2991,7 +2901,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3022,7 +2931,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3053,7 +2961,6 @@
       "water",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3084,7 +2991,6 @@
       "water",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3115,7 +3021,6 @@
       "rock",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3157,7 +3062,6 @@
       "rock",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3188,7 +3092,6 @@
       "rock",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3230,7 +3133,6 @@
       "rock",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3261,7 +3163,6 @@
       "rock",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3303,7 +3204,6 @@
       "rock",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3333,7 +3233,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3374,7 +3273,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3404,7 +3302,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3446,7 +3343,6 @@
       "psychic",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3477,7 +3373,6 @@
       "water",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3518,7 +3413,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3549,7 +3443,6 @@
       "water",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3591,7 +3484,6 @@
       "water",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3633,7 +3525,6 @@
       "poison",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3664,7 +3555,6 @@
       "electric",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3695,7 +3585,6 @@
       "electric",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3726,7 +3615,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3767,7 +3655,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3798,7 +3685,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3829,7 +3715,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3859,7 +3744,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3890,7 +3774,6 @@
       "water",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3920,7 +3803,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3962,7 +3844,6 @@
       "poison",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -3992,7 +3873,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4034,7 +3914,6 @@
       "poison",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4064,7 +3943,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4095,7 +3973,6 @@
       "water",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4126,7 +4003,6 @@
       "ghost",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4157,7 +4033,6 @@
       "ghost",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4188,7 +4063,6 @@
       "ghost",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4230,7 +4104,6 @@
       "ghost",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4261,7 +4134,6 @@
       "rock",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4291,7 +4163,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4321,7 +4192,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4351,7 +4221,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4381,7 +4250,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4411,7 +4279,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4448,7 +4315,6 @@
       "electric",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4478,7 +4344,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4515,7 +4380,6 @@
       "electric",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4546,7 +4410,6 @@
       "grass",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4577,7 +4440,6 @@
       "grass",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4619,7 +4481,6 @@
       "grass",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4649,7 +4510,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4679,7 +4539,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4721,7 +4580,6 @@
       "fire",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4751,7 +4609,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4781,7 +4638,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4811,7 +4667,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4841,7 +4696,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4871,7 +4725,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4913,7 +4766,6 @@
       "poison",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4944,7 +4796,6 @@
       "ground",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -4975,7 +4826,6 @@
       "ground",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5005,7 +4855,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5035,7 +4884,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5065,7 +4913,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5106,7 +4953,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5136,7 +4982,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5166,7 +5011,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5196,7 +5040,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5226,7 +5069,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5256,7 +5098,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5287,7 +5128,6 @@
       "water",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5318,7 +5158,6 @@
       "psychic",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5360,7 +5199,6 @@
       "ice",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5391,7 +5229,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5422,7 +5259,6 @@
       "ice",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5452,7 +5288,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5482,7 +5317,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5512,7 +5346,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5554,7 +5387,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5584,7 +5416,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5619,7 +5450,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5655,7 +5485,6 @@
       "fighting",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5691,7 +5520,6 @@
       "fighting",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5721,7 +5549,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5752,7 +5579,6 @@
       "water",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5794,7 +5620,6 @@
       "water",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5825,7 +5650,6 @@
       "water",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5855,7 +5679,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5885,39 +5708,7 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
-  },
-  {
-    "name": "eevee-starter",
-    "speciesNames": {
-      "ja-Hrkt": "イーブイ",
-      "roomaji": "Eievui",
-      "ko": "이브이",
-      "zh-Hant": "伊布",
-      "fr": "Évoli",
-      "de": "Evoli",
-      "es": "Eevee",
-      "it": "Eevee",
-      "en": "Eevee",
-      "ja": "イーブイ",
-      "zh-Hans": "伊布"
-    },
-    "formNames": {
-      "de": "Partnerform"
-    },
-    "number": 133,
-    "hp": 65,
-    "attack": 75,
-    "defense": 70,
-    "spAttack": 65,
-    "spDefense": 85,
-    "speed": 75,
-    "id": "10159",
-    "types": [
-      "normal"
-    ],
-    "imageType": "sprite"
   },
   {
     "name": "vaporeon",
@@ -5946,7 +5737,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -5976,7 +5766,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6006,7 +5795,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6036,7 +5824,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6067,7 +5854,6 @@
       "rock",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6098,7 +5884,6 @@
       "rock",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6129,7 +5914,6 @@
       "rock",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6160,7 +5944,6 @@
       "rock",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6191,7 +5974,6 @@
       "rock",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6233,7 +6015,6 @@
       "rock",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6263,7 +6044,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6294,7 +6074,6 @@
       "ice",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6336,7 +6115,6 @@
       "psychic",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6367,7 +6145,6 @@
       "electric",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6409,7 +6186,6 @@
       "fighting",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6440,7 +6216,6 @@
       "fire",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6482,7 +6257,6 @@
       "dark",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6512,7 +6286,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6542,7 +6315,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6573,7 +6345,6 @@
       "dragon",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6603,7 +6374,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6645,7 +6415,6 @@
       "psychic",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6686,7 +6455,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6716,7 +6484,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6746,7 +6513,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6776,7 +6542,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6806,7 +6571,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6836,7 +6600,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6866,7 +6629,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6896,7 +6658,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6933,7 +6694,6 @@
       "fire",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6963,7 +6723,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -6993,7 +6752,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7023,7 +6781,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7053,7 +6810,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7083,7 +6839,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7114,7 +6869,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7145,7 +6899,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7176,7 +6929,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7207,7 +6959,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7238,7 +6989,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7269,7 +7019,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7300,7 +7049,6 @@
       "poison",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7331,7 +7079,6 @@
       "water",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7362,7 +7109,6 @@
       "water",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7392,7 +7138,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7422,7 +7167,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7453,7 +7197,6 @@
       "normal",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7483,7 +7226,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7514,7 +7256,6 @@
       "fairy",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7545,7 +7286,6 @@
       "psychic",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7576,7 +7316,6 @@
       "psychic",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7606,7 +7345,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7636,7 +7374,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7666,7 +7403,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7708,7 +7444,6 @@
       "electric",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7738,7 +7473,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7769,7 +7503,6 @@
       "water",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7800,7 +7533,6 @@
       "water",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7830,7 +7562,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7860,7 +7591,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7891,7 +7621,6 @@
       "grass",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7922,7 +7651,6 @@
       "grass",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7953,7 +7681,6 @@
       "grass",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -7983,7 +7710,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8013,7 +7739,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8043,7 +7768,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8074,7 +7798,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8105,7 +7828,6 @@
       "water",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8141,7 +7863,6 @@
       "poison",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8172,7 +7893,6 @@
       "water",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8202,7 +7922,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8232,7 +7951,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8263,7 +7981,6 @@
       "dark",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8294,7 +8011,6 @@
       "water",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8336,7 +8052,6 @@
       "poison",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8366,7 +8081,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8404,7 +8118,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8434,7 +8147,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8465,7 +8177,6 @@
       "normal",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8495,7 +8206,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8526,7 +8236,6 @@
       "bug",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8556,7 +8265,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8587,7 +8295,6 @@
       "ground",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8618,7 +8325,6 @@
       "steel",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8660,7 +8366,6 @@
       "steel",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8690,7 +8395,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8720,7 +8424,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8751,7 +8454,6 @@
       "water",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8788,7 +8490,6 @@
       "dark",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8819,7 +8520,6 @@
       "bug",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8861,7 +8561,6 @@
       "bug",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8892,7 +8591,6 @@
       "bug",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8923,7 +8621,6 @@
       "bug",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8965,7 +8662,6 @@
       "bug",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -8996,7 +8692,6 @@
       "dark",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9033,7 +8728,6 @@
       "fighting",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9063,7 +8757,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9093,7 +8786,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9123,7 +8815,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9154,7 +8845,6 @@
       "fire",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9185,7 +8875,6 @@
       "ice",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9216,7 +8905,6 @@
       "ice",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9247,7 +8935,6 @@
       "water",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9288,7 +8975,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9318,7 +9004,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9348,7 +9033,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9379,7 +9063,6 @@
       "ice",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9410,7 +9093,6 @@
       "water",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9441,7 +9123,6 @@
       "steel",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9472,7 +9153,6 @@
       "dark",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9503,7 +9183,6 @@
       "dark",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9545,7 +9224,6 @@
       "dark",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9576,7 +9254,6 @@
       "water",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9606,7 +9283,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9636,7 +9312,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9666,7 +9341,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9696,7 +9370,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9726,7 +9399,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9756,7 +9428,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9786,7 +9457,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9817,7 +9487,6 @@
       "ice",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9847,7 +9516,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9877,7 +9545,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9907,7 +9574,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9937,7 +9603,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9967,7 +9632,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -9997,7 +9661,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10027,7 +9690,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10058,7 +9720,6 @@
       "rock",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10089,7 +9750,6 @@
       "rock",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10120,7 +9780,6 @@
       "rock",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10162,7 +9821,6 @@
       "rock",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10193,7 +9851,6 @@
       "psychic",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10224,7 +9881,6 @@
       "fire",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10255,7 +9911,6 @@
       "psychic",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10285,7 +9940,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10315,7 +9969,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10345,7 +9998,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10387,7 +10039,6 @@
       "grass",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10417,7 +10068,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10448,7 +10098,6 @@
       "fire",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10479,7 +10128,6 @@
       "fire",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10521,7 +10169,6 @@
       "fire",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10551,7 +10198,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10582,7 +10228,6 @@
       "water",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10613,7 +10258,6 @@
       "water",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10655,7 +10299,6 @@
       "water",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10685,7 +10328,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10715,7 +10357,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10745,7 +10386,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10787,7 +10427,6 @@
       "dark",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10817,7 +10456,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10859,7 +10497,6 @@
       "dark",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10889,7 +10526,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10919,7 +10555,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10950,7 +10585,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -10980,7 +10614,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11011,7 +10644,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11042,7 +10674,6 @@
       "water",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11073,7 +10704,6 @@
       "water",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11104,7 +10734,6 @@
       "water",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11134,7 +10763,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11165,7 +10793,6 @@
       "grass",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11196,7 +10823,6 @@
       "grass",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11227,7 +10853,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11258,7 +10883,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11289,7 +10913,6 @@
       "water",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11320,7 +10943,6 @@
       "water",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11351,7 +10973,6 @@
       "psychic",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11382,7 +11003,6 @@
       "psychic",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11413,7 +11033,6 @@
       "psychic",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11455,7 +11074,6 @@
       "psychic",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11486,7 +11104,6 @@
       "bug",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11517,7 +11134,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11547,7 +11163,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11578,7 +11193,6 @@
       "grass",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11608,7 +11222,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11638,7 +11251,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11668,7 +11280,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11699,7 +11310,6 @@
       "bug",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11730,7 +11340,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11761,7 +11370,6 @@
       "bug",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11791,7 +11399,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11821,7 +11428,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11851,7 +11457,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11881,7 +11486,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11911,7 +11515,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11942,7 +11545,6 @@
       "normal",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -11972,7 +11574,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12002,7 +11603,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12032,7 +11632,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12063,7 +11662,6 @@
       "dark",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12105,7 +11703,6 @@
       "dark",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12136,7 +11733,6 @@
       "steel",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12178,7 +11774,6 @@
       "steel",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12209,7 +11804,6 @@
       "steel",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12240,7 +11834,6 @@
       "steel",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12271,7 +11864,6 @@
       "steel",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12312,7 +11904,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12343,7 +11934,6 @@
       "fighting",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12374,7 +11964,6 @@
       "fighting",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12416,7 +12005,6 @@
       "fighting",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12446,7 +12034,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12476,7 +12063,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12517,7 +12103,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12547,7 +12132,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12577,7 +12161,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12607,7 +12190,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12637,7 +12219,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12668,7 +12249,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12698,7 +12278,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12728,7 +12307,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12759,7 +12337,6 @@
       "water",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12790,7 +12367,6 @@
       "water",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12832,7 +12408,6 @@
       "water",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12862,7 +12437,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12892,7 +12466,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12923,7 +12496,6 @@
       "fire",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12954,7 +12526,6 @@
       "fire",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -12996,7 +12567,6 @@
       "fire",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13026,7 +12596,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13056,7 +12625,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13086,7 +12654,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13116,7 +12683,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13146,7 +12712,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13177,7 +12742,6 @@
       "ground",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13208,7 +12772,6 @@
       "ground",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13238,7 +12801,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13269,7 +12831,6 @@
       "grass",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13300,7 +12861,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13331,7 +12891,6 @@
       "dragon",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13373,7 +12932,6 @@
       "dragon",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13403,7 +12961,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13433,7 +12990,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13464,7 +13020,6 @@
       "rock",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13495,7 +13050,6 @@
       "rock",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13526,7 +13080,6 @@
       "water",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13557,7 +13110,6 @@
       "water",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13587,7 +13139,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13618,7 +13169,6 @@
       "water",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13649,7 +13199,6 @@
       "ground",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13680,7 +13229,6 @@
       "ground",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13711,7 +13259,6 @@
       "rock",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13742,7 +13289,6 @@
       "rock",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13773,7 +13319,6 @@
       "rock",
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13804,7 +13349,6 @@
       "rock",
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13834,7 +13378,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13864,7 +13407,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13905,7 +13447,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13946,7 +13487,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -13987,7 +13527,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14028,7 +13567,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14058,7 +13596,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14088,7 +13625,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14118,7 +13654,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14159,7 +13694,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14189,7 +13723,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14219,7 +13752,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14250,7 +13782,6 @@
       "grass",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14280,7 +13811,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14310,7 +13840,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14351,7 +13880,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14381,7 +13909,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14411,7 +13938,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14441,7 +13967,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14482,7 +14007,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14513,7 +14037,6 @@
       "ice",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14544,7 +14067,6 @@
       "ice",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14575,7 +14097,6 @@
       "ice",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14605,7 +14126,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14635,7 +14155,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14665,7 +14184,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14696,7 +14214,6 @@
       "water",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14726,7 +14243,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14756,7 +14272,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14786,7 +14301,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14817,7 +14331,6 @@
       "dragon",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14859,7 +14372,6 @@
       "dragon",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14890,7 +14402,6 @@
       "steel",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14921,7 +14432,6 @@
       "steel",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14952,7 +14462,6 @@
       "steel",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -14994,7 +14503,6 @@
       "steel",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15024,7 +14532,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15054,7 +14561,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15084,7 +14590,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15115,7 +14620,6 @@
       "dragon",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15157,7 +14661,6 @@
       "dragon",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15188,7 +14691,6 @@
       "dragon",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15230,7 +14732,6 @@
       "dragon",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15270,7 +14771,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15311,7 +14811,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15351,7 +14850,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15393,7 +14891,6 @@
       "ground",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15424,7 +14921,6 @@
       "dragon",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15466,7 +14962,6 @@
       "dragon",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15497,7 +14992,6 @@
       "steel",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15538,7 +15032,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15579,7 +15072,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15620,7 +15112,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15661,7 +15152,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15691,7 +15181,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15721,7 +15210,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15752,7 +15240,6 @@
       "grass",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15782,7 +15269,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15813,7 +15299,6 @@
       "fire",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15844,7 +15329,6 @@
       "fire",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15874,7 +15358,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15904,7 +15387,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15935,7 +15417,6 @@
       "water",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15966,7 +15447,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -15997,7 +15477,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16028,7 +15507,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16058,7 +15536,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16089,7 +15566,6 @@
       "normal",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16119,7 +15595,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16149,7 +15624,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16179,7 +15653,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16209,7 +15682,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16239,7 +15711,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16270,7 +15741,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16301,7 +15771,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16331,7 +15800,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16361,7 +15829,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16392,7 +15859,6 @@
       "rock",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16423,7 +15889,6 @@
       "rock",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16461,7 +15926,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16503,7 +15967,6 @@
       "bug",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16545,7 +16008,6 @@
       "bug",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16587,7 +16049,6 @@
       "bug",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16618,7 +16079,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16649,7 +16109,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16680,7 +16139,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16710,7 +16168,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16740,7 +16197,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16770,7 +16226,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16800,7 +16255,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16841,7 +16295,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16882,7 +16335,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16924,7 +16376,6 @@
       "water",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16954,7 +16405,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -16985,7 +16435,6 @@
       "ghost",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17016,7 +16465,6 @@
       "ghost",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17046,7 +16494,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17076,7 +16523,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17118,7 +16564,6 @@
       "normal",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17148,7 +16593,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17179,7 +16623,6 @@
       "dark",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17209,7 +16652,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17239,7 +16681,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17269,7 +16710,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17300,7 +16740,6 @@
       "poison",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17331,7 +16770,6 @@
       "poison",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17362,7 +16800,6 @@
       "steel",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17393,7 +16830,6 @@
       "steel",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17423,7 +16859,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17454,7 +16889,6 @@
       "psychic",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17484,7 +16918,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17515,7 +16948,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17546,7 +16978,6 @@
       "ghost",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17577,7 +17008,6 @@
       "dragon",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17608,7 +17038,6 @@
       "dragon",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17639,7 +17068,6 @@
       "dragon",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17681,7 +17109,6 @@
       "dragon",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17711,7 +17138,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17741,7 +17167,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17772,7 +17197,6 @@
       "fighting",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17814,7 +17238,6 @@
       "fighting",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17844,7 +17267,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17874,7 +17296,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17905,7 +17326,6 @@
       "poison",
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17936,7 +17356,6 @@
       "poison",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17967,7 +17386,6 @@
       "poison",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -17998,7 +17416,6 @@
       "poison",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18028,7 +17445,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18058,7 +17474,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18088,7 +17503,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18119,7 +17533,6 @@
       "water",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18150,7 +17563,6 @@
       "grass",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18181,7 +17593,6 @@
       "grass",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18223,7 +17634,6 @@
       "grass",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18254,7 +17664,6 @@
       "dark",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18285,7 +17694,6 @@
       "electric",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18315,7 +17723,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18346,7 +17753,6 @@
       "ground",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18376,7 +17782,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18406,7 +17811,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18436,7 +17840,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18467,7 +17870,6 @@
       "fairy",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18498,7 +17900,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18528,7 +17929,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18558,7 +17958,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18589,7 +17988,6 @@
       "ground",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18620,7 +18018,6 @@
       "ice",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18650,7 +18047,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18681,7 +18077,6 @@
       "psychic",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18723,7 +18118,6 @@
       "psychic",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18754,7 +18148,6 @@
       "rock",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18784,7 +18177,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18815,7 +18207,6 @@
       "ice",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18857,7 +18248,6 @@
       "electric",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18899,7 +18289,6 @@
       "electric",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18941,7 +18330,6 @@
       "electric",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -18983,7 +18371,6 @@
       "electric",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19025,7 +18412,6 @@
       "electric",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19067,7 +18453,6 @@
       "electric",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19097,7 +18482,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19127,7 +18511,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19157,7 +18540,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19188,7 +18570,6 @@
       "steel",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19225,7 +18606,6 @@
       "steel",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19256,7 +18636,6 @@
       "water",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19293,7 +18672,6 @@
       "water",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19324,7 +18702,6 @@
       "fire",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19354,7 +18731,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19396,7 +18772,6 @@
       "ghost",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19438,7 +18813,6 @@
       "ghost",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19468,7 +18842,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19498,7 +18871,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19528,7 +18900,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19558,7 +18929,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19599,7 +18969,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19641,7 +19010,6 @@
       "grass",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19678,7 +19046,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19709,7 +19076,6 @@
       "psychic",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19739,7 +19105,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19769,7 +19134,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19799,7 +19163,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19829,7 +19192,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19860,7 +19222,6 @@
       "fire",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19891,7 +19252,6 @@
       "fire",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19921,7 +19281,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19951,7 +19310,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -19981,7 +19339,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20018,7 +19375,6 @@
       "water",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20048,7 +19404,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20078,7 +19433,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20108,7 +19462,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20138,7 +19491,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20168,7 +19520,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20198,7 +19549,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20228,7 +19578,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20258,7 +19607,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20288,7 +19636,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20318,7 +19665,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20348,7 +19694,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20378,7 +19723,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20408,7 +19752,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20438,7 +19781,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20468,7 +19810,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20499,7 +19840,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20530,7 +19870,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20561,7 +19900,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20591,7 +19929,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20621,7 +19958,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20651,7 +19987,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20681,7 +20016,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20711,7 +20045,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20742,7 +20075,6 @@
       "psychic",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20773,7 +20105,6 @@
       "psychic",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20803,7 +20134,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20834,7 +20164,6 @@
       "ground",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20864,7 +20193,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20906,7 +20234,6 @@
       "normal",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20936,7 +20263,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20966,7 +20292,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -20996,7 +20321,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21026,7 +20350,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21057,7 +20380,6 @@
       "water",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21088,7 +20410,6 @@
       "water",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21118,7 +20439,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21148,7 +20468,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21179,7 +20498,6 @@
       "bug",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21210,7 +20528,6 @@
       "bug",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21241,7 +20558,6 @@
       "bug",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21272,7 +20588,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21303,7 +20618,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21334,7 +20648,6 @@
       "bug",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21365,7 +20678,6 @@
       "grass",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21396,7 +20708,6 @@
       "grass",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21426,7 +20737,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21456,7 +20766,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21493,7 +20802,6 @@
       "grass",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21534,7 +20842,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21565,7 +20872,6 @@
       "ground",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21596,7 +20902,6 @@
       "ground",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21627,7 +20932,6 @@
       "ground",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21657,7 +20961,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21698,7 +21001,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21739,7 +21041,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21781,7 +21082,6 @@
       "fire",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21822,7 +21122,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21864,7 +21163,6 @@
       "ice",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21894,7 +21192,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21925,7 +21222,6 @@
       "bug",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21956,7 +21252,6 @@
       "bug",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -21987,7 +21282,6 @@
       "dark",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22018,7 +21312,6 @@
       "dark",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22049,7 +21342,6 @@
       "psychic",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22079,7 +21371,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22121,7 +21412,6 @@
       "ground",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22151,7 +21441,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22182,7 +21471,6 @@
       "water",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22213,7 +21501,6 @@
       "water",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22244,7 +21531,6 @@
       "rock",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22275,7 +21561,6 @@
       "rock",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22305,7 +21590,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22335,7 +21619,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22365,7 +21648,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22402,7 +21684,6 @@
       "normal",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22432,7 +21713,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22469,7 +21749,6 @@
       "normal",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22499,7 +21778,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22529,7 +21807,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22559,7 +21836,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22589,7 +21865,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22619,7 +21894,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22649,7 +21923,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22679,7 +21952,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22709,7 +21981,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22740,7 +22011,6 @@
       "water",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22771,7 +22041,6 @@
       "water",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22801,7 +22070,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22831,7 +22099,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22861,7 +22128,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22900,7 +22166,6 @@
       "normal",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22939,7 +22204,6 @@
       "normal",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -22970,7 +22234,6 @@
       "electric",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23000,7 +22263,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23031,7 +22293,6 @@
       "bug",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23062,7 +22323,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23093,7 +22353,6 @@
       "grass",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23124,7 +22383,6 @@
       "water",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23155,7 +22413,6 @@
       "water",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23185,7 +22442,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23216,7 +22472,6 @@
       "bug",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23247,7 +22502,6 @@
       "bug",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23278,7 +22532,6 @@
       "grass",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23309,7 +22562,6 @@
       "grass",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23339,7 +22591,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23369,7 +22620,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23399,7 +22649,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23429,7 +22678,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23459,7 +22707,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23489,7 +22736,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23519,7 +22765,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23549,7 +22794,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23580,7 +22824,6 @@
       "ghost",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23611,7 +22854,6 @@
       "ghost",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23642,7 +22884,6 @@
       "ghost",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23672,7 +22913,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23702,7 +22942,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23732,7 +22971,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23762,7 +23000,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23792,7 +23029,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23822,7 +23058,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23852,7 +23087,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23882,7 +23116,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23913,7 +23146,6 @@
       "ground",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23955,7 +23187,6 @@
       "ground",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -23985,7 +23216,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24015,7 +23245,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24045,7 +23274,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24076,7 +23304,6 @@
       "ground",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24107,7 +23334,6 @@
       "ground",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24138,7 +23364,6 @@
       "dark",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24169,7 +23394,6 @@
       "dark",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24199,7 +23423,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24230,7 +23453,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24261,7 +23483,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24298,7 +23519,6 @@
       "psychic",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24329,7 +23549,6 @@
       "dark",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24360,7 +23579,6 @@
       "dark",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24390,7 +23608,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24421,7 +23638,6 @@
       "bug",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24452,7 +23668,6 @@
       "dark",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24483,7 +23698,6 @@
       "dark",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24514,7 +23728,6 @@
       "dark",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24545,7 +23758,6 @@
       "bug",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24576,7 +23788,6 @@
       "bug",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24607,7 +23818,6 @@
       "steel",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24638,7 +23848,6 @@
       "rock",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24669,7 +23878,6 @@
       "grass",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24710,7 +23918,6 @@
     "types": [
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24751,7 +23958,6 @@
     "types": [
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24793,7 +23999,6 @@
       "electric",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24835,7 +24040,6 @@
       "electric",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24866,7 +24070,6 @@
       "dragon",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24897,7 +24100,6 @@
       "dragon",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24939,7 +24141,6 @@
       "ground",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -24981,7 +24182,6 @@
       "ground",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25023,7 +24223,6 @@
       "dragon",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25065,7 +24264,6 @@
       "dragon",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25107,7 +24305,6 @@
       "dragon",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25149,7 +24346,6 @@
       "water",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25191,7 +24387,6 @@
       "normal",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25233,7 +24428,6 @@
       "normal",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25264,7 +24458,6 @@
       "bug",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25294,7 +24487,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25324,7 +24516,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25355,7 +24546,6 @@
       "grass",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25385,7 +24575,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25415,7 +24604,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25446,7 +24634,6 @@
       "fire",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25476,7 +24663,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25506,7 +24692,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25537,7 +24722,6 @@
       "water",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25579,7 +24763,6 @@
       "water",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25609,7 +24792,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25640,7 +24822,6 @@
       "normal",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25671,7 +24852,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25702,7 +24882,6 @@
       "fire",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25733,7 +24912,6 @@
       "fire",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25763,7 +24941,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25793,7 +24970,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25832,7 +25008,6 @@
       "bug",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25863,7 +25038,6 @@
       "fire",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25894,7 +25068,6 @@
       "fire",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25932,7 +25105,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -25970,7 +25142,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26007,8 +25178,7 @@
     "id": "10061",
     "types": [
       "fairy"
-    ],
-    "imageType": "sprite"
+    ]
   },
   {
     "name": "florges",
@@ -26045,7 +25215,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26075,7 +25244,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26105,7 +25273,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26135,7 +25302,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26166,7 +25332,6 @@
       "fighting",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26204,7 +25369,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26234,7 +25398,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26275,7 +25438,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26306,7 +25468,6 @@
       "steel",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26337,7 +25498,6 @@
       "steel",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26379,7 +25539,6 @@
       "steel",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26421,7 +25580,6 @@
       "steel",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26451,7 +25609,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26481,7 +25638,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26511,7 +25667,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26541,7 +25696,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26572,7 +25726,6 @@
       "dark",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26603,7 +25756,6 @@
       "dark",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26634,7 +25786,6 @@
       "rock",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26665,7 +25816,6 @@
       "rock",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26696,7 +25846,6 @@
       "poison",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26727,7 +25876,6 @@
       "poison",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26757,7 +25905,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26787,7 +25934,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26818,7 +25964,6 @@
       "electric",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26849,7 +25994,6 @@
       "electric",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26880,7 +26024,6 @@
       "rock",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26911,7 +26054,6 @@
       "rock",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26942,7 +26084,6 @@
       "rock",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -26973,7 +26114,6 @@
       "rock",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27003,7 +26143,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27034,7 +26173,6 @@
       "fighting",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27065,7 +26203,6 @@
       "electric",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27096,7 +26233,6 @@
       "rock",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27126,7 +26262,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27156,7 +26291,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27193,7 +26327,6 @@
       "steel",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27223,7 +26356,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27260,7 +26392,6 @@
       "steel",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27291,7 +26422,6 @@
       "steel",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27322,7 +26452,6 @@
       "ghost",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27353,7 +26482,6 @@
       "ghost",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27395,7 +26523,6 @@
       "ghost",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27437,7 +26564,6 @@
       "ghost",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27479,7 +26605,6 @@
       "ghost",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27521,7 +26646,6 @@
       "ghost",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27563,7 +26687,6 @@
       "ghost",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27605,7 +26728,6 @@
       "ghost",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27647,7 +26769,6 @@
       "ghost",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27689,7 +26810,6 @@
       "ghost",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27719,7 +26839,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27749,7 +26868,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27786,7 +26904,6 @@
       "ice",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27817,7 +26934,6 @@
       "flying",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27848,7 +26964,6 @@
       "flying",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27889,7 +27004,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27920,7 +27034,6 @@
       "dark",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -27962,7 +27075,6 @@
       "dragon",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28004,7 +27116,6 @@
       "dragon",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28046,7 +27157,6 @@
       "dragon",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28077,7 +27187,6 @@
       "rock",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28119,7 +27228,6 @@
       "rock",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28161,7 +27269,6 @@
       "psychic",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28203,7 +27310,6 @@
       "psychic",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28234,7 +27340,6 @@
       "fire",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28265,7 +27370,6 @@
       "grass",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28296,7 +27400,6 @@
       "grass",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28327,7 +27430,6 @@
       "grass",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28364,7 +27466,6 @@
       "grass",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28394,7 +27495,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28424,7 +27524,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28455,7 +27554,6 @@
       "fire",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28485,7 +27583,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28515,7 +27612,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28546,7 +27642,6 @@
       "water",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28577,7 +27672,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28608,7 +27702,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28639,7 +27732,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28669,7 +27761,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28699,7 +27790,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28729,7 +27819,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28760,7 +27849,6 @@
       "bug",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28791,7 +27879,6 @@
       "bug",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28821,7 +27908,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28852,7 +27938,6 @@
       "fighting",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28894,7 +27979,6 @@
       "fire",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28936,7 +28020,6 @@
       "electric",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -28978,7 +28061,6 @@
       "psychic",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29020,7 +28102,6 @@
       "ghost",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29051,7 +28132,6 @@
       "bug",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29082,7 +28162,6 @@
       "bug",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29112,7 +28191,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29153,7 +28231,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29194,7 +28271,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29235,7 +28311,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29276,7 +28351,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29317,7 +28391,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29348,7 +28421,6 @@
       "poison",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29379,7 +28451,6 @@
       "poison",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29409,7 +28480,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29439,7 +28509,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29470,7 +28539,6 @@
       "water",
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29501,7 +28569,6 @@
       "water",
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29531,7 +28598,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29561,7 +28627,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29592,7 +28657,6 @@
       "grass",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29623,7 +28687,6 @@
       "grass",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29654,7 +28717,6 @@
       "poison",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29685,7 +28747,6 @@
       "poison",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29716,7 +28777,6 @@
       "normal",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29747,7 +28807,6 @@
       "normal",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29777,7 +28836,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29807,7 +28865,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29837,7 +28894,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29867,7 +28923,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29898,7 +28953,6 @@
       "normal",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29928,7 +28982,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29959,7 +29012,6 @@
       "bug",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -29990,7 +29042,6 @@
       "bug",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30021,7 +29072,6 @@
       "ghost",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30052,7 +29102,6 @@
       "ghost",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30082,7 +29131,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30112,7 +29160,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30153,7 +29200,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30195,7 +29241,6 @@
       "rock",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30237,7 +29282,6 @@
       "rock",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30267,7 +29311,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30298,7 +29341,6 @@
       "fire",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30329,7 +29371,6 @@
       "electric",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30371,7 +29412,6 @@
       "ghost",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30402,7 +29442,6 @@
       "water",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30433,7 +29472,6 @@
       "normal",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30464,7 +29502,6 @@
       "ghost",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30494,7 +29531,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30525,7 +29561,6 @@
       "dragon",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30556,7 +29591,6 @@
       "dragon",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30587,7 +29621,6 @@
       "electric",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30618,7 +29651,6 @@
       "psychic",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30649,7 +29681,6 @@
       "grass",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30680,7 +29711,6 @@
       "water",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30710,7 +29740,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30740,7 +29769,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30771,7 +29799,6 @@
       "psychic",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30802,7 +29829,6 @@
       "psychic",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30833,7 +29859,6 @@
       "rock",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30864,7 +29889,6 @@
       "bug",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30895,7 +29919,6 @@
       "bug",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30925,7 +29948,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30956,7 +29978,6 @@
       "steel",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -30987,7 +30008,6 @@
       "grass",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31018,7 +30038,6 @@
       "dark",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31048,7 +30067,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31090,7 +30108,6 @@
       "psychic",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31132,7 +30149,6 @@
       "psychic",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31174,7 +30190,6 @@
       "psychic",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31205,7 +30220,6 @@
       "steel",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31236,7 +30250,6 @@
       "fighting",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31266,7 +30279,6 @@
     "types": [
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31297,7 +30309,6 @@
       "poison",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31328,7 +30339,6 @@
       "rock",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31359,7 +30369,6 @@
       "fire",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31389,7 +30398,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31419,7 +30427,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31449,7 +30456,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31479,7 +30485,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31509,7 +30514,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31539,7 +30543,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31569,7 +30572,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31599,7 +30601,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31629,7 +30630,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31659,7 +30659,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31689,7 +30688,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31719,7 +30717,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31749,7 +30746,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31779,7 +30775,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31809,7 +30804,6 @@
     "types": [
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31839,7 +30833,6 @@
     "types": [
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31870,7 +30863,6 @@
       "flying",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31900,7 +30892,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31931,7 +30922,6 @@
       "bug",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31962,7 +30952,6 @@
       "bug",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -31992,7 +30981,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32022,7 +31010,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32052,7 +31039,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32082,7 +31068,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32112,7 +31097,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32142,7 +31126,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32172,7 +31155,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32203,7 +31185,6 @@
       "water",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32233,7 +31214,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32263,7 +31243,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32293,7 +31272,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32324,7 +31302,6 @@
       "rock",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32355,7 +31332,6 @@
       "rock",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32386,7 +31362,6 @@
       "grass",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32417,7 +31392,6 @@
       "grass",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32448,7 +31422,6 @@
       "grass",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32478,7 +31451,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32508,7 +31480,6 @@
     "types": [
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32539,7 +31510,6 @@
       "flying",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32569,7 +31539,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32599,7 +31568,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32630,7 +31598,6 @@
       "electric",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32672,7 +31639,6 @@
       "electric",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32703,7 +31669,6 @@
       "fire",
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32734,7 +31699,6 @@
       "fire",
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32764,7 +31728,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32794,7 +31757,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32830,7 +31792,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32865,7 +31826,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32895,7 +31855,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32925,7 +31884,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32956,7 +31914,6 @@
       "psychic",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -32987,7 +31944,6 @@
       "dark",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33018,7 +31974,6 @@
       "dark",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33049,7 +32004,6 @@
       "dark",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33080,7 +32034,6 @@
       "dark",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33110,7 +32063,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33140,7 +32092,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33170,7 +32121,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33201,7 +32151,6 @@
       "ice",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33232,7 +32181,6 @@
       "ground",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33262,7 +32210,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33303,7 +32250,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33333,7 +32279,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33363,7 +32308,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33394,7 +32338,6 @@
       "ice",
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33425,7 +32368,6 @@
       "ice",
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33455,7 +32397,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33496,7 +32437,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33537,7 +32477,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33579,7 +32518,6 @@
       "psychic",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33621,7 +32559,6 @@
       "psychic",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33663,7 +32600,6 @@
       "electric",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33693,7 +32629,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33723,7 +32658,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33754,7 +32688,6 @@
       "electric",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33785,7 +32718,6 @@
       "electric",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33816,7 +32748,6 @@
       "water",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33847,7 +32778,6 @@
       "water",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33878,7 +32808,6 @@
       "steel",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33909,7 +32838,6 @@
       "dragon",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33940,7 +32868,6 @@
       "dragon",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -33971,7 +32898,6 @@
       "dragon",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34012,7 +32938,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34054,7 +32979,6 @@
       "fairy",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34095,7 +33019,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34137,7 +33060,6 @@
       "fighting",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34168,7 +33090,6 @@
       "poison",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34210,7 +33131,6 @@
       "poison",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34240,7 +33160,6 @@
     "types": [
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34282,7 +33201,6 @@
       "fighting",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34324,7 +33242,6 @@
       "fighting",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34355,7 +33272,6 @@
       "dark",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34385,7 +33301,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34415,7 +33330,6 @@
     "types": [
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34445,7 +33359,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34475,7 +33388,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34506,7 +33418,6 @@
       "psychic",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34548,7 +33459,6 @@
       "psychic",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34590,7 +33500,6 @@
       "psychic",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34621,7 +33530,6 @@
       "normal",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34652,7 +33560,6 @@
       "bug",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34683,7 +33590,6 @@
       "ground",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34725,7 +33631,6 @@
       "ground",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34761,7 +33666,6 @@
       "water",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34798,7 +33702,6 @@
       "water",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34829,7 +33732,6 @@
       "fighting",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34860,7 +33762,6 @@
       "dark",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34896,7 +33797,6 @@
       "fairy",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34933,7 +33833,6 @@
       "fairy",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34963,7 +33862,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -34993,7 +33891,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35024,7 +33921,6 @@
       "grass",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35054,7 +33950,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35084,7 +33979,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35115,7 +34009,6 @@
       "fire",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35145,7 +34038,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35175,7 +34067,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35206,7 +34097,6 @@
       "water",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35236,7 +34126,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35271,7 +34160,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35306,7 +34194,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35336,7 +34223,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35366,7 +34252,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35396,7 +34281,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35427,7 +34311,6 @@
       "bug",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35457,7 +34340,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35488,7 +34370,6 @@
       "electric",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35519,7 +34400,6 @@
       "electric",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35549,7 +34429,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35584,7 +34463,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35614,7 +34492,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35644,7 +34521,6 @@
     "types": [
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35675,7 +34551,6 @@
       "grass",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35706,7 +34581,6 @@
       "grass",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35737,7 +34611,6 @@
       "grass",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35773,7 +34646,6 @@
       "normal",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35803,7 +34675,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35833,7 +34704,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35863,7 +34733,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35893,7 +34762,6 @@
     "types": [
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35924,7 +34792,6 @@
       "fire",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35955,7 +34822,6 @@
       "fire",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -35985,7 +34851,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36015,7 +34880,6 @@
     "types": [
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36046,7 +34910,6 @@
       "electric",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36077,7 +34940,6 @@
       "electric",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36107,7 +34969,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36137,7 +34998,6 @@
     "types": [
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36168,7 +35028,6 @@
       "poison",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36199,7 +35058,6 @@
       "poison",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36230,7 +35088,6 @@
       "grass",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36261,7 +35118,6 @@
       "grass",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36292,7 +35148,6 @@
       "ground",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36323,7 +35178,6 @@
       "ground",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36353,7 +35207,6 @@
     "types": [
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36383,7 +35236,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36414,7 +35266,6 @@
       "grass",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36444,7 +35295,6 @@
     "types": [
       "bug"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36475,7 +35325,6 @@
       "bug",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36505,7 +35354,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36535,7 +35383,6 @@
     "types": [
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36566,7 +35413,6 @@
       "fairy",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36597,7 +35443,6 @@
       "fairy",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36628,7 +35473,6 @@
       "fairy",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36658,7 +35502,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36688,7 +35531,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36719,7 +35561,6 @@
       "flying",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36749,7 +35590,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36784,7 +35624,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36819,7 +35658,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36850,7 +35688,6 @@
       "steel",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36881,7 +35718,6 @@
       "steel",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36912,7 +35748,6 @@
       "dragon",
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36942,7 +35777,6 @@
     "types": [
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -36973,7 +35807,6 @@
       "rock",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37004,7 +35837,6 @@
       "rock",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37034,7 +35866,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37064,7 +35895,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37095,7 +35925,6 @@
       "flying",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37125,7 +35954,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37155,7 +35983,6 @@
     "types": [
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37186,7 +36013,6 @@
       "water",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37216,7 +36042,6 @@
     "types": [
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37252,7 +36077,6 @@
       "dragon",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37283,7 +36107,6 @@
       "fighting",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37314,7 +36137,6 @@
       "poison",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37345,7 +36167,6 @@
       "normal",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37380,7 +36201,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37411,7 +36231,6 @@
       "dark",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37442,7 +36261,6 @@
       "ground",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37473,7 +36291,6 @@
       "fairy",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37504,7 +36321,6 @@
       "grass",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37535,7 +36351,6 @@
       "ghost",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37566,7 +36381,6 @@
       "bug",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37597,7 +36411,6 @@
       "electric",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37628,7 +36441,6 @@
       "ground",
       "steel"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37659,7 +36471,6 @@
       "ice",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37690,7 +36501,6 @@
       "fighting",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37721,7 +36531,6 @@
       "dark",
       "flying"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37752,7 +36561,6 @@
       "fire",
       "poison"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37783,7 +36591,6 @@
       "rock",
       "electric"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37814,7 +36621,6 @@
       "dragon",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37845,7 +36651,6 @@
       "dragon",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37876,7 +36681,6 @@
       "dragon",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37911,7 +36715,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37946,7 +36749,6 @@
     "types": [
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -37977,7 +36779,6 @@
       "steel",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38008,7 +36809,6 @@
       "dark",
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38039,7 +36839,6 @@
       "dark",
       "ice"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38070,7 +36869,6 @@
       "dark",
       "ground"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38101,7 +36899,6 @@
       "dark",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38132,7 +36929,6 @@
       "dragon",
       "dark"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38163,7 +36959,6 @@
       "fairy",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38199,7 +36994,6 @@
       "fighting",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38235,7 +37029,6 @@
       "electric",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38266,7 +37059,6 @@
       "water",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38297,7 +37089,6 @@
       "grass",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38327,7 +37118,6 @@
       "grass",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38368,7 +37158,6 @@
       "grass",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38409,7 +37198,6 @@
       "grass",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38439,7 +37227,6 @@
       "poison",
       "fighting"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38469,7 +37256,6 @@
       "poison",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38499,7 +37285,6 @@
       "poison",
       "fairy"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38539,7 +37324,6 @@
     "types": [
       "grass"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38580,7 +37364,6 @@
       "grass",
       "water"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38621,7 +37404,6 @@
       "grass",
       "fire"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38662,7 +37444,6 @@
       "grass",
       "rock"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38692,7 +37473,6 @@
       "steel",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38722,7 +37502,6 @@
       "grass",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38752,7 +37531,6 @@
       "fire",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38782,7 +37560,6 @@
       "electric",
       "dragon"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38812,7 +37589,6 @@
       "rock",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38842,7 +37618,6 @@
       "steel",
       "psychic"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38878,7 +37653,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38915,7 +37689,6 @@
     "types": [
       "normal"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   },
   {
@@ -38944,7 +37717,6 @@
       "poison",
       "ghost"
     ],
-    "imageType": "sprite",
     "hasShiny": true
   }
 ]

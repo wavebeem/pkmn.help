@@ -6,18 +6,27 @@ import { scrapePokeapi } from "./scrape-pokeapi.js";
 import { optimizeImages } from "./optimize-images.js";
 
 async function main(flags: string[]) {
+  if (flags.includes("merge")) {
+    await mergeData();
+    return;
+  }
+
   if (flags.includes("fast")) {
     await fetchImages();
     await optimizeImages();
     await mergeData();
-  } else if (flags.includes("optimize")) {
-    await optimizeImages();
-  } else {
-    await scrapePokeapi();
-    await fetchImages();
-    await optimizeImages();
-    await mergeData();
+    return;
   }
+
+  if (flags.includes("optimize")) {
+    await optimizeImages();
+    return;
+  }
+
+  await scrapePokeapi();
+  await fetchImages();
+  await optimizeImages();
+  await mergeData();
 }
 
 main(argv.slice(2)).catch((err) => {
