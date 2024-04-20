@@ -7,7 +7,7 @@
     "more": "Mais"
   },
   "offense": {
-    "chooseTypes": "Escolher Tipos",
+    "chooseTypes": "Escolher tipos",
     "dealsXTo": "Causa {{ x }} mais dano contra",
     "coverage": {
       "heading": "Cobertura da Pokédex",
@@ -20,21 +20,21 @@
     "coverageList": {
       "empty": "Não foram encontrados Pokémon ou nenhum tipo foi selecionado",
       "weakness": {
-        "heading": "Lista de Cobertura de Fraquezas",
+        "heading": "Lista de cobertura de fraquezas",
         "description": "Estes Pokémon são fracos contra pelo menos um dos tipos selecionados"
       },
       "normal": {
-        "heading": "Lista de Cobertura de Eficiência Normal",
+        "heading": "Lista de cobertura de eficiência normal",
         "description": "Estes Pokémon não estão nas listas de fraquezas ou de resistências para os tipos selecionados"
       },
       "resistance": {
-        "heading": "Lista de Cobertura de Resistências",
+        "heading": "Lista de cobertura de resistências",
         "description": "Estes Pokémon resistem todos estes tipos"
       }
     }
   },
   "coverage": {
-    "heading": "Cobertura a Fraquezas",
+    "heading": "Cobertura a fraquezas",
     "paragraph1": "Importar/exportar arquivos CSV costumizados da Pokédex para ver cobertura de tipos para diferentes Pokémon. Crie um arquivo CSV customizado com só Pokémon de categoria OU ou até criar seu próprio Pokémon do zero!",
     "paragraph2": "Informações CSV são carregadas pelo nome do cabeçalho da coluna, então você pode adicionar ou reordenar colunas se quiser (por exemplo adicionar uma coluna \"categoria\" ou coluna \"notas\").",
     "paragraph3": "Arquivos CSV podem ser editados com Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad e mais.",
@@ -67,11 +67,12 @@
     "back": "Voltar a \"Ataque\""
   },
   "defense": {
-    "chooseFirst": "Escolher 1° Tipo",
-    "chooseSecond": "Escolher 2° Tipo",
-    "chooseThird": "Escolher 3° Tipo",
+    "chooseFirst": "Escolher 1° tipo",
+    "chooseSecond": "Escolher 2° tipo",
+    "chooseThird": "Escolher 3° tipo",
     "takesXFrom": "Leva {{ x }} mais dano de",
-    "chooseAbility": "Escolher Habilidade",
+    "chooseAbility": "Escolher habilidade",
+    "chooseTeraType": "Escolher tipo tera",
     "abilityNames": {
       "none": "Nenhuma",
       "tera_shell": "Tera Shell",
@@ -96,16 +97,16 @@
       "volt_absorb": "Volt Absorb"
     },
     "mode": {
-      "heading": "Escolher Modo",
+      "heading": "Escolher modo",
       "solo": "Solo",
       "team": "Time"
     },
     "team": {
-      "tableHeading": "Contagem de Combinações",
-      "heading": "Editar Time Pokémon",
+      "tableHeading": "Contagem de combinações",
+      "heading": "Editar time Pokémon",
       "add": "Adicionar Pokémon",
-      "empty": "Nenhum Pokémon Selecionado",
-      "displayType": "Formato da Tabela",
+      "empty": "Nenhum Pokémon selecionado",
+      "displayType": "Formato da tabela",
       "weak": "Fraqueza",
       "resist": "Resistência",
       "simple": "Simples",
@@ -146,15 +147,15 @@
     },
     "stats": {
       "hp": "Vida",
-      "hpLong": "Pontos de Vida",
+      "hpLong": "Pontos de vida",
       "attack": "Ataque",
       "attackLong": "Ataque",
       "defense": "Defesa",
       "defenseLong": "Defesa",
-      "specialAttack": "Ataque Esp.",
-      "specialAttackLong": "Ataque Especial",
-      "specialDefense": "Defesa Esp.",
-      "specialDefenseLong": "Defesa Especial",
+      "specialAttack": "Ataque esp.",
+      "specialAttackLong": "Ataque especial",
+      "specialDefense": "Defesa esp.",
+      "specialDefenseLong": "Defesa especial",
       "speed": "Velocidade",
       "speedLong": "Velocidade",
       "total": "Total",
@@ -239,7 +240,7 @@
       "description": "Não uso e nunca usarei propagandas ou roubarei suas informações pessoais. Eu usei <plausible>Plausible Analytics</plausible>, que é auto-fundada, independente, hospedada na Europa e não acumula cookies no seu computador."
     },
     "givingBack": {
-      "heading": "Demonstrando Carinho",
+      "heading": "Demonstrando carinho",
       "description": "Dediquei incontáveis horas melhorando este site. Se aprecia o que fiz, por favor, considere doar para caridades que apoiam os direitos BIPOC e transsexuais."
     },
     "thanks": {
@@ -302,10 +303,10 @@
   },
   "general": {
     "loading": "Carregando...",
-    "copyLink": "Copiar Link"
+    "copyLink": "Copiar link"
   },
   "games": {
-    "label": "Geração do Jogo",
+    "label": "Geração do jogo",
     "help": "Usar efetividade de tipos de diferentes gerações",
     "byID": {
       "gen1": "1° Geração",

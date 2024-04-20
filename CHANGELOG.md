@@ -1,5 +1,13 @@
 # Changelog
 
+# 2024-04-20
+
+- Added links from Pokémon in the type coverage pages to the Pokédex page
+
+- Updated Brazilian Portuguese translation
+
+- Updated capitalization in English and Brazilian Portuguese
+
 # 2024-04-11
 
 - Fixed an issue where changing from "three types" to "two types" mode would accidentally retain the third type on the defense pages

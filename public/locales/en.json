@@ -20,21 +20,21 @@
     "coverageList": {
       "empty": "No Pokémon found or no types selected",
       "weakness": {
-        "heading": "Weakness Coverage List",
+        "heading": "Weakness coverage list",
         "description": "These Pokémon are weak to at least one of the selected types."
       },
       "normal": {
-        "heading": "Normal Effectiveness Coverage List",
+        "heading": "Normal effectiveness coverage list",
         "description": "These Pokémon are not in the weakness or resistance lists for the selected types."
       },
       "resistance": {
-        "heading": "Resistance Coverage List",
+        "heading": "Resistance coverage list",
         "description": "These Pokémon are resistant to all of the selected types."
       }
     }
   },
   "coverage": {
-    "heading": "Pokédex Coverage",
+    "heading": "Pokédex coverage",
     "paragraph1": "Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",
     "paragraph2": "CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",
     "paragraph3": "CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.",

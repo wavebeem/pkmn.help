@@ -40,12 +40,12 @@ coverage.status.exported,Exported default Pokémon forms,Formas Pokémon padrão
 coverage.status.reset,Loaded default Pokémon forms,Formas Pokémon padrão carregadas
 coverage.status.errored,Error loading CSV. Don't change header names.,Erro carregando CSV. Não mude o nome nos cabeçalhos.
 coverage.back,Back to offense,"Voltar a ""Ataque"""
-defense.chooseFirst,Choose first type,Escolher 1° Tipo
-defense.chooseSecond,Choose second type,Escolher 2° Tipo
-defense.chooseThird,Choose third type,Escolher 3° Tipo
+defense.chooseFirst,Choose first type,Escolher 1° tipo
+defense.chooseSecond,Choose second type,Escolher 2° tipo
+defense.chooseThird,Choose third type,Escolher 3° tipo
 defense.takesXFrom,Takes {{ x }} from,Leva {{ x }} mais dano de
 defense.chooseAbility,Choose ability,Escolher Habilidade
-defense.chooseTeraType,Choose tera type,
+defense.chooseTeraType,Choose tera type,Escolher tipo tera
 defense.abilityNames.none,None,Nenhuma
 defense.abilityNames.tera_shell,Tera Shell,Tera Shell
 defense.abilityNames.filter,Filter,Filtro

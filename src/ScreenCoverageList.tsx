@@ -66,6 +66,8 @@ export function ScreenCoverageList({
           return (
             <ul className="list pa0 border3 bt">
               {items.map(({ number, name, types }, i) => {
+                const dexParams = new URLSearchParams({ q: number });
+                const dexLink = `/pokedex/?${dexParams}`;
                 return (
                   <li
                     key={i}
@@ -75,7 +77,12 @@ export function ScreenCoverageList({
                       <div className="fg3">
                         {formatMonsterNumber(Number(number))}
                       </div>
-                      <div className="weight-medium flex-auto">{name}</div>
+                      <Link
+                        className="weight-medium flex-auto br1 no-underline fg-link focus-outline fit-content"
+                        to={dexLink}
+                      >
+                        {name}
+                      </Link>
                     </div>
                     <div className="flex flex-wrap gap2 justify-start items-center">
                       {types.map((t) => (
