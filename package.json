@@ -85,7 +85,6 @@
     "stylelint-config-standard": "^36.0.0",
     "tachyons": "^4.12.0",
     "tsx": "^4.7.1",
-    "use-debounce": "^10.0.0",
     "usehooks-ts": "^3.0.2"
   }
 }

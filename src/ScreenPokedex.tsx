@@ -3,7 +3,6 @@ import { matchSorter } from "match-sorter";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
-import { useDebounce } from "use-debounce";
 import { Pokemon, Type, typesFromUserInput } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
 import { MonsterImage } from "./MonsterImage";
@@ -17,7 +16,7 @@ import { IconSparkles } from "./IconSparkles";
 import styles from "./ScreenPokedex.module.css";
 import Spinner from "./Spinner";
 import { Badge } from "./Badge";
-import { useSessionStorage } from "usehooks-ts";
+import { useSessionStorage, useDebounceValue } from "usehooks-ts";
 import { CopyButton } from "./CopyButton";
 
 const nbsp = "\u00a0";
@@ -207,7 +206,7 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
   const { language } = i18n;
   const search = useSearch();
   const [query, setQuery] = useSessionStorage("pokedex.query", "");
-  const [debouncedQuery] = useDebounce(query, 500);
+  const [debouncedQuery] = useDebounceValue(query, 250);
   const [page, setPage] = useSessionStorage<number>("pokedex.page", 0);
   const navigate = useNavigate();
 

@@ -4,6 +4,8 @@
 
 - Added links from Pokémon in the type coverage pages to the Pokédex page
 
+- Updated the Pokédex page to update more quickly when searching
+
 - Updated Brazilian Portuguese translation
 
 - Updated capitalization in English and Brazilian Portuguese
