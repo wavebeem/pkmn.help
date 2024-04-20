@@ -1,5 +1,15 @@
 # Changelog
 
+# 2024-04-20
+
+- Added links from Pokémon in the type coverage pages to the Pokédex page
+
+- Updated the Pokédex page to update more quickly when searching
+
+- Updated Brazilian Portuguese translation
+
+- Updated capitalization in English and Brazilian Portuguese
+
 # 2024-04-14
 
 - Removed "Starter Eevee" from the Pokédex

@@ -222,6 +222,10 @@ input {
   height: 1px;
 }
 
+.fit-content {
+  max-width: fit-content;
+}
+
 .no-box-shadow,
 .no-box-shadow:focus {
   box-shadow: none;
