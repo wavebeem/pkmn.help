@@ -175,7 +175,7 @@ export function App() {
           <button
             className={styles.headerButton}
             data-theme={pokeballTheme}
-            aria-label=""
+            aria-hidden={true}
             onClick={(event) => {
               event.preventDefault();
               const pkmn = randomItem(AllPokemon);
