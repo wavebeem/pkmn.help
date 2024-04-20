@@ -16,6 +16,7 @@
       "normal": "Normal",
       "resistance": "Resistências"
     },
+    "teraPokemon": "Pokémon Tera",
     "coverageList": {
       "empty": "Não foram encontrados Pokémon ou nenhum tipo foi selecionado",
       "weakness": {
@@ -73,8 +74,8 @@
     "chooseAbility": "Escolher Habilidade",
     "abilityNames": {
       "none": "Nenhuma",
-      "filter": "Filtro",
       "tera_shell": "Tera Shell",
+      "filter": "Filtro",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",
@@ -132,8 +133,8 @@
       "text": "Defesa"
     },
     "shiny": {
-      "text": "Shiny",
-      "label": "Shiny de {{ pokemon }}"
+      "label": "Shiny de {{ pokemon }}",
+      "text": "Shiny"
     },
     "pagination": {
       "next": "Próximo",
@@ -200,6 +201,8 @@
       "language": {
         "label": "Idioma",
         "default": "Detectar idioma automaticamente",
+        "official": "Idiomas Oficiais",
+        "unofficial": "Idiomas Não-Oficiais",
         "helpText": "O suporte de idiomas está incompleto. Por favor, pode me chamar pelo email, pago pela sua tradução."
       },
       "theme": {
@@ -245,16 +248,17 @@
         "da": "Tradução dinamarquesa",
         "ru": "Tradução Russa",
         "kk": "Tradução Cazaque",
-        "nl": "Tradução Holandesa",
         "pt-BR": "Tradução Português Brasileiro",
-        "zh-Hans": "Tradução Chinesa",
+        "zh-Hans": "Tradução Chinesa Simplificada",
+        "zh-Hant": "Tradução Chinesa Tradicional",
         "ro": "Tradução Romena",
+        "pl": "Tradução Polonesa",
         "fr": "Tradução Francesa",
         "de": "Tradução Alemã",
         "it": "Tradução Italiana",
-        "ja": "Tradução Japonesa",
-        "pl": "Tradução Polonesa",
         "ko": "Tradução Coreana",
+        "ja": "Tradução Japonesa",
+        "nl": "Tradução Holandesa",
         "testing": "Testes",
         "other": "Vários Pokéfãs anônimos"
       }
@@ -286,6 +290,7 @@
     "dragon": "Dragão",
     "dark": "Sombrio",
     "fairy": "Fada",
+    "stellar": "Estelar",
     "none": "Nenhum"
   },
   "banners": {
@@ -296,7 +301,8 @@
     }
   },
   "general": {
-    "loading": "Carregando..."
+    "loading": "Carregando...",
+    "copyLink": "Copiar Link"
   },
   "games": {
     "label": "Geração do Jogo",
