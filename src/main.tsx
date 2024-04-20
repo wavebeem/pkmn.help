@@ -14,11 +14,9 @@ if (!element) {
 const root = ReactDOM.createRoot(element);
 
 root.render(
-  // <React.StrictMode>
   <ErrorBoundary render={(error) => <ScreenError error={error} />}>
     <BrowserRouter>
       <App />
     </BrowserRouter>
   </ErrorBoundary>
-  // </React.StrictMode>
 );
