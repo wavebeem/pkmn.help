@@ -1,9 +1,10 @@
 /* eslint-disable no-console */
 import { argv } from "process";
-import { fetchImages } from "./fetch-images.js";
-import { mergeData } from "./merge-data.js";
-import { scrapePokeapi } from "./scrape-pokeapi.js";
-import { optimizeImages } from "./optimize-images.js";
+import { downloadMedia } from "./lib/downloadMedia.js";
+import { mergeData } from "./lib/mergeData.js";
+import { scrapePokeapi } from "./lib/scrapePokeapi.js";
+import { optimizeImages } from "./lib/optimizeImages.js";
+import { convertAudio } from "./lib/convertAudio.js";
 
 async function main(flags: string[]) {
   if (flags.includes("merge")) {
@@ -12,7 +13,7 @@ async function main(flags: string[]) {
   }
 
   if (flags.includes("fast")) {
-    await fetchImages();
+    await downloadMedia();
     await optimizeImages();
     await mergeData();
     return;
@@ -23,8 +24,13 @@ async function main(flags: string[]) {
     return;
   }
 
+  if (flags.includes("test")) {
+    await convertAudio();
+    return;
+  }
+
   await scrapePokeapi();
-  await fetchImages();
+  await downloadMedia();
   await optimizeImages();
   await mergeData();
 }

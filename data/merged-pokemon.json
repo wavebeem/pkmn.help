@@ -27,7 +27,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ivysaur",
@@ -57,7 +58,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "venusaur",
@@ -87,7 +89,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "venusaur-mega",
@@ -128,7 +131,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "charmander",
@@ -157,7 +161,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "charmeleon",
@@ -186,7 +191,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "charizard",
@@ -216,7 +222,8 @@
       "fire",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "charizard-mega-x",
@@ -257,7 +264,8 @@
       "fire",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "charizard-mega-y",
@@ -298,7 +306,8 @@
       "fire",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "squirtle",
@@ -327,7 +336,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wartortle",
@@ -356,7 +366,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "blastoise",
@@ -385,7 +396,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "blastoise-mega",
@@ -425,7 +437,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "caterpie",
@@ -454,7 +467,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "metapod",
@@ -483,7 +497,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "butterfree",
@@ -513,7 +528,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "weedle",
@@ -543,7 +559,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kakuna",
@@ -573,7 +590,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "beedrill",
@@ -603,7 +621,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "beedrill-mega",
@@ -644,7 +663,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pidgey",
@@ -674,7 +694,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pidgeotto",
@@ -704,7 +725,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pidgeot",
@@ -734,7 +756,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pidgeot-mega",
@@ -775,7 +798,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rattata",
@@ -804,7 +828,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rattata-alola",
@@ -845,7 +870,8 @@
       "dark",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "raticate",
@@ -874,7 +900,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "raticate-alola",
@@ -915,7 +942,8 @@
       "dark",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "spearow",
@@ -945,7 +973,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "fearow",
@@ -975,7 +1004,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ekans",
@@ -1004,7 +1034,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "arbok",
@@ -1033,7 +1064,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pikachu",
@@ -1062,7 +1094,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "raichu",
@@ -1091,7 +1124,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "raichu-alola",
@@ -1132,7 +1166,8 @@
       "electric",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sandshrew",
@@ -1161,7 +1196,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sandshrew-alola",
@@ -1202,7 +1238,8 @@
       "ice",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sandslash",
@@ -1231,7 +1268,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sandslash-alola",
@@ -1272,7 +1310,8 @@
       "ice",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nidoran-f",
@@ -1301,7 +1340,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nidorina",
@@ -1330,7 +1370,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nidoqueen",
@@ -1360,7 +1401,8 @@
       "poison",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nidoran-m",
@@ -1389,7 +1431,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nidorino",
@@ -1418,7 +1461,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nidoking",
@@ -1448,7 +1492,8 @@
       "poison",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "clefairy",
@@ -1477,7 +1522,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "clefable",
@@ -1506,7 +1552,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vulpix",
@@ -1535,7 +1582,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vulpix-alola",
@@ -1575,7 +1623,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ninetales",
@@ -1604,7 +1653,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ninetales-alola",
@@ -1645,7 +1695,8 @@
       "ice",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "jigglypuff",
@@ -1675,7 +1726,8 @@
       "normal",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wigglytuff",
@@ -1705,7 +1757,8 @@
       "normal",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zubat",
@@ -1735,7 +1788,8 @@
       "poison",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "golbat",
@@ -1765,7 +1819,8 @@
       "poison",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "oddish",
@@ -1795,7 +1850,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gloom",
@@ -1825,7 +1881,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vileplume",
@@ -1855,7 +1912,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "paras",
@@ -1885,7 +1943,8 @@
       "bug",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "parasect",
@@ -1915,7 +1974,8 @@
       "bug",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "venonat",
@@ -1945,7 +2005,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "venomoth",
@@ -1975,7 +2036,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "diglett",
@@ -2004,7 +2066,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "diglett-alola",
@@ -2045,7 +2108,8 @@
       "ground",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dugtrio",
@@ -2074,7 +2138,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dugtrio-alola",
@@ -2115,7 +2180,8 @@
       "ground",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "meowth",
@@ -2144,7 +2210,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "meowth-alola",
@@ -2184,7 +2251,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "meowth-galar",
@@ -2224,7 +2292,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "persian",
@@ -2253,7 +2322,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "persian-alola",
@@ -2293,7 +2363,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "psyduck",
@@ -2322,7 +2393,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "golduck",
@@ -2351,7 +2423,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mankey",
@@ -2380,7 +2453,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "primeape",
@@ -2409,7 +2483,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "growlithe",
@@ -2438,7 +2513,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "growlithe-hisui",
@@ -2474,7 +2550,8 @@
       "fire",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "arcanine",
@@ -2503,7 +2580,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "arcanine-hisui",
@@ -2539,7 +2617,8 @@
       "fire",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "poliwag",
@@ -2568,7 +2647,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "poliwhirl",
@@ -2597,7 +2677,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "poliwrath",
@@ -2627,7 +2708,8 @@
       "water",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "abra",
@@ -2656,7 +2738,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kadabra",
@@ -2685,7 +2768,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "alakazam",
@@ -2714,7 +2798,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "alakazam-mega",
@@ -2754,7 +2839,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "machop",
@@ -2783,7 +2869,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "machoke",
@@ -2812,7 +2899,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "machamp",
@@ -2841,7 +2929,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bellsprout",
@@ -2871,7 +2960,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "weepinbell",
@@ -2901,7 +2991,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "victreebel",
@@ -2931,7 +3022,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tentacool",
@@ -2961,7 +3053,8 @@
       "water",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tentacruel",
@@ -2991,7 +3084,8 @@
       "water",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "geodude",
@@ -3021,7 +3115,8 @@
       "rock",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "geodude-alola",
@@ -3062,7 +3157,8 @@
       "rock",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "graveler",
@@ -3092,7 +3188,8 @@
       "rock",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "graveler-alola",
@@ -3133,7 +3230,8 @@
       "rock",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "golem",
@@ -3163,7 +3261,8 @@
       "rock",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "golem-alola",
@@ -3204,7 +3303,8 @@
       "rock",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ponyta",
@@ -3233,7 +3333,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ponyta-galar",
@@ -3273,7 +3374,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rapidash",
@@ -3302,7 +3404,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rapidash-galar",
@@ -3343,7 +3446,8 @@
       "psychic",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slowpoke",
@@ -3373,7 +3477,8 @@
       "water",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slowpoke-galar",
@@ -3413,7 +3518,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slowbro",
@@ -3443,7 +3549,8 @@
       "water",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slowbro-mega",
@@ -3484,7 +3591,8 @@
       "water",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slowbro-galar",
@@ -3525,7 +3633,8 @@
       "poison",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "magnemite",
@@ -3555,7 +3664,8 @@
       "electric",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "magneton",
@@ -3585,7 +3695,8 @@
       "electric",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "farfetchd",
@@ -3615,7 +3726,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "farfetchd-galar",
@@ -3655,7 +3767,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "doduo",
@@ -3685,7 +3798,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dodrio",
@@ -3715,7 +3829,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "seel",
@@ -3744,7 +3859,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dewgong",
@@ -3774,7 +3890,8 @@
       "water",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "grimer",
@@ -3803,7 +3920,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "grimer-alola",
@@ -3844,7 +3962,8 @@
       "poison",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "muk",
@@ -3873,7 +3992,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "muk-alola",
@@ -3914,7 +4034,8 @@
       "poison",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shellder",
@@ -3943,7 +4064,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cloyster",
@@ -3973,7 +4095,8 @@
       "water",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gastly",
@@ -4003,7 +4126,8 @@
       "ghost",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "haunter",
@@ -4033,7 +4157,8 @@
       "ghost",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gengar",
@@ -4063,7 +4188,8 @@
       "ghost",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gengar-mega",
@@ -4104,7 +4230,8 @@
       "ghost",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "onix",
@@ -4134,7 +4261,8 @@
       "rock",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "drowzee",
@@ -4163,7 +4291,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hypno",
@@ -4192,7 +4321,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "krabby",
@@ -4221,7 +4351,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kingler",
@@ -4250,7 +4381,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "voltorb",
@@ -4279,7 +4411,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "voltorb-hisui",
@@ -4315,7 +4448,8 @@
       "electric",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "electrode",
@@ -4344,7 +4478,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "electrode-hisui",
@@ -4380,7 +4515,8 @@
       "electric",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "exeggcute",
@@ -4410,7 +4546,8 @@
       "grass",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "exeggutor",
@@ -4440,7 +4577,8 @@
       "grass",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "exeggutor-alola",
@@ -4481,7 +4619,8 @@
       "grass",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cubone",
@@ -4510,7 +4649,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "marowak",
@@ -4539,7 +4679,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "marowak-alola",
@@ -4580,7 +4721,8 @@
       "fire",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hitmonlee",
@@ -4609,7 +4751,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hitmonchan",
@@ -4638,7 +4781,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lickitung",
@@ -4667,7 +4811,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "koffing",
@@ -4696,7 +4841,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "weezing",
@@ -4725,7 +4871,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "weezing-galar",
@@ -4766,7 +4913,8 @@
       "poison",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rhyhorn",
@@ -4796,7 +4944,8 @@
       "ground",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rhydon",
@@ -4826,7 +4975,8 @@
       "ground",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chansey",
@@ -4855,7 +5005,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tangela",
@@ -4884,7 +5035,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kangaskhan",
@@ -4913,7 +5065,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kangaskhan-mega",
@@ -4953,7 +5106,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "horsea",
@@ -4982,7 +5136,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "seadra",
@@ -5011,7 +5166,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "goldeen",
@@ -5040,7 +5196,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "seaking",
@@ -5069,7 +5226,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "staryu",
@@ -5098,7 +5256,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "starmie",
@@ -5128,7 +5287,8 @@
       "water",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mr-mime",
@@ -5158,7 +5318,8 @@
       "psychic",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mr-mime-galar",
@@ -5199,7 +5360,8 @@
       "ice",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "scyther",
@@ -5229,7 +5391,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "jynx",
@@ -5259,7 +5422,8 @@
       "ice",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "electabuzz",
@@ -5288,7 +5452,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "magmar",
@@ -5317,7 +5482,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pinsir",
@@ -5346,7 +5512,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pinsir-mega",
@@ -5387,7 +5554,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tauros",
@@ -5416,7 +5584,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tauros-paldea-combat-breed",
@@ -5450,7 +5619,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tauros-paldea-blaze-breed",
@@ -5485,7 +5655,8 @@
       "fighting",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tauros-paldea-aqua-breed",
@@ -5520,7 +5691,8 @@
       "fighting",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "magikarp",
@@ -5549,7 +5721,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gyarados",
@@ -5579,7 +5752,8 @@
       "water",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gyarados-mega",
@@ -5620,7 +5794,8 @@
       "water",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lapras",
@@ -5650,7 +5825,8 @@
       "water",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ditto",
@@ -5679,7 +5855,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "eevee",
@@ -5708,7 +5885,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vaporeon",
@@ -5737,7 +5915,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "jolteon",
@@ -5766,7 +5945,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "flareon",
@@ -5795,7 +5975,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "porygon",
@@ -5824,7 +6005,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "omanyte",
@@ -5854,7 +6036,8 @@
       "rock",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "omastar",
@@ -5884,7 +6067,8 @@
       "rock",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kabuto",
@@ -5914,7 +6098,8 @@
       "rock",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kabutops",
@@ -5944,7 +6129,8 @@
       "rock",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "aerodactyl",
@@ -5974,7 +6160,8 @@
       "rock",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "aerodactyl-mega",
@@ -6015,7 +6202,8 @@
       "rock",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "snorlax",
@@ -6044,7 +6232,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "articuno",
@@ -6074,7 +6263,8 @@
       "ice",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "articuno-galar",
@@ -6115,7 +6305,8 @@
       "psychic",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zapdos",
@@ -6145,7 +6336,8 @@
       "electric",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zapdos-galar",
@@ -6186,7 +6378,8 @@
       "fighting",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "moltres",
@@ -6216,7 +6409,8 @@
       "fire",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "moltres-galar",
@@ -6257,7 +6451,8 @@
       "dark",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dratini",
@@ -6286,7 +6481,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dragonair",
@@ -6315,7 +6511,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dragonite",
@@ -6345,7 +6542,8 @@
       "dragon",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mewtwo",
@@ -6374,7 +6572,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mewtwo-mega-x",
@@ -6415,7 +6614,8 @@
       "psychic",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mewtwo-mega-y",
@@ -6455,7 +6655,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mew",
@@ -6484,7 +6685,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chikorita",
@@ -6513,7 +6715,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bayleef",
@@ -6542,7 +6745,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "meganium",
@@ -6571,7 +6775,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cyndaquil",
@@ -6600,7 +6805,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "quilava",
@@ -6629,7 +6835,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "typhlosion",
@@ -6658,7 +6865,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "typhlosion-hisui",
@@ -6694,7 +6902,8 @@
       "fire",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "totodile",
@@ -6723,7 +6932,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "croconaw",
@@ -6752,7 +6962,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "feraligatr",
@@ -6781,7 +6992,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sentret",
@@ -6810,7 +7022,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "furret",
@@ -6839,7 +7052,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hoothoot",
@@ -6869,7 +7083,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "noctowl",
@@ -6899,7 +7114,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ledyba",
@@ -6929,7 +7145,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ledian",
@@ -6959,7 +7176,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "spinarak",
@@ -6989,7 +7207,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ariados",
@@ -7019,7 +7238,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "crobat",
@@ -7049,7 +7269,8 @@
       "poison",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chinchou",
@@ -7079,7 +7300,8 @@
       "water",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lanturn",
@@ -7109,7 +7331,8 @@
       "water",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pichu",
@@ -7138,7 +7361,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cleffa",
@@ -7167,7 +7391,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "igglybuff",
@@ -7197,7 +7422,8 @@
       "normal",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "togepi",
@@ -7226,7 +7452,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "togetic",
@@ -7256,7 +7483,8 @@
       "fairy",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "natu",
@@ -7286,7 +7514,8 @@
       "psychic",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "xatu",
@@ -7316,7 +7545,8 @@
       "psychic",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mareep",
@@ -7345,7 +7575,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "flaaffy",
@@ -7374,7 +7605,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ampharos",
@@ -7403,7 +7635,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ampharos-mega",
@@ -7444,7 +7677,8 @@
       "electric",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bellossom",
@@ -7473,7 +7707,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "marill",
@@ -7503,7 +7738,8 @@
       "water",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "azumarill",
@@ -7533,7 +7769,8 @@
       "water",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sudowoodo",
@@ -7562,7 +7799,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "politoed",
@@ -7591,7 +7829,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hoppip",
@@ -7621,7 +7860,8 @@
       "grass",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "skiploom",
@@ -7651,7 +7891,8 @@
       "grass",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "jumpluff",
@@ -7681,7 +7922,8 @@
       "grass",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "aipom",
@@ -7710,7 +7952,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sunkern",
@@ -7739,7 +7982,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sunflora",
@@ -7768,7 +8012,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "yanma",
@@ -7798,7 +8043,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wooper",
@@ -7828,7 +8074,8 @@
       "water",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wooper-paldea",
@@ -7863,7 +8110,8 @@
       "poison",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "quagsire",
@@ -7893,7 +8141,8 @@
       "water",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "espeon",
@@ -7922,7 +8171,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "umbreon",
@@ -7951,7 +8201,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "murkrow",
@@ -7981,7 +8232,8 @@
       "dark",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slowking",
@@ -8011,7 +8263,8 @@
       "water",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slowking-galar",
@@ -8052,7 +8305,8 @@
       "poison",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "misdreavus",
@@ -8081,7 +8335,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "unown",
@@ -8118,7 +8373,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wobbuffet",
@@ -8147,7 +8403,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "girafarig",
@@ -8177,7 +8434,8 @@
       "normal",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pineco",
@@ -8206,7 +8464,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "forretress",
@@ -8236,7 +8495,8 @@
       "bug",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dunsparce",
@@ -8265,7 +8525,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gligar",
@@ -8295,7 +8556,8 @@
       "ground",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "steelix",
@@ -8325,7 +8587,8 @@
       "steel",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "steelix-mega",
@@ -8366,7 +8629,8 @@
       "steel",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "snubbull",
@@ -8395,7 +8659,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "granbull",
@@ -8424,7 +8689,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "qwilfish",
@@ -8454,7 +8720,8 @@
       "water",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "qwilfish-hisui",
@@ -8490,7 +8757,8 @@
       "dark",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "scizor",
@@ -8520,7 +8788,8 @@
       "bug",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "scizor-mega",
@@ -8561,7 +8830,8 @@
       "bug",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shuckle",
@@ -8591,7 +8861,8 @@
       "bug",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "heracross",
@@ -8621,7 +8892,8 @@
       "bug",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "heracross-mega",
@@ -8662,7 +8934,8 @@
       "bug",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sneasel",
@@ -8692,7 +8965,8 @@
       "dark",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sneasel-hisui",
@@ -8728,7 +9002,8 @@
       "fighting",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "teddiursa",
@@ -8757,7 +9032,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ursaring",
@@ -8786,7 +9062,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slugma",
@@ -8815,7 +9092,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "magcargo",
@@ -8845,7 +9123,8 @@
       "fire",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "swinub",
@@ -8875,7 +9154,8 @@
       "ice",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "piloswine",
@@ -8905,7 +9185,8 @@
       "ice",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "corsola",
@@ -8935,7 +9216,8 @@
       "water",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "corsola-galar",
@@ -8975,7 +9257,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "remoraid",
@@ -9004,7 +9287,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "octillery",
@@ -9033,7 +9317,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "delibird",
@@ -9063,7 +9348,8 @@
       "ice",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mantine",
@@ -9093,7 +9379,8 @@
       "water",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "skarmory",
@@ -9123,7 +9410,8 @@
       "steel",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "houndour",
@@ -9153,7 +9441,8 @@
       "dark",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "houndoom",
@@ -9183,7 +9472,8 @@
       "dark",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "houndoom-mega",
@@ -9224,7 +9514,8 @@
       "dark",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kingdra",
@@ -9254,7 +9545,8 @@
       "water",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "phanpy",
@@ -9283,7 +9575,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "donphan",
@@ -9312,7 +9605,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "porygon2",
@@ -9341,7 +9635,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "stantler",
@@ -9370,7 +9665,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "smeargle",
@@ -9399,7 +9695,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tyrogue",
@@ -9428,7 +9725,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hitmontop",
@@ -9457,7 +9755,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "smoochum",
@@ -9487,7 +9786,8 @@
       "ice",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "elekid",
@@ -9516,7 +9816,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "magby",
@@ -9545,7 +9846,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "miltank",
@@ -9574,7 +9876,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "blissey",
@@ -9603,7 +9906,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "raikou",
@@ -9632,7 +9936,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "entei",
@@ -9661,7 +9966,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "suicune",
@@ -9690,7 +9996,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "larvitar",
@@ -9720,7 +10027,8 @@
       "rock",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pupitar",
@@ -9750,7 +10058,8 @@
       "rock",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tyranitar",
@@ -9780,7 +10089,8 @@
       "rock",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tyranitar-mega",
@@ -9821,7 +10131,8 @@
       "rock",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lugia",
@@ -9851,7 +10162,8 @@
       "psychic",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ho-oh",
@@ -9881,7 +10193,8 @@
       "fire",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "celebi",
@@ -9911,7 +10224,8 @@
       "psychic",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "treecko",
@@ -9940,7 +10254,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "grovyle",
@@ -9969,7 +10284,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sceptile",
@@ -9998,7 +10314,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sceptile-mega",
@@ -10039,7 +10356,8 @@
       "grass",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "torchic",
@@ -10068,7 +10386,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "combusken",
@@ -10098,7 +10417,8 @@
       "fire",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "blaziken",
@@ -10128,7 +10448,8 @@
       "fire",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "blaziken-mega",
@@ -10169,7 +10490,8 @@
       "fire",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mudkip",
@@ -10198,7 +10520,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "marshtomp",
@@ -10228,7 +10551,8 @@
       "water",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "swampert",
@@ -10258,7 +10582,8 @@
       "water",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "swampert-mega",
@@ -10299,7 +10624,8 @@
       "water",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "poochyena",
@@ -10328,7 +10654,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mightyena",
@@ -10357,7 +10684,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zigzagoon",
@@ -10386,7 +10714,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zigzagoon-galar",
@@ -10427,7 +10756,8 @@
       "dark",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "linoone",
@@ -10456,7 +10786,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "linoone-galar",
@@ -10497,7 +10828,8 @@
       "dark",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wurmple",
@@ -10526,7 +10858,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "silcoon",
@@ -10555,7 +10888,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "beautifly",
@@ -10585,7 +10919,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cascoon",
@@ -10614,7 +10949,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dustox",
@@ -10644,7 +10980,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lotad",
@@ -10674,7 +11011,8 @@
       "water",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lombre",
@@ -10704,7 +11042,8 @@
       "water",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ludicolo",
@@ -10734,7 +11073,8 @@
       "water",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "seedot",
@@ -10763,7 +11103,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nuzleaf",
@@ -10793,7 +11134,8 @@
       "grass",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shiftry",
@@ -10823,7 +11165,8 @@
       "grass",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "taillow",
@@ -10853,7 +11196,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "swellow",
@@ -10883,7 +11227,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wingull",
@@ -10913,7 +11258,8 @@
       "water",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pelipper",
@@ -10943,7 +11289,8 @@
       "water",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ralts",
@@ -10973,7 +11320,8 @@
       "psychic",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kirlia",
@@ -11003,7 +11351,8 @@
       "psychic",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gardevoir",
@@ -11033,7 +11382,8 @@
       "psychic",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gardevoir-mega",
@@ -11074,7 +11424,8 @@
       "psychic",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "surskit",
@@ -11104,7 +11455,8 @@
       "bug",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "masquerain",
@@ -11134,7 +11486,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shroomish",
@@ -11163,7 +11516,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "breloom",
@@ -11193,7 +11547,8 @@
       "grass",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slakoth",
@@ -11222,7 +11577,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vigoroth",
@@ -11251,7 +11607,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slaking",
@@ -11280,7 +11637,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nincada",
@@ -11310,7 +11668,8 @@
       "bug",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ninjask",
@@ -11340,7 +11699,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shedinja",
@@ -11370,7 +11730,8 @@
       "bug",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "whismur",
@@ -11399,7 +11760,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "loudred",
@@ -11428,7 +11790,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "exploud",
@@ -11457,7 +11820,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "makuhita",
@@ -11486,7 +11850,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hariyama",
@@ -11515,7 +11880,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "azurill",
@@ -11545,7 +11911,8 @@
       "normal",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nosepass",
@@ -11574,7 +11941,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "skitty",
@@ -11603,7 +11971,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "delcatty",
@@ -11632,7 +12001,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sableye",
@@ -11662,7 +12032,8 @@
       "dark",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sableye-mega",
@@ -11703,7 +12074,8 @@
       "dark",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mawile",
@@ -11733,7 +12105,8 @@
       "steel",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mawile-mega",
@@ -11774,7 +12147,8 @@
       "steel",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "aron",
@@ -11804,7 +12178,8 @@
       "steel",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lairon",
@@ -11834,7 +12209,8 @@
       "steel",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "aggron",
@@ -11864,7 +12240,8 @@
       "steel",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "aggron-mega",
@@ -11904,7 +12281,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "meditite",
@@ -11934,7 +12312,8 @@
       "fighting",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "medicham",
@@ -11964,7 +12343,8 @@
       "fighting",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "medicham-mega",
@@ -12005,7 +12385,8 @@
       "fighting",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "electrike",
@@ -12034,7 +12415,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "manectric",
@@ -12063,7 +12445,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "manectric-mega",
@@ -12103,7 +12486,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "plusle",
@@ -12132,7 +12516,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "minun",
@@ -12161,7 +12546,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "volbeat",
@@ -12190,7 +12576,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "illumise",
@@ -12219,7 +12606,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "roselia",
@@ -12249,7 +12637,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gulpin",
@@ -12278,7 +12667,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "swalot",
@@ -12307,7 +12697,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "carvanha",
@@ -12337,7 +12728,8 @@
       "water",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sharpedo",
@@ -12367,7 +12759,8 @@
       "water",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sharpedo-mega",
@@ -12408,7 +12801,8 @@
       "water",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wailmer",
@@ -12437,7 +12831,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wailord",
@@ -12466,7 +12861,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "numel",
@@ -12496,7 +12892,8 @@
       "fire",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "camerupt",
@@ -12526,7 +12923,8 @@
       "fire",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "camerupt-mega",
@@ -12567,7 +12965,8 @@
       "fire",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "torkoal",
@@ -12596,7 +12995,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "spoink",
@@ -12625,7 +13025,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "grumpig",
@@ -12654,7 +13055,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "spinda",
@@ -12683,7 +13085,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "trapinch",
@@ -12712,7 +13115,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vibrava",
@@ -12742,7 +13146,8 @@
       "ground",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "flygon",
@@ -12772,7 +13177,8 @@
       "ground",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cacnea",
@@ -12801,7 +13207,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cacturne",
@@ -12831,7 +13238,8 @@
       "grass",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "swablu",
@@ -12861,7 +13269,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "altaria",
@@ -12891,7 +13300,8 @@
       "dragon",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "altaria-mega",
@@ -12932,7 +13342,8 @@
       "dragon",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zangoose",
@@ -12961,7 +13372,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "seviper",
@@ -12990,7 +13402,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lunatone",
@@ -13020,7 +13433,8 @@
       "rock",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "solrock",
@@ -13050,7 +13464,8 @@
       "rock",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "barboach",
@@ -13080,7 +13495,8 @@
       "water",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "whiscash",
@@ -13110,7 +13526,8 @@
       "water",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "corphish",
@@ -13139,7 +13556,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "crawdaunt",
@@ -13169,7 +13587,8 @@
       "water",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "baltoy",
@@ -13199,7 +13618,8 @@
       "ground",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "claydol",
@@ -13229,7 +13649,8 @@
       "ground",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lileep",
@@ -13259,7 +13680,8 @@
       "rock",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cradily",
@@ -13289,7 +13711,8 @@
       "rock",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "anorith",
@@ -13319,7 +13742,8 @@
       "rock",
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "armaldo",
@@ -13349,7 +13773,8 @@
       "rock",
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "feebas",
@@ -13378,7 +13803,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "milotic",
@@ -13407,7 +13833,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "castform",
@@ -13447,7 +13874,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "castform-sunny",
@@ -13487,7 +13915,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "castform-rainy",
@@ -13527,7 +13956,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "castform-snowy",
@@ -13567,7 +13997,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kecleon",
@@ -13596,7 +14027,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shuppet",
@@ -13625,7 +14057,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "banette",
@@ -13654,7 +14087,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "banette-mega",
@@ -13694,7 +14128,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "duskull",
@@ -13723,7 +14158,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dusclops",
@@ -13752,7 +14188,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tropius",
@@ -13782,7 +14219,8 @@
       "grass",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chimecho",
@@ -13811,7 +14249,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "absol",
@@ -13840,7 +14279,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "absol-mega",
@@ -13880,7 +14320,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wynaut",
@@ -13909,7 +14350,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "snorunt",
@@ -13938,7 +14380,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "glalie",
@@ -13967,7 +14410,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "glalie-mega",
@@ -14007,7 +14451,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "spheal",
@@ -14037,7 +14482,8 @@
       "ice",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sealeo",
@@ -14067,7 +14513,8 @@
       "ice",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "walrein",
@@ -14097,7 +14544,8 @@
       "ice",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "clamperl",
@@ -14126,7 +14574,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "huntail",
@@ -14155,7 +14604,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gorebyss",
@@ -14184,7 +14634,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "relicanth",
@@ -14214,7 +14665,8 @@
       "water",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "luvdisc",
@@ -14243,7 +14695,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bagon",
@@ -14272,7 +14725,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shelgon",
@@ -14301,7 +14755,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "salamence",
@@ -14331,7 +14786,8 @@
       "dragon",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "salamence-mega",
@@ -14372,7 +14828,8 @@
       "dragon",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "beldum",
@@ -14402,7 +14859,8 @@
       "steel",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "metang",
@@ -14432,7 +14890,8 @@
       "steel",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "metagross",
@@ -14462,7 +14921,8 @@
       "steel",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "metagross-mega",
@@ -14503,7 +14963,8 @@
       "steel",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "regirock",
@@ -14532,7 +14993,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "regice",
@@ -14561,7 +15023,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "registeel",
@@ -14590,7 +15053,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "latias",
@@ -14620,7 +15084,8 @@
       "dragon",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "latias-mega",
@@ -14661,7 +15126,8 @@
       "dragon",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "latios",
@@ -14691,7 +15157,8 @@
       "dragon",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "latios-mega",
@@ -14732,7 +15199,8 @@
       "dragon",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kyogre",
@@ -14771,7 +15239,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kyogre-primal",
@@ -14811,7 +15280,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "groudon",
@@ -14850,7 +15320,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "groudon-primal",
@@ -14891,7 +15362,8 @@
       "ground",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rayquaza",
@@ -14921,7 +15393,8 @@
       "dragon",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rayquaza-mega",
@@ -14962,7 +15435,8 @@
       "dragon",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "jirachi",
@@ -14992,7 +15466,8 @@
       "steel",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "deoxys-normal",
@@ -15032,7 +15507,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "deoxys-attack",
@@ -15072,7 +15548,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "deoxys-defense",
@@ -15112,7 +15589,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "deoxys-speed",
@@ -15152,7 +15630,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "turtwig",
@@ -15181,7 +15660,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "grotle",
@@ -15210,7 +15690,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "torterra",
@@ -15240,7 +15721,8 @@
       "grass",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chimchar",
@@ -15269,7 +15751,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "monferno",
@@ -15299,7 +15782,8 @@
       "fire",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "infernape",
@@ -15329,7 +15813,8 @@
       "fire",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "piplup",
@@ -15358,7 +15843,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "prinplup",
@@ -15387,7 +15873,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "empoleon",
@@ -15417,7 +15904,8 @@
       "water",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "starly",
@@ -15447,7 +15935,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "staravia",
@@ -15477,7 +15966,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "staraptor",
@@ -15507,7 +15997,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bidoof",
@@ -15536,7 +16027,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bibarel",
@@ -15566,7 +16058,8 @@
       "normal",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kricketot",
@@ -15595,7 +16088,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kricketune",
@@ -15624,7 +16118,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shinx",
@@ -15653,7 +16148,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "luxio",
@@ -15682,7 +16178,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "luxray",
@@ -15711,7 +16208,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "budew",
@@ -15741,7 +16239,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "roserade",
@@ -15771,7 +16270,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cranidos",
@@ -15800,7 +16300,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rampardos",
@@ -15829,7 +16330,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shieldon",
@@ -15859,7 +16361,8 @@
       "rock",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bastiodon",
@@ -15889,7 +16392,8 @@
       "rock",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "burmy",
@@ -15926,7 +16430,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wormadam-plant",
@@ -15967,7 +16472,8 @@
       "bug",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wormadam-sandy",
@@ -16008,7 +16514,8 @@
       "bug",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wormadam-trash",
@@ -16049,7 +16556,8 @@
       "bug",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mothim",
@@ -16079,7 +16587,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "combee",
@@ -16109,7 +16618,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vespiquen",
@@ -16139,7 +16649,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pachirisu",
@@ -16168,7 +16679,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "buizel",
@@ -16197,7 +16709,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "floatzel",
@@ -16226,7 +16739,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cherubi",
@@ -16255,7 +16769,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cherrim",
@@ -16295,7 +16810,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shellos",
@@ -16335,7 +16851,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gastrodon",
@@ -16376,7 +16893,8 @@
       "water",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ambipom",
@@ -16405,7 +16923,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "drifloon",
@@ -16435,7 +16954,8 @@
       "ghost",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "drifblim",
@@ -16465,7 +16985,8 @@
       "ghost",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "buneary",
@@ -16494,7 +17015,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lopunny",
@@ -16523,7 +17045,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lopunny-mega",
@@ -16564,7 +17087,8 @@
       "normal",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mismagius",
@@ -16593,7 +17117,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "honchkrow",
@@ -16623,7 +17148,8 @@
       "dark",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "glameow",
@@ -16652,7 +17178,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "purugly",
@@ -16681,7 +17208,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chingling",
@@ -16710,7 +17238,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "stunky",
@@ -16740,7 +17269,8 @@
       "poison",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "skuntank",
@@ -16770,7 +17300,8 @@
       "poison",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bronzor",
@@ -16800,7 +17331,8 @@
       "steel",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bronzong",
@@ -16830,7 +17362,8 @@
       "steel",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bonsly",
@@ -16859,7 +17392,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mime-jr",
@@ -16889,7 +17423,8 @@
       "psychic",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "happiny",
@@ -16918,7 +17453,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chatot",
@@ -16948,7 +17484,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "spiritomb",
@@ -16978,7 +17515,8 @@
       "ghost",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gible",
@@ -17008,7 +17546,8 @@
       "dragon",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gabite",
@@ -17038,7 +17577,8 @@
       "dragon",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "garchomp",
@@ -17068,7 +17608,8 @@
       "dragon",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "garchomp-mega",
@@ -17109,7 +17650,8 @@
       "dragon",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "munchlax",
@@ -17138,7 +17680,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "riolu",
@@ -17167,7 +17710,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lucario",
@@ -17197,7 +17741,8 @@
       "fighting",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lucario-mega",
@@ -17238,7 +17783,8 @@
       "fighting",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hippopotas",
@@ -17267,7 +17813,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hippowdon",
@@ -17296,7 +17843,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "skorupi",
@@ -17326,7 +17874,8 @@
       "poison",
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "drapion",
@@ -17356,7 +17905,8 @@
       "poison",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "croagunk",
@@ -17386,7 +17936,8 @@
       "poison",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "toxicroak",
@@ -17416,7 +17967,8 @@
       "poison",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "carnivine",
@@ -17445,7 +17997,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "finneon",
@@ -17474,7 +18027,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lumineon",
@@ -17503,7 +18057,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mantyke",
@@ -17533,7 +18088,8 @@
       "water",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "snover",
@@ -17563,7 +18119,8 @@
       "grass",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "abomasnow",
@@ -17593,7 +18150,8 @@
       "grass",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "abomasnow-mega",
@@ -17634,7 +18192,8 @@
       "grass",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "weavile",
@@ -17664,7 +18223,8 @@
       "dark",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "magnezone",
@@ -17694,7 +18254,8 @@
       "electric",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lickilicky",
@@ -17723,7 +18284,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rhyperior",
@@ -17753,7 +18315,8 @@
       "ground",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tangrowth",
@@ -17782,7 +18345,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "electivire",
@@ -17811,7 +18375,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "magmortar",
@@ -17840,7 +18405,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "togekiss",
@@ -17870,7 +18436,8 @@
       "fairy",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "yanmega",
@@ -17900,7 +18467,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "leafeon",
@@ -17929,7 +18497,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "glaceon",
@@ -17958,7 +18527,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gliscor",
@@ -17988,7 +18558,8 @@
       "ground",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mamoswine",
@@ -18018,7 +18589,8 @@
       "ice",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "porygon-z",
@@ -18047,7 +18619,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gallade",
@@ -18077,7 +18650,8 @@
       "psychic",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gallade-mega",
@@ -18118,7 +18692,8 @@
       "psychic",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "probopass",
@@ -18148,7 +18723,8 @@
       "rock",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dusknoir",
@@ -18177,7 +18753,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "froslass",
@@ -18207,7 +18784,8 @@
       "ice",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rotom",
@@ -18248,7 +18826,8 @@
       "electric",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rotom-heat",
@@ -18289,7 +18868,8 @@
       "electric",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rotom-wash",
@@ -18330,7 +18910,8 @@
       "electric",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rotom-frost",
@@ -18371,7 +18952,8 @@
       "electric",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rotom-fan",
@@ -18412,7 +18994,8 @@
       "electric",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rotom-mow",
@@ -18453,7 +19036,8 @@
       "electric",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "uxie",
@@ -18482,7 +19066,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mesprit",
@@ -18511,7 +19096,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "azelf",
@@ -18540,7 +19126,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dialga",
@@ -18570,7 +19157,8 @@
       "steel",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dialga-origin",
@@ -18606,7 +19194,8 @@
       "steel",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "palkia",
@@ -18636,7 +19225,8 @@
       "water",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "palkia-origin",
@@ -18672,7 +19262,8 @@
       "water",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "heatran",
@@ -18702,7 +19293,8 @@
       "fire",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "regigigas",
@@ -18731,7 +19323,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "giratina-altered",
@@ -18772,7 +19365,8 @@
       "ghost",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "giratina-origin",
@@ -18813,7 +19407,8 @@
       "ghost",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cresselia",
@@ -18842,7 +19437,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "phione",
@@ -18871,7 +19467,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "manaphy",
@@ -18900,7 +19497,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "darkrai",
@@ -18929,7 +19527,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shaymin-land",
@@ -18969,7 +19568,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shaymin-sky",
@@ -19010,7 +19610,8 @@
       "grass",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "arceus",
@@ -19046,7 +19647,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "victini",
@@ -19076,7 +19678,8 @@
       "psychic",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "snivy",
@@ -19105,7 +19708,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "servine",
@@ -19134,7 +19738,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "serperior",
@@ -19163,7 +19768,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tepig",
@@ -19192,7 +19798,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pignite",
@@ -19222,7 +19829,8 @@
       "fire",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "emboar",
@@ -19252,7 +19860,8 @@
       "fire",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "oshawott",
@@ -19281,7 +19890,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dewott",
@@ -19310,7 +19920,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "samurott",
@@ -19339,7 +19950,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "samurott-hisui",
@@ -19375,7 +19987,8 @@
       "water",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "patrat",
@@ -19404,7 +20017,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "watchog",
@@ -19433,7 +20047,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lillipup",
@@ -19462,7 +20077,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "herdier",
@@ -19491,7 +20107,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "stoutland",
@@ -19520,7 +20137,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "purrloin",
@@ -19549,7 +20167,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "liepard",
@@ -19578,7 +20197,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pansage",
@@ -19607,7 +20227,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "simisage",
@@ -19636,7 +20257,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pansear",
@@ -19665,7 +20287,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "simisear",
@@ -19694,7 +20317,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "panpour",
@@ -19723,7 +20347,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "simipour",
@@ -19752,7 +20377,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "munna",
@@ -19781,7 +20407,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "musharna",
@@ -19810,7 +20437,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pidove",
@@ -19840,7 +20468,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tranquill",
@@ -19870,7 +20499,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "unfezant",
@@ -19900,7 +20530,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "blitzle",
@@ -19929,7 +20560,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zebstrika",
@@ -19958,7 +20590,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "roggenrola",
@@ -19987,7 +20620,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "boldore",
@@ -20016,7 +20650,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gigalith",
@@ -20045,7 +20680,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "woobat",
@@ -20075,7 +20711,8 @@
       "psychic",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "swoobat",
@@ -20105,7 +20742,8 @@
       "psychic",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "drilbur",
@@ -20134,7 +20772,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "excadrill",
@@ -20164,7 +20803,8 @@
       "ground",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "audino",
@@ -20193,7 +20833,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "audino-mega",
@@ -20234,7 +20875,8 @@
       "normal",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "timburr",
@@ -20263,7 +20905,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gurdurr",
@@ -20292,7 +20935,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "conkeldurr",
@@ -20321,7 +20965,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tympole",
@@ -20350,7 +20995,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "palpitoad",
@@ -20380,7 +21026,8 @@
       "water",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "seismitoad",
@@ -20410,7 +21057,8 @@
       "water",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "throh",
@@ -20439,7 +21087,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sawk",
@@ -20468,7 +21117,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sewaddle",
@@ -20498,7 +21148,8 @@
       "bug",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "swadloon",
@@ -20528,7 +21179,8 @@
       "bug",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "leavanny",
@@ -20558,7 +21210,8 @@
       "bug",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "venipede",
@@ -20588,7 +21241,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "whirlipede",
@@ -20618,7 +21272,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "scolipede",
@@ -20648,7 +21303,8 @@
       "bug",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cottonee",
@@ -20678,7 +21334,8 @@
       "grass",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "whimsicott",
@@ -20708,7 +21365,8 @@
       "grass",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "petilil",
@@ -20737,7 +21395,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lilligant",
@@ -20766,7 +21425,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lilligant-hisui",
@@ -20802,7 +21462,8 @@
       "grass",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "basculin-red-striped",
@@ -20842,7 +21503,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sandile",
@@ -20872,7 +21534,8 @@
       "ground",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "krokorok",
@@ -20902,7 +21565,8 @@
       "ground",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "krookodile",
@@ -20932,7 +21596,8 @@
       "ground",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "darumaka",
@@ -20961,7 +21626,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "darumaka-galar",
@@ -21001,7 +21667,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "darmanitan-standard",
@@ -21041,7 +21708,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "darmanitan-zen",
@@ -21082,7 +21750,8 @@
       "fire",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "darmanitan-galar-standard",
@@ -21122,7 +21791,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "darmanitan-galar-zen",
@@ -21163,7 +21833,8 @@
       "ice",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "maractus",
@@ -21192,7 +21863,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dwebble",
@@ -21222,7 +21894,8 @@
       "bug",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "crustle",
@@ -21252,7 +21925,8 @@
       "bug",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "scraggy",
@@ -21282,7 +21956,8 @@
       "dark",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "scrafty",
@@ -21312,7 +21987,8 @@
       "dark",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sigilyph",
@@ -21342,7 +22018,8 @@
       "psychic",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "yamask",
@@ -21371,7 +22048,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "yamask-galar",
@@ -21412,7 +22090,8 @@
       "ground",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cofagrigus",
@@ -21441,7 +22120,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tirtouga",
@@ -21471,7 +22151,8 @@
       "water",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "carracosta",
@@ -21501,7 +22182,8 @@
       "water",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "archen",
@@ -21531,7 +22213,8 @@
       "rock",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "archeops",
@@ -21561,7 +22244,8 @@
       "rock",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "trubbish",
@@ -21590,7 +22274,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "garbodor",
@@ -21619,7 +22304,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zorua",
@@ -21648,7 +22334,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zorua-hisui",
@@ -21684,7 +22371,8 @@
       "normal",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zoroark",
@@ -21713,7 +22401,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zoroark-hisui",
@@ -21749,7 +22438,8 @@
       "normal",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "minccino",
@@ -21778,7 +22468,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cinccino",
@@ -21807,7 +22498,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gothita",
@@ -21836,7 +22528,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gothorita",
@@ -21865,7 +22558,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gothitelle",
@@ -21894,7 +22588,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "solosis",
@@ -21923,7 +22618,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "duosion",
@@ -21952,7 +22648,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "reuniclus",
@@ -21981,7 +22678,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ducklett",
@@ -22011,7 +22709,8 @@
       "water",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "swanna",
@@ -22041,7 +22740,8 @@
       "water",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vanillite",
@@ -22070,7 +22770,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vanillish",
@@ -22099,7 +22800,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vanilluxe",
@@ -22128,7 +22830,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "deerling",
@@ -22166,7 +22869,8 @@
       "normal",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sawsbuck",
@@ -22204,7 +22908,8 @@
       "normal",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "emolga",
@@ -22234,7 +22939,8 @@
       "electric",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "karrablast",
@@ -22263,7 +22969,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "escavalier",
@@ -22293,7 +23000,8 @@
       "bug",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "foongus",
@@ -22323,7 +23031,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "amoonguss",
@@ -22353,7 +23062,8 @@
       "grass",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "frillish",
@@ -22383,7 +23093,8 @@
       "water",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "jellicent",
@@ -22413,7 +23124,8 @@
       "water",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "alomomola",
@@ -22442,7 +23154,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "joltik",
@@ -22472,7 +23185,8 @@
       "bug",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "galvantula",
@@ -22502,7 +23216,8 @@
       "bug",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ferroseed",
@@ -22532,7 +23247,8 @@
       "grass",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ferrothorn",
@@ -22562,7 +23278,8 @@
       "grass",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "klink",
@@ -22591,7 +23308,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "klang",
@@ -22620,7 +23338,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "klinklang",
@@ -22649,7 +23368,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tynamo",
@@ -22678,7 +23398,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "eelektrik",
@@ -22707,7 +23428,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "eelektross",
@@ -22736,7 +23458,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "elgyem",
@@ -22765,7 +23488,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "beheeyem",
@@ -22794,7 +23518,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "litwick",
@@ -22824,7 +23549,8 @@
       "ghost",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lampent",
@@ -22854,7 +23580,8 @@
       "ghost",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chandelure",
@@ -22884,7 +23611,8 @@
       "ghost",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "axew",
@@ -22913,7 +23641,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "fraxure",
@@ -22942,7 +23671,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "haxorus",
@@ -22971,7 +23701,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cubchoo",
@@ -23000,7 +23731,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "beartic",
@@ -23029,7 +23761,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cryogonal",
@@ -23058,7 +23791,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shelmet",
@@ -23087,7 +23821,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "accelgor",
@@ -23116,7 +23851,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "stunfisk",
@@ -23146,7 +23882,8 @@
       "ground",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "stunfisk-galar",
@@ -23187,7 +23924,8 @@
       "ground",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mienfoo",
@@ -23216,7 +23954,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mienshao",
@@ -23245,7 +23984,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "druddigon",
@@ -23274,7 +24014,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "golett",
@@ -23304,7 +24045,8 @@
       "ground",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "golurk",
@@ -23334,7 +24076,8 @@
       "ground",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pawniard",
@@ -23364,7 +24107,8 @@
       "dark",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bisharp",
@@ -23394,7 +24138,8 @@
       "dark",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bouffalant",
@@ -23423,7 +24168,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rufflet",
@@ -23453,7 +24199,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "braviary",
@@ -23483,7 +24230,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "braviary-hisui",
@@ -23519,7 +24267,8 @@
       "psychic",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vullaby",
@@ -23549,7 +24298,8 @@
       "dark",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mandibuzz",
@@ -23579,7 +24329,8 @@
       "dark",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "heatmor",
@@ -23608,7 +24359,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "durant",
@@ -23638,7 +24390,8 @@
       "bug",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "deino",
@@ -23668,7 +24421,8 @@
       "dark",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zweilous",
@@ -23698,7 +24452,8 @@
       "dark",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hydreigon",
@@ -23728,7 +24483,8 @@
       "dark",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "larvesta",
@@ -23758,7 +24514,8 @@
       "bug",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "volcarona",
@@ -23788,7 +24545,8 @@
       "bug",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cobalion",
@@ -23818,7 +24576,8 @@
       "steel",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "terrakion",
@@ -23848,7 +24607,8 @@
       "rock",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "virizion",
@@ -23878,7 +24638,8 @@
       "grass",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tornadus-incarnate",
@@ -23918,7 +24679,8 @@
     "types": [
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tornadus-therian",
@@ -23958,7 +24720,8 @@
     "types": [
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "thundurus-incarnate",
@@ -23999,7 +24762,8 @@
       "electric",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "thundurus-therian",
@@ -24040,7 +24804,8 @@
       "electric",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "reshiram",
@@ -24070,7 +24835,8 @@
       "dragon",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zekrom",
@@ -24100,7 +24866,8 @@
       "dragon",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "landorus-incarnate",
@@ -24141,7 +24908,8 @@
       "ground",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "landorus-therian",
@@ -24182,7 +24950,8 @@
       "ground",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kyurem",
@@ -24223,7 +24992,8 @@
       "dragon",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kyurem-black",
@@ -24264,7 +25034,8 @@
       "dragon",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kyurem-white",
@@ -24305,7 +25076,8 @@
       "dragon",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "keldeo-ordinary",
@@ -24346,7 +25118,8 @@
       "water",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "meloetta-aria",
@@ -24387,7 +25160,8 @@
       "normal",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "meloetta-pirouette",
@@ -24428,7 +25202,8 @@
       "normal",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "genesect",
@@ -24458,7 +25233,8 @@
       "bug",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chespin",
@@ -24487,7 +25263,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "quilladin",
@@ -24516,7 +25293,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chesnaught",
@@ -24546,7 +25324,8 @@
       "grass",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "fennekin",
@@ -24575,7 +25354,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "braixen",
@@ -24604,7 +25384,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "delphox",
@@ -24634,7 +25415,8 @@
       "fire",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "froakie",
@@ -24663,7 +25445,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "frogadier",
@@ -24692,7 +25475,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "greninja",
@@ -24722,7 +25506,8 @@
       "water",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "greninja-ash",
@@ -24763,7 +25548,8 @@
       "water",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bunnelby",
@@ -24792,7 +25578,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "diggersby",
@@ -24822,7 +25609,8 @@
       "normal",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "fletchling",
@@ -24852,7 +25640,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "fletchinder",
@@ -24882,7 +25671,8 @@
       "fire",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "talonflame",
@@ -24912,7 +25702,8 @@
       "fire",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "scatterbug",
@@ -24941,7 +25732,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "spewpa",
@@ -24970,7 +25762,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vivillon",
@@ -25008,7 +25801,8 @@
       "bug",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "litleo",
@@ -25038,7 +25832,8 @@
       "fire",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pyroar",
@@ -25068,7 +25863,8 @@
       "fire",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "flabebe",
@@ -25105,7 +25901,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "floette",
@@ -25142,7 +25939,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "floette-eternal",
@@ -25178,7 +25976,8 @@
     "id": "10061",
     "types": [
       "fairy"
-    ]
+    ],
+    "hasCry": true
   },
   {
     "name": "florges",
@@ -25215,7 +26014,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "skiddo",
@@ -25244,7 +26044,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gogoat",
@@ -25273,7 +26074,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pancham",
@@ -25302,7 +26104,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pangoro",
@@ -25332,7 +26135,8 @@
       "fighting",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "furfrou",
@@ -25369,7 +26173,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "espurr",
@@ -25398,7 +26203,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "meowstic-male",
@@ -25438,7 +26244,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "honedge",
@@ -25468,7 +26275,8 @@
       "steel",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "doublade",
@@ -25498,7 +26306,8 @@
       "steel",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "aegislash-shield",
@@ -25539,7 +26348,8 @@
       "steel",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "aegislash-blade",
@@ -25580,7 +26390,8 @@
       "steel",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "spritzee",
@@ -25609,7 +26420,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "aromatisse",
@@ -25638,7 +26450,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "swirlix",
@@ -25667,7 +26480,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slurpuff",
@@ -25696,7 +26510,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "inkay",
@@ -25726,7 +26541,8 @@
       "dark",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "malamar",
@@ -25756,7 +26572,8 @@
       "dark",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "binacle",
@@ -25786,7 +26603,8 @@
       "rock",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "barbaracle",
@@ -25816,7 +26634,8 @@
       "rock",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "skrelp",
@@ -25846,7 +26665,8 @@
       "poison",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dragalge",
@@ -25876,7 +26696,8 @@
       "poison",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "clauncher",
@@ -25905,7 +26726,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "clawitzer",
@@ -25934,7 +26756,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "helioptile",
@@ -25964,7 +26787,8 @@
       "electric",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "heliolisk",
@@ -25994,7 +26818,8 @@
       "electric",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tyrunt",
@@ -26024,7 +26849,8 @@
       "rock",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tyrantrum",
@@ -26054,7 +26880,8 @@
       "rock",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "amaura",
@@ -26084,7 +26911,8 @@
       "rock",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "aurorus",
@@ -26114,7 +26942,8 @@
       "rock",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sylveon",
@@ -26143,7 +26972,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hawlucha",
@@ -26173,7 +27003,8 @@
       "fighting",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dedenne",
@@ -26203,7 +27034,8 @@
       "electric",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "carbink",
@@ -26233,7 +27065,8 @@
       "rock",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "goomy",
@@ -26262,7 +27095,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sliggoo",
@@ -26291,7 +27125,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sliggoo-hisui",
@@ -26327,7 +27162,8 @@
       "steel",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "goodra",
@@ -26356,7 +27192,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "goodra-hisui",
@@ -26392,7 +27229,8 @@
       "steel",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "klefki",
@@ -26422,7 +27260,8 @@
       "steel",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "phantump",
@@ -26452,7 +27291,8 @@
       "ghost",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "trevenant",
@@ -26482,7 +27322,8 @@
       "ghost",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pumpkaboo-average",
@@ -26523,7 +27364,8 @@
       "ghost",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pumpkaboo-small",
@@ -26564,7 +27406,8 @@
       "ghost",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pumpkaboo-large",
@@ -26605,7 +27448,8 @@
       "ghost",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pumpkaboo-super",
@@ -26646,7 +27490,8 @@
       "ghost",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gourgeist-average",
@@ -26687,7 +27532,8 @@
       "ghost",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gourgeist-small",
@@ -26728,7 +27574,8 @@
       "ghost",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gourgeist-large",
@@ -26769,7 +27616,8 @@
       "ghost",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gourgeist-super",
@@ -26810,7 +27658,8 @@
       "ghost",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bergmite",
@@ -26839,7 +27688,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "avalugg",
@@ -26868,7 +27718,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "avalugg-hisui",
@@ -26904,7 +27755,8 @@
       "ice",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "noibat",
@@ -26934,7 +27786,8 @@
       "flying",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "noivern",
@@ -26964,7 +27817,8 @@
       "flying",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "xerneas",
@@ -27004,7 +27858,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "yveltal",
@@ -27034,7 +27889,8 @@
       "dark",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zygarde-50",
@@ -27075,7 +27931,8 @@
       "dragon",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zygarde-10-power-construct",
@@ -27116,7 +27973,8 @@
       "dragon",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zygarde-complete",
@@ -27157,7 +28015,8 @@
       "dragon",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "diancie",
@@ -27187,7 +28046,8 @@
       "rock",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "diancie-mega",
@@ -27228,7 +28088,8 @@
       "rock",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hoopa",
@@ -27269,7 +28130,8 @@
       "psychic",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hoopa-unbound",
@@ -27310,7 +28172,8 @@
       "psychic",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "volcanion",
@@ -27340,7 +28203,8 @@
       "fire",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rowlet",
@@ -27370,7 +28234,8 @@
       "grass",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dartrix",
@@ -27400,7 +28265,8 @@
       "grass",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "decidueye",
@@ -27430,7 +28296,8 @@
       "grass",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "decidueye-hisui",
@@ -27466,7 +28333,8 @@
       "grass",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "litten",
@@ -27495,7 +28363,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "torracat",
@@ -27524,7 +28393,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "incineroar",
@@ -27554,7 +28424,8 @@
       "fire",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "popplio",
@@ -27583,7 +28454,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "brionne",
@@ -27612,7 +28484,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "primarina",
@@ -27642,7 +28515,8 @@
       "water",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pikipek",
@@ -27672,7 +28546,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "trumbeak",
@@ -27702,7 +28577,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "toucannon",
@@ -27732,7 +28608,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "yungoos",
@@ -27761,7 +28638,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gumshoos",
@@ -27790,7 +28668,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "grubbin",
@@ -27819,7 +28698,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "charjabug",
@@ -27849,7 +28729,8 @@
       "bug",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "vikavolt",
@@ -27879,7 +28760,8 @@
       "bug",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "crabrawler",
@@ -27908,7 +28790,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "crabominable",
@@ -27938,7 +28821,8 @@
       "fighting",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "oricorio-baile",
@@ -27979,7 +28863,8 @@
       "fire",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "oricorio-pom-pom",
@@ -28020,7 +28905,8 @@
       "electric",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "oricorio-pau",
@@ -28061,7 +28947,8 @@
       "psychic",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "oricorio-sensu",
@@ -28102,7 +28989,8 @@
       "ghost",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cutiefly",
@@ -28132,7 +29020,8 @@
       "bug",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ribombee",
@@ -28162,7 +29051,8 @@
       "bug",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rockruff",
@@ -28191,7 +29081,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lycanroc-midday",
@@ -28231,7 +29122,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lycanroc-midnight",
@@ -28271,7 +29163,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lycanroc-dusk",
@@ -28311,7 +29204,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wishiwashi-solo",
@@ -28351,7 +29245,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wishiwashi-school",
@@ -28391,7 +29286,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mareanie",
@@ -28421,7 +29317,8 @@
       "poison",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "toxapex",
@@ -28451,7 +29348,8 @@
       "poison",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mudbray",
@@ -28480,7 +29378,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mudsdale",
@@ -28509,7 +29408,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dewpider",
@@ -28539,7 +29439,8 @@
       "water",
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "araquanid",
@@ -28569,7 +29470,8 @@
       "water",
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "fomantis",
@@ -28598,7 +29500,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lurantis",
@@ -28627,7 +29530,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "morelull",
@@ -28657,7 +29561,8 @@
       "grass",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shiinotic",
@@ -28687,7 +29592,8 @@
       "grass",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "salandit",
@@ -28717,7 +29623,8 @@
       "poison",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "salazzle",
@@ -28747,7 +29654,8 @@
       "poison",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "stufful",
@@ -28777,7 +29685,8 @@
       "normal",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bewear",
@@ -28807,7 +29716,8 @@
       "normal",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bounsweet",
@@ -28836,7 +29746,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "steenee",
@@ -28865,7 +29776,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tsareena",
@@ -28894,7 +29806,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "comfey",
@@ -28923,7 +29836,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "oranguru",
@@ -28953,7 +29867,8 @@
       "normal",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "passimian",
@@ -28982,7 +29897,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wimpod",
@@ -29012,7 +29928,8 @@
       "bug",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "golisopod",
@@ -29042,7 +29959,8 @@
       "bug",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sandygast",
@@ -29072,7 +29990,8 @@
       "ghost",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "palossand",
@@ -29102,7 +30021,8 @@
       "ghost",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pyukumuku",
@@ -29131,7 +30051,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "type-null",
@@ -29160,7 +30081,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "silvally",
@@ -29200,7 +30122,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "minior-red-meteor",
@@ -29241,7 +30164,8 @@
       "rock",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "minior-red",
@@ -29282,7 +30206,8 @@
       "rock",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "komala",
@@ -29311,7 +30236,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "turtonator",
@@ -29341,7 +30267,8 @@
       "fire",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "togedemaru",
@@ -29371,7 +30298,8 @@
       "electric",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mimikyu-disguised",
@@ -29412,7 +30340,8 @@
       "ghost",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bruxish",
@@ -29442,7 +30371,8 @@
       "water",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "drampa",
@@ -29472,7 +30402,8 @@
       "normal",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dhelmise",
@@ -29502,7 +30433,8 @@
       "ghost",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "jangmo-o",
@@ -29531,7 +30463,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hakamo-o",
@@ -29561,7 +30494,8 @@
       "dragon",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kommo-o",
@@ -29591,7 +30525,8 @@
       "dragon",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tapu-koko",
@@ -29621,7 +30556,8 @@
       "electric",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tapu-lele",
@@ -29651,7 +30587,8 @@
       "psychic",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tapu-bulu",
@@ -29681,7 +30618,8 @@
       "grass",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tapu-fini",
@@ -29711,7 +30649,8 @@
       "water",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cosmog",
@@ -29740,7 +30679,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cosmoem",
@@ -29769,7 +30709,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "solgaleo",
@@ -29799,7 +30740,8 @@
       "psychic",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lunala",
@@ -29829,7 +30771,8 @@
       "psychic",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nihilego",
@@ -29859,7 +30802,8 @@
       "rock",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "buzzwole",
@@ -29889,7 +30833,8 @@
       "bug",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pheromosa",
@@ -29919,7 +30864,8 @@
       "bug",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "xurkitree",
@@ -29948,7 +30894,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "celesteela",
@@ -29978,7 +30925,8 @@
       "steel",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kartana",
@@ -30008,7 +30956,8 @@
       "grass",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "guzzlord",
@@ -30038,7 +30987,8 @@
       "dark",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "necrozma",
@@ -30067,7 +31017,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "necrozma-dusk",
@@ -30108,7 +31059,8 @@
       "psychic",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "necrozma-dawn",
@@ -30149,7 +31101,8 @@
       "psychic",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "necrozma-ultra",
@@ -30190,7 +31143,8 @@
       "psychic",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "magearna",
@@ -30220,7 +31174,8 @@
       "steel",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "marshadow",
@@ -30250,7 +31205,8 @@
       "fighting",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "poipole",
@@ -30279,7 +31235,8 @@
     "types": [
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "naganadel",
@@ -30309,7 +31266,8 @@
       "poison",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "stakataka",
@@ -30339,7 +31297,8 @@
       "rock",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "blacephalon",
@@ -30369,7 +31328,8 @@
       "fire",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zeraora",
@@ -30398,7 +31358,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "meltan",
@@ -30427,7 +31388,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "melmetal",
@@ -30456,7 +31418,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "grookey",
@@ -30485,7 +31448,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "thwackey",
@@ -30514,7 +31478,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rillaboom",
@@ -30543,7 +31508,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "scorbunny",
@@ -30572,7 +31538,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "raboot",
@@ -30601,7 +31568,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cinderace",
@@ -30630,7 +31598,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sobble",
@@ -30659,7 +31628,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "drizzile",
@@ -30688,7 +31658,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "inteleon",
@@ -30717,7 +31688,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "skwovet",
@@ -30746,7 +31718,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "greedent",
@@ -30775,7 +31748,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rookidee",
@@ -30804,7 +31778,8 @@
     "types": [
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "corvisquire",
@@ -30833,7 +31808,8 @@
     "types": [
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "corviknight",
@@ -30863,7 +31839,8 @@
       "flying",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "blipbug",
@@ -30892,7 +31869,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dottler",
@@ -30922,7 +31900,8 @@
       "bug",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "orbeetle",
@@ -30952,7 +31931,8 @@
       "bug",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nickit",
@@ -30981,7 +31961,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "thievul",
@@ -31010,7 +31991,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gossifleur",
@@ -31039,7 +32021,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "eldegoss",
@@ -31068,7 +32051,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wooloo",
@@ -31097,7 +32081,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dubwool",
@@ -31126,7 +32111,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chewtle",
@@ -31155,7 +32141,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "drednaw",
@@ -31185,7 +32172,8 @@
       "water",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "yamper",
@@ -31214,7 +32202,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "boltund",
@@ -31243,7 +32232,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rolycoly",
@@ -31272,7 +32262,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "carkol",
@@ -31302,7 +32293,8 @@
       "rock",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "coalossal",
@@ -31332,7 +32324,8 @@
       "rock",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "applin",
@@ -31362,7 +32355,8 @@
       "grass",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "flapple",
@@ -31392,7 +32386,8 @@
       "grass",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "appletun",
@@ -31422,7 +32417,8 @@
       "grass",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "silicobra",
@@ -31451,7 +32447,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sandaconda",
@@ -31480,7 +32477,8 @@
     "types": [
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cramorant",
@@ -31510,7 +32508,8 @@
       "flying",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "arrokuda",
@@ -31539,7 +32538,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "barraskewda",
@@ -31568,7 +32568,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "toxel",
@@ -31598,7 +32599,8 @@
       "electric",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "toxtricity-amped",
@@ -31639,7 +32641,8 @@
       "electric",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sizzlipede",
@@ -31669,7 +32672,8 @@
       "fire",
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "centiskorch",
@@ -31699,7 +32703,8 @@
       "fire",
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "clobbopus",
@@ -31728,7 +32733,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "grapploct",
@@ -31757,7 +32763,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sinistea",
@@ -31792,7 +32799,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "polteageist",
@@ -31826,7 +32834,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hatenna",
@@ -31855,7 +32864,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hattrem",
@@ -31884,7 +32894,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hatterene",
@@ -31914,7 +32925,8 @@
       "psychic",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "impidimp",
@@ -31944,7 +32956,8 @@
       "dark",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "morgrem",
@@ -31974,7 +32987,8 @@
       "dark",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "grimmsnarl",
@@ -32004,7 +33018,8 @@
       "dark",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "obstagoon",
@@ -32034,7 +33049,8 @@
       "dark",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "perrserker",
@@ -32063,7 +33079,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cursola",
@@ -32092,7 +33109,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sirfetchd",
@@ -32121,7 +33139,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mr-rime",
@@ -32151,7 +33170,8 @@
       "ice",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "runerigus",
@@ -32181,7 +33201,8 @@
       "ground",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "milcery",
@@ -32210,7 +33231,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "alcremie",
@@ -32250,7 +33272,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "falinks",
@@ -32279,7 +33302,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pincurchin",
@@ -32308,7 +33332,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "snom",
@@ -32338,7 +33363,8 @@
       "ice",
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "frosmoth",
@@ -32368,7 +33394,8 @@
       "ice",
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "stonjourner",
@@ -32397,7 +33424,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "eiscue-ice",
@@ -32437,7 +33465,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "eiscue-noice",
@@ -32477,7 +33506,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "indeedee-male",
@@ -32518,7 +33548,8 @@
       "psychic",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "indeedee-female",
@@ -32559,7 +33590,8 @@
       "psychic",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "morpeko-full-belly",
@@ -32600,7 +33632,8 @@
       "electric",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cufant",
@@ -32629,7 +33662,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "copperajah",
@@ -32658,7 +33692,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dracozolt",
@@ -32688,7 +33723,8 @@
       "electric",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "arctozolt",
@@ -32718,7 +33754,8 @@
       "electric",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dracovish",
@@ -32748,7 +33785,8 @@
       "water",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "arctovish",
@@ -32778,7 +33816,8 @@
       "water",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "duraludon",
@@ -32808,7 +33847,8 @@
       "steel",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dreepy",
@@ -32838,7 +33878,8 @@
       "dragon",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "drakloak",
@@ -32868,7 +33909,8 @@
       "dragon",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dragapult",
@@ -32898,7 +33940,8 @@
       "dragon",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zacian",
@@ -32938,7 +33981,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zacian-crowned",
@@ -32979,7 +34023,8 @@
       "fairy",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zamazenta",
@@ -33019,7 +34064,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zamazenta-crowned",
@@ -33060,7 +34106,8 @@
       "fighting",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "eternatus",
@@ -33090,7 +34137,8 @@
       "poison",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "eternatus-eternamax",
@@ -33131,7 +34179,8 @@
       "poison",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kubfu",
@@ -33160,7 +34209,8 @@
     "types": [
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "urshifu-single-strike",
@@ -33201,7 +34251,8 @@
       "fighting",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "urshifu-rapid-strike",
@@ -33242,7 +34293,8 @@
       "fighting",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "zarude",
@@ -33272,7 +34324,8 @@
       "dark",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "regieleki",
@@ -33301,7 +34354,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "regidrago",
@@ -33330,7 +34384,8 @@
     "types": [
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "glastrier",
@@ -33359,7 +34414,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "spectrier",
@@ -33388,7 +34444,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "calyrex",
@@ -33418,7 +34475,8 @@
       "psychic",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "calyrex-ice",
@@ -33459,7 +34517,8 @@
       "psychic",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "calyrex-shadow",
@@ -33500,7 +34559,8 @@
       "psychic",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wyrdeer",
@@ -33530,7 +34590,8 @@
       "normal",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kleavor",
@@ -33560,7 +34621,8 @@
       "bug",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ursaluna",
@@ -33590,7 +34652,8 @@
       "ground",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ursaluna-bloodmoon",
@@ -33631,7 +34694,8 @@
       "ground",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "basculegion-male",
@@ -33666,7 +34730,8 @@
       "water",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "basculegion-female",
@@ -33702,7 +34767,8 @@
       "water",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sneasler",
@@ -33732,7 +34798,8 @@
       "fighting",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "overqwil",
@@ -33762,7 +34829,8 @@
       "dark",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "enamorus-incarnate",
@@ -33797,7 +34865,8 @@
       "fairy",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "enamorus-therian",
@@ -33833,7 +34902,8 @@
       "fairy",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sprigatito",
@@ -33862,7 +34932,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "floragato",
@@ -33891,7 +34962,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "meowscarada",
@@ -33921,7 +34993,8 @@
       "grass",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "fuecoco",
@@ -33950,7 +35023,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "crocalor",
@@ -33979,7 +35053,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "skeledirge",
@@ -34009,7 +35084,8 @@
       "fire",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "quaxly",
@@ -34038,7 +35114,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "quaxwell",
@@ -34067,7 +35144,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "quaquaval",
@@ -34097,7 +35175,8 @@
       "water",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lechonk",
@@ -34126,7 +35205,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "oinkologne",
@@ -34160,7 +35240,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "oinkologne-female",
@@ -34194,7 +35275,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tarountula",
@@ -34223,7 +35305,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "spidops",
@@ -34252,7 +35335,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nymble",
@@ -34281,7 +35365,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "lokix",
@@ -34311,7 +35396,8 @@
       "bug",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pawmi",
@@ -34340,7 +35426,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pawmo",
@@ -34370,7 +35457,8 @@
       "electric",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pawmot",
@@ -34400,7 +35488,8 @@
       "electric",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tandemaus",
@@ -34429,7 +35518,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "maushold",
@@ -34463,7 +35553,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "fidough",
@@ -34492,7 +35583,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dachsbun",
@@ -34521,7 +35613,8 @@
     "types": [
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "smoliv",
@@ -34551,7 +35644,8 @@
       "grass",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dolliv",
@@ -34581,7 +35675,8 @@
       "grass",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "arboliva",
@@ -34611,7 +35706,8 @@
       "grass",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "squawkabilly",
@@ -34646,7 +35742,8 @@
       "normal",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "nacli",
@@ -34675,7 +35772,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "naclstack",
@@ -34704,7 +35802,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "garganacl",
@@ -34733,7 +35832,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "charcadet",
@@ -34762,7 +35862,8 @@
     "types": [
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "armarouge",
@@ -34792,7 +35893,8 @@
       "fire",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ceruledge",
@@ -34822,7 +35924,8 @@
       "fire",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tadbulb",
@@ -34851,7 +35954,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bellibolt",
@@ -34880,7 +35984,8 @@
     "types": [
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wattrel",
@@ -34910,7 +36015,8 @@
       "electric",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kilowattrel",
@@ -34940,7 +36046,8 @@
       "electric",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "maschiff",
@@ -34969,7 +36076,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "mabosstiff",
@@ -34998,7 +36106,8 @@
     "types": [
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "shroodle",
@@ -35028,7 +36137,8 @@
       "poison",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "grafaiai",
@@ -35058,7 +36168,8 @@
       "poison",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bramblin",
@@ -35088,7 +36199,8 @@
       "grass",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "brambleghast",
@@ -35118,7 +36230,8 @@
       "grass",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "toedscool",
@@ -35148,7 +36261,8 @@
       "ground",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "toedscruel",
@@ -35178,7 +36292,8 @@
       "ground",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "klawf",
@@ -35207,7 +36322,8 @@
     "types": [
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "capsakid",
@@ -35236,7 +36352,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "scovillain",
@@ -35266,7 +36383,8 @@
       "grass",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rellor",
@@ -35295,7 +36413,8 @@
     "types": [
       "bug"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "rabsca",
@@ -35325,7 +36444,8 @@
       "bug",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "flittle",
@@ -35354,7 +36474,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "espathra",
@@ -35383,7 +36504,8 @@
     "types": [
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tinkatink",
@@ -35413,7 +36535,8 @@
       "fairy",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tinkatuff",
@@ -35443,7 +36566,8 @@
       "fairy",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tinkaton",
@@ -35473,7 +36597,8 @@
       "fairy",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wiglett",
@@ -35502,7 +36627,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wugtrio",
@@ -35531,7 +36657,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "bombirdier",
@@ -35561,7 +36688,8 @@
       "flying",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "finizen",
@@ -35590,7 +36718,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "palafin",
@@ -35624,7 +36753,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "palafin-hero",
@@ -35658,7 +36788,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "varoom",
@@ -35688,7 +36819,8 @@
       "steel",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "revavroom",
@@ -35718,7 +36850,8 @@
       "steel",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cyclizar",
@@ -35748,7 +36881,8 @@
       "dragon",
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "orthworm",
@@ -35777,7 +36911,8 @@
     "types": [
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "glimmet",
@@ -35807,7 +36942,8 @@
       "rock",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "glimmora",
@@ -35837,7 +36973,8 @@
       "rock",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "greavard",
@@ -35866,7 +37003,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "houndstone",
@@ -35895,7 +37033,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "flamigo",
@@ -35925,7 +37064,8 @@
       "flying",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cetoddle",
@@ -35954,7 +37094,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "cetitan",
@@ -35983,7 +37124,8 @@
     "types": [
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "veluza",
@@ -36013,7 +37155,8 @@
       "water",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dondozo",
@@ -36042,7 +37185,8 @@
     "types": [
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "tatsugiri",
@@ -36077,7 +37221,8 @@
       "dragon",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "annihilape",
@@ -36107,7 +37252,8 @@
       "fighting",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "clodsire",
@@ -36137,7 +37283,8 @@
       "poison",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "farigiraf",
@@ -36167,7 +37314,8 @@
       "normal",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dudunsparce",
@@ -36201,7 +37349,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "kingambit",
@@ -36231,7 +37380,8 @@
       "dark",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "great-tusk",
@@ -36261,7 +37411,8 @@
       "ground",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "scream-tail",
@@ -36291,7 +37442,8 @@
       "fairy",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "brute-bonnet",
@@ -36321,7 +37473,8 @@
       "grass",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "flutter-mane",
@@ -36351,7 +37504,8 @@
       "ghost",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "slither-wing",
@@ -36381,7 +37535,8 @@
       "bug",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sandy-shocks",
@@ -36411,7 +37566,8 @@
       "electric",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "iron-treads",
@@ -36441,7 +37597,8 @@
       "ground",
       "steel"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "iron-bundle",
@@ -36471,7 +37628,8 @@
       "ice",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "iron-hands",
@@ -36501,7 +37659,8 @@
       "fighting",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "iron-jugulis",
@@ -36531,7 +37690,8 @@
       "dark",
       "flying"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "iron-moth",
@@ -36561,7 +37721,8 @@
       "fire",
       "poison"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "iron-thorns",
@@ -36591,7 +37752,8 @@
       "rock",
       "electric"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "frigibax",
@@ -36621,7 +37783,8 @@
       "dragon",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "arctibax",
@@ -36651,7 +37814,8 @@
       "dragon",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "baxcalibur",
@@ -36681,7 +37845,8 @@
       "dragon",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gimmighoul",
@@ -36715,7 +37880,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gimmighoul-roaming",
@@ -36749,7 +37915,8 @@
     "types": [
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gholdengo",
@@ -36779,7 +37946,8 @@
       "steel",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "wo-chien",
@@ -36809,7 +37977,8 @@
       "dark",
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chien-pao",
@@ -36839,7 +38008,8 @@
       "dark",
       "ice"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ting-lu",
@@ -36869,7 +38039,8 @@
       "dark",
       "ground"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "chi-yu",
@@ -36899,7 +38070,8 @@
       "dark",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "roaring-moon",
@@ -36929,7 +38101,8 @@
       "dragon",
       "dark"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "iron-valiant",
@@ -36959,7 +38132,8 @@
       "fairy",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "koraidon",
@@ -36994,7 +38168,8 @@
       "fighting",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "miraidon",
@@ -37029,7 +38204,8 @@
       "electric",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "walking-wake",
@@ -37059,7 +38235,8 @@
       "water",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "iron-leaves",
@@ -37089,7 +38266,8 @@
       "grass",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "dipplin",
@@ -37118,7 +38296,8 @@
       "grass",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "poltchageist",
@@ -37158,7 +38337,8 @@
       "grass",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "sinistcha",
@@ -37198,7 +38378,8 @@
       "grass",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "okidogi",
@@ -37227,7 +38408,8 @@
       "poison",
       "fighting"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "munkidori",
@@ -37256,7 +38438,8 @@
       "poison",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "fezandipiti",
@@ -37285,7 +38468,8 @@
       "poison",
       "fairy"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ogerpon",
@@ -37324,7 +38508,8 @@
     "types": [
       "grass"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ogerpon-wellspring-mask",
@@ -37364,7 +38549,8 @@
       "grass",
       "water"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ogerpon-hearthflame-mask",
@@ -37404,7 +38590,8 @@
       "grass",
       "fire"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "ogerpon-cornerstone-mask",
@@ -37444,7 +38631,8 @@
       "grass",
       "rock"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "archaludon",
@@ -37473,7 +38661,8 @@
       "steel",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "hydrapple",
@@ -37502,7 +38691,8 @@
       "grass",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "gouging-fire",
@@ -37531,7 +38721,8 @@
       "fire",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "raging-bolt",
@@ -37560,7 +38751,8 @@
       "electric",
       "dragon"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "iron-boulder",
@@ -37589,7 +38781,8 @@
       "rock",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "iron-crown",
@@ -37618,7 +38811,8 @@
       "steel",
       "psychic"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "terapagos",
@@ -37653,7 +38847,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "terapagos-terastal",
@@ -37689,7 +38884,8 @@
     "types": [
       "normal"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   },
   {
     "name": "pecharunt",
@@ -37717,6 +38913,7 @@
       "poison",
       "ghost"
     ],
-    "hasShiny": true
+    "hasShiny": true,
+    "hasCry": true
   }
 ]

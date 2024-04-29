@@ -92,7 +92,7 @@ pokedex.search.helpLong,"Help, search Pokédex","Ajutor, cauta în Pokedex"
 pokedex.search.notFound,No Pokémon found,Nici un Pokémon gasit
 pokedex.offense.text,Offense,Atac
 pokedex.defense.text,Defense,Aparare
-pokedex.shiny.label,Shiny for {{ pokemon }},
+pokedex.cry.text,Cry,
 pokedex.shiny.text,Shiny,
 pokedex.pagination.next,Next,Urmatoarea
 pokedex.pagination.nextLong,Next,Urmatoarea

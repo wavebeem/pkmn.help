@@ -92,7 +92,7 @@ pokedex.search.helpLong,"Help, search Pokédex",帮助，搜索图鉴
 pokedex.search.notFound,No Pokémon found,未找到符合的宝可梦
 pokedex.offense.text,Offense,攻击方
 pokedex.defense.text,Defense,防御方
-pokedex.shiny.label,Shiny for {{ pokemon }},{{ pokemon }} 的闪光
+pokedex.cry.text,Cry,
 pokedex.shiny.text,Shiny,闪光
 pokedex.pagination.next,Next,下页
 pokedex.pagination.nextLong,Next,下页

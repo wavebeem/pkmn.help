@@ -18,6 +18,7 @@ import Spinner from "./Spinner";
 import { Badge } from "./Badge";
 import { useSessionStorage, useDebounceValue } from "usehooks-ts";
 import { CopyButton } from "./CopyButton";
+import { IconMusic } from "./IconMusic";
 
 const nbsp = "\u00a0";
 
@@ -80,9 +81,11 @@ interface MonsterProps {
 }
 
 function Monster({ pokemon, setQuery }: MonsterProps) {
+  const audioRef = React.useRef<HTMLAudioElement>(null);
   const { t, i18n } = useTranslation();
   const language = useComputedLanguage();
   const [shiny, setShiny] = React.useState(false);
+  const [isPlaying, setIsPlaying] = React.useState(false);
   const displayNumber = formatMonsterNumber(pokemon.number);
   const params = new URLSearchParams({
     types: pokemon.types.join(" "),
@@ -126,26 +129,68 @@ function Monster({ pokemon, setQuery }: MonsterProps) {
         <div className="nv2 fg3 f5" id={`${idPrefix}-form`}>
           {formattedFormName}
         </div>
-        {pokemon.hasShiny && (
-          <button
-            className={classNames(
-              "br-pill ba pa2 flex select-none gap1 items-center fill-currentcolor",
-              styles.shinyButton,
-              "button-shadow"
-            )}
-            title={t("pokedex.shiny.text")}
-            aria-labelledby={`${idPrefix}-shiny ${idPrefix}-name ${idPrefix}-form`}
-            aria-pressed={shiny ? "true" : "false"}
-            onClick={() => {
-              setShiny(!shiny);
+        <div className={styles.buttonContainer}>
+          <audio
+            ref={audioRef}
+            preload="none"
+            aria-hidden="true"
+            hidden={true}
+            autoPlay={false}
+            onPlay={() => {
+              setIsPlaying(true);
+            }}
+            onEnded={() => {
+              setIsPlaying(false);
+            }}
+            onError={() => {
+              setIsPlaying(false);
             }}
           >
-            <IconSparkles />
-            <span hidden id={`${idPrefix}-shiny`}>
-              {t("pokedex.shiny.text")}
-            </span>
-          </button>
-        )}
+            <source src={`/cry/${pokemon.id}.ogg`} type="audio/ogg" />
+            <source src={`/cry/${pokemon.id}.mp3`} type="audio/mpeg" />
+          </audio>
+          {pokemon.hasCry && (
+            <button
+              className={classNames(
+                "br-pill ba pa2 flex select-none gap1 items-center fill-currentcolor",
+                styles.iconButton,
+                "button-shadow"
+              )}
+              title={t("pokedex.cry.text")}
+              aria-label={t("pokedex.cry.text")}
+              aria-pressed={isPlaying ? "true" : "false"}
+              aria-disabled={isPlaying ? "true" : "false"}
+              onClick={() => {
+                const audio = audioRef.current;
+                if (!audio) {
+                  return;
+                }
+                if (audio.paused) {
+                  audio.play();
+                }
+              }}
+            >
+              <IconMusic />
+            </button>
+          )}
+          {pokemon.hasShiny && (
+            <button
+              className={classNames(
+                "br-pill ba pa2 flex select-none gap1 items-center fill-currentcolor",
+                styles.iconButton,
+                "button-shadow"
+              )}
+              title={t("pokedex.shiny.text")}
+              aria-label={t("pokedex.shiny.text")}
+              aria-pressed={shiny ? "true" : "false"}
+              onClick={() => {
+                setShiny(!shiny);
+              }}
+            >
+              <IconSparkles />
+            </button>
+          )}
+        </div>
       </div>
       <div className={`${styles.monster} gap3`}>
         <div className={`${styles.monsterIcon} flex flex-column`}>

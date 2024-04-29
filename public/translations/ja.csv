@@ -92,7 +92,7 @@ pokedex.search.helpLong,"Help, search Pokédex",ヘルプ、Pokédexを検索
 pokedex.search.notFound,No Pokémon found,ポケモンが見つかりませんでした
 pokedex.offense.text,Offense,こうげき
 pokedex.defense.text,Defense,ぼうぎょ
-pokedex.shiny.label,Shiny for {{ pokemon }},
+pokedex.cry.text,Cry,
 pokedex.shiny.text,Shiny,
 pokedex.pagination.next,Next,次
 pokedex.pagination.nextLong,Next,次

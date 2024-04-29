@@ -92,7 +92,7 @@ pokedex.search.helpLong,"Help, search Pokédex","Aide, rechercher dans le Pokéd
 pokedex.search.notFound,No Pokémon found,Aucun Pokémon trouvé
 pokedex.offense.text,Offense,Offense
 pokedex.defense.text,Defense,Défense
-pokedex.shiny.label,Shiny for {{ pokemon }},{{ pokemon }} chromatique
+pokedex.cry.text,Cry,
 pokedex.shiny.text,Shiny,Chromatique
 pokedex.pagination.next,Next,Suiv.
 pokedex.pagination.nextLong,Next,Suivant

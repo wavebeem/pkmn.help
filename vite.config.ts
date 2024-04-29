@@ -210,7 +210,11 @@ export default defineConfig((env) => {
           // force the user to download them on first page load. Translations
           // should be downloaded by very few users, so we don't want to cache
           // them either.
-          navigateFallbackDenylist: [/^\/translations\//, /^\/img\//],
+          navigateFallbackDenylist: [
+            /^\/translations\//,
+            /^\/img\//,
+            /^\/cry\//,
+          ],
         },
       }),
     ],
