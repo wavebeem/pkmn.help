@@ -132,7 +132,6 @@
       "text": "防御方"
     },
     "shiny": {
-      "label": "{{ pokemon }} 的闪光",
       "text": "闪光"
     },
     "pagination": {

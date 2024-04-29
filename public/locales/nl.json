@@ -132,7 +132,6 @@
       "text": "Defensief"
     },
     "shiny": {
-      "label": "Shiny voor {{ pokemon }}",
       "text": "Shiny"
     },
     "pagination": {

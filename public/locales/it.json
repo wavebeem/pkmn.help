@@ -132,7 +132,6 @@
       "text": "Difensiva"
     },
     "shiny": {
-      "label": "Forma cromatica di {{ pokemon }}",
       "text": "Forma cromatica"
     },
     "pagination": {

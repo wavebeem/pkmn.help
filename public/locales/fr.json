@@ -133,8 +133,10 @@
     "defense": {
       "text": "Défense"
     },
+    "cry": {
+      "text": "Cri"
+    },
     "shiny": {
-      "label": "{{ pokemon }} chromatique",
       "text": "Chromatique"
     },
     "pagination": {
@@ -249,6 +251,7 @@
         "da": "Traduction en Danois",
         "ru": "Traduction en Russe",
         "kk": "Traduction en Kazakh",
+        "pt-PT": "Traduction en Portugais",
         "pt-BR": "Traduction en Portugais Brésilien",
         "zh-Hans": "Traduction en Chinois Simplifié",
         "zh-Hant": "Traduction en Chinois Traditionnel",

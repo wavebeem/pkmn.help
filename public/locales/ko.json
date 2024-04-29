@@ -131,7 +131,6 @@
       "text": "방어"
     },
     "shiny": {
-      "label": "색이 다른 {{ pokemon }}",
       "text": "이로치"
     },
     "pagination": {

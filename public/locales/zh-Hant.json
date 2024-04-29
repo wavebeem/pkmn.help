@@ -58,7 +58,7 @@
     },
     "filename": "pkmn.help 屬性覆蓋範圍.csv",
     "status": {
-      "imported": "從“{{ 檔案 }}”導入了 {{ n }} 個寶可夢形式",
+      "imported": "從“{{ file }}”導入了 {{ n }} 個寶可夢形式",
       "exported": "匯出了預設的寶可夢形式",
       "reset": "載入了預設的寶可夢形式",
       "errored": "載入 CSV 時出錯。不要更改標題名稱。"
@@ -111,11 +111,11 @@
       "complex": "複雜",
       "type": "屬性",
       "save": "保存",
-      "saveLong": "保存{{ 名稱 }}",
+      "saveLong": "保存{{ name }}",
       "edit": "編輯",
-      "editLong": "編輯{{ 名稱 }}",
+      "editLong": "編輯{{ name }}",
       "remove": "移除",
-      "removeLong": "移除{{ 名稱 }}"
+      "removeLong": "移除{{ name }}"
     }
   },
   "pokedex": {
@@ -132,7 +132,6 @@
       "text": "防禦"
     },
     "shiny": {
-      "label": "{{ 寶可夢 }} 的閃光",
       "text": "閃光"
     },
     "pagination": {

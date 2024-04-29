@@ -4,6 +4,10 @@
 
 - Added a button to play Pokémon cries in the Pokédex
 
+- Fixed mistakes in Traditional Chinese translation
+
+- Updated French translation
+
 ## 2024-04-28
 
 - Added Portuguese (Portugal) translation

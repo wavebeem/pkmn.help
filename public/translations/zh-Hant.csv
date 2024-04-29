@@ -35,7 +35,7 @@ coverage.import.description,Import an edited Pokédex CSV file,匯入編輯過�
 coverage.reset.button,Reset,重置
 coverage.reset.description,Reset to the default Pokédex,重置為默認寶可夢圖鑑
 coverage.filename,pkmn.help type coverage.csv,pkmn.help 屬性覆蓋範圍.csv
-coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,從“{{ 檔案 }}”導入了 {{ n }} 個寶可夢形式
+coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,從“{{ file }}”導入了 {{ n }} 個寶可夢形式
 coverage.status.exported,Exported default Pokémon forms,匯出了預設的寶可夢形式
 coverage.status.reset,Loaded default Pokémon forms,載入了預設的寶可夢形式
 coverage.status.errored,Error loading CSV. Don't change header names.,載入 CSV 時出錯。不要更改標題名稱。
@@ -81,11 +81,11 @@ defense.team.simple,Simple,簡單
 defense.team.complex,Complex,複雜
 defense.team.type,Type,屬性
 defense.team.save,Save,保存
-defense.team.saveLong,Save {{ name }},保存{{ 名稱 }}
+defense.team.saveLong,Save {{ name }},保存{{ name }}
 defense.team.edit,Edit,編輯
-defense.team.editLong,Edit {{ name }},編輯{{ 名稱 }}
+defense.team.editLong,Edit {{ name }},編輯{{ name }}
 defense.team.remove,Remove,移除
-defense.team.removeLong,Remove {{ name }},移除{{ 名稱 }}
+defense.team.removeLong,Remove {{ name }},移除{{ name }}
 pokedex.search.description,"Search by name, number, or types",通過名稱、編號或屬性搜索
 pokedex.search.help,Help,幫助
 pokedex.search.helpLong,"Help, search Pokédex",幫助，搜索寶可夢圖鑑
