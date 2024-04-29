@@ -13,7 +13,13 @@ async function fetchBuffer(url: string): Promise<Buffer> {
   return await resp.buffer();
 }
 
-export async function fetchImages(): Promise<void> {
+async function fetchBytes(url: string): Promise<Uint8Array> {
+  const resp = await fetch(url);
+  const buff = await resp.arrayBuffer();
+  return new Uint8Array(buff);
+}
+
+export async function fetchMedia(): Promise<void> {
   const list = readJSON(SRC);
   for (const item of list) {
     const imgFilename = path.resolve(IMG_DEST, `${item.id}.png`);

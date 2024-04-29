@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import { argv } from "process";
-import { fetchImages } from "./fetch-images.js";
+import { fetchMedia } from "./fetch-media.js";
 import { mergeData } from "./merge-data.js";
 import { scrapePokeapi } from "./scrape-pokeapi.js";
 import { optimizeImages } from "./optimize-images.js";
@@ -12,7 +12,7 @@ async function main(flags: string[]) {
   }
 
   if (flags.includes("fast")) {
-    await fetchImages();
+    await fetchMedia();
     await optimizeImages();
     await mergeData();
     return;
@@ -24,7 +24,7 @@ async function main(flags: string[]) {
   }
 
   await scrapePokeapi();
-  await fetchImages();
+  await fetchMedia();
   await optimizeImages();
   await mergeData();
 }

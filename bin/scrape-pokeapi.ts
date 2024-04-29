@@ -72,6 +72,10 @@ interface PokemonDetail {
       };
     };
   };
+  cries: {
+    latest: string;
+    legacy: string;
+  };
 }
 
 interface PokemonSimple {
@@ -81,6 +85,7 @@ interface PokemonSimple {
   number: number;
   spriteURL: string;
   shinySpriteURL: string;
+  cryURL: string;
   hp: number;
   attack: number;
   defense: number;
@@ -165,6 +170,7 @@ export async function scrapePokeapi(): Promise<void> {
         number: speciesDetail.id,
         spriteURL: detail.sprites.other.home.front_default,
         shinySpriteURL: detail.sprites.other.home.front_shiny ?? "",
+        cryURL: detail.cries.latest,
         hp: stats["hp"] ?? 0,
         attack: stats["attack"] ?? 0,
         defense: stats["defense"] ?? 0,
