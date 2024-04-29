@@ -132,17 +132,23 @@ function Monster({ pokemon, setQuery }: MonsterProps) {
         <div className={styles.buttonContainer}>
           <audio
             ref={audioRef}
-            src={`/cry/${pokemon.id}.ogg`}
             preload="none"
             aria-hidden="true"
             hidden={true}
+            autoPlay={false}
             onPlay={() => {
               setIsPlaying(true);
             }}
             onEnded={() => {
               setIsPlaying(false);
             }}
-          />
+            onError={() => {
+              setIsPlaying(false);
+            }}
+          >
+            <source src={`/cry/${pokemon.id}.ogg`} type="audio/ogg" />
+            <source src={`/cry/${pokemon.id}.mp3`} type="audio/mpeg" />
+          </audio>
           {pokemon.hasCry && (
             <button
               className={classNames(
@@ -154,9 +160,15 @@ function Monster({ pokemon, setQuery }: MonsterProps) {
               aria-label={t("pokedex.cry.text")}
               aria-pressed={isPlaying ? "true" : "false"}
               onClick={() => {
-                if (audioRef.current) {
-                  audioRef.current.play();
+                const audio = audioRef.current;
+                if (!audio) {
+                  return;
                 }
+                audio.currentTime = 0;
+                audio.muted = false;
+                audio.volume = 1;
+                console.log(audio.currentSrc);
+                audio.play();
               }}
             >
               <IconMusic />
