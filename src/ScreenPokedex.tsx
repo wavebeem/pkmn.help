@@ -136,13 +136,23 @@ function Monster({ pokemon, setQuery }: MonsterProps) {
             aria-hidden="true"
             hidden={true}
             autoPlay={false}
+            onLoadStart={() => console.log("onLoadStart")}
+            onDurationChange={() => console.log("onDurationChange")}
+            onLoadedMetadata={() => console.log("onLoadedMetadata")}
+            onLoadedData={() => console.log("onLoadedData")}
+            onProgress={() => console.log("onProgress")}
+            onCanPlay={() => console.log("onCanPlay")}
+            onCanPlayThrough={() => console.log("onCanPlayThrough")}
             onPlay={() => {
+              console.log("onPlay");
               setIsPlaying(true);
             }}
             onEnded={() => {
+              console.log("onEnded");
               setIsPlaying(false);
             }}
             onError={() => {
+              console.log("onError");
               setIsPlaying(false);
             }}
           >
@@ -164,6 +174,7 @@ function Monster({ pokemon, setQuery }: MonsterProps) {
                 if (!audio) {
                   return;
                 }
+                // audio.loop = true;
                 audio.currentTime = 0;
                 audio.muted = false;
                 audio.volume = 1;
