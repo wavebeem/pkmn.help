@@ -4,6 +4,8 @@
 
 - Added Portuguese (Portugal) translation
 
+- Added a button to play Pokémon cries in the Pokédex
+
 ## 2024-04-20
 
 - Added links from Pokémon in the type coverage pages to the Pokédex page

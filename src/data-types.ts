@@ -17,6 +17,7 @@ export interface Pokemon {
   spDefense: number;
   speed: number;
   hasShiny: boolean;
+  hasCry: boolean;
 }
 
 export type Type = ValueOf<typeof Type>;

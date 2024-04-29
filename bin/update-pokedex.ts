@@ -23,6 +23,13 @@ async function main(flags: string[]) {
     return;
   }
 
+  if (flags.includes("test")) {
+    await scrapePokeapi();
+    await downloadMedia();
+    await mergeData();
+    return;
+  }
+
   await scrapePokeapi();
   await downloadMedia();
   await optimizeImages();

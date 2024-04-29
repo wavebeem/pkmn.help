@@ -110,7 +110,11 @@ async function fetchPaginated<T>(url: string, limit = Infinity): Promise<T[]> {
   do {
     resp = await fetchJSON(nextURL);
     results.push(...resp.results);
-    nextURL = resp.next;
+    if (process.env.SHORT) {
+      nextURL = "";
+    } else {
+      nextURL = resp.next;
+    }
   } while (nextURL && results.length < limit);
   if (Number.isFinite(limit)) {
     results.length = limit;

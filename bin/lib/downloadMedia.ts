@@ -6,8 +6,8 @@ import { readJSON, saveJSON } from "../util.js";
 import { PokemonSimple } from "./scrapePokeapi.js";
 
 const SRC = "data/pokemon.json";
-const CRY_DEST = "public/img";
-const IMG_DEST = "public/img";
+const CRY_DEST = "public/cry";
+const IMG_DEST = "public/img/512";
 const DATA_DEST = "public/data-pkmn.json";
 
 async function fetchBytes(url: string): Promise<Uint8Array> {
@@ -33,6 +33,9 @@ async function downloadCry(item: PokemonSimple): Promise<void> {
     const cry = await fetchBytes(item.cryURL);
     fs.writeFileSync(cryFilename, cry);
   }
+  const newItem = item as any;
+  newItem.hasCry = Boolean(newItem.cryURL);
+  delete newItem.cryURL;
 }
 
 async function downloadShinySprite(item: PokemonSimple): Promise<void> {

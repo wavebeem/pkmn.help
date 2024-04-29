@@ -133,8 +133,10 @@
     "defense": {
       "text": "Defense"
     },
+    "cry": {
+      "text": "Cry"
+    },
     "shiny": {
-      "label": "Shiny for {{ pokemon }}",
       "text": "Shiny"
     },
     "pagination": {
