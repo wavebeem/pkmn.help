@@ -18,12 +18,23 @@ export async function optimizeImages() {
     const namePNG512 = path.join(path512, `${baseName}.png`);
     const nameWebp256 = path.join(path256, `${baseName}.webp`);
     const nameWebp512 = path.join(path512, `${baseName}.webp`);
+    const promises: Promise<any>[] = [];
+    if (!fs.existsSync(namePNG256)) {
+      promises.push(sharp(fullName).png({}).resize(256).toFile(namePNG256));
+    }
+    if (!fs.existsSync(namePNG512)) {
+      promises.push(sharp(fullName).png({}).toFile(namePNG512));
+    }
+    if (!fs.existsSync(nameWebp256)) {
+      promises.push(sharp(fullName).webp({}).resize(256).toFile(nameWebp256));
+    }
+    if (!fs.existsSync(nameWebp512)) {
+      promises.push(sharp(fullName).webp({}).toFile(nameWebp512));
+    }
+    if (promises.length === 0) {
+      continue;
+    }
     console.log("Optimizing", fullName + "...");
-    await Promise.all([
-      sharp(fullName).png({}).resize(256).toFile(namePNG256),
-      sharp(fullName).png({}).toFile(namePNG512),
-      sharp(fullName).webp({}).resize(256).toFile(nameWebp256),
-      sharp(fullName).webp({}).toFile(nameWebp512),
-    ]);
+    await Promise.all(promises);
   }
 }
