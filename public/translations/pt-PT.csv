@@ -1,4 +1,4 @@
-Key,en,pt
+Key,en,pt-PT
 title,Pokémon Type Calculator,Calculadora de Tipos Pokémon
 navigation.offense,Offense,Ofensivo
 navigation.defense,Defense,Defensivo
@@ -158,7 +158,8 @@ more.thanks.heading,Special thanks,Agradecimentos especiais
 more.thanks.sections.da,Danish translation,Tradução para Dinamarquês
 more.thanks.sections.ru,Russian translation,Tradução para Russo
 more.thanks.sections.kk,Kazakh translation,Tradução para Cazaque
-more.thanks.sections.pt-BR,Brazilian Portuguese translation,Tradução para Português Brasileiro
+more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Tradução para Português (Portugal)
+more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Tradução para Português (Brasil)
 more.thanks.sections.zh-Hans,Simplified Chinese translation,Tradução para Chinês Simplificado
 more.thanks.sections.zh-Hant,Traditional Chinese translation,Tradução para Chinês Tradicional
 more.thanks.sections.ro,Romanian translation,Tradução para Romeno
