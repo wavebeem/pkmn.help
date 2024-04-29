@@ -8,21 +8,24 @@ export function detectLanguage(): Lang | undefined {
 }
 
 export function getDesiredLanguage(): Lang | undefined {
-  for (const l of navigator.languages) {
+  for (const code of navigator.languages) {
     // If it's a language we support, use it as-is
-    if (isLang(l)) return l;
+    if (isLang(code)) return code;
     // Normalize country-centric language codes to the more generic
     // script-centric ones for Chinese languages
-    if (l === "zh-HK") return "zh-Hant";
-    if (l === "zh-TW") return "zh-Hant";
-    if (l === "zh-CN") return "zh-Hans";
-    if (l === "zh-SG") return "zh-Hans";
+    if (code === "zh-HK") return "zh-Hant";
+    if (code === "zh-TW") return "zh-Hant";
+    if (code === "zh-CN") return "zh-Hans";
+    if (code === "zh-SG") return "zh-Hans";
     // Otherwise just use the language code without the country code
-    const [lang] = l.split("-");
+    const [lang] = code.split("-");
     // Give preference to simplified Chinese for any other language code that
     // wants a Chinese language... Not sure if that's really the best idea, but
     // I have to pick something here...
-    if (l === "zh") return "zh-Hans";
+    if (code === "zh") return "zh-Hans";
+    // Any Portuguese langauge besides Brazilian Portuguese should use European
+    // Portuguese translation
+    if (code === "pt") return "pt-PT";
     // If the language code minus the country code is a language we support
     if (isLang(lang)) return lang;
   }
