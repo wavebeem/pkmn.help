@@ -13,13 +13,13 @@ offense.coverage.normal,Normal,
 offense.coverage.resistance,Resist,Resistent
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,Ingen Pokèmon blev fundet eller ingen typer valgt
-offense.coverageList.weakness.heading,Weakness Coverage List,Liste der dækker over svagheder
+offense.coverageList.weakness.heading,Weakness coverage list,Liste der dækker over svagheder
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Disse Pokémon er svage overfor mindst en af de valgte typer
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,
+offense.coverageList.normal.heading,Normal effectiveness coverage list,
 offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,
-offense.coverageList.resistance.heading,Resistance Coverage List,Liste der dækker over resistens
+offense.coverageList.resistance.heading,Resistance coverage list,Liste der dækker over resistens
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,Disse Pokémon er modstandsdygtige imod alle valgte typer
-coverage.heading,Pokédex Coverage,Pokèdex dækning
+coverage.heading,Pokédex coverage,Pokèdex dækning
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",Importer/Eksporter Hjemmelavede pokédex CSV filer for at se dækningen på forskellige pokemons. Lav en hjemmelavet CSV file kun med OU Tier pokémons eller lav dine egne Pokemons.
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","CSV data er loaded fra kolonne sidehoved navn, ikke kolonne rækkefølge, så du kan tilføje eller ændre på kolonner hvis du vil (Fx tilføje en note eller liste kolonne)."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","CSV filer kan blive redigeret med Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad og flere produkter."
@@ -158,7 +158,8 @@ more.thanks.heading,Special thanks,Tusind tak til
 more.thanks.sections.da,Danish translation,Dansk oversættelse
 more.thanks.sections.ru,Russian translation,Russisk oversættelse
 more.thanks.sections.kk,Kazakh translation,Kazakhstan oversættelse
-more.thanks.sections.pt-BR,Brazilian Portuguese translation,Brazillensk portugisisk oversættelse
+more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
+more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Brazillensk portugisisk oversættelse
 more.thanks.sections.zh-Hans,Simplified Chinese translation,Kinesisk oversættelse
 more.thanks.sections.zh-Hant,Traditional Chinese translation,
 more.thanks.sections.ro,Romanian translation,Rumænsk oversættelse

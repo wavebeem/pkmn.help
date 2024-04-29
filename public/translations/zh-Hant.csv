@@ -13,13 +13,13 @@ offense.coverage.normal,Normal,正常
 offense.coverage.resistance,Resist,抵抗
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,未找到寶可夢或未選擇屬性
-offense.coverageList.weakness.heading,Weakness Coverage List,弱點涵蓋列表
+offense.coverageList.weakness.heading,Weakness coverage list,弱點涵蓋列表
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,這些寶可夢對所選擇的屬性至少有一個弱點。
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,正常效果涵蓋列表
+offense.coverageList.normal.heading,Normal effectiveness coverage list,正常效果涵蓋列表
 offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,這些寶可夢不在所選擇的屬性的弱點或抵抗列表中。
-offense.coverageList.resistance.heading,Resistance Coverage List,抵抗涵蓋列表
+offense.coverageList.resistance.heading,Resistance coverage list,抵抗涵蓋列表
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,這些寶可夢對所有選定的屬性都具有抵抗力。
-coverage.heading,Pokédex Coverage,寶可夢圖鑑涵蓋
+coverage.heading,Pokédex coverage,寶可夢圖鑑涵蓋
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",匯入/匯出自定義寶可夢圖鑑 CSV 檔案以查看不同寶可夢的涵蓋範圍。只需創建一個包含OU級寶可夢的自定義 CSV 檔案，甚至可以從頭開始創建您自己的寶可夢。
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",CSV 數據是按列標題名稱加載的，而不是按列順序加載的，因此您可以根據需要添加或重新排序列 (例如添加“層級”列或“備註”列)。
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.",CSV 檔案可使用 Google Sheets、Microsoft Excel、OpenOffice、LibreOffice、記事本等編輯。
@@ -158,7 +158,8 @@ more.thanks.heading,Special thanks,特別感謝
 more.thanks.sections.da,Danish translation,丹麥翻譯
 more.thanks.sections.ru,Russian translation,俄羅斯翻譯
 more.thanks.sections.kk,Kazakh translation,哈薩克翻譯
-more.thanks.sections.pt-BR,Brazilian Portuguese translation,巴西葡萄牙語翻譯
+more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
+more.thanks.sections.pt-BR,Portuguese (Brazil) translation,巴西葡萄牙語翻譯
 more.thanks.sections.zh-Hans,Simplified Chinese translation,簡體中文翻譯
 more.thanks.sections.zh-Hant,Traditional Chinese translation,繁體中文翻譯
 more.thanks.sections.ro,Romanian translation,羅馬尼亞翻譯

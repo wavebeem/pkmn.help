@@ -4,7 +4,7 @@ navigation.offense,Offense,Ataque
 navigation.defense,Defense,Defesa
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mais
-offense.chooseTypes,Choose types,Escolher Tipos
+offense.chooseTypes,Choose types,Escolher tipos
 offense.dealsXTo,Deals {{ x }} to,Causa {{ x }} mais dano contra
 offense.coverage.heading,Pokédex coverage,Cobertura da Pokédex
 offense.coverage.edit,Edit list,Editar lista
@@ -13,13 +13,13 @@ offense.coverage.normal,Normal,Normal
 offense.coverage.resistance,Resist,Resistências
 offense.teraPokemon,Tera Pokémon,Pokémon Tera
 offense.coverageList.empty,No Pokémon found or no types selected,Não foram encontrados Pokémon ou nenhum tipo foi selecionado
-offense.coverageList.weakness.heading,Weakness Coverage List,Lista de Cobertura de Fraquezas
+offense.coverageList.weakness.heading,Weakness coverage list,Lista de cobertura de fraquezas
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Estes Pokémon são fracos contra pelo menos um dos tipos selecionados
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,Lista de Cobertura de Eficiência Normal
+offense.coverageList.normal.heading,Normal effectiveness coverage list,Lista de cobertura de eficiência normal
 offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,Estes Pokémon não estão nas listas de fraquezas ou de resistências para os tipos selecionados
-offense.coverageList.resistance.heading,Resistance Coverage List,Lista de Cobertura de Resistências
+offense.coverageList.resistance.heading,Resistance coverage list,Lista de cobertura de resistências
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,Estes Pokémon resistem todos estes tipos
-coverage.heading,Pokédex Coverage,Cobertura a Fraquezas
+coverage.heading,Pokédex coverage,Cobertura a fraquezas
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",Importar/exportar arquivos CSV costumizados da Pokédex para ver cobertura de tipos para diferentes Pokémon. Crie um arquivo CSV customizado com só Pokémon de categoria OU ou até criar seu próprio Pokémon do zero!
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Informações CSV são carregadas pelo nome do cabeçalho da coluna, então você pode adicionar ou reordenar colunas se quiser (por exemplo adicionar uma coluna ""categoria"" ou coluna ""notas"")."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","Arquivos CSV podem ser editados com Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad e mais."
@@ -44,7 +44,7 @@ defense.chooseFirst,Choose first type,Escolher 1° tipo
 defense.chooseSecond,Choose second type,Escolher 2° tipo
 defense.chooseThird,Choose third type,Escolher 3° tipo
 defense.takesXFrom,Takes {{ x }} from,Leva {{ x }} mais dano de
-defense.chooseAbility,Choose ability,Escolher Habilidade
+defense.chooseAbility,Choose ability,Escolher habilidade
 defense.chooseTeraType,Choose tera type,Escolher tipo tera
 defense.abilityNames.none,None,Nenhuma
 defense.abilityNames.tera_shell,Tera Shell,Tera Shell
@@ -67,14 +67,14 @@ defense.abilityNames.sap_sipper,Sap Sipper,Sap Sipper
 defense.abilityNames.lightning_rod,Lightning Rod,Lightning Rod
 defense.abilityNames.motor_drive,Motor Drive,Motor Drive
 defense.abilityNames.volt_absorb,Volt Absorb,Volt Absorb
-defense.mode.heading,Choose mode,Escolher Modo
+defense.mode.heading,Choose mode,Escolher modo
 defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Time
-defense.team.tableHeading,Matchup counts,Contagem de Combinações
-defense.team.heading,Edit Pokémon team,Editar Time Pokémon
+defense.team.tableHeading,Matchup counts,Contagem de combinações
+defense.team.heading,Edit Pokémon team,Editar time Pokémon
 defense.team.add,Add Pokémon,Adicionar Pokémon
-defense.team.empty,No Pokémon selected,Nenhum Pokémon Selecionado
-defense.team.displayType,Table format,Formato da Tabela
+defense.team.empty,No Pokémon selected,Nenhum Pokémon selecionado
+defense.team.displayType,Table format,Formato da tabela
 defense.team.weak,Weak,Fraqueza
 defense.team.resist,Resist,Resistência
 defense.team.simple,Simple,Simples
@@ -101,15 +101,15 @@ pokedex.pagination.previousLong,Previous,Anterior
 pokedex.pagination.firstLong,First,Primeiro
 pokedex.pagination.lastLong,Last,Último
 pokedex.stats.hp,HP,Vida
-pokedex.stats.hpLong,Hit Points,Pontos de Vida
+pokedex.stats.hpLong,Hit Points,Pontos de vida
 pokedex.stats.attack,Attack,Ataque
 pokedex.stats.attackLong,Attack,Ataque
 pokedex.stats.defense,Defense,Defesa
 pokedex.stats.defenseLong,Defense,Defesa
-pokedex.stats.specialAttack,Sp. Atk.,Ataque Esp.
-pokedex.stats.specialAttackLong,Special Attack,Ataque Especial
-pokedex.stats.specialDefense,Sp. Def.,Defesa Esp.
-pokedex.stats.specialDefenseLong,Special Defense,Defesa Especial
+pokedex.stats.specialAttack,Sp. Atk.,Ataque esp.
+pokedex.stats.specialAttackLong,Special Attack,Ataque especial
+pokedex.stats.specialDefense,Sp. Def.,Defesa esp.
+pokedex.stats.specialDefenseLong,Special Defense,Defesa especial
 pokedex.stats.speed,Speed,Velocidade
 pokedex.stats.speedLong,Speed,Velocidade
 pokedex.stats.total,Total,Total
@@ -152,13 +152,14 @@ more.help.serviceWorker.description,This button can help fix issues in the app.,
 more.help.serviceWorker.button,Reset,Atualizar
 more.privacy.heading,Privacy,Privacidade
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Não uso e nunca usarei propagandas ou roubarei suas informações pessoais. Eu usei <plausible>Plausible Analytics</plausible>, que é auto-fundada, independente, hospedada na Europa e não acumula cookies no seu computador."
-more.givingBack.heading,Showing appreciation,Demonstrando Carinho
+more.givingBack.heading,Showing appreciation,Demonstrando carinho
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.","Dediquei incontáveis horas melhorando este site. Se aprecia o que fiz, por favor, considere doar para caridades que apoiam os direitos BIPOC e transsexuais."
 more.thanks.heading,Special thanks,Agradecimentos especiais
 more.thanks.sections.da,Danish translation,Tradução dinamarquesa
 more.thanks.sections.ru,Russian translation,Tradução Russa
 more.thanks.sections.kk,Kazakh translation,Tradução Cazaque
-more.thanks.sections.pt-BR,Brazilian Portuguese translation,Tradução Português Brasileiro
+more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Tradução Português (Portugal)
+more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Tradução Português (Brasil)
 more.thanks.sections.zh-Hans,Simplified Chinese translation,Tradução Chinesa Simplificada
 more.thanks.sections.zh-Hant,Traditional Chinese translation,Tradução Chinesa Tradicional
 more.thanks.sections.ro,Romanian translation,Tradução Romena
@@ -198,8 +199,8 @@ banners.updateReady.description,An update is available,Uma atualização está d
 banners.updateReady.whatsNew,What’s new,O que há de novo
 banners.updateReady.update,Update,Atualizar
 general.loading,Loading…,Carregando...
-general.copyLink,Copy link,Copiar Link
-games.label,Game generation,Geração do Jogo
+general.copyLink,Copy link,Copiar link
+games.label,Game generation,Geração do jogo
 games.help,Use type effectiveness from different game generations.,Usar efetividade de tipos de diferentes gerações
 games.byID.gen1,Generation 1,1° Geração
 games.byID.gen2,Generation 2–5,2-5° Geração

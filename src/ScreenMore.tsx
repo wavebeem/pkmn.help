@@ -32,7 +32,8 @@ const languageCompletions =
 export const languageNamesNative: Record<Lang, string> = {
   en: `English`,
   es: `Español`,
-  "pt-BR": `Português Brasileiro`,
+  "pt-PT": `Português (Portugal)`,
+  "pt-BR": `Português (Brasil)`,
   de: `Deutsch`,
   da: `Dansk`,
   it: `Italiano`,
@@ -70,7 +71,8 @@ const unofficialLanguages = Object.keys(languageNamesNative).filter((lang) => {
 export const languageNamesEnglish: Record<Lang, string> = {
   en: ``,
   es: `Spanish`,
-  "pt-BR": `Brazilian Portuguese`,
+  "pt-PT": "Portuguese (Portugal)",
+  "pt-BR": `Portuguese (Brazil)`,
   de: `German`,
   da: `Danish`,
   it: `Italian`,
@@ -90,6 +92,7 @@ export const languageNamesEnglish: Record<Lang, string> = {
 export const languageBounty: Record<Lang, number> = {
   en: 0,
   es: 0,
+  "pt-PT": 0,
   "pt-BR": 0,
   de: 30,
   da: 0,
@@ -475,6 +478,11 @@ export function ScreenMore({
         <h3 className={classH3}>{t("more.thanks.sections.kk")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Abylay Zhandarbek</li>
+        </ul>
+
+        <h3 className={classH3}>{t("more.thanks.sections.pt-PT")}</h3>
+        <ul className="list mb0 mt1 pl3">
+          <li>Bernardo Ferreira</li>
         </ul>
 
         <h3 className={classH3}>{t("more.thanks.sections.pt-BR")}</h3>
