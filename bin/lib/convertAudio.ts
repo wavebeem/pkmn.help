@@ -13,7 +13,7 @@ export async function convertAudio() {
     }
     const baseName = path.basename(name, ".ogg");
     const fullName = path.join(CRY_SRC, name);
-    const outputName = path.join(CRY_DEST, `${baseName}.mp3`);
+    const outputName = path.join(CRY_DEST, `${baseName}.aac`);
     if (!fs.existsSync(outputName)) {
       console.log("Converting", fullName, "...");
       execFileSync("ffmpeg", ["-v", "quiet", "-y", "-i", fullName, outputName]);
