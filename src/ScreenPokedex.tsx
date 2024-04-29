@@ -159,12 +159,15 @@ function Monster({ pokemon, setQuery }: MonsterProps) {
               title={t("pokedex.cry.text")}
               aria-label={t("pokedex.cry.text")}
               aria-pressed={isPlaying ? "true" : "false"}
+              aria-disabled={isPlaying ? "true" : "false"}
               onClick={() => {
                 const audio = audioRef.current;
                 if (!audio) {
                   return;
                 }
-                audio.play();
+                if (audio.paused) {
+                  audio.play();
+                }
               }}
             >
               <IconMusic />
