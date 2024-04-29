@@ -1,14 +1,18 @@
 # Changelog
 
+# 2024-04-28
+
+- Added Portuguese (Portugal) translation
+
 # 2024-04-20
 
 - Added links from Pokémon in the type coverage pages to the Pokédex page
 
 - Updated the Pokédex page to update more quickly when searching
 
-- Updated Brazilian Portuguese translation
+- Updated Portuguese (Brazil) translation
 
-- Updated capitalization in English and Brazilian Portuguese
+- Updated capitalization in English and Portuguese (Brazil)
 
 # 2024-04-14
 
@@ -180,7 +184,7 @@
 
 ## 2024-02-26
 
-- Updated Brazilian Portuguese translations
+- Updated Portuguese (Brazil) translations
 
 ## 2024-02-24
 
@@ -223,7 +227,7 @@
 
 ## 2024-02-10
 
-- Updated Brazilian Portuguese translation
+- Updated Portuguese (Brazil) translation
 
 - Added section showing translation completion
 
@@ -435,7 +439,7 @@
 
 ## 2022-04-21
 
-- Added Brazilian Portuguese translations
+- Added Portuguese (Brazil) translations
 
 ## 2022-04-17
 
