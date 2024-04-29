@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import * as fs from "fs";
 import { uniqBy, sortBy } from "lodash-es";
-import { saveJSON } from "./util.js";
+import { saveJSON } from "../util.js";
 
 // const pokemondbJSON = "data/pokemondb-gen9.json";
 const pokeapiJSON = "data/pokemon.json";

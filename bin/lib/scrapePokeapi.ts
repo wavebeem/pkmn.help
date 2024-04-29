@@ -2,17 +2,17 @@
 import fetch from "node-fetch";
 import path from "path";
 import { URL } from "url";
-import { saveJSON } from "./util.js";
+import { saveJSON } from "../util.js";
 
 const API = process.env.API || "https://pokeapi.co/api/v2/";
 const DEST = "data";
 
-interface PokemonSpeciesBasic {
+export interface PokemonSpeciesBasic {
   name: string;
   url: string;
 }
 
-interface PokemonSpeciesDetail {
+export interface PokemonSpeciesDetail {
   id: number;
   names: {
     name: string;
@@ -30,7 +30,7 @@ interface PokemonSpeciesDetail {
   }[];
 }
 
-interface PokemonForm {
+export interface PokemonForm {
   form_names: {
     name: string;
     language: {
@@ -40,7 +40,7 @@ interface PokemonForm {
   }[];
 }
 
-interface PokemonDetail {
+export interface PokemonDetail {
   id: number;
   name: string;
   is_default: boolean;
@@ -78,7 +78,7 @@ interface PokemonDetail {
   };
 }
 
-interface PokemonSimple {
+export interface PokemonSimple {
   name: string;
   speciesNames: Record<string, string>;
   formNames: Record<string, string>;
