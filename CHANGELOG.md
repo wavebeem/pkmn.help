@@ -8,6 +8,8 @@
 
 - Updated French translation
 
+- Fixed a bug where clicking a Pokémon's name in the Pokédex or type coverage list only worked correctly on the first page of the Pokédex
+
 ## 2024-04-28
 
 - Added Portuguese (Portugal) translation

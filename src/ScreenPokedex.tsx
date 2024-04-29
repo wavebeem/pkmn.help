@@ -354,7 +354,14 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
           renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
           renderPage={(page) =>
             page.map((pokemon) => (
-              <Monster key={pokemon.id} pokemon={pokemon} setQuery={setQuery} />
+              <Monster
+                key={pokemon.id}
+                pokemon={pokemon}
+                setQuery={(query) => {
+                  setQuery(query);
+                  setPage(0);
+                }}
+              />
             ))
           }
         />

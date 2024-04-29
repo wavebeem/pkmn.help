@@ -66,7 +66,7 @@ export function ScreenCoverageList({
           return (
             <ul className="list pa0 border3 bt">
               {items.map(({ number, name, types }, i) => {
-                const dexParams = new URLSearchParams({ q: number });
+                const dexParams = new URLSearchParams({ q: number, page: "1" });
                 const dexLink = `/pokedex/?${dexParams}`;
                 return (
                   <li
