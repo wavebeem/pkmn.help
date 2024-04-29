@@ -48,7 +48,6 @@
     "eslint-plugin-react": "^7.34.1",
     "i18next-parser": "^8.13.0",
     "jsdom": "^24.0.0",
-    "light-audio-converter": "^1.0.6",
     "lodash": "^4.17.21",
     "lodash-es": "^4.17.21",
     "node-fetch": "^3.3.2",
