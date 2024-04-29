@@ -1,0 +1,318 @@
+{
+  "title": "Calculadora de Tipos Pokémon",
+  "navigation": {
+    "offense": "Ofensivo",
+    "defense": "Defensivo",
+    "pokedex": "Pokédex",
+    "more": "Mais"
+  },
+  "offense": {
+    "chooseTypes": "Escolhe os tipos",
+    "dealsXTo": "Causa {{ x }} de dano contra",
+    "coverage": {
+      "heading": "Cobertura da Pokédex",
+      "edit": "Editar a lista",
+      "weakness": "Pokémon Fracos",
+      "normal": "Pokémon Neutros",
+      "resistance": "Pokémon Resistentes"
+    },
+    "teraPokemon": "Pokémon Terastalizados",
+    "coverageList": {
+      "empty": "Nenhum Pokémon encontrado ou nenhum tipo selecionado",
+      "weakness": {
+        "heading": "Lista de Pokémon fracos",
+        "description": "Estes Pokémon são fracos contra, pelo menos, um dos tipos selecionados"
+      },
+      "normal": {
+        "heading": "Lista de Pokémon neutros",
+        "description": "Estes Pokémon não são fracos nem resistentes contra os tipos selecionados"
+      },
+      "resistance": {
+        "heading": "Lista de Pokémon resistentes",
+        "description": "Estes Pokémon são resistentes contra todos os tipos selecionados"
+      }
+    }
+  },
+  "coverage": {
+    "heading": "Cobertura da Pokédex",
+    "paragraph1": "Importa/exporta arquivos CSV da Pokédex personalizados para ver a cobertura de tipos para diferentes Pokémon. Podes criar um arquivo CSV só com Pokémon da categoria OU ou até criar os teus próprios Pokémon do zero.",
+    "paragraph2": "Os dados CSV são carregados pelo nome do cabeçalho da coluna, e não pela ordem das colunas, por isso podes adicionar ou reordenar as colunas como quiseres (ex.: podes adicionar uma coluna para a \"categoria\" ou para \"notas\").",
+    "paragraph3": "Os ficheiros CSV podem ser editados com o Google Sheets, o Microsoft Excel, o LibreOffice, o Notepad, entre outros.",
+    "csvHeaders": {
+      "number": "Número",
+      "name": "Nome",
+      "type1": "Tipo 1",
+      "type2": "Tipo 2",
+      "type3": "Tipo 3"
+    },
+    "export": {
+      "button": "Exportar",
+      "description": "Exporta a Pokédex normal para um ficheiro CSV"
+    },
+    "import": {
+      "button": "Importar",
+      "description": "Importa um ficheiro CSV com uma Pokédex editada"
+    },
+    "reset": {
+      "button": "Repôr",
+      "description": "Repõe a Pokédex normal"
+    },
+    "filename": "pkmn.help type coverage.csv",
+    "status": {
+      "imported": "{{n}} Pokémon importados do ficheiro “{{ file }}”",
+      "exported": "Formas padrão dos Pokémon exportadas",
+      "reset": "Formas padrão dos Pokémon carregadas",
+      "errored": "Erro ao carregar o ficheiro CSV. Por favor, não alteres os cabeçalhos das colunas."
+    },
+    "back": "Voltar ao Ofensivo"
+  },
+  "defense": {
+    "chooseFirst": "Escolhe o 1º tipo",
+    "chooseSecond": "Escolhe o 2º tipo",
+    "chooseThird": "Escolhe o 3º tipo",
+    "takesXFrom": "Sofre {{ x }} de dano de",
+    "chooseAbility": "Escolhe a habilidade",
+    "chooseTeraType": "Escolhe o tipo tera",
+    "abilityNames": {
+      "none": "Nenhum",
+      "tera_shell": "Tera Shell",
+      "filter": "Filter",
+      "wonder_guard": "Wonder Guard",
+      "delta_stream": "Delta Stream",
+      "fluffy": "Fluffy",
+      "purifying_salt": "Purifying Salt",
+      "heatproof": "Heatproof",
+      "water_bubble": "Water Bubble",
+      "thick_fat": "Thick Fat",
+      "earth_eater": "Earth Eater",
+      "levitate": "Levitate",
+      "flash_fire": "Flash Fire",
+      "well_baked_body": "Well-Baked Body",
+      "dry_skin": "Dry Skin",
+      "storm_drain": "Storm Drain",
+      "water_absorb": "Water Absorb",
+      "sap_sipper": "Sap Sipper",
+      "lightning_rod": "Lightning Rod",
+      "motor_drive": "Motor Drive",
+      "volt_absorb": "Volt Absorb"
+    },
+    "mode": {
+      "heading": "Escolhe o modo",
+      "solo": "Individual",
+      "team": "Equipa"
+    },
+    "team": {
+      "tableHeading": "Número de combinações",
+      "heading": "Editar a equipa de Pokémon",
+      "add": "Adicionar Pokémon",
+      "empty": "Nenhum Pokémon selecionado",
+      "displayType": "Formato da tabela",
+      "weak": "Fraquezas",
+      "resist": "Resistências",
+      "simple": "Simples",
+      "complex": "Complexa",
+      "type": "Tipo",
+      "save": "Guardar",
+      "saveLong": "Guardar {{ name }}",
+      "edit": "Editar",
+      "editLong": "Editar {{ name }}",
+      "remove": "Remover",
+      "removeLong": "Remover {{ name }}"
+    }
+  },
+  "pokedex": {
+    "search": {
+      "description": "Procurar por nome, número ou tipo",
+      "help": "Ajuda",
+      "helpLong": "Ajuda, procurar na Pokédex",
+      "notFound": "Nenhum Pokémon encontrado"
+    },
+    "offense": {
+      "text": "Ofensivo"
+    },
+    "defense": {
+      "text": "Defensivo"
+    },
+    "shiny": {
+      "label": "{{ pokemon }} shiny",
+      "text": "Shiny"
+    },
+    "pagination": {
+      "next": "Próximo",
+      "nextLong": "Próximo",
+      "previous": "Anterior",
+      "previousLong": "Anterior",
+      "firstLong": "Primeiro",
+      "lastLong": "Último"
+    },
+    "stats": {
+      "hp": "HP",
+      "hpLong": "Hit Points",
+      "attack": "Attack",
+      "attackLong": "Attack",
+      "defense": "Defense",
+      "defenseLong": "Defense",
+      "specialAttack": "Sp. Atk.",
+      "specialAttackLong": "Special Attack",
+      "specialDefense": "Sp. Def.",
+      "specialDefenseLong": "Special Defense",
+      "speed": "Speed",
+      "speedLong": "Speed",
+      "total": "Total",
+      "totalLong": "Total"
+    }
+  },
+  "pokedexHelp": {
+    "searchByName": {
+      "heading": "Procurar pelo nome",
+      "description": "Podes procurar um Pokémon pelo seu nome. Se só te lembrares de parte do nome do Pokémon, deves conseguir encontrá-lo na mesma. Erros ortográficos vão impedir-te de encontrar o Pokémon que procuras."
+    },
+    "searchByNumber": {
+      "heading": "Procurar pelo número",
+      "description": "Procura pelo número do Pokémon na National Dex. Exemplo: se estás à procura do Bulbasaur, deves introduzir o número 1, e não #001."
+    },
+    "searchByType": {
+      "heading": "Procurar pelo tipo",
+      "description": "Aqui estão alguns exemplos de como procurar por tipo."
+    },
+    "searchExamples": {
+      "type": {
+        "query": "fogo",
+        "description": "Procura Pokémon que têm fogo como um dos seus tipos nalguma das suas formas (ex.: Charmander, Charizard ou Rotom)."
+      },
+      "doubleType": {
+        "query": "água voador",
+        "description": "Procura Pokémon que sejam do tipo água/voador (ex.: Gyarados) ou voador/água (ex.: Cramorant)."
+      },
+      "singleType": {
+        "query": "erva nenhum",
+        "description": "Procura Pokémon que sejam apenas do tipo erva, sem nenhum 2º tipo (ex.: Tangela, Chikorita ou Lilligant)."
+      }
+    },
+    "back": "Voltar à Pokédex"
+  },
+  "more": {
+    "contact": {
+      "heading": "Contacta-me",
+      "intro": "Olá! O meu nome é <homepage>Sage Fennel</homepage> (they/them) e fui eu quem criou a Calculadora de Tipos Pokémon (pkmn.help)",
+      "email": "Sente-te à vontade para me enviares as tuas opiniões e agradecimentos para <email>pkmn@wavebeem.com</email>."
+    },
+    "settings": {
+      "heading": "Definições",
+      "language": {
+        "label": "Idioma",
+        "default": "Detetar o idioma automaticamente",
+        "official": "Idiomas Oficiais",
+        "unofficial": "Idiomas Não-Oficiais",
+        "helpText": "Ainda não temos todos os idiomas disponíveis. Se quiseres ajudar, envia-me um email e eu posso pagar-te pela tradução."
+      },
+      "theme": {
+        "label": "Tema",
+        "help": "A opção \"Padrão do sistema\" altera o tema automaticamente, de acordo com as definições do teu dispositivo.",
+        "values": {
+          "auto": "Padrão do sistema",
+          "light": "Claro",
+          "dark": "Escuro"
+        }
+      },
+      "typeCount": {
+        "label": "Número de tipos",
+        "help": "Quando atingido por Forest's Curse ou Trick-or-Treat, um Pokémon pode passar a ter, temporariamente, 3 tipos ao mesmo tempo. Por ser algo raro, a opção do 3º tipo está, normalmente, escondida.",
+        "values": {
+          "2": "Dois tipos (2)",
+          "3": "Três tipos (3)"
+        }
+      }
+    },
+    "changes": {
+      "heading": "Novidades",
+      "description": "Podes ver as novidades no <changelog>changelog</changelog>."
+    },
+    "help": {
+      "heading": "Ajuda",
+      "serviceWorker": {
+        "description": "Este botão pode ajudar a resolver alguns problemas com a aplicação.",
+        "button": "Repôr"
+      }
+    },
+    "privacy": {
+      "heading": "Privacidade",
+      "description": "Não uso nem nunca vou anúncios neste site e nunca vou roubar os teus dados pessoais. Uso a <plausible>Plausible Analytics</plausible>, que é autofinanciada, independente, hospedada na União Europeia, e não guarda quaisquer cookies no teu computador."
+    },
+    "givingBack": {
+      "heading": "Demonstrações de afeto",
+      "description": "Dediquei horas incontáveis na melhoria deste site. Se aprecias o meu trabalho, considera, por favor, doar para entidades que apoiam a igualdade racial e os direitos trans."
+    },
+    "thanks": {
+      "heading": "Agradecimentos especiais",
+      "sections": {
+        "da": "Tradução para Dinamarquês",
+        "ru": "Tradução para Russo",
+        "kk": "Tradução para Cazaque",
+        "pt-PT": "Tradução para Português (Portugal)",
+        "pt-BR": "Tradução para Português (Brasil)",
+        "zh-Hans": "Tradução para Chinês Simplificado",
+        "zh-Hant": "Tradução para Chinês Tradicional",
+        "ro": "Tradução para Romeno",
+        "pl": "Tradução para Polaco",
+        "fr": "Tradução para Francês",
+        "de": "Tradução para Alemão",
+        "it": "Tradução para Italiano",
+        "ko": "Tradução para Coreano",
+        "ja": "Tradução para Japonês",
+        "nl": "Tradução para Neerlandês (Holandês)",
+        "testing": "Testes",
+        "other": "Vários Pokéfãs anónimos"
+      }
+    },
+    "openSource": {
+      "heading": "Código-fonte",
+      "description": "O Código-fonte está disponível no <github>GitHub</github>."
+    },
+    "legalInfo": {
+      "heading": "Informação Legal"
+    }
+  },
+  "types": {
+    "normal": "Normal",
+    "fighting": "Lutador",
+    "flying": "Voador",
+    "poison": "Veneno",
+    "ground": "Terra",
+    "rock": "Rocha",
+    "bug": "Inseto",
+    "ghost": "Fantasma",
+    "steel": "Aço",
+    "fire": "Fogo",
+    "water": "Água",
+    "grass": "Erva",
+    "electric": "Elétrico",
+    "psychic": "Psíquico",
+    "ice": "Gelo",
+    "dragon": "Dragão",
+    "dark": "Sinistro",
+    "fairy": "Fada",
+    "stellar": "Estelar",
+    "none": "Nenhum"
+  },
+  "banners": {
+    "updateReady": {
+      "description": "Está disponível uma atualização",
+      "whatsNew": "Novidades",
+      "update": "Atualizar"
+    }
+  },
+  "general": {
+    "loading": "A carregar...",
+    "copyLink": "Copiar o link"
+  },
+  "games": {
+    "label": "Geração do jogo",
+    "help": "Permite usar a efetividade entre tipos que era usada noutras gerações.",
+    "byID": {
+      "gen1": "1ª Geração",
+      "gen2": "2ª Geração a 5ª Geração",
+      "default": "Padrão (a partir da 6ª Geração)"
+    }
+  }
+}

@@ -1,26 +1,30 @@
 # Changelog
 
-# 2024-04-20
+## 2024-04-28
+
+- Added Portuguese (Portugal) translation
+
+## 2024-04-20
 
 - Added links from Pokémon in the type coverage pages to the Pokédex page
 
 - Updated the Pokédex page to update more quickly when searching
 
-- Updated Brazilian Portuguese translation
+- Updated Portuguese (Brazil) translation
 
-- Updated capitalization in English and Brazilian Portuguese
+- Updated capitalization in English and Portuguese (Brazil)
 
-# 2024-04-14
+## 2024-04-14
 
 - Removed "Starter Eevee" from the Pokédex
 
 - Reduced the size of the Pokédex database by removing an unused field from each entry
 
-# 2024-04-11
+## 2024-04-11
 
 - Fixed an issue where changing from "three types" to "two types" mode would accidentally retain the third type on the defense pages
 
-# 2024-04-06
+## 2024-04-06
 
 - Fixed a bug where shiny Pokémon would do their bounce animation before the shiny sprite was loaded
 
@@ -40,7 +44,7 @@
 
   - If you want to download an image as PNG instead, just change the URL to end with `.png` instead of `.webp`
 
-# 2024-04-05
+## 2024-04-05
 
 - Upgraded to Pokémon Home images
 
@@ -54,7 +58,7 @@
 
 - Fixed an issue with the Pokédex pagination buttons being too short on mobile
 
-# 2024-04-03
+## 2024-04-03
 
 - Fixed an issue where Pokédex images would load slower than they should
 
@@ -180,7 +184,7 @@
 
 ## 2024-02-26
 
-- Updated Brazilian Portuguese translations
+- Updated Portuguese (Brazil) translations
 
 ## 2024-02-24
 
@@ -223,7 +227,7 @@
 
 ## 2024-02-10
 
-- Updated Brazilian Portuguese translation
+- Updated Portuguese (Brazil) translation
 
 - Added section showing translation completion
 
@@ -435,7 +439,7 @@
 
 ## 2022-04-21
 
-- Added Brazilian Portuguese translations
+- Added Portuguese (Brazil) translations
 
 ## 2022-04-17
 
