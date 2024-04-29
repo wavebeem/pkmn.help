@@ -14,11 +14,11 @@ export function getDesiredLanguage(): Lang | undefined {
     if (l === "zh-CN") return "zh-Hans";
     if (l === "zh-SG") return "zh-Hans";
     if (l === "zh") return "zh-Hans";
-    if (l === "pt") return "pt-BR";
-    if (l.startsWith("pt-")) return "pt-BR";
-    const key = l.split("-")[0];
-    if (isLang(key)) return key;
+    if (l === "pt-BR") return "pt-BR";
+    const [lang] = l.split("-");
+    if (isLang(lang)) return lang;
   }
+  return undefined;
 }
 
 export function isLang(lang: string): lang is Lang {
@@ -30,6 +30,7 @@ export type Lang = typeof supportedLanguages[number];
 export const supportedLanguages = [
   "en",
   "es",
+  "pt",
   "pt-BR",
   "da",
   "de",

@@ -13,13 +13,13 @@ offense.coverage.normal,Normal,Normal
 offense.coverage.resistance,Resist,Resist
 offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,No Pokémon found or no types selected
-offense.coverageList.weakness.heading,Weakness Coverage List,Weakness Coverage List
+offense.coverageList.weakness.heading,Weakness coverage list,Weakness coverage list
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,These Pokémon are weak to at least one of the selected types.
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,Normal Effectiveness Coverage List
+offense.coverageList.normal.heading,Normal effectiveness coverage list,Normal effectiveness coverage list
 offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,These Pokémon are not in the weakness or resistance lists for the selected types.
-offense.coverageList.resistance.heading,Resistance Coverage List,Resistance Coverage List
+offense.coverageList.resistance.heading,Resistance coverage list,Resistance coverage list
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,These Pokémon are resistant to all of the selected types.
-coverage.heading,Pokédex Coverage,Pokédex Coverage
+coverage.heading,Pokédex coverage,Pokédex coverage
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch."
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column)."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more."

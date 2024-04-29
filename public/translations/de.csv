@@ -13,13 +13,13 @@ offense.coverage.normal,Normal,
 offense.coverage.resistance,Resist,
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,
-offense.coverageList.weakness.heading,Weakness Coverage List,
+offense.coverageList.weakness.heading,Weakness coverage list,
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,
+offense.coverageList.normal.heading,Normal effectiveness coverage list,
 offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,
-offense.coverageList.resistance.heading,Resistance Coverage List,
+offense.coverageList.resistance.heading,Resistance coverage list,
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,
-coverage.heading,Pokédex Coverage,Schwächen-Abdeckung
+coverage.heading,Pokédex coverage,Schwächen-Abdeckung
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importieren und exportieren Sie benutzerdefinierte Pokédex-CSV-Dateien, um die Schwächen verschiedener Pokémon zu sehen. Erstellen Sie eine benutzerdefinierte CSV-Datei mit nur den OU-Tier-Pokémon oder erstellen Sie sogar Ihre eigenen Pokémon von Grund auf."
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","CSV-Daten werden nach dem Namen der Spaltenüberschrift geladen, nicht nach der Reihenfolge der Spalten. Sie können also nach belieben Spalten hinzufügen oder neu anordnen (z. B. eine Spalte ""Ebene"" oder eine Spalte ""Notizen"" hinzufügen)."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","CSV-Dateien können mit Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad und anderen Programmen bearbeitet werden."

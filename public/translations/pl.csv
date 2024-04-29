@@ -13,13 +13,13 @@ offense.coverage.normal,Normal,Normalne
 offense.coverage.resistance,Resist,Opór
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,Nie znaleziono Pokémona lub nie wybrano żadnego typu
-offense.coverageList.weakness.heading,Weakness Coverage List,Lista pokrycia słabości
+offense.coverageList.weakness.heading,Weakness coverage list,Lista pokrycia słabości
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Te Pokémony są słabe do co najmniej jednego z wybranych typów.
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,Lista Pokrycia Normalnej Skuteczności
+offense.coverageList.normal.heading,Normal effectiveness coverage list,Lista Pokrycia Normalnej Skuteczności
 offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,Te Pokémony nie znajdują się na listach słabości ani odporności dla wybranych typów.
-offense.coverageList.resistance.heading,Resistance Coverage List,Lista Pokrycia Oporów
+offense.coverageList.resistance.heading,Resistance coverage list,Lista Pokrycia Oporów
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,Te Pokémony są odporne na wszystkie wybrane typy.
-coverage.heading,Pokédex Coverage,Pokrycie Pokédexa
+coverage.heading,Pokédex coverage,Pokrycie Pokédexa
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importuj/eksportuj niestandardowe pliki Pokédex CSV, aby zobaczyć pokrycie dla różnych Pokémonów. Utwórz niestandardowy plik CSV tylko z Pokémonem poziomu OU, a nawet stwórz własnego Pokémona od podstaw."
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Dane CSV są ładowane według nazwy nagłówka kolumny, a nie kolejności kolumn, więc możesz dodawać kolumny lub zmieniać ich kolejność, jeśli chcesz (np. dodaj kolumnę „poziom” lub „uwagi”)."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","Pliki CSV można edytować za pomocą Arkuszy Google, Microsoft Excel, OpenOffice, LibreOffice, Notatnika i innych."

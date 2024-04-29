@@ -13,13 +13,13 @@ offense.coverage.normal,Normal,Normaal
 offense.coverage.resistance,Resist,Weerstand
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,Geen Pokémon gevonden of geen types geselecteerd
-offense.coverageList.weakness.heading,Weakness Coverage List,Zwakte Overschaduwingslijst
+offense.coverageList.weakness.heading,Weakness coverage list,Zwakte Overschaduwingslijst
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Deze Pokémon zijn zwak tegen ten minste één van de geselecteerde types.
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,Normale Overschaduwingslijst
+offense.coverageList.normal.heading,Normal effectiveness coverage list,Normale Overschaduwingslijst
 offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,Deze Pokémon zijn niet in de zwakheid- of weerstandlijsten voor de geselecteerde types.
-offense.coverageList.resistance.heading,Resistance Coverage List,Weerstandige Overschaduwingslijst
+offense.coverageList.resistance.heading,Resistance coverage list,Weerstandige Overschaduwingslijst
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,Deze Pokémon hebben een weerstand tegen alle geselecteerde types.
-coverage.heading,Pokédex Coverage,Pokedexoverschaduwing
+coverage.heading,Pokédex coverage,Pokedexoverschaduwing
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importeer/exporteer aangepaste Pokédex CSV-bestanden om overschaduwing te zien voor verschillende Pokémon. Maak een aangepast CSV-bestand met alleen de OU-niveau Pokémon, of maak je eigen Pokémon vanaf het begin."
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","CSV data wordt geladen op kolomnaam, niet kolomvolgorde, je kan dus kolommen toevogen en verplaatsen als je dat wilt. (bijv. voeg een “niveau” kolom of een “notities” kolom toe)."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","CSV-bestanden kunnen worden bewerkt met Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, en meer."

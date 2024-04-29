@@ -13,13 +13,13 @@ offense.coverage.normal,Normal,
 offense.coverage.resistance,Resist,
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,
-offense.coverageList.weakness.heading,Weakness Coverage List,
+offense.coverageList.weakness.heading,Weakness coverage list,
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,
-offense.coverageList.normal.heading,Normal Effectiveness Coverage List,
+offense.coverageList.normal.heading,Normal effectiveness coverage list,
 offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,
-offense.coverageList.resistance.heading,Resistance Coverage List,
+offense.coverageList.resistance.heading,Resistance coverage list,
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,
-coverage.heading,Pokédex Coverage,Acoperire slabiciuni
+coverage.heading,Pokédex coverage,Acoperire slabiciuni
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importa/exporta fișiere personalizate Pokédex CSV sa vezi acoperirea de slabiciuni pentru diferiti Pokémon. Creaza un fișier CSV cu doar OU nlivelul Pokémon, sau creaza propriul Pokémon."
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Date de CSV e încarcat de numele de numele de colum, nu ordinea de colum, deci poti sa adaugi sau reordonezi columurile daca vrei (de exemplu: alege un colum de nivel sau de note"
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","Fișierele CSV pot fi editate cu Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad și multe altele."
