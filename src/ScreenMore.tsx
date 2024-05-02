@@ -404,8 +404,6 @@ export function ScreenMore({
         <h3 className={classH3}>{t("more.thanks.sections.zh-Hans")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>Dragonify</li>
-        </ul>
-        <ul className="list mb0 mt1 pl3">
           <li>Tin</li>
         </ul>
 
@@ -433,6 +431,7 @@ export function ScreenMore({
 
         <h3 className={classH3}>{t("more.thanks.sections.de")}</h3>
         <ul className="list mb0 mt1 pl3">
+          <li>SpeciesSaladMallory</li>
           <li>Cozzzy</li>
           <li>Luzifer Senpai</li>
         </ul>
@@ -455,8 +454,6 @@ export function ScreenMore({
         <h3 className={classH3}>{t("more.thanks.sections.ko")}</h3>
         <ul className="list mb0 mt1 pl3">
           <li>BetterBritter</li>
-        </ul>
-        <ul className="list mb0 mt1 pl3">
           <li>Eric Marriott</li>
         </ul>
 
