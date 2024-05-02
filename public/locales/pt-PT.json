@@ -12,9 +12,9 @@
     "coverage": {
       "heading": "Cobertura da Pokédex",
       "edit": "Editar a lista",
-      "weakness": "Pokémon Fracos",
-      "normal": "Pokémon Neutros",
-      "resistance": "Pokémon Resistentes"
+      "weakness": "Fracos",
+      "normal": "Neutros",
+      "resistance": "Resistentes"
     },
     "teraPokemon": "Pokémon Terastalizados",
     "coverageList": {
