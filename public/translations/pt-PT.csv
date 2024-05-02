@@ -8,9 +8,9 @@ offense.chooseTypes,Choose types,Escolhe os tipos
 offense.dealsXTo,Deals {{ x }} to,Causa {{ x }} de dano contra
 offense.coverage.heading,Pokédex coverage,Cobertura da Pokédex
 offense.coverage.edit,Edit list,Editar a lista
-offense.coverage.weakness,Weak,Pokémon Fracos
-offense.coverage.normal,Normal,Pokémon Neutros
-offense.coverage.resistance,Resist,Pokémon Resistentes
+offense.coverage.weakness,Weak,Fracos
+offense.coverage.normal,Normal,Neutros
+offense.coverage.resistance,Resist,Resistentes
 offense.teraPokemon,Tera Pokémon,Pokémon Terastalizados
 offense.coverageList.empty,No Pokémon found or no types selected,Nenhum Pokémon encontrado ou nenhum tipo selecionado
 offense.coverageList.weakness.heading,Weakness coverage list,Lista de Pokémon fracos

@@ -8,12 +8,35 @@
   },
   "offense": {
     "chooseTypes": "Typen auswählen",
-    "dealsXTo": "Fügt {{ x }} Schaden zu"
+    "dealsXTo": "Fügt {{ x }} Schaden zu",
+    "coverage": {
+      "heading": "Pokédex Abdeckung",
+      "edit": "Editiere Liste",
+      "weakness": "Sehr effektiv",
+      "normal": "Normal effektiv",
+      "resistance": "Nicht sehr effektiv"
+    },
+    "teraPokemon": "Terakristall-Pokémon",
+    "coverageList": {
+      "empty": "Keine Pokémon gefunden oder keine Typen ausgewählt",
+      "weakness": {
+        "heading": "Schwächen-Abdeckungsliste",
+        "description": "Diese Pokémon sind schwach gegen mindestens einen dieser ausgewählten Typen."
+      },
+      "normal": {
+        "heading": "Normal effektiv Abdeckungsliste",
+        "description": "Diese Pokémon sind nicht in der Schwäche oder- Resistenzliste für diese ausgewählten Typen."
+      },
+      "resistance": {
+        "heading": "Resistenzen-Abdeckungsliste",
+        "description": "Diese Pokémon sind resistent gegen alle ausgewählten Typen."
+      }
+    }
   },
   "coverage": {
     "heading": "Schwächen-Abdeckung",
-    "paragraph1": "Importieren und exportieren Sie benutzerdefinierte Pokédex-CSV-Dateien, um die Schwächen verschiedener Pokémon zu sehen. Erstellen Sie eine benutzerdefinierte CSV-Datei mit nur den OU-Tier-Pokémon oder erstellen Sie sogar Ihre eigenen Pokémon von Grund auf.",
-    "paragraph2": "CSV-Daten werden nach dem Namen der Spaltenüberschrift geladen, nicht nach der Reihenfolge der Spalten. Sie können also nach belieben Spalten hinzufügen oder neu anordnen (z. B. eine Spalte \"Ebene\" oder eine Spalte \"Notizen\" hinzufügen).",
+    "paragraph1": "Importiere/exportiere benutzerdefinierte Pokédex-CSV-Dateien, um die Schwächen verschiedener Pokémon zu sehen. Erstelle eine benutzerdefinierte CSV-Datei nur mit OU-Tier-Pokémon oder erstelle sogar deine eigenen Pokémon von Grund auf.",
+    "paragraph2": "CSV-Daten werden nach dem Namen der Spaltenüberschrift geladen, nicht nach der Reihenfolge der Spalten. Du kannst also nach Belieben Spalten hinzufügen oder neu anordnen (z. B. eine Spalte \"Ebene\" oder eine Spalte \"Notizen\" hinzufügen).",
     "paragraph3": "CSV-Dateien können mit Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad und anderen Programmen bearbeitet werden.",
     "csvHeaders": {
       "number": "Nummer",
@@ -39,7 +62,7 @@
       "imported": "Importierte {{ n }} Pokémon-Formen aus \"{{ Datei }}\"",
       "exported": "Exportierte Standard-Pokémon-Formen",
       "reset": "Standard Pokémon-Formen geladen",
-      "errored": "Fehler beim Laden von CSV. Ändern Sie keine Kopfzeilennamen."
+      "errored": "Fehler beim Laden von CSV. Ändere keine Kopfzeilennamen."
     },
     "back": "Zurück zum Angriff"
   },
@@ -48,34 +71,61 @@
     "chooseSecond": "Zweiten Typ wählen",
     "chooseThird": "Dritten Typ wählen",
     "takesXFrom": "Nimmt {{ x }} Schaden von",
+    "chooseAbility": "Fähigkeit auswählen",
+    "chooseTeraType": "Tera-Typ auswählen",
     "abilityNames": {
-      "filter": "Filter",
+      "none": "Keine Fähigkeit",
       "tera_shell": "Tera-Panzer",
-      "wonder_guard": "Wonder Guard",
-      "delta_stream": "Delta Stream",
-      "fluffy": "Fluffy",
-      "purifying_salt": "Purifying Salt",
-      "heatproof": "Heatproof",
-      "water_bubble": "Water Bubble",
-      "thick_fat": "Thick Fat",
-      "earth_eater": "Earth Eater",
-      "levitate": "Levitate",
-      "flash_fire": "Flash Fire",
-      "well_baked_body": "Well-Baked Body",
-      "dry_skin": "Dry Skin",
-      "storm_drain": "Storm Drain",
-      "water_absorb": "Water Absorb",
-      "sap_sipper": "Sap Sipper",
-      "lightning_rod": "Lightning Rod",
-      "motor_drive": "Motor Drive",
-      "volt_absorb": "Volt Absorb"
+      "filter": "Filter",
+      "wonder_guard": "Wunderwache",
+      "delta_stream": "Delta-Wind",
+      "fluffy": "Flauschigkeit",
+      "purifying_salt": "Läutersalz",
+      "heatproof": "Hitzeschutz",
+      "water_bubble": "Wasserblase",
+      "thick_fat": "Speckschicht",
+      "earth_eater": "Bodenschmaus",
+      "levitate": "Schwebe",
+      "flash_fire": "Feuerfänger",
+      "well_baked_body": "Knusperkruste",
+      "dry_skin": "Trockenheit",
+      "storm_drain": "Sturmsog",
+      "water_absorb": "H2O-Absorber",
+      "sap_sipper": "Vegetarier",
+      "lightning_rod": "Blitzfänger",
+      "motor_drive": "Starthilfe",
+      "volt_absorb": "Voltabsorber"
+    },
+    "mode": {
+      "heading": "Modus auswählen",
+      "solo": "Solo",
+      "team": "Team"
+    },
+    "team": {
+      "tableHeading": "Matchups",
+      "heading": "Editiere Pokémon-Team",
+      "add": "Füge Pokémon hinzu",
+      "empty": "Keine Pokémon ausgewählt",
+      "displayType": "Tabellen-Format",
+      "weak": "Schwach",
+      "resist": "Resistenz",
+      "simple": "Simpel",
+      "complex": "Komplex",
+      "type": "Typ",
+      "save": "Speichern",
+      "saveLong": "Speichere {{ name }}",
+      "edit": "Editiere",
+      "editLong": "Editiere {{ name }}",
+      "remove": "Entfernen",
+      "removeLong": "Entferne {{ name }}"
     }
   },
   "pokedex": {
     "search": {
       "description": "Suche nach Name, Nummer oder Typen",
       "help": "Hilfe",
-      "helpLong": "Hilfe, Pokédex-Suche"
+      "helpLong": "Hilfe, Pokédex-Suche",
+      "notFound": "Keine Pokémon gefunden"
     },
     "offense": {
       "text": "Angriff"
@@ -83,17 +133,23 @@
     "defense": {
       "text": "Verteidigung"
     },
+    "cry": {
+      "text": "Ruf"
+    },
+    "shiny": {
+      "text": "Shiny"
+    },
     "pagination": {
       "next": "Weiter",
       "nextLong": "Weiter",
-      "previous": "Vor",
-      "previousLong": "Vorherige",
+      "previous": "Zur",
+      "previousLong": "Zurück",
       "firstLong": "Erste",
       "lastLong": "Letzte"
     },
     "stats": {
       "hp": "HP",
-      "hpLong": "HP",
+      "hpLong": "Kraftpunkte",
       "attack": "Ang.",
       "attackLong": "Angriff",
       "defense": "Vert.",
@@ -110,7 +166,7 @@
   },
   "pokedexHelp": {
     "searchByName": {
-      "heading": "Suche nach Name",
+      "heading": "Suche nach Namen",
       "description": "Du kannst nach einem Pokémon anhand seines Namens suchen. Wenn du dich nur an einen Teil des Pokémon-Namens erinnerst, findet es das Pokémon wahrscheinlich trotzdem für dich. Mit Tippfehlern kann es im Moment allerdings nicht umgehen."
     },
     "searchByNumber": {
@@ -140,13 +196,16 @@
   "more": {
     "contact": {
       "heading": "Kontakt",
-      "intro": "Hallo, ich bin <homepage>Sage Fennel</homepage> (they/them) und ich habe Pokémon Type Calculator (pkmn.help) erstellt.",
-      "email": "Bitte senden Sie Ihre Gedanken und Danksagungen an <email>pkmn@wavebeem.com</email>."
+      "intro": "Hallo, ich bin <homepage>Sage Fennel</homepage> (they/them) und ich habe den Pokémon Type Calculator (pkmn.help) erstellt.",
+      "email": "Bitte sende deine Gedanken und Danksagungen an <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
       "heading": "Einstellungen",
       "language": {
         "label": "Sprache",
+        "default": "Automatisch Sprache erkennen",
+        "official": "Offizielle Sprachen",
+        "unofficial": "Inoffizielle Sprachen",
         "helpText": "Die Sprachunterstützung ist unvollständig. Nur die Pokémon-Namen werden übersetzt."
       },
       "theme": {
@@ -167,6 +226,10 @@
         }
       }
     },
+    "changes": {
+      "heading": "Was ist neu",
+      "description": "Siehe was neu ist im <changelog>changelog</changelog>."
+    },
     "help": {
       "heading": "Hilfe",
       "serviceWorker": {
@@ -179,7 +242,7 @@
       "description": "Ich werde niemals Werbung schalten oder deine persönlichen Daten stehlen. Ich verwende <plausible>Plausible Analytics</plausible>, das sich selbst finanziert, unabhängig ist, in der EU gehostet wird und keine Cookies auf deinem Computer speichert."
     },
     "givingBack": {
-      "heading": "Zurückgeben",
+      "heading": "Wertschätzung zeigen",
       "description": "Ich habe unzählige Stunden damit verbracht, diese Seite zu verbessern. Wenn du schätzt, was ich gemacht habe, dann ziehe bitte in Betracht, an Wohltätigkeitsorganisationen zu spenden, die BIPOC und Transgender-Rechte unterstützen."
     },
     "thanks": {
@@ -188,13 +251,18 @@
         "da": "Dänische Übersetzung",
         "ru": "Russische Übersetzung",
         "kk": "Kasachische Übersetzung",
+        "pt-PT": "Portugiesische (Portugal) Übersetzung",
         "pt-BR": "Brasilianische Portugiesische Übersetzung",
-        "zh-Hans": "Chinesische Übersetzung",
-        "ro": "Rumänisch Übersetzung",
+        "zh-Hans": "Vereinfachte Chinesische Übersetzung",
+        "zh-Hant": "Traditionelle Chinesische Übersetzung",
+        "ro": "Rumänische Übersetzung",
+        "pl": "Polnische Übersetzung",
         "fr": "Französische Übersetzung",
         "de": "Deutsche Übersetzung",
         "it": "Italienische Übersetzung",
+        "ko": "Koreanische Übersetzung",
         "ja": "Japanische Übersetzung",
+        "nl": "Niederländische Übersetzung",
         "testing": "Testen",
         "other": "Mehrere anonyme Poké-Fans"
       }
@@ -232,10 +300,21 @@
   "banners": {
     "updateReady": {
       "description": "Ein Update ist verfügbar",
+      "whatsNew": "Was ist neu",
       "update": "Aktualisierung"
     }
   },
   "general": {
-    "loading": "Laden..."
+    "loading": "Laden...",
+    "copyLink": "Link kopieren"
+  },
+  "games": {
+    "label": "Spielgeneration",
+    "help": "Verwende die Schwächen und Stärken von anderen Spielgenerationen.",
+    "byID": {
+      "gen1": "Generation 1",
+      "gen2": "Generation 2–5",
+      "default": "Standard (Generation 6+)"
+    }
   }
 }

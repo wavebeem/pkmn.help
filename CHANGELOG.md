@@ -1,5 +1,11 @@
 # Changelog
 
+## 2024-05-01
+
+- Shorten some Portuguese (Portugal) translations
+
+- Updated German translations
+
 ## 2024-04-29
 
 - Added a button to play Pokémon cries in the Pokédex
