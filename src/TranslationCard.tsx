@@ -6,7 +6,7 @@ import {
   formatLanguageCompletion,
   languageBounty,
   officialLanguagesSet,
-} from "./ScreenMore";
+} from "./lang";
 
 interface TranslationCardProps {
   lang: Lang;
