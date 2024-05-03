@@ -6,6 +6,23 @@ import { execFileSync } from "child_process";
 const CRY_SRC = "public/cry";
 const CRY_DEST = "public/cry";
 
+async function convertTo(src: string, dest: string) {
+  if (!fs.existsSync(dest)) {
+    execFileSync("ffmpeg", [
+      // Suppress output
+      "-v",
+      "quiet",
+      // Don't ask questions
+      "-y",
+      // Input file
+      "-i",
+      src,
+      // Output file
+      dest,
+    ]);
+  }
+}
+
 export async function convertAudio() {
   for (const name of fs.readdirSync(CRY_SRC)) {
     if (!name.endsWith(".ogg")) {
@@ -13,10 +30,12 @@ export async function convertAudio() {
     }
     const baseName = path.basename(name, ".ogg");
     const fullName = path.join(CRY_SRC, name);
-    const outputName = path.join(CRY_DEST, `${baseName}.aac`);
-    if (!fs.existsSync(outputName)) {
-      console.log("Converting", fullName, "...");
-      execFileSync("ffmpeg", ["-v", "quiet", "-y", "-i", fullName, outputName]);
-    }
+    const outputAac = path.join(CRY_DEST, `${baseName}.aac`);
+    const outputM4a = path.join(CRY_DEST, `${baseName}.m4a`);
+    console.log("Converting", name, "...");
+    await Promise.all([
+      convertTo(fullName, outputAac),
+      convertTo(fullName, outputM4a),
+    ]);
   }
 }

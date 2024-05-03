@@ -24,7 +24,7 @@ async function main(flags: string[]) {
     return;
   }
 
-  if (flags.includes("test")) {
+  if (flags.includes("audio")) {
     await convertAudio();
     return;
   }
@@ -32,6 +32,7 @@ async function main(flags: string[]) {
   await scrapePokeapi();
   await downloadMedia();
   await optimizeImages();
+  await convertAudio();
   await mergeData();
 }
 

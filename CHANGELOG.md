@@ -1,5 +1,10 @@
 # Changelog
 
+## 2024-05-03
+
+- Switched from AAC to M4A as a fallback for browsers that don't support Ogg
+  files (only Safari, as far as I know...)
+
 ## 2024-05-01
 
 - Shorten some Portuguese (Portugal) translations
@@ -14,7 +19,8 @@
 
 - Updated French translation
 
-- Fixed a bug where clicking a Pokémon's name in the Pokédex or type coverage list only worked correctly on the first page of the Pokédex
+- Fixed a bug where clicking a Pokémon's name in the Pokédex or type coverage
+  list only worked correctly on the first page of the Pokédex
 
 ## 2024-04-28
 
@@ -34,17 +40,21 @@
 
 - Removed "Starter Eevee" from the Pokédex
 
-- Reduced the size of the Pokédex database by removing an unused field from each entry
+- Reduced the size of the Pokédex database by removing an unused field from each
+  entry
 
 ## 2024-04-11
 
-- Fixed an issue where changing from "three types" to "two types" mode would accidentally retain the third type on the defense pages
+- Fixed an issue where changing from "three types" to "two types" mode would
+  accidentally retain the third type on the defense pages
 
 ## 2024-04-06
 
-- Fixed a bug where shiny Pokémon would do their bounce animation before the shiny sprite was loaded
+- Fixed a bug where shiny Pokémon would do their bounce animation before the
+  shiny sprite was loaded
 
-- Added a subtle glow to Pokédex sprites, making dark Pokémon stand out better when using a dark theme
+- Added a subtle glow to Pokédex sprites, making dark Pokémon stand out better
+  when using a dark theme
 
 - Fixed Pokédex images to display at the correct size on desktop
 
@@ -54,11 +64,14 @@
 
   - Images should load as WebP 256x256 on non-retina displays
 
-  - WebP images are encoded using `sharp` with the default settings (80% quality lossy compression, with 100% quality alpha compression)
+  - WebP images are encoded using `sharp` with the default settings (80% quality
+    lossy compression, with 100% quality alpha compression)
 
-  - PNG files still exist and are automatically served to browser that don't support WebP
+  - PNG files still exist and are automatically served to browser that don't
+    support WebP
 
-  - If you want to download an image as PNG instead, just change the URL to end with `.png` instead of `.webp`
+  - If you want to download an image as PNG instead, just change the URL to end
+    with `.png` instead of `.webp`
 
 ## 2024-04-05
 
@@ -78,7 +91,8 @@
 
 - Fixed an issue where Pokédex images would load slower than they should
 
-- Fixed an issue where buttons and select inputs were shorter than they should be
+- Fixed an issue where buttons and select inputs were shorter than they should
+  be
 
 ## 2024-04-01
 
@@ -92,19 +106,25 @@
 
 - Fixed several French spelling and grammar mistakes
 
-- Fixed a bug where clicking "Defense" from a Pokémon in the Pokédex didn't reset abilities and tera types to none
+- Fixed a bug where clicking "Defense" from a Pokémon in the Pokédex didn't
+  reset abilities and tera types to none
 
 - The language selector is now clearly grouped and less visually confusing
 
-- Clearing the search field in the Pokédex screen no longer focuses the text field
+- Clearing the search field in the Pokédex screen no longer focuses the text
+  field
 
 - Cleaned up messy URLs & added session storage support
 
-  - You can copy a link to the current page if you want to share it with someone else
+  - You can copy a link to the current page if you want to share it with someone
+    else
 
-  - If you refresh the page or duplicate a tab, you'll notice that your current information is preserved (Pokédex search query, page number, offense types selected, defense types selected)
+  - If you refresh the page or duplicate a tab, you'll notice that your current
+    information is preserved (Pokédex search query, page number, offense types
+    selected, defense types selected)
 
-  - I also changed the defense team storage to be session based so you can look at different teams in different tabs
+  - I also changed the defense team storage to be session based so you can look
+    at different teams in different tabs
 
 ## 2024-03-30
 
@@ -140,11 +160,14 @@
 
 ## 2024-03-19
 
-- Updated the app icon for browser tabs and adding the app to your home screen, dock, or taskbar
+- Updated the app icon for browser tabs and adding the app to your home screen,
+  dock, or taskbar
 
 ## 2024-03-18
 
-- Fixed a matchup bug: Stellar type doesn't replace the Pokémon's defensive types, unlike all other Tera types. Instead it just adds a 2x weakness to Stellar.
+- Fixed a matchup bug: Stellar type doesn't replace the Pokémon's defensive
+  types, unlike all other Tera types. Instead it just adds a 2x weakness to
+  Stellar.
 
 - Fixed an issue where team type selection was visually broken
 
@@ -166,7 +189,8 @@
 
 - Fixed Linux font issue
 
-- Translates the "thanks" section into Spanish (zh-Hans, zh-Hant) and messages related to the tera types
+- Translates the "thanks" section into Spanish (zh-Hans, zh-Hant) and messages
+  related to the tera types
 
 ## 2024-03-16
 
@@ -174,11 +198,13 @@
 
 - Added support for selecting Tera types for Solo and Team Defense modes
 
-- Changed offense checkboxes and defense radio buttons to use dark mode when selected, so they're easier to see against the dark background
+- Changed offense checkboxes and defense radio buttons to use dark mode when
+  selected, so they're easier to see against the dark background
 
 - Removed focus styles when not using keyboard
 
-  - The website will look especially better on mobile now since there won't be as many distracting borders on buttons and links
+  - The website will look especially better on mobile now since there won't be
+    as many distracting borders on buttons and links
 
 - Changed some font size and padding values
 
@@ -293,7 +319,8 @@
 
 ## 2023-08-17
 
-- Fixed a slight color mismatch between the page header and the app theme in dark mode
+- Fixed a slight color mismatch between the page header and the app theme in
+  dark mode
 
 ## 2023-06-11
 
@@ -313,9 +340,11 @@
 
 - Fixed an issue where multipliers greater than 8 or below 1/8 wouldn't appear
 
-- Changed team offense matchups to round the multiplier to the nearest power of 2 rather than omitting it entirely from the table
+- Changed team offense matchups to round the multiplier to the nearest power of
+  2 rather than omitting it entirely from the table
 
-- Added Dry Skin's 1.25x weakness to Fire, which wasn't possible to represent before this update
+- Added Dry Skin's 1.25x weakness to Fire, which wasn't possible to represent
+  before this update
 
 ## 2023-05-15
 
@@ -323,11 +352,13 @@
 
 ## 2023-05-14
 
-- Fixed an issue where abilities were counted more than once for Pokémon with multiple types
+- Fixed an issue where abilities were counted more than once for Pokémon with
+  multiple types
 
 ## 2023-05-13
 
-- Added Pokémon abilities such as "Thick Fat" and "Volt Absorb" to the defense page for solo and team matchups
+- Added Pokémon abilities such as "Thick Fat" and "Volt Absorb" to the defense
+  page for solo and team matchups
 
 ## 2023-05-08
 
@@ -351,7 +382,8 @@
 
 - Shiny link is now a toggle button in the top right of each Pokédex entry
 
-- Hide shiny link for Scarlet/Violet Pokémon since we don't have shiny images for them
+- Hide shiny link for Scarlet/Violet Pokémon since we don't have shiny images
+  for them
 
 - Improve accessibility for Pokémon links so it's clearer
 
@@ -381,7 +413,8 @@
 
 - Fixed a layout bug for the type grid in matchups
 
-- Fixed wiki links for names with spaces ([@kittenchilly](https://github.com/kittenchilly))
+- Fixed wiki links for names with spaces
+  ([@kittenchilly](https://github.com/kittenchilly))
 
 - Better fill available space with grid layouts
 
@@ -404,7 +437,8 @@
 
 - Fixed layout issues for browser default font sizes greater than 16px
 
-- Improved pagination to show first and last Pokémon numbers in addition to page numbers
+- Improved pagination to show first and last Pokémon numbers in addition to page
+  numbers
 
 - Fixed Danish capitalization of "Flyvende"
 
@@ -414,7 +448,8 @@
 
 ## 2022-12-31
 
-- Fixed an issue where auto-detect language wasn't respected for Pokémon names (https://github.com/wavebeem/pkmn.help/issues/192)
+- Fixed an issue where auto-detect language wasn't respected for Pokémon names
+  (https://github.com/wavebeem/pkmn.help/issues/192)
 
 ## 2022-12-29
 
@@ -435,7 +470,8 @@
 
 ## 2022-12-03
 
-- Updated the logic for "normal" effectiveness coverage so that Pokémon aren't counted more than once across the three choices
+- Updated the logic for "normal" effectiveness coverage so that Pokémon aren't
+  counted more than once across the three choices
 
 ## 2022-12-02
 
@@ -495,4 +531,5 @@
 
 ## The distant past
 
-This is as far back as I bothered researching history. You can look at the git log if you want to know more detail about what else I've changed since 2013.
+This is as far back as I bothered researching history. You can look at the git
+log if you want to know more detail about what else I've changed since 2013.

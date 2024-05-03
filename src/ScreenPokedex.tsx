@@ -147,6 +147,7 @@ function Monster({ pokemon, setQuery }: MonsterProps) {
             }}
           >
             <source src={`/cry/${pokemon.id}.ogg`} type="audio/ogg" />
+            <source src={`/cry/${pokemon.id}.m4a`} type="audio/mp4" />
             <source src={`/cry/${pokemon.id}.aac`} type="audio/aac" />
           </audio>
           {pokemon.hasCry && (
