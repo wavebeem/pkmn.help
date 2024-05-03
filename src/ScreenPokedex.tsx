@@ -16,7 +16,7 @@ import { IconSparkles } from "./IconSparkles";
 import styles from "./ScreenPokedex.module.css";
 import Spinner from "./Spinner";
 import { Badge } from "./Badge";
-import { useSessionStorage, useDebounceValue } from "usehooks-ts";
+import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "./CopyButton";
 import { IconMusic } from "./IconMusic";
 
@@ -252,7 +252,6 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
   const { language } = i18n;
   const search = useSearch();
   const [query, setQuery] = useSessionStorage("pokedex.query", "");
-  const [debouncedQuery] = useDebounceValue(query, 250);
   const [page, setPage] = useSessionStorage<number>("pokedex.page", 0);
   const navigate = useNavigate();
 
@@ -277,7 +276,7 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
   }, [allPokemon, language]);
 
   const pkmn = React.useMemo(() => {
-    const s = debouncedQuery.trim().toLocaleLowerCase();
+    const s = query.trim().toLocaleLowerCase();
     if (/^[0-9]+$/.test(s)) {
       const number = Number(s);
       return searchablePkmn.filter((p) => p.number === number);
@@ -306,7 +305,7 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
     return matchSorter(searchablePkmn, s, {
       keys: ["speciesName", "formName", "number"],
     });
-  }, [debouncedQuery, searchablePkmn, language, t]);
+  }, [query, searchablePkmn, language, t]);
 
   const permalink = new URL(window.location.href);
   {
