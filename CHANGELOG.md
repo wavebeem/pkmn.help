@@ -5,6 +5,19 @@
 - Switched from AAC to M4A as a fallback for browsers that don't support Ogg
   files (only Safari, as far as I know...)
 
+- Removed delay when searching the Pokédex... please let me know if it seems
+  laggy to you
+
+  - I tested on my phone and my old (2015) MacBook Pro (13") and it seems fine
+    for speed
+
+  - If anything it feels faster since there's no delay in the search results
+
+  - I don't think the typing delay is noticeable except on the 2015 laptop, and
+    even then it's not enough to bother me
+
+  - Maybe I'll try to make it faster in the future?
+
 ## 2024-05-01
 
 - Shorten some Portuguese (Portugal) translations
