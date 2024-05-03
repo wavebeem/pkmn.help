@@ -252,7 +252,8 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
   const { language } = i18n;
   const search = useSearch();
   const [query, setQuery] = useSessionStorage("pokedex.query", "");
-  const [debouncedQuery] = useDebounceValue(query, 250);
+  const debouncedQuery = query;
+  // const [debouncedQuery] = useDebounceValue(query, 250);
   const [page, setPage] = useSessionStorage<number>("pokedex.page", 0);
   const navigate = useNavigate();
 
