@@ -2,11 +2,17 @@
   position: relative;
 }
 
-.wrapper > select {
+.wrapper select {
   -webkit-appearance: none;
   appearance: none;
   padding: 0.5rem 1rem;
   padding-right: 3rem;
+  background: var(--background-button-bg);
+  color: var(--color-fg1);
+}
+
+.wrapper select:hover {
+  background: var(--background-button-bg-hover);
 }
 
 .wrapper:after {
@@ -26,6 +32,15 @@
   box-sizing: border-box;
 }
 
-.wrapper > select > option {
+.wrapper optgroup {
+  background: var(--color-button1b);
+  color: var(--color-fg1);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.wrapper option {
+  background: var(--color-button1b);
+  color: var(--color-fg1);
   font-weight: initial;
 }

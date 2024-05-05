@@ -1,31 +1,20 @@
 import classNames from "classnames";
 import * as React from "react";
+import styles from "./Button.module.css";
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-export function Button({ className, disabled, ...props }: ButtonProps) {
+export function Button({ className, ...props }: ButtonProps) {
   return (
     <button
       {...props}
-      disabled={disabled}
       className={classNames(
         className,
+        styles.root,
         "active-darken",
-        "no-underline",
-        "ba br2",
-        "f5",
-        "focus-simple",
-        "pv2 ph3",
-        !disabled && baseClasses,
-        disabled && disabledClasses
+        "focus-simple"
       )}
     />
   );
 }
-
-const baseClasses = classNames(
-  "border1 button-shadow button-bg button-bg-hover color-inherit"
-);
-
-const disabledClasses = classNames("border3 fg4 bg-transparent no-pointer");

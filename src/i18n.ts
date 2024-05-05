@@ -16,6 +16,10 @@ export const i18n = i18next
       escapeValue: false,
     },
     backend: {
+      // We're only using one namespace per language since there's not that much
+      // text. Let's just ignore the namespace value so we can have shorter
+      // filenames...
+      //
       // loadPath: "/locales/{{lng}}-{{ns}}.json",
       loadPath: "/locales/{{lng}}.json",
     },

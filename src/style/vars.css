@@ -22,6 +22,33 @@
   --color-scroll-fg: hsl(0 0% 20%);
   --color-scroll-bg: hsl(0 0% 85%);
 
+  --background-button-bg: linear-gradient(
+      to bottom,
+      var(--color-button1) 20%,
+      var(--color-button1b)
+    )
+    var(--color-button1);
+  --background-button-bg-hover: linear-gradient(
+      to bottom,
+      var(--color-button-hover1) 20%,
+      var(--color-button-hover1b)
+    )
+    var(--color-button-hover1);
+
+  --padding0: 0;
+  --padding1: 0.25rem;
+  --padding2: 0.5rem;
+  --padding3: 1rem;
+  --padding4: 2rem;
+
+  --border-radius0: 0;
+  --border-radius1: 0.125rem;
+  --border-radius2: 0.25rem;
+  --border-radius-pill: 9999px;
+
+  --shadow-button: 0 2px 2px rgb(0 0 0 / 5%);
+  --shadow-inset: inset 0 2px 4px rgb(0 0 0 / 10%);
+
   --filter-darken: brightness(90%);
 
   --font-sans: "Roboto", system-ui, sans-serif;
