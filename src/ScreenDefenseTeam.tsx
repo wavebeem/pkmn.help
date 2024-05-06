@@ -195,7 +195,7 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
 
   return (
     <main className="ph3 pt0 pb4 content-wide center flex flex-column flex-row-l">
-      <div className="flex-auto w-50-l">
+      <div className="flex-auto w-40-l">
         <h2 className={classH2}>{t("defense.mode.heading")}</h2>
         <div className="flex flex-wrap gap2">
           <NavLink to="/defense/" className={getTabClass({ isActive: false })}>
@@ -386,7 +386,7 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
         </div>
       </div>
-      <div className="flex-auto w-50-l pl5-l">
+      <div className="flex-auto w-60-l pl5-l">
         <hr className="dn-l subtle-hr mv4" />
         <div className="pt0 pt4-l">
           <Select

@@ -46,7 +46,7 @@
   --border-radius2: 0.25rem;
   --border-radius-pill: 9999px;
 
-  --shadow-button: 0 2px 2px rgb(0 0 0 / 5%);
+  --shadow-button: 0 2px 4px rgb(0 0 0 / 10%);
   --shadow-inset: inset 0 2px 4px rgb(0 0 0 / 10%);
 
   --filter-darken: brightness(90%);

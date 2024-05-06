@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-05-05
+
+- Made the table easier to readon the Team Defense page
+
 ## 2024-05-03
 
 - Switched from AAC to M4A as a fallback for browsers that don't support Ogg

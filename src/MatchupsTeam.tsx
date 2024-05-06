@@ -211,17 +211,17 @@ export function MatchupsTeam({
             {rows.map(([type, ...counts]) => {
               return (
                 <tr key={type} className="tabular-nums">
-                  <th className="pv1">
+                  <th className="pv1 pr2">
                     <Badge type={type} />
                   </th>
                   {counts.map((count, i) => {
+                    // Render a dash for screen readers only
                     const display =
-                      count === 0 ? <span className="o-20"></span> : count;
+                      count === 0 ? <span className="o-0">-</span> : count;
                     const className = classNames(
                       styles.MatchupsTeam_td,
-                      "border2 pv2 ph3 bt",
-                      count > 0 && "bg2",
-                      i > 0 && "bl"
+                      "border2 pv2 ph3 bb f4 bl br",
+                      count > 0 && "bg2"
                     );
                     return (
                       <td key={i} className={className}>
