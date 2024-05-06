@@ -150,6 +150,8 @@ input {
 }
 
 .columns-type-selector {
+  display: grid;
+  gap: var(--padding2);
   grid-template-columns: repeat(
     auto-fill,
     minmax(calc(var(--type-min-width) + 2.5rem + 2px), 1fr)

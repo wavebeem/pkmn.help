@@ -21,7 +21,7 @@ export function MultiTypeSelector({
   const { t } = useTranslation();
   const types = typesForGeneration(generation);
   return (
-    <div className="grid gap2 columns-type-selector">
+    <div className="columns-type-selector">
       {types.map((type) => {
         const styleMap = {
           selected:
