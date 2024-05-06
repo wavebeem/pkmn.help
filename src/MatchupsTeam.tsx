@@ -8,7 +8,8 @@ import { Badge } from "./components/Badge";
 import { Generation } from "./data-generations";
 import { matchupFor } from "./data-matchups";
 import { AbilityName, Type, typesForGeneration } from "./data-types";
-import { useTypeCount } from "./useTypeCount";
+import { useTypeCount } from "./hooks/useTypeCount";
+import { EmptyState } from "./components/EmptyState";
 
 const matchupKeys = [
   "weak",
@@ -183,24 +184,23 @@ export function MatchupsTeam({
   }
 
   if (typesList.length === 0) {
-    return (
-      <p className="fg4 f4 b m0 ba tc ma0 ph2 pv4 border3 br2">
-        {t("defense.team.empty")}
-      </p>
-    );
+    return <EmptyState>{t("defense.team.empty")}</EmptyState>;
   }
 
   return (
-    <div className="br2 focus-simple ba bg1 button-shadow pa2 border2">
-      <div className="overflow-x-auto focus-none" tabIndex={0}>
-        <table className="collapse tc w-100">
+    <div className={classNames(styles.root, "focus-simple", "tabular-nums")}>
+      <div
+        className={classNames(styles.tableWrapper, "focus-none")}
+        tabIndex={0}
+      >
+        <table>
           <thead>
             <tr>
-              <th className="pa2 weight-medium w0">{t("defense.team.type")}</th>
+              <th className={styles.thCorner}>{t("defense.team.type")}</th>
               {matchers.map((m) => {
                 const name = m.getNameForLang(i18n.languages);
                 return (
-                  <th key={name} className="pa2 weight-medium bb border2 w3">
+                  <th key={name} className={styles.thTop}>
                     {name}
                   </th>
                 );
@@ -210,22 +210,14 @@ export function MatchupsTeam({
           <tbody>
             {rows.map(([type, ...counts]) => {
               return (
-                <tr key={type} className="tabular-nums">
-                  <th className="pv1 pr2">
+                <tr key={type}>
+                  <th className={styles.thLeft}>
                     <Badge type={type} />
                   </th>
                   {counts.map((count, i) => {
-                    // Render a dash for screen readers only
-                    const display =
-                      count === 0 ? <span className="o-0">-</span> : count;
-                    const className = classNames(
-                      styles.MatchupsTeam_td,
-                      "border2 pv2 ph3 bb f4 bl br",
-                      count > 0 && "bg2"
-                    );
                     return (
-                      <td key={i} className={className}>
-                        {display}
+                      <td key={i} className={styles.td} data-count={count}>
+                        {count === 0 ? "-" : count}
                       </td>
                     );
                   })}

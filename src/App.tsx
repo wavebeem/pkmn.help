@@ -22,11 +22,11 @@ import { formatPokemonName } from "./formatPokemonName";
 import { iterCycle, iterNext, iterStutter } from "./iter";
 import { randomItem } from "./random";
 import { publicPath } from "./settings";
-import { useFetchJSON } from "./useFetchJSON";
-import { useGeneration } from "./useGeneration";
-import { useLanguage } from "./useLanguage";
-import { useTheme } from "./useTheme";
-import { useUpdateSW } from "./useUpdateSW";
+import { useFetchJSON } from "./hooks/useFetchJSON";
+import { useGeneration } from "./hooks/useGeneration";
+import { useLanguage } from "./hooks/useLanguage";
+import { useTheme } from "./hooks/useTheme";
+import { useUpdateSW } from "./hooks/useUpdateSW";
 
 const tabClass = classNames([
   "active-darken",

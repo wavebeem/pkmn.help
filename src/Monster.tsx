@@ -12,7 +12,7 @@ import styles from "./ScreenPokedex.module.css";
 import { StatsTable } from "./StatsTable";
 import { Pokemon } from "./data-types";
 import { formatMonsterNumber } from "./formatMonsterNumber";
-import { useComputedLanguage } from "./useComputedLanguage";
+import { useComputedLanguage } from "./hooks/useComputedLanguage";
 
 export interface MonsterProps {
   pokemon: Pokemon;

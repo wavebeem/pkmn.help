@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useLocalStorage } from "usehooks-ts";
-import { Generation } from "./data-generations";
+import { Generation } from "../data-generations";
 
 export function useGeneration(): [
   Generation,

@@ -13,7 +13,7 @@ import {
 import { IconArrowLeft } from "./IconArrows";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
-import { useTypeCount } from "./useTypeCount";
+import { useTypeCount } from "./hooks/useTypeCount";
 import Spinner from "./components/Spinner";
 import styles from "./ScreenWeaknessCoverage.module.css";
 

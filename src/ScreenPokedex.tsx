@@ -7,7 +7,7 @@ import { formatMonsterNumber } from "./formatMonsterNumber";
 import { Paginator } from "./Paginator";
 import { pickTranslation } from "./pickTranslation";
 import { Search } from "./Search";
-import { useSearch } from "./useSearch";
+import { useSearch } from "./hooks/useSearch";
 import Spinner from "./components/Spinner";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "./components/CopyButton";

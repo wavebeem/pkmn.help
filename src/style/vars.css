@@ -22,6 +22,10 @@
   --color-scroll-fg: hsl(0 0% 20%);
   --color-scroll-bg: hsl(0 0% 85%);
 
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-bold: 600;
+
   --background-button-bg: linear-gradient(
       to bottom,
       var(--color-button1) 20%,
@@ -66,6 +70,16 @@
 :root[lang="pl"],
 :root[lang="ru"] {
   --type-min-width: 9rem;
+}
+
+:root[lang="ko"],
+:root[lang="ja"],
+:root[lang="zh-Hant"],
+:root[lang="zh-Hans"] {
+  --weight-normal: 400;
+  --weight-medium: 400;
+  /* ??? */
+  /* --weight-bold: 400; */
 }
 
 :root[data-theme="dark"] {

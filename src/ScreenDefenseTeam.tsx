@@ -21,9 +21,9 @@ import {
   typesWithoutNone,
 } from "./data-types";
 import { updateArrayAt } from "./updateArrayAt";
-import { useScrollToFragment } from "./useScrollToFragment";
-import { useSearch } from "./useSearch";
-import { useTypeCount } from "./useTypeCount";
+import { useScrollToFragment } from "./hooks/useScrollToFragment";
+import { useSearch } from "./hooks/useSearch";
+import { useTypeCount } from "./hooks/useTypeCount";
 
 const classH2 = "f4 weight-medium mb2 mt4";
 

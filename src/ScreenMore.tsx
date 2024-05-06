@@ -13,10 +13,10 @@ import {
   supportedLanguages,
 } from "./detectLanguage";
 import { resetApp } from "./resetApp";
-import { useGeneration } from "./useGeneration";
-import { useLanguage } from "./useLanguage";
-import { useTheme } from "./useTheme";
-import { useTypeCount } from "./useTypeCount";
+import { useGeneration } from "./hooks/useGeneration";
+import { useLanguage } from "./hooks/useLanguage";
+import { useTheme } from "./hooks/useTheme";
+import { useTypeCount } from "./hooks/useTypeCount";
 import {
   showLang,
   formatLanguageCompletion,

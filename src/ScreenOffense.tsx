@@ -12,7 +12,7 @@ import {
 import { DexCoverage } from "./DexCoverage";
 import { Matchups } from "./components/Matchups";
 import { MultiTypeSelector } from "./MultiTypeSelector";
-import { useSearch } from "./useSearch";
+import { useSearch } from "./hooks/useSearch";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "./components/CopyButton";
 

@@ -16,9 +16,9 @@ import {
   typesFromString,
 } from "./data-types";
 import { updateArrayAt } from "./updateArrayAt";
-import { useScrollToFragment } from "./useScrollToFragment";
-import { useSearch } from "./useSearch";
-import { useTypeCount } from "./useTypeCount";
+import { useScrollToFragment } from "./hooks/useScrollToFragment";
+import { useSearch } from "./hooks/useSearch";
+import { useTypeCount } from "./hooks/useTypeCount";
 import { CopyButton } from "./components/CopyButton";
 import { useSessionStorage } from "usehooks-ts";
 
