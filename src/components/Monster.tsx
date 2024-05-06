@@ -3,8 +3,8 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Badge } from "./Badge";
-import { IconMusic } from "../IconMusic";
-import { IconSparkles } from "../IconSparkles";
+import { IconMusic } from "./IconMusic";
+import { IconSparkles } from "./IconSparkles";
 import { MonsterImage } from "./MonsterImage";
 import { getWikiLink, getWikiName } from "../misc/wiki";
 import styles from "./Monster.module.css";
@@ -97,8 +97,8 @@ export function Monster({ pokemon, setQuery }: MonsterProps) {
               )}
               title={t("pokedex.cry.text")}
               aria-label={t("pokedex.cry.text")}
-              aria-pressed={isPlaying ? "true" : "false"}
-              aria-disabled={isPlaying ? "true" : "false"}
+              aria-pressed={isPlaying}
+              aria-disabled={isPlaying}
               onClick={() => {
                 const audio = audioRef.current;
                 if (!audio) {
@@ -114,14 +114,10 @@ export function Monster({ pokemon, setQuery }: MonsterProps) {
           )}
           {pokemon.hasShiny && (
             <button
-              className={classNames(
-                "br-pill ba pa2 flex select-none gap1 items-center fill-currentcolor",
-                styles.iconButton,
-                "button-shadow"
-              )}
+              className={classNames("select-none", styles.iconButton)}
               title={t("pokedex.shiny.text")}
               aria-label={t("pokedex.shiny.text")}
-              aria-pressed={shiny ? "true" : "false"}
+              aria-pressed={shiny}
               onClick={() => {
                 setShiny(!shiny);
               }}

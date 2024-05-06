@@ -15,6 +15,7 @@
   box-shadow: var(--shadow-button);
 }
 
+.Select select:focus,
 .Select select:hover {
   background: var(--background-button-bg-hover);
 }
@@ -47,4 +48,5 @@
   background: var(--color-button1b);
   color: var(--color-fg1);
   font-weight: initial;
+  border-radius: 0;
 }

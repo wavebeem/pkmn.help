@@ -9,10 +9,15 @@
 }
 
 .iconButton {
+  border-radius: var(--border-radius-pill);
+  padding: var(--padding2);
+  display: flex;
+  fill: currentColor;
+  box-shadow: var(--shadow-button);
   background: var(--color-button1)
     linear-gradient(to bottom, var(--color-button1) 20%, var(--color-button1b));
   color: var(--color-fg1);
-  border-color: var(--color-border1);
+  border: 1px solid var(--color-border1);
 }
 
 .iconButton:hover {

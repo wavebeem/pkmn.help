@@ -7,10 +7,13 @@ import {
   IconArrowLeftDouble,
   IconArrowRight,
   IconArrowRightDouble,
-} from "./IconArrows";
+} from "./components/IconArrows";
 import { Button } from "./components/Button";
+import styles from "./Paginator.module.css";
 
 interface PageSelectorProps<T> {
+  anchorElementRef: React.RefObject<HTMLDivElement>;
+  location: "top" | "bottom";
   numPages: number;
   pageItems: T[];
   currentPage: number;
@@ -21,6 +24,8 @@ interface PageSelectorProps<T> {
 }
 
 function PageSelector<T>({
+  anchorElementRef,
+  location,
   numPages,
   pageItems,
   currentPage,
@@ -44,6 +49,13 @@ function PageSelector<T>({
   const last = pageItems[pageItems.length - 1] || undefined;
 
   const iconClasses = "w1 h1 mv1";
+
+  function updatePage(page: number) {
+    if (location === "bottom" && anchorElementRef.current) {
+      anchorElementRef.current.scrollIntoView();
+    }
+    setPage(page);
+  }
 
   return (
     <>
@@ -72,7 +84,9 @@ function PageSelector<T>({
       >
         <Button
           disabled={!hasPrev}
-          onClick={() => setPage(0)}
+          onClick={() => {
+            updatePage(0);
+          }}
           title={t("pokedex.pagination.firstLong")}
           aria-label={t("pokedex.pagination.firstLong")}
           className="flex items-center"
@@ -81,7 +95,9 @@ function PageSelector<T>({
         </Button>
         <Button
           disabled={!hasPrev}
-          onClick={() => setPage(currentPage - 1)}
+          onClick={() => {
+            updatePage(currentPage - 1);
+          }}
           title={t("pokedex.pagination.previousLong")}
           aria-label={t("pokedex.pagination.previousLong")}
           className="flex items-center gap1"
@@ -93,7 +109,9 @@ function PageSelector<T>({
         <div aria-hidden="true" className="flex-auto" />
         <Button
           disabled={!hasNext}
-          onClick={() => setPage(currentPage + 1)}
+          onClick={() => {
+            updatePage(currentPage + 1);
+          }}
           title={t("pokedex.pagination.nextLong")}
           aria-label={t("pokedex.pagination.nextLong")}
           className="flex items-center gap1"
@@ -104,7 +122,9 @@ function PageSelector<T>({
         </Button>
         <Button
           disabled={!hasNext}
-          onClick={() => setPage(numPages - 1)}
+          onClick={() => {
+            updatePage(numPages - 1);
+          }}
           title={t("pokedex.pagination.lastLong")}
           aria-label={t("pokedex.pagination.lastLong")}
           className="flex items-center"
@@ -135,14 +155,17 @@ export function Paginator<T>({
   renderPage,
   renderID,
 }: PaginatorProps<T>) {
+  const rootRef = React.useRef<HTMLDivElement>(null);
   const numPages = Math.ceil(items.length / pageSize);
   const hasPrev = currentPage > 0;
   const hasNext = currentPage < numPages - 1;
   const i = pageSize * currentPage;
   const pageItems = items.slice(i, i + pageSize);
   return (
-    <div>
+    <div ref={rootRef} className={styles.root}>
       <PageSelector
+        anchorElementRef={rootRef}
+        location="top"
         numPages={numPages}
         pageItems={pageItems}
         hasPrev={hasPrev}
@@ -153,6 +176,8 @@ export function Paginator<T>({
       />
       {pageItems.length === 0 ? emptyState : renderPage(pageItems)}
       <PageSelector
+        anchorElementRef={rootRef}
+        location="bottom"
         numPages={numPages}
         pageItems={pageItems}
         hasPrev={hasPrev}

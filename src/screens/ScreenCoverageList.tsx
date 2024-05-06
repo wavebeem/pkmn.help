@@ -5,7 +5,7 @@ import { partitionMatchups } from "../misc/data-matchups";
 import { Generation } from "../misc/data-generations";
 import { CoverageType, typesFromString } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
-import { IconArrowLeft } from "../IconArrows";
+import { IconArrowLeft } from "../components/IconArrows";
 import { Paginator } from "../Paginator";
 import { useSearch } from "../hooks/useSearch";
 import { Badge } from "../components/Badge";

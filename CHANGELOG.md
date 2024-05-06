@@ -4,6 +4,11 @@
 
 - Made the table easier to readon the Team Defense page
 
+- Pokémon now uses four digit numbers in the Pokédex
+
+- The Pokédex once again scrolls to the top when clicking pagination buttons at
+  the bottom of the page
+
 ## 2024-05-03
 
 - Switched from AAC to M4A as a fallback for browsers that don't support Ogg

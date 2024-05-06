@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
-import { IconSearch } from "./IconSearch";
-import { IconClear } from "./IconClear";
+import { IconSearch } from "./components/IconSearch";
+import { IconClear } from "./components/IconClear";
 import { useTranslation } from "react-i18next";
 
 interface SearchProps {

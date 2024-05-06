@@ -10,7 +10,7 @@ import {
   Type,
   typesFromUserInput,
 } from "../misc/data-types";
-import { IconArrowLeft } from "../IconArrows";
+import { IconArrowLeft } from "../components/IconArrows";
 import { pickFile } from "../misc/pickFile";
 import { saveFile } from "../misc/saveFile";
 import { useTypeCount } from "../hooks/useTypeCount";
