@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Generation } from "./data-generations";
 import { partitionMatchups } from "./data-matchups";
 import { CoverageType, Type } from "./data-types";
-import { Meter } from "./Meter";
+import { Meter } from "./components/Meter";
 
 interface DexCoverageProps {
   generation: Generation;

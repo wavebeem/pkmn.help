@@ -1,12 +1,14 @@
+import classNames from "classnames";
 import * as React from "react";
-import { Badge } from "./Badge";
+import { useTranslation } from "react-i18next";
+import styles from "./MatchupsTeam.module.css";
+import { assertNever } from "./assertNever";
+import { compact } from "./compact";
+import { Badge } from "./components/Badge";
 import { Generation } from "./data-generations";
 import { matchupFor } from "./data-matchups";
 import { AbilityName, Type, typesForGeneration } from "./data-types";
-import { useTranslation } from "react-i18next";
-import { assertNever } from "./assertNever";
 import { useTypeCount } from "./useTypeCount";
-import { compact } from "./compact";
 
 const matchupKeys = [
   "weak",
@@ -24,26 +26,47 @@ const matchupKeys = [
 ] as const;
 type MatchupKey = typeof matchupKeys[number];
 
-const effectivenessDisplay = {
-  weak: "≥ 2",
-  resist: "≤ ½",
-  "16": "16",
-  "8": "8",
-  "4": "4",
-  "2": "2",
-  "1": "1",
-  "1/2": "½",
-  "1/4": "¼",
-  "1/8": "⅛",
-  "1/16": "1⁄16",
-  "0": "0",
-};
+function getEffectivenessDisplay(
+  langs: readonly string[],
+  key: MatchupKey
+): string {
+  function num(value: number): string {
+    return value.toLocaleString(langs);
+  }
+
+  switch (key) {
+    case "weak":
+      return "≥ " + num(2);
+    case "resist":
+      return "≤ " + num(1 / 2);
+    case "16":
+      return num(16);
+    case "8":
+      return num(8);
+    case "4":
+      return num(4);
+    case "2":
+      return num(2);
+    case "1":
+      return num(1);
+    case "1/2":
+      return num(1 / 2);
+    case "1/4":
+      return num(1 / 4);
+    case "1/8":
+      return num(1 / 8);
+    case "1/16":
+      return num(1 / 16);
+    case "0":
+      return "0";
+  }
+}
 
 class Matcher {
   constructor(readonly key: MatchupKey) {}
 
-  get name(): string {
-    return effectivenessDisplay[this.key];
+  getNameForLang(langs: readonly string[]): string {
+    return getEffectivenessDisplay(langs, this.key);
   }
 
   match(eff: number): boolean {
@@ -94,7 +117,7 @@ export function MatchupsTeam({
   format,
   abilityList,
 }: MatchupsTeamProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [typeCount] = useTypeCount();
   const generationTypes = typesForGeneration(generation);
 
@@ -172,12 +195,13 @@ export function MatchupsTeam({
       <div className="overflow-x-auto focus-none" tabIndex={0}>
         <table className="collapse tc w-100">
           <thead>
-            <tr className="bb border3">
-              <th className="pa2 w0 weight-medium">{t("defense.team.type")}</th>
+            <tr>
+              <th className="pa2 weight-medium w0">{t("defense.team.type")}</th>
               {matchers.map((m) => {
+                const name = m.getNameForLang(i18n.languages);
                 return (
-                  <th key={m.name} className="pa2 weight-medium">
-                    {m.name}
+                  <th key={name} className="pa2 weight-medium bb border2 w3">
+                    {name}
                   </th>
                 );
               })}
@@ -186,15 +210,21 @@ export function MatchupsTeam({
           <tbody>
             {rows.map(([type, ...counts]) => {
               return (
-                <tr key={type} className="bt border3 tabular-nums">
+                <tr key={type} className="tabular-nums">
                   <th className="pv1">
                     <Badge type={type} />
                   </th>
                   {counts.map((count, i) => {
                     const display =
-                      count === 0 ? <span className="o-10">-</span> : count;
+                      count === 0 ? <span className="o-20"></span> : count;
+                    const className = classNames(
+                      styles.MatchupsTeam_td,
+                      "border2 pv2 ph3 bt",
+                      count > 0 && "bg2",
+                      i > 0 && "bl"
+                    );
                     return (
-                      <td key={i} className="pv2 ph2">
+                      <td key={i} className={className}>
                         {display}
                       </td>
                     );

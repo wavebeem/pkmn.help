@@ -2,7 +2,7 @@ import Papa from "papaparse";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Button } from "./Button";
+import { Button } from "./components/Button";
 import {
   CoverageType,
   objectToCoverageType,
@@ -14,7 +14,7 @@ import { IconArrowLeft } from "./IconArrows";
 import { pickFile } from "./pickFile";
 import { saveFile } from "./saveFile";
 import { useTypeCount } from "./useTypeCount";
-import Spinner from "./Spinner";
+import Spinner from "./components/Spinner";
 import styles from "./ScreenWeaknessCoverage.module.css";
 
 interface WeaknessCoverageProps {

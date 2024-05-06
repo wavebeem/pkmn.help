@@ -2,7 +2,7 @@ import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { App } from "./App";
-import { ErrorBoundary } from "./ErrorBoundary";
+import { ErrorBoundary } from "./components/ErrorBoundary";
 import "./i18n";
 import { ScreenError } from "./ScreenError";
 

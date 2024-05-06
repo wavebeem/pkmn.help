@@ -1,9 +1,9 @@
 import classNames from "classnames";
 import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
-import { Button } from "./Button";
-import { CollapsibleSection } from "./CollapsibleSection";
-import { Select } from "./Select";
+import { Button } from "./components/Button";
+import { CollapsibleSection } from "./components/CollapsibleSection";
+import { Select } from "./components/Select";
 import { TranslationCard } from "./TranslationCard";
 import { compare } from "./compare";
 import { generations, isGeneration } from "./data-generations";

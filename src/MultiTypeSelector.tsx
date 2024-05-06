@@ -5,6 +5,7 @@ import { typeColor, typeColorBG } from "./colors";
 import { Generation } from "./data-generations";
 import { Type, typesForGeneration } from "./data-types";
 import styles from "./MultiTypeSelector.module.css";
+import { customProperties } from "./customProperties";
 
 type MultiTypeSelectorProps = {
   generation: Generation;
@@ -45,9 +46,9 @@ export function MultiTypeSelector({
               "select-none",
               "focus-simple"
             )}
-            style={{
-              ["--type-color" as any]: typeColorBG(type),
-            }}
+            style={customProperties({
+              "--type-color": typeColorBG(type),
+            })}
           >
             <span className="flex flex-row items-center justify-center">
               <input
@@ -65,9 +66,9 @@ export function MultiTypeSelector({
                   "ba br1",
                   "focus-none"
                 )}
-                style={{
-                  ["--type-color" as any]: typeColor(type),
-                }}
+                style={customProperties({
+                  "--type-color": typeColor(type),
+                })}
                 onChange={() => {
                   const types = new Set(value);
                   if (isChecked) {

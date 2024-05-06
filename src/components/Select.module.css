@@ -1,21 +1,25 @@
-.wrapper {
+.Select {
   position: relative;
 }
 
-.wrapper select {
+.Select select {
   -webkit-appearance: none;
   appearance: none;
   padding: 0.5rem 1rem;
   padding-right: 3rem;
+  border-radius: var(--border-radius2);
   background: var(--background-button-bg);
   color: var(--color-fg1);
+  width: 100%;
+  border: 1px solid var(--color-border1);
+  box-shadow: var(--shadow-button);
 }
 
-.wrapper select:hover {
+.Select select:hover {
   background: var(--background-button-bg-hover);
 }
 
-.wrapper:after {
+.Select:after {
   --_size: 0.5rem;
   --_border-size: 2px;
   content: "";
@@ -32,14 +36,14 @@
   box-sizing: border-box;
 }
 
-.wrapper optgroup {
+.Select optgroup {
   background: var(--color-button1b);
   color: var(--color-fg1);
   font-style: normal;
   font-weight: 500;
 }
 
-.wrapper option {
+.Select option {
   background: var(--color-button1b);
   color: var(--color-fg1);
   font-weight: initial;

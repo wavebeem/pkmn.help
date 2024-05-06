@@ -10,11 +10,11 @@ import {
   typesFromString,
 } from "./data-types";
 import { DexCoverage } from "./DexCoverage";
-import { Matchups } from "./Matchups";
+import { Matchups } from "./components/Matchups";
 import { MultiTypeSelector } from "./MultiTypeSelector";
 import { useSearch } from "./useSearch";
 import { useSessionStorage } from "usehooks-ts";
-import { CopyButton } from "./CopyButton";
+import { CopyButton } from "./components/CopyButton";
 
 interface OffenseProps {
   generation: Generation;

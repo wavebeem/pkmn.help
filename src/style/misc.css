@@ -90,10 +90,6 @@ input {
   display: grid;
 }
 
-.grid-span-all {
-  grid-column: 1 / -1;
-}
-
 .gap4 {
   gap: 2rem;
 }

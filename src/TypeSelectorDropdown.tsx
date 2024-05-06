@@ -1,6 +1,6 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { Select } from "./Select";
+import { Select } from "./components/Select";
 import { Type } from "./data-types";
 
 interface TypeSelectorDropdownProps {

@@ -2,8 +2,8 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate } from "react-router-dom";
-import { Matchups } from "./Matchups";
-import { Select } from "./Select";
+import { Matchups } from "./components/Matchups";
+import { Select } from "./components/Select";
 import { TypeSelector } from "./TypeSelector";
 import { Generation } from "./data-generations";
 import {
@@ -19,7 +19,7 @@ import { updateArrayAt } from "./updateArrayAt";
 import { useScrollToFragment } from "./useScrollToFragment";
 import { useSearch } from "./useSearch";
 import { useTypeCount } from "./useTypeCount";
-import { CopyButton } from "./CopyButton";
+import { CopyButton } from "./components/CopyButton";
 import { useSessionStorage } from "usehooks-ts";
 
 const classH2 = "f4 weight-medium mb2 mt4";

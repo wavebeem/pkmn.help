@@ -8,7 +8,7 @@ import { formatMonsterNumber } from "./formatMonsterNumber";
 import { IconArrowLeft } from "./IconArrows";
 import { Paginator } from "./Paginator";
 import { useSearch } from "./useSearch";
-import { Badge } from "./Badge";
+import { Badge } from "./components/Badge";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";

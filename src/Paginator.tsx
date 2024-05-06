@@ -8,7 +8,7 @@ import {
   IconArrowRight,
   IconArrowRightDouble,
 } from "./IconArrows";
-import { Button } from "./Button";
+import { Button } from "./components/Button";
 
 interface PageSelectorProps<T> {
   numPages: number;

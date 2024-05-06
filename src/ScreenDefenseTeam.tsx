@@ -3,11 +3,11 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
-import { Badge } from "./Badge";
-import { Button } from "./Button";
-import { CopyButton } from "./CopyButton";
+import { Badge } from "./components/Badge";
+import { Button } from "./components/Button";
+import { CopyButton } from "./components/CopyButton";
 import { MatchupsTeam, MatchupsTeamProps } from "./MatchupsTeam";
-import { Select } from "./Select";
+import { Select } from "./components/Select";
 import { TypeSelector } from "./TypeSelector";
 import { Generation } from "./data-generations";
 import {

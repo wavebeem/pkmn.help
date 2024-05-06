@@ -1,9 +1,10 @@
 import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { typeColor, typeColorBG, typeColorBorder } from "./colors";
-import { Type } from "./data-types";
+import { typeColor, typeColorBG, typeColorBorder } from "../colors";
+import { Type } from "../data-types";
 import styles from "./Badge.module.css";
+import { customProperties } from "../customProperties";
 
 interface BadgeProps {
   type: Type;
@@ -15,11 +16,11 @@ export function Badge({ type }: BadgeProps) {
     <div
       className={classNames("type-bg", "br2", "f5 tc", styles.badgeContainer)}
       data-type={type}
-      style={{
-        ["--type-color" as any]: typeColor(type),
-        ["--type-color-bg" as any]: typeColorBG(type),
-        ["--type-color-border" as any]: typeColorBorder(type),
-      }}
+      style={customProperties({
+        "--type-color": typeColor(type),
+        "--type-color-bg": typeColorBG(type),
+        "--type-color-border": typeColorBorder(type),
+      })}
     >
       <div
         className={classNames(

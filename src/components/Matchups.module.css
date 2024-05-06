@@ -1,4 +1,4 @@
-.matchups {
+.Matchups {
   grid-template-columns: repeat(
     auto-fill,
     minmax(calc(var(--type-min-width) + 16px), 1fr)

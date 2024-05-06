@@ -2,6 +2,7 @@ import classNames from "classnames";
 import * as React from "react";
 import { getPngSrc, getWebpSrcSet } from "./getImage";
 import styles from "./MonsterImage.module.css";
+import { customProperties } from "./customProperties";
 
 type State = "loaded" | "loading" | "errored";
 
@@ -30,7 +31,9 @@ export function MonsterImage({
   return (
     <div
       className={classNames(styles.container)}
-      style={{ ["--size-px" as any]: `${size}px` }}
+      style={customProperties({
+        "--size-px": `${size}px`,
+      })}
     >
       <div
         hidden={state !== "errored"}

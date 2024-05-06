@@ -5,6 +5,7 @@ import { typeColor, typeColorBG } from "./colors";
 import { Generation } from "./data-generations";
 import { Type, typesForGeneration } from "./data-types";
 import styles from "./TypeSelector.module.css";
+import { customProperties } from "./customProperties";
 
 interface TypeSelectorProps {
   generation: Generation;
@@ -56,9 +57,9 @@ export function TypeSelector({
               "select-none",
               "focus-simple"
             )}
-            style={{
-              ["--type-color" as any]: typeColorBG(type),
-            }}
+            style={customProperties({
+              "--type-color": typeColorBG(type),
+            })}
           >
             <span className="flex flex-row items-center justify-center">
               <input
@@ -77,9 +78,9 @@ export function TypeSelector({
                   "ba br1",
                   "focus-none"
                 )}
-                style={{
-                  ["--type-color" as any]: typeColor(type),
-                }}
+                style={customProperties({
+                  "--type-color": typeColor(type),
+                })}
                 onChange={() => {
                   onChange(type);
                 }}

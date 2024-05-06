@@ -2,7 +2,7 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
 import { Pokemon, Type } from "./data-types";
-import { Meter } from "./Meter";
+import { Meter } from "./components/Meter";
 import styles from "./StatsTable.module.css";
 import { typeColor } from "./colors";
 
