@@ -5,10 +5,11 @@ import { partitionMatchups } from "../misc/data-matchups";
 import { Generation } from "../misc/data-generations";
 import { CoverageType, typesFromString } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
-import { Paginator } from "../Paginator";
+import { Paginator } from "../components/Paginator";
 import { useSearch } from "../hooks/useSearch";
 import { Badge } from "../components/Badge";
 import { Icon } from "../components/Icon";
+import { EmptyState } from "../components/EmptyState";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";
@@ -52,14 +53,11 @@ export function ScreenCoverageList({
           </div>
         </>
       )}
-      <hr className="subtle-hr mt4" />
       <Paginator
         setPage={setPage}
         currentPage={page}
         pageSize={20}
-        emptyState={
-          <p className="fg4 f4 tc mv4">{t("offense.coverageList.empty")}</p>
-        }
+        emptyState={<EmptyState>{t("offense.coverageList.empty")}</EmptyState>}
         items={items}
         renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
         renderPage={(items) => {
@@ -96,7 +94,6 @@ export function ScreenCoverageList({
           );
         }}
       />
-      <hr className="subtle-hr mb4" />
       {items.length > 0 && (
         <p className="flex gap1 items-center">
           <Icon name="arrowLeft" />

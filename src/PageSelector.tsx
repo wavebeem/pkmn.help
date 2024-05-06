@@ -3,10 +3,12 @@ import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
 import { Button } from "./components/Button";
-import styles from "./Paginator.module.css";
 import { Icon } from "./components/Icon";
+import styles from "./PageSelector.module.css";
+import { Flex } from "./components/Flex";
+import { FancyText } from "./components/FancyText";
 
-interface PageSelectorProps<T> {
+export interface PageSelectorProps<T> {
   anchorElementRef: React.RefObject<HTMLDivElement>;
   location: "top" | "bottom";
   numPages: number;
@@ -18,7 +20,7 @@ interface PageSelectorProps<T> {
   renderID: (item: T) => any;
 }
 
-function PageSelector<T>({
+export function PageSelector<T>({
   anchorElementRef,
   location,
   numPages,
@@ -43,7 +45,7 @@ function PageSelector<T>({
   const first = pageItems[0] || undefined;
   const last = pageItems[pageItems.length - 1] || undefined;
 
-  const iconClasses = "w1 h1 mv1";
+  const iconClasses = "mv1";
 
   function updatePage(page: number) {
     if (location === "bottom" && anchorElementRef.current) {
@@ -52,28 +54,30 @@ function PageSelector<T>({
     setPage(page);
   }
 
-  return (
-    <>
-      {first && last && (
-        <div className="flex mt3 tabular-nums f4 weight-medium">
-          <div className="flex-auto">
-            {renderID(first)} &ndash; {renderID(last)}
-          </div>
+  const currentPageDisplay = String(currentPage + 1).padStart(
+    String(numPages).length,
+    "0"
+  );
 
-          <div>
-            (
-            {(currentPage + 1)
-              .toString()
-              .padStart(numPages.toString().length, "0")}
-            {" / "}
-            {numPages})
-          </div>
-        </div>
+  return (
+    <Flex gap="large" direction="column">
+      {first && last && (
+        <FancyText tag="div" tabularNums fontSize="large">
+          <Flex gap="large">
+            <Flex flex="auto">
+              {renderID(first)} &ndash; {renderID(last)}
+            </Flex>
+
+            <div>
+              ({currentPageDisplay} / {numPages})
+            </div>
+          </Flex>
+        </FancyText>
       )}
 
       <div
         className={classNames(
-          "items-stretch mv3 gap2",
+          "items-stretch gap2",
           pageItems.length === 0 ? "dn" : "flex"
         )}
       >
@@ -127,60 +131,6 @@ function PageSelector<T>({
           <Icon name="arrowRightDouble" className={iconClasses} />
         </Button>
       </div>
-    </>
-  );
-}
-
-interface PaginatorProps<T> {
-  setPage: (page: number) => void;
-  currentPage: number;
-  pageSize: number;
-  emptyState: any;
-  items: T[];
-  renderPage: (items: T[]) => any;
-  renderID: (item: T) => any;
-}
-
-export function Paginator<T>({
-  setPage,
-  currentPage,
-  pageSize,
-  emptyState,
-  items,
-  renderPage,
-  renderID,
-}: PaginatorProps<T>) {
-  const rootRef = React.useRef<HTMLDivElement>(null);
-  const numPages = Math.ceil(items.length / pageSize);
-  const hasPrev = currentPage > 0;
-  const hasNext = currentPage < numPages - 1;
-  const i = pageSize * currentPage;
-  const pageItems = items.slice(i, i + pageSize);
-  return (
-    <div ref={rootRef} className={styles.root}>
-      <PageSelector
-        anchorElementRef={rootRef}
-        location="top"
-        numPages={numPages}
-        pageItems={pageItems}
-        hasPrev={hasPrev}
-        hasNext={hasNext}
-        currentPage={currentPage}
-        setPage={setPage}
-        renderID={renderID}
-      />
-      {pageItems.length === 0 ? emptyState : renderPage(pageItems)}
-      <PageSelector
-        anchorElementRef={rootRef}
-        location="bottom"
-        numPages={numPages}
-        pageItems={pageItems}
-        hasPrev={hasPrev}
-        hasNext={hasNext}
-        currentPage={currentPage}
-        setPage={setPage}
-        renderID={renderID}
-      />
-    </div>
+    </Flex>
   );
 }

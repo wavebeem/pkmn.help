@@ -14,6 +14,26 @@
   font-size: 1.25rem;
 }
 
+.root[data-font-weight="inherit"] {
+  font-weight: inherit;
+}
+
+.root[data-font-weight="normal"] {
+  font-weight: var(--weight-normal);
+}
+
+.root[data-font-weight="medium"] {
+  font-weight: var(--weight-medium);
+}
+
+.root[data-font-weight="bold"] {
+  font-weight: var(--weight-bold);
+}
+
 .root[data-margin="none"] {
   margin: 0;
+}
+
+.root[data-tabular-nums="true"] {
+  font-variant-numeric: tabular-nums;
 }

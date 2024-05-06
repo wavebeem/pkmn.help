@@ -3,6 +3,7 @@ import * as React from "react";
 import styles from "./Flex.module.css";
 
 export interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
+  flex?: "auto";
   direction?: "row" | "column";
   wrap?: boolean;
   gap?: "none" | "small" | "medium" | "large";
@@ -12,6 +13,7 @@ export interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
 
 export function Flex({
   className,
+  flex,
   direction = "row",
   wrap = false,
   gap = "none",
@@ -27,6 +29,7 @@ export function Flex({
       data-gap={gap}
       data-justify={justify}
       data-align={align}
+      data-flex={flex}
       {...props}
     />
   );

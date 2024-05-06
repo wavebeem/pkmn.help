@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { Pokemon, Type, typesFromUserInput } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
-import { Paginator } from "../Paginator";
+import { Paginator } from "../components/Paginator";
 import { pickTranslation } from "../misc/pickTranslation";
 import { Search } from "../Search";
 import { useSearch } from "../hooks/useSearch";
@@ -12,6 +12,7 @@ import Spinner from "../components/Spinner";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "../components/CopyButton";
 import { Monster } from "../components/Monster";
+import { EmptyState } from "../components/EmptyState";
 
 interface ScreenPokedexProps {
   allPokemon: Pokemon[];
@@ -99,7 +100,7 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
           setPage(0);
         }}
       />
-      <div className="flex justify-between ph2 nt2 pb3 bb border3 f6">
+      <div className="flex justify-between ph2 nt2 pb3 bb mb3 border3 f6">
         <span className="fg3" aria-hidden="true">
           {t("pokedex.search.description")}
         </span>
@@ -118,9 +119,7 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
           currentPage={Number(page)}
           setPage={setPage}
           pageSize={20}
-          emptyState={
-            <p className="fg4 f4 tc m0">{t("pokedex.search.notFound")}</p>
-          }
+          emptyState={<EmptyState>{t("pokedex.search.notFound")}</EmptyState>}
           items={pkmn}
           renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
           renderPage={(page) =>
