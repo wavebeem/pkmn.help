@@ -4,14 +4,14 @@
   padding: var(--padding2) var(--padding3);
 }
 
-.root:not(:disabled) {
+.root:where(:not(:disabled)) {
   border-color: var(--color-border1);
   background: var(--background-button-bg);
   color: inherit;
   box-shadow: var(--shadow-button);
 }
 
-.root:not(:disabled):hover {
+.root:where(:not(:disabled)):hover {
   background: var(--background-button-bg-hover);
 }
 
