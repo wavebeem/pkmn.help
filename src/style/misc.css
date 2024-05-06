@@ -194,11 +194,6 @@ input {
   user-select: none;
 }
 
-.img-shadow {
-  filter: drop-shadow(0 0 1px hsl(0 0% 100% / 50%))
-    drop-shadow(4px 4px 16px hsl(0 0% 0% / 20%));
-}
-
 .button-selected {
   border-color: var(--color-fg1);
   background: var(--color-fg1);

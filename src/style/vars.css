@@ -54,6 +54,8 @@
   --shadow-inset: inset 0 2px 4px rgb(0 0 0 / 10%);
 
   --filter-darken: brightness(90%);
+  --filter-image: drop-shadow(0 0 1px hsl(0 0% 100% / 50%))
+    drop-shadow(4px 4px 16px hsl(0 0% 0% / 20%));
 
   --font-sans: "Roboto", system-ui, sans-serif;
 

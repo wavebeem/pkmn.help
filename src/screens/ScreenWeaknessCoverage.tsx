@@ -2,19 +2,19 @@ import Papa from "papaparse";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Button } from "./components/Button";
+import { Button } from "../components/Button";
 import {
   CoverageType,
   objectToCoverageType,
   reverseClosestLookup,
   Type,
   typesFromUserInput,
-} from "./data-types";
-import { IconArrowLeft } from "./IconArrows";
-import { pickFile } from "./pickFile";
-import { saveFile } from "./saveFile";
-import { useTypeCount } from "./hooks/useTypeCount";
-import Spinner from "./components/Spinner";
+} from "../data-types";
+import { IconArrowLeft } from "../IconArrows";
+import { pickFile } from "../pickFile";
+import { saveFile } from "../saveFile";
+import { useTypeCount } from "../hooks/useTypeCount";
+import Spinner from "../components/Spinner";
 import styles from "./ScreenWeaknessCoverage.module.css";
 
 interface WeaknessCoverageProps {

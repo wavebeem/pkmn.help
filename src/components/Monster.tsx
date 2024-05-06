@@ -2,17 +2,18 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Badge } from "./components/Badge";
-import { IconMusic } from "./IconMusic";
-import { IconSparkles } from "./IconSparkles";
+import { Badge } from "./Badge";
+import { IconMusic } from "../IconMusic";
+import { IconSparkles } from "../IconSparkles";
 import { MonsterImage } from "./MonsterImage";
-import { nbsp } from "./ScreenPokedex";
-import { getWikiLink, getWikiName } from "./wiki";
-import styles from "./ScreenPokedex.module.css";
-import { StatsTable } from "./StatsTable";
-import { Pokemon } from "./data-types";
-import { formatMonsterNumber } from "./formatMonsterNumber";
-import { useComputedLanguage } from "./hooks/useComputedLanguage";
+import { getWikiLink, getWikiName } from "../wiki";
+import styles from "./Monster.module.css";
+import { StatsTable } from "../StatsTable";
+import { Pokemon } from "../data-types";
+import { formatMonsterNumber } from "../formatMonsterNumber";
+import { useComputedLanguage } from "../hooks/useComputedLanguage";
+
+const nbsp = "\u00a0";
 
 export interface MonsterProps {
   pokemon: Pokemon;

@@ -2,19 +2,19 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
-import { Generation } from "./data-generations";
+import { Generation } from "../data-generations";
 import {
   CoverageType,
   removeInvalidOffenseTypesForGeneration,
   Type,
   typesFromString,
-} from "./data-types";
-import { DexCoverage } from "./DexCoverage";
-import { Matchups } from "./components/Matchups";
-import { MultiTypeSelector } from "./MultiTypeSelector";
-import { useSearch } from "./hooks/useSearch";
+} from "../data-types";
+import { DexCoverage } from "../DexCoverage";
+import { Matchups } from "../components/Matchups";
+import { MultiTypeSelector } from "../MultiTypeSelector";
+import { useSearch } from "../hooks/useSearch";
 import { useSessionStorage } from "usehooks-ts";
-import { CopyButton } from "./components/CopyButton";
+import { CopyButton } from "../components/CopyButton";
 
 interface OffenseProps {
   generation: Generation;

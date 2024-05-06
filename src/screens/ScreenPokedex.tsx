@@ -2,18 +2,16 @@ import { matchSorter } from "match-sorter";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
-import { Pokemon, Type, typesFromUserInput } from "./data-types";
-import { formatMonsterNumber } from "./formatMonsterNumber";
-import { Paginator } from "./Paginator";
-import { pickTranslation } from "./pickTranslation";
-import { Search } from "./Search";
-import { useSearch } from "./hooks/useSearch";
-import Spinner from "./components/Spinner";
+import { Pokemon, Type, typesFromUserInput } from "../data-types";
+import { formatMonsterNumber } from "../formatMonsterNumber";
+import { Paginator } from "../Paginator";
+import { pickTranslation } from "../pickTranslation";
+import { Search } from "../Search";
+import { useSearch } from "../hooks/useSearch";
+import Spinner from "../components/Spinner";
 import { useSessionStorage } from "usehooks-ts";
-import { CopyButton } from "./components/CopyButton";
-import { Monster } from "./Monster";
-
-export const nbsp = "\u00a0";
+import { CopyButton } from "../components/CopyButton";
+import { Monster } from "../components/Monster";
 
 interface ScreenPokedexProps {
   allPokemon: Pokemon[];

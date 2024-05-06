@@ -18,6 +18,13 @@
   background: var(--color-bg1);
   color: var(--color-fg3);
   font-size: 2rem;
+  border-radius: var(--border-radius-pill);
+}
+
+.image {
+  display: block;
+  height: auto;
+  filter: var(--filter-image);
 }
 
 @media (prefers-reduced-motion: no-preference) {

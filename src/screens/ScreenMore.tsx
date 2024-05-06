@@ -1,22 +1,22 @@
 import classNames from "classnames";
 import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
-import { Button } from "./components/Button";
-import { CollapsibleSection } from "./components/CollapsibleSection";
-import { Select } from "./components/Select";
-import { TranslationCard } from "./TranslationCard";
-import { compare } from "./compare";
-import { generations, isGeneration } from "./data-generations";
+import { Button } from "../components/Button";
+import { CollapsibleSection } from "../components/CollapsibleSection";
+import { Select } from "../components/Select";
+import { TranslationCard } from "../TranslationCard";
+import { compare } from "../compare";
+import { generations, isGeneration } from "../data-generations";
 import {
   getDesiredLanguage,
   isLang,
   supportedLanguages,
-} from "./detectLanguage";
-import { resetApp } from "./resetApp";
-import { useGeneration } from "./hooks/useGeneration";
-import { useLanguage } from "./hooks/useLanguage";
-import { useTheme } from "./hooks/useTheme";
-import { useTypeCount } from "./hooks/useTypeCount";
+} from "../detectLanguage";
+import { resetApp } from "../resetApp";
+import { useGeneration } from "../hooks/useGeneration";
+import { useLanguage } from "../hooks/useLanguage";
+import { useTheme } from "../hooks/useTheme";
+import { useTypeCount } from "../hooks/useTypeCount";
 import {
   showLang,
   formatLanguageCompletion,
@@ -24,7 +24,7 @@ import {
   unofficialLanguages,
   languageBounty,
   languageCompletions,
-} from "./lang";
+} from "../lang";
 
 interface ScreenMoreProps {
   needsAppUpdate: boolean;

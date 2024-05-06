@@ -1,14 +1,14 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { partitionMatchups } from "./data-matchups";
-import { Generation } from "./data-generations";
-import { CoverageType, typesFromString } from "./data-types";
-import { formatMonsterNumber } from "./formatMonsterNumber";
-import { IconArrowLeft } from "./IconArrows";
-import { Paginator } from "./Paginator";
-import { useSearch } from "./hooks/useSearch";
-import { Badge } from "./components/Badge";
+import { partitionMatchups } from "../data-matchups";
+import { Generation } from "../data-generations";
+import { CoverageType, typesFromString } from "../data-types";
+import { formatMonsterNumber } from "../formatMonsterNumber";
+import { IconArrowLeft } from "../IconArrows";
+import { Paginator } from "../Paginator";
+import { useSearch } from "../hooks/useSearch";
+import { Badge } from "../components/Badge";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";

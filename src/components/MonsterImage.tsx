@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import * as React from "react";
-import { getPngSrc, getWebpSrcSet } from "./getImage";
+import { getPngSrc, getWebpSrcSet } from "../getImage";
 import styles from "./MonsterImage.module.css";
-import { customProperties } from "./customProperties";
+import { customProperties } from "../customProperties";
 
 type State = "loaded" | "loading" | "errored";
 
@@ -35,10 +35,7 @@ export function MonsterImage({
         "--size-px": `${size}px`,
       })}
     >
-      <div
-        hidden={state !== "errored"}
-        className={classNames("br-pill", styles.placeholder)}
-      >
+      <div hidden={state !== "errored"} className={styles.placeholder}>
         ?
       </div>
       <picture>
@@ -53,7 +50,7 @@ export function MonsterImage({
           alt=""
           hidden={state === "errored"}
           data-shiny={shiny && state === "loaded"}
-          className={classNames("db img-shadow h-auto", styles.image)}
+          className={styles.image}
           width={size}
           height={size}
           onLoad={setLoaded}
