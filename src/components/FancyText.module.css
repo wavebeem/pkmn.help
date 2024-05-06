@@ -1,0 +1,19 @@
+.root[data-font-size="inherit"] {
+  font-size: inherit;
+}
+
+.root[data-font-size="small"] {
+  font-size: 0.875rem;
+}
+
+.root[data-font-size="medium"] {
+  font-size: 1rem;
+}
+
+.root[data-font-size="large"] {
+  font-size: 1.25rem;
+}
+
+.root[data-margin="none"] {
+  margin: 0;
+}

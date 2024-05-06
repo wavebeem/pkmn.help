@@ -15,15 +15,15 @@ export function Select({
 }: SelectProps) {
   return (
     <div>
-      {label && <div className="pb1">{label}</div>}
-      <div className={styles.Select}>
+      {label && <div className={styles.label}>{label}</div>}
+      <div className={styles.select}>
         <select
           aria-label={ariaLabel}
           className="active-darken focus-simple truncate"
           {...props}
         />
       </div>
-      {helpText && <p className="ma0 pt1 fg3 f6">{helpText}</p>}
+      {helpText && <p className={styles.help}>{helpText}</p>}
     </div>
   );
 }

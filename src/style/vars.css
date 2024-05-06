@@ -48,6 +48,7 @@
   --border-radius0: 0;
   --border-radius1: 0.125rem;
   --border-radius2: 0.25rem;
+  --border-radius3: 0.5rem;
   --border-radius-pill: 9999px;
 
   --shadow-button: 0 2px 4px rgb(0 0 0 / 10%);
@@ -56,6 +57,10 @@
   --filter-darken: brightness(90%);
   --filter-image: drop-shadow(0 0 1px hsl(0 0% 100% / 50%))
     drop-shadow(4px 4px 16px hsl(0 0% 0% / 20%));
+
+  --font-size0: 0.875rem;
+  --font-size1: 1rem;
+  --font-size2: 1.25rem;
 
   --font-sans: "Roboto", system-ui, sans-serif;
 

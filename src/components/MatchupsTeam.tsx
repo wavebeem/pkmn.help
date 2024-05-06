@@ -2,14 +2,14 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./MatchupsTeam.module.css";
-import { assertNever } from "./misc/assertNever";
-import { compact } from "./misc/compact";
-import { Badge } from "./components/Badge";
-import { Generation } from "./misc/data-generations";
-import { matchupFor } from "./misc/data-matchups";
-import { AbilityName, Type, typesForGeneration } from "./misc/data-types";
-import { useTypeCount } from "./hooks/useTypeCount";
-import { EmptyState } from "./components/EmptyState";
+import { assertNever } from "../misc/assertNever";
+import { compact } from "../misc/compact";
+import { Badge } from "./Badge";
+import { Generation } from "../misc/data-generations";
+import { matchupFor } from "../misc/data-matchups";
+import { AbilityName, Type, typesForGeneration } from "../misc/data-types";
+import { useTypeCount } from "../hooks/useTypeCount";
+import { EmptyState } from "./EmptyState";
 
 const matchupKeys = [
   "weak",

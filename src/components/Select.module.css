@@ -1,8 +1,8 @@
-.Select {
+.select {
   position: relative;
 }
 
-.Select select {
+.select select {
   -webkit-appearance: none;
   appearance: none;
   padding: 0.5rem 1rem;
@@ -15,12 +15,12 @@
   box-shadow: var(--shadow-button);
 }
 
-.Select select:focus,
-.Select select:hover {
+.select select:focus,
+.select select:hover {
   background: var(--background-button-bg-hover);
 }
 
-.Select:after {
+.select:after {
   --_size: 0.5rem;
   --_border-size: 2px;
   content: "";
@@ -37,16 +37,27 @@
   box-sizing: border-box;
 }
 
-.Select optgroup {
+.select optgroup {
   background: var(--color-button1b);
   color: var(--color-fg1);
   font-style: normal;
   font-weight: 500;
 }
 
-.Select option {
+.select option {
   background: var(--color-button1b);
   color: var(--color-fg1);
   font-weight: initial;
   border-radius: 0;
+}
+
+.label {
+  padding-bottom: var(--padding1);
+}
+
+.help {
+  margin: 0;
+  padding-top: var(--padding1);
+  color: var(--color-fg3);
+  font-size: var(--font-size0);
 }
