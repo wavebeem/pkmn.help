@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./Paginator.module.css";
-import { PageSelector } from "../PageSelector";
+import { PageSelector } from "./PageSelector";
 
 interface PaginatorProps<T> {
   setPage: (page: number) => void;

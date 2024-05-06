@@ -1,12 +1,10 @@
-import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
-import { Button } from "./components/Button";
-import { Icon } from "./components/Icon";
-import styles from "./PageSelector.module.css";
-import { Flex } from "./components/Flex";
-import { FancyText } from "./components/FancyText";
+import { Button } from "./Button";
+import { Icon } from "./Icon";
+import { Flex } from "./Flex";
+import { FancyText } from "./FancyText";
 
 export interface PageSelectorProps<T> {
   anchorElementRef: React.RefObject<HTMLDivElement>;
@@ -42,8 +40,12 @@ export function PageSelector<T>({
     ? "medium"
     : "small";
 
-  const first = pageItems[0] || undefined;
-  const last = pageItems[pageItems.length - 1] || undefined;
+  if (pageItems.length === 0) {
+    return undefined;
+  }
+
+  const first = pageItems[0];
+  const last = pageItems[pageItems.length - 1];
 
   const iconClasses = "mv1";
 
@@ -61,26 +63,19 @@ export function PageSelector<T>({
 
   return (
     <Flex gap="large" direction="column">
-      {first && last && (
-        <FancyText tag="div" tabularNums fontSize="large">
-          <Flex gap="large">
-            <Flex flex="auto">
-              {renderID(first)} &ndash; {renderID(last)}
-            </Flex>
-
-            <div>
-              ({currentPageDisplay} / {numPages})
-            </div>
+      <FancyText tag="div" tabularNums fontSize="large">
+        <Flex gap="large">
+          <Flex flex="auto">
+            {renderID(first)} &ndash; {renderID(last)}
           </Flex>
-        </FancyText>
-      )}
 
-      <div
-        className={classNames(
-          "items-stretch gap2",
-          pageItems.length === 0 ? "dn" : "flex"
-        )}
-      >
+          <div>
+            ({currentPageDisplay} / {numPages})
+          </div>
+        </Flex>
+      </FancyText>
+
+      <Flex align="stretch" gap="medium">
         <Button
           disabled={!hasPrev}
           onClick={() => {
@@ -88,7 +83,6 @@ export function PageSelector<T>({
           }}
           title={t("pokedex.pagination.firstLong")}
           aria-label={t("pokedex.pagination.firstLong")}
-          className="flex items-center"
         >
           <Icon name="arrowLeftDouble" className={iconClasses} />
         </Button>
@@ -99,7 +93,6 @@ export function PageSelector<T>({
           }}
           title={t("pokedex.pagination.previousLong")}
           aria-label={t("pokedex.pagination.previousLong")}
-          className="flex items-center gap1"
         >
           <Icon name="arrowLeft" className={iconClasses} />
           {buttonSize === "medium" && t("pokedex.pagination.previous")}
@@ -113,7 +106,6 @@ export function PageSelector<T>({
           }}
           title={t("pokedex.pagination.nextLong")}
           aria-label={t("pokedex.pagination.nextLong")}
-          className="flex items-center gap1"
         >
           {buttonSize === "medium" && t("pokedex.pagination.next")}
           {buttonSize === "large" && t("pokedex.pagination.nextLong")}
@@ -126,11 +118,10 @@ export function PageSelector<T>({
           }}
           title={t("pokedex.pagination.lastLong")}
           aria-label={t("pokedex.pagination.lastLong")}
-          className="flex items-center"
         >
           <Icon name="arrowRightDouble" className={iconClasses} />
         </Button>
-      </div>
+      </Flex>
     </Flex>
   );
 }

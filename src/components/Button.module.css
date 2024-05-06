@@ -2,6 +2,9 @@
   border: 1px solid;
   border-radius: var(--border-radius2);
   padding: var(--padding2) var(--padding3);
+  display: flex;
+  align-items: center;
+  gap: var(--padding1);
 }
 
 .root:where(:not(:disabled)) {
