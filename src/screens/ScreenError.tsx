@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
-import { resetApp } from "../resetApp";
-import { sleep } from "../sleep";
+import { resetApp } from "../misc/resetApp";
+import { sleep } from "../misc/sleep";
 
 interface ScreenErrorProps {
   error: Error;

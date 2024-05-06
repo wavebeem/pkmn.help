@@ -3,7 +3,7 @@ import * as ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { App } from "./App";
 import { ErrorBoundary } from "./components/ErrorBoundary";
-import "./i18n";
+import "./misc/i18n";
 import { ScreenError } from "./screens/ScreenError";
 
 const element = document.querySelector("#app");

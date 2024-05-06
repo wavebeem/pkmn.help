@@ -1,10 +1,10 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
-import { Pokemon, Type } from "./data-types";
+import { Pokemon, Type } from "./misc/data-types";
 import { Meter } from "./components/Meter";
 import styles from "./StatsTable.module.css";
-import { typeColor } from "./colors";
+import { typeColor } from "./misc/colors";
 
 const statMax = 255;
 

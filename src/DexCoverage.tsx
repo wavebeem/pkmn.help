@@ -1,9 +1,9 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { Generation } from "./data-generations";
-import { partitionMatchups } from "./data-matchups";
-import { CoverageType, Type } from "./data-types";
+import { Generation } from "./misc/data-generations";
+import { partitionMatchups } from "./misc/data-matchups";
+import { CoverageType, Type } from "./misc/data-types";
 import { Meter } from "./components/Meter";
 
 interface DexCoverageProps {

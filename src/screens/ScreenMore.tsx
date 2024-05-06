@@ -5,14 +5,14 @@ import { Button } from "../components/Button";
 import { CollapsibleSection } from "../components/CollapsibleSection";
 import { Select } from "../components/Select";
 import { TranslationCard } from "../TranslationCard";
-import { compare } from "../compare";
-import { generations, isGeneration } from "../data-generations";
+import { compare } from "../misc/compare";
+import { generations, isGeneration } from "../misc/data-generations";
 import {
   getDesiredLanguage,
   isLang,
   supportedLanguages,
-} from "../detectLanguage";
-import { resetApp } from "../resetApp";
+} from "../misc/detectLanguage";
+import { resetApp } from "../misc/resetApp";
 import { useGeneration } from "../hooks/useGeneration";
 import { useLanguage } from "../hooks/useLanguage";
 import { useTheme } from "../hooks/useTheme";
@@ -24,7 +24,7 @@ import {
   unofficialLanguages,
   languageBounty,
   languageCompletions,
-} from "../lang";
+} from "../misc/lang";
 
 interface ScreenMoreProps {
   needsAppUpdate: boolean;

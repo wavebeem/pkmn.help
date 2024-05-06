@@ -1,12 +1,12 @@
 import * as React from "react";
-import { Lang } from "./detectLanguage";
+import { Lang } from "./misc/detectLanguage";
 import {
   languageNamesEnglish,
   languageNamesNative,
   formatLanguageCompletion,
   languageBounty,
   officialLanguagesSet,
-} from "./lang";
+} from "./misc/lang";
 
 interface TranslationCardProps {
   lang: Lang;

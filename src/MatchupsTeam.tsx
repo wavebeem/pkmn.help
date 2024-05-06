@@ -2,12 +2,12 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./MatchupsTeam.module.css";
-import { assertNever } from "./assertNever";
-import { compact } from "./compact";
+import { assertNever } from "./misc/assertNever";
+import { compact } from "./misc/compact";
 import { Badge } from "./components/Badge";
-import { Generation } from "./data-generations";
-import { matchupFor } from "./data-matchups";
-import { AbilityName, Type, typesForGeneration } from "./data-types";
+import { Generation } from "./misc/data-generations";
+import { matchupFor } from "./misc/data-matchups";
+import { AbilityName, Type, typesForGeneration } from "./misc/data-types";
 import { useTypeCount } from "./hooks/useTypeCount";
 import { EmptyState } from "./components/EmptyState";
 

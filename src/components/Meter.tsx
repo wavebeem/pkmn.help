@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from "./Meter.module.css";
-import { customProperties } from "../customProperties";
+import { customProperties } from "../misc/customProperties";
 
 export interface MeterProps {
   value: number;

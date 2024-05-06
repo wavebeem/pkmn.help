@@ -1,10 +1,10 @@
 import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { typeColor, typeColorBG, typeColorBorder } from "../colors";
-import { Type } from "../data-types";
+import { typeColor, typeColorBG, typeColorBorder } from "../misc/colors";
+import { Type } from "../misc/data-types";
 import styles from "./Badge.module.css";
-import { customProperties } from "../customProperties";
+import { customProperties } from "../misc/customProperties";
 
 interface BadgeProps {
   type: Type;

@@ -9,7 +9,7 @@ import { CopyButton } from "../components/CopyButton";
 import { MatchupsTeam, MatchupsTeamProps } from "../MatchupsTeam";
 import { Select } from "../components/Select";
 import { TypeSelector } from "../TypeSelector";
-import { Generation } from "../data-generations";
+import { Generation } from "../misc/data-generations";
 import {
   AbilityName,
   Type,
@@ -19,8 +19,8 @@ import {
   removeNones,
   typesFromString,
   typesWithoutNone,
-} from "../data-types";
-import { updateArrayAt } from "../updateArrayAt";
+} from "../misc/data-types";
+import { updateArrayAt } from "../misc/updateArrayAt";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";

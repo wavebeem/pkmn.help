@@ -1,11 +1,11 @@
 import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { typeColor, typeColorBG } from "./colors";
-import { Generation } from "./data-generations";
-import { Type, typesForGeneration } from "./data-types";
+import { typeColor, typeColorBG } from "./misc/colors";
+import { Generation } from "./misc/data-generations";
+import { Type, typesForGeneration } from "./misc/data-types";
 import styles from "./TypeSelector.module.css";
-import { customProperties } from "./customProperties";
+import { customProperties } from "./misc/customProperties";
 
 interface TypeSelectorProps {
   generation: Generation;

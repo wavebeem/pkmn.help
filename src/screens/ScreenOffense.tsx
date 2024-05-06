@@ -2,13 +2,13 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
-import { Generation } from "../data-generations";
+import { Generation } from "../misc/data-generations";
 import {
   CoverageType,
   removeInvalidOffenseTypesForGeneration,
   Type,
   typesFromString,
-} from "../data-types";
+} from "../misc/data-types";
 import { DexCoverage } from "../DexCoverage";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../MultiTypeSelector";

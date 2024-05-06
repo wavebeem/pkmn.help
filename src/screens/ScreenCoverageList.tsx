@@ -1,10 +1,10 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { partitionMatchups } from "../data-matchups";
-import { Generation } from "../data-generations";
-import { CoverageType, typesFromString } from "../data-types";
-import { formatMonsterNumber } from "../formatMonsterNumber";
+import { partitionMatchups } from "../misc/data-matchups";
+import { Generation } from "../misc/data-generations";
+import { CoverageType, typesFromString } from "../misc/data-types";
+import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { IconArrowLeft } from "../IconArrows";
 import { Paginator } from "../Paginator";
 import { useSearch } from "../hooks/useSearch";

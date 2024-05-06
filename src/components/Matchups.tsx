@@ -1,8 +1,8 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { Generation } from "../data-generations";
-import { defensiveMatchups, offensiveMatchups } from "../data-matchups";
-import { AbilityName, Type } from "../data-types";
+import { Generation } from "../misc/data-generations";
+import { defensiveMatchups, offensiveMatchups } from "../misc/data-matchups";
+import { AbilityName, Type } from "../misc/data-types";
 import { Badge } from "./Badge";
 import styles from "./Matchups.module.css";
 import { PlainBadge } from "./PlainBadge";

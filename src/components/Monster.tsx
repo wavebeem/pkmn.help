@@ -6,11 +6,11 @@ import { Badge } from "./Badge";
 import { IconMusic } from "../IconMusic";
 import { IconSparkles } from "../IconSparkles";
 import { MonsterImage } from "./MonsterImage";
-import { getWikiLink, getWikiName } from "../wiki";
+import { getWikiLink, getWikiName } from "../misc/wiki";
 import styles from "./Monster.module.css";
 import { StatsTable } from "../StatsTable";
-import { Pokemon } from "../data-types";
-import { formatMonsterNumber } from "../formatMonsterNumber";
+import { Pokemon } from "../misc/data-types";
+import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { useComputedLanguage } from "../hooks/useComputedLanguage";
 
 const nbsp = "\u00a0";

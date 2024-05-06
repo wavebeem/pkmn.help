@@ -9,10 +9,10 @@ import {
   reverseClosestLookup,
   Type,
   typesFromUserInput,
-} from "../data-types";
+} from "../misc/data-types";
 import { IconArrowLeft } from "../IconArrows";
-import { pickFile } from "../pickFile";
-import { saveFile } from "../saveFile";
+import { pickFile } from "../misc/pickFile";
+import { saveFile } from "../misc/saveFile";
 import { useTypeCount } from "../hooks/useTypeCount";
 import Spinner from "../components/Spinner";
 import styles from "./ScreenWeaknessCoverage.module.css";

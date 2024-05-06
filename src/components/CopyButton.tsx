@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import * as React from "react";
 import styles from "./CopyButton.module.css";
-import { sleep } from "../sleep";
+import { sleep } from "../misc/sleep";
 
 export interface CopyButtonProps {
   text: string;

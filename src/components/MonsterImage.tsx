@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import * as React from "react";
-import { getPngSrc, getWebpSrcSet } from "../getImage";
+import { getPngSrc, getWebpSrcSet } from "../misc/getImage";
 import styles from "./MonsterImage.module.css";
-import { customProperties } from "../customProperties";
+import { customProperties } from "../misc/customProperties";
 
 type State = "loaded" | "loading" | "errored";
 
