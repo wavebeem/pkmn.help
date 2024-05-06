@@ -2,14 +2,9 @@ import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
-import {
-  IconArrowLeft,
-  IconArrowLeftDouble,
-  IconArrowRight,
-  IconArrowRightDouble,
-} from "./components/IconArrows";
 import { Button } from "./components/Button";
 import styles from "./Paginator.module.css";
+import { Icon } from "./components/Icon";
 
 interface PageSelectorProps<T> {
   anchorElementRef: React.RefObject<HTMLDivElement>;
@@ -91,7 +86,7 @@ function PageSelector<T>({
           aria-label={t("pokedex.pagination.firstLong")}
           className="flex items-center"
         >
-          <IconArrowLeftDouble className={iconClasses} aria-hidden="true" />
+          <Icon name="arrowLeftDouble" className={iconClasses} />
         </Button>
         <Button
           disabled={!hasPrev}
@@ -102,7 +97,7 @@ function PageSelector<T>({
           aria-label={t("pokedex.pagination.previousLong")}
           className="flex items-center gap1"
         >
-          <IconArrowLeft className={iconClasses} aria-hidden="true" />
+          <Icon name="arrowLeft" className={iconClasses} />
           {buttonSize === "medium" && t("pokedex.pagination.previous")}
           {buttonSize === "large" && t("pokedex.pagination.previousLong")}
         </Button>
@@ -118,7 +113,7 @@ function PageSelector<T>({
         >
           {buttonSize === "medium" && t("pokedex.pagination.next")}
           {buttonSize === "large" && t("pokedex.pagination.nextLong")}
-          <IconArrowRight className={iconClasses} aria-hidden="true" />
+          <Icon name="arrowRight" className={iconClasses} />
         </Button>
         <Button
           disabled={!hasNext}
@@ -129,7 +124,7 @@ function PageSelector<T>({
           aria-label={t("pokedex.pagination.lastLong")}
           className="flex items-center"
         >
-          <IconArrowRightDouble className={iconClasses} aria-hidden="true" />
+          <Icon name="arrowRightDouble" className={iconClasses} />
         </Button>
       </div>
     </>

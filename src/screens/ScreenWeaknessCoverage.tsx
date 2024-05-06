@@ -10,12 +10,12 @@ import {
   Type,
   typesFromUserInput,
 } from "../misc/data-types";
-import { IconArrowLeft } from "../components/IconArrows";
 import { pickFile } from "../misc/pickFile";
 import { saveFile } from "../misc/saveFile";
 import { useTypeCount } from "../hooks/useTypeCount";
 import Spinner from "../components/Spinner";
 import styles from "./ScreenWeaknessCoverage.module.css";
+import { Icon } from "../components/Icon";
 
 interface WeaknessCoverageProps {
   setCoverageTypes: (types: CoverageType[]) => void;
@@ -178,7 +178,7 @@ export function ScreenWeaknessCoverage({
         {statusText}
       </p>
       <p className="flex gap1 items-center">
-        <IconArrowLeft className="w1 h1" aria-hidden="true" />
+        <Icon name="arrowLeft" />
         <Link to="/offense/" className="underline fg-link br1 focus-outline">
           {t("coverage.back")}
         </Link>

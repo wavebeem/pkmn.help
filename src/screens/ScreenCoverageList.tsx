@@ -5,10 +5,10 @@ import { partitionMatchups } from "../misc/data-matchups";
 import { Generation } from "../misc/data-generations";
 import { CoverageType, typesFromString } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
-import { IconArrowLeft } from "../components/IconArrows";
 import { Paginator } from "../Paginator";
 import { useSearch } from "../hooks/useSearch";
 import { Badge } from "../components/Badge";
+import { Icon } from "../components/Icon";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";
@@ -37,7 +37,7 @@ export function ScreenCoverageList({
         {t(`offense.coverageList.${mode}.heading`)}
       </h2>
       <p className="flex gap1 items-center">
-        <IconArrowLeft className="w1 h1" aria-hidden="true" />
+        <Icon name="arrowLeft" />
         <Link to="/offense/" className="underline fg-link br1 focus-outline">
           {t("coverage.back")}
         </Link>
@@ -99,7 +99,7 @@ export function ScreenCoverageList({
       <hr className="subtle-hr mb4" />
       {items.length > 0 && (
         <p className="flex gap1 items-center">
-          <IconArrowLeft className="w1 h1" aria-hidden="true" />
+          <Icon name="arrowLeft" />
           <Link to="/offense/" className="underline fg-link br1 focus-outline">
             {t("coverage.back")}
           </Link>

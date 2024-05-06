@@ -12,15 +12,14 @@
 
 .focus-simple:focus-visible,
 .focus-simple:has(:focus-visible) {
-  outline: 2px solid transparent;
-  border-color: var(--color-fg1);
-  box-shadow: 0 0 0 2px var(--color-border1);
+  outline: 3px solid var(--color-fg1);
+  outline-offset: -1px;
 }
 
 .focus-selected:focus-visible,
 .focus-selected:has(:focus-visible) {
-  outline: 2px solid transparent;
-  box-shadow: 0 0 0 2px var(--color-bg1), 0 0 0 4px var(--color-fg1);
+  outline: 2px solid var(--color-fg1);
+  outline-offset: 2px;
 }
 
 .focus-none:focus {

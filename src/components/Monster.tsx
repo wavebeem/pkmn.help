@@ -1,8 +1,6 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Badge } from "./Badge";
-import { IconMusic } from "./IconMusic";
-import { IconSparkles } from "./IconSparkles";
 import { MonsterImage } from "./MonsterImage";
 import { getWikiLink, getWikiName } from "../misc/wiki";
 import styles from "./Monster.module.css";
@@ -16,6 +14,7 @@ import { FancyText } from "./FancyText";
 import { IconButton } from "./IconButton";
 import { Flex } from "./Flex";
 import { ExternalLink } from "./ExternalLink";
+import { Icon } from "./Icon";
 
 export interface MonsterProps {
   pokemon: Pokemon;
@@ -98,7 +97,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps) {
                 }
               }}
             >
-              <IconMusic />
+              <Icon name="music" />
             </IconButton>
           )}
           {pokemon.hasShiny && (
@@ -110,7 +109,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps) {
                 setShiny(!shiny);
               }}
             >
-              <IconSparkles />
+              <Icon name="sparkles" />
             </IconButton>
           )}
         </div>

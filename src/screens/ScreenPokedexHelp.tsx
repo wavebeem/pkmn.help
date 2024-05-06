@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { IconArrowLeft } from "../components/IconArrows";
+import { Icon } from "../components/Icon";
 
 interface ScreenPokedexHelpProps {}
 
@@ -41,7 +41,7 @@ export function ScreenPokedexHelp(_props: ScreenPokedexHelpProps) {
       </ul>
 
       <p className="flex gap1 items-center">
-        <IconArrowLeft className="w1 h1" aria-hidden="true" />
+        <Icon name="arrowLeft" />
         <Link to="/pokedex/" className="underline fg-link br1 focus-outline">
           {t("pokedexHelp.back")}
         </Link>

@@ -1,8 +1,8 @@
 import classNames from "classnames";
 import * as React from "react";
-import { IconSearch } from "./components/IconSearch";
-import { IconClear } from "./components/IconClear";
 import { useTranslation } from "react-i18next";
+import { Icon } from "./components/Icon";
+import styles from "./Search.module.css";
 
 interface SearchProps {
   updateSearch: (search: string) => void;
@@ -15,13 +15,7 @@ export function Search({ updateSearch, search }: SearchProps) {
   const inputHeight = 42;
   return (
     <div className="relative mv3">
-      <IconSearch
-        width={iconSize}
-        height={iconSize}
-        role="presentation"
-        className="absolute fg3 fill-currentcolor"
-        style={{ left: 10, top: 8 }}
-      />
+      <Icon name="search" size={iconSize} className={styles.iconSearch} />
       <input
         aria-label={t("pokedex.search.description")}
         type="text"
@@ -48,17 +42,13 @@ export function Search({ updateSearch, search }: SearchProps) {
           updateSearch(event.target.value);
         }}
       />
-      <IconClear
-        width={iconSize}
-        height={iconSize}
-        role="presentation"
+      <Icon
+        name="clear"
+        size={iconSize}
+        className={classNames(styles.iconClear, search === "" && styles.hidden)}
         onClick={() => {
           updateSearch("");
         }}
-        className={classNames("absolute fg1 fill-currentcolor", {
-          dn: search === "",
-        })}
-        style={{ right: 6, top: 6 }}
       />
     </div>
   );
