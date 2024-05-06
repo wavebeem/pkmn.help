@@ -12,8 +12,7 @@ import { StatsTable } from "../StatsTable";
 import { Pokemon } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { useComputedLanguage } from "../hooks/useComputedLanguage";
-
-const nbsp = "\u00a0";
+import { characters } from "../misc/characters";
 
 export interface MonsterProps {
   pokemon: Pokemon;
@@ -34,10 +33,9 @@ export function Monster({ pokemon, setQuery }: MonsterProps) {
   });
   const speciesName = pokemon.speciesNames[language] || pokemon.speciesNames.en;
   const formName = pokemon.formNames[language] || pokemon.formNames.en;
-  const formattedFormName = formName ? `(${formName})` : nbsp;
+  const formattedFormName = formName ? `(${formName})` : characters.nbsp;
   const idPrefix = `pokemon-${pokemon.id}`;
-  const monsterParams = new URLSearchParams();
-  monsterParams.set("q", String(pokemon.number));
+  const monsterParams = new URLSearchParams({ q: String(pokemon.number) });
   return (
     <div
       className={classNames(

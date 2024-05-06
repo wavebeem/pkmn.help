@@ -7,6 +7,7 @@ import { Badge } from "./Badge";
 import styles from "./Matchups.module.css";
 import { PlainBadge } from "./PlainBadge";
 import classNames from "classnames";
+import { characters } from "../misc/characters";
 
 interface MatchupsProps {
   kind: "offense" | "defense";
@@ -83,15 +84,13 @@ function formatEffectiveness(
   eff: number | undefined,
   locales: readonly string[]
 ): string {
-  const times = "\u{00d7}";
-  const ndash = "\u{2013}";
   if (eff == undefined) {
-    return ndash; // n-dash
+    return characters.ndash;
   }
   if (Number.isNaN(eff)) {
     return "???";
   }
   // Avoid showing too many decimal places
   const number = Number(eff.toFixed(3));
-  return number.toLocaleString(locales) + times;
+  return number.toLocaleString(locales) + characters.times;
 }
