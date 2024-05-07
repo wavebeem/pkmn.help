@@ -66,12 +66,14 @@ export function PageSelector<T>({
       <FancyText tag="div" tabularNums fontSize="large">
         <Flex gap="large">
           <Flex flex="auto">
-            {renderID(first)} &ndash; {renderID(last)}
+            <FancyText tag="span" fontWeight="medium">
+              {renderID(first)} &ndash; {renderID(last)}
+            </FancyText>
           </Flex>
 
-          <div>
+          <FancyText tag="span" fontWeight="medium">
             ({currentPageDisplay} / {numPages})
-          </div>
+          </FancyText>
         </Flex>
       </FancyText>
 

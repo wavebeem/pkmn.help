@@ -1,10 +1,11 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
-import { Pokemon, Type } from "./misc/data-types";
-import { Meter } from "./components/Meter";
+import { Pokemon, Type } from "../misc/data-types";
+import { Meter } from "./Meter";
 import styles from "./StatsTable.module.css";
-import { typeColor } from "./misc/colors";
+import { typeColor } from "../misc/colors";
+import { FancyText } from "./FancyText";
 
 const statMax = 255;
 
@@ -18,43 +19,53 @@ export function StatsTable({ pokemon }: StatsTableProps) {
   const { t } = useTranslation();
   const hasRoomForFullText = useMediaQuery("(min-width: 600px)");
   return (
-    <div className={`${styles.table} tabular-nums`}>
-      <div
-        className="weight-medium tl"
+    <div className={styles.root}>
+      <FancyText
+        tag="div"
+        fontWeight="medium"
         title={t("pokedex.stats.hpLong")}
         aria-label={t("pokedex.stats.hpLong")}
       >
         {t("pokedex.stats.hp")}
-      </div>
-      <div className="tr">{hp}</div>
+      </FancyText>
+      <FancyText tag="div" textAlign="right">
+        {hp}
+      </FancyText>
       <Meter max={statMax} value={hp} color={typeColor(Type.fire)} />
 
-      <div
-        className="weight-medium tl"
+      <FancyText
+        tag="div"
+        fontWeight="medium"
         title={hasRoomForFullText ? "" : t("pokedex.stats.attackLong")}
         aria-label={hasRoomForFullText ? "" : t("pokedex.stats.attackLong")}
       >
         {hasRoomForFullText
           ? t("pokedex.stats.attackLong")
           : t("pokedex.stats.attack")}
-      </div>
-      <div className="tr">{attack}</div>
+      </FancyText>
+      <FancyText tag="div" textAlign="right">
+        {attack}
+      </FancyText>
       <Meter max={statMax} value={attack} color={typeColor(Type.fighting)} />
 
-      <div
-        className="weight-medium tl"
+      <FancyText
+        tag="div"
+        fontWeight="medium"
         title={hasRoomForFullText ? "" : t("pokedex.stats.defenseLong")}
         aria-label={hasRoomForFullText ? "" : t("pokedex.stats.defenseLong")}
       >
         {hasRoomForFullText
           ? t("pokedex.stats.defenseLong")
           : t("pokedex.stats.defense")}
-      </div>
-      <div className="tr">{defense}</div>
+      </FancyText>
+      <FancyText tag="div" textAlign="right">
+        {defense}
+      </FancyText>
       <Meter max={statMax} value={defense} color={typeColor(Type.electric)} />
 
-      <div
-        className="weight-medium tl"
+      <FancyText
+        tag="div"
+        fontWeight="medium"
         title={hasRoomForFullText ? "" : t("pokedex.stats.specialAttackLong")}
         aria-label={
           hasRoomForFullText ? "" : t("pokedex.stats.specialAttackLong")
@@ -63,12 +74,15 @@ export function StatsTable({ pokemon }: StatsTableProps) {
         {hasRoomForFullText
           ? t("pokedex.stats.specialAttackLong")
           : t("pokedex.stats.specialAttack")}
-      </div>
-      <div className="tr">{spAttack}</div>
+      </FancyText>
+      <FancyText tag="div" textAlign="right">
+        {spAttack}
+      </FancyText>
       <Meter max={statMax} value={spAttack} color={typeColor(Type.grass)} />
 
-      <div
-        className="weight-medium tl"
+      <FancyText
+        tag="div"
+        fontWeight="medium"
         title={hasRoomForFullText ? "" : t("pokedex.stats.specialDefenseLong")}
         aria-label={
           hasRoomForFullText ? "" : t("pokedex.stats.specialDefenseLong")
@@ -77,32 +91,38 @@ export function StatsTable({ pokemon }: StatsTableProps) {
         {hasRoomForFullText
           ? t("pokedex.stats.specialDefenseLong")
           : t("pokedex.stats.specialDefense")}
-      </div>
-      <div className="tr">{spDefense}</div>
+      </FancyText>
+      <FancyText tag="div" textAlign="right">
+        {spDefense}
+      </FancyText>
       <Meter max={statMax} value={spDefense} color={typeColor(Type.water)} />
 
-      <div
-        className="weight-medium tl"
+      <FancyText
+        tag="div"
         title={hasRoomForFullText ? "" : t("pokedex.stats.speedLong")}
         aria-label={hasRoomForFullText ? "" : t("pokedex.stats.speedLong")}
       >
         {hasRoomForFullText
           ? t("pokedex.stats.speedLong")
           : t("pokedex.stats.speed")}
-      </div>
-      <div className="tr">{speed}</div>
+      </FancyText>
+      <FancyText tag="div" textAlign="right">
+        {speed}
+      </FancyText>
       <Meter max={statMax} value={speed} color={typeColor(Type.fairy)} />
 
-      <div
-        className="weight-medium tl"
+      <FancyText
+        tag="div"
         title={hasRoomForFullText ? "" : t("pokedex.stats.totalLong")}
         aria-label={hasRoomForFullText ? "" : t("pokedex.stats.totalLong")}
       >
         {hasRoomForFullText
           ? t("pokedex.stats.totalLong")
           : t("pokedex.stats.total")}
-      </div>
-      <div className="tr">{total}</div>
+      </FancyText>
+      <FancyText tag="div" textAlign="right">
+        {total}
+      </FancyText>
       <div />
     </div>
   );

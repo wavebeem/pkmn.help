@@ -4,26 +4,27 @@ import styles from "./FancyText.module.css";
 
 export interface FancyTextProps extends React.HTMLAttributes<HTMLSpanElement> {
   tag: "span" | "div" | "h1" | "h2" | "h3";
-  fontWeight?: "inherit" | "normal" | "medium" | "bold";
-  fontSize?: "inherit" | "small" | "medium" | "large";
-  margin?: "none";
+  textAlign?: "left" | "center" | "right";
+  fontWeight?: "normal" | "medium" | "bold";
+  fontSize?: "small" | "medium" | "large";
   tabularNums?: boolean;
 }
 
 export function FancyText({
   tag: Tag,
   className,
-  fontWeight = "inherit",
-  tabularNums = false,
-  fontSize = "inherit",
-  margin = "none",
+  textAlign,
+  fontWeight,
+  fontSize,
+  tabularNums,
   ...props
 }: FancyTextProps): React.ReactNode {
   return (
     <Tag
-      className={classNames(styles.root, className)}
+      className={classNames(styles.FancyText, className)}
+      data-text-align={textAlign}
       data-font-size={fontSize}
-      data-margin={margin}
+      data-font-weight={fontWeight}
       data-tabular-nums={tabularNums}
       {...props}
     />

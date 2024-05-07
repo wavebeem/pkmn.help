@@ -23,7 +23,7 @@ export function Flex({
 }: FlexProps) {
   return (
     <div
-      className={classNames(className, styles.root)}
+      className={classNames(className, styles.Flex)}
       data-direction={direction}
       data-wrap={wrap}
       data-gap={gap}

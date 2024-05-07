@@ -4,7 +4,7 @@ import { Badge } from "./Badge";
 import { MonsterImage } from "./MonsterImage";
 import { getWikiLink, getWikiName } from "../misc/wiki";
 import styles from "./Monster.module.css";
-import { StatsTable } from "../StatsTable";
+import { StatsTable } from "./StatsTable";
 import { Pokemon } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { useComputedLanguage } from "../hooks/useComputedLanguage";
