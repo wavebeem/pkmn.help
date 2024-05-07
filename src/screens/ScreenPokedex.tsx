@@ -6,7 +6,7 @@ import { Pokemon, Type, typesFromUserInput } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { Paginator } from "../components/Paginator";
 import { pickTranslation } from "../misc/pickTranslation";
-import { Search } from "../Search";
+import { Search } from "../components/Search";
 import { useSearch } from "../hooks/useSearch";
 import Spinner from "../components/Spinner";
 import { useSessionStorage } from "usehooks-ts";

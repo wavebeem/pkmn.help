@@ -1,8 +1,9 @@
 import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { Icon } from "./components/Icon";
+import { Icon } from "./Icon";
 import styles from "./Search.module.css";
+import { customProperties } from "../misc/customProperties";
 
 interface SearchProps {
   updateSearch: (search: string) => void;
@@ -12,7 +13,6 @@ interface SearchProps {
 export function Search({ updateSearch, search }: SearchProps) {
   const { t } = useTranslation();
   const iconSize = 30;
-  const inputHeight = 42;
   return (
     <div className="relative mv3">
       <Icon name="search" size={iconSize} className={styles.iconSearch} />
@@ -23,20 +23,10 @@ export function Search({ updateSearch, search }: SearchProps) {
         autoCorrect="off"
         inputMode="search"
         autoCapitalize="none"
-        className={classNames(
-          "f5 w-100 border-box",
-          "focus-simple",
-          "inset-shadow",
-          "br-pill ba",
-          "bg1",
-          "fg1",
-          "border1"
-        )}
-        style={{
-          paddingLeft: `calc(1px * ${iconSize} + 1rem)`,
-          paddingRight: `calc(1px * ${iconSize} + 1rem)`,
-          height: inputHeight,
-        }}
+        className={classNames(styles.search, "focus-simple")}
+        style={customProperties({
+          "--icon-size": `${iconSize}px`,
+        })}
         value={search}
         onChange={(event) => {
           updateSearch(event.target.value);
