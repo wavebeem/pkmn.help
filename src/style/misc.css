@@ -166,8 +166,8 @@ input {
   background: var(--background-button-bg-hover);
   background: linear-gradient(
     to bottom,
-    var(--color-button1) 20%,
-    var(--color-button1b)
+    var(--color-button-hover1) 20%,
+    var(--color-button-hover1b)
   );
 }
 

@@ -23,11 +23,6 @@ export function MultiTypeSelector({
   return (
     <div className="columns-type-selector">
       {types.map((type) => {
-        const styleMap = {
-          selected:
-            "no-box-shadow button-shadow focus-selected border-vibrant2",
-          normal: "border1 bg1 fg1 button-bg button-shadow focus-simple",
-        };
         const isChecked = value.includes(type);
         const styleKey = isChecked ? "selected" : "normal";
         return (
@@ -36,7 +31,10 @@ export function MultiTypeSelector({
             data-type={type}
             data-checked={isChecked}
             className={classNames(
-              styleMap[styleKey],
+              isChecked &&
+                "no-box-shadow button-shadow focus-selected border-vibrant2",
+              !isChecked &&
+                "border1 bg1 fg1 button-bg button-shadow focus-simple",
               styles.label,
               "db",
               "ba br1",
@@ -59,10 +57,8 @@ export function MultiTypeSelector({
                 className={classNames(
                   "db",
                   styles.checkbox,
-                  {
-                    selected: "b--black type-bg",
-                    normal: "border-vibrant type-bg",
-                  }[styleKey],
+                  isChecked && "b--black type-bg",
+                  !isChecked && "border-vibrant type-bg",
                   "ba br1",
                   "focus-none"
                 )}
@@ -76,8 +72,9 @@ export function MultiTypeSelector({
                   } else {
                     types.add(type);
                   }
-                  // Should we sort based on the type order on the page rather than
-                  // alphabetical? I'll just stick with alphabetical for now.
+                  // Should we sort based on the type order on the page rather
+                  // than alphabetical? I'll just stick with alphabetical for
+                  // now.
                   onChange([...types].sort());
                 }}
               />
