@@ -15,7 +15,7 @@ import { ScreenOffense } from "./screens/ScreenOffense";
 import { ScreenPokedex } from "./screens/ScreenPokedex";
 import { ScreenPokedexHelp } from "./screens/ScreenPokedexHelp";
 import { ScreenWeaknessCoverage } from "./screens/ScreenWeaknessCoverage";
-import Spinner from "./components/Spinner";
+import { Spinner } from "./components/Spinner";
 import { CoverageType, Pokemon } from "./misc/data-types";
 import { detectLanguage } from "./misc/detectLanguage";
 import { formatPokemonName } from "./misc/formatPokemonName";

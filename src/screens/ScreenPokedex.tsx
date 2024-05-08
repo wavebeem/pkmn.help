@@ -8,7 +8,7 @@ import { Paginator } from "../components/Paginator";
 import { pickTranslation } from "../misc/pickTranslation";
 import { Search } from "../components/Search";
 import { useSearch } from "../hooks/useSearch";
-import Spinner from "../components/Spinner";
+import { Spinner } from "../components/Spinner";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "../components/CopyButton";
 import { Monster } from "../components/Monster";
