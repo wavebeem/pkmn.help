@@ -1,14 +1,35 @@
+.label {
+  padding: var(--padding2) var(--padding3);
+  display: block;
+  border: 1px solid;
+  border-radius: var(--border-radius1);
+  text-transform: capitalize;
+}
+
 .label:has(.checkbox:active) {
   filter: var(--filter-darken);
 }
 
-.label[data-checked="true"] {
-  background: var(--type-color);
+.label:has(.checkbox:checked) {
+  box-shadow: var(--shadow-button);
+  border-color: var(--color-vibrant-border1);
+  background: var(--type-color-bg);
   color: white;
   text-shadow: var(--type-text-shadow);
 }
 
-.label[data-type="stellar"][data-checked="true"] {
+.label:not(:has(.checkbox:checked)) {
+  border-color: var(--color-border1);
+  background: var(--background-button-bg);
+  color: var(--color-fg1);
+  box-shadow: var(--shadow-button);
+}
+
+.label:not(:has(.checkbox:checked)):hover {
+  background: var(--background-button-bg-hover);
+}
+
+.label[data-type="stellar"]:has(.checkbox:checked) {
   background: var(--stellar-background-dark);
 }
 
@@ -17,17 +38,20 @@
   --checkbox-border: inset 0 0 0 1px var(--checkbox-color-border);
   -webkit-appearance: none;
   appearance: none;
+  display: block;
   box-sizing: border-box;
   width: 1rem;
   height: 1rem;
   flex: none;
   border: 0;
   background: var(--type-color);
+  color: white;
+  text-shadow: var(--type-text-shadow);
   box-shadow: var(--checkbox-border);
   border-radius: 0.125rem;
 }
 
-.checkbox[data-type="stellar"] {
+:where(.label[data-type="stellar"]) .checkbox {
   background: var(--stellar-background-conic);
 }
 

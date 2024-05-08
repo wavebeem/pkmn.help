@@ -1,11 +1,12 @@
 import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
-import { typeColor, typeColorBG } from "./misc/colors";
-import { Generation } from "./misc/data-generations";
-import { Type, typesForGeneration } from "./misc/data-types";
+import { typeColor, typeColorBG } from "../misc/colors";
+import { Generation } from "../misc/data-generations";
+import { Type, typesForGeneration } from "../misc/data-types";
 import styles from "./MultiTypeSelector.module.css";
-import { customProperties } from "./misc/customProperties";
+import { customProperties } from "../misc/customProperties";
+import { Flex } from "./Flex";
 
 type MultiTypeSelectorProps = {
   generation: Generation;
@@ -24,47 +25,27 @@ export function MultiTypeSelector({
     <div className="columns-type-selector">
       {types.map((type) => {
         const isChecked = value.includes(type);
-        const styleKey = isChecked ? "selected" : "normal";
         return (
           <label
             key={type}
             data-type={type}
-            data-checked={isChecked}
             className={classNames(
-              isChecked &&
-                "no-box-shadow button-shadow focus-selected border-vibrant2",
-              !isChecked &&
-                "border1 bg1 fg1 button-bg button-shadow focus-simple",
               styles.label,
-              "db",
-              "ba br1",
-              "pv2 ph3",
-              "f5",
-              "ttc",
               "select-none",
-              "focus-simple"
+              isChecked && "focus-selected",
+              !isChecked && "focus-simple"
             )}
             style={customProperties({
-              "--type-color": typeColorBG(type),
+              "--type-color-bg": typeColorBG(type),
+              "--type-color": typeColor(type),
             })}
           >
-            <span className="flex flex-row items-center justify-center">
+            <Flex tag="span" gap="medium" justify="flex-start" align="center">
               <input
                 name={type}
                 type="checkbox"
                 checked={isChecked}
-                data-type={type}
-                className={classNames(
-                  "db",
-                  styles.checkbox,
-                  isChecked && "b--black type-bg",
-                  !isChecked && "border-vibrant type-bg",
-                  "ba br1",
-                  "focus-none"
-                )}
-                style={customProperties({
-                  "--type-color": typeColor(type),
-                })}
+                className={classNames(styles.checkbox, "focus-none")}
                 onChange={() => {
                   const types = new Set(value);
                   if (isChecked) {
@@ -78,10 +59,8 @@ export function MultiTypeSelector({
                   onChange([...types].sort());
                 }}
               />
-              <span className="tl pl2 pr1 flex-auto truncate">
-                {t(`types.${type}`)}
-              </span>
-            </span>
+              {t(`types.${type}`)}
+            </Flex>
           </label>
         );
       })}

@@ -218,11 +218,6 @@ input {
   max-width: fit-content;
 }
 
-.no-box-shadow,
-.no-box-shadow:focus {
-  box-shadow: none;
-}
-
 .type-bg {
   background: var(--type-color, #333);
   color: white;

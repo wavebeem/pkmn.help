@@ -11,7 +11,7 @@ import {
 } from "../misc/data-types";
 import { DexCoverage } from "../components/DexCoverage";
 import { Matchups } from "../components/Matchups";
-import { MultiTypeSelector } from "../MultiTypeSelector";
+import { MultiTypeSelector } from "../components/MultiTypeSelector";
 import { useSearch } from "../hooks/useSearch";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "../components/CopyButton";
