@@ -136,9 +136,10 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
           }
         />
       )}
-      <div className="pt2 pb4">
-        <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
-      </div>
+      <div className="pt2" />
+      <div className="pt3" />
+      <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
+      <div className="pb4" />
     </main>
   );
 }

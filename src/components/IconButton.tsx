@@ -6,5 +6,10 @@ export interface IconButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
 export function IconButton({ className, ...props }: IconButtonProps) {
-  return <button className={classNames(className, styles.root)} {...props} />;
+  return (
+    <button
+      className={classNames(className, styles.root, "focus-tab")}
+      {...props}
+    />
+  );
 }

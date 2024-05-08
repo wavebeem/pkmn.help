@@ -30,8 +30,3 @@
   background: var(--color-fg1);
   color: var(--color-bg1);
 }
-
-.root:focus-visible {
-  outline: 2px solid var(--color-fg1);
-  outline-offset: 2px;
-}

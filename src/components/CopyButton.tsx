@@ -18,11 +18,7 @@ export function CopyButton({ text, children }: CopyButtonProps) {
       type="button"
       data-state={state}
       aria-disabled={disabled}
-      className={classNames(
-        "active-darken",
-        "focus-outline",
-        styles.CopyButton
-      )}
+      className={classNames("active-darken", "focus-tab", styles.CopyButton)}
       onClick={async (event) => {
         try {
           event.preventDefault();
