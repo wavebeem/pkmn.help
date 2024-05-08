@@ -9,7 +9,7 @@ import {
   Type,
   typesFromString,
 } from "../misc/data-types";
-import { DexCoverage } from "../DexCoverage";
+import { DexCoverage } from "../components/DexCoverage";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../MultiTypeSelector";
 import { useSearch } from "../hooks/useSearch";
@@ -84,7 +84,10 @@ export function ScreenOffense({
               ({listLengthFormatted})
             </div>
             <div
-              className={classNames(isLoading && ["o-30 no-pointer cursor-na"])}
+              className={classNames(
+                "pt3",
+                isLoading && ["o-30 no-pointer cursor-na"]
+              )}
             >
               <DexCoverage
                 generation={generation}
