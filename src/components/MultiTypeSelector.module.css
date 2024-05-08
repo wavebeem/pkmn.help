@@ -6,11 +6,11 @@
   text-transform: capitalize;
 }
 
-.label:has(.checkbox:active) {
+.label:where(:has(.checkbox:active)) {
   filter: var(--filter-darken);
 }
 
-.label:has(.checkbox:checked) {
+.label:where(:has(.checkbox:checked)) {
   box-shadow: var(--shadow-button);
   border-color: var(--color-vibrant-border1);
   background: var(--type-color-bg);
@@ -18,14 +18,14 @@
   text-shadow: var(--type-text-shadow);
 }
 
-.label:not(:has(.checkbox:checked)) {
+.label:where(:not(:has(.checkbox:checked))) {
   border-color: var(--color-border1);
   background: var(--background-button-bg);
   color: var(--color-fg1);
   box-shadow: var(--shadow-button);
 }
 
-.label:not(:has(.checkbox:checked)):hover {
+.label:where(:not(:has(.checkbox:checked))):hover {
   background: var(--background-button-bg-hover);
 }
 

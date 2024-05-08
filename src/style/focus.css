@@ -1,7 +1,7 @@
 .focus-tab:focus-visible,
 .focus-tab:has(:focus-visible) {
-  outline: 3px solid var(--color-bg2);
-  outline-offset: -3px;
+  outline: 1px solid var(--color-bg2);
+  outline-offset: -1px;
   box-shadow: 0 0 0 3px var(--color-fg1);
 }
 

@@ -32,7 +32,7 @@ export function MultiTypeSelector({
             className={classNames(
               styles.label,
               "select-none",
-              isChecked && "focus-selected",
+              isChecked && "focus-tab",
               !isChecked && "focus-simple"
             )}
             style={customProperties({
