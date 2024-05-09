@@ -3,7 +3,7 @@ import * as React from "react";
 import styles from "./FancyText.module.css";
 
 export interface FancyTextProps extends React.HTMLAttributes<HTMLSpanElement> {
-  tag: "span" | "div" | "h1" | "h2" | "h3";
+  tag: "span" | "div" | "h1" | "h2" | "h3" | "p";
   textAlign?: "left" | "center" | "right";
   fontWeight?: "normal" | "medium" | "bold";
   fontSize?: "small" | "medium" | "large";

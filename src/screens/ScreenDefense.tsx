@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Matchups } from "../components/Matchups";
 import { Select } from "../components/Select";
-import { TypeSelector } from "../TypeSelector";
+import { TypeSelector } from "../components/TypeSelector";
 import { Generation } from "../misc/data-generations";
 import {
   AbilityName,

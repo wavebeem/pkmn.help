@@ -8,7 +8,7 @@ import { Button } from "../components/Button";
 import { CopyButton } from "../components/CopyButton";
 import { MatchupsTeam, MatchupsTeamProps } from "../components/MatchupsTeam";
 import { Select } from "../components/Select";
-import { TypeSelector } from "../TypeSelector";
+import { TypeSelector } from "../components/TypeSelector";
 import { Generation } from "../misc/data-generations";
 import {
   AbilityName,

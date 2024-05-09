@@ -4,7 +4,7 @@ import { Trans, useTranslation } from "react-i18next";
 import { Button } from "../components/Button";
 import { CollapsibleSection } from "../components/CollapsibleSection";
 import { Select } from "../components/Select";
-import { TranslationCard } from "../TranslationCard";
+import { TranslationCard } from "../components/TranslationCard";
 import { compare } from "../misc/compare";
 import { generations, isGeneration } from "../misc/data-generations";
 import {
