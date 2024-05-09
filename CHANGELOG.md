@@ -1,6 +1,6 @@
 # Changelog
 
-## 2024-05-??
+## 2024-05-08
 
 - Made the table easier to read on the Team Defense page
 
