@@ -35,6 +35,7 @@
   color: var(--color-fg4);
   border-color: var(--color-border3);
   text-shadow: none;
+  box-shadow: none;
 }
 
 .radio {
@@ -58,7 +59,7 @@
 }
 
 .radio:disabled {
-  background: var(--color-bg2);
+  background: transparent;
   border-color: var(--color-border3);
   box-shadow: none;
 }

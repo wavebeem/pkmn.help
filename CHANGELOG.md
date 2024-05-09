@@ -1,5 +1,9 @@
 # Changelog
 
+## ????-??-??
+
+- Fixed minor issues with the disabled type in the type selector
+
 ## 2024-05-08
 
 - Made the table easier to read on the Team Defense page
