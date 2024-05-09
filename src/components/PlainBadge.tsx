@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import { ReactNode } from "react";
 import styles from "./PlainBadge.module.css";
 
