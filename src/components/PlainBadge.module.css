@@ -1,0 +1,16 @@
+.PlainBadge {
+  border-radius: var(--border-radius2);
+  border: 1px solid var(--color-border1);
+  background: var(--color-bg3);
+  text-align: center;
+  grid-column: 1 / -1;
+  padding: 2px;
+}
+
+.PlainBadge_content {
+  background: var(--color-bg1);
+  border-radius: var(--border-radius1);
+  border: 1px solid transparent;
+  padding: 3px 8px;
+  flex: auto;
+}

@@ -1,0 +1,30 @@
+.search {
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: var(--shadow-inset);
+  border-radius: var(--border-radius-pill);
+  border: 1px solid var(--color-border1);
+  background: var(--color-bg1);
+  color: var(--color-fg1);
+  padding: 0.5rem;
+  padding-left: calc(var(--icon-size) + 1rem);
+  padding-right: calc(var(--icon-size) + 1rem);
+}
+
+.iconSearch {
+  color: var(--color-fg3);
+  position: absolute;
+  top: 8px;
+  left: 10px;
+}
+
+.iconClear {
+  color: var(--color-fg1);
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.hidden {
+  display: none;
+}

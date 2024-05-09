@@ -1,0 +1,92 @@
+.label {
+  padding: var(--padding2) var(--padding3);
+  display: block;
+  border: 1px solid;
+  border-radius: var(--border-radius1);
+  text-transform: capitalize;
+}
+
+.label:where(:has(.checkbox:active)) {
+  filter: var(--filter-darken);
+}
+
+.label:where(:has(.checkbox:checked)) {
+  box-shadow: var(--shadow-button);
+  border-color: var(--color-vibrant-border1);
+  background: var(--type-color-bg);
+  color: white;
+  text-shadow: var(--type-text-shadow);
+}
+
+.label:where(:not(:has(.checkbox:checked))) {
+  border-color: var(--color-border1);
+  background: var(--background-button-bg);
+  color: var(--color-fg1);
+  box-shadow: var(--shadow-button);
+}
+
+.label:where(:not(:has(.checkbox:checked))):hover {
+  background: var(--background-button-bg-hover);
+}
+
+.label[data-type="stellar"]:has(.checkbox:checked) {
+  background: var(--stellar-background-dark);
+}
+
+.checkbox {
+  --checkbox-color-border: var(--color-vibrant-border);
+  --checkbox-border: inset 0 0 0 1px var(--checkbox-color-border);
+  -webkit-appearance: none;
+  appearance: none;
+  display: block;
+  box-sizing: border-box;
+  width: 1rem;
+  height: 1rem;
+  flex: none;
+  border: 0;
+  background: var(--type-color);
+  color: white;
+  text-shadow: var(--type-text-shadow);
+  box-shadow: var(--checkbox-border);
+  border-radius: 0.125rem;
+}
+
+:where(.label[data-type="stellar"]) .checkbox {
+  background: var(--stellar-background-conic);
+}
+
+.checkbox:checked {
+  background-clip: padding-box;
+  --_blur: 0.6px;
+  --_size: calc(1em / 8);
+  --_start: calc(50% - 0.5 * var(--_size));
+  --_end: calc(var(--_start) + var(--_size));
+  --_fg: white;
+  --_bg: black;
+  --checkbox-color-border: var(--_fg);
+  background-color: var(--_bg);
+  background-image: linear-gradient(
+      45deg,
+      transparent,
+      transparent calc(var(--_start) - var(--_blur)),
+      var(--_fg) var(--_start),
+      var(--_fg) var(--_end),
+      transparent calc(var(--_end) + var(--_blur)),
+      transparent
+    ),
+    linear-gradient(
+      -45deg,
+      transparent,
+      transparent calc(var(--_start) - var(--_blur)),
+      var(--_fg) var(--_start),
+      var(--_fg) var(--_end),
+      transparent calc(var(--_end) + var(--_blur)),
+      transparent
+    );
+  box-shadow: var(--checkbox-border), inset 0 0 0 4px var(--_bg);
+}
+
+.checkbox:disabled {
+  background: var(--color-bg2);
+  border-color: var(--color-fg4);
+}

@@ -1,0 +1,16 @@
+.CopyButton {
+  padding: var(--padding1) var(--padding3);
+  border-radius: var(--border-radius-pill);
+  border: 1px solid;
+  color: var(--color-fg1);
+}
+
+.CopyButton[data-state="default"] {
+  background: var(--color-bg2);
+  border-color: var(--color-border1);
+}
+
+.CopyButton[data-state="copied"] {
+  background: var(--color-bg1);
+  border-color: var(--color-border2);
+}

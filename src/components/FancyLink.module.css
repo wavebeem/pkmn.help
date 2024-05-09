@@ -1,0 +1,12 @@
+.link {
+  border-radius: var(--border-radius1);
+  color: var(--color-link);
+}
+
+.link:hover {
+  color: var(--color-link-hover);
+}
+
+.noUnderline {
+  text-decoration: none;
+}

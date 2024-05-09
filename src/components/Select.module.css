@@ -1,0 +1,63 @@
+.select {
+  position: relative;
+}
+
+.select select {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0.5rem 1rem;
+  padding-right: 3rem;
+  border-radius: var(--border-radius2);
+  background: var(--background-button-bg);
+  color: var(--color-fg1);
+  width: 100%;
+  border: 1px solid var(--color-border1);
+  box-shadow: var(--shadow-button);
+}
+
+.select select:focus,
+.select select:hover {
+  background: var(--background-button-bg-hover);
+}
+
+.select:after {
+  --_size: 0.5rem;
+  --_border-size: 2px;
+  content: "";
+  position: absolute;
+  width: var(--_size);
+  height: var(--_size);
+  border: var(--_border-size) solid;
+  border-top: 0;
+  border-left: 0;
+  rotate: 45deg;
+  right: 1rem;
+  top: calc(50% - var(--_size) + var(--_border-size));
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.select optgroup {
+  background: var(--color-button1b);
+  color: var(--color-fg1);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.select option {
+  background: var(--color-button1b);
+  color: var(--color-fg1);
+  font-weight: initial;
+  border-radius: 0;
+}
+
+.label {
+  padding-bottom: var(--padding1);
+}
+
+.help {
+  margin: 0;
+  padding-top: var(--padding1);
+  color: var(--color-fg3);
+  font-size: var(--font-size0);
+}

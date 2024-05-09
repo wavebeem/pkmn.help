@@ -26,7 +26,7 @@ export default tseslint.config(
         },
       ],
       "@typescript-eslint/no-explicit-any": "off",
-      // TODO: I would like to enable this rule eventually
+      // TODO: Do the work to enable this
       "@typescript-eslint/explicit-module-boundary-types": "off",
     },
   }

@@ -1,0 +1,51 @@
+.root {
+  --border: var(--color-border2);
+  border-radius: var(--border-radius2);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-button);
+  background: var(--color-bg1);
+  padding: var(--padding2);
+}
+
+.tableWrapper {
+  overflow-x: auto;
+}
+
+.tableWrapper table {
+  border-collapse: collapse;
+  text-align: center;
+  width: 100%;
+}
+
+.td {
+  min-width: 4rem;
+  border: 1px solid var(--border);
+  padding: var(--padding2) var(--padding3);
+  font-size: 1.25rem;
+}
+
+.td:not([data-count="0"]) {
+  background: var(--color-bg2);
+}
+
+.td[data-count="0"] {
+  opacity: 0;
+}
+
+.thLeft {
+  padding: var(--padding1) var(--padding2) var(--padding1) 0;
+}
+
+.thCorner {
+  padding: var(--padding2);
+  font-weight: var(--weight-medium);
+  /* Use automatic table sizing */
+  width: 0;
+}
+
+.thTop {
+  padding: var(--padding2);
+  font-weight: var(--weight-medium);
+  border-bottom: 1px solid var(--border);
+  width: 4rem;
+}

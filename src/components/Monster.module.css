@@ -1,0 +1,70 @@
+.root {
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  display: flex;
+  color: var(--color-fg1);
+  background: var(--color-bg1);
+  margin: var(--padding3) 0;
+  padding: var(--padding3);
+  border-radius: var(--border-radius3);
+  border: 1px solid var(--color-border2);
+  box-shadow: var(--shadow-button);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1rem;
+}
+
+.monster {
+  display: grid;
+  gap: var(--padding3);
+  grid-template-areas:
+    "icon"
+    "links"
+    "stats";
+}
+
+.monsterIcon {
+  grid-area: icon;
+  display: flex;
+  flex-direction: column;
+}
+
+.monsterLinks {
+  grid-area: links;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding3);
+}
+
+.monsterStats {
+  grid-area: stats;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: auto;
+  gap: var(--padding3);
+}
+
+@media (min-width: 60em) {
+  .monster {
+    grid-template-columns: 256px 1fr;
+    grid-template-areas:
+      "icon stats"
+      "icon links";
+  }
+
+  .monsterLinks {
+    grid-area: links;
+    justify-content: end;
+    align-items: end;
+  }
+}

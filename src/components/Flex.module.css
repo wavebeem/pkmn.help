@@ -1,0 +1,66 @@
+.Flex {
+  display: flex;
+}
+
+.Flex[data-flex="auto"] {
+  flex: auto;
+}
+
+.Flex[data-direction="row"] {
+  flex-direction: row;
+}
+
+.Flex[data-direction="column"] {
+  flex-direction: column;
+}
+
+.Flex[data-wrap="true"] {
+  flex-wrap: wrap;
+}
+
+.Flex[data-gap="none"] {
+  gap: var(--padding0);
+}
+
+.Flex[data-gap="small"] {
+  gap: var(--padding1);
+}
+
+.Flex[data-gap="medium"] {
+  gap: var(--padding2);
+}
+
+.Flex[data-gap="large"] {
+  gap: var(--padding3);
+}
+
+.Flex[data-justify="stretch"] {
+  justify-content: stretch;
+}
+
+.Flex[data-justify="center"] {
+  justify-content: center;
+}
+
+.Flex[data-justify="flex-start"] {
+  justify-content: flex-start;
+}
+
+.Flex[data-justify="flex-end"] {
+  justify-content: flex-end;
+}
+
+.Flex[data-align="stretch"] {
+  align-items: stretch;
+}
+
+.Flex[data-align="center"] {
+  align-items: center;
+}
+.Flex[data-align="flex-start"] {
+  align-items: flex-start;
+}
+
+.Flex[data-align="flex-end"] {
+  align-items: flex-end;
+}

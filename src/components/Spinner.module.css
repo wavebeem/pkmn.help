@@ -1,0 +1,24 @@
+.Spinner {
+  border-radius: 9999px;
+  width: 1em;
+  height: 1em;
+  border: 2px solid;
+  border-right-color: transparent;
+  animation: 1s linear infinite spin;
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 2.25rem;
+}
+
+@keyframes spin {
+  100% {
+    rotate: 1turn;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .spinner {
+    animation-duration: 6s !important;
+    animation-iteration-count: 6 !important;
+  }
+}

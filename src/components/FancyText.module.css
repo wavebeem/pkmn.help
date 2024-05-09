@@ -1,0 +1,51 @@
+.FancyText {
+  margin: 0;
+}
+
+.FancyText[data-font-size="inherit"] {
+  font-size: inherit;
+}
+
+.FancyText[data-font-size="small"] {
+  font-size: 0.875rem;
+}
+
+.FancyText[data-font-size="medium"] {
+  font-size: 1rem;
+}
+
+.FancyText[data-font-size="large"] {
+  font-size: 1.25rem;
+}
+
+.FancyText[data-font-weight="inherit"] {
+  font-weight: inherit;
+}
+
+.FancyText[data-font-weight="normal"] {
+  font-weight: var(--weight-normal);
+}
+
+.FancyText[data-font-weight="medium"] {
+  font-weight: var(--weight-medium);
+}
+
+.FancyText[data-font-weight="bold"] {
+  font-weight: var(--weight-bold);
+}
+
+.FancyText[data-text-align="left"] {
+  text-align: left;
+}
+
+.FancyText[data-text-align="right"] {
+  text-align: right;
+}
+
+.FancyText[data-text-align="center"] {
+  text-align: center;
+}
+
+.FancyText[data-tabular-nums="true"] {
+  font-variant-numeric: tabular-nums;
+}

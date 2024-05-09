@@ -1,0 +1,32 @@
+.root {
+  gap: var(--padding1);
+  border-radius: var(--border-radius-pill);
+  padding: var(--padding2);
+  display: flex;
+  align-items: center;
+  fill: currentColor;
+  box-shadow: var(--shadow-button);
+  background: var(--color-button1)
+    linear-gradient(to bottom, var(--color-button1) 20%, var(--color-button1b));
+  color: var(--color-fg1);
+  border: 1px solid var(--color-border1);
+}
+
+.root:active {
+  filter: var(--filter-darken);
+}
+
+.root:hover {
+  background: var(--color-button-hover1)
+    linear-gradient(
+      to bottom,
+      var(--color-button-hover1) 20%,
+      var(--color-button-hover1b)
+    );
+}
+
+.root[aria-pressed="true"] {
+  border-color: var(--color-fg1);
+  background: var(--color-fg1);
+  color: var(--color-bg1);
+}

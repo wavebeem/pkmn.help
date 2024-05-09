@@ -1,0 +1,24 @@
+.badgeContainer {
+  padding: 3px;
+  border-radius: var(--border-radius2);
+  text-align: center;
+  box-shadow: inset 0 0 0 1px var(--color-vibrant-border);
+  background: var(--type-color, #333);
+  color: white;
+  text-shadow: var(--type-text-shadow);
+}
+
+.badgeContainer[data-type="stellar"] {
+  background: var(--stellar-background-linear);
+}
+
+.badgeLabel {
+  padding: 0.25rem 1rem;
+  background: var(--type-color-bg);
+  border-radius: var(--border-radius1);
+}
+
+:where(.badgeContainer[data-type="stellar"]) .badgeLabel {
+  background: hsl(0 0% 10% / 50%);
+  backdrop-filter: blur(16px);
+}

@@ -1,0 +1,26 @@
+.root {
+  border: 1px solid;
+  border-radius: var(--border-radius2);
+  padding: var(--padding2) var(--padding3);
+  display: flex;
+  align-items: center;
+  gap: var(--padding1);
+}
+
+.root:where(:not(:disabled)) {
+  border-color: var(--color-border1);
+  background: var(--background-button-bg);
+  color: inherit;
+  box-shadow: var(--shadow-button);
+}
+
+.root:where(:not(:disabled)):hover {
+  background: var(--background-button-bg-hover);
+}
+
+.root:disabled {
+  pointer-events: none;
+  background: transparent;
+  color: var(--color-fg4);
+  border-color: var(--color-border3);
+}

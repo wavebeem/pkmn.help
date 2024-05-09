@@ -13,7 +13,7 @@
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "allowUmdGlobalAccess": false,
     "types": ["vite-plugin-pwa/client"]
   },
