@@ -169,9 +169,12 @@
 }
 
 .tabBar {
+  background: var(--color-bg1);
+  border-bottom: 1px solid var(--color-border2);
+  padding: var(--padding2);
+  gap: var(--padding2);
   border-color: var(--color-border2);
   box-shadow: 0 2px 8px rgb(0 0 0 / 5%), 0 2px 16px rgb(0 0 0 / 5%);
-  gap: 0.5rem;
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -182,4 +185,21 @@
   .tabBar {
     display: flex;
   }
+}
+
+.tab {
+  text-decoration: none;
+  padding: var(--padding1) var(--padding3);
+  text-align: center;
+  border: 1px solid var(--color-border1);
+  border-radius: var(--border-radius-pill);
+  background: var(--color-bg1);
+  color: var(--color-fg1);
+  font-weight: var(--weight-medium);
+}
+
+.tab[aria-current="page"] {
+  border-color: var(--color-fg1);
+  background: var(--color-fg1);
+  color: var(--color-bg1);
 }

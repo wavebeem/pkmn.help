@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import * as React from "react";
+import { useState, useEffect, Suspense } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { NavLink, Navigate, Route, Routes } from "react-router-dom";
@@ -28,23 +28,6 @@ import { useLanguage } from "./hooks/useLanguage";
 import { useTheme } from "./hooks/useTheme";
 import { useUpdateSW } from "./hooks/useUpdateSW";
 
-const tabClass = classNames([
-  "active-darken",
-  "no-underline",
-  "pv1 ph3 f5",
-  "focus-tab",
-  "weight-medium",
-  "tc",
-  "ba border1 br-pill",
-  "bg1 fg1",
-]);
-
-const tabClassActive = classNames(["button-selected"]);
-
-function getTabClass({ isActive }: { isActive: boolean }): string {
-  return classNames(tabClass, isActive && tabClassActive);
-}
-
 function getFallback(key: string): string {
   if (key === "title") {
     return "Pokémon Type Calculator";
@@ -65,6 +48,8 @@ type PokeballTheme = typeof pokeballThemes[number];
 const pokeballThemeCycle = iterStutter(iterCycle(pokeballThemes), 2);
 
 export function App() {
+  const tabClass = classNames(["active-darken focus-tab", styles.tab]);
+
   // Service worker
   const {
     needRefresh: [needRefresh, setNeedRefresh],
@@ -84,24 +69,23 @@ export function App() {
 
   // State...
   const [generation] = useGeneration();
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [coverageTypes, setCoverageTypes] = React.useState<CoverageType[]>([]);
-  const [fallbackCoverageTypes, setFallbackCoverageTypes] = React.useState<
+  const [isLoading, setIsLoading] = useState(true);
+  const [coverageTypes, setCoverageTypes] = useState<CoverageType[]>([]);
+  const [fallbackCoverageTypes, setFallbackCoverageTypes] = useState<
     CoverageType[]
   >([]);
-  const [AllPokemon, setAllPokemon] = React.useState<Pokemon[]>([]);
-  const [easterEgg, setEasterEgg] = React.useState<Pokemon>();
-  const [easterEggLoadedID, setEasterEggLoadedID] = React.useState("");
-  const [pokeballTheme, setPokeballTheme] =
-    React.useState<PokeballTheme>("premier");
+  const [AllPokemon, setAllPokemon] = useState<Pokemon[]>([]);
+  const [easterEgg, setEasterEgg] = useState<Pokemon>();
+  const [easterEggLoadedID, setEasterEggLoadedID] = useState("");
+  const [pokeballTheme, setPokeballTheme] = useState<PokeballTheme>("premier");
 
-  React.useEffect(() => {
+  useEffect(() => {
     setPokeballTheme(iterNext(pokeballThemeCycle));
   }, []);
 
   const [language] = useLanguage();
 
-  React.useEffect(() => {
+  useEffect(() => {
     async function load() {
       await i18n.changeLanguage(language || detectLanguage());
       document.documentElement.lang = i18n.language;
@@ -121,7 +105,7 @@ export function App() {
   const allPokemonResponse = useFetchJSON<Pokemon[]>(jsonURL);
 
   // Fallback coverage types
-  React.useEffect(() => {
+  useEffect(() => {
     if (allPokemonResponse.type !== "done") {
       return;
     }
@@ -188,31 +172,24 @@ export function App() {
           />
           <div>{t("title")}</div>
         </h1>
-        <nav
-          className={classNames(`bg1 bb border2 pv2 ph2 gap2`, styles.tabBar)}
-        >
-          <NavLink className={getTabClass} to="/offense/">
+        <nav className={styles.tabBar}>
+          <NavLink className={tabClass} to="/offense/">
             {t("navigation.offense")}
           </NavLink>
-          <NavLink className={getTabClass} to="/defense/">
+          <NavLink className={tabClass} to="/defense/">
             {t("navigation.defense")}
           </NavLink>
-          <NavLink className={getTabClass} to="/pokedex/">
+          <NavLink className={tabClass} to="/pokedex/">
             {t("navigation.pokedex")}
           </NavLink>
           <NavLink
-            className={({ isActive }) => {
-              return classNames(
-                getTabClass({ isActive }),
-                needRefresh && styles.pleaseUpdate
-              );
-            }}
+            className={classNames(tabClass, needRefresh && styles.pleaseUpdate)}
             to="/more/"
           >
             {t("navigation.more")}
           </NavLink>
         </nav>
-        <React.Suspense fallback={<Spinner />}>
+        <Suspense fallback={<Spinner />}>
           <Routes>
             <Route
               path="/offense/coverage/weakness/"
@@ -295,7 +272,7 @@ export function App() {
             />
             <Route path="/*" element={<Navigate to="/defense/" />} />
           </Routes>
-        </React.Suspense>
+        </Suspense>
       </div>
     </HelmetProvider>
   );
