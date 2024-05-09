@@ -146,16 +146,7 @@ export function App() {
         </div>
       )}
       <div className="flex-auto">
-        <h1
-          className={classNames(
-            `f3-ns f4 weight-medium`,
-            `flex items-center justify-center gap2`,
-            "pa3",
-            "bb ma0",
-            "bg-poke white border-vibrant",
-            styles.header
-          )}
-        >
+        <h1 className={styles.header}>
           <button
             className={styles.headerButton}
             data-theme={pokeballTheme}

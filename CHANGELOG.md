@@ -15,6 +15,8 @@
 
 - Increased the contrast of focus states
 
+- Fixed the appearance of the "Tera Pokémon" badge
+
 ## 2024-05-03
 
 - Switched from AAC to M4A as a fallback for browsers that don't support Ogg

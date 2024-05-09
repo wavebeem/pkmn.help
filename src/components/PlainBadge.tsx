@@ -9,9 +9,7 @@ interface PlainBadgeProps {
 export function PlainBadge({ children }: PlainBadgeProps) {
   return (
     <div className={styles.PlainBadge}>
-      <div className={classNames(styles.PlainBadge_content, "truncate")}>
-        {children}
-      </div>
+      <div className={styles.PlainBadge_content}>{children}</div>
     </div>
   );
 }

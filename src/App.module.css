@@ -59,6 +59,23 @@
 
 .header {
   text-shadow: 0 0 8px hsl(0 0% 0% / 50%);
+  font-size: 1.25rem;
+  font-weight: medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--padding2);
+  border-bottom: 1px solid var(--color-vibrant-border);
+  color: white;
+  background: var(--color-pokeball);
+  padding: var(--padding3);
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .header {
+    font-size: 1.5rem;
+  }
 }
 
 .headerButton {
