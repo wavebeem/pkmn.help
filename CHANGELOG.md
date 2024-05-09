@@ -1,13 +1,19 @@
 # Changelog
 
-## 2024-05-05
+## 2024-05-??
 
-- Made the table easier to readon the Team Defense page
+- Made the table easier to read on the Team Defense page
 
 - Pokémon now uses four digit numbers in the Pokédex
 
 - The Pokédex once again scrolls to the top when clicking pagination buttons at
   the bottom of the page
+
+- Made the disabled Pokémon types on the defense page easier to read
+
+- Reduced the height of Pokémon type labels by 2 pixels
+
+- Increased the contrast of focus states
 
 ## 2024-05-03
 

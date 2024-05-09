@@ -127,6 +127,11 @@ export function App() {
 
   return (
     <HelmetProvider>
+      <Helmet>
+        <html data-theme={themeAuto} />
+        <meta name="theme-color" content={themeColor} />
+        <title>{t("title")}</title>
+      </Helmet>
       {easterEgg && (
         <div
           className={styles.easterEgg}
@@ -141,11 +146,6 @@ export function App() {
         </div>
       )}
       <div className="flex-auto">
-        <Helmet>
-          <html data-theme={themeAuto} />
-          <meta name="theme-color" content={themeColor} />
-          <title>{t("title")}</title>
-        </Helmet>
         <h1
           className={classNames(
             `f3-ns f4 weight-medium`,
