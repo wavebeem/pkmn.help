@@ -1,4 +1,4 @@
-import * as React from "react";
+import { RefObject } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
 import { Button } from "./Button";
@@ -7,7 +7,7 @@ import { Flex } from "./Flex";
 import { FancyText } from "./FancyText";
 
 export interface PageSelectorProps<T> {
-  anchorElementRef: React.RefObject<HTMLDivElement>;
+  anchorElementRef: RefObject<HTMLDivElement>;
   location: "top" | "bottom";
   numPages: number;
   pageItems: T[];

@@ -1,10 +1,10 @@
-import * as React from "react";
+import { ReactNode } from "react";
 import styles from "./CollapsibleSection.module.css";
 
 interface CollapsibleSectionProps {
   initiallyOpen?: boolean;
-  heading: React.ReactNode;
-  children: React.ReactNode;
+  heading: ReactNode;
+  children: ReactNode;
 }
 
 export function CollapsibleSection({

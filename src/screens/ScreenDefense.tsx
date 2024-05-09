@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import * as React from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Matchups } from "../components/Matchups";
@@ -64,11 +64,11 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
     "none"
   );
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTypes((types) => types.slice(0, Number(typeCount)));
   }, [typeCount]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (search.has("types")) {
       setTypes(
         typesFromString(search.get("types") || "normal").slice(

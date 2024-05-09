@@ -1,4 +1,3 @@
-import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Generation } from "../misc/data-generations";
 import { defensiveMatchups, offensiveMatchups } from "../misc/data-matchups";

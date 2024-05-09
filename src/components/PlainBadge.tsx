@@ -1,9 +1,9 @@
 import classNames from "classnames";
-import * as React from "react";
+import { ReactNode } from "react";
 import styles from "./PlainBadge.module.css";
 
 interface PlainBadgeProps {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export function PlainBadge({ children }: PlainBadgeProps) {

@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState, useEffect } from "react";
 
 type FetchJSONResponse<T> =
   | { type: "pending" }
@@ -6,12 +6,12 @@ type FetchJSONResponse<T> =
   | { type: "done"; data: T };
 
 export function useFetchJSON<T = unknown>(url: string): FetchJSONResponse<T> {
-  const [state, setState] = React.useState<FetchJSONResponse<T>>({
+  const [state, setState] = useState<FetchJSONResponse<T>>({
     type: "pending",
   });
-  const [attemptTime, setAttemptTime] = React.useState(Date.now());
+  const [attemptTime, setAttemptTime] = useState(Date.now());
 
-  React.useEffect(() => {
+  useEffect(() => {
     async function load() {
       try {
         const resp = await fetch(url);

@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import * as React from "react";
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { Generation } from "../misc/data-generations";
@@ -42,14 +42,14 @@ export function ScreenOffense({
     permalink.searchParams.set("types", offenseTypes.join(" "));
   }
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (search.has("types")) {
       setOffenseTypes(typesFromString(search.get("types") || ""));
     }
     navigate({ search: "" }, { replace: true });
   }, [search]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setOffenseTypes((offenseTypes) =>
       removeInvalidOffenseTypesForGeneration(generation, offenseTypes)
     );

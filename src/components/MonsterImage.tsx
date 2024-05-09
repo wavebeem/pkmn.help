@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import * as React from "react";
+import { useState, useCallback } from "react";
 import { getPngSrc, getWebpSrcSet } from "../misc/getImage";
 import styles from "./MonsterImage.module.css";
 import { customProperties } from "../misc/customProperties";
@@ -20,12 +20,12 @@ export function MonsterImage({
   shiny = false,
 }: MonsterImageProps): JSX.Element {
   const size = 512 * scale;
-  const [state, setState] = React.useState<State>("loading");
-  const setLoaded = React.useCallback(() => {
+  const [state, setState] = useState<State>("loading");
+  const setLoaded = useCallback(() => {
     setState("loaded");
     onLoad?.({ pokemonID });
   }, [onLoad, pokemonID]);
-  const setErrored = React.useCallback(() => {
+  const setErrored = useCallback(() => {
     setState("errored");
   }, []);
   return (

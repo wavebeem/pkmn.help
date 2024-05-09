@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { partitionMatchups } from "../misc/data-matchups";
@@ -24,7 +24,7 @@ export function ScreenCoverageList({
 }: CoverageListProps) {
   const { t } = useTranslation();
   const search = useSearch();
-  const [page, setPage] = React.useState(0);
+  const [page, setPage] = useState(0);
   const types = typesFromString(search.get("types") || "");
   const partitionedMatchups = partitionMatchups({
     coverageTypes,

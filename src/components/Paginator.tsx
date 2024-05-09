@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useRef } from "react";
 import styles from "./Paginator.module.css";
 import { PageSelector } from "./PageSelector";
 
@@ -21,7 +21,7 @@ export function Paginator<T>({
   renderPage,
   renderID,
 }: PaginatorProps<T>) {
-  const rootRef = React.useRef<HTMLDivElement>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
   const numPages = Math.ceil(items.length / pageSize);
   const hasPrev = currentPage > 0;
   const hasNext = currentPage < numPages - 1;

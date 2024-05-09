@@ -1,5 +1,4 @@
-import * as React from "react";
-import * as ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { App } from "./App";
 import { ErrorBoundary } from "./components/ErrorBoundary";
@@ -11,7 +10,7 @@ if (!element) {
   throw new Error("No #app element found");
 }
 
-const root = ReactDOM.createRoot(element);
+const root = createRoot(element);
 
 root.render(
   <ErrorBoundary render={(error) => <ScreenError error={error} />}>

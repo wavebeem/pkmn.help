@@ -1,4 +1,3 @@
-import * as React from "react";
 import styles from "./Meter.module.css";
 import { customProperties } from "../misc/customProperties";
 

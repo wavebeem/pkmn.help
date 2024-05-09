@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import * as React from "react";
+import { useState } from "react";
 import { resetApp } from "../misc/resetApp";
 import { sleep } from "../misc/sleep";
 
@@ -39,7 +39,7 @@ ${JSON.stringify(sessionStorage)}
     }
   }
 
-  const [clickMessage, setClickMessage] = React.useState("");
+  const [clickMessage, setClickMessage] = useState("");
 
   return (
     <div className="ph4 content-narrow f4 center fg2">

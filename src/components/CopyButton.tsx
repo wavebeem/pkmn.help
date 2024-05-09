@@ -1,17 +1,17 @@
 import classNames from "classnames";
-import * as React from "react";
+import { ReactNode, useState } from "react";
 import styles from "./CopyButton.module.css";
 import { sleep } from "../misc/sleep";
 
 export interface CopyButtonProps {
   text: string;
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 type State = "default" | "copied";
 
 export function CopyButton({ text, children }: CopyButtonProps) {
-  const [state, setState] = React.useState<State>("default");
+  const [state, setState] = useState<State>("default");
   const disabled = state === "copied";
   return (
     <button

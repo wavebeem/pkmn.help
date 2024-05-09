@@ -1,10 +1,10 @@
-import * as React from "react";
+import { useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 export function useScrollToFragment() {
   const fragment = useLocation().hash.slice(1);
 
-  React.useLayoutEffect(() => {
+  useLayoutEffect(() => {
     if (!fragment) {
       return;
     }

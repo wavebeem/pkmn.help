@@ -1,8 +1,8 @@
 import classNames from "classnames";
-import * as React from "react";
+import { HTMLAttributes, ReactNode } from "react";
 import styles from "./FancyText.module.css";
 
-export interface FancyTextProps extends React.HTMLAttributes<HTMLSpanElement> {
+export interface FancyTextProps extends HTMLAttributes<HTMLSpanElement> {
   tag: "span" | "div" | "h1" | "h2" | "h3" | "p";
   textAlign?: "left" | "center" | "right";
   fontWeight?: "normal" | "medium" | "bold";
@@ -18,7 +18,7 @@ export function FancyText({
   fontSize,
   tabularNums,
   ...props
-}: FancyTextProps): React.ReactNode {
+}: FancyTextProps): ReactNode {
   return (
     <Tag
       className={classNames(styles.FancyText, className)}

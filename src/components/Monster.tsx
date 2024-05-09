@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Badge } from "./Badge";
 import { MonsterImage } from "./MonsterImage";
@@ -23,11 +23,11 @@ export interface MonsterProps {
 
 // TODO: Finish removing Tachyons from here...
 export function Monster({ pokemon, setQuery }: MonsterProps) {
-  const audioRef = React.useRef<HTMLAudioElement>(null);
+  const audioRef = useRef<HTMLAudioElement>(null);
   const { t, i18n } = useTranslation();
   const language = useComputedLanguage();
-  const [shiny, setShiny] = React.useState(false);
-  const [isPlaying, setIsPlaying] = React.useState(false);
+  const [shiny, setShiny] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
   const displayNumber = formatMonsterNumber(pokemon.number);
   const params = new URLSearchParams({
     types: pokemon.types.join(" "),

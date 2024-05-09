@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { Icon } from "./Icon";
 import styles from "./Search.module.css";

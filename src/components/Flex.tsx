@@ -1,8 +1,8 @@
 import classNames from "classnames";
-import * as React from "react";
+import { HTMLAttributes } from "react";
 import styles from "./Flex.module.css";
 
-export interface FlexProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface FlexProps extends HTMLAttributes<HTMLDivElement> {
   tag?: "div" | "span";
   flex?: "auto";
   direction?: "row" | "column";

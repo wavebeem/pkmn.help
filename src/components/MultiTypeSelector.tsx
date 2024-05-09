@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG } from "../misc/colors";
 import { Generation } from "../misc/data-generations";

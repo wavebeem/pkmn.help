@@ -1,5 +1,5 @@
 import Papa from "papaparse";
-import * as React from "react";
+import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { Button } from "../components/Button";
@@ -29,12 +29,12 @@ export function ScreenWeaknessCoverage({
   isLoading,
 }: WeaknessCoverageProps) {
   const { t } = useTranslation();
-  const [lastUpdated, setLastUpdated] = React.useState(new Date());
-  const [statusText, setStatusText] = React.useState("");
+  const [lastUpdated, setLastUpdated] = useState(new Date());
+  const [statusText, setStatusText] = useState("");
   const [typeCount] = useTypeCount();
-  const statusRef = React.useRef<HTMLParagraphElement>(null);
+  const statusRef = useRef<HTMLParagraphElement>(null);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (statusRef.current instanceof HTMLElement) {
       statusRef.current.scrollIntoView();
     }

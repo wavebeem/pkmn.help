@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Lang } from "../misc/detectLanguage";
 import {
   languageNamesEnglish,

@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import * as React from "react";
 import { useTranslation } from "react-i18next";
 import styles from "./MatchupsTeam.module.css";
 import { assertNever } from "../misc/assertNever";

@@ -1,9 +1,9 @@
 import classNames from "classnames";
-import * as React from "react";
+import { AnchorHTMLAttributes, ReactNode } from "react";
 import styles from "./FancyLink.module.css";
 
 export interface ExternalLinkProps
-  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  extends AnchorHTMLAttributes<HTMLAnchorElement> {
   underline?: "always" | "never";
 }
 
@@ -11,7 +11,7 @@ export function ExternalLink({
   underline,
   className,
   ...props
-}: ExternalLinkProps): React.ReactNode {
+}: ExternalLinkProps): ReactNode {
   return (
     <a
       className={classNames(

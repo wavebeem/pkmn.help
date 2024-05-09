@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState, useEffect } from "react";
 
 interface UpdateSW {
   type: "updating" | "pending";
@@ -8,11 +8,11 @@ interface UpdateSW {
 const checkInterval = 4 * 60 * 60 * 1000;
 
 export function useUpdateSW(): UpdateSW {
-  const [state, setState] = React.useState<UpdateSW>({
+  const [state, setState] = useState<UpdateSW>({
     type: "pending",
     lastUpdateCheck: Date.now(),
   });
-  React.useEffect(() => {
+  useEffect(() => {
     if (import.meta.env.DEV) {
       return;
     }

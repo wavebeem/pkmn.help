@@ -1,4 +1,4 @@
-import * as React from "react";
+import { SVGProps, SVGAttributes, ReactNode } from "react";
 
 const strokeWidth = 3;
 const strokeGap = 4;
@@ -41,9 +41,9 @@ const paths = {
 
 function createComponent(
   name: keyof typeof paths
-): (props: React.SVGProps<SVGSVGElement>) => JSX.Element {
+): (props: SVGProps<SVGSVGElement>) => JSX.Element {
   const path = paths[name];
-  function IconArrow(props: React.SVGProps<SVGSVGElement>): JSX.Element {
+  function IconArrow(props: SVGProps<SVGSVGElement>): JSX.Element {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const IconArrowRight = createComponent("Right");
 const IconArrowLeftDouble = createComponent("LeftDouble");
 const IconArrowRightDouble = createComponent("RightDouble");
 
-function IconClear(props: React.SVGProps<SVGSVGElement>): JSX.Element {
+function IconClear(props: SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ function IconClear(props: React.SVGProps<SVGSVGElement>): JSX.Element {
 }
 
 // https://icons.getbootstrap.com/icons/music-note-beamed/
-function IconMusic(props: React.SVGProps<SVGSVGElement>): JSX.Element {
+function IconMusic(props: SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ function IconMusic(props: React.SVGProps<SVGSVGElement>): JSX.Element {
     </svg>
   );
 }
-export function IconSearch(props: React.SVGProps<SVGSVGElement>): JSX.Element {
+export function IconSearch(props: SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@ export function IconSearch(props: React.SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-function IconSparkles(props: React.SVGProps<SVGSVGElement>): JSX.Element {
+function IconSparkles(props: SVGProps<SVGSVGElement>): JSX.Element {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -147,7 +147,7 @@ export interface IconProps {
   name: keyof typeof icons;
   size?: number;
   className?: string;
-  onClick?: React.SVGAttributes<SVGElement>["onClick"];
+  onClick?: SVGAttributes<SVGElement>["onClick"];
 }
 
 export function Icon({
@@ -155,7 +155,7 @@ export function Icon({
   className,
   onClick,
   size = 16,
-}: IconProps): React.ReactNode {
+}: IconProps): ReactNode {
   const Component = icons[name];
   return (
     <Component

@@ -1,9 +1,8 @@
 import classNames from "classnames";
-import * as React from "react";
+import { ButtonHTMLAttributes } from "react";
 import styles from "./Button.module.css";
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
+export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
 
 export function Button({ className, ...props }: ButtonProps) {
   return (

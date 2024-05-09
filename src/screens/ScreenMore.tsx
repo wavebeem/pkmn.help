@@ -1,5 +1,4 @@
 import classNames from "classnames";
-import * as React from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "../components/Button";
 import { CollapsibleSection } from "../components/CollapsibleSection";

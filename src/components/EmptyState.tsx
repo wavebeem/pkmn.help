@@ -1,8 +1,8 @@
-import * as React from "react";
+import { ReactNode } from "react";
 import styles from "./EmptyState.module.css";
 
 type EmptyStateProps = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export function EmptyState({ children }: EmptyStateProps) {

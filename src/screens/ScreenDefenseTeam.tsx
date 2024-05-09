@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import * as React from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
@@ -108,15 +108,15 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
     []
   );
   const [typeCount] = useTypeCount();
-  const [teamIndex, setTeamIndex] = React.useState(-1);
+  const [teamIndex, setTeamIndex] = useState(-1);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTeamTypes((teamTypes) =>
       teamTypes.map((types) => types.slice(0, Number(typeCount)))
     );
   }, [typeCount]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (search.has("format")) {
       setFormat((search.get("format") || "simple") as any);
     }
@@ -145,7 +145,7 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
     navigate({ search: "" }, { replace: true });
   }, [search]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     setTeamTypes((teamTypes) => {
       return teamTypes.map((type) => {
         return removeInvalidDefenseTypesForGeneration(generation, type);

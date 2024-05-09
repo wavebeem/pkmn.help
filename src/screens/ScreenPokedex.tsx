@@ -1,5 +1,5 @@
 import { matchSorter } from "match-sorter";
-import * as React from "react";
+import { useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { Pokemon, Type, typesFromUserInput } from "../misc/data-types";
@@ -27,7 +27,7 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
   const [page, setPage] = useSessionStorage<number>("pokedex.page", 0);
   const navigate = useNavigate();
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (search.has("q")) {
       setQuery(search.get("q") || "");
     }
@@ -37,7 +37,7 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
     navigate({ search: "" }, { replace: true });
   }, [search]);
 
-  const searchablePkmn = React.useMemo(() => {
+  const searchablePkmn = useMemo(() => {
     return allPokemon.map((p) => {
       return {
         ...p,
@@ -47,7 +47,7 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
     });
   }, [allPokemon, language]);
 
-  const pkmn = React.useMemo(() => {
+  const pkmn = useMemo(() => {
     const s = query.trim().toLocaleLowerCase();
     if (/^[0-9]+$/.test(s)) {
       const number = Number(s);
