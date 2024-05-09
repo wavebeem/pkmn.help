@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import * as React from "react";
 import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG, typeColorBorder } from "../misc/colors";
@@ -14,7 +13,7 @@ export function Badge({ type }: BadgeProps) {
   const { t } = useTranslation();
   return (
     <div
-      className={classNames("type-bg", "br2", "f5 tc", styles.badgeContainer)}
+      className={styles.badgeContainer}
       data-type={type}
       style={customProperties({
         "--type-color": typeColor(type),
@@ -22,15 +21,7 @@ export function Badge({ type }: BadgeProps) {
         "--type-color-border": typeColorBorder(type),
       })}
     >
-      <div
-        className={classNames(
-          "br1 ba b--transparent white truncat weight-normal",
-          styles.badgeLabel
-        )}
-        data-type={type}
-      >
-        {t(`types.${type}`)}
-      </div>
+      <div className={styles.badgeLabel}>{t(`types.${type}`)}</div>
     </div>
   );
 }
