@@ -3,6 +3,7 @@
   border-radius: var(--border-radius2);
   padding: var(--padding2) var(--padding3);
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: var(--padding1);
 }
