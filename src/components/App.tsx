@@ -6,27 +6,27 @@ import { NavLink, Navigate, Route, Routes } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import styles from "./App.module.css";
-import { MonsterImage } from "./components/MonsterImage";
-import { ScreenCoverageList } from "./screens/ScreenCoverageList";
-import { ScreenDefense } from "./screens/ScreenDefense";
-import { ScreenDefenseTeam } from "./screens/ScreenDefenseTeam";
-import { ScreenMore } from "./screens/ScreenMore";
-import { ScreenOffense } from "./screens/ScreenOffense";
-import { ScreenPokedex } from "./screens/ScreenPokedex";
-import { ScreenPokedexHelp } from "./screens/ScreenPokedexHelp";
-import { ScreenWeaknessCoverage } from "./screens/ScreenWeaknessCoverage";
-import { Spinner } from "./components/Spinner";
-import { CoverageType, Pokemon } from "./misc/data-types";
-import { detectLanguage } from "./misc/detectLanguage";
-import { formatPokemonName } from "./misc/formatPokemonName";
-import { iterCycle, iterNext, iterStutter } from "./misc/iter";
-import { randomItem } from "./misc/random";
-import { publicPath } from "./misc/settings";
-import { useFetchJSON } from "./hooks/useFetchJSON";
-import { useGeneration } from "./hooks/useGeneration";
-import { useLanguage } from "./hooks/useLanguage";
-import { useTheme } from "./hooks/useTheme";
-import { useUpdateSW } from "./hooks/useUpdateSW";
+import { MonsterImage } from "./MonsterImage";
+import { ScreenCoverageList } from "../screens/ScreenCoverageList";
+import { ScreenDefense } from "../screens/ScreenDefense";
+import { ScreenDefenseTeam } from "../screens/ScreenDefenseTeam";
+import { ScreenMore } from "../screens/ScreenMore";
+import { ScreenOffense } from "../screens/ScreenOffense";
+import { ScreenPokedex } from "../screens/ScreenPokedex";
+import { ScreenPokedexHelp } from "../screens/ScreenPokedexHelp";
+import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
+import { Spinner } from "./Spinner";
+import { CoverageType, Pokemon } from "../misc/data-types";
+import { detectLanguage } from "../misc/detectLanguage";
+import { formatPokemonName } from "../misc/formatPokemonName";
+import { iterCycle, iterNext, iterStutter } from "../misc/iter";
+import { randomItem } from "../misc/random";
+import { publicPath } from "../misc/settings";
+import { useFetchJSON } from "../hooks/useFetchJSON";
+import { useGeneration } from "../hooks/useGeneration";
+import { useLanguage } from "../hooks/useLanguage";
+import { useTheme } from "../hooks/useTheme";
+import { useUpdateSW } from "../hooks/useUpdateSW";
 
 function getFallback(key: string): string {
   if (key === "title") {
@@ -48,7 +48,7 @@ type PokeballTheme = typeof pokeballThemes[number];
 const pokeballThemeCycle = iterStutter(iterCycle(pokeballThemes), 2);
 
 export function App() {
-  const tabClass = classNames(["active-darken focus-tab", styles.tab]);
+  const tabClass = classNames(styles.tab, "active-darken focus-tab");
 
   // Service worker
   const {
