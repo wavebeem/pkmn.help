@@ -133,6 +133,13 @@ export default defineConfig((env) => {
     build: {
       sourcemap: true,
     },
+    css: {
+      modules: {
+        // Create a more descriptive name that's easier to map back to the
+        // actual source file for easier debugging
+        generateScopedName: "[name]__[local]--[hash:base64:5]",
+      },
+    },
     plugins: [
       react(),
       pluginPurgeCss(),

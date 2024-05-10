@@ -1,0 +1,6 @@
+.code {
+  display: inline-block;
+  border-radius: var(--border-radius2);
+  padding: 0 var(--padding2);
+  background: var(--color-bg3);
+}
