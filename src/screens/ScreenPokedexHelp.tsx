@@ -40,7 +40,7 @@ export function ScreenPokedexHelp(_props: ScreenPokedexHelpProps) {
       </ul>
 
       <p className="flex gap1 items-center">
-        <Icon name="arrowLeft" />
+        &larr;{" "}
         <Link to="/pokedex/" className="underline fg-link br1 focus-outline">
           {t("pokedexHelp.back")}
         </Link>

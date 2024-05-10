@@ -38,7 +38,7 @@ export function ScreenCoverageList({
         {t(`offense.coverageList.${mode}.heading`)}
       </h2>
       <p className="flex gap1 items-center">
-        <Icon name="arrowLeft" />
+        &larr;{" "}
         <Link to="/offense/" className="underline fg-link br1 focus-outline">
           {t("coverage.back")}
         </Link>
@@ -96,7 +96,7 @@ export function ScreenCoverageList({
       />
       {items.length > 0 && (
         <p className="flex gap1 items-center">
-          <Icon name="arrowLeft" />
+          &larr;{" "}
           <Link to="/offense/" className="underline fg-link br1 focus-outline">
             {t("coverage.back")}
           </Link>

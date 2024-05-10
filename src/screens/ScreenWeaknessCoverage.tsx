@@ -178,7 +178,7 @@ export function ScreenWeaknessCoverage({
         {statusText}
       </p>
       <p className="flex gap1 items-center">
-        <Icon name="arrowLeft" />
+        &larr;{" "}
         <Link to="/offense/" className="underline fg-link br1 focus-outline">
           {t("coverage.back")}
         </Link>
