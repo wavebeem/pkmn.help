@@ -53,7 +53,6 @@ export function ScreenMore({
       <Flex direction="column" padding="large">
         <Flex direction="column">
           <Flex padding="medium" />
-          <Flex padding="small" />
           <Flex direction="column" gap="large">
             {needsAppUpdate && (
               <Card>

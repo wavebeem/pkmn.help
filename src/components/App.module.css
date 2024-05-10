@@ -74,7 +74,7 @@
 
 @media (min-width: 768px) {
   .header {
-    font-size: 1.5rem;
+    font-size: var(--font-size3);
   }
 }
 
