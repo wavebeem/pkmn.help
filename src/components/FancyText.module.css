@@ -18,6 +18,14 @@
   font-size: 1.25rem;
 }
 
+.FancyText[data-font-size="xlarge"] {
+  font-size: 1.5rem;
+}
+
+.FancyText[data-inline] {
+  display: inline;
+}
+
 .FancyText[data-font-weight="inherit"] {
   font-weight: inherit;
 }
@@ -28,10 +36,6 @@
 
 .FancyText[data-font-weight="medium"] {
   font-weight: var(--weight-medium);
-}
-
-.FancyText[data-font-weight="bold"] {
-  font-weight: var(--weight-bold);
 }
 
 .FancyText[data-text-align="left"] {
@@ -48,4 +52,8 @@
 
 .FancyText[data-tabular-nums="true"] {
   font-variant-numeric: tabular-nums;
+}
+
+.FancyText:is(h1, h2, h3, h4, h5, h6) {
+  line-height: 1.25;
 }

@@ -24,7 +24,6 @@
 
   --weight-normal: 400;
   --weight-medium: 500;
-  --weight-bold: 600;
 
   --background-button-bg: linear-gradient(
       to bottom,
@@ -85,8 +84,6 @@
 :root[lang="zh-Hans"] {
   --weight-normal: 400;
   --weight-medium: 400;
-  /* ??? */
-  /* --weight-bold: 400; */
 }
 
 :root[data-theme="dark"] {

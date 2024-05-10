@@ -1,7 +1,7 @@
 .root {
   color: var(--color-fg4);
   font-size: 1.25rem;
-  font-weight: var(--weight-bold);
+  font-weight: var(--weight-medium);
   border: 1px solid var(--color-border3);
   border-radius: var(--border-radius2);
   padding: var(--padding4) var(--padding2);

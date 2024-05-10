@@ -2,11 +2,12 @@ import classNames from "classnames";
 import { HTMLAttributes, ReactNode } from "react";
 import styles from "./FancyText.module.css";
 
-export interface FancyTextProps extends HTMLAttributes<HTMLSpanElement> {
-  tag: "span" | "div" | "h1" | "h2" | "h3" | "p";
+export interface FancyTextProps extends HTMLAttributes<HTMLElement> {
+  tag: "span" | "div" | "h1" | "h2" | "h3" | "p" | "ul" | "ol";
   textAlign?: "left" | "center" | "right";
-  fontWeight?: "normal" | "medium" | "bold";
-  fontSize?: "small" | "medium" | "large";
+  fontWeight?: "normal" | "medium";
+  fontSize?: "small" | "medium" | "large" | "xlarge";
+  inline?: boolean;
   tabularNums?: boolean;
 }
 
@@ -17,6 +18,7 @@ export function FancyText({
   fontWeight,
   fontSize,
   tabularNums,
+  inline,
   ...props
 }: FancyTextProps): ReactNode {
   return (
@@ -26,6 +28,7 @@ export function FancyText({
       data-font-size={fontSize}
       data-font-weight={fontWeight}
       data-tabular-nums={tabularNums}
+      data-inline={inline}
       {...props}
     />
   );

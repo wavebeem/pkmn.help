@@ -31,10 +31,6 @@ input {
   font-weight: 500;
 }
 
-.weight-bold {
-  font-weight: 700;
-}
-
 :root[lang="ko"] .weight-medium,
 :root[lang="ja"] .weight-medium,
 :root[lang="zh-Hant"] .weight-medium,
@@ -200,6 +196,13 @@ input {
   border-color: var(--color-fg1);
   background: var(--color-fg1);
   color: var(--color-bg1);
+}
+
+.list-simple {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: var(--padding3);
 }
 
 @media (min-width: 40em) {
