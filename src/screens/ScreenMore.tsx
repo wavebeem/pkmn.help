@@ -122,7 +122,9 @@ export function ScreenMore({
 
         <Divider />
 
-        <h2 className={classH2}>{t("more.settings.heading")}</h2>
+        <FancyText tag="h2" fontSize="xlarge" fontWeight="medium">
+          {t("more.settings.heading")}
+        </FancyText>
 
         <div className="grid gap3 pb2">
           <Select
@@ -300,14 +302,15 @@ export function ScreenMore({
                 return <TranslationCard key={lang} lang={lang} />;
               })}
           </div>
-          <div className="pt2" />
         </CollapsibleSection>
 
         <Divider />
 
         <CollapsibleSection
           heading={
-            <h2 className={classH2InlineBlock}>{t("more.changes.heading")}</h2>
+            <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
+              {t("more.changes.heading")}
+            </FancyText>
           }
         >
           <p>
@@ -329,7 +332,9 @@ export function ScreenMore({
 
         <CollapsibleSection
           heading={
-            <h2 className={classH2InlineBlock}>{t("more.help.heading")}</h2>
+            <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
+              {t("more.help.heading")}
+            </FancyText>
           }
         >
           <div className="mv3">
@@ -345,7 +350,9 @@ export function ScreenMore({
 
         <CollapsibleSection
           heading={
-            <h2 className={classH2InlineBlock}>{t("more.privacy.heading")}</h2>
+            <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
+              {t("more.privacy.heading")}
+            </FancyText>
           }
         >
           <p>
@@ -367,9 +374,9 @@ export function ScreenMore({
 
         <CollapsibleSection
           heading={
-            <h2 className={classH2InlineBlock}>
+            <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
               {t("more.givingBack.heading")}
-            </h2>
+            </FancyText>
           }
         >
           <p>{t("more.givingBack.description")}</p>
@@ -379,7 +386,9 @@ export function ScreenMore({
 
         <CollapsibleSection
           heading={
-            <h2 className={classH2InlineBlock}>{t("more.thanks.heading")}</h2>
+            <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
+              {t("more.thanks.heading")}
+            </FancyText>
           }
         >
           <Flex direction="column" gap="large">
@@ -539,9 +548,9 @@ export function ScreenMore({
 
         <CollapsibleSection
           heading={
-            <h2 className={classH2InlineBlock}>
+            <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
               {t("more.openSource.heading")}
-            </h2>
+            </FancyText>
           }
         >
           <p>
@@ -563,9 +572,9 @@ export function ScreenMore({
 
         <CollapsibleSection
           heading={
-            <h2 className={classH2InlineBlock}>
+            <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
               {t("more.legalInfo.heading")}
-            </h2>
+            </FancyText>
           }
         >
           <p>
