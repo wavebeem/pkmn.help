@@ -587,7 +587,10 @@ export function ScreenMore({
           </CollapsibleSection>
           <Divider />
           <Flex padding="medium" />
-          <div aria-hidden="true">(ノ^_^)ノ</div>
+          <div aria-hidden="true">
+            (ノ^_^)ノ Have you tried pressing the Pokéball button at the top of
+            the page?
+          </div>
         </Flex>
       </Flex>
     </main>
