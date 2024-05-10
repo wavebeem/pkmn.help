@@ -11,6 +11,7 @@ import { Flex } from "./Flex";
 import { FancyText } from "./FancyText";
 import { ExternalLink } from "./ExternalLink";
 import { Divider } from "./Divider";
+import { Card } from "./Card";
 
 interface TranslationCardProps {
   lang: Lang;
@@ -18,7 +19,7 @@ interface TranslationCardProps {
 
 export function TranslationCard({ lang }: TranslationCardProps): JSX.Element {
   return (
-    <div className={styles.TranslationCard_root}>
+    <Card>
       <Flex direction="column" gap="medium">
         <Flex gap="small" wrap>
           <FancyText tag="h3" fontSize="large" fontWeight="medium">
@@ -50,6 +51,6 @@ export function TranslationCard({ lang }: TranslationCardProps): JSX.Element {
           </ExternalLink>
         </FancyText>
       </Flex>
-    </div>
+    </Card>
   );
 }

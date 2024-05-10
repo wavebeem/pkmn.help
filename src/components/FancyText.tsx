@@ -12,7 +12,7 @@ export interface FancyTextProps extends HTMLAttributes<HTMLElement> {
 }
 
 export function FancyText({
-  tag: Tag,
+  tag: Tag = "span",
   className,
   textAlign,
   fontWeight,

@@ -31,6 +31,11 @@ input {
   font-weight: 500;
 }
 
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 :root[lang="ko"] .weight-medium,
 :root[lang="ja"] .weight-medium,
 :root[lang="zh-Hant"] .weight-medium,

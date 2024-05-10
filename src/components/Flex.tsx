@@ -10,6 +10,9 @@ export interface FlexProps extends HTMLAttributes<HTMLDivElement> {
   gap?: "none" | "small" | "medium" | "large";
   justify?: "stretch" | "center" | "flex-start" | "flex-end";
   align?: "stretch" | "center" | "flex-start" | "flex-end";
+  padding?: "small" | "medium" | "large";
+  paddingX?: "small" | "medium" | "large";
+  paddingY?: "small" | "medium" | "large";
 }
 
 export function Flex({
@@ -21,6 +24,9 @@ export function Flex({
   gap = "none",
   justify,
   align,
+  padding,
+  paddingX,
+  paddingY,
   ...props
 }: FlexProps) {
   return (
@@ -32,6 +38,9 @@ export function Flex({
       data-justify={justify}
       data-align={align}
       data-flex={flex}
+      data-padding={padding}
+      data-padding-x={paddingX}
+      data-padding-y={paddingY}
       {...props}
     />
   );

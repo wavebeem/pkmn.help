@@ -4,6 +4,14 @@
 
 - Fixed minor issues with the disabled type in the type selector
 
+- Made the "More" page easier to browse
+
+  - Collapsible headings don't have empty unclickable space
+
+  - Most headings are open initially
+
+    - I've only closed the really long ones
+
 ## 2024-05-08
 
 - Made the table easier to read on the Team Defense page
