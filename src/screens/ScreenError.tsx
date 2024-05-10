@@ -1,78 +1,66 @@
-import classNames from "classnames";
-import { useState } from "react";
+import { Button } from "../components/Button";
+import { CopyButton } from "../components/CopyButton";
+import { ExternalLink } from "../components/ExternalLink";
+import { FancyText } from "../components/FancyText";
+import { Flex } from "../components/Flex";
 import { resetApp } from "../misc/resetApp";
-import { sleep } from "../misc/sleep";
+import styles from "./ScreenError.module.css";
 
-interface ScreenErrorProps {
+export type ScreenErrorProps = {
   error: Error;
-}
-
-const buttonClasses = classNames(
-  "no-underline",
-  "ba br2 pv2 ph3",
-  "f5",
-  "focus-simple",
-  "border1 button-shadow button-bg button-bg-hover color-inherit"
-);
+};
 
 export function ScreenError({ error }: ScreenErrorProps) {
   const message = `
 ${error.name}: ${error.message}
 
+## URL
+
 ${location.href}
+
+## User agent
 
 ${navigator.userAgent}
 
+## Local storage
+
 ${JSON.stringify(localStorage)}
+
+## Session storage
 
 ${JSON.stringify(sessionStorage)}
 `.trim();
 
-  async function copyMessage() {
-    try {
-      await navigator.clipboard.writeText(message);
-      setClickMessage("Copied!");
-      await sleep(2000);
-      setClickMessage("");
-    } catch {
-      setClickMessage("Failed to copy message");
-    }
-  }
-
-  const [clickMessage, setClickMessage] = useState("");
-
   return (
-    <div className="ph4 content-narrow f4 center fg2">
-      <h1>pkmn.help: Error</h1>
-      <p>
-        Please send an email to{" "}
-        <a href="mailto:pkmn@wavebeem.com" className="fg-link">
-          pkmn@wavebeem.com
-        </a>{" "}
-        describing how to reproduce this error, and include the following error
-        message:
-      </p>
-      <pre className="f5 bg1 pa2 br2 ba border2 pre-wrap word-break-all">
-        {message}
-      </pre>
-      <div className="flex flex-wrap gap3 items-center">
-        <button type="button" onClick={copyMessage} className={buttonClasses}>
-          Copy error message
-        </button>
-        <span hidden={!clickMessage} className="f5 fg3 bg3 br2 pv1 ph3">
-          {clickMessage}
-        </span>
-      </div>
-      <p>If the problem persists, you can try resetting the page:</p>
-      <button type="button" onClick={resetApp} className={buttonClasses}>
-        Reset
-      </button>
-      <p>
-        <b aria-hidden="true">&larr;</b>{" "}
-        <a href="/" className="f3 fg-link">
-          Back to pkmn.help
-        </a>
-      </p>
+    <div className="content-narrow center">
+      <Flex direction="column" gap="large" padding="large">
+        <FancyText tag="h1">Error</FancyText>
+        <FancyText tag="p">
+          Please copy the error message below and send it to{" "}
+          <a href="mailto:pkmn@wavebeem.com" className="fg-link">
+            pkmn@wavebeem.com
+          </a>
+          .
+        </FancyText>
+        <Flex>
+          <CopyButton text={message}>Copy error message</CopyButton>
+        </Flex>
+        <pre className={styles.ScreenError_pre}>{message}</pre>
+
+        <FancyText tag="p">Resetting the app may help:</FancyText>
+        <Flex>
+          <Button onClick={resetApp}>Reset</Button>
+        </Flex>
+
+        <FancyText tag="p">You can try returning to the main page.</FancyText>
+
+        <FancyText tag="p" fontSize="large" fontWeight="medium">
+          <FancyText tag="span" aria-hidden="true">
+            &larr;{" "}
+          </FancyText>
+          <ExternalLink href="/">Back to pkmn.help</ExternalLink>
+        </FancyText>
+      </Flex>
     </div>
   );
 }

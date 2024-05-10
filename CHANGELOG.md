@@ -12,6 +12,8 @@
 
     - I've only closed the really long ones
 
+- Simplified the error page (hopefully you've never seen it before...)
+
 ## 2024-05-08
 
 - Made the table easier to read on the Team Defense page
