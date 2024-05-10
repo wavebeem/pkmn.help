@@ -8,7 +8,6 @@ import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { Paginator } from "../components/Paginator";
 import { useSearch } from "../hooks/useSearch";
 import { Badge } from "../components/Badge";
-import { Icon } from "../components/Icon";
 import { EmptyState } from "../components/EmptyState";
 
 interface CoverageListProps {

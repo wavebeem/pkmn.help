@@ -15,7 +15,6 @@ import { saveFile } from "../misc/saveFile";
 import { useTypeCount } from "../hooks/useTypeCount";
 import { Spinner } from "../components/Spinner";
 import styles from "./ScreenWeaknessCoverage.module.css";
-import { Icon } from "../components/Icon";
 
 interface WeaknessCoverageProps {
   setCoverageTypes: (types: CoverageType[]) => void;
