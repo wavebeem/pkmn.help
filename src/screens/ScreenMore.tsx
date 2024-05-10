@@ -30,7 +30,6 @@ import {
   unofficialLanguages,
 } from "../misc/lang";
 import { resetApp } from "../misc/resetApp";
-import { IconButton } from "../components/IconButton";
 
 export type ScreenMoreProps = {
   needsAppUpdate: boolean;
