@@ -9,6 +9,10 @@
 
 - Fixed table sizing on the "Defense Team" screen
 
+- Changed the "Defense Team" team layout and behavior a little bit
+
+  - The Edit/Save button is now just an "Edit" toggle button
+
 - Made the "More" page easier to browse
 
   - Collapsible headings don't have empty unclickable space

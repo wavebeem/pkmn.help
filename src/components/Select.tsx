@@ -19,7 +19,7 @@ export function Select({
       <div className={styles.select}>
         <select
           aria-label={ariaLabel}
-          className="active-darken focus-simple truncate"
+          className="active-darken focus-simple"
           {...props}
         />
       </div>

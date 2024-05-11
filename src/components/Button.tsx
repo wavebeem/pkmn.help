@@ -2,18 +2,25 @@ import classNames from "classnames";
 import { ButtonHTMLAttributes } from "react";
 import styles from "./Button.module.css";
 
-export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {}
+export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {};
 
-export function Button({ className, ...props }: ButtonProps) {
+export function Button({
+  className,
+  "aria-pressed": ariaPressed,
+  ...props
+}: ButtonProps) {
   return (
     <button
-      {...props}
+      aria-pressed={ariaPressed}
       className={classNames(
         className,
         styles.root,
         "active-darken",
-        "focus-simple"
+        ariaPressed === true || ariaPressed === "true"
+          ? "focus-selected"
+          : "focus-simple"
       )}
+      {...props}
     />
   );
 }

@@ -3,6 +3,7 @@
   margin-top: var(--padding3);
   padding: var(--padding3);
   gap: var(--padding5);
+  grid-template-columns: minmax(0, 1fr);
 }
 
 @media (min-width: 1024px) {

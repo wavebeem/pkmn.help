@@ -28,6 +28,9 @@ import {
 } from "../misc/data-types";
 import { updateArrayAt } from "../misc/updateArrayAt";
 import styles from "./ScreenDefenseTeam.module.css";
+import { EmptyState } from "../components/EmptyState";
+import { Card } from "../components/Card";
+import { Divider } from "../components/Divider";
 
 function setAbilityAt({
   list,
@@ -194,29 +197,32 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
             <FancyText tag="h2" fontSize="large" fontWeight="medium">
               {t("defense.team.heading")}
             </FancyText>
-            <div className="flex flex-column gap3">
+            <Flex direction="column" gap="large">
               {teamTypes.length === 0 && (
-                <p className="fg4 f4 b m0 ba tc ma0 ph2 pv4 border3 br2">
-                  {t("defense.team.empty")}
-                </p>
+                <EmptyState>{t("defense.team.empty")}</EmptyState>
               )}
               {teamTypes.map((types, typeIndex) => {
                 const name = String(typeIndex + 1);
                 return (
-                  <div
-                    key={typeIndex}
-                    className="br3 ba border2 pa3 bg1 button-shadow"
-                  >
-                    <div className="flex flex-wrap gap2 items-center">
-                      <div className="f5 b pr2 tabular-nums">{name}</div>
-                      <div className="flex flex-column flex-row-ns flex-wrap justify-center gap2">
+                  <Card key={typeIndex}>
+                    <Flex wrap gap="medium" align="center" justify="flex-end">
+                      <FancyText tag="div" fontWeight="medium" tabularNums>
+                        {name}
+                      </FancyText>
+                      <Flex direction="row" wrap justify="center" gap="medium">
                         {types.map((t) => (
                           <Badge key={t} type={t} />
                         ))}
-                      </div>
-                      <div className="flex-auto" />
-                      <div className="flex flex-column gap2">
+                      </Flex>
+                      <Flex flex="auto" />
+                      <Flex
+                        direction="row"
+                        wrap
+                        justify="flex-end"
+                        gap="medium"
+                      >
                         <Button
+                          aria-pressed={typeIndex === teamIndex}
                           onClick={() => {
                             if (typeIndex === teamIndex) {
                               setTeamIndex(-1);
@@ -224,24 +230,8 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
                               setTeamIndex(typeIndex);
                             }
                           }}
-                          aria-label={t(
-                            typeIndex === teamIndex
-                              ? "defense.team.saveLong"
-                              : "defense.team.editLong",
-                            { name }
-                          )}
-                          title={t(
-                            typeIndex === teamIndex
-                              ? "defense.team.saveLong"
-                              : "defense.team.editLong",
-                            { name }
-                          )}
                         >
-                          {t(
-                            typeIndex === teamIndex
-                              ? "defense.team.save"
-                              : "defense.team.edit"
-                          )}
+                          {t("defense.team.edit")}
                         </Button>
                         <Button
                           onClick={() => {
@@ -258,13 +248,15 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
                         >
                           {t("defense.team.remove")}
                         </Button>
-                      </div>
-                    </div>
+                      </Flex>
+                    </Flex>
                     <Flex
                       hidden={typeIndex !== teamIndex}
                       direction="column"
                       gap="large"
                     >
+                      <div />
+                      <Divider />
                       <Flex direction="column" gap="medium">
                         <FancyText
                           tag="h3"
@@ -377,10 +369,10 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
                         })}
                       </Select>
                     </Flex>
-                  </div>
+                  </Card>
                 );
               })}
-            </div>
+            </Flex>
           </Flex>
           <Flex>
             <Button
@@ -416,7 +408,9 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
           </Select>
         </Flex>
         <Flex direction="column" gap="medium">
-          <FancyText tag="h2">{t("defense.team.tableHeading")}</FancyText>
+          <FancyText tag="h2" fontSize="large" fontWeight="medium">
+            {t("defense.team.tableHeading")}
+          </FancyText>
           <MatchupsTeam
             generation={generation}
             typesList={teamTypes}

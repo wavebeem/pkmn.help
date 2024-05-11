@@ -25,3 +25,9 @@
   color: var(--color-fg4);
   border-color: var(--color-border3);
 }
+
+.root[aria-pressed="true"] {
+  border-color: var(--color-fg1);
+  background: var(--color-fg1);
+  color: var(--color-bg1);
+}
