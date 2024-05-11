@@ -1,25 +1,25 @@
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Badge } from "./Badge";
-import { MonsterImage } from "./MonsterImage";
-import { getWikiLink, getWikiName } from "../misc/wiki";
-import styles from "./Monster.module.css";
-import { StatsTable } from "./StatsTable";
-import { Pokemon } from "../misc/data-types";
-import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { useComputedLanguage } from "../hooks/useComputedLanguage";
 import { characters } from "../misc/characters";
+import { Pokemon } from "../misc/data-types";
+import { formatMonsterNumber } from "../misc/formatMonsterNumber";
+import { getWikiLink, getWikiName } from "../misc/wiki";
+import { Badge } from "./Badge";
+import { ExternalLink } from "./ExternalLink";
 import { FancyLink } from "./FancyLink";
 import { FancyText } from "./FancyText";
-import { IconButton } from "./IconButton";
 import { Flex } from "./Flex";
-import { ExternalLink } from "./ExternalLink";
 import { Icon } from "./Icon";
+import { IconButton } from "./IconButton";
+import styles from "./Monster.module.css";
+import { MonsterImage } from "./MonsterImage";
+import { StatsTable } from "./StatsTable";
 
-export interface MonsterProps {
+export type MonsterProps = {
   pokemon: Pokemon;
   setQuery: (query: string) => void;
-}
+};
 
 // TODO: Finish removing Tachyons from here...
 export function Monster({ pokemon, setQuery }: MonsterProps) {
