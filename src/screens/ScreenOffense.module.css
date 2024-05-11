@@ -1,5 +1,6 @@
 .root {
   display: grid;
+  margin-top: var(--padding3);
   padding: var(--padding3);
   gap: var(--padding4);
 }

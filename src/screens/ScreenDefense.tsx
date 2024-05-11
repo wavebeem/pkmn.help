@@ -122,7 +122,7 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
   return (
     <main className={classNames(styles.root, "content-wide center")}>
       <Flex direction="column" gap="large">
-        <Flex direction="column" gap="small">
+        <Flex direction="column" gap="medium">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
             {t("defense.mode.heading")}
           </FancyText>
@@ -138,25 +138,38 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
             </NavLink>
           </div>
         </Flex>
-        <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
-        <TypeSelector
-          generation={generation}
-          value={types[0]}
-          onChange={updateTypeAt(0)}
-          disabledTypes={[]}
-          includeNone={false}
-        />
-        <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
-        <TypeSelector
-          generation={generation}
-          value={types[1] || Type.none}
-          onChange={updateTypeAt(1)}
-          disabledTypes={types.slice(0, 1)}
-          includeNone={true}
-        />
+
+        <Flex direction="column" gap="medium">
+          <FancyText tag="h2" fontSize="large" fontWeight="medium">
+            {t("defense.chooseFirst")}
+          </FancyText>
+          <TypeSelector
+            generation={generation}
+            value={types[0]}
+            onChange={updateTypeAt(0)}
+            disabledTypes={[]}
+            includeNone={false}
+          />
+        </Flex>
+
+        <Flex direction="column" gap="medium">
+          <FancyText tag="h2" fontSize="large" fontWeight="medium">
+            {t("defense.chooseSecond")}
+          </FancyText>
+          <TypeSelector
+            generation={generation}
+            value={types[1] || Type.none}
+            onChange={updateTypeAt(1)}
+            disabledTypes={types.slice(0, 1)}
+            includeNone={true}
+          />
+        </Flex>
+
         {Number(typeCount) === 3 && (
-          <>
-            <h2 className={classH2}>{t("defense.chooseThird")}</h2>
+          <Flex direction="column" gap="medium">
+            <FancyText tag="h2" fontSize="large" fontWeight="medium">
+              {t("defense.chooseThird")}
+            </FancyText>
             <TypeSelector
               generation={generation}
               value={types[2] || Type.none}
@@ -164,50 +177,50 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
               disabledTypes={types.slice(0, 2)}
               includeNone={true}
             />
-          </>
+          </Flex>
         )}
-        <div className="pt4">
-          <Select
-            label={t("defense.chooseAbility")}
-            value={ability}
-            onChange={(event) => {
-              setAbility(abilityNameFromString(event.target.value));
-            }}
-          >
-            <option value="">{t("defense.abilityNames.none")}</option>
-            <hr />
-            {sortedAbilityNames.map((name) => {
-              return (
-                <option key={name} value={name}>
-                  {t(`defense.abilityNames.${name}`)}
-                </option>
-              );
-            })}
-          </Select>
-        </div>
-        <div className="pt4">
-          <Select
-            label={t("defense.chooseTeraType")}
-            value={teraType}
-            onChange={(event) => {
-              setTeraType(typesFromString(event.target.value)[0]);
-            }}
-          >
-            <option value="">{t("types.none")}</option>
-            <hr />
-            {allTypes.map((name) => {
-              return (
-                <option key={name} value={name}>
-                  {t(`types.${name}`)}
-                </option>
-              );
-            })}
-          </Select>
-        </div>
-        <div className="pt4">
+
+        <Select
+          label={t("defense.chooseAbility")}
+          value={ability}
+          onChange={(event) => {
+            setAbility(abilityNameFromString(event.target.value));
+          }}
+        >
+          <option value="">{t("defense.abilityNames.none")}</option>
+          <hr />
+          {sortedAbilityNames.map((name) => {
+            return (
+              <option key={name} value={name}>
+                {t(`defense.abilityNames.${name}`)}
+              </option>
+            );
+          })}
+        </Select>
+
+        <Select
+          label={t("defense.chooseTeraType")}
+          value={teraType}
+          onChange={(event) => {
+            setTeraType(typesFromString(event.target.value)[0]);
+          }}
+        >
+          <option value="">{t("types.none")}</option>
+          <hr />
+          {allTypes.map((name) => {
+            return (
+              <option key={name} value={name}>
+                {t(`types.${name}`)}
+              </option>
+            );
+          })}
+        </Select>
+
+        <Flex>
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
-        </div>
+        </Flex>
       </Flex>
+
       <Flex direction="column" gap="large">
         <Matchups
           kind="defense"

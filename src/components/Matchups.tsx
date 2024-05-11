@@ -57,7 +57,7 @@ export function Matchups({
           const eff = list[0].effectiveness;
           const effectivenessDisplay = formatEffectiveness(eff, i18n.languages);
           return (
-            <Flex direction="column" gap="small">
+            <Flex direction="column" gap="medium">
               <FancyText tag="h2" fontWeight="medium" fontSize="large">
                 {kind === "offense"
                   ? t("offense.dealsXTo", { x: effectivenessDisplay })
