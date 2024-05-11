@@ -9,6 +9,11 @@ import { Paginator } from "../components/Paginator";
 import { useSearch } from "../hooks/useSearch";
 import { Badge } from "../components/Badge";
 import { EmptyState } from "../components/EmptyState";
+import { Flex } from "../components/Flex";
+import { FancyText } from "../components/FancyText";
+import { Icon } from "../components/Icon";
+import { FancyLink } from "../components/FancyLink";
+import styles from "./ScreenCoverageList.module.css";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";
@@ -32,75 +37,98 @@ export function ScreenCoverageList({
   });
   const items = partitionedMatchups[mode];
   return (
-    <main className="pa3 center content-narrow">
-      <h2 className="lh-title f4 mv3 weight-medium">
-        {t(`offense.coverageList.${mode}.heading`)}
-      </h2>
-      <p className="flex gap1 items-center">
-        &larr;{" "}
-        <Link to="/offense/" className="underline fg-link br1 focus-outline">
-          {t("coverage.back")}
-        </Link>
-      </p>
-      {types.length > 0 && (
-        <>
-          <p>{t(`offense.coverageList.${mode}.description`)}</p>
-          <div className="flex flex-wrap gap2">
-            {types.map((t) => (
-              <Badge key={t} type={t} />
-            ))}
-          </div>
-        </>
-      )}
-      <Paginator
-        setPage={setPage}
-        currentPage={page}
-        pageSize={20}
-        emptyState={<EmptyState>{t("offense.coverageList.empty")}</EmptyState>}
-        items={items}
-        renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
-        renderPage={(items) => {
-          return (
-            <ul className="list pa0 border3 bt">
-              {items.map(({ number, name, types }, i) => {
-                const dexParams = new URLSearchParams({ q: number, page: "1" });
-                const dexLink = `/pokedex/?${dexParams}`;
-                return (
-                  <li
-                    key={i}
-                    className="pv2 bb border3 flex flex-column flex-row-ns justify-between gap2"
-                  >
-                    <div className="flex flex-column align-center f4">
-                      <div className="fg3">
-                        {formatMonsterNumber(Number(number))}
-                      </div>
-                      <Link
-                        className="weight-medium flex-auto br1 no-underline fg-link focus-outline fit-content"
-                        to={dexLink}
-                      >
-                        {name}
-                      </Link>
-                    </div>
-                    <div className="flex flex-wrap gap2 justify-start items-center">
-                      {types.map((t) => (
-                        <Badge key={t} type={t} />
-                      ))}
-                    </div>
-                  </li>
-                );
-              })}
-            </ul>
-          );
-        }}
-      />
-      {items.length > 0 && (
-        <p className="flex gap1 items-center">
-          &larr;{" "}
+    <main className="center content-narrow">
+      <Flex direction="column" gap="large" padding="large">
+        <Flex padding="small" />
+
+        <FancyText tag="h2" fontSize="xlarge" fontWeight="medium">
+          {t(`offense.coverageList.${mode}.heading`)}
+        </FancyText>
+
+        <FancyText tag="p" fontSize="large" fontWeight="medium">
+          <Icon name="arrowLeft" />{" "}
           <Link to="/offense/" className="underline fg-link br1 focus-outline">
             {t("coverage.back")}
           </Link>
-        </p>
-      )}
+        </FancyText>
+
+        {types.length > 0 && (
+          <>
+            <FancyText tag="p">
+              {t(`offense.coverageList.${mode}.description`)}
+            </FancyText>
+            <Flex wrap gap="medium">
+              {types.map((t) => (
+                <Badge key={t} type={t} />
+              ))}
+            </Flex>
+          </>
+        )}
+
+        <Paginator
+          setPage={setPage}
+          currentPage={page}
+          pageSize={20}
+          emptyState={
+            <EmptyState>{t("offense.coverageList.empty")}</EmptyState>
+          }
+          items={items}
+          renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
+          renderPage={(items) => {
+            return (
+              <Flex direction="column" gap="large" paddingY="large">
+                {items.map(({ number, name, types }, i) => {
+                  const dexParams = new URLSearchParams({
+                    q: number,
+                    page: "1",
+                  });
+                  const dexLink = `/pokedex/?${dexParams}`;
+                  return (
+                    <div key={i} className={styles.dexItem}>
+                      <Flex direction="column">
+                        <FancyText tag="div" color="3" fontSize="large">
+                          {formatMonsterNumber(Number(number))}
+                        </FancyText>
+                        <FancyText
+                          tag="div"
+                          fontWeight="medium"
+                          fontSize="large"
+                        >
+                          <FancyLink underline="never" to={dexLink}>
+                            {name}
+                          </FancyLink>
+                        </FancyText>
+                      </Flex>
+                      <Flex
+                        wrap
+                        gap="medium"
+                        justify="flex-start"
+                        align="center"
+                      >
+                        {types.map((t) => (
+                          <Badge key={t} type={t} />
+                        ))}
+                      </Flex>
+                    </div>
+                  );
+                })}
+              </Flex>
+            );
+          }}
+        />
+
+        {items.length > 0 && (
+          <FancyText tag="p" fontSize="large" fontWeight="medium">
+            <Icon name="arrowLeft" />{" "}
+            <Link
+              to="/offense/"
+              className="underline fg-link br1 focus-outline"
+            >
+              {t("coverage.back")}
+            </Link>
+          </FancyText>
+        )}
+      </Flex>
     </main>
   );
 }

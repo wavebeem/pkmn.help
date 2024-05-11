@@ -22,6 +22,18 @@
   font-size: 1.5rem;
 }
 
+.FancyText[data-color="1"] {
+  color: var(--color-fg1);
+}
+
+.FancyText[data-color="2"] {
+  color: var(--color-fg2);
+}
+
+.FancyText[data-color="3"] {
+  color: var(--color-fg3);
+}
+
 .FancyText[data-inline] {
   display: inline;
 }

@@ -3,6 +3,7 @@ import { CopyButton } from "../components/CopyButton";
 import { ExternalLink } from "../components/ExternalLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
+import { Icon } from "../components/Icon";
 import { resetApp } from "../misc/resetApp";
 import styles from "./ScreenError.module.css";
 
@@ -55,9 +56,7 @@ ${JSON.stringify(sessionStorage)}
         <FancyText tag="p">You can try returning to the main page.</FancyText>
 
         <FancyText tag="p" fontSize="large" fontWeight="medium">
-          <FancyText tag="span" aria-hidden="true">
-            &larr;{" "}
-          </FancyText>
+          <Icon name="arrowLeft" />{" "}
           <ExternalLink href="/">Back to pkmn.help</ExternalLink>
         </FancyText>
       </Flex>

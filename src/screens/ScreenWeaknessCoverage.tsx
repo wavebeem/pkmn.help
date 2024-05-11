@@ -18,6 +18,7 @@ import {
 import { pickFile } from "../misc/pickFile";
 import { saveFile } from "../misc/saveFile";
 import styles from "./ScreenWeaknessCoverage.module.css";
+import { Icon } from "../components/Icon";
 
 export type WeaknessCoverageProps = {
   setCoverageTypes: (types: CoverageType[]) => void;
@@ -166,7 +167,7 @@ export function ScreenWeaknessCoverage({
         <Divider />
 
         <FancyText tag="p" fontSize="large" fontWeight="medium">
-          &larr;{" "}
+          <Icon name="arrowLeft" />{" "}
           <FancyLink
             to="/offense/"
             className="underline fg-link br1 focus-outline"

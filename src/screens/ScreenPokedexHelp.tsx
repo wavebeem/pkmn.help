@@ -3,6 +3,7 @@ import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import styles from "./ScreenPokedexHelp.module.css";
+import { Icon } from "../components/Icon";
 
 export function ScreenPokedexHelp() {
   const { t } = useTranslation();
@@ -60,7 +61,8 @@ export function ScreenPokedexHelp() {
         </FancyText>
 
         <FancyText tag="p" fontSize="large" fontWeight="medium">
-          &larr; <FancyLink to="/pokedex/">{t("pokedexHelp.back")}</FancyLink>
+          <Icon name="arrowLeft" />{" "}
+          <FancyLink to="/pokedex/">{t("pokedexHelp.back")}</FancyLink>
         </FancyText>
       </Flex>
     </main>
