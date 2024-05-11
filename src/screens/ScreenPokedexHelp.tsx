@@ -8,6 +8,7 @@ export function ScreenPokedexHelp() {
   const { t } = useTranslation();
   return (
     <main className="center content-narrow">
+      <Flex flex="auto" padding="medium" />
       <Flex direction="column" gap="large" padding="large">
         <FancyText tag="h2" fontSize="large" fontWeight="medium">
           {t("pokedexHelp.searchByName.heading")}
