@@ -16,7 +16,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
   const { hp, attack, defense, spAttack, spDefense, speed } = pokemon;
   const total = hp + attack + defense + spAttack + spDefense + speed;
   const { t } = useTranslation();
-  const hasRoomForFullText = useMediaQuery("(min-width: 600px)");
+  const hasRoomForFullText = useMediaQuery("(min-width: 640px)");
   return (
     <div className={styles.root}>
       <FancyText

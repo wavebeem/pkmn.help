@@ -38,9 +38,9 @@ ${JSON.stringify(sessionStorage)}
         <FancyText tag="h1">Error</FancyText>
         <FancyText tag="p">
           Please copy the error message below and send it to{" "}
-          <a href="mailto:pkmn@wavebeem.com" className="fg-link">
+          <ExternalLink href="mailto:pkmn@wavebeem.com">
             pkmn@wavebeem.com
-          </a>
+          </ExternalLink>
           .
         </FancyText>
         <Flex>

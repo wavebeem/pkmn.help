@@ -168,12 +168,7 @@ export function ScreenWeaknessCoverage({
 
         <FancyText tag="p" fontSize="large" fontWeight="medium">
           <Icon name="arrowLeft" />{" "}
-          <FancyLink
-            to="/offense/"
-            className="underline fg-link br1 focus-outline"
-          >
-            {t("coverage.back")}
-          </FancyLink>
+          <FancyLink to="/offense/">{t("coverage.back")}</FancyLink>
         </FancyText>
       </Flex>
     </main>

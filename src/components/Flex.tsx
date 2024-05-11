@@ -7,7 +7,7 @@ export interface FlexProps extends HTMLAttributes<HTMLDivElement> {
   flex?: "auto";
   direction?: "row" | "column";
   wrap?: boolean;
-  gap?: "none" | "small" | "medium" | "large";
+  gap?: "none" | "small" | "medium" | "large" | "xlarge";
   justify?: "stretch" | "center" | "flex-start" | "flex-end";
   align?: "stretch" | "center" | "flex-start" | "flex-end";
   padding?: "small" | "medium" | "large";

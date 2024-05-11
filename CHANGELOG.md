@@ -4,6 +4,9 @@
 
 - Fixed minor issues with the disabled type in the type selector
 
+- "Offense" screen will avoid the 2-column layout on especially small screen
+  sizes
+
 - Made the "More" page easier to browse
 
   - Collapsible headings don't have empty unclickable space

@@ -34,6 +34,10 @@
   gap: var(--padding3);
 }
 
+.Flex[data-gap="xlarge"] {
+  gap: var(--padding4);
+}
+
 .Flex[data-padding="small"] {
   padding: var(--padding1);
 }

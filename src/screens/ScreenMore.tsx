@@ -62,7 +62,7 @@ export function ScreenMore({
                       {t("banners.updateReady.description")}
                     </FancyText>
                   </Flex>
-                  <Button className="ml3" type="button" onClick={updateApp}>
+                  <Button type="button" onClick={updateApp}>
                     {t("banners.updateReady.update")}
                   </Button>
                 </Flex>
@@ -268,7 +268,7 @@ export function ScreenMore({
               <FancyText tag="p">
                 I&apos;m offering payment for translation in some languages.
               </FancyText>
-              <div className="flex flex-column gap3">
+              <Flex direction="column" gap="large">
                 {supportedLanguages
                   .slice(0)
                   .filter((lang) => !(lang === "en" || lang === "ja-Hrkt"))
@@ -285,7 +285,7 @@ export function ScreenMore({
                   .map((lang) => {
                     return <TranslationCard key={lang} lang={lang} />;
                   })}
-              </div>
+              </Flex>
             </Flex>
           </CollapsibleSection>
 

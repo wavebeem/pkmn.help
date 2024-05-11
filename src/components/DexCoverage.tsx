@@ -8,6 +8,7 @@ import styles from "./DexCoverage.module.css";
 import { Flex } from "./Flex";
 import { Spinner } from "./Spinner";
 import { FancyText } from "./FancyText";
+import { FancyLink } from "./FancyLink";
 
 interface DexCoverageProps {
   generation: Generation;
@@ -53,12 +54,9 @@ export function DexCoverage({
           <Flex gap="medium">
             <div>
               {getPercent(weak.length)}%{" "}
-              <Link
-                to={`/offense/coverage/weakness/?${typeParams}`}
-                className="underline fg-link br1 focus-outline"
-              >
+              <FancyLink to={`/offense/coverage/weakness/?${typeParams}`}>
                 {t("offense.coverage.weakness")}
-              </Link>
+              </FancyLink>
             </div>
             <Flex flex="auto" />
             <FancyText tag="div" textAlign="right">
@@ -72,12 +70,9 @@ export function DexCoverage({
           <Flex gap="medium">
             <div>
               {getPercent(normal.length)}%{" "}
-              <Link
-                to={`/offense/coverage/normal/?${typeParams}`}
-                className="underline fg-link br1 focus-outline"
-              >
+              <FancyLink to={`/offense/coverage/normal/?${typeParams}`}>
                 {t("offense.coverage.normal")}
-              </Link>
+              </FancyLink>
             </div>
             <Flex flex="auto" />
             <FancyText tag="div" textAlign="right">
@@ -91,12 +86,9 @@ export function DexCoverage({
           <Flex gap="medium">
             <div>
               {getPercent(resist.length)}%{" "}
-              <Link
-                to={`/offense/coverage/resistance/?${typeParams}`}
-                className="underline fg-link br1 focus-outline"
-              >
+              <FancyLink to={`/offense/coverage/resistance/?${typeParams}`}>
                 {t("offense.coverage.resistance")}
-              </Link>
+              </FancyLink>
             </div>
             <Flex flex="auto" />
             <FancyText tag="div" textAlign="right">

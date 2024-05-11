@@ -7,6 +7,8 @@ import styles from "./Matchups.module.css";
 import { PlainBadge } from "./PlainBadge";
 import classNames from "classnames";
 import { characters } from "../misc/characters";
+import { FancyText } from "./FancyText";
+import { Flex } from "./Flex";
 
 interface MatchupsProps {
   kind: "offense" | "defense";
@@ -47,34 +49,36 @@ export function Matchups({
   const grouped = matchups.groupByEffectiveness();
   return (
     <div id={`matchup-${kind}`}>
-      {grouped.map((list) => {
-        if (list.length === 0) {
-          return null;
-        }
-        const eff = list[0].effectiveness;
-        const effectivenessDisplay = formatEffectiveness(eff, i18n.languages);
-        return (
-          <div key={eff}>
-            <h2 className="f4 weight-medium mt4 mb2">
-              {kind === "offense"
-                ? t("offense.dealsXTo", { x: effectivenessDisplay })
-                : t("defense.takesXFrom", { x: effectivenessDisplay })}
-            </h2>
-            <div className={classNames("grid gap1", styles.Matchups)}>
-              {list.map((x) => {
-                if (kind === "offense" && x.formName === "stellar") {
-                  return (
-                    <PlainBadge key="form-tera">
-                      {t("offense.teraPokemon")}
-                    </PlainBadge>
-                  );
-                }
-                return <Badge key={`type-${x.type}`} type={x.type} />;
-              })}
-            </div>
-          </div>
-        );
-      })}
+      <Flex direction="column" gap="large">
+        {grouped.map((list) => {
+          if (list.length === 0) {
+            return null;
+          }
+          const eff = list[0].effectiveness;
+          const effectivenessDisplay = formatEffectiveness(eff, i18n.languages);
+          return (
+            <Flex direction="column" gap="small">
+              <FancyText tag="h2" fontWeight="medium" fontSize="large">
+                {kind === "offense"
+                  ? t("offense.dealsXTo", { x: effectivenessDisplay })
+                  : t("defense.takesXFrom", { x: effectivenessDisplay })}
+              </FancyText>
+              <div className={classNames(styles.grid)}>
+                {list.map((x) => {
+                  if (kind === "offense" && x.formName === "stellar") {
+                    return (
+                      <PlainBadge key="form-tera">
+                        {t("offense.teraPokemon")}
+                      </PlainBadge>
+                    );
+                  }
+                  return <Badge key={`type-${x.type}`} type={x.type} />;
+                })}
+              </div>
+            </Flex>
+          );
+        })}
+      </Flex>
     </div>
   );
 }

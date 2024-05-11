@@ -1,4 +1,6 @@
-.Matchups {
+.grid {
+  display: grid;
+  gap: var(--padding1);
   grid-template-columns: repeat(
     auto-fill,
     minmax(calc(var(--type-min-width) + 16px), 1fr)

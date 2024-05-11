@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import styles from "./CollapsibleSection.module.css";
+import classNames from "classnames";
 
 interface CollapsibleSectionProps {
   initiallyOpen?: boolean;
@@ -14,7 +15,11 @@ export function CollapsibleSection({
 }: CollapsibleSectionProps): JSX.Element {
   return (
     <details className={styles.details} open={initiallyOpen}>
-      <summary className="pointer no-select active-darken">{heading}</summary>
+      <summary
+        className={classNames(styles.summary, "active-darken", "no-select")}
+      >
+        {heading}
+      </summary>
       {children}
     </details>
   );

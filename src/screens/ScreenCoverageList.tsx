@@ -47,9 +47,7 @@ export function ScreenCoverageList({
 
         <FancyText tag="p" fontSize="large" fontWeight="medium">
           <Icon name="arrowLeft" />{" "}
-          <Link to="/offense/" className="underline fg-link br1 focus-outline">
-            {t("coverage.back")}
-          </Link>
+          <FancyLink to="/offense/">{t("coverage.back")}</FancyLink>
         </FancyText>
 
         {types.length > 0 && (
@@ -120,12 +118,7 @@ export function ScreenCoverageList({
         {items.length > 0 && (
           <FancyText tag="p" fontSize="large" fontWeight="medium">
             <Icon name="arrowLeft" />{" "}
-            <Link
-              to="/offense/"
-              className="underline fg-link br1 focus-outline"
-            >
-              {t("coverage.back")}
-            </Link>
+            <FancyLink to="/offense/">{t("coverage.back")}</FancyLink>
           </FancyText>
         )}
       </Flex>
