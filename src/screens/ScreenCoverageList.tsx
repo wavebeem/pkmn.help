@@ -1,18 +1,17 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
-import { partitionMatchups } from "../misc/data-matchups";
-import { Generation } from "../misc/data-generations";
-import { CoverageType, typesFromString } from "../misc/data-types";
-import { formatMonsterNumber } from "../misc/formatMonsterNumber";
-import { Paginator } from "../components/Paginator";
-import { useSearch } from "../hooks/useSearch";
 import { Badge } from "../components/Badge";
 import { EmptyState } from "../components/EmptyState";
-import { Flex } from "../components/Flex";
-import { FancyText } from "../components/FancyText";
-import { Icon } from "../components/Icon";
 import { FancyLink } from "../components/FancyLink";
+import { FancyText } from "../components/FancyText";
+import { Flex } from "../components/Flex";
+import { Icon } from "../components/Icon";
+import { Paginator } from "../components/Paginator";
+import { useSearch } from "../hooks/useSearch";
+import { Generation } from "../misc/data-generations";
+import { partitionMatchups } from "../misc/data-matchups";
+import { CoverageType, typesFromString } from "../misc/data-types";
+import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import styles from "./ScreenCoverageList.module.css";
 
 interface CoverageListProps {

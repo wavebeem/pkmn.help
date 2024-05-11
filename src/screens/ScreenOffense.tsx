@@ -1,24 +1,24 @@
 import classNames from "classnames";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useNavigate } from "react-router-dom";
-import { Generation } from "../misc/data-generations";
-import {
-  CoverageType,
-  removeInvalidOffenseTypesForGeneration,
-  Type,
-  typesFromString,
-} from "../misc/data-types";
+import { useNavigate } from "react-router-dom";
+import { useSessionStorage } from "usehooks-ts";
+import { CopyButton } from "../components/CopyButton";
 import { DexCoverage } from "../components/DexCoverage";
+import { FancyLink } from "../components/FancyLink";
+import { FancyText } from "../components/FancyText";
+import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
 import { useSearch } from "../hooks/useSearch";
-import { useSessionStorage } from "usehooks-ts";
-import { CopyButton } from "../components/CopyButton";
+import { Generation } from "../misc/data-generations";
+import {
+  CoverageType,
+  Type,
+  removeInvalidOffenseTypesForGeneration,
+  typesFromString,
+} from "../misc/data-types";
 import styles from "./ScreenOffense.module.css";
-import { FancyText } from "../components/FancyText";
-import { Flex } from "../components/Flex";
-import { FancyLink } from "../components/FancyLink";
 
 export type OffenseProps = {
   generation: Generation;

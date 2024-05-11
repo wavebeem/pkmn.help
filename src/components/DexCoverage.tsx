@@ -1,14 +1,13 @@
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import { Generation } from "../misc/data-generations";
 import { partitionMatchups } from "../misc/data-matchups";
 import { CoverageType, Type } from "../misc/data-types";
-import { Meter } from "./Meter";
 import styles from "./DexCoverage.module.css";
-import { Flex } from "./Flex";
-import { Spinner } from "./Spinner";
-import { FancyText } from "./FancyText";
 import { FancyLink } from "./FancyLink";
+import { FancyText } from "./FancyText";
+import { Flex } from "./Flex";
+import { Meter } from "./Meter";
+import { Spinner } from "./Spinner";
 
 interface DexCoverageProps {
   generation: Generation;
