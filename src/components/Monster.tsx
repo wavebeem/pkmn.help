@@ -1,7 +1,6 @@
 import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useComputedLanguage } from "../hooks/useComputedLanguage";
-import { characters } from "../misc/characters";
 import { Pokemon } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { getWikiLink, getWikiName } from "../misc/wiki";
@@ -21,7 +20,6 @@ export type MonsterProps = {
   setQuery: (query: string) => void;
 };
 
-// TODO: Finish removing Tachyons from here...
 export function Monster({ pokemon, setQuery }: MonsterProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const { t, i18n } = useTranslation();
@@ -36,15 +34,23 @@ export function Monster({ pokemon, setQuery }: MonsterProps) {
   });
   const speciesName = pokemon.speciesNames[language] || pokemon.speciesNames.en;
   const formName = pokemon.formNames[language] || pokemon.formNames.en;
-  const formattedFormName = formName ? `(${formName})` : characters.nbsp;
   const idPrefix = `pokemon-${pokemon.id}`;
   const monsterParams = new URLSearchParams({ q: String(pokemon.number) });
   return (
     <div className={styles.root}>
-      <div className="flex flex flex-column flex-row-ns items-center-ns gap2">
-        <div className="flex items-center gap2">
-          <div className="fg3 mv0 tabular-nums f5">{displayNumber}</div>
-          <FancyText tag="h2" id={`${idPrefix}-name`} fontSize="large">
+      <Flex direction="column">
+        <Flex align="center" gap="medium">
+          <FancyText
+            tag="h2"
+            id={`${idPrefix}-name`}
+            fontSize="xlarge"
+            fontWeight="medium"
+          >
+            {speciesName}
+          </FancyText>
+        </Flex>
+        <Flex gap="medium">
+          <FancyText tag="div" tabularNums color="3">
             <FancyLink
               to={{ search: monsterParams.toString() }}
               underline="never"
@@ -53,13 +59,13 @@ export function Monster({ pokemon, setQuery }: MonsterProps) {
                 setQuery(String(pokemon.number));
               }}
             >
-              {speciesName}
+              {displayNumber}
             </FancyLink>
           </FancyText>
-        </div>
-        <div className="nv2 fg3 f5" id={`${idPrefix}-form`}>
-          {formattedFormName}
-        </div>
+          <FancyText tag="div" color="2" id={`${idPrefix}-form`}>
+            {formName}
+          </FancyText>
+        </Flex>
         <div className={styles.buttonContainer}>
           <audio
             ref={audioRef}
@@ -113,13 +119,13 @@ export function Monster({ pokemon, setQuery }: MonsterProps) {
             </IconButton>
           )}
         </div>
-      </div>
+      </Flex>
       <div className={styles.monster}>
         <div className={styles.monsterIcon}>
           <Flex direction="column">
-            <div className="pv3 flex justify-center">
+            <Flex paddingY="large" justify="center">
               <MonsterImage pokemonID={pokemon.id} shiny={shiny} />
-            </div>
+            </Flex>
             <Flex wrap gap="small" justify="center" align="flex-start">
               {pokemon.types.map((t, i) => (
                 <Badge key={i} type={t} />
