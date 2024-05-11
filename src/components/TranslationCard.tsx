@@ -27,12 +27,12 @@ export function TranslationCard({ lang }: TranslationCardProps): JSX.Element {
           </FancyText>
           <Flex flex="auto" />
           {!officialLanguagesSet.has(lang as any) && (
-            <span className={styles.TranslationCard_pill}>
+            <span className={styles.pill}>
               <span aria-hidden="true">🏗️</span> Unofficial
             </span>
           )}
           {Boolean(languageBounty[lang]) && (
-            <span className={styles.TranslationCard_pill}>
+            <span className={styles.pill}>
               <span aria-hidden="true">💰</span> {languageBounty[lang]} USD
             </span>
           )}

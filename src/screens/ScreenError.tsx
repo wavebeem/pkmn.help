@@ -45,7 +45,7 @@ ${JSON.stringify(sessionStorage)}
         <Flex>
           <CopyButton text={message}>Copy error message</CopyButton>
         </Flex>
-        <pre className={styles.ScreenError_pre}>{message}</pre>
+        <pre className={styles.pre}>{message}</pre>
 
         <FancyText tag="p">Resetting the app may help:</FancyText>
         <Flex>

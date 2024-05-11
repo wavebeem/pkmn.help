@@ -1,4 +1,4 @@
-.PlainBadge {
+.root {
   border-radius: var(--border-radius2);
   border: 1px solid var(--color-border1);
   background: var(--color-bg3);
@@ -7,7 +7,7 @@
   padding: 2px;
 }
 
-.PlainBadge_content {
+.content {
   background: var(--color-bg1);
   border-radius: var(--border-radius1);
   border: 1px solid transparent;
