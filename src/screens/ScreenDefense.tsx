@@ -126,7 +126,7 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
             {t("defense.mode.heading")}
           </FancyText>
-          <div className="flex flex-wrap gap2">
+          <Flex wrap gap="medium">
             <NavLink to="" className={getTabClass({ isActive: true })}>
               {t("defense.mode.solo")}
             </NavLink>
@@ -136,7 +136,7 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
             >
               {t("defense.mode.team")}
             </NavLink>
-          </div>
+          </Flex>
         </Flex>
 
         <Flex direction="column" gap="medium">
