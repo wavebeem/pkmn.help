@@ -21,6 +21,9 @@ import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
 import { CopyButton } from "../components/CopyButton";
 import { useSessionStorage } from "usehooks-ts";
+import styles from "./ScreenDefense.module.css";
+import { Flex } from "../components/Flex";
+import { FancyText } from "../components/FancyText";
 
 const classH2 = "f4 weight-medium mb2 mt4";
 
@@ -117,20 +120,24 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
     });
 
   return (
-    <main className="ph3 pt0 pb4 content-wide center flex flex-column flex-row-ns">
-      <div className="flex-auto w-50-ns">
-        <h2 className={classH2}>{t("defense.mode.heading")}</h2>
-        <div className="flex flex-wrap gap2">
-          <NavLink to="" className={getTabClass({ isActive: true })}>
-            {t("defense.mode.solo")}
-          </NavLink>
-          <NavLink
-            to="/defense/team/"
-            className={getTabClass({ isActive: false })}
-          >
-            {t("defense.mode.team")}
-          </NavLink>
-        </div>
+    <main className={classNames(styles.root, "content-wide center")}>
+      <Flex direction="column" gap="large">
+        <Flex direction="column" gap="small">
+          <FancyText tag="h2" fontSize="large" fontWeight="medium">
+            {t("defense.mode.heading")}
+          </FancyText>
+          <div className="flex flex-wrap gap2">
+            <NavLink to="" className={getTabClass({ isActive: true })}>
+              {t("defense.mode.solo")}
+            </NavLink>
+            <NavLink
+              to="/defense/team/"
+              className={getTabClass({ isActive: false })}
+            >
+              {t("defense.mode.team")}
+            </NavLink>
+          </div>
+        </Flex>
         <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
         <TypeSelector
           generation={generation}
@@ -200,9 +207,8 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
         <div className="pt4">
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
         </div>
-      </div>
-      <div className="flex-auto w-50-ns pl5-ns">
-        <hr className="dn-ns subtle-hr mv4" />
+      </Flex>
+      <Flex direction="column" gap="large">
         <Matchups
           kind="defense"
           generation={generation}
@@ -210,7 +216,7 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
           ability={ability}
           teraType={teraType}
         />
-      </div>
+      </Flex>
     </main>
   );
 }
