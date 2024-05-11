@@ -1,14 +1,18 @@
-import classNames from "classnames";
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { Badge } from "../components/Badge";
 import { Button } from "../components/Button";
 import { CopyButton } from "../components/CopyButton";
+import { DefenseTabs } from "../components/DefenseTabs";
+import { Flex } from "../components/Flex";
 import { MatchupsTeam, MatchupsTeamProps } from "../components/MatchupsTeam";
 import { Select } from "../components/Select";
 import { TypeSelector } from "../components/TypeSelector";
+import { useScrollToFragment } from "../hooks/useScrollToFragment";
+import { useSearch } from "../hooks/useSearch";
+import { useTypeCount } from "../hooks/useTypeCount";
 import { Generation } from "../misc/data-generations";
 import {
   AbilityName,
@@ -21,28 +25,8 @@ import {
   typesWithoutNone,
 } from "../misc/data-types";
 import { updateArrayAt } from "../misc/updateArrayAt";
-import { useScrollToFragment } from "../hooks/useScrollToFragment";
-import { useSearch } from "../hooks/useSearch";
-import { useTypeCount } from "../hooks/useTypeCount";
-import { Flex } from "../components/Flex";
 
 const classH2 = "f4 weight-medium mb2 mt4";
-
-const tabClass = classNames([
-  "active-darken",
-  "no-underline",
-  "pv2 ph3 f5",
-  "focus-tab",
-  "tc",
-  "ba border1 br-pill",
-  "bg1 fg1",
-]);
-
-const tabClassActive = classNames(["button-selected"]);
-
-function getTabClass({ isActive }: { isActive: boolean }): string {
-  return classNames(tabClass, isActive && tabClassActive);
-}
 
 function setAbilityAt({
   list,
@@ -198,14 +182,7 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
     <main className="ph3 pt0 pb4 content-wide center flex flex-column flex-row-l">
       <div className="flex-auto w-40-l">
         <h2 className={classH2}>{t("defense.mode.heading")}</h2>
-        <div className="flex flex-wrap gap2">
-          <NavLink to="/defense/" className={getTabClass({ isActive: false })}>
-            {t("defense.mode.solo")}
-          </NavLink>
-          <NavLink to="" className={getTabClass({ isActive: true })}>
-            {t("defense.mode.team")}
-          </NavLink>
-        </div>
+        <DefenseTabs />
         <h2 className={classH2}>{t("defense.team.heading")}</h2>
         <div className="flex flex-column gap3">
           {teamTypes.length === 0 && (

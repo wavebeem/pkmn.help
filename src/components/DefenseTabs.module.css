@@ -1,0 +1,14 @@
+.tab {
+  text-decoration: none;
+  padding: var(--padding2) var(--padding3);
+  border: 1px solid var(--color-border1);
+  border-radius: var(--border-radius-pill);
+  background: var(--color-bg1);
+  color: var(--color-fg1);
+}
+
+.tab[aria-current="page"] {
+  background: var(--color-fg1);
+  color: var(--color-bg1);
+  border-color: transparent;
+}

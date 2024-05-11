@@ -1,47 +1,30 @@
 import classNames from "classnames";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useSessionStorage } from "usehooks-ts";
+import { CopyButton } from "../components/CopyButton";
+import { DefenseTabs } from "../components/DefenseTabs";
+import { FancyText } from "../components/FancyText";
+import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { Select } from "../components/Select";
 import { TypeSelector } from "../components/TypeSelector";
+import { useScrollToFragment } from "../hooks/useScrollToFragment";
+import { useSearch } from "../hooks/useSearch";
+import { useTypeCount } from "../hooks/useTypeCount";
 import { Generation } from "../misc/data-generations";
 import {
   AbilityName,
   Type,
   abilities,
   abilityNameFromString,
-  removeNones,
   types as allTypes,
+  removeNones,
   typesFromString,
 } from "../misc/data-types";
 import { updateArrayAt } from "../misc/updateArrayAt";
-import { useScrollToFragment } from "../hooks/useScrollToFragment";
-import { useSearch } from "../hooks/useSearch";
-import { useTypeCount } from "../hooks/useTypeCount";
-import { CopyButton } from "../components/CopyButton";
-import { useSessionStorage } from "usehooks-ts";
 import styles from "./ScreenDefense.module.css";
-import { Flex } from "../components/Flex";
-import { FancyText } from "../components/FancyText";
-
-const classH2 = "f4 weight-medium mb2 mt4";
-
-const tabClass = classNames([
-  "active-darken",
-  "no-underline",
-  "pv2 ph3 f5",
-  "focus-tab",
-  "tc",
-  "ba border1 br-pill",
-  "bg1 fg1",
-]);
-
-const tabClassActive = classNames(["button-selected"]);
-
-function getTabClass({ isActive }: { isActive: boolean }): string {
-  return classNames(tabClass, isActive && tabClassActive);
-}
 
 interface ScreenDefenseProps {
   generation: Generation;
@@ -126,17 +109,7 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
             {t("defense.mode.heading")}
           </FancyText>
-          <Flex wrap gap="medium">
-            <NavLink to="" className={getTabClass({ isActive: true })}>
-              {t("defense.mode.solo")}
-            </NavLink>
-            <NavLink
-              to="/defense/team/"
-              className={getTabClass({ isActive: false })}
-            >
-              {t("defense.mode.team")}
-            </NavLink>
-          </Flex>
+          <DefenseTabs />
         </Flex>
 
         <Flex direction="column" gap="medium">
