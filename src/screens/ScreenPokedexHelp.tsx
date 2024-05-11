@@ -9,6 +9,7 @@ export function ScreenPokedexHelp() {
   return (
     <main className="center content-narrow">
       <Flex flex="auto" padding="medium" />
+      <Flex flex="auto" padding="small" />
       <Flex direction="column" gap="large" padding="large">
         <FancyText tag="h2" fontSize="large" fontWeight="medium">
           {t("pokedexHelp.searchByName.heading")}
