@@ -148,8 +148,7 @@ export function App() {
           />
         </div>
       )}
-      {/* TODO */}
-      <div className="flex-auto">
+      <div className={styles.root}>
         <h1 className={styles.header}>
           <button
             className={styles.headerButton}

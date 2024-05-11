@@ -1,3 +1,7 @@
+.root {
+  flex: auto;
+}
+
 .easterEgg {
   pointer-events: none;
   position: fixed;
