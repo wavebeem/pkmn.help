@@ -14,7 +14,7 @@ export function Select({
   ...props
 }: SelectProps) {
   return (
-    <div>
+    <div className={styles.root}>
       {label && <div className={styles.label}>{label}</div>}
       <div className={styles.select}>
         <select

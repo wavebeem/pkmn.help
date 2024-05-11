@@ -49,7 +49,7 @@ export function Matchups({
   const grouped = matchups.groupByEffectiveness();
   return (
     <div id={`matchup-${kind}`}>
-      <Flex direction="column" gap="large">
+      <Flex direction="column" gap="xlarge">
         {grouped.map((list) => {
           if (list.length === 0) {
             return null;

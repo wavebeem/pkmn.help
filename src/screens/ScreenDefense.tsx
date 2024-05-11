@@ -121,7 +121,7 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
 
   return (
     <main className={classNames(styles.root, "content-wide center")}>
-      <Flex direction="column" gap="large">
+      <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="medium">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
             {t("defense.mode.heading")}
@@ -180,41 +180,47 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
           </Flex>
         )}
 
-        <Select
-          label={t("defense.chooseAbility")}
-          value={ability}
-          onChange={(event) => {
-            setAbility(abilityNameFromString(event.target.value));
-          }}
-        >
-          <option value="">{t("defense.abilityNames.none")}</option>
-          <hr />
-          {sortedAbilityNames.map((name) => {
-            return (
-              <option key={name} value={name}>
-                {t(`defense.abilityNames.${name}`)}
-              </option>
-            );
-          })}
-        </Select>
+        <Flex direction="column" gap="large">
+          <Flex flex="auto">
+            <Select
+              label={t("defense.chooseAbility")}
+              value={ability}
+              onChange={(event) => {
+                setAbility(abilityNameFromString(event.target.value));
+              }}
+            >
+              <option value="">{t("defense.abilityNames.none")}</option>
+              <hr />
+              {sortedAbilityNames.map((name) => {
+                return (
+                  <option key={name} value={name}>
+                    {t(`defense.abilityNames.${name}`)}
+                  </option>
+                );
+              })}
+            </Select>
+          </Flex>
 
-        <Select
-          label={t("defense.chooseTeraType")}
-          value={teraType}
-          onChange={(event) => {
-            setTeraType(typesFromString(event.target.value)[0]);
-          }}
-        >
-          <option value="">{t("types.none")}</option>
-          <hr />
-          {allTypes.map((name) => {
-            return (
-              <option key={name} value={name}>
-                {t(`types.${name}`)}
-              </option>
-            );
-          })}
-        </Select>
+          <Flex flex="auto">
+            <Select
+              label={t("defense.chooseTeraType")}
+              value={teraType}
+              onChange={(event) => {
+                setTeraType(typesFromString(event.target.value)[0]);
+              }}
+            >
+              <option value="">{t("types.none")}</option>
+              <hr />
+              {allTypes.map((name) => {
+                return (
+                  <option key={name} value={name}>
+                    {t(`types.${name}`)}
+                  </option>
+                );
+              })}
+            </Select>
+          </Flex>
+        </Flex>
 
         <Flex>
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>

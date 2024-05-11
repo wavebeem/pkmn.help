@@ -64,7 +64,7 @@ export function ScreenOffense({
 
   return (
     <main className={classNames(styles.root, "content-wide center")}>
-      <Flex direction="column" gap="large">
+      <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="small">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
             {t("offense.chooseTypes")}

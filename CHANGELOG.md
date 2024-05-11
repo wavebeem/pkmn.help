@@ -7,6 +7,8 @@
 - "Offense" screen will avoid the 2-column layout on especially small screen
   sizes
 
+- Fixed table sizing on the "Defense Team" screen
+
 - Made the "More" page easier to browse
 
   - Collapsible headings don't have empty unclickable space

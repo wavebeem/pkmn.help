@@ -2,7 +2,7 @@
   display: grid;
   margin-top: var(--padding3);
   padding: var(--padding3);
-  gap: var(--padding4);
+  gap: var(--padding5);
 }
 
 @media (min-width: 640px) {

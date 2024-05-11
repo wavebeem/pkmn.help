@@ -47,5 +47,5 @@
   padding: var(--padding2);
   font-weight: var(--weight-medium);
   border-bottom: 1px solid var(--border);
-  width: 4rem;
+  min-width: 4rem;
 }

@@ -24,6 +24,7 @@ import { updateArrayAt } from "../misc/updateArrayAt";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
+import { Flex } from "../components/Flex";
 
 const classH2 = "f4 weight-medium mb2 mt4";
 
@@ -389,18 +390,20 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
       <div className="flex-auto w-60-l pl5-l">
         <hr className="dn-l subtle-hr mv4" />
         <div className="pt0 pt4-l">
-          <Select
-            onChange={(event) => {
-              setFormat(event.target.value as any);
-            }}
-            value={format}
-            label={t("defense.team.displayType")}
-          >
-            <option value="simple">{t("defense.team.simple")}</option>
-            <option value="complex">{t("defense.team.complex")}</option>
-            <option value="weak">{t("defense.team.weak")}</option>
-            <option value="resist">{t("defense.team.resist")}</option>
-          </Select>
+          <Flex>
+            <Select
+              onChange={(event) => {
+                setFormat(event.target.value as any);
+              }}
+              value={format}
+              label={t("defense.team.displayType")}
+            >
+              <option value="simple">{t("defense.team.simple")}</option>
+              <option value="complex">{t("defense.team.complex")}</option>
+              <option value="weak">{t("defense.team.weak")}</option>
+              <option value="resist">{t("defense.team.resist")}</option>
+            </Select>
+          </Flex>
         </div>
         <h2 className={classH2}>{t("defense.team.tableHeading")}</h2>
         <MatchupsTeam
