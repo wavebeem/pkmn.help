@@ -112,12 +112,8 @@
       "simple": "Simples",
       "complex": "Complexa",
       "type": "Tipo",
-      "save": "Guardar",
-      "saveLong": "Guardar {{ name }}",
       "edit": "Editar",
-      "editLong": "Editar {{ name }}",
-      "remove": "Remover",
-      "removeLong": "Remover {{ name }}"
+      "remove": "Remover"
     }
   },
   "pokedex": {

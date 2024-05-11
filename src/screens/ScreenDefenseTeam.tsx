@@ -243,8 +243,6 @@ export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
                             setTeamTypes(teamTypesList);
                             setTeamAbilities(teamAbilityList);
                           }}
-                          aria-label={t("defense.team.removeLong", { name })}
-                          title={t("defense.team.removeLong", { name })}
                         >
                           {t("defense.team.remove")}
                         </Button>
