@@ -98,6 +98,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
 
       <FancyText
         tag="div"
+        fontWeight="medium"
         title={hasRoomForFullText ? "" : t("pokedex.stats.speedLong")}
         aria-label={hasRoomForFullText ? "" : t("pokedex.stats.speedLong")}
       >
@@ -112,6 +113,7 @@ export function StatsTable({ pokemon }: StatsTableProps) {
 
       <FancyText
         tag="div"
+        fontWeight="medium"
         title={hasRoomForFullText ? "" : t("pokedex.stats.totalLong")}
         aria-label={hasRoomForFullText ? "" : t("pokedex.stats.totalLong")}
       >
