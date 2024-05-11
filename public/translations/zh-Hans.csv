@@ -80,12 +80,8 @@ defense.team.resist,Resist,抵抗
 defense.team.simple,Simple,简单表格
 defense.team.complex,Complex,复杂表格
 defense.team.type,Type,属性
-defense.team.save,Save,保存
-defense.team.saveLong,Save {{ name }},保存 {{ name }}
 defense.team.edit,Edit,编辑
-defense.team.editLong,Edit {{ name }},编辑 {{ name }}
 defense.team.remove,Remove,移除
-defense.team.removeLong,Remove {{ name }},移除 {{ name }}
 pokedex.search.description,"Search by name, number, or types",按名称、编号或属性搜索
 pokedex.search.help,Help,帮助
 pokedex.search.helpLong,"Help, search Pokédex",帮助，搜索图鉴

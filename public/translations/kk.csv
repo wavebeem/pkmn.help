@@ -80,12 +80,8 @@ defense.team.resist,Resist,
 defense.team.simple,Simple,
 defense.team.complex,Complex,
 defense.team.type,Type,
-defense.team.save,Save,
-defense.team.saveLong,Save {{ name }},
 defense.team.edit,Edit,
-defense.team.editLong,Edit {{ name }},
 defense.team.remove,Remove,
-defense.team.removeLong,Remove {{ name }},
 pokedex.search.description,"Search by name, number, or types","Аты, нөмірі немесе типы арқылы іздеу"
 pokedex.search.help,Help,Көмек
 pokedex.search.helpLong,"Help, search Pokédex","Көмек, Покедекс іздеу"

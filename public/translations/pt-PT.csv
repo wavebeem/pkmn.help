@@ -80,12 +80,8 @@ defense.team.resist,Resist,Resistências
 defense.team.simple,Simple,Simples
 defense.team.complex,Complex,Complexa
 defense.team.type,Type,Tipo
-defense.team.save,Save,Guardar
-defense.team.saveLong,Save {{ name }},Guardar {{ name }}
 defense.team.edit,Edit,Editar
-defense.team.editLong,Edit {{ name }},Editar {{ name }}
 defense.team.remove,Remove,Remover
-defense.team.removeLong,Remove {{ name }},Remover {{ name }}
 pokedex.search.description,"Search by name, number, or types","Procurar por nome, número ou tipo"
 pokedex.search.help,Help,Ajuda
 pokedex.search.helpLong,"Help, search Pokédex","Ajuda, procurar na Pokédex"

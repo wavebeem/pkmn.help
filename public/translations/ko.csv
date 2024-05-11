@@ -80,12 +80,8 @@ defense.team.resist,Resist,내성
 defense.team.simple,Simple,심플
 defense.team.complex,Complex,고급
 defense.team.type,Type,유형
-defense.team.save,Save,저장
-defense.team.saveLong,Save {{ name }},{{ name }} 저장
 defense.team.edit,Edit,편집
-defense.team.editLong,Edit {{ name }},{{ name }} 편집
 defense.team.remove,Remove,제거
-defense.team.removeLong,Remove {{ name }},{{ name }}  제거
 pokedex.search.description,"Search by name, number, or types","이름, 번호 또는 유형으로 검색"
 pokedex.search.help,Help,도움말
 pokedex.search.helpLong,"Help, search Pokédex","도움말, 포켓몬 도감 검색"

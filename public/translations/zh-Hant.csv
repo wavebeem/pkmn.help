@@ -80,12 +80,8 @@ defense.team.resist,Resist,抵抗
 defense.team.simple,Simple,簡單
 defense.team.complex,Complex,複雜
 defense.team.type,Type,屬性
-defense.team.save,Save,保存
-defense.team.saveLong,Save {{ name }},保存{{ name }}
 defense.team.edit,Edit,編輯
-defense.team.editLong,Edit {{ name }},編輯{{ name }}
 defense.team.remove,Remove,移除
-defense.team.removeLong,Remove {{ name }},移除{{ name }}
 pokedex.search.description,"Search by name, number, or types",通過名稱、編號或屬性搜索
 pokedex.search.help,Help,幫助
 pokedex.search.helpLong,"Help, search Pokédex",幫助，搜索寶可夢圖鑑
