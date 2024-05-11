@@ -2,6 +2,10 @@
   display: flex;
 }
 
+.Flex[hidden] {
+  display: none;
+}
+
 .Flex[data-flex="auto"] {
   flex: auto;
 }

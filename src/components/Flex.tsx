@@ -3,6 +3,7 @@ import { HTMLAttributes } from "react";
 import styles from "./Flex.module.css";
 
 export interface FlexProps extends HTMLAttributes<HTMLDivElement> {
+  hidden?: boolean;
   tag?: "div" | "span";
   flex?: "auto";
   direction?: "row" | "column";
@@ -16,6 +17,7 @@ export interface FlexProps extends HTMLAttributes<HTMLDivElement> {
 }
 
 export function Flex({
+  hidden = false,
   className,
   tag: Tag = "div",
   flex,
@@ -31,6 +33,7 @@ export function Flex({
 }: FlexProps) {
   return (
     <Tag
+      hidden={hidden}
       className={classNames(className, styles.Flex)}
       data-direction={direction}
       data-wrap={wrap}
