@@ -22,6 +22,7 @@
     "test:lint:css": "stylelint -f unix \"src/**/*.css\"",
     "test:typecheck": "tsc -p .",
     "test": "concurrently --group \"npm:test:*\"",
+    "visualize-bundle": "npx vite-bundle-visualizer",
     "fix:format": "prettier \"src/**/*.{ts,tsx,js,css}\" --write"
   },
   "repository": {
