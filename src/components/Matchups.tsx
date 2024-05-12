@@ -50,14 +50,14 @@ export function Matchups({
   return (
     <div id={`matchup-${kind}`}>
       <Flex direction="column" gap="xlarge">
-        {grouped.map((list) => {
+        {grouped.map((list, i) => {
           if (list.length === 0) {
             return null;
           }
           const eff = list[0].effectiveness;
           const effectivenessDisplay = formatEffectiveness(eff, i18n.languages);
           return (
-            <Flex direction="column" gap="medium">
+            <Flex direction="column" gap="medium" key={i}>
               <FancyText tag="h2" fontWeight="medium" fontSize="large">
                 {kind === "offense"
                   ? t("offense.dealsXTo", { x: effectivenessDisplay })
