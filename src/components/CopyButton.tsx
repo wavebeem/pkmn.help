@@ -10,7 +10,7 @@ export interface CopyButtonProps {
 
 type State = "default" | "copied";
 
-export function CopyButton({ text, children }: CopyButtonProps) {
+export function CopyButton({ text, children }: CopyButtonProps): ReactNode {
   const [state, setState] = useState<State>("default");
   const disabled = state === "copied";
   return (

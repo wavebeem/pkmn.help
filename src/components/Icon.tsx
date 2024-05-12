@@ -41,9 +41,9 @@ const paths = {
 
 function createComponent(
   name: keyof typeof paths
-): (props: SVGProps<SVGSVGElement>) => JSX.Element {
+): (props: SVGProps<SVGSVGElement>) => ReactNode {
   const path = paths[name];
-  function IconArrow(props: SVGProps<SVGSVGElement>): JSX.Element {
+  function IconArrow(props: SVGProps<SVGSVGElement>): ReactNode {
     return (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -68,7 +68,7 @@ const IconArrowRight = createComponent("Right");
 const IconArrowLeftDouble = createComponent("LeftDouble");
 const IconArrowRightDouble = createComponent("RightDouble");
 
-function IconClear(props: SVGProps<SVGSVGElement>): JSX.Element {
+function IconClear(props: SVGProps<SVGSVGElement>): ReactNode {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +84,7 @@ function IconClear(props: SVGProps<SVGSVGElement>): JSX.Element {
 }
 
 // https://icons.getbootstrap.com/icons/music-note-beamed/
-function IconMusic(props: SVGProps<SVGSVGElement>): JSX.Element {
+function IconMusic(props: SVGProps<SVGSVGElement>): ReactNode {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +100,7 @@ function IconMusic(props: SVGProps<SVGSVGElement>): JSX.Element {
     </svg>
   );
 }
-export function IconSearch(props: SVGProps<SVGSVGElement>): JSX.Element {
+export function IconSearch(props: SVGProps<SVGSVGElement>): ReactNode {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -116,7 +116,7 @@ export function IconSearch(props: SVGProps<SVGSVGElement>): JSX.Element {
   );
 }
 
-function IconSparkles(props: SVGProps<SVGSVGElement>): JSX.Element {
+function IconSparkles(props: SVGProps<SVGSVGElement>): ReactNode {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

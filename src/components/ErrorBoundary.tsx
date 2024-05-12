@@ -22,7 +22,7 @@ export class ErrorBoundary extends Component<
     return { error };
   }
 
-  render() {
+  render(): ReactNode {
     if (this.state.error) {
       return this.props.render(this.state.error);
     }

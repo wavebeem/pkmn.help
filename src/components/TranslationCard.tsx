@@ -12,12 +12,13 @@ import { FancyText } from "./FancyText";
 import { ExternalLink } from "./ExternalLink";
 import { Divider } from "./Divider";
 import { Card } from "./Card";
+import { ReactNode } from "react";
 
 interface TranslationCardProps {
   lang: Lang;
 }
 
-export function TranslationCard({ lang }: TranslationCardProps): JSX.Element {
+export function TranslationCard({ lang }: TranslationCardProps): ReactNode {
   return (
     <Card>
       <Flex direction="column" gap="medium">

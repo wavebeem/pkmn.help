@@ -1,6 +1,6 @@
 import { unregisterServiceWorker } from "./unregisterServiceWorker";
 
-export async function resetApp() {
+export async function resetApp(): Promise<void> {
   try {
     localStorage.clear();
     sessionStorage.clear();

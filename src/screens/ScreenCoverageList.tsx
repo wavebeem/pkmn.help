@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Badge } from "../components/Badge";
 import { EmptyState } from "../components/EmptyState";
@@ -24,7 +24,7 @@ export function ScreenCoverageList({
   mode,
   generation,
   coverageTypes,
-}: CoverageListProps) {
+}: CoverageListProps): ReactNode {
   const { t } = useTranslation();
   const search = useSearch();
   const [page, setPage] = useState(0);

@@ -1,5 +1,5 @@
 import { matchSorter } from "match-sorter";
-import { useEffect, useMemo } from "react";
+import { ReactNode, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
@@ -25,7 +25,10 @@ export type ScreenPokedexProps = {
   isLoading: boolean;
 };
 
-export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
+export function ScreenPokedex({
+  allPokemon,
+  isLoading,
+}: ScreenPokedexProps): ReactNode {
   const { t, i18n } = useTranslation();
   const { language } = i18n;
   const search = useSearch();

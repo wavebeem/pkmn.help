@@ -5,6 +5,7 @@ import { Meter } from "./Meter";
 import styles from "./StatsTable.module.css";
 import { typeColor } from "../misc/colors";
 import { FancyText } from "./FancyText";
+import { ReactNode } from "react";
 
 const statMax = 255;
 
@@ -12,7 +13,7 @@ export interface StatsTableProps {
   pokemon: Pokemon;
 }
 
-export function StatsTable({ pokemon }: StatsTableProps) {
+export function StatsTable({ pokemon }: StatsTableProps): ReactNode {
   const { hp, attack, defense, spAttack, spDefense, speed } = pokemon;
   const total = hp + attack + defense + spAttack + spDefense + speed;
   const { t } = useTranslation();

@@ -12,7 +12,7 @@ export function Select({
   "aria-label": ariaLabel = label,
   helpText,
   ...props
-}: SelectProps) {
+}: SelectProps): ReactNode {
   return (
     <div className={styles.root}>
       {label && <div className={styles.label}>{label}</div>}

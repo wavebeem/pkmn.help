@@ -1,4 +1,4 @@
-export async function unregisterServiceWorker() {
+export async function unregisterServiceWorker(): Promise<void> {
   try {
     for (const reg of await navigator.serviceWorker.getRegistrations()) {
       try {

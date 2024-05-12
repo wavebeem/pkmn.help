@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
@@ -74,7 +74,9 @@ interface ScreenDefenseTeamProps {
   generation: Generation;
 }
 
-export function ScreenDefenseTeam({ generation }: ScreenDefenseTeamProps) {
+export function ScreenDefenseTeam({
+  generation,
+}: ScreenDefenseTeamProps): ReactNode {
   useScrollToFragment();
 
   const { t } = useTranslation();

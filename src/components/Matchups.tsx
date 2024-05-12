@@ -9,6 +9,7 @@ import classNames from "classnames";
 import { characters } from "../misc/characters";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
+import { ReactNode } from "react";
 
 interface MatchupsProps {
   kind: "offense" | "defense";
@@ -24,7 +25,7 @@ export function Matchups({
   types,
   teraType,
   ability,
-}: MatchupsProps) {
+}: MatchupsProps): ReactNode {
   const { t, i18n } = useTranslation();
   const matchups =
     kind === "offense"

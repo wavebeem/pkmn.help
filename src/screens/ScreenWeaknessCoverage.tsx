@@ -1,5 +1,5 @@
 import Papa from "papaparse";
-import { useState } from "react";
+import { ReactNode, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "../components/Button";
 import { Divider } from "../components/Divider";
@@ -30,7 +30,7 @@ export function ScreenWeaknessCoverage({
   setCoverageTypes,
   fallbackCoverageTypes,
   isLoading,
-}: WeaknessCoverageProps) {
+}: WeaknessCoverageProps): ReactNode {
   const { t } = useTranslation();
   const [statusText, setStatusText] = useState("");
   const [typeCount] = useTypeCount();

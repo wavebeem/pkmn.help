@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { HTMLAttributes } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 import styles from "./Flex.module.css";
 
 export interface FlexProps extends HTMLAttributes<HTMLDivElement> {
@@ -30,7 +30,7 @@ export function Flex({
   paddingX,
   paddingY,
   ...props
-}: FlexProps) {
+}: FlexProps): ReactNode {
   return (
     <Tag
       hidden={hidden}
