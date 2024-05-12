@@ -237,15 +237,7 @@ export function App(): ReactNode {
               <Route path="/defense/" element={<ScreenDefense />} />
               <Route path="/pokedex/help/" element={<ScreenPokedexHelp />} />
               <Route path="/pokedex/" element={<ScreenPokedex />} />
-              <Route
-                path="/more/"
-                element={
-                  <ScreenMore
-                    needsAppUpdate={needRefresh}
-                    updateApp={updateApp}
-                  />
-                }
-              />
+              <Route path="/more/" element={<ScreenMore />} />
               <Route
                 path="/_error"
                 element={<ScreenError error={exampleError} />}
