@@ -1,6 +1,6 @@
 # Changelog
 
-## ????-??-??
+## 2024-05-11
 
 - Fixed minor issues with the disabled type in the type selector
 
@@ -22,6 +22,8 @@
     - I've only closed the really long ones
 
 - Simplified the error page (hopefully you've never seen it before...)
+
+- Updated Italian translations
 
 ## 2024-05-08
 

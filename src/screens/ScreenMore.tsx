@@ -484,6 +484,7 @@ export function ScreenMore({
                   {t("more.thanks.sections.it")}
                 </FancyText>
                 <ul className="list-simple">
+                  <li>dama99</li>
                   <li>Gabriele Giugno</li>
                   <li>
                     Fabio <q>N&trade;</q> Ilari
