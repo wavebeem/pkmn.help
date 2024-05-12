@@ -142,6 +142,7 @@
 }
 
 .headerButton::after {
+  box-sizing: content-box;
   --size: 0.25em;
   content: "";
   position: absolute;

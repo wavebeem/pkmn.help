@@ -1,6 +1,4 @@
-@import url("reset.css");
-/* TODO: Switch to this maybe? */
-/* @import url("normalize.css"); */
+@import url("normalize.css");
 @import url("fonts.css");
 @import url("vars.css");
 @import url("stellar.css");

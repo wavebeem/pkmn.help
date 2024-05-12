@@ -48,6 +48,8 @@ export function ScreenMore({
   const year = new Date().getFullYear();
   const autoLang = getDesiredLanguage() || "en";
 
+  needsAppUpdate = true;
+
   return (
     <main className="content-narrow center">
       <Flex direction="column" padding="large">
@@ -56,21 +58,19 @@ export function ScreenMore({
           <Flex direction="column" gap="large">
             {needsAppUpdate && (
               <Card>
-                <Flex gap="medium">
-                  <Flex flex="auto" align="center">
+                <Flex gap="medium" align="center">
+                  <Flex direction="column" flex="auto">
                     <FancyText tag="span" fontSize="large" fontWeight="medium">
                       {t("banners.updateReady.description")}
                     </FancyText>
+                    <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
+                      {t("banners.updateReady.whatsNew")}
+                    </ExternalLink>
                   </Flex>
                   <Button type="button" onClick={updateApp}>
                     {t("banners.updateReady.update")}
                   </Button>
                 </Flex>
-                <div>
-                  <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
-                    {t("banners.updateReady.whatsNew")}
-                  </ExternalLink>
-                </div>
               </Card>
             )}
 
