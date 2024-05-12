@@ -13,7 +13,6 @@ import { TypeSelector } from "../components/TypeSelector";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
-import { Generation } from "../misc/data-generations";
 import {
   AbilityName,
   Type,
@@ -25,14 +24,12 @@ import {
 } from "../misc/data-types";
 import { updateArrayAt } from "../misc/updateArrayAt";
 import styles from "./ScreenDefense.module.css";
+import { useGeneration } from "../hooks/useGeneration";
 
-interface ScreenDefenseProps {
-  generation: Generation;
-}
-
-export function ScreenDefense({ generation }: ScreenDefenseProps): ReactNode {
+export function ScreenDefense(): ReactNode {
   useScrollToFragment();
 
+  const [generation] = useGeneration();
   const { t } = useTranslation();
   const navigate = useNavigate();
   const [typeCount] = useTypeCount();

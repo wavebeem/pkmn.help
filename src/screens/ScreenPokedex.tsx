@@ -14,21 +14,15 @@ import { Padding } from "../components/Padding";
 import { Paginator } from "../components/Paginator";
 import { Search } from "../components/Search";
 import { Spinner } from "../components/Spinner";
+import { useAppContext } from "../hooks/useAppContext";
 import { useSearch } from "../hooks/useSearch";
-import { Pokemon, Type, typesFromUserInput } from "../misc/data-types";
+import { Type, typesFromUserInput } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { pickTranslation } from "../misc/pickTranslation";
 import styles from "./ScreenPokedex.module.css";
 
-export type ScreenPokedexProps = {
-  allPokemon: Pokemon[];
-  isLoading: boolean;
-};
-
-export function ScreenPokedex({
-  allPokemon,
-  isLoading,
-}: ScreenPokedexProps): ReactNode {
+export function ScreenPokedex(): ReactNode {
+  const { allPokemon, isLoading } = useAppContext();
   const { t, i18n } = useTranslation();
   const { language } = i18n;
   const search = useSearch();

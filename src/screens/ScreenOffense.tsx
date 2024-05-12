@@ -10,29 +10,19 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
+import { useAppContext } from "../hooks/useAppContext";
+import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
-import { Generation } from "../misc/data-generations";
 import {
-  CoverageType,
   Type,
   removeInvalidOffenseTypesForGeneration,
   typesFromString,
 } from "../misc/data-types";
 import styles from "./ScreenOffense.module.css";
 
-export type OffenseProps = {
-  generation: Generation;
-  coverageTypes?: CoverageType[];
-  fallbackCoverageTypes: CoverageType[];
-  isLoading: boolean;
-};
-
-export function ScreenOffense({
-  generation,
-  coverageTypes,
-  fallbackCoverageTypes,
-  isLoading,
-}: OffenseProps): ReactNode {
+export function ScreenOffense(): ReactNode {
+  const { coverageTypes, fallbackCoverageTypes, isLoading } = useAppContext();
+  const [generation] = useGeneration();
   const { t, i18n } = useTranslation();
   const search = useSearch();
   const navigate = useNavigate();
