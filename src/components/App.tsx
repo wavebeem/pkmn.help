@@ -41,24 +41,15 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ScreenError />,
     children: [
-      {
-        index: true,
-        element: <Navigate to="/defense/" replace />,
-      },
+      { index: true, element: <Navigate replace to="/defense/" /> },
       {
         path: "offense",
         children: [
-          {
-            index: true,
-            element: <ScreenOffense />,
-          },
+          { index: true, element: <ScreenOffense /> },
           {
             path: "coverage",
             children: [
-              {
-                index: true,
-                element: <ScreenWeaknessCoverage />,
-              },
+              { index: true, element: <ScreenWeaknessCoverage /> },
               {
                 path: "weakness",
                 element: <ScreenCoverageList mode="weakness" />,
@@ -78,44 +69,20 @@ const router = createBrowserRouter([
       {
         path: "defense",
         children: [
-          {
-            index: true,
-            element: <ScreenDefense />,
-          },
-          {
-            path: "team",
-            element: <ScreenDefenseTeam />,
-          },
+          { index: true, element: <ScreenDefense /> },
+          { path: "team", element: <ScreenDefenseTeam /> },
         ],
       },
       {
         path: "pokedex",
         children: [
-          {
-            index: true,
-            element: <ScreenPokedex />,
-          },
-          {
-            path: "help",
-            element: <ScreenPokedexHelp />,
-          },
+          { index: true, element: <ScreenPokedex /> },
+          { path: "help", element: <ScreenPokedexHelp /> },
         ],
       },
-      {
-        path: "more",
-        index: true,
-        element: <ScreenMore />,
-      },
-      {
-        path: "_error",
-        index: true,
-        element: <Crash />,
-      },
-      {
-        path: "*",
-        index: true,
-        element: <Navigate to="/defense/" replace />,
-      },
+      { path: "more", element: <ScreenMore /> },
+      { path: "_error", element: <Crash /> },
+      { path: "*", element: <Navigate replace to="/defense/" /> },
     ],
   },
 ]);
