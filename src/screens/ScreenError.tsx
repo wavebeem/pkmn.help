@@ -43,7 +43,7 @@ ${JSON.stringify(sessionStorage)}
   return (
     <div className="content-narrow center">
       <Flex direction="column" gap="large" padding="large">
-        <FancyText tag="h1">Error</FancyText>
+        <FancyText tag="h1">Pokémon Type Calculator: Error</FancyText>
         <FancyText tag="p">
           Please copy the error message below and send it to{" "}
           <ExternalLink href="mailto:pkmn@wavebeem.com">
@@ -65,7 +65,7 @@ ${JSON.stringify(sessionStorage)}
 
         <FancyText tag="p" fontSize="large" fontWeight="medium">
           <Icon name="arrowLeft" />{" "}
-          <ExternalLink href="/">Back to pkmn.help</ExternalLink>
+          <ExternalLink href="/">Back to main page</ExternalLink>
         </FancyText>
       </Flex>
     </div>
