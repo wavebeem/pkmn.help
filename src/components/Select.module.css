@@ -1,3 +1,7 @@
+.root {
+  flex: auto;
+}
+
 .select {
   position: relative;
 }
@@ -15,7 +19,6 @@
   box-shadow: var(--shadow-button);
 }
 
-.select select:focus,
 .select select:hover {
   background: var(--background-button-bg-hover);
 }

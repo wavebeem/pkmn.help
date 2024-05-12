@@ -1,0 +1,11 @@
+.Padding[data-size="small"] {
+  padding: var(--padding1);
+}
+
+.Padding[data-size="medium"] {
+  padding: var(--padding2);
+}
+
+.Padding[data-size="large"] {
+  padding: var(--padding3);
+}

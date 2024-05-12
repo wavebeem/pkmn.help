@@ -1,23 +1,29 @@
 import { matchSorter } from "match-sorter";
 import { useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useNavigate } from "react-router-dom";
-import { Pokemon, Type, typesFromUserInput } from "../misc/data-types";
-import { formatMonsterNumber } from "../misc/formatMonsterNumber";
-import { Paginator } from "../components/Paginator";
-import { pickTranslation } from "../misc/pickTranslation";
-import { Search } from "../components/Search";
-import { useSearch } from "../hooks/useSearch";
-import { Spinner } from "../components/Spinner";
+import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "../components/CopyButton";
-import { Monster } from "../components/Monster";
+import { Divider } from "../components/Divider";
 import { EmptyState } from "../components/EmptyState";
+import { FancyLink } from "../components/FancyLink";
+import { FancyText } from "../components/FancyText";
+import { Flex } from "../components/Flex";
+import { Monster } from "../components/Monster";
+import { Padding } from "../components/Padding";
+import { Paginator } from "../components/Paginator";
+import { Search } from "../components/Search";
+import { Spinner } from "../components/Spinner";
+import { useSearch } from "../hooks/useSearch";
+import { Pokemon, Type, typesFromUserInput } from "../misc/data-types";
+import { formatMonsterNumber } from "../misc/formatMonsterNumber";
+import { pickTranslation } from "../misc/pickTranslation";
+import styles from "./ScreenPokedex.module.css";
 
-interface ScreenPokedexProps {
+export type ScreenPokedexProps = {
   allPokemon: Pokemon[];
   isLoading: boolean;
-}
+};
 
 export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
   const { t, i18n } = useTranslation();
@@ -90,56 +96,58 @@ export function ScreenPokedex({ allPokemon, isLoading }: ScreenPokedexProps) {
     }
   }
 
+  const updateSearch = (newQuery: string): void => {
+    setQuery(newQuery);
+    setPage(0);
+  };
+
   return (
-    <main className="ph3 mt3 center content-narrow">
-      <div className="pt2" />
-      <Search
-        search={query}
-        updateSearch={(newQuery) => {
-          setQuery(newQuery);
-          setPage(0);
-        }}
-      />
-      <div className="flex justify-between ph2 nt2 pb3 bb mb3 border3 f6">
-        <span className="fg3" aria-hidden="true">
-          {t("pokedex.search.description")}
-        </span>
-        <Link
-          to="/pokedex/help/"
-          className="br1 underline fg-link focus-outline ml3 flex-none"
-          aria-label={t("pokedex.search.helpLong")}
-        >
-          {t("pokedex.search.help")}
-        </Link>
-      </div>
-      {isLoading ? (
-        <Spinner />
-      ) : (
-        <Paginator
-          currentPage={Number(page)}
-          setPage={setPage}
-          pageSize={20}
-          emptyState={<EmptyState>{t("pokedex.search.notFound")}</EmptyState>}
-          items={pkmn}
-          renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
-          renderPage={(page) =>
-            page.map((pokemon) => (
-              <Monster
-                key={pokemon.id}
-                pokemon={pokemon}
-                setQuery={(query) => {
-                  setQuery(query);
-                  setPage(0);
-                }}
-              />
-            ))
-          }
-        />
-      )}
-      <div className="pt2" />
-      <div className="pt3" />
-      <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
-      <div className="pb4" />
+    <main className="center content-narrow">
+      <Flex direction="column" gap="large" padding="large">
+        <Padding size="small" />
+        <Flex direction="column" gap="medium">
+          <Search search={query} updateSearch={updateSearch} />
+          <div className={styles.small}>
+            <Flex>
+              <FancyText tag="span" aria-hidden="true">
+                {t("pokedex.search.description")}
+              </FancyText>
+              <Flex flex="auto" />
+              <FancyLink
+                to="/pokedex/help/"
+                aria-label={t("pokedex.search.helpLong")}
+              >
+                {t("pokedex.search.help")}
+              </FancyLink>
+            </Flex>
+          </div>
+        </Flex>
+        <Divider />
+        {isLoading ? (
+          <Spinner />
+        ) : (
+          <Paginator
+            currentPage={Number(page)}
+            setPage={setPage}
+            pageSize={20}
+            emptyState={<EmptyState>{t("pokedex.search.notFound")}</EmptyState>}
+            items={pkmn}
+            renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
+            renderPage={(page) =>
+              page.map((pokemon) => (
+                <Monster
+                  key={pokemon.id}
+                  pokemon={pokemon}
+                  setQuery={updateSearch}
+                />
+              ))
+            }
+          />
+        )}
+        <Flex>
+          <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
+        </Flex>
+      </Flex>
     </main>
   );
 }

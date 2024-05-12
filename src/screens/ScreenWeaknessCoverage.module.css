@@ -1,9 +1,10 @@
 .buttonGrid {
   display: grid;
   gap: 1rem;
+  align-items: center;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 640px) {
   .buttonGrid {
     grid-template-columns: 1fr 4fr;
   }

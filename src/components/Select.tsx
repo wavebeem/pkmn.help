@@ -14,12 +14,12 @@ export function Select({
   ...props
 }: SelectProps) {
   return (
-    <div>
+    <div className={styles.root}>
       {label && <div className={styles.label}>{label}</div>}
       <div className={styles.select}>
         <select
           aria-label={ariaLabel}
-          className="active-darken focus-simple truncate"
+          className="active-darken focus-simple"
           {...props}
         />
       </div>

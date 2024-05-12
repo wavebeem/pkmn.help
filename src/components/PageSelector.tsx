@@ -32,7 +32,7 @@ export function PageSelector<T>({
   const { t } = useTranslation();
 
   const hasRoomForMediumButtons = useMediaQuery("(min-width: 420px)");
-  const hasRoomForLargeButtons = useMediaQuery("(min-width: 520px");
+  const hasRoomForLargeButtons = useMediaQuery("(min-width: 640px");
 
   const buttonSize = hasRoomForLargeButtons
     ? "large"
@@ -100,7 +100,7 @@ export function PageSelector<T>({
           {buttonSize === "medium" && t("pokedex.pagination.previous")}
           {buttonSize === "large" && t("pokedex.pagination.previousLong")}
         </Button>
-        <div aria-hidden="true" className="flex-auto" />
+        <Flex flex="auto" />
         <Button
           disabled={!hasNext}
           onClick={() => {

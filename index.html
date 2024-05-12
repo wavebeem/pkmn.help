@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr" class="bg2 fg1 lh-copy" data-theme="auto">
+<html lang="en" dir="ltr" data-theme="auto">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -59,7 +59,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="%VITE_HTML_DESCRIPTION%" />
     <meta name="og:description" content="%VITE_HTML_DESCRIPTION%" />
-    <link rel="stylesheet" href="/node_modules/tachyons/css/tachyons.css" />
     <link rel="stylesheet" href="/src/style/index.css" />
     <script type="module" src="/src/main.tsx"></script>
     <script
@@ -70,8 +69,8 @@
     ></script>
   </head>
   <body>
-    <div id="app" class="min-vh-100 flex flex-column">
-      <div class="center fallback-content">
+    <div id="app">
+      <div class="fallback-content">
         <h1>%VITE_HTML_TITLE%</h1>
         <p>
           A Pokémon type calculator to show strengths/weaknesses of different
@@ -80,20 +79,12 @@
         <p>This app requires JavaScript. Make sure you have it enabled.</p>
         <p>
           Email
-          <a
-            class="underline fg-link focus-outline"
-            href="mailto:pkmn@wavebeem.com"
-            >pkmn@wavebeem.com</a
-          >
+          <a href="mailto:pkmn@wavebeem.com">pkmn@wavebeem.com</a>
           if you have difficulty loading the site.
         </p>
         <footer>
           &copy;
-          <a
-            class="underline fg-link focus-outline"
-            href="https://www.wavebeem.com/"
-            >Sage Fennel</a
-          >
+          <a href="https://www.wavebeem.com/">Sage Fennel</a>
         </footer>
       </div>
     </div>

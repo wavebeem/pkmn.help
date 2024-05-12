@@ -27,6 +27,9 @@ import { useGeneration } from "../hooks/useGeneration";
 import { useLanguage } from "../hooks/useLanguage";
 import { useTheme } from "../hooks/useTheme";
 import { useUpdateSW } from "../hooks/useUpdateSW";
+import { ScreenError } from "../screens/ScreenError";
+
+const exampleError = new Error("Example error for testing the error screen");
 
 function getFallback(key: string): string {
   if (key === "title") {
@@ -145,7 +148,7 @@ export function App() {
           />
         </div>
       )}
-      <div className="flex-auto">
+      <div className={styles.root}>
         <h1 className={styles.header}>
           <button
             className={styles.headerButton}
@@ -261,7 +264,11 @@ export function App() {
                 />
               }
             />
-            <Route path="/*" element={<Navigate to="/defense/" />} />
+            <Route
+              path="/_error"
+              element={<ScreenError error={exampleError} />}
+            />
+            <Route path="/*" element={<Navigate to="/defense/" replace />} />
           </Routes>
         </Suspense>
       </div>

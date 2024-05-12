@@ -80,12 +80,8 @@ defense.team.resist,Resist,
 defense.team.simple,Simple,
 defense.team.complex,Complex,
 defense.team.type,Type,
-defense.team.save,Save,
-defense.team.saveLong,Save {{ name }},
 defense.team.edit,Edit,
-defense.team.editLong,Edit {{ name }},
 defense.team.remove,Remove,
-defense.team.removeLong,Remove {{ name }},
 pokedex.search.description,"Search by name, number, or types","Cauta nume, numar sau feluri"
 pokedex.search.help,Help,Ajutor
 pokedex.search.helpLong,"Help, search Pokédex","Ajutor, cauta în Pokedex"
@@ -153,7 +149,7 @@ more.help.serviceWorker.button,Reset,Resetare
 more.privacy.heading,Privacy,Intimitate
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Nu voi difuza niciodată reclame sau nu voi fura datele dumneavoastră personale. Folosesc <plausible>Plausible Analytics</plausible>, care este autofinanțat, independent, găzduit în UE și nu stochează niciun cookie pe computerul dvs."
 more.givingBack.heading,Showing appreciation,Aratare de apreciare
-more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.","Eu am petrecut o multime de ore imbunatatind acest site. Daca apreciezi ce am facut, te rog considera donare la organizatii de caritate care supporta BIPOC si drepturile transgender."
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Eu am petrecut o multime de ore imbunatatind acest site. Daca apreciezi ce am facut, te rog considera donare la organizatii de caritate care supporta BIPOC si drepturile transgender."
 more.thanks.heading,Special thanks,Multumri speciale
 more.thanks.sections.da,Danish translation,Danish translation
 more.thanks.sections.ru,Russian translation,Russian translation

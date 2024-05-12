@@ -1,44 +1,30 @@
 import classNames from "classnames";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useSessionStorage } from "usehooks-ts";
+import { CopyButton } from "../components/CopyButton";
+import { DefenseTabs } from "../components/DefenseTabs";
+import { FancyText } from "../components/FancyText";
+import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { Select } from "../components/Select";
 import { TypeSelector } from "../components/TypeSelector";
+import { useScrollToFragment } from "../hooks/useScrollToFragment";
+import { useSearch } from "../hooks/useSearch";
+import { useTypeCount } from "../hooks/useTypeCount";
 import { Generation } from "../misc/data-generations";
 import {
   AbilityName,
   Type,
   abilities,
   abilityNameFromString,
-  removeNones,
   types as allTypes,
+  removeNones,
   typesFromString,
 } from "../misc/data-types";
 import { updateArrayAt } from "../misc/updateArrayAt";
-import { useScrollToFragment } from "../hooks/useScrollToFragment";
-import { useSearch } from "../hooks/useSearch";
-import { useTypeCount } from "../hooks/useTypeCount";
-import { CopyButton } from "../components/CopyButton";
-import { useSessionStorage } from "usehooks-ts";
-
-const classH2 = "f4 weight-medium mb2 mt4";
-
-const tabClass = classNames([
-  "active-darken",
-  "no-underline",
-  "pv2 ph3 f5",
-  "focus-tab",
-  "tc",
-  "ba border1 br-pill",
-  "bg1 fg1",
-]);
-
-const tabClassActive = classNames(["button-selected"]);
-
-function getTabClass({ isActive }: { isActive: boolean }): string {
-  return classNames(tabClass, isActive && tabClassActive);
-}
+import styles from "./ScreenDefense.module.css";
 
 interface ScreenDefenseProps {
   generation: Generation;
@@ -117,39 +103,46 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
     });
 
   return (
-    <main className="ph3 pt0 pb4 content-wide center flex flex-column flex-row-ns">
-      <div className="flex-auto w-50-ns">
-        <h2 className={classH2}>{t("defense.mode.heading")}</h2>
-        <div className="flex flex-wrap gap2">
-          <NavLink to="" className={getTabClass({ isActive: true })}>
-            {t("defense.mode.solo")}
-          </NavLink>
-          <NavLink
-            to="/defense/team/"
-            className={getTabClass({ isActive: false })}
-          >
-            {t("defense.mode.team")}
-          </NavLink>
-        </div>
-        <h2 className={classH2}>{t("defense.chooseFirst")}</h2>
-        <TypeSelector
-          generation={generation}
-          value={types[0]}
-          onChange={updateTypeAt(0)}
-          disabledTypes={[]}
-          includeNone={false}
-        />
-        <h2 className={classH2}>{t("defense.chooseSecond")}</h2>
-        <TypeSelector
-          generation={generation}
-          value={types[1] || Type.none}
-          onChange={updateTypeAt(1)}
-          disabledTypes={types.slice(0, 1)}
-          includeNone={true}
-        />
+    <main className={classNames(styles.root, "content-wide center")}>
+      <Flex direction="column" gap="xlarge">
+        <Flex direction="column" gap="medium">
+          <FancyText tag="h2" fontSize="large" fontWeight="medium">
+            {t("defense.mode.heading")}
+          </FancyText>
+          <DefenseTabs />
+        </Flex>
+
+        <Flex direction="column" gap="medium">
+          <FancyText tag="h2" fontSize="large" fontWeight="medium">
+            {t("defense.chooseFirst")}
+          </FancyText>
+          <TypeSelector
+            generation={generation}
+            value={types[0]}
+            onChange={updateTypeAt(0)}
+            disabledTypes={[]}
+            includeNone={false}
+          />
+        </Flex>
+
+        <Flex direction="column" gap="medium">
+          <FancyText tag="h2" fontSize="large" fontWeight="medium">
+            {t("defense.chooseSecond")}
+          </FancyText>
+          <TypeSelector
+            generation={generation}
+            value={types[1] || Type.none}
+            onChange={updateTypeAt(1)}
+            disabledTypes={types.slice(0, 1)}
+            includeNone={true}
+          />
+        </Flex>
+
         {Number(typeCount) === 3 && (
-          <>
-            <h2 className={classH2}>{t("defense.chooseThird")}</h2>
+          <Flex direction="column" gap="medium">
+            <FancyText tag="h2" fontSize="large" fontWeight="medium">
+              {t("defense.chooseThird")}
+            </FancyText>
             <TypeSelector
               generation={generation}
               value={types[2] || Type.none}
@@ -157,52 +150,57 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
               disabledTypes={types.slice(0, 2)}
               includeNone={true}
             />
-          </>
+          </Flex>
         )}
-        <div className="pt4">
-          <Select
-            label={t("defense.chooseAbility")}
-            value={ability}
-            onChange={(event) => {
-              setAbility(abilityNameFromString(event.target.value));
-            }}
-          >
-            <option value="">{t("defense.abilityNames.none")}</option>
-            <hr />
-            {sortedAbilityNames.map((name) => {
-              return (
-                <option key={name} value={name}>
-                  {t(`defense.abilityNames.${name}`)}
-                </option>
-              );
-            })}
-          </Select>
-        </div>
-        <div className="pt4">
-          <Select
-            label={t("defense.chooseTeraType")}
-            value={teraType}
-            onChange={(event) => {
-              setTeraType(typesFromString(event.target.value)[0]);
-            }}
-          >
-            <option value="">{t("types.none")}</option>
-            <hr />
-            {allTypes.map((name) => {
-              return (
-                <option key={name} value={name}>
-                  {t(`types.${name}`)}
-                </option>
-              );
-            })}
-          </Select>
-        </div>
-        <div className="pt4">
+
+        <Flex direction="column" gap="large">
+          <Flex flex="auto">
+            <Select
+              label={t("defense.chooseAbility")}
+              value={ability}
+              onChange={(event) => {
+                setAbility(abilityNameFromString(event.target.value));
+              }}
+            >
+              <option value="">{t("defense.abilityNames.none")}</option>
+              <hr />
+              {sortedAbilityNames.map((name) => {
+                return (
+                  <option key={name} value={name}>
+                    {t(`defense.abilityNames.${name}`)}
+                  </option>
+                );
+              })}
+            </Select>
+          </Flex>
+
+          <Flex flex="auto">
+            <Select
+              label={t("defense.chooseTeraType")}
+              value={teraType}
+              onChange={(event) => {
+                setTeraType(typesFromString(event.target.value)[0]);
+              }}
+            >
+              <option value="">{t("types.none")}</option>
+              <hr />
+              {allTypes.map((name) => {
+                return (
+                  <option key={name} value={name}>
+                    {t(`types.${name}`)}
+                  </option>
+                );
+              })}
+            </Select>
+          </Flex>
+        </Flex>
+
+        <Flex>
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
-        </div>
-      </div>
-      <div className="flex-auto w-50-ns pl5-ns">
-        <hr className="dn-ns subtle-hr mv4" />
+        </Flex>
+      </Flex>
+
+      <Flex direction="column" gap="large">
         <Matchups
           kind="defense"
           generation={generation}
@@ -210,7 +208,7 @@ export function ScreenDefense({ generation }: ScreenDefenseProps) {
           ability={ability}
           teraType={teraType}
         />
-      </div>
+      </Flex>
     </main>
   );
 }

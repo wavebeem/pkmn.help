@@ -1,3 +1,7 @@
+.root {
+  flex: auto;
+}
+
 .easterEgg {
   pointer-events: none;
   position: fixed;
@@ -72,9 +76,9 @@
   margin: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 640px) {
   .header {
-    font-size: 1.5rem;
+    font-size: var(--font-size3);
   }
 }
 
@@ -138,6 +142,7 @@
 }
 
 .headerButton::after {
+  box-sizing: content-box;
   --size: 0.25em;
   content: "";
   position: absolute;
@@ -198,7 +203,7 @@
   justify-content: center;
 }
 
-@media (min-width: 40em) {
+@media (min-width: 640px) {
   .tabBar {
     display: flex;
   }

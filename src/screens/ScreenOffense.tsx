@@ -1,27 +1,31 @@
 import classNames from "classnames";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useNavigate } from "react-router-dom";
-import { Generation } from "../misc/data-generations";
-import {
-  CoverageType,
-  removeInvalidOffenseTypesForGeneration,
-  Type,
-  typesFromString,
-} from "../misc/data-types";
+import { useNavigate } from "react-router-dom";
+import { useSessionStorage } from "usehooks-ts";
+import { CopyButton } from "../components/CopyButton";
 import { DexCoverage } from "../components/DexCoverage";
+import { FancyLink } from "../components/FancyLink";
+import { FancyText } from "../components/FancyText";
+import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
 import { useSearch } from "../hooks/useSearch";
-import { useSessionStorage } from "usehooks-ts";
-import { CopyButton } from "../components/CopyButton";
+import { Generation } from "../misc/data-generations";
+import {
+  CoverageType,
+  Type,
+  removeInvalidOffenseTypesForGeneration,
+  typesFromString,
+} from "../misc/data-types";
+import styles from "./ScreenOffense.module.css";
 
-interface OffenseProps {
+export type OffenseProps = {
   generation: Generation;
   coverageTypes?: CoverageType[];
   fallbackCoverageTypes: CoverageType[];
   isLoading: boolean;
-}
+};
 
 export function ScreenOffense({
   generation,
@@ -58,54 +62,47 @@ export function ScreenOffense({
   const listLength = coverageTypes?.length ?? 0;
   const listLengthFormatted = listLength.toLocaleString(i18n.languages);
 
-  const classH2 = "f4 mb2 mt4 weight-medium";
   return (
-    <main className="ph3 pt0 pb4 content-wide center flex flex-column flex-row-ns">
-      <div className="flex-auto w-50-ns">
-        <h2 className={classH2}>{t("offense.chooseTypes")}</h2>
-        <MultiTypeSelector
-          generation={generation}
-          value={offenseTypes}
-          onChange={setOffenseTypes}
-        />
-        <hr className="dn-ns subtle-hr mv4" />
+    <main className={classNames(styles.root, "content-wide center")}>
+      <Flex direction="column" gap="xlarge">
+        <Flex direction="column" gap="small">
+          <FancyText tag="h2" fontSize="large" fontWeight="medium">
+            {t("offense.chooseTypes")}
+          </FancyText>
+          <MultiTypeSelector
+            generation={generation}
+            value={offenseTypes}
+            onChange={setOffenseTypes}
+          />
+        </Flex>
         {generation === "default" && (
-          <div className="mt4 mb0">
-            <h2 className="f4 weight-medium ma0">
+          <Flex direction="column" gap="small">
+            <FancyText tag="h2" fontSize="large" fontWeight="medium">
               {t("offense.coverage.heading")}
-            </h2>
-            <div className="pt2">
-              <Link
-                to="/offense/coverage/"
-                className="underline fg-link br1 focus-outline"
-              >
-                {t("offense.coverage.edit")}
-              </Link>{" "}
-              ({listLengthFormatted})
-            </div>
-            <div
-              className={classNames(
-                "pt3",
-                isLoading && ["o-30 no-pointer cursor-na"]
-              )}
-            >
+            </FancyText>
+            <Flex direction="column" gap="large">
+              <div>
+                <FancyLink to="/offense/coverage/">
+                  {t("offense.coverage.edit")}
+                </FancyLink>{" "}
+                ({listLengthFormatted})
+              </div>
               <DexCoverage
                 generation={generation}
                 coverageTypes={coverageTypes ?? fallbackCoverageTypes}
                 types={offenseTypes}
                 isLoading={isLoading}
               />
-            </div>
-            <div className="pt4">
-              <CopyButton text={permalink.href}>
-                {t("general.copyLink")}
-              </CopyButton>
-            </div>
-          </div>
+              <Flex>
+                <CopyButton text={permalink.href}>
+                  {t("general.copyLink")}
+                </CopyButton>
+              </Flex>
+            </Flex>
+          </Flex>
         )}
-      </div>
-      <div className="flex-auto w-50-ns pl5-ns">
-        <hr className="dn-ns subtle-hr mv4" />
+      </Flex>
+      <Flex direction="column" gap="large">
         <Matchups
           kind="offense"
           generation={generation}
@@ -113,7 +110,7 @@ export function ScreenOffense({
           ability="none"
           teraType={Type.none}
         />
-      </div>
+      </Flex>
     </main>
   );
 }

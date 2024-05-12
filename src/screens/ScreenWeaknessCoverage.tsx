@@ -1,27 +1,30 @@
 import Papa from "papaparse";
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
 import { Button } from "../components/Button";
+import { Divider } from "../components/Divider";
+import { FancyLink } from "../components/FancyLink";
+import { FancyText } from "../components/FancyText";
+import { Flex } from "../components/Flex";
+import { Spinner } from "../components/Spinner";
+import { useTypeCount } from "../hooks/useTypeCount";
 import {
   CoverageType,
+  Type,
   objectToCoverageType,
   reverseClosestLookup,
-  Type,
   typesFromUserInput,
 } from "../misc/data-types";
 import { pickFile } from "../misc/pickFile";
 import { saveFile } from "../misc/saveFile";
-import { useTypeCount } from "../hooks/useTypeCount";
-import { Spinner } from "../components/Spinner";
 import styles from "./ScreenWeaknessCoverage.module.css";
 import { Icon } from "../components/Icon";
 
-interface WeaknessCoverageProps {
+export type WeaknessCoverageProps = {
   setCoverageTypes: (types: CoverageType[]) => void;
   fallbackCoverageTypes: CoverageType[];
   isLoading: boolean;
-}
+};
 
 export function ScreenWeaknessCoverage({
   setCoverageTypes,
@@ -29,16 +32,8 @@ export function ScreenWeaknessCoverage({
   isLoading,
 }: WeaknessCoverageProps) {
   const { t } = useTranslation();
-  const [lastUpdated, setLastUpdated] = useState(new Date());
   const [statusText, setStatusText] = useState("");
   const [typeCount] = useTypeCount();
-  const statusRef = useRef<HTMLParagraphElement>(null);
-
-  useEffect(() => {
-    if (statusRef.current instanceof HTMLElement) {
-      statusRef.current.scrollIntoView();
-    }
-  }, [lastUpdated]);
 
   function saveCSV() {
     const fields = [
@@ -77,7 +72,6 @@ export function ScreenWeaknessCoverage({
       data: csv,
     });
     setStatusText(t("coverage.status.exported"));
-    setLastUpdated(new Date());
   }
 
   async function loadCSV() {
@@ -127,62 +121,56 @@ export function ScreenWeaknessCoverage({
       })
     );
     setCoverageTypes(newCoverageTypes);
-    setLastUpdated(new Date());
   }
 
   function loadDefault() {
     setStatusText(t("coverage.status.reset"));
     setCoverageTypes(fallbackCoverageTypes);
-    setLastUpdated(new Date());
   }
 
   return (
-    <main className="pa3 center content-narrow">
-      <h2 className="lh-title f4 weight-medium">{t("coverage.heading")}</h2>
-      <p>{t("coverage.paragraph1")}</p>
-      <p>{t("coverage.paragraph2")}</p>
-      <p>{t("coverage.paragraph3")}</p>
-      {isLoading ? (
-        <Spinner />
-      ) : (
-        <div className={`pt2 items-center ${styles.buttonGrid}`}>
-          <Button
-            onClick={() => {
-              saveCSV();
-            }}
-          >
-            {t("coverage.export.button")}
-          </Button>
-          <span>{t("coverage.export.description")}</span>
+    <main className="center content-narrow">
+      <Flex direction="column" gap="large" padding="large">
+        <Flex gap="medium" />
 
-          <Button
-            onClick={() => {
-              loadCSV();
-            }}
-          >
-            {t("coverage.import.button")}
-          </Button>
-          <span>{t("coverage.import.description")}</span>
+        <FancyText tag="h2" fontSize="xlarge" fontWeight="medium">
+          {t("coverage.heading")}
+        </FancyText>
 
-          <Button
-            onClick={() => {
-              loadDefault();
-            }}
-          >
-            {t("coverage.reset.button")}
-          </Button>
-          <span>{t("coverage.reset.description")}</span>
-        </div>
-      )}
-      <p className="f4 b" hidden={!statusText} ref={statusRef}>
-        {statusText}
-      </p>
-      <p className="flex gap1 items-center">
-        <Icon name="arrowLeft" />
-        <Link to="/offense/" className="underline fg-link br1 focus-outline">
-          {t("coverage.back")}
-        </Link>
-      </p>
+        <FancyText tag="p">{t("coverage.paragraph1")}</FancyText>
+
+        <FancyText tag="p">{t("coverage.paragraph2")}</FancyText>
+
+        <FancyText tag="p">{t("coverage.paragraph3")}</FancyText>
+
+        {isLoading ? (
+          <Spinner />
+        ) : (
+          <div className={styles.buttonGrid}>
+            <Button onClick={saveCSV}>{t("coverage.export.button")}</Button>
+            <span>{t("coverage.export.description")}</span>
+
+            <Button onClick={loadCSV}>{t("coverage.import.button")}</Button>
+            <span>{t("coverage.import.description")}</span>
+
+            <Button onClick={loadDefault}>{t("coverage.reset.button")}</Button>
+            <span>{t("coverage.reset.description")}</span>
+          </div>
+        )}
+
+        {statusText && (
+          <FancyText tag="p" fontSize="large" fontWeight="medium">
+            {statusText}
+          </FancyText>
+        )}
+
+        <Divider />
+
+        <FancyText tag="p" fontSize="large" fontWeight="medium">
+          <Icon name="arrowLeft" />{" "}
+          <FancyLink to="/offense/">{t("coverage.back")}</FancyLink>
+        </FancyText>
+      </Flex>
     </main>
   );
 }

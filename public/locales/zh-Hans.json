@@ -110,12 +110,8 @@
       "simple": "简单表格",
       "complex": "复杂表格",
       "type": "属性",
-      "save": "保存",
-      "saveLong": "保存 {{ name }}",
       "edit": "编辑",
-      "editLong": "编辑 {{ name }}",
-      "remove": "移除",
-      "removeLong": "移除 {{ name }}"
+      "remove": "移除"
     }
   },
   "pokedex": {

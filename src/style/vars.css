@@ -24,7 +24,6 @@
 
   --weight-normal: 400;
   --weight-medium: 500;
-  --weight-bold: 600;
 
   --background-button-bg: linear-gradient(
       to bottom,
@@ -44,6 +43,7 @@
   --padding2: 0.5rem;
   --padding3: 1rem;
   --padding4: 2rem;
+  --padding5: 4rem;
 
   --border-radius0: 0;
   --border-radius1: 0.125rem;
@@ -61,6 +61,7 @@
   --font-size0: 0.875rem;
   --font-size1: 1rem;
   --font-size2: 1.25rem;
+  --font-size3: 1.5rem;
 
   --font-sans: "Roboto", system-ui, sans-serif;
 
@@ -85,8 +86,6 @@
 :root[lang="zh-Hans"] {
   --weight-normal: 400;
   --weight-medium: 400;
-  /* ??? */
-  /* --weight-bold: 400; */
 }
 
 :root[data-theme="dark"] {

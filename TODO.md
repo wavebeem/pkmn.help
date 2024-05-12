@@ -1,4 +1,4 @@
-- Translate the rest of the UI
-  - ? https://formatjs.io/docs/react-intl/components
-  - Can you search in your native language?
-- Some forms are weird? Lurantis, Ribombee, Minior, Kommo-o, Mimikyu, etc
+- Remove translation defense.team.saveLong
+- Remove translation defense.team.save
+
+- Remove translation defense.team.editLong

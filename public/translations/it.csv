@@ -11,7 +11,7 @@ offense.coverage.edit,Edit list,Modifica elenco
 offense.coverage.weakness,Weak,Debole
 offense.coverage.normal,Normal,Normale
 offense.coverage.resistance,Resist,Resistente
-offense.teraPokemon,Tera Pokémon,
+offense.teraPokemon,Tera Pokémon,Teracristal
 offense.coverageList.empty,No Pokémon found or no types selected,Nessun Pokémon trovato o nessun tipo selezionato
 offense.coverageList.weakness.heading,Weakness coverage list,Elenco della copertura debolezze
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,Questi Pokémon sono deboli ad almeno uno dei tipi selezionati.
@@ -20,7 +20,7 @@ offense.coverageList.normal.description,These Pokémon are not in the weakness o
 offense.coverageList.resistance.heading,Resistance coverage list,Elenco della copertura resistenze
 offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,Questi Pokémon resistono tutti i tipi selezionati.
 coverage.heading,Pokédex coverage,Copertura debolezze
-coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",Importa/esporta file CSV Pokédex personalizzati per vedere la copertura delle debolezze per diversi Pokémon. Crea un file CSV personalizzato solo con i Pokémon di tier OU (Estremamente usati) o creare perfino i tuoi Pokémon da zero.
+coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",Importa/esporta file Pokédex CSV personalizzati per vedere la copertura delle debolezze per diversi Pokémon. Crea un file CSV personalizzato solo con i Pokémon di tier OU (Estremamente usati) o crea i tuoi Pokémon da zero.
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","I dati CSV vengono caricati dal nome dell'intestazione della colonna, non dall'ordine delle colonne, quindi puoi aggiungere o riordinare le colonne se vuoi (es: aggiungi una colonna ""livello"" o una colonna ""note"")."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","I file CSV possono essere modificati con Fogli Google, Microsoft Excel, OpenOffice, LibreOffice, Blocco note e altro."
 coverage.csvHeaders.number,Number,Numero
@@ -34,7 +34,7 @@ coverage.import.button,Import,Importa
 coverage.import.description,Import an edited Pokédex CSV file,Importa un file CSV Pokédex modificato
 coverage.reset.button,Reset,Ripristina
 coverage.reset.description,Reset to the default Pokédex,Ripristina il Pokédex predefinito
-coverage.filename,pkmn.help type coverage.csv,Copertura tipi pkmn.help.csv
+coverage.filename,pkmn.help type coverage.csv,pkmn.help copertura tipi.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,"Sono state importate {{ n }} forme Pokémon da ""{{ file }}"""
 coverage.status.exported,Exported default Pokémon forms,Forme Pokémon predefinite esportate
 coverage.status.reset,Loaded default Pokémon forms,Forme Pokémon predefinite caricate
@@ -45,7 +45,7 @@ defense.chooseSecond,Choose second type,Scegli il secondo tipo
 defense.chooseThird,Choose third type,Scegli il terzo tipo
 defense.takesXFrom,Takes {{ x }} from,Subisce {{ x }} da
 defense.chooseAbility,Choose ability,Scegli un'abilità
-defense.chooseTeraType,Choose tera type,
+defense.chooseTeraType,Choose tera type,Scegli il tipo di tera
 defense.abilityNames.none,None,Nessuna
 defense.abilityNames.tera_shell,Tera Shell,Teraguscio
 defense.abilityNames.filter,Filter,Filtro
@@ -80,19 +80,15 @@ defense.team.resist,Resist,Resistenze
 defense.team.simple,Simple,Semplice
 defense.team.complex,Complex,Complesso
 defense.team.type,Type,Tipo
-defense.team.save,Save,Salva
-defense.team.saveLong,Save {{ name }},Salva {{ name }}
 defense.team.edit,Edit,Modifica
-defense.team.editLong,Edit {{ name }},Modifica {{ name }}
 defense.team.remove,Remove,Rimuovi
-defense.team.removeLong,Remove {{ name }},Rimuovi {{ name }}
 pokedex.search.description,"Search by name, number, or types","Cerca tramite nome, numero o tipi"
 pokedex.search.help,Help,Aiuto
 pokedex.search.helpLong,"Help, search Pokédex","Aiuto, cerca Pokédex"
 pokedex.search.notFound,No Pokémon found,Nessun Pokémon trovato
 pokedex.offense.text,Offense,Offensiva
 pokedex.defense.text,Defense,Difensiva
-pokedex.cry.text,Cry,
+pokedex.cry.text,Cry,Verso
 pokedex.shiny.text,Shiny,Forma cromatica
 pokedex.pagination.next,Next,Succ.
 pokedex.pagination.nextLong,Next,Successiva
@@ -115,7 +111,7 @@ pokedex.stats.speedLong,Speed,Velocità
 pokedex.stats.total,Total,Totale
 pokedex.stats.totalLong,Total,Totale
 pokedexHelp.searchByName.heading,Search by name,Cerca per nome
-pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puoi cercare un Pokémon per nome. Se ricordi solo una parte del nome del Pokémon, probabilmente può ancora trovarlo per te. Tuttavia, al momento non può gestire errori di battitura."
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puoi cercare un Pokémon per nome. Se ricordi solo una parte del nome del Pokémon, probabilmente puoi comunque trovarlo. Tuttavia, al momento, gli errori di battitura non sono ammessi."
 pokedexHelp.searchByNumber.heading,Search by number,Cerca per numero
 pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Ricerca per numero del Pokédex nazionale. Se vuoi Bulbsaur, digita semplicemente 1, non #001."
 pokedexHelp.searchByType.heading,Search by type,Cerca per Tipo
@@ -133,35 +129,35 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,Impostazioni
 more.settings.language.label,Language,Lingua
 more.settings.language.default,Auto detect language,Individua lingua automaticamente
-more.settings.language.official,Official languages,
-more.settings.language.unofficial,Unofficial languages,
+more.settings.language.official,Official languages,Lingue ufficiali
+more.settings.language.unofficial,Unofficial languages,Lingue non ufficiali
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Il supporto alle lingue è incompleto. Per favore scrivimi una mail, ti pagherò per tradurre."
 more.settings.theme.label,Theme,Tema
-more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Predefinito di sistema"" cambierà automaticamente in base alle tue impostazioni attive."
+more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Predefinito di sistema"" cambierà automaticamente in base alle impostazioni attive sul tuo sistema operativo."
 more.settings.theme.values.auto,System default,Predefinito di sistema
 more.settings.theme.values.light,Light,Chiaro
 more.settings.theme.values.dark,Dark,Scuro
 more.settings.typeCount.label,Number of types,Numero di tipi
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Un Pokémon può avere brevemente tre tipi allo stesso tempo se viene colpito da Boscomalocchio o Halloween. Il campo del terzo tipo di solito è nascosto poiché è raramente usato.
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Un Pokémon può avere temporaneamente tre tipi in contemporanea se viene colpito da Boscomalocchio o Halloween. Il campo del terzo tipo di solito è nascosto poiché è raramente usato.
 more.settings.typeCount.values.2,Two types (2),Due tipi (2)
 more.settings.typeCount.values.3,Three types (3),Tre tipi (3)
 more.changes.heading,What’s new,Cosa c'è di nuovo
 more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Scopri cosa c’è di nuovo nel <changelog>registro degli aggiornamenti</changelog>.
 more.help.heading,Help,Aiuto
-more.help.serviceWorker.description,This button can help fix issues in the app.,Questo bottone può aiutare a sistemare gli errori nell'app.
+more.help.serviceWorker.description,This button can help fix issues in the app.,Questo pulsante può aiutare a sistemare gli errori nell'app.
 more.help.serviceWorker.button,Reset,Ripristina
 more.privacy.heading,Privacy,Privacy
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Non pubblicherò mai annunci o ruberò i tuoi dati personali. Uso <plausible>Plausible Analytics</plausible>, che è autofinanziato, indipendente, ospitato nell'UE e non memorizza alcun cookie sul tuo computer."
 more.givingBack.heading,Showing appreciation,Mostra il tuo apprezzamento
-more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.","Ho passato innumerevoli ore a migliorare questo sito. Se apprezzi quello che ho fatto, per favore considera di fare una donazione a enti di beneficenza che supportano BIPOC e i diritti delle persone transgender."
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Ho passato innumerevoli ore a migliorare questo sito. Se apprezzate quello che ho fatto, considerate gentilmente di fare una donazione ad enti di beneficenza che supportano BIPOC ed i diritti delle persone transgender."
 more.thanks.heading,Special thanks,Ringraziamenti speciali
 more.thanks.sections.da,Danish translation,Traduzione danese
 more.thanks.sections.ru,Russian translation,Traduzione russa
 more.thanks.sections.kk,Kazakh translation,Traduzione kazaka
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Traduzione portoghese brasiliana
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Traduzione cinese
-more.thanks.sections.zh-Hant,Traditional Chinese translation,
+more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Traduzione portoghese (Portogallo)
+more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Traduzione portoghese (Brasile)
+more.thanks.sections.zh-Hans,Simplified Chinese translation,Traduzione cinese semplificato
+more.thanks.sections.zh-Hant,Traditional Chinese translation,Traduzione cinese tradizionale
 more.thanks.sections.ro,Romanian translation,Traduzione rumena
 more.thanks.sections.pl,Polish translation,Traduzione polacca
 more.thanks.sections.fr,French translation,Traduzione francese
@@ -169,7 +165,7 @@ more.thanks.sections.de,German translation,Traduzione tedesca
 more.thanks.sections.it,Italian translation,Traduzione italiana
 more.thanks.sections.ko,Korean translation,Traduzione coreana
 more.thanks.sections.ja,Japanese translation,Traduzione giapponese
-more.thanks.sections.nl,Dutch translation,Traduzione nederlandese
+more.thanks.sections.nl,Dutch translation,Traduzione olandese
 more.thanks.sections.testing,Testing,Test
 more.thanks.sections.other,Several anonymous Poké Fans,Diversi Fan anonimi di Pokémon
 more.openSource.heading,Open source,Sorgente aperta
@@ -195,13 +191,13 @@ types.dark,Dark,Buio
 types.fairy,Fairy,Folletto
 types.stellar,Stellar,Astrale
 types.none,None,Nessuno
-banners.updateReady.description,An update is available,è disponibile un aggiornamento
+banners.updateReady.description,An update is available,È disponibile un aggiornamento
 banners.updateReady.whatsNew,What’s new,Cosa c'è di nuovo
 banners.updateReady.update,Update,Aggiorna
 general.loading,Loading…,Caricamento...
-general.copyLink,Copy link,
+general.copyLink,Copy link,Copia Link
 games.label,Game generation,Generazione di gioco
 games.help,Use type effectiveness from different game generations.,Usa l'efficacia tra tipi di diverse generazioni di giochi.
 games.byID.gen1,Generation 1,Generazione 1
-games.byID.gen2,Generation 2–5,Generazioni 2é5
+games.byID.gen2,Generation 2–5,Generazioni 2-5
 games.byID.default,Default (generation 6+),Predefinito (Generazioni 6+)

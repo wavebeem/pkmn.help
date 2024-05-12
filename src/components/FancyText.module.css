@@ -18,6 +18,26 @@
   font-size: 1.25rem;
 }
 
+.FancyText[data-font-size="xlarge"] {
+  font-size: 1.5rem;
+}
+
+.FancyText[data-color="1"] {
+  color: var(--color-fg1);
+}
+
+.FancyText[data-color="2"] {
+  color: var(--color-fg2);
+}
+
+.FancyText[data-color="3"] {
+  color: var(--color-fg3);
+}
+
+.FancyText[data-inline] {
+  display: inline;
+}
+
 .FancyText[data-font-weight="inherit"] {
   font-weight: inherit;
 }
@@ -28,10 +48,6 @@
 
 .FancyText[data-font-weight="medium"] {
   font-weight: var(--weight-medium);
-}
-
-.FancyText[data-font-weight="bold"] {
-  font-weight: var(--weight-bold);
 }
 
 .FancyText[data-text-align="left"] {
@@ -48,4 +64,8 @@
 
 .FancyText[data-tabular-nums="true"] {
   font-variant-numeric: tabular-nums;
+}
+
+.FancyText:is(h1, h2, h3, h4, h5, h6) {
+  line-height: 1.25;
 }

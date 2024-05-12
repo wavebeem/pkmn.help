@@ -1,0 +1,12 @@
+.root {
+  display: grid;
+  margin-top: var(--padding3);
+  padding: var(--padding3);
+  gap: var(--padding5);
+}
+
+@media (min-width: 640px) {
+  .root {
+    grid-template-columns: 1fr 1fr;
+  }
+}

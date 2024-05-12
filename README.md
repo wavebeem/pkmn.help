@@ -4,7 +4,25 @@
 
 # Pokémon Type Calculator
 
-Pokémon Type Calculator helps you figure out offense/defense matchups for Pokémon
+Your premier Pokémon companion
+
+- Check type matchups
+
+- Check type coverage against the Pokédex
+
+- Plan your team
+
+- View the Pokédex
+
+  - See HD Pokémon Home art
+
+  - Listen to Pokémon cry sound effects
+
+  - See shiny forms
+
+  - View stats
+
+- Translated into many languages
 
 ## Development
 
@@ -15,7 +33,8 @@ $ npm start
 
 ## Updating Pokédex data
 
-Make sure to delete all the images in `public/img` before running this command or all existing images will be kept
+Make sure to delete all the images in `public/img` before running this command
+or all existing images will be kept
 
 ```
 $ npm run update-pokedex

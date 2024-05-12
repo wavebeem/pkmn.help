@@ -80,12 +80,8 @@ defense.team.resist,Resist,Resistência
 defense.team.simple,Simple,Simples
 defense.team.complex,Complex,Complexo
 defense.team.type,Type,Tipo
-defense.team.save,Save,Salvar
-defense.team.saveLong,Save {{ name }},Salvar {{ name }}
 defense.team.edit,Edit,Editar
-defense.team.editLong,Edit {{ name }},Editar {{ name }}
 defense.team.remove,Remove,Remover
-defense.team.removeLong,Remove {{ name }},Remover {{ name }}
 pokedex.search.description,"Search by name, number, or types","Procurar por nome, número ou tipos"
 pokedex.search.help,Help,Ajuda
 pokedex.search.helpLong,"Help, search Pokédex","Ajuda, procurar na Pokédex"
@@ -153,7 +149,7 @@ more.help.serviceWorker.button,Reset,Atualizar
 more.privacy.heading,Privacy,Privacidade
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Não uso e nunca usarei propagandas ou roubarei suas informações pessoais. Eu usei <plausible>Plausible Analytics</plausible>, que é auto-fundada, independente, hospedada na Europa e não acumula cookies no seu computador."
 more.givingBack.heading,Showing appreciation,Demonstrando carinho
-more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.","Dediquei incontáveis horas melhorando este site. Se aprecia o que fiz, por favor, considere doar para caridades que apoiam os direitos BIPOC e transsexuais."
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Dediquei incontáveis horas melhorando este site. Se aprecia o que fiz, por favor, considere doar para caridades que apoiam os direitos BIPOC e transsexuais."
 more.thanks.heading,Special thanks,Agradecimentos especiais
 more.thanks.sections.da,Danish translation,Tradução dinamarquesa
 more.thanks.sections.ru,Russian translation,Tradução Russa

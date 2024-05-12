@@ -16,6 +16,7 @@
       "normal": "Normale",
       "resistance": "Resistente"
     },
+    "teraPokemon": "Teracristal",
     "coverageList": {
       "empty": "Nessun Pokémon trovato o nessun tipo selezionato",
       "weakness": {
@@ -34,7 +35,7 @@
   },
   "coverage": {
     "heading": "Copertura debolezze",
-    "paragraph1": "Importa/esporta file CSV Pokédex personalizzati per vedere la copertura delle debolezze per diversi Pokémon. Crea un file CSV personalizzato solo con i Pokémon di tier OU (Estremamente usati) o creare perfino i tuoi Pokémon da zero.",
+    "paragraph1": "Importa/esporta file Pokédex CSV personalizzati per vedere la copertura delle debolezze per diversi Pokémon. Crea un file CSV personalizzato solo con i Pokémon di tier OU (Estremamente usati) o crea i tuoi Pokémon da zero.",
     "paragraph2": "I dati CSV vengono caricati dal nome dell'intestazione della colonna, non dall'ordine delle colonne, quindi puoi aggiungere o riordinare le colonne se vuoi (es: aggiungi una colonna \"livello\" o una colonna \"note\").",
     "paragraph3": "I file CSV possono essere modificati con Fogli Google, Microsoft Excel, OpenOffice, LibreOffice, Blocco note e altro.",
     "csvHeaders": {
@@ -56,7 +57,7 @@
       "button": "Ripristina",
       "description": "Ripristina il Pokédex predefinito"
     },
-    "filename": "Copertura tipi pkmn.help.csv",
+    "filename": "pkmn.help copertura tipi.csv",
     "status": {
       "imported": "Sono state importate {{ n }} forme Pokémon da \"{{ file }}\"",
       "exported": "Forme Pokémon predefinite esportate",
@@ -71,6 +72,7 @@
     "chooseThird": "Scegli il terzo tipo",
     "takesXFrom": "Subisce {{ x }} da",
     "chooseAbility": "Scegli un'abilità",
+    "chooseTeraType": "Scegli il tipo di tera",
     "abilityNames": {
       "none": "Nessuna",
       "tera_shell": "Teraguscio",
@@ -110,12 +112,8 @@
       "simple": "Semplice",
       "complex": "Complesso",
       "type": "Tipo",
-      "save": "Salva",
-      "saveLong": "Salva {{ name }}",
       "edit": "Modifica",
-      "editLong": "Modifica {{ name }}",
-      "remove": "Rimuovi",
-      "removeLong": "Rimuovi {{ name }}"
+      "remove": "Rimuovi"
     }
   },
   "pokedex": {
@@ -130,6 +128,9 @@
     },
     "defense": {
       "text": "Difensiva"
+    },
+    "cry": {
+      "text": "Verso"
     },
     "shiny": {
       "text": "Forma cromatica"
@@ -162,7 +163,7 @@
   "pokedexHelp": {
     "searchByName": {
       "heading": "Cerca per nome",
-      "description": "Puoi cercare un Pokémon per nome. Se ricordi solo una parte del nome del Pokémon, probabilmente può ancora trovarlo per te. Tuttavia, al momento non può gestire errori di battitura."
+      "description": "Puoi cercare un Pokémon per nome. Se ricordi solo una parte del nome del Pokémon, probabilmente puoi comunque trovarlo. Tuttavia, al momento, gli errori di battitura non sono ammessi."
     },
     "searchByNumber": {
       "heading": "Cerca per numero",
@@ -199,11 +200,13 @@
       "language": {
         "label": "Lingua",
         "default": "Individua lingua automaticamente",
+        "official": "Lingue ufficiali",
+        "unofficial": "Lingue non ufficiali",
         "helpText": "Il supporto alle lingue è incompleto. Per favore scrivimi una mail, ti pagherò per tradurre."
       },
       "theme": {
         "label": "Tema",
-        "help": "\"Predefinito di sistema\" cambierà automaticamente in base alle tue impostazioni attive.",
+        "help": "\"Predefinito di sistema\" cambierà automaticamente in base alle impostazioni attive sul tuo sistema operativo.",
         "values": {
           "auto": "Predefinito di sistema",
           "light": "Chiaro",
@@ -212,7 +215,7 @@
       },
       "typeCount": {
         "label": "Numero di tipi",
-        "help": "Un Pokémon può avere brevemente tre tipi allo stesso tempo se viene colpito da Boscomalocchio o Halloween. Il campo del terzo tipo di solito è nascosto poiché è raramente usato.",
+        "help": "Un Pokémon può avere temporaneamente tre tipi in contemporanea se viene colpito da Boscomalocchio o Halloween. Il campo del terzo tipo di solito è nascosto poiché è raramente usato.",
         "values": {
           "2": "Due tipi (2)",
           "3": "Tre tipi (3)"
@@ -226,7 +229,7 @@
     "help": {
       "heading": "Aiuto",
       "serviceWorker": {
-        "description": "Questo bottone può aiutare a sistemare gli errori nell'app.",
+        "description": "Questo pulsante può aiutare a sistemare gli errori nell'app.",
         "button": "Ripristina"
       }
     },
@@ -236,7 +239,7 @@
     },
     "givingBack": {
       "heading": "Mostra il tuo apprezzamento",
-      "description": "Ho passato innumerevoli ore a migliorare questo sito. Se apprezzi quello che ho fatto, per favore considera di fare una donazione a enti di beneficenza che supportano BIPOC e i diritti delle persone transgender."
+      "description": "Ho passato innumerevoli ore a migliorare questo sito. Se apprezzate quello che ho fatto, considerate gentilmente di fare una donazione ad enti di beneficenza che supportano BIPOC ed i diritti delle persone transgender."
     },
     "thanks": {
       "heading": "Ringraziamenti speciali",
@@ -244,8 +247,10 @@
         "da": "Traduzione danese",
         "ru": "Traduzione russa",
         "kk": "Traduzione kazaka",
-        "pt-BR": "Traduzione portoghese brasiliana",
-        "zh-Hans": "Traduzione cinese",
+        "pt-PT": "Traduzione portoghese (Portogallo)",
+        "pt-BR": "Traduzione portoghese (Brasile)",
+        "zh-Hans": "Traduzione cinese semplificato",
+        "zh-Hant": "Traduzione cinese tradizionale",
         "ro": "Traduzione rumena",
         "pl": "Traduzione polacca",
         "fr": "Traduzione francese",
@@ -253,7 +258,7 @@
         "it": "Traduzione italiana",
         "ko": "Traduzione coreana",
         "ja": "Traduzione giapponese",
-        "nl": "Traduzione nederlandese",
+        "nl": "Traduzione olandese",
         "testing": "Test",
         "other": "Diversi Fan anonimi di Pokémon"
       }
@@ -290,20 +295,21 @@
   },
   "banners": {
     "updateReady": {
-      "description": "è disponibile un aggiornamento",
+      "description": "È disponibile un aggiornamento",
       "whatsNew": "Cosa c'è di nuovo",
       "update": "Aggiorna"
     }
   },
   "general": {
-    "loading": "Caricamento..."
+    "loading": "Caricamento...",
+    "copyLink": "Copia Link"
   },
   "games": {
     "label": "Generazione di gioco",
     "help": "Usa l'efficacia tra tipi di diverse generazioni di giochi.",
     "byID": {
       "gen1": "Generazione 1",
-      "gen2": "Generazioni 2é5",
+      "gen2": "Generazioni 2-5",
       "default": "Predefinito (Generazioni 6+)"
     }
   }

@@ -110,12 +110,8 @@
       "simple": "Simpel",
       "complex": "Complex",
       "type": "Type",
-      "save": "Opslaan",
-      "saveLong": "Opslaan {{ name }}",
       "edit": "Bewerk",
-      "editLong": "Bewerk {{ name }}",
-      "remove": "Verwijder",
-      "removeLong": "Verwijder {{ name }}"
+      "remove": "Verwijder"
     }
   },
   "pokedex": {

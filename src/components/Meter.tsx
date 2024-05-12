@@ -13,8 +13,8 @@ export function Meter({ value, max, color = "var(--color-fg3)" }: MeterProps) {
     "--meter-width": (value / max) * 100 + "%",
   });
   return (
-    <div className={styles.Meter}>
-      <div className={styles.Meter_fill} style={vars}></div>
+    <div className={styles.root}>
+      <div className={styles.fill} style={vars}></div>
     </div>
   );
 }

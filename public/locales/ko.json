@@ -109,12 +109,8 @@
       "simple": "심플",
       "complex": "고급",
       "type": "유형",
-      "save": "저장",
-      "saveLong": "{{ name }} 저장",
       "edit": "편집",
-      "editLong": "{{ name }} 편집",
-      "remove": "제거",
-      "removeLong": "{{ name }}  제거"
+      "remove": "제거"
     }
   },
   "pokedex": {

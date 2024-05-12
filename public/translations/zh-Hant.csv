@@ -80,12 +80,8 @@ defense.team.resist,Resist,抵抗
 defense.team.simple,Simple,簡單
 defense.team.complex,Complex,複雜
 defense.team.type,Type,屬性
-defense.team.save,Save,保存
-defense.team.saveLong,Save {{ name }},保存{{ name }}
 defense.team.edit,Edit,編輯
-defense.team.editLong,Edit {{ name }},編輯{{ name }}
 defense.team.remove,Remove,移除
-defense.team.removeLong,Remove {{ name }},移除{{ name }}
 pokedex.search.description,"Search by name, number, or types",通過名稱、編號或屬性搜索
 pokedex.search.help,Help,幫助
 pokedex.search.helpLong,"Help, search Pokédex",幫助，搜索寶可夢圖鑑
@@ -153,7 +149,7 @@ more.help.serviceWorker.button,Reset,重置
 more.privacy.heading,Privacy,隱私權
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.",我永遠不會放置廣告或竊取您的個人數據。我使用的 <plausible>合理的分析</plausible> 是自資助的、獨立的、設在歐盟的，不會在您的計算機上存儲任何 cookie。
 more.givingBack.heading,Showing appreciation,表達感激之情
-more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.",我已經花費了無數時間來改進這個網站。如果您欣賞我的成果，請考慮捐款支持支持非裔和跨性別人士權利的慈善機構。
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",我已經花費了無數時間來改進這個網站。如果您欣賞我的成果，請考慮捐款支持支持非裔和跨性別人士權利的慈善機構。
 more.thanks.heading,Special thanks,特別感謝
 more.thanks.sections.da,Danish translation,丹麥翻譯
 more.thanks.sections.ru,Russian translation,俄羅斯翻譯

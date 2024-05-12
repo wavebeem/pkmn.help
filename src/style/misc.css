@@ -1,3 +1,9 @@
+:root {
+  background: var(--color-bg2);
+  color: var(--color-fg1);
+  line-height: 1.5;
+}
+
 [hidden] {
   display: none;
 }
@@ -31,8 +37,9 @@ input {
   font-weight: 500;
 }
 
-.weight-bold {
-  font-weight: 700;
+.center {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 :root[lang="ko"] .weight-medium,
@@ -136,6 +143,23 @@ input {
 
 .fallback-content {
   animation: 1s fallback-content-animation;
+  margin: 0 auto;
+  max-width: fit-content;
+  font-size: 1.25rem;
+}
+
+.fallback-content :any-link {
+  border-radius: var(--border-radius1);
+  color: var(--color-link);
+}
+
+.fallback-content :any-link:hover {
+  color: var(--color-link-hover);
+}
+
+.fallback-content :any-link:focus-visible {
+  outline: 2px solid;
+  outline-offset: 2px;
 }
 
 @keyframes fallback-content-animation {
@@ -202,7 +226,14 @@ input {
   color: var(--color-bg1);
 }
 
-@media (min-width: 40em) {
+.list-simple {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding-left: var(--padding3);
+}
+
+@media (min-width: 640px) {
   .grid-col2 {
     grid-template-columns: 1fr 1fr;
   }

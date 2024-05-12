@@ -1,0 +1,5 @@
+.small {
+  font-size: var(--font-size0);
+  color: var(--color-fg3);
+  padding: 0 var(--padding2);
+}

@@ -13,7 +13,7 @@ export function Search({ updateSearch, search }: SearchProps) {
   const { t } = useTranslation();
   const iconSize = 30;
   return (
-    <div className="relative mv3">
+    <div className={styles.root}>
       <Icon name="search" size={iconSize} className={styles.iconSearch} />
       <input
         aria-label={t("pokedex.search.description")}

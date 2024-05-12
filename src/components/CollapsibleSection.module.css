@@ -1,13 +1,23 @@
-.details > summary::marker {
+.summary {
+  padding: var(--padding3) 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+.summary::marker {
   font-size: 1.25rem;
 }
 
-.details > summary:focus-visible {
+.summary:focus-visible {
   outline: none;
 }
 
-.details > summary:focus-visible > * {
+.summary:focus-visible > * {
   border-radius: 2px;
   outline: 2px solid transparent;
   box-shadow: 0 0 0 2px var(--color-bg1), 0 0 0 4px var(--color-fg1);
+}
+
+.details[open] {
+  padding-bottom: var(--padding3);
 }

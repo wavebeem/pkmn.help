@@ -1,0 +1,10 @@
+.Card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius2);
+  background: var(--color-bg1);
+  color: var(--color-fg1);
+  box-shadow: var(--shadow-button);
+  border: 1px solid var(--color-border2);
+  padding: var(--padding3);
+}

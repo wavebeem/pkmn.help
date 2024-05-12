@@ -80,12 +80,8 @@ defense.team.resist,Resist,
 defense.team.simple,Simple,
 defense.team.complex,Complex,
 defense.team.type,Type,
-defense.team.save,Save,
-defense.team.saveLong,Save {{ name }},
 defense.team.edit,Edit,
-defense.team.editLong,Edit {{ name }},
 defense.team.remove,Remove,
-defense.team.removeLong,Remove {{ name }},
 pokedex.search.description,"Search by name, number, or types","Искать по имени, номеру, или типам"
 pokedex.search.help,Help,Помощь
 pokedex.search.helpLong,"Help, search Pokédex","Помощь, искать Покедекс"
@@ -153,7 +149,7 @@ more.help.serviceWorker.button,Reset,Перезагрузить
 more.privacy.heading,Privacy,Конфиденциальность
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Я никогда не буду ничего рекламировать или красть ваши личные данные. Я использую <plausible>Plausible Analytics</plausible>, что является самофинансируемым, независимым, размещенным в ЕС сайтом, который не сохраняет куки на вашем компьютере."
 more.givingBack.heading,Showing appreciation,Выражение Признательности
-more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support BIPOC and transgender rights.","Я потратил бесчисленное количество часов совершенствуя этот сайт. Если вы цените то, что я сделал, то пожалуйста, рассмотрите возможность пожертвования благотворительным учреждениям, которые поддерживают BIPOC и права трансгендеров."
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Я потратил бесчисленное количество часов совершенствуя этот сайт. Если вы цените то, что я сделал, то пожалуйста, рассмотрите возможность пожертвования благотворительным учреждениям, которые поддерживают BIPOC и права трансгендеров."
 more.thanks.heading,Special thanks,Особая Благодарность
 more.thanks.sections.da,Danish translation,Датский перевод
 more.thanks.sections.ru,Russian translation,Русский перевод

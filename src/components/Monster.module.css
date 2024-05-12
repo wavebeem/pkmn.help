@@ -54,7 +54,7 @@
   gap: var(--padding3);
 }
 
-@media (min-width: 60em) {
+@media (min-width: 640px) {
   .monster {
     grid-template-columns: 256px 1fr;
     grid-template-areas:
