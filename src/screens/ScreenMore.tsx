@@ -48,8 +48,6 @@ export function ScreenMore({
   const year = new Date().getFullYear();
   const autoLang = getDesiredLanguage() || "en";
 
-  needsAppUpdate = true;
-
   return (
     <main className="content-narrow center">
       <Flex direction="column" padding="large">
