@@ -143,6 +143,23 @@ input {
 
 .fallback-content {
   animation: 1s fallback-content-animation;
+  margin: 0 auto;
+  max-width: fit-content;
+  font-size: 1.25rem;
+}
+
+.fallback-content :any-link {
+  border-radius: var(--border-radius1);
+  color: var(--color-link);
+}
+
+.fallback-content :any-link:hover {
+  color: var(--color-link-hover);
+}
+
+.fallback-content :any-link:focus-visible {
+  outline: 2px solid;
+  outline-offset: 2px;
 }
 
 @keyframes fallback-content-animation {
