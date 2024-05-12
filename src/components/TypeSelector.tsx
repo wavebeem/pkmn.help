@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useId } from "react";
+import { ReactNode, useId } from "react";
 import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG } from "../misc/colors";
 import { Generation } from "../misc/data-generations";
@@ -22,7 +22,7 @@ export function TypeSelector({
   value,
   includeNone,
   disabledTypes,
-}: TypeSelectorProps) {
+}: TypeSelectorProps): ReactNode {
   const name = useId();
   const { t } = useTranslation();
   const baseTypes = typesForGeneration(generation).filter(

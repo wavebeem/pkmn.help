@@ -8,6 +8,7 @@ import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
 import { Meter } from "./Meter";
 import { Spinner } from "./Spinner";
+import { ReactNode } from "react";
 
 interface DexCoverageProps {
   generation: Generation;
@@ -21,7 +22,7 @@ export function DexCoverage({
   coverageTypes,
   types,
   isLoading,
-}: DexCoverageProps) {
+}: DexCoverageProps): ReactNode {
   const { t, i18n } = useTranslation();
   const {
     resistance: resist,

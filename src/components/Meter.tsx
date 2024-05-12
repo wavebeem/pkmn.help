@@ -1,5 +1,6 @@
 import styles from "./Meter.module.css";
 import { customProperties } from "../misc/customProperties";
+import { ReactNode } from "react";
 
 export interface MeterProps {
   value: number;
@@ -7,7 +8,11 @@ export interface MeterProps {
   color?: string;
 }
 
-export function Meter({ value, max, color = "var(--color-fg3)" }: MeterProps) {
+export function Meter({
+  value,
+  max,
+  color = "var(--color-fg3)",
+}: MeterProps): ReactNode {
   const vars = customProperties({
     "--meter-color": color,
     "--meter-width": (value / max) * 100 + "%",

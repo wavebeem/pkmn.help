@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { ReactNode, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useComputedLanguage } from "../hooks/useComputedLanguage";
 import { Pokemon } from "../misc/data-types";
@@ -20,7 +20,7 @@ export type MonsterProps = {
   setQuery: (query: string) => void;
 };
 
-export function Monster({ pokemon, setQuery }: MonsterProps) {
+export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
   const audioRef = useRef<HTMLAudioElement>(null);
   const { t, i18n } = useTranslation();
   const language = useComputedLanguage();

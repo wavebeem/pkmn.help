@@ -1,3 +1,4 @@
+import { ReactNode } from "react";
 import { Button } from "../components/Button";
 import { CopyButton } from "../components/CopyButton";
 import { ExternalLink } from "../components/ExternalLink";
@@ -11,7 +12,7 @@ export type ScreenErrorProps = {
   error: Error;
 };
 
-export function ScreenError({ error }: ScreenErrorProps) {
+export function ScreenError({ error }: ScreenErrorProps): ReactNode {
   const message = `
 ${error.name}: ${error.message}
 

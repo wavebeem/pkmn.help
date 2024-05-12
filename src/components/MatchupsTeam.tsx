@@ -9,6 +9,7 @@ import { matchupFor } from "../misc/data-matchups";
 import { AbilityName, Type, typesForGeneration } from "../misc/data-types";
 import { useTypeCount } from "../hooks/useTypeCount";
 import { EmptyState } from "./EmptyState";
+import { ReactNode } from "react";
 
 const matchupKeys = [
   "weak",
@@ -116,7 +117,7 @@ export function MatchupsTeam({
   teraTypes,
   format,
   abilityList,
-}: MatchupsTeamProps) {
+}: MatchupsTeamProps): ReactNode {
   const { t, i18n } = useTranslation();
   const [typeCount] = useTypeCount();
   const generationTypes = typesForGeneration(generation);

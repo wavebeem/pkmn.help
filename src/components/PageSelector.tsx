@@ -1,4 +1,4 @@
-import { RefObject } from "react";
+import { ReactNode, RefObject } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
 import { Button } from "./Button";
@@ -28,7 +28,7 @@ export function PageSelector<T>({
   hasPrev,
   hasNext,
   renderID,
-}: PageSelectorProps<T>) {
+}: PageSelectorProps<T>): ReactNode {
   const { t } = useTranslation();
 
   const hasRoomForMediumButtons = useMediaQuery("(min-width: 420px)");

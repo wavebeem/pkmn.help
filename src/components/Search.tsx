@@ -3,13 +3,14 @@ import { useTranslation } from "react-i18next";
 import { Icon } from "./Icon";
 import styles from "./Search.module.css";
 import { customProperties } from "../misc/customProperties";
+import { ReactNode } from "react";
 
 interface SearchProps {
   updateSearch: (search: string) => void;
   search: string;
 }
 
-export function Search({ updateSearch, search }: SearchProps) {
+export function Search({ updateSearch, search }: SearchProps): ReactNode {
   const { t } = useTranslation();
   const iconSize = 30;
   return (

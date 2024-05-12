@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { ButtonHTMLAttributes } from "react";
+import { ButtonHTMLAttributes, ReactNode } from "react";
 import styles from "./Button.module.css";
 
 export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
@@ -8,7 +8,7 @@ export function Button({
   className,
   "aria-pressed": ariaPressed,
   ...props
-}: ButtonProps) {
+}: ButtonProps): ReactNode {
   return (
     <button
       aria-pressed={ariaPressed}

@@ -4,8 +4,9 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import styles from "./ScreenPokedexHelp.module.css";
 import { Icon } from "../components/Icon";
+import { ReactNode } from "react";
 
-export function ScreenPokedexHelp() {
+export function ScreenPokedexHelp(): ReactNode {
   const { t } = useTranslation();
   return (
     <main className="center content-narrow">

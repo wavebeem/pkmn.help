@@ -3,12 +3,13 @@ import { typeColor, typeColorBG, typeColorBorder } from "../misc/colors";
 import { Type } from "../misc/data-types";
 import styles from "./Badge.module.css";
 import { customProperties } from "../misc/customProperties";
+import { ReactNode } from "react";
 
 interface BadgeProps {
   type: Type;
 }
 
-export function Badge({ type }: BadgeProps) {
+export function Badge({ type }: BadgeProps): ReactNode {
   const { t } = useTranslation();
   return (
     <div

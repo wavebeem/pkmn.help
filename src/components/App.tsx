@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect, Suspense, ReactNode } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { NavLink, Navigate, Route, Routes } from "react-router-dom";
@@ -50,7 +50,7 @@ type PokeballTheme = typeof pokeballThemes[number];
 
 const pokeballThemeCycle = iterStutter(iterCycle(pokeballThemes), 2);
 
-export function App() {
+export function App(): ReactNode {
   const tabClass = classNames(styles.tab, "active-darken focus-tab");
 
   // Service worker

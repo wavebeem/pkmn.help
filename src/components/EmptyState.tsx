@@ -5,6 +5,6 @@ type EmptyStateProps = {
   children: ReactNode;
 };
 
-export function EmptyState({ children }: EmptyStateProps) {
+export function EmptyState({ children }: EmptyStateProps): ReactNode {
   return <div className={styles.root}>{children}</div>;
 }

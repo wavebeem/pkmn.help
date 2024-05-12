@@ -12,7 +12,7 @@ export function CollapsibleSection({
   initiallyOpen = false,
   heading,
   children,
-}: CollapsibleSectionProps): JSX.Element {
+}: CollapsibleSectionProps): ReactNode {
   return (
     <details className={styles.details} open={initiallyOpen}>
       <summary

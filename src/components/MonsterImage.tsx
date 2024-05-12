@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { useState, useCallback } from "react";
+import { useState, useCallback, ReactNode } from "react";
 import { getPngSrc, getWebpSrcSet } from "../misc/getImage";
 import styles from "./MonsterImage.module.css";
 import { customProperties } from "../misc/customProperties";
@@ -18,7 +18,7 @@ export function MonsterImage({
   onLoad,
   scale = 0.5,
   shiny = false,
-}: MonsterImageProps): JSX.Element {
+}: MonsterImageProps): ReactNode {
   const size = 512 * scale;
   const [state, setState] = useState<State>("loading");
   const setLoaded = useCallback(() => {

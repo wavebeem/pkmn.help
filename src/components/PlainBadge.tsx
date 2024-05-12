@@ -5,7 +5,7 @@ interface PlainBadgeProps {
   children: ReactNode;
 }
 
-export function PlainBadge({ children }: PlainBadgeProps) {
+export function PlainBadge({ children }: PlainBadgeProps): ReactNode {
   return (
     <div className={styles.root}>
       <div className={styles.content}>{children}</div>

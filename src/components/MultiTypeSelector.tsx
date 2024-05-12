@@ -6,6 +6,7 @@ import { Type, typesForGeneration } from "../misc/data-types";
 import styles from "./MultiTypeSelector.module.css";
 import { customProperties } from "../misc/customProperties";
 import { Flex } from "./Flex";
+import { ReactNode } from "react";
 
 type MultiTypeSelectorProps = {
   generation: Generation;
@@ -17,7 +18,7 @@ export function MultiTypeSelector({
   generation,
   onChange,
   value,
-}: MultiTypeSelectorProps) {
+}: MultiTypeSelectorProps): ReactNode {
   const { t } = useTranslation();
   const types = typesForGeneration(generation);
   return (

@@ -1,4 +1,4 @@
-export function formatMonsterNumber(number: number) {
+export function formatMonsterNumber(number: number): string {
   if (!number) {
     return "#???";
   }
