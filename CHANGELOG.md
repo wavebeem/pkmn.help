@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-05-12
+
+- Redirect to the defense page server side
+
 ## 2024-05-11
 
 - Fixed minor issues with the disabled type in the type selector

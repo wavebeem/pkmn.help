@@ -1,35 +1,124 @@
 import classNames from "classnames";
-import { useState, useEffect, Suspense, ReactNode, useMemo } from "react";
+import { ReactNode, useEffect, useMemo, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
-import { NavLink, Navigate, Route, Routes } from "react-router-dom";
+import {
+  NavLink,
+  Navigate,
+  Outlet,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
-import styles from "./App.module.css";
-import { MonsterImage } from "./MonsterImage";
-import { ScreenCoverageList } from "../screens/ScreenCoverageList";
-import { ScreenDefense } from "../screens/ScreenDefense";
-import { ScreenDefenseTeam } from "../screens/ScreenDefenseTeam";
-import { ScreenMore } from "../screens/ScreenMore";
-import { ScreenOffense } from "../screens/ScreenOffense";
-import { ScreenPokedex } from "../screens/ScreenPokedex";
-import { ScreenPokedexHelp } from "../screens/ScreenPokedexHelp";
-import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
-import { Spinner } from "./Spinner";
+import { AppContext, AppContextProvider } from "../hooks/useAppContext";
+import { useFetchJSON } from "../hooks/useFetchJSON";
+import { useLanguage } from "../hooks/useLanguage";
+import { useTheme } from "../hooks/useTheme";
+import { useUpdateSW } from "../hooks/useUpdateSW";
 import { CoverageType, Pokemon } from "../misc/data-types";
 import { detectLanguage } from "../misc/detectLanguage";
 import { formatPokemonName } from "../misc/formatPokemonName";
 import { iterCycle, iterNext, iterStutter } from "../misc/iter";
 import { randomItem } from "../misc/random";
 import { publicPath } from "../misc/settings";
-import { useFetchJSON } from "../hooks/useFetchJSON";
-import { useLanguage } from "../hooks/useLanguage";
-import { useTheme } from "../hooks/useTheme";
-import { useUpdateSW } from "../hooks/useUpdateSW";
+import { ScreenCoverageList } from "../screens/ScreenCoverageList";
+import { ScreenDefense } from "../screens/ScreenDefense";
+import { ScreenDefenseTeam } from "../screens/ScreenDefenseTeam";
 import { ScreenError } from "../screens/ScreenError";
-import { AppContext, AppContextProvider } from "../hooks/useAppContext";
+import { ScreenMore } from "../screens/ScreenMore";
+import { ScreenOffense } from "../screens/ScreenOffense";
+import { ScreenPokedex } from "../screens/ScreenPokedex";
+import { ScreenPokedexHelp } from "../screens/ScreenPokedexHelp";
+import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
+import styles from "./App.module.css";
+import { MonsterImage } from "./MonsterImage";
+import { Crash } from "./Crash";
 
-const exampleError = new Error("Example error for testing the error screen");
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    errorElement: <ScreenError />,
+    children: [
+      {
+        index: true,
+        element: <Navigate to="/defense/" replace />,
+      },
+      {
+        path: "offense",
+        children: [
+          {
+            index: true,
+            element: <ScreenOffense />,
+          },
+          {
+            path: "coverage",
+            children: [
+              {
+                index: true,
+                element: <ScreenWeaknessCoverage />,
+              },
+              {
+                path: "weakness",
+                element: <ScreenCoverageList mode="weakness" />,
+              },
+              {
+                path: "resistance",
+                element: <ScreenCoverageList mode="resistance" />,
+              },
+              {
+                path: "normal",
+                element: <ScreenCoverageList mode="normal" />,
+              },
+            ],
+          },
+        ],
+      },
+      {
+        path: "defense",
+        children: [
+          {
+            index: true,
+            element: <ScreenDefense />,
+          },
+          {
+            path: "team",
+            element: <ScreenDefenseTeam />,
+          },
+        ],
+      },
+      {
+        path: "pokedex",
+        children: [
+          {
+            index: true,
+            element: <ScreenPokedex />,
+          },
+          {
+            path: "help",
+            element: <ScreenPokedexHelp />,
+          },
+        ],
+      },
+      {
+        path: "more",
+        index: true,
+        element: <ScreenMore />,
+      },
+      {
+        path: "_error",
+        index: true,
+        element: <Crash />,
+      },
+      {
+        path: "*",
+        index: true,
+        element: <Navigate to="/defense/" replace />,
+      },
+    ],
+  },
+]);
 
 function getFallback(key: string): string {
   if (key === "title") {
@@ -50,7 +139,7 @@ type PokeballTheme = typeof pokeballThemes[number];
 
 const pokeballThemeCycle = iterStutter(iterCycle(pokeballThemes), 2);
 
-export function App(): ReactNode {
+export function Layout(): ReactNode {
   const tabClass = classNames(styles.tab, "active-darken focus-tab");
 
   // Service worker
@@ -213,40 +302,13 @@ export function App(): ReactNode {
               {t("navigation.more")}
             </NavLink>
           </nav>
-          <Suspense fallback={<Spinner />}>
-            <Routes>
-              <Route
-                path="/offense/coverage/weakness/"
-                element={<ScreenCoverageList mode="weakness" />}
-              />
-              <Route
-                path="/offense/coverage/resistance/"
-                element={<ScreenCoverageList mode="resistance" />}
-              />
-              <Route
-                path="/offense/coverage/normal/"
-                element={<ScreenCoverageList mode="normal" />}
-              />
-              <Route
-                path="/offense/coverage/"
-                element={<ScreenWeaknessCoverage />}
-              />
-              <Route path="/offense/" element={<ScreenOffense />} />
-              <Route path="/defense/" element={<ScreenDefense />} />
-              <Route path="/defense/team/" element={<ScreenDefenseTeam />} />
-              <Route path="/defense/" element={<ScreenDefense />} />
-              <Route path="/pokedex/help/" element={<ScreenPokedexHelp />} />
-              <Route path="/pokedex/" element={<ScreenPokedex />} />
-              <Route path="/more/" element={<ScreenMore />} />
-              <Route
-                path="/_error"
-                element={<ScreenError error={exampleError} />}
-              />
-              <Route path="/*" element={<Navigate to="/defense/" replace />} />
-            </Routes>
-          </Suspense>
+          <Outlet />
         </div>
       </HelmetProvider>
     </AppContextProvider>
   );
+}
+
+export function App(): ReactNode {
+  return <RouterProvider router={router} />;
 }

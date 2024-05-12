@@ -7,13 +7,13 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Icon } from "../components/Icon";
 import { Paginator } from "../components/Paginator";
+import { useAppContext } from "../hooks/useAppContext";
+import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
 import { partitionMatchups } from "../misc/data-matchups";
 import { typesFromString } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import styles from "./ScreenCoverageList.module.css";
-import { useGeneration } from "../hooks/useGeneration";
-import { useAppContext } from "../hooks/useAppContext";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";

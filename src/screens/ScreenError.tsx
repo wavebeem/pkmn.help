@@ -7,12 +7,19 @@ import { Flex } from "../components/Flex";
 import { Icon } from "../components/Icon";
 import { resetApp } from "../misc/resetApp";
 import styles from "./ScreenError.module.css";
+import { isRouteErrorResponse, useRouteError } from "react-router-dom";
 
-export type ScreenErrorProps = {
-  error: Error;
-};
+export function ScreenError(): ReactNode {
+  const error = useRouteError();
 
-export function ScreenError({ error }: ScreenErrorProps): ReactNode {
+  if (isRouteErrorResponse(error)) {
+    // Do something with error.data?
+  }
+
+  if (!(error instanceof Error)) {
+    throw error;
+  }
+
   const message = `
 ${error.name}: ${error.message}
 
