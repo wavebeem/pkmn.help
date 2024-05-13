@@ -9,6 +9,7 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Select } from "../components/Select";
 import { TranslationCard } from "../components/TranslationCard";
+import { useAppContext } from "../hooks/useAppContext";
 import { useGeneration } from "../hooks/useGeneration";
 import { useLanguage } from "../hooks/useLanguage";
 import { useTheme } from "../hooks/useTheme";
@@ -31,15 +32,8 @@ import {
 } from "../misc/lang";
 import { resetApp } from "../misc/resetApp";
 
-export type ScreenMoreProps = {
-  needsAppUpdate: boolean;
-  updateApp: () => Promise<void>;
-};
-
-export function ScreenMore({
-  needsAppUpdate,
-  updateApp,
-}: ScreenMoreProps): ReactNode {
+export function ScreenMore(): ReactNode {
+  const { needsAppUpdate, updateApp } = useAppContext();
   const { t, i18n } = useTranslation();
   const [generation, setGeneration] = useGeneration();
   const [language, setLanguage] = useLanguage();

@@ -7,24 +7,21 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Icon } from "../components/Icon";
 import { Paginator } from "../components/Paginator";
+import { useAppContext } from "../hooks/useAppContext";
+import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
-import { Generation } from "../misc/data-generations";
 import { partitionMatchups } from "../misc/data-matchups";
-import { CoverageType, typesFromString } from "../misc/data-types";
+import { typesFromString } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import styles from "./ScreenCoverageList.module.css";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";
-  generation: Generation;
-  coverageTypes: CoverageType[];
 }
 
-export function ScreenCoverageList({
-  mode,
-  generation,
-  coverageTypes,
-}: CoverageListProps): ReactNode {
+export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
+  const { coverageTypes } = useAppContext();
+  const [generation] = useGeneration();
   const { t } = useTranslation();
   const search = useSearch();
   const [page, setPage] = useState(0);

@@ -15,7 +15,6 @@ import { TypeSelector } from "../components/TypeSelector";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
-import { Generation } from "../misc/data-generations";
 import {
   AbilityName,
   Type,
@@ -31,6 +30,7 @@ import styles from "./ScreenDefenseTeam.module.css";
 import { EmptyState } from "../components/EmptyState";
 import { Card } from "../components/Card";
 import { Divider } from "../components/Divider";
+import { useGeneration } from "../hooks/useGeneration";
 
 function setAbilityAt({
   list,
@@ -70,15 +70,10 @@ function setTeraTypeAt({
   return fullArray.map((v) => v || Type.none);
 }
 
-interface ScreenDefenseTeamProps {
-  generation: Generation;
-}
-
-export function ScreenDefenseTeam({
-  generation,
-}: ScreenDefenseTeamProps): ReactNode {
+export function ScreenDefenseTeam(): ReactNode {
   useScrollToFragment();
 
+  const [generation] = useGeneration();
   const { t } = useTranslation();
   const search = useSearch();
   const navigate = useNavigate();

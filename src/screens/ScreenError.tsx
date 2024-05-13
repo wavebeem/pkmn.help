@@ -7,12 +7,19 @@ import { Flex } from "../components/Flex";
 import { Icon } from "../components/Icon";
 import { resetApp } from "../misc/resetApp";
 import styles from "./ScreenError.module.css";
+import { isRouteErrorResponse, useRouteError } from "react-router-dom";
 
-export type ScreenErrorProps = {
-  error: Error;
-};
+export function ScreenError(): ReactNode {
+  const error = useRouteError();
 
-export function ScreenError({ error }: ScreenErrorProps): ReactNode {
+  if (isRouteErrorResponse(error)) {
+    // Do something with error.data?
+  }
+
+  if (!(error instanceof Error)) {
+    throw error;
+  }
+
   const message = `
 ${error.name}: ${error.message}
 
@@ -36,7 +43,7 @@ ${JSON.stringify(sessionStorage)}
   return (
     <div className="content-narrow center">
       <Flex direction="column" gap="large" padding="large">
-        <FancyText tag="h1">Error</FancyText>
+        <FancyText tag="h1">Pokémon Type Calculator: Error</FancyText>
         <FancyText tag="p">
           Please copy the error message below and send it to{" "}
           <ExternalLink href="mailto:pkmn@wavebeem.com">
@@ -58,7 +65,7 @@ ${JSON.stringify(sessionStorage)}
 
         <FancyText tag="p" fontSize="large" fontWeight="medium">
           <Icon name="arrowLeft" />{" "}
-          <ExternalLink href="/">Back to pkmn.help</ExternalLink>
+          <ExternalLink href="/">Back to main page</ExternalLink>
         </FancyText>
       </Flex>
     </div>

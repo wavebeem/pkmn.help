@@ -9,7 +9,6 @@ import { Flex } from "../components/Flex";
 import { Spinner } from "../components/Spinner";
 import { useTypeCount } from "../hooks/useTypeCount";
 import {
-  CoverageType,
   Type,
   objectToCoverageType,
   reverseClosestLookup,
@@ -19,18 +18,11 @@ import { pickFile } from "../misc/pickFile";
 import { saveFile } from "../misc/saveFile";
 import styles from "./ScreenWeaknessCoverage.module.css";
 import { Icon } from "../components/Icon";
+import { useAppContext } from "../hooks/useAppContext";
 
-export type WeaknessCoverageProps = {
-  setCoverageTypes: (types: CoverageType[]) => void;
-  fallbackCoverageTypes: CoverageType[];
-  isLoading: boolean;
-};
-
-export function ScreenWeaknessCoverage({
-  setCoverageTypes,
-  fallbackCoverageTypes,
-  isLoading,
-}: WeaknessCoverageProps): ReactNode {
+export function ScreenWeaknessCoverage(): ReactNode {
+  const { setCoverageTypes, fallbackCoverageTypes, isLoading } =
+    useAppContext();
   const { t } = useTranslation();
   const [statusText, setStatusText] = useState("");
   const [typeCount] = useTypeCount();
