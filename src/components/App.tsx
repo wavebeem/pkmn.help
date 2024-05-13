@@ -1,6 +1,11 @@
 import classNames from "classnames";
-import { ReactNode, useEffect, useMemo, useState } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+import {
+  ReactNode,
+  useEffect,
+  useLayoutEffect,
+  useMemo,
+  useState,
+} from "react";
 import { useTranslation } from "react-i18next";
 import {
   NavLink,
@@ -158,6 +163,21 @@ export function Layout(): ReactNode {
   const themeColor = isDark ? "hsl(0, 70%, 40%)" : "hsl(0, 90%, 45%)";
   const themeAuto = isDark ? "dark" : "light";
 
+  useLayoutEffect(() => {
+    const meta = document.querySelector("meta[name='theme-color']");
+    if (meta instanceof HTMLMetaElement) {
+      meta.content = themeColor;
+    }
+  }, [themeColor]);
+
+  useLayoutEffect(() => {
+    document.documentElement.dataset.theme = themeAuto;
+  }, [themeAuto]);
+
+  useLayoutEffect(() => {
+    document.title = t("title");
+  }, [t]);
+
   // Load Pokédex JSON
   const jsonURL = new URL("data-pkmn.json", publicPath).href;
   const allPokemonResponse = useFetchJSON<Pokemon[]>(jsonURL);
@@ -212,66 +232,56 @@ export function Layout(): ReactNode {
 
   return (
     <AppContextProvider value={appContext}>
-      <HelmetProvider>
-        <Helmet>
-          <html data-theme={themeAuto} />
-          <meta name="theme-color" content={themeColor} />
-          <title>{t("title")}</title>
-        </Helmet>
-        {easterEgg && (
-          <div
-            className={styles.easterEgg}
-            data-animate={easterEggLoadedID === easterEgg.id}
-          >
-            <MonsterImage
-              pokemonID={easterEgg.id}
-              onLoad={({ pokemonID }) => {
-                setEasterEggLoadedID(pokemonID);
-              }}
-            />
-          </div>
-        )}
-        <div className={styles.root}>
-          <h1 className={styles.header}>
-            <button
-              className={styles.headerButton}
-              data-theme={pokeballTheme}
-              aria-hidden={true}
-              onClick={(event) => {
-                event.preventDefault();
-                const pkmn = randomItem(AllPokemon);
-                if (!pkmn) {
-                  return;
-                }
-                setEasterEgg(pkmn);
-                setPokeballTheme(iterNext(pokeballThemeCycle));
-              }}
-            />
-            <div>{t("title")}</div>
-          </h1>
-          <nav className={styles.tabBar}>
-            <NavLink className={tabClass} to="/offense/">
-              {t("navigation.offense")}
-            </NavLink>
-            <NavLink className={tabClass} to="/defense/">
-              {t("navigation.defense")}
-            </NavLink>
-            <NavLink className={tabClass} to="/pokedex/">
-              {t("navigation.pokedex")}
-            </NavLink>
-            <NavLink
-              className={classNames(
-                tabClass,
-                needRefresh && styles.pleaseUpdate
-              )}
-              to="/more/"
-            >
-              {t("navigation.more")}
-            </NavLink>
-          </nav>
-          <Outlet />
+      {easterEgg && (
+        <div
+          className={styles.easterEgg}
+          data-animate={easterEggLoadedID === easterEgg.id}
+        >
+          <MonsterImage
+            pokemonID={easterEgg.id}
+            onLoad={({ pokemonID }) => {
+              setEasterEggLoadedID(pokemonID);
+            }}
+          />
         </div>
-      </HelmetProvider>
+      )}
+      <div className={styles.root}>
+        <h1 className={styles.header}>
+          <button
+            className={styles.headerButton}
+            data-theme={pokeballTheme}
+            aria-hidden={true}
+            onClick={(event) => {
+              event.preventDefault();
+              const pkmn = randomItem(AllPokemon);
+              if (!pkmn) {
+                return;
+              }
+              setEasterEgg(pkmn);
+              setPokeballTheme(iterNext(pokeballThemeCycle));
+            }}
+          />
+          <div>{t("title")}</div>
+        </h1>
+        <nav className={styles.tabBar}>
+          <NavLink className={tabClass} to="/offense/">
+            {t("navigation.offense")}
+          </NavLink>
+          <NavLink className={tabClass} to="/defense/">
+            {t("navigation.defense")}
+          </NavLink>
+          <NavLink className={tabClass} to="/pokedex/">
+            {t("navigation.pokedex")}
+          </NavLink>
+          <NavLink
+            className={classNames(tabClass, needRefresh && styles.pleaseUpdate)}
+            to="/more/"
+          >
+            {t("navigation.more")}
+          </NavLink>
+        </nav>
+        <Outlet />
+      </div>
     </AppContextProvider>
   );
 }
