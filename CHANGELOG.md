@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-05-23
+
+- Updated Simplified Chinese translation
+
 ## 2024-05-11
 
 - Fixed minor issues with the disabled type in the type selector

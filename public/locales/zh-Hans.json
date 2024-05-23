@@ -16,6 +16,7 @@
       "normal": "没有属性相克",
       "resistance": "抵抗"
     },
+    "teraPokemon": "太晶宝可梦",
     "coverageList": {
       "empty": "没有找到宝可梦或没有选择属性",
       "weakness": {
@@ -71,6 +72,7 @@
     "chooseThird": "选择第三属性",
     "takesXFrom": "受到 {{ x }} 伤害",
     "chooseAbility": "特性",
+    "chooseTeraType": "选择太晶属性",
     "abilityNames": {
       "none": "无",
       "tera_shell": "太晶甲殼",
@@ -126,6 +128,9 @@
     },
     "defense": {
       "text": "防御方"
+    },
+    "cry": {
+      "text": "叫声"
     },
     "shiny": {
       "text": "闪光"
@@ -195,6 +200,8 @@
       "language": {
         "label": "语言",
         "default": "自动检测语言",
+        "official": "官方语言",
+        "unofficial": "非官方语言",
         "helpText": "语言支持不完整。请给我发邮件，我会有偿请你翻译。"
       },
       "theme": {
@@ -240,8 +247,10 @@
         "da": "丹麦语翻译",
         "ru": "俄语翻译",
         "kk": "哈萨克语翻译",
+        "pt-PT": "葡萄牙语（葡萄牙）翻译",
         "pt-BR": "巴西葡萄牙语翻译",
         "zh-Hans": "简体中文翻译",
+        "zh-Hant": "繁体中文翻译",
         "ro": "罗马尼亚语翻译",
         "pl": "波兰语翻译",
         "fr": "法语翻译",
@@ -292,7 +301,8 @@
     }
   },
   "general": {
-    "loading": "加载中……"
+    "loading": "加载中……",
+    "copyLink": "复制链接"
   },
   "games": {
     "label": "游戏世代",

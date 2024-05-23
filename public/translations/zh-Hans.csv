@@ -11,7 +11,7 @@ offense.coverage.edit,Edit list,编辑列表
 offense.coverage.weakness,Weak,被克制
 offense.coverage.normal,Normal,没有属性相克
 offense.coverage.resistance,Resist,抵抗
-offense.teraPokemon,Tera Pokémon,
+offense.teraPokemon,Tera Pokémon,太晶宝可梦
 offense.coverageList.empty,No Pokémon found or no types selected,没有找到宝可梦或没有选择属性
 offense.coverageList.weakness.heading,Weakness coverage list,效果绝佳列表
 offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,这些宝可梦克制被选择的属性
@@ -45,7 +45,7 @@ defense.chooseSecond,Choose second type,选择第二属性
 defense.chooseThird,Choose third type,选择第三属性
 defense.takesXFrom,Takes {{ x }} from,受到 {{ x }} 伤害
 defense.chooseAbility,Choose ability,特性
-defense.chooseTeraType,Choose tera type,
+defense.chooseTeraType,Choose tera type,选择太晶属性
 defense.abilityNames.none,None,无
 defense.abilityNames.tera_shell,Tera Shell,太晶甲殼
 defense.abilityNames.filter,Filter,過濾
@@ -88,7 +88,7 @@ pokedex.search.helpLong,"Help, search Pokédex",帮助，搜索图鉴
 pokedex.search.notFound,No Pokémon found,未找到符合的宝可梦
 pokedex.offense.text,Offense,攻击方
 pokedex.defense.text,Defense,防御方
-pokedex.cry.text,Cry,
+pokedex.cry.text,Cry,叫声
 pokedex.shiny.text,Shiny,闪光
 pokedex.pagination.next,Next,下页
 pokedex.pagination.nextLong,Next,下页
@@ -129,8 +129,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,设定
 more.settings.language.label,Language,语言
 more.settings.language.default,Auto detect language,自动检测语言
-more.settings.language.official,Official languages,
-more.settings.language.unofficial,Unofficial languages,
+more.settings.language.official,Official languages,官方语言
+more.settings.language.unofficial,Unofficial languages,非官方语言
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",语言支持不完整。请给我发邮件，我会有偿请你翻译。
 more.settings.theme.label,Theme,背景
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“系统默认”会根据你的系统设定自动调整。
@@ -154,10 +154,10 @@ more.thanks.heading,Special thanks,特别感谢
 more.thanks.sections.da,Danish translation,丹麦语翻译
 more.thanks.sections.ru,Russian translation,俄语翻译
 more.thanks.sections.kk,Kazakh translation,哈萨克语翻译
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
+more.thanks.sections.pt-PT,Portuguese (Portugal) translation,葡萄牙语（葡萄牙）翻译
 more.thanks.sections.pt-BR,Portuguese (Brazil) translation,巴西葡萄牙语翻译
 more.thanks.sections.zh-Hans,Simplified Chinese translation,简体中文翻译
-more.thanks.sections.zh-Hant,Traditional Chinese translation,
+more.thanks.sections.zh-Hant,Traditional Chinese translation,繁体中文翻译
 more.thanks.sections.ro,Romanian translation,罗马尼亚语翻译
 more.thanks.sections.pl,Polish translation,波兰语翻译
 more.thanks.sections.fr,French translation,法语翻译
@@ -195,7 +195,7 @@ banners.updateReady.description,An update is available,有更新可用
 banners.updateReady.whatsNew,What’s new,近期新闻
 banners.updateReady.update,Update,更新
 general.loading,Loading…,加载中……
-general.copyLink,Copy link,
+general.copyLink,Copy link,复制链接
 games.label,Game generation,游戏世代
 games.help,Use type effectiveness from different game generations.,使用不同游戏世代的属性相克。
 games.byID.gen1,Generation 1,第一世代
