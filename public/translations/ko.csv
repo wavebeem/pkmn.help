@@ -88,7 +88,7 @@ pokedex.search.helpLong,"Help, search Pokédex","도움말, 포켓몬 도감 검
 pokedex.search.notFound,No Pokémon found,포켓몬을 찾을 수 없습니다
 pokedex.offense.text,Offense,공격
 pokedex.defense.text,Defense,방어
-pokedex.cry.text,Cry,
+pokedex.cry.text,Cry,울음소리
 pokedex.shiny.text,Shiny,이로치
 pokedex.pagination.next,Next,다음
 pokedex.pagination.nextLong,Next,다음

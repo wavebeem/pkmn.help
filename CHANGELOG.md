@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-05-25
+
+- Updated translations for "Cry" in multiple languages
+
 ## 2024-05-23
 
 - Updated Simplified Chinese translation
