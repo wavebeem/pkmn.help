@@ -1,5 +1,13 @@
 # Changelog
 
+## 2024-06-06
+
+- Fixed a bug where types could be selected more than once
+
+  - e.g. Select Fire as second type, then select fire as the first type. The
+    second type will be visually disabled, but the Pokémon will have two Fire
+    types, leading to incorrect matchup information.
+
 ## 2024-05-23
 
 - Updated Simplified Chinese translation

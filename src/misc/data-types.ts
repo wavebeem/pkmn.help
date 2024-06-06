@@ -114,6 +114,10 @@ function normalizeTypeString(str: string): string {
   return removeAccents(str.toLocaleLowerCase());
 }
 
+export function normalizeTypes(types: Type[]): Type[] {
+  return removeNones(Array.from(new Set(types)));
+}
+
 export function typesFromString(str: string): Type[] {
   return [...new Set(str.split(/\s+/).filter(isType))];
 }
@@ -243,6 +247,6 @@ export function objectToCoverageType({ obj }: { obj: unknown }): CoverageType {
   return { number, name, types };
 }
 
-export function removeNones(types: Type[]): Type[] {
+function removeNones(types: Type[]): Type[] {
   return types.filter((t) => t !== Type.none);
 }

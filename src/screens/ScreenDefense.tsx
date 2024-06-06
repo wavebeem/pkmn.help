@@ -19,7 +19,7 @@ import {
   abilities,
   abilityNameFromString,
   types as allTypes,
-  removeNones,
+  normalizeTypes,
   typesFromString,
 } from "../misc/data-types";
 import { updateArrayAt } from "../misc/updateArrayAt";
@@ -85,7 +85,7 @@ export function ScreenDefense(): ReactNode {
 
   function updateTypeAt(index: number): (type: Type) => void {
     return (type) => {
-      setTypes(removeNones(updateArrayAt(types, index, type)));
+      setTypes(normalizeTypes(updateArrayAt(types, index, type)));
     };
   }
 

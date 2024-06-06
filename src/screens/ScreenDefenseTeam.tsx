@@ -21,7 +21,7 @@ import {
   abilities,
   abilityNameFromString,
   removeInvalidDefenseTypesForGeneration,
-  removeNones,
+  normalizeTypes,
   typesFromString,
   typesWithoutNone,
 } from "../misc/data-types";
@@ -147,7 +147,7 @@ export function ScreenDefenseTeam(): ReactNode {
       setTeamTypes(
         teamTypes.map((types, i) => {
           if (i === listIndex) {
-            return removeNones(updateArrayAt(types, typeIndex, t));
+            return normalizeTypes(updateArrayAt(types, typeIndex, t));
           }
           return types;
         })
