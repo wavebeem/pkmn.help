@@ -8,6 +8,10 @@
     second type will be visually disabled, but the Pokémon will have two Fire
     types, leading to incorrect matchup information.
 
+## 2024-05-25
+
+- Updated translations for "Cry" in multiple languages
+
 ## 2024-05-23
 
 - Updated Simplified Chinese translation
