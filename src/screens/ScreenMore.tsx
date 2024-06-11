@@ -246,7 +246,7 @@ export function ScreenMore(): ReactNode {
                 , and many other apps.
               </FancyText>
               <FancyText tag="p">
-                Send me the translated file via email when you&apos;e done (
+                Send me the translated file via email when you&apos;re done (
                 <ExternalLink href="mailto:pkmn@wavebeem.com">
                   pkmn
                   <wbr />
