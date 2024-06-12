@@ -8,6 +8,6 @@
 
 @media (min-width: 1024px) {
   .root {
-    grid-template-columns: 0.4fr 0.6fr;
+    grid-template-columns: 4fr 6fr;
   }
 }
