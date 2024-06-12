@@ -16,6 +16,7 @@
       "normal": "Normaal",
       "resistance": "Weerstand"
     },
+    "teraPokemon": "Tera Pokémon",
     "coverageList": {
       "empty": "Geen Pokémon gevonden of geen types geselecteerd",
       "weakness": {
@@ -71,6 +72,7 @@
     "chooseThird": "Kies derde type",
     "takesXFrom": "Krijgt {{ x }} van",
     "chooseAbility": "Kies vaardigheid",
+    "chooseTeraType": "Kies tera type",
     "abilityNames": {
       "none": "Geen",
       "tera_shell": "Tera Shell",
@@ -126,6 +128,9 @@
     },
     "defense": {
       "text": "Defensief"
+    },
+    "cry": {
+      "text": "Stem"
     },
     "shiny": {
       "text": "Shiny"
@@ -187,7 +192,7 @@
   "more": {
     "contact": {
       "heading": "Neem contact met mij op",
-      "intro": "Hoi, ik ben <homepage>Sage Fennel</homepage> (die), en ik heb de Pokémon Type Rekenmachine gemaakt (pkmn.help).",
+      "intro": "Hoi, ik ben <homepage>Sage Fennel</homepage> (die/hen), en ik heb de Pokémon Type Rekenmachine gemaakt (pkmn.help).",
       "email": "E-mail alsjeblieft je gedachtes en bedankjes naar <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
@@ -195,6 +200,8 @@
       "language": {
         "label": "Taal",
         "default": "Automatisch taal detecteren",
+        "official": "Officiële talen",
+        "unofficial": "Onofficiële talen",
         "helpText": "Taalondersteuning is nog niet compleet. E-mail mij alsjeblieft, ik zal je betalen om te vertalen."
       },
       "theme": {
@@ -208,7 +215,7 @@
       },
       "typeCount": {
         "label": "Aantal types",
-        "help": "Pokémon kunnen tijdelijk drie types tegelijkertijd hebben als ze zijn geraakt met Bosvloek of Trick-or-Treat. Het derde typeveld is standaard verstopt aangezien hij zeldzaam wordt gebruikt.",
+        "help": "Pokémon kunnen tijdelijk drie types tegelijkertijd hebben als ze zijn geraakt met Forests’s Curse of Trick-or-Treat. Het derde typeveld is standaard verstopt aangezien hij maar heel af en toe wordt gebruikt.",
         "values": {
           "2": "Twee types (2)",
           "3": "Drie types (3)"
@@ -228,7 +235,7 @@
     },
     "privacy": {
       "heading": "Privacy",
-      "description": "Ik zal nooit advertenties laten zien of je persoonlijke data gebruiken. Ik gebruik <plausible>Plausible Analytics</plausible>, dat zelf-gefinancieerd is, onafhankelijk, gehost in Europa, en slaat geen cookies op in je computer."
+      "description": "Ik zal nooit advertenties laten zien of je persoonlijke data gebruiken. Ik gebruik <plausible>Plausible Analytics</plausible>, dat zelf-gefinancieerd, onafhankelijk en gehost is in Europa, en slaat geen cookies op in je computer."
     },
     "givingBack": {
       "heading": "Waardering",
@@ -240,8 +247,10 @@
         "da": "Deense vertaling",
         "ru": "Russische vertaling",
         "kk": "Kazachse vertaling",
+        "pt-PT": "Portugese vertaling",
         "pt-BR": "Brazilisch Portugese vertaling",
         "zh-Hans": "Versimpeld Chinese vertaling",
+        "zh-Hant": "Traditioneel Chinese vertaling",
         "ro": "Romeense vertaling",
         "pl": "Poolse vertaling",
         "fr": "Franse vertaling",
@@ -281,21 +290,23 @@
     "dragon": "Draak",
     "dark": "Duister",
     "fairy": "Fee",
+    "stellar": "Stellar",
     "none": "Geen"
   },
   "banners": {
     "updateReady": {
-      "description": "Een update is verkrijgbaar",
+      "description": "Een update is beschikbaar",
       "whatsNew": "Wat is nieuw",
       "update": "Update"
     }
   },
   "general": {
-    "loading": "Laden..."
+    "loading": "Laden...",
+    "copyLink": "Kopieer link"
   },
   "games": {
     "label": "Game generatie",
-    "help": "Gebruik type effectiefheid van verschillende game generaties.",
+    "help": "Gebruik type effecitiviteit van verschillende game generaties.",
     "byID": {
       "gen1": "Generatie 1",
       "gen2": "Generatie 2-5",

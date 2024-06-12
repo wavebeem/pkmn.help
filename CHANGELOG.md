@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-06-11
+
+- Updated Dutch translation
+
 ## 2024-06-06
 
 - Fixed a bug where types could be selected more than once
