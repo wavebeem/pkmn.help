@@ -126,11 +126,11 @@
     "offense": {
       "text": "Ataque"
     },
-    "cry": {
-      "text": "Grito"
-    },
     "defense": {
       "text": "Defensa"
+    },
+    "cry": {
+      "text": "Grito"
     },
     "shiny": {
       "text": "Variocolor"
@@ -200,6 +200,8 @@
       "language": {
         "label": "Idioma",
         "default": "Detección automática del idioma",
+        "official": "Idiomas oficiales",
+        "unofficial": "Idiomas no oficiales",
         "helpText": "El soporte de idiomas está incompleto. Por favor escríbeme por correo electrónico, te pagaré para que traduzcas."
       },
       "theme": {
@@ -245,7 +247,8 @@
         "da": "Traducción al Danés",
         "ru": "Traducción al Ruso",
         "kk": "Traducción al Kazajo",
-        "pt-BR": "Traducción al Portugués Brasilero",
+        "pt-PT": "Traducción al Portugués Europeo",
+        "pt-BR": "Traducción al Portugués Brasileño",
         "zh-Hans": "Traducción al Chino Simplificado",
         "zh-Hant": "Traducción al Chino Tradicional",
         "ro": "Traducción al Rumano",
@@ -298,7 +301,8 @@
     }
   },
   "general": {
-    "loading": "Cargando..."
+    "loading": "Cargando...",
+    "copyLink": "Copiar link"
   },
   "games": {
     "label": "Generación del juego",

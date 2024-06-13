@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-06-13
+
+- Updated Spanish translation
+
 ## 2024-06-12
 
 - Fixed a layout issue on the Team Defense page when Type Count was set to 3

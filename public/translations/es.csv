@@ -129,8 +129,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,Ajustes
 more.settings.language.label,Language,Idioma
 more.settings.language.default,Auto detect language,Detección automática del idioma
-more.settings.language.official,Official languages,
-more.settings.language.unofficial,Unofficial languages,
+more.settings.language.official,Official languages,Idiomas oficiales
+more.settings.language.unofficial,Unofficial languages,Idiomas no oficiales
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","El soporte de idiomas está incompleto. Por favor escríbeme por correo electrónico, te pagaré para que traduzcas."
 more.settings.theme.label,Theme,Tema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“Predefinido por el sistema” cambiará automáticamente dependiendo de los ajustes de tu sistema operativo.
@@ -154,8 +154,8 @@ more.thanks.heading,Special thanks,Agradecimientos especiales
 more.thanks.sections.da,Danish translation,Traducción al Danés
 more.thanks.sections.ru,Russian translation,Traducción al Ruso
 more.thanks.sections.kk,Kazakh translation,Traducción al Kazajo
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Traducción al Portugués Brasilero
+more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Traducción al Portugués Europeo
+more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Traducción al Portugués Brasileño
 more.thanks.sections.zh-Hans,Simplified Chinese translation,Traducción al Chino Simplificado
 more.thanks.sections.zh-Hant,Traditional Chinese translation,Traducción al Chino Tradicional
 more.thanks.sections.ro,Romanian translation,Traducción al Rumano
@@ -195,7 +195,7 @@ banners.updateReady.description,An update is available,Hay una actualización di
 banners.updateReady.whatsNew,What’s new,Novedades
 banners.updateReady.update,Update,Actualizar
 general.loading,Loading…,Cargando...
-general.copyLink,Copy link,
+general.copyLink,Copy link,Copiar link
 games.label,Game generation,Generación del juego
 games.help,Use type effectiveness from different game generations.,Usa la efectividad de tipo de diferentes generaciones.
 games.byID.gen1,Generation 1,Generación 1
