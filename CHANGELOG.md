@@ -12,6 +12,9 @@
 
   - Added the offense ability "Scrappy"
 
+- Fixed a bug where iPhone and iPad would stretch the Pokéball icon to be
+  non-circular
+
 ## 2024-06-13
 
 - Updated Spanish translation

@@ -85,6 +85,7 @@
 .headerButton {
   --size: 1.25em;
   position: relative;
+  padding: 0;
   border: 0;
   color: white;
   background: linear-gradient(
