@@ -51,7 +51,15 @@ export function DexCoverage({
     return value.toLocaleString(i18n.languages);
   }
 
-  const typeParams = new URLSearchParams({ types: types.join(" ") });
+  const params = new URLSearchParams({
+    types: types.join(" "),
+  });
+  if (specialMoves.length > 0) {
+    params.set("moves", specialMoves.join(" "));
+  }
+  if (offenseAbilities.length > 0) {
+    params.set("abilities", offenseAbilities.join(" "));
+  }
 
   if (isLoading) {
     return <Spinner />;
@@ -65,7 +73,7 @@ export function DexCoverage({
           <Flex gap="medium">
             <div>
               {getPercent(weak.length)}%{" "}
-              <FancyLink to={`/offense/coverage/weakness/?${typeParams}`}>
+              <FancyLink to={`/offense/coverage/weakness/?${params}`}>
                 {t("offense.coverage.weakness")}
               </FancyLink>
             </div>
@@ -81,7 +89,7 @@ export function DexCoverage({
           <Flex gap="medium">
             <div>
               {getPercent(normal.length)}%{" "}
-              <FancyLink to={`/offense/coverage/normal/?${typeParams}`}>
+              <FancyLink to={`/offense/coverage/normal/?${params}`}>
                 {t("offense.coverage.normal")}
               </FancyLink>
             </div>
@@ -97,7 +105,7 @@ export function DexCoverage({
           <Flex gap="medium">
             <div>
               {getPercent(resist.length)}%{" "}
-              <FancyLink to={`/offense/coverage/resistance/?${typeParams}`}>
+              <FancyLink to={`/offense/coverage/resistance/?${params}`}>
                 {t("offense.coverage.resistance")}
               </FancyLink>
             </div>

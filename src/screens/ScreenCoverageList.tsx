@@ -14,11 +14,13 @@ import { partitionMatchups } from "../misc/data-matchups";
 import {
   AbilityName,
   SpecialMove,
+  specialMoves,
   splitTokens,
   typesFromString,
 } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import styles from "./ScreenCoverageList.module.css";
+import { PlainBadge } from "../components/PlainBadge";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";
@@ -58,16 +60,31 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
         </FancyText>
 
         {types.length > 0 && (
-          <>
-            <FancyText tag="p">
-              {t(`offense.coverageList.${mode}.description`)}
-            </FancyText>
-            <Flex wrap gap="medium">
-              {types.map((t) => (
-                <Badge key={t} type={t} />
-              ))}
-            </Flex>
-          </>
+          <Flex wrap gap="medium">
+            {types.map((t) => (
+              <Badge key={t} type={t} />
+            ))}
+          </Flex>
+        )}
+
+        {abilities.length > 0 && (
+          <Flex wrap gap="medium">
+            {abilities.map((ability) => (
+              <PlainBadge key={ability}>
+                {t(`defense.abilityNames.${ability}`)}
+              </PlainBadge>
+            ))}
+          </Flex>
+        )}
+
+        {specialMoves.length > 0 && (
+          <Flex wrap gap="medium">
+            {specialMoves.map((move) => (
+              <PlainBadge key={move}>
+                {t(`offense.specialMoves.names.${move}`)}
+              </PlainBadge>
+            ))}
+          </Flex>
         )}
 
         <Paginator

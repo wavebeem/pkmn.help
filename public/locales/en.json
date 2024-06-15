@@ -30,16 +30,13 @@
     "coverageList": {
       "empty": "No Pokémon found or no types selected",
       "weakness": {
-        "heading": "Weakness coverage list",
-        "description": "These Pokémon are weak to at least one of the selected types."
+        "heading": "Weakness coverage list"
       },
       "normal": {
-        "heading": "Normal effectiveness coverage list",
-        "description": "These Pokémon are not in the weakness or resistance lists for the selected types."
+        "heading": "Normal effectiveness coverage list"
       },
       "resistance": {
-        "heading": "Resistance coverage list",
-        "description": "These Pokémon are resistant to all of the selected types."
+        "heading": "Resistance coverage list"
       }
     }
   },
