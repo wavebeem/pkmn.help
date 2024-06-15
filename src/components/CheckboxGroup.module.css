@@ -1,9 +1,14 @@
+.root {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding2);
+}
+
 .label {
   padding: var(--padding2) var(--padding3);
   display: block;
   border: 1px solid;
   border-radius: var(--border-radius1);
-  text-transform: capitalize;
 }
 
 .label:where(:has(.checkbox:active)) {

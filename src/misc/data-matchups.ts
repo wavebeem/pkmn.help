@@ -3,6 +3,7 @@ import { Generation } from "./data-generations";
 import {
   AbilityName,
   CoverageType,
+  SpecialMove,
   Type,
   abilities,
   typesForGeneration,
@@ -176,12 +177,14 @@ export function matchupFor({
   offenseType,
   defenseTeraType = Type.none,
   abilityName,
+  specialMove,
 }: {
   generation: Generation;
   defenseTypes: Type[];
   defenseTeraType: Type;
   offenseType: Type;
   abilityName: AbilityName;
+  specialMove?: SpecialMove;
 }): number {
   let n = 1;
   // Tera Pokémon (other than Stellar type) use their Tera type as their sole
@@ -210,6 +213,26 @@ export function matchupFor({
     //
     // https://bulbapedia.bulbagarden.net/wiki/Delta_Stream_(Ability)
     if (t === Type.flying && abilityName === "delta_stream" && x > 1) {
+      x = 1;
+    }
+    // Freeze-Dry always deals 2x to Water
+    //
+    // https://bulbapedia.bulbagarden.net/wiki/Freeze-Dry_(move)
+    if (
+      t === Type.water &&
+      specialMove === "freeze-dry" &&
+      offenseType === Type.ice
+    ) {
+      x = 2;
+    }
+    // Thousand Arrows deals regular damage to Flying instead of zero
+    //
+    // https://bulbapedia.bulbagarden.net/wiki/Thousand_Arrows_(move)
+    if (
+      t === Type.flying &&
+      specialMove === "thousand_arrows" &&
+      offenseType === Type.ground
+    ) {
       x = 1;
     }
     n *= x;
@@ -317,9 +340,11 @@ export class GroupedMatchups {
 export function offensiveMatchups({
   gen,
   offenseTypes,
+  specialMoves,
 }: {
   gen: Generation;
-  offenseTypes: Type[];
+  offenseTypes: readonly Type[];
+  specialMoves: readonly SpecialMove[];
 }): GroupedMatchups {
   const matchups = typesForGeneration(gen)
     .filter((t) => t !== Type.stellar)
@@ -327,13 +352,20 @@ export function offensiveMatchups({
       if (offenseTypes.length === 0) {
         return new Matchup(gen, t, 1);
       }
-      const effs = offenseTypes.map((offense) => {
-        return matchupFor({
-          generation: gen,
-          defenseTypes: [t],
-          defenseTeraType: "none",
-          offenseType: offense,
-          abilityName: "none",
+      let moves: readonly (SpecialMove | undefined)[] = specialMoves;
+      if (specialMoves.length === 0) {
+        moves = [undefined];
+      }
+      const effs = moves.flatMap((move) => {
+        return offenseTypes.map((offense) => {
+          return matchupFor({
+            generation: gen,
+            defenseTypes: [t],
+            defenseTeraType: "none",
+            offenseType: offense,
+            abilityName: "none",
+            specialMove: move,
+          });
         });
       });
       const max = Math.max(...effs);

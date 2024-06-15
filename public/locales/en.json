@@ -9,6 +9,13 @@
   "offense": {
     "chooseTypes": "Choose types",
     "dealsXTo": "Deals {{ x }} to",
+    "specialMoves": {
+      "choose": "Choose special moves",
+      "names": {
+        "freeze-dry": "Freeze-Dry",
+        "thousand_arrows": "Thousand Arrows"
+      }
+    },
     "coverage": {
       "heading": "Pokédex coverage",
       "edit": "Edit list",

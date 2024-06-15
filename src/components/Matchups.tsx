@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Generation } from "../misc/data-generations";
 import { defensiveMatchups, offensiveMatchups } from "../misc/data-matchups";
-import { AbilityName, Type } from "../misc/data-types";
+import { AbilityName, SpecialMove, Type } from "../misc/data-types";
 import { Badge } from "./Badge";
 import styles from "./Matchups.module.css";
 import { PlainBadge } from "./PlainBadge";
@@ -17,6 +17,7 @@ interface MatchupsProps {
   types: Type[];
   teraType: Type;
   ability: AbilityName;
+  specialMoves: readonly SpecialMove[];
 }
 
 export function Matchups({
@@ -25,6 +26,7 @@ export function Matchups({
   types,
   teraType,
   ability,
+  specialMoves,
 }: MatchupsProps): ReactNode {
   const { t, i18n } = useTranslation();
   const matchups =
@@ -32,6 +34,7 @@ export function Matchups({
       ? offensiveMatchups({
           gen: generation,
           offenseTypes: types,
+          specialMoves,
         })
       : defensiveMatchups({
           gen: generation,

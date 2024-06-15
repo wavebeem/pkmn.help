@@ -14,12 +14,17 @@ import { useAppContext } from "../hooks/useAppContext";
 import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
 import {
+  SpecialMove,
   Type,
   removeInvalidOffenseTypesForGeneration,
+  specialMoves,
   typesFromString,
 } from "../misc/data-types";
 import styles from "./ScreenOffense.module.css";
-import { CheckboxGroup } from "../components/CheckboxGroup";
+import {
+  CheckboxGroup,
+  CheckboxGroupOption,
+} from "../components/CheckboxGroup";
 
 export function ScreenOffense(): ReactNode {
   const { coverageTypes, fallbackCoverageTypes, isLoading } = useAppContext();
@@ -53,15 +58,15 @@ export function ScreenOffense(): ReactNode {
   const listLength = coverageTypes?.length ?? 0;
   const listLengthFormatted = listLength.toLocaleString(i18n.languages);
 
-  type Options = typeof options;
-  type Option = Options[number]["id"];
-  const options = [
-    { id: "foo", name: "Foo" },
-    { id: "bar", name: "Bar" },
-    { id: "qux", name: "Qux" },
+  const options: readonly CheckboxGroupOption<SpecialMove>[] = [
+    {
+      id: "thousand_arrows",
+      name: t(`offense.specialMoves.names.thousand_arrows`),
+    },
+    { id: "freeze-dry", name: t(`offense.specialMoves.names.freeze-dry`) },
   ] as const;
 
-  const [selectedOptions, setSelectedOptions] = useState<readonly Option[]>([]);
+  const [specialMoves, setSpecialMoves] = useState<readonly SpecialMove[]>([]);
 
   return (
     <main className={classNames(styles.root, "content-wide center")}>
@@ -78,12 +83,12 @@ export function ScreenOffense(): ReactNode {
         </Flex>
         <Flex direction="column" gap="small">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
-            {t("offense.chooseOptions")}
+            {t("offense.specialMoves.choose")}
           </FancyText>
           <CheckboxGroup
             options={options}
-            value={selectedOptions}
-            onChange={setSelectedOptions}
+            value={specialMoves}
+            onChange={setSpecialMoves}
           />
         </Flex>
         {generation === "default" && (
@@ -120,6 +125,7 @@ export function ScreenOffense(): ReactNode {
           types={offenseTypes}
           ability="none"
           teraType={Type.none}
+          specialMoves={specialMoves}
         />
       </Flex>
     </main>

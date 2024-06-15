@@ -21,7 +21,7 @@ export function CheckboxGroup<S extends string>({
   onChange,
 }: CheckboxGroupProps<S>): ReactNode {
   return (
-    <div className="columns-type-selector">
+    <div className={styles.root}>
       {options.map((option) => {
         const isChecked = value.includes(option.id);
         return (

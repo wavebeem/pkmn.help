@@ -46,6 +46,9 @@ export const Type = {
 
 const typeSet = new Set(Object.values(Type));
 
+export type SpecialMove = typeof specialMoves[number];
+export const specialMoves = ["thousand_arrows", "freeze-dry"] as const;
+
 interface AbilityInfo {
   type: Type;
   value: number;
