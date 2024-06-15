@@ -10,9 +10,9 @@ export type CheckboxGroupOption<S extends string> = {
 };
 
 export type CheckboxGroupProps<S extends string> = {
-  options: readonly CheckboxGroupOption<S>[];
-  value: readonly S[];
-  onChange: (newValue: readonly S[]) => void;
+  options: CheckboxGroupOption<S>[];
+  value: S[];
+  onChange: (newValue: S[]) => void;
 };
 
 export function CheckboxGroup<S extends string>({

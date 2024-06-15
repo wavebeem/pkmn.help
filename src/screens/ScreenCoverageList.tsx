@@ -11,7 +11,12 @@ import { useAppContext } from "../hooks/useAppContext";
 import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
 import { partitionMatchups } from "../misc/data-matchups";
-import { typesFromString } from "../misc/data-types";
+import {
+  AbilityName,
+  SpecialMove,
+  splitTokens,
+  typesFromString,
+} from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import styles from "./ScreenCoverageList.module.css";
 
@@ -26,10 +31,16 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   const search = useSearch();
   const [page, setPage] = useState(0);
   const types = typesFromString(search.get("types") || "");
+  const abilities: AbilityName[] = splitTokens(
+    search.get("abilities") || ""
+  ) as any;
+  const moves: SpecialMove[] = splitTokens(search.get("moves") || "") as any;
   const partitionedMatchups = partitionMatchups({
     coverageTypes,
     types,
     generation,
+    offenseAbilities: abilities,
+    specialMoves: moves,
   });
   const items = partitionedMatchups[mode];
   return (

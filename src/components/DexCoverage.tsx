@@ -1,7 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { Generation } from "../misc/data-generations";
 import { partitionMatchups } from "../misc/data-matchups";
-import { CoverageType, Type } from "../misc/data-types";
+import {
+  AbilityName,
+  CoverageType,
+  SpecialMove,
+  Type,
+} from "../misc/data-types";
 import styles from "./DexCoverage.module.css";
 import { FancyLink } from "./FancyLink";
 import { FancyText } from "./FancyText";
@@ -15,6 +20,8 @@ interface DexCoverageProps {
   coverageTypes: CoverageType[];
   types: Type[];
   isLoading: boolean;
+  offenseAbilities: AbilityName[];
+  specialMoves: SpecialMove[];
 }
 
 export function DexCoverage({
@@ -22,6 +29,8 @@ export function DexCoverage({
   coverageTypes,
   types,
   isLoading,
+  offenseAbilities,
+  specialMoves,
 }: DexCoverageProps): ReactNode {
   const { t, i18n } = useTranslation();
   const {
@@ -32,6 +41,8 @@ export function DexCoverage({
     coverageTypes,
     types,
     generation,
+    offenseAbilities,
+    specialMoves,
   });
   const total = coverageTypes.length;
 

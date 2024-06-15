@@ -131,10 +131,14 @@ export function partitionMatchups({
   coverageTypes,
   generation,
   types,
+  offenseAbilities,
+  specialMoves,
 }: {
   coverageTypes: CoverageType[];
   generation: Generation;
   types: Type[];
+  offenseAbilities: AbilityName[];
+  specialMoves: SpecialMove[];
 }): PartitionedMatchups {
   if (types.length === 0) {
     return {
@@ -149,16 +153,32 @@ export function partitionMatchups({
     normal: [],
   };
   for (const ct of coverageTypes) {
-    const arr = types.map((t) =>
-      matchupFor({
-        generation,
-        defenseTypes: ct.types,
-        defenseTeraType: Type.none,
-        offenseType: t,
-        abilityName: "none",
-        offenseAbilityName: "none",
-      })
-    );
+    const arr: number[] = [];
+    let abilities = [...offenseAbilities];
+    if (abilities.length === 0) {
+      abilities = ["none"];
+    }
+    let moves: readonly (SpecialMove | undefined)[] = [...specialMoves];
+    if (moves.length === 0) {
+      moves = [undefined];
+    }
+    for (const offenseAbilityName of abilities) {
+      for (const specialMove of moves) {
+        for (const t of types) {
+          arr.push(
+            matchupFor({
+              generation,
+              defenseTypes: ct.types,
+              defenseTeraType: Type.none,
+              offenseType: t,
+              abilityName: "none",
+              offenseAbilityName,
+              specialMove,
+            })
+          );
+        }
+      }
+    }
     const max = Math.max(...arr);
     const min = Math.min(...arr);
     if (max > 1) {

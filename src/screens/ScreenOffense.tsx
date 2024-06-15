@@ -60,7 +60,7 @@ export function ScreenOffense(): ReactNode {
   const listLength = coverageTypes?.length ?? 0;
   const listLengthFormatted = listLength.toLocaleString(i18n.languages);
 
-  const specialMovesOptions: readonly CheckboxGroupOption<SpecialMove>[] = [
+  const specialMovesOptions: CheckboxGroupOption<SpecialMove>[] = [
     {
       id: "thousand_arrows",
       name: t(`offense.specialMoves.names.thousand_arrows`),
@@ -68,11 +68,12 @@ export function ScreenOffense(): ReactNode {
     { id: "freeze-dry", name: t(`offense.specialMoves.names.freeze-dry`) },
   ] as const;
 
-  const [specialMoves, setSpecialMoves] = useSessionStorage<
-    readonly SpecialMove[]
-  >("offense.specialMoves", []);
+  const [specialMoves, setSpecialMoves] = useSessionStorage<SpecialMove[]>(
+    "offense.specialMoves",
+    []
+  );
 
-  const abilitiesOptions: readonly CheckboxGroupOption<AbilityName>[] = [
+  const abilitiesOptions: CheckboxGroupOption<AbilityName>[] = [
     {
       id: "tinted_lens",
       name: t(`defense.abilityNames.tinted_lens`),
@@ -80,7 +81,7 @@ export function ScreenOffense(): ReactNode {
     { id: "scrappy", name: t(`defense.abilityNames.scrappy`) },
   ] as const;
 
-  const [abilities, setAbilities] = useSessionStorage<readonly AbilityName[]>(
+  const [abilities, setAbilities] = useSessionStorage<AbilityName[]>(
     "offense.abilities",
     []
   );
@@ -146,6 +147,8 @@ export function ScreenOffense(): ReactNode {
                 coverageTypes={coverageTypes ?? fallbackCoverageTypes}
                 types={offenseTypes}
                 isLoading={isLoading}
+                offenseAbilities={abilities}
+                specialMoves={specialMoves}
               />
               <Flex>
                 <CopyButton text={permalink.href}>

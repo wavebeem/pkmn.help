@@ -128,7 +128,10 @@ export function typesFromString(str: string): Type[] {
 }
 
 export function splitTokens(input: string): string[] {
-  return input.trim().split(/\s+/);
+  return input
+    .trim()
+    .split(/\s+/)
+    .filter((x) => x !== "");
 }
 
 export function typesFromUserInput({
