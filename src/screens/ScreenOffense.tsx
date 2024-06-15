@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { ReactNode, useEffect } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
@@ -19,6 +19,7 @@ import {
   typesFromString,
 } from "../misc/data-types";
 import styles from "./ScreenOffense.module.css";
+import { CheckboxGroup } from "../components/CheckboxGroup";
 
 export function ScreenOffense(): ReactNode {
   const { coverageTypes, fallbackCoverageTypes, isLoading } = useAppContext();
@@ -52,6 +53,16 @@ export function ScreenOffense(): ReactNode {
   const listLength = coverageTypes?.length ?? 0;
   const listLengthFormatted = listLength.toLocaleString(i18n.languages);
 
+  type Options = typeof options;
+  type Option = Options[number]["id"];
+  const options = [
+    { id: "foo", name: "Foo" },
+    { id: "bar", name: "Bar" },
+    { id: "qux", name: "Qux" },
+  ] as const;
+
+  const [selectedOptions, setSelectedOptions] = useState<readonly Option[]>([]);
+
   return (
     <main className={classNames(styles.root, "content-wide center")}>
       <Flex direction="column" gap="xlarge">
@@ -63,6 +74,16 @@ export function ScreenOffense(): ReactNode {
             generation={generation}
             value={offenseTypes}
             onChange={setOffenseTypes}
+          />
+        </Flex>
+        <Flex direction="column" gap="small">
+          <FancyText tag="h2" fontSize="large" fontWeight="medium">
+            {t("offense.chooseOptions")}
+          </FancyText>
+          <CheckboxGroup
+            options={options}
+            value={selectedOptions}
+            onChange={setSelectedOptions}
           />
         </Flex>
         {generation === "default" && (
