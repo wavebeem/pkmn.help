@@ -92,6 +92,8 @@ export const abilities = {
   wonder_guard: createAbility(),
   delta_stream: createAbility(),
   tera_shell: createAbility(),
+  tinted_lens: createAbility(),
+  scrappy: createAbility(),
 } as const;
 
 const abilitySet = new Set(Object.keys(abilities));
@@ -123,6 +125,10 @@ export function normalizeTypes(types: Type[]): Type[] {
 
 export function typesFromString(str: string): Type[] {
   return [...new Set(str.split(/\s+/).filter(isType))];
+}
+
+export function splitTokens(input: string): string[] {
+  return input.trim().split(/\s+/);
 }
 
 export function typesFromUserInput({

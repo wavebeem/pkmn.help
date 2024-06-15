@@ -17,6 +17,7 @@ interface MatchupsProps {
   types: Type[];
   teraType: Type;
   ability: AbilityName;
+  offenseAbilities: readonly AbilityName[];
   specialMoves: readonly SpecialMove[];
 }
 
@@ -27,6 +28,7 @@ export function Matchups({
   teraType,
   ability,
   specialMoves,
+  offenseAbilities,
 }: MatchupsProps): ReactNode {
   const { t, i18n } = useTranslation();
   const matchups =
@@ -35,6 +37,7 @@ export function Matchups({
           gen: generation,
           offenseTypes: types,
           specialMoves,
+          offenseAbilities,
         })
       : defensiveMatchups({
           gen: generation,

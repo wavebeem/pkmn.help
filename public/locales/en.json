@@ -9,6 +9,9 @@
   "offense": {
     "chooseTypes": "Choose types",
     "dealsXTo": "Deals {{ x }} to",
+    "abilities": {
+      "choose": "Choose abilities"
+    },
     "specialMoves": {
       "choose": "Choose special moves",
       "names": {
@@ -82,6 +85,8 @@
     "chooseTeraType": "Choose tera type",
     "abilityNames": {
       "none": "None",
+      "tinted_lens": "Tinted Lens",
+      "scrappy": "Scrappy",
       "tera_shell": "Tera Shell",
       "filter": "Filter",
       "wonder_guard": "Wonder Guard",

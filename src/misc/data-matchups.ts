@@ -156,6 +156,7 @@ export function partitionMatchups({
         defenseTeraType: Type.none,
         offenseType: t,
         abilityName: "none",
+        offenseAbilityName: "none",
       })
     );
     const max = Math.max(...arr);
@@ -176,6 +177,7 @@ export function matchupFor({
   defenseTypes,
   offenseType,
   defenseTeraType = Type.none,
+  offenseAbilityName = Type.none,
   abilityName,
   specialMove,
 }: {
@@ -183,6 +185,7 @@ export function matchupFor({
   defenseTypes: Type[];
   defenseTeraType: Type;
   offenseType: Type;
+  offenseAbilityName: AbilityName;
   abilityName: AbilityName;
   specialMove?: SpecialMove;
 }): number {
@@ -209,10 +212,20 @@ export function matchupFor({
     if (t !== Type.none) {
       x = matchupForPair(generation, t, offenseType);
     }
-    // Delta stream protects flying types from super effective damage
+    // Ghost can be hurt normally by Normal and Fighting
     //
-    // https://bulbapedia.bulbagarden.net/wiki/Delta_Stream_(Ability)
+    // https://bulbapedia.bulbagarden.net/wiki/Scrappy_(Ability)
+    if (
+      offenseAbilityName === "scrappy" &&
+      t === Type.ghost &&
+      (offenseType === Type.normal || Type.fighting)
+    ) {
+      x = 1;
+    }
     if (t === Type.flying && abilityName === "delta_stream" && x > 1) {
+      // Delta stream protects flying types from super effective damage
+      //
+      // https://bulbapedia.bulbagarden.net/wiki/Delta_Stream_(Ability)
       x = 1;
     }
     // Freeze-Dry always deals 2x to Water
@@ -241,6 +254,12 @@ export function matchupFor({
   //
   // https://bulbapedia.bulbagarden.net/wiki/Stellar_(type)
   if (defenseTeraType !== Type.none && offenseType === Type.stellar) {
+    n *= 2;
+  }
+  // Doubles damage of ineffective moves
+  //
+  // https://bulbapedia.bulbagarden.net/wiki/Tinted_Lens_(Ability)
+  if (offenseAbilityName === "tinted_lens" && n < 1) {
     n *= 2;
   }
   // Wonder guard blocks all non-super effective damage
@@ -341,10 +360,12 @@ export function offensiveMatchups({
   gen,
   offenseTypes,
   specialMoves,
+  offenseAbilities,
 }: {
   gen: Generation;
   offenseTypes: readonly Type[];
   specialMoves: readonly SpecialMove[];
+  offenseAbilities: readonly AbilityName[];
 }): GroupedMatchups {
   const matchups = typesForGeneration(gen)
     .filter((t) => t !== Type.stellar)
@@ -356,15 +377,22 @@ export function offensiveMatchups({
       if (specialMoves.length === 0) {
         moves = [undefined];
       }
-      const effs = moves.flatMap((move) => {
-        return offenseTypes.map((offense) => {
-          return matchupFor({
-            generation: gen,
-            defenseTypes: [t],
-            defenseTeraType: "none",
-            offenseType: offense,
-            abilityName: "none",
-            specialMove: move,
+      let abilities: readonly AbilityName[] = offenseAbilities;
+      if (offenseAbilities.length === 0) {
+        abilities = ["none"];
+      }
+      const effs = abilities.flatMap((offenseAbilityName) => {
+        return moves.flatMap((move) => {
+          return offenseTypes.map((offense) => {
+            return matchupFor({
+              generation: gen,
+              defenseTypes: [t],
+              defenseTeraType: "none",
+              offenseType: offense,
+              abilityName: "none",
+              specialMove: move,
+              offenseAbilityName,
+            });
           });
         });
       });
@@ -392,6 +420,7 @@ export function defensiveMatchups({
       defenseTeraType,
       offenseType: t,
       abilityName,
+      offenseAbilityName: "none",
     });
     return new Matchup(gen, t, eff);
   });
