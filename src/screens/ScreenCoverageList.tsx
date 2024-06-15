@@ -11,9 +11,16 @@ import { useAppContext } from "../hooks/useAppContext";
 import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
 import { partitionMatchups } from "../misc/data-matchups";
-import { typesFromString } from "../misc/data-types";
+import {
+  AbilityName,
+  SpecialMove,
+  specialMoves,
+  splitTokens,
+  typesFromString,
+} from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import styles from "./ScreenCoverageList.module.css";
+import { PlainBadge } from "../components/PlainBadge";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";
@@ -26,10 +33,16 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   const search = useSearch();
   const [page, setPage] = useState(0);
   const types = typesFromString(search.get("types") || "");
+  const abilities: AbilityName[] = splitTokens(
+    search.get("abilities") || ""
+  ) as any;
+  const moves: SpecialMove[] = splitTokens(search.get("moves") || "") as any;
   const partitionedMatchups = partitionMatchups({
     coverageTypes,
     types,
     generation,
+    offenseAbilities: abilities,
+    specialMoves: moves,
   });
   const items = partitionedMatchups[mode];
   return (
@@ -47,16 +60,31 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
         </FancyText>
 
         {types.length > 0 && (
-          <>
-            <FancyText tag="p">
-              {t(`offense.coverageList.${mode}.description`)}
-            </FancyText>
-            <Flex wrap gap="medium">
-              {types.map((t) => (
-                <Badge key={t} type={t} />
-              ))}
-            </Flex>
-          </>
+          <Flex wrap gap="medium">
+            {types.map((t) => (
+              <Badge key={t} type={t} />
+            ))}
+          </Flex>
+        )}
+
+        {abilities.length > 0 && (
+          <Flex wrap gap="medium">
+            {abilities.map((ability) => (
+              <PlainBadge key={ability}>
+                {t(`defense.abilityNames.${ability}`)}
+              </PlainBadge>
+            ))}
+          </Flex>
+        )}
+
+        {specialMoves.length > 0 && (
+          <Flex wrap gap="medium">
+            {specialMoves.map((move) => (
+              <PlainBadge key={move}>
+                {t(`offense.specialMoves.names.${move}`)}
+              </PlainBadge>
+            ))}
+          </Flex>
         )}
 
         <Paginator

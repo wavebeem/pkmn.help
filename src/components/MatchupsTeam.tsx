@@ -173,6 +173,7 @@ export function MatchupsTeam({
           offenseType: genType,
           defenseTeraType: teraType,
           abilityName,
+          offenseAbilityName: "none",
         });
         if (m.match(eff)) {
           num++;

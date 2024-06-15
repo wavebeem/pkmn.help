@@ -1,7 +1,12 @@
 import { useTranslation } from "react-i18next";
 import { Generation } from "../misc/data-generations";
 import { partitionMatchups } from "../misc/data-matchups";
-import { CoverageType, Type } from "../misc/data-types";
+import {
+  AbilityName,
+  CoverageType,
+  SpecialMove,
+  Type,
+} from "../misc/data-types";
 import styles from "./DexCoverage.module.css";
 import { FancyLink } from "./FancyLink";
 import { FancyText } from "./FancyText";
@@ -15,6 +20,8 @@ interface DexCoverageProps {
   coverageTypes: CoverageType[];
   types: Type[];
   isLoading: boolean;
+  offenseAbilities: AbilityName[];
+  specialMoves: SpecialMove[];
 }
 
 export function DexCoverage({
@@ -22,6 +29,8 @@ export function DexCoverage({
   coverageTypes,
   types,
   isLoading,
+  offenseAbilities,
+  specialMoves,
 }: DexCoverageProps): ReactNode {
   const { t, i18n } = useTranslation();
   const {
@@ -32,6 +41,8 @@ export function DexCoverage({
     coverageTypes,
     types,
     generation,
+    offenseAbilities,
+    specialMoves,
   });
   const total = coverageTypes.length;
 
@@ -40,7 +51,15 @@ export function DexCoverage({
     return value.toLocaleString(i18n.languages);
   }
 
-  const typeParams = new URLSearchParams({ types: types.join(" ") });
+  const params = new URLSearchParams({
+    types: types.join(" "),
+  });
+  if (specialMoves.length > 0) {
+    params.set("moves", specialMoves.join(" "));
+  }
+  if (offenseAbilities.length > 0) {
+    params.set("abilities", offenseAbilities.join(" "));
+  }
 
   if (isLoading) {
     return <Spinner />;
@@ -54,7 +73,7 @@ export function DexCoverage({
           <Flex gap="medium">
             <div>
               {getPercent(weak.length)}%{" "}
-              <FancyLink to={`/offense/coverage/weakness/?${typeParams}`}>
+              <FancyLink to={`/offense/coverage/weakness/?${params}`}>
                 {t("offense.coverage.weakness")}
               </FancyLink>
             </div>
@@ -70,7 +89,7 @@ export function DexCoverage({
           <Flex gap="medium">
             <div>
               {getPercent(normal.length)}%{" "}
-              <FancyLink to={`/offense/coverage/normal/?${typeParams}`}>
+              <FancyLink to={`/offense/coverage/normal/?${params}`}>
                 {t("offense.coverage.normal")}
               </FancyLink>
             </div>
@@ -86,7 +105,7 @@ export function DexCoverage({
           <Flex gap="medium">
             <div>
               {getPercent(resist.length)}%{" "}
-              <FancyLink to={`/offense/coverage/resistance/?${typeParams}`}>
+              <FancyLink to={`/offense/coverage/resistance/?${params}`}>
                 {t("offense.coverage.resistance")}
               </FancyLink>
             </div>

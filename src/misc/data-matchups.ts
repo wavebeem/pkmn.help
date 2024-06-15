@@ -3,6 +3,7 @@ import { Generation } from "./data-generations";
 import {
   AbilityName,
   CoverageType,
+  SpecialMove,
   Type,
   abilities,
   typesForGeneration,
@@ -130,10 +131,14 @@ export function partitionMatchups({
   coverageTypes,
   generation,
   types,
+  offenseAbilities,
+  specialMoves,
 }: {
   coverageTypes: CoverageType[];
   generation: Generation;
   types: Type[];
+  offenseAbilities: AbilityName[];
+  specialMoves: SpecialMove[];
 }): PartitionedMatchups {
   if (types.length === 0) {
     return {
@@ -148,15 +153,32 @@ export function partitionMatchups({
     normal: [],
   };
   for (const ct of coverageTypes) {
-    const arr = types.map((t) =>
-      matchupFor({
-        generation,
-        defenseTypes: ct.types,
-        defenseTeraType: Type.none,
-        offenseType: t,
-        abilityName: "none",
-      })
-    );
+    const arr: number[] = [];
+    let abilities = [...offenseAbilities];
+    if (abilities.length === 0) {
+      abilities = ["none"];
+    }
+    let moves: readonly (SpecialMove | undefined)[] = [...specialMoves];
+    if (moves.length === 0) {
+      moves = [undefined];
+    }
+    for (const offenseAbilityName of abilities) {
+      for (const specialMove of moves) {
+        for (const t of types) {
+          arr.push(
+            matchupFor({
+              generation,
+              defenseTypes: ct.types,
+              defenseTeraType: Type.none,
+              offenseType: t,
+              abilityName: "none",
+              offenseAbilityName,
+              specialMove,
+            })
+          );
+        }
+      }
+    }
     const max = Math.max(...arr);
     const min = Math.min(...arr);
     if (max > 1) {
@@ -175,13 +197,17 @@ export function matchupFor({
   defenseTypes,
   offenseType,
   defenseTeraType = Type.none,
+  offenseAbilityName = Type.none,
   abilityName,
+  specialMove,
 }: {
   generation: Generation;
   defenseTypes: Type[];
   defenseTeraType: Type;
   offenseType: Type;
+  offenseAbilityName: AbilityName;
   abilityName: AbilityName;
+  specialMove?: SpecialMove;
 }): number {
   let n = 1;
   // Tera Pokémon (other than Stellar type) use their Tera type as their sole
@@ -206,10 +232,40 @@ export function matchupFor({
     if (t !== Type.none) {
       x = matchupForPair(generation, t, offenseType);
     }
-    // Delta stream protects flying types from super effective damage
+    // Ghost can be hurt normally by Normal and Fighting
     //
-    // https://bulbapedia.bulbagarden.net/wiki/Delta_Stream_(Ability)
+    // https://bulbapedia.bulbagarden.net/wiki/Scrappy_(Ability)
+    if (
+      offenseAbilityName === "scrappy" &&
+      t === Type.ghost &&
+      (offenseType === Type.normal || Type.fighting)
+    ) {
+      x = 1;
+    }
     if (t === Type.flying && abilityName === "delta_stream" && x > 1) {
+      // Delta stream protects flying types from super effective damage
+      //
+      // https://bulbapedia.bulbagarden.net/wiki/Delta_Stream_(Ability)
+      x = 1;
+    }
+    // Freeze-Dry always deals 2x to Water
+    //
+    // https://bulbapedia.bulbagarden.net/wiki/Freeze-Dry_(move)
+    if (
+      t === Type.water &&
+      specialMove === "freeze-dry" &&
+      offenseType === Type.ice
+    ) {
+      x = 2;
+    }
+    // Thousand Arrows deals regular damage to Flying instead of zero
+    //
+    // https://bulbapedia.bulbagarden.net/wiki/Thousand_Arrows_(move)
+    if (
+      t === Type.flying &&
+      specialMove === "thousand_arrows" &&
+      offenseType === Type.ground
+    ) {
       x = 1;
     }
     n *= x;
@@ -218,6 +274,12 @@ export function matchupFor({
   //
   // https://bulbapedia.bulbagarden.net/wiki/Stellar_(type)
   if (defenseTeraType !== Type.none && offenseType === Type.stellar) {
+    n *= 2;
+  }
+  // Doubles damage of ineffective moves
+  //
+  // https://bulbapedia.bulbagarden.net/wiki/Tinted_Lens_(Ability)
+  if (offenseAbilityName === "tinted_lens" && n < 1) {
     n *= 2;
   }
   // Wonder guard blocks all non-super effective damage
@@ -317,9 +379,13 @@ export class GroupedMatchups {
 export function offensiveMatchups({
   gen,
   offenseTypes,
+  specialMoves,
+  offenseAbilities,
 }: {
   gen: Generation;
-  offenseTypes: Type[];
+  offenseTypes: readonly Type[];
+  specialMoves: readonly SpecialMove[];
+  offenseAbilities: readonly AbilityName[];
 }): GroupedMatchups {
   const matchups = typesForGeneration(gen)
     .filter((t) => t !== Type.stellar)
@@ -327,13 +393,27 @@ export function offensiveMatchups({
       if (offenseTypes.length === 0) {
         return new Matchup(gen, t, 1);
       }
-      const effs = offenseTypes.map((offense) => {
-        return matchupFor({
-          generation: gen,
-          defenseTypes: [t],
-          defenseTeraType: "none",
-          offenseType: offense,
-          abilityName: "none",
+      let moves: readonly (SpecialMove | undefined)[] = specialMoves;
+      if (specialMoves.length === 0) {
+        moves = [undefined];
+      }
+      let abilities: readonly AbilityName[] = offenseAbilities;
+      if (offenseAbilities.length === 0) {
+        abilities = ["none"];
+      }
+      const effs = abilities.flatMap((offenseAbilityName) => {
+        return moves.flatMap((move) => {
+          return offenseTypes.map((offense) => {
+            return matchupFor({
+              generation: gen,
+              defenseTypes: [t],
+              defenseTeraType: "none",
+              offenseType: offense,
+              abilityName: "none",
+              specialMove: move,
+              offenseAbilityName,
+            });
+          });
         });
       });
       const max = Math.max(...effs);
@@ -360,6 +440,7 @@ export function defensiveMatchups({
       defenseTeraType,
       offenseType: t,
       abilityName,
+      offenseAbilityName: "none",
     });
     return new Matchup(gen, t, eff);
   });

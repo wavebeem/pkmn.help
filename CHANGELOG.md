@@ -1,5 +1,17 @@
 # Changelog
 
+## 2024-06-15
+
+- New "Offense" features
+
+  - Added the special move "Freeze-Dry"
+
+  - Added the special move "Thousand Arrows"
+
+  - Added the offense ability "Tinted Lens"
+
+  - Added the offense ability "Scrappy"
+
 ## 2024-06-13
 
 - Updated Spanish translation

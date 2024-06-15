@@ -204,6 +204,8 @@ export function ScreenDefense(): ReactNode {
           types={types}
           ability={ability}
           teraType={teraType}
+          offenseAbilities={[]}
+          specialMoves={[]}
         />
       </Flex>
     </main>
