@@ -26,6 +26,7 @@ import {
   CheckboxGroup,
   CheckboxGroupOption,
 } from "../components/CheckboxGroup";
+import { compare } from "../misc/compare";
 
 export function ScreenOffense(): ReactNode {
   const { coverageTypes, fallbackCoverageTypes, isLoading } = useAppContext();
@@ -67,6 +68,9 @@ export function ScreenOffense(): ReactNode {
     },
     { id: "freeze-dry", name: t(`offense.specialMoves.names.freeze-dry`) },
   ] as const;
+  specialMovesOptions.sort((a, b) => {
+    return compare(a.name, b.name);
+  });
 
   const [specialMoves, setSpecialMoves] = useSessionStorage<SpecialMove[]>(
     "offense.specialMoves",
@@ -80,6 +84,9 @@ export function ScreenOffense(): ReactNode {
     },
     { id: "scrappy", name: t(`defense.abilityNames.scrappy`) },
   ] as const;
+  abilitiesOptions.sort((a, b) => {
+    return compare(a.name, b.name);
+  });
 
   const [abilities, setAbilities] = useSessionStorage<AbilityName[]>(
     "offense.abilities",
