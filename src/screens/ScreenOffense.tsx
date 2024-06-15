@@ -1,8 +1,12 @@
 import classNames from "classnames";
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
+import {
+  CheckboxGroup,
+  CheckboxGroupOption,
+} from "../components/CheckboxGroup";
 import { CopyButton } from "../components/CopyButton";
 import { DexCoverage } from "../components/DexCoverage";
 import { FancyLink } from "../components/FancyLink";
@@ -13,6 +17,7 @@ import { MultiTypeSelector } from "../components/MultiTypeSelector";
 import { useAppContext } from "../hooks/useAppContext";
 import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
+import { compare } from "../misc/compare";
 import {
   AbilityName,
   SpecialMove,
@@ -22,11 +27,6 @@ import {
   typesFromString,
 } from "../misc/data-types";
 import styles from "./ScreenOffense.module.css";
-import {
-  CheckboxGroup,
-  CheckboxGroupOption,
-} from "../components/CheckboxGroup";
-import { compare } from "../misc/compare";
 
 export function ScreenOffense(): ReactNode {
   const { coverageTypes, fallbackCoverageTypes, isLoading } = useAppContext();
