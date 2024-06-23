@@ -6,6 +6,10 @@ navigation.pokedex,Pokédex,포켓몬 도감
 navigation.more,More,더보기
 offense.chooseTypes,Choose types,타입 선택
 offense.dealsXTo,Deals {{ x }} to,{{x}} 데미지
+offense.abilities.choose,Choose abilities,
+offense.specialMoves.choose,Choose special moves,
+offense.specialMoves.names.freeze-dry,Freeze-Dry,
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,
 offense.coverage.heading,Pokédex coverage,포켓몬 도감과 비교하기
 offense.coverage.edit,Edit list,포켓몬 목록 편집
 offense.coverage.weakness,Weak,약점인 포켓몬
@@ -14,11 +18,8 @@ offense.coverage.resistance,Resist,내성인 포켓몬
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,포켓몬을 찾을 수 없거나 유형이 선택되지 않았습니다.
 offense.coverageList.weakness.heading,Weakness coverage list,약점인 포켓몬 목록
-offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,이 포켓몬은 선택한 유형 중 적어도 하나에 약합니다.
 offense.coverageList.normal.heading,Normal effectiveness coverage list,1배인 포켓몬 목록
-offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,이 포켓몬은 선택한 유형에 대해 약점도 아니고 내성도 없습니다.
 offense.coverageList.resistance.heading,Resistance coverage list,내성인 포켓몬 목록
-offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,이 포켓몬은 선택한 모든 유형에 내성이 있습니다.
 coverage.heading,Pokédex coverage,비교할 포켓몬 목록
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",커스텀 Pokédex CSV 파일을 가져오거나 내보내서 다른 포켓몬에게의 공격 상성을 확인할 수 있습니다. OU 티어 포켓몬만으로 CSV 파일을 만들거나 처음부터 나만의 포켓몬을 만들 수도 있습니다.
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","CSV 데이터는 열 순서가 아닌 열 헤더 명칭으로 로드되므로 필요한 경우 열을 추가하거나 재정렬할 수 있습니다(예: ""티어"" 열 또는 ""메모"" 열 추가)."
@@ -47,6 +48,8 @@ defense.takesXFrom,Takes {{ x }} from,{{ x }} 피해
 defense.chooseAbility,Choose ability,특성을 선택하세요
 defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,없음
+defense.abilityNames.tinted_lens,Tinted Lens,
+defense.abilityNames.scrappy,Scrappy,
 defense.abilityNames.tera_shell,Tera Shell,테라셸
 defense.abilityNames.filter,Filter,
 defense.abilityNames.wonder_guard,Wonder Guard,불가사의부적

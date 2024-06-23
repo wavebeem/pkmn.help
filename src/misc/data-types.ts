@@ -259,6 +259,6 @@ export function objectToCoverageType({ obj }: { obj: unknown }): CoverageType {
   return { number, name, types };
 }
 
-function removeNones(types: Type[]): Type[] {
-  return types.filter((t) => t !== Type.none);
+function removeNones(types: (Type | undefined | null)[]): Type[] {
+  return types.filter((t): t is Type => Boolean(t && t !== Type.none));
 }

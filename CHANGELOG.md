@@ -1,5 +1,10 @@
 # Changelog
 
+## 2024-06-22
+
+- Fixed a bug where selecting a third type for a Pokémon with their second type
+  set to "None" would cause the page to crash
+
 ## 2024-06-15
 
 - New "Offense" features

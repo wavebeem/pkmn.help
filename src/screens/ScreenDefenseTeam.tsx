@@ -149,7 +149,7 @@ export function ScreenDefenseTeam(): ReactNode {
           if (i === listIndex) {
             return normalizeTypes(updateArrayAt(types, typeIndex, t));
           }
-          return types;
+          return normalizeTypes(types);
         })
       );
     };

@@ -6,6 +6,10 @@ navigation.pokedex,Pokédex,ポケモンずかん
 navigation.more,More,その他
 offense.chooseTypes,Choose types,複数のタイプを選択
 offense.dealsXTo,Deals {{ x }} to,{{ x }}を与える
+offense.abilities.choose,Choose abilities,
+offense.specialMoves.choose,Choose special moves,
+offense.specialMoves.names.freeze-dry,Freeze-Dry,
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,
 offense.coverage.heading,Pokédex coverage,
 offense.coverage.edit,Edit list,
 offense.coverage.weakness,Weak,
@@ -14,11 +18,8 @@ offense.coverage.resistance,Resist,
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,
 offense.coverageList.weakness.heading,Weakness coverage list,
-offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,
 offense.coverageList.normal.heading,Normal effectiveness coverage list,
-offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,
 offense.coverageList.resistance.heading,Resistance coverage list,
-offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,
 coverage.heading,Pokédex coverage,弱点のカバー範囲
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",異なるポケモンのための弱点カバー範囲を見るためにカスタムポケモンずかんのCSVファイルを読み込み/エクスポートします。
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",CSVデータはカラムの順番ではなくカラムのヘッダーネーム順で呼ばれます。追加したり並べ替えても処理に影響はありません。（例:「ランク」カラムを足す、「注釈」カラムを足す）
@@ -47,6 +48,8 @@ defense.takesXFrom,Takes {{ x }} from,{{ x }}を受ける
 defense.chooseAbility,Choose ability,特性
 defense.chooseTeraType,Choose tera type,テラスタイプ
 defense.abilityNames.none,None,なし
+defense.abilityNames.tinted_lens,Tinted Lens,
+defense.abilityNames.scrappy,Scrappy,
 defense.abilityNames.tera_shell,Tera Shell,テラスシェル
 defense.abilityNames.filter,Filter,フィルター
 defense.abilityNames.wonder_guard,Wonder Guard,ふしぎなまもり

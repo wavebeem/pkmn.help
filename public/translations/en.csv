@@ -6,6 +6,10 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,More
 offense.chooseTypes,Choose types,Choose types
 offense.dealsXTo,Deals {{ x }} to,Deals {{ x }} to
+offense.abilities.choose,Choose abilities,Choose abilities
+offense.specialMoves.choose,Choose special moves,Choose special moves
+offense.specialMoves.names.freeze-dry,Freeze-Dry,Freeze-Dry
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,Thousand Arrows
 offense.coverage.heading,Pokédex coverage,Pokédex coverage
 offense.coverage.edit,Edit list,Edit list
 offense.coverage.weakness,Weak,Weak
@@ -14,11 +18,8 @@ offense.coverage.resistance,Resist,Resist
 offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,No Pokémon found or no types selected
 offense.coverageList.weakness.heading,Weakness coverage list,Weakness coverage list
-offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,These Pokémon are weak to at least one of the selected types.
 offense.coverageList.normal.heading,Normal effectiveness coverage list,Normal effectiveness coverage list
-offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,These Pokémon are not in the weakness or resistance lists for the selected types.
 offense.coverageList.resistance.heading,Resistance coverage list,Resistance coverage list
-offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,These Pokémon are resistant to all of the selected types.
 coverage.heading,Pokédex coverage,Pokédex coverage
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch."
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column)."
@@ -47,6 +48,8 @@ defense.takesXFrom,Takes {{ x }} from,Takes {{ x }} from
 defense.chooseAbility,Choose ability,Choose ability
 defense.chooseTeraType,Choose tera type,Choose tera type
 defense.abilityNames.none,None,None
+defense.abilityNames.tinted_lens,Tinted Lens,Tinted Lens
+defense.abilityNames.scrappy,Scrappy,Scrappy
 defense.abilityNames.tera_shell,Tera Shell,Tera Shell
 defense.abilityNames.filter,Filter,Filter
 defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard

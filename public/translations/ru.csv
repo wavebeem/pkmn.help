@@ -6,6 +6,10 @@ navigation.pokedex,Pokédex,Покедекс
 navigation.more,More,Больше
 offense.chooseTypes,Choose types,Выберите Типы
 offense.dealsXTo,Deals {{ x }} to,Наносит {{ x }}
+offense.abilities.choose,Choose abilities,
+offense.specialMoves.choose,Choose special moves,
+offense.specialMoves.names.freeze-dry,Freeze-Dry,
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,
 offense.coverage.heading,Pokédex coverage,
 offense.coverage.edit,Edit list,
 offense.coverage.weakness,Weak,
@@ -14,11 +18,8 @@ offense.coverage.resistance,Resist,
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,
 offense.coverageList.weakness.heading,Weakness coverage list,
-offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,
 offense.coverageList.normal.heading,Normal effectiveness coverage list,
-offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,
 offense.coverageList.resistance.heading,Resistance coverage list,
-offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,
 coverage.heading,Pokédex coverage,Охват Слабостей
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Импортируйте/экспортируйте пользовательские CSV файлы Покедекса чтобы посмотреть охват слабостей для разных Покемонов. Создайте пользовательский CSV файл только с одним Покемоном уровня OU, или даже создайте своего Покемона с нуля."
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Данные CSV загружаются по имени заголовка столбца, а не по порядку столбцов, поэтому вы можете добавлять или изменять порядок столбцов если хотите (например, добавить столбец «уровень» или столбец «примечания»)."
@@ -47,6 +48,8 @@ defense.takesXFrom,Takes {{ x }} from,Принимает {{ x }} от
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,
+defense.abilityNames.tinted_lens,Tinted Lens,
+defense.abilityNames.scrappy,Scrappy,
 defense.abilityNames.tera_shell,Tera Shell,Tera Shell
 defense.abilityNames.filter,Filter,Filter
 defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard

@@ -6,6 +6,10 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mais
 offense.chooseTypes,Choose types,Escolhe os tipos
 offense.dealsXTo,Deals {{ x }} to,Causa {{ x }} de dano contra
+offense.abilities.choose,Choose abilities,
+offense.specialMoves.choose,Choose special moves,
+offense.specialMoves.names.freeze-dry,Freeze-Dry,
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,
 offense.coverage.heading,Pokédex coverage,Cobertura da Pokédex
 offense.coverage.edit,Edit list,Editar a lista
 offense.coverage.weakness,Weak,Fracos
@@ -14,11 +18,8 @@ offense.coverage.resistance,Resist,Resistentes
 offense.teraPokemon,Tera Pokémon,Pokémon Terastalizados
 offense.coverageList.empty,No Pokémon found or no types selected,Nenhum Pokémon encontrado ou nenhum tipo selecionado
 offense.coverageList.weakness.heading,Weakness coverage list,Lista de Pokémon fracos
-offense.coverageList.weakness.description,These Pokémon are weak to at least one of the selected types.,"Estes Pokémon são fracos contra, pelo menos, um dos tipos selecionados"
 offense.coverageList.normal.heading,Normal effectiveness coverage list,Lista de Pokémon neutros
-offense.coverageList.normal.description,These Pokémon are not in the weakness or resistance lists for the selected types.,Estes Pokémon não são fracos nem resistentes contra os tipos selecionados
 offense.coverageList.resistance.heading,Resistance coverage list,Lista de Pokémon resistentes
-offense.coverageList.resistance.description,These Pokémon are resistant to all of the selected types.,Estes Pokémon são resistentes contra todos os tipos selecionados
 coverage.heading,Pokédex coverage,Cobertura da Pokédex
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",Importa/exporta arquivos CSV da Pokédex personalizados para ver a cobertura de tipos para diferentes Pokémon. Podes criar um arquivo CSV só com Pokémon da categoria OU ou até criar os teus próprios Pokémon do zero.
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Os dados CSV são carregados pelo nome do cabeçalho da coluna, e não pela ordem das colunas, por isso podes adicionar ou reordenar as colunas como quiseres (ex.: podes adicionar uma coluna para a ""categoria"" ou para ""notas"")."
@@ -47,6 +48,8 @@ defense.takesXFrom,Takes {{ x }} from,Sofre {{ x }} de dano de
 defense.chooseAbility,Choose ability,Escolhe a habilidade
 defense.chooseTeraType,Choose tera type,Escolhe o tipo tera
 defense.abilityNames.none,None,Nenhum
+defense.abilityNames.tinted_lens,Tinted Lens,
+defense.abilityNames.scrappy,Scrappy,
 defense.abilityNames.tera_shell,Tera Shell,Tera Shell
 defense.abilityNames.filter,Filter,Filter
 defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard
