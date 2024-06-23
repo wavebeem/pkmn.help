@@ -6,10 +6,10 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Autres
 offense.chooseTypes,Choose types,Choisissez les types
 offense.dealsXTo,Deals {{ x }} to,Inflige {{ x }} à
-offense.abilities.choose,Choose abilities,
-offense.specialMoves.choose,Choose special moves,
-offense.specialMoves.names.freeze-dry,Freeze-Dry,
-offense.specialMoves.names.thousand_arrows,Thousand Arrows,
+offense.abilities.choose,Choose abilities,Choisissez le talent
+offense.specialMoves.choose,Choose special moves,Choisissez les attaques spéciales
+offense.specialMoves.names.freeze-dry,Freeze-Dry,Lyophilisation
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,Myria-Flèches
 offense.coverage.heading,Pokédex coverage,Couverture du Pokédex
 offense.coverage.edit,Edit list,Modifier la liste
 offense.coverage.weakness,Weak,Faible
@@ -48,8 +48,8 @@ defense.takesXFrom,Takes {{ x }} from,Subit {{ x }} De
 defense.chooseAbility,Choose ability,Choisir le talent
 defense.chooseTeraType,Choose tera type,Choisir le type téracristal
 defense.abilityNames.none,None,Aucun
-defense.abilityNames.tinted_lens,Tinted Lens,
-defense.abilityNames.scrappy,Scrappy,
+defense.abilityNames.tinted_lens,Tinted Lens,Lentitinté
+defense.abilityNames.scrappy,Scrappy,Querelleur
 defense.abilityNames.tera_shell,Tera Shell,Téra-Carapace
 defense.abilityNames.filter,Filter,Filtre
 defense.abilityNames.wonder_guard,Wonder Guard,Garde Mystik

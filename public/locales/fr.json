@@ -9,6 +9,16 @@
   "offense": {
     "chooseTypes": "Choisissez les types",
     "dealsXTo": "Inflige {{ x }} à",
+    "abilities": {
+      "choose": "Choisissez le talent"
+    },
+    "specialMoves": {
+      "choose": "Choisissez les attaques spéciales",
+      "names": {
+        "freeze-dry": "Lyophilisation",
+        "thousand_arrows": "Myria-Flèches"
+      }
+    },
     "coverage": {
       "heading": "Couverture du Pokédex",
       "edit": "Modifier la liste",
@@ -20,16 +30,13 @@
     "coverageList": {
       "empty": "Aucun Pokémon trouvé ou aucun type sélectionné",
       "weakness": {
-        "heading": "Liste des Pokémon qui te sont faibles",
-        "description": "Ces Pokémon sont faibles à au moins l'un des deux types sélectionnés"
+        "heading": "Liste des Pokémon qui te sont faibles"
       },
       "normal": {
-        "heading": "Liste des Pokémon qui te sont neutres",
-        "description": "Ces Pokémon ne sont pas dans la liste des faiblesses/résistances pour les types sélectionnés"
+        "heading": "Liste des Pokémon qui te sont neutres"
       },
       "resistance": {
-        "heading": "Liste des Pokémon qui te résistent",
-        "description": "Ces Pokémon résistent aux deux types sélectionnés"
+        "heading": "Liste des Pokémon qui te résistent"
       }
     }
   },
@@ -75,6 +82,8 @@
     "chooseTeraType": "Choisir le type téracristal",
     "abilityNames": {
       "none": "Aucun",
+      "tinted_lens": "Lentitinté",
+      "scrappy": "Querelleur",
       "tera_shell": "Téra-Carapace",
       "filter": "Filtre",
       "wonder_guard": "Garde Mystik",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-06-23
+
+- Updated French translation
+
 ## 2024-06-22
 
 - Fixed a bug where selecting a third type for a Pokémon with their second type
