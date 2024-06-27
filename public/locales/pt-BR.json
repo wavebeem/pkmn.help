@@ -16,20 +16,27 @@
       "normal": "Normal",
       "resistance": "Resistências"
     },
+    "abilities": {
+      "choose": "Escolher habilidades"
+    },
+    "specialMoves": {
+      "choose": "Escolher movimentos especiais",
+      "names": {
+        "freeze-dry": "Freeze-Dry",
+        "thousand_arrows": "Thousand Arrows"
+      }
+    },
     "teraPokemon": "Pokémon Tera",
     "coverageList": {
       "empty": "Não foram encontrados Pokémon ou nenhum tipo foi selecionado",
       "weakness": {
-        "heading": "Lista de cobertura de fraquezas",
-        "description": "Estes Pokémon são fracos contra pelo menos um dos tipos selecionados"
+        "heading": "Lista de cobertura de fraquezas"
       },
       "normal": {
-        "heading": "Lista de cobertura de eficiência normal",
-        "description": "Estes Pokémon não estão nas listas de fraquezas ou de resistências para os tipos selecionados"
+        "heading": "Lista de cobertura de eficiência normal"
       },
       "resistance": {
-        "heading": "Lista de cobertura de resistências",
-        "description": "Estes Pokémon resistem todos estes tipos"
+        "heading": "Lista de cobertura de resistências"
       }
     }
   },
@@ -75,6 +82,8 @@
     "chooseTeraType": "Escolher tipo tera",
     "abilityNames": {
       "none": "Nenhuma",
+      "tinted_lens": "Tinted Lens",
+      "scrappy": "Scrappy",
       "tera_shell": "Tera Shell",
       "filter": "Filtro",
       "wonder_guard": "Wonder Guard",

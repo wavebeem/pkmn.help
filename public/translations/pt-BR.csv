@@ -6,10 +6,10 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mais
 offense.chooseTypes,Choose types,Escolher tipos
 offense.dealsXTo,Deals {{ x }} to,Causa {{ x }} mais dano contra
-offense.abilities.choose,Choose abilities,
-offense.specialMoves.choose,Choose special moves,
-offense.specialMoves.names.freeze-dry,Freeze-Dry,
-offense.specialMoves.names.thousand_arrows,Thousand Arrows,
+offense.abilities.choose,Choose abilities,Escolher habilidades
+offense.specialMoves.choose,Choose special moves,Escolher movimentos especiais
+offense.specialMoves.names.freeze-dry,Freeze-Dry,Freeze-Dry
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,Thousand Arrows
 offense.coverage.heading,Pokédex coverage,Cobertura da Pokédex
 offense.coverage.edit,Edit list,Editar lista
 offense.coverage.weakness,Weak,Fraquezas
@@ -48,8 +48,8 @@ defense.takesXFrom,Takes {{ x }} from,Leva {{ x }} mais dano de
 defense.chooseAbility,Choose ability,Escolher habilidade
 defense.chooseTeraType,Choose tera type,Escolher tipo tera
 defense.abilityNames.none,None,Nenhuma
-defense.abilityNames.tinted_lens,Tinted Lens,
-defense.abilityNames.scrappy,Scrappy,
+defense.abilityNames.tinted_lens,Tinted Lens,Tinted Lens
+defense.abilityNames.scrappy,Scrappy,Scrappy
 defense.abilityNames.tera_shell,Tera Shell,Tera Shell
 defense.abilityNames.filter,Filter,Filtro
 defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard

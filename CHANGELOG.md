@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-06-26
+
+- Updated Brazilian Portuguese translation
+
 ## 2024-06-23
 
 - Updated French translation
