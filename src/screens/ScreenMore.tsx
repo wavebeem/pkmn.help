@@ -417,6 +417,7 @@ export function ScreenMore(): ReactNode {
                   {t("more.thanks.sections.zh-Hans")}
                 </FancyText>
                 <ul className="list-simple">
+                  <li>umbresp</li>
                   <li>Dragonify</li>
                   <li>Tin</li>
                 </ul>
@@ -426,6 +427,7 @@ export function ScreenMore(): ReactNode {
                   {t("more.thanks.sections.zh-Hant")}
                 </FancyText>
                 <ul className="list-simple">
+                  <li>umbresp</li>
                   <li>Nan Zheng</li>
                 </ul>
               </Flex>
