@@ -8,7 +8,13 @@
   },
   "offense": {
     "chooseTypes": "複数のタイプを選択",
-    "dealsXTo": "{{ x }}を与える"
+    "dealsXTo": "{{ x }}を与える",
+    "specialMoves": {
+      "names": {
+        "freeze-dry": "フリーズドライ",
+        "thousand_arrows": "サウザンアロー"
+      }
+    }
   },
   "coverage": {
     "heading": "弱点のカバー範囲",
@@ -52,6 +58,8 @@
     "chooseTeraType": "テラスタイプ",
     "abilityNames": {
       "none": "なし",
+      "tinted_lens": "いろめがね",
+      "scrappy": "きもったま",
       "tera_shell": "テラスシェル",
       "filter": "フィルター",
       "wonder_guard": "ふしぎなまもり",
@@ -86,6 +94,12 @@
     },
     "defense": {
       "text": "ぼうぎょ"
+    },
+    "cry": {
+      "text": "鳴き声"
+    },
+    "shiny": {
+      "text": "色違い"
     },
     "pagination": {
       "next": "次",
@@ -193,12 +207,16 @@
         "ru": "ロシア語翻訳",
         "kk": "カザフ語翻訳",
         "pt-BR": "ブラジルポルトガル語翻訳",
-        "zh-Hans": "中国語翻訳",
+        "zh-Hans": "中国語翻訳（簡体）",
+        "zh-Hant": "中国語翻訳（繁体）",
         "ro": "ルーマニア語翻訳",
+        "pl": "ポーランド語翻訳",
         "fr": "フランス語翻訳",
         "de": "ドイツ語翻訳",
         "it": "イタリア語翻訳",
+        "ko": "朝鮮語翻訳",
         "ja": "日本語翻訳",
+        "nl": "オランダ語翻訳",
         "testing": "テスト",
         "other": "無名のポケモン・ファンたち"
       }

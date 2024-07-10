@@ -8,8 +8,8 @@ offense.chooseTypes,Choose types,타입 선택
 offense.dealsXTo,Deals {{ x }} to,{{x}} 데미지
 offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
-offense.specialMoves.names.freeze-dry,Freeze-Dry,
-offense.specialMoves.names.thousand_arrows,Thousand Arrows,
+offense.specialMoves.names.freeze-dry,Freeze-Dry,프리즈드라이
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,사우전드애로
 offense.coverage.heading,Pokédex coverage,포켓몬 도감과 비교하기
 offense.coverage.edit,Edit list,포켓몬 목록 편집
 offense.coverage.weakness,Weak,약점인 포켓몬
@@ -48,10 +48,10 @@ defense.takesXFrom,Takes {{ x }} from,{{ x }} 피해
 defense.chooseAbility,Choose ability,특성을 선택하세요
 defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,없음
-defense.abilityNames.tinted_lens,Tinted Lens,
-defense.abilityNames.scrappy,Scrappy,
+defense.abilityNames.tinted_lens,Tinted Lens,색안경
+defense.abilityNames.scrappy,Scrappy,배짱
 defense.abilityNames.tera_shell,Tera Shell,테라셸
-defense.abilityNames.filter,Filter,
+defense.abilityNames.filter,Filter,필터
 defense.abilityNames.wonder_guard,Wonder Guard,불가사의부적
 defense.abilityNames.delta_stream,Delta Stream,델타스트림
 defense.abilityNames.fluffy,Fluffy,복슬복슬

@@ -9,6 +9,12 @@
   "offense": {
     "chooseTypes": "Typen auswählen",
     "dealsXTo": "Fügt {{ x }} Schaden zu",
+    "specialMoves": {
+      "names": {
+        "freeze-dry": "Gefriertrockner",
+        "thousand_arrows": "Tausend Pfeile"
+      }
+    },
     "coverage": {
       "heading": "Pokédex Abdeckung",
       "edit": "Editiere Liste",
@@ -75,6 +81,8 @@
     "chooseTeraType": "Tera-Typ auswählen",
     "abilityNames": {
       "none": "Keine Fähigkeit",
+      "tinted_lens": "Aufwertung",
+      "scrappy": "Rauflust",
       "tera_shell": "Tera-Panzer",
       "filter": "Filter",
       "wonder_guard": "Wunderwache",

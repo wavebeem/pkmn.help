@@ -8,8 +8,8 @@ offense.chooseTypes,Choose types,複数のタイプを選択
 offense.dealsXTo,Deals {{ x }} to,{{ x }}を与える
 offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
-offense.specialMoves.names.freeze-dry,Freeze-Dry,
-offense.specialMoves.names.thousand_arrows,Thousand Arrows,
+offense.specialMoves.names.freeze-dry,Freeze-Dry,フリーズドライ
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,サウザンアロー
 offense.coverage.heading,Pokédex coverage,
 offense.coverage.edit,Edit list,
 offense.coverage.weakness,Weak,
@@ -48,8 +48,8 @@ defense.takesXFrom,Takes {{ x }} from,{{ x }}を受ける
 defense.chooseAbility,Choose ability,特性
 defense.chooseTeraType,Choose tera type,テラスタイプ
 defense.abilityNames.none,None,なし
-defense.abilityNames.tinted_lens,Tinted Lens,
-defense.abilityNames.scrappy,Scrappy,
+defense.abilityNames.tinted_lens,Tinted Lens,いろめがね
+defense.abilityNames.scrappy,Scrappy,きもったま
 defense.abilityNames.tera_shell,Tera Shell,テラスシェル
 defense.abilityNames.filter,Filter,フィルター
 defense.abilityNames.wonder_guard,Wonder Guard,ふしぎなまもり
@@ -91,8 +91,8 @@ pokedex.search.helpLong,"Help, search Pokédex",ヘルプ、Pokédexを検索
 pokedex.search.notFound,No Pokémon found,ポケモンが見つかりませんでした
 pokedex.offense.text,Offense,こうげき
 pokedex.defense.text,Defense,ぼうぎょ
-pokedex.cry.text,Cry,
-pokedex.shiny.text,Shiny,
+pokedex.cry.text,Cry,鳴き声
+pokedex.shiny.text,Shiny,色違い
 pokedex.pagination.next,Next,次
 pokedex.pagination.nextLong,Next,次
 pokedex.pagination.previous,Prev,前
@@ -159,16 +159,16 @@ more.thanks.sections.ru,Russian translation,ロシア語翻訳
 more.thanks.sections.kk,Kazakh translation,カザフ語翻訳
 more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
 more.thanks.sections.pt-BR,Portuguese (Brazil) translation,ブラジルポルトガル語翻訳
-more.thanks.sections.zh-Hans,Simplified Chinese translation,中国語翻訳
-more.thanks.sections.zh-Hant,Traditional Chinese translation,
+more.thanks.sections.zh-Hans,Simplified Chinese translation,中国語翻訳（簡体）
+more.thanks.sections.zh-Hant,Traditional Chinese translation,中国語翻訳（繁体）
 more.thanks.sections.ro,Romanian translation,ルーマニア語翻訳
-more.thanks.sections.pl,Polish translation,
+more.thanks.sections.pl,Polish translation,ポーランド語翻訳
 more.thanks.sections.fr,French translation,フランス語翻訳
 more.thanks.sections.de,German translation,ドイツ語翻訳
 more.thanks.sections.it,Italian translation,イタリア語翻訳
-more.thanks.sections.ko,Korean translation,
+more.thanks.sections.ko,Korean translation,朝鮮語翻訳
 more.thanks.sections.ja,Japanese translation,日本語翻訳
-more.thanks.sections.nl,Dutch translation,
+more.thanks.sections.nl,Dutch translation,オランダ語翻訳
 more.thanks.sections.testing,Testing,テスト
 more.thanks.sections.other,Several anonymous Poké Fans,無名のポケモン・ファンたち
 more.openSource.heading,Open source,オープンソース
