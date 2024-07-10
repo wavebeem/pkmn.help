@@ -9,6 +9,16 @@
   "offense": {
     "chooseTypes": "选择属性",
     "dealsXTo": "产生 {{ x }} 伤害",
+    "abilities": {
+      "choose": "选择特性"
+    },
+    "specialMoves": {
+      "choose": "选择特别招式",
+      "names": {
+        "freeze-dry": "冷冻干燥",
+        "thousand_arrows": "千箭齐发"
+      }
+    },
     "coverage": {
       "heading": "宝可梦图鉴覆盖率",
       "edit": "编辑列表",
@@ -20,16 +30,13 @@
     "coverageList": {
       "empty": "没有找到宝可梦或没有选择属性",
       "weakness": {
-        "heading": "效果绝佳列表",
-        "description": "这些宝可梦克制被选择的属性"
+        "heading": "效果绝佳列表"
       },
       "normal": {
-        "heading": "效果一般列表",
-        "description": "这些宝可梦不抵抗也不克制被选择的属性"
+        "heading": "效果一般列表"
       },
       "resistance": {
-        "heading": "效果不好列表",
-        "description": "这些宝可梦抵抗被选择的属性"
+        "heading": "效果不好列表"
       }
     }
   },
@@ -75,6 +82,8 @@
     "chooseTeraType": "选择太晶属性",
     "abilityNames": {
       "none": "无",
+      "tinted_lens": "有色眼镜",
+      "scrappy": "胆量",
       "tera_shell": "太晶甲殼",
       "filter": "過濾",
       "wonder_guard": "神奇守护",

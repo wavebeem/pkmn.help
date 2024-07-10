@@ -6,10 +6,10 @@ navigation.pokedex,Pokédex,图鉴
 navigation.more,More,更多
 offense.chooseTypes,Choose types,选择属性
 offense.dealsXTo,Deals {{ x }} to,产生 {{ x }} 伤害
-offense.abilities.choose,Choose abilities,
-offense.specialMoves.choose,Choose special moves,
-offense.specialMoves.names.freeze-dry,Freeze-Dry,
-offense.specialMoves.names.thousand_arrows,Thousand Arrows,
+offense.abilities.choose,Choose abilities,选择特性
+offense.specialMoves.choose,Choose special moves,选择特别招式
+offense.specialMoves.names.freeze-dry,Freeze-Dry,冷冻干燥
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,千箭齐发
 offense.coverage.heading,Pokédex coverage,宝可梦图鉴覆盖率
 offense.coverage.edit,Edit list,编辑列表
 offense.coverage.weakness,Weak,被克制
@@ -48,8 +48,8 @@ defense.takesXFrom,Takes {{ x }} from,受到 {{ x }} 伤害
 defense.chooseAbility,Choose ability,特性
 defense.chooseTeraType,Choose tera type,选择太晶属性
 defense.abilityNames.none,None,无
-defense.abilityNames.tinted_lens,Tinted Lens,
-defense.abilityNames.scrappy,Scrappy,
+defense.abilityNames.tinted_lens,Tinted Lens,有色眼镜
+defense.abilityNames.scrappy,Scrappy,胆量
 defense.abilityNames.tera_shell,Tera Shell,太晶甲殼
 defense.abilityNames.filter,Filter,過濾
 defense.abilityNames.wonder_guard,Wonder Guard,神奇守护

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2024-07-09
+
+- Updated Simplified Chinese translation
+
+- Updated Traditional Chinese translation
+
 ## 2024-06-26
 
 - Updated Brazilian Portuguese translation

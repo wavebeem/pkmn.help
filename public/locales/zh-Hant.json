@@ -9,6 +9,16 @@
   "offense": {
     "chooseTypes": "選擇屬性",
     "dealsXTo": "對 {{ x }} 造成傷害",
+    "abilities": {
+      "choose": "選擇特性"
+    },
+    "specialMoves": {
+      "choose": "選擇特別招式",
+      "names": {
+        "freeze-dry": "冷凍乾燥",
+        "thousand_arrows": "千箭齊發"
+      }
+    },
     "coverage": {
       "heading": "寶可夢圖鑑涵蓋範圍",
       "edit": "編輯列表",
@@ -16,19 +26,17 @@
       "normal": "正常",
       "resistance": "抵抗"
     },
+    "teraPokemon": "太晶宝可梦",
     "coverageList": {
       "empty": "未找到寶可夢或未選擇屬性",
       "weakness": {
-        "heading": "弱點涵蓋列表",
-        "description": "這些寶可夢對所選擇的屬性至少有一個弱點。"
+        "heading": "弱點涵蓋列表"
       },
       "normal": {
-        "heading": "正常效果涵蓋列表",
-        "description": "這些寶可夢不在所選擇的屬性的弱點或抵抗列表中。"
+        "heading": "正常效果涵蓋列表"
       },
       "resistance": {
-        "heading": "抵抗涵蓋列表",
-        "description": "這些寶可夢對所有選定的屬性都具有抵抗力。"
+        "heading": "抵抗涵蓋列表"
       }
     }
   },
@@ -71,8 +79,11 @@
     "chooseThird": "選擇第三個屬性",
     "takesXFrom": "從中取 {{ x }}",
     "chooseAbility": "選擇技能",
+    "chooseTeraType": "選擇太晶屬性",
     "abilityNames": {
       "none": "無",
+      "tinted_lens": "有色眼鏡",
+      "scrappy": "膽量",
       "tera_shell": "太晶甲殼",
       "filter": "過濾",
       "wonder_guard": "奇跡防守",
@@ -198,6 +209,8 @@
       "language": {
         "label": "語言",
         "default": "自動檢測語言",
+        "official": "官方語言",
+        "unofficial": "非官方語言",
         "helpText": "語言支持不完整。請給我發電子郵件，我將支付您翻譯的費用。"
       },
       "theme": {
@@ -243,6 +256,7 @@
         "da": "丹麥翻譯",
         "ru": "俄羅斯翻譯",
         "kk": "哈薩克翻譯",
+        "pt-PT": "葡萄牙葡萄牙語翻譯",
         "pt-BR": "巴西葡萄牙語翻譯",
         "zh-Hans": "簡體中文翻譯",
         "zh-Hant": "繁體中文翻譯",
@@ -296,7 +310,8 @@
     }
   },
   "general": {
-    "loading": "載入中…"
+    "loading": "載入中…",
+    "copyLink": "複製連結"
   },
   "games": {
     "label": "遊戲世代",

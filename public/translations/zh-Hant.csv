@@ -6,16 +6,16 @@ navigation.pokedex,Pokédex,寶可夢圖鑑
 navigation.more,More,更多
 offense.chooseTypes,Choose types,選擇屬性
 offense.dealsXTo,Deals {{ x }} to,對 {{ x }} 造成傷害
-offense.abilities.choose,Choose abilities,
-offense.specialMoves.choose,Choose special moves,
-offense.specialMoves.names.freeze-dry,Freeze-Dry,
-offense.specialMoves.names.thousand_arrows,Thousand Arrows,
+offense.abilities.choose,Choose abilities,選擇特性
+offense.specialMoves.choose,Choose special moves,選擇特別招式
+offense.specialMoves.names.freeze-dry,Freeze-Dry,冷凍乾燥
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,千箭齊發
 offense.coverage.heading,Pokédex coverage,寶可夢圖鑑涵蓋範圍
 offense.coverage.edit,Edit list,編輯列表
 offense.coverage.weakness,Weak,弱點
 offense.coverage.normal,Normal,正常
 offense.coverage.resistance,Resist,抵抗
-offense.teraPokemon,Tera Pokémon,
+offense.teraPokemon,Tera Pokémon,太晶宝可梦
 offense.coverageList.empty,No Pokémon found or no types selected,未找到寶可夢或未選擇屬性
 offense.coverageList.weakness.heading,Weakness coverage list,弱點涵蓋列表
 offense.coverageList.normal.heading,Normal effectiveness coverage list,正常效果涵蓋列表
@@ -46,10 +46,10 @@ defense.chooseSecond,Choose second type,選擇第二個屬性
 defense.chooseThird,Choose third type,選擇第三個屬性
 defense.takesXFrom,Takes {{ x }} from,從中取 {{ x }}
 defense.chooseAbility,Choose ability,選擇技能
-defense.chooseTeraType,Choose tera type,
+defense.chooseTeraType,Choose tera type,選擇太晶屬性
 defense.abilityNames.none,None,無
-defense.abilityNames.tinted_lens,Tinted Lens,
-defense.abilityNames.scrappy,Scrappy,
+defense.abilityNames.tinted_lens,Tinted Lens,有色眼鏡
+defense.abilityNames.scrappy,Scrappy,膽量
 defense.abilityNames.tera_shell,Tera Shell,太晶甲殼
 defense.abilityNames.filter,Filter,過濾
 defense.abilityNames.wonder_guard,Wonder Guard,奇跡防守
@@ -132,8 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,設置
 more.settings.language.label,Language,語言
 more.settings.language.default,Auto detect language,自動檢測語言
-more.settings.language.official,Official languages,
-more.settings.language.unofficial,Unofficial languages,
+more.settings.language.official,Official languages,官方語言
+more.settings.language.unofficial,Unofficial languages,非官方語言
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",語言支持不完整。請給我發電子郵件，我將支付您翻譯的費用。
 more.settings.theme.label,Theme,主題
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“系統默認”將根據您的操作系統設置自動更改。
@@ -157,7 +157,7 @@ more.thanks.heading,Special thanks,特別感謝
 more.thanks.sections.da,Danish translation,丹麥翻譯
 more.thanks.sections.ru,Russian translation,俄羅斯翻譯
 more.thanks.sections.kk,Kazakh translation,哈薩克翻譯
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
+more.thanks.sections.pt-PT,Portuguese (Portugal) translation,葡萄牙葡萄牙語翻譯
 more.thanks.sections.pt-BR,Portuguese (Brazil) translation,巴西葡萄牙語翻譯
 more.thanks.sections.zh-Hans,Simplified Chinese translation,簡體中文翻譯
 more.thanks.sections.zh-Hant,Traditional Chinese translation,繁體中文翻譯
@@ -198,7 +198,7 @@ banners.updateReady.description,An update is available,有更新可用
 banners.updateReady.whatsNew,What’s new,有什麼新功能
 banners.updateReady.update,Update,更新
 general.loading,Loading…,載入中…
-general.copyLink,Copy link,
+general.copyLink,Copy link,複製連結
 games.label,Game generation,遊戲世代
 games.help,Use type effectiveness from different game generations.,使用不同遊戲世代的屬性效果。
 games.byID.gen1,Generation 1,第一世代
