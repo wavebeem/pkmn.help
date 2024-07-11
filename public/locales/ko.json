@@ -9,6 +9,12 @@
   "offense": {
     "chooseTypes": "타입 선택",
     "dealsXTo": "{{x}} 데미지",
+    "specialMoves": {
+      "names": {
+        "freeze-dry": "프리즈드라이",
+        "thousand_arrows": "사우전드애로"
+      }
+    },
     "coverage": {
       "heading": "포켓몬 도감과 비교하기",
       "edit": "포켓몬 목록 편집",
@@ -73,7 +79,10 @@
     "chooseAbility": "특성을 선택하세요",
     "abilityNames": {
       "none": "없음",
+      "tinted_lens": "색안경",
+      "scrappy": "배짱",
       "tera_shell": "테라셸",
+      "filter": "필터",
       "wonder_guard": "불가사의부적",
       "delta_stream": "델타스트림",
       "fluffy": "복슬복슬",

@@ -9,6 +9,12 @@
   "offense": {
     "chooseTypes": "Elige los tipos",
     "dealsXTo": "Inflige {{ x }} a",
+    "specialMoves": {
+      "names": {
+        "freeze-dry": "Liofilización",
+        "thousand_arrows": "Mil Flechas"
+      }
+    },
     "coverage": {
       "heading": "Cobertura Pokédex",
       "edit": "Modificar lista",
@@ -75,6 +81,8 @@
     "chooseTeraType": "Elige teratipo",
     "abilityNames": {
       "none": "Ninguna",
+      "tinted_lens": "Cromolente",
+      "scrappy": "Intrépido",
       "tera_shell": "Teracaparazón",
       "filter": "Filtro",
       "wonder_guard": "Superguarda",

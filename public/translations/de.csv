@@ -8,8 +8,8 @@ offense.chooseTypes,Choose types,Typen auswählen
 offense.dealsXTo,Deals {{ x }} to,Fügt {{ x }} Schaden zu
 offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
-offense.specialMoves.names.freeze-dry,Freeze-Dry,
-offense.specialMoves.names.thousand_arrows,Thousand Arrows,
+offense.specialMoves.names.freeze-dry,Freeze-Dry,Gefriertrockner
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,Tausend Pfeile
 offense.coverage.heading,Pokédex coverage,Pokédex Abdeckung
 offense.coverage.edit,Edit list,Editiere Liste
 offense.coverage.weakness,Weak,Sehr effektiv
@@ -48,8 +48,8 @@ defense.takesXFrom,Takes {{ x }} from,Nimmt {{ x }} Schaden von
 defense.chooseAbility,Choose ability,Fähigkeit auswählen
 defense.chooseTeraType,Choose tera type,Tera-Typ auswählen
 defense.abilityNames.none,None,Keine Fähigkeit
-defense.abilityNames.tinted_lens,Tinted Lens,
-defense.abilityNames.scrappy,Scrappy,
+defense.abilityNames.tinted_lens,Tinted Lens,Aufwertung
+defense.abilityNames.scrappy,Scrappy,Rauflust
 defense.abilityNames.tera_shell,Tera Shell,Tera-Panzer
 defense.abilityNames.filter,Filter,Filter
 defense.abilityNames.wonder_guard,Wonder Guard,Wunderwache

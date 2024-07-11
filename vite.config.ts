@@ -75,6 +75,10 @@ for (const lang of langs) {
 const completions: Record<string, number> = {};
 for (const lang of langs) {
   completions[lang] = pathSets[lang].size / pathSets.en.size;
+  // manually round down for not-yet-complete translations
+  if (pathSets[lang].size !== pathSets.en.size && completions[lang] >= 1) {
+    completions[lang] = 0.99
+  }
 }
 
 function* walk({

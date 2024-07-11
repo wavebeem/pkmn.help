@@ -9,6 +9,12 @@
   "offense": {
     "chooseTypes": "Scegli i tipi",
     "dealsXTo": "Infligge {{ x }} a",
+    "specialMoves": {
+      "names": {
+        "freeze-dry": "Liofilizzazione",
+        "thousand_arrows": "Mille Frecce"
+      }
+    },
     "coverage": {
       "heading": "Copertura debolezze",
       "edit": "Modifica elenco",
@@ -75,6 +81,8 @@
     "chooseTeraType": "Scegli il tipo di tera",
     "abilityNames": {
       "none": "Nessuna",
+      "tinted_lens": "Lentifumé",
+      "scrappy": "Nervisaldi",
       "tera_shell": "Teraguscio",
       "filter": "Filtro",
       "wonder_guard": "Magidifesa",
