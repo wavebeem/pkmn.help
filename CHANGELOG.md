@@ -1,5 +1,15 @@
 # Changelog
 
+## 2024-07-11
+
+- Updated translations for Freeze-Dry, Thousand Arrows, Tinted Lens and Scrappy in mutiple languages
+
+- Updated Japanese translation
+
+- Updated Korean translation
+
+- Prevent incomplete locales from being rounded up to 100% completion
+
 ## 2024-07-09
 
 - Updated Simplified Chinese translation
