@@ -238,7 +238,7 @@ export function matchupFor({
     if (
       offenseAbilityName === "scrappy" &&
       t === Type.ghost &&
-      (offenseType === Type.normal || Type.fighting)
+      (offenseType === Type.normal || offenseType === Type.fighting)
     ) {
       x = 1;
     }
