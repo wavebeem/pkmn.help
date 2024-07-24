@@ -1,8 +1,16 @@
 # Changelog
 
+## 2024-07-23
+
+- Fixed an issue where _Scrappy_ calculated damage incorrectly
+
+- Removed _Scrappy_ and _Tinted Lens_ from the defense screen since they aren't
+  useful there
+
 ## 2024-07-11
 
-- Updated translations for Freeze-Dry, Thousand Arrows, Tinted Lens and Scrappy in mutiple languages
+- Updated translations for Freeze-Dry, Thousand Arrows, Tinted Lens and Scrappy
+  in mutiple languages
 
 - Updated Japanese translation
 

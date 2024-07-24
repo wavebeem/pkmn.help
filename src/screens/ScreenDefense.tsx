@@ -91,8 +91,10 @@ export function ScreenDefense(): ReactNode {
 
   // Sort names alphabetically and remove "none" since we put that first
   // manually and add a divider after it
-  const sortedAbilityNames = Object.keys(abilities)
-    .filter((name) => name !== "none")
+  const sortedAbilityNames = strongKeys(abilities)
+    .filter((name) => {
+      return !(name === "none" || name === "scrappy" || name === "tinted_lens");
+    })
     .sort((a, b) => {
       const ta = t(`defense.abilityNames.${a}`);
       const tb = t(`defense.abilityNames.${b}`);
@@ -210,4 +212,10 @@ export function ScreenDefense(): ReactNode {
       </Flex>
     </main>
   );
+}
+
+function strongKeys<TObject extends object>(
+  object: TObject
+): (keyof TObject)[] {
+  return Object.keys(object) as any;
 }
