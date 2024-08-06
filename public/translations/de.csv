@@ -6,8 +6,8 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mehr
 offense.chooseTypes,Choose types,Typen auswählen
 offense.dealsXTo,Deals {{ x }} to,Fügt {{ x }} Schaden zu
-offense.abilities.choose,Choose abilities,
-offense.specialMoves.choose,Choose special moves,
+offense.abilities.choose,Choose abilities,Fähigkeiten auswählen
+offense.specialMoves.choose,Choose special moves,Spezialattacke auswählen
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Gefriertrockner
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,Tausend Pfeile
 offense.coverage.heading,Pokédex coverage,Pokédex Abdeckung

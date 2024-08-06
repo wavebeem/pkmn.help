@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-08-06
+
+- Updated German translation
+
 ## 2024-07-23
 
 - Fixed an issue where _Scrappy_ calculated damage incorrectly

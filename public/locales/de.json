@@ -9,7 +9,11 @@
   "offense": {
     "chooseTypes": "Typen auswählen",
     "dealsXTo": "Fügt {{ x }} Schaden zu",
+    "abilities": {
+      "choose": "Fähigkeiten auswählen"
+    },
     "specialMoves": {
+      "choose": "Spezialattacke auswählen",
       "names": {
         "freeze-dry": "Gefriertrockner",
         "thousand_arrows": "Tausend Pfeile"
