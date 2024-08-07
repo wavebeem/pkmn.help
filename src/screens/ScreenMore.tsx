@@ -462,6 +462,7 @@ export function ScreenMore(): ReactNode {
                   {t("more.thanks.sections.de")}
                 </FancyText>
                 <ul className="list-simple">
+                  <li>Enri</li>
                   <li>SpeciesSaladMallory</li>
                   <li>Cozzzy</li>
                   <li>Luzifer Senpai</li>
