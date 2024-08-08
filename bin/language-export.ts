@@ -38,11 +38,11 @@ async function main() {
   if (!lang) {
     throw new Error(`no such language ${lang}`);
   }
-  const english = readJSON("../public/locales/en.json");
-  const other = readJSON(`../public/locales/${lang}.json`) || {};
+  const english = readJSON("public/locales/en.json");
+  const other = readJSON(`public/locales/${lang}.json`) || {};
   const csvData = [["Key", "en", lang], ...walk({ english, other })];
   const csv = Papa.unparse(csvData, { header: true });
-  fs.writeFileSync(`../${lang}.csv`, csv, "utf-8");
+  fs.writeFileSync(`${lang}.csv`, csv, "utf-8");
 }
 
 main().catch((err) => {
