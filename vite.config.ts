@@ -77,8 +77,18 @@ for (const lang of langs) {
   completions[lang] = pathSets[lang].size / pathSets.en.size;
   // manually round down for not-yet-complete translations
   if (pathSets[lang].size !== pathSets.en.size && completions[lang] >= 1) {
-    completions[lang] = 0.99
+    console.error(lang, pathSets[lang].size, "vs", "en", pathSets.en.size);
+    completions[lang] = 0.99;
   }
+  // Print missing translations
+
+  // for (const path of pathSets.en) {
+  //   for (const lang of langs) {
+  //     if (!pathSets[lang].has(path)) {
+  //       console.warn("Missing translation", lang, path);
+  //     }
+  //   }
+  // }
 }
 
 function* walk({

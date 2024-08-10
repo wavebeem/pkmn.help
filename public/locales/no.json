@@ -1,5 +1,5 @@
 {
-  "title": "Type kalkulator",
+  "title": "Pokémon Type Kalkulator",
   "navigation": {
     "offense": "Angrep",
     "defense": "Forsvar",
@@ -260,6 +260,7 @@
         "pt-BR": "Portugisisk (Brasil) oversettelse",
         "zh-Hans": "Forenklet kinesisk oversettelse",
         "zh-Hant": "Tradisjonell kinesisk oversettelse",
+        "no": "Norsk oversettelse",
         "ro": "Rumensk oversettelse",
         "pl": "Polsk oversettelse",
         "fr": "Fransk oversettelse",

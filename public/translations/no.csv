@@ -1,5 +1,5 @@
 Key,en,no
-title,Pokémon Type Calculator,Type kalkulator
+title,Pokémon Type Calculator,Pokémon Type Kalkulator
 navigation.offense,Offense,Angrep
 navigation.defense,Defense,Forsvar
 navigation.pokedex,Pokédex,Pokédexen
@@ -161,6 +161,7 @@ more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Portugisisk (Portug
 more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Portugisisk (Brasil) oversettelse
 more.thanks.sections.zh-Hans,Simplified Chinese translation,Forenklet kinesisk oversettelse
 more.thanks.sections.zh-Hant,Traditional Chinese translation,Tradisjonell kinesisk oversettelse
+more.thanks.sections.no,Norwegian translation,Norsk oversettelse
 more.thanks.sections.ro,Romanian translation,Rumensk oversettelse
 more.thanks.sections.pl,Polish translation,Polsk oversettelse
 more.thanks.sections.fr,French translation,Fransk oversettelse

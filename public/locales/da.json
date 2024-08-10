@@ -18,12 +18,10 @@
     "coverageList": {
       "empty": "Ingen Pokèmon blev fundet eller ingen typer valgt",
       "weakness": {
-        "heading": "Liste der dækker over svagheder",
-        "description": "Disse Pokémon er svage overfor mindst en af de valgte typer"
+        "heading": "Liste der dækker over svagheder"
       },
       "resistance": {
-        "heading": "Liste der dækker over resistens",
-        "description": "Disse Pokémon er modstandsdygtige imod alle valgte typer"
+        "heading": "Liste der dækker over resistens"
       }
     }
   },

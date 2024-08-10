@@ -20,16 +20,13 @@
     "coverageList": {
       "empty": "Geen Pokémon gevonden of geen types geselecteerd",
       "weakness": {
-        "heading": "Zwakte Overschaduwingslijst",
-        "description": "Deze Pokémon zijn zwak tegen ten minste één van de geselecteerde types."
+        "heading": "Zwakte Overschaduwingslijst"
       },
       "normal": {
-        "heading": "Normale Overschaduwingslijst",
-        "description": "Deze Pokémon zijn niet in de zwakheid- of weerstandlijsten voor de geselecteerde types."
+        "heading": "Normale Overschaduwingslijst"
       },
       "resistance": {
-        "heading": "Weerstandige Overschaduwingslijst",
-        "description": "Deze Pokémon hebben een weerstand tegen alle geselecteerde types."
+        "heading": "Weerstandige Overschaduwingslijst"
       }
     }
   },

@@ -20,16 +20,13 @@
     "coverageList": {
       "empty": "Nenhum Pokémon encontrado ou nenhum tipo selecionado",
       "weakness": {
-        "heading": "Lista de Pokémon fracos",
-        "description": "Estes Pokémon são fracos contra, pelo menos, um dos tipos selecionados"
+        "heading": "Lista de Pokémon fracos"
       },
       "normal": {
-        "heading": "Lista de Pokémon neutros",
-        "description": "Estes Pokémon não são fracos nem resistentes contra os tipos selecionados"
+        "heading": "Lista de Pokémon neutros"
       },
       "resistance": {
-        "heading": "Lista de Pokémon resistentes",
-        "description": "Estes Pokémon são resistentes contra todos os tipos selecionados"
+        "heading": "Lista de Pokémon resistentes"
       }
     }
   },

@@ -30,16 +30,13 @@
     "coverageList": {
       "empty": "Keine Pokémon gefunden oder keine Typen ausgewählt",
       "weakness": {
-        "heading": "Schwächen-Abdeckungsliste",
-        "description": "Diese Pokémon sind schwach gegen mindestens einen dieser ausgewählten Typen."
+        "heading": "Schwächen-Abdeckungsliste"
       },
       "normal": {
-        "heading": "Normal effektiv Abdeckungsliste",
-        "description": "Diese Pokémon sind nicht in der Schwäche oder- Resistenzliste für diese ausgewählten Typen."
+        "heading": "Normal effektiv Abdeckungsliste"
       },
       "resistance": {
-        "heading": "Resistenzen-Abdeckungsliste",
-        "description": "Diese Pokémon sind resistent gegen alle ausgewählten Typen."
+        "heading": "Resistenzen-Abdeckungsliste"
       }
     }
   },

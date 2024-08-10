@@ -19,16 +19,13 @@
     "coverageList": {
       "empty": "Nie znaleziono Pokémona lub nie wybrano żadnego typu",
       "weakness": {
-        "heading": "Lista pokrycia słabości",
-        "description": "Te Pokémony są słabe do co najmniej jednego z wybranych typów."
+        "heading": "Lista pokrycia słabości"
       },
       "normal": {
-        "heading": "Lista Pokrycia Normalnej Skuteczności",
-        "description": "Te Pokémony nie znajdują się na listach słabości ani odporności dla wybranych typów."
+        "heading": "Lista Pokrycia Normalnej Skuteczności"
       },
       "resistance": {
-        "heading": "Lista Pokrycia Oporów",
-        "description": "Te Pokémony są odporne na wszystkie wybrane typy."
+        "heading": "Lista Pokrycia Oporów"
       }
     }
   },

@@ -26,16 +26,13 @@
     "coverageList": {
       "empty": "Nessun Pokémon trovato o nessun tipo selezionato",
       "weakness": {
-        "heading": "Elenco della copertura debolezze",
-        "description": "Questi Pokémon sono deboli ad almeno uno dei tipi selezionati."
+        "heading": "Elenco della copertura debolezze"
       },
       "normal": {
-        "heading": "Elenco della copertura efficacia normale",
-        "description": "Questi Pokémon non sono né nella lista delle debolezze né nella lista delle resistenze per i tipi selezionati."
+        "heading": "Elenco della copertura efficacia normale"
       },
       "resistance": {
-        "heading": "Elenco della copertura resistenze",
-        "description": "Questi Pokémon resistono tutti i tipi selezionati."
+        "heading": "Elenco della copertura resistenze"
       }
     }
   },
