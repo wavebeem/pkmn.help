@@ -433,6 +433,14 @@ export function ScreenMore(): ReactNode {
               </Flex>
               <Flex direction="column" gap="large">
                 <FancyText tag="h3" fontSize="large">
+                  {t("more.thanks.sections.no")}
+                </FancyText>
+                <ul className="list-simple">
+                  <li>Sarah Aa</li>
+                </ul>
+              </Flex>
+              <Flex direction="column" gap="large">
+                <FancyText tag="h3" fontSize="large">
                   {t("more.thanks.sections.ro")}
                 </FancyText>
                 <ul className="list-simple">

@@ -28,7 +28,7 @@ function set(object: Record<string, any>, keys: string[], value: any): void {
 }
 
 async function main() {
-  const [, , lang] = process.argv;
+  const [lang] = process.argv.slice(2);
   if (!lang) {
     throw new Error(`no such language ${lang}`);
   }

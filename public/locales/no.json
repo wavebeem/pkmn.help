@@ -1,0 +1,326 @@
+{
+  "title": "Pokémon Type Kalkulator",
+  "navigation": {
+    "offense": "Angrep",
+    "defense": "Forsvar",
+    "pokedex": "Pokédexen",
+    "more": "Mer"
+  },
+  "offense": {
+    "chooseTypes": "Velg typer",
+    "dealsXTo": "Gjør {{ x }} til",
+    "abilities": {
+      "choose": "Velg egenskaper"
+    },
+    "specialMoves": {
+      "choose": "Velg spesial angrep",
+      "names": {
+        "freeze-dry": "Frys-tørk",
+        "thousand_arrows": "Tusen piler"
+      }
+    },
+    "coverage": {
+      "heading": "Pokédex",
+      "edit": "Rediger liste",
+      "weakness": "Svak",
+      "normal": "Normal",
+      "resistance": "Motstå"
+    },
+    "teraPokemon": "Tera Pokémon",
+    "coverageList": {
+      "empty": "Ingen Pokémon funnet eller ingen typer valgt",
+      "weakness": {
+        "heading": "Svakhet analyse liste"
+      },
+      "normal": {
+        "heading": "Normal effektivitets analyse liste"
+      },
+      "resistance": {
+        "heading": "Motstendelser analyse liste"
+      }
+    }
+  },
+  "coverage": {
+    "heading": "Pokédex analyse",
+    "paragraph1": "Importer/eksporter egene Pokédex CSV filer for å se analyser av forskjellige Pokémon. Skap en tilpasset CSV fil med bare OU nivå Pokémon, eller lag dine egen Pokémon fra bunnen av.",
+    "paragraph2": "CSV data er lastet ved kolonneoverskrift navn, ikke kolonne rekkefølge, så du kan legge til eller endre rekkefølgen til kolonner hvis du har lyst til. (f.eks. legge til et \"nivå\" kolonne, eller en \"notater\" kolonne).",
+    "paragraph3": "CSV filer kan bli redigert med Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notatbok, og mer.",
+    "csvHeaders": {
+      "number": "Nummer",
+      "name": "Navn",
+      "type1": "Type 1",
+      "type2": "Type 2",
+      "type3": "Type 3"
+    },
+    "export": {
+      "button": "Eksporter",
+      "description": "Eksporter standard Pokédexen til en CSV fil"
+    },
+    "import": {
+      "button": "Importer",
+      "description": "Importer en redigert Pokédex CSV fil"
+    },
+    "reset": {
+      "button": "Start på nytt",
+      "description": "Tilbakestill til standard Pokédexen"
+    },
+    "filename": "pkmn.hjelp type analyse.csv",
+    "status": {
+      "imported": "Importerte {{ n }} Pokémon former fra \"{{ fil }}\"",
+      "exported": "Eksporterte standard Pokémon former",
+      "reset": "Lastet inn standard Pokémon former",
+      "errored": "Error med å laste CSV. Ikke bytt overskrift navn."
+    },
+    "back": "Tilbake til angrep"
+  },
+  "defense": {
+    "chooseFirst": "Velg første type",
+    "chooseSecond": "Velg andre type",
+    "chooseThird": "Velg tredje type",
+    "takesXFrom": "Tar {{ x }} fra",
+    "chooseAbility": "Velg evne",
+    "chooseTeraType": "Velg tera type",
+    "abilityNames": {
+      "none": "Ingen",
+      "tinted_lens": "Tonet linse",
+      "scrappy": "Skitten",
+      "tera_shell": "Tera Skall",
+      "filter": "Filter",
+      "wonder_guard": "Vidunderskjold",
+      "delta_stream": "Deltastrøm",
+      "fluffy": "Fluffy",
+      "purifying_salt": "Rensende salt",
+      "heatproof": "Varmebestandig",
+      "water_bubble": "Vannboble",
+      "thick_fat": "Tykt fett",
+      "earth_eater": "Jordeter",
+      "levitate": "Sveve",
+      "flash_fire": "Blits brann",
+      "well_baked_body": "Godt bakt kropp",
+      "dry_skin": "Tørr hud",
+      "storm_drain": "Stormavløp",
+      "water_absorb": "Vann absorbering",
+      "sap_sipper": "Sevjedrikker",
+      "lightning_rod": "Lynavleder",
+      "motor_drive": "Motordrift",
+      "volt_absorb": "Voltabsorberende"
+    },
+    "mode": {
+      "heading": "Velg modus",
+      "solo": "Solo",
+      "team": "Lag"
+    },
+    "team": {
+      "tableHeading": "Matchup teller",
+      "heading": "Rediger Pokémon lag",
+      "add": "Legg til Pokémon",
+      "empty": "Ingen Pokémon valgt",
+      "displayType": "Tabellformat",
+      "weak": "Svak",
+      "resist": "Motstå",
+      "simple": "Enkel",
+      "complex": "Kompleks",
+      "type": "Type",
+      "edit": "Rediger",
+      "remove": "Fjern"
+    }
+  },
+  "pokedex": {
+    "search": {
+      "description": "Søk med navn, nummer, eller typer",
+      "help": "Hjelp",
+      "helpLong": "Hjelp, søk i Pokédexen",
+      "notFound": "Ingen Pokémon funnet"
+    },
+    "offense": {
+      "text": "Angrep"
+    },
+    "defense": {
+      "text": "Forsvar"
+    },
+    "cry": {
+      "text": "Gråt"
+    },
+    "shiny": {
+      "text": "Skinnende"
+    },
+    "pagination": {
+      "next": "Neste",
+      "nextLong": "Neste",
+      "previous": "For.",
+      "previousLong": "Forrige",
+      "firstLong": "Første",
+      "lastLong": "Siste"
+    },
+    "stats": {
+      "hp": "HP",
+      "hpLong": "Helse Poeng",
+      "attack": "Angrep",
+      "attackLong": "Angrep",
+      "defense": "Forsvar",
+      "defenseLong": "Forsvar",
+      "specialAttack": "Sp. Angrep",
+      "specialAttackLong": "Spesial Angrep",
+      "specialDefense": "Sp. Forsvar",
+      "specialDefenseLong": "Spesial forsvar",
+      "speed": "Hastighet",
+      "speedLong": "Hastighet",
+      "total": "Totalt",
+      "totalLong": "Totalt"
+    }
+  },
+  "pokedexHelp": {
+    "searchByName": {
+      "heading": "Søk etter navn",
+      "description": "Du kan søke etter en Pokémon etter navn. Hvis du bare husker litt av Pokémonens navn, kan den fortsatt sannsynligvis finne den for deg. Den kan foreløpig ikke takle skrivefeil enda."
+    },
+    "searchByNumber": {
+      "heading": "Søk etter nummer",
+      "description": "Søk etter nasjonal Pokédex nummer. Hvis du vil finne Bulbasaur, bare skriv 1, ikke #001."
+    },
+    "searchByType": {
+      "heading": "Søk etter type",
+      "description": "Her er noen eksempler på hvordan man søker etter type."
+    },
+    "searchExamples": {
+      "type": {
+        "query": "flamme",
+        "description": "Søk etter Pokémon som har flamme som en av sine typer i en hvilken som helst form (f.eks. Charmander, Charizard, Rotom)."
+      },
+      "doubleType": {
+        "query": "vann flygende",
+        "description": "Søk for Pokémon som bare er vann/flygende (f.eks. Gyarados) eller flygende/vann (f.eks. Cramorant)."
+      },
+      "singleType": {
+        "query": "grass ingen",
+        "description": "Søk for Pokémon som bare er grass type, ingen andre type (f.eks. Tangela, Chikorita, Lilligant)."
+      }
+    },
+    "back": "Tilbake til Pokédexen"
+  },
+  "more": {
+    "contact": {
+      "heading": "Ta kontakt med meg",
+      "intro": "Hei, jeg er <homepage>Sage Fennel</homepage> (de/dem), og jeg har laget Pokémon Type Kalkulator (pkmn.help).",
+      "email": "Plis send meg eposter om dine tanker og takker til <email>pkmn@wavebeem.com</email>."
+    },
+    "settings": {
+      "heading": "Instillinger",
+      "language": {
+        "label": "Språk",
+        "default": "Automatisk oppdag språk",
+        "official": "Offisielle språk",
+        "unofficial": "Uofisielle språk",
+        "helpText": "Språkstøtte er ikke ferdig. Plis send meg en epost; jeg vil betale deg for å oversette."
+      },
+      "theme": {
+        "label": "Tema",
+        "help": "\"Systemstandard\" vil endres automatisk avhengig av operativsysteminnstillingene.",
+        "values": {
+          "auto": "Systemstandard",
+          "light": "Lyst",
+          "dark": "Mørkt"
+        }
+      },
+      "typeCount": {
+        "label": "Mengde typer",
+        "help": "Pokémon kan kort ha tre typer samtidig hvis de treffes med Skogens Forbannelse eller Knask-eller-Knep. Det tredje typefeltet er skjult som standard siden den sjelden brukes.",
+        "values": {
+          "2": "To typer (2)",
+          "3": "Tre typer (2)"
+        }
+      }
+    },
+    "changes": {
+      "heading": "Hva er nytt",
+      "description": "Se hva som er nytt i <changelog>endreloggen</changelog>."
+    },
+    "help": {
+      "heading": "Hjelp",
+      "serviceWorker": {
+        "description": "Denne knappen kan hjelpe med å fikse noen problemer i appen.",
+        "button": "Tilbakestill"
+      }
+    },
+    "privacy": {
+      "heading": "Personvernerklæring",
+      "description": "Jeg vil aldri kjøre annonser eller stjele din personlige data. Jeg bruker <plausible>Plausible Analytics</plausible>, som er selvfinansiert, uavhengig, vert i EU, og lagrer ingen informasjonskapsler på datamaskinen din."
+    },
+    "givingBack": {
+      "heading": "Viser takknemlighet",
+      "description": "Jeg har brukt utallige timer på å forbedre denne siden. Hvis du setter pris på det jeg har laget, kan du vurdere å donere til veldedige organisasjoner som støtter raserettferdighet og transpersoners rettigheter."
+    },
+    "thanks": {
+      "heading": "Spesiell takk til",
+      "sections": {
+        "da": "Dansk oversettelse",
+        "ru": "Russisk oversettelse",
+        "kk": "Kasakhisk oversettelse",
+        "pt-PT": "Portugisisk (Portugal) oversettelse",
+        "pt-BR": "Portugisisk (Brasil) oversettelse",
+        "zh-Hans": "Forenklet kinesisk oversettelse",
+        "zh-Hant": "Tradisjonell kinesisk oversettelse",
+        "no": "Norsk oversettelse",
+        "ro": "Rumensk oversettelse",
+        "pl": "Polsk oversettelse",
+        "fr": "Fransk oversettelse",
+        "de": "Tysk oversettelse",
+        "it": "Italiensk oversettelse",
+        "ko": "Koreansk oversettelse",
+        "ja": "Japansk oversettelse",
+        "nl": "Nederlandsk oversettelse",
+        "testing": "Tester",
+        "other": "Flere anonyme Pokémon fans"
+      }
+    },
+    "openSource": {
+      "heading": "Åpen kildekode",
+      "description": "Kildekode er tilgjengelig på <github>GitHub</github>."
+    },
+    "legalInfo": {
+      "heading": "Juridisk informasjon"
+    }
+  },
+  "types": {
+    "normal": "Normal",
+    "fighting": "Slåssing",
+    "flying": "Flyvende",
+    "poison": "Gift",
+    "ground": "Jord",
+    "rock": "Stein",
+    "bug": "Insekt",
+    "ghost": "Spøkelse",
+    "steel": "Stål",
+    "fire": "Flamme",
+    "water": "Vann",
+    "grass": "Grass",
+    "electric": "Elektrisk",
+    "psychic": "Psykisk",
+    "ice": "Is",
+    "dragon": "Drage",
+    "dark": "Mørk",
+    "fairy": "Fe",
+    "stellar": "Stjerne",
+    "none": "Ingen"
+  },
+  "banners": {
+    "updateReady": {
+      "description": "En oppdatering er tilgjengelig",
+      "whatsNew": "Hva er nytt",
+      "update": "Oppdatering"
+    }
+  },
+  "general": {
+    "loading": "Laster inn...",
+    "copyLink": "Kopier lenke"
+  },
+  "games": {
+    "label": "Spillgenerasjon",
+    "help": "Bruk type effektivitet fra forskjellige spillgenerasjoner.",
+    "byID": {
+      "gen1": "Generasjon 1",
+      "gen2": "Generasjon 2-5",
+      "default": "Standard (generasjon 6+)"
+    }
+  }
+}
