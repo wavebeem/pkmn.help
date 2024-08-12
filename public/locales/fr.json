@@ -244,7 +244,7 @@
     },
     "privacy": {
       "heading": "Confidentialité",
-      "description": "Je ne diffuserais jamais de publicité ni ne volerais vos données personnelles J'utilise <plausible>Plausible Analytics</plausible>, qui est autofinancé, indépendant, hébergé dans l'Union Européenne et ne stocke aucun cookie sur votre ordinateur"
+      "description": "Je ne diffuserais jamais de publicité ni ne volerais vos données personnelles. J'utilise <plausible>Plausible Analytics</plausible>, qui est autofinancé, indépendant, hébergé dans l'Union Européenne et ne stocke aucun cookie sur votre ordinateur"
     },
     "givingBack": {
       "heading": "Me remercier",
@@ -260,6 +260,7 @@
         "pt-BR": "Traduction en Portugais Brésilien",
         "zh-Hans": "Traduction en Chinois Simplifié",
         "zh-Hant": "Traduction en Chinois Traditionnel",
+        "no": "Traduction en Norvègien",
         "ro": "Traduction en Roumain",
         "pl": "Traduction en Polonais",
         "fr": "Traduction en Français",
@@ -315,7 +316,7 @@
   },
   "games": {
     "label": "Génération du jeu",
-    "help": "Utiliser les efficacités de types des différentes générations de jeux.",
+    "help": "Utiliser les efficacités de types de différentes générations de jeux.",
     "byID": {
       "gen1": "Génération 1",
       "gen2": "Génération 2-5",

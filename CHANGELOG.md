@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-08-12
+
+- Updated French translation
+
 ## 2024-08-10
 
 - Added Norwegian translation
