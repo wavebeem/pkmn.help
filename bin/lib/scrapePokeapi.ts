@@ -1,5 +1,4 @@
 /* eslint-disable no-console */
-import fetch from "node-fetch";
 import path from "path";
 import { URL } from "url";
 import { saveJSON } from "../util.js";

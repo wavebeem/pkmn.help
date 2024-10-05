@@ -1,17 +1,19 @@
 /* eslint-disable no-console */
 import fs from "fs";
-import fetch from "node-fetch";
 import path from "path";
 import { readJSON, saveJSON } from "../util.js";
 import { PokemonSimple } from "./scrapePokeapi.js";
 
 const SRC = "data/pokemon.json";
 const CRY_DEST = "public/cry";
-const IMG_DEST = "public/img/512";
+const IMG_DEST = "pokedex-img";
 const DATA_DEST = "public/data-pkmn.json";
 
 async function fetchBytes(url: string): Promise<Uint8Array> {
   const resp = await fetch(url);
+  if (!resp.ok) {
+    throw new Error(`${resp.status} ${resp.statusText}`);
+  }
   const buff = await resp.arrayBuffer();
   return new Uint8Array(buff);
 }

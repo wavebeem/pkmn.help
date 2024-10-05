@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-10-05
+
+- Fixed Paras sprite (shiny and regular were swapped)
+
 ## 2024-08-12
 
 - Updated French translation
