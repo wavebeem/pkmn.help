@@ -9,7 +9,11 @@
   "offense": {
     "chooseTypes": "Elige los tipos",
     "dealsXTo": "Inflige {{ x }} a",
+    "abilities": {
+      "choose": "Escoger habilidades"
+    },
     "specialMoves": {
+      "choose": "Escoger movimientos especiales",
       "names": {
         "freeze-dry": "Liofilización",
         "thousand_arrows": "Mil Flechas"
@@ -42,11 +46,11 @@
     "paragraph2": "Los datos del archivo CSV se cargan por el nombre de la cabecera de la columna, no por el orden de la misma, por lo que puedes añadir o reordenar las columnas si lo deseas (ej. Añade una columna de “tier”, o una de “notas”).",
     "paragraph3": "Los archivos CSV pueden ser modificados con Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, entre otros.",
     "csvHeaders": {
-      "number": "Number",
-      "name": "Name",
-      "type1": "Type 1",
-      "type2": "Type 2",
-      "type3": "Type 3"
+      "number": "Número",
+      "name": "Nombre",
+      "type1": "Tipo 1",
+      "type2": "Tipo 2",
+      "type3": "Tipo 3"
     },
     "export": {
       "button": "Exportar",
@@ -74,7 +78,7 @@
     "chooseSecond": "Elige el tipo secundario",
     "chooseThird": "Elige el tipo terciario",
     "takesXFrom": "Sufre {{ x }} por",
-    "chooseAbility": "Elige Habilidad",
+    "chooseAbility": "Elige habilidad",
     "chooseTeraType": "Elige teratipo",
     "abilityNames": {
       "none": "Ninguna",
@@ -168,7 +172,7 @@
   "pokedexHelp": {
     "searchByName": {
       "heading": "Busca por nombre",
-      "description": "Puedes buscar un Pokémon por nombre. Si solo recuerdas parte del nombre del Pokémon, probablemente aún pueda encontrarlo. Sin embargo, aún no puede lidiar con errores tipográficos."
+      "description": "Puede buscar un Pokémon por nombre. Si solo recuerdas parte del nombre del Pokémon, probablemente aún pueda encontrarlo. Sin embargo, aún no puede lidiar con errores tipográficos."
     },
     "searchByNumber": {
       "heading": "Busca por número",
@@ -181,7 +185,7 @@
     "searchExamples": {
       "type": {
         "query": "fuego",
-        "description": "Busca Pokémon que tengan fuego como alguno de sus tipos en cualquiera de sus formas (ejs. Charmander, Charizard, Rotom)."
+        "description": "Busca Pokémon que tengan fuego como alguno de sus tipos en cualquiera de sus formas (ej. Charmander, Charizard, Rotom)."
       },
       "doubleType": {
         "query": "agua volador",
@@ -219,11 +223,11 @@
         }
       },
       "typeCount": {
-        "label": "Número de tipo",
+        "label": "Número de tipos",
         "help": "Los Pokémon pueden tener brevemente tres tipos a la vez si son golpeados con “Condena silvana” o “Halloween”. El campo del tipo terciario está oculto de manera predeterminada, ya que raramente se usa.",
         "values": {
-          "2": "Tipo secundario (2)",
-          "3": "Tipo terciario (3)"
+          "2": "Dos tipos (2)",
+          "3": "Tres tipos (3)"
         }
       }
     },
@@ -239,11 +243,11 @@
       }
     },
     "privacy": {
-      "heading": "Confidencialidad",
+      "heading": "Privacidad",
       "description": "Nunca pondré anuncios ni robaré tus datos personales. Uso <plausible>Plausible Analytics</plausible>, que se auto financia, es independiente, se aloja en la Unión Europea (UE) y no almacena ninguna cookie en tu computadora."
     },
     "givingBack": {
-      "heading": "Retribuciones",
+      "heading": "Mostrar apreciación",
       "description": "He dedicado innumerables horas a mejorar este sitio. Si aprecias lo que he hecho, por favor considera realizar una donación a organizaciones benéficas que apoyen los derechos de las comunidades BIPOC y transgéneros."
     },
     "thanks": {
@@ -252,10 +256,11 @@
         "da": "Traducción al Danés",
         "ru": "Traducción al Ruso",
         "kk": "Traducción al Kazajo",
-        "pt-PT": "Traducción al Portugués Europeo",
-        "pt-BR": "Traducción al Portugués Brasileño",
+        "pt-PT": "Traducción al Portugués (Portugal)",
+        "pt-BR": "Traducción al Portugués (Brasil)",
         "zh-Hans": "Traducción al Chino Simplificado",
         "zh-Hant": "Traducción al Chino Tradicional",
+        "no": "Traducción al Noruego",
         "ro": "Traducción al Rumano",
         "pl": "Traducción al Polaco",
         "fr": "Traducción al Francés",
@@ -311,11 +316,11 @@
   },
   "games": {
     "label": "Generación del juego",
-    "help": "Usa la efectividad de tipo de diferentes generaciones.",
+    "help": "Usar la efectividad de tipo de diferentes generaciones.",
     "byID": {
       "gen1": "Generación 1",
       "gen2": "Generación 2-5",
-      "default": "Predeterminada (Generación 6+)"
+      "default": "Predeterminada (generación 6+)"
     }
   }
 }

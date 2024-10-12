@@ -6,8 +6,8 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Más
 offense.chooseTypes,Choose types,Elige los tipos
 offense.dealsXTo,Deals {{ x }} to,Inflige {{ x }} a
-offense.abilities.choose,Choose abilities,
-offense.specialMoves.choose,Choose special moves,
+offense.abilities.choose,Choose abilities,Escoger habilidades
+offense.specialMoves.choose,Choose special moves,Escoger movimientos especiales
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Liofilización
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,Mil Flechas
 offense.coverage.heading,Pokédex coverage,Cobertura Pokédex
@@ -24,11 +24,11 @@ coverage.heading,Pokédex coverage,Cobertura Pokédex
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importa/exporta un archivo CSV con una Pokédex personalizada para ver el rango de efectividad de distintos Pokémon. Crea un archivo CSV personalizado con solo los Pokémon de la tier OverUsed (OU), o incluso crea tus propios Pokémon desde cero."
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Los datos del archivo CSV se cargan por el nombre de la cabecera de la columna, no por el orden de la misma, por lo que puedes añadir o reordenar las columnas si lo deseas (ej. Añade una columna de “tier”, o una de “notas”)."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","Los archivos CSV pueden ser modificados con Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, entre otros."
-coverage.csvHeaders.number,Number,Number
-coverage.csvHeaders.name,Name,Name
-coverage.csvHeaders.type1,Type 1,Type 1
-coverage.csvHeaders.type2,Type 2,Type 2
-coverage.csvHeaders.type3,Type 3,Type 3
+coverage.csvHeaders.number,Number,Número
+coverage.csvHeaders.name,Name,Nombre
+coverage.csvHeaders.type1,Type 1,Tipo 1
+coverage.csvHeaders.type2,Type 2,Tipo 2
+coverage.csvHeaders.type3,Type 3,Tipo 3
 coverage.export.button,Export,Exportar
 coverage.export.description,Export the default Pokédex to a CSV file,Exportar un archivo CSV con la Pokédex predeterminada
 coverage.import.button,Import,Importar
@@ -45,7 +45,7 @@ defense.chooseFirst,Choose first type,Elige el tipo primario
 defense.chooseSecond,Choose second type,Elige el tipo secundario
 defense.chooseThird,Choose third type,Elige el tipo terciario
 defense.takesXFrom,Takes {{ x }} from,Sufre {{ x }} por
-defense.chooseAbility,Choose ability,Elige Habilidad
+defense.chooseAbility,Choose ability,Elige habilidad
 defense.chooseTeraType,Choose tera type,Elige teratipo
 defense.abilityNames.none,None,Ninguna
 defense.abilityNames.tinted_lens,Tinted Lens,Cromolente
@@ -114,13 +114,13 @@ pokedex.stats.speedLong,Speed,Velocidad
 pokedex.stats.total,Total,Total
 pokedex.stats.totalLong,Total,Total
 pokedexHelp.searchByName.heading,Search by name,Busca por nombre
-pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puedes buscar un Pokémon por nombre. Si solo recuerdas parte del nombre del Pokémon, probablemente aún pueda encontrarlo. Sin embargo, aún no puede lidiar con errores tipográficos."
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puede buscar un Pokémon por nombre. Si solo recuerdas parte del nombre del Pokémon, probablemente aún pueda encontrarlo. Sin embargo, aún no puede lidiar con errores tipográficos."
 pokedexHelp.searchByNumber.heading,Search by number,Busca por número
 pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Busca usando el número de la Pokédex Nacional. Si buscas a Bulbasaur, simplemente ingresa 1, no #001."
 pokedexHelp.searchByType.heading,Search by type,Busca por tipo
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Aquí hay algunos ejemplos de cómo buscar por tipo.
 pokedexHelp.searchExamples.type.query,fire,fuego
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Busca Pokémon que tengan fuego como alguno de sus tipos en cualquiera de sus formas (ejs. Charmander, Charizard, Rotom)."
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Busca Pokémon que tengan fuego como alguno de sus tipos en cualquiera de sus formas (ej. Charmander, Charizard, Rotom)."
 pokedexHelp.searchExamples.doubleType.query,water flying,agua volador
 pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Busca Pokémon que son agua/volador (ej. Gyarados) o volador/agua (ej. Cramorant)
 pokedexHelp.searchExamples.singleType.query,grass none,planta ninguno
@@ -140,28 +140,28 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Predefinido por el sistema
 more.settings.theme.values.light,Light,Claro
 more.settings.theme.values.dark,Dark,Oscuro
-more.settings.typeCount.label,Number of types,Número de tipo
+more.settings.typeCount.label,Number of types,Número de tipos
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Los Pokémon pueden tener brevemente tres tipos a la vez si son golpeados con “Condena silvana” o “Halloween”. El campo del tipo terciario está oculto de manera predeterminada, ya que raramente se usa."
-more.settings.typeCount.values.2,Two types (2),Tipo secundario (2)
-more.settings.typeCount.values.3,Three types (3),Tipo terciario (3)
+more.settings.typeCount.values.2,Two types (2),Dos tipos (2)
+more.settings.typeCount.values.3,Three types (3),Tres tipos (3)
 more.changes.heading,What’s new,Novedades
 more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Consulta las novedades en el <changelog>registro de cambios</changelog>.
 more.help.heading,Help,Ayuda
 more.help.serviceWorker.description,This button can help fix issues in the app.,Este botón puede ayudar a solucionar problemas en la aplicación.
 more.help.serviceWorker.button,Reset,Restablecer
-more.privacy.heading,Privacy,Confidencialidad
+more.privacy.heading,Privacy,Privacidad
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Nunca pondré anuncios ni robaré tus datos personales. Uso <plausible>Plausible Analytics</plausible>, que se auto financia, es independiente, se aloja en la Unión Europea (UE) y no almacena ninguna cookie en tu computadora."
-more.givingBack.heading,Showing appreciation,Retribuciones
+more.givingBack.heading,Showing appreciation,Mostrar apreciación
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","He dedicado innumerables horas a mejorar este sitio. Si aprecias lo que he hecho, por favor considera realizar una donación a organizaciones benéficas que apoyen los derechos de las comunidades BIPOC y transgéneros."
 more.thanks.heading,Special thanks,Agradecimientos especiales
 more.thanks.sections.da,Danish translation,Traducción al Danés
 more.thanks.sections.ru,Russian translation,Traducción al Ruso
 more.thanks.sections.kk,Kazakh translation,Traducción al Kazajo
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Traducción al Portugués Europeo
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Traducción al Portugués Brasileño
+more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Traducción al Portugués (Portugal)
+more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Traducción al Portugués (Brasil)
 more.thanks.sections.zh-Hans,Simplified Chinese translation,Traducción al Chino Simplificado
 more.thanks.sections.zh-Hant,Traditional Chinese translation,Traducción al Chino Tradicional
-more.thanks.sections.no,Norwegian translation,
+more.thanks.sections.no,Norwegian translation,Traducción al Noruego
 more.thanks.sections.ro,Romanian translation,Traducción al Rumano
 more.thanks.sections.pl,Polish translation,Traducción al Polaco
 more.thanks.sections.fr,French translation,Traducción al Francés
@@ -201,7 +201,7 @@ banners.updateReady.update,Update,Actualizar
 general.loading,Loading…,Cargando...
 general.copyLink,Copy link,Copiar link
 games.label,Game generation,Generación del juego
-games.help,Use type effectiveness from different game generations.,Usa la efectividad de tipo de diferentes generaciones.
+games.help,Use type effectiveness from different game generations.,Usar la efectividad de tipo de diferentes generaciones.
 games.byID.gen1,Generation 1,Generación 1
 games.byID.gen2,Generation 2–5,Generación 2-5
-games.byID.default,Default (generation 6+),Predeterminada (Generación 6+)
+games.byID.default,Default (generation 6+),Predeterminada (generación 6+)
