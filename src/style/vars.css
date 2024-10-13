@@ -6,7 +6,7 @@
   --color-fg2: hsl(0 0% 20%);
   --color-fg3: hsl(0 0% 40%);
   --color-fg4: hsl(0 0% 60%);
-  --color-pokeball: hsl(0 90% 45%);
+  --color-pokeball: hsl(10 90% 45%);
   --color-button1: hsl(0 0% 100%);
   --color-button1b: hsl(0 0% 96%);
   --color-button-hover1: hsl(200 100% 98%);
@@ -89,55 +89,55 @@
 }
 
 :root[data-theme="dark"] {
-  --color-bg1: hsl(220 20% 25%);
-  --color-bg2: hsl(220 20% 20%);
-  --color-bg3: hsl(220 20% 30%);
-  --color-fg1: hsl(220 20% 90%);
-  --color-fg2: hsl(220 20% 80%);
-  --color-fg3: hsl(220 20% 70%);
-  --color-fg4: hsl(220 20% 60%);
-  --color-pokeball: hsl(0 70% 40%);
-  --color-button1: hsl(220 20% 28%);
-  --color-button1b: hsl(220 20% 24%);
-  --color-button-hover1: hsl(220 20% 32%);
-  --color-button-hover1b: hsl(220 20% 28%);
+  --color-bg1: hsl(0 0% 25%);
+  --color-bg2: hsl(0 0% 20%);
+  --color-bg3: hsl(0 0% 30%);
+  --color-fg1: hsl(0 0% 92%);
+  --color-fg2: hsl(0 0% 82%);
+  --color-fg3: hsl(0 0% 72%);
+  --color-fg4: hsl(0 0% 62%);
+  --color-pokeball: hsl(10 70% 40%);
+  --color-button1: hsl(0 0% 28%);
+  --color-button1b: hsl(0 0% 24%);
+  --color-button-hover1: hsl(0 0% 32%);
+  --color-button-hover1b: hsl(0 0% 28%);
   --color-badge: hsl(120 60% 60%);
   --color-link: hsl(180 100% 70%);
   --color-link-hover: hsl(180 80% 95%);
-  --color-border1: hsl(220 20% 55%);
-  --color-border2: hsl(220 20% 35%);
-  --color-border3: hsl(220 20% 30%);
+  --color-border1: hsl(0 0% 57%);
+  --color-border2: hsl(0 0% 37%);
+  --color-border3: hsl(0 0% 32%);
   --color-vibrant-border: hsl(0 0% 100% / 0.4);
   --color-vibrant-border1: hsl(0 0% 100% / 0.8);
-  --color-scroll-fg: hsl(220 20% 70%);
-  --color-scroll-bg: hsl(220 20% 15%);
+  --color-scroll-fg: hsl(0 0% 70%);
+  --color-scroll-bg: hsl(0 0% 15%);
   color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
   :root[data-theme="auto"] {
-    --color-bg1: hsl(220 20% 25%);
-    --color-bg2: hsl(220 20% 20%);
-    --color-bg3: hsl(220 20% 30%);
-    --color-fg1: hsl(220 20% 90%);
-    --color-fg2: hsl(220 20% 80%);
-    --color-fg3: hsl(220 20% 70%);
-    --color-fg4: hsl(220 20% 60%);
-    --color-pokeball: hsl(0 70% 40%);
-    --color-button1: hsl(220 20% 28%);
-    --color-button1b: hsl(220 20% 24%);
-    --color-button-hover1: hsl(220 20% 32%);
-    --color-button-hover1b: hsl(220 20% 28%);
+    --color-bg1: hsl(0 0% 25%);
+    --color-bg2: hsl(0 0% 20%);
+    --color-bg3: hsl(0 0% 30%);
+    --color-fg1: hsl(0 0% 92%);
+    --color-fg2: hsl(0 0% 82%);
+    --color-fg3: hsl(0 0% 72%);
+    --color-fg4: hsl(0 0% 62%);
+    --color-pokeball: hsl(10 70% 40%);
+    --color-button1: hsl(0 0% 28%);
+    --color-button1b: hsl(0 0% 24%);
+    --color-button-hover1: hsl(0 0% 32%);
+    --color-button-hover1b: hsl(0 0% 28%);
     --color-badge: hsl(120 60% 60%);
     --color-link: hsl(180 100% 70%);
     --color-link-hover: hsl(180 80% 95%);
-    --color-border1: hsl(220 20% 55%);
-    --color-border2: hsl(220 20% 35%);
-    --color-border3: hsl(220 20% 30%);
+    --color-border1: hsl(0 0% 57%);
+    --color-border2: hsl(0 0% 37%);
+    --color-border3: hsl(0 0% 32%);
     --color-vibrant-border: hsl(0 0% 100% / 0.4);
     --color-vibrant-border1: hsl(0 0% 100% / 0.8);
-    --color-scroll-fg: hsl(220 20% 70%);
-    --color-scroll-bg: hsl(220 20% 15%);
+    --color-scroll-fg: hsl(0 0% 70%);
+    --color-scroll-bg: hsl(0 0% 15%);
     color-scheme: dark;
   }
 }

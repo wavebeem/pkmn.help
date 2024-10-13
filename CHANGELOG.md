@@ -4,6 +4,8 @@
 
 - Updated Spanish translation
 
+- Updated dark mode colors to not be blue tinted
+
 ## 2024-10-05
 
 - Fixed Paras sprite (shiny and regular were swapped)
