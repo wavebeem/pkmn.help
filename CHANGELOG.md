@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-10-14
+
+- Fixed incorrect header background color (slightly orange-ish red)
+
 ## 2024-10-12
 
 - Updated Spanish translation

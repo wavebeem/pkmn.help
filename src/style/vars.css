@@ -6,7 +6,7 @@
   --color-fg2: hsl(0 0% 20%);
   --color-fg3: hsl(0 0% 40%);
   --color-fg4: hsl(0 0% 60%);
-  --color-pokeball: hsl(10 90% 45%);
+  --color-pokeball: hsl(0 90% 45%);
   --color-button1: hsl(0 0% 100%);
   --color-button1b: hsl(0 0% 96%);
   --color-button-hover1: hsl(200 100% 98%);
@@ -96,7 +96,7 @@
   --color-fg2: hsl(0 0% 82%);
   --color-fg3: hsl(0 0% 72%);
   --color-fg4: hsl(0 0% 62%);
-  --color-pokeball: hsl(10 70% 40%);
+  --color-pokeball: hsl(0 70% 40%);
   --color-button1: hsl(0 0% 28%);
   --color-button1b: hsl(0 0% 24%);
   --color-button-hover1: hsl(0 0% 32%);
