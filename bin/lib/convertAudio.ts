@@ -23,7 +23,7 @@ async function convertTo(src: string, dest: string) {
   }
 }
 
-export async function convertAudio() {
+export async function convertAudio(): Promise<void> {
   for (const name of fs.readdirSync(CRY_SRC)) {
     if (!name.endsWith(".ogg")) {
       continue;
