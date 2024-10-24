@@ -38,7 +38,11 @@ export function MonsterImage({
       <div hidden={state !== "errored"} className={styles.placeholder}>
         ?
       </div>
-      <picture>
+      <picture
+        hidden={state === "errored"}
+        onLoad={setLoaded}
+        onError={setErrored}
+      >
         <source
           srcSet={getWebpSrcSet({ id: pokemonID, shiny })}
           type="image/webp"
@@ -48,13 +52,10 @@ export function MonsterImage({
           src={getPngSrc({ id: pokemonID, shiny })}
           role="presentation"
           alt=""
-          hidden={state === "errored"}
           data-shiny={shiny && state === "loaded"}
           className={styles.image}
           width={size}
           height={size}
-          onLoad={setLoaded}
-          onError={setErrored}
         />
       </picture>
     </div>

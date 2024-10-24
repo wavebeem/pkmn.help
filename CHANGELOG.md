@@ -1,5 +1,11 @@
 # Changelog
 
+## 2024-10-24
+
+- Upgraded images to maximum quality
+
+- Fixed the placeholder image when a Pokémon doesn't have an image
+
 ## 2024-10-14
 
 - Fixed incorrect header background color (slightly orange-ish red)
