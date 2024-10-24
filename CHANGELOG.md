@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-10-24
+
+- Upgraded images to maximum quality
+
 ## 2024-10-14
 
 - Fixed incorrect header background color (slightly orange-ish red)
