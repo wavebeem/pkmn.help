@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-11-09
+
+- Updated Simplified Chinese translation
+
 ## 2024-10-24
 
 - Upgraded images to maximum quality

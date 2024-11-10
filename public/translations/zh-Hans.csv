@@ -114,7 +114,7 @@ pokedex.stats.speedLong,Speed,速度
 pokedex.stats.total,Total,总和
 pokedex.stats.totalLong,Total,总和
 pokedexHelp.searchByName.heading,Search by name,按名称搜索
-pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",你可以按名称搜索宝可梦。如果你只记得宝可梦名称的一部分，系统或许仍能帮你找到。但它现在无法处理拼字错误。
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",你可以按名称搜索宝可梦。如果你只记得宝可梦名称的一部分，系统或许仍能帮你找到。但它现在无法处理错别字。
 pokedexHelp.searchByNumber.heading,Search by number,按编号搜索
 pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.",按全国图鉴编号搜索。如果你要找妙蛙种子，写1就行，而非#001。
 pokedexHelp.searchByType.heading,Search by type,按属性搜索
@@ -161,7 +161,7 @@ more.thanks.sections.pt-PT,Portuguese (Portugal) translation,葡萄牙语（葡�
 more.thanks.sections.pt-BR,Portuguese (Brazil) translation,巴西葡萄牙语翻译
 more.thanks.sections.zh-Hans,Simplified Chinese translation,简体中文翻译
 more.thanks.sections.zh-Hant,Traditional Chinese translation,繁体中文翻译
-more.thanks.sections.no,Norwegian translation,
+more.thanks.sections.no,Norwegian translation,挪威翻译
 more.thanks.sections.ro,Romanian translation,罗马尼亚语翻译
 more.thanks.sections.pl,Polish translation,波兰语翻译
 more.thanks.sections.fr,French translation,法语翻译
@@ -201,7 +201,7 @@ banners.updateReady.update,Update,更新
 general.loading,Loading…,加载中……
 general.copyLink,Copy link,复制链接
 games.label,Game generation,游戏世代
-games.help,Use type effectiveness from different game generations.,使用不同游戏世代的属性相克。
+games.help,Use type effectiveness from different game generations.,更换对应游戏世代的属性相克。
 games.byID.gen1,Generation 1,第一世代
 games.byID.gen2,Generation 2–5,第二至五世代
 games.byID.default,Default (generation 6+),默认（第六世代起）
