@@ -13,7 +13,7 @@
 }
 
 .badgeLabel {
-  padding: 0.25rem 1rem;
+  padding: 0.25rem 0.5rem;
   background: var(--type-color-bg);
   border-radius: var(--border-radius1);
 }

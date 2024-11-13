@@ -257,9 +257,6 @@ export function ScreenMore(): ReactNode {
                 ). If you have questions, feel free to ask. Confused about CSV
                 files? I can set up a Google Sheet for you.
               </FancyText>
-              <FancyText tag="p">
-                I&apos;m offering payment for translation in some languages.
-              </FancyText>
               <Flex direction="column" gap="large">
                 {supportedLanguages
                   .slice(0)
@@ -512,6 +509,7 @@ export function ScreenMore(): ReactNode {
                   {t("more.thanks.sections.ja")}
                 </FancyText>
                 <ul className="list-simple">
+                  <li>Grant Hussey</li>
                   <li>Minamorl</li>
                 </ul>
               </Flex>

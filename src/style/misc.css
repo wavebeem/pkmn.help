@@ -30,11 +30,11 @@ input {
 }
 
 .weight-normal {
-  font-weight: 400;
+  font-weight: var(--weight-normal);
 }
 
 .weight-medium {
-  font-weight: 500;
+  font-weight: var(--weight-medium);
 }
 
 .center {
@@ -42,11 +42,12 @@ input {
   margin-right: auto;
 }
 
-:root[lang="ko"] .weight-medium,
-:root[lang="ja"] .weight-medium,
-:root[lang="zh-Hant"] .weight-medium,
-:root[lang="zh-Hans"] .weight-medium {
-  font-weight: 400;
+[lang="ko"],
+[lang="ja"],
+[lang="zh-Hant"],
+[lang="zh-Hans"] {
+  --weight-normal: 400;
+  --weight-medium: 400;
 }
 
 .bg3 {

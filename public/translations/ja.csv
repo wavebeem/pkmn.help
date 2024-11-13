@@ -145,7 +145,7 @@ more.settings.typeCount.help,Pokémon can briefly have three types at once if hi
 more.settings.typeCount.values.2,Two types (2),２つのタイプ
 more.settings.typeCount.values.3,Three types (3),３つのタイプ
 more.changes.heading,What’s new,新機能
-more.changes.description,See what’s new in the <changelog>changelog</changelog>.,<changelog>changelog</changelog> の新しい内容
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,<changelog>changelog</changelog>の新しい内容
 more.help.heading,Help,ヘルプ
 more.help.serviceWorker.description,This button can help fix issues in the app.,このボタンはアプリの問題をなおすのを手伝えることがあります。
 more.help.serviceWorker.button,Reset,リセット

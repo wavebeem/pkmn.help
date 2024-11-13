@@ -76,7 +76,7 @@
 }
 
 :root[lang="ja"] {
-  --type-min-width: 7rem;
+  --type-min-width: 6rem;
 }
 
 :root[lang="pl"],
