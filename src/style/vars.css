@@ -75,10 +75,6 @@
   color-scheme: light;
 }
 
-:root[lang="ja"] {
-  --type-min-width: 6rem;
-}
-
 :root[lang="pl"],
 :root[lang="ru"] {
   --type-min-width: 9rem;
