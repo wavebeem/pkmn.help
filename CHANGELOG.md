@@ -1,5 +1,13 @@
 # Changelog
 
+## 2024-11-12
+
+- Updated Japanese translation
+
+- Fixed an issue where the Japanese "Fairy" type line-wrapped
+
+- Fixed an issue with incorrect font weight on CJK text
+
 ## 2024-11-09
 
 - Updated Simplified Chinese translation

@@ -35,7 +35,8 @@
     hsl(270 90% 50%),
     hsl(292.5 90% 50%),
     hsl(315 90% 50%),
-    hsl(337.5 90% 50%)
+    hsl(337.5 90% 50%),
+    hsl(0 90% 50%)
   );
   --stellar-background-dark: linear-gradient(
     -225deg,

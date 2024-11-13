@@ -23,7 +23,7 @@ export function TranslationCard({ lang }: TranslationCardProps): ReactNode {
     <Card>
       <Flex direction="column" gap="medium">
         <Flex gap="small" wrap>
-          <FancyText tag="h3" fontSize="large" fontWeight="medium">
+          <FancyText tag="h3" fontSize="large" fontWeight="medium" lang={lang}>
             {languageNamesNative[lang]}
           </FancyText>
           <Flex flex="auto" />

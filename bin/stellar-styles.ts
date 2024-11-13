@@ -48,7 +48,8 @@ function createStellarGradientDark() {
 function createStellarGradientConic() {
   const count = 16;
   const steps: string[] = [];
-  for (const i of range(0, count)) {
+  const numbers = [...range(0, count), 0];
+  for (const i of numbers) {
     const hue = i * (360 / count);
     const color = hsl(hue, 90, 50);
     steps.push(color);

@@ -1,25 +1,25 @@
 Key,en,ja
-title,Pokémon Type Calculator,ポケモン　タイプ　けいさんき
+title,Pokémon Type Calculator,ポケモン タイプ けいさんき
 navigation.offense,Offense,オフェンス
 navigation.defense,Defense,デフェンス
 navigation.pokedex,Pokédex,ポケモンずかん
 navigation.more,More,その他
 offense.chooseTypes,Choose types,複数のタイプを選択
 offense.dealsXTo,Deals {{ x }} to,{{ x }}を与える
-offense.abilities.choose,Choose abilities,
-offense.specialMoves.choose,Choose special moves,
+offense.abilities.choose,Choose abilities,特性を選択
+offense.specialMoves.choose,Choose special moves,得意技を選択
 offense.specialMoves.names.freeze-dry,Freeze-Dry,フリーズドライ
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,サウザンアロー
-offense.coverage.heading,Pokédex coverage,
-offense.coverage.edit,Edit list,
-offense.coverage.weakness,Weak,
-offense.coverage.normal,Normal,
-offense.coverage.resistance,Resist,
-offense.teraPokemon,Tera Pokémon,
-offense.coverageList.empty,No Pokémon found or no types selected,
-offense.coverageList.weakness.heading,Weakness coverage list,
-offense.coverageList.normal.heading,Normal effectiveness coverage list,
-offense.coverageList.resistance.heading,Resistance coverage list,
+offense.coverage.heading,Pokédex coverage,ポケモン図鑑内のタイプ相性
+offense.coverage.edit,Edit list,リストを編集
+offense.coverage.weakness,Weak,ばつぐん
+offense.coverage.normal,Normal,普通
+offense.coverage.resistance,Resist,耐性
+offense.teraPokemon,Tera Pokémon,テラスタルポケモン
+offense.coverageList.empty,No Pokémon found or no types selected,ポケモンが見つからないか、タイプが未選択です。
+offense.coverageList.weakness.heading,Weakness coverage list,弱点カバーリスト
+offense.coverageList.normal.heading,Normal effectiveness coverage list,普通カバーリスト
+offense.coverageList.resistance.heading,Resistance coverage list,抵抗カバーリスト
 coverage.heading,Pokédex coverage,弱点のカバー範囲
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",異なるポケモンのための弱点カバー範囲を見るためにカスタムポケモンずかんのCSVファイルを読み込み/エクスポートします。
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",CSVデータはカラムの順番ではなくカラムのヘッダーネーム順で呼ばれます。追加したり並べ替えても処理に影響はありません。（例:「ランク」カラムを足す、「注釈」カラムを足す）
@@ -70,21 +70,21 @@ defense.abilityNames.sap_sipper,Sap Sipper,そうしょく
 defense.abilityNames.lightning_rod,Lightning Rod,ひらいしん
 defense.abilityNames.motor_drive,Motor Drive,でんきエンジン
 defense.abilityNames.volt_absorb,Volt Absorb,ちくでん
-defense.mode.heading,Choose mode,
-defense.mode.solo,Solo,
-defense.mode.team,Team,
-defense.team.tableHeading,Matchup counts,
-defense.team.heading,Edit Pokémon team,
-defense.team.add,Add Pokémon,
-defense.team.empty,No Pokémon selected,
-defense.team.displayType,Table format,
-defense.team.weak,Weak,
-defense.team.resist,Resist,
-defense.team.simple,Simple,
-defense.team.complex,Complex,
-defense.team.type,Type,
-defense.team.edit,Edit,
-defense.team.remove,Remove,
+defense.mode.heading,Choose mode,設定を選択
+defense.mode.solo,Solo,ソロ
+defense.mode.team,Team,パーティ
+defense.team.tableHeading,Matchup counts,タイプ相性表
+defense.team.heading,Edit Pokémon team,手持ちポケモンを編集
+defense.team.add,Add Pokémon,ポケモンを追加
+defense.team.empty,No Pokémon selected,ポケモンが選択されていない
+defense.team.displayType,Table format,テーブル形式
+defense.team.weak,Weak,弱点相性表
+defense.team.resist,Resist,耐性相性表
+defense.team.simple,Simple,簡単なフォーマット
+defense.team.complex,Complex,詳細なフォーマット
+defense.team.type,Type,タイプ
+defense.team.edit,Edit,変える
+defense.team.remove,Remove,消す
 pokedex.search.description,"Search by name, number, or types",名前、番号、タイプで検索できます
 pokedex.search.help,Help,ヘルプ
 pokedex.search.helpLong,"Help, search Pokédex",ヘルプ、Pokédexを検索
@@ -131,9 +131,9 @@ more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I 
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,考えとありがとうを<email>pkmn@wavebeem.com</email>に電子メールで送ってください。
 more.settings.heading,Settings,設定
 more.settings.language.label,Language,言語
-more.settings.language.default,Auto detect language,
-more.settings.language.official,Official languages,
-more.settings.language.unofficial,Unofficial languages,
+more.settings.language.default,Auto detect language,自動言語検出
+more.settings.language.official,Official languages,公用語
+more.settings.language.unofficial,Unofficial languages,非公用語
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",言語サポートは不完全です。 私に電子メールを送ってください、私はあなたに翻訳するために支払います。
 more.settings.theme.label,Theme,テーマ
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,「システムのデフォルト」は、オペレーティングシステムの設定に応じて自動的に変更されます。
@@ -144,8 +144,8 @@ more.settings.typeCount.label,Number of types,タイプの数
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,「もりののろい」か「ハロウィン」を使うとき、このセッティングを使います。
 more.settings.typeCount.values.2,Two types (2),２つのタイプ
 more.settings.typeCount.values.3,Three types (3),３つのタイプ
-more.changes.heading,What’s new,
-more.changes.description,See what’s new in the <changelog>changelog</changelog>.,
+more.changes.heading,What’s new,新機能
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,<changelog>changelog</changelog>の新しい内容
 more.help.heading,Help,ヘルプ
 more.help.serviceWorker.description,This button can help fix issues in the app.,このボタンはアプリの問題をなおすのを手伝えることがあります。
 more.help.serviceWorker.button,Reset,リセット
@@ -157,11 +157,11 @@ more.thanks.heading,Special thanks,助けた人々
 more.thanks.sections.da,Danish translation,デンマーク語訳
 more.thanks.sections.ru,Russian translation,ロシア語翻訳
 more.thanks.sections.kk,Kazakh translation,カザフ語翻訳
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
+more.thanks.sections.pt-PT,Portuguese (Portugal) translation,ポルトガル語翻訳
 more.thanks.sections.pt-BR,Portuguese (Brazil) translation,ブラジルポルトガル語翻訳
 more.thanks.sections.zh-Hans,Simplified Chinese translation,中国語翻訳（簡体）
 more.thanks.sections.zh-Hant,Traditional Chinese translation,中国語翻訳（繁体）
-more.thanks.sections.no,Norwegian translation,
+more.thanks.sections.no,Norwegian translation,ノルウェー語翻訳
 more.thanks.sections.ro,Romanian translation,ルーマニア語翻訳
 more.thanks.sections.pl,Polish translation,ポーランド語翻訳
 more.thanks.sections.fr,French translation,フランス語翻訳
@@ -196,10 +196,10 @@ types.fairy,Fairy,フェアリー
 types.stellar,Stellar,ステラ
 types.none,None,なし
 banners.updateReady.description,An update is available,アップデートが利用可能です
-banners.updateReady.whatsNew,What’s new,
+banners.updateReady.whatsNew,What’s new,新機能
 banners.updateReady.update,Update,更新
 general.loading,Loading…,読み込み中…
-general.copyLink,Copy link,
+general.copyLink,Copy link,リンクをコピー
 games.label,Game generation,ゲームのジェネレーション1
 games.help,Use type effectiveness from different game generations.,さまざまなゲームジェネレーション1タイプの効果を使用します。
 games.byID.gen1,Generation 1,ジェネレーション１

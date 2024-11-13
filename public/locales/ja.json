@@ -1,5 +1,5 @@
 {
-  "title": "ポケモン　タイプ　けいさんき",
+  "title": "ポケモン タイプ けいさんき",
   "navigation": {
     "offense": "オフェンス",
     "defense": "デフェンス",
@@ -9,10 +9,34 @@
   "offense": {
     "chooseTypes": "複数のタイプを選択",
     "dealsXTo": "{{ x }}を与える",
+    "abilities": {
+      "choose": "特性を選択"
+    },
     "specialMoves": {
+      "choose": "得意技を選択",
       "names": {
         "freeze-dry": "フリーズドライ",
         "thousand_arrows": "サウザンアロー"
+      }
+    },
+    "coverage": {
+      "heading": "ポケモン図鑑内のタイプ相性",
+      "edit": "リストを編集",
+      "weakness": "ばつぐん",
+      "normal": "普通",
+      "resistance": "耐性"
+    },
+    "teraPokemon": "テラスタルポケモン",
+    "coverageList": {
+      "empty": "ポケモンが見つからないか、タイプが未選択です。",
+      "weakness": {
+        "heading": "弱点カバーリスト"
+      },
+      "normal": {
+        "heading": "普通カバーリスト"
+      },
+      "resistance": {
+        "heading": "抵抗カバーリスト"
       }
     }
   },
@@ -80,6 +104,25 @@
       "lightning_rod": "ひらいしん",
       "motor_drive": "でんきエンジン",
       "volt_absorb": "ちくでん"
+    },
+    "mode": {
+      "heading": "設定を選択",
+      "solo": "ソロ",
+      "team": "パーティ"
+    },
+    "team": {
+      "tableHeading": "タイプ相性表",
+      "heading": "手持ちポケモンを編集",
+      "add": "ポケモンを追加",
+      "empty": "ポケモンが選択されていない",
+      "displayType": "テーブル形式",
+      "weak": "弱点相性表",
+      "resist": "耐性相性表",
+      "simple": "簡単なフォーマット",
+      "complex": "詳細なフォーマット",
+      "type": "タイプ",
+      "edit": "変える",
+      "remove": "消す"
     }
   },
   "pokedex": {
@@ -165,6 +208,9 @@
       "heading": "設定",
       "language": {
         "label": "言語",
+        "default": "自動言語検出",
+        "official": "公用語",
+        "unofficial": "非公用語",
         "helpText": "言語サポートは不完全です。 私に電子メールを送ってください、私はあなたに翻訳するために支払います。"
       },
       "theme": {
@@ -184,6 +230,10 @@
           "3": "３つのタイプ"
         }
       }
+    },
+    "changes": {
+      "heading": "新機能",
+      "description": "<changelog>changelog</changelog>の新しい内容"
     },
     "help": {
       "heading": "ヘルプ",
@@ -206,9 +256,11 @@
         "da": "デンマーク語訳",
         "ru": "ロシア語翻訳",
         "kk": "カザフ語翻訳",
+        "pt-PT": "ポルトガル語翻訳",
         "pt-BR": "ブラジルポルトガル語翻訳",
         "zh-Hans": "中国語翻訳（簡体）",
         "zh-Hant": "中国語翻訳（繁体）",
+        "no": "ノルウェー語翻訳",
         "ro": "ルーマニア語翻訳",
         "pl": "ポーランド語翻訳",
         "fr": "フランス語翻訳",
@@ -254,11 +306,13 @@
   "banners": {
     "updateReady": {
       "description": "アップデートが利用可能です",
+      "whatsNew": "新機能",
       "update": "更新"
     }
   },
   "general": {
-    "loading": "読み込み中…"
+    "loading": "読み込み中…",
+    "copyLink": "リンクをコピー"
   },
   "games": {
     "label": "ゲームのジェネレーション1",
