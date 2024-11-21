@@ -99,6 +99,14 @@ export function ScreenWeaknessCoverage(): ReactNode {
       },
     });
     if (result.errors.length > 0) {
+      setStatusText(
+        result.errors
+          .map((err) => {
+            const row = err.row ? err.row + 2 : "?";
+            return `Row ${row}: ${err.message}`;
+          })
+          .join("\n")
+      );
       alert(t("coverage.status.errored"));
       return;
     }
@@ -151,7 +159,7 @@ export function ScreenWeaknessCoverage(): ReactNode {
         )}
 
         {statusText && (
-          <FancyText tag="p" fontSize="large" fontWeight="medium">
+          <FancyText tag="pre" fontSize="large" fontWeight="medium">
             {statusText}
           </FancyText>
         )}

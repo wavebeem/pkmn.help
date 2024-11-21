@@ -1,5 +1,9 @@
 # Changelog
 
+## 2024-11-21
+
+- Improved error messages for failed CSV import
+
 ## 2024-11-12
 
 - Updated Japanese translation
