@@ -9,7 +9,11 @@
   "offense": {
     "chooseTypes": "타입 선택",
     "dealsXTo": "{{x}} 데미지",
+    "abilities": {
+      "choose": "특성 선택"
+    },
     "specialMoves": {
+      "choose": "특별 상성 선택",
       "names": {
         "freeze-dry": "프리즈드라이",
         "thousand_arrows": "사우전드애로"
@@ -22,6 +26,7 @@
       "normal": "1배인 포켓몬",
       "resistance": "내성인 포켓몬"
     },
+    "teraPokemon": "테라스탈 포켓몬",
     "coverageList": {
       "empty": "포켓몬을 찾을 수 없거나 유형이 선택되지 않았습니다.",
       "weakness": {
@@ -73,7 +78,8 @@
     "chooseSecond": "두 번째 타입 선택",
     "chooseThird": "세 번째 타입 선택",
     "takesXFrom": "{{ x }} 피해",
-    "chooseAbility": "특성을 선택하세요",
+    "chooseAbility": "특성 선택",
+    "chooseTeraType": "테라스탈 타입 선택",
     "abilityNames": {
       "none": "없음",
       "tinted_lens": "색안경",
@@ -136,7 +142,7 @@
       "text": "울음소리"
     },
     "shiny": {
-      "text": "이로치"
+      "text": "색이 다른 포켓몬"
     },
     "pagination": {
       "next": "다음",
@@ -203,6 +209,8 @@
       "language": {
         "label": "언어",
         "default": "언어 자동 감지",
+        "official": "공식 지원 언어",
+        "unofficial": "비공식 지원 언어",
         "helpText": "아직 언어 지원이 완벽하지 않습니다. 저에게 이메일을 보내주시면 번역 시 보수를 제공하겠습니다."
       },
       "theme": {
@@ -249,7 +257,9 @@
         "ru": "러시아어 번역",
         "kk": "카자흐어 번역",
         "pt-BR": "브라질 포르투갈어 번역",
-        "zh-Hans": "중국어 번역",
+        "zh-Hans": "중국어(간체) 번역",
+        "zh-Hant": "중국어(번체) 번역",
+        "no": "노르웨이어 번역",
         "ro": "루마니아어 번역",
         "pl": "폴란드어 번역",
         "fr": "프랑스어 번역",
@@ -300,7 +310,8 @@
     }
   },
   "general": {
-    "loading": "로딩 중..."
+    "loading": "로딩 중...",
+    "copyLink": "링크 복사"
   },
   "games": {
     "label": "세대",

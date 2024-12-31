@@ -6,8 +6,8 @@ navigation.pokedex,Pokédex,포켓몬 도감
 navigation.more,More,더보기
 offense.chooseTypes,Choose types,타입 선택
 offense.dealsXTo,Deals {{ x }} to,{{x}} 데미지
-offense.abilities.choose,Choose abilities,
-offense.specialMoves.choose,Choose special moves,
+offense.abilities.choose,Choose abilities,특성 선택
+offense.specialMoves.choose,Choose special moves,특별 상성 선택
 offense.specialMoves.names.freeze-dry,Freeze-Dry,프리즈드라이
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,사우전드애로
 offense.coverage.heading,Pokédex coverage,포켓몬 도감과 비교하기
@@ -15,7 +15,7 @@ offense.coverage.edit,Edit list,포켓몬 목록 편집
 offense.coverage.weakness,Weak,약점인 포켓몬
 offense.coverage.normal,Normal,1배인 포켓몬
 offense.coverage.resistance,Resist,내성인 포켓몬
-offense.teraPokemon,Tera Pokémon,
+offense.teraPokemon,Tera Pokémon,테라스탈 포켓몬
 offense.coverageList.empty,No Pokémon found or no types selected,포켓몬을 찾을 수 없거나 유형이 선택되지 않았습니다.
 offense.coverageList.weakness.heading,Weakness coverage list,약점인 포켓몬 목록
 offense.coverageList.normal.heading,Normal effectiveness coverage list,1배인 포켓몬 목록
@@ -45,8 +45,8 @@ defense.chooseFirst,Choose first type,첫 번째 타입 선택
 defense.chooseSecond,Choose second type,두 번째 타입 선택
 defense.chooseThird,Choose third type,세 번째 타입 선택
 defense.takesXFrom,Takes {{ x }} from,{{ x }} 피해
-defense.chooseAbility,Choose ability,특성을 선택하세요
-defense.chooseTeraType,Choose tera type,
+defense.chooseAbility,Choose ability,특성 선택
+defense.chooseTeraType,Choose tera type,테라스탈 타입 선택
 defense.abilityNames.none,None,없음
 defense.abilityNames.tinted_lens,Tinted Lens,색안경
 defense.abilityNames.scrappy,Scrappy,배짱
@@ -92,7 +92,7 @@ pokedex.search.notFound,No Pokémon found,포켓몬을 찾을 수 없습니다
 pokedex.offense.text,Offense,공격
 pokedex.defense.text,Defense,방어
 pokedex.cry.text,Cry,울음소리
-pokedex.shiny.text,Shiny,이로치
+pokedex.shiny.text,Shiny,색이 다른 포켓몬
 pokedex.pagination.next,Next,다음
 pokedex.pagination.nextLong,Next,다음
 pokedex.pagination.previous,Prev,이전
@@ -132,8 +132,8 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,설정
 more.settings.language.label,Language,언어
 more.settings.language.default,Auto detect language,언어 자동 감지
-more.settings.language.official,Official languages,
-more.settings.language.unofficial,Unofficial languages,
+more.settings.language.official,Official languages,공식 지원 언어
+more.settings.language.unofficial,Unofficial languages,비공식 지원 언어
 more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",아직 언어 지원이 완벽하지 않습니다. 저에게 이메일을 보내주시면 번역 시 보수를 제공하겠습니다.
 more.settings.theme.label,Theme,테마
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""시스템 기본값"" 은 시스템 설정에 따라 자동으로 변경됩니다."
@@ -159,9 +159,9 @@ more.thanks.sections.ru,Russian translation,러시아어 번역
 more.thanks.sections.kk,Kazakh translation,카자흐어 번역
 more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
 more.thanks.sections.pt-BR,Portuguese (Brazil) translation,브라질 포르투갈어 번역
-more.thanks.sections.zh-Hans,Simplified Chinese translation,중국어 번역
-more.thanks.sections.zh-Hant,Traditional Chinese translation,
-more.thanks.sections.no,Norwegian translation,
+more.thanks.sections.zh-Hans,Simplified Chinese translation,중국어(간체) 번역
+more.thanks.sections.zh-Hant,Traditional Chinese translation,중국어(번체) 번역
+more.thanks.sections.no,Norwegian translation,노르웨이어 번역
 more.thanks.sections.ro,Romanian translation,루마니아어 번역
 more.thanks.sections.pl,Polish translation,폴란드어 번역
 more.thanks.sections.fr,French translation,프랑스어 번역
@@ -199,7 +199,7 @@ banners.updateReady.description,An update is available,새 버전이 있습니�
 banners.updateReady.whatsNew,What’s new,새로운 기능
 banners.updateReady.update,Update,업데이트
 general.loading,Loading…,로딩 중...
-general.copyLink,Copy link,
+general.copyLink,Copy link,링크 복사
 games.label,Game generation,세대
 games.help,Use type effectiveness from different game generations.,다른 세대의 상성 사용하기
 games.byID.gen1,Generation 1,1세대
