@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-01-05
+
+- Added Terapagos Stellar Form to the Pokédex
+
 ## 2024-11-21
 
 - Improved error messages for failed CSV import

@@ -2341,13 +2341,13 @@
       "zh-Hans": "猫老大"
     },
     "formNames": {
+      "it": "Forma di Alola",
       "ja-Hrkt": "アローラのすがた",
       "ko": "알로라의 모습",
       "zh-Hant": "阿羅拉的樣子",
       "fr": "Forme d’Alola",
       "de": "Alola-Form",
       "es": "Forma de Alola",
-      "it": "Forma di Alola",
       "en": "Alolan Form",
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
@@ -5605,7 +5605,7 @@
     "formNames": {
       "ja-Hrkt": "パルデアのすがた",
       "fr": "Forme de Paldéa",
-      "en": "Paldean Form",
+      "en": "Paldean Form (Combat Breed)",
       "ja": "パルデアのすがた"
     },
     "number": 128,
@@ -5640,7 +5640,7 @@
     "formNames": {
       "ja-Hrkt": "パルデアのすがた",
       "fr": "Forme de Paldéa",
-      "en": "Paldean Form",
+      "en": "Paldean Form (Blaze Breed)",
       "ja": "パルデアのすがた"
     },
     "number": 128,
@@ -5676,7 +5676,7 @@
     "formNames": {
       "ja-Hrkt": "パルデアのすがた",
       "fr": "Forme de Paldéa",
-      "en": "Paldean Form",
+      "en": "Paldean Form (Aqua Breed)",
       "ja": "パルデアのすがた"
     },
     "number": 128,
@@ -12464,6 +12464,7 @@
       "zh-Hans": "雷电兽"
     },
     "formNames": {
+      "zh-Hans": "超级雷电兽",
       "ja-Hrkt": "メガライボルト",
       "ko": "메가썬더볼트",
       "zh-Hant": "超級雷電獸",
@@ -12472,8 +12473,7 @@
       "es": "Mega-Manectric",
       "it": "MegaManectric",
       "en": "Mega Manectric",
-      "ja": "メガライボルト",
-      "zh-Hans": "超级雷电兽"
+      "ja": "メガライボルト"
     },
     "number": 310,
     "hp": 70,
@@ -27635,9 +27635,9 @@
       "zh-Hans": "南瓜怪人"
     },
     "formNames": {
-      "zh-Hant": "特大尺寸",
       "ja-Hrkt": "とくだいサイズ",
       "ko": "특대 사이즈",
+      "zh-Hant": "特大尺寸",
       "fr": "Taille Ultra",
       "de": "Größe XL",
       "es": "Tamaño Extragrande",
@@ -32819,6 +32819,7 @@
     },
     "formNames": {
       "ja-Hrkt": "がんさくフォルム",
+      "fr": "Forme Contrefaçon",
       "de": "Fälschungsform",
       "en": "Phony Form",
       "ja": "がんさくフォルム"
@@ -33253,11 +33254,11 @@
       "ja-Hrkt": "ミルキィバニラ",
       "ko": "밀키바닐라",
       "zh-Hant": "奶香香草",
-      "fr": "Lait Vanille",
+      "fr": "Lait Vanille Fraise en Sucre",
       "de": "Vanille-Creme",
       "es": "Crema de Vainilla",
       "it": "Lattevaniglia",
-      "en": "Vanilla Cream",
+      "en": "Vanilla Cream Strawberry Sweet",
       "ja": "ミルキィバニラ",
       "zh-Hans": "奶香香草"
     },
@@ -34908,9 +34909,9 @@
   {
     "name": "sprigatito",
     "speciesNames": {
-      "ko": "나오하",
       "ja-Hrkt": "ニャオハ",
       "roomaji": "Nyahoja",
+      "ko": "나오하",
       "zh-Hant": "新葉喵",
       "fr": "Poussacha",
       "de": "Felori",
@@ -35209,7 +35210,7 @@
     "hasCry": true
   },
   {
-    "name": "oinkologne",
+    "name": "oinkologne-male",
     "speciesNames": {
       "ja-Hrkt": "パフュートン",
       "roomaji": "Perfuton",
@@ -35281,12 +35282,12 @@
   {
     "name": "tarountula",
     "speciesNames": {
+      "de": "Tarundel",
       "ja-Hrkt": "タマンチュラ",
       "roomaji": "Tamantula",
       "ko": "타랜툴라",
       "zh-Hant": "團珠蛛",
       "fr": "Tissenboule",
-      "de": "Tarundel",
       "es": "Tarountula",
       "it": "Tarountula",
       "en": "Tarountula",
@@ -35522,7 +35523,7 @@
     "hasCry": true
   },
   {
-    "name": "maushold",
+    "name": "maushold-family-of-four",
     "speciesNames": {
       "ja-Hrkt": "イッカネズミ",
       "roomaji": "Ikkanezumi",
@@ -35710,7 +35711,7 @@
     "hasCry": true
   },
   {
-    "name": "squawkabilly",
+    "name": "squawkabilly-green-plumage",
     "speciesNames": {
       "ja-Hrkt": "イキリンコ",
       "roomaji": "Ikirinko",
@@ -36722,7 +36723,7 @@
     "hasCry": true
   },
   {
-    "name": "palafin",
+    "name": "palafin-zero",
     "speciesNames": {
       "ja-Hrkt": "イルカマン",
       "roomaji": "Irukaman",
@@ -37189,7 +37190,7 @@
     "hasCry": true
   },
   {
-    "name": "tatsugiri",
+    "name": "tatsugiri-curly",
     "speciesNames": {
       "ja-Hrkt": "シャリタツ",
       "roomaji": "Syaritatsu",
@@ -37318,7 +37319,7 @@
     "hasCry": true
   },
   {
-    "name": "dudunsparce",
+    "name": "dudunsparce-two-segment",
     "speciesNames": {
       "ja-Hrkt": "ノココッチ",
       "roomaji": "Nokokocchi",
@@ -37541,13 +37542,13 @@
   {
     "name": "sandy-shocks",
     "speciesNames": {
-      "es": "Pelarena",
       "ja-Hrkt": "スナノケガワ",
       "roomaji": "Sunanokegawa",
       "ko": "모래털가죽",
       "zh-Hant": "沙鐵皮",
       "fr": "Pelage-Sablé",
       "de": "Sandfell",
+      "es": "Pelarena",
       "it": "Peldisabbia",
       "en": "Sandy Shocks",
       "ja": "スナノケガワ",
@@ -38888,9 +38889,46 @@
     "hasCry": true
   },
   {
+    "name": "terapagos-stellar",
+    "speciesNames": {
+      "ja-Hrkt": "テラパゴス",
+      "ko": "테라파고스",
+      "zh-Hant": "太樂巴戈斯",
+      "fr": "Terapagos",
+      "de": "Terapagos",
+      "es": "Terapagos",
+      "it": "Terapagos",
+      "en": "Terapagos",
+      "ja": "テラパゴス",
+      "zh-Hans": "太乐巴戈斯"
+    },
+    "formNames": {
+      "ja-Hrkt": "ステラフォルム",
+      "fr": "Forme Stellaire",
+      "de": "Stellarform",
+      "es": "Forma astral",
+      "en": "Stellar Form",
+      "ja": "ステラフォルム"
+    },
+    "number": 1024,
+    "hp": 160,
+    "attack": 105,
+    "defense": 110,
+    "spAttack": 130,
+    "spDefense": 110,
+    "speed": 85,
+    "id": "10277",
+    "types": [
+      "normal"
+    ],
+    "hasShiny": true,
+    "hasCry": true
+  },
+  {
     "name": "pecharunt",
     "speciesNames": {
       "ja-Hrkt": "モモワロウ",
+      "ko": "복숭악동",
       "zh-Hant": "桃歹郎",
       "fr": "Pêchaminus",
       "de": "Infamomo",
