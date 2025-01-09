@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-01-08
+
+- Updated French translation
+
 ## 2025-01-05
 
 - Added Terapagos Stellar Form to the Pokédex

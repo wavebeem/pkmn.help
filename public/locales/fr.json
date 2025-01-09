@@ -69,7 +69,7 @@
       "imported": "Importer {{ n }} forme Pokémon depuis “{{ file }}”",
       "exported": "Pokémon exporté par défaut",
       "reset": "Pokémon chargé par défaut",
-      "errored": "Erreur de chargement CSV. Ne pas changer le nom des entêtes ."
+      "errored": "Erreur de chargement CSV. Ne pas changer le nom des entêtes."
     },
     "back": "Retour à l'onglet \"Couverture offensive\""
   },
@@ -77,7 +77,7 @@
     "chooseFirst": "Choisir le premier type",
     "chooseSecond": "Choisir le second type",
     "chooseThird": "Choisir le troisème type",
-    "takesXFrom": "Subit {{ x }} De",
+    "takesXFrom": "Subit {{ x }} de",
     "chooseAbility": "Choisir le talent",
     "chooseTeraType": "Choisir le type téracristal",
     "abilityNames": {
@@ -180,7 +180,7 @@
     },
     "searchByType": {
       "heading": "Recherche par type",
-      "description": "Voici quelques exemples de recherches par types"
+      "description": "Voici quelques exemples de recherches par types."
     },
     "searchExamples": {
       "type": {
@@ -193,7 +193,7 @@
       },
       "singleType": {
         "query": "Plante aucun",
-        "description": "Rechercher les Pokémon qui ont seulement le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)"
+        "description": "Rechercher les Pokémon qui ont seulement le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)."
       }
     },
     "back": "Revenir au Pokédex"
@@ -224,7 +224,7 @@
       },
       "typeCount": {
         "label": "Nombre de types",
-        "help": "Un Pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est rarement utilisé",
+        "help": "Un Pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est rarement utilisé.",
         "values": {
           "2": "Deux types (2)",
           "3": "Trois types (3)"
@@ -238,17 +238,17 @@
     "help": {
       "heading": "Aide",
       "serviceWorker": {
-        "description": "Ce bouton peut aider à résoudre les problèmes dans l’application",
+        "description": "Ce bouton peut aider à résoudre les problèmes dans l’application.",
         "button": "Réinitialiser"
       }
     },
     "privacy": {
       "heading": "Confidentialité",
-      "description": "Je ne diffuserais jamais de publicité ni ne volerais vos données personnelles. J'utilise <plausible>Plausible Analytics</plausible>, qui est autofinancé, indépendant, hébergé dans l'Union Européenne et ne stocke aucun cookie sur votre ordinateur"
+      "description": "Je ne diffuserais jamais de publicités ni ne volerais vos données personnelles. J'utilise <plausible>Plausible Analytics</plausible>, qui est autofinancé, indépendant, hébergé dans l'Union Européenne et ne stocke aucun cookie sur votre ordinateur."
     },
     "givingBack": {
       "heading": "Me remercier",
-      "description": "J'ai passé d'innombrables heures à améliorer ce site. Si vous appréciez ce que j'ai fait, veuillez envisager s’il vous plaît de faire un don à des organismes de bienfaisance qui soutiennent le BIPOC et les droits des transgenres."
+      "description": "J'ai passé d'innombrables heures à améliorer ce site. Si vous appréciez ce que j'ai fait, veuillez, s'il vous plaît, envisager de faire un don à des organismes de bienfaisance qui soutiennent la justice raciale et les droits des transgenres."
     },
     "thanks": {
       "heading": "Remerciements spéciaux",
