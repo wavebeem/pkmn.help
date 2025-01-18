@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-01-17
+
+- Updated Portuguese (Portugal) translation
+
 ## 2025-01-08
 
 - Updated French translation
