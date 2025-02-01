@@ -201,7 +201,7 @@
   "more": {
     "contact": {
       "heading": "聯繫我",
-      "intro": "你好，我是 <homepage>Sage Fennel</homepage>（他們），我製作了 神奇寶貝屬性計算器 (pkmn.help）。",
+      "intro": "你好，我是 <homepage>Sage</homepage>（他們），我製作了 神奇寶貝屬性計算器 (pkmn.help）。",
       "email": "請將您的想法和感謝發送到 <email>pkmn@wavebeem.com</email>。"
     },
     "settings": {

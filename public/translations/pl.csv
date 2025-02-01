@@ -127,7 +127,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,trawiasty nic
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Szukaj Pokémonów, które są tylko typu trawiastego, bez drugiego typu (np. Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Wróc do Pokédexu
 more.contact.heading,Contact me,Skontaktuj się ze mną
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Cześć, jestem <homepage>Sage Fennel</homepage> (oni) i stworzyłem kalkulator typów Pokémonów (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Cześć, jestem <homepage>Sage</homepage> (oni) i stworzyłem kalkulator typów Pokémonów (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Wyślij swoje myśli i podziękowania e-mailem na adres <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Ustawienia
 more.settings.language.label,Language,Język
@@ -140,6 +140,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Domyślne ustawienie
 more.settings.theme.values.light,Light,Tryb Jasny
 more.settings.theme.values.dark,Dark,Tryb Ciemny
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,Ilość typów
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Pokémony mogą przez krótki czas mieć trzy typy jednocześnie, jeśli zostaną trafieni Klątwą Lasu lub Cukierek albo psikus. Pole trzeciego typu jest domyślnie ukryte, ponieważ jest rzadko używane."
 more.settings.typeCount.values.2,Two types (2),Dwa typy (2)

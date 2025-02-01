@@ -127,7 +127,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,erba nessuno
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Cerca i Pokémon che hanno solo il tipo erba, senza tipo secondario (es: Tangela, Chikorita)."
 pokedexHelp.back,Back to Pokédex,Torna al Pokédex
 more.contact.heading,Contact me,Contattami
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Ciao, sono <homepage>Sage Fennel</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Ciao, sono <homepage>Sage</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Per favore, invia un'e-mail con i tuoi pensieri e ringraziamenti a <email>pkmn@wavebeem.com</email>."
 more.settings.heading,Settings,Impostazioni
 more.settings.language.label,Language,Lingua
@@ -140,6 +140,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Predefinito di sistema
 more.settings.theme.values.light,Light,Chiaro
 more.settings.theme.values.dark,Dark,Scuro
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,Numero di tipi
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Un Pokémon può avere temporaneamente tre tipi in contemporanea se viene colpito da Boscomalocchio o Halloween. Il campo del terzo tipo di solito è nascosto poiché è raramente usato.
 more.settings.typeCount.values.2,Two types (2),Due tipi (2)

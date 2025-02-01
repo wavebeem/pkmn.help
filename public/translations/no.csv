@@ -127,7 +127,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,grass ingen
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Søk for Pokémon som bare er grass type, ingen andre type (f.eks. Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Tilbake til Pokédexen
 more.contact.heading,Contact me,Ta kontakt med meg
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hei, jeg er <homepage>Sage Fennel</homepage> (de/dem), og jeg har laget Pokémon Type Kalkulator (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hei, jeg er <homepage>Sage</homepage> (de/dem), og jeg har laget Pokémon Type Kalkulator (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Plis send meg eposter om dine tanker og takker til <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Instillinger
 more.settings.language.label,Language,Språk
@@ -140,6 +140,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Systemstandard
 more.settings.theme.values.light,Light,Lyst
 more.settings.theme.values.dark,Dark,Mørkt
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,Mengde typer
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon kan kort ha tre typer samtidig hvis de treffes med Skogens Forbannelse eller Knask-eller-Knep. Det tredje typefeltet er skjult som standard siden den sjelden brukes.
 more.settings.typeCount.values.2,Two types (2),To typer (2)

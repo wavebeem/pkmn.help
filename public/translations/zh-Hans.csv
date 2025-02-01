@@ -127,7 +127,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,草 无
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",搜索只有草属性，没有第二属性的宝可梦（例：蔓藤怪、菊草叶、裙儿小姐）。
 pokedexHelp.back,Back to Pokédex,返回图鉴
 more.contact.heading,Contact me,联系我
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",你好，我是 <homepage>Sage Fennel</homepage>（they/them)，是宝可梦属性计算器（pkmn.help）的作者。
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",你好，我是 <homepage>Sage</homepage>（they/them)，是宝可梦属性计算器（pkmn.help）的作者。
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,请将你的想法和感谢寄到 <email>pkmn@wavebeem.com</email>。
 more.settings.heading,Settings,设定
 more.settings.language.label,Language,语言
@@ -140,6 +140,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,系统默认
 more.settings.theme.values.light,Light,浅色主题
 more.settings.theme.values.dark,Dark,深色主题
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,属性的数量
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,如果宝可梦被森林诅咒或万圣夜攻击后则会被追加第三种属性。由于例子很少的原因，第三属性的栏位默认为隐藏。
 more.settings.typeCount.values.2,Two types (2),两种属性（2）

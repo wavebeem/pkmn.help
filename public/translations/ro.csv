@@ -127,7 +127,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,iarba nimic
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Căutați Pokémon care sunt doar tip iarbă, fără al doilea tip (de exemplu, Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Înapoi la Pokedex
 more.contact.heading,Contact me,Contacteaza-ma
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Bună, sunt <homepage>Sage Fennel</homepage> (ei) și am creat Calculator tip Pokémon (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Bună, sunt <homepage>Sage</homepage> (ei) și am creat Calculator tip Pokémon (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Trimite idei si mulțumiri la <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Setari
 more.settings.language.label,Language,Limbi
@@ -140,6 +140,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Mod implicit
 more.settings.theme.values.light,Light,Lumina
 more.settings.theme.values.dark,Dark,Întunecat
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,Numarul de tipuri
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Pokémonul poate avea trei tipuri simultan dacă este lovit cu Blestemul Forests sau Trick-or-Treat. Al treilea câmp de tip este ascuns în mod implicit, deoarece este rar folosit."
 more.settings.typeCount.values.2,Two types (2),Doua tipuri (2)

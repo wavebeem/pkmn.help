@@ -127,7 +127,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,grass none
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Back to Pokédex
 more.contact.heading,Contact me,Contact me
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Settings
 more.settings.language.label,Language,Language
@@ -140,6 +140,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,System default
 more.settings.theme.values.light,Light,Light
 more.settings.theme.values.dark,Dark,Dark
+more.settings.theme.values.black,Black (OLED),Black (OLED)
 more.settings.typeCount.label,Number of types,Number of types
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.
 more.settings.typeCount.values.2,Two types (2),Two types (2)
