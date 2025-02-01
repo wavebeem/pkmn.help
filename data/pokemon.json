@@ -1323,6 +1323,7 @@
       "zh-Hans": "皮卡丘"
     },
     "formNames": {
+      "ja-Hrkt": "ハードロック・ピカチュウ",
       "fr": "Pikachu Rockeur",
       "de": "Cosplayform",
       "en": "Pikachu Rock Star"
@@ -1358,6 +1359,7 @@
       "zh-Hans": "皮卡丘"
     },
     "formNames": {
+      "ja-Hrkt": "マダム・ピカチュウ",
       "fr": "Pikachu Lady",
       "de": "Cosplayform",
       "en": "Pikachu Belle"
@@ -1393,6 +1395,7 @@
       "zh-Hans": "皮卡丘"
     },
     "formNames": {
+      "ja-Hrkt": "アイドル・ピカチュウ",
       "fr": "Pikachu Star",
       "de": "Cosplayform",
       "en": "Pikachu Pop Star"
@@ -1428,6 +1431,7 @@
       "zh-Hans": "皮卡丘"
     },
     "formNames": {
+      "ja-Hrkt": "ドクター・ピカチュウ",
       "fr": "Pikachu Docteur",
       "de": "Cosplayform",
       "en": "Pikachu Ph.D."
@@ -1463,6 +1467,7 @@
       "zh-Hans": "皮卡丘"
     },
     "formNames": {
+      "ja-Hrkt": "マスクド・ピカチュウ",
       "fr": "Pikachu Catcheur",
       "de": "Cosplayform",
       "en": "Pikachu Libre"
@@ -1498,6 +1503,7 @@
       "zh-Hans": "皮卡丘"
     },
     "formNames": {
+      "ja-Hrkt": "おきがえピカチュウ",
       "fr": "Pikachu Cosplayeur",
       "de": "Cosplayform",
       "en": "Cosplay Pikachu"
@@ -3237,13 +3243,13 @@
       "zh-Hans": "猫老大"
     },
     "formNames": {
+      "it": "Forma di Alola",
       "ja-Hrkt": "アローラのすがた",
       "ko": "알로라의 모습",
       "zh-Hant": "阿羅拉的樣子",
       "fr": "Forme d’Alola",
       "de": "Alola-Form",
       "es": "Forma de Alola",
-      "it": "Forma di Alola",
       "en": "Alolan Form",
       "ja": "アローラのすがた",
       "zh-Hans": "阿罗拉的样子"
@@ -6741,7 +6747,7 @@
     "formNames": {
       "ja-Hrkt": "パルデアのすがた",
       "fr": "Forme de Paldéa",
-      "en": "Paldean Form",
+      "en": "Paldean Form (Combat Breed)",
       "ja": "パルデアのすがた"
     },
     "number": 128,
@@ -6777,7 +6783,7 @@
     "formNames": {
       "ja-Hrkt": "パルデアのすがた",
       "fr": "Forme de Paldéa",
-      "en": "Paldean Form",
+      "en": "Paldean Form (Blaze Breed)",
       "ja": "パルデアのすがた"
     },
     "number": 128,
@@ -6814,7 +6820,7 @@
     "formNames": {
       "ja-Hrkt": "パルデアのすがた",
       "fr": "Forme de Paldéa",
-      "en": "Paldean Form",
+      "en": "Paldean Form (Aqua Breed)",
       "ja": "パルデアのすがた"
     },
     "number": 128,
@@ -13953,6 +13959,7 @@
       "zh-Hans": "雷电兽"
     },
     "formNames": {
+      "zh-Hans": "超级雷电兽",
       "ja-Hrkt": "メガライボルト",
       "ko": "메가썬더볼트",
       "zh-Hant": "超級雷電獸",
@@ -13961,8 +13968,7 @@
       "es": "Mega-Manectric",
       "it": "MegaManectric",
       "en": "Mega Manectric",
-      "ja": "メガライボルト",
-      "zh-Hans": "超级雷电兽"
+      "ja": "メガライボルト"
     },
     "number": 310,
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10055.png",
@@ -29823,9 +29829,9 @@
       "zh-Hans": "南瓜怪人"
     },
     "formNames": {
-      "zh-Hant": "特大尺寸",
       "ja-Hrkt": "とくだいサイズ",
       "ko": "특대 사이즈",
+      "zh-Hant": "特大尺寸",
       "fr": "Taille Ultra",
       "de": "Größe XL",
       "es": "Tamaño Extragrande",
@@ -36854,6 +36860,7 @@
     },
     "formNames": {
       "ja-Hrkt": "がんさくフォルム",
+      "fr": "Forme Contrefaçon",
       "de": "Fälschungsform",
       "en": "Phony Form",
       "ja": "がんさくフォルム"
@@ -37374,11 +37381,11 @@
       "ja-Hrkt": "ミルキィバニラ",
       "ko": "밀키바닐라",
       "zh-Hant": "奶香香草",
-      "fr": "Lait Vanille",
+      "fr": "Lait Vanille Fraise en Sucre",
       "de": "Vanille-Creme",
       "es": "Crema de Vainilla",
       "it": "Lattevaniglia",
-      "en": "Vanilla Cream",
+      "en": "Vanilla Cream Strawberry Sweet",
       "ja": "ミルキィバニラ",
       "zh-Hans": "奶香香草"
     },
@@ -39341,9 +39348,9 @@
   {
     "name": "sprigatito",
     "speciesNames": {
-      "ko": "나오하",
       "ja-Hrkt": "ニャオハ",
       "roomaji": "Nyahoja",
+      "ko": "나오하",
       "zh-Hant": "新葉喵",
       "fr": "Poussacha",
       "de": "Felori",
@@ -39652,7 +39659,7 @@
     ]
   },
   {
-    "name": "oinkologne",
+    "name": "oinkologne-male",
     "speciesNames": {
       "ja-Hrkt": "パフュートン",
       "roomaji": "Perfuton",
@@ -39726,12 +39733,12 @@
   {
     "name": "tarountula",
     "speciesNames": {
+      "de": "Tarundel",
       "ja-Hrkt": "タマンチュラ",
       "roomaji": "Tamantula",
       "ko": "타랜툴라",
       "zh-Hant": "團珠蛛",
       "fr": "Tissenboule",
-      "de": "Tarundel",
       "es": "Tarountula",
       "it": "Tarountula",
       "en": "Tarountula",
@@ -39975,7 +39982,7 @@
     ]
   },
   {
-    "name": "maushold",
+    "name": "maushold-family-of-four",
     "speciesNames": {
       "ja-Hrkt": "イッカネズミ",
       "roomaji": "Ikkanezumi",
@@ -40205,7 +40212,7 @@
     ]
   },
   {
-    "name": "squawkabilly",
+    "name": "squawkabilly-green-plumage",
     "speciesNames": {
       "ja-Hrkt": "イキリンコ",
       "roomaji": "Ikirinko",
@@ -41361,7 +41368,7 @@
     ]
   },
   {
-    "name": "palafin",
+    "name": "palafin-zero",
     "speciesNames": {
       "ja-Hrkt": "イルカマン",
       "roomaji": "Irukaman",
@@ -41843,7 +41850,7 @@
     ]
   },
   {
-    "name": "tatsugiri",
+    "name": "tatsugiri-curly",
     "speciesNames": {
       "ja-Hrkt": "シャリタツ",
       "roomaji": "Syaritatsu",
@@ -42050,7 +42057,7 @@
     ]
   },
   {
-    "name": "dudunsparce",
+    "name": "dudunsparce-two-segment",
     "speciesNames": {
       "ja-Hrkt": "ノココッチ",
       "roomaji": "Nokokocchi",
@@ -42316,13 +42323,13 @@
   {
     "name": "sandy-shocks",
     "speciesNames": {
-      "es": "Pelarena",
       "ja-Hrkt": "スナノケガワ",
       "roomaji": "Sunanokegawa",
       "ko": "모래털가죽",
       "zh-Hant": "沙鐵皮",
       "fr": "Pelage-Sablé",
       "de": "Sandfell",
+      "es": "Pelarena",
       "it": "Peldisabbia",
       "en": "Sandy Shocks",
       "ja": "スナノケガワ",
@@ -42983,7 +42990,7 @@
     },
     "formNames": {
       "ja-Hrkt": "せいげんけいたい",
-      "fr": "Forme de Vol",
+      "fr": "Forme Limitée",
       "en": "Limited Build",
       "ja": "せいげんけいたい"
     },
@@ -43020,6 +43027,7 @@
     },
     "formNames": {
       "ja-Hrkt": "しっそうけいたい",
+      "fr": "Forme de Course",
       "en": "Sprinting Build",
       "ja": "しっそうけいたい"
     },
@@ -43056,6 +43064,7 @@
     },
     "formNames": {
       "ja-Hrkt": "ゆうえいけいたい",
+      "fr": "Forme de Nage",
       "en": "Swimming Build",
       "ja": "ゆうえいけいたい"
     },
@@ -43092,6 +43101,7 @@
     },
     "formNames": {
       "ja-Hrkt": "かっくうけいたい",
+      "fr": "Forme de Vol",
       "en": "Gliding Build",
       "ja": "かっくうけいたい"
     },
@@ -44022,10 +44032,10 @@
     "spriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10277.png",
     "shinySpriteURL": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10277.png",
     "cryURL": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10277.ogg",
-    "hp": 95,
-    "attack": 95,
+    "hp": 160,
+    "attack": 105,
     "defense": 110,
-    "spAttack": 105,
+    "spAttack": 130,
     "spDefense": 110,
     "speed": 85,
     "id": "10277",
@@ -44037,6 +44047,7 @@
     "name": "pecharunt",
     "speciesNames": {
       "ja-Hrkt": "モモワロウ",
+      "ko": "복숭악동",
       "zh-Hant": "桃歹郎",
       "fr": "Pêchaminus",
       "de": "Infamomo",
