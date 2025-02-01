@@ -155,8 +155,14 @@ export function Layout(): ReactNode {
   const [theme] = useTheme();
   const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const isDark = theme === "dark" || (theme === "auto" && isDarkMode);
-  const themeColor = isDark ? "hsl(0, 70%, 40%)" : "hsl(0, 90%, 45%)";
-  const themeAuto = isDark ? "dark" : "light";
+  let dataTheme = theme;
+  if (theme === "auto") {
+    dataTheme = isDark ? "dark" : "light";
+  }
+  const themeColor =
+    dataTheme === "black" || dataTheme === "dark"
+      ? "hsl(0, 70%, 35%)"
+      : "hsl(0, 90%, 45%)";
 
   // Load Pokédex JSON
   const jsonURL = new URL("data-pkmn.json", publicPath).href;
@@ -214,7 +220,7 @@ export function Layout(): ReactNode {
     <AppContextProvider value={appContext}>
       <HelmetProvider>
         <Helmet>
-          <html data-theme={themeAuto} />
+          <html data-theme={dataTheme} />
           <meta name="theme-color" content={themeColor} />
           <title>{t("title")}</title>
         </Helmet>

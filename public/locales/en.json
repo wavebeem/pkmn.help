@@ -219,7 +219,8 @@
         "values": {
           "auto": "System default",
           "light": "Light",
-          "dark": "Dark"
+          "dark": "Dark",
+          "black": "Black (OLED)"
         }
       },
       "typeCount": {

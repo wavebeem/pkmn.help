@@ -89,18 +89,18 @@
 }
 
 :root[data-theme="dark"] {
-  --color-bg1: hsl(0 0% 25%);
-  --color-bg2: hsl(0 0% 20%);
-  --color-bg3: hsl(0 0% 30%);
+  --color-bg1: hsl(0 0% 22%);
+  --color-bg2: hsl(0 0% 17%);
+  --color-bg3: hsl(0 0% 27%);
   --color-fg1: hsl(0 0% 92%);
   --color-fg2: hsl(0 0% 82%);
   --color-fg3: hsl(0 0% 72%);
   --color-fg4: hsl(0 0% 62%);
-  --color-pokeball: hsl(0 70% 40%);
-  --color-button1: hsl(0 0% 28%);
-  --color-button1b: hsl(0 0% 24%);
-  --color-button-hover1: hsl(0 0% 32%);
-  --color-button-hover1b: hsl(0 0% 28%);
+  --color-pokeball: hsl(0 70% 35%);
+  --color-button1: hsl(0 0% 25%);
+  --color-button1b: hsl(0 0% 21%);
+  --color-button-hover1: hsl(0 0% 29%);
+  --color-button-hover1b: hsl(0 0% 25%);
   --color-badge: hsl(120 60% 60%);
   --color-link: hsl(180 100% 70%);
   --color-link-hover: hsl(180 80% 95%);
@@ -114,20 +114,46 @@
   color-scheme: dark;
 }
 
+:root[data-theme="black"] {
+  --color-bg1: hsl(0 0% 0%);
+  --color-bg2: hsl(0 0% 0%);
+  --color-bg3: hsl(0 0% 20%);
+  --color-fg1: hsl(0 0% 92%);
+  --color-fg2: hsl(0 0% 82%);
+  --color-fg3: hsl(0 0% 72%);
+  --color-fg4: hsl(0 0% 62%);
+  --color-pokeball: hsl(0 0% 0%);
+  --color-button1: hsl(0 0% 14%);
+  --color-button1b: hsl(0 0% 10%);
+  --color-button-hover1: hsl(0 0% 18%);
+  --color-button-hover1b: hsl(0 0% 14%);
+  --color-badge: hsl(120 60% 60%);
+  --color-link: hsl(180 100% 50%);
+  --color-link-hover: hsl(180 80% 95%);
+  --color-border1: hsl(0 0% 45%);
+  --color-border2: hsl(0 0% 25%);
+  --color-border3: hsl(0 0% 20%);
+  --color-vibrant-border: hsl(0 0% 100% / 0.4);
+  --color-vibrant-border1: hsl(0 0% 100% / 0.8);
+  --color-scroll-fg: hsl(0 0% 70%);
+  --color-scroll-bg: hsl(0 0% 0%);
+  color-scheme: dark;
+}
+
 @media (prefers-color-scheme: dark) {
   :root[data-theme="auto"] {
-    --color-bg1: hsl(0 0% 25%);
-    --color-bg2: hsl(0 0% 20%);
-    --color-bg3: hsl(0 0% 30%);
+    --color-bg1: hsl(0 0% 22%);
+    --color-bg2: hsl(0 0% 17%);
+    --color-bg3: hsl(0 0% 27%);
     --color-fg1: hsl(0 0% 92%);
     --color-fg2: hsl(0 0% 82%);
     --color-fg3: hsl(0 0% 72%);
     --color-fg4: hsl(0 0% 62%);
-    --color-pokeball: hsl(10 70% 40%);
-    --color-button1: hsl(0 0% 28%);
-    --color-button1b: hsl(0 0% 24%);
-    --color-button-hover1: hsl(0 0% 32%);
-    --color-button-hover1b: hsl(0 0% 28%);
+    --color-pokeball: hsl(0 70% 35%);
+    --color-button1: hsl(0 0% 25%);
+    --color-button1b: hsl(0 0% 21%);
+    --color-button-hover1: hsl(0 0% 29%);
+    --color-button-hover1b: hsl(0 0% 25%);
     --color-badge: hsl(120 60% 60%);
     --color-link: hsl(180 100% 70%);
     --color-link-hover: hsl(180 80% 95%);

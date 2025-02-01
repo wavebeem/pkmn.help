@@ -174,6 +174,9 @@ export function ScreenMore(): ReactNode {
               <option value="dark">
                 {t("more.settings.theme.values.dark")}
               </option>
+              <option value="black">
+                {t("more.settings.theme.values.black")}
+              </option>
             </Select>
 
             <Select
