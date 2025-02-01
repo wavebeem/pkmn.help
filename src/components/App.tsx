@@ -159,10 +159,12 @@ export function Layout(): ReactNode {
   if (theme === "auto") {
     dataTheme = isDark ? "dark" : "light";
   }
-  const themeColor =
-    dataTheme === "black" || dataTheme === "dark"
-      ? "hsl(0, 70%, 35%)"
-      : "hsl(0, 90%, 45%)";
+  let themeColor = "hsl(0, 90%, 45%)";
+  if (dataTheme === "black") {
+    themeColor = "hsl(0, 0%, 0%)";
+  } else if (dataTheme === "dark") {
+    themeColor = "hsl(0, 70%, 35%)";
+  }
 
   // Load Pokédex JSON
   const jsonURL = new URL("data-pkmn.json", publicPath).href;

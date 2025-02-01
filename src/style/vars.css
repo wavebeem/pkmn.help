@@ -130,9 +130,9 @@
   --color-badge: hsl(120 60% 60%);
   --color-link: hsl(180 100% 50%);
   --color-link-hover: hsl(180 80% 95%);
-  --color-border1: hsl(0 0% 45%);
-  --color-border2: hsl(0 0% 25%);
-  --color-border3: hsl(0 0% 20%);
+  --color-border1: hsl(0 0% 36%);
+  --color-border2: hsl(0 0% 20%);
+  --color-border3: hsl(0 0% 15%);
   --color-vibrant-border: hsl(0 0% 100% / 0.4);
   --color-vibrant-border1: hsl(0 0% 100% / 0.8);
   --color-scroll-fg: hsl(0 0% 70%);
