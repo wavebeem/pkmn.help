@@ -104,7 +104,7 @@
   --color-badge: hsl(120 60% 60%);
   --color-link: hsl(180 100% 70%);
   --color-link-hover: hsl(180 80% 95%);
-  --color-border1: hsl(0 0% 57%);
+  --color-border1: hsl(0 0% 52%);
   --color-border2: hsl(0 0% 37%);
   --color-border3: hsl(0 0% 32%);
   --color-vibrant-border: hsl(0 0% 100% / 0.4);
@@ -157,7 +157,7 @@
     --color-badge: hsl(120 60% 60%);
     --color-link: hsl(180 100% 70%);
     --color-link-hover: hsl(180 80% 95%);
-    --color-border1: hsl(0 0% 57%);
+    --color-border1: hsl(0 0% 52%);
     --color-border2: hsl(0 0% 37%);
     --color-border3: hsl(0 0% 32%);
     --color-vibrant-border: hsl(0 0% 100% / 0.4);
