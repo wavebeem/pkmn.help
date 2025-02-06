@@ -1,0 +1,326 @@
+{
+  "title": "Máy Tính Toán Hệ trong Pokémon",
+  "navigation": {
+    "offense": "Tấn Công",
+    "defense": "Phòng Thủ",
+    "pokedex": "Pokédex",
+    "more": "Thêm"
+  },
+  "offense": {
+    "chooseTypes": "Chọn hệ (một hoặc hai)",
+    "dealsXTo": "Gây {{ x }} sát thương đến hệ",
+    "abilities": {
+      "choose": "Chọn đặc tính"
+    },
+    "specialMoves": {
+      "choose": "Chọn tuyệt kỹ đặc biệt",
+      "names": {
+        "freeze-dry": "Đông Khô",
+        "thousand_arrows": "Ngàn Mũi Tên"
+      }
+    },
+    "coverage": {
+      "heading": "Danh sách khả năng bao phủ của tất cả Pokémon trong Pokédex",
+      "edit": "Sửa danh sách",
+      "weakness": "Các Pokémon yếu",
+      "normal": "Các Pokémon không yếu hay kháng cự",
+      "resistance": "Các Pokémon kháng cự"
+    },
+    "teraPokemon": "Terastallization",
+    "coverageList": {
+      "empty": "Không có Pokémon nào hoặc không có hệ được chọn",
+      "weakness": {
+        "heading": "Danh sách các Pokémon yếu"
+      },
+      "normal": {
+        "heading": "Danh sách các Pokémon không yếu hay kháng cự"
+      },
+      "resistance": {
+        "heading": "Danh sách các Pokémon kháng cự"
+      }
+    }
+  },
+  "coverage": {
+    "heading": "Danh sách khả năng bao phủ hệ của tất cả Pokémon trong Pokédex",
+    "paragraph1": "Nhập/xuất tệp CSV Pokédex tùy chỉnh để xem khả năng bao phủ hệ của các Pokémon khác nhau. Tạo tệp CSV tùy chỉnh chỉ với Pokémon cấp OU hoặc thậm chí tạo Pokémon của riêng bạn từ đầu.",
+    "paragraph2": "Dữ liệu CSV được tải theo tên tiêu đề cột chứ không phải theo thứ tự cột, vì vậy bạn có thể thêm hoặc sắp xếp lại các cột nếu muốn (ví dụ: thêm cột “cấp” hoặc cột “ghi chú”).",
+    "paragraph3": "Các tệp CSV có thể được chỉnh sửa bằng Google Trang tính, Microsoft Excel, OpenOffice, LibreOffice, Notepad, v.v.",
+    "csvHeaders": {
+      "number": "Số",
+      "name": "Tên",
+      "type1": "Hệ 1",
+      "type2": "Hệ 2",
+      "type3": "Hệ 3"
+    },
+    "export": {
+      "button": "Xuất tệp",
+      "description": "Xuất Pokédex mặc định sang tệp CSV"
+    },
+    "import": {
+      "button": "Nhập",
+      "description": "Nhập tệp CSV Pokédex đã chỉnh sửa"
+    },
+    "reset": {
+      "button": "Reset",
+      "description": "Reset về Pokédex mặc định"
+    },
+    "filename": "pkmn.help bao phủ hệ.csv",
+    "status": {
+      "imported": "Nhập {{ n }} hình dạng của một Pokémon từ \"{{ tệp }}\"",
+      "exported": "Xuất tệp các hình dạng Pokémon mặc định",
+      "reset": "Load các hình dạng Pokémon mặc định",
+      "errored": "Lỗi load CSV. Bạn đừng thay đổi tiêu đề."
+    },
+    "back": "Quay lại trang Tấn Công"
+  },
+  "defense": {
+    "chooseFirst": "Chọn hệ đầu tiên",
+    "chooseSecond": "Chọn hệ thứ hai",
+    "chooseThird": "Chọn hệ thứ ba",
+    "takesXFrom": "Nhận {{ x }} dame từ",
+    "chooseAbility": "Chọn Đặc Tính",
+    "chooseTeraType": "Chọn hệ tera",
+    "abilityNames": {
+      "none": "Không có",
+      "tinted_lens": "Ống Kính Màu (Tinted Lens)",
+      "scrappy": "Can Đảm (Scrappy)",
+      "tera_shell": "Lớp Vỏ Tera (Tera Shell)",
+      "filter": "Bộ Lọc (Filter)",
+      "wonder_guard": "Phòng Ngự Thần Kì (Wonder Guard)",
+      "delta_stream": "Luồng Gió Delta (Delta Stream)",
+      "fluffy": "Lông Xốp (Fluffy)",
+      "purifying_salt": "Muối Tinh Khiết (Purifying Salt)",
+      "heatproof": "Cách Nhiệt (Heatproof)",
+      "water_bubble": "Bong Bóng Nước (Water Bubble)",
+      "thick_fat": "Mỡ Dày (Thick Fat)",
+      "earth_eater": "Ăn Đất (Earth Eater)",
+      "levitate": "Lơ Lửng (Levitate)",
+      "flash_fire": "Tiếp Lửa (Flash Fire)",
+      "well_baked_body": "Cơ Thể Nướng Kỹ (Well-Baked Body)",
+      "dry_skin": "Da Khô (Dry Skin)",
+      "storm_drain": "Thoát Nước Mưa (Storm Drain)",
+      "water_absorb": "Trữ Nước (Water Absorb)",
+      "sap_sipper": "Ăn Cỏ (Sap Sipper)",
+      "lightning_rod": "Cột Thu Lôi (Lighting Rod)",
+      "motor_drive": "Đông Cơ Điện (Motor Drive)",
+      "volt_absorb": "Trữ Điện (Volt Absorb)"
+    },
+    "mode": {
+      "heading": "Chọn chế độ",
+      "solo": "Solo",
+      "team": "Team"
+    },
+    "team": {
+      "tableHeading": "Danh sách các matchup",
+      "heading": "Chỉnh sửa đội Pokémon",
+      "add": "Thêm Pokémon",
+      "empty": "Không có Pokémon nào được chọn",
+      "displayType": "Chọn bảng định dạng",
+      "weak": "Yếu thế",
+      "resist": "Kháng cự",
+      "simple": "Đơn giản",
+      "complex": "Cầu kì",
+      "type": "Hệ",
+      "edit": "Chỉnh sửa",
+      "remove": "Xóa"
+    }
+  },
+  "pokedex": {
+    "search": {
+      "description": "Tìm kiếm bằng tên, số, hoặc hệ",
+      "help": "Trợ giúp",
+      "helpLong": "Trợ giúp, tìm kiếm Pokédex",
+      "notFound": "Không tìm kiếm được Pokémon"
+    },
+    "offense": {
+      "text": "Tấn Công"
+    },
+    "defense": {
+      "text": "Phòng Thủ"
+    },
+    "cry": {
+      "text": "Tiếng kêu"
+    },
+    "shiny": {
+      "text": "Shiny"
+    },
+    "pagination": {
+      "next": "Tiếp",
+      "nextLong": "Tiếp",
+      "previous": "Trước",
+      "previousLong": "Trước",
+      "firstLong": "Trang đầu",
+      "lastLong": "Trang cuối"
+    },
+    "stats": {
+      "hp": "HP/Máu",
+      "hpLong": "HP/Máu",
+      "attack": "Tấn Công VL",
+      "attackLong": "Tấn Công Vật Lý",
+      "defense": "Phòng Thủ VL",
+      "defenseLong": "Phòng Thủ Vật Lý",
+      "specialAttack": "Tấn Công ĐB",
+      "specialAttackLong": "Tấn Công Đặc Biệt",
+      "specialDefense": "Phòng Thủ ĐB",
+      "specialDefenseLong": "Phòng Thủ Đặc Biệt",
+      "speed": "Tốc Độ",
+      "speedLong": "Tốc Độ",
+      "total": "Tổng Chỉ Số (BST)",
+      "totalLong": "Tổng Chỉ Số (BST)"
+    }
+  },
+  "pokedexHelp": {
+    "searchByName": {
+      "heading": "Tìm kiếm bằng tên",
+      "description": "Bạn có thể tìm kiếm một Pokémon bằng tên. Nếu bạn chỉ có thể nhớ mang máng tên, hệ thống tìm kiếm có thể vẫn sẽ giúp bạn tìm được Pokemon bạn muốn, trừ khi bạn đánh sai tên."
+    },
+    "searchByNumber": {
+      "heading": "Tìm kiếm bằng số Pokédex",
+      "description": "Tìm kiếm bằng số Pokédex. Ví dụ: Nếu bạn muốn search Bulbasaur, đánh '1', thay vì '#001'."
+    },
+    "searchByType": {
+      "heading": "Tìm kiếm bằng hệ",
+      "description": "Đây là một vài ví dụ cách để search bằng tên hệ."
+    },
+    "searchExamples": {
+      "type": {
+        "query": "Lửa",
+        "description": "Tìm kiếm các Pokémon hệ Lửa trong tất cả forms (hình dạng) (ví dụ: Charmander, Charizard, Rotom)."
+      },
+      "doubleType": {
+        "query": "Nước Bay",
+        "description": "Tìm kiếm các Pokémon thuộc song hệ Nước/Bay (ví dụ: Gyarados) hay Bay/Nước (ví dụ: Cramorant)."
+      },
+      "singleType": {
+        "query": "Cỏ [Trống]",
+        "description": "Tìm kiếm các Pokémon chỉ thuộc hệ Cỏ và không hệ thứ hai nào khác (ví dụ: Tangela, Chikorita, Lilligant)."
+      }
+    },
+    "back": "Quay lại trang Pokédex"
+  },
+  "more": {
+    "contact": {
+      "heading": "Liên hệ với tôi",
+      "intro": "Xin chào, tôi là <homepage>Sage Fennel</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này.",
+      "email": "Bạn có thể email bất kể câu hỏi và cảm ơn đến <email>pkmn@wavebeem.com</email>."
+    },
+    "settings": {
+      "heading": "Cài Đặt",
+      "language": {
+        "label": "Ngôn Ngữ",
+        "default": "Tự động nhận dạng ngôn ngữ",
+        "official": "Ngôn ngữ chính thức",
+        "unofficial": "Ngôn ngữ không chính thức",
+        "helpText": "Dịch vụ hỗ trợ ngôn ngữ hiện tại chưa hoàn thành. Xin email tôi"
+      },
+      "theme": {
+        "label": "Theme",
+        "help": "\"Hệ thống mặc định\" sẽ tự động thay đổi dựa trên cài đặt của bạn.",
+        "values": {
+          "auto": "Hệ thống mặc định",
+          "light": "Sáng",
+          "dark": "Tối"
+        }
+      },
+      "typeCount": {
+        "label": "Số lượng hệ",
+        "help": "Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra trong game của nó.",
+        "values": {
+          "2": "Hai hệ (2)",
+          "3": "Ba hệ (3)"
+        }
+      }
+    },
+    "changes": {
+      "heading": "Có gì mới?",
+      "description": "Xem các tin tức trong <changelog>changelog</changelog>."
+    },
+    "help": {
+      "heading": "Hỗ Trợ",
+      "serviceWorker": {
+        "description": "Nếu bạn gặp vấn đề trong app, hãy ấn nút này.",
+        "button": "Khởi Động lại"
+      }
+    },
+    "privacy": {
+      "heading": "Riêng Tư",
+      "description": "Tôi sẽ không bao giờ chạy ad hay trộm thông tin riêng tư của bạn. Tôi dùng <plausible>Plausible Analytics</plausible>, một trang web độc lập tự tài trợ ở Liên Minh Châu Âu (EU) không dự trữ cookie vào máy tính của bạn."
+    },
+    "givingBack": {
+      "heading": "Bày tỏ đánh giá",
+      "description": "Tôi đã dành bao thời gian cải thiện trang web này. Nếu bạn đánh giá cao thành quả của tôi, nếu có thể, xin bạn quyên góp cho các từ thiện chống phân biệt người da màu và người chuyển giới."
+    },
+    "thanks": {
+      "heading": "Chân thành cảm ơn đến",
+      "sections": {
+        "da": "Bản dịch tiếng Đan Mạch",
+        "ru": "Bản dịch tiếng Nga",
+        "kk": "Bản dịch tiếng Kazakh",
+        "pt-PT": "Bản dịch tiếng Bồ Đào Nha (Châu Âu)",
+        "pt-BR": "Bản dịch tiếng Bồ Đào Nha (Brazil)",
+        "zh-Hans": "Bản dịch tiếng Trung giản thể",
+        "zh-Hant": "Bản dịch tiếng Trung truyền thống",
+        "no": "Bản dịch tiếng Na Uy",
+        "ro": "Bản dịch tiếng Romania",
+        "pl": "Bản dịch tiếng Ba Lan",
+        "fr": "Bản dịch tiếng Pháp",
+        "de": "Bản dịch tiếng Đức",
+        "it": "Bản dịch tiếng Ý",
+        "ko": "Bản dịch tiếng Hàn",
+        "ja": "Bản dịch tiếng Nhật",
+        "nl": "Bản dịch tiếng Hà Lan",
+        "testing": "Thử Nghiệm",
+        "other": "Nhiều các fan Pokémon ẩn danh"
+      }
+    },
+    "openSource": {
+      "heading": "Nguồn mở",
+      "description": "Bản code có sẵn trên <github>GitHub</github>."
+    },
+    "legalInfo": {
+      "heading": "Thông tin pháp lý."
+    }
+  },
+  "types": {
+    "normal": "Thường",
+    "fighting": "Giác Đấu",
+    "flying": "Bay",
+    "poison": "Độc",
+    "ground": "Đất",
+    "rock": "Đá",
+    "bug": "Bọ",
+    "ghost": "Ma",
+    "steel": "Thép",
+    "fire": "Lửa",
+    "water": "Nước",
+    "grass": "Cỏ",
+    "electric": "Điện",
+    "psychic": "Tâm Linh",
+    "ice": "Băng",
+    "dragon": "Rồng",
+    "dark": "Bóng Tối",
+    "fairy": "Tiên",
+    "stellar": "Stellar",
+    "none": "Trống"
+  },
+  "banners": {
+    "updateReady": {
+      "description": "Có update mới!",
+      "whatsNew": "Tin tức mới",
+      "update": "Update"
+    }
+  },
+  "general": {
+    "loading": "Loading...",
+    "copyLink": "Sao chép link"
+  },
+  "games": {
+    "label": "Thế hệ (Generation)",
+    "help": "Xác định cơ chế điểm mạnh và yếu của các hệ từ các thế hệ khác nhau.",
+    "byID": {
+      "gen1": "Thế hệ 1",
+      "gen2": "Thế hệ 2–5",
+      "default": "Thế hệ 6 trở đi (mặc định)"
+    }
+  }
+}

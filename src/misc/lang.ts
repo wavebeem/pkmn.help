@@ -20,6 +20,7 @@ export const languageNamesNative: Record<Lang, string> = {
   ru: `Русский`,
   nl: `Nederlands`,
   kk: `Қазақша`,
+  vi: `tiếng Việt`,
   ja: `日本語`,
   "ja-Hrkt": `にほんご`,
   "zh-Hans": `简体中文`,
