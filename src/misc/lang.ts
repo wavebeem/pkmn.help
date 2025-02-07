@@ -20,6 +20,7 @@ export const languageNamesNative: Record<Lang, string> = {
   ru: `Русский`,
   nl: `Nederlands`,
   kk: `Қазақша`,
+  vi: `tiếng Việt`,
   ja: `日本語`,
   "ja-Hrkt": `にほんご`,
   "zh-Hans": `简体中文`,
@@ -67,6 +68,7 @@ export const languageNamesEnglish: Record<Lang, string> = {
   "zh-Hans": `Simplified Chinese`,
   "zh-Hant": `Traditional Chinese`,
   ko: `Korean`,
+  vi: `Vietnamese`,
 };
 
 export const languageBounty: Record<Lang, number> = {
@@ -89,6 +91,7 @@ export const languageBounty: Record<Lang, number> = {
   "zh-Hans": 0,
   "zh-Hant": 0,
   ko: 0,
+  vi: 0,
 };
 
 export function formatLanguageCompletion(lang: string): string {
