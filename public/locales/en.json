@@ -16,7 +16,8 @@
       "choose": "Choose special moves",
       "names": {
         "freeze-dry": "Freeze-Dry",
-        "thousand_arrows": "Thousand Arrows"
+        "thousand_arrows": "Thousand Arrows",
+        "flying_press": "Flying Press"
       }
     },
     "coverage": {

@@ -209,6 +209,22 @@ export function matchupFor({
   abilityName: AbilityName;
   specialMove?: SpecialMove;
 }): number {
+  // Flying Press is basically a Flying move and a Fighting move multiplied
+  // together. So just compute those two regular attacks separately and combine
+  // them.
+  if (specialMove === "flying_press") {
+    const opts = {
+      generation,
+      defenseTypes,
+      defenseTeraType,
+      offenseAbilityName,
+      abilityName,
+      specialMove: undefined,
+    } as const;
+    const a = matchupFor({ ...opts, offenseType: "flying" });
+    const b = matchupFor({ ...opts, offenseType: "fighting" });
+    return a * b;
+  }
   let n = 1;
   // Tera Pokémon (other than Stellar type) use their Tera type as their sole
   // defensive type
