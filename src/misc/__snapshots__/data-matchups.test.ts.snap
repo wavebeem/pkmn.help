@@ -1,0 +1,2186 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`offensiveMatchups for bug 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for dark 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for dragon 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for electric 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for fairy 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for fighting 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for fire 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for flying 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for ghost 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for grass 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for ground 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for ice 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for normal 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for poison 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for psychic 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for rock 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for steel 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for stellar 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;
+
+exports[`offensiveMatchups for water 1`] = `
+GroupedMatchups {
+  "matchups": [
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "normal",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fighting",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "flying",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "poison",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ground",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "rock",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "bug",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ghost",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "steel",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fire",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "water",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "grass",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "electric",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "psychic",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "ice",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dragon",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "dark",
+    },
+    Matchup {
+      "effectiveness": 1,
+      "formName": undefined,
+      "generation": "default",
+      "type": "fairy",
+    },
+  ],
+}
+`;

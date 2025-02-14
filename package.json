@@ -17,6 +17,7 @@
     "build": "vite build --mode production",
     "test-sw": "npm run -s build && npx serve -s dist",
     "preview": "vite preview",
+    "test:vitest": "vitest",
     "test:format": "prettier \"src/**/*.{ts,tsx,js,css}\" --check",
     "test:lint:js": "eslint src -f unix",
     "test:lint:css": "stylelint -f unix \"src/**/*.css\"",
@@ -65,7 +66,8 @@
     "typescript": "^5.4.3",
     "typescript-eslint": "^7.4.0",
     "vite": "^5.2.7",
-    "vite-plugin-pwa": "^0.19.7"
+    "vite-plugin-pwa": "^0.19.7",
+    "vitest": "^3.0.5"
   },
   "dependencies": {
     "classnames": "^2.5.1",
