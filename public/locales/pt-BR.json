@@ -252,26 +252,7 @@
       "description": "Dediquei incontáveis horas melhorando este site. Se aprecia o que fiz, por favor, considere doar para caridades que apoiam os direitos BIPOC e transsexuais."
     },
     "thanks": {
-      "heading": "Agradecimentos especiais",
-      "sections": {
-        "da": "Tradução dinamarquesa",
-        "ru": "Tradução Russa",
-        "kk": "Tradução Cazaque",
-        "pt-PT": "Tradução Português (Portugal)",
-        "pt-BR": "Tradução Português (Brasil)",
-        "zh-Hans": "Tradução Chinesa Simplificada",
-        "zh-Hant": "Tradução Chinesa Tradicional",
-        "ro": "Tradução Romena",
-        "pl": "Tradução Polonesa",
-        "fr": "Tradução Francesa",
-        "de": "Tradução Alemã",
-        "it": "Tradução Italiana",
-        "ko": "Tradução Coreana",
-        "ja": "Tradução Japonesa",
-        "nl": "Tradução Holandesa",
-        "testing": "Testes",
-        "other": "Vários Pokéfãs anônimos"
-      }
+      "heading": "Agradecimentos especiais"
     },
     "openSource": {
       "heading": "Fonte",

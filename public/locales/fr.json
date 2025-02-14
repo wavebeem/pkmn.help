@@ -252,27 +252,7 @@
       "description": "J'ai passé d'innombrables heures à améliorer ce site. Si vous appréciez ce que j'ai fait, veuillez, s'il vous plaît, envisager de faire un don à des organismes de bienfaisance qui soutiennent la justice raciale et les droits des transgenres."
     },
     "thanks": {
-      "heading": "Remerciements spéciaux",
-      "sections": {
-        "da": "Traduction en Danois",
-        "ru": "Traduction en Russe",
-        "kk": "Traduction en Kazakh",
-        "pt-PT": "Traduction en Portugais",
-        "pt-BR": "Traduction en Portugais Brésilien",
-        "zh-Hans": "Traduction en Chinois Simplifié",
-        "zh-Hant": "Traduction en Chinois Traditionnel",
-        "no": "Traduction en Norvègien",
-        "ro": "Traduction en Roumain",
-        "pl": "Traduction en Polonais",
-        "fr": "Traduction en Français",
-        "de": "Traduction en Allemand",
-        "it": "Traduction en Italien",
-        "ko": "Traduction en Coréen",
-        "ja": "Traduction en Japonais",
-        "nl": "Traduction en Néerlandais",
-        "testing": "Tests",
-        "other": "Plusieurs PokéFans anonymes"
-      }
+      "heading": "Remerciements spéciaux"
     },
     "openSource": {
       "heading": "Open source",

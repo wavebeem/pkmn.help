@@ -252,26 +252,7 @@
       "description": "Ich habe unzählige Stunden damit verbracht, diese Seite zu verbessern. Wenn du schätzt, was ich gemacht habe, dann ziehe bitte in Betracht, an Wohltätigkeitsorganisationen zu spenden, die BIPOC und Transgender-Rechte unterstützen."
     },
     "thanks": {
-      "heading": "Besonderer Dank",
-      "sections": {
-        "da": "Dänische Übersetzung",
-        "ru": "Russische Übersetzung",
-        "kk": "Kasachische Übersetzung",
-        "pt-PT": "Portugiesische (Portugal) Übersetzung",
-        "pt-BR": "Brasilianische Portugiesische Übersetzung",
-        "zh-Hans": "Vereinfachte Chinesische Übersetzung",
-        "zh-Hant": "Traditionelle Chinesische Übersetzung",
-        "ro": "Rumänische Übersetzung",
-        "pl": "Polnische Übersetzung",
-        "fr": "Französische Übersetzung",
-        "de": "Deutsche Übersetzung",
-        "it": "Italienische Übersetzung",
-        "ko": "Koreanische Übersetzung",
-        "ja": "Japanische Übersetzung",
-        "nl": "Niederländische Übersetzung",
-        "testing": "Testen",
-        "other": "Mehrere anonyme Poké-Fans"
-      }
+      "heading": "Besonderer Dank"
     },
     "openSource": {
       "heading": "Offener Quellcode",

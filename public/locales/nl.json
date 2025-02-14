@@ -239,26 +239,7 @@
       "description": "Er zitten ontelbaar veel uren in het verbeteren van deze website. Als je waardeert wat ik heb gemaakt, alsjeblieft overweeg iets te doneren aan liefdadigheden die BIPOC en transgenderrechten ondersteunen."
     },
     "thanks": {
-      "heading": "Speciale dank",
-      "sections": {
-        "da": "Deense vertaling",
-        "ru": "Russische vertaling",
-        "kk": "Kazachse vertaling",
-        "pt-PT": "Portugese vertaling",
-        "pt-BR": "Brazilisch Portugese vertaling",
-        "zh-Hans": "Versimpeld Chinese vertaling",
-        "zh-Hant": "Traditioneel Chinese vertaling",
-        "ro": "Romeense vertaling",
-        "pl": "Poolse vertaling",
-        "fr": "Franse vertaling",
-        "de": "Duitse vertaling",
-        "it": "Italiaanse vertaling",
-        "ko": "Koreaanse vertaling",
-        "ja": "Japanse vertaling",
-        "nl": "Nederlandse vertaling",
-        "testing": "Testen",
-        "other": "Wat anonieme Poké Fans"
-      }
+      "heading": "Speciale dank"
     },
     "openSource": {
       "heading": "Open source",

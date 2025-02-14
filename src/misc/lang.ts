@@ -48,6 +48,8 @@ export const unofficialLanguages = Object.keys(languageNamesNative).filter(
   }
 );
 
+export const allLanguages = [...officialLanguages, ...unofficialLanguages];
+
 export const languageNamesEnglish: Record<Lang, string> = {
   en: ``,
   es: `Spanish`,

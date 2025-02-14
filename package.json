@@ -5,6 +5,7 @@
   "type": "module",
   "description": "The Pokémon Type Calculator (https://pkmn.help)",
   "scripts": {
+    "delete-translations": "tsx ./bin/delete-translations.ts",
     "stellar-styles": "tsx ./bin/stellar-styles.ts",
     "update-pokedex": "tsx ./bin/update-pokedex.ts",
     "scrape-bulba": "tsx ./bin/scrape-bulba.ts",
