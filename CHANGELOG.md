@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025-02-13
+
+- Added "Flying Press"
+
+- Moved "Special thanks" section to a separate page
+
 ## 2025-01-17
 
 - Updated Portuguese (Portugal) translation
