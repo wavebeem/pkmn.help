@@ -10,6 +10,7 @@ offense.abilities.choose,Choose abilities,选择特性
 offense.specialMoves.choose,Choose special moves,选择特别招式
 offense.specialMoves.names.freeze-dry,Freeze-Dry,冷冻干燥
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,千箭齐发
+offense.specialMoves.names.flying_press,Flying Press,飛身重壓
 offense.coverage.heading,Pokédex coverage,宝可梦图鉴覆盖率
 offense.coverage.edit,Edit list,编辑列表
 offense.coverage.weakness,Weak,被克制
@@ -154,6 +155,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,表示感恩
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",我花了无数小时改善这个网站。如果你喜欢我做的内容的话，请考虑向支持 BIPOC 和跨性别人士权益的慈善机构捐款。
 more.thanks.heading,Special thanks,特别感谢
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
 more.thanks.sections.da,Danish translation,丹麦语翻译
 more.thanks.sections.ru,Russian translation,俄语翻译
 more.thanks.sections.kk,Kazakh translation,哈萨克语翻译

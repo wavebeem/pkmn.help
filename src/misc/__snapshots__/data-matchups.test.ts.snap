@@ -1,0 +1,11800 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`bug > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`bug > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`bug > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`bug > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dark > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dark > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 0.5,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dragon > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dragon > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`dragon > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`dragon > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 0,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`electric > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`electric > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 0,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`fairy > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`fairy > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`fairy > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fairy > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`fighting > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > filter > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > none > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fighting > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 0.5,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 0.5,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fire > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > filter > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fire > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > none > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`fire > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`fire > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 2,
+  "water": 0.5,
+}
+`;
+
+exports[`flying > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > filter > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`flying > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > none > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`flying > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`flying > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`ghost > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ghost > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0.5,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 2,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 0,
+  "poison": 1,
+  "psychic": 2,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`grass > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > filter > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`grass > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > none > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 2,
+}
+`;
+
+exports[`grass > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`grass > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`ground > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > filter > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 2,
+  "flying": 0.5,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > none > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ground > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 0.5,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 2,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 0,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 2,
+  "water": 1,
+}
+`;
+
+exports[`ice > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ice > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 2,
+}
+`;
+
+exports[`ice > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`ice > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`ice > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 2,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 0.5,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`normal > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`normal > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`normal > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`normal > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`poison > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`poison > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`poison > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 0.5,
+  "grass": 2,
+  "ground": 0.5,
+  "ice": 1,
+  "normal": 1,
+  "poison": 0.5,
+  "psychic": 1,
+  "rock": 0.5,
+  "steel": 0,
+  "water": 1,
+}
+`;
+
+exports[`psychic > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`psychic > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`psychic > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`psychic > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 0,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 2,
+  "psychic": 0.5,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > filter > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`rock > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > none > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`rock > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`rock > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 2,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 0.5,
+  "fire": 2,
+  "flying": 2,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 0.5,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 0.5,
+  "water": 1,
+}
+`;
+
+exports[`steel > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`steel > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`steel > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`steel > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 0.5,
+  "fairy": 2,
+  "fighting": 1,
+  "fire": 0.5,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 2,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 0.5,
+  "water": 0.5,
+}
+`;
+
+exports[`stellar > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 1,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`stellar > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 1,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 1,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 1,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`water > delta_stream > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > dry_skin > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > earth_eater > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > filter > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > flash_fire > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > fluffy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > flying_press > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 2,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 2,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 2,
+  "ground": 2,
+  "ice": 2,
+  "normal": 2,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`water > freeze-dry > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > heatproof > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > levitate > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > lightning_rod > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > motor_drive > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > none > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > purifying_salt > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > sap_sipper > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > scrappy > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > storm_drain > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > tera_shell > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > thick_fat > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > thousand_arrows > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > tinted_lens > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 1,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 1,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 1,
+}
+`;
+
+exports[`water > volt_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > water_absorb > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > water_bubble > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > well_baked_body > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;
+
+exports[`water > wonder_guard > offensiveMatchups 1`] = `
+{
+  "bug": 1,
+  "dark": 1,
+  "dragon": 0.5,
+  "electric": 1,
+  "fairy": 1,
+  "fighting": 1,
+  "fire": 2,
+  "flying": 1,
+  "ghost": 1,
+  "grass": 0.5,
+  "ground": 2,
+  "ice": 1,
+  "normal": 1,
+  "poison": 1,
+  "psychic": 1,
+  "rock": 2,
+  "steel": 1,
+  "water": 0.5,
+}
+`;

@@ -141,7 +141,7 @@
   "more": {
     "contact": {
       "heading": "Contacteaza-ma",
-      "intro": "Bună, sunt <homepage>Sage Fennel</homepage> (ei) și am creat Calculator tip Pokémon (pkmn.help).",
+      "intro": "Bună, sunt <homepage>Sage</homepage> (ei) și am creat Calculator tip Pokémon (pkmn.help).",
       "email": "Trimite idei si mulțumiri la <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
@@ -184,21 +184,7 @@
       "description": "Eu am petrecut o multime de ore imbunatatind acest site. Daca apreciezi ce am facut, te rog considera donare la organizatii de caritate care supporta BIPOC si drepturile transgender."
     },
     "thanks": {
-      "heading": "Multumri speciale",
-      "sections": {
-        "da": "Danish translation",
-        "ru": "Russian translation",
-        "kk": "Kazakh translation",
-        "pt-BR": "Traducere Portugheză Braziliană",
-        "zh-Hans": "Traducere Chineză",
-        "ro": "Traducere Română",
-        "fr": "Traducere Franceză",
-        "de": "Traducere Germana",
-        "it": "Traducere Italiana",
-        "ja": "Traducere Japoneza",
-        "testing": "Testare",
-        "other": "Cativa fani anomimi Pokémon"
-      }
+      "heading": "Multumri speciale"
     },
     "openSource": {
       "heading": "Sursa Deschisa",

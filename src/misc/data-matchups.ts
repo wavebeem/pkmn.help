@@ -140,13 +140,6 @@ export function partitionMatchups({
   offenseAbilities: AbilityName[];
   specialMoves: SpecialMove[];
 }): PartitionedMatchups {
-  if (types.length === 0) {
-    return {
-      weakness: [],
-      resistance: [],
-      normal: coverageTypes,
-    };
-  }
   const ret: PartitionedMatchups = {
     weakness: [],
     resistance: [],
@@ -161,10 +154,16 @@ export function partitionMatchups({
     let moves: readonly (SpecialMove | undefined)[] = [...specialMoves];
     if (moves.length === 0) {
       moves = [undefined];
+    } else if (moves.includes("flying_press") && types.length > 0) {
+      moves = [...specialMoves, undefined];
+    }
+    let offTypes: readonly (Type | undefined)[] = [...types];
+    if (offTypes.length === 0) {
+      offTypes = [undefined];
     }
     for (const offenseAbilityName of abilities) {
       for (const specialMove of moves) {
-        for (const t of types) {
+        for (const t of offTypes) {
           arr.push(
             matchupFor({
               generation,
@@ -204,11 +203,27 @@ export function matchupFor({
   generation: Generation;
   defenseTypes: Type[];
   defenseTeraType: Type;
-  offenseType: Type;
+  offenseType: Type | undefined;
   offenseAbilityName: AbilityName;
   abilityName: AbilityName;
   specialMove?: SpecialMove;
 }): number {
+  // Flying Press is basically a Flying move and a Fighting move multiplied
+  // together. So just compute those two regular attacks separately and combine
+  // them.
+  if (specialMove === "flying_press") {
+    const opts = {
+      generation,
+      defenseTypes,
+      defenseTeraType,
+      offenseAbilityName,
+      abilityName,
+      specialMove: undefined,
+    } as const;
+    const a = matchupFor({ ...opts, offenseType: "flying" });
+    const b = matchupFor({ ...opts, offenseType: "fighting" });
+    return a * b;
+  }
   let n = 1;
   // Tera Pokémon (other than Stellar type) use their Tera type as their sole
   // defensive type
@@ -228,8 +243,8 @@ export function matchupFor({
   // Apply multipliers based on defense types
   for (const t of defenseTypes) {
     let x = 1;
-    // Don't crash if the type is none
-    if (t !== Type.none) {
+    // Don't crash if types are "none" or missing
+    if (t !== Type.none && offenseType) {
       x = matchupForPair(generation, t, offenseType);
     }
     // Ghost can be hurt normally by Normal and Fighting
@@ -349,6 +364,12 @@ class Matchup {
 export class GroupedMatchups {
   constructor(public matchups: Matchup[]) {}
 
+  toTestFormat(): Record<string, any> {
+    return Object.fromEntries(
+      this.matchups.map((m) => [m.type, m.effectiveness])
+    );
+  }
+
   typesFor(effectivenes: number): Type[] {
     return this.matchups
       .filter((m) => m.effectiveness === effectivenes)
@@ -390,21 +411,26 @@ export function offensiveMatchups({
   const matchups = typesForGeneration(gen)
     .filter((t) => t !== Type.stellar)
     .map((t) => {
-      if (offenseTypes.length === 0) {
-        return new Matchup(gen, t, 1);
-      }
       let moves: readonly (SpecialMove | undefined)[] = specialMoves;
-      if (specialMoves.length === 0) {
+      if (moves.length === 0) {
         moves = [undefined];
+      } else if (moves.includes("flying_press") && offenseTypes.length > 0) {
+        moves = [...moves, undefined];
       }
       let abilities: readonly AbilityName[] = offenseAbilities;
       if (offenseAbilities.length === 0) {
         abilities = ["none"];
       }
+      let offTypes: readonly (Type | undefined)[] = offenseTypes;
+      if (offTypes.length === 0) {
+        offTypes = [undefined];
+      } else if (moves.includes("flying_press")) {
+        offTypes = [...offTypes];
+      }
       const effs = abilities.flatMap((offenseAbilityName) => {
         return moves.flatMap((move) => {
-          return offenseTypes.map((offense) => {
-            return matchupFor({
+          return offTypes.map((offense) => {
+            const x = matchupFor({
               generation: gen,
               defenseTypes: [t],
               defenseTeraType: "none",
@@ -413,6 +439,7 @@ export function offensiveMatchups({
               specialMove: move,
               offenseAbilityName,
             });
+            return x;
           });
         });
       });

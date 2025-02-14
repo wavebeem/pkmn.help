@@ -201,7 +201,7 @@
   "more": {
     "contact": {
       "heading": "Liên hệ với tôi",
-      "intro": "Xin chào, tôi là <homepage>Sage Fennel</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này.",
+      "intro": "Xin chào, tôi là <homepage>Sage</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này.",
       "email": "Bạn có thể email bất kể câu hỏi và cảm ơn đến <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
@@ -251,27 +251,7 @@
       "description": "Tôi đã dành bao thời gian cải thiện trang web này. Nếu bạn đánh giá cao thành quả của tôi, nếu có thể, xin bạn quyên góp cho các từ thiện chống phân biệt người da màu và người chuyển giới."
     },
     "thanks": {
-      "heading": "Chân thành cảm ơn đến",
-      "sections": {
-        "da": "Bản dịch tiếng Đan Mạch",
-        "ru": "Bản dịch tiếng Nga",
-        "kk": "Bản dịch tiếng Kazakh",
-        "pt-PT": "Bản dịch tiếng Bồ Đào Nha (Châu Âu)",
-        "pt-BR": "Bản dịch tiếng Bồ Đào Nha (Brazil)",
-        "zh-Hans": "Bản dịch tiếng Trung giản thể",
-        "zh-Hant": "Bản dịch tiếng Trung truyền thống",
-        "no": "Bản dịch tiếng Na Uy",
-        "ro": "Bản dịch tiếng Romania",
-        "pl": "Bản dịch tiếng Ba Lan",
-        "fr": "Bản dịch tiếng Pháp",
-        "de": "Bản dịch tiếng Đức",
-        "it": "Bản dịch tiếng Ý",
-        "ko": "Bản dịch tiếng Hàn",
-        "ja": "Bản dịch tiếng Nhật",
-        "nl": "Bản dịch tiếng Hà Lan",
-        "testing": "Thử Nghiệm",
-        "other": "Nhiều các fan Pokémon ẩn danh"
-      }
+      "heading": "Chân thành cảm ơn đến"
     },
     "openSource": {
       "heading": "Nguồn mở",

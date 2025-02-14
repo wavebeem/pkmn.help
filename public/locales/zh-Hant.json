@@ -16,7 +16,8 @@
       "choose": "選擇特別招式",
       "names": {
         "freeze-dry": "冷凍乾燥",
-        "thousand_arrows": "千箭齊發"
+        "thousand_arrows": "千箭齊發",
+        "flying_press": "飛身重壓"
       }
     },
     "coverage": {
@@ -201,7 +202,7 @@
   "more": {
     "contact": {
       "heading": "聯繫我",
-      "intro": "你好，我是 <homepage>Sage Fennel</homepage>（他們），我製作了 神奇寶貝屬性計算器 (pkmn.help）。",
+      "intro": "你好，我是 <homepage>Sage</homepage>（他們），我製作了 神奇寶貝屬性計算器 (pkmn.help）。",
       "email": "請將您的想法和感謝發送到 <email>pkmn@wavebeem.com</email>。"
     },
     "settings": {
@@ -251,26 +252,7 @@
       "description": "我已經花費了無數時間來改進這個網站。如果您欣賞我的成果，請考慮捐款支持支持非裔和跨性別人士權利的慈善機構。"
     },
     "thanks": {
-      "heading": "特別感謝",
-      "sections": {
-        "da": "丹麥翻譯",
-        "ru": "俄羅斯翻譯",
-        "kk": "哈薩克翻譯",
-        "pt-PT": "葡萄牙葡萄牙語翻譯",
-        "pt-BR": "巴西葡萄牙語翻譯",
-        "zh-Hans": "簡體中文翻譯",
-        "zh-Hant": "繁體中文翻譯",
-        "ro": "羅馬尼亞翻譯",
-        "pl": "波蘭翻譯",
-        "fr": "法語翻譯",
-        "de": "德語翻譯",
-        "it": "意大利語翻譯",
-        "ko": "韓語翻譯",
-        "ja": "日語翻譯",
-        "nl": "荷蘭翻譯",
-        "testing": "測試",
-        "other": "幾位匿名的粉絲"
-      }
+      "heading": "特別感謝"
     },
     "openSource": {
       "heading": "開源",

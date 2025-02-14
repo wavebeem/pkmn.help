@@ -10,6 +10,7 @@ offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
 offense.specialMoves.names.freeze-dry,Freeze-Dry,
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,
+offense.specialMoves.names.flying_press,Flying Press,
 offense.coverage.heading,Pokédex coverage,Pokrycie Pokédexa
 offense.coverage.edit,Edit list,Edytuj listę
 offense.coverage.weakness,Weak,Słabość
@@ -154,6 +155,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,Okazywanie uznania
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Spędziłem niezliczone godziny ulepszając tę stronę. Jeśli doceniasz to, co zrobiłem, rozważ przekazanie darowizny na rzecz organizacji charytatywnych, które wspierają prawa BIPOC i osób transpłciowych."
 more.thanks.heading,Special thanks,Szczególne podziękowania
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
 more.thanks.sections.da,Danish translation,Tłumaczenie duńskie
 more.thanks.sections.ru,Russian translation,Tłumaczenie rosyjskie
 more.thanks.sections.kk,Kazakh translation,Tłumaczenie kazachskie

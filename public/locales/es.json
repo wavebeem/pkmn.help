@@ -16,7 +16,8 @@
       "choose": "Escoger movimientos especiales",
       "names": {
         "freeze-dry": "Liofilización",
-        "thousand_arrows": "Mil Flechas"
+        "thousand_arrows": "Mil Flechas",
+        "flying_press": "Plancha Voladora"
       }
     },
     "coverage": {
@@ -201,7 +202,7 @@
   "more": {
     "contact": {
       "heading": "Contáctame",
-      "intro": "Hola, soy <homepage>Sage Fennel</homepage> (they/them) e hice la Calculadora de tipos de Pokémon (pkmn.help).",
+      "intro": "Hola, soy <homepage>Sage</homepage> (they/them) e hice la Calculadora de tipos de Pokémon (pkmn.help).",
       "email": "Por favor, envíe sus comentarios y agradecimientos por correo electrónico a <email>pkmn@wavebeem.com</email>"
     },
     "settings": {
@@ -251,27 +252,7 @@
       "description": "He dedicado innumerables horas a mejorar este sitio. Si aprecias lo que he hecho, por favor considera realizar una donación a organizaciones benéficas que apoyen los derechos de las comunidades BIPOC y transgéneros."
     },
     "thanks": {
-      "heading": "Agradecimientos especiales",
-      "sections": {
-        "da": "Traducción al Danés",
-        "ru": "Traducción al Ruso",
-        "kk": "Traducción al Kazajo",
-        "pt-PT": "Traducción al Portugués (Portugal)",
-        "pt-BR": "Traducción al Portugués (Brasil)",
-        "zh-Hans": "Traducción al Chino Simplificado",
-        "zh-Hant": "Traducción al Chino Tradicional",
-        "no": "Traducción al Noruego",
-        "ro": "Traducción al Rumano",
-        "pl": "Traducción al Polaco",
-        "fr": "Traducción al Francés",
-        "de": "Traducción al Alemán",
-        "it": "Traducción al Italiano",
-        "ko": "Traducción al Coreano",
-        "ja": "Traducción al Japonés",
-        "nl": "Traducción al Neerlandés",
-        "testing": "Pruebas",
-        "other": "Varios Poké Fans anónimos"
-      }
+      "heading": "Agradecimientos especiales"
     },
     "openSource": {
       "heading": "Código Abierto",

@@ -201,7 +201,7 @@
   "more": {
     "contact": {
       "heading": "Ta kontakt med meg",
-      "intro": "Hei, jeg er <homepage>Sage Fennel</homepage> (de/dem), og jeg har laget Pokémon Type Kalkulator (pkmn.help).",
+      "intro": "Hei, jeg er <homepage>Sage</homepage> (de/dem), og jeg har laget Pokémon Type Kalkulator (pkmn.help).",
       "email": "Plis send meg eposter om dine tanker og takker til <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
@@ -251,27 +251,7 @@
       "description": "Jeg har brukt utallige timer på å forbedre denne siden. Hvis du setter pris på det jeg har laget, kan du vurdere å donere til veldedige organisasjoner som støtter raserettferdighet og transpersoners rettigheter."
     },
     "thanks": {
-      "heading": "Spesiell takk til",
-      "sections": {
-        "da": "Dansk oversettelse",
-        "ru": "Russisk oversettelse",
-        "kk": "Kasakhisk oversettelse",
-        "pt-PT": "Portugisisk (Portugal) oversettelse",
-        "pt-BR": "Portugisisk (Brasil) oversettelse",
-        "zh-Hans": "Forenklet kinesisk oversettelse",
-        "zh-Hant": "Tradisjonell kinesisk oversettelse",
-        "no": "Norsk oversettelse",
-        "ro": "Rumensk oversettelse",
-        "pl": "Polsk oversettelse",
-        "fr": "Fransk oversettelse",
-        "de": "Tysk oversettelse",
-        "it": "Italiensk oversettelse",
-        "ko": "Koreansk oversettelse",
-        "ja": "Japansk oversettelse",
-        "nl": "Nederlandsk oversettelse",
-        "testing": "Tester",
-        "other": "Flere anonyme Pokémon fans"
-      }
+      "heading": "Spesiell takk til"
     },
     "openSource": {
       "heading": "Åpen kildekode",

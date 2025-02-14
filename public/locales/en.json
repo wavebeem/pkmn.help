@@ -16,7 +16,8 @@
       "choose": "Choose special moves",
       "names": {
         "freeze-dry": "Freeze-Dry",
-        "thousand_arrows": "Thousand Arrows"
+        "thousand_arrows": "Thousand Arrows",
+        "flying_press": "Flying Press"
       }
     },
     "coverage": {
@@ -201,7 +202,7 @@
   "more": {
     "contact": {
       "heading": "Contact me",
-      "intro": "Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",
+      "intro": "Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",
       "email": "Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
@@ -252,27 +253,7 @@
     },
     "thanks": {
       "heading": "Special thanks",
-      "sections": {
-        "da": "Danish translation",
-        "ru": "Russian translation",
-        "kk": "Kazakh translation",
-        "pt-PT": "Portuguese (Portugal) translation",
-        "pt-BR": "Portuguese (Brazil) translation",
-        "zh-Hans": "Simplified Chinese translation",
-        "zh-Hant": "Traditional Chinese translation",
-        "no": "Norwegian translation",
-        "ro": "Romanian translation",
-        "pl": "Polish translation",
-        "fr": "French translation",
-        "de": "German translation",
-        "it": "Italian translation",
-        "ko": "Korean translation",
-        "ja": "Japanese translation",
-        "nl": "Dutch translation",
-        "vi": "Vietnamese translation",
-        "testing": "Testing",
-        "other": "Several anonymous Poké Fans"
-      }
+      "description": "See everyone who's helped make this website in the <credits>credits</credits>."
     },
     "openSource": {
       "heading": "Open source",

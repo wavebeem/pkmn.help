@@ -5,7 +5,11 @@ export function saveJSON(
   data: unknown,
   { indent = 0 }: { indent?: number } = {}
 ): void {
-  fs.writeFileSync(filename, JSON.stringify(data, null, indent), "utf-8");
+  fs.writeFileSync(
+    filename,
+    JSON.stringify(data, null, indent) + "\n",
+    "utf-8"
+  );
 }
 
 export function readJSON(filename: string): any {

@@ -16,7 +16,8 @@
       "choose": "특별 상성 선택",
       "names": {
         "freeze-dry": "프리즈드라이",
-        "thousand_arrows": "사우전드애로"
+        "thousand_arrows": "사우전드애로",
+        "flying_press": "플라잉프레스"
       }
     },
     "coverage": {
@@ -201,7 +202,7 @@
   "more": {
     "contact": {
       "heading": "문의",
-      "intro": "안녕하세요, 저는 <homepage>Sage Fennel</homepage> (they/them으로 지칭해 주세요) 이고 Pokémon Type Calculator (pkmn.help)를 만들었습니다.",
+      "intro": "안녕하세요, 저는 <homepage>Sage</homepage> (they/them으로 지칭해 주세요) 이고 Pokémon Type Calculator (pkmn.help)를 만들었습니다.",
       "email": "여러분의 생각과 감사를 <email>pkmn@wavebeem.com</email> 로 보내주세요."
     },
     "settings": {
@@ -251,26 +252,7 @@
       "description": "저는 이 사이트를 개선하는 데 많은 시간을 보냈습니다. 제가 만든 것에 고마움을 표하고 싶으시다면 흑인과 원주민 및 트랜스젠더 권리를 지원하는 자선 단체에 기부하는 것을 고려해 주세요."
     },
     "thanks": {
-      "heading": "도움을 주신 분들",
-      "sections": {
-        "da": "덴마크어 번역",
-        "ru": "러시아어 번역",
-        "kk": "카자흐어 번역",
-        "pt-BR": "브라질 포르투갈어 번역",
-        "zh-Hans": "중국어(간체) 번역",
-        "zh-Hant": "중국어(번체) 번역",
-        "no": "노르웨이어 번역",
-        "ro": "루마니아어 번역",
-        "pl": "폴란드어 번역",
-        "fr": "프랑스어 번역",
-        "de": "독일어 번역",
-        "it": "이탈리아어 번역",
-        "ko": "한국어 번역",
-        "ja": "일본어 번역",
-        "nl": "네델란드어",
-        "testing": "테스터",
-        "other": "여러 익명의 포켓몬 팬"
-      }
+      "heading": "도움을 주신 분들"
     },
     "openSource": {
       "heading": "오픈 소스",

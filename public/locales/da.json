@@ -156,7 +156,7 @@
   "more": {
     "contact": {
       "heading": "Kontakt mig",
-      "intro": "Hej, jeg <homepage>Sage Fennel</homepage> (they/them) og jeg lavede Pokémon type lommeregner/calculator (pkmn.help)",
+      "intro": "Hej, jeg <homepage>Sage</homepage> (they/them) og jeg lavede Pokémon type lommeregner/calculator (pkmn.help)",
       "email": "Email venligst din taknemmelighed til <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
@@ -200,21 +200,7 @@
       "description": "Jeg har brugt utallige timer på at forbedre denne hjemmeside. Hvis du er glad for hvad jeg har lavet, så tænk venligst over at donere til velgørenheder der stytter BIPOC og transkønnets rettigheder"
     },
     "thanks": {
-      "heading": "Tusind tak til",
-      "sections": {
-        "da": "Dansk oversættelse",
-        "ru": "Russisk oversættelse",
-        "kk": "Kazakhstan oversættelse",
-        "pt-BR": "Brazillensk portugisisk oversættelse",
-        "zh-Hans": "Kinesisk oversættelse",
-        "ro": "Rumænsk oversættelse",
-        "fr": "Fransk oversættelse",
-        "de": "Tysk oversættelse",
-        "it": "Italiensk oversættelse",
-        "ja": "Japansk oversættelse",
-        "testing": "Tests",
-        "other": "Mange anonyme Poké fans"
-      }
+      "heading": "Tusind tak til"
     },
     "openSource": {
       "heading": "Open source",

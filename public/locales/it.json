@@ -12,7 +12,8 @@
     "specialMoves": {
       "names": {
         "freeze-dry": "Liofilizzazione",
-        "thousand_arrows": "Mille Frecce"
+        "thousand_arrows": "Mille Frecce",
+        "flying_press": "Schiacciatuffo"
       }
     },
     "coverage": {
@@ -197,7 +198,7 @@
   "more": {
     "contact": {
       "heading": "Contattami",
-      "intro": "Ciao, sono <homepage>Sage Fennel</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (pkmn.help).",
+      "intro": "Ciao, sono <homepage>Sage</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (pkmn.help).",
       "email": "Per favore, invia un'e-mail con i tuoi pensieri e ringraziamenti a <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
@@ -247,26 +248,7 @@
       "description": "Ho passato innumerevoli ore a migliorare questo sito. Se apprezzate quello che ho fatto, considerate gentilmente di fare una donazione ad enti di beneficenza che supportano BIPOC ed i diritti delle persone transgender."
     },
     "thanks": {
-      "heading": "Ringraziamenti speciali",
-      "sections": {
-        "da": "Traduzione danese",
-        "ru": "Traduzione russa",
-        "kk": "Traduzione kazaka",
-        "pt-PT": "Traduzione portoghese (Portogallo)",
-        "pt-BR": "Traduzione portoghese (Brasile)",
-        "zh-Hans": "Traduzione cinese semplificato",
-        "zh-Hant": "Traduzione cinese tradizionale",
-        "ro": "Traduzione rumena",
-        "pl": "Traduzione polacca",
-        "fr": "Traduzione francese",
-        "de": "Traduzione tedesca",
-        "it": "Traduzione italiana",
-        "ko": "Traduzione coreana",
-        "ja": "Traduzione giapponese",
-        "nl": "Traduzione olandese",
-        "testing": "Test",
-        "other": "Diversi Fan anonimi di Pokémon"
-      }
+      "heading": "Ringraziamenti speciali"
     },
     "openSource": {
       "heading": "Sorgente aperta",
