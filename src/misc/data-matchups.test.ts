@@ -5,7 +5,7 @@ import * as Types from "./data-types";
 type Maybe<T> = T | null | undefined;
 
 function compact<T>(list: readonly Maybe<T>[]): T[] {
-  return list.filter((x) => x != null);
+  return list.filter((x): x is T => x != null);
 }
 
 const abilities = Object.keys(Types.abilities) as Types.AbilityName[];
