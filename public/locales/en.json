@@ -253,6 +253,7 @@
     },
     "thanks": {
       "heading": "Special thanks",
+      "description": "See everyone who's helped make this website in the <credits>credits</credits>.",
       "sections": {
         "da": "Danish translation",
         "ru": "Russian translation",
