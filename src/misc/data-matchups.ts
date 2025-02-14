@@ -403,13 +403,11 @@ export function offensiveMatchups({
   specialMoves: readonly SpecialMove[];
   offenseAbilities: readonly AbilityName[];
 }): GroupedMatchups {
+  console.group("offensiveMatchups");
   const matchups = typesForGeneration(gen)
     .filter((t) => t !== Type.stellar)
     .map((t) => {
-      let moves: readonly (SpecialMove | undefined)[] = specialMoves;
-      if (specialMoves.length === 0) {
-        moves = [undefined];
-      }
+      const moves = [...specialMoves, undefined];
       let abilities: readonly AbilityName[] = offenseAbilities;
       if (offenseAbilities.length === 0) {
         abilities = ["none"];
@@ -423,7 +421,7 @@ export function offensiveMatchups({
       const effs = abilities.flatMap((offenseAbilityName) => {
         return moves.flatMap((move) => {
           return offTypes.map((offense) => {
-            return matchupFor({
+            const x = matchupFor({
               generation: gen,
               defenseTypes: [t],
               defenseTeraType: "none",
@@ -432,12 +430,16 @@ export function offensiveMatchups({
               specialMove: move,
               offenseAbilityName,
             });
+            console.log(x, "::", offense, move, "vs", t);
+            return x;
           });
         });
       });
       const max = Math.max(...effs);
+      console.log("max", offTypes.join(","), moves.join(","), "=", max);
       return new Matchup(gen, t, max);
     });
+  console.groupEnd();
   return new GroupedMatchups(matchups);
 }
 
