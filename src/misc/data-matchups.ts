@@ -140,14 +140,6 @@ export function partitionMatchups({
   offenseAbilities: AbilityName[];
   specialMoves: SpecialMove[];
 }): PartitionedMatchups {
-  // TODO: Should this use offensiveMatchups()? This feels duplicative.
-  if (types.length === 0) {
-    return {
-      weakness: [],
-      resistance: [],
-      normal: coverageTypes,
-    };
-  }
   const ret: PartitionedMatchups = {
     weakness: [],
     resistance: [],
@@ -162,10 +154,16 @@ export function partitionMatchups({
     let moves: readonly (SpecialMove | undefined)[] = [...specialMoves];
     if (moves.length === 0) {
       moves = [undefined];
+    } else if (moves.includes("flying_press") && types.length > 0) {
+      moves = [...specialMoves, undefined];
+    }
+    let offTypes: readonly (Type | undefined)[] = [...types];
+    if (offTypes.length === 0) {
+      offTypes = [undefined];
     }
     for (const offenseAbilityName of abilities) {
       for (const specialMove of moves) {
-        for (const t of types) {
+        for (const t of offTypes) {
           arr.push(
             matchupFor({
               generation,
@@ -404,7 +402,6 @@ export function offensiveMatchups({
   specialMoves: readonly SpecialMove[];
   offenseAbilities: readonly AbilityName[];
 }): GroupedMatchups {
-  console.group("offensiveMatchups");
   const matchups = typesForGeneration(gen)
     .filter((t) => t !== Type.stellar)
     .map((t) => {
@@ -422,7 +419,7 @@ export function offensiveMatchups({
       if (offTypes.length === 0) {
         offTypes = [undefined];
       } else if (moves.includes("flying_press")) {
-        offTypes = [...offTypes, undefined];
+        offTypes = [...offTypes];
       }
       const effs = abilities.flatMap((offenseAbilityName) => {
         return moves.flatMap((move) => {
@@ -436,16 +433,13 @@ export function offensiveMatchups({
               specialMove: move,
               offenseAbilityName,
             });
-            console.log(x, "::", offense, move, "vs", t);
             return x;
           });
         });
       });
       const max = Math.max(...effs);
-      console.log("max", offTypes.join(","), moves.join(","), "=", max);
       return new Matchup(gen, t, max);
     });
-  console.groupEnd();
   return new GroupedMatchups(matchups);
 }
 
