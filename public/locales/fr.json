@@ -16,7 +16,8 @@
       "choose": "Choisissez les attaques spéciales",
       "names": {
         "freeze-dry": "Lyophilisation",
-        "thousand_arrows": "Myria-Flèches"
+        "thousand_arrows": "Myria-Flèches",
+        "flying_press": "Flying Press"
       }
     },
     "coverage": {

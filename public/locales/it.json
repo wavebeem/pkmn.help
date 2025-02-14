@@ -12,7 +12,8 @@
     "specialMoves": {
       "names": {
         "freeze-dry": "Liofilizzazione",
-        "thousand_arrows": "Mille Frecce"
+        "thousand_arrows": "Mille Frecce",
+        "flying_press": "Schiacciatuffo"
       }
     },
     "coverage": {

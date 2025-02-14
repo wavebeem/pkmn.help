@@ -16,7 +16,8 @@
       "choose": "Escoger movimientos especiales",
       "names": {
         "freeze-dry": "Liofilización",
-        "thousand_arrows": "Mil Flechas"
+        "thousand_arrows": "Mil Flechas",
+        "flying_press": "Plancha Voladora"
       }
     },
     "coverage": {
