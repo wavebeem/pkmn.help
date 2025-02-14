@@ -140,6 +140,7 @@ export function partitionMatchups({
   offenseAbilities: AbilityName[];
   specialMoves: SpecialMove[];
 }): PartitionedMatchups {
+  // TODO: Should this use offensiveMatchups()? This feels duplicative.
   if (types.length === 0) {
     return {
       weakness: [],
@@ -407,7 +408,12 @@ export function offensiveMatchups({
   const matchups = typesForGeneration(gen)
     .filter((t) => t !== Type.stellar)
     .map((t) => {
-      const moves = [...specialMoves, undefined];
+      let moves: readonly (SpecialMove | undefined)[] = specialMoves;
+      if (moves.length === 0) {
+        moves = [undefined];
+      } else if (moves.includes("flying_press") && offenseTypes.length > 0) {
+        moves = [...moves, undefined];
+      }
       let abilities: readonly AbilityName[] = offenseAbilities;
       if (offenseAbilities.length === 0) {
         abilities = ["none"];
@@ -415,7 +421,7 @@ export function offensiveMatchups({
       let offTypes: readonly (Type | undefined)[] = offenseTypes;
       if (offTypes.length === 0) {
         offTypes = [undefined];
-      } else if (specialMoves.includes("flying_press")) {
+      } else if (moves.includes("flying_press")) {
         offTypes = [...offTypes, undefined];
       }
       const effs = abilities.flatMap((offenseAbilityName) => {
