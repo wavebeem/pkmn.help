@@ -204,7 +204,7 @@ export function matchupFor({
   generation: Generation;
   defenseTypes: Type[];
   defenseTeraType: Type;
-  offenseType: Type;
+  offenseType: Type | undefined;
   offenseAbilityName: AbilityName;
   abilityName: AbilityName;
   specialMove?: SpecialMove;
@@ -244,8 +244,8 @@ export function matchupFor({
   // Apply multipliers based on defense types
   for (const t of defenseTypes) {
     let x = 1;
-    // Don't crash if the type is none
-    if (t !== Type.none) {
+    // Don't crash if types are "none" or missing
+    if (t !== Type.none && offenseType) {
       x = matchupForPair(generation, t, offenseType);
     }
     // Ghost can be hurt normally by Normal and Fighting
@@ -406,9 +406,6 @@ export function offensiveMatchups({
   const matchups = typesForGeneration(gen)
     .filter((t) => t !== Type.stellar)
     .map((t) => {
-      if (offenseTypes.length === 0) {
-        return new Matchup(gen, t, 1);
-      }
       let moves: readonly (SpecialMove | undefined)[] = specialMoves;
       if (specialMoves.length === 0) {
         moves = [undefined];
@@ -417,9 +414,15 @@ export function offensiveMatchups({
       if (offenseAbilities.length === 0) {
         abilities = ["none"];
       }
+      let offTypes: readonly (Type | undefined)[] = offenseTypes;
+      if (offTypes.length === 0) {
+        offTypes = [undefined];
+      } else if (specialMoves.includes("flying_press")) {
+        offTypes = [...offTypes, undefined];
+      }
       const effs = abilities.flatMap((offenseAbilityName) => {
         return moves.flatMap((move) => {
-          return offenseTypes.map((offense) => {
+          return offTypes.map((offense) => {
             return matchupFor({
               generation: gen,
               defenseTypes: [t],
