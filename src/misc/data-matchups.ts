@@ -364,7 +364,7 @@ class Matchup {
 export class GroupedMatchups {
   constructor(public matchups: Matchup[]) {}
 
-  toTestFormat() {
+  toTestFormat(): Record<string, any> {
     return Object.fromEntries(
       this.matchups.map((m) => [m.type, m.effectiveness])
     );
