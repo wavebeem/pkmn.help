@@ -75,9 +75,7 @@
     "back": "Back to offense"
   },
   "defense": {
-    "chooseFirst": "Choose first type",
-    "chooseSecond": "Choose second type",
-    "chooseThird": "Choose third type",
+    "chooseTypes": "Choose types",
     "takesXFrom": "Takes {{ x }} from",
     "chooseAbility": "Choose ability",
     "chooseTeraType": "Choose tera type",

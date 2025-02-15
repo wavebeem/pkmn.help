@@ -9,7 +9,7 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { Select } from "../components/Select";
-import { TypeSelector } from "../components/TypeSelector";
+import { MultiTypeSelector } from "../components/MultiTypeSelector";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
@@ -113,44 +113,15 @@ export function ScreenDefense(): ReactNode {
 
         <Flex direction="column" gap="medium">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
-            {t("defense.chooseFirst")}
+            {t("defense.chooseTypes")}
           </FancyText>
-          <TypeSelector
+          <MultiTypeSelector
             generation={generation}
-            value={types[0]}
-            onChange={updateTypeAt(0)}
-            disabledTypes={[]}
-            includeNone={false}
+            value={types}
+            onChange={setTypes}
+            limit={Number(typeCount)}
           />
         </Flex>
-
-        <Flex direction="column" gap="medium">
-          <FancyText tag="h2" fontSize="large" fontWeight="medium">
-            {t("defense.chooseSecond")}
-          </FancyText>
-          <TypeSelector
-            generation={generation}
-            value={types[1] || Type.none}
-            onChange={updateTypeAt(1)}
-            disabledTypes={types.slice(0, 1)}
-            includeNone={true}
-          />
-        </Flex>
-
-        {Number(typeCount) === 3 && (
-          <Flex direction="column" gap="medium">
-            <FancyText tag="h2" fontSize="large" fontWeight="medium">
-              {t("defense.chooseThird")}
-            </FancyText>
-            <TypeSelector
-              generation={generation}
-              value={types[2] || Type.none}
-              onChange={updateTypeAt(2)}
-              disabledTypes={types.slice(0, 2)}
-              includeNone={true}
-            />
-          </Flex>
-        )}
 
         <Flex direction="column" gap="large">
           <Flex flex="auto">
