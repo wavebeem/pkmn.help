@@ -19,10 +19,8 @@ import {
   abilities,
   abilityNameFromString,
   types as allTypes,
-  normalizeTypes,
   typesFromString,
 } from "../misc/data-types";
-import { updateArrayAt } from "../misc/updateArrayAt";
 import styles from "./ScreenDefense.module.css";
 import { useGeneration } from "../hooks/useGeneration";
 
