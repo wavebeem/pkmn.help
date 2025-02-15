@@ -75,6 +75,7 @@
     "back": "Retour à l'onglet \"Couverture offensive\""
   },
   "defense": {
+    "chooseTypes": "Choisissez les types",
     "takesXFrom": "Subit {{ x }} de",
     "chooseAbility": "Choisir le talent",
     "chooseTeraType": "Choisir le type téracristal",
@@ -121,12 +122,11 @@
       "type": "Type",
       "edit": "Modifier",
       "remove": "Supprimer"
-    },
-    "chooseTypes": "Choisissez les types"
+    }
   },
   "pokedex": {
     "search": {
-      "description": "Recherche par nom, nombre ou type",
+      "description": "Recherche par nom, nombre ou types",
       "help": "Aide",
       "helpLong": "Aide, rechercher dans le Pokédex",
       "notFound": "Aucun Pokémon trouvé"
@@ -191,7 +191,7 @@
         "description": "Rechercher des Pokémon qui sont de types eau/vol (ex Léviator) ou de type vol/eau (Nigosier)."
       },
       "singleType": {
-        "query": "Plante aucun",
+        "query": "plante aucun",
         "description": "Rechercher les Pokémon qui ont seulement le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)."
       }
     },
@@ -250,7 +250,8 @@
       "description": "J'ai passé d'innombrables heures à améliorer ce site. Si vous appréciez ce que j'ai fait, veuillez, s'il vous plaît, envisager de faire un don à des organismes de bienfaisance qui soutiennent la justice raciale et les droits des transgenres."
     },
     "thanks": {
-      "heading": "Remerciements spéciaux"
+      "heading": "Remerciements spéciaux",
+      "description": "Ici sont <credits>crédités</credits> toutes les personnes qui m'ont aidé⸱e à faire ce site web."
     },
     "openSource": {
       "heading": "Open source",

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-02-15
+
+- Updated French translations
+
 ## 2025-02-14
 
 - Changed the "Defense" type selection to use a similar approach as the
