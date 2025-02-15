@@ -42,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Экспортиров�
 coverage.status.reset,Loaded default Pokémon forms,Загружены формы Покемонов по умолчанию
 coverage.status.errored,Error loading CSV. Don't change header names.,Ошибка загрузки CSV. Не изменяйте имени заголовок.
 coverage.back,Back to offense,Назад к Нападению
-defense.chooseFirst,Choose first type,Выберите Первый Тип
-defense.chooseSecond,Choose second type,Выберите Второй Тип
-defense.chooseThird,Choose third type,Выберите Третий Тип
+defense.chooseTypes,Choose types,
 defense.takesXFrom,Takes {{ x }} from,Принимает {{ x }} от
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,

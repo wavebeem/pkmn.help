@@ -42,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,已导出默认宝可�
 coverage.status.reset,Loaded default Pokémon forms,已加载默认宝可梦
 coverage.status.errored,Error loading CSV. Don't change header names.,加载CSV错误。请勿更改列标题名称。
 coverage.back,Back to offense,返回攻击方
-defense.chooseFirst,Choose first type,选择第一属性
-defense.chooseSecond,Choose second type,选择第二属性
-defense.chooseThird,Choose third type,选择第三属性
+defense.chooseTypes,Choose types,
 defense.takesXFrom,Takes {{ x }} from,受到 {{ x }} 伤害
 defense.chooseAbility,Choose ability,特性
 defense.chooseTeraType,Choose tera type,选择太晶属性

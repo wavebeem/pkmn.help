@@ -42,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,匯出了預設的寶�
 coverage.status.reset,Loaded default Pokémon forms,載入了預設的寶可夢形式
 coverage.status.errored,Error loading CSV. Don't change header names.,載入 CSV 時出錯。不要更改標題名稱。
 coverage.back,Back to offense,返回攻擊
-defense.chooseFirst,Choose first type,選擇第一個屬性
-defense.chooseSecond,Choose second type,選擇第二個屬性
-defense.chooseThird,Choose third type,選擇第三個屬性
+defense.chooseTypes,Choose types,
 defense.takesXFrom,Takes {{ x }} from,從中取 {{ x }}
 defense.chooseAbility,Choose ability,選擇技能
 defense.chooseTeraType,Choose tera type,選擇太晶屬性

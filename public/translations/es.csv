@@ -42,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Se exportaron los formu
 coverage.status.reset,Loaded default Pokémon forms,Se cargaron los formularios predeterminados de Pokémon
 coverage.status.errored,Error loading CSV. Don't change header names.,Error cargando el CSV. No cambies los nombres de los encabezados.
 coverage.back,Back to offense,Volver a Ataque
-defense.chooseFirst,Choose first type,Elige el tipo primario
-defense.chooseSecond,Choose second type,Elige el tipo secundario
-defense.chooseThird,Choose third type,Elige el tipo terciario
+defense.chooseTypes,Choose types,
 defense.takesXFrom,Takes {{ x }} from,Sufre {{ x }} por
 defense.chooseAbility,Choose ability,Elige habilidad
 defense.chooseTeraType,Choose tera type,Elige teratipo

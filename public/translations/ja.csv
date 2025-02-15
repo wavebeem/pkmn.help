@@ -42,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,デフォルトのポ�
 coverage.status.reset,Loaded default Pokémon forms,デフォルトのポケモンのすがたを読み込んだ
 coverage.status.errored,Error loading CSV. Don't change header names.,CSV読み込みエラー。ヘッダーの名前を変えないでください
 coverage.back,Back to offense,こうげきに戻る
-defense.chooseFirst,Choose first type,１つ目のタイプ
-defense.chooseSecond,Choose second type,２つ目のタイプ
-defense.chooseThird,Choose third type,３つ目のタイプ
+defense.chooseTypes,Choose types,
 defense.takesXFrom,Takes {{ x }} from,{{ x }}を受ける
 defense.chooseAbility,Choose ability,特性
 defense.chooseTeraType,Choose tera type,テラスタイプ

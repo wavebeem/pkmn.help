@@ -42,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Eksporterte standard Po
 coverage.status.reset,Loaded default Pokémon forms,Lastet inn standard Pokémon former
 coverage.status.errored,Error loading CSV. Don't change header names.,Error med å laste CSV. Ikke bytt overskrift navn.
 coverage.back,Back to offense,Tilbake til angrep
-defense.chooseFirst,Choose first type,Velg første type
-defense.chooseSecond,Choose second type,Velg andre type
-defense.chooseThird,Choose third type,Velg tredje type
+defense.chooseTypes,Choose types,
 defense.takesXFrom,Takes {{ x }} from,Tar {{ x }} fra
 defense.chooseAbility,Choose ability,Velg evne
 defense.chooseTeraType,Choose tera type,Velg tera type

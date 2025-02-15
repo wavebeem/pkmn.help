@@ -42,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Exporteaza forme de Pok
 coverage.status.reset,Loaded default Pokémon forms,Incarca forme de Pokémon implicit
 coverage.status.errored,Error loading CSV. Don't change header names.,Eroare la încărcarea CSV. Nu schimbați numele antetului.
 coverage.back,Back to offense,Înapoi la atac
-defense.chooseFirst,Choose first type,Alege primul fel
-defense.chooseSecond,Choose second type,Alege al doilea fel
-defense.chooseThird,Choose third type,Alege al treilea fel
+defense.chooseTypes,Choose types,
 defense.takesXFrom,Takes {{ x }} from,Ia {{ x }} de la
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
