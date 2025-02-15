@@ -1,5 +1,13 @@
 # Changelog
 
+## 2025-02-14
+
+- Fixed an issue where "Freeze-Dry" required selecting "Ice" in order to show
+  its type matchups
+
+- Fixed an issue where "Thousand Arrows" required selecting "Ground" in order to
+  show its type matchups
+
 ## 2025-02-13
 
 - Added "Flying Press"
