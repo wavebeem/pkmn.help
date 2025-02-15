@@ -11,7 +11,7 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { MatchupsTeam, MatchupsTeamProps } from "../components/MatchupsTeam";
 import { Select } from "../components/Select";
-import { TypeSelector } from "../components/TypeSelector";
+import { MultiTypeSelector } from "../components/MultiTypeSelector";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
@@ -139,15 +139,12 @@ export function ScreenDefenseTeam(): ReactNode {
     });
   }, [generation]);
 
-  function updateTeamTypesAt(
-    listIndex: number,
-    typeIndex: number
-  ): (type: Type) => void {
-    return (t) => {
+  function updateTeamTypesAt(listIndex: number): (newTypes: Type[]) => void {
+    return (newTypes) => {
       setTeamTypes(
         teamTypes.map((types, i) => {
           if (i === listIndex) {
-            return normalizeTypes(updateArrayAt(types, typeIndex, t));
+            return normalizeTypes(newTypes);
           }
           return normalizeTypes(types);
         })
@@ -258,51 +255,16 @@ export function ScreenDefenseTeam(): ReactNode {
                           fontSize="large"
                           fontWeight="normal"
                         >
-                          {t("defense.chooseFirst")}
+                          {t("defense.chooseTypes")}
                         </FancyText>
-                        <TypeSelector
+                        <MultiTypeSelector
                           generation={generation}
-                          value={types[0]}
-                          onChange={updateTeamTypesAt(typeIndex, 0)}
-                          disabledTypes={[]}
-                          includeNone={false}
+                          value={types}
+                          onChange={updateTeamTypesAt(typeIndex)}
+                          limit={Number(typeCount)}
                         />
                       </Flex>
 
-                      <Flex direction="column" gap="medium">
-                        <FancyText
-                          tag="h3"
-                          fontSize="large"
-                          fontWeight="normal"
-                        >
-                          {t("defense.chooseSecond")}
-                        </FancyText>
-                        <TypeSelector
-                          generation={generation}
-                          value={types[1] || Type.none}
-                          onChange={updateTeamTypesAt(typeIndex, 1)}
-                          disabledTypes={types.slice(0, 1)}
-                          includeNone={true}
-                        />
-                      </Flex>
-                      {Number(typeCount) === 3 && (
-                        <>
-                          <FancyText
-                            tag="h3"
-                            fontSize="large"
-                            fontWeight="normal"
-                          >
-                            {t("defense.chooseThird")}
-                          </FancyText>
-                          <TypeSelector
-                            generation={generation}
-                            value={types[2] || Type.none}
-                            onChange={updateTeamTypesAt(typeIndex, 2)}
-                            disabledTypes={types.slice(0, 2)}
-                            includeNone={true}
-                          />
-                        </>
-                      )}
                       <Select
                         label={t("defense.chooseAbility")}
                         value={teamAbilities[typeIndex]}
