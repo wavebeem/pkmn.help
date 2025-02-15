@@ -128,7 +128,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,erba nessuno
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Cerca i Pokémon che hanno solo il tipo erba, senza tipo secondario (es: Tangela, Chikorita)."
 pokedexHelp.back,Back to Pokédex,Torna al Pokédex
 more.contact.heading,Contact me,Contattami
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Ciao, sono <homepage>Sage Fennel</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Ciao, sono <homepage>Sage</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Per favore, invia un'e-mail con i tuoi pensieri e ringraziamenti a <email>pkmn@wavebeem.com</email>."
 more.settings.heading,Settings,Impostazioni
 more.settings.language.label,Language,Lingua
@@ -156,25 +156,6 @@ more.givingBack.heading,Showing appreciation,Mostra il tuo apprezzamento
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Ho passato innumerevoli ore a migliorare questo sito. Se apprezzate quello che ho fatto, considerate gentilmente di fare una donazione ad enti di beneficenza che supportano BIPOC ed i diritti delle persone transgender."
 more.thanks.heading,Special thanks,Ringraziamenti speciali
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,Traduzione danese
-more.thanks.sections.ru,Russian translation,Traduzione russa
-more.thanks.sections.kk,Kazakh translation,Traduzione kazaka
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Traduzione portoghese (Portogallo)
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Traduzione portoghese (Brasile)
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Traduzione cinese semplificato
-more.thanks.sections.zh-Hant,Traditional Chinese translation,Traduzione cinese tradizionale
-more.thanks.sections.no,Norwegian translation,
-more.thanks.sections.ro,Romanian translation,Traduzione rumena
-more.thanks.sections.pl,Polish translation,Traduzione polacca
-more.thanks.sections.fr,French translation,Traduzione francese
-more.thanks.sections.de,German translation,Traduzione tedesca
-more.thanks.sections.it,Italian translation,Traduzione italiana
-more.thanks.sections.ko,Korean translation,Traduzione coreana
-more.thanks.sections.ja,Japanese translation,Traduzione giapponese
-more.thanks.sections.nl,Dutch translation,Traduzione olandese
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,Test
-more.thanks.sections.other,Several anonymous Poké Fans,Diversi Fan anonimi di Pokémon
 more.openSource.heading,Open source,Sorgente aperta
 more.openSource.description,Source code is available on <github>GitHub</github>.,Il codice sorgente è disponibile su <github>GitHub</github>.
 more.legalInfo.heading,Legal info,Informazioni legali

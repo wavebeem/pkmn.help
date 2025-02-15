@@ -128,7 +128,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,planta ninguno
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Busca Pokémon que son únicamente tipo planta, sin tipo secundario (ej. Tangela, Chikorita)."
 pokedexHelp.back,Back to Pokédex,Volver a la Pokédex
 more.contact.heading,Contact me,Contáctame
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hola, soy <homepage>Sage Fennel</homepage> (they/them) e hice la Calculadora de tipos de Pokémon (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hola, soy <homepage>Sage</homepage> (they/them) e hice la Calculadora de tipos de Pokémon (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Por favor, envíe sus comentarios y agradecimientos por correo electrónico a <email>pkmn@wavebeem.com</email>"
 more.settings.heading,Settings,Ajustes
 more.settings.language.label,Language,Idioma
@@ -156,25 +156,6 @@ more.givingBack.heading,Showing appreciation,Mostrar apreciación
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","He dedicado innumerables horas a mejorar este sitio. Si aprecias lo que he hecho, por favor considera realizar una donación a organizaciones benéficas que apoyen los derechos de las comunidades BIPOC y transgéneros."
 more.thanks.heading,Special thanks,Agradecimientos especiales
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,Traducción al Danés
-more.thanks.sections.ru,Russian translation,Traducción al Ruso
-more.thanks.sections.kk,Kazakh translation,Traducción al Kazajo
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Traducción al Portugués (Portugal)
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Traducción al Portugués (Brasil)
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Traducción al Chino Simplificado
-more.thanks.sections.zh-Hant,Traditional Chinese translation,Traducción al Chino Tradicional
-more.thanks.sections.no,Norwegian translation,Traducción al Noruego
-more.thanks.sections.ro,Romanian translation,Traducción al Rumano
-more.thanks.sections.pl,Polish translation,Traducción al Polaco
-more.thanks.sections.fr,French translation,Traducción al Francés
-more.thanks.sections.de,German translation,Traducción al Alemán
-more.thanks.sections.it,Italian translation,Traducción al Italiano
-more.thanks.sections.ko,Korean translation,Traducción al Coreano
-more.thanks.sections.ja,Japanese translation,Traducción al Japonés
-more.thanks.sections.nl,Dutch translation,Traducción al Neerlandés
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,Pruebas
-more.thanks.sections.other,Several anonymous Poké Fans,Varios Poké Fans anónimos
 more.openSource.heading,Open source,Código Abierto
 more.openSource.description,Source code is available on <github>GitHub</github>.,El código fuente está disponible en <github>GitHub</github>.
 more.legalInfo.heading,Legal info,Información legal

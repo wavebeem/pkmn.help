@@ -128,7 +128,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,Травяной ниче
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Поиск Покемонов только с травяным типом (например, Танджелла, Чикорита, Лилигант)."
 pokedexHelp.back,Back to Pokédex,Назад к Покедексу
 more.contact.heading,Contact me,Свяжитесь Со Мной
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Привет, Я <homepage>Брайан</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Привет, Я <homepage>Брайан</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Пожалуйста, пишите свои мысли и благодарности по Имейл адресу   <email>pkmn@wavebeem.com</email>."
 more.settings.heading,Settings,Настройки
 more.settings.language.label,Language,Язык
@@ -156,25 +156,6 @@ more.givingBack.heading,Showing appreciation,Выражение Признате
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Я потратил бесчисленное количество часов совершенствуя этот сайт. Если вы цените то, что я сделал, то пожалуйста, рассмотрите возможность пожертвования благотворительным учреждениям, которые поддерживают BIPOC и права трансгендеров."
 more.thanks.heading,Special thanks,Особая Благодарность
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,Датский перевод
-more.thanks.sections.ru,Russian translation,Русский перевод
-more.thanks.sections.kk,Kazakh translation,Казахский перевод
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Бразильский перевод
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Китайский перевод
-more.thanks.sections.zh-Hant,Traditional Chinese translation,
-more.thanks.sections.no,Norwegian translation,
-more.thanks.sections.ro,Romanian translation,Румынский перевод
-more.thanks.sections.pl,Polish translation,
-more.thanks.sections.fr,French translation,Французский перевод
-more.thanks.sections.de,German translation,Немецкий перевод
-more.thanks.sections.it,Italian translation,Итальянский перевод
-more.thanks.sections.ko,Korean translation,
-more.thanks.sections.ja,Japanese translation,Японский перевод
-more.thanks.sections.nl,Dutch translation,
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,Тестирование
-more.thanks.sections.other,Several anonymous Poké Fans,Несколько анонимных Поке Фанов
 more.openSource.heading,Open source,Открытый Источник
 more.openSource.description,Source code is available on <github>GitHub</github>.,Исходный код доступен на <github>GitHub</github>.
 more.legalInfo.heading,Legal info,Легальная Информация

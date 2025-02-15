@@ -128,7 +128,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,くさ　なし
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",くさタイプだけをもち、2つ目のタイプを持たないポケモンを検索する。(例モンジャラ、チコリータ)
 pokedexHelp.back,Back to Pokédex,ポケモンずかんにもどる
 more.contact.heading,Contact me,運営者に連絡
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",こんにちは、私は<homepage>セージ・フェンネル</homepage>です。ポケモン・タイプ・けいさんきを作りました。
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",こんにちは、私は<homepage>セージ・フェンネル</homepage>です。ポケモン・タイプ・けいさんきを作りました。
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,考えとありがとうを<email>pkmn@wavebeem.com</email>に電子メールで送ってください。
 more.settings.heading,Settings,設定
 more.settings.language.label,Language,言語
@@ -156,25 +156,6 @@ more.givingBack.heading,Showing appreciation,感謝の気持ちを表す
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",私はこのサイトの改善に数えられないほどの時間を費やしています。もしサイトが気に入ったらBIPOCとトランスジェンダーの権利のためのチャリティーに寄付することを検討下さい。
 more.thanks.heading,Special thanks,助けた人々
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,デンマーク語訳
-more.thanks.sections.ru,Russian translation,ロシア語翻訳
-more.thanks.sections.kk,Kazakh translation,カザフ語翻訳
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,ポルトガル語翻訳
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,ブラジルポルトガル語翻訳
-more.thanks.sections.zh-Hans,Simplified Chinese translation,中国語翻訳（簡体）
-more.thanks.sections.zh-Hant,Traditional Chinese translation,中国語翻訳（繁体）
-more.thanks.sections.no,Norwegian translation,ノルウェー語翻訳
-more.thanks.sections.ro,Romanian translation,ルーマニア語翻訳
-more.thanks.sections.pl,Polish translation,ポーランド語翻訳
-more.thanks.sections.fr,French translation,フランス語翻訳
-more.thanks.sections.de,German translation,ドイツ語翻訳
-more.thanks.sections.it,Italian translation,イタリア語翻訳
-more.thanks.sections.ko,Korean translation,朝鮮語翻訳
-more.thanks.sections.ja,Japanese translation,日本語翻訳
-more.thanks.sections.nl,Dutch translation,オランダ語翻訳
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,テスト
-more.thanks.sections.other,Several anonymous Poké Fans,無名のポケモン・ファンたち
 more.openSource.heading,Open source,オープンソース
 more.openSource.description,Source code is available on <github>GitHub</github>.,ソースコードは<github>GitHub</github>上で有効です。
 more.legalInfo.heading,Legal info,法的情報

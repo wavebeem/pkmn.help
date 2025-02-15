@@ -128,7 +128,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,Gras ingen
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Søg efter Pokémon der kun er gras typer, ingen anden type (Fx Tangela, Chikorita, Lilligant)"
 pokedexHelp.back,Back to Pokédex,Gå tilbage til Pokédexet
 more.contact.heading,Contact me,Kontakt mig
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hej, jeg <homepage>Sage Fennel</homepage> (they/them) og jeg lavede Pokémon type lommeregner/calculator (pkmn.help)"
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hej, jeg <homepage>Sage</homepage> (they/them) og jeg lavede Pokémon type lommeregner/calculator (pkmn.help)"
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Email venligst din taknemmelighed til <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Indstillinger
 more.settings.language.label,Language,Sprog
@@ -156,25 +156,6 @@ more.givingBack.heading,Showing appreciation,Viser taknemmelighed
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Jeg har brugt utallige timer på at forbedre denne hjemmeside. Hvis du er glad for hvad jeg har lavet, så tænk venligst over at donere til velgørenheder der stytter BIPOC og transkønnets rettigheder"
 more.thanks.heading,Special thanks,Tusind tak til
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,Dansk oversættelse
-more.thanks.sections.ru,Russian translation,Russisk oversættelse
-more.thanks.sections.kk,Kazakh translation,Kazakhstan oversættelse
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Brazillensk portugisisk oversættelse
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Kinesisk oversættelse
-more.thanks.sections.zh-Hant,Traditional Chinese translation,
-more.thanks.sections.no,Norwegian translation,
-more.thanks.sections.ro,Romanian translation,Rumænsk oversættelse
-more.thanks.sections.pl,Polish translation,
-more.thanks.sections.fr,French translation,Fransk oversættelse
-more.thanks.sections.de,German translation,Tysk oversættelse
-more.thanks.sections.it,Italian translation,Italiensk oversættelse
-more.thanks.sections.ko,Korean translation,
-more.thanks.sections.ja,Japanese translation,Japansk oversættelse
-more.thanks.sections.nl,Dutch translation,
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,Tests
-more.thanks.sections.other,Several anonymous Poké Fans,Mange anonyme Poké fans
 more.openSource.heading,Open source,Open source
 more.openSource.description,Source code is available on <github>GitHub</github>.,Du kan finde kildekoden på <github>GitHub</github>.
 more.legalInfo.heading,Legal info,Legal info

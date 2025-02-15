@@ -128,7 +128,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,iarba nimic
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Căutați Pokémon care sunt doar tip iarbă, fără al doilea tip (de exemplu, Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Înapoi la Pokedex
 more.contact.heading,Contact me,Contacteaza-ma
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Bună, sunt <homepage>Sage Fennel</homepage> (ei) și am creat Calculator tip Pokémon (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Bună, sunt <homepage>Sage</homepage> (ei) și am creat Calculator tip Pokémon (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Trimite idei si mulțumiri la <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Setari
 more.settings.language.label,Language,Limbi
@@ -156,25 +156,6 @@ more.givingBack.heading,Showing appreciation,Aratare de apreciare
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Eu am petrecut o multime de ore imbunatatind acest site. Daca apreciezi ce am facut, te rog considera donare la organizatii de caritate care supporta BIPOC si drepturile transgender."
 more.thanks.heading,Special thanks,Multumri speciale
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,Danish translation
-more.thanks.sections.ru,Russian translation,Russian translation
-more.thanks.sections.kk,Kazakh translation,Kazakh translation
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Traducere Portugheză Braziliană
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Traducere Chineză
-more.thanks.sections.zh-Hant,Traditional Chinese translation,
-more.thanks.sections.no,Norwegian translation,
-more.thanks.sections.ro,Romanian translation,Traducere Română
-more.thanks.sections.pl,Polish translation,
-more.thanks.sections.fr,French translation,Traducere Franceză
-more.thanks.sections.de,German translation,Traducere Germana
-more.thanks.sections.it,Italian translation,Traducere Italiana
-more.thanks.sections.ko,Korean translation,
-more.thanks.sections.ja,Japanese translation,Traducere Japoneza
-more.thanks.sections.nl,Dutch translation,
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,Testare
-more.thanks.sections.other,Several anonymous Poké Fans,Cativa fani anomimi Pokémon
 more.openSource.heading,Open source,Sursa Deschisa
 more.openSource.description,Source code is available on <github>GitHub</github>.,Codul de sursa e valabil pe <github>Github</github>.
 more.legalInfo.heading,Legal info,Informatie legala

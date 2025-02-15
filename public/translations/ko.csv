@@ -128,7 +128,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,풀 없음
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","단일 풀 타입 포켓몬을 검색합니다.(예: 덩쿠리, 치코리타, 드레디어)."
 pokedexHelp.back,Back to Pokédex,포켓몬 도감으로 돌아가기
 more.contact.heading,Contact me,문의
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","안녕하세요, 저는 <homepage>Sage Fennel</homepage> (they/them으로 지칭해 주세요) 이고 Pokémon Type Calculator (pkmn.help)를 만들었습니다."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","안녕하세요, 저는 <homepage>Sage</homepage> (they/them으로 지칭해 주세요) 이고 Pokémon Type Calculator (pkmn.help)를 만들었습니다."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,여러분의 생각과 감사를 <email>pkmn@wavebeem.com</email> 로 보내주세요.
 more.settings.heading,Settings,설정
 more.settings.language.label,Language,언어
@@ -156,25 +156,6 @@ more.givingBack.heading,Showing appreciation,감사 표하기
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",저는 이 사이트를 개선하는 데 많은 시간을 보냈습니다. 제가 만든 것에 고마움을 표하고 싶으시다면 흑인과 원주민 및 트랜스젠더 권리를 지원하는 자선 단체에 기부하는 것을 고려해 주세요.
 more.thanks.heading,Special thanks,도움을 주신 분들
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,덴마크어 번역
-more.thanks.sections.ru,Russian translation,러시아어 번역
-more.thanks.sections.kk,Kazakh translation,카자흐어 번역
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,브라질 포르투갈어 번역
-more.thanks.sections.zh-Hans,Simplified Chinese translation,중국어(간체) 번역
-more.thanks.sections.zh-Hant,Traditional Chinese translation,중국어(번체) 번역
-more.thanks.sections.no,Norwegian translation,노르웨이어 번역
-more.thanks.sections.ro,Romanian translation,루마니아어 번역
-more.thanks.sections.pl,Polish translation,폴란드어 번역
-more.thanks.sections.fr,French translation,프랑스어 번역
-more.thanks.sections.de,German translation,독일어 번역
-more.thanks.sections.it,Italian translation,이탈리아어 번역
-more.thanks.sections.ko,Korean translation,한국어 번역
-more.thanks.sections.ja,Japanese translation,일본어 번역
-more.thanks.sections.nl,Dutch translation,네델란드어
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,테스터
-more.thanks.sections.other,Several anonymous Poké Fans,여러 익명의 포켓몬 팬
 more.openSource.heading,Open source,오픈 소스
 more.openSource.description,Source code is available on <github>GitHub</github>.,소스 코드는 <github>GitHub</github>에서 확인할 수 있습니다.
 more.legalInfo.heading,Legal info,법률 정보

@@ -128,7 +128,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,草 无
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",搜索只有草属性，没有第二属性的宝可梦（例：蔓藤怪、菊草叶、裙儿小姐）。
 pokedexHelp.back,Back to Pokédex,返回图鉴
 more.contact.heading,Contact me,联系我
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",你好，我是 <homepage>Sage Fennel</homepage>（they/them)，是宝可梦属性计算器（pkmn.help）的作者。
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",你好，我是 <homepage>Sage</homepage>（they/them)，是宝可梦属性计算器（pkmn.help）的作者。
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,请将你的想法和感谢寄到 <email>pkmn@wavebeem.com</email>。
 more.settings.heading,Settings,设定
 more.settings.language.label,Language,语言
@@ -156,25 +156,6 @@ more.givingBack.heading,Showing appreciation,表示感恩
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",我花了无数小时改善这个网站。如果你喜欢我做的内容的话，请考虑向支持 BIPOC 和跨性别人士权益的慈善机构捐款。
 more.thanks.heading,Special thanks,特别感谢
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,丹麦语翻译
-more.thanks.sections.ru,Russian translation,俄语翻译
-more.thanks.sections.kk,Kazakh translation,哈萨克语翻译
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,葡萄牙语（葡萄牙）翻译
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,巴西葡萄牙语翻译
-more.thanks.sections.zh-Hans,Simplified Chinese translation,简体中文翻译
-more.thanks.sections.zh-Hant,Traditional Chinese translation,繁体中文翻译
-more.thanks.sections.no,Norwegian translation,挪威翻译
-more.thanks.sections.ro,Romanian translation,罗马尼亚语翻译
-more.thanks.sections.pl,Polish translation,波兰语翻译
-more.thanks.sections.fr,French translation,法语翻译
-more.thanks.sections.de,German translation,德语翻译
-more.thanks.sections.it,Italian translation,意大利语翻译
-more.thanks.sections.ko,Korean translation,韩语翻译
-more.thanks.sections.ja,Japanese translation,日语翻译
-more.thanks.sections.nl,Dutch translation,荷兰语翻译
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,测试
-more.thanks.sections.other,Several anonymous Poké Fans,数位匿名宝可梦玩家
 more.openSource.heading,Open source,开放原始码
 more.openSource.description,Source code is available on <github>GitHub</github>.,源代码可在 <github>GitHub</github> 上获得。
 more.legalInfo.heading,Legal info,法律信息

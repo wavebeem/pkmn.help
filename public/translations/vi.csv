@@ -128,7 +128,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,Cỏ [Trống]
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Tìm kiếm các Pokémon chỉ thuộc hệ Cỏ và không hệ thứ hai nào khác (ví dụ: Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Quay lại trang Pokédex
 more.contact.heading,Contact me,Liên hệ với tôi
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Xin chào, tôi là <homepage>Sage Fennel</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Xin chào, tôi là <homepage>Sage</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Bạn có thể email bất kể câu hỏi và cảm ơn đến <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Cài Đặt
 more.settings.language.label,Language,Ngôn Ngữ
@@ -156,25 +156,6 @@ more.givingBack.heading,Showing appreciation,Bày tỏ đánh giá
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Tôi đã dành bao thời gian cải thiện trang web này. Nếu bạn đánh giá cao thành quả của tôi, nếu có thể, xin bạn quyên góp cho các từ thiện chống phân biệt người da màu và người chuyển giới."
 more.thanks.heading,Special thanks,Chân thành cảm ơn đến
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,Bản dịch tiếng Đan Mạch
-more.thanks.sections.ru,Russian translation,Bản dịch tiếng Nga
-more.thanks.sections.kk,Kazakh translation,Bản dịch tiếng Kazakh
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Bản dịch tiếng Bồ Đào Nha (Châu Âu)
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Bản dịch tiếng Bồ Đào Nha (Brazil)
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Bản dịch tiếng Trung giản thể
-more.thanks.sections.zh-Hant,Traditional Chinese translation,Bản dịch tiếng Trung truyền thống
-more.thanks.sections.no,Norwegian translation,Bản dịch tiếng Na Uy
-more.thanks.sections.ro,Romanian translation,Bản dịch tiếng Romania
-more.thanks.sections.pl,Polish translation,Bản dịch tiếng Ba Lan
-more.thanks.sections.fr,French translation,Bản dịch tiếng Pháp
-more.thanks.sections.de,German translation,Bản dịch tiếng Đức
-more.thanks.sections.it,Italian translation,Bản dịch tiếng Ý
-more.thanks.sections.ko,Korean translation,Bản dịch tiếng Hàn
-more.thanks.sections.ja,Japanese translation,Bản dịch tiếng Nhật
-more.thanks.sections.nl,Dutch translation,Bản dịch tiếng Hà Lan
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,Thử Nghiệm
-more.thanks.sections.other,Several anonymous Poké Fans,Nhiều các fan Pokémon ẩn danh
 more.openSource.heading,Open source,Nguồn mở
 more.openSource.description,Source code is available on <github>GitHub</github>.,Bản code có sẵn trên <github>GitHub</github>.
 more.legalInfo.heading,Legal info,Thông tin pháp lý.
