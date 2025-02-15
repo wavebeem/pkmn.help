@@ -44,9 +44,6 @@
     "back": "Шабуылға қайту"
   },
   "defense": {
-    "chooseFirst": "Бірінші Тип Т.аңдаңыз",
-    "chooseSecond": "Екінші Тип Таңдаңыз",
-    "chooseThird": "Үшінші Тип Таңдаңыз",
     "takesXFrom": "{{ x }} Алады",
     "abilityNames": {
       "filter": "Filter",
@@ -69,7 +66,8 @@
       "lightning_rod": "Lightning Rod",
       "motor_drive": "Motor Drive",
       "volt_absorb": "Volt Absorb"
-    }
+    },
+    "chooseTypes": "Типтер Таңдау"
   },
   "pokedex": {
     "search": {
@@ -141,7 +139,7 @@
   "more": {
     "contact": {
       "heading": "Менімен Байланысыңыз",
-      "intro": "Сәлем, мен <homepage>Брайанмын</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help).",
+      "intro": "Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help).",
       "email": "Өтініш, өз ойларыңызды және рақметтеріңізді <email>pkmn@wavebeem.com</email> поштасына жіберіңіз."
     },
     "settings": {

@@ -75,9 +75,6 @@
     "back": "Zurück zum Angriff"
   },
   "defense": {
-    "chooseFirst": "Ersten Typ wählen",
-    "chooseSecond": "Zweiten Typ wählen",
-    "chooseThird": "Dritten Typ wählen",
     "takesXFrom": "Nimmt {{ x }} Schaden von",
     "chooseAbility": "Fähigkeit auswählen",
     "chooseTeraType": "Tera-Typ auswählen",
@@ -124,7 +121,8 @@
       "type": "Typ",
       "edit": "Editiere",
       "remove": "Entfernen"
-    }
+    },
+    "chooseTypes": "Typen auswählen"
   },
   "pokedex": {
     "search": {

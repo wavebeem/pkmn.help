@@ -64,9 +64,6 @@
     "back": "Terug naar offensief"
   },
   "defense": {
-    "chooseFirst": "Kies eerste type",
-    "chooseSecond": "Kies tweede type",
-    "chooseThird": "Kies derde type",
     "takesXFrom": "Krijgt {{ x }} van",
     "chooseAbility": "Kies vaardigheid",
     "chooseTeraType": "Kies tera type",
@@ -111,7 +108,8 @@
       "type": "Type",
       "edit": "Bewerk",
       "remove": "Verwijder"
-    }
+    },
+    "chooseTypes": "Kies Types"
   },
   "pokedex": {
     "search": {

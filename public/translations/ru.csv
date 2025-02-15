@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Экспортиров�
 coverage.status.reset,Loaded default Pokémon forms,Загружены формы Покемонов по умолчанию
 coverage.status.errored,Error loading CSV. Don't change header names.,Ошибка загрузки CSV. Не изменяйте имени заголовок.
 coverage.back,Back to offense,Назад к Нападению
-defense.chooseTypes,Choose types,
+defense.chooseTypes,Choose types,Выберите Типы
 defense.takesXFrom,Takes {{ x }} from,Принимает {{ x }} от
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
@@ -126,7 +126,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,Травяной ниче
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Поиск Покемонов только с травяным типом (например, Танджелла, Чикорита, Лилигант)."
 pokedexHelp.back,Back to Pokédex,Назад к Покедексу
 more.contact.heading,Contact me,Свяжитесь Со Мной
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Привет, Я <homepage>Брайан</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Привет, Я <homepage>Sage</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Пожалуйста, пишите свои мысли и благодарности по Имейл адресу   <email>pkmn@wavebeem.com</email>."
 more.settings.heading,Settings,Настройки
 more.settings.language.label,Language,Язык

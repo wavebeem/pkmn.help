@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Wyeksportowane domyśln
 coverage.status.reset,Loaded default Pokémon forms,Załadowane domyślne formy Pokémonów
 coverage.status.errored,Error loading CSV. Don't change header names.,Błąd ładowania pliku CSV. Nie zmieniaj nazw nagłówków.
 coverage.back,Back to offense,Wróć do ofensywy
-defense.chooseTypes,Choose types,
+defense.chooseTypes,Choose types,Wybierz typy
 defense.takesXFrom,Takes {{ x }} from,Dostaje {{ x }} od
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,

@@ -75,9 +75,6 @@
     "back": "공격으로 돌아가기"
   },
   "defense": {
-    "chooseFirst": "첫 번째 타입 선택",
-    "chooseSecond": "두 번째 타입 선택",
-    "chooseThird": "세 번째 타입 선택",
     "takesXFrom": "{{ x }} 피해",
     "chooseAbility": "특성 선택",
     "chooseTeraType": "테라스탈 타입 선택",
@@ -124,7 +121,8 @@
       "type": "유형",
       "edit": "편집",
       "remove": "제거"
-    }
+    },
+    "chooseTypes": "타입 선택"
   },
   "pokedex": {
     "search": {

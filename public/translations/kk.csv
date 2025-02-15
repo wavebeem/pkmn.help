@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Бастапқы Пок
 coverage.status.reset,Loaded default Pokémon forms,Бастапқы Покемон түрлері жүктелді.
 coverage.status.errored,Error loading CSV. Don't change header names.,CSV жүктеу қатесі. Тақырып аттарын өзгертпеңіз.
 coverage.back,Back to offense,Шабуылға қайту
-defense.chooseTypes,Choose types,
+defense.chooseTypes,Choose types,Типтер Таңдау
 defense.takesXFrom,Takes {{ x }} from,{{ x }} Алады
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
@@ -126,7 +126,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,шөпті ештеңе
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Тек шөпті типі бар және екінші типі жоқ Покемонды іздеу (мысалға Танжелла, Чикорита, Лилигант)."
 pokedexHelp.back,Back to Pokédex,Покедекске қайту
 more.contact.heading,Contact me,Менімен Байланысыңыз
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Сәлем, мен <homepage>Брайанмын</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Өтініш, өз ойларыңызды және рақметтеріңізді <email>pkmn@wavebeem.com</email> поштасына жіберіңіз."
 more.settings.heading,Settings,Баптаулар
 more.settings.language.label,Language,Тіл

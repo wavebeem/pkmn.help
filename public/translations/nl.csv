@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Geëxporteerde standaar
 coverage.status.reset,Loaded default Pokémon forms,Geladen standaard Pokémonvormen
 coverage.status.errored,Error loading CSV. Don't change header names.,Error met het laden van CSV. Verander kopnamen niet.
 coverage.back,Back to offense,Terug naar offensief
-defense.chooseTypes,Choose types,
+defense.chooseTypes,Choose types,Kies Types
 defense.takesXFrom,Takes {{ x }} from,Krijgt {{ x }} van
 defense.chooseAbility,Choose ability,Kies vaardigheid
 defense.chooseTeraType,Choose tera type,Kies tera type

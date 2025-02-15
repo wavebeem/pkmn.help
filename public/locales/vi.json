@@ -74,9 +74,6 @@
     "back": "Quay lại trang Tấn Công"
   },
   "defense": {
-    "chooseFirst": "Chọn hệ đầu tiên",
-    "chooseSecond": "Chọn hệ thứ hai",
-    "chooseThird": "Chọn hệ thứ ba",
     "takesXFrom": "Nhận {{ x }} dame từ",
     "chooseAbility": "Chọn Đặc Tính",
     "chooseTeraType": "Chọn hệ tera",
@@ -123,7 +120,8 @@
       "type": "Hệ",
       "edit": "Chỉnh sửa",
       "remove": "Xóa"
-    }
+    },
+    "chooseTypes": "Chọn hệ (một hoặc hai)"
   },
   "pokedex": {
     "search": {
