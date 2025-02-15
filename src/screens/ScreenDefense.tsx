@@ -83,12 +83,6 @@ export function ScreenDefense(): ReactNode {
     }
   }
 
-  function updateTypeAt(index: number): (type: Type) => void {
-    return (type) => {
-      setTypes(normalizeTypes(updateArrayAt(types, index, type)));
-    };
-  }
-
   // Sort names alphabetically and remove "none" since we put that first
   // manually and add a divider after it
   const sortedAbilityNames = strongKeys(abilities)
