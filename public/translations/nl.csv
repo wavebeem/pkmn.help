@@ -42,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Geëxporteerde standaar
 coverage.status.reset,Loaded default Pokémon forms,Geladen standaard Pokémonvormen
 coverage.status.errored,Error loading CSV. Don't change header names.,Error met het laden van CSV. Verander kopnamen niet.
 coverage.back,Back to offense,Terug naar offensief
-defense.chooseFirst,Choose first type,Kies eerste type
-defense.chooseSecond,Choose second type,Kies tweede type
-defense.chooseThird,Choose third type,Kies derde type
+defense.chooseTypes,Choose types,Kies Types
 defense.takesXFrom,Takes {{ x }} from,Krijgt {{ x }} van
 defense.chooseAbility,Choose ability,Kies vaardigheid
 defense.chooseTeraType,Choose tera type,Kies tera type
@@ -128,7 +126,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,gras geen
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Zoekt op Pokémon die alleen gras type zijn, geen 2e type (bijv. Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Terug naar Pokédex
 more.contact.heading,Contact me,Neem contact met mij op
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hoi, ik ben <homepage>Sage Fennel</homepage> (die/hen), en ik heb de Pokémon Type Rekenmachine gemaakt (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hoi, ik ben <homepage>Sage</homepage> (die/hen), en ik heb de Pokémon Type Rekenmachine gemaakt (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,E-mail alsjeblieft je gedachtes en bedankjes naar <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Instellingen
 more.settings.language.label,Language,Taal
@@ -156,25 +154,6 @@ more.givingBack.heading,Showing appreciation,Waardering
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Er zitten ontelbaar veel uren in het verbeteren van deze website. Als je waardeert wat ik heb gemaakt, alsjeblieft overweeg iets te doneren aan liefdadigheden die BIPOC en transgenderrechten ondersteunen."
 more.thanks.heading,Special thanks,Speciale dank
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,Deense vertaling
-more.thanks.sections.ru,Russian translation,Russische vertaling
-more.thanks.sections.kk,Kazakh translation,Kazachse vertaling
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Portugese vertaling
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Brazilisch Portugese vertaling
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Versimpeld Chinese vertaling
-more.thanks.sections.zh-Hant,Traditional Chinese translation,Traditioneel Chinese vertaling
-more.thanks.sections.no,Norwegian translation,
-more.thanks.sections.ro,Romanian translation,Romeense vertaling
-more.thanks.sections.pl,Polish translation,Poolse vertaling
-more.thanks.sections.fr,French translation,Franse vertaling
-more.thanks.sections.de,German translation,Duitse vertaling
-more.thanks.sections.it,Italian translation,Italiaanse vertaling
-more.thanks.sections.ko,Korean translation,Koreaanse vertaling
-more.thanks.sections.ja,Japanese translation,Japanse vertaling
-more.thanks.sections.nl,Dutch translation,Nederlandse vertaling
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,Testen
-more.thanks.sections.other,Several anonymous Poké Fans,Wat anonieme Poké Fans
 more.openSource.heading,Open source,Open source
 more.openSource.description,Source code is available on <github>GitHub</github>.,Broncode is verkrijgbaar op <github>GitHub</github>
 more.legalInfo.heading,Legal info,Legale info

@@ -75,9 +75,6 @@
     "back": "Retour à l'onglet \"Couverture offensive\""
   },
   "defense": {
-    "chooseFirst": "Choisir le premier type",
-    "chooseSecond": "Choisir le second type",
-    "chooseThird": "Choisir le troisème type",
     "takesXFrom": "Subit {{ x }} de",
     "chooseAbility": "Choisir le talent",
     "chooseTeraType": "Choisir le type téracristal",
@@ -124,7 +121,8 @@
       "type": "Type",
       "edit": "Modifier",
       "remove": "Supprimer"
-    }
+    },
+    "chooseTypes": "Choisissez les types"
   },
   "pokedex": {
     "search": {

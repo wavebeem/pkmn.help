@@ -75,9 +75,6 @@
     "back": "こうげきに戻る"
   },
   "defense": {
-    "chooseFirst": "１つ目のタイプ",
-    "chooseSecond": "２つ目のタイプ",
-    "chooseThird": "３つ目のタイプ",
     "takesXFrom": "{{ x }}を受ける",
     "chooseAbility": "特性",
     "chooseTeraType": "テラスタイプ",
@@ -124,7 +121,8 @@
       "type": "タイプ",
       "edit": "変える",
       "remove": "消す"
-    }
+    },
+    "chooseTypes": "複数のタイプを選択"
   },
   "pokedex": {
     "search": {
@@ -202,7 +200,7 @@
   "more": {
     "contact": {
       "heading": "運営者に連絡",
-      "intro": "こんにちは、私は<homepage>セージ・フェンネル</homepage>です。ポケモン・タイプ・けいさんきを作りました。",
+      "intro": "こんにちは、私は<homepage>セージ</homepage>です。ポケモン・タイプ・けいさんきを作りました。",
       "email": "考えとありがとうを<email>pkmn@wavebeem.com</email>に電子メールで送ってください。"
     },
     "settings": {

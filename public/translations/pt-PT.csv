@@ -42,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Formas de Pokémon pred
 coverage.status.reset,Loaded default Pokémon forms,Formas de Pokémon predefinidas carregadas
 coverage.status.errored,Error loading CSV. Don't change header names.,Erro ao carregar CSV. Não alterar os nomes dos cabeçalhos.
 coverage.back,Back to offense,Voltar ao ataque
-defense.chooseFirst,Choose first type,Selecionar o primeiro tipo
-defense.chooseSecond,Choose second type,Selecionar o segundo tipo
-defense.chooseThird,Choose third type,Selecionar o terceiro tipo
+defense.chooseTypes,Choose types,Escolher tipos
 defense.takesXFrom,Takes {{ x }} from,Recebe {{ x }} de
 defense.chooseAbility,Choose ability,Escolher habilidade
 defense.chooseTeraType,Choose tera type,Selecionar o tipo de tera
@@ -128,7 +126,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,relva nenhum
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Procurar Pokémons que sejam apenas do tipo erva, sem 2º tipo (por exemplo, Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Voltar à Pokédex
 more.contact.heading,Contact me,Contacta-me
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Olá, eu sou o <homepage>Sage Fennel</homepage> (eles/elas), e criei a Calculadora de Tipos de Pokémon (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Olá, eu sou o <homepage>Sage</homepage> (eles/elas), e criei a Calculadora de Tipos de Pokémon (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Envia as tuas ideias e agradecimentos por correio eletrónico para <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Definições
 more.settings.language.label,Language,Linguagem
@@ -156,25 +154,6 @@ more.givingBack.heading,Showing appreciation,Demonstrar apreço
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Passei inúmeras horas a melhorar este site. Se aprecias o que fiz, considera fazer um donativo a instituições de caridade que apoiem a justiça racial e os direitos dos transexuais."
 more.thanks.heading,Special thanks,Agradecimentos especiais
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,Tradução para dinamarquês
-more.thanks.sections.ru,Russian translation,Tradução para russo
-more.thanks.sections.kk,Kazakh translation,Tradução para cazaque
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Tradução para português (Portugal)
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Tradução para português (Brasil)
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Tradução para chinês simplificado
-more.thanks.sections.zh-Hant,Traditional Chinese translation,Tradução para chinês tradicional
-more.thanks.sections.no,Norwegian translation,Tradução para norueguês
-more.thanks.sections.ro,Romanian translation,Tradução para romeno
-more.thanks.sections.pl,Polish translation,Tradução para polaco
-more.thanks.sections.fr,French translation,Tradução para francês
-more.thanks.sections.de,German translation,Tradução para alemão
-more.thanks.sections.it,Italian translation,Tradução para italiano
-more.thanks.sections.ko,Korean translation,Tradução para coreano
-more.thanks.sections.ja,Japanese translation,Tradução para japonês
-more.thanks.sections.nl,Dutch translation,Tradução para neerlandês
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,Testes
-more.thanks.sections.other,Several anonymous Poké Fans,Vários fãs anónimos de Pokémon
 more.openSource.heading,Open source,Fonte pública
 more.openSource.description,Source code is available on <github>GitHub</github>.,O código-fonte está disponível no <github>GitHub</github>.
 more.legalInfo.heading,Legal info,Informações legais

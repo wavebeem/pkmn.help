@@ -44,9 +44,6 @@
     "back": "Înapoi la atac"
   },
   "defense": {
-    "chooseFirst": "Alege primul fel",
-    "chooseSecond": "Alege al doilea fel",
-    "chooseThird": "Alege al treilea fel",
     "takesXFrom": "Ia {{ x }} de la",
     "abilityNames": {
       "filter": "Filter",
@@ -69,7 +66,8 @@
       "lightning_rod": "Lightning Rod",
       "motor_drive": "Motor Drive",
       "volt_absorb": "Volt Absorb"
-    }
+    },
+    "chooseTypes": "Alege tipuri"
   },
   "pokedex": {
     "search": {

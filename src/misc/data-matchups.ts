@@ -158,6 +158,15 @@ export function partitionMatchups({
       moves = [...specialMoves, undefined];
     }
     let offTypes: readonly (Type | undefined)[] = [...types];
+    if (moves.includes("flying_press")) {
+      offTypes = [...offTypes];
+    }
+    if (moves.includes("freeze-dry") && !offTypes.includes("ice")) {
+      offTypes = [...offTypes, "ice"];
+    }
+    if (moves.includes("thousand_arrows") && !offTypes.includes("ground")) {
+      offTypes = [...offTypes, "ground"];
+    }
     if (offTypes.length === 0) {
       offTypes = [undefined];
     }
@@ -417,15 +426,22 @@ export function offensiveMatchups({
       } else if (moves.includes("flying_press") && offenseTypes.length > 0) {
         moves = [...moves, undefined];
       }
-      let abilities: readonly AbilityName[] = offenseAbilities;
+      let abilities: readonly AbilityName[] = [...offenseAbilities];
       if (offenseAbilities.length === 0) {
         abilities = ["none"];
       }
-      let offTypes: readonly (Type | undefined)[] = offenseTypes;
+      let offTypes: readonly (Type | undefined)[] = [...offenseTypes];
+      if (moves.includes("flying_press")) {
+        offTypes = [...offTypes];
+      }
+      if (moves.includes("freeze-dry") && !offTypes.includes("ice")) {
+        offTypes = [...offTypes, "ice"];
+      }
+      if (moves.includes("thousand_arrows") && !offTypes.includes("ground")) {
+        offTypes = [...offTypes, "ground"];
+      }
       if (offTypes.length === 0) {
         offTypes = [undefined];
-      } else if (moves.includes("flying_press")) {
-        offTypes = [...offTypes];
       }
       const effs = abilities.flatMap((offenseAbilityName) => {
         return moves.flatMap((move) => {

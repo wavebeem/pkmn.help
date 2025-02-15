@@ -59,9 +59,6 @@
     "back": "Tilbage til Angreb"
   },
   "defense": {
-    "chooseFirst": "Vælg første type",
-    "chooseSecond": "Vælg anden type",
-    "chooseThird": "Vælg tredje type",
     "takesXFrom": "Tager {{ x }} Fra",
     "abilityNames": {
       "filter": "Filter",
@@ -84,7 +81,8 @@
       "lightning_rod": "Lightning Rod",
       "motor_drive": "Motor Drive",
       "volt_absorb": "Volt Absorb"
-    }
+    },
+    "chooseTypes": "Vælg typer/type"
   },
   "pokedex": {
     "search": {

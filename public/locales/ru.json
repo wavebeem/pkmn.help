@@ -44,9 +44,6 @@
     "back": "Назад к Нападению"
   },
   "defense": {
-    "chooseFirst": "Выберите Первый Тип",
-    "chooseSecond": "Выберите Второй Тип",
-    "chooseThird": "Выберите Третий Тип",
     "takesXFrom": "Принимает {{ x }} от",
     "abilityNames": {
       "filter": "Filter",
@@ -69,7 +66,8 @@
       "lightning_rod": "Lightning Rod",
       "motor_drive": "Motor Drive",
       "volt_absorb": "Volt Absorb"
-    }
+    },
+    "chooseTypes": "Выберите Типы"
   },
   "pokedex": {
     "search": {
@@ -141,7 +139,7 @@
   "more": {
     "contact": {
       "heading": "Свяжитесь Со Мной",
-      "intro": "Привет, Я <homepage>Брайан</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (pkmn.help).",
+      "intro": "Привет, Я <homepage>Sage</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (pkmn.help).",
       "email": "Пожалуйста, пишите свои мысли и благодарности по Имейл адресу   <email>pkmn@wavebeem.com</email>."
     },
     "settings": {

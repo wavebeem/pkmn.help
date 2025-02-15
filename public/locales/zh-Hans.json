@@ -75,9 +75,6 @@
     "back": "返回攻击方"
   },
   "defense": {
-    "chooseFirst": "选择第一属性",
-    "chooseSecond": "选择第二属性",
-    "chooseThird": "选择第三属性",
     "takesXFrom": "受到 {{ x }} 伤害",
     "chooseAbility": "特性",
     "chooseTeraType": "选择太晶属性",
@@ -124,7 +121,8 @@
       "type": "属性",
       "edit": "编辑",
       "remove": "移除"
-    }
+    },
+    "chooseTypes": "选择属性"
   },
   "pokedex": {
     "search": {

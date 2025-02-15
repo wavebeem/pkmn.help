@@ -74,9 +74,6 @@
     "back": "Tilbake til angrep"
   },
   "defense": {
-    "chooseFirst": "Velg første type",
-    "chooseSecond": "Velg andre type",
-    "chooseThird": "Velg tredje type",
     "takesXFrom": "Tar {{ x }} fra",
     "chooseAbility": "Velg evne",
     "chooseTeraType": "Velg tera type",
@@ -123,7 +120,8 @@
       "type": "Type",
       "edit": "Rediger",
       "remove": "Fjern"
-    }
+    },
+    "chooseTypes": "Velg typer"
   },
   "pokedex": {
     "search": {

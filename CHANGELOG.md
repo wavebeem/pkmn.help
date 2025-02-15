@@ -1,5 +1,28 @@
 # Changelog
 
+## 2025-02-14
+
+- Changed the "Defense" type selection to use a similar approach as the
+  "Offense" type selection
+
+  - You will still be limited to two types unless you select "Three types" in
+    the "More" settings screen
+
+  - This change is intended to reduce clicks and scrolling so that you can input
+    types faster than before, and see all information on screen using less space
+
+- Increased the size of the type color / checkbox area on the type selector
+  buttons
+
+- Fixed an issue where "Freeze-Dry" required selecting "Ice" in order to show
+  its type matchups
+
+- Fixed an issue where "Thousand Arrows" required selecting "Ground" in order to
+  show its type matchups
+
+- Removed "bounce" over scrolling when scrolling to the top or bottom of the
+  page
+
 ## 2025-02-13
 
 - Added "Flying Press"

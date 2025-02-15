@@ -42,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Бастапқы Пок
 coverage.status.reset,Loaded default Pokémon forms,Бастапқы Покемон түрлері жүктелді.
 coverage.status.errored,Error loading CSV. Don't change header names.,CSV жүктеу қатесі. Тақырып аттарын өзгертпеңіз.
 coverage.back,Back to offense,Шабуылға қайту
-defense.chooseFirst,Choose first type,Бірінші Тип Т.аңдаңыз
-defense.chooseSecond,Choose second type,Екінші Тип Таңдаңыз
-defense.chooseThird,Choose third type,Үшінші Тип Таңдаңыз
+defense.chooseTypes,Choose types,Типтер Таңдау
 defense.takesXFrom,Takes {{ x }} from,{{ x }} Алады
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
@@ -128,7 +126,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,шөпті ештеңе
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Тек шөпті типі бар және екінші типі жоқ Покемонды іздеу (мысалға Танжелла, Чикорита, Лилигант)."
 pokedexHelp.back,Back to Pokédex,Покедекске қайту
 more.contact.heading,Contact me,Менімен Байланысыңыз
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Сәлем, мен <homepage>Брайанмын</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Өтініш, өз ойларыңызды және рақметтеріңізді <email>pkmn@wavebeem.com</email> поштасына жіберіңіз."
 more.settings.heading,Settings,Баптаулар
 more.settings.language.label,Language,Тіл
@@ -156,25 +154,6 @@ more.givingBack.heading,Showing appreciation,Алғыс Білдіру
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Мен осы сайтты жақсартуға шексіз көп сағат жұмсадым. Егер сіз жасаған ісіме алғыс білдіргіңіз келсе, өтініш, BIPOC-ты және трансгендер құқықтарын қорғайтын қайырымдылық қорларына садақа беру туралы ойланыңыз."
 more.thanks.heading,Special thanks,Арнайы Алғыс
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,Danish translation
-more.thanks.sections.ru,Russian translation,Орысша аудармасы
-more.thanks.sections.kk,Kazakh translation,Қазақша аудармасы
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Бразильша Португалша аудармасы
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Қытайша аудармасы
-more.thanks.sections.zh-Hant,Traditional Chinese translation,
-more.thanks.sections.no,Norwegian translation,
-more.thanks.sections.ro,Romanian translation,Румынша аудармасы
-more.thanks.sections.pl,Polish translation,
-more.thanks.sections.fr,French translation,Французша аудармасы
-more.thanks.sections.de,German translation,Немісше аудармасы
-more.thanks.sections.it,Italian translation,Италианша аудармасы
-more.thanks.sections.ko,Korean translation,
-more.thanks.sections.ja,Japanese translation,Жапонша аудармасы
-more.thanks.sections.nl,Dutch translation,
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,Тестілеу
-more.thanks.sections.other,Several anonymous Poké Fans,Бірнеше анонимды Поке Фандар
 more.openSource.heading,Open source,Ашық Дереккөз
 more.openSource.description,Source code is available on <github>GitHub</github>.,Дереккөз кодын <github>GitHub<github> сайтынан таба аласыз.
 more.legalInfo.heading,Legal info,Заңды Ақпарат

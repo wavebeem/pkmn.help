@@ -42,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,匯出了預設的寶�
 coverage.status.reset,Loaded default Pokémon forms,載入了預設的寶可夢形式
 coverage.status.errored,Error loading CSV. Don't change header names.,載入 CSV 時出錯。不要更改標題名稱。
 coverage.back,Back to offense,返回攻擊
-defense.chooseFirst,Choose first type,選擇第一個屬性
-defense.chooseSecond,Choose second type,選擇第二個屬性
-defense.chooseThird,Choose third type,選擇第三個屬性
+defense.chooseTypes,Choose types,選擇屬性
 defense.takesXFrom,Takes {{ x }} from,從中取 {{ x }}
 defense.chooseAbility,Choose ability,選擇技能
 defense.chooseTeraType,Choose tera type,選擇太晶屬性
@@ -128,7 +126,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,草 無
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",搜索僅具有草屬性的寶可夢，沒有第二屬性（例如，蔓藤怪，菊草葉，裙兒小姐）。
 pokedexHelp.back,Back to Pokédex,返回寶可夢圖鑑
 more.contact.heading,Contact me,聯繫我
-more.contact.intro,"Hi, I'm <homepage>Sage Fennel</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",你好，我是 <homepage>Sage Fennel</homepage>（他們），我製作了 神奇寶貝屬性計算器 (pkmn.help）。
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",你好，我是 <homepage>Sage</homepage>（他們），我製作了 神奇寶貝屬性計算器 (pkmn.help）。
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,請將您的想法和感謝發送到 <email>pkmn@wavebeem.com</email>。
 more.settings.heading,Settings,設置
 more.settings.language.label,Language,語言
@@ -156,25 +154,6 @@ more.givingBack.heading,Showing appreciation,表達感激之情
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",我已經花費了無數時間來改進這個網站。如果您欣賞我的成果，請考慮捐款支持支持非裔和跨性別人士權利的慈善機構。
 more.thanks.heading,Special thanks,特別感謝
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.thanks.sections.da,Danish translation,丹麥翻譯
-more.thanks.sections.ru,Russian translation,俄羅斯翻譯
-more.thanks.sections.kk,Kazakh translation,哈薩克翻譯
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,葡萄牙葡萄牙語翻譯
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,巴西葡萄牙語翻譯
-more.thanks.sections.zh-Hans,Simplified Chinese translation,簡體中文翻譯
-more.thanks.sections.zh-Hant,Traditional Chinese translation,繁體中文翻譯
-more.thanks.sections.no,Norwegian translation,
-more.thanks.sections.ro,Romanian translation,羅馬尼亞翻譯
-more.thanks.sections.pl,Polish translation,波蘭翻譯
-more.thanks.sections.fr,French translation,法語翻譯
-more.thanks.sections.de,German translation,德語翻譯
-more.thanks.sections.it,Italian translation,意大利語翻譯
-more.thanks.sections.ko,Korean translation,韓語翻譯
-more.thanks.sections.ja,Japanese translation,日語翻譯
-more.thanks.sections.nl,Dutch translation,荷蘭翻譯
-more.thanks.sections.vi,Vietnamese translation,
-more.thanks.sections.testing,Testing,測試
-more.thanks.sections.other,Several anonymous Poké Fans,幾位匿名的粉絲
 more.openSource.heading,Open source,開源
 more.openSource.description,Source code is available on <github>GitHub</github>.,源代碼可在 <github>GitHub</github> 上找到。
 more.legalInfo.heading,Legal info,法律信息
