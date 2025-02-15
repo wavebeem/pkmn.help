@@ -1,31 +1,7 @@
 import fs from "fs";
 import Papa from "papaparse";
 import { saveJSON } from "./util.js";
-
-/**
- * Set a deeply nested property on an object
- *
- * @example
- * set(object, ["key1", "key2", 3, "key4"], "value");
- */
-function set(object: Record<string, any>, keys: string[], value: any): void {
-  switch (keys.length) {
-    case 0:
-      throw new Error("what??");
-    case 1: {
-      const [key] = keys;
-      object[key] = value;
-      break;
-    }
-    default: {
-      const [key, ...keys_] = keys;
-      if (!object[key]) {
-        object[key] = {};
-      }
-      return set(object[key], keys_, value);
-    }
-  }
-}
+import { setPath } from "./lib/setPath.js";
 
 async function main() {
   const [lang] = process.argv.slice(2);
@@ -38,7 +14,7 @@ async function main() {
   const translation = {};
   for (const [key, , other] of rows) {
     if (other) {
-      set(translation, key.split("."), other.trim());
+      setPath(translation, key.split("."), other.trim());
     }
   }
   saveJSON(`public/locales/${lang}.json`, translation, {

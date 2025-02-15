@@ -1,11 +1,12 @@
 import { readJSON, saveJSON } from "./util.js";
 import { allLanguages } from "../src/misc/lang.js";
 import { existsSync } from "node:fs";
-import { deletePath } from "./lib/deletePath.js";
+import { getPath } from "./lib/getPath.js";
+import { setPath } from "./lib/setPath.js";
 
 async function main() {
-  const key = process.argv[2];
-  if (!key) {
+  const [fromKey, toKey] = process.argv.slice(2);
+  if (!(fromKey && toKey)) {
     throw new Error(`missing key to delete`);
   }
   for (const lang of allLanguages) {
@@ -15,7 +16,8 @@ async function main() {
       continue;
     }
     const obj = readJSON(langFile);
-    deletePath(obj, key.split("."));
+    const val = getPath(obj, fromKey.split("."));
+    setPath(obj, toKey.split("."), val);
     saveJSON(langFile, obj, { indent: 2 });
     // break;
   }
