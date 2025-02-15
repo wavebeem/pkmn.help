@@ -11,6 +11,9 @@
   - This change is intended to reduce clicks and scrolling so that you can input
     types faster than before, and see all information on screen using less space
 
+- Increased the size of the type color / checkbox area on the type selector
+  buttons
+
 - Fixed an issue where "Freeze-Dry" required selecting "Ice" in order to show
   its type matchups
 
