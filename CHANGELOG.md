@@ -17,6 +17,9 @@
 - Fixed an issue where "Thousand Arrows" required selecting "Ground" in order to
   show its type matchups
 
+- Removed "bounce" over scrolling when scrolling to the top or bottom of the
+  page
+
 ## 2025-02-13
 
 - Added "Flying Press"
