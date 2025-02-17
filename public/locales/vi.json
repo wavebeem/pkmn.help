@@ -7,16 +7,17 @@
     "more": "Thêm"
   },
   "offense": {
-    "chooseTypes": "Chọn hệ (một hoặc hai)",
-    "dealsXTo": "Gây {{ x }} sát thương đến hệ",
+    "chooseTypes": "Chọn hệ",
+    "dealsXTo": "Gây {{ x }} sát thương đến",
     "abilities": {
       "choose": "Chọn đặc tính"
     },
     "specialMoves": {
       "choose": "Chọn tuyệt kỹ đặc biệt",
       "names": {
-        "freeze-dry": "Đông Khô",
-        "thousand_arrows": "Ngàn Mũi Tên"
+        "freeze-dry": "Đông Khô (Freeze Dry)",
+        "thousand_arrows": "Ngàn Mũi Tên (Thousand Arrows)",
+        "flying_press": "Ép Bay (Flying Press)"
       }
     },
     "coverage": {
@@ -26,7 +27,7 @@
       "normal": "Các Pokémon không yếu hay kháng cự",
       "resistance": "Các Pokémon kháng cự"
     },
-    "teraPokemon": "Terastallization",
+    "teraPokemon": "Tera Pokémon",
     "coverageList": {
       "empty": "Không có Pokémon nào hoặc không có hệ được chọn",
       "weakness": {
@@ -57,12 +58,12 @@
       "description": "Xuất Pokédex mặc định sang tệp CSV"
     },
     "import": {
-      "button": "Nhập",
+      "button": "Nhập tệp",
       "description": "Nhập tệp CSV Pokédex đã chỉnh sửa"
     },
     "reset": {
-      "button": "Reset",
-      "description": "Reset về Pokédex mặc định"
+      "button": "Khởi động lại",
+      "description": "Khởi động lại về Pokédex mặc định"
     },
     "filename": "pkmn.help bao phủ hệ.csv",
     "status": {
@@ -74,6 +75,7 @@
     "back": "Quay lại trang Tấn Công"
   },
   "defense": {
+    "chooseTypes": "Chọn hệ (tối đa hai, ba nếu điều chỉnh cài đặt)",
     "takesXFrom": "Nhận {{ x }} dame từ",
     "chooseAbility": "Chọn Đặc Tính",
     "chooseTeraType": "Chọn hệ tera",
@@ -104,8 +106,8 @@
     },
     "mode": {
       "heading": "Chọn chế độ",
-      "solo": "Solo",
-      "team": "Team"
+      "solo": "1 Pokémon (Solo)",
+      "team": "Nhiều Pokémon (Đội/Team)"
     },
     "team": {
       "tableHeading": "Danh sách các matchup",
@@ -120,8 +122,7 @@
       "type": "Hệ",
       "edit": "Chỉnh sửa",
       "remove": "Xóa"
-    },
-    "chooseTypes": "Chọn hệ (một hoặc hai)"
+    }
   },
   "pokedex": {
     "search": {
@@ -164,7 +165,7 @@
       "speed": "Tốc Độ",
       "speedLong": "Tốc Độ",
       "total": "Tổng Chỉ Số (BST)",
-      "totalLong": "Tổng Chỉ Số (BST)"
+      "totalLong": "Tổng Chỉ Số"
     }
   },
   "pokedexHelp": {
@@ -174,23 +175,23 @@
     },
     "searchByNumber": {
       "heading": "Tìm kiếm bằng số Pokédex",
-      "description": "Tìm kiếm bằng số Pokédex. Ví dụ: Nếu bạn muốn search Bulbasaur, đánh '1', thay vì '#001'."
+      "description": "Tìm kiếm bằng số Pokédex. Ví dụ: Nếu bạn muốn tìm Bulbasaur, đánh '1', thay vì '#001'."
     },
     "searchByType": {
       "heading": "Tìm kiếm bằng hệ",
-      "description": "Đây là một vài ví dụ cách để search bằng tên hệ."
+      "description": "Đây là một vài ví dụ cách để tìm Pokémon bằng tên hệ."
     },
     "searchExamples": {
       "type": {
-        "query": "Lửa",
+        "query": "lửa",
         "description": "Tìm kiếm các Pokémon hệ Lửa trong tất cả forms (hình dạng) (ví dụ: Charmander, Charizard, Rotom)."
       },
       "doubleType": {
-        "query": "Nước Bay",
+        "query": "nước bay",
         "description": "Tìm kiếm các Pokémon thuộc song hệ Nước/Bay (ví dụ: Gyarados) hay Bay/Nước (ví dụ: Cramorant)."
       },
       "singleType": {
-        "query": "Cỏ [Trống]",
+        "query": "cỏ trống",
         "description": "Tìm kiếm các Pokémon chỉ thuộc hệ Cỏ và không hệ thứ hai nào khác (ví dụ: Tangela, Chikorita, Lilligant)."
       }
     },
@@ -199,7 +200,7 @@
   "more": {
     "contact": {
       "heading": "Liên hệ với tôi",
-      "intro": "Xin chào, tôi là <homepage>Sage</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này.",
+      "intro": "Xin chào, tôi là <homepage>Sage</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này (pkmn.help).",
       "email": "Bạn có thể email bất kể câu hỏi và cảm ơn đến <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
@@ -209,10 +210,10 @@
         "default": "Tự động nhận dạng ngôn ngữ",
         "official": "Ngôn ngữ chính thức",
         "unofficial": "Ngôn ngữ không chính thức",
-        "helpText": "Dịch vụ hỗ trợ ngôn ngữ hiện tại chưa hoàn thành. Xin email tôi"
+        "helpText": "Dịch vụ hỗ trợ ngôn ngữ hiện tại chưa hoàn thành. Xin email tôi để giúp dịch, và tôi sẽ thanh toán bạn."
       },
       "theme": {
-        "label": "Theme",
+        "label": "Nền",
         "help": "\"Hệ thống mặc định\" sẽ tự động thay đổi dựa trên cài đặt của bạn.",
         "values": {
           "auto": "Hệ thống mặc định",
@@ -222,7 +223,7 @@
       },
       "typeCount": {
         "label": "Số lượng hệ",
-        "help": "Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra trong game của nó.",
+        "help": "Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra.",
         "values": {
           "2": "Hai hệ (2)",
           "3": "Ba hệ (3)"
@@ -231,7 +232,7 @@
     },
     "changes": {
       "heading": "Có gì mới?",
-      "description": "Xem các tin tức trong <changelog>changelog</changelog>."
+      "description": "Xem các tin tức trong <changelog>trang nhật ký update</changelog> (Tiếng Anh)."
     },
     "help": {
       "heading": "Hỗ Trợ",
@@ -249,14 +250,15 @@
       "description": "Tôi đã dành bao thời gian cải thiện trang web này. Nếu bạn đánh giá cao thành quả của tôi, nếu có thể, xin bạn quyên góp cho các từ thiện chống phân biệt người da màu và người chuyển giới."
     },
     "thanks": {
-      "heading": "Chân thành cảm ơn đến"
+      "heading": "Chân thành cảm ơn đến",
+      "description": "Xem <credits>trang ghi công</credits> để thấy tất cả những người đã giúp làm trang web này (Tiếng Anh)."
     },
     "openSource": {
       "heading": "Nguồn mở",
       "description": "Bản code có sẵn trên <github>GitHub</github>."
     },
     "legalInfo": {
-      "heading": "Thông tin pháp lý."
+      "heading": "Thông tin pháp lý"
     }
   },
   "types": {
@@ -289,7 +291,7 @@
     }
   },
   "general": {
-    "loading": "Loading...",
+    "loading": "Đang load...",
     "copyLink": "Sao chép link"
   },
   "games": {

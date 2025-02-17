@@ -1,8 +1,12 @@
 # Changelog
 
+## 2025-02-16
+
+- Updated Vietnamese translation
+
 ## 2025-02-15
 
-- Updated French translations
+- Updated French translation
 
 ## 2025-02-14
 
@@ -763,5 +767,6 @@
 
 ## The distant past
 
-This is as far back as I bothered researching history. You can look at the git
-log if you want to know more detail about what else I've changed since 2013.
+This is as far back as I bothered researching history. You can look at the
+[git log](https://github.com/wavebeem/pkmn.help/commits/master/) if you want to
+know more detail about what else I've changed since 2013.

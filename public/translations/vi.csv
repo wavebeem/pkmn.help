@@ -4,19 +4,19 @@ navigation.offense,Offense,Tấn Công
 navigation.defense,Defense,Phòng Thủ
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Thêm
-offense.chooseTypes,Choose types,Chọn hệ (một hoặc hai)
-offense.dealsXTo,Deals {{ x }} to,Gây {{ x }} sát thương đến hệ
+offense.chooseTypes,Choose types,Chọn hệ
+offense.dealsXTo,Deals {{ x }} to,Gây {{ x }} sát thương đến
 offense.abilities.choose,Choose abilities,Chọn đặc tính
 offense.specialMoves.choose,Choose special moves,Chọn tuyệt kỹ đặc biệt
-offense.specialMoves.names.freeze-dry,Freeze-Dry,Đông Khô
-offense.specialMoves.names.thousand_arrows,Thousand Arrows,Ngàn Mũi Tên
-offense.specialMoves.names.flying_press,Flying Press,
+offense.specialMoves.names.freeze-dry,Freeze-Dry,Đông Khô (Freeze Dry)
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,Ngàn Mũi Tên (Thousand Arrows)
+offense.specialMoves.names.flying_press,Flying Press,Ép Bay (Flying Press)
 offense.coverage.heading,Pokédex coverage,Danh sách khả năng bao phủ của tất cả Pokémon trong Pokédex
 offense.coverage.edit,Edit list,Sửa danh sách
 offense.coverage.weakness,Weak,Các Pokémon yếu
 offense.coverage.normal,Normal,Các Pokémon không yếu hay kháng cự
 offense.coverage.resistance,Resist,Các Pokémon kháng cự
-offense.teraPokemon,Tera Pokémon,Terastallization
+offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,Không có Pokémon nào hoặc không có hệ được chọn
 offense.coverageList.weakness.heading,Weakness coverage list,Danh sách các Pokémon yếu
 offense.coverageList.normal.heading,Normal effectiveness coverage list,Danh sách các Pokémon không yếu hay kháng cự
@@ -32,17 +32,17 @@ coverage.csvHeaders.type2,Type 2,Hệ 2
 coverage.csvHeaders.type3,Type 3,Hệ 3
 coverage.export.button,Export,Xuất tệp
 coverage.export.description,Export the default Pokédex to a CSV file,Xuất Pokédex mặc định sang tệp CSV
-coverage.import.button,Import,Nhập
+coverage.import.button,Import,Nhập tệp
 coverage.import.description,Import an edited Pokédex CSV file,Nhập tệp CSV Pokédex đã chỉnh sửa
-coverage.reset.button,Reset,Reset
-coverage.reset.description,Reset to the default Pokédex,Reset về Pokédex mặc định
+coverage.reset.button,Reset,Khởi động lại
+coverage.reset.description,Reset to the default Pokédex,Khởi động lại về Pokédex mặc định
 coverage.filename,pkmn.help type coverage.csv,pkmn.help bao phủ hệ.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,"Nhập {{ n }} hình dạng của một Pokémon từ ""{{ tệp }}"""
 coverage.status.exported,Exported default Pokémon forms,Xuất tệp các hình dạng Pokémon mặc định
 coverage.status.reset,Loaded default Pokémon forms,Load các hình dạng Pokémon mặc định
 coverage.status.errored,Error loading CSV. Don't change header names.,Lỗi load CSV. Bạn đừng thay đổi tiêu đề.
 coverage.back,Back to offense,Quay lại trang Tấn Công
-defense.chooseTypes,Choose types,Chọn hệ (một hoặc hai)
+defense.chooseTypes,Choose types,"Chọn hệ (tối đa hai, ba nếu điều chỉnh cài đặt)"
 defense.takesXFrom,Takes {{ x }} from,Nhận {{ x }} dame từ
 defense.chooseAbility,Choose ability,Chọn Đặc Tính
 defense.chooseTeraType,Choose tera type,Chọn hệ tera
@@ -70,8 +70,8 @@ defense.abilityNames.lightning_rod,Lightning Rod,Cột Thu Lôi (Lighting Rod)
 defense.abilityNames.motor_drive,Motor Drive,Đông Cơ Điện (Motor Drive)
 defense.abilityNames.volt_absorb,Volt Absorb,Trữ Điện (Volt Absorb)
 defense.mode.heading,Choose mode,Chọn chế độ
-defense.mode.solo,Solo,Solo
-defense.mode.team,Team,Team
+defense.mode.solo,Solo,1 Pokémon (Solo)
+defense.mode.team,Team,Nhiều Pokémon (Đội/Team)
 defense.team.tableHeading,Matchup counts,Danh sách các matchup
 defense.team.heading,Edit Pokémon team,Chỉnh sửa đội Pokémon
 defense.team.add,Add Pokémon,Thêm Pokémon
@@ -111,40 +111,40 @@ pokedex.stats.specialDefenseLong,Special Defense,Phòng Thủ Đặc Biệt
 pokedex.stats.speed,Speed,Tốc Độ
 pokedex.stats.speedLong,Speed,Tốc Độ
 pokedex.stats.total,Total,Tổng Chỉ Số (BST)
-pokedex.stats.totalLong,Total,Tổng Chỉ Số (BST)
+pokedex.stats.totalLong,Total,Tổng Chỉ Số
 pokedexHelp.searchByName.heading,Search by name,Tìm kiếm bằng tên
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Bạn có thể tìm kiếm một Pokémon bằng tên. Nếu bạn chỉ có thể nhớ mang máng tên, hệ thống tìm kiếm có thể vẫn sẽ giúp bạn tìm được Pokemon bạn muốn, trừ khi bạn đánh sai tên."
 pokedexHelp.searchByNumber.heading,Search by number,Tìm kiếm bằng số Pokédex
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Tìm kiếm bằng số Pokédex. Ví dụ: Nếu bạn muốn search Bulbasaur, đánh '1', thay vì '#001'."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Tìm kiếm bằng số Pokédex. Ví dụ: Nếu bạn muốn tìm Bulbasaur, đánh '1', thay vì '#001'."
 pokedexHelp.searchByType.heading,Search by type,Tìm kiếm bằng hệ
-pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Đây là một vài ví dụ cách để search bằng tên hệ.
-pokedexHelp.searchExamples.type.query,fire,Lửa
+pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Đây là một vài ví dụ cách để tìm Pokémon bằng tên hệ.
+pokedexHelp.searchExamples.type.query,fire,lửa
 pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Tìm kiếm các Pokémon hệ Lửa trong tất cả forms (hình dạng) (ví dụ: Charmander, Charizard, Rotom)."
-pokedexHelp.searchExamples.doubleType.query,water flying,Nước Bay
+pokedexHelp.searchExamples.doubleType.query,water flying,nước bay
 pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Tìm kiếm các Pokémon thuộc song hệ Nước/Bay (ví dụ: Gyarados) hay Bay/Nước (ví dụ: Cramorant).
-pokedexHelp.searchExamples.singleType.query,grass none,Cỏ [Trống]
+pokedexHelp.searchExamples.singleType.query,grass none,cỏ trống
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Tìm kiếm các Pokémon chỉ thuộc hệ Cỏ và không hệ thứ hai nào khác (ví dụ: Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Quay lại trang Pokédex
 more.contact.heading,Contact me,Liên hệ với tôi
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Xin chào, tôi là <homepage>Sage</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Xin chào, tôi là <homepage>Sage</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Bạn có thể email bất kể câu hỏi và cảm ơn đến <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Cài Đặt
 more.settings.language.label,Language,Ngôn Ngữ
 more.settings.language.default,Auto detect language,Tự động nhận dạng ngôn ngữ
 more.settings.language.official,Official languages,Ngôn ngữ chính thức
 more.settings.language.unofficial,Unofficial languages,Ngôn ngữ không chính thức
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",Dịch vụ hỗ trợ ngôn ngữ hiện tại chưa hoàn thành. Xin email tôi
-more.settings.theme.label,Theme,Theme
+more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Dịch vụ hỗ trợ ngôn ngữ hiện tại chưa hoàn thành. Xin email tôi để giúp dịch, và tôi sẽ thanh toán bạn."
+more.settings.theme.label,Theme,Nền
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Hệ thống mặc định"" sẽ tự động thay đổi dựa trên cài đặt của bạn."
 more.settings.theme.values.auto,System default,Hệ thống mặc định
 more.settings.theme.values.light,Light,Sáng
 more.settings.theme.values.dark,Dark,Tối
 more.settings.typeCount.label,Number of types,Số lượng hệ
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra trong game của nó.
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra.
 more.settings.typeCount.values.2,Two types (2),Hai hệ (2)
 more.settings.typeCount.values.3,Three types (3),Ba hệ (3)
 more.changes.heading,What’s new,Có gì mới?
-more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Xem các tin tức trong <changelog>changelog</changelog>.
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Xem các tin tức trong <changelog>trang nhật ký update</changelog> (Tiếng Anh).
 more.help.heading,Help,Hỗ Trợ
 more.help.serviceWorker.description,This button can help fix issues in the app.,"Nếu bạn gặp vấn đề trong app, hãy ấn nút này."
 more.help.serviceWorker.button,Reset,Khởi Động lại
@@ -153,10 +153,10 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,Bày tỏ đánh giá
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Tôi đã dành bao thời gian cải thiện trang web này. Nếu bạn đánh giá cao thành quả của tôi, nếu có thể, xin bạn quyên góp cho các từ thiện chống phân biệt người da màu và người chuyển giới."
 more.thanks.heading,Special thanks,Chân thành cảm ơn đến
-more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,Xem <credits>trang ghi công</credits> để thấy tất cả những người đã giúp làm trang web này (Tiếng Anh).
 more.openSource.heading,Open source,Nguồn mở
 more.openSource.description,Source code is available on <github>GitHub</github>.,Bản code có sẵn trên <github>GitHub</github>.
-more.legalInfo.heading,Legal info,Thông tin pháp lý.
+more.legalInfo.heading,Legal info,Thông tin pháp lý
 types.normal,Normal,Thường
 types.fighting,Fighting,Giác Đấu
 types.flying,Flying,Bay
@@ -180,7 +180,7 @@ types.none,None,Trống
 banners.updateReady.description,An update is available,Có update mới!
 banners.updateReady.whatsNew,What’s new,Tin tức mới
 banners.updateReady.update,Update,Update
-general.loading,Loading…,Loading...
+general.loading,Loading…,Đang load...
 general.copyLink,Copy link,Sao chép link
 games.label,Game generation,Thế hệ (Generation)
 games.help,Use type effectiveness from different game generations.,Xác định cơ chế điểm mạnh và yếu của các hệ từ các thế hệ khác nhau.
