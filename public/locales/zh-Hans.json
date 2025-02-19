@@ -16,7 +16,8 @@
       "choose": "选择特别招式",
       "names": {
         "freeze-dry": "冷冻干燥",
-        "thousand_arrows": "千箭齐发"
+        "thousand_arrows": "千箭齐发",
+        "flying_press": "飛身重壓"
       }
     },
     "coverage": {
@@ -74,9 +75,6 @@
     "back": "返回攻击方"
   },
   "defense": {
-    "chooseFirst": "选择第一属性",
-    "chooseSecond": "选择第二属性",
-    "chooseThird": "选择第三属性",
     "takesXFrom": "受到 {{ x }} 伤害",
     "chooseAbility": "特性",
     "chooseTeraType": "选择太晶属性",
@@ -123,7 +121,8 @@
       "type": "属性",
       "edit": "编辑",
       "remove": "移除"
-    }
+    },
+    "chooseTypes": "选择属性"
   },
   "pokedex": {
     "search": {
@@ -251,27 +250,7 @@
       "description": "我花了无数小时改善这个网站。如果你喜欢我做的内容的话，请考虑向支持 BIPOC 和跨性别人士权益的慈善机构捐款。"
     },
     "thanks": {
-      "heading": "特别感谢",
-      "sections": {
-        "da": "丹麦语翻译",
-        "ru": "俄语翻译",
-        "kk": "哈萨克语翻译",
-        "pt-PT": "葡萄牙语（葡萄牙）翻译",
-        "pt-BR": "巴西葡萄牙语翻译",
-        "zh-Hans": "简体中文翻译",
-        "zh-Hant": "繁体中文翻译",
-        "no": "挪威翻译",
-        "ro": "罗马尼亚语翻译",
-        "pl": "波兰语翻译",
-        "fr": "法语翻译",
-        "de": "德语翻译",
-        "it": "意大利语翻译",
-        "ko": "韩语翻译",
-        "ja": "日语翻译",
-        "nl": "荷兰语翻译",
-        "testing": "测试",
-        "other": "数位匿名宝可梦玩家"
-      }
+      "heading": "特别感谢"
     },
     "openSource": {
       "heading": "开放原始码",

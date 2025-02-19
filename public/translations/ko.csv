@@ -10,6 +10,7 @@ offense.abilities.choose,Choose abilities,특성 선택
 offense.specialMoves.choose,Choose special moves,특별 상성 선택
 offense.specialMoves.names.freeze-dry,Freeze-Dry,프리즈드라이
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,사우전드애로
+offense.specialMoves.names.flying_press,Flying Press,플라잉프레스
 offense.coverage.heading,Pokédex coverage,포켓몬 도감과 비교하기
 offense.coverage.edit,Edit list,포켓몬 목록 편집
 offense.coverage.weakness,Weak,약점인 포켓몬
@@ -41,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,내보낸 포켓몬의 
 coverage.status.reset,Loaded default Pokémon forms,로드된 포켓몬의 기본 모습
 coverage.status.errored,Error loading CSV. Don't change header names.,CSV를 로드하는 중에 오류가 발생했습니다. 헤더 이름을 변경하지 마세요.
 coverage.back,Back to offense,공격으로 돌아가기
-defense.chooseFirst,Choose first type,첫 번째 타입 선택
-defense.chooseSecond,Choose second type,두 번째 타입 선택
-defense.chooseThird,Choose third type,세 번째 타입 선택
+defense.chooseTypes,Choose types,타입 선택
 defense.takesXFrom,Takes {{ x }} from,{{ x }} 피해
 defense.chooseAbility,Choose ability,특성 선택
 defense.chooseTeraType,Choose tera type,테라스탈 타입 선택
@@ -155,24 +154,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,감사 표하기
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",저는 이 사이트를 개선하는 데 많은 시간을 보냈습니다. 제가 만든 것에 고마움을 표하고 싶으시다면 흑인과 원주민 및 트랜스젠더 권리를 지원하는 자선 단체에 기부하는 것을 고려해 주세요.
 more.thanks.heading,Special thanks,도움을 주신 분들
-more.thanks.sections.da,Danish translation,덴마크어 번역
-more.thanks.sections.ru,Russian translation,러시아어 번역
-more.thanks.sections.kk,Kazakh translation,카자흐어 번역
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,브라질 포르투갈어 번역
-more.thanks.sections.zh-Hans,Simplified Chinese translation,중국어(간체) 번역
-more.thanks.sections.zh-Hant,Traditional Chinese translation,중국어(번체) 번역
-more.thanks.sections.no,Norwegian translation,노르웨이어 번역
-more.thanks.sections.ro,Romanian translation,루마니아어 번역
-more.thanks.sections.pl,Polish translation,폴란드어 번역
-more.thanks.sections.fr,French translation,프랑스어 번역
-more.thanks.sections.de,German translation,독일어 번역
-more.thanks.sections.it,Italian translation,이탈리아어 번역
-more.thanks.sections.ko,Korean translation,한국어 번역
-more.thanks.sections.ja,Japanese translation,일본어 번역
-more.thanks.sections.nl,Dutch translation,네델란드어
-more.thanks.sections.testing,Testing,테스터
-more.thanks.sections.other,Several anonymous Poké Fans,여러 익명의 포켓몬 팬
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
 more.openSource.heading,Open source,오픈 소스
 more.openSource.description,Source code is available on <github>GitHub</github>.,소스 코드는 <github>GitHub</github>에서 확인할 수 있습니다.
 more.legalInfo.heading,Legal info,법률 정보

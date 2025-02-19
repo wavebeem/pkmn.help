@@ -66,7 +66,14 @@ export function ScreenOffense(): ReactNode {
       id: "thousand_arrows",
       name: t(`offense.specialMoves.names.thousand_arrows`),
     },
-    { id: "freeze-dry", name: t(`offense.specialMoves.names.freeze-dry`) },
+    {
+      id: "freeze-dry",
+      name: t(`offense.specialMoves.names.freeze-dry`),
+    },
+    {
+      id: "flying_press",
+      name: t(`offense.specialMoves.names.flying_press`),
+    },
   ] as const;
   specialMovesOptions.sort((a, b) => {
     return compare(a.name, b.name);

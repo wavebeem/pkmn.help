@@ -10,6 +10,7 @@ offense.abilities.choose,Choose abilities,Escolher habilidades
 offense.specialMoves.choose,Choose special moves,Escolher movimentos especiais
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Freeze-Dry
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,Thousand Arrows
+offense.specialMoves.names.flying_press,Flying Press,Aperto Voador
 offense.coverage.heading,Pokédex coverage,Cobertura da Pokédex
 offense.coverage.edit,Edit list,Editar lista
 offense.coverage.weakness,Weak,Fraquezas
@@ -41,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Formas Pokémon padrão
 coverage.status.reset,Loaded default Pokémon forms,Formas Pokémon padrão carregadas
 coverage.status.errored,Error loading CSV. Don't change header names.,Erro carregando CSV. Não mude o nome nos cabeçalhos.
 coverage.back,Back to offense,"Voltar a ""Ataque"""
-defense.chooseFirst,Choose first type,Escolher 1° tipo
-defense.chooseSecond,Choose second type,Escolher 2° tipo
-defense.chooseThird,Choose third type,Escolher 3° tipo
+defense.chooseTypes,Choose types,Escolher tipos
 defense.takesXFrom,Takes {{ x }} from,Leva {{ x }} mais dano de
 defense.chooseAbility,Choose ability,Escolher habilidade
 defense.chooseTeraType,Choose tera type,Escolher tipo tera
@@ -155,24 +154,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,Demonstrando carinho
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Dediquei incontáveis horas melhorando este site. Se aprecia o que fiz, por favor, considere doar para caridades que apoiam os direitos BIPOC e transsexuais."
 more.thanks.heading,Special thanks,Agradecimentos especiais
-more.thanks.sections.da,Danish translation,Tradução dinamarquesa
-more.thanks.sections.ru,Russian translation,Tradução Russa
-more.thanks.sections.kk,Kazakh translation,Tradução Cazaque
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Tradução Português (Portugal)
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Tradução Português (Brasil)
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Tradução Chinesa Simplificada
-more.thanks.sections.zh-Hant,Traditional Chinese translation,Tradução Chinesa Tradicional
-more.thanks.sections.no,Norwegian translation,
-more.thanks.sections.ro,Romanian translation,Tradução Romena
-more.thanks.sections.pl,Polish translation,Tradução Polonesa
-more.thanks.sections.fr,French translation,Tradução Francesa
-more.thanks.sections.de,German translation,Tradução Alemã
-more.thanks.sections.it,Italian translation,Tradução Italiana
-more.thanks.sections.ko,Korean translation,Tradução Coreana
-more.thanks.sections.ja,Japanese translation,Tradução Japonesa
-more.thanks.sections.nl,Dutch translation,Tradução Holandesa
-more.thanks.sections.testing,Testing,Testes
-more.thanks.sections.other,Several anonymous Poké Fans,Vários Pokéfãs anônimos
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
 more.openSource.heading,Open source,Fonte
 more.openSource.description,Source code is available on <github>GitHub</github>.,Código da fonte está disponível em <github>GitHub</github>.
 more.legalInfo.heading,Legal info,Informações Legais

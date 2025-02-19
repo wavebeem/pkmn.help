@@ -16,7 +16,8 @@
       "choose": "Choose special moves",
       "names": {
         "freeze-dry": "Freeze-Dry",
-        "thousand_arrows": "Thousand Arrows"
+        "thousand_arrows": "Thousand Arrows",
+        "flying_press": "Flying Press"
       }
     },
     "coverage": {
@@ -74,9 +75,7 @@
     "back": "Back to offense"
   },
   "defense": {
-    "chooseFirst": "Choose first type",
-    "chooseSecond": "Choose second type",
-    "chooseThird": "Choose third type",
+    "chooseTypes": "Choose types",
     "takesXFrom": "Takes {{ x }} from",
     "chooseAbility": "Choose ability",
     "chooseTeraType": "Choose tera type",
@@ -253,26 +252,7 @@
     },
     "thanks": {
       "heading": "Special thanks",
-      "sections": {
-        "da": "Danish translation",
-        "ru": "Russian translation",
-        "kk": "Kazakh translation",
-        "pt-PT": "Portuguese (Portugal) translation",
-        "pt-BR": "Portuguese (Brazil) translation",
-        "zh-Hans": "Simplified Chinese translation",
-        "zh-Hant": "Traditional Chinese translation",
-        "no": "Norwegian translation",
-        "ro": "Romanian translation",
-        "pl": "Polish translation",
-        "fr": "French translation",
-        "de": "German translation",
-        "it": "Italian translation",
-        "ko": "Korean translation",
-        "ja": "Japanese translation",
-        "nl": "Dutch translation",
-        "testing": "Testing",
-        "other": "Several anonymous Poké Fans"
-      }
+      "description": "See everyone who's helped make this website in the <credits>credits</credits>."
     },
     "openSource": {
       "heading": "Open source",

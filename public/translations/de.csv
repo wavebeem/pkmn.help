@@ -10,6 +10,7 @@ offense.abilities.choose,Choose abilities,Fähigkeiten auswählen
 offense.specialMoves.choose,Choose special moves,Spezialattacke auswählen
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Gefriertrockner
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,Tausend Pfeile
+offense.specialMoves.names.flying_press,Flying Press,Flying Press
 offense.coverage.heading,Pokédex coverage,Pokédex Abdeckung
 offense.coverage.edit,Edit list,Editiere Liste
 offense.coverage.weakness,Weak,Sehr effektiv
@@ -41,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Exportierte Standard-Po
 coverage.status.reset,Loaded default Pokémon forms,Standard Pokémon-Formen geladen
 coverage.status.errored,Error loading CSV. Don't change header names.,Fehler beim Laden von CSV. Ändere keine Kopfzeilennamen.
 coverage.back,Back to offense,Zurück zum Angriff
-defense.chooseFirst,Choose first type,Ersten Typ wählen
-defense.chooseSecond,Choose second type,Zweiten Typ wählen
-defense.chooseThird,Choose third type,Dritten Typ wählen
+defense.chooseTypes,Choose types,Typen auswählen
 defense.takesXFrom,Takes {{ x }} from,Nimmt {{ x }} Schaden von
 defense.chooseAbility,Choose ability,Fähigkeit auswählen
 defense.chooseTeraType,Choose tera type,Tera-Typ auswählen
@@ -155,24 +154,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,Wertschätzung zeigen
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Ich habe unzählige Stunden damit verbracht, diese Seite zu verbessern. Wenn du schätzt, was ich gemacht habe, dann ziehe bitte in Betracht, an Wohltätigkeitsorganisationen zu spenden, die BIPOC und Transgender-Rechte unterstützen."
 more.thanks.heading,Special thanks,Besonderer Dank
-more.thanks.sections.da,Danish translation,Dänische Übersetzung
-more.thanks.sections.ru,Russian translation,Russische Übersetzung
-more.thanks.sections.kk,Kazakh translation,Kasachische Übersetzung
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Portugiesische (Portugal) Übersetzung
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Brasilianische Portugiesische Übersetzung
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Vereinfachte Chinesische Übersetzung
-more.thanks.sections.zh-Hant,Traditional Chinese translation,Traditionelle Chinesische Übersetzung
-more.thanks.sections.no,Norwegian translation,
-more.thanks.sections.ro,Romanian translation,Rumänische Übersetzung
-more.thanks.sections.pl,Polish translation,Polnische Übersetzung
-more.thanks.sections.fr,French translation,Französische Übersetzung
-more.thanks.sections.de,German translation,Deutsche Übersetzung
-more.thanks.sections.it,Italian translation,Italienische Übersetzung
-more.thanks.sections.ko,Korean translation,Koreanische Übersetzung
-more.thanks.sections.ja,Japanese translation,Japanische Übersetzung
-more.thanks.sections.nl,Dutch translation,Niederländische Übersetzung
-more.thanks.sections.testing,Testing,Testen
-more.thanks.sections.other,Several anonymous Poké Fans,Mehrere anonyme Poké-Fans
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
 more.openSource.heading,Open source,Offener Quellcode
 more.openSource.description,Source code is available on <github>GitHub</github>.,Der Quellcode ist auf <github>GitHub</github> verfügbar.
 more.legalInfo.heading,Legal info,Rechtliche Hinweise.

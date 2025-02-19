@@ -10,6 +10,7 @@ offense.abilities.choose,Choose abilities,选择特性
 offense.specialMoves.choose,Choose special moves,选择特别招式
 offense.specialMoves.names.freeze-dry,Freeze-Dry,冷冻干燥
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,千箭齐发
+offense.specialMoves.names.flying_press,Flying Press,飛身重壓
 offense.coverage.heading,Pokédex coverage,宝可梦图鉴覆盖率
 offense.coverage.edit,Edit list,编辑列表
 offense.coverage.weakness,Weak,被克制
@@ -41,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,已导出默认宝可�
 coverage.status.reset,Loaded default Pokémon forms,已加载默认宝可梦
 coverage.status.errored,Error loading CSV. Don't change header names.,加载CSV错误。请勿更改列标题名称。
 coverage.back,Back to offense,返回攻击方
-defense.chooseFirst,Choose first type,选择第一属性
-defense.chooseSecond,Choose second type,选择第二属性
-defense.chooseThird,Choose third type,选择第三属性
+defense.chooseTypes,Choose types,选择属性
 defense.takesXFrom,Takes {{ x }} from,受到 {{ x }} 伤害
 defense.chooseAbility,Choose ability,特性
 defense.chooseTeraType,Choose tera type,选择太晶属性
@@ -155,24 +154,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,表示感恩
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",我花了无数小时改善这个网站。如果你喜欢我做的内容的话，请考虑向支持 BIPOC 和跨性别人士权益的慈善机构捐款。
 more.thanks.heading,Special thanks,特别感谢
-more.thanks.sections.da,Danish translation,丹麦语翻译
-more.thanks.sections.ru,Russian translation,俄语翻译
-more.thanks.sections.kk,Kazakh translation,哈萨克语翻译
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,葡萄牙语（葡萄牙）翻译
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,巴西葡萄牙语翻译
-more.thanks.sections.zh-Hans,Simplified Chinese translation,简体中文翻译
-more.thanks.sections.zh-Hant,Traditional Chinese translation,繁体中文翻译
-more.thanks.sections.no,Norwegian translation,挪威翻译
-more.thanks.sections.ro,Romanian translation,罗马尼亚语翻译
-more.thanks.sections.pl,Polish translation,波兰语翻译
-more.thanks.sections.fr,French translation,法语翻译
-more.thanks.sections.de,German translation,德语翻译
-more.thanks.sections.it,Italian translation,意大利语翻译
-more.thanks.sections.ko,Korean translation,韩语翻译
-more.thanks.sections.ja,Japanese translation,日语翻译
-more.thanks.sections.nl,Dutch translation,荷兰语翻译
-more.thanks.sections.testing,Testing,测试
-more.thanks.sections.other,Several anonymous Poké Fans,数位匿名宝可梦玩家
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
 more.openSource.heading,Open source,开放原始码
 more.openSource.description,Source code is available on <github>GitHub</github>.,源代码可在 <github>GitHub</github> 上获得。
 more.legalInfo.heading,Legal info,法律信息

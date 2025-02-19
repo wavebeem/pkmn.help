@@ -10,6 +10,7 @@ offense.abilities.choose,Choose abilities,Velg egenskaper
 offense.specialMoves.choose,Choose special moves,Velg spesial angrep
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Frys-tørk
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,Tusen piler
+offense.specialMoves.names.flying_press,Flying Press,
 offense.coverage.heading,Pokédex coverage,Pokédex
 offense.coverage.edit,Edit list,Rediger liste
 offense.coverage.weakness,Weak,Svak
@@ -41,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Eksporterte standard Po
 coverage.status.reset,Loaded default Pokémon forms,Lastet inn standard Pokémon former
 coverage.status.errored,Error loading CSV. Don't change header names.,Error med å laste CSV. Ikke bytt overskrift navn.
 coverage.back,Back to offense,Tilbake til angrep
-defense.chooseFirst,Choose first type,Velg første type
-defense.chooseSecond,Choose second type,Velg andre type
-defense.chooseThird,Choose third type,Velg tredje type
+defense.chooseTypes,Choose types,Velg typer
 defense.takesXFrom,Takes {{ x }} from,Tar {{ x }} fra
 defense.chooseAbility,Choose ability,Velg evne
 defense.chooseTeraType,Choose tera type,Velg tera type
@@ -155,24 +154,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,Viser takknemlighet
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Jeg har brukt utallige timer på å forbedre denne siden. Hvis du setter pris på det jeg har laget, kan du vurdere å donere til veldedige organisasjoner som støtter raserettferdighet og transpersoners rettigheter."
 more.thanks.heading,Special thanks,Spesiell takk til
-more.thanks.sections.da,Danish translation,Dansk oversettelse
-more.thanks.sections.ru,Russian translation,Russisk oversettelse
-more.thanks.sections.kk,Kazakh translation,Kasakhisk oversettelse
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Portugisisk (Portugal) oversettelse
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Portugisisk (Brasil) oversettelse
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Forenklet kinesisk oversettelse
-more.thanks.sections.zh-Hant,Traditional Chinese translation,Tradisjonell kinesisk oversettelse
-more.thanks.sections.no,Norwegian translation,Norsk oversettelse
-more.thanks.sections.ro,Romanian translation,Rumensk oversettelse
-more.thanks.sections.pl,Polish translation,Polsk oversettelse
-more.thanks.sections.fr,French translation,Fransk oversettelse
-more.thanks.sections.de,German translation,Tysk oversettelse
-more.thanks.sections.it,Italian translation,Italiensk oversettelse
-more.thanks.sections.ko,Korean translation,Koreansk oversettelse
-more.thanks.sections.ja,Japanese translation,Japansk oversettelse
-more.thanks.sections.nl,Dutch translation,Nederlandsk oversettelse
-more.thanks.sections.testing,Testing,Tester
-more.thanks.sections.other,Several anonymous Poké Fans,Flere anonyme Pokémon fans
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
 more.openSource.heading,Open source,Åpen kildekode
 more.openSource.description,Source code is available on <github>GitHub</github>.,Kildekode er tilgjengelig på <github>GitHub</github>.
 more.legalInfo.heading,Legal info,Juridisk informasjon
