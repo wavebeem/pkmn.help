@@ -19,8 +19,8 @@
 
 .item {
   display: flex;
-  padding: var(--padding2);
-  gap: var(--padding2);
+  padding: calc(2px + var(--padding2)) var(--padding3);
+  gap: var(--padding3);
   align-items: center;
   width: 100%;
 }
@@ -37,13 +37,15 @@
 }
 
 .radio {
+  --_size-outer: 1.5em;
+  --_size-check: 0.75em;
   flex: none;
   background-color: var(--color-bg1);
   border: 1px solid var(--color-border1);
-  width: 1.5em;
-  height: 1.5em;
+  width: var(--_size-outer);
+  height: var(--_size-outer);
   border-radius: var(--border-radius-pill);
-  padding: 6px;
+  padding: calc(var(--_size-check) / 2);
   box-shadow: var(--shadow-inset);
 }
 
