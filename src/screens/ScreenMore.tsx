@@ -27,11 +27,12 @@ import {
   languageBounty,
   languageCompletions,
   officialLanguages,
+  officialLanguagesSet,
   showLang,
   unofficialLanguages,
 } from "../misc/lang";
 import { resetApp } from "../misc/resetApp";
-import { ThemePicker } from "../components/ThemePicker";
+import { RadioGroup, ThemePicker } from "../components/RadioGroup";
 
 export function ScreenMore(): ReactNode {
   const { needsAppUpdate, updateApp } = useAppContext();
@@ -158,36 +159,37 @@ export function ScreenMore(): ReactNode {
               </optgroup>
             </Select>
 
-            <Select
+            <RadioGroup
               label={t("more.settings.theme.label")}
               value={theme}
               helpText={t("more.settings.theme.help")}
-              onChange={(event) => {
-                setTheme(event.target.value);
-              }}
-            >
-              <option value="auto">
-                {t("more.settings.theme.values.auto")}
-              </option>
-              <option value="light">
-                {t("more.settings.theme.values.light")}
-              </option>
-              <option value="dark">
-                {t("more.settings.theme.values.dark")}
-              </option>
-              <option value="black">
-                {t("more.settings.theme.values.black")}
-              </option>
-            </Select>
+              options={[
+                {
+                  value: "auto",
+                  label: t(`more.settings.theme.values.auto`),
+                },
+                {
+                  value: "light",
+                  label: t(`more.settings.theme.values.light`),
+                },
+                {
+                  value: "dark",
+                  label: t(`more.settings.theme.values.dark`),
+                },
+                {
+                  value: "night",
+                  label: t(`more.settings.theme.values.night`),
+                },
+              ]}
+              onChange={(option) => void setTheme(option.value)}
+            />
 
-            <ThemePicker />
-
-            <Select
+            <RadioGroup
               label={t("games.label")}
               value={generation}
               helpText={t("games.help")}
-              onChange={(event) => {
-                const { value } = event.target;
+              onChange={(option) => {
+                const { value } = option;
                 if (isGeneration(value)) {
                   setGeneration(value);
                 } else {
@@ -195,27 +197,32 @@ export function ScreenMore(): ReactNode {
                   console.error("not a generation:", value);
                 }
               }}
-            >
-              {generations.map((gen) => {
-                return (
-                  <option key={gen} value={gen}>
-                    {t(`games.byID.${gen}`)}
-                  </option>
-                );
+              options={generations.map((gen) => {
+                return {
+                  value: gen,
+                  label: t(`games.byID.${gen}`),
+                };
               })}
-            </Select>
+            />
 
-            <Select
+            <RadioGroup
               label={t("more.settings.typeCount.label")}
               value={typeCount}
               helpText={t("more.settings.typeCount.help")}
-              onChange={(event) => {
-                setTypeCount(event.target.value);
+              onChange={(option) => {
+                setTypeCount(option.value);
               }}
-            >
-              <option value="2">{t("more.settings.typeCount.values.2")}</option>
-              <option value="3">{t("more.settings.typeCount.values.3")}</option>
-            </Select>
+              options={[
+                {
+                  value: "2",
+                  label: t("more.settings.typeCount.values.2"),
+                },
+                {
+                  value: "3",
+                  label: t("more.settings.typeCount.values.3"),
+                },
+              ]}
+            />
           </Flex>
 
           <Flex paddingY="medium" />
@@ -270,6 +277,10 @@ export function ScreenMore(): ReactNode {
                   .sort((a, b) => {
                     return (
                       compare(languageBounty[b], languageBounty[a]) ||
+                      compare(
+                        officialLanguagesSet.has(a) ? 0 : 1,
+                        officialLanguagesSet.has(b) ? 0 : 1
+                      ) ||
                       compare(
                         languageCompletions[a] || 0,
                         languageCompletions[b] || 0

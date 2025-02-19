@@ -113,7 +113,7 @@
   color-scheme: dark;
 }
 
-[data-theme="black"] {
+[data-theme="night"] {
   --color-bg1: hsl(0 0% 10%);
   --color-bg2: hsl(0 0% 0%);
   --color-fg1: hsl(0 0% 82%);

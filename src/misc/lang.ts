@@ -40,15 +40,18 @@ export const officialLanguages = [
   "ko",
 ] as const;
 
-export const officialLanguagesSet = new Set(officialLanguages);
+export const officialLanguagesSet = new Set<Lang>(officialLanguages);
 
-export const unofficialLanguages = Object.keys(languageNamesNative).filter(
-  (lang) => {
-    return !officialLanguagesSet.has(lang as any);
-  }
-);
+export const unofficialLanguages = (
+  Object.keys(languageNamesNative) as Lang[]
+).filter((lang) => {
+  return !officialLanguagesSet.has(lang as any);
+});
 
-export const allLanguages = [...officialLanguages, ...unofficialLanguages];
+export const allLanguages: Lang[] = [
+  ...officialLanguages,
+  ...unofficialLanguages,
+];
 
 export const languageNamesEnglish: Record<Lang, string> = {
   en: ``,

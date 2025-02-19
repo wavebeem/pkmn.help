@@ -214,12 +214,12 @@
       },
       "theme": {
         "label": "Theme",
-        "help": "“Auto” will change automatically depending on your operating system settings.",
+        "help": "“System default” will change automatically depending on your operating system settings.",
         "values": {
-          "auto": "Auto",
+          "auto": "System default",
           "light": "Light",
           "dark": "Dark",
-          "black": "Black"
+          "night": "Night"
         }
       },
       "typeCount": {
@@ -301,7 +301,7 @@
     "byID": {
       "gen1": "Generation 1",
       "gen2": "Generation 2–5",
-      "default": "Default (generation 6+)"
+      "default": "Generation 6+"
     }
   }
 }
