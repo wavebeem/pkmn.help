@@ -35,24 +35,27 @@ export function RadioGroup<S extends string>({
         )}
       </div>
       <div className={styles.itemsContainer}>
-        {options.map((option) => (
-          <label key={option.value} className={styles.item}>
-            <input
-              className={`${styles.radio} focus-outline`}
-              type="radio"
-              name={name}
-              checked={value === option.value}
-              value={option.value}
-              onChange={(event) => {
-                if (event.currentTarget.checked) {
-                  onChange(option);
-                }
-              }}
-            />
-            <div className={styles.preview}>
-              <div className={styles.name}>{option.label}</div>
-            </div>
-          </label>
+        {options.map((option, i) => (
+          <>
+            {i > 0 && <div className={styles.itemDivider} />}
+            <label key={option.value} className={styles.item}>
+              <input
+                className={`${styles.radio} focus-outline`}
+                type="radio"
+                name={name}
+                checked={value === option.value}
+                value={option.value}
+                onChange={(event) => {
+                  if (event.currentTarget.checked) {
+                    onChange(option);
+                  }
+                }}
+              />
+              <div className={styles.preview}>
+                <div className={styles.name}>{option.label}</div>
+              </div>
+            </label>
+          </>
         ))}
       </div>
     </div>

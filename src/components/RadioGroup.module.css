@@ -10,8 +10,8 @@
   flex-direction: column;
   align-items: flex-start;
   border: 1px solid var(--color-border1);
-  padding: 0;
-  border-radius: var(--border-radius2);
+  padding: var(--padding2) var(--padding2);
+  border-radius: var(--border-radius3);
   overflow: hidden;
   box-shadow: var(--shadow-button);
   background-color: var(--color-bg1);
@@ -19,7 +19,8 @@
 
 .item {
   display: flex;
-  padding: calc(2px + var(--padding2)) var(--padding3);
+  padding: calc(1px + var(--padding2)) var(--padding2);
+  border-radius: var(--border-radius3);
   gap: var(--padding3);
   align-items: center;
   width: 100%;
@@ -27,13 +28,17 @@
 
 .item:hover {
   background: linear-gradient(
-    var(--color-button-hover1),
-    var(--color-button-hover1b)
+    to top,
+    var(--color-button1),
+    var(--color-button1b)
   );
 }
 
-.item:not(:first-child) {
+.itemDivider {
   border-top: 1px solid var(--color-border3);
+  flex: auto;
+  width: calc(100% - var(--padding3));
+  margin-inline: auto;
 }
 
 .radio {

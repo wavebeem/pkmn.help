@@ -126,7 +126,7 @@ pokedexHelp.searchExamples.singleType.query,grass none,planta ninguno
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Busca Pokémon que son únicamente tipo planta, sin tipo secundario (ej. Tangela, Chikorita)."
 pokedexHelp.back,Back to Pokédex,Volver a la Pokédex
 more.contact.heading,Contact me,Contáctame
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hola, soy <homepage>Sage</homepage> (they/them) e hice la Calculadora de tipos de Pokémon (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hola, soy <homepage>Sage</homepage> (elle/elles) e hice la Calculadora de tipos de Pokémon (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Por favor, envíe sus comentarios y agradecimientos por correo electrónico a <email>pkmn@wavebeem.com</email>"
 more.settings.heading,Settings,Ajustes
 more.settings.language.label,Language,Idioma
@@ -139,7 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Predefinido por el sistema
 more.settings.theme.values.light,Light,Claro
 more.settings.theme.values.dark,Dark,Oscuro
-more.settings.theme.values.night,Night,
+more.settings.theme.values.night,Night,Noche
 more.settings.typeCount.label,Number of types,Número de tipos
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Los Pokémon pueden tener brevemente tres tipos a la vez si son golpeados con “Condena silvana” o “Halloween”. El campo del tipo terciario está oculto de manera predeterminada, ya que raramente se usa."
 more.settings.typeCount.values.2,Two types (2),Dos tipos (2)
@@ -154,7 +154,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,Mostrar apreciación
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","He dedicado innumerables horas a mejorar este sitio. Si aprecias lo que he hecho, por favor considera realizar una donación a organizaciones benéficas que apoyen los derechos de las comunidades BIPOC y transgéneros."
 more.thanks.heading,Special thanks,Agradecimientos especiales
-more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,Ve a todos los que han ayudado a hacer este sitio en los <credits>creditos</credits>.
 more.openSource.heading,Open source,Código Abierto
 more.openSource.description,Source code is available on <github>GitHub</github>.,El código fuente está disponible en <github>GitHub</github>.
 more.legalInfo.heading,Legal info,Información legal

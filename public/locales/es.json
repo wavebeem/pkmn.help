@@ -75,6 +75,7 @@
     "back": "Volver a Ataque"
   },
   "defense": {
+    "chooseTypes": "Elige los tipos",
     "takesXFrom": "Sufre {{ x }} por",
     "chooseAbility": "Elige habilidad",
     "chooseTeraType": "Elige teratipo",
@@ -121,8 +122,7 @@
       "type": "Tipo",
       "edit": "Modificar",
       "remove": "Eliminar"
-    },
-    "chooseTypes": "Elige los tipos"
+    }
   },
   "pokedex": {
     "search": {
@@ -200,7 +200,7 @@
   "more": {
     "contact": {
       "heading": "Contáctame",
-      "intro": "Hola, soy <homepage>Sage</homepage> (they/them) e hice la Calculadora de tipos de Pokémon (pkmn.help).",
+      "intro": "Hola, soy <homepage>Sage</homepage> (elle/elles) e hice la Calculadora de tipos de Pokémon (pkmn.help).",
       "email": "Por favor, envíe sus comentarios y agradecimientos por correo electrónico a <email>pkmn@wavebeem.com</email>"
     },
     "settings": {
@@ -218,7 +218,8 @@
         "values": {
           "auto": "Predefinido por el sistema",
           "light": "Claro",
-          "dark": "Oscuro"
+          "dark": "Oscuro",
+          "night": "Noche"
         }
       },
       "typeCount": {
@@ -250,7 +251,8 @@
       "description": "He dedicado innumerables horas a mejorar este sitio. Si aprecias lo que he hecho, por favor considera realizar una donación a organizaciones benéficas que apoyen los derechos de las comunidades BIPOC y transgéneros."
     },
     "thanks": {
-      "heading": "Agradecimientos especiales"
+      "heading": "Agradecimientos especiales",
+      "description": "Ve a todos los que han ayudado a hacer este sitio en los <credits>creditos</credits>."
     },
     "openSource": {
       "heading": "Código Abierto",

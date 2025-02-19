@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-02-19
+
+- Updated Spanish translation
+
 ## 2025-02-18
 
 - Added new theme: Night
