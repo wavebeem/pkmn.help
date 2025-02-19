@@ -160,7 +160,7 @@ export function Layout(): ReactNode {
   if (theme === "auto") {
     dataTheme = isDark ? "dark" : "light";
   }
-  const h1Ref = useRef<HTMLHeadingElement>();
+  const h1Ref = useRef<HTMLHeadingElement>(null);
   // Use the heading's background color as the HTML `theme-color` meta property,
   // so that browsers like mobile Safari make the surrounding UI match the
   // heading...

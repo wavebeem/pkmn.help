@@ -1,7 +1,7 @@
 import { useLayoutEffect, useState } from "react";
 
 export function useComputedStyleProperty<Key extends keyof CSSStyleDeclaration>(
-  element: HTMLElement | undefined,
+  element: HTMLElement | null | undefined,
   property: Key
 ): CSSStyleDeclaration[Key] | undefined {
   const [value, setValue] = useState<CSSStyleDeclaration[Key]>();
