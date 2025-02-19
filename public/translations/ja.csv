@@ -139,6 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,システムのデフォルト
 more.settings.theme.values.light,Light,ライト（光）
 more.settings.theme.values.dark,Dark,ダーク（闇）
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,タイプの数
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,「もりののろい」か「ハロウィン」を使うとき、このセッティングを使います。
 more.settings.typeCount.values.2,Two types (2),２つのタイプ

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2025-02-18
+
+- Added new theme: Night
+
+- Redesigned the Settings section of the More screen
+
+- Reorganized the Translation section of the More screen
+
 ## 2025-02-16
 
 - Updated Vietnamese translation

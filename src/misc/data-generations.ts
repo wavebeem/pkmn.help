@@ -2,7 +2,7 @@
 // https://pokemondb.net/type
 // TODO: Rename "Generation" to "Game"
 
-export const generations = ["gen1", "gen2", "default"] as const;
+export const generations = ["default", "gen2", "gen1"] as const;
 export type Generation = typeof generations[number];
 
 const generationSet = new Set<string>(generations);

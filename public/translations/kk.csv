@@ -139,6 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Жүйелік бастапқы
 more.settings.theme.values.light,Light,Жарқын
 more.settings.theme.values.dark,Dark,Қараңғы
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,Типтер саны
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Покемондар Forests's Curse немесе Trick-or-Treat-пен шабулданса шынында да үш типті болуы мүмкін. Үшінші тип бастапқыдан тығулы, себебі оны сирек қолданады."
 more.settings.typeCount.values.2,Two types (2),Екі тип (2)

@@ -139,6 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,系統默認
 more.settings.theme.values.light,Light,亮色
 more.settings.theme.values.dark,Dark,暗色
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,屬性數量
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,如果受到「森林詛咒」或「不夜城的詛咒」的影響，寶可夢暫時可以同時擁有三種屬性。由於第三個屬性很少使用，因此默認情況下隱藏了第三個屬性字段。
 more.settings.typeCount.values.2,Two types (2),兩種類型 (2)

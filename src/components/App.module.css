@@ -64,7 +64,7 @@
 .header {
   text-shadow: 0 0 8px hsl(0 0% 0% / 50%);
   font-size: 1.25rem;
-  font-weight: medium;
+  font-weight: var(--weight-medium);
   display: flex;
   align-items: center;
   justify-content: center;

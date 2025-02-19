@@ -139,6 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,System Standard
 more.settings.theme.values.light,Light,Lys
 more.settings.theme.values.dark,Dark,Mørk
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,Antal typer
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokemon kan midlertidigt have 3 typer på samme tid hvis de bliver ramt af Forest's curse eller Trick or Treat. Det trejde type felt bliver som standard gemt siden den sjældent bliver brugt.
 more.settings.typeCount.values.2,Two types (2),To typer (2)

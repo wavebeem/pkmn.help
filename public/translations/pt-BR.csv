@@ -139,6 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Sistema padrão
 more.settings.theme.values.light,Light,Claro
 more.settings.theme.values.dark,Dark,Escuro
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,Número de tipos
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon podem brevemente ter 3 tipos ao mesmo tempo se atingido por Maldição da Floresta (Forests's Curse) ou Doçura ou Travessura (Trick-or-Treat). O campo para terceiro tipo é escondido por padrão por ser raramente utilizado.
 more.settings.typeCount.values.2,Two types (2),Dois tipos (2)

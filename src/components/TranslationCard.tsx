@@ -27,10 +27,8 @@ export function TranslationCard({ lang }: TranslationCardProps): ReactNode {
             {languageNamesNative[lang]}
           </FancyText>
           <Flex flex="auto" />
-          {!officialLanguagesSet.has(lang as any) && (
-            <span className={styles.pill}>
-              <span aria-hidden="true">🏗️</span> Unofficial
-            </span>
+          {!officialLanguagesSet.has(lang) && (
+            <span className={styles.pill}>Unofficial</span>
           )}
           {Boolean(languageBounty[lang]) && (
             <span className={styles.pill}>

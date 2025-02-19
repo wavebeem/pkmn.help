@@ -51,9 +51,6 @@ input {
   --weight-medium: 400;
 }
 
-.bg3 {
-  background-color: var(--color-bg3);
-}
 .bg2 {
   background-color: var(--color-bg2);
 }

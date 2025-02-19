@@ -218,7 +218,8 @@
         "values": {
           "auto": "System default",
           "light": "Light",
-          "dark": "Dark"
+          "dark": "Dark",
+          "night": "Night"
         }
       },
       "typeCount": {
@@ -300,7 +301,7 @@
     "byID": {
       "gen1": "Generation 1",
       "gen2": "Generation 2–5",
-      "default": "Default (generation 6+)"
+      "default": "Generation 6+"
     }
   }
 }

@@ -139,6 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,시스템 기본값
 more.settings.theme.values.light,Light,라이트 모드
 more.settings.theme.values.dark,Dark,다크 모드
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,타입의 수
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,포켓몬이 '숲의저주'나 '핼러윈'에 맞으면 잠시 동안 한 번에 세 가지 유형을 가질 수 있습니다. 세 번째 유형은 거의 사용되지 않기 때문에 기본적으로 숨겨져 있습니다.
 more.settings.typeCount.values.2,Two types (2),두 가지 유형(2)

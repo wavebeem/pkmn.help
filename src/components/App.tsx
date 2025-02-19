@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { ReactNode, useEffect, useMemo, useState } from "react";
+import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import {
@@ -12,6 +12,7 @@ import {
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { AppContext, AppContextProvider } from "../hooks/useAppContext";
+import { useComputedStyleProperty } from "../hooks/useComputedStyleProperty";
 import { useFetchJSON } from "../hooks/useFetchJSON";
 import { useLanguage } from "../hooks/useLanguage";
 import { useTheme } from "../hooks/useTheme";
@@ -32,8 +33,8 @@ import { ScreenPokedex } from "../screens/ScreenPokedex";
 import { ScreenPokedexHelp } from "../screens/ScreenPokedexHelp";
 import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
 import styles from "./App.module.css";
-import { MonsterImage } from "./MonsterImage";
 import { Crash } from "./Crash";
+import { MonsterImage } from "./MonsterImage";
 
 const router = createBrowserRouter([
   {
@@ -155,8 +156,15 @@ export function Layout(): ReactNode {
   const [theme] = useTheme();
   const isDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const isDark = theme === "dark" || (theme === "auto" && isDarkMode);
-  const themeColor = isDark ? "hsl(0, 70%, 40%)" : "hsl(0, 90%, 45%)";
-  const themeAuto = isDark ? "dark" : "light";
+  let dataTheme = theme;
+  if (theme === "auto") {
+    dataTheme = isDark ? "dark" : "light";
+  }
+  const h1Ref = useRef<HTMLHeadingElement>(null);
+  // Use the heading's background color as the HTML `theme-color` meta property,
+  // so that browsers like mobile Safari make the surrounding UI match the
+  // heading...
+  const themeColor = useComputedStyleProperty(h1Ref.current, "backgroundColor");
 
   // Load Pokédex JSON
   const jsonURL = new URL("data-pkmn.json", publicPath).href;
@@ -214,7 +222,7 @@ export function Layout(): ReactNode {
     <AppContextProvider value={appContext}>
       <HelmetProvider>
         <Helmet>
-          <html data-theme={themeAuto} />
+          <html data-theme={dataTheme} data-theme-color={themeColor} />
           <meta name="theme-color" content={themeColor} />
           <title>{t("title")}</title>
         </Helmet>
@@ -232,7 +240,7 @@ export function Layout(): ReactNode {
           </div>
         )}
         <div className={styles.root}>
-          <h1 className={styles.header}>
+          <h1 className={styles.header} ref={h1Ref}>
             <button
               className={styles.headerButton}
               data-theme={pokeballTheme}

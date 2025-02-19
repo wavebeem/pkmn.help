@@ -139,6 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Thème du système par défaut
 more.settings.theme.values.light,Light,Clair
 more.settings.theme.values.dark,Dark,Sombre
+more.settings.theme.values.black,Black (OLED),
 more.settings.typeCount.label,Number of types,Nombre de types
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Un Pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est rarement utilisé.
 more.settings.typeCount.values.2,Two types (2),Deux types (2)
