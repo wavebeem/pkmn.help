@@ -7,6 +7,7 @@ import { Divider } from "../components/Divider";
 import { ExternalLink } from "../components/ExternalLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
+import { RadioGroup } from "../components/RadioGroup";
 import { Select } from "../components/Select";
 import { TranslationCard } from "../components/TranslationCard";
 import { useAppContext } from "../hooks/useAppContext";
@@ -32,7 +33,6 @@ import {
   unofficialLanguages,
 } from "../misc/lang";
 import { resetApp } from "../misc/resetApp";
-import { RadioGroup, ThemePicker } from "../components/RadioGroup";
 
 export function ScreenMore(): ReactNode {
   const { needsAppUpdate, updateApp } = useAppContext();

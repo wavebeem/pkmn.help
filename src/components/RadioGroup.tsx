@@ -21,7 +21,7 @@ export function RadioGroup<S extends string>({
   helpText,
   options,
   onChange,
-}: RadioGroupProps<S>) {
+}: RadioGroupProps<S>): ReactNode {
   const name = useId();
 
   return (
