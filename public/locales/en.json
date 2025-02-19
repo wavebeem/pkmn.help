@@ -215,12 +215,12 @@
       },
       "theme": {
         "label": "Theme",
-        "help": "“System default” will change automatically depending on your operating system settings.",
+        "help": "“Auto” will change automatically depending on your operating system settings.",
         "values": {
-          "auto": "System default",
+          "auto": "Auto",
           "light": "Light",
           "dark": "Dark",
-          "black": "Black (OLED)"
+          "black": "Black"
         }
       },
       "typeCount": {

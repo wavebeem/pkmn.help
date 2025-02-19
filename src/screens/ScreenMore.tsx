@@ -31,6 +31,7 @@ import {
   unofficialLanguages,
 } from "../misc/lang";
 import { resetApp } from "../misc/resetApp";
+import { ThemePicker } from "../components/ThemePicker";
 
 export function ScreenMore(): ReactNode {
   const { needsAppUpdate, updateApp } = useAppContext();
@@ -178,6 +179,8 @@ export function ScreenMore(): ReactNode {
                 {t("more.settings.theme.values.black")}
               </option>
             </Select>
+
+            <ThemePicker />
 
             <Select
               label={t("games.label")}
