@@ -365,173 +365,23 @@ export function ScreenMore(): ReactNode {
           <Divider />
 
           <CollapsibleSection
+            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.thanks.heading")}
               </FancyText>
             }
           >
-            <Flex direction="column" gap="large">
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.da")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Simon</li>
-                </ul>
-              </Flex>
-
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.ru")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Abylay Zhandarbek</li>
-                </ul>
-              </Flex>
-
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.kk")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Abylay Zhandarbek</li>
-                </ul>
-              </Flex>
-
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.pt-PT")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Bernardo Ferreira</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.pt-BR")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Vio</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.zh-Hans")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>umbresp</li>
-                  <li>Dragonify</li>
-                  <li>Tin</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.zh-Hant")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>umbresp</li>
-                  <li>Nan Zheng</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.no")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Sarah Aa</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.ro")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Adam Hayes</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.pl")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Sebastian Biegaj</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.fr")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Kaishidow</li>
-                  <li>Drakoshen</li>
-                  <li>Azertor</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.de")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Enri</li>
-                  <li>SpeciesSaladMallory</li>
-                  <li>Cozzzy</li>
-                  <li>Luzifer Senpai</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.nl")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Julking</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.it")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>dama99</li>
-                  <li>Gabriele Giugno</li>
-                  <li>
-                    Fabio <q>N&trade;</q> Ilari
-                  </li>
-                  <li>Banshee</li>
-                  <li>Mathieu Licata</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.ko")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>BetterBritter</li>
-                  <li>Eric Marriott</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.ja")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Grant Hussey</li>
-                  <li>Minamorl</li>
-                </ul>
-              </Flex>
-              <Flex direction="column" gap="large">
-                <FancyText tag="h3" fontSize="large">
-                  {t("more.thanks.sections.testing")}
-                </FancyText>
-                <ul className="list-simple">
-                  <li>Jansjo</li>
-                  <li>Marten</li>
-                </ul>
-              </Flex>
-              <FancyText tag="h3" fontSize="large">
-                {t("more.thanks.sections.other")}
-              </FancyText>
-            </Flex>
+            <FancyText tag="p">
+              <Trans
+                i18nKey="more.thanks.description"
+                components={{
+                  credits: (
+                    <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CREDITS.md" />
+                  ),
+                }}
+              />
+            </FancyText>
           </CollapsibleSection>
 
           <Divider />

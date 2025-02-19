@@ -12,12 +12,14 @@ type MultiTypeSelectorProps = {
   generation: Generation;
   onChange(types: Type[]): void;
   value: Type[];
+  limit?: number;
 };
 
 export function MultiTypeSelector({
   generation,
   onChange,
   value,
+  limit,
 }: MultiTypeSelectorProps): ReactNode {
   const { t } = useTranslation();
   const types = typesForGeneration(generation);
@@ -53,10 +55,11 @@ export function MultiTypeSelector({
                   } else {
                     types.add(type);
                   }
-                  // Should we sort based on the type order on the page rather
-                  // than alphabetical? I'll just stick with alphabetical for
-                  // now.
-                  onChange([...types].sort());
+                  let newValue = [...types];
+                  if (limit) {
+                    newValue = newValue.slice(-limit);
+                  }
+                  onChange(newValue);
                 }}
               />
               {t(`types.${type}`)}

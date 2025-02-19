@@ -23,7 +23,8 @@
       "choose": "Escolher movimentos especiais",
       "names": {
         "freeze-dry": "Freeze-Dry",
-        "thousand_arrows": "Thousand Arrows"
+        "thousand_arrows": "Thousand Arrows",
+        "flying_press": "Aperto Voador"
       }
     },
     "teraPokemon": "Pokémon Tera",
@@ -74,9 +75,6 @@
     "back": "Voltar a \"Ataque\""
   },
   "defense": {
-    "chooseFirst": "Escolher 1° tipo",
-    "chooseSecond": "Escolher 2° tipo",
-    "chooseThird": "Escolher 3° tipo",
     "takesXFrom": "Leva {{ x }} mais dano de",
     "chooseAbility": "Escolher habilidade",
     "chooseTeraType": "Escolher tipo tera",
@@ -123,7 +121,8 @@
       "type": "Tipo",
       "edit": "Editar",
       "remove": "Remover"
-    }
+    },
+    "chooseTypes": "Escolher tipos"
   },
   "pokedex": {
     "search": {
@@ -251,26 +250,7 @@
       "description": "Dediquei incontáveis horas melhorando este site. Se aprecia o que fiz, por favor, considere doar para caridades que apoiam os direitos BIPOC e transsexuais."
     },
     "thanks": {
-      "heading": "Agradecimentos especiais",
-      "sections": {
-        "da": "Tradução dinamarquesa",
-        "ru": "Tradução Russa",
-        "kk": "Tradução Cazaque",
-        "pt-PT": "Tradução Português (Portugal)",
-        "pt-BR": "Tradução Português (Brasil)",
-        "zh-Hans": "Tradução Chinesa Simplificada",
-        "zh-Hant": "Tradução Chinesa Tradicional",
-        "ro": "Tradução Romena",
-        "pl": "Tradução Polonesa",
-        "fr": "Tradução Francesa",
-        "de": "Tradução Alemã",
-        "it": "Tradução Italiana",
-        "ko": "Tradução Coreana",
-        "ja": "Tradução Japonesa",
-        "nl": "Tradução Holandesa",
-        "testing": "Testes",
-        "other": "Vários Pokéfãs anônimos"
-      }
+      "heading": "Agradecimentos especiais"
     },
     "openSource": {
       "heading": "Fonte",

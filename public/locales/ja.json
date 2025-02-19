@@ -16,7 +16,8 @@
       "choose": "得意技を選択",
       "names": {
         "freeze-dry": "フリーズドライ",
-        "thousand_arrows": "サウザンアロー"
+        "thousand_arrows": "サウザンアロー",
+        "flying_press": "フライングプレス"
       }
     },
     "coverage": {
@@ -74,9 +75,6 @@
     "back": "こうげきに戻る"
   },
   "defense": {
-    "chooseFirst": "１つ目のタイプ",
-    "chooseSecond": "２つ目のタイプ",
-    "chooseThird": "３つ目のタイプ",
     "takesXFrom": "{{ x }}を受ける",
     "chooseAbility": "特性",
     "chooseTeraType": "テラスタイプ",
@@ -123,7 +121,8 @@
       "type": "タイプ",
       "edit": "変える",
       "remove": "消す"
-    }
+    },
+    "chooseTypes": "複数のタイプを選択"
   },
   "pokedex": {
     "search": {
@@ -201,7 +200,7 @@
   "more": {
     "contact": {
       "heading": "運営者に連絡",
-      "intro": "こんにちは、私は<homepage>セージ・フェンネル</homepage>です。ポケモン・タイプ・けいさんきを作りました。",
+      "intro": "こんにちは、私は<homepage>セージ</homepage>です。ポケモン・タイプ・けいさんきを作りました。",
       "email": "考えとありがとうを<email>pkmn@wavebeem.com</email>に電子メールで送ってください。"
     },
     "settings": {
@@ -251,27 +250,7 @@
       "description": "私はこのサイトの改善に数えられないほどの時間を費やしています。もしサイトが気に入ったらBIPOCとトランスジェンダーの権利のためのチャリティーに寄付することを検討下さい。"
     },
     "thanks": {
-      "heading": "助けた人々",
-      "sections": {
-        "da": "デンマーク語訳",
-        "ru": "ロシア語翻訳",
-        "kk": "カザフ語翻訳",
-        "pt-PT": "ポルトガル語翻訳",
-        "pt-BR": "ブラジルポルトガル語翻訳",
-        "zh-Hans": "中国語翻訳（簡体）",
-        "zh-Hant": "中国語翻訳（繁体）",
-        "no": "ノルウェー語翻訳",
-        "ro": "ルーマニア語翻訳",
-        "pl": "ポーランド語翻訳",
-        "fr": "フランス語翻訳",
-        "de": "ドイツ語翻訳",
-        "it": "イタリア語翻訳",
-        "ko": "朝鮮語翻訳",
-        "ja": "日本語翻訳",
-        "nl": "オランダ語翻訳",
-        "testing": "テスト",
-        "other": "無名のポケモン・ファンたち"
-      }
+      "heading": "助けた人々"
     },
     "openSource": {
       "heading": "オープンソース",

@@ -71,6 +71,7 @@ export const supportedLanguages = [
   "zh-Hans",
   "zh-Hant",
   "ko",
+  "vi",
 ] as const;
 
 const langSet = new Set(supportedLanguages);

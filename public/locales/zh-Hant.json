@@ -16,7 +16,8 @@
       "choose": "選擇特別招式",
       "names": {
         "freeze-dry": "冷凍乾燥",
-        "thousand_arrows": "千箭齊發"
+        "thousand_arrows": "千箭齊發",
+        "flying_press": "飛身重壓"
       }
     },
     "coverage": {
@@ -74,9 +75,6 @@
     "back": "返回攻擊"
   },
   "defense": {
-    "chooseFirst": "選擇第一個屬性",
-    "chooseSecond": "選擇第二個屬性",
-    "chooseThird": "選擇第三個屬性",
     "takesXFrom": "從中取 {{ x }}",
     "chooseAbility": "選擇技能",
     "chooseTeraType": "選擇太晶屬性",
@@ -123,7 +121,8 @@
       "type": "屬性",
       "edit": "編輯",
       "remove": "移除"
-    }
+    },
+    "chooseTypes": "選擇屬性"
   },
   "pokedex": {
     "search": {
@@ -251,26 +250,7 @@
       "description": "我已經花費了無數時間來改進這個網站。如果您欣賞我的成果，請考慮捐款支持支持非裔和跨性別人士權利的慈善機構。"
     },
     "thanks": {
-      "heading": "特別感謝",
-      "sections": {
-        "da": "丹麥翻譯",
-        "ru": "俄羅斯翻譯",
-        "kk": "哈薩克翻譯",
-        "pt-PT": "葡萄牙葡萄牙語翻譯",
-        "pt-BR": "巴西葡萄牙語翻譯",
-        "zh-Hans": "簡體中文翻譯",
-        "zh-Hant": "繁體中文翻譯",
-        "ro": "羅馬尼亞翻譯",
-        "pl": "波蘭翻譯",
-        "fr": "法語翻譯",
-        "de": "德語翻譯",
-        "it": "意大利語翻譯",
-        "ko": "韓語翻譯",
-        "ja": "日語翻譯",
-        "nl": "荷蘭翻譯",
-        "testing": "測試",
-        "other": "幾位匿名的粉絲"
-      }
+      "heading": "特別感謝"
     },
     "openSource": {
       "heading": "開源",

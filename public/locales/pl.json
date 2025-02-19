@@ -62,9 +62,6 @@
     "back": "Wróć do ofensywy"
   },
   "defense": {
-    "chooseFirst": "Wybierz Pierwszy Typ",
-    "chooseSecond": "Wybierz Drugi Typ",
-    "chooseThird": "Wybierz Trzeci Typ",
     "takesXFrom": "Dostaje {{ x }} od",
     "abilityNames": {
       "filter": "Filter",
@@ -106,7 +103,8 @@
       "type": "Typ",
       "edit": "Edytuj",
       "remove": "Usuń"
-    }
+    },
+    "chooseTypes": "Wybierz typy"
   },
   "pokedex": {
     "search": {
@@ -226,22 +224,7 @@
       "description": "Spędziłem niezliczone godziny ulepszając tę stronę. Jeśli doceniasz to, co zrobiłem, rozważ przekazanie darowizny na rzecz organizacji charytatywnych, które wspierają prawa BIPOC i osób transpłciowych."
     },
     "thanks": {
-      "heading": "Szczególne podziękowania",
-      "sections": {
-        "da": "Tłumaczenie duńskie",
-        "ru": "Tłumaczenie rosyjskie",
-        "kk": "Tłumaczenie kazachskie",
-        "pt-BR": "Tłumaczenie brazylijskiego portugalskiego",
-        "zh-Hans": "Tłumaczenie uproszczonego chińskiego",
-        "ro": "Tłumaczenie rumuńskie",
-        "pl": "Tłumaczenie polskie",
-        "fr": "Tłumaczenie francuskie",
-        "de": "Tłumaczenie niemieckie",
-        "it": "Tłumaczenie włoskie",
-        "ja": "Tłumaczenie japońskie",
-        "testing": "Testowanie",
-        "other": "Kilku anonimowych fanów Poké"
-      }
+      "heading": "Szczególne podziękowania"
     },
     "openSource": {
       "heading": "Otwarte źródło",

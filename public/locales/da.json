@@ -59,9 +59,6 @@
     "back": "Tilbage til Angreb"
   },
   "defense": {
-    "chooseFirst": "Vælg første type",
-    "chooseSecond": "Vælg anden type",
-    "chooseThird": "Vælg tredje type",
     "takesXFrom": "Tager {{ x }} Fra",
     "abilityNames": {
       "filter": "Filter",
@@ -84,7 +81,8 @@
       "lightning_rod": "Lightning Rod",
       "motor_drive": "Motor Drive",
       "volt_absorb": "Volt Absorb"
-    }
+    },
+    "chooseTypes": "Vælg typer/type"
   },
   "pokedex": {
     "search": {
@@ -200,21 +198,7 @@
       "description": "Jeg har brugt utallige timer på at forbedre denne hjemmeside. Hvis du er glad for hvad jeg har lavet, så tænk venligst over at donere til velgørenheder der stytter BIPOC og transkønnets rettigheder"
     },
     "thanks": {
-      "heading": "Tusind tak til",
-      "sections": {
-        "da": "Dansk oversættelse",
-        "ru": "Russisk oversættelse",
-        "kk": "Kazakhstan oversættelse",
-        "pt-BR": "Brazillensk portugisisk oversættelse",
-        "zh-Hans": "Kinesisk oversættelse",
-        "ro": "Rumænsk oversættelse",
-        "fr": "Fransk oversættelse",
-        "de": "Tysk oversættelse",
-        "it": "Italiensk oversættelse",
-        "ja": "Japansk oversættelse",
-        "testing": "Tests",
-        "other": "Mange anonyme Poké fans"
-      }
+      "heading": "Tusind tak til"
     },
     "openSource": {
       "heading": "Open source",

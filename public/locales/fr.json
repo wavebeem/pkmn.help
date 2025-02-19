@@ -16,7 +16,8 @@
       "choose": "Choisissez les attaques spéciales",
       "names": {
         "freeze-dry": "Lyophilisation",
-        "thousand_arrows": "Myria-Flèches"
+        "thousand_arrows": "Myria-Flèches",
+        "flying_press": "Flying Press"
       }
     },
     "coverage": {
@@ -74,9 +75,7 @@
     "back": "Retour à l'onglet \"Couverture offensive\""
   },
   "defense": {
-    "chooseFirst": "Choisir le premier type",
-    "chooseSecond": "Choisir le second type",
-    "chooseThird": "Choisir le troisème type",
+    "chooseTypes": "Choisissez les types",
     "takesXFrom": "Subit {{ x }} de",
     "chooseAbility": "Choisir le talent",
     "chooseTeraType": "Choisir le type téracristal",
@@ -127,7 +126,7 @@
   },
   "pokedex": {
     "search": {
-      "description": "Recherche par nom, nombre ou type",
+      "description": "Recherche par nom, nombre ou types",
       "help": "Aide",
       "helpLong": "Aide, rechercher dans le Pokédex",
       "notFound": "Aucun Pokémon trouvé"
@@ -192,7 +191,7 @@
         "description": "Rechercher des Pokémon qui sont de types eau/vol (ex Léviator) ou de type vol/eau (Nigosier)."
       },
       "singleType": {
-        "query": "Plante aucun",
+        "query": "plante aucun",
         "description": "Rechercher les Pokémon qui ont seulement le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)."
       }
     },
@@ -252,26 +251,7 @@
     },
     "thanks": {
       "heading": "Remerciements spéciaux",
-      "sections": {
-        "da": "Traduction en Danois",
-        "ru": "Traduction en Russe",
-        "kk": "Traduction en Kazakh",
-        "pt-PT": "Traduction en Portugais",
-        "pt-BR": "Traduction en Portugais Brésilien",
-        "zh-Hans": "Traduction en Chinois Simplifié",
-        "zh-Hant": "Traduction en Chinois Traditionnel",
-        "no": "Traduction en Norvègien",
-        "ro": "Traduction en Roumain",
-        "pl": "Traduction en Polonais",
-        "fr": "Traduction en Français",
-        "de": "Traduction en Allemand",
-        "it": "Traduction en Italien",
-        "ko": "Traduction en Coréen",
-        "ja": "Traduction en Japonais",
-        "nl": "Traduction en Néerlandais",
-        "testing": "Tests",
-        "other": "Plusieurs PokéFans anonymes"
-      }
+      "description": "Ici sont <credits>crédités</credits> toutes les personnes qui m'ont aidé⸱e à faire ce site web."
     },
     "openSource": {
       "heading": "Open source",

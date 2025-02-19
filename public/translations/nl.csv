@@ -10,6 +10,7 @@ offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
 offense.specialMoves.names.freeze-dry,Freeze-Dry,
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,
+offense.specialMoves.names.flying_press,Flying Press,
 offense.coverage.heading,Pokédex coverage,Pokédex overschaduwing
 offense.coverage.edit,Edit list,Bewerk lijst
 offense.coverage.weakness,Weak,Zwak
@@ -41,9 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Geëxporteerde standaar
 coverage.status.reset,Loaded default Pokémon forms,Geladen standaard Pokémonvormen
 coverage.status.errored,Error loading CSV. Don't change header names.,Error met het laden van CSV. Verander kopnamen niet.
 coverage.back,Back to offense,Terug naar offensief
-defense.chooseFirst,Choose first type,Kies eerste type
-defense.chooseSecond,Choose second type,Kies tweede type
-defense.chooseThird,Choose third type,Kies derde type
+defense.chooseTypes,Choose types,Kies Types
 defense.takesXFrom,Takes {{ x }} from,Krijgt {{ x }} van
 defense.chooseAbility,Choose ability,Kies vaardigheid
 defense.chooseTeraType,Choose tera type,Kies tera type
@@ -155,24 +154,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,Waardering
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Er zitten ontelbaar veel uren in het verbeteren van deze website. Als je waardeert wat ik heb gemaakt, alsjeblieft overweeg iets te doneren aan liefdadigheden die BIPOC en transgenderrechten ondersteunen."
 more.thanks.heading,Special thanks,Speciale dank
-more.thanks.sections.da,Danish translation,Deense vertaling
-more.thanks.sections.ru,Russian translation,Russische vertaling
-more.thanks.sections.kk,Kazakh translation,Kazachse vertaling
-more.thanks.sections.pt-PT,Portuguese (Portugal) translation,Portugese vertaling
-more.thanks.sections.pt-BR,Portuguese (Brazil) translation,Brazilisch Portugese vertaling
-more.thanks.sections.zh-Hans,Simplified Chinese translation,Versimpeld Chinese vertaling
-more.thanks.sections.zh-Hant,Traditional Chinese translation,Traditioneel Chinese vertaling
-more.thanks.sections.no,Norwegian translation,
-more.thanks.sections.ro,Romanian translation,Romeense vertaling
-more.thanks.sections.pl,Polish translation,Poolse vertaling
-more.thanks.sections.fr,French translation,Franse vertaling
-more.thanks.sections.de,German translation,Duitse vertaling
-more.thanks.sections.it,Italian translation,Italiaanse vertaling
-more.thanks.sections.ko,Korean translation,Koreaanse vertaling
-more.thanks.sections.ja,Japanese translation,Japanse vertaling
-more.thanks.sections.nl,Dutch translation,Nederlandse vertaling
-more.thanks.sections.testing,Testing,Testen
-more.thanks.sections.other,Several anonymous Poké Fans,Wat anonieme Poké Fans
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
 more.openSource.heading,Open source,Open source
 more.openSource.description,Source code is available on <github>GitHub</github>.,Broncode is verkrijgbaar op <github>GitHub</github>
 more.legalInfo.heading,Legal info,Legale info
