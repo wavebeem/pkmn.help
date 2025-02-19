@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: flex-start;
   border: 1px solid var(--color-border1);
-  padding: var(--padding1);
+  padding: 0;
   border-radius: var(--border-radius2);
   overflow: hidden;
   box-shadow: var(--shadow-button);
@@ -33,7 +33,7 @@
 }
 
 .item:not(:first-child) {
-  border-top: 1px solid var(--color-border2);
+  border-top: 1px solid var(--color-border3);
 }
 
 .radio {
@@ -43,7 +43,7 @@
   width: 1.5em;
   height: 1.5em;
   border-radius: var(--border-radius-pill);
-  padding: var(--padding2);
+  padding: 6px;
   box-shadow: var(--shadow-inset);
 }
 
