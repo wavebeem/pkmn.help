@@ -139,7 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Systemstandard
 more.settings.theme.values.light,Light,Lyst
 more.settings.theme.values.dark,Dark,Mørkt
-more.settings.theme.values.black,Black (OLED),
+more.settings.theme.values.night,Night,
 more.settings.typeCount.label,Number of types,Mengde typer
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon kan kort ha tre typer samtidig hvis de treffes med Skogens Forbannelse eller Knask-eller-Knep. Det tredje typefeltet er skjult som standard siden den sjelden brukes.
 more.settings.typeCount.values.2,Two types (2),To typer (2)
@@ -187,4 +187,4 @@ games.label,Game generation,Spillgenerasjon
 games.help,Use type effectiveness from different game generations.,Bruk type effektivitet fra forskjellige spillgenerasjoner.
 games.byID.gen1,Generation 1,Generasjon 1
 games.byID.gen2,Generation 2–5,Generasjon 2-5
-games.byID.default,Default (generation 6+),Standard (generasjon 6+)
+games.byID.default,Generation 6+,Standard (generasjon 6+)

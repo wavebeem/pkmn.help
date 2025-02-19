@@ -139,7 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Системная по умолчанию
 more.settings.theme.values.light,Light,Светлая
 more.settings.theme.values.dark,Dark,Тёмная
-more.settings.theme.values.black,Black (OLED),
+more.settings.theme.values.night,Night,
 more.settings.typeCount.label,Number of types,Число типов
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Покемоны реально могут иметь три типа за раз если по ним были использованы атаки Forests's Curse или Trick-or-Treat. Поле третьего типа скрыто по умолчанию, так как им пользуются редко."
 more.settings.typeCount.values.2,Two types (2),Два типа(2)
@@ -187,4 +187,4 @@ games.label,Game generation,Поколение Игры
 games.help,Use type effectiveness from different game generations.,Используйте эффективности типов из разных поколений игр.
 games.byID.gen1,Generation 1,Поколение 1.
 games.byID.gen2,Generation 2–5,Поколение 2-5
-games.byID.default,Default (generation 6+),По умолчанию(Поколение 6+)
+games.byID.default,Generation 6+,По умолчанию(Поколение 6+)

@@ -139,7 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,系统默认
 more.settings.theme.values.light,Light,浅色主题
 more.settings.theme.values.dark,Dark,深色主题
-more.settings.theme.values.black,Black (OLED),
+more.settings.theme.values.night,Night,
 more.settings.typeCount.label,Number of types,属性的数量
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,如果宝可梦被森林诅咒或万圣夜攻击后则会被追加第三种属性。由于例子很少的原因，第三属性的栏位默认为隐藏。
 more.settings.typeCount.values.2,Two types (2),两种属性（2）
@@ -187,4 +187,4 @@ games.label,Game generation,游戏世代
 games.help,Use type effectiveness from different game generations.,更换对应游戏世代的属性相克。
 games.byID.gen1,Generation 1,第一世代
 games.byID.gen2,Generation 2–5,第二至五世代
-games.byID.default,Default (generation 6+),默认（第六世代起）
+games.byID.default,Generation 6+,默认（第六世代起）

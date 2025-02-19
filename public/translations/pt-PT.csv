@@ -139,7 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Predefinição do sistema
 more.settings.theme.values.light,Light,Luz
 more.settings.theme.values.dark,Dark,Escuro
-more.settings.theme.values.black,Black (OLED),
+more.settings.theme.values.night,Night,
 more.settings.typeCount.label,Number of types,Número de tipos
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Os Pokémon podem ter três tipos de uma só vez se forem atingidos pela Maldição da Floresta ou pelo Travessura-ou-Doçura. O campo do terceiro tipo está oculto por defeito, uma vez que raramente é utilizado."
 more.settings.typeCount.values.2,Two types (2),Dois tipos (2)
@@ -187,4 +187,4 @@ games.label,Game generation,Geração do jogo
 games.help,Use type effectiveness from different game generations.,Utilizar a eficácia de tipos de diferentes gerações dos jogos.
 games.byID.gen1,Generation 1,Geração 1
 games.byID.gen2,Generation 2–5,Geração 2-5
-games.byID.default,Default (generation 6+),Predefinição (geração 6+)
+games.byID.default,Generation 6+,Predefinição (geração 6+)
