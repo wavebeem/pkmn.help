@@ -214,7 +214,8 @@
         "values": {
           "auto": "Predefinito di sistema",
           "light": "Chiaro",
-          "dark": "Scuro"
+          "dark": "Scuro",
+          "night": "Notte"
         }
       },
       "typeCount": {
