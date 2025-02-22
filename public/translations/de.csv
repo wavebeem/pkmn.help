@@ -139,7 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,System Standard
 more.settings.theme.values.light,Light,Hell
 more.settings.theme.values.dark,Dark,Dunkel
-more.settings.theme.values.night,Night,
+more.settings.theme.values.night,Night,Nacht
 more.settings.typeCount.label,Number of types,Anzahl der Typen
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Pokémon können kurzfristig drei Typen auf einmal haben, wenn sie mit Waldesfluch oder Halloween getroffen werden. Das Feld für den dritten Typ ist standardmäßig ausgeblendet, da es selten verwendet wird."
 more.settings.typeCount.values.2,Two types (2),Zwei Typen (2)

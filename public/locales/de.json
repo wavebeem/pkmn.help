@@ -218,7 +218,8 @@
         "values": {
           "auto": "System Standard",
           "light": "Hell",
-          "dark": "Dunkel"
+          "dark": "Dunkel",
+          "night": "Nacht"
         }
       },
       "typeCount": {

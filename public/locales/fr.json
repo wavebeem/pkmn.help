@@ -218,7 +218,8 @@
         "values": {
           "auto": "Thème du système par défaut",
           "light": "Clair",
-          "dark": "Sombre"
+          "dark": "Sombre",
+          "night": "Nuit"
         }
       },
       "typeCount": {
