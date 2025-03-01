@@ -25,6 +25,16 @@
 
 - Reduced the brightness of the header in light mode and night mode
 
+- Increased the speed of the Pokédex search
+
+- The Pokédex search now dims the results while a search is happening, so you
+  know it's working
+
+  - I know this section is slow, and increasing the page size made it slower.
+    I'm still trying to come up with a way to make it faster. I've received
+    requests to make the page size bigger, and the main reason I haven't done
+    much with that is that the search gets really slow...
+
 ## 2025-02-22
 
 - Added translations for the "Night" theme in German, French, Italian, Japanese,
