@@ -1,6 +1,7 @@
 /* eslint-disable no-console */
 import fs from "fs";
 import path from "path";
+import { cpus } from "node:os";
 import sharp, { PngOptions, WebpOptions } from "sharp";
 
 const IMG_SRC = "pokedex-img";
@@ -15,6 +16,8 @@ export async function optimizeImages({
   const path512 = path.join(IMG_DEST, "512");
   fs.mkdirSync(path256, { recursive: true });
   fs.mkdirSync(path512, { recursive: true });
+  const concurrencyLimit = cpus().length;
+  let promises: Promise<any>[] = [];
   for (const name of fs.readdirSync(IMG_SRC)) {
     const baseName = path.basename(name, ".png");
     const fullName = path.join(IMG_SRC, name);
@@ -22,11 +25,11 @@ export async function optimizeImages({
     const namePNG512 = path.join(path512, `${baseName}.png`);
     const nameWebp256 = path.join(path256, `${baseName}.webp`);
     const nameWebp512 = path.join(path512, `${baseName}.webp`);
-    const promises: Promise<any>[] = [];
     const pngOptions: PngOptions = {};
+    // The default (80) is just slightly noticeably degrading the quality. 90
+    // feels indistinguishable from 100, but has a much better file size.
     const webpOptions: WebpOptions = {
-      alphaQuality: 100,
-      quality: 100,
+      quality: 90,
     };
     if (force || !fs.existsSync(namePNG256)) {
       promises.push(
@@ -48,6 +51,10 @@ export async function optimizeImages({
       continue;
     }
     console.log("Optimizing", fullName + "...");
-    await Promise.all(promises);
+    if (promises.length >= concurrencyLimit) {
+      await Promise.all(promises);
+      promises = [];
+    }
   }
+  await Promise.all(promises);
 }

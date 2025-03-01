@@ -1,13 +1,18 @@
 # Changelog
 
-## 2025-02-28
+## 2025-03-01
 
 - The Pokédex now shows up to 3 Pokémon columns depending on screen size
 
 - The Pokédex uses a consistent layout regardless of screen size
 
-- The Pokédex stats bars have a colored background to help guide your eyes
-  towards the stat you're interested in looking at
+- The Pokédex stats bars have been redesigned
+
+  - The colored background helps guide your eyes to the stats you want to see
+
+  - The segmented appearance helps you compare the size of one bar to another
+
+- Increased Pokédex page size from 20 to 42
 
 - Removed the default "Normal" type selected on the defense screens
 
@@ -18,7 +23,7 @@
 - Improved usability of the website when using an increased browser default font
   size
 
-- Reduced the brightness of the header background color in light mode
+- Reduced the brightness of the header in light mode and night mode
 
 ## 2025-02-22
 

@@ -1,15 +1,22 @@
 .root {
   display: flex;
-  min-height: 1rem;
+  min-height: 1.5rem;
   height: 100%;
   background: var(--meter-color-bg);
   border-radius: 2px;
+  max-width: 255px;
 }
 
 .fill {
+  --s: 20px;
   border-radius: inherit;
   width: var(--meter-width);
-  background: var(--meter-color);
+  background-color: var(--meter-color);
+  background-image: repeating-linear-gradient(
+    to right,
+    #0001 0,
+    #fff1 var(--s)
+  );
   box-shadow: inset 0 0 0 1px var(--color-vibrant-border1);
   transition: width 250ms;
 }
