@@ -6,7 +6,11 @@ import sharp, { PngOptions, WebpOptions } from "sharp";
 const IMG_SRC = "pokedex-img";
 const IMG_DEST = "public/img";
 
-export async function optimizeImages(): Promise<void> {
+export async function optimizeImages({
+  force = false,
+}: {
+  force: boolean;
+}): Promise<void> {
   const path256 = path.join(IMG_DEST, "256");
   const path512 = path.join(IMG_DEST, "512");
   fs.mkdirSync(path256, { recursive: true });
@@ -21,24 +25,23 @@ export async function optimizeImages(): Promise<void> {
     const promises: Promise<any>[] = [];
     const pngOptions: PngOptions = {};
     const webpOptions: WebpOptions = {
-      lossless: true,
       alphaQuality: 100,
       quality: 100,
     };
-    if (!fs.existsSync(namePNG256)) {
+    if (force || !fs.existsSync(namePNG256)) {
       promises.push(
         sharp(fullName).png(pngOptions).resize(256).toFile(namePNG256)
       );
     }
-    if (!fs.existsSync(namePNG512)) {
+    if (force || !fs.existsSync(namePNG512)) {
       promises.push(sharp(fullName).png(pngOptions).toFile(namePNG512));
     }
-    if (!fs.existsSync(nameWebp256)) {
+    if (force || !fs.existsSync(nameWebp256)) {
       promises.push(
         sharp(fullName).webp(webpOptions).resize(256).toFile(nameWebp256)
       );
     }
-    if (!fs.existsSync(nameWebp512)) {
+    if (force || !fs.existsSync(nameWebp512)) {
       promises.push(sharp(fullName).webp(webpOptions).toFile(nameWebp512));
     }
     if (promises.length === 0) {

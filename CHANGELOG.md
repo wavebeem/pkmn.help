@@ -18,6 +18,8 @@
 - Improved usability of the website when using an increased browser default font
   size
 
+- Reduced the brightness of the header background color in light mode
+
 ## 2025-02-22
 
 - Added translations for the "Night" theme in German, French, Italian, Japanese,

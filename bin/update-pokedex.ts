@@ -14,13 +14,13 @@ async function main(flags: string[]) {
 
   if (flags.includes("fast")) {
     await downloadMedia();
-    await optimizeImages();
+    await optimizeImages({ force: false });
     await mergeData();
     return;
   }
 
   if (flags.includes("optimize")) {
-    await optimizeImages();
+    await optimizeImages({ force: true });
     return;
   }
 
@@ -31,7 +31,7 @@ async function main(flags: string[]) {
 
   await scrapePokeapi();
   await downloadMedia();
-  await optimizeImages();
+  await optimizeImages({ force: false });
   await convertAudio();
   await mergeData();
 }
