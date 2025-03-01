@@ -62,16 +62,16 @@
 }
 
 .header {
-  text-shadow: 0 0 8px hsl(0 0% 0% / 50%);
+  text-shadow: 0 0 8px var(--color-header-text-shadow);
   font-size: 1.25rem;
   font-weight: var(--weight-medium);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: var(--padding2);
-  border-bottom: 1px solid var(--color-vibrant-border);
-  color: white;
-  background: var(--color-pokeball);
+  border-bottom: 1px solid var(--color-header-border);
+  color: var(--color-header-text);
+  background: var(--color-header-background);
   padding: var(--padding3);
   margin: 0;
 }

@@ -6,7 +6,10 @@
   --color-fg2: hsl(0 0% 20%);
   --color-fg3: hsl(0 0% 40%);
   --color-fg4: hsl(0 0% 60%);
-  --color-pokeball: hsl(0 90% 45%);
+  --color-header-background: hsl(0 90% 45%);
+  --color-header-text: #fff;
+  --color-header-text-shadow: hsl(0 0% 0% / 50%);
+  --color-header-border: hsl(0 0% 0% / 0.2);
   --color-button1: hsl(0 0% 100%);
   --color-button1b: hsl(0 0% 96%);
   --color-button-hover1: hsl(200 100% 98%);
@@ -95,7 +98,10 @@
   --color-fg2: hsl(0 0% 82%);
   --color-fg3: hsl(0 0% 72%);
   --color-fg4: hsl(0 0% 62%);
-  --color-pokeball: hsl(0 70% 35%);
+  --color-header-background: hsl(0 70% 35%);
+  --color-header-text: #fff;
+  --color-header-text-shadow: hsl(0 0% 0% / 50%);
+  --color-header-border: hsl(0 0% 100% / 0.4);
   --color-button1: hsl(0 0% 25%);
   --color-button1b: hsl(0 0% 21%);
   --color-button-hover1: hsl(0 0% 29%);
@@ -120,7 +126,10 @@
   --color-fg2: hsl(0 0% 72%);
   --color-fg3: hsl(0 0% 62%);
   --color-fg4: hsl(0 0% 52%);
-  --color-pokeball: hsl(0 0% 15%);
+  --color-header-background: hsl(0 0% 15%);
+  --color-header-text: hsl(0 0% 82%);
+  --color-header-text-shadow: hsl(0 0% 0% / 50%);
+  --color-header-border: hsl(0 0% 100% / 0.2);
   --color-button1: hsl(0 0% 14%);
   --color-button1b: hsl(0 0% 10%);
   --color-button-hover1: hsl(0 0% 18%);
@@ -146,7 +155,10 @@
     --color-fg2: hsl(0 0% 82%);
     --color-fg3: hsl(0 0% 72%);
     --color-fg4: hsl(0 0% 62%);
-    --color-pokeball: hsl(0 70% 35%);
+    --color-header-background: hsl(0 70% 35%);
+    --color-header-text: #fff;
+    --color-header-text-shadow: hsl(0 0% 0% / 50%);
+    --color-header-border: hsl(0 0% 100% / 0.4);
     --color-button1: hsl(0 0% 25%);
     --color-button1b: hsl(0 0% 21%);
     --color-button-hover1: hsl(0 0% 29%);

@@ -21,6 +21,7 @@ export async function optimizeImages(): Promise<void> {
     const promises: Promise<any>[] = [];
     const pngOptions: PngOptions = {};
     const webpOptions: WebpOptions = {
+      lossless: true,
       alphaQuality: 100,
       quality: 100,
     };
