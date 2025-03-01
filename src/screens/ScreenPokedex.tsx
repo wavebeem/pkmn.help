@@ -1,23 +1,30 @@
-import { ReactNode, useDeferredValue, useEffect } from "react";
+import { matchSorter } from "match-sorter";
+import { ReactNode, useDeferredValue, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "../components/CopyButton";
 import { Divider } from "../components/Divider";
+import { EmptyState } from "../components/EmptyState";
 import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
+import { Monster } from "../components/Monster";
 import { Padding } from "../components/Padding";
 import { Paginator } from "../components/Paginator";
 import { Search } from "../components/Search";
 import { Spinner } from "../components/Spinner";
 import { useAppContext } from "../hooks/useAppContext";
 import { useSearch } from "../hooks/useSearch";
+import { Type, typesFromUserInput } from "../misc/data-types";
+import { formatMonsterNumber } from "../misc/formatMonsterNumber";
+import { pickTranslation } from "../misc/pickTranslation";
 import styles from "./ScreenPokedex.module.css";
 
 export function ScreenPokedex(): ReactNode {
-  const { isLoading } = useAppContext();
-  const { t } = useTranslation();
+  const { allPokemon, isLoading } = useAppContext();
+  const { t, i18n } = useTranslation();
+  const { language } = i18n;
   const search = useSearch();
   const [query, setQuery] = useSessionStorage("pokedex.query", "");
   const deferredQuery = useDeferredValue(query);
@@ -34,6 +41,48 @@ export function ScreenPokedex(): ReactNode {
     }
     navigate({ search: "" }, { replace: true });
   }, [search]);
+
+  const searchablePkmn = useMemo(() => {
+    return allPokemon.map((p) => {
+      return {
+        ...p,
+        speciesName: pickTranslation(p.speciesNames, language),
+        formName: pickTranslation(p.formNames, language),
+      };
+    });
+  }, [allPokemon, language]);
+
+  const pkmn = useMemo(() => {
+    const s = deferredQuery.trim().toLocaleLowerCase();
+    if (/^[0-9]+$/.test(s)) {
+      const number = Number(s);
+      return searchablePkmn.filter((p) => p.number === number);
+    }
+    // The return value of `t` depends on the current value of `language`, but
+    // the rules of hooks can't realize these. Pretend to use `language` here to
+    // make it happy.
+    language;
+    const types = typesFromUserInput({ types: s, t, strict: true });
+    if (types.length > 0) {
+      return searchablePkmn.filter((p) => {
+        if (types.length === 1) {
+          return p.types[0] === types[0] || p.types[1] === types[0];
+        }
+        if (types.length === 2 && types[1] === Type.none) {
+          return p.types.length === 1 && p.types[0] === types[0];
+        }
+        return (
+          p.types.slice().sort().join(" ") === types.slice().sort().join(" ")
+        );
+      });
+    }
+    if (!s) {
+      return searchablePkmn;
+    }
+    return matchSorter(searchablePkmn, s, {
+      keys: ["speciesName", "formName", "number"],
+    });
+  }, [deferredQuery, searchablePkmn, language, t]);
 
   const permalink = new URL(window.location.href);
   {
@@ -80,9 +129,20 @@ export function ScreenPokedex(): ReactNode {
             currentPage={Number(page)}
             setPage={setPage}
             pageSize={14 * 3}
-            query={deferredQuery}
-            updateQuery={updateSearch}
-            isStale={isStale}
+            emptyState={<EmptyState>{t("pokedex.search.notFound")}</EmptyState>}
+            items={pkmn}
+            renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
+            renderPage={(page) => (
+              <div className={styles.monsterGrid} data-stale={isStale}>
+                {page.map((pokemon) => (
+                  <Monster
+                    key={pokemon.id}
+                    pokemon={pokemon}
+                    setQuery={updateSearch}
+                  />
+                ))}
+              </div>
+            )}
           />
         )}
         <Flex>
