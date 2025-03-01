@@ -8,6 +8,9 @@
     click an extra time to unselect "Normal" if setting up a single typed
     Pokémon
 
+- Improved usability of the website when using an increased browser default font
+  size
+
 ## 2025-02-22
 
 - Added translations for the "Night" theme in German, French, Italian, Japanese,
