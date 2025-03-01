@@ -25,7 +25,7 @@
 
 - Reduced the brightness of the header in light mode and night mode
 
-- Increased the speed of the Pokédex search
+- Increased the speed of the Pokédex search a little
 
 - The Pokédex search now dims the results while a search is happening, so you
   know it's working
@@ -34,6 +34,8 @@
     I'm still trying to come up with a way to make it faster. I've received
     requests to make the page size bigger, and the main reason I haven't done
     much with that is that the search gets really slow...
+
+- Emphasized the stat numbers in the Pokédex instead of the stat labels
 
 ## 2025-02-22
 

@@ -20,6 +20,11 @@ export interface Pokemon {
   hasCry: boolean;
 }
 
+export interface TranslatedPokemon extends Pokemon {
+  speciesName: string;
+  formName: string;
+}
+
 export type Type = ValueOf<typeof Type>;
 export const Type = {
   normal: "normal",

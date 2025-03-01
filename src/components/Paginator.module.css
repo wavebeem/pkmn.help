@@ -1,3 +1,19 @@
 .root {
   scroll-margin-top: 1rem;
 }
+
+.monsterGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  justify-content: flex-start;
+  margin: var(--padding3) 0;
+}
+
+.stale {
+  transition: 200ms opacity;
+}
+
+.stale[data-stale="true"] {
+  opacity: 0.5;
+}
