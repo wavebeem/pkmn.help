@@ -1,5 +1,13 @@
 # Changelog
 
+## 2025-02-28
+
+- Removed the default "Normal" type selected on the defense screens
+
+  - This should make setting up your team less annoying since you won't have to
+    click an extra time to unselect "Normal" if setting up a single typed
+    Pokémon
+
 ## 2025-02-22
 
 - Added translations for the "Night" theme in German, French, Italian, Japanese,

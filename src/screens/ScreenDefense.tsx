@@ -33,9 +33,7 @@ export function ScreenDefense(): ReactNode {
   const [typeCount] = useTypeCount();
   const search = useSearch();
 
-  const [types, setTypes] = useSessionStorage<Type[]>("defense.types", [
-    Type.normal,
-  ]);
+  const [types, setTypes] = useSessionStorage<Type[]>("defense.types", []);
   const [teraType, setTeraType] = useSessionStorage<Type>(
     "defense.teraType",
     Type.none
