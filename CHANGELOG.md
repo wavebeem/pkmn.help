@@ -1,5 +1,13 @@
 # Changelog
 
+## 2025-02-22
+
+- Added translations for the "Night" theme in German, French, Italian, Japanese,
+  Portuguese (Brazil), and Portuguese (Portugal)
+
+- Slightly increased the background brightness in the "Night" theme to avoid
+  OLED blur when scrolling
+
 ## 2025-02-19
 
 - Updated Spanish translation
@@ -48,6 +56,10 @@
 - Added "Flying Press"
 
 - Moved "Special thanks" section to a separate page
+
+## 2025-02-06
+
+- Added Vietnamese translation
 
 ## 2025-01-17
 
