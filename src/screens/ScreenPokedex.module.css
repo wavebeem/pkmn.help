@@ -3,3 +3,10 @@
   color: var(--color-fg3);
   padding: 0 var(--padding2);
 }
+
+.monsterGrid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  margin: var(--padding3) 0;
+}

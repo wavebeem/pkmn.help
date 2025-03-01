@@ -2,6 +2,13 @@
 
 ## 2025-02-28
 
+- The Pokédex now shows up to 3 Pokémon columns depending on screen size
+
+- The Pokédex uses a consistent layout regardless of screen size
+
+- The Pokédex stats bars have a colored background to help guide your eyes
+  towards the stat you're interested in looking at
+
 - Removed the default "Normal" type selected on the defense screens
 
   - This should make setting up your team less annoying since you won't have to

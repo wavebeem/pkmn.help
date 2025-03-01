@@ -99,7 +99,7 @@ export function ScreenPokedex(): ReactNode {
   };
 
   return (
-    <main className="center content-narrow">
+    <main className="center content-wide">
       <Flex direction="column" gap="large" padding="large">
         <Padding size="small" />
         <Flex direction="column" gap="medium">
@@ -126,19 +126,21 @@ export function ScreenPokedex(): ReactNode {
           <Paginator
             currentPage={Number(page)}
             setPage={setPage}
-            pageSize={20}
+            pageSize={50}
             emptyState={<EmptyState>{t("pokedex.search.notFound")}</EmptyState>}
             items={pkmn}
             renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
-            renderPage={(page) =>
-              page.map((pokemon) => (
-                <Monster
-                  key={pokemon.id}
-                  pokemon={pokemon}
-                  setQuery={updateSearch}
-                />
-              ))
-            }
+            renderPage={(page) => (
+              <div className={styles.monsterGrid}>
+                {page.map((pokemon) => (
+                  <Monster
+                    key={pokemon.id}
+                    pokemon={pokemon}
+                    setQuery={updateSearch}
+                  />
+                ))}
+              </div>
+            )}
           />
         )}
         <Flex>

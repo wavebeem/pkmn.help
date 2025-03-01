@@ -4,4 +4,5 @@
   grid-template-columns: max-content max-content 1fr;
   height: min-content;
   font-variant-numeric: tabular-nums;
+  align-items: center;
 }

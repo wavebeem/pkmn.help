@@ -27,6 +27,16 @@ const typeColors = {
   stellar: "#44628d",
 } as const;
 
+export function typeColorAlpha(
+  key: keyof typeof typeColors,
+  alpha: number
+): string {
+  const aa = Math.floor((alpha / 100) * 0xff)
+    .toString(16)
+    .padStart(2, "0");
+  return typeColors[key] + aa;
+}
+
 export function typeColor(key: keyof typeof typeColors): string {
   return typeColors[key];
 }

@@ -5,7 +5,6 @@
   display: flex;
   color: var(--color-fg1);
   background: var(--color-bg1);
-  margin: var(--padding3) 0;
   padding: var(--padding3);
   border-radius: var(--border-radius3);
   border: 1px solid var(--color-border2);
@@ -52,19 +51,4 @@
   justify-content: center;
   flex: auto;
   gap: var(--padding3);
-}
-
-@media (min-width: 40rem) {
-  .monster {
-    grid-template-columns: 16rem minmax(0, 1fr);
-    grid-template-areas:
-      "icon stats"
-      "icon links";
-  }
-
-  .monsterLinks {
-    grid-area: links;
-    justify-content: end;
-    align-items: end;
-  }
 }
