@@ -14,7 +14,12 @@ export function Search({ updateSearch, search }: SearchProps): ReactNode {
   const { t } = useTranslation();
   const iconSize = 30;
   return (
-    <div className={styles.root}>
+    <div
+      className={styles.root}
+      style={customProperties({
+        "--icon-size": `${iconSize}px`,
+      })}
+    >
       <Icon name="search" size={iconSize} className={styles.iconSearch} />
       <input
         aria-label={t("pokedex.search.description")}
@@ -24,9 +29,6 @@ export function Search({ updateSearch, search }: SearchProps): ReactNode {
         inputMode="search"
         autoCapitalize="none"
         className={classNames(styles.search, "focus-simple")}
-        style={customProperties({
-          "--icon-size": `${iconSize}px`,
-        })}
         value={search}
         onChange={(event) => {
           updateSearch(event.target.value);

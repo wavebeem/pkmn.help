@@ -54,9 +54,9 @@
   gap: var(--padding3);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .monster {
-    grid-template-columns: 256px 1fr;
+    grid-template-columns: 16rem minmax(0, 1fr);
     grid-template-areas:
       "icon stats"
       "icon links";

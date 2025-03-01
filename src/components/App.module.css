@@ -76,14 +76,14 @@
   margin: 0;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .header {
     font-size: var(--font-size3);
   }
 }
 
 .headerButton {
-  --size: 1.25em;
+  --size: 30px;
   position: relative;
   padding: 0;
   border: 0;
@@ -143,8 +143,8 @@
 }
 
 .headerButton::after {
-  box-sizing: content-box;
-  --size: 0.25em;
+  box-sizing: border-box;
+  --size: 12px;
   content: "";
   position: absolute;
   top: 50%;
@@ -154,6 +154,7 @@
   width: var(--size);
   height: var(--size);
   border: 3px solid var(--color-border);
+  /* box-shadow: 0 0 0 3px var(--color-border); */
   background: hsl(0 0% 100%);
 }
 
@@ -204,7 +205,7 @@
   justify-content: center;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 40rem) {
   .tabBar {
     display: flex;
   }

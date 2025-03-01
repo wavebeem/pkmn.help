@@ -5,7 +5,7 @@
   gap: var(--padding5);
 }
 
-@media (min-width: 640px) {
+@media (min-width: 50rem) {
   .root {
     grid-template-columns: 1fr 1fr;
   }
