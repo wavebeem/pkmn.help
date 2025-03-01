@@ -1,5 +1,5 @@
 import { matchSorter } from "match-sorter";
-import { ReactNode, useEffect, useMemo } from "react";
+import { ReactNode, useDeferredValue, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
@@ -27,6 +27,8 @@ export function ScreenPokedex(): ReactNode {
   const { language } = i18n;
   const search = useSearch();
   const [query, setQuery] = useSessionStorage("pokedex.query", "");
+  const deferredQuery = useDeferredValue(query);
+  const isStale = query !== deferredQuery;
   const [page, setPage] = useSessionStorage<number>("pokedex.page", 0);
   const navigate = useNavigate();
 
@@ -51,7 +53,7 @@ export function ScreenPokedex(): ReactNode {
   }, [allPokemon, language]);
 
   const pkmn = useMemo(() => {
-    const s = query.trim().toLocaleLowerCase();
+    const s = deferredQuery.trim().toLocaleLowerCase();
     if (/^[0-9]+$/.test(s)) {
       const number = Number(s);
       return searchablePkmn.filter((p) => p.number === number);
@@ -80,7 +82,7 @@ export function ScreenPokedex(): ReactNode {
     return matchSorter(searchablePkmn, s, {
       keys: ["speciesName", "formName", "number"],
     });
-  }, [query, searchablePkmn, language, t]);
+  }, [deferredQuery, searchablePkmn, language, t]);
 
   const permalink = new URL(window.location.href);
   {
@@ -131,7 +133,7 @@ export function ScreenPokedex(): ReactNode {
             items={pkmn}
             renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
             renderPage={(page) => (
-              <div className={styles.monsterGrid}>
+              <div className={styles.monsterGrid} data-stale={isStale}>
                 {page.map((pokemon) => (
                   <Monster
                     key={pokemon.id}
