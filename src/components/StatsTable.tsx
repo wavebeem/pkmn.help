@@ -17,7 +17,7 @@ export function StatsTable({ pokemon }: StatsTableProps): ReactNode {
   const { hp, attack, defense, spAttack, spDefense, speed } = pokemon;
   const total = hp + attack + defense + spAttack + spDefense + speed;
   const { t } = useTranslation();
-  const hasRoomForFullText = useMediaQuery("(min-width: 640px)");
+  const hasRoomForFullText = useMediaQuery("(min-width: 40rem)");
   return (
     <div className={styles.root}>
       <FancyText

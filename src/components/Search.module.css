@@ -18,15 +18,15 @@
 .iconSearch {
   color: var(--color-fg3);
   position: absolute;
-  top: 8px;
-  left: 10px;
+  top: calc(50% - var(--icon-size) / 2 + 2px);
+  left: calc(0.5rem);
 }
 
 .iconClear {
   color: var(--color-fg1);
   position: absolute;
-  top: 6px;
-  right: 6px;
+  top: calc(50% - var(--icon-size) / 2);
+  right: calc(0.5rem - 2px);
 }
 
 .hidden {
