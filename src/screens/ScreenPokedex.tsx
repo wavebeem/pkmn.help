@@ -128,7 +128,7 @@ export function ScreenPokedex(): ReactNode {
           <Paginator
             currentPage={Number(page)}
             setPage={setPage}
-            pageSize={14 * 3}
+            pageSize={8 * 3}
             emptyState={<EmptyState>{t("pokedex.search.notFound")}</EmptyState>}
             items={pkmn}
             renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}

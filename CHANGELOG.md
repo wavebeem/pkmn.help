@@ -4,11 +4,21 @@
 
 - Updated background color when launching the app installed on your phone
 
-- I found a strange bug where updating the app after it's installed on my phone
-  fails to work until you close the app and start it again. I'm getting a plain
-  white page saying the app needs JS to load. Please email me if you're seeing
-  that on your phone too. And I'd like to know which OS version you're running
-  (iOS 18, Android 15, etc.)
+  - Also, I found a strange bug where updating the app after it's installed on
+    my phone fails to work until you close the app and start it again. I'm
+    getting a plain white page saying the app needs JS to load. Please email me
+    if you're seeing that on your phone too. And I'd like to know which OS
+    version you're running (iOS 18, Android 15, etc.)
+
+- Reducecd the page size to make the search run a little bit better (I was
+  overzealous with the recent increase)
+
+  - Personally, I rarely browse the Pokédex, I usually just search. I opted to
+    give an information-dense view in the Pokédex so that searching doesn't
+    require extra clicks to obtain information, but this information-dense view
+    causes performance issues with trying to render a larger amount of data on
+    screen. Contact me if you like to browser the Pokédex, as it would probably
+    be useful for me to know how people are trying to use it.
 
 ## 2025-03-01
 
