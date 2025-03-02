@@ -121,7 +121,6 @@ export function Layout(): ReactNode {
   async function updateApp() {
     setNeedRefresh(false);
     await updateServiceWorker(true);
-    location.reload();
   }
 
   const t = useTranslationsWithBlankFallback();

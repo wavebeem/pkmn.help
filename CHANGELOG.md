@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025-03-02
+
+- Updated background color when launching the app installed on your phone
+
+- I found a strange bug where updating the app after it's installed on my phone
+  fails to work until you close the app and start it again. I'm getting a plain
+  white page saying the app needs JS to load. Please email me if you're seeing
+  that on your phone too. And I'd like to know which OS version you're running
+  (iOS 18, Android 15, etc.)
+
 ## 2025-03-01
 
 - The Pokédex now shows up to 3 Pokémon columns depending on screen size
