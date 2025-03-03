@@ -125,7 +125,8 @@ function isType(str: string): str is Type {
 }
 
 function normalizeTypeString(str: string): string {
-  return removeAccents(str.toLocaleLowerCase());
+  // Vietnamese uses spaces in type names like `Giác Đấu` for `Fighting`
+  return removeAccents(str.toLocaleLowerCase()).replace(/\s+/, "");
 }
 
 export function normalizeTypes(types: Type[]): Type[] {
@@ -153,7 +154,11 @@ export function typesFromUserInput({
   strict?: boolean;
 }): Type[] {
   const map = Object.fromEntries(
-    typesOrNone.map((type) => [type, normalizeTypeString(t(`types.${type}`))])
+    typesOrNone.map((type) => {
+      const translatedType = t(`types.${type}`);
+      const normalizedType = normalizeTypeString(translatedType);
+      return [type, normalizedType];
+    })
   );
   const lookup = strict ? reverseLookup : reverseClosestLookup;
   return types

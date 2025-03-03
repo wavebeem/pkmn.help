@@ -20,6 +20,12 @@
     screen. Contact me if you like to browser the Pokédex, as it would probably
     be useful for me to know how people are trying to use it.
 
+- Fixed an issue where type names with spaces (e.g. `Giác Đấu` for `Fighting` in
+  Vietnamese) couldn't be searched for.
+
+  - Now you can search for `GiácĐấu` or even `giacdau` to find fighting types in
+    Vietnamese.
+
 ## 2025-03-01
 
 - The Pokédex now shows up to 3 Pokémon columns depending on screen size
