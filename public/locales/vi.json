@@ -218,7 +218,8 @@
         "values": {
           "auto": "Hệ thống mặc định",
           "light": "Sáng",
-          "dark": "Tối"
+          "dark": "Tối",
+          "night": "Đêm"
         }
       },
       "typeCount": {

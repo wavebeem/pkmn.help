@@ -26,6 +26,8 @@
   - Now you can search for `GiácĐấu` or even `giacdau` to find fighting types in
     Vietnamese.
 
+- Updated Vietnamese translation
+
 ## 2025-03-01
 
 - The Pokédex now shows up to 3 Pokémon columns depending on screen size

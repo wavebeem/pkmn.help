@@ -139,7 +139,7 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,Hệ thống mặc định
 more.settings.theme.values.light,Light,Sáng
 more.settings.theme.values.dark,Dark,Tối
-more.settings.theme.values.night,Night,
+more.settings.theme.values.night,Night,Đêm
 more.settings.typeCount.label,Number of types,Số lượng hệ
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra.
 more.settings.typeCount.values.2,Two types (2),Hai hệ (2)
