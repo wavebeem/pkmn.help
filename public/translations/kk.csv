@@ -119,11 +119,11 @@ pokedexHelp.searchByNumber.description,"Search by national dex number. If you wa
 pokedexHelp.searchByType.heading,Search by type,Типі арқылы іздеу
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Мында тип арқылы іздеудің бірнеше мысалдары бар.
 pokedexHelp.searchExamples.type.query,fire,отты
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Отты типі екі типінің әлдебірі болатын Покемонды іздеу(мысалға Чармандер, Чаризард, Ротом)."
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Отты типі екі типінің әлдебірі болатын Покемонды іздеу(мысалға Чармандер, Чаризард, Ротом)."
 pokedexHelp.searchExamples.doubleType.query,water flying,сулы ұшқыш
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Типі сулы/ұшқыш (мысалға Гиярадос) немесе ұшқыш/сулы (мысалға Краморант) болатын Покемонды іздеу.
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,Типі сулы/ұшқыш (мысалға Гиярадос) немесе ұшқыш/сулы (мысалға Краморант) болатын Покемонды іздеу.
 pokedexHelp.searchExamples.singleType.query,grass none,шөпті ештеңе
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Тек шөпті типі бар және екінші типі жоқ Покемонды іздеу (мысалға Танжелла, Чикорита, Лилигант)."
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Тек шөпті типі бар және екінші типі жоқ Покемонды іздеу (мысалға Танжелла, Чикорита, Лилигант)."
 pokedexHelp.back,Back to Pokédex,Покедекске қайту
 more.contact.heading,Contact me,Менімен Байланысыңыз
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help)."

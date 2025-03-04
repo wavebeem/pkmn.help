@@ -119,11 +119,11 @@ pokedexHelp.searchByNumber.description,"Search by national dex number. If you wa
 pokedexHelp.searchByType.heading,Search by type,Cauta dupa tip
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Iată câteva exemple despre cum să căutați după tip.
 pokedexHelp.searchExamples.type.query,fire,Foc
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Căutați Pokémon care au foc ca oricare dintre tipurile lor, sub orice formă (de exemplu, Charmander, Charizard, Rotom)."
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Căutați Pokémon care au foc ca oricare dintre tipurile lor, sub orice formă (de exemplu, Charmander, Charizard, Rotom)."
 pokedexHelp.searchExamples.doubleType.query,water flying,apa zburand
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Cauta Pokémoni care sunt apa/zburand ( de exemplu: Gyrados) sau zburand/apa (de exemplu: Cramorant)
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,Cauta Pokémoni care sunt apa/zburand ( de exemplu: Gyrados) sau zburand/apa (de exemplu: Cramorant)
 pokedexHelp.searchExamples.singleType.query,grass none,iarba nimic
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Căutați Pokémon care sunt doar tip iarbă, fără al doilea tip (de exemplu, Tangela, Chikorita, Lilligant)."
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Căutați Pokémon care sunt doar tip iarbă, fără al doilea tip (de exemplu, Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Înapoi la Pokedex
 more.contact.heading,Contact me,Contacteaza-ma
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Bună, sunt <homepage>Sage</homepage> (ei) și am creat Calculator tip Pokémon (pkmn.help)."

@@ -119,11 +119,11 @@ pokedexHelp.searchByNumber.description,"Search by national dex number. If you wa
 pokedexHelp.searchByType.heading,Search by type,Busca por tipo
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Aquí hay algunos ejemplos de cómo buscar por tipo.
 pokedexHelp.searchExamples.type.query,fire,fuego
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Busca Pokémon que tengan fuego como alguno de sus tipos en cualquiera de sus formas (ej. Charmander, Charizard, Rotom)."
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Busca Pokémon que tengan fuego como alguno de sus tipos en cualquiera de sus formas (ej. Charmander, Charizard, Rotom)."
 pokedexHelp.searchExamples.doubleType.query,water flying,agua volador
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Busca Pokémon que son agua/volador (ej. Gyarados) o volador/agua (ej. Cramorant)
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,Busca Pokémon que son agua/volador (ej. Gyarados) o volador/agua (ej. Cramorant)
 pokedexHelp.searchExamples.singleType.query,grass none,planta ninguno
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Busca Pokémon que son únicamente tipo planta, sin tipo secundario (ej. Tangela, Chikorita)."
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Busca Pokémon que son únicamente tipo planta, sin tipo secundario (ej. Tangela, Chikorita)."
 pokedexHelp.back,Back to Pokédex,Volver a la Pokédex
 more.contact.heading,Contact me,Contáctame
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hola, soy <homepage>Sage</homepage> (elle/elles) e hice la Calculadora de tipos de Pokémon (pkmn.help)."

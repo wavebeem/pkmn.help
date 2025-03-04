@@ -119,11 +119,11 @@ pokedexHelp.searchByNumber.description,"Search by national dex number. If you wa
 pokedexHelp.searchByType.heading,Search by type,タイプで検索
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,タイプで検索する方法についてのいくつかの例
 pokedexHelp.searchExamples.type.query,fire,ほのお
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).",どのすがたであっても「ほのお」を含むポケモンを検索する（例：ヒトカゲ、リザードン、ロトム）。
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).",どのすがたであっても「ほのお」を含むポケモンを検索する（例：ヒトカゲ、リザードン、ロトム）。
 pokedexHelp.searchExamples.doubleType.query,water flying,みず　ひこう
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,みず／ひこう（例：ギャラドス）またはひこう/みず（例：ウッウ）に一致するポケモンを検索する。
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,みず／ひこう（例：ギャラドス）またはひこう/みず（例：ウッウ）に一致するポケモンを検索する。
 pokedexHelp.searchExamples.singleType.query,grass none,くさ　なし
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",くさタイプだけをもち、2つ目のタイプを持たないポケモンを検索する。(例モンジャラ、チコリータ)
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",くさタイプだけをもち、2つ目のタイプを持たないポケモンを検索する。(例モンジャラ、チコリータ)
 pokedexHelp.back,Back to Pokédex,ポケモンずかんにもどる
 more.contact.heading,Contact me,運営者に連絡
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",こんにちは、私は<homepage>セージ</homepage>です。ポケモン・タイプ・けいさんきを作りました。

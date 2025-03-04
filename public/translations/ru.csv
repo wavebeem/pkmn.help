@@ -119,11 +119,11 @@ pokedexHelp.searchByNumber.description,"Search by national dex number. If you wa
 pokedexHelp.searchByType.heading,Search by type,Искать по типу
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Вот некоторые примеры по поиску по типу.
 pokedexHelp.searchExamples.type.query,fire,огненный
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Поиск Покемонов с огненным типом как один из их типов в любой форме (например, Чармандер, Чаризард, Ротом)."
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Поиск Покемонов с огненным типом как один из их типов в любой форме (например, Чармандер, Чаризард, Ротом)."
 pokedexHelp.searchExamples.doubleType.query,water flying,Водяной Летающий
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,"Поиск Покемонов, у которых тип Водяной Летающий (например, Гиярадос) или Летающий Водяной (например, Краморант)."
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,"Поиск Покемонов, у которых тип Водяной Летающий (например, Гиярадос) или Летающий Водяной (например, Краморант)."
 pokedexHelp.searchExamples.singleType.query,grass none,Травяной ничего
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Поиск Покемонов только с травяным типом (например, Танджелла, Чикорита, Лилигант)."
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Поиск Покемонов только с травяным типом (например, Танджелла, Чикорита, Лилигант)."
 pokedexHelp.back,Back to Pokédex,Назад к Покедексу
 more.contact.heading,Contact me,Свяжитесь Со Мной
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Привет, Я <homepage>Sage</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (pkmn.help)."

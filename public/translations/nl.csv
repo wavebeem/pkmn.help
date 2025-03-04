@@ -119,11 +119,11 @@ pokedexHelp.searchByNumber.description,"Search by national dex number. If you wa
 pokedexHelp.searchByType.heading,Search by type,Zoeken op type
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Hier zijn een paar voorbeelden van hoe je zoekt op type.
 pokedexHelp.searchExamples.type.query,fire,vuur
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Zoekt op Pokémon die vuur als ten minste één van de types hebben in ten minste één van zijn vorm (bijv. Charmander, Charizard of Rotom)."
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Zoekt op Pokémon die vuur als ten minste één van de types hebben in ten minste één van zijn vorm (bijv. Charmander, Charizard of Rotom)."
 pokedexHelp.searchExamples.doubleType.query,water flying,water vliegend
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Zoekt op Pokémon die òf water/vliegend (zoals Gyarados) of vliegend/water (zoals Cramorant) zijn.
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,Zoekt op Pokémon die òf water/vliegend (zoals Gyarados) of vliegend/water (zoals Cramorant) zijn.
 pokedexHelp.searchExamples.singleType.query,grass none,gras geen
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Zoekt op Pokémon die alleen gras type zijn, geen 2e type (bijv. Tangela, Chikorita, Lilligant)."
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Zoekt op Pokémon die alleen gras type zijn, geen 2e type (bijv. Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Terug naar Pokédex
 more.contact.heading,Contact me,Neem contact met mij op
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hoi, ik ben <homepage>Sage</homepage> (die/hen), en ik heb de Pokémon Type Rekenmachine gemaakt (pkmn.help)."

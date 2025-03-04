@@ -1,5 +1,12 @@
 # Changelog
 
+## 2025-03-03
+
+- Updated English grammar and capitalization in the Pokédex search help page
+
+- Updated Vietnamese translation with guidance about how to search for
+  Vietnamese type names (spaces must be removed)
+
 ## 2025-03-02
 
 - Updated background color when launching the app installed on your phone

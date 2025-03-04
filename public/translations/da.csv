@@ -119,11 +119,11 @@ pokedexHelp.searchByNumber.description,"Search by national dex number. If you wa
 pokedexHelp.searchByType.heading,Search by type,Søg via type
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Her er et par eksempler på hvordan man søger via typer
 pokedexHelp.searchExamples.type.query,fire,Ild
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Søg efter Pokémons der har ild type i en hvilken som helst form(Fx Charmander, Charizard eller Rotom)"
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Søg efter Pokémons der har ild type i en hvilken som helst form(Fx Charmander, Charizard eller Rotom)"
 pokedexHelp.searchExamples.doubleType.query,water flying,Vand Flyvende
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Søg efter Pokémon som enten har vand/flyvende (fx Gyarados) eller flyvende/vand (fx Cramorant)
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,Søg efter Pokémon som enten har vand/flyvende (fx Gyarados) eller flyvende/vand (fx Cramorant)
 pokedexHelp.searchExamples.singleType.query,grass none,Gras ingen
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Søg efter Pokémon der kun er gras typer, ingen anden type (Fx Tangela, Chikorita, Lilligant)"
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Søg efter Pokémon der kun er gras typer, ingen anden type (Fx Tangela, Chikorita, Lilligant)"
 pokedexHelp.back,Back to Pokédex,Gå tilbage til Pokédexet
 more.contact.heading,Contact me,Kontakt mig
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hej, jeg <homepage>Sage</homepage> (they/them) og jeg lavede Pokémon type lommeregner/calculator (pkmn.help)"

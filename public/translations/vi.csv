@@ -118,12 +118,12 @@ pokedexHelp.searchByNumber.heading,Search by number,Tìm kiếm bằng số Pok�
 pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Tìm kiếm bằng số Pokédex. Ví dụ: Nếu bạn muốn tìm Bulbasaur, đánh '1', thay vì '#001'."
 pokedexHelp.searchByType.heading,Search by type,Tìm kiếm bằng hệ
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Đây là một vài ví dụ cách để tìm Pokémon bằng tên hệ.
-pokedexHelp.searchExamples.type.query,fire,lửa
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Tìm kiếm các Pokémon hệ Lửa trong tất cả forms (hình dạng) (ví dụ: Charmander, Charizard, Rotom)."
+pokedexHelp.searchExamples.type.query,fire,giacdau
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Tìm kiếm các Pokémon hệ Giác Đấu trong tất cả forms (hình dạng) (ví dụ: Machamp, Lucario, Blaziken). LƯU Ý: Đánh ""giacdau"" liền kề không cách."
 pokedexHelp.searchExamples.doubleType.query,water flying,nước bay
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,Tìm kiếm các Pokémon thuộc song hệ Nước/Bay (ví dụ: Gyarados) hay Bay/Nước (ví dụ: Cramorant).
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,Tìm kiếm các Pokémon thuộc song hệ Nước/Bay (ví dụ: Gyarados) hay Bay/Nước (ví dụ: Cramorant).
 pokedexHelp.searchExamples.singleType.query,grass none,cỏ trống
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Tìm kiếm các Pokémon chỉ thuộc hệ Cỏ và không hệ thứ hai nào khác (ví dụ: Tangela, Chikorita, Lilligant)."
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Tìm kiếm các Pokémon chỉ thuộc hệ Cỏ và không hệ thứ hai nào khác (ví dụ: Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Quay lại trang Pokédex
 more.contact.heading,Contact me,Liên hệ với tôi
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Xin chào, tôi là <homepage>Sage</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này (pkmn.help)."

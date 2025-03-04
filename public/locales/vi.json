@@ -183,8 +183,8 @@
     },
     "searchExamples": {
       "type": {
-        "query": "lửa",
-        "description": "Tìm kiếm các Pokémon hệ Lửa trong tất cả forms (hình dạng) (ví dụ: Charmander, Charizard, Rotom)."
+        "query": "giacdau",
+        "description": "Tìm kiếm các Pokémon hệ Giác Đấu trong tất cả forms (hình dạng) (ví dụ: Machamp, Lucario, Blaziken). LƯU Ý: Đánh \"giacdau\" liền kề không cách."
       },
       "doubleType": {
         "query": "nước bay",

@@ -119,11 +119,11 @@ pokedexHelp.searchByNumber.description,"Search by national dex number. If you wa
 pokedexHelp.searchByType.heading,Search by type,按類型搜索
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,這裡有幾個示例，說明如何按類型搜索。
 pokedexHelp.searchExamples.type.query,fire,火
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have a fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).",搜索具有火屬性的寶可夢的任何形式（例如，小火龍，噴火龍，洛托姆）。
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).",搜索具有火屬性的寶可夢的任何形式（例如，小火龍，噴火龍，洛托姆）。
 pokedexHelp.searchExamples.doubleType.query,water flying,水 飛行
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either water/flying (e.g. Gyarados) or flying/water (e.g. Cramorant).,搜索水/飛行屬性的寶可夢（例如，暴鯉龍）或飛行/水屬性的寶可夢（例如，飛蟲鳥）。
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,搜索水/飛行屬性的寶可夢（例如，暴鯉龍）或飛行/水屬性的寶可夢（例如，飛蟲鳥）。
 pokedexHelp.searchExamples.singleType.query,grass none,草 無
-pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",搜索僅具有草屬性的寶可夢，沒有第二屬性（例如，蔓藤怪，菊草葉，裙兒小姐）。
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",搜索僅具有草屬性的寶可夢，沒有第二屬性（例如，蔓藤怪，菊草葉，裙兒小姐）。
 pokedexHelp.back,Back to Pokédex,返回寶可夢圖鑑
 more.contact.heading,Contact me,聯繫我
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",你好，我是 <homepage>Sage</homepage>（他們），我製作了 神奇寶貝屬性計算器 (pkmn.help）。
