@@ -1,3 +1,9 @@
+/* Support rendering content inside the "chin" on Android Chrome. This draws the
+ * gesture bar over the top of the viewport, rather than creating a smaller
+ * viewport that sits above the chin.
+ *
+ * https://developer.chrome.com/docs/css-ui/edge-to-edge
+ */
 body {
-  padding-bottom: env(safe-area-max-inset-bottom, 36px);
+  padding-bottom: env(safe-area-max-inset-bottom, 0px);
 }
