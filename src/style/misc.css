@@ -132,8 +132,11 @@ input {
 .fg-link {
   color: var(--color-link);
 }
-.fg-link:hover {
-  color: var(--color-link-hover);
+
+@media (hover) {
+  .fg-link:hover {
+    color: var(--color-link-hover);
+  }
 }
 
 .tabular-nums {
@@ -152,8 +155,10 @@ input {
   color: var(--color-link);
 }
 
-.fallback-content :any-link:hover {
-  color: var(--color-link-hover);
+@media (hover) {
+  .fallback-content :any-link:hover {
+    color: var(--color-link-hover);
+  }
 }
 
 .fallback-content :any-link:focus-visible {
@@ -185,13 +190,15 @@ input {
   background: var(--background-button-bg);
 }
 
-.button-bg:hover {
-  background: var(--background-button-bg-hover);
-  background: linear-gradient(
-    to bottom,
-    var(--color-button-hover1) 20%,
-    var(--color-button-hover1b)
-  );
+@media (hover) {
+  .button-bg:hover {
+    background: var(--background-button-bg-hover);
+    background: linear-gradient(
+      to bottom,
+      var(--color-button-hover1) 20%,
+      var(--color-button-hover1b)
+    );
+  }
 }
 
 .content-wide {

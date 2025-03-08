@@ -3,8 +3,10 @@
   color: var(--color-link);
 }
 
-.link:hover {
-  color: var(--color-link-hover);
+@media (hover) {
+  .link:hover {
+    color: var(--color-link-hover);
+  }
 }
 
 .noUnderline {

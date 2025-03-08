@@ -26,12 +26,14 @@
   width: 100%;
 }
 
-.item:hover {
-  background: linear-gradient(
-    to top,
-    var(--color-button1),
-    var(--color-button1b)
-  );
+@media (hover) {
+  .item:hover {
+    background: linear-gradient(
+      to top,
+      var(--color-button1),
+      var(--color-button1b)
+    );
+  }
 }
 
 .itemDivider {

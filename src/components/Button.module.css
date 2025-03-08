@@ -15,8 +15,10 @@
   box-shadow: var(--shadow-button);
 }
 
-.root:where(:not(:disabled)):hover {
-  background: var(--background-button-bg-hover);
+@media (hover) {
+  .root:where(:not(:disabled)):hover {
+    background: var(--background-button-bg-hover);
+  }
 }
 
 .root:disabled {

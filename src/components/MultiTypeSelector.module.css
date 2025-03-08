@@ -26,8 +26,10 @@
   box-shadow: var(--shadow-button);
 }
 
-.label:where(:not(:has(.checkbox:checked))):hover {
-  background: var(--background-button-bg-hover);
+@media (hover) {
+  .label:where(:not(:has(.checkbox:checked))):hover {
+    background: var(--background-button-bg-hover);
+  }
 }
 
 .label[data-type="stellar"]:has(.checkbox:checked) {

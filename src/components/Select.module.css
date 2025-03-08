@@ -19,8 +19,10 @@
   box-shadow: var(--shadow-button);
 }
 
-.select select:hover {
-  background: var(--background-button-bg-hover);
+@media (hover) {
+  .select select:hover {
+    background: var(--background-button-bg-hover);
+  }
 }
 
 .select:after {

@@ -158,9 +158,11 @@
   background: hsl(0 0% 100%);
 }
 
-.headerButton:hover {
-  cursor: pointer;
-  filter: brightness(1.05);
+@media (hover) {
+  .headerButton:hover {
+    cursor: pointer;
+    filter: brightness(1.05);
+  }
 }
 
 .headerButton:active {
