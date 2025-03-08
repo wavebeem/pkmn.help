@@ -1,5 +1,13 @@
 # Changelog
 
+## 2025-03-08
+
+- Added support for the upcoming "chin" change for Android Chrome, allowing the
+  system "gesture bar" to draw inside of the web page
+
+  - Functionally, this removes the little white/black background section under
+    the gesture bar, causing the web page to look more like a native app
+
 ## 2025-03-03
 
 - Updated English grammar and capitalization in the Pokédex search help page
