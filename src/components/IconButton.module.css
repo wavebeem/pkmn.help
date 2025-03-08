@@ -16,13 +16,15 @@
   filter: var(--filter-darken);
 }
 
-.root:hover {
-  background: var(--color-button-hover1)
-    linear-gradient(
-      to bottom,
-      var(--color-button-hover1) 20%,
-      var(--color-button-hover1b)
-    );
+@media (hover) {
+  .root:hover {
+    background: var(--color-button-hover1)
+      linear-gradient(
+        to bottom,
+        var(--color-button-hover1) 20%,
+        var(--color-button-hover1b)
+      );
+  }
 }
 
 .root[aria-pressed="true"] {
