@@ -1,15 +1,19 @@
+import classNames from "classnames";
+import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
+import { characters } from "../misc/characters";
 import { Generation } from "../misc/data-generations";
-import { defensiveMatchups, offensiveMatchups } from "../misc/data-matchups";
+import {
+  defensiveMatchups,
+  GroupedMatchups,
+  offensiveMatchups,
+} from "../misc/data-matchups";
 import { AbilityName, SpecialMove, Type } from "../misc/data-types";
 import { Badge } from "./Badge";
-import styles from "./Matchups.module.css";
-import { PlainBadge } from "./PlainBadge";
-import classNames from "classnames";
-import { characters } from "../misc/characters";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
-import { ReactNode } from "react";
+import styles from "./Matchups.module.css";
+import { PlainBadge } from "./PlainBadge";
 
 interface MatchupsProps {
   kind: "offense" | "defense";
@@ -31,26 +35,28 @@ export function Matchups({
   offenseAbilities,
 }: MatchupsProps): ReactNode {
   const { t, i18n } = useTranslation();
-  const matchups =
-    kind === "offense"
-      ? offensiveMatchups({
-          gen: generation,
-          offenseTypes: types,
-          specialMoves,
-          offenseAbilities,
-        })
-      : defensiveMatchups({
-          gen: generation,
-          defenseTypes: types,
-          defenseTeraType: teraType,
-          abilityName: ability,
-        });
-  if (types.includes(Type.stellar)) {
-    matchups.matchups.unshift({
-      type: Type.stellar,
-      generation,
-      effectiveness: 2,
-      formName: "stellar",
+  let matchups: GroupedMatchups;
+  if (kind === "offense") {
+    matchups = offensiveMatchups({
+      gen: generation,
+      offenseTypes: types,
+      specialMoves,
+      offenseAbilities,
+    });
+    if (types.includes(Type.stellar)) {
+      matchups.matchups.unshift({
+        type: Type.stellar,
+        generation,
+        effectiveness: 2,
+        formName: "stellar",
+      });
+    }
+  } else {
+    matchups = defensiveMatchups({
+      gen: generation,
+      defenseTypes: types,
+      defenseTeraType: teraType,
+      abilityName: ability,
     });
   }
   const grouped = matchups.groupByEffectiveness();

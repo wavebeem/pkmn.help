@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-03-11
+
+- Fixed a bug where Stellar would appear repeatedly in the Defense matchups
+
 ## 2025-03-08
 
 - Added support for the upcoming "chin" change for Android Chrome, allowing the
