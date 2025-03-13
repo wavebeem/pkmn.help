@@ -67,6 +67,7 @@
 - Fabio "N™" Ilari
 - Banshee
 - Mathieu Licata
+- Stivenz
 
 ## Korean translation
 
