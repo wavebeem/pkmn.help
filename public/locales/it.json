@@ -9,7 +9,11 @@
   "offense": {
     "chooseTypes": "Scegli i tipi",
     "dealsXTo": "Infligge {{ x }} a",
+    "abilities": {
+      "choose": "Scegli abilità"
+    },
     "specialMoves": {
+      "choose": "Scegli mossa speciale",
       "names": {
         "freeze-dry": "Liofilizzazione",
         "thousand_arrows": "Mille Frecce",
@@ -71,6 +75,7 @@
     "back": "Torna all'offensiva"
   },
   "defense": {
+    "chooseTypes": "Scegli i tipi",
     "takesXFrom": "Subisce {{ x }} da",
     "chooseAbility": "Scegli un'abilità",
     "chooseTeraType": "Scegli il tipo di tera",
@@ -117,8 +122,7 @@
       "type": "Tipo",
       "edit": "Modifica",
       "remove": "Rimuovi"
-    },
-    "chooseTypes": "Scegli i tipi"
+    }
   },
   "pokedex": {
     "search": {
@@ -247,7 +251,8 @@
       "description": "Ho passato innumerevoli ore a migliorare questo sito. Se apprezzate quello che ho fatto, considerate gentilmente di fare una donazione ad enti di beneficenza che supportano BIPOC ed i diritti delle persone transgender."
     },
     "thanks": {
-      "heading": "Ringraziamenti speciali"
+      "heading": "Ringraziamenti speciali",
+      "description": "Guarda chi ha aiutato nella creazione del sito nei <credits>crediti</credits>."
     },
     "openSource": {
       "heading": "Sorgente aperta",

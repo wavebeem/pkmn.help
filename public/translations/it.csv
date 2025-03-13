@@ -6,8 +6,8 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Altro
 offense.chooseTypes,Choose types,Scegli i tipi
 offense.dealsXTo,Deals {{ x }} to,Infligge {{ x }} a
-offense.abilities.choose,Choose abilities,
-offense.specialMoves.choose,Choose special moves,
+offense.abilities.choose,Choose abilities,Scegli abilità
+offense.specialMoves.choose,Choose special moves,Scegli mossa speciale
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Liofilizzazione
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,Mille Frecce
 offense.specialMoves.names.flying_press,Flying Press,Schiacciatuffo
@@ -154,7 +154,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,Mostra il tuo apprezzamento
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Ho passato innumerevoli ore a migliorare questo sito. Se apprezzate quello che ho fatto, considerate gentilmente di fare una donazione ad enti di beneficenza che supportano BIPOC ed i diritti delle persone transgender."
 more.thanks.heading,Special thanks,Ringraziamenti speciali
-more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,Guarda chi ha aiutato nella creazione del sito nei <credits>crediti</credits>.
 more.openSource.heading,Open source,Sorgente aperta
 more.openSource.description,Source code is available on <github>GitHub</github>.,Il codice sorgente è disponibile su <github>GitHub</github>.
 more.legalInfo.heading,Legal info,Informazioni legali

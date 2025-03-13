@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-03-13
+
+- Updated Italian translations
+
 ## 2025-03-11
 
 - Fixed a bug where Stellar would appear repeatedly in the Defense matchups
