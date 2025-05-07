@@ -64,6 +64,7 @@ export const supportedLanguages = [
   "ru",
   "no",
   "nl",
+  "tr",
   "kk",
   "ro",
   "ja",

@@ -1,0 +1,207 @@
+{
+  "navigation": {
+    "offense": "Ofans",
+    "defense": "Defans",
+    "pokedex": "Pokédex",
+    "more": "Daha fazla"
+  },
+  "offense": {
+    "chooseTypes": "Tip seçin",
+    "dealsXTo": "{{ x }} Hasar verir",
+    "abilities": {
+      "choose": "Yetenek seçin"
+    },
+    "coverage": {
+      "edit": "Listeyi düzenle",
+      "weakness": "Zayıf",
+      "normal": "Normal",
+      "resistance": "Dayanıklı"
+    }
+  },
+  "coverage": {
+    "csvHeaders": {
+      "number": "Numara",
+      "name": "İsim",
+      "type1": "Tip 1",
+      "type2": "Tip 2",
+      "type3": "Tip 3"
+    },
+    "export": {
+      "button": "Dışa aktar"
+    },
+    "import": {
+      "button": "İçe aktar"
+    },
+    "reset": {
+      "button": "Sıfırla"
+    },
+    "back": "Ofansa geri"
+  },
+  "defense": {
+    "chooseTypes": "Tipleri seçin",
+    "chooseAbility": "Özellik seçin",
+    "abilityNames": {
+      "none": "Yok"
+    },
+    "mode": {
+      "heading": "Mod seçin",
+      "solo": "Tek",
+      "team": "Takımlı"
+    },
+    "team": {
+      "tableHeading": "Karşılaşma sayıları",
+      "displayType": "Masa formatı",
+      "weak": "Zayıf",
+      "resist": "Dayanıklı",
+      "simple": "Basit",
+      "complex": "Karmaşık",
+      "type": "Tip",
+      "edit": "Düzenle",
+      "remove": "Kaldır"
+    }
+  },
+  "pokedex": {
+    "search": {
+      "help": "Yardım"
+    },
+    "offense": {
+      "text": "Ofans"
+    },
+    "defense": {
+      "text": "Defans"
+    },
+    "cry": {
+      "text": "Ses"
+    },
+    "shiny": {
+      "text": "Parlak"
+    },
+    "pagination": {
+      "next": "Sonraki",
+      "nextLong": "Sonraki",
+      "previous": "Önck",
+      "previousLong": "Önceki",
+      "firstLong": "İlk",
+      "lastLong": "Sonraki"
+    },
+    "stats": {
+      "hp": "CP",
+      "hpLong": "Can Puanları",
+      "attack": "Atak",
+      "attackLong": "Atak",
+      "defense": "Defans",
+      "defenseLong": "Defans",
+      "specialAttack": "Özl. Atk.",
+      "specialAttackLong": "Özel Atak",
+      "specialDefense": "Özl. Def.",
+      "specialDefenseLong": "Özel Defans",
+      "speed": "Hız",
+      "speedLong": "Hız",
+      "total": "Toplam",
+      "totalLong": "Toplam"
+    }
+  },
+  "pokedexHelp": {
+    "searchByName": {
+      "heading": "İsim olarak ara"
+    },
+    "searchByType": {
+      "heading": "Tip ile ara"
+    },
+    "searchExamples": {
+      "type": {
+        "query": "ateş"
+      },
+      "doubleType": {
+        "query": "su uçuş"
+      },
+      "singleType": {
+        "query": "Çimen \"yok\""
+      }
+    }
+  },
+  "more": {
+    "settings": {
+      "heading": "Ayarlar",
+      "language": {
+        "label": "Dil"
+      },
+      "theme": {
+        "label": "Tema",
+        "values": {
+          "auto": "Sistem varsayılanı",
+          "light": "Işık",
+          "dark": "Karanlık",
+          "night": "Gece"
+        }
+      },
+      "typeCount": {
+        "label": "Tiplerin sayısı",
+        "values": {
+          "2": "2 Tip (2)",
+          "3": "3 tip (3)"
+        }
+      }
+    },
+    "changes": {
+      "heading": "Yeni şeyler"
+    },
+    "help": {
+      "heading": "Yardım",
+      "serviceWorker": {
+        "button": "Sıfırla"
+      }
+    },
+    "privacy": {
+      "heading": "Gizlilik"
+    },
+    "thanks": {
+      "heading": "Özel Teşekkürler"
+    },
+    "openSource": {
+      "heading": "Açık kaynaklı"
+    },
+    "legalInfo": {
+      "heading": "Legal bilgi"
+    }
+  },
+  "types": {
+    "normal": "Normal",
+    "fighting": "Dövüş",
+    "flying": "Uçuş",
+    "poison": "Zehir",
+    "ground": "Zemin",
+    "rock": "Kaya",
+    "bug": "Böcek",
+    "ghost": "Hayalet",
+    "steel": "Demir",
+    "fire": "Alev",
+    "water": "Su",
+    "grass": "Çimen",
+    "electric": "Elektrik",
+    "psychic": "Pisişik",
+    "ice": "Buz",
+    "dragon": "Ejderha",
+    "dark": "Karanlık",
+    "fairy": "Peri",
+    "stellar": "Stellar",
+    "none": "Yok"
+  },
+  "banners": {
+    "updateReady": {
+      "whatsNew": "Yeni şeyler",
+      "update": "Güncelleme"
+    }
+  },
+  "general": {
+    "loading": "Yükleniyor...",
+    "copyLink": "Linki kopyala"
+  },
+  "games": {
+    "byID": {
+      "gen1": "Jenerasyon 1",
+      "gen2": "Jenerasyon 2-5",
+      "default": "Jenerasyon 6+"
+    }
+  }
+}

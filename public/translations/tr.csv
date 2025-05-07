@@ -1,0 +1,190 @@
+Key,en,tr
+title,Pokémon Type Calculator,
+navigation.offense,Offense,Ofans
+navigation.defense,Defense,Defans
+navigation.pokedex,Pokédex,Pokédex
+navigation.more,More,Daha fazla
+offense.chooseTypes,Choose types,Tip seçin
+offense.dealsXTo,Deals {{ x }} to,{{ x }} Hasar verir
+offense.abilities.choose,Choose abilities,Yetenek seçin
+offense.specialMoves.choose,Choose special moves,
+offense.specialMoves.names.freeze-dry,Freeze-Dry,
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,
+offense.specialMoves.names.flying_press,Flying Press,
+offense.coverage.heading,Pokédex coverage,
+offense.coverage.edit,Edit list,Listeyi düzenle
+offense.coverage.weakness,Weak,Zayıf
+offense.coverage.normal,Normal,Normal
+offense.coverage.resistance,Resist,Dayanıklı
+offense.teraPokemon,Tera Pokémon,
+offense.coverageList.empty,No Pokémon found or no types selected,
+offense.coverageList.weakness.heading,Weakness coverage list,
+offense.coverageList.normal.heading,Normal effectiveness coverage list,
+offense.coverageList.resistance.heading,Resistance coverage list,
+coverage.heading,Pokédex coverage,
+coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",
+coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",
+coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.",
+coverage.csvHeaders.number,Number,Numara
+coverage.csvHeaders.name,Name,İsim
+coverage.csvHeaders.type1,Type 1,Tip 1
+coverage.csvHeaders.type2,Type 2,Tip 2
+coverage.csvHeaders.type3,Type 3,Tip 3
+coverage.export.button,Export,Dışa aktar
+coverage.export.description,Export the default Pokédex to a CSV file,
+coverage.import.button,Import,İçe aktar
+coverage.import.description,Import an edited Pokédex CSV file,
+coverage.reset.button,Reset,Sıfırla
+coverage.reset.description,Reset to the default Pokédex,
+coverage.filename,pkmn.help type coverage.csv,
+coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,
+coverage.status.exported,Exported default Pokémon forms,
+coverage.status.reset,Loaded default Pokémon forms,
+coverage.status.errored,Error loading CSV. Don't change header names.,
+coverage.back,Back to offense,Ofansa geri
+defense.chooseTypes,Choose types,Tipleri seçin
+defense.takesXFrom,Takes {{ x }} from,
+defense.chooseAbility,Choose ability,Özellik seçin
+defense.chooseTeraType,Choose tera type,
+defense.abilityNames.none,None,Yok
+defense.abilityNames.tinted_lens,Tinted Lens,
+defense.abilityNames.scrappy,Scrappy,
+defense.abilityNames.tera_shell,Tera Shell,
+defense.abilityNames.filter,Filter,
+defense.abilityNames.wonder_guard,Wonder Guard,
+defense.abilityNames.delta_stream,Delta Stream,
+defense.abilityNames.fluffy,Fluffy,
+defense.abilityNames.purifying_salt,Purifying Salt,
+defense.abilityNames.heatproof,Heatproof,
+defense.abilityNames.water_bubble,Water Bubble,
+defense.abilityNames.thick_fat,Thick Fat,
+defense.abilityNames.earth_eater,Earth Eater,
+defense.abilityNames.levitate,Levitate,
+defense.abilityNames.flash_fire,Flash Fire,
+defense.abilityNames.well_baked_body,Well-Baked Body,
+defense.abilityNames.dry_skin,Dry Skin,
+defense.abilityNames.storm_drain,Storm Drain,
+defense.abilityNames.water_absorb,Water Absorb,
+defense.abilityNames.sap_sipper,Sap Sipper,
+defense.abilityNames.lightning_rod,Lightning Rod,
+defense.abilityNames.motor_drive,Motor Drive,
+defense.abilityNames.volt_absorb,Volt Absorb,
+defense.mode.heading,Choose mode,Mod seçin
+defense.mode.solo,Solo,Tek
+defense.mode.team,Team,Takımlı
+defense.team.tableHeading,Matchup counts,Karşılaşma sayıları
+defense.team.heading,Edit Pokémon team,
+defense.team.add,Add Pokémon,
+defense.team.empty,No Pokémon selected,
+defense.team.displayType,Table format,Masa formatı
+defense.team.weak,Weak,Zayıf
+defense.team.resist,Resist,Dayanıklı
+defense.team.simple,Simple,Basit
+defense.team.complex,Complex,Karmaşık
+defense.team.type,Type,Tip
+defense.team.edit,Edit,Düzenle
+defense.team.remove,Remove,Kaldır
+pokedex.search.description,"Search by name, number, or types",
+pokedex.search.help,Help,Yardım
+pokedex.search.helpLong,"Help, search Pokédex",
+pokedex.search.notFound,No Pokémon found,
+pokedex.offense.text,Offense,Ofans
+pokedex.defense.text,Defense,Defans
+pokedex.cry.text,Cry,Ses
+pokedex.shiny.text,Shiny,Parlak
+pokedex.pagination.next,Next,Sonraki
+pokedex.pagination.nextLong,Next,Sonraki
+pokedex.pagination.previous,Prev,Önck
+pokedex.pagination.previousLong,Previous,Önceki
+pokedex.pagination.firstLong,First,İlk
+pokedex.pagination.lastLong,Last,Sonraki
+pokedex.stats.hp,HP,CP
+pokedex.stats.hpLong,Hit Points,Can Puanları
+pokedex.stats.attack,Attack,Atak
+pokedex.stats.attackLong,Attack,Atak
+pokedex.stats.defense,Defense,Defans
+pokedex.stats.defenseLong,Defense,Defans
+pokedex.stats.specialAttack,Sp. Atk.,Özl. Atk.
+pokedex.stats.specialAttackLong,Special Attack,Özel Atak
+pokedex.stats.specialDefense,Sp. Def.,Özl. Def.
+pokedex.stats.specialDefenseLong,Special Defense,Özel Defans
+pokedex.stats.speed,Speed,Hız
+pokedex.stats.speedLong,Speed,Hız
+pokedex.stats.total,Total,Toplam
+pokedex.stats.totalLong,Total,Toplam
+pokedexHelp.searchByName.heading,Search by name,İsim olarak ara
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",
+pokedexHelp.searchByNumber.heading,Search by number,
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.",
+pokedexHelp.searchByType.heading,Search by type,Tip ile ara
+pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,
+pokedexHelp.searchExamples.type.query,fire,ateş
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).",
+pokedexHelp.searchExamples.doubleType.query,water flying,su uçuş
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,
+pokedexHelp.searchExamples.singleType.query,grass none,"Çimen ""yok"""
+pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",
+pokedexHelp.back,Back to Pokédex,
+more.contact.heading,Contact me,
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",
+more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,
+more.settings.heading,Settings,Ayarlar
+more.settings.language.label,Language,Dil
+more.settings.language.default,Auto detect language,
+more.settings.language.official,Official languages,
+more.settings.language.unofficial,Unofficial languages,
+more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",
+more.settings.theme.label,Theme,Tema
+more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,
+more.settings.theme.values.auto,System default,Sistem varsayılanı
+more.settings.theme.values.light,Light,Işık
+more.settings.theme.values.dark,Dark,Karanlık
+more.settings.theme.values.night,Night,Gece
+more.settings.typeCount.label,Number of types,Tiplerin sayısı
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,
+more.settings.typeCount.values.2,Two types (2),2 Tip (2)
+more.settings.typeCount.values.3,Three types (3),3 tip (3)
+more.changes.heading,What’s new,Yeni şeyler
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,
+more.help.heading,Help,Yardım
+more.help.serviceWorker.description,This button can help fix issues in the app.,
+more.help.serviceWorker.button,Reset,Sıfırla
+more.privacy.heading,Privacy,Gizlilik
+more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.",
+more.givingBack.heading,Showing appreciation,
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",
+more.thanks.heading,Special thanks,Özel Teşekkürler
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
+more.openSource.heading,Open source,Açık kaynaklı
+more.openSource.description,Source code is available on <github>GitHub</github>.,
+more.legalInfo.heading,Legal info,Legal bilgi
+types.normal,Normal,Normal
+types.fighting,Fighting,Dövüş
+types.flying,Flying,Uçuş
+types.poison,Poison,Zehir
+types.ground,Ground,Zemin
+types.rock,Rock,Kaya
+types.bug,Bug,Böcek
+types.ghost,Ghost,Hayalet
+types.steel,Steel,Demir
+types.fire,Fire,Alev
+types.water,Water,Su
+types.grass,Grass,Çimen
+types.electric,Electric,Elektrik
+types.psychic,Psychic,Pisişik
+types.ice,Ice,Buz
+types.dragon,Dragon,Ejderha
+types.dark,Dark,Karanlık
+types.fairy,Fairy,Peri
+types.stellar,Stellar,Stellar
+types.none,None,Yok
+banners.updateReady.description,An update is available,
+banners.updateReady.whatsNew,What’s new,Yeni şeyler
+banners.updateReady.update,Update,Güncelleme
+general.loading,Loading…,Yükleniyor...
+general.copyLink,Copy link,Linki kopyala
+games.label,Game generation,
+games.help,Use type effectiveness from different game generations.,
+games.byID.gen1,Generation 1,Jenerasyon 1
+games.byID.gen2,Generation 2–5,Jenerasyon 2-5
+games.byID.default,Generation 6+,Jenerasyon 6+
