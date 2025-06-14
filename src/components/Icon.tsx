@@ -100,6 +100,39 @@ function IconMusic(props: SVGProps<SVGSVGElement>): ReactNode {
     </svg>
   );
 }
+
+// https://icons.getbootstrap.com/icons/dash-circle/
+function IconOpen(props: SVGProps<SVGSVGElement>): ReactNode {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      viewBox="0 0 16 16"
+      {...props}
+    >
+      <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+    </svg>
+  );
+}
+
+// https://icons.getbootstrap.com/icons/dash-circle/
+function IconClosed(props: SVGProps<SVGSVGElement>): ReactNode {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      viewBox="0 0 16 16"
+      {...props}
+    >
+      <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+    </svg>
+  );
+}
+
 export function IconSearch(props: SVGProps<SVGSVGElement>): ReactNode {
   return (
     <svg
@@ -133,6 +166,8 @@ function IconSparkles(props: SVGProps<SVGSVGElement>): ReactNode {
 }
 
 const icons = {
+  open: IconOpen,
+  closed: IconClosed,
   clear: IconClear,
   music: IconMusic,
   search: IconSearch,
@@ -164,6 +199,7 @@ export function Icon({
       height={size}
       className={className}
       onClick={onClick}
+      data-icon-name={name}
     />
   );
 }

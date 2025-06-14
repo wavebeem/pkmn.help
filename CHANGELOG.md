@@ -27,6 +27,8 @@
 
 - Added Pokémon animation when playing the Pokémon cry
 
+- Collapsible sections in the "More" screen look nicer
+
 ## 2025-03-13
 
 - Updated Italian translations
