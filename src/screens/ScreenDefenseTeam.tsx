@@ -351,18 +351,20 @@ export function ScreenDefenseTeam(): ReactNode {
 
       <Flex direction="column" gap="xlarge">
         <Flex>
-          <Select
-            onChange={(event) => {
-              setFormat(event.target.value as any);
-            }}
-            value={format}
-            label={t("defense.team.displayType")}
-          >
-            <option value="simple">{t("defense.team.simple")}</option>
-            <option value="complex">{t("defense.team.complex")}</option>
-            <option value="weak">{t("defense.team.weak")}</option>
-            <option value="resist">{t("defense.team.resist")}</option>
-          </Select>
+          <div>
+            <Select
+              onChange={(event) => {
+                setFormat(event.target.value as any);
+              }}
+              value={format}
+              label={t("defense.team.displayType")}
+            >
+              <option value="simple">{t("defense.team.simple")}</option>
+              <option value="complex">{t("defense.team.complex")}</option>
+              <option value="weak">{t("defense.team.weak")}</option>
+              <option value="resist">{t("defense.team.resist")}</option>
+            </Select>
+          </div>
         </Flex>
         <Flex direction="column" gap="medium">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">

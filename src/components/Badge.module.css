@@ -1,5 +1,5 @@
 .badgeContainer {
-  padding: 3px;
+  padding: 0;
   border-radius: var(--border-radius1);
   text-align: center;
   box-shadow: inset 0 0 0 1px var(--color-vibrant-border);
@@ -13,11 +13,25 @@
 }
 
 .badgeLabel {
-  padding: 0.125rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   border-radius: var(--border-radius1);
   letter-spacing: 0.05em;
+  max-width: max-content;
+  margin-inline: auto;
+
+  background: linear-gradient(
+    to right,
+    hsl(0 0% 10% / 0%),
+    hsl(0 0% 10% / 10%),
+    hsl(0 0% 10% / 0%)
+  );
 }
 
 :where(.badgeContainer[data-type="stellar"]) .badgeLabel {
-  background: hsl(0 0% 10% / 40%);
+  background: linear-gradient(
+    to right,
+    hsl(0 0% 10% / 0%),
+    hsl(0 0% 10% / 40%),
+    hsl(0 0% 10% / 0%)
+  );
 }

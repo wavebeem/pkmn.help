@@ -1,5 +1,5 @@
 import classNames from "classnames";
-import { ReactNode, useEffect } from "react";
+import { Fragment, ReactNode, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
@@ -114,7 +114,7 @@ export function ScreenDefense(): ReactNode {
         </Flex>
 
         <Flex direction="column" gap="large">
-          <Flex flex="auto">
+          <Flex flex="auto" wrap gap="medium">
             <Select
               label={t("defense.chooseAbility")}
               value={ability}
@@ -132,9 +132,6 @@ export function ScreenDefense(): ReactNode {
                 );
               })}
             </Select>
-          </Flex>
-
-          <Flex flex="auto">
             <Select
               label={t("defense.chooseTeraType")}
               value={teraType}
@@ -144,11 +141,12 @@ export function ScreenDefense(): ReactNode {
             >
               <option value="">{t("types.none")}</option>
               <hr />
-              {allTypes.map((name) => {
+              {allTypes.flatMap((name) => {
                 return (
-                  <option key={name} value={name}>
-                    {t(`types.${name}`)}
-                  </option>
+                  <Fragment key={name}>
+                    <option value={name}>{t(`types.${name}`)}</option>
+                    {name === "steel" ? <hr /> : null}
+                  </Fragment>
                 );
               })}
             </Select>

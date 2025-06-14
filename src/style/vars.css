@@ -18,7 +18,7 @@
   --color-button1: hsl(0 0% 100%);
   --color-button1b: hsl(0 0% 96%);
   --color-button-hover1: hsl(200 100% 98%);
-  --color-button-hover1b: hsl(200 100% 96%);
+  --color-button-hover1b: hsl(200 100% 94%);
   --color-badge: hsl(120 70% 30%);
   --color-link: hsl(240 100% 50%);
   --color-link-hover: hsl(240 60% 60%);
@@ -33,16 +33,16 @@
   --weight-normal: 400;
   --weight-medium: 500;
 
-  --background-button-bg: linear-gradient(
-      to bottom,
-      var(--color-button1) 20%,
-      var(--color-button1b)
+  --background-button-bg: radial-gradient(
+      120% 120% at top,
+      var(--color-button1) 0 calc(50% - 0.5px),
+      var(--color-button1b) calc(50% + 0.5px)
     )
     var(--color-button1);
-  --background-button-bg-hover: linear-gradient(
-      to bottom,
-      var(--color-button-hover1) 20%,
-      var(--color-button-hover1b)
+  --background-button-bg-hover: radial-gradient(
+      120% 120% at top,
+      var(--color-button-hover1) 0 calc(50% - 0.5px),
+      var(--color-button-hover1b) calc(50% + 0.5px)
     )
     var(--color-button-hover1);
 
@@ -55,8 +55,8 @@
 
   --border-radius0: 0;
   --border-radius1: 0.125rem;
-  --border-radius2: 0.25rem;
-  --border-radius3: 0.5rem;
+  --border-radius2: 0.5rem;
+  --border-radius3: 1rem;
   --border-radius-pill: 9999px;
 
   --shadow-button: 0 2px 4px rgb(0 0 0 / 10%);
@@ -113,8 +113,8 @@
   --color-header-border: hsl(0 0% 100% / 0.4);
   --color-button1: hsl(0 0% 28%);
   --color-button1b: hsl(0 0% 24%);
-  --color-button-hover1: hsl(0 0% 29%);
-  --color-button-hover1b: hsl(0 0% 25%);
+  --color-button-hover1: hsl(0 0% 32%);
+  --color-button-hover1b: hsl(0 0% 26%);
   --color-badge: hsl(120 60% 60%);
   --color-link: hsl(180 80% 70%);
   --color-link-hover: hsl(180 80% 95%);
@@ -146,7 +146,7 @@
   --color-header-border: hsl(0 0% 100% / 0.2);
   --color-button1: hsl(0 0% 14%);
   --color-button1b: hsl(0 0% 10%);
-  --color-button-hover1: hsl(0 0% 18%);
+  --color-button-hover1: hsl(0 0% 20%);
   --color-button-hover1b: hsl(0 0% 14%);
   --color-badge: hsl(120 60% 60%);
   --color-link: hsl(180 80% 70%);

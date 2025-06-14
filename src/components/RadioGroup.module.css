@@ -10,28 +10,40 @@
   flex-direction: column;
   align-items: flex-start;
   border: 1px solid var(--color-border1);
-  padding: var(--padding2) var(--padding2);
+  padding: var(--padding1);
   border-radius: var(--border-radius3);
   overflow: hidden;
   box-shadow: var(--shadow-button);
-  background-color: var(--color-bg1);
+  background: linear-gradient(var(--color-button1b), var(--color-button1))
+      content-box,
+    linear-gradient(var(--color-button1) 0 100%) border-box var(--color-button1);
 }
 
 .item {
   display: flex;
   padding: calc(1px + var(--padding2)) var(--padding2);
-  border-radius: var(--border-radius2);
   gap: var(--padding3);
   align-items: center;
   width: 100%;
 }
 
+.item:first-child {
+  border-radius: calc(var(--border-radius3) - var(--padding1));
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.item:last-child {
+  border-radius: calc(var(--border-radius3) - var(--padding1));
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
 @media (hover) {
   .item:hover {
     background: linear-gradient(
-      to top left,
-      var(--color-button1),
-      var(--color-button1b)
+      var(--color-button-hover1),
+      var(--color-button-hover1b)
     );
   }
 }

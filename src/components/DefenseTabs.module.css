@@ -1,6 +1,6 @@
 .tab {
   text-decoration: none;
-  padding: var(--padding2) var(--padding3);
+  padding: var(--padding1) var(--padding3);
   border: 1px solid var(--color-border1);
   border-radius: var(--border-radius-pill);
   background: var(--color-bg1);

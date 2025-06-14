@@ -9,7 +9,7 @@
   padding-inline: var(--padding2) var(--padding3);
   display: block;
   border: 1px solid;
-  border-radius: var(--border-radius1);
+  border-radius: var(--border-radius2);
 }
 
 .label:where(:has(.checkbox:active)) {
