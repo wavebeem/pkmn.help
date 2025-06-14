@@ -13,7 +13,7 @@ export function Badge({ type }: BadgeProps): ReactNode {
   const { t } = useTranslation();
   return (
     <div
-      className={styles.badgeContainer}
+      className={styles.badge}
       data-type={type}
       style={customProperties({
         "--type-color": typeColor(type),
@@ -21,7 +21,8 @@ export function Badge({ type }: BadgeProps): ReactNode {
         "--type-color-border": typeColorBorder(type),
       })}
     >
-      <div className={styles.badgeLabel}>{t(`types.${type}`)}</div>
+      <div className={styles.swatch} />
+      <div className={styles.label}>{t(`types.${type}`)}</div>
     </div>
   );
 }

@@ -1,36 +1,30 @@
-.badgeContainer {
-  padding: 0;
-  border-radius: 0;
+.badge {
+  padding: 1px;
+  border-radius: 2px;
   /* border-radius: var(--border-radius1); */
   text-align: center;
   box-shadow: inset 0 0 0 1px var(--color-vibrant-border);
-  background: var(--type-color);
+  background: var(--type-color-bg);
   color: white;
   text-shadow: var(--type-text-shadow);
+  display: flex;
+  align-items: center;
 }
 
-.badgeContainer[data-type="stellar"] {
-  background: var(--stellar-background-linear);
+.swatch {
+  width: 2rem;
+  height: 2rem;
+  background: var(--type-color);
+  border-right: 1px solid #fff2;
+  box-shadow: 1px 0 0 0 #0002;
 }
 
-.badgeLabel {
-  margin: 1px;
-  margin-left: calc(2rem + 1px);
-  /* margin: 3px;
-  margin-left: calc(2rem + 3px); */
-  padding: 0.25rem 0.5rem;
+.badge[data-type="stellar"] > .swatch {
+  background: var(--stellar-background-conic);
+}
+
+.label {
+  padding-inline: 0.5rem;
   text-align: left;
-  border-radius: 0;
-  /* border-radius: 2px; */
-  /* border-top-left-radius: 0;
-  border-bottom-left-radius: 0; */
   letter-spacing: 0.05em;
-  /* max-width: max-content; */
-  /* margin-inline: auto; */
-
-  background: var(--type-color-bg);
-}
-
-:where(.badgeContainer[data-type="stellar"]) .badgeLabel {
-  background: hsl(0 0% 10% / 40%);
 }

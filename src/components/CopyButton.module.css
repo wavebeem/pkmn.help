@@ -3,15 +3,17 @@
   border-radius: var(--border-radius2);
   border: 1px solid;
   color: var(--color-fg1);
-  background: var(--color-bg1);
+  background: var(--background-button-bg);
+  box-shadow: var(--shadow-button);
   border-color: var(--color-border1);
 }
 
-.CopyButton:active {
-  border-color: var(--color-border3);
+.CopyButton:hover {
+  background: var(--background-button-bg-hover);
 }
 
 .CopyButton[data-state="copied"] {
+  box-shadow: none;
   background: var(--color-bg2);
   border-color: var(--color-border3);
   color: var(--color-border3);
