@@ -4,11 +4,13 @@
   position: relative;
   display: flex;
   color: var(--color-fg1);
-  background: var(--color-bg1);
+  background: radial-gradient(
+    100% 50% at top,
+    var(--color-bg1),
+    var(--color-bg2)
+  );
   padding: var(--padding3);
   border-radius: var(--border-radius3);
-  border: 1px solid var(--color-border2);
-  box-shadow: var(--shadow-button);
 }
 
 .buttonContainer {

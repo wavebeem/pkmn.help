@@ -6,7 +6,7 @@
   grid-template-columns: minmax(0, 1fr);
 }
 
-@media (min-width: 64rem) {
+@media (width >= 64rem) {
   .root {
     grid-template-columns: 4fr 6fr;
   }

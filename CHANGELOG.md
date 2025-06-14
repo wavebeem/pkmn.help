@@ -1,5 +1,37 @@
 # Changelog
 
+## 2025-06-14
+
+- Fixed a bug where all special moves were shown on the coverage lists page
+  regardless of which moves were selected
+
+- Added a decorative gradient to the header to make it look nicer
+
+- Added a shine to buttons
+
+- Increased contrast between background and other content
+
+- Increased the brightness of type badges especially in light mode to make the
+  colors easier to see
+
+- Made the Pokédex styling more subtle and easier to scan as you scroll
+
+- "Choose ability" and "Choose Tera type" now share the same line when there's
+  room
+
+- "Choose tera type" now includes a divider between Steel and Fire to make it
+  easier to navigate
+
+- Improved easter egg visuals, especially in light mode
+
+- Added a separator between Steel and Fire in the tera type select
+
+- Fixed Pokémon animations when returning from Shiny to Regular form
+
+- Added Pokémon animation when playing the Pokémon cry
+
+- Collapsible sections in the "More" screen look nicer
+
 ## 2025-03-13
 
 - Updated Italian translations

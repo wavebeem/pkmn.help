@@ -26,6 +26,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
   const language = useComputedLanguage();
   const [shiny, setShiny] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [animationState, setAnimationState] = useState<0 | 1 | 2>(0);
   const displayNumber = formatMonsterNumber(pokemon.number);
   const params = new URLSearchParams({
     types: pokemon.types.join(" "),
@@ -36,6 +37,9 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
   const formName = pokemon.formNames[language] || pokemon.formNames.en;
   const idPrefix = `pokemon-${pokemon.id}`;
   const monsterParams = new URLSearchParams({ q: String(pokemon.number) });
+  function animate() {
+    setAnimationState(animationState === 1 ? 2 : 1);
+  }
   return (
     <div className={styles.root}>
       <Flex direction="column">
@@ -75,6 +79,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             autoPlay={false}
             onPlay={() => {
               setIsPlaying(true);
+              animate();
             }}
             onEnded={() => {
               setIsPlaying(false);
@@ -113,6 +118,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
               aria-pressed={shiny}
               onClick={() => {
                 setShiny(!shiny);
+                animate();
               }}
             >
               <Icon name="sparkles" />
@@ -124,7 +130,11 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
         <div className={styles.monsterIcon}>
           <Flex direction="column">
             <Flex paddingY="large" justify="center">
-              <MonsterImage pokemonID={pokemon.id} shiny={shiny} />
+              <MonsterImage
+                pokemonID={pokemon.id}
+                shiny={shiny}
+                animationState={animationState}
+              />
             </Flex>
             <Flex wrap gap="small" justify="center" align="flex-start">
               {pokemon.types.map((t, i) => (

@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import styles from "./CollapsibleSection.module.css";
 import classNames from "classnames";
+import { Icon } from "./Icon";
 
 interface CollapsibleSectionProps {
   initiallyOpen?: boolean;
@@ -19,6 +20,8 @@ export function CollapsibleSection({
         className={classNames(styles.summary, "active-darken", "no-select")}
       >
         {heading}
+        <Icon className={styles.icon} size={32} name="open" />
+        <Icon className={styles.icon} size={32} name="closed" />
       </summary>
       {children}
     </details>

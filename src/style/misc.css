@@ -239,7 +239,7 @@ input {
   padding-left: var(--padding3);
 }
 
-@media (min-width: 40rem) {
+@media (width >= 40rem) {
   .grid-col2 {
     grid-template-columns: 1fr 1fr;
   }

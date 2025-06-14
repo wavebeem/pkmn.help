@@ -11,7 +11,7 @@ export function useComputedStyleProperty<Key extends keyof CSSStyleDeclaration>(
       if (element) {
         setValue(getComputedStyle(element)[property]);
       }
-    }, 0);
+    }, 1);
   });
 
   return value;

@@ -31,8 +31,8 @@ export function PageSelector<T>({
 }: PageSelectorProps<T>): ReactNode {
   const { t } = useTranslation();
 
-  const hasRoomForMediumButtons = useMediaQuery("(min-width: 26rem)");
-  const hasRoomForLargeButtons = useMediaQuery("(min-width: 40rem");
+  const hasRoomForMediumButtons = useMediaQuery("(width >= 26rem)");
+  const hasRoomForLargeButtons = useMediaQuery("(width >= 40rem");
 
   const buttonSize = hasRoomForLargeButtons
     ? "large"

@@ -11,6 +11,7 @@ interface MonsterImageProps {
   onLoad?: ({ pokemonID }: { pokemonID: string }) => void;
   scale?: number;
   shiny?: boolean;
+  animationState?: 0 | 1 | 2;
 }
 
 export function MonsterImage({
@@ -18,6 +19,7 @@ export function MonsterImage({
   onLoad,
   scale = 0.5,
   shiny = false,
+  animationState = 0,
 }: MonsterImageProps): ReactNode {
   const size = 512 * scale;
   const [state, setState] = useState<State>("loading");
@@ -53,6 +55,7 @@ export function MonsterImage({
           role="presentation"
           alt=""
           data-shiny={shiny && state === "loaded"}
+          data-animation-state={animationState}
           className={styles.image}
           width={size}
           height={size}

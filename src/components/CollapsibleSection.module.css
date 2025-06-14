@@ -1,7 +1,24 @@
+.icon {
+  border-radius: 9999px;
+  background: var(--color-border3);
+}
+
 .summary {
   padding: var(--padding3) 0;
   user-select: none;
   cursor: pointer;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.details:not([open]) > .summary > [data-icon-name="open"] {
+  display: none;
+}
+
+.details[open] > .summary > [data-icon-name="closed"] {
+  display: none;
 }
 
 .summary::marker {

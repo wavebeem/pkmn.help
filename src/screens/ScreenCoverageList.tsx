@@ -14,7 +14,6 @@ import { partitionMatchups } from "../misc/data-matchups";
 import {
   AbilityName,
   SpecialMove,
-  specialMoves,
   splitTokens,
   typesFromString,
 } from "../misc/data-types";
@@ -77,9 +76,9 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
           </Flex>
         )}
 
-        {specialMoves.length > 0 && (
+        {moves.length > 0 && (
           <Flex wrap gap="medium">
-            {specialMoves.map((move) => (
+            {moves.map((move) => (
               <PlainBadge key={move}>
                 {t(`offense.specialMoves.names.${move}`)}
               </PlainBadge>

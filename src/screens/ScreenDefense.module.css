@@ -5,8 +5,14 @@
   gap: var(--padding5);
 }
 
-@media (min-width: 50rem) {
+@media (width >= 50rem) {
   .root {
     grid-template-columns: 1fr 1fr;
   }
+}
+
+.selectGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
+  gap: var(--padding2);
 }
