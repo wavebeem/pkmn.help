@@ -14,7 +14,6 @@ import { partitionMatchups } from "../misc/data-matchups";
 import {
   AbilityName,
   SpecialMove,
-  specialMoves,
   splitTokens,
   typesFromString,
 } from "../misc/data-types";
