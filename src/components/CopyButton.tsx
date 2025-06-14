@@ -18,7 +18,7 @@ export function CopyButton({ text, children }: CopyButtonProps): ReactNode {
       type="button"
       data-state={state}
       aria-disabled={disabled}
-      className={classNames("active-darken", "focus-tab", styles.CopyButton)}
+      className={classNames("focus-tab", styles.CopyButton)}
       onClick={async (event) => {
         try {
           event.preventDefault();
