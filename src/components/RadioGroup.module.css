@@ -20,7 +20,7 @@
 .item {
   display: flex;
   padding: calc(1px + var(--padding2)) var(--padding2);
-  border-radius: var(--border-radius3);
+  border-radius: var(--border-radius2);
   gap: var(--padding3);
   align-items: center;
   width: 100%;
@@ -29,7 +29,7 @@
 @media (hover) {
   .item:hover {
     background: linear-gradient(
-      to top,
+      to top left,
       var(--color-button1),
       var(--color-button1b)
     );

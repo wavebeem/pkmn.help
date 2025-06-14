@@ -2,7 +2,7 @@
   display: flex;
   min-height: 1.5rem;
   height: 100%;
-  background: var(--meter-color-bg);
+  background: linear-gradient(to left, var(--meter-color-bg), transparent);
   border-radius: 2px;
   max-width: 255px;
 }

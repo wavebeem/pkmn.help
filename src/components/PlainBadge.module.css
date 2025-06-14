@@ -1,16 +1,18 @@
 .root {
-  border-radius: var(--border-radius2);
+  border-radius: var(--border-radius1);
   border: 1px solid var(--color-border2);
-  background: var(--color-bg2);
+  background: var(--color-bg1);
   text-align: center;
   grid-column: 1 / -1;
   padding: 2px;
 }
 
 .content {
-  background: var(--color-bg1);
+  /* background: var(--color-bg1); */
   border-radius: var(--border-radius1);
   padding: 3px 8px;
-  border: 1px solid var(--color-border3);
-  flex: auto;
+  /* border: 1px solid var(--color-border3); */
+  /* flex: auto; */
+
+  letter-spacing: 0.05em;
 }

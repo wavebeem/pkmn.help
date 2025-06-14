@@ -1,5 +1,14 @@
 # Changelog
 
+## ????-??-??
+
+- Increased contrast between background and other content
+
+- Increased the brightness of type badges especially in light mode to make the
+  colors easier to see
+
+- Made the Pokédex styling more subtle and easier to scan as you scroll
+
 ## 2025-03-13
 
 - Updated Italian translations

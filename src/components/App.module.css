@@ -217,7 +217,7 @@
   text-decoration: none;
   padding: var(--padding1) var(--padding3);
   text-align: center;
-  border: 1px solid var(--color-border1);
+  border: 1px solid var(--color-border3);
   border-radius: var(--border-radius-pill);
   background: var(--color-bg1);
   color: var(--color-fg1);
