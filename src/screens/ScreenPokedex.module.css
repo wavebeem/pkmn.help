@@ -12,6 +12,12 @@
   transition: 200ms opacity;
 }
 
+@media (max-width: 40rem) {
+  .monsterGrid {
+    margin-inline: calc(-1 * var(--padding3));
+  }
+}
+
 .monsterGrid[data-stale="true"] {
   opacity: 0.5;
 }
