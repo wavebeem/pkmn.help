@@ -28,13 +28,30 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .image[data-shiny="true"] {
-    animation: 250ms bounce;
+  .image {
+    animation-duration: 250ms;
     transform-origin: bottom center;
+  }
+
+  .image[data-animation-state="1"] {
+    animation-name: bounce1;
+  }
+
+  .image[data-animation-state="2"] {
+    animation-name: bounce2;
   }
 }
 
-@keyframes bounce {
+@keyframes bounce1 {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05 0.95;
+  }
+}
+
+@keyframes bounce2 {
   0% {
     scale: 1;
   }

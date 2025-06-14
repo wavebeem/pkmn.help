@@ -23,6 +23,10 @@
 
 - Added a separator between Steel and Fire in the tera type select
 
+- Fixed Pokémon animations when returning from Shiny to Regular form
+
+- Added Pokémon animation when playing the Pokémon cry
+
 ## 2025-03-13
 
 - Updated Italian translations
