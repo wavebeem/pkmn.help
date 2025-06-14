@@ -15,8 +15,8 @@
   width: 2rem;
   height: 2rem;
   background: var(--type-color);
-  border-right: 1px solid #fff2;
-  box-shadow: 1px 0 0 0 #0002;
+  border-right: 1px solid #fff3;
+  box-shadow: 1px 0 0 0 #0001;
 }
 
 .badge[data-type="stellar"] > .swatch {

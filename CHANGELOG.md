@@ -1,6 +1,9 @@
 # Changelog
 
-## ????-??-??
+## 2025-06-14
+
+- Fixed a bug where all special moves were shown on the coverage lists page
+  regardless of which moves were selected
 
 - Added a decorative gradient to the header to make it look nicer
 
