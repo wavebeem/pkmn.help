@@ -87,7 +87,7 @@
   margin: 0;
 }
 
-@media (min-width: 40rem) {
+@media (width >= 40rem) {
   .header {
     font-size: var(--font-size3);
   }
@@ -218,7 +218,7 @@
   justify-content: center;
 }
 
-@media (min-width: 40rem) {
+@media (width >= 40rem) {
   .tabBar {
     display: flex;
   }

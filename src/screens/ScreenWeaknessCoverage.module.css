@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-@media (min-width: 40rem) {
+@media (width >= 40rem) {
   .buttonGrid {
     grid-template-columns: 1fr 4fr;
   }

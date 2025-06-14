@@ -12,7 +12,7 @@
   transition: 200ms opacity;
 }
 
-@media (max-width: 40rem) {
+@media (width <= 40rem) {
   .monsterGrid {
     margin-inline: calc(-1 * var(--padding3));
   }
