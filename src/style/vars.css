@@ -106,10 +106,10 @@
   --color-fg3: hsl(0 0% 72%);
   --color-fg4: hsl(0 0% 62%);
   --color-header-base: hsl(0 60% 35%);
-  --color-header-highlight: hsl(0 60% 50%);
+  --color-header-highlight: hsl(0 70% 55%);
   --color-header-text: #fff;
   --color-header-text-shadow: hsl(0 0% 0% / 50%);
-  --color-header-border: hsl(0 0% 100% / 50%);
+  --color-header-border: hsl(0 0% 100% / 30%);
   --color-button1: hsl(0 0% 28%);
   --color-button1b: hsl(0 0% 24%);
   --color-button-hover1: hsl(0 0% 32%);
@@ -139,7 +139,7 @@
   --color-header-highlight: hsl(0 0% 20%);
   --color-header-text: hsl(0 0% 82%);
   --color-header-text-shadow: hsl(0 0% 0% / 50%);
-  --color-header-border: hsl(0 0% 100% / 20%);
+  --color-header-border: hsl(0 0% 100% / 10%);
   --color-button1: hsl(0 0% 14%);
   --color-button1b: hsl(0 0% 10%);
   --color-button-hover1: hsl(0 0% 20%);
@@ -166,10 +166,10 @@
     --color-fg3: hsl(0 0% 72%);
     --color-fg4: hsl(0 0% 62%);
     --color-header-base: hsl(0 60% 35%);
-    --color-header-highlight: hsl(0 60% 50%);
+    --color-header-highlight: hsl(0 70% 55%);
     --color-header-text: #fff;
     --color-header-text-shadow: hsl(0 0% 0% / 50%);
-    --color-header-border: hsl(0 0% 100% / 40%);
+    --color-header-border: hsl(0 0% 100% / 30%);
     --color-button1: hsl(0 0% 28%);
     --color-button1b: hsl(0 0% 24%);
     --color-button-hover1: hsl(0 0% 29%);

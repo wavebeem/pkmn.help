@@ -10,3 +10,9 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.selectGroup {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
+  gap: var(--padding2);
+}

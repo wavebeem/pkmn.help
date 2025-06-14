@@ -114,7 +114,7 @@ export function ScreenDefense(): ReactNode {
         </Flex>
 
         <Flex direction="column" gap="large">
-          <Flex flex="auto" wrap gap="medium">
+          <div className={styles.selectGroup}>
             <Select
               label={t("defense.chooseAbility")}
               value={ability}
@@ -150,7 +150,7 @@ export function ScreenDefense(): ReactNode {
                 );
               })}
             </Select>
-          </Flex>
+          </div>
         </Flex>
 
         <Flex>
