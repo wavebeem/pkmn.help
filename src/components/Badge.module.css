@@ -1,6 +1,7 @@
 .badgeContainer {
   padding: 0;
-  border-radius: var(--border-radius1);
+  border-radius: 0;
+  /* border-radius: var(--border-radius1); */
   text-align: center;
   box-shadow: inset 0 0 0 1px var(--color-vibrant-border);
   background: var(--type-color);
@@ -13,25 +14,23 @@
 }
 
 .badgeLabel {
+  margin: 1px;
+  margin-left: calc(2rem + 1px);
+  /* margin: 3px;
+  margin-left: calc(2rem + 3px); */
   padding: 0.25rem 0.5rem;
-  border-radius: var(--border-radius1);
+  text-align: left;
+  border-radius: 0;
+  /* border-radius: 2px; */
+  /* border-top-left-radius: 0;
+  border-bottom-left-radius: 0; */
   letter-spacing: 0.05em;
-  max-width: max-content;
-  margin-inline: auto;
+  /* max-width: max-content; */
+  /* margin-inline: auto; */
 
-  background: linear-gradient(
-    to right,
-    hsl(0 0% 10% / 0%),
-    hsl(0 0% 10% / 10%),
-    hsl(0 0% 10% / 0%)
-  );
+  background: var(--type-color-bg);
 }
 
 :where(.badgeContainer[data-type="stellar"]) .badgeLabel {
-  background: linear-gradient(
-    to right,
-    hsl(0 0% 10% / 0%),
-    hsl(0 0% 10% / 40%),
-    hsl(0 0% 10% / 0%)
-  );
+  background: hsl(0 0% 10% / 40%);
 }
