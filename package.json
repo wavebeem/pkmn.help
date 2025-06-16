@@ -73,7 +73,7 @@
     "colord": "^2.9.2",
     "fastest-levenshtein": "^1.0.12",
     "i18next": "^23.10.1",
-    "i18next-http-backend": "^2.5.0",
+    "i18next-http-backend": "^3.0.2",
     "match-sorter": "^6.3.4",
     "papaparse": "^5.4.1",
     "react": "^18.2.0",
