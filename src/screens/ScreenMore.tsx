@@ -279,11 +279,11 @@ export function ScreenMore(): ReactNode {
                       compare(languageBounty[b], languageBounty[a]) ||
                       compare(
                         officialLanguagesSet.has(a) ? 0 : 1,
-                        officialLanguagesSet.has(b) ? 0 : 1
+                        officialLanguagesSet.has(b) ? 0 : 1,
                       ) ||
                       compare(
                         languageCompletions[a] || 0,
-                        languageCompletions[b] || 0
+                        languageCompletions[b] || 0,
                       ) ||
                       compare(a, b)
                     );

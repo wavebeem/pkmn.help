@@ -36,11 +36,11 @@ export function ScreenDefense(): ReactNode {
   const [types, setTypes] = useSessionStorage<Type[]>("defense.types", []);
   const [teraType, setTeraType] = useSessionStorage<Type>(
     "defense.teraType",
-    Type.none
+    Type.none,
   );
   const [ability, setAbility] = useSessionStorage<AbilityName>(
     "defense.ability",
-    "none"
+    "none",
   );
 
   useEffect(() => {
@@ -52,8 +52,8 @@ export function ScreenDefense(): ReactNode {
       setTypes(
         typesFromString(search.get("types") || "normal").slice(
           0,
-          Number(typeCount)
-        )
+          Number(typeCount),
+        ),
       );
     }
     if (search.has("tera_type")) {
@@ -174,7 +174,7 @@ export function ScreenDefense(): ReactNode {
 }
 
 function strongKeys<TObject extends object>(
-  object: TObject
+  object: TObject,
 ): (keyof TObject)[] {
   return Object.keys(object) as any;
 }

@@ -4,11 +4,11 @@ import { Generation } from "../misc/data-generations";
 
 export function useGeneration(): [
   Generation,
-  Dispatch<SetStateAction<Generation>>
+  Dispatch<SetStateAction<Generation>>,
 ] {
   const [generation, setGeneration] = useLocalStorage<Generation>(
     "generation",
-    "default"
+    "default",
   );
   return [generation, setGeneration];
 }

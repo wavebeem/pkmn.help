@@ -31,7 +31,8 @@
   --weight-normal: 400;
   --weight-medium: 500;
 
-  --background-header: linear-gradient(
+  --background-header:
+    linear-gradient(
         to right,
         var(--color-header-border1),
         var(--color-header-border2),

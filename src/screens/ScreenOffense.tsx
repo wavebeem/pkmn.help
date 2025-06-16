@@ -36,7 +36,7 @@ export function ScreenOffense(): ReactNode {
   const navigate = useNavigate();
   const [offenseTypes, setOffenseTypes] = useSessionStorage<Type[]>(
     "offense.types",
-    []
+    [],
   );
 
   useEffect(() => {
@@ -54,7 +54,7 @@ export function ScreenOffense(): ReactNode {
 
   useEffect(() => {
     setOffenseTypes((offenseTypes) =>
-      removeInvalidOffenseTypesForGeneration(generation, offenseTypes)
+      removeInvalidOffenseTypesForGeneration(generation, offenseTypes),
     );
   }, [generation]);
 
@@ -81,7 +81,7 @@ export function ScreenOffense(): ReactNode {
 
   const [specialMoves, setSpecialMoves] = useSessionStorage<SpecialMove[]>(
     "offense.specialMoves",
-    []
+    [],
   );
 
   const abilitiesOptions: CheckboxGroupOption<AbilityName>[] = [
@@ -97,7 +97,7 @@ export function ScreenOffense(): ReactNode {
 
   const [abilities, setAbilities] = useSessionStorage<AbilityName[]>(
     "offense.abilities",
-    []
+    [],
   );
 
   const permalink = new URL(window.location.href);

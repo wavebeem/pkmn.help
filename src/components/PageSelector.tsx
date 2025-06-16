@@ -37,8 +37,8 @@ export function PageSelector<T>({
   const buttonSize = hasRoomForLargeButtons
     ? "large"
     : hasRoomForMediumButtons
-    ? "medium"
-    : "small";
+      ? "medium"
+      : "small";
 
   if (pageItems.length === 0) {
     return undefined;
@@ -58,7 +58,7 @@ export function PageSelector<T>({
 
   const currentPageDisplay = String(currentPage + 1).padStart(
     String(numPages).length,
-    "0"
+    "0",
   );
 
   return (
