@@ -9,15 +9,10 @@
   --color-header-dark: hsl(0 90% 15%);
   --color-header-base: hsl(0 90% 35%);
   --color-header-highlight: hsl(0 90% 65%);
-  --background-header: radial-gradient(
-      50% 100% at bottom,
-      var(--color-header-highlight),
-      var(--color-header-base)
-    )
-    var(--color-header-base);
   --color-header-text: #fff;
   --color-header-text-shadow: hsl(0 0% 0% / 50%);
-  --color-header-border: hsl(0 0% 0% / 20%);
+  --color-header-border1: hsl(0 0% 0% / 10%);
+  --color-header-border2: hsl(0 0% 0% / 60%);
   --color-button1: hsl(0 0% 100%);
   --color-button1b: hsl(0 0% 96%);
   --color-button-hover1: hsl(200 100% 98%);
@@ -35,6 +30,20 @@
 
   --weight-normal: 400;
   --weight-medium: 500;
+
+  --background-header: linear-gradient(
+        to right,
+        var(--color-header-border1),
+        var(--color-header-border2),
+        var(--color-header-border1)
+      )
+      bottom / auto 1px no-repeat,
+    radial-gradient(
+        50% 100% at bottom,
+        var(--color-header-highlight),
+        var(--color-header-base)
+      )
+      var(--color-header-base);
 
   --background-button-bg: radial-gradient(
       120% 120% at top,
@@ -109,9 +118,10 @@
   --color-header-highlight: hsl(0 70% 55%);
   --color-header-text: #fff;
   --color-header-text-shadow: hsl(0 0% 0% / 50%);
-  --color-header-border: hsl(0 0% 100% / 30%);
-  --color-button1: hsl(0 0% 28%);
-  --color-button1b: hsl(0 0% 24%);
+  --color-header-border1: hsl(0 0% 100% / 20%);
+  --color-header-border2: hsl(0 0% 100% / 50%);
+  --color-button1: hsl(0 0% 26%);
+  --color-button1b: hsl(0 0% 20%);
   --color-button-hover1: hsl(0 0% 32%);
   --color-button-hover1b: hsl(0 0% 26%);
   --color-badge: hsl(120 60% 60%);
@@ -139,9 +149,10 @@
   --color-header-highlight: hsl(0 0% 20%);
   --color-header-text: hsl(0 0% 82%);
   --color-header-text-shadow: hsl(0 0% 0% / 50%);
-  --color-header-border: hsl(0 0% 100% / 10%);
-  --color-button1: hsl(0 0% 14%);
-  --color-button1b: hsl(0 0% 10%);
+  --color-header-border1: hsl(0 0% 100% / 5%);
+  --color-header-border2: hsl(0 0% 100% / 20%);
+  --color-button1: hsl(0 0% 18%);
+  --color-button1b: hsl(0 0% 12%);
   --color-button-hover1: hsl(0 0% 20%);
   --color-button-hover1b: hsl(0 0% 14%);
   --color-badge: hsl(120 60% 60%);
@@ -169,9 +180,10 @@
     --color-header-highlight: hsl(0 70% 55%);
     --color-header-text: #fff;
     --color-header-text-shadow: hsl(0 0% 0% / 50%);
-    --color-header-border: hsl(0 0% 100% / 30%);
-    --color-button1: hsl(0 0% 28%);
-    --color-button1b: hsl(0 0% 24%);
+    --color-header-border1: hsl(0 0% 100% / 20%);
+    --color-header-border2: hsl(0 0% 100% / 50%);
+    --color-button1: hsl(0 0% 26%);
+    --color-button1b: hsl(0 0% 20%);
     --color-button-hover1: hsl(0 0% 29%);
     --color-button-hover1b: hsl(0 0% 25%);
     --color-badge: hsl(120 60% 60%);
