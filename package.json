@@ -52,7 +52,7 @@
     "@vitejs/plugin-react": "^4.2.1",
     "concurrently": "^8.2.2",
     "eslint": "^8.57.0",
-    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react": "^7.37.5",
     "i18next-parser": "^8.13.0",
     "lodash-es": "^4.17.21",
     "npm-check": "^6.0.1",
