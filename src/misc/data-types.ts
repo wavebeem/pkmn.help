@@ -51,7 +51,7 @@ export const Type = {
 
 const typeSet = new Set(Object.values(Type));
 
-export type SpecialMove = typeof specialMoves[number];
+export type SpecialMove = (typeof specialMoves)[number];
 export const specialMoves = [
   "thousand_arrows",
   "freeze-dry",
@@ -79,7 +79,7 @@ export const abilities = {
   water_bubble: createAbility({ type: Type.fire, value: 0.5 }),
   thick_fat: createAbility(
     { type: Type.fire, value: 0.5 },
-    { type: Type.ice, value: 0.5 }
+    { type: Type.ice, value: 0.5 },
   ),
   // Immunities
   earth_eater: createAbility({ type: Type.ground, value: 0 }),
@@ -88,7 +88,7 @@ export const abilities = {
   well_baked_body: createAbility({ type: Type.fire, value: 0 }),
   dry_skin: createAbility(
     { type: Type.fire, value: 1.25 },
-    { type: Type.water, value: 0 }
+    { type: Type.water, value: 0 },
   ),
   storm_drain: createAbility({ type: Type.water, value: 0 }),
   water_absorb: createAbility({ type: Type.water, value: 0 }),
@@ -158,7 +158,7 @@ export function typesFromUserInput({
       const translatedType = t(`types.${type}`);
       const normalizedType = normalizeTypeString(translatedType);
       return [type, normalizedType];
-    })
+    }),
   );
   const lookup = strict ? reverseLookup : reverseClosestLookup;
   return types
@@ -194,10 +194,10 @@ export const types = [
 export const typesWithoutNone = [...types];
 
 const typesGen2 = types.filter(
-  (t) => !(t === Type.fairy || t === Type.stellar)
+  (t) => !(t === Type.fairy || t === Type.stellar),
 );
 const typesGen1 = typesGen2.filter(
-  (t) => !(t === Type.dark || t === Type.steel)
+  (t) => !(t === Type.dark || t === Type.steel),
 );
 
 export function typesForGeneration(generation: Generation): Type[] {
@@ -215,7 +215,7 @@ export function typesForGeneration(generation: Generation): Type[] {
 
 export function removeInvalidOffenseTypesForGeneration(
   generation: Generation,
-  types: Type[]
+  types: Type[],
 ): Type[] {
   const set = new Set(typesForGeneration(generation));
   return types.filter((t) => set.has(t));
@@ -223,7 +223,7 @@ export function removeInvalidOffenseTypesForGeneration(
 
 export function removeInvalidDefenseTypesForGeneration(
   generation: Generation,
-  types: Type[]
+  types: Type[],
 ): Type[] {
   const set = new Set(typesForGeneration(generation));
   return types.flatMap((t, i) => {
@@ -240,7 +240,7 @@ export const typesOrNone = [...types, Type.none];
 
 export function reverseClosestLookup<K extends string, V extends string>(
   value: V,
-  obj: Record<K, V>
+  obj: Record<K, V>,
 ): K {
   const val = closest(value, Object.values(obj));
   const [key] = Object.entries<V>(obj).find(([, v]) => v === val) || [""];
@@ -249,7 +249,7 @@ export function reverseClosestLookup<K extends string, V extends string>(
 
 export function reverseLookup<K extends string, V extends string>(
   value: V,
-  obj: Record<K, V>
+  obj: Record<K, V>,
 ): K {
   const [key] = Object.entries<V>(obj).find(([, v]) => v === value) || [""];
   return key as K;

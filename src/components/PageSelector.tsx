@@ -7,7 +7,7 @@ import { Flex } from "./Flex";
 import { FancyText } from "./FancyText";
 
 export interface PageSelectorProps<T> {
-  anchorElementRef: RefObject<HTMLDivElement>;
+  anchorElementRef: RefObject<HTMLDivElement | null>;
   location: "top" | "bottom";
   numPages: number;
   pageItems: T[];
@@ -37,8 +37,8 @@ export function PageSelector<T>({
   const buttonSize = hasRoomForLargeButtons
     ? "large"
     : hasRoomForMediumButtons
-    ? "medium"
-    : "small";
+      ? "medium"
+      : "small";
 
   if (pageItems.length === 0) {
     return undefined;
@@ -58,7 +58,7 @@ export function PageSelector<T>({
 
   const currentPageDisplay = String(currentPage + 1).padStart(
     String(numPages).length,
-    "0"
+    "0",
   );
 
   return (

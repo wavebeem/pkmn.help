@@ -14,8 +14,8 @@
   border-radius: var(--border-radius3);
   overflow: hidden;
   box-shadow: var(--shadow-button);
-  background: linear-gradient(var(--color-button1b), var(--color-button1))
-      content-box,
+  background:
+    linear-gradient(var(--color-button1b), var(--color-button1)) content-box,
     linear-gradient(var(--color-button1) 0 100%) border-box var(--color-button1);
 }
 
@@ -69,7 +69,8 @@
 }
 
 .radio:checked {
-  background: linear-gradient(var(--color-bg1) 0 100%) content-box,
+  background:
+    linear-gradient(var(--color-bg1) 0 100%) content-box,
     linear-gradient(var(--color-fg1) 0 100%) border-box;
   border-color: var(--color-vibrant-border);
 }

@@ -11,25 +11,23 @@ import { useTypeCount } from "../hooks/useTypeCount";
 import { EmptyState } from "./EmptyState";
 import { ReactNode } from "react";
 
-const matchupKeys = [
-  "weak",
-  "resist",
-  "16",
-  "8",
-  "4",
-  "2",
-  "1",
-  "1/2",
-  "1/4",
-  "1/8",
-  "1/16",
-  "0",
-] as const;
-type MatchupKey = typeof matchupKeys[number];
+type MatchupKey =
+  | "weak"
+  | "resist"
+  | "16"
+  | "8"
+  | "4"
+  | "2"
+  | "1"
+  | "1/2"
+  | "1/4"
+  | "1/8"
+  | "1/16"
+  | "0";
 
 function getEffectivenessDisplay(
   langs: readonly string[],
-  key: MatchupKey
+  key: MatchupKey,
 ): string {
   function num(value: number): string {
     return value.toLocaleString(langs);
@@ -161,7 +159,7 @@ export function MatchupsTeam({
 
   const rows: [Type, ...number[]][] = [];
   for (const genType of generationTypes) {
-    const row: typeof rows[number] = [genType];
+    const row: (typeof rows)[number] = [genType];
     for (const m of matchers) {
       let num = 0;
       for (const [typeIndex, types] of typesList.entries()) {

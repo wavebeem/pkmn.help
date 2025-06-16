@@ -18,7 +18,7 @@ export function ExternalLink({
         "focus-outline",
         styles.link,
         underline === "never" && styles.noUnderline,
-        className
+        className,
       )}
       {...props}
     />
