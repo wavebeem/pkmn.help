@@ -12,7 +12,7 @@
 @media (prefers-reduced-motion) {
   * {
     transition: none !important;
-    animation-duration: 0 !important;
+    animation-duration: 0ms !important;
   }
 }
 
