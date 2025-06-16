@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-06-15
+
+- Fixed a bug with the header background on certain devices
+
 ## 2025-06-14
 
 - Fixed a bug where all special moves were shown on the coverage lists page
