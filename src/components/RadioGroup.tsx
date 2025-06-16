@@ -1,4 +1,4 @@
-import { ReactNode, useId } from "react";
+import { Fragment, ReactNode, useId } from "react";
 import { FancyText } from "./FancyText";
 import styles from "./RadioGroup.module.css";
 
@@ -36,7 +36,7 @@ export function RadioGroup<S extends string>({
       </div>
       <div className={styles.itemsContainer}>
         {options.map((option, i) => (
-          <>
+          <Fragment key={i}>
             {i > 0 && <div className={styles.itemDivider} />}
             <label key={option.value} className={styles.item}>
               <input
@@ -55,7 +55,7 @@ export function RadioGroup<S extends string>({
                 <div className={styles.name}>{option.label}</div>
               </div>
             </label>
-          </>
+          </Fragment>
         ))}
       </div>
     </div>

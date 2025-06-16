@@ -1,6 +1,5 @@
 import classNames from "classnames";
 import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import {
   NavLink,
@@ -217,68 +216,77 @@ export function Layout(): ReactNode {
     ]
   );
 
+  useEffect(() => {
+    document.title = t("title");
+  });
+
+  useEffect(() => {
+    const meta = document.querySelector<HTMLMetaElement>(
+      "meta[name=theme-color]"
+    );
+    if (meta && themeColor) {
+      meta.content = themeColor;
+    }
+  }, [themeColor]);
+
+  useEffect(() => {
+    const root = document.documentElement;
+    root.dataset.theme = dataTheme;
+    root.dataset.themeColor = themeColor;
+  }, [dataTheme, themeColor]);
+
   return (
     <AppContextProvider value={appContext}>
-      <HelmetProvider>
-        <Helmet>
-          <html data-theme={dataTheme} data-theme-color={themeColor} />
-          <meta name="theme-color" content={themeColor} />
-          <title>{t("title")}</title>
-        </Helmet>
-        {easterEgg && (
-          <div
-            className={styles.easterEgg}
-            data-animate={easterEggLoadedID === easterEgg.id}
-          >
-            <MonsterImage
-              pokemonID={easterEgg.id}
-              onLoad={({ pokemonID }) => {
-                setEasterEggLoadedID(pokemonID);
-              }}
-            />
-          </div>
-        )}
-        <div className={styles.root}>
-          <h1 className={styles.header} ref={h1Ref}>
-            <button
-              className={styles.headerButton}
-              data-theme={pokeballTheme}
-              aria-hidden={true}
-              onClick={(event) => {
-                event.preventDefault();
-                const pkmn = randomItem(AllPokemon);
-                if (!pkmn) {
-                  return;
-                }
-                setEasterEgg(pkmn);
-                setPokeballTheme(iterNext(pokeballThemeCycle));
-              }}
-            />
-            <div>{t("title")}</div>
-          </h1>
-          <nav className={styles.tabBar}>
-            <NavLink className={tabClass} to="/offense/">
-              {t("navigation.offense")}
-            </NavLink>
-            <NavLink className={tabClass} to="/defense/">
-              {t("navigation.defense")}
-            </NavLink>
-            <NavLink className={tabClass} to="/pokedex/">
-              {t("navigation.pokedex")}
-            </NavLink>
-            <NavLink
-              className={classNames(
-                tabClass,
-                needRefresh && styles.pleaseUpdate
-              )}
-              to="/more/"
-            >
-              {t("navigation.more")}
-            </NavLink>
-          </nav>
-          <Outlet />
+      {easterEgg && (
+        <div
+          className={styles.easterEgg}
+          data-animate={easterEggLoadedID === easterEgg.id}
+        >
+          <MonsterImage
+            pokemonID={easterEgg.id}
+            onLoad={({ pokemonID }) => {
+              setEasterEggLoadedID(pokemonID);
+            }}
+          />
         </div>
-      </HelmetProvider>
+      )}
+      <div className={styles.root}>
+        <h1 className={styles.header} ref={h1Ref}>
+          <button
+            className={styles.headerButton}
+            data-theme={pokeballTheme}
+            aria-hidden={true}
+            onClick={(event) => {
+              event.preventDefault();
+              const pkmn = randomItem(AllPokemon);
+              if (!pkmn) {
+                return;
+              }
+              setEasterEgg(pkmn);
+              setPokeballTheme(iterNext(pokeballThemeCycle));
+            }}
+          />
+          <div>{t("title")}</div>
+        </h1>
+        <nav className={styles.tabBar}>
+          <NavLink className={tabClass} to="/offense/">
+            {t("navigation.offense")}
+          </NavLink>
+          <NavLink className={tabClass} to="/defense/">
+            {t("navigation.defense")}
+          </NavLink>
+          <NavLink className={tabClass} to="/pokedex/">
+            {t("navigation.pokedex")}
+          </NavLink>
+          <NavLink
+            className={classNames(tabClass, needRefresh && styles.pleaseUpdate)}
+            to="/more/"
+          >
+            {t("navigation.more")}
+          </NavLink>
+        </nav>
+        <Outlet />
+      </div>
     </AppContextProvider>
   );
 }
