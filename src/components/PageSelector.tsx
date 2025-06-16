@@ -7,7 +7,7 @@ import { Flex } from "./Flex";
 import { FancyText } from "./FancyText";
 
 export interface PageSelectorProps<T> {
-  anchorElementRef: RefObject<HTMLDivElement>;
+  anchorElementRef: RefObject<HTMLDivElement | null>;
   location: "top" | "bottom";
   numPages: number;
   pageItems: T[];
