@@ -11,21 +11,19 @@ import { useTypeCount } from "../hooks/useTypeCount";
 import { EmptyState } from "./EmptyState";
 import { ReactNode } from "react";
 
-const matchupKeys = [
-  "weak",
-  "resist",
-  "16",
-  "8",
-  "4",
-  "2",
-  "1",
-  "1/2",
-  "1/4",
-  "1/8",
-  "1/16",
-  "0",
-] as const;
-type MatchupKey = typeof matchupKeys[number];
+type MatchupKey =
+  | "weak"
+  | "resist"
+  | "16"
+  | "8"
+  | "4"
+  | "2"
+  | "1"
+  | "1/2"
+  | "1/4"
+  | "1/8"
+  | "1/16"
+  | "0";
 
 function getEffectivenessDisplay(
   langs: readonly string[],

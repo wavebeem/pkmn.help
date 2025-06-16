@@ -61,7 +61,6 @@ export function ScreenPokedex(): ReactNode {
     // The return value of `t` depends on the current value of `language`, but
     // the rules of hooks can't realize these. Pretend to use `language` here to
     // make it happy.
-    language;
     const types = typesFromUserInput({ types: s, t, strict: true });
     if (types.length > 0) {
       return searchablePkmn.filter((p) => {
