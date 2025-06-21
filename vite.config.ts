@@ -233,6 +233,7 @@ export default defineConfig((env) => {
             /^\/translations\//,
             /^\/img\//,
             /^\/cry\//,
+            /^\/p\//,
           ],
         },
       }),

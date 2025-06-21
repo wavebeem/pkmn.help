@@ -1,2 +1,0 @@
-/*
-  Content-Security-Policy: default-src 'self' https://plausible.io; script-src 'self' https://plausible.io; img-src 'self' https://plausible.io; style-src 'self' 'unsafe-inline'; frame-ancestors 'none'; object-src 'none';
