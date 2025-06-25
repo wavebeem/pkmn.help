@@ -223,6 +223,7 @@
   justify-content: center;
 }
 
+
 @media (width >= 40rem) {
   .tabBar {
     display: flex;
@@ -238,6 +239,12 @@
   background: var(--color-bg1);
   color: var(--color-fg1);
   font-weight: var(--weight-medium);
+}
+/*added a hover feature */
+.tab:hover {
+  background: var(--color-bg2);
+  color: var(--color-fg2);
+  box-shadow: 0 1px 0 0 var(--color-border2);
 }
 
 .tab[aria-current="page"] {
