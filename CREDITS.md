@@ -14,6 +14,8 @@
 
 ## Portuguese (Portugal) translation
 
+- Lucas Lopes
+
 - Bernardo Ferreira
 
 ## Portuguese (Brazil) translation

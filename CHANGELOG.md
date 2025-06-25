@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-06-25
+
+- Updated "Rocha" (Rock) to "Pedra" in Portuguese (Portugal)
+
 ## 2025-06-24
 
 - Made the colors more "cool" instead of "neutral"
