@@ -38,12 +38,10 @@ export function MultiTypeSelector({
               isChecked && "focus-tab",
               !isChecked && "focus-simple",
             )}
-        
             style={customProperties({
               "--type-color-bg": typeColorBG(type),
               "--type-color": typeColor(type),
             })}
-
           >
             <Flex tag="span" gap="medium" justify="flex-start" align="center">
               <input
@@ -65,11 +63,11 @@ export function MultiTypeSelector({
                   onChange(newValue);
                 }}
               />
-              <img 
-                src={typeIcon(type.charAt(0).toUpperCase() + type.slice(1))} 
-                alt={type} 
-                className="type-icon" 
-                style={{ width: '24px', height: '24px' }} 
+              <img
+                src={typeIcon(type.charAt(0).toUpperCase() + type.slice(1))}
+                alt={type}
+                className="type-icon"
+                style={{ width: "24px", height: "24px" }}
               />
               {t(`types.${type}`)}
             </Flex>

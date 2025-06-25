@@ -223,7 +223,6 @@
   justify-content: center;
 }
 
-
 @media (width >= 40rem) {
   .tabBar {
     display: flex;
