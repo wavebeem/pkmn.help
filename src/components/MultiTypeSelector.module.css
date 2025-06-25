@@ -37,21 +37,7 @@
 }
 
 .checkbox {
-  --checkbox-color-border: var(--color-vibrant-border);
-  --checkbox-border: inset 0 0 0 1px var(--checkbox-color-border);
-  -webkit-appearance: none;
-  appearance: none;
-  display: block;
-  box-sizing: border-box;
-  width: 1.5rem;
-  height: 1.5rem;
-  flex: none;
-  border: 0;
-  background: var(--type-color);
-  color: white;
-  text-shadow: var(--type-text-shadow);
-  box-shadow: var(--checkbox-border);
-  border-radius: 0.125rem;
+  display: none;
 }
 
 :where(.label[data-type="stellar"]) .checkbox {
