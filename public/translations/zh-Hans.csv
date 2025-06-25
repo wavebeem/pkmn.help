@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,飛身重壓
 offense.coverage.heading,Pokédex coverage,宝可梦图鉴覆盖率
 offense.coverage.edit,Edit list,编辑列表
 offense.coverage.weakness,Weak,被克制
-offense.coverage.normal,Normal,没有属性相克
+offense.coverage.normal,Neutral,没有属性相克
 offense.coverage.resistance,Resist,抵抗
 offense.teraPokemon,Tera Pokémon,太晶宝可梦
 offense.coverageList.empty,No Pokémon found or no types selected,没有找到宝可梦或没有选择属性
 offense.coverageList.weakness.heading,Weakness coverage list,效果绝佳列表
-offense.coverageList.normal.heading,Normal effectiveness coverage list,效果一般列表
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,效果一般列表
 offense.coverageList.resistance.heading,Resistance coverage list,效果不好列表
 coverage.heading,Pokédex coverage,宝可梦图鉴覆盖范围
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",导入或导出定制的图鉴CSV文件以参考不同宝可梦的弱点覆盖范围。你可制作只有OU阶级宝可梦的特制CSV文件，或是甚至从零制作你自己的宝可梦。
@@ -133,7 +133,6 @@ more.settings.language.label,Language,语言
 more.settings.language.default,Auto detect language,自动检测语言
 more.settings.language.official,Official languages,官方语言
 more.settings.language.unofficial,Unofficial languages,非官方语言
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",语言支持不完整。请给我发邮件，我会有偿请你翻译。
 more.settings.theme.label,Theme,背景
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“系统默认”会根据你的系统设定自动调整。
 more.settings.theme.values.auto,System default,系统默认

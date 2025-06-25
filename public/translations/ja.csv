@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,フライングプレス
 offense.coverage.heading,Pokédex coverage,ポケモン図鑑内のタイプ相性
 offense.coverage.edit,Edit list,リストを編集
 offense.coverage.weakness,Weak,ばつぐん
-offense.coverage.normal,Normal,普通
+offense.coverage.normal,Neutral,普通
 offense.coverage.resistance,Resist,耐性
 offense.teraPokemon,Tera Pokémon,テラスタルポケモン
 offense.coverageList.empty,No Pokémon found or no types selected,ポケモンが見つからないか、タイプが未選択です。
 offense.coverageList.weakness.heading,Weakness coverage list,弱点カバーリスト
-offense.coverageList.normal.heading,Normal effectiveness coverage list,普通カバーリスト
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,普通カバーリスト
 offense.coverageList.resistance.heading,Resistance coverage list,抵抗カバーリスト
 coverage.heading,Pokédex coverage,弱点のカバー範囲
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",異なるポケモンのための弱点カバー範囲を見るためにカスタムポケモンずかんのCSVファイルを読み込み/エクスポートします。
@@ -133,7 +133,6 @@ more.settings.language.label,Language,言語
 more.settings.language.default,Auto detect language,自動言語検出
 more.settings.language.official,Official languages,公用語
 more.settings.language.unofficial,Unofficial languages,非公用語
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",言語サポートは不完全です。 私に電子メールを送ってください、私はあなたに翻訳するために支払います。
 more.settings.theme.label,Theme,テーマ
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,「システムのデフォルト」は、オペレーティングシステムの設定に応じて自動的に変更されます。
 more.settings.theme.values.auto,System default,システムのデフォルト

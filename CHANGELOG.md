@@ -1,5 +1,18 @@
 # Changelog
 
+## 2025-06-24
+
+- Made the colors more "cool" instead of "neutral"
+
+- Fixed an issue with buttons looking ugly and jagged on low DPI screens
+
+- Improved Pokémon shadows in the Pokédex
+
+- Updated Portuguese (Portugal) translations
+
+- Updated "Normal effectiveness" to "Neutral effectiveness" to avoid using
+  "Normal" to mean both a type and an effectiveness level
+
 ## 2025-06-15
 
 - Fixed a bug with the header background on certain devices

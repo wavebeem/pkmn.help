@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,
 offense.coverage.heading,Pokédex coverage,Pokrycie Pokédexa
 offense.coverage.edit,Edit list,Edytuj listę
 offense.coverage.weakness,Weak,Słabość
-offense.coverage.normal,Normal,Normalne
+offense.coverage.normal,Neutral,Normalne
 offense.coverage.resistance,Resist,Opór
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,Nie znaleziono Pokémona lub nie wybrano żadnego typu
 offense.coverageList.weakness.heading,Weakness coverage list,Lista pokrycia słabości
-offense.coverageList.normal.heading,Normal effectiveness coverage list,Lista Pokrycia Normalnej Skuteczności
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,Lista Pokrycia Normalnej Skuteczności
 offense.coverageList.resistance.heading,Resistance coverage list,Lista Pokrycia Oporów
 coverage.heading,Pokédex coverage,Pokrycie Pokédexa
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importuj/eksportuj niestandardowe pliki Pokédex CSV, aby zobaczyć pokrycie dla różnych Pokémonów. Utwórz niestandardowy plik CSV tylko z Pokémonem poziomu OU, a nawet stwórz własnego Pokémona od podstaw."
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Język
 more.settings.language.default,Auto detect language,Automatyczne wykrywanie języka
 more.settings.language.official,Official languages,
 more.settings.language.unofficial,Unofficial languages,
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Obsługa języków jest niekompletna. Proszę o kontakt mailowy, zapłacę za tłumaczenie."
 more.settings.theme.label,Theme,Motyw
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,„Domyślne ustawienie” zmieni się automatycznie w zależności od ustawień systemu operacyjnego.
 more.settings.theme.values.auto,System default,Domyślne ustawienie

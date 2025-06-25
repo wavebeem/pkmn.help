@@ -227,8 +227,8 @@ input {
 }
 
 .button-selected {
-  border-color: var(--color-fg1);
-  background: var(--color-fg1);
+  border-color: var(--color-accent);
+  background: var(--color-accent);
   color: var(--color-bg1);
 }
 

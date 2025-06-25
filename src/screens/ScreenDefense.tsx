@@ -144,8 +144,8 @@ export function ScreenDefense(): ReactNode {
               {allTypes.flatMap((name) => {
                 return (
                   <Fragment key={name}>
+                    {name === "fire" || name === "stellar" ? <hr /> : null}
                     <option value={name}>{t(`types.${name}`)}</option>
-                    {name === "steel" ? <hr /> : null}
                   </Fragment>
                 );
               })}

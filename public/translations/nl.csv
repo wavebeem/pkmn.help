@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,
 offense.coverage.heading,Pokédex coverage,Pokédex overschaduwing
 offense.coverage.edit,Edit list,Bewerk lijst
 offense.coverage.weakness,Weak,Zwak
-offense.coverage.normal,Normal,Normaal
+offense.coverage.normal,Neutral,Normaal
 offense.coverage.resistance,Resist,Weerstand
 offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,Geen Pokémon gevonden of geen types geselecteerd
 offense.coverageList.weakness.heading,Weakness coverage list,Zwakte Overschaduwingslijst
-offense.coverageList.normal.heading,Normal effectiveness coverage list,Normale Overschaduwingslijst
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,Normale Overschaduwingslijst
 offense.coverageList.resistance.heading,Resistance coverage list,Weerstandige Overschaduwingslijst
 coverage.heading,Pokédex coverage,Pokedexoverschaduwing
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importeer/exporteer aangepaste Pokédex CSV-bestanden om overschaduwing te zien voor verschillende Pokémon. Maak een aangepast CSV-bestand met alleen de OU-niveau Pokémon, of maak je eigen Pokémon vanaf het begin."
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Taal
 more.settings.language.default,Auto detect language,Automatisch taal detecteren
 more.settings.language.official,Official languages,Officiële talen
 more.settings.language.unofficial,Unofficial languages,Onofficiële talen
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Taalondersteuning is nog niet compleet. E-mail mij alsjeblieft, ik zal je betalen om te vertalen."
 more.settings.theme.label,Theme,Thema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“Systeemstandaard” zal automatisch veranderen naar je systeeminstellingen.
 more.settings.theme.values.auto,System default,Systeemstandaard

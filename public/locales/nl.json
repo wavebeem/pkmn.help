@@ -196,8 +196,7 @@
         "label": "Taal",
         "default": "Automatisch taal detecteren",
         "official": "Officiële talen",
-        "unofficial": "Onofficiële talen",
-        "helpText": "Taalondersteuning is nog niet compleet. E-mail mij alsjeblieft, ik zal je betalen om te vertalen."
+        "unofficial": "Onofficiële talen"
       },
       "theme": {
         "label": "Thema",

@@ -24,7 +24,7 @@
       "heading": "Pokédex coverage",
       "edit": "Edit list",
       "weakness": "Weak",
-      "normal": "Normal",
+      "normal": "Neutral",
       "resistance": "Resist"
     },
     "teraPokemon": "Tera Pokémon",
@@ -34,7 +34,7 @@
         "heading": "Weakness coverage list"
       },
       "normal": {
-        "heading": "Normal effectiveness coverage list"
+        "heading": "Neutral effectiveness coverage list"
       },
       "resistance": {
         "heading": "Resistance coverage list"
@@ -209,8 +209,7 @@
         "label": "Language",
         "default": "Auto detect language",
         "official": "Official languages",
-        "unofficial": "Unofficial languages",
-        "helpText": "Language support is incomplete. Please email me, I will pay you to translate."
+        "unofficial": "Unofficial languages"
       },
       "theme": {
         "label": "Theme",

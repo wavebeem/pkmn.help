@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,
 offense.coverage.heading,Pokédex coverage,Pokédex
 offense.coverage.edit,Edit list,Rediger liste
 offense.coverage.weakness,Weak,Svak
-offense.coverage.normal,Normal,Normal
+offense.coverage.normal,Neutral,Normal
 offense.coverage.resistance,Resist,Motstå
 offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,Ingen Pokémon funnet eller ingen typer valgt
 offense.coverageList.weakness.heading,Weakness coverage list,Svakhet analyse liste
-offense.coverageList.normal.heading,Normal effectiveness coverage list,Normal effektivitets analyse liste
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,Normal effektivitets analyse liste
 offense.coverageList.resistance.heading,Resistance coverage list,Motstendelser analyse liste
 coverage.heading,Pokédex coverage,Pokédex analyse
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importer/eksporter egene Pokédex CSV filer for å se analyser av forskjellige Pokémon. Skap en tilpasset CSV fil med bare OU nivå Pokémon, eller lag dine egen Pokémon fra bunnen av."
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Språk
 more.settings.language.default,Auto detect language,Automatisk oppdag språk
 more.settings.language.official,Official languages,Offisielle språk
 more.settings.language.unofficial,Unofficial languages,Uofisielle språk
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",Språkstøtte er ikke ferdig. Plis send meg en epost; jeg vil betale deg for å oversette.
 more.settings.theme.label,Theme,Tema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Systemstandard"" vil endres automatisk avhengig av operativsysteminnstillingene."
 more.settings.theme.values.auto,System default,Systemstandard

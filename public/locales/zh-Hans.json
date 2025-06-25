@@ -209,8 +209,7 @@
         "label": "语言",
         "default": "自动检测语言",
         "official": "官方语言",
-        "unofficial": "非官方语言",
-        "helpText": "语言支持不完整。请给我发邮件，我会有偿请你翻译。"
+        "unofficial": "非官方语言"
       },
       "theme": {
         "label": "背景",

@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,플라잉프레스
 offense.coverage.heading,Pokédex coverage,포켓몬 도감과 비교하기
 offense.coverage.edit,Edit list,포켓몬 목록 편집
 offense.coverage.weakness,Weak,약점인 포켓몬
-offense.coverage.normal,Normal,1배인 포켓몬
+offense.coverage.normal,Neutral,1배인 포켓몬
 offense.coverage.resistance,Resist,내성인 포켓몬
 offense.teraPokemon,Tera Pokémon,테라스탈 포켓몬
 offense.coverageList.empty,No Pokémon found or no types selected,포켓몬을 찾을 수 없거나 유형이 선택되지 않았습니다.
 offense.coverageList.weakness.heading,Weakness coverage list,약점인 포켓몬 목록
-offense.coverageList.normal.heading,Normal effectiveness coverage list,1배인 포켓몬 목록
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,1배인 포켓몬 목록
 offense.coverageList.resistance.heading,Resistance coverage list,내성인 포켓몬 목록
 coverage.heading,Pokédex coverage,비교할 포켓몬 목록
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",커스텀 Pokédex CSV 파일을 가져오거나 내보내서 다른 포켓몬에게의 공격 상성을 확인할 수 있습니다. OU 티어 포켓몬만으로 CSV 파일을 만들거나 처음부터 나만의 포켓몬을 만들 수도 있습니다.
@@ -133,7 +133,6 @@ more.settings.language.label,Language,언어
 more.settings.language.default,Auto detect language,언어 자동 감지
 more.settings.language.official,Official languages,공식 지원 언어
 more.settings.language.unofficial,Unofficial languages,비공식 지원 언어
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",아직 언어 지원이 완벽하지 않습니다. 저에게 이메일을 보내주시면 번역 시 보수를 제공하겠습니다.
 more.settings.theme.label,Theme,테마
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""시스템 기본값"" 은 시스템 설정에 따라 자동으로 변경됩니다."
 more.settings.theme.values.auto,System default,시스템 기본값

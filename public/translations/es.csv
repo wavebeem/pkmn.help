@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,Plancha Voladora
 offense.coverage.heading,Pokédex coverage,Cobertura Pokédex
 offense.coverage.edit,Edit list,Modificar lista
 offense.coverage.weakness,Weak,Debilidad
-offense.coverage.normal,Normal,Normal
+offense.coverage.normal,Neutral,Normal
 offense.coverage.resistance,Resist,Resistencia
 offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,No se han encontrado Pokémon o no se han seleccionado tipos
 offense.coverageList.weakness.heading,Weakness coverage list,Lista de debilidad
-offense.coverageList.normal.heading,Normal effectiveness coverage list,Lista de efectividad normal
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,Lista de efectividad normal
 offense.coverageList.resistance.heading,Resistance coverage list,Lista de resistencia
 coverage.heading,Pokédex coverage,Cobertura Pokédex
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importa/exporta un archivo CSV con una Pokédex personalizada para ver el rango de efectividad de distintos Pokémon. Crea un archivo CSV personalizado con solo los Pokémon de la tier OverUsed (OU), o incluso crea tus propios Pokémon desde cero."
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Idioma
 more.settings.language.default,Auto detect language,Detección automática del idioma
 more.settings.language.official,Official languages,Idiomas oficiales
 more.settings.language.unofficial,Unofficial languages,Idiomas no oficiales
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","El soporte de idiomas está incompleto. Por favor escríbeme por correo electrónico, te pagaré para que traduzcas."
 more.settings.theme.label,Theme,Tema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“Predefinido por el sistema” cambiará automáticamente dependiendo de los ajustes de tu sistema operativo.
 more.settings.theme.values.auto,System default,Predefinido por el sistema

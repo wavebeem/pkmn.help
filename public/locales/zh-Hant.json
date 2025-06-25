@@ -209,8 +209,7 @@
         "label": "語言",
         "default": "自動檢測語言",
         "official": "官方語言",
-        "unofficial": "非官方語言",
-        "helpText": "語言支持不完整。請給我發電子郵件，我將支付您翻譯的費用。"
+        "unofficial": "非官方語言"
       },
       "theme": {
         "label": "主題",

@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,Flying Press
 offense.coverage.heading,Pokédex coverage,Pokédex coverage
 offense.coverage.edit,Edit list,Edit list
 offense.coverage.weakness,Weak,Weak
-offense.coverage.normal,Normal,Normal
+offense.coverage.normal,Neutral,Neutral
 offense.coverage.resistance,Resist,Resist
 offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,No Pokémon found or no types selected
 offense.coverageList.weakness.heading,Weakness coverage list,Weakness coverage list
-offense.coverageList.normal.heading,Normal effectiveness coverage list,Normal effectiveness coverage list
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,Neutral effectiveness coverage list
 offense.coverageList.resistance.heading,Resistance coverage list,Resistance coverage list
 coverage.heading,Pokédex coverage,Pokédex coverage
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch."
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Language
 more.settings.language.default,Auto detect language,Auto detect language
 more.settings.language.official,Official languages,Official languages
 more.settings.language.unofficial,Unofficial languages,Unofficial languages
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Language support is incomplete. Please email me, I will pay you to translate."
 more.settings.theme.label,Theme,Theme
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,“System default” will change automatically depending on your operating system settings.
 more.settings.theme.values.auto,System default,System default

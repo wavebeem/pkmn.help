@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,
 offense.coverage.heading,Pokédex coverage,
 offense.coverage.edit,Edit list,
 offense.coverage.weakness,Weak,
-offense.coverage.normal,Normal,
+offense.coverage.normal,Neutral,
 offense.coverage.resistance,Resist,
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,
 offense.coverageList.weakness.heading,Weakness coverage list,
-offense.coverageList.normal.heading,Normal effectiveness coverage list,
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,
 offense.coverageList.resistance.heading,Resistance coverage list,
 coverage.heading,Pokédex coverage,Охват Слабостей
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Импортируйте/экспортируйте пользовательские CSV файлы Покедекса чтобы посмотреть охват слабостей для разных Покемонов. Создайте пользовательский CSV файл только с одним Покемоном уровня OU, или даже создайте своего Покемона с нуля."
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Язык
 more.settings.language.default,Auto detect language,Автоопределенный язык
 more.settings.language.official,Official languages,
 more.settings.language.unofficial,Unofficial languages,
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Языковая поддержка пока не закончена. Пожалуйста пишите мне, я заплачу вам за перевод."
 more.settings.theme.label,Theme,Тема
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Системная по умолчанию"" изменится автоматически смотря на ваши настройки оперативной системы."
 more.settings.theme.values.auto,System default,Системная по умолчанию

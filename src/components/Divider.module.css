@@ -1,3 +1,10 @@
 .Divider {
   border-top: 1px solid var(--color-border3);
+  border-image: linear-gradient(
+      to right,
+      transparent,
+      var(--color-border3),
+      transparent
+    )
+    1;
 }

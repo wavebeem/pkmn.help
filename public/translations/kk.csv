@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,
 offense.coverage.heading,Pokédex coverage,
 offense.coverage.edit,Edit list,
 offense.coverage.weakness,Weak,
-offense.coverage.normal,Normal,
+offense.coverage.normal,Neutral,
 offense.coverage.resistance,Resist,
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,
 offense.coverageList.weakness.heading,Weakness coverage list,
-offense.coverageList.normal.heading,Normal effectiveness coverage list,
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,
 offense.coverageList.resistance.heading,Resistance coverage list,
 coverage.heading,Pokédex coverage,Әлсіздік Қамтуы
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",Өзіндік Покедекстің CSV файлдарын импорттау/экспорттау арқылы әртүрлі Покемондарға әлсіздік қамтуын көре аласыз. Тек қана OU деңгейіндегі Покемон бар немесе өзіңіз ойлап тапқан Покемоны бар CSV файлды жасаңыз.
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Тіл
 more.settings.language.default,Auto detect language,Авто танылған тіл
 more.settings.language.official,Official languages,
 more.settings.language.unofficial,Unofficial languages,
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Тіл қолдауы әлі бітпеген. Өтініш, маған поштаға жазыңыз, мен сізге аударуыңызға төлеймін."
 more.settings.theme.label,Theme,Тақырып
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"Жүйелік бастапқы"" сіздің операциялық жүйе баптауларыңызға байланысты өзгереді."
 more.settings.theme.values.auto,System default,Жүйелік бастапқы

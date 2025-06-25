@@ -209,8 +209,7 @@
         "label": "Ngôn Ngữ",
         "default": "Tự động nhận dạng ngôn ngữ",
         "official": "Ngôn ngữ chính thức",
-        "unofficial": "Ngôn ngữ không chính thức",
-        "helpText": "Dịch vụ hỗ trợ ngôn ngữ hiện tại chưa hoàn thành. Xin email tôi để giúp dịch, và tôi sẽ thanh toán bạn."
+        "unofficial": "Ngôn ngữ không chính thức"
       },
       "theme": {
         "label": "Nền",

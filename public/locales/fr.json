@@ -209,8 +209,7 @@
         "label": "Langage",
         "default": "Détecter automatiquement la langue",
         "official": "Langues officielles",
-        "unofficial": "Langues non-officielles",
-        "helpText": "Merci de me contacter si certaines traductions sont manquantes ou erronées et que vous vous sentez capable d'aider."
+        "unofficial": "Langues non-officielles"
       },
       "theme": {
         "label": "Thème",

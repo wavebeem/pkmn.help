@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,Flying Press
 offense.coverage.heading,Pokédex coverage,Couverture du Pokédex
 offense.coverage.edit,Edit list,Modifier la liste
 offense.coverage.weakness,Weak,Faible
-offense.coverage.normal,Normal,Neutre
+offense.coverage.normal,Neutral,Neutre
 offense.coverage.resistance,Resist,Résiste
 offense.teraPokemon,Tera Pokémon,Pokémon Téracristallisé
 offense.coverageList.empty,No Pokémon found or no types selected,Aucun Pokémon trouvé ou aucun type sélectionné
 offense.coverageList.weakness.heading,Weakness coverage list,Liste des Pokémon qui te sont faibles
-offense.coverageList.normal.heading,Normal effectiveness coverage list,Liste des Pokémon qui te sont neutres
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,Liste des Pokémon qui te sont neutres
 offense.coverageList.resistance.heading,Resistance coverage list,Liste des Pokémon qui te résistent
 coverage.heading,Pokédex coverage,Couverture de faiblesses
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importez/exportez des fichiers CSV Pokédex personnalisés pour voir la couverture des faiblesses pour différents Pokémons. Créez un fichier CSV personnalisé avec juste le tier Pokémon OU (overused), ou créez votre Pokémon depuis zéro."
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Langage
 more.settings.language.default,Auto detect language,Détecter automatiquement la langue
 more.settings.language.official,Official languages,Langues officielles
 more.settings.language.unofficial,Unofficial languages,Langues non-officielles
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",Merci de me contacter si certaines traductions sont manquantes ou erronées et que vous vous sentez capable d'aider.
 more.settings.theme.label,Theme,Thème
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Thème du système par défaut"" changera automatiquement en fonction de vos paramètres de votre système d'exploitation."
 more.settings.theme.values.auto,System default,Thème du système par défaut

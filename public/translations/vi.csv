@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,Ép Bay (Flying Press)
 offense.coverage.heading,Pokédex coverage,Danh sách khả năng bao phủ của tất cả Pokémon trong Pokédex
 offense.coverage.edit,Edit list,Sửa danh sách
 offense.coverage.weakness,Weak,Các Pokémon yếu
-offense.coverage.normal,Normal,Các Pokémon không yếu hay kháng cự
+offense.coverage.normal,Neutral,Các Pokémon không yếu hay kháng cự
 offense.coverage.resistance,Resist,Các Pokémon kháng cự
 offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,Không có Pokémon nào hoặc không có hệ được chọn
 offense.coverageList.weakness.heading,Weakness coverage list,Danh sách các Pokémon yếu
-offense.coverageList.normal.heading,Normal effectiveness coverage list,Danh sách các Pokémon không yếu hay kháng cự
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,Danh sách các Pokémon không yếu hay kháng cự
 offense.coverageList.resistance.heading,Resistance coverage list,Danh sách các Pokémon kháng cự
 coverage.heading,Pokédex coverage,Danh sách khả năng bao phủ hệ của tất cả Pokémon trong Pokédex
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",Nhập/xuất tệp CSV Pokédex tùy chỉnh để xem khả năng bao phủ hệ của các Pokémon khác nhau. Tạo tệp CSV tùy chỉnh chỉ với Pokémon cấp OU hoặc thậm chí tạo Pokémon của riêng bạn từ đầu.
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Ngôn Ngữ
 more.settings.language.default,Auto detect language,Tự động nhận dạng ngôn ngữ
 more.settings.language.official,Official languages,Ngôn ngữ chính thức
 more.settings.language.unofficial,Unofficial languages,Ngôn ngữ không chính thức
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Dịch vụ hỗ trợ ngôn ngữ hiện tại chưa hoàn thành. Xin email tôi để giúp dịch, và tôi sẽ thanh toán bạn."
 more.settings.theme.label,Theme,Nền
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Hệ thống mặc định"" sẽ tự động thay đổi dựa trên cài đặt của bạn."
 more.settings.theme.values.auto,System default,Hệ thống mặc định

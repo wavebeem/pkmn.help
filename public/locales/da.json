@@ -161,8 +161,7 @@
       "heading": "Indstillinger",
       "language": {
         "label": "Sprog",
-        "default": "Opdag automatisk sprog",
-        "helpText": "Sprog understyttelsen er ukomplet. Venligst email mig, Jeg vil betale dig for at oversætte."
+        "default": "Opdag automatisk sprog"
       },
       "theme": {
         "label": "Tema",

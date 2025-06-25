@@ -145,8 +145,7 @@
     "settings": {
       "heading": "Setari",
       "language": {
-        "label": "Limbi",
-        "helpText": "Suportul lingvistic este incomplet. Vă rog să-mi trimiteți un e-mail, vă voi plăti pentru traducere."
+        "label": "Limbi"
       },
       "theme": {
         "label": "Tema",

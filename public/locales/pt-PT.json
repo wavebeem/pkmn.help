@@ -15,7 +15,7 @@
     "specialMoves": {
       "choose": "Escolher movimentos especiais",
       "names": {
-        "freeze-dry": "Secagem Congelante",
+        "freeze-dry": "Congelar a Seco",
         "thousand_arrows": "Mil Flechas",
         "flying_press": "Prensa Voadora"
       }
@@ -24,7 +24,7 @@
       "heading": "Cobertura da Pokédex",
       "edit": "Editar lista",
       "weakness": "Fraco",
-      "normal": "Normal",
+      "normal": "Neutro",
       "resistance": "Resistente"
     },
     "teraPokemon": "Pokémon Tera",
@@ -34,7 +34,7 @@
         "heading": "Lista de cobertura de fraquezas"
       },
       "normal": {
-        "heading": "Lista de cobertura de eficácia normal"
+        "heading": "Lista de coberturas com eficácia neutra"
       },
       "resistance": {
         "heading": "Lista de cobertura de resistências"
@@ -43,8 +43,8 @@
   },
   "coverage": {
     "heading": "Cobertura da Pokédex",
-    "paragraph1": "Importar/exportar ficheiros CSV da Pokédex personalizados para ver a cobertura de diferentes Pokémons. Crie um ficheiro CSV personalizado apenas com os Pokémons da categoria OU ou cria os teus próprios Pokémons de raiz.",
-    "paragraph2": "Os dados CSV são carregados por nome de cabeçalho de coluna e não por ordem de coluna, pelo que podes adicionar ou reordenar colunas se quiseres (por exemplo, adicionar uma coluna \"nível\" ou uma coluna \"notas\").",
+    "paragraph1": "Importar/exportar ficheiros CSV da Pokédex personalizados para ver a cobertura de diferentes Pokémons. Crie um ficheiro CSV personalizado apenas com os Pokémons da categoria OU ou crie os seus próprios Pokémons de raiz.",
+    "paragraph2": "Os dados CSV são carregados por nome de coluna e não por ordem de coluna, pelo que pode adicionar ou reordenar colunas se quiser (por exemplo, adicionar uma coluna \"nível\" ou uma coluna \"notas\").",
     "paragraph3": "Os ficheiros CSV podem ser editados com o Google Sheets, o Microsoft Excel, o OpenOffice, o LibreOffice, o Notepad e muito mais.",
     "csvHeaders": {
       "number": "Número",
@@ -63,30 +63,31 @@
     },
     "reset": {
       "button": "Reiniciar",
-      "description": "Repor a Pokédex predefinida"
+      "description": "Repor para a Pokédex predefinida"
     },
-    "filename": "pkmn.help tipo cobertura.csv",
+    "filename": "pkmn.help cobertura por tipo.csv",
     "status": {
       "imported": "Importadas {{ n }} formas de Pokémon de “{{ file }}\"",
       "exported": "Formas de Pokémon predefinidas exportadas",
       "reset": "Formas de Pokémon predefinidas carregadas",
       "errored": "Erro ao carregar CSV. Não alterar os nomes dos cabeçalhos."
     },
-    "back": "Voltar ao ataque"
+    "back": "Voltar a ataque"
   },
   "defense": {
+    "chooseTypes": "Escolher tipos",
     "takesXFrom": "Recebe {{ x }} de",
     "chooseAbility": "Escolher habilidade",
     "chooseTeraType": "Selecionar o tipo de tera",
     "abilityNames": {
       "none": "Nenhum",
-      "tinted_lens": "Lente Colorida",
-      "scrappy": "Audacioso",
+      "tinted_lens": "Lentes Tingidas",
+      "scrappy": "Scrappy",
       "tera_shell": "Casco Tera",
       "filter": "Filtro",
-      "wonder_guard": "Proteção Maravilhosa",
+      "wonder_guard": "Guarda Maravilhosa",
       "delta_stream": "Corrente Delta",
-      "fluffy": "Lanoso",
+      "fluffy": "Fofinho",
       "purifying_salt": "Sal Purificador",
       "heatproof": "À Prova de Fogo",
       "water_bubble": "Bolha de Água",
@@ -98,10 +99,10 @@
       "dry_skin": "Pele Seca",
       "storm_drain": "Atração de Tormentas",
       "water_absorb": "Absorção de Água",
-      "sap_sipper": "Absorve-Erva",
+      "sap_sipper": "Bebedor de Seiva",
       "lightning_rod": "Para-Raios",
-      "motor_drive": "Motor Drive: Propulsão",
-      "volt_absorb": "Absorve Eletricidade"
+      "motor_drive": "Motor Elétrico",
+      "volt_absorb": "Absorção de Eletricidade"
     },
     "mode": {
       "heading": "Escolher modo",
@@ -121,8 +122,7 @@
       "type": "Tipo",
       "edit": "Editar",
       "remove": "Remover"
-    },
-    "chooseTypes": "Escolher tipos"
+    }
   },
   "pokedex": {
     "search": {
@@ -170,12 +170,12 @@
   },
   "pokedexHelp": {
     "searchByName": {
-      "heading": "Procurar por nome",
-      "description": "Podes procurar um Pokémon pelo nome. Se só te lembrares de parte do nome do Pokémon, é provável que o consigas encontrar na mesma. No entanto, a pesquisa não consegue lidar com erros de escrita de momento."
+      "heading": "Pesquisar por nome",
+      "description": "Pode procurar um Pokémon pelo nome. Se só se lembrar de parte do nome do Pokémon, é provável que o consiga encontrar na mesma. No entanto, a pesquisa não consegue lidar com erros de escrita por enquanto."
     },
     "searchByNumber": {
-      "heading": "Procurar por número",
-      "description": "Pesquisa por número da dex nacional. Se quiseres Bulbasaur, basta digitar 1 e não #001."
+      "heading": "Pesquisar por número",
+      "description": "Pesquisar por número da dex nacional. Se quiseres Bulbasaur, basta digitar 1 e não #001."
     },
     "searchByType": {
       "heading": "Pesquisar por tipo",
@@ -184,47 +184,46 @@
     "searchExamples": {
       "type": {
         "query": "fogo",
-        "description": "Procurar Pokémons que tenham fogo como um dos seus tipos em qualquer forma (por exemplo, Charmander, Charizard, Rotom)."
+        "description": "Pesquisar por Pokémons que tenham fogo como um dos seus tipos em qualquer forma (por exemplo, Charmander, Charizard, Rotom)."
       },
       "doubleType": {
         "query": "água voador",
-        "description": "Procurar Pokémons que sejam água/voadores (por exemplo, Gyarados) ou voadores/água (por exemplo, Cramorant)."
+        "description": "Pesquisar por Pokémons que sejam água/voador (por exemplo, Gyarados) ou voador/água (por exemplo, Cramorant)."
       },
       "singleType": {
         "query": "relva nenhum",
-        "description": "Procurar Pokémons que sejam apenas do tipo erva, sem 2º tipo (por exemplo, Tangela, Chikorita, Lilligant)."
+        "description": "Pesquisar por Pokémons que sejam apenas do tipo erva, sem 2º tipo (por exemplo, Tangela, Chikorita, Lilligant)."
       }
     },
     "back": "Voltar à Pokédex"
   },
   "more": {
     "contact": {
-      "heading": "Contacta-me",
+      "heading": "Contacte-me",
       "intro": "Olá, eu sou o <homepage>Sage</homepage> (eles/elas), e criei a Calculadora de Tipos de Pokémon (pkmn.help).",
-      "email": "Envia as tuas ideias e agradecimentos por correio eletrónico para <email>pkmn@wavebeem.com</email>."
+      "email": "Envie as suas ideias e agradecimentos por correio eletrónico para <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
       "heading": "Definições",
       "language": {
-        "label": "Linguagem",
+        "label": "Idioma",
         "default": "Deteção automática de idioma",
         "official": "Línguas oficiais",
-        "unofficial": "Línguas não oficiais",
-        "helpText": "O suporte linguístico está incompleto. Por favor, envia-me um e-mail e eu pago-te para traduzir."
+        "unofficial": "Línguas não oficiais"
       },
       "theme": {
         "label": "Tema",
-        "help": "A \"predefinição do sistema\" muda automaticamente consoante as definições do teu sistema operativo.",
+        "help": "A \"predefinição do sistema\" muda automaticamente consoante as definições do seu sistema operativo.",
         "values": {
           "auto": "Predefinição do sistema",
-          "light": "Luz",
+          "light": "Claro",
           "dark": "Escuro",
           "night": "Noite"
         }
       },
       "typeCount": {
         "label": "Número de tipos",
-        "help": "Os Pokémon podem ter três tipos de uma só vez se forem atingidos pela Maldição da Floresta ou pelo Travessura-ou-Doçura. O campo do terceiro tipo está oculto por defeito, uma vez que raramente é utilizado.",
+        "help": "Os Pokémon podem ter três tipos de uma só vez se forem atingidos pela Maldição da Floresta ou pelo Doçura ou Travessura. O campo do terceiro tipo está oculto por predefinição, uma vez que raramente é utilizado.",
         "values": {
           "2": "Dois tipos (2)",
           "3": "Três tipos (3)"
@@ -233,7 +232,7 @@
     },
     "changes": {
       "heading": "O que há de novo",
-      "description": "Vê o que há de novo em <changelog>changelog</changelog>."
+      "description": "Veja o que há de novo em <changelog>changelog</changelog>."
     },
     "help": {
       "heading": "Ajuda",
@@ -244,14 +243,15 @@
     },
     "privacy": {
       "heading": "Privacidade",
-      "description": "Nunca publicarei anúncios ou roubarei os teus dados pessoais. Utilizo o <plausible>Plausible Analytics</plausible>, que é auto-financiado, independente, está alojado na UE e não armazena quaisquer cookies no teu computador."
+      "description": "Nunca publicarei anúncios ou roubarei os seus dados pessoais. Utilizo o <plausible>Plausible Analytics</plausible>, que é auto-financiado, independente, está situado na UE e não armazena quaisquer cookies no seu computador."
     },
     "givingBack": {
       "heading": "Demonstrar apreço",
-      "description": "Passei inúmeras horas a melhorar este site. Se aprecias o que fiz, considera fazer um donativo a instituições de caridade que apoiem a justiça racial e os direitos dos transexuais."
+      "description": "Passei inúmeras horas a melhorar este site. Se aprecia o que fiz, considere fazer um donativo a instituições de caridade que apoiem a justiça racial e os direitos dos transexuais."
     },
     "thanks": {
-      "heading": "Agradecimentos especiais"
+      "heading": "Agradecimentos especiais",
+      "description": "Veja todos os que ajudaram a criar este website nos <credits>credits</credits>."
     },
     "openSource": {
       "heading": "Fonte pública",
@@ -262,26 +262,26 @@
     }
   },
   "types": {
-    "none": "Nenhum",
     "normal": "Normal",
-    "fighting": "Luta",
+    "fighting": "Lutador",
     "flying": "Voador",
     "poison": "Veneno",
     "ground": "Terra",
-    "rock": "Pedra",
+    "rock": "Rocha",
     "bug": "Inseto",
     "ghost": "Fantasma",
     "steel": "Aço",
     "fire": "Fogo",
     "water": "Água",
-    "grass": "Relva",
+    "grass": "Erva",
     "electric": "Elétrico",
     "psychic": "Psíquico",
     "ice": "Gelo",
     "dragon": "Dragão",
-    "dark": "Sombrio",
+    "dark": "Sinistro",
     "fairy": "Fada",
-    "stellar": "Estelar"
+    "stellar": "Estelar",
+    "none": "Nenhum"
   },
   "banners": {
     "updateReady": {

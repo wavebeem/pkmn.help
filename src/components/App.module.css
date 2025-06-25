@@ -14,14 +14,14 @@
   border-radius: 9999px;
   background: radial-gradient(
     circle at center,
-    hsl(190 80% 30% / 30%),
-    hsl(190 80% 30% / 80%) 70%
+    hsl(200 80% 30% / 30%),
+    hsl(200 80% 30% / 80%) 70%
   );
   backdrop-filter: saturate(200%) blur(8px);
   box-shadow:
     /* Shine 1 */
-    inset 0 0 0 1px hsl(190 80% 90% / 30%),
-    /* Shine 2 */ inset 0 0 16px hsl(190 80% 90% / 90%),
+    inset 0 0 0 1px hsl(200 80% 90% / 30%),
+    /* Shine 2 */ inset 0 0 16px hsl(200 80% 90% / 90%),
     /* Shadow 0 */ 0 0 0 1px hsl(0 0% 0% / 10%),
     /* Shadow 1 */ 0 4px 8px hsl(0 0% 0% / 20%),
     /* Shadow 2 */ 0 0 16px hsl(0 0% 0% / 30%),
@@ -241,7 +241,7 @@
 }
 
 .tab[aria-current="page"] {
-  border-color: var(--color-fg1);
-  background: var(--color-fg1);
+  border-color: var(--color-accent);
+  background: var(--color-accent);
   color: var(--color-bg1);
 }

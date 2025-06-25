@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,
 offense.coverage.heading,Pokédex coverage,Pokédex dækning
 offense.coverage.edit,Edit list,Rediger listen
 offense.coverage.weakness,Weak,Svag
-offense.coverage.normal,Normal,
+offense.coverage.normal,Neutral,
 offense.coverage.resistance,Resist,Resistent
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,Ingen Pokèmon blev fundet eller ingen typer valgt
 offense.coverageList.weakness.heading,Weakness coverage list,Liste der dækker over svagheder
-offense.coverageList.normal.heading,Normal effectiveness coverage list,
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,
 offense.coverageList.resistance.heading,Resistance coverage list,Liste der dækker over resistens
 coverage.heading,Pokédex coverage,Pokèdex dækning
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",Importer/Eksporter Hjemmelavede pokédex CSV filer for at se dækningen på forskellige pokemons. Lav en hjemmelavet CSV file kun med OU Tier pokémons eller lav dine egne Pokemons.
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Sprog
 more.settings.language.default,Auto detect language,Opdag automatisk sprog
 more.settings.language.official,Official languages,
 more.settings.language.unofficial,Unofficial languages,
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Sprog understyttelsen er ukomplet. Venligst email mig, Jeg vil betale dig for at oversætte."
 more.settings.theme.label,Theme,Tema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""System standard"" vil ændre automatisk alt efter dine OS indstillinger."
 more.settings.theme.values.auto,System default,System Standard

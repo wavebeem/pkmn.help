@@ -111,7 +111,6 @@ more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wave
 more.settings.heading,Settings,
 more.settings.language.label,Language,
 more.settings.language.default,Auto detect language,
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",
 more.settings.theme.label,Theme,
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,
 more.settings.theme.values.auto,System default,

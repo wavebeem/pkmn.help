@@ -183,8 +183,7 @@
       "heading": "Ustawienia",
       "language": {
         "label": "Język",
-        "default": "Automatyczne wykrywanie języka",
-        "helpText": "Obsługa języków jest niekompletna. Proszę o kontakt mailowy, zapłacę za tłumaczenie."
+        "default": "Automatyczne wykrywanie języka"
       },
       "theme": {
         "label": "Motyw",

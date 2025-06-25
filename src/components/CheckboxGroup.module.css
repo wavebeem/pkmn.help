@@ -19,7 +19,7 @@
 .label:where(:has(.checkbox:checked)) {
   box-shadow: var(--shadow-button);
   border-color: var(--color-vibrant-border1);
-  background: var(--color-fg1);
+  background: var(--color-accent);
   color: var(--color-bg1);
 }
 

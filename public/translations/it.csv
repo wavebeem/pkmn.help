@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,Schiacciatuffo
 offense.coverage.heading,Pokédex coverage,Copertura debolezze
 offense.coverage.edit,Edit list,Modifica elenco
 offense.coverage.weakness,Weak,Debole
-offense.coverage.normal,Normal,Normale
+offense.coverage.normal,Neutral,Normale
 offense.coverage.resistance,Resist,Resistente
 offense.teraPokemon,Tera Pokémon,Teracristal
 offense.coverageList.empty,No Pokémon found or no types selected,Nessun Pokémon trovato o nessun tipo selezionato
 offense.coverageList.weakness.heading,Weakness coverage list,Elenco della copertura debolezze
-offense.coverageList.normal.heading,Normal effectiveness coverage list,Elenco della copertura efficacia normale
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,Elenco della copertura efficacia normale
 offense.coverageList.resistance.heading,Resistance coverage list,Elenco della copertura resistenze
 coverage.heading,Pokédex coverage,Copertura debolezze
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",Importa/esporta file Pokédex CSV personalizzati per vedere la copertura delle debolezze per diversi Pokémon. Crea un file CSV personalizzato solo con i Pokémon di tier OU (Estremamente usati) o crea i tuoi Pokémon da zero.
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Lingua
 more.settings.language.default,Auto detect language,Individua lingua automaticamente
 more.settings.language.official,Official languages,Lingue ufficiali
 more.settings.language.unofficial,Unofficial languages,Lingue non ufficiali
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Il supporto alle lingue è incompleto. Per favore scrivimi una mail, ti pagherò per tradurre."
 more.settings.theme.label,Theme,Tema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""Predefinito di sistema"" cambierà automaticamente in base alle impostazioni attive sul tuo sistema operativo."
 more.settings.theme.values.auto,System default,Predefinito di sistema

@@ -208,8 +208,7 @@
         "label": "Språk",
         "default": "Automatisk oppdag språk",
         "official": "Offisielle språk",
-        "unofficial": "Uofisielle språk",
-        "helpText": "Språkstøtte er ikke ferdig. Plis send meg en epost; jeg vil betale deg for å oversette."
+        "unofficial": "Uofisielle språk"
       },
       "theme": {
         "label": "Tema",

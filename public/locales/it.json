@@ -209,8 +209,7 @@
         "label": "Lingua",
         "default": "Individua lingua automaticamente",
         "official": "Lingue ufficiali",
-        "unofficial": "Lingue non ufficiali",
-        "helpText": "Il supporto alle lingue è incompleto. Per favore scrivimi una mail, ti pagherò per tradurre."
+        "unofficial": "Lingue non ufficiali"
       },
       "theme": {
         "label": "Tema",

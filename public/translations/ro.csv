@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,
 offense.coverage.heading,Pokédex coverage,
 offense.coverage.edit,Edit list,
 offense.coverage.weakness,Weak,
-offense.coverage.normal,Normal,
+offense.coverage.normal,Neutral,
 offense.coverage.resistance,Resist,
 offense.teraPokemon,Tera Pokémon,
 offense.coverageList.empty,No Pokémon found or no types selected,
 offense.coverageList.weakness.heading,Weakness coverage list,
-offense.coverageList.normal.heading,Normal effectiveness coverage list,
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,
 offense.coverageList.resistance.heading,Resistance coverage list,
 coverage.heading,Pokédex coverage,Acoperire slabiciuni
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importa/exporta fișiere personalizate Pokédex CSV sa vezi acoperirea de slabiciuni pentru diferiti Pokémon. Creaza un fișier CSV cu doar OU nlivelul Pokémon, sau creaza propriul Pokémon."
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Limbi
 more.settings.language.default,Auto detect language,
 more.settings.language.official,Official languages,
 more.settings.language.unofficial,Unofficial languages,
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.","Suportul lingvistic este incomplet. Vă rog să-mi trimiteți un e-mail, vă voi plăti pentru traducere."
 more.settings.theme.label,Theme,Tema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,„Implicit sistem” se va schimba automat în funcție de setările sistemului de operare.
 more.settings.theme.values.auto,System default,Mod implicit

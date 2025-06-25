@@ -209,8 +209,7 @@
         "label": "Idioma",
         "default": "Detectar idioma automaticamente",
         "official": "Idiomas Oficiais",
-        "unofficial": "Idiomas Não-Oficiais",
-        "helpText": "O suporte de idiomas está incompleto. Por favor, pode me chamar pelo email, pago pela sua tradução."
+        "unofficial": "Idiomas Não-Oficiais"
       },
       "theme": {
         "label": "Tema",

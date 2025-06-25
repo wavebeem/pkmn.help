@@ -14,12 +14,12 @@ offense.specialMoves.names.flying_press,Flying Press,Flying Press
 offense.coverage.heading,Pokédex coverage,Pokédex Abdeckung
 offense.coverage.edit,Edit list,Editiere Liste
 offense.coverage.weakness,Weak,Sehr effektiv
-offense.coverage.normal,Normal,Normal effektiv
+offense.coverage.normal,Neutral,Normal effektiv
 offense.coverage.resistance,Resist,Nicht sehr effektiv
 offense.teraPokemon,Tera Pokémon,Terakristall-Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,Keine Pokémon gefunden oder keine Typen ausgewählt
 offense.coverageList.weakness.heading,Weakness coverage list,Schwächen-Abdeckungsliste
-offense.coverageList.normal.heading,Normal effectiveness coverage list,Normal effektiv Abdeckungsliste
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,Normal effektiv Abdeckungsliste
 offense.coverageList.resistance.heading,Resistance coverage list,Resistenzen-Abdeckungsliste
 coverage.heading,Pokédex coverage,Schwächen-Abdeckung
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importiere/exportiere benutzerdefinierte Pokédex-CSV-Dateien, um die Schwächen verschiedener Pokémon zu sehen. Erstelle eine benutzerdefinierte CSV-Datei nur mit OU-Tier-Pokémon oder erstelle sogar deine eigenen Pokémon von Grund auf."
@@ -133,7 +133,6 @@ more.settings.language.label,Language,Sprache
 more.settings.language.default,Auto detect language,Automatisch Sprache erkennen
 more.settings.language.official,Official languages,Offizielle Sprachen
 more.settings.language.unofficial,Unofficial languages,Inoffizielle Sprachen
-more.settings.language.helpText,"Language support is incomplete. Please email me, I will pay you to translate.",Die Sprachunterstützung ist unvollständig. Nur die Pokémon-Namen werden übersetzt.
 more.settings.theme.label,Theme,Thema
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,"""System Standard"" ändert sich automatisch je nach den Einstellungen Ihres Betriebssystems."
 more.settings.theme.values.auto,System default,System Standard

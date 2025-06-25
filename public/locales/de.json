@@ -209,8 +209,7 @@
         "label": "Sprache",
         "default": "Automatisch Sprache erkennen",
         "official": "Offizielle Sprachen",
-        "unofficial": "Inoffizielle Sprachen",
-        "helpText": "Die Sprachunterstützung ist unvollständig. Nur die Pokémon-Namen werden übersetzt."
+        "unofficial": "Inoffizielle Sprachen"
       },
       "theme": {
         "label": "Thema",

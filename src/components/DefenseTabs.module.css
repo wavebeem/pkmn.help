@@ -8,7 +8,7 @@
 }
 
 .tab[aria-current="page"] {
-  background: var(--color-fg1);
+  background: var(--color-accent);
   color: var(--color-bg1);
   border-color: transparent;
 }
