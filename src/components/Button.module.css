@@ -15,12 +15,6 @@
   box-shadow: var(--shadow-button);
 }
 
-@media (hover) {
-  .root:where(:not(:disabled)):hover {
-    background: var(--background-button-bg-hover);
-  }
-}
-
 .root:disabled {
   pointer-events: none;
   background: transparent;
@@ -29,7 +23,7 @@
 }
 
 .root[aria-pressed="true"] {
-  border-color: var(--color-accent);
-  background: var(--color-accent);
-  color: var(--color-bg1);
+  border-color: var(--color-vibrant-border);
+  background: var(--color-accent-bg);
+  color: var(--color-accent-fg);
 }

@@ -190,17 +190,6 @@ input {
   background: var(--background-button-bg);
 }
 
-@media (hover) {
-  .button-bg:hover {
-    background: var(--background-button-bg-hover);
-    background: linear-gradient(
-      to bottom,
-      var(--color-button-hover1) 20%,
-      var(--color-button-hover1b)
-    );
-  }
-}
-
 .content-wide {
   max-width: 80rem;
 }
@@ -227,9 +216,9 @@ input {
 }
 
 .button-selected {
-  border-color: var(--color-accent);
-  background: var(--color-accent);
-  color: var(--color-bg1);
+  border-color: var(--color-vibrant-border);
+  background: var(--color-accent-bg);
+  color: var(--color-accent-fg);
 }
 
 .list-simple {

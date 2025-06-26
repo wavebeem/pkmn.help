@@ -16,19 +16,8 @@
   filter: var(--filter-darken);
 }
 
-@media (hover) {
-  .root:hover {
-    background: var(--color-button-hover1)
-      linear-gradient(
-        to bottom,
-        var(--color-button-hover1) 20%,
-        var(--color-button-hover1b)
-      );
-  }
-}
-
 .root[aria-pressed="true"] {
-  border-color: var(--color-accent);
-  background: var(--color-accent);
-  color: var(--color-bg1);
+  border-color: var(--color-vibrant-border);
+  background: var(--color-accent-bg);
+  color: var(--color-accent-fg);
 }

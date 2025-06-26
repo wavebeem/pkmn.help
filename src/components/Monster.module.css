@@ -5,10 +5,11 @@
   display: flex;
   color: var(--color-fg1);
   background: radial-gradient(
-    100% 50% at top,
-    var(--color-bg1),
-    var(--color-bg2)
-  );
+      50% 20% at top,
+      var(--color-bg1),
+      var(--color-bg1b)
+    )
+    var(--color-bg2);
   padding: var(--padding3);
   border-radius: var(--border-radius3);
 }

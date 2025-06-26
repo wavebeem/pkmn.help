@@ -3,7 +3,7 @@
   border-image: linear-gradient(
       to right,
       transparent,
-      var(--color-border3),
+      var(--color-border3) 64px calc(100% - 64px),
       transparent
     )
     1;

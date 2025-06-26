@@ -34,24 +34,13 @@
   width: 100%;
 }
 
-@media (hover) {
-  .item:hover {
-    background: linear-gradient(
-      var(--color-button-hover1),
-      var(--color-button-hover1b)
-    );
-    background: var(--background-button-bg-hover);
-    border-color: var(--color-border1);
-  }
-}
-
 .itemDivider {
   margin-block: -1px;
   border-top: 1px solid var(--color-border3);
   border-image: linear-gradient(
       to right,
       transparent,
-      var(--color-border3),
+      var(--color-border3) 64px calc(100% - 64px),
       transparent
     )
     1;
@@ -75,8 +64,8 @@
 
 .radio:checked {
   background:
-    linear-gradient(var(--color-bg1) 0 100%) content-box,
-    linear-gradient(var(--color-accent) 0 100%) border-box;
+    linear-gradient(var(--color-accent-fg) 0 100%) content-box,
+    linear-gradient(var(--color-accent-bg) 0 100%) border-box;
   border-color: var(--color-vibrant-border);
 }
 

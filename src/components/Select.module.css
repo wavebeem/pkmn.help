@@ -19,12 +19,6 @@
   box-shadow: var(--shadow-button);
 }
 
-@media (hover) {
-  .select select:hover {
-    background: var(--background-button-bg-hover);
-  }
-}
-
 .select:after {
   --_size: 0.5rem;
   --_border-size: 2px;
