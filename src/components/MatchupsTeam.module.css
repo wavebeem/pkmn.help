@@ -1,10 +1,5 @@
 .root {
   --border: var(--color-border2);
-  border-radius: var(--border-radius2);
-  border: 1px solid var(--border);
-  box-shadow: var(--shadow-button);
-  background: var(--color-bg1);
-  padding: var(--padding2);
 }
 
 .tableWrapper {
@@ -19,13 +14,14 @@
 
 .td {
   min-width: 4rem;
-  border: 1px solid var(--border);
+  border: 1px solid var(--color-border3);
   padding: var(--padding2) var(--padding3);
   font-size: 1.25rem;
+  background: var(--color-button1);
 }
 
 .td:not([data-count="0"]) {
-  background: var(--color-bg2);
+  background: var(--color-button1b);
 }
 
 .td[data-count="0"] {
@@ -46,6 +42,6 @@
 .thTop {
   padding: var(--padding2);
   font-weight: var(--weight-medium);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--color-border3);
   min-width: 4rem;
 }

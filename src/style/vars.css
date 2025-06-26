@@ -11,7 +11,6 @@ something. */
 
   --color-bg1: hsl(var(--hue-blue) 5% 100%);
   --color-bg2: hsl(var(--hue-blue) 10% 90%);
-  --color-bg1b: hsl(var(--hue-blue) 5% 92%);
   --color-fg1: hsl(var(--hue-blue) 15% 7%);
   --color-fg2: hsl(var(--hue-blue) 15% 20%);
   --color-fg3: hsl(var(--hue-blue) 15% 40%);
@@ -29,7 +28,6 @@ something. */
   --color-button1b: hsl(var(--hue-blue) 5% 96%);
   --color-badge: hsl(var(--hue-green) 70% 30%);
   --color-link: hsl(var(--hue-blue) 100% 50%);
-  --color-link-hover: hsl(var(--hue-blue) 60% 60%);
   --color-border1: hsl(var(--hue-blue) 10% 50%);
   --color-border2: hsl(var(--hue-blue) 10% 70%);
   --color-border3: hsl(var(--hue-blue) 10% 80%);
@@ -63,16 +61,16 @@ something. */
     var(--color-button1);
 
   --padding0: 0;
-  --padding1: 0.25rem;
-  --padding2: 0.5rem;
-  --padding3: 1rem;
-  --padding4: 2rem;
-  --padding5: 4rem;
+  --padding1: 4px;
+  --padding2: 8px;
+  --padding3: 16px;
+  --padding4: 32px;
+  --padding5: 64px;
 
   --border-radius0: 0;
-  --border-radius1: 0.125rem;
-  --border-radius2: 0.5rem;
-  --border-radius3: 1rem;
+  --border-radius1: 2px;
+  --border-radius2: 8px;
+  --border-radius3: 16px;
   --border-radius-pill: 9999px;
 
   --shadow-button: 0 2px 2px rgb(0 0 0 / 10%);
@@ -113,9 +111,8 @@ something. */
 }
 
 [data-theme="dark"] {
-  --color-bg1: hsl(var(--hue-blue) 10% 22%);
+  --color-bg1: hsl(var(--hue-blue) 10% 26%);
   --color-bg2: hsl(var(--hue-blue) 10% 14%);
-  --color-bg1b: hsl(var(--hue-blue) 10% 18%);
   --color-fg1: hsl(var(--hue-blue) 15% 92%);
   --color-fg2: hsl(var(--hue-blue) 15% 82%);
   --color-fg3: hsl(var(--hue-blue) 15% 72%);
@@ -132,7 +129,6 @@ something. */
   --color-button1b: hsl(var(--hue-blue) 10% 22%);
   --color-badge: hsl(var(--hue-green) 60% 60%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
-  --color-link-hover: hsl(var(--hue-blue) 80% 95%);
   --color-border1: hsl(var(--hue-blue) 10% 52%);
   --color-border2: hsl(var(--hue-blue) 10% 37%);
   --color-border3: hsl(var(--hue-blue) 10% 32%);
@@ -144,9 +140,8 @@ something. */
 }
 
 [data-theme="night"] {
-  --color-bg1: hsl(var(--hue-blue) 10% 10%);
+  --color-bg1: hsl(var(--hue-blue) 10% 15%);
   --color-bg2: hsl(var(--hue-blue) 10% 5%);
-  --color-bg1b: hsl(var(--hue-blue) 10% 9%);
   --color-fg1: hsl(var(--hue-blue) 15% 82%);
   --color-fg2: hsl(var(--hue-blue) 15% 72%);
   --color-fg3: hsl(var(--hue-blue) 15% 62%);
@@ -164,7 +159,6 @@ something. */
   --color-button1b: hsl(var(--hue-blue) 10% 14%);
   --color-badge: hsl(var(--hue-green) 60% 60%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
-  --color-link-hover: hsl(var(--hue-blue) 80% 95%);
   --color-border1: hsl(var(--hue-blue) 10% 42%);
   --color-border2: hsl(var(--hue-blue) 10% 30%);
   --color-border3: hsl(var(--hue-blue) 10% 25%);
@@ -177,9 +171,8 @@ something. */
 
 @media (prefers-color-scheme: dark) {
   [data-theme="auto"] {
-    --color-bg1: hsl(var(--hue-blue) 10% 22%);
+    --color-bg1: hsl(var(--hue-blue) 10% 26%);
     --color-bg2: hsl(var(--hue-blue) 10% 14%);
-    --color-bg1b: hsl(var(--hue-blue) 10% 18%);
     --color-fg1: hsl(var(--hue-blue) 15% 92%);
     --color-fg2: hsl(var(--hue-blue) 15% 82%);
     --color-fg3: hsl(var(--hue-blue) 15% 72%);
@@ -196,7 +189,6 @@ something. */
     --color-button1b: hsl(var(--hue-blue) 10% 22%);
     --color-badge: hsl(var(--hue-green) 60% 60%);
     --color-link: hsl(var(--hue-teal) 90% 75%);
-    --color-link-hover: hsl(var(--hue-blue) 80% 95%);
     --color-border1: hsl(var(--hue-blue) 10% 52%);
     --color-border2: hsl(var(--hue-blue) 10% 37%);
     --color-border3: hsl(var(--hue-blue) 10% 32%);

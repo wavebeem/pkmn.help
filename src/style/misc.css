@@ -117,28 +117,6 @@ input {
   word-break: break-all;
 }
 
-.fill-currentcolor {
-  fill: currentcolor;
-}
-
-.w0 {
-  width: 0;
-}
-
-.cursor-na {
-  cursor: not-allowed;
-}
-
-.fg-link {
-  color: var(--color-link);
-}
-
-@media (hover) {
-  .fg-link:hover {
-    color: var(--color-link-hover);
-  }
-}
-
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
