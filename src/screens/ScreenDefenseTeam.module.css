@@ -6,8 +6,8 @@
   grid-template-columns: minmax(0, 1fr);
 }
 
-@media (width >= 64rem) {
+@media (width >= 80rem) {
   .root {
-    grid-template-columns: 4fr 6fr;
+    grid-template-columns: 3fr 4fr;
   }
 }

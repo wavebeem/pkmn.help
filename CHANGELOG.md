@@ -1,5 +1,26 @@
 # Changelog
 
+## 2025-06-26
+
+- Removed the shiny gradient on buttons, it was too distracting
+
+  - It's just a subtle regular gradient now
+
+- Updated the color scheme to be blue tinted again
+
+  - Yes, you were right, person who emailed me about this
+
+- Further refined the Pokédex card styles
+
+- Updated the Defense Team page styles to better match the Pokédex card styles
+
+  - There was a lot of wasted space and visual noise on that page before
+
+  - I think it's easier to read now
+
+  - I also changed the size at which it switches to two column mode, so the team
+    edit area has more room
+
 ## 2025-06-25
 
 - Updated "Rocha" (Rock) to "Pedra" in Portuguese (Portugal)

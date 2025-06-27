@@ -9,7 +9,7 @@ something. */
   --hue-red: 0;
   --hue-teal: 200;
 
-  --color-bg1: hsl(var(--hue-blue) 5% 100%);
+  --color-bg1: hsl(var(--hue-blue) 10% 100%);
   --color-bg2: hsl(var(--hue-blue) 10% 90%);
   --color-fg1: hsl(var(--hue-blue) 15% 7%);
   --color-fg2: hsl(var(--hue-blue) 15% 20%);
@@ -24,8 +24,8 @@ something. */
   --color-header-text-shadow: hsl(var(--hue-blue) 5% 0% / 50%);
   --color-header-border1: hsl(var(--hue-blue) 5% 0% / 10%);
   --color-header-border2: hsl(var(--hue-blue) 5% 0% / 60%);
-  --color-button1: hsl(var(--hue-blue) 5% 100%);
-  --color-button1b: hsl(var(--hue-blue) 5% 96%);
+  --color-button1: hsl(var(--hue-blue) 10% 100%);
+  --color-button1b: hsl(var(--hue-blue) 10% 96%);
   --color-badge: hsl(var(--hue-green) 70% 30%);
   --color-link: hsl(var(--hue-blue) 100% 50%);
   --color-border1: hsl(var(--hue-blue) 10% 50%);
