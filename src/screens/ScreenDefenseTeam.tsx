@@ -191,7 +191,7 @@ export function ScreenDefenseTeam(): ReactNode {
             <FancyText tag="h2" fontSize="large" fontWeight="medium">
               {t("defense.team.heading")}
             </FancyText>
-            <Flex direction="column" gap="large">
+            <Flex direction="column">
               {teamTypes.length === 0 && (
                 <EmptyState>{t("defense.team.empty")}</EmptyState>
               )}

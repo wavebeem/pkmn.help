@@ -4,11 +4,11 @@
 }
 
 @media (hover) {
-  .link:hover {
-    color: var(--color-link-hover);
+  .noUnderline:hover {
+    text-decoration-line: underline;
   }
 }
 
 .noUnderline {
-  text-decoration: none;
+  text-decoration-line: none;
 }

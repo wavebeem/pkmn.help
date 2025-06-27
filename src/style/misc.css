@@ -117,28 +117,6 @@ input {
   word-break: break-all;
 }
 
-.fill-currentcolor {
-  fill: currentcolor;
-}
-
-.w0 {
-  width: 0;
-}
-
-.cursor-na {
-  cursor: not-allowed;
-}
-
-.fg-link {
-  color: var(--color-link);
-}
-
-@media (hover) {
-  .fg-link:hover {
-    color: var(--color-link-hover);
-  }
-}
-
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
@@ -190,17 +168,6 @@ input {
   background: var(--background-button-bg);
 }
 
-@media (hover) {
-  .button-bg:hover {
-    background: var(--background-button-bg-hover);
-    background: linear-gradient(
-      to bottom,
-      var(--color-button-hover1) 20%,
-      var(--color-button-hover1b)
-    );
-  }
-}
-
 .content-wide {
   max-width: 80rem;
 }
@@ -227,9 +194,9 @@ input {
 }
 
 .button-selected {
-  border-color: var(--color-accent);
-  background: var(--color-accent);
-  color: var(--color-bg1);
+  border-color: var(--color-vibrant-border);
+  background: var(--color-accent-bg);
+  color: var(--color-accent-fg);
 }
 
 .list-simple {

@@ -8,10 +8,6 @@
   border-color: var(--color-border1);
 }
 
-.CopyButton:hover {
-  background: var(--background-button-bg-hover);
-}
-
 .CopyButton[data-state="copied"] {
   box-shadow: none;
   background: var(--color-bg2);

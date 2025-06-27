@@ -19,8 +19,8 @@
 .label:where(:has(.checkbox:checked)) {
   box-shadow: var(--shadow-button);
   border-color: var(--color-vibrant-border1);
-  background: var(--color-accent);
-  color: var(--color-bg1);
+  background: var(--color-accent-bg);
+  color: var(--color-accent-fg);
 }
 
 .label:where(:not(:has(.checkbox:checked))) {
@@ -28,10 +28,6 @@
   background: var(--background-button-bg);
   color: var(--color-fg1);
   box-shadow: var(--shadow-button);
-}
-
-.label:where(:not(:has(.checkbox:checked))):hover {
-  background: var(--background-button-bg-hover);
 }
 
 .checkbox {
@@ -45,8 +41,8 @@
   height: 1.5rem;
   flex: none;
   border: 0;
-  background: var(--type-color);
-  color: white;
+  background: var(--color-accent-bg);
+  color: var(--color-accent-fg);
   box-shadow: var(--checkbox-border);
   border-radius: 0.125rem;
 }

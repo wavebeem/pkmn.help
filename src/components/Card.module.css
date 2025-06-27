@@ -1,10 +1,13 @@
 .Card {
   display: flex;
   flex-direction: column;
-  border-radius: var(--border-radius2);
-  background: var(--color-bg1);
   color: var(--color-fg1);
-  box-shadow: var(--shadow-button);
-  border: 1px solid var(--color-border2);
+  background:
+    radial-gradient(100% 64px at top, var(--color-bg1), var(--color-bg2))
+      padding-box,
+    linear-gradient(var(--color-bg1), var(--color-bg2) 64px, var(--color-bg2))
+      border-box var(--color-bg2);
   padding: var(--padding3);
+  border-radius: var(--border-radius3);
+  border: 1px solid transparent;
 }
