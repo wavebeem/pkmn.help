@@ -25,6 +25,7 @@ const typeColors = {
   fairy: "#ef70ef",
   none: "#808080",
   stellar: "#44628d",
+  aether: "#dfe2e8"
 } as const;
 
 export function typeColorAlpha(

@@ -46,6 +46,7 @@ export const Type = {
   dark: "dark",
   fairy: "fairy",
   stellar: "stellar",
+  aether: "aether",
   none: "none",
 } as const;
 
@@ -189,25 +190,37 @@ export const types = [
   Type.dark,
   Type.fairy,
   Type.stellar,
+  Type.aether
 ];
 
 export const typesWithoutNone = [...types];
 
-const typesGen2 = types.filter(
+const typesDefault = types.filter(
+  (t) => !(t === Type.aether),
+);
+
+const typesGen2 = typesDefault.filter(
   (t) => !(t === Type.fairy || t === Type.stellar),
 );
 const typesGen1 = typesGen2.filter(
   (t) => !(t === Type.dark || t === Type.steel),
 );
 
+const typesOdyssey = types.filter(
+  (t) => !(t === Type.fairy || t === Type.stellar),
+);
+
+
 export function typesForGeneration(generation: Generation): Type[] {
   switch (generation) {
     case "default":
-      return [...types];
+      return [...typesDefault];
     case "gen1":
       return [...typesGen1];
     case "gen2":
       return [...typesGen2];
+    case "odyssey":
+      return [...typesOdyssey];
     default:
       throw new Error(`typesForGeneration: ${generation}`);
   }

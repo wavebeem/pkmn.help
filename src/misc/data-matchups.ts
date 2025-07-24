@@ -29,6 +29,7 @@ const typesInPokemondbOrder = [
   Type.steel,
   Type.fairy,
   Type.stellar,
+  Type.aether,
 ];
 
 const _ = 1;
@@ -79,6 +80,29 @@ const gen2 = [
   [x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x],
 ];
 
+const genOdyssey = [
+  [_, _, _, _, _, _, _, _, _, _, _, _, h, 0, _, _, h, x, x, _],
+  [_, h, h, _, 2, 2, _, _, _, _, _, 2, h, _, h, _, 2, x, x, h],
+  [_, 2, h, _, h, _, _, _, 2, _, _, _, 2, _, h, _, _, x, x, h],
+  [_, _, 2, h, h, _, _, _, 0, 2, _, _, _, _, h, _, _, x, x, h],
+  [_, h, 2, _, h, _, _, _, 2, h, _, h, 2, _, h, _, h, x, x, _],
+  [_, h, h, _, 2, h, _, _, 2, 2, _, _, _, _, 2, _, h, x, x, _],
+  [2, _, _, _, _, 2, _, h, _, h, h, h, 2, 0, _, 2, 2, x, x, _],
+  [_, _, 2, _, 2, _, _, h, h, _, _, _, h, h, _, _, 0, x, x, 2],
+  [_, 2, _, 2, h, _, _, 2, _, 0, _, h, 2, _, _, _, 2, x, x, h],
+  [_, _, _, h, 2, _, 2, _, _, _, _, 2, h, _, _, _, h, x, x, h],
+  [_, _, _, _, _, h, 2, 2, _, _, h, _, _, _, _, 0, h, x, x, _],
+  [_, h, _, _, 2, _, h, h, _, h, 2, _, _, h, _, 2, h, x, x, _],
+  [_, 2, _, _, _, 2, h, _, h, 2, _, 2, _, _, _, _, h, x, x, _],
+  [0, _, _, _, _, _, _, _, _, _, 2, _, _, 2, _, h, _, x, x, _],
+  [_, _, _, _, _, _, _, _, _, _, 2, _, _, 2, _, h, _, x, x, _],
+  [_, _, _, _, _, h, h, _, _, _, 2, _, _, 2, _, h, _, x, x, 2],
+  [_, h, h, h, _, 2, _, _, _, _, _, _, 2, _, _, _, h, x, x, _],
+  [x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x],
+  [x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x, x],
+  [_, _, _, _, _, _, _, h, _, _, _, _, _, _, _, h, _, x, x, h],
+];
+
 const genDefault = [
   [_, _, _, _, _, _, _, _, _, _, _, _, h, 0, _, _, h, _, _],
   [_, h, h, _, 2, 2, _, _, _, _, _, 2, h, _, h, _, 2, _, _],
@@ -104,6 +128,7 @@ const genDefault = [
 const generationMatchupData = {
   gen1: gen1,
   gen2: gen2,
+  odyssey: genOdyssey,
   default: genDefault,
 };
 
@@ -358,6 +383,7 @@ function getKey(t1: Type, t2: Type): string {
 const generationMatchupMaps = {
   gen1: createMatchupMap("gen1"),
   gen2: createMatchupMap("gen2"),
+  odyssey: createMatchupMap("odyssey"),
   default: createMatchupMap("default"),
 };
 
