@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-08-30
+
+- Updated Romanian translation
+
 ## 2025-06-26
 
 - Removed the shiny gradient on buttons, it was too distracting

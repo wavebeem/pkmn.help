@@ -39,6 +39,7 @@
 
 ## Romanian translation
 
+- Diana Florea
 - Adam Hayes
 
 ## Polish translation

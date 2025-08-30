@@ -1,53 +1,90 @@
 {
-  "title": "Calculator tip Pokémon",
+  "title": "Calculator pentru tipurile Pokémoni-lor",
   "navigation": {
     "offense": "Atac",
-    "defense": "Protectie",
+    "defense": "Protecție",
     "pokedex": "Pokédex",
     "more": "Mai mult"
   },
   "offense": {
     "chooseTypes": "Alege tipuri",
-    "dealsXTo": "Oferte {{ x }} spre"
+    "dealsXTo": "Oferte {{ x }} spre",
+    "abilities": {
+      "choose": "Alege abilități"
+    },
+    "specialMoves": {
+      "choose": "Alege abilități speciale",
+      "names": {
+        "freeze-dry": "Freeze-Dry",
+        "thousand_arrows": "Thousand Arrows",
+        "flying_press": "Flying Press"
+      }
+    },
+    "coverage": {
+      "heading": "Acoperire Pokédex",
+      "edit": "Editează lista",
+      "weakness": "Slab",
+      "normal": "Neutru",
+      "resistance": "Rezistent"
+    },
+    "teraPokemon": "Pokémoni Tera",
+    "coverageList": {
+      "empty": "Niciun Pokémon găsit sau niciun tip selectat",
+      "weakness": {
+        "heading": "Listă de acoperire a slăbiciunilor"
+      },
+      "normal": {
+        "heading": "Listă de acoperire a eficacității neutre"
+      },
+      "resistance": {
+        "heading": "Listă de acoperire a rezistențelor"
+      }
+    }
   },
   "coverage": {
-    "heading": "Acoperire slabiciuni",
-    "paragraph1": "Importa/exporta fișiere personalizate Pokédex CSV sa vezi acoperirea de slabiciuni pentru diferiti Pokémon. Creaza un fișier CSV cu doar OU nlivelul Pokémon, sau creaza propriul Pokémon.",
-    "paragraph2": "Date de CSV e încarcat de numele de numele de colum, nu ordinea de colum, deci poti sa adaugi sau reordonezi columurile daca vrei (de exemplu: alege un colum de nivel sau de note",
+    "heading": "Acoperire Pokédex",
+    "paragraph1": "Importă/Exportă fișiere Pokédex CSV proprii pentru a vedea nivelul de acoperire pentru diferiți Pokémoni. Creează un fișier CSV modificat, cu rangul Pokémon OU, sau chiar creează-ți propriul fișier de la început.",
+    "paragraph2": "Datele CSV sunt încărcate după numele antentului coloanei, nu după ordinea coloanei, așa că poți adăuga sau re-organiza coloanele așa cum dorești (ex. poți adăuga o coloană \"rang\", sau o coloană \"note\").",
     "paragraph3": "Fișierele CSV pot fi editate cu Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad și multe altele.",
     "csvHeaders": {
-      "number": "Numar",
+      "number": "Număr",
       "name": "Nume",
       "type1": "Tip 1",
       "type2": "Tip 2",
       "type3": "Tip 3"
     },
     "export": {
-      "button": "Exporteaza",
+      "button": "Exportează",
       "description": "Exporteaza Pokémonul implicit spre un fișier CSV"
     },
     "import": {
-      "button": "Importa",
-      "description": "Importa un fișier CSV editat de Pokedex"
+      "button": "Importă",
+      "description": "Importă un fișier CSV editat de Pokédex"
     },
     "reset": {
-      "button": "Reseteaza",
-      "description": "Reseteaze Pokedexul la mod implicit"
+      "button": "Resetează",
+      "description": "Resetează Pokedéx-ul la modul implicit"
     },
     "filename": "pkmn.help tip coverage.csv",
     "status": {
       "imported": "Importat {{ n }} forme de Pokémon de la „{{ file }}”",
-      "exported": "Exporteaza forme de Pokémon implicit",
-      "reset": "Incarca forme de Pokémon implicit",
+      "exported": "Forme de Pokémoni implicite exportate",
+      "reset": "Încarcă forme de Pokémon implicit",
       "errored": "Eroare la încărcarea CSV. Nu schimbați numele antetului."
     },
     "back": "Înapoi la atac"
   },
   "defense": {
+    "chooseTypes": "Alege tipuri",
     "takesXFrom": "Ia {{ x }} de la",
+    "chooseAbility": "Alege abilitatea",
+    "chooseTeraType": "Alege abilitatea tera",
     "abilityNames": {
-      "filter": "Filter",
+      "none": "Niciuna",
+      "tinted_lens": "Tinted Lens",
+      "scrappy": "Scrappy",
       "tera_shell": "Tera Shell",
+      "filter": "Filter",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",
@@ -67,40 +104,64 @@
       "motor_drive": "Motor Drive",
       "volt_absorb": "Volt Absorb"
     },
-    "chooseTypes": "Alege tipuri"
+    "mode": {
+      "heading": "Alege modul",
+      "solo": "Solo",
+      "team": "Echipă"
+    },
+    "team": {
+      "tableHeading": "Matchup counts",
+      "heading": "Editează echipa Pokémon",
+      "add": "Adaugă Pokémon",
+      "empty": "Niciun Pokémon selectat",
+      "displayType": "Format Tabel",
+      "weak": "Slab",
+      "resist": "Rezistent",
+      "simple": "Simplu",
+      "complex": "Complex",
+      "type": "Tip",
+      "edit": "Editează",
+      "remove": "Înlătură"
+    }
   },
   "pokedex": {
     "search": {
-      "description": "Cauta nume, numar sau feluri",
+      "description": "Caută după nume, număr sau tipuri",
       "help": "Ajutor",
-      "helpLong": "Ajutor, cauta în Pokedex",
-      "notFound": "Nici un Pokémon gasit"
+      "helpLong": "Ajutor, caută în Pokedex",
+      "notFound": "Niciun Pokémon gasit"
     },
     "offense": {
       "text": "Atac"
     },
     "defense": {
-      "text": "Aparare"
+      "text": "Apărare"
+    },
+    "cry": {
+      "text": "Sunetul Pokémon-ului"
+    },
+    "shiny": {
+      "text": "Strălucitor"
     },
     "pagination": {
-      "next": "Urmatoarea",
-      "nextLong": "Urmatoarea",
-      "previous": "Anter",
+      "next": "Următoarea",
+      "nextLong": "Următoarea",
+      "previous": "Anterior",
       "previousLong": "Anterior",
       "firstLong": "Primul",
       "lastLong": "Ultimul"
     },
     "stats": {
       "hp": "HP",
-      "hpLong": "Puncte hit",
+      "hpLong": "Hit Points",
       "attack": "Atac",
       "attackLong": "Atac",
-      "defense": "Protectie",
-      "defenseLong": "Protectie",
+      "defense": "Protecție",
+      "defenseLong": "Protecție",
       "specialAttack": "Atk. Sp.",
       "specialAttackLong": "Atac Special",
-      "specialDefense": "Prot. Sp.",
-      "specialDefenseLong": "Protectie Speciala",
+      "specialDefense": "Sp. Def.",
+      "specialDefenseLong": "Protecție Specială",
       "speed": "Rapiditate",
       "speedLong": "Rapiditate",
       "total": "Total",
@@ -109,66 +170,74 @@
   },
   "pokedexHelp": {
     "searchByName": {
-      "heading": "Cauta nume",
-      "description": "Puteți căuta un Pokémon după nume. Dacă îți amintești doar o parte din numele Pokémonului, probabil că îl poate găsi pentru tine. Totuși, nu poate face față greșelilor de scriere acum."
+      "heading": "Caută după nume",
+      "description": "Puteți căuta un Pokémon după nume. Dacă îți amintești doar o parte din numele Pokémon-ului, probabil că îl poate găsi pentru tine. Totuși, nu poate face față greșelilor de scriere acum."
     },
     "searchByNumber": {
-      "heading": "Cauta dupa numar",
-      "description": "Cauta dupa numar de Pokedex national. Daca vrei bulbasaur, pune doar 1, nu #001."
+      "heading": "Caută după număr",
+      "description": "Caută după numărul de Pokedex național. Dacă vrei Bulbasaur, pune doar 1, nu #001."
     },
     "searchByType": {
-      "heading": "Cauta dupa tip",
+      "heading": "Caută după tip",
       "description": "Iată câteva exemple despre cum să căutați după tip."
     },
     "searchExamples": {
       "type": {
-        "query": "Foc",
-        "description": "Căutați Pokémon care au foc ca oricare dintre tipurile lor, sub orice formă (de exemplu, Charmander, Charizard, Rotom)."
+        "query": "foc",
+        "description": "Căutați Pokémon care au Foc ca oricare dintre tipurile lor, sub orice formă (de exemplu, Charmander, Charizard, Rotom)."
       },
       "doubleType": {
-        "query": "apa zburand",
-        "description": "Cauta Pokémoni care sunt apa/zburand ( de exemplu: Gyrados) sau zburand/apa (de exemplu: Cramorant)"
+        "query": "apă / zburător",
+        "description": "Caută Pokémoni care sunt apă/ zburător ( de exemplu: Gyrados) sau zburător /apă (de exemplu: Cramorant)."
       },
       "singleType": {
-        "query": "iarba nimic",
+        "query": "iarbă / nimic",
         "description": "Căutați Pokémon care sunt doar tip iarbă, fără al doilea tip (de exemplu, Tangela, Chikorita, Lilligant)."
       }
     },
-    "back": "Înapoi la Pokedex"
+    "back": "Înapoi la Pokédex"
   },
   "more": {
     "contact": {
-      "heading": "Contacteaza-ma",
-      "intro": "Bună, sunt <homepage>Sage</homepage> (ei) și am creat Calculator tip Pokémon (pkmn.help).",
-      "email": "Trimite idei si mulțumiri la <email>pkmn@wavebeem.com</email>."
+      "heading": "Contactează-mă",
+      "intro": "Bună, sunt <homepage>Sage</homepage> (ei/lor) și am creat Calculator tip Pokémon (pkmn.help).",
+      "email": "Trimite idei și mulțumiri la <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
-      "heading": "Setari",
+      "heading": "Setări",
       "language": {
-        "label": "Limbi"
+        "label": "Limbă",
+        "default": "Detectează limba automat",
+        "official": "Limbi oficiale",
+        "unofficial": "Limbi neoficiale"
       },
       "theme": {
-        "label": "Tema",
+        "label": "Temă",
         "help": "„Implicit sistem” se va schimba automat în funcție de setările sistemului de operare.",
         "values": {
           "auto": "Mod implicit",
-          "light": "Lumina",
-          "dark": "Întunecat"
+          "light": "Luminos",
+          "dark": "Întunecat",
+          "night": "Noapte"
         }
       },
       "typeCount": {
-        "label": "Numarul de tipuri",
-        "help": "Pokémonul poate avea trei tipuri simultan dacă este lovit cu Blestemul Forests sau Trick-or-Treat. Al treilea câmp de tip este ascuns în mod implicit, deoarece este rar folosit.",
+        "label": "Numărul de tipuri",
+        "help": "Pokémon-ul poate avea trei tipuri simultan dacă este lovit cu Forest's Curse sau Trick-or-Treat. Al treilea câmp de tip este ascuns în mod implicit, deoarece este rar folosit.",
         "values": {
-          "2": "Doua tipuri (2)",
-          "3": "Tri tipuri (3)"
+          "2": "Două tipuri (2)",
+          "3": "Trei tipuri (3)"
         }
       }
+    },
+    "changes": {
+      "heading": "Noutăți",
+      "description": "Vezi ce e nou în <changelog>changelog</changelog>."
     },
     "help": {
       "heading": "Ajutor",
       "serviceWorker": {
-        "description": "Acest buton poate repara probleme in aceasta aplicatie.",
+        "description": "Acest buton poate repara probleme în această aplicație.",
         "button": "Resetare"
       }
     },
@@ -177,57 +246,61 @@
       "description": "Nu voi difuza niciodată reclame sau nu voi fura datele dumneavoastră personale. Folosesc <plausible>Plausible Analytics</plausible>, care este autofinanțat, independent, găzduit în UE și nu stochează niciun cookie pe computerul dvs."
     },
     "givingBack": {
-      "heading": "Aratare de apreciare",
-      "description": "Eu am petrecut o multime de ore imbunatatind acest site. Daca apreciezi ce am facut, te rog considera donare la organizatii de caritate care supporta BIPOC si drepturile transgender."
+      "heading": "Arată-ți aprecierea",
+      "description": "Am petrecut o mulțime de ore îmbunătățind acest site. Dacă apreciezi ce am facut, te rog consideră să donezi către organizații de caritate care sprijină persoanele BIPOC și drepturile transgender."
     },
     "thanks": {
-      "heading": "Multumri speciale"
+      "heading": "Mulțumiri speciale",
+      "description": "Vezi toate persoanele care m-au ajutat să realizez acest website în <credits>credits</credits>."
     },
     "openSource": {
-      "heading": "Sursa Deschisa",
-      "description": "Codul de sursa e valabil pe <github>Github</github>."
+      "heading": "Open source",
+      "description": "Codul sursă este valabil pe <github>Github</github>."
     },
     "legalInfo": {
-      "heading": "Informatie legala"
+      "heading": "Informații legale"
     }
   },
   "types": {
     "normal": "Normal",
-    "fighting": "Luptand",
-    "flying": "Zburand",
-    "poison": "Otrava",
+    "fighting": "Luptător",
+    "flying": "Zburător",
+    "poison": "Otrăvitor",
     "ground": "Pamânt",
-    "rock": "Piatra",
-    "bug": "Insecta",
-    "ghost": "Fantoma",
+    "rock": "Piatră",
+    "bug": "Insectă",
+    "ghost": "Fantomă",
     "steel": "Oțel",
     "fire": "Foc",
-    "water": "Apa",
-    "grass": "Iarba",
+    "water": "Apă",
+    "grass": "Iarbă",
     "electric": "Electric",
     "psychic": "Psihic",
-    "ice": "Gheața",
+    "ice": "Gheață",
     "dragon": "Dragon",
     "dark": "Întuneric",
-    "fairy": "Zana",
+    "fairy": "Zână",
+    "stellar": "Stellar",
     "none": "Nimic"
   },
   "banners": {
     "updateReady": {
-      "description": "Poti sa updatezi",
-      "update": "Updateaza"
+      "description": "Un update este disponibil",
+      "whatsNew": "Noutăți",
+      "update": "Se face update"
     }
   },
   "general": {
-    "loading": "Se Incarca..."
+    "loading": "Se încarcă...",
+    "copyLink": "Copiază Link-ul"
   },
   "games": {
     "label": "Generație de joc",
-    "help": "Folosește efectivitate de fel de la generatii de joc diferite",
+    "help": "Folosește eficacitatea de tipuri de la generații de joc diferite.",
     "byID": {
-      "gen1": "Generatia 1",
-      "gen2": "Generatile 2-5",
-      "default": "Mod implicit (Generatia 6+)"
+      "gen1": "Generația 1",
+      "gen2": "Generațiile 2-5",
+      "default": "Generația 6+"
     }
   }
 }

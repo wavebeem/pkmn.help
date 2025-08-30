@@ -1,54 +1,54 @@
 Key,en,ro
-title,Pokémon Type Calculator,Calculator tip Pokémon
+title,Pokémon Type Calculator,Calculator pentru tipurile Pokémoni-lor
 navigation.offense,Offense,Atac
-navigation.defense,Defense,Protectie
+navigation.defense,Defense,Protecție
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mai mult
 offense.chooseTypes,Choose types,Alege tipuri
 offense.dealsXTo,Deals {{ x }} to,Oferte {{ x }} spre
-offense.abilities.choose,Choose abilities,
-offense.specialMoves.choose,Choose special moves,
-offense.specialMoves.names.freeze-dry,Freeze-Dry,
-offense.specialMoves.names.thousand_arrows,Thousand Arrows,
-offense.specialMoves.names.flying_press,Flying Press,
-offense.coverage.heading,Pokédex coverage,
-offense.coverage.edit,Edit list,
-offense.coverage.weakness,Weak,
-offense.coverage.normal,Neutral,
-offense.coverage.resistance,Resist,
-offense.teraPokemon,Tera Pokémon,
-offense.coverageList.empty,No Pokémon found or no types selected,
-offense.coverageList.weakness.heading,Weakness coverage list,
-offense.coverageList.normal.heading,Neutral effectiveness coverage list,
-offense.coverageList.resistance.heading,Resistance coverage list,
-coverage.heading,Pokédex coverage,Acoperire slabiciuni
-coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importa/exporta fișiere personalizate Pokédex CSV sa vezi acoperirea de slabiciuni pentru diferiti Pokémon. Creaza un fișier CSV cu doar OU nlivelul Pokémon, sau creaza propriul Pokémon."
-coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Date de CSV e încarcat de numele de numele de colum, nu ordinea de colum, deci poti sa adaugi sau reordonezi columurile daca vrei (de exemplu: alege un colum de nivel sau de note"
+offense.abilities.choose,Choose abilities,Alege abilități
+offense.specialMoves.choose,Choose special moves,Alege abilități speciale
+offense.specialMoves.names.freeze-dry,Freeze-Dry,Freeze-Dry
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,Thousand Arrows
+offense.specialMoves.names.flying_press,Flying Press,Flying Press
+offense.coverage.heading,Pokédex coverage,Acoperire Pokédex
+offense.coverage.edit,Edit list,Editează lista
+offense.coverage.weakness,Weak,Slab
+offense.coverage.normal,Neutral,Neutru
+offense.coverage.resistance,Resist,Rezistent
+offense.teraPokemon,Tera Pokémon,Pokémoni Tera
+offense.coverageList.empty,No Pokémon found or no types selected,Niciun Pokémon găsit sau niciun tip selectat
+offense.coverageList.weakness.heading,Weakness coverage list,Listă de acoperire a slăbiciunilor
+offense.coverageList.normal.heading,Neutral effectiveness coverage list,Listă de acoperire a eficacității neutre
+offense.coverageList.resistance.heading,Resistance coverage list,Listă de acoperire a rezistențelor
+coverage.heading,Pokédex coverage,Acoperire Pokédex
+coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importă/Exportă fișiere Pokédex CSV proprii pentru a vedea nivelul de acoperire pentru diferiți Pokémoni. Creează un fișier CSV modificat, cu rangul Pokémon OU, sau chiar creează-ți propriul fișier de la început."
+coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Datele CSV sunt încărcate după numele antentului coloanei, nu după ordinea coloanei, așa că poți adăuga sau re-organiza coloanele așa cum dorești (ex. poți adăuga o coloană ""rang"", sau o coloană ""note"")."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","Fișierele CSV pot fi editate cu Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad și multe altele."
-coverage.csvHeaders.number,Number,Numar
+coverage.csvHeaders.number,Number,Număr
 coverage.csvHeaders.name,Name,Nume
 coverage.csvHeaders.type1,Type 1,Tip 1
 coverage.csvHeaders.type2,Type 2,Tip 2
 coverage.csvHeaders.type3,Type 3,Tip 3
-coverage.export.button,Export,Exporteaza
+coverage.export.button,Export,Exportează
 coverage.export.description,Export the default Pokédex to a CSV file,Exporteaza Pokémonul implicit spre un fișier CSV
-coverage.import.button,Import,Importa
-coverage.import.description,Import an edited Pokédex CSV file,Importa un fișier CSV editat de Pokedex
-coverage.reset.button,Reset,Reseteaza
-coverage.reset.description,Reset to the default Pokédex,Reseteaze Pokedexul la mod implicit
+coverage.import.button,Import,Importă
+coverage.import.description,Import an edited Pokédex CSV file,Importă un fișier CSV editat de Pokédex
+coverage.reset.button,Reset,Resetează
+coverage.reset.description,Reset to the default Pokédex,Resetează Pokedéx-ul la modul implicit
 coverage.filename,pkmn.help type coverage.csv,pkmn.help tip coverage.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,Importat {{ n }} forme de Pokémon de la „{{ file }}”
-coverage.status.exported,Exported default Pokémon forms,Exporteaza forme de Pokémon implicit
-coverage.status.reset,Loaded default Pokémon forms,Incarca forme de Pokémon implicit
+coverage.status.exported,Exported default Pokémon forms,Forme de Pokémoni implicite exportate
+coverage.status.reset,Loaded default Pokémon forms,Încarcă forme de Pokémon implicit
 coverage.status.errored,Error loading CSV. Don't change header names.,Eroare la încărcarea CSV. Nu schimbați numele antetului.
 coverage.back,Back to offense,Înapoi la atac
 defense.chooseTypes,Choose types,Alege tipuri
 defense.takesXFrom,Takes {{ x }} from,Ia {{ x }} de la
-defense.chooseAbility,Choose ability,
-defense.chooseTeraType,Choose tera type,
-defense.abilityNames.none,None,
-defense.abilityNames.tinted_lens,Tinted Lens,
-defense.abilityNames.scrappy,Scrappy,
+defense.chooseAbility,Choose ability,Alege abilitatea
+defense.chooseTeraType,Choose tera type,Alege abilitatea tera
+defense.abilityNames.none,None,Niciuna
+defense.abilityNames.tinted_lens,Tinted Lens,Tinted Lens
+defense.abilityNames.scrappy,Scrappy,Scrappy
 defense.abilityNames.tera_shell,Tera Shell,Tera Shell
 defense.abilityNames.filter,Filter,Filter
 defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard
@@ -69,121 +69,121 @@ defense.abilityNames.sap_sipper,Sap Sipper,Sap Sipper
 defense.abilityNames.lightning_rod,Lightning Rod,Lightning Rod
 defense.abilityNames.motor_drive,Motor Drive,Motor Drive
 defense.abilityNames.volt_absorb,Volt Absorb,Volt Absorb
-defense.mode.heading,Choose mode,
-defense.mode.solo,Solo,
-defense.mode.team,Team,
-defense.team.tableHeading,Matchup counts,
-defense.team.heading,Edit Pokémon team,
-defense.team.add,Add Pokémon,
-defense.team.empty,No Pokémon selected,
-defense.team.displayType,Table format,
-defense.team.weak,Weak,
-defense.team.resist,Resist,
-defense.team.simple,Simple,
-defense.team.complex,Complex,
-defense.team.type,Type,
-defense.team.edit,Edit,
-defense.team.remove,Remove,
-pokedex.search.description,"Search by name, number, or types","Cauta nume, numar sau feluri"
+defense.mode.heading,Choose mode,Alege modul
+defense.mode.solo,Solo,Solo
+defense.mode.team,Team,Echipă
+defense.team.tableHeading,Matchup counts,Matchup counts
+defense.team.heading,Edit Pokémon team,Editează echipa Pokémon
+defense.team.add,Add Pokémon,Adaugă Pokémon
+defense.team.empty,No Pokémon selected,Niciun Pokémon selectat
+defense.team.displayType,Table format,Format Tabel
+defense.team.weak,Weak,Slab
+defense.team.resist,Resist,Rezistent
+defense.team.simple,Simple,Simplu
+defense.team.complex,Complex,Complex
+defense.team.type,Type,Tip
+defense.team.edit,Edit,Editează
+defense.team.remove,Remove,Înlătură
+pokedex.search.description,"Search by name, number, or types","Caută după nume, număr sau tipuri"
 pokedex.search.help,Help,Ajutor
-pokedex.search.helpLong,"Help, search Pokédex","Ajutor, cauta în Pokedex"
-pokedex.search.notFound,No Pokémon found,Nici un Pokémon gasit
+pokedex.search.helpLong,"Help, search Pokédex","Ajutor, caută în Pokedex"
+pokedex.search.notFound,No Pokémon found,Niciun Pokémon gasit
 pokedex.offense.text,Offense,Atac
-pokedex.defense.text,Defense,Aparare
-pokedex.cry.text,Cry,
-pokedex.shiny.text,Shiny,
-pokedex.pagination.next,Next,Urmatoarea
-pokedex.pagination.nextLong,Next,Urmatoarea
-pokedex.pagination.previous,Prev,Anter
+pokedex.defense.text,Defense,Apărare
+pokedex.cry.text,Cry,Sunetul Pokémon-ului
+pokedex.shiny.text,Shiny,Strălucitor
+pokedex.pagination.next,Next,Următoarea
+pokedex.pagination.nextLong,Next,Următoarea
+pokedex.pagination.previous,Prev,Anterior
 pokedex.pagination.previousLong,Previous,Anterior
 pokedex.pagination.firstLong,First,Primul
 pokedex.pagination.lastLong,Last,Ultimul
 pokedex.stats.hp,HP,HP
-pokedex.stats.hpLong,Hit Points,Puncte hit
+pokedex.stats.hpLong,Hit Points,Hit Points
 pokedex.stats.attack,Attack,Atac
 pokedex.stats.attackLong,Attack,Atac
-pokedex.stats.defense,Defense,Protectie
-pokedex.stats.defenseLong,Defense,Protectie
+pokedex.stats.defense,Defense,Protecție
+pokedex.stats.defenseLong,Defense,Protecție
 pokedex.stats.specialAttack,Sp. Atk.,Atk. Sp.
 pokedex.stats.specialAttackLong,Special Attack,Atac Special
-pokedex.stats.specialDefense,Sp. Def.,Prot. Sp.
-pokedex.stats.specialDefenseLong,Special Defense,Protectie Speciala
+pokedex.stats.specialDefense,Sp. Def.,Sp. Def.
+pokedex.stats.specialDefenseLong,Special Defense,Protecție Specială
 pokedex.stats.speed,Speed,Rapiditate
 pokedex.stats.speedLong,Speed,Rapiditate
 pokedex.stats.total,Total,Total
 pokedex.stats.totalLong,Total,Total
-pokedexHelp.searchByName.heading,Search by name,Cauta nume
-pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puteți căuta un Pokémon după nume. Dacă îți amintești doar o parte din numele Pokémonului, probabil că îl poate găsi pentru tine. Totuși, nu poate face față greșelilor de scriere acum."
-pokedexHelp.searchByNumber.heading,Search by number,Cauta dupa numar
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Cauta dupa numar de Pokedex national. Daca vrei bulbasaur, pune doar 1, nu #001."
-pokedexHelp.searchByType.heading,Search by type,Cauta dupa tip
+pokedexHelp.searchByName.heading,Search by name,Caută după nume
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puteți căuta un Pokémon după nume. Dacă îți amintești doar o parte din numele Pokémon-ului, probabil că îl poate găsi pentru tine. Totuși, nu poate face față greșelilor de scriere acum."
+pokedexHelp.searchByNumber.heading,Search by number,Caută după număr
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Caută după numărul de Pokedex național. Dacă vrei Bulbasaur, pune doar 1, nu #001."
+pokedexHelp.searchByType.heading,Search by type,Caută după tip
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Iată câteva exemple despre cum să căutați după tip.
-pokedexHelp.searchExamples.type.query,fire,Foc
-pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Căutați Pokémon care au foc ca oricare dintre tipurile lor, sub orice formă (de exemplu, Charmander, Charizard, Rotom)."
-pokedexHelp.searchExamples.doubleType.query,water flying,apa zburand
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,Cauta Pokémoni care sunt apa/zburand ( de exemplu: Gyrados) sau zburand/apa (de exemplu: Cramorant)
-pokedexHelp.searchExamples.singleType.query,grass none,iarba nimic
+pokedexHelp.searchExamples.type.query,fire,foc
+pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Căutați Pokémon care au Foc ca oricare dintre tipurile lor, sub orice formă (de exemplu, Charmander, Charizard, Rotom)."
+pokedexHelp.searchExamples.doubleType.query,water flying,apă / zburător
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,Caută Pokémoni care sunt apă/ zburător ( de exemplu: Gyrados) sau zburător /apă (de exemplu: Cramorant).
+pokedexHelp.searchExamples.singleType.query,grass none,iarbă / nimic
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Căutați Pokémon care sunt doar tip iarbă, fără al doilea tip (de exemplu, Tangela, Chikorita, Lilligant)."
-pokedexHelp.back,Back to Pokédex,Înapoi la Pokedex
-more.contact.heading,Contact me,Contacteaza-ma
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Bună, sunt <homepage>Sage</homepage> (ei) și am creat Calculator tip Pokémon (pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Trimite idei si mulțumiri la <email>pkmn@wavebeem.com</email>.
-more.settings.heading,Settings,Setari
-more.settings.language.label,Language,Limbi
-more.settings.language.default,Auto detect language,
-more.settings.language.official,Official languages,
-more.settings.language.unofficial,Unofficial languages,
-more.settings.theme.label,Theme,Tema
+pokedexHelp.back,Back to Pokédex,Înapoi la Pokédex
+more.contact.heading,Contact me,Contactează-mă
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Bună, sunt <homepage>Sage</homepage> (ei/lor) și am creat Calculator tip Pokémon (pkmn.help)."
+more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Trimite idei și mulțumiri la <email>pkmn@wavebeem.com</email>.
+more.settings.heading,Settings,Setări
+more.settings.language.label,Language,Limbă
+more.settings.language.default,Auto detect language,Detectează limba automat
+more.settings.language.official,Official languages,Limbi oficiale
+more.settings.language.unofficial,Unofficial languages,Limbi neoficiale
+more.settings.theme.label,Theme,Temă
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,„Implicit sistem” se va schimba automat în funcție de setările sistemului de operare.
 more.settings.theme.values.auto,System default,Mod implicit
-more.settings.theme.values.light,Light,Lumina
+more.settings.theme.values.light,Light,Luminos
 more.settings.theme.values.dark,Dark,Întunecat
-more.settings.theme.values.night,Night,
-more.settings.typeCount.label,Number of types,Numarul de tipuri
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Pokémonul poate avea trei tipuri simultan dacă este lovit cu Blestemul Forests sau Trick-or-Treat. Al treilea câmp de tip este ascuns în mod implicit, deoarece este rar folosit."
-more.settings.typeCount.values.2,Two types (2),Doua tipuri (2)
-more.settings.typeCount.values.3,Three types (3),Tri tipuri (3)
-more.changes.heading,What’s new,
-more.changes.description,See what’s new in the <changelog>changelog</changelog>.,
+more.settings.theme.values.night,Night,Noapte
+more.settings.typeCount.label,Number of types,Numărul de tipuri
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Pokémon-ul poate avea trei tipuri simultan dacă este lovit cu Forest's Curse sau Trick-or-Treat. Al treilea câmp de tip este ascuns în mod implicit, deoarece este rar folosit."
+more.settings.typeCount.values.2,Two types (2),Două tipuri (2)
+more.settings.typeCount.values.3,Three types (3),Trei tipuri (3)
+more.changes.heading,What’s new,Noutăți
+more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Vezi ce e nou în <changelog>changelog</changelog>.
 more.help.heading,Help,Ajutor
-more.help.serviceWorker.description,This button can help fix issues in the app.,Acest buton poate repara probleme in aceasta aplicatie.
+more.help.serviceWorker.description,This button can help fix issues in the app.,Acest buton poate repara probleme în această aplicație.
 more.help.serviceWorker.button,Reset,Resetare
 more.privacy.heading,Privacy,Intimitate
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Nu voi difuza niciodată reclame sau nu voi fura datele dumneavoastră personale. Folosesc <plausible>Plausible Analytics</plausible>, care este autofinanțat, independent, găzduit în UE și nu stochează niciun cookie pe computerul dvs."
-more.givingBack.heading,Showing appreciation,Aratare de apreciare
-more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Eu am petrecut o multime de ore imbunatatind acest site. Daca apreciezi ce am facut, te rog considera donare la organizatii de caritate care supporta BIPOC si drepturile transgender."
-more.thanks.heading,Special thanks,Multumri speciale
-more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
-more.openSource.heading,Open source,Sursa Deschisa
-more.openSource.description,Source code is available on <github>GitHub</github>.,Codul de sursa e valabil pe <github>Github</github>.
-more.legalInfo.heading,Legal info,Informatie legala
+more.givingBack.heading,Showing appreciation,Arată-ți aprecierea
+more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Am petrecut o mulțime de ore îmbunătățind acest site. Dacă apreciezi ce am facut, te rog consideră să donezi către organizații de caritate care sprijină persoanele BIPOC și drepturile transgender."
+more.thanks.heading,Special thanks,Mulțumiri speciale
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,Vezi toate persoanele care m-au ajutat să realizez acest website în <credits>credits</credits>.
+more.openSource.heading,Open source,Open source
+more.openSource.description,Source code is available on <github>GitHub</github>.,Codul sursă este valabil pe <github>Github</github>.
+more.legalInfo.heading,Legal info,Informații legale
 types.normal,Normal,Normal
-types.fighting,Fighting,Luptand
-types.flying,Flying,Zburand
-types.poison,Poison,Otrava
+types.fighting,Fighting,Luptător
+types.flying,Flying,Zburător
+types.poison,Poison,Otrăvitor
 types.ground,Ground,Pamânt
-types.rock,Rock,Piatra
-types.bug,Bug,Insecta
-types.ghost,Ghost,Fantoma
+types.rock,Rock,Piatră
+types.bug,Bug,Insectă
+types.ghost,Ghost,Fantomă
 types.steel,Steel,Oțel
 types.fire,Fire,Foc
-types.water,Water,Apa
-types.grass,Grass,Iarba
+types.water,Water,Apă
+types.grass,Grass,Iarbă
 types.electric,Electric,Electric
 types.psychic,Psychic,Psihic
-types.ice,Ice,Gheața
+types.ice,Ice,Gheață
 types.dragon,Dragon,Dragon
 types.dark,Dark,Întuneric
-types.fairy,Fairy,Zana
-types.stellar,Stellar,
+types.fairy,Fairy,Zână
+types.stellar,Stellar,Stellar
 types.none,None,Nimic
-banners.updateReady.description,An update is available,Poti sa updatezi
-banners.updateReady.whatsNew,What’s new,
-banners.updateReady.update,Update,Updateaza
-general.loading,Loading…,Se Incarca...
-general.copyLink,Copy link,
+banners.updateReady.description,An update is available,Un update este disponibil
+banners.updateReady.whatsNew,What’s new,Noutăți
+banners.updateReady.update,Update,Se face update
+general.loading,Loading…,Se încarcă...
+general.copyLink,Copy link,Copiază Link-ul
 games.label,Game generation,Generație de joc
-games.help,Use type effectiveness from different game generations.,Folosește efectivitate de fel de la generatii de joc diferite
-games.byID.gen1,Generation 1,Generatia 1
-games.byID.gen2,Generation 2–5,Generatile 2-5
-games.byID.default,Generation 6+,Mod implicit (Generatia 6+)
+games.help,Use type effectiveness from different game generations.,Folosește eficacitatea de tipuri de la generații de joc diferite.
+games.byID.gen1,Generation 1,Generația 1
+games.byID.gen2,Generation 2–5,Generațiile 2-5
+games.byID.default,Generation 6+,Generația 6+
