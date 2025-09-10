@@ -4,11 +4,14 @@
   position: relative;
   display: flex;
   color: var(--color-fg1);
-  background:
-    radial-gradient(100% 256px at top, var(--color-bg1), var(--color-bg2))
-      padding-box,
-    linear-gradient(var(--color-bg1), var(--color-bg2) 256px) border-box
-      var(--color-bg2);
+  background: radial-gradient(var(--color-card-bg)) padding-box,
+    radial-gradient(
+        50% 50% at top center,
+        var(--color-card-highlight),
+        var(--color-card-bg)
+      )
+      border-box var(--color-card-bg);
+  box-shadow: 0 1px 0 0 var(--color-card-shadow);
   padding: var(--padding3);
   border-radius: var(--border-radius3);
   border: 1px solid transparent;

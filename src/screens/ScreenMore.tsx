@@ -270,28 +270,38 @@ export function ScreenMore(): ReactNode {
                 ). If you have questions, feel free to ask. Confused about CSV
                 files? I can set up a Google Sheet for you.
               </FancyText>
-              <Flex direction="column" gap="large">
-                {supportedLanguages
-                  .slice(0)
-                  .filter((lang) => !(lang === "en" || lang === "ja-Hrkt"))
-                  .sort((a, b) => {
-                    return (
-                      compare(languageBounty[b], languageBounty[a]) ||
-                      compare(
-                        officialLanguagesSet.has(a) ? 0 : 1,
-                        officialLanguagesSet.has(b) ? 0 : 1,
-                      ) ||
-                      compare(
-                        languageCompletions[a] || 0,
-                        languageCompletions[b] || 0,
-                      ) ||
-                      compare(a, b)
-                    );
-                  })
-                  .map((lang) => {
-                    return <TranslationCard key={lang} lang={lang} />;
-                  })}
-              </Flex>
+              <FancyText tag="p">
+                * = Not an official language for Pokémon games
+              </FancyText>
+              <Card>
+                <Flex direction="column">
+                  {supportedLanguages
+                    .slice(0)
+                    .filter((lang) => !(lang === "en" || lang === "ja-Hrkt"))
+                    .sort((a, b) => {
+                      return (
+                        compare(languageBounty[b], languageBounty[a]) ||
+                        compare(
+                          officialLanguagesSet.has(a) ? 0 : 1,
+                          officialLanguagesSet.has(b) ? 0 : 1
+                        ) ||
+                        compare(
+                          languageCompletions[a] || 0,
+                          languageCompletions[b] || 0
+                        ) ||
+                        compare(a, b)
+                      );
+                    })
+                    .map((lang, i) => {
+                      return (
+                        <>
+                          {i > 0 && <Divider />}
+                          <TranslationCard key={lang} lang={lang} />
+                        </>
+                      );
+                    })}
+                </Flex>
+              </Card>
             </Flex>
           </CollapsibleSection>
 

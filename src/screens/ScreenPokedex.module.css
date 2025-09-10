@@ -6,7 +6,7 @@
 
 .monsterGrid {
   display: grid;
-  gap: 0 var(--padding3);
+  gap: var(--padding3);
   grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   margin: var(--padding3) 0;
   transition: 200ms opacity;

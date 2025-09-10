@@ -1,7 +1,38 @@
-.pill {
-  color: var(--color-fg1);
-  background: var(--color-bg2);
-  border: 1px solid var(--color-border2);
-  padding: 0 var(--padding2);
-  border-radius: var(--border-radius-pill);
+.root {
+  padding-inline: var(--padding2);
+  padding-block: var(--padding2);
+  display: grid;
+  grid-template-areas:
+    "title"
+    "completion"
+    "download";
+  grid-template-columns: auto;
+}
+
+@media (width >= 40rem) {
+  .root {
+    grid-template-areas:
+      "title completion"
+      "title download";
+    grid-template-columns: 1fr auto;
+  }
+
+  .download,
+  .completion {
+    text-align: right;
+  }
+}
+
+.title {
+  grid-area: title;
+  display: flex;
+  align-items: center;
+}
+
+.completion {
+  grid-area: completion;
+}
+
+.download {
+  grid-area: download;
 }

@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025-09-10
+
+- Updated card styles to be more clearly delineated but not distracting
+
+- Updated the translation progress section formatting
+
 ## 2025-08-30
 
 - Updated Romanian translation
