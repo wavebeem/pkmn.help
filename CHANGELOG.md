@@ -6,6 +6,8 @@
 
 - Updated the translation progress section formatting
 
+- Updated the header gradient slightly for light and dark themes
+
 ## 2025-08-30
 
 - Updated Romanian translation
