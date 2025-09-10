@@ -1,16 +1,14 @@
+import { ReactNode, useId } from "react";
 import { Lang } from "../misc/detectLanguage";
 import {
+  formatLanguageCompletion,
   languageNamesEnglish,
   languageNamesNative,
-  formatLanguageCompletion,
-  languageBounty,
   officialLanguagesSet,
 } from "../misc/lang";
-import styles from "./TranslationCard.module.css";
-import { Flex } from "./Flex";
-import { FancyText } from "./FancyText";
 import { ExternalLink } from "./ExternalLink";
-import { ReactNode, useId } from "react";
+import { FancyText } from "./FancyText";
+import styles from "./TranslationCard.module.css";
 
 interface TranslationCardProps {
   lang: Lang;
