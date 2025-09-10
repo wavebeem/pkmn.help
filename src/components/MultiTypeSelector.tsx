@@ -35,7 +35,7 @@ export function MultiTypeSelector({
               styles.label,
               "select-none",
               isChecked && "focus-tab",
-              !isChecked && "focus-simple"
+              !isChecked && "focus-simple",
             )}
             style={customProperties({
               "--type-color-bg": typeColorBG(type),

@@ -14,7 +14,7 @@ export function* range(length: number): Generator<number> {
 
 export function* iterStutter<T>(
   iterable: Iterable<T>,
-  count: number
+  count: number,
 ): Generator<T> {
   for (const value of iterable) {
     for (const _ of range(count)) {

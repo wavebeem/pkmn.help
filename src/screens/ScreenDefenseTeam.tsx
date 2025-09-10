@@ -79,19 +79,19 @@ export function ScreenDefenseTeam(): ReactNode {
   const navigate = useNavigate();
   const [format, setFormat] = useSessionStorage<MatchupsTeamProps["format"]>(
     "defenseTeam.format",
-    "simple"
+    "simple",
   );
   const [teamTypes, setTeamTypes] = useSessionStorage<Type[][]>(
     "defenseTeam.types",
-    []
+    [],
   );
   const [teamTeraTypes, setTeamTeraTypes] = useSessionStorage<Type[]>(
     "defenseTeam.teraTypes",
-    []
+    [],
   );
   const [teamAbilities, setTeamAbilities] = useSessionStorage<AbilityName[]>(
     "defenseTeam.abilities",
-    []
+    [],
   );
   const [typeCount] = useTypeCount();
   const [teamIndex, setTeamIndex] = useState(-1);
@@ -110,14 +110,14 @@ export function ScreenDefenseTeam(): ReactNode {
       setTeamTypes(
         search.getAll("types").map((type) => {
           return typesFromString(type).slice(0, Number(typeCount));
-        })
+        }),
       );
     }
     if (search.has("tera")) {
       setTeamTeraTypes(
         search.getAll("tera").map((type) => {
           return typesFromString(type)[0];
-        })
+        }),
       );
     }
     if (search.has("abilities")) {
@@ -125,7 +125,7 @@ export function ScreenDefenseTeam(): ReactNode {
         (search.get("abilities") || "")
           .split(/\s+/)
           .filter((str) => str)
-          .map(abilityNameFromString)
+          .map(abilityNameFromString),
       );
     }
     navigate({ search: "" }, { replace: true });
@@ -147,7 +147,7 @@ export function ScreenDefenseTeam(): ReactNode {
             return normalizeTypes(newTypes);
           }
           return normalizeTypes(types);
-        })
+        }),
       );
     };
   }
@@ -270,7 +270,7 @@ export function ScreenDefenseTeam(): ReactNode {
                         value={teamAbilities[typeIndex]}
                         onChange={(event) => {
                           const ability = abilityNameFromString(
-                            event.target.value
+                            event.target.value,
                           );
                           if (!ability) {
                             return;
@@ -281,7 +281,7 @@ export function ScreenDefenseTeam(): ReactNode {
                               index: typeIndex,
                               value: ability,
                               length: teamTypes.length,
-                            })
+                            }),
                           );
                         }}
                       >
@@ -311,7 +311,7 @@ export function ScreenDefenseTeam(): ReactNode {
                               index: typeIndex,
                               value: type,
                               length: teamTypes.length,
-                            })
+                            }),
                           );
                         }}
                       >
