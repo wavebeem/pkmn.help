@@ -32,7 +32,7 @@ export function CheckboxGroup<S extends string>({
               styles.label,
               "select-none",
               isChecked && "focus-tab",
-              !isChecked && "focus-simple",
+              !isChecked && "focus-simple"
             )}
             style={customProperties({
               "--type-color-bg": "var(--color-fg2)",

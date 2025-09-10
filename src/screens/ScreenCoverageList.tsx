@@ -33,7 +33,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   const [page, setPage] = useState(0);
   const types = typesFromString(search.get("types") || "");
   const abilities: AbilityName[] = splitTokens(
-    search.get("abilities") || "",
+    search.get("abilities") || ""
   ) as any;
   const moves: SpecialMove[] = splitTokens(search.get("moves") || "") as any;
   const partitionedMatchups = partitionMatchups({

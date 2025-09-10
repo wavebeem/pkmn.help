@@ -56,7 +56,7 @@ export function ScreenWeaknessCoverage(): ReactNode {
       {
         header: true,
         skipEmptyLines: true,
-      },
+      }
     );
     saveFile({
       filename: t("coverage.filename"),
@@ -105,7 +105,7 @@ export function ScreenWeaknessCoverage(): ReactNode {
             const row = err.row ? err.row + 2 : "?";
             return `Row ${row}: ${err.message}`;
           })
-          .join("\n"),
+          .join("\n")
       );
       alert(t("coverage.status.errored"));
       return;
@@ -118,7 +118,7 @@ export function ScreenWeaknessCoverage(): ReactNode {
       t("coverage.status.imported", {
         n: newCoverageTypes.length,
         file: file.name,
-      }),
+      })
     );
     setCoverageTypes(newCoverageTypes);
   }

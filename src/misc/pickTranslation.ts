@@ -1,6 +1,6 @@
 export function pickTranslation(
   obj: Record<string, string>,
-  language: string,
+  language: string
 ): string {
   if (language in obj) {
     return obj[language];

@@ -14,8 +14,7 @@
   border-radius: var(--border-radius3);
   overflow: hidden;
   box-shadow: var(--shadow-button);
-  background:
-    radial-gradient(
+  background: radial-gradient(
         100% 50% at top,
         var(--color-button1b),
         var(--color-button1)
@@ -63,8 +62,7 @@
 }
 
 .radio:checked {
-  background:
-    linear-gradient(var(--color-accent-fg) 0 100%) content-box,
+  background: linear-gradient(var(--color-accent-fg) 0 100%) content-box,
     linear-gradient(var(--color-accent-bg) 0 100%) border-box;
   border-color: var(--color-vibrant-border);
 }

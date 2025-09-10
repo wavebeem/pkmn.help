@@ -98,7 +98,7 @@ export function Matchups({
 
 function formatEffectiveness(
   eff: number | undefined,
-  locales: readonly string[],
+  locales: readonly string[]
 ): string {
   if (eff == undefined) {
     return characters.ndash;

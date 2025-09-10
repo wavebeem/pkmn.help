@@ -29,7 +29,7 @@ const typeColors = {
 
 export function typeColorAlpha(
   key: keyof typeof typeColors,
-  alpha: number,
+  alpha: number
 ): string {
   const aa = Math.floor((alpha / 100) * 0xff)
     .toString(16)

@@ -49,7 +49,7 @@ export function isLang(lang: string): lang is Lang {
   return langSet.has(lang as any);
 }
 
-export type Lang = (typeof supportedLanguages)[number];
+export type Lang = typeof supportedLanguages[number];
 
 export const supportedLanguages = [
   "en",

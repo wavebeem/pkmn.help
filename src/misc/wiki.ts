@@ -4,14 +4,14 @@ import { pickTranslation } from "./pickTranslation";
 export function getWikiLink(lang: string, pkmn: Pokemon): string {
   function getName(lang: string) {
     return encodeURIComponent(
-      pickTranslation(pkmn.speciesNames, lang).replace(/ /g, "_"),
+      pickTranslation(pkmn.speciesNames, lang).replace(/ /g, "_")
     );
   }
   switch (lang) {
     default:
     case "en":
       return `https://bulbapedia.bulbagarden.net/wiki/${getName(
-        "en",
+        "en"
       )}_(Pokémon)`;
     case "de":
       return `https://www.pokewiki.de/${getName("de")}`;

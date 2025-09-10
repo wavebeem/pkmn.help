@@ -15,7 +15,7 @@ export function FancyLink({ className, ...props }: FancyLinkProps): ReactNode {
           "focus-outline",
           styles.link,
           props.underline === "never" && styles.noUnderline,
-          className,
+          className
         )}
         {...props}
       />

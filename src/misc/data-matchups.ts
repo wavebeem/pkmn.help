@@ -110,7 +110,7 @@ const generationMatchupData = {
 function matchupForPair(
   gen: Generation,
   defenseType: Type,
-  offenseType: Type,
+  offenseType: Type
 ): number {
   const map = generationMatchupMaps[gen];
   const key = getKey(offenseType, defenseType);
@@ -182,7 +182,7 @@ export function partitionMatchups({
               abilityName: "none",
               offenseAbilityName,
               specialMove,
-            }),
+            })
           );
         }
       }
@@ -366,7 +366,7 @@ class Matchup {
     public generation: Generation,
     public type: Type,
     public effectiveness: number,
-    public formName?: string,
+    public formName?: string
   ) {}
 }
 
@@ -375,7 +375,7 @@ export class GroupedMatchups {
 
   toTestFormat(): Record<string, any> {
     return Object.fromEntries(
-      this.matchups.map((m) => [m.type, m.effectiveness]),
+      this.matchups.map((m) => [m.type, m.effectiveness])
     );
   }
 

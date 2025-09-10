@@ -40,7 +40,7 @@ const paths = {
 } as const;
 
 function createComponent(
-  name: keyof typeof paths,
+  name: keyof typeof paths
 ): (props: SVGProps<SVGSVGElement>) => ReactNode {
   const path = paths[name];
   function IconArrow(props: SVGProps<SVGSVGElement>): ReactNode {

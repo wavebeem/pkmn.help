@@ -27,7 +27,7 @@ type MatchupKey =
 
 function getEffectivenessDisplay(
   langs: readonly string[],
-  key: MatchupKey,
+  key: MatchupKey
 ): string {
   function num(value: number): string {
     return value.toLocaleString(langs);
@@ -159,7 +159,7 @@ export function MatchupsTeam({
 
   const rows: [Type, ...number[]][] = [];
   for (const genType of generationTypes) {
-    const row: (typeof rows)[number] = [genType];
+    const row: typeof rows[number] = [genType];
     for (const m of matchers) {
       let num = 0;
       for (const [typeIndex, types] of typesList.entries()) {

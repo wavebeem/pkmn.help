@@ -32,9 +32,7 @@
 .summary:focus-visible > * {
   border-radius: 2px;
   outline: 2px solid transparent;
-  box-shadow:
-    0 0 0 2px var(--color-bg1),
-    0 0 0 4px var(--color-fg1);
+  box-shadow: 0 0 0 2px var(--color-bg1), 0 0 0 4px var(--color-fg1);
 }
 
 .details[open] {

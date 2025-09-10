@@ -102,7 +102,7 @@ function useTranslationsWithBlankFallback() {
 }
 
 const pokeballThemes = ["premier", "regular"] as const;
-type PokeballTheme = (typeof pokeballThemes)[number];
+type PokeballTheme = typeof pokeballThemes[number];
 
 const pokeballThemeCycle = iterStutter(iterCycle(pokeballThemes), 2);
 
@@ -213,7 +213,7 @@ export function Layout(): ReactNode {
       pokeballTheme,
       setCoverageTypes,
       updateApp,
-    ],
+    ]
   );
 
   useEffect(() => {
@@ -222,7 +222,7 @@ export function Layout(): ReactNode {
 
   useEffect(() => {
     const meta = document.querySelector<HTMLMetaElement>(
-      "meta[name=theme-color]",
+      "meta[name=theme-color]"
     );
     if (meta && themeColor) {
       meta.content = themeColor;

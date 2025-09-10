@@ -18,7 +18,7 @@ export function Button({
         "active-darken",
         ariaPressed === true || ariaPressed === "true"
           ? "focus-selected"
-          : "focus-simple",
+          : "focus-simple"
       )}
       {...props}
     />
