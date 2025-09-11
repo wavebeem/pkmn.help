@@ -250,7 +250,8 @@
       "description": "Dediquei incontáveis horas melhorando este site. Se aprecia o que fiz, por favor, considere doar para caridades que apoiam os direitos BIPOC e transsexuais."
     },
     "thanks": {
-      "heading": "Agradecimentos especiais"
+      "heading": "Agradecimentos especiais",
+      "description": "Veja todos que ajudaram a fazer este website nos <credits>credits</credits>."
     },
     "openSource": {
       "heading": "Fonte",

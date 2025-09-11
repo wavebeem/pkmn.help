@@ -8,6 +8,8 @@
 
 - Updated the header gradient slightly for light and dark themes
 
+- Updated Brazilian Portuguese translation
+
 ## 2025-08-30
 
 - Updated Romanian translation
