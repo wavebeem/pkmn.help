@@ -141,7 +141,9 @@ export function ScreenPokedex(): ReactNode {
             <option value="attack">{t("pokedex.stats.attack")}</option>
             <option value="defense">{t("pokedex.stats.defense")}</option>
             <option value="spAttack">{t("pokedex.stats.specialAttack")}</option>
-            <option value="spDef">{t("pokedex.stats.specialDefense")}</option>
+            <option value="spDefense">
+              {t("pokedex.stats.specialDefense")}
+            </option>
             <option value="speed">{t("pokedex.stats.speed")}</option>
             <option value="total">{t("pokedex.stats.total")}</option>
           </Select>
