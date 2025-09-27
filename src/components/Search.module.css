@@ -29,6 +29,7 @@
   position: absolute;
   top: calc(50% - var(--icon-size) / 2 + 2px);
   left: calc(0.5rem);
+  pointer-events: none;
 }
 
 .iconClear {

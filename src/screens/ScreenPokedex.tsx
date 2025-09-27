@@ -121,13 +121,11 @@ export function ScreenPokedex(): ReactNode {
       <Flex direction="column" gap="large" padding="large">
         <Padding size="small" />
         <div className={styles.searchArea}>
-          <Flex direction="column" gap="medium">
-            <Search
-              label={t("pokedex.search.description")}
-              value={query}
-              onChange={updateSearch}
-            />
-          </Flex>
+          <Search
+            label={t("pokedex.search.description")}
+            value={query}
+            onChange={updateSearch}
+          />
           <Select
             label={t("pokedex.sorting.sortBy")}
             value={sortOrder}
