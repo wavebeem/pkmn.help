@@ -1,8 +1,10 @@
 # Changelog
 
-## 2025-09-10
+## 2025-09-27
 
 - Added sorting options to the Pokédex
+
+- Consolidated tab bar into header area on desktop
 
 ## 2025-09-10
 

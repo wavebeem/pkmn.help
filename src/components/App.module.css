@@ -72,29 +72,58 @@
 }
 
 .header {
-  text-shadow: 0 0 8px var(--color-header-text-shadow);
-  font-size: 1.25rem;
-  font-weight: var(--weight-medium);
+  text-shadow:
+    0 0 1px hsl(0 0% 0% / 25%),
+    0 1px 4px hsl(0 0% 0% / 30%);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--padding2);
-  /* border-bottom: 1px solid var(--color-header-border); */
-  /* box-shadow: inset 0 -1px 0 0 var(--color-header-border); */
+  flex-direction: column;
+  gap: var(--padding3);
   color: var(--color-header-text);
-  background: var(--background-header);
-  background-clip: border-box;
-  padding: var(--padding3);
+  background: var(--color-header-base);
+  border-bottom: 1px solid var(--color-header-border);
   margin: 0;
 }
 
-@media (width >= 40rem) {
-  .header {
+.headerContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding3);
+  padding: var(--padding3);
+  color: var(--color-header-text);
+}
+
+@media (width >= 60rem) {
+  .headerContent {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+
+.heading {
+  font-size: 1.25rem;
+  font-weight: var(--weight-medium);
+  color: var(--color-header-text);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--padding2);
+}
+
+@media (width >= 60rem) {
+  .heading {
     font-size: var(--font-size3);
   }
 }
 
-.headerButton {
+.heading a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.pokeball {
   --size: 30px;
   position: relative;
   padding: 0;
@@ -110,8 +139,7 @@
   );
   box-shadow:
     inset 0 0 0 1px hsl(0 0% 100% / 20%),
-    0 0 0 1px hsl(0 0% 0% / 25%),
-    0 2px 2px hsl(0 0% 0% / 30%);
+    0 1px 2px hsl(0 0% 0% / 30%);
   flex: none;
   width: var(--size);
   height: var(--size);
@@ -123,8 +151,8 @@
   transition-timing-function: ease-in-out;
 }
 
-.headerButton,
-.headerButton[data-theme="premier"] {
+.pokeball,
+.pokeball[data-theme="premier"] {
   --color-top1: hsl(0 0% 100%);
   --color-top2: hsl(0 0% 90%);
   --color-bottom1: hsl(0 0% 90%);
@@ -132,7 +160,7 @@
   --color-border: hsl(0 90% 30%);
 }
 
-.headerButton[data-theme="regular"] {
+.pokeball[data-theme="regular"] {
   --color-top1: hsl(0 90% 70%);
   --color-top2: hsl(0 90% 60%);
   --color-bottom1: hsl(0 0% 90%);
@@ -150,13 +178,13 @@
 }
 
 @media (prefers-reduced-motion) {
-  .headerButton {
+  .pokeball {
     animation: none;
     transition: none;
   }
 }
 
-.headerButton::after {
+.pokeball::after {
   box-sizing: border-box;
   --size: 12px;
   content: "";
@@ -173,21 +201,21 @@
 }
 
 @media (hover) {
-  .headerButton:hover {
+  .pokeball:hover {
     cursor: pointer;
     filter: brightness(1.05);
   }
 }
 
-.headerButton:active {
+.pokeball:active {
   filter: var(--filter-darken);
 }
 
-.headerButton:focus {
+.pokeball:focus {
   outline: none;
 }
 
-.headerButton:focus-visible {
+.pokeball:focus-visible {
   outline: 2px solid;
   outline-offset: 2px;
 }
@@ -209,39 +237,37 @@
 }
 
 .tabBar {
-  background: var(--color-bg1);
-  border-bottom: 1px solid var(--color-border2);
-  padding: var(--padding2);
   gap: var(--padding2);
-  border-color: var(--color-border2);
-  box-shadow:
-    0 2px 8px rgb(0 0 0 / 5%),
-    0 2px 16px rgb(0 0 0 / 5%);
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
 
-@media (width >= 40rem) {
+@media (width >= 60rem) {
   .tabBar {
     display: flex;
   }
 }
 
 .tab {
+  box-shadow:
+    0 0 1px hsl(0 0% 0% / 5%),
+    0 1px 4px hsl(0 0% 0% / 15%);
   text-decoration: none;
   padding: var(--padding1) var(--padding3);
   text-align: center;
-  border: 1px solid var(--color-border2);
   border-radius: var(--border-radius-pill);
-  background: var(--color-bg1);
-  color: var(--color-fg1);
+  background: var(--color-header-base);
+  border: 1px solid var(--color-header-highlight);
+  color: var(--color-header-text);
   font-weight: var(--weight-medium);
+  outline-color: currentColor;
 }
 
 .tab[aria-current="page"] {
-  border-color: var(--color-vibrant-border);
-  background: var(--color-accent-bg);
-  color: var(--color-accent-fg);
+  border-color: var(--color-header-text);
+  background: var(--color-header-text);
+  color: var(--color-header-dark);
+  text-shadow: none;
 }

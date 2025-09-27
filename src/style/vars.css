@@ -20,13 +20,11 @@ something. */
   --color-fg4: hsl(var(--hue-blue) 15% 60%);
   --color-accent-bg: hsl(var(--hue-blue) 15% 20%);
   --color-accent-fg: hsl(var(--hue-blue) 5% 100%);
-  --color-header-dark: hsl(var(--hue-red) 90% 15%);
-  --color-header-base: hsl(var(--hue-red) 90% 35%);
+  --color-header-dark: hsl(var(--hue-red) 80% 30%);
+  --color-header-base: hsl(var(--hue-red) 80% 40%);
   --color-header-highlight: hsl(var(--hue-red) 50% 55%);
   --color-header-text: #fff;
-  --color-header-text-shadow: hsl(var(--hue-blue) 5% 0% / 50%);
-  --color-header-border1: hsl(var(--hue-blue) 5% 0% / 10%);
-  --color-header-border2: hsl(var(--hue-blue) 5% 0% / 60%);
+  --color-header-border: hsl(var(--hue-red) 80% 30%);
   --color-button1: hsl(var(--hue-blue) 10% 100%);
   --color-button1b: hsl(var(--hue-blue) 10% 96%);
   --color-badge: hsl(var(--hue-green) 70% 30%);
@@ -41,21 +39,6 @@ something. */
 
   --weight-normal: 400;
   --weight-medium: 500;
-
-  --background-header:
-    linear-gradient(
-        to right,
-        var(--color-header-border1),
-        var(--color-header-border2),
-        var(--color-header-border1)
-      )
-      bottom / auto 1px no-repeat,
-    radial-gradient(
-        50% 100% at bottom,
-        var(--color-header-highlight),
-        var(--color-header-base)
-      )
-      var(--color-header-base);
 
   --background-button-bg: linear-gradient(
       var(--color-button1),
@@ -125,12 +108,11 @@ something. */
   --color-fg4: hsl(var(--hue-blue) 15% 62%);
   --color-accent-bg: hsl(var(--hue-blue) 15% 82%);
   --color-accent-fg: hsl(var(--hue-blue) 10% 7%);
-  --color-header-base: hsl(var(--hue-red) 60% 35%);
-  --color-header-highlight: hsl(var(--hue-red) 50% 45%);
+  --color-header-dark: hsl(var(--hue-red) 70% 30%);
+  --color-header-base: hsl(var(--hue-red) 70% 35%);
+  --color-header-highlight: hsl(var(--hue-red) 40% 50%);
   --color-header-text: #fff;
-  --color-header-text-shadow: hsl(var(--hue-blue) 5% 0% / 50%);
-  --color-header-border1: hsl(var(--hue-blue) 5% 100% / 20%);
-  --color-header-border2: hsl(var(--hue-blue) 5% 100% / 50%);
+  --color-header-border: hsl(var(--hue-red) 40% 50%);
   --color-button1: hsl(var(--hue-blue) 10% 26%);
   --color-button1b: hsl(var(--hue-blue) 10% 22%);
   --color-badge: hsl(var(--hue-green) 60% 60%);
@@ -159,11 +141,9 @@ something. */
   --color-accent-fg: hsl(var(--hue-blue) 15% 5%);
   --color-header-dark: hsl(var(--hue-blue) 5% 5%);
   --color-header-base: hsl(var(--hue-blue) 5% 10%);
-  --color-header-highlight: hsl(var(--hue-blue) 5% 20%);
+  --color-header-highlight: hsl(var(--hue-blue) 5% 30%);
   --color-header-text: hsl(var(--hue-blue) 5% 82%);
-  --color-header-text-shadow: hsl(var(--hue-blue) 5% 0% / 50%);
-  --color-header-border1: hsl(var(--hue-blue) 5% 100% / 5%);
-  --color-header-border2: hsl(var(--hue-blue) 5% 100% / 20%);
+  --color-header-border: hsl(var(--hue-blue) 5% 20%);
   --color-button1: hsl(var(--hue-blue) 10% 18%);
   --color-button1b: hsl(var(--hue-blue) 10% 14%);
   --color-badge: hsl(var(--hue-green) 60% 60%);
@@ -191,12 +171,11 @@ something. */
     --color-fg4: hsl(var(--hue-blue) 15% 62%);
     --color-accent-bg: hsl(var(--hue-blue) 15% 82%);
     --color-accent-fg: hsl(var(--hue-blue) 10% 7%);
-    --color-header-base: hsl(var(--hue-red) 60% 35%);
-    --color-header-highlight: hsl(var(--hue-red) 60% 55%);
+    --color-header-dark: hsl(var(--hue-red) 70% 30%);
+    --color-header-base: hsl(var(--hue-red) 70% 35%);
+    --color-header-highlight: hsl(var(--hue-red) 40% 50%);
     --color-header-text: #fff;
-    --color-header-text-shadow: hsl(var(--hue-blue) 5% 0% / 50%);
-    --color-header-border1: hsl(var(--hue-blue) 5% 100% / 20%);
-    --color-header-border2: hsl(var(--hue-blue) 5% 100% / 50%);
+    --color-header-border: hsl(var(--hue-red) 40% 50%);
     --color-button1: hsl(var(--hue-blue) 10% 26%);
     --color-button1b: hsl(var(--hue-blue) 10% 22%);
     --color-badge: hsl(var(--hue-green) 60% 60%);

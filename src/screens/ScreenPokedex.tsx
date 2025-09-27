@@ -84,6 +84,7 @@ export function ScreenPokedex(): ReactNode {
       });
     }
     switch (sortOrder) {
+      case "hp":
       case "attack":
       case "defense":
       case "spAttack":
@@ -136,6 +137,7 @@ export function ScreenPokedex(): ReactNode {
           >
             <option value="">Auto</option>
             <hr />
+            <option value="hp">{t("pokedex.stats.hp")}</option>
             <option value="attack">{t("pokedex.stats.attack")}</option>
             <option value="defense">{t("pokedex.stats.defense")}</option>
             <option value="spAttack">{t("pokedex.stats.specialAttack")}</option>

@@ -251,40 +251,49 @@ export function Layout(): ReactNode {
         </div>
       )}
       <div className={styles.root}>
-        <h1 className={styles.header} ref={h1Ref}>
-          <button
-            className={styles.headerButton}
-            data-theme={pokeballTheme}
-            aria-hidden={true}
-            onClick={(event) => {
-              event.preventDefault();
-              const pkmn = randomItem(AllPokemon);
-              if (!pkmn) {
-                return;
-              }
-              setEasterEgg(pkmn);
-              setPokeballTheme(iterNext(pokeballThemeCycle));
-            }}
-          />
-          <div>{t("title")}</div>
-        </h1>
-        <nav className={styles.tabBar}>
-          <NavLink className={tabClass} to="/offense/">
-            {t("navigation.offense")}
-          </NavLink>
-          <NavLink className={tabClass} to="/defense/">
-            {t("navigation.defense")}
-          </NavLink>
-          <NavLink className={tabClass} to="/pokedex/">
-            {t("navigation.pokedex")}
-          </NavLink>
-          <NavLink
-            className={classNames(tabClass, needRefresh && styles.pleaseUpdate)}
-            to="/more/"
+        <header className={styles.header}>
+          <div
+            className={classNames(styles.headerContent, "content-wide center")}
           >
-            {t("navigation.more")}
-          </NavLink>
-        </nav>
+            <h1 className={styles.heading} ref={h1Ref}>
+              <button
+                className={styles.pokeball}
+                data-theme={pokeballTheme}
+                aria-hidden={true}
+                onClick={(event) => {
+                  event.preventDefault();
+                  const pkmn = randomItem(AllPokemon);
+                  if (!pkmn) {
+                    return;
+                  }
+                  setEasterEgg(pkmn);
+                  setPokeballTheme(iterNext(pokeballThemeCycle));
+                }}
+              />
+              <NavLink to="/">{t("title")}</NavLink>
+            </h1>
+            <nav className={styles.tabBar}>
+              <NavLink className={tabClass} to="/offense/">
+                {t("navigation.offense")}
+              </NavLink>
+              <NavLink className={tabClass} to="/defense/">
+                {t("navigation.defense")}
+              </NavLink>
+              <NavLink className={tabClass} to="/pokedex/">
+                {t("navigation.pokedex")}
+              </NavLink>
+              <NavLink
+                className={classNames(
+                  tabClass,
+                  needRefresh && styles.pleaseUpdate,
+                )}
+                to="/more/"
+              >
+                {t("navigation.more")}
+              </NavLink>
+            </nav>
+          </div>
+        </header>
         <Outlet />
       </div>
     </AppContextProvider>
