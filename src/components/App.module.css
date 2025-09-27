@@ -227,13 +227,15 @@
 .pleaseUpdate::after {
   content: "";
   position: absolute;
-  top: -1px;
-  right: -1px;
-  width: 0.5em;
-  height: 0.5em;
+  top: -4px;
+  right: -4px;
+  width: 16px;
+  height: 16px;
   border-radius: 9999px;
-  background: var(--color-badge);
-  box-shadow: 0 0 0 2px var(--color-bg1);
+  background: var(--color-header-text);
+  box-shadow:
+    0 0 0 1px var(--color-header-dark),
+    0 0 0 3px var(--color-header-base);
 }
 
 .tabBar {

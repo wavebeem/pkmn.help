@@ -27,7 +27,6 @@ something. */
   --color-header-border: hsl(var(--hue-red) 80% 30%);
   --color-button1: hsl(var(--hue-blue) 10% 100%);
   --color-button1b: hsl(var(--hue-blue) 10% 96%);
-  --color-badge: hsl(var(--hue-green) 70% 30%);
   --color-link: hsl(var(--hue-blue) 100% 50%);
   --color-border1: hsl(var(--hue-blue) 10% 50%);
   --color-border2: hsl(var(--hue-blue) 10% 70%);
@@ -115,7 +114,6 @@ something. */
   --color-header-border: hsl(var(--hue-red) 40% 50%);
   --color-button1: hsl(var(--hue-blue) 10% 26%);
   --color-button1b: hsl(var(--hue-blue) 10% 22%);
-  --color-badge: hsl(var(--hue-green) 60% 60%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
   --color-border1: hsl(var(--hue-blue) 10% 52%);
   --color-border2: hsl(var(--hue-blue) 10% 37%);
@@ -146,7 +144,6 @@ something. */
   --color-header-border: hsl(var(--hue-blue) 5% 20%);
   --color-button1: hsl(var(--hue-blue) 10% 18%);
   --color-button1b: hsl(var(--hue-blue) 10% 14%);
-  --color-badge: hsl(var(--hue-green) 60% 60%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
   --color-border1: hsl(var(--hue-blue) 10% 42%);
   --color-border2: hsl(var(--hue-blue) 10% 30%);
@@ -178,7 +175,6 @@ something. */
     --color-header-border: hsl(var(--hue-red) 40% 50%);
     --color-button1: hsl(var(--hue-blue) 10% 26%);
     --color-button1b: hsl(var(--hue-blue) 10% 22%);
-    --color-badge: hsl(var(--hue-green) 60% 60%);
     --color-link: hsl(var(--hue-teal) 90% 75%);
     --color-border1: hsl(var(--hue-blue) 10% 52%);
     --color-border2: hsl(var(--hue-blue) 10% 37%);
