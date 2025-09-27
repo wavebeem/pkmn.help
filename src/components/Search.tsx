@@ -1,17 +1,22 @@
 import classNames from "classnames";
-import { useTranslation } from "react-i18next";
+import { ReactNode } from "react";
+import { customProperties } from "../misc/customProperties";
 import { Icon } from "./Icon";
 import styles from "./Search.module.css";
-import { customProperties } from "../misc/customProperties";
-import { ReactNode } from "react";
 
 interface SearchProps {
-  updateSearch: (search: string) => void;
-  search: string;
+  label: string;
+  helpText?: ReactNode;
+  value: string;
+  onChange: (value: string) => void;
 }
 
-export function Search({ updateSearch, search }: SearchProps): ReactNode {
-  const { t } = useTranslation();
+export function Search({
+  label,
+  helpText,
+  value,
+  onChange,
+}: SearchProps): ReactNode {
   const iconSize = 30;
   return (
     <div
@@ -20,28 +25,34 @@ export function Search({ updateSearch, search }: SearchProps): ReactNode {
         "--icon-size": `${iconSize}px`,
       })}
     >
-      <Icon name="search" size={iconSize} className={styles.iconSearch} />
-      <input
-        aria-label={t("pokedex.search.description")}
-        type="text"
-        autoComplete="off"
-        autoCorrect="off"
-        inputMode="search"
-        autoCapitalize="none"
-        className={classNames(styles.search, "focus-simple")}
-        value={search}
-        onChange={(event) => {
-          updateSearch(event.target.value);
-        }}
-      />
-      <Icon
-        name="clear"
-        size={iconSize}
-        className={classNames(styles.iconClear, search === "" && styles.hidden)}
-        onClick={() => {
-          updateSearch("");
-        }}
-      />
+      {label && <div className={styles.label}>{label}</div>}
+      <div className={styles.wrapper}>
+        <Icon name="search" size={iconSize} className={styles.iconSearch} />
+        <input
+          type="text"
+          autoComplete="off"
+          autoCorrect="off"
+          inputMode="search"
+          autoCapitalize="none"
+          className={classNames(styles.input, "focus-simple")}
+          value={value}
+          onChange={(event) => {
+            onChange(event.target.value);
+          }}
+        />
+        <Icon
+          name="clear"
+          size={iconSize}
+          className={classNames(
+            styles.iconClear,
+            value === "" && styles.hidden,
+          )}
+          onClick={() => {
+            onChange("");
+          }}
+        />
+      </div>
+      {helpText && <p className={styles.help}>{helpText}</p>}
     </div>
   );
 }

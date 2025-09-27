@@ -2,6 +2,10 @@
 
 ## 2025-09-10
 
+- Added sorting options to the Pokédex
+
+## 2025-09-10
+
 - Updated card styles to be more clearly delineated but not distracting
 
 - Updated the translation progress section formatting

@@ -4,6 +4,18 @@
   padding: 0 var(--padding2);
 }
 
+.searchArea {
+  display: grid;
+  gap: var(--padding3);
+}
+
+@media (width > 40rem) {
+  .searchArea {
+    grid-template-columns: 20rem auto;
+    justify-content: center;
+  }
+}
+
 .monsterGrid {
   display: grid;
   gap: var(--padding3);

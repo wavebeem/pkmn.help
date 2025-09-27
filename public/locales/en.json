@@ -151,6 +151,10 @@
       "firstLong": "First",
       "lastLong": "Last"
     },
+    "sorting": {
+      "sortBy": "Sort by",
+      "auto": "Auto"
+    },
     "stats": {
       "hp": "HP",
       "hpLong": "Hit Points",

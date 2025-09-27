@@ -1,18 +1,27 @@
 .root {
+  flex: auto;
+}
+
+.wrapper {
   position: relative;
 }
 
-.search {
+.input {
+  -webkit-appearance: none;
+  appearance: none;
+  padding: 0.5rem 1rem;
   width: 100%;
-  box-sizing: border-box;
-  box-shadow: var(--shadow-inset);
-  border-radius: var(--border-radius-pill);
+  border-radius: var(--border-radius2);
   border: 1px solid var(--color-border1);
   background: var(--color-bg1);
   color: var(--color-fg1);
-  padding: 0.5rem;
+  box-shadow: var(--shadow-inset);
   padding-left: calc(var(--icon-size) + 1rem);
   padding-right: calc(var(--icon-size) + 1rem);
+}
+
+.input[inputmode="search"] {
+  border-radius: var(--border-radius-pill);
 }
 
 .iconSearch {
@@ -27,6 +36,21 @@
   position: absolute;
   top: calc(50% - var(--icon-size) / 2);
   right: calc(0.5rem - 2px);
+}
+
+.label {
+  padding-bottom: var(--padding1);
+}
+
+.label:has(+ .input[inputmode="search"]) {
+  margin-left: var(--padding1);
+}
+
+.help {
+  margin: 0;
+  padding-top: var(--padding1);
+  color: var(--color-fg3);
+  font-size: var(--font-size0);
 }
 
 .hidden {
