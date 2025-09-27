@@ -102,8 +102,12 @@
 }
 
 .heading {
-  font-size: 1.25rem;
-  font-weight: var(--weight-medium);
+  font-size: 1.75rem;
+  font-weight: 600;
+  font-stretch: ultra-condensed;
+  letter-spacing: var(--logo-letter-spacing);
+  line-height: 1.15;
+
   color: var(--color-header-text);
   margin: 0;
   display: flex;
@@ -112,9 +116,26 @@
   gap: var(--padding2);
 }
 
+:where(
+    [lang="fr"],
+    [lang="es"],
+    [lang="it"],
+    [lang="pt-BR"],
+    [lang="da"],
+    [lang="nl"]
+  )
+  .heading {
+  font-size: 1.5rem;
+}
+
+:where([lang="ja"], [lang="ja-Hrkt"], [lang="pt-PT"], [lang="ro"], [lang="vi"])
+  .heading {
+  font-size: 1.25rem;
+}
+
 @media (width >= 60rem) {
   .heading {
-    font-size: var(--font-size3);
+    font-size: 2rem;
   }
 }
 
@@ -153,19 +174,19 @@
 
 .pokeball,
 .pokeball[data-theme="premier"] {
-  --color-top1: hsl(0 0% 100%);
-  --color-top2: hsl(0 0% 90%);
-  --color-bottom1: hsl(0 0% 90%);
-  --color-bottom2: hsl(0 0% 80%);
-  --color-border: hsl(0 90% 30%);
+  --color-top1: hsl(var(--hue-blue) 30% 100%);
+  --color-top2: hsl(var(--hue-blue) 30% 90%);
+  --color-bottom1: hsl(var(--hue-blue) 30% 90%);
+  --color-bottom2: hsl(var(--hue-blue) 30% 80%);
+  --color-border: hsl(var(--hue-red) 90% 30%);
 }
 
 .pokeball[data-theme="regular"] {
-  --color-top1: hsl(0 90% 70%);
-  --color-top2: hsl(0 90% 60%);
-  --color-bottom1: hsl(0 0% 90%);
-  --color-bottom2: hsl(0 0% 80%);
-  --color-border: hsl(0 0% 20%);
+  --color-top1: hsl(var(--hue-red) 90% 70%);
+  --color-top2: hsl(var(--hue-red) 90% 60%);
+  --color-bottom1: hsl(var(--hue-blue) 30% 90%);
+  --color-bottom2: hsl(var(--hue-blue) 30% 80%);
+  --color-border: hsl(var(--hue-blue) 30% 20%);
 }
 
 @keyframes pokeballJiggle {
@@ -196,8 +217,7 @@
   width: var(--size);
   height: var(--size);
   border: 3px solid var(--color-border);
-  /* box-shadow: 0 0 0 3px var(--color-border); */
-  background: hsl(0 0% 100%);
+  background: hsl(var(--hue-blue) 30% 95%);
 }
 
 @media (hover) {

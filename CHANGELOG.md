@@ -4,7 +4,15 @@
 
 - Added sorting options to the Pokédex
 
-- Consolidated tab bar into header area on desktop
+- Consolidated tab bar into header area
+
+- Updated font to Roboto Variable
+
+- Increased prominence of the logo text
+
+- Refined the appearance of the Premier Ball logo
+
+- Updated the UI background color to be more blue
 
 ## 2025-09-10
 

@@ -4,7 +4,7 @@ something. */
 
 :root,
 [data-theme="light"] {
-  --hue-blue: 240;
+  --hue-blue: 230;
   --hue-green: 120;
   --hue-red: 0;
   --hue-teal: 200;
@@ -66,6 +66,8 @@ something. */
     drop-shadow(4px 4px 16px hsl(var(--hue-red) 0% 0% / 20%))
     drop-shadow(8px 8px 32px hsl(var(--hue-red) 0% 0% / 10%));
 
+  --logo-letter-spacing: calc(-1rem / 16);
+
   --font-size0: 0.875rem;
   --font-size1: 1rem;
   --font-size2: 1.25rem;
@@ -85,6 +87,7 @@ something. */
 [lang="pl"],
 [lang="ru"] {
   --type-min-width: 9rem;
+  --logo-letter-spacing: initial;
 }
 
 [lang="ko"],
@@ -93,6 +96,7 @@ something. */
 [lang="zh-Hans"] {
   --weight-normal: 400;
   --weight-medium: 400;
+  --logo-letter-spacing: initial;
 }
 
 [data-theme="dark"] {
