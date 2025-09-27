@@ -98,6 +98,8 @@ pokedex.pagination.previous,Prev,Алд
 pokedex.pagination.previousLong,Previous,Алдыңғы
 pokedex.pagination.firstLong,First,Бірінші
 pokedex.pagination.lastLong,Last,Соңғы
+pokedex.sorting.sortBy,Sort by,
+pokedex.sorting.auto,Auto,
 pokedex.stats.hp,HP,ХП
 pokedex.stats.hpLong,Hit Points,Хит Пойнттар
 pokedex.stats.attack,Attack,Шабуыл

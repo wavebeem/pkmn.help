@@ -98,6 +98,8 @@ pokedex.pagination.previous,Prev,Forrige
 pokedex.pagination.previousLong,Previous,Forrige
 pokedex.pagination.firstLong,First,Første
 pokedex.pagination.lastLong,Last,Sidste
+pokedex.sorting.sortBy,Sort by,
+pokedex.sorting.auto,Auto,
 pokedex.stats.hp,HP,HP
 pokedex.stats.hpLong,Hit Points,Livpoint
 pokedex.stats.attack,Attack,Angreb

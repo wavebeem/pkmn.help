@@ -22,7 +22,7 @@ something. */
   --color-accent-fg: hsl(var(--hue-blue) 5% 100%);
   --color-header-dark: hsl(var(--hue-red) 80% 30%);
   --color-header-base: hsl(var(--hue-red) 80% 40%);
-  --color-header-highlight: hsl(var(--hue-red) 50% 55%);
+  --color-header-highlight: hsl(var(--hue-red) 50% 65%);
   --color-header-text: #fff;
   --color-header-border: hsl(var(--hue-red) 80% 30%);
   --color-button1: hsl(var(--hue-blue) 10% 100%);
@@ -110,7 +110,7 @@ something. */
   --color-accent-fg: hsl(var(--hue-blue) 10% 7%);
   --color-header-dark: hsl(var(--hue-red) 70% 30%);
   --color-header-base: hsl(var(--hue-red) 70% 35%);
-  --color-header-highlight: hsl(var(--hue-red) 40% 50%);
+  --color-header-highlight: hsl(var(--hue-red) 40% 55%);
   --color-header-text: #fff;
   --color-header-border: hsl(var(--hue-red) 40% 50%);
   --color-button1: hsl(var(--hue-blue) 10% 26%);
@@ -173,7 +173,7 @@ something. */
     --color-accent-fg: hsl(var(--hue-blue) 10% 7%);
     --color-header-dark: hsl(var(--hue-red) 70% 30%);
     --color-header-base: hsl(var(--hue-red) 70% 35%);
-    --color-header-highlight: hsl(var(--hue-red) 40% 50%);
+    --color-header-highlight: hsl(var(--hue-red) 40% 55%);
     --color-header-text: #fff;
     --color-header-border: hsl(var(--hue-red) 40% 50%);
     --color-button1: hsl(var(--hue-blue) 10% 26%);

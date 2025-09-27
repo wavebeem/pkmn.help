@@ -98,6 +98,8 @@ pokedex.pagination.previous,Prev,For.
 pokedex.pagination.previousLong,Previous,Forrige
 pokedex.pagination.firstLong,First,Første
 pokedex.pagination.lastLong,Last,Siste
+pokedex.sorting.sortBy,Sort by,
+pokedex.sorting.auto,Auto,
 pokedex.stats.hp,HP,HP
 pokedex.stats.hpLong,Hit Points,Helse Poeng
 pokedex.stats.attack,Attack,Angrep

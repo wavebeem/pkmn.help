@@ -98,6 +98,8 @@ pokedex.pagination.previous,Prev,Trước
 pokedex.pagination.previousLong,Previous,Trước
 pokedex.pagination.firstLong,First,Trang đầu
 pokedex.pagination.lastLong,Last,Trang cuối
+pokedex.sorting.sortBy,Sort by,
+pokedex.sorting.auto,Auto,
 pokedex.stats.hp,HP,HP/Máu
 pokedex.stats.hpLong,Hit Points,HP/Máu
 pokedex.stats.attack,Attack,Tấn Công VL

@@ -98,6 +98,8 @@ pokedex.pagination.previous,Prev,上一個
 pokedex.pagination.previousLong,Previous,上一個
 pokedex.pagination.firstLong,First,第一個
 pokedex.pagination.lastLong,Last,最後一個
+pokedex.sorting.sortBy,Sort by,
+pokedex.sorting.auto,Auto,
 pokedex.stats.hp,HP,生命值
 pokedex.stats.hpLong,Hit Points,生命點數
 pokedex.stats.attack,Attack,攻擊

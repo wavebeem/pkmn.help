@@ -158,11 +158,14 @@ export function Layout(): ReactNode {
   if (theme === "auto") {
     dataTheme = isDark ? "dark" : "light";
   }
-  const h1Ref = useRef<HTMLHeadingElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
   // Use the heading's background color as the HTML `theme-color` meta property,
   // so that browsers like mobile Safari make the surrounding UI match the
   // heading...
-  const themeColor = useComputedStyleProperty(h1Ref.current, "backgroundColor");
+  const themeColor = useComputedStyleProperty(
+    headerRef.current,
+    "backgroundColor",
+  );
 
   // Load Pokédex JSON
   const jsonURL = new URL("data-pkmn.json", publicPath).href;
@@ -251,11 +254,11 @@ export function Layout(): ReactNode {
         </div>
       )}
       <div className={styles.root}>
-        <header className={styles.header}>
+        <header className={styles.header} ref={headerRef}>
           <div
             className={classNames(styles.headerContent, "content-wide center")}
           >
-            <h1 className={styles.heading} ref={h1Ref}>
+            <h1 className={styles.heading}>
               <button
                 className={styles.pokeball}
                 data-theme={pokeballTheme}

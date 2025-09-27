@@ -98,6 +98,8 @@ pokedex.pagination.previous,Prev,이전
 pokedex.pagination.previousLong,Previous,이전
 pokedex.pagination.firstLong,First,처음으로
 pokedex.pagination.lastLong,Last,끝으로
+pokedex.sorting.sortBy,Sort by,
+pokedex.sorting.auto,Auto,
 pokedex.stats.hp,HP,HP
 pokedex.stats.hpLong,Hit Points,HP
 pokedex.stats.attack,Attack,공격

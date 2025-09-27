@@ -98,6 +98,8 @@ pokedex.pagination.previous,Prev,Prev
 pokedex.pagination.previousLong,Previous,Previous
 pokedex.pagination.firstLong,First,First
 pokedex.pagination.lastLong,Last,Last
+pokedex.sorting.sortBy,Sort by,Sort by
+pokedex.sorting.auto,Auto,Auto
 pokedex.stats.hp,HP,HP
 pokedex.stats.hpLong,Hit Points,Hit Points
 pokedex.stats.attack,Attack,Attack
