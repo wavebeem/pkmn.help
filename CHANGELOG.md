@@ -16,6 +16,8 @@
 
 - Improved the appearance of type labels
 
+- Updated the favicon and share images for the site
+
 ## 2025-09-10
 
 - Updated card styles to be more clearly delineated but not distracting

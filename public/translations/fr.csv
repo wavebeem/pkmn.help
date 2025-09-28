@@ -154,7 +154,7 @@ more.privacy.heading,Privacy,Confidentialité
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Je ne diffuserais jamais de publicités ni ne volerais vos données personnelles. J'utilise <plausible>Plausible Analytics</plausible>, qui est autofinancé, indépendant, hébergé dans l'Union Européenne et ne stocke aucun cookie sur votre ordinateur."
 more.givingBack.heading,Showing appreciation,Me remercier
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","J'ai passé d'innombrables heures à améliorer ce site. Si vous appréciez ce que j'ai fait, veuillez, s'il vous plaît, envisager de faire un don à des organismes de bienfaisance qui soutiennent la justice raciale et les droits des transgenres."
-more.thanks.heading,Special thanks,Remerciements spéciaux
+more.thanks.heading,Credits,Remerciements spéciaux
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,Ici sont <credits>crédités</credits> toutes les personnes qui m'ont aidé⸱e à faire ce site web.
 more.openSource.heading,Open source,Open source
 more.openSource.description,Source code is available on <github>GitHub</github>.,Le code source est disponible sur <github>GitHub</github>.

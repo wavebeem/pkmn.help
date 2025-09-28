@@ -49,183 +49,192 @@ export function ScreenMore(): ReactNode {
       <Flex direction="column" padding="large">
         <Flex direction="column">
           <Flex padding="medium" />
-          <Flex direction="column" gap="large">
-            {needsAppUpdate && (
-              <Card>
-                <Flex gap="medium" align="center">
-                  <Flex direction="column" flex="auto">
-                    <FancyText tag="span" fontSize="large" fontWeight="medium">
-                      {t("banners.updateReady.description")}
-                    </FancyText>
-                    <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
-                      {t("banners.updateReady.whatsNew")}
-                    </ExternalLink>
-                  </Flex>
-                  <Button type="button" onClick={updateApp}>
-                    {t("banners.updateReady.update")}
-                  </Button>
+          {needsAppUpdate && (
+            <Card>
+              <Flex gap="medium" align="center">
+                <Flex direction="column" flex="auto">
+                  <FancyText tag="span" fontSize="large" fontWeight="medium">
+                    {t("banners.updateReady.description")}
+                  </FancyText>
+                  <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
+                    {t("banners.updateReady.whatsNew")}
+                  </ExternalLink>
                 </Flex>
-              </Card>
-            )}
+                <Button type="button" onClick={updateApp}>
+                  {t("banners.updateReady.update")}
+                </Button>
+              </Flex>
+            </Card>
+          )}
+          <CollapsibleSection
+            initiallyOpen
+            heading={
+              <FancyText tag="h2" fontWeight="medium">
+                {t("more.contact.heading")}
+              </FancyText>
+            }
+          >
+            <Flex direction="column" gap="large">
+              <FancyText tag="p">
+                <Trans
+                  i18nKey="more.contact.intro"
+                  values={{}}
+                  components={{
+                    homepage: <ExternalLink href="https://www.wavebeem.com" />,
+                  }}
+                />
+              </FancyText>
 
-            <FancyText tag="h2" fontWeight="medium">
-              {t("more.contact.heading")}
-            </FancyText>
+              <FancyText tag="p">
+                <Trans
+                  i18nKey="more.contact.email"
+                  components={{
+                    email: <ExternalLink href="mailto:pkmn@wavebeem.com" />,
+                  }}
+                />
+              </FancyText>
+            </Flex>
+          </CollapsibleSection>
 
-            <FancyText tag="p">
-              <Trans
-                i18nKey="more.contact.intro"
-                values={{}}
-                components={{
-                  homepage: <ExternalLink href="https://www.wavebeem.com" />,
-                }}
-              />
-            </FancyText>
+          <Divider />
 
-            <FancyText tag="p">
-              <Trans
-                i18nKey="more.contact.email"
-                components={{
-                  email: <ExternalLink href="mailto:pkmn@wavebeem.com" />,
-                }}
-              />
-            </FancyText>
-          </Flex>
-
-          <Flex direction="column" paddingY="large">
-            <Divider />
-          </Flex>
-
-          <Flex direction="column" gap="large">
-            <FancyText tag="h2" fontSize="xlarge" fontWeight="medium">
-              {t("more.settings.heading")}
-            </FancyText>
-
-            <Select
-              label={t("more.settings.language.label")}
-              value={language}
-              helpText={
-                <>
-                  <span aria-hidden="true">🌎</span> Please{" "}
-                  <ExternalLink
-                    href="#translate"
-                    onClick={(event) => {
-                      const element = event.target as HTMLAnchorElement;
-                      const url = new URL(element.href);
-                      const section =
-                        document.querySelector(url.hash)?.closest("details") ??
-                        fail("couldn't find " + url.hash);
-                      section.open = true;
-                    }}
-                  >
-                    help me translate
-                  </ExternalLink>{" "}
-                  this site.
-                </>
-              }
-              onChange={(event) => {
-                setLanguage(event.target.value);
-                i18n.changeLanguage(language);
-              }}
-            >
-              <optgroup label={t("more.settings.language.default")}>
-                <option value="">
-                  * {showLang(autoLang)} ({formatLanguageCompletion(autoLang)})
-                </option>
-              </optgroup>
-              <optgroup label={t("more.settings.language.official")}>
-                {officialLanguages.map((lang) => {
-                  if (!isLang(lang)) {
-                    throw new Error(`${lang} is not a valid language`);
-                  }
-                  return (
-                    <option value={lang} key={lang}>
-                      {showLang(lang)} ({formatLanguageCompletion(lang)})
-                    </option>
-                  );
-                })}
-              </optgroup>
-              <optgroup label={t("more.settings.language.unofficial")}>
-                {unofficialLanguages.map((lang) => {
-                  if (!isLang(lang)) {
-                    throw new Error(`${lang} is not a valid language`);
-                  }
-                  return (
-                    <option value={lang} key={lang}>
-                      {showLang(lang)} ({formatLanguageCompletion(lang)})
-                    </option>
-                  );
-                })}
-              </optgroup>
-            </Select>
-
-            <RadioGroup
-              label={t("more.settings.theme.label")}
-              value={theme}
-              helpText={t("more.settings.theme.help")}
-              options={[
-                {
-                  value: "auto",
-                  label: t(`more.settings.theme.values.auto`),
-                },
-                {
-                  value: "light",
-                  label: t(`more.settings.theme.values.light`),
-                },
-                {
-                  value: "dark",
-                  label: t(`more.settings.theme.values.dark`),
-                },
-                {
-                  value: "night",
-                  label: t(`more.settings.theme.values.night`),
-                },
-              ]}
-              onChange={(option) => void setTheme(option.value)}
-            />
-
-            <RadioGroup
-              label={t("games.label")}
-              value={generation}
-              helpText={t("games.help")}
-              onChange={(option) => {
-                const { value } = option;
-                if (isGeneration(value)) {
-                  setGeneration(value);
-                } else {
-                  // eslint-disable-next-line no-console
-                  console.error("not a generation:", value);
+          <CollapsibleSection
+            initiallyOpen
+            heading={
+              <FancyText tag="h2" fontSize="xlarge" fontWeight="medium">
+                {t("more.settings.heading")}
+              </FancyText>
+            }
+          >
+            <Flex direction="column" gap="large">
+              <Select
+                label={t("more.settings.language.label")}
+                value={language}
+                helpText={
+                  <>
+                    Please{" "}
+                    <ExternalLink
+                      href="#translate"
+                      onClick={(event) => {
+                        const element = event.target as HTMLAnchorElement;
+                        const url = new URL(element.href);
+                        const section =
+                          document
+                            .querySelector(url.hash)
+                            ?.closest("details") ??
+                          fail("couldn't find " + url.hash);
+                        section.open = true;
+                      }}
+                    >
+                      help me translate
+                    </ExternalLink>{" "}
+                    this site. <span aria-hidden="true">🌎</span>
+                  </>
                 }
-              }}
-              options={generations.map((gen) => {
-                return {
-                  value: gen,
-                  label: t(`games.byID.${gen}`),
-                };
-              })}
-            />
+                onChange={(event) => {
+                  setLanguage(event.target.value);
+                  i18n.changeLanguage(language);
+                }}
+              >
+                <optgroup label={t("more.settings.language.default")}>
+                  <option value="">
+                    * {showLang(autoLang)} ({formatLanguageCompletion(autoLang)}
+                    )
+                  </option>
+                </optgroup>
+                <optgroup label={t("more.settings.language.official")}>
+                  {officialLanguages.map((lang) => {
+                    if (!isLang(lang)) {
+                      throw new Error(`${lang} is not a valid language`);
+                    }
+                    return (
+                      <option value={lang} key={lang}>
+                        {showLang(lang)} ({formatLanguageCompletion(lang)})
+                      </option>
+                    );
+                  })}
+                </optgroup>
+                <optgroup label={t("more.settings.language.unofficial")}>
+                  {unofficialLanguages.map((lang) => {
+                    if (!isLang(lang)) {
+                      throw new Error(`${lang} is not a valid language`);
+                    }
+                    return (
+                      <option value={lang} key={lang}>
+                        {showLang(lang)} ({formatLanguageCompletion(lang)})
+                      </option>
+                    );
+                  })}
+                </optgroup>
+              </Select>
 
-            <RadioGroup
-              label={t("more.settings.typeCount.label")}
-              value={typeCount}
-              helpText={t("more.settings.typeCount.help")}
-              onChange={(option) => {
-                setTypeCount(option.value);
-              }}
-              options={[
-                {
-                  value: "2",
-                  label: t("more.settings.typeCount.values.2"),
-                },
-                {
-                  value: "3",
-                  label: t("more.settings.typeCount.values.3"),
-                },
-              ]}
-            />
-          </Flex>
+              <RadioGroup
+                label={t("more.settings.theme.label")}
+                value={theme}
+                helpText={t("more.settings.theme.help")}
+                options={[
+                  {
+                    value: "auto",
+                    label: t(`more.settings.theme.values.auto`),
+                  },
+                  {
+                    value: "light",
+                    label: t(`more.settings.theme.values.light`),
+                  },
+                  {
+                    value: "dark",
+                    label: t(`more.settings.theme.values.dark`),
+                  },
+                  {
+                    value: "night",
+                    label: t(`more.settings.theme.values.night`),
+                  },
+                ]}
+                onChange={(option) => void setTheme(option.value)}
+              />
 
-          <Flex paddingY="medium" />
+              <RadioGroup
+                label={t("games.label")}
+                value={generation}
+                helpText={t("games.help")}
+                onChange={(option) => {
+                  const { value } = option;
+                  if (isGeneration(value)) {
+                    setGeneration(value);
+                  } else {
+                    // eslint-disable-next-line no-console
+                    console.error("not a generation:", value);
+                  }
+                }}
+                options={generations.map((gen) => {
+                  return {
+                    value: gen,
+                    label: t(`games.byID.${gen}`),
+                  };
+                })}
+              />
+
+              <RadioGroup
+                label={t("more.settings.typeCount.label")}
+                value={typeCount}
+                helpText={t("more.settings.typeCount.help")}
+                onChange={(option) => {
+                  setTypeCount(option.value);
+                }}
+                options={[
+                  {
+                    value: "2",
+                    label: t("more.settings.typeCount.values.2"),
+                  },
+                  {
+                    value: "3",
+                    label: t("more.settings.typeCount.values.3"),
+                  },
+                ]}
+              />
+            </Flex>
+          </CollapsibleSection>
+
           <Divider />
 
           <CollapsibleSection
@@ -237,7 +246,7 @@ export function ScreenMore(): ReactNode {
                 fontWeight="medium"
                 id="translate"
               >
-                <span aria-hidden="true">🌎</span> Help me translate
+                Help me translate <span aria-hidden="true">🌎</span>
               </FancyText>
             }
           >
@@ -308,7 +317,6 @@ export function ScreenMore(): ReactNode {
           <Divider />
 
           <CollapsibleSection
-            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.changes.heading")}
@@ -351,7 +359,6 @@ export function ScreenMore(): ReactNode {
           <Divider />
 
           <CollapsibleSection
-            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.privacy.heading")}
@@ -373,7 +380,6 @@ export function ScreenMore(): ReactNode {
           <Divider />
 
           <CollapsibleSection
-            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.givingBack.heading")}
@@ -386,7 +392,6 @@ export function ScreenMore(): ReactNode {
           <Divider />
 
           <CollapsibleSection
-            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.thanks.heading")}
@@ -408,7 +413,6 @@ export function ScreenMore(): ReactNode {
           <Divider />
 
           <CollapsibleSection
-            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.openSource.heading")}
@@ -430,7 +434,6 @@ export function ScreenMore(): ReactNode {
           <Divider />
 
           <CollapsibleSection
-            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.legalInfo.heading")}

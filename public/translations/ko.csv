@@ -154,7 +154,7 @@ more.privacy.heading,Privacy,개인정보 보호
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","절대 광고를 게재하거나 개인정보를 도용하지 않습니다. 저는 <plausible>Plausible Analytics</plausible>를 사용하고 있으며, 이곳은 유럽 연합에서 자체적으로 자금을 조달하고 독립적이며 당신의 컴퓨터에 쿠키를 저장하지 않습니다."
 more.givingBack.heading,Showing appreciation,감사 표하기
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",저는 이 사이트를 개선하는 데 많은 시간을 보냈습니다. 제가 만든 것에 고마움을 표하고 싶으시다면 흑인과 원주민 및 트랜스젠더 권리를 지원하는 자선 단체에 기부하는 것을 고려해 주세요.
-more.thanks.heading,Special thanks,도움을 주신 분들
+more.thanks.heading,Credits,도움을 주신 분들
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
 more.openSource.heading,Open source,오픈 소스
 more.openSource.description,Source code is available on <github>GitHub</github>.,소스 코드는 <github>GitHub</github>에서 확인할 수 있습니다.

@@ -1,6 +1,7 @@
 .link {
   border-radius: var(--border-radius1);
   color: var(--color-link);
+  text-underline-offset: calc(1em / 8);
 }
 
 @media (hover) {

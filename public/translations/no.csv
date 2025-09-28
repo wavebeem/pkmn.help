@@ -154,7 +154,7 @@ more.privacy.heading,Privacy,Personvernerklæring
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.","Jeg vil aldri kjøre annonser eller stjele din personlige data. Jeg bruker <plausible>Plausible Analytics</plausible>, som er selvfinansiert, uavhengig, vert i EU, og lagrer ingen informasjonskapsler på datamaskinen din."
 more.givingBack.heading,Showing appreciation,Viser takknemlighet
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Jeg har brukt utallige timer på å forbedre denne siden. Hvis du setter pris på det jeg har laget, kan du vurdere å donere til veldedige organisasjoner som støtter raserettferdighet og transpersoners rettigheter."
-more.thanks.heading,Special thanks,Spesiell takk til
+more.thanks.heading,Credits,Spesiell takk til
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
 more.openSource.heading,Open source,Åpen kildekode
 more.openSource.description,Source code is available on <github>GitHub</github>.,Kildekode er tilgjengelig på <github>GitHub</github>.

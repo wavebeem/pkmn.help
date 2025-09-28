@@ -154,7 +154,7 @@ more.privacy.heading,Privacy,隐私
 more.privacy.description,"I will never run ads or steal your personal data. I use <plausible>Plausible Analytics</plausible>, which is self-funded, independent, hosted in the EU, and doesn't store any cookies on your computer.",我绝不会投放广告或盗取你的个人数据。我使用的是 <plausible>Plausible Analytics</plausible>，它自筹资金、独立、在欧盟托管，并且不会在您的计算机上存储任何 cookie。
 more.givingBack.heading,Showing appreciation,表示感恩
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",我花了无数小时改善这个网站。如果你喜欢我做的内容的话，请考虑向支持 BIPOC 和跨性别人士权益的慈善机构捐款。
-more.thanks.heading,Special thanks,特别感谢
+more.thanks.heading,Credits,特别感谢
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
 more.openSource.heading,Open source,开放原始码
 more.openSource.description,Source code is available on <github>GitHub</github>.,源代码可在 <github>GitHub</github> 上获得。

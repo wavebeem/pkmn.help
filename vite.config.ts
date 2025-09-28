@@ -5,7 +5,7 @@ import { VitePWA } from "vite-plugin-pwa";
 import * as fs from "fs";
 import * as path from "path";
 
-const iconVersion = 5;
+const iconVersion = 6;
 
 function readJSON(filename: string): any {
   const text = fs.readFileSync(filename, "utf-8");
@@ -166,12 +166,12 @@ export default defineConfig((env) => {
           orientation: "any",
           icons: [
             {
-              src: `/favicon-16.png?v=${iconVersion}`,
+              src: `/app-icon-regular-16.png?v=${iconVersion}`,
               sizes: "16x16",
               type: "image/png",
             },
             {
-              src: `/favicon-32.png?v=${iconVersion}`,
+              src: `/app-icon-regular-32.png?v=${iconVersion}`,
               sizes: "32x32",
               type: "image/png",
             },
@@ -209,8 +209,8 @@ export default defineConfig((env) => {
               purpose: "maskable",
             },
           ],
-          // theme_color: "hsl(0 90% 35%)",
-          // background_color: "hsl(0 90% 35%)",
+          theme_color: "hsl(0 80% 30%)",
+          background_color: "hsl(0 80% 30%)",
           display: "standalone",
         },
         // These files are downloaded in the background automatically and stored
@@ -219,7 +219,7 @@ export default defineConfig((env) => {
           "data-pkmn.json",
           "locales/*.json",
           "manifest.json",
-          "favicon-*.png",
+          "app-icon-regular-*.png",
           "app-icon-*.png",
           "fonts/*.woff2",
         ],
