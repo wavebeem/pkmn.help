@@ -45,7 +45,7 @@ export function typeColorBG(key: keyof typeof typeColors): string {
   return darken({
     bg: typeColors[key],
     fg: "#fff",
-    contrast: 4.5,
+    contrast: 5.5,
     min: 10,
   });
 }

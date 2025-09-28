@@ -7,21 +7,22 @@ import { ReactNode } from "react";
 
 interface BadgeProps {
   type: Type;
+  size?: "small" | "medium";
 }
 
-export function Badge({ type }: BadgeProps): ReactNode {
+export function Badge({ type, size = "medium" }: BadgeProps): ReactNode {
   const { t } = useTranslation();
   return (
     <div
       className={styles.badge}
       data-type={type}
+      data-size={size}
       style={customProperties({
         "--type-color": typeColor(type),
         "--type-color-bg": typeColorBG(type),
         "--type-color-border": typeColorBorder(type),
       })}
     >
-      <div className={styles.swatch} />
       <div className={styles.label}>{t(`types.${type}`)}</div>
     </div>
   );

@@ -138,7 +138,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             </Flex>
             <Flex wrap gap="small" justify="center" align="flex-start">
               {pokemon.types.map((t, i) => (
-                <Badge key={i} type={t} />
+                <Badge key={i} type={t} size="small" />
               ))}
             </Flex>
           </Flex>

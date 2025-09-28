@@ -14,6 +14,8 @@
 
 - Updated the UI background color to be more blue
 
+- Improved the appearance of type labels
+
 ## 2025-09-10
 
 - Updated card styles to be more clearly delineated but not distracting
