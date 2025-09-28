@@ -17,7 +17,7 @@ export function Search({
   value,
   onChange,
 }: SearchProps): ReactNode {
-  const iconSize = 30;
+  const iconSize = 24;
   return (
     <div
       className={styles.root}

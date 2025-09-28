@@ -20,15 +20,11 @@
   padding-right: calc(var(--icon-size) + 1rem);
 }
 
-.input[inputmode="search"] {
-  border-radius: var(--border-radius-pill);
-}
-
 .iconSearch {
   color: var(--color-fg3);
   position: absolute;
-  top: calc(50% - var(--icon-size) / 2 + 2px);
-  left: calc(0.5rem);
+  top: calc(50% - var(--icon-size) / 2);
+  left: 0.5rem;
   pointer-events: none;
 }
 
@@ -36,7 +32,7 @@
   color: var(--color-fg1);
   position: absolute;
   top: calc(50% - var(--icon-size) / 2);
-  right: calc(0.5rem - 2px);
+  right: 0.5rem;
 }
 
 .label {

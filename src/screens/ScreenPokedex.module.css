@@ -6,7 +6,7 @@
 
 .searchArea {
   display: grid;
-  gap: var(--padding3);
+  gap: var(--padding2);
 }
 
 @media (width > 40rem) {
