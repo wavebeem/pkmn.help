@@ -122,13 +122,22 @@
     [lang="it"],
     [lang="pt-BR"],
     [lang="da"],
+    [lang="pl"],
     [lang="nl"]
   )
   .heading {
   font-size: 1.5rem;
 }
 
-:where([lang="ja"], [lang="ja-Hrkt"], [lang="pt-PT"], [lang="ro"], [lang="vi"])
+:where(
+    [lang="ja"],
+    [lang="ja-Hrkt"],
+    [lang="pt-PT"],
+    [lang="ro"],
+    [lang="vi"],
+    [lang="kk"],
+    [lang="ru"]
+  )
   .heading {
   font-size: 1.25rem;
 }
