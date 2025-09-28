@@ -45,7 +45,7 @@
 
 .monsterLinks {
   grid-area: links;
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
   flex-wrap: wrap;
   gap: var(--padding3);

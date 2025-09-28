@@ -1,7 +1,7 @@
 .root {
   display: grid;
   gap: 0.25rem 0.5rem;
-  grid-template-columns: max-content max-content 1fr;
+  grid-template-columns: max-content 4ch 1fr;
   height: min-content;
   font-variant-numeric: tabular-nums;
   align-items: center;

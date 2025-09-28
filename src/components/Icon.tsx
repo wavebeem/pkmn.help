@@ -1,10 +1,10 @@
 import { SVGProps, SVGAttributes, ReactNode } from "react";
 
-const strokeWidth = 3;
-const strokeGap = 4;
-const size = 24;
-const paddingH = 8;
-const paddingV = 4;
+const strokeWidth = 1.25;
+const strokeGap = 3;
+const size = 16;
+const paddingH = 5;
+const paddingV = 3;
 
 function flipXY(x: number, y: number, flip: boolean): [number, number] {
   if (flip) {

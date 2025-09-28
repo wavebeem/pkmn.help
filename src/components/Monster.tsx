@@ -136,7 +136,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
                 animationState={animationState}
               />
             </Flex>
-            <Flex wrap gap="small" justify="center" align="flex-start">
+            <Flex wrap gap="small" justify="flex-start" align="flex-start">
               {pokemon.types.map((t, i) => (
                 <Badge key={i} type={t} size="small" />
               ))}

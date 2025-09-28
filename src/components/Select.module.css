@@ -21,7 +21,7 @@
 
 .select:after {
   --_size: 0.5rem;
-  --_border-size: 2px;
+  --_border-size: 1.25px;
   content: "";
   position: absolute;
   width: var(--_size);

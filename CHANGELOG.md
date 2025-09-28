@@ -1,5 +1,22 @@
 # Changelog
 
+## 2025-09-28
+
+- Pokémon stat meters are now visually broken into 5 chunks of 51 stat points
+
+  - Yeah, "chunks of 51" makes my eye twitch too... You can blame Pokémon for
+    using a 0 to 255 scale
+
+  - Otherwise you can think of it as 20% of the max
+
+  - This also applies to the coverage meters
+
+- Improved readability of Pokédex cards by better aligning content
+
+- Improved favicon
+
+- Improved arrow icons
+
 ## 2025-09-27
 
 - Added sorting options to the Pokédex
