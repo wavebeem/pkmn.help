@@ -10,22 +10,18 @@
   left: 50vw;
   translate: -50% 10vh;
   opacity: 0;
-  padding: 3rem;
+  padding: 4rem;
   border-radius: 9999px;
   background: radial-gradient(
     circle at center,
-    hsl(200 80% 30% / 30%),
-    hsl(200 80% 30% / 80%) 70%
+    rgb(from var(--color-card-bg) r g b / 100%),
+    rgb(from var(--color-card-bg) r g b / 0%)
   );
-  backdrop-filter: saturate(200%) blur(8px);
+  backdrop-filter: saturate(150%) blur(16px);
   box-shadow:
-    /* Shine 1 */
-    inset 0 0 0 1px hsl(200 80% 90% / 30%),
-    /* Shine 2 */ inset 0 0 16px hsl(200 80% 90% / 90%),
-    /* Shadow 0 */ 0 0 0 1px hsl(0 0% 0% / 10%),
-    /* Shadow 1 */ 0 4px 8px hsl(0 0% 0% / 20%),
-    /* Shadow 2 */ 0 0 16px hsl(0 0% 0% / 30%),
-    /* Backdrop */ 0 64px 64px 64px #0004;
+    inset 0 1px 0 var(--color-card-highlight),
+    inset 0 -1px 0 var(--color-card-shadow),
+    0 16px 32px 0 hsl(var(--hue-blue) 20% 10% / 20%);
 }
 
 .easterEgg[data-animate="true"] {
@@ -40,10 +36,6 @@
   .easterEgg[data-animate="true"] {
     animation: 4s easterEgg_animation_reduced !important;
   }
-}
-
-.easterEgg img {
-  filter: drop-shadow(0 0 16px hsl(200 80% 90% / 90%));
 }
 
 @keyframes easterEgg_animation {
@@ -181,21 +173,12 @@
   transition-timing-function: ease-in-out;
 }
 
-.pokeball,
-.pokeball[data-theme="premier"] {
+.pokeball {
   --color-top1: hsl(var(--hue-blue) 30% 100%);
   --color-top2: hsl(var(--hue-blue) 30% 90%);
   --color-bottom1: hsl(var(--hue-blue) 30% 90%);
   --color-bottom2: hsl(var(--hue-blue) 30% 80%);
   --color-border: hsl(var(--hue-red) 90% 30%);
-}
-
-.pokeball[data-theme="regular"] {
-  --color-top1: hsl(var(--hue-red) 90% 70%);
-  --color-top2: hsl(var(--hue-red) 90% 60%);
-  --color-bottom1: hsl(var(--hue-blue) 30% 90%);
-  --color-bottom2: hsl(var(--hue-blue) 30% 80%);
-  --color-border: hsl(var(--hue-blue) 30% 20%);
 }
 
 @keyframes pokeballJiggle {

@@ -62,9 +62,10 @@ something. */
   --shadow-inset: inset 0 2px 4px rgb(0 0 0 / 10%);
 
   --filter-darken: brightness(90%);
-  --filter-image: drop-shadow(0 0 2px hsl(var(--hue-red) 0% 100% / 20%))
-    drop-shadow(4px 4px 16px hsl(var(--hue-red) 0% 0% / 20%))
-    drop-shadow(8px 8px 32px hsl(var(--hue-red) 0% 0% / 10%));
+  --filter-image: drop-shadow(-1px -1px 0 hsl(var(--hue-blue) 50% 90% / 20%))
+    drop-shadow(0 0 2px hsl(var(--hue-blue) 0% 100% / 20%))
+    drop-shadow(4px 4px 16px hsl(var(--hue-blue) 0% 0% / 20%))
+    drop-shadow(8px 8px 32px hsl(var(--hue-blue) 0% 0% / 10%));
 
   --logo-letter-spacing: calc(-1rem / 32);
 

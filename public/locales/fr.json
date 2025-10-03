@@ -106,7 +106,7 @@
     },
     "mode": {
       "heading": "Sélection du mode",
-      "solo": "Pokémon",
+      "solo": "Pokémon seul",
       "team": "Équipe"
     },
     "team": {
@@ -150,6 +150,10 @@
       "previousLong": "Précédent",
       "firstLong": "Premier",
       "lastLong": "Dernier"
+    },
+    "sorting": {
+      "sortBy": "Trier par",
+      "auto": "Auto"
     },
     "stats": {
       "hp": "PV",
@@ -300,7 +304,7 @@
     "byID": {
       "gen1": "Génération 1",
       "gen2": "Génération 2-5",
-      "default": "Par défaut (Génération 6+)"
+      "default": "Génération 6+"
     }
   }
 }

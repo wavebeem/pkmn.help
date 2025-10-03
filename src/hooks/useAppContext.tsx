@@ -1,8 +1,6 @@
 import { createContext, useContext } from "react";
 import { CoverageType, Pokemon } from "../misc/data-types";
 
-type PokeballTheme = "premier" | "regular";
-
 export type AppContext = {
   isLoading: boolean;
   coverageTypes: CoverageType[];
@@ -11,7 +9,6 @@ export type AppContext = {
   allPokemon: Pokemon[];
   easterEggPokemon: Pokemon | undefined;
   easterEggLoadedID: string;
-  pokeballTheme: PokeballTheme;
   needsAppUpdate: boolean;
   updateApp: () => Promise<void>;
 };
@@ -24,7 +21,6 @@ const AppContext = createContext<AppContext>({
   allPokemon: [],
   easterEggPokemon: undefined,
   easterEggLoadedID: "",
-  pokeballTheme: "premier",
   needsAppUpdate: false,
   updateApp: async () => {},
 });

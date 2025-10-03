@@ -70,7 +70,7 @@ defense.abilityNames.lightning_rod,Lightning Rod,Paratonerre
 defense.abilityNames.motor_drive,Motor Drive,Motorisé
 defense.abilityNames.volt_absorb,Volt Absorb,Absorbe-Volt
 defense.mode.heading,Choose mode,Sélection du mode
-defense.mode.solo,Solo,Pokémon
+defense.mode.solo,Solo,Pokémon seul
 defense.mode.team,Team,Équipe
 defense.team.tableHeading,Matchup counts,Nombre de match-ups
 defense.team.heading,Edit Pokémon team,Modifier l'équipe Pokémon
@@ -98,8 +98,8 @@ pokedex.pagination.previous,Prev,Préc.
 pokedex.pagination.previousLong,Previous,Précédent
 pokedex.pagination.firstLong,First,Premier
 pokedex.pagination.lastLong,Last,Dernier
-pokedex.sorting.sortBy,Sort by,
-pokedex.sorting.auto,Auto,
+pokedex.sorting.sortBy,Sort by,Trier par
+pokedex.sorting.auto,Auto,Auto
 pokedex.stats.hp,HP,PV
 pokedex.stats.hpLong,Hit Points,Points de Vie
 pokedex.stats.attack,Attack,Atk.
@@ -188,4 +188,4 @@ games.label,Game generation,Génération du jeu
 games.help,Use type effectiveness from different game generations.,Utiliser les efficacités de types de différentes générations de jeux.
 games.byID.gen1,Generation 1,Génération 1
 games.byID.gen2,Generation 2–5,Génération 2-5
-games.byID.default,Generation 6+,Par défaut (Génération 6+)
+games.byID.default,Generation 6+,Génération 6+

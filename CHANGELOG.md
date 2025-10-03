@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025-10-03
+
+- Updated French translations
+
+- Updated Pokéball easter egg appearance
+
 ## 2025-09-28
 
 - Pokémon stat meters are now visually broken into 5 chunks of 51 stat points

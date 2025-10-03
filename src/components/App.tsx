@@ -101,11 +101,6 @@ function useTranslationsWithBlankFallback() {
   return ready ? translation : getFallback;
 }
 
-const pokeballThemes = ["premier", "regular"] as const;
-type PokeballTheme = (typeof pokeballThemes)[number];
-
-const pokeballThemeCycle = iterStutter(iterCycle(pokeballThemes), 2);
-
 export function Layout(): ReactNode {
   const tabClass = classNames(styles.tab, "active-darken focus-tab");
 
@@ -134,11 +129,6 @@ export function Layout(): ReactNode {
   const [AllPokemon, setAllPokemon] = useState<Pokemon[]>([]);
   const [easterEgg, setEasterEgg] = useState<Pokemon>();
   const [easterEggLoadedID, setEasterEggLoadedID] = useState("");
-  const [pokeballTheme, setPokeballTheme] = useState<PokeballTheme>("premier");
-
-  useEffect(() => {
-    setPokeballTheme(iterNext(pokeballThemeCycle));
-  }, []);
 
   const [language] = useLanguage();
 
@@ -201,7 +191,6 @@ export function Layout(): ReactNode {
       fallbackCoverageTypes,
       isLoading,
       needsAppUpdate: needRefresh,
-      pokeballTheme,
       setCoverageTypes,
       updateApp,
     }),
@@ -213,7 +202,6 @@ export function Layout(): ReactNode {
       fallbackCoverageTypes,
       isLoading,
       needRefresh,
-      pokeballTheme,
       setCoverageTypes,
       updateApp,
     ],
@@ -261,7 +249,6 @@ export function Layout(): ReactNode {
             <h1 className={styles.heading}>
               <button
                 className={styles.pokeball}
-                data-theme={pokeballTheme}
                 aria-hidden={true}
                 onClick={(event) => {
                   event.preventDefault();
@@ -270,7 +257,6 @@ export function Layout(): ReactNode {
                     return;
                   }
                   setEasterEgg(pkmn);
-                  setPokeballTheme(iterNext(pokeballThemeCycle));
                 }}
               />
               <NavLink to="/">{t("title")}</NavLink>
