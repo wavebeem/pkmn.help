@@ -211,7 +211,7 @@ export function MatchupsTeam({
               return (
                 <tr key={type}>
                   <th className={styles.thLeft}>
-                    <Badge type={type} />
+                    <Badge type={type} size="medium" />
                   </th>
                   {counts.map((count, i) => {
                     return (

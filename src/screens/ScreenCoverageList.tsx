@@ -47,8 +47,6 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   return (
     <main className="center content-narrow">
       <Flex direction="column" gap="large" padding="large">
-        <Flex padding="small" />
-
         <FancyText tag="h2" fontSize="xlarge" fontWeight="medium">
           {t(`offense.coverageList.${mode}.heading`)}
         </FancyText>
@@ -61,7 +59,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
         {types.length > 0 && (
           <Flex wrap gap="medium">
             {types.map((t) => (
-              <Badge key={t} type={t} />
+              <Badge key={t} type={t} size="medium" />
             ))}
           </Flex>
         )}
@@ -127,7 +125,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
                         align="center"
                       >
                         {types.map((t) => (
-                          <Badge key={t} type={t} />
+                          <Badge key={t} type={t} size="small" />
                         ))}
                       </Flex>
                     </div>

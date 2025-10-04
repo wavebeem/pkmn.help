@@ -205,7 +205,7 @@ export function ScreenDefenseTeam(): ReactNode {
                       </FancyText>
                       <Flex direction="row" wrap justify="center" gap="medium">
                         {types.map((t) => (
-                          <Badge key={t} type={t} />
+                          <Badge key={t} type={t} size="medium" />
                         ))}
                       </Flex>
                       <Flex flex="auto" />

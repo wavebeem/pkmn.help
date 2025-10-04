@@ -6,9 +6,11 @@
   pointer-events: none;
   position: fixed;
   z-index: 1;
-  bottom: 0;
+  top: 50vh;
   left: 50vw;
-  translate: -50% 10vh;
+  translate: -50% -50%;
+  scale: 80%;
+  rotate: x -30deg;
   opacity: 0;
   padding: 4rem;
   border-radius: 9999px;
@@ -20,7 +22,7 @@
   backdrop-filter: saturate(150%) blur(16px);
   box-shadow:
     inset 0 1px 0 var(--color-card-highlight),
-    inset 0 -1px 0 var(--color-card-shadow),
+    inset 0 -1px 0 var(--color-card-highlight),
     0 16px 32px 0 hsl(var(--hue-blue) 20% 10% / 20%);
 }
 
@@ -30,36 +32,21 @@
 
 @media (prefers-reduced-motion) {
   .easterEgg {
-    translate: -50% -10vh;
+    scale: 100% !important;
+    rotate: 0deg !important;
   }
 
   .easterEgg[data-animate="true"] {
-    animation: 4s easterEgg_animation_reduced !important;
+    animation: 4s easterEgg_animation !important;
   }
 }
 
 @keyframes easterEgg_animation {
-  10%,
-  95% {
-    opacity: 1;
-    translate: -50% -10.5vh;
-    rotate: 0 0 2deg;
-  }
   15%,
   90% {
     opacity: 1;
-    translate: -50% -10vh;
-  }
-}
-
-@keyframes easterEgg_animation_reduced {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  25%,
-  75% {
-    opacity: 1;
+    rotate: 0deg;
+    scale: 100%;
   }
 }
 
@@ -146,6 +133,11 @@
 }
 
 .pokeball {
+  --color-top1: hsl(var(--hue-blue) 30% 100%);
+  --color-top2: hsl(var(--hue-blue) 30% 90%);
+  --color-bottom1: hsl(var(--hue-blue) 30% 90%);
+  --color-bottom2: hsl(var(--hue-blue) 30% 80%);
+  --color-border: hsl(var(--hue-red) 90% 30%);
   --size: 30px;
   position: relative;
   padding: 0;
@@ -173,20 +165,12 @@
   transition-timing-function: ease-in-out;
 }
 
-.pokeball {
-  --color-top1: hsl(var(--hue-blue) 30% 100%);
-  --color-top2: hsl(var(--hue-blue) 30% 90%);
-  --color-bottom1: hsl(var(--hue-blue) 30% 90%);
-  --color-bottom2: hsl(var(--hue-blue) 30% 80%);
-  --color-border: hsl(var(--hue-red) 90% 30%);
-}
-
 @keyframes pokeballJiggle {
   30% {
-    transform: rotateZ(-20deg);
+    rotate: -20deg;
   }
   70% {
-    transform: rotateZ(20deg);
+    rotate: 20deg;
   }
 }
 
@@ -228,7 +212,7 @@
 }
 
 .pokeball:focus-visible {
-  outline: 2px solid;
+  outline: 3px solid;
   outline-offset: 2px;
 }
 

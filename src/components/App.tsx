@@ -102,7 +102,7 @@ function useTranslationsWithBlankFallback() {
 }
 
 export function Layout(): ReactNode {
-  const tabClass = classNames(styles.tab, "active-darken focus-tab");
+  const tabClass = classNames(styles.tab, "active-darken focus-header");
 
   // Service worker
   const {
@@ -259,7 +259,9 @@ export function Layout(): ReactNode {
                   setEasterEgg(pkmn);
                 }}
               />
-              <NavLink to="/">{t("title")}</NavLink>
+              <NavLink to="/" className="focus-header">
+                {t("title")}
+              </NavLink>
             </h1>
             <nav className={styles.tabBar}>
               <NavLink className={tabClass} to="/offense/">

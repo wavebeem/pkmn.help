@@ -173,7 +173,12 @@ export function StatsTable({ pokemon }: StatsTableProps): ReactNode {
       >
         {total}
       </FancyText>
-      <div />
+      <Meter
+        max={statMax}
+        value={0}
+        color="transparent"
+        background="transparent"
+      />
     </div>
   );
 }

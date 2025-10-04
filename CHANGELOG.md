@@ -6,6 +6,12 @@
 
 - Updated Pokéball easter egg appearance
 
+- Fixed broken focus outlines
+
+- Fixed misaligned items in the defense coverage listing screen
+
+- Pokédex cards now have a larger minimum width
+
 ## 2025-09-28
 
 - Pokémon stat meters are now visually broken into 5 chunks of 51 stat points

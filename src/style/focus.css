@@ -1,8 +1,15 @@
-.focus-tab:focus-visible,
-.focus-tab:has(:focus-visible) {
+.focus-header:focus-visible,
+.focus-header:has(:focus-visible) {
   outline: 1px solid var(--color-header-dark);
   outline-offset: -1px;
   box-shadow: 0 0 0 3px var(--color-header-text);
+}
+
+.focus-tab:focus-visible,
+.focus-tab:has(:focus-visible) {
+  outline: 1px solid var(--color-bg1);
+  outline-offset: -1px;
+  box-shadow: 0 0 0 3px var(--color-fg1);
 }
 
 .focus-outline:focus-visible,
