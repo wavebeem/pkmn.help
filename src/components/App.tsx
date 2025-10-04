@@ -19,7 +19,6 @@ import { useUpdateSW } from "../hooks/useUpdateSW";
 import { CoverageType, Pokemon } from "../misc/data-types";
 import { detectLanguage } from "../misc/detectLanguage";
 import { formatPokemonName } from "../misc/formatPokemonName";
-import { iterCycle, iterNext, iterStutter } from "../misc/iter";
 import { randomItem } from "../misc/random";
 import { publicPath } from "../misc/settings";
 import { ScreenCoverageList } from "../screens/ScreenCoverageList";
