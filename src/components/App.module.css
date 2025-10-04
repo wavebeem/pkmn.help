@@ -262,6 +262,12 @@
   font-weight: var(--weight-medium);
   outline-color: currentColor;
 }
+/*added a hover feature */
+.tab:hover {
+  background: var(--color-bg2);
+  color: var(--color-fg2);
+  box-shadow: 0 1px 0 0 var(--color-border2);
+}
 
 .tab[aria-current="page"] {
   border-color: var(--color-header-text);
