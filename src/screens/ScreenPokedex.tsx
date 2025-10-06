@@ -21,6 +21,7 @@ import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { pickTranslation } from "../misc/pickTranslation";
 import styles from "./ScreenPokedex.module.css";
 import { FancyLink } from "../components/FancyLink";
+import { SelectDivider } from "../components/SelectDivider";
 
 export function ScreenPokedex(): ReactNode {
   const { allPokemon, isLoading } = useAppContext();
@@ -134,7 +135,7 @@ export function ScreenPokedex(): ReactNode {
             }}
           >
             <option value="">Auto</option>
-            <hr />
+            <SelectDivider />
             <option value="hp">{t("pokedex.stats.hp")}</option>
             <option value="attack">{t("pokedex.stats.attack")}</option>
             <option value="defense">{t("pokedex.stats.defense")}</option>
@@ -153,7 +154,8 @@ export function ScreenPokedex(): ReactNode {
           <Paginator
             currentPage={Number(page)}
             setPage={setPage}
-            pageSize={8 * 3}
+            // Divide evenly between 1, 2, and 3 column layouts
+            pageSize={12}
             emptyState={
               <EmptyState borderless>{t("pokedex.search.notFound")}</EmptyState>
             }

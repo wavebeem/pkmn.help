@@ -6,10 +6,10 @@ interface PaginatorProps<T> {
   setPage: (page: number) => void;
   currentPage: number;
   pageSize: number;
-  emptyState: any;
+  emptyState: ReactNode;
   items: T[];
-  renderPage: (items: T[]) => any;
-  renderID: (item: T) => any;
+  renderPage: (items: T[]) => ReactNode;
+  renderID: (item: T) => ReactNode;
 }
 
 export function Paginator<T>({

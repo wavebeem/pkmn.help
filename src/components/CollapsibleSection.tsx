@@ -17,7 +17,11 @@ export function CollapsibleSection({
   return (
     <details className={styles.details} open={initiallyOpen}>
       <summary
-        className={classNames(styles.summary, "active-darken", "no-select")}
+        className={classNames(
+          styles.summary,
+          "active-darken-background",
+          "no-select",
+        )}
       >
         {heading}
         <Icon className={styles.icon} size={32} name="open" />

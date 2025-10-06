@@ -13,6 +13,7 @@ export function FancyLink({ className, ...props }: FancyLinkProps): ReactNode {
       <Link
         className={classNames(
           "focus-outline",
+          "active-darken-background",
           styles.link,
           props.underline === "never" && styles.noUnderline,
           className,

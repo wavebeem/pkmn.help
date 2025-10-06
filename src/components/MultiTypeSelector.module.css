@@ -55,6 +55,7 @@
 }
 
 .checkbox:checked {
+  filter: drop-shadow(0 0 1px #0008);
   background-clip: padding-box;
   --_blur: 0.6px;
   --_size: calc(1em / 6);

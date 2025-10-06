@@ -15,7 +15,7 @@ export interface PageSelectorProps<T> {
   setPage: (page: number) => void;
   hasPrev: boolean;
   hasNext: boolean;
-  renderID: (item: T) => any;
+  renderID: (item: T) => ReactNode;
 }
 
 export function PageSelector<T>({
@@ -47,8 +47,6 @@ export function PageSelector<T>({
   const first = pageItems[0];
   const last = pageItems[pageItems.length - 1];
 
-  const iconClasses = "mv1";
-
   function updatePage(page: number) {
     if (location === "bottom" && anchorElementRef.current) {
       anchorElementRef.current.scrollIntoView();
@@ -56,10 +54,11 @@ export function PageSelector<T>({
     setPage(page);
   }
 
-  const currentPageDisplay = String(currentPage + 1).padStart(
-    String(numPages).length,
-    "0",
-  );
+  const currentPageDisplay = String(currentPage + 1);
+  // const currentPageDisplay = String(currentPage + 1).padStart(
+  //   String(numPages).length,
+  //   "0",
+  // );
 
   return (
     <Flex gap="large" direction="column">
@@ -72,7 +71,7 @@ export function PageSelector<T>({
           </Flex>
 
           <FancyText tag="span" fontWeight="normal">
-            ({currentPageDisplay} / {numPages})
+            {currentPageDisplay} / {numPages}
           </FancyText>
         </Flex>
       </FancyText>
@@ -86,7 +85,7 @@ export function PageSelector<T>({
           title={t("pokedex.pagination.firstLong")}
           aria-label={t("pokedex.pagination.firstLong")}
         >
-          <Icon name="arrowLeftDouble" className={iconClasses} />
+          <Icon name="arrowLeftDouble" />
         </Button>
         <Button
           disabled={!hasPrev}
@@ -96,7 +95,7 @@ export function PageSelector<T>({
           title={t("pokedex.pagination.previousLong")}
           aria-label={t("pokedex.pagination.previousLong")}
         >
-          <Icon name="arrowLeft" className={iconClasses} />
+          <Icon name="arrowLeft" />
           {buttonSize === "medium" && t("pokedex.pagination.previous")}
           {buttonSize === "large" && t("pokedex.pagination.previousLong")}
         </Button>
@@ -111,7 +110,7 @@ export function PageSelector<T>({
         >
           {buttonSize === "medium" && t("pokedex.pagination.next")}
           {buttonSize === "large" && t("pokedex.pagination.nextLong")}
-          <Icon name="arrowRight" className={iconClasses} />
+          <Icon name="arrowRight" />
         </Button>
         <Button
           disabled={!hasNext}
@@ -121,7 +120,7 @@ export function PageSelector<T>({
           title={t("pokedex.pagination.lastLong")}
           aria-label={t("pokedex.pagination.lastLong")}
         >
-          <Icon name="arrowRightDouble" className={iconClasses} />
+          <Icon name="arrowRightDouble" />
         </Button>
       </Flex>
     </Flex>

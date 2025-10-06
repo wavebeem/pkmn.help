@@ -5,7 +5,6 @@ something. */
 :root,
 [data-theme="light"] {
   --hue-blue: 230;
-  --hue-green: 120;
   --hue-red: 0;
   --hue-teal: 200;
 

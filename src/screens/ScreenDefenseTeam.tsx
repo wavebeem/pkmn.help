@@ -31,6 +31,7 @@ import { EmptyState } from "../components/EmptyState";
 import { Card } from "../components/Card";
 import { Divider } from "../components/Divider";
 import { useGeneration } from "../hooks/useGeneration";
+import { SelectDivider } from "../components/SelectDivider";
 
 function setAbilityAt({
   list,
@@ -288,7 +289,7 @@ export function ScreenDefenseTeam(): ReactNode {
                         <option value="">
                           {t("defense.abilityNames.none")}
                         </option>
-                        <hr />
+                        <SelectDivider />
                         {sortedAbilityNames.map((name) => {
                           return (
                             <option key={name} value={name}>
@@ -316,7 +317,7 @@ export function ScreenDefenseTeam(): ReactNode {
                         }}
                       >
                         <option value={Type.none}>{t("types.none")}</option>
-                        <hr />
+                        <SelectDivider />
                         {typesWithoutNone.map((name) => {
                           return (
                             <option key={name} value={name}>

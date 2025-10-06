@@ -23,6 +23,7 @@ import {
 } from "../misc/data-types";
 import styles from "./ScreenDefense.module.css";
 import { useGeneration } from "../hooks/useGeneration";
+import { SelectDivider } from "../components/SelectDivider";
 
 export function ScreenDefense(): ReactNode {
   useScrollToFragment();
@@ -123,7 +124,7 @@ export function ScreenDefense(): ReactNode {
               }}
             >
               <option value="">{t("defense.abilityNames.none")}</option>
-              <hr />
+              <SelectDivider />
               {sortedAbilityNames.map((name) => {
                 return (
                   <option key={name} value={name}>
@@ -140,11 +141,13 @@ export function ScreenDefense(): ReactNode {
               }}
             >
               <option value="">{t("types.none")}</option>
-              <hr />
+              <SelectDivider />
               {allTypes.flatMap((name) => {
                 return (
                   <Fragment key={name}>
-                    {name === "fire" || name === "stellar" ? <hr /> : null}
+                    {name === "fire" || name === "stellar" ? (
+                      <SelectDivider />
+                    ) : null}
                     <option value={name}>{t(`types.${name}`)}</option>
                   </Fragment>
                 );
