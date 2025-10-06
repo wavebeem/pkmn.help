@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import {
@@ -103,7 +103,7 @@ function useTranslationsWithBlankFallback() {
 }
 
 export function Layout(): ReactNode {
-  const tabClass = classNames(styles.tab, "active-darken focus-header");
+  const tabClass = clsx(styles.tab, "active-darken focus-header");
 
   // Service worker
   const {
@@ -228,9 +228,7 @@ export function Layout(): ReactNode {
       )}
       <div className={styles.root}>
         <header className={styles.header} ref={headerRef}>
-          <div
-            className={classNames(styles.headerContent, "content-wide center")}
-          >
+          <div className={clsx(styles.headerContent, "content-wide center")}>
             <h1 className={styles.heading}>
               <button
                 className={styles.pokeball}
@@ -259,10 +257,7 @@ export function Layout(): ReactNode {
                 {t("navigation.pokedex")}
               </NavLink>
               <NavLink
-                className={classNames(
-                  tabClass,
-                  needRefresh && styles.pleaseUpdate,
-                )}
+                className={clsx(tabClass, needRefresh && styles.pleaseUpdate)}
                 to="/more/"
               >
                 {t("navigation.more")}

@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG } from "../misc/colors";
 import { Generation } from "../misc/data-generations";
@@ -31,7 +31,7 @@ export function MultiTypeSelector({
           <label
             key={type}
             data-type={type}
-            className={classNames(
+            className={clsx(
               styles.label,
               "select-none",
               isChecked && "focus-tab",
@@ -47,7 +47,7 @@ export function MultiTypeSelector({
                 name={type}
                 type="checkbox"
                 checked={isChecked}
-                className={classNames(styles.checkbox, "focus-none")}
+                className={clsx(styles.checkbox, "focus-none")}
                 onChange={() => {
                   const types = new Set(value);
                   if (isChecked) {

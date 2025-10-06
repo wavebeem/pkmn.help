@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { useState, useCallback, ReactNode } from "react";
 import { getPngSrc, getWebpSrcSet } from "../misc/getImage";
 import styles from "./MonsterImage.module.css";
@@ -32,7 +32,7 @@ export function MonsterImage({
   }, []);
   return (
     <div
-      className={classNames(styles.container)}
+      className={clsx(styles.container)}
       style={customProperties({
         "--size-px": `${size}px`,
       })}

@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { AnchorHTMLAttributes, ReactNode } from "react";
 import styles from "./FancyLink.module.css";
 
@@ -14,7 +14,7 @@ export function ExternalLink({
 }: ExternalLinkProps): ReactNode {
   return (
     <a
-      className={classNames(
+      className={clsx(
         "focus-outline",
         styles.link,
         underline === "never" && styles.noUnderline,

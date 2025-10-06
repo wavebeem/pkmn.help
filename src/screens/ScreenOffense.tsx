@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { ReactNode, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
@@ -113,7 +113,7 @@ export function ScreenOffense(): ReactNode {
   }
 
   return (
-    <main className={classNames(styles.root, "content-wide center")}>
+    <main className={clsx(styles.root, "content-wide center")}>
       <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="small">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">

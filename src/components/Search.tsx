@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { ReactNode } from "react";
 import { customProperties } from "../misc/customProperties";
 import { Icon } from "./Icon";
@@ -34,7 +34,7 @@ export function Search({
           autoCorrect="off"
           inputMode="search"
           autoCapitalize="none"
-          className={classNames(styles.input, "focus-simple")}
+          className={clsx(styles.input, "focus-simple")}
           value={value}
           onChange={(event) => {
             onChange(event.target.value);
@@ -43,10 +43,7 @@ export function Search({
         <Icon
           name="clear"
           size={iconSize}
-          className={classNames(
-            styles.iconClear,
-            value === "" && styles.hidden,
-          )}
+          className={clsx(styles.iconClear, value === "" && styles.hidden)}
           onClick={() => {
             onChange("");
           }}

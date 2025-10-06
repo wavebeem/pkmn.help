@@ -1,7 +1,7 @@
 import { Fragment, ReactNode, useId } from "react";
 import { FancyText } from "./FancyText";
 import styles from "./RadioGroup.module.css";
-import classNames from "classnames";
+import { clsx } from "clsx";
 
 export type RadioGroupOption<S extends string> = {
   value: S;
@@ -41,10 +41,10 @@ export function RadioGroup<S extends string>({
             {i > 0 && <div className={styles.itemDivider} />}
             <label
               key={option.value}
-              className={classNames(styles.item, "active-darken-background")}
+              className={clsx(styles.item, "active-darken-background")}
             >
               <input
-                className={classNames(styles.radio, "focus-outline")}
+                className={clsx(styles.radio, "focus-outline")}
                 type="radio"
                 name={name}
                 checked={value === option.value}

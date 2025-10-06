@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { HTMLAttributes, ReactNode } from "react";
 import styles from "./Flex.module.css";
 
@@ -34,7 +34,7 @@ export function Flex({
   return (
     <Tag
       hidden={hidden}
-      className={classNames(className, styles.Flex)}
+      className={clsx(className, styles.Flex)}
       data-direction={direction}
       data-wrap={wrap}
       data-gap={gap}

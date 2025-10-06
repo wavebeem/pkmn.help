@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { characters } from "../misc/characters";
@@ -76,7 +76,7 @@ export function Matchups({
                   ? t("offense.dealsXTo", { x: effectivenessDisplay })
                   : t("defense.takesXFrom", { x: effectivenessDisplay })}
               </FancyText>
-              <div className={classNames(styles.grid)}>
+              <div className={clsx(styles.grid)}>
                 {list.map((x) => {
                   if (kind === "offense" && x.formName === "stellar") {
                     return (

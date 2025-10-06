@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { ReactNode, useState } from "react";
 import styles from "./CopyButton.module.css";
 import { sleep } from "../misc/sleep";
@@ -18,7 +18,7 @@ export function CopyButton({ text, children }: CopyButtonProps): ReactNode {
       type="button"
       data-state={state}
       aria-disabled={disabled}
-      className={classNames("active-darken", "focus-tab", styles.CopyButton)}
+      className={clsx("active-darken", "focus-tab", styles.CopyButton)}
       onClick={async (event) => {
         try {
           event.preventDefault();

@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import styles from "./IconButton.module.css";
 
@@ -9,9 +9,6 @@ export function IconButton({
   ...props
 }: IconButtonProps): ReactNode {
   return (
-    <button
-      className={classNames(className, styles.root, "focus-tab")}
-      {...props}
-    />
+    <button className={clsx(className, styles.root, "focus-tab")} {...props} />
   );
 }

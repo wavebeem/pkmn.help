@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import styles from "./Button.module.css";
 
@@ -12,7 +12,7 @@ export function Button({
   return (
     <button
       aria-pressed={ariaPressed}
-      className={classNames(
+      className={clsx(
         className,
         styles.root,
         "active-darken",

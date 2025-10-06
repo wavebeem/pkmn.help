@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { HTMLAttributes, ReactNode } from "react";
 import styles from "./FancyText.module.css";
 
@@ -25,7 +25,7 @@ export function FancyText({
 }: FancyTextProps): ReactNode {
   return (
     <Tag
-      className={classNames(styles.FancyText, className)}
+      className={clsx(styles.FancyText, className)}
       data-text-align={textAlign}
       data-font-size={fontSize}
       data-font-weight={fontWeight}

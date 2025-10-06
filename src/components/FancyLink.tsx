@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { ReactNode } from "react";
 import { Link, LinkProps } from "react-router-dom";
 import styles from "./FancyLink.module.css";
@@ -11,7 +11,7 @@ export function FancyLink({ className, ...props }: FancyLinkProps): ReactNode {
   if ("to" in props) {
     return (
       <Link
-        className={classNames(
+        className={clsx(
           "focus-outline",
           "active-darken-background",
           styles.link,

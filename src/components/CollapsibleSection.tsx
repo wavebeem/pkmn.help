@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import styles from "./CollapsibleSection.module.css";
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { Icon } from "./Icon";
 
 interface CollapsibleSectionProps {
@@ -17,7 +17,7 @@ export function CollapsibleSection({
   return (
     <details className={styles.details} open={initiallyOpen}>
       <summary
-        className={classNames(
+        className={clsx(
           styles.summary,
           "active-darken-background",
           "no-select",

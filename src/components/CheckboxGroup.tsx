@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import styles from "./CheckboxGroup.module.css";
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { customProperties } from "../misc/customProperties";
 import { Flex } from "./Flex";
 
@@ -28,7 +28,7 @@ export function CheckboxGroup<S extends string>({
           <label
             key={option.id}
             data-id={option.id}
-            className={classNames(
+            className={clsx(
               styles.label,
               "select-none",
               isChecked && "focus-tab",
@@ -44,7 +44,7 @@ export function CheckboxGroup<S extends string>({
                 name={option.id}
                 type="checkbox"
                 checked={isChecked}
-                className={classNames(styles.checkbox, "focus-none")}
+                className={clsx(styles.checkbox, "focus-none")}
                 onChange={() => {
                   const set = new Set(value);
                   if (isChecked) {

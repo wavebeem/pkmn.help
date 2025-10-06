@@ -1,4 +1,4 @@
-import classNames from "classnames";
+import { clsx } from "clsx";
 import { useTranslation } from "react-i18next";
 import styles from "./MatchupsTeam.module.css";
 import { assertNever } from "../misc/assertNever";
@@ -187,11 +187,8 @@ export function MatchupsTeam({
   }
 
   return (
-    <div className={classNames(styles.root, "focus-simple", "tabular-nums")}>
-      <div
-        className={classNames(styles.tableWrapper, "focus-none")}
-        tabIndex={0}
-      >
+    <div className={clsx(styles.root, "focus-simple", "tabular-nums")}>
+      <div className={clsx(styles.tableWrapper, "focus-none")} tabIndex={0}>
         <table>
           <thead>
             <tr>
