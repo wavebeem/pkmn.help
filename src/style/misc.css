@@ -237,6 +237,6 @@ input {
 
 .active-darken-background:active {
   background-image: linear-gradient(
-    hsl(from var(--color-fg1) h s l / 2%) 0 100%
+    hsl(from var(--color-fg1) h s l / 5%) 0 100%
   );
 }

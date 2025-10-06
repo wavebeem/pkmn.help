@@ -4,6 +4,8 @@
 
 - Various minor UI changes
 
+- Reduced Pokédex page size from 24 to 12 to improve performance on mobile
+
 ## 2025-10-03
 
 - Updated French translations
