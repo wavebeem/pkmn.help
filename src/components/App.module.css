@@ -69,7 +69,6 @@
   flex-direction: column;
   gap: var(--padding3);
   padding: var(--padding3);
-  color: var(--color-header-text);
 }
 
 @media (width >= 60rem) {

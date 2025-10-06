@@ -87,7 +87,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
         <Paginator
           setPage={setPage}
           currentPage={page}
-          pageSize={20}
+          pageSize={12}
           emptyState={
             <EmptyState>{t("offense.coverageList.empty")}</EmptyState>
           }

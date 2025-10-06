@@ -29,7 +29,7 @@
   padding: calc(1px + var(--padding2)) var(--padding2);
   gap: var(--padding3);
   align-items: center;
-  border-radius: calc(var(--border-radius2) - var(--padding1));
+  border-radius: calc(var(--border-radius3) - var(--padding1));
   border: 1px solid transparent;
   width: 100%;
 }
