@@ -12,19 +12,19 @@ pre.FancyText {
 }
 
 .FancyText[data-font-size="small"] {
-  font-size: 0.875rem;
+  font-size: var(--font-size0);
 }
 
 .FancyText[data-font-size="medium"] {
-  font-size: 1rem;
+  font-size: var(--font-size1);
 }
 
 .FancyText[data-font-size="large"] {
-  font-size: 1.25rem;
+  font-size: var(--font-size2);
 }
 
 .FancyText[data-font-size="xlarge"] {
-  font-size: 1.5rem;
+  font-size: var(--font-size3);
 }
 
 pre.FancyText[data-font-size] {

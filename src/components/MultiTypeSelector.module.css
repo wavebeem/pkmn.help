@@ -16,7 +16,10 @@
   border-color: var(--color-vibrant-border1);
   background: var(--type-color-bg);
   color: white;
-  text-shadow: var(--type-text-shadow);
+}
+
+.label:where(:has(.checkbox:checked)) .text {
+  filter: drop-shadow(0 0 1px #0008) drop-shadow(0 0 1px #0008);
 }
 
 .label:where(:not(:has(.checkbox:checked))) {
@@ -43,7 +46,6 @@
   border: 0;
   background: var(--type-color);
   color: white;
-  text-shadow: var(--type-text-shadow);
   box-shadow: var(--checkbox-border);
   border-radius: 0.125rem;
 }
@@ -55,11 +57,11 @@
 .checkbox:checked {
   background-clip: padding-box;
   --_blur: 0.6px;
-  --_size: calc(1em / 8);
+  --_size: calc(1em / 6);
   --_start: calc(50% - 0.5 * var(--_size));
   --_end: calc(var(--_start) + var(--_size));
-  --_fg: white;
-  --_bg: black;
+  --_fg: black;
+  --_bg: white;
   --checkbox-color-border: var(--_fg);
   background-color: var(--_bg);
   background-image:
@@ -81,9 +83,10 @@
       transparent calc(var(--_end) + var(--_blur)),
       transparent
     );
-  box-shadow:
+  box-shadow: inset 0 0 0 6px var(--_bg);
+  /* box-shadow:
     var(--checkbox-border),
-    inset 0 0 0 8px var(--_bg);
+    inset 0 0 0 6px var(--_bg); */
 }
 
 .checkbox:disabled {

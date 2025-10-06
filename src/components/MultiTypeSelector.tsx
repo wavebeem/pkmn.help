@@ -62,7 +62,7 @@ export function MultiTypeSelector({
                   onChange(newValue);
                 }}
               />
-              {t(`types.${type}`)}
+              <span className={styles.text}>{t(`types.${type}`)}</span>
             </Flex>
           </label>
         );

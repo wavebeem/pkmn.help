@@ -3,6 +3,8 @@
   color: var(--color-fg1);
   line-height: 1.5;
   overscroll-behavior: none;
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-tap-highlight-color */
+  -webkit-tap-highlight-color: transparent;
 }
 
 [hidden] {
@@ -219,22 +221,6 @@ input {
 
 .fit-content {
   max-width: fit-content;
-}
-
-.type-bg {
-  background: var(--type-color, #333);
-  color: white;
-  text-shadow: var(--type-text-shadow);
-}
-
-.type-bg-text {
-  color: white;
-  text-shadow: var(--type-text-shadow);
-}
-
-.type-any-label {
-  background: var(--type-color-bg);
-  box-shadow: 0 0 0 1px var(--type-color-border);
 }
 
 .select-none {

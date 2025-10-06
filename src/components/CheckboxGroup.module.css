@@ -54,7 +54,7 @@
 .checkbox:checked {
   background-clip: padding-box;
   --_blur: 0.6px;
-  --_size: calc(1em / 8);
+  --_size: calc(1em / 6);
   --_start: calc(50% - 0.5 * var(--_size));
   --_end: calc(var(--_start) + var(--_size));
   --_fg: var(--color-fg1);
@@ -82,7 +82,7 @@
     );
   box-shadow:
     var(--checkbox-border),
-    inset 0 0 0 8px var(--_bg);
+    inset 0 0 0 6px var(--_bg);
 }
 
 .checkbox:disabled {

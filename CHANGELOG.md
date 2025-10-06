@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-10-06
+
+- Various minor UI changes
+
 ## 2025-10-03
 
 - Updated French translations

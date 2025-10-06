@@ -17,6 +17,10 @@
   min-height: 1rem;
 }
 
+.badge[data-type="stellar"] {
+  background: var(--stellar-background-linear);
+}
+
 .label {
   line-height: 1;
   filter: drop-shadow(0 0 1px rgb(from var(--type-color-bg) r g b / 100%))

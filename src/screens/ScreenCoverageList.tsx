@@ -95,7 +95,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
           renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
           renderPage={(items) => {
             return (
-              <Flex direction="column" gap="large" paddingY="large">
+              <Flex direction="column" paddingY="large">
                 {items.map(({ number, name, types }, i) => {
                   const dexParams = new URLSearchParams({
                     q: number,
@@ -120,7 +120,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
                       </Flex>
                       <Flex
                         wrap
-                        gap="medium"
+                        gap="small"
                         justify="flex-start"
                         align="center"
                       >

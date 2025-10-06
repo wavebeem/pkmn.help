@@ -14,6 +14,8 @@ import { AppContext, AppContextProvider } from "../hooks/useAppContext";
 import { useComputedStyleProperty } from "../hooks/useComputedStyleProperty";
 import { useFetchJSON } from "../hooks/useFetchJSON";
 import { useLanguage } from "../hooks/useLanguage";
+import { useMetaThemeColor } from "../hooks/useMetaThemeColor";
+import { usePageTitle } from "../hooks/usePageTitle";
 import { useTheme } from "../hooks/useTheme";
 import { useUpdateSW } from "../hooks/useUpdateSW";
 import { CoverageType, Pokemon } from "../misc/data-types";
@@ -206,24 +208,8 @@ export function Layout(): ReactNode {
     ],
   );
 
-  useEffect(() => {
-    document.title = t("title");
-  });
-
-  useEffect(() => {
-    const meta = document.querySelector<HTMLMetaElement>(
-      "meta[name=theme-color]",
-    );
-    if (meta && themeColor) {
-      meta.content = themeColor;
-    }
-  }, [themeColor]);
-
-  useEffect(() => {
-    const root = document.documentElement;
-    root.dataset.theme = dataTheme;
-    root.dataset.themeColor = themeColor;
-  }, [dataTheme, themeColor]);
+  usePageTitle(t("title"));
+  useMetaThemeColor({ dataTheme, themeColor });
 
   return (
     <AppContextProvider value={appContext}>

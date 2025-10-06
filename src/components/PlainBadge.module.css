@@ -2,13 +2,15 @@
   border-radius: var(--border-radius1);
   border: 1px solid var(--color-border2);
   background: var(--color-bg1);
-  text-align: center;
   grid-column: 1 / -1;
-  padding: 2px;
 }
 
 .content {
   border-radius: var(--border-radius1);
-  padding: 3px 8px;
-  letter-spacing: 0.05em;
+  padding: 8px;
+  font-size: var(--font-size2);
+
+  line-height: 1;
+  font-weight: var(--weight-medium);
+  font-stretch: ultra-condensed;
 }
