@@ -9,13 +9,25 @@
   "offense": {
     "chooseTypes": "Wybierz typy",
     "dealsXTo": "Zadaje {{ x }} do",
+    "abilities": {
+      "choose": "Wybierz abilitki"
+    },
+    "specialMoves": {
+      "choose": "Wybierz specjalne ruchy",
+      "names": {
+        "freeze-dry": "Freeze-Dry",
+        "thousand_arrows": "Thousand Arrows",
+        "flying_press": "Flying Press"
+      }
+    },
     "coverage": {
       "heading": "Pokrycie Pokédexa",
       "edit": "Edytuj listę",
-      "weakness": "Słabość",
-      "normal": "Normalne",
-      "resistance": "Opór"
+      "weakness": "Słaby",
+      "normal": "Neutralny",
+      "resistance": "Odporny"
     },
+    "teraPokemon": "Tera Pokémon",
     "coverageList": {
       "empty": "Nie znaleziono Pokémona lub nie wybrano żadnego typu",
       "weakness": {
@@ -37,9 +49,9 @@
     "csvHeaders": {
       "number": "Numer",
       "name": "Nazwa",
-      "type1": "1-szy Tryb",
-      "type2": "2-gi Tryb",
-      "type3": "3-ci Tryb"
+      "type1": "1-szy Typ",
+      "type2": "2-gi Typ",
+      "type3": "3-ci Typ"
     },
     "export": {
       "button": "Eksportuj",
@@ -53,19 +65,26 @@
       "button": "Zresetuj",
       "description": "Zresetuj do domyślnego Pokédexu"
     },
+    "filename": "pkmn.help type coverage.csv",
     "status": {
       "imported": "Zaimportowano {{ n }} formularzy Pokémonów z „{{ file }}”",
-      "exported": "Wyeksportowane domyślne formy Pokémonów",
-      "reset": "Załadowane domyślne formy Pokémonów",
+      "exported": "Wyeksportowano domyślne formy Pokémonów",
+      "reset": "Załadowano domyślne formy Pokémonów",
       "errored": "Błąd ładowania pliku CSV. Nie zmieniaj nazw nagłówków."
     },
     "back": "Wróć do ofensywy"
   },
   "defense": {
+    "chooseTypes": "Wybierz typy",
     "takesXFrom": "Dostaje {{ x }} od",
+    "chooseAbility": "Wybierz abilitkę",
+    "chooseTeraType": "Wybierz typ terastalizacji",
     "abilityNames": {
-      "filter": "Filter",
+      "none": "None",
+      "tinted_lens": "Tinted Lens",
+      "scrappy": "Scrappy",
       "tera_shell": "Tera Shell",
+      "filter": "Filter",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",
@@ -93,18 +112,17 @@
     "team": {
       "tableHeading": "Liczba kombinacji",
       "heading": "Edytuj drużynę Pokémon",
-      "add": "Dodaj Pokémonów",
+      "add": "Dodaj Pokémona",
       "empty": "Nie wybrano Pokémona",
       "displayType": "Format Tabeli",
-      "weak": "Słabość do",
-      "resist": "Opór do",
+      "weak": "Słaby na",
+      "resist": "Odporny na",
       "simple": "Prosty",
-      "complex": "Skomplikowany",
+      "complex": "Zaawansowany",
       "type": "Typ",
       "edit": "Edytuj",
       "remove": "Usuń"
-    },
-    "chooseTypes": "Wybierz typy"
+    }
   },
   "pokedex": {
     "search": {
@@ -119,6 +137,12 @@
     "defense": {
       "text": "Defensywa"
     },
+    "cry": {
+      "text": "Głos"
+    },
+    "shiny": {
+      "text": "Shiny"
+    },
     "pagination": {
       "next": "Nast.",
       "nextLong": "Następny",
@@ -126,6 +150,10 @@
       "previousLong": "Poprzedni",
       "firstLong": "Pierwszy",
       "lastLong": "Ostatni"
+    },
+    "sorting": {
+      "sortBy": "Sortuj według",
+      "auto": "Auto"
     },
     "stats": {
       "hp": "PŻ",
@@ -147,14 +175,14 @@
   "pokedexHelp": {
     "searchByName": {
       "heading": "Szukaj według nazwy",
-      "description": "Możesz wyszukać Pokémona według nazwy. Jeśli pamiętasz tylko część imienia Pokémona, prawdopodobnie nadal może go dla ciebie znaleźć. Teraz nie radzi sobie z literówkami."
+      "description": "Możesz wyszukać Pokémona według nazwy. Jeśli pamiętasz tylko część imienia Pokémona, prawdopodobnie nadal może go dla ciebie znaleźć. Ale jeszcze nie radzi sobie z literówkami."
     },
     "searchByNumber": {
       "heading": "Szukaj według numeru",
       "description": "Szukaj według krajowego numeru dex. Jeśli chcesz Bulbasaura, po prostu wpisz 1, a nie #001."
     },
     "searchByType": {
-      "heading": "Search by typu",
+      "heading": "Szukaj według typu",
       "description": "Oto kilka przykładów wyszukiwania według typu."
     },
     "searchExamples": {
@@ -164,7 +192,7 @@
       },
       "doubleType": {
         "query": "wodny latający",
-        "description": "Szukaj Pokémonów woda/latanie (np. Gyarados) lub latanie/woda(np. Cramorant)."
+        "description": "Szukaj Pokémonów wodny/latający (np. Gyarados) lub latający/wodny(np. Cramorant)."
       },
       "singleType": {
         "query": "trawiasty nic",
@@ -176,14 +204,16 @@
   "more": {
     "contact": {
       "heading": "Skontaktuj się ze mną",
-      "intro": "Cześć, jestem <homepage>Sage</homepage> (oni) i stworzyłem kalkulator typów Pokémonów (pkmn.help).",
+      "intro": "Cześć, jestem <homepage>Sage</homepage> (oni) i stworzyłem ten kalkulator typów Pokémonów (pkmn.help).",
       "email": "Wyślij swoje myśli i podziękowania e-mailem na adres <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
       "heading": "Ustawienia",
       "language": {
         "label": "Język",
-        "default": "Automatyczne wykrywanie języka"
+        "default": "Automatyczne wykrywanie języka",
+        "official": "Oficjalne języki",
+        "unofficial": "Nieoficjalne języki"
       },
       "theme": {
         "label": "Motyw",
@@ -191,12 +221,13 @@
         "values": {
           "auto": "Domyślne ustawienie",
           "light": "Tryb Jasny",
-          "dark": "Tryb Ciemny"
+          "dark": "Tryb Ciemny",
+          "night": "Tryb Nocny"
         }
       },
       "typeCount": {
         "label": "Ilość typów",
-        "help": "Pokémony mogą przez krótki czas mieć trzy typy jednocześnie, jeśli zostaną trafieni Klątwą Lasu lub Cukierek albo psikus. Pole trzeciego typu jest domyślnie ukryte, ponieważ jest rzadko używane.",
+        "help": "Pokémony mogą przez krótki czas mieć trzy typy jednocześnie, jeśli zostaną trafieni ruchami Forests’s Curse albo Trick-or-Treat. Pole trzeciego typu jest domyślnie ukryte, ponieważ jest rzadko używane.",
         "values": {
           "2": "Dwa typy (2)",
           "3": "Trzy typy (3)"
@@ -250,8 +281,9 @@
     "psychic": "Psychiczny",
     "ice": "Lodowy",
     "dragon": "Smoczy",
-    "dark": "Mroczy",
+    "dark": "Mroczny",
     "fairy": "Bajkowy",
+    "stellar": "Stellar",
     "none": "Nic"
   },
   "banners": {
@@ -262,7 +294,8 @@
     }
   },
   "general": {
-    "loading": "Ładowanie…"
+    "loading": "Ładowanie…",
+    "copyLink": "Skopiuj Link"
   },
   "games": {
     "label": "Generacja Gry",

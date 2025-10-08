@@ -6,17 +6,17 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Więcej
 offense.chooseTypes,Choose types,Wybierz typy
 offense.dealsXTo,Deals {{ x }} to,Zadaje {{ x }} do
-offense.abilities.choose,Choose abilities,
-offense.specialMoves.choose,Choose special moves,
-offense.specialMoves.names.freeze-dry,Freeze-Dry,
-offense.specialMoves.names.thousand_arrows,Thousand Arrows,
-offense.specialMoves.names.flying_press,Flying Press,
+offense.abilities.choose,Choose abilities,Wybierz abilitki
+offense.specialMoves.choose,Choose special moves,Wybierz specjalne ruchy
+offense.specialMoves.names.freeze-dry,Freeze-Dry,Freeze-Dry
+offense.specialMoves.names.thousand_arrows,Thousand Arrows,Thousand Arrows
+offense.specialMoves.names.flying_press,Flying Press,Flying Press
 offense.coverage.heading,Pokédex coverage,Pokrycie Pokédexa
 offense.coverage.edit,Edit list,Edytuj listę
-offense.coverage.weakness,Weak,Słabość
-offense.coverage.normal,Neutral,Normalne
-offense.coverage.resistance,Resist,Opór
-offense.teraPokemon,Tera Pokémon,
+offense.coverage.weakness,Weak,Słaby
+offense.coverage.normal,Neutral,Neutralny
+offense.coverage.resistance,Resist,Odporny
+offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,Nie znaleziono Pokémona lub nie wybrano żadnego typu
 offense.coverageList.weakness.heading,Weakness coverage list,Lista pokrycia słabości
 offense.coverageList.normal.heading,Neutral effectiveness coverage list,Lista Pokrycia Normalnej Skuteczności
@@ -27,28 +27,28 @@ coverage.paragraph2,"CSV data is loaded by column header name, not column order,
 coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","Pliki CSV można edytować za pomocą Arkuszy Google, Microsoft Excel, OpenOffice, LibreOffice, Notatnika i innych."
 coverage.csvHeaders.number,Number,Numer
 coverage.csvHeaders.name,Name,Nazwa
-coverage.csvHeaders.type1,Type 1,1-szy Tryb
-coverage.csvHeaders.type2,Type 2,2-gi Tryb
-coverage.csvHeaders.type3,Type 3,3-ci Tryb
+coverage.csvHeaders.type1,Type 1,1-szy Typ
+coverage.csvHeaders.type2,Type 2,2-gi Typ
+coverage.csvHeaders.type3,Type 3,3-ci Typ
 coverage.export.button,Export,Eksportuj
 coverage.export.description,Export the default Pokédex to a CSV file,Wyeksportuj domyślny Pokédex do pliku CSV
 coverage.import.button,Import,Importuj
 coverage.import.description,Import an edited Pokédex CSV file,Zaimportuj edytowany plik Pokédex CSV
 coverage.reset.button,Reset,Zresetuj
 coverage.reset.description,Reset to the default Pokédex,Zresetuj do domyślnego Pokédexu
-coverage.filename,pkmn.help type coverage.csv,
+coverage.filename,pkmn.help type coverage.csv,pkmn.help type coverage.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,Zaimportowano {{ n }} formularzy Pokémonów z „{{ file }}”
-coverage.status.exported,Exported default Pokémon forms,Wyeksportowane domyślne formy Pokémonów
-coverage.status.reset,Loaded default Pokémon forms,Załadowane domyślne formy Pokémonów
+coverage.status.exported,Exported default Pokémon forms,Wyeksportowano domyślne formy Pokémonów
+coverage.status.reset,Loaded default Pokémon forms,Załadowano domyślne formy Pokémonów
 coverage.status.errored,Error loading CSV. Don't change header names.,Błąd ładowania pliku CSV. Nie zmieniaj nazw nagłówków.
 coverage.back,Back to offense,Wróć do ofensywy
 defense.chooseTypes,Choose types,Wybierz typy
 defense.takesXFrom,Takes {{ x }} from,Dostaje {{ x }} od
-defense.chooseAbility,Choose ability,
-defense.chooseTeraType,Choose tera type,
-defense.abilityNames.none,None,
-defense.abilityNames.tinted_lens,Tinted Lens,
-defense.abilityNames.scrappy,Scrappy,
+defense.chooseAbility,Choose ability,Wybierz abilitkę
+defense.chooseTeraType,Choose tera type,Wybierz typ terastalizacji
+defense.abilityNames.none,None,None
+defense.abilityNames.tinted_lens,Tinted Lens,Tinted Lens
+defense.abilityNames.scrappy,Scrappy,Scrappy
 defense.abilityNames.tera_shell,Tera Shell,Tera Shell
 defense.abilityNames.filter,Filter,Filter
 defense.abilityNames.wonder_guard,Wonder Guard,Wonder Guard
@@ -74,13 +74,13 @@ defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Drużyna
 defense.team.tableHeading,Matchup counts,Liczba kombinacji
 defense.team.heading,Edit Pokémon team,Edytuj drużynę Pokémon
-defense.team.add,Add Pokémon,Dodaj Pokémonów
+defense.team.add,Add Pokémon,Dodaj Pokémona
 defense.team.empty,No Pokémon selected,Nie wybrano Pokémona
 defense.team.displayType,Table format,Format Tabeli
-defense.team.weak,Weak,Słabość do
-defense.team.resist,Resist,Opór do
+defense.team.weak,Weak,Słaby na
+defense.team.resist,Resist,Odporny na
 defense.team.simple,Simple,Prosty
-defense.team.complex,Complex,Skomplikowany
+defense.team.complex,Complex,Zaawansowany
 defense.team.type,Type,Typ
 defense.team.edit,Edit,Edytuj
 defense.team.remove,Remove,Usuń
@@ -90,16 +90,16 @@ pokedex.search.helpLong,"Help, search Pokédex","Pomoc, wyszukaj Pokédex"
 pokedex.search.notFound,No Pokémon found,Nie znaleziono Pokémona
 pokedex.offense.text,Offense,Ofensywa
 pokedex.defense.text,Defense,Defensywa
-pokedex.cry.text,Cry,
-pokedex.shiny.text,Shiny,
+pokedex.cry.text,Cry,Głos
+pokedex.shiny.text,Shiny,Shiny
 pokedex.pagination.next,Next,Nast.
 pokedex.pagination.nextLong,Next,Następny
 pokedex.pagination.previous,Prev,Poprz.
 pokedex.pagination.previousLong,Previous,Poprzedni
 pokedex.pagination.firstLong,First,Pierwszy
 pokedex.pagination.lastLong,Last,Ostatni
-pokedex.sorting.sortBy,Sort by,
-pokedex.sorting.auto,Auto,
+pokedex.sorting.sortBy,Sort by,Sortuj według
+pokedex.sorting.auto,Auto,Auto
 pokedex.stats.hp,HP,PŻ
 pokedex.stats.hpLong,Hit Points,Punkty Życia
 pokedex.stats.attack,Attack,Atak
@@ -115,34 +115,34 @@ pokedex.stats.speedLong,Speed,Szybkość
 pokedex.stats.total,Total,Totalne
 pokedex.stats.totalLong,Total,Totalne
 pokedexHelp.searchByName.heading,Search by name,Szukaj według nazwy
-pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Możesz wyszukać Pokémona według nazwy. Jeśli pamiętasz tylko część imienia Pokémona, prawdopodobnie nadal może go dla ciebie znaleźć. Teraz nie radzi sobie z literówkami."
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Możesz wyszukać Pokémona według nazwy. Jeśli pamiętasz tylko część imienia Pokémona, prawdopodobnie nadal może go dla ciebie znaleźć. Ale jeszcze nie radzi sobie z literówkami."
 pokedexHelp.searchByNumber.heading,Search by number,Szukaj według numeru
 pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Szukaj według krajowego numeru dex. Jeśli chcesz Bulbasaura, po prostu wpisz 1, a nie #001."
-pokedexHelp.searchByType.heading,Search by type,Search by typu
+pokedexHelp.searchByType.heading,Search by type,Szukaj według typu
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Oto kilka przykładów wyszukiwania według typu.
 pokedexHelp.searchExamples.type.query,fire,ognisty
 pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Szukaj Pokémonów, które mają ogień jako jeden ze swoich typów w dowolnej formie (np. Charmander, Charizard, Rotom)."
 pokedexHelp.searchExamples.doubleType.query,water flying,wodny latający
-pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,Szukaj Pokémonów woda/latanie (np. Gyarados) lub latanie/woda(np. Cramorant).
+pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,Szukaj Pokémonów wodny/latający (np. Gyarados) lub latający/wodny(np. Cramorant).
 pokedexHelp.searchExamples.singleType.query,grass none,trawiasty nic
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Szukaj Pokémonów, które są tylko typu trawiastego, bez drugiego typu (np. Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Wróc do Pokédexu
 more.contact.heading,Contact me,Skontaktuj się ze mną
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Cześć, jestem <homepage>Sage</homepage> (oni) i stworzyłem kalkulator typów Pokémonów (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Cześć, jestem <homepage>Sage</homepage> (oni) i stworzyłem ten kalkulator typów Pokémonów (pkmn.help)."
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Wyślij swoje myśli i podziękowania e-mailem na adres <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Ustawienia
 more.settings.language.label,Language,Język
 more.settings.language.default,Auto detect language,Automatyczne wykrywanie języka
-more.settings.language.official,Official languages,
-more.settings.language.unofficial,Unofficial languages,
+more.settings.language.official,Official languages,Oficjalne języki
+more.settings.language.unofficial,Unofficial languages,Nieoficjalne języki
 more.settings.theme.label,Theme,Motyw
 more.settings.theme.help,“System default” will change automatically depending on your operating system settings.,„Domyślne ustawienie” zmieni się automatycznie w zależności od ustawień systemu operacyjnego.
 more.settings.theme.values.auto,System default,Domyślne ustawienie
 more.settings.theme.values.light,Light,Tryb Jasny
 more.settings.theme.values.dark,Dark,Tryb Ciemny
-more.settings.theme.values.night,Night,
+more.settings.theme.values.night,Night,Tryb Nocny
 more.settings.typeCount.label,Number of types,Ilość typów
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Pokémony mogą przez krótki czas mieć trzy typy jednocześnie, jeśli zostaną trafieni Klątwą Lasu lub Cukierek albo psikus. Pole trzeciego typu jest domyślnie ukryte, ponieważ jest rzadko używane."
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Pokémony mogą przez krótki czas mieć trzy typy jednocześnie, jeśli zostaną trafieni ruchami Forests’s Curse albo Trick-or-Treat. Pole trzeciego typu jest domyślnie ukryte, ponieważ jest rzadko używane."
 more.settings.typeCount.values.2,Two types (2),Dwa typy (2)
 more.settings.typeCount.values.3,Three types (3),Trzy typy (3)
 more.changes.heading,What’s new,Co nowego
@@ -175,15 +175,15 @@ types.electric,Electric,Elektryczny
 types.psychic,Psychic,Psychiczny
 types.ice,Ice,Lodowy
 types.dragon,Dragon,Smoczy
-types.dark,Dark,Mroczy
+types.dark,Dark,Mroczny
 types.fairy,Fairy,Bajkowy
-types.stellar,Stellar,
+types.stellar,Stellar,Stellar
 types.none,None,Nic
 banners.updateReady.description,An update is available,Aktualizacja jest dostępna
 banners.updateReady.whatsNew,What’s new,Co nowego
 banners.updateReady.update,Update,Aktualizacja
 general.loading,Loading…,Ładowanie…
-general.copyLink,Copy link,
+general.copyLink,Copy link,Skopiuj Link
 games.label,Game generation,Generacja Gry
 games.help,Use type effectiveness from different game generations.,Wykorzystaj skuteczność typu z różnych generacji gier.
 games.byID.gen1,Generation 1,Generacja 1-sza

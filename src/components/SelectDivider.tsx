@@ -10,5 +10,5 @@ export function SelectDivider(): ReactNode {
   if (supportsDividers) {
     return <hr />;
   }
-  return <option disabled>{"•—•—•—•—•—•"}</option>;
+  return <option disabled>{"─".repeat(8)}</option>;
 }
