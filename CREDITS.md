@@ -45,6 +45,7 @@
 ## Polish translation
 
 - Sebastian Biegaj
+- CreationQ
 
 ## French translation
 

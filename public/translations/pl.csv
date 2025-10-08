@@ -20,7 +20,7 @@ offense.teraPokemon,Tera Pokémon,Tera Pokémon
 offense.coverageList.empty,No Pokémon found or no types selected,Nie znaleziono Pokémona lub nie wybrano żadnego typu
 offense.coverageList.weakness.heading,Weakness coverage list,Lista pokrycia słabości
 offense.coverageList.normal.heading,Neutral effectiveness coverage list,Lista Pokrycia Normalnej Skuteczności
-offense.coverageList.resistance.heading,Resistance coverage list,Lista Pokrycia Oporów
+offense.coverageList.resistance.heading,Resistance coverage list,Lista Pokrycia Odporności
 coverage.heading,Pokédex coverage,Pokrycie Pokédexa
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importuj/eksportuj niestandardowe pliki Pokédex CSV, aby zobaczyć pokrycie dla różnych Pokémonów. Utwórz niestandardowy plik CSV tylko z Pokémonem poziomu OU, a nawet stwórz własnego Pokémona od podstaw."
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Dane CSV są ładowane według nazwy nagłówka kolumny, a nie kolejności kolumn, więc możesz dodawać kolumny lub zmieniać ich kolejność, jeśli chcesz (np. dodaj kolumnę „poziom” lub „uwagi”)."
@@ -46,7 +46,7 @@ defense.chooseTypes,Choose types,Wybierz typy
 defense.takesXFrom,Takes {{ x }} from,Dostaje {{ x }} od
 defense.chooseAbility,Choose ability,Wybierz abilitkę
 defense.chooseTeraType,Choose tera type,Wybierz typ terastalizacji
-defense.abilityNames.none,None,None
+defense.abilityNames.none,None,Brak
 defense.abilityNames.tinted_lens,Tinted Lens,Tinted Lens
 defense.abilityNames.scrappy,Scrappy,Scrappy
 defense.abilityNames.tera_shell,Tera Shell,Tera Shell
@@ -124,7 +124,7 @@ pokedexHelp.searchExamples.type.query,fire,ognisty
 pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","Szukaj Pokémonów, które mają ogień jako jeden ze swoich typów w dowolnej formie (np. Charmander, Charizard, Rotom)."
 pokedexHelp.searchExamples.doubleType.query,water flying,wodny latający
 pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are either Water/Flying (e.g. Gyarados) or Flying/Water (e.g. Cramorant).,Szukaj Pokémonów wodny/latający (np. Gyarados) lub latający/wodny(np. Cramorant).
-pokedexHelp.searchExamples.singleType.query,grass none,trawiasty nic
+pokedexHelp.searchExamples.singleType.query,grass none,trawiasty brak
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Szukaj Pokémonów, które są tylko typu trawiastego, bez drugiego typu (np. Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Wróc do Pokédexu
 more.contact.heading,Contact me,Skontaktuj się ze mną
@@ -155,7 +155,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,Okazywanie uznania
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Spędziłem niezliczone godziny ulepszając tę stronę. Jeśli doceniasz to, co zrobiłem, rozważ przekazanie darowizny na rzecz organizacji charytatywnych, które wspierają prawa BIPOC i osób transpłciowych."
 more.thanks.heading,Credits,Szczególne podziękowania
-more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,"Zobacz wszystkich, którzy pomogli stwożyć tą stronę w <credits>szczególnych podziękowaniach</credits>"
 more.openSource.heading,Open source,Otwarte źródło
 more.openSource.description,Source code is available on <github>GitHub</github>.,Otwarte źródło jest dostępne na <github>GitHubie</github>.
 more.legalInfo.heading,Legal info,Informacje prawne
@@ -178,7 +178,7 @@ types.dragon,Dragon,Smoczy
 types.dark,Dark,Mroczny
 types.fairy,Fairy,Bajkowy
 types.stellar,Stellar,Stellar
-types.none,None,Nic
+types.none,None,Brak
 banners.updateReady.description,An update is available,Aktualizacja jest dostępna
 banners.updateReady.whatsNew,What’s new,Co nowego
 banners.updateReady.update,Update,Aktualizacja

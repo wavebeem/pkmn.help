@@ -4,6 +4,10 @@
 
 - Updated Polish translation
 
+## 2025-10-07
+
+- Updated Polish translation
+
 - Updated fallback select divider to be less visually distracting
 
 ## 2025-10-06

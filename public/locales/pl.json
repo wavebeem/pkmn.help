@@ -37,7 +37,7 @@
         "heading": "Lista Pokrycia Normalnej Skuteczności"
       },
       "resistance": {
-        "heading": "Lista Pokrycia Oporów"
+        "heading": "Lista Pokrycia Odporności"
       }
     }
   },
@@ -80,7 +80,7 @@
     "chooseAbility": "Wybierz abilitkę",
     "chooseTeraType": "Wybierz typ terastalizacji",
     "abilityNames": {
-      "none": "None",
+      "none": "Brak",
       "tinted_lens": "Tinted Lens",
       "scrappy": "Scrappy",
       "tera_shell": "Tera Shell",
@@ -195,7 +195,7 @@
         "description": "Szukaj Pokémonów wodny/latający (np. Gyarados) lub latający/wodny(np. Cramorant)."
       },
       "singleType": {
-        "query": "trawiasty nic",
+        "query": "trawiasty brak",
         "description": "Szukaj Pokémonów, które są tylko typu trawiastego, bez drugiego typu (np. Tangela, Chikorita, Lilligant)."
       }
     },
@@ -254,7 +254,8 @@
       "description": "Spędziłem niezliczone godziny ulepszając tę stronę. Jeśli doceniasz to, co zrobiłem, rozważ przekazanie darowizny na rzecz organizacji charytatywnych, które wspierają prawa BIPOC i osób transpłciowych."
     },
     "thanks": {
-      "heading": "Szczególne podziękowania"
+      "heading": "Szczególne podziękowania",
+      "description": "Zobacz wszystkich, którzy pomogli stwożyć tą stronę w <credits>szczególnych podziękowaniach</credits>"
     },
     "openSource": {
       "heading": "Otwarte źródło",
@@ -284,7 +285,7 @@
     "dark": "Mroczny",
     "fairy": "Bajkowy",
     "stellar": "Stellar",
-    "none": "Nic"
+    "none": "Brak"
   },
   "banners": {
     "updateReady": {
