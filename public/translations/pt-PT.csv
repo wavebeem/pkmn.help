@@ -4,8 +4,8 @@ navigation.offense,Offense,Ataque
 navigation.defense,Defense,Defesa
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mais
-offense.chooseTypes,Choose types,Escolher tipos
-offense.dealsXTo,Deals {{ x }} to,Causa {{ x }} de dano a
+offense.chooseTypes,Choose attack move types,Escolher tipos
+offense.dealsXTo,Deals {{ x }} to Pokémon types,Causa {{ x }} de dano a
 offense.abilities.choose,Choose abilities,Escolher habilidades
 offense.specialMoves.choose,Choose special moves,Escolher movimentos especiais
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Congelar a Seco
@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Formas de Pokémon pred
 coverage.status.reset,Loaded default Pokémon forms,Formas de Pokémon predefinidas carregadas
 coverage.status.errored,Error loading CSV. Don't change header names.,Erro ao carregar CSV. Não alterar os nomes dos cabeçalhos.
 coverage.back,Back to offense,Voltar a ataque
-defense.chooseTypes,Choose types,Escolher tipos
+defense.chooseTypes,Choose defending Pokémon types,Escolher tipos
 defense.takesXFrom,Takes {{ x }} from,Recebe {{ x }} de
 defense.chooseAbility,Choose ability,Escolher habilidade
 defense.chooseTeraType,Choose tera type,Selecionar o tipo de tera

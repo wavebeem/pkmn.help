@@ -4,8 +4,8 @@ navigation.offense,Offense,Tấn Công
 navigation.defense,Defense,Phòng Thủ
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Thêm
-offense.chooseTypes,Choose types,Chọn hệ
-offense.dealsXTo,Deals {{ x }} to,Gây {{ x }} sát thương đến
+offense.chooseTypes,Choose attack move types,Chọn hệ
+offense.dealsXTo,Deals {{ x }} to Pokémon types,Gây {{ x }} sát thương đến
 offense.abilities.choose,Choose abilities,Chọn đặc tính
 offense.specialMoves.choose,Choose special moves,Chọn tuyệt kỹ đặc biệt
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Đông Khô (Freeze Dry)
@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Xuất tệp các hình
 coverage.status.reset,Loaded default Pokémon forms,Load các hình dạng Pokémon mặc định
 coverage.status.errored,Error loading CSV. Don't change header names.,Lỗi load CSV. Bạn đừng thay đổi tiêu đề.
 coverage.back,Back to offense,Quay lại trang Tấn Công
-defense.chooseTypes,Choose types,"Chọn hệ (tối đa hai, ba nếu điều chỉnh cài đặt)"
+defense.chooseTypes,Choose defending Pokémon types,"Chọn hệ (tối đa hai, ba nếu điều chỉnh cài đặt)"
 defense.takesXFrom,Takes {{ x }} from,Nhận {{ x }} dame từ
 defense.chooseAbility,Choose ability,Chọn Đặc Tính
 defense.chooseTeraType,Choose tera type,Chọn hệ tera

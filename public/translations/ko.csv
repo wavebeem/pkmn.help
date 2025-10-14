@@ -4,8 +4,8 @@ navigation.offense,Offense,공격
 navigation.defense,Defense,방어
 navigation.pokedex,Pokédex,포켓몬 도감
 navigation.more,More,더보기
-offense.chooseTypes,Choose types,타입 선택
-offense.dealsXTo,Deals {{ x }} to,{{x}} 데미지
+offense.chooseTypes,Choose attack move types,타입 선택
+offense.dealsXTo,Deals {{ x }} to Pokémon types,{{x}} 데미지
 offense.abilities.choose,Choose abilities,특성 선택
 offense.specialMoves.choose,Choose special moves,특별 상성 선택
 offense.specialMoves.names.freeze-dry,Freeze-Dry,프리즈드라이
@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,내보낸 포켓몬의 
 coverage.status.reset,Loaded default Pokémon forms,로드된 포켓몬의 기본 모습
 coverage.status.errored,Error loading CSV. Don't change header names.,CSV를 로드하는 중에 오류가 발생했습니다. 헤더 이름을 변경하지 마세요.
 coverage.back,Back to offense,공격으로 돌아가기
-defense.chooseTypes,Choose types,타입 선택
+defense.chooseTypes,Choose defending Pokémon types,타입 선택
 defense.takesXFrom,Takes {{ x }} from,{{ x }} 피해
 defense.chooseAbility,Choose ability,특성 선택
 defense.chooseTeraType,Choose tera type,테라스탈 타입 선택

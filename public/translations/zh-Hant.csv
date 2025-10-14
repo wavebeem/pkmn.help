@@ -4,8 +4,8 @@ navigation.offense,Offense,攻擊
 navigation.defense,Defense,防禦
 navigation.pokedex,Pokédex,寶可夢圖鑑
 navigation.more,More,更多
-offense.chooseTypes,Choose types,選擇屬性
-offense.dealsXTo,Deals {{ x }} to,對 {{ x }} 造成傷害
+offense.chooseTypes,Choose attack move types,選擇屬性
+offense.dealsXTo,Deals {{ x }} to Pokémon types,對 {{ x }} 造成傷害
 offense.abilities.choose,Choose abilities,選擇特性
 offense.specialMoves.choose,Choose special moves,選擇特別招式
 offense.specialMoves.names.freeze-dry,Freeze-Dry,冷凍乾燥
@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,匯出了預設的寶�
 coverage.status.reset,Loaded default Pokémon forms,載入了預設的寶可夢形式
 coverage.status.errored,Error loading CSV. Don't change header names.,載入 CSV 時出錯。不要更改標題名稱。
 coverage.back,Back to offense,返回攻擊
-defense.chooseTypes,Choose types,選擇屬性
+defense.chooseTypes,Choose defending Pokémon types,選擇屬性
 defense.takesXFrom,Takes {{ x }} from,從中取 {{ x }}
 defense.chooseAbility,Choose ability,選擇技能
 defense.chooseTeraType,Choose tera type,選擇太晶屬性

@@ -4,8 +4,8 @@ navigation.offense,Offense,Offense
 navigation.defense,Defense,Défense
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Autres
-offense.chooseTypes,Choose types,Choisissez les types
-offense.dealsXTo,Deals {{ x }} to,Inflige {{ x }} à
+offense.chooseTypes,Choose attack move types,Choisissez les types
+offense.dealsXTo,Deals {{ x }} to Pokémon types,Inflige {{ x }} à
 offense.abilities.choose,Choose abilities,Choisissez le talent
 offense.specialMoves.choose,Choose special moves,Choisissez les attaques spéciales
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Lyophilisation
@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Pokémon exporté par d
 coverage.status.reset,Loaded default Pokémon forms,Pokémon chargé par défaut
 coverage.status.errored,Error loading CSV. Don't change header names.,Erreur de chargement CSV. Ne pas changer le nom des entêtes.
 coverage.back,Back to offense,"Retour à l'onglet ""Couverture offensive"""
-defense.chooseTypes,Choose types,Choisissez les types
+defense.chooseTypes,Choose defending Pokémon types,Choisissez les types
 defense.takesXFrom,Takes {{ x }} from,Subit {{ x }} de
 defense.chooseAbility,Choose ability,Choisir le talent
 defense.chooseTeraType,Choose tera type,Choisir le type téracristal

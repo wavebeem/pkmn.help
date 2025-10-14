@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025-10-14
+
+- Fixed an issue with Pokédex cards being too large in certain scenarios
+
+- Updated English translation to clarify the functionality of the Offense and
+  Defense pages
+
+- Added support for searching for Pokémon numbers with a # in front, like #1 or
+  #0001 for Bulbasaur
+
 ## 2025-10-07
 
 - Updated Polish translation

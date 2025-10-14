@@ -4,8 +4,8 @@ navigation.offense,Offense,Нападение
 navigation.defense,Defense,Оборона
 navigation.pokedex,Pokédex,Покедекс
 navigation.more,More,Больше
-offense.chooseTypes,Choose types,Выберите Типы
-offense.dealsXTo,Deals {{ x }} to,Наносит {{ x }}
+offense.chooseTypes,Choose attack move types,Выберите Типы
+offense.dealsXTo,Deals {{ x }} to Pokémon types,Наносит {{ x }}
 offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
 offense.specialMoves.names.freeze-dry,Freeze-Dry,
@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Экспортиров�
 coverage.status.reset,Loaded default Pokémon forms,Загружены формы Покемонов по умолчанию
 coverage.status.errored,Error loading CSV. Don't change header names.,Ошибка загрузки CSV. Не изменяйте имени заголовок.
 coverage.back,Back to offense,Назад к Нападению
-defense.chooseTypes,Choose types,Выберите Типы
+defense.chooseTypes,Choose defending Pokémon types,Выберите Типы
 defense.takesXFrom,Takes {{ x }} from,Принимает {{ x }} от
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,

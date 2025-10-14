@@ -17,17 +17,26 @@
 }
 
 .monsterGrid {
+  --column-count: 1;
   display: grid;
   gap: var(--padding3);
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(22.5rem, 1fr));
-  margin: var(--padding3) 0;
+  grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
+  margin-block: var(--padding3);
+  margin-inline: calc(-1 * var(--padding3));
   transition: 200ms opacity;
 }
 
-@media (width <= 40rem) {
+@media (width > 45rem) {
   .monsterGrid {
-    margin-inline: calc(-1 * var(--padding3));
+    margin-inline: 0;
+    --column-count: 2;
+  }
+}
+
+@media (width > 70rem) {
+  .monsterGrid {
+    --column-count: 3;
   }
 }
 

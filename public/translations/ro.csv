@@ -4,8 +4,8 @@ navigation.offense,Offense,Atac
 navigation.defense,Defense,Protecție
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mai mult
-offense.chooseTypes,Choose types,Alege tipuri
-offense.dealsXTo,Deals {{ x }} to,Oferte {{ x }} spre
+offense.chooseTypes,Choose attack move types,Alege tipuri
+offense.dealsXTo,Deals {{ x }} to Pokémon types,Oferte {{ x }} spre
 offense.abilities.choose,Choose abilities,Alege abilități
 offense.specialMoves.choose,Choose special moves,Alege abilități speciale
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Freeze-Dry
@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Forme de Pokémoni impl
 coverage.status.reset,Loaded default Pokémon forms,Încarcă forme de Pokémon implicit
 coverage.status.errored,Error loading CSV. Don't change header names.,Eroare la încărcarea CSV. Nu schimbați numele antetului.
 coverage.back,Back to offense,Înapoi la atac
-defense.chooseTypes,Choose types,Alege tipuri
+defense.chooseTypes,Choose defending Pokémon types,Alege tipuri
 defense.takesXFrom,Takes {{ x }} from,Ia {{ x }} de la
 defense.chooseAbility,Choose ability,Alege abilitatea
 defense.chooseTeraType,Choose tera type,Alege abilitatea tera

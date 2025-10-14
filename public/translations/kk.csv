@@ -4,8 +4,8 @@ navigation.offense,Offense,Шабуыл
 navigation.defense,Defense,Қорғаныс
 navigation.pokedex,Pokédex,Покедекс
 navigation.more,More,Тағы
-offense.chooseTypes,Choose types,Типтер Таңдау
-offense.dealsXTo,Deals {{ x }} to,{{ x }} келтіреді
+offense.chooseTypes,Choose attack move types,Типтер Таңдау
+offense.dealsXTo,Deals {{ x }} to Pokémon types,{{ x }} келтіреді
 offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
 offense.specialMoves.names.freeze-dry,Freeze-Dry,
@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Бастапқы Пок
 coverage.status.reset,Loaded default Pokémon forms,Бастапқы Покемон түрлері жүктелді.
 coverage.status.errored,Error loading CSV. Don't change header names.,CSV жүктеу қатесі. Тақырып аттарын өзгертпеңіз.
 coverage.back,Back to offense,Шабуылға қайту
-defense.chooseTypes,Choose types,Типтер Таңдау
+defense.chooseTypes,Choose defending Pokémon types,Типтер Таңдау
 defense.takesXFrom,Takes {{ x }} from,{{ x }} Алады
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,

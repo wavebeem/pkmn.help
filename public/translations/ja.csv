@@ -4,8 +4,8 @@ navigation.offense,Offense,オフェンス
 navigation.defense,Defense,デフェンス
 navigation.pokedex,Pokédex,ポケモンずかん
 navigation.more,More,その他
-offense.chooseTypes,Choose types,複数のタイプを選択
-offense.dealsXTo,Deals {{ x }} to,{{ x }}を与える
+offense.chooseTypes,Choose attack move types,複数のタイプを選択
+offense.dealsXTo,Deals {{ x }} to Pokémon types,{{ x }}を与える
 offense.abilities.choose,Choose abilities,特性を選択
 offense.specialMoves.choose,Choose special moves,得意技を選択
 offense.specialMoves.names.freeze-dry,Freeze-Dry,フリーズドライ
@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,デフォルトのポ�
 coverage.status.reset,Loaded default Pokémon forms,デフォルトのポケモンのすがたを読み込んだ
 coverage.status.errored,Error loading CSV. Don't change header names.,CSV読み込みエラー。ヘッダーの名前を変えないでください
 coverage.back,Back to offense,こうげきに戻る
-defense.chooseTypes,Choose types,複数のタイプを選択
+defense.chooseTypes,Choose defending Pokémon types,複数のタイプを選択
 defense.takesXFrom,Takes {{ x }} from,{{ x }}を受ける
 defense.chooseAbility,Choose ability,特性
 defense.chooseTeraType,Choose tera type,テラスタイプ

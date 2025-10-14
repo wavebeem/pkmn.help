@@ -4,8 +4,8 @@ navigation.offense,Offense,攻击方
 navigation.defense,Defense,防御方
 navigation.pokedex,Pokédex,图鉴
 navigation.more,More,更多
-offense.chooseTypes,Choose types,选择属性
-offense.dealsXTo,Deals {{ x }} to,产生 {{ x }} 伤害
+offense.chooseTypes,Choose attack move types,选择属性
+offense.dealsXTo,Deals {{ x }} to Pokémon types,产生 {{ x }} 伤害
 offense.abilities.choose,Choose abilities,选择特性
 offense.specialMoves.choose,Choose special moves,选择特别招式
 offense.specialMoves.names.freeze-dry,Freeze-Dry,冷冻干燥
@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,已导出默认宝可�
 coverage.status.reset,Loaded default Pokémon forms,已加载默认宝可梦
 coverage.status.errored,Error loading CSV. Don't change header names.,加载CSV错误。请勿更改列标题名称。
 coverage.back,Back to offense,返回攻击方
-defense.chooseTypes,Choose types,选择属性
+defense.chooseTypes,Choose defending Pokémon types,选择属性
 defense.takesXFrom,Takes {{ x }} from,受到 {{ x }} 伤害
 defense.chooseAbility,Choose ability,特性
 defense.chooseTeraType,Choose tera type,选择太晶属性

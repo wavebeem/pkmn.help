@@ -7,8 +7,8 @@
     "more": "More"
   },
   "offense": {
-    "chooseTypes": "Choose types",
-    "dealsXTo": "Deals {{ x }} to",
+    "chooseTypes": "Choose attack move types",
+    "dealsXTo": "Deals {{ x }} to these Pokémon types",
     "abilities": {
       "choose": "Choose abilities"
     },
@@ -75,8 +75,8 @@
     "back": "Back to offense"
   },
   "defense": {
-    "chooseTypes": "Choose types",
-    "takesXFrom": "Takes {{ x }} from",
+    "chooseTypes": "Choose defending Pokémon types",
+    "takesXFrom": "Takes {{ x }} from these move types",
     "chooseAbility": "Choose ability",
     "chooseTeraType": "Choose tera type",
     "abilityNames": {
@@ -179,7 +179,7 @@
     },
     "searchByNumber": {
       "heading": "Search by number",
-      "description": "Search by national dex number. If you want Bulbasaur, just type 1, not #001."
+      "description": "Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc."
     },
     "searchByType": {
       "heading": "Search by type",

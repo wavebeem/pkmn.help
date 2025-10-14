@@ -4,8 +4,8 @@ navigation.offense,Offense,Angrep
 navigation.defense,Defense,Forsvar
 navigation.pokedex,Pokédex,Pokédexen
 navigation.more,More,Mer
-offense.chooseTypes,Choose types,Velg typer
-offense.dealsXTo,Deals {{ x }} to,Gjør {{ x }} til
+offense.chooseTypes,Choose attack move types,Velg typer
+offense.dealsXTo,Deals {{ x }} to Pokémon types,Gjør {{ x }} til
 offense.abilities.choose,Choose abilities,Velg egenskaper
 offense.specialMoves.choose,Choose special moves,Velg spesial angrep
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Frys-tørk
@@ -42,7 +42,7 @@ coverage.status.exported,Exported default Pokémon forms,Eksporterte standard Po
 coverage.status.reset,Loaded default Pokémon forms,Lastet inn standard Pokémon former
 coverage.status.errored,Error loading CSV. Don't change header names.,Error med å laste CSV. Ikke bytt overskrift navn.
 coverage.back,Back to offense,Tilbake til angrep
-defense.chooseTypes,Choose types,Velg typer
+defense.chooseTypes,Choose defending Pokémon types,Velg typer
 defense.takesXFrom,Takes {{ x }} from,Tar {{ x }} fra
 defense.chooseAbility,Choose ability,Velg evne
 defense.chooseTeraType,Choose tera type,Velg tera type

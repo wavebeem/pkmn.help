@@ -58,8 +58,9 @@ export function ScreenPokedex(): ReactNode {
 
   const pkmn = useMemo(() => {
     const s = deferredQuery.trim().toLocaleLowerCase();
-    if (/^[0-9]+$/.test(s)) {
-      const number = Number(s);
+    const numberMatch = s.match(/^#?([0-9]+)$/);
+    if (numberMatch) {
+      const number = Number(numberMatch[1]);
       return searchablePkmn.filter((p) => p.number === number);
     }
     // The return value of `t` depends on the current value of `language`, but
