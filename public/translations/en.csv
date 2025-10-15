@@ -5,7 +5,7 @@ navigation.defense,Defense,Defense
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,More
 offense.chooseTypes,Choose attack move types,Choose attack move types
-offense.dealsXTo,Deals {{ x }} to Pokémon types,Deals {{ x }} to Pokémon types
+offense.dealsXTo,Deals {{ x }} to these Pokémon types,Deals {{ x }} to these Pokémon types
 offense.abilities.choose,Choose abilities,Choose abilities
 offense.specialMoves.choose,Choose special moves,Choose special moves
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Freeze-Dry
@@ -43,7 +43,7 @@ coverage.status.reset,Loaded default Pokémon forms,Loaded default Pokémon form
 coverage.status.errored,Error loading CSV. Don't change header names.,Error loading CSV. Don't change header names.
 coverage.back,Back to offense,Back to offense
 defense.chooseTypes,Choose defending Pokémon types,Choose defending Pokémon types
-defense.takesXFrom,Takes {{ x }} from,Takes {{ x }} from
+defense.takesXFrom,Takes {{ x }} from these move types,Takes {{ x }} from these move types
 defense.chooseAbility,Choose ability,Choose ability
 defense.chooseTeraType,Choose tera type,Choose tera type
 defense.abilityNames.none,None,None
@@ -117,7 +117,7 @@ pokedex.stats.totalLong,Total,Total
 pokedexHelp.searchByName.heading,Search by name,Search by name
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though."
 pokedexHelp.searchByNumber.heading,Search by number,Search by number
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Search by national dex number. If you want Bulbasaur, just type 1, not #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.","Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc."
 pokedexHelp.searchByType.heading,Search by type,Search by type
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Here are a few examples of how to seach by type.
 pokedexHelp.searchExamples.type.query,fire,fire

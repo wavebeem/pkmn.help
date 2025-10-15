@@ -5,7 +5,7 @@ navigation.defense,Defense,방어
 navigation.pokedex,Pokédex,포켓몬 도감
 navigation.more,More,더보기
 offense.chooseTypes,Choose attack move types,타입 선택
-offense.dealsXTo,Deals {{ x }} to Pokémon types,{{x}} 데미지
+offense.dealsXTo,Deals {{ x }} to these Pokémon types,{{x}} 데미지
 offense.abilities.choose,Choose abilities,특성 선택
 offense.specialMoves.choose,Choose special moves,특별 상성 선택
 offense.specialMoves.names.freeze-dry,Freeze-Dry,프리즈드라이
@@ -43,7 +43,7 @@ coverage.status.reset,Loaded default Pokémon forms,로드된 포켓몬의 기�
 coverage.status.errored,Error loading CSV. Don't change header names.,CSV를 로드하는 중에 오류가 발생했습니다. 헤더 이름을 변경하지 마세요.
 coverage.back,Back to offense,공격으로 돌아가기
 defense.chooseTypes,Choose defending Pokémon types,타입 선택
-defense.takesXFrom,Takes {{ x }} from,{{ x }} 피해
+defense.takesXFrom,Takes {{ x }} from these move types,{{ x }} 피해
 defense.chooseAbility,Choose ability,특성 선택
 defense.chooseTeraType,Choose tera type,테라스탈 타입 선택
 defense.abilityNames.none,None,없음
@@ -117,7 +117,7 @@ pokedex.stats.totalLong,Total,총합
 pokedexHelp.searchByName.heading,Search by name,이름으로 검색
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",이름으로 포켓몬을 검색할 수 있습니다. 포켓몬 이름의 일부만 입력해도 찾을 수 있습니다. 다만 아직은 오타가 나면 찾기 어렵습니다.
 pokedexHelp.searchByNumber.heading,Search by number,번호로 검색
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.",전국도감 번호로 검색하세요. 이상해씨를 찾는다면 #001이 아니라 1을 입력하세요.
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.",전국도감 번호로 검색하세요. 이상해씨를 찾는다면 #001이 아니라 1을 입력하세요.
 pokedexHelp.searchByType.heading,Search by type,유형별 검색
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,다음은 유형별로 검색하는 방법에 대한 몇 가지 예시입니다.
 pokedexHelp.searchExamples.type.query,fire,불꽃

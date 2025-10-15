@@ -5,7 +5,7 @@ navigation.defense,Defense,Protecție
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mai mult
 offense.chooseTypes,Choose attack move types,Alege tipuri
-offense.dealsXTo,Deals {{ x }} to Pokémon types,Oferte {{ x }} spre
+offense.dealsXTo,Deals {{ x }} to these Pokémon types,Oferte {{ x }} spre
 offense.abilities.choose,Choose abilities,Alege abilități
 offense.specialMoves.choose,Choose special moves,Alege abilități speciale
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Freeze-Dry
@@ -43,7 +43,7 @@ coverage.status.reset,Loaded default Pokémon forms,Încarcă forme de Pokémon 
 coverage.status.errored,Error loading CSV. Don't change header names.,Eroare la încărcarea CSV. Nu schimbați numele antetului.
 coverage.back,Back to offense,Înapoi la atac
 defense.chooseTypes,Choose defending Pokémon types,Alege tipuri
-defense.takesXFrom,Takes {{ x }} from,Ia {{ x }} de la
+defense.takesXFrom,Takes {{ x }} from these move types,Ia {{ x }} de la
 defense.chooseAbility,Choose ability,Alege abilitatea
 defense.chooseTeraType,Choose tera type,Alege abilitatea tera
 defense.abilityNames.none,None,Niciuna
@@ -117,7 +117,7 @@ pokedex.stats.totalLong,Total,Total
 pokedexHelp.searchByName.heading,Search by name,Caută după nume
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puteți căuta un Pokémon după nume. Dacă îți amintești doar o parte din numele Pokémon-ului, probabil că îl poate găsi pentru tine. Totuși, nu poate face față greșelilor de scriere acum."
 pokedexHelp.searchByNumber.heading,Search by number,Caută după număr
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Caută după numărul de Pokedex național. Dacă vrei Bulbasaur, pune doar 1, nu #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.","Caută după numărul de Pokedex național. Dacă vrei Bulbasaur, pune doar 1, nu #001."
 pokedexHelp.searchByType.heading,Search by type,Caută după tip
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Iată câteva exemple despre cum să căutați după tip.
 pokedexHelp.searchExamples.type.query,fire,foc

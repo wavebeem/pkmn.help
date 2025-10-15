@@ -5,7 +5,7 @@ navigation.defense,Defense,Forsvar
 navigation.pokedex,Pokédex,Pokédexen
 navigation.more,More,Mer
 offense.chooseTypes,Choose attack move types,Velg typer
-offense.dealsXTo,Deals {{ x }} to Pokémon types,Gjør {{ x }} til
+offense.dealsXTo,Deals {{ x }} to these Pokémon types,Gjør {{ x }} til
 offense.abilities.choose,Choose abilities,Velg egenskaper
 offense.specialMoves.choose,Choose special moves,Velg spesial angrep
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Frys-tørk
@@ -43,7 +43,7 @@ coverage.status.reset,Loaded default Pokémon forms,Lastet inn standard Pokémon
 coverage.status.errored,Error loading CSV. Don't change header names.,Error med å laste CSV. Ikke bytt overskrift navn.
 coverage.back,Back to offense,Tilbake til angrep
 defense.chooseTypes,Choose defending Pokémon types,Velg typer
-defense.takesXFrom,Takes {{ x }} from,Tar {{ x }} fra
+defense.takesXFrom,Takes {{ x }} from these move types,Tar {{ x }} fra
 defense.chooseAbility,Choose ability,Velg evne
 defense.chooseTeraType,Choose tera type,Velg tera type
 defense.abilityNames.none,None,Ingen
@@ -117,7 +117,7 @@ pokedex.stats.totalLong,Total,Totalt
 pokedexHelp.searchByName.heading,Search by name,Søk etter navn
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Du kan søke etter en Pokémon etter navn. Hvis du bare husker litt av Pokémonens navn, kan den fortsatt sannsynligvis finne den for deg. Den kan foreløpig ikke takle skrivefeil enda."
 pokedexHelp.searchByNumber.heading,Search by number,Søk etter nummer
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Søk etter nasjonal Pokédex nummer. Hvis du vil finne Bulbasaur, bare skriv 1, ikke #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.","Søk etter nasjonal Pokédex nummer. Hvis du vil finne Bulbasaur, bare skriv 1, ikke #001."
 pokedexHelp.searchByType.heading,Search by type,Søk etter type
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Her er noen eksempler på hvordan man søker etter type.
 pokedexHelp.searchExamples.type.query,fire,flamme

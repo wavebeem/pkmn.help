@@ -5,7 +5,7 @@ navigation.defense,Defense,Қорғаныс
 navigation.pokedex,Pokédex,Покедекс
 navigation.more,More,Тағы
 offense.chooseTypes,Choose attack move types,Типтер Таңдау
-offense.dealsXTo,Deals {{ x }} to Pokémon types,{{ x }} келтіреді
+offense.dealsXTo,Deals {{ x }} to these Pokémon types,{{ x }} келтіреді
 offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
 offense.specialMoves.names.freeze-dry,Freeze-Dry,
@@ -43,7 +43,7 @@ coverage.status.reset,Loaded default Pokémon forms,Бастапқы Покем�
 coverage.status.errored,Error loading CSV. Don't change header names.,CSV жүктеу қатесі. Тақырып аттарын өзгертпеңіз.
 coverage.back,Back to offense,Шабуылға қайту
 defense.chooseTypes,Choose defending Pokémon types,Типтер Таңдау
-defense.takesXFrom,Takes {{ x }} from,{{ x }} Алады
+defense.takesXFrom,Takes {{ x }} from these move types,{{ x }} Алады
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,
@@ -117,7 +117,7 @@ pokedex.stats.totalLong,Total,Жалпы
 pokedexHelp.searchByName.heading,Search by name,Атымен іздеу
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Сіз Покемонды атымен іздей аласыз. Егер Покемон атының тек бір бөлігі ғана есіңізде болса, ол әлі де Покемонды табуы мүмкін. Бірақ, әзірге қателіктермен іздей алмайды."
 pokedexHelp.searchByNumber.heading,Search by number,Нөмірмен іздеу
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Ұлттық декс нөмірімен іздеу. Егер Бульбазаврды тапқыңыз келсе, тек 1 деп теріңіз, #001 деп емес."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.","Ұлттық декс нөмірімен іздеу. Егер Бульбазаврды тапқыңыз келсе, тек 1 деп теріңіз, #001 деп емес."
 pokedexHelp.searchByType.heading,Search by type,Типі арқылы іздеу
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Мында тип арқылы іздеудің бірнеше мысалдары бар.
 pokedexHelp.searchExamples.type.query,fire,отты

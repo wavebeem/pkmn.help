@@ -5,7 +5,7 @@ navigation.defense,Defense,防禦
 navigation.pokedex,Pokédex,寶可夢圖鑑
 navigation.more,More,更多
 offense.chooseTypes,Choose attack move types,選擇屬性
-offense.dealsXTo,Deals {{ x }} to Pokémon types,對 {{ x }} 造成傷害
+offense.dealsXTo,Deals {{ x }} to these Pokémon types,對 {{ x }} 造成傷害
 offense.abilities.choose,Choose abilities,選擇特性
 offense.specialMoves.choose,Choose special moves,選擇特別招式
 offense.specialMoves.names.freeze-dry,Freeze-Dry,冷凍乾燥
@@ -43,7 +43,7 @@ coverage.status.reset,Loaded default Pokémon forms,載入了預設的寶可夢�
 coverage.status.errored,Error loading CSV. Don't change header names.,載入 CSV 時出錯。不要更改標題名稱。
 coverage.back,Back to offense,返回攻擊
 defense.chooseTypes,Choose defending Pokémon types,選擇屬性
-defense.takesXFrom,Takes {{ x }} from,從中取 {{ x }}
+defense.takesXFrom,Takes {{ x }} from these move types,從中取 {{ x }}
 defense.chooseAbility,Choose ability,選擇技能
 defense.chooseTeraType,Choose tera type,選擇太晶屬性
 defense.abilityNames.none,None,無
@@ -117,7 +117,7 @@ pokedex.stats.totalLong,Total,總計
 pokedexHelp.searchByName.heading,Search by name,按名稱搜索
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",您可以通過名稱搜索寶可夢。如果您只記得寶可夢名稱的一部分，它仍然可能會為您找到。但是，它現在無法處理錯別字。
 pokedexHelp.searchByNumber.heading,Search by number,按編號搜索
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.",按國家圖鑑編號搜索。如果您想找妙蛙種子，只需輸入1，而不是＃001。
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.",按國家圖鑑編號搜索。如果您想找妙蛙種子，只需輸入1，而不是＃001。
 pokedexHelp.searchByType.heading,Search by type,按類型搜索
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,這裡有幾個示例，說明如何按類型搜索。
 pokedexHelp.searchExamples.type.query,fire,火

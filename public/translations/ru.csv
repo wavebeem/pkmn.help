@@ -5,7 +5,7 @@ navigation.defense,Defense,Оборона
 navigation.pokedex,Pokédex,Покедекс
 navigation.more,More,Больше
 offense.chooseTypes,Choose attack move types,Выберите Типы
-offense.dealsXTo,Deals {{ x }} to Pokémon types,Наносит {{ x }}
+offense.dealsXTo,Deals {{ x }} to these Pokémon types,Наносит {{ x }}
 offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
 offense.specialMoves.names.freeze-dry,Freeze-Dry,
@@ -43,7 +43,7 @@ coverage.status.reset,Loaded default Pokémon forms,Загружены форм�
 coverage.status.errored,Error loading CSV. Don't change header names.,Ошибка загрузки CSV. Не изменяйте имени заголовок.
 coverage.back,Back to offense,Назад к Нападению
 defense.chooseTypes,Choose defending Pokémon types,Выберите Типы
-defense.takesXFrom,Takes {{ x }} from,Принимает {{ x }} от
+defense.takesXFrom,Takes {{ x }} from these move types,Принимает {{ x }} от
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,
@@ -117,7 +117,7 @@ pokedex.stats.totalLong,Total,Общее
 pokedexHelp.searchByName.heading,Search by name,Искать по имени
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Вы можете искать Покемона по имени. Если вы помните только часть имени Покемона, он всё ещё может вам найти это для вас. Но пока поиск с опечатками невозможны."
 pokedexHelp.searchByNumber.heading,Search by number,Искать по номеру
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Искать по номеру Национального Декса. Если вы хотите найти Бульбазавра, то просто наберите 1, не #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.","Искать по номеру Национального Декса. Если вы хотите найти Бульбазавра, то просто наберите 1, не #001."
 pokedexHelp.searchByType.heading,Search by type,Искать по типу
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Вот некоторые примеры по поиску по типу.
 pokedexHelp.searchExamples.type.query,fire,огненный

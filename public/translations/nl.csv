@@ -5,7 +5,7 @@ navigation.defense,Defense,Defensief
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Meer
 offense.chooseTypes,Choose attack move types,Kies Types
-offense.dealsXTo,Deals {{ x }} to Pokémon types,Deelt {{ x }} schade aan
+offense.dealsXTo,Deals {{ x }} to these Pokémon types,Deelt {{ x }} schade aan
 offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
 offense.specialMoves.names.freeze-dry,Freeze-Dry,
@@ -43,7 +43,7 @@ coverage.status.reset,Loaded default Pokémon forms,Geladen standaard Pokémonvo
 coverage.status.errored,Error loading CSV. Don't change header names.,Error met het laden van CSV. Verander kopnamen niet.
 coverage.back,Back to offense,Terug naar offensief
 defense.chooseTypes,Choose defending Pokémon types,Kies Types
-defense.takesXFrom,Takes {{ x }} from,Krijgt {{ x }} van
+defense.takesXFrom,Takes {{ x }} from these move types,Krijgt {{ x }} van
 defense.chooseAbility,Choose ability,Kies vaardigheid
 defense.chooseTeraType,Choose tera type,Kies tera type
 defense.abilityNames.none,None,Geen
@@ -117,7 +117,7 @@ pokedex.stats.totalLong,Total,Totaal
 pokedexHelp.searchByName.heading,Search by name,Zoeken op naam
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Je kan zoeken op een Pokémon bij naam. Als je alleen een gedeelte herinnert van de Pokémonnaam, kan hij het waarschijnlijk nog steeds vinden voor je. Hij kan alleen nog niet goed omgaan met typfouten."
 pokedexHelp.searchByNumber.heading,Search by number,Zoeken op nummer
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Zoek op nationaal dex nummer. Als je Bulbasaur wilt, typ gewoon 1, niet #001"
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.","Zoek op nationaal dex nummer. Als je Bulbasaur wilt, typ gewoon 1, niet #001"
 pokedexHelp.searchByType.heading,Search by type,Zoeken op type
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Hier zijn een paar voorbeelden van hoe je zoekt op type.
 pokedexHelp.searchExamples.type.query,fire,vuur

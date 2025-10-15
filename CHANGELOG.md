@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025-10-15
+
+- Updated link preview (sharing) image
+
+- Updated translation CSVs with new English text
+
 ## 2025-10-14
 
 - Fixed an issue with Pokédex cards being too large in certain scenarios

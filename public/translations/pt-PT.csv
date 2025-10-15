@@ -5,7 +5,7 @@ navigation.defense,Defense,Defesa
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mais
 offense.chooseTypes,Choose attack move types,Escolher tipos
-offense.dealsXTo,Deals {{ x }} to Pokémon types,Causa {{ x }} de dano a
+offense.dealsXTo,Deals {{ x }} to these Pokémon types,Causa {{ x }} de dano a
 offense.abilities.choose,Choose abilities,Escolher habilidades
 offense.specialMoves.choose,Choose special moves,Escolher movimentos especiais
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Congelar a Seco
@@ -43,7 +43,7 @@ coverage.status.reset,Loaded default Pokémon forms,Formas de Pokémon predefini
 coverage.status.errored,Error loading CSV. Don't change header names.,Erro ao carregar CSV. Não alterar os nomes dos cabeçalhos.
 coverage.back,Back to offense,Voltar a ataque
 defense.chooseTypes,Choose defending Pokémon types,Escolher tipos
-defense.takesXFrom,Takes {{ x }} from,Recebe {{ x }} de
+defense.takesXFrom,Takes {{ x }} from these move types,Recebe {{ x }} de
 defense.chooseAbility,Choose ability,Escolher habilidade
 defense.chooseTeraType,Choose tera type,Selecionar o tipo de tera
 defense.abilityNames.none,None,Nenhum
@@ -117,7 +117,7 @@ pokedex.stats.totalLong,Total,Total
 pokedexHelp.searchByName.heading,Search by name,Pesquisar por nome
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Pode procurar um Pokémon pelo nome. Se só se lembrar de parte do nome do Pokémon, é provável que o consiga encontrar na mesma. No entanto, a pesquisa não consegue lidar com erros de escrita por enquanto."
 pokedexHelp.searchByNumber.heading,Search by number,Pesquisar por número
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Pesquisar por número da dex nacional. Se quiseres Bulbasaur, basta digitar 1 e não #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.","Pesquisar por número da dex nacional. Se quiseres Bulbasaur, basta digitar 1 e não #001."
 pokedexHelp.searchByType.heading,Search by type,Pesquisar por tipo
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Eis alguns exemplos de como pesquisar por tipo.
 pokedexHelp.searchExamples.type.query,fire,fogo

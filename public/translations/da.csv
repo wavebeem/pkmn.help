@@ -5,7 +5,7 @@ navigation.defense,Defense,Beskyttelse
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mere
 offense.chooseTypes,Choose attack move types,Vælg typer/type
-offense.dealsXTo,Deals {{ x }} to Pokémon types,Skader {{ x }} til
+offense.dealsXTo,Deals {{ x }} to these Pokémon types,Skader {{ x }} til
 offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
 offense.specialMoves.names.freeze-dry,Freeze-Dry,
@@ -43,7 +43,7 @@ coverage.status.reset,Loaded default Pokémon forms,Loadede standard Pokémon
 coverage.status.errored,Error loading CSV. Don't change header names.,Fejl ved loading af CSV. Ændre ikke sidehoved navne
 coverage.back,Back to offense,Tilbage til Angreb
 defense.chooseTypes,Choose defending Pokémon types,Vælg typer/type
-defense.takesXFrom,Takes {{ x }} from,Tager {{ x }} Fra
+defense.takesXFrom,Takes {{ x }} from these move types,Tager {{ x }} Fra
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,
@@ -117,7 +117,7 @@ pokedex.stats.totalLong,Total,Total
 pokedexHelp.searchByName.heading,Search by name,Søg via navn
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",Du can søge efter en pokémon via navnet. Hvis du kun kan huske en del af navnet kan den nok stadig finde den for dig. Den virker ikke hvis der der stavefejl lige nu.
 pokedexHelp.searchByNumber.heading,Search by number,Søg via nummer/tal
-pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, just type 1, not #001.","Søg via national dex nummer. Hvis du vil finde Bulbasaur skal du skrive 1, ikke #001."
+pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.","Søg via national dex nummer. Hvis du vil finde Bulbasaur skal du skrive 1, ikke #001."
 pokedexHelp.searchByType.heading,Search by type,Søg via type
 pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,Her er et par eksempler på hvordan man søger via typer
 pokedexHelp.searchExamples.type.query,fire,Ild
