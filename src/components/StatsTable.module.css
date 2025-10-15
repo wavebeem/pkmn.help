@@ -1,8 +1,22 @@
-.root {
-  display: grid;
-  gap: 0.25rem 0.5rem;
-  grid-template-columns: max-content 4ch 1fr;
-  height: min-content;
-  font-variant-numeric: tabular-nums;
-  align-items: center;
+.statsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
+}
+
+.statsTable th,
+.statsTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.statsTable th {
+  background-color: #f7f7f7;
+}
+
+.baseStatProductRow td {
+  background-color: #e6f7ff;
+  font-weight: bold;
+  color: #0074D9;
 }
