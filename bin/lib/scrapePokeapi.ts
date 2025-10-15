@@ -93,6 +93,7 @@ export interface PokemonSimple {
   speed: number;
   id: string;
   types: string[];
+  baseStatProduct: number;
 }
 
 async function fetchJSON<T>(url: string): Promise<T> {
@@ -166,6 +167,14 @@ export async function scrapePokeapi(): Promise<void> {
           value: (item) => item.name,
         });
       }
+      const hp = stats["hp"] ?? 0;
+      const attack = stats["attack"] ?? 0;
+      const defense = stats["defense"] ?? 0;
+      const spAttack = stats["special-attack"] ?? 0;
+      const spDefense = stats["special-defense"] ?? 0;
+      const speed = stats["speed"] ?? 0;
+      const baseStatProduct = hp * attack * defense * spAttack * spDefense * speed;
+
       const mon: PokemonSimple = {
         name: detail.name,
         speciesNames,
@@ -174,14 +183,15 @@ export async function scrapePokeapi(): Promise<void> {
         spriteURL: detail.sprites.other.home.front_default,
         shinySpriteURL: detail.sprites.other.home.front_shiny ?? "",
         cryURL: detail.cries.latest,
-        hp: stats["hp"] ?? 0,
-        attack: stats["attack"] ?? 0,
-        defense: stats["defense"] ?? 0,
-        spAttack: stats["special-attack"] ?? 0,
-        spDefense: stats["special-defense"] ?? 0,
-        speed: stats["speed"] ?? 0,
+        hp,
+        attack,
+        defense,
+        spAttack,
+        spDefense,
+        speed,
         id: String(detail.id),
         types: detail.types.map((t) => t.type.name),
+        baseStatProduct,
       };
       pokemonSimpleList.push(mon);
       console.log(speciesDetail.id, detail.id);
