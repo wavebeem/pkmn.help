@@ -40,8 +40,17 @@ export async function mergeData(): Promise<void> {
   mons = sortBy(mons, (mon) => mon.number);
   mons = mons.filter((mon) => !blockList.has(mon.name));
 
-  // Create unique IDs for gen9 data
+  // Add Base Stat Product to each Pokémon
   for (const m of mons) {
+    // Calculate Base Stat Product (BSP)
+    m.baseStatProduct =
+      (m.hp ?? 0) *
+      (m.attack ?? 0) *
+      (m.defense ?? 0) *
+      (m.spAttack ?? 0) *
+      (m.spDefense ?? 0) *
+      (m.speed ?? 0);
+
     delete m.spriteURL;
     delete m.shinySpriteURL;
     delete m.cryURL;
