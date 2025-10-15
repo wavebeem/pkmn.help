@@ -1,45 +1,45 @@
-.small {
-  font-size: var(--font-size0);
-  color: var(--color-fg3);
-  padding: 0 var(--padding2);
+.container {
+  max-width: 400px;
+  margin: 24px auto;
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.searchArea {
-  display: grid;
-  gap: var(--padding2);
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #333;
 }
 
-@media (width > 40rem) {
-  .searchArea {
-    grid-template-columns: 20rem auto;
-    justify-content: center;
-  }
+.sprite {
+  display: block;
+  margin: 0 auto 20px;
+  height: 96px;
+  width: 96px;
 }
 
-.monsterGrid {
-  --column-count: 1;
-  display: grid;
-  gap: var(--padding3);
-  justify-content: center;
-  grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
-  margin-block: var(--padding3);
-  margin-inline: calc(-1 * var(--padding3));
-  transition: 200ms opacity;
+.statsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 16px 0;
 }
 
-@media (width > 45rem) {
-  .monsterGrid {
-    margin-inline: 0;
-    --column-count: 2;
-  }
+.statsTable th,
+.statsTable td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
 }
 
-@media (width > 70rem) {
-  .monsterGrid {
-    --column-count: 3;
-  }
+.statsTable th {
+  background-color: #f7f7f7;
 }
 
-.monsterGrid[data-stale="true"] {
-  opacity: 0.5;
+.baseStatProductRow td {
+  background-color: #e6f7ff;
+  font-weight: bold;
+  color: #0074D9;
 }
