@@ -1,10 +1,59 @@
-import { useMemo } from "react";
-import { useLocation } from "react-router-dom";
+import { useState, useMemo } from "react";
 
-export function useSearch(): URLSearchParams {
-  const location = useLocation();
-  const search = useMemo(() => {
-    return new URLSearchParams(location.search);
-  }, [location.search]);
-  return search;
+type Stats = {
+  hp: number;
+  attack: number;
+  defense: number;
+  spAtk: number;
+  spDef: number;
+  speed: number;
+};
+
+type Pokemon = {
+  name: string;
+  stats: Stats;
+  sprite: string;
+};
+
+type UseSearchOptions = {
+  filterBaseStatProductAbove?: number;
+};
+
+export function useSearch(
+  pokemons: Pokemon[],
+  searchTerm: string,
+  options: UseSearchOptions = {}
+) {
+  const [term, setTerm] = useState(searchTerm);
+
+  const filteredPokemons = useMemo(() => {
+    let result = pokemons;
+
+    if (term) {
+      result = result.filter((p) =>
+        p.name.toLowerCase().includes(term.toLowerCase())
+      );
+    }
+
+    if (options.filterBaseStatProductAbove !== undefined) {
+      result = result.filter((p) => {
+        const product =
+          p.stats.hp *
+          p.stats.attack *
+          p.stats.defense *
+          p.stats.spAtk *
+          p.stats.spDef *
+          p.stats.speed;
+        return product > options.filterBaseStatProductAbove!;
+      });
+    }
+
+    return result;
+  }, [pokemons, term, options.filterBaseStatProductAbove]);
+
+  return {
+    term,
+    setTerm,
+    results: filteredPokemons,
+  };
 }
