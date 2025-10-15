@@ -44,6 +44,11 @@
       const spAttack = Number(cellSpAtk.textContent);
       const spDefense = Number(cellSpDef.textContent);
       const speed = Number(cellSpeed.textContent);
+
+      // Added: Base Stat Product calculation
+      const baseStatProduct =
+        hp * attack * defense * spAttack * spDefense * speed;
+
       return {
         name,
         speciesNames: {
@@ -63,6 +68,7 @@
         spAttack,
         spDefense,
         speed,
+        baseStatProduct, // Added field
       };
     });
   }
