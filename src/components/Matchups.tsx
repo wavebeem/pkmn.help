@@ -45,7 +45,7 @@ export function Matchups({
     });
     if (types.includes(Type.stellar)) {
       matchups.matchups.unshift({
-        type: Type.stellar,
+        types: [Type.stellar],
         generation,
         effectiveness: 2,
         formName: "stellar",
@@ -80,12 +80,14 @@ export function Matchups({
                 {list.map((x) => {
                   if (kind === "offense" && x.formName === "stellar") {
                     return (
-                      <PlainBadge key="form-tera">
+                      <PlainBadge key="form-tera" size="full-width">
                         {t("offense.teraPokemon")}
                       </PlainBadge>
                     );
                   }
-                  return <Badge key={`type-${x.type}`} type={x.type} />;
+                  return x.types.map((t) => {
+                    return <Badge key={`type-${t}`} type={t} />;
+                  });
                 })}
               </div>
             </Flex>

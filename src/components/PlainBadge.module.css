@@ -2,6 +2,9 @@
   border-radius: var(--border-radius1);
   border: 1px solid var(--color-border2);
   background: var(--color-bg1);
+}
+
+.root[data-size="full-width"] {
   grid-column: 1 / -1;
 }
 
