@@ -27,6 +27,11 @@
   color: var(--color-fg4);
 }
 
+.badge[data-variant="ghost"] {
+  box-shadow: none;
+  border-radius: var(--border-radius0);
+}
+
 .label {
   line-height: 1;
   filter: drop-shadow(0 0 1px rgb(from var(--type-color-bg) r g b / 100%))

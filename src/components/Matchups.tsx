@@ -163,7 +163,7 @@ export function Matchups({
                       }
                     >
                       {list.length === 0 && (
-                        <EmptyState>
+                        <EmptyState borderless>
                           {t("offense.matchups.summary.combinations.empty")}
                         </EmptyState>
                       )}
@@ -171,18 +171,26 @@ export function Matchups({
                         {list.map((x) => {
                           if (x.formName === "stellar") {
                             return (
-                              <PlainBadge key="form-tera" size="full-width">
-                                {t("offense.teraPokemon")}
-                              </PlainBadge>
+                              <>
+                                <PlainBadge key="form-tera" size="regular">
+                                  {t("offense.teraPokemon")}
+                                </PlainBadge>
+                                <div />
+                                <div />
+                              </>
                             );
                           }
                           return x.types.map((t, i) => {
                             return (
                               <>
                                 {i > 0 ? (
-                                  <Icon name="closed" size={16} />
+                                  <Icon name="closed" size={32} />
                                 ) : null}
-                                <Badge key={`type-${t}`} type={t} />
+                                <Badge
+                                  key={`type-${t}`}
+                                  type={t}
+                                  variant="ghost"
+                                />
                               </>
                             );
                           });

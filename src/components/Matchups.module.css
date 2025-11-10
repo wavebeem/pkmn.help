@@ -11,7 +11,8 @@
 }
 
 .grid[data-kind="offense"] {
-  gap: var(--padding1);
+  gap: 1px;
+  /* gap: var(--padding1) 1px; */
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
 }
@@ -44,4 +45,10 @@
   background: var(--color-bg2);
   border-radius: var(--border-radius0);
   padding: 2px 8px;
+}
+
+.connector {
+  border-bottom: 4px solid var(--color-border3);
+  width: var(--padding4);
+  height: 0;
 }

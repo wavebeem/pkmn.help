@@ -16,6 +16,8 @@ export function CollapsibleSection({
   children,
   size = "medium",
 }: CollapsibleSectionProps): ReactNode {
+  const iconSize = 32;
+  // const iconSize = size === "medium" ? 32 : 16;
   return (
     <details className={styles.details} open={initiallyOpen} data-size={size}>
       <summary
@@ -26,8 +28,8 @@ export function CollapsibleSection({
         )}
       >
         {heading}
-        <Icon className={styles.icon} size={32} name="open" />
-        <Icon className={styles.icon} size={32} name="closed" />
+        <Icon className={styles.icon} size={iconSize} name="open" />
+        <Icon className={styles.icon} size={iconSize} name="closed" />
       </summary>
       {children}
     </details>
