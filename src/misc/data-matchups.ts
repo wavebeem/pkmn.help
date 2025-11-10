@@ -116,7 +116,9 @@ function matchupForPair(
   const key = getKey(offenseType, defenseType);
   const val = map.get(key);
   if (val === undefined) {
-    throw new Error(`matchupForPair: ${key}`);
+    // eslint-disable-next-line no-console
+    console.error(`matchupForPair: ${key}`);
+    return NaN;
   }
   return val;
 }
@@ -364,7 +366,7 @@ const generationMatchupMaps = {
 class Matchup {
   constructor(
     public generation: Generation,
-    public type: Type,
+    public types: Type[],
     public effectiveness: number,
     public formName?: string,
   ) {}
@@ -375,14 +377,14 @@ export class GroupedMatchups {
 
   toTestFormat(): Record<string, any> {
     return Object.fromEntries(
-      this.matchups.map((m) => [m.type, m.effectiveness]),
+      this.matchups.map((m) => [m.types.join(" / "), m.effectiveness]),
     );
   }
 
-  typesFor(effectivenes: number): Type[] {
+  typesFor(effectivenes: number): Type[][] {
     return this.matchups
       .filter((m) => m.effectiveness === effectivenes)
-      .map((m) => m.type);
+      .map((m) => m.types);
   }
 
   groupByEffectiveness(): Matchup[][] {
@@ -406,6 +408,27 @@ export class GroupedMatchups {
   }
 }
 
+function makeTypePairs(items: Type[]): [Type, Type][] {
+  const ret: [Type, Type][] = [];
+  const set = new Set<string>();
+  const itemsOrNone = [...items, Type.none] as const;
+  for (const a of items) {
+    for (const b of itemsOrNone) {
+      if (a === b) {
+        continue;
+      }
+      const key1 = `${a} / ${b}`;
+      const key2 = `${b} / ${a}`;
+      if (set.has(key1) || set.has(key2)) {
+        continue;
+      }
+      set.add(key1);
+      ret.push([a, b]);
+    }
+  }
+  return ret;
+}
+
 export function offensiveMatchups({
   gen,
   offenseTypes,
@@ -417,51 +440,51 @@ export function offensiveMatchups({
   specialMoves: readonly SpecialMove[];
   offenseAbilities: readonly AbilityName[];
 }): GroupedMatchups {
-  const matchups = typesForGeneration(gen)
-    .filter((t) => t !== Type.stellar)
-    .map((t) => {
-      let moves: readonly (SpecialMove | undefined)[] = specialMoves;
-      if (moves.length === 0) {
-        moves = [undefined];
-      } else if (moves.includes("flying_press") && offenseTypes.length > 0) {
-        moves = [...moves, undefined];
-      }
-      let abilities: readonly AbilityName[] = [...offenseAbilities];
-      if (offenseAbilities.length === 0) {
-        abilities = ["none"];
-      }
-      let offTypes: readonly (Type | undefined)[] = [...offenseTypes];
-      if (moves.includes("flying_press")) {
-        offTypes = [...offTypes];
-      }
-      if (moves.includes("freeze-dry") && !offTypes.includes("ice")) {
-        offTypes = [...offTypes, "ice"];
-      }
-      if (moves.includes("thousand_arrows") && !offTypes.includes("ground")) {
-        offTypes = [...offTypes, "ground"];
-      }
-      if (offTypes.length === 0) {
-        offTypes = [undefined];
-      }
-      const effs = abilities.flatMap((offenseAbilityName) => {
-        return moves.flatMap((move) => {
-          return offTypes.map((offense) => {
-            const x = matchupFor({
-              generation: gen,
-              defenseTypes: [t],
-              defenseTeraType: "none",
-              offenseType: offense,
-              abilityName: "none",
-              specialMove: move,
-              offenseAbilityName,
-            });
-            return x;
+  const types = typesForGeneration(gen).filter((t) => t !== Type.stellar);
+  const typePairs = makeTypePairs(types);
+  const matchups = typePairs.map(([t1, t2]) => {
+    let moves: readonly (SpecialMove | undefined)[] = specialMoves;
+    if (moves.length === 0) {
+      moves = [undefined];
+    } else if (moves.includes("flying_press") && offenseTypes.length > 0) {
+      moves = [...moves, undefined];
+    }
+    let abilities: readonly AbilityName[] = [...offenseAbilities];
+    if (offenseAbilities.length === 0) {
+      abilities = ["none"];
+    }
+    let offTypes: readonly (Type | undefined)[] = [...offenseTypes];
+    if (moves.includes("flying_press")) {
+      offTypes = [...offTypes];
+    }
+    if (moves.includes("freeze-dry") && !offTypes.includes("ice")) {
+      offTypes = [...offTypes, "ice"];
+    }
+    if (moves.includes("thousand_arrows") && !offTypes.includes("ground")) {
+      offTypes = [...offTypes, "ground"];
+    }
+    if (offTypes.length === 0) {
+      offTypes = [undefined];
+    }
+    const effs = abilities.flatMap((offenseAbilityName) => {
+      return moves.flatMap((move) => {
+        return offTypes.map((offense) => {
+          const x = matchupFor({
+            generation: gen,
+            defenseTypes: [t1, t2],
+            defenseTeraType: "none",
+            offenseType: offense,
+            abilityName: "none",
+            specialMove: move,
+            offenseAbilityName,
           });
+          return x;
         });
       });
-      const max = Math.max(...effs);
-      return new Matchup(gen, t, max);
     });
+    const max = Math.max(...effs);
+    return new Matchup(gen, [t1, t2], max);
+  });
   return new GroupedMatchups(matchups);
 }
 
@@ -485,7 +508,7 @@ export function defensiveMatchups({
       abilityName,
       offenseAbilityName: "none",
     });
-    return new Matchup(gen, t, eff);
+    return new Matchup(gen, [t], eff);
   });
   return new GroupedMatchups(matchups);
 }

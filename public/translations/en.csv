@@ -5,7 +5,12 @@ navigation.defense,Defense,Defense
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,More
 offense.chooseTypes,Choose attack move types,Choose attack move types
-offense.dealsXTo,Deals {{ x }} to these Pokémon types,Deals {{ x }} to these Pokémon types
+offense.dealsXTo,{{ x }} damage,{{ x }} damage
+offense.matchups.summary.heading,Matchup summary,Matchup summary
+offense.matchups.summary.damage,Damage,Damage
+offense.matchups.summary.combinations.heading,Combinations,Combinations
+offense.matchups.summary.combinations.empty,No types,No types
+offense.matchups.types.heading,Matchup types,Matchup types
 offense.abilities.choose,Choose abilities,Choose abilities
 offense.specialMoves.choose,Choose special moves,Choose special moves
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Freeze-Dry

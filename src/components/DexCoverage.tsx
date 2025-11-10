@@ -69,7 +69,11 @@ export function DexCoverage({
     <div className={styles.root}>
       <Flex direction="column" gap="large">
         <Flex direction="column">
-          <Meter value={weak.length} max={total} />
+          <Meter
+            value={weak.length}
+            max={total}
+            background="var(--color-bg-ghost)"
+          />
           <Flex gap="medium">
             <div>
               {getPercent(weak.length)}%{" "}
@@ -85,7 +89,11 @@ export function DexCoverage({
         </Flex>
 
         <Flex direction="column">
-          <Meter value={normal.length} max={total} />
+          <Meter
+            value={normal.length}
+            max={total}
+            background="var(--color-bg-ghost)"
+          />
           <Flex gap="medium">
             <div>
               {getPercent(normal.length)}%{" "}
@@ -101,7 +109,11 @@ export function DexCoverage({
         </Flex>
 
         <Flex direction="column">
-          <Meter value={resist.length} max={total} />
+          <Meter
+            value={resist.length}
+            max={total}
+            background="var(--color-bg-ghost)"
+          />
           <Flex gap="medium">
             <div>
               {getPercent(resist.length)}%{" "}

@@ -5,7 +5,12 @@ navigation.defense,Defense,Phòng Thủ
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Thêm
 offense.chooseTypes,Choose attack move types,Chọn hệ
-offense.dealsXTo,Deals {{ x }} to these Pokémon types,Gây {{ x }} sát thương đến
+offense.dealsXTo,{{ x }} damage,Gây {{ x }} sát thương đến
+offense.matchups.summary.heading,Matchup summary,
+offense.matchups.summary.damage,Damage,
+offense.matchups.summary.combinations.heading,Combinations,
+offense.matchups.summary.combinations.empty,No types,
+offense.matchups.types.heading,Matchup types,
 offense.abilities.choose,Choose abilities,Chọn đặc tính
 offense.specialMoves.choose,Choose special moves,Chọn tuyệt kỹ đặc biệt
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Đông Khô (Freeze Dry)

@@ -68,6 +68,7 @@ for (const lang of langs) {
   }
   for (const transPath of pathSets[lang]) {
     if (!pathSets.en.has(transPath)) {
+      // eslint-disable-next-line no-console
       console.error(`${lang} has unused translation: ${transPath}`);
     }
   }
@@ -77,6 +78,7 @@ for (const lang of langs) {
   completions[lang] = pathSets[lang].size / pathSets.en.size;
   // manually round down for not-yet-complete translations
   if (pathSets[lang].size !== pathSets.en.size && completions[lang] >= 1) {
+    // eslint-disable-next-line no-console
     console.error(lang, pathSets[lang].size, "vs", "en", pathSets.en.size);
     completions[lang] = 0.99;
   }

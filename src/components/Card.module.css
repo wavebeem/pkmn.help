@@ -15,3 +15,8 @@
   border-radius: var(--border-radius3);
   border: 1px solid transparent;
 }
+
+.Card[data-size="small"] {
+  padding: var(--padding2);
+  border-radius: var(--border-radius2);
+}

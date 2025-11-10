@@ -7,15 +7,18 @@ interface CollapsibleSectionProps {
   initiallyOpen?: boolean;
   heading: ReactNode;
   children: ReactNode;
+  size?: "medium" | "small";
 }
 
 export function CollapsibleSection({
   initiallyOpen = false,
   heading,
   children,
+  size = "medium",
 }: CollapsibleSectionProps): ReactNode {
+  const iconSize = 32;
   return (
-    <details className={styles.details} open={initiallyOpen}>
+    <details className={styles.details} open={initiallyOpen} data-size={size}>
       <summary
         className={clsx(
           styles.summary,
@@ -24,8 +27,8 @@ export function CollapsibleSection({
         )}
       >
         {heading}
-        <Icon className={styles.icon} size={32} name="open" />
-        <Icon className={styles.icon} size={32} name="closed" />
+        <Icon className={styles.icon} size={iconSize} name="open" />
+        <Icon className={styles.icon} size={iconSize} name="closed" />
       </summary>
       {children}
     </details>

@@ -5,7 +5,12 @@ navigation.defense,Defense,防禦
 navigation.pokedex,Pokédex,寶可夢圖鑑
 navigation.more,More,更多
 offense.chooseTypes,Choose attack move types,選擇屬性
-offense.dealsXTo,Deals {{ x }} to these Pokémon types,對 {{ x }} 造成傷害
+offense.dealsXTo,{{ x }} damage,對 {{ x }} 造成傷害
+offense.matchups.summary.heading,Matchup summary,
+offense.matchups.summary.damage,Damage,
+offense.matchups.summary.combinations.heading,Combinations,
+offense.matchups.summary.combinations.empty,No types,
+offense.matchups.types.heading,Matchup types,
 offense.abilities.choose,Choose abilities,選擇特性
 offense.specialMoves.choose,Choose special moves,選擇特別招式
 offense.specialMoves.names.freeze-dry,Freeze-Dry,冷凍乾燥

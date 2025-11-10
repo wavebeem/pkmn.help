@@ -27,6 +27,7 @@ import {
   typesFromString,
 } from "../misc/data-types";
 import styles from "./ScreenOffense.module.css";
+import { Card } from "../components/Card";
 
 export function ScreenOffense(): ReactNode {
   const { coverageTypes, fallbackCoverageTypes, isLoading } = useAppContext();
@@ -145,28 +146,6 @@ export function ScreenOffense(): ReactNode {
           />
         </Flex>
 
-        <Flex direction="column" gap="small">
-          <FancyText tag="h2" fontSize="large" fontWeight="medium">
-            {t("offense.coverage.heading")}
-          </FancyText>
-          <Flex direction="column" gap="large">
-            <div>
-              <FancyLink to="/offense/coverage/">
-                {t("offense.coverage.edit")}
-              </FancyLink>{" "}
-              ({listLengthFormatted})
-            </div>
-            <DexCoverage
-              generation={generation}
-              coverageTypes={coverageTypes ?? fallbackCoverageTypes}
-              types={offenseTypes}
-              isLoading={isLoading}
-              offenseAbilities={abilities}
-              specialMoves={specialMoves}
-            />
-          </Flex>
-        </Flex>
-
         {generation === "default" && (
           <Flex direction="column" gap="small">
             <Flex>
@@ -187,6 +166,30 @@ export function ScreenOffense(): ReactNode {
           specialMoves={specialMoves}
           offenseAbilities={abilities}
         />
+
+        <Flex direction="column" gap="small">
+          <FancyText tag="h2" fontSize="large" fontWeight="medium">
+            {t("offense.coverage.heading")}
+          </FancyText>
+          <Card size="small">
+            <Flex direction="column" gap="large">
+              <div>
+                <FancyLink to="/offense/coverage/">
+                  {t("offense.coverage.edit")}
+                </FancyLink>{" "}
+                ({listLengthFormatted})
+              </div>
+              <DexCoverage
+                generation={generation}
+                coverageTypes={coverageTypes ?? fallbackCoverageTypes}
+                types={offenseTypes}
+                isLoading={isLoading}
+                offenseAbilities={abilities}
+                specialMoves={specialMoves}
+              />
+            </Flex>
+          </Card>
+        </Flex>
       </Flex>
     </main>
   );
