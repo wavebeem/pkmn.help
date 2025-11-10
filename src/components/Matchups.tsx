@@ -19,6 +19,7 @@ import { Divider } from "./Divider";
 import { Meter } from "./Meter";
 import { Icon } from "./Icon";
 import { Card } from "./Card";
+import { EmptyState } from "./EmptyState";
 
 interface MatchupsProps {
   kind: "offense" | "defense";
@@ -86,7 +87,9 @@ export function Matchups({
                 <thead>
                   <tr>
                     <th>{t("offense.matchups.summary.damage")}</th>
-                    <th>{t("offense.matchups.summary.combinations")}</th>
+                    <th>
+                      {t("offense.matchups.summary.combinations.heading")}
+                    </th>
                     <th />
                   </tr>
                 </thead>
@@ -121,14 +124,13 @@ export function Matchups({
 
           <Flex direction="column" gap="small">
             <FancyText tag="h2" fontWeight="medium" fontSize="large">
-              {t("offense.matchups.types")}
+              {t("offense.matchups.types.heading")}
             </FancyText>
             <Card size="small">
-              {grouped.map((list, i) => {
-                if (list.length === 0) {
-                  return null;
-                }
-                const eff = list[0].effectiveness;
+              {effs.map((eff, i) => {
+                const list = matchups.matchups.filter(
+                  (m) => m.effectiveness === eff,
+                );
                 const effectivenessDisplay = formatEffectiveness(
                   eff,
                   i18n.languages,
@@ -154,12 +156,17 @@ export function Matchups({
                               })}
                             </div>
                             <Flex flex="auto" />
-                            <div>({matchups.typesFor(eff).length})</div>
+                            <div>{matchups.typesFor(eff).length}</div>
                             <div>&nbsp;&nbsp;</div>
                           </Flex>
                         </FancyText>
                       }
                     >
+                      {list.length === 0 && (
+                        <EmptyState>
+                          {t("offense.matchups.summary.combinations.empty")}
+                        </EmptyState>
+                      )}
                       <div className={clsx(styles.grid)} data-kind={kind}>
                         {list.map((x) => {
                           if (x.formName === "stellar") {

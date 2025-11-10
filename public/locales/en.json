@@ -13,9 +13,14 @@
       "summary": {
         "heading": "Matchup summary",
         "damage": "Damage",
-        "combinations": "Combinations"
+        "combinations": {
+          "heading": "Combinations",
+          "empty": "No types"
+        }
       },
-      "types": "Matchup types"
+      "types": {
+        "heading": "Matchup types"
+      }
     },
     "abilities": {
       "choose": "Choose abilities"

@@ -145,6 +145,27 @@ export function ScreenOffense(): ReactNode {
           />
         </Flex>
 
+        {generation === "default" && (
+          <Flex direction="column" gap="small">
+            <Flex>
+              <CopyButton text={permalink.href}>
+                {t("general.copyLink")}
+              </CopyButton>
+            </Flex>
+          </Flex>
+        )}
+      </Flex>
+      <Flex direction="column" gap="large">
+        <Matchups
+          kind="offense"
+          generation={generation}
+          types={offenseTypes}
+          ability="none"
+          teraType={Type.none}
+          specialMoves={specialMoves}
+          offenseAbilities={abilities}
+        />
+
         <Flex direction="column" gap="small">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
             {t("offense.coverage.heading")}
@@ -166,27 +187,6 @@ export function ScreenOffense(): ReactNode {
             />
           </Flex>
         </Flex>
-
-        {generation === "default" && (
-          <Flex direction="column" gap="small">
-            <Flex>
-              <CopyButton text={permalink.href}>
-                {t("general.copyLink")}
-              </CopyButton>
-            </Flex>
-          </Flex>
-        )}
-      </Flex>
-      <Flex direction="column" gap="large">
-        <Matchups
-          kind="offense"
-          generation={generation}
-          types={offenseTypes}
-          ability="none"
-          teraType={Type.none}
-          specialMoves={specialMoves}
-          offenseAbilities={abilities}
-        />
       </Flex>
     </main>
   );
