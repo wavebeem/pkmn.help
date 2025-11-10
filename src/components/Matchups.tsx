@@ -14,6 +14,12 @@ import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
 import styles from "./Matchups.module.css";
 import { PlainBadge } from "./PlainBadge";
+import { typeColor, typeColorBorder } from "../misc/colors";
+import { CollapsibleSection } from "./CollapsibleSection";
+import { Divider } from "./Divider";
+import { Meter } from "./Meter";
+import { Icon } from "./Icon";
+import { Card } from "./Card";
 
 interface MatchupsProps {
   kind: "offense" | "defense";
@@ -60,6 +66,133 @@ export function Matchups({
     });
   }
   const grouped = matchups.groupByEffectiveness();
+  const effs = [4, 2, 1, 0.5, 0.25, 0] as const;
+
+  function getPercent(count: number, total: number): string {
+    const value = Number(((count / total || 0) * 100).toFixed(1));
+    return value.toLocaleString(i18n.languages);
+  }
+
+  if (kind === "offense") {
+    return (
+      <div id={`matchup-${kind}`}>
+        <Flex direction="column" gap="xlarge">
+          <Flex direction="column" gap="small">
+            <FancyText tag="h2" fontWeight="medium" fontSize="large">
+              {t("offense.matchups.summary.heading")}
+            </FancyText>
+
+            <Card size="small">
+              <table className={styles.offenseSummary}>
+                <thead>
+                  <tr>
+                    <th>{t("offense.matchups.summary.damage")}</th>
+                    <th>{t("offense.matchups.summary.combinations")}</th>
+                    <th />
+                  </tr>
+                </thead>
+                <tbody>
+                  {effs.map((eff) => {
+                    return (
+                      <tr>
+                        <td className={styles.tableNumber}>
+                          {formatEffectiveness(eff, i18n.languages)}
+                        </td>
+                        <td>
+                          <Meter
+                            value={matchups.typesFor(eff).length}
+                            max={matchups.matchups.length}
+                            background="var(--color-bg2)"
+                          />
+                        </td>
+                        <td className={styles.tableNumber}>
+                          {getPercent(
+                            matchups.typesFor(eff).length,
+                            matchups.matchups.length,
+                          )}
+                          %
+                        </td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </Card>
+          </Flex>
+
+          <Flex direction="column" gap="small">
+            <FancyText tag="h2" fontWeight="medium" fontSize="large">
+              {t("offense.matchups.types")}
+            </FancyText>
+            <Card size="small">
+              {grouped.map((list, i) => {
+                if (list.length === 0) {
+                  return null;
+                }
+                const eff = list[0].effectiveness;
+                const effectivenessDisplay = formatEffectiveness(
+                  eff,
+                  i18n.languages,
+                );
+                return (
+                  <Flex direction="column" gap="none" key={i}>
+                    {i > 0 ? <Divider /> : null}
+                    <CollapsibleSection
+                      size="small"
+                      // Ensure the open/closed state doesn't bleed over from
+                      // different groups
+                      key={`${eff}-${i}`}
+                      heading={
+                        <FancyText
+                          tag="h3"
+                          fontWeight="normal"
+                          fontSize="medium"
+                        >
+                          <Flex>
+                            <div>
+                              {t("offense.dealsXTo", {
+                                x: effectivenessDisplay,
+                              })}
+                            </div>
+                            <Flex flex="auto" />
+                            <div>({matchups.typesFor(eff).length})</div>
+                            <div>&nbsp;&nbsp;</div>
+                          </Flex>
+                        </FancyText>
+                      }
+                    >
+                      <div className={clsx(styles.grid)} data-kind={kind}>
+                        {list.map((x) => {
+                          if (x.formName === "stellar") {
+                            return (
+                              <PlainBadge key="form-tera" size="full-width">
+                                {t("offense.teraPokemon")}
+                              </PlainBadge>
+                            );
+                          }
+                          return x.types.map((t, i) => {
+                            return (
+                              <>
+                                {i > 0 ? (
+                                  <Icon name="closed" size={16} />
+                                ) : null}
+                                <Badge key={`type-${t}`} type={t} />
+                              </>
+                            );
+                          });
+                        })}
+                      </div>
+                    </CollapsibleSection>
+                  </Flex>
+                );
+              })}
+            </Card>
+          </Flex>
+        </Flex>
+      </div>
+    );
+  }
+
   return (
     <div id={`matchup-${kind}`}>
       <Flex direction="column" gap="xlarge">
@@ -72,13 +205,11 @@ export function Matchups({
           return (
             <Flex direction="column" gap="medium" key={i}>
               <FancyText tag="h2" fontWeight="medium" fontSize="large">
-                {kind === "offense"
-                  ? t("offense.dealsXTo", { x: effectivenessDisplay })
-                  : t("defense.takesXFrom", { x: effectivenessDisplay })}
+                {t("defense.takesXFrom", { x: effectivenessDisplay })}
               </FancyText>
-              <div className={clsx(styles.grid)}>
+              <div className={clsx(styles.grid)} data-kind={kind}>
                 {list.map((x) => {
-                  if (kind === "offense" && x.formName === "stellar") {
+                  if (x.formName === "stellar") {
                     return (
                       <PlainBadge key="form-tera" size="full-width">
                         {t("offense.teraPokemon")}

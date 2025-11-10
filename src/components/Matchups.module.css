@@ -1,8 +1,47 @@
 .grid {
   display: grid;
+}
+
+.grid[data-kind="defense"] {
   gap: var(--padding1);
   grid-template-columns: repeat(
     auto-fill,
     minmax(calc(var(--type-min-width) + 2rem), 1fr)
   );
+}
+
+.grid[data-kind="offense"] {
+  gap: var(--padding1);
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.offenseSummary {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: 7ch 1fr 7ch;
+  gap: 4px;
+  font-variant-numeric: tabular-nums;
+
+  :where(th, td) {
+    padding: 0;
+  }
+
+  :where(th) {
+    font-weight: normal;
+    text-align: left;
+    font-size: var(--font-size0);
+  }
+
+  :where(tbody, thead, tr) {
+    display: contents;
+  }
+}
+
+.tableNumber {
+  text-align: right;
+  background: var(--color-bg2);
+  border-radius: var(--border-radius0);
+  padding: 2px 8px;
 }

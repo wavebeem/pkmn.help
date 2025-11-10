@@ -8,7 +8,15 @@
   },
   "offense": {
     "chooseTypes": "Choose attack move types",
-    "dealsXTo": "Deals {{ x }} to these Pokémon types",
+    "dealsXTo": "{{ x }} damage",
+    "matchups": {
+      "summary": {
+        "heading": "Matchup summary",
+        "damage": "Damage",
+        "combinations": "Combinations"
+      },
+      "types": "Matchup types"
+    },
     "abilities": {
       "choose": "Choose abilities"
     },

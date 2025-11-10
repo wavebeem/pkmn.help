@@ -1,12 +1,20 @@
+.details {
+  --_padding-size: var(--padding3);
+}
+
+.details[data-size="small"] {
+  --_padding-size: var(--padding2);
+}
+
 .icon {
   border-radius: 9999px;
   background: var(--color-border3);
 }
 
 .summary {
-  padding: var(--padding3) 0;
+  padding: var(--_padding-size) 0;
   user-select: none;
-  cursor: pointer;
+  /* cursor: pointer; */
   list-style: none;
   display: grid;
   grid-template-columns: 1fr auto;
@@ -38,5 +46,5 @@
 }
 
 .details[open] {
-  padding-bottom: var(--padding3);
+  padding-bottom: var(--_padding-size);
 }

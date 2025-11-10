@@ -3,8 +3,10 @@
   display: flex;
   min-height: 1.5rem;
   height: 100%;
-  background: linear-gradient(to left, var(--meter-color-bg), transparent);
+  background: var(--meter-color-bg);
+  /* background: linear-gradient(to left, var(--meter-color-bg), transparent); */
   border-radius: 0;
+  min-width: 100px;
 }
 
 .root::after {

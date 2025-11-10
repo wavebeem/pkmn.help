@@ -4,7 +4,6 @@ import { Type } from "../misc/data-types";
 import styles from "./Badge.module.css";
 import { customProperties } from "../misc/customProperties";
 import { ReactNode } from "react";
-import { PlainBadge } from "./PlainBadge";
 
 interface BadgeProps {
   type: Type;
@@ -13,10 +12,6 @@ interface BadgeProps {
 
 export function Badge({ type, size = "medium" }: BadgeProps): ReactNode {
   const { t } = useTranslation();
-  // TODO: Remove this...
-  if (type === "none") {
-    return <PlainBadge>{t(`types.${type}`)}</PlainBadge>;
-  }
   return (
     <div
       className={styles.badge}
