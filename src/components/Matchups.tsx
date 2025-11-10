@@ -14,7 +14,6 @@ import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
 import styles from "./Matchups.module.css";
 import { PlainBadge } from "./PlainBadge";
-import { typeColor, typeColorBorder } from "../misc/colors";
 import { CollapsibleSection } from "./CollapsibleSection";
 import { Divider } from "./Divider";
 import { Meter } from "./Meter";
