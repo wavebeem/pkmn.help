@@ -5,7 +5,12 @@ navigation.defense,Defense,방어
 navigation.pokedex,Pokédex,포켓몬 도감
 navigation.more,More,더보기
 offense.chooseTypes,Choose attack move types,타입 선택
-offense.dealsXTo,Deals {{ x }} to these Pokémon types,{{x}} 데미지
+offense.dealsXTo,{{ x }} damage,{{x}} 데미지
+offense.matchups.summary.heading,Matchup summary,
+offense.matchups.summary.damage,Damage,
+offense.matchups.summary.combinations.heading,Combinations,
+offense.matchups.summary.combinations.empty,No types,
+offense.matchups.types.heading,Matchup types,
 offense.abilities.choose,Choose abilities,특성 선택
 offense.specialMoves.choose,Choose special moves,특별 상성 선택
 offense.specialMoves.names.freeze-dry,Freeze-Dry,프리즈드라이

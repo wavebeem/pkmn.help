@@ -88,7 +88,8 @@ export function Matchups({
                   <tr>
                     <th>{t("offense.matchups.summary.damage")}</th>
                     <th>
-                      {t("offense.matchups.summary.combinations.heading")}
+                      {t("offense.matchups.summary.combinations.heading")} (
+                      {matchups.matchups.length})
                     </th>
                     <th />
                   </tr>
@@ -104,7 +105,7 @@ export function Matchups({
                           <Meter
                             value={matchups.typesFor(eff).length}
                             max={matchups.matchups.length}
-                            background="var(--color-bg2)"
+                            background="var(--color-bg-ghost)"
                           />
                         </td>
                         <td className={styles.tableNumber}>

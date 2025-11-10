@@ -1,5 +1,14 @@
 # Changelog
 
+## 2025-11-09
+
+- Completely redesigned the Offense calculator to work with type combinations
+  instead of single types
+
+- Adjusted some colors a little bit
+
+- Improved the text readability on type badges
+
 ## 2025-10-15
 
 - Updated link preview (sharing) image

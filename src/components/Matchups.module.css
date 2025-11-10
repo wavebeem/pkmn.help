@@ -42,8 +42,8 @@
 
 .tableNumber {
   text-align: right;
-  background: var(--color-bg2);
-  border-radius: var(--border-radius0);
+  background: var(--color-bg-ghost);
+  border-radius: var(--border-radius1);
   padding: 2px 8px;
 }
 

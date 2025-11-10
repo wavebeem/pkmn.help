@@ -72,7 +72,7 @@ export function DexCoverage({
           <Meter
             value={weak.length}
             max={total}
-            background="var(--color-bg2)"
+            background="var(--color-bg-ghost)"
           />
           <Flex gap="medium">
             <div>
@@ -92,7 +92,7 @@ export function DexCoverage({
           <Meter
             value={normal.length}
             max={total}
-            background="var(--color-bg2)"
+            background="var(--color-bg-ghost)"
           />
           <Flex gap="medium">
             <div>
@@ -112,7 +112,7 @@ export function DexCoverage({
           <Meter
             value={resist.length}
             max={total}
-            background="var(--color-bg2)"
+            background="var(--color-bg-ghost)"
           />
           <Flex gap="medium">
             <div>

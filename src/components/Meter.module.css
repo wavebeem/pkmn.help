@@ -5,7 +5,7 @@
   height: 100%;
   background: var(--meter-color-bg);
   /* background: linear-gradient(to left, var(--meter-color-bg), transparent); */
-  border-radius: 0;
+  border-radius: var(--border-radius1);
   min-width: 100px;
 }
 

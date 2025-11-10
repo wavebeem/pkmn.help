@@ -5,7 +5,12 @@ navigation.defense,Defense,Protecție
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mai mult
 offense.chooseTypes,Choose attack move types,Alege tipuri
-offense.dealsXTo,Deals {{ x }} to these Pokémon types,Oferte {{ x }} spre
+offense.dealsXTo,{{ x }} damage,Oferte {{ x }} spre
+offense.matchups.summary.heading,Matchup summary,
+offense.matchups.summary.damage,Damage,
+offense.matchups.summary.combinations.heading,Combinations,
+offense.matchups.summary.combinations.empty,No types,
+offense.matchups.types.heading,Matchup types,
 offense.abilities.choose,Choose abilities,Alege abilități
 offense.specialMoves.choose,Choose special moves,Alege abilități speciale
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Freeze-Dry

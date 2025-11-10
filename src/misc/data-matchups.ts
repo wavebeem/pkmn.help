@@ -117,7 +117,9 @@ function matchupForPair(
   const key = getKey(offenseType, defenseType);
   const val = map.get(key);
   if (val === undefined) {
-    throw new Error(`matchupForPair: ${key}`);
+    // eslint-disable-next-line no-console
+    console.error(`matchupForPair: ${key}`);
+    return NaN;
   }
   return val;
 }

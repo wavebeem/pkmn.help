@@ -10,6 +10,7 @@ something. */
 
   --color-bg1: hsl(var(--hue-blue) 10% 100%);
   --color-bg2: hsl(var(--hue-blue) 10% 90%);
+  --color-bg-ghost: hsl(var(--hue-blue) 10% 100% / 50%);
   --color-card-bg: hsl(var(--hue-blue) 10% 94%);
   --color-card-highlight: hsl(var(--hue-blue) 10% 100%);
   --color-card-shadow: hsl(var(--hue-blue) 10% 80%);
@@ -100,9 +101,10 @@ something. */
 }
 
 [data-theme="dark"] {
-  --color-bg1: hsl(var(--hue-blue) 10% 22%);
+  --color-bg1: hsl(var(--hue-blue) 10% 28%);
   --color-bg2: hsl(var(--hue-blue) 10% 14%);
-  --color-card-bg: hsl(var(--hue-blue) 10% 16%);
+  --color-bg-ghost: hsl(var(--hue-blue) 10% 40% / 20%);
+  --color-card-bg: hsl(var(--hue-blue) 10% 20%);
   --color-card-highlight: hsl(var(--hue-blue) 10% 32%);
   --color-card-shadow: hsl(var(--hue-blue) 10% 12%);
   --color-fg1: hsl(var(--hue-blue) 15% 92%);
@@ -116,12 +118,12 @@ something. */
   --color-header-highlight: hsl(var(--hue-red) 40% 55%);
   --color-header-text: #fff;
   --color-header-border: hsl(var(--hue-red) 40% 50%);
-  --color-button1: hsl(var(--hue-blue) 10% 26%);
+  --color-button1: hsl(var(--hue-blue) 10% 28%);
   --color-button1b: hsl(var(--hue-blue) 10% 22%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
-  --color-border1: hsl(var(--hue-blue) 10% 52%);
+  --color-border1: hsl(var(--hue-blue) 10% 48%);
   --color-border2: hsl(var(--hue-blue) 10% 37%);
-  --color-border3: hsl(var(--hue-blue) 10% 32%);
+  --color-border3: hsl(var(--hue-blue) 10% 37%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 40%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
   --color-scroll-fg: hsl(var(--hue-blue) 10% 70%);
@@ -132,7 +134,8 @@ something. */
 [data-theme="night"] {
   --color-bg1: hsl(var(--hue-blue) 10% 15%);
   --color-bg2: hsl(var(--hue-blue) 10% 5%);
-  --color-card-bg: hsl(var(--hue-blue) 10% 10%);
+  --color-bg-ghost: hsl(var(--hue-blue) 10% 40% / 20%);
+  --color-card-bg: hsl(var(--hue-blue) 10% 15%);
   --color-card-highlight: hsl(var(--hue-blue) 10% 25%);
   --color-card-shadow: hsl(var(--hue-blue) 10% 2%);
   --color-fg1: hsl(var(--hue-blue) 15% 82%);
@@ -146,12 +149,12 @@ something. */
   --color-header-highlight: hsl(var(--hue-blue) 5% 30%);
   --color-header-text: hsl(var(--hue-blue) 5% 82%);
   --color-header-border: hsl(var(--hue-blue) 5% 20%);
-  --color-button1: hsl(var(--hue-blue) 10% 18%);
-  --color-button1b: hsl(var(--hue-blue) 10% 14%);
+  --color-button1: hsl(var(--hue-blue) 10% 25%);
+  --color-button1b: hsl(var(--hue-blue) 10% 15%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
-  --color-border1: hsl(var(--hue-blue) 10% 42%);
-  --color-border2: hsl(var(--hue-blue) 10% 30%);
-  --color-border3: hsl(var(--hue-blue) 10% 25%);
+  --color-border1: hsl(var(--hue-blue) 10% 47%);
+  --color-border2: hsl(var(--hue-blue) 10% 35%);
+  --color-border3: hsl(var(--hue-blue) 10% 35%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 50%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
   --color-scroll-fg: hsl(var(--hue-blue) 10% 62%);
@@ -161,11 +164,12 @@ something. */
 
 @media (prefers-color-scheme: dark) {
   [data-theme="auto"] {
-    --color-bg1: hsl(var(--hue-blue) 10% 26%);
-    --color-card-bg: hsl(var(--hue-blue) 10% 16%);
+    --color-bg1: hsl(var(--hue-blue) 10% 28%);
+    --color-bg2: hsl(var(--hue-blue) 10% 14%);
+    --color-bg-ghost: hsl(var(--hue-blue) 10% 40% / 20%);
+    --color-card-bg: hsl(var(--hue-blue) 10% 20%);
     --color-card-highlight: hsl(var(--hue-blue) 10% 32%);
     --color-card-shadow: hsl(var(--hue-blue) 10% 12%);
-    --color-bg2: hsl(var(--hue-blue) 10% 14%);
     --color-fg1: hsl(var(--hue-blue) 15% 92%);
     --color-fg2: hsl(var(--hue-blue) 15% 82%);
     --color-fg3: hsl(var(--hue-blue) 15% 72%);
@@ -177,16 +181,15 @@ something. */
     --color-header-highlight: hsl(var(--hue-red) 40% 55%);
     --color-header-text: #fff;
     --color-header-border: hsl(var(--hue-red) 40% 50%);
-    --color-button1: hsl(var(--hue-blue) 10% 26%);
+    --color-button1: hsl(var(--hue-blue) 10% 28%);
     --color-button1b: hsl(var(--hue-blue) 10% 22%);
     --color-link: hsl(var(--hue-teal) 90% 75%);
-    --color-border1: hsl(var(--hue-blue) 10% 52%);
+    --color-border1: hsl(var(--hue-blue) 10% 48%);
     --color-border2: hsl(var(--hue-blue) 10% 37%);
-    --color-border3: hsl(var(--hue-blue) 10% 32%);
+    --color-border3: hsl(var(--hue-blue) 10% 37%);
     --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 40%);
     --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
     --color-scroll-fg: hsl(var(--hue-blue) 10% 70%);
     --color-scroll-bg: hsl(var(--hue-blue) 10% 15%);
-    color-scheme: dark;
   }
 }

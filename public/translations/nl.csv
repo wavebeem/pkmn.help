@@ -5,7 +5,12 @@ navigation.defense,Defense,Defensief
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Meer
 offense.chooseTypes,Choose attack move types,Kies Types
-offense.dealsXTo,Deals {{ x }} to these Pokémon types,Deelt {{ x }} schade aan
+offense.dealsXTo,{{ x }} damage,Deelt {{ x }} schade aan
+offense.matchups.summary.heading,Matchup summary,
+offense.matchups.summary.damage,Damage,
+offense.matchups.summary.combinations.heading,Combinations,
+offense.matchups.summary.combinations.empty,No types,
+offense.matchups.types.heading,Matchup types,
 offense.abilities.choose,Choose abilities,
 offense.specialMoves.choose,Choose special moves,
 offense.specialMoves.names.freeze-dry,Freeze-Dry,
