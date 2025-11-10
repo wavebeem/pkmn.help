@@ -7,7 +7,6 @@ import {
   Type,
   abilities,
   typesForGeneration,
-  typesWithoutNone,
 } from "./data-types";
 
 const typesInPokemondbOrder = [
