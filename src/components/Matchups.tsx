@@ -48,6 +48,7 @@ export function Matchups({
       offenseTypes: types,
       specialMoves,
       offenseAbilities,
+      kind: kind === "offense-combination" ? "combination" : "single",
     });
     if (types.includes(Type.stellar)) {
       matchups.matchups.unshift({
@@ -231,7 +232,9 @@ export function Matchups({
                       </PlainBadge>
                     );
                   }
-                  return x.types.map((t) => {
+                  const displayTypes =
+                    kind === "offense-single" ? x.types.slice(0, 1) : x.types;
+                  return displayTypes.map((t) => {
                     return <Badge key={`type-${t}`} type={t} />;
                   });
                 })}
