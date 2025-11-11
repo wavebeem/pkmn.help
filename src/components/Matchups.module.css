@@ -10,7 +10,7 @@
   );
 }
 
-.grid[data-kind="offense"] {
+.grid[data-kind="offense-combination"] {
   gap: 1px;
   /* gap: var(--padding1) 1px; */
   grid-template-columns: 1fr auto 1fr;

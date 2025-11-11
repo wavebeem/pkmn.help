@@ -33,6 +33,8 @@
 }
 
 .label {
+  /* TODO: Using `-webkit-text-stroke` + `paint-order` is a lot less messy...
+  but looks slightly less good. Maybe something to think about later. */
   --_c: var(--type-color-bg);
   line-height: 1;
   text-shadow:

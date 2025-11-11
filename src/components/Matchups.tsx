@@ -22,7 +22,7 @@ import { Card } from "./Card";
 import { EmptyState } from "./EmptyState";
 
 interface MatchupsProps {
-  kind: "offense" | "defense";
+  kind: "offense-single" | "offense-combination" | "defense";
   generation: Generation;
   types: Type[];
   teraType: Type;
@@ -42,7 +42,7 @@ export function Matchups({
 }: MatchupsProps): ReactNode {
   const { t, i18n } = useTranslation();
   let matchups: GroupedMatchups;
-  if (kind === "offense") {
+  if (kind === "offense-single" || kind === "offense-combination") {
     matchups = offensiveMatchups({
       gen: generation,
       offenseTypes: types,
@@ -73,7 +73,7 @@ export function Matchups({
     return value.toLocaleString(i18n.languages);
   }
 
-  if (kind === "offense") {
+  if (kind === "offense-combination") {
     return (
       <div id={`matchup-${kind}`}>
         <Flex direction="column" gap="xlarge">

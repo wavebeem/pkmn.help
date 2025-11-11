@@ -121,7 +121,6 @@ export function ScreenPokedex(): ReactNode {
   return (
     <main className="center content-wide">
       <Flex direction="column" gap="large" padding="large">
-        <Padding size="small" />
         <div className={styles.searchArea}>
           <Search
             label={t("pokedex.search.description")}

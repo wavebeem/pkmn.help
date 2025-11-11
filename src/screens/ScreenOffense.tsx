@@ -130,7 +130,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
       </div>
 
       <Flex direction="column" gap="xlarge">
-        <Flex direction="column" gap="small">
+        <Flex direction="column" gap="medium">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
             {t("offense.chooseTypes")}
           </FancyText>
@@ -174,7 +174,9 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
       </Flex>
       <Flex direction="column" gap="large">
         <Matchups
-          kind="offense"
+          kind={
+            mode === "combination" ? "offense-combination" : "offense-single"
+          }
           generation={generation}
           types={offenseTypes}
           ability="none"

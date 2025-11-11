@@ -1,66 +1,61 @@
 .root {
-  gap: var(--padding1);
-  /* gap: 1px; */
-  padding: var(--padding1);
+  margin-inline: calc(-1 * var(--padding2));
+  gap: var(--padding2);
+  padding: var(--padding2);
   flex-wrap: wrap;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* border-bottom: 1px solid var(--color-border3);
+  border-bottom: 1px solid var(--color-border3);
+  justify-content: center;
+  border-bottom: 1px solid var(--color-border3);
   border-image: linear-gradient(
       to right,
+      transparent,
       var(--color-border3) 64px calc(100% - 64px),
       transparent
     )
-    1; */
-  border-radius: var(--border-radius-pill);
-  background: var(--color-bg1);
-  border: 1px solid var(--color-border2);
+    1;
 }
 
 @media (width >= 60rem) {
   .root {
     display: flex;
-    max-width: max-content;
-    margin-inline: auto;
   }
 }
 
 .root > * {
   text-decoration: none;
-  padding: var(--padding1) var(--padding3);
-  color: var(--color-fg1);
+  padding: var(--padding1) var(--padding2);
   text-align: center;
   color: inherit;
-  /* border-bottom: 4px solid transparent; */
   font-weight: var(--weight-medium);
   position: relative;
-  border-radius: var(--border-radius-pill);
+  background: var(--color-card-bg);
+  color: var(--color-fg1);
+  /* border: 1px solid var(--color-card-highlight); */
+  border-radius: var(--border-radius2);
 }
 
-.root > *:active {
+.root > :active {
   background-image: linear-gradient(
     hsl(from var(--color-fg1) h s l / 5%) 0 100%
   );
 }
 
-.root > *:focus-visible {
+.root > :where(*[aria-current="page"]) {
+  background: var(--color-fg1);
+  color: var(--color-bg1);
+  border-color: transparent;
+}
+
+.root > :where(:not([aria-current="page"])) {
+  box-shadow:
+    inset 0 1px 0 0 var(--color-card-highlight),
+    0 1px 0 0 var(--color-card-shadow);
+}
+
+.root > :where(:focus-visible) {
   outline: 1px solid var(--color-bg1);
   outline-offset: -1px;
   box-shadow: 0 0 0 3px var(--color-fg1);
-}
-
-.root > *[aria-current="page"] {
-  /* border-color: currentColor; */
-  background: var(--color-fg1);
-  color: var(--color-bg1);
-  /* &::after {
-    content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    border-radius: var(--border-radius3);
-    background: currentColor;
-  } */
 }
