@@ -8,8 +8,10 @@ import { DefenseTabs } from "../components/DefenseTabs";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
-import { Select } from "../components/Select";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
+import { Select } from "../components/Select";
+import { SelectDivider } from "../components/SelectDivider";
+import { useGeneration } from "../hooks/useGeneration";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
@@ -22,8 +24,6 @@ import {
   typesFromString,
 } from "../misc/data-types";
 import styles from "./ScreenDefense.module.css";
-import { useGeneration } from "../hooks/useGeneration";
-import { SelectDivider } from "../components/SelectDivider";
 
 export function ScreenDefense(): ReactNode {
   useScrollToFragment();
@@ -94,14 +94,11 @@ export function ScreenDefense(): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
-      <Flex direction="column" gap="xlarge">
-        <Flex direction="column" gap="medium">
-          <FancyText tag="h2" fontSize="large" fontWeight="medium">
-            {t("defense.mode.heading")}
-          </FancyText>
-          <DefenseTabs />
-        </Flex>
+      <div className={styles.tabBar}>
+        <DefenseTabs />
+      </div>
 
+      <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="medium">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
             {t("defense.chooseTypes")}

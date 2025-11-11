@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025-11-11
+
+TODO: Remove "defense.mode.heading"
+
+- Added the old offense calculator back as an option
+
 ## 2025-11-09
 
 - Completely redesigned the Offense calculator to work with type combinations

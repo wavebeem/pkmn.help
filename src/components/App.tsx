@@ -46,7 +46,8 @@ const router = createBrowserRouter([
       {
         path: "offense",
         children: [
-          { index: true, element: <ScreenOffense /> },
+          { index: true, element: <ScreenOffense mode="combination" /> },
+          { path: "single", element: <ScreenOffense mode="single" /> },
           {
             path: "coverage",
             children: [

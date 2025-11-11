@@ -28,8 +28,15 @@ import {
 } from "../misc/data-types";
 import styles from "./ScreenOffense.module.css";
 import { Card } from "../components/Card";
+import { OffenseTabs } from "../components/OffenseTabs";
 
-export function ScreenOffense(): ReactNode {
+export type ScreenOffenseProps = {
+  mode: "combination" | "single";
+};
+
+export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
+  const typeLimit = mode === "single" ? 1 : Infinity;
+
   const { coverageTypes, fallbackCoverageTypes, isLoading } = useAppContext();
   const [generation] = useGeneration();
   const { t, i18n } = useTranslation();
@@ -39,6 +46,10 @@ export function ScreenOffense(): ReactNode {
     "offense.types",
     [],
   );
+
+  useEffect(() => {
+    setOffenseTypes((types) => types.slice(0, typeLimit));
+  }, [typeLimit, setOffenseTypes]);
 
   useEffect(() => {
     if (search.has("types")) {
@@ -114,6 +125,10 @@ export function ScreenOffense(): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
+      <div className={styles.tabBar}>
+        <OffenseTabs />
+      </div>
+
       <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="small">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
@@ -123,6 +138,7 @@ export function ScreenOffense(): ReactNode {
             generation={generation}
             value={offenseTypes}
             onChange={setOffenseTypes}
+            limit={typeLimit}
           />
         </Flex>
         <Flex direction="column" gap="small">
@@ -167,29 +183,31 @@ export function ScreenOffense(): ReactNode {
           offenseAbilities={abilities}
         />
 
-        <Flex direction="column" gap="small">
-          <FancyText tag="h2" fontSize="large" fontWeight="medium">
-            {t("offense.coverage.heading")}
-          </FancyText>
-          <Card size="small">
-            <Flex direction="column" gap="large">
-              <div>
-                <FancyLink to="/offense/coverage/">
-                  {t("offense.coverage.edit")}
-                </FancyLink>{" "}
-                ({listLengthFormatted})
-              </div>
-              <DexCoverage
-                generation={generation}
-                coverageTypes={coverageTypes ?? fallbackCoverageTypes}
-                types={offenseTypes}
-                isLoading={isLoading}
-                offenseAbilities={abilities}
-                specialMoves={specialMoves}
-              />
-            </Flex>
-          </Card>
-        </Flex>
+        {generation === "default" ? (
+          <Flex direction="column" gap="small">
+            <FancyText tag="h2" fontSize="large" fontWeight="medium">
+              {t("offense.coverage.heading")}
+            </FancyText>
+            <Card size="small">
+              <Flex direction="column" gap="large">
+                <div>
+                  <FancyLink to="/offense/coverage/">
+                    {t("offense.coverage.edit")}
+                  </FancyLink>{" "}
+                  ({listLengthFormatted})
+                </div>
+                <DexCoverage
+                  generation={generation}
+                  coverageTypes={coverageTypes ?? fallbackCoverageTypes}
+                  types={offenseTypes}
+                  isLoading={isLoading}
+                  offenseAbilities={abilities}
+                  specialMoves={specialMoves}
+                />
+              </Flex>
+            </Card>
+          </Flex>
+        ) : null}
       </Flex>
     </main>
   );
