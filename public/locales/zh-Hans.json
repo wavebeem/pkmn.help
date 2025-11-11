@@ -104,7 +104,6 @@
       "volt_absorb": "蓄电"
     },
     "mode": {
-      "heading": "选择模式",
       "solo": "单只模式",
       "team": "队伍模式"
     },

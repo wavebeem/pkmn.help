@@ -6,6 +6,8 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Más
 offense.chooseTypes,Choose attack move types,Elige los tipos
 offense.dealsXTo,{{ x }} damage,Inflige {{ x }} a
+offense.mode.combination,Combination,
+offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -74,7 +76,6 @@ defense.abilityNames.sap_sipper,Sap Sipper,Herbívoro
 defense.abilityNames.lightning_rod,Lightning Rod,Pararrayos
 defense.abilityNames.motor_drive,Motor Drive,Electromotor
 defense.abilityNames.volt_absorb,Volt Absorb,Absorbe electricidad
-defense.mode.heading,Choose mode,Elige un modo
 defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Equipo
 defense.team.tableHeading,Matchup counts,Recuento de enfrentamientos

@@ -6,11 +6,13 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mehr
 offense.chooseTypes,Choose attack move types,Typen auswählen
 offense.dealsXTo,{{ x }} damage,Fügt {{ x }} Schaden zu
-offense.matchups.summary.heading,Matchup summary,
-offense.matchups.summary.damage,Damage,
-offense.matchups.summary.combinations.heading,Combinations,
-offense.matchups.summary.combinations.empty,No types,
-offense.matchups.types.heading,Matchup types,
+offense.mode.combination,Combination,
+offense.mode.single,Single,
+offense.matchups.summary.heading,Matchup summary,Zusammenfassung der Paarungen
+offense.matchups.summary.damage,Damage,Schaden
+offense.matchups.summary.combinations.heading,Combinations,Kombinationen
+offense.matchups.summary.combinations.empty,No types,Keine Typen
+offense.matchups.types.heading,Matchup types,Typen der Paarungen
 offense.abilities.choose,Choose abilities,Fähigkeiten auswählen
 offense.specialMoves.choose,Choose special moves,Spezialattacke auswählen
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Gefriertrockner
@@ -74,7 +76,6 @@ defense.abilityNames.sap_sipper,Sap Sipper,Vegetarier
 defense.abilityNames.lightning_rod,Lightning Rod,Blitzfänger
 defense.abilityNames.motor_drive,Motor Drive,Starthilfe
 defense.abilityNames.volt_absorb,Volt Absorb,Voltabsorber
-defense.mode.heading,Choose mode,Modus auswählen
 defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Team
 defense.team.tableHeading,Matchup counts,Matchups
@@ -103,8 +104,8 @@ pokedex.pagination.previous,Prev,Zur
 pokedex.pagination.previousLong,Previous,Zurück
 pokedex.pagination.firstLong,First,Erste
 pokedex.pagination.lastLong,Last,Letzte
-pokedex.sorting.sortBy,Sort by,
-pokedex.sorting.auto,Auto,
+pokedex.sorting.sortBy,Sort by,Sortieren nach
+pokedex.sorting.auto,Auto,Automatisch
 pokedex.stats.hp,HP,HP
 pokedex.stats.hpLong,Hit Points,Kraftpunkte
 pokedex.stats.attack,Attack,Ang.
@@ -160,7 +161,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,Wertschätzung zeigen
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.","Ich habe unzählige Stunden damit verbracht, diese Seite zu verbessern. Wenn du schätzt, was ich gemacht habe, dann ziehe bitte in Betracht, an Wohltätigkeitsorganisationen zu spenden, die BIPOC und Transgender-Rechte unterstützen."
 more.thanks.heading,Credits,Besonderer Dank
-more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,Sieh dir in den <credits>Credits</credits> an wer mir bei der Webseite geholfen hat.
 more.openSource.heading,Open source,Offener Quellcode
 more.openSource.description,Source code is available on <github>GitHub</github>.,Der Quellcode ist auf <github>GitHub</github> verfügbar.
 more.legalInfo.heading,Legal info,Rechtliche Hinweise.
