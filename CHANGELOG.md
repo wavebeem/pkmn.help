@@ -2,9 +2,16 @@
 
 ## 2025-11-11
 
-TODO: Remove "defense.mode.heading"
+- The old offense calculator is back by popular demand
 
-- Added the old offense calculator back as an option
+- Designed a new tab bar interface for the Offense and Defense calculators
+
+- Made it easier to click the type buttons
+
+  - Previously any "drag" motion in the middle of clicking would cause the click
+    to not be registered
+
+- Reduced padding along the top of the site
 
 ## 2025-11-09
 
