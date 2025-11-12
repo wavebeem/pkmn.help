@@ -25,7 +25,7 @@
 
 .root > * {
   text-decoration: none;
-  padding: var(--padding1) var(--padding2);
+  padding: var(--padding1) var(--padding3);
   text-align: center;
   color: inherit;
   font-weight: var(--weight-medium);

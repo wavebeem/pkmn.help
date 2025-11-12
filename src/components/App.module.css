@@ -249,7 +249,7 @@
 
 .tab {
   text-decoration: none;
-  padding: var(--padding1) var(--padding2);
+  padding: var(--padding1) var(--padding3);
   text-align: center;
   border-radius: var(--border-radius2);
   background: var(--color-header-base);
