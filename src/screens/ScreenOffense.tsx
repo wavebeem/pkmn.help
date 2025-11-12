@@ -48,7 +48,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
   );
 
   useEffect(() => {
-    setOffenseTypes((types) => types.slice(0, typeLimit));
+    setOffenseTypes((types) => types.slice(-typeLimit));
   }, [typeLimit, setOffenseTypes]);
 
   useEffect(() => {

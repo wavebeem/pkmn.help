@@ -28,11 +28,25 @@ export function MultiTypeSelector({
       {types.map((type) => {
         const isChecked = value.includes(type);
         return (
-          <label
+          <button
+            onClick={() => {
+              const types = new Set(value);
+              if (isChecked) {
+                types.delete(type);
+              } else {
+                types.add(type);
+              }
+              let newValue = [...types];
+              if (limit) {
+                newValue = newValue.slice(-limit);
+              }
+              onChange(newValue);
+            }}
+            aria-pressed={isChecked}
             key={type}
             data-type={type}
             className={clsx(
-              styles.label,
+              styles.button,
               "select-none",
               isChecked && "focus-tab",
               !isChecked && "focus-simple",
@@ -43,28 +57,10 @@ export function MultiTypeSelector({
             })}
           >
             <Flex tag="span" gap="medium" justify="flex-start" align="center">
-              <input
-                name={type}
-                type="checkbox"
-                checked={isChecked}
-                className={clsx(styles.checkbox, "focus-none")}
-                onChange={() => {
-                  const types = new Set(value);
-                  if (isChecked) {
-                    types.delete(type);
-                  } else {
-                    types.add(type);
-                  }
-                  let newValue = [...types];
-                  if (limit) {
-                    newValue = newValue.slice(-limit);
-                  }
-                  onChange(newValue);
-                }}
-              />
+              <span className={styles.checkbox} />
               <span className={styles.text}>{t(`types.${type}`)}</span>
             </Flex>
-          </label>
+          </button>
         );
       })}
     </div>
