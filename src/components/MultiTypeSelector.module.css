@@ -18,17 +18,6 @@
   color: white;
 }
 
-.button[aria-pressed="false"]:focus-visible {
-  outline: 3px solid var(--color-fg1);
-  outline-offset: -1px;
-}
-
-.button[aria-pressed="true"]:focus-visible {
-  outline: 3px solid var(--color-fg1);
-  outline-offset: -1px;
-  box-shadow: inset 0 0 0 1px var(--color-bg1);
-}
-
 .button[aria-pressed="true"] .text {
   --_c: #0002;
   text-shadow:
@@ -119,4 +108,15 @@
   /* box-shadow:
     var(--checkbox-border),
     inset 0 0 0 6px var(--_bg); */
+}
+
+.button[aria-pressed="false"]:focus-visible {
+  outline: 3px solid var(--color-fg1);
+  outline-offset: -1px;
+}
+
+.button[aria-pressed="true"]:focus-visible {
+  outline: 3px solid var(--color-fg1);
+  outline-offset: -1px;
+  box-shadow: inset 0 0 0 1px var(--color-bg1);
 }
