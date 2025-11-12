@@ -26,9 +26,9 @@
 
 .focus-selected:focus-visible,
 .focus-selected:has(:focus-visible) {
-  outline: 2px solid var(--color-bg1);
+  outline: 3px solid var(--color-fg1);
   outline-offset: -2px;
-  box-shadow: 0 0 0 3px var(--color-fg1);
+  box-shadow: inset 0 0 0 1px var(--color-bg1);
 }
 
 .focus-none:focus {

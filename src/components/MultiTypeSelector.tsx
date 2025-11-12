@@ -45,12 +45,7 @@ export function MultiTypeSelector({
             aria-pressed={isChecked}
             key={type}
             data-type={type}
-            className={clsx(
-              styles.button,
-              "select-none",
-              isChecked && "focus-tab",
-              !isChecked && "focus-simple",
-            )}
+            className={clsx(styles.button, "select-none")}
             style={customProperties({
               "--type-color-bg": typeColorBG(type),
               "--type-color": typeColor(type),
