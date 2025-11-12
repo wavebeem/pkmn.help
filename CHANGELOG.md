@@ -1,5 +1,18 @@
 # Changelog
 
+## 2025-11-11
+
+- The old offense calculator is back by popular demand
+
+- Designed a new tab bar interface for the Offense and Defense calculators
+
+- Made it easier to click the type buttons
+
+  - Previously any "drag" motion in the middle of clicking would cause the click
+    to not be registered
+
+- Various style changes (padding, colors, roundedness...)
+
 ## 2025-11-09
 
 - Completely redesigned the Offense calculator to work with type combinations

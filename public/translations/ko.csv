@@ -6,6 +6,8 @@ navigation.pokedex,Pokédex,포켓몬 도감
 navigation.more,More,더보기
 offense.chooseTypes,Choose attack move types,타입 선택
 offense.dealsXTo,{{ x }} damage,{{x}} 데미지
+offense.mode.combination,Combination,
+offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -74,7 +76,6 @@ defense.abilityNames.sap_sipper,Sap Sipper,흡수
 defense.abilityNames.lightning_rod,Lightning Rod,피뢰침
 defense.abilityNames.motor_drive,Motor Drive,전기엔진
 defense.abilityNames.volt_absorb,Volt Absorb,축전
-defense.mode.heading,Choose mode,배틀 룰 선택
 defense.mode.solo,Solo,싱글
 defense.mode.team,Team,더블
 defense.team.tableHeading,Matchup counts,매치업 카운트

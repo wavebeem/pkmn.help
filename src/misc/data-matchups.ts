@@ -434,14 +434,19 @@ export function offensiveMatchups({
   offenseTypes,
   specialMoves,
   offenseAbilities,
+  kind,
 }: {
   gen: Generation;
   offenseTypes: readonly Type[];
   specialMoves: readonly SpecialMove[];
   offenseAbilities: readonly AbilityName[];
+  kind: "single" | "combination";
 }): GroupedMatchups {
   const types = typesForGeneration(gen).filter((t) => t !== Type.stellar);
-  const typePairs = makeTypePairs(types);
+  const typePairs =
+    kind === "combination"
+      ? makeTypePairs(types)
+      : types.map((t) => [t, Type.none]);
   const matchups = typePairs.map(([t1, t2]) => {
     let moves: readonly (SpecialMove | undefined)[] = specialMoves;
     if (moves.length === 0) {

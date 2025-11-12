@@ -5,13 +5,18 @@ import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { Badge } from "../components/Badge";
 import { Button } from "../components/Button";
+import { Card } from "../components/Card";
 import { CopyButton } from "../components/CopyButton";
 import { DefenseTabs } from "../components/DefenseTabs";
+import { Divider } from "../components/Divider";
+import { EmptyState } from "../components/EmptyState";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { MatchupsTeam, MatchupsTeamProps } from "../components/MatchupsTeam";
-import { Select } from "../components/Select";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
+import { Select } from "../components/Select";
+import { SelectDivider } from "../components/SelectDivider";
+import { useGeneration } from "../hooks/useGeneration";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
@@ -20,18 +25,13 @@ import {
   Type,
   abilities,
   abilityNameFromString,
-  removeInvalidDefenseTypesForGeneration,
   normalizeTypes,
+  removeInvalidDefenseTypesForGeneration,
   typesFromString,
   typesWithoutNone,
 } from "../misc/data-types";
 import { updateArrayAt } from "../misc/updateArrayAt";
 import styles from "./ScreenDefenseTeam.module.css";
-import { EmptyState } from "../components/EmptyState";
-import { Card } from "../components/Card";
-import { Divider } from "../components/Divider";
-import { useGeneration } from "../hooks/useGeneration";
-import { SelectDivider } from "../components/SelectDivider";
 
 function setAbilityAt({
   list,
@@ -179,14 +179,11 @@ export function ScreenDefenseTeam(): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
-      <Flex direction="column" gap="xlarge">
-        <Flex direction="column" gap="medium">
-          <FancyText tag="h2" fontSize="large" fontWeight="medium">
-            {t("defense.mode.heading")}
-          </FancyText>
-          <DefenseTabs />
-        </Flex>
+      <div className={styles.tabBar}>
+        <DefenseTabs />
+      </div>
 
+      <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="large">
           <Flex direction="column" gap="medium">
             <FancyText tag="h2" fontSize="large" fontWeight="medium">

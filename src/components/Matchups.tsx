@@ -22,7 +22,7 @@ import { Card } from "./Card";
 import { EmptyState } from "./EmptyState";
 
 interface MatchupsProps {
-  kind: "offense" | "defense";
+  kind: "offense-single" | "offense-combination" | "defense";
   generation: Generation;
   types: Type[];
   teraType: Type;
@@ -42,12 +42,13 @@ export function Matchups({
 }: MatchupsProps): ReactNode {
   const { t, i18n } = useTranslation();
   let matchups: GroupedMatchups;
-  if (kind === "offense") {
+  if (kind === "offense-single" || kind === "offense-combination") {
     matchups = offensiveMatchups({
       gen: generation,
       offenseTypes: types,
       specialMoves,
       offenseAbilities,
+      kind: kind === "offense-combination" ? "combination" : "single",
     });
     if (types.includes(Type.stellar)) {
       matchups.matchups.unshift({
@@ -73,7 +74,7 @@ export function Matchups({
     return value.toLocaleString(i18n.languages);
   }
 
-  if (kind === "offense") {
+  if (kind === "offense-combination") {
     return (
       <div id={`matchup-${kind}`}>
         <Flex direction="column" gap="xlarge">
@@ -231,7 +232,9 @@ export function Matchups({
                       </PlainBadge>
                     );
                   }
-                  return x.types.map((t) => {
+                  const displayTypes =
+                    kind === "offense-single" ? x.types.slice(0, 1) : x.types;
+                  return displayTypes.map((t) => {
                     return <Badge key={`type-${t}`} type={t} />;
                   });
                 })}

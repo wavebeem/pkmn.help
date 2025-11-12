@@ -13,7 +13,7 @@ export function Meter({
   value,
   max,
   color = "var(--color-fg3)",
-  background = "var(--color-border3)",
+  background = "var(--color-bg-ghost)",
 }: MeterProps): ReactNode {
   const vars = customProperties({
     "--meter-color": color,

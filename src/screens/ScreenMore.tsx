@@ -48,23 +48,25 @@ export function ScreenMore(): ReactNode {
     <main className="content-narrow center">
       <Flex direction="column" padding="large">
         <Flex direction="column">
-          <Flex padding="medium" />
           {needsAppUpdate && (
-            <Card>
-              <Flex gap="medium" align="center">
-                <Flex direction="column" flex="auto">
-                  <FancyText tag="span" fontSize="large" fontWeight="medium">
-                    {t("banners.updateReady.description")}
-                  </FancyText>
-                  <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
-                    {t("banners.updateReady.whatsNew")}
-                  </ExternalLink>
+            <>
+              <Flex padding="medium" />
+              <Card>
+                <Flex gap="medium" align="center">
+                  <Flex direction="column" flex="auto">
+                    <FancyText tag="span" fontSize="large" fontWeight="medium">
+                      {t("banners.updateReady.description")}
+                    </FancyText>
+                    <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
+                      {t("banners.updateReady.whatsNew")}
+                    </ExternalLink>
+                  </Flex>
+                  <Button type="button" onClick={updateApp}>
+                    {t("banners.updateReady.update")}
+                  </Button>
                 </Flex>
-                <Button type="button" onClick={updateApp}>
-                  {t("banners.updateReady.update")}
-                </Button>
-              </Flex>
-            </Card>
+              </Card>
+            </>
           )}
           <CollapsibleSection
             initiallyOpen
@@ -469,8 +471,8 @@ export function ScreenMore(): ReactNode {
           <Divider />
           <Flex padding="medium" />
           <div aria-hidden="true">
-            (ノ^_^)ノ Have you tried pressing the Pokéball button at the top of
-            the page?
+            <span aria-hidden="true">(ノ^_^)ノ</span> Have you tried pressing
+            the Pokéball button at the top of the page?
           </div>
         </Flex>
       </Flex>

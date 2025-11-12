@@ -20,6 +20,7 @@ for (const type of Types.types) {
             offenseAbilities: [],
             offenseTypes: [type],
             specialMoves: compact([specialMove]),
+            kind: "combination",
           });
           expect(result.toTestFormat()).toMatchSnapshot();
         });
@@ -34,6 +35,7 @@ for (const type of Types.types) {
             offenseAbilities: [abilityName],
             offenseTypes: [type],
             specialMoves: [],
+            kind: "combination",
           });
           expect(result.toTestFormat()).toMatchSnapshot();
         });

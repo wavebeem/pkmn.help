@@ -24,47 +24,38 @@ export function MultiTypeSelector({
   const { t } = useTranslation();
   const types = typesForGeneration(generation);
   return (
-    <div className="columns-type-selector">
+    <div className="columns-type-selector" data-limit={limit}>
       {types.map((type) => {
         const isChecked = value.includes(type);
         return (
-          <label
+          <button
+            onClick={() => {
+              const types = new Set(value);
+              if (isChecked) {
+                types.delete(type);
+              } else {
+                types.add(type);
+              }
+              let newValue = [...types];
+              if (limit) {
+                newValue = newValue.slice(-limit);
+              }
+              onChange(newValue);
+            }}
+            aria-pressed={isChecked}
             key={type}
             data-type={type}
-            className={clsx(
-              styles.label,
-              "select-none",
-              isChecked && "focus-tab",
-              !isChecked && "focus-simple",
-            )}
+            className={clsx(styles.button, "select-none")}
             style={customProperties({
               "--type-color-bg": typeColorBG(type),
               "--type-color": typeColor(type),
             })}
           >
             <Flex tag="span" gap="medium" justify="flex-start" align="center">
-              <input
-                name={type}
-                type="checkbox"
-                checked={isChecked}
-                className={clsx(styles.checkbox, "focus-none")}
-                onChange={() => {
-                  const types = new Set(value);
-                  if (isChecked) {
-                    types.delete(type);
-                  } else {
-                    types.add(type);
-                  }
-                  let newValue = [...types];
-                  if (limit) {
-                    newValue = newValue.slice(-limit);
-                  }
-                  onChange(newValue);
-                }}
-              />
+              <span className={styles.checkbox} />
               <span className={styles.text}>{t(`types.${type}`)}</span>
             </Flex>
-          </label>
+          </button>
         );
       })}
     </div>

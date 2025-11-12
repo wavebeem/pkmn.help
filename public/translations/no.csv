@@ -6,6 +6,8 @@ navigation.pokedex,Pokédex,Pokédexen
 navigation.more,More,Mer
 offense.chooseTypes,Choose attack move types,Velg typer
 offense.dealsXTo,{{ x }} damage,Gjør {{ x }} til
+offense.mode.combination,Combination,
+offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -74,7 +76,6 @@ defense.abilityNames.sap_sipper,Sap Sipper,Sevjedrikker
 defense.abilityNames.lightning_rod,Lightning Rod,Lynavleder
 defense.abilityNames.motor_drive,Motor Drive,Motordrift
 defense.abilityNames.volt_absorb,Volt Absorb,Voltabsorberende
-defense.mode.heading,Choose mode,Velg modus
 defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Lag
 defense.team.tableHeading,Matchup counts,Matchup teller

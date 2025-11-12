@@ -6,12 +6,13 @@ import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "../components/CopyButton";
 import { Divider } from "../components/Divider";
 import { EmptyState } from "../components/EmptyState";
+import { FancyLink } from "../components/FancyLink";
 import { Flex } from "../components/Flex";
 import { Monster } from "../components/Monster";
-import { Padding } from "../components/Padding";
 import { Paginator } from "../components/Paginator";
 import { Search } from "../components/Search";
 import { Select } from "../components/Select";
+import { SelectDivider } from "../components/SelectDivider";
 import { Spinner } from "../components/Spinner";
 import { useAppContext } from "../hooks/useAppContext";
 import { useSearch } from "../hooks/useSearch";
@@ -20,8 +21,6 @@ import { Type, typesFromUserInput } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { pickTranslation } from "../misc/pickTranslation";
 import styles from "./ScreenPokedex.module.css";
-import { FancyLink } from "../components/FancyLink";
-import { SelectDivider } from "../components/SelectDivider";
 
 export function ScreenPokedex(): ReactNode {
   const { allPokemon, isLoading } = useAppContext();
@@ -121,7 +120,6 @@ export function ScreenPokedex(): ReactNode {
   return (
     <main className="center content-wide">
       <Flex direction="column" gap="large" padding="large">
-        <Padding size="small" />
         <div className={styles.searchArea}>
           <Search
             label={t("pokedex.search.description")}

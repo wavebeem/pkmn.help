@@ -9,6 +9,10 @@
   "offense": {
     "chooseTypes": "Choose attack move types",
     "dealsXTo": "{{ x }} damage",
+    "mode": {
+      "combination": "Combination",
+      "single": "Single"
+    },
     "matchups": {
       "summary": {
         "heading": "Matchup summary",
@@ -118,7 +122,6 @@
       "volt_absorb": "Volt Absorb"
     },
     "mode": {
-      "heading": "Choose mode",
       "solo": "Solo",
       "team": "Team"
     },

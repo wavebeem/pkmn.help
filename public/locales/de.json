@@ -9,6 +9,19 @@
   "offense": {
     "chooseTypes": "Typen auswählen",
     "dealsXTo": "Fügt {{ x }} Schaden zu",
+    "matchups": {
+      "summary": {
+        "heading": "Zusammenfassung der Paarungen",
+        "damage": "Schaden",
+        "combinations": {
+          "heading": "Kombinationen",
+          "empty": "Keine Typen"
+        }
+      },
+      "types": {
+        "heading": "Typen der Paarungen"
+      }
+    },
     "abilities": {
       "choose": "Fähigkeiten auswählen"
     },
@@ -75,6 +88,7 @@
     "back": "Zurück zum Angriff"
   },
   "defense": {
+    "chooseTypes": "Typen auswählen",
     "takesXFrom": "Nimmt {{ x }} Schaden von",
     "chooseAbility": "Fähigkeit auswählen",
     "chooseTeraType": "Tera-Typ auswählen",
@@ -104,7 +118,6 @@
       "volt_absorb": "Voltabsorber"
     },
     "mode": {
-      "heading": "Modus auswählen",
       "solo": "Solo",
       "team": "Team"
     },
@@ -121,8 +134,7 @@
       "type": "Typ",
       "edit": "Editiere",
       "remove": "Entfernen"
-    },
-    "chooseTypes": "Typen auswählen"
+    }
   },
   "pokedex": {
     "search": {
@@ -150,6 +162,10 @@
       "previousLong": "Zurück",
       "firstLong": "Erste",
       "lastLong": "Letzte"
+    },
+    "sorting": {
+      "sortBy": "Sortieren nach",
+      "auto": "Automatisch"
     },
     "stats": {
       "hp": "HP",
@@ -250,7 +266,8 @@
       "description": "Ich habe unzählige Stunden damit verbracht, diese Seite zu verbessern. Wenn du schätzt, was ich gemacht habe, dann ziehe bitte in Betracht, an Wohltätigkeitsorganisationen zu spenden, die BIPOC und Transgender-Rechte unterstützen."
     },
     "thanks": {
-      "heading": "Besonderer Dank"
+      "heading": "Besonderer Dank",
+      "description": "Sieh dir in den <credits>Credits</credits> an wer mir bei der Webseite geholfen hat."
     },
     "openSource": {
       "heading": "Offener Quellcode",
