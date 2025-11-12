@@ -11,7 +11,7 @@
   - Previously any "drag" motion in the middle of clicking would cause the click
     to not be registered
 
-- Reduced padding along the top of the site
+- Various style changes (padding, colors, roundedness...)
 
 ## 2025-11-09
 
