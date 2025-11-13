@@ -55,6 +55,7 @@
 
 ## German translation
 
+- Robin
 - Enri
 - SpeciesSaladMallory
 - Cozzzy

@@ -221,7 +221,9 @@ export function Matchups({
           return (
             <Flex direction="column" gap="medium" key={i}>
               <FancyText tag="h2" fontWeight="medium" fontSize="large">
-                {t("defense.takesXFrom", { x: effectivenessDisplay })}
+                {kind === "offense-single"
+                  ? t("offense.dealsXTo", { x: effectivenessDisplay })
+                  : t("defense.takesXFrom", { x: effectivenessDisplay })}
               </FancyText>
               <div className={clsx(styles.grid)} data-kind={kind}>
                 {list.map((x) => {

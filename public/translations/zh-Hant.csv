@@ -5,7 +5,7 @@ navigation.defense,Defense,防禦
 navigation.pokedex,Pokédex,寶可夢圖鑑
 navigation.more,More,更多
 offense.chooseTypes,Choose attack move types,選擇屬性
-offense.dealsXTo,{{ x }} damage,對 {{ x }} 造成傷害
+offense.dealsXTo,Deals {{ x }} damage to these types,對 {{ x }} 造成傷害
 offense.mode.combination,Combination,
 offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,

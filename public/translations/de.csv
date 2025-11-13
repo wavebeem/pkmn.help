@@ -5,9 +5,9 @@ navigation.defense,Defense,Verteidigung
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mehr
 offense.chooseTypes,Choose attack move types,Typen auswählen
-offense.dealsXTo,{{ x }} damage,Fügt {{ x }} Schaden zu
-offense.mode.combination,Combination,
-offense.mode.single,Single,
+offense.dealsXTo,Deals {{ x }} damage to these types,Fügt {{ x }} Schaden zu
+offense.mode.combination,Combination,Kombination
+offense.mode.single,Single,Einzeln
 offense.matchups.summary.heading,Matchup summary,Zusammenfassung der Paarungen
 offense.matchups.summary.damage,Damage,Schaden
 offense.matchups.summary.combinations.heading,Combinations,Kombinationen

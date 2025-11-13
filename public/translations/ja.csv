@@ -5,7 +5,7 @@ navigation.defense,Defense,デフェンス
 navigation.pokedex,Pokédex,ポケモンずかん
 navigation.more,More,その他
 offense.chooseTypes,Choose attack move types,複数のタイプを選択
-offense.dealsXTo,{{ x }} damage,{{ x }}を与える
+offense.dealsXTo,Deals {{ x }} damage to these types,{{ x }}を与える
 offense.mode.combination,Combination,
 offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,

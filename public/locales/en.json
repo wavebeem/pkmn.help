@@ -8,7 +8,7 @@
   },
   "offense": {
     "chooseTypes": "Choose attack move types",
-    "dealsXTo": "{{ x }} damage",
+    "dealsXTo": "Deals {{ x }} damage to these types",
     "mode": {
       "combination": "Combination",
       "single": "Single"

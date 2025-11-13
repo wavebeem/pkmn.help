@@ -9,6 +9,10 @@
   "offense": {
     "chooseTypes": "Typen auswählen",
     "dealsXTo": "Fügt {{ x }} Schaden zu",
+    "mode": {
+      "combination": "Kombination",
+      "single": "Einzeln"
+    },
     "matchups": {
       "summary": {
         "heading": "Zusammenfassung der Paarungen",

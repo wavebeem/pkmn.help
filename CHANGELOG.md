@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025-11-12
+
+- Fixed a bug where the wrong text was being used in the Solo Offense calculator
+
+- Updated German translation
+
 ## 2025-11-11
 
 - The old offense calculator is back by popular demand

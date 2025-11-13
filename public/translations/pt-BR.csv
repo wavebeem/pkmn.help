@@ -5,7 +5,7 @@ navigation.defense,Defense,Defesa
 navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Mais
 offense.chooseTypes,Choose attack move types,Escolher tipos
-offense.dealsXTo,{{ x }} damage,Causa {{ x }} mais dano contra
+offense.dealsXTo,Deals {{ x }} damage to these types,Causa {{ x }} mais dano contra
 offense.mode.combination,Combination,
 offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
