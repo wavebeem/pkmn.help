@@ -35,7 +35,8 @@ export type ScreenOffenseProps = {
 };
 
 export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
-  const typeLimit = mode === "single" ? 1 : Infinity;
+  const typeLimit = Infinity;
+  // const typeLimit = mode === "single" ? 1 : Infinity;
 
   const { coverageTypes, fallbackCoverageTypes, isLoading } = useAppContext();
   const [generation] = useGeneration();

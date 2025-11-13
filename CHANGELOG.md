@@ -1,5 +1,14 @@
 # Changelog
 
+## 2025-11-13
+
+- Updated French translation
+
+- Removed the single type input limit on the Single Offense calculator
+
+  - I still think this calculator is weird, but in the interest of keeping
+    things that people were enjoying, this is back in its original form now
+
 ## 2025-11-12
 
 - Fixed a bug where the wrong text was being used in the Solo Offense calculator

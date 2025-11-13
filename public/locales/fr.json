@@ -9,6 +9,23 @@
   "offense": {
     "chooseTypes": "Choisissez les types",
     "dealsXTo": "Inflige {{ x }} à",
+    "mode": {
+      "combination": "Combinaison",
+      "single": "Solo"
+    },
+    "matchups": {
+      "summary": {
+        "heading": "Sommaire des match-ups",
+        "damage": "Dégâts",
+        "combinations": {
+          "heading": "Combinaisons",
+          "empty": "Aucun type"
+        }
+      },
+      "types": {
+        "heading": "Types de match-ups"
+      }
+    },
     "abilities": {
       "choose": "Choisissez le talent"
     },

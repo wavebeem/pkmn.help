@@ -6,13 +6,13 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.more,More,Autres
 offense.chooseTypes,Choose attack move types,Choisissez les types
 offense.dealsXTo,Deals {{ x }} damage to these types,Inflige {{ x }} à
-offense.mode.combination,Combination,
-offense.mode.single,Single,
-offense.matchups.summary.heading,Matchup summary,
-offense.matchups.summary.damage,Damage,
-offense.matchups.summary.combinations.heading,Combinations,
-offense.matchups.summary.combinations.empty,No types,
-offense.matchups.types.heading,Matchup types,
+offense.mode.combination,Combination,Combinaison
+offense.mode.single,Single,Solo
+offense.matchups.summary.heading,Matchup summary,Sommaire de smatch-ups
+offense.matchups.summary.damage,Damage,Dégâts
+offense.matchups.summary.combinations.heading,Combinations,Combinaisons
+offense.matchups.summary.combinations.empty,No types,Aucun type
+offense.matchups.types.heading,Matchup types,Types de match-ups
 offense.abilities.choose,Choose abilities,Choisissez le talent
 offense.specialMoves.choose,Choose special moves,Choisissez les attaques spéciales
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Lyophilisation
