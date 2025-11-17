@@ -6,6 +6,36 @@ import { saveJSON } from "../util.js";
 const API = process.env.API || "https://pokeapi.co/api/v2/";
 const DEST = "data";
 
+interface PokemonMoveNames {
+  name: string;
+  language: {
+    name: string;
+  };
+}
+
+export interface PokemonMoveAPI {
+  name: string;
+  names: PokemonMoveNames[];
+  type: { name: string };
+  power: number;
+  damage_class: { name: string };
+  learned_by_pokemon: { name: string }[];
+}
+
+export interface PokemonMoveSimple {
+  name: string;
+  names: Record<string, string>;
+  type: string;
+  power: number;
+  damage_class: string;
+  learned_by: string[];
+}
+
+export interface PokemonMoveBasic {
+  name: string;
+  url: string;
+}
+
 export interface PokemonSpeciesBasic {
   name: string;
   url: string;
@@ -137,10 +167,33 @@ function toObject<T, K extends string, V>({
   return obj;
 }
 
-export async function scrapePokeapi(): Promise<void> {
+export async function fetchMoves(): Promise<void> {
+  const moveList = await fetchPaginated<PokemonMoveBasic>(
+    new URL("move", API).toString(),
+    Number(process.env.LIMIT || "Infinity"),
+  );
+  const moves: PokemonMoveSimple[] = [];
+  for (const moveBasic of moveList) {
+    const move = await fetchJSON<PokemonMoveAPI>(moveBasic.url);
+    const { learned_by_pokemon, damage_class, name, names, power, type } = move;
+    moves.push({
+      name,
+      type: type.name,
+      power,
+      damage_class: damage_class.name,
+      names: Object.fromEntries(names.map((n) => [n.language.name, n.name])),
+      learned_by: learned_by_pokemon.map((x) => x.name),
+    });
+  }
+  saveJSON(path.resolve(DEST, "moves.json"), moves, {
+    indent: 2,
+  });
+}
+
+export async function fetchPokedex(): Promise<void> {
   const speciesList = await fetchPaginated<PokemonSpeciesBasic>(
     new URL("pokemon-species", API).toString(),
-    Number(process.env.LIMIT || "Infinity")
+    Number(process.env.LIMIT || "Infinity"),
   );
   const pokemonSimpleList: PokemonSimple[] = [];
   for (const species of speciesList) {
