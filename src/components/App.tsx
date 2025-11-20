@@ -106,7 +106,7 @@ function useTranslationsWithBlankFallback() {
 }
 
 export function Layout(): ReactNode {
-  const tabClass = clsx(styles.tab, "active-darken focus-header");
+  const tabClass = clsx(styles.tab, "active-darken-background focus-header");
 
   // Service worker
   const {

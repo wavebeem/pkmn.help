@@ -72,6 +72,7 @@ export function ScreenAbout(): ReactNode {
           <Divider />
 
           <CollapsibleSection
+            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.changes.heading")}
@@ -93,6 +94,7 @@ export function ScreenAbout(): ReactNode {
           <Divider />
 
           <CollapsibleSection
+            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.help.heading")}
@@ -114,6 +116,7 @@ export function ScreenAbout(): ReactNode {
           <Divider />
 
           <CollapsibleSection
+            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.privacy.heading")}
@@ -135,6 +138,7 @@ export function ScreenAbout(): ReactNode {
           <Divider />
 
           <CollapsibleSection
+            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.givingBack.heading")}
@@ -147,6 +151,7 @@ export function ScreenAbout(): ReactNode {
           <Divider />
 
           <CollapsibleSection
+            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.thanks.heading")}
@@ -168,6 +173,7 @@ export function ScreenAbout(): ReactNode {
           <Divider />
 
           <CollapsibleSection
+            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.openSource.heading")}
@@ -189,6 +195,7 @@ export function ScreenAbout(): ReactNode {
           <Divider />
 
           <CollapsibleSection
+            initiallyOpen
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.legalInfo.heading")}

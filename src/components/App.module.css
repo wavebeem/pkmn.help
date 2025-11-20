@@ -1,5 +1,12 @@
 .root {
   flex: auto;
+  display: grid;
+  gap: 0;
+
+  grid-template-areas:
+    "header"
+    "sidebar"
+    "content";
 }
 
 .header {
@@ -309,13 +316,11 @@
 
 @media (width >= 60rem) {
   .root {
-    display: grid;
     grid-template-areas:
       "header header"
       "sidebar content";
     grid-template-columns: 25ch 1fr;
     grid-template-rows: auto 1fr;
-    gap: 0;
   }
 
   .content {
