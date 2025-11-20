@@ -11,28 +11,36 @@ something. */
   --color-bg1: hsl(var(--hue-blue) 10% 100%);
   --color-bg2: hsl(var(--hue-blue) 10% 90%);
   --color-bg-ghost: hsl(var(--hue-blue) 10% 100% / 50%);
+
   --color-card-bg: hsl(var(--hue-blue) 10% 94%);
   --color-card-highlight: hsl(var(--hue-blue) 10% 100%);
   --color-card-shadow: hsl(var(--hue-blue) 10% 80%);
+
   --color-fg1: hsl(var(--hue-blue) 15% 7%);
   --color-fg2: hsl(var(--hue-blue) 15% 20%);
   --color-fg3: hsl(var(--hue-blue) 15% 40%);
   --color-fg4: hsl(var(--hue-blue) 15% 60%);
+
   --color-accent-bg: hsl(var(--hue-blue) 15% 20%);
   --color-accent-fg: hsl(var(--hue-blue) 5% 100%);
+
+  --color-header-border: hsl(var(--hue-red) 80% 30%);
   --color-header-dark: hsl(var(--hue-red) 80% 30%);
   --color-header-base: hsl(var(--hue-red) 80% 40%);
   --color-header-highlight: hsl(var(--hue-red) 50% 65%);
   --color-header-text: #fff;
-  --color-header-border: hsl(var(--hue-red) 80% 30%);
+
   --color-button1: hsl(var(--hue-blue) 10% 100%);
   --color-button1b: hsl(var(--hue-blue) 10% 96%);
+
   --color-link: hsl(var(--hue-blue) 100% 50%);
+
   --color-border1: hsl(var(--hue-blue) 10% 50%);
   --color-border2: hsl(var(--hue-blue) 10% 70%);
   --color-border3: hsl(var(--hue-blue) 10% 80%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 0% / 20%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 0% / 60%);
+
   --color-scroll-fg: hsl(var(--hue-blue) 10% 20%);
   --color-scroll-bg: hsl(var(--hue-blue) 10% 85%);
 

@@ -3,6 +3,7 @@ import { ReactNode, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
+import { Card } from "../components/Card";
 import {
   CheckboxGroup,
   CheckboxGroupOption,
@@ -27,8 +28,6 @@ import {
   typesFromString,
 } from "../misc/data-types";
 import styles from "./ScreenOffense.module.css";
-import { Card } from "../components/Card";
-import { OffenseTabs } from "../components/OffenseTabs";
 
 export type ScreenOffenseProps = {
   mode: "combination" | "single";

@@ -3,7 +3,9 @@ title,Pokémon Type Calculator,Покемон Тип Калькуляторы
 navigation.offense,Offense,Шабуыл
 navigation.defense,Defense,Қорғаныс
 navigation.pokedex,Pokédex,Покедекс
-navigation.more,More,Тағы
+navigation.other,Other,
+navigation.settings,Settings,
+navigation.about,About,
 offense.chooseTypes,Choose attack move types,Типтер Таңдау
 offense.dealsXTo,Deals {{ x }} damage to these types,{{ x }} келтіреді
 offense.mode.combination,Combination,

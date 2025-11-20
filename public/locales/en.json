@@ -4,7 +4,9 @@
     "offense": "Offense",
     "defense": "Defense",
     "pokedex": "Pokédex",
-    "more": "More"
+    "other": "Other",
+    "settings": "Settings",
+    "about": "About"
   },
   "offense": {
     "chooseTypes": "Choose attack move types",

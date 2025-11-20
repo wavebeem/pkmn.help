@@ -23,14 +23,15 @@ import { detectLanguage } from "../misc/detectLanguage";
 import { formatPokemonName } from "../misc/formatPokemonName";
 import { randomItem } from "../misc/random";
 import { publicPath } from "../misc/settings";
+import { ScreenAbout } from "../screens/ScreenAbout";
 import { ScreenCoverageList } from "../screens/ScreenCoverageList";
 import { ScreenDefense } from "../screens/ScreenDefense";
 import { ScreenDefenseTeam } from "../screens/ScreenDefenseTeam";
 import { ScreenError } from "../screens/ScreenError";
-import { ScreenMore } from "../screens/ScreenMore";
 import { ScreenOffense } from "../screens/ScreenOffense";
 import { ScreenPokedex } from "../screens/ScreenPokedex";
 import { ScreenPokedexHelp } from "../screens/ScreenPokedexHelp";
+import { ScreenSettings } from "../screens/ScreenSettings";
 import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
 import styles from "./App.module.css";
 import { Crash } from "./Crash";
@@ -82,7 +83,8 @@ const router = createBrowserRouter([
           { path: "help", element: <ScreenPokedexHelp /> },
         ],
       },
-      { path: "more", element: <ScreenMore /> },
+      { path: "about", element: <ScreenAbout /> },
+      { path: "settings", element: <ScreenSettings /> },
       { path: "_error", element: <Crash /> },
       { path: "*", element: <Navigate replace to="/defense/" /> },
     ],
@@ -269,11 +271,15 @@ export function Layout(): ReactNode {
             <NavLink className={tabClass} end to="/pokedex/">
               {t("navigation.pokedex")}
             </NavLink>
+            <NavLink className={clsx(tabClass)} end to="/settings/">
+              {t("navigation.settings")}
+            </NavLink>
             <NavLink
               className={clsx(tabClass, needRefresh && styles.pleaseUpdate)}
-              to="/more/"
+              end
+              to="/about/"
             >
-              {t("navigation.more")}
+              {t("navigation.about")}
             </NavLink>
           </nav>
         </aside>

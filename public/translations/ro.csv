@@ -3,7 +3,9 @@ title,Pokémon Type Calculator,Calculator pentru tipurile Pokémoni-lor
 navigation.offense,Offense,Atac
 navigation.defense,Defense,Protecție
 navigation.pokedex,Pokédex,Pokédex
-navigation.more,More,Mai mult
+navigation.other,Other,
+navigation.settings,Settings,
+navigation.about,About,
 offense.chooseTypes,Choose attack move types,Alege tipuri
 offense.dealsXTo,Deals {{ x }} damage to these types,Oferte {{ x }} spre
 offense.mode.combination,Combination,

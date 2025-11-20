@@ -3,7 +3,9 @@ title,Pokémon Type Calculator,Pokémon Type Rekenmachine
 navigation.offense,Offense,Offensief
 navigation.defense,Defense,Defensief
 navigation.pokedex,Pokédex,Pokédex
-navigation.more,More,Meer
+navigation.other,Other,
+navigation.settings,Settings,
+navigation.about,About,
 offense.chooseTypes,Choose attack move types,Kies Types
 offense.dealsXTo,Deals {{ x }} damage to these types,Deelt {{ x }} schade aan
 offense.mode.combination,Combination,
