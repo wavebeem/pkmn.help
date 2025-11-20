@@ -102,7 +102,7 @@
   display: flex;
   flex-direction: column;
   gap: var(--padding3);
-  padding: var(--padding3);
+  padding: var(--padding2);
 }
 
 @media (width >= 60rem) {
@@ -281,7 +281,7 @@
   text-decoration: none;
   padding: var(--padding2) var(--padding4);
   text-align: start;
-  /* border-radius: var(--border-radius2); */
+  border-radius: 0 var(--border-radius-pill) var(--border-radius-pill) 0;
   /* background: var(--color-header-base);
   color: var(--color-fg1); */
   color: inherit;
@@ -327,16 +327,9 @@
     border-top-left-radius: var(--border-radius3);
   }
 
-  .header {
-    padding: var(--padding3);
-  }
-
-  .headerContent {
-    padding: 0;
-  }
-
   .tabBar {
     padding: 0;
+    padding-right: var(--padding2);
   }
 
   .tab {
