@@ -298,6 +298,11 @@
   /* font-size: var(--font-size1); */
 }
 
+.tab:has(+ .tab[aria-current="page"]) {
+  border-color: transparent;
+  border-image-source: none;
+}
+
 .tab[aria-current="page"] {
   /* border-color: transparent; */
   background: var(--color-header-text);
