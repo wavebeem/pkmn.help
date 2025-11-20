@@ -94,10 +94,6 @@ export function ScreenDefense(): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
-      <div className={styles.tabBar}>
-        <DefenseTabs />
-      </div>
-
       <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="medium">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">

@@ -247,26 +247,39 @@ export function Layout(): ReactNode {
                 {t("title")}
               </NavLink>
             </h1>
-            <nav className={styles.tabBar}>
-              <NavLink className={tabClass} to="/offense/">
-                {t("navigation.offense")}
-              </NavLink>
-              <NavLink className={tabClass} to="/defense/">
-                {t("navigation.defense")}
-              </NavLink>
-              <NavLink className={tabClass} to="/pokedex/">
-                {t("navigation.pokedex")}
-              </NavLink>
-              <NavLink
-                className={clsx(tabClass, needRefresh && styles.pleaseUpdate)}
-                to="/more/"
-              >
-                {t("navigation.more")}
-              </NavLink>
-            </nav>
           </div>
         </header>
-        <Outlet />
+        <aside className={styles.sidebar}>
+          <nav className={styles.tabBar}>
+            <span className={styles.tabSection}>{t("navigation.offense")}</span>
+            <NavLink className={tabClass} end to="/offense/">
+              {t("offense.mode.combination")}
+            </NavLink>
+            <NavLink className={tabClass} end to="/offense/single/">
+              {t("offense.mode.single")}
+            </NavLink>
+            <span className={styles.tabSection}>{t("navigation.defense")}</span>
+            <NavLink className={tabClass} end to="/defense/">
+              {t("defense.mode.solo")}
+            </NavLink>
+            <NavLink className={tabClass} end to="/defense/team/">
+              {t("defense.mode.team")}
+            </NavLink>
+            <span className={styles.tabSection}>{t("navigation.other")}</span>
+            <NavLink className={tabClass} end to="/pokedex/">
+              {t("navigation.pokedex")}
+            </NavLink>
+            <NavLink
+              className={clsx(tabClass, needRefresh && styles.pleaseUpdate)}
+              to="/more/"
+            >
+              {t("navigation.more")}
+            </NavLink>
+          </nav>
+        </aside>
+        <div className={styles.content}>
+          <Outlet />
+        </div>
       </div>
     </AppContextProvider>
   );
