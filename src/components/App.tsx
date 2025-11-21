@@ -43,7 +43,6 @@ import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
 import styles from "./App.module.css";
 import { Crash } from "./Crash";
 import { MonsterImage } from "./MonsterImage";
-import { useSearch } from "../hooks/useSearch";
 
 const router = createBrowserRouter([
   {
