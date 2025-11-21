@@ -7,16 +7,46 @@
     "header"
     "sidebar"
     "content";
+
+  background: var(--color-header-base);
+  color: var(--color-header-text);
+  text-shadow:
+    0 0 1px hsl(0 0% 0% / 25%),
+    0 1px 4px hsl(0 0% 0% / 30%);
+}
+
+.menuButton {
+  border: 1px solid var(--color-header-highlight);
+  padding: var(--padding1) var(--padding3);
+  background: transparent;
+  color: inherit;
+  border-radius: var(--border-radius-pill);
+}
+
+@media (width >= 60rem) {
+  .menuButton {
+    display: none;
+  }
+}
+
+@media (width < 60rem) {
+  :has(.menuButton[aria-pressed="false"]) .sidebar {
+    display: none;
+  }
+
+  :has(.menuButton[aria-pressed="false"]) .content {
+    border-top-left-radius: 0;
+  }
+
+  :has(.menuButton[aria-pressed="true"]) .content {
+    display: none;
+  }
 }
 
 .header {
   grid-area: header;
   margin: 0;
-  border-bottom: 1px solid var(--color-header-border);
 
-  text-shadow:
-    0 0 1px hsl(0 0% 0% / 25%),
-    0 1px 4px hsl(0 0% 0% / 30%);
   display: flex;
   flex-direction: column;
   gap: var(--padding3);
@@ -28,10 +58,9 @@
   grid-area: sidebar;
   margin: 0;
   border: 0;
-  border-bottom: 1px solid var(--color-header-border);
   background: var(--color-header-base);
   color: var(--color-header-text);
-  padding-bottom: var(--padding2);
+  padding-bottom: var(--padding4);
 }
 
 .content {
@@ -39,12 +68,17 @@
   text-shadow: none;
   color: var(--color-fg1);
   background: var(--color-bg2);
+
+  box-shadow:
+    0 0 0 1px var(--color-header-border),
+    var(--shadow-sidebar);
 }
 
 .tabBar {
   /* gap: var(--padding2); */
   flex-wrap: wrap;
   display: grid;
+  padding-right: var(--padding2);
   /* grid-template-columns: repeat(2, 1fr); */
   /* justify-content: center; */
 }
@@ -100,16 +134,29 @@
 .headerContent {
   width: 100%;
   display: flex;
-  flex-direction: column;
   gap: var(--padding3);
   padding: var(--padding3);
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+@media (width < 60rem) {
+  .header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    border-bottom: 1px solid var(--color-header-border);
+  }
+
+  .tabBar {
+  }
 }
 
 @media (width >= 60rem) {
   .headerContent {
+    gap: var(--padding2);
+    padding: var(--padding2);
     align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
     max-width: initial;
   }
 }
@@ -168,10 +215,15 @@
 
 .pokeball {
   --color-top1: hsl(var(--hue-blue) 30% 100%);
+  --color-top2: hsl(var(--hue-blue) 30% 95%);
+  --color-bottom1: hsl(var(--hue-blue) 30% 95%);
+  --color-bottom2: hsl(var(--hue-blue) 30% 90%);
+  --color-border: hsl(var(--hue-red) 90% 30%);
+  /* --color-top1: hsl(var(--hue-blue) 30% 100%);
   --color-top2: hsl(var(--hue-blue) 30% 90%);
   --color-bottom1: hsl(var(--hue-blue) 30% 90%);
   --color-bottom2: hsl(var(--hue-blue) 30% 80%);
-  --color-border: hsl(var(--hue-red) 90% 30%);
+  --color-border: hsl(var(--hue-red) 90% 30%); */
   --size: 30px;
   position: relative;
   padding: 0;
@@ -257,15 +309,14 @@
 .pleaseUpdate::after {
   content: "";
   position: absolute;
-  top: -4px;
+  top: 50%;
   right: -4px;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
+  translate: 0 -50%;
   border-radius: 9999px;
   background: var(--color-header-text);
-  box-shadow:
-    0 0 0 1px var(--color-header-dark),
-    0 0 0 3px var(--color-header-base);
+  box-shadow: 0 0 0 3px var(--color-header-base);
 }
 
 .tabSection {
@@ -294,7 +345,6 @@
     )
     1;
   outline-color: currentColor;
-  text-shadow: none;
   /* font-size: var(--font-size1); */
 }
 
@@ -309,6 +359,7 @@
   color: var(--color-header-dark);
   border-color: transparent;
   border-image-source: none;
+  text-shadow: none;
 }
 
 @media (width >= 60rem) {
@@ -322,9 +373,9 @@
 @media (width >= 60rem) {
   .root {
     grid-template-areas:
-      "header header"
-      "sidebar content";
-    grid-template-columns: 25ch 1fr;
+      "......   header "
+      "sidebar  content";
+    grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
   }
 
@@ -332,10 +383,8 @@
     border-top-left-radius: var(--border-radius3);
   }
 
-  .tabBar {
-    padding: 0;
-    padding-right: var(--padding2);
-  }
+  /* .tabBar {
+  } */
 
   .tab {
     text-align: start;
@@ -343,6 +392,5 @@
 
   .sidebar {
     border: 0;
-    border-right: 1px solid var(--color-header-border);
   }
 }

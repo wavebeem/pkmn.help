@@ -66,7 +66,7 @@ something. */
   --border-radius3: 16px;
   --border-radius-pill: 9999px;
 
-  --shadow-sidebar: 0 0 32px rgb(0 0 0 / 10%);
+  --shadow-sidebar: 0 0 8px rgb(0 0 0 / 10%);
   --shadow-button: 0 1px 0 rgb(0 0 0 / 10%);
   --shadow-inset: inset 0 1px 0 rgb(0 0 0 / 10%);
 
