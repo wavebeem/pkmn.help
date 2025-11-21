@@ -8,6 +8,8 @@
     "sidebar"
     "content";
 
+  grid-template-rows: auto 1fr;
+
   background: var(--color-header-base);
   color: var(--color-header-text);
   text-shadow:
@@ -137,6 +139,7 @@
   gap: var(--padding3);
   padding: var(--padding3);
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
 }
 
