@@ -43,6 +43,7 @@ import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
 import styles from "./App.module.css";
 import { Crash } from "./Crash";
 import { MonsterImage } from "./MonsterImage";
+import { Icon } from "./Icon";
 
 const router = createBrowserRouter([
   {
@@ -278,8 +279,9 @@ export function Layout(): ReactNode {
               )}
               onClick={toggleMenu}
               aria-pressed={isMenuOpen ? "true" : "false"}
+              aria-label={t("navigation.menu")}
             >
-              Menu
+              <Icon name="menuHamburger" size={32} />
             </button>
           </div>
         </header>

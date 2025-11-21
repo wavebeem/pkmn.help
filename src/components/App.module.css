@@ -18,12 +18,19 @@
 }
 
 .menuButton {
+  display: flex;
   border: 1px solid var(--color-header-highlight);
-  padding: var(--padding1) var(--padding3);
+  padding: var(--padding1);
   background: transparent;
   color: inherit;
-  border-radius: var(--border-radius-pill);
+  border-radius: var(--border-radius2);
   text-shadow: inherit;
+}
+
+.menuButton[aria-pressed="true"] {
+  background: var(--color-header-text);
+  color: var(--color-header-dark);
+  border-color: transparent;
 }
 
 @media (width >= 60rem) {
@@ -137,8 +144,8 @@
 .headerContent {
   width: 100%;
   display: flex;
-  gap: var(--padding3);
-  padding: var(--padding3);
+  gap: var(--padding2);
+  padding: var(--padding3) var(--padding2);
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -163,7 +170,7 @@
 }
 
 .heading {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
   font-weight: 600;
   font-stretch: ultra-condensed;
   letter-spacing: var(--logo-letter-spacing);
@@ -187,7 +194,7 @@
     [lang="nl"]
   )
   .heading {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 :where(
@@ -200,7 +207,7 @@
     [lang="ru"]
   )
   .heading {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 @media (width >= 60rem) {
@@ -220,11 +227,6 @@
   --color-bottom1: hsl(var(--hue-blue) 30% 95%);
   --color-bottom2: hsl(var(--hue-blue) 30% 90%);
   --color-border: hsl(var(--hue-red) 90% 30%);
-  /* --color-top1: hsl(var(--hue-blue) 30% 100%);
-  --color-top2: hsl(var(--hue-blue) 30% 90%);
-  --color-bottom1: hsl(var(--hue-blue) 30% 90%);
-  --color-bottom2: hsl(var(--hue-blue) 30% 80%);
-  --color-border: hsl(var(--hue-red) 90% 30%); */
   --size: 26px;
   position: relative;
   padding: 0;
