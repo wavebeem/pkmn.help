@@ -23,6 +23,7 @@
   background: transparent;
   color: inherit;
   border-radius: var(--border-radius-pill);
+  text-shadow: inherit;
 }
 
 @media (width >= 60rem) {

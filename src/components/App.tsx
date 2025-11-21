@@ -43,6 +43,7 @@ import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
 import styles from "./App.module.css";
 import { Crash } from "./Crash";
 import { MonsterImage } from "./MonsterImage";
+import { useSearch } from "../hooks/useSearch";
 
 const router = createBrowserRouter([
   {
@@ -123,6 +124,9 @@ export function Layout(): ReactNode {
   } = useRegisterSW();
   useUpdateSW();
 
+  const search = useSearch();
+  const hasUpdate = needRefresh || search.has("_update");
+
   async function updateApp() {
     setNeedRefresh(false);
     await updateServiceWorker(true);
@@ -201,7 +205,7 @@ export function Layout(): ReactNode {
       easterEggPokemon: easterEgg,
       fallbackCoverageTypes,
       isLoading,
-      needsAppUpdate: needRefresh,
+      needsAppUpdate: hasUpdate,
       setCoverageTypes,
       updateApp,
     }),
@@ -212,7 +216,7 @@ export function Layout(): ReactNode {
       easterEggLoadedID,
       fallbackCoverageTypes,
       isLoading,
-      needRefresh,
+      hasUpdate,
       setCoverageTypes,
       updateApp,
     ],
@@ -269,6 +273,7 @@ export function Layout(): ReactNode {
             <button
               className={clsx(
                 styles.menuButton,
+                hasUpdate && styles.pleaseUpdate,
                 "active-darken-background",
                 "focus-outline",
               )}
@@ -333,7 +338,8 @@ export function Layout(): ReactNode {
               {t("navigation.settings")}
             </NavLink>
             <NavLink
-              className={clsx(tabClass, needRefresh && styles.pleaseUpdate)}
+              onClick={closeMenu}
+              className={clsx(tabClass, hasUpdate && styles.pleaseUpdate)}
               end
               to="/about/"
             >
