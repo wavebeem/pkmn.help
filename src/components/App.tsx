@@ -124,8 +124,8 @@ export function Layout(): ReactNode {
   } = useRegisterSW();
   useUpdateSW();
 
-  const search = useSearch();
-  const hasUpdate = needRefresh || search.has("_update");
+  // Update this to debug the refresh visuals
+  const hasUpdate = needRefresh;
 
   async function updateApp() {
     setNeedRefresh(false);

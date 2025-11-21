@@ -225,7 +225,7 @@
   --color-bottom1: hsl(var(--hue-blue) 30% 90%);
   --color-bottom2: hsl(var(--hue-blue) 30% 80%);
   --color-border: hsl(var(--hue-red) 90% 30%); */
-  --size: 30px;
+  --size: 26px;
   position: relative;
   padding: 0;
   border: 0;
