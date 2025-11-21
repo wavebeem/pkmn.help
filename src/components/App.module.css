@@ -145,7 +145,7 @@
   width: 100%;
   display: flex;
   gap: var(--padding2);
-  padding: var(--padding3) var(--padding2);
+  padding: var(--padding2);
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
