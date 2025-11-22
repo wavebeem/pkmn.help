@@ -1,5 +1,12 @@
 import { clsx } from "clsx";
-import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
+import {
+  ReactNode,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { useTranslation } from "react-i18next";
 import {
   NavLink,
@@ -23,18 +30,20 @@ import { detectLanguage } from "../misc/detectLanguage";
 import { formatPokemonName } from "../misc/formatPokemonName";
 import { randomItem } from "../misc/random";
 import { publicPath } from "../misc/settings";
+import { ScreenAbout } from "../screens/ScreenAbout";
 import { ScreenCoverageList } from "../screens/ScreenCoverageList";
 import { ScreenDefense } from "../screens/ScreenDefense";
 import { ScreenDefenseTeam } from "../screens/ScreenDefenseTeam";
 import { ScreenError } from "../screens/ScreenError";
-import { ScreenMore } from "../screens/ScreenMore";
 import { ScreenOffense } from "../screens/ScreenOffense";
 import { ScreenPokedex } from "../screens/ScreenPokedex";
 import { ScreenPokedexHelp } from "../screens/ScreenPokedexHelp";
+import { ScreenSettings } from "../screens/ScreenSettings";
 import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
 import styles from "./App.module.css";
 import { Crash } from "./Crash";
 import { MonsterImage } from "./MonsterImage";
+import { Icon } from "./Icon";
 
 const router = createBrowserRouter([
   {
@@ -82,7 +91,8 @@ const router = createBrowserRouter([
           { path: "help", element: <ScreenPokedexHelp /> },
         ],
       },
-      { path: "more", element: <ScreenMore /> },
+      { path: "about", element: <ScreenAbout /> },
+      { path: "settings", element: <ScreenSettings /> },
       { path: "_error", element: <Crash /> },
       { path: "*", element: <Navigate replace to="/defense/" /> },
     ],
@@ -104,7 +114,7 @@ function useTranslationsWithBlankFallback() {
 }
 
 export function Layout(): ReactNode {
-  const tabClass = clsx(styles.tab, "active-darken focus-header");
+  const tabClass = clsx(styles.tab, "active-darken-background focus-header");
 
   // Service worker
   const {
@@ -113,6 +123,9 @@ export function Layout(): ReactNode {
     updateServiceWorker,
   } = useRegisterSW();
   useUpdateSW();
+
+  // Update this to debug the refresh visuals
+  const hasUpdate = needRefresh;
 
   async function updateApp() {
     setNeedRefresh(false);
@@ -192,7 +205,7 @@ export function Layout(): ReactNode {
       easterEggPokemon: easterEgg,
       fallbackCoverageTypes,
       isLoading,
-      needsAppUpdate: needRefresh,
+      needsAppUpdate: hasUpdate,
       setCoverageTypes,
       updateApp,
     }),
@@ -203,11 +216,21 @@ export function Layout(): ReactNode {
       easterEggLoadedID,
       fallbackCoverageTypes,
       isLoading,
-      needRefresh,
+      hasUpdate,
       setCoverageTypes,
       updateApp,
     ],
   );
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = useCallback(() => {
+    setIsMenuOpen((m) => !m);
+  }, []);
+
+  const closeMenu = useCallback(() => {
+    setIsMenuOpen(false);
+  }, []);
 
   usePageTitle(t("title"));
   useMetaThemeColor({ dataTheme, themeColor });
@@ -247,26 +270,87 @@ export function Layout(): ReactNode {
                 {t("title")}
               </NavLink>
             </h1>
-            <nav className={styles.tabBar}>
-              <NavLink className={tabClass} to="/offense/">
-                {t("navigation.offense")}
-              </NavLink>
-              <NavLink className={tabClass} to="/defense/">
-                {t("navigation.defense")}
-              </NavLink>
-              <NavLink className={tabClass} to="/pokedex/">
-                {t("navigation.pokedex")}
-              </NavLink>
-              <NavLink
-                className={clsx(tabClass, needRefresh && styles.pleaseUpdate)}
-                to="/more/"
-              >
-                {t("navigation.more")}
-              </NavLink>
-            </nav>
+            <button
+              className={clsx(
+                styles.menuButton,
+                hasUpdate && styles.pleaseUpdate,
+                "active-darken-background",
+                "focus-outline",
+              )}
+              onClick={toggleMenu}
+              aria-pressed={isMenuOpen ? "true" : "false"}
+              aria-label={t("navigation.menu")}
+            >
+              <Icon name="menuHamburger" size={32} />
+            </button>
           </div>
         </header>
-        <Outlet />
+        <aside className={styles.sidebar}>
+          <nav className={styles.tabBar}>
+            <span className={styles.tabSection}>{t("navigation.offense")}</span>
+            <NavLink
+              onClick={closeMenu}
+              className={tabClass}
+              end
+              to="/offense/"
+            >
+              {t("offense.mode.combination")}
+            </NavLink>
+            <NavLink
+              onClick={closeMenu}
+              className={tabClass}
+              end
+              to="/offense/single/"
+            >
+              {t("offense.mode.single")}
+            </NavLink>
+            <span className={styles.tabSection}>{t("navigation.defense")}</span>
+            <NavLink
+              onClick={closeMenu}
+              className={tabClass}
+              end
+              to="/defense/"
+            >
+              {t("defense.mode.solo")}
+            </NavLink>
+            <NavLink
+              onClick={closeMenu}
+              className={tabClass}
+              end
+              to="/defense/team/"
+            >
+              {t("defense.mode.team")}
+            </NavLink>
+            <span className={styles.tabSection}>{t("navigation.other")}</span>
+            <NavLink
+              onClick={closeMenu}
+              className={tabClass}
+              end
+              to="/pokedex/"
+            >
+              {t("navigation.pokedex")}
+            </NavLink>
+            <NavLink
+              onClick={closeMenu}
+              className={clsx(tabClass)}
+              end
+              to="/settings/"
+            >
+              {t("navigation.settings")}
+            </NavLink>
+            <NavLink
+              onClick={closeMenu}
+              className={clsx(tabClass, hasUpdate && styles.pleaseUpdate)}
+              end
+              to="/about/"
+            >
+              {t("navigation.about")}
+            </NavLink>
+          </nav>
+        </aside>
+        <div className={styles.content}>
+          <Outlet />
+        </div>
       </div>
     </AppContextProvider>
   );

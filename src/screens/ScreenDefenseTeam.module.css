@@ -1,6 +1,6 @@
 .root {
   display: grid;
-  margin-top: calc(-1 * var(--padding3));
+  /* margin-top: calc(-1 * var(--padding3)); */
   padding: var(--padding3);
   gap: var(--padding3) var(--padding5);
   grid-template-columns: minmax(0, 1fr);
@@ -10,8 +10,4 @@
   .root {
     grid-template-columns: 3fr 4fr;
   }
-}
-
-.tabBar {
-  grid-column: 1 / -1;
 }

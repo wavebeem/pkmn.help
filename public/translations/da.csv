@@ -3,7 +3,9 @@ title,Pokémon Type Calculator,Pokémon Type lommeregner
 navigation.offense,Offense,Angreb
 navigation.defense,Defense,Beskyttelse
 navigation.pokedex,Pokédex,Pokédex
-navigation.more,More,Mere
+navigation.other,Other,
+navigation.settings,Settings,
+navigation.about,About,
 offense.chooseTypes,Choose attack move types,Vælg typer/type
 offense.dealsXTo,Deals {{ x }} damage to these types,Skader {{ x }} til
 offense.mode.combination,Combination,

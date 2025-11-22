@@ -7,7 +7,6 @@ import { Badge } from "../components/Badge";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import { CopyButton } from "../components/CopyButton";
-import { DefenseTabs } from "../components/DefenseTabs";
 import { Divider } from "../components/Divider";
 import { EmptyState } from "../components/EmptyState";
 import { FancyText } from "../components/FancyText";
@@ -179,10 +178,6 @@ export function ScreenDefenseTeam(): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
-      <div className={styles.tabBar}>
-        <DefenseTabs />
-      </div>
-
       <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="large">
           <Flex direction="column" gap="medium">

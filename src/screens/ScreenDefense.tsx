@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "../components/CopyButton";
-import { DefenseTabs } from "../components/DefenseTabs";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
@@ -94,10 +93,6 @@ export function ScreenDefense(): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
-      <div className={styles.tabBar}>
-        <DefenseTabs />
-      </div>
-
       <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="medium">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">

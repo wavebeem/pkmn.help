@@ -3,7 +3,9 @@ title,Pokémon Type Calculator,Máy Tính Toán Hệ trong Pokémon
 navigation.offense,Offense,Tấn Công
 navigation.defense,Defense,Phòng Thủ
 navigation.pokedex,Pokédex,Pokédex
-navigation.more,More,Thêm
+navigation.other,Other,
+navigation.settings,Settings,
+navigation.about,About,
 offense.chooseTypes,Choose attack move types,Chọn hệ
 offense.dealsXTo,Deals {{ x }} damage to these types,Gây {{ x }} sát thương đến
 offense.mode.combination,Combination,

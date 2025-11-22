@@ -7,6 +7,18 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+
 [hidden] {
   display: none;
 }

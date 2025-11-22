@@ -165,6 +165,25 @@ function IconSparkles(props: SVGProps<SVGSVGElement>): ReactNode {
   );
 }
 
+// https://icons.getbootstrap.com/icons/list/
+function IconMenuHamburger(props: SVGProps<SVGSVGElement>): ReactNode {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      viewBox="0 0 16 16"
+      {...props}
+    >
+      <path
+        fill-rule="evenodd"
+        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+      />
+    </svg>
+  );
+}
+
 const icons = {
   open: IconOpen,
   closed: IconClosed,
@@ -176,6 +195,7 @@ const icons = {
   arrowRight: IconArrowRight,
   arrowLeftDouble: IconArrowLeftDouble,
   arrowRightDouble: IconArrowRightDouble,
+  menuHamburger: IconMenuHamburger,
 } as const;
 
 export interface IconProps {
