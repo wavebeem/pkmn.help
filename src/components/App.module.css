@@ -44,6 +44,11 @@
   text-shadow: inherit;
 }
 
+.root:where(:has(.menuButton[aria-pressed="true"])) {
+  background: var(--color-header-base);
+  color: var(--color-header-text);
+}
+
 .menuButton[aria-pressed="true"] {
   background: var(--color-header-text);
   color: var(--color-header-dark);
