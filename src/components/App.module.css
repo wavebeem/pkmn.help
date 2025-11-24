@@ -174,7 +174,6 @@
 
   color: var(--color-header-text);
   margin: 0;
-  display: flex;
   align-items: center;
   flex-direction: row;
   gap: var(--padding3);
