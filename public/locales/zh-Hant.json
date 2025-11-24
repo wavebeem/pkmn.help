@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "攻擊",
     "defense": "防禦",
-    "pokedex": "寶可夢圖鑑",
-    "more": "更多"
+    "pokedex": "寶可夢圖鑑"
   },
   "offense": {
     "chooseTypes": "選擇屬性",

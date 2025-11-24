@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "Offensief",
     "defense": "Defensief",
-    "pokedex": "Pokédex",
-    "more": "Meer"
+    "pokedex": "Pokédex"
   },
   "offense": {
     "chooseTypes": "Kies Types",

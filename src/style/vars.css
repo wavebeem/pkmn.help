@@ -21,7 +21,7 @@ something. */
   --color-fg3: hsl(var(--hue-blue) 15% 40%);
   --color-fg4: hsl(var(--hue-blue) 15% 60%);
 
-  --color-accent-bg: hsl(var(--hue-blue) 15% 20%);
+  --color-accent-bg: hsl(var(--hue-blue) 15% 30%);
   --color-accent-fg: hsl(var(--hue-blue) 5% 100%);
 
   --color-header-border: hsl(var(--hue-red) 80% 30%);
@@ -126,7 +126,7 @@ something. */
   --color-header-base: hsl(var(--hue-red) 70% 35%);
   --color-header-highlight: hsl(var(--hue-red) 40% 55%);
   --color-header-text: #fff;
-  --color-header-border: hsl(var(--hue-red) 40% 50%);
+  --color-header-border: hsl(var(--hue-red) 40% 45%);
   --color-button1: hsl(var(--hue-blue) 10% 28%);
   --color-button1b: hsl(var(--hue-blue) 10% 22%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
@@ -189,7 +189,7 @@ something. */
     --color-header-base: hsl(var(--hue-red) 70% 35%);
     --color-header-highlight: hsl(var(--hue-red) 40% 55%);
     --color-header-text: #fff;
-    --color-header-border: hsl(var(--hue-red) 40% 50%);
+    --color-header-border: hsl(var(--hue-red) 40% 45%);
     --color-button1: hsl(var(--hue-blue) 10% 28%);
     --color-button1b: hsl(var(--hue-blue) 10% 22%);
     --color-link: hsl(var(--hue-teal) 90% 75%);

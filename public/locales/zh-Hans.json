@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "攻击方",
     "defense": "防御方",
-    "pokedex": "图鉴",
-    "more": "更多"
+    "pokedex": "图鉴"
   },
   "offense": {
     "chooseTypes": "选择属性",

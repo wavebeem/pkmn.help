@@ -10,11 +10,28 @@
 
   grid-template-rows: auto 1fr;
 
-  background: var(--color-header-base);
-  color: var(--color-header-text);
-  text-shadow:
-    0 0 1px hsl(0 0% 0% / 25%),
-    0 1px 4px hsl(0 0% 0% / 30%);
+  /**
+   * Support rendering content inside the "chin" on Android Chrome. This draws the
+   * gesture bar over the top of the viewport, rather than creating a smaller
+   * viewport that sits above the chin.
+   *
+   * https://developer.chrome.com/docs/css-ui/edge-to-edge
+   *
+   * https://webkit.org/blog/7929/designing-websites-for-iphone-x/
+   */
+  padding-top: max(env(safe-area-max-inset-top, 0px), env(safe-area-inset-top));
+  padding-bottom: max(
+    env(safe-area-max-inset-bottom, 0px),
+    env(safe-area-inset-bottom)
+  );
+  padding-left: max(
+    env(safe-area-max-inset-left, 0px),
+    env(safe-area-inset-left)
+  );
+  padding-right: max(
+    env(safe-area-max-inset-right, 0px),
+    env(safe-area-inset-right)
+  );
 }
 
 .menuButton {
@@ -65,6 +82,7 @@
 }
 
 .sidebar {
+  display: block;
   grid-area: sidebar;
   margin: 0;
   border: 0;
@@ -75,13 +93,8 @@
 
 .content {
   grid-area: content;
-  text-shadow: none;
   color: var(--color-fg1);
   background: var(--color-bg2);
-
-  box-shadow:
-    0 0 0 1px var(--color-header-border),
-    var(--shadow-sidebar);
 }
 
 .tabBar {
@@ -190,7 +203,7 @@
 
 .title {
   font-size: 1.75rem;
-  font-weight: 900;
+  font-weight: bold;
   margin: 0;
 }
 
@@ -253,11 +266,11 @@
 
 .pokeball {
   --color-top1: hsl(var(--hue-blue) 30% 100%);
-  --color-top2: hsl(var(--hue-blue) 30% 95%);
-  --color-bottom1: hsl(var(--hue-blue) 30% 95%);
-  --color-bottom2: hsl(var(--hue-blue) 30% 90%);
+  --color-top2: hsl(var(--hue-blue) 30% 100%);
+  --color-bottom1: hsl(var(--hue-blue) 30% 100%);
+  --color-bottom2: hsl(var(--hue-blue) 30% 100%);
   --color-border: hsl(var(--hue-red) 90% 30%);
-  --size: 26px;
+  --size: 24px;
   position: relative;
   padding: 0;
   border: 0;
@@ -270,9 +283,6 @@
     var(--color-bottom1) calc(50% + 2px),
     var(--color-bottom2)
   );
-  box-shadow:
-    inset 0 0 0 1px hsl(0 0% 100% / 20%),
-    0 1px 2px hsl(0 0% 0% / 30%);
   flex: none;
   width: var(--size);
   height: var(--size);
@@ -312,7 +322,7 @@
   width: var(--size);
   height: var(--size);
   border: 3px solid var(--color-border);
-  background: hsl(var(--hue-blue) 30% 95%);
+  background: hsl(var(--hue-blue) 30% 100%);
 }
 
 @media (hover) {
@@ -410,9 +420,15 @@
       "sidebar  content";
     grid-template-columns: minmax(auto, 22ch) 1fr;
     grid-template-rows: auto 1fr;
+
+    background: var(--color-header-base);
+    color: var(--color-header-text);
   }
 
   .content {
+    box-shadow:
+      0 0 0 1px var(--color-header-border),
+      var(--shadow-sidebar);
     border-top-left-radius: var(--border-radius3);
   }
 

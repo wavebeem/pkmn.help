@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "공격",
     "defense": "방어",
-    "pokedex": "포켓몬 도감",
-    "more": "더보기"
+    "pokedex": "포켓몬 도감"
   },
   "offense": {
     "chooseTypes": "타입 선택",

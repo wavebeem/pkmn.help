@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "Angrep",
     "defense": "Forsvar",
-    "pokedex": "Pokédexen",
-    "more": "Mer"
+    "pokedex": "Pokédexen"
   },
   "offense": {
     "chooseTypes": "Velg typer",

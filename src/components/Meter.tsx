@@ -12,7 +12,7 @@ export interface MeterProps {
 export function Meter({
   value,
   max,
-  color = "var(--color-fg3)",
+  color = "var(--color-accent-bg)",
   background = "var(--color-bg-ghost)",
 }: MeterProps): ReactNode {
   const vars = customProperties({
