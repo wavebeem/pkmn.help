@@ -266,9 +266,10 @@ export function Layout(): ReactNode {
                   setEasterEgg(pkmn);
                 }}
               />
-              <NavLink to="/" className="focus-header">
-                {t("title")}
-              </NavLink>
+              <div className={styles.titleStack}>
+                <span className={styles.title}>pkmn.help</span>
+                <small>{t("title")}</small>
+              </div>
             </h1>
             <button
               className={clsx(

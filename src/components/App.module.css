@@ -145,7 +145,7 @@
   width: 100%;
   display: flex;
   gap: var(--padding2);
-  padding: var(--padding2);
+  padding: var(--padding2) var(--padding3);
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
@@ -170,10 +170,6 @@
 }
 
 .heading {
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-stretch: ultra-condensed;
-  letter-spacing: var(--logo-letter-spacing);
   line-height: 1.15;
 
   color: var(--color-header-text);
@@ -182,6 +178,27 @@
   align-items: center;
   flex-direction: row;
   gap: var(--padding2);
+
+  display: flex;
+  justify-content: center;
+}
+
+.titleStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding1);
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+.titleStack small {
+  font-stretch: ultra-condensed;
+  letter-spacing: var(--logo-letter-spacing);
+  font-size: var(--font-size0);
+  font-weight: var(--weight-normal);
 }
 
 :where(
@@ -213,6 +230,12 @@
 @media (width >= 60rem) {
   .heading {
     font-size: 2rem;
+  }
+
+  .titleStack {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--padding3);
   }
 }
 
@@ -378,7 +401,7 @@
     grid-template-areas:
       "......   header "
       "sidebar  content";
-    grid-template-columns: auto 1fr;
+    grid-template-columns: minmax(auto, 20ch) 1fr;
     grid-template-rows: auto 1fr;
   }
 
