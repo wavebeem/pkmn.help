@@ -2,13 +2,14 @@ import { ReactNode } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
-import { CollapsibleSection } from "../components/CollapsibleSection";
+import { Section } from "../components/Section";
 import { Divider } from "../components/Divider";
 import { ExternalLink } from "../components/ExternalLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { useAppContext } from "../hooks/useAppContext";
 import { resetApp } from "../misc/resetApp";
+import { FancyLink } from "../components/FancyLink";
 
 export function ScreenAbout(): ReactNode {
   const { needsAppUpdate, updateApp } = useAppContext();
@@ -18,7 +19,7 @@ export function ScreenAbout(): ReactNode {
   return (
     <main className="content-narrow center">
       <Flex direction="column" padding="large">
-        <Flex direction="column">
+        <Flex direction="column" gap="large">
           {needsAppUpdate && (
             <>
               <Flex padding="medium" />
@@ -39,40 +40,51 @@ export function ScreenAbout(): ReactNode {
               </Card>
             </>
           )}
-          <CollapsibleSection
-            initiallyOpen
+          <Section
             heading={
               <FancyText tag="h2" fontWeight="medium">
                 {t("more.contact.heading")}
               </FancyText>
             }
           >
-            <Flex direction="column" gap="large">
-              <FancyText tag="p">
-                <Trans
-                  i18nKey="more.contact.intro"
-                  values={{}}
-                  components={{
-                    homepage: <ExternalLink href="https://www.wavebeem.com" />,
-                  }}
-                />
-              </FancyText>
+            <FancyText tag="p">
+              <Trans
+                i18nKey="more.contact.intro"
+                values={{}}
+                components={{
+                  homepage: <ExternalLink href="https://www.wavebeem.com" />,
+                }}
+              />
+            </FancyText>
 
-              <FancyText tag="p">
-                <Trans
-                  i18nKey="more.contact.email"
-                  components={{
-                    email: <ExternalLink href="mailto:pkmn@wavebeem.com" />,
-                  }}
-                />
-              </FancyText>
-            </Flex>
-          </CollapsibleSection>
+            <FancyText tag="p">
+              <Trans
+                i18nKey="more.contact.email"
+                components={{
+                  email: <ExternalLink href="mailto:pkmn@wavebeem.com" />,
+                }}
+              />
+            </FancyText>
+          </Section>
 
           <Divider />
 
-          <CollapsibleSection
-            initiallyOpen
+          <Section
+            heading={
+              <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
+                Translation <span aria-hidden="true">🌎</span>
+              </FancyText>
+            }
+          >
+            <FancyText tag="p">
+              Please <FancyLink to="/translation/">help me translate</FancyLink>{" "}
+              this site.
+            </FancyText>
+          </Section>
+
+          <Divider />
+
+          <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.changes.heading")}
@@ -89,12 +101,11 @@ export function ScreenAbout(): ReactNode {
                 }}
               />
             </FancyText>
-          </CollapsibleSection>
+          </Section>
 
           <Divider />
 
-          <CollapsibleSection
-            initiallyOpen
+          <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.help.heading")}
@@ -111,12 +122,11 @@ export function ScreenAbout(): ReactNode {
                 {t("more.help.serviceWorker.description")}
               </FancyText>
             </Flex>
-          </CollapsibleSection>
+          </Section>
 
           <Divider />
 
-          <CollapsibleSection
-            initiallyOpen
+          <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.privacy.heading")}
@@ -133,12 +143,11 @@ export function ScreenAbout(): ReactNode {
                 }}
               />
             </FancyText>
-          </CollapsibleSection>
+          </Section>
 
           <Divider />
 
-          <CollapsibleSection
-            initiallyOpen
+          <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.givingBack.heading")}
@@ -146,12 +155,11 @@ export function ScreenAbout(): ReactNode {
             }
           >
             <FancyText tag="p">{t("more.givingBack.description")}</FancyText>
-          </CollapsibleSection>
+          </Section>
 
           <Divider />
 
-          <CollapsibleSection
-            initiallyOpen
+          <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.thanks.heading")}
@@ -168,12 +176,11 @@ export function ScreenAbout(): ReactNode {
                 }}
               />
             </FancyText>
-          </CollapsibleSection>
+          </Section>
 
           <Divider />
 
-          <CollapsibleSection
-            initiallyOpen
+          <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.openSource.heading")}
@@ -190,12 +197,11 @@ export function ScreenAbout(): ReactNode {
                 }}
               />
             </FancyText>
-          </CollapsibleSection>
+          </Section>
 
           <Divider />
 
-          <CollapsibleSection
-            initiallyOpen
+          <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
                 {t("more.legalInfo.heading")}
@@ -227,9 +233,10 @@ export function ScreenAbout(): ReactNode {
                 .
               </FancyText>
             </Flex>
-          </CollapsibleSection>
+          </Section>
+
           <Divider />
-          <Flex padding="medium" />
+
           <div aria-hidden="true">
             <span aria-hidden="true">{"(ノ^_^)ノ"}</span> Have you tried
             pressing the Pokéball button at the top of the page?

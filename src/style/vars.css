@@ -110,7 +110,7 @@ something. */
 }
 
 [data-theme="dark"] {
-  --color-bg1: hsl(var(--hue-blue) 10% 28%);
+  --color-bg1: hsl(var(--hue-blue) 10% 22%);
   --color-bg2: hsl(var(--hue-blue) 10% 14%);
   --color-bg-ghost: hsl(var(--hue-blue) 10% 40% / 20%);
   --color-card-bg: hsl(var(--hue-blue) 10% 20%);
@@ -173,7 +173,7 @@ something. */
 
 @media (prefers-color-scheme: dark) {
   [data-theme="auto"] {
-    --color-bg1: hsl(var(--hue-blue) 10% 28%);
+    --color-bg1: hsl(var(--hue-blue) 10% 22%);
     --color-bg2: hsl(var(--hue-blue) 10% 14%);
     --color-bg-ghost: hsl(var(--hue-blue) 10% 40% / 20%);
     --color-card-bg: hsl(var(--hue-blue) 10% 20%);

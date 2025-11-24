@@ -185,9 +185,7 @@ export function Matchups({
                           return x.types.map((t, i) => {
                             return (
                               <>
-                                {i > 0 ? (
-                                  <Icon name="closed" size={32} />
-                                ) : null}
+                                {i > 0 ? <Icon name="plus" size={32} /> : null}
                                 <Badge
                                   key={`type-${t}`}
                                   type={t}

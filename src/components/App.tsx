@@ -44,6 +44,7 @@ import styles from "./App.module.css";
 import { Crash } from "./Crash";
 import { MonsterImage } from "./MonsterImage";
 import { Icon } from "./Icon";
+import { ScreenTranslation } from "../screens/ScreenTranslation";
 
 const router = createBrowserRouter([
   {
@@ -91,6 +92,7 @@ const router = createBrowserRouter([
           { path: "help", element: <ScreenPokedexHelp /> },
         ],
       },
+      { path: "translation", element: <ScreenTranslation /> },
       { path: "about", element: <ScreenAbout /> },
       { path: "settings", element: <ScreenSettings /> },
       { path: "_error", element: <Crash /> },
@@ -253,7 +255,7 @@ export function Layout(): ReactNode {
       <div className={styles.root}>
         <header className={styles.header} ref={headerRef}>
           <div className={clsx(styles.headerContent, "content-wide center")}>
-            <h1 className={styles.heading}>
+            <div className={styles.heading}>
               <button
                 className={styles.pokeball}
                 aria-hidden={true}
@@ -266,11 +268,11 @@ export function Layout(): ReactNode {
                   setEasterEgg(pkmn);
                 }}
               />
-              <div className={styles.titleStack}>
-                <span className={styles.title}>pkmn.help</span>
-                <small>{t("title")}</small>
-              </div>
-            </h1>
+              <hgroup className={styles.titleStack}>
+                <h1 className={styles.title}>pkmn.help</h1>
+                <p className={styles.subtitle}>{t("title")}</p>
+              </hgroup>
+            </div>
             <button
               className={clsx(
                 styles.menuButton,

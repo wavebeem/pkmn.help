@@ -192,13 +192,20 @@
 .title {
   font-size: 1.75rem;
   font-weight: 900;
+  margin: 0;
 }
 
-.titleStack small {
-  font-stretch: ultra-condensed;
-  letter-spacing: var(--logo-letter-spacing);
+.subtitle {
   font-size: var(--font-size0);
   font-weight: var(--weight-normal);
+  margin: 0;
+}
+
+@media (width < 22rem) {
+  .subtitle {
+    font-stretch: ultra-condensed;
+    letter-spacing: var(--logo-letter-spacing);
+  }
 }
 
 :where(
@@ -350,7 +357,7 @@
   margin-top: var(--padding2);
   font-weight: var(--weight-medium);
   font-stretch: ultra-condensed;
-  padding: var(--padding0) var(--padding2);
+  padding: var(--padding0) var(--padding3);
   /* border-bottom: 1px solid var(--color-header-highlight); */
   font-size: var(--font-size2);
 }
@@ -402,7 +409,7 @@
     grid-template-areas:
       "......   header "
       "sidebar  content";
-    grid-template-columns: minmax(auto, 20ch) 1fr;
+    grid-template-columns: minmax(auto, 22ch) 1fr;
     grid-template-rows: auto 1fr;
   }
 

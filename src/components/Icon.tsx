@@ -103,7 +103,7 @@ function IconMusic(props: SVGProps<SVGSVGElement>): ReactNode {
 }
 
 // https://icons.getbootstrap.com/icons/dash-circle/
-function IconOpen(props: SVGProps<SVGSVGElement>): ReactNode {
+function IconMinus(props: SVGProps<SVGSVGElement>): ReactNode {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ function IconOpen(props: SVGProps<SVGSVGElement>): ReactNode {
 }
 
 // https://icons.getbootstrap.com/icons/dash-circle/
-function IconClosed(props: SVGProps<SVGSVGElement>): ReactNode {
+function IconPlus(props: SVGProps<SVGSVGElement>): ReactNode {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -185,8 +185,8 @@ function IconMenuHamburger(props: SVGProps<SVGSVGElement>): ReactNode {
 }
 
 const icons = {
-  open: IconOpen,
-  closed: IconClosed,
+  minus: IconMinus,
+  plus: IconPlus,
   clear: IconClear,
   music: IconMusic,
   search: IconSearch,
