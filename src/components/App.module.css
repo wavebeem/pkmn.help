@@ -5,7 +5,6 @@
 
   grid-template-areas:
     "header"
-    "sidebar"
     "content";
 
   grid-template-rows: auto 1fr;
@@ -44,11 +43,6 @@
   text-shadow: inherit;
 }
 
-.root:where(:has(.menuButton[aria-pressed="true"])) {
-  background: var(--color-header-base);
-  color: var(--color-header-text);
-}
-
 .menuButton[aria-pressed="true"] {
   background: var(--color-header-text);
   color: var(--color-header-dark);
@@ -57,20 +51,6 @@
 
 @media (width >= 60rem) {
   .menuButton {
-    display: none;
-  }
-}
-
-@media (width < 60rem) {
-  :has(.menuButton[aria-pressed="false"]) .sidebar {
-    display: none;
-  }
-
-  :has(.menuButton[aria-pressed="false"]) .content {
-    border-top-left-radius: 0;
-  }
-
-  :has(.menuButton[aria-pressed="true"]) .content {
     display: none;
   }
 }
@@ -372,7 +352,6 @@
   font-weight: var(--weight-medium);
   font-stretch: ultra-condensed;
   padding: var(--padding0) var(--padding3);
-  /* border-bottom: 1px solid var(--color-header-highlight); */
   font-size: var(--font-size2);
 }
 
@@ -381,8 +360,6 @@
   padding: var(--padding2) var(--padding4);
   text-align: start;
   border-radius: 0 var(--border-radius-pill) var(--border-radius-pill) 0;
-  /* background: var(--color-header-base);
-  color: var(--color-fg1); */
   color: inherit;
   border-bottom: 1px solid var(--color-header-highlight);
   border-image: linear-gradient(
@@ -393,7 +370,6 @@
     )
     1;
   outline-color: currentColor;
-  /* font-size: var(--font-size1); */
 }
 
 .tab:has(+ .tab[aria-current="page"]) {
@@ -402,7 +378,6 @@
 }
 
 .tab[aria-current="page"] {
-  /* border-color: transparent; */
   background: var(--color-header-text);
   color: var(--color-header-dark);
   border-color: transparent;
@@ -437,14 +412,36 @@
     border-top-left-radius: var(--border-radius3);
   }
 
-  /* .tabBar {
-  } */
-
   .tab {
     text-align: start;
   }
 
   .sidebar {
     border: 0;
+  }
+}
+
+@media (width < 60rem) {
+  :where(:has(.menuButton[aria-pressed="false"])) .sidebar {
+    translate: 0% 100%;
+  }
+
+  :where(:has(.menuButton[aria-pressed="true"])) .sidebar {
+    translate: 0 0;
+    box-shadow: 0 0 0 200vmax #0008;
+  }
+
+  .sidebar {
+    transition: 1000ms translate ease-out;
+    position: fixed;
+    top: 20vh;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    border-top: 1px solid var(--color-header-border);
+    border-radius: var(--border-radius3) var(--border-radius3) 0 0;
+    /* max-width: max-content; */
+    /* margin: var(--padding2); */
   }
 }
