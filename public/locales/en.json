@@ -6,7 +6,8 @@
     "pokedex": "Pokédex",
     "other": "Other",
     "settings": "Settings",
-    "about": "About"
+    "about": "About",
+    "menu": "Menu"
   },
   "offense": {
     "chooseTypes": "Choose attack move types",
