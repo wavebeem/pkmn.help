@@ -432,7 +432,7 @@
   }
 
   .sidebar {
-    transition: 1000ms translate ease-out;
+    transition: 100ms translate;
     position: fixed;
     top: 20vh;
     right: 0;
