@@ -2,7 +2,7 @@
   background: var(--color-bg2);
   color: var(--color-fg1);
   line-height: 1.5;
-  overscroll-behavior: none;
+  /* overscroll-behavior: none; */
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-tap-highlight-color */
   -webkit-tap-highlight-color: transparent;
 }

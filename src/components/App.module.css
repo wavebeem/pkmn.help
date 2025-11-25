@@ -9,6 +9,8 @@
 
   grid-template-rows: auto 1fr;
 
+  height: 100vh;
+
   /**
    * Support rendering content inside the "chin" on Android Chrome. This draws the
    * gesture bar over the top of the viewport, rather than creating a smaller
@@ -18,7 +20,7 @@
    *
    * https://webkit.org/blog/7929/designing-websites-for-iphone-x/
    */
-  padding-top: max(env(safe-area-max-inset-top, 0px), env(safe-area-inset-top));
+  /* padding-top: max(env(safe-area-max-inset-top, 0px), env(safe-area-inset-top));
   padding-bottom: max(
     env(safe-area-max-inset-bottom, 0px),
     env(safe-area-inset-bottom)
@@ -30,7 +32,7 @@
   padding-right: max(
     env(safe-area-max-inset-right, 0px),
     env(safe-area-inset-right)
-  );
+  ); */
 }
 
 .menuButton {
@@ -80,6 +82,8 @@
   grid-area: content;
   color: var(--color-fg1);
   background: var(--color-bg2);
+  overflow: auto;
+  /* overscroll-behavior: contain; */
 }
 
 .tabBar {
@@ -432,16 +436,12 @@
   }
 
   .sidebar {
-    transition: 100ms translate;
+    padding-block: var(--padding1);
     position: fixed;
-    top: 20vh;
+    top: 0;
     right: 0;
     width: 100vw;
     height: 100vh;
     z-index: 1;
-    border-top: 1px solid var(--color-header-border);
-    border-radius: var(--border-radius3) var(--border-radius3) 0 0;
-    /* max-width: max-content; */
-    /* margin: var(--padding2); */
   }
 }

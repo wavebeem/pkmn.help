@@ -90,7 +90,6 @@ something. */
 
   font-family: var(--font-sans);
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
-  overflow-y: scroll;
   color-scheme: light;
 }
 

@@ -1,5 +1,5 @@
 import { clsx } from "clsx";
-import { ReactNode } from "react";
+import { Fragment, ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { characters } from "../misc/characters";
 import { Generation } from "../misc/data-generations";
@@ -96,9 +96,9 @@ export function Matchups({
                   </tr>
                 </thead>
                 <tbody>
-                  {effs.map((eff) => {
+                  {effs.map((eff, i) => {
                     return (
-                      <tr>
+                      <tr key={i}>
                         <td className={styles.tableNumber}>
                           {formatEffectiveness(eff, i18n.languages)}
                         </td>
@@ -184,14 +184,14 @@ export function Matchups({
                           }
                           return x.types.map((t, i) => {
                             return (
-                              <>
+                              <Fragment key={i}>
                                 {i > 0 ? <Icon name="plus" size={32} /> : null}
                                 <Badge
                                   key={`type-${t}`}
                                   type={t}
                                   variant="ghost"
                                 />
-                              </>
+                              </Fragment>
                             );
                           });
                         })}

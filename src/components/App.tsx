@@ -1,5 +1,6 @@
 import { clsx } from "clsx";
 import {
+  MouseEvent,
   ReactNode,
   useCallback,
   useEffect,
@@ -23,6 +24,7 @@ import { useFetchJSON } from "../hooks/useFetchJSON";
 import { useLanguage } from "../hooks/useLanguage";
 import { useMetaThemeColor } from "../hooks/useMetaThemeColor";
 import { usePageTitle } from "../hooks/usePageTitle";
+import { useRouteChangeFixes } from "../hooks/useRouteChangeFixes";
 import { useTheme } from "../hooks/useTheme";
 import { useUpdateSW } from "../hooks/useUpdateSW";
 import { CoverageType, Pokemon } from "../misc/data-types";
@@ -39,12 +41,12 @@ import { ScreenOffense } from "../screens/ScreenOffense";
 import { ScreenPokedex } from "../screens/ScreenPokedex";
 import { ScreenPokedexHelp } from "../screens/ScreenPokedexHelp";
 import { ScreenSettings } from "../screens/ScreenSettings";
+import { ScreenTranslation } from "../screens/ScreenTranslation";
 import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
 import styles from "./App.module.css";
 import { Crash } from "./Crash";
-import { MonsterImage } from "./MonsterImage";
 import { Icon } from "./Icon";
-import { ScreenTranslation } from "../screens/ScreenTranslation";
+import { MonsterImage } from "./MonsterImage";
 
 const router = createBrowserRouter([
   {
@@ -230,12 +232,15 @@ export function Layout(): ReactNode {
     setIsMenuOpen((m) => !m);
   }, []);
 
-  const closeMenu = useCallback(() => {
-    setIsMenuOpen(false);
+  const onNavLinkClick = useCallback((event: MouseEvent<HTMLAnchorElement>) => {
+    if (event.currentTarget.getAttribute("aria-current") === "page") {
+      setIsMenuOpen(false);
+    }
   }, []);
 
   usePageTitle(t("title"));
   useMetaThemeColor({ dataTheme, themeColor });
+  useRouteChangeFixes();
 
   return (
     <AppContextProvider value={appContext}>
@@ -257,8 +262,9 @@ export function Layout(): ReactNode {
           <div className={clsx(styles.headerContent, "content-wide center")}>
             <div className={styles.heading}>
               <button
+                // TODO: Translate this?
+                aria-label="pkmn.help"
                 className={styles.pokeball}
-                aria-hidden={true}
                 onClick={(event) => {
                   event.preventDefault();
                   const pkmn = randomItem(AllPokemon);
@@ -283,6 +289,7 @@ export function Layout(): ReactNode {
               onClick={toggleMenu}
               aria-pressed={isMenuOpen ? "true" : "false"}
               aria-label={t("navigation.menu")}
+              id="menu-button"
             >
               <Icon name="menuHamburger" size={32} />
             </button>
@@ -292,7 +299,7 @@ export function Layout(): ReactNode {
           <nav className={styles.tabBar}>
             <span className={styles.tabSection}>{t("navigation.offense")}</span>
             <NavLink
-              onClick={closeMenu}
+              onClick={onNavLinkClick}
               className={tabClass}
               end
               to="/offense/"
@@ -300,7 +307,7 @@ export function Layout(): ReactNode {
               {t("offense.mode.combination")}
             </NavLink>
             <NavLink
-              onClick={closeMenu}
+              onClick={onNavLinkClick}
               className={tabClass}
               end
               to="/offense/single/"
@@ -309,7 +316,7 @@ export function Layout(): ReactNode {
             </NavLink>
             <span className={styles.tabSection}>{t("navigation.defense")}</span>
             <NavLink
-              onClick={closeMenu}
+              onClick={onNavLinkClick}
               className={tabClass}
               end
               to="/defense/"
@@ -317,7 +324,7 @@ export function Layout(): ReactNode {
               {t("defense.mode.solo")}
             </NavLink>
             <NavLink
-              onClick={closeMenu}
+              onClick={onNavLinkClick}
               className={tabClass}
               end
               to="/defense/team/"
@@ -326,7 +333,7 @@ export function Layout(): ReactNode {
             </NavLink>
             <span className={styles.tabSection}>{t("navigation.other")}</span>
             <NavLink
-              onClick={closeMenu}
+              onClick={onNavLinkClick}
               className={tabClass}
               end
               to="/pokedex/"
@@ -334,7 +341,7 @@ export function Layout(): ReactNode {
               {t("navigation.pokedex")}
             </NavLink>
             <NavLink
-              onClick={closeMenu}
+              onClick={onNavLinkClick}
               className={clsx(tabClass)}
               end
               to="/settings/"
@@ -342,7 +349,6 @@ export function Layout(): ReactNode {
               {t("navigation.settings")}
             </NavLink>
             <NavLink
-              onClick={closeMenu}
               className={clsx(tabClass, hasUpdate && styles.pleaseUpdate)}
               end
               to="/about/"
@@ -351,7 +357,7 @@ export function Layout(): ReactNode {
             </NavLink>
           </nav>
         </aside>
-        <div className={styles.content}>
+        <div className={styles.content} id="content">
           <Outlet />
         </div>
       </div>
