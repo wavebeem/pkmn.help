@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-export function useRouteChangeFixes() {
+export function useRouteChangeFixes(): void {
   const location = useLocation();
 
   useEffect(() => {

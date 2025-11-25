@@ -6,6 +6,7 @@ navigation.pokedex,Pokédex,포켓몬 도감
 navigation.other,Other,
 navigation.settings,Settings,
 navigation.about,About,
+navigation.menu,Menu,
 offense.chooseTypes,Choose attack move types,타입 선택
 offense.dealsXTo,Deals {{ x }} damage to these types,{{x}} 데미지
 offense.mode.combination,Combination,

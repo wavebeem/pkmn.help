@@ -6,6 +6,7 @@ navigation.pokedex,Pokédex,Pokédexen
 navigation.other,Other,
 navigation.settings,Settings,
 navigation.about,About,
+navigation.menu,Menu,
 offense.chooseTypes,Choose attack move types,Velg typer
 offense.dealsXTo,Deals {{ x }} damage to these types,Gjør {{ x }} til
 offense.mode.combination,Combination,

@@ -6,6 +6,7 @@ navigation.pokedex,Pokédex,Pokédex
 navigation.other,Other,
 navigation.settings,Settings,
 navigation.about,About,
+navigation.menu,Menu,
 offense.chooseTypes,Choose attack move types,Chọn hệ
 offense.dealsXTo,Deals {{ x }} damage to these types,Gây {{ x }} sát thương đến
 offense.mode.combination,Combination,

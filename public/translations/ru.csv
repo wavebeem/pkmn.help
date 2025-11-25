@@ -6,6 +6,7 @@ navigation.pokedex,Pokédex,Покедекс
 navigation.other,Other,
 navigation.settings,Settings,
 navigation.about,About,
+navigation.menu,Menu,
 offense.chooseTypes,Choose attack move types,Выберите Типы
 offense.dealsXTo,Deals {{ x }} damage to these types,Наносит {{ x }}
 offense.mode.combination,Combination,
