@@ -1,10 +1,10 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 export function useRouteChangeFixes(): void {
   const location = useLocation();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     // Ugly hacks---should share this with context and use functions... or maybe
     // emit events and listen to them.
     const content = document.querySelector("#content");
