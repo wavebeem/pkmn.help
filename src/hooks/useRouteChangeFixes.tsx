@@ -8,7 +8,7 @@ export function useRouteChangeFixes(): void {
     // Ugly hacks---should share this with context and use functions... or maybe
     // emit events and listen to them.
     const content = document.querySelector("#content");
-    if (content) {
+    if (content && location.hash.length < 2) {
       content.scrollTo(0, 0);
     }
 
@@ -16,5 +16,5 @@ export function useRouteChangeFixes(): void {
     if (menuButton instanceof HTMLButtonElement) {
       menuButton.setAttribute("aria-pressed", "false");
     }
-  }, [location.pathname]);
+  }, [location.pathname, location.hash]);
 }
