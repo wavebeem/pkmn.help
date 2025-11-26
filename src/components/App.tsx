@@ -349,6 +349,7 @@ export function Layout(): ReactNode {
               {t("navigation.settings")}
             </NavLink>
             <NavLink
+              onClick={onNavLinkClick}
               className={clsx(tabClass, hasUpdate && styles.pleaseUpdate)}
               end
               to="/about/"
