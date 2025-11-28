@@ -23,7 +23,12 @@ export function PageNav({ hasUpdate, closeMenu }: PageNavProps): ReactNode {
   return (
     <nav className={styles.tabBar}>
       <span className={styles.tabSection}>{t("navigation.offense")}</span>
-      <NavLink onClick={onNavLinkClick} className={tabClass} end to="/offense/">
+      <NavLink
+        onClick={onNavLinkClick}
+        className={tabClass}
+        end
+        to="/offense/combination/"
+      >
         {t("offense.mode.combination")}
       </NavLink>
       <NavLink
@@ -35,7 +40,12 @@ export function PageNav({ hasUpdate, closeMenu }: PageNavProps): ReactNode {
         {t("offense.mode.single")}
       </NavLink>
       <span className={styles.tabSection}>{t("navigation.defense")}</span>
-      <NavLink onClick={onNavLinkClick} className={tabClass} end to="/defense/">
+      <NavLink
+        onClick={onNavLinkClick}
+        className={tabClass}
+        end
+        to="/defense/solo/"
+      >
         {t("defense.mode.solo")}
       </NavLink>
       <NavLink

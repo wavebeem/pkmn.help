@@ -76,7 +76,7 @@ export function Matchups({
 
   if (kind === "offense-combination") {
     return (
-      <div id={`matchup-${kind}`}>
+      <div id={`matchup-offense`}>
         <Flex direction="column" gap="xlarge">
           <Flex direction="column" gap="small">
             <FancyText tag="h2" fontWeight="medium" fontSize="large">
@@ -208,7 +208,7 @@ export function Matchups({
   }
 
   return (
-    <div id={`matchup-${kind}`}>
+    <div id={kind === "offense-single" ? "matchup-offense" : "matchup-defense"}>
       <Flex direction="column" gap="xlarge">
         {grouped.map((list, i) => {
           if (list.length === 0) {

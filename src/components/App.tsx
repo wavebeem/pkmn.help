@@ -1,6 +1,5 @@
 import { clsx } from "clsx";
 import {
-  MouseEvent,
   ReactNode,
   useCallback,
   useEffect,
@@ -10,7 +9,6 @@ import {
 } from "react";
 import { useTranslation } from "react-i18next";
 import {
-  NavLink,
   Navigate,
   Outlet,
   RouterProvider,
@@ -25,6 +23,7 @@ import { useLanguage } from "../hooks/useLanguage";
 import { useMetaThemeColor } from "../hooks/useMetaThemeColor";
 import { usePageTitle } from "../hooks/usePageTitle";
 import { useRouteChangeFixes } from "../hooks/useRouteChangeFixes";
+import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useTheme } from "../hooks/useTheme";
 import { useUpdateSW } from "../hooks/useUpdateSW";
 import { CoverageType, Pokemon } from "../misc/data-types";
@@ -55,11 +54,15 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ScreenError />,
     children: [
-      { index: true, element: <Navigate replace to="/defense/" /> },
+      { index: true, element: <Navigate replace to="/defense/solo/" /> },
       {
         path: "offense",
         children: [
-          { index: true, element: <ScreenOffense mode="combination" /> },
+          { index: true, element: <Navigate replace to="single" /> },
+          {
+            path: "combination",
+            element: <ScreenOffense mode="combination" />,
+          },
           { path: "single", element: <ScreenOffense mode="single" /> },
           {
             path: "coverage",
@@ -84,7 +87,8 @@ const router = createBrowserRouter([
       {
         path: "defense",
         children: [
-          { index: true, element: <ScreenDefense /> },
+          { index: true, element: <Navigate replace to="solo" /> },
+          { path: "solo", element: <ScreenDefense /> },
           { path: "team", element: <ScreenDefenseTeam /> },
         ],
       },
@@ -99,7 +103,7 @@ const router = createBrowserRouter([
       { path: "about", element: <ScreenAbout /> },
       { path: "settings", element: <ScreenSettings /> },
       { path: "_error", element: <Crash /> },
-      { path: "*", element: <Navigate replace to="/defense/" /> },
+      { path: "*", element: <Navigate replace to="/defense/solo/" /> },
     ],
   },
 ]);
@@ -129,6 +133,8 @@ export function Layout(): ReactNode {
 
   // Update this to debug the refresh visuals
   const hasUpdate = needRefresh;
+
+  useScrollToFragment();
 
   async function updateApp() {
     setNeedRefresh(false);
@@ -174,6 +180,8 @@ export function Layout(): ReactNode {
     headerRef.current,
     "backgroundColor",
   );
+
+  const dialogRef = useRef<HTMLDialogElement>(null);
 
   // Load Pokédex JSON
   const jsonURL = new URL("data-pkmn.json", publicPath).href;
@@ -225,19 +233,44 @@ export function Layout(): ReactNode {
     ],
   );
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
   const toggleMenu = useCallback(() => {
-    setIsMenuOpen((m) => !m);
+    if (!dialogRef.current) {
+      return;
+    }
+    if (dialogRef.current.open) {
+      closeMenu();
+    } else {
+      openMenu();
+    }
+  }, []);
+
+  const openMenu = useCallback(() => {
+    if (!dialogRef.current) {
+      return;
+    }
+    dialogRef.current.showModal();
   }, []);
 
   const closeMenu = useCallback(() => {
-    setIsMenuOpen(false);
+    if (!dialogRef.current) {
+      return;
+    }
+    dialogRef.current.close();
   }, []);
+
+  const notMobile = useMediaQuery("(width >= 60rem)");
+
+  useEffect(() => {
+    if (notMobile) {
+      closeMenu();
+    }
+  }, [notMobile]);
 
   usePageTitle(t("title"));
   useMetaThemeColor({ dataTheme, themeColor });
   useRouteChangeFixes();
+
+  // TODO: Intercept the back button and close the dialog if it's open.
 
   return (
     <AppContextProvider value={appContext}>
@@ -284,7 +317,6 @@ export function Layout(): ReactNode {
                 "focus-outline",
               )}
               onClick={toggleMenu}
-              aria-pressed={isMenuOpen ? "true" : "false"}
               aria-label={t("navigation.menu")}
               id="menu-button"
             >
@@ -295,6 +327,22 @@ export function Layout(): ReactNode {
         <aside className={styles.sidebar}>
           <PageNav hasUpdate={hasUpdate} closeMenu={closeMenu} />
         </aside>
+        <dialog className={styles.dialog} ref={dialogRef} id="menu-dialog">
+          <div className={styles.dialogMenuHeader}>
+            <button
+              className={clsx(
+                styles.menuButton,
+                "active-darken-background",
+                "focus-outline",
+              )}
+              onClick={closeMenu}
+              aria-label={t("navigation.close")}
+            >
+              <Icon name="close" size={32} />
+            </button>
+          </div>
+          <PageNav hasUpdate={hasUpdate} closeMenu={closeMenu} />
+        </dialog>
         <div className={styles.content} id="content">
           <Outlet />
         </div>

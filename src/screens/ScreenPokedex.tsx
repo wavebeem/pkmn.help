@@ -1,7 +1,7 @@
 import { matchSorter } from "match-sorter";
 import { ReactNode, useDeferredValue, useEffect, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "../components/CopyButton";
 import { Divider } from "../components/Divider";
@@ -27,6 +27,7 @@ export function ScreenPokedex(): ReactNode {
   const { t, i18n } = useTranslation();
   const { language } = i18n;
   const search = useSearch();
+  const location = useLocation();
   const [query, setQuery] = useSessionStorage("pokedex.query", "");
   const [sortOrder, setSortOrder] = useSessionStorage("pokedex.sortOrder", "");
   const deferredQuery = useDeferredValue(query);
@@ -41,7 +42,7 @@ export function ScreenPokedex(): ReactNode {
     if (search.has("page")) {
       setPage(Number(search.get("page") || 1) - 1);
     }
-    navigate({ search: "" }, { replace: true });
+    navigate({ search: "", hash: location.hash }, { replace: true });
   }, [search]);
 
   const searchablePkmn = useMemo(() => {

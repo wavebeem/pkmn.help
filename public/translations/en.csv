@@ -7,6 +7,7 @@ navigation.other,Other,Other
 navigation.settings,Settings,Settings
 navigation.about,About,About
 navigation.menu,Menu,Menu
+navigation.close,Close,Close
 offense.chooseTypes,Choose attack move types,Choose attack move types
 offense.dealsXTo,Deals {{ x }} damage to these types,Deals {{ x }} damage to these types
 offense.mode.combination,Combination,Combination

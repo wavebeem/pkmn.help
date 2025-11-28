@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { ReactNode, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { Badge } from "../components/Badge";
 import { Button } from "../components/Button";
@@ -16,7 +16,6 @@ import { MultiTypeSelector } from "../components/MultiTypeSelector";
 import { Select } from "../components/Select";
 import { SelectDivider } from "../components/SelectDivider";
 import { useGeneration } from "../hooks/useGeneration";
-import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
 import {
@@ -71,12 +70,11 @@ function setTeraTypeAt({
 }
 
 export function ScreenDefenseTeam(): ReactNode {
-  useScrollToFragment();
-
   const [generation] = useGeneration();
   const { t } = useTranslation();
   const search = useSearch();
   const navigate = useNavigate();
+  const location = useLocation();
   const [format, setFormat] = useSessionStorage<MatchupsTeamProps["format"]>(
     "defenseTeam.format",
     "simple",
@@ -128,7 +126,7 @@ export function ScreenDefenseTeam(): ReactNode {
           .map(abilityNameFromString),
       );
     }
-    navigate({ search: "" }, { replace: true });
+    navigate({ search: "", hash: location.hash }, { replace: true });
   }, [search]);
 
   useEffect(() => {
@@ -152,7 +150,7 @@ export function ScreenDefenseTeam(): ReactNode {
     };
   }
 
-  const permalink = new URL(location.href);
+  const permalink = new URL(window.location.href);
   {
     for (const types of teamTypes) {
       permalink.searchParams.append("types", types.join(" "));

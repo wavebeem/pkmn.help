@@ -7,6 +7,7 @@ navigation.other,Other,
 navigation.settings,Settings,
 navigation.about,About,
 navigation.menu,Menu,
+navigation.close,Close,
 offense.chooseTypes,Choose attack move types,選擇屬性
 offense.dealsXTo,Deals {{ x }} damage to these types,對 {{ x }} 造成傷害
 offense.mode.combination,Combination,

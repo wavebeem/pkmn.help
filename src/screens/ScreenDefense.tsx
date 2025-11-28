@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { Fragment, ReactNode, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "../components/CopyButton";
 import { FancyText } from "../components/FancyText";
@@ -11,7 +11,6 @@ import { MultiTypeSelector } from "../components/MultiTypeSelector";
 import { Select } from "../components/Select";
 import { SelectDivider } from "../components/SelectDivider";
 import { useGeneration } from "../hooks/useGeneration";
-import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
 import {
@@ -25,11 +24,10 @@ import {
 import styles from "./ScreenDefense.module.css";
 
 export function ScreenDefense(): ReactNode {
-  useScrollToFragment();
-
   const [generation] = useGeneration();
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const location = useLocation();
   const [typeCount] = useTypeCount();
   const search = useSearch();
 
@@ -62,7 +60,7 @@ export function ScreenDefense(): ReactNode {
     if (search.has("ability")) {
       setAbility(abilityNameFromString(search.get("ability") || undefined));
     }
-    navigate({ search: "" }, { replace: true });
+    navigate({ search: "", hash: location.hash }, { replace: true });
   }, [search]);
 
   const permalink = new URL(window.location.href);

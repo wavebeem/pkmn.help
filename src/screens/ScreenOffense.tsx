@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { ReactNode, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { Card } from "../components/Card";
 import {
@@ -42,6 +42,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
   const { t, i18n } = useTranslation();
   const search = useSearch();
   const navigate = useNavigate();
+  const location = useLocation();
   const [offenseTypes, setOffenseTypes] = useSessionStorage<Type[]>(
     "offense.types",
     [],
@@ -61,7 +62,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
     if (search.has("abilities")) {
       setAbilities(splitTokens(search.get("abilities") || "") as any);
     }
-    navigate({ search: "" }, { replace: true });
+    navigate({ search: "", hash: location.hash }, { replace: true });
   }, [search]);
 
   useEffect(() => {

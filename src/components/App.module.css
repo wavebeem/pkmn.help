@@ -1,4 +1,10 @@
+:root:has(.dialog:modal) {
+  overflow: hidden;
+}
+
 .root {
+  --header-height: 4.5rem;
+
   flex: auto;
   display: grid;
   gap: 0;
@@ -78,12 +84,42 @@
   padding-bottom: var(--padding4);
 }
 
+.dialog {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  padding-bottom: var(--padding4);
+  background: var(--color-header-base);
+  color: var(--color-header-text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: initial;
+  max-height: initial;
+  width: 100dvw;
+  height: 100dvh;
+  translate: 0 0;
+  scale: 1;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+  transition-property: translate, scale;
+}
+
+.dialog::backdrop {
+  background: var(--color-modal-backdrop);
+}
+
+@starting-style {
+  .dialog {
+    translate: 100% 0%;
+    /* scale: 90%; */
+  }
+}
+
 .content {
   grid-area: content;
   color: var(--color-fg1);
   background: var(--color-bg2);
-  overflow: auto;
-  /* overscroll-behavior: contain; */
 }
 
 .easterEgg {
@@ -144,12 +180,31 @@
   flex-direction: row;
 }
 
+.dialogMenuHeader {
+  min-height: var(--header-height);
+  gap: var(--padding3);
+  padding: var(--padding2) var(--padding3);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
 @media (width < 60rem) {
+  .content * {
+    scroll-margin-top: calc(var(--header-height) + var(--padding2));
+  }
+
   .header {
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--header-height);
     z-index: 1;
     border-bottom: 1px solid var(--color-header-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -356,14 +411,17 @@
   }
 
   .content {
+    overflow: auto;
+    /* overscroll-behavior: contain; */
+
     box-shadow:
       0 0 0 1px var(--color-header-border),
       var(--shadow-sidebar);
     border-top-left-radius: var(--border-radius3);
   }
 
-  .sidebar {
-    border: 0;
+  .dialog {
+    display: none;
   }
 }
 
@@ -378,12 +436,10 @@
   }
 
   .sidebar {
-    padding-block: var(--padding1);
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: 1;
+    display: none;
+  }
+
+  .content {
+    padding-top: var(--header-height);
   }
 }
