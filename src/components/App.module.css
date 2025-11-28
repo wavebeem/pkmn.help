@@ -9,13 +9,16 @@
   display: grid;
   gap: 0;
 
+  /* Overflow scrolling will look better if we use fixed positioning for the
+  header and sidebar, even though it makes the layout code a lot more annoying
+  🙄 */
   grid-template-areas:
     "header"
     "content";
 
   grid-template-rows: auto 1fr;
 
-  height: 100vh;
+  height: 100dvh;
 
   /**
    * Support rendering content inside the "chin" on Android Chrome. This draws the
@@ -26,19 +29,10 @@
    *
    * https://webkit.org/blog/7929/designing-websites-for-iphone-x/
    */
-  /* padding-top: max(env(safe-area-max-inset-top, 0px), env(safe-area-inset-top));
-  padding-bottom: max(
-    env(safe-area-max-inset-bottom, 0px),
-    env(safe-area-inset-bottom)
-  );
-  padding-left: max(
-    env(safe-area-max-inset-left, 0px),
-    env(safe-area-inset-left)
-  );
-  padding-right: max(
-    env(safe-area-max-inset-right, 0px),
-    env(safe-area-inset-right)
-  ); */
+  padding-top: env(safe-area-max-inset-top, 0px);
+  padding-bottom: env(safe-area-max-inset-bottom, 0px);
+  padding-left: env(safe-area-max-inset-left, 0px);
+  padding-right: env(safe-area-max-inset-right, 0px);
 }
 
 .menuButton {
@@ -126,8 +120,8 @@
   pointer-events: none;
   position: fixed;
   z-index: 1;
-  top: 50vh;
-  left: 50vw;
+  top: 50dvh;
+  left: 50dvw;
   translate: -50% -50%;
   scale: 80%;
   rotate: x -30deg;
