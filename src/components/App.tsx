@@ -47,6 +47,7 @@ import styles from "./App.module.css";
 import { Crash } from "./Crash";
 import { Icon } from "./Icon";
 import { MonsterImage } from "./MonsterImage";
+import { PageNav } from "./PageNav";
 
 const router = createBrowserRouter([
   {
@@ -118,8 +119,6 @@ function useTranslationsWithBlankFallback() {
 }
 
 export function Layout(): ReactNode {
-  const tabClass = clsx(styles.tab, "active-darken-background focus-header");
-
   // Service worker
   const {
     needRefresh: [needRefresh, setNeedRefresh],
@@ -232,10 +231,8 @@ export function Layout(): ReactNode {
     setIsMenuOpen((m) => !m);
   }, []);
 
-  const onNavLinkClick = useCallback((event: MouseEvent<HTMLAnchorElement>) => {
-    if (event.currentTarget.getAttribute("aria-current") === "page") {
-      setIsMenuOpen(false);
-    }
+  const closeMenu = useCallback(() => {
+    setIsMenuOpen(false);
   }, []);
 
   usePageTitle(t("title"));
@@ -296,67 +293,7 @@ export function Layout(): ReactNode {
           </div>
         </header>
         <aside className={styles.sidebar}>
-          <nav className={styles.tabBar}>
-            <span className={styles.tabSection}>{t("navigation.offense")}</span>
-            <NavLink
-              onClick={onNavLinkClick}
-              className={tabClass}
-              end
-              to="/offense/"
-            >
-              {t("offense.mode.combination")}
-            </NavLink>
-            <NavLink
-              onClick={onNavLinkClick}
-              className={tabClass}
-              end
-              to="/offense/single/"
-            >
-              {t("offense.mode.single")}
-            </NavLink>
-            <span className={styles.tabSection}>{t("navigation.defense")}</span>
-            <NavLink
-              onClick={onNavLinkClick}
-              className={tabClass}
-              end
-              to="/defense/"
-            >
-              {t("defense.mode.solo")}
-            </NavLink>
-            <NavLink
-              onClick={onNavLinkClick}
-              className={tabClass}
-              end
-              to="/defense/team/"
-            >
-              {t("defense.mode.team")}
-            </NavLink>
-            <span className={styles.tabSection}>{t("navigation.other")}</span>
-            <NavLink
-              onClick={onNavLinkClick}
-              className={tabClass}
-              end
-              to="/pokedex/"
-            >
-              {t("navigation.pokedex")}
-            </NavLink>
-            <NavLink
-              onClick={onNavLinkClick}
-              className={clsx(tabClass)}
-              end
-              to="/settings/"
-            >
-              {t("navigation.settings")}
-            </NavLink>
-            <NavLink
-              onClick={onNavLinkClick}
-              className={clsx(tabClass, hasUpdate && styles.pleaseUpdate)}
-              end
-              to="/about/"
-            >
-              {t("navigation.about")}
-            </NavLink>
-          </nav>
+          <PageNav hasUpdate={hasUpdate} closeMenu={closeMenu} />
         </aside>
         <div className={styles.content} id="content">
           <Outlet />
