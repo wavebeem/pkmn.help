@@ -11,6 +11,7 @@ export type AppContext = {
   easterEggLoadedID: string;
   needsAppUpdate: boolean;
   updateApp: () => Promise<void>;
+  closeMenu: () => void;
 };
 
 const AppContext = createContext<AppContext>({
@@ -23,6 +24,7 @@ const AppContext = createContext<AppContext>({
   easterEggLoadedID: "",
   needsAppUpdate: false,
   updateApp: async () => {},
+  closeMenu: () => {},
 });
 
 export const AppContextProvider = AppContext.Provider;

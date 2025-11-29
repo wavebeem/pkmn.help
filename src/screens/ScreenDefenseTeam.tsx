@@ -101,6 +101,9 @@ export function ScreenDefenseTeam(): ReactNode {
   }, [typeCount]);
 
   useEffect(() => {
+    if (!location.search) {
+      return;
+    }
     if (search.has("format")) {
       setFormat((search.get("format") || "simple") as any);
     }
@@ -126,8 +129,8 @@ export function ScreenDefenseTeam(): ReactNode {
           .map(abilityNameFromString),
       );
     }
-    navigate({ search: "", hash: location.hash }, { replace: true });
-  }, [search, location.hash]);
+    navigate({ ...location, search: "" }, { replace: true });
+  }, [search, location]);
 
   useEffect(() => {
     setTeamTypes((teamTypes) => {

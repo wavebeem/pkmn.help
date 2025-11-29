@@ -36,14 +36,17 @@ export function ScreenPokedex(): ReactNode {
   const navigate = useNavigate();
 
   useEffect(() => {
+    if (!location.search) {
+      return;
+    }
     if (search.has("q")) {
       setQuery(search.get("q") || "");
     }
     if (search.has("page")) {
       setPage(Number(search.get("page") || 1) - 1);
     }
-    navigate({ search: "", hash: location.hash }, { replace: true });
-  }, [search, location.hash]);
+    navigate({ ...location, search: "" }, { replace: true });
+  }, [search, location]);
 
   const searchablePkmn = useMemo(() => {
     return allPokemon.map((p) => {
