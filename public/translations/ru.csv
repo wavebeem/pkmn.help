@@ -3,7 +3,11 @@ title,Pokémon Type Calculator,Калькулятор Типов Покемон�
 navigation.offense,Offense,Нападение
 navigation.defense,Defense,Оборона
 navigation.pokedex,Pokédex,Покедекс
-navigation.more,More,Больше
+navigation.other,Other,
+navigation.settings,Settings,
+navigation.about,About,
+navigation.menu,Menu,
+navigation.close,Close,
 offense.chooseTypes,Choose attack move types,Выберите Типы
 offense.dealsXTo,Deals {{ x }} damage to these types,Наносит {{ x }}
 offense.mode.combination,Combination,

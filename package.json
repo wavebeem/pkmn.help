@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "name": "pkmn.help",
   "type": "module",
-  "description": "The Pokémon Type Calculator (https://pkmn.help)",
+  "description": "pkmn.help - The Pokémon Type Calculator",
   "scripts": {
     "copy-translations": "tsx ./bin/copy-translations.ts",
     "delete-translations": "tsx ./bin/delete-translations.ts",

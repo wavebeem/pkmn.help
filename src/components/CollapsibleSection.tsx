@@ -27,8 +27,8 @@ export function CollapsibleSection({
         )}
       >
         {heading}
-        <Icon className={styles.icon} size={iconSize} name="open" />
-        <Icon className={styles.icon} size={iconSize} name="closed" />
+        <Icon className={styles.icon} size={iconSize} name="plus" />
+        <Icon className={styles.icon} size={iconSize} name="minus" />
       </summary>
       {children}
     </details>

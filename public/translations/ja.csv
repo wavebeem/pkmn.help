@@ -3,7 +3,11 @@ title,Pokémon Type Calculator,ポケモン タイプ けいさんき
 navigation.offense,Offense,オフェンス
 navigation.defense,Defense,デフェンス
 navigation.pokedex,Pokédex,ポケモンずかん
-navigation.more,More,その他
+navigation.other,Other,
+navigation.settings,Settings,
+navigation.about,About,
+navigation.menu,Menu,
+navigation.close,Close,
 offense.chooseTypes,Choose attack move types,複数のタイプを選択
 offense.dealsXTo,Deals {{ x }} damage to these types,{{ x }}を与える
 offense.mode.combination,Combination,

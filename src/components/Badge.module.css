@@ -33,27 +33,11 @@
 }
 
 .label {
-  /* NOTE: Using `-webkit-text-stroke` + `paint-order` is a lot less messy...
-  but looks slightly less good. Maybe something to think about later. */
   --_c: var(--type-color-bg);
   line-height: 1;
-  text-shadow:
-    0 1px 0 var(--_c),
-    1px 0 0 var(--_c),
-    -1px 0 0 var(--_c),
-    0 -1px 0 var(--_c),
-    1px 1px 0 var(--_c),
-    1px -1px 0 var(--_c),
-    -1px 1px 0 var(--_c),
-    -1px -1px 0 var(--_c),
-    0 1px 0 var(--_c),
-    1px 0 1px var(--_c),
-    -1px 0 1px var(--_c),
-    0 -1px 1px var(--_c),
-    1px 1px 1px var(--_c),
-    1px -1px 1px var(--_c),
-    -1px 1px 1px var(--_c),
-    -1px -1px 1px var(--_c);
+  -webkit-text-stroke: 3px var(--_c);
+  paint-order: stroke fill;
+  text-shadow: 0 0 4px var(--_c);
   font-weight: var(--weight-medium);
   font-stretch: ultra-condensed;
 }

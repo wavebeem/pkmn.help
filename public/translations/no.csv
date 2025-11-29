@@ -3,7 +3,11 @@ title,Pokémon Type Calculator,Pokémon Type Kalkulator
 navigation.offense,Offense,Angrep
 navigation.defense,Defense,Forsvar
 navigation.pokedex,Pokédex,Pokédexen
-navigation.more,More,Mer
+navigation.other,Other,
+navigation.settings,Settings,
+navigation.about,About,
+navigation.menu,Menu,
+navigation.close,Close,
 offense.chooseTypes,Choose attack move types,Velg typer
 offense.dealsXTo,Deals {{ x }} damage to these types,Gjør {{ x }} til
 offense.mode.combination,Combination,

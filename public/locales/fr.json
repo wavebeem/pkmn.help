@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "Offense",
     "defense": "Défense",
-    "pokedex": "Pokédex",
-    "more": "Autres"
+    "pokedex": "Pokédex"
   },
   "offense": {
     "chooseTypes": "Choisissez les types",

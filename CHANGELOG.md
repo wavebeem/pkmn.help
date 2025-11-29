@@ -1,5 +1,32 @@
 # Changelog
 
+## 2025-11-28
+
+- Updated page navigation
+
+  - Desktop gets a full navigation sidebar
+
+  - Mobile gets a fixed header with a hamburger menu
+
+  - Reorganized **More** into **Settings** and **About** pages
+
+- Updated URLs
+
+  - `/offense/` → `/offense/combination/`
+
+  - `/defense/` → `/defense/solo/`
+
+- Updated site icon
+
+  - If you have the site installed as an app on your phone/computer, you will
+    need to uninstall the app and then install it again to get the new icon
+
+    - This is just a limitation of installing web apps, as far as I know
+
+- Updated theme colors
+
+- Updated logo and title
+
 ## 2025-11-13
 
 - Updated French translation

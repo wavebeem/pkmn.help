@@ -1,5 +1,5 @@
 import { clsx } from "clsx";
-import { ReactNode } from "react";
+import { Fragment, ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { characters } from "../misc/characters";
 import { Generation } from "../misc/data-generations";
@@ -76,7 +76,7 @@ export function Matchups({
 
   if (kind === "offense-combination") {
     return (
-      <div id={`matchup-${kind}`}>
+      <div id={`matchup-offense`}>
         <Flex direction="column" gap="xlarge">
           <Flex direction="column" gap="small">
             <FancyText tag="h2" fontWeight="medium" fontSize="large">
@@ -96,9 +96,9 @@ export function Matchups({
                   </tr>
                 </thead>
                 <tbody>
-                  {effs.map((eff) => {
+                  {effs.map((eff, i) => {
                     return (
-                      <tr>
+                      <tr key={i}>
                         <td className={styles.tableNumber}>
                           {formatEffectiveness(eff, i18n.languages)}
                         </td>
@@ -184,16 +184,14 @@ export function Matchups({
                           }
                           return x.types.map((t, i) => {
                             return (
-                              <>
-                                {i > 0 ? (
-                                  <Icon name="closed" size={32} />
-                                ) : null}
+                              <Fragment key={i}>
+                                {i > 0 ? <Icon name="plus" size={32} /> : null}
                                 <Badge
                                   key={`type-${t}`}
                                   type={t}
                                   variant="ghost"
                                 />
-                              </>
+                              </Fragment>
                             );
                           });
                         })}
@@ -210,7 +208,7 @@ export function Matchups({
   }
 
   return (
-    <div id={`matchup-${kind}`}>
+    <div id={kind === "offense-single" ? "matchup-offense" : "matchup-defense"}>
       <Flex direction="column" gap="xlarge">
         {grouped.map((list, i) => {
           if (list.length === 0) {

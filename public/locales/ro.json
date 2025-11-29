@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "Atac",
     "defense": "Protecție",
-    "pokedex": "Pokédex",
-    "more": "Mai mult"
+    "pokedex": "Pokédex"
   },
   "offense": {
     "chooseTypes": "Alege tipuri",

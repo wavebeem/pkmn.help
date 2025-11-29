@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "Нападение",
     "defense": "Оборона",
-    "pokedex": "Покедекс",
-    "more": "Больше"
+    "pokedex": "Покедекс"
   },
   "offense": {
     "chooseTypes": "Выберите Типы",

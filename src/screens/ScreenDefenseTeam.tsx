@@ -1,13 +1,12 @@
 import { clsx } from "clsx";
 import { ReactNode, useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { Badge } from "../components/Badge";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import { CopyButton } from "../components/CopyButton";
-import { DefenseTabs } from "../components/DefenseTabs";
 import { Divider } from "../components/Divider";
 import { EmptyState } from "../components/EmptyState";
 import { FancyText } from "../components/FancyText";
@@ -17,7 +16,6 @@ import { MultiTypeSelector } from "../components/MultiTypeSelector";
 import { Select } from "../components/Select";
 import { SelectDivider } from "../components/SelectDivider";
 import { useGeneration } from "../hooks/useGeneration";
-import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
 import {
@@ -72,12 +70,11 @@ function setTeraTypeAt({
 }
 
 export function ScreenDefenseTeam(): ReactNode {
-  useScrollToFragment();
-
   const [generation] = useGeneration();
   const { t } = useTranslation();
   const search = useSearch();
   const navigate = useNavigate();
+  const location = useLocation();
   const [format, setFormat] = useSessionStorage<MatchupsTeamProps["format"]>(
     "defenseTeam.format",
     "simple",
@@ -129,8 +126,8 @@ export function ScreenDefenseTeam(): ReactNode {
           .map(abilityNameFromString),
       );
     }
-    navigate({ search: "" }, { replace: true });
-  }, [search]);
+    navigate({ search: "", hash: location.hash }, { replace: true });
+  }, [search, location.hash]);
 
   useEffect(() => {
     setTeamTypes((teamTypes) => {
@@ -153,7 +150,7 @@ export function ScreenDefenseTeam(): ReactNode {
     };
   }
 
-  const permalink = new URL(location.href);
+  const permalink = new URL(window.location.href);
   {
     for (const types of teamTypes) {
       permalink.searchParams.append("types", types.join(" "));
@@ -179,10 +176,6 @@ export function ScreenDefenseTeam(): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
-      <div className={styles.tabBar}>
-        <DefenseTabs />
-      </div>
-
       <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="large">
           <Flex direction="column" gap="medium">

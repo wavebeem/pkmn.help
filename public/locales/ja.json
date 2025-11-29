@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "オフェンス",
     "defense": "デフェンス",
-    "pokedex": "ポケモンずかん",
-    "more": "その他"
+    "pokedex": "ポケモンずかん"
   },
   "offense": {
     "chooseTypes": "複数のタイプを選択",

@@ -21,11 +21,11 @@
   align-items: center;
 }
 
-.details:not([open]) > .summary > [data-icon-name="open"] {
+.details:not([open]) > .summary > [data-icon-name="minus"] {
   display: none;
 }
 
-.details[open] > .summary > [data-icon-name="closed"] {
+.details[open] > .summary > [data-icon-name="plus"] {
   display: none;
 }
 

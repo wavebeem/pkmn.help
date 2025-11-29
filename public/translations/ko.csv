@@ -3,7 +3,11 @@ title,Pokémon Type Calculator,포켓몬 타입 계산기
 navigation.offense,Offense,공격
 navigation.defense,Defense,방어
 navigation.pokedex,Pokédex,포켓몬 도감
-navigation.more,More,더보기
+navigation.other,Other,
+navigation.settings,Settings,
+navigation.about,About,
+navigation.menu,Menu,
+navigation.close,Close,
 offense.chooseTypes,Choose attack move types,타입 선택
 offense.dealsXTo,Deals {{ x }} damage to these types,{{x}} 데미지
 offense.mode.combination,Combination,

@@ -1,12 +1,20 @@
 import { clsx } from "clsx";
-import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
+import {
+  ReactNode,
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import { useTranslation } from "react-i18next";
 import {
-  NavLink,
   Navigate,
   Outlet,
   RouterProvider,
   createBrowserRouter,
+  useLocation,
+  useNavigate,
 } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
@@ -16,6 +24,8 @@ import { useFetchJSON } from "../hooks/useFetchJSON";
 import { useLanguage } from "../hooks/useLanguage";
 import { useMetaThemeColor } from "../hooks/useMetaThemeColor";
 import { usePageTitle } from "../hooks/usePageTitle";
+import { useRouteChangeFixes } from "../hooks/useRouteChangeFixes";
+import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useTheme } from "../hooks/useTheme";
 import { useUpdateSW } from "../hooks/useUpdateSW";
 import { CoverageType, Pokemon } from "../misc/data-types";
@@ -23,18 +33,22 @@ import { detectLanguage } from "../misc/detectLanguage";
 import { formatPokemonName } from "../misc/formatPokemonName";
 import { randomItem } from "../misc/random";
 import { publicPath } from "../misc/settings";
+import { ScreenAbout } from "../screens/ScreenAbout";
 import { ScreenCoverageList } from "../screens/ScreenCoverageList";
 import { ScreenDefense } from "../screens/ScreenDefense";
 import { ScreenDefenseTeam } from "../screens/ScreenDefenseTeam";
 import { ScreenError } from "../screens/ScreenError";
-import { ScreenMore } from "../screens/ScreenMore";
 import { ScreenOffense } from "../screens/ScreenOffense";
 import { ScreenPokedex } from "../screens/ScreenPokedex";
 import { ScreenPokedexHelp } from "../screens/ScreenPokedexHelp";
+import { ScreenSettings } from "../screens/ScreenSettings";
+import { ScreenTranslation } from "../screens/ScreenTranslation";
 import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
 import styles from "./App.module.css";
 import { Crash } from "./Crash";
+import { Icon } from "./Icon";
 import { MonsterImage } from "./MonsterImage";
+import { PageNav } from "./PageNav";
 
 const router = createBrowserRouter([
   {
@@ -42,11 +56,15 @@ const router = createBrowserRouter([
     element: <Layout />,
     errorElement: <ScreenError />,
     children: [
-      { index: true, element: <Navigate replace to="/defense/" /> },
+      { index: true, element: <Navigate replace to="/defense/solo/" /> },
       {
         path: "offense",
         children: [
-          { index: true, element: <ScreenOffense mode="combination" /> },
+          { index: true, element: <Navigate replace to="single" /> },
+          {
+            path: "combination",
+            element: <ScreenOffense mode="combination" />,
+          },
           { path: "single", element: <ScreenOffense mode="single" /> },
           {
             path: "coverage",
@@ -71,7 +89,8 @@ const router = createBrowserRouter([
       {
         path: "defense",
         children: [
-          { index: true, element: <ScreenDefense /> },
+          { index: true, element: <Navigate replace to="solo" /> },
+          { path: "solo", element: <ScreenDefense /> },
           { path: "team", element: <ScreenDefenseTeam /> },
         ],
       },
@@ -82,9 +101,11 @@ const router = createBrowserRouter([
           { path: "help", element: <ScreenPokedexHelp /> },
         ],
       },
-      { path: "more", element: <ScreenMore /> },
+      { path: "translation", element: <ScreenTranslation /> },
+      { path: "about", element: <ScreenAbout /> },
+      { path: "settings", element: <ScreenSettings /> },
       { path: "_error", element: <Crash /> },
-      { path: "*", element: <Navigate replace to="/defense/" /> },
+      { path: "*", element: <Navigate replace to="/defense/solo/" /> },
     ],
   },
 ]);
@@ -104,7 +125,8 @@ function useTranslationsWithBlankFallback() {
 }
 
 export function Layout(): ReactNode {
-  const tabClass = clsx(styles.tab, "active-darken focus-header");
+  const location = useLocation();
+  const navigate = useNavigate();
 
   // Service worker
   const {
@@ -113,6 +135,10 @@ export function Layout(): ReactNode {
     updateServiceWorker,
   } = useRegisterSW();
   useUpdateSW();
+
+  // Update this to debug the refresh visuals
+  // const needsAppUpdate = true;
+  const needsAppUpdate = needRefresh;
 
   async function updateApp() {
     setNeedRefresh(false);
@@ -159,6 +185,8 @@ export function Layout(): ReactNode {
     "backgroundColor",
   );
 
+  const dialogRef = useRef<HTMLDialogElement>(null);
+
   // Load Pokédex JSON
   const jsonURL = new URL("data-pkmn.json", publicPath).href;
   const allPokemonResponse = useFetchJSON<Pokemon[]>(jsonURL);
@@ -192,7 +220,7 @@ export function Layout(): ReactNode {
       easterEggPokemon: easterEgg,
       fallbackCoverageTypes,
       isLoading,
-      needsAppUpdate: needRefresh,
+      needsAppUpdate,
       setCoverageTypes,
       updateApp,
     }),
@@ -203,14 +231,58 @@ export function Layout(): ReactNode {
       easterEggLoadedID,
       fallbackCoverageTypes,
       isLoading,
-      needRefresh,
+      needsAppUpdate,
       setCoverageTypes,
       updateApp,
     ],
   );
 
+  // Show/hide dialog based on URL fragment
+  useEffect(() => {
+    if (!dialogRef.current) {
+      return;
+    }
+    if (location.hash === "#menu") {
+      dialogRef.current.showModal();
+    } else {
+      dialogRef.current.close();
+    }
+  }, [location.hash]);
+
+  const openMenu = useCallback(() => {
+    if (location.hash === "#menu") {
+      if (dialogRef.current) {
+        dialogRef.current.showModal();
+      }
+    } else {
+      navigate({ hash: "#menu" });
+    }
+  }, [location.hash]);
+
+  const closeMenu = useCallback(() => {
+    if (location.hash !== "") {
+      navigate({ hash: "" }, { replace: true });
+    } else {
+      if (dialogRef.current) {
+        dialogRef.current.close();
+      }
+    }
+  }, [location.hash]);
+
+  const notMobile = useMediaQuery("(width >= 60rem)");
+
+  useEffect(() => {
+    if (notMobile) {
+      closeMenu();
+    }
+  }, [notMobile]);
+
   usePageTitle(t("title"));
   useMetaThemeColor({ dataTheme, themeColor });
+  useScrollToFragment();
+  useRouteChangeFixes();
+
+  // TODO: Intercept the back button and close the dialog if it's open.
 
   return (
     <AppContextProvider value={appContext}>
@@ -230,10 +302,9 @@ export function Layout(): ReactNode {
       <div className={styles.root}>
         <header className={styles.header} ref={headerRef}>
           <div className={clsx(styles.headerContent, "content-wide center")}>
-            <h1 className={styles.heading}>
+            <div className={styles.heading}>
               <button
                 className={styles.pokeball}
-                aria-hidden={true}
                 onClick={(event) => {
                   event.preventDefault();
                   const pkmn = randomItem(AllPokemon);
@@ -242,31 +313,60 @@ export function Layout(): ReactNode {
                   }
                   setEasterEgg(pkmn);
                 }}
-              />
-              <NavLink to="/" className="focus-header">
-                {t("title")}
-              </NavLink>
-            </h1>
-            <nav className={styles.tabBar}>
-              <NavLink className={tabClass} to="/offense/">
-                {t("navigation.offense")}
-              </NavLink>
-              <NavLink className={tabClass} to="/defense/">
-                {t("navigation.defense")}
-              </NavLink>
-              <NavLink className={tabClass} to="/pokedex/">
-                {t("navigation.pokedex")}
-              </NavLink>
-              <NavLink
-                className={clsx(tabClass, needRefresh && styles.pleaseUpdate)}
-                to="/more/"
               >
-                {t("navigation.more")}
-              </NavLink>
-            </nav>
+                <img
+                  src={new URL("/app-logo.svg", publicPath).href}
+                  width={32}
+                  height={32}
+                  // Intentionally not translated. This is the name of the
+                  // website, not its description.
+                  alt="pkmn.help"
+                />
+              </button>
+              <hgroup className={styles.titleStack}>
+                <h1 className={styles.title}>
+                  <span>pkmn</span>.help
+                </h1>
+                <p className={styles.subtitle}>{t("title")}</p>
+              </hgroup>
+            </div>
+            <button
+              className={clsx(
+                styles.menuButton,
+                needsAppUpdate && styles.pleaseUpdate,
+                "active-darken-background",
+                "focus-outline",
+              )}
+              onClick={openMenu}
+              aria-label={t("navigation.menu")}
+              id="menu-button"
+            >
+              <Icon name="menuHamburger" size={32} />
+            </button>
           </div>
         </header>
-        <Outlet />
+        <aside className={styles.sidebar}>
+          <PageNav hasUpdate={needsAppUpdate} closeMenu={closeMenu} />
+        </aside>
+        <dialog className={styles.dialog} ref={dialogRef} id="menu-dialog">
+          <div className={styles.dialogMenuHeader}>
+            <button
+              className={clsx(
+                styles.menuButton,
+                "active-darken-background",
+                "focus-outline",
+              )}
+              onClick={closeMenu}
+              aria-label={t("navigation.close")}
+            >
+              <Icon name="close" size={32} />
+            </button>
+          </div>
+          <PageNav hasUpdate={needsAppUpdate} closeMenu={closeMenu} />
+        </dialog>
+        <div className={styles.content} id="content">
+          <Outlet />
+        </div>
       </div>
     </AppContextProvider>
   );

@@ -2,9 +2,21 @@
   background: var(--color-bg2);
   color: var(--color-fg1);
   line-height: 1.5;
-  overscroll-behavior: none;
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-tap-highlight-color */
   -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  font-synthesis: none;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
 }
 
 [hidden] {

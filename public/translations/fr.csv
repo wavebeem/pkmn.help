@@ -3,12 +3,16 @@ title,Pokémon Type Calculator,Calculateur de types Pokémon
 navigation.offense,Offense,Offense
 navigation.defense,Defense,Défense
 navigation.pokedex,Pokédex,Pokédex
-navigation.more,More,Autres
+navigation.other,Other,
+navigation.settings,Settings,
+navigation.about,About,
+navigation.menu,Menu,
+navigation.close,Close,
 offense.chooseTypes,Choose attack move types,Choisissez les types
 offense.dealsXTo,Deals {{ x }} damage to these types,Inflige {{ x }} à
 offense.mode.combination,Combination,Combinaison
 offense.mode.single,Single,Solo
-offense.matchups.summary.heading,Matchup summary,Sommaire de smatch-ups
+offense.matchups.summary.heading,Matchup summary,Sommaire des match-ups
 offense.matchups.summary.damage,Damage,Dégâts
 offense.matchups.summary.combinations.heading,Combinations,Combinaisons
 offense.matchups.summary.combinations.empty,No types,Aucun type

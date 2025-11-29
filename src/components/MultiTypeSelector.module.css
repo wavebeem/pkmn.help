@@ -20,23 +20,9 @@
 
 .button[aria-pressed="true"] .text {
   --_c: #0002;
-  text-shadow:
-    0 1px 0 var(--_c),
-    1px 0 0 var(--_c),
-    -1px 0 0 var(--_c),
-    0 -1px 0 var(--_c),
-    1px 1px 0 var(--_c),
-    1px -1px 0 var(--_c),
-    -1px 1px 0 var(--_c),
-    -1px -1px 0 var(--_c),
-    0 1px 0 var(--_c),
-    1px 0 1px var(--_c),
-    -1px 0 1px var(--_c),
-    0 -1px 1px var(--_c),
-    1px 1px 1px var(--_c),
-    1px -1px 1px var(--_c),
-    -1px 1px 1px var(--_c),
-    -1px -1px 1px var(--_c);
+  -webkit-text-stroke: 2px var(--_c);
+  paint-order: stroke fill;
+  text-shadow: 0 0 4px var(--_c);
 }
 
 .button[aria-pressed="false"] {

@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "Шабуыл",
     "defense": "Қорғаныс",
-    "pokedex": "Покедекс",
-    "more": "Тағы"
+    "pokedex": "Покедекс"
   },
   "offense": {
     "chooseTypes": "Типтер Таңдау",

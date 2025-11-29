@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "Tấn Công",
     "defense": "Phòng Thủ",
-    "pokedex": "Pokédex",
-    "more": "Thêm"
+    "pokedex": "Pokédex"
   },
   "offense": {
     "chooseTypes": "Chọn hệ",

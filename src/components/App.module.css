@@ -1,13 +1,132 @@
+:root:has(.dialog:modal) {
+  overflow: hidden;
+}
+
 .root {
+  --header-height: 4.5rem;
+
   flex: auto;
+  display: grid;
+  gap: 0;
+
+  /* Overflow scrolling will look better if we use fixed positioning for the
+  header and sidebar, even though it makes the layout code a lot more annoying
+  🙄 */
+  grid-template-areas:
+    "header"
+    "content";
+
+  grid-template-rows: auto 1fr;
+
+  height: 100dvh;
+
+  /**
+   * Support rendering content inside the "chin" on Android Chrome. This draws the
+   * gesture bar over the top of the viewport, rather than creating a smaller
+   * viewport that sits above the chin.
+   *
+   * https://developer.chrome.com/docs/css-ui/edge-to-edge
+   *
+   * https://webkit.org/blog/7929/designing-websites-for-iphone-x/
+   */
+  padding-top: env(safe-area-max-inset-top, 0px);
+  padding-bottom: env(safe-area-max-inset-bottom, 0px);
+  padding-left: env(safe-area-max-inset-left, 0px);
+  padding-right: env(safe-area-max-inset-right, 0px);
+}
+
+.menuButton {
+  display: flex;
+  border: 1px solid var(--color-header-highlight);
+  padding: var(--padding1);
+  background: transparent;
+  color: inherit;
+  border-radius: var(--border-radius2);
+  text-shadow: inherit;
+}
+
+.menuButton[aria-pressed="true"] {
+  background: var(--color-header-text);
+  color: var(--color-header-dark);
+  border-color: transparent;
+}
+
+@media (width >= 60rem) {
+  .menuButton {
+    display: none;
+  }
+
+  .sidebar {
+    overflow: auto;
+    scrollbar-color: var(--color-header-text) transparent;
+  }
+}
+
+.header {
+  grid-area: header;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding3);
+  color: var(--color-header-text);
+  background: var(--color-header-base);
+}
+
+.sidebar {
+  display: block;
+  grid-area: sidebar;
+  margin: 0;
+  border: 0;
+  background: var(--color-header-base);
+  color: var(--color-header-text);
+  padding-bottom: var(--padding4);
+}
+
+.dialog {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  padding-bottom: var(--padding4);
+  background: var(--color-header-base);
+  color: var(--color-header-text);
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: initial;
+  max-height: initial;
+  width: 100dvw;
+  height: 100dvh;
+  translate: 0 0;
+  scale: 1;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+  transition-property: translate, scale;
+}
+
+.dialog::backdrop {
+  background: var(--color-modal-backdrop);
+}
+
+@starting-style {
+  .dialog {
+    translate: 100% 0%;
+    /* scale: 90%; */
+  }
+}
+
+.content {
+  grid-area: content;
+  color: var(--color-fg1);
+  background: var(--color-bg2);
 }
 
 .easterEgg {
   pointer-events: none;
   position: fixed;
   z-index: 1;
-  top: 50vh;
-  left: 50vw;
+  top: 50dvh;
+  left: 50dvw;
   translate: -50% -50%;
   scale: 80%;
   rotate: x -30deg;
@@ -50,48 +169,91 @@
   }
 }
 
-.header {
-  text-shadow:
-    0 0 1px hsl(0 0% 0% / 25%),
-    0 1px 4px hsl(0 0% 0% / 30%);
-  display: flex;
-  flex-direction: column;
-  gap: var(--padding3);
-  color: var(--color-header-text);
-  background: var(--color-header-base);
-  border-bottom: 1px solid var(--color-header-border);
-  margin: 0;
-}
-
 .headerContent {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  gap: var(--padding2);
+  padding: var(--padding2) var(--padding3);
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.dialogMenuHeader {
+  min-height: var(--header-height);
   gap: var(--padding3);
-  padding: var(--padding3);
+  padding: var(--padding2) var(--padding3);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+@media (width < 60rem) {
+  .content * {
+    scroll-margin-top: calc(var(--header-height) + var(--padding2));
+  }
+
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: var(--header-height);
+    z-index: 1;
+    border-bottom: 1px solid var(--color-header-border);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: var(--shadow-header);
+  }
 }
 
 @media (width >= 60rem) {
   .headerContent {
+    gap: var(--padding2);
+    padding: var(--padding2);
     align-items: center;
-    justify-content: space-between;
-    flex-direction: row;
+    max-width: initial;
   }
 }
 
 .heading {
-  font-size: 1.75rem;
-  font-weight: 600;
-  font-stretch: ultra-condensed;
-  letter-spacing: var(--logo-letter-spacing);
   line-height: 1.15;
 
   color: var(--color-header-text);
   margin: 0;
-  display: flex;
   align-items: center;
   flex-direction: row;
-  gap: var(--padding2);
+  gap: var(--padding3);
+
+  display: flex;
+  justify-content: center;
+}
+
+.titleStack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding1);
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: var(--font-size0);
+  font-weight: var(--weight-normal);
+  margin: 0;
+}
+
+@media (width < 22rem) {
+  .subtitle {
+    font-stretch: ultra-condensed;
+  }
 }
 
 :where(
@@ -104,7 +266,7 @@
     [lang="nl"]
   )
   .heading {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 :where(
@@ -117,12 +279,23 @@
     [lang="ru"]
   )
   .heading {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 @media (width >= 60rem) {
   .heading {
+    gap: var(--padding2);
     font-size: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .titleStack {
+    flex-direction: row;
+    align-items: center;
+    gap: var(--padding3);
   }
 }
 
@@ -132,33 +305,20 @@
 }
 
 .pokeball {
-  --color-top1: hsl(var(--hue-blue) 30% 100%);
-  --color-top2: hsl(var(--hue-blue) 30% 90%);
-  --color-bottom1: hsl(var(--hue-blue) 30% 90%);
-  --color-bottom2: hsl(var(--hue-blue) 30% 80%);
-  --color-border: hsl(var(--hue-red) 90% 30%);
-  --size: 30px;
-  position: relative;
   padding: 0;
   border: 0;
+  background: transparent;
+  color: inherit;
   color: white;
-  background: linear-gradient(
-    to bottom,
-    var(--color-top1),
-    var(--color-top2) calc(50% - 2px),
-    var(--color-border) calc(50% - 1.5px) calc(50% + 1.5px),
-    var(--color-bottom1) calc(50% + 2px),
-    var(--color-bottom2)
-  );
-  box-shadow:
-    inset 0 0 0 1px hsl(0 0% 100% / 20%),
-    0 1px 2px hsl(0 0% 0% / 30%);
   flex: none;
-  width: var(--size);
-  height: var(--size);
+  display: flex;
+  width: max-content;
+  height: max-content;
   border-radius: 9999px;
-  background-clip: border-box;
-  animation: 0.5s ease-in-out alternate pokeballJiggle;
+  animation-duration: 500ms;
+  animation-direction: alternate;
+  animation-name: pokeballJiggle;
+  animation-timing-function: ease-in-out;
   animation-delay: 1s;
   transition: transform 200ms;
   transition-timing-function: ease-in-out;
@@ -167,9 +327,11 @@
 @keyframes pokeballJiggle {
   30% {
     rotate: -20deg;
+    scale: 1.05;
   }
   70% {
     rotate: 20deg;
+    scale: 0.95;
   }
 }
 
@@ -178,21 +340,6 @@
     animation: none;
     transition: none;
   }
-}
-
-.pokeball::after {
-  box-sizing: border-box;
-  --size: 12px;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  border-radius: 9999px;
-  width: var(--size);
-  height: var(--size);
-  border: 3px solid var(--color-border);
-  background: hsl(var(--hue-blue) 30% 95%);
 }
 
 @media (hover) {
@@ -222,46 +369,64 @@
 .pleaseUpdate::after {
   content: "";
   position: absolute;
-  top: -4px;
+  /* top: 50%; */
   right: -4px;
-  width: 16px;
-  height: 16px;
+  width: 12px;
+  height: 12px;
+  translate: 0 -50%;
   border-radius: 9999px;
   background: var(--color-header-text);
-  box-shadow:
-    0 0 0 1px var(--color-header-dark),
-    0 0 0 3px var(--color-header-base);
-}
-
-.tabBar {
-  gap: var(--padding2);
-  flex-wrap: wrap;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
+  box-shadow: 0 0 0 3px var(--color-header-base);
 }
 
 @media (width >= 60rem) {
-  .tabBar {
-    display: flex;
+  .root {
+    --header-height: round(up, 4rem, 1px);
+    --sidebar-width: round(up, 22ch, 16px);
+
+    grid-template-areas:
+      "......   header "
+      "sidebar  content";
+    grid-template-columns: minmax(auto, var(--sidebar-width)) 1fr;
+    grid-template-rows: var(--header-height) 1fr;
+
+    background: var(--color-header-base);
+    color: var(--color-header-text);
+  }
+
+  .content {
+    overflow: auto;
+
+    box-shadow:
+      0 0 0 1px var(--color-header-border),
+      var(--shadow-header);
+    border-top-left-radius: var(--border-radius3);
+  }
+
+  .dialog {
+    display: none;
+  }
+
+  .subtitle {
+    font-size: var(--font-size2);
   }
 }
 
-.tab {
-  text-decoration: none;
-  padding: var(--padding1) var(--padding3);
-  text-align: center;
-  border-radius: var(--border-radius2);
-  background: var(--color-header-base);
-  border: 1px solid var(--color-header-highlight);
-  color: var(--color-header-text);
-  font-weight: var(--weight-medium);
-  outline-color: currentColor;
-}
+@media (width < 60rem) {
+  :where(:has(.menuButton[aria-pressed="false"])) .sidebar {
+    translate: 0% 100%;
+  }
 
-.tab[aria-current="page"] {
-  border-color: var(--color-header-text);
-  background: var(--color-header-text);
-  color: var(--color-header-dark);
-  text-shadow: none;
+  :where(:has(.menuButton[aria-pressed="true"])) .sidebar {
+    translate: 0 0;
+    box-shadow: 0 0 0 200vmax #0008;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .content {
+    padding-top: var(--header-height);
+  }
 }

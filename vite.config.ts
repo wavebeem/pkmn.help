@@ -5,7 +5,7 @@ import { VitePWA } from "vite-plugin-pwa";
 import * as fs from "fs";
 import * as path from "path";
 
-const iconVersion = 6;
+const iconVersion = 7;
 
 function readJSON(filename: string): any {
   const text = fs.readFileSync(filename, "utf-8");
@@ -211,16 +211,17 @@ export default defineConfig((env) => {
               purpose: "maskable",
             },
           ],
-          theme_color: "hsl(0 80% 30%)",
-          background_color: "hsl(0 80% 30%)",
+          theme_color: "hsl(0 70% 40%)",
+          background_color: "hsl(0 70% 40%)",
           display: "standalone",
         },
-        // These files are downloaded in the background automatically and stored
-        // in the service worker cache.
+        // These files are downloaded in the background automatically on first
+        // page load and stored in the service worker cache.
         includeAssets: [
           "data-pkmn.json",
           "locales/*.json",
           "manifest.json",
+          "app-logo.svg",
           "app-icon-regular-*.png",
           "app-icon-*.png",
           "fonts/*.woff2",

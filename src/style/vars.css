@@ -5,34 +5,42 @@ something. */
 :root,
 [data-theme="light"] {
   --hue-blue: 230;
-  --hue-red: 0;
+  --hue-red: 355;
   --hue-teal: 200;
 
   --color-bg1: hsl(var(--hue-blue) 10% 100%);
   --color-bg2: hsl(var(--hue-blue) 10% 90%);
   --color-bg-ghost: hsl(var(--hue-blue) 10% 100% / 50%);
+
   --color-card-bg: hsl(var(--hue-blue) 10% 94%);
   --color-card-highlight: hsl(var(--hue-blue) 10% 100%);
   --color-card-shadow: hsl(var(--hue-blue) 10% 80%);
+
   --color-fg1: hsl(var(--hue-blue) 15% 7%);
   --color-fg2: hsl(var(--hue-blue) 15% 20%);
   --color-fg3: hsl(var(--hue-blue) 15% 40%);
   --color-fg4: hsl(var(--hue-blue) 15% 60%);
-  --color-accent-bg: hsl(var(--hue-blue) 15% 20%);
+
+  --color-accent-bg: hsl(var(--hue-blue) 15% 30%);
   --color-accent-fg: hsl(var(--hue-blue) 5% 100%);
-  --color-header-dark: hsl(var(--hue-red) 80% 30%);
-  --color-header-base: hsl(var(--hue-red) 80% 40%);
-  --color-header-highlight: hsl(var(--hue-red) 50% 65%);
+
+  --color-header-dark: hsl(var(--hue-red) 70% 30%);
+  --color-header-base: hsl(var(--hue-red) 70% 40%);
+  --color-header-highlight: hsl(var(--hue-red) 50% 55%);
   --color-header-text: #fff;
-  --color-header-border: hsl(var(--hue-red) 80% 30%);
+  --color-header-border: hsl(var(--hue-red) 70% 30%);
+
   --color-button1: hsl(var(--hue-blue) 10% 100%);
   --color-button1b: hsl(var(--hue-blue) 10% 96%);
+
   --color-link: hsl(var(--hue-blue) 100% 50%);
+
   --color-border1: hsl(var(--hue-blue) 10% 50%);
   --color-border2: hsl(var(--hue-blue) 10% 70%);
   --color-border3: hsl(var(--hue-blue) 10% 80%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 0% / 20%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 0% / 60%);
+
   --color-scroll-fg: hsl(var(--hue-blue) 10% 20%);
   --color-scroll-bg: hsl(var(--hue-blue) 10% 85%);
 
@@ -58,6 +66,9 @@ something. */
   --border-radius3: 16px;
   --border-radius-pill: 9999px;
 
+  --color-modal-backdrop: hsl(var(--hue-blue) 10% 20% / 50%);
+
+  --shadow-header: 0 0 8px rgb(0 0 0 / 10%);
   --shadow-button: 0 1px 0 rgb(0 0 0 / 10%);
   --shadow-inset: inset 0 1px 0 rgb(0 0 0 / 10%);
 
@@ -77,11 +88,9 @@ something. */
   --font-sans: "Roboto", system-ui, sans-serif;
 
   --type-min-width: 6rem;
-  --type-text-shadow: 0 0 2px #000f, 0 0 8px #0008, 0 0 16px #0008;
 
   font-family: var(--font-sans);
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
-  overflow-y: scroll;
   color-scheme: light;
 }
 
@@ -101,33 +110,39 @@ something. */
 }
 
 [data-theme="dark"] {
-  --color-bg1: hsl(var(--hue-blue) 10% 28%);
+  --color-bg1: hsl(var(--hue-blue) 10% 22%);
   --color-bg2: hsl(var(--hue-blue) 10% 14%);
   --color-bg-ghost: hsl(var(--hue-blue) 10% 40% / 20%);
+
   --color-card-bg: hsl(var(--hue-blue) 10% 20%);
   --color-card-highlight: hsl(var(--hue-blue) 10% 32%);
   --color-card-shadow: hsl(var(--hue-blue) 10% 12%);
+
   --color-fg1: hsl(var(--hue-blue) 15% 92%);
   --color-fg2: hsl(var(--hue-blue) 15% 82%);
   --color-fg3: hsl(var(--hue-blue) 15% 72%);
   --color-fg4: hsl(var(--hue-blue) 15% 62%);
+
   --color-accent-bg: hsl(var(--hue-blue) 15% 82%);
   --color-accent-fg: hsl(var(--hue-blue) 10% 7%);
-  --color-header-dark: hsl(var(--hue-red) 70% 30%);
-  --color-header-base: hsl(var(--hue-red) 70% 35%);
-  --color-header-highlight: hsl(var(--hue-red) 40% 55%);
+
+  --color-header-dark: hsl(var(--hue-red) 60% 30%);
+  --color-header-base: hsl(var(--hue-red) 60% 35%);
+  --color-header-highlight: hsl(var(--hue-red) 40% 45%);
+  --color-header-border: hsl(var(--hue-red) 40% 45%);
   --color-header-text: #fff;
-  --color-header-border: hsl(var(--hue-red) 40% 50%);
+
   --color-button1: hsl(var(--hue-blue) 10% 28%);
   --color-button1b: hsl(var(--hue-blue) 10% 22%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
   --color-border1: hsl(var(--hue-blue) 10% 48%);
   --color-border2: hsl(var(--hue-blue) 10% 37%);
-  --color-border3: hsl(var(--hue-blue) 10% 37%);
+  --color-border3: hsl(var(--hue-blue) 10% 27%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 40%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
   --color-scroll-fg: hsl(var(--hue-blue) 10% 70%);
   --color-scroll-bg: hsl(var(--hue-blue) 10% 15%);
+
   color-scheme: dark;
 }
 
@@ -135,58 +150,69 @@ something. */
   --color-bg1: hsl(var(--hue-blue) 10% 15%);
   --color-bg2: hsl(var(--hue-blue) 10% 5%);
   --color-bg-ghost: hsl(var(--hue-blue) 10% 40% / 20%);
+
   --color-card-bg: hsl(var(--hue-blue) 10% 15%);
   --color-card-highlight: hsl(var(--hue-blue) 10% 25%);
   --color-card-shadow: hsl(var(--hue-blue) 10% 2%);
-  --color-fg1: hsl(var(--hue-blue) 15% 82%);
-  --color-fg2: hsl(var(--hue-blue) 15% 72%);
-  --color-fg3: hsl(var(--hue-blue) 15% 62%);
-  --color-fg4: hsl(var(--hue-blue) 15% 52%);
+
+  --color-fg1: hsl(var(--hue-blue) 10% 82%);
+  --color-fg2: hsl(var(--hue-blue) 10% 72%);
+  --color-fg3: hsl(var(--hue-blue) 10% 62%);
+  --color-fg4: hsl(var(--hue-blue) 10% 52%);
+
   --color-accent-bg: hsl(var(--hue-blue) 15% 72%);
   --color-accent-fg: hsl(var(--hue-blue) 15% 5%);
-  --color-header-dark: hsl(var(--hue-blue) 5% 5%);
-  --color-header-base: hsl(var(--hue-blue) 5% 10%);
-  --color-header-highlight: hsl(var(--hue-blue) 5% 30%);
-  --color-header-text: hsl(var(--hue-blue) 5% 82%);
-  --color-header-border: hsl(var(--hue-blue) 5% 20%);
+
+  --color-header-dark: hsl(var(--hue-blue) 10% 5%);
+  --color-header-base: hsl(var(--hue-blue) 10% 10%);
+  --color-header-highlight: hsl(var(--hue-blue) 10% 30%);
+  --color-header-border: hsl(var(--hue-blue) 10% 30%);
+  --color-header-text: hsl(var(--hue-blue) 10% 82%);
+
   --color-button1: hsl(var(--hue-blue) 10% 25%);
   --color-button1b: hsl(var(--hue-blue) 10% 15%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
   --color-border1: hsl(var(--hue-blue) 10% 47%);
   --color-border2: hsl(var(--hue-blue) 10% 35%);
-  --color-border3: hsl(var(--hue-blue) 10% 35%);
+  --color-border3: hsl(var(--hue-blue) 10% 25%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 50%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
   --color-scroll-fg: hsl(var(--hue-blue) 10% 62%);
   --color-scroll-bg: hsl(var(--hue-blue) 10% 5%);
+
   color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
   [data-theme="auto"] {
-    --color-bg1: hsl(var(--hue-blue) 10% 28%);
+    --color-bg1: hsl(var(--hue-blue) 10% 22%);
     --color-bg2: hsl(var(--hue-blue) 10% 14%);
     --color-bg-ghost: hsl(var(--hue-blue) 10% 40% / 20%);
+
     --color-card-bg: hsl(var(--hue-blue) 10% 20%);
     --color-card-highlight: hsl(var(--hue-blue) 10% 32%);
     --color-card-shadow: hsl(var(--hue-blue) 10% 12%);
+
     --color-fg1: hsl(var(--hue-blue) 15% 92%);
     --color-fg2: hsl(var(--hue-blue) 15% 82%);
     --color-fg3: hsl(var(--hue-blue) 15% 72%);
     --color-fg4: hsl(var(--hue-blue) 15% 62%);
+
     --color-accent-bg: hsl(var(--hue-blue) 15% 82%);
     --color-accent-fg: hsl(var(--hue-blue) 10% 7%);
-    --color-header-dark: hsl(var(--hue-red) 70% 30%);
-    --color-header-base: hsl(var(--hue-red) 70% 35%);
-    --color-header-highlight: hsl(var(--hue-red) 40% 55%);
+
+    --color-header-dark: hsl(var(--hue-red) 60% 30%);
+    --color-header-base: hsl(var(--hue-red) 60% 35%);
+    --color-header-highlight: hsl(var(--hue-red) 40% 45%);
+    --color-header-border: hsl(var(--hue-red) 40% 45%);
     --color-header-text: #fff;
-    --color-header-border: hsl(var(--hue-red) 40% 50%);
+
     --color-button1: hsl(var(--hue-blue) 10% 28%);
     --color-button1b: hsl(var(--hue-blue) 10% 22%);
     --color-link: hsl(var(--hue-teal) 90% 75%);
     --color-border1: hsl(var(--hue-blue) 10% 48%);
     --color-border2: hsl(var(--hue-blue) 10% 37%);
-    --color-border3: hsl(var(--hue-blue) 10% 37%);
+    --color-border3: hsl(var(--hue-blue) 10% 27%);
     --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 40%);
     --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
     --color-scroll-fg: hsl(var(--hue-blue) 10% 70%);

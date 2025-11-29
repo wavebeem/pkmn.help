@@ -3,8 +3,7 @@
   "navigation": {
     "offense": "Angreb",
     "defense": "Beskyttelse",
-    "pokedex": "Pokédex",
-    "more": "Mere"
+    "pokedex": "Pokédex"
   },
   "offense": {
     "chooseTypes": "Vælg typer/type",
