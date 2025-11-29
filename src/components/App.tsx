@@ -13,6 +13,8 @@ import {
   Outlet,
   RouterProvider,
   createBrowserRouter,
+  useLocation,
+  useNavigate,
 } from "react-router-dom";
 import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
@@ -134,8 +136,6 @@ export function Layout(): ReactNode {
   // Update this to debug the refresh visuals
   const hasUpdate = needRefresh;
 
-  useScrollToFragment();
-
   async function updateApp() {
     setNeedRefresh(false);
     await updateServiceWorker(true);
@@ -248,6 +248,7 @@ export function Layout(): ReactNode {
     if (!dialogRef.current) {
       return;
     }
+    navigate({ hash: "menu" });
     dialogRef.current.showModal();
   }, []);
 
@@ -266,8 +267,12 @@ export function Layout(): ReactNode {
     }
   }, [notMobile]);
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
   usePageTitle(t("title"));
   useMetaThemeColor({ dataTheme, themeColor });
+  useScrollToFragment();
   useRouteChangeFixes();
 
   // TODO: Intercept the back button and close the dialog if it's open.
