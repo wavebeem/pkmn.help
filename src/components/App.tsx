@@ -125,6 +125,9 @@ function useTranslationsWithBlankFallback() {
 }
 
 export function Layout(): ReactNode {
+  const location = useLocation();
+  const navigate = useNavigate();
+
   // Service worker
   const {
     needRefresh: [needRefresh, setNeedRefresh],
@@ -233,31 +236,37 @@ export function Layout(): ReactNode {
     ],
   );
 
-  const toggleMenu = useCallback(() => {
+  // Show/hide dialog based on URL fragment
+  useEffect(() => {
     if (!dialogRef.current) {
       return;
     }
-    if (dialogRef.current.open) {
-      closeMenu();
+    if (location.hash === "#menu") {
+      dialogRef.current.showModal();
     } else {
-      openMenu();
+      dialogRef.current.close();
     }
-  }, []);
+  }, [location.hash]);
 
   const openMenu = useCallback(() => {
-    if (!dialogRef.current) {
-      return;
+    if (location.hash === "#menu") {
+      if (dialogRef.current) {
+        dialogRef.current.showModal();
+      }
+    } else {
+      navigate({ hash: "#menu" });
     }
-    navigate({ hash: "menu" });
-    dialogRef.current.showModal();
-  }, []);
+  }, [location.hash]);
 
   const closeMenu = useCallback(() => {
-    if (!dialogRef.current) {
-      return;
+    if (location.hash !== "") {
+      navigate({ hash: "" }, { replace: true });
+    } else {
+      if (dialogRef.current) {
+        dialogRef.current.close();
+      }
     }
-    dialogRef.current.close();
-  }, []);
+  }, [location.hash]);
 
   const notMobile = useMediaQuery("(width >= 60rem)");
 
@@ -266,9 +275,6 @@ export function Layout(): ReactNode {
       closeMenu();
     }
   }, [notMobile]);
-
-  const location = useLocation();
-  const navigate = useNavigate();
 
   usePageTitle(t("title"));
   useMetaThemeColor({ dataTheme, themeColor });
@@ -297,7 +303,8 @@ export function Layout(): ReactNode {
           <div className={clsx(styles.headerContent, "content-wide center")}>
             <div className={styles.heading}>
               <button
-                // TODO: Translate this?
+                // Intentionally not translated. This is the name of the
+                // website, not its description.
                 aria-label="pkmn.help"
                 className={styles.pokeball}
                 onClick={(event) => {
@@ -321,7 +328,7 @@ export function Layout(): ReactNode {
                 "active-darken-background",
                 "focus-outline",
               )}
-              onClick={toggleMenu}
+              onClick={openMenu}
               aria-label={t("navigation.menu")}
               id="menu-button"
             >

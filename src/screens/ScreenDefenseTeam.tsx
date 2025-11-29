@@ -127,7 +127,7 @@ export function ScreenDefenseTeam(): ReactNode {
       );
     }
     navigate({ search: "", hash: location.hash }, { replace: true });
-  }, [search]);
+  }, [search, location.hash]);
 
   useEffect(() => {
     setTeamTypes((teamTypes) => {

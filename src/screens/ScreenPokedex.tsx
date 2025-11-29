@@ -43,7 +43,7 @@ export function ScreenPokedex(): ReactNode {
       setPage(Number(search.get("page") || 1) - 1);
     }
     navigate({ search: "", hash: location.hash }, { replace: true });
-  }, [search]);
+  }, [search, location.hash]);
 
   const searchablePkmn = useMemo(() => {
     return allPokemon.map((p) => {

@@ -13,10 +13,5 @@ export function useRouteChangeFixes(): void {
       content.scrollTo(0, 0);
       root.scrollTo(0, 0);
     }
-
-    const menuDialog = document.querySelector("#menu-dialog");
-    if (menuDialog instanceof HTMLDialogElement) {
-      menuDialog.close();
-    }
   }, [location.pathname, location.hash]);
 }

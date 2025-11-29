@@ -63,7 +63,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
       setAbilities(splitTokens(search.get("abilities") || "") as any);
     }
     navigate({ search: "", hash: location.hash }, { replace: true });
-  }, [search]);
+  }, [search, location.hash]);
 
   useEffect(() => {
     setOffenseTypes((offenseTypes) =>
