@@ -88,7 +88,6 @@ something. */
   --font-sans: "Roboto", system-ui, sans-serif;
 
   --type-min-width: 6rem;
-  --type-text-shadow: 0 0 2px #000f, 0 0 8px #0008, 0 0 16px #0008;
 
   font-family: var(--font-sans);
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
