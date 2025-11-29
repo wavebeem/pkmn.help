@@ -13,6 +13,8 @@ import {
   officialLanguagesSet,
 } from "../misc/lang";
 
+// No need to translate this screen, since translators need to be fluent in
+// English anyway.
 export function ScreenTranslation(): ReactNode {
   return (
     <main className="content-narrow center">
@@ -49,7 +51,8 @@ export function ScreenTranslation(): ReactNode {
                 , and many other apps.
               </FancyText>
               <FancyText tag="p">
-                Send me the translated file via email when you&apos;re done (
+                Send me (Sage) the translated file via email when you&apos;re
+                done (
                 <ExternalLink href="mailto:pkmn@wavebeem.com">
                   pkmn
                   <wbr />
