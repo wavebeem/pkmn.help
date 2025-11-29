@@ -244,11 +244,6 @@
   margin: 0;
 }
 
-/* .title span {
-  text-transform: uppercase;
-  font-stretch: ultra-condensed;
-} */
-
 .subtitle {
   font-size: var(--font-size0);
   font-weight: var(--weight-normal);
