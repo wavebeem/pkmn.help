@@ -406,7 +406,6 @@
 
   .content {
     overflow: auto;
-    /* overscroll-behavior: contain; */
 
     box-shadow:
       0 0 0 1px var(--color-header-border),
