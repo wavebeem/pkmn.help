@@ -100,7 +100,7 @@
   translate: 0 0;
   scale: 1;
   transition-duration: 200ms;
-  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
   transition-property: translate, scale;
 }
 
@@ -111,7 +111,7 @@
 @starting-style {
   .dialog {
     translate: 100% 0%;
-    /* scale: 90%; */
+    /* scale: 110%; */
   }
 }
 

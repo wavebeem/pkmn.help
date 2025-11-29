@@ -53,6 +53,9 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
   }, [typeLimit, setOffenseTypes]);
 
   useEffect(() => {
+    if (!location.search) {
+      return;
+    }
     if (search.has("types")) {
       setOffenseTypes(typesFromString(search.get("types") || ""));
     }
@@ -62,8 +65,8 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
     if (search.has("abilities")) {
       setAbilities(splitTokens(search.get("abilities") || "") as any);
     }
-    navigate({ search: "", hash: location.hash }, { replace: true });
-  }, [search, location.hash]);
+    navigate({ ...location, search: "" }, { replace: true });
+  }, [search, location]);
 
   useEffect(() => {
     setOffenseTypes((offenseTypes) =>

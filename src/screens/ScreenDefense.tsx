@@ -46,6 +46,9 @@ export function ScreenDefense(): ReactNode {
   }, [typeCount]);
 
   useEffect(() => {
+    if (!location.search) {
+      return;
+    }
     if (search.has("types")) {
       setTypes(
         typesFromString(search.get("types") || "normal").slice(
@@ -60,8 +63,8 @@ export function ScreenDefense(): ReactNode {
     if (search.has("ability")) {
       setAbility(abilityNameFromString(search.get("ability") || undefined));
     }
-    navigate({ search: "", hash: location.hash }, { replace: true });
-  }, [search]);
+    navigate({ ...location, search: "" }, { replace: true });
+  }, [search, location]);
 
   const permalink = new URL(window.location.href);
   {

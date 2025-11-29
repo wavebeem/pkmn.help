@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025-11-29
+
+- Updated French translation
+
+- Updated hamburger menu closing logic
+
 ## 2025-11-28
 
 - Updated page navigation

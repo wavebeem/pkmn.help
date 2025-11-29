@@ -1,24 +1,25 @@
-import { MouseEvent, ReactNode, useCallback } from "react";
-import styles from "./PageNav.module.css";
-import { NavLink } from "react-router-dom";
 import { clsx } from "clsx";
+import { MouseEvent, ReactNode, useCallback } from "react";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
+import { useAppContext } from "../hooks/useAppContext";
+import styles from "./PageNav.module.css";
 
-export type PageNavProps = {
-  hasUpdate: boolean;
-  closeMenu: () => void;
-};
+export type PageNavProps = {};
 
-export function PageNav({ hasUpdate, closeMenu }: PageNavProps): ReactNode {
+export function PageNav({}: PageNavProps): ReactNode {
   const tabClass = clsx(styles.tab, "active-darken-background focus-header");
-
+  const { needsAppUpdate, closeMenu } = useAppContext();
   const { t } = useTranslation();
 
-  const onNavLinkClick = useCallback((event: MouseEvent<HTMLAnchorElement>) => {
-    if (event.currentTarget.getAttribute("aria-current") === "page") {
-      closeMenu();
-    }
-  }, []);
+  const onNavLinkClick = useCallback(
+    (event: MouseEvent<HTMLAnchorElement>) => {
+      if (event.currentTarget.getAttribute("aria-current") === "page") {
+        closeMenu();
+      }
+    },
+    [closeMenu],
+  );
 
   return (
     <nav className={styles.tabBar}>
@@ -70,7 +71,7 @@ export function PageNav({ hasUpdate, closeMenu }: PageNavProps): ReactNode {
       </NavLink>
       <NavLink
         onClick={onNavLinkClick}
-        className={clsx(tabClass, hasUpdate && styles.pleaseUpdate)}
+        className={clsx(tabClass, needsAppUpdate && styles.pleaseUpdate)}
         end
         to="/about/"
       >

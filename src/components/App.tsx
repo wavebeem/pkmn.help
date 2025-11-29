@@ -9,6 +9,7 @@ import {
 } from "react";
 import { useTranslation } from "react-i18next";
 import {
+  Location,
   Navigate,
   Outlet,
   RouterProvider,
@@ -212,6 +213,42 @@ export function Layout(): ReactNode {
     setAllPokemon(allPokemon);
   }, [allPokemonResponse, language]);
 
+  // Show/hide dialog based on history
+  useEffect(() => {
+    if (!dialogRef.current) {
+      return;
+    }
+    if (location.state?.type !== "menu.open" && dialogRef.current.open) {
+      dialogRef.current.close();
+    }
+  }, [location]);
+
+  const openMenu = useCallback(() => {
+    if (location.state?.type !== "menu.open") {
+      navigate(location, { state: { type: "menu.open" } });
+    }
+    if (dialogRef.current) {
+      dialogRef.current.showModal();
+    }
+  }, [location, navigate]);
+
+  const closeMenu = useCallback(() => {
+    if (location.state?.type === "menu.open") {
+      navigate(-1);
+    }
+    if (dialogRef.current) {
+      dialogRef.current.close();
+    }
+  }, [location, navigate]);
+
+  const notMobile = useMediaQuery("(width >= 60rem)");
+
+  useEffect(() => {
+    if (notMobile) {
+      closeMenu();
+    }
+  }, [notMobile]);
+
   const appContext = useMemo<AppContext>(
     () => ({
       allPokemon: AllPokemon,
@@ -223,6 +260,7 @@ export function Layout(): ReactNode {
       needsAppUpdate,
       setCoverageTypes,
       updateApp,
+      closeMenu,
     }),
     [
       AllPokemon,
@@ -234,48 +272,9 @@ export function Layout(): ReactNode {
       needsAppUpdate,
       setCoverageTypes,
       updateApp,
+      closeMenu,
     ],
   );
-
-  // Show/hide dialog based on URL fragment
-  useEffect(() => {
-    if (!dialogRef.current) {
-      return;
-    }
-    if (location.hash === "#menu") {
-      dialogRef.current.showModal();
-    } else {
-      dialogRef.current.close();
-    }
-  }, [location.hash]);
-
-  const openMenu = useCallback(() => {
-    if (location.hash === "#menu") {
-      if (dialogRef.current) {
-        dialogRef.current.showModal();
-      }
-    } else {
-      navigate({ hash: "#menu" });
-    }
-  }, [location.hash]);
-
-  const closeMenu = useCallback(() => {
-    if (location.hash !== "") {
-      navigate({ hash: "" }, { replace: true });
-    } else {
-      if (dialogRef.current) {
-        dialogRef.current.close();
-      }
-    }
-  }, [location.hash]);
-
-  const notMobile = useMediaQuery("(width >= 60rem)");
-
-  useEffect(() => {
-    if (notMobile) {
-      closeMenu();
-    }
-  }, [notMobile]);
 
   usePageTitle(t("title"));
   useMetaThemeColor({ dataTheme, themeColor });
@@ -346,7 +345,7 @@ export function Layout(): ReactNode {
           </div>
         </header>
         <aside className={styles.sidebar}>
-          <PageNav hasUpdate={needsAppUpdate} closeMenu={closeMenu} />
+          <PageNav />
         </aside>
         <dialog className={styles.dialog} ref={dialogRef} id="menu-dialog">
           <div className={styles.dialogMenuHeader}>
@@ -362,7 +361,7 @@ export function Layout(): ReactNode {
               <Icon name="close" size={32} />
             </button>
           </div>
-          <PageNav hasUpdate={needsAppUpdate} closeMenu={closeMenu} />
+          <PageNav />
         </dialog>
         <div className={styles.content} id="content">
           <Outlet />
