@@ -6,6 +6,9 @@
 
 - Updated hamburger menu closing logic
 
+- Fixed incorrect text stroke on "None" type in the Combination Offense
+  calculator
+
 ## 2025-11-28
 
 - Updated page navigation

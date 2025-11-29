@@ -44,4 +44,5 @@
 
 .badge[data-type="none"] .label {
   text-shadow: none;
+  -webkit-text-stroke: initial;
 }
