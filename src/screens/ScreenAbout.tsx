@@ -21,24 +21,21 @@ export function ScreenAbout(): ReactNode {
       <Flex direction="column" padding="large">
         <Flex direction="column" gap="large">
           {needsAppUpdate && (
-            <>
-              <Flex padding="medium" />
-              <Card>
-                <Flex gap="medium" align="center">
-                  <Flex direction="column" flex="auto">
-                    <FancyText tag="span" fontSize="large" fontWeight="medium">
-                      {t("banners.updateReady.description")}
-                    </FancyText>
-                    <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
-                      {t("banners.updateReady.whatsNew")}
-                    </ExternalLink>
-                  </Flex>
-                  <Button type="button" onClick={updateApp}>
-                    {t("banners.updateReady.update")}
-                  </Button>
+            <Card>
+              <Flex gap="medium" align="center">
+                <Flex direction="column" flex="auto">
+                  <FancyText tag="span" fontSize="large" fontWeight="medium">
+                    {t("banners.updateReady.description")}
+                  </FancyText>
+                  <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
+                    {t("banners.updateReady.whatsNew")}
+                  </ExternalLink>
                 </Flex>
-              </Card>
-            </>
+                <Button type="button" onClick={updateApp}>
+                  {t("banners.updateReady.update")}
+                </Button>
+              </Flex>
+            </Card>
           )}
           <Section
             heading={

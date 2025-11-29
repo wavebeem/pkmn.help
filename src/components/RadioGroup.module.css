@@ -15,13 +15,9 @@
   overflow: hidden;
   box-shadow: var(--shadow-button);
   background:
-    radial-gradient(
-        100% 50% at top,
-        var(--color-button1b),
-        var(--color-button1)
-      )
+    radial-gradient(100% 50% at top, var(--color-bg2), var(--color-bg1))
       content-box,
-    linear-gradient(var(--color-button1) 0 100%) border-box var(--color-button1);
+    linear-gradient(var(--color-bg1) 0 100%) border-box var(--color-bg2);
 }
 
 .item {

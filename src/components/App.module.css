@@ -55,6 +55,11 @@
   .menuButton {
     display: none;
   }
+
+  .sidebar {
+    overflow: auto;
+    scrollbar-color: var(--color-header-text) transparent;
+  }
 }
 
 .header {
@@ -199,6 +204,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    box-shadow: var(--shadow-header);
   }
 }
 
@@ -246,7 +253,6 @@
 @media (width < 22rem) {
   .subtitle {
     font-stretch: ultra-condensed;
-    letter-spacing: var(--logo-letter-spacing);
   }
 }
 
@@ -277,9 +283,17 @@
 }
 
 @media (width >= 60rem) {
+  .header {
+    height: var(--header-height);
+  }
+
   .heading {
     gap: var(--padding2);
     font-size: 2rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
   }
 
   .titleStack {
@@ -295,30 +309,20 @@
 }
 
 .pokeball {
-  --color-top1: hsl(var(--hue-blue) 30% 100%);
-  --color-top2: hsl(var(--hue-blue) 30% 100%);
-  --color-bottom1: hsl(var(--hue-blue) 30% 100%);
-  --color-bottom2: hsl(var(--hue-blue) 30% 100%);
-  --color-border: hsl(var(--hue-red) 90% 30%);
-  --size: 24px;
-  position: relative;
   padding: 0;
   border: 0;
+  background: transparent;
+  color: inherit;
   color: white;
-  background: linear-gradient(
-    to bottom,
-    var(--color-top1),
-    var(--color-top2) calc(50% - 2px),
-    var(--color-border) calc(50% - 1.5px) calc(50% + 1.5px),
-    var(--color-bottom1) calc(50% + 2px),
-    var(--color-bottom2)
-  );
   flex: none;
-  width: var(--size);
-  height: var(--size);
+  display: flex;
+  width: max-content;
+  height: max-content;
   border-radius: 9999px;
-  background-clip: border-box;
-  animation: 0.5s ease-in-out alternate pokeballJiggle;
+  animation-duration: 500ms;
+  animation-direction: alternate;
+  animation-name: pokeballJiggle;
+  animation-timing-function: ease-in-out;
   animation-delay: 1s;
   transition: transform 200ms;
   transition-timing-function: ease-in-out;
@@ -327,9 +331,11 @@
 @keyframes pokeballJiggle {
   30% {
     rotate: -20deg;
+    scale: 1.05;
   }
   70% {
     rotate: 20deg;
+    scale: 0.95;
   }
 }
 
@@ -338,21 +344,6 @@
     animation: none;
     transition: none;
   }
-}
-
-.pokeball::after {
-  box-sizing: border-box;
-  --size: 12px;
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  border-radius: 9999px;
-  width: var(--size);
-  height: var(--size);
-  border: 3px solid var(--color-border);
-  background: hsl(var(--hue-blue) 30% 100%);
 }
 
 @media (hover) {
@@ -382,7 +373,7 @@
 .pleaseUpdate::after {
   content: "";
   position: absolute;
-  top: 50%;
+  /* top: 50%; */
   right: -4px;
   width: 12px;
   height: 12px;
@@ -394,10 +385,13 @@
 
 @media (width >= 60rem) {
   .root {
+    --header-height: 4rem;
+
     grid-template-areas:
       "......   header "
       "sidebar  content";
     grid-template-columns: minmax(auto, 22ch) 1fr;
+    /* grid-template-columns: minmax(auto, round(up, 22ch, 16px)) 1fr; */
     grid-template-rows: auto 1fr;
 
     background: var(--color-header-base);
@@ -409,12 +403,16 @@
 
     box-shadow:
       0 0 0 1px var(--color-header-border),
-      var(--shadow-sidebar);
+      var(--shadow-header);
     border-top-left-radius: var(--border-radius3);
   }
 
   .dialog {
     display: none;
+  }
+
+  .subtitle {
+    font-size: var(--font-size2);
   }
 }
 

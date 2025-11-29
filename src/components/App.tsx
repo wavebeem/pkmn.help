@@ -137,7 +137,8 @@ export function Layout(): ReactNode {
   useUpdateSW();
 
   // Update this to debug the refresh visuals
-  const hasUpdate = needRefresh;
+  // const needsAppUpdate = true;
+  const needsAppUpdate = needRefresh;
 
   async function updateApp() {
     setNeedRefresh(false);
@@ -219,7 +220,7 @@ export function Layout(): ReactNode {
       easterEggPokemon: easterEgg,
       fallbackCoverageTypes,
       isLoading,
-      needsAppUpdate: hasUpdate,
+      needsAppUpdate,
       setCoverageTypes,
       updateApp,
     }),
@@ -230,7 +231,7 @@ export function Layout(): ReactNode {
       easterEggLoadedID,
       fallbackCoverageTypes,
       isLoading,
-      hasUpdate,
+      needsAppUpdate,
       setCoverageTypes,
       updateApp,
     ],
@@ -303,9 +304,6 @@ export function Layout(): ReactNode {
           <div className={clsx(styles.headerContent, "content-wide center")}>
             <div className={styles.heading}>
               <button
-                // Intentionally not translated. This is the name of the
-                // website, not its description.
-                aria-label="pkmn.help"
                 className={styles.pokeball}
                 onClick={(event) => {
                   event.preventDefault();
@@ -315,7 +313,16 @@ export function Layout(): ReactNode {
                   }
                   setEasterEgg(pkmn);
                 }}
-              />
+              >
+                <img
+                  src={new URL("/app-logo.svg", publicPath).href}
+                  width={32}
+                  height={32}
+                  // Intentionally not translated. This is the name of the
+                  // website, not its description.
+                  alt="pkmn.help"
+                />
+              </button>
               <hgroup className={styles.titleStack}>
                 <h1 className={styles.title}>pkmn.help</h1>
                 <p className={styles.subtitle}>{t("title")}</p>
@@ -324,7 +331,7 @@ export function Layout(): ReactNode {
             <button
               className={clsx(
                 styles.menuButton,
-                hasUpdate && styles.pleaseUpdate,
+                needsAppUpdate && styles.pleaseUpdate,
                 "active-darken-background",
                 "focus-outline",
               )}
@@ -337,7 +344,7 @@ export function Layout(): ReactNode {
           </div>
         </header>
         <aside className={styles.sidebar}>
-          <PageNav hasUpdate={hasUpdate} closeMenu={closeMenu} />
+          <PageNav hasUpdate={needsAppUpdate} closeMenu={closeMenu} />
         </aside>
         <dialog className={styles.dialog} ref={dialogRef} id="menu-dialog">
           <div className={styles.dialogMenuHeader}>
@@ -353,7 +360,7 @@ export function Layout(): ReactNode {
               <Icon name="close" size={32} />
             </button>
           </div>
-          <PageNav hasUpdate={hasUpdate} closeMenu={closeMenu} />
+          <PageNav hasUpdate={needsAppUpdate} closeMenu={closeMenu} />
         </dialog>
         <div className={styles.content} id="content">
           <Outlet />

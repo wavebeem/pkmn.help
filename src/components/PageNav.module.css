@@ -37,9 +37,26 @@
 .tabSection {
   margin-top: var(--padding2);
   font-weight: var(--weight-medium);
-  font-stretch: ultra-condensed;
+  /* font-stretch: ultra-condensed; */
   padding: var(--padding0) var(--padding3);
   font-size: var(--font-size2);
+}
+
+.pleaseUpdate {
+  position: relative;
+}
+
+.pleaseUpdate::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -4px;
+  width: 12px;
+  height: 12px;
+  translate: 0 -50%;
+  border-radius: 9999px;
+  background: var(--color-header-text);
+  box-shadow: 0 0 0 3px var(--color-header-base);
 }
 
 @media (width >= 60rem) {
