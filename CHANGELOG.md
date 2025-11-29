@@ -25,6 +25,8 @@
 
 - Updated theme colors
 
+- Updated logo and title
+
 ## 2025-11-13
 
 - Updated French translation
