@@ -5,9 +5,7 @@ import { NavLink } from "react-router-dom";
 import { useAppContext } from "../hooks/useAppContext";
 import styles from "./PageNav.module.css";
 
-export type PageNavProps = {};
-
-export function PageNav({}: PageNavProps): ReactNode {
+export function PageNav(): ReactNode {
   const tabClass = clsx(styles.tab, "active-darken-background focus-header");
   const { needsAppUpdate, closeMenu } = useAppContext();
   const { t } = useTranslation();

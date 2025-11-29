@@ -9,7 +9,6 @@ import {
 } from "react";
 import { useTranslation } from "react-i18next";
 import {
-  Location,
   Navigate,
   Outlet,
   RouterProvider,
