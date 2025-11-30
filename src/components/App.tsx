@@ -9,6 +9,7 @@ import {
 } from "react";
 import { useTranslation } from "react-i18next";
 import {
+  NavLink,
   Navigate,
   Outlet,
   RouterProvider,
@@ -364,6 +365,40 @@ export function Layout(): ReactNode {
         </dialog>
         <div className={styles.content} id="content">
           <Outlet />
+        </div>
+        <div className={styles.mobileTabBar}>
+          <NavLink
+            className={styles.mobileTab}
+            end
+            to="/offense/combination/"
+            aria-label={t("offense.mode.combination")}
+          >
+            <Icon name="arrowLeftDouble" />
+          </NavLink>
+          <NavLink
+            className={styles.mobileTab}
+            end
+            to="/offense/single/"
+            aria-label={t("offense.mode.single")}
+          >
+            <Icon name="arrowLeft" />
+          </NavLink>
+          <NavLink
+            className={styles.mobileTab}
+            end
+            to="/defense/solo/"
+            aria-label={t("defense.mode.solo")}
+          >
+            <Icon name="arrowRight" />
+          </NavLink>
+          <NavLink
+            className={styles.mobileTab}
+            end
+            to="/defense/team/"
+            aria-label={t("defense.mode.team")}
+          >
+            <Icon name="arrowRightDouble" />
+          </NavLink>
         </div>
       </div>
     </AppContextProvider>

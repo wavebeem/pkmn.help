@@ -14,25 +14,16 @@
   🙄 */
   grid-template-areas:
     "header"
-    "content";
+    "content"
+    "tabs";
 
   grid-template-rows: auto 1fr;
 
   height: 100dvh;
 
-  /**
-   * Support rendering content inside the "chin" on Android Chrome. This draws the
-   * gesture bar over the top of the viewport, rather than creating a smaller
-   * viewport that sits above the chin.
-   *
-   * https://developer.chrome.com/docs/css-ui/edge-to-edge
-   *
-   * https://webkit.org/blog/7929/designing-websites-for-iphone-x/
-   */
-  padding-top: env(safe-area-max-inset-top, 0px);
-  padding-bottom: env(safe-area-max-inset-bottom, 0px);
-  padding-left: env(safe-area-max-inset-left, 0px);
-  padding-right: env(safe-area-max-inset-right, 0px);
+  /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
+  --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px);
+  --bottom-bar-height: round(up, 6rem, 8px);
 }
 
 .menuButton {
@@ -119,6 +110,11 @@
   grid-area: content;
   color: var(--color-fg1);
   background: var(--color-bg2);
+
+  /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
+  padding-bottom: calc(
+    var(--bottom-bar-height) + var(--safe-area-max-inset-bottom)
+  );
 }
 
 .easterEgg {
@@ -379,6 +375,62 @@
   box-shadow: 0 0 0 3px var(--color-header-base);
 }
 
+.mobileTabBar {
+  grid-area: tabs;
+
+  display: flex;
+  border-top: 1px solid var(--color-header-border);
+  background: var(--color-header-base);
+  color: var(--color-header-text);
+  gap: var(--padding2);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  /**
+   * Support rendering content inside the "chin" on Android Chrome. This draws the
+   * gesture bar over the top of the viewport, rather than creating a smaller
+   * viewport that sits above the chin.
+   *
+   * https://developer.chrome.com/docs/css-ui/edge-to-edge
+   *
+   * https://webkit.org/blog/7929/designing-websites-for-iphone-x/
+   */
+  position: fixed;
+  bottom: 0;
+  width: 100dvw;
+  left: 0;
+  height: var(--bottom-bar-height);
+  padding-top: var(--padding2);
+  padding-inline: var(--padding3);
+  padding-bottom: calc(var(--padding2) + var(--safe-area-max-inset-bottom));
+  bottom: calc(
+    env(safe-area-inset-bottom, 0px) - var(--safe-area-max-inset-bottom)
+  );
+}
+
+.mobileTab {
+  flex: auto;
+  text-align: center;
+  border: 1px solid var(--color-header-highlight);
+  border-radius: var(--border-radius2);
+  color: inherit;
+  text-decoration: none;
+  padding: var(--padding2) var(--padding2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileTab[aria-current="page"] {
+  background: var(--color-header-text);
+  color: var(--color-header-dark);
+  border-color: transparent;
+}
+
+.mobileTab svg {
+  display: block;
+}
+
 @media (width >= 60rem) {
   .root {
     --header-height: round(up, 4rem, 1px);
@@ -409,6 +461,10 @@
 
   .subtitle {
     font-size: var(--font-size2);
+  }
+
+  .mobileTabBar {
+    display: none;
   }
 }
 
