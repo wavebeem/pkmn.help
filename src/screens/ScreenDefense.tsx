@@ -22,7 +22,6 @@ import {
   typesFromString,
 } from "../misc/data-types";
 import styles from "./ScreenDefense.module.css";
-import { IconCopy } from "../components/Icon";
 
 export function ScreenDefense(): ReactNode {
   const [generation] = useGeneration();
