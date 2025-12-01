@@ -157,6 +157,7 @@ export function Matchups({
                                 x: effectivenessDisplay,
                               })}
                             </div>
+                            <div>&nbsp;&nbsp;</div>
                             <Flex flex="auto" />
                             <div>{matchups.typesFor(eff).length}</div>
                             <div>&nbsp;&nbsp;</div>

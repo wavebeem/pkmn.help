@@ -212,6 +212,7 @@ export function ScreenDefenseTeam(): ReactNode {
                         gap="medium"
                       >
                         <IconButton
+                          title={t("defense.team.edit")}
                           aria-label={t("defense.team.edit")}
                           aria-pressed={typeIndex === teamIndex}
                           onClick={() => {
@@ -225,6 +226,7 @@ export function ScreenDefenseTeam(): ReactNode {
                           <IconEdit size={16} />
                         </IconButton>
                         <IconButton
+                          title={t("defense.team.remove")}
                           aria-label={t("defense.team.remove")}
                           onClick={() => {
                             setTeamIndex(-1);

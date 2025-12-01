@@ -4,6 +4,15 @@ import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { useAppContext } from "../hooks/useAppContext";
 import styles from "./PageNav.module.css";
+import {
+  IconAbout,
+  IconDefenseSolo,
+  IconDefenseTeam,
+  IconOffenseDual,
+  IconOffenseSingle,
+  IconPokedex,
+  IconSettings,
+} from "./Icon";
 
 export function PageNav(): ReactNode {
   const tabClass = clsx(styles.tab, "active-darken-background focus-header");
@@ -28,6 +37,7 @@ export function PageNav(): ReactNode {
         end
         to="/offense/combination/"
       >
+        <IconOffenseDual size={16} />
         {t("offense.mode.combination")}
       </NavLink>
       <NavLink
@@ -36,6 +46,7 @@ export function PageNav(): ReactNode {
         end
         to="/offense/single/"
       >
+        <IconOffenseSingle size={16} />
         {t("offense.mode.single")}
       </NavLink>
       <span className={styles.tabSection}>{t("navigation.defense")}</span>
@@ -45,6 +56,7 @@ export function PageNav(): ReactNode {
         end
         to="/defense/solo/"
       >
+        <IconDefenseSolo size={16} />
         {t("defense.mode.solo")}
       </NavLink>
       <NavLink
@@ -53,10 +65,12 @@ export function PageNav(): ReactNode {
         end
         to="/defense/team/"
       >
+        <IconDefenseTeam size={16} />
         {t("defense.mode.team")}
       </NavLink>
       <span className={styles.tabSection}>{t("navigation.other")}</span>
       <NavLink onClick={onNavLinkClick} className={tabClass} end to="/pokedex/">
+        <IconPokedex size={16} />
         {t("navigation.pokedex")}
       </NavLink>
       <NavLink
@@ -65,6 +79,7 @@ export function PageNav(): ReactNode {
         end
         to="/settings/"
       >
+        <IconSettings size={16} />
         {t("navigation.settings")}
       </NavLink>
       <NavLink
@@ -73,6 +88,7 @@ export function PageNav(): ReactNode {
         end
         to="/about/"
       >
+        <IconAbout size={16} />
         {t("navigation.about")}
       </NavLink>
     </nav>

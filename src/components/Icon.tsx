@@ -3,6 +3,10 @@ export {
   Sword as IconOffenseSingle,
   Swords as IconOffenseDual,
   ShieldUser as IconDefenseSolo,
+  // Menu nav
+  Book as IconPokedex,
+  Settings as IconSettings,
+  Info as IconAbout,
   // Monster
   Users as IconDefenseTeam,
   Sparkles as IconShiny,

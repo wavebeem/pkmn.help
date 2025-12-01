@@ -54,6 +54,7 @@ import {
   IconMenu,
   IconOffenseDual,
   IconOffenseSingle,
+  IconPokedex,
 } from "./Icon";
 import { MonsterImage } from "./MonsterImage";
 import { PageNav } from "./PageNav";
@@ -375,51 +376,65 @@ export function Layout(): ReactNode {
         </div>
         <div className={styles.mobileTabBar}>
           <NavLink
-            className={styles.mobileTab}
+            className={clsx(styles.mobileTab, "focus-tab")}
             end
             to="/offense/combination/"
-            aria-label={[
+            aria-label={compositeAriaLabel(
               t("offense.mode.combination"),
               t("navigation.offense"),
-            ].join(" - ")}
+            )}
           >
             <IconOffenseDual />
           </NavLink>
           <NavLink
-            className={styles.mobileTab}
+            className={clsx(styles.mobileTab, "focus-tab")}
             end
             to="/offense/single/"
-            aria-label={[
+            aria-label={compositeAriaLabel(
               t("offense.mode.single"),
               t("navigation.offense"),
-            ].join(" - ")}
+            )}
           >
             <IconOffenseSingle />
           </NavLink>
           <NavLink
-            className={styles.mobileTab}
+            className={clsx(styles.mobileTab, "focus-tab")}
             end
             to="/defense/solo/"
-            aria-label={[t("defense.mode.solo"), t("navigation.defense")].join(
-              " - ",
+            aria-label={compositeAriaLabel(
+              t("defense.mode.solo"),
+              t("navigation.defense"),
             )}
           >
             <IconDefenseSolo />
           </NavLink>
           <NavLink
-            className={styles.mobileTab}
+            className={clsx(styles.mobileTab, "focus-tab")}
             end
             to="/defense/team/"
-            aria-label={[t("defense.mode.team"), t("navigation.defense")].join(
-              " - ",
+            aria-label={compositeAriaLabel(
+              t("defense.mode.team"),
+              t("navigation.defense"),
             )}
           >
             <IconDefenseTeam />
+          </NavLink>
+          <NavLink
+            className={clsx(styles.mobileTab, "focus-tab")}
+            end
+            to="/pokedex/"
+            aria-label={t("navigation.pokedex")}
+          >
+            <IconPokedex />
           </NavLink>
         </div>
       </div>
     </AppContextProvider>
   );
+}
+
+function compositeAriaLabel(...strings: string[]): string {
+  return strings.filter((x) => x).join(", ");
 }
 
 export function App(): ReactNode {

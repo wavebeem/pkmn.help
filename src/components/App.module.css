@@ -105,12 +105,6 @@
   grid-area: content;
   color: var(--color-fg1);
   background: var(--color-bg2);
-
-  /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
-  /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
-  padding-bottom: calc(
-    var(--bottom-bar-height) + var(--safe-area-max-inset-bottom)
-  );
 }
 
 .easterEgg {
@@ -390,7 +384,7 @@
   color: var(--color-fg1);
   gap: var(--padding2);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
 
   /**
    * Support rendering content inside the "chin" on Android Chrome. This draws the
@@ -492,5 +486,10 @@
 
   .content {
     padding-top: var(--header-height);
+    /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
+    /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
+    padding-bottom: calc(
+      var(--bottom-bar-height) + var(--safe-area-max-inset-bottom)
+    );
   }
 }
