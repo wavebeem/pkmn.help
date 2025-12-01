@@ -8,6 +8,8 @@
 
 - Update the site icon
 
+- Fixed an issue with outlined text looking horrible in Safari
+
 ## 2025-11-29
 
 - Updated French translation
