@@ -6,6 +6,10 @@
   background: var(--background-button-bg);
   box-shadow: var(--shadow-button);
   border-color: var(--color-border1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--padding2);
 }
 
 .CopyButton[data-state="copied"] {

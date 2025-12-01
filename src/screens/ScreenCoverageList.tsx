@@ -5,8 +5,9 @@ import { EmptyState } from "../components/EmptyState";
 import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
-import { Icon } from "../components/Icon";
+import { IconBack } from "../components/Icon";
 import { Paginator } from "../components/Paginator";
+import { PlainBadge } from "../components/PlainBadge";
 import { useAppContext } from "../hooks/useAppContext";
 import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
@@ -19,7 +20,6 @@ import {
 } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import styles from "./ScreenCoverageList.module.css";
-import { PlainBadge } from "../components/PlainBadge";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";
@@ -51,10 +51,12 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
           {t(`offense.coverageList.${mode}.heading`)}
         </FancyText>
 
-        <FancyText tag="p" fontSize="large" fontWeight="medium">
-          <Icon name="arrowLeft" />{" "}
-          <FancyLink to="/offense/">{t("coverage.back")}</FancyLink>
-        </FancyText>
+        <Flex gap="small" align="center">
+          <IconBack />
+          <FancyText tag="span" fontSize="large" fontWeight="medium">
+            <FancyLink to="/offense/">{t("coverage.back")}</FancyLink>
+          </FancyText>
+        </Flex>
 
         {types.length > 0 && (
           <Flex wrap gap="medium">
@@ -137,10 +139,12 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
         />
 
         {items.length > 0 && (
-          <FancyText tag="p" fontSize="large" fontWeight="medium">
-            <Icon name="arrowLeft" />{" "}
-            <FancyLink to="/offense/">{t("coverage.back")}</FancyLink>
-          </FancyText>
+          <Flex gap="small" align="center">
+            <IconBack />
+            <FancyText tag="span" fontSize="large" fontWeight="medium">
+              <FancyLink to="/offense/">{t("coverage.back")}</FancyLink>
+            </FancyText>
+          </Flex>
         )}
       </Flex>
     </main>

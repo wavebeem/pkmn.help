@@ -9,7 +9,7 @@ import { ExternalLink } from "./ExternalLink";
 import { FancyLink } from "./FancyLink";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
-import { Icon } from "./Icon";
+import { IconCry, IconShiny } from "./Icon";
 import { IconButton } from "./IconButton";
 import styles from "./Monster.module.css";
 import { MonsterImage } from "./MonsterImage";
@@ -108,7 +108,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
                 }
               }}
             >
-              <Icon name="music" />
+              <IconCry size={16} />
             </IconButton>
           )}
           {pokemon.hasShiny && (
@@ -121,7 +121,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
                 animate();
               }}
             >
-              <Icon name="sparkles" />
+              <IconShiny size={16} />
             </IconButton>
           )}
         </div>

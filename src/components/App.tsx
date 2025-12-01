@@ -48,9 +48,10 @@ import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
 import styles from "./App.module.css";
 import { Crash } from "./Crash";
 import {
-  Icon,
+  IconClose,
   IconDefenseSolo,
   IconDefenseTeam,
+  IconMenu,
   IconOffenseDual,
   IconOffenseSingle,
 } from "./Icon";
@@ -346,7 +347,7 @@ export function Layout(): ReactNode {
               aria-label={t("navigation.menu")}
               id="menu-button"
             >
-              <Icon name="menuHamburger" size={32} />
+              <IconMenu size={24} />
             </button>
           </div>
         </header>
@@ -364,7 +365,7 @@ export function Layout(): ReactNode {
               onClick={closeMenu}
               aria-label={t("navigation.close")}
             >
-              <Icon name="close" size={32} />
+              <IconClose />
             </button>
           </div>
           <PageNav />
@@ -377,7 +378,10 @@ export function Layout(): ReactNode {
             className={styles.mobileTab}
             end
             to="/offense/combination/"
-            aria-label={t("offense.mode.combination")}
+            aria-label={[
+              t("offense.mode.combination"),
+              t("navigation.offense"),
+            ].join(" - ")}
           >
             <IconOffenseDual />
           </NavLink>
@@ -385,7 +389,10 @@ export function Layout(): ReactNode {
             className={styles.mobileTab}
             end
             to="/offense/single/"
-            aria-label={t("offense.mode.single")}
+            aria-label={[
+              t("offense.mode.single"),
+              t("navigation.offense"),
+            ].join(" - ")}
           >
             <IconOffenseSingle />
           </NavLink>
@@ -393,7 +400,9 @@ export function Layout(): ReactNode {
             className={styles.mobileTab}
             end
             to="/defense/solo/"
-            aria-label={t("defense.mode.solo")}
+            aria-label={[t("defense.mode.solo"), t("navigation.defense")].join(
+              " - ",
+            )}
           >
             <IconDefenseSolo />
           </NavLink>
@@ -401,7 +410,9 @@ export function Layout(): ReactNode {
             className={styles.mobileTab}
             end
             to="/defense/team/"
-            aria-label={t("defense.mode.team")}
+            aria-label={[t("defense.mode.team"), t("navigation.defense")].join(
+              " - ",
+            )}
           >
             <IconDefenseTeam />
           </NavLink>

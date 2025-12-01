@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025-11-30
+
+- Added a quick access tab bar for faster mobile navigation
+
+- Updated and added icons in many places
+
 ## 2025-11-29
 
 - Updated French translation

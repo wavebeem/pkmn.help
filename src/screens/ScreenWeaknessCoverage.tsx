@@ -6,7 +6,14 @@ import { Divider } from "../components/Divider";
 import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
+import {
+  IconBack,
+  IconExport,
+  IconImport,
+  IconReset,
+} from "../components/Icon";
 import { Spinner } from "../components/Spinner";
+import { useAppContext } from "../hooks/useAppContext";
 import { useTypeCount } from "../hooks/useTypeCount";
 import {
   Type,
@@ -17,8 +24,6 @@ import {
 import { pickFile } from "../misc/pickFile";
 import { saveFile } from "../misc/saveFile";
 import styles from "./ScreenWeaknessCoverage.module.css";
-import { Icon } from "../components/Icon";
-import { useAppContext } from "../hooks/useAppContext";
 
 export function ScreenWeaknessCoverage(): ReactNode {
   const { setCoverageTypes, fallbackCoverageTypes, isLoading } =
@@ -147,13 +152,20 @@ export function ScreenWeaknessCoverage(): ReactNode {
           <Spinner />
         ) : (
           <div className={styles.buttonGrid}>
-            <Button onClick={saveCSV}>{t("coverage.export.button")}</Button>
+            <Button onClick={saveCSV}>
+              <IconExport /> {t("coverage.export.button")}
+            </Button>
             <span>{t("coverage.export.description")}</span>
 
-            <Button onClick={loadCSV}>{t("coverage.import.button")}</Button>
+            <Button onClick={loadCSV}>
+              <IconImport /> {t("coverage.import.button")}
+            </Button>
             <span>{t("coverage.import.description")}</span>
 
-            <Button onClick={loadDefault}>{t("coverage.reset.button")}</Button>
+            <Button onClick={loadDefault}>
+              <IconReset />
+              {t("coverage.reset.button")}
+            </Button>
             <span>{t("coverage.reset.description")}</span>
           </div>
         )}
@@ -166,10 +178,12 @@ export function ScreenWeaknessCoverage(): ReactNode {
 
         <Divider />
 
-        <FancyText tag="p" fontSize="large" fontWeight="medium">
-          <Icon name="arrowLeft" />{" "}
-          <FancyLink to="/offense/">{t("coverage.back")}</FancyLink>
-        </FancyText>
+        <Flex gap="small" align="center">
+          <IconBack />
+          <FancyText tag="span" fontSize="large" fontWeight="medium">
+            <FancyLink to="/offense/">{t("coverage.back")}</FancyLink>
+          </FancyText>
+        </Flex>
       </Flex>
     </main>
   );
