@@ -6,6 +6,8 @@
 
 - Updated and added icons in many places
 
+- Update the site icon
+
 ## 2025-11-29
 
 - Updated French translation

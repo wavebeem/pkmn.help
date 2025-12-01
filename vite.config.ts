@@ -5,7 +5,7 @@ import { VitePWA } from "vite-plugin-pwa";
 import * as fs from "fs";
 import * as path from "path";
 
-const iconVersion = 7;
+const iconVersion = 8;
 
 function readJSON(filename: string): any {
   const text = fs.readFileSync(filename, "utf-8");
