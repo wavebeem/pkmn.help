@@ -47,7 +47,13 @@ import { ScreenTranslation } from "../screens/ScreenTranslation";
 import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
 import styles from "./App.module.css";
 import { Crash } from "./Crash";
-import { Icon } from "./Icon";
+import {
+  Icon,
+  IconDefenseSolo,
+  IconDefenseTeam,
+  IconOffenseDual,
+  IconOffenseSingle,
+} from "./Icon";
 import { MonsterImage } from "./MonsterImage";
 import { PageNav } from "./PageNav";
 
@@ -373,7 +379,7 @@ export function Layout(): ReactNode {
             to="/offense/combination/"
             aria-label={t("offense.mode.combination")}
           >
-            <Icon name="arrowLeftDouble" />
+            <IconOffenseDual />
           </NavLink>
           <NavLink
             className={styles.mobileTab}
@@ -381,7 +387,7 @@ export function Layout(): ReactNode {
             to="/offense/single/"
             aria-label={t("offense.mode.single")}
           >
-            <Icon name="arrowLeft" />
+            <IconOffenseSingle />
           </NavLink>
           <NavLink
             className={styles.mobileTab}
@@ -389,7 +395,7 @@ export function Layout(): ReactNode {
             to="/defense/solo/"
             aria-label={t("defense.mode.solo")}
           >
-            <Icon name="arrowRight" />
+            <IconDefenseSolo />
           </NavLink>
           <NavLink
             className={styles.mobileTab}
@@ -397,7 +403,7 @@ export function Layout(): ReactNode {
             to="/defense/team/"
             aria-label={t("defense.mode.team")}
           >
-            <Icon name="arrowRightDouble" />
+            <IconDefenseTeam />
           </NavLink>
         </div>
       </div>

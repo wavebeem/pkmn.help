@@ -14,7 +14,7 @@
     "chooseTypes": "Choose attack move types",
     "dealsXTo": "Deals {{ x }} damage to these types",
     "mode": {
-      "combination": "Combination",
+      "combination": "Dual",
       "single": "Single"
     },
     "matchups": {

@@ -240,3 +240,10 @@ export function Icon({
     />
   );
 }
+
+export {
+  Sword as IconOffenseSingle,
+  Swords as IconOffenseDual,
+  ShieldUser as IconDefenseSolo,
+  Users as IconDefenseTeam,
+} from "lucide-react";

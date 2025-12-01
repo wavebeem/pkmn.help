@@ -10,7 +10,7 @@ navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose attack move types,Typen auswählen
 offense.dealsXTo,Deals {{ x }} damage to these types,Fügt {{ x }} Schaden zu
-offense.mode.combination,Combination,Kombination
+offense.mode.combination,Dual,Kombination
 offense.mode.single,Single,Einzeln
 offense.matchups.summary.heading,Matchup summary,Zusammenfassung der Paarungen
 offense.matchups.summary.damage,Damage,Schaden
