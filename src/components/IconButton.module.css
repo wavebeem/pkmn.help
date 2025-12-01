@@ -20,4 +20,5 @@
   border-color: var(--color-vibrant-border);
   background: var(--color-accent-bg);
   color: var(--color-accent-fg);
+  box-shadow: inset var(--shadow-button);
 }

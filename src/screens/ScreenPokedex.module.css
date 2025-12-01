@@ -34,7 +34,7 @@
   }
 }
 
-@media (width > 70rem) {
+@media (width > 80rem) {
   .monsterGrid {
     --column-count: 3;
   }

@@ -2,6 +2,7 @@ import { clsx } from "clsx";
 import { ReactNode, useState } from "react";
 import styles from "./CopyButton.module.css";
 import { sleep } from "../misc/sleep";
+import { IconCopy } from "./Icon";
 
 export interface CopyButtonProps {
   text: string;
@@ -33,6 +34,7 @@ export function CopyButton({ text, children }: CopyButtonProps): ReactNode {
         }
       }}
     >
+      <IconCopy size={16} />
       {children}
     </button>
   );

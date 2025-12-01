@@ -9,6 +9,9 @@ export function IconButton({
   ...props
 }: IconButtonProps): ReactNode {
   return (
-    <button className={clsx(className, styles.root, "focus-tab")} {...props} />
+    <button
+      className={clsx(className, styles.root, "focus-toggle")}
+      {...props}
+    />
   );
 }

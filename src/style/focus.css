@@ -16,9 +16,14 @@
   box-shadow: 0 0 0 3px var(--color-fg1);
 }
 
-.focus-outline:focus-visible,
-.focus-outline:has(:focus-visible) {
+.focus-outline:focus-visible {
   outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.focus-toggle:focus-visible,
+.focus-toggle:has(:focus-visible) {
+  outline: 2px solid var(--color-fg1);
   outline-offset: 2px;
 }
 

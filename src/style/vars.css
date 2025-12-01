@@ -68,6 +68,7 @@ something. */
 
   --color-modal-backdrop: hsl(var(--hue-blue) 10% 20% / 50%);
 
+  --shadow-tabs: 0 0 0 1px rgb(0 0 0 / 5%), 0 0 8px rgb(0 0 0 / 10%);
   --shadow-header: 0 0 8px rgb(0 0 0 / 10%);
   --shadow-button: 0 1px 0 rgb(0 0 0 / 10%);
   --shadow-inset: inset 0 1px 0 rgb(0 0 0 / 10%);

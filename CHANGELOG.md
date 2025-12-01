@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025-12-01
+
+- Added a quick access tab bar for faster mobile navigation
+
+- Updated and added icons in many places
+
+- Update the site icon
+
+- Fixed an issue with outlined text looking horrible in Safari
+
 ## 2025-11-29
 
 - Updated French translation

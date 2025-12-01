@@ -35,14 +35,16 @@
 .label {
   --_c: var(--type-color-bg);
   line-height: 1;
-  -webkit-text-stroke: 3px var(--_c);
-  paint-order: stroke fill;
-  text-shadow: 0 0 4px var(--_c);
   font-weight: var(--weight-medium);
   font-stretch: ultra-condensed;
 }
 
-.badge[data-type="none"] .label {
-  text-shadow: none;
-  -webkit-text-stroke: initial;
+.badge:not([data-type="none"]) .label {
+  -webkit-text-stroke: 3px var(--_c);
+  /*
+    Smooth out the rough edges of the text stroke a bit. DON'T use text-shadow
+    and -webkit-text-stroke together, or Safari will barf.
+  */
+  filter: drop-shadow(0 0 1px var(--_c));
+  paint-order: stroke fill;
 }

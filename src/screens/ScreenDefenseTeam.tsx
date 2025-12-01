@@ -30,6 +30,8 @@ import {
 } from "../misc/data-types";
 import { updateArrayAt } from "../misc/updateArrayAt";
 import styles from "./ScreenDefenseTeam.module.css";
+import { IconAdd, IconEdit, IconRemove } from "../components/Icon";
+import { IconButton } from "../components/IconButton";
 
 function setAbilityAt({
   list,
@@ -199,7 +201,7 @@ export function ScreenDefenseTeam(): ReactNode {
                       </FancyText>
                       <Flex direction="row" wrap justify="center" gap="medium">
                         {types.map((t) => (
-                          <Badge key={t} type={t} size="medium" />
+                          <Badge key={t} type={t} size="small" />
                         ))}
                       </Flex>
                       <Flex flex="auto" />
@@ -209,7 +211,9 @@ export function ScreenDefenseTeam(): ReactNode {
                         justify="flex-end"
                         gap="medium"
                       >
-                        <Button
+                        <IconButton
+                          title={t("defense.team.edit")}
+                          aria-label={t("defense.team.edit")}
                           aria-pressed={typeIndex === teamIndex}
                           onClick={() => {
                             if (typeIndex === teamIndex) {
@@ -219,9 +223,11 @@ export function ScreenDefenseTeam(): ReactNode {
                             }
                           }}
                         >
-                          {t("defense.team.edit")}
-                        </Button>
-                        <Button
+                          <IconEdit size={16} />
+                        </IconButton>
+                        <IconButton
+                          title={t("defense.team.remove")}
+                          aria-label={t("defense.team.remove")}
                           onClick={() => {
                             setTeamIndex(-1);
                             const teamTypesList = [...teamTypes];
@@ -232,8 +238,8 @@ export function ScreenDefenseTeam(): ReactNode {
                             setTeamAbilities(teamAbilityList);
                           }}
                         >
-                          {t("defense.team.remove")}
-                        </Button>
+                          <IconRemove size={16} />
+                        </IconButton>
                       </Flex>
                     </Flex>
                     <Flex
@@ -333,6 +339,7 @@ export function ScreenDefenseTeam(): ReactNode {
                 setTeamIndex(newTypes.length - 1);
               }}
             >
+              <IconAdd size={16} />
               {t("defense.team.add")}
             </Button>
           </Flex>

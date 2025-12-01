@@ -19,6 +19,9 @@
     )
     1;
   outline-color: currentColor;
+  display: flex;
+  gap: var(--padding2);
+  align-items: center;
 }
 
 .tab:has(+ .tab[aria-current="page"]) {

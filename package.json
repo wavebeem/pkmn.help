@@ -74,6 +74,7 @@
     "fastest-levenshtein": "^1.0.12",
     "i18next": "^25.2.1",
     "i18next-http-backend": "^3.0.2",
+    "lucide-react": "0.555.0",
     "match-sorter": "^8.0.3",
     "papaparse": "^5.5.3",
     "react": "^19.1.0",

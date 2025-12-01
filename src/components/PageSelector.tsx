@@ -2,9 +2,9 @@ import { ReactNode, RefObject } from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery } from "usehooks-ts";
 import { Button } from "./Button";
-import { Icon } from "./Icon";
-import { Flex } from "./Flex";
 import { FancyText } from "./FancyText";
+import { Flex } from "./Flex";
+import { IconFirst, IconLast, IconNext, IconPrevious } from "./Icon";
 
 export interface PageSelectorProps<T> {
   anchorElementRef: RefObject<HTMLDivElement | null>;
@@ -85,7 +85,7 @@ export function PageSelector<T>({
           title={t("pokedex.pagination.firstLong")}
           aria-label={t("pokedex.pagination.firstLong")}
         >
-          <Icon name="arrowLeftDouble" />
+          <IconFirst size={16} />
         </Button>
         <Button
           disabled={!hasPrev}
@@ -95,7 +95,7 @@ export function PageSelector<T>({
           title={t("pokedex.pagination.previousLong")}
           aria-label={t("pokedex.pagination.previousLong")}
         >
-          <Icon name="arrowLeft" />
+          <IconPrevious size={16} />
           {buttonSize === "medium" && t("pokedex.pagination.previous")}
           {buttonSize === "large" && t("pokedex.pagination.previousLong")}
         </Button>
@@ -110,7 +110,7 @@ export function PageSelector<T>({
         >
           {buttonSize === "medium" && t("pokedex.pagination.next")}
           {buttonSize === "large" && t("pokedex.pagination.nextLong")}
-          <Icon name="arrowRight" />
+          <IconNext size={16} />
         </Button>
         <Button
           disabled={!hasNext}
@@ -120,7 +120,7 @@ export function PageSelector<T>({
           title={t("pokedex.pagination.lastLong")}
           aria-label={t("pokedex.pagination.lastLong")}
         >
-          <Icon name="arrowRightDouble" />
+          <IconLast size={16} />
         </Button>
       </Flex>
     </Flex>

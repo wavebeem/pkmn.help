@@ -9,6 +9,7 @@ import {
 } from "react";
 import { useTranslation } from "react-i18next";
 import {
+  NavLink,
   Navigate,
   Outlet,
   RouterProvider,
@@ -46,7 +47,15 @@ import { ScreenTranslation } from "../screens/ScreenTranslation";
 import { ScreenWeaknessCoverage } from "../screens/ScreenWeaknessCoverage";
 import styles from "./App.module.css";
 import { Crash } from "./Crash";
-import { Icon } from "./Icon";
+import {
+  IconClose,
+  IconDefenseSolo,
+  IconDefenseTeam,
+  IconMenu,
+  IconOffenseDual,
+  IconOffenseSingle,
+  IconPokedex,
+} from "./Icon";
 import { MonsterImage } from "./MonsterImage";
 import { PageNav } from "./PageNav";
 
@@ -339,7 +348,7 @@ export function Layout(): ReactNode {
               aria-label={t("navigation.menu")}
               id="menu-button"
             >
-              <Icon name="menuHamburger" size={32} />
+              <IconMenu size={24} />
             </button>
           </div>
         </header>
@@ -357,7 +366,7 @@ export function Layout(): ReactNode {
               onClick={closeMenu}
               aria-label={t("navigation.close")}
             >
-              <Icon name="close" size={32} />
+              <IconClose />
             </button>
           </div>
           <PageNav />
@@ -365,9 +374,67 @@ export function Layout(): ReactNode {
         <div className={styles.content} id="content">
           <Outlet />
         </div>
+        <div className={styles.mobileTabBar}>
+          <NavLink
+            className={clsx(styles.mobileTab, "focus-tab")}
+            end
+            to="/offense/combination/"
+            aria-label={compositeAriaLabel(
+              t("offense.mode.combination"),
+              t("navigation.offense"),
+            )}
+          >
+            <IconOffenseDual />
+          </NavLink>
+          <NavLink
+            className={clsx(styles.mobileTab, "focus-tab")}
+            end
+            to="/offense/single/"
+            aria-label={compositeAriaLabel(
+              t("offense.mode.single"),
+              t("navigation.offense"),
+            )}
+          >
+            <IconOffenseSingle />
+          </NavLink>
+          <NavLink
+            className={clsx(styles.mobileTab, "focus-tab")}
+            end
+            to="/defense/solo/"
+            aria-label={compositeAriaLabel(
+              t("defense.mode.solo"),
+              t("navigation.defense"),
+            )}
+          >
+            <IconDefenseSolo />
+          </NavLink>
+          <NavLink
+            className={clsx(styles.mobileTab, "focus-tab")}
+            end
+            to="/defense/team/"
+            aria-label={compositeAriaLabel(
+              t("defense.mode.team"),
+              t("navigation.defense"),
+            )}
+          >
+            <IconDefenseTeam />
+          </NavLink>
+          <NavLink
+            className={clsx(styles.mobileTab, "focus-tab")}
+            end
+            to="/pokedex/"
+            aria-label={t("navigation.pokedex")}
+          >
+            <IconPokedex />
+          </NavLink>
+        </div>
       </div>
     </AppContextProvider>
   );
+}
+
+function compositeAriaLabel(...strings: string[]): string {
+  return strings.filter((x) => x).join(", ");
 }
 
 export function App(): ReactNode {

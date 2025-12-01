@@ -1,13 +1,13 @@
 import { ReactNode } from "react";
+import { isRouteErrorResponse, useRouteError } from "react-router-dom";
 import { Button } from "../components/Button";
 import { CopyButton } from "../components/CopyButton";
 import { ExternalLink } from "../components/ExternalLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
-import { Icon } from "../components/Icon";
+import { IconBack, IconReset } from "../components/Icon";
 import { resetApp } from "../misc/resetApp";
 import styles from "./ScreenError.module.css";
-import { isRouteErrorResponse, useRouteError } from "react-router-dom";
 
 export function ScreenError(): ReactNode {
   const error = useRouteError();
@@ -58,15 +58,19 @@ ${JSON.stringify(sessionStorage)}
 
         <FancyText tag="p">Resetting the app may help:</FancyText>
         <Flex>
-          <Button onClick={resetApp}>Reset</Button>
+          <Button onClick={resetApp}>
+            <IconReset size={16} /> Reset
+          </Button>
         </Flex>
 
         <FancyText tag="p">You can try returning to the main page.</FancyText>
 
-        <FancyText tag="p" fontSize="large" fontWeight="medium">
-          <Icon name="arrowLeft" />{" "}
-          <ExternalLink href="/">Back to main page</ExternalLink>
-        </FancyText>
+        <Flex align="center" gap="small">
+          <IconBack />
+          <FancyText tag="span" fontSize="large" fontWeight="medium">
+            <ExternalLink href="/">Back to main page</ExternalLink>
+          </FancyText>
+        </Flex>
       </Flex>
     </div>
   );

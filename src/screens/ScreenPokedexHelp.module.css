@@ -1,6 +1,6 @@
 .code {
   display: inline-block;
-  text-decoration: 1px dotted underline;
-  text-underline-position: under;
-  text-underline-offset: 2px;
+  padding-inline: 1ch;
+  background: var(--color-bg-ghost);
+  border-radius: var(--border-radius2);
 }

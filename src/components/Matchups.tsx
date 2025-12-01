@@ -10,16 +10,16 @@ import {
 } from "../misc/data-matchups";
 import { AbilityName, SpecialMove, Type } from "../misc/data-types";
 import { Badge } from "./Badge";
-import { FancyText } from "./FancyText";
-import { Flex } from "./Flex";
-import styles from "./Matchups.module.css";
-import { PlainBadge } from "./PlainBadge";
+import { Card } from "./Card";
 import { CollapsibleSection } from "./CollapsibleSection";
 import { Divider } from "./Divider";
-import { Meter } from "./Meter";
-import { Icon } from "./Icon";
-import { Card } from "./Card";
 import { EmptyState } from "./EmptyState";
+import { FancyText } from "./FancyText";
+import { Flex } from "./Flex";
+import { IconPlus } from "./Icon";
+import styles from "./Matchups.module.css";
+import { Meter } from "./Meter";
+import { PlainBadge } from "./PlainBadge";
 
 interface MatchupsProps {
   kind: "offense-single" | "offense-combination" | "defense";
@@ -157,6 +157,7 @@ export function Matchups({
                                 x: effectivenessDisplay,
                               })}
                             </div>
+                            <div>&nbsp;&nbsp;</div>
                             <Flex flex="auto" />
                             <div>{matchups.typesFor(eff).length}</div>
                             <div>&nbsp;&nbsp;</div>
@@ -185,7 +186,7 @@ export function Matchups({
                           return x.types.map((t, i) => {
                             return (
                               <Fragment key={i}>
-                                {i > 0 ? <Icon name="plus" size={32} /> : null}
+                                {i > 0 ? <IconPlus /> : null}
                                 <Badge
                                   key={`type-${t}`}
                                   type={t}

@@ -1,7 +1,7 @@
+import { clsx } from "clsx";
 import { ReactNode } from "react";
 import styles from "./CollapsibleSection.module.css";
-import { clsx } from "clsx";
-import { Icon } from "./Icon";
+import { IconMinus, IconPlus } from "./Icon";
 
 interface CollapsibleSectionProps {
   initiallyOpen?: boolean;
@@ -16,7 +16,6 @@ export function CollapsibleSection({
   children,
   size = "medium",
 }: CollapsibleSectionProps): ReactNode {
-  const iconSize = 32;
   return (
     <details className={styles.details} open={initiallyOpen} data-size={size}>
       <summary
@@ -27,8 +26,8 @@ export function CollapsibleSection({
         )}
       >
         {heading}
-        <Icon className={styles.icon} size={iconSize} name="plus" />
-        <Icon className={styles.icon} size={iconSize} name="minus" />
+        <IconPlus className={styles.icon} data-icon-name="plus" />
+        <IconMinus className={styles.icon} data-icon-name="minus" />
       </summary>
       {children}
     </details>

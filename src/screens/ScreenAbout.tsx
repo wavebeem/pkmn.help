@@ -10,6 +10,7 @@ import { Flex } from "../components/Flex";
 import { useAppContext } from "../hooks/useAppContext";
 import { resetApp } from "../misc/resetApp";
 import { FancyLink } from "../components/FancyLink";
+import { IconReset } from "../components/Icon";
 
 export function ScreenAbout(): ReactNode {
   const { needsAppUpdate, updateApp } = useAppContext();
@@ -110,8 +111,9 @@ export function ScreenAbout(): ReactNode {
             }
           >
             <Flex direction="column" gap="large">
-              <Flex direction="column" align="flex-start">
+              <Flex direction="column" align="flex-start" gap="small">
                 <Button onClick={resetApp}>
+                  <IconReset size={16} />
                   {t("more.help.serviceWorker.button")}
                 </Button>
               </Flex>

@@ -10,7 +10,7 @@ navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose attack move types,选择属性
 offense.dealsXTo,Deals {{ x }} damage to these types,产生 {{ x }} 伤害
-offense.mode.combination,Combination,
+offense.mode.combination,Dual,
 offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,

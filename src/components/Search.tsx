@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { ReactNode } from "react";
 import { customProperties } from "../misc/customProperties";
-import { Icon } from "./Icon";
+import { IconClear, IconSearch } from "./Icon";
 import styles from "./Search.module.css";
 
 interface SearchProps {
@@ -27,7 +27,7 @@ export function Search({
     >
       {label && <div className={styles.label}>{label}</div>}
       <div className={styles.wrapper}>
-        <Icon name="search" size={iconSize} className={styles.iconSearch} />
+        <IconSearch className={styles.iconSearch} />
         <input
           type="text"
           autoComplete="off"
@@ -40,10 +40,12 @@ export function Search({
             onChange(event.target.value);
           }}
         />
-        <Icon
-          name="clear"
+        <IconClear
           size={iconSize}
           className={clsx(styles.iconClear, value === "" && styles.hidden)}
+          // Doesn't need to be accessible since this functionality isn't
+          // required to use the search field, and native clear buttons aren't
+          // accessible either.
           onClick={() => {
             onChange("");
           }}

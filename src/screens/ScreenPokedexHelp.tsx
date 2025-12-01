@@ -1,10 +1,10 @@
+import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
+import { IconBack } from "../components/Icon";
 import styles from "./ScreenPokedexHelp.module.css";
-import { Icon } from "../components/Icon";
-import { ReactNode } from "react";
 
 export function ScreenPokedexHelp(): ReactNode {
   const { t } = useTranslation();
@@ -61,10 +61,12 @@ export function ScreenPokedexHelp(): ReactNode {
           {t("pokedexHelp.searchExamples.singleType.description")}
         </FancyText>
 
-        <FancyText tag="p" fontSize="large" fontWeight="medium">
-          <Icon name="arrowLeft" />{" "}
-          <FancyLink to="/pokedex/">{t("pokedexHelp.back")}</FancyLink>
-        </FancyText>
+        <Flex gap="small" align="center">
+          <IconBack />
+          <FancyText tag="span" fontSize="large" fontWeight="medium">
+            <FancyLink to="/pokedex/">{t("pokedexHelp.back")}</FancyLink>
+          </FancyText>
+        </Flex>
       </Flex>
     </main>
   );

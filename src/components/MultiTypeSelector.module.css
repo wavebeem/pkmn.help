@@ -20,9 +20,13 @@
 
 .button[aria-pressed="true"] .text {
   --_c: #0002;
-  -webkit-text-stroke: 2px var(--_c);
+  -webkit-text-stroke: 3px var(--_c);
   paint-order: stroke fill;
-  text-shadow: 0 0 4px var(--_c);
+  /*
+    Smooth out the rough edges of the text stroke a bit. DON'T use text-shadow
+    and -webkit-text-stroke together, or Safari will barf.
+  */
+  filter: drop-shadow(0 0 1px var(--_c));
 }
 
 .button[aria-pressed="false"] {
