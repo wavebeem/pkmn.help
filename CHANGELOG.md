@@ -1,5 +1,15 @@
 # Changelog
 
+## 2025-12-02
+
+- Moved mobile tab bar back to the top of the page
+
+  - I like how it feels better on the bottom, but it's really buggy in Firefox
+    on Android, and leaving the bottom of the screen open to content works
+    better in Chrome on Android with gesture navigation enabled
+
+    - Ask me how I feel about mobile browsers on Android some time :)
+
 ## 2025-12-01
 
 - Added a quick access tab bar for faster mobile navigation

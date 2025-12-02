@@ -68,7 +68,7 @@ something. */
 
   --color-modal-backdrop: hsl(var(--hue-blue) 10% 20% / 50%);
 
-  --shadow-tabs: 0 0 0 1px rgb(0 0 0 / 5%), 0 0 8px rgb(0 0 0 / 10%);
+  --shadow-tabs: 0 0 0 1px rgb(0 0 0 / 5%), 0 0 16px rgb(0 0 0 / 20%);
   --shadow-header: 0 0 8px rgb(0 0 0 / 10%);
   --shadow-button: 0 1px 0 rgb(0 0 0 / 10%);
   --shadow-inset: inset 0 1px 0 rgb(0 0 0 / 10%);
@@ -91,7 +91,8 @@ something. */
   --type-min-width: 6rem;
 
   font-family: var(--font-sans);
-  scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
+  /* scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg); */
+  scrollbar-color: rgb(from var(--color-fg1) r g b / 50%) transparent;
   color-scheme: light;
 }
 
@@ -130,7 +131,7 @@ something. */
   --color-header-dark: hsl(var(--hue-red) 60% 30%);
   --color-header-base: hsl(var(--hue-red) 60% 35%);
   --color-header-highlight: hsl(var(--hue-red) 40% 45%);
-  --color-header-border: hsl(var(--hue-red) 40% 45%);
+  --color-header-border: hsl(var(--hue-red) 40% 50%);
   --color-header-text: #fff;
 
   --color-button1: hsl(var(--hue-blue) 10% 28%);
@@ -167,7 +168,7 @@ something. */
   --color-header-dark: hsl(var(--hue-blue) 10% 5%);
   --color-header-base: hsl(var(--hue-blue) 10% 10%);
   --color-header-highlight: hsl(var(--hue-blue) 10% 30%);
-  --color-header-border: hsl(var(--hue-blue) 10% 30%);
+  --color-header-border: hsl(var(--hue-blue) 10% 20%);
   --color-header-text: hsl(var(--hue-blue) 10% 82%);
 
   --color-button1: hsl(var(--hue-blue) 10% 25%);
@@ -205,7 +206,7 @@ something. */
     --color-header-dark: hsl(var(--hue-red) 60% 30%);
     --color-header-base: hsl(var(--hue-red) 60% 35%);
     --color-header-highlight: hsl(var(--hue-red) 40% 45%);
-    --color-header-border: hsl(var(--hue-red) 40% 45%);
+    --color-header-border: hsl(var(--hue-red) 40% 50%);
     --color-header-text: #fff;
 
     --color-button1: hsl(var(--hue-blue) 10% 28%);

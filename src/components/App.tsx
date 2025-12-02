@@ -331,9 +331,7 @@ export function Layout(): ReactNode {
                 />
               </button>
               <hgroup className={styles.titleStack}>
-                <h1 className={styles.title}>
-                  <span>pkmn</span>.help
-                </h1>
+                <h1 className={styles.title}>pkmn.help</h1>
                 <p className={styles.subtitle}>{t("title")}</p>
               </hgroup>
             </div>
@@ -352,28 +350,6 @@ export function Layout(): ReactNode {
             </button>
           </div>
         </header>
-        <aside className={styles.sidebar}>
-          <PageNav />
-        </aside>
-        <dialog className={styles.dialog} ref={dialogRef} id="menu-dialog">
-          <div className={styles.dialogMenuHeader}>
-            <button
-              className={clsx(
-                styles.menuButton,
-                "active-darken-background",
-                "focus-outline",
-              )}
-              onClick={closeMenu}
-              aria-label={t("navigation.close")}
-            >
-              <IconClose />
-            </button>
-          </div>
-          <PageNav />
-        </dialog>
-        <div className={styles.content} id="content">
-          <Outlet />
-        </div>
         <div className={styles.mobileTabBar}>
           <NavLink
             className={clsx(styles.mobileTab, "focus-tab")}
@@ -427,6 +403,28 @@ export function Layout(): ReactNode {
           >
             <IconPokedex />
           </NavLink>
+        </div>
+        <aside className={styles.sidebar}>
+          <PageNav />
+        </aside>
+        <dialog className={styles.dialog} ref={dialogRef} id="menu-dialog">
+          <div className={styles.dialogMenuHeader}>
+            <button
+              className={clsx(
+                styles.menuButton,
+                "active-darken-background",
+                "focus-outline",
+              )}
+              onClick={closeMenu}
+              aria-label={t("navigation.close")}
+            >
+              <IconClose />
+            </button>
+          </div>
+          <PageNav />
+        </dialog>
+        <div className={styles.content} id="content">
+          <Outlet />
         </div>
       </div>
     </AppContextProvider>

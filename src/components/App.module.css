@@ -7,7 +7,7 @@
   /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
   /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
   --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px);
-  --bottom-bar-height: round(up, 5.5rem, 8px);
+  --tabs-height: round(up, 3.5rem, 8px);
 
   flex: auto;
   display: grid;
@@ -105,6 +105,7 @@
   grid-area: content;
   color: var(--color-fg1);
   background: var(--color-bg2);
+  scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
 }
 
 .easterEgg {
@@ -176,7 +177,9 @@
 
 @media (width < 60rem) {
   .content * {
-    scroll-margin-top: calc(var(--header-height) + var(--padding2));
+    scroll-margin-top: calc(
+      var(--header-height) + var(--tabs-height) + var(--padding2)
+    );
   }
 
   .header {
@@ -185,13 +188,11 @@
     left: 0;
     width: 100vw;
     height: var(--header-height);
-    z-index: 1;
+    z-index: 2;
     border-bottom: 1px solid var(--color-header-border);
     display: flex;
     justify-content: center;
     align-items: center;
-
-    box-shadow: var(--shadow-header);
   }
 }
 
@@ -366,45 +367,21 @@
 }
 
 .mobileTabBar {
-  /* grid-area: tabs; */
-
   box-shadow: var(--shadow-tabs);
   background: var(--color-card-bg);
-  border-top: 1px solid var(--color-card-highlight);
-  /* border-radius: var(--border-radius3) var(--border-radius3) 0 0; */
-  /* background:
-    radial-gradient(var(--color-card-bg)) padding-box,
-    radial-gradient(
-        50% 50% at top center,
-        var(--color-card-highlight),
-        var(--color-card-bg)
-      )
-      border-box var(--color-card-bg);
-  border: 1px solid transparent; */
+  border-bottom: 1px solid var(--color-card-highlight);
   color: var(--color-fg1);
   gap: var(--padding2);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
-  /**
-   * Support rendering content inside the "chin" on Android Chrome. This draws the
-   * gesture bar over the top of the viewport, rather than creating a smaller
-   * viewport that sits above the chin.
-   *
-   * https://developer.chrome.com/docs/css-ui/edge-to-edge
-   *
-   * https://webkit.org/blog/7929/designing-websites-for-iphone-x/
-   */
   position: fixed;
   width: 100dvw;
   left: 0;
-  height: var(--bottom-bar-height);
-  padding-top: var(--padding2);
-  padding-inline: var(--padding2);
-  padding-bottom: calc(var(--padding2) + var(--safe-area-max-inset-bottom));
-  bottom: calc(
-    env(safe-area-inset-bottom, 0px) - var(--safe-area-max-inset-bottom)
-  );
+  height: var(--tabs-height);
+  padding: var(--padding2);
+  top: var(--header-height);
+  z-index: 1;
 }
 
 .mobileTab {
@@ -471,25 +448,14 @@
 }
 
 @media (width < 60rem) {
-  :where(:has(.menuButton[aria-pressed="false"])) .sidebar {
-    translate: 0% 100%;
-  }
-
-  :where(:has(.menuButton[aria-pressed="true"])) .sidebar {
-    translate: 0 0;
-    box-shadow: 0 0 0 200vmax #0008;
-  }
-
   .sidebar {
     display: none;
   }
 
   .content {
-    padding-top: var(--header-height);
+    padding-top: calc(var(--header-height) + var(--tabs-height));
     /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
     /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
-    padding-bottom: calc(
-      var(--bottom-bar-height) + var(--safe-area-max-inset-bottom)
-    );
+    padding-bottom: var(--safe-area-max-inset-bottom);
   }
 }
