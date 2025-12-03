@@ -9,7 +9,8 @@ import { matchupFor } from "../misc/data-matchups";
 import { AbilityName, Type, typesForGeneration } from "../misc/data-types";
 import { useTypeCount } from "../hooks/useTypeCount";
 import { EmptyState } from "./EmptyState";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useRef } from "react";
+import { useBrowserSize } from "../misc/useBrowserSize";
 
 type MatchupKey =
   | "weak"
@@ -182,13 +183,39 @@ export function MatchupsTeam({
     rows.push(row);
   }
 
+  function updateScrollInfo(root: HTMLDivElement): void {
+    const { scrollLeft, scrollWidth, clientWidth, dataset } = root;
+    dataset.scrollStart = String(scrollLeft === 0);
+    dataset.scrollEnd = String(scrollLeft + clientWidth === scrollWidth);
+  }
+
+  // Subscribe to browser size changes so that this component re-renders when
+  // the browser is resized. We also need to update the table on any render too,
+  // since that might change the size of the table.
+  const _size = useBrowserSize();
+
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (wrapperRef.current) {
+      updateScrollInfo(wrapperRef.current);
+    }
+  });
+
   if (typesList.length === 0) {
     return <EmptyState>{t("defense.team.empty")}</EmptyState>;
   }
 
   return (
     <div className={clsx(styles.root, "focus-simple", "tabular-nums")}>
-      <div className={clsx(styles.tableWrapper, "focus-none")} tabIndex={0}>
+      <div
+        className={clsx(styles.tableWrapper, "focus-none")}
+        tabIndex={0}
+        ref={wrapperRef}
+        onScroll={(event) => {
+          updateScrollInfo(event.currentTarget);
+        }}
+      >
         <table>
           <thead>
             <tr>
@@ -208,7 +235,7 @@ export function MatchupsTeam({
               return (
                 <tr key={type}>
                   <th className={styles.thLeft}>
-                    <Badge type={type} size="medium" />
+                    <Badge type={type} size="small" variant="ghost" />
                   </th>
                   {counts.map((count, i) => {
                     return (

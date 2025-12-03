@@ -194,7 +194,7 @@ export function ScreenDefenseTeam(): ReactNode {
               {teamTypes.map((types, typeIndex) => {
                 const name = String(typeIndex + 1);
                 return (
-                  <Card key={typeIndex}>
+                  <Card key={typeIndex} size="small">
                     <Flex wrap gap="medium" align="center" justify="flex-end">
                       <FancyText tag="div" fontWeight="medium" tabularNums>
                         #{name}

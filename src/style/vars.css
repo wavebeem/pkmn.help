@@ -30,6 +30,8 @@ something. */
   --color-header-text: #fff;
   --color-header-border: hsl(var(--hue-red) 70% 30%);
 
+  --color-tabs-border: transparent;
+
   --color-button1: hsl(var(--hue-blue) 10% 100%);
   --color-button1b: hsl(var(--hue-blue) 10% 96%);
 
@@ -66,7 +68,7 @@ something. */
   --border-radius3: 16px;
   --border-radius-pill: 9999px;
 
-  --color-modal-backdrop: hsl(var(--hue-blue) 10% 20% / 50%);
+  --color-modal-backdrop: hsl(var(--hue-blue) 10% 20% / 80%);
 
   --shadow-tabs: 0 0 0 1px rgb(0 0 0 / 5%), 0 0 16px rgb(0 0 0 / 20%);
   --shadow-header: 0 0 8px rgb(0 0 0 / 10%);
@@ -134,6 +136,8 @@ something. */
   --color-header-border: hsl(var(--hue-red) 40% 50%);
   --color-header-text: #fff;
 
+  --color-tabs-border: hsl(var(--hue-blue) 10% 27%);
+
   --color-button1: hsl(var(--hue-blue) 10% 28%);
   --color-button1b: hsl(var(--hue-blue) 10% 22%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
@@ -168,8 +172,10 @@ something. */
   --color-header-dark: hsl(var(--hue-blue) 10% 5%);
   --color-header-base: hsl(var(--hue-blue) 10% 10%);
   --color-header-highlight: hsl(var(--hue-blue) 10% 30%);
-  --color-header-border: hsl(var(--hue-blue) 10% 20%);
+  --color-header-border: hsl(var(--hue-blue) 10% 25%);
   --color-header-text: hsl(var(--hue-blue) 10% 82%);
+
+  --color-tabs-border: hsl(var(--hue-blue) 10% 25%);
 
   --color-button1: hsl(var(--hue-blue) 10% 25%);
   --color-button1b: hsl(var(--hue-blue) 10% 15%);
@@ -208,6 +214,8 @@ something. */
     --color-header-highlight: hsl(var(--hue-red) 40% 45%);
     --color-header-border: hsl(var(--hue-red) 40% 50%);
     --color-header-text: #fff;
+
+    --color-tabs-border: hsl(var(--hue-blue) 10% 27%);
 
     --color-button1: hsl(var(--hue-blue) 10% 28%);
     --color-button1b: hsl(var(--hue-blue) 10% 22%);

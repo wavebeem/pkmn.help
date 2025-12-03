@@ -1,47 +1,83 @@
 .root {
   --border: var(--color-border2);
+  border-radius: calc(var(--border-radius1) + 2px);
 }
 
 .tableWrapper {
   overflow-x: auto;
+  border: 1px solid var(--color-border2);
+  border-radius: calc(var(--border-radius1) + 2px);
+}
+
+.tableWrapper[data-scroll-start="false"] {
+  mask: linear-gradient(to right, transparent, white var(--padding3));
+}
+
+.tableWrapper[data-scroll-end="false"] {
+  mask: linear-gradient(to left, transparent, white var(--padding3));
+}
+
+.tableWrapper[data-scroll-start="false"][data-scroll-end="false"] {
+  mask: linear-gradient(
+    to right,
+    transparent,
+    white var(--padding3) calc(100% - var(--padding3)),
+    transparent
+  );
 }
 
 .tableWrapper table {
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 2px;
   text-align: center;
   width: 100%;
 }
 
 .td {
   min-width: 4rem;
-  border: 1px solid var(--color-border3);
-  padding: var(--padding2) var(--padding3);
-  font-size: 1.25rem;
-  background: var(--color-button1);
+  padding: 0 var(--padding1);
+  background: var(--color-bg-ghost);
+  border-radius: var(--border-radius1);
 }
 
 .td:not([data-count="0"]) {
-  background: var(--color-button1b);
+  background: var(--color-bg1);
 }
 
 .td[data-count="0"] {
   color: transparent;
 }
 
-.thLeft {
-  padding: var(--padding1) var(--padding2) var(--padding1) 0;
+.thCorner,
+.thTop {
+  padding: var(--padding3) var(--padding2);
+  font-weight: var(--weight-medium);
+  background-color: var(--color-bg2);
+  background-image: linear-gradient(transparent, var(--color-bg-ghost));
+  border-radius: var(--border-radius1);
+}
+
+.thLeft,
+.thCorner {
+  position: sticky;
+  left: 2px;
 }
 
 .thCorner {
-  padding: var(--padding2);
-  font-weight: var(--weight-medium);
   /* Use automatic table sizing */
   width: 0;
 }
 
 .thTop {
-  padding: var(--padding2);
-  font-weight: var(--weight-medium);
-  border-bottom: 1px solid var(--color-border3);
   min-width: 4rem;
+}
+
+.thLeft {
+  padding: 0;
+}
+
+@media (width >= 30rem) {
+  .root {
+    max-width: max-content;
+  }
 }

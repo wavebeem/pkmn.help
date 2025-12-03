@@ -2,6 +2,19 @@
 
 ## 2025-12-02
 
+- The hamburger menu now has a small gap on the side
+
+  - This make the menu feel less jarring
+
+  - You can also dismiss the menu by pressing in the gap area
+
+- Improved readability of the Team Defense matchup table
+
+  - Much more compact, for easy reading on mobile and desktop
+
+  - First column is now sticky, for easy reading on mobile when using the
+    "Complex" table format
+
 - Moved mobile tab bar back to the top of the page
 
   - I like how it feels better on the bottom, but it's really buggy in Firefox

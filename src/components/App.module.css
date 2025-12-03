@@ -78,16 +78,19 @@
   color: var(--color-header-text);
   position: fixed;
   top: 0;
-  left: 0;
+  left: var(--padding5);
   max-width: initial;
   max-height: initial;
-  width: 100dvw;
+  width: calc(100dvw - var(--padding5));
   height: 100dvh;
   translate: 0 0;
   scale: 1;
   transition-duration: 200ms;
-  transition-timing-function: ease-out;
+  transition-timing-function: ease;
   transition-property: translate, scale;
+  box-shadow:
+    inset 1px 0 0 var(--color-header-highlight),
+    var(--shadow-header);
 }
 
 .dialog::backdrop {
@@ -97,8 +100,11 @@
 @starting-style {
   .dialog {
     translate: 100% 0%;
-    /* scale: 110%; */
   }
+}
+
+.dialogContent {
+  height: inherit;
 }
 
 .content {
@@ -368,8 +374,11 @@
 
 .mobileTabBar {
   box-shadow: var(--shadow-tabs);
+  /* Abusing shadows as borders sometimes causes rendering issues, but if we use
+  a border that's sometimes transparent, it will make the tab bar look
+  unbalanced.  */
+  border-bottom: 1px solid var(--color-tabs-border);
   background: var(--color-card-bg);
-  border-bottom: 1px solid var(--color-card-highlight);
   color: var(--color-fg1);
   gap: var(--padding2);
   display: grid;
@@ -380,6 +389,9 @@
   left: 0;
   height: var(--tabs-height);
   padding: var(--padding2);
+  /* The border is incredibly subtle, so let's consider it part of the padding,
+  so that the tab bar doesn't look lopsided... */
+  padding-bottom: calc(var(--padding2) - 1px);
   top: var(--header-height);
   z-index: 1;
 }
@@ -401,9 +413,6 @@
   background: var(--color-accent-bg);
   color: var(--color-accent-fg);
   border-color: var(--color-vibrant-border);
-  /* background: var(--color-header-text);
-  color: var(--color-header-dark); */
-  /* border-color: transparent; */
 }
 
 .mobileTab svg {

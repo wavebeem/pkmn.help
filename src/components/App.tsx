@@ -407,21 +407,38 @@ export function Layout(): ReactNode {
         <aside className={styles.sidebar}>
           <PageNav />
         </aside>
-        <dialog className={styles.dialog} ref={dialogRef} id="menu-dialog">
-          <div className={styles.dialogMenuHeader}>
-            <button
-              className={clsx(
-                styles.menuButton,
-                "active-darken-background",
-                "focus-outline",
-              )}
-              onClick={closeMenu}
-              aria-label={t("navigation.close")}
-            >
-              <IconClose />
-            </button>
+        <dialog
+          className={styles.dialog}
+          ref={dialogRef}
+          id="menu-dialog"
+          onClick={(event) => {
+            // Close when the <dialog> is clicked. The ::backdrop counts as part
+            // of the <dialog>.
+            if (event.currentTarget === event.target) {
+              event.currentTarget.close();
+            }
+          }}
+        >
+          <div
+            className={styles.dialogContent}
+            // Load bearing <div>. This is here so that we can detect clicks on
+            // the <dialog>'s backdrop, as opposed to its content.
+          >
+            <div className={styles.dialogMenuHeader}>
+              <button
+                className={clsx(
+                  styles.menuButton,
+                  "active-darken-background",
+                  "focus-outline",
+                )}
+                onClick={closeMenu}
+                aria-label={t("navigation.close")}
+              >
+                <IconClose />
+              </button>
+            </div>
+            <PageNav />
           </div>
-          <PageNav />
         </dialog>
         <div className={styles.content} id="content">
           <Outlet />
