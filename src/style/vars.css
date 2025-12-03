@@ -1,6 +1,6 @@
-/* TODO: CSS `light-dark()` has been supported for over a year. Refactor this to
+/* TODO: CSS `light-dark()` has been supported since May 2024. Refactor this to
 use `light-dark()` and `color-scheme` to decide colors with less repetition, or
-something. */
+something. You can set `color-scheme: dark` in a `@media` block. */
 
 :root,
 [data-theme="light"] {
@@ -55,15 +55,15 @@ something. */
     )
     var(--color-button1);
 
-  --padding0: 0;
+  --padding0: 2px;
   --padding1: 4px;
   --padding2: 8px;
   --padding3: 16px;
   --padding4: 32px;
   --padding5: 64px;
 
-  --border-radius0: 0;
-  --border-radius1: 2px;
+  --border-radius0: 2px;
+  --border-radius1: 4px;
   --border-radius2: 8px;
   --border-radius3: 16px;
   --border-radius-pill: 9999px;
@@ -93,7 +93,6 @@ something. */
   --type-min-width: 6rem;
 
   font-family: var(--font-sans);
-  /* scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg); */
   scrollbar-color: rgb(from var(--color-fg1) r g b / 50%) transparent;
   color-scheme: light;
 }

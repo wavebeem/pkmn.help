@@ -1,5 +1,5 @@
 .link {
-  border-radius: var(--border-radius1);
+  border-radius: var(--border-radius0);
   color: var(--color-link);
   text-underline-offset: calc(1em / 8);
 }

@@ -420,6 +420,10 @@
 }
 
 @media (width >= 60rem) {
+  :root {
+    overscroll-behavior: none;
+  }
+
   .root {
     --header-height: round(up, 4rem, 1px);
     --sidebar-width: round(up, 22ch, 16px);
@@ -436,6 +440,7 @@
 
   .content {
     overflow: auto;
+    overscroll-behavior: none;
 
     box-shadow:
       0 0 0 1px var(--color-header-border),

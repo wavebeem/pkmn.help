@@ -1,5 +1,5 @@
 .badge {
-  border-radius: var(--border-radius1);
+  border-radius: var(--border-radius0);
   box-shadow: inset 0 0 0 1px var(--color-vibrant-border);
   background: var(--type-color);
   color: white;
@@ -29,7 +29,7 @@
 
 .badge[data-variant="ghost"] {
   box-shadow: none;
-  border-radius: var(--border-radius1);
+  border-radius: var(--border-radius0);
 }
 
 .label {

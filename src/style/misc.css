@@ -142,7 +142,7 @@ input {
 }
 
 .fallback-content :any-link {
-  border-radius: var(--border-radius1);
+  border-radius: var(--border-radius0);
   color: var(--color-link);
 }
 

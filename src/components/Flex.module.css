@@ -23,7 +23,7 @@
 }
 
 .Flex[data-gap="none"] {
-  gap: var(--padding0);
+  gap: 0;
 }
 
 .Flex[data-gap="small"] {

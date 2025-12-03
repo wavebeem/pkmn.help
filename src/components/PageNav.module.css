@@ -41,7 +41,7 @@
   margin-top: var(--padding2);
   font-weight: var(--weight-medium);
   /* font-stretch: ultra-condensed; */
-  padding: var(--padding0) var(--padding3);
+  padding: 0 var(--padding3);
   font-size: var(--font-size2);
 }
 

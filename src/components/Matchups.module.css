@@ -43,7 +43,7 @@
 .tableNumber {
   text-align: right;
   background: var(--color-bg-ghost);
-  border-radius: var(--border-radius1);
+  border-radius: var(--border-radius0);
   padding: 2px 8px;
 }
 
