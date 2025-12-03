@@ -69,7 +69,7 @@ const router = createBrowserRouter([
       {
         path: "offense",
         children: [
-          { index: true, element: <Navigate replace to="single" /> },
+          { index: true, element: <Navigate replace to="single/" /> },
           {
             path: "combination",
             element: <ScreenOffense mode="combination" />,
@@ -98,7 +98,7 @@ const router = createBrowserRouter([
       {
         path: "defense",
         children: [
-          { index: true, element: <Navigate replace to="solo" /> },
+          { index: true, element: <Navigate replace to="solo/" /> },
           { path: "solo", element: <ScreenDefense /> },
           { path: "team", element: <ScreenDefenseTeam /> },
         ],

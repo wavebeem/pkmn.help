@@ -23,6 +23,8 @@
 
     - Ask me how I feel about mobile browsers on Android some time :)
 
+- Fixed an issue where old URLs ended up in a weird state
+
 ## 2025-12-01
 
 - Added a quick access tab bar for faster mobile navigation
