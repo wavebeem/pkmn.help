@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-12-03
+
+- Improved scrolling performance in the Pokédex in Firefox on Android
+
 ## 2025-12-02
 
 - The hamburger menu now has a small gap on the side

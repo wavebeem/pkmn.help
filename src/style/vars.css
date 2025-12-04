@@ -76,10 +76,9 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --shadow-inset: inset 0 1px 0 rgb(0 0 0 / 10%);
 
   --filter-darken: brightness(90%);
-  --filter-image: drop-shadow(-1px -1px 0 hsl(var(--hue-blue) 50% 90% / 20%))
-    drop-shadow(0 0 2px hsl(var(--hue-blue) 0% 100% / 20%))
-    drop-shadow(4px 4px 16px hsl(var(--hue-blue) 0% 0% / 20%))
-    drop-shadow(8px 8px 32px hsl(var(--hue-blue) 0% 0% / 10%));
+  /* Don't overcomplicate this filter or Pokedex scrolling can get really slow
+  in Android Firefox */
+  --filter-image: drop-shadow(8px 8px 32px hsl(var(--hue-blue) 10% 20% / 30%));
 
   --logo-letter-spacing: calc(-1rem / 32);
 
