@@ -12,7 +12,7 @@
   },
   "offense": {
     "chooseTypes": "Choose attack move types",
-    "dealsXTo": "Deals {{ x }} damage to these types",
+    "dealsXTo": "Deals {{ x }} damage to",
     "mode": {
       "combination": "Dual",
       "single": "Single"
@@ -97,7 +97,7 @@
   },
   "defense": {
     "chooseTypes": "Choose defending Pokémon types",
-    "takesXFrom": "Takes {{ x }} from these move types",
+    "takesXFrom": "Takes {{ x }} from",
     "chooseAbility": "Choose ability",
     "chooseTeraType": "Choose tera type",
     "abilityNames": {

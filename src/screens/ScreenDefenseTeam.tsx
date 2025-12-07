@@ -199,7 +199,7 @@ export function ScreenDefenseTeam(): ReactNode {
                       <FancyText tag="div" fontWeight="medium" tabularNums>
                         #{name}
                       </FancyText>
-                      <Flex direction="row" wrap justify="center" gap="medium">
+                      <Flex direction="row" wrap justify="center" gap="small">
                         {types.map((t) => (
                           <Badge key={t} type={t} size="small" />
                         ))}

@@ -20,6 +20,7 @@ import { IconPlus } from "./Icon";
 import styles from "./Matchups.module.css";
 import { Meter } from "./Meter";
 import { PlainBadge } from "./PlainBadge";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 interface MatchupsProps {
   kind: "offense-single" | "offense-combination" | "defense";
@@ -73,6 +74,8 @@ export function Matchups({
     const value = Number(((count / total || 0) * 100).toFixed(1));
     return value.toLocaleString(i18n.languages);
   }
+
+  const isLarge = useMediaQuery("(width >= 60rem)");
 
   if (kind === "offense-combination") {
     return (
@@ -224,7 +227,11 @@ export function Matchups({
                   ? t("offense.dealsXTo", { x: effectivenessDisplay })
                   : t("defense.takesXFrom", { x: effectivenessDisplay })}
               </FancyText>
-              <div className={clsx(styles.grid)} data-kind={kind}>
+              <div
+                className={clsx(styles.grid)}
+                data-kind={kind}
+                data-large={isLarge}
+              >
                 {list.map((x) => {
                   if (x.formName === "stellar") {
                     return (
@@ -236,7 +243,17 @@ export function Matchups({
                   const displayTypes =
                     kind === "offense-single" ? x.types.slice(0, 1) : x.types;
                   return displayTypes.map((t) => {
-                    return <Badge key={`type-${t}`} type={t} />;
+                    if (isLarge) {
+                      return <Badge key={`type-${t}`} type={t} />;
+                    }
+                    return (
+                      <Badge
+                        key={`type-${t}`}
+                        type={t}
+                        size="small"
+                        variant="ghost"
+                      />
+                    );
                   });
                 })}
               </div>

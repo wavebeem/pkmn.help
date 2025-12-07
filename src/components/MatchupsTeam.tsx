@@ -1,16 +1,15 @@
 import { clsx } from "clsx";
+import { ReactNode, useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
-import styles from "./MatchupsTeam.module.css";
+import { useTypeCount } from "../hooks/useTypeCount";
 import { assertNever } from "../misc/assertNever";
 import { compact } from "../misc/compact";
-import { Badge } from "./Badge";
 import { Generation } from "../misc/data-generations";
 import { matchupFor } from "../misc/data-matchups";
 import { AbilityName, Type, typesForGeneration } from "../misc/data-types";
-import { useTypeCount } from "../hooks/useTypeCount";
-import { EmptyState } from "./EmptyState";
-import { ReactNode, useEffect, useRef } from "react";
 import { useBrowserSize } from "../misc/useBrowserSize";
+import { Badge } from "./Badge";
+import styles from "./MatchupsTeam.module.css";
 
 type MatchupKey =
   | "weak"
@@ -201,10 +200,6 @@ export function MatchupsTeam({
       updateScrollInfo(wrapperRef.current);
     }
   });
-
-  if (typesList.length === 0) {
-    return <EmptyState>{t("defense.team.empty")}</EmptyState>;
-  }
 
   return (
     <div className={clsx(styles.root, "focus-simple", "tabular-nums")}>

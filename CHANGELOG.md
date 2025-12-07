@@ -1,5 +1,13 @@
 # Changelog
 
+## 2025-12-07
+
+- Type matchups are now more compact, especially on mobile
+
+- The Team Defense matchup table is now shown even if no Pokémon are selected
+
+- Type badges have centered text again
+
 ## 2025-12-03
 
 - Improved scrolling performance in the Pokédex in Firefox on Android

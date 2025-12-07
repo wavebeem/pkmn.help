@@ -98,7 +98,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 
 [lang="pl"],
 [lang="ru"] {
-  --type-min-width: 9rem;
+  --type-min-width: 6rem;
   --logo-letter-spacing: initial;
 }
 

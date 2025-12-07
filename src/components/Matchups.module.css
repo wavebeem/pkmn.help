@@ -2,13 +2,13 @@
   display: grid;
 }
 
-.grid[data-kind="offense-single"],
-.grid[data-kind="defense"] {
-  gap: var(--padding1);
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(calc(var(--type-min-width) + 2rem), 1fr)
-  );
+.grid:is([data-kind="defense"], [data-kind="offense-single"]) {
+  gap: var(--padding0);
+  grid-template-columns: repeat(auto-fill, minmax(var(--type-min-width), 1fr));
+
+  &[data-large="true"] {
+    gap: var(--padding1);
+  }
 }
 
 .grid[data-kind="offense-combination"] {
