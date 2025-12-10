@@ -44,7 +44,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-vibrant-border1: hsl(var(--hue-red) 0% 0% / 60%);
 
   --color-scroll-fg: hsl(var(--hue-red) 70% 40%);
-  --color-scroll-bg: hsl(var(--hue-gold) 10% 90%);
+  --color-scroll-bg: transparent;
 
   --weight-normal: 400;
   --weight-medium: 500;
@@ -146,7 +146,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
 
   --color-scroll-fg: hsl(var(--hue-teal) 50% 60%);
-  --color-scroll-bg: hsl(var(--hue-gold) 5% 14%);
+  --color-scroll-bg: transparent;
 
   color-scheme: dark;
 }
@@ -185,7 +185,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 50%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
   --color-scroll-fg: hsl(0 0% 62%);
-  --color-scroll-bg: hsl(0 0% 5%);
+  --color-scroll-bg: transparent;
 
   color-scheme: dark;
 }
@@ -225,6 +225,6 @@ something. You can set `color-scheme: dark` in a `@media` block. */
     --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 40%);
     --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
     --color-scroll-fg: hsl(var(--hue-gold) 5% 70%);
-    --color-scroll-bg: hsl(var(--hue-gold) 5% 15%);
+    --color-scroll-bg: transparent;
   }
 }
