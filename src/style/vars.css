@@ -4,37 +4,37 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 
 :root,
 [data-theme="light"] {
-  --hue-gold: 40;
+  --hue-gold: 35;
   --hue-blue: 230;
   --hue-red: 355;
   --hue-teal: 200;
 
-  --color-bg1: hsl(var(--hue-gold) 10% 95%);
-  --color-bg2: hsl(var(--hue-gold) 10% 85%);
-  --color-bg-ghost: hsl(var(--hue-gold) 10% 95% / 50%);
+  --color-bg1: hsl(var(--hue-gold) 10% 100%);
+  --color-bg2: hsl(var(--hue-gold) 10% 90%);
+  --color-bg-ghost: hsl(var(--hue-gold) 10% 98%);
 
-  --color-card-bg: hsl(var(--hue-gold) 10% 90%);
-  --color-card-highlight: hsl(var(--hue-gold) 10% 95%);
-  --color-card-shadow: hsl(var(--hue-gold) 10% 75%);
+  --color-card-bg: hsl(var(--hue-gold) 10% 95%);
+  --color-card-highlight: hsl(var(--hue-gold) 10% 100%);
+  --color-card-shadow: hsl(var(--hue-gold) 10% 85%);
 
   --color-fg1: hsl(var(--hue-gold) 15% 7%);
   --color-fg2: hsl(var(--hue-gold) 15% 20%);
   --color-fg3: hsl(var(--hue-gold) 15% 40%);
   --color-fg4: hsl(var(--hue-gold) 15% 60%);
 
-  --color-accent-bg: hsl(var(--hue-gold) 15% 30%);
-  --color-accent-fg: hsl(var(--hue-gold) 5% 100%);
+  --color-accent-bg: hsl(var(--hue-red) 70% 40%);
+  --color-accent-fg: hsl(var(--hue-red) 5% 100%);
 
-  --color-header-dark: hsl(var(--hue-gold) 10% 95%);
-  --color-header-base: hsl(var(--hue-gold) 10% 95%);
-  --color-header-highlight: hsl(var(--hue-gold) 10% 85%);
+  --color-header-dark: hsl(var(--hue-gold) 10% 100%);
+  --color-header-base: hsl(var(--hue-gold) 10% 100%);
+  --color-header-highlight: hsl(var(--hue-red) 50% 90%);
   --color-header-text: hsl(var(--hue-red) 70% 40%);
-  --color-header-border: hsl(var(--hue-gold) 10% 75%);
+  --color-header-border: hsl(var(--hue-red) 30% 60%);
 
   --color-tabs-border: transparent;
 
-  --color-button1: hsl(var(--hue-gold) 10% 95%);
-  --color-button1b: hsl(var(--hue-gold) 10% 90%);
+  --color-button1: hsl(var(--hue-gold) 10% 100%);
+  --color-button1b: hsl(var(--hue-gold) 10% 95%);
 
   --color-link: hsl(var(--hue-red) 70% 40%);
 
@@ -44,8 +44,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-vibrant-border: hsl(var(--hue-red) 0% 0% / 20%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 0% / 60%);
 
-  --color-scroll-fg: hsl(var(--hue-gold) 10% 20%);
-  --color-scroll-bg: hsl(var(--hue-gold) 10% 85%);
+  --color-scroll-fg: hsl(var(--hue-red) 70% 40%);
+  --color-scroll-bg: hsl(var(--hue-gold) 10% 90%);
 
   --weight-normal: 400;
   --weight-medium: 500;

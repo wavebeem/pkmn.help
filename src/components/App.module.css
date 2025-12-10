@@ -43,7 +43,7 @@
   }
 
   .sidebar {
-    overflow: auto;
+    overflow: auto auto;
     scrollbar-color: var(--color-header-text) transparent;
   }
 }
@@ -478,7 +478,7 @@
   }
 
   .content {
-    overflow: auto;
+    overflow: auto scroll;
     overscroll-behavior: none;
 
     box-shadow: 0 0 0 1px var(--color-header-border);
