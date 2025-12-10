@@ -481,9 +481,7 @@
     overflow: auto;
     overscroll-behavior: none;
 
-    box-shadow:
-      0 0 0 1px var(--color-header-border),
-      var(--shadow-header);
+    box-shadow: 0 0 0 1px var(--color-header-border);
     border-top-left-radius: var(--border-radius3);
   }
 

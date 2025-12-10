@@ -9,9 +9,9 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --hue-red: 355;
   --hue-teal: 200;
 
-  --color-bg1: hsl(var(--hue-gold) 10% 100%);
+  --color-bg1: hsl(var(--hue-gold) 10% 95%);
   --color-bg2: hsl(var(--hue-gold) 10% 85%);
-  --color-bg-ghost: hsl(var(--hue-gold) 10% 100% / 50%);
+  --color-bg-ghost: hsl(var(--hue-gold) 10% 95% / 50%);
 
   --color-card-bg: hsl(var(--hue-gold) 10% 90%);
   --color-card-highlight: hsl(var(--hue-gold) 10% 95%);
@@ -36,7 +36,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-button1: hsl(var(--hue-gold) 10% 95%);
   --color-button1b: hsl(var(--hue-gold) 10% 90%);
 
-  --color-link: hsl(var(--hue-blue) 100% 50%);
+  --color-link: hsl(var(--hue-red) 70% 40%);
 
   --color-border1: hsl(var(--hue-gold) 10% 50%);
   --color-border2: hsl(var(--hue-gold) 10% 70%);
@@ -113,118 +113,118 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 }
 
 [data-theme="dark"] {
-  --color-bg1: hsl(var(--hue-gold) 10% 22%);
-  --color-bg2: hsl(var(--hue-gold) 10% 14%);
+  --color-bg1: hsl(var(--hue-gold) 5% 22%);
+  --color-bg2: hsl(var(--hue-gold) 5% 14%);
   --color-bg-ghost: hsl(var(--hue-gold) 10% 40% / 20%);
 
-  --color-card-bg: hsl(var(--hue-gold) 10% 20%);
-  --color-card-highlight: hsl(var(--hue-gold) 10% 32%);
-  --color-card-shadow: hsl(var(--hue-gold) 10% 12%);
+  --color-card-bg: hsl(var(--hue-gold) 5% 20%);
+  --color-card-highlight: hsl(var(--hue-gold) 5% 32%);
+  --color-card-shadow: hsl(var(--hue-gold) 5% 12%);
 
-  --color-fg1: hsl(var(--hue-gold) 15% 92%);
-  --color-fg2: hsl(var(--hue-gold) 15% 82%);
+  --color-fg1: hsl(var(--hue-gold) 50% 92%);
+  --color-fg2: hsl(var(--hue-gold) 25% 82%);
   --color-fg3: hsl(var(--hue-gold) 15% 72%);
   --color-fg4: hsl(var(--hue-gold) 15% 62%);
 
   --color-accent-bg: hsl(var(--hue-gold) 15% 82%);
-  --color-accent-fg: hsl(var(--hue-gold) 10% 7%);
+  --color-accent-fg: hsl(var(--hue-gold) 5% 7%);
 
-  --color-header-dark: hsl(var(--hue-red) 60% 30%);
-  --color-header-base: hsl(var(--hue-red) 60% 35%);
-  --color-header-highlight: hsl(var(--hue-red) 40% 45%);
-  --color-header-border: hsl(var(--hue-red) 40% 50%);
-  --color-header-text: #fff;
+  --color-header-dark: hsl(var(--hue-gold) 5% 8%);
+  --color-header-base: hsl(var(--hue-gold) 5% 8%);
+  --color-header-highlight: hsl(var(--hue-gold) 5% 27%);
+  --color-header-border: hsl(var(--hue-gold) 5% 27%);
+  --color-header-text: hsl(var(--hue-gold) 50% 92%);
 
-  --color-tabs-border: hsl(var(--hue-gold) 10% 27%);
+  --color-tabs-border: hsl(var(--hue-gold) 5% 27%);
 
-  --color-button1: hsl(var(--hue-gold) 10% 28%);
-  --color-button1b: hsl(var(--hue-gold) 10% 22%);
+  --color-button1: hsl(var(--hue-gold) 5% 28%);
+  --color-button1b: hsl(var(--hue-gold) 5% 22%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
-  --color-border1: hsl(var(--hue-gold) 10% 48%);
-  --color-border2: hsl(var(--hue-gold) 10% 37%);
-  --color-border3: hsl(var(--hue-gold) 10% 27%);
+  --color-border1: hsl(var(--hue-gold) 5% 48%);
+  --color-border2: hsl(var(--hue-gold) 5% 37%);
+  --color-border3: hsl(var(--hue-gold) 5% 27%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 40%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
-  --color-scroll-fg: hsl(var(--hue-gold) 10% 70%);
-  --color-scroll-bg: hsl(var(--hue-gold) 10% 15%);
+  --color-scroll-fg: hsl(var(--hue-gold) 5% 70%);
+  --color-scroll-bg: hsl(var(--hue-gold) 5% 15%);
 
   color-scheme: dark;
 }
 
 [data-theme="night"] {
-  --color-bg1: hsl(var(--hue-gold) 10% 15%);
-  --color-bg2: hsl(var(--hue-gold) 10% 5%);
-  --color-bg-ghost: hsl(var(--hue-gold) 10% 40% / 20%);
+  --color-bg1: hsl(0 0% 15%);
+  --color-bg2: hsl(0 0% 5%);
+  --color-bg-ghost: hsl(0 0% 40% / 20%);
 
-  --color-card-bg: hsl(var(--hue-gold) 10% 15%);
-  --color-card-highlight: hsl(var(--hue-gold) 10% 25%);
-  --color-card-shadow: hsl(var(--hue-gold) 10% 2%);
+  --color-card-bg: hsl(0 0% 15%);
+  --color-card-highlight: hsl(0 0% 25%);
+  --color-card-shadow: hsl(0 0% 2%);
 
-  --color-fg1: hsl(var(--hue-gold) 10% 82%);
-  --color-fg2: hsl(var(--hue-gold) 10% 72%);
-  --color-fg3: hsl(var(--hue-gold) 10% 62%);
-  --color-fg4: hsl(var(--hue-gold) 10% 52%);
+  --color-fg1: hsl(0 0% 82%);
+  --color-fg2: hsl(0 0% 72%);
+  --color-fg3: hsl(0 0% 62%);
+  --color-fg4: hsl(0 0% 52%);
 
   --color-accent-bg: hsl(var(--hue-gold) 15% 72%);
   --color-accent-fg: hsl(var(--hue-gold) 15% 5%);
 
-  --color-header-dark: hsl(var(--hue-gold) 10% 5%);
-  --color-header-base: hsl(var(--hue-gold) 10% 10%);
-  --color-header-highlight: hsl(var(--hue-gold) 10% 30%);
-  --color-header-border: hsl(var(--hue-gold) 10% 25%);
-  --color-header-text: hsl(var(--hue-gold) 10% 82%);
+  --color-header-dark: hsl(0 0% 5%);
+  --color-header-base: hsl(0 0% 10%);
+  --color-header-highlight: hsl(0 0% 30%);
+  --color-header-border: hsl(0 0% 25%);
+  --color-header-text: hsl(0 0% 82%);
 
-  --color-tabs-border: hsl(var(--hue-gold) 10% 25%);
+  --color-tabs-border: hsl(0 0% 25%);
 
-  --color-button1: hsl(var(--hue-gold) 10% 25%);
-  --color-button1b: hsl(var(--hue-gold) 10% 15%);
+  --color-button1: hsl(0 0% 25%);
+  --color-button1b: hsl(0 0% 15%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
-  --color-border1: hsl(var(--hue-gold) 10% 47%);
-  --color-border2: hsl(var(--hue-gold) 10% 35%);
-  --color-border3: hsl(var(--hue-gold) 10% 25%);
+  --color-border1: hsl(0 0% 47%);
+  --color-border2: hsl(0 0% 35%);
+  --color-border3: hsl(0 0% 25%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 50%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
-  --color-scroll-fg: hsl(var(--hue-gold) 10% 62%);
-  --color-scroll-bg: hsl(var(--hue-gold) 10% 5%);
+  --color-scroll-fg: hsl(0 0% 62%);
+  --color-scroll-bg: hsl(0 0% 5%);
 
   color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
   [data-theme="auto"] {
-    --color-bg1: hsl(var(--hue-gold) 10% 22%);
-    --color-bg2: hsl(var(--hue-gold) 10% 14%);
+    --color-bg1: hsl(var(--hue-gold) 5% 22%);
+    --color-bg2: hsl(var(--hue-gold) 5% 14%);
     --color-bg-ghost: hsl(var(--hue-gold) 10% 40% / 20%);
 
-    --color-card-bg: hsl(var(--hue-gold) 10% 20%);
-    --color-card-highlight: hsl(var(--hue-gold) 10% 32%);
-    --color-card-shadow: hsl(var(--hue-gold) 10% 12%);
+    --color-card-bg: hsl(var(--hue-gold) 5% 20%);
+    --color-card-highlight: hsl(var(--hue-gold) 5% 32%);
+    --color-card-shadow: hsl(var(--hue-gold) 5% 12%);
 
-    --color-fg1: hsl(var(--hue-gold) 15% 92%);
-    --color-fg2: hsl(var(--hue-gold) 15% 82%);
+    --color-fg1: hsl(var(--hue-gold) 50% 92%);
+    --color-fg2: hsl(var(--hue-gold) 25% 82%);
     --color-fg3: hsl(var(--hue-gold) 15% 72%);
     --color-fg4: hsl(var(--hue-gold) 15% 62%);
 
     --color-accent-bg: hsl(var(--hue-gold) 15% 82%);
-    --color-accent-fg: hsl(var(--hue-gold) 10% 7%);
+    --color-accent-fg: hsl(var(--hue-gold) 5% 7%);
 
-    --color-header-dark: hsl(var(--hue-red) 60% 30%);
-    --color-header-base: hsl(var(--hue-red) 60% 35%);
-    --color-header-highlight: hsl(var(--hue-red) 40% 45%);
-    --color-header-border: hsl(var(--hue-red) 40% 50%);
-    --color-header-text: #fff;
+    --color-header-dark: hsl(var(--hue-gold) 5% 8%);
+    --color-header-base: hsl(var(--hue-gold) 5% 8%);
+    --color-header-highlight: hsl(var(--hue-gold) 5% 27%);
+    --color-header-border: hsl(var(--hue-gold) 5% 27%);
+    --color-header-text: hsl(var(--hue-gold) 50% 92%);
 
-    --color-tabs-border: hsl(var(--hue-gold) 10% 27%);
+    --color-tabs-border: hsl(var(--hue-gold) 5% 27%);
 
-    --color-button1: hsl(var(--hue-gold) 10% 28%);
-    --color-button1b: hsl(var(--hue-gold) 10% 22%);
+    --color-button1: hsl(var(--hue-gold) 5% 28%);
+    --color-button1b: hsl(var(--hue-gold) 5% 22%);
     --color-link: hsl(var(--hue-teal) 90% 75%);
-    --color-border1: hsl(var(--hue-gold) 10% 48%);
-    --color-border2: hsl(var(--hue-gold) 10% 37%);
-    --color-border3: hsl(var(--hue-gold) 10% 27%);
+    --color-border1: hsl(var(--hue-gold) 5% 48%);
+    --color-border2: hsl(var(--hue-gold) 5% 37%);
+    --color-border3: hsl(var(--hue-gold) 5% 27%);
     --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 40%);
     --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
-    --color-scroll-fg: hsl(var(--hue-gold) 10% 70%);
-    --color-scroll-bg: hsl(var(--hue-gold) 10% 15%);
+    --color-scroll-fg: hsl(var(--hue-gold) 5% 70%);
+    --color-scroll-bg: hsl(var(--hue-gold) 5% 15%);
   }
 }
