@@ -331,7 +331,14 @@ export function Layout(): ReactNode {
                 />
               </button>
               <hgroup className={styles.titleStack}>
-                <h1 className={styles.title}>pkmn.help</h1>
+                <h1 className={styles.title}>
+                  <sup data-part="p">p</sup>
+                  <sub data-part="k">k</sub>
+                  <sup data-part="m">m</sup>
+                  <sub data-part="n">n</sub>
+                  <span data-part=".">.</span>
+                  <span data-part="help">help</span>
+                </h1>
                 <p className={styles.subtitle}>{t("title")}</p>
               </hgroup>
             </div>

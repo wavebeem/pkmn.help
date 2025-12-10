@@ -4,47 +4,48 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 
 :root,
 [data-theme="light"] {
+  --hue-gold: 40;
   --hue-blue: 230;
   --hue-red: 355;
   --hue-teal: 200;
 
-  --color-bg1: hsl(var(--hue-blue) 10% 100%);
-  --color-bg2: hsl(var(--hue-blue) 10% 90%);
-  --color-bg-ghost: hsl(var(--hue-blue) 10% 100% / 50%);
+  --color-bg1: hsl(var(--hue-gold) 10% 100%);
+  --color-bg2: hsl(var(--hue-gold) 10% 85%);
+  --color-bg-ghost: hsl(var(--hue-gold) 10% 100% / 50%);
 
-  --color-card-bg: hsl(var(--hue-blue) 10% 94%);
-  --color-card-highlight: hsl(var(--hue-blue) 10% 100%);
-  --color-card-shadow: hsl(var(--hue-blue) 10% 80%);
+  --color-card-bg: hsl(var(--hue-gold) 10% 90%);
+  --color-card-highlight: hsl(var(--hue-gold) 10% 95%);
+  --color-card-shadow: hsl(var(--hue-gold) 10% 75%);
 
-  --color-fg1: hsl(var(--hue-blue) 15% 7%);
-  --color-fg2: hsl(var(--hue-blue) 15% 20%);
-  --color-fg3: hsl(var(--hue-blue) 15% 40%);
-  --color-fg4: hsl(var(--hue-blue) 15% 60%);
+  --color-fg1: hsl(var(--hue-gold) 15% 7%);
+  --color-fg2: hsl(var(--hue-gold) 15% 20%);
+  --color-fg3: hsl(var(--hue-gold) 15% 40%);
+  --color-fg4: hsl(var(--hue-gold) 15% 60%);
 
-  --color-accent-bg: hsl(var(--hue-blue) 15% 30%);
-  --color-accent-fg: hsl(var(--hue-blue) 5% 100%);
+  --color-accent-bg: hsl(var(--hue-gold) 15% 30%);
+  --color-accent-fg: hsl(var(--hue-gold) 5% 100%);
 
-  --color-header-dark: hsl(var(--hue-red) 70% 30%);
-  --color-header-base: hsl(var(--hue-red) 70% 40%);
-  --color-header-highlight: hsl(var(--hue-red) 50% 55%);
-  --color-header-text: #fff;
-  --color-header-border: hsl(var(--hue-red) 70% 30%);
+  --color-header-dark: hsl(var(--hue-gold) 10% 95%);
+  --color-header-base: hsl(var(--hue-gold) 10% 95%);
+  --color-header-highlight: hsl(var(--hue-gold) 10% 85%);
+  --color-header-text: hsl(var(--hue-red) 70% 40%);
+  --color-header-border: hsl(var(--hue-gold) 10% 75%);
 
   --color-tabs-border: transparent;
 
-  --color-button1: hsl(var(--hue-blue) 10% 100%);
-  --color-button1b: hsl(var(--hue-blue) 10% 96%);
+  --color-button1: hsl(var(--hue-gold) 10% 95%);
+  --color-button1b: hsl(var(--hue-gold) 10% 90%);
 
   --color-link: hsl(var(--hue-blue) 100% 50%);
 
-  --color-border1: hsl(var(--hue-blue) 10% 50%);
-  --color-border2: hsl(var(--hue-blue) 10% 70%);
-  --color-border3: hsl(var(--hue-blue) 10% 80%);
+  --color-border1: hsl(var(--hue-gold) 10% 50%);
+  --color-border2: hsl(var(--hue-gold) 10% 70%);
+  --color-border3: hsl(var(--hue-gold) 10% 80%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 0% / 20%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 0% / 60%);
 
-  --color-scroll-fg: hsl(var(--hue-blue) 10% 20%);
-  --color-scroll-bg: hsl(var(--hue-blue) 10% 85%);
+  --color-scroll-fg: hsl(var(--hue-gold) 10% 20%);
+  --color-scroll-bg: hsl(var(--hue-gold) 10% 85%);
 
   --weight-normal: 400;
   --weight-medium: 500;
@@ -68,7 +69,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --border-radius3: 16px;
   --border-radius-pill: 9999px;
 
-  --color-modal-backdrop: hsl(var(--hue-blue) 10% 20% / 80%);
+  --color-modal-backdrop: hsl(var(--hue-gold) 10% 20% / 80%);
 
   --shadow-tabs: 0 0 0 1px rgb(0 0 0 / 5%), 0 0 16px rgb(0 0 0 / 20%);
   --shadow-header: 0 0 8px rgb(0 0 0 / 10%);
@@ -78,7 +79,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --filter-darken: brightness(90%);
   /* Don't overcomplicate this filter or Pokedex scrolling can get really slow
   in Android Firefox */
-  --filter-image: drop-shadow(8px 8px 32px hsl(var(--hue-blue) 10% 20% / 30%));
+  --filter-image: drop-shadow(8px 8px 32px hsl(var(--hue-gold) 10% 20% / 30%));
 
   --logo-letter-spacing: calc(-1rem / 32);
 
@@ -112,21 +113,21 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 }
 
 [data-theme="dark"] {
-  --color-bg1: hsl(var(--hue-blue) 10% 22%);
-  --color-bg2: hsl(var(--hue-blue) 10% 14%);
-  --color-bg-ghost: hsl(var(--hue-blue) 10% 40% / 20%);
+  --color-bg1: hsl(var(--hue-gold) 10% 22%);
+  --color-bg2: hsl(var(--hue-gold) 10% 14%);
+  --color-bg-ghost: hsl(var(--hue-gold) 10% 40% / 20%);
 
-  --color-card-bg: hsl(var(--hue-blue) 10% 20%);
-  --color-card-highlight: hsl(var(--hue-blue) 10% 32%);
-  --color-card-shadow: hsl(var(--hue-blue) 10% 12%);
+  --color-card-bg: hsl(var(--hue-gold) 10% 20%);
+  --color-card-highlight: hsl(var(--hue-gold) 10% 32%);
+  --color-card-shadow: hsl(var(--hue-gold) 10% 12%);
 
-  --color-fg1: hsl(var(--hue-blue) 15% 92%);
-  --color-fg2: hsl(var(--hue-blue) 15% 82%);
-  --color-fg3: hsl(var(--hue-blue) 15% 72%);
-  --color-fg4: hsl(var(--hue-blue) 15% 62%);
+  --color-fg1: hsl(var(--hue-gold) 15% 92%);
+  --color-fg2: hsl(var(--hue-gold) 15% 82%);
+  --color-fg3: hsl(var(--hue-gold) 15% 72%);
+  --color-fg4: hsl(var(--hue-gold) 15% 62%);
 
-  --color-accent-bg: hsl(var(--hue-blue) 15% 82%);
-  --color-accent-fg: hsl(var(--hue-blue) 10% 7%);
+  --color-accent-bg: hsl(var(--hue-gold) 15% 82%);
+  --color-accent-fg: hsl(var(--hue-gold) 10% 7%);
 
   --color-header-dark: hsl(var(--hue-red) 60% 30%);
   --color-header-base: hsl(var(--hue-red) 60% 35%);
@@ -134,78 +135,78 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-header-border: hsl(var(--hue-red) 40% 50%);
   --color-header-text: #fff;
 
-  --color-tabs-border: hsl(var(--hue-blue) 10% 27%);
+  --color-tabs-border: hsl(var(--hue-gold) 10% 27%);
 
-  --color-button1: hsl(var(--hue-blue) 10% 28%);
-  --color-button1b: hsl(var(--hue-blue) 10% 22%);
+  --color-button1: hsl(var(--hue-gold) 10% 28%);
+  --color-button1b: hsl(var(--hue-gold) 10% 22%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
-  --color-border1: hsl(var(--hue-blue) 10% 48%);
-  --color-border2: hsl(var(--hue-blue) 10% 37%);
-  --color-border3: hsl(var(--hue-blue) 10% 27%);
+  --color-border1: hsl(var(--hue-gold) 10% 48%);
+  --color-border2: hsl(var(--hue-gold) 10% 37%);
+  --color-border3: hsl(var(--hue-gold) 10% 27%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 40%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
-  --color-scroll-fg: hsl(var(--hue-blue) 10% 70%);
-  --color-scroll-bg: hsl(var(--hue-blue) 10% 15%);
+  --color-scroll-fg: hsl(var(--hue-gold) 10% 70%);
+  --color-scroll-bg: hsl(var(--hue-gold) 10% 15%);
 
   color-scheme: dark;
 }
 
 [data-theme="night"] {
-  --color-bg1: hsl(var(--hue-blue) 10% 15%);
-  --color-bg2: hsl(var(--hue-blue) 10% 5%);
-  --color-bg-ghost: hsl(var(--hue-blue) 10% 40% / 20%);
+  --color-bg1: hsl(var(--hue-gold) 10% 15%);
+  --color-bg2: hsl(var(--hue-gold) 10% 5%);
+  --color-bg-ghost: hsl(var(--hue-gold) 10% 40% / 20%);
 
-  --color-card-bg: hsl(var(--hue-blue) 10% 15%);
-  --color-card-highlight: hsl(var(--hue-blue) 10% 25%);
-  --color-card-shadow: hsl(var(--hue-blue) 10% 2%);
+  --color-card-bg: hsl(var(--hue-gold) 10% 15%);
+  --color-card-highlight: hsl(var(--hue-gold) 10% 25%);
+  --color-card-shadow: hsl(var(--hue-gold) 10% 2%);
 
-  --color-fg1: hsl(var(--hue-blue) 10% 82%);
-  --color-fg2: hsl(var(--hue-blue) 10% 72%);
-  --color-fg3: hsl(var(--hue-blue) 10% 62%);
-  --color-fg4: hsl(var(--hue-blue) 10% 52%);
+  --color-fg1: hsl(var(--hue-gold) 10% 82%);
+  --color-fg2: hsl(var(--hue-gold) 10% 72%);
+  --color-fg3: hsl(var(--hue-gold) 10% 62%);
+  --color-fg4: hsl(var(--hue-gold) 10% 52%);
 
-  --color-accent-bg: hsl(var(--hue-blue) 15% 72%);
-  --color-accent-fg: hsl(var(--hue-blue) 15% 5%);
+  --color-accent-bg: hsl(var(--hue-gold) 15% 72%);
+  --color-accent-fg: hsl(var(--hue-gold) 15% 5%);
 
-  --color-header-dark: hsl(var(--hue-blue) 10% 5%);
-  --color-header-base: hsl(var(--hue-blue) 10% 10%);
-  --color-header-highlight: hsl(var(--hue-blue) 10% 30%);
-  --color-header-border: hsl(var(--hue-blue) 10% 25%);
-  --color-header-text: hsl(var(--hue-blue) 10% 82%);
+  --color-header-dark: hsl(var(--hue-gold) 10% 5%);
+  --color-header-base: hsl(var(--hue-gold) 10% 10%);
+  --color-header-highlight: hsl(var(--hue-gold) 10% 30%);
+  --color-header-border: hsl(var(--hue-gold) 10% 25%);
+  --color-header-text: hsl(var(--hue-gold) 10% 82%);
 
-  --color-tabs-border: hsl(var(--hue-blue) 10% 25%);
+  --color-tabs-border: hsl(var(--hue-gold) 10% 25%);
 
-  --color-button1: hsl(var(--hue-blue) 10% 25%);
-  --color-button1b: hsl(var(--hue-blue) 10% 15%);
+  --color-button1: hsl(var(--hue-gold) 10% 25%);
+  --color-button1b: hsl(var(--hue-gold) 10% 15%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
-  --color-border1: hsl(var(--hue-blue) 10% 47%);
-  --color-border2: hsl(var(--hue-blue) 10% 35%);
-  --color-border3: hsl(var(--hue-blue) 10% 25%);
+  --color-border1: hsl(var(--hue-gold) 10% 47%);
+  --color-border2: hsl(var(--hue-gold) 10% 35%);
+  --color-border3: hsl(var(--hue-gold) 10% 25%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 50%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
-  --color-scroll-fg: hsl(var(--hue-blue) 10% 62%);
-  --color-scroll-bg: hsl(var(--hue-blue) 10% 5%);
+  --color-scroll-fg: hsl(var(--hue-gold) 10% 62%);
+  --color-scroll-bg: hsl(var(--hue-gold) 10% 5%);
 
   color-scheme: dark;
 }
 
 @media (prefers-color-scheme: dark) {
   [data-theme="auto"] {
-    --color-bg1: hsl(var(--hue-blue) 10% 22%);
-    --color-bg2: hsl(var(--hue-blue) 10% 14%);
-    --color-bg-ghost: hsl(var(--hue-blue) 10% 40% / 20%);
+    --color-bg1: hsl(var(--hue-gold) 10% 22%);
+    --color-bg2: hsl(var(--hue-gold) 10% 14%);
+    --color-bg-ghost: hsl(var(--hue-gold) 10% 40% / 20%);
 
-    --color-card-bg: hsl(var(--hue-blue) 10% 20%);
-    --color-card-highlight: hsl(var(--hue-blue) 10% 32%);
-    --color-card-shadow: hsl(var(--hue-blue) 10% 12%);
+    --color-card-bg: hsl(var(--hue-gold) 10% 20%);
+    --color-card-highlight: hsl(var(--hue-gold) 10% 32%);
+    --color-card-shadow: hsl(var(--hue-gold) 10% 12%);
 
-    --color-fg1: hsl(var(--hue-blue) 15% 92%);
-    --color-fg2: hsl(var(--hue-blue) 15% 82%);
-    --color-fg3: hsl(var(--hue-blue) 15% 72%);
-    --color-fg4: hsl(var(--hue-blue) 15% 62%);
+    --color-fg1: hsl(var(--hue-gold) 15% 92%);
+    --color-fg2: hsl(var(--hue-gold) 15% 82%);
+    --color-fg3: hsl(var(--hue-gold) 15% 72%);
+    --color-fg4: hsl(var(--hue-gold) 15% 62%);
 
-    --color-accent-bg: hsl(var(--hue-blue) 15% 82%);
-    --color-accent-fg: hsl(var(--hue-blue) 10% 7%);
+    --color-accent-bg: hsl(var(--hue-gold) 15% 82%);
+    --color-accent-fg: hsl(var(--hue-gold) 10% 7%);
 
     --color-header-dark: hsl(var(--hue-red) 60% 30%);
     --color-header-base: hsl(var(--hue-red) 60% 35%);
@@ -213,17 +214,17 @@ something. You can set `color-scheme: dark` in a `@media` block. */
     --color-header-border: hsl(var(--hue-red) 40% 50%);
     --color-header-text: #fff;
 
-    --color-tabs-border: hsl(var(--hue-blue) 10% 27%);
+    --color-tabs-border: hsl(var(--hue-gold) 10% 27%);
 
-    --color-button1: hsl(var(--hue-blue) 10% 28%);
-    --color-button1b: hsl(var(--hue-blue) 10% 22%);
+    --color-button1: hsl(var(--hue-gold) 10% 28%);
+    --color-button1b: hsl(var(--hue-gold) 10% 22%);
     --color-link: hsl(var(--hue-teal) 90% 75%);
-    --color-border1: hsl(var(--hue-blue) 10% 48%);
-    --color-border2: hsl(var(--hue-blue) 10% 37%);
-    --color-border3: hsl(var(--hue-blue) 10% 27%);
+    --color-border1: hsl(var(--hue-gold) 10% 48%);
+    --color-border2: hsl(var(--hue-gold) 10% 37%);
+    --color-border3: hsl(var(--hue-gold) 10% 27%);
     --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 40%);
     --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
-    --color-scroll-fg: hsl(var(--hue-blue) 10% 70%);
-    --color-scroll-bg: hsl(var(--hue-blue) 10% 15%);
+    --color-scroll-fg: hsl(var(--hue-gold) 10% 70%);
+    --color-scroll-bg: hsl(var(--hue-gold) 10% 15%);
   }
 }

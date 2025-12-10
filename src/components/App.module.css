@@ -88,9 +88,7 @@
   transition-duration: 200ms;
   transition-timing-function: ease;
   transition-property: translate, scale;
-  box-shadow:
-    inset 1px 0 0 var(--color-header-highlight),
-    var(--shadow-header);
+  box-shadow: var(--shadow-header);
 }
 
 .dialog::backdrop {
@@ -232,9 +230,47 @@
 
 .title {
   font-size: 1.75rem;
-  font-weight: bold;
-  color: #fff;
+  font-weight: 300;
   margin: 0;
+  font-synthesis: initial;
+  font-style: italic;
+
+  sup {
+    top: -0.5em;
+  }
+
+  sub {
+    bottom: -0em;
+  }
+
+  :is([data-part="p"], [data-part="k"], [data-part="m"], [data-part="n"]) {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    scale: 100% 80%;
+    display: inline-block;
+  }
+
+  [data-part="k"] {
+    margin-left: -0.3em;
+  }
+
+  [data-part="m"] {
+    margin-left: 0.2em;
+  }
+
+  [data-part="n"] {
+    margin-left: -0.1em;
+  }
+
+  [data-part="."] {
+    margin-left: 0.1em;
+    font-weight: 900;
+  }
+
+  [data-part="help"] {
+    margin-right: 0.5em;
+  }
 }
 
 .subtitle {
@@ -302,7 +338,6 @@
   border: 0;
   background: transparent;
   color: inherit;
-  color: white;
   flex: none;
   display: flex;
   width: max-content;
@@ -315,6 +350,10 @@
   animation-delay: 1s;
   transition: transform 200ms;
   transition-timing-function: ease-in-out;
+
+  [data-theme="light"] & {
+    outline: 2px solid;
+  }
 }
 
 @keyframes pokeballJiggle {

@@ -9,7 +9,7 @@ navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose attack move types,Escolher tipos
-offense.dealsXTo,Deals {{ x }} damage to these types,Causa {{ x }} de dano a
+offense.dealsXTo,Deals {{ x }} damage to,Causa {{ x }} de dano a
 offense.mode.combination,Dual,
 offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
@@ -54,7 +54,7 @@ coverage.status.reset,Loaded default Pokémon forms,Formas de Pokémon predefini
 coverage.status.errored,Error loading CSV. Don't change header names.,Erro ao carregar CSV. Não alterar os nomes dos cabeçalhos.
 coverage.back,Back to offense,Voltar a ataque
 defense.chooseTypes,Choose defending Pokémon types,Escolher tipos
-defense.takesXFrom,Takes {{ x }} from these move types,Recebe {{ x }} de
+defense.takesXFrom,Takes {{ x }} from,Recebe {{ x }} de
 defense.chooseAbility,Choose ability,Escolher habilidade
 defense.chooseTeraType,Choose tera type,Selecionar o tipo de tera
 defense.abilityNames.none,None,Nenhum

@@ -9,7 +9,7 @@ navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose attack move types,타입 선택
-offense.dealsXTo,Deals {{ x }} damage to these types,{{x}} 데미지
+offense.dealsXTo,Deals {{ x }} damage to,{{x}} 데미지
 offense.mode.combination,Dual,
 offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
@@ -54,7 +54,7 @@ coverage.status.reset,Loaded default Pokémon forms,로드된 포켓몬의 기�
 coverage.status.errored,Error loading CSV. Don't change header names.,CSV를 로드하는 중에 오류가 발생했습니다. 헤더 이름을 변경하지 마세요.
 coverage.back,Back to offense,공격으로 돌아가기
 defense.chooseTypes,Choose defending Pokémon types,타입 선택
-defense.takesXFrom,Takes {{ x }} from these move types,{{ x }} 피해
+defense.takesXFrom,Takes {{ x }} from,{{ x }} 피해
 defense.chooseAbility,Choose ability,특성 선택
 defense.chooseTeraType,Choose tera type,테라스탈 타입 선택
 defense.abilityNames.none,None,없음

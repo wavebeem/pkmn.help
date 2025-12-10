@@ -9,7 +9,7 @@ navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose attack move types,複数のタイプを選択
-offense.dealsXTo,Deals {{ x }} damage to these types,{{ x }}を与える
+offense.dealsXTo,Deals {{ x }} damage to,{{ x }}を与える
 offense.mode.combination,Dual,
 offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
@@ -54,7 +54,7 @@ coverage.status.reset,Loaded default Pokémon forms,デフォルトのポケモ�
 coverage.status.errored,Error loading CSV. Don't change header names.,CSV読み込みエラー。ヘッダーの名前を変えないでください
 coverage.back,Back to offense,こうげきに戻る
 defense.chooseTypes,Choose defending Pokémon types,複数のタイプを選択
-defense.takesXFrom,Takes {{ x }} from these move types,{{ x }}を受ける
+defense.takesXFrom,Takes {{ x }} from,{{ x }}を受ける
 defense.chooseAbility,Choose ability,特性
 defense.chooseTeraType,Choose tera type,テラスタイプ
 defense.abilityNames.none,None,なし
