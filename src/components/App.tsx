@@ -412,7 +412,7 @@ export function Layout(): ReactNode {
           </NavLink>
         </div>
         <aside className={styles.sidebar}>
-          <PageNav />
+          <PageNav position="left" />
         </aside>
         <dialog
           className={styles.dialog}
@@ -444,7 +444,7 @@ export function Layout(): ReactNode {
                 <IconClose />
               </button>
             </div>
-            <PageNav />
+            <PageNav position="right" />
           </div>
         </dialog>
         <div className={styles.content} id="content">

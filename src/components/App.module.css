@@ -193,7 +193,7 @@
     width: 100vw;
     height: var(--header-height);
     z-index: 2;
-    border-bottom: 1px solid var(--color-header-border);
+    border-bottom: 1px solid var(--color-header-highlight);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -416,9 +416,9 @@
   /* Abusing shadows as borders sometimes causes rendering issues, but if we use
   a border that's sometimes transparent, it will make the tab bar look
   unbalanced.  */
-  border-bottom: 1px solid var(--color-tabs-border);
-  background: var(--color-card-bg);
-  color: var(--color-fg1);
+  border-bottom: 1px solid var(--color-header-border);
+  background: var(--color-header-base);
+  color: var(--color-header-text);
   gap: var(--padding2);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -430,7 +430,7 @@
   padding: var(--padding2);
   /* The border is incredibly subtle, so let's consider it part of the padding,
   so that the tab bar doesn't look lopsided... */
-  padding-bottom: calc(var(--padding2) - 1px);
+  /* padding-bottom: calc(var(--padding2) - 1px); */
   top: var(--header-height);
   z-index: 1;
 }
@@ -438,7 +438,7 @@
 .mobileTab {
   flex: auto;
   text-align: center;
-  border: 1px solid var(--color-border3);
+  border: 1px solid var(--color-header-highlight);
   border-radius: var(--border-radius2);
   color: inherit;
   text-decoration: none;

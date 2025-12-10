@@ -1,7 +1,14 @@
 .tabBar {
   flex-wrap: wrap;
   display: grid;
-  padding-right: var(--padding2);
+
+  &[data-position="left"] {
+    padding-right: var(--padding2);
+  }
+
+  &[data-position="right"] {
+    padding-left: var(--padding2);
+  }
 }
 
 .tab {
@@ -22,6 +29,14 @@
   display: flex;
   gap: var(--padding2);
   align-items: center;
+
+  .tabBar[data-position="left"] & {
+    border-radius: 0 var(--border-radius-pill) var(--border-radius-pill) 0;
+  }
+
+  .tabBar[data-position="right"] & {
+    border-radius: var(--border-radius-pill) 0 0 var(--border-radius-pill);
+  }
 }
 
 .tab:has(+ .tab[aria-current="page"]) {

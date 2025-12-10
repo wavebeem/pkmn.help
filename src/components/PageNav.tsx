@@ -14,7 +14,11 @@ import {
   IconSettings,
 } from "./icons";
 
-export function PageNav(): ReactNode {
+export type PageNavProps = {
+  position: "left" | "right";
+};
+
+export function PageNav({ position }: PageNavProps): ReactNode {
   const tabClass = clsx(styles.tab, "active-darken-background focus-header");
   const { needsAppUpdate, closeMenu } = useAppContext();
   const { t } = useTranslation();
@@ -29,7 +33,7 @@ export function PageNav(): ReactNode {
   );
 
   return (
-    <nav className={styles.tabBar}>
+    <nav className={styles.tabBar} data-position={position}>
       <span className={styles.tabSection}>{t("navigation.offense")}</span>
       <NavLink
         onClick={onNavLinkClick}

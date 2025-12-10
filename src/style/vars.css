@@ -30,8 +30,6 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-header-text: hsl(var(--hue-red) 70% 40%);
   --color-header-border: hsl(var(--hue-red) 30% 60%);
 
-  --color-tabs-border: transparent;
-
   --color-button1: hsl(var(--hue-gold) 10% 100%);
   --color-button1b: hsl(var(--hue-gold) 10% 95%);
 
@@ -70,7 +68,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 
   --color-modal-backdrop: hsl(var(--hue-gold) 10% 20% / 80%);
 
-  --shadow-tabs: 0 0 0 1px rgb(0 0 0 / 5%), 0 0 16px rgb(0 0 0 / 20%);
+  --shadow-tabs: 0 0 16px rgb(0 0 0 / 20%);
   --shadow-header: 0 0 8px rgb(0 0 0 / 10%);
   --shadow-button: 0 1px 0 rgb(0 0 0 / 10%);
   --shadow-inset: inset 0 1px 0 rgb(0 0 0 / 10%);
@@ -134,8 +132,6 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-header-border: hsl(var(--hue-teal) 50% 37%);
   --color-header-text: hsl(var(--hue-teal) 50% 70%);
 
-  --color-tabs-border: hsl(var(--hue-gold) 5% 27%);
-
   --color-button1: hsl(var(--hue-gold) 5% 28%);
   --color-button1b: hsl(var(--hue-gold) 5% 22%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
@@ -174,8 +170,6 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-header-border: hsl(0 0% 25%);
   --color-header-text: hsl(0 0% 82%);
 
-  --color-tabs-border: hsl(0 0% 25%);
-
   --color-button1: hsl(0 0% 25%);
   --color-button1b: hsl(0 0% 15%);
   --color-link: hsl(var(--hue-teal) 90% 75%);
@@ -213,8 +207,6 @@ something. You can set `color-scheme: dark` in a `@media` block. */
     --color-header-highlight: hsl(var(--hue-gold) 5% 27%);
     --color-header-border: hsl(var(--hue-gold) 5% 27%);
     --color-header-text: hsl(var(--hue-gold) 50% 92%);
-
-    --color-tabs-border: hsl(var(--hue-gold) 5% 27%);
 
     --color-button1: hsl(var(--hue-gold) 5% 28%);
     --color-button1b: hsl(var(--hue-gold) 5% 22%);
