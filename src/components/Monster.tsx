@@ -9,7 +9,7 @@ import { ExternalLink } from "./ExternalLink";
 import { FancyLink } from "./FancyLink";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
-import { IconCry, IconShiny } from "./Icon";
+import { IconCry, IconShiny } from "./icons";
 import { IconButton } from "./IconButton";
 import styles from "./Monster.module.css";
 import { MonsterImage } from "./MonsterImage";

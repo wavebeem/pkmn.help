@@ -11,7 +11,7 @@ import {
   IconExport,
   IconImport,
   IconReset,
-} from "../components/Icon";
+} from "../components/icons";
 import { Spinner } from "../components/Spinner";
 import { useAppContext } from "../hooks/useAppContext";
 import { useTypeCount } from "../hooks/useTypeCount";

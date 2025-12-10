@@ -1,5 +1,11 @@
 # Changelog
 
+## ????-??-??
+
+- Updated logo and theme
+
+-
+
 ## 2025-12-07
 
 - Type matchups are now more compact, especially on mobile

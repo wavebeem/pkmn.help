@@ -12,7 +12,7 @@ import {
   IconOffenseSingle,
   IconPokedex,
   IconSettings,
-} from "./Icon";
+} from "./icons";
 
 export function PageNav(): ReactNode {
   const tabClass = clsx(styles.tab, "active-darken-background focus-header");

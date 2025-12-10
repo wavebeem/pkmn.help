@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { ReactNode } from "react";
 import styles from "./CollapsibleSection.module.css";
-import { IconMinus, IconPlus } from "./Icon";
+import { IconMinus, IconPlus } from "./icons";
 
 interface CollapsibleSectionProps {
   initiallyOpen?: boolean;

@@ -20,6 +20,8 @@ export {
   ChevronsLeft as IconFirst,
   ChevronRight as IconNext,
   ChevronsRight as IconLast,
+  // Select
+  ChevronDown as IconSelectCaret,
   // Add
   Plus as IconAdd,
   // Open/close OR plus for pairs

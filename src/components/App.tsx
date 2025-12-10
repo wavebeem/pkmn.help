@@ -55,7 +55,7 @@ import {
   IconOffenseDual,
   IconOffenseSingle,
   IconPokedex,
-} from "./Icon";
+} from "./icons";
 import { MonsterImage } from "./MonsterImage";
 import { PageNav } from "./PageNav";
 

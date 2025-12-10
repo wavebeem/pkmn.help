@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { ReactNode } from "react";
 import { customProperties } from "../misc/customProperties";
-import { IconClear, IconSearch } from "./Icon";
+import { IconClear, IconSearch } from "./icons";
 import styles from "./Search.module.css";
 
 interface SearchProps {

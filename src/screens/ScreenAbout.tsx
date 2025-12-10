@@ -10,7 +10,7 @@ import { Flex } from "../components/Flex";
 import { useAppContext } from "../hooks/useAppContext";
 import { resetApp } from "../misc/resetApp";
 import { FancyLink } from "../components/FancyLink";
-import { IconReset } from "../components/Icon";
+import { IconReset } from "../components/icons";
 
 export function ScreenAbout(): ReactNode {
   const { needsAppUpdate, updateApp } = useAppContext();

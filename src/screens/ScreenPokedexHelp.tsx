@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
-import { IconBack } from "../components/Icon";
+import { IconBack } from "../components/icons";
 import styles from "./ScreenPokedexHelp.module.css";
 
 export function ScreenPokedexHelp(): ReactNode {

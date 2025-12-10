@@ -19,21 +19,10 @@
   box-shadow: var(--shadow-button);
 }
 
-.select:after {
-  --_size: 8px;
-  --_border-size: 1.5px;
-  content: "";
+.icon {
   position: absolute;
-  width: var(--_size);
-  height: var(--_size);
-  border: var(--_border-size) solid;
-  border-top: 0;
-  border-left: 0;
-  rotate: 45deg;
   right: 1rem;
-  top: calc(50% - var(--_size) + var(--_border-size));
-  pointer-events: none;
-  box-sizing: border-box;
+  top: calc(50% - 8px);
 }
 
 .select optgroup {

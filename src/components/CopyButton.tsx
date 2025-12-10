@@ -2,7 +2,7 @@ import { clsx } from "clsx";
 import { ReactNode, useState } from "react";
 import styles from "./CopyButton.module.css";
 import { sleep } from "../misc/sleep";
-import { IconCopy } from "./Icon";
+import { IconCopy } from "./icons";
 
 export interface CopyButtonProps {
   text: string;

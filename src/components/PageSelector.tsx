@@ -4,7 +4,7 @@ import { useMediaQuery } from "usehooks-ts";
 import { Button } from "./Button";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
-import { IconFirst, IconLast, IconNext, IconPrevious } from "./Icon";
+import { IconFirst, IconLast, IconNext, IconPrevious } from "./icons";
 
 export interface PageSelectorProps<T> {
   anchorElementRef: RefObject<HTMLDivElement | null>;

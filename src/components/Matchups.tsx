@@ -16,7 +16,7 @@ import { Divider } from "./Divider";
 import { EmptyState } from "./EmptyState";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
-import { IconPlus } from "./Icon";
+import { IconPlus } from "./icons";
 import styles from "./Matchups.module.css";
 import { Meter } from "./Meter";
 import { PlainBadge } from "./PlainBadge";

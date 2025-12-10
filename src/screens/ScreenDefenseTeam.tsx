@@ -30,7 +30,7 @@ import {
 } from "../misc/data-types";
 import { updateArrayAt } from "../misc/updateArrayAt";
 import styles from "./ScreenDefenseTeam.module.css";
-import { IconAdd, IconEdit, IconRemove } from "../components/Icon";
+import { IconAdd, IconEdit, IconRemove } from "../components/icons";
 import { IconButton } from "../components/IconButton";
 
 function setAbilityAt({
