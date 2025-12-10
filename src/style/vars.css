@@ -5,7 +5,6 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 :root,
 [data-theme="light"] {
   --hue-gold: 35;
-  --hue-blue: 230;
   --hue-red: 355;
   --hue-teal: 200;
 
@@ -115,9 +114,9 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 [data-theme="dark"] {
   --color-bg1: hsl(var(--hue-gold) 5% 22%);
   --color-bg2: hsl(var(--hue-gold) 5% 14%);
-  --color-bg-ghost: hsl(var(--hue-gold) 10% 40% / 20%);
+  --color-bg-ghost: hsl(var(--hue-gold) 5% 22%);
 
-  --color-card-bg: hsl(var(--hue-gold) 5% 20%);
+  --color-card-bg: hsl(var(--hue-gold) 5% 18%);
   --color-card-highlight: hsl(var(--hue-gold) 5% 32%);
   --color-card-shadow: hsl(var(--hue-gold) 5% 12%);
 
@@ -154,7 +153,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 [data-theme="night"] {
   --color-bg1: hsl(0 0% 15%);
   --color-bg2: hsl(0 0% 5%);
-  --color-bg-ghost: hsl(0 0% 40% / 20%);
+  --color-bg-ghost: hsl(0 0% 18%);
 
   --color-card-bg: hsl(0 0% 15%);
   --color-card-highlight: hsl(0 0% 25%);
@@ -165,8 +164,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-fg3: hsl(0 0% 62%);
   --color-fg4: hsl(0 0% 52%);
 
-  --color-accent-bg: hsl(var(--hue-gold) 15% 72%);
-  --color-accent-fg: hsl(var(--hue-gold) 15% 5%);
+  --color-accent-bg: hsl(0 0% 72%);
+  --color-accent-fg: hsl(0 0% 5%);
 
   --color-header-dark: hsl(0 0% 5%);
   --color-header-base: hsl(0 0% 10%);
@@ -194,9 +193,9 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   [data-theme="auto"] {
     --color-bg1: hsl(var(--hue-gold) 5% 22%);
     --color-bg2: hsl(var(--hue-gold) 5% 14%);
-    --color-bg-ghost: hsl(var(--hue-gold) 10% 40% / 20%);
+    --color-bg-ghost: hsl(var(--hue-gold) 5% 22%);
 
-    --color-card-bg: hsl(var(--hue-gold) 5% 20%);
+    --color-card-bg: hsl(var(--hue-gold) 5% 18%);
     --color-card-highlight: hsl(var(--hue-gold) 5% 32%);
     --color-card-shadow: hsl(var(--hue-gold) 5% 12%);
 
