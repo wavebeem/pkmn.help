@@ -5,8 +5,8 @@
 }
 
 .button {
-  padding-block: var(--padding2);
-  padding-inline: var(--padding2) var(--padding3);
+  padding-block: var(--padding1);
+  padding-inline: var(--padding1) var(--padding3);
   display: block;
   border: 1px solid;
   border-radius: var(--border-radius2);
@@ -48,14 +48,14 @@
   appearance: none;
   display: block;
   box-sizing: border-box;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 32px;
+  height: 32px;
   flex: none;
   border: 0;
   background: var(--color-accent-bg);
   color: var(--color-accent-fg);
   box-shadow: var(--checkbox-border);
-  border-radius: 0.125rem;
+  border-radius: var(--border-radius1);
 }
 
 :where(.button[data-type="stellar"]) .checkbox {
@@ -93,5 +93,5 @@
     );
   box-shadow:
     var(--checkbox-border),
-    inset 0 0 0 6px var(--_bg);
+    inset 0 0 0 8px var(--_bg);
 }

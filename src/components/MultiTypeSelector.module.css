@@ -1,6 +1,6 @@
 .button {
-  padding-block: var(--padding2);
-  padding-inline: var(--padding2) var(--padding3);
+  padding-block: var(--padding1);
+  padding-inline: var(--padding1) var(--padding3);
   display: block;
   border: 1px solid;
   border-radius: var(--border-radius2);
@@ -45,16 +45,24 @@
   --checkbox-border: inset 0 0 0 1px var(--checkbox-color-border);
   -webkit-appearance: none;
   appearance: none;
-  display: block;
   box-sizing: border-box;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 32px;
+  height: 32px;
   flex: none;
   border: 0;
   background: var(--type-color);
   color: white;
   box-shadow: var(--checkbox-border);
-  border-radius: 0.125rem;
+  border-radius: var(--border-radius1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox svg {
+  --_c: var(--type-color-bg);
+  filter: drop-shadow(1px 1px 1px var(--_c))
+    drop-shadow(-1px -1px 1px var(--_c));
 }
 
 :where(.button[data-type="stellar"]) .checkbox {
@@ -92,12 +100,16 @@
       transparent
     );
   box-shadow:
-    inset 0 0 0 6px var(--_bg),
+    inset 0 0 0 8px var(--_bg),
     0 0 0 1px #0004,
     0 0 1px #0008;
   /* box-shadow:
     var(--checkbox-border),
     inset 0 0 0 6px var(--_bg); */
+}
+
+.button[aria-pressed="true"] .checkbox svg {
+  display: none;
 }
 
 .button[aria-pressed="false"]:focus-visible {
