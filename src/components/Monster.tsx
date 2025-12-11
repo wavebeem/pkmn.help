@@ -151,14 +151,6 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
         <div className={styles.monsterLinks}>
           <FancyLink
             outlined
-            aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}
-            to={getWikiLink(i18n.language, pokemon)}
-            id={`${idPrefix}-wiki`}
-          >
-            {getWikiName(i18n.language)}
-          </FancyLink>
-          <FancyLink
-            outlined
             aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
             to={`/offense/combination/?${params}#matchup-offense`}
             id={`${idPrefix}-offense`}
@@ -186,6 +178,15 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             id={`${idPrefix}-defense`}
           >
             <IconDefenseSolo size={16} aria-label={t("defense.mode.solo")} />
+          </FancyLink>
+          <Flex flex="auto" />
+          <FancyLink
+            outlined
+            aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}
+            to={getWikiLink(i18n.language, pokemon)}
+            id={`${idPrefix}-wiki`}
+          >
+            {getWikiName(i18n.language)}
           </FancyLink>
         </div>
         <div className={styles.monsterStats}>

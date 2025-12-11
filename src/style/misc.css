@@ -252,3 +252,8 @@ input {
     hsl(from var(--color-fg1) h s l / 5%) 0 100%
   );
 }
+
+/* TODO: Filters are slow, and I'm using too many of them... */
+/* * {
+  filter: none !important;
+} */
