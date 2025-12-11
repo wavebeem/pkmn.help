@@ -21,7 +21,7 @@
 
 .icon {
   position: absolute;
-  right: 1rem;
+  right: calc(0.5rem + 4px);
   top: calc(50% - 8px);
 }
 
