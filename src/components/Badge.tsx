@@ -4,6 +4,7 @@ import { Type } from "../misc/data-types";
 import styles from "./Badge.module.css";
 import { customProperties } from "../misc/customProperties";
 import { ReactNode } from "react";
+import { TypeIcon } from "./TypeIcon";
 
 interface BadgeProps {
   type: Type;
@@ -29,6 +30,7 @@ export function Badge({
         "--type-color-border": typeColorBorder(type),
       })}
     >
+      <TypeIcon type={type} size={size === "small" ? 16 : 24} />
       <div className={styles.label}>{t(`types.${type}`)}</div>
     </div>
   );
