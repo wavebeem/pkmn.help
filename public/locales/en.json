@@ -151,12 +151,6 @@
       "helpLong": "Help, search Pokédex",
       "notFound": "No Pokémon found"
     },
-    "offense": {
-      "text": "Offense"
-    },
-    "defense": {
-      "text": "Defense"
-    },
     "cry": {
       "text": "Cry"
     },

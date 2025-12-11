@@ -5,11 +5,16 @@ import { Pokemon } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { getWikiLink, getWikiName } from "../misc/wiki";
 import { Badge } from "./Badge";
-import { ExternalLink } from "./ExternalLink";
 import { FancyLink } from "./FancyLink";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
-import { IconCry, IconShiny } from "./icons";
+import {
+  IconCry,
+  IconDefenseSolo,
+  IconOffenseDual,
+  IconOffenseSingle,
+  IconShiny,
+} from "./icons";
 import { IconButton } from "./IconButton";
 import styles from "./Monster.module.css";
 import { MonsterImage } from "./MonsterImage";
@@ -144,26 +149,43 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
           </Flex>
         </div>
         <div className={styles.monsterLinks}>
-          <ExternalLink
+          <FancyLink
+            outlined
             aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}
-            href={getWikiLink(i18n.language, pokemon)}
+            to={getWikiLink(i18n.language, pokemon)}
             id={`${idPrefix}-wiki`}
           >
             {getWikiName(i18n.language)}
-          </ExternalLink>
+          </FancyLink>
           <FancyLink
+            outlined
             aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
             to={`/offense/combination/?${params}#matchup-offense`}
             id={`${idPrefix}-offense`}
           >
-            {t("pokedex.offense.text")}
+            <IconOffenseDual
+              size={16}
+              aria-label={t("offense.mode.combination")}
+            />
           </FancyLink>
           <FancyLink
+            outlined
+            aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
+            to={`/offense/single/?${params}#matchup-offense`}
+            id={`${idPrefix}-offense`}
+          >
+            <IconOffenseSingle
+              size={16}
+              aria-label={t("offense.mode.single")}
+            />
+          </FancyLink>
+          <FancyLink
+            outlined
             aria-labelledby={`${idPrefix}-defense ${idPrefix}-name ${idPrefix}-form`}
             to={`/defense/solo/?${params}#matchup-defense`}
             id={`${idPrefix}-defense`}
           >
-            {t("pokedex.defense.text")}
+            <IconDefenseSolo size={16} aria-label={t("defense.mode.solo")} />
           </FancyLink>
         </div>
         <div className={styles.monsterStats}>

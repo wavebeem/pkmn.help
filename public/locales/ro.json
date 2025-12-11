@@ -129,12 +129,6 @@
       "helpLong": "Ajutor, caută în Pokedex",
       "notFound": "Niciun Pokémon gasit"
     },
-    "offense": {
-      "text": "Atac"
-    },
-    "defense": {
-      "text": "Apărare"
-    },
     "cry": {
       "text": "Sunetul Pokémon-ului"
     },

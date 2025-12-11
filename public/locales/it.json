@@ -129,12 +129,6 @@
       "helpLong": "Aiuto, cerca Pokédex",
       "notFound": "Nessun Pokémon trovato"
     },
-    "offense": {
-      "text": "Offensiva"
-    },
-    "defense": {
-      "text": "Difensiva"
-    },
     "cry": {
       "text": "Verso"
     },

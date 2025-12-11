@@ -129,12 +129,6 @@
       "helpLong": "Trợ giúp, tìm kiếm Pokédex",
       "notFound": "Không tìm kiếm được Pokémon"
     },
-    "offense": {
-      "text": "Tấn Công"
-    },
-    "defense": {
-      "text": "Phòng Thủ"
-    },
     "cry": {
       "text": "Tiếng kêu"
     },

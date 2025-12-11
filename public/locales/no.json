@@ -128,12 +128,6 @@
       "helpLong": "Hjelp, søk i Pokédexen",
       "notFound": "Ingen Pokémon funnet"
     },
-    "offense": {
-      "text": "Angrep"
-    },
-    "defense": {
-      "text": "Forsvar"
-    },
     "cry": {
       "text": "Gråt"
     },

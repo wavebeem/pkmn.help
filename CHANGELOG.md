@@ -6,6 +6,9 @@
 
 - Improve text rendering on macOS
 
+- Pokédex entries now have separate buttons for Dual Offense and Single Offense
+  calculator links
+
 ## 2025-12-07
 
 - Type matchups are now more compact, especially on mobile

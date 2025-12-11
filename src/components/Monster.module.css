@@ -48,7 +48,7 @@
   justify-content: flex-start;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--padding3);
+  gap: var(--padding2);
 }
 
 .monsterStats {
