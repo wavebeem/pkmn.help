@@ -5,6 +5,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 :root,
 [data-theme="light"] {
   --hue-gold: 35;
+  /* --hue-gold: 230; */
   --hue-red: 355;
   --hue-teal: 175;
 
@@ -24,11 +25,17 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-accent-bg: hsl(var(--hue-red) 70% 40%);
   --color-accent-fg: hsl(var(--hue-red) 5% 100%);
 
-  --color-header-dark: hsl(var(--hue-gold) 10% 100%);
-  --color-header-base: hsl(var(--hue-gold) 10% 100%);
-  --color-header-highlight: hsl(var(--hue-red) 50% 90%);
-  --color-header-text: hsl(var(--hue-red) 70% 40%);
-  --color-header-border: hsl(var(--hue-red) 30% 60%);
+  --color-header-dark: hsl(var(--hue-red) 70% 30%);
+  --color-header-base: hsl(var(--hue-red) 70% 40%);
+  --color-header-highlight: hsl(var(--hue-red) 50% 50%);
+  --color-header-text: #fff;
+  --color-header-border: hsl(var(--hue-red) 70% 22%);
+
+  --color-sidebar-dark: hsl(var(--hue-red) 70% 30%);
+  --color-sidebar-base: hsl(var(--hue-red) 70% 35%);
+  --color-sidebar-highlight: hsl(var(--hue-red) 50% 45%);
+  --color-sidebar-text: #fff;
+  --color-sidebar-border: hsl(var(--hue-red) 70% 22%);
 
   --color-button1: hsl(var(--hue-gold) 10% 100%);
   --color-button1b: hsl(var(--hue-gold) 10% 95%);

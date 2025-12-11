@@ -37,17 +37,6 @@
   border-color: transparent;
 }
 
-@media (width >= 60rem) {
-  .menuButton {
-    display: none;
-  }
-
-  .sidebar {
-    overflow: auto auto;
-    scrollbar-color: var(--color-header-text) transparent;
-  }
-}
-
 .header {
   grid-area: header;
   margin: 0;
@@ -56,6 +45,7 @@
   flex-direction: column;
   gap: var(--padding3);
   color: var(--color-header-text);
+  /* BACKGROUND-COLOR must be set for JS to read */
   background: var(--color-header-base);
 }
 
@@ -64,8 +54,8 @@
   grid-area: sidebar;
   margin: 0;
   border: 0;
-  background: var(--color-header-base);
-  color: var(--color-header-text);
+  background: var(--color-sidebar-base);
+  color: var(--color-sidebar-text);
   padding-bottom: var(--padding4);
 }
 
@@ -74,8 +64,8 @@
   border: 0;
   padding: 0;
   padding-bottom: var(--padding4);
-  background: var(--color-header-base);
-  color: var(--color-header-text);
+  background: var(--color-sidebar-base);
+  color: var(--color-sidebar-text);
   position: fixed;
   top: 0;
   left: var(--padding5);
@@ -203,9 +193,13 @@
 @media (width >= 60rem) {
   .headerContent {
     gap: var(--padding2);
-    padding: var(--padding2);
+    padding: var(--padding2) var(--padding3);
     align-items: center;
     max-width: initial;
+  }
+
+  .header {
+    border-bottom: 1px solid var(--color-header-border);
   }
 }
 
@@ -350,10 +344,6 @@
   animation-delay: 1s;
   transition: transform 200ms;
   transition-timing-function: ease-in-out;
-
-  [data-theme="light"] & {
-    outline: 2px solid;
-  }
 }
 
 @keyframes pokeballJiggle {
@@ -416,9 +406,9 @@
   /* Abusing shadows as borders sometimes causes rendering issues, but if we use
   a border that's sometimes transparent, it will make the tab bar look
   unbalanced.  */
-  border-bottom: 1px solid var(--color-header-border);
-  background: var(--color-header-base);
-  color: var(--color-header-text);
+  border-bottom: 1px solid var(--color-sidebar-border);
+  background: var(--color-sidebar-base);
+  color: var(--color-sidebar-text);
   gap: var(--padding2);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -438,7 +428,7 @@
 .mobileTab {
   flex: auto;
   text-align: center;
-  border: 1px solid var(--color-header-highlight);
+  border: 1px solid var(--color-sidebar-highlight);
   border-radius: var(--border-radius2);
   color: inherit;
   text-decoration: none;
@@ -449,9 +439,9 @@
 }
 
 .mobileTab[aria-current="page"] {
-  background: var(--color-accent-bg);
-  color: var(--color-accent-fg);
-  border-color: var(--color-vibrant-border);
+  background: var(--color-sidebar-text);
+  color: var(--color-sidebar-dark);
+  border-color: transparent;
 }
 
 .mobileTab svg {
@@ -468,7 +458,7 @@
     --sidebar-width: round(up, 22ch, 16px);
 
     grid-template-areas:
-      "......   header "
+      "header   header "
       "sidebar  content";
     grid-template-columns: minmax(auto, var(--sidebar-width)) 1fr;
     grid-template-rows: var(--header-height) 1fr;
@@ -481,8 +471,8 @@
     overflow: auto scroll;
     overscroll-behavior: none;
 
-    box-shadow: 0 0 0 1px var(--color-header-border);
-    border-top-left-radius: var(--border-radius3);
+    /* box-shadow: 0 0 0 1px var(--color-header-border);
+    border-top-left-radius: var(--border-radius3); */
   }
 
   .dialog {
@@ -508,5 +498,17 @@
     /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
     /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
     padding-bottom: var(--safe-area-max-inset-bottom);
+  }
+}
+
+@media (width >= 60rem) {
+  .menuButton {
+    display: none;
+  }
+
+  .sidebar {
+    overflow: auto auto;
+    scrollbar-color: var(--color-header-text) transparent;
+    border-right: 1px solid var(--color-sidebar-border);
   }
 }

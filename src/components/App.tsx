@@ -189,7 +189,10 @@ export function Layout(): ReactNode {
   // Use the heading's background color as the HTML `theme-color` meta property,
   // so that browsers like mobile Safari make the surrounding UI match the
   // heading...
-  const themeColor = useComputedStyleProperty(headerRef.current, "color");
+  const themeColor = useComputedStyleProperty(
+    headerRef.current,
+    "backgroundColor",
+  );
 
   const dialogRef = useRef<HTMLDialogElement>(null);
 
@@ -356,7 +359,7 @@ export function Layout(): ReactNode {
         </header>
         <div className={styles.mobileTabBar}>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-tab")}
+            className={clsx(styles.mobileTab, "focus-header")}
             end
             to="/offense/combination/"
             aria-label={compositeAriaLabel(
@@ -367,7 +370,7 @@ export function Layout(): ReactNode {
             <IconOffenseDual />
           </NavLink>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-tab")}
+            className={clsx(styles.mobileTab, "focus-header")}
             end
             to="/offense/single/"
             aria-label={compositeAriaLabel(
@@ -378,7 +381,7 @@ export function Layout(): ReactNode {
             <IconOffenseSingle />
           </NavLink>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-tab")}
+            className={clsx(styles.mobileTab, "focus-header")}
             end
             to="/defense/solo/"
             aria-label={compositeAriaLabel(
@@ -389,7 +392,7 @@ export function Layout(): ReactNode {
             <IconDefenseSolo />
           </NavLink>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-tab")}
+            className={clsx(styles.mobileTab, "focus-header")}
             end
             to="/defense/team/"
             aria-label={compositeAriaLabel(
@@ -400,7 +403,7 @@ export function Layout(): ReactNode {
             <IconDefenseTeam />
           </NavLink>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-tab")}
+            className={clsx(styles.mobileTab, "focus-header")}
             end
             to="/pokedex/"
             aria-label={t("navigation.pokedex")}
