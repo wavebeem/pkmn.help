@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","Аты, нөмі�
 pokedex.search.help,Help,Көмек
 pokedex.search.helpLong,"Help, search Pokédex","Көмек, Покедекс іздеу"
 pokedex.search.notFound,No Pokémon found,Бірде-бір Покемон табылмады
-pokedex.offense.text,Offense,Шабуыл
-pokedex.defense.text,Defense,Қорғаныс
 pokedex.cry.text,Cry,
 pokedex.shiny.text,Shiny,
 pokedex.pagination.next,Next,Келесі

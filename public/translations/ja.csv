@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types",名前、番号、
 pokedex.search.help,Help,ヘルプ
 pokedex.search.helpLong,"Help, search Pokédex",ヘルプ、Pokédexを検索
 pokedex.search.notFound,No Pokémon found,ポケモンが見つかりませんでした
-pokedex.offense.text,Offense,こうげき
-pokedex.defense.text,Defense,ぼうぎょ
 pokedex.cry.text,Cry,鳴き声
 pokedex.shiny.text,Shiny,色違い
 pokedex.pagination.next,Next,次

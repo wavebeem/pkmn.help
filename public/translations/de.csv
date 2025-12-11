@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","Suche nach Name, 
 pokedex.search.help,Help,Hilfe
 pokedex.search.helpLong,"Help, search Pokédex","Hilfe, Pokédex-Suche"
 pokedex.search.notFound,No Pokémon found,Keine Pokémon gefunden
-pokedex.offense.text,Offense,Angriff
-pokedex.defense.text,Defense,Verteidigung
 pokedex.cry.text,Cry,Ruf
 pokedex.shiny.text,Shiny,Shiny
 pokedex.pagination.next,Next,Weiter

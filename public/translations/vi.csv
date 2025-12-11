@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","Tìm kiếm bằn
 pokedex.search.help,Help,Trợ giúp
 pokedex.search.helpLong,"Help, search Pokédex","Trợ giúp, tìm kiếm Pokédex"
 pokedex.search.notFound,No Pokémon found,Không tìm kiếm được Pokémon
-pokedex.offense.text,Offense,Tấn Công
-pokedex.defense.text,Defense,Phòng Thủ
 pokedex.cry.text,Cry,Tiếng kêu
 pokedex.shiny.text,Shiny,Shiny
 pokedex.pagination.next,Next,Tiếp

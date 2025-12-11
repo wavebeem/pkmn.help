@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types",通過名稱、編
 pokedex.search.help,Help,幫助
 pokedex.search.helpLong,"Help, search Pokédex",幫助，搜索寶可夢圖鑑
 pokedex.search.notFound,No Pokémon found,未找到寶可夢
-pokedex.offense.text,Offense,攻擊
-pokedex.defense.text,Defense,防禦
 pokedex.cry.text,Cry,叫聲
 pokedex.shiny.text,Shiny,閃光
 pokedex.pagination.next,Next,下一個

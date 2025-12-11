@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","Caută după nume
 pokedex.search.help,Help,Ajutor
 pokedex.search.helpLong,"Help, search Pokédex","Ajutor, caută în Pokedex"
 pokedex.search.notFound,No Pokémon found,Niciun Pokémon gasit
-pokedex.offense.text,Offense,Atac
-pokedex.defense.text,Defense,Apărare
 pokedex.cry.text,Cry,Sunetul Pokémon-ului
 pokedex.shiny.text,Shiny,Strălucitor
 pokedex.pagination.next,Next,Următoarea

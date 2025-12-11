@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types",按名称、编号
 pokedex.search.help,Help,帮助
 pokedex.search.helpLong,"Help, search Pokédex",帮助，搜索图鉴
 pokedex.search.notFound,No Pokémon found,未找到符合的宝可梦
-pokedex.offense.text,Offense,攻击方
-pokedex.defense.text,Defense,防御方
 pokedex.cry.text,Cry,叫声
 pokedex.shiny.text,Shiny,闪光
 pokedex.pagination.next,Next,下页

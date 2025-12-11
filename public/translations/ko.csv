@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","이름, 번호 �
 pokedex.search.help,Help,도움말
 pokedex.search.helpLong,"Help, search Pokédex","도움말, 포켓몬 도감 검색"
 pokedex.search.notFound,No Pokémon found,포켓몬을 찾을 수 없습니다
-pokedex.offense.text,Offense,공격
-pokedex.defense.text,Defense,방어
 pokedex.cry.text,Cry,울음소리
 pokedex.shiny.text,Shiny,색이 다른 포켓몬
 pokedex.pagination.next,Next,다음
