@@ -69,13 +69,20 @@
   content: "";
   position: absolute;
   top: 50%;
-  right: -4px;
   width: 12px;
   height: 12px;
   translate: 0 -50%;
   border-radius: 9999px;
   background: var(--color-sidebar-text);
   box-shadow: 0 0 0 3px var(--color-sidebar-base);
+}
+
+.tabBar[data-position="left"] .pleaseUpdate::after {
+  right: -4px;
+}
+
+.tabBar[data-position="right"] .pleaseUpdate::after {
+  left: -4px;
 }
 
 @media (width >= 60rem) {

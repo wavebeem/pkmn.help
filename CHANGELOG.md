@@ -4,7 +4,7 @@
 
 - Updated logo and theme
 
--
+- Improve text rendering on macOS
 
 ## 2025-12-07
 

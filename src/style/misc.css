@@ -4,6 +4,12 @@
   line-height: 1.5;
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-tap-highlight-color */
   -webkit-tap-highlight-color: transparent;
+
+  /* macOS doesn't actually support subpixel text rendering any more, but all
+  browser on that platform by default use a text rendering mode based on
+  subpixel rendering... that doesn't actually work, and thus causes text to be
+  slightly heavier than it should be... */
+  -webkit-font-smoothing: antialiased;
 }
 
 body {

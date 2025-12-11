@@ -359,7 +359,11 @@ export function Layout(): ReactNode {
         </header>
         <div className={styles.mobileTabBar}>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-header")}
+            className={clsx(
+              styles.mobileTab,
+              "active-darken-background",
+              "focus-header",
+            )}
             end
             to="/offense/combination/"
             aria-label={compositeAriaLabel(
@@ -370,7 +374,11 @@ export function Layout(): ReactNode {
             <IconOffenseDual />
           </NavLink>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-header")}
+            className={clsx(
+              styles.mobileTab,
+              "active-darken-background",
+              "focus-header",
+            )}
             end
             to="/offense/single/"
             aria-label={compositeAriaLabel(
@@ -381,7 +389,11 @@ export function Layout(): ReactNode {
             <IconOffenseSingle />
           </NavLink>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-header")}
+            className={clsx(
+              styles.mobileTab,
+              "active-darken-background",
+              "focus-header",
+            )}
             end
             to="/defense/solo/"
             aria-label={compositeAriaLabel(
@@ -392,7 +404,11 @@ export function Layout(): ReactNode {
             <IconDefenseSolo />
           </NavLink>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-header")}
+            className={clsx(
+              styles.mobileTab,
+              "active-darken-background",
+              "focus-header",
+            )}
             end
             to="/defense/team/"
             aria-label={compositeAriaLabel(
@@ -403,7 +419,11 @@ export function Layout(): ReactNode {
             <IconDefenseTeam />
           </NavLink>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-header")}
+            className={clsx(
+              styles.mobileTab,
+              "active-darken-background",
+              "focus-header",
+            )}
             end
             to="/pokedex/"
             aria-label={t("navigation.pokedex")}

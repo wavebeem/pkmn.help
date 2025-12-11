@@ -37,6 +37,15 @@
   border-color: transparent;
 }
 
+.dialog .menuButton {
+  border-color: var(--color-sidebar-highlight);
+
+  &[aria-pressed="true"] {
+    background: var(--color-sidebar-text);
+    color: var(--color-sidebar-dark);
+  }
+}
+
 .header {
   grid-area: header;
   margin: 0;
@@ -430,6 +439,7 @@
   text-align: center;
   border: 1px solid var(--color-sidebar-highlight);
   border-radius: var(--border-radius2);
+  background: var(--color-sidebar-base);
   color: inherit;
   text-decoration: none;
   padding: var(--padding1) var(--padding2);
