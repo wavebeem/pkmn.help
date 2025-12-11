@@ -189,10 +189,7 @@ export function Layout(): ReactNode {
   // Use the heading's background color as the HTML `theme-color` meta property,
   // so that browsers like mobile Safari make the surrounding UI match the
   // heading...
-  const themeColor = useComputedStyleProperty(
-    headerRef.current,
-    "backgroundColor",
-  );
+  const themeColor = useComputedStyleProperty(headerRef.current, "color");
 
   const dialogRef = useRef<HTMLDialogElement>(null);
 
