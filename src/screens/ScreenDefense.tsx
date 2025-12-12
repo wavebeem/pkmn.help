@@ -94,7 +94,7 @@ export function ScreenDefense(): ReactNode {
       const tb = t(`defense.abilityNames.${b}`);
       return ta.localeCompare(tb);
     });
-  
+
   function resetDefense() {
     setTypes([]);
     setTeraType(Type.none);
