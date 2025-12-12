@@ -9,6 +9,8 @@
 - Pokédex entries now have separate buttons for Dual Offense and Single Offense
   calculator links
 
+- Fixed a text wrapping bug in Chinese in the team defense table
+
 ## 2025-12-07
 
 - Type matchups are now more compact, especially on mobile
