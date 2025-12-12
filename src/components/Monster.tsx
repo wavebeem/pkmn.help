@@ -47,7 +47,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
   }
   return (
     <div className={styles.root}>
-      <Flex direction="column">
+      <Flex direction="column" className={styles.name}>
         <Flex align="center" gap="medium">
           <FancyText
             tag="h2"
@@ -141,7 +141,13 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
                 animationState={animationState}
               />
             </Flex>
-            <Flex wrap gap="small" justify="flex-start" align="flex-start">
+            <Flex
+              wrap
+              gap="small"
+              justify="flex-start"
+              align="flex-start"
+              className={styles.badges}
+            >
               {pokemon.types.map((t, i) => (
                 <Badge key={i} type={t} size="small" />
               ))}

@@ -18,6 +18,14 @@
   border: 1px solid transparent;
 }
 
+.name {
+  padding-left: var(--padding1);
+}
+
+.badges {
+  padding-left: var(--padding1);
+}
+
 .buttonContainer {
   display: flex;
   justify-content: center;
@@ -30,7 +38,7 @@
 
 .monster {
   display: grid;
-  gap: var(--padding2);
+  /* gap: var(--padding2); */
   grid-template-areas:
     "icon"
     "links"
@@ -44,6 +52,14 @@
 }
 
 .monsterLinks {
+  margin-top: var(--padding2);
+  margin-bottom: var(--padding0);
+
+  background: var(--color-bg-ghost);
+  padding: var(--padding2);
+  border-radius: var(--border-radius2) var(--border-radius2)
+    var(--border-radius0) var(--border-radius0);
+
   grid-area: links;
   justify-content: start;
   display: flex;

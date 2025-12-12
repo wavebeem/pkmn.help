@@ -8,7 +8,6 @@
 
   background: var(--color-bg-ghost);
   padding: var(--padding2);
-  border-radius: var(--border-radius2);
-  /* margin-inline: calc(-1 * var(--padding2));
-  margin-bottom: calc(-1 * var(--padding2)); */
+  border-radius: var(--border-radius0) var(--border-radius0)
+    var(--border-radius2) var(--border-radius2);
 }
