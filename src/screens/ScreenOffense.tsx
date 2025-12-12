@@ -15,6 +15,7 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
+import { ResetLink } from "../components/ResetLink";
 import { useAppContext } from "../hooks/useAppContext";
 import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
@@ -116,6 +117,16 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
     [],
   );
 
+  const hasSelection =
+    offenseTypes.length > 0 || abilities.length > 0 || specialMoves.length > 0;
+
+  function resetOffense() {
+    setOffenseTypes([]);
+    setAbilities([]);
+    setSpecialMoves([]);
+    navigate({ ...location, search: "" }, { replace: true });
+  }
+
   const permalink = new URL(window.location.href);
   if (offenseTypes.length > 0) {
     permalink.searchParams.set("types", offenseTypes.join(" "));
@@ -164,10 +175,15 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
 
         {generation === "default" && (
           <Flex direction="column" gap="small">
-            <Flex>
+            <Flex gap="large">
               <CopyButton text={permalink.href}>
                 {t("general.copyLink")}
               </CopyButton>
+              {hasSelection && (
+                <ResetLink onClick={resetOffense}>
+                  {t("general.clearChoices")}
+                </ResetLink>
+              )}
             </Flex>
           </Flex>
         )}

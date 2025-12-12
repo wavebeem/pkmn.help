@@ -316,7 +316,8 @@
   },
   "general": {
     "loading": "Chargement…",
-    "copyLink": "Copier le lien"
+    "copyLink": "Copier le lien",
+    "clearChoices": "Effacer les choix"
   },
   "games": {
     "label": "Génération du jeu",
