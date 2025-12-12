@@ -47,7 +47,7 @@
 
 .badge:not([data-type="none"]) {
   svg {
-    filter: drop-shadow(0px 0px 1px var(--_c)) drop-shadow(0 0 1px var(--_c));
+    filter: drop-shadow(1px 1px 0 var(--_c));
   }
 
   .label {
@@ -56,7 +56,8 @@
       and -webkit-text-stroke together, or Safari will barf.
     */
     -webkit-text-stroke: 2px var(--_c);
-    filter: drop-shadow(0 0 1px var(--_c));
+    filter: drop-shadow(1px 1px 0 var(--_c));
     paint-order: stroke fill;
+    letter-spacing: calc(1em / 64);
   }
 }

@@ -31,11 +31,6 @@
   --_c: #0002;
   -webkit-text-stroke: 3px var(--_c);
   paint-order: stroke fill;
-  /*
-    Smooth out the rough edges of the text stroke a bit. DON'T use text-shadow
-    and -webkit-text-stroke together, or Safari will barf.
-  */
-  filter: drop-shadow(0 0 1px var(--_c));
 }
 
 .button[aria-pressed="false"] {
@@ -70,7 +65,7 @@
 
 .checkbox svg {
   --_c: var(--type-color-bg);
-  filter: drop-shadow(0px 0px 1px var(--_c)) drop-shadow(0 0 1px var(--_c));
+  filter: drop-shadow(1px 1px 0 var(--_c));
 }
 
 :where(.button[data-type="stellar"]) .checkbox {
@@ -78,7 +73,6 @@
 }
 
 .button[aria-pressed="true"] .checkbox {
-  /* filter: drop-shadow(0 0 1px #0008); */
   background-clip: padding-box;
   --_blur: 0.6px;
   --_size: calc(1em / 6);
