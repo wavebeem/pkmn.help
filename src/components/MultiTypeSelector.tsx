@@ -25,7 +25,7 @@ export function MultiTypeSelector({
   const { t } = useTranslation();
   const types = typesForGeneration(generation);
   return (
-    <div className="columns-type-selector" data-limit={limit}>
+    <div className={styles.root} data-limit={limit}>
       {types.map((type) => {
         const isChecked = value.includes(type);
         return (

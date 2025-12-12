@@ -44,7 +44,7 @@ export function RadioGroup<S extends string>({
               className={clsx(styles.item, "active-darken-background")}
             >
               <input
-                className={clsx(styles.radio, "focus-outline")}
+                className={styles.radio}
                 type="radio"
                 name={name}
                 checked={value === option.value}

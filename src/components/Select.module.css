@@ -12,10 +12,10 @@
   padding: 0.5rem 1rem;
   padding-right: 3rem;
   border-radius: var(--border-radius2);
-  background: var(--background-button-bg);
+  border: 1px solid transparent;
+  background: var(--background-button);
   color: var(--color-fg1);
   width: 100%;
-  border: 1px solid var(--color-border1);
   box-shadow: var(--shadow-button);
 }
 

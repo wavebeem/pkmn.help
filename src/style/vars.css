@@ -45,7 +45,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-border1: hsl(var(--hue-gold) 10% 50%);
   --color-border2: hsl(var(--hue-gold) 10% 70%);
   --color-border3: hsl(var(--hue-gold) 10% 80%);
-  --color-vibrant-border: hsl(var(--hue-red) 0% 0% / 20%);
+  --color-vibrant-border: hsl(var(--hue-red) 0% 0% / 10%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 0% / 60%);
 
   --color-scroll-fg: hsl(var(--hue-red) 70% 40%);
@@ -54,11 +54,15 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --weight-normal: 400;
   --weight-medium: 500;
 
-  --background-button-bg: linear-gradient(
-      var(--color-button1),
-      var(--color-button1b)
-    )
-    var(--color-button1);
+  --background-button-position: bottom;
+  --background-button:
+    linear-gradient(var(--color-button1), var(--color-button1b)) padding-box,
+    radial-gradient(
+        at var(--background-button-position),
+        var(--color-border1),
+        var(--color-border2)
+      )
+      border-box;
 
   --padding0: 2px;
   --padding1: 4px;
@@ -117,6 +121,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 }
 
 [data-theme="dark"] {
+  --background-button-position: top;
+
   --color-bg1: hsl(var(--hue-blue) 5% 22%);
   --color-bg2: hsl(var(--hue-blue) 5% 14%);
   --color-bg-ghost: hsl(var(--hue-blue) 5% 22%);
@@ -151,7 +157,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-border1: hsl(var(--hue-blue) 5% 48%);
   --color-border2: hsl(var(--hue-blue) 5% 37%);
   --color-border3: hsl(var(--hue-blue) 5% 27%);
-  --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 40%);
+  --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 20%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
 
   --color-scroll-fg: hsl(var(--hue-blue) 25% 82%);
@@ -161,6 +167,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 }
 
 [data-theme="night"] {
+  --background-button-position: top;
+
   --color-bg1: hsl(0 0% 15%);
   --color-bg2: hsl(0 0% 5%);
   --color-bg-ghost: hsl(0 0% 15%);
@@ -195,7 +203,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-border1: hsl(0 0% 47%);
   --color-border2: hsl(0 0% 35%);
   --color-border3: hsl(0 0% 25%);
-  --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 50%);
+  --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 20%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
   --color-scroll-fg: hsl(0 0% 62%);
   --color-scroll-bg: transparent;
@@ -205,6 +213,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 
 @media (prefers-color-scheme: dark) {
   [data-theme="auto"] {
+    --background-button-position: top;
+
     --color-bg1: hsl(var(--hue-blue) 5% 22%);
     --color-bg2: hsl(var(--hue-blue) 5% 14%);
     --color-bg-ghost: hsl(var(--hue-blue) 5% 22%);
@@ -239,7 +249,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
     --color-border1: hsl(var(--hue-blue) 5% 48%);
     --color-border2: hsl(var(--hue-blue) 5% 37%);
     --color-border3: hsl(var(--hue-blue) 5% 27%);
-    --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 40%);
+    --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 20%);
     --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
 
     --color-scroll-fg: hsl(var(--hue-blue) 25% 82%);

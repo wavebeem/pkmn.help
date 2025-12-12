@@ -205,12 +205,7 @@ export function ScreenDefenseTeam(): ReactNode {
                         ))}
                       </Flex>
                       <Flex flex="auto" />
-                      <Flex
-                        direction="row"
-                        wrap
-                        justify="flex-end"
-                        gap="medium"
-                      >
+                      <Flex direction="row" wrap justify="flex-end" gap="small">
                         <IconButton
                           title={t("defense.team.edit")}
                           aria-label={t("defense.team.edit")}

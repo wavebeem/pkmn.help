@@ -9,8 +9,8 @@
 }
 
 .root:where(:not(:disabled)) {
-  border-color: var(--color-border1);
-  background: var(--background-button-bg);
+  border-color: transparent;
+  background: var(--background-button);
   color: var(--color-fg1);
   box-shadow: var(--shadow-button);
 }

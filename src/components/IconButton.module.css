@@ -6,10 +6,9 @@
   align-items: center;
   fill: currentColor;
   box-shadow: var(--shadow-button);
-  background: var(--color-button1)
-    linear-gradient(to bottom, var(--color-button1) 20%, var(--color-button1b));
   color: var(--color-fg1);
-  border: 1px solid var(--color-border1);
+  border: 1px solid transparent;
+  background: var(--background-button);
 }
 
 .root:active {

@@ -21,11 +21,11 @@
 .buttonContainer {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: var(--padding1);
   position: absolute;
   top: 0;
   right: 0;
-  margin: 1rem;
+  margin: var(--padding2);
 }
 
 .monster {

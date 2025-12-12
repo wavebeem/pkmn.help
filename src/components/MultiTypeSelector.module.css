@@ -1,3 +1,12 @@
+.root {
+  display: grid;
+  gap: var(--padding2);
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(calc(var(--type-min-width) + 2.5rem + 2px), 1fr)
+  );
+}
+
 .button {
   padding-block: var(--padding1);
   padding-inline: var(--padding1) var(--padding3);
@@ -30,8 +39,8 @@
 }
 
 .button[aria-pressed="false"] {
-  border-color: var(--color-border1);
-  background: var(--background-button-bg);
+  border-color: transparent;
+  background: var(--background-button);
   color: var(--color-fg1);
   box-shadow: var(--shadow-button);
 }
