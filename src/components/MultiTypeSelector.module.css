@@ -45,16 +45,17 @@
 }
 
 .checkbox {
+  --_checkbox-border: var(--color-vibrant-border);
   -webkit-appearance: none;
   appearance: none;
   box-sizing: border-box;
   width: 32px;
   height: 32px;
   flex: none;
-  border: 1px solid var(--color-vibrant-border);
   background: var(--type-color);
   color: #fff;
-  box-shadow: var(--checkbox-border);
+  /* DO NOT USE BORDER since stellar's background-image messes this up */
+  box-shadow: inset 0 0 0 1px var(--_checkbox-border);
   border-radius: var(--border-radius1);
   display: flex;
   justify-content: center;
@@ -74,8 +75,8 @@
 }
 
 .button[aria-pressed="true"] .checkbox {
-  border-color: #fff4;
-  background-color: transparent;
+  --_checkbox-border: #fff4;
+  background: transparent;
   color: #fff;
 }
 
