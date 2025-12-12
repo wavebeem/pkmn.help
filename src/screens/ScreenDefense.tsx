@@ -8,6 +8,7 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
+import { ResetLink } from "../components/ResetLink";
 import { Select } from "../components/Select";
 import { SelectDivider } from "../components/SelectDivider";
 import { useGeneration } from "../hooks/useGeneration";
@@ -40,6 +41,8 @@ export function ScreenDefense(): ReactNode {
     "defense.ability",
     "none",
   );
+  const hasSelection =
+    types.length > 0 || teraType !== Type.none || ability !== "none";
 
   useEffect(() => {
     setTypes((types) => types.slice(0, Number(typeCount)));
@@ -91,6 +94,13 @@ export function ScreenDefense(): ReactNode {
       const tb = t(`defense.abilityNames.${b}`);
       return ta.localeCompare(tb);
     });
+  
+  function resetDefense() {
+    setTypes([]);
+    setTeraType(Type.none);
+    setAbility("none");
+    navigate({ ...location, search: "" }, { replace: true });
+  }
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
@@ -149,8 +159,13 @@ export function ScreenDefense(): ReactNode {
           </div>
         </Flex>
 
-        <Flex>
+        <Flex gap="large">
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
+          {hasSelection && (
+            <ResetLink onClick={resetDefense}>
+              {t("general.clearChoices")}
+            </ResetLink>
+          )}
         </Flex>
       </Flex>
 

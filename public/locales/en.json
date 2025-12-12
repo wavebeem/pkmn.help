@@ -316,7 +316,8 @@
   },
   "general": {
     "loading": "Loading…",
-    "copyLink": "Copy link"
+    "copyLink": "Copy link",
+    "clearChoices": "Clear choices"
   },
   "games": {
     "label": "Game generation",

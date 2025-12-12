@@ -16,3 +16,5 @@
   grid-template-columns: repeat(auto-fit, minmax(15ch, 1fr));
   gap: var(--padding2);
 }
+
+

@@ -13,6 +13,7 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { MatchupsTeam, MatchupsTeamProps } from "../components/MatchupsTeam";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
+import { ResetLink } from "../components/ResetLink";
 import { Select } from "../components/Select";
 import { SelectDivider } from "../components/SelectDivider";
 import { useGeneration } from "../hooks/useGeneration";
@@ -95,6 +96,10 @@ export function ScreenDefenseTeam(): ReactNode {
   );
   const [typeCount] = useTypeCount();
   const [teamIndex, setTeamIndex] = useState(-1);
+  const hasSelection =
+    teamTypes.some((types) => types.length > 0) ||
+    teamTeraTypes.some((t) => t !== Type.none) ||
+    teamAbilities.some((a) => a !== "none");
 
   useEffect(() => {
     setTeamTypes((teamTypes) => {
@@ -153,6 +158,14 @@ export function ScreenDefenseTeam(): ReactNode {
         }),
       );
     };
+  }
+
+  function resetTeam() {
+    setTeamTypes([]);
+    setTeamTeraTypes([]);
+    setTeamAbilities([]);
+    setTeamIndex(-1);
+    navigate({ ...location, search: "" }, { replace: true });
   }
 
   const permalink = new URL(window.location.href);
@@ -345,8 +358,13 @@ export function ScreenDefenseTeam(): ReactNode {
           </Flex>
         </Flex>
 
-        <Flex>
+        <Flex gap="large">
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
+          {hasSelection && (
+            <ResetLink onClick={resetTeam}>
+              {t("general.clearChoices")}
+            </ResetLink>
+          )}
         </Flex>
       </Flex>
 

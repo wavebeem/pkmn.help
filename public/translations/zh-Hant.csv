@@ -9,7 +9,7 @@ navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose attack move types,選擇屬性
-offense.dealsXTo,Deals {{ x }} damage to these types,對 {{ x }} 造成傷害
+offense.dealsXTo,Deals {{ x }} damage to,對 {{ x }} 造成傷害
 offense.mode.combination,Dual,
 offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
@@ -54,7 +54,7 @@ coverage.status.reset,Loaded default Pokémon forms,載入了預設的寶可夢�
 coverage.status.errored,Error loading CSV. Don't change header names.,載入 CSV 時出錯。不要更改標題名稱。
 coverage.back,Back to offense,返回攻擊
 defense.chooseTypes,Choose defending Pokémon types,選擇屬性
-defense.takesXFrom,Takes {{ x }} from these move types,從中取 {{ x }}
+defense.takesXFrom,Takes {{ x }} from,從中取 {{ x }}
 defense.chooseAbility,Choose ability,選擇技能
 defense.chooseTeraType,Choose tera type,選擇太晶屬性
 defense.abilityNames.none,None,無

@@ -9,7 +9,7 @@ navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose attack move types,Alege tipuri
-offense.dealsXTo,Deals {{ x }} damage to these types,Oferte {{ x }} spre
+offense.dealsXTo,Deals {{ x }} damage to,Oferte {{ x }} spre
 offense.mode.combination,Dual,
 offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
@@ -54,7 +54,7 @@ coverage.status.reset,Loaded default Pokémon forms,Încarcă forme de Pokémon 
 coverage.status.errored,Error loading CSV. Don't change header names.,Eroare la încărcarea CSV. Nu schimbați numele antetului.
 coverage.back,Back to offense,Înapoi la atac
 defense.chooseTypes,Choose defending Pokémon types,Alege tipuri
-defense.takesXFrom,Takes {{ x }} from these move types,Ia {{ x }} de la
+defense.takesXFrom,Takes {{ x }} from,Ia {{ x }} de la
 defense.chooseAbility,Choose ability,Alege abilitatea
 defense.chooseTeraType,Choose tera type,Alege abilitatea tera
 defense.abilityNames.none,None,Niciuna
