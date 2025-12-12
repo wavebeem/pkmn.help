@@ -43,6 +43,8 @@
   font-weight: var(--weight-medium);
   font-stretch: ultra-condensed;
   text-align: start;
+  white-space: nowrap;
+  text-wrap: nowrap;
 }
 
 .badge:not([data-type="none"]) {
