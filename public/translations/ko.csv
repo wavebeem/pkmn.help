@@ -194,6 +194,7 @@ banners.updateReady.whatsNew,What’s new,새로운 기능
 banners.updateReady.update,Update,업데이트
 general.loading,Loading…,로딩 중...
 general.copyLink,Copy link,링크 복사
+general.clearChoices,Clear choices,선택 초기화
 games.label,Game generation,세대
 games.help,Use type effectiveness from different game generations.,다른 세대의 상성 사용하기
 games.byID.gen1,Generation 1,1세대

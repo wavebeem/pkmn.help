@@ -288,7 +288,8 @@
   },
   "general": {
     "loading": "로딩 중...",
-    "copyLink": "링크 복사"
+    "copyLink": "링크 복사",
+    "clearChoices": "선택 초기화"
   },
   "games": {
     "label": "세대",

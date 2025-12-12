@@ -194,6 +194,7 @@ banners.updateReady.whatsNew,What’s new,有什麼新功能
 banners.updateReady.update,Update,更新
 general.loading,Loading…,載入中…
 general.copyLink,Copy link,複製連結
+general.clearChoices,Clear choices,清除選擇
 games.label,Game generation,遊戲世代
 games.help,Use type effectiveness from different game generations.,使用不同遊戲世代的屬性效果。
 games.byID.gen1,Generation 1,第一世代

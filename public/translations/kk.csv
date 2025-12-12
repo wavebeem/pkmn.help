@@ -193,7 +193,8 @@ banners.updateReady.description,An update is available,Жаңарту жүргі
 banners.updateReady.whatsNew,What’s new,
 banners.updateReady.update,Update,Жаңарту
 general.loading,Loading…,Жүктелуде...
-general.copyLink,Copy link,
+general.copyLink,Copy link,Сілтемені көшіру
+general.clearChoices,Clear choices,Таңдауларды тазалау
 games.label,Game generation,Ойын Ұрпақтары
 games.help,Use type effectiveness from different game generations.,Әртүрлі ойындар ұрпақтарынан типтік нәтижеліктерін қолдана аласыз.
 games.byID.gen1,Generation 1,Ұрпақ 1

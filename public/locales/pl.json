@@ -294,7 +294,8 @@
   },
   "general": {
     "loading": "Ładowanie…",
-    "copyLink": "Skopiuj Link"
+    "copyLink": "Skopiuj Link",
+    "clearChoices": "Wyczyść wybory"
   },
   "games": {
     "label": "Generacja Gry",

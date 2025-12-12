@@ -287,7 +287,8 @@
   },
   "general": {
     "loading": "Laster inn...",
-    "copyLink": "Kopier lenke"
+    "copyLink": "Kopier lenke",
+    "clearChoices": "Tøm valg"
   },
   "games": {
     "label": "Spillgenerasjon",

@@ -290,7 +290,8 @@
   },
   "general": {
     "loading": "Đang load...",
-    "copyLink": "Sao chép link"
+    "copyLink": "Sao chép link",
+    "clearChoices": "Xóa lựa chọn"
   },
   "games": {
     "label": "Thế hệ (Generation)",
