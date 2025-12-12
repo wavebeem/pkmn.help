@@ -15,17 +15,8 @@
   text-decoration: none;
   padding: var(--padding2) var(--padding4);
   text-align: start;
-  /* border-radius: 0 var(--border-radius-pill) var(--border-radius-pill) 0; */
   color: inherit;
   border-bottom: 1px solid var(--color-sidebar-highlight);
-  /* border-image: linear-gradient(
-      to right,
-      transparent,
-      var(--color-sidebar-highlight) var(--padding5)
-        calc(100% - var(--padding5)),
-      transparent
-    )
-    1; */
   border-image: linear-gradient(
       to right,
       transparent var(--padding3),
@@ -34,7 +25,8 @@
     )
     1;
   outline-color: currentColor;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: var(--padding2);
   align-items: center;
 

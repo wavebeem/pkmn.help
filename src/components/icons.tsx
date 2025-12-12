@@ -43,4 +43,6 @@ export {
   // Edit & Remove - team
   Pencil as IconEdit,
   Trash2 as IconRemove,
+  // Checkboxes
+  Check as IconCheck,
 } from "lucide-react";

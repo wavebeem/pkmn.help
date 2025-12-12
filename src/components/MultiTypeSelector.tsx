@@ -8,6 +8,7 @@ import { customProperties } from "../misc/customProperties";
 import { Flex } from "./Flex";
 import { ReactNode } from "react";
 import { TypeIcon } from "./TypeIcon";
+import { IconCheck } from "./icons";
 
 type MultiTypeSelectorProps = {
   generation: Generation;
@@ -54,7 +55,8 @@ export function MultiTypeSelector({
           >
             <Flex tag="span" gap="medium" justify="flex-start" align="center">
               <span className={styles.checkbox}>
-                <TypeIcon type={type} size={24} />
+                <TypeIcon type={type} size={24} className={styles.type} />
+                <IconCheck size={24} strokeWidth={4} className={styles.check} />
               </span>
               <span className={styles.text}>{t(`types.${type}`)}</span>
             </Flex>

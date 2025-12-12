@@ -43,8 +43,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-link: hsl(var(--hue-red) 70% 40%);
 
   --color-border1: hsl(var(--hue-gold) 10% 50%);
-  --color-border2: hsl(var(--hue-gold) 10% 70%);
-  --color-border3: hsl(var(--hue-gold) 10% 80%);
+  --color-border2: hsl(var(--hue-gold) 10% 75%);
+  --color-border3: hsl(var(--hue-gold) 10% 85%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 0% / 10%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 0% / 60%);
 
@@ -125,7 +125,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 
   --color-bg1: hsl(var(--hue-blue) 5% 22%);
   --color-bg2: hsl(var(--hue-blue) 5% 14%);
-  --color-bg-ghost: hsl(var(--hue-blue) 5% 22%);
+  --color-bg-ghost: hsl(var(--hue-blue) 5% 20%);
 
   --color-card-bg: hsl(var(--hue-blue) 5% 18%);
   --color-card-highlight: hsl(var(--hue-blue) 5% 32%);
@@ -155,8 +155,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-button1b: hsl(var(--hue-blue) 5% 22%);
   --color-link: hsl(var(--hue-red) 90% 75%);
   --color-border1: hsl(var(--hue-blue) 5% 48%);
-  --color-border2: hsl(var(--hue-blue) 5% 37%);
-  --color-border3: hsl(var(--hue-blue) 5% 27%);
+  --color-border2: hsl(var(--hue-blue) 5% 30%);
+  --color-border3: hsl(var(--hue-blue) 5% 24%);
   --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 20%);
   --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
 
@@ -217,7 +217,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 
     --color-bg1: hsl(var(--hue-blue) 5% 22%);
     --color-bg2: hsl(var(--hue-blue) 5% 14%);
-    --color-bg-ghost: hsl(var(--hue-blue) 5% 22%);
+    --color-bg-ghost: hsl(var(--hue-blue) 5% 20%);
 
     --color-card-bg: hsl(var(--hue-blue) 5% 18%);
     --color-card-highlight: hsl(var(--hue-blue) 5% 32%);
@@ -247,8 +247,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
     --color-button1b: hsl(var(--hue-blue) 5% 22%);
     --color-link: hsl(var(--hue-red) 90% 75%);
     --color-border1: hsl(var(--hue-blue) 5% 48%);
-    --color-border2: hsl(var(--hue-blue) 5% 37%);
-    --color-border3: hsl(var(--hue-blue) 5% 27%);
+    --color-border2: hsl(var(--hue-blue) 5% 30%);
+    --color-border3: hsl(var(--hue-blue) 5% 24%);
     --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 20%);
     --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
 

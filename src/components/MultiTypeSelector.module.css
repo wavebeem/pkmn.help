@@ -24,7 +24,7 @@
   box-shadow: var(--shadow-button);
   border-color: var(--color-vibrant-border1);
   background: var(--type-color-bg);
-  color: white;
+  color: #fff;
 }
 
 .button[aria-pressed="true"] .text {
@@ -45,17 +45,15 @@
 }
 
 .checkbox {
-  --checkbox-color-border: var(--color-vibrant-border);
-  --checkbox-border: inset 0 0 0 1px var(--checkbox-color-border);
   -webkit-appearance: none;
   appearance: none;
   box-sizing: border-box;
   width: 32px;
   height: 32px;
   flex: none;
-  border: 0;
+  border: 1px solid var(--color-vibrant-border);
   background: var(--type-color);
-  color: white;
+  color: #fff;
   box-shadow: var(--checkbox-border);
   border-radius: var(--border-radius1);
   display: flex;
@@ -63,9 +61,12 @@
   align-items: center;
 }
 
-.checkbox svg {
-  --_c: var(--type-color-bg);
-  filter: drop-shadow(1px 1px 0 var(--_c));
+.type {
+  filter: drop-shadow(1px 1px 0 var(--type-color-bg));
+}
+
+.check {
+  filter: drop-shadow(1px 1px 0 #0002);
 }
 
 :where(.button[data-type="stellar"]) .checkbox {
@@ -73,44 +74,16 @@
 }
 
 .button[aria-pressed="true"] .checkbox {
-  background-clip: padding-box;
-  --_blur: 0.6px;
-  --_size: calc(1em / 6);
-  --_start: calc(50% - 0.5 * var(--_size));
-  --_end: calc(var(--_start) + var(--_size));
-  --_fg: black;
-  --_bg: white;
-  --checkbox-color-border: var(--_fg);
-  background-color: var(--_bg);
-  background-image:
-    linear-gradient(
-      45deg,
-      transparent,
-      transparent calc(var(--_start) - var(--_blur)),
-      var(--_fg) var(--_start),
-      var(--_fg) var(--_end),
-      transparent calc(var(--_end) + var(--_blur)),
-      transparent
-    ),
-    linear-gradient(
-      -45deg,
-      transparent,
-      transparent calc(var(--_start) - var(--_blur)),
-      var(--_fg) var(--_start),
-      var(--_fg) var(--_end),
-      transparent calc(var(--_end) + var(--_blur)),
-      transparent
-    );
-  box-shadow:
-    inset 0 0 0 8px var(--_bg),
-    0 0 0 1px #0004,
-    0 0 1px #0008;
-  /* box-shadow:
-    var(--checkbox-border),
-    inset 0 0 0 6px var(--_bg); */
+  border-color: #fff4;
+  background-color: transparent;
+  color: #fff;
 }
 
-.button[aria-pressed="true"] .checkbox svg {
+.button[aria-pressed="true"] .type {
+  display: none;
+}
+
+.button[aria-pressed="false"] .check {
   display: none;
 }
 

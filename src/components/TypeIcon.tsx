@@ -1,7 +1,7 @@
-import { cloneElement, ReactNode } from "react";
+import { cloneElement, ReactNode, SVGProps } from "react";
 import { Type } from "../misc/data-types";
 
-export type TypeIconProps = {
+export type TypeIconProps = SVGProps<SVGSVGElement> & {
   type: Type;
   size: string | number;
 };
@@ -107,10 +107,11 @@ const map = {
   ),
 };
 
-export function TypeIcon({ type, size }: TypeIconProps): ReactNode {
+export function TypeIcon({ type, size, ...props }: TypeIconProps): ReactNode {
   return cloneElement(map[type](), {
     width: size,
     height: size,
     fill: "currentColor",
+    ...props,
   });
 }
