@@ -136,8 +136,8 @@ pokedexHelp.searchExamples.singleType.query,grass none,grass ingen
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Søk for Pokémon som bare er grass type, ingen andre type (f.eks. Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Tilbake til Pokédexen
 more.contact.heading,Contact me,Ta kontakt med meg
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hei, jeg er <homepage>Sage</homepage> (de/dem), og jeg har laget Pokémon Type Kalkulator (pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Plis send meg eposter om dine tanker og takker til <email>pkmn@wavebeem.com</email>.
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","Hei, jeg er <homepage>Sage</homepage> (de/dem), og jeg har laget Pokémon Type Kalkulator (pkmn.help)."
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Plis send meg eposter om dine tanker og takker til <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Instillinger
 more.settings.language.label,Language,Språk
 more.settings.language.default,Auto detect language,Automatisk oppdag språk

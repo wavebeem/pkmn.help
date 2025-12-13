@@ -136,8 +136,8 @@ pokedexHelp.searchExamples.singleType.query,grass none,erba nessuno
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Cerca i Pokémon che hanno solo il tipo erba, senza tipo secondario (es: Tangela, Chikorita)."
 pokedexHelp.back,Back to Pokédex,Torna al Pokédex
 more.contact.heading,Contact me,Contattami
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Ciao, sono <homepage>Sage</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Per favore, invia un'e-mail con i tuoi pensieri e ringraziamenti a <email>pkmn@wavebeem.com</email>."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","Ciao, sono <homepage>Sage</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (pkmn.help)."
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,"Per favore, invia un'e-mail con i tuoi pensieri e ringraziamenti a <email>pkmn@wavebeem.com</email>."
 more.settings.heading,Settings,Impostazioni
 more.settings.language.label,Language,Lingua
 more.settings.language.default,Auto detect language,Individua lingua automaticamente

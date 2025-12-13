@@ -136,8 +136,8 @@ pokedexHelp.searchExamples.singleType.query,grass none,plante aucun
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Rechercher les Pokémon qui ont seulement le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)."
 pokedexHelp.back,Back to Pokédex,Revenir au Pokédex
 more.contact.heading,Contact me,Me contacter
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Bonjour, je suis <homepage>Sage</homepage> (iel), et j'ai créé le Calculateur de types Pokémon (pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Veuillez envoyer vos idées et vos remerciements à <email>pkmn@wavebeem.com</email>.
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","Bonjour, je suis <homepage>Sage</homepage> (iel), et j'ai créé le Calculateur de types Pokémon (pkmn.help)."
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Veuillez envoyer vos idées et vos remerciements à <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Paramètres
 more.settings.language.label,Language,Langage
 more.settings.language.default,Auto detect language,Détecter automatiquement la langue

@@ -136,8 +136,8 @@ pokedexHelp.searchExamples.singleType.query,grass none,шөпті ештеңе
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Тек шөпті типі бар және екінші типі жоқ Покемонды іздеу (мысалға Танжелла, Чикорита, Лилигант)."
 pokedexHelp.back,Back to Pokédex,Покедекске қайту
 more.contact.heading,Contact me,Менімен Байланысыңыз
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Өтініш, өз ойларыңызды және рақметтеріңізді <email>pkmn@wavebeem.com</email> поштасына жіберіңіз."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help)."
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,"Өтініш, өз ойларыңызды және рақметтеріңізді <email>pkmn@wavebeem.com</email> поштасына жіберіңіз."
 more.settings.heading,Settings,Баптаулар
 more.settings.language.label,Language,Тіл
 more.settings.language.default,Auto detect language,Авто танылған тіл
