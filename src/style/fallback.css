@@ -1,0 +1,34 @@
+.fallback-content {
+  animation: 1s fallback-content-animation;
+  margin: 0 auto;
+  max-width: fit-content;
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
+.fallback-content hgroup h1 + * {
+  margin-top: -2rem;
+}
+
+.fallback-content :any-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: calc(1em / 8);
+  text-decoration-thickness: calc(1em / 16);
+}
+
+.fallback-content :any-link:focus-visible {
+  outline: 2px solid;
+  outline-offset: 2px;
+}
+
+@keyframes fallback-content-animation {
+  0%,
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,6 +1,10 @@
-@import url("normalize.css");
-@import url("fonts.css");
-@import url("vars.css");
-@import url("stellar.css");
-@import url("misc.css");
-@import url("focus.css");
+@import "normalize.css";
+@import "fonts.css";
+@import "vars.css";
+@import "stellar.css";
+@import "misc.css";
+@import "focus.css";
+@import "fallback.css";
+@import "theme/light.css";
+@import "theme/dark.css";
+@import "theme/night.css";

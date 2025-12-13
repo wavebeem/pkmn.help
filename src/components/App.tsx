@@ -284,12 +284,10 @@ export function Layout(): ReactNode {
     ],
   );
 
-  usePageTitle(t("title"));
+  usePageTitle(`pkmn.help \u2013 ${t("title")}`);
   useMetaThemeColor({ dataTheme, themeColor });
   useScrollToFragment();
   useRouteChangeFixes();
-
-  // TODO: Intercept the back button and close the dialog if it's open.
 
   return (
     <AppContextProvider value={appContext}>

@@ -6,8 +6,8 @@
       http-equiv="content-security-policy"
       content="default-src 'self'; script-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline';"
     />
-    <title>%VITE_HTML_TITLE%</title>
-    <meta name="og:title" content="%VITE_HTML_TITLE%" />
+    <title>%VITE_HTML_TITLE% &ndash; %VITE_HTML_DESCRIPTION%</title>
+    <meta name="og:title" content="%VITE_HTML_TITLE% - %VITE_HTML_DESCRIPTION%" />
     <meta name="theme-color" content="" />
     <link
       rel="prefetch"
@@ -73,11 +73,10 @@
   <body>
     <div id="app">
       <div class="fallback-content">
-        <h1>%VITE_HTML_TITLE%</h1>
-        <p>
-          A Pokémon type calculator to show strengths/weaknesses of different
-          type combinations.
-        </p>
+        <hgroup>
+          <h1>%VITE_HTML_TITLE%</h1>
+          <p><small>%VITE_HTML_DESCRIPTION%</small></p>
+        </hgroup>
         <p>This app requires JavaScript. Make sure you have it enabled.</p>
         <p>
           Email
