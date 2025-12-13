@@ -139,14 +139,14 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --color-accent-bg: hsl(var(--hue-blue) 50% 92%);
   --color-accent-fg: hsl(var(--hue-blue) 5% 14%);
 
-  --color-header-dark: hsl(var(--hue-red) 60% 30%);
-  --color-header-base: hsl(var(--hue-red) 60% 30%);
-  --color-header-highlight: hsl(var(--hue-red) 45% 45%);
-  --color-header-border: hsl(var(--hue-red) 40% 5%);
-  --color-header-text: hsl(var(--hue-red) 50% 92%);
+  --color-header-dark: hsl(var(--hue-blue) 5% 8%);
+  --color-header-base: hsl(var(--hue-blue) 5% 8%);
+  --color-header-highlight: hsl(var(--hue-blue) 5% 20%);
+  --color-header-border: hsl(var(--hue-blue) 5% 20%);
+  --color-header-text: hsl(var(--hue-blue) 5% 92%);
 
-  --color-sidebar-dark: hsl(var(--hue-gold) 5% 10%);
-  --color-sidebar-base: hsl(var(--hue-gold) 5% 10%);
+  --color-sidebar-dark: hsl(var(--hue-gold) 5% 8%);
+  --color-sidebar-base: hsl(var(--hue-gold) 5% 8%);
   --color-sidebar-highlight: hsl(var(--hue-gold) 5% 20%);
   --color-sidebar-border: hsl(var(--hue-gold) 5% 20%);
   --color-sidebar-text: hsl(var(--hue-gold) 5% 92%);
