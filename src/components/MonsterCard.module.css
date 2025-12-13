@@ -1,0 +1,47 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  color: var(--color-fg1);
+  background:
+    radial-gradient(var(--color-card-bg)) padding-box,
+    radial-gradient(
+        50% 50% at top center,
+        var(--color-card-highlight),
+        var(--color-card-bg)
+      )
+      border-box var(--color-card-bg);
+  box-shadow: 0 1px 0 0 var(--color-card-shadow);
+  padding: var(--padding2);
+  border-radius: var(--border-radius2);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 150ms, box-shadow 150ms;
+}
+
+.root:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px 0 var(--color-card-shadow);
+}
+
+.root:active {
+  transform: translateY(0);
+}
+
+.root:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.name {
+  text-align: center;
+  word-break: break-word;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+  width: 100%;
+}
+

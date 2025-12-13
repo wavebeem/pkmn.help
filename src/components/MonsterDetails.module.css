@@ -1,0 +1,97 @@
+.dialog {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: 100%;
+  border: none;
+  border-radius: var(--border-radius3);
+  padding: 0;
+  background: var(--color-bg);
+  color: var(--color-fg1);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding3);
+  padding: var(--padding3);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--padding2);
+}
+
+.closeButton {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  border-radius: var(--border-radius2);
+}
+
+.monster {
+  display: grid;
+  gap: var(--padding3);
+  grid-template-areas:
+    "icon"
+    "links"
+    "stats";
+}
+
+.monsterIcon {
+  grid-area: icon;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.monsterLinks {
+  grid-area: links;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding3);
+}
+
+.monsterStats {
+  grid-area: stats;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: auto;
+  gap: var(--padding3);
+}
+
+@media (width > 60rem) {
+  .monster {
+    grid-template-areas:
+      "icon links"
+      "icon stats";
+    grid-template-columns: auto 1fr;
+  }
+}
+

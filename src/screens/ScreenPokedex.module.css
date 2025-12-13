@@ -17,9 +17,9 @@
 }
 
 .monsterGrid {
-  --column-count: 1;
+  --column-count: 2;
   display: grid;
-  gap: var(--padding3);
+  gap: var(--padding2);
   justify-content: center;
   grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
   margin-block: var(--padding3);
@@ -30,13 +30,25 @@
 @media (width > 45rem) {
   .monsterGrid {
     margin-inline: 0;
-    --column-count: 2;
+    --column-count: 3;
+  }
+}
+
+@media (width > 60rem) {
+  .monsterGrid {
+    --column-count: 4;
   }
 }
 
 @media (width > 80rem) {
   .monsterGrid {
-    --column-count: 3;
+    --column-count: 5;
+  }
+}
+
+@media (width > 100rem) {
+  .monsterGrid {
+    --column-count: 6;
   }
 }
 

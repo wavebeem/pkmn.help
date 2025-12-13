@@ -1,5 +1,5 @@
 import { matchSorter } from "match-sorter";
-import { ReactNode, useDeferredValue, useEffect, useMemo } from "react";
+import { ReactNode, useDeferredValue, useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
@@ -8,7 +8,8 @@ import { Divider } from "../components/Divider";
 import { EmptyState } from "../components/EmptyState";
 import { FancyLink } from "../components/FancyLink";
 import { Flex } from "../components/Flex";
-import { Monster } from "../components/Monster";
+import { MonsterCard } from "../components/MonsterCard";
+import { MonsterDetails } from "../components/MonsterDetails";
 import { Paginator } from "../components/Paginator";
 import { Search } from "../components/Search";
 import { Select } from "../components/Select";
@@ -17,6 +18,7 @@ import { Spinner } from "../components/Spinner";
 import { useAppContext } from "../hooks/useAppContext";
 import { useSearch } from "../hooks/useSearch";
 import { compare } from "../misc/compare";
+import { Pokemon } from "../misc/data-types";
 import { Type, typesFromUserInput } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { pickTranslation } from "../misc/pickTranslation";
@@ -34,6 +36,8 @@ export function ScreenPokedex(): ReactNode {
   const isStale = query !== deferredQuery;
   const [page, setPage] = useSessionStorage<number>("pokedex.page", 0);
   const navigate = useNavigate();
+  const [selectedPokemon, setSelectedPokemon] = useState<Pokemon | null>(null);
+  const [isDetailsOpen, setIsDetailsOpen] = useState(false);
 
   useEffect(() => {
     if (!location.search) {
@@ -167,10 +171,13 @@ export function ScreenPokedex(): ReactNode {
             renderPage={(page) => (
               <div className={styles.monsterGrid} data-stale={isStale}>
                 {page.map((pokemon) => (
-                  <Monster
+                  <MonsterCard
                     key={pokemon.id}
                     pokemon={pokemon}
-                    setQuery={updateSearch}
+                    onClick={() => {
+                      setSelectedPokemon(pokemon);
+                      setIsDetailsOpen(true);
+                    }}
                   />
                 ))}
               </div>
@@ -189,6 +196,14 @@ export function ScreenPokedex(): ReactNode {
           </FancyLink>
         </Flex>
       </Flex>
+      <MonsterDetails
+        pokemon={selectedPokemon}
+        isOpen={isDetailsOpen}
+        onClose={() => {
+          setIsDetailsOpen(false);
+          setSelectedPokemon(null);
+        }}
+      />
     </main>
   );
 }
