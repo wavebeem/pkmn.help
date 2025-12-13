@@ -1,4 +1,4 @@
-import { ReactNode, useRef, useState, useEffect, KeyboardEvent } from "react";
+import { ReactNode, useRef, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useComputedLanguage } from "../hooks/useComputedLanguage";
 import { Pokemon } from "../misc/data-types";
@@ -47,18 +47,6 @@ export function MonsterDetails({
   }, [isOpen]);
 
   useEffect(() => {
-    const handleEscape = (event: KeyboardEvent) => {
-      if (event.key === "Escape" && isOpen) {
-        onClose();
-      }
-    };
-    document.addEventListener("keydown", handleEscape);
-    return () => {
-      document.removeEventListener("keydown", handleEscape);
-    };
-  }, [isOpen, onClose]);
-
-  useEffect(() => {
     if (!isOpen && pokemon) {
       setShiny(false);
       setIsPlaying(false);
@@ -93,6 +81,10 @@ export function MonsterDetails({
         if (event.currentTarget === event.target) {
           onClose();
         }
+      }}
+      onCancel={(event) => {
+        event.preventDefault();
+        onClose();
       }}
     >
       <div className={styles.content}>
