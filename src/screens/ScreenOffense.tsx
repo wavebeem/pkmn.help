@@ -1,5 +1,5 @@
 import { clsx } from "clsx";
-import { ReactNode, useEffect } from "react";
+import { ReactNode, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
@@ -8,6 +8,7 @@ import {
   CheckboxGroup,
   CheckboxGroupOption,
 } from "../components/CheckboxGroup";
+import { ClearChoices } from "../components/ClearChoices";
 import { CopyButton } from "../components/CopyButton";
 import { DexCoverage } from "../components/DexCoverage";
 import { FancyLink } from "../components/FancyLink";
@@ -15,7 +16,6 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
-import { ResetLink } from "../components/ResetLink";
 import { useAppContext } from "../hooks/useAppContext";
 import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
@@ -117,15 +117,12 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
     [],
   );
 
-  const hasSelection =
-    offenseTypes.length > 0 || abilities.length > 0 || specialMoves.length > 0;
-
-  function resetOffense() {
+  const resetOffense = useCallback((): void => {
     setOffenseTypes([]);
     setAbilities([]);
     setSpecialMoves([]);
     navigate({ ...location, search: "" }, { replace: true });
-  }
+  }, [setOffenseTypes, setAbilities, setSpecialMoves, navigate, location]);
 
   const permalink = new URL(window.location.href);
   if (offenseTypes.length > 0) {
@@ -179,11 +176,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
               <CopyButton text={permalink.href}>
                 {t("general.copyLink")}
               </CopyButton>
-              {hasSelection && (
-                <ResetLink onClick={resetOffense}>
-                  {t("general.clearChoices")}
-                </ResetLink>
-              )}
+              <ClearChoices onClick={resetOffense} />
             </Flex>
           </Flex>
         )}

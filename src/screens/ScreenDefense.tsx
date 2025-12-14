@@ -1,14 +1,14 @@
 import { clsx } from "clsx";
-import { Fragment, ReactNode, useEffect } from "react";
+import { Fragment, ReactNode, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
+import { ClearChoices } from "../components/ClearChoices";
 import { CopyButton } from "../components/CopyButton";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
-import { ResetLink } from "../components/ResetLink";
 import { Select } from "../components/Select";
 import { SelectDivider } from "../components/SelectDivider";
 import { useGeneration } from "../hooks/useGeneration";
@@ -41,8 +41,6 @@ export function ScreenDefense(): ReactNode {
     "defense.ability",
     "none",
   );
-  const hasSelection =
-    types.length > 0 || teraType !== Type.none || ability !== "none";
 
   useEffect(() => {
     setTypes((types) => types.slice(0, Number(typeCount)));
@@ -95,12 +93,12 @@ export function ScreenDefense(): ReactNode {
       return ta.localeCompare(tb);
     });
 
-  function resetDefense() {
+  const resetDefense = useCallback((): void => {
     setTypes([]);
     setTeraType(Type.none);
     setAbility("none");
     navigate({ ...location, search: "" }, { replace: true });
-  }
+  }, [setTypes, setTeraType, setAbility, navigate, location]);
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
@@ -161,11 +159,7 @@ export function ScreenDefense(): ReactNode {
 
         <Flex gap="large">
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
-          {hasSelection && (
-            <ResetLink onClick={resetDefense}>
-              {t("general.clearChoices")}
-            </ResetLink>
-          )}
+          <ClearChoices onClick={resetDefense} />
         </Flex>
       </Flex>
 
