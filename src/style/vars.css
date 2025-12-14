@@ -7,6 +7,9 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --hue-blue: 230;
   --hue-red: 355;
   --hue-teal: 175;
+  --hue-green: 140;
+
+  --hue-ui: var(--hue-blue);
 
   --weight-normal: 400;
   --weight-medium: 500;
@@ -34,7 +37,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --border-radius3: 16px;
   --border-radius-pill: 9999px;
 
-  --color-modal-backdrop: hsl(var(--hue-gold) 10% 20% / 80%);
+  --color-modal-backdrop: hsl(var(--hue-ui) 10% 20% / 80%);
 
   --shadow-tabs: 0 0 16px rgb(0 0 0 / 20%);
   --shadow-header: 0 0 8px rgb(0 0 0 / 10%);
@@ -44,7 +47,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --filter-darken: brightness(90%);
   /* Don't overcomplicate this filter or Pokedex scrolling can get really slow
   in Android Firefox */
-  --filter-image: drop-shadow(8px 8px 16px hsl(var(--hue-gold) 10% 20% / 30%));
+  --filter-image: drop-shadow(8px 8px 16px hsl(var(--hue-ui) 10% 20% / 30%));
 
   --logo-letter-spacing: calc(-1rem / 32);
 

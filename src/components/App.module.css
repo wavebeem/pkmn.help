@@ -81,7 +81,8 @@
   max-width: initial;
   max-height: initial;
   width: calc(100dvw - var(--padding5));
-  height: 100dvh;
+  /* height: 100dvh; */
+  height: 100%;
   translate: 0 0;
   scale: 1;
   transition-duration: 200ms;

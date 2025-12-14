@@ -189,8 +189,9 @@ export function Matchups({
                           return x.types.map((t, i) => {
                             return (
                               <Fragment key={i}>
-                                {i > 0 ? <IconPlus /> : null}
+                                {i > 0 ? <IconPlus size={16} /> : null}
                                 <Badge
+                                  size="small"
                                   key={`type-${t}`}
                                   type={t}
                                   variant="ghost"

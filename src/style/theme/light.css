@@ -17,29 +17,11 @@
   --color-accent-bg: hsl(var(--hue-red) 70% 40%);
   --color-accent-fg: #fff;
 
-  /* --color-header-dark: hsl(var(--hue-ui) 10% 85%);
-  --color-header-base: hsl(var(--hue-ui) 10% 88%);
-  --color-header-highlight: hsl(var(--hue-ui) 10% 80%);
-  --color-header-text: hsl(var(--hue-red) 70% 40%);
-  --color-header-border: hsl(var(--hue-ui) 10% 80%); */
-
-  /* --color-header-dark: hsl(var(--hue-red) 60% 30%);
-  --color-header-base: hsl(var(--hue-red) 60% 40%);
-  --color-header-highlight: hsl(var(--hue-red) 45% 55%);
-  --color-header-text: #fff;
-  --color-header-border: hsl(var(--hue-red) 60% 5%); */
-
   --color-header-dark: hsl(var(--hue-ui) 10% 5%);
   --color-header-base: hsl(var(--hue-ui) 10% 20%);
   --color-header-highlight: hsl(var(--hue-ui) 10% 30%);
   --color-header-text: #fff;
   --color-header-border: hsl(var(--hue-ui) 10% 5%);
-
-  /* --color-sidebar-dark: hsl(var(--hue-ui) 10% 85%);
-  --color-sidebar-base: hsl(var(--hue-ui) 10% 88%);
-  --color-sidebar-highlight: hsl(var(--hue-ui) 10% 80%);
-  --color-sidebar-text: hsl(var(--hue-red) 70% 40%);
-  --color-sidebar-border: hsl(var(--hue-ui) 10% 80%); */
 
   --color-sidebar-dark: hsl(var(--hue-ui) 10% 5%);
   --color-sidebar-base: hsl(var(--hue-ui) 10% 15%);

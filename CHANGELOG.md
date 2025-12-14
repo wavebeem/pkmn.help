@@ -11,6 +11,8 @@
 
 - Fixed a text wrapping bug in Chinese in the team defense table
 
+- Increase density of dual offense matchup results
+
 ## 2025-12-07
 
 - Type matchups are now more compact, especially on mobile

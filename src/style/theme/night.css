@@ -35,8 +35,8 @@
   --color-border1: hsl(0 0% 47%);
   --color-border2: hsl(0 0% 25%);
   --color-border3: hsl(0 0% 20%);
-  --color-vibrant-border: hsl(var(--hue-red) 0% 100% / 20%);
-  --color-vibrant-border1: hsl(var(--hue-red) 0% 100% / 80%);
+  --color-vibrant-border: hsl(0 0% 100% / 20%);
+  --color-vibrant-border1: hsl(0 0% 100% / 80%);
   --color-scroll-fg: hsl(0 0% 62%);
   --color-scroll-bg: transparent;
 

@@ -15,7 +15,7 @@
   --color-fg3: hsl(var(--hue-ui) 15% 72%);
   --color-fg4: hsl(var(--hue-ui) 15% 62%);
 
-  --color-accent-bg: hsl(var(--hue-ui) 50% 92%);
+  --color-accent-bg: hsl(var(--hue-ui) 5% 72%);
   --color-accent-fg: hsl(var(--hue-ui) 5% 14%);
 
   --color-header-dark: hsl(var(--hue-ui) 5% 8%);
@@ -24,15 +24,15 @@
   --color-header-border: hsl(var(--hue-ui) 5% 20%);
   --color-header-text: hsl(var(--hue-ui) 5% 92%);
 
-  --color-sidebar-dark: hsl(var(--hue-gold) 5% 8%);
-  --color-sidebar-base: hsl(var(--hue-gold) 5% 8%);
-  --color-sidebar-highlight: hsl(var(--hue-gold) 5% 20%);
-  --color-sidebar-border: hsl(var(--hue-gold) 5% 20%);
-  --color-sidebar-text: hsl(var(--hue-gold) 5% 92%);
+  --color-sidebar-dark: hsl(var(--hue-ui) 5% 8%);
+  --color-sidebar-base: hsl(var(--hue-ui) 5% 8%);
+  --color-sidebar-highlight: hsl(var(--hue-ui) 5% 20%);
+  --color-sidebar-border: hsl(var(--hue-ui) 5% 20%);
+  --color-sidebar-text: hsl(var(--hue-ui) 5% 92%);
 
   --color-button1: hsl(var(--hue-ui) 5% 28%);
   --color-button1b: hsl(var(--hue-ui) 5% 22%);
-  --color-link: hsl(var(--hue-red) 90% 75%);
+  --color-link: hsl(var(--hue-teal) 90% 55%);
   --color-border1: hsl(var(--hue-ui) 5% 48%);
   --color-border2: hsl(var(--hue-ui) 5% 30%);
   --color-border3: hsl(var(--hue-ui) 5% 24%);
