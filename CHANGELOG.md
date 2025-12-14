@@ -11,6 +11,8 @@
 
 - Fixed a text wrapping bug in Chinese in the team defense table
 
+- Fixed a text overflow bug in Russian in the dual offense matchup results
+
 - Increase density of dual offense matchup results
 
 ## 2025-12-07
