@@ -135,6 +135,7 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,Gras ingen
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Søg efter Pokémon der kun er gras typer, ingen anden type (Fx Tangela, Chikorita, Lilligant)"
 pokedexHelp.back,Back to Pokédex,Gå tilbage til Pokédexet
+about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,Kontakt mig
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hej, jeg <homepage>Sage</homepage> (they/them) og jeg lavede Pokémon type lommeregner/calculator (pkmn.help)"
 more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Email venligst din taknemmelighed til <email>pkmn@wavebeem.com</email>.

@@ -161,7 +161,7 @@ export default defineConfig((env) => {
         mode: env.mode !== "development" ? "production" : "development",
         registerType: "prompt",
         manifest: {
-          name: "Pokémon Type Calculator",
+          name: "pkmn.help",
           short_name: "pkmn.help",
           lang: "en",
           start_url: "/",
@@ -211,8 +211,8 @@ export default defineConfig((env) => {
               purpose: "maskable",
             },
           ],
-          theme_color: "hsl(0 70% 40%)",
-          background_color: "hsl(0 70% 40%)",
+          theme_color: "#292723",
+          background_color: "#292723",
           display: "standalone",
         },
         // These files are downloaded in the background automatically on first
@@ -221,6 +221,7 @@ export default defineConfig((env) => {
           "data-pkmn.json",
           "locales/*.json",
           "manifest.json",
+          "text-logo.svg",
           "app-logo.svg",
           "app-icon-regular-*.png",
           "app-icon-*.png",

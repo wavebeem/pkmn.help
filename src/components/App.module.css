@@ -111,54 +111,6 @@
   scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
 }
 
-.easterEgg {
-  pointer-events: none;
-  position: fixed;
-  z-index: 1;
-  top: 50dvh;
-  left: 50dvw;
-  translate: -50% -50%;
-  scale: 80%;
-  rotate: x -30deg;
-  opacity: 0;
-  padding: 4rem;
-  border-radius: 9999px;
-  background: radial-gradient(
-    circle at center,
-    rgb(from var(--color-card-bg) r g b / 100%),
-    rgb(from var(--color-card-bg) r g b / 0%)
-  );
-  backdrop-filter: saturate(150%) blur(16px);
-  box-shadow:
-    inset 0 1px 0 var(--color-card-highlight),
-    inset 0 -1px 0 var(--color-card-highlight),
-    0 16px 32px 0 hsl(var(--hue-blue) 20% 10% / 20%);
-}
-
-.easterEgg[data-animate="true"] {
-  animation: 2s easterEgg_animation;
-}
-
-@media (prefers-reduced-motion) {
-  .easterEgg {
-    scale: 100% !important;
-    rotate: 0deg !important;
-  }
-
-  .easterEgg[data-animate="true"] {
-    animation: 4s easterEgg_animation !important;
-  }
-}
-
-@keyframes easterEgg_animation {
-  15%,
-  90% {
-    opacity: 1;
-    rotate: 0deg;
-    scale: 100%;
-  }
-}
-
 .headerContent {
   width: 100%;
   display: flex;
@@ -231,49 +183,14 @@
   gap: var(--padding1);
 }
 
+.logo {
+  width: auto;
+  height: calc(var(--header-height) - var(--padding3));
+}
+
 .title {
-  font-size: 1.75rem;
-  font-weight: 300;
+  display: flex;
   margin: 0;
-  font-synthesis: initial;
-  font-style: italic;
-
-  sup {
-    top: -0.5em;
-  }
-
-  sub {
-    bottom: -0em;
-  }
-
-  :is([data-part="p"], [data-part="k"], [data-part="m"], [data-part="n"]) {
-    font-weight: 900;
-    text-transform: uppercase;
-    font-size: 0.6em;
-    scale: 100% 80%;
-    display: inline-block;
-  }
-
-  [data-part="k"] {
-    margin-left: -0.3em;
-  }
-
-  [data-part="m"] {
-    margin-left: 0.2em;
-  }
-
-  [data-part="n"] {
-    margin-left: -0.1em;
-  }
-
-  [data-part="."] {
-    margin-left: 0.1em;
-    font-weight: 900;
-  }
-
-  [data-part="help"] {
-    margin-right: 0.5em;
-  }
 }
 
 .subtitle {
@@ -320,10 +237,6 @@
     font-size: 2rem;
   }
 
-  .title {
-    font-size: 2.5rem;
-  }
-
   .titleStack {
     flex-direction: row;
     align-items: center;
@@ -334,63 +247,6 @@
 .heading a {
   color: inherit;
   text-decoration: none;
-}
-
-.pokeball {
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: inherit;
-  flex: none;
-  display: flex;
-  width: max-content;
-  height: max-content;
-  border-radius: 9999px;
-  animation-duration: 500ms;
-  animation-direction: alternate;
-  animation-name: pokeballJiggle;
-  animation-timing-function: ease-in-out;
-  animation-delay: 1s;
-  transition: transform 200ms;
-  transition-timing-function: ease-in-out;
-}
-
-@keyframes pokeballJiggle {
-  30% {
-    rotate: -20deg;
-    scale: 1.05;
-  }
-  70% {
-    rotate: 20deg;
-    scale: 0.95;
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .pokeball {
-    animation: none;
-    transition: none;
-  }
-}
-
-@media (hover) {
-  .pokeball:hover {
-    cursor: pointer;
-    filter: brightness(1.05);
-  }
-}
-
-.pokeball:active {
-  filter: var(--filter-darken);
-}
-
-.pokeball:focus {
-  outline: none;
-}
-
-.pokeball:focus-visible {
-  outline: 3px solid;
-  outline-offset: 2px;
 }
 
 .pleaseUpdate {
