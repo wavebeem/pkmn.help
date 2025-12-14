@@ -19,7 +19,7 @@
   border-bottom: 1px solid var(--color-sidebar-highlight);
   border-image: linear-gradient(
       to right,
-      transparent var(--padding3),
+      transparent var(--padding4),
       var(--color-sidebar-highlight) 0 calc(100% - var(--padding3)),
       transparent 0
     )
