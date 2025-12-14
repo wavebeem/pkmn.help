@@ -276,7 +276,7 @@ export function Layout(): ReactNode {
     ],
   );
 
-  usePageTitle(t("title"));
+  usePageTitle(`pkmn.help \u2013 ${t("title")}`);
   useMetaThemeColor({ dataTheme, themeColor });
   useScrollToFragment();
   useRouteChangeFixes();

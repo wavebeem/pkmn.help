@@ -1,6 +1,4 @@
 :root {
-  background: var(--color-bg2);
-  color: var(--color-fg1);
   line-height: 1.5;
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-tap-highlight-color */
   -webkit-tap-highlight-color: transparent;
@@ -138,34 +136,6 @@ input {
 
 .tabular-nums {
   font-variant-numeric: tabular-nums;
-}
-
-.fallback-content {
-  animation: 1s fallback-content-animation;
-  margin: 0 auto;
-  max-width: fit-content;
-  font-size: 1.25rem;
-}
-
-.fallback-content :any-link {
-  border-radius: var(--border-radius0);
-  color: var(--color-link);
-}
-
-.fallback-content :any-link:focus-visible {
-  outline: 2px solid;
-  outline-offset: 2px;
-}
-
-@keyframes fallback-content-animation {
-  0%,
-  99% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 .content-wide {

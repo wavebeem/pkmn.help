@@ -223,8 +223,8 @@
   "more": {
     "contact": {
       "heading": "Contact me",
-      "intro": "Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",
-      "email": "Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>."
+      "intro": "Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).",
+      "email": "Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
       "heading": "Settings",
