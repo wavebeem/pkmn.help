@@ -6,6 +6,7 @@
   justify-content: center;
   align-items: center;
   gap: var(--padding2);
+  /* stylelint-disable-next-line declaration-property-value-no-unknown */
   min-height: round(up, 2.5rem, 1px);
 }
 
