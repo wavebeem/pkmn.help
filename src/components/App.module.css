@@ -355,6 +355,10 @@
 }
 
 @media (width < 60rem) {
+  .logo {
+    height: calc(var(--header-height) - var(--padding4));
+  }
+
   .sidebar {
     display: none;
   }
