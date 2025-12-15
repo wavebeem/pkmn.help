@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-12-15
+
+- Updated Pokédex with new Mega Evolutions
+
 ## 2025-12-07
 
 - Type matchups are now more compact, especially on mobile
