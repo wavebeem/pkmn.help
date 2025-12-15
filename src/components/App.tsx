@@ -68,8 +68,9 @@ const router = createBrowserRouter([
         path: "offense",
         children: [
           { index: true, element: <Navigate replace to="single/" /> },
+          { path: "combination", element: <Navigate replace to="../dual/" /> },
           {
-            path: "combination",
+            path: "dual",
             element: <ScreenOffense mode="combination" />,
           },
           { path: "single", element: <ScreenOffense mode="single" /> },
@@ -323,13 +324,13 @@ export function Layout(): ReactNode {
               "focus-header",
             )}
             end
-            to="/offense/combination/"
+            to="/offense/single/"
             aria-label={compositeAriaLabel(
-              t("offense.mode.combination"),
+              t("offense.mode.single"),
               t("navigation.offense"),
             )}
           >
-            <IconOffenseDual />
+            <IconOffenseSingle />
           </NavLink>
           <NavLink
             className={clsx(
@@ -338,13 +339,13 @@ export function Layout(): ReactNode {
               "focus-header",
             )}
             end
-            to="/offense/single/"
+            to="/offense/combination/"
             aria-label={compositeAriaLabel(
-              t("offense.mode.single"),
+              t("offense.mode.combination"),
               t("navigation.offense"),
             )}
           >
-            <IconOffenseSingle />
+            <IconOffenseDual />
           </NavLink>
           <NavLink
             className={clsx(

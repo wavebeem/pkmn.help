@@ -39,19 +39,19 @@ export function PageNav({ position }: PageNavProps): ReactNode {
         onClick={onNavLinkClick}
         className={tabClass}
         end
-        to="/offense/combination/"
+        to="/offense/single/"
       >
-        <IconOffenseDual size={16} />
-        {t("offense.mode.combination")}
+        <IconOffenseSingle size={16} />
+        {t("offense.mode.single")}
       </NavLink>
       <NavLink
         onClick={onNavLinkClick}
         className={tabClass}
         end
-        to="/offense/single/"
+        to="/offense/dual/"
       >
-        <IconOffenseSingle size={16} />
-        {t("offense.mode.single")}
+        <IconOffenseDual size={16} />
+        {t("offense.mode.combination")}
       </NavLink>
       <span className={styles.tabSection}>{t("navigation.defense")}</span>
       <NavLink

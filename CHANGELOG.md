@@ -15,6 +15,10 @@
 
 - Increase density of dual offense matchup results
 
+- Changed the order of Offense "Dual" and "Single" calculators
+
+- Renamed "Combination" to "Dual" in the Offense calculator URL
+
 ## 2025-12-07
 
 - Type matchups are now more compact, especially on mobile
