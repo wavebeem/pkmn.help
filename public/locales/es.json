@@ -290,8 +290,7 @@
   },
   "general": {
     "loading": "Cargando...",
-    "copyLink": "Copiar link",
-    "clearChoices": "Borrar selecciones"
+    "copyLink": "Copiar link"
   },
   "games": {
     "label": "Generación del juego",

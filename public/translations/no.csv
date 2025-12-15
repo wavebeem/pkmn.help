@@ -194,7 +194,6 @@ banners.updateReady.whatsNew,What’s new,Hva er nytt
 banners.updateReady.update,Update,Oppdatering
 general.loading,Loading…,Laster inn...
 general.copyLink,Copy link,Kopier lenke
-general.clearChoices,Clear choices,Tøm valg
 games.label,Game generation,Spillgenerasjon
 games.help,Use type effectiveness from different game generations.,Bruk type effektivitet fra forskjellige spillgenerasjoner.
 games.byID.gen1,Generation 1,Generasjon 1

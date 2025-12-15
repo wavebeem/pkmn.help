@@ -194,7 +194,6 @@ banners.updateReady.whatsNew,What’s new,Tin tức mới
 banners.updateReady.update,Update,Update
 general.loading,Loading…,Đang load...
 general.copyLink,Copy link,Sao chép link
-general.clearChoices,Clear choices,Xóa lựa chọn
 games.label,Game generation,Thế hệ (Generation)
 games.help,Use type effectiveness from different game generations.,Xác định cơ chế điểm mạnh và yếu của các hệ từ các thế hệ khác nhau.
 games.byID.gen1,Generation 1,Thế hệ 1

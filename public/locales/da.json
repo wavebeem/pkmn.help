@@ -234,9 +234,7 @@
     }
   },
   "general": {
-    "loading": "Loader...",
-    "copyLink": "Kopier link",
-    "clearChoices": "Ryd valg"
+    "loading": "Loader..."
   },
   "games": {
     "label": "Spil generation",

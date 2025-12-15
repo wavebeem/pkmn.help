@@ -275,8 +275,7 @@
   },
   "general": {
     "loading": "Laden...",
-    "copyLink": "Kopieer link",
-    "clearChoices": "Wis keuzes"
+    "copyLink": "Kopieer link"
   },
   "games": {
     "label": "Game generatie",

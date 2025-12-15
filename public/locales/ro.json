@@ -290,8 +290,7 @@
   },
   "general": {
     "loading": "Se încarcă...",
-    "copyLink": "Copiază Link-ul",
-    "clearChoices": "Șterge alegerile"
+    "copyLink": "Copiază Link-ul"
   },
   "games": {
     "label": "Generație de joc",

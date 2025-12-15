@@ -288,8 +288,7 @@
   },
   "general": {
     "loading": "加载中……",
-    "copyLink": "复制链接",
-    "clearChoices": "清除选择"
+    "copyLink": "复制链接"
   },
   "games": {
     "label": "游戏世代",

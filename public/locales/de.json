@@ -311,8 +311,7 @@
   },
   "general": {
     "loading": "Laden...",
-    "copyLink": "Link kopieren",
-    "clearChoices": "Auswahl löschen"
+    "copyLink": "Link kopieren"
   },
   "games": {
     "label": "Spielgeneration",

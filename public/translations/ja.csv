@@ -194,7 +194,6 @@ banners.updateReady.whatsNew,What’s new,新機能
 banners.updateReady.update,Update,更新
 general.loading,Loading…,読み込み中…
 general.copyLink,Copy link,リンクをコピー
-general.clearChoices,Clear choices,選択をクリア
 games.label,Game generation,ゲームのジェネレーション1
 games.help,Use type effectiveness from different game generations.,さまざまなゲームジェネレーション1タイプの効果を使用します。
 games.byID.gen1,Generation 1,ジェネレーション１
