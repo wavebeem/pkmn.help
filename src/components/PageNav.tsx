@@ -19,7 +19,7 @@ export type PageNavProps = {
 };
 
 export function PageNav({ position }: PageNavProps): ReactNode {
-  const tabClass = clsx(styles.tab, "active-darken-background focus-header");
+  const tabClass = clsx(styles.tab, "active-darken-background focus-toggle");
   const { needsAppUpdate, closeMenu } = useAppContext();
   const { t } = useTranslation();
 

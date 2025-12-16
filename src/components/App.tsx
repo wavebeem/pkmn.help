@@ -321,7 +321,7 @@ export function Layout(): ReactNode {
             className={clsx(
               styles.mobileTab,
               "active-darken-background",
-              "focus-header",
+              "focus-toggle",
             )}
             end
             to="/offense/single/"
@@ -336,10 +336,10 @@ export function Layout(): ReactNode {
             className={clsx(
               styles.mobileTab,
               "active-darken-background",
-              "focus-header",
+              "focus-toggle",
             )}
             end
-            to="/offense/combination/"
+            to="/offense/dual/"
             aria-label={compositeAriaLabel(
               t("offense.mode.combination"),
               t("navigation.offense"),
@@ -351,7 +351,7 @@ export function Layout(): ReactNode {
             className={clsx(
               styles.mobileTab,
               "active-darken-background",
-              "focus-header",
+              "focus-toggle",
             )}
             end
             to="/defense/solo/"
@@ -366,7 +366,7 @@ export function Layout(): ReactNode {
             className={clsx(
               styles.mobileTab,
               "active-darken-background",
-              "focus-header",
+              "focus-toggle",
             )}
             end
             to="/defense/team/"
@@ -381,7 +381,7 @@ export function Layout(): ReactNode {
             className={clsx(
               styles.mobileTab,
               "active-darken-background",
-              "focus-header",
+              "focus-toggle",
             )}
             end
             to="/pokedex/"
