@@ -18,11 +18,11 @@
   --color-accent-bg: hsl(var(--hue-ui) 5% 72%);
   --color-accent-fg: hsl(var(--hue-ui) 5% 14%);
 
-  --color-header-dark: hsl(var(--hue-ui) 5% 8%);
-  --color-header-base: hsl(var(--hue-ui) 5% 8%);
-  --color-header-highlight: hsl(var(--hue-ui) 5% 20%);
-  --color-header-border: hsl(var(--hue-ui) 5% 20%);
-  --color-header-text: hsl(var(--hue-ui) 5% 92%);
+  --color-header-dark: hsl(var(--hue-red) 60% 20%);
+  --color-header-base: hsl(var(--hue-red) 60% 35%);
+  --color-header-highlight: hsl(var(--hue-red) 40% 50%);
+  --color-header-border: hsl(var(--hue-red) 60% 5%);
+  --color-header-text: #fff;
 
   --color-sidebar-dark: hsl(var(--hue-ui) 5% 8%);
   --color-sidebar-base: hsl(var(--hue-ui) 5% 8%);
