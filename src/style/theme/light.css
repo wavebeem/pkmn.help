@@ -11,7 +11,7 @@
 
   --color-fg1: hsl(var(--hue-ui) 15% 7%);
   --color-fg2: hsl(var(--hue-ui) 15% 20%);
-  --color-fg3: hsl(var(--hue-ui) 15% 40%);
+  --color-fg3: hsl(var(--hue-ui) 15% 35%);
   --color-fg4: hsl(var(--hue-ui) 15% 60%);
 
   --color-accent-bg: hsl(var(--hue-red) 70% 40%);
