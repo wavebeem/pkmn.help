@@ -26,9 +26,9 @@
 
   --color-sidebar-dark: hsl(var(--hue-ui) 5% 8%);
   --color-sidebar-base: hsl(var(--hue-ui) 5% 8%);
-  --color-sidebar-highlight: hsl(var(--hue-ui) 5% 20%);
-  --color-sidebar-border: hsl(var(--hue-ui) 5% 20%);
-  --color-sidebar-text: hsl(var(--hue-ui) 5% 92%);
+  --color-sidebar-highlight: hsl(var(--hue-ui) 5% 18%);
+  --color-sidebar-border: hsl(var(--hue-ui) 5% 24%);
+  --color-sidebar-text: #fff;
 
   --color-button1: hsl(var(--hue-ui) 5% 28%);
   --color-button1b: hsl(var(--hue-ui) 5% 22%);
