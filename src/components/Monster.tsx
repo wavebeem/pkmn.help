@@ -59,7 +59,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
           </FancyText>
         </Flex>
         <Flex gap="medium">
-          <FancyText tag="div" tabularNums color="3">
+          <FancyText tag="div" tabularNums>
             <FancyLink
               to={{ search: monsterParams.toString() }}
               underline="never"
@@ -71,7 +71,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
               {displayNumber}
             </FancyLink>
           </FancyText>
-          <FancyText tag="div" color="2" id={`${idPrefix}-form`}>
+          <FancyText tag="div" id={`${idPrefix}-form`}>
             {formName}
           </FancyText>
         </Flex>

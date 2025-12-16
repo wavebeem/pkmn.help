@@ -51,7 +51,7 @@
 }
 
 .td:not([data-count="0"]) {
-  background: var(--color-bg1);
+  background: var(--color-bg-input);
 }
 
 .td[data-count="0"] {

@@ -29,20 +29,20 @@
   font-weight: var(--weight-medium);
   position: relative;
   background: var(--color-card-bg);
-  color: var(--color-fg1);
+  color: var(--color-primary);
   /* border: 1px solid var(--color-card-highlight); */
   border-radius: var(--border-radius2);
 }
 
 .root > :active {
   background-image: linear-gradient(
-    hsl(from var(--color-fg1) h s l / 5%) 0 100%
+    hsl(from var(--color-primary) h s l / 5%) 0 100%
   );
 }
 
 .root > :where(*[aria-current="page"]) {
-  background: var(--color-fg1);
-  color: var(--color-bg1);
+  background: var(--color-primary);
+  color: var(--color-bg-input);
   border-color: transparent;
 }
 
@@ -53,7 +53,7 @@
 }
 
 .root > :where(:focus-visible) {
-  outline: 1px solid var(--color-bg1);
+  outline: 1px solid var(--color-bg-input);
   outline-offset: -1px;
-  box-shadow: 0 0 0 3px var(--color-fg1);
+  box-shadow: 0 0 0 3px var(--color-primary);
 }

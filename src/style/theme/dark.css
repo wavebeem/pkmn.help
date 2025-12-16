@@ -2,18 +2,17 @@
   --hue-ui: var(--hue-blue);
   --background-button-position: top;
 
-  --color-bg1: hsl(var(--hue-ui) 5% 22%);
-  --color-bg2: hsl(var(--hue-ui) 5% 14%);
+  --color-bg-input: hsl(var(--hue-ui) 5% 22%);
+  --color-bg-base: hsl(var(--hue-ui) 5% 14%);
   --color-bg-ghost: hsl(var(--hue-ui) 5% 20%);
 
   --color-card-bg: hsl(var(--hue-ui) 5% 18%);
   --color-card-highlight: hsl(var(--hue-ui) 5% 32%);
   --color-card-shadow: hsl(var(--hue-ui) 5% 12%);
 
-  --color-fg1: hsl(var(--hue-ui) 50% 92%);
-  --color-fg2: hsl(var(--hue-ui) 25% 82%);
-  --color-fg3: hsl(var(--hue-ui) 15% 72%);
-  --color-fg4: hsl(var(--hue-ui) 15% 62%);
+  --color-primary: hsl(var(--hue-ui) 50% 92%);
+  --color-secondary: hsl(var(--hue-ui) 15% 72%);
+  --color-disabled: hsl(var(--hue-ui) 15% 62%);
 
   --color-accent-bg: hsl(var(--hue-ui) 5% 72%);
   --color-accent-fg: hsl(var(--hue-ui) 5% 14%);
@@ -42,8 +41,8 @@
   --color-scroll-fg: hsl(var(--hue-ui) 25% 82%);
   --color-scroll-bg: transparent;
 
-  color: var(--color-fg1);
-  background-color: var(--color-bg2);
+  color: var(--color-primary);
+  background-color: var(--color-bg-base);
 
   color-scheme: dark;
 }

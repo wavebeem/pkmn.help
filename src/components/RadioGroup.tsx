@@ -30,7 +30,7 @@ export function RadioGroup<S extends string>({
       <div>
         <div>{label}</div>
         {helpText && (
-          <FancyText tag="div" fontSize="small" color="3">
+          <FancyText tag="div" fontSize="small" color="secondary">
             {helpText}
           </FancyText>
         )}

@@ -65,7 +65,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   color-scheme: light dark;
 
   font-family: var(--font-sans);
-  scrollbar-color: rgb(from var(--color-fg1) r g b / 50%) transparent;
+  scrollbar-color: rgb(from var(--color-primary) r g b / 50%) transparent;
 }
 
 [lang="pl"],

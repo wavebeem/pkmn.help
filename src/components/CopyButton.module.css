@@ -1,7 +1,7 @@
 .CopyButton {
   padding: var(--padding1) var(--padding3);
   border-radius: var(--border-radius2);
-  color: var(--color-fg1);
+  color: var(--color-primary);
   border: 1px solid transparent;
   background: var(--background-button);
   box-shadow: var(--shadow-button);
@@ -13,7 +13,7 @@
 
 .CopyButton[data-state="copied"] {
   box-shadow: none;
-  background: var(--color-bg2);
+  background: var(--color-bg-base);
   border-color: var(--color-border3);
   color: var(--color-border3);
 }

@@ -107,7 +107,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
                   return (
                     <div key={i} className={styles.dexItem}>
                       <Flex direction="column">
-                        <FancyText tag="div" color="3" fontSize="large">
+                        <FancyText tag="div" color="secondary" fontSize="large">
                           {formatMonsterNumber(Number(number))}
                         </FancyText>
                         <FancyText

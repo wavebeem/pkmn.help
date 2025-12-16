@@ -3,7 +3,7 @@
   align-items: stretch;
   position: relative;
   display: flex;
-  color: var(--color-fg1);
+  color: var(--color-primary);
   background:
     radial-gradient(var(--color-card-bg)) padding-box,
     radial-gradient(

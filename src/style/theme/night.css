@@ -1,18 +1,17 @@
 [data-theme="night"] {
   --background-button-position: top;
 
-  --color-bg1: hsl(0 0% 15%);
-  --color-bg2: hsl(0 0% 5%);
+  --color-bg-input: hsl(0 0% 15%);
+  --color-bg-base: hsl(0 0% 5%);
   --color-bg-ghost: hsl(0 0% 15%);
 
   --color-card-bg: hsl(0 0% 10%);
   --color-card-highlight: hsl(0 0% 20%);
   --color-card-shadow: hsl(0 0% 2%);
 
-  --color-fg1: hsl(0 0% 82%);
-  --color-fg2: hsl(0 0% 72%);
-  --color-fg3: hsl(0 0% 62%);
-  --color-fg4: hsl(0 0% 52%);
+  --color-primary: hsl(0 0% 82%);
+  --color-secondary: hsl(0 0% 62%);
+  --color-disabled: hsl(0 0% 52%);
 
   --color-accent-bg: hsl(0 0% 72%);
   --color-accent-fg: hsl(0 0% 5%);
@@ -40,8 +39,8 @@
   --color-scroll-fg: hsl(0 0% 62%);
   --color-scroll-bg: transparent;
 
-  color: var(--color-fg1);
-  background-color: var(--color-bg2);
+  color: var(--color-primary);
+  background-color: var(--color-bg-base);
 
   color-scheme: dark;
 }

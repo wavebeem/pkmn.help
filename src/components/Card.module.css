@@ -1,7 +1,7 @@
 .Card {
   display: flex;
   flex-direction: column;
-  color: var(--color-fg1);
+  color: var(--color-primary);
   border: 1px solid transparent;
   background:
     radial-gradient(var(--color-card-bg)) padding-box,

@@ -1,18 +1,17 @@
 [data-theme="light"] {
   --hue-ui: var(--hue-gold);
 
-  --color-bg1: hsl(var(--hue-ui) 5% 100%);
-  --color-bg2: hsl(var(--hue-ui) 5% 90%);
+  --color-bg-input: hsl(var(--hue-ui) 5% 100%);
+  --color-bg-base: hsl(var(--hue-ui) 5% 90%);
   --color-bg-ghost: hsl(var(--hue-ui) 5% 98%);
 
   --color-card-bg: hsl(var(--hue-ui) 5% 94%);
   --color-card-highlight: hsl(var(--hue-ui) 5% 100%);
   --color-card-shadow: hsl(var(--hue-ui) 5% 85%);
 
-  --color-fg1: hsl(var(--hue-ui) 15% 7%);
-  --color-fg2: hsl(var(--hue-ui) 15% 20%);
-  --color-fg3: hsl(var(--hue-ui) 15% 35%);
-  --color-fg4: hsl(var(--hue-ui) 15% 60%);
+  --color-primary: hsl(var(--hue-ui) 15% 7%);
+  --color-secondary: hsl(var(--hue-ui) 15% 35%);
+  --color-disabled: hsl(var(--hue-ui) 15% 60%);
 
   --color-accent-bg: hsl(var(--hue-red) 70% 40%);
   --color-accent-fg: #fff;
@@ -43,8 +42,8 @@
   --color-scroll-fg: hsl(var(--hue-red) 70% 40%);
   --color-scroll-bg: transparent;
 
-  color: var(--color-fg1);
-  background-color: var(--color-bg2);
-  scrollbar-color: rgb(from var(--color-fg1) r g b / 50%) transparent;
+  color: var(--color-primary);
+  background-color: var(--color-bg-base);
+  scrollbar-color: rgb(from var(--color-primary) r g b / 50%) transparent;
   color-scheme: light;
 }

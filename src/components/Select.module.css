@@ -14,7 +14,7 @@
   border-radius: var(--border-radius2);
   border: 1px solid transparent;
   background: var(--background-button);
-  color: var(--color-fg1);
+  color: var(--color-primary);
   width: 100%;
   box-shadow: var(--shadow-button);
 }
@@ -27,14 +27,14 @@
 
 .select optgroup {
   background: var(--color-button1b);
-  color: var(--color-fg1);
+  color: var(--color-primary);
   font-style: normal;
   font-weight: var(--weight-medium);
 }
 
 .select option {
   background: var(--color-button1b);
-  color: var(--color-fg1);
+  color: var(--color-primary);
   font-weight: initial;
   border-radius: 0;
 }
@@ -46,6 +46,6 @@
 .help {
   margin: 0;
   padding-top: var(--padding1);
-  color: var(--color-fg3);
+  color: var(--color-secondary);
   font-size: var(--font-size0);
 }

@@ -6,7 +6,7 @@
   align-items: center;
   fill: currentColor;
   box-shadow: var(--shadow-button);
-  color: var(--color-fg1);
+  color: var(--color-primary);
   border: 1px solid transparent;
   background: var(--background-button);
 }
