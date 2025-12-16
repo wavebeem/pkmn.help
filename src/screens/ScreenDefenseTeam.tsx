@@ -1,11 +1,12 @@
 import { clsx } from "clsx";
-import { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useState, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { Badge } from "../components/Badge";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
+import { ClearChoices } from "../components/ClearChoices";
 import { CopyButton } from "../components/CopyButton";
 import { Divider } from "../components/Divider";
 import { EmptyState } from "../components/EmptyState";
@@ -154,6 +155,21 @@ export function ScreenDefenseTeam(): ReactNode {
       );
     };
   }
+
+  const resetTeam = useCallback((): void => {
+    setTeamTypes([]);
+    setTeamTeraTypes([]);
+    setTeamAbilities([]);
+    setTeamIndex(-1);
+    navigate({ ...location, search: "" }, { replace: true });
+  }, [
+    setTeamTypes,
+    setTeamTeraTypes,
+    setTeamAbilities,
+    setTeamIndex,
+    navigate,
+    location,
+  ]);
 
   const permalink = new URL(window.location.href);
   {
@@ -345,8 +361,9 @@ export function ScreenDefenseTeam(): ReactNode {
           </Flex>
         </Flex>
 
-        <Flex>
+        <Flex gap="large">
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
+          <ClearChoices onClick={resetTeam} />
         </Flex>
       </Flex>
 

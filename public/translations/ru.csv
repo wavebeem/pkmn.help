@@ -9,7 +9,7 @@ navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose attack move types,Выберите Типы
-offense.dealsXTo,Deals {{ x }} damage to these types,Наносит {{ x }}
+offense.dealsXTo,Deals {{ x }} damage to,Наносит {{ x }}
 offense.mode.combination,Dual,
 offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
@@ -54,7 +54,7 @@ coverage.status.reset,Loaded default Pokémon forms,Загружены форм�
 coverage.status.errored,Error loading CSV. Don't change header names.,Ошибка загрузки CSV. Не изменяйте имени заголовок.
 coverage.back,Back to offense,Назад к Нападению
 defense.chooseTypes,Choose defending Pokémon types,Выберите Типы
-defense.takesXFrom,Takes {{ x }} from these move types,Принимает {{ x }} от
+defense.takesXFrom,Takes {{ x }} from,Принимает {{ x }} от
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,

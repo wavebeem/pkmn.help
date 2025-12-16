@@ -9,7 +9,7 @@ navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose attack move types,Vælg typer/type
-offense.dealsXTo,Deals {{ x }} damage to these types,Skader {{ x }} til
+offense.dealsXTo,Deals {{ x }} damage to,Skader {{ x }} til
 offense.mode.combination,Dual,
 offense.mode.single,Single,
 offense.matchups.summary.heading,Matchup summary,
@@ -54,7 +54,7 @@ coverage.status.reset,Loaded default Pokémon forms,Loadede standard Pokémon
 coverage.status.errored,Error loading CSV. Don't change header names.,Fejl ved loading af CSV. Ændre ikke sidehoved navne
 coverage.back,Back to offense,Tilbage til Angreb
 defense.chooseTypes,Choose defending Pokémon types,Vælg typer/type
-defense.takesXFrom,Takes {{ x }} from these move types,Tager {{ x }} Fra
+defense.takesXFrom,Takes {{ x }} from,Tager {{ x }} Fra
 defense.chooseAbility,Choose ability,
 defense.chooseTeraType,Choose tera type,
 defense.abilityNames.none,None,
