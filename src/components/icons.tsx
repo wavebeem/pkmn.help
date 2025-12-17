@@ -35,7 +35,6 @@ export {
   XCircle as IconClear,
   // Copy
   Copy as IconCopy,
-
   // Reset
   RotateCcw as IconReset,
   // Coverage edit screen
