@@ -182,6 +182,7 @@ export function ScreenPokedex(): ReactNode {
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
           <Flex flex="auto" />
           <FancyLink
+            outlined
             to="/pokedex/help/"
             aria-label={t("pokedex.search.helpLong")}
           >

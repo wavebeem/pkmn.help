@@ -2,9 +2,11 @@
 
 **👉 <https://www.pkmn.help>**
 
-# Pokémon Type Calculator
+# PKMN.help
 
-Your premier Pokémon companion
+_Pokémon Type Calculator_
+
+Your premier Pokémon companion:
 
 - Check type matchups
 

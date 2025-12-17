@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","Caută după nume
 pokedex.search.help,Help,Ajutor
 pokedex.search.helpLong,"Help, search Pokédex","Ajutor, caută în Pokedex"
 pokedex.search.notFound,No Pokémon found,Niciun Pokémon gasit
-pokedex.offense.text,Offense,Atac
-pokedex.defense.text,Defense,Apărare
 pokedex.cry.text,Cry,Sunetul Pokémon-ului
 pokedex.shiny.text,Shiny,Strălucitor
 pokedex.pagination.next,Next,Următoarea
@@ -137,9 +135,10 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,iarbă / nimic
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Căutați Pokémon care sunt doar tip iarbă, fără al doilea tip (de exemplu, Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Înapoi la Pokédex
+about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,Contactează-mă
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Bună, sunt <homepage>Sage</homepage> (ei/lor) și am creat Calculator tip Pokémon (pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Trimite idei și mulțumiri la <email>pkmn@wavebeem.com</email>.
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","Bună, sunt <homepage>Sage</homepage> (ei/lor) și am creat Calculator tip Pokémon (pkmn.help)."
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Trimite idei și mulțumiri la <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Setări
 more.settings.language.label,Language,Limbă
 more.settings.language.default,Auto detect language,Detectează limba automat
@@ -194,6 +193,7 @@ banners.updateReady.whatsNew,What’s new,Noutăți
 banners.updateReady.update,Update,Se face update
 general.loading,Loading…,Se încarcă...
 general.copyLink,Copy link,Copiază Link-ul
+general.clearChoices,Clear choices,
 games.label,Game generation,Generație de joc
 games.help,Use type effectiveness from different game generations.,Folosește eficacitatea de tipuri de la generații de joc diferite.
 games.byID.gen1,Generation 1,Generația 1

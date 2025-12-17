@@ -7,8 +7,6 @@ export type AppContext = {
   setCoverageTypes: (coverageTypes: CoverageType[]) => void;
   fallbackCoverageTypes: CoverageType[];
   allPokemon: Pokemon[];
-  easterEggPokemon: Pokemon | undefined;
-  easterEggLoadedID: string;
   needsAppUpdate: boolean;
   updateApp: () => Promise<void>;
   closeMenu: () => void;
@@ -20,8 +18,6 @@ const AppContext = createContext<AppContext>({
   setCoverageTypes: () => {},
   fallbackCoverageTypes: [],
   allPokemon: [],
-  easterEggPokemon: undefined,
-  easterEggLoadedID: "",
   needsAppUpdate: false,
   updateApp: async () => {},
   closeMenu: () => {},

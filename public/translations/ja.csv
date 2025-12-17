@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types",名前、番号、
 pokedex.search.help,Help,ヘルプ
 pokedex.search.helpLong,"Help, search Pokédex",ヘルプ、Pokédexを検索
 pokedex.search.notFound,No Pokémon found,ポケモンが見つかりませんでした
-pokedex.offense.text,Offense,こうげき
-pokedex.defense.text,Defense,ぼうぎょ
 pokedex.cry.text,Cry,鳴き声
 pokedex.shiny.text,Shiny,色違い
 pokedex.pagination.next,Next,次
@@ -137,9 +135,10 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,くさ　なし
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",くさタイプだけをもち、2つ目のタイプを持たないポケモンを検索する。(例モンジャラ、チコリータ)
 pokedexHelp.back,Back to Pokédex,ポケモンずかんにもどる
+about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,運営者に連絡
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",こんにちは、私は<homepage>セージ</homepage>です。ポケモン・タイプ・けいさんきを作りました。
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,考えとありがとうを<email>pkmn@wavebeem.com</email>に電子メールで送ってください。
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).",こんにちは、私は<homepage>セージ</homepage>です。ポケモン・タイプ・けいさんきを作りました。
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,考えとありがとうを<email>pkmn@wavebeem.com</email>に電子メールで送ってください。
 more.settings.heading,Settings,設定
 more.settings.language.label,Language,言語
 more.settings.language.default,Auto detect language,自動言語検出
@@ -194,6 +193,7 @@ banners.updateReady.whatsNew,What’s new,新機能
 banners.updateReady.update,Update,更新
 general.loading,Loading…,読み込み中…
 general.copyLink,Copy link,リンクをコピー
+general.clearChoices,Clear choices,
 games.label,Game generation,ゲームのジェネレーション1
 games.help,Use type effectiveness from different game generations.,さまざまなゲームジェネレーション1タイプの効果を使用します。
 games.byID.gen1,Generation 1,ジェネレーション１

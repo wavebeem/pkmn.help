@@ -1,6 +1,6 @@
 .small {
   font-size: var(--font-size0);
-  color: var(--color-fg3);
+  color: var(--color-secondary);
   padding: 0 var(--padding2);
 }
 

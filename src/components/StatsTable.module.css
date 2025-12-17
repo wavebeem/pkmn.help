@@ -5,4 +5,9 @@
   height: min-content;
   font-variant-numeric: tabular-nums;
   align-items: center;
+
+  background: var(--color-bg-ghost);
+  padding: var(--padding2);
+  border-radius: var(--border-radius0) var(--border-radius0)
+    var(--border-radius2) var(--border-radius2);
 }

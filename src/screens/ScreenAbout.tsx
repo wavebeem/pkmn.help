@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
@@ -10,12 +10,19 @@ import { Flex } from "../components/Flex";
 import { useAppContext } from "../hooks/useAppContext";
 import { resetApp } from "../misc/resetApp";
 import { FancyLink } from "../components/FancyLink";
-import { IconReset } from "../components/Icon";
+import { IconReset, IconTada } from "../components/icons";
+import { Pokemon } from "../misc/data-types";
+import styles from "./ScreenAbout.module.css";
+import { randomItem } from "../misc/random";
+import { MonsterImage } from "../components/MonsterImage";
 
 export function ScreenAbout(): ReactNode {
-  const { needsAppUpdate, updateApp } = useAppContext();
+  const { needsAppUpdate, updateApp, allPokemon } = useAppContext();
   const { t } = useTranslation();
   const year = new Date().getFullYear();
+
+  const [easterEgg, setEasterEgg] = useState<Pokemon>();
+  const [easterEggLoadedID, setEasterEggLoadedID] = useState("");
 
   return (
     <main className="content-narrow center">
@@ -225,7 +232,7 @@ export function ScreenAbout(): ReactNode {
               </FancyText>
 
               <FancyText tag="p">
-                pkmn.help &copy; 2013&ndash;{year} {}
+                PKMN.help &copy; 2013&ndash;{year} {}
                 <ExternalLink href="https://www.wavebeem.com">
                   Sage Fennel Mock
                 </ExternalLink>
@@ -236,10 +243,35 @@ export function ScreenAbout(): ReactNode {
 
           <Divider />
 
-          <div aria-hidden="true">
-            <span aria-hidden="true">{"(ノ^_^)ノ"}</span> Have you tried
-            pressing the Pokéball button at the top of the page?
-          </div>
+          {easterEgg && (
+            <div
+              className={styles.easterEgg}
+              data-animate={easterEggLoadedID === easterEgg.id}
+            >
+              <MonsterImage
+                pokemonID={easterEgg.id}
+                onLoad={({ pokemonID }) => {
+                  setEasterEggLoadedID(pokemonID);
+                }}
+              />
+            </div>
+          )}
+
+          <Flex>
+            <Button
+              onClick={(event) => {
+                event.preventDefault();
+                const pkmn = randomItem(allPokemon);
+                if (!pkmn) {
+                  return;
+                }
+                setEasterEgg(pkmn);
+              }}
+            >
+              <IconTada size={16} />
+              {t("about.easterEgg.button")}
+            </Button>
+          </Flex>
         </Flex>
       </Flex>
     </main>

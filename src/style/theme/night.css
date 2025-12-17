@@ -1,0 +1,50 @@
+[data-theme="night"] {
+  --background-button-position: top;
+
+  --color-bg-input: hsl(0 0% 15%);
+  --color-bg-base: hsl(0 0% 5%);
+  --color-bg-ghost: hsl(0 0% 15%);
+
+  --color-card-bg: hsl(0 0% 10%);
+  --color-card-highlight: hsl(0 0% 20%);
+  --color-card-shadow: hsl(0 0% 2%);
+
+  --color-primary: hsl(0 0% 82%);
+  --color-secondary: hsl(0 0% 62%);
+  --color-disabled: hsl(0 0% 52%);
+
+  --color-accent-bg: hsl(0 0% 80%);
+  --color-accent-fg: hsl(0 0% 5%);
+
+  --color-header-base: hsl(0 0% 10%);
+  --color-header-highlight: hsl(0 0% 20%);
+  --color-header-border: hsl(0 0% 20%);
+  --color-header-text: hsl(0 0% 82%);
+
+  --color-tabs-base: hsl(0 0% 15%);
+  --color-tabs-highlight: hsl(0 0% 25%);
+  --color-tabs-border: hsl(0 0% 25%);
+  --color-tabs-text: hsl(0 0% 82%);
+
+  --color-sidebar-base: hsl(0 0% 0%);
+  --color-sidebar-highlight: hsl(0 0% 10%);
+  --color-sidebar-border: hsl(0 0% 10%);
+  --color-sidebar-text: hsl(0 0% 82%);
+
+  --color-button-top: hsl(0 0% 20%);
+  --color-button-bottom: hsl(0 0% 15%);
+
+  --color-link: hsl(var(--hue-teal) 90% 75%);
+
+  --color-border-primary: hsl(0 0% 47%);
+  --color-border-secondary: hsl(0 0% 25%);
+  --color-border-disabled: hsl(0 0% 20%);
+  --color-border-subtle: hsl(0 0% 100% / 20%);
+
+  --color-scroll: hsl(0 0% 62%);
+
+  color: var(--color-primary);
+  background-color: var(--color-bg-base);
+
+  color-scheme: dark;
+}

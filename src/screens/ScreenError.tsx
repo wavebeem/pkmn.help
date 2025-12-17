@@ -5,7 +5,7 @@ import { CopyButton } from "../components/CopyButton";
 import { ExternalLink } from "../components/ExternalLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
-import { IconBack, IconReset } from "../components/Icon";
+import { IconBack, IconReset } from "../components/icons";
 import { resetApp } from "../misc/resetApp";
 import styles from "./ScreenError.module.css";
 

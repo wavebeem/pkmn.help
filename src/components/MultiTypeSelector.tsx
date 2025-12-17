@@ -7,6 +7,8 @@ import styles from "./MultiTypeSelector.module.css";
 import { customProperties } from "../misc/customProperties";
 import { Flex } from "./Flex";
 import { ReactNode } from "react";
+import { TypeIcon } from "./TypeIcon";
+import { IconCheck } from "./icons";
 
 type MultiTypeSelectorProps = {
   generation: Generation;
@@ -24,7 +26,7 @@ export function MultiTypeSelector({
   const { t } = useTranslation();
   const types = typesForGeneration(generation);
   return (
-    <div className="columns-type-selector" data-limit={limit}>
+    <div className={styles.root} data-limit={limit}>
       {types.map((type) => {
         const isChecked = value.includes(type);
         return (
@@ -52,7 +54,10 @@ export function MultiTypeSelector({
             })}
           >
             <Flex tag="span" gap="medium" justify="flex-start" align="center">
-              <span className={styles.checkbox} />
+              <span className={styles.checkbox}>
+                <TypeIcon type={type} size={24} className={styles.type} />
+                <IconCheck size={24} strokeWidth={4} className={styles.check} />
+              </span>
               <span className={styles.text}>{t(`types.${type}`)}</span>
             </Flex>
           </button>

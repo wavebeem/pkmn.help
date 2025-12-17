@@ -5,11 +5,16 @@ import { Pokemon } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { getWikiLink, getWikiName } from "../misc/wiki";
 import { Badge } from "./Badge";
-import { ExternalLink } from "./ExternalLink";
 import { FancyLink } from "./FancyLink";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
-import { IconCry, IconShiny } from "./Icon";
+import {
+  IconCry,
+  IconDefenseSolo,
+  IconOffenseDual,
+  IconOffenseSingle,
+  IconShiny,
+} from "./icons";
 import { IconButton } from "./IconButton";
 import styles from "./Monster.module.css";
 import { MonsterImage } from "./MonsterImage";
@@ -42,7 +47,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
   }
   return (
     <div className={styles.root}>
-      <Flex direction="column">
+      <Flex direction="column" className={styles.name}>
         <Flex align="center" gap="medium">
           <FancyText
             tag="h2"
@@ -54,7 +59,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
           </FancyText>
         </Flex>
         <Flex gap="medium">
-          <FancyText tag="div" tabularNums color="3">
+          <FancyText tag="div" tabularNums>
             <FancyLink
               to={{ search: monsterParams.toString() }}
               underline="never"
@@ -66,7 +71,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
               {displayNumber}
             </FancyLink>
           </FancyText>
-          <FancyText tag="div" color="2" id={`${idPrefix}-form`}>
+          <FancyText tag="div" id={`${idPrefix}-form`}>
             {formName}
           </FancyText>
         </Flex>
@@ -136,7 +141,13 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
                 animationState={animationState}
               />
             </Flex>
-            <Flex wrap gap="small" justify="flex-start" align="flex-start">
+            <Flex
+              wrap
+              gap="small"
+              justify="flex-start"
+              align="flex-start"
+              className={styles.badges}
+            >
               {pokemon.types.map((t, i) => (
                 <Badge key={i} type={t} size="small" />
               ))}
@@ -144,26 +155,44 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
           </Flex>
         </div>
         <div className={styles.monsterLinks}>
-          <ExternalLink
-            aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}
-            href={getWikiLink(i18n.language, pokemon)}
-            id={`${idPrefix}-wiki`}
-          >
-            {getWikiName(i18n.language)}
-          </ExternalLink>
           <FancyLink
+            outlined
+            aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
+            to={`/offense/single/?${params}#matchup-offense`}
+            id={`${idPrefix}-offense`}
+          >
+            <IconOffenseSingle
+              size={16}
+              aria-label={t("offense.mode.single")}
+            />
+          </FancyLink>
+          <FancyLink
+            outlined
             aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
             to={`/offense/combination/?${params}#matchup-offense`}
             id={`${idPrefix}-offense`}
           >
-            {t("pokedex.offense.text")}
+            <IconOffenseDual
+              size={16}
+              aria-label={t("offense.mode.combination")}
+            />
           </FancyLink>
           <FancyLink
+            outlined
             aria-labelledby={`${idPrefix}-defense ${idPrefix}-name ${idPrefix}-form`}
             to={`/defense/solo/?${params}#matchup-defense`}
             id={`${idPrefix}-defense`}
           >
-            {t("pokedex.defense.text")}
+            <IconDefenseSolo size={16} aria-label={t("defense.mode.solo")} />
+          </FancyLink>
+          <Flex flex="auto" />
+          <FancyLink
+            outlined
+            aria-labelledby={`${idPrefix}-wiki ${idPrefix}-name ${idPrefix}-form`}
+            to={getWikiLink(i18n.language, pokemon)}
+            id={`${idPrefix}-wiki`}
+          >
+            {getWikiName(i18n.language)}
           </FancyLink>
         </div>
         <div className={styles.monsterStats}>

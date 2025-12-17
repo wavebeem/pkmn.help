@@ -90,12 +90,6 @@
       "helpLong": "Hjælp, Søg på pokédexet",
       "notFound": "Ingen Pokémons blev fundet"
     },
-    "offense": {
-      "text": "Angreb"
-    },
-    "defense": {
-      "text": "Forsvar"
-    },
     "pagination": {
       "next": "Næste",
       "nextLong": "Næste",

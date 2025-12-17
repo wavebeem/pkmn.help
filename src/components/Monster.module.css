@@ -3,7 +3,7 @@
   align-items: stretch;
   position: relative;
   display: flex;
-  color: var(--color-fg1);
+  color: var(--color-primary);
   background:
     radial-gradient(var(--color-card-bg)) padding-box,
     radial-gradient(
@@ -13,24 +13,32 @@
       )
       border-box var(--color-card-bg);
   box-shadow: 0 1px 0 0 var(--color-card-shadow);
-  padding: var(--padding3);
+  padding: var(--padding2);
   border-radius: var(--border-radius3);
   border: 1px solid transparent;
+}
+
+.name {
+  padding-left: var(--padding1);
+}
+
+.badges {
+  padding-left: var(--padding1);
 }
 
 .buttonContainer {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
+  gap: var(--padding1);
   position: absolute;
   top: 0;
   right: 0;
-  margin: 1rem;
+  margin: var(--padding2);
 }
 
 .monster {
   display: grid;
-  gap: var(--padding3);
+  /* gap: var(--padding2); */
   grid-template-areas:
     "icon"
     "links"
@@ -44,11 +52,20 @@
 }
 
 .monsterLinks {
+  margin-top: var(--padding2);
+  margin-bottom: var(--padding0);
+
+  background: var(--color-bg-ghost);
+  padding: var(--padding2);
+  border-radius: var(--border-radius2) var(--border-radius2)
+    var(--border-radius0) var(--border-radius0);
+
   grid-area: links;
-  justify-content: flex-start;
+  justify-content: start;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--padding3);
+  gap: var(--padding2);
+  /* margin-top: var(--padding2); */
 }
 
 .monsterStats {

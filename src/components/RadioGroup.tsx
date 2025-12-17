@@ -30,7 +30,7 @@ export function RadioGroup<S extends string>({
       <div>
         <div>{label}</div>
         {helpText && (
-          <FancyText tag="div" fontSize="small" color="3">
+          <FancyText tag="div" fontSize="small" color="secondary">
             {helpText}
           </FancyText>
         )}
@@ -44,7 +44,7 @@ export function RadioGroup<S extends string>({
               className={clsx(styles.item, "active-darken-background")}
             >
               <input
-                className={clsx(styles.radio, "focus-outline")}
+                className={styles.radio}
                 type="radio"
                 name={name}
                 checked={value === option.value}

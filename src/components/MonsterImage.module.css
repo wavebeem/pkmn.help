@@ -14,9 +14,9 @@
   width: var(--_size);
   height: var(--_size);
   line-height: var(--_size);
-  border: 1px solid var(--color-border2);
-  background: var(--color-bg1);
-  color: var(--color-fg3);
+  border: 1px solid var(--color-border-secondary);
+  background: var(--color-bg-input);
+  color: var(--color-secondary);
   font-size: 2rem;
   border-radius: var(--border-radius-pill);
 }

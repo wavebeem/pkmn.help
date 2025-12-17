@@ -129,12 +129,6 @@
       "helpLong": "幫助，搜索寶可夢圖鑑",
       "notFound": "未找到寶可夢"
     },
-    "offense": {
-      "text": "攻擊"
-    },
-    "defense": {
-      "text": "防禦"
-    },
     "cry": {
       "text": "叫聲"
     },

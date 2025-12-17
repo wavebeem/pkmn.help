@@ -20,6 +20,8 @@ export {
   ChevronsLeft as IconFirst,
   ChevronRight as IconNext,
   ChevronsRight as IconLast,
+  // Select
+  ChevronDown as IconSelectCaret,
   // Add
   Plus as IconAdd,
   // Open/close OR plus for pairs
@@ -33,7 +35,6 @@ export {
   XCircle as IconClear,
   // Copy
   Copy as IconCopy,
-
   // Reset
   RotateCcw as IconReset,
   // Coverage edit screen
@@ -42,4 +43,8 @@ export {
   // Edit & Remove - team
   Pencil as IconEdit,
   Trash2 as IconRemove,
+  // Checkboxes
+  Check as IconCheck,
+  // Tada
+  PartyPopper as IconTada,
 } from "lucide-react";

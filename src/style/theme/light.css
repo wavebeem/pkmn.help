@@ -1,0 +1,50 @@
+[data-theme="light"] {
+  --hue-ui: var(--hue-gold);
+
+  --color-bg-input: hsl(var(--hue-ui) 5% 100%);
+  --color-bg-base: hsl(var(--hue-ui) 5% 92%);
+  --color-bg-ghost: hsl(var(--hue-ui) 5% 98%);
+
+  --color-card-bg: hsl(var(--hue-ui) 5% 96%);
+  --color-card-highlight: hsl(var(--hue-ui) 5% 100%);
+  --color-card-shadow: hsl(var(--hue-ui) 5% 85%);
+
+  --color-primary: hsl(var(--hue-ui) 15% 7%);
+  --color-secondary: hsl(var(--hue-ui) 15% 35%);
+  --color-disabled: hsl(var(--hue-ui) 15% 60%);
+
+  --color-accent-bg: hsl(var(--hue-red) 70% 40%);
+  --color-accent-fg: #fff;
+
+  --color-header-base: hsl(var(--hue-red) 60% 40%);
+  --color-header-highlight: hsl(var(--hue-red) 40% 55%);
+  --color-header-border: hsl(var(--hue-red) 60% 7%);
+  --color-header-text: #fff;
+
+  --color-tabs-base: hsl(var(--hue-ui) 5% 100%);
+  --color-tabs-highlight: hsl(var(--hue-ui) 5% 85%);
+  --color-tabs-text: hsl(var(--hue-ui) 15% 7%);
+  --color-tabs-border: hsl(var(--hue-ui) 5% 75%);
+
+  --color-sidebar-base: hsl(var(--hue-ui) 5% 88%);
+  --color-sidebar-highlight: hsl(var(--hue-ui) 5% 82%);
+  --color-sidebar-text: hsl(var(--hue-ui) 15% 7%);
+  --color-sidebar-border: hsl(var(--hue-ui) 5% 82%);
+
+  --color-button-top: hsl(var(--hue-ui) 5% 100%);
+  --color-button-bottom: hsl(var(--hue-ui) 5% 95%);
+
+  --color-link: hsl(var(--hue-red) 70% 40%);
+
+  --color-border-primary: hsl(var(--hue-ui) 5% 50%);
+  --color-border-secondary: hsl(var(--hue-ui) 5% 75%);
+  --color-border-disabled: hsl(var(--hue-ui) 5% 85%);
+  --color-border-subtle: hsl(var(--hue-red) 0% 0% / 10%);
+
+  --color-scroll: hsl(var(--hue-red) 70% 40%);
+
+  color: var(--color-primary);
+  background-color: var(--color-bg-base);
+  scrollbar-color: rgb(from var(--color-primary) r g b / 50%) transparent;
+  color-scheme: light;
+}

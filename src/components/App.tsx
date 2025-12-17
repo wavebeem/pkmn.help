@@ -32,7 +32,6 @@ import { useUpdateSW } from "../hooks/useUpdateSW";
 import { CoverageType, Pokemon } from "../misc/data-types";
 import { detectLanguage } from "../misc/detectLanguage";
 import { formatPokemonName } from "../misc/formatPokemonName";
-import { randomItem } from "../misc/random";
 import { publicPath } from "../misc/settings";
 import { ScreenAbout } from "../screens/ScreenAbout";
 import { ScreenCoverageList } from "../screens/ScreenCoverageList";
@@ -55,8 +54,7 @@ import {
   IconOffenseDual,
   IconOffenseSingle,
   IconPokedex,
-} from "./Icon";
-import { MonsterImage } from "./MonsterImage";
+} from "./icons";
 import { PageNav } from "./PageNav";
 
 const router = createBrowserRouter([
@@ -70,8 +68,9 @@ const router = createBrowserRouter([
         path: "offense",
         children: [
           { index: true, element: <Navigate replace to="single/" /> },
+          { path: "combination", element: <Navigate replace to="../dual/" /> },
           {
-            path: "combination",
+            path: "dual",
             element: <ScreenOffense mode="combination" />,
           },
           { path: "single", element: <ScreenOffense mode="single" /> },
@@ -164,8 +163,6 @@ export function Layout(): ReactNode {
     CoverageType[]
   >([]);
   const [AllPokemon, setAllPokemon] = useState<Pokemon[]>([]);
-  const [easterEgg, setEasterEgg] = useState<Pokemon>();
-  const [easterEggLoadedID, setEasterEggLoadedID] = useState("");
 
   const [language] = useLanguage();
 
@@ -261,8 +258,6 @@ export function Layout(): ReactNode {
     () => ({
       allPokemon: AllPokemon,
       coverageTypes,
-      easterEggLoadedID,
-      easterEggPokemon: easterEgg,
       fallbackCoverageTypes,
       isLoading,
       needsAppUpdate,
@@ -273,8 +268,6 @@ export function Layout(): ReactNode {
     [
       AllPokemon,
       coverageTypes,
-      easterEgg,
-      easterEggLoadedID,
       fallbackCoverageTypes,
       isLoading,
       needsAppUpdate,
@@ -284,54 +277,44 @@ export function Layout(): ReactNode {
     ],
   );
 
-  usePageTitle(t("title"));
+  usePageTitle(`PKMN.help \u2013 ${t("title")}`);
   useMetaThemeColor({ dataTheme, themeColor });
   useScrollToFragment();
   useRouteChangeFixes();
 
-  // TODO: Intercept the back button and close the dialog if it's open.
-
   return (
     <AppContextProvider value={appContext}>
-      {easterEgg && (
-        <div
-          className={styles.easterEgg}
-          data-animate={easterEggLoadedID === easterEgg.id}
-        >
-          <MonsterImage
-            pokemonID={easterEgg.id}
-            onLoad={({ pokemonID }) => {
-              setEasterEggLoadedID(pokemonID);
-            }}
-          />
-        </div>
-      )}
       <div className={styles.root}>
         <header className={styles.header} ref={headerRef}>
           <div className={clsx(styles.headerContent, "content-wide center")}>
             <div className={styles.heading}>
-              <button
-                className={styles.pokeball}
-                onClick={(event) => {
-                  event.preventDefault();
-                  const pkmn = randomItem(AllPokemon);
-                  if (!pkmn) {
-                    return;
-                  }
-                  setEasterEgg(pkmn);
-                }}
-              >
-                <img
-                  src={new URL("/app-logo.svg", publicPath).href}
-                  width={32}
-                  height={32}
-                  // Intentionally not translated. This is the name of the
-                  // website, not its description.
-                  alt="pkmn.help"
-                />
-              </button>
               <hgroup className={styles.titleStack}>
-                <h1 className={styles.title}>pkmn.help</h1>
+                <h1 className={styles.title}>
+                  <img
+                    className={styles.justLogo}
+                    src={new URL("/app-logo.svg", publicPath).href}
+                    alt=""
+                    width={24}
+                    height={24}
+                  />
+                  <span className={styles.pkmn}>pkmn</span>
+                  <span className={styles.dot}>.</span>
+                  <span className={styles.help}>help</span>
+                  {/* <img
+                    className={styles.logo}
+                    src={new URL("/logo-simple.svg", publicPath).href}
+                    alt="PKMN.help"
+                    width={300}
+                    height={40}
+                  /> */}
+                  {/* <img
+                    className={styles.logo}
+                    src={new URL("/text-logo.svg", publicPath).href}
+                    alt="PKMN.help"
+                    width={300}
+                    height={76}
+                  /> */}
+                </h1>
                 <p className={styles.subtitle}>{t("title")}</p>
               </hgroup>
             </div>
@@ -352,18 +335,11 @@ export function Layout(): ReactNode {
         </header>
         <div className={styles.mobileTabBar}>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-tab")}
-            end
-            to="/offense/combination/"
-            aria-label={compositeAriaLabel(
-              t("offense.mode.combination"),
-              t("navigation.offense"),
+            className={clsx(
+              styles.mobileTab,
+              "active-darken-background",
+              "focus-toggle",
             )}
-          >
-            <IconOffenseDual />
-          </NavLink>
-          <NavLink
-            className={clsx(styles.mobileTab, "focus-tab")}
             end
             to="/offense/single/"
             aria-label={compositeAriaLabel(
@@ -374,7 +350,26 @@ export function Layout(): ReactNode {
             <IconOffenseSingle />
           </NavLink>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-tab")}
+            className={clsx(
+              styles.mobileTab,
+              "active-darken-background",
+              "focus-toggle",
+            )}
+            end
+            to="/offense/dual/"
+            aria-label={compositeAriaLabel(
+              t("offense.mode.combination"),
+              t("navigation.offense"),
+            )}
+          >
+            <IconOffenseDual />
+          </NavLink>
+          <NavLink
+            className={clsx(
+              styles.mobileTab,
+              "active-darken-background",
+              "focus-toggle",
+            )}
             end
             to="/defense/solo/"
             aria-label={compositeAriaLabel(
@@ -385,7 +380,11 @@ export function Layout(): ReactNode {
             <IconDefenseSolo />
           </NavLink>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-tab")}
+            className={clsx(
+              styles.mobileTab,
+              "active-darken-background",
+              "focus-toggle",
+            )}
             end
             to="/defense/team/"
             aria-label={compositeAriaLabel(
@@ -396,7 +395,11 @@ export function Layout(): ReactNode {
             <IconDefenseTeam />
           </NavLink>
           <NavLink
-            className={clsx(styles.mobileTab, "focus-tab")}
+            className={clsx(
+              styles.mobileTab,
+              "active-darken-background",
+              "focus-toggle",
+            )}
             end
             to="/pokedex/"
             aria-label={t("navigation.pokedex")}
@@ -405,7 +408,7 @@ export function Layout(): ReactNode {
           </NavLink>
         </div>
         <aside className={styles.sidebar}>
-          <PageNav />
+          <PageNav position="left" />
         </aside>
         <dialog
           className={styles.dialog}
@@ -437,7 +440,7 @@ export function Layout(): ReactNode {
                 <IconClose />
               </button>
             </div>
-            <PageNav />
+            <PageNav position="right" />
           </div>
         </dialog>
         <div className={styles.content} id="content">

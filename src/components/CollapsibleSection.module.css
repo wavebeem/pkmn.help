@@ -10,7 +10,7 @@
   box-sizing: content-box;
   padding: var(--padding1);
   border-radius: 9999px;
-  background: var(--color-border3);
+  background: var(--color-border-disabled);
 }
 
 .summary {
@@ -43,8 +43,8 @@
   border-radius: 2px;
   outline: 2px solid transparent;
   box-shadow:
-    0 0 0 2px var(--color-bg1),
-    0 0 0 4px var(--color-fg1);
+    0 0 0 2px var(--color-bg-input),
+    0 0 0 4px var(--color-primary);
 }
 
 .details[open] {

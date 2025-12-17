@@ -1,27 +1,42 @@
 .tabBar {
   flex-wrap: wrap;
   display: grid;
-  padding-right: var(--padding2);
+
+  &[data-position="left"] {
+    padding-right: var(--padding2);
+  }
+
+  &[data-position="right"] {
+    padding-left: var(--padding2);
+  }
 }
 
 .tab {
   text-decoration: none;
   padding: var(--padding2) var(--padding4);
   text-align: start;
-  border-radius: 0 var(--border-radius-pill) var(--border-radius-pill) 0;
   color: inherit;
-  border-bottom: 1px solid var(--color-header-highlight);
+  border-bottom: 1px solid var(--color-sidebar-highlight);
   border-image: linear-gradient(
       to right,
-      transparent,
-      var(--color-header-highlight) var(--padding5) calc(100% - var(--padding5)),
-      transparent
+      transparent var(--padding4),
+      var(--color-sidebar-highlight) 0 calc(100% - var(--padding3)),
+      transparent 0
     )
     1;
   outline-color: currentColor;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr;
   gap: var(--padding2);
   align-items: center;
+
+  .tabBar[data-position="left"] & {
+    border-radius: 0 var(--border-radius-pill) var(--border-radius-pill) 0;
+  }
+
+  .tabBar[data-position="right"] & {
+    border-radius: var(--border-radius-pill) 0 0 var(--border-radius-pill);
+  }
 }
 
 .tab:has(+ .tab[aria-current="page"]) {
@@ -30,8 +45,9 @@
 }
 
 .tab[aria-current="page"] {
-  background: var(--color-header-text);
-  color: var(--color-header-dark);
+  background: var(--color-accent-bg);
+  color: var(--color-accent-fg);
+  box-shadow: inset 0 1px 0 0 var(--color-border-subtle);
   border-color: transparent;
   border-image-source: none;
   text-shadow: none;
@@ -53,13 +69,20 @@
   content: "";
   position: absolute;
   top: 50%;
-  right: -4px;
   width: 12px;
   height: 12px;
   translate: 0 -50%;
   border-radius: 9999px;
-  background: var(--color-header-text);
-  box-shadow: 0 0 0 3px var(--color-header-base);
+  background: var(--color-sidebar-text);
+  box-shadow: 0 0 0 3px var(--color-sidebar-base);
+}
+
+.tabBar[data-position="left"] .pleaseUpdate::after {
+  right: -4px;
+}
+
+.tabBar[data-position="right"] .pleaseUpdate::after {
+  left: -4px;
 }
 
 @media (width >= 60rem) {

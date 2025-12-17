@@ -1,5 +1,6 @@
 import { SelectHTMLAttributes, ReactNode } from "react";
 import styles from "./Select.module.css";
+import { IconSelectCaret } from "./icons";
 
 interface SelectProps
   extends Omit<SelectHTMLAttributes<HTMLSelectElement>, "className"> {
@@ -22,6 +23,7 @@ export function Select({
           className="active-darken focus-simple"
           {...props}
         />
+        <IconSelectCaret size={16} className={styles.icon} />
       </div>
       {helpText && <p className={styles.help}>{helpText}</p>}
     </div>

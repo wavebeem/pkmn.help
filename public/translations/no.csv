@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","Søk med navn, nu
 pokedex.search.help,Help,Hjelp
 pokedex.search.helpLong,"Help, search Pokédex","Hjelp, søk i Pokédexen"
 pokedex.search.notFound,No Pokémon found,Ingen Pokémon funnet
-pokedex.offense.text,Offense,Angrep
-pokedex.defense.text,Defense,Forsvar
 pokedex.cry.text,Cry,Gråt
 pokedex.shiny.text,Shiny,Skinnende
 pokedex.pagination.next,Next,Neste
@@ -137,9 +135,10 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,grass ingen
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Søk for Pokémon som bare er grass type, ingen andre type (f.eks. Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Tilbake til Pokédexen
+about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,Ta kontakt med meg
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hei, jeg er <homepage>Sage</homepage> (de/dem), og jeg har laget Pokémon Type Kalkulator (pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Plis send meg eposter om dine tanker og takker til <email>pkmn@wavebeem.com</email>.
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","Hei, jeg er <homepage>Sage</homepage> (de/dem), og jeg har laget Pokémon Type Kalkulator (pkmn.help)."
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Plis send meg eposter om dine tanker og takker til <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Instillinger
 more.settings.language.label,Language,Språk
 more.settings.language.default,Auto detect language,Automatisk oppdag språk
@@ -194,6 +193,7 @@ banners.updateReady.whatsNew,What’s new,Hva er nytt
 banners.updateReady.update,Update,Oppdatering
 general.loading,Loading…,Laster inn...
 general.copyLink,Copy link,Kopier lenke
+general.clearChoices,Clear choices,
 games.label,Game generation,Spillgenerasjon
 games.help,Use type effectiveness from different game generations.,Bruk type effektivitet fra forskjellige spillgenerasjoner.
 games.byID.gen1,Generation 1,Generasjon 1

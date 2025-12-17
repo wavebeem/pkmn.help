@@ -4,7 +4,10 @@
 
 .grid:is([data-kind="defense"], [data-kind="offense-single"]) {
   gap: var(--padding0);
-  grid-template-columns: repeat(auto-fill, minmax(var(--type-min-width), 1fr));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(calc(var(--type-min-width) + 24px), 1fr)
+  );
 
   &[data-large="true"] {
     gap: var(--padding1);
@@ -48,7 +51,7 @@
 }
 
 .connector {
-  border-bottom: 4px solid var(--color-border3);
+  border-bottom: 4px solid var(--color-border-disabled);
   width: var(--padding4);
   height: 0;
 }

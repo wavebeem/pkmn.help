@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","Recherche par nom
 pokedex.search.help,Help,Aide
 pokedex.search.helpLong,"Help, search Pokédex","Aide, rechercher dans le Pokédex"
 pokedex.search.notFound,No Pokémon found,Aucun Pokémon trouvé
-pokedex.offense.text,Offense,Offense
-pokedex.defense.text,Defense,Défense
 pokedex.cry.text,Cry,Cri
 pokedex.shiny.text,Shiny,Chromatique
 pokedex.pagination.next,Next,Suiv.
@@ -137,9 +135,10 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,plante aucun
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Rechercher les Pokémon qui ont seulement le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)."
 pokedexHelp.back,Back to Pokédex,Revenir au Pokédex
+about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,Me contacter
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Bonjour, je suis <homepage>Sage</homepage> (iel), et j'ai créé le Calculateur de types Pokémon (pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,Veuillez envoyer vos idées et vos remerciements à <email>pkmn@wavebeem.com</email>.
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","Bonjour, je suis <homepage>Sage</homepage> (iel), et j'ai créé le Calculateur de types Pokémon (pkmn.help)."
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Veuillez envoyer vos idées et vos remerciements à <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Paramètres
 more.settings.language.label,Language,Langage
 more.settings.language.default,Auto detect language,Détecter automatiquement la langue
@@ -194,6 +193,7 @@ banners.updateReady.whatsNew,What’s new,Quoi de neuf
 banners.updateReady.update,Update,Mettre à jour
 general.loading,Loading…,Chargement…
 general.copyLink,Copy link,Copier le lien
+general.clearChoices,Clear choices,
 games.label,Game generation,Génération du jeu
 games.help,Use type effectiveness from different game generations.,Utiliser les efficacités de types de différentes générations de jeux.
 games.byID.gen1,Generation 1,Génération 1

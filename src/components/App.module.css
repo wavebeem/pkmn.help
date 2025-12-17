@@ -3,7 +3,7 @@
 }
 
 .root {
-  --header-height: round(up, 4.5rem, 8px);
+  --header-height: round(up, 4rem, 8px);
   /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
   /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
   --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px);
@@ -31,21 +31,8 @@
   text-shadow: inherit;
 }
 
-.menuButton[aria-pressed="true"] {
-  background: var(--color-header-text);
-  color: var(--color-header-dark);
-  border-color: transparent;
-}
-
-@media (width >= 60rem) {
-  .menuButton {
-    display: none;
-  }
-
-  .sidebar {
-    overflow: auto;
-    scrollbar-color: var(--color-header-text) transparent;
-  }
+.dialog .menuButton {
+  border-color: var(--color-sidebar-highlight);
 }
 
 .header {
@@ -56,6 +43,7 @@
   flex-direction: column;
   gap: var(--padding3);
   color: var(--color-header-text);
+  /* BACKGROUND-COLOR must be set for JS to read */
   background: var(--color-header-base);
 }
 
@@ -64,8 +52,8 @@
   grid-area: sidebar;
   margin: 0;
   border: 0;
-  background: var(--color-header-base);
-  color: var(--color-header-text);
+  background: var(--color-sidebar-base);
+  color: var(--color-sidebar-text);
   padding-bottom: var(--padding4);
 }
 
@@ -74,23 +62,22 @@
   border: 0;
   padding: 0;
   padding-bottom: var(--padding4);
-  background: var(--color-header-base);
-  color: var(--color-header-text);
+  background: var(--color-sidebar-base);
+  color: var(--color-sidebar-text);
   position: fixed;
   top: 0;
   left: var(--padding5);
   max-width: initial;
   max-height: initial;
   width: calc(100dvw - var(--padding5));
-  height: 100dvh;
+  /* height: 100dvh; */
+  height: 100%;
   translate: 0 0;
   scale: 1;
   transition-duration: 200ms;
   transition-timing-function: ease;
   transition-property: translate, scale;
-  box-shadow:
-    inset 1px 0 0 var(--color-header-highlight),
-    var(--shadow-header);
+  box-shadow: var(--shadow-menu);
 }
 
 .dialog::backdrop {
@@ -109,60 +96,13 @@
 
 .content {
   grid-area: content;
-  color: var(--color-fg1);
-  background: var(--color-bg2);
-  scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
-}
-
-.easterEgg {
-  pointer-events: none;
-  position: fixed;
-  z-index: 1;
-  top: 50dvh;
-  left: 50dvw;
-  translate: -50% -50%;
-  scale: 80%;
-  rotate: x -30deg;
-  opacity: 0;
-  padding: 4rem;
-  border-radius: 9999px;
-  background: radial-gradient(
-    circle at center,
-    rgb(from var(--color-card-bg) r g b / 100%),
-    rgb(from var(--color-card-bg) r g b / 0%)
-  );
-  backdrop-filter: saturate(150%) blur(16px);
-  box-shadow:
-    inset 0 1px 0 var(--color-card-highlight),
-    inset 0 -1px 0 var(--color-card-highlight),
-    0 16px 32px 0 hsl(var(--hue-blue) 20% 10% / 20%);
-}
-
-.easterEgg[data-animate="true"] {
-  animation: 2s easterEgg_animation;
-}
-
-@media (prefers-reduced-motion) {
-  .easterEgg {
-    scale: 100% !important;
-    rotate: 0deg !important;
-  }
-
-  .easterEgg[data-animate="true"] {
-    animation: 4s easterEgg_animation !important;
-  }
-}
-
-@keyframes easterEgg_animation {
-  15%,
-  90% {
-    opacity: 1;
-    rotate: 0deg;
-    scale: 100%;
-  }
+  color: var(--color-primary);
+  background: var(--color-bg-base);
+  scrollbar-color: var(--color-scroll) transparent;
 }
 
 .headerContent {
+  flex: auto;
   width: 100%;
   display: flex;
   gap: var(--padding2);
@@ -195,19 +135,30 @@
     width: 100vw;
     height: var(--header-height);
     z-index: 2;
-    border-bottom: 1px solid var(--color-header-border);
+    border-bottom: 1px solid var(--color-border-subtle);
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
 
+.logo {
+  height: 24px;
+  width: 100%;
+}
+
 @media (width >= 60rem) {
   .headerContent {
     gap: var(--padding2);
-    padding: var(--padding2);
+    padding: var(--padding2) var(--padding3);
     align-items: center;
     max-width: initial;
+  }
+
+  .header {
+    border-bottom: 1px solid var(--color-header-border);
+    z-index: 1;
+    box-shadow: var(--shadow-tabs);
   }
 }
 
@@ -231,15 +182,37 @@
 }
 
 .title {
-  font-size: 1.75rem;
-  font-weight: bold;
-  color: #fff;
+  display: flex;
   margin: 0;
+  font-size: var(--font-size3);
+  font-size: 2rem;
+  text-transform: uppercase;
+  align-items: center;
+  line-height: 1;
+
+  > .justLogo {
+    margin-right: var(--padding2);
+  }
+  > .pkmn {
+    font-weight: 900;
+    align-self: end;
+  }
+  > .dot {
+    font-weight: 900;
+    /* font-size: 1.5rem;
+    align-self: end; */
+  }
+  > .help {
+    font-weight: 500;
+    /* align-self: end;
+    font-size: 1.5rem; */
+    text-transform: lowercase;
+  }
 }
 
 .subtitle {
   font-size: var(--font-size0);
-  font-weight: var(--weight-normal);
+  font-weight: var(--weight-medium);
   margin: 0;
 }
 
@@ -281,10 +254,6 @@
     font-size: 2rem;
   }
 
-  .title {
-    font-size: 2.5rem;
-  }
-
   .titleStack {
     flex-direction: row;
     align-items: center;
@@ -295,64 +264,6 @@
 .heading a {
   color: inherit;
   text-decoration: none;
-}
-
-.pokeball {
-  padding: 0;
-  border: 0;
-  background: transparent;
-  color: inherit;
-  color: white;
-  flex: none;
-  display: flex;
-  width: max-content;
-  height: max-content;
-  border-radius: 9999px;
-  animation-duration: 500ms;
-  animation-direction: alternate;
-  animation-name: pokeballJiggle;
-  animation-timing-function: ease-in-out;
-  animation-delay: 1s;
-  transition: transform 200ms;
-  transition-timing-function: ease-in-out;
-}
-
-@keyframes pokeballJiggle {
-  30% {
-    rotate: -20deg;
-    scale: 1.05;
-  }
-  70% {
-    rotate: 20deg;
-    scale: 0.95;
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .pokeball {
-    animation: none;
-    transition: none;
-  }
-}
-
-@media (hover) {
-  .pokeball:hover {
-    cursor: pointer;
-    filter: brightness(1.05);
-  }
-}
-
-.pokeball:active {
-  filter: var(--filter-darken);
-}
-
-.pokeball:focus {
-  outline: none;
-}
-
-.pokeball:focus-visible {
-  outline: 3px solid;
-  outline-offset: 2px;
 }
 
 .pleaseUpdate {
@@ -378,8 +289,8 @@
   a border that's sometimes transparent, it will make the tab bar look
   unbalanced.  */
   border-bottom: 1px solid var(--color-tabs-border);
-  background: var(--color-card-bg);
-  color: var(--color-fg1);
+  background: var(--color-tabs-base);
+  color: var(--color-tabs-text);
   gap: var(--padding2);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -391,7 +302,7 @@
   padding: var(--padding2);
   /* The border is incredibly subtle, so let's consider it part of the padding,
   so that the tab bar doesn't look lopsided... */
-  padding-bottom: calc(var(--padding2) - 1px);
+  /* padding-bottom: calc(var(--padding2) - 1px); */
   top: var(--header-height);
   z-index: 1;
 }
@@ -399,8 +310,9 @@
 .mobileTab {
   flex: auto;
   text-align: center;
-  border: 1px solid var(--color-border3);
+  border: 1px solid var(--color-tabs-highlight);
   border-radius: var(--border-radius2);
+  background: var(--color-tabs-base);
   color: inherit;
   text-decoration: none;
   padding: var(--padding1) var(--padding2);
@@ -412,7 +324,7 @@
 .mobileTab[aria-current="page"] {
   background: var(--color-accent-bg);
   color: var(--color-accent-fg);
-  border-color: var(--color-vibrant-border);
+  border-color: var(--color-border-subtle);
 }
 
 .mobileTab svg {
@@ -425,13 +337,14 @@
   }
 
   .root {
-    --header-height: round(up, 4rem, 1px);
+    --header-height: round(up, 3.5rem, 1px);
     --sidebar-width: round(up, 22ch, 16px);
 
     grid-template-areas:
-      "......   header "
+      "header   header "
       "sidebar  content";
     grid-template-columns: minmax(auto, var(--sidebar-width)) 1fr;
+    /* grid-template-rows: auto 1fr; */
     grid-template-rows: var(--header-height) 1fr;
 
     background: var(--color-header-base);
@@ -439,13 +352,11 @@
   }
 
   .content {
-    overflow: auto;
+    overflow: auto scroll;
     overscroll-behavior: none;
 
-    box-shadow:
-      0 0 0 1px var(--color-header-border),
-      var(--shadow-header);
-    border-top-left-radius: var(--border-radius3);
+    /* box-shadow: 0 0 0 1px var(--color-header-border);
+    border-top-left-radius: var(--border-radius3); */
   }
 
   .dialog {
@@ -453,7 +364,7 @@
   }
 
   .subtitle {
-    font-size: var(--font-size2);
+    font-size: var(--font-size0);
   }
 
   .mobileTabBar {
@@ -462,6 +373,10 @@
 }
 
 @media (width < 60rem) {
+  .logo {
+    height: 24px;
+  }
+
   .sidebar {
     display: none;
   }
@@ -471,5 +386,17 @@
     /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
     /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
     padding-bottom: var(--safe-area-max-inset-bottom);
+  }
+}
+
+@media (width >= 60rem) {
+  .menuButton {
+    display: none;
+  }
+
+  .sidebar {
+    overflow: auto auto;
+    scrollbar-color: var(--color-sidebar-text) transparent;
+    border-right: 1px solid var(--color-sidebar-border);
   }
 }

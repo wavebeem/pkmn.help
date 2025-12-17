@@ -157,7 +157,7 @@ export function ScreenDefense(): ReactNode {
           </div>
         </Flex>
 
-        <Flex gap="large">
+        <Flex gap="medium">
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
           <ClearChoices onClick={resetDefense} />
         </Flex>

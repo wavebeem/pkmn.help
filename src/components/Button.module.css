@@ -6,24 +6,26 @@
   justify-content: center;
   align-items: center;
   gap: var(--padding2);
+  /* stylelint-disable-next-line declaration-property-value-no-unknown */
+  min-height: round(up, 2.5rem, 1px);
 }
 
 .root:where(:not(:disabled)) {
-  border-color: var(--color-border1);
-  background: var(--background-button-bg);
-  color: var(--color-fg1);
+  border-color: transparent;
+  background: var(--background-button);
+  color: var(--color-primary);
   box-shadow: var(--shadow-button);
 }
 
 .root:disabled {
   pointer-events: none;
   background: transparent;
-  color: var(--color-fg4);
-  border-color: var(--color-border3);
+  color: var(--color-disabled);
+  border-color: var(--color-border-disabled);
 }
 
 .root[aria-pressed="true"] {
-  border-color: var(--color-vibrant-border);
+  border-color: var(--color-border-subtle);
   background: var(--color-accent-bg);
   color: var(--color-accent-fg);
 }

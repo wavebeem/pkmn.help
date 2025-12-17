@@ -129,12 +129,6 @@
       "helpLong": "帮助，搜索图鉴",
       "notFound": "未找到符合的宝可梦"
     },
-    "offense": {
-      "text": "攻击方"
-    },
-    "defense": {
-      "text": "防御方"
-    },
     "cry": {
       "text": "叫声"
     },

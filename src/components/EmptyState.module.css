@@ -1,8 +1,8 @@
 .root {
-  color: var(--color-fg4);
+  color: var(--color-disabled);
   font-size: 1.25rem;
   font-weight: var(--weight-medium);
-  border: 1px solid var(--color-border3);
+  border: 1px solid var(--color-border-disabled);
   border-radius: var(--border-radius3);
   padding: var(--padding4) var(--padding2);
   text-align: center;

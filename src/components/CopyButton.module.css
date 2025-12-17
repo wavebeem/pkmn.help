@@ -1,20 +1,19 @@
-.CopyButton {
+.root {
   padding: var(--padding1) var(--padding3);
   border-radius: var(--border-radius2);
-  border: 1px solid;
-  color: var(--color-fg1);
-  background: var(--background-button-bg);
+  color: var(--color-primary);
+  border: 1px solid transparent;
+  background: var(--background-button);
   box-shadow: var(--shadow-button);
-  border-color: var(--color-border1);
   display: flex;
   justify-content: center;
   align-items: center;
   gap: var(--padding2);
-}
 
-.CopyButton[data-state="copied"] {
-  box-shadow: none;
-  background: var(--color-bg2);
-  border-color: var(--color-border3);
-  color: var(--color-border3);
+  &[data-state="copied"] {
+    box-shadow: none;
+    background: var(--color-bg-base);
+    border-color: var(--color-border-disabled);
+    color: var(--color-border-disabled);
+  }
 }

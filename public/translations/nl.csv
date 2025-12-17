@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","Zoek op naam, num
 pokedex.search.help,Help,Hulp
 pokedex.search.helpLong,"Help, search Pokédex","Hulp, doorzoek Pokédex"
 pokedex.search.notFound,No Pokémon found,Geen Pokémon gevonden
-pokedex.offense.text,Offense,Offensief
-pokedex.defense.text,Defense,Defensief
 pokedex.cry.text,Cry,Stem
 pokedex.shiny.text,Shiny,Shiny
 pokedex.pagination.next,Next,Volgende
@@ -137,9 +135,10 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,gras geen
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Zoekt op Pokémon die alleen gras type zijn, geen 2e type (bijv. Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Terug naar Pokédex
+about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,Neem contact met mij op
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Hoi, ik ben <homepage>Sage</homepage> (die/hen), en ik heb de Pokémon Type Rekenmachine gemaakt (pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,E-mail alsjeblieft je gedachtes en bedankjes naar <email>pkmn@wavebeem.com</email>.
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","Hoi, ik ben <homepage>Sage</homepage> (die/hen), en ik heb de Pokémon Type Rekenmachine gemaakt (pkmn.help)."
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,E-mail alsjeblieft je gedachtes en bedankjes naar <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Instellingen
 more.settings.language.label,Language,Taal
 more.settings.language.default,Auto detect language,Automatisch taal detecteren
@@ -194,6 +193,7 @@ banners.updateReady.whatsNew,What’s new,Wat is nieuw
 banners.updateReady.update,Update,Update
 general.loading,Loading…,Laden...
 general.copyLink,Copy link,Kopieer link
+general.clearChoices,Clear choices,
 games.label,Game generation,Game generatie
 games.help,Use type effectiveness from different game generations.,Gebruik type effecitiviteit van verschillende game generaties.
 games.byID.gen1,Generation 1,Generatie 1

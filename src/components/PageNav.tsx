@@ -12,10 +12,14 @@ import {
   IconOffenseSingle,
   IconPokedex,
   IconSettings,
-} from "./Icon";
+} from "./icons";
 
-export function PageNav(): ReactNode {
-  const tabClass = clsx(styles.tab, "active-darken-background focus-header");
+export type PageNavProps = {
+  position: "left" | "right";
+};
+
+export function PageNav({ position }: PageNavProps): ReactNode {
+  const tabClass = clsx(styles.tab, "active-darken-background focus-toggle");
   const { needsAppUpdate, closeMenu } = useAppContext();
   const { t } = useTranslation();
 
@@ -29,17 +33,8 @@ export function PageNav(): ReactNode {
   );
 
   return (
-    <nav className={styles.tabBar}>
+    <nav className={styles.tabBar} data-position={position}>
       <span className={styles.tabSection}>{t("navigation.offense")}</span>
-      <NavLink
-        onClick={onNavLinkClick}
-        className={tabClass}
-        end
-        to="/offense/combination/"
-      >
-        <IconOffenseDual size={16} />
-        {t("offense.mode.combination")}
-      </NavLink>
       <NavLink
         onClick={onNavLinkClick}
         className={tabClass}
@@ -48,6 +43,15 @@ export function PageNav(): ReactNode {
       >
         <IconOffenseSingle size={16} />
         {t("offense.mode.single")}
+      </NavLink>
+      <NavLink
+        onClick={onNavLinkClick}
+        className={tabClass}
+        end
+        to="/offense/dual/"
+      >
+        <IconOffenseDual size={16} />
+        {t("offense.mode.combination")}
       </NavLink>
       <span className={styles.tabSection}>{t("navigation.defense")}</span>
       <NavLink

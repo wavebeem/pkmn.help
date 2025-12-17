@@ -5,7 +5,7 @@ import { EmptyState } from "../components/EmptyState";
 import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
-import { IconBack } from "../components/Icon";
+import { IconBack } from "../components/icons";
 import { Paginator } from "../components/Paginator";
 import { PlainBadge } from "../components/PlainBadge";
 import { useAppContext } from "../hooks/useAppContext";
@@ -107,7 +107,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
                   return (
                     <div key={i} className={styles.dexItem}>
                       <Flex direction="column">
-                        <FancyText tag="div" color="3" fontSize="large">
+                        <FancyText tag="div" color="secondary" fontSize="large">
                           {formatMonsterNumber(Number(number))}
                         </FancyText>
                         <FancyText

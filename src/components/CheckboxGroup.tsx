@@ -1,8 +1,8 @@
+import { clsx } from "clsx";
 import { ReactNode } from "react";
 import styles from "./CheckboxGroup.module.css";
-import { clsx } from "clsx";
-import { customProperties } from "../misc/customProperties";
 import { Flex } from "./Flex";
+import { IconCheck } from "./icons";
 
 export type CheckboxGroupOption<S extends string> = {
   id: S;
@@ -39,13 +39,11 @@ export function CheckboxGroup<S extends string>({
             key={option.id}
             data-id={option.id}
             className={clsx(styles.button, "select-none")}
-            style={customProperties({
-              "--type-color-bg": "var(--color-fg2)",
-              "--type-color": "var(--color-fg1)",
-            })}
           >
             <Flex tag="span" gap="medium" justify="flex-start" align="center">
-              <span className={styles.checkbox} />
+              <span className={styles.checkbox}>
+                <IconCheck size={24} strokeWidth={4} />
+              </span>
               {option.name}
             </Flex>
           </button>

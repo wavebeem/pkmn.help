@@ -12,40 +12,29 @@
   padding: 0.5rem 1rem;
   padding-right: 3rem;
   border-radius: var(--border-radius2);
-  background: var(--background-button-bg);
-  color: var(--color-fg1);
+  border: 1px solid transparent;
+  background: var(--background-button);
+  color: var(--color-primary);
   width: 100%;
-  border: 1px solid var(--color-border1);
   box-shadow: var(--shadow-button);
 }
 
-.select:after {
-  --_size: 8px;
-  --_border-size: 1.5px;
-  content: "";
+.icon {
   position: absolute;
-  width: var(--_size);
-  height: var(--_size);
-  border: var(--_border-size) solid;
-  border-top: 0;
-  border-left: 0;
-  rotate: 45deg;
-  right: 1rem;
-  top: calc(50% - var(--_size) + var(--_border-size));
-  pointer-events: none;
-  box-sizing: border-box;
+  right: calc(0.5rem + 4px);
+  top: calc(50% - 8px);
 }
 
 .select optgroup {
-  background: var(--color-button1b);
-  color: var(--color-fg1);
+  background: var(--color-button-bottom);
+  color: var(--color-primary);
   font-style: normal;
   font-weight: var(--weight-medium);
 }
 
 .select option {
-  background: var(--color-button1b);
-  color: var(--color-fg1);
+  background: var(--color-button-bottom);
+  color: var(--color-primary);
   font-weight: initial;
   border-radius: 0;
 }
@@ -57,6 +46,6 @@
 .help {
   margin: 0;
   padding-top: var(--padding1);
-  color: var(--color-fg3);
+  color: var(--color-secondary);
   font-size: var(--font-size0);
 }

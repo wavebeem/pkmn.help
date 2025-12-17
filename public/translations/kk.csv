@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","Аты, нөмі�
 pokedex.search.help,Help,Көмек
 pokedex.search.helpLong,"Help, search Pokédex","Көмек, Покедекс іздеу"
 pokedex.search.notFound,No Pokémon found,Бірде-бір Покемон табылмады
-pokedex.offense.text,Offense,Шабуыл
-pokedex.defense.text,Defense,Қорғаныс
 pokedex.cry.text,Cry,
 pokedex.shiny.text,Shiny,
 pokedex.pagination.next,Next,Келесі
@@ -137,9 +135,10 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,шөпті ештеңе
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Тек шөпті типі бар және екінші типі жоқ Покемонды іздеу (мысалға Танжелла, Чикорита, Лилигант)."
 pokedexHelp.back,Back to Pokédex,Покедекске қайту
+about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,Менімен Байланысыңыз
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Өтініш, өз ойларыңызды және рақметтеріңізді <email>pkmn@wavebeem.com</email> поштасына жіберіңіз."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help)."
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,"Өтініш, өз ойларыңызды және рақметтеріңізді <email>pkmn@wavebeem.com</email> поштасына жіберіңіз."
 more.settings.heading,Settings,Баптаулар
 more.settings.language.label,Language,Тіл
 more.settings.language.default,Auto detect language,Авто танылған тіл
@@ -194,6 +193,7 @@ banners.updateReady.whatsNew,What’s new,
 banners.updateReady.update,Update,Жаңарту
 general.loading,Loading…,Жүктелуде...
 general.copyLink,Copy link,
+general.clearChoices,Clear choices,
 games.label,Game generation,Ойын Ұрпақтары
 games.help,Use type effectiveness from different game generations.,Әртүрлі ойындар ұрпақтарынан типтік нәтижеліктерін қолдана аласыз.
 games.byID.gen1,Generation 1,Ұрпақ 1

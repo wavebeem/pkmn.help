@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types",按名称、编号
 pokedex.search.help,Help,帮助
 pokedex.search.helpLong,"Help, search Pokédex",帮助，搜索图鉴
 pokedex.search.notFound,No Pokémon found,未找到符合的宝可梦
-pokedex.offense.text,Offense,攻击方
-pokedex.defense.text,Defense,防御方
 pokedex.cry.text,Cry,叫声
 pokedex.shiny.text,Shiny,闪光
 pokedex.pagination.next,Next,下页
@@ -137,9 +135,10 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,草 无
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).",搜索只有草属性，没有第二属性的宝可梦（例：蔓藤怪、菊草叶、裙儿小姐）。
 pokedexHelp.back,Back to Pokédex,返回图鉴
+about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,联系我
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).",你好，我是 <homepage>Sage</homepage>（they/them)，是宝可梦属性计算器（pkmn.help）的作者。
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,请将你的想法和感谢寄到 <email>pkmn@wavebeem.com</email>。
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).",你好，我是 <homepage>Sage</homepage>（they/them)，是宝可梦属性计算器（pkmn.help）的作者。
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,请将你的想法和感谢寄到 <email>pkmn@wavebeem.com</email>。
 more.settings.heading,Settings,设定
 more.settings.language.label,Language,语言
 more.settings.language.default,Auto detect language,自动检测语言
@@ -194,6 +193,7 @@ banners.updateReady.whatsNew,What’s new,近期新闻
 banners.updateReady.update,Update,更新
 general.loading,Loading…,加载中……
 general.copyLink,Copy link,复制链接
+general.clearChoices,Clear choices,
 games.label,Game generation,游戏世代
 games.help,Use type effectiveness from different game generations.,更换对应游戏世代的属性相克。
 games.byID.gen1,Generation 1,第一世代

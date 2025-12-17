@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","Искать по
 pokedex.search.help,Help,Помощь
 pokedex.search.helpLong,"Help, search Pokédex","Помощь, искать Покедекс"
 pokedex.search.notFound,No Pokémon found,Нет найденных Покемонов
-pokedex.offense.text,Offense,Нападение
-pokedex.defense.text,Defense,Оборона
 pokedex.cry.text,Cry,
 pokedex.shiny.text,Shiny,
 pokedex.pagination.next,Next,След
@@ -137,9 +135,10 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,Травяной ничего
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Поиск Покемонов только с травяным типом (например, Танджелла, Чикорита, Лилигант)."
 pokedexHelp.back,Back to Pokédex,Назад к Покедексу
+about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,Свяжитесь Со Мной
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","Привет, Я <homepage>Sage</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (pkmn.help)."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,"Пожалуйста, пишите свои мысли и благодарности по Имейл адресу   <email>pkmn@wavebeem.com</email>."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","Привет, Я <homepage>Sage</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (pkmn.help)."
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,"Пожалуйста, пишите свои мысли и благодарности по Имейл адресу   <email>pkmn@wavebeem.com</email>."
 more.settings.heading,Settings,Настройки
 more.settings.language.label,Language,Язык
 more.settings.language.default,Auto detect language,Автоопределенный язык
@@ -194,6 +193,7 @@ banners.updateReady.whatsNew,What’s new,
 banners.updateReady.update,Update,Обновить
 general.loading,Loading…,Загрузка...
 general.copyLink,Copy link,
+general.clearChoices,Clear choices,
 games.label,Game generation,Поколение Игры
 games.help,Use type effectiveness from different game generations.,Используйте эффективности типов из разных поколений игр.
 games.byID.gen1,Generation 1,Поколение 1.

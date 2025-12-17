@@ -116,12 +116,6 @@
       "helpLong": "Hulp, doorzoek Pokédex",
       "notFound": "Geen Pokémon gevonden"
     },
-    "offense": {
-      "text": "Offensief"
-    },
-    "defense": {
-      "text": "Defensief"
-    },
     "cry": {
       "text": "Stem"
     },

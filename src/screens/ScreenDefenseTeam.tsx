@@ -31,7 +31,7 @@ import {
 } from "../misc/data-types";
 import { updateArrayAt } from "../misc/updateArrayAt";
 import styles from "./ScreenDefenseTeam.module.css";
-import { IconAdd, IconEdit, IconRemove } from "../components/Icon";
+import { IconAdd, IconEdit, IconRemove } from "../components/icons";
 import { IconButton } from "../components/IconButton";
 
 function setAbilityAt({
@@ -221,12 +221,7 @@ export function ScreenDefenseTeam(): ReactNode {
                         ))}
                       </Flex>
                       <Flex flex="auto" />
-                      <Flex
-                        direction="row"
-                        wrap
-                        justify="flex-end"
-                        gap="medium"
-                      >
+                      <Flex direction="row" wrap justify="flex-end" gap="small">
                         <IconButton
                           title={t("defense.team.edit")}
                           aria-label={t("defense.team.edit")}
@@ -361,7 +356,7 @@ export function ScreenDefenseTeam(): ReactNode {
           </Flex>
         </Flex>
 
-        <Flex gap="large">
+        <Flex gap="medium">
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
           <ClearChoices onClick={resetTeam} />
         </Flex>

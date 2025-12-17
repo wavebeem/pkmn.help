@@ -1,6 +1,35 @@
 # Changelog
 
+## 2025-12-16
+
+- Updated the visual style of the website a lot
+
+  - Hopefully you can better focus on the content of the website now
+
+- Pokédex entries now have separate buttons for Dual Offense and Single Offense
+  calculator links
+
+- Increase density of dual offense matchup results
+
+- Changed the order of Offense "Dual" and "Single" calculators
+
+  - Sorry! I realized the order wasn't consistent between offense and defense
+
+- The Pokémon easter egg button is now at the bottom of the "About" page
+
+  - Sorry for surprising everyone who clicked it on accident before
+
+- Improve text rendering on macOS
+
+- Renamed "Combination" to "Dual" in the Offense calculator URL
+
+- Fixed a text wrapping bug in Chinese in the team defense table
+
+- Fixed a text overflow bug in Russian in the dual offense matchup results
+
 ## 2025-12-15
+
+- Added a "clear choices" button to the calculators
 
 - Updated Pokédex with new Mega Evolutions
 

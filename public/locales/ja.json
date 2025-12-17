@@ -129,12 +129,6 @@
       "helpLong": "ヘルプ、Pokédexを検索",
       "notFound": "ポケモンが見つかりませんでした"
     },
-    "offense": {
-      "text": "こうげき"
-    },
-    "defense": {
-      "text": "ぼうぎょ"
-    },
     "cry": {
       "text": "鳴き声"
     },

@@ -1,10 +1,10 @@
 .pre {
   margin: 0;
   font-size: 1rem;
-  background: var(--color-bg1);
-  color: var(--color-fg1);
+  background: var(--color-bg-input);
+  color: var(--color-primary);
   padding: var(--padding2);
-  border: 1px solid var(--color-border2);
+  border: 1px solid var(--color-border-secondary);
   border-radius: var(--border-radius3);
   white-space: pre-wrap;
   word-break: break-all;

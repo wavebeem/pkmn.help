@@ -129,12 +129,6 @@
       "helpLong": "도움말, 포켓몬 도감 검색",
       "notFound": "포켓몬을 찾을 수 없습니다"
     },
-    "offense": {
-      "text": "공격"
-    },
-    "defense": {
-      "text": "방어"
-    },
     "cry": {
       "text": "울음소리"
     },

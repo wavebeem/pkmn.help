@@ -1,9 +1,13 @@
 :root {
-  background: var(--color-bg2);
-  color: var(--color-fg1);
   line-height: 1.5;
   /* https://developer.mozilla.org/en-US/docs/Web/CSS/-webkit-tap-highlight-color */
   -webkit-tap-highlight-color: transparent;
+
+  /* macOS doesn't actually support subpixel text rendering any more, but all
+  browser on that platform by default use a text rendering mode based on
+  subpixel rendering... that doesn't actually work, and thus causes text to be
+  slightly heavier than it should be... */
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
@@ -64,115 +68,8 @@ input {
   --weight-medium: 400;
 }
 
-.bg2 {
-  background-color: var(--color-bg2);
-}
-.bg1 {
-  background-color: var(--color-bg1);
-}
-
-.bg-poke {
-  background-color: var(--color-pokeball);
-}
-
-.fg4 {
-  color: var(--color-fg4);
-}
-.fg3 {
-  color: var(--color-fg3);
-}
-.fg2 {
-  color: var(--color-fg2);
-}
-.fg1 {
-  color: var(--color-fg1);
-}
-
-.border-vibrant2 {
-  border-color: var(--color-vibrant-border1);
-}
-.border-vibrant {
-  border-color: var(--color-vibrant-border);
-}
-
-.border3 {
-  border-color: var(--color-border3);
-}
-.border2 {
-  border-color: var(--color-border2);
-}
-.border1 {
-  border-color: var(--color-border1);
-}
-
-.grid {
-  display: grid;
-}
-
-.gap4 {
-  gap: 2rem;
-}
-.gap3 {
-  gap: 1rem;
-}
-.gap2 {
-  gap: 0.5rem;
-}
-.gap1 {
-  gap: 0.25rem;
-}
-
-.pre-wrap {
-  white-space: pre-wrap;
-}
-
-.word-break-all {
-  word-break: break-all;
-}
-
 .tabular-nums {
   font-variant-numeric: tabular-nums;
-}
-
-.fallback-content {
-  animation: 1s fallback-content-animation;
-  margin: 0 auto;
-  max-width: fit-content;
-  font-size: 1.25rem;
-}
-
-.fallback-content :any-link {
-  border-radius: var(--border-radius0);
-  color: var(--color-link);
-}
-
-.fallback-content :any-link:focus-visible {
-  outline: 2px solid;
-  outline-offset: 2px;
-}
-
-@keyframes fallback-content-animation {
-  0%,
-  99% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
-}
-
-.columns-type-selector {
-  display: grid;
-  gap: var(--padding2);
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(calc(var(--type-min-width) + 2.5rem + 2px), 1fr)
-  );
-}
-
-.button-bg {
-  background: var(--background-button-bg);
 }
 
 .content-wide {
@@ -181,14 +78,6 @@ input {
 
 .content-narrow {
   max-width: 44rem;
-}
-
-.button-shadow {
-  box-shadow: var(--shadow-button);
-}
-
-.inset-shadow {
-  box-shadow: var(--shadow-inset);
 }
 
 .no-pointer {
@@ -200,41 +89,8 @@ input {
   user-select: none;
 }
 
-.button-selected {
-  border-color: var(--color-vibrant-border);
-  background: var(--color-accent-bg);
-  color: var(--color-accent-fg);
-}
-
-.list-simple {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-left: var(--padding3);
-}
-
-@media (width >= 40rem) {
-  .grid-col2 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.subtle-hr {
-  border: 0;
-  background: var(--color-border3);
-  height: 1px;
-}
-
-.fit-content {
-  max-width: fit-content;
-}
-
 .select-none {
   user-select: none;
-}
-
-.pointer-none {
-  pointer-events: none;
 }
 
 .active-darken:active {
@@ -243,6 +99,6 @@ input {
 
 .active-darken-background:active {
   background-image: linear-gradient(
-    hsl(from var(--color-fg1) h s l / 5%) 0 100%
+    hsl(from var(--color-primary) h s l / 5%) 0 100%
   );
 }

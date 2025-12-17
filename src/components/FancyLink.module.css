@@ -5,11 +5,21 @@
 }
 
 @media (hover) {
-  .noUnderline:hover {
+  .noUnderline:not(.outlined):hover {
     text-decoration-line: underline;
   }
 }
 
 .noUnderline {
   text-decoration-line: none;
+}
+
+.outlined {
+  display: flex;
+  align-items: center;
+  gap: var(--padding1);
+
+  border: 1px solid rgb(from var(--color-link) r g b / 50%);
+  border-radius: var(--border-radius1);
+  padding-inline: var(--padding2);
 }

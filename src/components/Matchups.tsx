@@ -16,7 +16,7 @@ import { Divider } from "./Divider";
 import { EmptyState } from "./EmptyState";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
-import { IconPlus } from "./Icon";
+import { IconPlus } from "./icons";
 import styles from "./Matchups.module.css";
 import { Meter } from "./Meter";
 import { PlainBadge } from "./PlainBadge";
@@ -189,8 +189,9 @@ export function Matchups({
                           return x.types.map((t, i) => {
                             return (
                               <Fragment key={i}>
-                                {i > 0 ? <IconPlus /> : null}
+                                {i > 0 ? <IconPlus size={16} /> : null}
                                 <Badge
+                                  size="small"
                                   key={`type-${t}`}
                                   type={t}
                                   variant="ghost"

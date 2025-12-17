@@ -98,8 +98,6 @@ pokedex.search.description,"Search by name, number, or types","이름, 번호 �
 pokedex.search.help,Help,도움말
 pokedex.search.helpLong,"Help, search Pokédex","도움말, 포켓몬 도감 검색"
 pokedex.search.notFound,No Pokémon found,포켓몬을 찾을 수 없습니다
-pokedex.offense.text,Offense,공격
-pokedex.defense.text,Defense,방어
 pokedex.cry.text,Cry,울음소리
 pokedex.shiny.text,Shiny,색이 다른 포켓몬
 pokedex.pagination.next,Next,다음
@@ -137,9 +135,10 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,풀 없음
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","단일 풀 타입 포켓몬을 검색합니다.(예: 덩쿠리, 치코리타, 드레디어)."
 pokedexHelp.back,Back to Pokédex,포켓몬 도감으로 돌아가기
+about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,문의
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), and I made Pokémon Type Calculator (pkmn.help).","안녕하세요, 저는 <homepage>Sage</homepage> (they/them으로 지칭해 주세요) 이고 Pokémon Type Calculator (pkmn.help)를 만들었습니다."
-more.contact.email,Please email your thoughts and thank-yous to <email>pkmn@wavebeem.com</email>.,여러분의 생각과 감사를 <email>pkmn@wavebeem.com</email> 로 보내주세요.
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","안녕하세요, 저는 <homepage>Sage</homepage> (they/them으로 지칭해 주세요) 이고 Pokémon Type Calculator (pkmn.help)를 만들었습니다."
+more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,여러분의 생각과 감사를 <email>pkmn@wavebeem.com</email> 로 보내주세요.
 more.settings.heading,Settings,설정
 more.settings.language.label,Language,언어
 more.settings.language.default,Auto detect language,언어 자동 감지
@@ -194,6 +193,7 @@ banners.updateReady.whatsNew,What’s new,새로운 기능
 banners.updateReady.update,Update,업데이트
 general.loading,Loading…,로딩 중...
 general.copyLink,Copy link,링크 복사
+general.clearChoices,Clear choices,
 games.label,Game generation,세대
 games.help,Use type effectiveness from different game generations.,다른 세대의 상성 사용하기
 games.byID.gen1,Generation 1,1세대

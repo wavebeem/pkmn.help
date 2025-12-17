@@ -1,21 +1,21 @@
 .dexItem {
   padding: var(--padding2);
-  border-bottom: 1px solid var(--color-border3);
+  border-bottom: 1px solid var(--color-border-disabled);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: var(--padding1);
-  border-image: linear-gradient(
+  /* border-image: linear-gradient(
       to right,
       transparent,
-      var(--color-border3) 64px calc(100% - 64px),
+      var(--color-border-disabled) 64px calc(100% - 64px),
       transparent
     )
-    1;
+    1; */
 }
 
 .dexItem:first-of-type {
-  border-top: 1px solid var(--color-border3);
+  border-top: 1px solid var(--color-border-disabled);
 }
 
 @media (width >= 40rem) {

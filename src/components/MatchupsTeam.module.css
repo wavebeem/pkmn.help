@@ -1,12 +1,22 @@
 .root {
-  --border: var(--color-border2);
   border-radius: var(--border-radius1);
 }
 
 .tableWrapper {
   overflow-x: auto;
-  border: 1px solid var(--color-border2);
-  border-radius: var(--border-radius1);
+  padding: var(--padding1);
+  border-radius: var(--border-radius2);
+
+  border: 1px solid transparent;
+  background:
+    radial-gradient(var(--color-card-bg)) padding-box,
+    radial-gradient(
+        50% 50% at top center,
+        var(--color-card-highlight),
+        var(--color-card-bg)
+      )
+      border-box var(--color-card-bg);
+  box-shadow: 0 1px 0 0 var(--color-card-shadow);
 }
 
 .tableWrapper[data-scroll-start="false"] {
@@ -41,7 +51,7 @@
 }
 
 .td:not([data-count="0"]) {
-  background: var(--color-bg1);
+  background: var(--color-bg-input);
 }
 
 .td[data-count="0"] {
@@ -50,10 +60,9 @@
 
 .thCorner,
 .thTop {
-  padding: var(--padding3) var(--padding2);
+  padding: var(--padding0) var(--padding2);
   font-weight: var(--weight-medium);
-  background-color: var(--color-bg2);
-  background-image: linear-gradient(transparent, var(--color-bg-ghost));
+  background-color: var(--color-card-bg);
   border-radius: var(--border-radius0);
 }
 

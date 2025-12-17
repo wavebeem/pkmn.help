@@ -2,7 +2,7 @@ import { clsx } from "clsx";
 import { ReactNode, useState } from "react";
 import styles from "./CopyButton.module.css";
 import { sleep } from "../misc/sleep";
-import { IconCopy } from "./Icon";
+import { IconCopy } from "./icons";
 
 export interface CopyButtonProps {
   text: string;
@@ -19,7 +19,7 @@ export function CopyButton({ text, children }: CopyButtonProps): ReactNode {
       type="button"
       data-state={state}
       aria-disabled={disabled}
-      className={clsx("active-darken", "focus-tab", styles.CopyButton)}
+      className={clsx("active-darken", "focus-tab", styles.root)}
       onClick={async (event) => {
         try {
           event.preventDefault();
