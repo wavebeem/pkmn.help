@@ -1,7 +1,6 @@
+import { clsx } from "clsx";
 import { ReactNode } from "react";
 import styles from "./CheckboxGroup.module.css";
-import { clsx } from "clsx";
-import { customProperties } from "../misc/customProperties";
 import { Flex } from "./Flex";
 import { IconCheck } from "./icons";
 
