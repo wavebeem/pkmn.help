@@ -68,69 +68,6 @@ input {
   --weight-medium: 400;
 }
 
-.bg2 {
-  background-color: var(--color-bg-base);
-}
-.bg1 {
-  background-color: var(--color-bg-input);
-}
-
-.bg-poke {
-  background-color: var(--color-pokeball);
-}
-
-.fg4 {
-  color: var(--color-disabled);
-}
-.fg3 {
-  color: var(--color-secondary);
-}
-.fg1 {
-  color: var(--color-primary);
-}
-
-.border-vibrant2 {
-  border-color: var(--color-border-vibrant);
-}
-.border-vibrant {
-  border-color: var(--color-border-subtle);
-}
-
-.border3 {
-  border-color: var(--color-border-disabled);
-}
-.border2 {
-  border-color: var(--color-border-secondary);
-}
-.border1 {
-  border-color: var(--color-border-primary);
-}
-
-.grid {
-  display: grid;
-}
-
-.gap4 {
-  gap: 2rem;
-}
-.gap3 {
-  gap: 1rem;
-}
-.gap2 {
-  gap: 0.5rem;
-}
-.gap1 {
-  gap: 0.25rem;
-}
-
-.pre-wrap {
-  white-space: pre-wrap;
-}
-
-.word-break-all {
-  word-break: break-all;
-}
-
 .tabular-nums {
   font-variant-numeric: tabular-nums;
 }
@@ -143,14 +80,6 @@ input {
   max-width: 44rem;
 }
 
-.button-shadow {
-  box-shadow: var(--shadow-button);
-}
-
-.inset-shadow {
-  box-shadow: var(--shadow-inset);
-}
-
 .no-pointer {
   pointer-events: none;
   user-select: none;
@@ -160,41 +89,8 @@ input {
   user-select: none;
 }
 
-.button-selected {
-  border-color: var(--color-border-subtle);
-  background: var(--color-accent-bg);
-  color: var(--color-accent-fg);
-}
-
-.list-simple {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  padding-left: var(--padding3);
-}
-
-@media (width >= 40rem) {
-  .grid-col2 {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.subtle-hr {
-  border: 0;
-  background: var(--color-border-disabled);
-  height: 1px;
-}
-
-.fit-content {
-  max-width: fit-content;
-}
-
 .select-none {
   user-select: none;
-}
-
-.pointer-none {
-  pointer-events: none;
 }
 
 .active-darken:active {
@@ -206,8 +102,3 @@ input {
     hsl(from var(--color-primary) h s l / 5%) 0 100%
   );
 }
-
-/* TODO: Filters are slow, and I'm using too many of them... */
-/* * {
-  filter: none !important;
-} */

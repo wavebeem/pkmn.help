@@ -14,7 +14,7 @@
   --color-secondary: hsl(var(--hue-ui) 15% 72%);
   --color-disabled: hsl(var(--hue-ui) 15% 62%);
 
-  --color-accent-bg: hsl(var(--hue-ui) 5% 72%);
+  --color-accent-bg: hsl(var(--hue-ui) 5% 80%);
   --color-accent-fg: hsl(var(--hue-ui) 5% 14%);
 
   --color-header-base: hsl(var(--hue-red) 60% 35%);
@@ -40,7 +40,6 @@
   --color-border-secondary: hsl(var(--hue-ui) 5% 30%);
   --color-border-disabled: hsl(var(--hue-ui) 5% 24%);
   --color-border-subtle: hsl(var(--hue-ui) 5% 100% / 20%);
-  --color-border-vibrant: hsl(var(--hue-ui) 5% 100% / 80%);
 
   --color-scroll: hsl(var(--hue-ui) 25% 82%);
 

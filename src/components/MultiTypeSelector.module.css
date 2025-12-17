@@ -22,7 +22,7 @@
 
 .button[aria-pressed="true"] {
   box-shadow: var(--shadow-button);
-  border-color: var(--color-border-vibrant);
+  border-color: var(--color-border-subtle);
   background: var(--type-color-bg);
   color: #fff;
 }

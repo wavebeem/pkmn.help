@@ -40,7 +40,6 @@
   --color-border-secondary: hsl(var(--hue-ui) 5% 75%);
   --color-border-disabled: hsl(var(--hue-ui) 5% 85%);
   --color-border-subtle: hsl(var(--hue-red) 0% 0% / 10%);
-  --color-border-vibrant: hsl(var(--hue-red) 0% 0% / 60%);
 
   --color-scroll: hsl(var(--hue-red) 70% 40%);
 

@@ -2,7 +2,7 @@
 
 ## ????-??-??
 
-- Updated logo and theme
+- Updated theme
 
 - Improve text rendering on macOS
 

@@ -34,6 +34,6 @@
   border-radius: inherit;
   width: var(--meter-width);
   background-color: var(--meter-color);
-  box-shadow: inset 0 0 0 1px var(--color-border-vibrant);
+  box-shadow: inset 0 0 0 1px var(--color-border-subtle);
   transition: width 200ms;
 }
