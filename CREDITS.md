@@ -1,59 +1,61 @@
 # Credits
 
-## Danish translation
+## Translation
+
+### Danish
 
 - Simon
 
-## Russian translation
+### Russian
 
 - Abylay Zhandarbek
 
-## Kazakh translation
+### Kazakh
 
 - Abylay Zhandarbek
 
-## Portuguese (Portugal) translation
+### Portuguese (Portugal)
 
 - Lucas Lopes
 
 - Bernardo Ferreira
 
-## Portuguese (Brazil) translation
+### Portuguese (Brazil)
 
 - Vio
 
-## Simplified Chinese translation
+### Simplified Chinese
 
 - umbresp
 - Dragonify
 - Tin
 
-## Traditional Chinese translation
+### Traditional Chinese
 
 - umbresp
 - Nan Zheng
 
-## Norwegian translation
+### Norwegian
 
 - Sarah Aa
 
-## Romanian translation
+### Romanian
 
 - Diana Florea
 - Adam Hayes
 
-## Polish translation
+### Polish
 
 - Sebastian Biegaj
 - CreationQ
 
-## French translation
+### French
 
 - Kaishidow
 - Drakoshen
 - Azertor
 
-## German translation
+### German
 
 - Robin
 - Enri
@@ -61,11 +63,11 @@
 - Cozzzy
 - Luzifer Senpai
 
-## Dutch translation
+### Dutch
 
 - Julking
 
-## Italian translation
+### Italian
 
 - dama99
 - Gabriele Giugno
@@ -74,17 +76,17 @@
 - Mathieu Licata
 - Stivenz
 
-## Korean translation
+### Korean
 
 - BetterBritter
 - Eric Marriott
 
-## Japanese translation
+### Japanese
 
 - Grant Hussey
 - Minamorl
 
-## Vietnamese translation
+### Vietnamese
 
 - Nguyen Minh Khang
 
@@ -97,6 +99,6 @@
 - Jansjo
 - Marten
 
-## Miscellaneous
+## Other
 
-Several anonymous Poké Fans
+Several anonymous contributors have helped along the way

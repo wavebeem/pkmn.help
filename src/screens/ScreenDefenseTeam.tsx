@@ -356,7 +356,7 @@ export function ScreenDefenseTeam(): ReactNode {
           </Flex>
         </Flex>
 
-        <Flex gap="large">
+        <Flex gap="medium">
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
           <ClearChoices onClick={resetTeam} />
         </Flex>

@@ -45,4 +45,6 @@ export {
   Trash2 as IconRemove,
   // Checkboxes
   Check as IconCheck,
+  // Tada
+  PartyPopper as IconTada,
 } from "lucide-react";

@@ -10,7 +10,7 @@ import { Flex } from "../components/Flex";
 import { useAppContext } from "../hooks/useAppContext";
 import { resetApp } from "../misc/resetApp";
 import { FancyLink } from "../components/FancyLink";
-import { IconReset } from "../components/icons";
+import { IconReset, IconTada } from "../components/icons";
 import { Pokemon } from "../misc/data-types";
 import styles from "./ScreenAbout.module.css";
 import { randomItem } from "../misc/random";
@@ -268,6 +268,7 @@ export function ScreenAbout(): ReactNode {
                 setEasterEgg(pkmn);
               }}
             >
+              <IconTada size={16} />
               {t("about.easterEgg.button")}
             </Button>
           </Flex>
