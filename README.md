@@ -2,7 +2,7 @@
 
 **👉 <https://www.pkmn.help>**
 
-# pkmn.help
+# PKMN.help
 
 _Pokémon Type Calculator_
 

@@ -37,7 +37,7 @@ export function TranslationCard({ lang }: TranslationCardProps): ReactNode {
         <ExternalLink
           aria-labelledby={titleId}
           href={`/translations/${lang}.csv`}
-          download={`pkmn.help - ${languageNamesEnglish[lang]}.csv`}
+          download={`PKMN.help - ${languageNamesEnglish[lang]}.csv`}
         >
           Download CSV
         </ExternalLink>

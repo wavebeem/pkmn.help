@@ -277,7 +277,7 @@ export function Layout(): ReactNode {
     ],
   );
 
-  usePageTitle(`pkmn.help \u2013 ${t("title")}`);
+  usePageTitle(`PKMN.help \u2013 ${t("title")}`);
   useMetaThemeColor({ dataTheme, themeColor });
   useScrollToFragment();
   useRouteChangeFixes();
@@ -303,14 +303,14 @@ export function Layout(): ReactNode {
                   {/* <img
                     className={styles.logo}
                     src={new URL("/logo-simple.svg", publicPath).href}
-                    alt="pkmn.help"
+                    alt="PKMN.help"
                     width={300}
                     height={40}
                   /> */}
                   {/* <img
                     className={styles.logo}
                     src={new URL("/text-logo.svg", publicPath).href}
-                    alt="pkmn.help"
+                    alt="PKMN.help"
                     width={300}
                     height={76}
                   /> */}

@@ -161,8 +161,8 @@ export default defineConfig((env) => {
         mode: env.mode !== "development" ? "production" : "development",
         registerType: "prompt",
         manifest: {
-          name: "pkmn.help",
-          short_name: "pkmn.help",
+          name: "PKMN.help",
+          short_name: "PKMN.help",
           lang: "en",
           start_url: "/",
           orientation: "any",

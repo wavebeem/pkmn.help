@@ -232,7 +232,7 @@ export function ScreenAbout(): ReactNode {
               </FancyText>
 
               <FancyText tag="p">
-                pkmn.help &copy; 2013&ndash;{year} {}
+                PKMN.help &copy; 2013&ndash;{year} {}
                 <ExternalLink href="https://www.wavebeem.com">
                   Sage Fennel Mock
                 </ExternalLink>
