@@ -22,6 +22,11 @@
   --color-header-border: hsl(var(--hue-red) 60% 5%);
   --color-header-text: #fff;
 
+  --color-tabs-base: hsl(var(--hue-ui) 5% 22%);
+  --color-tabs-highlight: hsl(var(--hue-ui) 5% 30%);
+  --color-tabs-border: hsl(var(--hue-ui) 5% 30%);
+  --color-tabs-text: hsl(var(--hue-ui) 50% 92%);
+
   --color-sidebar-base: hsl(var(--hue-ui) 5% 10%);
   --color-sidebar-highlight: hsl(var(--hue-ui) 5% 20%);
   --color-sidebar-border: hsl(var(--hue-ui) 5% 20%);

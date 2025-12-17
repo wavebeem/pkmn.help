@@ -21,6 +21,11 @@
   --color-header-border: hsl(0 0% 20%);
   --color-header-text: hsl(0 0% 82%);
 
+  --color-tabs-base: hsl(0 0% 15%);
+  --color-tabs-highlight: hsl(0 0% 25%);
+  --color-tabs-border: hsl(0 0% 25%);
+  --color-tabs-text: hsl(0 0% 82%);
+
   --color-sidebar-base: hsl(0 0% 0%);
   --color-sidebar-highlight: hsl(0 0% 10%);
   --color-sidebar-border: hsl(0 0% 10%);
