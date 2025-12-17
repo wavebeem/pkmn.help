@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import styles from "./ClearChoices.module.css";
-import { IconReset } from "./Icon";
+import { IconReset } from "./icons";
 import { clsx } from "clsx";
 import { JSX } from "react";
 
