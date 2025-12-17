@@ -292,11 +292,18 @@ export function Layout(): ReactNode {
                 <h1 className={styles.title}>
                   <img
                     className={styles.logo}
+                    src={new URL("/logo-simple.svg", publicPath).href}
+                    alt="pkmn.help"
+                    width={300}
+                    height={40}
+                  />
+                  {/* <img
+                    className={styles.logo}
                     src={new URL("/text-logo.svg", publicPath).href}
                     alt="pkmn.help"
                     width={300}
                     height={76}
-                  />
+                  /> */}
                 </h1>
                 <p className={styles.subtitle}>{t("title")}</p>
               </hgroup>

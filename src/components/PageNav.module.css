@@ -45,8 +45,10 @@
 }
 
 .tab[aria-current="page"] {
-  background: var(--color-sidebar-text);
-  color: var(--color-sidebar-dark);
+  background: var(--color-accent-bg);
+  color: var(--color-accent-fg);
+  box-shadow: inset -1px 1px 0 0 var(--color-border-subtle);
+  border: 0;
   border-color: transparent;
   border-image-source: none;
   text-shadow: none;

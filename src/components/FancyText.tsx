@@ -7,7 +7,7 @@ export interface FancyTextProps extends HTMLAttributes<HTMLElement> {
   textAlign?: "left" | "center" | "right";
   fontWeight?: "normal" | "medium";
   fontSize?: "small" | "medium" | "large" | "xlarge";
-  color?: "primary" | "secondary" | "3";
+  color?: "primary" | "secondary" | "disabled";
   inline?: boolean;
   tabularNums?: boolean;
 }

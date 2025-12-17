@@ -2,10 +2,10 @@
   --hue-ui: var(--hue-gold);
 
   --color-bg-input: hsl(var(--hue-ui) 5% 100%);
-  --color-bg-base: hsl(var(--hue-ui) 5% 90%);
+  --color-bg-base: hsl(var(--hue-ui) 5% 92%);
   --color-bg-ghost: hsl(var(--hue-ui) 5% 98%);
 
-  --color-card-bg: hsl(var(--hue-ui) 5% 94%);
+  --color-card-bg: hsl(var(--hue-ui) 5% 96%);
   --color-card-highlight: hsl(var(--hue-ui) 5% 100%);
   --color-card-shadow: hsl(var(--hue-ui) 5% 85%);
 
@@ -16,17 +16,15 @@
   --color-accent-bg: hsl(var(--hue-red) 70% 40%);
   --color-accent-fg: #fff;
 
-  --color-header-dark: hsl(var(--hue-red) 60% 20%);
   --color-header-base: hsl(var(--hue-red) 60% 40%);
   --color-header-highlight: hsl(var(--hue-red) 40% 55%);
   --color-header-border: hsl(var(--hue-red) 60% 7%);
   --color-header-text: #fff;
 
-  --color-sidebar-dark: hsl(var(--hue-red) 5% 100%);
-  --color-sidebar-base: hsl(var(--hue-red) 5% 100%);
-  --color-sidebar-highlight: hsl(var(--hue-red) 40% 85%);
-  --color-sidebar-text: hsl(var(--hue-red) 60% 40%);
-  --color-sidebar-border: hsl(var(--hue-red) 40% 65%);
+  --color-sidebar-base: hsl(var(--hue-ui) 5% 88%);
+  --color-sidebar-highlight: hsl(var(--hue-ui) 5% 82%);
+  --color-sidebar-text: hsl(var(--hue-ui) 15% 7%);
+  --color-sidebar-border: hsl(var(--hue-ui) 5% 82%);
 
   --color-button-top: hsl(var(--hue-ui) 5% 100%);
   --color-button-bottom: hsl(var(--hue-ui) 5% 95%);

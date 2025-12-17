@@ -31,8 +31,16 @@ pre.FancyText[data-font-size] {
   font-size: var(--font-size0);
 }
 
-.FancyText[data-color="1"] {
+.FancyText[data-color="primary"] {
   color: var(--color-primary);
+}
+
+.FancyText[data-color="secondary"] {
+  color: var(--color-secondary);
+}
+
+.FancyText[data-color="disabled"] {
+  color: var(--color-disabled);
 }
 
 .FancyText[data-inline] {

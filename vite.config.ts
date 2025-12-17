@@ -222,6 +222,7 @@ export default defineConfig((env) => {
           "locales/*.json",
           "manifest.json",
           "text-logo.svg",
+          "logo-simple.svg",
           "app-logo.svg",
           "app-icon-regular-*.png",
           "app-icon-*.png",

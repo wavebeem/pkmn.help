@@ -3,7 +3,7 @@
 }
 
 .root {
-  --header-height: round(up, 4.5rem, 8px);
+  --header-height: round(up, 4rem, 8px);
   /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
   /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
   --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px);
@@ -31,19 +31,8 @@
   text-shadow: inherit;
 }
 
-.menuButton[aria-pressed="true"] {
-  background: var(--color-header-text);
-  color: var(--color-header-dark);
-  border-color: transparent;
-}
-
 .dialog .menuButton {
   border-color: var(--color-sidebar-highlight);
-
-  &[aria-pressed="true"] {
-    background: var(--color-sidebar-text);
-    color: var(--color-sidebar-dark);
-  }
 }
 
 .header {
@@ -152,10 +141,15 @@
   }
 }
 
+.logo {
+  height: 24px;
+  width: 100%;
+}
+
 @media (width >= 60rem) {
   .headerContent {
     gap: var(--padding2);
-    padding: var(--padding2) var(--padding3);
+    padding: var(--padding3) var(--padding3);
     align-items: center;
     max-width: initial;
   }
@@ -182,11 +176,6 @@
   display: flex;
   flex-direction: column;
   gap: var(--padding1);
-}
-
-.logo {
-  width: auto;
-  height: calc(var(--header-height) - var(--padding3));
 }
 
 .title {
@@ -306,9 +295,9 @@
 }
 
 .mobileTab[aria-current="page"] {
-  background: var(--color-sidebar-text);
-  color: var(--color-sidebar-dark);
-  border-color: transparent;
+  background: var(--color-accent-bg);
+  color: var(--color-accent-fg);
+  border-color: var(--color-border-subtle);
 }
 
 .mobileTab svg {
@@ -328,6 +317,7 @@
       "header   header "
       "sidebar  content";
     grid-template-columns: minmax(auto, var(--sidebar-width)) 1fr;
+    /* grid-template-rows: auto 1fr; */
     grid-template-rows: var(--header-height) 1fr;
 
     background: var(--color-header-base);
@@ -357,7 +347,7 @@
 
 @media (width < 60rem) {
   .logo {
-    height: calc(var(--header-height) - var(--padding4));
+    height: 24px;
   }
 
   .sidebar {
