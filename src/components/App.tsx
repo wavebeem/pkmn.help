@@ -291,12 +291,22 @@ export function Layout(): ReactNode {
               <hgroup className={styles.titleStack}>
                 <h1 className={styles.title}>
                   <img
+                    className={styles.justLogo}
+                    src={new URL("/app-logo.svg", publicPath).href}
+                    alt=""
+                    width={24}
+                    height={24}
+                  />
+                  <span className={styles.pkmn}>pkmn</span>
+                  <span className={styles.dot}>.</span>
+                  <span className={styles.help}>help</span>
+                  {/* <img
                     className={styles.logo}
                     src={new URL("/logo-simple.svg", publicPath).href}
                     alt="pkmn.help"
                     width={300}
                     height={40}
-                  />
+                  /> */}
                   {/* <img
                     className={styles.logo}
                     src={new URL("/text-logo.svg", publicPath).href}
