@@ -14,7 +14,7 @@
   width: var(--_size);
   height: var(--_size);
   line-height: var(--_size);
-  border: 1px solid var(--color-border2);
+  border: 1px solid var(--color-border-secondary);
   background: var(--color-bg-input);
   color: var(--color-secondary);
   font-size: 2rem;

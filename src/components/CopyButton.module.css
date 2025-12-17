@@ -14,6 +14,6 @@
 .CopyButton[data-state="copied"] {
   box-shadow: none;
   background: var(--color-bg-base);
-  border-color: var(--color-border3);
-  color: var(--color-border3);
+  border-color: var(--color-border-disabled);
+  color: var(--color-border-disabled);
 }

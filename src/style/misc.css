@@ -90,20 +90,20 @@ input {
 }
 
 .border-vibrant2 {
-  border-color: var(--color-vibrant-border1);
+  border-color: var(--color-border-vibrant);
 }
 .border-vibrant {
-  border-color: var(--color-vibrant-border);
+  border-color: var(--color-border-subtle);
 }
 
 .border3 {
-  border-color: var(--color-border3);
+  border-color: var(--color-border-disabled);
 }
 .border2 {
-  border-color: var(--color-border2);
+  border-color: var(--color-border-secondary);
 }
 .border1 {
-  border-color: var(--color-border1);
+  border-color: var(--color-border-primary);
 }
 
 .grid {
@@ -161,7 +161,7 @@ input {
 }
 
 .button-selected {
-  border-color: var(--color-vibrant-border);
+  border-color: var(--color-border-subtle);
   background: var(--color-accent-bg);
   color: var(--color-accent-fg);
 }
@@ -181,7 +181,7 @@ input {
 
 .subtle-hr {
   border: 0;
-  background: var(--color-border3);
+  background: var(--color-border-disabled);
   height: 1px;
 }
 

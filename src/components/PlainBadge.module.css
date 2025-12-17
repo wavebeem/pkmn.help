@@ -1,6 +1,6 @@
 .root {
   border-radius: var(--border-radius0);
-  border: 1px solid var(--color-border2);
+  border: 1px solid var(--color-border-secondary);
   background: var(--color-bg-input);
 }
 

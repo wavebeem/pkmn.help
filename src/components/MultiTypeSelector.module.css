@@ -22,7 +22,7 @@
 
 .button[aria-pressed="true"] {
   box-shadow: var(--shadow-button);
-  border-color: var(--color-vibrant-border1);
+  border-color: var(--color-border-vibrant);
   background: var(--type-color-bg);
   color: #fff;
 }
@@ -45,7 +45,7 @@
 }
 
 .checkbox {
-  --_checkbox-border: var(--color-vibrant-border);
+  --_checkbox-border: var(--color-border-subtle);
   -webkit-appearance: none;
   appearance: none;
   box-sizing: border-box;

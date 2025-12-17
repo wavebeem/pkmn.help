@@ -10,7 +10,7 @@
   box-sizing: content-box;
   padding: var(--padding1);
   border-radius: 9999px;
-  background: var(--color-border3);
+  background: var(--color-border-disabled);
 }
 
 .summary {

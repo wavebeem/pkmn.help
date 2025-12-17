@@ -28,19 +28,18 @@
   --color-sidebar-text: hsl(var(--hue-red) 60% 40%);
   --color-sidebar-border: hsl(var(--hue-red) 40% 75%);
 
-  --color-button1: hsl(var(--hue-ui) 5% 100%);
-  --color-button1b: hsl(var(--hue-ui) 5% 95%);
+  --color-button-top: hsl(var(--hue-ui) 5% 100%);
+  --color-button-bottom: hsl(var(--hue-ui) 5% 95%);
 
   --color-link: hsl(var(--hue-red) 70% 40%);
 
-  --color-border1: hsl(var(--hue-ui) 5% 50%);
-  --color-border2: hsl(var(--hue-ui) 5% 75%);
-  --color-border3: hsl(var(--hue-ui) 5% 85%);
-  --color-vibrant-border: hsl(var(--hue-red) 0% 0% / 10%);
-  --color-vibrant-border1: hsl(var(--hue-red) 0% 0% / 60%);
+  --color-border-primary: hsl(var(--hue-ui) 5% 50%);
+  --color-border-secondary: hsl(var(--hue-ui) 5% 75%);
+  --color-border-disabled: hsl(var(--hue-ui) 5% 85%);
+  --color-border-subtle: hsl(var(--hue-red) 0% 0% / 10%);
+  --color-border-vibrant: hsl(var(--hue-red) 0% 0% / 60%);
 
-  --color-scroll-fg: hsl(var(--hue-red) 70% 40%);
-  --color-scroll-bg: transparent;
+  --color-scroll: hsl(var(--hue-red) 70% 40%);
 
   color: var(--color-primary);
   background-color: var(--color-bg-base);

@@ -1,9 +1,9 @@
 .Divider {
-  border-top: 1px solid var(--color-border3);
+  border-top: 1px solid var(--color-border-disabled);
   /* border-image: linear-gradient(
       to right,
       transparent,
-      var(--color-border3) 64px calc(100% - 64px),
+      var(--color-border-disabled) 64px calc(100% - 64px),
       transparent
     )
     1; */

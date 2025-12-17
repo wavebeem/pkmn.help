@@ -16,7 +16,7 @@
 }
 
 .root[aria-pressed="true"] {
-  border-color: var(--color-vibrant-border);
+  border-color: var(--color-border-subtle);
   background: var(--color-accent-bg);
   color: var(--color-accent-fg);
   box-shadow: inset var(--shadow-button);

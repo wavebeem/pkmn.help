@@ -2,7 +2,7 @@
   --_c: var(--type-color-bg);
 
   border-radius: var(--border-radius0);
-  box-shadow: inset 0 0 0 1px var(--color-vibrant-border);
+  box-shadow: inset 0 0 0 1px var(--color-border-subtle);
   background: var(--type-color);
   color: white;
   gap: var(--padding2);
@@ -29,7 +29,7 @@
 
 .badge[data-type="none"] {
   background: none;
-  box-shadow: inset 0 0 0 1px var(--color-border3);
+  box-shadow: inset 0 0 0 1px var(--color-border-disabled);
   color: var(--color-secondary);
 }
 
@@ -60,6 +60,7 @@
     -webkit-text-stroke: 2px var(--_c);
     filter: drop-shadow(1px 1px 0 var(--_c));
     paint-order: stroke fill;
+
     letter-spacing: calc(1em / 64);
   }
 }

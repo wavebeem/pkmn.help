@@ -26,14 +26,14 @@
 }
 
 .select optgroup {
-  background: var(--color-button1b);
+  background: var(--color-button-bottom);
   color: var(--color-primary);
   font-style: normal;
   font-weight: var(--weight-medium);
 }
 
 .select option {
-  background: var(--color-button1b);
+  background: var(--color-button-bottom);
   color: var(--color-primary);
   font-weight: initial;
   border-radius: 0;

@@ -21,11 +21,11 @@
   pointer-events: none;
   background: transparent;
   color: var(--color-disabled);
-  border-color: var(--color-border3);
+  border-color: var(--color-border-disabled);
 }
 
 .root[aria-pressed="true"] {
-  border-color: var(--color-vibrant-border);
+  border-color: var(--color-border-subtle);
   background: var(--color-accent-bg);
   color: var(--color-accent-fg);
 }

@@ -12,7 +12,7 @@
   padding: 0.5rem 1rem;
   width: 100%;
   border-radius: var(--border-radius2);
-  border: 1px solid var(--color-border1);
+  border: 1px solid var(--color-border-primary);
   background: var(--color-bg-input);
   color: var(--color-primary);
   box-shadow: var(--shadow-inset);

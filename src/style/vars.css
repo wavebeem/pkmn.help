@@ -16,11 +16,12 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 
   --background-button-position: bottom;
   --background-button:
-    linear-gradient(var(--color-button1), var(--color-button1b)) padding-box,
+    linear-gradient(var(--color-button-top), var(--color-button-bottom))
+      padding-box,
     radial-gradient(
         at var(--background-button-position),
-        var(--color-border1),
-        var(--color-border2)
+        var(--color-border-primary),
+        var(--color-border-secondary)
       )
       border-box;
 

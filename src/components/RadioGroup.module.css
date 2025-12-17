@@ -42,11 +42,11 @@
 
 .itemDivider {
   margin-block: -1px;
-  border-top: 1px solid var(--color-border3);
+  border-top: 1px solid var(--color-border-disabled);
   border-image: linear-gradient(
       to right,
       transparent var(--padding4),
-      var(--color-border3) 0
+      var(--color-border-disabled) 0
     )
     1;
   flex: auto;
@@ -59,7 +59,7 @@
   --_size-check: 0.75em;
   flex: none;
   background-color: var(--color-bg-input);
-  border: 1px solid var(--color-border1);
+  border: 1px solid var(--color-border-primary);
   width: var(--_size-outer);
   height: var(--_size-outer);
   border-radius: var(--border-radius-pill);
@@ -71,7 +71,7 @@
   background:
     linear-gradient(var(--color-accent-fg) 0 100%) content-box,
     linear-gradient(var(--color-accent-bg) 0 100%) border-box;
-  border-color: var(--color-vibrant-border);
+  border-color: var(--color-border-subtle);
 }
 
 .radio:focus-visible {

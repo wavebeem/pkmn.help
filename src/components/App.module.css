@@ -109,7 +109,7 @@
   grid-area: content;
   color: var(--color-primary);
   background: var(--color-bg-base);
-  scrollbar-color: var(--color-scroll-fg) var(--color-scroll-bg);
+  scrollbar-color: var(--color-scroll) transparent;
 }
 
 .headerContent {
