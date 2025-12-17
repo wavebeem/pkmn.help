@@ -2,22 +2,26 @@
 
 ## ????-??-??
 
-- Updated theme
+- Updated the visual style of the website a lot
 
-- Improve text rendering on macOS
+  - Hopefully you can better focus on the content of the website now
 
 - Pokédex entries now have separate buttons for Dual Offense and Single Offense
   calculator links
-
-- Fixed a text wrapping bug in Chinese in the team defense table
-
-- Fixed a text overflow bug in Russian in the dual offense matchup results
 
 - Increase density of dual offense matchup results
 
 - Changed the order of Offense "Dual" and "Single" calculators
 
+  - Sorry! I realized the order wasn't consistent between offense and defense
+
+- Improve text rendering on macOS
+
 - Renamed "Combination" to "Dual" in the Offense calculator URL
+
+- Fixed a text wrapping bug in Chinese in the team defense table
+
+- Fixed a text overflow bug in Russian in the dual offense matchup results
 
 ## 2025-12-07
 
