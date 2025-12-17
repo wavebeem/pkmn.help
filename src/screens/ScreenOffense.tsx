@@ -1,5 +1,5 @@
 import { clsx } from "clsx";
-import { ReactNode, useEffect } from "react";
+import { ReactNode, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
@@ -8,6 +8,7 @@ import {
   CheckboxGroup,
   CheckboxGroupOption,
 } from "../components/CheckboxGroup";
+import { ClearChoices } from "../components/ClearChoices";
 import { CopyButton } from "../components/CopyButton";
 import { DexCoverage } from "../components/DexCoverage";
 import { FancyLink } from "../components/FancyLink";
@@ -116,6 +117,13 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
     [],
   );
 
+  const resetOffense = useCallback((): void => {
+    setOffenseTypes([]);
+    setAbilities([]);
+    setSpecialMoves([]);
+    navigate({ ...location, search: "" }, { replace: true });
+  }, [setOffenseTypes, setAbilities, setSpecialMoves, navigate, location]);
+
   const permalink = new URL(window.location.href);
   if (offenseTypes.length > 0) {
     permalink.searchParams.set("types", offenseTypes.join(" "));
@@ -164,10 +172,11 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
 
         {generation === "default" && (
           <Flex direction="column" gap="small">
-            <Flex>
+            <Flex gap="large">
               <CopyButton text={permalink.href}>
                 {t("general.copyLink")}
               </CopyButton>
+              <ClearChoices onClick={resetOffense} />
             </Flex>
           </Flex>
         )}

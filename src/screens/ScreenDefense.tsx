@@ -1,8 +1,9 @@
 import { clsx } from "clsx";
-import { Fragment, ReactNode, useEffect } from "react";
+import { Fragment, ReactNode, useEffect, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
+import { ClearChoices } from "../components/ClearChoices";
 import { CopyButton } from "../components/CopyButton";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
@@ -92,6 +93,13 @@ export function ScreenDefense(): ReactNode {
       return ta.localeCompare(tb);
     });
 
+  const resetDefense = useCallback((): void => {
+    setTypes([]);
+    setTeraType(Type.none);
+    setAbility("none");
+    navigate({ ...location, search: "" }, { replace: true });
+  }, [setTypes, setTeraType, setAbility, navigate, location]);
+
   return (
     <main className={clsx(styles.root, "content-wide center")}>
       <Flex direction="column" gap="xlarge">
@@ -149,8 +157,9 @@ export function ScreenDefense(): ReactNode {
           </div>
         </Flex>
 
-        <Flex>
+        <Flex gap="large">
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
+          <ClearChoices onClick={resetDefense} />
         </Flex>
       </Flex>
 

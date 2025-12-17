@@ -1,6 +1,6 @@
 # Changelog
 
-## ????-??-??
+## 2025-12-16
 
 - Updated the visual style of the website a lot
 
@@ -22,6 +22,10 @@
 - Fixed a text wrapping bug in Chinese in the team defense table
 
 - Fixed a text overflow bug in Russian in the dual offense matchup results
+
+## 2025-12-15
+
+- Updated Pokédex with new Mega Evolutions
 
 ## 2025-12-07
 
