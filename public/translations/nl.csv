@@ -193,6 +193,7 @@ banners.updateReady.whatsNew,What’s new,Wat is nieuw
 banners.updateReady.update,Update,Update
 general.loading,Loading…,Laden...
 general.copyLink,Copy link,Kopieer link
+general.clearChoices,Clear choices,
 games.label,Game generation,Game generatie
 games.help,Use type effectiveness from different game generations.,Gebruik type effecitiviteit van verschillende game generaties.
 games.byID.gen1,Generation 1,Generatie 1
