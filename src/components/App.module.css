@@ -88,7 +88,7 @@
   transition-duration: 200ms;
   transition-timing-function: ease;
   transition-property: translate, scale;
-  box-shadow: var(--shadow-header);
+  box-shadow: var(--shadow-menu);
 }
 
 .dialog::backdrop {
@@ -145,7 +145,7 @@
     width: 100vw;
     height: var(--header-height);
     z-index: 2;
-    border-bottom: 1px solid var(--color-header-highlight);
+    border-bottom: 1px solid var(--color-border-subtle);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -321,7 +321,7 @@
   }
 
   .root {
-    --header-height: round(up, 4rem, 1px);
+    --header-height: round(up, 3.5rem, 1px);
     --sidebar-width: round(up, 22ch, 16px);
 
     grid-template-areas:
@@ -379,7 +379,7 @@
 
   .sidebar {
     overflow: auto auto;
-    scrollbar-color: var(--color-header-text) transparent;
+    scrollbar-color: var(--color-sidebar-text) transparent;
     border-right: 1px solid var(--color-sidebar-border);
   }
 }

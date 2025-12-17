@@ -7,7 +7,7 @@
   --color-bg-ghost: hsl(var(--hue-ui) 5% 20%);
 
   --color-card-bg: hsl(var(--hue-ui) 5% 18%);
-  --color-card-highlight: hsl(var(--hue-ui) 5% 32%);
+  --color-card-highlight: hsl(var(--hue-ui) 5% 26%);
   --color-card-shadow: hsl(var(--hue-ui) 5% 12%);
 
   --color-primary: hsl(var(--hue-ui) 50% 92%);
@@ -25,13 +25,14 @@
 
   --color-sidebar-dark: hsl(var(--hue-ui) 5% 8%);
   --color-sidebar-base: hsl(var(--hue-ui) 5% 8%);
-  --color-sidebar-highlight: hsl(var(--hue-ui) 5% 18%);
-  --color-sidebar-border: hsl(var(--hue-ui) 5% 24%);
+  --color-sidebar-highlight: hsl(var(--hue-ui) 5% 24%);
+  --color-sidebar-border: hsl(var(--hue-ui) 5% 30%);
   --color-sidebar-text: #fff;
 
   --color-button-top: hsl(var(--hue-ui) 5% 28%);
   --color-button-bottom: hsl(var(--hue-ui) 5% 22%);
   --color-link: hsl(var(--hue-teal) 90% 55%);
+
   --color-border-primary: hsl(var(--hue-ui) 5% 48%);
   --color-border-secondary: hsl(var(--hue-ui) 5% 30%);
   --color-border-disabled: hsl(var(--hue-ui) 5% 24%);

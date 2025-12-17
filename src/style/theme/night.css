@@ -19,18 +19,20 @@
   --color-header-dark: hsl(0 0% 5%);
   --color-header-base: hsl(0 0% 10%);
   --color-header-highlight: hsl(0 0% 20%);
-  --color-header-border: hsl(0 0% 15%);
+  --color-header-border: hsl(0 0% 20%);
   --color-header-text: hsl(0 0% 82%);
 
   --color-sidebar-dark: hsl(0 0% 5%);
   --color-sidebar-base: hsl(0 0% 10%);
   --color-sidebar-highlight: hsl(0 0% 20%);
-  --color-sidebar-border: hsl(0 0% 15%);
+  --color-sidebar-border: hsl(0 0% 20%);
   --color-sidebar-text: hsl(0 0% 82%);
 
   --color-button-top: hsl(0 0% 20%);
   --color-button-bottom: hsl(0 0% 15%);
+
   --color-link: hsl(var(--hue-teal) 90% 75%);
+
   --color-border-primary: hsl(0 0% 47%);
   --color-border-secondary: hsl(0 0% 25%);
   --color-border-disabled: hsl(0 0% 20%);
