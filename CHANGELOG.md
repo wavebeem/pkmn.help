@@ -1,5 +1,11 @@
 # Changelog
 
+## 2025-12-17
+
+- Restored the previous height of the mobile page header
+
+- Minor changes to theme highlights and shadows
+
 ## 2025-12-16
 
 - Updated the visual style of the website a lot

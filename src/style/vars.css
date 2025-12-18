@@ -40,8 +40,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 
   --color-modal-backdrop: hsl(var(--hue-ui) 10% 20% / 80%);
 
-  --shadow-tabs: 0 0 16px rgb(0 0 0 / 20%);
-  --shadow-menu: 0 0 32px rgb(0 0 0 / 20%);
+  --shadow-tabs: 0 0 8px rgb(0 0 0 / 10%), 0 0 16px rgb(0 0 0 / 20%);
+  --shadow-menu: 0 0 8px rgb(0 0 0 / 10%), 0 0 16px rgb(0 0 0 / 20%);
   --shadow-button: 0 1px 0 rgb(0 0 0 / 10%);
   --shadow-inset: inset 0 1px 0 rgb(0 0 0 / 10%);
 

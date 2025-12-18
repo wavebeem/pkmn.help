@@ -3,7 +3,7 @@
 }
 
 .root {
-  --header-height: round(up, 4rem, 8px);
+  --header-height: round(up, 4.5rem, 8px);
   /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
   /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
   --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px);

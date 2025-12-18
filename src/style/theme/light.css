@@ -9,9 +9,9 @@
   --color-card-highlight: hsl(var(--hue-ui) 5% 100%);
   --color-card-shadow: hsl(var(--hue-ui) 5% 85%);
 
-  --color-primary: hsl(var(--hue-ui) 15% 7%);
-  --color-secondary: hsl(var(--hue-ui) 15% 35%);
-  --color-disabled: hsl(var(--hue-ui) 15% 60%);
+  --color-primary: hsl(var(--hue-ui) 5% 7%);
+  --color-secondary: hsl(var(--hue-ui) 5% 35%);
+  --color-disabled: hsl(var(--hue-ui) 5% 60%);
 
   --color-accent-bg: hsl(var(--hue-red) 70% 40%);
   --color-accent-fg: #fff;
@@ -39,7 +39,7 @@
   --color-border-primary: hsl(var(--hue-ui) 5% 50%);
   --color-border-secondary: hsl(var(--hue-ui) 5% 75%);
   --color-border-disabled: hsl(var(--hue-ui) 5% 85%);
-  --color-border-subtle: hsl(var(--hue-red) 0% 0% / 10%);
+  --color-border-subtle: hsl(0 0% 0% / 20%);
 
   --color-scroll: hsl(var(--hue-red) 70% 40%);
 

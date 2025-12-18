@@ -137,7 +137,7 @@ pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are 
 pokedexHelp.back,Back to Pokédex,포켓몬 도감으로 돌아가기
 about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,문의
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of pkmn.help (Pokémon Type Calculator).","안녕하세요, 저는 <homepage>Sage</homepage> (they/them으로 지칭해 주세요) 이고 Pokémon Type Calculator (pkmn.help)를 만들었습니다."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","안녕하세요, 저는 <homepage>Sage</homepage> (they/them으로 지칭해 주세요) 이고 Pokémon Type Calculator (pkmn.help)를 만들었습니다."
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,여러분의 생각과 감사를 <email>pkmn@wavebeem.com</email> 로 보내주세요.
 more.settings.heading,Settings,설정
 more.settings.language.label,Language,언어
