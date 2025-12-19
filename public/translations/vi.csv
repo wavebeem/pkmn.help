@@ -35,7 +35,7 @@ offense.coverageList.resistance.heading,Resistance coverage list,Danh sách các
 coverage.heading,Pokédex coverage,Danh sách khả năng bao phủ hệ của tất cả Pokémon trong Pokédex
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",Nhập/xuất tệp CSV Pokédex tùy chỉnh để xem khả năng bao phủ hệ của các Pokémon khác nhau. Tạo tệp CSV tùy chỉnh chỉ với Pokémon cấp OU hoặc thậm chí tạo Pokémon của riêng bạn từ đầu.
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Dữ liệu CSV được tải theo tên tiêu đề cột chứ không phải theo thứ tự cột, vì vậy bạn có thể thêm hoặc sắp xếp lại các cột nếu muốn (ví dụ: thêm cột “cấp” hoặc cột “ghi chú”)."
-coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","Các tệp CSV có thể được chỉnh sửa bằng Google Trang tính, Microsoft Excel, OpenOffice, LibreOffice, Notepad, v.v."
+coverage.paragraph3,"CSV files can be edited with Google Sheets, LibreOffice, and more.","Các tệp CSV có thể được chỉnh sửa bằng Google Trang tính, Microsoft Excel, OpenOffice, LibreOffice, Notepad, v.v."
 coverage.csvHeaders.number,Number,Số
 coverage.csvHeaders.name,Name,Tên
 coverage.csvHeaders.type1,Type 1,Hệ 1

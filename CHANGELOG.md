@@ -1,5 +1,17 @@
 # Changelog
 
+## 2025-12-19
+
+- Pokédex search now supports English in addition to your currently selected
+  language
+
+  - e.g. Searching for "Clefable" in German will now return "Pixi"
+
+- Updated German translation
+
+- Fixed an issue where the "Copy link" and "Clear choices" buttons were
+  sometimes cramped on the screen
+
 ## 2025-12-18
 
 - Updated French translation

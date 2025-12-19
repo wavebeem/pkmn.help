@@ -3,7 +3,12 @@
   "navigation": {
     "offense": "Angriff",
     "defense": "Verteidigung",
-    "pokedex": "Pokédex"
+    "pokedex": "Pokédex",
+    "other": "Sonstiges",
+    "settings": "Einstellungen",
+    "about": "Über",
+    "menu": "Menü",
+    "close": "Schließen"
   },
   "offense": {
     "chooseTypes": "Typen auswählen",
@@ -29,7 +34,7 @@
       "choose": "Fähigkeiten auswählen"
     },
     "specialMoves": {
-      "choose": "Spezialattacke auswählen",
+      "choose": "Spezielle Attacke auswählen",
       "names": {
         "freeze-dry": "Gefriertrockner",
         "thousand_arrows": "Tausend Pfeile",
@@ -37,7 +42,7 @@
       }
     },
     "coverage": {
-      "heading": "Pokédex Abdeckung",
+      "heading": "Pokédex-Abdeckung",
       "edit": "Editiere Liste",
       "weakness": "Sehr effektiv",
       "normal": "Normal effektiv",
@@ -81,7 +86,7 @@
       "button": "Zurücksetzen",
       "description": "Auf den Standard-Pokédex zurücksetzen"
     },
-    "filename": "pkmn.help Typ coverage.csv",
+    "filename": "PKMN.help Typen-Abdeckung.csv",
     "status": {
       "imported": "Importierte {{ n }} Pokémon-Formen aus \"{{ Datei }}\"",
       "exported": "Exportierte Standard-Pokémon-Formen",
@@ -125,7 +130,7 @@
       "team": "Team"
     },
     "team": {
-      "tableHeading": "Matchups",
+      "tableHeading": "Match-Ups",
       "heading": "Editiere Pokémon-Team",
       "add": "Füge Pokémon hinzu",
       "empty": "Keine Pokémon ausgewählt",
@@ -150,7 +155,7 @@
       "text": "Ruf"
     },
     "shiny": {
-      "text": "Shiny"
+      "text": "Schillernd"
     },
     "pagination": {
       "next": "Weiter",
@@ -165,7 +170,7 @@
       "auto": "Automatisch"
     },
     "stats": {
-      "hp": "HP",
+      "hp": "KP",
       "hpLong": "Kraftpunkte",
       "attack": "Ang.",
       "attackLong": "Angriff",
@@ -210,10 +215,15 @@
     },
     "back": "Zurück zum Pokédex"
   },
+  "about": {
+    "easterEgg": {
+      "button": "Zeige ein zufälliges Pokémon"
+    }
+  },
   "more": {
     "contact": {
       "heading": "Kontakt",
-      "intro": "Hallo, ich bin <homepage>Sage</homepage> (they/them) und ich habe den Pokémon Type Calculator (pkmn.help) erstellt.",
+      "intro": "Hallo, ich bin <homepage>Sage</homepage> (they/them) und ich habe den PKMN.help (Pokémon Typ Rechner) erstellt.",
       "email": "Bitte sende deine Gedanken und Danksagungen an <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
@@ -264,7 +274,7 @@
     },
     "thanks": {
       "heading": "Besonderer Dank",
-      "description": "Sieh dir in den <credits>Credits</credits> an wer mir bei der Webseite geholfen hat."
+      "description": "Sieh dir in den <credits>Credits</credits> an, wer mir bei der Webseite geholfen hat."
     },
     "openSource": {
       "heading": "Offener Quellcode",
@@ -305,7 +315,8 @@
   },
   "general": {
     "loading": "Laden...",
-    "copyLink": "Link kopieren"
+    "copyLink": "Link kopieren",
+    "clearChoices": "Auswahl entfernen"
   },
   "games": {
     "label": "Spielgeneration",

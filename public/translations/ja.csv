@@ -35,7 +35,7 @@ offense.coverageList.resistance.heading,Resistance coverage list,抵抗カバー
 coverage.heading,Pokédex coverage,弱点のカバー範囲
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",異なるポケモンのための弱点カバー範囲を見るためにカスタムポケモンずかんのCSVファイルを読み込み/エクスポートします。
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",CSVデータはカラムの順番ではなくカラムのヘッダーネーム順で呼ばれます。追加したり並べ替えても処理に影響はありません。（例:「ランク」カラムを足す、「注釈」カラムを足す）
-coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.",CSVファイルはGoogle Sheets、Microsoft Excel、OpenOffice、LibreOffice、Notepadなどで編集できます
+coverage.paragraph3,"CSV files can be edited with Google Sheets, LibreOffice, and more.",CSVファイルはGoogle Sheets、Microsoft Excel、OpenOffice、LibreOffice、Notepadなどで編集できます
 coverage.csvHeaders.number,Number,数字
 coverage.csvHeaders.name,Name,名前
 coverage.csvHeaders.type1,Type 1,１つ目のタイプ

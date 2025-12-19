@@ -172,7 +172,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
 
         {generation === "default" && (
           <Flex direction="column" gap="small">
-            <Flex gap="medium">
+            <Flex gap="medium" wrap>
               <CopyButton text={permalink.href}>
                 {t("general.copyLink")}
               </CopyButton>

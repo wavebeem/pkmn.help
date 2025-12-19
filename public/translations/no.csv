@@ -35,7 +35,7 @@ offense.coverageList.resistance.heading,Resistance coverage list,Motstendelser a
 coverage.heading,Pokédex coverage,Pokédex analyse
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importer/eksporter egene Pokédex CSV filer for å se analyser av forskjellige Pokémon. Skap en tilpasset CSV fil med bare OU nivå Pokémon, eller lag dine egen Pokémon fra bunnen av."
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","CSV data er lastet ved kolonneoverskrift navn, ikke kolonne rekkefølge, så du kan legge til eller endre rekkefølgen til kolonner hvis du har lyst til. (f.eks. legge til et ""nivå"" kolonne, eller en ""notater"" kolonne)."
-coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","CSV filer kan bli redigert med Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notatbok, og mer."
+coverage.paragraph3,"CSV files can be edited with Google Sheets, LibreOffice, and more.","CSV filer kan bli redigert med Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notatbok, og mer."
 coverage.csvHeaders.number,Number,Nummer
 coverage.csvHeaders.name,Name,Navn
 coverage.csvHeaders.type1,Type 1,Type 1
