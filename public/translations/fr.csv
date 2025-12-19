@@ -135,7 +135,7 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,plante aucun
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Rechercher les Pokémon qui ont seulement le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)."
 pokedexHelp.back,Back to Pokédex,Revenir au Pokédex
-about.easterEgg.button,Show random Pokémon,
+about.easterEgg.button,Show random Pokémon,Montrer un Pokémon aléatoire
 more.contact.heading,Contact me,Me contacter
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Bonjour, je suis <homepage>Sage</homepage> (iel), et j'ai créé le Calculateur de types Pokémon (pkmn.help)."
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Veuillez envoyer vos idées et vos remerciements à <email>pkmn@wavebeem.com</email>.
@@ -193,7 +193,7 @@ banners.updateReady.whatsNew,What’s new,Quoi de neuf
 banners.updateReady.update,Update,Mettre à jour
 general.loading,Loading…,Chargement…
 general.copyLink,Copy link,Copier le lien
-general.clearChoices,Clear choices,
+general.clearChoices,Clear choices,Réinitialiser
 games.label,Game generation,Génération du jeu
 games.help,Use type effectiveness from different game generations.,Utiliser les efficacités de types de différentes générations de jeux.
 games.byID.gen1,Generation 1,Génération 1

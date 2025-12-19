@@ -215,6 +215,11 @@
     },
     "back": "Revenir au Pokédex"
   },
+  "about": {
+    "easterEgg": {
+      "button": "Montrer un Pokémon aléatoire"
+    }
+  },
   "more": {
     "contact": {
       "heading": "Me contacter",
@@ -310,7 +315,8 @@
   },
   "general": {
     "loading": "Chargement…",
-    "copyLink": "Copier le lien"
+    "copyLink": "Copier le lien",
+    "clearChoices": "Réinitialiser"
   },
   "games": {
     "label": "Génération du jeu",

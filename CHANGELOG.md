@@ -1,5 +1,9 @@
 # Changelog
 
+## 2025-12-18
+
+- Updated French translation
+
 ## 2025-12-17
 
 - Restored the previous height of the mobile page header
