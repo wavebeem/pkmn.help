@@ -66,7 +66,7 @@
     "heading": "Pokédex coverage",
     "paragraph1": "Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",
     "paragraph2": "CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",
-    "paragraph3": "CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.",
+    "paragraph3": "CSV files can be edited with Google Sheets, LibreOffice, and more.",
     "csvHeaders": {
       "number": "Number",
       "name": "Name",

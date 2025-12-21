@@ -169,7 +169,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
           <FancyLink
             outlined
             aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
-            to={`/offense/combination/?${params}#matchup-offense`}
+            to={`/offense/dual/?${params}#matchup-offense`}
             id={`${idPrefix}-offense`}
           >
             <IconOffenseDual

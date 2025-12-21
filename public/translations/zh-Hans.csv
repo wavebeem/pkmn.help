@@ -35,7 +35,7 @@ offense.coverageList.resistance.heading,Resistance coverage list,效果不好列
 coverage.heading,Pokédex coverage,宝可梦图鉴覆盖范围
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",导入或导出定制的图鉴CSV文件以参考不同宝可梦的弱点覆盖范围。你可制作只有OU阶级宝可梦的特制CSV文件，或是甚至从零制作你自己的宝可梦。
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).",CSV的资料是以列标题名称加载，而非列顺序，因此你可随意增加或重排列（例：加个“阶级”列，或者“注明”列）
-coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.",CSV文件可用Google 表格、Microsoft Excel、OpenOffice、LibreOffice、记事本等编辑。
+coverage.paragraph3,"CSV files can be edited with Google Sheets, LibreOffice, and more.",CSV文件可用Google 表格、Microsoft Excel、OpenOffice、LibreOffice、记事本等编辑。
 coverage.csvHeaders.number,Number,编号
 coverage.csvHeaders.name,Name,名称
 coverage.csvHeaders.type1,Type 1,属性 1

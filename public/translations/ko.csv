@@ -35,7 +35,7 @@ offense.coverageList.resistance.heading,Resistance coverage list,내성인 포�
 coverage.heading,Pokédex coverage,비교할 포켓몬 목록
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.",커스텀 Pokédex CSV 파일을 가져오거나 내보내서 다른 포켓몬에게의 공격 상성을 확인할 수 있습니다. OU 티어 포켓몬만으로 CSV 파일을 만들거나 처음부터 나만의 포켓몬을 만들 수도 있습니다.
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","CSV 데이터는 열 순서가 아닌 열 헤더 명칭으로 로드되므로 필요한 경우 열을 추가하거나 재정렬할 수 있습니다(예: ""티어"" 열 또는 ""메모"" 열 추가)."
-coverage.paragraph3,"CSV files can be edited with Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad, and more.","CSV 파일은 Google 스프레드시트, Microsoft Excel, OpenOffice, LibreOffice, 메모장 등으로 편집할 수 있습니다."
+coverage.paragraph3,"CSV files can be edited with Google Sheets, LibreOffice, and more.","CSV 파일은 Google 스프레드시트, Microsoft Excel, OpenOffice, LibreOffice, 메모장 등으로 편집할 수 있습니다."
 coverage.csvHeaders.number,Number,숫자
 coverage.csvHeaders.name,Name,이름
 coverage.csvHeaders.type1,Type 1,첫 번째 타입

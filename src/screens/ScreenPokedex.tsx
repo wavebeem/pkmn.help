@@ -53,7 +53,9 @@ export function ScreenPokedex(): ReactNode {
       return {
         ...p,
         speciesName: pickTranslation(p.speciesNames, language),
+        speciesNameEnglish: pickTranslation(p.speciesNames, "en"),
         formName: pickTranslation(p.formNames, language),
+        formNameEnglish: pickTranslation(p.formNames, "en"),
         total: p.hp + p.attack + p.defense + p.spAttack + p.spDefense + p.speed,
       };
     });
@@ -85,7 +87,13 @@ export function ScreenPokedex(): ReactNode {
       });
     } else if (s) {
       items = matchSorter(searchablePkmn, s, {
-        keys: ["speciesName", "formName", "number"],
+        keys: [
+          "speciesName",
+          "speciesNameEnglish",
+          "formName",
+          "formNameEnglish",
+          "number",
+        ],
       });
     }
     switch (sortOrder) {

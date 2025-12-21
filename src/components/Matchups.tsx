@@ -109,7 +109,7 @@ export function Matchups({
                           <Meter
                             value={matchups.typesFor(eff).length}
                             max={matchups.matchups.length}
-                            background="var(--color-bg-ghost)"
+                            background="var(--color-bg-base)"
                           />
                         </td>
                         <td className={styles.tableNumber}>
