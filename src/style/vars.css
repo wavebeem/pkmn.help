@@ -23,7 +23,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
         var(--color-border-primary),
         var(--color-border-secondary)
       )
-      border-box;
+      border-box var(--color-button-top);
 
   --padding0: 2px;
   --padding1: 4px;

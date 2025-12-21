@@ -9,11 +9,4 @@
   justify-content: center;
   align-items: center;
   gap: var(--padding2);
-
-  &[data-state="copied"] {
-    box-shadow: none;
-    background: var(--color-bg-base);
-    border-color: var(--color-border-disabled);
-    color: var(--color-border-disabled);
-  }
 }

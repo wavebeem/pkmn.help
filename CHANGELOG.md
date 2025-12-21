@@ -1,6 +1,6 @@
 # Changelog
 
-## 2025-12-19
+## 2025-12-20
 
 - Pokédex search now supports English in addition to your currently selected
   language
@@ -11,6 +11,9 @@
 
 - Fixed an issue where the "Copy link" and "Clear choices" buttons were
   sometimes cramped on the screen
+
+- Fixed an issue where the select menus looked really bad on Windows, especially
+  in dark mode
 
 ## 2025-12-18
 
