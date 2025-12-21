@@ -123,7 +123,9 @@
       "sap_sipper": "Herbivore",
       "lightning_rod": "Paratonerre",
       "motor_drive": "Motorisé",
-      "volt_absorb": "Absorbe-Volt"
+      "volt_absorb": "Absorbe-Volt",
+      "primordial_sea": "Mer Primaire",
+      "desolate_land": "Terre Finale"
     },
     "mode": {
       "solo": "Pokémon seul",

@@ -101,7 +101,9 @@
       "sap_sipper": "Mangiaerba",
       "lightning_rod": "Parafulmine",
       "motor_drive": "Elettrorapid",
-      "volt_absorb": "Assorbivolt"
+      "volt_absorb": "Assorbivolt",
+      "primordial_sea": "Mare Primordiale",
+      "desolate_land": "Terra Estrema"
     },
     "mode": {
       "solo": "Solo",

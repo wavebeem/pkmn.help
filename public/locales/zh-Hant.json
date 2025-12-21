@@ -100,7 +100,9 @@
       "sap_sipper": "吸汁器",
       "lightning_rod": "閃電棒",
       "motor_drive": "電能引擎",
-      "volt_absorb": "吸電"
+      "volt_absorb": "吸電",
+      "primordial_sea": "始源之海",
+      "desolate_land": "終結之地"
     },
     "mode": {
       "solo": "單打",

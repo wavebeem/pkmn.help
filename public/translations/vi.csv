@@ -80,6 +80,8 @@ defense.abilityNames.sap_sipper,Sap Sipper,Ăn Cỏ (Sap Sipper)
 defense.abilityNames.lightning_rod,Lightning Rod,Cột Thu Lôi (Lighting Rod)
 defense.abilityNames.motor_drive,Motor Drive,Đông Cơ Điện (Motor Drive)
 defense.abilityNames.volt_absorb,Volt Absorb,Trữ Điện (Volt Absorb)
+defense.abilityNames.primordial_sea,Primordial Sea,Primordial Sea
+defense.abilityNames.desolate_land,Desolate Land,Desolate Land
 defense.mode.solo,Solo,1 Pokémon (Solo)
 defense.mode.team,Team,Nhiều Pokémon (Đội/Team)
 defense.team.tableHeading,Matchup counts,Danh sách các matchup

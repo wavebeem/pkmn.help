@@ -101,7 +101,9 @@
       "sap_sipper": "Bebedor de Seiva",
       "lightning_rod": "Para-Raios",
       "motor_drive": "Motor Elétrico",
-      "volt_absorb": "Absorção de Eletricidade"
+      "volt_absorb": "Absorção de Eletricidade",
+      "primordial_sea": "Primordial Sea",
+      "desolate_land": "Desolate Land"
     },
     "mode": {
       "solo": "Solo",

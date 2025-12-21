@@ -18,6 +18,8 @@
 - Fixed an issue where clicking the dual type calculator link in the Pokédex
   didn't select the correct types
 
+- Added Desolate Land and Primordial Sea
+
 ## 2025-12-18
 
 - Updated French translation

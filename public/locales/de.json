@@ -123,7 +123,9 @@
       "sap_sipper": "Vegetarier",
       "lightning_rod": "Blitzfänger",
       "motor_drive": "Starthilfe",
-      "volt_absorb": "Voltabsorber"
+      "volt_absorb": "Voltabsorber",
+      "primordial_sea": "Urmeer",
+      "desolate_land": "Endland"
     },
     "mode": {
       "solo": "Solo",

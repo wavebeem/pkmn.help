@@ -101,7 +101,9 @@
       "sap_sipper": "Herbívoro",
       "lightning_rod": "Pararrayos",
       "motor_drive": "Electromotor",
-      "volt_absorb": "Absorbe electricidad"
+      "volt_absorb": "Absorbe electricidad",
+      "primordial_sea": "Mar del Albor",
+      "desolate_land": "Tierra del Ocaso"
     },
     "mode": {
       "solo": "Solo",

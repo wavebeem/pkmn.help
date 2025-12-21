@@ -100,7 +100,9 @@
       "sap_sipper": "そうしょく",
       "lightning_rod": "ひらいしん",
       "motor_drive": "でんきエンジン",
-      "volt_absorb": "ちくでん"
+      "volt_absorb": "ちくでん",
+      "primordial_sea": "はじまりのうみ",
+      "desolate_land": "おわりのだいち"
     },
     "mode": {
       "solo": "ソロ",

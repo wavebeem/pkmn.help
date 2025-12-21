@@ -100,7 +100,9 @@
       "sap_sipper": "흡수",
       "lightning_rod": "피뢰침",
       "motor_drive": "전기엔진",
-      "volt_absorb": "축전"
+      "volt_absorb": "축전",
+      "primordial_sea": "시작의바다",
+      "desolate_land": "끝의대지"
     },
     "mode": {
       "solo": "싱글",

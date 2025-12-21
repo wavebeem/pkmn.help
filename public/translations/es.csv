@@ -80,6 +80,8 @@ defense.abilityNames.sap_sipper,Sap Sipper,Herbívoro
 defense.abilityNames.lightning_rod,Lightning Rod,Pararrayos
 defense.abilityNames.motor_drive,Motor Drive,Electromotor
 defense.abilityNames.volt_absorb,Volt Absorb,Absorbe electricidad
+defense.abilityNames.primordial_sea,Primordial Sea,Mar del Albor
+defense.abilityNames.desolate_land,Desolate Land,Tierra del Ocaso
 defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Equipo
 defense.team.tableHeading,Matchup counts,Recuento de enfrentamientos

@@ -80,6 +80,8 @@ defense.abilityNames.sap_sipper,Sap Sipper,そうしょく
 defense.abilityNames.lightning_rod,Lightning Rod,ひらいしん
 defense.abilityNames.motor_drive,Motor Drive,でんきエンジン
 defense.abilityNames.volt_absorb,Volt Absorb,ちくでん
+defense.abilityNames.primordial_sea,Primordial Sea,はじまりのうみ
+defense.abilityNames.desolate_land,Desolate Land,おわりのだいち
 defense.mode.solo,Solo,ソロ
 defense.mode.team,Team,パーティ
 defense.team.tableHeading,Matchup counts,タイプ相性表

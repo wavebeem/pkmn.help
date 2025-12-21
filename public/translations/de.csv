@@ -80,6 +80,8 @@ defense.abilityNames.sap_sipper,Sap Sipper,Vegetarier
 defense.abilityNames.lightning_rod,Lightning Rod,Blitzfänger
 defense.abilityNames.motor_drive,Motor Drive,Starthilfe
 defense.abilityNames.volt_absorb,Volt Absorb,Voltabsorber
+defense.abilityNames.primordial_sea,Primordial Sea,Urmeer
+defense.abilityNames.desolate_land,Desolate Land,Endland
 defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Team
 defense.team.tableHeading,Matchup counts,Match-Ups

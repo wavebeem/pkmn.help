@@ -80,6 +80,8 @@ defense.abilityNames.sap_sipper,Sap Sipper,Herbivore
 defense.abilityNames.lightning_rod,Lightning Rod,Paratonerre
 defense.abilityNames.motor_drive,Motor Drive,Motorisé
 defense.abilityNames.volt_absorb,Volt Absorb,Absorbe-Volt
+defense.abilityNames.primordial_sea,Primordial Sea,Mer Primaire
+defense.abilityNames.desolate_land,Desolate Land,Terre Finale
 defense.mode.solo,Solo,Pokémon seul
 defense.mode.team,Team,Équipe
 defense.team.tableHeading,Matchup counts,Nombre de match-ups

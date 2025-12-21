@@ -99,7 +99,9 @@
       "sap_sipper": "Sevjedrikker",
       "lightning_rod": "Lynavleder",
       "motor_drive": "Motordrift",
-      "volt_absorb": "Voltabsorberende"
+      "volt_absorb": "Voltabsorberende",
+      "primordial_sea": "Primordial Sea",
+      "desolate_land": "Desolate Land"
     },
     "mode": {
       "solo": "Solo",

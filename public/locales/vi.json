@@ -101,7 +101,9 @@
       "sap_sipper": "Ăn Cỏ (Sap Sipper)",
       "lightning_rod": "Cột Thu Lôi (Lighting Rod)",
       "motor_drive": "Đông Cơ Điện (Motor Drive)",
-      "volt_absorb": "Trữ Điện (Volt Absorb)"
+      "volt_absorb": "Trữ Điện (Volt Absorb)",
+      "primordial_sea": "Primordial Sea",
+      "desolate_land": "Desolate Land"
     },
     "mode": {
       "solo": "1 Pokémon (Solo)",

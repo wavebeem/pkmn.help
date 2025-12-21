@@ -80,6 +80,8 @@ defense.abilityNames.sap_sipper,Sap Sipper,食草
 defense.abilityNames.lightning_rod,Lightning Rod,避雷针
 defense.abilityNames.motor_drive,Motor Drive,电气引擎
 defense.abilityNames.volt_absorb,Volt Absorb,蓄电
+defense.abilityNames.primordial_sea,Primordial Sea,始源之海
+defense.abilityNames.desolate_land,Desolate Land,終結之地
 defense.mode.solo,Solo,单只模式
 defense.mode.team,Team,队伍模式
 defense.team.tableHeading,Matchup counts,对战统计

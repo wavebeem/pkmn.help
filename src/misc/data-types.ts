@@ -96,6 +96,8 @@ export const abilities = {
   lightning_rod: createAbility({ type: Type.electric, value: 0 }),
   motor_drive: createAbility({ type: Type.electric, value: 0 }),
   volt_absorb: createAbility({ type: Type.electric, value: 0 }),
+  primordial_sea: createAbility({ type: Type.fire, value: 0 }),
+  desolate_land: createAbility({ type: Type.water, value: 0 }),
   // Other
   filter: createAbility(),
   wonder_guard: createAbility(),

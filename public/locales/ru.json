@@ -64,7 +64,9 @@
       "sap_sipper": "Sap Sipper",
       "lightning_rod": "Lightning Rod",
       "motor_drive": "Motor Drive",
-      "volt_absorb": "Volt Absorb"
+      "volt_absorb": "Volt Absorb",
+      "primordial_sea": "Primordial Sea",
+      "desolate_land": "Desolate Land"
     },
     "chooseTypes": "Выберите Типы"
   },

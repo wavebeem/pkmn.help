@@ -100,7 +100,9 @@
       "sap_sipper": "食草",
       "lightning_rod": "避雷针",
       "motor_drive": "电气引擎",
-      "volt_absorb": "蓄电"
+      "volt_absorb": "蓄电",
+      "primordial_sea": "始源之海",
+      "desolate_land": "終結之地"
     },
     "mode": {
       "solo": "单只模式",
