@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
-import { ReactNode, useEffect, useState } from "react";
-import styles from "./CopyButton.module.css";
+import { ReactNode, useState } from "react";
 import { sleep } from "../misc/sleep";
+import styles from "./CopyButton.module.css";
 import { IconCheck, IconCopy } from "./icons";
 
 export interface CopyButtonProps {
