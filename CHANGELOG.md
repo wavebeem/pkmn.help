@@ -1,5 +1,13 @@
 # Changelog
 
+## 2025-12-22
+
+- Updated Brazilian Portuguese translation
+
+- Updated Vietnamese translation
+
+- Updated Translation page
+
 ## 2025-12-20
 
 - Pokédex search now supports English in addition to your currently selected

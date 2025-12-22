@@ -40,6 +40,8 @@ export {
   // Coverage edit screen
   Upload as IconImport,
   Download as IconExport,
+  // Download
+  Download as IconDownload,
   // Edit & Remove - team
   Pencil as IconEdit,
   Trash2 as IconRemove,

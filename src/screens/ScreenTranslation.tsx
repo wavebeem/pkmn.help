@@ -51,6 +51,10 @@ export function ScreenTranslation(): ReactNode {
                 , and many other apps.
               </FancyText>
               <FancyText tag="p">
+                <strong>Please do not use Microsoft Excel.</strong> It has
+                repeatedly broken the CSV files.
+              </FancyText>
+              <FancyText tag="p">
                 Send me (Sage) the translated file via email when you&apos;re
                 done (
                 <ExternalLink href="mailto:pkmn@wavebeem.com">
@@ -63,7 +67,7 @@ export function ScreenTranslation(): ReactNode {
                 ). If you have questions, feel free to ask. Confused about CSV
                 files? I can set up a Google Sheet for you.
               </FancyText>
-              <FancyText tag="p">
+              <FancyText tag="p" color="secondary" fontSize="small">
                 * = Not an official language for Pokémon games
               </FancyText>
               <Flex direction="column" gap="medium">
@@ -86,11 +90,9 @@ export function ScreenTranslation(): ReactNode {
                   })
                   .map((lang) => {
                     return (
-                      <>
-                        <Card size="small">
-                          <TranslationCard key={lang} lang={lang} />
-                        </Card>
-                      </>
+                      <Card size="small" key={lang}>
+                        <TranslationCard key={lang} lang={lang} />
+                      </Card>
                     );
                   })}
               </Flex>

@@ -1,6 +1,5 @@
 .root {
-  padding-inline: var(--padding2);
-  padding-block: var(--padding2);
+  gap: var(--padding1);
   display: grid;
   grid-template-areas:
     "title"
@@ -12,8 +11,8 @@
 @media (width >= 40rem) {
   .root {
     grid-template-areas:
-      "title completion"
-      "title download";
+      "title      download"
+      "completion download";
     grid-template-columns: 1fr auto;
   }
 
@@ -31,8 +30,11 @@
 
 .completion {
   grid-area: completion;
+  display: flex;
 }
 
 .download {
   grid-area: download;
+  display: flex;
+  justify-content: end;
 }

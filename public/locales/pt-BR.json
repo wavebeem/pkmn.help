@@ -3,17 +3,32 @@
   "navigation": {
     "offense": "Ataque",
     "defense": "Defesa",
-    "pokedex": "Pokédex"
+    "pokedex": "Pokédex",
+    "other": "Outros",
+    "settings": "Configurações",
+    "about": "Sobre",
+    "menu": "Menu",
+    "close": "Fechar"
   },
   "offense": {
     "chooseTypes": "Escolher tipos",
     "dealsXTo": "Causa {{ x }} mais dano contra",
-    "coverage": {
-      "heading": "Cobertura da Pokédex",
-      "edit": "Editar lista",
-      "weakness": "Fraquezas",
-      "normal": "Normal",
-      "resistance": "Resistências"
+    "mode": {
+      "combination": "Tipo Duplo",
+      "single": "Tipo Único"
+    },
+    "matchups": {
+      "summary": {
+        "heading": "Sumário de Confrontos",
+        "damage": "Dano",
+        "combinations": {
+          "heading": "Combinações",
+          "empty": "Sem tipos"
+        }
+      },
+      "types": {
+        "heading": "Tipos de Confrontos"
+      }
     },
     "abilities": {
       "choose": "Escolher habilidades"
@@ -23,8 +38,15 @@
       "names": {
         "freeze-dry": "Freeze-Dry",
         "thousand_arrows": "Thousand Arrows",
-        "flying_press": "Aperto Voador"
+        "flying_press": "Flying Press"
       }
+    },
+    "coverage": {
+      "heading": "Cobertura da Pokédex",
+      "edit": "Editar lista",
+      "weakness": "Fraquezas",
+      "normal": "Normal",
+      "resistance": "Resistências"
     },
     "teraPokemon": "Pokémon Tera",
     "coverageList": {
@@ -74,6 +96,7 @@
     "back": "Voltar a \"Ataque\""
   },
   "defense": {
+    "chooseTypes": "Escolher tipos",
     "takesXFrom": "Leva {{ x }} mais dano de",
     "chooseAbility": "Escolher habilidade",
     "chooseTeraType": "Escolher tipo tera",
@@ -82,7 +105,7 @@
       "tinted_lens": "Tinted Lens",
       "scrappy": "Scrappy",
       "tera_shell": "Tera Shell",
-      "filter": "Filtro",
+      "filter": "Filter",
       "wonder_guard": "Wonder Guard",
       "delta_stream": "Delta Stream",
       "fluffy": "Fluffy",
@@ -109,7 +132,7 @@
       "team": "Time"
     },
     "team": {
-      "tableHeading": "Contagem de combinações",
+      "tableHeading": "Contagem de Confrontos",
       "heading": "Editar time Pokémon",
       "add": "Adicionar Pokémon",
       "empty": "Nenhum Pokémon selecionado",
@@ -121,8 +144,7 @@
       "type": "Tipo",
       "edit": "Editar",
       "remove": "Remover"
-    },
-    "chooseTypes": "Escolher tipos"
+    }
   },
   "pokedex": {
     "search": {
@@ -144,6 +166,10 @@
       "previousLong": "Anterior",
       "firstLong": "Primeiro",
       "lastLong": "Último"
+    },
+    "sorting": {
+      "sortBy": "Sortear por",
+      "auto": "Padrão"
     },
     "stats": {
       "hp": "Vida",
@@ -190,6 +216,11 @@
       }
     },
     "back": "Voltar a Pokédex"
+  },
+  "about": {
+    "easterEgg": {
+      "button": "Mostrar Pokémon aleatório"
+    }
   },
   "more": {
     "contact": {
@@ -286,7 +317,8 @@
   },
   "general": {
     "loading": "Carregando...",
-    "copyLink": "Copiar link"
+    "copyLink": "Copiar link",
+    "clearChoices": "Refazer escolhas"
   },
   "games": {
     "label": "Geração do jogo",

@@ -1,13 +1,35 @@
 {
-  "title": "Máy Tính Toán Hệ trong Pokémon",
+  "title": "Máy Tính Toán Hệ Pokémon",
   "navigation": {
     "offense": "Tấn Công",
     "defense": "Phòng Thủ",
-    "pokedex": "Pokédex"
+    "pokedex": "Pokédex",
+    "other": "Khác",
+    "settings": "Cài Đặt",
+    "about": "Thông Tin",
+    "menu": "Menu",
+    "close": "Đóng"
   },
   "offense": {
-    "chooseTypes": "Chọn hệ",
+    "chooseTypes": "Chọn hệ tấn công",
     "dealsXTo": "Gây {{ x }} sát thương đến",
+    "mode": {
+      "combination": "Song hệ",
+      "single": "Đơn hệ"
+    },
+    "matchups": {
+      "summary": {
+        "heading": "Tóm tắt số liệu sát thương",
+        "damage": "Sát thương",
+        "combinations": {
+          "heading": "Tổ hợp đơn/song hệ",
+          "empty": "Không có đơn/song hệ nào"
+        }
+      },
+      "types": {
+        "heading": "Sát thương đến các đơn/song hệ"
+      }
+    },
     "abilities": {
       "choose": "Chọn đặc tính"
     },
@@ -66,16 +88,16 @@
     },
     "filename": "pkmn.help bao phủ hệ.csv",
     "status": {
-      "imported": "Nhập {{ n }} hình dạng của một Pokémon từ \"{{ tệp }}\"",
+      "imported": "Nhập {{ n }} dạng Pokémon từ \"{{ tệp }}\"",
       "exported": "Xuất tệp các hình dạng Pokémon mặc định",
       "reset": "Load các hình dạng Pokémon mặc định",
-      "errored": "Lỗi load CSV. Bạn đừng thay đổi tiêu đề."
+      "errored": "Lỗi tải CSV. Bạn đừng thay đổi tiêu đề."
     },
     "back": "Quay lại trang Tấn Công"
   },
   "defense": {
     "chooseTypes": "Chọn hệ (tối đa hai, ba nếu điều chỉnh cài đặt)",
-    "takesXFrom": "Nhận {{ x }} dame từ",
+    "takesXFrom": "Nhận {{ x }} sát thương từ",
     "chooseAbility": "Chọn Đặc Tính",
     "chooseTeraType": "Chọn hệ tera",
     "abilityNames": {
@@ -102,8 +124,8 @@
       "lightning_rod": "Cột Thu Lôi (Lighting Rod)",
       "motor_drive": "Đông Cơ Điện (Motor Drive)",
       "volt_absorb": "Trữ Điện (Volt Absorb)",
-      "primordial_sea": "Primordial Sea",
-      "desolate_land": "Desolate Land"
+      "primordial_sea": "Biển Ban Sơ (Primordial Sea)",
+      "desolate_land": "Đất Tận Cùng (Desolate Land)"
     },
     "mode": {
       "solo": "1 Pokémon (Solo)",
@@ -145,8 +167,12 @@
       "firstLong": "Trang đầu",
       "lastLong": "Trang cuối"
     },
+    "sorting": {
+      "sortBy": "Sắp xếp theo",
+      "auto": "Tự động"
+    },
     "stats": {
-      "hp": "HP/Máu",
+      "hp": "Máu",
       "hpLong": "HP/Máu",
       "attack": "Tấn Công VL",
       "attackLong": "Tấn Công Vật Lý",
@@ -158,8 +184,8 @@
       "specialDefenseLong": "Phòng Thủ Đặc Biệt",
       "speed": "Tốc Độ",
       "speedLong": "Tốc Độ",
-      "total": "Tổng Chỉ Số (BST)",
-      "totalLong": "Tổng Chỉ Số"
+      "total": "Tổng Chỉ Số Năng Lực",
+      "totalLong": "Tổng Chỉ Số Năng Lực (Base Stat Total)"
     }
   },
   "pokedexHelp": {
@@ -181,15 +207,20 @@
         "description": "Tìm kiếm các Pokémon hệ Giác Đấu trong tất cả forms (hình dạng) (ví dụ: Machamp, Lucario, Blaziken). LƯU Ý: Đánh \"giacdau\" liền kề không cách."
       },
       "doubleType": {
-        "query": "nước bay",
+        "query": "nuoc bay",
         "description": "Tìm kiếm các Pokémon thuộc song hệ Nước/Bay (ví dụ: Gyarados) hay Bay/Nước (ví dụ: Cramorant)."
       },
       "singleType": {
-        "query": "cỏ trống",
+        "query": "co trong",
         "description": "Tìm kiếm các Pokémon chỉ thuộc hệ Cỏ và không hệ thứ hai nào khác (ví dụ: Tangela, Chikorita, Lilligant)."
       }
     },
     "back": "Quay lại trang Pokédex"
+  },
+  "about": {
+    "easterEgg": {
+      "button": "Xem 1 Pokémon ngẫu nhiên"
+    }
   },
   "more": {
     "contact": {
@@ -231,7 +262,7 @@
     "help": {
       "heading": "Hỗ Trợ",
       "serviceWorker": {
-        "description": "Nếu bạn gặp vấn đề trong app, hãy ấn nút này.",
+        "description": "Nếu bạn gặp vấn đề trong app",
         "button": "Khởi Động lại"
       }
     },
@@ -286,7 +317,8 @@
   },
   "general": {
     "loading": "Đang load...",
-    "copyLink": "Sao chép link"
+    "copyLink": "Sao chép link",
+    "clearChoices": "Xóa"
   },
   "games": {
     "label": "Thế hệ (Generation)",
