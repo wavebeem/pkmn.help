@@ -1,5 +1,12 @@
 # Changelog
 
+## 2025-12-26
+
+- Updated Portuguese (Portugal) translation
+
+- Fixed an issue where automatic sorting in the Pokédex was always labeled
+  "Auto" regardless of available translations
+
 ## 2025-12-22
 
 - Updated Brazilian Portuguese translation

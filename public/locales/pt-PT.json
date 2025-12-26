@@ -3,11 +3,33 @@
   "navigation": {
     "offense": "Ataque",
     "defense": "Defesa",
-    "pokedex": "Pokédex"
+    "pokedex": "Pokédex",
+    "other": "Outros",
+    "settings": "Definições",
+    "about": "Sobre",
+    "menu": "Menu",
+    "close": "Fechar"
   },
   "offense": {
-    "chooseTypes": "Escolher tipos",
+    "chooseTypes": "Escolher tipos de ataque",
     "dealsXTo": "Causa {{ x }} de dano a",
+    "mode": {
+      "combination": "Duo",
+      "single": "Singular"
+    },
+    "matchups": {
+      "summary": {
+        "heading": "Resumo da partida",
+        "damage": "Dano",
+        "combinations": {
+          "heading": "Combinações",
+          "empty": "Sem tipos"
+        }
+      },
+      "types": {
+        "heading": "Tipos de confronto"
+      }
+    },
     "abilities": {
       "choose": "Escolher habilidades"
     },
@@ -82,7 +104,7 @@
       "none": "Nenhum",
       "tinted_lens": "Lentes Tingidas",
       "scrappy": "Scrappy",
-      "tera_shell": "Casco Tera",
+      "tera_shell": "Concha Tera",
       "filter": "Filtro",
       "wonder_guard": "Guarda Maravilhosa",
       "delta_stream": "Corrente Delta",
@@ -102,8 +124,8 @@
       "lightning_rod": "Para-Raios",
       "motor_drive": "Motor Elétrico",
       "volt_absorb": "Absorção de Eletricidade",
-      "primordial_sea": "Primordial Sea",
-      "desolate_land": "Desolate Land"
+      "primordial_sea": "Mar primordial",
+      "desolate_land": "Terra Desolada"
     },
     "mode": {
       "solo": "Solo",
@@ -145,8 +167,12 @@
       "firstLong": "Primeiro",
       "lastLong": "Último"
     },
+    "sorting": {
+      "sortBy": "Ordenar por",
+      "auto": "Automatico"
+    },
     "stats": {
-      "hp": "HP",
+      "hp": "Vida",
       "hpLong": "Pontos de Vida",
       "attack": "Ataque",
       "attackLong": "Ataque",
@@ -190,6 +216,11 @@
       }
     },
     "back": "Voltar à Pokédex"
+  },
+  "about": {
+    "easterEgg": {
+      "button": "Mostrar Pokémon Aleatorio"
+    }
   },
   "more": {
     "contact": {
@@ -286,7 +317,8 @@
   },
   "general": {
     "loading": "Carregando...",
-    "copyLink": "Copiar ligação"
+    "copyLink": "Copiar ligação",
+    "clearChoices": "Apagar Escolhas"
   },
   "games": {
     "label": "Geração do jogo",

@@ -3,20 +3,20 @@ title,Pokémon Type Calculator,Calculadora de Tipos de Pokémon
 navigation.offense,Offense,Ataque
 navigation.defense,Defense,Defesa
 navigation.pokedex,Pokédex,Pokédex
-navigation.other,Other,
-navigation.settings,Settings,
-navigation.about,About,
-navigation.menu,Menu,
-navigation.close,Close,
-offense.chooseTypes,Choose attack move types,Escolher tipos
+navigation.other,Other,Outros
+navigation.settings,Settings,Definições
+navigation.about,About,Sobre
+navigation.menu,Menu,Menu
+navigation.close,Close,Fechar
+offense.chooseTypes,Choose attack move types,Escolher tipos de ataque
 offense.dealsXTo,Deals {{ x }} damage to,Causa {{ x }} de dano a
-offense.mode.combination,Dual,
-offense.mode.single,Single,
-offense.matchups.summary.heading,Matchup summary,
-offense.matchups.summary.damage,Damage,
-offense.matchups.summary.combinations.heading,Combinations,
-offense.matchups.summary.combinations.empty,No types,
-offense.matchups.types.heading,Matchup types,
+offense.mode.combination,Dual,Duo
+offense.mode.single,Single,Singular
+offense.matchups.summary.heading,Matchup summary,Resumo da partida
+offense.matchups.summary.damage,Damage,Dano
+offense.matchups.summary.combinations.heading,Combinations,Combinações
+offense.matchups.summary.combinations.empty,No types,Sem tipos
+offense.matchups.types.heading,Matchup types,Tipos de confronto
 offense.abilities.choose,Choose abilities,Escolher habilidades
 offense.specialMoves.choose,Choose special moves,Escolher movimentos especiais
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Congelar a Seco
@@ -60,7 +60,7 @@ defense.chooseTeraType,Choose tera type,Selecionar o tipo de tera
 defense.abilityNames.none,None,Nenhum
 defense.abilityNames.tinted_lens,Tinted Lens,Lentes Tingidas
 defense.abilityNames.scrappy,Scrappy,Scrappy
-defense.abilityNames.tera_shell,Tera Shell,Casco Tera
+defense.abilityNames.tera_shell,Tera Shell,Concha Tera
 defense.abilityNames.filter,Filter,Filtro
 defense.abilityNames.wonder_guard,Wonder Guard,Guarda Maravilhosa
 defense.abilityNames.delta_stream,Delta Stream,Corrente Delta
@@ -80,8 +80,8 @@ defense.abilityNames.sap_sipper,Sap Sipper,Bebedor de Seiva
 defense.abilityNames.lightning_rod,Lightning Rod,Para-Raios
 defense.abilityNames.motor_drive,Motor Drive,Motor Elétrico
 defense.abilityNames.volt_absorb,Volt Absorb,Absorção de Eletricidade
-defense.abilityNames.primordial_sea,Primordial Sea,Primordial Sea
-defense.abilityNames.desolate_land,Desolate Land,Desolate Land
+defense.abilityNames.primordial_sea,Primordial Sea,Mar primordial
+defense.abilityNames.desolate_land,Desolate Land,Terra Desolada
 defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Equipa
 defense.team.tableHeading,Matchup counts,Contagem dos confrontos
@@ -108,9 +108,9 @@ pokedex.pagination.previous,Prev,Anterior
 pokedex.pagination.previousLong,Previous,Anterior
 pokedex.pagination.firstLong,First,Primeiro
 pokedex.pagination.lastLong,Last,Último
-pokedex.sorting.sortBy,Sort by,
-pokedex.sorting.auto,Auto,
-pokedex.stats.hp,HP,HP
+pokedex.sorting.sortBy,Sort by,Ordenar por
+pokedex.sorting.auto,Auto,Auto / Automatico
+pokedex.stats.hp,HP,Vida
 pokedex.stats.hpLong,Hit Points,Pontos de Vida
 pokedex.stats.attack,Attack,Ataque
 pokedex.stats.attackLong,Attack,Ataque
@@ -137,7 +137,7 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,relva nenhum
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Pesquisar por Pokémons que sejam apenas do tipo erva, sem 2º tipo (por exemplo, Tangela, Chikorita, Lilligant)."
 pokedexHelp.back,Back to Pokédex,Voltar à Pokédex
-about.easterEgg.button,Show random Pokémon,
+about.easterEgg.button,Show random Pokémon,Mostrar Pokémon Aleatorio
 more.contact.heading,Contact me,Contacte-me
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Olá, eu sou o <homepage>Sage</homepage> (eles/elas), e criei a Calculadora de Tipos de Pokémon (pkmn.help)."
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Envie as suas ideias e agradecimentos por correio eletrónico para <email>pkmn@wavebeem.com</email>.
@@ -195,7 +195,7 @@ banners.updateReady.whatsNew,What’s new,O que há de novo
 banners.updateReady.update,Update,Atualizar
 general.loading,Loading…,Carregando...
 general.copyLink,Copy link,Copiar ligação
-general.clearChoices,Clear choices,
+general.clearChoices,Clear choices,Apagar Escolhas
 games.label,Game generation,Geração do jogo
 games.help,Use type effectiveness from different game generations.,Utilizar a eficácia de tipos de diferentes gerações dos jogos.
 games.byID.gen1,Generation 1,Geração 1

@@ -145,7 +145,7 @@ export function ScreenPokedex(): ReactNode {
               setSortOrder(event.target.value);
             }}
           >
-            <option value="">Auto</option>
+            <option value="">{t("pokedex.sorting.auto")}</option>
             <SelectDivider />
             <option value="hp">{t("pokedex.stats.hp")}</option>
             <option value="attack">{t("pokedex.stats.attack")}</option>
