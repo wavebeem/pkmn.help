@@ -16,8 +16,8 @@
 
 ### Portuguese (Portugal)
 
+- DarkNightmare432
 - Lucas Lopes
-
 - Bernardo Ferreira
 
 ### Portuguese (Brazil)
