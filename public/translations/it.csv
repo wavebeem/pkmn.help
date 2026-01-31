@@ -82,6 +82,8 @@ defense.abilityNames.motor_drive,Motor Drive,Elettrorapid
 defense.abilityNames.volt_absorb,Volt Absorb,Assorbivolt
 defense.abilityNames.primordial_sea,Primordial Sea,Mare Primordiale
 defense.abilityNames.desolate_land,Desolate Land,Terra Estrema
+defense.abilityNames.solid_rock,Solid Rock,Solidroccia
+defense.abilityNames.prism_armor,Prism Armor,Scudoprisma
 defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Squadra
 defense.team.tableHeading,Matchup counts,Conteggio dei rapporti

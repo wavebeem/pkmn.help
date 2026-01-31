@@ -102,7 +102,9 @@
       "motor_drive": "でんきエンジン",
       "volt_absorb": "ちくでん",
       "primordial_sea": "はじまりのうみ",
-      "desolate_land": "おわりのだいち"
+      "desolate_land": "おわりのだいち",
+      "solid_rock": "ハードロック",
+      "prism_armor": "プリズムアーマー"
     },
     "mode": {
       "solo": "ソロ",

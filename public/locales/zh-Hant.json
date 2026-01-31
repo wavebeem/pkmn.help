@@ -102,7 +102,9 @@
       "motor_drive": "電能引擎",
       "volt_absorb": "吸電",
       "primordial_sea": "始源之海",
-      "desolate_land": "終結之地"
+      "desolate_land": "終結之地",
+      "solid_rock": "堅石",
+      "prism_armor": "稜鏡裝甲"
     },
     "mode": {
       "solo": "單打",

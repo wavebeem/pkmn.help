@@ -103,7 +103,9 @@
       "motor_drive": "Electromotor",
       "volt_absorb": "Absorbe electricidad",
       "primordial_sea": "Mar del Albor",
-      "desolate_land": "Tierra del Ocaso"
+      "desolate_land": "Tierra del Ocaso",
+      "solid_rock": "Roca Sólida",
+      "prism_armor": "Armadura Prisma"
     },
     "mode": {
       "solo": "Solo",

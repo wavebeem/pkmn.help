@@ -125,7 +125,8 @@
       "motor_drive": "Motor Elétrico",
       "volt_absorb": "Absorção de Eletricidade",
       "primordial_sea": "Mar primordial",
-      "desolate_land": "Terra Desolada"
+      "desolate_land": "Terra Desolada",
+      "solid_rock": "Pedra Sólida"
     },
     "mode": {
       "solo": "Solo",

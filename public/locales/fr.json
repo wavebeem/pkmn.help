@@ -125,7 +125,9 @@
       "motor_drive": "Motorisé",
       "volt_absorb": "Absorbe-Volt",
       "primordial_sea": "Mer Primaire",
-      "desolate_land": "Terre Finale"
+      "desolate_land": "Terre Finale",
+      "solid_rock": "Solide Roc",
+      "prism_armor": "Prisme-Armure"
     },
     "mode": {
       "solo": "Pokémon seul",

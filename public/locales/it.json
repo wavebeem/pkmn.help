@@ -103,7 +103,9 @@
       "motor_drive": "Elettrorapid",
       "volt_absorb": "Assorbivolt",
       "primordial_sea": "Mare Primordiale",
-      "desolate_land": "Terra Estrema"
+      "desolate_land": "Terra Estrema",
+      "solid_rock": "Solidroccia",
+      "prism_armor": "Scudoprisma"
     },
     "mode": {
       "solo": "Solo",

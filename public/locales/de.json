@@ -125,7 +125,9 @@
       "motor_drive": "Starthilfe",
       "volt_absorb": "Voltabsorber",
       "primordial_sea": "Urmeer",
-      "desolate_land": "Endland"
+      "desolate_land": "Endland",
+      "solid_rock": "Felskern",
+      "prism_armor": "Prismarüstung"
     },
     "mode": {
       "solo": "Solo",

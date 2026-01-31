@@ -103,7 +103,8 @@
       "motor_drive": "Motor Drive",
       "volt_absorb": "Volt Absorb",
       "primordial_sea": "Primordial Sea",
-      "desolate_land": "Desolate Land"
+      "desolate_land": "Desolate Land",
+      "solid_rock": "Solid Rock"
     },
     "mode": {
       "solo": "Solo",

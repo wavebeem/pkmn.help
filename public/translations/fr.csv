@@ -82,6 +82,8 @@ defense.abilityNames.motor_drive,Motor Drive,Motorisé
 defense.abilityNames.volt_absorb,Volt Absorb,Absorbe-Volt
 defense.abilityNames.primordial_sea,Primordial Sea,Mer Primaire
 defense.abilityNames.desolate_land,Desolate Land,Terre Finale
+defense.abilityNames.solid_rock,Solid Rock,Solide Roc
+defense.abilityNames.prism_armor,Prism Armor,Prisme-Armure
 defense.mode.solo,Solo,Pokémon seul
 defense.mode.team,Team,Équipe
 defense.team.tableHeading,Matchup counts,Nombre de match-ups

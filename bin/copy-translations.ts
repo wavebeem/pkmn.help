@@ -7,7 +7,7 @@ import { setPath } from "./lib/setPath.js";
 async function main() {
   const [fromKey, toKey] = process.argv.slice(2);
   if (!(fromKey && toKey)) {
-    throw new Error(`missing key to delete`);
+    throw new Error(`missing key to copy`);
   }
   for (const lang of allLanguages) {
     console.log(lang);

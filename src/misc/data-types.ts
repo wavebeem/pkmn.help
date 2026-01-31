@@ -100,6 +100,8 @@ export const abilities = {
   desolate_land: createAbility({ type: Type.water, value: 0 }),
   // Other
   filter: createAbility(),
+  solid_rock: createAbility(),
+  prism_armor: createAbility(),
   wonder_guard: createAbility(),
   delta_stream: createAbility(),
   tera_shell: createAbility(),

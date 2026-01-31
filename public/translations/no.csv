@@ -82,6 +82,8 @@ defense.abilityNames.motor_drive,Motor Drive,Motordrift
 defense.abilityNames.volt_absorb,Volt Absorb,Voltabsorberende
 defense.abilityNames.primordial_sea,Primordial Sea,Primordial Sea
 defense.abilityNames.desolate_land,Desolate Land,Desolate Land
+defense.abilityNames.solid_rock,Solid Rock,
+defense.abilityNames.prism_armor,Prism Armor,
 defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Lag
 defense.team.tableHeading,Matchup counts,Matchup teller

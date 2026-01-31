@@ -82,6 +82,8 @@ defense.abilityNames.motor_drive,Motor Drive,전기엔진
 defense.abilityNames.volt_absorb,Volt Absorb,축전
 defense.abilityNames.primordial_sea,Primordial Sea,시작의바다
 defense.abilityNames.desolate_land,Desolate Land,끝의대지
+defense.abilityNames.solid_rock,Solid Rock,하드록
+defense.abilityNames.prism_armor,Prism Armor,프리즘아머
 defense.mode.solo,Solo,싱글
 defense.mode.team,Team,더블
 defense.team.tableHeading,Matchup counts,매치업 카운트

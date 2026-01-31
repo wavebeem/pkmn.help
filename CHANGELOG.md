@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-01-30
+
+- Added Prism Armor ability
+
+- Added Solid Rock ability
+
 ## 2025-12-26
 
 - Updated Portuguese (Portugal) translation

@@ -102,7 +102,9 @@
       "motor_drive": "전기엔진",
       "volt_absorb": "축전",
       "primordial_sea": "시작의바다",
-      "desolate_land": "끝의대지"
+      "desolate_land": "끝의대지",
+      "solid_rock": "하드록",
+      "prism_armor": "프리즘아머"
     },
     "mode": {
       "solo": "싱글",

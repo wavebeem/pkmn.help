@@ -316,10 +316,16 @@ export function matchupFor({
       n = 0;
     }
   }
-  // Filter reduces all super effective damage by 25%
+  // Reduces all super effective damage by 25%
   //
   // https://bulbapedia.bulbagarden.net/wiki/Filter_(Ability)
-  if (abilityName === "filter") {
+  // https://bulbapedia.bulbagarden.net/wiki/Solid_Rock_(Ability)
+  // https://bulbapedia.bulbagarden.net/wiki/Prism_Armor_(Ability)
+  if (
+    abilityName === "filter" ||
+    abilityName === "solid_rock" ||
+    abilityName === "prism_armor"
+  ) {
     if (n > 1) {
       n *= 0.75;
     }
