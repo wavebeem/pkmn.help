@@ -66,7 +66,7 @@
     "heading": "Couverture de faiblesses",
     "paragraph1": "Importez/exportez des fichiers CSV Pokédex personnalisés pour voir la couverture des faiblesses pour différents Pokémons. Créez un fichier CSV personnalisé avec juste le tier Pokémon OU (overused), ou créez votre Pokémon depuis zéro.",
     "paragraph2": "Les données CSV sont chargées par nom d'en-tête de colonne, et non par ordre de colonne. Vous pouvez donc ajouter ou réorganiser des colonnes si vous le souhaitez (par exemple, ajouter une colonne \"tier\" ou une colonne \"notes\").",
-    "paragraph3": "Les dossiers CSV peuvent être modifiés avec Google doc, Microsoft Excel, OpenOffice, LibreOffice, Notepad et d'autres.",
+    "paragraph3": "Les dossiers CSV peuvent être modifiés avec Google Sheets, LibreOffice et d'autres.",
     "csvHeaders": {
       "number": "Numéro",
       "name": "Nom",
@@ -161,6 +161,9 @@
     "shiny": {
       "text": "Chromatique"
     },
+    "gender": {
+      "text": "Genre"
+    },
     "pagination": {
       "next": "Suiv.",
       "nextLong": "Suivant",
@@ -206,15 +209,15 @@
     "searchExamples": {
       "type": {
         "query": "Feu",
-        "description": "Rechercher des Pokémon qui ont le type feu dans n'importe la quelle de leur forme (ex Salamèche, Dracaufeu, Motisma)."
+        "description": "Rechercher des Pokémon qui ont le type Feu dans n'importe la quelle de leur forme (ex Salamèche, Dracaufeu, Motisma)."
       },
       "doubleType": {
         "query": "eau vol",
-        "description": "Rechercher des Pokémon qui sont de types eau/vol (ex Léviator) ou de type vol/eau (Nigosier)."
+        "description": "Rechercher des Pokémon qui sont de types Eau/Vol (ex Léviator) ou de type Vol/Eau (Nigosier)."
       },
       "singleType": {
         "query": "plante aucun",
-        "description": "Rechercher les Pokémon qui ont seulement le type plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)."
+        "description": "Rechercher les Pokémon qui ont seulement le type Plante, sans second type (ex. Saquedeneu, Germinon, Fragilady)."
       }
     },
     "back": "Revenir au Pokédex"
@@ -227,8 +230,8 @@
   "more": {
     "contact": {
       "heading": "Me contacter",
-      "intro": "Bonjour, je suis <homepage>Sage</homepage> (iel), et j'ai créé le Calculateur de types Pokémon (pkmn.help).",
-      "email": "Veuillez envoyer vos idées et vos remerciements à <email>pkmn@wavebeem.com</email>."
+      "intro": "Bonjour, je suis <homepage>Sage</homepage> (iel), le·a créateur·ice de PKMN.help (Calulateur de Type Pokémon)",
+      "email": "Si vous avez des idées et/ou des remerciements, vous pouvez les envoyer à <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
       "heading": "Paramètres",

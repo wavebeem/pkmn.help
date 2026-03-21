@@ -104,6 +104,7 @@ pokedex.search.helpLong,"Help, search Pokédex",ヘルプ、Pokédexを検索
 pokedex.search.notFound,No Pokémon found,ポケモンが見つかりませんでした
 pokedex.cry.text,Cry,鳴き声
 pokedex.shiny.text,Shiny,色違い
+pokedex.gender.text,Gender,
 pokedex.pagination.next,Next,次
 pokedex.pagination.nextLong,Next,次
 pokedex.pagination.previous,Prev,前

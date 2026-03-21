@@ -104,6 +104,7 @@ pokedex.search.helpLong,"Help, search Pokédex","Көмек, Покедекс і
 pokedex.search.notFound,No Pokémon found,Бірде-бір Покемон табылмады
 pokedex.cry.text,Cry,
 pokedex.shiny.text,Shiny,
+pokedex.gender.text,Gender,
 pokedex.pagination.next,Next,Келесі
 pokedex.pagination.nextLong,Next,Келесі
 pokedex.pagination.previous,Prev,Алд

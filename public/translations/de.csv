@@ -104,6 +104,7 @@ pokedex.search.helpLong,"Help, search Pokédex","Hilfe, Pokédex-Suche"
 pokedex.search.notFound,No Pokémon found,Keine Pokémon gefunden
 pokedex.cry.text,Cry,Ruf
 pokedex.shiny.text,Shiny,Schillernd
+pokedex.gender.text,Gender,
 pokedex.pagination.next,Next,Weiter
 pokedex.pagination.nextLong,Next,Weiter
 pokedex.pagination.previous,Prev,Zur

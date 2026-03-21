@@ -104,6 +104,7 @@ pokedex.search.helpLong,"Help, search Pokédex","Помощь, искать По
 pokedex.search.notFound,No Pokémon found,Нет найденных Покемонов
 pokedex.cry.text,Cry,
 pokedex.shiny.text,Shiny,
+pokedex.gender.text,Gender,
 pokedex.pagination.next,Next,След
 pokedex.pagination.nextLong,Next,Следующий
 pokedex.pagination.previous,Prev,Пред

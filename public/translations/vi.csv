@@ -104,6 +104,7 @@ pokedex.search.helpLong,"Help, search Pokédex","Trợ giúp, tìm kiếm Pokéd
 pokedex.search.notFound,No Pokémon found,Không tìm kiếm được Pokémon
 pokedex.cry.text,Cry,Tiếng kêu
 pokedex.shiny.text,Shiny,Shiny
+pokedex.gender.text,Gender,
 pokedex.pagination.next,Next,Tiếp
 pokedex.pagination.nextLong,Next,Tiếp
 pokedex.pagination.previous,Prev,Trước

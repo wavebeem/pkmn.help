@@ -104,6 +104,7 @@ pokedex.search.helpLong,"Help, search Pokédex",幫助，搜索寶可夢圖鑑
 pokedex.search.notFound,No Pokémon found,未找到寶可夢
 pokedex.cry.text,Cry,叫聲
 pokedex.shiny.text,Shiny,閃光
+pokedex.gender.text,Gender,
 pokedex.pagination.next,Next,下一個
 pokedex.pagination.nextLong,Next,下一個
 pokedex.pagination.previous,Prev,上一個

@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026-03-21
+
+- Updated French translations
+
+- Added Gigantamax forms to the Pokédex
+
+- Added most cosmetic forms to the Pokédex
+
+  - Please let me know if you see any that don't look useful
+
+    - I've tried to remove forms that don't have images or unique stats/types,
+      such as Koraidon and Miraidon's forms
+
 ## 2026-03-20
 
 - Added a toggle button to show Pokémon female forms in the Pokédex

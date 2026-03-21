@@ -14,7 +14,7 @@ function loadJSON(filename: string): any {
 }
 
 function pkmnUniqBy(mon: Record<string, any>): string {
-  return JSON.stringify([
+  const data = [
     mon.number,
     mon.hp,
     mon.attack,
@@ -23,10 +23,41 @@ function pkmnUniqBy(mon: Record<string, any>): string {
     mon.spDefense,
     mon.speed,
     mon.types,
-  ]);
+  ];
+  return JSON.stringify(data);
 }
 
-const blockList = new Set(["pikachu-starter", "eevee-starter"]);
+const blockListNames = new Set(["pikachu-starter", "eevee-starter"]);
+
+const blockListForms = new Set([
+  // Koraidon
+  "Limited Build",
+  "Sprinting Build",
+  "Swimming Build",
+  "Gliding Build",
+
+  // Miraidon
+  "Low-Power Mode",
+  "Drive Mode",
+  "Aquatic Mode",
+  "Glide Mode",
+
+  // Pikachu has too many cosmetic forms
+  "World Cap",
+  "Partner Cap",
+  "Alola Cap",
+  "Kalos Cap",
+  "Unova Cap",
+  "Sinnoh Cap",
+  "Hoenn Cap",
+  "Original Cap",
+  "Cosplay Pikachu",
+  "Pikachu Libre",
+  "Pikachu Ph.D.",
+  "Pikachu Pop Star",
+  "Pikachu Belle",
+  "Pikachu Rock Star",
+]);
 
 export async function mergeData(): Promise<void> {
   const pokeapi: Record<string, any>[] = loadJSON(pokeapiJSON);
@@ -38,7 +69,8 @@ export async function mergeData(): Promise<void> {
 
   mons = uniqBy(mons, pkmnUniqBy);
   mons = sortBy(mons, (mon) => mon.number);
-  mons = mons.filter((mon) => !blockList.has(mon.name));
+  mons = mons.filter((mon) => !blockListNames.has(mon.name));
+  mons = mons.filter((mon) => !blockListForms.has(mon.formNames.en));
 
   // Create unique IDs for gen9 data
   for (const m of mons) {

@@ -104,6 +104,7 @@ pokedex.search.helpLong,"Help, search Pokédex","Ajutor, caută în Pokedex"
 pokedex.search.notFound,No Pokémon found,Niciun Pokémon gasit
 pokedex.cry.text,Cry,Sunetul Pokémon-ului
 pokedex.shiny.text,Shiny,Strălucitor
+pokedex.gender.text,Gender,
 pokedex.pagination.next,Next,Următoarea
 pokedex.pagination.nextLong,Next,Următoarea
 pokedex.pagination.previous,Prev,Anterior
