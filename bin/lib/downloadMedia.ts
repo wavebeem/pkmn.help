@@ -21,8 +21,7 @@ async function fetchBytes(url: string): Promise<Uint8Array> {
 export async function downloadMedia(): Promise<void> {
   const list = readJSON(SRC);
   for (const item of list) {
-    await downloadSprite(item);
-    await downloadShinySprite(item);
+    await downloadSprites(item);
     await downloadCry(item);
   }
   saveJSON(DATA_DEST, list);
@@ -40,38 +39,19 @@ async function downloadCry(item: PokemonSimple): Promise<void> {
   delete newItem.cryURL;
 }
 
-async function downloadShinySprite(item: PokemonSimple): Promise<void> {
-  const shinyImgFilename = path.resolve(IMG_DEST, `${item.id}-shiny.png`);
-  if (
-    item.shinySpriteURL &&
-    item.shinySpriteURL.includes("img.pokemondb.net")
-  ) {
-    const url = item.shinySpriteURL.replace("/icon/", "/normal/");
-    console.log("Shiny", item.id);
-    const img = await fetchBytes(url);
-    fs.writeFileSync(shinyImgFilename, img);
-  } else if (item.shinySpriteURL && !fs.existsSync(shinyImgFilename)) {
-    console.log("Shiny", item.id);
-    const img = await fetchBytes(item.shinySpriteURL);
-    fs.writeFileSync(shinyImgFilename, img);
+async function downloadSprites(item: PokemonSimple): Promise<void> {
+  const map = new Map([
+    ["default", `${item.id}.png`],
+    ["female", `${item.id}-female.png`],
+    ["shiny", `${item.id}-shiny.png`],
+    ["shinyFemale", `${item.id}-shiny-female.png`],
+  ] as const);
+  for (const [type, filename] of map.entries()) {
+    const imgFilename = path.resolve(IMG_DEST, filename);
+    if (item.images[type] && !fs.existsSync(imgFilename)) {
+      console.log(type, item.id);
+      const img = await fetchBytes(item.images[type]);
+      fs.writeFileSync(imgFilename, img);
+    }
   }
-  const newItem = item as any;
-  newItem.hasShiny = Boolean(newItem.shinySpriteURL);
-  delete newItem.shinySpriteURL;
-}
-
-async function downloadSprite(item: PokemonSimple): Promise<void> {
-  const imgFilename = path.resolve(IMG_DEST, `${item.id}.png`);
-  if (item.spriteURL && item.spriteURL.includes("img.pokemondb.net")) {
-    const url = item.spriteURL.replace("/icon/", "/normal/");
-    console.log("Normal", item.id);
-    const img = await fetchBytes(url);
-    fs.writeFileSync(imgFilename, img);
-  } else if (item.spriteURL && !fs.existsSync(imgFilename)) {
-    console.log("Normal", item.id);
-    const img = await fetchBytes(item.spriteURL);
-    fs.writeFileSync(imgFilename, img);
-  }
-  const newItem = item as any;
-  delete newItem.spriteURL;
 }

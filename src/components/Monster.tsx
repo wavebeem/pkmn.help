@@ -11,6 +11,7 @@ import { Flex } from "./Flex";
 import {
   IconCry,
   IconDefenseSolo,
+  IconGender,
   IconOffenseDual,
   IconOffenseSingle,
   IconShiny,
@@ -19,6 +20,7 @@ import { IconButton } from "./IconButton";
 import styles from "./Monster.module.css";
 import { MonsterImage } from "./MonsterImage";
 import { StatsTable } from "./StatsTable";
+import { Gender } from "../misc/getImage";
 
 export type MonsterProps = {
   pokemon: Pokemon;
@@ -30,6 +32,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
   const { t, i18n } = useTranslation();
   const language = useComputedLanguage();
   const [shiny, setShiny] = useState(false);
+  const [gender, setGender] = useState<Gender>("default");
   const [isPlaying, setIsPlaying] = useState(false);
   const [animationState, setAnimationState] = useState<0 | 1 | 2>(0);
   const displayNumber = formatMonsterNumber(pokemon.number);
@@ -97,6 +100,24 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             <source src={`/cry/${pokemon.id}.m4a`} type="audio/mp4" />
             <source src={`/cry/${pokemon.id}.aac`} type="audio/aac" />
           </audio>
+          {pokemon.images.female && (
+            <IconButton
+              title={t("pokedex.gender.text")}
+              aria-label={t("pokedex.gender.text")}
+              aria-pressed={gender !== "default"}
+              onClick={() => {
+                setGender((g) => {
+                  if (g === "default") {
+                    return "female";
+                  }
+                  return "default";
+                });
+                animate();
+              }}
+            >
+              <IconGender size={16} />
+            </IconButton>
+          )}
           {pokemon.hasCry && (
             <IconButton
               title={t("pokedex.cry.text")}
@@ -116,7 +137,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
               <IconCry size={16} />
             </IconButton>
           )}
-          {pokemon.hasShiny && (
+          {pokemon.images.shiny && (
             <IconButton
               title={t("pokedex.shiny.text")}
               aria-label={t("pokedex.shiny.text")}
@@ -139,6 +160,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
                 pokemonID={pokemon.id}
                 shiny={shiny}
                 animationState={animationState}
+                gender={gender}
               />
             </Flex>
             <Flex

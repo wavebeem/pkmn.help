@@ -161,6 +161,9 @@
     "shiny": {
       "text": "Shiny"
     },
+    "gender": {
+      "text": "Gender"
+    },
     "pagination": {
       "next": "Next",
       "nextLong": "Next",

@@ -67,7 +67,9 @@ export interface PokemonDetail {
     other: {
       home: {
         front_default: string;
+        front_female: string;
         front_shiny: string;
+        front_shiny_female: string;
       };
     };
   };
@@ -82,8 +84,12 @@ export interface PokemonSimple {
   speciesNames: Record<string, string>;
   formNames: Record<string, string>;
   number: number;
-  spriteURL: string;
-  shinySpriteURL: string;
+  images: {
+    default: string;
+    female: string;
+    shiny: string;
+    shinyFemale: string;
+  };
   cryURL: string;
   hp: number;
   attack: number;
@@ -140,7 +146,7 @@ function toObject<T, K extends string, V>({
 export async function scrapePokeapi(): Promise<void> {
   const speciesList = await fetchPaginated<PokemonSpeciesBasic>(
     new URL("pokemon-species", API).toString(),
-    Number(process.env.LIMIT || "Infinity")
+    Number(process.env.LIMIT || "Infinity"),
   );
   const pokemonSimpleList: PokemonSimple[] = [];
   for (const species of speciesList) {
@@ -171,8 +177,12 @@ export async function scrapePokeapi(): Promise<void> {
         speciesNames,
         formNames,
         number: speciesDetail.id,
-        spriteURL: detail.sprites.other.home.front_default,
-        shinySpriteURL: detail.sprites.other.home.front_shiny ?? "",
+        images: {
+          default: detail.sprites.other.home.front_default,
+          female: detail.sprites.other.home.front_female ?? "",
+          shiny: detail.sprites.other.home.front_shiny ?? "",
+          shinyFemale: detail.sprites.other.home.front_shiny_female ?? "",
+        },
         cryURL: detail.cries.latest,
         hp: stats["hp"] ?? 0,
         attack: stats["attack"] ?? 0,

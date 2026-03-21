@@ -18,6 +18,12 @@ export interface Pokemon {
   speed: number;
   hasShiny: boolean;
   hasCry: boolean;
+  images: {
+    default: string;
+    female: string;
+    shiny: string;
+    shinyFemale: string;
+  };
 }
 
 export interface TranslatedPokemon extends Pokemon {

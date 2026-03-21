@@ -1,6 +1,6 @@
 import { clsx } from "clsx";
 import { useState, useCallback, ReactNode } from "react";
-import { getPngSrc, getWebpSrcSet } from "../misc/getImage";
+import { Gender, getPngSrc, getWebpSrcSet } from "../misc/getImage";
 import styles from "./MonsterImage.module.css";
 import { customProperties } from "../misc/customProperties";
 
@@ -11,6 +11,7 @@ interface MonsterImageProps {
   onLoad?: ({ pokemonID }: { pokemonID: string }) => void;
   scale?: number;
   shiny?: boolean;
+  gender?: Gender;
   animationState?: 0 | 1 | 2;
 }
 
@@ -19,6 +20,7 @@ export function MonsterImage({
   onLoad,
   scale = 0.5,
   shiny = false,
+  gender = "default",
   animationState = 0,
 }: MonsterImageProps): ReactNode {
   const size = 512 * scale;
@@ -46,12 +48,12 @@ export function MonsterImage({
         onError={setErrored}
       >
         <source
-          srcSet={getWebpSrcSet({ id: pokemonID, shiny })}
+          srcSet={getWebpSrcSet({ id: pokemonID, shiny, gender })}
           type="image/webp"
         />
         <img
           loading="lazy"
-          src={getPngSrc({ id: pokemonID, shiny })}
+          src={getPngSrc({ id: pokemonID, shiny, gender })}
           role="presentation"
           alt=""
           data-shiny={shiny && state === "loaded"}
