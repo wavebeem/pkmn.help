@@ -9,15 +9,23 @@
   color: var(--color-primary);
   border: 1px solid transparent;
   background: var(--background-button);
-}
 
-.root:active {
-  filter: var(--filter-darken);
-}
+  &:active {
+    filter: var(--filter-darken);
+  }
 
-.root[aria-pressed="true"] {
-  border-color: var(--color-border-subtle);
-  background: var(--color-accent-bg);
-  color: var(--color-accent-fg);
-  box-shadow: inset var(--shadow-button);
+  &[aria-pressed="true"] {
+    border-color: var(--color-border-subtle);
+    background: var(--color-accent-bg);
+    color: var(--color-accent-fg);
+    box-shadow: inset var(--shadow-button);
+  }
+
+  &:is(:disabled, [aria-disabled="true"]) {
+    background: transparent;
+    color: var(--color-disabled);
+    border-color: var(--color-border-disabled);
+    box-shadow: none;
+    filter: none;
+  }
 }

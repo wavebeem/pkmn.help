@@ -16,13 +16,12 @@ export interface Pokemon {
   spAttack: number;
   spDefense: number;
   speed: number;
-  hasShiny: boolean;
   hasCry: boolean;
   images: {
-    default: string;
-    female: string;
-    shiny: string;
-    shinyFemale: string;
+    default: boolean;
+    female: boolean;
+    shiny: boolean;
+    shinyFemale: boolean;
   };
 }
 

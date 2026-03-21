@@ -88,6 +88,9 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             onPlay={() => {
               setIsPlaying(true);
               animate();
+              if (audioRef.current) {
+                audioRef.current.volume = 20 / 100;
+              }
             }}
             onEnded={() => {
               setIsPlaying(false);
@@ -100,56 +103,53 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             <source src={`/cry/${pokemon.id}.m4a`} type="audio/mp4" />
             <source src={`/cry/${pokemon.id}.aac`} type="audio/aac" />
           </audio>
-          {pokemon.images.female && (
-            <IconButton
-              title={t("pokedex.gender.text")}
-              aria-label={t("pokedex.gender.text")}
-              aria-pressed={gender !== "default"}
-              onClick={() => {
-                setGender((g) => {
-                  if (g === "default") {
-                    return "female";
-                  }
-                  return "default";
-                });
-                animate();
-              }}
-            >
-              <IconGender size={16} />
-            </IconButton>
-          )}
-          {pokemon.hasCry && (
-            <IconButton
-              title={t("pokedex.cry.text")}
-              aria-label={t("pokedex.cry.text")}
-              aria-pressed={isPlaying}
-              aria-disabled={isPlaying}
-              onClick={() => {
-                const audio = audioRef.current;
-                if (!audio) {
-                  return;
+          <IconButton
+            title={t("pokedex.cry.text")}
+            aria-label={t("pokedex.cry.text")}
+            aria-pressed={isPlaying}
+            aria-disabled={isPlaying}
+            disabled={!pokemon.hasCry}
+            onClick={() => {
+              const audio = audioRef.current;
+              if (!audio) {
+                return;
+              }
+              if (audio.paused) {
+                audio.play();
+              }
+            }}
+          >
+            <IconCry size={16} />
+          </IconButton>
+          <IconButton
+            title={t("pokedex.gender.text")}
+            aria-label={t("pokedex.gender.text")}
+            aria-pressed={gender !== "default"}
+            disabled={!pokemon.images.female}
+            onClick={() => {
+              setGender((g) => {
+                if (g === "default") {
+                  return "female";
                 }
-                if (audio.paused) {
-                  audio.play();
-                }
-              }}
-            >
-              <IconCry size={16} />
-            </IconButton>
-          )}
-          {pokemon.images.shiny && (
-            <IconButton
-              title={t("pokedex.shiny.text")}
-              aria-label={t("pokedex.shiny.text")}
-              aria-pressed={shiny}
-              onClick={() => {
-                setShiny(!shiny);
-                animate();
-              }}
-            >
-              <IconShiny size={16} />
-            </IconButton>
-          )}
+                return "default";
+              });
+              animate();
+            }}
+          >
+            <IconGender size={16} />
+          </IconButton>
+          <IconButton
+            title={t("pokedex.shiny.text")}
+            aria-label={t("pokedex.shiny.text")}
+            aria-pressed={shiny}
+            disabled={!pokemon.images.shiny}
+            onClick={() => {
+              setShiny(!shiny);
+              animate();
+            }}
+          >
+            <IconShiny size={16} />
+          </IconButton>
         </div>
       </Flex>
       <div className={styles.monster}>

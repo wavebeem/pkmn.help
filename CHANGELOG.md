@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-03-20
+
+- Added a toggle button to show Pokémon female forms in the Pokédex
+
+- Lowered Pokémon cry volume to 20%
+
 ## 2026-01-30
 
 - Added Prism Armor ability
