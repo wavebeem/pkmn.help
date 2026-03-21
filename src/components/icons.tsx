@@ -1,4 +1,6 @@
 export {
+  // Gender select
+  VenusAndMars as IconGender,
   // Tab bar
   Sword as IconOffenseSingle,
   Swords as IconOffenseDual,

@@ -16,8 +16,13 @@ export interface Pokemon {
   spAttack: number;
   spDefense: number;
   speed: number;
-  hasShiny: boolean;
   hasCry: boolean;
+  images: {
+    default: boolean;
+    female: boolean;
+    shiny: boolean;
+    shinyFemale: boolean;
+  };
 }
 
 export interface TranslatedPokemon extends Pokemon {

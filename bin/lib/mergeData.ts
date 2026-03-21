@@ -42,15 +42,14 @@ export async function mergeData(): Promise<void> {
 
   // Create unique IDs for gen9 data
   for (const m of mons) {
-    delete m.spriteURL;
-    delete m.shinySpriteURL;
     delete m.cryURL;
-    if (fs.existsSync(`public/img/512/${m.id}-shiny.png`)) {
-      m.hasShiny = true;
-    }
     if (fs.existsSync(`public/cry/${m.id}.ogg`)) {
       m.hasCry = true;
     }
+    m.images.default = Boolean(m.images.default);
+    m.images.female = Boolean(m.images.female);
+    m.images.shiny = Boolean(m.images.shiny);
+    m.images.shinyFemale = Boolean(m.images.shinyFemale);
     const id = String(m.id || m.number);
     if (idSet.has(id)) {
       console.log(m.name, m.formNames.en, id, "exists...");
