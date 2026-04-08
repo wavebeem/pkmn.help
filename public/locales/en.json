@@ -258,6 +258,14 @@
           "2": "Two types (2)",
           "3": "Three types (3)"
         }
+      },
+      "battleVariant": {
+        "label": "Battle variant",
+        "help": "During an Inverse Battle, type matchups are reversed and no type is immune to any other type.",
+        "values": {
+          "regular": "Regular",
+          "inverse_battle": "Inverse Battle"
+        }
       }
     },
     "changes": {

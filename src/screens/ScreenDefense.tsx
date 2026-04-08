@@ -23,6 +23,8 @@ import {
   typesFromString,
 } from "../misc/data-types";
 import styles from "./ScreenDefense.module.css";
+import { useBattleVariant } from "../hooks/useBattleVariant";
+import { PlainBadge } from "../components/PlainBadge";
 
 export function ScreenDefense(): ReactNode {
   const [generation] = useGeneration();
@@ -31,6 +33,7 @@ export function ScreenDefense(): ReactNode {
   const location = useLocation();
   const [typeCount] = useTypeCount();
   const search = useSearch();
+  const [battleVariant] = useBattleVariant();
 
   const [types, setTypes] = useSessionStorage<Type[]>("defense.types", []);
   const [teraType, setTeraType] = useSessionStorage<Type>(
@@ -164,7 +167,14 @@ export function ScreenDefense(): ReactNode {
       </Flex>
 
       <Flex direction="column" gap="large">
+        <Flex hidden={battleVariant !== "inverse_battle"}>
+          <PlainBadge>
+            {t("more.settings.battleVariant.values.inverse_battle")}
+          </PlainBadge>
+        </Flex>
+
         <Matchups
+          battleVariant={battleVariant}
           kind="defense"
           generation={generation}
           types={types}

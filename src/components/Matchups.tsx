@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { characters } from "../misc/characters";
 import { Generation } from "../misc/data-generations";
 import {
+  BattleVariant,
   defensiveMatchups,
   GroupedMatchups,
   offensiveMatchups,
@@ -24,6 +25,7 @@ import { useMediaQuery } from "../hooks/useMediaQuery";
 
 interface MatchupsProps {
   kind: "offense-single" | "offense-combination" | "defense";
+  battleVariant: BattleVariant;
   generation: Generation;
   types: Type[];
   teraType: Type;
@@ -33,6 +35,7 @@ interface MatchupsProps {
 }
 
 export function Matchups({
+  battleVariant,
   kind,
   generation,
   types,
@@ -45,6 +48,7 @@ export function Matchups({
   let matchups: GroupedMatchups;
   if (kind === "offense-single" || kind === "offense-combination") {
     matchups = offensiveMatchups({
+      battleVariant,
       gen: generation,
       offenseTypes: types,
       specialMoves,
@@ -61,6 +65,7 @@ export function Matchups({
     }
   } else {
     matchups = defensiveMatchups({
+      battleVariant,
       gen: generation,
       defenseTypes: types,
       defenseTeraType: teraType,

@@ -18,6 +18,7 @@ import {
   showLang,
   unofficialLanguages,
 } from "../misc/lang";
+import { useBattleVariant } from "../hooks/useBattleVariant";
 
 export function ScreenSettings(): ReactNode {
   const { t, i18n } = useTranslation();
@@ -25,6 +26,7 @@ export function ScreenSettings(): ReactNode {
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();
   const [typeCount, setTypeCount] = useTypeCount();
+  const [battleVariant, setBattleVariant] = useBattleVariant();
   const autoLang = getDesiredLanguage() || "en";
 
   return (
@@ -147,6 +149,27 @@ export function ScreenSettings(): ReactNode {
                   {
                     value: "3",
                     label: t("more.settings.typeCount.values.3"),
+                  },
+                ]}
+              />
+
+              <RadioGroup
+                label={t("more.settings.battleVariant.label")}
+                value={battleVariant}
+                helpText={t("more.settings.battleVariant.help")}
+                onChange={(option) => {
+                  setBattleVariant(option.value);
+                }}
+                options={[
+                  {
+                    value: "regular",
+                    label: t("more.settings.battleVariant.values.regular"),
+                  },
+                  {
+                    value: "inverse_battle",
+                    label: t(
+                      "more.settings.battleVariant.values.inverse_battle",
+                    ),
                   },
                 ]}
               />

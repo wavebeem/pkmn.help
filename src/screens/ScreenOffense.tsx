@@ -29,6 +29,8 @@ import {
   typesFromString,
 } from "../misc/data-types";
 import styles from "./ScreenOffense.module.css";
+import { useBattleVariant } from "../hooks/useBattleVariant";
+import { PlainBadge } from "../components/PlainBadge";
 
 export type ScreenOffenseProps = {
   mode: "combination" | "single";
@@ -37,6 +39,8 @@ export type ScreenOffenseProps = {
 export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
   const typeLimit = Infinity;
   // const typeLimit = mode === "single" ? 1 : Infinity;
+
+  const [battleVariant] = useBattleVariant();
 
   const { coverageTypes, fallbackCoverageTypes, isLoading } = useAppContext();
   const [generation] = useGeneration();
@@ -182,7 +186,14 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
         )}
       </Flex>
       <Flex direction="column" gap="large">
+        <Flex hidden={battleVariant !== "inverse_battle"}>
+          <PlainBadge>
+            {t("more.settings.battleVariant.values.inverse_battle")}
+          </PlainBadge>
+        </Flex>
+
         <Matchups
+          battleVariant={battleVariant}
           kind={
             mode === "combination" ? "offense-combination" : "offense-single"
           }

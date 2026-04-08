@@ -9,6 +9,9 @@ import {
   typesForGeneration,
 } from "./data-types";
 
+export const battleVariants = ["regular", "inverse_battle"] as const;
+export type BattleVariant = (typeof battleVariants)[number];
+
 const typesInPokemondbOrder = [
   Type.normal,
   Type.fire,
@@ -130,12 +133,14 @@ interface PartitionedMatchups {
 }
 
 export function partitionMatchups({
+  battleVariant,
   coverageTypes,
   generation,
   types,
   offenseAbilities,
   specialMoves,
 }: {
+  battleVariant: BattleVariant;
   coverageTypes: CoverageType[];
   generation: Generation;
   types: Type[];
@@ -177,6 +182,7 @@ export function partitionMatchups({
         for (const t of offTypes) {
           arr.push(
             matchupFor({
+              battleVariant,
               generation,
               defenseTypes: ct.types,
               defenseTeraType: Type.none,
@@ -203,6 +209,7 @@ export function partitionMatchups({
 }
 
 export function matchupFor({
+  battleVariant,
   generation,
   defenseTypes,
   offenseType,
@@ -211,6 +218,7 @@ export function matchupFor({
   abilityName,
   specialMove,
 }: {
+  battleVariant: BattleVariant;
   generation: Generation;
   defenseTypes: Type[];
   defenseTeraType: Type;
@@ -224,6 +232,7 @@ export function matchupFor({
   // them.
   if (specialMove === "flying_press") {
     const opts = {
+      battleVariant,
       generation,
       defenseTypes,
       defenseTeraType,
@@ -293,6 +302,15 @@ export function matchupFor({
       offenseType === Type.ground
     ) {
       x = 1;
+    }
+    if (battleVariant === "inverse_battle") {
+      if (x === 0) {
+        // Inverse of 0 is merely double damage, not infinite damage.
+        x = 2;
+      } else {
+        // Inverses damage taken based on type
+        x = 1 / x;
+      }
     }
     n *= x;
   }
@@ -436,12 +454,14 @@ function makeTypePairs(items: Type[]): [Type, Type][] {
 }
 
 export function offensiveMatchups({
+  battleVariant,
   gen,
   offenseTypes,
   specialMoves,
   offenseAbilities,
   kind,
 }: {
+  battleVariant: BattleVariant;
   gen: Generation;
   offenseTypes: readonly Type[];
   specialMoves: readonly SpecialMove[];
@@ -481,6 +501,7 @@ export function offensiveMatchups({
       return moves.flatMap((move) => {
         return offTypes.map((offense) => {
           const x = matchupFor({
+            battleVariant,
             generation: gen,
             defenseTypes: [t1, t2],
             defenseTeraType: "none",
@@ -500,11 +521,13 @@ export function offensiveMatchups({
 }
 
 export function defensiveMatchups({
+  battleVariant,
   gen,
   defenseTypes,
   defenseTeraType,
   abilityName,
 }: {
+  battleVariant: BattleVariant;
   gen: Generation;
   defenseTypes: Type[];
   defenseTeraType: Type;
@@ -512,6 +535,7 @@ export function defensiveMatchups({
 }): GroupedMatchups {
   const matchups = typesForGeneration(gen).map((t) => {
     const eff = matchupFor({
+      battleVariant,
       generation: gen,
       defenseTypes,
       defenseTeraType,

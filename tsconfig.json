@@ -6,7 +6,6 @@
     "target": "ESNext",
     "noEmit": true,
     "strict": true,
-    "esModuleInterop": false,
     "skipLibCheck": false,
     "forceConsistentCasingInFileNames": true,
     "allowSyntheticDefaultImports": true,

@@ -5,7 +5,7 @@ import { useTypeCount } from "../hooks/useTypeCount";
 import { assertNever } from "../misc/assertNever";
 import { compact } from "../misc/compact";
 import { Generation } from "../misc/data-generations";
-import { matchupFor } from "../misc/data-matchups";
+import { BattleVariant, matchupFor } from "../misc/data-matchups";
 import { AbilityName, Type, typesForGeneration } from "../misc/data-types";
 import { useBrowserSize } from "../misc/useBrowserSize";
 import { Badge } from "./Badge";
@@ -102,6 +102,7 @@ class Matcher {
 }
 
 export interface MatchupsTeamProps {
+  battleVariant: BattleVariant;
   generation: Generation;
   typesList: Type[][];
   teraTypes: Type[];
@@ -110,6 +111,7 @@ export interface MatchupsTeamProps {
 }
 
 export function MatchupsTeam({
+  battleVariant,
   generation,
   typesList,
   teraTypes,
@@ -166,6 +168,7 @@ export function MatchupsTeam({
         const abilityName = abilityList[typeIndex];
         const teraType = teraTypes[typeIndex];
         const eff = matchupFor({
+          battleVariant,
           generation,
           defenseTypes: types,
           offenseType: genType,

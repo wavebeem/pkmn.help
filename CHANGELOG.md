@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Added "Inverse Battle" support to the Settings screen
+
 ## 2026-03-21
 
 - Updated French translations
