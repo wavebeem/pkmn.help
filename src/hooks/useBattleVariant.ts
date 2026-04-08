@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useCallback } from "react";
+// import { Dispatch, SetStateAction, useCallback } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import { BattleVariant, battleVariants } from "../misc/data-matchups";
 
@@ -6,6 +6,9 @@ const set = new Set<string>(battleVariants);
 function isBattleVariant(s: string): s is BattleVariant {
   return set.has(s);
 }
+
+// Wow, putting all your validation in a hook like this is awful! I can see why
+// I didn't do it for my other global state things.
 
 export function useBattleVariant(): [
   BattleVariant,

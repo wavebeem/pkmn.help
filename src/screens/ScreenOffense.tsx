@@ -219,6 +219,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
                   ({listLengthFormatted})
                 </div>
                 <DexCoverage
+                  battleVariant={battleVariant}
                   generation={generation}
                   coverageTypes={coverageTypes ?? fallbackCoverageTypes}
                   types={offenseTypes}

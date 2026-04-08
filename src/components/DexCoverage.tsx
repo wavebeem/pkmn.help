@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Generation } from "../misc/data-generations";
-import { partitionMatchups } from "../misc/data-matchups";
+import { BattleVariant, partitionMatchups } from "../misc/data-matchups";
 import {
   AbilityName,
   CoverageType,
@@ -16,6 +16,7 @@ import { Spinner } from "./Spinner";
 import { ReactNode } from "react";
 
 interface DexCoverageProps {
+  battleVariant: BattleVariant;
   generation: Generation;
   coverageTypes: CoverageType[];
   types: Type[];
@@ -25,6 +26,7 @@ interface DexCoverageProps {
 }
 
 export function DexCoverage({
+  battleVariant,
   generation,
   coverageTypes,
   types,
@@ -38,6 +40,7 @@ export function DexCoverage({
     normal,
     weakness: weak,
   } = partitionMatchups({
+    battleVariant,
     coverageTypes,
     types,
     generation,
