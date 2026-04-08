@@ -14,7 +14,7 @@ export function useBattleVariant(): [
   BattleVariant,
   (bv: BattleVariant) => void,
 ] {
-  let [x, setX] = useLocalStorage("battle_mode", "regular");
+  const [x, setX] = useLocalStorage("battle_mode", "regular");
 
   function f(b: BattleVariant | (() => BattleVariant)) {
     if (typeof b === "function") {
