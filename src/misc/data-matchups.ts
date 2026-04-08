@@ -303,6 +303,10 @@ export function matchupFor({
     ) {
       x = 1;
     }
+    // During an Inverse Battle, type matchups are reversed and no type is
+    // immune to any other type.
+    //
+    // https://bulbapedia.bulbagarden.net/wiki/Inverse_Battle
     if (battleVariant === "inverse_battle") {
       if (x === 0) {
         // Inverse of 0 is merely double damage, not infinite damage.
