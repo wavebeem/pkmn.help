@@ -86,7 +86,7 @@
       "button": "Khởi động lại",
       "description": "Khởi động lại về Pokédex mặc định"
     },
-    "filename": "pkmn.help bao phủ hệ.csv",
+    "filename": "PKMN.help bao phủ hệ.csv",
     "status": {
       "imported": "Nhập {{ n }} dạng Pokémon từ \"{{ tệp }}\"",
       "exported": "Xuất tệp các hình dạng Pokémon mặc định",
@@ -226,7 +226,7 @@
   "more": {
     "contact": {
       "heading": "Liên hệ với tôi",
-      "intro": "Xin chào, tôi là <homepage>Sage</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này (pkmn.help).",
+      "intro": "Xin chào, tôi là <homepage>Sage</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này (PKMN.help).",
       "email": "Bạn có thể email bất kể câu hỏi và cảm ơn đến <email>pkmn@wavebeem.com</email>."
     },
     "settings": {

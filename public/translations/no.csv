@@ -47,7 +47,7 @@ coverage.import.button,Import,Importer
 coverage.import.description,Import an edited Pokédex CSV file,Importer en redigert Pokédex CSV fil
 coverage.reset.button,Reset,Start på nytt
 coverage.reset.description,Reset to the default Pokédex,Tilbakestill til standard Pokédexen
-coverage.filename,pkmn.help type coverage.csv,pkmn.hjelp type analyse.csv
+coverage.filename,PKMN.help type coverage.csv,pkmn.hjelp type analyse.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,"Importerte {{ n }} Pokémon former fra ""{{ fil }}"""
 coverage.status.exported,Exported default Pokémon forms,Eksporterte standard Pokémon former
 coverage.status.reset,Loaded default Pokémon forms,Lastet inn standard Pokémon former
@@ -142,7 +142,7 @@ pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are 
 pokedexHelp.back,Back to Pokédex,Tilbake til Pokédexen
 about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,Ta kontakt med meg
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Hei, jeg er <homepage>Sage</homepage> (de/dem), og jeg har laget Pokémon Type Kalkulator (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Hei, jeg er <homepage>Sage</homepage> (de/dem), og jeg har laget Pokémon Type Kalkulator (PKMN.help)."
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Plis send meg eposter om dine tanker og takker til <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Instillinger
 more.settings.language.label,Language,Språk

@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-04-10
+
+- Updated Italian translations
+
 ## 2026-03-21
 
 - Updated French translations

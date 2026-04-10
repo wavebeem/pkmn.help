@@ -47,7 +47,7 @@ coverage.import.button,Import,匯入
 coverage.import.description,Import an edited Pokédex CSV file,匯入編輯過的寶可夢圖鑑 CSV 檔案
 coverage.reset.button,Reset,重置
 coverage.reset.description,Reset to the default Pokédex,重置為默認寶可夢圖鑑
-coverage.filename,pkmn.help type coverage.csv,pkmn.help 屬性覆蓋範圍.csv
+coverage.filename,PKMN.help type coverage.csv,PKMN.help 屬性覆蓋範圍.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,從“{{ file }}”導入了 {{ n }} 個寶可夢形式
 coverage.status.exported,Exported default Pokémon forms,匯出了預設的寶可夢形式
 coverage.status.reset,Loaded default Pokémon forms,載入了預設的寶可夢形式
@@ -142,7 +142,7 @@ pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are 
 pokedexHelp.back,Back to Pokédex,返回寶可夢圖鑑
 about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,聯繫我
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).",你好，我是 <homepage>Sage</homepage>（他們），我製作了 神奇寶貝屬性計算器 (pkmn.help）。
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).",你好，我是 <homepage>Sage</homepage>（他們），我製作了 神奇寶貝屬性計算器 (PKMN.help）。
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,請將您的想法和感謝發送到 <email>pkmn@wavebeem.com</email>。
 more.settings.heading,Settings,設置
 more.settings.language.label,Language,語言

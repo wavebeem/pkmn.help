@@ -47,7 +47,7 @@ coverage.import.button,Import,Nhập tệp
 coverage.import.description,Import an edited Pokédex CSV file,Nhập tệp CSV Pokédex đã chỉnh sửa
 coverage.reset.button,Reset,Khởi động lại
 coverage.reset.description,Reset to the default Pokédex,Khởi động lại về Pokédex mặc định
-coverage.filename,pkmn.help type coverage.csv,pkmn.help bao phủ hệ.csv
+coverage.filename,PKMN.help type coverage.csv,PKMN.help bao phủ hệ.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,"Nhập {{ n }} dạng Pokémon từ ""{{ tệp }}"""
 coverage.status.exported,Exported default Pokémon forms,Xuất tệp các hình dạng Pokémon mặc định
 coverage.status.reset,Loaded default Pokémon forms,Load các hình dạng Pokémon mặc định
@@ -142,7 +142,7 @@ pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are 
 pokedexHelp.back,Back to Pokédex,Quay lại trang Pokédex
 about.easterEgg.button,Show random Pokémon,Xem 1 Pokémon ngẫu nhiên
 more.contact.heading,Contact me,Liên hệ với tôi
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Xin chào, tôi là <homepage>Sage</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Xin chào, tôi là <homepage>Sage</homepage> vào tôi là người tạo ra trang web Máy Tính Toán Hệ trong Pokémon này (PKMN.help)."
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Bạn có thể email bất kể câu hỏi và cảm ơn đến <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Cài Đặt
 more.settings.language.label,Language,Ngôn Ngữ

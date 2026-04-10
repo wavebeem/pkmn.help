@@ -33,7 +33,7 @@
       "button": "Қалпына Келтіру",
       "description": "Бастапқы Покедекске дейін қалпына келтіру."
     },
-    "filename": "pkmn.help тип қамту.csv",
+    "filename": "PKMN.help тип қамту.csv",
     "status": {
       "imported": "{{ n }} Покемон түрлері “{{ file }}” файлынан импортталды.",
       "exported": "Бастапқы Покемон түрлері экспортталды.",
@@ -134,7 +134,7 @@
   "more": {
     "contact": {
       "heading": "Менімен Байланысыңыз",
-      "intro": "Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help).",
+      "intro": "Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(PKMN.help).",
       "email": "Өтініш, өз ойларыңызды және рақметтеріңізді <email>pkmn@wavebeem.com</email> поштасына жіберіңіз."
     },
     "settings": {

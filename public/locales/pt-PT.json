@@ -86,7 +86,7 @@
       "button": "Reiniciar",
       "description": "Repor para a Pokédex predefinida"
     },
-    "filename": "pkmn.help cobertura por tipo.csv",
+    "filename": "PKMN.help cobertura por tipo.csv",
     "status": {
       "imported": "Importadas {{ n }} formas de Pokémon de “{{ file }}\"",
       "exported": "Formas de Pokémon predefinidas exportadas",
@@ -226,7 +226,7 @@
   "more": {
     "contact": {
       "heading": "Contacte-me",
-      "intro": "Olá, eu sou o <homepage>Sage</homepage> (eles/elas), e criei a Calculadora de Tipos de Pokémon (pkmn.help).",
+      "intro": "Olá, eu sou o <homepage>Sage</homepage> (eles/elas), e criei a Calculadora de Tipos de Pokémon (PKMN.help).",
       "email": "Envie as suas ideias e agradecimentos por correio eletrónico para <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
