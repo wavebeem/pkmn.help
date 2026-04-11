@@ -64,7 +64,7 @@
       "button": "Restablecer",
       "description": "Restablecer a la Pokedéx predeterminada"
     },
-    "filename": "pkmn.help type coverage.csv",
+    "filename": "PKMN.help type coverage.csv",
     "status": {
       "imported": "Se importaron {{ n }} formularios de Pokémon desde “{{ file }}”",
       "exported": "Se exportaron los formularios predeterminados de Pokémon",
@@ -196,7 +196,7 @@
   "more": {
     "contact": {
       "heading": "Contáctame",
-      "intro": "Hola, soy <homepage>Sage</homepage> (elle/elles) e hice la Calculadora de tipos de Pokémon (pkmn.help).",
+      "intro": "Hola, soy <homepage>Sage</homepage> (elle/elles) e hice la Calculadora de tipos de Pokémon (PKMN.help).",
       "email": "Por favor, envíe sus comentarios y agradecimientos por correo electrónico a <email>pkmn@wavebeem.com</email>"
     },
     "settings": {

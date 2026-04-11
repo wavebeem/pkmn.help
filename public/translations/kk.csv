@@ -47,7 +47,7 @@ coverage.import.button,Import,Импорттау
 coverage.import.description,Import an edited Pokédex CSV file,Өңделген Покедекстің CSV файлын импорттау.
 coverage.reset.button,Reset,Қалпына Келтіру
 coverage.reset.description,Reset to the default Pokédex,Бастапқы Покедекске дейін қалпына келтіру.
-coverage.filename,pkmn.help type coverage.csv,pkmn.help тип қамту.csv
+coverage.filename,PKMN.help type coverage.csv,PKMN.help тип қамту.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,{{ n }} Покемон түрлері “{{ file }}” файлынан импортталды.
 coverage.status.exported,Exported default Pokémon forms,Бастапқы Покемон түрлері экспортталды.
 coverage.status.reset,Loaded default Pokémon forms,Бастапқы Покемон түрлері жүктелді.
@@ -142,7 +142,7 @@ pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are 
 pokedexHelp.back,Back to Pokédex,Покедекске қайту
 about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,Менімен Байланысыңыз
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Сәлем, мен <homepage>Sage</homepage> (ол/олар(they/them)), және мен Покемон Тип Калькуляторын жасадым(PKMN.help)."
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,"Өтініш, өз ойларыңызды және рақметтеріңізді <email>pkmn@wavebeem.com</email> поштасына жіберіңіз."
 more.settings.heading,Settings,Баптаулар
 more.settings.language.label,Language,Тіл

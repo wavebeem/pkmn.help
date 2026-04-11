@@ -64,7 +64,7 @@
       "button": "重置",
       "description": "重置为默认图鉴"
     },
-    "filename": "pkmn.help 属性覆盖范围.csv",
+    "filename": "PKMN.help 属性覆盖范围.csv",
     "status": {
       "imported": "已从“{{ file }}”导入{{ n }}个宝可梦",
       "exported": "已导出默认宝可梦",
@@ -196,7 +196,7 @@
   "more": {
     "contact": {
       "heading": "联系我",
-      "intro": "你好，我是 <homepage>Sage</homepage>（they/them)，是宝可梦属性计算器（pkmn.help）的作者。",
+      "intro": "你好，我是 <homepage>Sage</homepage>（they/them)，是宝可梦属性计算器（PKMN.help）的作者。",
       "email": "请将你的想法和感谢寄到 <email>pkmn@wavebeem.com</email>。"
     },
     "settings": {

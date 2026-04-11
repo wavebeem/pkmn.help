@@ -3,20 +3,20 @@ title,Pokémon Type Calculator,Calcolatore dei Tipi di Pokémon
 navigation.offense,Offense,Offensiva
 navigation.defense,Defense,Difensiva
 navigation.pokedex,Pokédex,Pokédex
-navigation.other,Other,
-navigation.settings,Settings,
-navigation.about,About,
-navigation.menu,Menu,
-navigation.close,Close,
+navigation.other,Other,Varie
+navigation.settings,Settings,Impostazioni
+navigation.about,About,Informazioni
+navigation.menu,Menu,Menu
+navigation.close,Close,Chiudi
 offense.chooseTypes,Choose attack move types,Scegli i tipi
 offense.dealsXTo,Deals {{ x }} damage to,Infligge {{ x }} a
-offense.mode.combination,Dual,
-offense.mode.single,Single,
-offense.matchups.summary.heading,Matchup summary,
-offense.matchups.summary.damage,Damage,
-offense.matchups.summary.combinations.heading,Combinations,
-offense.matchups.summary.combinations.empty,No types,
-offense.matchups.types.heading,Matchup types,
+offense.mode.combination,Dual,Doppio
+offense.mode.single,Single,Singolo
+offense.matchups.summary.heading,Matchup summary,Riassunto del matchup
+offense.matchups.summary.damage,Damage,Danno
+offense.matchups.summary.combinations.heading,Combinations,Combinazioni
+offense.matchups.summary.combinations.empty,No types,Nessun tipo
+offense.matchups.types.heading,Matchup types,Matchup tipo per tipo
 offense.abilities.choose,Choose abilities,Scegli abilità
 offense.specialMoves.choose,Choose special moves,Scegli mossa speciale
 offense.specialMoves.names.freeze-dry,Freeze-Dry,Liofilizzazione
@@ -47,7 +47,7 @@ coverage.import.button,Import,Importa
 coverage.import.description,Import an edited Pokédex CSV file,Importa un file CSV Pokédex modificato
 coverage.reset.button,Reset,Ripristina
 coverage.reset.description,Reset to the default Pokédex,Ripristina il Pokédex predefinito
-coverage.filename,pkmn.help type coverage.csv,pkmn.help copertura tipi.csv
+coverage.filename,PKMN.help type coverage.csv,PKMN.help copertura tipi.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,"Sono state importate {{ n }} forme Pokémon da ""{{ file }}"""
 coverage.status.exported,Exported default Pokémon forms,Forme Pokémon predefinite esportate
 coverage.status.reset,Loaded default Pokémon forms,Forme Pokémon predefinite caricate
@@ -104,15 +104,15 @@ pokedex.search.helpLong,"Help, search Pokédex","Aiuto, cerca Pokédex"
 pokedex.search.notFound,No Pokémon found,Nessun Pokémon trovato
 pokedex.cry.text,Cry,Verso
 pokedex.shiny.text,Shiny,Forma cromatica
-pokedex.gender.text,Gender,
+pokedex.gender.text,Gender,Genere
 pokedex.pagination.next,Next,Succ.
 pokedex.pagination.nextLong,Next,Successiva
 pokedex.pagination.previous,Prev,Prec.
 pokedex.pagination.previousLong,Previous,Precedente
 pokedex.pagination.firstLong,First,Prima
 pokedex.pagination.lastLong,Last,Ultima
-pokedex.sorting.sortBy,Sort by,
-pokedex.sorting.auto,Auto,
+pokedex.sorting.sortBy,Sort by,Ordina per
+pokedex.sorting.auto,Auto,Auto
 pokedex.stats.hp,HP,PS
 pokedex.stats.hpLong,Hit Points,Punti Salute
 pokedex.stats.attack,Attack,Attacco
@@ -140,9 +140,9 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,erba nessuno
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","Cerca i Pokémon che hanno solo il tipo erba, senza tipo secondario (es: Tangela, Chikorita)."
 pokedexHelp.back,Back to Pokédex,Torna al Pokédex
-about.easterEgg.button,Show random Pokémon,
+about.easterEgg.button,Show random Pokémon,Mostra un Pokémon casuale
 more.contact.heading,Contact me,Contattami
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Ciao, sono <homepage>Sage</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Ciao, sono <homepage>Sage</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (PKMN.help)."
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,"Per favore, invia un'e-mail con i tuoi pensieri e ringraziamenti a <email>pkmn@wavebeem.com</email>."
 more.settings.heading,Settings,Impostazioni
 more.settings.language.label,Language,Lingua
@@ -202,7 +202,7 @@ banners.updateReady.whatsNew,What’s new,Cosa c'è di nuovo
 banners.updateReady.update,Update,Aggiorna
 general.loading,Loading…,Caricamento...
 general.copyLink,Copy link,Copia Link
-general.clearChoices,Clear choices,
+general.clearChoices,Clear choices,Resetta scelte
 games.label,Game generation,Generazione di gioco
 games.help,Use type effectiveness from different game generations.,Usa l'efficacia tra tipi di diverse generazioni di giochi.
 games.byID.gen1,Generation 1,Generazione 1

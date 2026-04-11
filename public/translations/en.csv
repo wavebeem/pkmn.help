@@ -47,7 +47,7 @@ coverage.import.button,Import,Import
 coverage.import.description,Import an edited Pokédex CSV file,Import an edited Pokédex CSV file
 coverage.reset.button,Reset,Reset
 coverage.reset.description,Reset to the default Pokédex,Reset to the default Pokédex
-coverage.filename,pkmn.help type coverage.csv,pkmn.help type coverage.csv
+coverage.filename,PKMN.help type coverage.csv,PKMN.help type coverage.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,Imported {{ n }} Pokémon forms from “{{ file }}”
 coverage.status.exported,Exported default Pokémon forms,Exported default Pokémon forms
 coverage.status.reset,Loaded default Pokémon forms,Loaded default Pokémon forms

@@ -86,7 +86,7 @@
       "button": "Reset",
       "description": "Reset to the default Pokédex"
     },
-    "filename": "pkmn.help type coverage.csv",
+    "filename": "PKMN.help type coverage.csv",
     "status": {
       "imported": "Imported {{ n }} Pokémon forms from “{{ file }}”",
       "exported": "Exported default Pokémon forms",

@@ -64,7 +64,7 @@
       "button": "Zresetuj",
       "description": "Zresetuj do domyślnego Pokédexu"
     },
-    "filename": "pkmn.help type coverage.csv",
+    "filename": "PKMN.help type coverage.csv",
     "status": {
       "imported": "Zaimportowano {{ n }} formularzy Pokémonów z „{{ file }}”",
       "exported": "Wyeksportowano domyślne formy Pokémonów",
@@ -199,7 +199,7 @@
   "more": {
     "contact": {
       "heading": "Skontaktuj się ze mną",
-      "intro": "Cześć, jestem <homepage>Sage</homepage> (oni) i stworzyłem ten kalkulator typów Pokémonów (pkmn.help).",
+      "intro": "Cześć, jestem <homepage>Sage</homepage> (oni) i stworzyłem ten kalkulator typów Pokémonów (PKMN.help).",
       "email": "Wyślij swoje myśli i podziękowania e-mailem na adres <email>pkmn@wavebeem.com</email>."
     },
     "settings": {

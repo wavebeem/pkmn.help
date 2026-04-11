@@ -47,7 +47,7 @@ coverage.import.button,Import,インポート
 coverage.import.description,Import an edited Pokédex CSV file,編集されたポケモンずかんのCSVファイルをインポートする
 coverage.reset.button,Reset,リセット
 coverage.reset.description,Reset to the default Pokédex,デフォルトのポケモンずかんにリセットする
-coverage.filename,pkmn.help type coverage.csv,pkmn.helpのタイプ.csv
+coverage.filename,PKMN.help type coverage.csv,pkmn.helpのタイプ.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,「{{ file }}」から{{ n }}のポケモンのすがたをインポートした
 coverage.status.exported,Exported default Pokémon forms,デフォルトのポケモンのすがたを書き出した
 coverage.status.reset,Loaded default Pokémon forms,デフォルトのポケモンのすがたを読み込んだ

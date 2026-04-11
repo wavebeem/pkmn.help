@@ -3,11 +3,33 @@
   "navigation": {
     "offense": "Offensiva",
     "defense": "Difensiva",
-    "pokedex": "Pokédex"
+    "pokedex": "Pokédex",
+    "other": "Varie",
+    "settings": "Impostazioni",
+    "about": "Informazioni",
+    "menu": "Menu",
+    "close": "Chiudi"
   },
   "offense": {
     "chooseTypes": "Scegli i tipi",
     "dealsXTo": "Infligge {{ x }} a",
+    "mode": {
+      "combination": "Doppio",
+      "single": "Singolo"
+    },
+    "matchups": {
+      "summary": {
+        "heading": "Riassunto del matchup",
+        "damage": "Danno",
+        "combinations": {
+          "heading": "Combinazioni",
+          "empty": "Nessun tipo"
+        }
+      },
+      "types": {
+        "heading": "Matchup tipo per tipo"
+      }
+    },
     "abilities": {
       "choose": "Scegli abilità"
     },
@@ -64,7 +86,7 @@
       "button": "Ripristina",
       "description": "Ripristina il Pokédex predefinito"
     },
-    "filename": "pkmn.help copertura tipi.csv",
+    "filename": "PKMN.help copertura tipi.csv",
     "status": {
       "imported": "Sono state importate {{ n }} forme Pokémon da \"{{ file }}\"",
       "exported": "Forme Pokémon predefinite esportate",
@@ -139,6 +161,9 @@
     "shiny": {
       "text": "Forma cromatica"
     },
+    "gender": {
+      "text": "Genere"
+    },
     "pagination": {
       "next": "Succ.",
       "nextLong": "Successiva",
@@ -146,6 +171,10 @@
       "previousLong": "Precedente",
       "firstLong": "Prima",
       "lastLong": "Ultima"
+    },
+    "sorting": {
+      "sortBy": "Ordina per",
+      "auto": "Auto"
     },
     "stats": {
       "hp": "PS",
@@ -193,10 +222,15 @@
     },
     "back": "Torna al Pokédex"
   },
+  "about": {
+    "easterEgg": {
+      "button": "Mostra un Pokémon casuale"
+    }
+  },
   "more": {
     "contact": {
       "heading": "Contattami",
-      "intro": "Ciao, sono <homepage>Sage</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (pkmn.help).",
+      "intro": "Ciao, sono <homepage>Sage</homepage> (they/them) ed ho creato il Calcolatore dei Tipi di Pokémon (PKMN.help).",
       "email": "Per favore, invia un'e-mail con i tuoi pensieri e ringraziamenti a <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
@@ -288,7 +322,8 @@
   },
   "general": {
     "loading": "Caricamento...",
-    "copyLink": "Copia Link"
+    "copyLink": "Copia Link",
+    "clearChoices": "Resetta scelte"
   },
   "games": {
     "label": "Generazione di gioco",

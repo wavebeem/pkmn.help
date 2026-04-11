@@ -48,7 +48,7 @@
       "button": "Genstart",
       "description": "Genstart til standard pokèdex"
     },
-    "filename": "pkmn.help type dækning.csv",
+    "filename": "PKMN.help type dækning.csv",
     "status": {
       "imported": "Importeret {{ n }} Pokèmon former fra \"{{ file }}\"",
       "exported": "Eksporterede standard Pokémon former",
@@ -149,7 +149,7 @@
   "more": {
     "contact": {
       "heading": "Kontakt mig",
-      "intro": "Hej, jeg <homepage>Sage</homepage> (they/them) og jeg lavede Pokémon type lommeregner/calculator (pkmn.help)",
+      "intro": "Hej, jeg <homepage>Sage</homepage> (they/them) og jeg lavede Pokémon type lommeregner/calculator (PKMN.help)",
       "email": "Email venligst din taknemmelighed til <email>pkmn@wavebeem.com</email>."
     },
     "settings": {

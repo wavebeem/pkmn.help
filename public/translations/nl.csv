@@ -47,7 +47,7 @@ coverage.import.button,Import,Importeren
 coverage.import.description,Import an edited Pokédex CSV file,Importeer een bewerkt Pokédex CSV-Bestand.
 coverage.reset.button,Reset,Reset
 coverage.reset.description,Reset to the default Pokédex,Reset naar de normale Pokédex
-coverage.filename,pkmn.help type coverage.csv,pkmn.help type overschaduwing.csv
+coverage.filename,PKMN.help type coverage.csv,PKMN.help type overschaduwing.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,{{ n }} Pokémon vormen geïmporteerd vanaf “{{ file }}”
 coverage.status.exported,Exported default Pokémon forms,Geëxporteerde standaard Pokémonvormen
 coverage.status.reset,Loaded default Pokémon forms,Geladen standaard Pokémonvormen
@@ -142,7 +142,7 @@ pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are 
 pokedexHelp.back,Back to Pokédex,Terug naar Pokédex
 about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,Neem contact met mij op
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Hoi, ik ben <homepage>Sage</homepage> (die/hen), en ik heb de Pokémon Type Rekenmachine gemaakt (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Hoi, ik ben <homepage>Sage</homepage> (die/hen), en ik heb de Pokémon Type Rekenmachine gemaakt (PKMN.help)."
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,E-mail alsjeblieft je gedachtes en bedankjes naar <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Instellingen
 more.settings.language.label,Language,Taal

@@ -33,7 +33,7 @@
       "button": "Сбросить",
       "description": "Сбросить до Покедекса по умолчанию"
     },
-    "filename": "pkmn.help охват типов.csv",
+    "filename": "PKMN.help охват типов.csv",
     "status": {
       "imported": "Импортировано {{ n }} форм Покемонов из “{{ file }}”",
       "exported": "Экспортированы формы Покемонов по умолчанию",
@@ -135,7 +135,7 @@
   "more": {
     "contact": {
       "heading": "Свяжитесь Со Мной",
-      "intro": "Привет, Я <homepage>Sage</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (pkmn.help).",
+      "intro": "Привет, Я <homepage>Sage</homepage> (they/them), и я сделал Калькулятор Типов Покемонов (PKMN.help).",
       "email": "Пожалуйста, пишите свои мысли и благодарности по Имейл адресу   <email>pkmn@wavebeem.com</email>."
     },
     "settings": {

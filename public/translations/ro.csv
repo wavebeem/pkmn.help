@@ -47,7 +47,7 @@ coverage.import.button,Import,Importă
 coverage.import.description,Import an edited Pokédex CSV file,Importă un fișier CSV editat de Pokédex
 coverage.reset.button,Reset,Resetează
 coverage.reset.description,Reset to the default Pokédex,Resetează Pokedéx-ul la modul implicit
-coverage.filename,pkmn.help type coverage.csv,pkmn.help tip coverage.csv
+coverage.filename,PKMN.help type coverage.csv,PKMN.help tip coverage.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,Importat {{ n }} forme de Pokémon de la „{{ file }}”
 coverage.status.exported,Exported default Pokémon forms,Forme de Pokémoni implicite exportate
 coverage.status.reset,Loaded default Pokémon forms,Încarcă forme de Pokémon implicit
@@ -142,7 +142,7 @@ pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are 
 pokedexHelp.back,Back to Pokédex,Înapoi la Pokédex
 about.easterEgg.button,Show random Pokémon,
 more.contact.heading,Contact me,Contactează-mă
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Bună, sunt <homepage>Sage</homepage> (ei/lor) și am creat Calculator tip Pokémon (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Bună, sunt <homepage>Sage</homepage> (ei/lor) și am creat Calculator tip Pokémon (PKMN.help)."
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Trimite idei și mulțumiri la <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Setări
 more.settings.language.label,Language,Limbă

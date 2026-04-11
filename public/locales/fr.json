@@ -86,7 +86,7 @@
       "button": "Réinitialiser",
       "description": "Réinitialiser vers le Pokédex par défaut"
     },
-    "filename": "pkmn.help couverture de type.csv",
+    "filename": "PKMN.help couverture de type.csv",
     "status": {
       "imported": "Importer {{ n }} forme Pokémon depuis “{{ file }}”",
       "exported": "Pokémon exporté par défaut",

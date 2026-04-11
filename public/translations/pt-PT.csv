@@ -47,7 +47,7 @@ coverage.import.button,Import,Importar
 coverage.import.description,Import an edited Pokédex CSV file,Importar um ficheiro CSV da Pokédex editada
 coverage.reset.button,Reset,Reiniciar
 coverage.reset.description,Reset to the default Pokédex,Repor para a Pokédex predefinida
-coverage.filename,pkmn.help type coverage.csv,pkmn.help cobertura por tipo.csv
+coverage.filename,PKMN.help type coverage.csv,PKMN.help cobertura por tipo.csv
 coverage.status.imported,Imported {{ n }} Pokémon forms from “{{ file }}”,"Importadas {{ n }} formas de Pokémon de “{{ file }}"""
 coverage.status.exported,Exported default Pokémon forms,Formas de Pokémon predefinidas exportadas
 coverage.status.reset,Loaded default Pokémon forms,Formas de Pokémon predefinidas carregadas
@@ -142,7 +142,7 @@ pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are 
 pokedexHelp.back,Back to Pokédex,Voltar à Pokédex
 about.easterEgg.button,Show random Pokémon,Mostrar Pokémon Aleatorio
 more.contact.heading,Contact me,Contacte-me
-more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Olá, eu sou o <homepage>Sage</homepage> (eles/elas), e criei a Calculadora de Tipos de Pokémon (pkmn.help)."
+more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Olá, eu sou o <homepage>Sage</homepage> (eles/elas), e criei a Calculadora de Tipos de Pokémon (PKMN.help)."
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Envie as suas ideias e agradecimentos por correio eletrónico para <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Definições
 more.settings.language.label,Language,Idioma

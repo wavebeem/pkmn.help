@@ -64,7 +64,7 @@
       "button": "Resetează",
       "description": "Resetează Pokedéx-ul la modul implicit"
     },
-    "filename": "pkmn.help tip coverage.csv",
+    "filename": "PKMN.help tip coverage.csv",
     "status": {
       "imported": "Importat {{ n }} forme de Pokémon de la „{{ file }}”",
       "exported": "Forme de Pokémoni implicite exportate",
@@ -195,7 +195,7 @@
   "more": {
     "contact": {
       "heading": "Contactează-mă",
-      "intro": "Bună, sunt <homepage>Sage</homepage> (ei/lor) și am creat Calculator tip Pokémon (pkmn.help).",
+      "intro": "Bună, sunt <homepage>Sage</homepage> (ei/lor) și am creat Calculator tip Pokémon (PKMN.help).",
       "email": "Trimite idei și mulțumiri la <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
