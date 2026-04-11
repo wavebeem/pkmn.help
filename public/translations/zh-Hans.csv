@@ -159,6 +159,10 @@ more.settings.typeCount.label,Number of types,属性的数量
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,如果宝可梦被森林诅咒或万圣夜攻击后则会被追加第三种属性。由于例子很少的原因，第三属性的栏位默认为隐藏。
 more.settings.typeCount.values.2,Two types (2),两种属性（2）
 more.settings.typeCount.values.3,Three types (3),三种属性（3）
+more.settings.battleVariant.label,Battle variant,
+more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.",
+more.settings.battleVariant.values.regular,Regular,
+more.settings.battleVariant.values.inverse_battle,Inverse Battle,
 more.changes.heading,What’s new,新闻
 more.changes.description,See what’s new in the <changelog>changelog</changelog>.,点这里 <changelog>changelog</changelog> 查看更新
 more.help.heading,Help,帮助

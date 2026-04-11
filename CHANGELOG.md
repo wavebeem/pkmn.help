@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-04-11
+
+- Added "Inverse Battle" support to the Settings screen
+
 ## 2026-04-10
 
 - Updated Italian translations

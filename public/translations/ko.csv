@@ -159,6 +159,10 @@ more.settings.typeCount.label,Number of types,타입의 수
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,포켓몬이 '숲의저주'나 '핼러윈'에 맞으면 잠시 동안 한 번에 세 가지 유형을 가질 수 있습니다. 세 번째 유형은 거의 사용되지 않기 때문에 기본적으로 숨겨져 있습니다.
 more.settings.typeCount.values.2,Two types (2),두 가지 유형(2)
 more.settings.typeCount.values.3,Three types (3),세 가지 유형 (3)
+more.settings.battleVariant.label,Battle variant,
+more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.",
+more.settings.battleVariant.values.regular,Regular,
+more.settings.battleVariant.values.inverse_battle,Inverse Battle,
 more.changes.heading,What’s new,새로운 기능
 more.changes.description,See what’s new in the <changelog>changelog</changelog>.,<changelog>변경 로그</changelog> 에서 변경 사항을 볼 수 있습니다.
 more.help.heading,Help,도움말

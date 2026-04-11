@@ -20,6 +20,7 @@ import {
 } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import styles from "./ScreenCoverageList.module.css";
+import { useBattleVariant } from "../hooks/useBattleVariant";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";
@@ -28,6 +29,7 @@ interface CoverageListProps {
 export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   const { coverageTypes } = useAppContext();
   const [generation] = useGeneration();
+  const [battleVariant] = useBattleVariant();
   const { t } = useTranslation();
   const search = useSearch();
   const [page, setPage] = useState(0);
@@ -37,6 +39,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   ) as any;
   const moves: SpecialMove[] = splitTokens(search.get("moves") || "") as any;
   const partitionedMatchups = partitionMatchups({
+    battleVariant,
     coverageTypes,
     types,
     generation,

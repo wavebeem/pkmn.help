@@ -33,6 +33,8 @@ import { updateArrayAt } from "../misc/updateArrayAt";
 import styles from "./ScreenDefenseTeam.module.css";
 import { IconAdd, IconEdit, IconRemove } from "../components/icons";
 import { IconButton } from "../components/IconButton";
+import { PlainBadge } from "../components/PlainBadge";
+import { useBattleVariant } from "../hooks/useBattleVariant";
 
 function setAbilityAt({
   list,
@@ -73,6 +75,7 @@ function setTeraTypeAt({
 }
 
 export function ScreenDefenseTeam(): ReactNode {
+  const [battleVariant] = useBattleVariant();
   const [generation] = useGeneration();
   const { t } = useTranslation();
   const search = useSearch();
@@ -380,10 +383,17 @@ export function ScreenDefenseTeam(): ReactNode {
           </div>
         </Flex>
         <Flex direction="column" gap="medium">
+          <Flex hidden={battleVariant !== "inverse_battle"}>
+            <PlainBadge>
+              {t("more.settings.battleVariant.values.inverse_battle")}
+            </PlainBadge>
+          </Flex>
+
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
             {t("defense.team.tableHeading")}
           </FancyText>
           <MatchupsTeam
+            battleVariant={battleVariant}
             generation={generation}
             typesList={teamTypes}
             teraTypes={teamTeraTypes}

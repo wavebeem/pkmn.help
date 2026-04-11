@@ -159,6 +159,10 @@ more.settings.typeCount.label,Number of types,Número de tipos
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Los Pokémon pueden tener brevemente tres tipos a la vez si son golpeados con “Condena silvana” o “Halloween”. El campo del tipo terciario está oculto de manera predeterminada, ya que raramente se usa."
 more.settings.typeCount.values.2,Two types (2),Dos tipos (2)
 more.settings.typeCount.values.3,Three types (3),Tres tipos (3)
+more.settings.battleVariant.label,Battle variant,
+more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.",
+more.settings.battleVariant.values.regular,Regular,
+more.settings.battleVariant.values.inverse_battle,Inverse Battle,
 more.changes.heading,What’s new,Novedades
 more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Consulta las novedades en el <changelog>registro de cambios</changelog>.
 more.help.heading,Help,Ayuda

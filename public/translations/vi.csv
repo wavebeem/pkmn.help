@@ -159,6 +159,10 @@ more.settings.typeCount.label,Number of types,Số lượng hệ
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra.
 more.settings.typeCount.values.2,Two types (2),Hai hệ (2)
 more.settings.typeCount.values.3,Three types (3),Ba hệ (3)
+more.settings.battleVariant.label,Battle variant,
+more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.",
+more.settings.battleVariant.values.regular,Regular,
+more.settings.battleVariant.values.inverse_battle,Inverse Battle,
 more.changes.heading,What’s new,Có gì mới?
 more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Xem các tin tức trong <changelog>trang nhật ký update</changelog> (Tiếng Anh).
 more.help.heading,Help,Hỗ Trợ
