@@ -56,6 +56,7 @@ import {
   IconPokedex,
 } from "./icons";
 import { PageNav } from "./PageNav";
+import { DebugSettings } from "../misc/DebugSettings";
 
 const router = createBrowserRouter([
   {
@@ -145,8 +146,7 @@ export function Layout(): ReactNode {
   useUpdateSW();
 
   // Update this to debug the refresh visuals
-  // const needsAppUpdate = true;
-  const needsAppUpdate = needRefresh;
+  const needsAppUpdate = needRefresh || DebugSettings.appUpdate;
 
   async function updateApp() {
     setNeedRefresh(false);

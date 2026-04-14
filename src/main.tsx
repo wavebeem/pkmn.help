@@ -2,6 +2,9 @@ import { createRoot } from "react-dom/client";
 import { App } from "./components/App";
 import "./misc/i18n";
 import "./debug";
+import { loadDebugSettings } from "./misc/DebugSettings";
+
+loadDebugSettings();
 
 const element = document.querySelector("#app");
 if (!element) {

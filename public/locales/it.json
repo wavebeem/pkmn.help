@@ -258,6 +258,14 @@
           "2": "Due tipi (2)",
           "3": "Tre tipi (3)"
         }
+      },
+      "battleVariant": {
+        "label": "Tipo di lotta",
+        "help": "Durante una lotta inversa, i matchup tra tipi sono invertiti, e nessun tipo è immune a nessun altro tipo.",
+        "values": {
+          "regular": "Normale",
+          "inverse_battle": "Lotta inversa"
+        }
       }
     },
     "changes": {
@@ -322,7 +330,7 @@
   },
   "general": {
     "loading": "Caricamento...",
-    "copyLink": "Copia Link",
+    "copyLink": "Copia link",
     "clearChoices": "Resetta scelte"
   },
   "games": {

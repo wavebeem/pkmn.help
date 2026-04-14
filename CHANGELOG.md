@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-04-14
+
+- Updated Italian translations
+
+- Increased visibility of the update badge
+
 ## 2026-04-11
 
 - Added "Inverse Battle" support to the Settings screen
