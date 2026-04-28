@@ -258,6 +258,14 @@
           "2": "Deux types (2)",
           "3": "Trois types (3)"
         }
+      },
+      "battleVariant": {
+        "label": "Variation de combat",
+        "help": "Durant un Combat Inversé, les affinités de types sont inversés et aucun type est immunisé contre un autre type.",
+        "values": {
+          "regular": "Combat régulier",
+          "inverse_battle": "Combat Inversé"
+        }
       }
     },
     "changes": {
