@@ -45,5 +45,5 @@ $ npm run update-pokedex
 or if you just want to update images without updating the Pokédex
 
 ```
-$ npm run update-pokedex fast
+$ npm run update-pokedex new-images
 ```

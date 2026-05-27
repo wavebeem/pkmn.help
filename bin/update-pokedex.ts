@@ -30,6 +30,13 @@ async function main(flags: string[]) {
     return;
   }
 
+  if (flags.includes("new-images")) {
+    await scrapePokeapi();
+    await downloadMedia();
+    await optimizeImages({ force: false });
+    return;
+  }
+
   if (flags.includes("audio")) {
     await convertAudio();
     return;

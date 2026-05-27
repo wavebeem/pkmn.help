@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-05-26
+
+- Added images for Mega Evolutions from Pokémon Legends: Z-A
+
 ## 2026-04-28
 
 - Updated French tranlsations

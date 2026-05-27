@@ -170,9 +170,11 @@
       "zh-hans": "妙蛙花"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 3,
     "images": {
@@ -410,9 +412,11 @@
       "zh-hans": "喷火龙"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 6,
     "images": {
@@ -601,9 +605,11 @@
       "zh-hans": "水箭龟"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 9,
     "images": {
@@ -746,9 +752,11 @@
       "zh-hans": "巴大蝶"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 12,
     "images": {
@@ -1478,7 +1486,8 @@
       "ja-hrkt": "ハードロック・ピカチュウ",
       "fr": "Pikachu Rockeur",
       "de": "Cosplayform",
-      "en": "Pikachu Rock Star"
+      "en": "Pikachu Rock Star",
+      "ja": "ハードロック・ピカチュウ"
     },
     "number": 25,
     "images": {
@@ -1518,7 +1527,8 @@
       "ja-hrkt": "マダム・ピカチュウ",
       "fr": "Pikachu Lady",
       "de": "Cosplayform",
-      "en": "Pikachu Belle"
+      "en": "Pikachu Belle",
+      "ja": "マダム・ピカチュウ"
     },
     "number": 25,
     "images": {
@@ -1558,7 +1568,8 @@
       "ja-hrkt": "アイドル・ピカチュウ",
       "fr": "Pikachu Star",
       "de": "Cosplayform",
-      "en": "Pikachu Pop Star"
+      "en": "Pikachu Pop Star",
+      "ja": "アイドル・ピカチュウ"
     },
     "number": 25,
     "images": {
@@ -1598,7 +1609,8 @@
       "ja-hrkt": "ドクター・ピカチュウ",
       "fr": "Pikachu Docteur",
       "de": "Cosplayform",
-      "en": "Pikachu Ph.D."
+      "en": "Pikachu Ph.D.",
+      "ja": "ドクター・ピカチュウ"
     },
     "number": 25,
     "images": {
@@ -1638,7 +1650,8 @@
       "ja-hrkt": "マスクド・ピカチュウ",
       "fr": "Pikachu Catcheur",
       "de": "Cosplayform",
-      "en": "Pikachu Libre"
+      "en": "Pikachu Libre",
+      "ja": "マスクド・ピカチュウ"
     },
     "number": 25,
     "images": {
@@ -1678,7 +1691,8 @@
       "ja-hrkt": "おきがえピカチュウ",
       "fr": "Pikachu Cosplayeur",
       "de": "Cosplayform",
-      "en": "Cosplay Pikachu"
+      "en": "Cosplay Pikachu",
+      "ja": "おきがえピカチュウ"
     },
     "number": 25,
     "images": {
@@ -2006,7 +2020,7 @@
     "images": {
       "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10148.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10148.png",
       "shinyFemale": ""
     },
     "cryURL": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10148.ogg",
@@ -2120,9 +2134,11 @@
       "zh-hans": "皮卡丘"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 25,
     "images": {
@@ -2241,14 +2257,16 @@
       "zh-hans": "雷丘"
     },
     "formNames": {
+      "ja-hrkt": "メガライチュウX",
       "fr": "Méga-Raichu X",
-      "en": "Mega Raichu X"
+      "en": "Mega Raichu X",
+      "ja": "メガライチュウX"
     },
     "number": 26,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10304.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10304.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -2279,14 +2297,16 @@
       "zh-hans": "雷丘"
     },
     "formNames": {
+      "ja-hrkt": "メガライチュウY",
       "fr": "Méga-Raichu Y",
-      "en": "Mega Raichu Y"
+      "en": "Mega Raichu Y",
+      "ja": "メガライチュウY"
     },
     "number": 26,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10305.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10305.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -2763,14 +2783,16 @@
       "zh-hans": "皮可西"
     },
     "formNames": {
+      "ja-hrkt": "メガピクシー",
       "fr": "Méga-Mélodelfe",
-      "en": "Mega Clefable"
+      "en": "Mega Clefable",
+      "ja": "メガピクシー"
     },
     "number": 36,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10278.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10278.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -3652,9 +3674,11 @@
       "zh-hans": "喵喵"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 52,
     "images": {
@@ -4428,9 +4452,11 @@
       "zh-hans": "怪力"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 68,
     "images": {
@@ -4575,14 +4601,16 @@
       "zh-hans": "大食花"
     },
     "formNames": {
+      "ja-hrkt": "メガウツボット",
       "fr": "Méga-Empiflor",
-      "en": "Mega Victreebel"
+      "en": "Mega Victreebel",
+      "ja": "メガウツボット"
     },
     "number": 71,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10279.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10279.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -5997,9 +6025,11 @@
       "zh-hans": "耿鬼"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 94,
     "images": {
@@ -6213,9 +6243,11 @@
       "zh-hans": "巨钳蟹"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 99,
     "images": {
@@ -7337,19 +7369,21 @@
       "zh-hans": "宝石海星"
     },
     "formNames": {
+      "ja-hrkt": "メガスターミー",
       "fr": "Méga-Staross",
-      "en": "Mega Starmie"
+      "en": "Mega Starmie",
+      "ja": "メガスターミー"
     },
     "number": 121,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10280.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10280.png",
       "shinyFemale": ""
     },
     "cryURL": null,
     "hp": 60,
-    "attack": 140,
+    "attack": 100,
     "defense": 105,
     "spAttack": 130,
     "spDefense": 105,
@@ -7994,9 +8028,11 @@
       "zh-hans": "拉普拉斯"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 131,
     "images": {
@@ -8141,9 +8177,11 @@
       "zh-hans": "伊布"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 133,
     "images": {
@@ -8582,9 +8620,11 @@
       "zh-hans": "卡比兽"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 143,
     "images": {
@@ -8976,14 +9016,16 @@
       "zh-hans": "快龙"
     },
     "formNames": {
+      "ja-hrkt": "メガカイリュー",
       "fr": "Méga-Dracolosse",
-      "en": "Mega Dragonite"
+      "en": "Mega Dragonite",
+      "ja": "メガカイリュー"
     },
     "number": 149,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10281.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10281.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -9283,14 +9325,16 @@
       "zh-hans": "大竺葵"
     },
     "formNames": {
+      "ja-hrkt": "メガメガニウム",
       "fr": "Méga-Méganium",
-      "en": "Mega Meganium"
+      "en": "Mega Meganium",
+      "ja": "メガメガニウム"
     },
     "number": 154,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10282.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10282.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -9574,14 +9618,16 @@
       "zh-hans": "大力鳄"
     },
     "formNames": {
+      "ja-hrkt": "メガオーダイル",
       "fr": "Méga-Aligatueur",
-      "en": "Mega Feraligatr"
+      "en": "Mega Feraligatr",
+      "ja": "メガオーダイル"
     },
     "number": 160,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10283.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10283.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -11177,7 +11223,8 @@
       "de": "A",
       "es": "A",
       "it": "A",
-      "en": "A"
+      "en": "A",
+      "ja": "Ａ"
     },
     "number": 201,
     "images": {
@@ -12411,14 +12458,16 @@
       "zh-hans": "盔甲鸟"
     },
     "formNames": {
+      "ja-hrkt": "メガエアームド",
       "fr": "Méga-Airmure",
-      "en": "Mega Skarmory"
+      "en": "Mega Skarmory",
+      "ja": "メガエアームド"
     },
     "number": 227,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10284.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10284.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -18044,14 +18093,16 @@
       "zh-hans": "风铃铃"
     },
     "formNames": {
+      "ja-hrkt": "メガチリーン",
       "fr": "Méga-Éoko",
-      "en": "Mega Chimecho"
+      "en": "Mega Chimecho",
+      "ja": "メガチリーン"
     },
     "number": 358,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10306.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10306.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -18164,14 +18215,16 @@
       "zh-hans": "阿勃梭鲁"
     },
     "formNames": {
+      "ja-hrkt": "メガアブソルZ",
       "fr": "Méga-Absol Z",
-      "en": "Mega Absol Z"
+      "en": "Mega Absol Z",
+      "ja": "メガアブソルZ"
     },
     "number": 359,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10307.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10307.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -20130,14 +20183,16 @@
       "zh-hans": "姆克鹰"
     },
     "formNames": {
+      "ja-hrkt": "メガムクホーク",
       "fr": "Méga-Étouraptor",
-      "en": "Mega Staraptor"
+      "en": "Mega Staraptor",
+      "ja": "メガムクホーク"
     },
     "number": 398,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10308.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10308.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -20635,7 +20690,8 @@
       "de": "Pflanzenumhang",
       "es": "Tronco Planta",
       "it": "Manto Pianta",
-      "en": "Plant Cloak"
+      "en": "Plant Cloak",
+      "ja": "くさきのミノ"
     },
     "number": 412,
     "images": {
@@ -22077,14 +22133,16 @@
       "zh-hans": "烈咬陆鲨"
     },
     "formNames": {
+      "ja-hrkt": "メガガブリアスZ",
       "fr": "Méga-Carchacrok Z",
-      "en": "Mega Garchomp Z"
+      "en": "Mega Garchomp Z",
+      "ja": "メガガブリアスZ"
     },
     "number": 445,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10309.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10309.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -22268,14 +22326,16 @@
       "zh-hans": "路卡利欧"
     },
     "formNames": {
+      "ja-hrkt": "メガルカリオZ",
       "fr": "Méga-Lucario Z",
-      "en": "Mega Lucario Z"
+      "en": "Mega Lucario Z",
+      "ja": "メガルカリオZ"
     },
     "number": 448,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10310.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10310.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -23468,14 +23528,16 @@
       "zh-hans": "雪妖女"
     },
     "formNames": {
+      "ja-hrkt": "メガユキメノコ",
       "fr": "Méga-Momartik",
-      "en": "Mega Froslass"
+      "en": "Mega Froslass",
+      "ja": "メガユキメノコ"
     },
     "number": 478,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10285.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10285.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -24086,14 +24148,16 @@
       "zh-hans": "席多蓝恩"
     },
     "formNames": {
+      "ja-hrkt": "メガヒードラン",
       "fr": "Méga-Heatran",
-      "en": "Mega Heatran"
+      "en": "Mega Heatran",
+      "ja": "メガヒードラン"
     },
     "number": 485,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10311.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10311.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -24394,14 +24458,16 @@
       "zh-hans": "达克莱伊"
     },
     "formNames": {
+      "ja-hrkt": "メガダークライ",
       "fr": "Méga-Darkrai",
-      "en": "Mega Darkrai"
+      "en": "Mega Darkrai",
+      "ja": "メガダークライ"
     },
     "number": 491,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10312.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10312.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -24530,7 +24596,8 @@
       "de": "Normalform",
       "es": "Tipo Normal",
       "it": "Tipo Normale",
-      "en": "Normal Type"
+      "en": "Normal Type",
+      "ja": "ノーマルタイプ"
     },
     "number": 493,
     "images": {
@@ -24815,14 +24882,16 @@
       "zh-hans": "炎武王"
     },
     "formNames": {
+      "ja-hrkt": "メガエンブオー",
       "fr": "Méga-Roitiflam",
-      "en": "Mega Emboar"
+      "en": "Mega Emboar",
+      "ja": "メガエンブオー"
     },
     "number": 500,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10286.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10286.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -25952,14 +26021,16 @@
       "zh-hans": "龙头地鼠"
     },
     "formNames": {
+      "ja-hrkt": "メガドリュウズ",
       "fr": "Méga-Minotaupe",
-      "en": "Mega Excadrill"
+      "en": "Mega Excadrill",
+      "ja": "メガドリュウズ"
     },
     "number": 530,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10287.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10287.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -26571,14 +26642,16 @@
       "zh-hans": "蜈蚣王"
     },
     "formNames": {
+      "ja-hrkt": "メガペンドラー",
       "fr": "Méga-Brutapode",
-      "en": "Mega Scolipede"
+      "en": "Mega Scolipede",
+      "ja": "メガペンドラー"
     },
     "number": 545,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10288.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10288.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -27481,14 +27554,16 @@
       "zh-hans": "头巾混混"
     },
     "formNames": {
+      "ja-hrkt": "メガズルズキン",
       "fr": "Méga-Baggaïd",
-      "en": "Mega Scrafty"
+      "en": "Mega Scrafty",
+      "ja": "メガズルズキン"
     },
     "number": 560,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10289.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10289.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -27887,9 +27962,11 @@
       "zh-hans": "灰尘山"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 569,
     "images": {
@@ -28543,7 +28620,8 @@
       "de": "Frühlingsform",
       "es": "Forma Primavera",
       "it": "Forma Primavera",
-      "en": "Spring Form"
+      "en": "Spring Form",
+      "ja": "はるのすがた"
     },
     "number": 585,
     "images": {
@@ -28587,7 +28665,8 @@
       "de": "Frühlingsform",
       "es": "Forma Primavera",
       "it": "Forma Primavera",
-      "en": "Spring Form"
+      "en": "Spring Form",
+      "ja": "はるのすがた"
     },
     "number": 586,
     "images": {
@@ -29287,14 +29366,16 @@
       "zh-hans": "麻麻鳗鱼王"
     },
     "formNames": {
+      "ja-hrkt": "メガシビルドン",
       "fr": "Méga-Ohmassacre",
-      "en": "Mega Eelektross"
+      "en": "Mega Eelektross",
+      "ja": "メガシビルドン"
     },
     "number": 604,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10290.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10290.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -29503,14 +29584,16 @@
       "zh-hans": "水晶灯火灵"
     },
     "formNames": {
+      "ja-hrkt": "メガシャンデラ",
       "fr": "Méga-Lugulabre",
-      "en": "Mega Chandelure"
+      "en": "Mega Chandelure",
+      "ja": "メガシャンデラ"
     },
     "number": 609,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10291.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10291.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -30082,14 +30165,16 @@
       "zh-hans": "泥偶巨人"
     },
     "formNames": {
+      "ja-hrkt": "メガゴルーグ",
       "fr": "Méga-Golemastoc",
-      "en": "Mega Golurk"
+      "en": "Mega Golurk",
+      "ja": "メガゴルーグ"
     },
     "number": 623,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10313.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10313.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -31596,14 +31681,16 @@
       "zh-hans": "布里卡隆"
     },
     "formNames": {
+      "ja-hrkt": "メガブリガロン",
       "fr": "Méga-Blindépique",
-      "en": "Mega Chesnaught"
+      "en": "Mega Chesnaught",
+      "ja": "メガブリガロン"
     },
     "number": 652,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10292.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10292.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -31741,14 +31828,16 @@
       "zh-hans": "妖火红狐"
     },
     "formNames": {
+      "ja-hrkt": "メガマフォクシー",
       "fr": "Méga-Goupelin",
-      "en": "Mega Delphox"
+      "en": "Mega Delphox",
+      "ja": "メガマフォクシー"
     },
     "number": 655,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10293.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10293.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -31971,14 +32060,16 @@
       "zh-hans": "甲贺忍蛙"
     },
     "formNames": {
+      "ja-hrkt": "メガゲッコウガ",
       "fr": "Méga-Amphinobi",
-      "en": "Mega Greninja"
+      "en": "Mega Greninja",
+      "ja": "メガゲッコウガ"
     },
     "number": 658,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10294.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10294.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -32265,7 +32356,8 @@
       "de": "Blumenmeermuster",
       "es": "Motivo Floral",
       "it": "Motivo Giardinfiore",
-      "en": "Meadow Pattern"
+      "en": "Meadow Pattern",
+      "ja": "はなぞののもよう"
     },
     "number": 666,
     "images": {
@@ -32386,14 +32478,16 @@
       "zh-hans": "火炎狮"
     },
     "formNames": {
+      "ja-hrkt": "メガカエンジシ",
       "fr": "Méga-Némélios",
-      "en": "Mega Pyroar"
+      "en": "Mega Pyroar",
+      "ja": "メガカエンジシ"
     },
     "number": 668,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10295.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10295.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -32431,7 +32525,8 @@
       "de": "Rotblütler",
       "es": "Flor Roja",
       "it": "Fiore Rosso",
-      "en": "Red Flower"
+      "en": "Red Flower",
+      "ja": "あかいはな"
     },
     "number": 669,
     "images": {
@@ -32474,7 +32569,8 @@
       "de": "Rotblütler",
       "es": "Flor Roja",
       "it": "Fiore Rosso",
-      "en": "Red Flower"
+      "en": "Red Flower",
+      "ja": "あかいはな"
     },
     "number": 670,
     "images": {
@@ -32517,13 +32613,14 @@
       "de": "Ewigblütler",
       "es": "Flor Eterna",
       "it": "Fiore Eterno",
-      "en": "Eternal Flower"
+      "en": "Eternal Flower",
+      "ja": "えいえんのはな"
     },
     "number": 670,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10061.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10061.png",
       "shinyFemale": ""
     },
     "cryURL": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10061.ogg",
@@ -32554,14 +32651,16 @@
       "zh-hans": "花叶蒂"
     },
     "formNames": {
+      "ja-hrkt": "メガフラエッテ",
       "fr": "Méga-Floette",
-      "en": "Mega Floette"
+      "en": "Mega Floette",
+      "ja": "メガフラエッテ"
     },
     "number": 670,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10296.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10296.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -32598,7 +32697,8 @@
       "de": "Rotblütler",
       "es": "Flor Roja",
       "it": "Fiore Rosso",
-      "en": "Red Flower"
+      "en": "Red Flower",
+      "ja": "あかいはな"
     },
     "number": 671,
     "images": {
@@ -32782,7 +32882,8 @@
       "de": "Zottelform",
       "es": "Forma Salvaje",
       "it": "Forma Selvatica",
-      "en": "Natural Form"
+      "en": "Natural Form",
+      "ja": "やせいのすがた"
     },
     "number": 676,
     "images": {
@@ -32946,14 +33047,16 @@
       "zh-hans": "超能妙喵"
     },
     "formNames": {
+      "ja-hrkt": "メガニャオニクス",
       "fr": "Méga-Mistigrix",
-      "en": "Mega Meowstic"
+      "en": "Mega Meowstic",
+      "ja": "メガニャオニクス"
     },
     "number": 678,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10314.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10314.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -33362,14 +33465,16 @@
       "zh-hans": "乌贼王"
     },
     "formNames": {
+      "ja-hrkt": "メガカラマネロ",
       "fr": "Méga-Sepiatroce",
-      "en": "Mega Malamar"
+      "en": "Mega Malamar",
+      "ja": "メガカラマネロ"
     },
     "number": 687,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10297.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10297.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -33473,14 +33578,16 @@
       "zh-hans": "龟足巨铠"
     },
     "formNames": {
+      "ja-hrkt": "メガガメノデス",
       "fr": "Méga-Golgopathe",
-      "en": "Mega Barbaracle"
+      "en": "Mega Barbaracle",
+      "ja": "メガガメノデス"
     },
     "number": 689,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10298.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10298.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -33584,14 +33691,16 @@
       "zh-hans": "毒藻龙"
     },
     "formNames": {
+      "ja-hrkt": "メガドラミドロ",
       "fr": "Méga-Kravarech",
-      "en": "Mega Dragalge"
+      "en": "Mega Dragalge",
+      "ja": "メガドラミドロ"
     },
     "number": 691,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10299.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10299.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -33980,14 +34089,16 @@
       "zh-hans": "摔角鹰人"
     },
     "formNames": {
+      "ja-hrkt": "メガルチャブル",
       "fr": "Méga-Brutalibré",
-      "en": "Mega Hawlucha"
+      "en": "Mega Hawlucha",
+      "ja": "メガルチャブル"
     },
     "number": 701,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10300.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10300.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -35265,14 +35376,16 @@
       "zh-hans": "基格尔德"
     },
     "formNames": {
+      "ja-hrkt": "メガジガルデ",
       "fr": "Méga-Zygarde",
-      "en": "Mega Zygarde"
+      "en": "Mega Zygarde",
+      "ja": "メガジガルデ"
     },
     "number": 718,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10301.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10301.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -36310,14 +36423,16 @@
       "zh-hans": "好胜毛蟹"
     },
     "formNames": {
+      "ja-hrkt": "メガケケンカニ",
       "fr": "Méga-Crabominable",
-      "en": "Mega Crabominable"
+      "en": "Mega Crabominable",
+      "ja": "メガケケンカニ"
     },
     "number": 740,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10315.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10315.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -36686,9 +36801,9 @@
     },
     "number": 744,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10151.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10151.png",
       "shinyFemale": ""
     },
     "cryURL": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/10151.ogg",
@@ -37845,14 +37960,16 @@
       "zh-hans": "具甲武者"
     },
     "formNames": {
+      "ja-hrkt": "メガグソクムシャ",
       "fr": "Méga-Sarmuraï",
-      "en": "Mega Golisopod"
+      "en": "Mega Golisopod",
+      "ja": "メガグソクムシャ"
     },
     "number": 768,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10316.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10316.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -39117,14 +39234,16 @@
       "zh-hans": "老翁龙"
     },
     "formNames": {
+      "ja-hrkt": "メガジジーロン",
       "fr": "Méga-Draïeul",
-      "en": "Mega Drampa"
+      "en": "Mega Drampa",
+      "ja": "メガジジーロン"
     },
     "number": 780,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10302.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10302.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -40133,14 +40252,16 @@
       "zh-hans": "玛机雅娜"
     },
     "formNames": {
+      "ja-hrkt": "メガマギアナ",
       "fr": "Méga-Magearna",
-      "en": "Mega Magearna"
+      "en": "Mega Magearna",
+      "ja": "メガマギアナ"
     },
     "number": 801,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10317.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10317.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -40172,14 +40293,16 @@
       "zh-hans": "玛机雅娜"
     },
     "formNames": {
+      "ja-hrkt": "メガマギアナ",
       "fr": "Méga-Magearna Couleur du Passé",
-      "en": "Mega Original Magearna"
+      "en": "Mega Original Magearna",
+      "ja": "メガマギアナ"
     },
     "number": 801,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10318.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10318.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -40425,14 +40548,16 @@
       "zh-hans": "捷拉奥拉"
     },
     "formNames": {
+      "ja-hrkt": "メガゼラオラ",
       "fr": "Méga-Zeraora",
-      "en": "Mega Zeraora"
+      "en": "Mega Zeraora",
+      "ja": "メガゼラオラ"
     },
     "number": 807,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10319.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10319.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -40533,9 +40658,11 @@
       "zh-hans": "美录梅塔"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 809,
     "images": {
@@ -40677,9 +40804,11 @@
       "zh-hans": "轰擂金刚猩"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 812,
     "images": {
@@ -40821,9 +40950,11 @@
       "zh-hans": "闪焰王牌"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 815,
     "images": {
@@ -40965,9 +41096,11 @@
       "zh-hans": "千面避役"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 818,
     "images": {
@@ -41180,9 +41313,11 @@
       "zh-hans": "钢铠鸦"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 823,
     "images": {
@@ -41327,9 +41462,11 @@
       "zh-hans": "以欧路普"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 826,
     "images": {
@@ -41648,9 +41785,11 @@
       "zh-hans": "暴噬龟"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 834,
     "images": {
@@ -41865,9 +42004,11 @@
       "zh-hans": "巨炭山"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 839,
     "images": {
@@ -41977,9 +42118,11 @@
       "zh-hans": "苹裹龙"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 841,
     "images": {
@@ -42053,9 +42196,11 @@
       "zh-hans": "丰蜜龙"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 842,
     "images": {
@@ -42163,9 +42308,11 @@
       "zh-hans": "沙螺蟒"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 844,
     "images": {
@@ -42532,9 +42679,11 @@
       "zh-hans": "颤弦蝾螈"
     },
     "formNames": {
+      "ja-hrkt": "ハイなすがた・キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "ハイなすがた・キョダイマックスのすがた"
     },
     "number": 849,
     "images": {
@@ -42572,9 +42721,11 @@
       "zh-hans": "颤弦蝾螈"
     },
     "formNames": {
+      "ja-hrkt": "ローなすがた・キョダイマックスのすがた",
       "fr": "Gigantamax Form",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "ローなすがた・キョダイマックスのすがた"
     },
     "number": 849,
     "images": {
@@ -42684,9 +42835,11 @@
       "zh-hans": "焚焰蚣"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 851,
     "images": {
@@ -42982,9 +43135,11 @@
       "zh-hans": "布莉姆温"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 858,
     "images": {
@@ -43130,9 +43285,11 @@
       "zh-hans": "长毛巨魔"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 861,
     "images": {
@@ -43464,9 +43621,11 @@
       "zh-hans": "霜奶仙"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 869,
     "images": {
@@ -43538,14 +43697,16 @@
       "zh-hans": "列阵兵"
     },
     "formNames": {
+      "ja-hrkt": "メガタイレーツ",
       "fr": "Méga-Hexadron",
-      "en": "Mega Falinks"
+      "en": "Mega Falinks",
+      "ja": "メガタイレーツ"
     },
     "number": 870,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10303.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10303.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -44068,9 +44229,11 @@
       "zh-hans": "大王铜象"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 879,
     "images": {
@@ -44287,9 +44450,11 @@
       "zh-hans": "铝钢龙"
     },
     "formNames": {
+      "ja-hrkt": "キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "キョダイマックスのすがた"
     },
     "number": 884,
     "images": {
@@ -44833,9 +44998,11 @@
       "zh-hans": "武道熊师"
     },
     "formNames": {
+      "ja-hrkt": "いちげきのかた・キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "いちげきのかた・キョダイマックスのすがた"
     },
     "number": 892,
     "images": {
@@ -44873,9 +45040,11 @@
       "zh-hans": "武道熊师"
     },
     "formNames": {
+      "ja-hrkt": "れんげきのかた・キョダイマックスのすがた",
       "fr": "Forme Gigamax",
       "de": "Gigadynamax-Form",
-      "en": "Gigantamax Form"
+      "en": "Gigantamax Form",
+      "ja": "れんげきのかた・キョダイマックスのすがた"
     },
     "number": 892,
     "images": {
@@ -47543,14 +47712,16 @@
       "zh-hans": "狠辣椒"
     },
     "formNames": {
+      "ja-hrkt": "メガスコヴィラン",
       "fr": "Méga-Scovilain",
-      "en": "Mega Scovillain"
+      "en": "Mega Scovillain",
+      "ja": "メガスコヴィラン"
     },
     "number": 952,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10320.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10320.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -48267,14 +48438,16 @@
       "zh-hans": "晶光花"
     },
     "formNames": {
+      "ja-hrkt": "メガキラフロル",
       "fr": "Méga-Floréclat",
-      "en": "Mega Glimmora"
+      "en": "Mega Glimmora",
+      "ja": "メガキラフロル"
     },
     "number": 970,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10321.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10321.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -48676,14 +48849,16 @@
       "zh-hans": "米立龙"
     },
     "formNames": {
+      "ja-hrkt": "メガシャリタツ",
       "fr": "Méga-Nigirigon Forme Courbée",
-      "en": "Mega Curly Tatsugiri"
+      "en": "Mega Curly Tatsugiri",
+      "ja": "メガシャリタツ"
     },
     "number": 978,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10322.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10322.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -48715,14 +48890,16 @@
       "zh-hans": "米立龙"
     },
     "formNames": {
+      "ja-hrkt": "メガシャリタツ",
       "fr": "Méga-Nigirigon Forme Affalée",
-      "en": "Mega Droopy Tatsugiri"
+      "en": "Mega Droopy Tatsugiri",
+      "ja": "メガシャリタツ"
     },
     "number": 978,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10323.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10323.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -48754,14 +48931,16 @@
       "zh-hans": "米立龙"
     },
     "formNames": {
+      "ja-hrkt": "メガシャリタツ",
       "fr": "Méga-Nigirigon Forme Raide",
-      "en": "Mega Stretchy Tatsugiri"
+      "en": "Mega Stretchy Tatsugiri",
+      "ja": "メガシャリタツ"
     },
     "number": 978,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10324.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10324.png",
       "shinyFemale": ""
     },
     "cryURL": null,
@@ -49557,14 +49736,16 @@
       "zh-hans": "戟脊龙"
     },
     "formNames": {
+      "ja-hrkt": "メガセグレイブ",
       "fr": "Méga-Glaivodo",
-      "en": "Mega Baxcalibur"
+      "en": "Mega Baxcalibur",
+      "ja": "メガセグレイブ"
     },
     "number": 998,
     "images": {
-      "default": null,
+      "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/10325.png",
       "female": "",
-      "shiny": "",
+      "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/shiny/10325.png",
       "shinyFemale": ""
     },
     "cryURL": null,
