@@ -126,7 +126,8 @@
       "volt_absorb": "Volt Absorb",
       "primordial_sea": "Primordial Sea",
       "desolate_land": "Desolate Land",
-      "solid_rock": "Pedra Sólida"
+      "solid_rock": "Solid Rock",
+      "prism_armor": "Prism Armor"
     },
     "mode": {
       "solo": "Solo",
@@ -160,6 +161,9 @@
     "shiny": {
       "text": "Shiny"
     },
+    "gender": {
+      "text": "Gênero"
+    },
     "pagination": {
       "next": "Próximo",
       "nextLong": "Próximo",
@@ -179,9 +183,9 @@
       "attackLong": "Ataque",
       "defense": "Defesa",
       "defenseLong": "Defesa",
-      "specialAttack": "Ataque esp.",
+      "specialAttack": "Ataque Esp.",
       "specialAttackLong": "Ataque especial",
-      "specialDefense": "Defesa esp.",
+      "specialDefense": "Defesa Esp.",
       "specialDefenseLong": "Defesa especial",
       "speed": "Velocidade",
       "speedLong": "Velocidade",
@@ -254,6 +258,14 @@
           "2": "Dois tipos (2)",
           "3": "Três tipos (3)"
         }
+      },
+      "battleVariant": {
+        "label": "Variação de Batalha",
+        "help": "Durante Batalhas Inversas, confrontos de tipo são invertidos e nenhum tipo é mais imune aos outros",
+        "values": {
+          "regular": "Padrão",
+          "inverse_battle": "Batalha Inversa"
+        }
       }
     },
     "changes": {
@@ -281,10 +293,10 @@
     },
     "openSource": {
       "heading": "Fonte",
-      "description": "Código da fonte está disponível em <github>GitHub</github>."
+      "description": "Código fonte disponível em <github>GitHub</github>."
     },
     "legalInfo": {
-      "heading": "Informações Legais"
+      "heading": "Informações Jurídicas"
     }
   },
   "types": {

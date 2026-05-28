@@ -27,7 +27,7 @@ offense.coverage.edit,Edit list,Sửa danh sách
 offense.coverage.weakness,Weak,Các Pokémon yếu
 offense.coverage.normal,Neutral,Các Pokémon không yếu hay kháng cự
 offense.coverage.resistance,Resist,Các Pokémon kháng cự
-offense.teraPokemon,Tera Pokémon,Tera Pokémon
+offense.teraPokemon,Tera Pokémon,Pokémon Tera hóa
 offense.coverageList.empty,No Pokémon found or no types selected,Không có Pokémon nào hoặc không có hệ được chọn
 offense.coverageList.weakness.heading,Weakness coverage list,Danh sách các Pokémon yếu
 offense.coverageList.normal.heading,Neutral effectiveness coverage list,Danh sách các Pokémon không yếu hay kháng cự
@@ -83,7 +83,7 @@ defense.abilityNames.volt_absorb,Volt Absorb,Trữ Điện (Volt Absorb)
 defense.abilityNames.primordial_sea,Primordial Sea,Biển Ban Sơ (Primordial Sea)
 defense.abilityNames.desolate_land,Desolate Land,Đất Tận Cùng (Desolate Land)
 defense.abilityNames.solid_rock,Solid Rock,Đá Cứng (Solid Rock)
-defense.abilityNames.prism_armor,Prism Armor,
+defense.abilityNames.prism_armor,Prism Armor,Giáp Lăng Kính (Prism Armor)
 defense.mode.solo,Solo,1 Pokémon (Solo)
 defense.mode.team,Team,Nhiều Pokémon (Đội/Team)
 defense.team.tableHeading,Matchup counts,Danh sách các matchup
@@ -104,7 +104,7 @@ pokedex.search.helpLong,"Help, search Pokédex","Trợ giúp, tìm kiếm Pokéd
 pokedex.search.notFound,No Pokémon found,Không tìm kiếm được Pokémon
 pokedex.cry.text,Cry,Tiếng kêu
 pokedex.shiny.text,Shiny,Shiny
-pokedex.gender.text,Gender,
+pokedex.gender.text,Gender,Giới tính
 pokedex.pagination.next,Next,Tiếp
 pokedex.pagination.nextLong,Next,Tiếp
 pokedex.pagination.previous,Prev,Trước
@@ -159,10 +159,10 @@ more.settings.typeCount.label,Number of types,Số lượng hệ
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra.
 more.settings.typeCount.values.2,Two types (2),Hai hệ (2)
 more.settings.typeCount.values.3,Three types (3),Ba hệ (3)
-more.settings.battleVariant.label,Battle variant,
-more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.",
-more.settings.battleVariant.values.regular,Regular,
-more.settings.battleVariant.values.inverse_battle,Inverse Battle,
+more.settings.battleVariant.label,Battle variant,Biến Thể Trận Đấu
+more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.","Trong một Trận Đấu Đối Ngược, bảng khắc chế thuộc tính bị đảo ngược hoàn toàn (hệ nào bình thường mạnh đến hệ nào giờ đây bị kháng cự và ngược lại). Không có hệ nào có vô hiệu hóa (immunities) hết."
+more.settings.battleVariant.values.regular,Regular,Bình Thường
+more.settings.battleVariant.values.inverse_battle,Inverse Battle,Trận Đấu Đối Ngược (Inverse Battle)
 more.changes.heading,What’s new,Có gì mới?
 more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Xem các tin tức trong <changelog>trang nhật ký update</changelog> (Tiếng Anh).
 more.help.heading,Help,Hỗ Trợ
@@ -199,7 +199,7 @@ types.stellar,Stellar,Stellar
 types.none,None,Trống
 banners.updateReady.description,An update is available,Có update mới!
 banners.updateReady.whatsNew,What’s new,Tin tức mới
-banners.updateReady.update,Update,Update
+banners.updateReady.update,Update,Cập nhật
 general.loading,Loading…,Đang load...
 general.copyLink,Copy link,Sao chép link
 general.clearChoices,Clear choices,Xóa

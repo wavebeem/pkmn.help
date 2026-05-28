@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-05-27
+
+- Updated Portuguese (Brazil) translation
+
+- Updated Vietnamese translation
+
 ## 2026-05-26
 
 - Added images for Mega Evolutions from Pokémon Legends: Z-A

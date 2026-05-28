@@ -48,7 +48,7 @@
       "normal": "Các Pokémon không yếu hay kháng cự",
       "resistance": "Các Pokémon kháng cự"
     },
-    "teraPokemon": "Tera Pokémon",
+    "teraPokemon": "Pokémon Tera hóa",
     "coverageList": {
       "empty": "Không có Pokémon nào hoặc không có hệ được chọn",
       "weakness": {
@@ -126,7 +126,8 @@
       "volt_absorb": "Trữ Điện (Volt Absorb)",
       "primordial_sea": "Biển Ban Sơ (Primordial Sea)",
       "desolate_land": "Đất Tận Cùng (Desolate Land)",
-      "solid_rock": "Đá Cứng (Solid Rock)"
+      "solid_rock": "Đá Cứng (Solid Rock)",
+      "prism_armor": "Giáp Lăng Kính (Prism Armor)"
     },
     "mode": {
       "solo": "1 Pokémon (Solo)",
@@ -159,6 +160,9 @@
     },
     "shiny": {
       "text": "Shiny"
+    },
+    "gender": {
+      "text": "Giới tính"
     },
     "pagination": {
       "next": "Tiếp",
@@ -254,6 +258,14 @@
           "2": "Hai hệ (2)",
           "3": "Ba hệ (3)"
         }
+      },
+      "battleVariant": {
+        "label": "Biến Thể Trận Đấu",
+        "help": "Trong một Trận Đấu Đối Ngược, bảng khắc chế thuộc tính bị đảo ngược hoàn toàn (hệ nào bình thường mạnh đến hệ nào giờ đây bị kháng cự và ngược lại). Không có hệ nào có vô hiệu hóa (immunities) hết.",
+        "values": {
+          "regular": "Bình Thường",
+          "inverse_battle": "Trận Đấu Đối Ngược (Inverse Battle)"
+        }
       }
     },
     "changes": {
@@ -313,7 +325,7 @@
     "updateReady": {
       "description": "Có update mới!",
       "whatsNew": "Tin tức mới",
-      "update": "Update"
+      "update": "Cập nhật"
     }
   },
   "general": {

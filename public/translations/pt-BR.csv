@@ -82,8 +82,8 @@ defense.abilityNames.motor_drive,Motor Drive,Motor Drive
 defense.abilityNames.volt_absorb,Volt Absorb,Volt Absorb
 defense.abilityNames.primordial_sea,Primordial Sea,Primordial Sea
 defense.abilityNames.desolate_land,Desolate Land,Desolate Land
-defense.abilityNames.solid_rock,Solid Rock,Pedra Sólida
-defense.abilityNames.prism_armor,Prism Armor,
+defense.abilityNames.solid_rock,Solid Rock,Solid Rock
+defense.abilityNames.prism_armor,Prism Armor,Prism Armor
 defense.mode.solo,Solo,Solo
 defense.mode.team,Team,Time
 defense.team.tableHeading,Matchup counts,Contagem de Confrontos
@@ -104,7 +104,7 @@ pokedex.search.helpLong,"Help, search Pokédex","Ajuda, procurar na Pokédex"
 pokedex.search.notFound,No Pokémon found,Nenhum Pokémon encontrado
 pokedex.cry.text,Cry,Som
 pokedex.shiny.text,Shiny,Shiny
-pokedex.gender.text,Gender,
+pokedex.gender.text,Gender,Gênero
 pokedex.pagination.next,Next,Próximo
 pokedex.pagination.nextLong,Next,Próximo
 pokedex.pagination.previous,Prev,Anterior
@@ -119,9 +119,9 @@ pokedex.stats.attack,Attack,Ataque
 pokedex.stats.attackLong,Attack,Ataque
 pokedex.stats.defense,Defense,Defesa
 pokedex.stats.defenseLong,Defense,Defesa
-pokedex.stats.specialAttack,Sp. Atk.,Ataque esp.
+pokedex.stats.specialAttack,Sp. Atk.,Ataque Esp.
 pokedex.stats.specialAttackLong,Special Attack,Ataque especial
-pokedex.stats.specialDefense,Sp. Def.,Defesa esp.
+pokedex.stats.specialDefense,Sp. Def.,Defesa Esp.
 pokedex.stats.specialDefenseLong,Special Defense,Defesa especial
 pokedex.stats.speed,Speed,Velocidade
 pokedex.stats.speedLong,Speed,Velocidade
@@ -159,10 +159,10 @@ more.settings.typeCount.label,Number of types,Número de tipos
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon podem brevemente ter 3 tipos ao mesmo tempo se atingido por Maldição da Floresta (Forests's Curse) ou Doçura ou Travessura (Trick-or-Treat). O campo para terceiro tipo é escondido por padrão por ser raramente utilizado.
 more.settings.typeCount.values.2,Two types (2),Dois tipos (2)
 more.settings.typeCount.values.3,Three types (3),Três tipos (3)
-more.settings.battleVariant.label,Battle variant,
-more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.",
-more.settings.battleVariant.values.regular,Regular,
-more.settings.battleVariant.values.inverse_battle,Inverse Battle,
+more.settings.battleVariant.label,Battle variant,Variação de Batalha
+more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.","Durante Batalhas Inversas, confrontos de tipo são invertidos e nenhum tipo é mais imune aos outros"
+more.settings.battleVariant.values.regular,Regular,Padrão
+more.settings.battleVariant.values.inverse_battle,Inverse Battle,Batalha Inversa
 more.changes.heading,What’s new,O que há de novo
 more.changes.description,See what’s new in the <changelog>changelog</changelog>.,Acompanhe novas mudanças no <changelog>changelog</changelog>.
 more.help.heading,Help,Ajuda
@@ -175,8 +175,8 @@ more.givingBack.description,"I have spent countless hours improving this site. I
 more.thanks.heading,Credits,Agradecimentos especiais
 more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,Veja todos que ajudaram a fazer este website nos <credits>credits</credits>.
 more.openSource.heading,Open source,Fonte
-more.openSource.description,Source code is available on <github>GitHub</github>.,Código da fonte está disponível em <github>GitHub</github>.
-more.legalInfo.heading,Legal info,Informações Legais
+more.openSource.description,Source code is available on <github>GitHub</github>.,Código fonte disponível em <github>GitHub</github>.
+more.legalInfo.heading,Legal info,Informações Jurídicas
 types.normal,Normal,Normal
 types.fighting,Fighting,Lutador
 types.flying,Flying,Voador
