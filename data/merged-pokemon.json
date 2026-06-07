@@ -32,6 +32,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -67,6 +68,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -102,6 +104,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -148,6 +151,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -182,6 +186,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -216,6 +221,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -251,6 +257,7 @@
       "fire",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -297,6 +304,7 @@
       "fire",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -343,6 +351,7 @@
       "fire",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -377,6 +386,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -411,6 +421,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -445,6 +456,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -490,6 +502,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -524,6 +537,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -558,6 +572,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -593,6 +608,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -628,6 +644,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -663,6 +680,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -698,6 +716,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -744,6 +763,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -779,6 +799,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -814,6 +835,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -849,6 +871,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -895,6 +918,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -929,6 +953,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -975,6 +1000,7 @@
       "dark",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1009,6 +1035,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1055,6 +1082,7 @@
       "dark",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1090,6 +1118,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1125,6 +1154,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1159,6 +1189,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1193,6 +1224,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1227,6 +1259,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1261,6 +1294,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1307,6 +1341,7 @@
       "electric",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1345,7 +1380,8 @@
     "id": "10304",
     "types": [
       "electric"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "raichu-mega-y",
@@ -1383,7 +1419,8 @@
     "id": "10305",
     "types": [
       "electric"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "sandshrew",
@@ -1417,6 +1454,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1463,6 +1501,7 @@
       "ice",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1497,6 +1536,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1543,6 +1583,7 @@
       "ice",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1577,6 +1618,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1611,6 +1653,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1646,6 +1689,7 @@
       "poison",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1680,6 +1724,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1714,6 +1759,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1749,6 +1795,7 @@
       "poison",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1783,6 +1830,11 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -1817,6 +1869,11 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -1856,7 +1913,8 @@
     "types": [
       "fairy",
       "flying"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "vulpix",
@@ -1890,6 +1948,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1935,6 +1994,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -1969,6 +2029,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2015,6 +2076,7 @@
       "ice",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2050,6 +2112,11 @@
       "normal",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -2085,6 +2152,11 @@
       "normal",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -2120,6 +2192,7 @@
       "poison",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2155,6 +2228,7 @@
       "poison",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2190,6 +2264,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2225,6 +2300,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2260,6 +2336,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2295,6 +2372,7 @@
       "bug",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2330,6 +2408,7 @@
       "bug",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2365,6 +2444,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2400,6 +2480,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2434,6 +2515,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2480,6 +2562,7 @@
       "ground",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2514,6 +2597,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2560,6 +2644,7 @@
       "ground",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2594,6 +2679,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2639,6 +2725,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2684,6 +2771,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2718,6 +2806,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2763,6 +2852,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2797,6 +2887,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2831,6 +2922,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2865,6 +2957,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2899,6 +2992,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2933,6 +3027,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -2974,6 +3069,7 @@
       "fire",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3008,6 +3104,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3049,6 +3146,7 @@
       "fire",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3083,6 +3181,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3117,6 +3216,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3152,6 +3252,7 @@
       "water",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3186,6 +3287,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3220,6 +3322,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3254,6 +3357,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3299,6 +3403,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3333,6 +3438,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3367,6 +3473,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3401,6 +3508,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3436,6 +3544,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3471,6 +3580,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3506,6 +3616,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3545,7 +3656,8 @@
     "types": [
       "grass",
       "poison"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "tentacool",
@@ -3580,6 +3692,7 @@
       "water",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3615,6 +3728,7 @@
       "water",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3650,6 +3764,7 @@
       "rock",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3696,6 +3811,7 @@
       "rock",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3731,6 +3847,7 @@
       "rock",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3777,6 +3894,7 @@
       "rock",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3812,6 +3930,7 @@
       "rock",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3858,6 +3977,7 @@
       "rock",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3892,6 +4012,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3937,6 +4058,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -3971,6 +4093,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4017,6 +4140,7 @@
       "psychic",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4052,6 +4176,7 @@
       "water",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4097,6 +4222,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4132,6 +4258,7 @@
       "water",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4178,6 +4305,7 @@
       "water",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4224,6 +4352,7 @@
       "poison",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4259,6 +4388,11 @@
       "electric",
       "steel"
     ],
+    "typesByGeneration": {
+      "generation-i": [
+        "electric"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -4294,6 +4428,11 @@
       "electric",
       "steel"
     ],
+    "typesByGeneration": {
+      "generation-i": [
+        "electric"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -4329,6 +4468,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4374,6 +4514,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4409,6 +4550,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4444,6 +4586,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4478,6 +4621,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4513,6 +4657,7 @@
       "water",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4547,6 +4692,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4593,6 +4739,7 @@
       "poison",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4627,6 +4774,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4673,6 +4821,7 @@
       "poison",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4707,6 +4856,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4742,6 +4892,7 @@
       "water",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4777,6 +4928,7 @@
       "ghost",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4812,6 +4964,7 @@
       "ghost",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4847,6 +5000,7 @@
       "ghost",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4893,6 +5047,7 @@
       "ghost",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4928,6 +5083,7 @@
       "rock",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4962,6 +5118,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -4996,6 +5153,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5030,6 +5188,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5064,6 +5223,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5098,6 +5258,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5139,6 +5300,7 @@
       "electric",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5173,6 +5335,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5214,6 +5377,7 @@
       "electric",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5249,6 +5413,7 @@
       "grass",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5284,6 +5449,7 @@
       "grass",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5330,6 +5496,7 @@
       "grass",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5364,6 +5531,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5398,6 +5566,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5444,6 +5613,7 @@
       "fire",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5478,6 +5648,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5512,6 +5683,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5546,6 +5718,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5580,6 +5753,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5614,6 +5788,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5660,6 +5835,7 @@
       "poison",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5695,6 +5871,7 @@
       "ground",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5730,6 +5907,7 @@
       "ground",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5764,6 +5942,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5798,6 +5977,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5832,6 +6012,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5877,6 +6058,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5911,6 +6093,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5945,6 +6128,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -5979,6 +6163,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6013,6 +6198,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6047,6 +6233,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6082,6 +6269,7 @@
       "water",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6121,7 +6309,8 @@
     "types": [
       "water",
       "psychic"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "mr-mime",
@@ -6156,6 +6345,11 @@
       "psychic",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "psychic"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -6202,6 +6396,7 @@
       "ice",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6237,6 +6432,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6272,6 +6468,7 @@
       "ice",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6306,6 +6503,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6340,6 +6538,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6374,6 +6573,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6420,6 +6620,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6454,6 +6655,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6493,6 +6695,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6533,6 +6736,7 @@
       "fighting",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6573,6 +6777,7 @@
       "fighting",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6607,6 +6812,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6642,6 +6848,7 @@
       "water",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6688,6 +6895,7 @@
       "water",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6723,6 +6931,7 @@
       "water",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6757,6 +6966,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6791,6 +7001,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6825,6 +7036,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6859,6 +7071,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6893,6 +7106,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6927,6 +7141,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6962,6 +7177,7 @@
       "rock",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -6997,6 +7213,7 @@
       "rock",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7032,6 +7249,7 @@
       "rock",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7067,6 +7285,7 @@
       "rock",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7102,6 +7321,7 @@
       "rock",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7148,6 +7368,7 @@
       "rock",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7182,6 +7403,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7217,6 +7439,7 @@
       "ice",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7263,6 +7486,7 @@
       "psychic",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7298,6 +7522,7 @@
       "electric",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7344,6 +7569,7 @@
       "fighting",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7379,6 +7605,7 @@
       "fire",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7425,6 +7652,7 @@
       "dark",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7459,6 +7687,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7493,6 +7722,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7528,6 +7758,7 @@
       "dragon",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7567,7 +7798,8 @@
     "types": [
       "dragon",
       "flying"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "mewtwo",
@@ -7601,6 +7833,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7647,6 +7880,7 @@
       "psychic",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7692,6 +7926,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7726,6 +7961,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7760,6 +7996,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7794,6 +8031,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7828,6 +8066,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7867,7 +8106,8 @@
     "types": [
       "grass",
       "fairy"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "cyndaquil",
@@ -7901,6 +8141,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7935,6 +8176,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -7969,6 +8211,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8010,6 +8253,7 @@
       "fire",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8044,6 +8288,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8078,6 +8323,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8112,6 +8358,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8151,7 +8398,8 @@
     "types": [
       "water",
       "dragon"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "sentret",
@@ -8185,6 +8433,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8219,6 +8468,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8254,6 +8504,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8289,6 +8540,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8324,6 +8576,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8359,6 +8612,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8394,6 +8648,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8429,6 +8684,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8464,6 +8720,7 @@
       "poison",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8499,6 +8756,7 @@
       "water",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8534,6 +8792,7 @@
       "water",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8568,6 +8827,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8602,6 +8862,11 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -8637,6 +8902,11 @@
       "normal",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -8671,6 +8941,11 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -8706,6 +8981,12 @@
       "fairy",
       "flying"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal",
+        "flying"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -8741,6 +9022,7 @@
       "psychic",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8776,6 +9058,7 @@
       "psychic",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8810,6 +9093,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8844,6 +9128,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8878,6 +9163,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8924,6 +9210,7 @@
       "electric",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8958,6 +9245,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -8993,6 +9281,11 @@
       "water",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "water"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -9028,6 +9321,11 @@
       "water",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "water"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -9062,6 +9360,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9096,6 +9395,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9131,6 +9431,7 @@
       "grass",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9166,6 +9467,7 @@
       "grass",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9201,6 +9503,7 @@
       "grass",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9235,6 +9538,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9269,6 +9573,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9303,6 +9608,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9338,6 +9644,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9373,6 +9680,7 @@
       "water",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9413,6 +9721,7 @@
       "poison",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9448,6 +9757,7 @@
       "water",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9482,6 +9792,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9516,6 +9827,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9551,6 +9863,7 @@
       "dark",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9586,6 +9899,7 @@
       "water",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9632,6 +9946,7 @@
       "poison",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9666,6 +9981,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9709,6 +10025,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9743,6 +10060,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9778,6 +10096,7 @@
       "normal",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9812,6 +10131,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9847,6 +10167,7 @@
       "bug",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9881,6 +10202,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9916,6 +10238,7 @@
       "ground",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9951,6 +10274,7 @@
       "steel",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -9997,6 +10321,7 @@
       "steel",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10031,6 +10356,11 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -10065,6 +10395,11 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -10100,6 +10435,7 @@
       "water",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10141,6 +10477,7 @@
       "dark",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10176,6 +10513,7 @@
       "bug",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10222,6 +10560,7 @@
       "bug",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10257,6 +10596,7 @@
       "bug",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10292,6 +10632,7 @@
       "bug",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10338,6 +10679,7 @@
       "bug",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10373,6 +10715,7 @@
       "dark",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10414,6 +10757,7 @@
       "fighting",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10448,6 +10792,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10482,6 +10827,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10516,6 +10862,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10551,6 +10898,7 @@
       "fire",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10586,6 +10934,7 @@
       "ice",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10621,6 +10970,7 @@
       "ice",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10656,6 +11006,7 @@
       "water",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10701,6 +11052,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10735,6 +11087,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10769,6 +11122,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10804,6 +11158,7 @@
       "ice",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10839,6 +11194,7 @@
       "water",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10874,6 +11230,7 @@
       "steel",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10913,7 +11270,8 @@
     "types": [
       "steel",
       "flying"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "houndour",
@@ -10948,6 +11306,7 @@
       "dark",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -10983,6 +11342,7 @@
       "dark",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11029,6 +11389,7 @@
       "dark",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11064,6 +11425,7 @@
       "water",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11098,6 +11460,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11132,6 +11495,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11166,6 +11530,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11200,6 +11565,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11234,6 +11600,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11268,6 +11635,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11302,6 +11670,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11337,6 +11706,7 @@
       "ice",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11371,6 +11741,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11405,6 +11776,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11439,6 +11811,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11473,6 +11846,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11507,6 +11881,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11541,6 +11916,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11575,6 +11951,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11610,6 +11987,7 @@
       "rock",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11645,6 +12023,7 @@
       "rock",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11680,6 +12059,7 @@
       "rock",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11726,6 +12106,7 @@
       "rock",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11761,6 +12142,7 @@
       "psychic",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11796,6 +12178,7 @@
       "fire",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11831,6 +12214,7 @@
       "psychic",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11865,6 +12249,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11899,6 +12284,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11933,6 +12319,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -11979,6 +12366,7 @@
       "grass",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12013,6 +12401,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12048,6 +12437,7 @@
       "fire",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12083,6 +12473,7 @@
       "fire",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12129,6 +12520,7 @@
       "fire",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12163,6 +12555,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12198,6 +12591,7 @@
       "water",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12233,6 +12627,7 @@
       "water",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12279,6 +12674,7 @@
       "water",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12313,6 +12709,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12347,6 +12744,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12381,6 +12779,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12427,6 +12826,7 @@
       "dark",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12461,6 +12861,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12507,6 +12908,7 @@
       "dark",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12541,6 +12943,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12575,6 +12978,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12610,6 +13014,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12644,6 +13049,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12679,6 +13085,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12714,6 +13121,7 @@
       "water",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12749,6 +13157,7 @@
       "water",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12784,6 +13193,7 @@
       "water",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12818,6 +13228,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12853,6 +13264,7 @@
       "grass",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12888,6 +13300,7 @@
       "grass",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12923,6 +13336,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12958,6 +13372,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -12993,6 +13408,7 @@
       "water",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13028,6 +13444,7 @@
       "water",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13063,6 +13480,11 @@
       "psychic",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "psychic"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -13098,6 +13520,11 @@
       "psychic",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "psychic"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -13133,6 +13560,11 @@
       "psychic",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "psychic"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -13179,6 +13611,7 @@
       "psychic",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13214,6 +13647,7 @@
       "bug",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13249,6 +13683,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13283,6 +13718,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13318,6 +13754,7 @@
       "grass",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13352,6 +13789,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13386,6 +13824,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13420,6 +13859,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13455,6 +13895,7 @@
       "bug",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13490,6 +13931,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13525,6 +13967,7 @@
       "bug",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13559,6 +14002,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13593,6 +14037,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13627,6 +14072,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13661,6 +14107,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13695,6 +14142,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13730,6 +14178,11 @@
       "normal",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -13764,6 +14217,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13798,6 +14252,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13832,6 +14287,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13867,6 +14323,7 @@
       "dark",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13913,6 +14370,7 @@
       "dark",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -13948,6 +14406,11 @@
       "steel",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "steel"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -13994,6 +14457,7 @@
       "steel",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14029,6 +14493,7 @@
       "steel",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14064,6 +14529,7 @@
       "steel",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14099,6 +14565,7 @@
       "steel",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14144,6 +14611,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14179,6 +14647,7 @@
       "fighting",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14214,6 +14683,7 @@
       "fighting",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14260,6 +14730,7 @@
       "fighting",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14294,6 +14765,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14328,6 +14800,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14373,6 +14846,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14407,6 +14881,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14441,6 +14916,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14475,6 +14951,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14509,6 +14986,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14544,6 +15022,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14578,6 +15057,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14612,6 +15092,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14647,6 +15128,7 @@
       "water",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14682,6 +15164,7 @@
       "water",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14728,6 +15211,7 @@
       "water",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14762,6 +15246,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14796,6 +15281,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14831,6 +15317,7 @@
       "fire",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14866,6 +15353,7 @@
       "fire",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14912,6 +15400,7 @@
       "fire",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14946,6 +15435,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -14980,6 +15470,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15014,6 +15505,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15048,6 +15540,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15082,6 +15575,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15117,6 +15611,7 @@
       "ground",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15152,6 +15647,7 @@
       "ground",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15186,6 +15682,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15221,6 +15718,7 @@
       "grass",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15256,6 +15754,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15291,6 +15790,7 @@
       "dragon",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15337,6 +15837,7 @@
       "dragon",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15371,6 +15872,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15405,6 +15907,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15440,6 +15943,7 @@
       "rock",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15475,6 +15979,7 @@
       "rock",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15510,6 +16015,7 @@
       "water",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15545,6 +16051,7 @@
       "water",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15579,6 +16086,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15614,6 +16122,7 @@
       "water",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15649,6 +16158,7 @@
       "ground",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15684,6 +16194,7 @@
       "ground",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15719,6 +16230,7 @@
       "rock",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15754,6 +16266,7 @@
       "rock",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15789,6 +16302,7 @@
       "rock",
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15824,6 +16338,7 @@
       "rock",
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15858,6 +16373,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15892,6 +16408,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15937,6 +16454,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -15982,6 +16500,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16027,6 +16546,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16072,6 +16592,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16106,6 +16627,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16140,6 +16662,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16174,6 +16697,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16219,6 +16743,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16253,6 +16778,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16287,6 +16813,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16322,6 +16849,7 @@
       "grass",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16356,6 +16884,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16395,7 +16924,8 @@
     "types": [
       "psychic",
       "steel"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "absol",
@@ -16429,6 +16959,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16474,6 +17005,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16513,7 +17045,8 @@
     "types": [
       "dark",
       "ghost"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "wynaut",
@@ -16547,6 +17080,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16581,6 +17115,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16615,6 +17150,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16660,6 +17196,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16695,6 +17232,7 @@
       "ice",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16730,6 +17268,7 @@
       "ice",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16765,6 +17304,7 @@
       "ice",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16799,6 +17339,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16833,6 +17374,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16867,6 +17409,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16902,6 +17445,7 @@
       "water",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16936,6 +17480,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -16970,6 +17515,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17004,6 +17550,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17039,6 +17586,7 @@
       "dragon",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17085,6 +17633,7 @@
       "dragon",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17120,6 +17669,7 @@
       "steel",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17155,6 +17705,7 @@
       "steel",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17190,6 +17741,7 @@
       "steel",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17236,6 +17788,7 @@
       "steel",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17270,6 +17823,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17304,6 +17858,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17338,6 +17893,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17373,6 +17929,7 @@
       "dragon",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17419,6 +17976,7 @@
       "dragon",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17454,6 +18012,7 @@
       "dragon",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17500,6 +18059,7 @@
       "dragon",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17544,6 +18104,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17589,6 +18150,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17633,6 +18195,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17679,6 +18242,7 @@
       "ground",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17714,6 +18278,7 @@
       "dragon",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17760,6 +18325,7 @@
       "dragon",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17795,6 +18361,7 @@
       "steel",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17840,6 +18407,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17885,6 +18453,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17930,6 +18499,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -17975,6 +18545,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18009,6 +18580,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18043,6 +18615,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18078,6 +18651,7 @@
       "grass",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18112,6 +18686,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18147,6 +18722,7 @@
       "fire",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18182,6 +18758,7 @@
       "fire",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18216,6 +18793,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18250,6 +18828,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18285,6 +18864,7 @@
       "water",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18320,6 +18900,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18355,6 +18936,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18390,6 +18972,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18429,7 +19012,8 @@
     "types": [
       "fighting",
       "flying"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "bidoof",
@@ -18463,6 +19047,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18498,6 +19083,7 @@
       "normal",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18532,6 +19118,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18566,6 +19153,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18600,6 +19188,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18634,6 +19223,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18668,6 +19258,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18703,6 +19294,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18738,6 +19330,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18772,6 +19365,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18806,6 +19400,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18841,6 +19436,7 @@
       "rock",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18876,6 +19472,7 @@
       "rock",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18919,6 +19516,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -18965,6 +19563,7 @@
       "bug",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19011,6 +19610,7 @@
       "bug",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19057,6 +19657,7 @@
       "bug",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19092,6 +19693,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19127,6 +19729,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19162,6 +19765,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19196,6 +19800,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19230,6 +19835,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19264,6 +19870,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19298,6 +19905,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19343,6 +19951,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19388,6 +19997,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19434,6 +20044,7 @@
       "water",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19468,6 +20079,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19503,6 +20115,7 @@
       "ghost",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19538,6 +20151,7 @@
       "ghost",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19572,6 +20186,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19606,6 +20221,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19652,6 +20268,7 @@
       "normal",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19686,6 +20303,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19721,6 +20339,7 @@
       "dark",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19755,6 +20374,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19789,6 +20409,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19823,6 +20444,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19858,6 +20480,7 @@
       "poison",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19893,6 +20516,7 @@
       "poison",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19928,6 +20552,7 @@
       "steel",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19963,6 +20588,7 @@
       "steel",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -19997,6 +20623,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20032,6 +20659,11 @@
       "psychic",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "psychic"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -20066,6 +20698,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20101,6 +20734,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20136,6 +20770,7 @@
       "ghost",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20171,6 +20806,7 @@
       "dragon",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20206,6 +20842,7 @@
       "dragon",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20241,6 +20878,7 @@
       "dragon",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20287,6 +20925,7 @@
       "dragon",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20325,7 +20964,8 @@
     "id": "10309",
     "types": [
       "dragon"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "munchlax",
@@ -20359,6 +20999,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20393,6 +21034,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20428,6 +21070,7 @@
       "fighting",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20474,6 +21117,7 @@
       "fighting",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20513,7 +21157,8 @@
     "types": [
       "fighting",
       "steel"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "hippopotas",
@@ -20547,6 +21192,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20581,6 +21227,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20616,6 +21263,7 @@
       "poison",
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20651,6 +21299,7 @@
       "poison",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20686,6 +21335,7 @@
       "poison",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20721,6 +21371,7 @@
       "poison",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20755,6 +21406,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20789,6 +21441,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20823,6 +21476,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20858,6 +21512,7 @@
       "water",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20893,6 +21548,7 @@
       "grass",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20928,6 +21584,7 @@
       "grass",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -20974,6 +21631,7 @@
       "grass",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21009,6 +21667,7 @@
       "dark",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21044,6 +21703,7 @@
       "electric",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21078,6 +21738,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21113,6 +21774,7 @@
       "ground",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21147,6 +21809,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21181,6 +21844,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21215,6 +21879,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21250,6 +21915,12 @@
       "fairy",
       "flying"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "normal",
+        "flying"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -21285,6 +21956,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21319,6 +21991,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21353,6 +22026,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21388,6 +22062,7 @@
       "ground",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21423,6 +22098,7 @@
       "ice",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21457,6 +22133,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21492,6 +22169,7 @@
       "psychic",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21538,6 +22216,7 @@
       "psychic",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21573,6 +22252,7 @@
       "rock",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21607,6 +22287,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21642,6 +22323,7 @@
       "ice",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21681,7 +22363,8 @@
     "types": [
       "ice",
       "ghost"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "rotom",
@@ -21727,6 +22410,7 @@
       "electric",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -21773,6 +22457,12 @@
       "electric",
       "fire"
     ],
+    "typesByGeneration": {
+      "generation-iv": [
+        "electric",
+        "ghost"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -21819,6 +22509,12 @@
       "electric",
       "water"
     ],
+    "typesByGeneration": {
+      "generation-iv": [
+        "electric",
+        "ghost"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -21865,6 +22561,12 @@
       "electric",
       "ice"
     ],
+    "typesByGeneration": {
+      "generation-iv": [
+        "electric",
+        "ghost"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -21911,6 +22613,12 @@
       "electric",
       "flying"
     ],
+    "typesByGeneration": {
+      "generation-iv": [
+        "electric",
+        "ghost"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -21957,6 +22665,12 @@
       "electric",
       "grass"
     ],
+    "typesByGeneration": {
+      "generation-iv": [
+        "electric",
+        "ghost"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -21991,6 +22705,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22025,6 +22740,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22059,6 +22775,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22094,6 +22811,7 @@
       "steel",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22135,6 +22853,7 @@
       "steel",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22170,6 +22889,7 @@
       "water",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22211,6 +22931,7 @@
       "water",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22246,6 +22967,7 @@
       "fire",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22285,7 +23007,8 @@
     "types": [
       "fire",
       "steel"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "regigigas",
@@ -22319,6 +23042,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22365,6 +23089,7 @@
       "ghost",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22411,6 +23136,7 @@
       "ghost",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22445,6 +23171,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22479,6 +23206,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22513,6 +23241,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22547,6 +23276,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22585,7 +23315,8 @@
     "id": "10312",
     "types": [
       "dark"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "shaymin-land",
@@ -22630,6 +23361,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22676,6 +23408,7 @@
       "grass",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22718,6 +23451,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22753,6 +23487,7 @@
       "psychic",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22787,6 +23522,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22821,6 +23557,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22855,6 +23592,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22889,6 +23627,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22924,6 +23663,7 @@
       "fire",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22959,6 +23699,7 @@
       "fire",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -22998,7 +23739,8 @@
     "types": [
       "fire",
       "fighting"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "oshawott",
@@ -23032,6 +23774,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23066,6 +23809,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23100,6 +23844,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23141,6 +23886,7 @@
       "water",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23175,6 +23921,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23209,6 +23956,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23243,6 +23991,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23277,6 +24026,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23311,6 +24061,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23345,6 +24096,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23379,6 +24131,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23413,6 +24166,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23447,6 +24201,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23481,6 +24236,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23515,6 +24271,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23549,6 +24306,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23583,6 +24341,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23617,6 +24376,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23651,6 +24411,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23686,6 +24447,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23721,6 +24483,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23756,6 +24519,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23790,6 +24554,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23824,6 +24589,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23858,6 +24624,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23892,6 +24659,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23926,6 +24694,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23961,6 +24730,7 @@
       "psychic",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -23996,6 +24766,7 @@
       "psychic",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24030,6 +24801,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24065,6 +24837,7 @@
       "ground",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24104,7 +24877,8 @@
     "types": [
       "ground",
       "steel"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "audino",
@@ -24138,6 +24912,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24184,6 +24959,7 @@
       "normal",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24218,6 +24994,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24252,6 +25029,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24286,6 +25064,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24320,6 +25099,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24355,6 +25135,7 @@
       "water",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24390,6 +25171,7 @@
       "water",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24424,6 +25206,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24458,6 +25241,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24493,6 +25277,7 @@
       "bug",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24528,6 +25313,7 @@
       "bug",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24563,6 +25349,7 @@
       "bug",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24598,6 +25385,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24633,6 +25421,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24668,6 +25457,7 @@
       "bug",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24707,7 +25497,8 @@
     "types": [
       "bug",
       "poison"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "cottonee",
@@ -24742,6 +25533,11 @@
       "grass",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "grass"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -24777,6 +25573,11 @@
       "grass",
       "fairy"
     ],
+    "typesByGeneration": {
+      "generation-v": [
+        "grass"
+      ]
+    },
     "hasCry": true
   },
   {
@@ -24811,6 +25612,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24845,6 +25647,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24886,6 +25689,7 @@
       "grass",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24931,6 +25735,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -24966,6 +25771,7 @@
       "ground",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25001,6 +25807,7 @@
       "ground",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25036,6 +25843,7 @@
       "ground",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25070,6 +25878,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25115,6 +25924,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25160,6 +25970,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25206,6 +26017,7 @@
       "fire",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25251,6 +26063,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25297,6 +26110,7 @@
       "ice",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25331,6 +26145,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25366,6 +26181,7 @@
       "bug",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25401,6 +26217,7 @@
       "bug",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25436,6 +26253,7 @@
       "dark",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25471,6 +26289,7 @@
       "dark",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25510,7 +26329,8 @@
     "types": [
       "dark",
       "fighting"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "sigilyph",
@@ -25545,6 +26365,7 @@
       "psychic",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25579,6 +26400,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25625,6 +26447,7 @@
       "ground",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25659,6 +26482,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25694,6 +26518,7 @@
       "water",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25729,6 +26554,7 @@
       "water",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25764,6 +26590,7 @@
       "rock",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25799,6 +26626,7 @@
       "rock",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25833,6 +26661,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25867,6 +26696,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25901,6 +26731,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25942,6 +26773,7 @@
       "normal",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -25976,6 +26808,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26017,6 +26850,7 @@
       "normal",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26051,6 +26885,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26085,6 +26920,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26119,6 +26955,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26153,6 +26990,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26187,6 +27025,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26221,6 +27060,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26255,6 +27095,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26289,6 +27130,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26324,6 +27166,7 @@
       "water",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26359,6 +27202,7 @@
       "water",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26393,6 +27237,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26427,6 +27272,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26461,6 +27307,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26505,6 +27352,7 @@
       "normal",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26549,6 +27397,7 @@
       "normal",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26584,6 +27433,7 @@
       "electric",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26618,6 +27468,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26653,6 +27504,7 @@
       "bug",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26688,6 +27540,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26723,6 +27576,7 @@
       "grass",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26769,6 +27623,7 @@
       "water",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26815,6 +27670,7 @@
       "water",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26849,6 +27705,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26884,6 +27741,7 @@
       "bug",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26919,6 +27777,7 @@
       "bug",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26954,6 +27813,7 @@
       "grass",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -26989,6 +27849,7 @@
       "grass",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27023,6 +27884,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27057,6 +27919,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27091,6 +27954,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27125,6 +27989,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27159,6 +28024,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27193,6 +28059,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27231,7 +28098,8 @@
     "id": "10290",
     "types": [
       "electric"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "elgyem",
@@ -27265,6 +28133,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27299,6 +28168,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27334,6 +28204,7 @@
       "ghost",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27369,6 +28240,7 @@
       "ghost",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27404,6 +28276,7 @@
       "ghost",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27443,7 +28316,8 @@
     "types": [
       "ghost",
       "fire"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "axew",
@@ -27477,6 +28351,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27511,6 +28386,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27545,6 +28421,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27579,6 +28456,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27613,6 +28491,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27647,6 +28526,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27681,6 +28561,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27715,6 +28596,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27750,6 +28632,7 @@
       "ground",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27796,6 +28679,7 @@
       "ground",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27830,6 +28714,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27864,6 +28749,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27898,6 +28784,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27933,6 +28820,7 @@
       "ground",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -27968,6 +28856,7 @@
       "ground",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28007,7 +28896,8 @@
     "types": [
       "ground",
       "ghost"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "pawniard",
@@ -28042,6 +28932,7 @@
       "dark",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28077,6 +28968,7 @@
       "dark",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28111,6 +29003,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28146,6 +29039,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28181,6 +29075,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28222,6 +29117,7 @@
       "psychic",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28257,6 +29153,7 @@
       "dark",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28292,6 +29189,7 @@
       "dark",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28326,6 +29224,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28361,6 +29260,7 @@
       "bug",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28396,6 +29296,7 @@
       "dark",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28431,6 +29332,7 @@
       "dark",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28466,6 +29368,7 @@
       "dark",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28501,6 +29404,7 @@
       "bug",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28536,6 +29440,7 @@
       "bug",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28571,6 +29476,7 @@
       "steel",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28606,6 +29512,7 @@
       "rock",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28641,6 +29548,7 @@
       "grass",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28686,6 +29594,7 @@
     "types": [
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28731,6 +29640,7 @@
     "types": [
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28777,6 +29687,7 @@
       "electric",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28823,6 +29734,7 @@
       "electric",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28858,6 +29770,7 @@
       "dragon",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28893,6 +29806,7 @@
       "dragon",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28939,6 +29853,7 @@
       "ground",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -28985,6 +29900,7 @@
       "ground",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29031,6 +29947,7 @@
       "dragon",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29077,6 +29994,7 @@
       "dragon",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29123,6 +30041,7 @@
       "dragon",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29169,6 +30088,7 @@
       "water",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29215,6 +30135,7 @@
       "normal",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29261,6 +30182,7 @@
       "normal",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29296,6 +30218,7 @@
       "bug",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29330,6 +30253,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29364,6 +30288,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29399,6 +30324,7 @@
       "grass",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29438,7 +30364,8 @@
     "types": [
       "grass",
       "fighting"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "fennekin",
@@ -29472,6 +30399,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29506,6 +30434,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29541,6 +30470,7 @@
       "fire",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29580,7 +30510,8 @@
     "types": [
       "fire",
       "psychic"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "froakie",
@@ -29614,6 +30545,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29648,6 +30580,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29683,6 +30616,7 @@
       "water",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29729,6 +30663,7 @@
       "water",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29768,7 +30703,8 @@
     "types": [
       "water",
       "dark"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "bunnelby",
@@ -29802,6 +30738,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29837,6 +30774,7 @@
       "normal",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29872,6 +30810,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29907,6 +30846,7 @@
       "fire",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29942,6 +30882,7 @@
       "fire",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -29976,6 +30917,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30010,6 +30952,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30054,6 +30997,7 @@
       "bug",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30089,6 +31033,7 @@
       "fire",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30135,6 +31080,7 @@
       "fire",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30174,7 +31120,8 @@
     "types": [
       "fire",
       "normal"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "flabebe",
@@ -30217,6 +31164,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30260,6 +31208,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30303,6 +31252,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30341,7 +31291,8 @@
     "id": "10296",
     "types": [
       "fairy"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "florges",
@@ -30384,6 +31335,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30418,6 +31370,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30452,6 +31405,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30486,6 +31440,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30521,6 +31476,7 @@
       "fighting",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30564,6 +31520,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30598,6 +31555,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30643,6 +31601,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30681,7 +31640,8 @@
     "id": "10314",
     "types": [
       "psychic"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "honedge",
@@ -30716,6 +31676,7 @@
       "steel",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30751,6 +31712,7 @@
       "steel",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30797,6 +31759,7 @@
       "steel",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30843,6 +31806,7 @@
       "steel",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30877,6 +31841,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30911,6 +31876,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30945,6 +31911,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -30979,6 +31946,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31014,6 +31982,7 @@
       "dark",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31049,6 +32018,7 @@
       "dark",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31088,7 +32058,8 @@
     "types": [
       "dark",
       "psychic"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "binacle",
@@ -31123,6 +32094,7 @@
       "rock",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31158,6 +32130,7 @@
       "rock",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31197,7 +32170,8 @@
     "types": [
       "rock",
       "fighting"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "skrelp",
@@ -31232,6 +32206,7 @@
       "poison",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31267,6 +32242,7 @@
       "poison",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31306,7 +32282,8 @@
     "types": [
       "poison",
       "dragon"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "clauncher",
@@ -31340,6 +32317,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31374,6 +32352,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31409,6 +32388,7 @@
       "electric",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31444,6 +32424,7 @@
       "electric",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31479,6 +32460,7 @@
       "rock",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31514,6 +32496,7 @@
       "rock",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31549,6 +32532,7 @@
       "rock",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31584,6 +32568,7 @@
       "rock",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31618,6 +32603,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31653,6 +32639,7 @@
       "fighting",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31692,7 +32679,8 @@
     "types": [
       "fighting",
       "flying"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "dedenne",
@@ -31727,6 +32715,7 @@
       "electric",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31762,6 +32751,7 @@
       "rock",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31796,6 +32786,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31830,6 +32821,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31871,6 +32863,7 @@
       "steel",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31905,6 +32898,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31946,6 +32940,7 @@
       "steel",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -31981,6 +32976,7 @@
       "steel",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32016,6 +33012,7 @@
       "ghost",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32051,6 +33048,7 @@
       "ghost",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32097,6 +33095,7 @@
       "ghost",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32143,6 +33142,7 @@
       "ghost",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32189,6 +33189,7 @@
       "ghost",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32235,6 +33236,7 @@
       "ghost",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32281,6 +33283,7 @@
       "ghost",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32327,6 +33330,7 @@
       "ghost",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32373,6 +33377,7 @@
       "ghost",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32419,6 +33424,7 @@
       "ghost",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32453,6 +33459,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32487,6 +33494,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32528,6 +33536,7 @@
       "ice",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32563,6 +33572,7 @@
       "flying",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32598,6 +33608,7 @@
       "flying",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32643,6 +33654,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32678,6 +33690,7 @@
       "dark",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32724,6 +33737,7 @@
       "dragon",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32770,6 +33784,7 @@
       "dragon",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32816,6 +33831,7 @@
       "dragon",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32855,7 +33871,8 @@
     "types": [
       "dragon",
       "ground"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "diancie",
@@ -32890,6 +33907,7 @@
       "rock",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32936,6 +33954,7 @@
       "rock",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -32982,6 +34001,7 @@
       "psychic",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33028,6 +34048,7 @@
       "psychic",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33063,6 +34084,7 @@
       "fire",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33098,6 +34120,7 @@
       "grass",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33133,6 +34156,7 @@
       "grass",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33168,6 +34192,7 @@
       "grass",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33209,6 +34234,7 @@
       "grass",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33243,6 +34269,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33277,6 +34304,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33312,6 +34340,7 @@
       "fire",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33346,6 +34375,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33380,6 +34410,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33415,6 +34446,7 @@
       "water",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33450,6 +34482,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33485,6 +34518,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33520,6 +34554,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33554,6 +34589,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33588,6 +34624,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33622,6 +34659,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33657,6 +34695,7 @@
       "bug",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33692,6 +34731,7 @@
       "bug",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33726,6 +34766,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33761,6 +34802,7 @@
       "fighting",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33800,7 +34842,8 @@
     "types": [
       "fighting",
       "ice"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "oricorio-baile",
@@ -33846,6 +34889,7 @@
       "fire",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33892,6 +34936,7 @@
       "electric",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33938,6 +34983,7 @@
       "psychic",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -33984,6 +35030,7 @@
       "ghost",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34019,6 +35066,7 @@
       "bug",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34054,6 +35102,7 @@
       "bug",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34088,6 +35137,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34133,6 +35183,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34178,6 +35229,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34223,6 +35275,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34268,6 +35321,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34313,6 +35367,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34348,6 +35403,7 @@
       "poison",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34383,6 +35439,7 @@
       "poison",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34417,6 +35474,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34451,6 +35509,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34486,6 +35545,7 @@
       "water",
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34521,6 +35581,7 @@
       "water",
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34555,6 +35616,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34589,6 +35651,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34624,6 +35687,7 @@
       "grass",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34659,6 +35723,7 @@
       "grass",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34694,6 +35759,7 @@
       "poison",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34729,6 +35795,7 @@
       "poison",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34764,6 +35831,7 @@
       "normal",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34799,6 +35867,7 @@
       "normal",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34833,6 +35902,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34867,6 +35937,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34901,6 +35972,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34935,6 +36007,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -34970,6 +36043,7 @@
       "normal",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35004,6 +36078,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35039,6 +36114,7 @@
       "bug",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35074,6 +36150,7 @@
       "bug",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35113,7 +36190,8 @@
     "types": [
       "bug",
       "steel"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "sandygast",
@@ -35148,6 +36226,7 @@
       "ghost",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35183,6 +36262,7 @@
       "ghost",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35217,6 +36297,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35251,6 +36332,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35296,6 +36378,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35342,6 +36425,7 @@
       "rock",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35388,6 +36472,7 @@
       "rock",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35422,6 +36507,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35457,6 +36543,7 @@
       "fire",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35492,6 +36579,7 @@
       "electric",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35538,6 +36626,7 @@
       "ghost",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35573,6 +36662,7 @@
       "water",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35608,6 +36698,7 @@
       "normal",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35647,7 +36738,8 @@
     "types": [
       "normal",
       "dragon"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "dhelmise",
@@ -35682,6 +36774,7 @@
       "ghost",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35716,6 +36809,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35751,6 +36845,7 @@
       "dragon",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35786,6 +36881,7 @@
       "dragon",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35821,6 +36917,7 @@
       "electric",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35856,6 +36953,7 @@
       "psychic",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35891,6 +36989,7 @@
       "grass",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35926,6 +37025,7 @@
       "water",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35960,6 +37060,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -35994,6 +37095,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36029,6 +37131,7 @@
       "psychic",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36064,6 +37167,7 @@
       "psychic",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36099,6 +37203,7 @@
       "rock",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36134,6 +37239,7 @@
       "bug",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36169,6 +37275,7 @@
       "bug",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36203,6 +37310,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36238,6 +37346,7 @@
       "steel",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36273,6 +37382,7 @@
       "grass",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36308,6 +37418,7 @@
       "dark",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36342,6 +37453,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36388,6 +37500,7 @@
       "psychic",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36434,6 +37547,7 @@
       "psychic",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36480,6 +37594,7 @@
       "psychic",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36515,6 +37630,7 @@
       "steel",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36554,7 +37670,8 @@
     "types": [
       "steel",
       "fairy"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "marshadow",
@@ -36589,6 +37706,7 @@
       "fighting",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36623,6 +37741,7 @@
     "types": [
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36658,6 +37777,7 @@
       "poison",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36693,6 +37813,7 @@
       "rock",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36728,6 +37849,7 @@
       "fire",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36762,6 +37884,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36800,7 +37923,8 @@
     "id": "10319",
     "types": [
       "electric"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "meltan",
@@ -36834,6 +37958,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36868,6 +37993,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36902,6 +38028,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36936,6 +38063,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -36970,6 +38098,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37004,6 +38133,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37038,6 +38168,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37072,6 +38203,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37106,6 +38238,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37140,6 +38273,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37174,6 +38308,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37208,6 +38343,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37242,6 +38378,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37276,6 +38413,7 @@
     "types": [
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37310,6 +38448,7 @@
     "types": [
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37345,6 +38484,7 @@
       "flying",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37379,6 +38519,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37414,6 +38555,7 @@
       "bug",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37449,6 +38591,7 @@
       "bug",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37483,6 +38626,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37517,6 +38661,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37551,6 +38696,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37585,6 +38731,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37619,6 +38766,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37653,6 +38801,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37687,6 +38836,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37722,6 +38872,7 @@
       "water",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37756,6 +38907,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37790,6 +38942,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37824,6 +38977,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37859,6 +39013,7 @@
       "rock",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37894,6 +39049,7 @@
       "rock",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37929,6 +39085,7 @@
       "grass",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37964,6 +39121,7 @@
       "grass",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -37999,6 +39157,7 @@
       "grass",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38033,6 +39192,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38067,6 +39227,7 @@
     "types": [
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38102,6 +39263,7 @@
       "flying",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38136,6 +39298,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38170,6 +39333,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38205,6 +39369,7 @@
       "electric",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38251,6 +39416,7 @@
       "electric",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38286,6 +39452,7 @@
       "fire",
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38321,6 +39488,7 @@
       "fire",
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38355,6 +39523,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38389,6 +39558,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38429,6 +39599,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38469,6 +39640,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38503,6 +39675,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38537,6 +39710,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38572,6 +39746,7 @@
       "psychic",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38607,6 +39782,7 @@
       "dark",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38642,6 +39818,7 @@
       "dark",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38677,6 +39854,7 @@
       "dark",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38712,6 +39890,7 @@
       "dark",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38746,6 +39925,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38780,6 +39960,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38814,6 +39995,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38849,6 +40031,7 @@
       "ice",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38884,6 +40067,7 @@
       "ground",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38918,6 +40102,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38963,6 +40148,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -38997,6 +40183,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39035,7 +40222,8 @@
     "id": "10303",
     "types": [
       "fighting"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "pincurchin",
@@ -39069,6 +40257,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39104,6 +40293,7 @@
       "ice",
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39139,6 +40329,7 @@
       "ice",
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39173,6 +40364,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39218,6 +40410,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39263,6 +40456,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39309,6 +40503,7 @@
       "psychic",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39355,6 +40550,7 @@
       "psychic",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39401,6 +40597,7 @@
       "electric",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39435,6 +40632,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39469,6 +40667,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39504,6 +40703,7 @@
       "electric",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39539,6 +40739,7 @@
       "electric",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39574,6 +40775,7 @@
       "water",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39609,6 +40811,7 @@
       "water",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39644,6 +40847,7 @@
       "steel",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39679,6 +40883,7 @@
       "dragon",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39714,6 +40919,7 @@
       "dragon",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39749,6 +40955,7 @@
       "dragon",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39794,6 +41001,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39840,6 +41048,7 @@
       "fairy",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39885,6 +41094,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39931,6 +41141,7 @@
       "fighting",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -39966,6 +41177,7 @@
       "poison",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40012,6 +41224,7 @@
       "poison",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40046,6 +41259,7 @@
     "types": [
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40092,6 +41306,7 @@
       "fighting",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40138,6 +41353,7 @@
       "fighting",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40173,6 +41389,7 @@
       "dark",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40207,6 +41424,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40241,6 +41459,7 @@
     "types": [
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40275,6 +41494,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40309,6 +41529,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40344,6 +41565,7 @@
       "psychic",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40390,6 +41612,7 @@
       "psychic",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40436,6 +41659,7 @@
       "psychic",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40471,6 +41695,7 @@
       "normal",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40506,6 +41731,7 @@
       "bug",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40541,6 +41767,7 @@
       "ground",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40587,6 +41814,7 @@
       "ground",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40627,6 +41855,7 @@
       "water",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40668,6 +41897,7 @@
       "water",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40703,6 +41933,7 @@
       "fighting",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40738,6 +41969,7 @@
       "dark",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40778,6 +42010,7 @@
       "fairy",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40819,6 +42052,7 @@
       "fairy",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40853,6 +42087,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40887,6 +42122,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40922,6 +42158,7 @@
       "grass",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40956,6 +42193,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -40990,6 +42228,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41025,6 +42264,7 @@
       "fire",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41059,6 +42299,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41093,6 +42334,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41128,6 +42370,7 @@
       "water",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41162,6 +42405,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41201,6 +42445,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41240,6 +42485,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41274,6 +42520,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41308,6 +42555,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41342,6 +42590,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41377,6 +42626,7 @@
       "bug",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41411,6 +42661,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41446,6 +42697,7 @@
       "electric",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41481,6 +42733,7 @@
       "electric",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41515,6 +42768,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41554,6 +42808,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41588,6 +42843,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41622,6 +42878,7 @@
     "types": [
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41657,6 +42914,7 @@
       "grass",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41692,6 +42950,7 @@
       "grass",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41727,6 +42986,7 @@
       "grass",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41767,6 +43027,7 @@
       "normal",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41801,6 +43062,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41835,6 +43097,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41869,6 +43132,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41903,6 +43167,7 @@
     "types": [
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41938,6 +43203,7 @@
       "fire",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -41973,6 +43239,7 @@
       "fire",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42007,6 +43274,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42041,6 +43309,7 @@
     "types": [
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42076,6 +43345,7 @@
       "electric",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42111,6 +43381,7 @@
       "electric",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42145,6 +43416,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42179,6 +43451,7 @@
     "types": [
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42214,6 +43487,7 @@
       "poison",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42249,6 +43523,7 @@
       "poison",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42284,6 +43559,7 @@
       "grass",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42319,6 +43595,7 @@
       "grass",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42354,6 +43631,7 @@
       "ground",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42389,6 +43667,7 @@
       "ground",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42423,6 +43702,7 @@
     "types": [
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42457,6 +43737,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42492,6 +43773,7 @@
       "grass",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42531,7 +43813,8 @@
     "types": [
       "grass",
       "fire"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "rellor",
@@ -42565,6 +43848,7 @@
     "types": [
       "bug"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42600,6 +43884,7 @@
       "bug",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42634,6 +43919,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42668,6 +43954,7 @@
     "types": [
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42703,6 +43990,7 @@
       "fairy",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42738,6 +44026,7 @@
       "fairy",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42773,6 +44062,7 @@
       "fairy",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42807,6 +44097,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42841,6 +44132,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42876,6 +44168,7 @@
       "flying",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42910,6 +44203,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42949,6 +44243,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -42988,6 +44283,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43023,6 +44319,7 @@
       "steel",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43058,6 +44355,7 @@
       "steel",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43093,6 +44391,7 @@
       "dragon",
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43127,6 +44426,7 @@
     "types": [
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43162,6 +44462,7 @@
       "rock",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43197,6 +44498,7 @@
       "rock",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43236,7 +44538,8 @@
     "types": [
       "rock",
       "poison"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "greavard",
@@ -43270,6 +44573,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43304,6 +44608,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43339,6 +44644,7 @@
       "flying",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43373,6 +44679,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43407,6 +44714,7 @@
     "types": [
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43442,6 +44750,7 @@
       "water",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43476,6 +44785,7 @@
     "types": [
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43516,6 +44826,7 @@
       "dragon",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43555,7 +44866,8 @@
     "types": [
       "dragon",
       "water"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "annihilape",
@@ -43590,6 +44902,7 @@
       "fighting",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43625,6 +44938,7 @@
       "poison",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43660,6 +44974,7 @@
       "normal",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43699,6 +45014,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43734,6 +45050,7 @@
       "dark",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43769,6 +45086,7 @@
       "ground",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43804,6 +45122,7 @@
       "fairy",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43839,6 +45158,7 @@
       "grass",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43874,6 +45194,7 @@
       "ghost",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43909,6 +45230,7 @@
       "bug",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43944,6 +45266,7 @@
       "electric",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -43979,6 +45302,7 @@
       "ground",
       "steel"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44014,6 +45338,7 @@
       "ice",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44049,6 +45374,7 @@
       "fighting",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44084,6 +45410,7 @@
       "dark",
       "flying"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44119,6 +45446,7 @@
       "fire",
       "poison"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44154,6 +45482,7 @@
       "rock",
       "electric"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44189,6 +45518,7 @@
       "dragon",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44224,6 +45554,7 @@
       "dragon",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44259,6 +45590,7 @@
       "dragon",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44298,7 +45630,8 @@
     "types": [
       "dragon",
       "ice"
-    ]
+    ],
+    "typesByGeneration": {}
   },
   {
     "name": "gimmighoul",
@@ -44337,6 +45670,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44376,6 +45710,7 @@
     "types": [
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44411,6 +45746,7 @@
       "steel",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44446,6 +45782,7 @@
       "dark",
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44481,6 +45818,7 @@
       "dark",
       "ice"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44516,6 +45854,7 @@
       "dark",
       "ground"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44551,6 +45890,7 @@
       "dark",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44586,6 +45926,7 @@
       "dragon",
       "dark"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44621,6 +45962,7 @@
       "fairy",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44661,6 +46003,7 @@
       "fighting",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44701,6 +46044,7 @@
       "electric",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44736,6 +46080,7 @@
       "water",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44771,6 +46116,7 @@
       "grass",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44806,6 +46152,7 @@
       "grass",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44852,6 +46199,7 @@
       "grass",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44898,6 +46246,7 @@
       "grass",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44933,6 +46282,7 @@
       "poison",
       "fighting"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -44968,6 +46318,7 @@
       "poison",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45003,6 +46354,7 @@
       "poison",
       "fairy"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45048,6 +46400,7 @@
     "types": [
       "grass"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45094,6 +46447,7 @@
       "grass",
       "water"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45140,6 +46494,7 @@
       "grass",
       "fire"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45186,6 +46541,7 @@
       "grass",
       "rock"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45221,6 +46577,7 @@
       "steel",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45256,6 +46613,7 @@
       "grass",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45291,6 +46649,7 @@
       "fire",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45326,6 +46685,7 @@
       "electric",
       "dragon"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45361,6 +46721,7 @@
       "rock",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45396,6 +46757,7 @@
       "steel",
       "psychic"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45437,6 +46799,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45479,6 +46842,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45520,6 +46884,7 @@
     "types": [
       "normal"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   },
   {
@@ -45555,6 +46920,7 @@
       "poison",
       "ghost"
     ],
+    "typesByGeneration": {},
     "hasCry": true
   }
 ]

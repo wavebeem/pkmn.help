@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import path from "path";
 import { URL } from "url";
-import { saveJSON, simplifyTranslations, toObject } from "../util.js";
+import { PokeRef, saveJSON, simplifyTranslations, toObject } from "../util.js";
 import { fetchJSON, fetchPaginated } from "./util.js";
 
 const API = process.env.API || "https://pokeapi.co/api/v2/";
@@ -55,6 +55,10 @@ export interface PokemonDetail {
       url: string;
     };
   }[];
+  past_types: {
+    generation: PokeRef;
+    types: { slot: number; type: PokeRef }[];
+  }[];
   stats: {
     base_stat: number;
     stat: {
@@ -100,6 +104,7 @@ export interface PokemonSimple {
   speed: number;
   id: string;
   types: string[];
+  typesByGeneration: Record<string, string[]>;
 }
 
 export async function scrapePokeapi(): Promise<void> {
@@ -143,6 +148,11 @@ export async function scrapePokeapi(): Promise<void> {
         speed: stats["speed"] ?? 0,
         id: String(detail.id),
         types: detail.types.map((t) => t.type.name),
+        typesByGeneration: toObject({
+          data: detail.past_types,
+          value: (item) => item.types.map((t) => t.type.name),
+          key: (item) => item.generation.name,
+        }),
       };
       pokemonSimpleList.push(mon);
       console.log(speciesDetail.id, detail.id);

@@ -3,7 +3,7 @@ export function pickTranslation(
   language: string,
 ): string {
   const l = language.toLowerCase();
-  for (const key in Object.keys(obj)) {
+  for (const key of Object.keys(obj)) {
     if (l === key.toLowerCase()) {
       return obj[key];
     }

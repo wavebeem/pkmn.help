@@ -7,6 +7,7 @@ import { RadioGroup } from "../components/RadioGroup";
 import { Section } from "../components/Section";
 import { Select } from "../components/Select";
 import { useGeneration } from "../hooks/useGeneration";
+import { useVersionGroup } from "../hooks/useVersionGroup";
 import { useLanguage } from "../hooks/useLanguage";
 import { useTheme } from "../hooks/useTheme";
 import { useTypeCount } from "../hooks/useTypeCount";
@@ -19,10 +20,13 @@ import {
   unofficialLanguages,
 } from "../misc/lang";
 import { useBattleVariant } from "../hooks/useBattleVariant";
+import versionsData from "../../data/versions.json" with { type: "json" };
+import { pickTranslation } from "../misc/pickTranslation";
 
 export function ScreenSettings(): ReactNode {
   const { t, i18n } = useTranslation();
   const [generation, setGeneration] = useGeneration();
+  const [versionGroup, setVersionGroup] = useVersionGroup();
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();
   const [typeCount, setTypeCount] = useTypeCount();
@@ -86,6 +90,58 @@ export function ScreenSettings(): ReactNode {
                     );
                   })}
                 </optgroup>
+              </Select>
+
+              <Select
+                label={t("more.settings.versionGroup.label")}
+                value={versionGroup}
+                helpText={<>TODO TODO TODO</>}
+                onChange={(event) => {
+                  setVersionGroup(event.target.value);
+                  // setLanguage(event.target.value);
+                  // i18n.changeLanguage(language);
+                }}
+              >
+                <option value="*">TODO</option>
+                {Object.entries(versionsData.generationsToVersionGroups)
+                  .toReversed()
+                  .map(([gen, vgs]) => {
+                    // TODO: Use language specific rules to join version strings
+                    const groupLabel = pickTranslation(
+                      (versionsData.generationNames as any)[gen],
+                      language,
+                    );
+                    return (
+                      <optgroup label={groupLabel} key={gen}>
+                        {vgs.map((vg) => {
+                          let localizedItemSeparator = " / ";
+                          if (language === "ja" || language === "ko") {
+                            localizedItemSeparator = "・";
+                          } else if (
+                            language === "zh-Hans" ||
+                            language === "zh-Hant"
+                          ) {
+                            localizedItemSeparator = "／";
+                          }
+                          const itemLabel = (
+                            versionsData.versionGroupsToVersions as any
+                          )[vg]
+                            .map((v: any) => {
+                              return pickTranslation(
+                                (versionsData.versionNames as any)[v],
+                                language,
+                              );
+                            })
+                            .join(localizedItemSeparator);
+                          return (
+                            <option key={vg} value={vg}>
+                              {itemLabel}
+                            </option>
+                          );
+                        })}
+                      </optgroup>
+                    );
+                  })}
               </Select>
 
               <RadioGroup

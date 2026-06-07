@@ -57,6 +57,8 @@ import {
 } from "./icons";
 import { PageNav } from "./PageNav";
 import { DebugSettings } from "../misc/DebugSettings";
+import versionsData from "../../data/versions.json";
+import { useVersionGroup } from "../hooks/useVersionGroup";
 
 const router = createBrowserRouter([
   {
@@ -165,6 +167,7 @@ export function Layout(): ReactNode {
   const [AllPokemon, setAllPokemon] = useState<Pokemon[]>([]);
 
   const [language] = useLanguage();
+  const [versionGroup] = useVersionGroup();
 
   useEffect(() => {
     async function load() {
@@ -202,7 +205,15 @@ export function Layout(): ReactNode {
     if (allPokemonResponse.type !== "done") {
       return;
     }
-    const allPokemon = allPokemonResponse.data;
+    let allPokemon = allPokemonResponse.data;
+    if (versionGroup !== "*") {
+      const versionGroupPokemonSlugs = new Set(
+        (versionsData.monstersInVersionGroup as any)[versionGroup] || [],
+      );
+      allPokemon = allPokemonResponse.data.filter((p) =>
+        versionGroupPokemonSlugs.has(p.name),
+      );
+    }
     const fallbackCoverageTypes = allPokemon.map<CoverageType>((pkmn) => {
       const name = formatPokemonName({
         speciesName: pkmn.speciesNames[language] || pkmn.speciesNames.en,
@@ -216,7 +227,7 @@ export function Layout(): ReactNode {
     setCoverageTypes(fallbackCoverageTypes);
     setFallbackCoverageTypes(fallbackCoverageTypes);
     setAllPokemon(allPokemon);
-  }, [allPokemonResponse, language]);
+  }, [allPokemonResponse, language, versionGroup]);
 
   // Show/hide dialog based on history
   useEffect(() => {
