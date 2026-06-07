@@ -1,0 +1,784 @@
+{
+  "versionGroupsToVersions": {
+    "red-blue": [
+      "red",
+      "blue"
+    ],
+    "yellow": [
+      "yellow"
+    ],
+    "red-green-japan": [
+      "red-japan",
+      "green-japan"
+    ],
+    "blue-japan": [
+      "blue-japan"
+    ],
+    "gold-silver": [
+      "gold",
+      "silver"
+    ],
+    "crystal": [
+      "crystal"
+    ],
+    "ruby-sapphire": [
+      "ruby",
+      "sapphire"
+    ],
+    "emerald": [
+      "emerald"
+    ],
+    "firered-leafgreen": [
+      "firered",
+      "leafgreen"
+    ],
+    "colosseum": [
+      "colosseum"
+    ],
+    "xd": [
+      "xd"
+    ],
+    "diamond-pearl": [
+      "diamond",
+      "pearl"
+    ],
+    "platinum": [
+      "platinum"
+    ],
+    "heartgold-soulsilver": [
+      "heartgold",
+      "soulsilver"
+    ],
+    "black-white": [
+      "black",
+      "white"
+    ],
+    "black-2-white-2": [
+      "black-2",
+      "white-2"
+    ],
+    "x-y": [
+      "x",
+      "y"
+    ],
+    "omega-ruby-alpha-sapphire": [
+      "omega-ruby",
+      "alpha-sapphire"
+    ],
+    "sun-moon": [
+      "sun",
+      "moon"
+    ],
+    "ultra-sun-ultra-moon": [
+      "ultra-sun",
+      "ultra-moon"
+    ],
+    "lets-go-pikachu-lets-go-eevee": [
+      "lets-go-pikachu",
+      "lets-go-eevee"
+    ],
+    "sword-shield": [
+      "sword",
+      "shield"
+    ],
+    "the-isle-of-armor": [
+      "the-isle-of-armor"
+    ],
+    "the-crown-tundra": [
+      "the-crown-tundra"
+    ],
+    "brilliant-diamond-shining-pearl": [
+      "brilliant-diamond",
+      "shining-pearl"
+    ],
+    "legends-arceus": [
+      "legends-arceus"
+    ],
+    "scarlet-violet": [
+      "scarlet",
+      "violet"
+    ],
+    "the-teal-mask": [
+      "the-teal-mask"
+    ],
+    "the-indigo-disk": [
+      "the-indigo-disk"
+    ],
+    "legends-za": [
+      "legends-za"
+    ],
+    "mega-dimension": [
+      "mega-dimension"
+    ],
+    "champions": [
+      "champions"
+    ]
+  },
+  "generationNames": {
+    "generation-i": {
+      "ja-hrkt": "だいいちせだい",
+      "ko": "1세대",
+      "zh-hant": "第一世代",
+      "fr": "1re Génération",
+      "de": "Generation I",
+      "es": "Generación I",
+      "en": "Generation I",
+      "ja": "第一世代",
+      "zh-hans": "第一世代"
+    },
+    "generation-ii": {
+      "ja-hrkt": "だいにせだい",
+      "ko": "2세대",
+      "zh-hant": "第二世代",
+      "fr": "2e Génération",
+      "de": "Generation II",
+      "es": "Generación II",
+      "en": "Generation II",
+      "ja": "第二世代",
+      "zh-hans": "第二世代"
+    },
+    "generation-iii": {
+      "ja-hrkt": "だいさんせだい",
+      "ko": "3세대",
+      "zh-hant": "第三世代",
+      "fr": "3e Génération",
+      "de": "Generation III",
+      "es": "Generación III",
+      "en": "Generation III",
+      "ja": "第三世代",
+      "zh-hans": "第三世代"
+    },
+    "generation-iv": {
+      "ja-hrkt": "だいよんせだい",
+      "ko": "4세대",
+      "zh-hant": "第四世代",
+      "fr": "4e Génération",
+      "de": "Generation IV",
+      "es": "Generación IV",
+      "en": "Generation IV",
+      "ja": "第四世代",
+      "zh-hans": "第四世代"
+    },
+    "generation-v": {
+      "ja-hrkt": "だいごせだい",
+      "ko": "5세대",
+      "zh-hant": "第五世代",
+      "fr": "5e Génération",
+      "de": "Generation V",
+      "es": "Generación V",
+      "en": "Generation V",
+      "ja": "第五世代",
+      "zh-hans": "第五世代"
+    },
+    "generation-vi": {
+      "ja-hrkt": "だいろくせだい",
+      "ko": "6세대",
+      "zh-hant": "第六世代",
+      "fr": "6e Génération",
+      "de": "Generation VI",
+      "es": "Generación VI",
+      "en": "Generation VI",
+      "ja": "第六世代",
+      "zh-hans": "第六世代"
+    },
+    "generation-vii": {
+      "ja-hrkt": "だいななせだい",
+      "ko": "7세대",
+      "zh-hant": "第七世代",
+      "fr": "7e Génération",
+      "de": "Generation VII",
+      "es": "Generación VII",
+      "en": "Generation VII",
+      "ja": "第七世代",
+      "zh-hans": "第七世代"
+    },
+    "generation-viii": {
+      "ja-hrkt": "だいはちせだい",
+      "ko": "8세대",
+      "zh-hant": "第八世代",
+      "fr": "8e Génération",
+      "de": "Generation VIII",
+      "es": "Generación VIII",
+      "en": "Generation VIII",
+      "ja": "第八世代",
+      "zh-hans": "第八世代"
+    },
+    "generation-ix": {
+      "ja-hrkt": "だいきゅうせだい",
+      "ko": "9세대",
+      "zh-hant": "第九世代",
+      "fr": "9e Génération",
+      "de": "Generation IX",
+      "es": "Generación IX",
+      "en": "Generation IX",
+      "ja": "第九世代",
+      "zh-hans": "第九世代"
+    }
+  },
+  "versionNames": {
+    "red": {
+      "ja-hrkt": "赤",
+      "ko": "레드",
+      "zh-hant": "紅",
+      "fr": "Rouge",
+      "de": "Rot",
+      "es": "Rojo",
+      "it": "Rossa",
+      "en": "Red",
+      "zh-hans": "紅",
+      "ja": "赤"
+    },
+    "blue": {
+      "ja-hrkt": "青",
+      "ko": "블루",
+      "zh-hant": "藍",
+      "fr": "Bleu",
+      "de": "Blau",
+      "es": "Azul",
+      "it": "Blu",
+      "en": "Blue",
+      "zh-hans": "藍",
+      "ja": "青"
+    },
+    "yellow": {
+      "ja-hrkt": "ピカチュウ",
+      "ko": "피카츄",
+      "zh-hant": "皮卡丘",
+      "fr": "Jaune",
+      "de": "Gelb",
+      "es": "Amarillo",
+      "it": "Gialla",
+      "en": "Yellow",
+      "zh-hans": "皮卡丘",
+      "ja": "ピカチュウ"
+    },
+    "red-japan": {
+      "ja-hrkt": "赤",
+      "ko": "레드",
+      "fr": "Rouge",
+      "de": "Rot",
+      "es": "Rojo",
+      "it": "Rossa",
+      "en": "Red",
+      "ja": "赤"
+    },
+    "green-japan": {
+      "ja-hrkt": "緑",
+      "ko": "그린",
+      "fr": "Vert",
+      "de": "Grüne",
+      "es": "Verde",
+      "it": "Verde",
+      "en": "Green",
+      "ja": "緑"
+    },
+    "blue-japan": {
+      "ja-hrkt": "青",
+      "ko": "블루",
+      "fr": "Bleu",
+      "de": "Blau",
+      "es": "Azul",
+      "it": "Blu",
+      "en": "Blue",
+      "ja": "青"
+    },
+    "gold": {
+      "ja-hrkt": "金",
+      "ko": "골드",
+      "zh-hant": "金",
+      "fr": "Or",
+      "de": "Gold",
+      "es": "Oro",
+      "it": "Oro",
+      "en": "Gold",
+      "zh-hans": "金",
+      "ja": "金"
+    },
+    "silver": {
+      "ja-hrkt": "銀",
+      "ko": "실버",
+      "zh-hant": "銀",
+      "fr": "Argent",
+      "de": "Silber",
+      "es": "Plata",
+      "it": "Argento",
+      "en": "Silver",
+      "zh-hans": "銀",
+      "ja": "銀"
+    },
+    "crystal": {
+      "ja-hrkt": "クリスタル",
+      "ko": "크리스탈",
+      "zh-hant": "水晶",
+      "fr": "Cristal",
+      "de": "Kristall",
+      "es": "Cristal",
+      "it": "Cristallo",
+      "en": "Crystal",
+      "zh-hans": "水晶",
+      "ja": "クリスタル"
+    },
+    "ruby": {
+      "ja-hrkt": "ルビー",
+      "ko": "루비",
+      "zh-hant": "紅寶石",
+      "fr": "Rubis",
+      "de": "Rubin",
+      "es": "Rubí",
+      "it": "Rubino",
+      "en": "Ruby",
+      "zh-hans": "紅寶石",
+      "ja": "ルビー"
+    },
+    "sapphire": {
+      "ja-hrkt": "サファイア",
+      "ko": "사파이어",
+      "zh-hant": "藍寶石",
+      "fr": "Saphir",
+      "de": "Saphir",
+      "es": "Zafiro",
+      "it": "Zaffiro",
+      "en": "Sapphire",
+      "zh-hans": "藍寶石",
+      "ja": "サファイア"
+    },
+    "emerald": {
+      "ja-hrkt": "エメラルド",
+      "ko": "에메랄드",
+      "zh-hant": "綠寶石",
+      "fr": "Émeraude",
+      "de": "Smaragd",
+      "es": "Esmeralda",
+      "it": "Smeraldo",
+      "en": "Emerald",
+      "zh-hans": "綠寶石",
+      "ja": "エメラルド"
+    },
+    "firered": {
+      "ja-hrkt": "ファイアレッド",
+      "ko": "파이어레드",
+      "zh-hant": "火紅",
+      "fr": "Rouge Feu",
+      "de": "Feuerrot",
+      "es": "Rojo Fuego",
+      "it": "Rosso Fuoco",
+      "en": "FireRed",
+      "zh-hans": "火紅",
+      "ja": "ファイアレッド"
+    },
+    "leafgreen": {
+      "ja-hrkt": "リーフグリーン",
+      "ko": "리프그린",
+      "zh-hant": "葉綠",
+      "fr": "Vert Feuille",
+      "de": "Blattgrün",
+      "es": "Verde Hoja",
+      "it": "Verde Foglia",
+      "en": "LeafGreen",
+      "zh-hans": "葉綠",
+      "ja": "リーフグリーン"
+    },
+    "colosseum": {
+      "ja-hrkt": "コロシアム",
+      "ko": "콜로세움",
+      "fr": "Colosseum",
+      "de": "Colosseum",
+      "es": "Colosseum",
+      "it": "Colosseum",
+      "en": "Colosseum",
+      "ja": "コロシアム"
+    },
+    "xd": {
+      "ja-hrkt": "XD",
+      "ko": "XD",
+      "fr": "XD",
+      "de": "XD",
+      "es": "XD",
+      "it": "XD",
+      "en": "XD",
+      "ja": "XD"
+    },
+    "diamond": {
+      "ja-hrkt": "ダイヤモンド",
+      "ko": "디아루가",
+      "zh-hant": "鑽石",
+      "fr": "Diamant",
+      "de": "Diamant",
+      "es": "Diamante",
+      "it": "Diamante",
+      "en": "Diamond",
+      "zh-hans": "钻石",
+      "ja": "ダイヤモンド"
+    },
+    "pearl": {
+      "ja-hrkt": "パール",
+      "ko": "펄기아",
+      "zh-hant": "珍珠",
+      "fr": "Perle",
+      "de": "Perl",
+      "es": "Perla",
+      "it": "Perla",
+      "en": "Pearl",
+      "zh-hans": "珍珠",
+      "ja": "パール"
+    },
+    "platinum": {
+      "ja-hrkt": "プラチナ",
+      "ko": "기라티나",
+      "zh-hant": "白金",
+      "fr": "Platine",
+      "de": "Platin",
+      "es": "Platino",
+      "it": "Platino",
+      "en": "Platinum",
+      "zh-hans": "白金",
+      "ja": "プラチナ"
+    },
+    "heartgold": {
+      "ja-hrkt": "ハートゴールド",
+      "ko": "하트골드",
+      "zh-hant": "心金",
+      "fr": "Or HeartGold",
+      "de": "HeartGold",
+      "es": "Oro HeartGold",
+      "it": "Oro HeartGold",
+      "en": "HeartGold",
+      "zh-hans": "心金",
+      "ja": "ハートゴールド"
+    },
+    "soulsilver": {
+      "ja-hrkt": "ソウルシルバー",
+      "ko": "소울실버",
+      "zh-hant": "魂銀",
+      "fr": "Argent SoulSilver",
+      "de": "SoulSilver",
+      "es": "Plata SoulSilver",
+      "it": "Argento SoulSilver",
+      "en": "SoulSilver",
+      "zh-hans": "魂銀",
+      "ja": "ソウルシルバー"
+    },
+    "black": {
+      "ja-hrkt": "ブラック",
+      "ko": "블랙",
+      "zh-hant": "黑",
+      "fr": "Noir",
+      "de": "Schwarz",
+      "es": "Negro",
+      "it": "Nera",
+      "en": "Black",
+      "zh-hans": "黑",
+      "ja": "ブラック"
+    },
+    "white": {
+      "ja-hrkt": "ホワイト",
+      "ko": "화이트",
+      "zh-hant": "白",
+      "fr": "Blanc",
+      "de": "Weiß",
+      "es": "Blanco",
+      "it": "Bianca",
+      "en": "White",
+      "zh-hans": "白",
+      "ja": "ホワイト"
+    },
+    "black-2": {
+      "ja-hrkt": "ブラック2",
+      "ko": "블랙 2",
+      "zh-hant": "黑2",
+      "fr": "Noir 2",
+      "de": "Schwarz 2",
+      "es": "Negro 2",
+      "it": "Nera 2",
+      "en": "Black 2",
+      "zh-hans": "黑2",
+      "ja": "ブラック2"
+    },
+    "white-2": {
+      "ja-hrkt": "ホワイト2",
+      "ko": "화이트 2",
+      "zh-hant": "白2",
+      "fr": "Blanc 2",
+      "de": "Weiß 2",
+      "es": "Blanco 2",
+      "it": "Bianca 2",
+      "en": "White 2",
+      "zh-hans": "白2",
+      "ja": "ホワイト2"
+    },
+    "x": {
+      "ja-hrkt": "X",
+      "ko": "X",
+      "zh-hant": "X",
+      "fr": "X",
+      "de": "X",
+      "es": "X",
+      "it": "X",
+      "en": "X",
+      "zh-hans": "X",
+      "ja": "X"
+    },
+    "y": {
+      "ja-hrkt": "Y",
+      "ko": "Y",
+      "zh-hant": "Y",
+      "fr": "Y",
+      "de": "Y",
+      "es": "Y",
+      "it": "Y",
+      "en": "Y",
+      "zh-hans": "Y",
+      "ja": "Y"
+    },
+    "omega-ruby": {
+      "ja-hrkt": "オメガルビー",
+      "ko": "오메가루비",
+      "zh-hant": "歐米加紅寶石",
+      "fr": "Rubis Oméga",
+      "de": "Omega Rubin",
+      "es": "Rubí Omega",
+      "it": "Rubino Omega",
+      "en": "Omega Ruby",
+      "zh-hans": "欧米伽红宝石",
+      "ja": "オメガルビー"
+    },
+    "alpha-sapphire": {
+      "ja-hrkt": "アルファサファイア",
+      "ko": "알파사파이어",
+      "zh-hant": "阿爾法藍寶石",
+      "fr": "Saphir Alpha",
+      "de": "Alpha Saphir",
+      "es": "Zafiro Alfa",
+      "it": "Zaffiro Alpha",
+      "en": "Alpha Sapphire",
+      "zh-hans": "阿尔法蓝宝石",
+      "ja": "アルファサファイア"
+    },
+    "sun": {
+      "ja-hrkt": "サン",
+      "ko": "썬",
+      "zh-hant": "太陽",
+      "fr": "Soleil",
+      "de": "Sonne",
+      "es": "Sol",
+      "it": "Sole",
+      "en": "Sun",
+      "zh-hans": "太阳",
+      "ja": "サン"
+    },
+    "moon": {
+      "ja-hrkt": "ムーン",
+      "ko": "문",
+      "zh-hant": "月亮",
+      "fr": "Lune",
+      "de": "Mond",
+      "es": "Luna",
+      "it": "Luna",
+      "en": "Moon",
+      "zh-hans": "月亮",
+      "ja": "ムーン"
+    },
+    "ultra-sun": {
+      "ja-hrkt": "ウルトラサン",
+      "ko": "울트라썬",
+      "zh-hant": "究極之日",
+      "fr": "Ultra-Soleil",
+      "de": "Ultrasonne",
+      "es": "Ultrasol",
+      "it": "Ultrasole",
+      "en": "Ultra Sun",
+      "zh-hans": "究极之日",
+      "ja": "ウルトラサン"
+    },
+    "ultra-moon": {
+      "ja-hrkt": "ウルトラムーン",
+      "ko": "울트라문",
+      "zh-hant": "究極之月",
+      "fr": "Ultra-Lune",
+      "de": "Ultramond",
+      "es": "Ultraluna",
+      "it": "Ultraluna",
+      "en": "Ultra Moon",
+      "zh-hans": "究极之月",
+      "ja": "ウルトラムーン"
+    },
+    "lets-go-pikachu": {
+      "ja-hrkt": "Let’s Go! ピカチュウ",
+      "ko": "레츠고! 피카츄",
+      "zh-hant": "Let’s Go！皮卡丘",
+      "fr": "Let’s Go, Pikachu",
+      "de": "Let’s Go, Pikachu!",
+      "es": "Let’s Go, Pikachu!",
+      "it": "Let’s Go, Pikachu!",
+      "en": "Let’s Go, Pikachu!",
+      "zh-hans": "Let’s Go！皮卡丘",
+      "ja": "Let’s Go! ピカチュウ"
+    },
+    "lets-go-eevee": {
+      "ja-hrkt": "Let’s Go! イーブイ",
+      "ko": "레츠고! 이브이",
+      "zh-hant": "Let’s Go！伊布",
+      "fr": "Let’s Go, Évoli",
+      "de": "Let’s Go, Evoli!",
+      "it": "Let’s Go, Eevee!",
+      "es": "Let’s Go, Eevee!",
+      "en": "Let’s Go, Eevee!",
+      "zh-hans": "Let’s Go！伊布",
+      "ja": "Let’s Go! イーブイ"
+    },
+    "sword": {
+      "ja-hrkt": "ソード",
+      "ko": "소드",
+      "zh-hant": "劍",
+      "fr": "Épée",
+      "de": "Schwert",
+      "es": "Espada",
+      "it": "Spada",
+      "en": "Sword",
+      "zh-hans": "剑",
+      "ja": "ソード"
+    },
+    "shield": {
+      "ja-hrkt": "シールド",
+      "ko": "실드",
+      "zh-hant": "盾",
+      "fr": "Bouclier",
+      "de": "Schild",
+      "es": "Escudo",
+      "it": "Scudo",
+      "en": "Shield",
+      "zh-hans": "盾",
+      "ja": "シールド"
+    },
+    "the-isle-of-armor": {
+      "ja-hrkt": "鎧の孤島",
+      "ko": "갑옷의 외딴섬",
+      "zh-hant": "鎧之孤島",
+      "fr": "L’île solitaire de l’Armure",
+      "de": "Die Insel der Rüstung",
+      "es": "La isla de la armadura",
+      "it": "L’isola solitaria dell’armatura",
+      "en": "The Isle of Armor",
+      "zh-hans": "铠之孤岛",
+      "ja": "鎧の孤島"
+    },
+    "the-crown-tundra": {
+      "ja-hrkt": "冠の雪原",
+      "ko": "왕관의 설원",
+      "zh-hant": "冠之雪原",
+      "fr": "Les terres enneigées de la Couronne",
+      "de": "Die Schneelande der Krone",
+      "es": "Las nieves de la corona",
+      "it": "Le terre innevate della corona",
+      "en": "The Crown Tundra",
+      "zh-hans": "冠之雪原",
+      "ja": "冠の雪原"
+    },
+    "brilliant-diamond": {
+      "ja-hrkt": "ブリリアントダイヤモンド",
+      "ko": "브릴리언트 다이아몬드",
+      "zh-hant": "晶燦鑽石",
+      "fr": "Diamant Étincelant",
+      "de": "Strahlender Diamant",
+      "es": "Diamante Brillante",
+      "it": "Diamante Lucente",
+      "en": "Brilliant Diamond",
+      "zh-hans": "晶灿钻石",
+      "ja": "ブリリアントダイヤモンド"
+    },
+    "shining-pearl": {
+      "ja-hrkt": "シャイニングパール",
+      "ko": "샤이닝 펄",
+      "zh-hant": "明亮珍珠",
+      "fr": "Perle Scintillante",
+      "de": "Leuchtende Perle",
+      "es": "Perla Reluciente",
+      "it": "Perla Splendente",
+      "en": "Shining Pearl",
+      "zh-hans": "明亮珍珠",
+      "ja": "シャイニングパール"
+    },
+    "legends-arceus": {
+      "ja-hrkt": "LEGENDS アルセウス",
+      "ko": "LEGENDS 아르세우스",
+      "zh-hant": "傳說 阿爾宙斯",
+      "fr": "Légendes : Arceus",
+      "de": "Legenden: Arceus",
+      "es": "Leyendas: Arceus",
+      "it": "Leggende: Arceus",
+      "en": "Legends: Arceus",
+      "zh-hans": "传说 阿尔宙斯",
+      "ja": "LEGENDS アルセウス"
+    },
+    "scarlet": {
+      "ja-hrkt": "スカーレット",
+      "ko": "스칼렛",
+      "zh-hant": "朱",
+      "fr": "Écarlate",
+      "de": "Karmesin",
+      "es": "Escarlata",
+      "it": "Scarlatto",
+      "en": "Scarlet",
+      "zh-hans": "朱",
+      "ja": "スカーレット"
+    },
+    "violet": {
+      "ja-hrkt": "バイオレット",
+      "ko": "바이올렛",
+      "zh-hant": "紫",
+      "fr": "Violet",
+      "de": "Purpur",
+      "es": "Púrpura",
+      "it": "Violetto",
+      "en": "Violet",
+      "zh-hans": "紫",
+      "ja": "バイオレット"
+    },
+    "the-teal-mask": {
+      "ja-hrkt": "碧の仮面",
+      "fr": "Le Masque Turquoise",
+      "de": "Die Türkisgrüne Maske",
+      "es": "La máscara turquesa",
+      "it": "La maschera turchese",
+      "en": "The Teal Mask",
+      "zh-hans": "碧之假面",
+      "ja": "碧の仮面"
+    },
+    "the-indigo-disk": {
+      "ja-hrkt": "藍の円盤",
+      "fr": "Le Disque Indigo",
+      "de": "Die Indigoblaue Scheibe",
+      "es": "El disco índigo",
+      "it": "Il disco indaco",
+      "en": "The Indigo Disk",
+      "zh-hans": "藍之圓盤",
+      "ja": "藍の円盤"
+    },
+    "legends-za": {
+      "ja-hrkt": "レジェンズ Z-A",
+      "ja-roma": "Legends Z-A",
+      "ko": "LEGENDS Z-A",
+      "zh-hant": "傳說 Z-A",
+      "fr": "Légendes : Z-A",
+      "de": "Legenden: Z-A",
+      "es": "Leyendas: Z-A",
+      "it": "Leggende: Z-A",
+      "en": "Legends: Z-A",
+      "ja": "レジェンズ Z-A",
+      "zh-hans": "传说 Z-A"
+    },
+    "mega-dimension": {
+      "ko": "메가 차원 러시",
+      "zh-hant": "超次元爆湧",
+      "fr": "Méga-Dimension",
+      "de": "Mega-Dimension",
+      "es": "Megadimensión",
+      "it": "Megadimensione",
+      "en": "Mega Dimension",
+      "zh-hans": "超次元爆涌"
+    },
+    "champions": {
+      "en": "Champions"
+    }
+  }
+}

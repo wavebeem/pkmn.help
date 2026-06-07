@@ -1,7 +1,8 @@
 /* eslint-disable no-console */
 import path from "path";
 import { URL } from "url";
-import { saveJSON } from "../util.js";
+import { saveJSON, simplifyTranslations, toObject } from "../util.js";
+import { fetchJSON, fetchPaginated } from "./util.js";
 
 const API = process.env.API || "https://pokeapi.co/api/v2/";
 const DEST = "data";
@@ -101,61 +102,15 @@ export interface PokemonSimple {
   types: string[];
 }
 
-async function fetchJSON<T>(url: string): Promise<T> {
-  console.info("Fetching JSON", url);
-  const resp = await fetch(url);
-  const data: any = await resp.json();
-  return data;
-}
-
-async function fetchPaginated<T>(url: string, limit = Infinity): Promise<T[]> {
-  const results: T[] = [];
-  let nextURL = url;
-  let resp: any = null;
-  do {
-    resp = await fetchJSON(nextURL);
-    results.push(...resp.results);
-    if (process.env.SHORT) {
-      nextURL = "";
-    } else {
-      nextURL = resp.next;
-    }
-  } while (nextURL && results.length < limit);
-  if (Number.isFinite(limit)) {
-    results.length = limit;
-  }
-  return results;
-}
-
-function toObject<T, K extends string, V>({
-  data,
-  key,
-  value,
-}: {
-  data: T[];
-  key: (item: T) => K;
-  value: (item: T) => V;
-}): Record<K, V> {
-  const obj = {} as Record<K, V>;
-  for (const item of data) {
-    obj[key(item)] = value(item);
-  }
-  return obj;
-}
-
 export async function scrapePokeapi(): Promise<void> {
   const speciesList = await fetchPaginated<PokemonSpeciesBasic>(
-    new URL("pokemon-species", API).toString(),
+    new URL("pokemon-species", API).href,
     Number(process.env.LIMIT || "Infinity"),
   );
   const pokemonSimpleList: PokemonSimple[] = [];
   for (const species of speciesList) {
     const speciesDetail = await fetchJSON<PokemonSpeciesDetail>(species.url);
-    const speciesNames = toObject({
-      data: speciesDetail.names,
-      key: (item) => item.language.name,
-      value: (item) => item.name,
-    });
+    const speciesNames = simplifyTranslations(speciesDetail.names);
     for (const variety of speciesDetail.varieties) {
       const detail = await fetchJSON<PokemonDetail>(variety.pokemon.url);
       const stats = toObject({
@@ -166,11 +121,7 @@ export async function scrapePokeapi(): Promise<void> {
       let formNames = {};
       if (detail.forms.length > 0) {
         const form = await fetchJSON<PokemonForm>(detail.forms[0].url);
-        formNames = toObject({
-          data: form.form_names,
-          key: (item) => item.language.name,
-          value: (item) => item.name,
-        });
+        formNames = simplifyTranslations(form.form_names);
       }
       const mon: PokemonSimple = {
         name: detail.name,

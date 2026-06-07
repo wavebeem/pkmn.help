@@ -1,5 +1,12 @@
 # Changelog
 
+## ????-??-??
+
+- Fixed a bug where Chinese (Simplified) and Chinese (Traditional) showed
+  Pokémon names in English
+
+<!-- - Added the ability to select different Pokémon games and generations -->
+
 ## 2026-05-27
 
 - Updated Portuguese (Brazil) translation
