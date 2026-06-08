@@ -21,6 +21,7 @@ import { Type, typesFromUserInput } from "../misc/data-types";
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { pickTranslation } from "../misc/pickTranslation";
 import styles from "./ScreenPokedex.module.css";
+import { useVersionGroup } from "../hooks/useVersionGroup";
 
 export function ScreenPokedex(): ReactNode {
   const { allPokemon, isLoading } = useAppContext();
@@ -34,6 +35,11 @@ export function ScreenPokedex(): ReactNode {
   const isStale = query !== deferredQuery;
   const [page, setPage] = useSessionStorage<number>("pokedex.page", 0);
   const navigate = useNavigate();
+  const [versionGroup] = useVersionGroup();
+
+  useEffect(() => {
+    setPage(0);
+  }, [versionGroup]);
 
   useEffect(() => {
     if (!location.search) {

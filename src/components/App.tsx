@@ -29,7 +29,11 @@ import { useRouteChangeFixes } from "../hooks/useRouteChangeFixes";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useTheme } from "../hooks/useTheme";
 import { useUpdateSW } from "../hooks/useUpdateSW";
-import { CoverageType, Pokemon } from "../misc/data-types";
+import {
+  CoverageType,
+  Pokemon,
+  restorePastTypesByVersionGroup,
+} from "../misc/data-types";
 import { detectLanguage } from "../misc/detectLanguage";
 import { formatPokemonName } from "../misc/formatPokemonName";
 import { publicPath } from "../misc/settings";
@@ -59,6 +63,7 @@ import { PageNav } from "./PageNav";
 import { DebugSettings } from "../misc/DebugSettings";
 import versionsData from "../../data/versions.json";
 import { useVersionGroup } from "../hooks/useVersionGroup";
+import { compare } from "../misc/compare";
 
 const router = createBrowserRouter([
   {
@@ -207,12 +212,29 @@ export function Layout(): ReactNode {
     }
     let allPokemon = allPokemonResponse.data;
     if (versionGroup !== "*") {
-      const versionGroupPokemonSlugs = new Set(
-        (versionsData.monstersInVersionGroup as any)[versionGroup] || [],
-      );
-      allPokemon = allPokemonResponse.data.filter((p) =>
-        versionGroupPokemonSlugs.has(p.name),
-      );
+      const slugToMon = new Map<string, Pokemon>();
+      for (const mon of allPokemon) {
+        slugToMon.set(mon.name, mon);
+      }
+      // const slugToNumber = new Map<string, number>();
+      // for (const [n, s] of (versionsData.monstersInVersionGroup as any)[
+      //   versionGroup
+      // ]) {
+      //   slugToNumber.set(s, n);
+      // }
+      const dexPairs: [number, string][] = (
+        versionsData.monstersInVersionGroup as any
+      )[versionGroup];
+      console.log(allPokemon, dexPairs);
+      allPokemon = dexPairs.flatMap(([number, slug]) => {
+        let mon = slugToMon.get(slug);
+        if (mon === undefined) {
+          return [];
+        }
+        mon = restorePastTypesByVersionGroup(mon, versionGroup);
+        return { ...mon, number };
+      });
+      // .toSorted((a, b) => compare(a.number, b.number));
     }
     const fallbackCoverageTypes = allPokemon.map<CoverageType>((pkmn) => {
       const name = formatPokemonName({

@@ -2,6 +2,7 @@ import { closest } from "fastest-levenshtein";
 import removeAccents from "remove-accents";
 import { Generation } from "./data-generations";
 import { ValueOf } from "./util";
+import versionsData from "../../data/versions.json";
 
 export interface Pokemon {
   id: string;
@@ -23,6 +24,7 @@ export interface Pokemon {
     shiny: boolean;
     shinyFemale: boolean;
   };
+  typesByGeneration: Record<string, Type[]>;
 }
 
 export interface TranslatedPokemon extends Pokemon {
@@ -284,4 +286,28 @@ export function objectToCoverageType({ obj }: { obj: unknown }): CoverageType {
 
 function removeNones(types: (Type | undefined | null)[]): Type[] {
   return types.filter((t): t is Type => Boolean(t && t !== Type.none));
+}
+
+const generationIndexes = new Map(
+  versionsData.generations.map((x, i) => [x, i]),
+);
+
+export function restorePastTypesByVersionGroup(
+  pkmn: Pokemon,
+  vg: string,
+): Pokemon {
+  const ret = { ...pkmn };
+  const generation: string = (versionsData.versionGroupsToGenerations as any)[
+    vg
+  ];
+  const currentIndex = generationIndexes.get(generation) ?? -1;
+  for (const [typeGeneration, types] of Object.entries(
+    pkmn.typesByGeneration,
+  )) {
+    const pastIndex = generationIndexes.get(typeGeneration) ?? -1;
+    if (currentIndex <= pastIndex) {
+      ret.types = [...types];
+    }
+  }
+  return ret;
 }

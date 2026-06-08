@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { Fragment, ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
@@ -22,6 +22,7 @@ import {
 import { useBattleVariant } from "../hooks/useBattleVariant";
 import versionsData from "../../data/versions.json" with { type: "json" };
 import { pickTranslation } from "../misc/pickTranslation";
+import { SelectDivider } from "../components/SelectDivider";
 
 export function ScreenSettings(): ReactNode {
   const { t, i18n } = useTranslation();
@@ -95,14 +96,14 @@ export function ScreenSettings(): ReactNode {
               <Select
                 label={t("more.settings.versionGroup.label")}
                 value={versionGroup}
-                helpText={<>TODO TODO TODO</>}
+                helpText={<>{t("more.settings.versionGroup.help")}</>}
                 onChange={(event) => {
                   setVersionGroup(event.target.value);
-                  // setLanguage(event.target.value);
-                  // i18n.changeLanguage(language);
                 }}
               >
-                <option value="*">TODO</option>
+                <option value="*">
+                  {t("more.settings.versionGroup.values.*")}
+                </option>
                 {Object.entries(versionsData.generationsToVersionGroups)
                   .toReversed()
                   .map(([gen, vgs]) => {
@@ -112,34 +113,37 @@ export function ScreenSettings(): ReactNode {
                       language,
                     );
                     return (
-                      <optgroup label={groupLabel} key={gen}>
-                        {vgs.map((vg) => {
-                          let localizedItemSeparator = " / ";
-                          if (language === "ja" || language === "ko") {
-                            localizedItemSeparator = "・";
-                          } else if (
-                            language === "zh-Hans" ||
-                            language === "zh-Hant"
-                          ) {
-                            localizedItemSeparator = "／";
-                          }
-                          const itemLabel = (
-                            versionsData.versionGroupsToVersions as any
-                          )[vg]
-                            .map((v: any) => {
-                              return pickTranslation(
-                                (versionsData.versionNames as any)[v],
-                                language,
-                              );
-                            })
-                            .join(localizedItemSeparator);
-                          return (
-                            <option key={vg} value={vg}>
-                              {itemLabel}
-                            </option>
-                          );
-                        })}
-                      </optgroup>
+                      <Fragment key={gen}>
+                        <SelectDivider />
+                        <optgroup label={groupLabel}>
+                          {vgs.toReversed().map((vg) => {
+                            let localizedItemSeparator = " / ";
+                            if (language === "ja" || language === "ko") {
+                              localizedItemSeparator = "・";
+                            } else if (
+                              language === "zh-Hans" ||
+                              language === "zh-Hant"
+                            ) {
+                              localizedItemSeparator = "／";
+                            }
+                            const itemLabel = (
+                              versionsData.versionGroupsToVersions as any
+                            )[vg]
+                              .map((v: any) => {
+                                return pickTranslation(
+                                  (versionsData.versionNames as any)[v],
+                                  language,
+                                );
+                              })
+                              .join(localizedItemSeparator);
+                            return (
+                              <option key={vg} value={vg}>
+                                {itemLabel}
+                              </option>
+                            );
+                          })}
+                        </optgroup>
+                      </Fragment>
                     );
                   })}
               </Select>

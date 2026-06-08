@@ -39,9 +39,11 @@ interface PokemonVersion {
 
 const generationsToVersionGroups: Record<string, string[]> = {};
 const versionGroupsToVersions: Record<string, string[]> = {};
+const versionGroupsToGenerations: Record<string, string> = {};
 const versionNames: Record<string, Record<string, string>> = {};
 const generationNames: Record<string, Record<string, string>> = {};
-const monstersInVersionGroup: Record<string, string[]> = {};
+const monstersInVersionGroup: Record<string, [number, string][]> = {};
+const generations: string[] = [];
 
 export async function scrapeVersions(): Promise<void> {
   const genList = await fetchPaginated<PokeRef>(
@@ -51,13 +53,21 @@ export async function scrapeVersions(): Promise<void> {
   for (const genListItem of genList) {
     const gen = await fetchJSON<PokemonGeneration>(genListItem.url);
     generationNames[gen.name] = simplifyTranslations(gen.names);
+    generations.push(gen.name);
     for (const vgRef of gen.version_groups) {
       const vg = await fetchJSON<PokemonVersionGroup>(vgRef.url);
+      versionGroupsToGenerations[vg.name] = gen.name;
       monstersInVersionGroup[vg.name] ||= [];
-      for (const dexRef of vg.pokedexes) {
+      // Confusingly, base games list all their DLCs as Pokédexes, even though
+      // each DLC is listed as a version group with its own Pokédex. We only
+      // want to show each game/DLC with its respective Pokédex.
+      for (const dexRef of vg.pokedexes.slice(0, 1)) {
         const dex = await fetchJSON<PokemonPokedexEntries>(dexRef.url);
         for (const mon of dex.pokemon_entries) {
-          monstersInVersionGroup[vg.name].push(mon.pokemon_species.name);
+          monstersInVersionGroup[vg.name].push([
+            mon.entry_number,
+            mon.pokemon_species.name,
+          ]);
         }
       }
 
@@ -75,6 +85,8 @@ export async function scrapeVersions(): Promise<void> {
   const output = {
     generationsToVersionGroups,
     versionGroupsToVersions,
+    versionGroupsToGenerations,
+    generations,
     generationNames,
     versionNames,
     monstersInVersionGroup,

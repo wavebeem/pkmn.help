@@ -251,6 +251,13 @@
           "night": "Night"
         }
       },
+      "versionGroup": {
+        "label": "Version group",
+        "help": "Controls available Pokémon and types",
+        "values": {
+          "*": "National dex"
+        }
+      },
       "typeCount": {
         "label": "Number of types",
         "help": "Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.",
