@@ -33,6 +33,7 @@ import {
   CoverageType,
   Pokemon,
   restorePastTypesByVersionGroup,
+  restoreRegionalVariantsInPokedex,
 } from "../misc/data-types";
 import { detectLanguage } from "../misc/detectLanguage";
 import { formatPokemonName } from "../misc/formatPokemonName";
@@ -63,7 +64,6 @@ import { PageNav } from "./PageNav";
 import { DebugSettings } from "../misc/DebugSettings";
 import versionsData from "../../data/versions.json";
 import { useVersionGroup } from "../hooks/useVersionGroup";
-import { compare } from "../misc/compare";
 
 const router = createBrowserRouter([
   {
@@ -216,16 +216,9 @@ export function Layout(): ReactNode {
       for (const mon of allPokemon) {
         slugToMon.set(mon.name, mon);
       }
-      // const slugToNumber = new Map<string, number>();
-      // for (const [n, s] of (versionsData.monstersInVersionGroup as any)[
-      //   versionGroup
-      // ]) {
-      //   slugToNumber.set(s, n);
-      // }
       const dexPairs: [number, string][] = (
         versionsData.monstersInVersionGroup as any
       )[versionGroup];
-      console.log(allPokemon, dexPairs);
       allPokemon = dexPairs.flatMap(([number, slug]) => {
         let mon = slugToMon.get(slug);
         if (mon === undefined) {
@@ -234,7 +227,11 @@ export function Layout(): ReactNode {
         mon = restorePastTypesByVersionGroup(mon, versionGroup);
         return { ...mon, number };
       });
-      // .toSorted((a, b) => compare(a.number, b.number));
+      allPokemon = restoreRegionalVariantsInPokedex({
+        dex: allPokemon,
+        slugToMon,
+        versionGroup,
+      });
     }
     const fallbackCoverageTypes = allPokemon.map<CoverageType>((pkmn) => {
       const name = formatPokemonName({

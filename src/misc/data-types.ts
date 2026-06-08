@@ -311,3 +311,139 @@ export function restorePastTypesByVersionGroup(
   }
   return ret;
 }
+
+export function restoreRegionalVariantsInPokedex({
+  dex,
+  slugToMon,
+  versionGroup,
+}: {
+  dex: Pokemon[];
+  slugToMon: Map<string, Pokemon>;
+  versionGroup: string;
+}): Pokemon[] {
+  const ret: typeof dex = [];
+  let replacements: Record<string, string[]> = {};
+  let additions: Record<string, string[]> = {};
+  switch (versionGroup) {
+    case "sun-moon":
+    case "ultra-sun-ultra-moon": {
+      replacements = {
+        rattata: ["rattata-alola"],
+        raticate: ["raticate-alola"],
+        raichu: ["raichu-alola"],
+        sandshrew: ["sandshrew-alola"],
+        sandslash: ["sandslash-alola"],
+        vulpix: ["vulpix-alola"],
+        ninetales: ["ninetales-alola"],
+        diglett: ["diglett-alola"],
+        dugtrio: ["dugtrio-alola"],
+        meowth: ["meowth-alola"],
+        persian: ["persian-alola"],
+        geodude: ["geodude-alola"],
+        graveler: ["graveler-alola"],
+        golem: ["golem-alola"],
+        grimer: ["grimer-alola"],
+        muk: ["muk-alola"],
+        exeggutor: ["exeggutor-alola"],
+        marowak: ["marowak-alola"],
+      };
+      break;
+    }
+    case "sword-shield": {
+      replacements = {
+        meowth: ["meowth-galar"],
+        ponyta: ["ponyta-galar"],
+        rapidash: ["rapidash-galar"],
+        slowpoke: ["slowpoke-galar"],
+        farfetchd: ["farfetchd-galar"],
+        weezing: ["weezing-galar"],
+        "mr-mime": ["mr-mime-galar"],
+        corsola: ["corsola-galar"],
+        zigzagoon: ["zigzagoon-galar"],
+        linoone: ["linoone-galar"],
+        darumaka: ["darumaka-galar"],
+        darmanitan: ["darmanitan-galar"],
+        yamask: ["yamask-galar"],
+        stunfisk: ["stunfisk-galar"],
+      };
+      break;
+    }
+    case "the-isle-of-armor": {
+      replacements = {
+        slowbro: ["slowbro-galar"],
+      };
+      break;
+    }
+    case "the-crown-tundra": {
+      replacements = {
+        slowking: ["slowking-galar"],
+      };
+      additions = {
+        articuno: ["articuno-galar"],
+        zapdos: ["zapdos-galar"],
+        moltres: ["moltres-galar"],
+      };
+      break;
+    }
+    case "legends-arceus": {
+      replacements = {
+        growlithe: ["growlithe-hisui"],
+        arcanine: ["arcanine-hisui"],
+        voltorb: ["voltorb-hisui"],
+        electrode: ["electrode-hisui"],
+        qwilfish: ["qwilfish-hisui"],
+        sneasel: ["sneasel-hisui"],
+        lilligant: ["lilligant-hisui"],
+        zorua: ["zorua-hisui"],
+        zoroark: ["zoroark-hisui"],
+        braviary: ["braviary-hisui"],
+        sliggoo: ["sliggoo-hisui"],
+        goodra: ["goodra-hisui"],
+        avalugg: ["avalugg-hisui"],
+      };
+      additions = {
+        decidueye: ["decidueye-hisui"],
+        typhlosion: ["typhlosion-hisui"],
+        samurott: ["samurott-hisui"],
+      };
+      break;
+    }
+    case "scarlet-violet": {
+      replacements = {
+        wooper: ["wooper-paldea"],
+        tauros: [
+          "tauros-paldea-combat-breed",
+          "tauros-paldea-blaze-breed",
+          "tauros-paldea-aqua-breed",
+        ],
+      };
+      break;
+    }
+    default: {
+      break;
+    }
+  }
+  for (const mon of dex) {
+    if (mon.name in replacements) {
+      for (const m of replacements[mon.name]) {
+        const pokemon = slugToMon.get(m);
+        if (!pokemon) {
+          throw new Error(`no such pokemon ${m}`);
+        }
+        ret.push(pokemon);
+      }
+    } else if (mon.name in additions) {
+      for (const m of additions[mon.name]) {
+        const pokemon = slugToMon.get(m);
+        if (!pokemon) {
+          throw new Error(`no such pokemon ${m}`);
+        }
+        ret.push(pokemon);
+      }
+      ret.push(mon);
+    } else {
+      ret.push(mon);
+    }
+  }
+  return ret;
+}
