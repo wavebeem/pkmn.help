@@ -5,8 +5,14 @@ import { mergeData } from "./lib/mergeData.js";
 import { scrapePokeapi } from "./lib/scrapePokeapi.js";
 import { optimizeImages } from "./lib/optimizeImages.js";
 import { convertAudio } from "./lib/convertAudio.js";
+import { scrapeVersions } from "./lib/scrapeVersions.js";
 
 async function main(flags: string[]) {
+  if (flags.includes("versions")) {
+    await scrapeVersions();
+    return;
+  }
+
   if (flags.includes("merge")) {
     await mergeData();
     return;

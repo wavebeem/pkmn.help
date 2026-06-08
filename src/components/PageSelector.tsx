@@ -4,30 +4,39 @@ import { useMediaQuery } from "usehooks-ts";
 import { Button } from "./Button";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
-import { IconFirst, IconLast, IconNext, IconPrevious } from "./icons";
+import {
+  IconFirst,
+  IconLast,
+  IconNext,
+  IconPrevious,
+  IconSettings,
+} from "./icons";
+import { FancyLink } from "./FancyLink";
 
 export interface PageSelectorProps<T> {
   anchorElementRef: RefObject<HTMLDivElement | null>;
   location: "top" | "bottom";
   numPages: number;
+  numItems: number;
   pageItems: T[];
   currentPage: number;
   setPage: (page: number) => void;
   hasPrev: boolean;
   hasNext: boolean;
-  renderID: (item: T) => ReactNode;
+  title: string;
 }
 
 export function PageSelector<T>({
   anchorElementRef,
   location,
+  numItems,
   numPages,
   pageItems,
   currentPage,
   setPage,
   hasPrev,
   hasNext,
-  renderID,
+  title,
 }: PageSelectorProps<T>): ReactNode {
   const { t } = useTranslation();
 
@@ -44,9 +53,6 @@ export function PageSelector<T>({
     return undefined;
   }
 
-  const first = pageItems[0];
-  const last = pageItems[pageItems.length - 1];
-
   function updatePage(page: number) {
     if (location === "bottom" && anchorElementRef.current) {
       anchorElementRef.current.scrollIntoView();
@@ -55,18 +61,21 @@ export function PageSelector<T>({
   }
 
   const currentPageDisplay = String(currentPage + 1);
-  // const currentPageDisplay = String(currentPage + 1).padStart(
-  //   String(numPages).length,
-  //   "0",
-  // );
 
   return (
     <Flex gap="large" direction="column">
       <FancyText tag="div" tabularNums fontSize="large">
         <Flex gap="large">
-          <Flex flex="auto">
+          <Flex flex="auto" gap="medium">
+            <FancyLink
+              outlined
+              to="/settings/"
+              aria-label={t("navigation.settings")}
+            >
+              <IconSettings size={16} />
+            </FancyLink>
             <FancyText tag="span" fontWeight="normal">
-              {renderID(first)} &ndash; {renderID(last)}
+              {title} ({numItems})
             </FancyText>
           </Flex>
 

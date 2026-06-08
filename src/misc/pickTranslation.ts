@@ -2,8 +2,11 @@ export function pickTranslation(
   obj: Record<string, string>,
   language: string,
 ): string {
-  if (language in obj) {
-    return obj[language];
+  const l = language.toLowerCase();
+  for (const key of Object.keys(obj)) {
+    if (l === key.toLowerCase()) {
+      return obj[key];
+    }
   }
   return obj.en;
 }

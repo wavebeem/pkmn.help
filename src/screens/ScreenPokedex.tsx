@@ -18,9 +18,9 @@ import { useAppContext } from "../hooks/useAppContext";
 import { useSearch } from "../hooks/useSearch";
 import { compare } from "../misc/compare";
 import { Type, typesFromUserInput } from "../misc/data-types";
-import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { pickTranslation } from "../misc/pickTranslation";
 import styles from "./ScreenPokedex.module.css";
+import { useVersionGroup } from "../hooks/useVersionGroup";
 
 export function ScreenPokedex(): ReactNode {
   const { allPokemon, isLoading } = useAppContext();
@@ -34,6 +34,11 @@ export function ScreenPokedex(): ReactNode {
   const isStale = query !== deferredQuery;
   const [page, setPage] = useSessionStorage<number>("pokedex.page", 0);
   const navigate = useNavigate();
+  const [versionGroup] = useVersionGroup();
+
+  useEffect(() => {
+    setPage(0);
+  }, [versionGroup]);
 
   useEffect(() => {
     if (!location.search) {
@@ -96,19 +101,25 @@ export function ScreenPokedex(): ReactNode {
         ],
       });
     }
-    switch (sortOrder) {
-      case "hp":
-      case "attack":
-      case "defense":
-      case "spAttack":
-      case "spDefense":
-      case "speed":
-      case "total": {
-        items = items.slice().sort((a, b) => {
-          return -compare(a[sortOrder], b[sortOrder]);
-        });
-        break;
-      }
+    if (sortOrder) {
+      items = items.slice().sort((a, b) => {
+        let n = 0;
+        let m = 0;
+        for (const stat of sortOrder.split("+")) {
+          if (
+            stat === "hp" ||
+            stat === "attack" ||
+            stat === "spAttack" ||
+            stat === "defense" ||
+            stat === "spDefense" ||
+            stat === "speed"
+          ) {
+            n += a[stat];
+            m += b[stat];
+          }
+        }
+        return -compare(n, m);
+      });
     }
     return items;
   }, [deferredQuery, searchablePkmn, language, t, sortOrder]);
@@ -156,6 +167,34 @@ export function ScreenPokedex(): ReactNode {
             </option>
             <option value="speed">{t("pokedex.stats.speed")}</option>
             <option value="total">{t("pokedex.stats.total")}</option>
+            <SelectDivider />
+            <option value="attack+speed">
+              {t("pokedex.stats.attack")}
+              {" + "}
+              {t("pokedex.stats.speed")}
+            </option>
+            <option value="spAttack+speed">
+              {t("pokedex.stats.specialAttack")}
+              {" + "}
+              {t("pokedex.stats.speed")}
+            </option>
+            <option value="hp+defense+spDefense">
+              {t("pokedex.stats.hp")}
+              {" + "}
+              {t("pokedex.stats.defense")}
+              {" + "}
+              {t("pokedex.stats.specialDefense")}
+            </option>
+            <option value="attack+defense">
+              {t("pokedex.stats.attack")}
+              {" + "}
+              {t("pokedex.stats.defense")}
+            </option>
+            <option value="spAttack+spDefense">
+              {t("pokedex.stats.specialAttack")}
+              {" + "}
+              {t("pokedex.stats.specialDefense")}
+            </option>
           </Select>
         </div>
         <Divider />
@@ -171,7 +210,6 @@ export function ScreenPokedex(): ReactNode {
               <EmptyState borderless>{t("pokedex.search.notFound")}</EmptyState>
             }
             items={pkmn}
-            renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
             renderPage={(page) => (
               <div className={styles.monsterGrid} data-stale={isStale}>
                 {page.map((pokemon) => (

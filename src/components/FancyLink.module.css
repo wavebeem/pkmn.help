@@ -2,6 +2,7 @@
   border-radius: var(--border-radius0);
   color: var(--color-link);
   text-underline-offset: calc(1em / 8);
+  text-decoration-thickness: calc(0.1em);
 }
 
 @media (hover) {

@@ -28,7 +28,7 @@ interface CoverageListProps {
 
 export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   const { coverageTypes } = useAppContext();
-  const [generation] = useGeneration();
+  const generation = useGeneration();
   const [battleVariant] = useBattleVariant();
   const { t } = useTranslation();
   const search = useSearch();
@@ -97,7 +97,6 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
             <EmptyState>{t("offense.coverageList.empty")}</EmptyState>
           }
           items={items}
-          renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
           renderPage={(items) => {
             return (
               <Flex direction="column" paddingY="large">

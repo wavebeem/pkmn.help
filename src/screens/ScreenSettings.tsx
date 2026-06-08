@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { Fragment, ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
@@ -6,11 +6,10 @@ import { Flex } from "../components/Flex";
 import { RadioGroup } from "../components/RadioGroup";
 import { Section } from "../components/Section";
 import { Select } from "../components/Select";
-import { useGeneration } from "../hooks/useGeneration";
+import { useVersionGroup } from "../hooks/useVersionGroup";
 import { useLanguage } from "../hooks/useLanguage";
 import { useTheme } from "../hooks/useTheme";
 import { useTypeCount } from "../hooks/useTypeCount";
-import { generations, isGeneration } from "../misc/data-generations";
 import { getDesiredLanguage, isLang } from "../misc/detectLanguage";
 import {
   formatLanguageCompletion,
@@ -19,10 +18,14 @@ import {
   unofficialLanguages,
 } from "../misc/lang";
 import { useBattleVariant } from "../hooks/useBattleVariant";
+import versionsData from "../../data/versions.json" with { type: "json" };
+import { pickTranslation } from "../misc/pickTranslation";
+import { SelectDivider } from "../components/SelectDivider";
+import { getVersionGroupName } from "../misc/versionGroup";
 
 export function ScreenSettings(): ReactNode {
   const { t, i18n } = useTranslation();
-  const [generation, setGeneration] = useGeneration();
+  const [versionGroup, setVersionGroup] = useVersionGroup();
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();
   const [typeCount, setTypeCount] = useTypeCount();
@@ -88,6 +91,47 @@ export function ScreenSettings(): ReactNode {
                 </optgroup>
               </Select>
 
+              <Select
+                label={t("more.settings.versionGroup.label")}
+                value={versionGroup}
+                helpText={<>{t("more.settings.versionGroup.help")}</>}
+                onChange={(event) => {
+                  setVersionGroup(event.target.value);
+                }}
+              >
+                <option value="">
+                  {t("more.settings.versionGroup.values.all")}
+                </option>
+                {Object.entries(versionsData.generationsToVersionGroups)
+                  .toReversed()
+                  .map(([gen, vgs]) => {
+                    // TODO: Use language specific rules to join version strings
+                    const groupLabel = pickTranslation(
+                      (versionsData.generationNames as any)[gen],
+                      language,
+                    );
+                    return (
+                      <Fragment key={gen}>
+                        <SelectDivider />
+                        <optgroup label={groupLabel}>
+                          {vgs.toReversed().map((vg) => {
+                            const vgn = getVersionGroupName({
+                              versionGroup: vg,
+                              language,
+                              t,
+                            });
+                            return (
+                              <option key={vg} value={vg}>
+                                {vgn}
+                              </option>
+                            );
+                          })}
+                        </optgroup>
+                      </Fragment>
+                    );
+                  })}
+              </Select>
+
               <RadioGroup
                 label={t("more.settings.theme.label")}
                 value={theme}
@@ -111,27 +155,6 @@ export function ScreenSettings(): ReactNode {
                   },
                 ]}
                 onChange={(option) => void setTheme(option.value)}
-              />
-
-              <RadioGroup
-                label={t("games.label")}
-                value={generation}
-                helpText={t("games.help")}
-                onChange={(option) => {
-                  const { value } = option;
-                  if (isGeneration(value)) {
-                    setGeneration(value);
-                  } else {
-                    // eslint-disable-next-line no-console
-                    console.error("not a generation:", value);
-                  }
-                }}
-                options={generations.map((gen) => {
-                  return {
-                    value: gen,
-                    label: t(`games.byID.${gen}`),
-                  };
-                })}
               />
 
               <RadioGroup

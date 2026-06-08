@@ -27,7 +27,7 @@ import { useBattleVariant } from "../hooks/useBattleVariant";
 import { PlainBadge } from "../components/PlainBadge";
 
 export function ScreenDefense(): ReactNode {
-  const [generation] = useGeneration();
+  const generation = useGeneration();
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();

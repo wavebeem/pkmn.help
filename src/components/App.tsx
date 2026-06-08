@@ -29,7 +29,12 @@ import { useRouteChangeFixes } from "../hooks/useRouteChangeFixes";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useTheme } from "../hooks/useTheme";
 import { useUpdateSW } from "../hooks/useUpdateSW";
-import { CoverageType, Pokemon } from "../misc/data-types";
+import {
+  CoverageType,
+  Pokemon,
+  restorePastTypesByVersionGroup,
+  restoreRegionalVariantsInPokedex,
+} from "../misc/data-types";
 import { detectLanguage } from "../misc/detectLanguage";
 import { formatPokemonName } from "../misc/formatPokemonName";
 import { publicPath } from "../misc/settings";
@@ -57,6 +62,8 @@ import {
 } from "./icons";
 import { PageNav } from "./PageNav";
 import { DebugSettings } from "../misc/DebugSettings";
+import versionsData from "../../data/versions.json";
+import { useVersionGroup } from "../hooks/useVersionGroup";
 
 const router = createBrowserRouter([
   {
@@ -165,6 +172,7 @@ export function Layout(): ReactNode {
   const [AllPokemon, setAllPokemon] = useState<Pokemon[]>([]);
 
   const [language] = useLanguage();
+  const [versionGroup] = useVersionGroup();
 
   useEffect(() => {
     async function load() {
@@ -202,7 +210,29 @@ export function Layout(): ReactNode {
     if (allPokemonResponse.type !== "done") {
       return;
     }
-    const allPokemon = allPokemonResponse.data;
+    let allPokemon = allPokemonResponse.data;
+    if (versionGroup) {
+      const slugToMon = new Map<string, Pokemon>();
+      for (const mon of allPokemon) {
+        slugToMon.set(mon.name, mon);
+      }
+      const dexPairs: [number, string][] = (
+        versionsData.monstersInVersionGroup as any
+      )[versionGroup];
+      allPokemon = dexPairs.flatMap(([number, slug]) => {
+        let mon = slugToMon.get(slug);
+        if (mon === undefined) {
+          return [];
+        }
+        mon = restorePastTypesByVersionGroup(mon, versionGroup);
+        return { ...mon, number };
+      });
+      allPokemon = restoreRegionalVariantsInPokedex({
+        dex: allPokemon,
+        slugToMon,
+        versionGroup,
+      });
+    }
     const fallbackCoverageTypes = allPokemon.map<CoverageType>((pkmn) => {
       const name = formatPokemonName({
         speciesName: pkmn.speciesNames[language] || pkmn.speciesNames.en,
@@ -216,7 +246,7 @@ export function Layout(): ReactNode {
     setCoverageTypes(fallbackCoverageTypes);
     setFallbackCoverageTypes(fallbackCoverageTypes);
     setAllPokemon(allPokemon);
-  }, [allPokemonResponse, language]);
+  }, [allPokemonResponse, language, versionGroup]);
 
   // Show/hide dialog based on history
   useEffect(() => {
