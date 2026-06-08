@@ -23,6 +23,7 @@ import { useBattleVariant } from "../hooks/useBattleVariant";
 import versionsData from "../../data/versions.json" with { type: "json" };
 import { pickTranslation } from "../misc/pickTranslation";
 import { SelectDivider } from "../components/SelectDivider";
+import { getVersionGroupName } from "../misc/versionGroup";
 
 export function ScreenSettings(): ReactNode {
   const { t, i18n } = useTranslation();
@@ -117,28 +118,13 @@ export function ScreenSettings(): ReactNode {
                         <SelectDivider />
                         <optgroup label={groupLabel}>
                           {vgs.toReversed().map((vg) => {
-                            let localizedItemSeparator = " / ";
-                            if (language === "ja" || language === "ko") {
-                              localizedItemSeparator = "・";
-                            } else if (
-                              language === "zh-Hans" ||
-                              language === "zh-Hant"
-                            ) {
-                              localizedItemSeparator = "／";
-                            }
-                            const itemLabel = (
-                              versionsData.versionGroupsToVersions as any
-                            )[vg]
-                              .map((v: any) => {
-                                return pickTranslation(
-                                  (versionsData.versionNames as any)[v],
-                                  language,
-                                );
-                              })
-                              .join(localizedItemSeparator);
+                            const vgn = getVersionGroupName({
+                              versionGroup: vg,
+                              language,
+                            });
                             return (
                               <option key={vg} value={vg}>
-                                {itemLabel}
+                                {vgn}
                               </option>
                             );
                           })}

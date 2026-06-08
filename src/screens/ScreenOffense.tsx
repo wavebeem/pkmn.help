@@ -31,6 +31,8 @@ import {
 import styles from "./ScreenOffense.module.css";
 import { useBattleVariant } from "../hooks/useBattleVariant";
 import { PlainBadge } from "../components/PlainBadge";
+import { IconSettings } from "../components/icons";
+import { useVersionGroupName } from "../hooks/useVersionGroupName";
 
 export type ScreenOffenseProps = {
   mode: "combination" | "single";
@@ -52,6 +54,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
     "offense.types",
     [],
   );
+  const versionGroupName = useVersionGroupName();
 
   useEffect(() => {
     setOffenseTypes((types) => types.slice(-typeLimit));
@@ -212,6 +215,19 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
             </FancyText>
             <Card size="small">
               <Flex direction="column" gap="large">
+                <Flex direction="row" gap="medium">
+                  <FancyLink
+                    outlined
+                    to="/settings/"
+                    aria-label={t("navigation.settings")}
+                  >
+                    <IconSettings size={16} />
+                  </FancyLink>
+                  <FancyText tag="span" fontWeight="normal">
+                    {versionGroupName}
+                  </FancyText>
+                </Flex>
+
                 <div>
                   <FancyLink to="/offense/coverage/">
                     {t("offense.coverage.edit")}

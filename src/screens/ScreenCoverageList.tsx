@@ -97,7 +97,6 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
             <EmptyState>{t("offense.coverageList.empty")}</EmptyState>
           }
           items={items}
-          renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
           renderPage={(items) => {
             return (
               <Flex direction="column" paddingY="large">

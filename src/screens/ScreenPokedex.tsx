@@ -18,7 +18,6 @@ import { useAppContext } from "../hooks/useAppContext";
 import { useSearch } from "../hooks/useSearch";
 import { compare } from "../misc/compare";
 import { Type, typesFromUserInput } from "../misc/data-types";
-import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import { pickTranslation } from "../misc/pickTranslation";
 import styles from "./ScreenPokedex.module.css";
 import { useVersionGroup } from "../hooks/useVersionGroup";
@@ -211,7 +210,6 @@ export function ScreenPokedex(): ReactNode {
               <EmptyState borderless>{t("pokedex.search.notFound")}</EmptyState>
             }
             items={pkmn}
-            renderID={(pkmn) => formatMonsterNumber(Number(pkmn.number))}
             renderPage={(page) => (
               <div className={styles.monsterGrid} data-stale={isStale}>
                 {page.map((pokemon) => (
