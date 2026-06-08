@@ -1,6 +1,6 @@
 # Changelog
 
-## ????-??-??
+## 2026-06-07
 
 - Fixed a bug where Chinese (Simplified) and Chinese (Traditional) showed
   Pokémon names in English
