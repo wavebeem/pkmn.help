@@ -252,10 +252,10 @@
         }
       },
       "versionGroup": {
-        "label": "Version group",
-        "help": "Controls available Pokémon and types",
+        "label": "Pokédex",
+        "help": "Controls available Pokémon and types.",
         "values": {
-          "*": "National dex"
+          "all": "National Pokédex"
         }
       },
       "typeCount": {

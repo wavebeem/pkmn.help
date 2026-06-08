@@ -211,7 +211,7 @@ export function Layout(): ReactNode {
       return;
     }
     let allPokemon = allPokemonResponse.data;
-    if (versionGroup !== "*") {
+    if (versionGroup) {
       const slugToMon = new Map<string, Pokemon>();
       for (const mon of allPokemon) {
         slugToMon.set(mon.name, mon);

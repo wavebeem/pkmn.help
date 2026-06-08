@@ -101,8 +101,8 @@ export function ScreenSettings(): ReactNode {
                   setVersionGroup(event.target.value);
                 }}
               >
-                <option value="*">
-                  {t("more.settings.versionGroup.values.*")}
+                <option value="">
+                  {t("more.settings.versionGroup.values.all")}
                 </option>
                 {Object.entries(versionsData.generationsToVersionGroups)
                   .toReversed()
