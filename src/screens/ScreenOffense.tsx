@@ -45,7 +45,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
   const [battleVariant] = useBattleVariant();
 
   const { coverageTypes, fallbackCoverageTypes, isLoading } = useAppContext();
-  const [generation] = useGeneration();
+  const generation = useGeneration();
   const { t, i18n } = useTranslation();
   const search = useSearch();
   const navigate = useNavigate();
@@ -208,45 +208,43 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
           offenseAbilities={abilities}
         />
 
-        {generation === "default" ? (
-          <Flex direction="column" gap="small">
-            <FancyText tag="h2" fontSize="large" fontWeight="medium">
-              {t("offense.coverage.heading")}
-            </FancyText>
-            <Card size="small">
-              <Flex direction="column" gap="large">
-                <Flex direction="row" gap="medium">
-                  <FancyLink
-                    outlined
-                    to="/settings/"
-                    aria-label={t("navigation.settings")}
-                  >
-                    <IconSettings size={16} />
-                  </FancyLink>
-                  <FancyText tag="span" fontWeight="normal">
-                    {versionGroupName}
-                  </FancyText>
-                </Flex>
-
-                <div>
-                  <FancyLink to="/offense/coverage/">
-                    {t("offense.coverage.edit")}
-                  </FancyLink>{" "}
-                  ({listLengthFormatted})
-                </div>
-                <DexCoverage
-                  battleVariant={battleVariant}
-                  generation={generation}
-                  coverageTypes={coverageTypes ?? fallbackCoverageTypes}
-                  types={offenseTypes}
-                  isLoading={isLoading}
-                  offenseAbilities={abilities}
-                  specialMoves={specialMoves}
-                />
+        <Flex direction="column" gap="small">
+          <FancyText tag="h2" fontSize="large" fontWeight="medium">
+            {t("offense.coverage.heading")}
+          </FancyText>
+          <Card size="small">
+            <Flex direction="column" gap="large">
+              <Flex direction="row" gap="medium">
+                <FancyLink
+                  outlined
+                  to="/settings/"
+                  aria-label={t("navigation.settings")}
+                >
+                  <IconSettings size={16} />
+                </FancyLink>
+                <FancyText tag="span" fontWeight="normal">
+                  {versionGroupName}
+                </FancyText>
               </Flex>
-            </Card>
-          </Flex>
-        ) : null}
+
+              <div>
+                <FancyLink to="/offense/coverage/">
+                  {t("offense.coverage.edit")}
+                </FancyLink>{" "}
+                ({listLengthFormatted})
+              </div>
+              <DexCoverage
+                battleVariant={battleVariant}
+                generation={generation}
+                coverageTypes={coverageTypes ?? fallbackCoverageTypes}
+                types={offenseTypes}
+                isLoading={isLoading}
+                offenseAbilities={abilities}
+                specialMoves={specialMoves}
+              />
+            </Flex>
+          </Card>
+        </Flex>
       </Flex>
     </main>
   );

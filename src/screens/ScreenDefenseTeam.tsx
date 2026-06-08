@@ -76,7 +76,7 @@ function setTeraTypeAt({
 
 export function ScreenDefenseTeam(): ReactNode {
   const [battleVariant] = useBattleVariant();
-  const [generation] = useGeneration();
+  const generation = useGeneration();
   const { t } = useTranslation();
   const search = useSearch();
   const navigate = useNavigate();

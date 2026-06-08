@@ -6,12 +6,10 @@ import { Flex } from "../components/Flex";
 import { RadioGroup } from "../components/RadioGroup";
 import { Section } from "../components/Section";
 import { Select } from "../components/Select";
-import { useGeneration } from "../hooks/useGeneration";
 import { useVersionGroup } from "../hooks/useVersionGroup";
 import { useLanguage } from "../hooks/useLanguage";
 import { useTheme } from "../hooks/useTheme";
 import { useTypeCount } from "../hooks/useTypeCount";
-import { generations, isGeneration } from "../misc/data-generations";
 import { getDesiredLanguage, isLang } from "../misc/detectLanguage";
 import {
   formatLanguageCompletion,
@@ -27,7 +25,6 @@ import { getVersionGroupName } from "../misc/versionGroup";
 
 export function ScreenSettings(): ReactNode {
   const { t, i18n } = useTranslation();
-  const [generation, setGeneration] = useGeneration();
   const [versionGroup, setVersionGroup] = useVersionGroup();
   const [language, setLanguage] = useLanguage();
   const [theme, setTheme] = useTheme();
@@ -121,6 +118,7 @@ export function ScreenSettings(): ReactNode {
                             const vgn = getVersionGroupName({
                               versionGroup: vg,
                               language,
+                              t,
                             });
                             return (
                               <option key={vg} value={vg}>
@@ -157,27 +155,6 @@ export function ScreenSettings(): ReactNode {
                   },
                 ]}
                 onChange={(option) => void setTheme(option.value)}
-              />
-
-              <RadioGroup
-                label={t("games.label")}
-                value={generation}
-                helpText={t("games.help")}
-                onChange={(option) => {
-                  const { value } = option;
-                  if (isGeneration(value)) {
-                    setGeneration(value);
-                  } else {
-                    // eslint-disable-next-line no-console
-                    console.error("not a generation:", value);
-                  }
-                }}
-                options={generations.map((gen) => {
-                  return {
-                    value: gen,
-                    label: t(`games.byID.${gen}`),
-                  };
-                })}
               />
 
               <RadioGroup

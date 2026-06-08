@@ -28,7 +28,7 @@ interface CoverageListProps {
 
 export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   const { coverageTypes } = useAppContext();
-  const [generation] = useGeneration();
+  const generation = useGeneration();
   const [battleVariant] = useBattleVariant();
   const { t } = useTranslation();
   const search = useSearch();

@@ -8,7 +8,12 @@
 - Added multiple Pokédex sort orders based on combined stat numbers besides the
   total (e.g. HP + Defense + Sp.Defense for a "wall" sort)
 
-<!-- - Added the ability to select different Pokémon games and generations -->
+- Added the ability to select different Pokémon games and generations
+
+- Added support for Pokédex coverage for all generations
+
+- Removed the "Generation" setting, since it's computed from the Pokédex you
+  select now
 
 ## 2026-05-27
 
