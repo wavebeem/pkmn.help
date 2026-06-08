@@ -5,6 +5,9 @@
 - Fixed a bug where Chinese (Simplified) and Chinese (Traditional) showed
   Pokémon names in English
 
+- Added multiple Pokédex sort orders based on combined stat numbers besides the
+  total (e.g. HP + Defense + Sp.Defense for a "wall" sort)
+
 <!-- - Added the ability to select different Pokémon games and generations -->
 
 ## 2026-05-27

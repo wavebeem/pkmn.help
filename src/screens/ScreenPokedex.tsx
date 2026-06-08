@@ -102,19 +102,25 @@ export function ScreenPokedex(): ReactNode {
         ],
       });
     }
-    switch (sortOrder) {
-      case "hp":
-      case "attack":
-      case "defense":
-      case "spAttack":
-      case "spDefense":
-      case "speed":
-      case "total": {
-        items = items.slice().sort((a, b) => {
-          return -compare(a[sortOrder], b[sortOrder]);
-        });
-        break;
-      }
+    if (sortOrder) {
+      items = items.slice().sort((a, b) => {
+        let n = 0;
+        let m = 0;
+        for (const stat of sortOrder.split("+")) {
+          if (
+            stat === "hp" ||
+            stat === "attack" ||
+            stat === "spAttack" ||
+            stat === "defense" ||
+            stat === "spDefense" ||
+            stat === "speed"
+          ) {
+            n += a[stat];
+            m += b[stat];
+          }
+        }
+        return -compare(n, m);
+      });
     }
     return items;
   }, [deferredQuery, searchablePkmn, language, t, sortOrder]);
@@ -162,6 +168,34 @@ export function ScreenPokedex(): ReactNode {
             </option>
             <option value="speed">{t("pokedex.stats.speed")}</option>
             <option value="total">{t("pokedex.stats.total")}</option>
+            <SelectDivider />
+            <option value="attack+speed">
+              {t("pokedex.stats.attack")}
+              {" + "}
+              {t("pokedex.stats.speed")}
+            </option>
+            <option value="spAttack+speed">
+              {t("pokedex.stats.specialAttack")}
+              {" + "}
+              {t("pokedex.stats.speed")}
+            </option>
+            <option value="hp+defense+spDefense">
+              {t("pokedex.stats.hp")}
+              {" + "}
+              {t("pokedex.stats.defense")}
+              {" + "}
+              {t("pokedex.stats.specialDefense")}
+            </option>
+            <option value="attack+defense">
+              {t("pokedex.stats.attack")}
+              {" + "}
+              {t("pokedex.stats.defense")}
+            </option>
+            <option value="spAttack+spDefense">
+              {t("pokedex.stats.specialAttack")}
+              {" + "}
+              {t("pokedex.stats.specialDefense")}
+            </option>
           </Select>
         </div>
         <Divider />
