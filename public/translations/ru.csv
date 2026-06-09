@@ -155,6 +155,9 @@ more.settings.theme.values.auto,System default,Системная по умол�
 more.settings.theme.values.light,Light,Светлая
 more.settings.theme.values.dark,Dark,Тёмная
 more.settings.theme.values.night,Night,
+more.settings.versionGroup.label,Pokédex,
+more.settings.versionGroup.help,Controls available Pokémon and types.,
+more.settings.versionGroup.values.all,National Pokédex,
 more.settings.typeCount.label,Number of types,Число типов
 more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Покемоны реально могут иметь три типа за раз если по ним были использованы атаки Forests's Curse или Trick-or-Treat. Поле третьего типа скрыто по умолчанию, так как им пользуются редко."
 more.settings.typeCount.values.2,Two types (2),Два типа(2)

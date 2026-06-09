@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-06-09
+
+- Updated French translation
+
+- Improved formatting of certain select menus
+
 ## 2026-06-07
 
 - Fixed a bug where Chinese (Simplified) and Chinese (Traditional) showed

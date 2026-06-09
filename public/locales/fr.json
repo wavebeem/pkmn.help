@@ -251,6 +251,13 @@
           "night": "Nuit"
         }
       },
+      "versionGroup": {
+        "label": "Pokédex",
+        "help": "Contrôle les Pokémon et les types disponibles.",
+        "values": {
+          "all": "Pokédex National"
+        }
+      },
       "typeCount": {
         "label": "Nombre de types",
         "help": "Un Pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est rarement utilisé.",

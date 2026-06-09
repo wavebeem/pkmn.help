@@ -20,8 +20,11 @@ import {
 import { useBattleVariant } from "../hooks/useBattleVariant";
 import versionsData from "../../data/versions.json" with { type: "json" };
 import { pickTranslation } from "../misc/pickTranslation";
-import { SelectDivider } from "../components/SelectDivider";
 import { getVersionGroupName } from "../misc/versionGroup";
+
+function formatOptgroupLabel(label: string) {
+  return `{ ${label} }`;
+}
 
 export function ScreenSettings(): ReactNode {
   const { t, i18n } = useTranslation();
@@ -59,13 +62,21 @@ export function ScreenSettings(): ReactNode {
                   i18n.changeLanguage(language);
                 }}
               >
-                <optgroup label={t("more.settings.language.default")}>
+                <optgroup
+                  label={formatOptgroupLabel(
+                    t("more.settings.language.default"),
+                  )}
+                >
                   <option value="">
                     * {showLang(autoLang)} ({formatLanguageCompletion(autoLang)}
                     )
                   </option>
                 </optgroup>
-                <optgroup label={t("more.settings.language.official")}>
+                <optgroup
+                  label={formatOptgroupLabel(
+                    t("more.settings.language.official"),
+                  )}
+                >
                   {officialLanguages.map((lang) => {
                     if (!isLang(lang)) {
                       throw new Error(`${lang} is not a valid language`);
@@ -77,7 +88,11 @@ export function ScreenSettings(): ReactNode {
                     );
                   })}
                 </optgroup>
-                <optgroup label={t("more.settings.language.unofficial")}>
+                <optgroup
+                  label={formatOptgroupLabel(
+                    t("more.settings.language.unofficial"),
+                  )}
+                >
                   {unofficialLanguages.map((lang) => {
                     if (!isLang(lang)) {
                       throw new Error(`${lang} is not a valid language`);
@@ -112,8 +127,7 @@ export function ScreenSettings(): ReactNode {
                     );
                     return (
                       <Fragment key={gen}>
-                        <SelectDivider />
-                        <optgroup label={groupLabel}>
+                        <optgroup label={formatOptgroupLabel(groupLabel)}>
                           {vgs.toReversed().map((vg) => {
                             const vgn = getVersionGroupName({
                               versionGroup: vg,
