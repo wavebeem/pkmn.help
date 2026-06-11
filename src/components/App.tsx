@@ -216,7 +216,11 @@ export function Layout(): ReactNode {
       const speciesToMon = new Map<string, Pokemon[]>();
       for (const mon of allPokemon) {
         slugToMon.set(mon.name, mon);
-        const list = speciesToMon.getOrInsert(mon.species, []);
+        let list = speciesToMon.get(mon.species);
+        if (!list) {
+          list = [];
+          speciesToMon.set(mon.species, list);
+        }
         list.push(mon);
       }
       const dexPairs: [number, string][] = (

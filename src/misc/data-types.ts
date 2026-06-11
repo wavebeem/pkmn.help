@@ -313,6 +313,12 @@ export function restorePastTypesByVersionGroup(
   return ret;
 }
 
+// TODO: We should remove regional variants and mega evolutions by default,
+// adding them back in only when we know they apply. I wish we could easily get
+// this information from PokeAPI.
+//
+// https://github.com/PokeAPI/pokeapi/issues/1266
+//
 export function restoreRegionalVariantsInPokedex({
   dex,
   slugToMon,
