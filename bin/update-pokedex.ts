@@ -48,6 +48,7 @@ async function main(flags: string[]) {
     return;
   }
 
+  await scrapeVersions();
   await scrapePokeapi();
   await downloadMedia();
   await optimizeImages({ force: false });

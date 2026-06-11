@@ -14,6 +14,7 @@ export interface PokemonSpeciesBasic {
 
 export interface PokemonSpeciesDetail {
   id: number;
+  name: string;
   names: {
     name: string;
     language: {
@@ -86,6 +87,7 @@ export interface PokemonDetail {
 
 export interface PokemonSimple {
   name: string;
+  species: string;
   speciesNames: Record<string, string>;
   formNames: Record<string, string>;
   number: number;
@@ -130,6 +132,7 @@ export async function scrapePokeapi(): Promise<void> {
       }
       const mon: PokemonSimple = {
         name: detail.name,
+        species: speciesDetail.name,
         speciesNames,
         formNames,
         number: speciesDetail.id,

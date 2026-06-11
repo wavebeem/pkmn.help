@@ -213,23 +213,27 @@ export function Layout(): ReactNode {
     let allPokemon = allPokemonResponse.data;
     if (versionGroup) {
       const slugToMon = new Map<string, Pokemon>();
+      const speciesToMon = new Map<string, Pokemon[]>();
       for (const mon of allPokemon) {
         slugToMon.set(mon.name, mon);
+        const list = speciesToMon.getOrInsert(mon.species, []);
+        list.push(mon);
       }
       const dexPairs: [number, string][] = (
         versionsData.monstersInVersionGroup as any
       )[versionGroup];
       allPokemon = dexPairs.flatMap(([number, slug]) => {
-        let mon = slugToMon.get(slug);
-        if (mon === undefined) {
-          return [];
+        const mons = speciesToMon.get(slug);
+        if (mons === undefined) {
+          throw new Error(`Failed to find Pokémon species ${slug}`);
         }
-        mon = restorePastTypesByVersionGroup(mon, versionGroup);
-        return { ...mon, number };
+        return mons
+          .map((m) => restorePastTypesByVersionGroup(m, versionGroup))
+          .map((m) => ({ ...m, number }));
       });
       allPokemon = restoreRegionalVariantsInPokedex({
         dex: allPokemon,
-        slugToMon,
+        slugToMon: slugToMon,
         versionGroup,
       });
     }

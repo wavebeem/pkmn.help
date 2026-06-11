@@ -1,6 +1,7 @@
 [
   {
     "name": "bulbasaur",
+    "species": "bulbasaur",
     "speciesNames": {
       "ja-Hrkt": "フシギダネ",
       "ko": "이상해씨",
@@ -37,6 +38,7 @@
   },
   {
     "name": "ivysaur",
+    "species": "ivysaur",
     "speciesNames": {
       "ja-Hrkt": "フシギソウ",
       "ko": "이상해풀",
@@ -73,6 +75,7 @@
   },
   {
     "name": "venusaur",
+    "species": "venusaur",
     "speciesNames": {
       "ja-Hrkt": "フシギバナ",
       "ko": "이상해꽃",
@@ -109,6 +112,7 @@
   },
   {
     "name": "venusaur-mega",
+    "species": "venusaur",
     "speciesNames": {
       "ja-Hrkt": "フシギバナ",
       "ko": "이상해꽃",
@@ -156,6 +160,7 @@
   },
   {
     "name": "charmander",
+    "species": "charmander",
     "speciesNames": {
       "ja-Hrkt": "ヒトカゲ",
       "ko": "파이리",
@@ -191,6 +196,7 @@
   },
   {
     "name": "charmeleon",
+    "species": "charmeleon",
     "speciesNames": {
       "ja-Hrkt": "リザード",
       "ko": "리자드",
@@ -226,6 +232,7 @@
   },
   {
     "name": "charizard",
+    "species": "charizard",
     "speciesNames": {
       "ja-Hrkt": "リザードン",
       "ko": "리자몽",
@@ -262,6 +269,7 @@
   },
   {
     "name": "charizard-mega-x",
+    "species": "charizard",
     "speciesNames": {
       "ja-Hrkt": "リザードン",
       "ko": "리자몽",
@@ -309,6 +317,7 @@
   },
   {
     "name": "charizard-mega-y",
+    "species": "charizard",
     "speciesNames": {
       "ja-Hrkt": "リザードン",
       "ko": "리자몽",
@@ -356,6 +365,7 @@
   },
   {
     "name": "squirtle",
+    "species": "squirtle",
     "speciesNames": {
       "ja-Hrkt": "ゼニガメ",
       "ko": "꼬부기",
@@ -391,6 +401,7 @@
   },
   {
     "name": "wartortle",
+    "species": "wartortle",
     "speciesNames": {
       "ja-Hrkt": "カメール",
       "ko": "어니부기",
@@ -426,6 +437,7 @@
   },
   {
     "name": "blastoise",
+    "species": "blastoise",
     "speciesNames": {
       "ja-Hrkt": "カメックス",
       "ko": "거북왕",
@@ -461,6 +473,7 @@
   },
   {
     "name": "blastoise-mega",
+    "species": "blastoise",
     "speciesNames": {
       "ja-Hrkt": "カメックス",
       "ko": "거북왕",
@@ -507,6 +520,7 @@
   },
   {
     "name": "caterpie",
+    "species": "caterpie",
     "speciesNames": {
       "ja-Hrkt": "キャタピー",
       "ko": "캐터피",
@@ -542,6 +556,7 @@
   },
   {
     "name": "metapod",
+    "species": "metapod",
     "speciesNames": {
       "ja-Hrkt": "トランセル",
       "ko": "단데기",
@@ -577,6 +592,7 @@
   },
   {
     "name": "butterfree",
+    "species": "butterfree",
     "speciesNames": {
       "ja-Hrkt": "バタフリー",
       "ko": "버터플",
@@ -613,6 +629,7 @@
   },
   {
     "name": "weedle",
+    "species": "weedle",
     "speciesNames": {
       "ja-Hrkt": "ビードル",
       "ko": "뿔충이",
@@ -649,6 +666,7 @@
   },
   {
     "name": "kakuna",
+    "species": "kakuna",
     "speciesNames": {
       "ja-Hrkt": "コクーン",
       "ko": "딱충이",
@@ -685,6 +703,7 @@
   },
   {
     "name": "beedrill",
+    "species": "beedrill",
     "speciesNames": {
       "ja-Hrkt": "スピアー",
       "ko": "독침붕",
@@ -721,6 +740,7 @@
   },
   {
     "name": "beedrill-mega",
+    "species": "beedrill",
     "speciesNames": {
       "ja-Hrkt": "スピアー",
       "ko": "독침붕",
@@ -768,6 +788,7 @@
   },
   {
     "name": "pidgey",
+    "species": "pidgey",
     "speciesNames": {
       "ja-Hrkt": "ポッポ",
       "ko": "구구",
@@ -804,6 +825,7 @@
   },
   {
     "name": "pidgeotto",
+    "species": "pidgeotto",
     "speciesNames": {
       "ja-Hrkt": "ピジョン",
       "ko": "피죤",
@@ -840,6 +862,7 @@
   },
   {
     "name": "pidgeot",
+    "species": "pidgeot",
     "speciesNames": {
       "ja-Hrkt": "ピジョット",
       "ko": "피죤투",
@@ -876,6 +899,7 @@
   },
   {
     "name": "pidgeot-mega",
+    "species": "pidgeot",
     "speciesNames": {
       "ja-Hrkt": "ピジョット",
       "ko": "피죤투",
@@ -923,6 +947,7 @@
   },
   {
     "name": "rattata",
+    "species": "rattata",
     "speciesNames": {
       "ja-Hrkt": "コラッタ",
       "ko": "꼬렛",
@@ -958,6 +983,7 @@
   },
   {
     "name": "rattata-alola",
+    "species": "rattata",
     "speciesNames": {
       "ja-Hrkt": "コラッタ",
       "ko": "꼬렛",
@@ -1005,6 +1031,7 @@
   },
   {
     "name": "raticate",
+    "species": "raticate",
     "speciesNames": {
       "ja-Hrkt": "ラッタ",
       "ko": "레트라",
@@ -1040,6 +1067,7 @@
   },
   {
     "name": "raticate-alola",
+    "species": "raticate",
     "speciesNames": {
       "ja-Hrkt": "ラッタ",
       "ko": "레트라",
@@ -1087,6 +1115,7 @@
   },
   {
     "name": "spearow",
+    "species": "spearow",
     "speciesNames": {
       "ja-Hrkt": "オニスズメ",
       "ko": "깨비참",
@@ -1123,6 +1152,7 @@
   },
   {
     "name": "fearow",
+    "species": "fearow",
     "speciesNames": {
       "ja-Hrkt": "オニドリル",
       "ko": "깨비드릴조",
@@ -1159,6 +1189,7 @@
   },
   {
     "name": "ekans",
+    "species": "ekans",
     "speciesNames": {
       "ja-Hrkt": "アーボ",
       "ko": "아보",
@@ -1194,6 +1225,7 @@
   },
   {
     "name": "arbok",
+    "species": "arbok",
     "speciesNames": {
       "ja-Hrkt": "アーボック",
       "ko": "아보크",
@@ -1229,6 +1261,7 @@
   },
   {
     "name": "pikachu",
+    "species": "pikachu",
     "speciesNames": {
       "ja-Hrkt": "ピカチュウ",
       "ko": "피카츄",
@@ -1264,6 +1297,7 @@
   },
   {
     "name": "raichu",
+    "species": "raichu",
     "speciesNames": {
       "ja-Hrkt": "ライチュウ",
       "ko": "라이츄",
@@ -1299,6 +1333,7 @@
   },
   {
     "name": "raichu-alola",
+    "species": "raichu",
     "speciesNames": {
       "ja-Hrkt": "ライチュウ",
       "ko": "라이츄",
@@ -1346,6 +1381,7 @@
   },
   {
     "name": "raichu-mega-x",
+    "species": "raichu",
     "speciesNames": {
       "ja-Hrkt": "ライチュウ",
       "ko": "라이츄",
@@ -1385,6 +1421,7 @@
   },
   {
     "name": "raichu-mega-y",
+    "species": "raichu",
     "speciesNames": {
       "ja-Hrkt": "ライチュウ",
       "ko": "라이츄",
@@ -1424,6 +1461,7 @@
   },
   {
     "name": "sandshrew",
+    "species": "sandshrew",
     "speciesNames": {
       "ja-Hrkt": "サンド",
       "ko": "모래두지",
@@ -1459,6 +1497,7 @@
   },
   {
     "name": "sandshrew-alola",
+    "species": "sandshrew",
     "speciesNames": {
       "ja-Hrkt": "サンド",
       "ko": "모래두지",
@@ -1506,6 +1545,7 @@
   },
   {
     "name": "sandslash",
+    "species": "sandslash",
     "speciesNames": {
       "ja-Hrkt": "サンドパン",
       "ko": "고지",
@@ -1541,6 +1581,7 @@
   },
   {
     "name": "sandslash-alola",
+    "species": "sandslash",
     "speciesNames": {
       "ja-Hrkt": "サンドパン",
       "ko": "고지",
@@ -1588,6 +1629,7 @@
   },
   {
     "name": "nidoran-f",
+    "species": "nidoran-f",
     "speciesNames": {
       "ja-Hrkt": "ニドラン♀",
       "ko": "니드런♀",
@@ -1623,6 +1665,7 @@
   },
   {
     "name": "nidorina",
+    "species": "nidorina",
     "speciesNames": {
       "ja-Hrkt": "ニドリーナ",
       "ko": "니드리나",
@@ -1658,6 +1701,7 @@
   },
   {
     "name": "nidoqueen",
+    "species": "nidoqueen",
     "speciesNames": {
       "ja-Hrkt": "ニドクイン",
       "ko": "니드퀸",
@@ -1694,6 +1738,7 @@
   },
   {
     "name": "nidoran-m",
+    "species": "nidoran-m",
     "speciesNames": {
       "ja-Hrkt": "ニドラン♂",
       "ko": "니드런♂",
@@ -1729,6 +1774,7 @@
   },
   {
     "name": "nidorino",
+    "species": "nidorino",
     "speciesNames": {
       "ja-Hrkt": "ニドリーノ",
       "ko": "니드리노",
@@ -1764,6 +1810,7 @@
   },
   {
     "name": "nidoking",
+    "species": "nidoking",
     "speciesNames": {
       "ja-Hrkt": "ニドキング",
       "ko": "니드킹",
@@ -1800,6 +1847,7 @@
   },
   {
     "name": "clefairy",
+    "species": "clefairy",
     "speciesNames": {
       "ja-Hrkt": "ピッピ",
       "ko": "삐삐",
@@ -1839,6 +1887,7 @@
   },
   {
     "name": "clefable",
+    "species": "clefable",
     "speciesNames": {
       "ja-Hrkt": "ピクシー",
       "ko": "픽시",
@@ -1878,6 +1927,7 @@
   },
   {
     "name": "clefable-mega",
+    "species": "clefable",
     "speciesNames": {
       "ja-Hrkt": "ピクシー",
       "ko": "픽시",
@@ -1918,6 +1968,7 @@
   },
   {
     "name": "vulpix",
+    "species": "vulpix",
     "speciesNames": {
       "ja-Hrkt": "ロコン",
       "ko": "식스테일",
@@ -1953,6 +2004,7 @@
   },
   {
     "name": "vulpix-alola",
+    "species": "vulpix",
     "speciesNames": {
       "ja-Hrkt": "ロコン",
       "ko": "식스테일",
@@ -1999,6 +2051,7 @@
   },
   {
     "name": "ninetales",
+    "species": "ninetales",
     "speciesNames": {
       "ja-Hrkt": "キュウコン",
       "ko": "나인테일",
@@ -2034,6 +2087,7 @@
   },
   {
     "name": "ninetales-alola",
+    "species": "ninetales",
     "speciesNames": {
       "ja-Hrkt": "キュウコン",
       "ko": "나인테일",
@@ -2081,6 +2135,7 @@
   },
   {
     "name": "jigglypuff",
+    "species": "jigglypuff",
     "speciesNames": {
       "ja-Hrkt": "プリン",
       "ko": "푸린",
@@ -2121,6 +2176,7 @@
   },
   {
     "name": "wigglytuff",
+    "species": "wigglytuff",
     "speciesNames": {
       "ja-Hrkt": "プクリン",
       "ko": "푸크린",
@@ -2161,6 +2217,7 @@
   },
   {
     "name": "zubat",
+    "species": "zubat",
     "speciesNames": {
       "ja-Hrkt": "ズバット",
       "ko": "주뱃",
@@ -2197,6 +2254,7 @@
   },
   {
     "name": "golbat",
+    "species": "golbat",
     "speciesNames": {
       "ja-Hrkt": "ゴルバット",
       "ko": "골뱃",
@@ -2233,6 +2291,7 @@
   },
   {
     "name": "oddish",
+    "species": "oddish",
     "speciesNames": {
       "ja-Hrkt": "ナゾノクサ",
       "ko": "뚜벅쵸",
@@ -2269,6 +2328,7 @@
   },
   {
     "name": "gloom",
+    "species": "gloom",
     "speciesNames": {
       "ja-Hrkt": "クサイハナ",
       "ko": "냄새꼬",
@@ -2305,6 +2365,7 @@
   },
   {
     "name": "vileplume",
+    "species": "vileplume",
     "speciesNames": {
       "ja-Hrkt": "ラフレシア",
       "ko": "라플레시아",
@@ -2341,6 +2402,7 @@
   },
   {
     "name": "paras",
+    "species": "paras",
     "speciesNames": {
       "ja-Hrkt": "パラス",
       "ko": "파라스",
@@ -2377,6 +2439,7 @@
   },
   {
     "name": "parasect",
+    "species": "parasect",
     "speciesNames": {
       "ja-Hrkt": "パラセクト",
       "ko": "파라섹트",
@@ -2413,6 +2476,7 @@
   },
   {
     "name": "venonat",
+    "species": "venonat",
     "speciesNames": {
       "ja-Hrkt": "コンパン",
       "ko": "콘팡",
@@ -2449,6 +2513,7 @@
   },
   {
     "name": "venomoth",
+    "species": "venomoth",
     "speciesNames": {
       "ja-Hrkt": "モルフォン",
       "ko": "도나리",
@@ -2485,6 +2550,7 @@
   },
   {
     "name": "diglett",
+    "species": "diglett",
     "speciesNames": {
       "ja-Hrkt": "ディグダ",
       "ko": "디그다",
@@ -2520,6 +2586,7 @@
   },
   {
     "name": "diglett-alola",
+    "species": "diglett",
     "speciesNames": {
       "ja-Hrkt": "ディグダ",
       "ko": "디그다",
@@ -2567,6 +2634,7 @@
   },
   {
     "name": "dugtrio",
+    "species": "dugtrio",
     "speciesNames": {
       "ja-Hrkt": "ダグトリオ",
       "ko": "닥트리오",
@@ -2602,6 +2670,7 @@
   },
   {
     "name": "dugtrio-alola",
+    "species": "dugtrio",
     "speciesNames": {
       "ja-Hrkt": "ダグトリオ",
       "ko": "닥트리오",
@@ -2649,6 +2718,7 @@
   },
   {
     "name": "meowth",
+    "species": "meowth",
     "speciesNames": {
       "ja-Hrkt": "ニャース",
       "ko": "나옹",
@@ -2684,6 +2754,7 @@
   },
   {
     "name": "meowth-alola",
+    "species": "meowth",
     "speciesNames": {
       "ja-Hrkt": "ニャース",
       "ko": "나옹",
@@ -2730,6 +2801,7 @@
   },
   {
     "name": "meowth-galar",
+    "species": "meowth",
     "speciesNames": {
       "ja-Hrkt": "ニャース",
       "ko": "나옹",
@@ -2776,6 +2848,7 @@
   },
   {
     "name": "persian",
+    "species": "persian",
     "speciesNames": {
       "ja-Hrkt": "ペルシアン",
       "ko": "페르시온",
@@ -2811,6 +2884,7 @@
   },
   {
     "name": "persian-alola",
+    "species": "persian",
     "speciesNames": {
       "ja-Hrkt": "ペルシアン",
       "ko": "페르시온",
@@ -2857,6 +2931,7 @@
   },
   {
     "name": "psyduck",
+    "species": "psyduck",
     "speciesNames": {
       "ja-Hrkt": "コダック",
       "ko": "고라파덕",
@@ -2892,6 +2967,7 @@
   },
   {
     "name": "golduck",
+    "species": "golduck",
     "speciesNames": {
       "ja-Hrkt": "ゴルダック",
       "ko": "골덕",
@@ -2927,6 +3003,7 @@
   },
   {
     "name": "mankey",
+    "species": "mankey",
     "speciesNames": {
       "ja-Hrkt": "マンキー",
       "ko": "망키",
@@ -2962,6 +3039,7 @@
   },
   {
     "name": "primeape",
+    "species": "primeape",
     "speciesNames": {
       "ja-Hrkt": "オコリザル",
       "ko": "성원숭",
@@ -2997,6 +3075,7 @@
   },
   {
     "name": "growlithe",
+    "species": "growlithe",
     "speciesNames": {
       "ja-Hrkt": "ガーディ",
       "ko": "가디",
@@ -3032,6 +3111,7 @@
   },
   {
     "name": "growlithe-hisui",
+    "species": "growlithe",
     "speciesNames": {
       "ja-Hrkt": "ガーディ",
       "ko": "가디",
@@ -3074,6 +3154,7 @@
   },
   {
     "name": "arcanine",
+    "species": "arcanine",
     "speciesNames": {
       "ja-Hrkt": "ウインディ",
       "ko": "윈디",
@@ -3109,6 +3190,7 @@
   },
   {
     "name": "arcanine-hisui",
+    "species": "arcanine",
     "speciesNames": {
       "ja-Hrkt": "ウインディ",
       "ko": "윈디",
@@ -3151,6 +3233,7 @@
   },
   {
     "name": "poliwag",
+    "species": "poliwag",
     "speciesNames": {
       "ja-Hrkt": "ニョロモ",
       "ko": "발챙이",
@@ -3186,6 +3269,7 @@
   },
   {
     "name": "poliwhirl",
+    "species": "poliwhirl",
     "speciesNames": {
       "ja-Hrkt": "ニョロゾ",
       "ko": "슈륙챙이",
@@ -3221,6 +3305,7 @@
   },
   {
     "name": "poliwrath",
+    "species": "poliwrath",
     "speciesNames": {
       "ja-Hrkt": "ニョロボン",
       "ko": "강챙이",
@@ -3257,6 +3342,7 @@
   },
   {
     "name": "abra",
+    "species": "abra",
     "speciesNames": {
       "ja-Hrkt": "ケーシィ",
       "ko": "캐이시",
@@ -3292,6 +3378,7 @@
   },
   {
     "name": "kadabra",
+    "species": "kadabra",
     "speciesNames": {
       "ja-Hrkt": "ユンゲラー",
       "ko": "윤겔라",
@@ -3327,6 +3414,7 @@
   },
   {
     "name": "alakazam",
+    "species": "alakazam",
     "speciesNames": {
       "ja-Hrkt": "フーディン",
       "ko": "후딘",
@@ -3362,6 +3450,7 @@
   },
   {
     "name": "alakazam-mega",
+    "species": "alakazam",
     "speciesNames": {
       "ja-Hrkt": "フーディン",
       "ko": "후딘",
@@ -3408,6 +3497,7 @@
   },
   {
     "name": "machop",
+    "species": "machop",
     "speciesNames": {
       "ja-Hrkt": "ワンリキー",
       "ko": "알통몬",
@@ -3443,6 +3533,7 @@
   },
   {
     "name": "machoke",
+    "species": "machoke",
     "speciesNames": {
       "ja-Hrkt": "ゴーリキー",
       "ko": "근육몬",
@@ -3478,6 +3569,7 @@
   },
   {
     "name": "machamp",
+    "species": "machamp",
     "speciesNames": {
       "ja-Hrkt": "カイリキー",
       "ko": "괴력몬",
@@ -3513,6 +3605,7 @@
   },
   {
     "name": "bellsprout",
+    "species": "bellsprout",
     "speciesNames": {
       "ja-Hrkt": "マダツボミ",
       "ko": "모다피",
@@ -3549,6 +3642,7 @@
   },
   {
     "name": "weepinbell",
+    "species": "weepinbell",
     "speciesNames": {
       "ja-Hrkt": "ウツドン",
       "ko": "우츠동",
@@ -3585,6 +3679,7 @@
   },
   {
     "name": "victreebel",
+    "species": "victreebel",
     "speciesNames": {
       "ja-Hrkt": "ウツボット",
       "ko": "우츠보트",
@@ -3621,6 +3716,7 @@
   },
   {
     "name": "victreebel-mega",
+    "species": "victreebel",
     "speciesNames": {
       "ja-Hrkt": "ウツボット",
       "ko": "우츠보트",
@@ -3661,6 +3757,7 @@
   },
   {
     "name": "tentacool",
+    "species": "tentacool",
     "speciesNames": {
       "ja-Hrkt": "メノクラゲ",
       "ko": "왕눈해",
@@ -3697,6 +3794,7 @@
   },
   {
     "name": "tentacruel",
+    "species": "tentacruel",
     "speciesNames": {
       "ja-Hrkt": "ドククラゲ",
       "ko": "독파리",
@@ -3733,6 +3831,7 @@
   },
   {
     "name": "geodude",
+    "species": "geodude",
     "speciesNames": {
       "ja-Hrkt": "イシツブテ",
       "ko": "꼬마돌",
@@ -3769,6 +3868,7 @@
   },
   {
     "name": "geodude-alola",
+    "species": "geodude",
     "speciesNames": {
       "ja-Hrkt": "イシツブテ",
       "ko": "꼬마돌",
@@ -3816,6 +3916,7 @@
   },
   {
     "name": "graveler",
+    "species": "graveler",
     "speciesNames": {
       "ja-Hrkt": "ゴローン",
       "ko": "데구리",
@@ -3852,6 +3953,7 @@
   },
   {
     "name": "graveler-alola",
+    "species": "graveler",
     "speciesNames": {
       "ja-Hrkt": "ゴローン",
       "ko": "데구리",
@@ -3899,6 +4001,7 @@
   },
   {
     "name": "golem",
+    "species": "golem",
     "speciesNames": {
       "ja-Hrkt": "ゴローニャ",
       "ko": "딱구리",
@@ -3935,6 +4038,7 @@
   },
   {
     "name": "golem-alola",
+    "species": "golem",
     "speciesNames": {
       "ja-Hrkt": "ゴローニャ",
       "ko": "딱구리",
@@ -3982,6 +4086,7 @@
   },
   {
     "name": "ponyta",
+    "species": "ponyta",
     "speciesNames": {
       "ja-Hrkt": "ポニータ",
       "ko": "포니타",
@@ -4017,6 +4122,7 @@
   },
   {
     "name": "ponyta-galar",
+    "species": "ponyta",
     "speciesNames": {
       "ja-Hrkt": "ポニータ",
       "ko": "포니타",
@@ -4063,6 +4169,7 @@
   },
   {
     "name": "rapidash",
+    "species": "rapidash",
     "speciesNames": {
       "ja-Hrkt": "ギャロップ",
       "ko": "날쌩마",
@@ -4098,6 +4205,7 @@
   },
   {
     "name": "rapidash-galar",
+    "species": "rapidash",
     "speciesNames": {
       "ja-Hrkt": "ギャロップ",
       "ko": "날쌩마",
@@ -4145,6 +4253,7 @@
   },
   {
     "name": "slowpoke",
+    "species": "slowpoke",
     "speciesNames": {
       "ja-Hrkt": "ヤドン",
       "ko": "야돈",
@@ -4181,6 +4290,7 @@
   },
   {
     "name": "slowpoke-galar",
+    "species": "slowpoke",
     "speciesNames": {
       "ja-Hrkt": "ヤドン",
       "ko": "야돈",
@@ -4227,6 +4337,7 @@
   },
   {
     "name": "slowbro",
+    "species": "slowbro",
     "speciesNames": {
       "ja-Hrkt": "ヤドラン",
       "ko": "야도란",
@@ -4263,6 +4374,7 @@
   },
   {
     "name": "slowbro-mega",
+    "species": "slowbro",
     "speciesNames": {
       "ja-Hrkt": "ヤドラン",
       "ko": "야도란",
@@ -4310,6 +4422,7 @@
   },
   {
     "name": "slowbro-galar",
+    "species": "slowbro",
     "speciesNames": {
       "ja-Hrkt": "ヤドラン",
       "ko": "야도란",
@@ -4357,6 +4470,7 @@
   },
   {
     "name": "magnemite",
+    "species": "magnemite",
     "speciesNames": {
       "ja-Hrkt": "コイル",
       "ko": "코일",
@@ -4397,6 +4511,7 @@
   },
   {
     "name": "magneton",
+    "species": "magneton",
     "speciesNames": {
       "ja-Hrkt": "レアコイル",
       "ko": "레어코일",
@@ -4437,6 +4552,7 @@
   },
   {
     "name": "farfetchd",
+    "species": "farfetchd",
     "speciesNames": {
       "ja-Hrkt": "カモネギ",
       "ko": "파오리",
@@ -4473,6 +4589,7 @@
   },
   {
     "name": "farfetchd-galar",
+    "species": "farfetchd",
     "speciesNames": {
       "ja-Hrkt": "カモネギ",
       "ko": "파오리",
@@ -4519,6 +4636,7 @@
   },
   {
     "name": "doduo",
+    "species": "doduo",
     "speciesNames": {
       "ja-Hrkt": "ドードー",
       "ko": "두두",
@@ -4555,6 +4673,7 @@
   },
   {
     "name": "dodrio",
+    "species": "dodrio",
     "speciesNames": {
       "ja-Hrkt": "ドードリオ",
       "ko": "두트리오",
@@ -4591,6 +4710,7 @@
   },
   {
     "name": "seel",
+    "species": "seel",
     "speciesNames": {
       "ja-Hrkt": "パウワウ",
       "ko": "쥬쥬",
@@ -4626,6 +4746,7 @@
   },
   {
     "name": "dewgong",
+    "species": "dewgong",
     "speciesNames": {
       "ja-Hrkt": "ジュゴン",
       "ko": "쥬레곤",
@@ -4662,6 +4783,7 @@
   },
   {
     "name": "grimer",
+    "species": "grimer",
     "speciesNames": {
       "ja-Hrkt": "ベトベター",
       "ko": "질퍽이",
@@ -4697,6 +4819,7 @@
   },
   {
     "name": "grimer-alola",
+    "species": "grimer",
     "speciesNames": {
       "ja-Hrkt": "ベトベター",
       "ko": "질퍽이",
@@ -4744,6 +4867,7 @@
   },
   {
     "name": "muk",
+    "species": "muk",
     "speciesNames": {
       "ja-Hrkt": "ベトベトン",
       "ko": "질뻐기",
@@ -4779,6 +4903,7 @@
   },
   {
     "name": "muk-alola",
+    "species": "muk",
     "speciesNames": {
       "ja-Hrkt": "ベトベトン",
       "ko": "질뻐기",
@@ -4826,6 +4951,7 @@
   },
   {
     "name": "shellder",
+    "species": "shellder",
     "speciesNames": {
       "ja-Hrkt": "シェルダー",
       "ko": "셀러",
@@ -4861,6 +4987,7 @@
   },
   {
     "name": "cloyster",
+    "species": "cloyster",
     "speciesNames": {
       "ja-Hrkt": "パルシェン",
       "ko": "파르셀",
@@ -4897,6 +5024,7 @@
   },
   {
     "name": "gastly",
+    "species": "gastly",
     "speciesNames": {
       "ja-Hrkt": "ゴース",
       "ko": "고오스",
@@ -4933,6 +5061,7 @@
   },
   {
     "name": "haunter",
+    "species": "haunter",
     "speciesNames": {
       "ja-Hrkt": "ゴースト",
       "ko": "고우스트",
@@ -4969,6 +5098,7 @@
   },
   {
     "name": "gengar",
+    "species": "gengar",
     "speciesNames": {
       "ja-Hrkt": "ゲンガー",
       "ko": "팬텀",
@@ -5005,6 +5135,7 @@
   },
   {
     "name": "gengar-mega",
+    "species": "gengar",
     "speciesNames": {
       "ja-Hrkt": "ゲンガー",
       "ko": "팬텀",
@@ -5052,6 +5183,7 @@
   },
   {
     "name": "onix",
+    "species": "onix",
     "speciesNames": {
       "ja-Hrkt": "イワーク",
       "ko": "롱스톤",
@@ -5088,6 +5220,7 @@
   },
   {
     "name": "drowzee",
+    "species": "drowzee",
     "speciesNames": {
       "ja-Hrkt": "スリープ",
       "ko": "슬리프",
@@ -5123,6 +5256,7 @@
   },
   {
     "name": "hypno",
+    "species": "hypno",
     "speciesNames": {
       "ja-Hrkt": "スリーパー",
       "ko": "슬리퍼",
@@ -5158,6 +5292,7 @@
   },
   {
     "name": "krabby",
+    "species": "krabby",
     "speciesNames": {
       "ja-Hrkt": "クラブ",
       "ko": "크랩",
@@ -5193,6 +5328,7 @@
   },
   {
     "name": "kingler",
+    "species": "kingler",
     "speciesNames": {
       "ja-Hrkt": "キングラー",
       "ko": "킹크랩",
@@ -5228,6 +5364,7 @@
   },
   {
     "name": "voltorb",
+    "species": "voltorb",
     "speciesNames": {
       "ja-Hrkt": "ビリリダマ",
       "ko": "찌리리공",
@@ -5263,6 +5400,7 @@
   },
   {
     "name": "voltorb-hisui",
+    "species": "voltorb",
     "speciesNames": {
       "ja-Hrkt": "ビリリダマ",
       "ko": "찌리리공",
@@ -5305,6 +5443,7 @@
   },
   {
     "name": "electrode",
+    "species": "electrode",
     "speciesNames": {
       "ja-Hrkt": "マルマイン",
       "ko": "붐볼",
@@ -5340,6 +5479,7 @@
   },
   {
     "name": "electrode-hisui",
+    "species": "electrode",
     "speciesNames": {
       "ja-Hrkt": "マルマイン",
       "ko": "붐볼",
@@ -5382,6 +5522,7 @@
   },
   {
     "name": "exeggcute",
+    "species": "exeggcute",
     "speciesNames": {
       "ja-Hrkt": "タマタマ",
       "ko": "아라리",
@@ -5418,6 +5559,7 @@
   },
   {
     "name": "exeggutor",
+    "species": "exeggutor",
     "speciesNames": {
       "ja-Hrkt": "ナッシー",
       "ko": "나시",
@@ -5454,6 +5596,7 @@
   },
   {
     "name": "exeggutor-alola",
+    "species": "exeggutor",
     "speciesNames": {
       "ja-Hrkt": "ナッシー",
       "ko": "나시",
@@ -5501,6 +5644,7 @@
   },
   {
     "name": "cubone",
+    "species": "cubone",
     "speciesNames": {
       "ja-Hrkt": "カラカラ",
       "ko": "탕구리",
@@ -5536,6 +5680,7 @@
   },
   {
     "name": "marowak",
+    "species": "marowak",
     "speciesNames": {
       "ja-Hrkt": "ガラガラ",
       "ko": "텅구리",
@@ -5571,6 +5716,7 @@
   },
   {
     "name": "marowak-alola",
+    "species": "marowak",
     "speciesNames": {
       "ja-Hrkt": "ガラガラ",
       "ko": "텅구리",
@@ -5618,6 +5764,7 @@
   },
   {
     "name": "hitmonlee",
+    "species": "hitmonlee",
     "speciesNames": {
       "ja-Hrkt": "サワムラー",
       "ko": "시라소몬",
@@ -5653,6 +5800,7 @@
   },
   {
     "name": "hitmonchan",
+    "species": "hitmonchan",
     "speciesNames": {
       "ja-Hrkt": "エビワラー",
       "ko": "홍수몬",
@@ -5688,6 +5836,7 @@
   },
   {
     "name": "lickitung",
+    "species": "lickitung",
     "speciesNames": {
       "ja-Hrkt": "ベロリンガ",
       "ko": "내루미",
@@ -5723,6 +5872,7 @@
   },
   {
     "name": "koffing",
+    "species": "koffing",
     "speciesNames": {
       "ja-Hrkt": "ドガース",
       "ko": "또가스",
@@ -5758,6 +5908,7 @@
   },
   {
     "name": "weezing",
+    "species": "weezing",
     "speciesNames": {
       "ja-Hrkt": "マタドガス",
       "ko": "또도가스",
@@ -5793,6 +5944,7 @@
   },
   {
     "name": "weezing-galar",
+    "species": "weezing",
     "speciesNames": {
       "ja-Hrkt": "マタドガス",
       "ko": "또도가스",
@@ -5840,6 +5992,7 @@
   },
   {
     "name": "rhyhorn",
+    "species": "rhyhorn",
     "speciesNames": {
       "ja-Hrkt": "サイホーン",
       "ko": "뿔카노",
@@ -5876,6 +6029,7 @@
   },
   {
     "name": "rhydon",
+    "species": "rhydon",
     "speciesNames": {
       "ja-Hrkt": "サイドン",
       "ko": "코뿌리",
@@ -5912,6 +6066,7 @@
   },
   {
     "name": "chansey",
+    "species": "chansey",
     "speciesNames": {
       "ja-Hrkt": "ラッキー",
       "ko": "럭키",
@@ -5947,6 +6102,7 @@
   },
   {
     "name": "tangela",
+    "species": "tangela",
     "speciesNames": {
       "ja-Hrkt": "モンジャラ",
       "ko": "덩쿠리",
@@ -5982,6 +6138,7 @@
   },
   {
     "name": "kangaskhan",
+    "species": "kangaskhan",
     "speciesNames": {
       "ja-Hrkt": "ガルーラ",
       "ko": "캥카",
@@ -6017,6 +6174,7 @@
   },
   {
     "name": "kangaskhan-mega",
+    "species": "kangaskhan",
     "speciesNames": {
       "ja-Hrkt": "ガルーラ",
       "ko": "캥카",
@@ -6063,6 +6221,7 @@
   },
   {
     "name": "horsea",
+    "species": "horsea",
     "speciesNames": {
       "ja-Hrkt": "タッツー",
       "ko": "쏘드라",
@@ -6098,6 +6257,7 @@
   },
   {
     "name": "seadra",
+    "species": "seadra",
     "speciesNames": {
       "ja-Hrkt": "シードラ",
       "ko": "시드라",
@@ -6133,6 +6293,7 @@
   },
   {
     "name": "goldeen",
+    "species": "goldeen",
     "speciesNames": {
       "ja-Hrkt": "トサキント",
       "ko": "콘치",
@@ -6168,6 +6329,7 @@
   },
   {
     "name": "seaking",
+    "species": "seaking",
     "speciesNames": {
       "ja-Hrkt": "アズマオウ",
       "ko": "왕콘치",
@@ -6203,6 +6365,7 @@
   },
   {
     "name": "staryu",
+    "species": "staryu",
     "speciesNames": {
       "ja-Hrkt": "ヒトデマン",
       "ko": "별가사리",
@@ -6238,6 +6401,7 @@
   },
   {
     "name": "starmie",
+    "species": "starmie",
     "speciesNames": {
       "ja-Hrkt": "スターミー",
       "ko": "아쿠스타",
@@ -6274,6 +6438,7 @@
   },
   {
     "name": "starmie-mega",
+    "species": "starmie",
     "speciesNames": {
       "ja-Hrkt": "スターミー",
       "ko": "아쿠스타",
@@ -6314,6 +6479,7 @@
   },
   {
     "name": "mr-mime",
+    "species": "mr-mime",
     "speciesNames": {
       "ja-Hrkt": "バリヤード",
       "ko": "마임맨",
@@ -6354,6 +6520,7 @@
   },
   {
     "name": "mr-mime-galar",
+    "species": "mr-mime",
     "speciesNames": {
       "ja-Hrkt": "バリヤード",
       "ko": "마임맨",
@@ -6401,6 +6568,7 @@
   },
   {
     "name": "scyther",
+    "species": "scyther",
     "speciesNames": {
       "ja-Hrkt": "ストライク",
       "ko": "스라크",
@@ -6437,6 +6605,7 @@
   },
   {
     "name": "jynx",
+    "species": "jynx",
     "speciesNames": {
       "ja-Hrkt": "ルージュラ",
       "ko": "루주라",
@@ -6473,6 +6642,7 @@
   },
   {
     "name": "electabuzz",
+    "species": "electabuzz",
     "speciesNames": {
       "ja-Hrkt": "エレブー",
       "ko": "에레브",
@@ -6508,6 +6678,7 @@
   },
   {
     "name": "magmar",
+    "species": "magmar",
     "speciesNames": {
       "ja-Hrkt": "ブーバー",
       "ko": "마그마",
@@ -6543,6 +6714,7 @@
   },
   {
     "name": "pinsir",
+    "species": "pinsir",
     "speciesNames": {
       "ja-Hrkt": "カイロス",
       "ko": "쁘사이저",
@@ -6578,6 +6750,7 @@
   },
   {
     "name": "pinsir-mega",
+    "species": "pinsir",
     "speciesNames": {
       "ja-Hrkt": "カイロス",
       "ko": "쁘사이저",
@@ -6625,6 +6798,7 @@
   },
   {
     "name": "tauros",
+    "species": "tauros",
     "speciesNames": {
       "ja-Hrkt": "ケンタロス",
       "ko": "켄타로스",
@@ -6660,6 +6834,7 @@
   },
   {
     "name": "tauros-paldea-combat-breed",
+    "species": "tauros",
     "speciesNames": {
       "ja-Hrkt": "ケンタロス",
       "ko": "켄타로스",
@@ -6700,6 +6875,7 @@
   },
   {
     "name": "tauros-paldea-blaze-breed",
+    "species": "tauros",
     "speciesNames": {
       "ja-Hrkt": "ケンタロス",
       "ko": "켄타로스",
@@ -6741,6 +6917,7 @@
   },
   {
     "name": "tauros-paldea-aqua-breed",
+    "species": "tauros",
     "speciesNames": {
       "ja-Hrkt": "ケンタロス",
       "ko": "켄타로스",
@@ -6782,6 +6959,7 @@
   },
   {
     "name": "magikarp",
+    "species": "magikarp",
     "speciesNames": {
       "ja-Hrkt": "コイキング",
       "ko": "잉어킹",
@@ -6817,6 +6995,7 @@
   },
   {
     "name": "gyarados",
+    "species": "gyarados",
     "speciesNames": {
       "ja-Hrkt": "ギャラドス",
       "ko": "갸라도스",
@@ -6853,6 +7032,7 @@
   },
   {
     "name": "gyarados-mega",
+    "species": "gyarados",
     "speciesNames": {
       "ja-Hrkt": "ギャラドス",
       "ko": "갸라도스",
@@ -6900,6 +7080,7 @@
   },
   {
     "name": "lapras",
+    "species": "lapras",
     "speciesNames": {
       "ja-Hrkt": "ラプラス",
       "ko": "라프라스",
@@ -6936,6 +7117,7 @@
   },
   {
     "name": "ditto",
+    "species": "ditto",
     "speciesNames": {
       "ja-Hrkt": "メタモン",
       "ko": "메타몽",
@@ -6971,6 +7153,7 @@
   },
   {
     "name": "eevee",
+    "species": "eevee",
     "speciesNames": {
       "ja-Hrkt": "イーブイ",
       "ko": "이브이",
@@ -7006,6 +7189,7 @@
   },
   {
     "name": "vaporeon",
+    "species": "vaporeon",
     "speciesNames": {
       "ja-Hrkt": "シャワーズ",
       "ko": "샤미드",
@@ -7041,6 +7225,7 @@
   },
   {
     "name": "jolteon",
+    "species": "jolteon",
     "speciesNames": {
       "ja-Hrkt": "サンダース",
       "ko": "쥬피썬더",
@@ -7076,6 +7261,7 @@
   },
   {
     "name": "flareon",
+    "species": "flareon",
     "speciesNames": {
       "ja-Hrkt": "ブースター",
       "ko": "부스터",
@@ -7111,6 +7297,7 @@
   },
   {
     "name": "porygon",
+    "species": "porygon",
     "speciesNames": {
       "ja-Hrkt": "ポリゴン",
       "ko": "폴리곤",
@@ -7146,6 +7333,7 @@
   },
   {
     "name": "omanyte",
+    "species": "omanyte",
     "speciesNames": {
       "ja-Hrkt": "オムナイト",
       "ko": "암나이트",
@@ -7182,6 +7370,7 @@
   },
   {
     "name": "omastar",
+    "species": "omastar",
     "speciesNames": {
       "ja-Hrkt": "オムスター",
       "ko": "암스타",
@@ -7218,6 +7407,7 @@
   },
   {
     "name": "kabuto",
+    "species": "kabuto",
     "speciesNames": {
       "ja-Hrkt": "カブト",
       "ko": "투구",
@@ -7254,6 +7444,7 @@
   },
   {
     "name": "kabutops",
+    "species": "kabutops",
     "speciesNames": {
       "ja-Hrkt": "カブトプス",
       "ko": "투구푸스",
@@ -7290,6 +7481,7 @@
   },
   {
     "name": "aerodactyl",
+    "species": "aerodactyl",
     "speciesNames": {
       "ja-Hrkt": "プテラ",
       "ko": "프테라",
@@ -7326,6 +7518,7 @@
   },
   {
     "name": "aerodactyl-mega",
+    "species": "aerodactyl",
     "speciesNames": {
       "ja-Hrkt": "プテラ",
       "ko": "프테라",
@@ -7373,6 +7566,7 @@
   },
   {
     "name": "snorlax",
+    "species": "snorlax",
     "speciesNames": {
       "ja-Hrkt": "カビゴン",
       "ko": "잠만보",
@@ -7408,6 +7602,7 @@
   },
   {
     "name": "articuno",
+    "species": "articuno",
     "speciesNames": {
       "ja-Hrkt": "フリーザー",
       "ko": "프리져",
@@ -7444,6 +7639,7 @@
   },
   {
     "name": "articuno-galar",
+    "species": "articuno",
     "speciesNames": {
       "ja-Hrkt": "フリーザー",
       "ko": "프리져",
@@ -7491,6 +7687,7 @@
   },
   {
     "name": "zapdos",
+    "species": "zapdos",
     "speciesNames": {
       "ja-Hrkt": "サンダー",
       "ko": "썬더",
@@ -7527,6 +7724,7 @@
   },
   {
     "name": "zapdos-galar",
+    "species": "zapdos",
     "speciesNames": {
       "ja-Hrkt": "サンダー",
       "ko": "썬더",
@@ -7574,6 +7772,7 @@
   },
   {
     "name": "moltres",
+    "species": "moltres",
     "speciesNames": {
       "ja-Hrkt": "ファイヤー",
       "ko": "파이어",
@@ -7610,6 +7809,7 @@
   },
   {
     "name": "moltres-galar",
+    "species": "moltres",
     "speciesNames": {
       "ja-Hrkt": "ファイヤー",
       "ko": "파이어",
@@ -7657,6 +7857,7 @@
   },
   {
     "name": "dratini",
+    "species": "dratini",
     "speciesNames": {
       "ja-Hrkt": "ミニリュウ",
       "ko": "미뇽",
@@ -7692,6 +7893,7 @@
   },
   {
     "name": "dragonair",
+    "species": "dragonair",
     "speciesNames": {
       "ja-Hrkt": "ハクリュー",
       "ko": "신뇽",
@@ -7727,6 +7929,7 @@
   },
   {
     "name": "dragonite",
+    "species": "dragonite",
     "speciesNames": {
       "ja-Hrkt": "カイリュー",
       "ko": "망나뇽",
@@ -7763,6 +7966,7 @@
   },
   {
     "name": "dragonite-mega",
+    "species": "dragonite",
     "speciesNames": {
       "ja-Hrkt": "カイリュー",
       "ko": "망나뇽",
@@ -7803,6 +8007,7 @@
   },
   {
     "name": "mewtwo",
+    "species": "mewtwo",
     "speciesNames": {
       "ja-Hrkt": "ミュウツー",
       "ko": "뮤츠",
@@ -7838,6 +8043,7 @@
   },
   {
     "name": "mewtwo-mega-x",
+    "species": "mewtwo",
     "speciesNames": {
       "ja-Hrkt": "ミュウツー",
       "ko": "뮤츠",
@@ -7885,6 +8091,7 @@
   },
   {
     "name": "mewtwo-mega-y",
+    "species": "mewtwo",
     "speciesNames": {
       "ja-Hrkt": "ミュウツー",
       "ko": "뮤츠",
@@ -7931,6 +8138,7 @@
   },
   {
     "name": "mew",
+    "species": "mew",
     "speciesNames": {
       "ja-Hrkt": "ミュウ",
       "ko": "뮤",
@@ -7966,6 +8174,7 @@
   },
   {
     "name": "chikorita",
+    "species": "chikorita",
     "speciesNames": {
       "ja-Hrkt": "チコリータ",
       "ko": "치코리타",
@@ -8001,6 +8210,7 @@
   },
   {
     "name": "bayleef",
+    "species": "bayleef",
     "speciesNames": {
       "ja-Hrkt": "ベイリーフ",
       "ko": "베이리프",
@@ -8036,6 +8246,7 @@
   },
   {
     "name": "meganium",
+    "species": "meganium",
     "speciesNames": {
       "ja-Hrkt": "メガニウム",
       "ko": "메가니움",
@@ -8071,6 +8282,7 @@
   },
   {
     "name": "meganium-mega",
+    "species": "meganium",
     "speciesNames": {
       "ja-Hrkt": "メガニウム",
       "ko": "메가니움",
@@ -8111,6 +8323,7 @@
   },
   {
     "name": "cyndaquil",
+    "species": "cyndaquil",
     "speciesNames": {
       "ja-Hrkt": "ヒノアラシ",
       "ko": "브케인",
@@ -8146,6 +8359,7 @@
   },
   {
     "name": "quilava",
+    "species": "quilava",
     "speciesNames": {
       "ja-Hrkt": "マグマラシ",
       "ko": "마그케인",
@@ -8181,6 +8395,7 @@
   },
   {
     "name": "typhlosion",
+    "species": "typhlosion",
     "speciesNames": {
       "ja-Hrkt": "バクフーン",
       "ko": "블레이범",
@@ -8216,6 +8431,7 @@
   },
   {
     "name": "typhlosion-hisui",
+    "species": "typhlosion",
     "speciesNames": {
       "ja-Hrkt": "バクフーン",
       "ko": "블레이범",
@@ -8258,6 +8474,7 @@
   },
   {
     "name": "totodile",
+    "species": "totodile",
     "speciesNames": {
       "ja-Hrkt": "ワニノコ",
       "ko": "리아코",
@@ -8293,6 +8510,7 @@
   },
   {
     "name": "croconaw",
+    "species": "croconaw",
     "speciesNames": {
       "ja-Hrkt": "アリゲイツ",
       "ko": "엘리게이",
@@ -8328,6 +8546,7 @@
   },
   {
     "name": "feraligatr",
+    "species": "feraligatr",
     "speciesNames": {
       "ja-Hrkt": "オーダイル",
       "ko": "장크로다일",
@@ -8363,6 +8582,7 @@
   },
   {
     "name": "feraligatr-mega",
+    "species": "feraligatr",
     "speciesNames": {
       "ja-Hrkt": "オーダイル",
       "ko": "장크로다일",
@@ -8403,6 +8623,7 @@
   },
   {
     "name": "sentret",
+    "species": "sentret",
     "speciesNames": {
       "ja-Hrkt": "オタチ",
       "ko": "꼬리선",
@@ -8438,6 +8659,7 @@
   },
   {
     "name": "furret",
+    "species": "furret",
     "speciesNames": {
       "ja-Hrkt": "オオタチ",
       "ko": "다꼬리",
@@ -8473,6 +8695,7 @@
   },
   {
     "name": "hoothoot",
+    "species": "hoothoot",
     "speciesNames": {
       "ja-Hrkt": "ホーホー",
       "ko": "부우부",
@@ -8509,6 +8732,7 @@
   },
   {
     "name": "noctowl",
+    "species": "noctowl",
     "speciesNames": {
       "ja-Hrkt": "ヨルノズク",
       "ko": "야부엉",
@@ -8545,6 +8769,7 @@
   },
   {
     "name": "ledyba",
+    "species": "ledyba",
     "speciesNames": {
       "ja-Hrkt": "レディバ",
       "ko": "레디바",
@@ -8581,6 +8806,7 @@
   },
   {
     "name": "ledian",
+    "species": "ledian",
     "speciesNames": {
       "ja-Hrkt": "レディアン",
       "ko": "레디안",
@@ -8617,6 +8843,7 @@
   },
   {
     "name": "spinarak",
+    "species": "spinarak",
     "speciesNames": {
       "ja-Hrkt": "イトマル",
       "ko": "페이검",
@@ -8653,6 +8880,7 @@
   },
   {
     "name": "ariados",
+    "species": "ariados",
     "speciesNames": {
       "ja-Hrkt": "アリアドス",
       "ko": "아리아도스",
@@ -8689,6 +8917,7 @@
   },
   {
     "name": "crobat",
+    "species": "crobat",
     "speciesNames": {
       "ja-Hrkt": "クロバット",
       "ko": "크로뱃",
@@ -8725,6 +8954,7 @@
   },
   {
     "name": "chinchou",
+    "species": "chinchou",
     "speciesNames": {
       "ko": "초라기",
       "ja-Hrkt": "チョンチー",
@@ -8761,6 +8991,7 @@
   },
   {
     "name": "lanturn",
+    "species": "lanturn",
     "speciesNames": {
       "ja-Hrkt": "ランターン",
       "ko": "랜턴",
@@ -8797,6 +9028,7 @@
   },
   {
     "name": "pichu",
+    "species": "pichu",
     "speciesNames": {
       "ja-Hrkt": "ピチュー",
       "ko": "피츄",
@@ -8832,6 +9064,7 @@
   },
   {
     "name": "cleffa",
+    "species": "cleffa",
     "speciesNames": {
       "ja-Hrkt": "ピィ",
       "ko": "삐",
@@ -8871,6 +9104,7 @@
   },
   {
     "name": "igglybuff",
+    "species": "igglybuff",
     "speciesNames": {
       "ja-Hrkt": "ププリン",
       "ko": "푸푸린",
@@ -8911,6 +9145,7 @@
   },
   {
     "name": "togepi",
+    "species": "togepi",
     "speciesNames": {
       "ja-Hrkt": "トゲピー",
       "ko": "토게피",
@@ -8950,6 +9185,7 @@
   },
   {
     "name": "togetic",
+    "species": "togetic",
     "speciesNames": {
       "ja-Hrkt": "トゲチック",
       "ko": "토게틱",
@@ -8991,6 +9227,7 @@
   },
   {
     "name": "natu",
+    "species": "natu",
     "speciesNames": {
       "ja-Hrkt": "ネイティ",
       "ko": "네이티",
@@ -9027,6 +9264,7 @@
   },
   {
     "name": "xatu",
+    "species": "xatu",
     "speciesNames": {
       "ja-Hrkt": "ネイティオ",
       "ko": "네이티오",
@@ -9063,6 +9301,7 @@
   },
   {
     "name": "mareep",
+    "species": "mareep",
     "speciesNames": {
       "ja-Hrkt": "メリープ",
       "ko": "메리프",
@@ -9098,6 +9337,7 @@
   },
   {
     "name": "flaaffy",
+    "species": "flaaffy",
     "speciesNames": {
       "ja-Hrkt": "モココ",
       "ko": "보송송",
@@ -9133,6 +9373,7 @@
   },
   {
     "name": "ampharos",
+    "species": "ampharos",
     "speciesNames": {
       "ja-Hrkt": "デンリュウ",
       "ko": "전룡",
@@ -9168,6 +9409,7 @@
   },
   {
     "name": "ampharos-mega",
+    "species": "ampharos",
     "speciesNames": {
       "ja-Hrkt": "デンリュウ",
       "ko": "전룡",
@@ -9215,6 +9457,7 @@
   },
   {
     "name": "bellossom",
+    "species": "bellossom",
     "speciesNames": {
       "ja-Hrkt": "キレイハナ",
       "ko": "아르코",
@@ -9250,6 +9493,7 @@
   },
   {
     "name": "marill",
+    "species": "marill",
     "speciesNames": {
       "ja-Hrkt": "マリル",
       "ko": "마릴",
@@ -9290,6 +9534,7 @@
   },
   {
     "name": "azumarill",
+    "species": "azumarill",
     "speciesNames": {
       "ja-Hrkt": "マリルリ",
       "ko": "마릴리",
@@ -9330,6 +9575,7 @@
   },
   {
     "name": "sudowoodo",
+    "species": "sudowoodo",
     "speciesNames": {
       "ja-Hrkt": "ウソッキー",
       "ko": "꼬지모",
@@ -9365,6 +9611,7 @@
   },
   {
     "name": "politoed",
+    "species": "politoed",
     "speciesNames": {
       "ja-Hrkt": "ニョロトノ",
       "ko": "왕구리",
@@ -9400,6 +9647,7 @@
   },
   {
     "name": "hoppip",
+    "species": "hoppip",
     "speciesNames": {
       "ja-Hrkt": "ハネッコ",
       "ko": "통통코",
@@ -9436,6 +9684,7 @@
   },
   {
     "name": "skiploom",
+    "species": "skiploom",
     "speciesNames": {
       "ja-Hrkt": "ポポッコ",
       "ko": "두코",
@@ -9472,6 +9721,7 @@
   },
   {
     "name": "jumpluff",
+    "species": "jumpluff",
     "speciesNames": {
       "ja-Hrkt": "ワタッコ",
       "ko": "솜솜코",
@@ -9508,6 +9758,7 @@
   },
   {
     "name": "aipom",
+    "species": "aipom",
     "speciesNames": {
       "ja-Hrkt": "エイパム",
       "ko": "에이팜",
@@ -9543,6 +9794,7 @@
   },
   {
     "name": "sunkern",
+    "species": "sunkern",
     "speciesNames": {
       "ja-Hrkt": "ヒマナッツ",
       "ko": "해너츠",
@@ -9578,6 +9830,7 @@
   },
   {
     "name": "sunflora",
+    "species": "sunflora",
     "speciesNames": {
       "ja-Hrkt": "キマワリ",
       "ko": "해루미",
@@ -9613,6 +9866,7 @@
   },
   {
     "name": "yanma",
+    "species": "yanma",
     "speciesNames": {
       "ja-Hrkt": "ヤンヤンマ",
       "ko": "왕자리",
@@ -9649,6 +9903,7 @@
   },
   {
     "name": "wooper",
+    "species": "wooper",
     "speciesNames": {
       "ja-Hrkt": "ウパー",
       "ko": "우파",
@@ -9685,6 +9940,7 @@
   },
   {
     "name": "wooper-paldea",
+    "species": "wooper",
     "speciesNames": {
       "ja-Hrkt": "ウパー",
       "ko": "우파",
@@ -9726,6 +9982,7 @@
   },
   {
     "name": "quagsire",
+    "species": "quagsire",
     "speciesNames": {
       "ja-Hrkt": "ヌオー",
       "ko": "누오",
@@ -9762,6 +10019,7 @@
   },
   {
     "name": "espeon",
+    "species": "espeon",
     "speciesNames": {
       "ja-Hrkt": "エーフィ",
       "ko": "에브이",
@@ -9797,6 +10055,7 @@
   },
   {
     "name": "umbreon",
+    "species": "umbreon",
     "speciesNames": {
       "ja-Hrkt": "ブラッキー",
       "ko": "블래키",
@@ -9832,6 +10091,7 @@
   },
   {
     "name": "murkrow",
+    "species": "murkrow",
     "speciesNames": {
       "ja-Hrkt": "ヤミカラス",
       "ko": "니로우",
@@ -9868,6 +10128,7 @@
   },
   {
     "name": "slowking",
+    "species": "slowking",
     "speciesNames": {
       "ja-Hrkt": "ヤドキング",
       "ko": "야도킹",
@@ -9904,6 +10165,7 @@
   },
   {
     "name": "slowking-galar",
+    "species": "slowking",
     "speciesNames": {
       "ja-Hrkt": "ヤドキング",
       "ko": "야도킹",
@@ -9951,6 +10213,7 @@
   },
   {
     "name": "misdreavus",
+    "species": "misdreavus",
     "speciesNames": {
       "ja-Hrkt": "ムウマ",
       "ko": "무우마",
@@ -9986,6 +10249,7 @@
   },
   {
     "name": "unown",
+    "species": "unown",
     "speciesNames": {
       "ja-Hrkt": "アンノーン",
       "ko": "안농",
@@ -10030,6 +10294,7 @@
   },
   {
     "name": "wobbuffet",
+    "species": "wobbuffet",
     "speciesNames": {
       "ja-Hrkt": "ソーナンス",
       "ko": "마자용",
@@ -10065,6 +10330,7 @@
   },
   {
     "name": "girafarig",
+    "species": "girafarig",
     "speciesNames": {
       "ja-Hrkt": "キリンリキ",
       "ko": "키링키",
@@ -10101,6 +10367,7 @@
   },
   {
     "name": "pineco",
+    "species": "pineco",
     "speciesNames": {
       "ja-Hrkt": "クヌギダマ",
       "ko": "피콘",
@@ -10136,6 +10403,7 @@
   },
   {
     "name": "forretress",
+    "species": "forretress",
     "speciesNames": {
       "ja-Hrkt": "フォレトス",
       "ko": "쏘콘",
@@ -10172,6 +10440,7 @@
   },
   {
     "name": "dunsparce",
+    "species": "dunsparce",
     "speciesNames": {
       "ja-Hrkt": "ノコッチ",
       "ko": "노고치",
@@ -10207,6 +10476,7 @@
   },
   {
     "name": "gligar",
+    "species": "gligar",
     "speciesNames": {
       "ja-Hrkt": "グライガー",
       "ko": "글라이거",
@@ -10243,6 +10513,7 @@
   },
   {
     "name": "steelix",
+    "species": "steelix",
     "speciesNames": {
       "ja-Hrkt": "ハガネール",
       "ko": "강철톤",
@@ -10279,6 +10550,7 @@
   },
   {
     "name": "steelix-mega",
+    "species": "steelix",
     "speciesNames": {
       "ja-Hrkt": "ハガネール",
       "ko": "강철톤",
@@ -10326,6 +10598,7 @@
   },
   {
     "name": "snubbull",
+    "species": "snubbull",
     "speciesNames": {
       "ja-Hrkt": "ブルー",
       "ko": "블루",
@@ -10365,6 +10638,7 @@
   },
   {
     "name": "granbull",
+    "species": "granbull",
     "speciesNames": {
       "ja-Hrkt": "グランブル",
       "ko": "그랑블루",
@@ -10404,6 +10678,7 @@
   },
   {
     "name": "qwilfish",
+    "species": "qwilfish",
     "speciesNames": {
       "ja-Hrkt": "ハリーセン",
       "ko": "침바루",
@@ -10440,6 +10715,7 @@
   },
   {
     "name": "qwilfish-hisui",
+    "species": "qwilfish",
     "speciesNames": {
       "ja-Hrkt": "ハリーセン",
       "ko": "침바루",
@@ -10482,6 +10758,7 @@
   },
   {
     "name": "scizor",
+    "species": "scizor",
     "speciesNames": {
       "ja-Hrkt": "ハッサム",
       "ko": "핫삼",
@@ -10518,6 +10795,7 @@
   },
   {
     "name": "scizor-mega",
+    "species": "scizor",
     "speciesNames": {
       "ja-Hrkt": "ハッサム",
       "ko": "핫삼",
@@ -10565,6 +10843,7 @@
   },
   {
     "name": "shuckle",
+    "species": "shuckle",
     "speciesNames": {
       "ja-Hrkt": "ツボツボ",
       "ko": "단단지",
@@ -10601,6 +10880,7 @@
   },
   {
     "name": "heracross",
+    "species": "heracross",
     "speciesNames": {
       "ja-Hrkt": "ヘラクロス",
       "ko": "헤라크로스",
@@ -10637,6 +10917,7 @@
   },
   {
     "name": "heracross-mega",
+    "species": "heracross",
     "speciesNames": {
       "ja-Hrkt": "ヘラクロス",
       "ko": "헤라크로스",
@@ -10684,6 +10965,7 @@
   },
   {
     "name": "sneasel",
+    "species": "sneasel",
     "speciesNames": {
       "ja-Hrkt": "ニューラ",
       "ko": "포푸니",
@@ -10720,6 +11002,7 @@
   },
   {
     "name": "sneasel-hisui",
+    "species": "sneasel",
     "speciesNames": {
       "ja-Hrkt": "ニューラ",
       "ko": "포푸니",
@@ -10762,6 +11045,7 @@
   },
   {
     "name": "teddiursa",
+    "species": "teddiursa",
     "speciesNames": {
       "ja-Hrkt": "ヒメグマ",
       "ko": "깜지곰",
@@ -10797,6 +11081,7 @@
   },
   {
     "name": "ursaring",
+    "species": "ursaring",
     "speciesNames": {
       "ja-Hrkt": "リングマ",
       "ko": "링곰",
@@ -10832,6 +11117,7 @@
   },
   {
     "name": "slugma",
+    "species": "slugma",
     "speciesNames": {
       "ja-Hrkt": "マグマッグ",
       "ko": "마그마그",
@@ -10867,6 +11153,7 @@
   },
   {
     "name": "magcargo",
+    "species": "magcargo",
     "speciesNames": {
       "ja-Hrkt": "マグカルゴ",
       "ko": "마그카르고",
@@ -10903,6 +11190,7 @@
   },
   {
     "name": "swinub",
+    "species": "swinub",
     "speciesNames": {
       "ja-Hrkt": "ウリムー",
       "ko": "꾸꾸리",
@@ -10939,6 +11227,7 @@
   },
   {
     "name": "piloswine",
+    "species": "piloswine",
     "speciesNames": {
       "ja-Hrkt": "イノムー",
       "ko": "메꾸리",
@@ -10975,6 +11264,7 @@
   },
   {
     "name": "corsola",
+    "species": "corsola",
     "speciesNames": {
       "ja-Hrkt": "サニーゴ",
       "ko": "코산호",
@@ -11011,6 +11301,7 @@
   },
   {
     "name": "corsola-galar",
+    "species": "corsola",
     "speciesNames": {
       "ja-Hrkt": "サニーゴ",
       "ko": "코산호",
@@ -11057,6 +11348,7 @@
   },
   {
     "name": "remoraid",
+    "species": "remoraid",
     "speciesNames": {
       "ja-Hrkt": "テッポウオ",
       "ko": "총어",
@@ -11092,6 +11384,7 @@
   },
   {
     "name": "octillery",
+    "species": "octillery",
     "speciesNames": {
       "ja-Hrkt": "オクタン",
       "ko": "대포무노",
@@ -11127,6 +11420,7 @@
   },
   {
     "name": "delibird",
+    "species": "delibird",
     "speciesNames": {
       "ja-Hrkt": "デリバード",
       "ko": "딜리버드",
@@ -11163,6 +11457,7 @@
   },
   {
     "name": "mantine",
+    "species": "mantine",
     "speciesNames": {
       "ja-Hrkt": "マンタイン",
       "ko": "만타인",
@@ -11199,6 +11494,7 @@
   },
   {
     "name": "skarmory",
+    "species": "skarmory",
     "speciesNames": {
       "ja-Hrkt": "エアームド",
       "ko": "무장조",
@@ -11235,6 +11531,7 @@
   },
   {
     "name": "skarmory-mega",
+    "species": "skarmory",
     "speciesNames": {
       "ja-Hrkt": "エアームド",
       "ko": "무장조",
@@ -11275,6 +11572,7 @@
   },
   {
     "name": "houndour",
+    "species": "houndour",
     "speciesNames": {
       "ja-Hrkt": "デルビル",
       "ko": "델빌",
@@ -11311,6 +11609,7 @@
   },
   {
     "name": "houndoom",
+    "species": "houndoom",
     "speciesNames": {
       "ja-Hrkt": "ヘルガー",
       "ko": "헬가",
@@ -11347,6 +11646,7 @@
   },
   {
     "name": "houndoom-mega",
+    "species": "houndoom",
     "speciesNames": {
       "ja-Hrkt": "ヘルガー",
       "ko": "헬가",
@@ -11394,6 +11694,7 @@
   },
   {
     "name": "kingdra",
+    "species": "kingdra",
     "speciesNames": {
       "ja-Hrkt": "キングドラ",
       "ko": "킹드라",
@@ -11430,6 +11731,7 @@
   },
   {
     "name": "phanpy",
+    "species": "phanpy",
     "speciesNames": {
       "ja-Hrkt": "ゴマゾウ",
       "ko": "코코리",
@@ -11465,6 +11767,7 @@
   },
   {
     "name": "donphan",
+    "species": "donphan",
     "speciesNames": {
       "ja-Hrkt": "ドンファン",
       "ko": "코리갑",
@@ -11500,6 +11803,7 @@
   },
   {
     "name": "porygon2",
+    "species": "porygon2",
     "speciesNames": {
       "ja-Hrkt": "ポリゴン２",
       "ko": "폴리곤2",
@@ -11535,6 +11839,7 @@
   },
   {
     "name": "stantler",
+    "species": "stantler",
     "speciesNames": {
       "ja-Hrkt": "オドシシ",
       "ko": "노라키",
@@ -11570,6 +11875,7 @@
   },
   {
     "name": "smeargle",
+    "species": "smeargle",
     "speciesNames": {
       "ja-Hrkt": "ドーブル",
       "ko": "루브도",
@@ -11605,6 +11911,7 @@
   },
   {
     "name": "tyrogue",
+    "species": "tyrogue",
     "speciesNames": {
       "ja-Hrkt": "バルキー",
       "ko": "배루키",
@@ -11640,6 +11947,7 @@
   },
   {
     "name": "hitmontop",
+    "species": "hitmontop",
     "speciesNames": {
       "ja-Hrkt": "カポエラー",
       "ko": "카포에라",
@@ -11675,6 +11983,7 @@
   },
   {
     "name": "smoochum",
+    "species": "smoochum",
     "speciesNames": {
       "ja-Hrkt": "ムチュール",
       "ko": "뽀뽀라",
@@ -11711,6 +12020,7 @@
   },
   {
     "name": "elekid",
+    "species": "elekid",
     "speciesNames": {
       "ja-Hrkt": "エレキッド",
       "ko": "에레키드",
@@ -11746,6 +12056,7 @@
   },
   {
     "name": "magby",
+    "species": "magby",
     "speciesNames": {
       "ja-Hrkt": "ブビィ",
       "ko": "마그비",
@@ -11781,6 +12092,7 @@
   },
   {
     "name": "miltank",
+    "species": "miltank",
     "speciesNames": {
       "ja-Hrkt": "ミルタンク",
       "ko": "밀탱크",
@@ -11816,6 +12128,7 @@
   },
   {
     "name": "blissey",
+    "species": "blissey",
     "speciesNames": {
       "ja-Hrkt": "ハピナス",
       "ko": "해피너스",
@@ -11851,6 +12164,7 @@
   },
   {
     "name": "raikou",
+    "species": "raikou",
     "speciesNames": {
       "ja-Hrkt": "ライコウ",
       "ko": "라이코",
@@ -11886,6 +12200,7 @@
   },
   {
     "name": "entei",
+    "species": "entei",
     "speciesNames": {
       "ja-Hrkt": "エンテイ",
       "ko": "앤테이",
@@ -11921,6 +12236,7 @@
   },
   {
     "name": "suicune",
+    "species": "suicune",
     "speciesNames": {
       "ja-Hrkt": "スイクン",
       "ko": "스이쿤",
@@ -11956,6 +12272,7 @@
   },
   {
     "name": "larvitar",
+    "species": "larvitar",
     "speciesNames": {
       "ja-Hrkt": "ヨーギラス",
       "ko": "애버라스",
@@ -11992,6 +12309,7 @@
   },
   {
     "name": "pupitar",
+    "species": "pupitar",
     "speciesNames": {
       "ja-Hrkt": "サナギラス",
       "ko": "데기라스",
@@ -12028,6 +12346,7 @@
   },
   {
     "name": "tyranitar",
+    "species": "tyranitar",
     "speciesNames": {
       "ja-Hrkt": "バンギラス",
       "ko": "마기라스",
@@ -12064,6 +12383,7 @@
   },
   {
     "name": "tyranitar-mega",
+    "species": "tyranitar",
     "speciesNames": {
       "ja-Hrkt": "バンギラス",
       "ko": "마기라스",
@@ -12111,6 +12431,7 @@
   },
   {
     "name": "lugia",
+    "species": "lugia",
     "speciesNames": {
       "ja-Hrkt": "ルギア",
       "ko": "루기아",
@@ -12147,6 +12468,7 @@
   },
   {
     "name": "ho-oh",
+    "species": "ho-oh",
     "speciesNames": {
       "ja-Hrkt": "ホウオウ",
       "ko": "칠색조",
@@ -12183,6 +12505,7 @@
   },
   {
     "name": "celebi",
+    "species": "celebi",
     "speciesNames": {
       "ja-Hrkt": "セレビィ",
       "ko": "세레비",
@@ -12219,6 +12542,7 @@
   },
   {
     "name": "treecko",
+    "species": "treecko",
     "speciesNames": {
       "ja-Hrkt": "キモリ",
       "ko": "나무지기",
@@ -12254,6 +12578,7 @@
   },
   {
     "name": "grovyle",
+    "species": "grovyle",
     "speciesNames": {
       "ja-Hrkt": "ジュプトル",
       "ko": "나무돌이",
@@ -12289,6 +12614,7 @@
   },
   {
     "name": "sceptile",
+    "species": "sceptile",
     "speciesNames": {
       "ja-Hrkt": "ジュカイン",
       "ko": "나무킹",
@@ -12324,6 +12650,7 @@
   },
   {
     "name": "sceptile-mega",
+    "species": "sceptile",
     "speciesNames": {
       "ja-Hrkt": "ジュカイン",
       "ko": "나무킹",
@@ -12371,6 +12698,7 @@
   },
   {
     "name": "torchic",
+    "species": "torchic",
     "speciesNames": {
       "ja-Hrkt": "アチャモ",
       "ko": "아차모",
@@ -12406,6 +12734,7 @@
   },
   {
     "name": "combusken",
+    "species": "combusken",
     "speciesNames": {
       "ja-Hrkt": "ワカシャモ",
       "ko": "영치코",
@@ -12442,6 +12771,7 @@
   },
   {
     "name": "blaziken",
+    "species": "blaziken",
     "speciesNames": {
       "ja-Hrkt": "バシャーモ",
       "ko": "번치코",
@@ -12478,6 +12808,7 @@
   },
   {
     "name": "blaziken-mega",
+    "species": "blaziken",
     "speciesNames": {
       "ja-Hrkt": "バシャーモ",
       "ko": "번치코",
@@ -12525,6 +12856,7 @@
   },
   {
     "name": "mudkip",
+    "species": "mudkip",
     "speciesNames": {
       "ja-Hrkt": "ミズゴロウ",
       "ko": "물짱이",
@@ -12560,6 +12892,7 @@
   },
   {
     "name": "marshtomp",
+    "species": "marshtomp",
     "speciesNames": {
       "ja-Hrkt": "ヌマクロー",
       "ko": "늪짱이",
@@ -12596,6 +12929,7 @@
   },
   {
     "name": "swampert",
+    "species": "swampert",
     "speciesNames": {
       "ja-Hrkt": "ラグラージ",
       "ko": "대짱이",
@@ -12632,6 +12966,7 @@
   },
   {
     "name": "swampert-mega",
+    "species": "swampert",
     "speciesNames": {
       "ja-Hrkt": "ラグラージ",
       "ko": "대짱이",
@@ -12679,6 +13014,7 @@
   },
   {
     "name": "poochyena",
+    "species": "poochyena",
     "speciesNames": {
       "ja-Hrkt": "ポチエナ",
       "ko": "포챠나",
@@ -12714,6 +13050,7 @@
   },
   {
     "name": "mightyena",
+    "species": "mightyena",
     "speciesNames": {
       "ja-Hrkt": "グラエナ",
       "ko": "그라에나",
@@ -12749,6 +13086,7 @@
   },
   {
     "name": "zigzagoon",
+    "species": "zigzagoon",
     "speciesNames": {
       "ja-Hrkt": "ジグザグマ",
       "ko": "지그제구리",
@@ -12784,6 +13122,7 @@
   },
   {
     "name": "zigzagoon-galar",
+    "species": "zigzagoon",
     "speciesNames": {
       "ja-Hrkt": "ジグザグマ",
       "ko": "지그제구리",
@@ -12831,6 +13170,7 @@
   },
   {
     "name": "linoone",
+    "species": "linoone",
     "speciesNames": {
       "ja-Hrkt": "マッスグマ",
       "ko": "직구리",
@@ -12866,6 +13206,7 @@
   },
   {
     "name": "linoone-galar",
+    "species": "linoone",
     "speciesNames": {
       "ja-Hrkt": "マッスグマ",
       "ko": "직구리",
@@ -12913,6 +13254,7 @@
   },
   {
     "name": "wurmple",
+    "species": "wurmple",
     "speciesNames": {
       "ja-Hrkt": "ケムッソ",
       "ko": "개무소",
@@ -12948,6 +13290,7 @@
   },
   {
     "name": "silcoon",
+    "species": "silcoon",
     "speciesNames": {
       "ja-Hrkt": "カラサリス",
       "ko": "실쿤",
@@ -12983,6 +13326,7 @@
   },
   {
     "name": "beautifly",
+    "species": "beautifly",
     "speciesNames": {
       "ja-Hrkt": "アゲハント",
       "ko": "뷰티플라이",
@@ -13019,6 +13363,7 @@
   },
   {
     "name": "cascoon",
+    "species": "cascoon",
     "speciesNames": {
       "ja-Hrkt": "マユルド",
       "ko": "카스쿤",
@@ -13054,6 +13399,7 @@
   },
   {
     "name": "dustox",
+    "species": "dustox",
     "speciesNames": {
       "ja-Hrkt": "ドクケイル",
       "ko": "독케일",
@@ -13090,6 +13436,7 @@
   },
   {
     "name": "lotad",
+    "species": "lotad",
     "speciesNames": {
       "ja-Hrkt": "ハスボー",
       "ko": "연꽃몬",
@@ -13126,6 +13473,7 @@
   },
   {
     "name": "lombre",
+    "species": "lombre",
     "speciesNames": {
       "ja-Hrkt": "ハスブレロ",
       "ko": "로토스",
@@ -13162,6 +13510,7 @@
   },
   {
     "name": "ludicolo",
+    "species": "ludicolo",
     "speciesNames": {
       "ja-Hrkt": "ルンパッパ",
       "ko": "로파파",
@@ -13198,6 +13547,7 @@
   },
   {
     "name": "seedot",
+    "species": "seedot",
     "speciesNames": {
       "ja-Hrkt": "タネボー",
       "ko": "도토링",
@@ -13233,6 +13583,7 @@
   },
   {
     "name": "nuzleaf",
+    "species": "nuzleaf",
     "speciesNames": {
       "ja-Hrkt": "コノハナ",
       "ko": "잎새코",
@@ -13269,6 +13620,7 @@
   },
   {
     "name": "shiftry",
+    "species": "shiftry",
     "speciesNames": {
       "ja-Hrkt": "ダーテング",
       "ko": "다탱구",
@@ -13305,6 +13657,7 @@
   },
   {
     "name": "taillow",
+    "species": "taillow",
     "speciesNames": {
       "ja-Hrkt": "スバメ",
       "ko": "테일로",
@@ -13341,6 +13694,7 @@
   },
   {
     "name": "swellow",
+    "species": "swellow",
     "speciesNames": {
       "ja-Hrkt": "オオスバメ",
       "ko": "스왈로",
@@ -13377,6 +13731,7 @@
   },
   {
     "name": "wingull",
+    "species": "wingull",
     "speciesNames": {
       "ja-Hrkt": "キャモメ",
       "ko": "갈모매",
@@ -13413,6 +13768,7 @@
   },
   {
     "name": "pelipper",
+    "species": "pelipper",
     "speciesNames": {
       "ja-Hrkt": "ペリッパー",
       "ko": "패리퍼",
@@ -13449,6 +13805,7 @@
   },
   {
     "name": "ralts",
+    "species": "ralts",
     "speciesNames": {
       "ja-Hrkt": "ラルトス",
       "ko": "랄토스",
@@ -13489,6 +13846,7 @@
   },
   {
     "name": "kirlia",
+    "species": "kirlia",
     "speciesNames": {
       "ja-Hrkt": "キルリア",
       "ko": "킬리아",
@@ -13529,6 +13887,7 @@
   },
   {
     "name": "gardevoir",
+    "species": "gardevoir",
     "speciesNames": {
       "ja-Hrkt": "サーナイト",
       "ko": "가디안",
@@ -13569,6 +13928,7 @@
   },
   {
     "name": "gardevoir-mega",
+    "species": "gardevoir",
     "speciesNames": {
       "ja-Hrkt": "サーナイト",
       "ko": "가디안",
@@ -13616,6 +13976,7 @@
   },
   {
     "name": "surskit",
+    "species": "surskit",
     "speciesNames": {
       "ja-Hrkt": "アメタマ",
       "ko": "비구술",
@@ -13652,6 +14013,7 @@
   },
   {
     "name": "masquerain",
+    "species": "masquerain",
     "speciesNames": {
       "ja-Hrkt": "アメモース",
       "ko": "비나방",
@@ -13688,6 +14050,7 @@
   },
   {
     "name": "shroomish",
+    "species": "shroomish",
     "speciesNames": {
       "ja-Hrkt": "キノココ",
       "ko": "버섯꼬",
@@ -13723,6 +14086,7 @@
   },
   {
     "name": "breloom",
+    "species": "breloom",
     "speciesNames": {
       "ja-Hrkt": "キノガッサ",
       "ko": "버섯모",
@@ -13759,6 +14123,7 @@
   },
   {
     "name": "slakoth",
+    "species": "slakoth",
     "speciesNames": {
       "ja-Hrkt": "ナマケロ",
       "ko": "게을로",
@@ -13794,6 +14159,7 @@
   },
   {
     "name": "vigoroth",
+    "species": "vigoroth",
     "speciesNames": {
       "ja-Hrkt": "ヤルキモノ",
       "ko": "발바로",
@@ -13829,6 +14195,7 @@
   },
   {
     "name": "slaking",
+    "species": "slaking",
     "speciesNames": {
       "ja-Hrkt": "ケッキング",
       "ko": "게을킹",
@@ -13864,6 +14231,7 @@
   },
   {
     "name": "nincada",
+    "species": "nincada",
     "speciesNames": {
       "ja-Hrkt": "ツチニン",
       "ko": "토중몬",
@@ -13900,6 +14268,7 @@
   },
   {
     "name": "ninjask",
+    "species": "ninjask",
     "speciesNames": {
       "ja-Hrkt": "テッカニン",
       "ko": "아이스크",
@@ -13936,6 +14305,7 @@
   },
   {
     "name": "shedinja",
+    "species": "shedinja",
     "speciesNames": {
       "ja-Hrkt": "ヌケニン",
       "ko": "껍질몬",
@@ -13972,6 +14342,7 @@
   },
   {
     "name": "whismur",
+    "species": "whismur",
     "speciesNames": {
       "ja-Hrkt": "ゴニョニョ",
       "ko": "소곤룡",
@@ -14007,6 +14378,7 @@
   },
   {
     "name": "loudred",
+    "species": "loudred",
     "speciesNames": {
       "ja-Hrkt": "ドゴーム",
       "ko": "노공룡",
@@ -14042,6 +14414,7 @@
   },
   {
     "name": "exploud",
+    "species": "exploud",
     "speciesNames": {
       "ja-Hrkt": "バクオング",
       "ko": "폭음룡",
@@ -14077,6 +14450,7 @@
   },
   {
     "name": "makuhita",
+    "species": "makuhita",
     "speciesNames": {
       "ja-Hrkt": "マクノシタ",
       "ko": "마크탕",
@@ -14112,6 +14486,7 @@
   },
   {
     "name": "hariyama",
+    "species": "hariyama",
     "speciesNames": {
       "ja-Hrkt": "ハリテヤマ",
       "ko": "하리뭉",
@@ -14147,6 +14522,7 @@
   },
   {
     "name": "azurill",
+    "species": "azurill",
     "speciesNames": {
       "ja-Hrkt": "ルリリ",
       "ko": "루리리",
@@ -14187,6 +14563,7 @@
   },
   {
     "name": "nosepass",
+    "species": "nosepass",
     "speciesNames": {
       "ja-Hrkt": "ノズパス",
       "ko": "코코파스",
@@ -14222,6 +14599,7 @@
   },
   {
     "name": "skitty",
+    "species": "skitty",
     "speciesNames": {
       "ja-Hrkt": "エネコ",
       "ko": "에나비",
@@ -14257,6 +14635,7 @@
   },
   {
     "name": "delcatty",
+    "species": "delcatty",
     "speciesNames": {
       "ja-Hrkt": "エネコロロ",
       "ko": "델케티",
@@ -14292,6 +14671,7 @@
   },
   {
     "name": "sableye",
+    "species": "sableye",
     "speciesNames": {
       "ja-Hrkt": "ヤミラミ",
       "ko": "깜까미",
@@ -14328,6 +14708,7 @@
   },
   {
     "name": "sableye-mega",
+    "species": "sableye",
     "speciesNames": {
       "ja-Hrkt": "ヤミラミ",
       "ko": "깜까미",
@@ -14375,6 +14756,7 @@
   },
   {
     "name": "mawile",
+    "species": "mawile",
     "speciesNames": {
       "ja-Hrkt": "クチート",
       "ko": "입치트",
@@ -14415,6 +14797,7 @@
   },
   {
     "name": "mawile-mega",
+    "species": "mawile",
     "speciesNames": {
       "ja-Hrkt": "クチート",
       "ko": "입치트",
@@ -14462,6 +14845,7 @@
   },
   {
     "name": "aron",
+    "species": "aron",
     "speciesNames": {
       "ja-Hrkt": "ココドラ",
       "ko": "가보리",
@@ -14498,6 +14882,7 @@
   },
   {
     "name": "lairon",
+    "species": "lairon",
     "speciesNames": {
       "ja-Hrkt": "コドラ",
       "ko": "갱도라",
@@ -14534,6 +14919,7 @@
   },
   {
     "name": "aggron",
+    "species": "aggron",
     "speciesNames": {
       "ja-Hrkt": "ボスゴドラ",
       "ko": "보스로라",
@@ -14570,6 +14956,7 @@
   },
   {
     "name": "aggron-mega",
+    "species": "aggron",
     "speciesNames": {
       "ja-Hrkt": "ボスゴドラ",
       "ko": "보스로라",
@@ -14616,6 +15003,7 @@
   },
   {
     "name": "meditite",
+    "species": "meditite",
     "speciesNames": {
       "ja-Hrkt": "アサナン",
       "ko": "요가랑",
@@ -14652,6 +15040,7 @@
   },
   {
     "name": "medicham",
+    "species": "medicham",
     "speciesNames": {
       "ja-Hrkt": "チャーレム",
       "ko": "요가램",
@@ -14688,6 +15077,7 @@
   },
   {
     "name": "medicham-mega",
+    "species": "medicham",
     "speciesNames": {
       "ja-Hrkt": "チャーレム",
       "ko": "요가램",
@@ -14735,6 +15125,7 @@
   },
   {
     "name": "electrike",
+    "species": "electrike",
     "speciesNames": {
       "ja-Hrkt": "ラクライ",
       "ko": "썬더라이",
@@ -14770,6 +15161,7 @@
   },
   {
     "name": "manectric",
+    "species": "manectric",
     "speciesNames": {
       "ja-Hrkt": "ライボルト",
       "ko": "썬더볼트",
@@ -14805,6 +15197,7 @@
   },
   {
     "name": "manectric-mega",
+    "species": "manectric",
     "speciesNames": {
       "ja-Hrkt": "ライボルト",
       "ko": "썬더볼트",
@@ -14851,6 +15244,7 @@
   },
   {
     "name": "plusle",
+    "species": "plusle",
     "speciesNames": {
       "ja-Hrkt": "プラスル",
       "ko": "플러시",
@@ -14886,6 +15280,7 @@
   },
   {
     "name": "minun",
+    "species": "minun",
     "speciesNames": {
       "ja-Hrkt": "マイナン",
       "ko": "마이농",
@@ -14921,6 +15316,7 @@
   },
   {
     "name": "volbeat",
+    "species": "volbeat",
     "speciesNames": {
       "ja-Hrkt": "バルビート",
       "ko": "볼비트",
@@ -14956,6 +15352,7 @@
   },
   {
     "name": "illumise",
+    "species": "illumise",
     "speciesNames": {
       "ja-Hrkt": "イルミーゼ",
       "ko": "네오비트",
@@ -14991,6 +15388,7 @@
   },
   {
     "name": "roselia",
+    "species": "roselia",
     "speciesNames": {
       "ja-Hrkt": "ロゼリア",
       "ko": "로젤리아",
@@ -15027,6 +15425,7 @@
   },
   {
     "name": "gulpin",
+    "species": "gulpin",
     "speciesNames": {
       "ja-Hrkt": "ゴクリン",
       "ko": "꼴깍몬",
@@ -15062,6 +15461,7 @@
   },
   {
     "name": "swalot",
+    "species": "swalot",
     "speciesNames": {
       "ja-Hrkt": "マルノーム",
       "ko": "꿀꺽몬",
@@ -15097,6 +15497,7 @@
   },
   {
     "name": "carvanha",
+    "species": "carvanha",
     "speciesNames": {
       "ja-Hrkt": "キバニア",
       "ko": "샤프니아",
@@ -15133,6 +15534,7 @@
   },
   {
     "name": "sharpedo",
+    "species": "sharpedo",
     "speciesNames": {
       "ja-Hrkt": "サメハダー",
       "ko": "샤크니아",
@@ -15169,6 +15571,7 @@
   },
   {
     "name": "sharpedo-mega",
+    "species": "sharpedo",
     "speciesNames": {
       "ja-Hrkt": "サメハダー",
       "ko": "샤크니아",
@@ -15216,6 +15619,7 @@
   },
   {
     "name": "wailmer",
+    "species": "wailmer",
     "speciesNames": {
       "ja-Hrkt": "ホエルコ",
       "ko": "고래왕자",
@@ -15251,6 +15655,7 @@
   },
   {
     "name": "wailord",
+    "species": "wailord",
     "speciesNames": {
       "ja-Hrkt": "ホエルオー",
       "ko": "고래왕",
@@ -15286,6 +15691,7 @@
   },
   {
     "name": "numel",
+    "species": "numel",
     "speciesNames": {
       "ja-Hrkt": "ドンメル",
       "ko": "둔타",
@@ -15322,6 +15728,7 @@
   },
   {
     "name": "camerupt",
+    "species": "camerupt",
     "speciesNames": {
       "ja-Hrkt": "バクーダ",
       "ko": "폭타",
@@ -15358,6 +15765,7 @@
   },
   {
     "name": "camerupt-mega",
+    "species": "camerupt",
     "speciesNames": {
       "ja-Hrkt": "バクーダ",
       "ko": "폭타",
@@ -15405,6 +15813,7 @@
   },
   {
     "name": "torkoal",
+    "species": "torkoal",
     "speciesNames": {
       "ja-Hrkt": "コータス",
       "ko": "코터스",
@@ -15440,6 +15849,7 @@
   },
   {
     "name": "spoink",
+    "species": "spoink",
     "speciesNames": {
       "ja-Hrkt": "バネブー",
       "ko": "피그점프",
@@ -15475,6 +15885,7 @@
   },
   {
     "name": "grumpig",
+    "species": "grumpig",
     "speciesNames": {
       "ja-Hrkt": "ブーピッグ",
       "ko": "피그킹",
@@ -15510,6 +15921,7 @@
   },
   {
     "name": "spinda",
+    "species": "spinda",
     "speciesNames": {
       "ja-Hrkt": "パッチール",
       "ko": "얼루기",
@@ -15545,6 +15957,7 @@
   },
   {
     "name": "trapinch",
+    "species": "trapinch",
     "speciesNames": {
       "ja-Hrkt": "ナックラー",
       "ko": "톱치",
@@ -15580,6 +15993,7 @@
   },
   {
     "name": "vibrava",
+    "species": "vibrava",
     "speciesNames": {
       "ja-Hrkt": "ビブラーバ",
       "ko": "비브라바",
@@ -15616,6 +16030,7 @@
   },
   {
     "name": "flygon",
+    "species": "flygon",
     "speciesNames": {
       "ja-Hrkt": "フライゴン",
       "ko": "플라이곤",
@@ -15652,6 +16067,7 @@
   },
   {
     "name": "cacnea",
+    "species": "cacnea",
     "speciesNames": {
       "ja-Hrkt": "サボネア",
       "ko": "선인왕",
@@ -15687,6 +16103,7 @@
   },
   {
     "name": "cacturne",
+    "species": "cacturne",
     "speciesNames": {
       "ja-Hrkt": "ノクタス",
       "ko": "밤선인",
@@ -15723,6 +16140,7 @@
   },
   {
     "name": "swablu",
+    "species": "swablu",
     "speciesNames": {
       "ja-Hrkt": "チルット",
       "ko": "파비코",
@@ -15759,6 +16177,7 @@
   },
   {
     "name": "altaria",
+    "species": "altaria",
     "speciesNames": {
       "ja-Hrkt": "チルタリス",
       "ko": "파비코리",
@@ -15795,6 +16214,7 @@
   },
   {
     "name": "altaria-mega",
+    "species": "altaria",
     "speciesNames": {
       "ja-Hrkt": "チルタリス",
       "ko": "파비코리",
@@ -15842,6 +16262,7 @@
   },
   {
     "name": "zangoose",
+    "species": "zangoose",
     "speciesNames": {
       "ja-Hrkt": "ザングース",
       "ko": "쟝고",
@@ -15877,6 +16298,7 @@
   },
   {
     "name": "seviper",
+    "species": "seviper",
     "speciesNames": {
       "ja-Hrkt": "ハブネーク",
       "ko": "세비퍼",
@@ -15912,6 +16334,7 @@
   },
   {
     "name": "lunatone",
+    "species": "lunatone",
     "speciesNames": {
       "ja-Hrkt": "ルナトーン",
       "ko": "루나톤",
@@ -15948,6 +16371,7 @@
   },
   {
     "name": "solrock",
+    "species": "solrock",
     "speciesNames": {
       "ja-Hrkt": "ソルロック",
       "ko": "솔록",
@@ -15984,6 +16408,7 @@
   },
   {
     "name": "barboach",
+    "species": "barboach",
     "speciesNames": {
       "ja-Hrkt": "ドジョッチ",
       "ko": "미꾸리",
@@ -16020,6 +16445,7 @@
   },
   {
     "name": "whiscash",
+    "species": "whiscash",
     "speciesNames": {
       "ja-Hrkt": "ナマズン",
       "ko": "메깅",
@@ -16056,6 +16482,7 @@
   },
   {
     "name": "corphish",
+    "species": "corphish",
     "speciesNames": {
       "ja-Hrkt": "ヘイガニ",
       "ko": "가재군",
@@ -16091,6 +16518,7 @@
   },
   {
     "name": "crawdaunt",
+    "species": "crawdaunt",
     "speciesNames": {
       "ja-Hrkt": "シザリガー",
       "ko": "가재장군",
@@ -16127,6 +16555,7 @@
   },
   {
     "name": "baltoy",
+    "species": "baltoy",
     "speciesNames": {
       "ja-Hrkt": "ヤジロン",
       "ko": "오뚝군",
@@ -16163,6 +16592,7 @@
   },
   {
     "name": "claydol",
+    "species": "claydol",
     "speciesNames": {
       "ja-Hrkt": "ネンドール",
       "ko": "점토도리",
@@ -16199,6 +16629,7 @@
   },
   {
     "name": "lileep",
+    "species": "lileep",
     "speciesNames": {
       "ja-Hrkt": "リリーラ",
       "ko": "릴링",
@@ -16235,6 +16666,7 @@
   },
   {
     "name": "cradily",
+    "species": "cradily",
     "speciesNames": {
       "ja-Hrkt": "ユレイドル",
       "ko": "릴리요",
@@ -16271,6 +16703,7 @@
   },
   {
     "name": "anorith",
+    "species": "anorith",
     "speciesNames": {
       "ja-Hrkt": "アノプス",
       "ko": "아노딥스",
@@ -16307,6 +16740,7 @@
   },
   {
     "name": "armaldo",
+    "species": "armaldo",
     "speciesNames": {
       "ja-Hrkt": "アーマルド",
       "ko": "아말도",
@@ -16343,6 +16777,7 @@
   },
   {
     "name": "feebas",
+    "species": "feebas",
     "speciesNames": {
       "ja-Hrkt": "ヒンバス",
       "ko": "빈티나",
@@ -16378,6 +16813,7 @@
   },
   {
     "name": "milotic",
+    "species": "milotic",
     "speciesNames": {
       "ja-Hrkt": "ミロカロス",
       "ko": "밀로틱",
@@ -16413,6 +16849,7 @@
   },
   {
     "name": "castform",
+    "species": "castform",
     "speciesNames": {
       "ja-Hrkt": "ポワルン",
       "ko": "캐스퐁",
@@ -16459,6 +16896,7 @@
   },
   {
     "name": "castform-sunny",
+    "species": "castform",
     "speciesNames": {
       "ja-Hrkt": "ポワルン",
       "ko": "캐스퐁",
@@ -16505,6 +16943,7 @@
   },
   {
     "name": "castform-rainy",
+    "species": "castform",
     "speciesNames": {
       "ja-Hrkt": "ポワルン",
       "ko": "캐스퐁",
@@ -16551,6 +16990,7 @@
   },
   {
     "name": "castform-snowy",
+    "species": "castform",
     "speciesNames": {
       "ja-Hrkt": "ポワルン",
       "ko": "캐스퐁",
@@ -16597,6 +17037,7 @@
   },
   {
     "name": "kecleon",
+    "species": "kecleon",
     "speciesNames": {
       "ja-Hrkt": "カクレオン",
       "ko": "켈리몬",
@@ -16632,6 +17073,7 @@
   },
   {
     "name": "shuppet",
+    "species": "shuppet",
     "speciesNames": {
       "ja-Hrkt": "カゲボウズ",
       "ko": "어둠대신",
@@ -16667,6 +17109,7 @@
   },
   {
     "name": "banette",
+    "species": "banette",
     "speciesNames": {
       "ja-Hrkt": "ジュペッタ",
       "ko": "다크펫",
@@ -16702,6 +17145,7 @@
   },
   {
     "name": "banette-mega",
+    "species": "banette",
     "speciesNames": {
       "ja-Hrkt": "ジュペッタ",
       "ko": "다크펫",
@@ -16748,6 +17192,7 @@
   },
   {
     "name": "duskull",
+    "species": "duskull",
     "speciesNames": {
       "ja-Hrkt": "ヨマワル",
       "ko": "해골몽",
@@ -16783,6 +17228,7 @@
   },
   {
     "name": "dusclops",
+    "species": "dusclops",
     "speciesNames": {
       "ja-Hrkt": "サマヨール",
       "ko": "미라몽",
@@ -16818,6 +17264,7 @@
   },
   {
     "name": "tropius",
+    "species": "tropius",
     "speciesNames": {
       "ja-Hrkt": "トロピウス",
       "ko": "트로피우스",
@@ -16854,6 +17301,7 @@
   },
   {
     "name": "chimecho",
+    "species": "chimecho",
     "speciesNames": {
       "ja-Hrkt": "チリーン",
       "ko": "치렁",
@@ -16889,6 +17337,7 @@
   },
   {
     "name": "chimecho-mega",
+    "species": "chimecho",
     "speciesNames": {
       "ja-Hrkt": "チリーン",
       "ko": "치렁",
@@ -16929,6 +17378,7 @@
   },
   {
     "name": "absol",
+    "species": "absol",
     "speciesNames": {
       "ja-Hrkt": "アブソル",
       "ko": "앱솔",
@@ -16964,6 +17414,7 @@
   },
   {
     "name": "absol-mega",
+    "species": "absol",
     "speciesNames": {
       "ja-Hrkt": "アブソル",
       "ko": "앱솔",
@@ -17010,6 +17461,7 @@
   },
   {
     "name": "absol-mega-z",
+    "species": "absol",
     "speciesNames": {
       "ja-Hrkt": "アブソル",
       "ko": "앱솔",
@@ -17050,6 +17502,7 @@
   },
   {
     "name": "wynaut",
+    "species": "wynaut",
     "speciesNames": {
       "ja-Hrkt": "ソーナノ",
       "ko": "마자",
@@ -17085,6 +17538,7 @@
   },
   {
     "name": "snorunt",
+    "species": "snorunt",
     "speciesNames": {
       "ja-Hrkt": "ユキワラシ",
       "ko": "눈꼬마",
@@ -17120,6 +17574,7 @@
   },
   {
     "name": "glalie",
+    "species": "glalie",
     "speciesNames": {
       "ja-Hrkt": "オニゴーリ",
       "ko": "얼음귀신",
@@ -17155,6 +17610,7 @@
   },
   {
     "name": "glalie-mega",
+    "species": "glalie",
     "speciesNames": {
       "ja-Hrkt": "オニゴーリ",
       "ko": "얼음귀신",
@@ -17201,6 +17657,7 @@
   },
   {
     "name": "spheal",
+    "species": "spheal",
     "speciesNames": {
       "ja-Hrkt": "タマザラシ",
       "ko": "대굴레오",
@@ -17237,6 +17694,7 @@
   },
   {
     "name": "sealeo",
+    "species": "sealeo",
     "speciesNames": {
       "ja-Hrkt": "トドグラー",
       "ko": "씨레오",
@@ -17273,6 +17731,7 @@
   },
   {
     "name": "walrein",
+    "species": "walrein",
     "speciesNames": {
       "ja-Hrkt": "トドゼルガ",
       "ko": "씨카이저",
@@ -17309,6 +17768,7 @@
   },
   {
     "name": "clamperl",
+    "species": "clamperl",
     "speciesNames": {
       "ja-Hrkt": "パールル",
       "ko": "진주몽",
@@ -17344,6 +17804,7 @@
   },
   {
     "name": "huntail",
+    "species": "huntail",
     "speciesNames": {
       "ja-Hrkt": "ハンテール",
       "ko": "헌테일",
@@ -17379,6 +17840,7 @@
   },
   {
     "name": "gorebyss",
+    "species": "gorebyss",
     "speciesNames": {
       "ja-Hrkt": "サクラビス",
       "ko": "분홍장이",
@@ -17414,6 +17876,7 @@
   },
   {
     "name": "relicanth",
+    "species": "relicanth",
     "speciesNames": {
       "ja-Hrkt": "ジーランス",
       "ko": "시라칸",
@@ -17450,6 +17913,7 @@
   },
   {
     "name": "luvdisc",
+    "species": "luvdisc",
     "speciesNames": {
       "ja-Hrkt": "ラブカス",
       "ko": "사랑동이",
@@ -17485,6 +17949,7 @@
   },
   {
     "name": "bagon",
+    "species": "bagon",
     "speciesNames": {
       "ja-Hrkt": "タツベイ",
       "ko": "아공이",
@@ -17520,6 +17985,7 @@
   },
   {
     "name": "shelgon",
+    "species": "shelgon",
     "speciesNames": {
       "ja-Hrkt": "コモルー",
       "ko": "쉘곤",
@@ -17555,6 +18021,7 @@
   },
   {
     "name": "salamence",
+    "species": "salamence",
     "speciesNames": {
       "ja-Hrkt": "ボーマンダ",
       "ko": "보만다",
@@ -17591,6 +18058,7 @@
   },
   {
     "name": "salamence-mega",
+    "species": "salamence",
     "speciesNames": {
       "ja-Hrkt": "ボーマンダ",
       "ko": "보만다",
@@ -17638,6 +18106,7 @@
   },
   {
     "name": "beldum",
+    "species": "beldum",
     "speciesNames": {
       "ja-Hrkt": "ダンバル",
       "ko": "메탕",
@@ -17674,6 +18143,7 @@
   },
   {
     "name": "metang",
+    "species": "metang",
     "speciesNames": {
       "ja-Hrkt": "メタング",
       "ko": "메탕구",
@@ -17710,6 +18180,7 @@
   },
   {
     "name": "metagross",
+    "species": "metagross",
     "speciesNames": {
       "ja-Hrkt": "メタグロス",
       "ko": "메타그로스",
@@ -17746,6 +18217,7 @@
   },
   {
     "name": "metagross-mega",
+    "species": "metagross",
     "speciesNames": {
       "ja-Hrkt": "メタグロス",
       "ko": "메타그로스",
@@ -17793,6 +18265,7 @@
   },
   {
     "name": "regirock",
+    "species": "regirock",
     "speciesNames": {
       "ja-Hrkt": "レジロック",
       "ko": "레지락",
@@ -17828,6 +18301,7 @@
   },
   {
     "name": "regice",
+    "species": "regice",
     "speciesNames": {
       "ja-Hrkt": "レジアイス",
       "ko": "레지아이스",
@@ -17863,6 +18337,7 @@
   },
   {
     "name": "registeel",
+    "species": "registeel",
     "speciesNames": {
       "ja-Hrkt": "レジスチル",
       "ko": "레지스틸",
@@ -17898,6 +18373,7 @@
   },
   {
     "name": "latias",
+    "species": "latias",
     "speciesNames": {
       "ja-Hrkt": "ラティアス",
       "ko": "라티아스",
@@ -17934,6 +18410,7 @@
   },
   {
     "name": "latias-mega",
+    "species": "latias",
     "speciesNames": {
       "ja-Hrkt": "ラティアス",
       "ko": "라티아스",
@@ -17981,6 +18458,7 @@
   },
   {
     "name": "latios",
+    "species": "latios",
     "speciesNames": {
       "ja-Hrkt": "ラティオス",
       "ko": "라티오스",
@@ -18017,6 +18495,7 @@
   },
   {
     "name": "latios-mega",
+    "species": "latios",
     "speciesNames": {
       "ja-Hrkt": "ラティオス",
       "ko": "라티오스",
@@ -18064,6 +18543,7 @@
   },
   {
     "name": "kyogre",
+    "species": "kyogre",
     "speciesNames": {
       "ja-Hrkt": "カイオーガ",
       "ko": "가이오가",
@@ -18109,6 +18589,7 @@
   },
   {
     "name": "kyogre-primal",
+    "species": "kyogre",
     "speciesNames": {
       "ja-Hrkt": "カイオーガ",
       "ko": "가이오가",
@@ -18155,6 +18636,7 @@
   },
   {
     "name": "groudon",
+    "species": "groudon",
     "speciesNames": {
       "ja-Hrkt": "グラードン",
       "ko": "그란돈",
@@ -18200,6 +18682,7 @@
   },
   {
     "name": "groudon-primal",
+    "species": "groudon",
     "speciesNames": {
       "ja-Hrkt": "グラードン",
       "ko": "그란돈",
@@ -18247,6 +18730,7 @@
   },
   {
     "name": "rayquaza",
+    "species": "rayquaza",
     "speciesNames": {
       "ja-Hrkt": "レックウザ",
       "ko": "레쿠쟈",
@@ -18283,6 +18767,7 @@
   },
   {
     "name": "rayquaza-mega",
+    "species": "rayquaza",
     "speciesNames": {
       "ja-Hrkt": "レックウザ",
       "ko": "레쿠쟈",
@@ -18330,6 +18815,7 @@
   },
   {
     "name": "jirachi",
+    "species": "jirachi",
     "speciesNames": {
       "ja-Hrkt": "ジラーチ",
       "ko": "지라치",
@@ -18366,6 +18852,7 @@
   },
   {
     "name": "deoxys-normal",
+    "species": "deoxys",
     "speciesNames": {
       "ja-Hrkt": "デオキシス",
       "ko": "테오키스",
@@ -18412,6 +18899,7 @@
   },
   {
     "name": "deoxys-attack",
+    "species": "deoxys",
     "speciesNames": {
       "ja-Hrkt": "デオキシス",
       "ko": "테오키스",
@@ -18458,6 +18946,7 @@
   },
   {
     "name": "deoxys-defense",
+    "species": "deoxys",
     "speciesNames": {
       "ja-Hrkt": "デオキシス",
       "ko": "테오키스",
@@ -18504,6 +18993,7 @@
   },
   {
     "name": "deoxys-speed",
+    "species": "deoxys",
     "speciesNames": {
       "ja-Hrkt": "デオキシス",
       "ko": "테오키스",
@@ -18550,6 +19040,7 @@
   },
   {
     "name": "turtwig",
+    "species": "turtwig",
     "speciesNames": {
       "ja-Hrkt": "ナエトル",
       "ko": "모부기",
@@ -18585,6 +19076,7 @@
   },
   {
     "name": "grotle",
+    "species": "grotle",
     "speciesNames": {
       "ja-Hrkt": "ハヤシガメ",
       "ko": "수풀부기",
@@ -18620,6 +19112,7 @@
   },
   {
     "name": "torterra",
+    "species": "torterra",
     "speciesNames": {
       "ja-Hrkt": "ドダイトス",
       "ko": "토대부기",
@@ -18656,6 +19149,7 @@
   },
   {
     "name": "chimchar",
+    "species": "chimchar",
     "speciesNames": {
       "ja-Hrkt": "ヒコザル",
       "ko": "불꽃숭이",
@@ -18691,6 +19185,7 @@
   },
   {
     "name": "monferno",
+    "species": "monferno",
     "speciesNames": {
       "ja-Hrkt": "モウカザル",
       "ko": "파이숭이",
@@ -18727,6 +19222,7 @@
   },
   {
     "name": "infernape",
+    "species": "infernape",
     "speciesNames": {
       "ja-Hrkt": "ゴウカザル",
       "ko": "초염몽",
@@ -18763,6 +19259,7 @@
   },
   {
     "name": "piplup",
+    "species": "piplup",
     "speciesNames": {
       "ja-Hrkt": "ポッチャマ",
       "ko": "팽도리",
@@ -18798,6 +19295,7 @@
   },
   {
     "name": "prinplup",
+    "species": "prinplup",
     "speciesNames": {
       "ja-Hrkt": "ポッタイシ",
       "ko": "팽태자",
@@ -18833,6 +19331,7 @@
   },
   {
     "name": "empoleon",
+    "species": "empoleon",
     "speciesNames": {
       "ja-Hrkt": "エンペルト",
       "ko": "엠페르트",
@@ -18869,6 +19368,7 @@
   },
   {
     "name": "starly",
+    "species": "starly",
     "speciesNames": {
       "ja-Hrkt": "ムックル",
       "ko": "찌르꼬",
@@ -18905,6 +19405,7 @@
   },
   {
     "name": "staravia",
+    "species": "staravia",
     "speciesNames": {
       "ja-Hrkt": "ムクバード",
       "ko": "찌르버드",
@@ -18941,6 +19442,7 @@
   },
   {
     "name": "staraptor",
+    "species": "staraptor",
     "speciesNames": {
       "ja-Hrkt": "ムクホーク",
       "ko": "찌르호크",
@@ -18977,6 +19479,7 @@
   },
   {
     "name": "staraptor-mega",
+    "species": "staraptor",
     "speciesNames": {
       "ja-Hrkt": "ムクホーク",
       "ko": "찌르호크",
@@ -19017,6 +19520,7 @@
   },
   {
     "name": "bidoof",
+    "species": "bidoof",
     "speciesNames": {
       "ja-Hrkt": "ビッパ",
       "ko": "비버니",
@@ -19052,6 +19556,7 @@
   },
   {
     "name": "bibarel",
+    "species": "bibarel",
     "speciesNames": {
       "ja-Hrkt": "ビーダル",
       "ko": "비버통",
@@ -19088,6 +19593,7 @@
   },
   {
     "name": "kricketot",
+    "species": "kricketot",
     "speciesNames": {
       "ja-Hrkt": "コロボーシ",
       "ko": "귀뚤뚜기",
@@ -19123,6 +19629,7 @@
   },
   {
     "name": "kricketune",
+    "species": "kricketune",
     "speciesNames": {
       "ja-Hrkt": "コロトック",
       "ko": "귀뚤톡크",
@@ -19158,6 +19665,7 @@
   },
   {
     "name": "shinx",
+    "species": "shinx",
     "speciesNames": {
       "ja-Hrkt": "コリンク",
       "ko": "꼬링크",
@@ -19193,6 +19701,7 @@
   },
   {
     "name": "luxio",
+    "species": "luxio",
     "speciesNames": {
       "ja-Hrkt": "ルクシオ",
       "ko": "럭시오",
@@ -19228,6 +19737,7 @@
   },
   {
     "name": "luxray",
+    "species": "luxray",
     "speciesNames": {
       "ja-Hrkt": "レントラー",
       "ko": "렌트라",
@@ -19263,6 +19773,7 @@
   },
   {
     "name": "budew",
+    "species": "budew",
     "speciesNames": {
       "ja-Hrkt": "スボミー",
       "ko": "꼬몽울",
@@ -19299,6 +19810,7 @@
   },
   {
     "name": "roserade",
+    "species": "roserade",
     "speciesNames": {
       "ja-Hrkt": "ロズレイド",
       "ko": "로즈레이드",
@@ -19335,6 +19847,7 @@
   },
   {
     "name": "cranidos",
+    "species": "cranidos",
     "speciesNames": {
       "ja-Hrkt": "ズガイドス",
       "ko": "두개도스",
@@ -19370,6 +19883,7 @@
   },
   {
     "name": "rampardos",
+    "species": "rampardos",
     "speciesNames": {
       "ja-Hrkt": "ラムパルド",
       "ko": "램펄드",
@@ -19405,6 +19919,7 @@
   },
   {
     "name": "shieldon",
+    "species": "shieldon",
     "speciesNames": {
       "ja-Hrkt": "タテトプス",
       "ko": "방패톱스",
@@ -19441,6 +19956,7 @@
   },
   {
     "name": "bastiodon",
+    "species": "bastiodon",
     "speciesNames": {
       "ja-Hrkt": "トリデプス",
       "ko": "바리톱스",
@@ -19477,6 +19993,7 @@
   },
   {
     "name": "burmy",
+    "species": "burmy",
     "speciesNames": {
       "ja-Hrkt": "ミノムッチ",
       "ko": "도롱충이",
@@ -19521,6 +20038,7 @@
   },
   {
     "name": "wormadam-plant",
+    "species": "wormadam",
     "speciesNames": {
       "ja-Hrkt": "ミノマダム",
       "ko": "도롱마담",
@@ -19568,6 +20086,7 @@
   },
   {
     "name": "wormadam-sandy",
+    "species": "wormadam",
     "speciesNames": {
       "ja-Hrkt": "ミノマダム",
       "ko": "도롱마담",
@@ -19615,6 +20134,7 @@
   },
   {
     "name": "wormadam-trash",
+    "species": "wormadam",
     "speciesNames": {
       "ja-Hrkt": "ミノマダム",
       "ko": "도롱마담",
@@ -19662,6 +20182,7 @@
   },
   {
     "name": "mothim",
+    "species": "mothim",
     "speciesNames": {
       "ja-Hrkt": "ガーメイル",
       "ko": "나메일",
@@ -19698,6 +20219,7 @@
   },
   {
     "name": "combee",
+    "species": "combee",
     "speciesNames": {
       "ja-Hrkt": "ミツハニー",
       "ko": "세꿀버리",
@@ -19734,6 +20256,7 @@
   },
   {
     "name": "vespiquen",
+    "species": "vespiquen",
     "speciesNames": {
       "ja-Hrkt": "ビークイン",
       "ko": "비퀸",
@@ -19770,6 +20293,7 @@
   },
   {
     "name": "pachirisu",
+    "species": "pachirisu",
     "speciesNames": {
       "ja-Hrkt": "パチリス",
       "ko": "파치리스",
@@ -19805,6 +20329,7 @@
   },
   {
     "name": "buizel",
+    "species": "buizel",
     "speciesNames": {
       "ja-Hrkt": "ブイゼル",
       "ko": "브이젤",
@@ -19840,6 +20365,7 @@
   },
   {
     "name": "floatzel",
+    "species": "floatzel",
     "speciesNames": {
       "ja-Hrkt": "フローゼル",
       "ko": "플로젤",
@@ -19875,6 +20401,7 @@
   },
   {
     "name": "cherubi",
+    "species": "cherubi",
     "speciesNames": {
       "ja-Hrkt": "チェリンボ",
       "ko": "체리버",
@@ -19910,6 +20437,7 @@
   },
   {
     "name": "cherrim",
+    "species": "cherrim",
     "speciesNames": {
       "ja-Hrkt": "チェリム",
       "ko": "체리꼬",
@@ -19956,6 +20484,7 @@
   },
   {
     "name": "shellos",
+    "species": "shellos",
     "speciesNames": {
       "ja-Hrkt": "カラナクシ",
       "ko": "깝질무",
@@ -20002,6 +20531,7 @@
   },
   {
     "name": "gastrodon",
+    "species": "gastrodon",
     "speciesNames": {
       "ja-Hrkt": "トリトドン",
       "ko": "트리토돈",
@@ -20049,6 +20579,7 @@
   },
   {
     "name": "ambipom",
+    "species": "ambipom",
     "speciesNames": {
       "ja-Hrkt": "エテボース",
       "ko": "겟핸보숭",
@@ -20084,6 +20615,7 @@
   },
   {
     "name": "drifloon",
+    "species": "drifloon",
     "speciesNames": {
       "ja-Hrkt": "フワンテ",
       "ko": "흔들풍손",
@@ -20120,6 +20652,7 @@
   },
   {
     "name": "drifblim",
+    "species": "drifblim",
     "speciesNames": {
       "ja-Hrkt": "フワライド",
       "ko": "둥실라이드",
@@ -20156,6 +20689,7 @@
   },
   {
     "name": "buneary",
+    "species": "buneary",
     "speciesNames": {
       "ja-Hrkt": "ミミロル",
       "ko": "이어롤",
@@ -20191,6 +20725,7 @@
   },
   {
     "name": "lopunny",
+    "species": "lopunny",
     "speciesNames": {
       "ja-Hrkt": "ミミロップ",
       "ko": "이어롭",
@@ -20226,6 +20761,7 @@
   },
   {
     "name": "lopunny-mega",
+    "species": "lopunny",
     "speciesNames": {
       "ja-Hrkt": "ミミロップ",
       "ko": "이어롭",
@@ -20273,6 +20809,7 @@
   },
   {
     "name": "mismagius",
+    "species": "mismagius",
     "speciesNames": {
       "ja-Hrkt": "ムウマージ",
       "ko": "무우마직",
@@ -20308,6 +20845,7 @@
   },
   {
     "name": "honchkrow",
+    "species": "honchkrow",
     "speciesNames": {
       "ja-Hrkt": "ドンカラス",
       "ko": "돈크로우",
@@ -20344,6 +20882,7 @@
   },
   {
     "name": "glameow",
+    "species": "glameow",
     "speciesNames": {
       "ja-Hrkt": "ニャルマー",
       "ko": "나옹마",
@@ -20379,6 +20918,7 @@
   },
   {
     "name": "purugly",
+    "species": "purugly",
     "speciesNames": {
       "es": "Purugly",
       "ja-Hrkt": "ブニャット",
@@ -20414,6 +20954,7 @@
   },
   {
     "name": "chingling",
+    "species": "chingling",
     "speciesNames": {
       "ja-Hrkt": "リーシャン",
       "ko": "랑딸랑",
@@ -20449,6 +20990,7 @@
   },
   {
     "name": "stunky",
+    "species": "stunky",
     "speciesNames": {
       "ja-Hrkt": "スカンプー",
       "ko": "스컹뿡",
@@ -20485,6 +21027,7 @@
   },
   {
     "name": "skuntank",
+    "species": "skuntank",
     "speciesNames": {
       "ja-Hrkt": "スカタンク",
       "ko": "스컹탱크",
@@ -20521,6 +21064,7 @@
   },
   {
     "name": "bronzor",
+    "species": "bronzor",
     "speciesNames": {
       "ja-Hrkt": "ドーミラー",
       "ko": "동미러",
@@ -20557,6 +21101,7 @@
   },
   {
     "name": "bronzong",
+    "species": "bronzong",
     "speciesNames": {
       "ja-Hrkt": "ドータクン",
       "ko": "동탁군",
@@ -20593,6 +21138,7 @@
   },
   {
     "name": "bonsly",
+    "species": "bonsly",
     "speciesNames": {
       "ja-Hrkt": "ウソハチ",
       "ko": "꼬지지",
@@ -20628,6 +21174,7 @@
   },
   {
     "name": "mime-jr",
+    "species": "mime-jr",
     "speciesNames": {
       "ja-Hrkt": "マネネ",
       "ko": "흉내내",
@@ -20668,6 +21215,7 @@
   },
   {
     "name": "happiny",
+    "species": "happiny",
     "speciesNames": {
       "ja-Hrkt": "ピンプク",
       "ko": "핑복",
@@ -20703,6 +21251,7 @@
   },
   {
     "name": "chatot",
+    "species": "chatot",
     "speciesNames": {
       "ja-Hrkt": "ペラップ",
       "ko": "페라페",
@@ -20739,6 +21288,7 @@
   },
   {
     "name": "spiritomb",
+    "species": "spiritomb",
     "speciesNames": {
       "ja-Hrkt": "ミカルゲ",
       "ko": "화강돌",
@@ -20775,6 +21325,7 @@
   },
   {
     "name": "gible",
+    "species": "gible",
     "speciesNames": {
       "ja-Hrkt": "フカマル",
       "ko": "딥상어동",
@@ -20811,6 +21362,7 @@
   },
   {
     "name": "gabite",
+    "species": "gabite",
     "speciesNames": {
       "ja-Hrkt": "ガバイト",
       "ko": "한바이트",
@@ -20847,6 +21399,7 @@
   },
   {
     "name": "garchomp",
+    "species": "garchomp",
     "speciesNames": {
       "ja-Hrkt": "ガブリアス",
       "ko": "한카리아스",
@@ -20883,6 +21436,7 @@
   },
   {
     "name": "garchomp-mega",
+    "species": "garchomp",
     "speciesNames": {
       "ja-Hrkt": "ガブリアス",
       "ko": "한카리아스",
@@ -20930,6 +21484,7 @@
   },
   {
     "name": "garchomp-mega-z",
+    "species": "garchomp",
     "speciesNames": {
       "ja-Hrkt": "ガブリアス",
       "ko": "한카리아스",
@@ -20969,6 +21524,7 @@
   },
   {
     "name": "munchlax",
+    "species": "munchlax",
     "speciesNames": {
       "ja-Hrkt": "ゴンベ",
       "ko": "먹고자",
@@ -21004,6 +21560,7 @@
   },
   {
     "name": "riolu",
+    "species": "riolu",
     "speciesNames": {
       "ja-Hrkt": "リオル",
       "ko": "리오르",
@@ -21039,6 +21596,7 @@
   },
   {
     "name": "lucario",
+    "species": "lucario",
     "speciesNames": {
       "ja-Hrkt": "ルカリオ",
       "ko": "루카리오",
@@ -21075,6 +21633,7 @@
   },
   {
     "name": "lucario-mega",
+    "species": "lucario",
     "speciesNames": {
       "ja-Hrkt": "ルカリオ",
       "ko": "루카리오",
@@ -21122,6 +21681,7 @@
   },
   {
     "name": "lucario-mega-z",
+    "species": "lucario",
     "speciesNames": {
       "ja-Hrkt": "ルカリオ",
       "ko": "루카리오",
@@ -21162,6 +21722,7 @@
   },
   {
     "name": "hippopotas",
+    "species": "hippopotas",
     "speciesNames": {
       "ja-Hrkt": "ヒポポタス",
       "ko": "히포포타스",
@@ -21197,6 +21758,7 @@
   },
   {
     "name": "hippowdon",
+    "species": "hippowdon",
     "speciesNames": {
       "ja-Hrkt": "カバルドン",
       "ko": "하마돈",
@@ -21232,6 +21794,7 @@
   },
   {
     "name": "skorupi",
+    "species": "skorupi",
     "speciesNames": {
       "ja-Hrkt": "スコルピ",
       "ko": "스콜피",
@@ -21268,6 +21831,7 @@
   },
   {
     "name": "drapion",
+    "species": "drapion",
     "speciesNames": {
       "ja-Hrkt": "ドラピオン",
       "ko": "드래피온",
@@ -21304,6 +21868,7 @@
   },
   {
     "name": "croagunk",
+    "species": "croagunk",
     "speciesNames": {
       "ja-Hrkt": "グレッグル",
       "ko": "삐딱구리",
@@ -21340,6 +21905,7 @@
   },
   {
     "name": "toxicroak",
+    "species": "toxicroak",
     "speciesNames": {
       "ja-Hrkt": "ドクロッグ",
       "ko": "독개굴",
@@ -21376,6 +21942,7 @@
   },
   {
     "name": "carnivine",
+    "species": "carnivine",
     "speciesNames": {
       "ja-Hrkt": "マスキッパ",
       "ko": "무스틈니",
@@ -21411,6 +21978,7 @@
   },
   {
     "name": "finneon",
+    "species": "finneon",
     "speciesNames": {
       "ja-Hrkt": "ケイコウオ",
       "ko": "형광어",
@@ -21446,6 +22014,7 @@
   },
   {
     "name": "lumineon",
+    "species": "lumineon",
     "speciesNames": {
       "ja-Hrkt": "ネオラント",
       "ko": "네오라이트",
@@ -21481,6 +22050,7 @@
   },
   {
     "name": "mantyke",
+    "species": "mantyke",
     "speciesNames": {
       "ja-Hrkt": "タマンタ",
       "ko": "타만타",
@@ -21517,6 +22087,7 @@
   },
   {
     "name": "snover",
+    "species": "snover",
     "speciesNames": {
       "ja-Hrkt": "ユキカブリ",
       "ko": "눈쓰개",
@@ -21553,6 +22124,7 @@
   },
   {
     "name": "abomasnow",
+    "species": "abomasnow",
     "speciesNames": {
       "ja-Hrkt": "ユキノオー",
       "ko": "눈설왕",
@@ -21589,6 +22161,7 @@
   },
   {
     "name": "abomasnow-mega",
+    "species": "abomasnow",
     "speciesNames": {
       "ja-Hrkt": "ユキノオー",
       "ko": "눈설왕",
@@ -21636,6 +22209,7 @@
   },
   {
     "name": "weavile",
+    "species": "weavile",
     "speciesNames": {
       "ja-Hrkt": "マニューラ",
       "ko": "포푸니라",
@@ -21672,6 +22246,7 @@
   },
   {
     "name": "magnezone",
+    "species": "magnezone",
     "speciesNames": {
       "ja-Hrkt": "ジバコイル",
       "ko": "자포코일",
@@ -21708,6 +22283,7 @@
   },
   {
     "name": "lickilicky",
+    "species": "lickilicky",
     "speciesNames": {
       "ja-Hrkt": "ベロベルト",
       "ko": "내룸벨트",
@@ -21743,6 +22319,7 @@
   },
   {
     "name": "rhyperior",
+    "species": "rhyperior",
     "speciesNames": {
       "ja-Hrkt": "ドサイドン",
       "ko": "거대코뿌리",
@@ -21779,6 +22356,7 @@
   },
   {
     "name": "tangrowth",
+    "species": "tangrowth",
     "speciesNames": {
       "ja-Hrkt": "モジャンボ",
       "ko": "덩쿠림보",
@@ -21814,6 +22392,7 @@
   },
   {
     "name": "electivire",
+    "species": "electivire",
     "speciesNames": {
       "ja-Hrkt": "エレキブル",
       "ko": "에레키블",
@@ -21849,6 +22428,7 @@
   },
   {
     "name": "magmortar",
+    "species": "magmortar",
     "speciesNames": {
       "ja-Hrkt": "ブーバーン",
       "ko": "마그마번",
@@ -21884,6 +22464,7 @@
   },
   {
     "name": "togekiss",
+    "species": "togekiss",
     "speciesNames": {
       "ja-Hrkt": "トゲキッス",
       "ko": "토게키스",
@@ -21925,6 +22506,7 @@
   },
   {
     "name": "yanmega",
+    "species": "yanmega",
     "speciesNames": {
       "ja-Hrkt": "メガヤンマ",
       "ko": "메가자리",
@@ -21961,6 +22543,7 @@
   },
   {
     "name": "leafeon",
+    "species": "leafeon",
     "speciesNames": {
       "ja-Hrkt": "リーフィア",
       "ko": "리피아",
@@ -21996,6 +22579,7 @@
   },
   {
     "name": "glaceon",
+    "species": "glaceon",
     "speciesNames": {
       "ja-Hrkt": "グレイシア",
       "ko": "글레이시아",
@@ -22031,6 +22615,7 @@
   },
   {
     "name": "gliscor",
+    "species": "gliscor",
     "speciesNames": {
       "ja-Hrkt": "グライオン",
       "ko": "글라이온",
@@ -22067,6 +22652,7 @@
   },
   {
     "name": "mamoswine",
+    "species": "mamoswine",
     "speciesNames": {
       "ja-Hrkt": "マンムー",
       "ko": "맘모꾸리",
@@ -22103,6 +22689,7 @@
   },
   {
     "name": "porygon-z",
+    "species": "porygon-z",
     "speciesNames": {
       "ja-Hrkt": "ポリゴンＺ",
       "ko": "폴리곤Z",
@@ -22138,6 +22725,7 @@
   },
   {
     "name": "gallade",
+    "species": "gallade",
     "speciesNames": {
       "ja-Hrkt": "エルレイド",
       "ko": "엘레이드",
@@ -22174,6 +22762,7 @@
   },
   {
     "name": "gallade-mega",
+    "species": "gallade",
     "speciesNames": {
       "ja-Hrkt": "エルレイド",
       "ko": "엘레이드",
@@ -22221,6 +22810,7 @@
   },
   {
     "name": "probopass",
+    "species": "probopass",
     "speciesNames": {
       "ja-Hrkt": "ダイノーズ",
       "ko": "대코파스",
@@ -22257,6 +22847,7 @@
   },
   {
     "name": "dusknoir",
+    "species": "dusknoir",
     "speciesNames": {
       "ja-Hrkt": "ヨノワール",
       "ko": "야느와르몽",
@@ -22292,6 +22883,7 @@
   },
   {
     "name": "froslass",
+    "species": "froslass",
     "speciesNames": {
       "ja-Hrkt": "ユキメノコ",
       "ko": "눈여아",
@@ -22328,6 +22920,7 @@
   },
   {
     "name": "froslass-mega",
+    "species": "froslass",
     "speciesNames": {
       "ja-Hrkt": "ユキメノコ",
       "ko": "눈여아",
@@ -22368,6 +22961,7 @@
   },
   {
     "name": "rotom",
+    "species": "rotom",
     "speciesNames": {
       "ja-Hrkt": "ロトム",
       "ko": "로토무",
@@ -22415,6 +23009,7 @@
   },
   {
     "name": "rotom-heat",
+    "species": "rotom",
     "speciesNames": {
       "ja-Hrkt": "ロトム",
       "ko": "로토무",
@@ -22467,6 +23062,7 @@
   },
   {
     "name": "rotom-wash",
+    "species": "rotom",
     "speciesNames": {
       "ja-Hrkt": "ロトム",
       "ko": "로토무",
@@ -22519,6 +23115,7 @@
   },
   {
     "name": "rotom-frost",
+    "species": "rotom",
     "speciesNames": {
       "ja-Hrkt": "ロトム",
       "ko": "로토무",
@@ -22571,6 +23168,7 @@
   },
   {
     "name": "rotom-fan",
+    "species": "rotom",
     "speciesNames": {
       "ja-Hrkt": "ロトム",
       "ko": "로토무",
@@ -22623,6 +23221,7 @@
   },
   {
     "name": "rotom-mow",
+    "species": "rotom",
     "speciesNames": {
       "ja-Hrkt": "ロトム",
       "ko": "로토무",
@@ -22675,6 +23274,7 @@
   },
   {
     "name": "uxie",
+    "species": "uxie",
     "speciesNames": {
       "ja-Hrkt": "ユクシー",
       "ko": "유크시",
@@ -22710,6 +23310,7 @@
   },
   {
     "name": "mesprit",
+    "species": "mesprit",
     "speciesNames": {
       "ja-Hrkt": "エムリット",
       "ko": "엠라이트",
@@ -22745,6 +23346,7 @@
   },
   {
     "name": "azelf",
+    "species": "azelf",
     "speciesNames": {
       "ja-Hrkt": "アグノム",
       "ko": "아그놈",
@@ -22780,6 +23382,7 @@
   },
   {
     "name": "dialga",
+    "species": "dialga",
     "speciesNames": {
       "ja-Hrkt": "ディアルガ",
       "ko": "디아루가",
@@ -22816,6 +23419,7 @@
   },
   {
     "name": "dialga-origin",
+    "species": "dialga",
     "speciesNames": {
       "ja-Hrkt": "ディアルガ",
       "ko": "디아루가",
@@ -22858,6 +23462,7 @@
   },
   {
     "name": "palkia",
+    "species": "palkia",
     "speciesNames": {
       "ja-Hrkt": "パルキア",
       "ko": "펄기아",
@@ -22894,6 +23499,7 @@
   },
   {
     "name": "palkia-origin",
+    "species": "palkia",
     "speciesNames": {
       "ja-Hrkt": "パルキア",
       "ko": "펄기아",
@@ -22936,6 +23542,7 @@
   },
   {
     "name": "heatran",
+    "species": "heatran",
     "speciesNames": {
       "ja-Hrkt": "ヒードラン",
       "ko": "히드런",
@@ -22972,6 +23579,7 @@
   },
   {
     "name": "heatran-mega",
+    "species": "heatran",
     "speciesNames": {
       "ja-Hrkt": "ヒードラン",
       "ko": "히드런",
@@ -23012,6 +23620,7 @@
   },
   {
     "name": "regigigas",
+    "species": "regigigas",
     "speciesNames": {
       "ja-Hrkt": "レジギガス",
       "ko": "레지기가스",
@@ -23047,6 +23656,7 @@
   },
   {
     "name": "giratina-altered",
+    "species": "giratina",
     "speciesNames": {
       "ja-Hrkt": "ギラティナ",
       "ko": "기라티나",
@@ -23094,6 +23704,7 @@
   },
   {
     "name": "giratina-origin",
+    "species": "giratina",
     "speciesNames": {
       "ja-Hrkt": "ギラティナ",
       "ko": "기라티나",
@@ -23141,6 +23752,7 @@
   },
   {
     "name": "cresselia",
+    "species": "cresselia",
     "speciesNames": {
       "ja-Hrkt": "クレセリア",
       "ko": "크레세리아",
@@ -23176,6 +23788,7 @@
   },
   {
     "name": "phione",
+    "species": "phione",
     "speciesNames": {
       "ja-Hrkt": "フィオネ",
       "ko": "피오네",
@@ -23211,6 +23824,7 @@
   },
   {
     "name": "manaphy",
+    "species": "manaphy",
     "speciesNames": {
       "ja-Hrkt": "マナフィ",
       "ko": "마나피",
@@ -23246,6 +23860,7 @@
   },
   {
     "name": "darkrai",
+    "species": "darkrai",
     "speciesNames": {
       "ja-Hrkt": "ダークライ",
       "ko": "다크라이",
@@ -23281,6 +23896,7 @@
   },
   {
     "name": "darkrai-mega",
+    "species": "darkrai",
     "speciesNames": {
       "ja-Hrkt": "ダークライ",
       "ko": "다크라이",
@@ -23320,6 +23936,7 @@
   },
   {
     "name": "shaymin-land",
+    "species": "shaymin",
     "speciesNames": {
       "ja-Hrkt": "シェイミ",
       "ko": "쉐이미",
@@ -23366,6 +23983,7 @@
   },
   {
     "name": "shaymin-sky",
+    "species": "shaymin",
     "speciesNames": {
       "ja-Hrkt": "シェイミ",
       "ko": "쉐이미",
@@ -23413,6 +24031,7 @@
   },
   {
     "name": "arceus",
+    "species": "arceus",
     "speciesNames": {
       "ja-Hrkt": "アルセウス",
       "ko": "아르세우스",
@@ -23456,6 +24075,7 @@
   },
   {
     "name": "victini",
+    "species": "victini",
     "speciesNames": {
       "ja-Hrkt": "ビクティニ",
       "ko": "비크티니",
@@ -23492,6 +24112,7 @@
   },
   {
     "name": "snivy",
+    "species": "snivy",
     "speciesNames": {
       "ja-Hrkt": "ツタージャ",
       "ko": "주리비얀",
@@ -23527,6 +24148,7 @@
   },
   {
     "name": "servine",
+    "species": "servine",
     "speciesNames": {
       "ja-Hrkt": "ジャノビー",
       "ko": "샤비",
@@ -23562,6 +24184,7 @@
   },
   {
     "name": "serperior",
+    "species": "serperior",
     "speciesNames": {
       "ja-Hrkt": "ジャローダ",
       "ko": "샤로다",
@@ -23597,6 +24220,7 @@
   },
   {
     "name": "tepig",
+    "species": "tepig",
     "speciesNames": {
       "ja-Hrkt": "ポカブ",
       "ko": "뚜꾸리",
@@ -23632,6 +24256,7 @@
   },
   {
     "name": "pignite",
+    "species": "pignite",
     "speciesNames": {
       "ja-Hrkt": "チャオブー",
       "ko": "차오꿀",
@@ -23668,6 +24293,7 @@
   },
   {
     "name": "emboar",
+    "species": "emboar",
     "speciesNames": {
       "ja-Hrkt": "エンブオー",
       "ko": "염무왕",
@@ -23704,6 +24330,7 @@
   },
   {
     "name": "emboar-mega",
+    "species": "emboar",
     "speciesNames": {
       "ja-Hrkt": "エンブオー",
       "ko": "염무왕",
@@ -23744,6 +24371,7 @@
   },
   {
     "name": "oshawott",
+    "species": "oshawott",
     "speciesNames": {
       "ja-Hrkt": "ミジュマル",
       "ko": "수댕이",
@@ -23779,6 +24407,7 @@
   },
   {
     "name": "dewott",
+    "species": "dewott",
     "speciesNames": {
       "ja-Hrkt": "フタチマル",
       "ko": "쌍검자비",
@@ -23814,6 +24443,7 @@
   },
   {
     "name": "samurott",
+    "species": "samurott",
     "speciesNames": {
       "ja-Hrkt": "ダイケンキ",
       "ko": "대검귀",
@@ -23849,6 +24479,7 @@
   },
   {
     "name": "samurott-hisui",
+    "species": "samurott",
     "speciesNames": {
       "ja-Hrkt": "ダイケンキ",
       "ko": "대검귀",
@@ -23891,6 +24522,7 @@
   },
   {
     "name": "patrat",
+    "species": "patrat",
     "speciesNames": {
       "ja-Hrkt": "ミネズミ",
       "ko": "보르쥐",
@@ -23926,6 +24558,7 @@
   },
   {
     "name": "watchog",
+    "species": "watchog",
     "speciesNames": {
       "es": "Watchog",
       "ja-Hrkt": "ミルホッグ",
@@ -23961,6 +24594,7 @@
   },
   {
     "name": "lillipup",
+    "species": "lillipup",
     "speciesNames": {
       "ja-Hrkt": "ヨーテリー",
       "ko": "요테리",
@@ -23996,6 +24630,7 @@
   },
   {
     "name": "herdier",
+    "species": "herdier",
     "speciesNames": {
       "ja-Hrkt": "ハーデリア",
       "ko": "하데리어",
@@ -24031,6 +24666,7 @@
   },
   {
     "name": "stoutland",
+    "species": "stoutland",
     "speciesNames": {
       "ja-Hrkt": "ムーランド",
       "ko": "바랜드",
@@ -24066,6 +24702,7 @@
   },
   {
     "name": "purrloin",
+    "species": "purrloin",
     "speciesNames": {
       "ja-Hrkt": "チョロネコ",
       "ko": "쌔비냥",
@@ -24101,6 +24738,7 @@
   },
   {
     "name": "liepard",
+    "species": "liepard",
     "speciesNames": {
       "ja-Hrkt": "レパルダス",
       "ko": "레파르다스",
@@ -24136,6 +24774,7 @@
   },
   {
     "name": "pansage",
+    "species": "pansage",
     "speciesNames": {
       "ja-Hrkt": "ヤナップ",
       "ko": "야나프",
@@ -24171,6 +24810,7 @@
   },
   {
     "name": "simisage",
+    "species": "simisage",
     "speciesNames": {
       "ja-Hrkt": "ヤナッキー",
       "ko": "야나키",
@@ -24206,6 +24846,7 @@
   },
   {
     "name": "pansear",
+    "species": "pansear",
     "speciesNames": {
       "ja-Hrkt": "バオップ",
       "ko": "바오프",
@@ -24241,6 +24882,7 @@
   },
   {
     "name": "simisear",
+    "species": "simisear",
     "speciesNames": {
       "ja-Hrkt": "バオッキー",
       "ko": "바오키",
@@ -24276,6 +24918,7 @@
   },
   {
     "name": "panpour",
+    "species": "panpour",
     "speciesNames": {
       "ja-Hrkt": "ヒヤップ",
       "ko": "앗차프",
@@ -24311,6 +24954,7 @@
   },
   {
     "name": "simipour",
+    "species": "simipour",
     "speciesNames": {
       "ja-Hrkt": "ヒヤッキー",
       "ko": "앗차키",
@@ -24346,6 +24990,7 @@
   },
   {
     "name": "munna",
+    "species": "munna",
     "speciesNames": {
       "ja-Hrkt": "ムンナ",
       "ko": "몽나",
@@ -24381,6 +25026,7 @@
   },
   {
     "name": "musharna",
+    "species": "musharna",
     "speciesNames": {
       "ja-Hrkt": "ムシャーナ",
       "ko": "몽얌나",
@@ -24416,6 +25062,7 @@
   },
   {
     "name": "pidove",
+    "species": "pidove",
     "speciesNames": {
       "ja-Hrkt": "マメパト",
       "ko": "콩둘기",
@@ -24452,6 +25099,7 @@
   },
   {
     "name": "tranquill",
+    "species": "tranquill",
     "speciesNames": {
       "ja-Hrkt": "ハトーボー",
       "ko": "유토브",
@@ -24488,6 +25136,7 @@
   },
   {
     "name": "unfezant",
+    "species": "unfezant",
     "speciesNames": {
       "ja-Hrkt": "ケンホロウ",
       "ko": "켄호로우",
@@ -24524,6 +25173,7 @@
   },
   {
     "name": "blitzle",
+    "species": "blitzle",
     "speciesNames": {
       "ja-Hrkt": "シママ",
       "ko": "줄뮤마",
@@ -24559,6 +25209,7 @@
   },
   {
     "name": "zebstrika",
+    "species": "zebstrika",
     "speciesNames": {
       "ja-Hrkt": "ゼブライカ",
       "ko": "제브라이카",
@@ -24594,6 +25245,7 @@
   },
   {
     "name": "roggenrola",
+    "species": "roggenrola",
     "speciesNames": {
       "ja-Hrkt": "ダンゴロ",
       "ko": "단굴",
@@ -24629,6 +25281,7 @@
   },
   {
     "name": "boldore",
+    "species": "boldore",
     "speciesNames": {
       "ja-Hrkt": "ガントル",
       "ko": "암트르",
@@ -24664,6 +25317,7 @@
   },
   {
     "name": "gigalith",
+    "species": "gigalith",
     "speciesNames": {
       "ja-Hrkt": "ギガイアス",
       "ko": "기가이어스",
@@ -24699,6 +25353,7 @@
   },
   {
     "name": "woobat",
+    "species": "woobat",
     "speciesNames": {
       "ja-Hrkt": "コロモリ",
       "ko": "또르박쥐",
@@ -24735,6 +25390,7 @@
   },
   {
     "name": "swoobat",
+    "species": "swoobat",
     "speciesNames": {
       "ja-Hrkt": "ココロモリ",
       "ko": "맘박쥐",
@@ -24771,6 +25427,7 @@
   },
   {
     "name": "drilbur",
+    "species": "drilbur",
     "speciesNames": {
       "ja-Hrkt": "モグリュー",
       "ko": "두더류",
@@ -24806,6 +25463,7 @@
   },
   {
     "name": "excadrill",
+    "species": "excadrill",
     "speciesNames": {
       "ja-Hrkt": "ドリュウズ",
       "ko": "몰드류",
@@ -24842,6 +25500,7 @@
   },
   {
     "name": "excadrill-mega",
+    "species": "excadrill",
     "speciesNames": {
       "ja-Hrkt": "ドリュウズ",
       "ko": "몰드류",
@@ -24882,6 +25541,7 @@
   },
   {
     "name": "audino",
+    "species": "audino",
     "speciesNames": {
       "ja-Hrkt": "タブンネ",
       "ko": "다부니",
@@ -24917,6 +25577,7 @@
   },
   {
     "name": "audino-mega",
+    "species": "audino",
     "speciesNames": {
       "ja-Hrkt": "タブンネ",
       "ko": "다부니",
@@ -24964,6 +25625,7 @@
   },
   {
     "name": "timburr",
+    "species": "timburr",
     "speciesNames": {
       "ja-Hrkt": "ドッコラー",
       "ko": "으랏차",
@@ -24999,6 +25661,7 @@
   },
   {
     "name": "gurdurr",
+    "species": "gurdurr",
     "speciesNames": {
       "ja-Hrkt": "ドテッコツ",
       "ko": "토쇠골",
@@ -25034,6 +25697,7 @@
   },
   {
     "name": "conkeldurr",
+    "species": "conkeldurr",
     "speciesNames": {
       "ja-Hrkt": "ローブシン",
       "ko": "노보청",
@@ -25069,6 +25733,7 @@
   },
   {
     "name": "tympole",
+    "species": "tympole",
     "speciesNames": {
       "ja-Hrkt": "オタマロ",
       "ko": "동챙이",
@@ -25104,6 +25769,7 @@
   },
   {
     "name": "palpitoad",
+    "species": "palpitoad",
     "speciesNames": {
       "ja-Hrkt": "ガマガル",
       "ko": "두까비",
@@ -25140,6 +25806,7 @@
   },
   {
     "name": "seismitoad",
+    "species": "seismitoad",
     "speciesNames": {
       "ja-Hrkt": "ガマゲロゲ",
       "ko": "두빅굴",
@@ -25176,6 +25843,7 @@
   },
   {
     "name": "throh",
+    "species": "throh",
     "speciesNames": {
       "ja-Hrkt": "ナゲキ",
       "ko": "던지미",
@@ -25211,6 +25879,7 @@
   },
   {
     "name": "sawk",
+    "species": "sawk",
     "speciesNames": {
       "ja-Hrkt": "ダゲキ",
       "ko": "타격귀",
@@ -25246,6 +25915,7 @@
   },
   {
     "name": "sewaddle",
+    "species": "sewaddle",
     "speciesNames": {
       "ja-Hrkt": "クルミル",
       "ko": "두르보",
@@ -25282,6 +25952,7 @@
   },
   {
     "name": "swadloon",
+    "species": "swadloon",
     "speciesNames": {
       "ja-Hrkt": "クルマユ",
       "ko": "두르쿤",
@@ -25318,6 +25989,7 @@
   },
   {
     "name": "leavanny",
+    "species": "leavanny",
     "speciesNames": {
       "ja-Hrkt": "ハハコモリ",
       "ko": "모아머",
@@ -25354,6 +26026,7 @@
   },
   {
     "name": "venipede",
+    "species": "venipede",
     "speciesNames": {
       "ja-Hrkt": "フシデ",
       "ko": "마디네",
@@ -25390,6 +26063,7 @@
   },
   {
     "name": "whirlipede",
+    "species": "whirlipede",
     "speciesNames": {
       "ja-Hrkt": "ホイーガ",
       "ko": "휠구",
@@ -25426,6 +26100,7 @@
   },
   {
     "name": "scolipede",
+    "species": "scolipede",
     "speciesNames": {
       "ja-Hrkt": "ペンドラー",
       "ko": "펜드라",
@@ -25462,6 +26137,7 @@
   },
   {
     "name": "scolipede-mega",
+    "species": "scolipede",
     "speciesNames": {
       "ja-Hrkt": "ペンドラー",
       "ko": "펜드라",
@@ -25502,6 +26178,7 @@
   },
   {
     "name": "cottonee",
+    "species": "cottonee",
     "speciesNames": {
       "ja-Hrkt": "モンメン",
       "ko": "소미안",
@@ -25542,6 +26219,7 @@
   },
   {
     "name": "whimsicott",
+    "species": "whimsicott",
     "speciesNames": {
       "ja-Hrkt": "エルフーン",
       "ko": "엘풍",
@@ -25582,6 +26260,7 @@
   },
   {
     "name": "petilil",
+    "species": "petilil",
     "speciesNames": {
       "ja-Hrkt": "チュリネ",
       "ko": "치릴리",
@@ -25617,6 +26296,7 @@
   },
   {
     "name": "lilligant",
+    "species": "lilligant",
     "speciesNames": {
       "ja-Hrkt": "ドレディア",
       "ko": "드레디어",
@@ -25652,6 +26332,7 @@
   },
   {
     "name": "lilligant-hisui",
+    "species": "lilligant",
     "speciesNames": {
       "ja-Hrkt": "ドレディア",
       "ko": "드레디어",
@@ -25694,6 +26375,7 @@
   },
   {
     "name": "basculin-red-striped",
+    "species": "basculin",
     "speciesNames": {
       "ja-Hrkt": "バスラオ",
       "ko": "배쓰나이",
@@ -25740,6 +26422,7 @@
   },
   {
     "name": "sandile",
+    "species": "sandile",
     "speciesNames": {
       "ja-Hrkt": "メグロコ",
       "ko": "깜눈크",
@@ -25776,6 +26459,7 @@
   },
   {
     "name": "krokorok",
+    "species": "krokorok",
     "speciesNames": {
       "ja-Hrkt": "ワルビル",
       "ko": "악비르",
@@ -25812,6 +26496,7 @@
   },
   {
     "name": "krookodile",
+    "species": "krookodile",
     "speciesNames": {
       "ja-Hrkt": "ワルビアル",
       "ko": "악비아르",
@@ -25848,6 +26533,7 @@
   },
   {
     "name": "darumaka",
+    "species": "darumaka",
     "speciesNames": {
       "ja-Hrkt": "ダルマッカ",
       "ko": "달막화",
@@ -25883,6 +26569,7 @@
   },
   {
     "name": "darumaka-galar",
+    "species": "darumaka",
     "speciesNames": {
       "ja-Hrkt": "ダルマッカ",
       "ko": "달막화",
@@ -25929,6 +26616,7 @@
   },
   {
     "name": "darmanitan-standard",
+    "species": "darmanitan",
     "speciesNames": {
       "ja-Hrkt": "ヒヒダルマ",
       "ko": "불비달마",
@@ -25975,6 +26663,7 @@
   },
   {
     "name": "darmanitan-zen",
+    "species": "darmanitan",
     "speciesNames": {
       "ja-Hrkt": "ヒヒダルマ",
       "ko": "불비달마",
@@ -26022,6 +26711,7 @@
   },
   {
     "name": "darmanitan-galar-standard",
+    "species": "darmanitan",
     "speciesNames": {
       "ja-Hrkt": "ヒヒダルマ",
       "ko": "불비달마",
@@ -26068,6 +26758,7 @@
   },
   {
     "name": "darmanitan-galar-zen",
+    "species": "darmanitan",
     "speciesNames": {
       "ja-Hrkt": "ヒヒダルマ",
       "ko": "불비달마",
@@ -26115,6 +26806,7 @@
   },
   {
     "name": "maractus",
+    "species": "maractus",
     "speciesNames": {
       "ja-Hrkt": "マラカッチ",
       "ko": "마라카치",
@@ -26150,6 +26842,7 @@
   },
   {
     "name": "dwebble",
+    "species": "dwebble",
     "speciesNames": {
       "ja-Hrkt": "イシズマイ",
       "ko": "돌살이",
@@ -26186,6 +26879,7 @@
   },
   {
     "name": "crustle",
+    "species": "crustle",
     "speciesNames": {
       "ja-Hrkt": "イワパレス",
       "ko": "암팰리스",
@@ -26222,6 +26916,7 @@
   },
   {
     "name": "scraggy",
+    "species": "scraggy",
     "speciesNames": {
       "ja-Hrkt": "ズルッグ",
       "ko": "곤율랭",
@@ -26258,6 +26953,7 @@
   },
   {
     "name": "scrafty",
+    "species": "scrafty",
     "speciesNames": {
       "ja-Hrkt": "ズルズキン",
       "ko": "곤율거니",
@@ -26294,6 +26990,7 @@
   },
   {
     "name": "scrafty-mega",
+    "species": "scrafty",
     "speciesNames": {
       "ja-Hrkt": "ズルズキン",
       "ko": "곤율거니",
@@ -26334,6 +27031,7 @@
   },
   {
     "name": "sigilyph",
+    "species": "sigilyph",
     "speciesNames": {
       "ja-Hrkt": "シンボラー",
       "ko": "심보러",
@@ -26370,6 +27068,7 @@
   },
   {
     "name": "yamask",
+    "species": "yamask",
     "speciesNames": {
       "ja-Hrkt": "デスマス",
       "ko": "데스마스",
@@ -26405,6 +27104,7 @@
   },
   {
     "name": "yamask-galar",
+    "species": "yamask",
     "speciesNames": {
       "ja-Hrkt": "デスマス",
       "ko": "데스마스",
@@ -26452,6 +27152,7 @@
   },
   {
     "name": "cofagrigus",
+    "species": "cofagrigus",
     "speciesNames": {
       "ja-Hrkt": "デスカーン",
       "ko": "데스니칸",
@@ -26487,6 +27188,7 @@
   },
   {
     "name": "tirtouga",
+    "species": "tirtouga",
     "speciesNames": {
       "ja-Hrkt": "プロトーガ",
       "ko": "프로토가",
@@ -26523,6 +27225,7 @@
   },
   {
     "name": "carracosta",
+    "species": "carracosta",
     "speciesNames": {
       "ja-Hrkt": "アバゴーラ",
       "ko": "늑골라",
@@ -26559,6 +27262,7 @@
   },
   {
     "name": "archen",
+    "species": "archen",
     "speciesNames": {
       "ja-Hrkt": "アーケン",
       "ko": "아켄",
@@ -26595,6 +27299,7 @@
   },
   {
     "name": "archeops",
+    "species": "archeops",
     "speciesNames": {
       "ja-Hrkt": "アーケオス",
       "ko": "아케오스",
@@ -26631,6 +27336,7 @@
   },
   {
     "name": "trubbish",
+    "species": "trubbish",
     "speciesNames": {
       "ja-Hrkt": "ヤブクロン",
       "ko": "깨봉이",
@@ -26666,6 +27372,7 @@
   },
   {
     "name": "garbodor",
+    "species": "garbodor",
     "speciesNames": {
       "ja-Hrkt": "ダストダス",
       "ko": "더스트나",
@@ -26701,6 +27408,7 @@
   },
   {
     "name": "zorua",
+    "species": "zorua",
     "speciesNames": {
       "ja-Hrkt": "ゾロア",
       "ko": "조로아",
@@ -26736,6 +27444,7 @@
   },
   {
     "name": "zorua-hisui",
+    "species": "zorua",
     "speciesNames": {
       "ja-Hrkt": "ゾロア",
       "ko": "조로아",
@@ -26778,6 +27487,7 @@
   },
   {
     "name": "zoroark",
+    "species": "zoroark",
     "speciesNames": {
       "ja-Hrkt": "ゾロアーク",
       "ko": "조로아크",
@@ -26813,6 +27523,7 @@
   },
   {
     "name": "zoroark-hisui",
+    "species": "zoroark",
     "speciesNames": {
       "ja-Hrkt": "ゾロアーク",
       "ko": "조로아크",
@@ -26855,6 +27566,7 @@
   },
   {
     "name": "minccino",
+    "species": "minccino",
     "speciesNames": {
       "ja-Hrkt": "チラーミィ",
       "ko": "치라미",
@@ -26890,6 +27602,7 @@
   },
   {
     "name": "cinccino",
+    "species": "cinccino",
     "speciesNames": {
       "ja-Hrkt": "チラチーノ",
       "ko": "치라치노",
@@ -26925,6 +27638,7 @@
   },
   {
     "name": "gothita",
+    "species": "gothita",
     "speciesNames": {
       "ja-Hrkt": "ゴチム",
       "ko": "고디탱",
@@ -26960,6 +27674,7 @@
   },
   {
     "name": "gothorita",
+    "species": "gothorita",
     "speciesNames": {
       "ja-Hrkt": "ゴチミル",
       "ko": "고디보미",
@@ -26995,6 +27710,7 @@
   },
   {
     "name": "gothitelle",
+    "species": "gothitelle",
     "speciesNames": {
       "ja-Hrkt": "ゴチルゼル",
       "ko": "고디모아젤",
@@ -27030,6 +27746,7 @@
   },
   {
     "name": "solosis",
+    "species": "solosis",
     "speciesNames": {
       "ja-Hrkt": "ユニラン",
       "ko": "유니란",
@@ -27065,6 +27782,7 @@
   },
   {
     "name": "duosion",
+    "species": "duosion",
     "speciesNames": {
       "ja-Hrkt": "ダブラン",
       "ko": "듀란",
@@ -27100,6 +27818,7 @@
   },
   {
     "name": "reuniclus",
+    "species": "reuniclus",
     "speciesNames": {
       "ja-Hrkt": "ランクルス",
       "ko": "란쿨루스",
@@ -27135,6 +27854,7 @@
   },
   {
     "name": "ducklett",
+    "species": "ducklett",
     "speciesNames": {
       "ja-Hrkt": "コアルヒー",
       "ko": "꼬지보리",
@@ -27171,6 +27891,7 @@
   },
   {
     "name": "swanna",
+    "species": "swanna",
     "speciesNames": {
       "ja-Hrkt": "スワンナ",
       "ko": "스완나",
@@ -27207,6 +27928,7 @@
   },
   {
     "name": "vanillite",
+    "species": "vanillite",
     "speciesNames": {
       "ja-Hrkt": "バニプッチ",
       "ko": "바닐프티",
@@ -27242,6 +27964,7 @@
   },
   {
     "name": "vanillish",
+    "species": "vanillish",
     "speciesNames": {
       "ja-Hrkt": "バニリッチ",
       "ko": "바닐리치",
@@ -27277,6 +28000,7 @@
   },
   {
     "name": "vanilluxe",
+    "species": "vanilluxe",
     "speciesNames": {
       "ja-Hrkt": "バイバニラ",
       "ko": "배바닐라",
@@ -27312,6 +28036,7 @@
   },
   {
     "name": "deerling",
+    "species": "deerling",
     "speciesNames": {
       "ja-Hrkt": "シキジカ",
       "ko": "사철록",
@@ -27357,6 +28082,7 @@
   },
   {
     "name": "sawsbuck",
+    "species": "sawsbuck",
     "speciesNames": {
       "ja-Hrkt": "メブキジカ",
       "ko": "바라철록",
@@ -27402,6 +28128,7 @@
   },
   {
     "name": "emolga",
+    "species": "emolga",
     "speciesNames": {
       "ja-Hrkt": "エモンガ",
       "ko": "에몽가",
@@ -27438,6 +28165,7 @@
   },
   {
     "name": "karrablast",
+    "species": "karrablast",
     "speciesNames": {
       "ja-Hrkt": "カブルモ",
       "ko": "딱정곤",
@@ -27473,6 +28201,7 @@
   },
   {
     "name": "escavalier",
+    "species": "escavalier",
     "speciesNames": {
       "ja-Hrkt": "シュバルゴ",
       "ko": "슈바르고",
@@ -27509,6 +28238,7 @@
   },
   {
     "name": "foongus",
+    "species": "foongus",
     "speciesNames": {
       "ja-Hrkt": "タマゲタケ",
       "ko": "깜놀버슬",
@@ -27545,6 +28275,7 @@
   },
   {
     "name": "amoonguss",
+    "species": "amoonguss",
     "speciesNames": {
       "ja-Hrkt": "モロバレル",
       "ko": "뽀록나",
@@ -27581,6 +28312,7 @@
   },
   {
     "name": "frillish-male",
+    "species": "frillish",
     "speciesNames": {
       "ja-Hrkt": "プルリル",
       "ko": "탱그릴",
@@ -27628,6 +28360,7 @@
   },
   {
     "name": "jellicent-male",
+    "species": "jellicent",
     "speciesNames": {
       "ja-Hrkt": "ブルンゲル",
       "ko": "탱탱겔",
@@ -27675,6 +28408,7 @@
   },
   {
     "name": "alomomola",
+    "species": "alomomola",
     "speciesNames": {
       "ja-Hrkt": "ママンボウ",
       "ko": "맘복치",
@@ -27710,6 +28444,7 @@
   },
   {
     "name": "joltik",
+    "species": "joltik",
     "speciesNames": {
       "ja-Hrkt": "バチュル",
       "ko": "파쪼옥",
@@ -27746,6 +28481,7 @@
   },
   {
     "name": "galvantula",
+    "species": "galvantula",
     "speciesNames": {
       "ja-Hrkt": "デンチュラ",
       "ko": "전툴라",
@@ -27782,6 +28518,7 @@
   },
   {
     "name": "ferroseed",
+    "species": "ferroseed",
     "speciesNames": {
       "ja-Hrkt": "テッシード",
       "ko": "철시드",
@@ -27818,6 +28555,7 @@
   },
   {
     "name": "ferrothorn",
+    "species": "ferrothorn",
     "speciesNames": {
       "ja-Hrkt": "ナットレイ",
       "ko": "너트령",
@@ -27854,6 +28592,7 @@
   },
   {
     "name": "klink",
+    "species": "klink",
     "speciesNames": {
       "ja-Hrkt": "ギアル",
       "ko": "기어르",
@@ -27889,6 +28628,7 @@
   },
   {
     "name": "klang",
+    "species": "klang",
     "speciesNames": {
       "ja-Hrkt": "ギギアル",
       "ko": "기기어르",
@@ -27924,6 +28664,7 @@
   },
   {
     "name": "klinklang",
+    "species": "klinklang",
     "speciesNames": {
       "ja-Hrkt": "ギギギアル",
       "ko": "기기기어르",
@@ -27959,6 +28700,7 @@
   },
   {
     "name": "tynamo",
+    "species": "tynamo",
     "speciesNames": {
       "ja-Hrkt": "シビシラス",
       "ko": "저리어",
@@ -27994,6 +28736,7 @@
   },
   {
     "name": "eelektrik",
+    "species": "eelektrik",
     "speciesNames": {
       "ja-Hrkt": "シビビール",
       "ko": "저리릴",
@@ -28029,6 +28772,7 @@
   },
   {
     "name": "eelektross",
+    "species": "eelektross",
     "speciesNames": {
       "ja-Hrkt": "シビルドン",
       "ko": "저리더프",
@@ -28064,6 +28808,7 @@
   },
   {
     "name": "eelektross-mega",
+    "species": "eelektross",
     "speciesNames": {
       "ja-Hrkt": "シビルドン",
       "ko": "저리더프",
@@ -28103,6 +28848,7 @@
   },
   {
     "name": "elgyem",
+    "species": "elgyem",
     "speciesNames": {
       "ja-Hrkt": "リグレー",
       "ko": "리그레",
@@ -28138,6 +28884,7 @@
   },
   {
     "name": "beheeyem",
+    "species": "beheeyem",
     "speciesNames": {
       "ja-Hrkt": "オーベム",
       "ko": "벰크",
@@ -28173,6 +28920,7 @@
   },
   {
     "name": "litwick",
+    "species": "litwick",
     "speciesNames": {
       "ja-Hrkt": "ヒトモシ",
       "ko": "불켜미",
@@ -28209,6 +28957,7 @@
   },
   {
     "name": "lampent",
+    "species": "lampent",
     "speciesNames": {
       "ja-Hrkt": "ランプラー",
       "ko": "램프라",
@@ -28245,6 +28994,7 @@
   },
   {
     "name": "chandelure",
+    "species": "chandelure",
     "speciesNames": {
       "ja-Hrkt": "シャンデラ",
       "ko": "샹델라",
@@ -28281,6 +29031,7 @@
   },
   {
     "name": "chandelure-mega",
+    "species": "chandelure",
     "speciesNames": {
       "ja-Hrkt": "シャンデラ",
       "ko": "샹델라",
@@ -28321,6 +29072,7 @@
   },
   {
     "name": "axew",
+    "species": "axew",
     "speciesNames": {
       "ja-Hrkt": "キバゴ",
       "ko": "터검니",
@@ -28356,6 +29108,7 @@
   },
   {
     "name": "fraxure",
+    "species": "fraxure",
     "speciesNames": {
       "ja-Hrkt": "オノンド",
       "ko": "액슨도",
@@ -28391,6 +29144,7 @@
   },
   {
     "name": "haxorus",
+    "species": "haxorus",
     "speciesNames": {
       "ja-Hrkt": "オノノクス",
       "ko": "액스라이즈",
@@ -28426,6 +29180,7 @@
   },
   {
     "name": "cubchoo",
+    "species": "cubchoo",
     "speciesNames": {
       "ja-Hrkt": "クマシュン",
       "ko": "코고미",
@@ -28461,6 +29216,7 @@
   },
   {
     "name": "beartic",
+    "species": "beartic",
     "speciesNames": {
       "ja-Hrkt": "ツンベアー",
       "ko": "툰베어",
@@ -28496,6 +29252,7 @@
   },
   {
     "name": "cryogonal",
+    "species": "cryogonal",
     "speciesNames": {
       "ja-Hrkt": "フリージオ",
       "ko": "프리지오",
@@ -28531,6 +29288,7 @@
   },
   {
     "name": "shelmet",
+    "species": "shelmet",
     "speciesNames": {
       "ja-Hrkt": "チョボマキ",
       "ko": "쪼마리",
@@ -28566,6 +29324,7 @@
   },
   {
     "name": "accelgor",
+    "species": "accelgor",
     "speciesNames": {
       "ja-Hrkt": "アギルダー",
       "ko": "어지리더",
@@ -28601,6 +29360,7 @@
   },
   {
     "name": "stunfisk",
+    "species": "stunfisk",
     "speciesNames": {
       "ja-Hrkt": "マッギョ",
       "ko": "메더",
@@ -28637,6 +29397,7 @@
   },
   {
     "name": "stunfisk-galar",
+    "species": "stunfisk",
     "speciesNames": {
       "ja-Hrkt": "マッギョ",
       "ko": "메더",
@@ -28684,6 +29445,7 @@
   },
   {
     "name": "mienfoo",
+    "species": "mienfoo",
     "speciesNames": {
       "ja-Hrkt": "コジョフー",
       "ko": "비조푸",
@@ -28719,6 +29481,7 @@
   },
   {
     "name": "mienshao",
+    "species": "mienshao",
     "speciesNames": {
       "ja-Hrkt": "コジョンド",
       "ko": "비조도",
@@ -28754,6 +29517,7 @@
   },
   {
     "name": "druddigon",
+    "species": "druddigon",
     "speciesNames": {
       "ja-Hrkt": "クリムガン",
       "ko": "크리만",
@@ -28789,6 +29553,7 @@
   },
   {
     "name": "golett",
+    "species": "golett",
     "speciesNames": {
       "ja-Hrkt": "ゴビット",
       "ko": "골비람",
@@ -28825,6 +29590,7 @@
   },
   {
     "name": "golurk",
+    "species": "golurk",
     "speciesNames": {
       "ja-Hrkt": "ゴルーグ",
       "ko": "골루그",
@@ -28861,6 +29627,7 @@
   },
   {
     "name": "golurk-mega",
+    "species": "golurk",
     "speciesNames": {
       "ja-Hrkt": "ゴルーグ",
       "ko": "골루그",
@@ -28901,6 +29668,7 @@
   },
   {
     "name": "pawniard",
+    "species": "pawniard",
     "speciesNames": {
       "ja-Hrkt": "コマタナ",
       "ko": "자망칼",
@@ -28937,6 +29705,7 @@
   },
   {
     "name": "bisharp",
+    "species": "bisharp",
     "speciesNames": {
       "ja-Hrkt": "キリキザン",
       "ko": "절각참",
@@ -28973,6 +29742,7 @@
   },
   {
     "name": "bouffalant",
+    "species": "bouffalant",
     "speciesNames": {
       "ja-Hrkt": "バッフロン",
       "ko": "버프론",
@@ -29008,6 +29778,7 @@
   },
   {
     "name": "rufflet",
+    "species": "rufflet",
     "speciesNames": {
       "ja-Hrkt": "ワシボン",
       "ko": "수리둥보",
@@ -29044,6 +29815,7 @@
   },
   {
     "name": "braviary",
+    "species": "braviary",
     "speciesNames": {
       "ja-Hrkt": "ウォーグル",
       "ko": "워글",
@@ -29080,6 +29852,7 @@
   },
   {
     "name": "braviary-hisui",
+    "species": "braviary",
     "speciesNames": {
       "ja-Hrkt": "ウォーグル",
       "ko": "워글",
@@ -29122,6 +29895,7 @@
   },
   {
     "name": "vullaby",
+    "species": "vullaby",
     "speciesNames": {
       "ja-Hrkt": "バルチャイ",
       "ko": "벌차이",
@@ -29158,6 +29932,7 @@
   },
   {
     "name": "mandibuzz",
+    "species": "mandibuzz",
     "speciesNames": {
       "ja-Hrkt": "バルジーナ",
       "ko": "버랜지나",
@@ -29194,6 +29969,7 @@
   },
   {
     "name": "heatmor",
+    "species": "heatmor",
     "speciesNames": {
       "ja-Hrkt": "クイタラン",
       "ko": "앤티골",
@@ -29229,6 +30005,7 @@
   },
   {
     "name": "durant",
+    "species": "durant",
     "speciesNames": {
       "ja-Hrkt": "アイアント",
       "ko": "아이앤트",
@@ -29265,6 +30042,7 @@
   },
   {
     "name": "deino",
+    "species": "deino",
     "speciesNames": {
       "ja-Hrkt": "モノズ",
       "ko": "모노두",
@@ -29301,6 +30079,7 @@
   },
   {
     "name": "zweilous",
+    "species": "zweilous",
     "speciesNames": {
       "ja-Hrkt": "ジヘッド",
       "ko": "디헤드",
@@ -29337,6 +30116,7 @@
   },
   {
     "name": "hydreigon",
+    "species": "hydreigon",
     "speciesNames": {
       "ja-Hrkt": "サザンドラ",
       "ko": "삼삼드래",
@@ -29373,6 +30153,7 @@
   },
   {
     "name": "larvesta",
+    "species": "larvesta",
     "speciesNames": {
       "ja-Hrkt": "メラルバ",
       "ko": "활화르바",
@@ -29409,6 +30190,7 @@
   },
   {
     "name": "volcarona",
+    "species": "volcarona",
     "speciesNames": {
       "ja-Hrkt": "ウルガモス",
       "ko": "불카모스",
@@ -29445,6 +30227,7 @@
   },
   {
     "name": "cobalion",
+    "species": "cobalion",
     "speciesNames": {
       "ja-Hrkt": "コバルオン",
       "ko": "코바르온",
@@ -29481,6 +30264,7 @@
   },
   {
     "name": "terrakion",
+    "species": "terrakion",
     "speciesNames": {
       "ja-Hrkt": "テラキオン",
       "ko": "테라키온",
@@ -29517,6 +30301,7 @@
   },
   {
     "name": "virizion",
+    "species": "virizion",
     "speciesNames": {
       "ja-Hrkt": "ビリジオン",
       "ko": "비리디온",
@@ -29553,6 +30338,7 @@
   },
   {
     "name": "tornadus-incarnate",
+    "species": "tornadus",
     "speciesNames": {
       "ja-Hrkt": "トルネロス",
       "ko": "토네로스",
@@ -29599,6 +30385,7 @@
   },
   {
     "name": "tornadus-therian",
+    "species": "tornadus",
     "speciesNames": {
       "ja-Hrkt": "トルネロス",
       "ko": "토네로스",
@@ -29645,6 +30432,7 @@
   },
   {
     "name": "thundurus-incarnate",
+    "species": "thundurus",
     "speciesNames": {
       "ja-Hrkt": "ボルトロス",
       "ko": "볼트로스",
@@ -29692,6 +30480,7 @@
   },
   {
     "name": "thundurus-therian",
+    "species": "thundurus",
     "speciesNames": {
       "ja-Hrkt": "ボルトロス",
       "ko": "볼트로스",
@@ -29739,6 +30528,7 @@
   },
   {
     "name": "reshiram",
+    "species": "reshiram",
     "speciesNames": {
       "ja-Hrkt": "レシラム",
       "ko": "레시라무",
@@ -29775,6 +30565,7 @@
   },
   {
     "name": "zekrom",
+    "species": "zekrom",
     "speciesNames": {
       "ja-Hrkt": "ゼクロム",
       "ko": "제크로무",
@@ -29811,6 +30602,7 @@
   },
   {
     "name": "landorus-incarnate",
+    "species": "landorus",
     "speciesNames": {
       "ja-Hrkt": "ランドロス",
       "ko": "랜드로스",
@@ -29858,6 +30650,7 @@
   },
   {
     "name": "landorus-therian",
+    "species": "landorus",
     "speciesNames": {
       "ja-Hrkt": "ランドロス",
       "ko": "랜드로스",
@@ -29905,6 +30698,7 @@
   },
   {
     "name": "kyurem",
+    "species": "kyurem",
     "speciesNames": {
       "ja-Hrkt": "キュレム",
       "ko": "큐레무",
@@ -29952,6 +30746,7 @@
   },
   {
     "name": "kyurem-black",
+    "species": "kyurem",
     "speciesNames": {
       "ja-Hrkt": "キュレム",
       "ko": "큐레무",
@@ -29999,6 +30794,7 @@
   },
   {
     "name": "kyurem-white",
+    "species": "kyurem",
     "speciesNames": {
       "ja-Hrkt": "キュレム",
       "ko": "큐레무",
@@ -30046,6 +30842,7 @@
   },
   {
     "name": "keldeo-ordinary",
+    "species": "keldeo",
     "speciesNames": {
       "ja-Hrkt": "ケルディオ",
       "ko": "케르디오",
@@ -30093,6 +30890,7 @@
   },
   {
     "name": "meloetta-aria",
+    "species": "meloetta",
     "speciesNames": {
       "ja-Hrkt": "メロエッタ",
       "ko": "메로엣타",
@@ -30140,6 +30938,7 @@
   },
   {
     "name": "meloetta-pirouette",
+    "species": "meloetta",
     "speciesNames": {
       "ja-Hrkt": "メロエッタ",
       "ko": "메로엣타",
@@ -30187,6 +30986,7 @@
   },
   {
     "name": "genesect",
+    "species": "genesect",
     "speciesNames": {
       "ja-Hrkt": "ゲノセクト",
       "ko": "게노세크트",
@@ -30223,6 +31023,7 @@
   },
   {
     "name": "chespin",
+    "species": "chespin",
     "speciesNames": {
       "ja-Hrkt": "ハリマロン",
       "ko": "도치마론",
@@ -30258,6 +31059,7 @@
   },
   {
     "name": "quilladin",
+    "species": "quilladin",
     "speciesNames": {
       "ja-Hrkt": "ハリボーグ",
       "ko": "도치보구",
@@ -30293,6 +31095,7 @@
   },
   {
     "name": "chesnaught",
+    "species": "chesnaught",
     "speciesNames": {
       "ja-Hrkt": "ブリガロン",
       "ko": "브리가론",
@@ -30329,6 +31132,7 @@
   },
   {
     "name": "chesnaught-mega",
+    "species": "chesnaught",
     "speciesNames": {
       "ja-Hrkt": "ブリガロン",
       "ko": "브리가론",
@@ -30369,6 +31173,7 @@
   },
   {
     "name": "fennekin",
+    "species": "fennekin",
     "speciesNames": {
       "ja-Hrkt": "フォッコ",
       "ko": "푸호꼬",
@@ -30404,6 +31209,7 @@
   },
   {
     "name": "braixen",
+    "species": "braixen",
     "speciesNames": {
       "ja-Hrkt": "テールナー",
       "ko": "테르나",
@@ -30439,6 +31245,7 @@
   },
   {
     "name": "delphox",
+    "species": "delphox",
     "speciesNames": {
       "ja-Hrkt": "マフォクシー",
       "ko": "마폭시",
@@ -30475,6 +31282,7 @@
   },
   {
     "name": "delphox-mega",
+    "species": "delphox",
     "speciesNames": {
       "ja-Hrkt": "マフォクシー",
       "ko": "마폭시",
@@ -30515,6 +31323,7 @@
   },
   {
     "name": "froakie",
+    "species": "froakie",
     "speciesNames": {
       "ja-Hrkt": "ケロマツ",
       "ko": "개구마르",
@@ -30550,6 +31359,7 @@
   },
   {
     "name": "frogadier",
+    "species": "frogadier",
     "speciesNames": {
       "ja-Hrkt": "ゲコガシラ",
       "ko": "개굴반장",
@@ -30585,6 +31395,7 @@
   },
   {
     "name": "greninja",
+    "species": "greninja",
     "speciesNames": {
       "ja-Hrkt": "ゲッコウガ",
       "ko": "개굴닌자",
@@ -30621,6 +31432,7 @@
   },
   {
     "name": "greninja-ash",
+    "species": "greninja",
     "speciesNames": {
       "ja-Hrkt": "ゲッコウガ",
       "ko": "개굴닌자",
@@ -30668,6 +31480,7 @@
   },
   {
     "name": "greninja-mega",
+    "species": "greninja",
     "speciesNames": {
       "ja-Hrkt": "ゲッコウガ",
       "ko": "개굴닌자",
@@ -30708,6 +31521,7 @@
   },
   {
     "name": "bunnelby",
+    "species": "bunnelby",
     "speciesNames": {
       "ja-Hrkt": "ホルビー",
       "ko": "파르빗",
@@ -30743,6 +31557,7 @@
   },
   {
     "name": "diggersby",
+    "species": "diggersby",
     "speciesNames": {
       "ja-Hrkt": "ホルード",
       "ko": "파르토",
@@ -30779,6 +31594,7 @@
   },
   {
     "name": "fletchling",
+    "species": "fletchling",
     "speciesNames": {
       "ja-Hrkt": "ヤヤコマ",
       "ko": "화살꼬빈",
@@ -30815,6 +31631,7 @@
   },
   {
     "name": "fletchinder",
+    "species": "fletchinder",
     "speciesNames": {
       "ja-Hrkt": "ヒノヤコマ",
       "ko": "불화살빈",
@@ -30851,6 +31668,7 @@
   },
   {
     "name": "talonflame",
+    "species": "talonflame",
     "speciesNames": {
       "ja-Hrkt": "ファイアロー",
       "ko": "파이어로",
@@ -30887,6 +31705,7 @@
   },
   {
     "name": "scatterbug",
+    "species": "scatterbug",
     "speciesNames": {
       "ja-Hrkt": "コフキムシ",
       "ko": "분이벌레",
@@ -30922,6 +31741,7 @@
   },
   {
     "name": "spewpa",
+    "species": "spewpa",
     "speciesNames": {
       "ja-Hrkt": "コフーライ",
       "ko": "분떠도리",
@@ -30957,6 +31777,7 @@
   },
   {
     "name": "vivillon",
+    "species": "vivillon",
     "speciesNames": {
       "ja-Hrkt": "ビビヨン",
       "ko": "비비용",
@@ -31002,6 +31823,7 @@
   },
   {
     "name": "litleo",
+    "species": "litleo",
     "speciesNames": {
       "ja-Hrkt": "シシコ",
       "ko": "레오꼬",
@@ -31038,6 +31860,7 @@
   },
   {
     "name": "pyroar-male",
+    "species": "pyroar",
     "speciesNames": {
       "ja-Hrkt": "カエンジシ",
       "ko": "화염레오",
@@ -31085,6 +31908,7 @@
   },
   {
     "name": "pyroar-mega",
+    "species": "pyroar",
     "speciesNames": {
       "ja-Hrkt": "カエンジシ",
       "ko": "화염레오",
@@ -31125,6 +31949,7 @@
   },
   {
     "name": "flabebe",
+    "species": "flabebe",
     "speciesNames": {
       "ja-Hrkt": "フラベベ",
       "ko": "플라베베",
@@ -31169,6 +31994,7 @@
   },
   {
     "name": "floette",
+    "species": "floette",
     "speciesNames": {
       "ja-Hrkt": "フラエッテ",
       "ko": "플라엣테",
@@ -31213,6 +32039,7 @@
   },
   {
     "name": "floette-eternal",
+    "species": "floette",
     "speciesNames": {
       "ja-Hrkt": "フラエッテ",
       "ko": "플라엣테",
@@ -31257,6 +32084,7 @@
   },
   {
     "name": "floette-mega",
+    "species": "floette",
     "speciesNames": {
       "ja-Hrkt": "フラエッテ",
       "ko": "플라엣테",
@@ -31296,6 +32124,7 @@
   },
   {
     "name": "florges",
+    "species": "florges",
     "speciesNames": {
       "ja-Hrkt": "フラージェス",
       "ko": "플라제스",
@@ -31340,6 +32169,7 @@
   },
   {
     "name": "skiddo",
+    "species": "skiddo",
     "speciesNames": {
       "ja-Hrkt": "メェークル",
       "ko": "메이클",
@@ -31375,6 +32205,7 @@
   },
   {
     "name": "gogoat",
+    "species": "gogoat",
     "speciesNames": {
       "ja-Hrkt": "ゴーゴート",
       "ko": "고고트",
@@ -31410,6 +32241,7 @@
   },
   {
     "name": "pancham",
+    "species": "pancham",
     "speciesNames": {
       "ja-Hrkt": "ヤンチャム",
       "ko": "판짱",
@@ -31445,6 +32277,7 @@
   },
   {
     "name": "pangoro",
+    "species": "pangoro",
     "speciesNames": {
       "ja-Hrkt": "ゴロンダ",
       "ko": "부란다",
@@ -31481,6 +32314,7 @@
   },
   {
     "name": "furfrou",
+    "species": "furfrou",
     "speciesNames": {
       "ja-Hrkt": "トリミアン",
       "ko": "트리미앙",
@@ -31525,6 +32359,7 @@
   },
   {
     "name": "espurr",
+    "species": "espurr",
     "speciesNames": {
       "ja-Hrkt": "ニャスパー",
       "ko": "냐스퍼",
@@ -31560,6 +32395,7 @@
   },
   {
     "name": "meowstic-male",
+    "species": "meowstic",
     "speciesNames": {
       "ja-Hrkt": "ニャオニクス",
       "ko": "냐오닉스",
@@ -31606,6 +32442,7 @@
   },
   {
     "name": "meowstic-mega",
+    "species": "meowstic",
     "speciesNames": {
       "ja-Hrkt": "ニャオニクス",
       "ko": "냐오닉스",
@@ -31645,6 +32482,7 @@
   },
   {
     "name": "honedge",
+    "species": "honedge",
     "speciesNames": {
       "ja-Hrkt": "ヒトツキ",
       "ko": "단칼빙",
@@ -31681,6 +32519,7 @@
   },
   {
     "name": "doublade",
+    "species": "doublade",
     "speciesNames": {
       "ja-Hrkt": "ニダンギル",
       "ko": "쌍검킬",
@@ -31717,6 +32556,7 @@
   },
   {
     "name": "aegislash-shield",
+    "species": "aegislash",
     "speciesNames": {
       "ja-Hrkt": "ギルガルド",
       "ko": "킬가르도",
@@ -31764,6 +32604,7 @@
   },
   {
     "name": "aegislash-blade",
+    "species": "aegislash",
     "speciesNames": {
       "ja-Hrkt": "ギルガルド",
       "ko": "킬가르도",
@@ -31811,6 +32652,7 @@
   },
   {
     "name": "spritzee",
+    "species": "spritzee",
     "speciesNames": {
       "ja-Hrkt": "シュシュプ",
       "ko": "슈쁘",
@@ -31846,6 +32688,7 @@
   },
   {
     "name": "aromatisse",
+    "species": "aromatisse",
     "speciesNames": {
       "ja-Hrkt": "フレフワン",
       "ko": "프레프티르",
@@ -31881,6 +32724,7 @@
   },
   {
     "name": "swirlix",
+    "species": "swirlix",
     "speciesNames": {
       "ja-Hrkt": "ペロッパフ",
       "ko": "나룸퍼프",
@@ -31916,6 +32760,7 @@
   },
   {
     "name": "slurpuff",
+    "species": "slurpuff",
     "speciesNames": {
       "ja-Hrkt": "ペロリーム",
       "ko": "나루림",
@@ -31951,6 +32796,7 @@
   },
   {
     "name": "inkay",
+    "species": "inkay",
     "speciesNames": {
       "ja-Hrkt": "マーイーカ",
       "ko": "오케이징",
@@ -31987,6 +32833,7 @@
   },
   {
     "name": "malamar",
+    "species": "malamar",
     "speciesNames": {
       "ja-Hrkt": "カラマネロ",
       "ko": "칼라마네로",
@@ -32023,6 +32870,7 @@
   },
   {
     "name": "malamar-mega",
+    "species": "malamar",
     "speciesNames": {
       "ja-Hrkt": "カラマネロ",
       "ko": "칼라마네로",
@@ -32063,6 +32911,7 @@
   },
   {
     "name": "binacle",
+    "species": "binacle",
     "speciesNames": {
       "ja-Hrkt": "カメテテ",
       "ko": "거북손손",
@@ -32099,6 +32948,7 @@
   },
   {
     "name": "barbaracle",
+    "species": "barbaracle",
     "speciesNames": {
       "ja-Hrkt": "ガメノデス",
       "ko": "거북손데스",
@@ -32135,6 +32985,7 @@
   },
   {
     "name": "barbaracle-mega",
+    "species": "barbaracle",
     "speciesNames": {
       "ja-Hrkt": "ガメノデス",
       "ko": "거북손데스",
@@ -32175,6 +33026,7 @@
   },
   {
     "name": "skrelp",
+    "species": "skrelp",
     "speciesNames": {
       "ja-Hrkt": "クズモー",
       "ko": "수레기",
@@ -32211,6 +33063,7 @@
   },
   {
     "name": "dragalge",
+    "species": "dragalge",
     "speciesNames": {
       "ja-Hrkt": "ドラミドロ",
       "ko": "드래캄",
@@ -32247,6 +33100,7 @@
   },
   {
     "name": "dragalge-mega",
+    "species": "dragalge",
     "speciesNames": {
       "ja-Hrkt": "ドラミドロ",
       "ko": "드래캄",
@@ -32287,6 +33141,7 @@
   },
   {
     "name": "clauncher",
+    "species": "clauncher",
     "speciesNames": {
       "ja-Hrkt": "ウデッポウ",
       "ko": "완철포",
@@ -32322,6 +33177,7 @@
   },
   {
     "name": "clawitzer",
+    "species": "clawitzer",
     "speciesNames": {
       "ja-Hrkt": "ブロスター",
       "ko": "블로스터",
@@ -32357,6 +33213,7 @@
   },
   {
     "name": "helioptile",
+    "species": "helioptile",
     "speciesNames": {
       "ja-Hrkt": "エリキテル",
       "ko": "목도리키텔",
@@ -32393,6 +33250,7 @@
   },
   {
     "name": "heliolisk",
+    "species": "heliolisk",
     "speciesNames": {
       "ja-Hrkt": "エレザード",
       "ko": "일레도리자드",
@@ -32429,6 +33287,7 @@
   },
   {
     "name": "tyrunt",
+    "species": "tyrunt",
     "speciesNames": {
       "ja-Hrkt": "チゴラス",
       "ko": "티고라스",
@@ -32465,6 +33324,7 @@
   },
   {
     "name": "tyrantrum",
+    "species": "tyrantrum",
     "speciesNames": {
       "ja-Hrkt": "ガチゴラス",
       "ko": "견고라스",
@@ -32501,6 +33361,7 @@
   },
   {
     "name": "amaura",
+    "species": "amaura",
     "speciesNames": {
       "ja-Hrkt": "アマルス",
       "ko": "아마루스",
@@ -32537,6 +33398,7 @@
   },
   {
     "name": "aurorus",
+    "species": "aurorus",
     "speciesNames": {
       "ja-Hrkt": "アマルルガ",
       "ko": "아마루르가",
@@ -32573,6 +33435,7 @@
   },
   {
     "name": "sylveon",
+    "species": "sylveon",
     "speciesNames": {
       "ja-Hrkt": "ニンフィア",
       "ko": "님피아",
@@ -32608,6 +33471,7 @@
   },
   {
     "name": "hawlucha",
+    "species": "hawlucha",
     "speciesNames": {
       "ja-Hrkt": "ルチャブル",
       "ko": "루차불",
@@ -32644,6 +33508,7 @@
   },
   {
     "name": "hawlucha-mega",
+    "species": "hawlucha",
     "speciesNames": {
       "ja-Hrkt": "ルチャブル",
       "ko": "루차불",
@@ -32684,6 +33549,7 @@
   },
   {
     "name": "dedenne",
+    "species": "dedenne",
     "speciesNames": {
       "ja-Hrkt": "デデンネ",
       "ko": "데덴네",
@@ -32720,6 +33586,7 @@
   },
   {
     "name": "carbink",
+    "species": "carbink",
     "speciesNames": {
       "ja-Hrkt": "メレシー",
       "ko": "멜리시",
@@ -32756,6 +33623,7 @@
   },
   {
     "name": "goomy",
+    "species": "goomy",
     "speciesNames": {
       "ja-Hrkt": "ヌメラ",
       "ko": "미끄메라",
@@ -32791,6 +33659,7 @@
   },
   {
     "name": "sliggoo",
+    "species": "sliggoo",
     "speciesNames": {
       "ja-Hrkt": "ヌメイル",
       "ko": "미끄네일",
@@ -32826,6 +33695,7 @@
   },
   {
     "name": "sliggoo-hisui",
+    "species": "sliggoo",
     "speciesNames": {
       "ja-Hrkt": "ヌメイル",
       "ko": "미끄네일",
@@ -32868,6 +33738,7 @@
   },
   {
     "name": "goodra",
+    "species": "goodra",
     "speciesNames": {
       "ja-Hrkt": "ヌメルゴン",
       "ko": "미끄래곤",
@@ -32903,6 +33774,7 @@
   },
   {
     "name": "goodra-hisui",
+    "species": "goodra",
     "speciesNames": {
       "ja-Hrkt": "ヌメルゴン",
       "ko": "미끄래곤",
@@ -32945,6 +33817,7 @@
   },
   {
     "name": "klefki",
+    "species": "klefki",
     "speciesNames": {
       "ja-Hrkt": "クレッフィ",
       "ko": "클레피",
@@ -32981,6 +33854,7 @@
   },
   {
     "name": "phantump",
+    "species": "phantump",
     "speciesNames": {
       "ja-Hrkt": "ボクレー",
       "ko": "나목령",
@@ -33017,6 +33891,7 @@
   },
   {
     "name": "trevenant",
+    "species": "trevenant",
     "speciesNames": {
       "ja-Hrkt": "オーロット",
       "ko": "대로트",
@@ -33053,6 +33928,7 @@
   },
   {
     "name": "pumpkaboo-average",
+    "species": "pumpkaboo",
     "speciesNames": {
       "ja-Hrkt": "バケッチャ",
       "ko": "호바귀",
@@ -33100,6 +33976,7 @@
   },
   {
     "name": "pumpkaboo-small",
+    "species": "pumpkaboo",
     "speciesNames": {
       "ja-Hrkt": "バケッチャ",
       "ko": "호바귀",
@@ -33147,6 +34024,7 @@
   },
   {
     "name": "pumpkaboo-large",
+    "species": "pumpkaboo",
     "speciesNames": {
       "ja-Hrkt": "バケッチャ",
       "ko": "호바귀",
@@ -33194,6 +34072,7 @@
   },
   {
     "name": "pumpkaboo-super",
+    "species": "pumpkaboo",
     "speciesNames": {
       "ja-Hrkt": "バケッチャ",
       "ko": "호바귀",
@@ -33241,6 +34120,7 @@
   },
   {
     "name": "gourgeist-average",
+    "species": "gourgeist",
     "speciesNames": {
       "ja-Hrkt": "パンプジン",
       "ko": "펌킨인",
@@ -33288,6 +34168,7 @@
   },
   {
     "name": "gourgeist-small",
+    "species": "gourgeist",
     "speciesNames": {
       "ja-Hrkt": "パンプジン",
       "ko": "펌킨인",
@@ -33335,6 +34216,7 @@
   },
   {
     "name": "gourgeist-large",
+    "species": "gourgeist",
     "speciesNames": {
       "ja-Hrkt": "パンプジン",
       "ko": "펌킨인",
@@ -33382,6 +34264,7 @@
   },
   {
     "name": "gourgeist-super",
+    "species": "gourgeist",
     "speciesNames": {
       "ja-Hrkt": "パンプジン",
       "ko": "펌킨인",
@@ -33429,6 +34312,7 @@
   },
   {
     "name": "bergmite",
+    "species": "bergmite",
     "speciesNames": {
       "ja-Hrkt": "カチコール",
       "ko": "꽁어름",
@@ -33464,6 +34348,7 @@
   },
   {
     "name": "avalugg",
+    "species": "avalugg",
     "speciesNames": {
       "ja-Hrkt": "クレベース",
       "ko": "크레베이스",
@@ -33499,6 +34384,7 @@
   },
   {
     "name": "avalugg-hisui",
+    "species": "avalugg",
     "speciesNames": {
       "ja-Hrkt": "クレベース",
       "ko": "크레베이스",
@@ -33541,6 +34427,7 @@
   },
   {
     "name": "noibat",
+    "species": "noibat",
     "speciesNames": {
       "ja-Hrkt": "オンバット",
       "ko": "음뱃",
@@ -33577,6 +34464,7 @@
   },
   {
     "name": "noivern",
+    "species": "noivern",
     "speciesNames": {
       "ja-Hrkt": "オンバーン",
       "ko": "음번",
@@ -33613,6 +34501,7 @@
   },
   {
     "name": "xerneas",
+    "species": "xerneas",
     "speciesNames": {
       "ja-Hrkt": "ゼルネアス",
       "ko": "제르네아스",
@@ -33659,6 +34548,7 @@
   },
   {
     "name": "yveltal",
+    "species": "yveltal",
     "speciesNames": {
       "ja-Hrkt": "イベルタル",
       "ko": "이벨타르",
@@ -33695,6 +34585,7 @@
   },
   {
     "name": "zygarde-50",
+    "species": "zygarde",
     "speciesNames": {
       "ja-Hrkt": "ジガルデ",
       "ko": "지가르데",
@@ -33742,6 +34633,7 @@
   },
   {
     "name": "zygarde-10-power-construct",
+    "species": "zygarde",
     "speciesNames": {
       "ja-Hrkt": "ジガルデ",
       "ko": "지가르데",
@@ -33789,6 +34681,7 @@
   },
   {
     "name": "zygarde-complete",
+    "species": "zygarde",
     "speciesNames": {
       "ja-Hrkt": "ジガルデ",
       "ko": "지가르데",
@@ -33836,6 +34729,7 @@
   },
   {
     "name": "zygarde-mega",
+    "species": "zygarde",
     "speciesNames": {
       "ja-Hrkt": "ジガルデ",
       "ko": "지가르데",
@@ -33876,6 +34770,7 @@
   },
   {
     "name": "diancie",
+    "species": "diancie",
     "speciesNames": {
       "ja-Hrkt": "ディアンシー",
       "ko": "디안시",
@@ -33912,6 +34807,7 @@
   },
   {
     "name": "diancie-mega",
+    "species": "diancie",
     "speciesNames": {
       "ja-Hrkt": "ディアンシー",
       "ko": "디안시",
@@ -33959,6 +34855,7 @@
   },
   {
     "name": "hoopa",
+    "species": "hoopa",
     "speciesNames": {
       "ja-Hrkt": "フーパ",
       "ko": "후파",
@@ -34006,6 +34903,7 @@
   },
   {
     "name": "hoopa-unbound",
+    "species": "hoopa",
     "speciesNames": {
       "ja-Hrkt": "フーパ",
       "ko": "후파",
@@ -34053,6 +34951,7 @@
   },
   {
     "name": "volcanion",
+    "species": "volcanion",
     "speciesNames": {
       "ja-Hrkt": "ボルケニオン",
       "ko": "볼케니온",
@@ -34089,6 +34988,7 @@
   },
   {
     "name": "rowlet",
+    "species": "rowlet",
     "speciesNames": {
       "ja-Hrkt": "モクロー",
       "ko": "나몰빼미",
@@ -34125,6 +35025,7 @@
   },
   {
     "name": "dartrix",
+    "species": "dartrix",
     "speciesNames": {
       "ja-Hrkt": "フクスロー",
       "ko": "빼미스로우",
@@ -34161,6 +35062,7 @@
   },
   {
     "name": "decidueye",
+    "species": "decidueye",
     "speciesNames": {
       "ja-Hrkt": "ジュナイパー",
       "ko": "모크나이퍼",
@@ -34197,6 +35099,7 @@
   },
   {
     "name": "decidueye-hisui",
+    "species": "decidueye",
     "speciesNames": {
       "ja-Hrkt": "ジュナイパー",
       "ko": "모크나이퍼",
@@ -34239,6 +35142,7 @@
   },
   {
     "name": "litten",
+    "species": "litten",
     "speciesNames": {
       "ja-Hrkt": "ニャビー",
       "ko": "냐오불",
@@ -34274,6 +35178,7 @@
   },
   {
     "name": "torracat",
+    "species": "torracat",
     "speciesNames": {
       "ja-Hrkt": "ニャヒート",
       "ko": "냐오히트",
@@ -34309,6 +35214,7 @@
   },
   {
     "name": "incineroar",
+    "species": "incineroar",
     "speciesNames": {
       "ja-Hrkt": "ガオガエン",
       "ko": "어흥염",
@@ -34345,6 +35251,7 @@
   },
   {
     "name": "popplio",
+    "species": "popplio",
     "speciesNames": {
       "ja-Hrkt": "アシマリ",
       "ko": "누리공",
@@ -34380,6 +35287,7 @@
   },
   {
     "name": "brionne",
+    "species": "brionne",
     "speciesNames": {
       "ja-Hrkt": "オシャマリ",
       "ko": "키요공",
@@ -34415,6 +35323,7 @@
   },
   {
     "name": "primarina",
+    "species": "primarina",
     "speciesNames": {
       "ja-Hrkt": "アシレーヌ",
       "ko": "누리레느",
@@ -34451,6 +35360,7 @@
   },
   {
     "name": "pikipek",
+    "species": "pikipek",
     "speciesNames": {
       "ja-Hrkt": "ツツケラ",
       "ko": "콕코구리",
@@ -34487,6 +35397,7 @@
   },
   {
     "name": "trumbeak",
+    "species": "trumbeak",
     "speciesNames": {
       "ja-Hrkt": "ケララッパ",
       "ko": "크라파",
@@ -34523,6 +35434,7 @@
   },
   {
     "name": "toucannon",
+    "species": "toucannon",
     "speciesNames": {
       "ja-Hrkt": "ドデカバシ",
       "ko": "왕큰부리",
@@ -34559,6 +35471,7 @@
   },
   {
     "name": "yungoos",
+    "species": "yungoos",
     "speciesNames": {
       "ja-Hrkt": "ヤングース",
       "ko": "영구스",
@@ -34594,6 +35507,7 @@
   },
   {
     "name": "gumshoos",
+    "species": "gumshoos",
     "speciesNames": {
       "ja-Hrkt": "デカグース",
       "ko": "형사구스",
@@ -34629,6 +35543,7 @@
   },
   {
     "name": "grubbin",
+    "species": "grubbin",
     "speciesNames": {
       "ja-Hrkt": "アゴジムシ",
       "ko": "턱지충이",
@@ -34664,6 +35579,7 @@
   },
   {
     "name": "charjabug",
+    "species": "charjabug",
     "speciesNames": {
       "ja-Hrkt": "デンヂムシ",
       "ko": "전지충이",
@@ -34700,6 +35616,7 @@
   },
   {
     "name": "vikavolt",
+    "species": "vikavolt",
     "speciesNames": {
       "ja-Hrkt": "クワガノン",
       "ko": "투구뿌논",
@@ -34736,6 +35653,7 @@
   },
   {
     "name": "crabrawler",
+    "species": "crabrawler",
     "speciesNames": {
       "ja-Hrkt": "マケンカニ",
       "ko": "오기지게",
@@ -34771,6 +35689,7 @@
   },
   {
     "name": "crabominable",
+    "species": "crabominable",
     "speciesNames": {
       "ja-Hrkt": "ケケンカニ",
       "ko": "모단단게",
@@ -34807,6 +35726,7 @@
   },
   {
     "name": "crabominable-mega",
+    "species": "crabominable",
     "speciesNames": {
       "ja-Hrkt": "ケケンカニ",
       "ko": "모단단게",
@@ -34847,6 +35767,7 @@
   },
   {
     "name": "oricorio-baile",
+    "species": "oricorio",
     "speciesNames": {
       "ja-Hrkt": "オドリドリ",
       "ko": "춤추새",
@@ -34894,6 +35815,7 @@
   },
   {
     "name": "oricorio-pom-pom",
+    "species": "oricorio",
     "speciesNames": {
       "ja-Hrkt": "オドリドリ",
       "ko": "춤추새",
@@ -34941,6 +35863,7 @@
   },
   {
     "name": "oricorio-pau",
+    "species": "oricorio",
     "speciesNames": {
       "ja-Hrkt": "オドリドリ",
       "ko": "춤추새",
@@ -34988,6 +35911,7 @@
   },
   {
     "name": "oricorio-sensu",
+    "species": "oricorio",
     "speciesNames": {
       "ja-Hrkt": "オドリドリ",
       "ko": "춤추새",
@@ -35035,6 +35959,7 @@
   },
   {
     "name": "cutiefly",
+    "species": "cutiefly",
     "speciesNames": {
       "ja-Hrkt": "アブリー",
       "ko": "에블리",
@@ -35071,6 +35996,7 @@
   },
   {
     "name": "ribombee",
+    "species": "ribombee",
     "speciesNames": {
       "ja-Hrkt": "アブリボン",
       "ko": "에리본",
@@ -35107,6 +36033,7 @@
   },
   {
     "name": "rockruff",
+    "species": "rockruff",
     "speciesNames": {
       "ja-Hrkt": "イワンコ",
       "ko": "암멍이",
@@ -35142,6 +36069,7 @@
   },
   {
     "name": "lycanroc-midday",
+    "species": "lycanroc",
     "speciesNames": {
       "ja-Hrkt": "ルガルガン",
       "ko": "루가루암",
@@ -35188,6 +36116,7 @@
   },
   {
     "name": "lycanroc-midnight",
+    "species": "lycanroc",
     "speciesNames": {
       "ja-Hrkt": "ルガルガン",
       "ko": "루가루암",
@@ -35234,6 +36163,7 @@
   },
   {
     "name": "lycanroc-dusk",
+    "species": "lycanroc",
     "speciesNames": {
       "ja-Hrkt": "ルガルガン",
       "ko": "루가루암",
@@ -35280,6 +36210,7 @@
   },
   {
     "name": "wishiwashi-solo",
+    "species": "wishiwashi",
     "speciesNames": {
       "ja-Hrkt": "ヨワシ",
       "ko": "약어리",
@@ -35326,6 +36257,7 @@
   },
   {
     "name": "wishiwashi-school",
+    "species": "wishiwashi",
     "speciesNames": {
       "ja-Hrkt": "ヨワシ",
       "ko": "약어리",
@@ -35372,6 +36304,7 @@
   },
   {
     "name": "mareanie",
+    "species": "mareanie",
     "speciesNames": {
       "ja-Hrkt": "ヒドイデ",
       "ko": "시마사리",
@@ -35408,6 +36341,7 @@
   },
   {
     "name": "toxapex",
+    "species": "toxapex",
     "speciesNames": {
       "ja-Hrkt": "ドヒドイデ",
       "ko": "더시마사리",
@@ -35444,6 +36378,7 @@
   },
   {
     "name": "mudbray",
+    "species": "mudbray",
     "speciesNames": {
       "ja-Hrkt": "ドロバンコ",
       "ko": "머드나기",
@@ -35479,6 +36414,7 @@
   },
   {
     "name": "mudsdale",
+    "species": "mudsdale",
     "speciesNames": {
       "ja-Hrkt": "バンバドロ",
       "ko": "만마드",
@@ -35514,6 +36450,7 @@
   },
   {
     "name": "dewpider",
+    "species": "dewpider",
     "speciesNames": {
       "ja-Hrkt": "シズクモ",
       "ko": "물거미",
@@ -35550,6 +36487,7 @@
   },
   {
     "name": "araquanid",
+    "species": "araquanid",
     "speciesNames": {
       "ja-Hrkt": "オニシズクモ",
       "ko": "깨비물거미",
@@ -35586,6 +36524,7 @@
   },
   {
     "name": "fomantis",
+    "species": "fomantis",
     "speciesNames": {
       "ja-Hrkt": "カリキリ",
       "ko": "짜랑랑",
@@ -35621,6 +36560,7 @@
   },
   {
     "name": "lurantis",
+    "species": "lurantis",
     "speciesNames": {
       "ja-Hrkt": "ラランテス",
       "ko": "라란티스",
@@ -35656,6 +36596,7 @@
   },
   {
     "name": "morelull",
+    "species": "morelull",
     "speciesNames": {
       "ja-Hrkt": "ネマシュ",
       "ko": "자마슈",
@@ -35692,6 +36633,7 @@
   },
   {
     "name": "shiinotic",
+    "species": "shiinotic",
     "speciesNames": {
       "ja-Hrkt": "マシェード",
       "ko": "마셰이드",
@@ -35728,6 +36670,7 @@
   },
   {
     "name": "salandit",
+    "species": "salandit",
     "speciesNames": {
       "ja-Hrkt": "ヤトウモリ",
       "ko": "야도뇽",
@@ -35764,6 +36707,7 @@
   },
   {
     "name": "salazzle",
+    "species": "salazzle",
     "speciesNames": {
       "ja-Hrkt": "エンニュート",
       "ko": "염뉴트",
@@ -35800,6 +36744,7 @@
   },
   {
     "name": "stufful",
+    "species": "stufful",
     "speciesNames": {
       "ja-Hrkt": "ヌイコグマ",
       "ko": "포곰곰",
@@ -35836,6 +36781,7 @@
   },
   {
     "name": "bewear",
+    "species": "bewear",
     "speciesNames": {
       "ja-Hrkt": "キテルグマ",
       "ko": "이븐곰",
@@ -35872,6 +36818,7 @@
   },
   {
     "name": "bounsweet",
+    "species": "bounsweet",
     "speciesNames": {
       "ja-Hrkt": "アマカジ",
       "ko": "달콤아",
@@ -35907,6 +36854,7 @@
   },
   {
     "name": "steenee",
+    "species": "steenee",
     "speciesNames": {
       "it": "Steenee",
       "ja-Hrkt": "アママイコ",
@@ -35942,6 +36890,7 @@
   },
   {
     "name": "tsareena",
+    "species": "tsareena",
     "speciesNames": {
       "ja-Hrkt": "アマージョ",
       "ko": "달코퀸",
@@ -35977,6 +36926,7 @@
   },
   {
     "name": "comfey",
+    "species": "comfey",
     "speciesNames": {
       "ja-Hrkt": "キュワワー",
       "ko": "큐아링",
@@ -36012,6 +36962,7 @@
   },
   {
     "name": "oranguru",
+    "species": "oranguru",
     "speciesNames": {
       "ja-Hrkt": "ヤレユータン",
       "ko": "하랑우탄",
@@ -36048,6 +36999,7 @@
   },
   {
     "name": "passimian",
+    "species": "passimian",
     "speciesNames": {
       "ja-Hrkt": "ナゲツケサル",
       "ko": "내던숭이",
@@ -36083,6 +37035,7 @@
   },
   {
     "name": "wimpod",
+    "species": "wimpod",
     "speciesNames": {
       "ja-Hrkt": "コソクムシ",
       "ko": "꼬시레",
@@ -36119,6 +37072,7 @@
   },
   {
     "name": "golisopod",
+    "species": "golisopod",
     "speciesNames": {
       "ja-Hrkt": "グソクムシャ",
       "ko": "갑주무사",
@@ -36155,6 +37109,7 @@
   },
   {
     "name": "golisopod-mega",
+    "species": "golisopod",
     "speciesNames": {
       "ja-Hrkt": "グソクムシャ",
       "ko": "갑주무사",
@@ -36195,6 +37150,7 @@
   },
   {
     "name": "sandygast",
+    "species": "sandygast",
     "speciesNames": {
       "ja-Hrkt": "スナバァ",
       "ko": "모래꿍",
@@ -36231,6 +37187,7 @@
   },
   {
     "name": "palossand",
+    "species": "palossand",
     "speciesNames": {
       "ja-Hrkt": "シロデスナ",
       "ko": "모래성이당",
@@ -36267,6 +37224,7 @@
   },
   {
     "name": "pyukumuku",
+    "species": "pyukumuku",
     "speciesNames": {
       "ja-Hrkt": "ナマコブシ",
       "ko": "해무기",
@@ -36302,6 +37260,7 @@
   },
   {
     "name": "type-null",
+    "species": "type-null",
     "speciesNames": {
       "ja-Hrkt": "タイプ：ヌル",
       "ko": "타입:널",
@@ -36337,6 +37296,7 @@
   },
   {
     "name": "silvally",
+    "species": "silvally",
     "speciesNames": {
       "ja-Hrkt": "シルヴァディ",
       "ko": "실버디",
@@ -36383,6 +37343,7 @@
   },
   {
     "name": "minior-red-meteor",
+    "species": "minior",
     "speciesNames": {
       "ja-Hrkt": "メテノ",
       "ko": "메테노",
@@ -36430,6 +37391,7 @@
   },
   {
     "name": "minior-red",
+    "species": "minior",
     "speciesNames": {
       "ja-Hrkt": "メテノ",
       "ko": "메테노",
@@ -36477,6 +37439,7 @@
   },
   {
     "name": "komala",
+    "species": "komala",
     "speciesNames": {
       "ja-Hrkt": "ネッコアラ",
       "ko": "자말라",
@@ -36512,6 +37475,7 @@
   },
   {
     "name": "turtonator",
+    "species": "turtonator",
     "speciesNames": {
       "ja-Hrkt": "バクガメス",
       "ko": "폭거북스",
@@ -36548,6 +37512,7 @@
   },
   {
     "name": "togedemaru",
+    "species": "togedemaru",
     "speciesNames": {
       "ja-Hrkt": "トゲデマル",
       "ko": "토게데마루",
@@ -36584,6 +37549,7 @@
   },
   {
     "name": "mimikyu-disguised",
+    "species": "mimikyu",
     "speciesNames": {
       "ja-Hrkt": "ミミッキュ",
       "ko": "따라큐",
@@ -36631,6 +37597,7 @@
   },
   {
     "name": "bruxish",
+    "species": "bruxish",
     "speciesNames": {
       "ja-Hrkt": "ハギギシリ",
       "ko": "치갈기",
@@ -36667,6 +37634,7 @@
   },
   {
     "name": "drampa",
+    "species": "drampa",
     "speciesNames": {
       "ja-Hrkt": "ジジーロン",
       "ko": "할비롱",
@@ -36703,6 +37671,7 @@
   },
   {
     "name": "drampa-mega",
+    "species": "drampa",
     "speciesNames": {
       "ja-Hrkt": "ジジーロン",
       "ko": "할비롱",
@@ -36743,6 +37712,7 @@
   },
   {
     "name": "dhelmise",
+    "species": "dhelmise",
     "speciesNames": {
       "ja-Hrkt": "ダダリン",
       "ko": "타타륜",
@@ -36779,6 +37749,7 @@
   },
   {
     "name": "jangmo-o",
+    "species": "jangmo-o",
     "speciesNames": {
       "ja-Hrkt": "ジャラコ",
       "ko": "짜랑꼬",
@@ -36814,6 +37785,7 @@
   },
   {
     "name": "hakamo-o",
+    "species": "hakamo-o",
     "speciesNames": {
       "ja-Hrkt": "ジャランゴ",
       "ko": "짜랑고우",
@@ -36850,6 +37822,7 @@
   },
   {
     "name": "kommo-o",
+    "species": "kommo-o",
     "speciesNames": {
       "ja-Hrkt": "ジャラランガ",
       "ko": "짜랑고우거",
@@ -36886,6 +37859,7 @@
   },
   {
     "name": "tapu-koko",
+    "species": "tapu-koko",
     "speciesNames": {
       "ja-Hrkt": "カプ・コケコ",
       "ko": "카푸꼬꼬꼭",
@@ -36922,6 +37896,7 @@
   },
   {
     "name": "tapu-lele",
+    "species": "tapu-lele",
     "speciesNames": {
       "ja-Hrkt": "カプ・テテフ",
       "ko": "카푸나비나",
@@ -36958,6 +37933,7 @@
   },
   {
     "name": "tapu-bulu",
+    "species": "tapu-bulu",
     "speciesNames": {
       "ja-Hrkt": "カプ・ブルル",
       "ko": "카푸브루루",
@@ -36994,6 +37970,7 @@
   },
   {
     "name": "tapu-fini",
+    "species": "tapu-fini",
     "speciesNames": {
       "ja-Hrkt": "カプ・レヒレ",
       "ko": "카푸느지느",
@@ -37030,6 +38007,7 @@
   },
   {
     "name": "cosmog",
+    "species": "cosmog",
     "speciesNames": {
       "ja-Hrkt": "コスモッグ",
       "ko": "코스모그",
@@ -37065,6 +38043,7 @@
   },
   {
     "name": "cosmoem",
+    "species": "cosmoem",
     "speciesNames": {
       "ja-Hrkt": "コスモウム",
       "ko": "코스모움",
@@ -37100,6 +38079,7 @@
   },
   {
     "name": "solgaleo",
+    "species": "solgaleo",
     "speciesNames": {
       "ja-Hrkt": "ソルガレオ",
       "ko": "솔가레오",
@@ -37136,6 +38116,7 @@
   },
   {
     "name": "lunala",
+    "species": "lunala",
     "speciesNames": {
       "ja-Hrkt": "ルナアーラ",
       "ko": "루나아라",
@@ -37172,6 +38153,7 @@
   },
   {
     "name": "nihilego",
+    "species": "nihilego",
     "speciesNames": {
       "ja-Hrkt": "ウツロイド",
       "ko": "텅비드",
@@ -37208,6 +38190,7 @@
   },
   {
     "name": "buzzwole",
+    "species": "buzzwole",
     "speciesNames": {
       "ja-Hrkt": "マッシブーン",
       "ko": "매시붕",
@@ -37244,6 +38227,7 @@
   },
   {
     "name": "pheromosa",
+    "species": "pheromosa",
     "speciesNames": {
       "ja-Hrkt": "フェローチェ",
       "ko": "페로코체",
@@ -37280,6 +38264,7 @@
   },
   {
     "name": "xurkitree",
+    "species": "xurkitree",
     "speciesNames": {
       "ja-Hrkt": "デンジュモク",
       "ko": "전수목",
@@ -37315,6 +38300,7 @@
   },
   {
     "name": "celesteela",
+    "species": "celesteela",
     "speciesNames": {
       "ja-Hrkt": "テッカグヤ",
       "ko": "철화구야",
@@ -37351,6 +38337,7 @@
   },
   {
     "name": "kartana",
+    "species": "kartana",
     "speciesNames": {
       "ja-Hrkt": "カミツルギ",
       "ko": "종이신도",
@@ -37387,6 +38374,7 @@
   },
   {
     "name": "guzzlord",
+    "species": "guzzlord",
     "speciesNames": {
       "ja-Hrkt": "アクジキング",
       "ko": "악식킹",
@@ -37423,6 +38411,7 @@
   },
   {
     "name": "necrozma",
+    "species": "necrozma",
     "speciesNames": {
       "ja-Hrkt": "ネクロズマ",
       "ko": "네크로즈마",
@@ -37458,6 +38447,7 @@
   },
   {
     "name": "necrozma-dusk",
+    "species": "necrozma",
     "speciesNames": {
       "ja-Hrkt": "ネクロズマ",
       "ko": "네크로즈마",
@@ -37505,6 +38495,7 @@
   },
   {
     "name": "necrozma-dawn",
+    "species": "necrozma",
     "speciesNames": {
       "ja-Hrkt": "ネクロズマ",
       "ko": "네크로즈마",
@@ -37552,6 +38543,7 @@
   },
   {
     "name": "necrozma-ultra",
+    "species": "necrozma",
     "speciesNames": {
       "ja-Hrkt": "ネクロズマ",
       "ko": "네크로즈마",
@@ -37599,6 +38591,7 @@
   },
   {
     "name": "magearna",
+    "species": "magearna",
     "speciesNames": {
       "ja-Hrkt": "マギアナ",
       "ko": "마기아나",
@@ -37635,6 +38628,7 @@
   },
   {
     "name": "magearna-mega",
+    "species": "magearna",
     "speciesNames": {
       "ja-Hrkt": "マギアナ",
       "ko": "마기아나",
@@ -37675,6 +38669,7 @@
   },
   {
     "name": "marshadow",
+    "species": "marshadow",
     "speciesNames": {
       "ja-Hrkt": "マーシャドー",
       "ko": "마샤도",
@@ -37711,6 +38706,7 @@
   },
   {
     "name": "poipole",
+    "species": "poipole",
     "speciesNames": {
       "ja-Hrkt": "ベベノム",
       "ko": "베베놈",
@@ -37746,6 +38742,7 @@
   },
   {
     "name": "naganadel",
+    "species": "naganadel",
     "speciesNames": {
       "ja-Hrkt": "アーゴヨン",
       "ko": "아고용",
@@ -37782,6 +38779,7 @@
   },
   {
     "name": "stakataka",
+    "species": "stakataka",
     "speciesNames": {
       "ja-Hrkt": "ツンデツンデ",
       "ko": "차곡차곡",
@@ -37818,6 +38816,7 @@
   },
   {
     "name": "blacephalon",
+    "species": "blacephalon",
     "speciesNames": {
       "ja-Hrkt": "ズガドーン",
       "ko": "두파팡",
@@ -37854,6 +38853,7 @@
   },
   {
     "name": "zeraora",
+    "species": "zeraora",
     "speciesNames": {
       "ja-Hrkt": "ゼラオラ",
       "ko": "제라오라",
@@ -37889,6 +38889,7 @@
   },
   {
     "name": "zeraora-mega",
+    "species": "zeraora",
     "speciesNames": {
       "ja-Hrkt": "ゼラオラ",
       "ko": "제라오라",
@@ -37928,6 +38929,7 @@
   },
   {
     "name": "meltan",
+    "species": "meltan",
     "speciesNames": {
       "ja-Hrkt": "メルタン",
       "ko": "멜탄",
@@ -37963,6 +38965,7 @@
   },
   {
     "name": "melmetal",
+    "species": "melmetal",
     "speciesNames": {
       "ja-Hrkt": "メルメタル",
       "ko": "멜메탈",
@@ -37998,6 +39001,7 @@
   },
   {
     "name": "grookey",
+    "species": "grookey",
     "speciesNames": {
       "ja-Hrkt": "サルノリ",
       "ko": "흥나숭",
@@ -38033,6 +39037,7 @@
   },
   {
     "name": "thwackey",
+    "species": "thwackey",
     "speciesNames": {
       "ja-Hrkt": "バチンキー",
       "ko": "채키몽",
@@ -38068,6 +39073,7 @@
   },
   {
     "name": "rillaboom",
+    "species": "rillaboom",
     "speciesNames": {
       "ja-Hrkt": "ゴリランダー",
       "ko": "고릴타",
@@ -38103,6 +39109,7 @@
   },
   {
     "name": "scorbunny",
+    "species": "scorbunny",
     "speciesNames": {
       "ja-Hrkt": "ヒバニー",
       "ko": "염버니",
@@ -38138,6 +39145,7 @@
   },
   {
     "name": "raboot",
+    "species": "raboot",
     "speciesNames": {
       "ja-Hrkt": "ラビフット",
       "ko": "래비풋",
@@ -38173,6 +39181,7 @@
   },
   {
     "name": "cinderace",
+    "species": "cinderace",
     "speciesNames": {
       "ja-Hrkt": "エースバーン",
       "ko": "에이스번",
@@ -38208,6 +39217,7 @@
   },
   {
     "name": "sobble",
+    "species": "sobble",
     "speciesNames": {
       "ja-Hrkt": "メッソン",
       "ko": "울머기",
@@ -38243,6 +39253,7 @@
   },
   {
     "name": "drizzile",
+    "species": "drizzile",
     "speciesNames": {
       "ja-Hrkt": "ジメレオン",
       "ko": "누겔레온",
@@ -38278,6 +39289,7 @@
   },
   {
     "name": "inteleon",
+    "species": "inteleon",
     "speciesNames": {
       "ja-Hrkt": "インテレオン",
       "ko": "인텔리레온",
@@ -38313,6 +39325,7 @@
   },
   {
     "name": "skwovet",
+    "species": "skwovet",
     "speciesNames": {
       "ja-Hrkt": "ホシガリス",
       "ko": "탐리스",
@@ -38348,6 +39361,7 @@
   },
   {
     "name": "greedent",
+    "species": "greedent",
     "speciesNames": {
       "ja-Hrkt": "ヨクバリス",
       "ko": "요씽리스",
@@ -38383,6 +39397,7 @@
   },
   {
     "name": "rookidee",
+    "species": "rookidee",
     "speciesNames": {
       "ja-Hrkt": "ココガラ",
       "ko": "파라꼬",
@@ -38418,6 +39433,7 @@
   },
   {
     "name": "corvisquire",
+    "species": "corvisquire",
     "speciesNames": {
       "ja-Hrkt": "アオガラス",
       "ko": "파크로우",
@@ -38453,6 +39469,7 @@
   },
   {
     "name": "corviknight",
+    "species": "corviknight",
     "speciesNames": {
       "ja-Hrkt": "アーマーガア",
       "ko": "아머까오",
@@ -38489,6 +39506,7 @@
   },
   {
     "name": "blipbug",
+    "species": "blipbug",
     "speciesNames": {
       "ja-Hrkt": "サッチムシ",
       "ko": "두루지벌레",
@@ -38524,6 +39542,7 @@
   },
   {
     "name": "dottler",
+    "species": "dottler",
     "speciesNames": {
       "ja-Hrkt": "レドームシ",
       "ko": "레돔벌레",
@@ -38560,6 +39579,7 @@
   },
   {
     "name": "orbeetle",
+    "species": "orbeetle",
     "speciesNames": {
       "ja-Hrkt": "イオルブ",
       "ko": "이올브",
@@ -38596,6 +39616,7 @@
   },
   {
     "name": "nickit",
+    "species": "nickit",
     "speciesNames": {
       "ja-Hrkt": "クスネ",
       "ko": "훔처우",
@@ -38631,6 +39652,7 @@
   },
   {
     "name": "thievul",
+    "species": "thievul",
     "speciesNames": {
       "ja-Hrkt": "フォクスライ",
       "ko": "폭슬라이",
@@ -38666,6 +39688,7 @@
   },
   {
     "name": "gossifleur",
+    "species": "gossifleur",
     "speciesNames": {
       "ja-Hrkt": "ヒメンカ",
       "ko": "꼬모카",
@@ -38701,6 +39724,7 @@
   },
   {
     "name": "eldegoss",
+    "species": "eldegoss",
     "speciesNames": {
       "ja-Hrkt": "ワタシラガ",
       "ko": "백솜모카",
@@ -38736,6 +39760,7 @@
   },
   {
     "name": "wooloo",
+    "species": "wooloo",
     "speciesNames": {
       "ja-Hrkt": "ウールー",
       "ko": "우르",
@@ -38771,6 +39796,7 @@
   },
   {
     "name": "dubwool",
+    "species": "dubwool",
     "speciesNames": {
       "ja-Hrkt": "バイウールー",
       "ko": "배우르",
@@ -38806,6 +39832,7 @@
   },
   {
     "name": "chewtle",
+    "species": "chewtle",
     "speciesNames": {
       "ja-Hrkt": "カムカメ",
       "ko": "깨물부기",
@@ -38841,6 +39868,7 @@
   },
   {
     "name": "drednaw",
+    "species": "drednaw",
     "speciesNames": {
       "ja-Hrkt": "カジリガメ",
       "ko": "갈가부기",
@@ -38877,6 +39905,7 @@
   },
   {
     "name": "yamper",
+    "species": "yamper",
     "speciesNames": {
       "ja-Hrkt": "ワンパチ",
       "ko": "멍파치",
@@ -38912,6 +39941,7 @@
   },
   {
     "name": "boltund",
+    "species": "boltund",
     "speciesNames": {
       "ja-Hrkt": "パルスワン",
       "ko": "펄스멍",
@@ -38947,6 +39977,7 @@
   },
   {
     "name": "rolycoly",
+    "species": "rolycoly",
     "speciesNames": {
       "ja-Hrkt": "タンドン",
       "ko": "탄동",
@@ -38982,6 +40013,7 @@
   },
   {
     "name": "carkol",
+    "species": "carkol",
     "speciesNames": {
       "ja-Hrkt": "トロッゴン",
       "ko": "탄차곤",
@@ -39018,6 +40050,7 @@
   },
   {
     "name": "coalossal",
+    "species": "coalossal",
     "speciesNames": {
       "ja-Hrkt": "セキタンザン",
       "ko": "석탄산",
@@ -39054,6 +40087,7 @@
   },
   {
     "name": "applin",
+    "species": "applin",
     "speciesNames": {
       "ja-Hrkt": "カジッチュ",
       "ko": "과사삭벌레",
@@ -39090,6 +40124,7 @@
   },
   {
     "name": "flapple",
+    "species": "flapple",
     "speciesNames": {
       "ja-Hrkt": "アップリュー",
       "ko": "애프룡",
@@ -39126,6 +40161,7 @@
   },
   {
     "name": "appletun",
+    "species": "appletun",
     "speciesNames": {
       "ja-Hrkt": "タルップル",
       "ko": "단지래플",
@@ -39162,6 +40198,7 @@
   },
   {
     "name": "silicobra",
+    "species": "silicobra",
     "speciesNames": {
       "ja-Hrkt": "スナヘビ",
       "ko": "모래뱀",
@@ -39197,6 +40234,7 @@
   },
   {
     "name": "sandaconda",
+    "species": "sandaconda",
     "speciesNames": {
       "ja-Hrkt": "サダイジャ",
       "ko": "사다이사",
@@ -39232,6 +40270,7 @@
   },
   {
     "name": "cramorant",
+    "species": "cramorant",
     "speciesNames": {
       "ja-Hrkt": "ウッウ",
       "ko": "윽우지",
@@ -39268,6 +40307,7 @@
   },
   {
     "name": "arrokuda",
+    "species": "arrokuda",
     "speciesNames": {
       "ja-Hrkt": "サシカマス",
       "ko": "찌로꼬치",
@@ -39303,6 +40343,7 @@
   },
   {
     "name": "barraskewda",
+    "species": "barraskewda",
     "speciesNames": {
       "ja-Hrkt": "カマスジョー",
       "ko": "꼬치조",
@@ -39338,6 +40379,7 @@
   },
   {
     "name": "toxel",
+    "species": "toxel",
     "speciesNames": {
       "ja-Hrkt": "エレズン",
       "ko": "일레즌",
@@ -39374,6 +40416,7 @@
   },
   {
     "name": "toxtricity-amped",
+    "species": "toxtricity",
     "speciesNames": {
       "ja-Hrkt": "ストリンダー",
       "ko": "스트린더",
@@ -39421,6 +40464,7 @@
   },
   {
     "name": "sizzlipede",
+    "species": "sizzlipede",
     "speciesNames": {
       "ja-Hrkt": "ヤクデ",
       "ko": "태우지네",
@@ -39457,6 +40501,7 @@
   },
   {
     "name": "centiskorch",
+    "species": "centiskorch",
     "speciesNames": {
       "ja-Hrkt": "マルヤクデ",
       "ko": "다태우지네",
@@ -39493,6 +40538,7 @@
   },
   {
     "name": "clobbopus",
+    "species": "clobbopus",
     "speciesNames": {
       "ja-Hrkt": "タタッコ",
       "ko": "때때무노",
@@ -39528,6 +40574,7 @@
   },
   {
     "name": "grapploct",
+    "species": "grapploct",
     "speciesNames": {
       "ja-Hrkt": "オトスパス",
       "ko": "케오퍼스",
@@ -39563,6 +40610,7 @@
   },
   {
     "name": "sinistea",
+    "species": "sinistea",
     "speciesNames": {
       "ja-Hrkt": "ヤバチャ",
       "ko": "데인차",
@@ -39604,6 +40652,7 @@
   },
   {
     "name": "polteageist",
+    "species": "polteageist",
     "speciesNames": {
       "ja-Hrkt": "ポットデス",
       "ko": "포트데스",
@@ -39645,6 +40694,7 @@
   },
   {
     "name": "hatenna",
+    "species": "hatenna",
     "speciesNames": {
       "ja-Hrkt": "ミブリム",
       "ko": "몸지브림",
@@ -39680,6 +40730,7 @@
   },
   {
     "name": "hattrem",
+    "species": "hattrem",
     "speciesNames": {
       "ja-Hrkt": "テブリム",
       "ko": "손지브림",
@@ -39715,6 +40766,7 @@
   },
   {
     "name": "hatterene",
+    "species": "hatterene",
     "speciesNames": {
       "ja-Hrkt": "ブリムオン",
       "ko": "브리무음",
@@ -39751,6 +40803,7 @@
   },
   {
     "name": "impidimp",
+    "species": "impidimp",
     "speciesNames": {
       "ja-Hrkt": "ベロバー",
       "ko": "메롱꿍",
@@ -39787,6 +40840,7 @@
   },
   {
     "name": "morgrem",
+    "species": "morgrem",
     "speciesNames": {
       "ja-Hrkt": "ギモー",
       "ko": "쏘겨모",
@@ -39823,6 +40877,7 @@
   },
   {
     "name": "grimmsnarl",
+    "species": "grimmsnarl",
     "speciesNames": {
       "ja-Hrkt": "オーロンゲ",
       "ko": "오롱털",
@@ -39859,6 +40914,7 @@
   },
   {
     "name": "obstagoon",
+    "species": "obstagoon",
     "speciesNames": {
       "ja-Hrkt": "タチフサグマ",
       "ko": "가로막구리",
@@ -39895,6 +40951,7 @@
   },
   {
     "name": "perrserker",
+    "species": "perrserker",
     "speciesNames": {
       "ja-Hrkt": "ニャイキング",
       "ko": "나이킹",
@@ -39930,6 +40987,7 @@
   },
   {
     "name": "cursola",
+    "species": "cursola",
     "speciesNames": {
       "ja-Hrkt": "サニゴーン",
       "ko": "산호르곤",
@@ -39965,6 +41023,7 @@
   },
   {
     "name": "sirfetchd",
+    "species": "sirfetchd",
     "speciesNames": {
       "ja-Hrkt": "ネギガナイト",
       "ko": "창파나이트",
@@ -40000,6 +41059,7 @@
   },
   {
     "name": "mr-rime",
+    "species": "mr-rime",
     "speciesNames": {
       "ja-Hrkt": "バリコオル",
       "ko": "마임꽁꽁",
@@ -40036,6 +41096,7 @@
   },
   {
     "name": "runerigus",
+    "species": "runerigus",
     "speciesNames": {
       "ja-Hrkt": "デスバーン",
       "ko": "데스판",
@@ -40072,6 +41133,7 @@
   },
   {
     "name": "milcery",
+    "species": "milcery",
     "speciesNames": {
       "ja-Hrkt": "マホミル",
       "ko": "마빌크",
@@ -40107,6 +41169,7 @@
   },
   {
     "name": "alcremie",
+    "species": "alcremie",
     "speciesNames": {
       "ja-Hrkt": "マホイップ",
       "ko": "마휘핑",
@@ -40153,6 +41216,7 @@
   },
   {
     "name": "falinks",
+    "species": "falinks",
     "speciesNames": {
       "ja-Hrkt": "タイレーツ",
       "ko": "대여르",
@@ -40188,6 +41252,7 @@
   },
   {
     "name": "falinks-mega",
+    "species": "falinks",
     "speciesNames": {
       "ja-Hrkt": "タイレーツ",
       "ko": "대여르",
@@ -40227,6 +41292,7 @@
   },
   {
     "name": "pincurchin",
+    "species": "pincurchin",
     "speciesNames": {
       "ja-Hrkt": "バチンウニ",
       "ko": "찌르성게",
@@ -40262,6 +41328,7 @@
   },
   {
     "name": "snom",
+    "species": "snom",
     "speciesNames": {
       "ja-Hrkt": "ユキハミ",
       "ko": "누니머기",
@@ -40298,6 +41365,7 @@
   },
   {
     "name": "frosmoth",
+    "species": "frosmoth",
     "speciesNames": {
       "ja-Hrkt": "モスノウ",
       "ko": "모스노우",
@@ -40334,6 +41402,7 @@
   },
   {
     "name": "stonjourner",
+    "species": "stonjourner",
     "speciesNames": {
       "ja-Hrkt": "イシヘンジン",
       "ko": "돌헨진",
@@ -40369,6 +41438,7 @@
   },
   {
     "name": "eiscue-ice",
+    "species": "eiscue",
     "speciesNames": {
       "ja-Hrkt": "コオリッポ",
       "ko": "빙큐보",
@@ -40415,6 +41485,7 @@
   },
   {
     "name": "eiscue-noice",
+    "species": "eiscue",
     "speciesNames": {
       "ja-Hrkt": "コオリッポ",
       "ko": "빙큐보",
@@ -40461,6 +41532,7 @@
   },
   {
     "name": "indeedee-male",
+    "species": "indeedee",
     "speciesNames": {
       "ja-Hrkt": "イエッサン",
       "ko": "에써르",
@@ -40508,6 +41580,7 @@
   },
   {
     "name": "indeedee-female",
+    "species": "indeedee",
     "speciesNames": {
       "ja-Hrkt": "イエッサン",
       "ko": "에써르",
@@ -40555,6 +41628,7 @@
   },
   {
     "name": "morpeko-full-belly",
+    "species": "morpeko",
     "speciesNames": {
       "ja-Hrkt": "モルペコ",
       "ko": "모르페코",
@@ -40602,6 +41676,7 @@
   },
   {
     "name": "cufant",
+    "species": "cufant",
     "speciesNames": {
       "ja-Hrkt": "ゾウドウ",
       "ko": "끼리동",
@@ -40637,6 +41712,7 @@
   },
   {
     "name": "copperajah",
+    "species": "copperajah",
     "speciesNames": {
       "ja-Hrkt": "ダイオウドウ",
       "ko": "대왕끼리동",
@@ -40672,6 +41748,7 @@
   },
   {
     "name": "dracozolt",
+    "species": "dracozolt",
     "speciesNames": {
       "ja-Hrkt": "パッチラゴン",
       "ko": "파치래곤",
@@ -40708,6 +41785,7 @@
   },
   {
     "name": "arctozolt",
+    "species": "arctozolt",
     "speciesNames": {
       "ja-Hrkt": "パッチルドン",
       "ko": "파치르돈",
@@ -40744,6 +41822,7 @@
   },
   {
     "name": "dracovish",
+    "species": "dracovish",
     "speciesNames": {
       "ja-Hrkt": "ウオノラゴン",
       "ko": "어래곤",
@@ -40780,6 +41859,7 @@
   },
   {
     "name": "arctovish",
+    "species": "arctovish",
     "speciesNames": {
       "ja-Hrkt": "ウオチルドン",
       "ko": "어치르돈",
@@ -40816,6 +41896,7 @@
   },
   {
     "name": "duraludon",
+    "species": "duraludon",
     "speciesNames": {
       "ja-Hrkt": "ジュラルドン",
       "ko": "두랄루돈",
@@ -40852,6 +41933,7 @@
   },
   {
     "name": "dreepy",
+    "species": "dreepy",
     "speciesNames": {
       "ja-Hrkt": "ドラメシヤ",
       "ko": "드라꼰",
@@ -40888,6 +41970,7 @@
   },
   {
     "name": "drakloak",
+    "species": "drakloak",
     "speciesNames": {
       "ja-Hrkt": "ドロンチ",
       "ko": "드래런치",
@@ -40924,6 +42007,7 @@
   },
   {
     "name": "dragapult",
+    "species": "dragapult",
     "speciesNames": {
       "ja-Hrkt": "ドラパルト",
       "ko": "드래펄트",
@@ -40960,6 +42044,7 @@
   },
   {
     "name": "zacian",
+    "species": "zacian",
     "speciesNames": {
       "ja-Hrkt": "ザシアン",
       "ko": "자시안",
@@ -41006,6 +42091,7 @@
   },
   {
     "name": "zacian-crowned",
+    "species": "zacian",
     "speciesNames": {
       "ja-Hrkt": "ザシアン",
       "ko": "자시안",
@@ -41053,6 +42139,7 @@
   },
   {
     "name": "zamazenta",
+    "species": "zamazenta",
     "speciesNames": {
       "ja-Hrkt": "ザマゼンタ",
       "ko": "자마젠타",
@@ -41099,6 +42186,7 @@
   },
   {
     "name": "zamazenta-crowned",
+    "species": "zamazenta",
     "speciesNames": {
       "ja-Hrkt": "ザマゼンタ",
       "ko": "자마젠타",
@@ -41146,6 +42234,7 @@
   },
   {
     "name": "eternatus",
+    "species": "eternatus",
     "speciesNames": {
       "ja-Hrkt": "ムゲンダイナ",
       "ko": "무한다이노",
@@ -41182,6 +42271,7 @@
   },
   {
     "name": "eternatus-eternamax",
+    "species": "eternatus",
     "speciesNames": {
       "ja-Hrkt": "ムゲンダイナ",
       "ko": "무한다이노",
@@ -41229,6 +42319,7 @@
   },
   {
     "name": "kubfu",
+    "species": "kubfu",
     "speciesNames": {
       "ja-Hrkt": "ダクマ",
       "ko": "치고마",
@@ -41264,6 +42355,7 @@
   },
   {
     "name": "urshifu-single-strike",
+    "species": "urshifu",
     "speciesNames": {
       "ja-Hrkt": "ウーラオス",
       "ko": "우라오스",
@@ -41311,6 +42403,7 @@
   },
   {
     "name": "urshifu-rapid-strike",
+    "species": "urshifu",
     "speciesNames": {
       "ja-Hrkt": "ウーラオス",
       "ko": "우라오스",
@@ -41358,6 +42451,7 @@
   },
   {
     "name": "zarude",
+    "species": "zarude",
     "speciesNames": {
       "ja-Hrkt": "ザルード",
       "ko": "자루도",
@@ -41394,6 +42488,7 @@
   },
   {
     "name": "regieleki",
+    "species": "regieleki",
     "speciesNames": {
       "ja-Hrkt": "レジエレキ",
       "ko": "레지에레키",
@@ -41429,6 +42524,7 @@
   },
   {
     "name": "regidrago",
+    "species": "regidrago",
     "speciesNames": {
       "ja-Hrkt": "レジドラゴ",
       "ko": "레지드래고",
@@ -41464,6 +42560,7 @@
   },
   {
     "name": "glastrier",
+    "species": "glastrier",
     "speciesNames": {
       "ja-Hrkt": "ブリザポス",
       "ko": "블리자포스",
@@ -41499,6 +42596,7 @@
   },
   {
     "name": "spectrier",
+    "species": "spectrier",
     "speciesNames": {
       "ja-Hrkt": "レイスポス",
       "ko": "레이스포스",
@@ -41534,6 +42632,7 @@
   },
   {
     "name": "calyrex",
+    "species": "calyrex",
     "speciesNames": {
       "ja-Hrkt": "バドレックス",
       "ko": "버드렉스",
@@ -41570,6 +42669,7 @@
   },
   {
     "name": "calyrex-ice",
+    "species": "calyrex",
     "speciesNames": {
       "ja-Hrkt": "バドレックス",
       "ko": "버드렉스",
@@ -41617,6 +42717,7 @@
   },
   {
     "name": "calyrex-shadow",
+    "species": "calyrex",
     "speciesNames": {
       "ja-Hrkt": "バドレックス",
       "ko": "버드렉스",
@@ -41664,6 +42765,7 @@
   },
   {
     "name": "wyrdeer",
+    "species": "wyrdeer",
     "speciesNames": {
       "ja-Hrkt": "アヤシシ",
       "ko": "신비록",
@@ -41700,6 +42802,7 @@
   },
   {
     "name": "kleavor",
+    "species": "kleavor",
     "speciesNames": {
       "ja-Hrkt": "バサギリ",
       "ko": "사마자르",
@@ -41736,6 +42839,7 @@
   },
   {
     "name": "ursaluna",
+    "species": "ursaluna",
     "speciesNames": {
       "ja-Hrkt": "ガチグマ",
       "ko": "다투곰",
@@ -41772,6 +42876,7 @@
   },
   {
     "name": "ursaluna-bloodmoon",
+    "species": "ursaluna",
     "speciesNames": {
       "ja-Hrkt": "ガチグマ",
       "ko": "다투곰",
@@ -41819,6 +42924,7 @@
   },
   {
     "name": "basculegion-male",
+    "species": "basculegion",
     "speciesNames": {
       "ja-Hrkt": "イダイトウ",
       "ko": "대쓰여너",
@@ -41860,6 +42966,7 @@
   },
   {
     "name": "basculegion-female",
+    "species": "basculegion",
     "speciesNames": {
       "ja-Hrkt": "イダイトウ",
       "ko": "대쓰여너",
@@ -41902,6 +43009,7 @@
   },
   {
     "name": "sneasler",
+    "species": "sneasler",
     "speciesNames": {
       "ja-Hrkt": "オオニューラ",
       "ko": "포푸니크",
@@ -41938,6 +43046,7 @@
   },
   {
     "name": "overqwil",
+    "species": "overqwil",
     "speciesNames": {
       "ja-Hrkt": "ハリーマン",
       "ko": "장침바루",
@@ -41974,6 +43083,7 @@
   },
   {
     "name": "enamorus-incarnate",
+    "species": "enamorus",
     "speciesNames": {
       "ja-Hrkt": "ラブトロス",
       "ko": "러브로스",
@@ -42015,6 +43125,7 @@
   },
   {
     "name": "enamorus-therian",
+    "species": "enamorus",
     "speciesNames": {
       "ja-Hrkt": "ラブトロス",
       "ko": "러브로스",
@@ -42057,6 +43168,7 @@
   },
   {
     "name": "sprigatito",
+    "species": "sprigatito",
     "speciesNames": {
       "ja-Hrkt": "ニャオハ",
       "ko": "나오하",
@@ -42092,6 +43204,7 @@
   },
   {
     "name": "floragato",
+    "species": "floragato",
     "speciesNames": {
       "ja-Hrkt": "ニャローテ",
       "ko": "나로테",
@@ -42127,6 +43240,7 @@
   },
   {
     "name": "meowscarada",
+    "species": "meowscarada",
     "speciesNames": {
       "ja-Hrkt": "マスカーニャ",
       "ko": "마스카나",
@@ -42163,6 +43277,7 @@
   },
   {
     "name": "fuecoco",
+    "species": "fuecoco",
     "speciesNames": {
       "ja-Hrkt": "ホゲータ",
       "ko": "뜨아거",
@@ -42198,6 +43313,7 @@
   },
   {
     "name": "crocalor",
+    "species": "crocalor",
     "speciesNames": {
       "ja-Hrkt": "アチゲータ",
       "ko": "악뜨거",
@@ -42233,6 +43349,7 @@
   },
   {
     "name": "skeledirge",
+    "species": "skeledirge",
     "speciesNames": {
       "ja-Hrkt": "ラウドボーン",
       "ko": "라우드본",
@@ -42269,6 +43386,7 @@
   },
   {
     "name": "quaxly",
+    "species": "quaxly",
     "speciesNames": {
       "ja-Hrkt": "クワッス",
       "ko": "꾸왁스",
@@ -42304,6 +43422,7 @@
   },
   {
     "name": "quaxwell",
+    "species": "quaxwell",
     "speciesNames": {
       "ja-Hrkt": "ウェルカモ",
       "ko": "아꾸왁",
@@ -42339,6 +43458,7 @@
   },
   {
     "name": "quaquaval",
+    "species": "quaquaval",
     "speciesNames": {
       "ja-Hrkt": "ウェーニバル",
       "ko": "웨이니발",
@@ -42375,6 +43495,7 @@
   },
   {
     "name": "lechonk",
+    "species": "lechonk",
     "speciesNames": {
       "ja-Hrkt": "グルトン",
       "ko": "맛보돈",
@@ -42410,6 +43531,7 @@
   },
   {
     "name": "oinkologne-male",
+    "species": "oinkologne",
     "speciesNames": {
       "ja-Hrkt": "パフュートン",
       "ko": "퍼퓨돈",
@@ -42450,6 +43572,7 @@
   },
   {
     "name": "oinkologne-female",
+    "species": "oinkologne",
     "speciesNames": {
       "ja-Hrkt": "パフュートン",
       "ko": "퍼퓨돈",
@@ -42490,6 +43613,7 @@
   },
   {
     "name": "tarountula",
+    "species": "tarountula",
     "speciesNames": {
       "de": "Tarundel",
       "ja-Hrkt": "タマンチュラ",
@@ -42525,6 +43649,7 @@
   },
   {
     "name": "spidops",
+    "species": "spidops",
     "speciesNames": {
       "ja-Hrkt": "ワナイダー",
       "ko": "트래피더",
@@ -42560,6 +43685,7 @@
   },
   {
     "name": "nymble",
+    "species": "nymble",
     "speciesNames": {
       "ja-Hrkt": "マメバッタ",
       "ko": "콩알뚜기",
@@ -42595,6 +43721,7 @@
   },
   {
     "name": "lokix",
+    "species": "lokix",
     "speciesNames": {
       "ja-Hrkt": "エクスレッグ",
       "ko": "엑스레그",
@@ -42631,6 +43758,7 @@
   },
   {
     "name": "pawmi",
+    "species": "pawmi",
     "speciesNames": {
       "ja-Hrkt": "パモ",
       "ko": "빠모",
@@ -42666,6 +43794,7 @@
   },
   {
     "name": "pawmo",
+    "species": "pawmo",
     "speciesNames": {
       "ja-Hrkt": "パモット",
       "ko": "빠모트",
@@ -42702,6 +43831,7 @@
   },
   {
     "name": "pawmot",
+    "species": "pawmot",
     "speciesNames": {
       "ja-Hrkt": "パーモット",
       "ko": "빠르모트",
@@ -42738,6 +43868,7 @@
   },
   {
     "name": "tandemaus",
+    "species": "tandemaus",
     "speciesNames": {
       "ja-Hrkt": "ワッカネズミ",
       "ko": "두리쥐",
@@ -42773,6 +43904,7 @@
   },
   {
     "name": "maushold-family-of-four",
+    "species": "maushold",
     "speciesNames": {
       "ja-Hrkt": "イッカネズミ",
       "ko": "파밀리쥐",
@@ -42813,6 +43945,7 @@
   },
   {
     "name": "fidough",
+    "species": "fidough",
     "speciesNames": {
       "ja-Hrkt": "パピモッチ",
       "ko": "쫀도기",
@@ -42848,6 +43981,7 @@
   },
   {
     "name": "dachsbun",
+    "species": "dachsbun",
     "speciesNames": {
       "ja-Hrkt": "バウッツェル",
       "ko": "바우첼",
@@ -42883,6 +44017,7 @@
   },
   {
     "name": "smoliv",
+    "species": "smoliv",
     "speciesNames": {
       "ja-Hrkt": "ミニーブ",
       "ko": "미니브",
@@ -42919,6 +44054,7 @@
   },
   {
     "name": "dolliv",
+    "species": "dolliv",
     "speciesNames": {
       "ja-Hrkt": "オリーニョ",
       "ko": "올리뇨",
@@ -42955,6 +44091,7 @@
   },
   {
     "name": "arboliva",
+    "species": "arboliva",
     "speciesNames": {
       "ja-Hrkt": "オリーヴァ",
       "ko": "올리르바",
@@ -42991,6 +44128,7 @@
   },
   {
     "name": "squawkabilly-green-plumage",
+    "species": "squawkabilly",
     "speciesNames": {
       "ja-Hrkt": "イキリンコ",
       "ko": "시비꼬",
@@ -43032,6 +44170,7 @@
   },
   {
     "name": "nacli",
+    "species": "nacli",
     "speciesNames": {
       "ja-Hrkt": "コジオ",
       "ko": "베베솔트",
@@ -43067,6 +44206,7 @@
   },
   {
     "name": "naclstack",
+    "species": "naclstack",
     "speciesNames": {
       "ja-Hrkt": "ジオヅム",
       "ko": "스태솔트",
@@ -43102,6 +44242,7 @@
   },
   {
     "name": "garganacl",
+    "species": "garganacl",
     "speciesNames": {
       "ja-Hrkt": "キョジオーン",
       "ko": "콜로솔트",
@@ -43137,6 +44278,7 @@
   },
   {
     "name": "charcadet",
+    "species": "charcadet",
     "speciesNames": {
       "ja-Hrkt": "カルボウ",
       "ko": "카르본",
@@ -43172,6 +44314,7 @@
   },
   {
     "name": "armarouge",
+    "species": "armarouge",
     "speciesNames": {
       "ja-Hrkt": "グレンアルマ",
       "ko": "카디나르마",
@@ -43208,6 +44351,7 @@
   },
   {
     "name": "ceruledge",
+    "species": "ceruledge",
     "speciesNames": {
       "ja-Hrkt": "ソウブレイズ",
       "ko": "파라블레이즈",
@@ -43244,6 +44388,7 @@
   },
   {
     "name": "tadbulb",
+    "species": "tadbulb",
     "speciesNames": {
       "ja-Hrkt": "ズピカ",
       "ko": "빈나두",
@@ -43279,6 +44424,7 @@
   },
   {
     "name": "bellibolt",
+    "species": "bellibolt",
     "speciesNames": {
       "ja-Hrkt": "ハラバリー",
       "ko": "찌리배리",
@@ -43314,6 +44460,7 @@
   },
   {
     "name": "wattrel",
+    "species": "wattrel",
     "speciesNames": {
       "ja-Hrkt": "カイデン",
       "ko": "찌리비",
@@ -43350,6 +44497,7 @@
   },
   {
     "name": "kilowattrel",
+    "species": "kilowattrel",
     "speciesNames": {
       "ja-Hrkt": "タイカイデン",
       "ko": "찌리비크",
@@ -43386,6 +44534,7 @@
   },
   {
     "name": "maschiff",
+    "species": "maschiff",
     "speciesNames": {
       "ja-Hrkt": "オラチフ",
       "ko": "오라티프",
@@ -43421,6 +44570,7 @@
   },
   {
     "name": "mabosstiff",
+    "species": "mabosstiff",
     "speciesNames": {
       "ja-Hrkt": "マフィティフ",
       "ko": "마피티프",
@@ -43456,6 +44606,7 @@
   },
   {
     "name": "shroodle",
+    "species": "shroodle",
     "speciesNames": {
       "ja-Hrkt": "シルシュルー",
       "ko": "땃쭈르",
@@ -43492,6 +44643,7 @@
   },
   {
     "name": "grafaiai",
+    "species": "grafaiai",
     "speciesNames": {
       "ja-Hrkt": "タギングル",
       "ko": "태깅구르",
@@ -43528,6 +44680,7 @@
   },
   {
     "name": "bramblin",
+    "species": "bramblin",
     "speciesNames": {
       "ja-Hrkt": "アノクサ",
       "ko": "그푸리",
@@ -43564,6 +44717,7 @@
   },
   {
     "name": "brambleghast",
+    "species": "brambleghast",
     "speciesNames": {
       "ja-Hrkt": "アノホラグサ",
       "ko": "공푸리",
@@ -43600,6 +44754,7 @@
   },
   {
     "name": "toedscool",
+    "species": "toedscool",
     "speciesNames": {
       "ja-Hrkt": "ノノクラゲ",
       "ko": "들눈해",
@@ -43636,6 +44791,7 @@
   },
   {
     "name": "toedscruel",
+    "species": "toedscruel",
     "speciesNames": {
       "ja-Hrkt": "リククラゲ",
       "ko": "육파리",
@@ -43672,6 +44828,7 @@
   },
   {
     "name": "klawf",
+    "species": "klawf",
     "speciesNames": {
       "ja-Hrkt": "ガケガニ",
       "ko": "절벼게",
@@ -43707,6 +44864,7 @@
   },
   {
     "name": "capsakid",
+    "species": "capsakid",
     "speciesNames": {
       "ja-Hrkt": "カプサイジ",
       "ko": "캡싸이",
@@ -43742,6 +44900,7 @@
   },
   {
     "name": "scovillain",
+    "species": "scovillain",
     "speciesNames": {
       "ja-Hrkt": "スコヴィラン",
       "ko": "스코빌런",
@@ -43778,6 +44937,7 @@
   },
   {
     "name": "scovillain-mega",
+    "species": "scovillain",
     "speciesNames": {
       "ja-Hrkt": "スコヴィラン",
       "ko": "스코빌런",
@@ -43818,6 +44978,7 @@
   },
   {
     "name": "rellor",
+    "species": "rellor",
     "speciesNames": {
       "ja-Hrkt": "シガロコ",
       "ko": "구르데",
@@ -43853,6 +45014,7 @@
   },
   {
     "name": "rabsca",
+    "species": "rabsca",
     "speciesNames": {
       "ja-Hrkt": "ベラカス",
       "ko": "베라카스",
@@ -43889,6 +45051,7 @@
   },
   {
     "name": "flittle",
+    "species": "flittle",
     "speciesNames": {
       "ja-Hrkt": "ヒラヒナ",
       "ko": "하느라기",
@@ -43924,6 +45087,7 @@
   },
   {
     "name": "espathra",
+    "species": "espathra",
     "speciesNames": {
       "ja-Hrkt": "クエスパトラ",
       "ko": "클레스퍼트라",
@@ -43959,6 +45123,7 @@
   },
   {
     "name": "tinkatink",
+    "species": "tinkatink",
     "speciesNames": {
       "ja-Hrkt": "カヌチャン",
       "ko": "어리짱",
@@ -43995,6 +45160,7 @@
   },
   {
     "name": "tinkatuff",
+    "species": "tinkatuff",
     "speciesNames": {
       "ja-Hrkt": "ナカヌチャン",
       "ko": "벼리짱",
@@ -44031,6 +45197,7 @@
   },
   {
     "name": "tinkaton",
+    "species": "tinkaton",
     "speciesNames": {
       "ja-Hrkt": "デカヌチャン",
       "ko": "두드리짱",
@@ -44067,6 +45234,7 @@
   },
   {
     "name": "wiglett",
+    "species": "wiglett",
     "speciesNames": {
       "ja-Hrkt": "ウミディグダ",
       "ko": "바다그다",
@@ -44102,6 +45270,7 @@
   },
   {
     "name": "wugtrio",
+    "species": "wugtrio",
     "speciesNames": {
       "ja-Hrkt": "ウミトリオ",
       "ko": "바닥트리오",
@@ -44137,6 +45306,7 @@
   },
   {
     "name": "bombirdier",
+    "species": "bombirdier",
     "speciesNames": {
       "ja-Hrkt": "オトシドリ",
       "ko": "떨구새",
@@ -44173,6 +45343,7 @@
   },
   {
     "name": "finizen",
+    "species": "finizen",
     "speciesNames": {
       "ja-Hrkt": "ナミイルカ",
       "ko": "맨돌핀",
@@ -44208,6 +45379,7 @@
   },
   {
     "name": "palafin-zero",
+    "species": "palafin",
     "speciesNames": {
       "ja-Hrkt": "イルカマン",
       "ko": "돌핀맨",
@@ -44248,6 +45420,7 @@
   },
   {
     "name": "palafin-hero",
+    "species": "palafin",
     "speciesNames": {
       "ja-Hrkt": "イルカマン",
       "ko": "돌핀맨",
@@ -44288,6 +45461,7 @@
   },
   {
     "name": "varoom",
+    "species": "varoom",
     "speciesNames": {
       "ja-Hrkt": "ブロロン",
       "ko": "부르롱",
@@ -44324,6 +45498,7 @@
   },
   {
     "name": "revavroom",
+    "species": "revavroom",
     "speciesNames": {
       "ja-Hrkt": "ブロロローム",
       "ko": "부르르룸",
@@ -44360,6 +45535,7 @@
   },
   {
     "name": "cyclizar",
+    "species": "cyclizar",
     "speciesNames": {
       "ja-Hrkt": "モトトカゲ",
       "ko": "모토마",
@@ -44396,6 +45572,7 @@
   },
   {
     "name": "orthworm",
+    "species": "orthworm",
     "speciesNames": {
       "ja-Hrkt": "ミミズズ",
       "ko": "꿈트렁",
@@ -44431,6 +45608,7 @@
   },
   {
     "name": "glimmet",
+    "species": "glimmet",
     "speciesNames": {
       "ja-Hrkt": "キラーメ",
       "ko": "초롱순",
@@ -44467,6 +45645,7 @@
   },
   {
     "name": "glimmora",
+    "species": "glimmora",
     "speciesNames": {
       "ja-Hrkt": "キラフロル",
       "ko": "킬라플로르",
@@ -44503,6 +45682,7 @@
   },
   {
     "name": "glimmora-mega",
+    "species": "glimmora",
     "speciesNames": {
       "ja-Hrkt": "キラフロル",
       "ko": "킬라플로르",
@@ -44543,6 +45723,7 @@
   },
   {
     "name": "greavard",
+    "species": "greavard",
     "speciesNames": {
       "ja-Hrkt": "ボチ",
       "ko": "망망이",
@@ -44578,6 +45759,7 @@
   },
   {
     "name": "houndstone",
+    "species": "houndstone",
     "speciesNames": {
       "ja-Hrkt": "ハカドッグ",
       "ko": "묘두기",
@@ -44613,6 +45795,7 @@
   },
   {
     "name": "flamigo",
+    "species": "flamigo",
     "speciesNames": {
       "ja-Hrkt": "カラミンゴ",
       "ko": "꼬이밍고",
@@ -44649,6 +45832,7 @@
   },
   {
     "name": "cetoddle",
+    "species": "cetoddle",
     "speciesNames": {
       "ja-Hrkt": "アルクジラ",
       "ko": "터벅고래",
@@ -44684,6 +45868,7 @@
   },
   {
     "name": "cetitan",
+    "species": "cetitan",
     "speciesNames": {
       "ja-Hrkt": "ハルクジラ",
       "ko": "우락고래",
@@ -44719,6 +45904,7 @@
   },
   {
     "name": "veluza",
+    "species": "veluza",
     "speciesNames": {
       "ja-Hrkt": "ミガルーサ",
       "ko": "가비루사",
@@ -44755,6 +45941,7 @@
   },
   {
     "name": "dondozo",
+    "species": "dondozo",
     "speciesNames": {
       "ja-Hrkt": "ヘイラッシャ",
       "ko": "어써러셔",
@@ -44790,6 +45977,7 @@
   },
   {
     "name": "tatsugiri-curly",
+    "species": "tatsugiri",
     "speciesNames": {
       "ja-Hrkt": "シャリタツ",
       "ko": "싸리용",
@@ -44831,6 +46019,7 @@
   },
   {
     "name": "tatsugiri-curly-mega",
+    "species": "tatsugiri",
     "speciesNames": {
       "ja-Hrkt": "シャリタツ",
       "ko": "싸리용",
@@ -44871,6 +46060,7 @@
   },
   {
     "name": "annihilape",
+    "species": "annihilape",
     "speciesNames": {
       "ja-Hrkt": "コノヨザル",
       "ko": "저승갓숭",
@@ -44907,6 +46097,7 @@
   },
   {
     "name": "clodsire",
+    "species": "clodsire",
     "speciesNames": {
       "ja-Hrkt": "ドオー",
       "ko": "토오",
@@ -44943,6 +46134,7 @@
   },
   {
     "name": "farigiraf",
+    "species": "farigiraf",
     "speciesNames": {
       "ja-Hrkt": "リキキリン",
       "ko": "키키링",
@@ -44979,6 +46171,7 @@
   },
   {
     "name": "dudunsparce-two-segment",
+    "species": "dudunsparce",
     "speciesNames": {
       "ja-Hrkt": "ノココッチ",
       "ko": "노고고치",
@@ -45019,6 +46212,7 @@
   },
   {
     "name": "kingambit",
+    "species": "kingambit",
     "speciesNames": {
       "ja-Hrkt": "ドドゲザン",
       "ko": "대도각참",
@@ -45055,6 +46249,7 @@
   },
   {
     "name": "great-tusk",
+    "species": "great-tusk",
     "speciesNames": {
       "ja-Hrkt": "イダイナキバ",
       "ko": "위대한엄니",
@@ -45091,6 +46286,7 @@
   },
   {
     "name": "scream-tail",
+    "species": "scream-tail",
     "speciesNames": {
       "ja-Hrkt": "サケブシッポ",
       "ko": "우렁찬꼬리",
@@ -45127,6 +46323,7 @@
   },
   {
     "name": "brute-bonnet",
+    "species": "brute-bonnet",
     "speciesNames": {
       "ja-Hrkt": "アラブルタケ",
       "ko": "사나운버섯",
@@ -45163,6 +46360,7 @@
   },
   {
     "name": "flutter-mane",
+    "species": "flutter-mane",
     "speciesNames": {
       "ja-Hrkt": "ハバタクカミ",
       "ko": "날개치는머리",
@@ -45199,6 +46397,7 @@
   },
   {
     "name": "slither-wing",
+    "species": "slither-wing",
     "speciesNames": {
       "ja-Hrkt": "チヲハウハネ",
       "ko": "땅을기는날개",
@@ -45235,6 +46434,7 @@
   },
   {
     "name": "sandy-shocks",
+    "species": "sandy-shocks",
     "speciesNames": {
       "ja-Hrkt": "スナノケガワ",
       "ko": "모래털가죽",
@@ -45271,6 +46471,7 @@
   },
   {
     "name": "iron-treads",
+    "species": "iron-treads",
     "speciesNames": {
       "ja-Hrkt": "テツノワダチ",
       "ko": "무쇠바퀴",
@@ -45307,6 +46508,7 @@
   },
   {
     "name": "iron-bundle",
+    "species": "iron-bundle",
     "speciesNames": {
       "ja-Hrkt": "テツノツツミ",
       "ko": "무쇠보따리",
@@ -45343,6 +46545,7 @@
   },
   {
     "name": "iron-hands",
+    "species": "iron-hands",
     "speciesNames": {
       "ja-Hrkt": "テツノカイナ",
       "ko": "무쇠손",
@@ -45379,6 +46582,7 @@
   },
   {
     "name": "iron-jugulis",
+    "species": "iron-jugulis",
     "speciesNames": {
       "ja-Hrkt": "テツノコウベ",
       "ko": "무쇠머리",
@@ -45415,6 +46619,7 @@
   },
   {
     "name": "iron-moth",
+    "species": "iron-moth",
     "speciesNames": {
       "ja-Hrkt": "テツノドクガ",
       "ko": "무쇠독나방",
@@ -45451,6 +46656,7 @@
   },
   {
     "name": "iron-thorns",
+    "species": "iron-thorns",
     "speciesNames": {
       "ja-Hrkt": "テツノイバラ",
       "ko": "무쇠가시",
@@ -45487,6 +46693,7 @@
   },
   {
     "name": "frigibax",
+    "species": "frigibax",
     "speciesNames": {
       "ja-Hrkt": "セビエ",
       "ko": "드니차",
@@ -45523,6 +46730,7 @@
   },
   {
     "name": "arctibax",
+    "species": "arctibax",
     "speciesNames": {
       "ja-Hrkt": "セゴール",
       "ko": "드니꽁",
@@ -45559,6 +46767,7 @@
   },
   {
     "name": "baxcalibur",
+    "species": "baxcalibur",
     "speciesNames": {
       "ja-Hrkt": "セグレイブ",
       "ko": "드닐레이브",
@@ -45595,6 +46804,7 @@
   },
   {
     "name": "baxcalibur-mega",
+    "species": "baxcalibur",
     "speciesNames": {
       "ja-Hrkt": "セグレイブ",
       "ko": "드닐레이브",
@@ -45635,6 +46845,7 @@
   },
   {
     "name": "gimmighoul",
+    "species": "gimmighoul",
     "speciesNames": {
       "ja-Hrkt": "コレクレー",
       "ko": "모으령",
@@ -45675,6 +46886,7 @@
   },
   {
     "name": "gimmighoul-roaming",
+    "species": "gimmighoul",
     "speciesNames": {
       "ja-Hrkt": "コレクレー",
       "ko": "모으령",
@@ -45715,6 +46927,7 @@
   },
   {
     "name": "gholdengo",
+    "species": "gholdengo",
     "speciesNames": {
       "ja-Hrkt": "サーフゴー",
       "ko": "타부자고",
@@ -45751,6 +46964,7 @@
   },
   {
     "name": "wo-chien",
+    "species": "wo-chien",
     "speciesNames": {
       "ja-Hrkt": "チオンジェン",
       "ko": "총지엔",
@@ -45787,6 +47001,7 @@
   },
   {
     "name": "chien-pao",
+    "species": "chien-pao",
     "speciesNames": {
       "ja-Hrkt": "パオジアン",
       "ko": "파오젠",
@@ -45823,6 +47038,7 @@
   },
   {
     "name": "ting-lu",
+    "species": "ting-lu",
     "speciesNames": {
       "ja-Hrkt": "ディンルー",
       "ko": "딩루",
@@ -45859,6 +47075,7 @@
   },
   {
     "name": "chi-yu",
+    "species": "chi-yu",
     "speciesNames": {
       "ja-Hrkt": "イーユイ",
       "ko": "위유이",
@@ -45895,6 +47112,7 @@
   },
   {
     "name": "roaring-moon",
+    "species": "roaring-moon",
     "speciesNames": {
       "ja-Hrkt": "トドロクツキ",
       "ko": "고동치는달",
@@ -45931,6 +47149,7 @@
   },
   {
     "name": "iron-valiant",
+    "species": "iron-valiant",
     "speciesNames": {
       "ja-Hrkt": "テツノブジン",
       "ko": "무쇠무인",
@@ -45967,6 +47186,7 @@
   },
   {
     "name": "koraidon",
+    "species": "koraidon",
     "speciesNames": {
       "ja-Hrkt": "コライドン",
       "ko": "코라이돈",
@@ -46008,6 +47228,7 @@
   },
   {
     "name": "miraidon",
+    "species": "miraidon",
     "speciesNames": {
       "ja-Hrkt": "ミライドン",
       "ko": "미라이돈",
@@ -46049,6 +47270,7 @@
   },
   {
     "name": "walking-wake",
+    "species": "walking-wake",
     "speciesNames": {
       "ja-Hrkt": "ウネルミナモ",
       "ko": "굽이치는물결",
@@ -46085,6 +47307,7 @@
   },
   {
     "name": "iron-leaves",
+    "species": "iron-leaves",
     "speciesNames": {
       "ja-Hrkt": "テツノイサハ",
       "ko": "무쇠잎새",
@@ -46121,6 +47344,7 @@
   },
   {
     "name": "dipplin",
+    "species": "dipplin",
     "speciesNames": {
       "ja-Hrkt": "カミッチュ",
       "ko": "과미르",
@@ -46157,6 +47381,7 @@
   },
   {
     "name": "poltchageist",
+    "species": "poltchageist",
     "speciesNames": {
       "ja-Hrkt": "チャデス",
       "ko": "차데스",
@@ -46204,6 +47429,7 @@
   },
   {
     "name": "sinistcha",
+    "species": "sinistcha",
     "speciesNames": {
       "ja-Hrkt": "ヤバソチャ",
       "ko": "그우린차",
@@ -46251,6 +47477,7 @@
   },
   {
     "name": "okidogi",
+    "species": "okidogi",
     "speciesNames": {
       "ja-Hrkt": "イイネイヌ",
       "ko": "조타구",
@@ -46287,6 +47514,7 @@
   },
   {
     "name": "munkidori",
+    "species": "munkidori",
     "speciesNames": {
       "ja-Hrkt": "マシマシラ",
       "ko": "이야후",
@@ -46323,6 +47551,7 @@
   },
   {
     "name": "fezandipiti",
+    "species": "fezandipiti",
     "speciesNames": {
       "ja-Hrkt": "キチキギス",
       "ko": "기로치",
@@ -46359,6 +47588,7 @@
   },
   {
     "name": "ogerpon",
+    "species": "ogerpon",
     "speciesNames": {
       "ja-Hrkt": "オーガポン",
       "ko": "오거폰",
@@ -46405,6 +47635,7 @@
   },
   {
     "name": "ogerpon-wellspring-mask",
+    "species": "ogerpon",
     "speciesNames": {
       "ja-Hrkt": "オーガポン",
       "ko": "오거폰",
@@ -46452,6 +47683,7 @@
   },
   {
     "name": "ogerpon-hearthflame-mask",
+    "species": "ogerpon",
     "speciesNames": {
       "ja-Hrkt": "オーガポン",
       "ko": "오거폰",
@@ -46499,6 +47731,7 @@
   },
   {
     "name": "ogerpon-cornerstone-mask",
+    "species": "ogerpon",
     "speciesNames": {
       "ja-Hrkt": "オーガポン",
       "ko": "오거폰",
@@ -46546,6 +47779,7 @@
   },
   {
     "name": "archaludon",
+    "species": "archaludon",
     "speciesNames": {
       "ja-Hrkt": "ブリジュラス",
       "ko": "브리두라스",
@@ -46582,6 +47816,7 @@
   },
   {
     "name": "hydrapple",
+    "species": "hydrapple",
     "speciesNames": {
       "ja-Hrkt": "カミツオロチ",
       "ko": "과미드라",
@@ -46618,6 +47853,7 @@
   },
   {
     "name": "gouging-fire",
+    "species": "gouging-fire",
     "speciesNames": {
       "ja-Hrkt": "ウガツホムラ",
       "ko": "꿰뚫는화염",
@@ -46654,6 +47890,7 @@
   },
   {
     "name": "raging-bolt",
+    "species": "raging-bolt",
     "speciesNames": {
       "ja-Hrkt": "タケルライコ",
       "ko": "날뛰는우레",
@@ -46690,6 +47927,7 @@
   },
   {
     "name": "iron-boulder",
+    "species": "iron-boulder",
     "speciesNames": {
       "ja-Hrkt": "テツノイワオ",
       "ko": "무쇠암석",
@@ -46726,6 +47964,7 @@
   },
   {
     "name": "iron-crown",
+    "species": "iron-crown",
     "speciesNames": {
       "ja-Hrkt": "テツノカシラ",
       "ko": "무쇠감투",
@@ -46762,6 +48001,7 @@
   },
   {
     "name": "terapagos",
+    "species": "terapagos",
     "speciesNames": {
       "ja-Hrkt": "テラパゴス",
       "ko": "테라파고스",
@@ -46804,6 +48044,7 @@
   },
   {
     "name": "terapagos-terastal",
+    "species": "terapagos",
     "speciesNames": {
       "ja-Hrkt": "テラパゴス",
       "ko": "테라파고스",
@@ -46847,6 +48088,7 @@
   },
   {
     "name": "terapagos-stellar",
+    "species": "terapagos",
     "speciesNames": {
       "ja-Hrkt": "テラパゴス",
       "ko": "테라파고스",
@@ -46889,6 +48131,7 @@
   },
   {
     "name": "pecharunt",
+    "species": "pecharunt",
     "speciesNames": {
       "ja-Hrkt": "モモワロウ",
       "ko": "복숭악동",

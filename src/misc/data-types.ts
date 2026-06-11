@@ -7,6 +7,7 @@ import versionsData from "../../data/versions.json";
 export interface Pokemon {
   id: string;
   name: string;
+  species: string;
   speciesNames: Record<string, string>;
   formNames: Record<string, string>;
   number: number;

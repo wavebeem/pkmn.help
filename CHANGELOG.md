@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-06-10
+
+- Fixed an issue where certain Pokémon were missing from various Pokédexes
+
+  - I now have the opposite problem---too many Pokémon are showing in certain
+    Pokédexes now (e.g. Crystal shows Alolan Raichu, Mega Raichu X, and Mega
+    Raichu Y)
+
+  - I will get around to this eventually, but sorting out Pokédex data is not my
+    idea of a good time
+
+  - I would like to get this issue fixed in my data source, PokeAPI
+
+    - https://github.com/PokeAPI/pokeapi/issues/1266
+
 ## 2026-06-09
 
 - Updated French translation
