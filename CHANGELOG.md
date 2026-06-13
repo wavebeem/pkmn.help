@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-06-13
+
+- Fixed an issue where Generation II - V games and remakes of games from those
+  generations used the Generation VI+ type matchup chart
+
 ## 2026-06-10
 
 - Fixed an issue where certain Pokémon were missing from various Pokédexes
