@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-19
+
+- Updated Spanish translation
+
 ## 2026-06-13
 
 - Fixed an issue where Generation II - V games and remakes of games from those

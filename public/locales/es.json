@@ -3,11 +3,33 @@
   "navigation": {
     "offense": "Ataque",
     "defense": "Defensa",
-    "pokedex": "Pokédex"
+    "pokedex": "Pokédex",
+    "other": "Otros",
+    "settings": "Ajustes",
+    "about": "Acerca de",
+    "menu": "Menú",
+    "close": "Cerrar"
   },
   "offense": {
     "chooseTypes": "Elige los tipos",
     "dealsXTo": "Inflige {{ x }} a",
+    "mode": {
+      "combination": "Doble",
+      "single": "Individual"
+    },
+    "matchups": {
+      "summary": {
+        "heading": "Resumen de enfrentamientos",
+        "damage": "Daño",
+        "combinations": {
+          "heading": "Combinaciones",
+          "empty": "Ningún tipo"
+        }
+      },
+      "types": {
+        "heading": "Tipos afectados"
+      }
+    },
     "abilities": {
       "choose": "Escoger habilidades"
     },
@@ -139,6 +161,9 @@
     "shiny": {
       "text": "Variocolor"
     },
+    "gender": {
+      "text": "Género"
+    },
     "pagination": {
       "next": "Sig.",
       "nextLong": "Siguiente",
@@ -146,6 +171,10 @@
       "previousLong": "Anterior",
       "firstLong": "Primera",
       "lastLong": "Última"
+    },
+    "sorting": {
+      "sortBy": "Ordenar por",
+      "auto": "Por defecto"
     },
     "stats": {
       "hp": "PS",
@@ -193,6 +222,11 @@
     },
     "back": "Volver a la Pokédex"
   },
+  "about": {
+    "easterEgg": {
+      "button": "Mostrar un Pokémon aleatorio"
+    }
+  },
   "more": {
     "contact": {
       "heading": "Contáctame",
@@ -217,12 +251,27 @@
           "night": "Noche"
         }
       },
+      "versionGroup": {
+        "label": "Pokédex",
+        "help": "Controla qué Pokémon y tipos están disponibles.",
+        "values": {
+          "all": "Pokédex Nacional"
+        }
+      },
       "typeCount": {
         "label": "Número de tipos",
         "help": "Los Pokémon pueden tener brevemente tres tipos a la vez si son golpeados con “Condena silvana” o “Halloween”. El campo del tipo terciario está oculto de manera predeterminada, ya que raramente se usa.",
         "values": {
           "2": "Dos tipos (2)",
           "3": "Tres tipos (3)"
+        }
+      },
+      "battleVariant": {
+        "label": "Variante de batalla",
+        "help": "Durante una batalla Inversa, las relaciones entre tipos se invierten y ningún tipo es inmune a otro.",
+        "values": {
+          "regular": "Normal",
+          "inverse_battle": "Batalla Inverso"
         }
       }
     },
@@ -288,7 +337,8 @@
   },
   "general": {
     "loading": "Cargando...",
-    "copyLink": "Copiar link"
+    "copyLink": "Copiar link",
+    "clearChoices": "Limpiar selección"
   },
   "games": {
     "label": "Generación del juego",
