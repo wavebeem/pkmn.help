@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-06-21
+
+- Updated Korean translation
+
 ## 2026-06-19
 
 - Updated Spanish translation

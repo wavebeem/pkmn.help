@@ -3,22 +3,22 @@ title,Pokémon Type Calculator,포켓몬 타입 계산기
 navigation.offense,Offense,공격
 navigation.defense,Defense,방어
 navigation.pokedex,Pokédex,포켓몬 도감
-navigation.other,Other,
-navigation.settings,Settings,
-navigation.about,About,
-navigation.menu,Menu,
-navigation.close,Close,
+navigation.other,Other,기타
+navigation.settings,Settings,설정
+navigation.about,About,정보
+navigation.menu,Menu,메뉴
+navigation.close,Close,닫기
 offense.chooseTypes,Choose attack move types,타입 선택
 offense.dealsXTo,Deals {{ x }} damage to,{{x}} 데미지
-offense.mode.combination,Dual,
-offense.mode.single,Single,
-offense.matchups.summary.heading,Matchup summary,
-offense.matchups.summary.damage,Damage,
-offense.matchups.summary.combinations.heading,Combinations,
-offense.matchups.summary.combinations.empty,No types,
-offense.matchups.types.heading,Matchup types,
+offense.mode.combination,Dual,이중
+offense.mode.single,Single,단일
+offense.matchups.summary.heading,Matchup summary,상성 개요
+offense.matchups.summary.damage,Damage,데미지
+offense.matchups.summary.combinations.heading,Combinations,조합 수
+offense.matchups.summary.combinations.empty,No types,타입 없음
+offense.matchups.types.heading,Matchup types,타입 상성
 offense.abilities.choose,Choose abilities,특성 선택
-offense.specialMoves.choose,Choose special moves,특별 상성 선택
+offense.specialMoves.choose,Choose special moves,특별 상성 기술 선택
 offense.specialMoves.names.freeze-dry,Freeze-Dry,프리즈드라이
 offense.specialMoves.names.thousand_arrows,Thousand Arrows,사우전드애로
 offense.specialMoves.names.flying_press,Flying Press,플라잉프레스
@@ -28,7 +28,7 @@ offense.coverage.weakness,Weak,약점인 포켓몬
 offense.coverage.normal,Neutral,1배인 포켓몬
 offense.coverage.resistance,Resist,내성인 포켓몬
 offense.teraPokemon,Tera Pokémon,테라스탈 포켓몬
-offense.coverageList.empty,No Pokémon found or no types selected,포켓몬을 찾을 수 없거나 유형이 선택되지 않았습니다.
+offense.coverageList.empty,No Pokémon found or no types selected,포켓몬을 찾을 수 없거나 타입이 선택되지 않았습니다.
 offense.coverageList.weakness.heading,Weakness coverage list,약점인 포켓몬 목록
 offense.coverageList.normal.heading,Neutral effectiveness coverage list,1배인 포켓몬 목록
 offense.coverageList.resistance.heading,Resistance coverage list,내성인 포켓몬 목록
@@ -84,9 +84,9 @@ defense.abilityNames.primordial_sea,Primordial Sea,시작의바다
 defense.abilityNames.desolate_land,Desolate Land,끝의대지
 defense.abilityNames.solid_rock,Solid Rock,하드록
 defense.abilityNames.prism_armor,Prism Armor,프리즘아머
-defense.mode.solo,Solo,싱글
-defense.mode.team,Team,더블
-defense.team.tableHeading,Matchup counts,매치업 카운트
+defense.mode.solo,Solo,단독
+defense.mode.team,Team,팀
+defense.team.tableHeading,Matchup counts,상성별 팀원 수
 defense.team.heading,Edit Pokémon team,팀 편집
 defense.team.add,Add Pokémon,포켓몬 추가
 defense.team.empty,No Pokémon selected,선택한 포켓몬 없음
@@ -95,24 +95,24 @@ defense.team.weak,Weak,약점
 defense.team.resist,Resist,내성
 defense.team.simple,Simple,심플
 defense.team.complex,Complex,고급
-defense.team.type,Type,유형
+defense.team.type,Type,타입
 defense.team.edit,Edit,편집
 defense.team.remove,Remove,제거
-pokedex.search.description,"Search by name, number, or types","이름, 번호 또는 유형으로 검색"
+pokedex.search.description,"Search by name, number, or types","이름, 번호 또는 타입으로 검색"
 pokedex.search.help,Help,도움말
 pokedex.search.helpLong,"Help, search Pokédex","도움말, 포켓몬 도감 검색"
 pokedex.search.notFound,No Pokémon found,포켓몬을 찾을 수 없습니다
 pokedex.cry.text,Cry,울음소리
 pokedex.shiny.text,Shiny,색이 다른 포켓몬
-pokedex.gender.text,Gender,
+pokedex.gender.text,Gender,성별
 pokedex.pagination.next,Next,다음
 pokedex.pagination.nextLong,Next,다음
 pokedex.pagination.previous,Prev,이전
 pokedex.pagination.previousLong,Previous,이전
 pokedex.pagination.firstLong,First,처음으로
 pokedex.pagination.lastLong,Last,끝으로
-pokedex.sorting.sortBy,Sort by,
-pokedex.sorting.auto,Auto,
+pokedex.sorting.sortBy,Sort by,정렬 기준
+pokedex.sorting.auto,Auto,자동
 pokedex.stats.hp,HP,HP
 pokedex.stats.hpLong,Hit Points,HP
 pokedex.stats.attack,Attack,공격
@@ -131,8 +131,8 @@ pokedexHelp.searchByName.heading,Search by name,이름으로 검색
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",이름으로 포켓몬을 검색할 수 있습니다. 포켓몬 이름의 일부만 입력해도 찾을 수 있습니다. 다만 아직은 오타가 나면 찾기 어렵습니다.
 pokedexHelp.searchByNumber.heading,Search by number,번호로 검색
 pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.",전국도감 번호로 검색하세요. 이상해씨를 찾는다면 #001이 아니라 1을 입력하세요.
-pokedexHelp.searchByType.heading,Search by type,유형별 검색
-pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,다음은 유형별로 검색하는 방법에 대한 몇 가지 예시입니다.
+pokedexHelp.searchByType.heading,Search by type,타입별 검색
+pokedexHelp.searchByType.description,Here are a few examples of how to seach by type.,다음은 타입별로 검색하는 방법에 대한 몇 가지 예시입니다.
 pokedexHelp.searchExamples.type.query,fire,불꽃
 pokedexHelp.searchExamples.type.description,"Search for Pokémon that have Fire as either of their types in any form (e.g. Charmander, Charizard, Rotom).","파이리, 리자몽, 로토무 등 어떤 형태로든 불꽃 타입을 가진 포켓몬을 찾습니다."
 pokedexHelp.searchExamples.doubleType.query,water flying,물 비행
@@ -140,7 +140,7 @@ pokedexHelp.searchExamples.doubleType.description,Search for Pokémon that are e
 pokedexHelp.searchExamples.singleType.query,grass none,풀 없음
 pokedexHelp.searchExamples.singleType.description,"Search for Pokémon that are only Grass type, no 2nd type (e.g. Tangela, Chikorita, Lilligant).","단일 풀 타입 포켓몬을 검색합니다.(예: 덩쿠리, 치코리타, 드레디어)."
 pokedexHelp.back,Back to Pokédex,포켓몬 도감으로 돌아가기
-about.easterEgg.button,Show random Pokémon,
+about.easterEgg.button,Show random Pokémon,랜덤 포켓몬 보기
 more.contact.heading,Contact me,문의
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","안녕하세요, 저는 <homepage>Sage</homepage> (they/them으로 지칭해 주세요) 이고 Pokémon Type Calculator (PKMN.help)를 만들었습니다."
 more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,여러분의 생각과 감사를 <email>pkmn@wavebeem.com</email> 로 보내주세요.
@@ -154,18 +154,18 @@ more.settings.theme.help,“System default” will change automatically dependin
 more.settings.theme.values.auto,System default,시스템 기본값
 more.settings.theme.values.light,Light,라이트 모드
 more.settings.theme.values.dark,Dark,다크 모드
-more.settings.theme.values.night,Night,
-more.settings.versionGroup.label,Pokédex,
-more.settings.versionGroup.help,Controls available Pokémon and types.,
-more.settings.versionGroup.values.all,National Pokédex,
-more.settings.typeCount.label,Number of types,타입의 수
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,포켓몬이 '숲의저주'나 '핼러윈'에 맞으면 잠시 동안 한 번에 세 가지 유형을 가질 수 있습니다. 세 번째 유형은 거의 사용되지 않기 때문에 기본적으로 숨겨져 있습니다.
-more.settings.typeCount.values.2,Two types (2),두 가지 유형(2)
-more.settings.typeCount.values.3,Three types (3),세 가지 유형 (3)
-more.settings.battleVariant.label,Battle variant,
-more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.",
-more.settings.battleVariant.values.regular,Regular,
-more.settings.battleVariant.values.inverse_battle,Inverse Battle,
+more.settings.theme.values.night,Night,야간 모드
+more.settings.versionGroup.label,Pokédex,포켓몬 도감
+more.settings.versionGroup.help,Controls available Pokémon and types.,사용되는 포켓몬과 타입들을 결정합니다.
+more.settings.versionGroup.values.all,National Pokédex,전국도감
+more.settings.typeCount.label,Number of types,타입 수
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,포켓몬이 '숲의저주'나 '핼러윈'에 맞으면 잠시 동안 한 번에 세 개의 타입을 가질 수 있습니다. 세 번째 타입란은 거의 사용되지 않기 때문에 기본적으로 숨겨져 있습니다.
+more.settings.typeCount.values.2,Two types (2),두 타입 (2)
+more.settings.typeCount.values.3,Three types (3),세 타입 (3)
+more.settings.battleVariant.label,Battle variant,배틀 방식
+more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.",거꾸로 배틀에서는 타입 상성이 반대로 적용되며 어떤 타입도 다른 타입을 무효화 하지 않습니다.
+more.settings.battleVariant.values.regular,Regular,일반
+more.settings.battleVariant.values.inverse_battle,Inverse Battle,거꾸로 배틀
 more.changes.heading,What’s new,새로운 기능
 more.changes.description,See what’s new in the <changelog>changelog</changelog>.,<changelog>변경 로그</changelog> 에서 변경 사항을 볼 수 있습니다.
 more.help.heading,Help,도움말
@@ -176,7 +176,7 @@ more.privacy.description,"I will never run ads or steal your personal data. I us
 more.givingBack.heading,Showing appreciation,감사 표하기
 more.givingBack.description,"I have spent countless hours improving this site. If you appreciate what I've made, please consider donating to charities that support racial justice and transgender rights.",저는 이 사이트를 개선하는 데 많은 시간을 보냈습니다. 제가 만든 것에 고마움을 표하고 싶으시다면 흑인과 원주민 및 트랜스젠더 권리를 지원하는 자선 단체에 기부하는 것을 고려해 주세요.
 more.thanks.heading,Credits,도움을 주신 분들
-more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,
+more.thanks.description,See everyone who's helped make this website in the <credits>credits</credits>.,이 웹사이트 제작에 도움을 주신 분들은 <credits>크레딧</credits>에서 확인할 수 있습니다.
 more.openSource.heading,Open source,오픈 소스
 more.openSource.description,Source code is available on <github>GitHub</github>.,소스 코드는 <github>GitHub</github>에서 확인할 수 있습니다.
 more.legalInfo.heading,Legal info,법률 정보
@@ -205,7 +205,7 @@ banners.updateReady.whatsNew,What’s new,새로운 기능
 banners.updateReady.update,Update,업데이트
 general.loading,Loading…,로딩 중...
 general.copyLink,Copy link,링크 복사
-general.clearChoices,Clear choices,
+general.clearChoices,Clear choices,선택 초기화
 games.label,Game generation,세대
 games.help,Use type effectiveness from different game generations.,다른 세대의 상성 사용하기
 games.byID.gen1,Generation 1,1세대
