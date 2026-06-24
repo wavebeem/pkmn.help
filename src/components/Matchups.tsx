@@ -22,7 +22,6 @@ import { Meter } from "./Meter";
 import { PlainBadge } from "./PlainBadge";
 import { useMediaQuery } from "../hooks/useMediaQuery";
 import { VersionGroup } from "../misc/data-version-groups";
-import { versionGroupToGeneration } from "../hooks/useGeneration";
 
 interface MatchupsProps {
   kind: "offense-single" | "offense-combination" | "defense";

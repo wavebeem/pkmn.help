@@ -11,7 +11,6 @@ import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
 import { Select } from "../components/Select";
 import { SelectDivider } from "../components/SelectDivider";
-import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
 import { useTypeCount } from "../hooks/useTypeCount";
 import {

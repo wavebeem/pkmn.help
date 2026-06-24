@@ -7,7 +7,6 @@ import {
   SpecialMove,
   Type,
   abilities,
-  typesForGeneration,
   typesForVersionGroup,
 } from "./data-types";
 import { VersionGroup } from "./data-version-groups";
