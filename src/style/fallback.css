@@ -1,3 +1,18 @@
+/* Minimal fallback styles for a readable error page... */
+:where(:root) {
+  --color-primary: #111;
+  --background-button: #fff;
+  --color-border-secondary: #ddd;
+  --color-bg-input: #fff;
+
+  @media (prefers-color-scheme: dark) {
+    --color-primary: #fff;
+    --background-button: #444;
+    --color-border-secondary: #333;
+    --color-bg-input: #111;
+  }
+}
+
 .fallback-content {
   animation: 1s fallback-content-animation;
   margin: 0 auto;

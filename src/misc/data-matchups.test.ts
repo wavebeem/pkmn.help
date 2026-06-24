@@ -17,7 +17,7 @@ for (const type of Types.types) {
         test("offensiveMatchups", () => {
           const result = Matchups.offensiveMatchups({
             battleVariant: "regular",
-            gen: "default",
+            versionGroup: "",
             offenseAbilities: [],
             offenseTypes: [type],
             specialMoves: compact([specialMove]),
@@ -33,7 +33,7 @@ for (const type of Types.types) {
         test("offensiveMatchups", () => {
           const result = Matchups.offensiveMatchups({
             battleVariant: "regular",
-            gen: "default",
+            versionGroup: "",
             offenseAbilities: [abilityName],
             offenseTypes: [type],
             specialMoves: [],

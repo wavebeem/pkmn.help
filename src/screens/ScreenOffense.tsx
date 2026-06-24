@@ -32,6 +32,7 @@ import styles from "./ScreenOffense.module.css";
 import { useBattleVariant } from "../hooks/useBattleVariant";
 import { PlainBadge } from "../components/PlainBadge";
 import { IconSettings } from "../components/icons";
+import { useVersionGroup } from "../hooks/useVersionGroup";
 import { useVersionGroupName } from "../hooks/useVersionGroupName";
 
 export type ScreenOffenseProps = {
@@ -54,6 +55,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
     "offense.types",
     [],
   );
+  const [versionGroup] = useVersionGroup();
   const versionGroupName = useVersionGroupName();
 
   useEffect(() => {
@@ -150,7 +152,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
             {t("offense.chooseTypes")}
           </FancyText>
           <MultiTypeSelector
-            generation={generation}
+            versionGroup={versionGroup}
             value={offenseTypes}
             onChange={setOffenseTypes}
             limit={typeLimit}
@@ -200,7 +202,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
           kind={
             mode === "combination" ? "offense-combination" : "offense-single"
           }
-          generation={generation}
+          versionGroup={versionGroup}
           types={offenseTypes}
           ability="none"
           teraType={Type.none}
@@ -235,7 +237,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
               </div>
               <DexCoverage
                 battleVariant={battleVariant}
-                generation={generation}
+                versionGroup={versionGroup}
                 coverageTypes={coverageTypes ?? fallbackCoverageTypes}
                 types={offenseTypes}
                 isLoading={isLoading}

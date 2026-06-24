@@ -9,7 +9,6 @@ import { IconBack } from "../components/icons";
 import { Paginator } from "../components/Paginator";
 import { PlainBadge } from "../components/PlainBadge";
 import { useAppContext } from "../hooks/useAppContext";
-import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
 import { partitionMatchups } from "../misc/data-matchups";
 import {
@@ -21,6 +20,7 @@ import {
 import { formatMonsterNumber } from "../misc/formatMonsterNumber";
 import styles from "./ScreenCoverageList.module.css";
 import { useBattleVariant } from "../hooks/useBattleVariant";
+import { useVersionGroup } from "../hooks/useVersionGroup";
 
 interface CoverageListProps {
   mode: "weakness" | "resistance" | "normal";
@@ -28,7 +28,7 @@ interface CoverageListProps {
 
 export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   const { coverageTypes } = useAppContext();
-  const generation = useGeneration();
+  const [versionGroup] = useVersionGroup();
   const [battleVariant] = useBattleVariant();
   const { t } = useTranslation();
   const search = useSearch();
@@ -42,7 +42,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
     battleVariant,
     coverageTypes,
     types,
-    generation,
+    versionGroup,
     offenseAbilities: abilities,
     specialMoves: moves,
   });

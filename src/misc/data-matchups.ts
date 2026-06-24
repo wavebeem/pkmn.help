@@ -1,3 +1,4 @@
+import { versionGroupToGeneration } from "../hooks/useGeneration";
 import { compare } from "./compare";
 import { Generation } from "./data-generations";
 import {
@@ -7,7 +8,9 @@ import {
   Type,
   abilities,
   typesForGeneration,
+  typesForVersionGroup,
 } from "./data-types";
+import { VersionGroup } from "./data-version-groups";
 
 export const battleVariants = ["regular", "inverse_battle"] as const;
 export type BattleVariant = (typeof battleVariants)[number];
@@ -135,14 +138,14 @@ interface PartitionedMatchups {
 export function partitionMatchups({
   battleVariant,
   coverageTypes,
-  generation,
+  versionGroup,
   types,
   offenseAbilities,
   specialMoves,
 }: {
   battleVariant: BattleVariant;
   coverageTypes: CoverageType[];
-  generation: Generation;
+  versionGroup: VersionGroup;
   types: Type[];
   offenseAbilities: AbilityName[];
   specialMoves: SpecialMove[];
@@ -183,7 +186,7 @@ export function partitionMatchups({
           arr.push(
             matchupFor({
               battleVariant,
-              generation,
+              versionGroup,
               defenseTypes: ct.types,
               defenseTeraType: Type.none,
               offenseType: t,
@@ -210,7 +213,7 @@ export function partitionMatchups({
 
 export function matchupFor({
   battleVariant,
-  generation,
+  versionGroup,
   defenseTypes,
   offenseType,
   defenseTeraType = Type.none,
@@ -219,7 +222,7 @@ export function matchupFor({
   specialMove,
 }: {
   battleVariant: BattleVariant;
-  generation: Generation;
+  versionGroup: VersionGroup;
   defenseTypes: Type[];
   defenseTeraType: Type;
   offenseType: Type | undefined;
@@ -227,13 +230,14 @@ export function matchupFor({
   abilityName: AbilityName;
   specialMove?: SpecialMove;
 }): number {
+  const generation = versionGroupToGeneration(versionGroup);
   // Flying Press is basically a Flying move and a Fighting move multiplied
   // together. So just compute those two regular attacks separately and combine
   // them.
   if (specialMove === "flying_press") {
     const opts = {
       battleVariant,
-      generation,
+      versionGroup,
       defenseTypes,
       defenseTeraType,
       offenseAbilityName,
@@ -393,7 +397,7 @@ const generationMatchupMaps = {
 
 class Matchup {
   constructor(
-    public generation: Generation,
+    // public generation: Generation,
     public types: Type[],
     public effectiveness: number,
     public formName?: string,
@@ -459,20 +463,22 @@ function makeTypePairs(items: Type[]): [Type, Type][] {
 
 export function offensiveMatchups({
   battleVariant,
-  gen,
+  versionGroup,
   offenseTypes,
   specialMoves,
   offenseAbilities,
   kind,
 }: {
   battleVariant: BattleVariant;
-  gen: Generation;
+  versionGroup: VersionGroup;
   offenseTypes: readonly Type[];
   specialMoves: readonly SpecialMove[];
   offenseAbilities: readonly AbilityName[];
   kind: "single" | "combination";
 }): GroupedMatchups {
-  const types = typesForGeneration(gen).filter((t) => t !== Type.stellar);
+  const types = typesForVersionGroup(versionGroup).filter(
+    (t) => t !== Type.stellar,
+  );
   const typePairs =
     kind === "combination"
       ? makeTypePairs(types)
@@ -506,7 +512,7 @@ export function offensiveMatchups({
         return offTypes.map((offense) => {
           const x = matchupFor({
             battleVariant,
-            generation: gen,
+            versionGroup,
             defenseTypes: [t1, t2],
             defenseTeraType: "none",
             offenseType: offense,
@@ -519,35 +525,35 @@ export function offensiveMatchups({
       });
     });
     const max = Math.max(...effs);
-    return new Matchup(gen, [t1, t2], max);
+    return new Matchup([t1, t2], max);
   });
   return new GroupedMatchups(matchups);
 }
 
 export function defensiveMatchups({
   battleVariant,
-  gen,
+  versionGroup,
   defenseTypes,
   defenseTeraType,
   abilityName,
 }: {
   battleVariant: BattleVariant;
-  gen: Generation;
+  versionGroup: VersionGroup;
   defenseTypes: Type[];
   defenseTeraType: Type;
   abilityName: AbilityName;
 }): GroupedMatchups {
-  const matchups = typesForGeneration(gen).map((t) => {
+  const matchups = typesForVersionGroup(versionGroup).map((t) => {
     const eff = matchupFor({
       battleVariant,
-      generation: gen,
+      versionGroup,
       defenseTypes,
       defenseTeraType,
       offenseType: t,
       abilityName,
       offenseAbilityName: "none",
     });
-    return new Matchup(gen, [t], eff);
+    return new Matchup([t], eff);
   });
   return new GroupedMatchups(matchups);
 }

@@ -4,12 +4,12 @@ import { useTranslation } from "react-i18next";
 import { useTypeCount } from "../hooks/useTypeCount";
 import { assertNever } from "../misc/assertNever";
 import { compact } from "../misc/compact";
-import { Generation } from "../misc/data-generations";
 import { BattleVariant, matchupFor } from "../misc/data-matchups";
-import { AbilityName, Type, typesForGeneration } from "../misc/data-types";
+import { AbilityName, Type, typesForVersionGroup } from "../misc/data-types";
 import { useBrowserSize } from "../misc/useBrowserSize";
 import { Badge } from "./Badge";
 import styles from "./MatchupsTeam.module.css";
+import { VersionGroup } from "../misc/data-version-groups";
 
 type MatchupKey =
   | "weak"
@@ -103,7 +103,7 @@ class Matcher {
 
 export interface MatchupsTeamProps {
   battleVariant: BattleVariant;
-  generation: Generation;
+  versionGroup: VersionGroup;
   typesList: Type[][];
   teraTypes: Type[];
   abilityList: AbilityName[];
@@ -112,7 +112,7 @@ export interface MatchupsTeamProps {
 
 export function MatchupsTeam({
   battleVariant,
-  generation,
+  versionGroup,
   typesList,
   teraTypes,
   format,
@@ -120,7 +120,7 @@ export function MatchupsTeam({
 }: MatchupsTeamProps): ReactNode {
   const { t, i18n } = useTranslation();
   const [typeCount] = useTypeCount();
-  const generationTypes = typesForGeneration(generation);
+  const generationTypes = typesForVersionGroup(versionGroup);
 
   const matchers: Matcher[] = (() => {
     switch (format) {
@@ -169,7 +169,7 @@ export function MatchupsTeam({
         const teraType = teraTypes[typeIndex];
         const eff = matchupFor({
           battleVariant,
-          generation,
+          versionGroup,
           defenseTypes: types,
           offenseType: genType,
           defenseTeraType: teraType,

@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { Generation } from "../misc/data-generations";
 import { BattleVariant, partitionMatchups } from "../misc/data-matchups";
 import {
   AbilityName,
@@ -14,10 +13,11 @@ import { Flex } from "./Flex";
 import { Meter } from "./Meter";
 import { Spinner } from "./Spinner";
 import { ReactNode } from "react";
+import { VersionGroup } from "../misc/data-version-groups";
 
 interface DexCoverageProps {
   battleVariant: BattleVariant;
-  generation: Generation;
+  versionGroup: VersionGroup;
   coverageTypes: CoverageType[];
   types: Type[];
   isLoading: boolean;
@@ -27,7 +27,7 @@ interface DexCoverageProps {
 
 export function DexCoverage({
   battleVariant,
-  generation,
+  versionGroup,
   coverageTypes,
   types,
   isLoading,
@@ -43,7 +43,7 @@ export function DexCoverage({
     battleVariant,
     coverageTypes,
     types,
-    generation,
+    versionGroup,
     offenseAbilities,
     specialMoves,
   });

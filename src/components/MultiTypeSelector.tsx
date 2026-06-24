@@ -1,30 +1,35 @@
 import { clsx } from "clsx";
 import { useTranslation } from "react-i18next";
 import { typeColor, typeColorBG } from "../misc/colors";
-import { Generation } from "../misc/data-generations";
-import { Type, typesForGeneration } from "../misc/data-types";
+import { Type, typesForVersionGroup } from "../misc/data-types";
 import styles from "./MultiTypeSelector.module.css";
 import { customProperties } from "../misc/customProperties";
 import { Flex } from "./Flex";
 import { ReactNode } from "react";
 import { TypeIcon } from "./TypeIcon";
 import { IconCheck } from "./icons";
+import { VersionGroup } from "../misc/data-version-groups";
 
 type MultiTypeSelectorProps = {
-  generation: Generation;
+  versionGroup: VersionGroup;
   onChange(types: Type[]): void;
   value: Type[];
   limit?: number;
+  hideStellar?: boolean;
 };
 
 export function MultiTypeSelector({
-  generation,
+  versionGroup,
   onChange,
   value,
   limit,
+  hideStellar = false,
 }: MultiTypeSelectorProps): ReactNode {
   const { t } = useTranslation();
-  const types = typesForGeneration(generation);
+  let types = typesForVersionGroup(versionGroup);
+  if (hideStellar) {
+    types = types.filter((t) => t !== Type.stellar);
+  }
   return (
     <div className={styles.root} data-limit={limit}>
       {types.map((type) => {

@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-06-23
+
+- Stellar type is hidden unless Scarlet/Violet, The Teal Mask, or The Indigo
+  Disk is selected
+
+- Stellar type is now hidden from type selection on the Defense screens since it
+  doesn't do anything there
+
 ## 2026-06-21
 
 - Updated Korean translation

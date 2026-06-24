@@ -1,8 +1,15 @@
 import { Generation } from "../misc/data-generations";
+import { VersionGroup } from "../misc/data-version-groups";
 import { useVersionGroup } from "./useVersionGroup";
 
 export function useGeneration(): Generation {
   const [versionGroup] = useVersionGroup();
+  return versionGroupToGeneration(versionGroup);
+}
+
+export function versionGroupToGeneration(
+  versionGroup: VersionGroup,
+): Generation {
   switch (versionGroup) {
     // Generation I and remakes
     case "lets-go-pikachu-lets-go-eevee":

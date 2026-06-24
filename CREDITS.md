@@ -2,17 +2,53 @@
 
 ## Translation
 
-### Danish
+### Spanish
 
-- Simon
+- Skyelodie
 
-### Russian
+### German
 
-- Abylay Zhandarbek
+- Robin
+- Enri
+- SpeciesSaladMallory
+- Cozzzy
+- Luzifer Senpai
 
-### Kazakh
+### Italian
 
-- Abylay Zhandarbek
+- dama99
+- Gabriele Giugno
+- Fabio "N™" Ilari
+- Banshee
+- Mathieu Licata
+- Stivenz
+
+### French
+
+- Kaishidow
+- Drakoshen
+- Azertor
+
+### Japanese
+
+- Grant Hussey
+- Minamorl
+
+### Chinese (Simplified)
+
+- umbresp
+- Dragonify
+- Tin
+
+### Chinese (Traditional)
+
+- umbresp
+- Nan Zheng
+
+### Korean
+
+- BetterBritter
+- Eric Marriott
 
 ### Portuguese (Portugal)
 
@@ -24,20 +60,17 @@
 
 - Vio
 
-### Simplified Chinese
+### Danish
 
-- umbresp
-- Dragonify
-- Tin
-
-### Traditional Chinese
-
-- umbresp
-- Nan Zheng
+- Simon
 
 ### Norwegian
 
 - Sarah Aa
+
+### Dutch
+
+- Julking
 
 ### Romanian
 
@@ -49,42 +82,13 @@
 - Sebastian Biegaj
 - CreationQ
 
-### French
+### Russian
 
-- Kaishidow
-- Drakoshen
-- Azertor
+- Abylay Zhandarbek
 
-### German
+### Kazakh
 
-- Robin
-- Enri
-- SpeciesSaladMallory
-- Cozzzy
-- Luzifer Senpai
-
-### Dutch
-
-- Julking
-
-### Italian
-
-- dama99
-- Gabriele Giugno
-- Fabio "N™" Ilari
-- Banshee
-- Mathieu Licata
-- Stivenz
-
-### Korean
-
-- BetterBritter
-- Eric Marriott
-
-### Japanese
-
-- Grant Hussey
-- Minamorl
+- Abylay Zhandarbek
 
 ### Vietnamese
 

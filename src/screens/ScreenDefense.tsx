@@ -25,9 +25,9 @@ import {
 import styles from "./ScreenDefense.module.css";
 import { useBattleVariant } from "../hooks/useBattleVariant";
 import { PlainBadge } from "../components/PlainBadge";
+import { useVersionGroup } from "../hooks/useVersionGroup";
 
 export function ScreenDefense(): ReactNode {
-  const generation = useGeneration();
   const { t } = useTranslation();
   const navigate = useNavigate();
   const location = useLocation();
@@ -103,6 +103,8 @@ export function ScreenDefense(): ReactNode {
     navigate({ ...location, search: "" }, { replace: true });
   }, [setTypes, setTeraType, setAbility, navigate, location]);
 
+  const [versionGroup] = useVersionGroup();
+
   return (
     <main className={clsx(styles.root, "content-wide center")}>
       <Flex direction="column" gap="xlarge">
@@ -111,7 +113,8 @@ export function ScreenDefense(): ReactNode {
             {t("defense.chooseTypes")}
           </FancyText>
           <MultiTypeSelector
-            generation={generation}
+            hideStellar
+            versionGroup={versionGroup}
             value={types}
             onChange={setTypes}
             limit={Number(typeCount)}
@@ -174,9 +177,9 @@ export function ScreenDefense(): ReactNode {
         </Flex>
 
         <Matchups
-          battleVariant={battleVariant}
           kind="defense"
-          generation={generation}
+          battleVariant={battleVariant}
+          versionGroup={versionGroup}
           types={types}
           ability={ability}
           teraType={teraType}

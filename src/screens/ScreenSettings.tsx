@@ -120,6 +120,7 @@ export function ScreenSettings(): ReactNode {
                 {Object.entries(versionsData.generationsToVersionGroups)
                   .toReversed()
                   .map(([gen, vgs]) => {
+                    Object.assign(globalThis, { vgs });
                     // TODO: Use language specific rules to join version strings
                     const groupLabel = pickTranslation(
                       (versionsData.generationNames as any)[gen],

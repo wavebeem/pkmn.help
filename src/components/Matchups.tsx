@@ -2,7 +2,6 @@ import { clsx } from "clsx";
 import { Fragment, ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { characters } from "../misc/characters";
-import { Generation } from "../misc/data-generations";
 import {
   BattleVariant,
   defensiveMatchups,
@@ -22,11 +21,13 @@ import styles from "./Matchups.module.css";
 import { Meter } from "./Meter";
 import { PlainBadge } from "./PlainBadge";
 import { useMediaQuery } from "../hooks/useMediaQuery";
+import { VersionGroup } from "../misc/data-version-groups";
+import { versionGroupToGeneration } from "../hooks/useGeneration";
 
 interface MatchupsProps {
   kind: "offense-single" | "offense-combination" | "defense";
   battleVariant: BattleVariant;
-  generation: Generation;
+  versionGroup: VersionGroup;
   types: Type[];
   teraType: Type;
   ability: AbilityName;
@@ -37,7 +38,7 @@ interface MatchupsProps {
 export function Matchups({
   battleVariant,
   kind,
-  generation,
+  versionGroup,
   types,
   teraType,
   ability,
@@ -49,7 +50,7 @@ export function Matchups({
   if (kind === "offense-single" || kind === "offense-combination") {
     matchups = offensiveMatchups({
       battleVariant,
-      gen: generation,
+      versionGroup,
       offenseTypes: types,
       specialMoves,
       offenseAbilities,
@@ -58,7 +59,7 @@ export function Matchups({
     if (types.includes(Type.stellar)) {
       matchups.matchups.unshift({
         types: [Type.stellar],
-        generation,
+        // generation,
         effectiveness: 2,
         formName: "stellar",
       });
@@ -66,7 +67,7 @@ export function Matchups({
   } else {
     matchups = defensiveMatchups({
       battleVariant,
-      gen: generation,
+      versionGroup,
       defenseTypes: types,
       defenseTeraType: teraType,
       abilityName: ability,

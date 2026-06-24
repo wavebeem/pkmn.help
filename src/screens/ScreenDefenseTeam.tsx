@@ -35,6 +35,7 @@ import { IconAdd, IconEdit, IconRemove } from "../components/icons";
 import { IconButton } from "../components/IconButton";
 import { PlainBadge } from "../components/PlainBadge";
 import { useBattleVariant } from "../hooks/useBattleVariant";
+import { useVersionGroup } from "../hooks/useVersionGroup";
 
 function setAbilityAt({
   list,
@@ -75,6 +76,7 @@ function setTeraTypeAt({
 }
 
 export function ScreenDefenseTeam(): ReactNode {
+  const [versionGroup] = useVersionGroup();
   const [battleVariant] = useBattleVariant();
   const generation = useGeneration();
   const { t } = useTranslation();
@@ -272,7 +274,8 @@ export function ScreenDefenseTeam(): ReactNode {
                           {t("defense.chooseTypes")}
                         </FancyText>
                         <MultiTypeSelector
-                          generation={generation}
+                          hideStellar
+                          versionGroup={versionGroup}
                           value={types}
                           onChange={updateTeamTypesAt(typeIndex)}
                           limit={Number(typeCount)}
@@ -394,7 +397,7 @@ export function ScreenDefenseTeam(): ReactNode {
           </FancyText>
           <MatchupsTeam
             battleVariant={battleVariant}
-            generation={generation}
+            versionGroup={versionGroup}
             typesList={teamTypes}
             teraTypes={teamTeraTypes}
             abilityList={teamAbilities}

@@ -18,7 +18,7 @@
 
   --color-header-base: hsl(var(--hue-red) 60% 40%);
   --color-header-highlight: hsl(var(--hue-red) 40% 55%);
-  --color-header-border: hsl(var(--hue-red) 60% 7%);
+  --color-header-border: hsl(0 0% 0% / 20%);
   --color-header-text: #fff;
 
   --color-tabs-base: hsl(var(--hue-ui) 5% 100%);

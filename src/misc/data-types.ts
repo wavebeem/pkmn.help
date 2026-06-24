@@ -3,6 +3,8 @@ import removeAccents from "remove-accents";
 import { Generation } from "./data-generations";
 import { ValueOf } from "./util";
 import versionsData from "../../data/versions.json";
+import { VersionGroup } from "./data-version-groups";
+import { versionGroupToGeneration } from "../hooks/useGeneration";
 
 export interface Pokemon {
   id: string;
@@ -205,9 +207,9 @@ export const types = [
 
 export const typesWithoutNone = [...types];
 
-const typesGen2 = types.filter(
-  (t) => !(t === Type.fairy || t === Type.stellar),
-);
+const typesScarletViolet = [...types];
+const typesGen3Plus = types.filter((t) => !(t === Type.stellar));
+const typesGen2 = types.filter((t) => !(t === Type.fairy));
 const typesGen1 = typesGen2.filter(
   (t) => !(t === Type.dark || t === Type.steel),
 );
@@ -215,13 +217,27 @@ const typesGen1 = typesGen2.filter(
 export function typesForGeneration(generation: Generation): Type[] {
   switch (generation) {
     case "default":
-      return [...types];
+      return [...typesGen3Plus];
     case "gen1":
       return [...typesGen1];
     case "gen2":
       return [...typesGen2];
     default:
       throw new Error(`typesForGeneration: ${generation}`);
+  }
+}
+
+export function typesForVersionGroup(versionGroup: VersionGroup): Type[] {
+  switch (versionGroup) {
+    case "the-indigo-disk":
+    case "the-teal-mask":
+    case "scarlet-violet": {
+      return typesScarletViolet;
+    }
+    default: {
+      const gen = versionGroupToGeneration(versionGroup);
+      return typesForGeneration(gen);
+    }
   }
 }
 
