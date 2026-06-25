@@ -209,8 +209,8 @@ export const typesWithoutNone = [...types];
 
 const typesScarletViolet = [...types];
 const typesGen3Plus = types.filter((t) => !(t === Type.stellar));
-const typesGen2 = types.filter((t) => !(t === Type.fairy));
-const typesGen1 = typesGen2.filter(
+const typesGen2Through5 = types.filter((t) => !(t === Type.fairy));
+const typesGen1 = typesGen2Through5.filter(
   (t) => !(t === Type.dark || t === Type.steel),
 );
 
@@ -221,7 +221,7 @@ export function typesForGeneration(generation: Generation): Type[] {
     case "gen1":
       return [...typesGen1];
     case "gen2":
-      return [...typesGen2];
+      return [...typesGen2Through5];
     default:
       throw new Error(`typesForGeneration: ${generation}`);
   }
@@ -229,14 +229,15 @@ export function typesForGeneration(generation: Generation): Type[] {
 
 export function typesForVersionGroup(versionGroup: VersionGroup): Type[] {
   switch (versionGroup) {
+    // Only Scarlet/Violet and its DLC have the Tera Pokemon and the Stellar
+    // type currently
     case "the-indigo-disk":
     case "the-teal-mask":
     case "scarlet-violet": {
       return typesScarletViolet;
     }
     default: {
-      const gen = versionGroupToGeneration(versionGroup);
-      return typesForGeneration(gen);
+      return typesForGeneration(versionGroupToGeneration(versionGroup));
     }
   }
 }
@@ -342,9 +343,9 @@ export function restoreRegionalVariantsInPokedex({
 }: {
   dex: Pokemon[];
   slugToMon: Map<string, Pokemon>;
-  versionGroup: string;
+  versionGroup: VersionGroup;
 }): Pokemon[] {
-  const ret: typeof dex = [];
+  let ret: typeof dex = [];
   let replacements: Record<string, string[]> = {};
   let additions: Record<string, string[]> = {};
   switch (versionGroup) {
@@ -467,6 +468,41 @@ export function restoreRegionalVariantsInPokedex({
     } else {
       ret.push(mon);
     }
+    switch (versionGroup) {
+      case "sword-shield":
+      case "the-isle-of-armor":
+      case "the-crown-tundra": {
+        break;
+      }
+      default: {
+        ret = ret.filter((p) => !isGmax(p));
+      }
+    }
+    switch (versionGroup) {
+      case "x-y":
+      case "legends-za":
+      case "omega-ruby-alpha-sapphire":
+      case "champions": {
+        break;
+      }
+      default: {
+        ret = ret.filter((p) => !isMega(p));
+      }
+    }
   }
   return ret;
+}
+
+function isGmax(pkmn: Pokemon): boolean {
+  return pkmn.name.endsWith("-gmax");
+}
+
+function isMega(pkmn: Pokemon): boolean {
+  const n = pkmn.name;
+  return (
+    n.endsWith("-mega") ||
+    n.endsWith("-mega-x") ||
+    n.endsWith("-mega-y") ||
+    n.endsWith("-mega-z")
+  );
 }

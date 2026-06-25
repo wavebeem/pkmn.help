@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-06-24
+
+- Fixed Brilliant Diamond / Shining Pearl and Let's Go Pikachu / Let's Go Eevee
+  to have the right type tables
+
+- Removed some Pokémon forms incorrectly listed in certain Pokédexes
+
+  - You can email me about problems you find, but know that I know it's sort of
+    a mess right now
+
 ## 2026-06-23
 
 - Stellar type is hidden unless Scarlet/Violet, The Teal Mask, or The Indigo
