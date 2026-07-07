@@ -152,10 +152,10 @@ export function ScreenDefenseTeam(): ReactNode {
 
   useEffect(() => {
     if (!hasAbilities(versionGroup)) {
-      setTeamAbilities((xs) => xs.map((x) => "none"));
+      setTeamAbilities((xs) => xs.map(() => "none"));
     }
     if (!hasTeraTypes(versionGroup)) {
-      setTeamTeraTypes((xs) => xs.map((x) => "none"));
+      setTeamTeraTypes((xs) => xs.map(() => "none"));
     }
   }, [versionGroup]);
 
