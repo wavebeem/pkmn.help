@@ -120,8 +120,9 @@ export function ScreenSettings(): ReactNode {
                 {Object.entries(versionsData.generationsToVersionGroups)
                   .toReversed()
                   .map(([gen, vgs]) => {
-                    Object.assign(globalThis, { vgs });
-                    // TODO: Use language specific rules to join version strings
+                    // These games have zero Pokemon in their dexes right now,
+                    // so let's just hide them lol. It kinda bugs out some UI.
+                    vgs = vgs.filter((v) => v !== "xd" && v !== "colosseum");
                     const groupLabel = pickTranslation(
                       (versionsData.generationNames as any)[gen],
                       language,

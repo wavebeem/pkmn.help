@@ -208,10 +208,10 @@ export const types = [
 export const typesWithoutNone = [...types];
 
 const typesScarletViolet = [...types];
-const typesGen3Plus = types.filter((t) => !(t === Type.stellar));
-const typesGen2Through5 = types.filter((t) => !(t === Type.fairy));
+const typesGen3Plus = types.filter((t) => t !== Type.stellar);
+const typesGen2Through5 = typesGen3Plus.filter((t) => t !== Type.fairy);
 const typesGen1 = typesGen2Through5.filter(
-  (t) => !(t === Type.dark || t === Type.steel),
+  (t) => t !== Type.dark && t !== Type.steel,
 );
 
 export function typesForGeneration(generation: Generation): Type[] {

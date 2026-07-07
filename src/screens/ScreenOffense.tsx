@@ -179,16 +179,14 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
           />
         </Flex>
 
-        {generation === "default" && (
-          <Flex direction="column" gap="small">
-            <Flex gap="medium" wrap>
-              <CopyButton text={permalink.href}>
-                {t("general.copyLink")}
-              </CopyButton>
-              <ClearChoices onClick={resetOffense} />
-            </Flex>
+        <Flex direction="column" gap="small">
+          <Flex gap="medium" wrap>
+            <CopyButton text={permalink.href}>
+              {t("general.copyLink")}
+            </CopyButton>
+            <ClearChoices onClick={resetOffense} />
           </Flex>
-        )}
+        </Flex>
       </Flex>
       <Flex direction="column" gap="large">
         <Flex hidden={battleVariant !== "inverse_battle"}>
