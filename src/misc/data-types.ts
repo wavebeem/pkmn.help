@@ -5,6 +5,7 @@ import { ValueOf } from "./util";
 import versionsData from "../../data/versions.json";
 import { VersionGroup } from "./data-version-groups";
 import { versionGroupToGeneration } from "../hooks/useGeneration";
+import { assertNever } from "./assertNever";
 
 export interface Pokemon {
   id: string;
@@ -206,6 +207,67 @@ export const types = [
 ];
 
 export const typesWithoutNone = [...types];
+
+export function hasAbilities(versionGroup: VersionGroup): boolean {
+  switch (versionGroup) {
+    case "red-blue":
+    case "yellow":
+    case "red-green-japan":
+    case "blue-japan":
+    case "gold-silver":
+    case "crystal": {
+      return false;
+    }
+    case "ruby-sapphire":
+    case "emerald":
+    case "firered-leafgreen":
+    case "colosseum":
+    case "xd":
+    case "diamond-pearl":
+    case "platinum":
+    case "heartgold-soulsilver":
+    case "black-white":
+    case "black-2-white-2":
+    case "x-y":
+    case "omega-ruby-alpha-sapphire":
+    case "sun-moon":
+    case "ultra-sun-ultra-moon":
+    case "lets-go-pikachu-lets-go-eevee":
+    case "sword-shield":
+    case "the-isle-of-armor":
+    case "the-crown-tundra":
+    case "brilliant-diamond-shining-pearl":
+    case "legends-arceus":
+    case "scarlet-violet":
+    case "the-teal-mask":
+    case "the-indigo-disk":
+    case "legends-za":
+    case "mega-dimension":
+    case "champions":
+    case "": {
+      return true;
+    }
+    default: {
+      assertNever(versionGroup);
+    }
+  }
+}
+
+export function hasTeraTypes(versionGroup: VersionGroup): boolean {
+  switch (versionGroup) {
+    // Only Scarlet/Violet and its DLC have the Tera Pokemon and the Stellar
+    // type currently
+    case "":
+    case "the-indigo-disk":
+    case "the-teal-mask":
+    case "scarlet-violet": {
+      return true;
+    }
+    default: {
+      return false;
+    }
+  }
+}
 
 const typesScarletViolet = [...types];
 const typesGen3Plus = types.filter((t) => t !== Type.stellar);

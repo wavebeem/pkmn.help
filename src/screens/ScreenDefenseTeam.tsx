@@ -24,6 +24,8 @@ import {
   Type,
   abilities,
   abilityNameFromString,
+  hasAbilities,
+  hasTeraTypes,
   normalizeTypes,
   removeInvalidDefenseTypesForGeneration,
   typesFromString,
@@ -147,6 +149,15 @@ export function ScreenDefenseTeam(): ReactNode {
       });
     });
   }, [generation]);
+
+  useEffect(() => {
+    if (!hasAbilities(versionGroup)) {
+      setTeamAbilities((xs) => xs.map((x) => "none"));
+    }
+    if (!hasTeraTypes(versionGroup)) {
+      setTeamTeraTypes((xs) => xs.map((x) => "none"));
+    }
+  }, [versionGroup]);
 
   function updateTeamTypesAt(listIndex: number): (newTypes: Type[]) => void {
     return (newTypes) => {
@@ -282,66 +293,70 @@ export function ScreenDefenseTeam(): ReactNode {
                         />
                       </Flex>
 
-                      <Select
-                        label={t("defense.chooseAbility")}
-                        value={teamAbilities[typeIndex]}
-                        onChange={(event) => {
-                          const ability = abilityNameFromString(
-                            event.target.value,
-                          );
-                          if (!ability) {
-                            return;
-                          }
-                          setTeamAbilities(
-                            setAbilityAt({
-                              list: teamAbilities,
-                              index: typeIndex,
-                              value: ability,
-                              length: teamTypes.length,
-                            }),
-                          );
-                        }}
-                      >
-                        <option value="">
-                          {t("defense.abilityNames.none")}
-                        </option>
-                        <SelectDivider />
-                        {sortedAbilityNames.map((name) => {
-                          return (
-                            <option key={name} value={name}>
-                              {t(`defense.abilityNames.${name}`)}
-                            </option>
-                          );
-                        })}
-                      </Select>
-                      <Select
-                        label={t("defense.chooseTeraType")}
-                        value={teamTeraTypes[typeIndex]}
-                        onChange={(event) => {
-                          const type = typesFromString(event.target.value)[0];
-                          if (!type) {
-                            return;
-                          }
-                          setTeamTeraTypes(
-                            setTeraTypeAt({
-                              list: teamTeraTypes,
-                              index: typeIndex,
-                              value: type,
-                              length: teamTypes.length,
-                            }),
-                          );
-                        }}
-                      >
-                        <option value={Type.none}>{t("types.none")}</option>
-                        <SelectDivider />
-                        {typesWithoutNone.map((name) => {
-                          return (
-                            <option key={name} value={name}>
-                              {t(`types.${name}`)}
-                            </option>
-                          );
-                        })}
-                      </Select>
+                      {hasAbilities(versionGroup) && (
+                        <Select
+                          label={t("defense.chooseAbility")}
+                          value={teamAbilities[typeIndex]}
+                          onChange={(event) => {
+                            const ability = abilityNameFromString(
+                              event.target.value,
+                            );
+                            if (!ability) {
+                              return;
+                            }
+                            setTeamAbilities(
+                              setAbilityAt({
+                                list: teamAbilities,
+                                index: typeIndex,
+                                value: ability,
+                                length: teamTypes.length,
+                              }),
+                            );
+                          }}
+                        >
+                          <option value="">
+                            {t("defense.abilityNames.none")}
+                          </option>
+                          <SelectDivider />
+                          {sortedAbilityNames.map((name) => {
+                            return (
+                              <option key={name} value={name}>
+                                {t(`defense.abilityNames.${name}`)}
+                              </option>
+                            );
+                          })}
+                        </Select>
+                      )}
+                      {hasTeraTypes(versionGroup) && (
+                        <Select
+                          label={t("defense.chooseTeraType")}
+                          value={teamTeraTypes[typeIndex]}
+                          onChange={(event) => {
+                            const type = typesFromString(event.target.value)[0];
+                            if (!type) {
+                              return;
+                            }
+                            setTeamTeraTypes(
+                              setTeraTypeAt({
+                                list: teamTeraTypes,
+                                index: typeIndex,
+                                value: type,
+                                length: teamTypes.length,
+                              }),
+                            );
+                          }}
+                        >
+                          <option value={Type.none}>{t("types.none")}</option>
+                          <SelectDivider />
+                          {typesWithoutNone.map((name) => {
+                            return (
+                              <option key={name} value={name}>
+                                {t(`types.${name}`)}
+                              </option>
+                            );
+                          })}
+                        </Select>
+                      )}
                     </Flex>
                   </Card>
                 );

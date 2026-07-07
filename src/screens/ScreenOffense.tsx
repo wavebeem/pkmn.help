@@ -24,6 +24,7 @@ import {
   AbilityName,
   SpecialMove,
   Type,
+  hasAbilities,
   removeInvalidOffenseTypesForGeneration,
   splitTokens,
   typesFromString,
@@ -133,6 +134,10 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
     navigate({ ...location, search: "" }, { replace: true });
   }, [setOffenseTypes, setAbilities, setSpecialMoves, navigate, location]);
 
+  useEffect(() => {
+    setAbilities([]);
+  }, [versionGroup]);
+
   const permalink = new URL(window.location.href);
   if (offenseTypes.length > 0) {
     permalink.searchParams.set("types", offenseTypes.join(" "));
@@ -168,16 +173,18 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
             onChange={setSpecialMoves}
           />
         </Flex>
-        <Flex direction="column" gap="small">
-          <FancyText tag="h2" fontSize="large" fontWeight="medium">
-            {t("offense.abilities.choose")}
-          </FancyText>
-          <CheckboxGroup
-            options={abilitiesOptions}
-            value={abilities}
-            onChange={setAbilities}
-          />
-        </Flex>
+        {hasAbilities(versionGroup) && (
+          <Flex direction="column" gap="small">
+            <FancyText tag="h2" fontSize="large" fontWeight="medium">
+              {t("offense.abilities.choose")}
+            </FancyText>
+            <CheckboxGroup
+              options={abilitiesOptions}
+              value={abilities}
+              onChange={setAbilities}
+            />
+          </Flex>
+        )}
 
         <Flex direction="column" gap="small">
           <Flex gap="medium" wrap>

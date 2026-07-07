@@ -1,3 +1,4 @@
+import { assertNever } from "../misc/assertNever";
 import { Generation } from "../misc/data-generations";
 import { VersionGroup } from "../misc/data-version-groups";
 import { useVersionGroup } from "./useVersionGroup";
@@ -11,14 +12,12 @@ export function versionGroupToGeneration(
   versionGroup: VersionGroup,
 ): Generation {
   switch (versionGroup) {
-    // Generation I
     case "yellow":
     case "blue-japan":
     case "red-blue":
     case "red-green-japan": {
       return "gen1";
     }
-    // Generation II-V
     case "black-2-white-2":
     case "black-white":
     case "heartgold-soulsilver":
@@ -33,11 +32,27 @@ export function versionGroupToGeneration(
     case "crystal": {
       return "gen2";
     }
-    // Generaton VI+
-    // case "brilliant-diamond-shining-pearl":
-    // case "lets-go-pikachu-lets-go-eevee":
-    default: {
+    case "brilliant-diamond-shining-pearl":
+    case "champions":
+    case "legends-arceus":
+    case "legends-za":
+    case "lets-go-pikachu-lets-go-eevee":
+    case "mega-dimension":
+    case "omega-ruby-alpha-sapphire":
+    case "scarlet-violet":
+    case "sun-moon":
+    case "sword-shield":
+    case "the-crown-tundra":
+    case "the-indigo-disk":
+    case "the-isle-of-armor":
+    case "the-teal-mask":
+    case "ultra-sun-ultra-moon":
+    case "x-y":
+    case "": {
       return "default";
+    }
+    default: {
+      assertNever(versionGroup);
     }
   }
 }

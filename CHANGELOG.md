@@ -4,6 +4,8 @@
 
 - Fixed a bug where most Pokédexes included Stellar as a type
 
+- Abilities and Tera Types are now hidden based on selected Pokédexes
+
 ## 2026-06-24
 
 - Fixed Brilliant Diamond / Shining Pearl and Let's Go Pikachu / Let's Go Eevee

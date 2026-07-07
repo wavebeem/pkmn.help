@@ -19,6 +19,8 @@ import {
   abilities,
   abilityNameFromString,
   types as allTypes,
+  hasAbilities,
+  hasTeraTypes,
   typesFromString,
 } from "../misc/data-types";
 import styles from "./ScreenDefense.module.css";
@@ -104,6 +106,15 @@ export function ScreenDefense(): ReactNode {
 
   const [versionGroup] = useVersionGroup();
 
+  useEffect(() => {
+    if (!hasAbilities(versionGroup)) {
+      setAbility("none");
+    }
+    if (!hasTeraTypes(versionGroup)) {
+      setTeraType("none");
+    }
+  }, [versionGroup]);
+
   return (
     <main className={clsx(styles.root, "content-wide center")}>
       <Flex direction="column" gap="xlarge">
@@ -122,43 +133,48 @@ export function ScreenDefense(): ReactNode {
 
         <Flex direction="column" gap="large">
           <div className={styles.selectGroup}>
-            <Select
-              label={t("defense.chooseAbility")}
-              value={ability}
-              onChange={(event) => {
-                setAbility(abilityNameFromString(event.target.value));
-              }}
-            >
-              <option value="">{t("defense.abilityNames.none")}</option>
-              <SelectDivider />
-              {sortedAbilityNames.map((name) => {
-                return (
-                  <option key={name} value={name}>
-                    {t(`defense.abilityNames.${name}`)}
-                  </option>
-                );
-              })}
-            </Select>
-            <Select
-              label={t("defense.chooseTeraType")}
-              value={teraType}
-              onChange={(event) => {
-                setTeraType(typesFromString(event.target.value)[0]);
-              }}
-            >
-              <option value="">{t("types.none")}</option>
-              <SelectDivider />
-              {allTypes.flatMap((name) => {
-                return (
-                  <Fragment key={name}>
-                    {name === "fire" || name === "stellar" ? (
-                      <SelectDivider />
-                    ) : null}
-                    <option value={name}>{t(`types.${name}`)}</option>
-                  </Fragment>
-                );
-              })}
-            </Select>
+            {hasAbilities(versionGroup) && (
+              <Select
+                label={t("defense.chooseAbility")}
+                value={ability}
+                onChange={(event) => {
+                  setAbility(abilityNameFromString(event.target.value));
+                }}
+              >
+                <option value="">{t("defense.abilityNames.none")}</option>
+                <SelectDivider />
+                {sortedAbilityNames.map((name) => {
+                  return (
+                    <option key={name} value={name}>
+                      {t(`defense.abilityNames.${name}`)}
+                    </option>
+                  );
+                })}
+              </Select>
+            )}
+
+            {hasTeraTypes(versionGroup) && (
+              <Select
+                label={t("defense.chooseTeraType")}
+                value={teraType}
+                onChange={(event) => {
+                  setTeraType(typesFromString(event.target.value)[0]);
+                }}
+              >
+                <option value="">{t("types.none")}</option>
+                <SelectDivider />
+                {allTypes.flatMap((name) => {
+                  return (
+                    <Fragment key={name}>
+                      {name === "fire" || name === "stellar" ? (
+                        <SelectDivider />
+                      ) : null}
+                      <option value={name}>{t(`types.${name}`)}</option>
+                    </Fragment>
+                  );
+                })}
+              </Select>
+            )}
           </div>
         </Flex>
 
