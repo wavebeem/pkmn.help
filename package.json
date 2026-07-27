@@ -1,9 +1,9 @@
 {
   "private": true,
   "version": "0.0.0",
-  "name": "pkmn.help",
+  "name": "PKMN.help",
   "type": "module",
-  "description": "pkmn.help - The Pokémon Type Calculator",
+  "description": "PKMN.help - Pokémon Type Calculator",
   "scripts": {
     "add-translation": "tsx ./bin/add-translation.ts",
     "copy-translations": "tsx ./bin/copy-translations.ts",

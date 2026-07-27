@@ -64,7 +64,7 @@
       "button": "リセット",
       "description": "デフォルトのポケモンずかんにリセットする"
     },
-    "filename": "pkmn.helpのタイプ.csv",
+    "filename": "PKMN.helpのタイプ.csv",
     "status": {
       "imported": "「{{ file }}」から{{ n }}のポケモンのすがたをインポートした",
       "exported": "デフォルトのポケモンのすがたを書き出した",
