@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-26
+
+- Updated Portuguese (Portugal) translations
+
 ## 2026-07-06
 
 - Fixed a bug where most Pokédexes included Stellar as a type
