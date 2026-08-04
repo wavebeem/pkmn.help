@@ -1,8 +1,12 @@
 # Changelog
 
+## 2026-08-03
+
+- Updated German translation
+
 ## 2026-07-26
 
-- Updated Portuguese (Portugal) translations
+- Updated Portuguese (Portugal) translation
 
 ## 2026-07-06
 

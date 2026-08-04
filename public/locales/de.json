@@ -1,5 +1,5 @@
 {
-  "title": "Pokémon Typ Rechner",
+  "title": "Pokémon-Typenrechner",
   "navigation": {
     "offense": "Angriff",
     "defense": "Verteidigung",
@@ -12,7 +12,7 @@
   },
   "offense": {
     "chooseTypes": "Typen auswählen",
-    "dealsXTo": "Fügt {{ x }} Schaden zu",
+    "dealsXTo": "Richtet {{ x }} Schaden an bei",
     "mode": {
       "combination": "Kombination",
       "single": "Einzeln"
@@ -34,7 +34,7 @@
       "choose": "Fähigkeiten auswählen"
     },
     "specialMoves": {
-      "choose": "Spezielle Attacke auswählen",
+      "choose": "Spezielle Attacken auswählen",
       "names": {
         "freeze-dry": "Gefriertrockner",
         "thousand_arrows": "Tausend Pfeile",
@@ -43,7 +43,7 @@
     },
     "coverage": {
       "heading": "Pokédex-Abdeckung",
-      "edit": "Editiere Liste",
+      "edit": "Liste bearbeiten",
       "weakness": "Sehr effektiv",
       "normal": "Normal effektiv",
       "resistance": "Nicht sehr effektiv"
@@ -55,7 +55,7 @@
         "heading": "Schwächen-Abdeckungsliste"
       },
       "normal": {
-        "heading": "Normal effektiv Abdeckungsliste"
+        "heading": "Neutrale Effektivitäts-Abdeckungsliste"
       },
       "resistance": {
         "heading": "Resistenzen-Abdeckungsliste"
@@ -63,9 +63,9 @@
     }
   },
   "coverage": {
-    "heading": "Schwächen-Abdeckung",
-    "paragraph1": "Importiere/exportiere benutzerdefinierte Pokédex-CSV-Dateien, um die Schwächen verschiedener Pokémon zu sehen. Erstelle eine benutzerdefinierte CSV-Datei nur mit OU-Tier-Pokémon oder erstelle sogar deine eigenen Pokémon von Grund auf.",
-    "paragraph2": "CSV-Daten werden nach dem Namen der Spaltenüberschrift geladen, nicht nach der Reihenfolge der Spalten. Du kannst also nach Belieben Spalten hinzufügen oder neu anordnen (z. B. eine Spalte \"Ebene\" oder eine Spalte \"Notizen\" hinzufügen).",
+    "heading": "Pokédex-Abdeckung",
+    "paragraph1": "Importiere/exportiere benutzerdefinierte Pokédex-CSV-Dateien, um die Abdeckung verschiedener Pokémon zu sehen. Erstelle eine benutzerdefinierte CSV-Datei nur mit OU-Tier-Pokémon oder erstelle deine eigenen Pokémon von Grund auf.",
+    "paragraph2": "CSV-Daten werden nach dem Namen der Spaltenüberschrift geladen, nicht nach der Reihenfolge der Spalten. Du kannst also nach Belieben Spalten hinzufügen oder neu anordnen (z. B. eine Spalte \"Tier\" oder eine Spalte \"Notizen\" hinzufügen).",
     "paragraph3": "CSV-Dateien können mit Google Sheets, Microsoft Excel, OpenOffice, LibreOffice, Notepad und anderen Programmen bearbeitet werden.",
     "csvHeaders": {
       "number": "Nummer",
@@ -88,16 +88,16 @@
     },
     "filename": "PKMN.help Typen-Abdeckung.csv",
     "status": {
-      "imported": "Importierte {{ n }} Pokémon-Formen aus \"{{ Datei }}\"",
-      "exported": "Exportierte Standard-Pokémon-Formen",
-      "reset": "Standard Pokémon-Formen geladen",
-      "errored": "Fehler beim Laden von CSV. Ändere keine Kopfzeilennamen."
+      "imported": "{{ n }} Pokémon-Formen aus „{{ file }}“ importiert",
+      "exported": "Standard-Pokémon-Formen exportiert",
+      "reset": "Standard-Pokémon-Formen geladen",
+      "errored": "Fehler beim Laden der CSV. Ändere keine Kopfzeilennamen."
     },
     "back": "Zurück zum Angriff"
   },
   "defense": {
-    "chooseTypes": "Typen auswählen",
-    "takesXFrom": "Nimmt {{ x }} Schaden von",
+    "chooseTypes": "Verteidigende Typen auswählen",
+    "takesXFrom": "Erhält {{ x }} Schaden von",
     "chooseAbility": "Fähigkeit auswählen",
     "chooseTeraType": "Tera-Typ auswählen",
     "abilityNames": {
@@ -134,17 +134,17 @@
       "team": "Team"
     },
     "team": {
-      "tableHeading": "Match-Ups",
-      "heading": "Editiere Pokémon-Team",
-      "add": "Füge Pokémon hinzu",
+      "tableHeading": "Matchups",
+      "heading": "Pokémon-Team bearbeiten",
+      "add": "Pokémon hinzufügen",
       "empty": "Keine Pokémon ausgewählt",
-      "displayType": "Tabellen-Format",
+      "displayType": "Tabellenformat",
       "weak": "Schwach",
-      "resist": "Resistenz",
-      "simple": "Simpel",
+      "resist": "Resistent",
+      "simple": "Einfach",
       "complex": "Komplex",
       "type": "Typ",
-      "edit": "Editiere",
+      "edit": "Bearbeiten",
       "remove": "Entfernen"
     }
   },
@@ -161,10 +161,13 @@
     "shiny": {
       "text": "Schillernd"
     },
+    "gender": {
+      "text": "Geschlecht"
+    },
     "pagination": {
       "next": "Weiter",
       "nextLong": "Weiter",
-      "previous": "Zur",
+      "previous": "Zurück",
       "previousLong": "Zurück",
       "firstLong": "Erste",
       "lastLong": "Letzte"
@@ -180,12 +183,12 @@
       "attackLong": "Angriff",
       "defense": "Vert.",
       "defenseLong": "Verteidigung",
-      "specialAttack": "Sp. Ang.",
+      "specialAttack": "Sp.-Ang.",
       "specialAttackLong": "Spezial-Angriff",
-      "specialDefense": "Sp. Vert.",
+      "specialDefense": "Sp.-Vert.",
       "specialDefenseLong": "Spezial-Verteidigung",
-      "speed": "Geschw.",
-      "speedLong": "Geschwindigkeit",
+      "speed": "Init.",
+      "speedLong": "Initiative",
       "total": "Gesamt",
       "totalLong": "Gesamt"
     }
@@ -193,99 +196,114 @@
   "pokedexHelp": {
     "searchByName": {
       "heading": "Suche nach Namen",
-      "description": "Du kannst nach einem Pokémon anhand seines Namens suchen. Wenn du dich nur an einen Teil des Pokémon-Namens erinnerst, findet es das Pokémon wahrscheinlich trotzdem für dich. Mit Tippfehlern kann es im Moment allerdings nicht umgehen."
+      "description": "Du kannst nach einem Pokémon anhand seines Namens suchen. Wenn du dich nur an einen Teil des Namens erinnerst, wird es wahrscheinlich trotzdem gefunden. Tippfehler werden aktuell jedoch nicht erkannt."
     },
     "searchByNumber": {
       "heading": "Suche nach Nummer",
-      "description": "Suche nach der nationalen Dex-Nummer. Wenn du Bisasam suchst, gib einfach 1 ein, nicht #001."
+      "description": "Suche nach der National-Dex-Nummer. Wenn du Bisasam suchst, gib einfach 1, #1, 001 oder #0001 ein."
     },
     "searchByType": {
       "heading": "Suche nach Typ",
-      "description": "Hier sind ein paar Beispiele für die Suche nach Typen."
+      "description": "Hier sind ein paar Beispiele für die Suche nach Typen:"
     },
     "searchExamples": {
       "type": {
         "query": "Feuer",
-        "description": "Suche nach Pokémon, die Feuer als einen ihrer Typen in irgendeiner Form haben (z. B. Glumanda, Glurak, Rotom)."
+        "description": "Suche nach Pokémon, die in irgendeiner Form den Typ Feuer besitzen (z. B. Glumanda, Glurak, Rotom)."
       },
       "doubleType": {
         "query": "Wasser Flug",
-        "description": "Suche nach Pokémon, die entweder Wasser/Flug (z. B. Garados) oder Flug/Wasser (z. B. Urgl) sind."
+        "description": "Suche nach Pokémon, die vom Typ Wasser/Flug (z. B. Garados) oder Flug/Wasser (z. B. Pelipper) sind."
       },
       "singleType": {
         "query": "Pflanze Kein",
-        "description": "Suche nach Pokémon, die nur vom Typ Pflanze sind und keinen 2. Typ besitzen (z. B. Tangela, Endivie)."
+        "description": "Suche nach Pokémon, die nur vom Typ Pflanze sind und keinen Zweittyp besitzen (z. B. Tangela, Endivie, Dressella)."
       }
     },
     "back": "Zurück zum Pokédex"
   },
   "about": {
     "easterEgg": {
-      "button": "Zeige ein zufälliges Pokémon"
+      "button": "Zufälliges Pokémon anzeigen"
     }
   },
   "more": {
     "contact": {
       "heading": "Kontakt",
-      "intro": "Hallo, ich bin <homepage>Sage</homepage> (they/them) und ich habe den PKMN.help (Pokémon Typ Rechner) erstellt.",
-      "email": "Bitte sende deine Gedanken und Danksagungen an <email>pkmn@wavebeem.com</email>."
+      "intro": "Hallo, ich bin <homepage>Sage</homepage> (they/them), die Person hinter PKMN.help (Pokémon-Typenrechner).",
+      "email": "Bitte sende dein Feedback und Dankeschön an <email>pkmn@wavebeem.com</email>."
     },
     "settings": {
       "heading": "Einstellungen",
       "language": {
         "label": "Sprache",
-        "default": "Automatisch Sprache erkennen",
+        "default": "Sprache automatisch erkennen",
         "official": "Offizielle Sprachen",
         "unofficial": "Inoffizielle Sprachen"
       },
       "theme": {
-        "label": "Thema",
-        "help": "\"System Standard\" ändert sich automatisch je nach den Einstellungen Ihres Betriebssystems.",
+        "label": "Design",
+        "help": "„Systemstandard“ passt sich automatisch den Einstellungen deines Betriebssystems an.",
         "values": {
-          "auto": "System Standard",
+          "auto": "Systemstandard",
           "light": "Hell",
           "dark": "Dunkel",
           "night": "Nacht"
         }
       },
+      "versionGroup": {
+        "label": "Pokédex",
+        "help": "Bestimmt die verfügbaren Pokémon und Typen.",
+        "values": {
+          "all": "Nationaler Pokédex"
+        }
+      },
       "typeCount": {
         "label": "Anzahl der Typen",
-        "help": "Pokémon können kurzfristig drei Typen auf einmal haben, wenn sie mit Waldesfluch oder Halloween getroffen werden. Das Feld für den dritten Typ ist standardmäßig ausgeblendet, da es selten verwendet wird.",
+        "help": "Pokémon können vorübergehend drei Typen gleichzeitig haben, wenn sie von Waldesfluch oder Halloween getroffen werden. Das dritte Typ-Feld ist standardmäßig ausgeblendet, da es selten genutzt wird.",
         "values": {
           "2": "Zwei Typen (2)",
           "3": "Drei Typen (3)"
         }
+      },
+      "battleVariant": {
+        "label": "Kampfvariante",
+        "help": "In einem Umkehrkampf werden Typen-Effektivitäten umgekehrt und kein Typ ist gegen einen anderen immun.",
+        "values": {
+          "regular": "Normal",
+          "inverse_battle": "Umkehrkampf"
+        }
       }
     },
     "changes": {
-      "heading": "Was ist neu",
-      "description": "Siehe was neu ist im <changelog>changelog</changelog>."
+      "heading": "Was gibt's Neues?",
+      "description": "Sieh dir die Neuerungen im <changelog>Changelog</changelog> an."
     },
     "help": {
       "heading": "Hilfe",
       "serviceWorker": {
-        "description": "Diese Schaltfläche kann helfen, Probleme in der Anwendung zu beheben.",
+        "description": "Diese Schaltfläche kann helfen, Probleme in der App zu beheben.",
         "button": "Zurücksetzen"
       }
     },
     "privacy": {
       "heading": "Datenschutz",
-      "description": "Ich werde niemals Werbung schalten oder deine persönlichen Daten stehlen. Ich verwende <plausible>Plausible Analytics</plausible>, das sich selbst finanziert, unabhängig ist, in der EU gehostet wird und keine Cookies auf deinem Computer speichert."
+      "description": "Ich werde niemals Werbung schalten oder deine persönlichen Daten stehlen. Ich verwende <plausible>Plausible Analytics</plausible> – das ist eigenfinanziert, unabhängig, in der EU gehostet und speichert keine Cookies auf deinem Computer."
     },
     "givingBack": {
       "heading": "Wertschätzung zeigen",
-      "description": "Ich habe unzählige Stunden damit verbracht, diese Seite zu verbessern. Wenn du schätzt, was ich gemacht habe, dann ziehe bitte in Betracht, an Wohltätigkeitsorganisationen zu spenden, die BIPOC und Transgender-Rechte unterstützen."
+      "description": "Ich habe unzählige Stunden in die Verbesserung dieser Seite gesteckt. Wenn dir gefällt, was ich gemacht habe, ziehe bitte eine Spende an Organisationen in Betracht, die sich für soziale Gerechtigkeit und Transgender-Rechte einsetzen."
     },
     "thanks": {
-      "heading": "Besonderer Dank",
-      "description": "Sieh dir in den <credits>Credits</credits> an, wer mir bei der Webseite geholfen hat."
+      "heading": "Danksagung",
+      "description": "Sieh dir in den <credits>Credits</credits> an, wer bei der Erstellung dieser Website geholfen hat."
     },
     "openSource": {
-      "heading": "Offener Quellcode",
+      "heading": "Open Source",
       "description": "Der Quellcode ist auf <github>GitHub</github> verfügbar."
     },
     "legalInfo": {
-      "heading": "Rechtliche Hinweise."
+      "heading": "Rechtliche Hinweise"
     }
   },
   "types": {
@@ -313,18 +331,18 @@
   "banners": {
     "updateReady": {
       "description": "Ein Update ist verfügbar",
-      "whatsNew": "Was ist neu",
-      "update": "Aktualisierung"
+      "whatsNew": "Was gibt's Neues?",
+      "update": "Aktualisieren"
     }
   },
   "general": {
-    "loading": "Laden...",
+    "loading": "Wird geladen…",
     "copyLink": "Link kopieren",
-    "clearChoices": "Auswahl entfernen"
+    "clearChoices": "Auswahl zurücksetzen"
   },
   "games": {
     "label": "Spielgeneration",
-    "help": "Verwende die Schwächen und Stärken von anderen Spielgenerationen.",
+    "help": "Nutze Typen-Effektivitäten aus verschiedenen Spielgenerationen.",
     "byID": {
       "gen1": "Generation 1",
       "gen2": "Generation 2–5",
