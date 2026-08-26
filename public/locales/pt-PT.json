@@ -253,6 +253,7 @@
       },
       "versionGroup": {
         "label": "Pokédex",
+        "help": "Controla os Pokémon e tipos disponíveis.",
         "values": {
           "all": "Pokédex nacional"
         }
@@ -267,6 +268,7 @@
       },
       "battleVariant": {
         "label": "Variante de batalha",
+        "help": "Durante uma Batalha Inversa, os confrontos de tipo são invertidos e nenhum tipo é imune a outro.",
         "values": {
           "regular": "Regular",
           "inverse_battle": "Batalha inversa"

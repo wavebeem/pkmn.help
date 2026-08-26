@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-25
+
+- Updated Portuguese (Portugal) translation
+
 ## 2026-08-03
 
 - Updated German translation
