@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-27
+
+- Updated Chinese (Traditional) translation
+
 ## 2026-08-25
 
 - Updated Portuguese (Portugal) translation

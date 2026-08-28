@@ -3,16 +3,38 @@
   "navigation": {
     "offense": "攻擊",
     "defense": "防禦",
-    "pokedex": "寶可夢圖鑑"
+    "pokedex": "寶可夢圖鑑",
+    "other": "其他",
+    "settings": "設定",
+    "about": "關於",
+    "menu": "主選單",
+    "close": "關閉"
   },
   "offense": {
-    "chooseTypes": "選擇屬性",
-    "dealsXTo": "對 {{ x }} 造成傷害",
+    "chooseTypes": "選擇招式屬性",
+    "dealsXTo": "造成 {{ x }} 傷害",
+    "mode": {
+      "combination": "雙屬性",
+      "single": "單屬性"
+    },
+    "matchups": {
+      "summary": {
+        "heading": "相剋結果總覽",
+        "damage": "傷害倍率",
+        "combinations": {
+          "heading": "屬性組合",
+          "empty": "無"
+        }
+      },
+      "types": {
+        "heading": "相剋屬性組合"
+      }
+    },
     "abilities": {
       "choose": "選擇特性"
     },
     "specialMoves": {
-      "choose": "選擇特別招式",
+      "choose": "選擇特殊招式",
       "names": {
         "freeze-dry": "冷凍乾燥",
         "thousand_arrows": "千箭齊發",
@@ -24,26 +46,26 @@
       "edit": "編輯列表",
       "weakness": "弱點",
       "normal": "正常",
-      "resistance": "抵抗"
+      "resistance": "減傷"
     },
-    "teraPokemon": "太晶宝可梦",
+    "teraPokemon": "太晶寶可夢",
     "coverageList": {
       "empty": "未找到寶可夢或未選擇屬性",
       "weakness": {
-        "heading": "弱點涵蓋列表"
+        "heading": "弱點寶可夢列表"
       },
       "normal": {
-        "heading": "正常效果涵蓋列表"
+        "heading": "效果正常寶可夢列表"
       },
       "resistance": {
-        "heading": "抵抗涵蓋列表"
+        "heading": "減傷寶可夢列表"
       }
     }
   },
   "coverage": {
-    "heading": "寶可夢圖鑑涵蓋",
-    "paragraph1": "匯入/匯出自定義寶可夢圖鑑 CSV 檔案以查看不同寶可夢的涵蓋範圍。只需創建一個包含OU級寶可夢的自定義 CSV 檔案，甚至可以從頭開始創建您自己的寶可夢。",
-    "paragraph2": "CSV 數據是按列標題名稱加載的，而不是按列順序加載的，因此您可以根據需要添加或重新排序列 (例如添加“層級”列或“備註”列)。",
+    "heading": "寶可夢圖鑑範圍",
+    "paragraph1": "匯入/匯出自定義寶可夢圖鑑 CSV 檔案以查看不同寶可夢的涵蓋範圍。可以從頭創建一個只包含OU級寶可夢、甚至是自行建構的寶可夢清單的自定義 CSV 檔案。",
+    "paragraph2": "CSV 資料是按列標題名稱讀取的，而不是按列順序讀取，因此您可以根據需要添加或重新排序列 (例如添加“層級”列或“備註”列)。",
     "paragraph3": "CSV 檔案可使用 Google Sheets、Microsoft Excel、OpenOffice、LibreOffice、記事本等編輯。",
     "csvHeaders": {
       "number": "編號",
@@ -54,7 +76,7 @@
     },
     "export": {
       "button": "匯出",
-      "description": "將默認寶可夢圖鑑匯出為 CSV 檔案"
+      "description": "將預設寶可夢圖鑑匯出為 CSV 檔案"
     },
     "import": {
       "button": "匯入",
@@ -62,20 +84,21 @@
     },
     "reset": {
       "button": "重置",
-      "description": "重置為默認寶可夢圖鑑"
+      "description": "重置為預設寶可夢圖鑑"
     },
-    "filename": "PKMN.help 屬性覆蓋範圍.csv",
+    "filename": "PKMN.help 屬性範圍.csv",
     "status": {
-      "imported": "從“{{ file }}”導入了 {{ n }} 個寶可夢形式",
-      "exported": "匯出了預設的寶可夢形式",
-      "reset": "載入了預設的寶可夢形式",
-      "errored": "載入 CSV 時出錯。不要更改標題名稱。"
+      "imported": "從“{{ file }}”導入了 {{ n }} 個寶可夢種類",
+      "exported": "匯出了預設的寶可夢種類",
+      "reset": "載入了預設的寶可夢種類",
+      "errored": "載入 CSV 時出錯。不要更改表格標題名稱。"
     },
     "back": "返回攻擊"
   },
   "defense": {
-    "takesXFrom": "從中取 {{ x }}",
-    "chooseAbility": "選擇技能",
+    "chooseTypes": "選擇屬性",
+    "takesXFrom": "承受 {{ x }} 傷害屬性",
+    "chooseAbility": "選擇特性",
     "chooseTeraType": "選擇太晶屬性",
     "abilityNames": {
       "none": "無",
@@ -111,26 +134,25 @@
       "team": "隊伍"
     },
     "team": {
-      "tableHeading": "對戰次數",
+      "tableHeading": "相剋次數",
       "heading": "編輯寶可夢隊伍",
       "add": "添加寶可夢",
       "empty": "未選擇寶可夢",
       "displayType": "表格格式",
       "weak": "弱點",
-      "resist": "抵抗",
+      "resist": "減傷",
       "simple": "簡單",
       "complex": "複雜",
       "type": "屬性",
       "edit": "編輯",
       "remove": "移除"
-    },
-    "chooseTypes": "選擇屬性"
+    }
   },
   "pokedex": {
     "search": {
-      "description": "通過名稱、編號或屬性搜索",
+      "description": "由名稱、編號或屬性搜尋",
       "help": "幫助",
-      "helpLong": "幫助，搜索寶可夢圖鑑",
+      "helpLong": "幫助，搜尋寶可夢圖鑑",
       "notFound": "未找到寶可夢"
     },
     "cry": {
@@ -139,6 +161,9 @@
     "shiny": {
       "text": "閃光"
     },
+    "gender": {
+      "text": "性別"
+    },
     "pagination": {
       "next": "下一個",
       "nextLong": "下一個",
@@ -146,6 +171,10 @@
       "previousLong": "上一個",
       "firstLong": "第一個",
       "lastLong": "最後一個"
+    },
+    "sorting": {
+      "sortBy": "排序依據",
+      "auto": "自動"
     },
     "stats": {
       "hp": "生命值",
@@ -166,32 +195,37 @@
   },
   "pokedexHelp": {
     "searchByName": {
-      "heading": "按名稱搜索",
-      "description": "您可以通過名稱搜索寶可夢。如果您只記得寶可夢名稱的一部分，它仍然可能會為您找到。但是，它現在無法處理錯別字。"
+      "heading": "按名稱搜尋",
+      "description": "您可以通過名稱搜尋寶可夢。如果您只記得寶可夢名稱的一部分，它仍然可能會為您找到。但是，它現在無法處理錯別字。"
     },
     "searchByNumber": {
-      "heading": "按編號搜索",
-      "description": "按國家圖鑑編號搜索。如果您想找妙蛙種子，只需輸入1，而不是＃001。"
+      "heading": "按編號搜尋",
+      "description": "按全國圖鑑編號搜尋。如果您想找妙蛙種子，只需輸入1，而不是＃001。"
     },
     "searchByType": {
-      "heading": "按類型搜索",
-      "description": "這裡有幾個示例，說明如何按類型搜索。"
+      "heading": "按類型搜尋",
+      "description": "這裡有幾個範例，說明如何按類型搜尋。"
     },
     "searchExamples": {
       "type": {
         "query": "火",
-        "description": "搜索具有火屬性的寶可夢的任何形式（例如，小火龍，噴火龍，洛托姆）。"
+        "description": "搜尋具有火屬性的任何寶可夢（例如，小火龍，噴火龍，洛托姆）。"
       },
       "doubleType": {
         "query": "水 飛行",
-        "description": "搜索水/飛行屬性的寶可夢（例如，暴鯉龍）或飛行/水屬性的寶可夢（例如，飛蟲鳥）。"
+        "description": "搜尋水/飛行屬性的寶可夢（例如，暴鯉龍）或飛行/水屬性的寶可夢（例如，飛蟲鳥）。"
       },
       "singleType": {
         "query": "草 無",
-        "description": "搜索僅具有草屬性的寶可夢，沒有第二屬性（例如，蔓藤怪，菊草葉，裙兒小姐）。"
+        "description": "搜尋僅具有草屬性的寶可夢，沒有第二屬性（例如，蔓藤怪，菊草葉，裙兒小姐）。"
       }
     },
     "back": "返回寶可夢圖鑑"
+  },
+  "about": {
+    "easterEgg": {
+      "button": "展示任意寶可夢"
+    }
   },
   "more": {
     "contact": {
@@ -209,19 +243,35 @@
       },
       "theme": {
         "label": "主題",
-        "help": "“系統默認”將根據您的操作系統設置自動更改。",
+        "help": "“系統預設”將根據您的操作系統設置自動更改。",
         "values": {
-          "auto": "系統默認",
+          "auto": "系統預設",
           "light": "亮色",
-          "dark": "暗色"
+          "dark": "暗色",
+          "night": "夜色"
+        }
+      },
+      "versionGroup": {
+        "label": "寶可夢圖鑑",
+        "help": "設定使用的寶可夢及屬性",
+        "values": {
+          "all": "全國圖鑑"
         }
       },
       "typeCount": {
         "label": "屬性數量",
-        "help": "如果受到「森林詛咒」或「不夜城的詛咒」的影響，寶可夢暫時可以同時擁有三種屬性。由於第三個屬性很少使用，因此默認情況下隱藏了第三個屬性字段。",
+        "help": "如果受到「森林詛咒」或「萬聖夜」的影響，寶可夢暫時可以擁有三種屬性。由於第三種屬性很少使用，因此預設隱藏了第三種屬性。",
         "values": {
-          "2": "兩種類型 (2)",
-          "3": "三種類型 (3)"
+          "2": "雙屬性 (2)",
+          "3": "三屬性 (3)"
+        }
+      },
+      "battleVariant": {
+        "label": "對戰規則",
+        "help": "於反轉對戰當中，屬性相剋結果被反轉，且不再有屬性能完全免疫其他屬性攻擊",
+        "values": {
+          "regular": "常規對戰",
+          "inverse_battle": "反轉對戰"
         }
       }
     },
@@ -232,27 +282,28 @@
     "help": {
       "heading": "幫助",
       "serviceWorker": {
-        "description": "此按鈕可幫助解決應用程序中的問題。",
+        "description": "此按鈕可幫助解決應用程式中的問題。",
         "button": "重置"
       }
     },
     "privacy": {
       "heading": "隱私權",
-      "description": "我永遠不會放置廣告或竊取您的個人數據。我使用的 <plausible>合理的分析</plausible> 是自資助的、獨立的、設在歐盟的，不會在您的計算機上存儲任何 cookie。"
+      "description": "我永遠不會放置廣告或竊取您的個人資訊。我使用的 <plausible>合理的分析</plausible> 是自資助的、獨立的、設在歐盟的，不會在您的電腦上儲存任何 cookie。"
     },
     "givingBack": {
       "heading": "表達感激之情",
-      "description": "我已經花費了無數時間來改進這個網站。如果您欣賞我的成果，請考慮捐款支持支持非裔和跨性別人士權利的慈善機構。"
+      "description": "我花費了無數時間來改進這個網站。如果您欣賞我的成果，請考慮捐款支持支持非裔和跨性別人士權利的慈善機構。"
     },
     "thanks": {
-      "heading": "特別感謝"
+      "heading": "特別感謝",
+      "description": "在 <credits>特別感謝</credits> 中看協助建立這個網站的所有人"
     },
     "openSource": {
       "heading": "開源",
       "description": "源代碼可在 <github>GitHub</github> 上找到。"
     },
     "legalInfo": {
-      "heading": "法律信息"
+      "heading": "法律訊息"
     }
   },
   "types": {
@@ -272,7 +323,7 @@
     "psychic": "超能力",
     "ice": "冰",
     "dragon": "龍",
-    "dark": "黑暗",
+    "dark": "惡",
     "fairy": "妖精",
     "stellar": "星晶",
     "none": "無"
@@ -286,7 +337,8 @@
   },
   "general": {
     "loading": "載入中…",
-    "copyLink": "複製連結"
+    "copyLink": "複製連結",
+    "clearChoices": "清除選項"
   },
   "games": {
     "label": "遊戲世代",
@@ -294,7 +346,7 @@
     "byID": {
       "gen1": "第一世代",
       "gen2": "第二到第五世代",
-      "default": "默認（第六世代及以上）"
+      "default": "預設（第六世代及以上）"
     }
   }
 }
