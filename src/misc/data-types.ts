@@ -527,6 +527,9 @@ export function restoreRegionalVariantsInPokedex({
         ret.push(pokemon);
       }
       ret.push(mon);
+    } else if (isRegionalVariant(mon)) {
+      // Only include via explicit replacements/additions above.
+      continue;
     } else {
       ret.push(mon);
     }
@@ -567,4 +570,10 @@ function isMega(pkmn: Pokemon): boolean {
     n.endsWith("-mega-y") ||
     n.endsWith("-mega-z")
   );
+}
+
+const regionalVariantTokens = new Set(["alola", "galar", "hisui", "paldea"]);
+
+function isRegionalVariant(pkmn: Pokemon): boolean {
+  return pkmn.name.split("-").some((part) => regionalVariantTokens.has(part));
 }
