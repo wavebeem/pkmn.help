@@ -23,8 +23,6 @@ export function versionGroupToGeneration(
     case "heartgold-soulsilver":
     case "platinum":
     case "diamond-pearl":
-    case "xd":
-    case "colosseum":
     case "firered-leafgreen":
     case "emerald":
     case "ruby-sapphire":
@@ -37,15 +35,10 @@ export function versionGroupToGeneration(
     case "legends-arceus":
     case "legends-za":
     case "lets-go-pikachu-lets-go-eevee":
-    case "mega-dimension":
     case "omega-ruby-alpha-sapphire":
     case "scarlet-violet":
     case "sun-moon":
     case "sword-shield":
-    case "the-crown-tundra":
-    case "the-indigo-disk":
-    case "the-isle-of-armor":
-    case "the-teal-mask":
     case "ultra-sun-ultra-moon":
     case "x-y":
     case "": {

@@ -223,17 +223,15 @@ export function Layout(): ReactNode {
         }
         list.push(mon);
       }
-      const dexPairs: [number, string][] = (
-        versionsData.monstersInVersionGroup as any
-      )[versionGroup];
-      allPokemon = dexPairs.flatMap(([number, slug]) => {
+      const dexSlugs: string[] = (versionsData.monstersInVersionGroup as any)[
+        versionGroup
+      ];
+      allPokemon = dexSlugs.flatMap((slug) => {
         const mons = speciesToMon.get(slug);
         if (mons === undefined) {
           throw new Error(`Failed to find Pokémon species ${slug}`);
         }
-        return mons
-          .map((m) => restorePastTypesByVersionGroup(m, versionGroup))
-          .map((m) => ({ ...m, number }));
+        return mons.map((m) => restorePastTypesByVersionGroup(m, versionGroup));
       });
       allPokemon = restoreRegionalVariantsInPokedex({
         dex: allPokemon,

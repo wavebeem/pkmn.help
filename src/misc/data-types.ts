@@ -221,8 +221,6 @@ export function hasAbilities(versionGroup: VersionGroup): boolean {
     case "ruby-sapphire":
     case "emerald":
     case "firered-leafgreen":
-    case "colosseum":
-    case "xd":
     case "diamond-pearl":
     case "platinum":
     case "heartgold-soulsilver":
@@ -234,15 +232,10 @@ export function hasAbilities(versionGroup: VersionGroup): boolean {
     case "ultra-sun-ultra-moon":
     case "lets-go-pikachu-lets-go-eevee":
     case "sword-shield":
-    case "the-isle-of-armor":
-    case "the-crown-tundra":
     case "brilliant-diamond-shining-pearl":
     case "legends-arceus":
     case "scarlet-violet":
-    case "the-teal-mask":
-    case "the-indigo-disk":
     case "legends-za":
-    case "mega-dimension":
     case "champions":
     case "": {
       return true;
@@ -255,11 +248,8 @@ export function hasAbilities(versionGroup: VersionGroup): boolean {
 
 export function hasTeraTypes(versionGroup: VersionGroup): boolean {
   switch (versionGroup) {
-    // Only Scarlet/Violet and its DLC have the Tera Pokemon and the Stellar
-    // type currently
+    // Only Scarlet/Violet has Tera Pokemon and the Stellar type
     case "":
-    case "the-indigo-disk":
-    case "the-teal-mask":
     case "scarlet-violet": {
       return true;
     }
@@ -291,10 +281,7 @@ export function typesForGeneration(generation: Generation): Type[] {
 
 export function typesForVersionGroup(versionGroup: VersionGroup): Type[] {
   switch (versionGroup) {
-    // Only Scarlet/Violet and its DLC have the Tera Pokemon and the Stellar
-    // type currently
-    case "the-indigo-disk":
-    case "the-teal-mask":
+    // Only Scarlet/Violet has Tera Pokemon and the Stellar type
     case "scarlet-violet": {
       return typesScarletViolet;
     }
@@ -436,6 +423,7 @@ export function restoreRegionalVariantsInPokedex({
       break;
     }
     case "sword-shield": {
+      // Combines the base Galar Dex with both expansions.
       replacements = {
         meowth: ["meowth-galar"],
         ponyta: ["ponyta-galar"],
@@ -448,23 +436,15 @@ export function restoreRegionalVariantsInPokedex({
         zigzagoon: ["zigzagoon-galar"],
         linoone: ["linoone-galar"],
         darumaka: ["darumaka-galar"],
-        darmanitan: ["darmanitan-galar"],
+        "darmanitan-standard": ["darmanitan-galar-standard"],
+        "darmanitan-zen": ["darmanitan-galar-zen"],
         yamask: ["yamask-galar"],
         stunfisk: ["stunfisk-galar"],
       };
-      break;
-    }
-    case "the-isle-of-armor": {
-      replacements = {
-        slowbro: ["slowbro-galar"],
-      };
-      break;
-    }
-    case "the-crown-tundra": {
-      replacements = {
-        slowking: ["slowking-galar"],
-      };
+      // Both forms are independently obtainable with the DLC.
       additions = {
+        slowbro: ["slowbro-galar"],
+        slowking: ["slowking-galar"],
         articuno: ["articuno-galar"],
         zapdos: ["zapdos-galar"],
         moltres: ["moltres-galar"],
@@ -495,7 +475,9 @@ export function restoreRegionalVariantsInPokedex({
       break;
     }
     case "scarlet-violet": {
-      replacements = {
+      // Combines the base Paldea Dex with both expansions.
+      // Both forms are independently obtainable with the DLC.
+      additions = {
         wooper: ["wooper-paldea"],
         tauros: [
           "tauros-paldea-combat-breed",
@@ -527,13 +509,14 @@ export function restoreRegionalVariantsInPokedex({
         ret.push(pokemon);
       }
       ret.push(mon);
+    } else if (isRegionalVariant(mon)) {
+      // Only include via explicit replacements/additions above.
+      continue;
     } else {
       ret.push(mon);
     }
     switch (versionGroup) {
-      case "sword-shield":
-      case "the-isle-of-armor":
-      case "the-crown-tundra": {
+      case "sword-shield": {
         break;
       }
       default: {
@@ -567,4 +550,10 @@ function isMega(pkmn: Pokemon): boolean {
     n.endsWith("-mega-y") ||
     n.endsWith("-mega-z")
   );
+}
+
+const regionalVariantTokens = new Set(["alola", "galar", "hisui", "paldea"]);
+
+function isRegionalVariant(pkmn: Pokemon): boolean {
+  return pkmn.name.split("-").some((part) => regionalVariantTokens.has(part));
 }

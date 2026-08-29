@@ -145,6 +145,12 @@ export default defineConfig((env) => {
     define: {
       __TRANSLATION_COMPLETION__: completions,
     },
+    server: {
+      port: 1510,
+    },
+    preview: {
+      port: 1510,
+    },
     build: {
       sourcemap: true,
     },

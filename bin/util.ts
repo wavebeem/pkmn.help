@@ -1,4 +1,5 @@
 import fs from "fs";
+import { isLang } from "../src/misc/detectLanguage.js";
 
 export function saveJSON(
   filename: string,
@@ -55,16 +56,20 @@ export function simplifyTranslations(
     // PokeAPI seems to have changed their capitalization?
     // https://github.com/PokeAPI/pokeapi/issues/1548
     if (lang === "ja-hrkt") {
-      ret["ja-Hrkt"] = t.name;
+      lang = "ja-Hrkt";
     } else if (lang === "ja-roma") {
       continue;
     } else if (lang === "zh-hans") {
-      ret["zh-Hans"] = t.name;
+      lang = "zh-Hans";
     } else if (lang === "zh-hant") {
-      ret["zh-Hant"] = t.name;
-    } else {
-      ret[lang] = t.name;
+      lang = "zh-Hant";
     }
+    // Skip languages we don't translate the site into (e.g. "es-419"),
+    // rather than bloating the data with text we never display.
+    if (!isLang(lang)) {
+      continue;
+    }
+    ret[lang] = t.name;
   }
   // Backfill regular Japanese from Japanese (kana-only) if Japanese is missing.
   if ("ja-Hrkt" in ret && !("ja" in ret)) {

@@ -1,5 +1,29 @@
 # Changelog
 
+## 2026-08-29
+
+- Consolidated base game Pokédexes with DLC Pokédexes
+
+  - e.g. Pokémon Legends Z-A now includes Mega Dimension, and Mega Dimension is
+    not separately selectable
+
+- Fixed issues with Pokédex entries showing regional variants by mistake, or
+  missing variants that should be present
+
+  - Please let me know if I made a mistake with a Pokédex
+
+- Removed Pokémon Colosseum and XD: Gale of Darkness since they were broken
+
+- Pokédex numbers are always based on the National Dex, and the Dex is sorted
+  based on this
+
+  - Yeah, I realize that this makes ordering a bit odd in some games, but I'm
+    trying to unify disparate Pokédexes, and I don't really want to mix and
+    match National vs Regional Dex numbers
+
+- As always, please email me your feedback if you have it. I realize that
+  changing the order of things is disruptive, and I don't do it lightly.
+
 ## 2026-08-27
 
 - Updated Chinese (Traditional) translation

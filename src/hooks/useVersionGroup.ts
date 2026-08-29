@@ -20,8 +20,6 @@ export function useVersionGroup(): [
     case "ruby-sapphire":
     case "emerald":
     case "firered-leafgreen":
-    case "colosseum":
-    case "xd":
     case "diamond-pearl":
     case "platinum":
     case "heartgold-soulsilver":
@@ -33,15 +31,10 @@ export function useVersionGroup(): [
     case "ultra-sun-ultra-moon":
     case "lets-go-pikachu-lets-go-eevee":
     case "sword-shield":
-    case "the-isle-of-armor":
-    case "the-crown-tundra":
     case "brilliant-diamond-shining-pearl":
     case "legends-arceus":
     case "scarlet-violet":
-    case "the-teal-mask":
-    case "the-indigo-disk":
     case "legends-za":
-    case "mega-dimension":
     case "champions": {
       return [versionGroup, setGeneration];
     }
