@@ -1,2 +1,1 @@
-- Remove tsx in favor of Node.js native type stripping
 - Switch to pokenode-ts in favor of custom data fetching code
