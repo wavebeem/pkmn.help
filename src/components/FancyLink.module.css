@@ -5,14 +5,18 @@
   text-decoration-thickness: calc(0.1em);
 }
 
+.noUnderline {
+  text-decoration-line: none;
+}
+
+.noUnderline:not(.outlined):focus-visible {
+  text-decoration-line: underline;
+}
+
 @media (hover) {
   .noUnderline:not(.outlined):hover {
     text-decoration-line: underline;
   }
-}
-
-.noUnderline {
-  text-decoration-line: none;
 }
 
 .outlined {

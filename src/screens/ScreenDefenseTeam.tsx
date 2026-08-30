@@ -226,17 +226,21 @@ export function ScreenDefenseTeam(): ReactNode {
                 const name = String(typeIndex + 1);
                 return (
                   <Card key={typeIndex} size="small">
-                    <Flex wrap gap="medium" align="center" justify="flex-end">
-                      <FancyText tag="div" fontWeight="medium" tabularNums>
+                    <div className={styles.teamRow}>
+                      <FancyText
+                        tag="div"
+                        fontWeight="medium"
+                        tabularNums
+                        className={styles.teamRowNumber}
+                      >
                         #{name}
                       </FancyText>
-                      <Flex direction="row" wrap justify="center" gap="small">
+                      <Flex wrap gap="small" className={styles.teamRowBadges}>
                         {types.map((t) => (
                           <Badge key={t} type={t} />
                         ))}
                       </Flex>
-                      <Flex flex="auto" />
-                      <Flex direction="row" wrap justify="flex-end" gap="small">
+                      <Flex gap="small" className={styles.teamRowIcons}>
                         <IconButton
                           title={t("defense.team.edit")}
                           aria-label={t("defense.team.edit")}
@@ -267,7 +271,7 @@ export function ScreenDefenseTeam(): ReactNode {
                           <IconRemove size={24} />
                         </IconButton>
                       </Flex>
-                    </Flex>
+                    </div>
                     <Flex
                       hidden={typeIndex !== teamIndex}
                       direction="column"

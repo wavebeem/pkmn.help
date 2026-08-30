@@ -204,9 +204,7 @@ export function ScreenPokedex(): ReactNode {
             setPage={setPage}
             // Divide evenly between 1, 2, and 3 column layouts
             pageSize={12}
-            emptyState={
-              <EmptyState>{t("pokedex.search.notFound")}</EmptyState>
-            }
+            emptyState={<EmptyState>{t("pokedex.search.notFound")}</EmptyState>}
             items={pkmn}
             renderPage={(page) => (
               <div className={styles.monsterGrid} data-stale={isStale}>

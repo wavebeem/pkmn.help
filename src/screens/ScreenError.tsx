@@ -1,16 +1,26 @@
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import { isRouteErrorResponse, useRouteError } from "react-router-dom";
-import { Button } from "../components/Button";
-import { CopyButton } from "../components/CopyButton";
-import { ExternalLink } from "../components/ExternalLink";
-import { FancyText } from "../components/FancyText";
-import { Flex } from "../components/Flex";
-import { IconBack, IconReset } from "../components/icons";
 import { resetApp } from "../misc/resetApp";
 import styles from "./ScreenError.module.css";
 
+function useCopyToClipboard(): {
+  didCopy: boolean;
+  copy: (text: string) => Promise<void>;
+} {
+  const [didCopy, setDidCopy] = useState(false);
+
+  async function copy(text: string) {
+    await navigator.clipboard.writeText(text);
+    setDidCopy(true);
+    setTimeout(() => setDidCopy(false), 1000);
+  }
+
+  return { didCopy, copy };
+}
+
 export function ScreenError(): ReactNode {
   const error = useRouteError();
+  const clip = useCopyToClipboard();
 
   if (isRouteErrorResponse(error)) {
     // Do something with error.data?
@@ -41,37 +51,49 @@ ${JSON.stringify(sessionStorage)}
 `.trim();
 
   return (
-    <div className="content-narrow center">
-      <Flex direction="column" gap="large" padding="large">
-        <FancyText tag="h1">Pokémon Type Calculator: Error</FancyText>
-        <FancyText tag="p">
+    <div className={styles.root}>
+      <div className={styles.content}>
+        <h1 className={styles.heading}>PKMN.help: Error</h1>
+        <p>
           Please copy the error message below and send it to{" "}
-          <ExternalLink href="mailto:pkmn@wavebeem.com">
+          <a className={styles.link} href="mailto:pkmn@wavebeem.com">
             pkmn@wavebeem.com
-          </ExternalLink>
+          </a>
           .
-        </FancyText>
-        <Flex>
-          <CopyButton text={message}>Copy error message</CopyButton>
-        </Flex>
+        </p>
+        <div className={styles.row}>
+          <button
+            type="button"
+            className={styles.button}
+            data-variant="outlined"
+            onClick={() => void clip.copy(message)}
+          >
+            Copy error message
+          </button>
+          {clip.didCopy && <span>Copied!</span>}
+        </div>
         <pre className={styles.pre}>{message}</pre>
 
-        <FancyText tag="p">Resetting the app may help:</FancyText>
-        <Flex>
-          <Button variant="filled" onClick={resetApp}>
-            <IconReset size={24} /> Reset
-          </Button>
-        </Flex>
+        <p>Resetting the app may help:</p>
+        <div>
+          <button
+            type="button"
+            className={styles.button}
+            data-variant="filled"
+            onClick={resetApp}
+          >
+            Reset
+          </button>
+        </div>
 
-        <FancyText tag="p">You can try returning to the main page.</FancyText>
+        <p>You can try returning to the main page.</p>
 
-        <Flex align="center" gap="small">
-          <IconBack />
-          <FancyText tag="span" fontSize="large" fontWeight="medium">
-            <ExternalLink href="/">Back to main page</ExternalLink>
-          </FancyText>
-        </Flex>
-      </Flex>
+        <p>
+          <a className={styles.link} href="/">
+            Back to main page
+          </a>
+        </p>
+      </div>
     </div>
   );
 }

@@ -98,8 +98,12 @@ input {
   background-image: radial-gradient(var(--state-press));
 }
 
-.active-darken:hover:not(:active, :disabled, [aria-disabled="true"]),
-.active-darken-background:hover:not(
+.active-darken:is(:hover, :focus-visible):not(
+    :active,
+    :disabled,
+    [aria-disabled="true"]
+  ),
+.active-darken-background:is(:hover, :focus-visible, :has(:focus-visible)):not(
     :active,
     :disabled,
     [aria-disabled="true"]

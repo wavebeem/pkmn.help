@@ -36,7 +36,8 @@
 }
 
 .summary:focus-visible {
-  outline: 2px solid var(--color-primary);
+  /* Avoid cutting off outline */
+  outline: 2px solid var(--color-tertiary);
   outline-offset: -2px;
 }
 

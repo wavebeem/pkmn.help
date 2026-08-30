@@ -1,11 +1,90 @@
+/* Self-contained: no --color-* or other vars.css tokens, all defined here. */
+.root {
+  --_bg: light-dark(#fafafa, #1a1a1a);
+  --_text: light-dark(#1a1a1a, #fafafa);
+  --_card-bg: color-mix(in oklab, var(--_text) 7%, var(--_bg));
+  --_border: color-mix(in oklab, var(--_text) 30%, var(--_bg));
+
+  --_padding-sm: 8px;
+  --_padding-md: 16px;
+  --_padding-lg: 32px;
+  --_font-size-sm: 0.875rem;
+  --_font-size-lg: 1.5rem;
+  --_weight-medium: 500;
+  --_radius-lg: 16px;
+  --_radius-pill: 9999px;
+
+  /* Overrides a previously-selected theme forcing a single color-scheme. */
+  color-scheme: light dark;
+
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background: var(--_bg);
+  color: var(--_text);
+  font-size: 1.2rem;
+}
+
+.content {
+  margin-inline: auto;
+  max-width: 44rem;
+  width: 100%;
+  padding: var(--_padding-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--_padding-md);
+}
+
+.content :is(h1, p) {
+  margin: 0;
+}
+
+.heading {
+  font-size: var(--_font-size-lg);
+  font-weight: var(--_weight-medium);
+  line-height: 1.25;
+}
+
 .pre {
   margin: 0;
-  font-size: 1rem;
-  background: var(--color-bg-input);
-  color: var(--color-primary);
-  padding: var(--padding2);
-  border: 1px solid var(--color-border-secondary);
-  border-radius: var(--border-radius3);
+  font-size: var(--_font-size-sm);
+  background: var(--_card-bg);
+  color: var(--_text);
+  padding: var(--_padding-sm);
+  border-radius: var(--_radius-lg);
   white-space: pre-wrap;
   word-break: break-all;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--_padding-md);
+}
+
+.link {
+  color: var(--_text);
+  text-decoration: underline;
+  text-underline-offset: calc(1em / 8);
+}
+
+.button {
+  border: 1px solid transparent;
+  border-radius: var(--_radius-pill);
+  padding: var(--_padding-sm) var(--_padding-md);
+  font: inherit;
+  font-weight: var(--_weight-medium);
+  cursor: pointer;
+}
+
+.button[data-variant="filled"] {
+  background: var(--_text);
+  color: var(--_bg);
+  padding-inline: var(--_padding-lg);
+}
+
+.button[data-variant="outlined"] {
+  background: transparent;
+  border-color: var(--_border);
+  color: var(--_text);
 }

@@ -34,7 +34,7 @@
     border-color: transparent;
   }
 
-  &:hover:not(:active, :disabled, [aria-disabled="true"]) {
+  &:is(:hover, :focus-visible):not(:active, :disabled, [aria-disabled="true"]) {
     background-image: radial-gradient(var(--state-hover));
   }
 

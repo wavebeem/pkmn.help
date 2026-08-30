@@ -1,11 +1,5 @@
 /* M3 focus rings: a plain 2px solid ring, no extra shadow layering. */
 
-.focus-tab:focus-visible,
-.focus-tab:has(:focus-visible) {
-  outline: 2px solid var(--color-primary);
-  outline-offset: -2px;
-}
-
 .focus-outline:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 2px;
@@ -13,20 +7,20 @@
 
 .focus-toggle:focus-visible,
 .focus-toggle:has(:focus-visible) {
-  outline: 2px solid var(--color-primary);
+  outline: 2px solid var(--color-tertiary);
   outline-offset: 2px;
 }
 
 .focus-simple:focus-visible,
 .focus-simple:has(:focus-visible) {
-  outline: 2px solid var(--color-primary);
-  outline-offset: -2px;
+  outline: 2px solid var(--color-tertiary);
+  outline-offset: 2px;
 }
 
 .focus-selected:focus-visible,
 .focus-selected:has(:focus-visible) {
-  outline: 2px solid var(--color-primary);
-  outline-offset: -2px;
+  outline: 2px solid var(--color-tertiary);
+  outline-offset: 2px;
 }
 
 .focus-none:focus {

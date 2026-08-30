@@ -21,7 +21,7 @@
     var(--motion-easing-standard);
 }
 
-.input:hover:not(:focus, :disabled) {
+.input:is(:hover, :focus-visible):not(:disabled) {
   border-color: var(--color-primary);
 }
 

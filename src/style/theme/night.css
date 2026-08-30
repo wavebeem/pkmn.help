@@ -1,50 +1,56 @@
+/* Same --md-* tokens as dark mode, just mapped to different roles. */
 [data-theme="night"] {
-  --color-bg-input: hsl(0 0% 15%);
-  --color-bg-input-lowest: hsl(0 0% 2%);
-  --color-bg-base: hsl(0 0% 5%);
-  --color-bg-ghost: hsl(0 0% 2%);
+  --color-bg-input: var(--md-surface-container-high);
+  --color-bg-input-lowest: var(--md-surface-container-lowest);
+  --color-bg-base: var(--md-surface-container-lowest);
+  --color-bg-ghost: var(--md-surface-container-lowest);
 
-  --color-card-bg: hsl(0 0% 10%);
-  --color-card-highlight: hsl(0 0% 20%);
+  --color-card-bg: var(--md-background);
+  --color-card-highlight: var(--md-surface-container);
 
-  --color-primary: hsl(0 0% 82%);
-  --color-secondary: hsl(0 0% 62%);
-  --color-disabled: hsl(0 0% 52%);
+  --color-primary: var(--md-on-surface);
+  --color-secondary: var(--md-on-surface-variant);
+  --color-disabled: var(--md-outline);
 
-  --color-accent-bg: hsl(0 0% 80%);
-  --color-accent-fg: hsl(0 0% 5%);
-  --color-header-bg: var(--color-accent-bg);
-  --color-header-fg: var(--color-accent-fg);
-  --color-tertiary: var(--color-accent-bg);
-  --color-tertiary-fg: var(--color-accent-fg);
-  --color-tertiary-container-bg: hsl(0 0% 25%);
-  --color-tertiary-container-fg: hsl(0 0% 92%);
+  --color-link: var(--md-on-surface);
 
-  --color-tabs-base: hsl(0 0% 15%);
-  --color-tabs-highlight: hsl(0 0% 25%);
-  --color-tabs-text: hsl(0 0% 82%);
+  /* Matches the tertiary/pressed look below. */
+  --color-accent-bg: var(--color-primary);
+  --color-accent-fg: var(--color-bg-base);
 
-  --color-sidebar-base: hsl(0 0% 10%);
-  --color-sidebar-highlight: hsl(0 0% 20%);
-  --color-sidebar-text: hsl(0 0% 82%);
+  --color-header-bg: var(--md-surface-container-high);
+  --color-header-fg: var(--md-on-surface);
 
-  --color-nav-selected-bg: hsl(0 0% 25%);
-  --color-nav-selected-fg: hsl(0 0% 92%);
+  --color-tabs-base: var(--md-background);
+  --color-tabs-highlight: var(--md-surface-container);
+  --color-tabs-text: var(--md-on-surface);
 
-  --color-secondary-container-bg: hsl(0 0% 25%);
-  --color-secondary-container-fg: hsl(0 0% 92%);
+  --color-sidebar-base: var(--md-background);
+  --color-sidebar-highlight: var(--md-surface-container-low);
+  --color-sidebar-text: var(--md-on-surface);
 
-  --color-selected-container-bg: hsl(0 0% 25%);
-  --color-selected-container-fg: hsl(0 0% 92%);
+  --color-nav-selected-bg: var(--md-surface-container-high);
+  --color-nav-selected-fg: var(--md-on-surface);
 
-  --color-link: hsl(var(--hue-teal) 90% 75%);
+  --color-secondary-container-bg: var(--md-surface-container-high);
+  --color-secondary-container-fg: var(--md-on-surface);
 
-  --color-border-primary: hsl(0 0% 47%);
-  --color-border-secondary: hsl(0 0% 25%);
-  --color-border-disabled: hsl(0 0% 20%);
+  --color-selected-container-bg: var(--md-surface-container-highest);
+  --color-selected-container-fg: var(--md-on-surface);
+
+  --color-tertiary: var(--color-primary);
+  --color-tertiary-fg: var(--color-bg-base);
+  --color-tertiary-container-bg: var(--md-surface-container-high);
+  --color-tertiary-container-fg: var(--md-on-surface);
+
+  --color-border-primary: var(--md-outline);
+  --color-border-secondary: var(--md-outline-variant);
+  --color-border-disabled: var(--md-outline-variant);
   --color-border-subtle: hsl(0 0% 100% / 20%);
 
-  --color-scroll: hsl(0 0% 62%);
+  --color-scroll: var(--md-outline);
+
+  --content-dim: 0.8;
 
   color: var(--color-primary);
   background-color: var(--color-bg-base);

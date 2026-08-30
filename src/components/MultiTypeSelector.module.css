@@ -26,11 +26,11 @@
   }
 
   &:focus-visible {
-    outline: 2px solid var(--color-primary);
-    outline-offset: -2px;
+    outline: 2px solid var(--color-tertiary);
+    outline-offset: 2px;
   }
 
-  &:hover:not(:active) {
+  &:is(:hover, :focus-visible):not(:active) {
     background-image: radial-gradient(var(--state-hover));
   }
 }
@@ -67,9 +67,10 @@
   flex: none;
   background: var(--type-color);
   color: #fff;
+  opacity: var(--content-dim);
   border-radius: var(--_radius-round);
-  transition: border-radius var(--motion-duration-short3)
-    var(--motion-easing-standard);
+  transition: var(--motion-duration-short3) var(--motion-easing-standard);
+  transition-property: border-radius, opacity;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,4 +101,8 @@
 
 .button[aria-pressed="false"] .check {
   display: none;
+}
+
+.button:is(:hover, :focus-visible) .checkbox {
+  opacity: 1;
 }

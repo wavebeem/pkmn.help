@@ -7,6 +7,13 @@ bar-chart meter rather than a loading state. */
   height: var(--padding1);
   min-height: var(--padding3);
   min-width: 100px;
+  opacity: var(--content-dim);
+  transition: var(--motion-duration-short3) var(--motion-easing-standard);
+  transition-property: opacity;
+}
+
+.root:hover {
+  opacity: 1;
 }
 
 .fill {
