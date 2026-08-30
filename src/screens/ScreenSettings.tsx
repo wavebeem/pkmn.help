@@ -23,7 +23,7 @@ import { pickTranslation } from "../misc/pickTranslation";
 import { getVersionGroupName } from "../misc/versionGroup";
 
 function formatOptgroupLabel(label: string) {
-  return `{ ${label} }`;
+  return `— ${label} ————`;
 }
 
 export function ScreenSettings(): ReactNode {

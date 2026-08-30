@@ -28,7 +28,7 @@ export function CollapsibleSection({
         {heading}
         <IconCaret className={styles.icon} />
       </summary>
-      {children}
+      <div className={styles.body}>{children}</div>
     </details>
   );
 }

@@ -4,7 +4,6 @@ import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "../components/CopyButton";
-import { Divider } from "../components/Divider";
 import { EmptyState } from "../components/EmptyState";
 import { FancyLink } from "../components/FancyLink";
 import { Flex } from "../components/Flex";
@@ -142,7 +141,7 @@ export function ScreenPokedex(): ReactNode {
 
   return (
     <main className="center content-wide">
-      <Flex direction="column" gap="large" padding="large">
+      <Flex direction="column" gap="xlarge" padding="large">
         <div className={styles.searchArea}>
           <Search
             label={t("pokedex.search.description")}
@@ -197,7 +196,6 @@ export function ScreenPokedex(): ReactNode {
             </option>
           </Select>
         </div>
-        <Divider />
         {isLoading ? (
           <Spinner />
         ) : (
@@ -207,7 +205,7 @@ export function ScreenPokedex(): ReactNode {
             // Divide evenly between 1, 2, and 3 column layouts
             pageSize={12}
             emptyState={
-              <EmptyState borderless>{t("pokedex.search.notFound")}</EmptyState>
+              <EmptyState>{t("pokedex.search.notFound")}</EmptyState>
             }
             items={pkmn}
             renderPage={(page) => (
@@ -223,7 +221,6 @@ export function ScreenPokedex(): ReactNode {
             )}
           />
         )}
-        <Divider />
         <Flex align="center">
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
           <Flex flex="auto" />

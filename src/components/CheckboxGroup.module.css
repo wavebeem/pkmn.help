@@ -11,6 +11,8 @@
   padding-inline: var(--padding1) var(--padding3);
   display: block;
   border: 1px solid transparent;
+  font-weight: var(--label-font-weight);
+  letter-spacing: var(--label-letter-spacing);
   border-radius: var(--_radius-round);
   transition: border-radius var(--motion-duration-short3)
     var(--motion-easing-standard);

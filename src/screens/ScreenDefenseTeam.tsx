@@ -8,7 +8,6 @@ import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import { ClearChoices } from "../components/ClearChoices";
 import { CopyButton } from "../components/CopyButton";
-import { Divider } from "../components/Divider";
 import { EmptyState } from "../components/EmptyState";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
@@ -233,7 +232,7 @@ export function ScreenDefenseTeam(): ReactNode {
                       </FancyText>
                       <Flex direction="row" wrap justify="center" gap="small">
                         {types.map((t) => (
-                          <Badge key={t} type={t} size="small" />
+                          <Badge key={t} type={t} />
                         ))}
                       </Flex>
                       <Flex flex="auto" />
@@ -250,7 +249,7 @@ export function ScreenDefenseTeam(): ReactNode {
                             }
                           }}
                         >
-                          <IconEdit size={16} />
+                          <IconEdit size={24} />
                         </IconButton>
                         <IconButton
                           title={t("defense.team.remove")}
@@ -265,7 +264,7 @@ export function ScreenDefenseTeam(): ReactNode {
                             setTeamAbilities(teamAbilityList);
                           }}
                         >
-                          <IconRemove size={16} />
+                          <IconRemove size={24} />
                         </IconButton>
                       </Flex>
                     </Flex>
@@ -274,8 +273,6 @@ export function ScreenDefenseTeam(): ReactNode {
                       direction="column"
                       gap="large"
                     >
-                      <div />
-                      <Divider />
                       <Flex direction="column" gap="medium">
                         <FancyText
                           tag="h3"
@@ -372,7 +369,7 @@ export function ScreenDefenseTeam(): ReactNode {
                 setTeamIndex(newTypes.length - 1);
               }}
             >
-              <IconAdd size={16} />
+              <IconAdd size={24} />
               {t("defense.team.add")}
             </Button>
           </Flex>

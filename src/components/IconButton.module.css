@@ -3,15 +3,20 @@
 
   gap: var(--padding1);
   border-radius: var(--_radius-round);
-  transition: border-radius var(--motion-duration-short3)
-    var(--motion-easing-standard);
+  transition: var(--motion-duration-short3) var(--motion-easing-standard);
+  transition-property: border-radius, background-color, color;
   padding: var(--padding2);
   display: flex;
+
   align-items: center;
   fill: currentColor;
   color: var(--color-primary);
   border: 1px solid transparent;
   background-color: var(--color-bg-input);
+
+  &[data-size="small"] {
+    padding: var(--padding1);
+  }
 
   &[data-variant="tertiary"] {
     background-color: var(--color-tertiary-container-bg);
@@ -24,7 +29,8 @@
 
   &:is(:disabled, [aria-disabled="true"]) {
     background: var(--state-disabled-container);
-    color: var(--state-disabled-content);
+    /* Overlapping SVG strokes don't mix well with alpha. Use pre-blended color instead. */
+    color: color-mix(in oklab, var(--color-primary) 38%, var(--color-card-bg));
     border-color: transparent;
   }
 

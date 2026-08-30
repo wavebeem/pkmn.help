@@ -59,7 +59,7 @@ ${JSON.stringify(sessionStorage)}
         <FancyText tag="p">Resetting the app may help:</FancyText>
         <Flex>
           <Button variant="filled" onClick={resetApp}>
-            <IconReset size={16} /> Reset
+            <IconReset size={24} /> Reset
           </Button>
         </Flex>
 

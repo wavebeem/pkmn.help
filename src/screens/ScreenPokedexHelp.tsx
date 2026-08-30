@@ -4,6 +4,7 @@ import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { IconBack } from "../components/icons";
+import { Section } from "../components/Section";
 import styles from "./ScreenPokedexHelp.module.css";
 
 export function ScreenPokedexHelp(): ReactNode {
@@ -12,54 +13,69 @@ export function ScreenPokedexHelp(): ReactNode {
     <main className="center content-narrow">
       <Flex flex="auto" padding="medium" />
       <Flex flex="auto" padding="small" />
-      <Flex direction="column" gap="large" padding="large">
-        <FancyText tag="h2" fontSize="large" fontWeight="medium">
-          {t("pokedexHelp.searchByName.heading")}
-        </FancyText>
-        <FancyText tag="p">
-          {t("pokedexHelp.searchByName.description")}
-        </FancyText>
+      <Flex direction="column" gap="xlarge" padding="large">
+        <Section
+          heading={
+            <FancyText tag="h2" fontSize="large" fontWeight="medium">
+              {t("pokedexHelp.searchByName.heading")}
+            </FancyText>
+          }
+        >
+          <FancyText tag="p">
+            {t("pokedexHelp.searchByName.description")}
+          </FancyText>
+        </Section>
 
-        <FancyText tag="h2" fontSize="large" fontWeight="medium">
-          {t("pokedexHelp.searchByNumber.heading")}
-        </FancyText>
-        <FancyText tag="p">
-          {t("pokedexHelp.searchByNumber.description")}
-        </FancyText>
+        <Section
+          heading={
+            <FancyText tag="h2" fontSize="large" fontWeight="medium">
+              {t("pokedexHelp.searchByNumber.heading")}
+            </FancyText>
+          }
+        >
+          <FancyText tag="p">
+            {t("pokedexHelp.searchByNumber.description")}
+          </FancyText>
+        </Section>
 
-        <FancyText tag="h2" fontSize="large" fontWeight="medium">
-          {t("pokedexHelp.searchByType.heading")}
-        </FancyText>
-        <FancyText tag="p">
-          {t("pokedexHelp.searchByType.description")}
-        </FancyText>
+        <Section
+          heading={
+            <FancyText tag="h2" fontSize="large" fontWeight="medium">
+              {t("pokedexHelp.searchByType.heading")}
+            </FancyText>
+          }
+        >
+          <FancyText tag="p">
+            {t("pokedexHelp.searchByType.description")}
+          </FancyText>
 
-        <FancyText tag="p">
-          <code className={styles.code}>
-            {t("pokedexHelp.searchExamples.type.query")}
-          </code>
-        </FancyText>
-        <FancyText tag="p">
-          {t("pokedexHelp.searchExamples.type.description")}
-        </FancyText>
+          <FancyText tag="p">
+            <code className={styles.code}>
+              {t("pokedexHelp.searchExamples.type.query")}
+            </code>
+          </FancyText>
+          <FancyText tag="p">
+            {t("pokedexHelp.searchExamples.type.description")}
+          </FancyText>
 
-        <FancyText tag="p">
-          <code className={styles.code}>
-            {t("pokedexHelp.searchExamples.doubleType.query")}
-          </code>
-        </FancyText>
-        <FancyText tag="p">
-          {t("pokedexHelp.searchExamples.doubleType.description")}
-        </FancyText>
+          <FancyText tag="p">
+            <code className={styles.code}>
+              {t("pokedexHelp.searchExamples.doubleType.query")}
+            </code>
+          </FancyText>
+          <FancyText tag="p">
+            {t("pokedexHelp.searchExamples.doubleType.description")}
+          </FancyText>
 
-        <FancyText tag="p">
-          <code className={styles.code}>
-            {t("pokedexHelp.searchExamples.singleType.query")}
-          </code>
-        </FancyText>
-        <FancyText tag="p">
-          {t("pokedexHelp.searchExamples.singleType.description")}
-        </FancyText>
+          <FancyText tag="p">
+            <code className={styles.code}>
+              {t("pokedexHelp.searchExamples.singleType.query")}
+            </code>
+          </FancyText>
+          <FancyText tag="p">
+            {t("pokedexHelp.searchExamples.singleType.description")}
+          </FancyText>
+        </Section>
 
         <Flex gap="small" align="center">
           <IconBack />

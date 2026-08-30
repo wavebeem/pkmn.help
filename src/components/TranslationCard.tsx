@@ -48,7 +48,7 @@ export function TranslationCard({ lang }: TranslationCardProps): ReactNode {
           outlined
         >
           {languageNamesEnglish[lang]} CSV
-          <IconDownload size="1em" />
+          <IconDownload size={24} />
         </ExternalLink>
       </div>
     </div>

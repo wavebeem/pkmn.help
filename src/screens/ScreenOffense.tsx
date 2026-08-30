@@ -220,27 +220,29 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
             {t("offense.coverage.heading")}
           </FancyText>
           <Card size="small">
-            <Flex direction="column" gap="large">
-              <Flex direction="row" gap="medium">
-                <FancyLink
-                  outlined
-                  to="/settings/"
-                  aria-label={t("navigation.settings")}
-                  iconOnly
-                >
-                  <IconSettings size={16} />
-                </FancyLink>
-                <FancyText tag="span" fontWeight="normal">
-                  {versionGroupName}
-                </FancyText>
-              </Flex>
+            <Flex direction="column" gap="xlarge">
+              <Flex direction="column" gap="small">
+                <Flex direction="row" gap="medium" align="center">
+                  <FancyLink
+                    outlined
+                    to="/settings/"
+                    aria-label={t("navigation.settings")}
+                    iconOnly
+                  >
+                    <IconSettings size={24} />
+                  </FancyLink>
+                  <FancyText tag="span" fontWeight="normal">
+                    {versionGroupName}
+                  </FancyText>
+                </Flex>
 
-              <div>
-                <FancyLink to="/offense/coverage/">
-                  {t("offense.coverage.edit")}
-                </FancyLink>{" "}
-                ({listLengthFormatted})
-              </div>
+                <div>
+                  <FancyLink to="/offense/coverage/">
+                    {t("offense.coverage.edit")}
+                  </FancyLink>{" "}
+                  ({listLengthFormatted})
+                </div>
+              </Flex>
               <DexCoverage
                 battleVariant={battleVariant}
                 versionGroup={versionGroup}

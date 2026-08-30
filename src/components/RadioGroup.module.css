@@ -4,6 +4,16 @@
   gap: var(--padding1);
 }
 
+.label {
+  font-weight: var(--label-font-weight);
+  letter-spacing: var(--label-letter-spacing);
+}
+
+.name {
+  font-weight: var(--label-font-weight);
+  letter-spacing: var(--label-letter-spacing);
+}
+
 .itemsContainer {
   display: flex;
   flex-wrap: wrap;
@@ -39,12 +49,16 @@
   pointer-events: none;
 }
 
-.header:has(+ .itemsContainer .radio:disabled) {
-  color: var(--state-disabled-content);
-
-  [data-color="secondary"] {
+.root:has(.radio:disabled) {
+  .label,
+  .help {
     color: var(--state-disabled-content);
   }
+}
+
+.help {
+  margin: 0;
+  font-size: var(--font-size0);
 }
 
 .item:has(.radio:focus-visible) {

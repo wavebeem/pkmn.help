@@ -13,18 +13,20 @@
   padding-left: var(--padding1);
 }
 
+.title {
+  flex: auto;
+  min-width: 0;
+}
+
 .badges {
   padding-left: var(--padding1);
 }
 
 .buttonContainer {
   display: flex;
+  flex: none;
   justify-content: center;
-  gap: var(--padding1);
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin: var(--padding2);
+  gap: var(--padding0);
 }
 
 .monster {

@@ -1,0 +1,11 @@
+.header {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--padding3);
+}
+
+@media (width < 26rem) {
+  .header {
+    flex-direction: column;
+  }
+}

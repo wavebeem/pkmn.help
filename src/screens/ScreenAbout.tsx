@@ -26,7 +26,7 @@ export function ScreenAbout(): ReactNode {
   return (
     <main className="content-narrow center">
       <Flex direction="column" padding="large">
-        <Flex direction="column" gap="large">
+        <Flex direction="column" gap="xlarge">
           {needsAppUpdate && (
             <div className={styles.updateBanner}>
               <Card>
@@ -252,7 +252,7 @@ export function ScreenAbout(): ReactNode {
                 setEasterEgg(pkmn);
               }}
             >
-              <IconTada size={16} />
+              <IconTada size={24} />
               {t("about.easterEgg.button")}
             </Button>
           </Flex>

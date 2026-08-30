@@ -43,6 +43,8 @@
 
 .label {
   padding-bottom: var(--padding1);
+  font-weight: var(--label-font-weight);
+  letter-spacing: var(--label-letter-spacing);
 }
 
 .label:has(+ .input[inputmode="search"]) {

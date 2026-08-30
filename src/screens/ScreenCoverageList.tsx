@@ -99,7 +99,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
           items={items}
           renderPage={(items) => {
             return (
-              <Flex direction="column" paddingY="large">
+              <Flex direction="column">
                 {items.map(({ number, name, types }, i) => {
                   const dexParams = new URLSearchParams({
                     q: number,

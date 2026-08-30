@@ -29,14 +29,7 @@ export function RadioGroup<S extends string>({
 
   return (
     <div className={styles.root}>
-      <div className={styles.header}>
-        <div>{label}</div>
-        {helpText && (
-          <FancyText tag="div" fontSize="small" color="secondary">
-            {helpText}
-          </FancyText>
-        )}
-      </div>
+      <div className={styles.label}>{label}</div>
       <div className={styles.itemsContainer}>
         {options.map((option) => (
           <label
@@ -62,6 +55,11 @@ export function RadioGroup<S extends string>({
           </label>
         ))}
       </div>
+      {helpText && (
+        <FancyText tag="p" className={styles.help} color="secondary">
+          {helpText}
+        </FancyText>
+      )}
     </div>
   );
 }

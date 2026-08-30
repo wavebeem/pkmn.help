@@ -12,6 +12,7 @@ import { AbilityName, SpecialMove, Type } from "../misc/data-types";
 import { Badge } from "./Badge";
 import { Card } from "./Card";
 import { CollapsibleSection } from "./CollapsibleSection";
+import { CollapsibleSectionContainer } from "./CollapsibleSectionContainer";
 import { EmptyState } from "./EmptyState";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
@@ -135,7 +136,7 @@ export function Matchups({
             <FancyText tag="h2" fontWeight="medium" fontSize="large">
               {t("offense.matchups.types.heading")}
             </FancyText>
-            <Card size="small">
+            <CollapsibleSectionContainer>
               {effs.map((eff, i) => {
                 const list = matchups.matchups.filter(
                   (m) => m.effectiveness === eff,
@@ -167,7 +168,7 @@ export function Matchups({
                     }
                   >
                     {list.length === 0 && (
-                      <EmptyState borderless>
+                      <EmptyState>
                         {t("offense.matchups.summary.combinations.empty")}
                       </EmptyState>
                     )}
@@ -202,7 +203,7 @@ export function Matchups({
                   </CollapsibleSection>
                 );
               })}
-            </Card>
+            </CollapsibleSectionContainer>
           </Flex>
         </Flex>
       </div>

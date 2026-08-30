@@ -51,15 +51,98 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
   return (
     <div className={styles.root}>
       <Flex direction="column" className={styles.name}>
-        <Flex align="center" gap="medium">
+        <Flex align="center" gap="medium" wrap>
           <FancyText
             tag="h2"
             id={`${idPrefix}-name`}
             fontSize="xlarge"
             fontWeight="medium"
+            className={styles.title}
           >
             {speciesName}
           </FancyText>
+          <div className={styles.buttonContainer}>
+            <audio
+              ref={audioRef}
+              preload="none"
+              aria-hidden="true"
+              hidden={true}
+              autoPlay={false}
+              onPlay={() => {
+                setIsPlaying(true);
+                animate();
+                if (audioRef.current) {
+                  audioRef.current.volume = 20 / 100;
+                }
+              }}
+              onEnded={() => {
+                setIsPlaying(false);
+                // Deferred: batching this with setIsPlaying in the same commit
+                // forces the sprite's CSS animation to restart at the same
+                // moment the button's border-radius transition needs to start,
+                // and the transition loses out. A separate tick keeps them from
+                // colliding.
+                requestAnimationFrame(animate);
+              }}
+              onError={() => {
+                setIsPlaying(false);
+                requestAnimationFrame(animate);
+              }}
+            >
+              <source src={`/cry/${pokemon.id}.ogg`} type="audio/ogg" />
+              <source src={`/cry/${pokemon.id}.m4a`} type="audio/mp4" />
+              <source src={`/cry/${pokemon.id}.aac`} type="audio/aac" />
+            </audio>
+            <IconButton
+              variant="tertiary"
+              title={t("pokedex.cry.text")}
+              aria-label={t("pokedex.cry.text")}
+              aria-pressed={isPlaying}
+              disabled={!pokemon.hasCry}
+              onClick={() => {
+                const audio = audioRef.current;
+                if (!audio) {
+                  return;
+                }
+                if (audio.paused) {
+                  audio.play();
+                }
+              }}
+            >
+              <IconCry size={24} />
+            </IconButton>
+            <IconButton
+              variant="tertiary"
+              title={t("pokedex.gender.text")}
+              aria-label={t("pokedex.gender.text")}
+              aria-pressed={gender !== "default"}
+              disabled={!pokemon.images.female}
+              onClick={() => {
+                setGender((g) => {
+                  if (g === "default") {
+                    return "female";
+                  }
+                  return "default";
+                });
+                animate();
+              }}
+            >
+              <IconGender size={24} />
+            </IconButton>
+            <IconButton
+              variant="tertiary"
+              title={t("pokedex.shiny.text")}
+              aria-label={t("pokedex.shiny.text")}
+              aria-pressed={shiny}
+              disabled={!pokemon.images.shiny}
+              onClick={() => {
+                setShiny(!shiny);
+                animate();
+              }}
+            >
+              <IconShiny size={24} />
+            </IconButton>
+          </div>
         </Flex>
         <Flex gap="medium">
           <FancyText tag="div" tabularNums>
@@ -78,83 +161,6 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             {formName}
           </FancyText>
         </Flex>
-        <div className={styles.buttonContainer}>
-          <audio
-            ref={audioRef}
-            preload="none"
-            aria-hidden="true"
-            hidden={true}
-            autoPlay={false}
-            onPlay={() => {
-              setIsPlaying(true);
-              animate();
-              if (audioRef.current) {
-                audioRef.current.volume = 20 / 100;
-              }
-            }}
-            onEnded={() => {
-              setIsPlaying(false);
-              animate();
-            }}
-            onError={() => {
-              setIsPlaying(false);
-              animate();
-            }}
-          >
-            <source src={`/cry/${pokemon.id}.ogg`} type="audio/ogg" />
-            <source src={`/cry/${pokemon.id}.m4a`} type="audio/mp4" />
-            <source src={`/cry/${pokemon.id}.aac`} type="audio/aac" />
-          </audio>
-          <IconButton
-            variant="tertiary"
-            title={t("pokedex.cry.text")}
-            aria-label={t("pokedex.cry.text")}
-            aria-pressed={isPlaying}
-            disabled={!pokemon.hasCry}
-            onClick={() => {
-              const audio = audioRef.current;
-              if (!audio) {
-                return;
-              }
-              if (audio.paused) {
-                audio.play();
-              }
-            }}
-          >
-            <IconCry size={16} />
-          </IconButton>
-          <IconButton
-            variant="tertiary"
-            title={t("pokedex.gender.text")}
-            aria-label={t("pokedex.gender.text")}
-            aria-pressed={gender !== "default"}
-            disabled={!pokemon.images.female}
-            onClick={() => {
-              setGender((g) => {
-                if (g === "default") {
-                  return "female";
-                }
-                return "default";
-              });
-              animate();
-            }}
-          >
-            <IconGender size={16} />
-          </IconButton>
-          <IconButton
-            variant="tertiary"
-            title={t("pokedex.shiny.text")}
-            aria-label={t("pokedex.shiny.text")}
-            aria-pressed={shiny}
-            disabled={!pokemon.images.shiny}
-            onClick={() => {
-              setShiny(!shiny);
-              animate();
-            }}
-          >
-            <IconShiny size={16} />
-          </IconButton>
-        </div>
       </Flex>
       <div className={styles.monster}>
         <div className={styles.monsterIcon}>
@@ -189,7 +195,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             id={`${idPrefix}-offense`}
           >
             <IconOffenseSingle
-              size={16}
+              size={24}
               aria-label={t("offense.mode.single")}
             />
           </FancyLink>
@@ -201,7 +207,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             id={`${idPrefix}-offense`}
           >
             <IconOffenseDual
-              size={16}
+              size={24}
               aria-label={t("offense.mode.combination")}
             />
           </FancyLink>
@@ -212,7 +218,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             to={`/defense/solo/?${params}#matchup-defense`}
             id={`${idPrefix}-defense`}
           >
-            <IconDefenseSolo size={16} aria-label={t("defense.mode.solo")} />
+            <IconDefenseSolo size={24} aria-label={t("defense.mode.solo")} />
           </FancyLink>
           <Flex flex="auto" />
           <FancyLink

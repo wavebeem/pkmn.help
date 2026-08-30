@@ -23,7 +23,7 @@ export function Select({
           className="active-darken focus-simple"
           {...props}
         />
-        <IconSelectCaret size={16} className={styles.icon} />
+        <IconSelectCaret size={24} className={styles.icon} />
       </div>
       {helpText && <p className={styles.help}>{helpText}</p>}
     </div>

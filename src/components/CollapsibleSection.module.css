@@ -1,15 +1,29 @@
 .details {
   --_padding-size: var(--padding3);
-  border-radius: var(--border-radius1);
+  --_radius: var(--border-radius3);
+  background: var(--color-card-bg);
+  color: var(--color-primary);
+  border-radius: var(--_radius);
+  overflow: hidden;
+
+  & + & {
+    border-top-left-radius: var(--border-radius0);
+    border-top-right-radius: var(--border-radius0);
+  }
+
+  &:has(+ &) {
+    border-bottom-left-radius: var(--border-radius0);
+    border-bottom-right-radius: var(--border-radius0);
+  }
 }
 
 .details[data-size="small"] {
   --_padding-size: var(--padding2);
+  --_radius: var(--border-radius2);
 }
 
 .summary {
-  border-radius: var(--border-radius1);
-  padding: var(--_padding-size) var(--padding2);
+  padding: var(--_padding-size);
   user-select: none;
   list-style: none;
   display: grid;
@@ -22,17 +36,13 @@
 }
 
 .summary:focus-visible {
-  outline: none;
-}
-
-.summary:focus-visible > * {
-  border-radius: var(--border-radius0);
   outline: 2px solid var(--color-primary);
-  outline-offset: 2px;
+  outline-offset: -2px;
 }
 
 .details[open] > .summary {
-  margin-bottom: var(--padding2);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .icon {
@@ -47,6 +57,6 @@
   rotate: 180deg;
 }
 
-.details[open] {
-  padding-bottom: var(--_padding-size);
+.body {
+  padding: var(--padding2) var(--_padding-size) var(--_padding-size);
 }

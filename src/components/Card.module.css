@@ -1,6 +1,7 @@
 .Card {
   display: flex;
   flex-direction: column;
+  gap: var(--padding3);
   color: var(--color-primary);
   background: var(--color-card-bg);
   padding: var(--padding3);
@@ -8,6 +9,7 @@
 }
 
 .Card[data-size="small"] {
+  gap: var(--padding2);
   padding: var(--padding2);
   border-radius: var(--border-radius2);
 }
