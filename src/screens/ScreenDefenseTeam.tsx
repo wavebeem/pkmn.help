@@ -365,6 +365,7 @@ export function ScreenDefenseTeam(): ReactNode {
           </Flex>
           <Flex>
             <Button
+              variant="filled"
               onClick={() => {
                 const newTypes = [...teamTypes, []];
                 setTeamTypes(newTypes);

@@ -5,6 +5,7 @@
 @import "misc.css";
 @import "focus.css";
 @import "fallback.css";
+@import "theme/md-tokens.css";
 @import "theme/light.css";
 @import "theme/dark.css";
 @import "theme/night.css";

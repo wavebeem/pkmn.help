@@ -1,13 +1,11 @@
 [data-theme="night"] {
-  --background-button-position: top;
-
   --color-bg-input: hsl(0 0% 15%);
+  --color-bg-input-lowest: hsl(0 0% 2%);
   --color-bg-base: hsl(0 0% 5%);
-  --color-bg-ghost: hsl(0 0% 15%);
+  --color-bg-ghost: hsl(0 0% 2%);
 
   --color-card-bg: hsl(0 0% 10%);
   --color-card-highlight: hsl(0 0% 20%);
-  --color-card-shadow: hsl(0 0% 2%);
 
   --color-primary: hsl(0 0% 82%);
   --color-secondary: hsl(0 0% 62%);
@@ -15,24 +13,29 @@
 
   --color-accent-bg: hsl(0 0% 80%);
   --color-accent-fg: hsl(0 0% 5%);
-
-  --color-header-base: hsl(0 0% 10%);
-  --color-header-highlight: hsl(0 0% 20%);
-  --color-header-border: hsl(0 0% 20%);
-  --color-header-text: hsl(0 0% 82%);
+  --color-header-bg: var(--color-accent-bg);
+  --color-header-fg: var(--color-accent-fg);
+  --color-tertiary: var(--color-accent-bg);
+  --color-tertiary-fg: var(--color-accent-fg);
+  --color-tertiary-container-bg: hsl(0 0% 25%);
+  --color-tertiary-container-fg: hsl(0 0% 92%);
 
   --color-tabs-base: hsl(0 0% 15%);
   --color-tabs-highlight: hsl(0 0% 25%);
-  --color-tabs-border: hsl(0 0% 25%);
   --color-tabs-text: hsl(0 0% 82%);
 
-  --color-sidebar-base: hsl(0 0% 0%);
-  --color-sidebar-highlight: hsl(0 0% 10%);
-  --color-sidebar-border: hsl(0 0% 10%);
+  --color-sidebar-base: hsl(0 0% 10%);
+  --color-sidebar-highlight: hsl(0 0% 20%);
   --color-sidebar-text: hsl(0 0% 82%);
 
-  --color-button-top: hsl(0 0% 20%);
-  --color-button-bottom: hsl(0 0% 15%);
+  --color-nav-selected-bg: hsl(0 0% 25%);
+  --color-nav-selected-fg: hsl(0 0% 92%);
+
+  --color-secondary-container-bg: hsl(0 0% 25%);
+  --color-secondary-container-fg: hsl(0 0% 92%);
+
+  --color-selected-container-bg: hsl(0 0% 25%);
+  --color-selected-container-fg: hsl(0 0% 92%);
 
   --color-link: hsl(var(--hue-teal) 90% 75%);
 

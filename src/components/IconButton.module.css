@@ -1,31 +1,40 @@
 .root {
+  --_radius-round: 22px;
+
   gap: var(--padding1);
-  border-radius: var(--border-radius-pill);
+  border-radius: var(--_radius-round);
+  transition: border-radius var(--motion-duration-short3)
+    var(--motion-easing-standard);
   padding: var(--padding2);
   display: flex;
   align-items: center;
   fill: currentColor;
-  box-shadow: var(--shadow-button);
   color: var(--color-primary);
   border: 1px solid transparent;
-  background: var(--background-button);
+  background-color: var(--color-bg-input);
 
-  &:active {
-    filter: var(--filter-darken);
+  &[data-variant="tertiary"] {
+    background-color: var(--color-tertiary-container-bg);
+    color: var(--color-tertiary-container-fg);
   }
 
-  &[aria-pressed="true"] {
-    border-color: var(--color-border-subtle);
-    background: var(--color-accent-bg);
-    color: var(--color-accent-fg);
-    box-shadow: inset var(--shadow-button);
+  &:active {
+    background-image: radial-gradient(var(--state-press));
   }
 
   &:is(:disabled, [aria-disabled="true"]) {
-    background: transparent;
-    color: var(--color-disabled);
-    border-color: var(--color-border-disabled);
-    box-shadow: none;
-    filter: none;
+    background: var(--state-disabled-container);
+    color: var(--state-disabled-content);
+    border-color: transparent;
+  }
+
+  &:hover:not(:active, :disabled, [aria-disabled="true"]) {
+    background-image: radial-gradient(var(--state-hover));
+  }
+
+  &[aria-pressed="true"] {
+    background-color: var(--color-tertiary);
+    color: var(--color-tertiary-fg);
+    border-radius: var(--border-radius1);
   }
 }

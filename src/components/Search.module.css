@@ -9,30 +9,36 @@
 .input {
   -webkit-appearance: none;
   appearance: none;
-  padding: 0.5rem 1rem;
+  padding: var(--padding2) var(--padding3);
   width: 100%;
-  border-radius: var(--border-radius2);
+  border-radius: var(--border-radius0);
   border: 1px solid var(--color-border-primary);
-  background: var(--color-bg-input);
+  background: transparent;
   color: var(--color-primary);
-  box-shadow: var(--shadow-inset);
-  padding-left: calc(var(--icon-size) + 1rem);
-  padding-right: calc(var(--icon-size) + 1rem);
+  padding-left: calc(var(--icon-size) + var(--padding3));
+  padding-right: calc(var(--icon-size) + var(--padding3));
+  transition: border-color var(--motion-duration-short3)
+    var(--motion-easing-standard);
 }
 
-.iconSearch {
+.input:hover:not(:focus, :disabled) {
+  border-color: var(--color-primary);
+}
+
+.iconSearch,
+.iconClear {
   color: var(--color-secondary);
   position: absolute;
   top: calc(50% - var(--icon-size) / 2);
-  left: 0.5rem;
+}
+
+.iconSearch {
+  left: var(--padding2);
   pointer-events: none;
 }
 
 .iconClear {
-  color: var(--color-primary);
-  position: absolute;
-  top: calc(50% - var(--icon-size) / 2);
-  right: 0.5rem;
+  right: var(--padding2);
 }
 
 .label {

@@ -4,18 +4,9 @@
   position: relative;
   display: flex;
   color: var(--color-primary);
-  background:
-    radial-gradient(var(--color-card-bg)) padding-box,
-    radial-gradient(
-        50% 50% at top center,
-        var(--color-card-highlight),
-        var(--color-card-bg)
-      )
-      border-box var(--color-card-bg);
-  box-shadow: 0 1px 0 0 var(--color-card-shadow);
+  background: var(--color-card-bg);
   padding: var(--padding2);
   border-radius: var(--border-radius3);
-  border: 1px solid transparent;
 }
 
 .name {
@@ -64,7 +55,7 @@
   justify-content: start;
   display: flex;
   flex-wrap: wrap;
-  gap: var(--padding2);
+  gap: var(--padding1);
   /* margin-top: var(--padding2); */
 }
 

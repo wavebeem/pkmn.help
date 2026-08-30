@@ -94,9 +94,11 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             }}
             onEnded={() => {
               setIsPlaying(false);
+              animate();
             }}
             onError={() => {
               setIsPlaying(false);
+              animate();
             }}
           >
             <source src={`/cry/${pokemon.id}.ogg`} type="audio/ogg" />
@@ -104,10 +106,10 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             <source src={`/cry/${pokemon.id}.aac`} type="audio/aac" />
           </audio>
           <IconButton
+            variant="tertiary"
             title={t("pokedex.cry.text")}
             aria-label={t("pokedex.cry.text")}
             aria-pressed={isPlaying}
-            aria-disabled={isPlaying}
             disabled={!pokemon.hasCry}
             onClick={() => {
               const audio = audioRef.current;
@@ -122,6 +124,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             <IconCry size={16} />
           </IconButton>
           <IconButton
+            variant="tertiary"
             title={t("pokedex.gender.text")}
             aria-label={t("pokedex.gender.text")}
             aria-pressed={gender !== "default"}
@@ -139,6 +142,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             <IconGender size={16} />
           </IconButton>
           <IconButton
+            variant="tertiary"
             title={t("pokedex.shiny.text")}
             aria-label={t("pokedex.shiny.text")}
             aria-pressed={shiny}
@@ -178,6 +182,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
         </div>
         <div className={styles.monsterLinks}>
           <FancyLink
+            iconOnly
             outlined
             aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
             to={`/offense/single/?${params}#matchup-offense`}
@@ -189,6 +194,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             />
           </FancyLink>
           <FancyLink
+            iconOnly
             outlined
             aria-labelledby={`${idPrefix}-offense ${idPrefix}-name ${idPrefix}-form`}
             to={`/offense/dual/?${params}#matchup-offense`}
@@ -200,6 +206,7 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             />
           </FancyLink>
           <FancyLink
+            iconOnly
             outlined
             aria-labelledby={`${idPrefix}-defense ${idPrefix}-name ${idPrefix}-form`}
             to={`/defense/solo/?${params}#matchup-defense`}

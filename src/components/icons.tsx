@@ -24,11 +24,10 @@ export {
   ChevronsRight as IconLast,
   // Select
   ChevronDown as IconSelectCaret,
+  // Collapsible section
+  ChevronDown as IconCaret,
   // Add
   Plus as IconAdd,
-  // Open/close OR plus for pairs
-  Plus as IconPlus,
-  Minus as IconMinus,
   // Back button
   ArrowLeft as IconBack,
   // Search

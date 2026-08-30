@@ -18,8 +18,18 @@
 .outlined {
   display: flex;
   align-items: center;
-  gap: var(--padding1);
+  justify-content: center;
+  gap: var(--padding2);
   border: 1px solid rgb(from var(--color-link) r g b / 50%);
-  border-radius: var(--border-radius1);
-  padding-inline: var(--padding2);
+  border-radius: var(--border-radius-pill);
+  padding: var(--padding1) calc(var(--padding1) + var(--padding2));
+  /* stylelint-disable-next-line declaration-property-value-no-unknown */
+  min-height: round(up, 2rem, 1px);
+}
+
+.outlined.iconOnly {
+  padding: var(--padding2);
+  aspect-ratio: 1;
+  /* stylelint-disable-next-line declaration-property-value-no-unknown */
+  min-width: round(up, 2rem, 1px);
 }

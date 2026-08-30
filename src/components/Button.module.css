@@ -1,6 +1,6 @@
 .root {
-  border: 1px solid;
-  border-radius: var(--border-radius2);
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-pill);
   padding: var(--padding2) var(--padding3);
   display: flex;
   justify-content: center;
@@ -8,24 +8,49 @@
   gap: var(--padding2);
   /* stylelint-disable-next-line declaration-property-value-no-unknown */
   min-height: round(up, 2.5rem, 1px);
-}
+  font-weight: var(--label-font-weight);
+  letter-spacing: var(--label-letter-spacing);
 
-.root:where(:not(:disabled)) {
-  border-color: transparent;
-  background: var(--background-button);
-  color: var(--color-primary);
-  box-shadow: var(--shadow-button);
-}
+  /* Equal padding + locked aspect-ratio keeps this a circle, not an oval. */
+  &[data-icon-only="true"] {
+    padding: var(--padding2);
+    aspect-ratio: 1;
+    /* stylelint-disable-next-line declaration-property-value-no-unknown */
+    min-width: round(up, 2.5rem, 1px);
+  }
 
-.root:disabled {
-  pointer-events: none;
-  background: transparent;
-  color: var(--color-disabled);
-  border-color: var(--color-border-disabled);
-}
+  &[data-size="small"] {
+    padding: var(--padding1) calc(var(--padding1) + var(--padding2));
+    /* stylelint-disable-next-line declaration-property-value-no-unknown */
+    min-height: round(up, 2rem, 1px);
+  }
 
-.root[aria-pressed="true"] {
-  border-color: var(--color-border-subtle);
-  background: var(--color-accent-bg);
-  color: var(--color-accent-fg);
+  &:where(:not(:disabled)) {
+    background-color: var(--color-bg-input);
+    color: var(--color-primary);
+  }
+
+  &:disabled {
+    pointer-events: none;
+    background: var(--state-disabled-container);
+    color: var(--state-disabled-content);
+  }
+
+  &[aria-pressed="true"] {
+    background-color: var(--color-tertiary);
+    color: var(--color-tertiary-fg);
+  }
+
+  /* Wins over aria-pressed above regardless of pressed state -- filled
+  buttons aren't toggles. */
+  &[data-variant="filled"]:where(:not(:disabled)) {
+    background-color: var(--color-accent-bg);
+    color: var(--color-accent-fg);
+  }
+
+  &[data-variant="outlined"]:where(:not(:disabled)) {
+    background-color: transparent;
+    border-color: var(--color-border-primary);
+    color: var(--color-primary);
+  }
 }

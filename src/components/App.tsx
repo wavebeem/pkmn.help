@@ -190,6 +190,7 @@ export function Layout(): ReactNode {
   if (theme === "auto") {
     dataTheme = isDark ? "dark" : "light";
   }
+
   const headerRef = useRef<HTMLElement>(null);
   // Use the heading's background color as the HTML `theme-color` meta property,
   // so that browsers like mobile Safari make the surrounding UI match the
@@ -326,6 +327,11 @@ export function Layout(): ReactNode {
             <div className={styles.heading}>
               <hgroup className={styles.titleStack}>
                 <h1 className={styles.title}>
+                  <span>
+                    <span className={styles.pkmn}>pkmn</span>
+                    <span className={styles.dot}>.</span>
+                    <span className={styles.help}>help</span>
+                  </span>
                   <img
                     className={styles.justLogo}
                     src={new URL("/app-logo.svg", publicPath).href}
@@ -333,23 +339,6 @@ export function Layout(): ReactNode {
                     width={24}
                     height={24}
                   />
-                  <span className={styles.pkmn}>pkmn</span>
-                  <span className={styles.dot}>.</span>
-                  <span className={styles.help}>help</span>
-                  {/* <img
-                    className={styles.logo}
-                    src={new URL("/logo-simple.svg", publicPath).href}
-                    alt="PKMN.help"
-                    width={300}
-                    height={40}
-                  /> */}
-                  {/* <img
-                    className={styles.logo}
-                    src={new URL("/text-logo.svg", publicPath).href}
-                    alt="PKMN.help"
-                    width={300}
-                    height={76}
-                  /> */}
                 </h1>
                 <p className={styles.subtitle}>{t("title")}</p>
               </hgroup>

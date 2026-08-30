@@ -41,7 +41,7 @@ export function PageNav({ position }: PageNavProps): ReactNode {
         end
         to="/offense/single/"
       >
-        <IconOffenseSingle size={16} />
+        <IconOffenseSingle size={24} />
         {t("offense.mode.single")}
       </NavLink>
       <NavLink
@@ -50,7 +50,7 @@ export function PageNav({ position }: PageNavProps): ReactNode {
         end
         to="/offense/dual/"
       >
-        <IconOffenseDual size={16} />
+        <IconOffenseDual size={24} />
         {t("offense.mode.combination")}
       </NavLink>
       <span className={styles.tabSection}>{t("navigation.defense")}</span>
@@ -60,7 +60,7 @@ export function PageNav({ position }: PageNavProps): ReactNode {
         end
         to="/defense/solo/"
       >
-        <IconDefenseSolo size={16} />
+        <IconDefenseSolo size={24} />
         {t("defense.mode.solo")}
       </NavLink>
       <NavLink
@@ -69,12 +69,12 @@ export function PageNav({ position }: PageNavProps): ReactNode {
         end
         to="/defense/team/"
       >
-        <IconDefenseTeam size={16} />
+        <IconDefenseTeam size={24} />
         {t("defense.mode.team")}
       </NavLink>
       <span className={styles.tabSection}>{t("navigation.other")}</span>
       <NavLink onClick={onNavLinkClick} className={tabClass} end to="/pokedex/">
-        <IconPokedex size={16} />
+        <IconPokedex size={24} />
         {t("navigation.pokedex")}
       </NavLink>
       <NavLink
@@ -83,7 +83,7 @@ export function PageNav({ position }: PageNavProps): ReactNode {
         end
         to="/settings/"
       >
-        <IconSettings size={16} />
+        <IconSettings size={24} />
         {t("navigation.settings")}
       </NavLink>
       <NavLink
@@ -92,7 +92,7 @@ export function PageNav({ position }: PageNavProps): ReactNode {
         end
         to="/about/"
       >
-        <IconAbout size={16} />
+        <IconAbout size={24} />
         {t("navigation.about")}
       </NavLink>
     </nav>

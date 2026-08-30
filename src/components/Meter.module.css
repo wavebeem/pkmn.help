@@ -1,39 +1,39 @@
+/* M3's determinate linear progress indicator, repurposed as a static
+bar-chart meter rather than a loading state. */
 .root {
   position: relative;
   display: flex;
-  min-height: 1.5rem;
-  height: 100%;
-  background: var(--meter-color-bg);
-  /* background: linear-gradient(to left, var(--meter-color-bg), transparent); */
-  border-radius: var(--border-radius0);
+  align-items: center;
+  height: var(--padding1);
+  min-height: var(--padding3);
   min-width: 100px;
 }
 
-.root::after {
-  content: "";
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  /* Break the meter into 5 chunks (either 51 stat points or 20%) */
-  background-image: repeating-linear-gradient(
-    to right,
-    #0001 0,
-    #fff1 calc(100% / 5)
-  );
-  /* Only show the gradient over the filled portion of the meter, to lower the
-  amount of visual noise */
-  mask: linear-gradient(
-    to right,
-    black 0 var(--meter-width),
-    transparent var(--meter-width)
-  );
+.fill {
   position: absolute;
+  inset-block: 0;
+  left: 0;
+  width: var(--meter-fill-width);
+  background-color: var(--meter-color);
+  border-radius: var(--padding3);
+  transition: width var(--motion-duration-short4) var(--motion-easing-standard);
 }
 
-.fill {
-  border-radius: inherit;
-  width: var(--meter-width);
+.track {
+  position: absolute;
+  inset-block: 0;
+  left: calc(var(--meter-fill-width) + var(--meter-track-gap));
+  right: 0;
+  background-color: var(--meter-color-bg);
+  border-radius: var(--padding3);
+  transition: left var(--motion-duration-short4) var(--motion-easing-standard);
+}
+
+.stop {
+  position: absolute;
+  right: var(--padding1);
+  width: var(--padding2);
+  height: var(--padding2);
+  border-radius: var(--padding2);
   background-color: var(--meter-color);
-  box-shadow: inset 0 0 0 1px var(--color-border-subtle);
-  transition: width 200ms;
 }

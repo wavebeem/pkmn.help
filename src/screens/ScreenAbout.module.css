@@ -9,7 +9,7 @@
   rotate: x -30deg;
   opacity: 0;
   padding: 4rem;
-  border-radius: 9999px;
+  border-radius: var(--border-radius-pill);
   background: radial-gradient(
     circle at center,
     rgb(from var(--color-card-bg) r g b / 100%),

@@ -1,6 +1,6 @@
 .dexItem {
   padding: var(--padding2);
-  border-bottom: 1px solid var(--color-border-disabled);
+  border-bottom: 1px solid var(--color-border-subtle);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -15,7 +15,7 @@
 }
 
 .dexItem:first-of-type {
-  border-top: 1px solid var(--color-border-disabled);
+  border-top: 1px solid var(--color-border-subtle);
 }
 
 @media (width >= 40rem) {

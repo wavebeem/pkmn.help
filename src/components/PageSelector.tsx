@@ -71,6 +71,7 @@ export function PageSelector<T>({
               outlined
               to="/settings/"
               aria-label={t("navigation.settings")}
+              iconOnly
             >
               <IconSettings size={16} />
             </FancyLink>
@@ -87,6 +88,8 @@ export function PageSelector<T>({
 
       <Flex align="stretch" gap="medium">
         <Button
+          variant="outlined"
+          iconOnly
           disabled={!hasPrev}
           onClick={() => {
             updatePage(0);
@@ -97,6 +100,8 @@ export function PageSelector<T>({
           <IconFirst size={16} />
         </Button>
         <Button
+          variant="filled"
+          iconOnly={buttonSize === "small"}
           disabled={!hasPrev}
           onClick={() => {
             updatePage(currentPage - 1);
@@ -110,6 +115,8 @@ export function PageSelector<T>({
         </Button>
         <Flex flex="auto" />
         <Button
+          variant="filled"
+          iconOnly={buttonSize === "small"}
           disabled={!hasNext}
           onClick={() => {
             updatePage(currentPage + 1);
@@ -122,6 +129,8 @@ export function PageSelector<T>({
           <IconNext size={16} />
         </Button>
         <Button
+          variant="outlined"
+          iconOnly
           disabled={!hasNext}
           onClick={() => {
             updatePage(numPages - 1);

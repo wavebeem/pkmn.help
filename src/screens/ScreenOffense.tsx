@@ -226,6 +226,7 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
                   outlined
                   to="/settings/"
                   aria-label={t("navigation.settings")}
+                  iconOnly
                 >
                   <IconSettings size={16} />
                 </FancyLink>

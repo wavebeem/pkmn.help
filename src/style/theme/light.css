@@ -1,47 +1,54 @@
 [data-theme="light"] {
   --hue-ui: var(--hue-gold);
 
-  --color-bg-input: hsl(var(--hue-ui) 5% 100%);
-  --color-bg-base: hsl(var(--hue-ui) 5% 92%);
-  --color-bg-ghost: hsl(var(--hue-ui) 5% 98%);
+  --color-bg-input: var(--md-surface-container-highest);
+  --color-bg-input-lowest: var(--md-surface-container-lowest);
+  --color-bg-base: var(--md-background);
+  --color-bg-ghost: var(--md-surface-container-lowest);
 
-  --color-card-bg: hsl(var(--hue-ui) 5% 96%);
-  --color-card-highlight: hsl(var(--hue-ui) 5% 100%);
-  --color-card-shadow: hsl(var(--hue-ui) 5% 85%);
+  --color-card-bg: var(--md-surface-container);
+  --color-card-highlight: var(--md-surface-container-high);
 
-  --color-primary: hsl(var(--hue-ui) 5% 7%);
-  --color-secondary: hsl(var(--hue-ui) 5% 35%);
-  --color-disabled: hsl(var(--hue-ui) 5% 60%);
+  --color-primary: var(--md-on-surface);
+  --color-secondary: var(--md-on-surface-variant);
+  --color-disabled: var(--md-outline);
 
-  --color-accent-bg: hsl(var(--hue-red) 70% 40%);
-  --color-accent-fg: #fff;
+  --color-accent-bg: var(--md-primary);
+  --color-accent-fg: var(--md-on-primary);
 
-  --color-header-base: hsl(var(--hue-red) 60% 40%);
-  --color-header-highlight: hsl(var(--hue-red) 40% 55%);
-  --color-header-border: hsl(0 0% 0% / 20%);
-  --color-header-text: #fff;
+  --color-header-bg: var(--color-accent-bg);
+  --color-header-fg: var(--color-accent-fg);
 
-  --color-tabs-base: hsl(var(--hue-ui) 5% 100%);
-  --color-tabs-highlight: hsl(var(--hue-ui) 5% 85%);
-  --color-tabs-text: hsl(var(--hue-ui) 15% 7%);
-  --color-tabs-border: hsl(var(--hue-ui) 5% 75%);
+  --color-tabs-base: var(--md-surface-container);
+  --color-tabs-highlight: var(--md-surface-container-high);
+  --color-tabs-text: var(--md-on-surface);
 
-  --color-sidebar-base: hsl(var(--hue-ui) 5% 88%);
-  --color-sidebar-highlight: hsl(var(--hue-ui) 5% 82%);
-  --color-sidebar-text: hsl(var(--hue-ui) 15% 7%);
-  --color-sidebar-border: hsl(var(--hue-ui) 5% 82%);
+  --color-sidebar-base: var(--md-surface-container);
+  --color-sidebar-highlight: var(--md-surface-container-highest);
+  --color-sidebar-text: var(--md-on-surface);
 
-  --color-button-top: hsl(var(--hue-ui) 5% 100%);
-  --color-button-bottom: hsl(var(--hue-ui) 5% 95%);
+  --color-nav-selected-bg: var(--md-secondary);
+  --color-nav-selected-fg: var(--md-on-secondary);
 
-  --color-link: hsl(var(--hue-red) 70% 40%);
+  --color-secondary-container-bg: var(--md-secondary-container);
+  --color-secondary-container-fg: var(--md-on-secondary-container);
 
-  --color-border-primary: hsl(var(--hue-ui) 5% 50%);
-  --color-border-secondary: hsl(var(--hue-ui) 5% 75%);
-  --color-border-disabled: hsl(var(--hue-ui) 5% 85%);
+  --color-selected-container-bg: var(--md-primary-container);
+  --color-selected-container-fg: var(--md-on-primary-container);
+
+  --color-tertiary: var(--md-tertiary);
+  --color-tertiary-fg: var(--md-on-tertiary);
+  --color-tertiary-container-bg: var(--md-tertiary-container);
+  --color-tertiary-container-fg: var(--md-on-tertiary-container);
+
+  --color-link: var(--md-secondary);
+
+  --color-border-primary: var(--md-outline);
+  --color-border-secondary: var(--md-outline-variant);
+  --color-border-disabled: var(--md-outline-variant);
   --color-border-subtle: hsl(0 0% 0% / 20%);
 
-  --color-scroll: hsl(var(--hue-red) 70% 40%);
+  --color-scroll: var(--color-accent-bg);
 
   color: var(--color-primary);
   background-color: var(--color-bg-base);

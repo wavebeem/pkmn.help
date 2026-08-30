@@ -1,6 +1,6 @@
-import { clsx } from "clsx";
 import { ReactNode, useState } from "react";
 import { sleep } from "../misc/sleep";
+import { Button } from "./Button";
 import styles from "./CopyButton.module.css";
 import { IconCheck, IconCopy } from "./icons";
 
@@ -15,9 +15,11 @@ export function CopyButton({ text, children }: CopyButtonProps): ReactNode {
   const [state, setState] = useState<State>("default");
   const disabled = state === "copied";
   return (
-    <button
+    <Button
       type="button"
-      className={clsx("active-darken", "focus-tab", styles.root)}
+      size="small"
+      variant="outlined"
+      className={styles.root}
       aria-disabled={disabled}
       onClick={async (event) => {
         event.preventDefault();
@@ -35,6 +37,6 @@ export function CopyButton({ text, children }: CopyButtonProps): ReactNode {
     >
       {state === "copied" ? <IconCheck size={16} /> : <IconCopy size={16} />}
       {children}
-    </button>
+    </Button>
   );
 }

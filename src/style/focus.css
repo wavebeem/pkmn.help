@@ -1,19 +1,9 @@
-.focus-header:focus-visible,
-.focus-header:has(:focus-visible) {
-  outline: 3px solid var(--color-header-text);
-  outline-offset: -3px;
-}
-.focus-header[aria-current="page"]:focus-visible,
-.focus-header[aria-current="page"]:has(:focus-visible) {
-  outline: 3px solid var(--color-header-base);
-  outline-offset: -4px;
-}
+/* M3 focus rings: a plain 2px solid ring, no extra shadow layering. */
 
 .focus-tab:focus-visible,
 .focus-tab:has(:focus-visible) {
-  outline: 1px solid var(--color-bg-input);
-  outline-offset: -1px;
-  box-shadow: 0 0 0 3px var(--color-primary);
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
 }
 
 .focus-outline:focus-visible {
@@ -29,15 +19,14 @@
 
 .focus-simple:focus-visible,
 .focus-simple:has(:focus-visible) {
-  outline: 3px solid var(--color-primary);
-  outline-offset: -1px;
+  outline: 2px solid var(--color-primary);
+  outline-offset: -2px;
 }
 
 .focus-selected:focus-visible,
 .focus-selected:has(:focus-visible) {
-  outline: 3px solid var(--color-primary);
+  outline: 2px solid var(--color-primary);
   outline-offset: -2px;
-  box-shadow: inset 0 0 0 1px var(--color-bg-input);
 }
 
 .focus-none:focus {

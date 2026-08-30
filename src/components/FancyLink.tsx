@@ -6,12 +6,14 @@ import styles from "./FancyLink.module.css";
 export interface FancyLinkProps extends LinkProps {
   underline?: "always" | "never";
   outlined?: true;
+  iconOnly?: boolean;
 }
 
 export function FancyLink({
   className,
   underline,
   outlined,
+  iconOnly = false,
   ...props
 }: FancyLinkProps): ReactNode {
   if ("to" in props) {
@@ -21,6 +23,7 @@ export function FancyLink({
           outlined ? "focus-simple" : "focus-outline",
           "active-darken-background",
           styles.link,
+          iconOnly && styles.iconOnly,
           (outlined || underline === "never") && styles.noUnderline,
           outlined && styles.outlined,
           className,

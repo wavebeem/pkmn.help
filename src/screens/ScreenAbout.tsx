@@ -3,7 +3,6 @@ import { Trans, useTranslation } from "react-i18next";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import { Section } from "../components/Section";
-import { Divider } from "../components/Divider";
 import { ExternalLink } from "../components/ExternalLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
@@ -29,21 +28,23 @@ export function ScreenAbout(): ReactNode {
       <Flex direction="column" padding="large">
         <Flex direction="column" gap="large">
           {needsAppUpdate && (
-            <Card>
-              <Flex gap="medium" align="center">
-                <Flex direction="column" flex="auto">
-                  <FancyText tag="span" fontSize="large" fontWeight="medium">
-                    {t("banners.updateReady.description")}
-                  </FancyText>
-                  <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
-                    {t("banners.updateReady.whatsNew")}
-                  </ExternalLink>
+            <div className={styles.updateBanner}>
+              <Card>
+                <Flex gap="medium" align="center">
+                  <Flex direction="column" flex="auto">
+                    <FancyText tag="span" fontSize="large" fontWeight="medium">
+                      {t("banners.updateReady.description")}
+                    </FancyText>
+                    <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
+                      {t("banners.updateReady.whatsNew")}
+                    </ExternalLink>
+                  </Flex>
+                  <Button variant="filled" type="button" onClick={updateApp}>
+                    {t("banners.updateReady.update")}
+                  </Button>
                 </Flex>
-                <Button type="button" onClick={updateApp}>
-                  {t("banners.updateReady.update")}
-                </Button>
-              </Flex>
-            </Card>
+              </Card>
+            </div>
           )}
           <Section
             heading={
@@ -72,8 +73,6 @@ export function ScreenAbout(): ReactNode {
             </FancyText>
           </Section>
 
-          <Divider />
-
           <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
@@ -86,8 +85,6 @@ export function ScreenAbout(): ReactNode {
               this site.
             </FancyText>
           </Section>
-
-          <Divider />
 
           <Section
             heading={
@@ -108,8 +105,6 @@ export function ScreenAbout(): ReactNode {
             </FancyText>
           </Section>
 
-          <Divider />
-
           <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
@@ -119,7 +114,7 @@ export function ScreenAbout(): ReactNode {
           >
             <Flex direction="column" gap="large">
               <Flex direction="column" align="flex-start" gap="small">
-                <Button onClick={resetApp}>
+                <Button variant="outlined" size="small" onClick={resetApp}>
                   <IconReset size={16} />
                   {t("more.help.serviceWorker.button")}
                 </Button>
@@ -129,8 +124,6 @@ export function ScreenAbout(): ReactNode {
               </FancyText>
             </Flex>
           </Section>
-
-          <Divider />
 
           <Section
             heading={
@@ -151,8 +144,6 @@ export function ScreenAbout(): ReactNode {
             </FancyText>
           </Section>
 
-          <Divider />
-
           <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
@@ -162,8 +153,6 @@ export function ScreenAbout(): ReactNode {
           >
             <FancyText tag="p">{t("more.givingBack.description")}</FancyText>
           </Section>
-
-          <Divider />
 
           <Section
             heading={
@@ -184,8 +173,6 @@ export function ScreenAbout(): ReactNode {
             </FancyText>
           </Section>
 
-          <Divider />
-
           <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
@@ -204,8 +191,6 @@ export function ScreenAbout(): ReactNode {
               />
             </FancyText>
           </Section>
-
-          <Divider />
 
           <Section
             heading={
@@ -241,8 +226,6 @@ export function ScreenAbout(): ReactNode {
             </Flex>
           </Section>
 
-          <Divider />
-
           {easterEgg && (
             <div
               className={styles.easterEgg}
@@ -259,6 +242,7 @@ export function ScreenAbout(): ReactNode {
 
           <Flex>
             <Button
+              variant="filled"
               onClick={(event) => {
                 event.preventDefault();
                 const pkmn = randomItem(allPokemon);
