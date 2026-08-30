@@ -137,7 +137,6 @@
       "tableHeading": "Matchup counts",
       "heading": "Edit Pokémon team",
       "add": "Add Pokémon",
-      "empty": "No Pokémon selected",
       "displayType": "Table format",
       "weak": "Weak",
       "resist": "Resist",
@@ -336,17 +335,7 @@
     }
   },
   "general": {
-    "loading": "Loading…",
     "copyLink": "Copy link",
     "clearChoices": "Clear choices"
-  },
-  "games": {
-    "label": "Game generation",
-    "help": "Use type effectiveness from different game generations.",
-    "byID": {
-      "gen1": "Generation 1",
-      "gen2": "Generation 2–5",
-      "default": "Generation 6+"
-    }
   }
 }

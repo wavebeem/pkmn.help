@@ -17,6 +17,7 @@
     "i18n-scrape": "i18next",
     "upgrade": "npm-check -u",
     "start": "vite",
+    "dev:lan": "vite --host",
     "prebuild": "rimraf dist && npm test",
     "build": "vite build --mode production",
     "test-sw": "npm run -s build && npx serve -s dist",

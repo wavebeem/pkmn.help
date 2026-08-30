@@ -89,7 +89,6 @@ defense.mode.team,Team,Echipă
 defense.team.tableHeading,Matchup counts,Matchup counts
 defense.team.heading,Edit Pokémon team,Editează echipa Pokémon
 defense.team.add,Add Pokémon,Adaugă Pokémon
-defense.team.empty,No Pokémon selected,Niciun Pokémon selectat
 defense.team.displayType,Table format,Format Tabel
 defense.team.weak,Weak,Slab
 defense.team.resist,Resist,Rezistent
@@ -203,11 +202,5 @@ types.none,None,Nimic
 banners.updateReady.description,An update is available,Un update este disponibil
 banners.updateReady.whatsNew,What’s new,Noutăți
 banners.updateReady.update,Update,Se face update
-general.loading,Loading…,Se încarcă...
 general.copyLink,Copy link,Copiază Link-ul
 general.clearChoices,Clear choices,
-games.label,Game generation,Generație de joc
-games.help,Use type effectiveness from different game generations.,Folosește eficacitatea de tipuri de la generații de joc diferite.
-games.byID.gen1,Generation 1,Generația 1
-games.byID.gen2,Generation 2–5,Generațiile 2-5
-games.byID.default,Generation 6+,Generația 6+

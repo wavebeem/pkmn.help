@@ -137,7 +137,6 @@
       "tableHeading": "Conteggio dei rapporti",
       "heading": "Modifica squadra Pokémon",
       "add": "Aggiungi Pokémon",
-      "empty": "Nessun Pokémon selezionato",
       "displayType": "Formato della tabella",
       "weak": "Debolezze",
       "resist": "Resistenze",
@@ -329,17 +328,7 @@
     }
   },
   "general": {
-    "loading": "Caricamento...",
     "copyLink": "Copia link",
     "clearChoices": "Resetta scelte"
-  },
-  "games": {
-    "label": "Generazione di gioco",
-    "help": "Usa l'efficacia tra tipi di diverse generazioni di giochi.",
-    "byID": {
-      "gen1": "Generazione 1",
-      "gen2": "Generazioni 2-5",
-      "default": "Predefinito (Generazioni 6+)"
-    }
   }
 }

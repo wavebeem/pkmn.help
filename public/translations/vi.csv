@@ -89,7 +89,6 @@ defense.mode.team,Team,Nhiều Pokémon (Đội/Team)
 defense.team.tableHeading,Matchup counts,Danh sách các matchup
 defense.team.heading,Edit Pokémon team,Chỉnh sửa đội Pokémon
 defense.team.add,Add Pokémon,Thêm Pokémon
-defense.team.empty,No Pokémon selected,Không có Pokémon nào được chọn
 defense.team.displayType,Table format,Chọn bảng định dạng
 defense.team.weak,Weak,Yếu thế
 defense.team.resist,Resist,Kháng cự
@@ -203,11 +202,5 @@ types.none,None,Trống
 banners.updateReady.description,An update is available,Có update mới!
 banners.updateReady.whatsNew,What’s new,Tin tức mới
 banners.updateReady.update,Update,Cập nhật
-general.loading,Loading…,Đang load...
 general.copyLink,Copy link,Sao chép link
 general.clearChoices,Clear choices,Xóa
-games.label,Game generation,Thế hệ (Generation)
-games.help,Use type effectiveness from different game generations.,Xác định cơ chế điểm mạnh và yếu của các hệ từ các thế hệ khác nhau.
-games.byID.gen1,Generation 1,Thế hệ 1
-games.byID.gen2,Generation 2–5,Thế hệ 2–5
-games.byID.default,Generation 6+,Thế hệ 6 trở đi (mặc định)

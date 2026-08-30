@@ -114,7 +114,6 @@
       "tableHeading": "Matchup counts",
       "heading": "Editează echipa Pokémon",
       "add": "Adaugă Pokémon",
-      "empty": "Niciun Pokémon selectat",
       "displayType": "Format Tabel",
       "weak": "Slab",
       "resist": "Rezistent",
@@ -286,16 +285,6 @@
     }
   },
   "general": {
-    "loading": "Se încarcă...",
     "copyLink": "Copiază Link-ul"
-  },
-  "games": {
-    "label": "Generație de joc",
-    "help": "Folosește eficacitatea de tipuri de la generații de joc diferite.",
-    "byID": {
-      "gen1": "Generația 1",
-      "gen2": "Generațiile 2-5",
-      "default": "Generația 6+"
-    }
   }
 }

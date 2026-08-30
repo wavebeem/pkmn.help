@@ -89,7 +89,6 @@ defense.mode.team,Team,
 defense.team.tableHeading,Matchup counts,
 defense.team.heading,Edit Pokémon team,
 defense.team.add,Add Pokémon,
-defense.team.empty,No Pokémon selected,
 defense.team.displayType,Table format,
 defense.team.weak,Weak,
 defense.team.resist,Resist,
@@ -203,11 +202,5 @@ types.none,None,Ingen
 banners.updateReady.description,An update is available,En opdatering er mulig at udføre
 banners.updateReady.whatsNew,What’s new,
 banners.updateReady.update,Update,Opdater
-general.loading,Loading…,Loader...
 general.copyLink,Copy link,
 general.clearChoices,Clear choices,
-games.label,Game generation,Spil generation
-games.help,Use type effectiveness from different game generations.,Brug type effektiviteter fra andre spil generationer
-games.byID.gen1,Generation 1,Generation 1
-games.byID.gen2,Generation 2–5,Generation 2-5
-games.byID.default,Generation 6+,Standard (Generation 6+)

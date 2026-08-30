@@ -89,7 +89,6 @@ defense.mode.team,Team,Équipe
 defense.team.tableHeading,Matchup counts,Nombre de match-ups
 defense.team.heading,Edit Pokémon team,Modifier l'équipe Pokémon
 defense.team.add,Add Pokémon,Ajouter un Pokémon
-defense.team.empty,No Pokémon selected,Aucun Pokémon sélectionné
 defense.team.displayType,Table format,Format du tableau
 defense.team.weak,Weak,Faible
 defense.team.resist,Resist,Résistant
@@ -203,11 +202,5 @@ types.none,None,Aucun
 banners.updateReady.description,An update is available,Une mise à jour est disponible !
 banners.updateReady.whatsNew,What’s new,Quoi de neuf
 banners.updateReady.update,Update,Mettre à jour
-general.loading,Loading…,Chargement…
 general.copyLink,Copy link,Copier le lien
 general.clearChoices,Clear choices,Réinitialiser
-games.label,Game generation,Génération du jeu
-games.help,Use type effectiveness from different game generations.,Utiliser les efficacités de types de différentes générations de jeux.
-games.byID.gen1,Generation 1,Génération 1
-games.byID.gen2,Generation 2–5,Génération 2-5
-games.byID.default,Generation 6+,Génération 6+

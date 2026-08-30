@@ -8,7 +8,6 @@ import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import { ClearChoices } from "../components/ClearChoices";
 import { CopyButton } from "../components/CopyButton";
-import { EmptyState } from "../components/EmptyState";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { MatchupsTeam, MatchupsTeamProps } from "../components/MatchupsTeam";
@@ -219,9 +218,6 @@ export function ScreenDefenseTeam(): ReactNode {
               {t("defense.team.heading")}
             </FancyText>
             <Flex direction="column" gap="medium">
-              {teamTypes.length === 0 && (
-                <EmptyState>{t("defense.team.empty")}</EmptyState>
-              )}
               {teamTypes.map((types, typeIndex) => {
                 const name = String(typeIndex + 1);
                 return (

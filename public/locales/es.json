@@ -137,7 +137,6 @@
       "tableHeading": "Recuento de enfrentamientos",
       "heading": "Modifica el equipo Pokémon",
       "add": "Añadir Pokémon",
-      "empty": "Ningún Pokémon seleccionado",
       "displayType": "Formato de la tabla",
       "weak": "Debilidad",
       "resist": "Resistencia",
@@ -336,17 +335,7 @@
     }
   },
   "general": {
-    "loading": "Cargando...",
     "copyLink": "Copiar link",
     "clearChoices": "Limpiar selección"
-  },
-  "games": {
-    "label": "Generación del juego",
-    "help": "Usar la efectividad de tipo de diferentes generaciones.",
-    "byID": {
-      "gen1": "Generación 1",
-      "gen2": "Generación 2-5",
-      "default": "Predeterminada (generación 6+)"
-    }
   }
 }

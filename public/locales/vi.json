@@ -137,7 +137,6 @@
       "tableHeading": "Danh sách các matchup",
       "heading": "Chỉnh sửa đội Pokémon",
       "add": "Thêm Pokémon",
-      "empty": "Không có Pokémon nào được chọn",
       "displayType": "Chọn bảng định dạng",
       "weak": "Yếu thế",
       "resist": "Kháng cự",
@@ -329,17 +328,7 @@
     }
   },
   "general": {
-    "loading": "Đang load...",
     "copyLink": "Sao chép link",
     "clearChoices": "Xóa"
-  },
-  "games": {
-    "label": "Thế hệ (Generation)",
-    "help": "Xác định cơ chế điểm mạnh và yếu của các hệ từ các thế hệ khác nhau.",
-    "byID": {
-      "gen1": "Thế hệ 1",
-      "gen2": "Thế hệ 2–5",
-      "default": "Thế hệ 6 trở đi (mặc định)"
-    }
   }
 }

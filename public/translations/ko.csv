@@ -89,7 +89,6 @@ defense.mode.team,Team,팀
 defense.team.tableHeading,Matchup counts,상성별 팀원 수
 defense.team.heading,Edit Pokémon team,팀 편집
 defense.team.add,Add Pokémon,포켓몬 추가
-defense.team.empty,No Pokémon selected,선택한 포켓몬 없음
 defense.team.displayType,Table format,표 형식
 defense.team.weak,Weak,약점
 defense.team.resist,Resist,내성
@@ -203,11 +202,5 @@ types.none,None,없음
 banners.updateReady.description,An update is available,새 버전이 있습니다!
 banners.updateReady.whatsNew,What’s new,새로운 기능
 banners.updateReady.update,Update,업데이트
-general.loading,Loading…,로딩 중...
 general.copyLink,Copy link,링크 복사
 general.clearChoices,Clear choices,선택 초기화
-games.label,Game generation,세대
-games.help,Use type effectiveness from different game generations.,다른 세대의 상성 사용하기
-games.byID.gen1,Generation 1,1세대
-games.byID.gen2,Generation 2–5,2~5세대
-games.byID.default,Generation 6+,기본 (6세대~)

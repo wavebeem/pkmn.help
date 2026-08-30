@@ -111,7 +111,6 @@
       "tableHeading": "Matchup teller",
       "heading": "Rediger Pokémon lag",
       "add": "Legg til Pokémon",
-      "empty": "Ingen Pokémon valgt",
       "displayType": "Tabellformat",
       "weak": "Svak",
       "resist": "Motstå",
@@ -282,16 +281,6 @@
     }
   },
   "general": {
-    "loading": "Laster inn...",
     "copyLink": "Kopier lenke"
-  },
-  "games": {
-    "label": "Spillgenerasjon",
-    "help": "Bruk type effektivitet fra forskjellige spillgenerasjoner.",
-    "byID": {
-      "gen1": "Generasjon 1",
-      "gen2": "Generasjon 2-5",
-      "default": "Standard (generasjon 6+)"
-    }
   }
 }
