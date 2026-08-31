@@ -11,10 +11,15 @@ import styles from "./ScreenPokedexHelp.module.css";
 export function ScreenPokedexHelp(): ReactNode {
   const { t } = useTranslation();
   return (
-    <main className="center content-narrow">
+    <main className="center content-wide">
       <Flex flex="auto" padding="medium" />
       <Flex flex="auto" padding="small" />
-      <Flex direction="column" gap="xlarge" padding="large">
+      <Flex
+        className="content-narrow"
+        direction="column"
+        gap="xlarge"
+        padding="large"
+      >
         <Flex direction="column" gap="large">
           <PageTitle title={t("pokedexHelp.title")} />
 

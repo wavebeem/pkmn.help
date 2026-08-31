@@ -24,8 +24,13 @@ export function ScreenAbout(): ReactNode {
   const [easterEggLoadedID, setEasterEggLoadedID] = useState("");
 
   return (
-    <main className="content-narrow center">
-      <Flex direction="column" gap="large" padding="large">
+    <main className="center content-wide">
+      <Flex
+        className="content-narrow"
+        direction="column"
+        gap="large"
+        padding="large"
+      >
         <PageTitle title={t("navigation.about")} />
 
         <Flex direction="column" gap="xlarge">

@@ -134,8 +134,13 @@ export function ScreenWeaknessCoverage(): ReactNode {
   }
 
   return (
-    <main className="center content-narrow">
-      <Flex direction="column" gap="xlarge" padding="large">
+    <main className="center content-wide">
+      <Flex
+        className="content-narrow"
+        direction="column"
+        gap="xlarge"
+        padding="large"
+      >
         <Flex gap="medium" />
 
         <Flex direction="column" gap="large">

@@ -49,8 +49,13 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   });
   const items = partitionedMatchups[mode];
   return (
-    <main className="center content-narrow">
-      <Flex direction="column" gap="large" padding="large">
+    <main className="center content-wide">
+      <Flex
+        className="content-narrow"
+        direction="column"
+        gap="large"
+        padding="large"
+      >
         <PageTitle title={t(`offense.coverageList.${mode}.heading`)} />
 
         <Flex gap="small" align="center">

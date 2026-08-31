@@ -35,8 +35,13 @@ export function ScreenSettings(): ReactNode {
   const autoLang = getDesiredLanguage() || "en";
 
   return (
-    <main className="content-narrow center">
-      <Flex direction="column" gap="large" padding="large">
+    <main className="center content-wide">
+      <Flex
+        className="content-narrow"
+        direction="column"
+        gap="large"
+        padding="large"
+      >
         <PageTitle title={t("navigation.settings")} />
 
         <Flex direction="column" gap="large">
