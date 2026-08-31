@@ -11,22 +11,40 @@
   appearance: none;
   padding: 0.5rem 1rem;
   padding-right: 3rem;
-  border-radius: var(--border-radius2);
+  border-radius: var(--border-radius0);
   border: 1px solid transparent;
-  background: var(--background-button);
+  background-color: var(--color-bg-input);
   color: var(--color-primary);
+  font-weight: var(--label-font-weight);
+  letter-spacing: var(--label-letter-spacing);
   width: 100%;
-  box-shadow: var(--shadow-button);
+}
+
+.select select:disabled {
+  background: var(--state-disabled-container);
+  color: var(--state-disabled-content);
+  cursor: not-allowed;
 }
 
 .icon {
   position: absolute;
   right: calc(0.5rem + 4px);
-  top: calc(50% - 8px);
+  top: calc(50% - 12px);
+  pointer-events: none;
+}
+
+.select:has(select:disabled) .icon {
+  color: var(--state-disabled-content);
 }
 
 .label {
   padding-bottom: var(--padding1);
+  font-weight: var(--label-font-weight);
+  letter-spacing: var(--label-letter-spacing);
+}
+
+.root:has(select:disabled) .label {
+  color: var(--state-disabled-content);
 }
 
 .help {
@@ -34,4 +52,8 @@
   padding-top: var(--padding1);
   color: var(--color-secondary);
   font-size: var(--font-size0);
+}
+
+.root:has(select:disabled) .help {
+  color: var(--state-disabled-content);
 }

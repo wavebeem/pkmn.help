@@ -1,0 +1,91 @@
+/* Shared styles for standalone static pages (changelog, licenses, etc.) that
+   are generated at build time and served outside the app bundle. */
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-VariableFont_wdth,wght.woff2") format("woff2");
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+html {
+  --color-light: #fef8f4;
+  --color-dark: #151311;
+  color-scheme: light dark;
+  background: light-dark(var(--color-light), var(--color-dark));
+  color: light-dark(var(--color-dark), var(--color-light));
+}
+
+body {
+  font-family: "Roboto", system-ui, sans-serif;
+  line-height: 1.5;
+  max-width: 80ch;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+  font-size: 1.25rem; /* --font-size2 */
+}
+
+h1 {
+  font-size: 1.75rem; /* --font-size4 */
+  font-weight: 500; /* --weight-medium */
+  line-height: 1.25;
+  margin: 0 0 1rem;
+}
+
+h2 {
+  font-size: 1.5rem; /* --font-size3 */
+  font-weight: 500; /* --weight-medium */
+  line-height: 1.25;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  overflow-wrap: anywhere;
+}
+
+h3 {
+  font-size: 1.25rem; /* --font-size2 */
+  font-weight: 500; /* --weight-medium */
+  line-height: 1.25;
+  margin-top: 1.5rem;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 1rem; /* --font-size1 */
+  opacity: 0.85;
+
+  font-family:
+    ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas,
+    "DejaVu Sans Mono", monospace;
+}
+
+a {
+  color: inherit;
+  text-underline-offset: calc(1em / 6);
+  text-decoration-thickness: 2px;
+}
+
+ul,
+ol {
+  margin: 1rem 0;
+  padding-left: 1.25rem;
+}
+
+ul {
+  list-style-type: "– ";
+}
+
+li {
+  margin: 0.5rem 0;
+}
+
+li > ul,
+li > ol {
+  padding-left: 3rem;
+  margin-left: -1rem;
+  border-left: 2px solid color-mix(in srgb, currentColor 10%, transparent);
+}

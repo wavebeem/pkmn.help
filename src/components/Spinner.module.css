@@ -1,5 +1,5 @@
 .Spinner {
-  border-radius: 9999px;
+  border-radius: var(--border-radius-pill);
   width: 1em;
   height: 1em;
   border: 2px solid;

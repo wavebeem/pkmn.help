@@ -13,51 +13,38 @@
 
 .tab {
   text-decoration: none;
+  margin-inline: var(--padding2);
   padding: var(--padding2) var(--padding4);
   text-align: start;
-  color: inherit;
-  border-bottom: 1px solid var(--color-sidebar-highlight);
-  border-image: linear-gradient(
-      to right,
-      transparent var(--padding4),
-      var(--color-sidebar-highlight) 0 calc(100% - var(--padding3)),
-      transparent 0
-    )
-    1;
+  color: var(--color-link);
+  border: 1px solid transparent;
+  border-radius: var(--border-radius-pill);
   outline-color: currentColor;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: var(--padding2);
   align-items: center;
-
-  .tabBar[data-position="left"] & {
-    border-radius: 0 var(--border-radius-pill) var(--border-radius-pill) 0;
-  }
-
-  .tabBar[data-position="right"] & {
-    border-radius: var(--border-radius-pill) 0 0 var(--border-radius-pill);
-  }
+  font-weight: var(--label-font-weight);
+  letter-spacing: var(--label-letter-spacing);
 }
 
-.tab:has(+ .tab[aria-current="page"]) {
-  border-color: transparent;
-  border-image-source: none;
+.label {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .tab[aria-current="page"] {
-  background: var(--color-accent-bg);
-  color: var(--color-accent-fg);
-  box-shadow: inset 0 1px 0 0 var(--color-border-subtle);
-  border-color: transparent;
-  border-image-source: none;
-  text-shadow: none;
+  background: var(--color-nav-selected-bg);
+  color: var(--color-nav-selected-fg);
 }
 
 .tabSection {
-  margin-top: var(--padding2);
-  font-weight: var(--weight-medium);
-  padding: 0 var(--padding3);
-  font-size: var(--font-size2);
+  margin-top: var(--padding3);
+  padding: var(--padding1) var(--padding3);
+  font-size: var(--font-size0);
+  color: var(--color-secondary);
 }
 
 .pleaseUpdate {
@@ -71,8 +58,8 @@
   width: 12px;
   height: 12px;
   translate: 0 -50%;
-  border-radius: 9999px;
-  background: var(--color-accent-bg);
+  border-radius: var(--border-radius-pill);
+  background: var(--color-tertiary);
   box-shadow: 0 0 0 3px var(--color-sidebar-base);
 }
 
@@ -88,7 +75,6 @@
   .tabBar {
     display: flex;
     flex-direction: column;
-    gap: 0;
   }
 
   .tab {

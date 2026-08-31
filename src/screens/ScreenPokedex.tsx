@@ -4,11 +4,11 @@ import { useTranslation } from "react-i18next";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useSessionStorage } from "usehooks-ts";
 import { CopyButton } from "../components/CopyButton";
-import { Divider } from "../components/Divider";
 import { EmptyState } from "../components/EmptyState";
 import { FancyLink } from "../components/FancyLink";
 import { Flex } from "../components/Flex";
 import { Monster } from "../components/Monster";
+import { PageTitle } from "../components/PageTitle";
 import { Paginator } from "../components/Paginator";
 import { Search } from "../components/Search";
 import { Select } from "../components/Select";
@@ -142,62 +142,66 @@ export function ScreenPokedex(): ReactNode {
 
   return (
     <main className="center content-wide">
-      <Flex direction="column" gap="large" padding="large">
-        <div className={styles.searchArea}>
-          <Search
-            label={t("pokedex.search.description")}
-            value={query}
-            onChange={updateSearch}
-          />
-          <Select
-            label={t("pokedex.sorting.sortBy")}
-            value={sortOrder}
-            onChange={(event) => {
-              setSortOrder(event.target.value);
-            }}
-          >
-            <option value="">{t("pokedex.sorting.auto")}</option>
-            <SelectDivider />
-            <option value="hp">{t("pokedex.stats.hp")}</option>
-            <option value="attack">{t("pokedex.stats.attack")}</option>
-            <option value="defense">{t("pokedex.stats.defense")}</option>
-            <option value="spAttack">{t("pokedex.stats.specialAttack")}</option>
-            <option value="spDefense">
-              {t("pokedex.stats.specialDefense")}
-            </option>
-            <option value="speed">{t("pokedex.stats.speed")}</option>
-            <option value="total">{t("pokedex.stats.total")}</option>
-            <SelectDivider />
-            <option value="attack+speed">
-              {t("pokedex.stats.attack")}
-              {" + "}
-              {t("pokedex.stats.speed")}
-            </option>
-            <option value="spAttack+speed">
-              {t("pokedex.stats.specialAttack")}
-              {" + "}
-              {t("pokedex.stats.speed")}
-            </option>
-            <option value="hp+defense+spDefense">
-              {t("pokedex.stats.hp")}
-              {" + "}
-              {t("pokedex.stats.defense")}
-              {" + "}
-              {t("pokedex.stats.specialDefense")}
-            </option>
-            <option value="attack+defense">
-              {t("pokedex.stats.attack")}
-              {" + "}
-              {t("pokedex.stats.defense")}
-            </option>
-            <option value="spAttack+spDefense">
-              {t("pokedex.stats.specialAttack")}
-              {" + "}
-              {t("pokedex.stats.specialDefense")}
-            </option>
-          </Select>
-        </div>
-        <Divider />
+      <Flex direction="column" gap="xlarge" padding="large">
+        <Flex direction="column" gap="large">
+          <PageTitle title={t("navigation.pokedex")} />
+          <div className={styles.searchArea}>
+            <Search
+              label={t("pokedex.search.description")}
+              value={query}
+              onChange={updateSearch}
+            />
+            <Select
+              label={t("pokedex.sorting.sortBy")}
+              value={sortOrder}
+              onChange={(event) => {
+                setSortOrder(event.target.value);
+              }}
+            >
+              <option value="">{t("pokedex.sorting.auto")}</option>
+              <SelectDivider />
+              <option value="hp">{t("pokedex.stats.hp")}</option>
+              <option value="attack">{t("pokedex.stats.attack")}</option>
+              <option value="defense">{t("pokedex.stats.defense")}</option>
+              <option value="spAttack">
+                {t("pokedex.stats.specialAttack")}
+              </option>
+              <option value="spDefense">
+                {t("pokedex.stats.specialDefense")}
+              </option>
+              <option value="speed">{t("pokedex.stats.speed")}</option>
+              <option value="total">{t("pokedex.stats.total")}</option>
+              <SelectDivider />
+              <option value="attack+speed">
+                {t("pokedex.stats.attack")}
+                {" + "}
+                {t("pokedex.stats.speed")}
+              </option>
+              <option value="spAttack+speed">
+                {t("pokedex.stats.specialAttack")}
+                {" + "}
+                {t("pokedex.stats.speed")}
+              </option>
+              <option value="hp+defense+spDefense">
+                {t("pokedex.stats.hp")}
+                {" + "}
+                {t("pokedex.stats.defense")}
+                {" + "}
+                {t("pokedex.stats.specialDefense")}
+              </option>
+              <option value="attack+defense">
+                {t("pokedex.stats.attack")}
+                {" + "}
+                {t("pokedex.stats.defense")}
+              </option>
+              <option value="spAttack+spDefense">
+                {t("pokedex.stats.specialAttack")}
+                {" + "}
+                {t("pokedex.stats.specialDefense")}
+              </option>
+            </Select>
+          </div>
+        </Flex>
         {isLoading ? (
           <Spinner />
         ) : (
@@ -206,9 +210,7 @@ export function ScreenPokedex(): ReactNode {
             setPage={setPage}
             // Divide evenly between 1, 2, and 3 column layouts
             pageSize={12}
-            emptyState={
-              <EmptyState borderless>{t("pokedex.search.notFound")}</EmptyState>
-            }
+            emptyState={<EmptyState>{t("pokedex.search.notFound")}</EmptyState>}
             items={pkmn}
             renderPage={(page) => (
               <div className={styles.monsterGrid} data-stale={isStale}>
@@ -223,7 +225,6 @@ export function ScreenPokedex(): ReactNode {
             )}
           />
         )}
-        <Divider />
         <Flex align="center">
           <CopyButton text={permalink.href}>{t("general.copyLink")}</CopyButton>
           <Flex flex="auto" />

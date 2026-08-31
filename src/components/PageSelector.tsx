@@ -1,6 +1,5 @@
 import { ReactNode, RefObject } from "react";
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "usehooks-ts";
 import { Button } from "./Button";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
@@ -12,6 +11,8 @@ import {
   IconSettings,
 } from "./icons";
 import { FancyLink } from "./FancyLink";
+import styles from "./PageSelector.module.css";
+import { useMediaQuery } from "usehooks-ts";
 
 export interface PageSelectorProps<T> {
   anchorElementRef: RefObject<HTMLDivElement | null>;
@@ -65,14 +66,15 @@ export function PageSelector<T>({
   return (
     <Flex gap="large" direction="column">
       <FancyText tag="div" tabularNums fontSize="large">
-        <Flex gap="large">
-          <Flex flex="auto" gap="medium">
+        <div className={styles.header}>
+          <Flex flex="auto" gap="medium" align="center">
             <FancyLink
               outlined
               to="/settings/"
               aria-label={t("navigation.settings")}
+              iconOnly
             >
-              <IconSettings size={16} />
+              <IconSettings size={24} />
             </FancyLink>
             <FancyText tag="span" fontWeight="normal">
               {title} ({numItems})
@@ -82,11 +84,13 @@ export function PageSelector<T>({
           <FancyText tag="span" fontWeight="normal">
             {currentPageDisplay} / {numPages}
           </FancyText>
-        </Flex>
+        </div>
       </FancyText>
 
       <Flex align="stretch" gap="medium">
         <Button
+          variant="outlined"
+          iconOnly
           disabled={!hasPrev}
           onClick={() => {
             updatePage(0);
@@ -94,9 +98,11 @@ export function PageSelector<T>({
           title={t("pokedex.pagination.firstLong")}
           aria-label={t("pokedex.pagination.firstLong")}
         >
-          <IconFirst size={16} />
+          <IconFirst size={24} />
         </Button>
         <Button
+          variant="filled"
+          iconOnly={buttonSize === "small"}
           disabled={!hasPrev}
           onClick={() => {
             updatePage(currentPage - 1);
@@ -104,12 +110,14 @@ export function PageSelector<T>({
           title={t("pokedex.pagination.previousLong")}
           aria-label={t("pokedex.pagination.previousLong")}
         >
-          <IconPrevious size={16} />
+          <IconPrevious size={24} />
           {buttonSize === "medium" && t("pokedex.pagination.previous")}
           {buttonSize === "large" && t("pokedex.pagination.previousLong")}
         </Button>
         <Flex flex="auto" />
         <Button
+          variant="filled"
+          iconOnly={buttonSize === "small"}
           disabled={!hasNext}
           onClick={() => {
             updatePage(currentPage + 1);
@@ -119,9 +127,11 @@ export function PageSelector<T>({
         >
           {buttonSize === "medium" && t("pokedex.pagination.next")}
           {buttonSize === "large" && t("pokedex.pagination.nextLong")}
-          <IconNext size={16} />
+          <IconNext size={24} />
         </Button>
         <Button
+          variant="outlined"
+          iconOnly
           disabled={!hasNext}
           onClick={() => {
             updatePage(numPages - 1);
@@ -129,7 +139,7 @@ export function PageSelector<T>({
           title={t("pokedex.pagination.lastLong")}
           aria-label={t("pokedex.pagination.lastLong")}
         >
-          <IconLast size={16} />
+          <IconLast size={24} />
         </Button>
       </Flex>
     </Flex>

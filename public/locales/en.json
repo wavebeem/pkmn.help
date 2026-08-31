@@ -1,7 +1,7 @@
 {
   "title": "Pokémon Type Calculator",
   "navigation": {
-    "offense": "Offense",
+    "offense": "Attack",
     "defense": "Defense",
     "pokedex": "Pokédex",
     "other": "Other",
@@ -11,11 +11,11 @@
     "close": "Close"
   },
   "offense": {
-    "chooseTypes": "Choose attack move types",
-    "dealsXTo": "Deals {{ x }} damage to",
+    "chooseTypes": "Choose the type for each attack move",
+    "dealsXTo": "Deals up to {{ x }} damage to",
     "mode": {
-      "combination": "Dual",
-      "single": "Single"
+      "combination": "Dual-type attack",
+      "single": "Single-type attack"
     },
     "matchups": {
       "summary": {
@@ -130,14 +130,13 @@
       "prism_armor": "Prism Armor"
     },
     "mode": {
-      "solo": "Solo",
-      "team": "Team"
+      "solo": "Solo defense",
+      "team": "Team defense"
     },
     "team": {
       "tableHeading": "Matchup counts",
       "heading": "Edit Pokémon team",
       "add": "Add Pokémon",
-      "empty": "No Pokémon selected",
       "displayType": "Table format",
       "weak": "Weak",
       "resist": "Resist",
@@ -194,6 +193,7 @@
     }
   },
   "pokedexHelp": {
+    "title": "Pokédex help",
     "searchByName": {
       "heading": "Search by name",
       "description": "You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though."
@@ -231,7 +231,7 @@
     "contact": {
       "heading": "Contact me",
       "intro": "Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).",
-      "email": "Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>."
+      "email": "Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>. I'm just one person spending my free time making this site, so please be kind. I read every email and value your honest feedback."
     },
     "settings": {
       "heading": "Settings",
@@ -260,7 +260,7 @@
       },
       "typeCount": {
         "label": "Number of types",
-        "help": "Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.",
+        "help": "Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.",
         "values": {
           "2": "Two types (2)",
           "3": "Three types (3)"
@@ -336,17 +336,7 @@
     }
   },
   "general": {
-    "loading": "Loading…",
     "copyLink": "Copy link",
     "clearChoices": "Clear choices"
-  },
-  "games": {
-    "label": "Game generation",
-    "help": "Use type effectiveness from different game generations.",
-    "byID": {
-      "gen1": "Generation 1",
-      "gen2": "Generation 2–5",
-      "default": "Generation 6+"
-    }
   }
 }

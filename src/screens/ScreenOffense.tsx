@@ -16,6 +16,7 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
+import { PageTitle } from "../components/PageTitle";
 import { useAppContext } from "../hooks/useAppContext";
 import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
@@ -151,6 +152,14 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
+      <PageTitle
+        title={
+          mode === "single"
+            ? t("offense.mode.single")
+            : t("offense.mode.combination")
+        }
+      />
+
       <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="medium">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">
@@ -220,26 +229,29 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
             {t("offense.coverage.heading")}
           </FancyText>
           <Card size="small">
-            <Flex direction="column" gap="large">
-              <Flex direction="row" gap="medium">
-                <FancyLink
-                  outlined
-                  to="/settings/"
-                  aria-label={t("navigation.settings")}
-                >
-                  <IconSettings size={16} />
-                </FancyLink>
-                <FancyText tag="span" fontWeight="normal">
-                  {versionGroupName}
-                </FancyText>
-              </Flex>
+            <Flex direction="column" gap="xlarge">
+              <Flex direction="column" gap="small">
+                <Flex direction="row" gap="medium" align="center">
+                  <FancyLink
+                    outlined
+                    to="/settings/"
+                    aria-label={t("navigation.settings")}
+                    iconOnly
+                  >
+                    <IconSettings size={24} />
+                  </FancyLink>
+                  <FancyText tag="span" fontWeight="normal">
+                    {versionGroupName}
+                  </FancyText>
+                </Flex>
 
-              <div>
-                <FancyLink to="/offense/coverage/">
-                  {t("offense.coverage.edit")}
-                </FancyLink>{" "}
-                ({listLengthFormatted})
-              </div>
+                <div>
+                  <FancyLink to="/offense/coverage/">
+                    {t("offense.coverage.edit")}
+                  </FancyLink>{" "}
+                  ({listLengthFormatted})
+                </div>
+              </Flex>
               <DexCoverage
                 battleVariant={battleVariant}
                 versionGroup={versionGroup}

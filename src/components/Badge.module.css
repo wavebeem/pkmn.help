@@ -1,25 +1,32 @@
 .badge {
   --_c: var(--type-color-bg);
 
-  border-radius: var(--border-radius0);
-  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--border-radius1);
+  border: 1px solid transparent;
   background: var(--type-color);
   color: white;
+  opacity: var(--content-dim);
+  transition: var(--motion-duration-short3) var(--motion-easing-standard);
+  transition-property: opacity;
   gap: var(--padding2);
   align-items: center;
   display: grid;
   grid-template-columns: auto 1fr;
 }
 
+.badge:hover {
+  opacity: 1;
+}
+
 .badge[data-size="small"] {
   font-size: var(--font-size1);
-  padding: 3px 7px;
+  padding: var(--padding1) var(--padding2);
   min-height: 1rem;
 }
 
 .badge[data-size="medium"] {
   font-size: var(--font-size2);
-  padding: 5px 7px;
+  padding: 6px var(--padding2);
   min-height: 1rem;
 }
 
@@ -36,12 +43,12 @@
 
 .badge[data-variant="ghost"] {
   border-color: transparent;
-  border-radius: var(--border-radius0);
+  border-radius: var(--border-radius1);
 }
 
 .label {
   line-height: 1;
-  font-weight: var(--weight-medium);
+  font-weight: var(--label-font-weight);
   font-stretch: ultra-condensed;
   text-align: start;
   white-space: nowrap;
@@ -62,6 +69,6 @@
     filter: drop-shadow(1px 1px 0 var(--_c));
     paint-order: stroke fill;
 
-    letter-spacing: calc(1em / 64);
+    letter-spacing: var(--label-letter-spacing);
   }
 }

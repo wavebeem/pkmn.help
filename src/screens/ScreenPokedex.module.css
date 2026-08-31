@@ -11,8 +11,7 @@
 
 @media (width > 40rem) {
   .searchArea {
-    grid-template-columns: 20rem auto;
-    justify-content: center;
+    grid-template-columns: 20rem max-content;
   }
 }
 
@@ -24,7 +23,8 @@
   grid-template-columns: repeat(var(--column-count), minmax(0, 1fr));
   margin-block: var(--padding3);
   margin-inline: calc(-1 * var(--padding3));
-  transition: 200ms opacity;
+  transition: opacity var(--motion-duration-short4)
+    var(--motion-easing-standard);
 }
 
 @media (width > 45rem) {

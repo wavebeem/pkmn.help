@@ -6,17 +6,7 @@
   overflow-x: auto;
   padding: var(--padding1);
   border-radius: var(--border-radius2);
-
-  border: 1px solid transparent;
-  background:
-    radial-gradient(var(--color-card-bg)) padding-box,
-    radial-gradient(
-        50% 50% at top center,
-        var(--color-card-highlight),
-        var(--color-card-bg)
-      )
-      border-box var(--color-card-bg);
-  box-shadow: 0 1px 0 0 var(--color-card-shadow);
+  background: var(--color-card-bg);
 }
 
 .tableWrapper[data-scroll-start="false"] {
@@ -46,12 +36,16 @@
 .td {
   min-width: 4rem;
   padding: 0 var(--padding1);
-  background: var(--color-bg-ghost);
+  background: color-mix(
+    in srgb,
+    var(--color-bg-ghost) 25%,
+    var(--color-card-bg) 75%
+  );
   border-radius: var(--border-radius0);
 }
 
 .td:not([data-count="0"]) {
-  background: var(--color-bg-input);
+  background: var(--color-bg-ghost);
 }
 
 .td[data-count="0"] {

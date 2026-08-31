@@ -153,8 +153,8 @@ export function StatsTable({ pokemon }: StatsTableProps): ReactNode {
       <Meter
         max={statMax}
         value={speed}
-        color={typeColor(Type.fairy)}
-        background={typeColorAlpha(Type.fairy, alpha)}
+        color={typeColor(Type.poison)}
+        background={typeColorAlpha(Type.poison, alpha)}
       />
 
       <FancyText

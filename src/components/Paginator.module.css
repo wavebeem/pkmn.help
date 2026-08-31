@@ -1,3 +1,7 @@
 .root {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding3);
+  padding-block: var(--padding3);
   scroll-margin-top: 1rem;
 }

@@ -3,14 +3,13 @@ import { Trans, useTranslation } from "react-i18next";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import { Section } from "../components/Section";
-import { Divider } from "../components/Divider";
-import { ExternalLink } from "../components/ExternalLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { useAppContext } from "../hooks/useAppContext";
 import { resetApp } from "../misc/resetApp";
 import { FancyLink } from "../components/FancyLink";
-import { IconReset, IconTada } from "../components/icons";
+import { IconReset, IconRandom } from "../components/icons";
+import { PageTitle } from "../components/PageTitle";
 import { Pokemon } from "../misc/data-types";
 import styles from "./ScreenAbout.module.css";
 import { randomItem } from "../misc/random";
@@ -25,25 +24,34 @@ export function ScreenAbout(): ReactNode {
   const [easterEggLoadedID, setEasterEggLoadedID] = useState("");
 
   return (
-    <main className="content-narrow center">
-      <Flex direction="column" padding="large">
-        <Flex direction="column" gap="large">
+    <main className="center content-wide">
+      <Flex
+        className="content-narrow"
+        direction="column"
+        gap="large"
+        padding="large"
+      >
+        <PageTitle title={t("navigation.about")} />
+
+        <Flex direction="column" gap="xlarge">
           {needsAppUpdate && (
-            <Card>
-              <Flex gap="medium" align="center">
-                <Flex direction="column" flex="auto">
-                  <FancyText tag="span" fontSize="large" fontWeight="medium">
-                    {t("banners.updateReady.description")}
-                  </FancyText>
-                  <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
-                    {t("banners.updateReady.whatsNew")}
-                  </ExternalLink>
+            <div className={styles.updateBanner}>
+              <Card>
+                <Flex gap="medium" align="center">
+                  <Flex direction="column" flex="auto">
+                    <FancyText tag="span" fontSize="large" fontWeight="medium">
+                      {t("banners.updateReady.description")}
+                    </FancyText>
+                    <FancyLink to="/changelog/" reloadDocument>
+                      {t("banners.updateReady.whatsNew")}
+                    </FancyLink>
+                  </Flex>
+                  <Button variant="filled" type="button" onClick={updateApp}>
+                    {t("banners.updateReady.update")}
+                  </Button>
                 </Flex>
-                <Button type="button" onClick={updateApp}>
-                  {t("banners.updateReady.update")}
-                </Button>
-              </Flex>
-            </Card>
+              </Card>
+            </div>
           )}
           <Section
             heading={
@@ -57,7 +65,7 @@ export function ScreenAbout(): ReactNode {
                 i18nKey="more.contact.intro"
                 values={{}}
                 components={{
-                  homepage: <ExternalLink href="https://www.wavebeem.com" />,
+                  homepage: <FancyLink to="https://www.wavebeem.com" />,
                 }}
               />
             </FancyText>
@@ -66,13 +74,11 @@ export function ScreenAbout(): ReactNode {
               <Trans
                 i18nKey="more.contact.email"
                 components={{
-                  email: <ExternalLink href="mailto:pkmn@wavebeem.com" />,
+                  email: <FancyLink to="mailto:pkmn@wavebeem.com" />,
                 }}
               />
             </FancyText>
           </Section>
-
-          <Divider />
 
           <Section
             heading={
@@ -87,8 +93,6 @@ export function ScreenAbout(): ReactNode {
             </FancyText>
           </Section>
 
-          <Divider />
-
           <Section
             heading={
               <FancyText inline tag="h2" fontSize="xlarge" fontWeight="medium">
@@ -100,15 +104,11 @@ export function ScreenAbout(): ReactNode {
               <Trans
                 i18nKey="more.changes.description"
                 components={{
-                  changelog: (
-                    <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md" />
-                  ),
+                  changelog: <FancyLink to="/changelog/" reloadDocument />,
                 }}
               />
             </FancyText>
           </Section>
-
-          <Divider />
 
           <Section
             heading={
@@ -119,7 +119,7 @@ export function ScreenAbout(): ReactNode {
           >
             <Flex direction="column" gap="large">
               <Flex direction="column" align="flex-start" gap="small">
-                <Button onClick={resetApp}>
+                <Button variant="outlined" size="small" onClick={resetApp}>
                   <IconReset size={16} />
                   {t("more.help.serviceWorker.button")}
                 </Button>
@@ -129,8 +129,6 @@ export function ScreenAbout(): ReactNode {
               </FancyText>
             </Flex>
           </Section>
-
-          <Divider />
 
           <Section
             heading={
@@ -143,15 +141,11 @@ export function ScreenAbout(): ReactNode {
               <Trans
                 i18nKey="more.privacy.description"
                 components={{
-                  plausible: (
-                    <ExternalLink href="https://plausible.io/pkmn.help" />
-                  ),
+                  plausible: <FancyLink to="https://plausible.io/pkmn.help" />,
                 }}
               />
             </FancyText>
           </Section>
-
-          <Divider />
 
           <Section
             heading={
@@ -162,8 +156,6 @@ export function ScreenAbout(): ReactNode {
           >
             <FancyText tag="p">{t("more.givingBack.description")}</FancyText>
           </Section>
-
-          <Divider />
 
           <Section
             heading={
@@ -176,15 +168,11 @@ export function ScreenAbout(): ReactNode {
               <Trans
                 i18nKey="more.thanks.description"
                 components={{
-                  credits: (
-                    <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CREDITS.md" />
-                  ),
+                  credits: <FancyLink to="/credits/" reloadDocument />,
                 }}
               />
             </FancyText>
           </Section>
-
-          <Divider />
 
           <Section
             heading={
@@ -198,14 +186,12 @@ export function ScreenAbout(): ReactNode {
                 i18nKey="more.openSource.description"
                 components={{
                   github: (
-                    <ExternalLink href="https://github.com/wavebeem/pkmn.help" />
+                    <FancyLink to="https://github.com/wavebeem/pkmn.help" />
                   ),
                 }}
               />
             </FancyText>
           </Section>
-
-          <Divider />
 
           <Section
             heading={
@@ -228,20 +214,34 @@ export function ScreenAbout(): ReactNode {
 
               <FancyText tag="p">
                 Pokédex data is from {}
-                <ExternalLink href="https://pokeapi.co/">PokéAPI</ExternalLink>.
+                <FancyLink to="https://pokeapi.co/">PokéAPI</FancyLink>.
+              </FancyText>
+
+              <FancyText tag="p">
+                This site uses the Roboto font, licensed under the {}
+                <FancyLink to="https://www.apache.org/licenses/LICENSE-2.0">
+                  Apache License 2.0
+                </FancyLink>
+                .
+              </FancyText>
+
+              <FancyText tag="p">
+                This site also uses these {}
+                <FancyLink to="/licenses/" reloadDocument>
+                  open source packages
+                </FancyLink>
+                .
               </FancyText>
 
               <FancyText tag="p">
                 PKMN.help &copy; 2013&ndash;{year} {}
-                <ExternalLink href="https://www.wavebeem.com">
+                <FancyLink to="https://www.wavebeem.com">
                   Sage Fennel Mock
-                </ExternalLink>
+                </FancyLink>
                 .
               </FancyText>
             </Flex>
           </Section>
-
-          <Divider />
 
           {easterEgg && (
             <div
@@ -259,6 +259,7 @@ export function ScreenAbout(): ReactNode {
 
           <Flex>
             <Button
+              variant="filled"
               onClick={(event) => {
                 event.preventDefault();
                 const pkmn = randomItem(allPokemon);
@@ -268,7 +269,7 @@ export function ScreenAbout(): ReactNode {
                 setEasterEgg(pkmn);
               }}
             >
-              <IconTada size={16} />
+              <IconRandom size={24} />
               {t("about.easterEgg.button")}
             </Button>
           </Flex>

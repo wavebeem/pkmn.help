@@ -6,6 +6,7 @@ import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { IconBack } from "../components/icons";
+import { PageTitle } from "../components/PageTitle";
 import { Paginator } from "../components/Paginator";
 import { PlainBadge } from "../components/PlainBadge";
 import { useAppContext } from "../hooks/useAppContext";
@@ -48,11 +49,14 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   });
   const items = partitionedMatchups[mode];
   return (
-    <main className="center content-narrow">
-      <Flex direction="column" gap="large" padding="large">
-        <FancyText tag="h2" fontSize="xlarge" fontWeight="medium">
-          {t(`offense.coverageList.${mode}.heading`)}
-        </FancyText>
+    <main className="center content-wide">
+      <Flex
+        className="content-narrow"
+        direction="column"
+        gap="large"
+        padding="large"
+      >
+        <PageTitle title={t(`offense.coverageList.${mode}.heading`)} />
 
         <Flex gap="small" align="center">
           <IconBack />
@@ -99,7 +103,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
           items={items}
           renderPage={(items) => {
             return (
-              <Flex direction="column" paddingY="large">
+              <Flex direction="column">
                 {items.map(({ number, name, types }, i) => {
                   const dexParams = new URLSearchParams({
                     q: number,

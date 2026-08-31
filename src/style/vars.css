@@ -5,7 +5,6 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 :root {
   --hue-gold: 35;
   --hue-blue: 230;
-  --hue-red: 355;
   --hue-teal: 175;
   --hue-green: 140;
 
@@ -14,16 +13,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --weight-normal: 400;
   --weight-medium: 500;
 
-  --background-button-position: bottom;
-  --background-button:
-    linear-gradient(var(--color-button-top), var(--color-button-bottom))
-      padding-box,
-    radial-gradient(
-        at var(--background-button-position),
-        var(--color-border-primary),
-        var(--color-border-secondary)
-      )
-      border-box var(--color-button-top);
+  --label-font-weight: var(--weight-medium);
+  --label-letter-spacing: 0.1px;
 
   --padding0: 2px;
   --padding1: 4px;
@@ -32,23 +23,42 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --padding4: 32px;
   --padding5: 64px;
 
-  --border-radius0: 2px;
-  --border-radius1: 4px;
-  --border-radius2: 8px;
+  /* m3.material.io/styles/shape/corner-radius-scale */
+  --border-radius0: 4px;
+  --border-radius1: 8px;
+  --border-radius2: 12px;
   --border-radius3: 16px;
   --border-radius-pill: 9999px;
 
   --color-modal-backdrop: hsl(var(--hue-ui) 10% 20% / 80%);
 
-  --shadow-tabs: 0 0 8px rgb(0 0 0 / 10%), 0 0 16px rgb(0 0 0 / 20%);
-  --shadow-menu: 0 0 8px rgb(0 0 0 / 10%), 0 0 16px rgb(0 0 0 / 20%);
-  --shadow-button: 0 1px 0 rgb(0 0 0 / 10%);
-  --shadow-inset: inset 0 1px 0 rgb(0 0 0 / 10%);
+  /* Only for actually floating content (e.g. dialogs) */
+  --shadow-menu: 0 4px 12px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 10%);
 
-  --filter-darken: brightness(90%);
+  /* Applied as radial-gradient(var(--state-hover)) over a flat fill. Personal
+  preference---I like 6% more than the documented 8% here. */
+  --state-hover: rgb(from currentColor r g b / 6%);
+  --state-press: rgb(from currentColor r g b / 12%);
+
+  --state-disabled-container: rgb(from var(--color-primary) r g b / 12%);
+  --state-disabled-content: rgb(from var(--color-primary) r g b / 38%);
+
+  /* Named after the M3 duration/easing tokens */
+  --motion-duration-short3: 150ms;
+  --motion-duration-short4: 200ms;
+  --motion-duration-medium1: 250ms;
+
+  --motion-easing-standard: cubic-bezier(0.2, 0, 0, 1);
+  --motion-easing-standard-decelerate: cubic-bezier(0, 0, 0, 1);
+  --motion-easing-standard-accelerate: cubic-bezier(0.3, 0, 1, 1);
+  --motion-easing-emphasized-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
+  --motion-easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
+
   /* Don't overcomplicate this filter or Pokedex scrolling can get really slow
-  in Android Firefox */
-  --filter-image: drop-shadow(8px 8px 16px hsl(var(--hue-ui) 10% 20% / 30%));
+  in Android Firefox. */
+  --filter-image: drop-shadow(
+    8px 8px 16px hsl(from var(--color-primary) h s 20% / 30%)
+  );
 
   --logo-letter-spacing: calc(-1rem / 32);
 
@@ -56,10 +66,14 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --font-size1: 1rem;
   --font-size2: 1.25rem;
   --font-size3: 1.5rem;
+  --font-size4: 1.75rem;
 
   --font-sans: "Roboto", system-ui, sans-serif;
 
   --type-min-width: 6rem;
+
+  /* How much to dim bright content in night mode */
+  --content-dim: 1;
 
   color: light-dark(#222, #eee);
   background-color: light-dark(#eee, #222);

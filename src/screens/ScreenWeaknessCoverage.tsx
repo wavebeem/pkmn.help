@@ -2,7 +2,6 @@ import Papa from "papaparse";
 import { ReactNode, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Button } from "../components/Button";
-import { Divider } from "../components/Divider";
 import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
@@ -12,6 +11,7 @@ import {
   IconImport,
   IconReset,
 } from "../components/icons";
+import { PageTitle } from "../components/PageTitle";
 import { Spinner } from "../components/Spinner";
 import { useAppContext } from "../hooks/useAppContext";
 import { useTypeCount } from "../hooks/useTypeCount";
@@ -134,49 +134,54 @@ export function ScreenWeaknessCoverage(): ReactNode {
   }
 
   return (
-    <main className="center content-narrow">
-      <Flex direction="column" gap="large" padding="large">
+    <main className="center content-wide">
+      <Flex
+        className="content-narrow"
+        direction="column"
+        gap="xlarge"
+        padding="large"
+      >
         <Flex gap="medium" />
 
-        <FancyText tag="h2" fontSize="xlarge" fontWeight="medium">
-          {t("coverage.heading")}
-        </FancyText>
+        <Flex direction="column" gap="large">
+          <PageTitle title={t("coverage.heading")} />
 
-        <FancyText tag="p">{t("coverage.paragraph1")}</FancyText>
+          <Flex direction="column" gap="large">
+            <FancyText tag="p">{t("coverage.paragraph1")}</FancyText>
 
-        <FancyText tag="p">{t("coverage.paragraph2")}</FancyText>
+            <FancyText tag="p">{t("coverage.paragraph2")}</FancyText>
 
-        <FancyText tag="p">{t("coverage.paragraph3")}</FancyText>
+            <FancyText tag="p">{t("coverage.paragraph3")}</FancyText>
 
-        {isLoading ? (
-          <Spinner />
-        ) : (
-          <div className={styles.buttonGrid}>
-            <Button onClick={saveCSV}>
-              <IconExport /> {t("coverage.export.button")}
-            </Button>
-            <span>{t("coverage.export.description")}</span>
+            {isLoading ? (
+              <Spinner />
+            ) : (
+              <div className={styles.buttonGrid}>
+                <Button onClick={saveCSV}>
+                  <IconExport /> {t("coverage.export.button")}
+                </Button>
+                <span>{t("coverage.export.description")}</span>
 
-            <Button onClick={loadCSV}>
-              <IconImport /> {t("coverage.import.button")}
-            </Button>
-            <span>{t("coverage.import.description")}</span>
+                <Button onClick={loadCSV}>
+                  <IconImport /> {t("coverage.import.button")}
+                </Button>
+                <span>{t("coverage.import.description")}</span>
 
-            <Button onClick={loadDefault}>
-              <IconReset />
-              {t("coverage.reset.button")}
-            </Button>
-            <span>{t("coverage.reset.description")}</span>
-          </div>
-        )}
+                <Button onClick={loadDefault}>
+                  <IconReset />
+                  {t("coverage.reset.button")}
+                </Button>
+                <span>{t("coverage.reset.description")}</span>
+              </div>
+            )}
 
-        {statusText && (
-          <FancyText tag="pre" fontSize="large" fontWeight="medium">
-            {statusText}
-          </FancyText>
-        )}
-
-        <Divider />
+            {statusText && (
+              <FancyText tag="pre" fontSize="large" fontWeight="medium">
+                {statusText}
+              </FancyText>
+            )}
+          </Flex>
+        </Flex>
 
         <Flex gap="small" align="center">
           <IconBack />

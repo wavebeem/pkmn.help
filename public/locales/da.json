@@ -229,16 +229,5 @@
       "update": "Opdater"
     }
   },
-  "general": {
-    "loading": "Loader..."
-  },
-  "games": {
-    "label": "Spil generation",
-    "help": "Brug type effektiviteter fra andre spil generationer",
-    "byID": {
-      "gen1": "Generation 1",
-      "gen2": "Generation 2-5",
-      "default": "Standard (Generation 6+)"
-    }
-  }
+  "general": {}
 }

@@ -25,6 +25,13 @@
   display: block;
   height: auto;
   filter: var(--filter-image);
+  opacity: var(--content-dim);
+  transition: var(--motion-duration-short3) var(--motion-easing-standard);
+  transition-property: opacity;
+}
+
+.image:hover {
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: no-preference) {

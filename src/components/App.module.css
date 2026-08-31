@@ -7,7 +7,8 @@
   /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
   /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
   --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px);
-  --tabs-height: round(up, 3.5rem, 8px);
+  /* M3 spec: 48dp container height for a single line of tab content. */
+  --tabs-height: 3rem;
 
   flex: auto;
   display: grid;
@@ -23,16 +24,12 @@
 
 .menuButton {
   display: flex;
-  border: 1px solid var(--color-header-highlight);
+  border: 0;
   padding: var(--padding2);
-  background: transparent;
+  background-color: rgb(from currentColor r g b / 18%);
   color: inherit;
-  border-radius: var(--border-radius2);
+  border-radius: var(--border-radius-pill);
   text-shadow: inherit;
-}
-
-.dialog .menuButton {
-  border-color: var(--color-sidebar-highlight);
 }
 
 .header {
@@ -42,9 +39,8 @@
   display: flex;
   flex-direction: column;
   gap: var(--padding3);
-  color: var(--color-header-text);
-  /* BACKGROUND-COLOR must be set for JS to read */
-  background: var(--color-header-base);
+  color: var(--color-header-fg);
+  background: var(--color-header-bg);
 }
 
 .sidebar {
@@ -78,6 +74,7 @@
   transition-timing-function: ease;
   transition-property: translate, scale;
   box-shadow: var(--shadow-menu);
+  border-radius: var(--border-radius3) 0 0 var(--border-radius3);
 }
 
 .dialog::backdrop {
@@ -135,7 +132,6 @@
     width: 100vw;
     height: var(--header-height);
     z-index: 2;
-    border-bottom: 1px solid var(--color-border-subtle);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,23 +152,23 @@
   }
 
   .header {
-    border-bottom: 1px solid var(--color-header-border);
     z-index: 1;
-    box-shadow: var(--shadow-tabs);
+    border-radius: 0 0 var(--border-radius3) 0;
+    margin-bottom: var(--padding0);
   }
 }
 
 .heading {
   line-height: 1.15;
 
-  color: var(--color-header-text);
+  color: inherit;
   margin: 0;
   align-items: center;
   flex-direction: row;
-  gap: var(--padding3);
+  gap: var(--padding2);
 
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .titleStack {
@@ -184,29 +180,23 @@
 .title {
   display: flex;
   margin: 0;
-  font-size: var(--font-size3);
+  gap: var(--padding1);
   font-size: 2rem;
-  text-transform: uppercase;
   align-items: center;
   line-height: 1;
+  color: inherit;
 
-  > .justLogo {
-    margin-right: var(--padding2);
-  }
-  > .pkmn {
+  .pkmn {
     font-weight: 900;
-    align-self: end;
+    text-transform: uppercase;
+    font-stretch: condensed;
+    letter-spacing: calc(1em / 32);
   }
-  > .dot {
+  .dot {
     font-weight: 900;
-    /* font-size: 1.5rem;
-    align-self: end; */
   }
-  > .help {
+  .help {
     font-weight: 500;
-    /* align-self: end;
-    font-size: 1.5rem; */
-    text-transform: lowercase;
   }
 }
 
@@ -214,50 +204,12 @@
   font-size: var(--font-size0);
   font-weight: var(--weight-medium);
   margin: 0;
+  color: inherit;
 }
 
 @media (width < 22rem) {
   .subtitle {
     font-stretch: ultra-condensed;
-  }
-}
-
-:where(
-    [lang="fr"],
-    [lang="es"],
-    [lang="it"],
-    [lang="pt-BR"],
-    [lang="da"],
-    [lang="pl"],
-    [lang="nl"]
-  )
-  .heading {
-  font-size: 1.25rem;
-}
-
-:where(
-    [lang="ja"],
-    [lang="ja-Hrkt"],
-    [lang="pt-PT"],
-    [lang="ro"],
-    [lang="vi"],
-    [lang="kk"],
-    [lang="ru"]
-  )
-  .heading {
-  font-size: 1rem;
-}
-
-@media (width >= 60rem) {
-  .heading {
-    gap: var(--padding2);
-    font-size: 2rem;
-  }
-
-  .titleStack {
-    flex-direction: row;
-    align-items: center;
-    gap: var(--padding3);
   }
 }
 
@@ -278,20 +230,14 @@
   width: 12px;
   height: 12px;
   translate: 0 -50%;
-  border-radius: 9999px;
-  background: var(--color-header-text);
-  box-shadow: 0 0 0 3px var(--color-header-base);
+  border-radius: var(--border-radius-pill);
+  background: var(--color-tertiary);
+  box-shadow: 0 0 0 3px var(--color-header-bg);
 }
 
 .mobileTabBar {
-  box-shadow: var(--shadow-tabs);
-  /* Abusing shadows as borders sometimes causes rendering issues, but if we use
-  a border that's sometimes transparent, it will make the tab bar look
-  unbalanced.  */
-  border-bottom: 1px solid var(--color-tabs-border);
   background: var(--color-tabs-base);
-  color: var(--color-tabs-text);
-  gap: var(--padding2);
+  color: var(--color-secondary);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
@@ -299,32 +245,53 @@
   width: 100dvw;
   left: 0;
   height: var(--tabs-height);
-  padding: var(--padding2);
-  /* The border is incredibly subtle, so let's consider it part of the padding,
-  so that the tab bar doesn't look lopsided... */
-  /* padding-bottom: calc(var(--padding2) - 1px); */
   top: var(--header-height);
   z-index: 1;
+  border-bottom: 1px solid var(--color-border-secondary);
 }
 
 .mobileTab {
-  flex: auto;
-  text-align: center;
-  border: 1px solid var(--color-tabs-highlight);
-  border-radius: var(--border-radius2);
-  background: var(--color-tabs-base);
+  position: relative;
   color: inherit;
   text-decoration: none;
-  padding: var(--padding1) var(--padding2);
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  outline: none;
 
-.mobileTab[aria-current="page"] {
-  background: var(--color-accent-bg);
-  color: var(--color-accent-fg);
-  border-color: var(--color-border-subtle);
+  /* Not outline: needs to dodge the active indicator underline. */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border: 3px solid transparent;
+    border-radius: var(--border-radius1);
+  }
+
+  &:focus-visible::before {
+    border-color: var(--color-tertiary);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: 32px;
+    height: 3px;
+    border-radius: var(--border-radius-pill) var(--border-radius-pill) 0 0;
+    background: var(--color-link);
+    opacity: 0;
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-link);
+
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 .mobileTab svg {
@@ -337,26 +304,22 @@
   }
 
   .root {
-    --header-height: round(up, 3.5rem, 1px);
-    --sidebar-width: round(up, 22ch, 16px);
+    --sidebar-width: round(up, 30ch, 16px);
 
     grid-template-areas:
-      "header   header "
+      "header   content"
       "sidebar  content";
     grid-template-columns: minmax(auto, var(--sidebar-width)) 1fr;
-    /* grid-template-rows: auto 1fr; */
-    grid-template-rows: var(--header-height) 1fr;
+    grid-template-rows: auto 1fr;
 
-    background: var(--color-header-base);
-    color: var(--color-header-text);
+    background: var(--color-bg-base);
+    color: var(--color-primary);
   }
 
   .content {
     overflow: auto scroll;
     overscroll-behavior: none;
-
-    /* box-shadow: 0 0 0 1px var(--color-header-border);
-    border-top-left-radius: var(--border-radius3); */
+    padding-block: var(--padding2) var(--padding4);
   }
 
   .dialog {
@@ -397,6 +360,6 @@
   .sidebar {
     overflow: auto auto;
     scrollbar-color: var(--color-sidebar-text) transparent;
-    border-right: 1px solid var(--color-sidebar-border);
+    border-radius: 0 var(--border-radius3) 0 0;
   }
 }

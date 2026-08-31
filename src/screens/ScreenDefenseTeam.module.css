@@ -11,3 +11,31 @@
     grid-template-columns: 3fr 4fr;
   }
 }
+
+.teamRow {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "number ...... icons "
+    "badges badges badges";
+  align-items: center;
+  gap: var(--padding2);
+}
+
+.teamRowNumber {
+  grid-area: number;
+}
+
+.teamRowBadges {
+  grid-area: badges;
+}
+
+.teamRowIcons {
+  grid-area: icons;
+}
+
+@media (width >= 60rem) {
+  .teamRow {
+    grid-template-areas: "number badges icons";
+  }
+}

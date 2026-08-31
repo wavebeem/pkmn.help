@@ -1,31 +1,42 @@
 .root {
+  --_radius-round: 22px;
+
   gap: var(--padding1);
-  border-radius: var(--border-radius-pill);
+  border-radius: var(--_radius-round);
+  transition: var(--motion-duration-short3) var(--motion-easing-standard);
+  transition-property: border-radius, background-color, color, border-color;
   padding: var(--padding2);
   display: flex;
+
   align-items: center;
   fill: currentColor;
-  box-shadow: var(--shadow-button);
-  color: var(--color-primary);
-  border: 1px solid transparent;
-  background: var(--background-button);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-border-primary);
+  background-color: transparent;
 
-  &:active {
-    filter: var(--filter-darken);
+  &[data-size="small"] {
+    padding: var(--padding1);
   }
 
-  &[aria-pressed="true"] {
-    border-color: var(--color-border-subtle);
-    background: var(--color-accent-bg);
-    color: var(--color-accent-fg);
-    box-shadow: inset var(--shadow-button);
+  &:active {
+    background-image: radial-gradient(var(--state-press));
   }
 
   &:is(:disabled, [aria-disabled="true"]) {
-    background: transparent;
-    color: var(--color-disabled);
-    border-color: var(--color-border-disabled);
-    box-shadow: none;
-    filter: none;
+    background: var(--state-disabled-container);
+    /* Overlapping SVG strokes don't mix well with alpha. Use pre-blended color instead. */
+    color: color-mix(in oklab, var(--color-primary) 38%, var(--color-card-bg));
+    border-color: transparent;
+  }
+
+  &:is(:hover, :focus-visible):not(:active, :disabled, [aria-disabled="true"]) {
+    background-image: radial-gradient(var(--state-hover));
+  }
+
+  &[aria-pressed="true"] {
+    background-color: var(--color-tertiary);
+    color: var(--color-tertiary-fg);
+    border-color: transparent;
+    border-radius: var(--border-radius1);
   }
 }

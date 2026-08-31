@@ -114,7 +114,6 @@
       "tableHeading": "Liczba kombinacji",
       "heading": "Edytuj drużynę Pokémon",
       "add": "Dodaj Pokémona",
-      "empty": "Nie wybrano Pokémona",
       "displayType": "Format Tabeli",
       "weak": "Słaby na",
       "resist": "Odporny na",
@@ -290,16 +289,6 @@
     }
   },
   "general": {
-    "loading": "Ładowanie…",
     "copyLink": "Skopiuj Link"
-  },
-  "games": {
-    "label": "Generacja Gry",
-    "help": "Wykorzystaj skuteczność typu z różnych generacji gier.",
-    "byID": {
-      "gen1": "Generacja 1-sza",
-      "gen2": "Generacja 2-5",
-      "default": "Domyślne (Generacja 6+)"
-    }
   }
 }

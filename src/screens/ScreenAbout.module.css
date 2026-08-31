@@ -5,43 +5,27 @@
   top: 50dvh;
   left: 50dvw;
   translate: -50% -50%;
-  scale: 80%;
-  rotate: x -30deg;
   opacity: 0;
-  padding: 4rem;
-  border-radius: 9999px;
+  width: 80vmin;
+  height: 80vmin;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-pill);
   background: radial-gradient(
     circle at center,
-    rgb(from var(--color-card-bg) r g b / 100%),
-    rgb(from var(--color-card-bg) r g b / 0%)
+    rgb(from var(--color-bg-base) r g b / 100%) 0% 30%,
+    rgb(from var(--color-bg-base) r g b / 0%) 100%
   );
-  backdrop-filter: saturate(150%) blur(16px);
-  box-shadow:
-    inset 0 1px 0 var(--color-card-highlight),
-    inset 0 -1px 0 var(--color-card-highlight),
-    0 16px 32px 0 hsl(var(--hue-blue) 20% 10% / 20%);
 }
 
 .easterEgg[data-animate="true"] {
   animation: 2s easterEgg_animation;
 }
 
-@media (prefers-reduced-motion) {
-  .easterEgg {
-    scale: 100% !important;
-    rotate: 0deg !important;
-  }
-
-  .easterEgg[data-animate="true"] {
-    animation: 4s easterEgg_animation !important;
-  }
-}
-
 @keyframes easterEgg_animation {
   15%,
   90% {
     opacity: 1;
-    rotate: 0deg;
-    scale: 100%;
   }
 }

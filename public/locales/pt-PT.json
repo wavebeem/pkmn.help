@@ -137,7 +137,6 @@
       "tableHeading": "Contagem dos confrontos",
       "heading": "Editar equipa de Pokémons",
       "add": "Adicionar Pokémon",
-      "empty": "Nenhum Pokémon selecionado",
       "displayType": "Formato da tabela",
       "weak": "Fraco",
       "resist": "Resistente",
@@ -336,17 +335,7 @@
     }
   },
   "general": {
-    "loading": "Carregando...",
     "copyLink": "Copiar ligação",
     "clearChoices": "Apagar Escolhas"
-  },
-  "games": {
-    "label": "Geração do jogo",
-    "help": "Utilizar a eficácia de tipos de diferentes gerações dos jogos.",
-    "byID": {
-      "gen1": "Geração 1",
-      "gen2": "Geração 2-5",
-      "default": "Predefinição (geração 6+)"
-    }
   }
 }

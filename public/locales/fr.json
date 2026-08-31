@@ -137,7 +137,6 @@
       "tableHeading": "Nombre de match-ups",
       "heading": "Modifier l'équipe Pokémon",
       "add": "Ajouter un Pokémon",
-      "empty": "Aucun Pokémon sélectionné",
       "displayType": "Format du tableau",
       "weak": "Faible",
       "resist": "Résistant",
@@ -336,17 +335,7 @@
     }
   },
   "general": {
-    "loading": "Chargement…",
     "copyLink": "Copier le lien",
     "clearChoices": "Réinitialiser"
-  },
-  "games": {
-    "label": "Génération du jeu",
-    "help": "Utiliser les efficacités de types de différentes générations de jeux.",
-    "byID": {
-      "gen1": "Génération 1",
-      "gen2": "Génération 2-5",
-      "default": "Génération 6+"
-    }
   }
 }

@@ -7,9 +7,15 @@ node_modules/
 /favicon-*.png
 /*.csv
 
+/public/licenses/
+/public/changelog/
+/public/credits/
+
 .DS_Store
 
 .env.local
 .env.*.local
 
 *~lock~
+
+WIP.md

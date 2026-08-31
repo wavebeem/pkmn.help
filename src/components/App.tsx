@@ -24,7 +24,6 @@ import { useComputedStyleProperty } from "../hooks/useComputedStyleProperty";
 import { useFetchJSON } from "../hooks/useFetchJSON";
 import { useLanguage } from "../hooks/useLanguage";
 import { useMetaThemeColor } from "../hooks/useMetaThemeColor";
-import { usePageTitle } from "../hooks/usePageTitle";
 import { useRouteChangeFixes } from "../hooks/useRouteChangeFixes";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useTheme } from "../hooks/useTheme";
@@ -190,6 +189,7 @@ export function Layout(): ReactNode {
   if (theme === "auto") {
     dataTheme = isDark ? "dark" : "light";
   }
+
   const headerRef = useRef<HTMLElement>(null);
   // Use the heading's background color as the HTML `theme-color` meta property,
   // so that browsers like mobile Safari make the surrounding UI match the
@@ -313,7 +313,6 @@ export function Layout(): ReactNode {
     ],
   );
 
-  usePageTitle(`PKMN.help \u2013 ${t("title")}`);
   useMetaThemeColor({ dataTheme, themeColor });
   useScrollToFragment();
   useRouteChangeFixes();
@@ -325,7 +324,12 @@ export function Layout(): ReactNode {
           <div className={clsx(styles.headerContent, "content-wide center")}>
             <div className={styles.heading}>
               <hgroup className={styles.titleStack}>
-                <h1 className={styles.title}>
+                <div className={styles.title}>
+                  <span>
+                    <span className={styles.pkmn}>pkmn</span>
+                    <span className={styles.dot}>.</span>
+                    <span className={styles.help}>help</span>
+                  </span>
                   <img
                     className={styles.justLogo}
                     src={new URL("/app-logo.svg", publicPath).href}
@@ -333,24 +337,7 @@ export function Layout(): ReactNode {
                     width={24}
                     height={24}
                   />
-                  <span className={styles.pkmn}>pkmn</span>
-                  <span className={styles.dot}>.</span>
-                  <span className={styles.help}>help</span>
-                  {/* <img
-                    className={styles.logo}
-                    src={new URL("/logo-simple.svg", publicPath).href}
-                    alt="PKMN.help"
-                    width={300}
-                    height={40}
-                  /> */}
-                  {/* <img
-                    className={styles.logo}
-                    src={new URL("/text-logo.svg", publicPath).href}
-                    alt="PKMN.help"
-                    width={300}
-                    height={76}
-                  /> */}
-                </h1>
+                </div>
                 <p className={styles.subtitle}>{t("title")}</p>
               </hgroup>
             </div>
@@ -371,11 +358,7 @@ export function Layout(): ReactNode {
         </header>
         <div className={styles.mobileTabBar}>
           <NavLink
-            className={clsx(
-              styles.mobileTab,
-              "active-darken-background",
-              "focus-toggle",
-            )}
+            className={clsx(styles.mobileTab, "active-darken-background")}
             end
             to="/offense/single/"
             aria-label={compositeAriaLabel(
@@ -386,11 +369,7 @@ export function Layout(): ReactNode {
             <IconOffenseSingle />
           </NavLink>
           <NavLink
-            className={clsx(
-              styles.mobileTab,
-              "active-darken-background",
-              "focus-toggle",
-            )}
+            className={clsx(styles.mobileTab, "active-darken-background")}
             end
             to="/offense/dual/"
             aria-label={compositeAriaLabel(
@@ -401,11 +380,7 @@ export function Layout(): ReactNode {
             <IconOffenseDual />
           </NavLink>
           <NavLink
-            className={clsx(
-              styles.mobileTab,
-              "active-darken-background",
-              "focus-toggle",
-            )}
+            className={clsx(styles.mobileTab, "active-darken-background")}
             end
             to="/defense/solo/"
             aria-label={compositeAriaLabel(
@@ -416,11 +391,7 @@ export function Layout(): ReactNode {
             <IconDefenseSolo />
           </NavLink>
           <NavLink
-            className={clsx(
-              styles.mobileTab,
-              "active-darken-background",
-              "focus-toggle",
-            )}
+            className={clsx(styles.mobileTab, "active-darken-background")}
             end
             to="/defense/team/"
             aria-label={compositeAriaLabel(
@@ -431,11 +402,7 @@ export function Layout(): ReactNode {
             <IconDefenseTeam />
           </NavLink>
           <NavLink
-            className={clsx(
-              styles.mobileTab,
-              "active-darken-background",
-              "focus-toggle",
-            )}
+            className={clsx(styles.mobileTab, "active-darken-background")}
             end
             to="/pokedex/"
             aria-label={t("navigation.pokedex")}

@@ -1,9 +1,16 @@
-- Remove translation defense.team.saveLong
-- Remove translation defense.team.save
-- Remove translation defense.team.editLong
-- Remove translation games
+- Should this be an Astro site?
 
-- Remove tsx in favor of Node.js native type stripping
-- Switch to pokenode-ts in favor of custom data fetching code
+  - I have almost zero useful HTML (even though yes it's an SPA)
 
-- Experiment with Material 3 design to clean up visuals and reduce red usage
+  - I have a ton of "build time assets" that I managed through increasingly
+    despair-inducing mechanisms
+
+    - Translation CSVs
+
+    - Changelog
+
+    - Licenses
+
+    - Fallback page without scary JS that could crash
+
+  - Probably not, but worth asking...

@@ -137,7 +137,6 @@
       "tableHeading": "Matchups",
       "heading": "Pokémon-Team bearbeiten",
       "add": "Pokémon hinzufügen",
-      "empty": "Keine Pokémon ausgewählt",
       "displayType": "Tabellenformat",
       "weak": "Schwach",
       "resist": "Resistent",
@@ -336,17 +335,7 @@
     }
   },
   "general": {
-    "loading": "Wird geladen…",
     "copyLink": "Link kopieren",
     "clearChoices": "Auswahl zurücksetzen"
-  },
-  "games": {
-    "label": "Spielgeneration",
-    "help": "Nutze Typen-Effektivitäten aus verschiedenen Spielgenerationen.",
-    "byID": {
-      "gen1": "Generation 1",
-      "gen2": "Generation 2–5",
-      "default": "Standard (Generation 6+)"
-    }
   }
 }

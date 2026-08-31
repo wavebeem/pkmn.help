@@ -25,6 +25,7 @@
 
   display: grid;
   grid-template-columns: 7ch 1fr 7ch;
+  align-items: center;
   gap: 4px;
   font-variant-numeric: tabular-nums;
 
@@ -47,7 +48,7 @@
   text-align: right;
   background: var(--color-bg-ghost);
   border-radius: var(--border-radius0);
-  padding: 2px 8px;
+  padding: 0px 8px;
 }
 
 .connector {

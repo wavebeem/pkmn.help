@@ -137,7 +137,6 @@
       "tableHeading": "상성별 팀원 수",
       "heading": "팀 편집",
       "add": "포켓몬 추가",
-      "empty": "선택한 포켓몬 없음",
       "displayType": "표 형식",
       "weak": "약점",
       "resist": "내성",
@@ -336,17 +335,7 @@
     }
   },
   "general": {
-    "loading": "로딩 중...",
     "copyLink": "링크 복사",
     "clearChoices": "선택 초기화"
-  },
-  "games": {
-    "label": "세대",
-    "help": "다른 세대의 상성 사용하기",
-    "byID": {
-      "gen1": "1세대",
-      "gen2": "2~5세대",
-      "default": "기본 (6세대~)"
-    }
   }
 }

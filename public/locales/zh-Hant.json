@@ -137,7 +137,6 @@
       "tableHeading": "相剋次數",
       "heading": "編輯寶可夢隊伍",
       "add": "添加寶可夢",
-      "empty": "未選擇寶可夢",
       "displayType": "表格格式",
       "weak": "弱點",
       "resist": "減傷",
@@ -336,17 +335,7 @@
     }
   },
   "general": {
-    "loading": "載入中…",
     "copyLink": "複製連結",
     "clearChoices": "清除選項"
-  },
-  "games": {
-    "label": "遊戲世代",
-    "help": "使用不同遊戲世代的屬性效果。",
-    "byID": {
-      "gen1": "第一世代",
-      "gen2": "第二到第五世代",
-      "default": "預設（第六世代及以上）"
-    }
   }
 }

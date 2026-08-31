@@ -137,7 +137,6 @@
       "tableHeading": "Contagem de Confrontos",
       "heading": "Editar time Pokémon",
       "add": "Adicionar Pokémon",
-      "empty": "Nenhum Pokémon selecionado",
       "displayType": "Formato da tabela",
       "weak": "Fraqueza",
       "resist": "Resistência",
@@ -329,17 +328,7 @@
     }
   },
   "general": {
-    "loading": "Carregando...",
     "copyLink": "Copiar link",
     "clearChoices": "Refazer escolhas"
-  },
-  "games": {
-    "label": "Geração do jogo",
-    "help": "Usar efetividade de tipos de diferentes gerações",
-    "byID": {
-      "gen1": "1° Geração",
-      "gen2": "2-5° Geração",
-      "default": "Padrão (6° Geração +)"
-    }
   }
 }

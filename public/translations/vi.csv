@@ -1,6 +1,6 @@
 Key,en,vi
 title,Pokémon Type Calculator,Máy Tính Toán Hệ Pokémon
-navigation.offense,Offense,Tấn Công
+navigation.offense,Attack,Tấn Công
 navigation.defense,Defense,Phòng Thủ
 navigation.pokedex,Pokédex,Pokédex
 navigation.other,Other,Khác
@@ -8,10 +8,10 @@ navigation.settings,Settings,Cài Đặt
 navigation.about,About,Thông Tin
 navigation.menu,Menu,Menu
 navigation.close,Close,Đóng
-offense.chooseTypes,Choose attack move types,Chọn hệ tấn công
-offense.dealsXTo,Deals {{ x }} damage to,Gây {{ x }} sát thương đến
-offense.mode.combination,Dual,Song hệ
-offense.mode.single,Single,Đơn hệ
+offense.chooseTypes,Choose the type for each attack move,Chọn hệ tấn công
+offense.dealsXTo,Deals up to {{ x }} damage to,Gây {{ x }} sát thương đến
+offense.mode.combination,Dual-type attack,Song hệ
+offense.mode.single,Single-type attack,Đơn hệ
 offense.matchups.summary.heading,Matchup summary,Tóm tắt số liệu sát thương
 offense.matchups.summary.damage,Damage,Sát thương
 offense.matchups.summary.combinations.heading,Combinations,Tổ hợp đơn/song hệ
@@ -84,12 +84,11 @@ defense.abilityNames.primordial_sea,Primordial Sea,Biển Ban Sơ (Primordial Se
 defense.abilityNames.desolate_land,Desolate Land,Đất Tận Cùng (Desolate Land)
 defense.abilityNames.solid_rock,Solid Rock,Đá Cứng (Solid Rock)
 defense.abilityNames.prism_armor,Prism Armor,Giáp Lăng Kính (Prism Armor)
-defense.mode.solo,Solo,1 Pokémon (Solo)
-defense.mode.team,Team,Nhiều Pokémon (Đội/Team)
+defense.mode.solo,Solo defense,1 Pokémon (Solo)
+defense.mode.team,Team defense,Nhiều Pokémon (Đội/Team)
 defense.team.tableHeading,Matchup counts,Danh sách các matchup
 defense.team.heading,Edit Pokémon team,Chỉnh sửa đội Pokémon
 defense.team.add,Add Pokémon,Thêm Pokémon
-defense.team.empty,No Pokémon selected,Không có Pokémon nào được chọn
 defense.team.displayType,Table format,Chọn bảng định dạng
 defense.team.weak,Weak,Yếu thế
 defense.team.resist,Resist,Kháng cự
@@ -127,6 +126,7 @@ pokedex.stats.speed,Speed,Tốc Độ
 pokedex.stats.speedLong,Speed,Tốc Độ
 pokedex.stats.total,Total,Tổng Chỉ Số Năng Lực
 pokedex.stats.totalLong,Total,Tổng Chỉ Số Năng Lực (Base Stat Total)
+pokedexHelp.title,Pokédex help,
 pokedexHelp.searchByName.heading,Search by name,Tìm kiếm bằng tên
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Bạn có thể tìm kiếm một Pokémon bằng tên. Nếu bạn chỉ có thể nhớ mang máng tên, hệ thống tìm kiếm có thể vẫn sẽ giúp bạn tìm được Pokemon bạn muốn, trừ khi bạn đánh sai tên."
 pokedexHelp.searchByNumber.heading,Search by number,Tìm kiếm bằng số Pokédex
@@ -159,7 +159,7 @@ more.settings.versionGroup.label,Pokédex,
 more.settings.versionGroup.help,Controls available Pokémon and types.,
 more.settings.versionGroup.values.all,National Pokédex,
 more.settings.typeCount.label,Number of types,Số lượng hệ
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra.
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra.
 more.settings.typeCount.values.2,Two types (2),Hai hệ (2)
 more.settings.typeCount.values.3,Three types (3),Ba hệ (3)
 more.settings.battleVariant.label,Battle variant,Biến Thể Trận Đấu
@@ -203,11 +203,5 @@ types.none,None,Trống
 banners.updateReady.description,An update is available,Có update mới!
 banners.updateReady.whatsNew,What’s new,Tin tức mới
 banners.updateReady.update,Update,Cập nhật
-general.loading,Loading…,Đang load...
 general.copyLink,Copy link,Sao chép link
 general.clearChoices,Clear choices,Xóa
-games.label,Game generation,Thế hệ (Generation)
-games.help,Use type effectiveness from different game generations.,Xác định cơ chế điểm mạnh và yếu của các hệ từ các thế hệ khác nhau.
-games.byID.gen1,Generation 1,Thế hệ 1
-games.byID.gen2,Generation 2–5,Thế hệ 2–5
-games.byID.default,Generation 6+,Thế hệ 6 trở đi (mặc định)

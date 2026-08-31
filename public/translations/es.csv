@@ -1,6 +1,6 @@
 Key,en,es
 title,Pokémon Type Calculator,Calculadora de tipos de Pokémon
-navigation.offense,Offense,Ataque
+navigation.offense,Attack,Ataque
 navigation.defense,Defense,Defensa
 navigation.pokedex,Pokédex,Pokédex
 navigation.other,Other,Otros
@@ -8,10 +8,10 @@ navigation.settings,Settings,Ajustes
 navigation.about,About,Acerca de
 navigation.menu,Menu,Menú
 navigation.close,Close,Cerrar
-offense.chooseTypes,Choose attack move types,Elige los tipos
-offense.dealsXTo,Deals {{ x }} damage to,Inflige {{ x }} a
-offense.mode.combination,Dual,Doble
-offense.mode.single,Single,Individual
+offense.chooseTypes,Choose the type for each attack move,Elige los tipos
+offense.dealsXTo,Deals up to {{ x }} damage to,Inflige {{ x }} a
+offense.mode.combination,Dual-type attack,Doble
+offense.mode.single,Single-type attack,Individual
 offense.matchups.summary.heading,Matchup summary,Resumen de enfrentamientos
 offense.matchups.summary.damage,Damage,Daño
 offense.matchups.summary.combinations.heading,Combinations,Combinaciones
@@ -84,12 +84,11 @@ defense.abilityNames.primordial_sea,Primordial Sea,Mar del Albor
 defense.abilityNames.desolate_land,Desolate Land,Tierra del Ocaso
 defense.abilityNames.solid_rock,Solid Rock,Roca Sólida
 defense.abilityNames.prism_armor,Prism Armor,Armadura Prisma
-defense.mode.solo,Solo,Solo
-defense.mode.team,Team,Equipo
+defense.mode.solo,Solo defense,Solo
+defense.mode.team,Team defense,Equipo
 defense.team.tableHeading,Matchup counts,Recuento de enfrentamientos
 defense.team.heading,Edit Pokémon team,Modifica el equipo Pokémon
 defense.team.add,Add Pokémon,Añadir Pokémon
-defense.team.empty,No Pokémon selected,Ningún Pokémon seleccionado
 defense.team.displayType,Table format,Formato de la tabla
 defense.team.weak,Weak,Debilidad
 defense.team.resist,Resist,Resistencia
@@ -127,6 +126,7 @@ pokedex.stats.speed,Speed,Velocidad
 pokedex.stats.speedLong,Speed,Velocidad
 pokedex.stats.total,Total,Total
 pokedex.stats.totalLong,Total,Total
+pokedexHelp.title,Pokédex help,
 pokedexHelp.searchByName.heading,Search by name,Busca por nombre
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puede buscar un Pokémon por nombre. Si solo recuerdas parte del nombre del Pokémon, probablemente aún pueda encontrarlo. Sin embargo, aún no puede lidiar con errores tipográficos."
 pokedexHelp.searchByNumber.heading,Search by number,Busca por número
@@ -159,7 +159,7 @@ more.settings.versionGroup.label,Pokédex,Pokédex
 more.settings.versionGroup.help,Controls available Pokémon and types.,Controla qué Pokémon y tipos están disponibles.
 more.settings.versionGroup.values.all,National Pokédex,Pokédex Nacional
 more.settings.typeCount.label,Number of types,Número de tipos
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Los Pokémon pueden tener brevemente tres tipos a la vez si son golpeados con “Condena silvana” o “Halloween”. El campo del tipo terciario está oculto de manera predeterminada, ya que raramente se usa."
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Los Pokémon pueden tener brevemente tres tipos a la vez si son golpeados con “Condena silvana” o “Halloween”. El campo del tipo terciario está oculto de manera predeterminada, ya que raramente se usa."
 more.settings.typeCount.values.2,Two types (2),Dos tipos (2)
 more.settings.typeCount.values.3,Three types (3),Tres tipos (3)
 more.settings.battleVariant.label,Battle variant,Variante de batalla
@@ -203,11 +203,5 @@ types.none,None,Ninguno
 banners.updateReady.description,An update is available,Hay una actualización disponible
 banners.updateReady.whatsNew,What’s new,Novedades
 banners.updateReady.update,Update,Actualizar
-general.loading,Loading…,Cargando...
 general.copyLink,Copy link,Copiar link
 general.clearChoices,Clear choices,Limpiar selección
-games.label,Game generation,Generación del juego
-games.help,Use type effectiveness from different game generations.,Usar la efectividad de tipo de diferentes generaciones.
-games.byID.gen1,Generation 1,Generación 1
-games.byID.gen2,Generation 2–5,Generación 2-5
-games.byID.default,Generation 6+,Predeterminada (generación 6+)

@@ -8,12 +8,11 @@ import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import { ClearChoices } from "../components/ClearChoices";
 import { CopyButton } from "../components/CopyButton";
-import { Divider } from "../components/Divider";
-import { EmptyState } from "../components/EmptyState";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { MatchupsTeam, MatchupsTeamProps } from "../components/MatchupsTeam";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
+import { PageTitle } from "../components/PageTitle";
 import { Select } from "../components/Select";
 import { SelectDivider } from "../components/SelectDivider";
 import { useGeneration } from "../hooks/useGeneration";
@@ -213,6 +212,8 @@ export function ScreenDefenseTeam(): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
+      <PageTitle title={t("defense.mode.team")} />
+
       <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="large">
           <Flex direction="column" gap="medium">
@@ -220,24 +221,27 @@ export function ScreenDefenseTeam(): ReactNode {
               {t("defense.team.heading")}
             </FancyText>
             <Flex direction="column" gap="medium">
-              {teamTypes.length === 0 && (
-                <EmptyState>{t("defense.team.empty")}</EmptyState>
-              )}
               {teamTypes.map((types, typeIndex) => {
                 const name = String(typeIndex + 1);
                 return (
                   <Card key={typeIndex} size="small">
-                    <Flex wrap gap="medium" align="center" justify="flex-end">
-                      <FancyText tag="div" fontWeight="medium" tabularNums>
+                    <div className={styles.teamRow}>
+                      <FancyText
+                        tag="div"
+                        fontWeight="medium"
+                        tabularNums
+                        className={styles.teamRowNumber}
+                      >
                         #{name}
                       </FancyText>
-                      <Flex direction="row" wrap justify="center" gap="small">
-                        {types.map((t) => (
-                          <Badge key={t} type={t} size="small" />
-                        ))}
+                      <Flex wrap gap="small" className={styles.teamRowBadges}>
+                        {types.length === 0 ? (
+                          <PlainBadge>{t("types.none")}</PlainBadge>
+                        ) : (
+                          types.map((t) => <Badge key={t} type={t} />)
+                        )}
                       </Flex>
-                      <Flex flex="auto" />
-                      <Flex direction="row" wrap justify="flex-end" gap="small">
+                      <Flex gap="small" className={styles.teamRowIcons}>
                         <IconButton
                           title={t("defense.team.edit")}
                           aria-label={t("defense.team.edit")}
@@ -250,7 +254,7 @@ export function ScreenDefenseTeam(): ReactNode {
                             }
                           }}
                         >
-                          <IconEdit size={16} />
+                          <IconEdit size={24} />
                         </IconButton>
                         <IconButton
                           title={t("defense.team.remove")}
@@ -265,17 +269,15 @@ export function ScreenDefenseTeam(): ReactNode {
                             setTeamAbilities(teamAbilityList);
                           }}
                         >
-                          <IconRemove size={16} />
+                          <IconRemove size={24} />
                         </IconButton>
                       </Flex>
-                    </Flex>
+                    </div>
                     <Flex
                       hidden={typeIndex !== teamIndex}
                       direction="column"
                       gap="large"
                     >
-                      <div />
-                      <Divider />
                       <Flex direction="column" gap="medium">
                         <FancyText
                           tag="h3"
@@ -365,13 +367,14 @@ export function ScreenDefenseTeam(): ReactNode {
           </Flex>
           <Flex>
             <Button
+              variant="filled"
               onClick={() => {
                 const newTypes = [...teamTypes, []];
                 setTeamTypes(newTypes);
                 setTeamIndex(newTypes.length - 1);
               }}
             >
-              <IconAdd size={16} />
+              <IconAdd size={24} />
               {t("defense.team.add")}
             </Button>
           </Flex>

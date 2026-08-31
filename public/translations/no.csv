@@ -1,6 +1,6 @@
 Key,en,no
 title,Pokémon Type Calculator,Pokémon Type Kalkulator
-navigation.offense,Offense,Angrep
+navigation.offense,Attack,Angrep
 navigation.defense,Defense,Forsvar
 navigation.pokedex,Pokédex,Pokédexen
 navigation.other,Other,
@@ -8,10 +8,10 @@ navigation.settings,Settings,
 navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
-offense.chooseTypes,Choose attack move types,Velg typer
-offense.dealsXTo,Deals {{ x }} damage to,Gjør {{ x }} til
-offense.mode.combination,Dual,
-offense.mode.single,Single,
+offense.chooseTypes,Choose the type for each attack move,Velg typer
+offense.dealsXTo,Deals up to {{ x }} damage to,Gjør {{ x }} til
+offense.mode.combination,Dual-type attack,
+offense.mode.single,Single-type attack,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -84,12 +84,11 @@ defense.abilityNames.primordial_sea,Primordial Sea,Primordial Sea
 defense.abilityNames.desolate_land,Desolate Land,Desolate Land
 defense.abilityNames.solid_rock,Solid Rock,
 defense.abilityNames.prism_armor,Prism Armor,
-defense.mode.solo,Solo,Solo
-defense.mode.team,Team,Lag
+defense.mode.solo,Solo defense,Solo
+defense.mode.team,Team defense,Lag
 defense.team.tableHeading,Matchup counts,Matchup teller
 defense.team.heading,Edit Pokémon team,Rediger Pokémon lag
 defense.team.add,Add Pokémon,Legg til Pokémon
-defense.team.empty,No Pokémon selected,Ingen Pokémon valgt
 defense.team.displayType,Table format,Tabellformat
 defense.team.weak,Weak,Svak
 defense.team.resist,Resist,Motstå
@@ -127,6 +126,7 @@ pokedex.stats.speed,Speed,Hastighet
 pokedex.stats.speedLong,Speed,Hastighet
 pokedex.stats.total,Total,Totalt
 pokedex.stats.totalLong,Total,Totalt
+pokedexHelp.title,Pokédex help,
 pokedexHelp.searchByName.heading,Search by name,Søk etter navn
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Du kan søke etter en Pokémon etter navn. Hvis du bare husker litt av Pokémonens navn, kan den fortsatt sannsynligvis finne den for deg. Den kan foreløpig ikke takle skrivefeil enda."
 pokedexHelp.searchByNumber.heading,Search by number,Søk etter nummer
@@ -159,7 +159,7 @@ more.settings.versionGroup.label,Pokédex,
 more.settings.versionGroup.help,Controls available Pokémon and types.,
 more.settings.versionGroup.values.all,National Pokédex,
 more.settings.typeCount.label,Number of types,Mengde typer
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon kan kort ha tre typer samtidig hvis de treffes med Skogens Forbannelse eller Knask-eller-Knep. Det tredje typefeltet er skjult som standard siden den sjelden brukes.
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon kan kort ha tre typer samtidig hvis de treffes med Skogens Forbannelse eller Knask-eller-Knep. Det tredje typefeltet er skjult som standard siden den sjelden brukes.
 more.settings.typeCount.values.2,Two types (2),To typer (2)
 more.settings.typeCount.values.3,Three types (3),Tre typer (2)
 more.settings.battleVariant.label,Battle variant,
@@ -203,11 +203,5 @@ types.none,None,Ingen
 banners.updateReady.description,An update is available,En oppdatering er tilgjengelig
 banners.updateReady.whatsNew,What’s new,Hva er nytt
 banners.updateReady.update,Update,Oppdatering
-general.loading,Loading…,Laster inn...
 general.copyLink,Copy link,Kopier lenke
 general.clearChoices,Clear choices,
-games.label,Game generation,Spillgenerasjon
-games.help,Use type effectiveness from different game generations.,Bruk type effektivitet fra forskjellige spillgenerasjoner.
-games.byID.gen1,Generation 1,Generasjon 1
-games.byID.gen2,Generation 2–5,Generasjon 2-5
-games.byID.default,Generation 6+,Standard (generasjon 6+)

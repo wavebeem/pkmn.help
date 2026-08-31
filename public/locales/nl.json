@@ -100,7 +100,6 @@
       "tableHeading": "Wedstrijdtelling",
       "heading": "Bewerk Pokémon team",
       "add": "Voeg Pokémon toe",
-      "empty": "Geen Pokémon geselecteerd",
       "displayType": "Tabelformaat",
       "weak": "Zwak",
       "resist": "Weerstand",
@@ -271,16 +270,6 @@
     }
   },
   "general": {
-    "loading": "Laden...",
     "copyLink": "Kopieer link"
-  },
-  "games": {
-    "label": "Game generatie",
-    "help": "Gebruik type effecitiviteit van verschillende game generaties.",
-    "byID": {
-      "gen1": "Generatie 1",
-      "gen2": "Generatie 2-5",
-      "default": "Standaard (generatie 6+)"
-    }
   }
 }

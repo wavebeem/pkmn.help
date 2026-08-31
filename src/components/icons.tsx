@@ -12,7 +12,7 @@ export {
   // Monster
   Users as IconDefenseTeam,
   Sparkles as IconShiny,
-  Music as IconCry,
+  AudioLines as IconCry,
   // Header
   Menu as IconMenu,
   // Menu
@@ -24,17 +24,16 @@ export {
   ChevronsRight as IconLast,
   // Select
   ChevronDown as IconSelectCaret,
+  // Collapsible section
+  ChevronDown as IconCaret,
   // Add
   Plus as IconAdd,
-  // Open/close OR plus for pairs
-  Plus as IconPlus,
-  Minus as IconMinus,
   // Back button
   ArrowLeft as IconBack,
   // Search
   Search as IconSearch,
   // Clear text input
-  XCircle as IconClear,
+  X as IconClear,
   // Copy
   Copy as IconCopy,
   // Reset
@@ -49,6 +48,6 @@ export {
   Trash2 as IconRemove,
   // Checkboxes
   Check as IconCheck,
-  // Tada
-  PartyPopper as IconTada,
+  // Who's that Pokémon?
+  Dices as IconRandom,
 } from "lucide-react";

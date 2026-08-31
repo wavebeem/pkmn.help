@@ -1,6 +1,6 @@
 Key,en,ko
 title,Pokémon Type Calculator,포켓몬 타입 계산기
-navigation.offense,Offense,공격
+navigation.offense,Attack,공격
 navigation.defense,Defense,방어
 navigation.pokedex,Pokédex,포켓몬 도감
 navigation.other,Other,기타
@@ -8,10 +8,10 @@ navigation.settings,Settings,설정
 navigation.about,About,정보
 navigation.menu,Menu,메뉴
 navigation.close,Close,닫기
-offense.chooseTypes,Choose attack move types,타입 선택
-offense.dealsXTo,Deals {{ x }} damage to,{{x}} 데미지
-offense.mode.combination,Dual,이중
-offense.mode.single,Single,단일
+offense.chooseTypes,Choose the type for each attack move,타입 선택
+offense.dealsXTo,Deals up to {{ x }} damage to,{{x}} 데미지
+offense.mode.combination,Dual-type attack,이중
+offense.mode.single,Single-type attack,단일
 offense.matchups.summary.heading,Matchup summary,상성 개요
 offense.matchups.summary.damage,Damage,데미지
 offense.matchups.summary.combinations.heading,Combinations,조합 수
@@ -84,12 +84,11 @@ defense.abilityNames.primordial_sea,Primordial Sea,시작의바다
 defense.abilityNames.desolate_land,Desolate Land,끝의대지
 defense.abilityNames.solid_rock,Solid Rock,하드록
 defense.abilityNames.prism_armor,Prism Armor,프리즘아머
-defense.mode.solo,Solo,단독
-defense.mode.team,Team,팀
+defense.mode.solo,Solo defense,단독
+defense.mode.team,Team defense,팀
 defense.team.tableHeading,Matchup counts,상성별 팀원 수
 defense.team.heading,Edit Pokémon team,팀 편집
 defense.team.add,Add Pokémon,포켓몬 추가
-defense.team.empty,No Pokémon selected,선택한 포켓몬 없음
 defense.team.displayType,Table format,표 형식
 defense.team.weak,Weak,약점
 defense.team.resist,Resist,내성
@@ -127,6 +126,7 @@ pokedex.stats.speed,Speed,스피드
 pokedex.stats.speedLong,Speed,스피드
 pokedex.stats.total,Total,총합
 pokedex.stats.totalLong,Total,총합
+pokedexHelp.title,Pokédex help,
 pokedexHelp.searchByName.heading,Search by name,이름으로 검색
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",이름으로 포켓몬을 검색할 수 있습니다. 포켓몬 이름의 일부만 입력해도 찾을 수 있습니다. 다만 아직은 오타가 나면 찾기 어렵습니다.
 pokedexHelp.searchByNumber.heading,Search by number,번호로 검색
@@ -159,7 +159,7 @@ more.settings.versionGroup.label,Pokédex,포켓몬 도감
 more.settings.versionGroup.help,Controls available Pokémon and types.,사용되는 포켓몬과 타입들을 결정합니다.
 more.settings.versionGroup.values.all,National Pokédex,전국도감
 more.settings.typeCount.label,Number of types,타입 수
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,포켓몬이 '숲의저주'나 '핼러윈'에 맞으면 잠시 동안 한 번에 세 개의 타입을 가질 수 있습니다. 세 번째 타입란은 거의 사용되지 않기 때문에 기본적으로 숨겨져 있습니다.
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,포켓몬이 '숲의저주'나 '핼러윈'에 맞으면 잠시 동안 한 번에 세 개의 타입을 가질 수 있습니다. 세 번째 타입란은 거의 사용되지 않기 때문에 기본적으로 숨겨져 있습니다.
 more.settings.typeCount.values.2,Two types (2),두 타입 (2)
 more.settings.typeCount.values.3,Three types (3),세 타입 (3)
 more.settings.battleVariant.label,Battle variant,배틀 방식
@@ -203,11 +203,5 @@ types.none,None,없음
 banners.updateReady.description,An update is available,새 버전이 있습니다!
 banners.updateReady.whatsNew,What’s new,새로운 기능
 banners.updateReady.update,Update,업데이트
-general.loading,Loading…,로딩 중...
 general.copyLink,Copy link,링크 복사
 general.clearChoices,Clear choices,선택 초기화
-games.label,Game generation,세대
-games.help,Use type effectiveness from different game generations.,다른 세대의 상성 사용하기
-games.byID.gen1,Generation 1,1세대
-games.byID.gen2,Generation 2–5,2~5세대
-games.byID.default,Generation 6+,기본 (6세대~)

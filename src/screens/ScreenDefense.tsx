@@ -9,6 +9,7 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
+import { PageTitle } from "../components/PageTitle";
 import { Select } from "../components/Select";
 import { SelectDivider } from "../components/SelectDivider";
 import { useSearch } from "../hooks/useSearch";
@@ -117,6 +118,8 @@ export function ScreenDefense(): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
+      <PageTitle title={t("defense.mode.solo")} />
+
       <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="medium">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">

@@ -1,47 +1,53 @@
 [data-theme="dark"] {
   --hue-ui: var(--hue-blue);
-  --background-button-position: top;
 
-  --color-bg-input: hsl(var(--hue-ui) 5% 22%);
-  --color-bg-base: hsl(var(--hue-ui) 5% 14%);
-  --color-bg-ghost: hsl(var(--hue-ui) 5% 20%);
+  --color-bg-input: var(--md-surface-container-highest);
+  --color-bg-input-lowest: var(--md-surface-container-lowest);
+  --color-bg-base: var(--md-background);
+  --color-bg-ghost: var(--md-surface-container-lowest);
 
-  --color-card-bg: hsl(var(--hue-ui) 5% 18%);
-  --color-card-highlight: hsl(var(--hue-ui) 5% 26%);
-  --color-card-shadow: hsl(var(--hue-ui) 5% 12%);
+  --color-card-bg: var(--md-surface-container);
+  --color-card-highlight: var(--md-surface-container-high);
 
-  --color-primary: hsl(var(--hue-ui) 5% 92%);
-  --color-secondary: hsl(var(--hue-ui) 5% 72%);
-  --color-disabled: hsl(var(--hue-ui) 5% 62%);
+  --color-primary: var(--md-on-surface);
+  --color-secondary: var(--md-on-surface-variant);
+  --color-disabled: var(--md-outline);
 
-  --color-accent-bg: hsl(var(--hue-ui) 5% 80%);
-  --color-accent-fg: hsl(var(--hue-ui) 5% 14%);
+  --color-link: var(--md-secondary);
+  --color-accent-bg: var(--md-primary);
+  --color-accent-fg: var(--md-on-primary);
 
-  --color-header-base: hsl(var(--hue-red) 60% 35%);
-  --color-header-highlight: hsl(0 0% 100% / 20%);
-  --color-header-border: hsl(0 0% 100% / 20%);
-  --color-header-text: #fff;
+  --color-header-bg: var(--md-primary-container);
+  --color-header-fg: var(--md-on-primary-container);
 
-  --color-tabs-base: hsl(var(--hue-ui) 5% 22%);
-  --color-tabs-highlight: hsl(var(--hue-ui) 5% 30%);
-  --color-tabs-border: hsl(var(--hue-ui) 5% 30%);
-  --color-tabs-text: hsl(var(--hue-ui) 50% 92%);
+  --color-tabs-base: var(--md-surface-container);
+  --color-tabs-highlight: var(--md-surface-container-high);
+  --color-tabs-text: var(--md-on-surface);
 
-  --color-sidebar-base: hsl(var(--hue-ui) 5% 10%);
-  --color-sidebar-highlight: hsl(var(--hue-ui) 5% 20%);
-  --color-sidebar-border: hsl(var(--hue-ui) 5% 20%);
-  --color-sidebar-text: hsl(var(--hue-ui) 50% 92%);
+  --color-sidebar-base: var(--md-surface-container);
+  --color-sidebar-highlight: var(--md-surface-container-highest);
+  --color-sidebar-text: var(--md-on-surface);
 
-  --color-button-top: hsl(var(--hue-ui) 5% 28%);
-  --color-button-bottom: hsl(var(--hue-ui) 5% 22%);
-  --color-link: hsl(var(--hue-teal) 90% 55%);
+  --color-nav-selected-bg: var(--md-secondary);
+  --color-nav-selected-fg: var(--md-on-secondary);
 
-  --color-border-primary: hsl(var(--hue-ui) 5% 48%);
-  --color-border-secondary: hsl(var(--hue-ui) 5% 30%);
-  --color-border-disabled: hsl(var(--hue-ui) 5% 24%);
+  --color-secondary-container-bg: var(--md-secondary-container);
+  --color-secondary-container-fg: var(--md-on-secondary-container);
+
+  --color-selected-container-bg: var(--md-primary-container);
+  --color-selected-container-fg: var(--md-on-primary-container);
+
+  --color-tertiary: var(--md-tertiary);
+  --color-tertiary-fg: var(--md-on-tertiary);
+  --color-tertiary-container-bg: var(--md-tertiary-container);
+  --color-tertiary-container-fg: var(--md-on-tertiary-container);
+
+  --color-border-primary: var(--md-outline);
+  --color-border-secondary: var(--md-outline-variant);
+  --color-border-disabled: var(--md-outline-variant);
   --color-border-subtle: hsl(0 0% 100% / 20%);
 
-  --color-scroll: hsl(var(--hue-ui) 25% 82%);
+  --color-scroll: var(--md-outline);
 
   color: var(--color-primary);
   background-color: var(--color-bg-base);

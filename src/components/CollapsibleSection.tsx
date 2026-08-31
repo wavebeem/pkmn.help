@@ -1,7 +1,7 @@
 import { clsx } from "clsx";
 import { ReactNode } from "react";
 import styles from "./CollapsibleSection.module.css";
-import { IconMinus, IconPlus } from "./icons";
+import { IconCaret } from "./icons";
 
 interface CollapsibleSectionProps {
   initiallyOpen?: boolean;
@@ -26,10 +26,9 @@ export function CollapsibleSection({
         )}
       >
         {heading}
-        <IconPlus className={styles.icon} data-icon-name="plus" />
-        <IconMinus className={styles.icon} data-icon-name="minus" />
+        <IconCaret className={styles.icon} />
       </summary>
-      {children}
+      <div className={styles.body}>{children}</div>
     </details>
   );
 }

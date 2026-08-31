@@ -34,7 +34,7 @@ export function Search({
           autoCorrect="off"
           inputMode="search"
           autoCapitalize="none"
-          className={clsx(styles.input, "focus-simple")}
+          className={styles.input}
           value={value}
           onChange={(event) => {
             onChange(event.target.value);

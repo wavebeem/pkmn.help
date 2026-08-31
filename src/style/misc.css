@@ -93,12 +93,20 @@ input {
   user-select: none;
 }
 
-.active-darken:active {
-  filter: var(--filter-darken);
+.active-darken:active,
+.active-darken-background:active {
+  background-image: radial-gradient(var(--state-press));
 }
 
-.active-darken-background:active {
-  background-image: linear-gradient(
-    hsl(from var(--color-primary) h s l / 5%) 0 100%
-  );
+.active-darken:is(:hover, :focus-visible):not(
+    :active,
+    :disabled,
+    [aria-disabled="true"]
+  ),
+.active-darken-background:is(:hover, :focus-visible, :has(:focus-visible)):not(
+    :active,
+    :disabled,
+    [aria-disabled="true"]
+  ) {
+  background-image: radial-gradient(var(--state-hover));
 }

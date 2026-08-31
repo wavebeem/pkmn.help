@@ -12,15 +12,15 @@ import { AbilityName, SpecialMove, Type } from "../misc/data-types";
 import { Badge } from "./Badge";
 import { Card } from "./Card";
 import { CollapsibleSection } from "./CollapsibleSection";
-import { Divider } from "./Divider";
+import { CollapsibleSectionContainer } from "./CollapsibleSectionContainer";
 import { EmptyState } from "./EmptyState";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
-import { IconPlus } from "./icons";
+import { IconAdd } from "./icons";
 import styles from "./Matchups.module.css";
 import { Meter } from "./Meter";
 import { PlainBadge } from "./PlainBadge";
-import { useMediaQuery } from "../hooks/useMediaQuery";
+import { useMediaQuery } from "usehooks-ts";
 import { VersionGroup } from "../misc/data-version-groups";
 
 interface MatchupsProps {
@@ -136,7 +136,7 @@ export function Matchups({
             <FancyText tag="h2" fontWeight="medium" fontSize="large">
               {t("offense.matchups.types.heading")}
             </FancyText>
-            <Card size="small">
+            <CollapsibleSectionContainer>
               {effs.map((eff, i) => {
                 const list = matchups.matchups.filter(
                   (m) => m.effectiveness === eff,
@@ -146,71 +146,64 @@ export function Matchups({
                   i18n.languages,
                 );
                 return (
-                  <Flex direction="column" gap="none" key={i}>
-                    {i > 0 ? <Divider /> : null}
-                    <CollapsibleSection
-                      size="small"
-                      // Ensure the open/closed state doesn't bleed over from
-                      // different groups
-                      key={`${eff}-${i}`}
-                      heading={
-                        <FancyText
-                          tag="h3"
-                          fontWeight="normal"
-                          fontSize="medium"
-                        >
-                          <Flex>
-                            <div>
-                              {t("offense.dealsXTo", {
-                                x: effectivenessDisplay,
-                              })}
-                            </div>
-                            <div>&nbsp;&nbsp;</div>
-                            <Flex flex="auto" />
-                            <div>{matchups.typesFor(eff).length}</div>
-                            <div>&nbsp;&nbsp;</div>
-                          </Flex>
-                        </FancyText>
-                      }
-                    >
-                      {list.length === 0 && (
-                        <EmptyState borderless>
-                          {t("offense.matchups.summary.combinations.empty")}
-                        </EmptyState>
-                      )}
-                      <div className={clsx(styles.grid)} data-kind={kind}>
-                        {list.map((x) => {
-                          if (x.formName === "stellar") {
-                            return (
-                              <>
-                                <PlainBadge key="form-tera" size="regular">
-                                  {t("offense.teraPokemon")}
-                                </PlainBadge>
-                                <div />
-                                <div />
-                              </>
-                            );
-                          }
-                          return x.types.map((t, i) => {
-                            return (
-                              <Fragment key={i}>
-                                {i > 0 ? <IconPlus size={16} /> : null}
-                                <Badge
-                                  size="small"
-                                  key={`type-${t}`}
-                                  type={t}
-                                  variant="ghost"
-                                />
-                              </Fragment>
-                            );
-                          });
-                        })}
-                      </div>
-                    </CollapsibleSection>
-                  </Flex>
+                  <CollapsibleSection
+                    size="small"
+                    // Ensure the open/closed state doesn't bleed over from
+                    // different groups
+                    key={`${eff}-${i}`}
+                    heading={
+                      <FancyText tag="h3" fontWeight="normal" fontSize="medium">
+                        <Flex>
+                          <div>
+                            {t("offense.dealsXTo", {
+                              x: effectivenessDisplay,
+                            })}
+                          </div>
+                          <div>&nbsp;&nbsp;</div>
+                          <Flex flex="auto" />
+                          <div>{matchups.typesFor(eff).length}</div>
+                          <div>&nbsp;&nbsp;</div>
+                        </Flex>
+                      </FancyText>
+                    }
+                  >
+                    {list.length === 0 && (
+                      <EmptyState>
+                        {t("offense.matchups.summary.combinations.empty")}
+                      </EmptyState>
+                    )}
+                    <div className={clsx(styles.grid)} data-kind={kind}>
+                      {list.map((x) => {
+                        if (x.formName === "stellar") {
+                          return (
+                            <>
+                              <PlainBadge key="form-tera" width="regular">
+                                {t("offense.teraPokemon")}
+                              </PlainBadge>
+                              <div />
+                              <div />
+                            </>
+                          );
+                        }
+                        return x.types.map((t, i) => {
+                          return (
+                            <Fragment key={i}>
+                              {i > 0 ? <IconAdd size={16} /> : null}
+                              <Badge
+                                size="small"
+                                key={`type-${t}`}
+                                type={t}
+                                variant="ghost"
+                              />
+                            </Fragment>
+                          );
+                        });
+                      })}
+                    </div>
+                  </CollapsibleSection>
                 );
               })}
-            </Card>
+            </CollapsibleSectionContainer>
           </Flex>
         </Flex>
       </div>
@@ -241,7 +234,7 @@ export function Matchups({
                 {list.map((x) => {
                   if (x.formName === "stellar") {
                     return (
-                      <PlainBadge key="form-tera" size="full-width">
+                      <PlainBadge key="form-tera" width="full">
                         {t("offense.teraPokemon")}
                       </PlainBadge>
                     );
