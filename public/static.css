@@ -85,6 +85,7 @@ li {
 
 li > ul,
 li > ol {
-  padding-left: 2rem;
+  padding-left: 3rem;
+  margin-left: -1rem;
   border-left: 2px solid color-mix(in srgb, currentColor 10%, transparent);
 }

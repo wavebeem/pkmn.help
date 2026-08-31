@@ -12,3 +12,5 @@
     - Licenses
 
     - Fallback page without scary JS that could crash
+
+  - Probably not, but worth asking...
