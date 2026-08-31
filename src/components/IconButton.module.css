@@ -4,23 +4,18 @@
   gap: var(--padding1);
   border-radius: var(--_radius-round);
   transition: var(--motion-duration-short3) var(--motion-easing-standard);
-  transition-property: border-radius, background-color, color;
+  transition-property: border-radius, background-color, color, border-color;
   padding: var(--padding2);
   display: flex;
 
   align-items: center;
   fill: currentColor;
-  color: var(--color-primary);
-  border: 1px solid transparent;
-  background-color: var(--color-bg-input);
+  color: var(--color-secondary);
+  border: 1px solid var(--color-border-secondary);
+  background-color: transparent;
 
   &[data-size="small"] {
     padding: var(--padding1);
-  }
-
-  &[data-variant="tertiary"] {
-    background-color: var(--color-tertiary-container-bg);
-    color: var(--color-tertiary-container-fg);
   }
 
   &:active {
@@ -41,6 +36,7 @@
   &[aria-pressed="true"] {
     background-color: var(--color-tertiary);
     color: var(--color-tertiary-fg);
+    border-color: transparent;
     border-radius: var(--border-radius1);
   }
 }

@@ -37,18 +37,8 @@ export function toObject<T, K extends string, V>({
   return obj;
 }
 
-export interface PokeRef {
-  name: string;
-  url: string;
-}
-
-export interface PokemonTranslation {
-  language: PokeRef;
-  name: string;
-}
-
 export function simplifyTranslations(
-  list: PokemonTranslation[],
+  list: { name: string; language: { name: string } }[],
 ): Record<string, string> {
   const ret: Record<string, string> = {};
   for (const t of list) {

@@ -7,7 +7,8 @@
   /* https://developer.chrome.com/docs/css-ui/edge-to-edge */
   /* https://webkit.org/blog/7929/designing-websites-for-iphone-x/ */
   --safe-area-max-inset-bottom: env(safe-area-max-inset-bottom, 36px);
-  --tabs-height: round(up, 3.5rem, 8px);
+  /* M3 spec: 48dp container height for a single line of tab content. */
+  --tabs-height: 3rem;
 
   flex: auto;
   display: grid;
@@ -22,20 +23,13 @@
 }
 
 .menuButton {
-  --_border-color: rgb(from currentColor r g b / 30%);
-
   display: flex;
-  border: 1px solid;
-  border-color: var(--_border-color);
+  border: 0;
   padding: var(--padding2);
-  background: transparent;
+  background-color: rgb(from currentColor r g b / 18%);
   color: inherit;
-  border-radius: var(--border-radius2);
+  border-radius: var(--border-radius-pill);
   text-shadow: inherit;
-}
-
-.dialog .menuButton {
-  border-color: var(--color-sidebar-highlight);
 }
 
 .header {
@@ -138,7 +132,6 @@
     width: 100vw;
     height: var(--header-height);
     z-index: 2;
-    border-radius: 0 0 var(--border-radius3) var(--border-radius3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -244,8 +237,7 @@
 
 .mobileTabBar {
   background: var(--color-tabs-base);
-  color: var(--color-tabs-text);
-  gap: var(--padding2);
+  color: var(--color-secondary);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 
@@ -253,30 +245,53 @@
   width: 100dvw;
   left: 0;
   height: var(--tabs-height);
-  padding: var(--padding2);
   top: var(--header-height);
   z-index: 1;
-  /* M3 allows shadows for actually overlaid content */
-  box-shadow: var(--shadow-menu);
+  border-bottom: 1px solid var(--color-border-secondary);
 }
 
 .mobileTab {
-  flex: auto;
-  text-align: center;
-  border: 1px solid transparent;
-  border-radius: var(--border-radius-pill);
-  background: var(--color-tabs-base);
+  position: relative;
   color: inherit;
   text-decoration: none;
-  padding: var(--padding1) var(--padding2);
   display: flex;
   justify-content: center;
   align-items: center;
-}
+  outline: none;
 
-.mobileTab[aria-current="page"] {
-  background: var(--color-nav-selected-bg);
-  color: var(--color-nav-selected-fg);
+  /* Not outline: needs to dodge the active indicator underline. */
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 6px;
+    border: 3px solid transparent;
+    border-radius: var(--border-radius1);
+  }
+
+  &:focus-visible::before {
+    border-color: var(--color-tertiary);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0;
+    width: 32px;
+    height: 3px;
+    border-radius: var(--border-radius-pill) var(--border-radius-pill) 0 0;
+    background: var(--color-link);
+    opacity: 0;
+  }
+
+  &[aria-current="page"] {
+    color: var(--color-link);
+
+    &::after {
+      opacity: 1;
+    }
+  }
 }
 
 .mobileTab svg {

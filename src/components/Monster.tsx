@@ -94,7 +94,6 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
               <source src={`/cry/${pokemon.id}.aac`} type="audio/aac" />
             </audio>
             <IconButton
-              variant="tertiary"
               title={t("pokedex.cry.text")}
               aria-label={t("pokedex.cry.text")}
               aria-pressed={isPlaying}
@@ -112,7 +111,6 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
               <IconCry size={24} />
             </IconButton>
             <IconButton
-              variant="tertiary"
               title={t("pokedex.gender.text")}
               aria-label={t("pokedex.gender.text")}
               aria-pressed={gender !== "default"}
@@ -130,7 +128,6 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
               <IconGender size={24} />
             </IconButton>
             <IconButton
-              variant="tertiary"
               title={t("pokedex.shiny.text")}
               aria-label={t("pokedex.shiny.text")}
               aria-pressed={shiny}

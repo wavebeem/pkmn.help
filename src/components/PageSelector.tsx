@@ -1,6 +1,5 @@
 import { ReactNode, RefObject } from "react";
 import { useTranslation } from "react-i18next";
-import { useMediaQuery } from "usehooks-ts";
 import { Button } from "./Button";
 import { FancyText } from "./FancyText";
 import { Flex } from "./Flex";
@@ -13,6 +12,7 @@ import {
 } from "./icons";
 import { FancyLink } from "./FancyLink";
 import styles from "./PageSelector.module.css";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 
 export interface PageSelectorProps<T> {
   anchorElementRef: RefObject<HTMLDivElement | null>;

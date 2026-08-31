@@ -32,20 +32,18 @@ something. You can set `color-scheme: dark` in a `@media` block. */
 
   --color-modal-backdrop: hsl(var(--hue-ui) 10% 20% / 80%);
 
-  /* M3 communicates elevation through surface tone, not shadow -- only
-  genuinely floating overlays (mobile drawer, popovers) get one. */
+  /* Only for actually floating content (e.g. dialogs) */
   --shadow-menu: 0 4px 12px rgb(0 0 0 / 12%), 0 1px 4px rgb(0 0 0 / 10%);
 
-  /* Applied as radial-gradient(var(--state-hover)) over a flat fill.
-  Hover is 4%, not M3's documented 8% -- the spec value read as too strong
-  across this many hover surfaces; press stays at spec. */
-  --state-hover: rgb(from currentColor r g b / 4%);
+  /* Applied as radial-gradient(var(--state-hover)) over a flat fill. Personal
+  preference---I like 6% more than the documented 8% here. */
+  --state-hover: rgb(from currentColor r g b / 6%);
   --state-press: rgb(from currentColor r g b / 12%);
 
   --state-disabled-container: rgb(from var(--color-primary) r g b / 12%);
   --state-disabled-content: rgb(from var(--color-primary) r g b / 38%);
 
-  /* Named after the M3 duration/easing tokens -- only the ones in use. */
+  /* Named after the M3 duration/easing tokens */
   --motion-duration-short3: 150ms;
   --motion-duration-short4: 200ms;
   --motion-duration-medium1: 250ms;
@@ -56,10 +54,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --motion-easing-emphasized-decelerate: cubic-bezier(0.05, 0.7, 0.1, 1);
   --motion-easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
 
-  /* Don't overcomplicate this filter or Pokedex scrolling can get really
-  slow in Android Firefox. Tinted from --color-primary (on-surface), not
-  an accent color -- a saturated hue reads as a colored halo, not a
-  shadow. */
+  /* Don't overcomplicate this filter or Pokedex scrolling can get really slow
+  in Android Firefox. */
   --filter-image: drop-shadow(
     8px 8px 16px hsl(from var(--color-primary) h s 20% / 30%)
   );

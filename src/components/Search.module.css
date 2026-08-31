@@ -25,6 +25,11 @@
   border-color: var(--color-primary);
 }
 
+.input:focus-visible {
+  outline: 3px solid var(--color-tertiary);
+  outline-offset: -1px;
+}
+
 .iconSearch,
 .iconClear {
   color: var(--color-secondary);

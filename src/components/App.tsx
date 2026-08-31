@@ -17,7 +17,7 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-import { useMediaQuery } from "usehooks-ts";
+import { useMediaQuery } from "../hooks/useMediaQuery";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { AppContext, AppContextProvider } from "../hooks/useAppContext";
 import { useComputedStyleProperty } from "../hooks/useComputedStyleProperty";
@@ -360,11 +360,7 @@ export function Layout(): ReactNode {
         </header>
         <div className={styles.mobileTabBar}>
           <NavLink
-            className={clsx(
-              styles.mobileTab,
-              "active-darken-background",
-              "focus-toggle",
-            )}
+            className={clsx(styles.mobileTab, "active-darken-background")}
             end
             to="/offense/single/"
             aria-label={compositeAriaLabel(
@@ -375,11 +371,7 @@ export function Layout(): ReactNode {
             <IconOffenseSingle />
           </NavLink>
           <NavLink
-            className={clsx(
-              styles.mobileTab,
-              "active-darken-background",
-              "focus-toggle",
-            )}
+            className={clsx(styles.mobileTab, "active-darken-background")}
             end
             to="/offense/dual/"
             aria-label={compositeAriaLabel(
@@ -390,11 +382,7 @@ export function Layout(): ReactNode {
             <IconOffenseDual />
           </NavLink>
           <NavLink
-            className={clsx(
-              styles.mobileTab,
-              "active-darken-background",
-              "focus-toggle",
-            )}
+            className={clsx(styles.mobileTab, "active-darken-background")}
             end
             to="/defense/solo/"
             aria-label={compositeAriaLabel(
@@ -405,11 +393,7 @@ export function Layout(): ReactNode {
             <IconDefenseSolo />
           </NavLink>
           <NavLink
-            className={clsx(
-              styles.mobileTab,
-              "active-darken-background",
-              "focus-toggle",
-            )}
+            className={clsx(styles.mobileTab, "active-darken-background")}
             end
             to="/defense/team/"
             aria-label={compositeAriaLabel(
@@ -420,11 +404,7 @@ export function Layout(): ReactNode {
             <IconDefenseTeam />
           </NavLink>
           <NavLink
-            className={clsx(
-              styles.mobileTab,
-              "active-darken-background",
-              "focus-toggle",
-            )}
+            className={clsx(styles.mobileTab, "active-darken-background")}
             end
             to="/pokedex/"
             aria-label={t("navigation.pokedex")}

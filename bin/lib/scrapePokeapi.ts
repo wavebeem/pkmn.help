@@ -1,89 +1,13 @@
 /* eslint-disable no-console */
 import path from "path";
-import { URL } from "url";
-import { PokeRef, saveJSON, simplifyTranslations, toObject } from "../util.js";
-import { fetchJSON, fetchPaginated } from "./util.js";
+import { MainClient, consoleLogger } from "pokenode-ts";
+import { saveJSON, simplifyTranslations, toObject } from "../util.js";
 
-const API = process.env.API || "https://pokeapi.co/api/v2/";
+const api = new MainClient({
+  baseURL: process.env.API,
+  logger: consoleLogger,
+});
 const DEST = "data";
-
-export interface PokemonSpeciesBasic {
-  name: string;
-  url: string;
-}
-
-export interface PokemonSpeciesDetail {
-  id: number;
-  name: string;
-  names: {
-    name: string;
-    language: {
-      name: string;
-      url: string;
-    };
-  }[];
-  varieties: {
-    is_default: boolean;
-    pokemon: {
-      name: string;
-      url: string;
-    };
-  }[];
-}
-
-export interface PokemonForm {
-  form_names: {
-    name: string;
-    language: {
-      name: string;
-      url: string;
-    };
-  }[];
-}
-
-export interface PokemonDetail {
-  id: number;
-  name: string;
-  is_default: boolean;
-  forms: {
-    name: string;
-    url: string;
-  }[];
-  types: {
-    slot: number;
-    type: {
-      name: string;
-      url: string;
-    };
-  }[];
-  past_types: {
-    generation: PokeRef;
-    types: { slot: number; type: PokeRef }[];
-  }[];
-  stats: {
-    base_stat: number;
-    stat: {
-      name: string;
-      url: string;
-    };
-  }[];
-  sprites: {
-    front_default: string;
-    front_shiny: string;
-    other: {
-      home: {
-        front_default: string;
-        front_female: string;
-        front_shiny: string;
-        front_shiny_female: string;
-      };
-    };
-  };
-  cries: {
-    latest: string;
-    legacy: string;
-  };
-}
 
 export interface PokemonSimple {
   name: string;
@@ -110,16 +34,18 @@ export interface PokemonSimple {
 }
 
 export async function scrapePokeapi(): Promise<void> {
-  const speciesList = await fetchPaginated<PokemonSpeciesBasic>(
-    new URL("pokemon-species", API).href,
-    Number(process.env.LIMIT || "Infinity"),
-  );
+  const limit = Number(process.env.LIMIT || "Infinity");
   const pokemonSimpleList: PokemonSimple[] = [];
-  for (const species of speciesList) {
-    const speciesDetail = await fetchJSON<PokemonSpeciesDetail>(species.url);
+  let speciesCount = 0;
+  for await (const speciesDetail of api.pokemon.paginate("listPokemonSpecies", {
+    resolve: true,
+  })) {
+    if (speciesCount++ >= limit) {
+      break;
+    }
     const speciesNames = simplifyTranslations(speciesDetail.names);
     for (const variety of speciesDetail.varieties) {
-      const detail = await fetchJSON<PokemonDetail>(variety.pokemon.url);
+      const detail = await api.resolve(variety.pokemon);
       const stats = toObject({
         data: detail.stats,
         key: (item) => item.stat.name,
@@ -127,9 +53,10 @@ export async function scrapePokeapi(): Promise<void> {
       });
       let formNames = {};
       if (detail.forms.length > 0) {
-        const form = await fetchJSON<PokemonForm>(detail.forms[0].url);
+        const form = await api.resolve(detail.forms[0]);
         formNames = simplifyTranslations(form.form_names);
       }
+      const home = detail.sprites.other?.home;
       const mon: PokemonSimple = {
         name: detail.name,
         species: speciesDetail.name,
@@ -137,10 +64,10 @@ export async function scrapePokeapi(): Promise<void> {
         formNames,
         number: speciesDetail.id,
         images: {
-          default: detail.sprites.other.home.front_default,
-          female: detail.sprites.other.home.front_female ?? "",
-          shiny: detail.sprites.other.home.front_shiny ?? "",
-          shinyFemale: detail.sprites.other.home.front_shiny_female ?? "",
+          default: home?.front_default ?? "",
+          female: home?.front_female ?? "",
+          shiny: home?.front_shiny ?? "",
+          shinyFemale: home?.front_shiny_female ?? "",
         },
         cryURL: detail.cries.latest,
         hp: stats["hp"] ?? 0,

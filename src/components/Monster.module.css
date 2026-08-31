@@ -58,7 +58,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--padding1);
-  /* margin-top: var(--padding2); */
 }
 
 .monsterStats {

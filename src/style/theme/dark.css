@@ -24,8 +24,6 @@
   --color-tabs-highlight: var(--md-surface-container-high);
   --color-tabs-text: var(--md-on-surface);
 
-  /* Not a step below --color-card-bg -- at a lower tone the sidebar
-  blended too closely into --color-bg-base. */
   --color-sidebar-base: var(--md-surface-container);
   --color-sidebar-highlight: var(--md-surface-container-highest);
   --color-sidebar-text: var(--md-on-surface);

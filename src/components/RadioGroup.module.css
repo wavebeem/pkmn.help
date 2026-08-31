@@ -67,8 +67,6 @@
   z-index: 1;
 }
 
-/* Outline-only when unselected, filled dot with a visible gap to its own
-ring when selected -- not the filled/bordered "disc" look this had before. */
 .radio {
   --_size-outer: 20px;
   --_size-check: 10px;

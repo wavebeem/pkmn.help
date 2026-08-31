@@ -41,8 +41,6 @@
     color: var(--color-tertiary-fg);
   }
 
-  /* Wins over aria-pressed above regardless of pressed state -- filled
-  buttons aren't toggles. */
   &[data-variant="filled"]:where(:not(:disabled)) {
     background-color: var(--color-accent-bg);
     color: var(--color-accent-fg);

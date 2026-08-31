@@ -1,41 +1,13 @@
 /* eslint-disable no-console */
 import path from "path";
-import { URL } from "url";
-import {
-  PokemonTranslation,
-  PokeRef,
-  saveJSON,
-  simplifyTranslations,
-} from "../util.js";
-import { fetchJSON, fetchPaginated } from "./util.js";
+import { MainClient, consoleLogger } from "pokenode-ts";
+import { saveJSON, simplifyTranslations } from "../util.js";
 
-const API = process.env.API || "https://pokeapi.co/api/v2/";
+const api = new MainClient({
+  baseURL: process.env.API,
+  logger: consoleLogger,
+});
 const DEST = "data";
-
-interface PokemonGeneration {
-  name: string;
-  names: PokemonTranslation[];
-  main_region: PokeRef;
-  version_groups: PokeRef[];
-}
-
-interface PokemonPokedexEntries {
-  pokemon_entries: {
-    entry_number: number;
-    pokemon_species: PokeRef;
-  }[];
-}
-
-interface PokemonVersionGroup {
-  name: string;
-  versions: PokeRef[];
-  pokedexes: PokeRef[];
-}
-
-interface PokemonVersion {
-  name: string;
-  names: PokemonTranslation[];
-}
 
 const generationsToVersionGroups: Record<string, string[]> = {};
 const versionGroupsToVersions: Record<string, string[]> = {};
@@ -60,9 +32,7 @@ const skipVersionGroups = new Set([
 ]);
 
 async function fetchNationalNumbers(): Promise<Map<string, number>> {
-  const dex = await fetchJSON<PokemonPokedexEntries>(
-    new URL("pokedex/national", API).href,
-  );
+  const dex = await api.game.getPokedexByName("national");
   const numbers = new Map<string, number>();
   for (const mon of dex.pokemon_entries) {
     numbers.set(mon.pokemon_species.name, mon.entry_number);
@@ -72,16 +42,18 @@ async function fetchNationalNumbers(): Promise<Map<string, number>> {
 
 export async function scrapeVersions(): Promise<void> {
   const nationalNumbers = await fetchNationalNumbers();
-  const genList = await fetchPaginated<PokeRef>(
-    new URL("generation", API).href,
-    Number(process.env.LIMIT || "Infinity"),
-  );
-  for (const genListItem of genList) {
-    const gen = await fetchJSON<PokemonGeneration>(genListItem.url);
+  const limit = Number(process.env.LIMIT || "Infinity");
+  let genCount = 0;
+  for await (const gen of api.game.paginate("listGenerations", {
+    resolve: true,
+  })) {
+    if (genCount++ >= limit) {
+      break;
+    }
     generationNames[gen.name] = simplifyTranslations(gen.names);
     generations.push(gen.name);
     for (const vgRef of gen.version_groups) {
-      const vg = await fetchJSON<PokemonVersionGroup>(vgRef.url);
+      const vg = await api.resolve(vgRef);
       if (skipVersionGroups.has(vg.name)) {
         continue;
       }
@@ -92,7 +64,7 @@ export async function scrapeVersions(): Promise<void> {
       // number instead of each one's own regional numbering.
       const species = new Set<string>();
       for (const dexRef of vg.pokedexes) {
-        const dex = await fetchJSON<PokemonPokedexEntries>(dexRef.url);
+        const dex = await api.resolve(dexRef);
         for (const mon of dex.pokemon_entries) {
           species.add(mon.pokemon_species.name);
         }
@@ -113,7 +85,7 @@ export async function scrapeVersions(): Promise<void> {
       generationsToVersionGroups[gen.name].push(vg.name);
 
       for (const vRef of vg.versions) {
-        const v = await fetchJSON<PokemonVersion>(vRef.url);
+        const v = await api.resolve(vRef);
         versionGroupsToVersions[vg.name] ||= [];
         versionGroupsToVersions[vg.name].push(v.name);
         versionNames[v.name] = simplifyTranslations(v.names);
