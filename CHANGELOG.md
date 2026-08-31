@@ -6,7 +6,30 @@ A list of user-facing changes to PKMN.help in newest-first order.
 
 - Redesigned visuals based on [Material Design 3](https://m3.material.io/)
 
+  - _My goals were as follows_
+
+    - Follow design advice from Google designers, who have spent a lot more time
+      thinking about design than me
+
+    - Look more fitting on mobile (don't ask me for Liquid Glass lol)
+
+    - Make the UI easier to focus on the important details
+
+  - **Please let me know if you have problems with the new design**
+
+    - "I don't like it" is not actionable feedback; be specific
+
+    - I will not "add an option to bring the old style back"
+
+    - I will read your response emails, but please try using it for a little
+      while before sending over your thoughts
+
+      - All redesigns take time to get used to; even the ones I do to my own
+        sites lol
+
 - Page names and field labels have been rewritten to clarify their intent
+
+- Changelog, credits, and license pages are all hosted on PKMN.help now
 
 ## 2026-08-29
 
@@ -89,7 +112,7 @@ A list of user-facing changes to PKMN.help in newest-first order.
 
 - Fixed an issue where certain Pokémon were missing from various Pokédexes
 
-  - I now have the opposite problem---too many Pokémon are showing in certain
+  - I now have the opposite problem; too many Pokémon are showing in certain
     Pokédexes now (e.g. Crystal shows Alolan Raichu, Mega Raichu X, and Mega
     Raichu Y)
 

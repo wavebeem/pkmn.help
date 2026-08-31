@@ -42,7 +42,7 @@ export function ScreenAbout(): ReactNode {
                     <FancyText tag="span" fontSize="large" fontWeight="medium">
                       {t("banners.updateReady.description")}
                     </FancyText>
-                    <FancyLink to="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
+                    <FancyLink to="/changelog/" reloadDocument>
                       {t("banners.updateReady.whatsNew")}
                     </FancyLink>
                   </Flex>
@@ -104,9 +104,7 @@ export function ScreenAbout(): ReactNode {
               <Trans
                 i18nKey="more.changes.description"
                 components={{
-                  changelog: (
-                    <FancyLink to="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md" />
-                  ),
+                  changelog: <FancyLink to="/changelog/" reloadDocument />,
                 }}
               />
             </FancyText>
@@ -170,9 +168,7 @@ export function ScreenAbout(): ReactNode {
               <Trans
                 i18nKey="more.thanks.description"
                 components={{
-                  credits: (
-                    <FancyLink to="https://github.com/wavebeem/pkmn.help/blob/HEAD/CREDITS.md" />
-                  ),
+                  credits: <FancyLink to="/credits/" reloadDocument />,
                 }}
               />
             </FancyText>
@@ -219,6 +215,22 @@ export function ScreenAbout(): ReactNode {
               <FancyText tag="p">
                 Pokédex data is from {}
                 <FancyLink to="https://pokeapi.co/">PokéAPI</FancyLink>.
+              </FancyText>
+
+              <FancyText tag="p">
+                This site uses the Roboto font, licensed under the {}
+                <FancyLink to="https://www.apache.org/licenses/LICENSE-2.0">
+                  Apache License 2.0
+                </FancyLink>
+                .
+              </FancyText>
+
+              <FancyText tag="p">
+                This site also uses these {}
+                <FancyLink to="/licenses/" reloadDocument>
+                  open source packages
+                </FancyLink>
+                .
               </FancyText>
 
               <FancyText tag="p">

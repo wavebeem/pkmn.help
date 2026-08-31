@@ -10,8 +10,8 @@ navigation.menu,Menu,Menú
 navigation.close,Close,Cerrar
 offense.chooseTypes,Choose the type for each attack move,Elige los tipos
 offense.dealsXTo,Deals up to {{ x }} damage to,Inflige {{ x }} a
-offense.mode.combination,Atk. Dual-Type,Doble
-offense.mode.single,Atk. Single-Type,Individual
+offense.mode.combination,Dual-type attack,Doble
+offense.mode.single,Single-type attack,Individual
 offense.matchups.summary.heading,Matchup summary,Resumen de enfrentamientos
 offense.matchups.summary.damage,Damage,Daño
 offense.matchups.summary.combinations.heading,Combinations,Combinaciones
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,Mar del Albor
 defense.abilityNames.desolate_land,Desolate Land,Tierra del Ocaso
 defense.abilityNames.solid_rock,Solid Rock,Roca Sólida
 defense.abilityNames.prism_armor,Prism Armor,Armadura Prisma
-defense.mode.solo,Def. Solo,Solo
-defense.mode.team,Def. Team,Equipo
+defense.mode.solo,Solo defense,Solo
+defense.mode.team,Team defense,Equipo
 defense.team.tableHeading,Matchup counts,Recuento de enfrentamientos
 defense.team.heading,Edit Pokémon team,Modifica el equipo Pokémon
 defense.team.add,Add Pokémon,Añadir Pokémon
@@ -126,6 +126,7 @@ pokedex.stats.speed,Speed,Velocidad
 pokedex.stats.speedLong,Speed,Velocidad
 pokedex.stats.total,Total,Total
 pokedex.stats.totalLong,Total,Total
+pokedexHelp.title,Pokédex help,
 pokedexHelp.searchByName.heading,Search by name,Busca por nombre
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puede buscar un Pokémon por nombre. Si solo recuerdas parte del nombre del Pokémon, probablemente aún pueda encontrarlo. Sin embargo, aún no puede lidiar con errores tipográficos."
 pokedexHelp.searchByNumber.heading,Search by number,Busca por número

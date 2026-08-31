@@ -10,8 +10,8 @@ navigation.menu,Menu,主選單
 navigation.close,Close,關閉
 offense.chooseTypes,Choose the type for each attack move,選擇招式屬性
 offense.dealsXTo,Deals up to {{ x }} damage to,造成 {{ x }} 傷害
-offense.mode.combination,Atk. Dual-Type,雙屬性
-offense.mode.single,Atk. Single-Type,單屬性
+offense.mode.combination,Dual-type attack,雙屬性
+offense.mode.single,Single-type attack,單屬性
 offense.matchups.summary.heading,Matchup summary,相剋結果總覽
 offense.matchups.summary.damage,Damage,傷害倍率
 offense.matchups.summary.combinations.heading,Combinations,屬性組合
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,始源之海
 defense.abilityNames.desolate_land,Desolate Land,終結之地
 defense.abilityNames.solid_rock,Solid Rock,堅石
 defense.abilityNames.prism_armor,Prism Armor,稜鏡裝甲
-defense.mode.solo,Def. Solo,單打
-defense.mode.team,Def. Team,隊伍
+defense.mode.solo,Solo defense,單打
+defense.mode.team,Team defense,隊伍
 defense.team.tableHeading,Matchup counts,相剋次數
 defense.team.heading,Edit Pokémon team,編輯寶可夢隊伍
 defense.team.add,Add Pokémon,添加寶可夢
@@ -126,6 +126,7 @@ pokedex.stats.speed,Speed,速度
 pokedex.stats.speedLong,Speed,速度
 pokedex.stats.total,Total,總計
 pokedex.stats.totalLong,Total,總計
+pokedexHelp.title,Pokédex help,
 pokedexHelp.searchByName.heading,Search by name,按名稱搜尋
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",您可以通過名稱搜尋寶可夢。如果您只記得寶可夢名稱的一部分，它仍然可能會為您找到。但是，它現在無法處理錯別字。
 pokedexHelp.searchByNumber.heading,Search by number,按編號搜尋

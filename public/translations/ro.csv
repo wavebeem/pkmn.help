@@ -10,8 +10,8 @@ navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose the type for each attack move,Alege tipuri
 offense.dealsXTo,Deals up to {{ x }} damage to,Oferte {{ x }} spre
-offense.mode.combination,Atk. Dual-Type,
-offense.mode.single,Atk. Single-Type,
+offense.mode.combination,Dual-type attack,
+offense.mode.single,Single-type attack,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,Primordial Sea
 defense.abilityNames.desolate_land,Desolate Land,Desolate Land
 defense.abilityNames.solid_rock,Solid Rock,Piatră Solidă
 defense.abilityNames.prism_armor,Prism Armor,
-defense.mode.solo,Def. Solo,Solo
-defense.mode.team,Def. Team,Echipă
+defense.mode.solo,Solo defense,Solo
+defense.mode.team,Team defense,Echipă
 defense.team.tableHeading,Matchup counts,Matchup counts
 defense.team.heading,Edit Pokémon team,Editează echipa Pokémon
 defense.team.add,Add Pokémon,Adaugă Pokémon
@@ -126,6 +126,7 @@ pokedex.stats.speed,Speed,Rapiditate
 pokedex.stats.speedLong,Speed,Rapiditate
 pokedex.stats.total,Total,Total
 pokedex.stats.totalLong,Total,Total
+pokedexHelp.title,Pokédex help,
 pokedexHelp.searchByName.heading,Search by name,Caută după nume
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Puteți căuta un Pokémon după nume. Dacă îți amintești doar o parte din numele Pokémon-ului, probabil că îl poate găsi pentru tine. Totuși, nu poate face față greșelilor de scriere acum."
 pokedexHelp.searchByNumber.heading,Search by number,Caută după număr

@@ -10,8 +10,8 @@ navigation.menu,Menu,메뉴
 navigation.close,Close,닫기
 offense.chooseTypes,Choose the type for each attack move,타입 선택
 offense.dealsXTo,Deals up to {{ x }} damage to,{{x}} 데미지
-offense.mode.combination,Atk. Dual-Type,이중
-offense.mode.single,Atk. Single-Type,단일
+offense.mode.combination,Dual-type attack,이중
+offense.mode.single,Single-type attack,단일
 offense.matchups.summary.heading,Matchup summary,상성 개요
 offense.matchups.summary.damage,Damage,데미지
 offense.matchups.summary.combinations.heading,Combinations,조합 수
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,시작의바다
 defense.abilityNames.desolate_land,Desolate Land,끝의대지
 defense.abilityNames.solid_rock,Solid Rock,하드록
 defense.abilityNames.prism_armor,Prism Armor,프리즘아머
-defense.mode.solo,Def. Solo,단독
-defense.mode.team,Def. Team,팀
+defense.mode.solo,Solo defense,단독
+defense.mode.team,Team defense,팀
 defense.team.tableHeading,Matchup counts,상성별 팀원 수
 defense.team.heading,Edit Pokémon team,팀 편집
 defense.team.add,Add Pokémon,포켓몬 추가
@@ -126,6 +126,7 @@ pokedex.stats.speed,Speed,스피드
 pokedex.stats.speedLong,Speed,스피드
 pokedex.stats.total,Total,총합
 pokedex.stats.totalLong,Total,총합
+pokedexHelp.title,Pokédex help,
 pokedexHelp.searchByName.heading,Search by name,이름으로 검색
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",이름으로 포켓몬을 검색할 수 있습니다. 포켓몬 이름의 일부만 입력해도 찾을 수 있습니다. 다만 아직은 오타가 나면 찾기 어렵습니다.
 pokedexHelp.searchByNumber.heading,Search by number,번호로 검색

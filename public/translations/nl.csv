@@ -10,8 +10,8 @@ navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose the type for each attack move,Kies Types
 offense.dealsXTo,Deals up to {{ x }} damage to,Deelt {{ x }} schade aan
-offense.mode.combination,Atk. Dual-Type,
-offense.mode.single,Atk. Single-Type,
+offense.mode.combination,Dual-type attack,
+offense.mode.single,Single-type attack,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,Primordial Sea
 defense.abilityNames.desolate_land,Desolate Land,Desolate Land
 defense.abilityNames.solid_rock,Solid Rock,Solid Rock
 defense.abilityNames.prism_armor,Prism Armor,
-defense.mode.solo,Def. Solo,Solo
-defense.mode.team,Def. Team,Team
+defense.mode.solo,Solo defense,Solo
+defense.mode.team,Team defense,Team
 defense.team.tableHeading,Matchup counts,Wedstrijdtelling
 defense.team.heading,Edit Pokémon team,Bewerk Pokémon team
 defense.team.add,Add Pokémon,Voeg Pokémon toe
@@ -126,6 +126,7 @@ pokedex.stats.speed,Speed,Snelheid
 pokedex.stats.speedLong,Speed,Snelheid
 pokedex.stats.total,Total,Totaal
 pokedex.stats.totalLong,Total,Totaal
+pokedexHelp.title,Pokédex help,
 pokedexHelp.searchByName.heading,Search by name,Zoeken op naam
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Je kan zoeken op een Pokémon bij naam. Als je alleen een gedeelte herinnert van de Pokémonnaam, kan hij het waarschijnlijk nog steeds vinden voor je. Hij kan alleen nog niet goed omgaan met typfouten."
 pokedexHelp.searchByNumber.heading,Search by number,Zoeken op nummer

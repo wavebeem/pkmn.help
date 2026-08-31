@@ -10,8 +10,8 @@ navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose the type for each attack move,Выберите Типы
 offense.dealsXTo,Deals up to {{ x }} damage to,Наносит {{ x }}
-offense.mode.combination,Atk. Dual-Type,
-offense.mode.single,Atk. Single-Type,
+offense.mode.combination,Dual-type attack,
+offense.mode.single,Single-type attack,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,Primordial Sea
 defense.abilityNames.desolate_land,Desolate Land,Desolate Land
 defense.abilityNames.solid_rock,Solid Rock,
 defense.abilityNames.prism_armor,Prism Armor,Prism Armor
-defense.mode.solo,Def. Solo,
-defense.mode.team,Def. Team,
+defense.mode.solo,Solo defense,
+defense.mode.team,Team defense,
 defense.team.tableHeading,Matchup counts,
 defense.team.heading,Edit Pokémon team,
 defense.team.add,Add Pokémon,
@@ -126,6 +126,7 @@ pokedex.stats.speed,Speed,Скорость
 pokedex.stats.speedLong,Speed,Скорость
 pokedex.stats.total,Total,Общее
 pokedex.stats.totalLong,Total,Общее
+pokedexHelp.title,Pokédex help,
 pokedexHelp.searchByName.heading,Search by name,Искать по имени
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Вы можете искать Покемона по имени. Если вы помните только часть имени Покемона, он всё ещё может вам найти это для вас. Но пока поиск с опечатками невозможны."
 pokedexHelp.searchByNumber.heading,Search by number,Искать по номеру

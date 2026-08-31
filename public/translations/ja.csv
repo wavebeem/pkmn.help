@@ -10,8 +10,8 @@ navigation.menu,Menu,
 navigation.close,Close,
 offense.chooseTypes,Choose the type for each attack move,複数のタイプを選択
 offense.dealsXTo,Deals up to {{ x }} damage to,{{ x }}を与える
-offense.mode.combination,Atk. Dual-Type,
-offense.mode.single,Atk. Single-Type,
+offense.mode.combination,Dual-type attack,
+offense.mode.single,Single-type attack,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,はじまりのうみ
 defense.abilityNames.desolate_land,Desolate Land,おわりのだいち
 defense.abilityNames.solid_rock,Solid Rock,ハードロック
 defense.abilityNames.prism_armor,Prism Armor,プリズムアーマー
-defense.mode.solo,Def. Solo,ソロ
-defense.mode.team,Def. Team,パーティ
+defense.mode.solo,Solo defense,ソロ
+defense.mode.team,Team defense,パーティ
 defense.team.tableHeading,Matchup counts,タイプ相性表
 defense.team.heading,Edit Pokémon team,手持ちポケモンを編集
 defense.team.add,Add Pokémon,ポケモンを追加
@@ -126,6 +126,7 @@ pokedex.stats.speed,Speed,すばやさ
 pokedex.stats.speedLong,Speed,すばやさ
 pokedex.stats.total,Total,合計
 pokedex.stats.totalLong,Total,合計
+pokedexHelp.title,Pokédex help,
 pokedexHelp.searchByName.heading,Search by name,名前で検索
 pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.",ポケモン名で検索することが出来ます。部分一致でも検索することが出来ます。誤字は検索できません。
 pokedexHelp.searchByNumber.heading,Search by number,番号で検索
