@@ -12,7 +12,7 @@ export {
   // Monster
   Users as IconDefenseTeam,
   Sparkles as IconShiny,
-  Music as IconCry,
+  AudioLines as IconCry,
   // Header
   Menu as IconMenu,
   // Menu

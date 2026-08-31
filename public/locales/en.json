@@ -11,8 +11,8 @@
     "close": "Close"
   },
   "offense": {
-    "chooseTypes": "Choose attack move types",
-    "dealsXTo": "Deals {{ x }} damage to",
+    "chooseTypes": "Choose the type for each attack move",
+    "dealsXTo": "Deals up to {{ x }} damage to",
     "mode": {
       "combination": "Dual",
       "single": "Single"
