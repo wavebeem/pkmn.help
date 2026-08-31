@@ -29,13 +29,11 @@
   padding: var(--padding1) calc(var(--padding1) + var(--padding2));
   font-weight: var(--label-font-weight);
   letter-spacing: var(--label-letter-spacing);
-  /* stylelint-disable-next-line declaration-property-value-no-unknown */
   min-height: round(up, 2rem, 1px);
 }
 
 .outlined.iconOnly {
   padding: var(--padding1);
   aspect-ratio: 1;
-  /* stylelint-disable-next-line declaration-property-value-no-unknown */
   min-width: round(up, 2rem, 1px);
 }

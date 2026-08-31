@@ -1,5 +1,7 @@
 # Changelog
 
+A list of user-facing changes to PKMN.help in newest-first order.
+
 ## 2026-08-29
 
 - Consolidated base game Pokédexes with DLC Pokédexes

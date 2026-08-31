@@ -21,13 +21,13 @@
     var(--motion-easing-standard);
 }
 
-.input:is(:hover, :focus-visible):not(:disabled) {
-  border-color: var(--color-primary);
-}
-
 .input:focus-visible {
   outline: 3px solid var(--color-tertiary);
   outline-offset: -1px;
+}
+
+.input:is(:hover, :focus-visible):not(:disabled) {
+  border-color: var(--color-primary);
 }
 
 .iconSearch,
