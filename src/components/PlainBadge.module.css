@@ -4,7 +4,7 @@
   background: var(--color-bg-input);
 }
 
-.root[data-size="full-width"] {
+.root[data-width="full"] {
   grid-column: 1 / -1;
 }
 
@@ -14,6 +14,7 @@
   font-size: var(--font-size2);
 
   line-height: 1;
-  font-weight: var(--weight-medium);
+  font-weight: var(--label-font-weight);
   font-stretch: ultra-condensed;
+  letter-spacing: var(--label-letter-spacing);
 }

@@ -1,7 +1,7 @@
 {
   "title": "Pokémon Type Calculator",
   "navigation": {
-    "offense": "Offense",
+    "offense": "Attack",
     "defense": "Defense",
     "pokedex": "Pokédex",
     "other": "Other",
@@ -14,8 +14,8 @@
     "chooseTypes": "Choose the type for each attack move",
     "dealsXTo": "Deals up to {{ x }} damage to",
     "mode": {
-      "combination": "Dual",
-      "single": "Single"
+      "combination": "Atk. Dual-Type",
+      "single": "Atk. Single-Type"
     },
     "matchups": {
       "summary": {
@@ -130,8 +130,8 @@
       "prism_armor": "Prism Armor"
     },
     "mode": {
-      "solo": "Solo",
-      "team": "Team"
+      "solo": "Def. Solo",
+      "team": "Def. Team"
     },
     "team": {
       "tableHeading": "Matchup counts",
@@ -259,7 +259,7 @@
       },
       "typeCount": {
         "label": "Number of types",
-        "help": "Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.",
+        "help": "Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.",
         "values": {
           "2": "Two types (2)",
           "3": "Three types (3)"

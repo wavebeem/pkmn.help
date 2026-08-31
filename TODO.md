@@ -1,1 +1,0 @@
-- Switch to pokenode-ts in favor of custom data fetching code

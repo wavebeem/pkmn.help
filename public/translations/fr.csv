@@ -1,6 +1,6 @@
 Key,en,fr
 title,Pokémon Type Calculator,Calculateur de types Pokémon
-navigation.offense,Offense,Offense
+navigation.offense,Attack,Offense
 navigation.defense,Defense,Défense
 navigation.pokedex,Pokédex,Pokédex
 navigation.other,Other,Autres
@@ -8,10 +8,10 @@ navigation.settings,Settings,Paramètres
 navigation.about,About,A propos
 navigation.menu,Menu,Menu
 navigation.close,Close,Fermer
-offense.chooseTypes,Choose attack move types,Choisissez les types
-offense.dealsXTo,Deals {{ x }} damage to,Inflige {{ x }} à
-offense.mode.combination,Dual,Combinaison
-offense.mode.single,Single,Solo
+offense.chooseTypes,Choose the type for each attack move,Choisissez les types
+offense.dealsXTo,Deals up to {{ x }} damage to,Inflige {{ x }} à
+offense.mode.combination,Atk. Dual-Type,Combinaison
+offense.mode.single,Atk. Single-Type,Solo
 offense.matchups.summary.heading,Matchup summary,Sommaire des match-ups
 offense.matchups.summary.damage,Damage,Dégâts
 offense.matchups.summary.combinations.heading,Combinations,Combinaisons
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,Mer Primaire
 defense.abilityNames.desolate_land,Desolate Land,Terre Finale
 defense.abilityNames.solid_rock,Solid Rock,Solide Roc
 defense.abilityNames.prism_armor,Prism Armor,Prisme-Armure
-defense.mode.solo,Solo,Pokémon seul
-defense.mode.team,Team,Équipe
+defense.mode.solo,Def. Solo,Pokémon seul
+defense.mode.team,Def. Team,Équipe
 defense.team.tableHeading,Matchup counts,Nombre de match-ups
 defense.team.heading,Edit Pokémon team,Modifier l'équipe Pokémon
 defense.team.add,Add Pokémon,Ajouter un Pokémon
@@ -158,7 +158,7 @@ more.settings.versionGroup.label,Pokédex,Pokédex
 more.settings.versionGroup.help,Controls available Pokémon and types.,Contrôle les Pokémon et les types disponibles.
 more.settings.versionGroup.values.all,National Pokédex,Pokédex National
 more.settings.typeCount.label,Number of types,Nombre de types
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Un Pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est rarement utilisé.
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Un Pokémon peut avoir brièvement 3 types à la fois s'il est touché par la capacité Maléfice Sylvain ou Halloween. Le champ de sélection du troisième type est caché par défaut car il est rarement utilisé.
 more.settings.typeCount.values.2,Two types (2),Deux types (2)
 more.settings.typeCount.values.3,Three types (3),Trois types (3)
 more.settings.battleVariant.label,Battle variant,Variation de combat

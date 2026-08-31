@@ -1,6 +1,6 @@
 Key,en,ro
 title,Pokémon Type Calculator,Calculator pentru tipurile Pokémoni-lor
-navigation.offense,Offense,Atac
+navigation.offense,Attack,Atac
 navigation.defense,Defense,Protecție
 navigation.pokedex,Pokédex,Pokédex
 navigation.other,Other,
@@ -8,10 +8,10 @@ navigation.settings,Settings,
 navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
-offense.chooseTypes,Choose attack move types,Alege tipuri
-offense.dealsXTo,Deals {{ x }} damage to,Oferte {{ x }} spre
-offense.mode.combination,Dual,
-offense.mode.single,Single,
+offense.chooseTypes,Choose the type for each attack move,Alege tipuri
+offense.dealsXTo,Deals up to {{ x }} damage to,Oferte {{ x }} spre
+offense.mode.combination,Atk. Dual-Type,
+offense.mode.single,Atk. Single-Type,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,Primordial Sea
 defense.abilityNames.desolate_land,Desolate Land,Desolate Land
 defense.abilityNames.solid_rock,Solid Rock,Piatră Solidă
 defense.abilityNames.prism_armor,Prism Armor,
-defense.mode.solo,Solo,Solo
-defense.mode.team,Team,Echipă
+defense.mode.solo,Def. Solo,Solo
+defense.mode.team,Def. Team,Echipă
 defense.team.tableHeading,Matchup counts,Matchup counts
 defense.team.heading,Edit Pokémon team,Editează echipa Pokémon
 defense.team.add,Add Pokémon,Adaugă Pokémon
@@ -158,7 +158,7 @@ more.settings.versionGroup.label,Pokédex,
 more.settings.versionGroup.help,Controls available Pokémon and types.,
 more.settings.versionGroup.values.all,National Pokédex,
 more.settings.typeCount.label,Number of types,Numărul de tipuri
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Pokémon-ul poate avea trei tipuri simultan dacă este lovit cu Forest's Curse sau Trick-or-Treat. Al treilea câmp de tip este ascuns în mod implicit, deoarece este rar folosit."
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Pokémon-ul poate avea trei tipuri simultan dacă este lovit cu Forest's Curse sau Trick-or-Treat. Al treilea câmp de tip este ascuns în mod implicit, deoarece este rar folosit."
 more.settings.typeCount.values.2,Two types (2),Două tipuri (2)
 more.settings.typeCount.values.3,Three types (3),Trei tipuri (3)
 more.settings.battleVariant.label,Battle variant,

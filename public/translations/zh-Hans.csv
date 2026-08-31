@@ -1,6 +1,6 @@
 Key,en,zh-Hans
 title,Pokémon Type Calculator,宝可梦属性计算器
-navigation.offense,Offense,攻击方
+navigation.offense,Attack,攻击方
 navigation.defense,Defense,防御方
 navigation.pokedex,Pokédex,图鉴
 navigation.other,Other,
@@ -8,10 +8,10 @@ navigation.settings,Settings,
 navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
-offense.chooseTypes,Choose attack move types,选择属性
-offense.dealsXTo,Deals {{ x }} damage to,产生 {{ x }} 伤害
-offense.mode.combination,Dual,
-offense.mode.single,Single,
+offense.chooseTypes,Choose the type for each attack move,选择属性
+offense.dealsXTo,Deals up to {{ x }} damage to,产生 {{ x }} 伤害
+offense.mode.combination,Atk. Dual-Type,
+offense.mode.single,Atk. Single-Type,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,始源之海
 defense.abilityNames.desolate_land,Desolate Land,終結之地
 defense.abilityNames.solid_rock,Solid Rock,堅石
 defense.abilityNames.prism_armor,Prism Armor,稜鏡裝甲
-defense.mode.solo,Solo,单只模式
-defense.mode.team,Team,队伍模式
+defense.mode.solo,Def. Solo,单只模式
+defense.mode.team,Def. Team,队伍模式
 defense.team.tableHeading,Matchup counts,对战统计
 defense.team.heading,Edit Pokémon team,编辑队伍
 defense.team.add,Add Pokémon,添加宝可梦
@@ -158,7 +158,7 @@ more.settings.versionGroup.label,Pokédex,
 more.settings.versionGroup.help,Controls available Pokémon and types.,
 more.settings.versionGroup.values.all,National Pokédex,
 more.settings.typeCount.label,Number of types,属性的数量
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,如果宝可梦被森林诅咒或万圣夜攻击后则会被追加第三种属性。由于例子很少的原因，第三属性的栏位默认为隐藏。
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,如果宝可梦被森林诅咒或万圣夜攻击后则会被追加第三种属性。由于例子很少的原因，第三属性的栏位默认为隐藏。
 more.settings.typeCount.values.2,Two types (2),两种属性（2）
 more.settings.typeCount.values.3,Three types (3),三种属性（3）
 more.settings.battleVariant.label,Battle variant,

@@ -232,9 +232,11 @@ export function ScreenDefenseTeam(): ReactNode {
                         #{name}
                       </FancyText>
                       <Flex wrap gap="small" className={styles.teamRowBadges}>
-                        {types.map((t) => (
-                          <Badge key={t} type={t} />
-                        ))}
+                        {types.length === 0 ? (
+                          <PlainBadge>{t("types.none")}</PlainBadge>
+                        ) : (
+                          types.map((t) => <Badge key={t} type={t} />)
+                        )}
                       </Flex>
                       <Flex gap="small" className={styles.teamRowIcons}>
                         <IconButton

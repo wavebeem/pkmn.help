@@ -3,15 +3,15 @@ import styles from "./PlainBadge.module.css";
 
 interface PlainBadgeProps {
   children: ReactNode;
-  size?: "regular" | "full-width";
+  width?: "regular" | "full";
 }
 
 export function PlainBadge({
   children,
-  size = "regular",
+  width = "regular",
 }: PlainBadgeProps): ReactNode {
   return (
-    <div className={styles.root} data-size={size}>
+    <div className={styles.root} data-width={width}>
       <div className={styles.content}>{children}</div>
     </div>
   );

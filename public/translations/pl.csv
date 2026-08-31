@@ -1,6 +1,6 @@
 Key,en,pl
 title,Pokémon Type Calculator,Kalkulator typów Pokémonów
-navigation.offense,Offense,Ofensywa
+navigation.offense,Attack,Ofensywa
 navigation.defense,Defense,Defensywa
 navigation.pokedex,Pokédex,Pokédex
 navigation.other,Other,
@@ -8,10 +8,10 @@ navigation.settings,Settings,
 navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
-offense.chooseTypes,Choose attack move types,Wybierz typy
-offense.dealsXTo,Deals {{ x }} damage to,Zadaje {{ x }} do
-offense.mode.combination,Dual,
-offense.mode.single,Single,
+offense.chooseTypes,Choose the type for each attack move,Wybierz typy
+offense.dealsXTo,Deals up to {{ x }} damage to,Zadaje {{ x }} do
+offense.mode.combination,Atk. Dual-Type,
+offense.mode.single,Atk. Single-Type,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,Primordial Sea
 defense.abilityNames.desolate_land,Desolate Land,Desolate Land
 defense.abilityNames.solid_rock,Solid Rock,Solid Rock
 defense.abilityNames.prism_armor,Prism Armor,
-defense.mode.solo,Solo,Solo
-defense.mode.team,Team,Drużyna
+defense.mode.solo,Def. Solo,Solo
+defense.mode.team,Def. Team,Drużyna
 defense.team.tableHeading,Matchup counts,Liczba kombinacji
 defense.team.heading,Edit Pokémon team,Edytuj drużynę Pokémon
 defense.team.add,Add Pokémon,Dodaj Pokémona
@@ -158,7 +158,7 @@ more.settings.versionGroup.label,Pokédex,
 more.settings.versionGroup.help,Controls available Pokémon and types.,
 more.settings.versionGroup.values.all,National Pokédex,
 more.settings.typeCount.label,Number of types,Ilość typów
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Pokémony mogą przez krótki czas mieć trzy typy jednocześnie, jeśli zostaną trafieni ruchami Forests’s Curse albo Trick-or-Treat. Pole trzeciego typu jest domyślnie ukryte, ponieważ jest rzadko używane."
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Pokémony mogą przez krótki czas mieć trzy typy jednocześnie, jeśli zostaną trafieni ruchami Forests’s Curse albo Trick-or-Treat. Pole trzeciego typu jest domyślnie ukryte, ponieważ jest rzadko używane."
 more.settings.typeCount.values.2,Two types (2),Dwa typy (2)
 more.settings.typeCount.values.3,Three types (3),Trzy typy (3)
 more.settings.battleVariant.label,Battle variant,

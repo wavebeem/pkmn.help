@@ -1,6 +1,6 @@
 Key,en,kk
 title,Pokémon Type Calculator,Покемон Тип Калькуляторы
-navigation.offense,Offense,Шабуыл
+navigation.offense,Attack,Шабуыл
 navigation.defense,Defense,Қорғаныс
 navigation.pokedex,Pokédex,Покедекс
 navigation.other,Other,
@@ -8,10 +8,10 @@ navigation.settings,Settings,
 navigation.about,About,
 navigation.menu,Menu,
 navigation.close,Close,
-offense.chooseTypes,Choose attack move types,Типтер Таңдау
-offense.dealsXTo,Deals {{ x }} damage to,{{ x }} келтіреді
-offense.mode.combination,Dual,
-offense.mode.single,Single,
+offense.chooseTypes,Choose the type for each attack move,Типтер Таңдау
+offense.dealsXTo,Deals up to {{ x }} damage to,{{ x }} келтіреді
+offense.mode.combination,Atk. Dual-Type,
+offense.mode.single,Atk. Single-Type,
 offense.matchups.summary.heading,Matchup summary,
 offense.matchups.summary.damage,Damage,
 offense.matchups.summary.combinations.heading,Combinations,
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,Primordial Sea
 defense.abilityNames.desolate_land,Desolate Land,Desolate Land
 defense.abilityNames.solid_rock,Solid Rock,
 defense.abilityNames.prism_armor,Prism Armor,
-defense.mode.solo,Solo,
-defense.mode.team,Team,
+defense.mode.solo,Def. Solo,
+defense.mode.team,Def. Team,
 defense.team.tableHeading,Matchup counts,
 defense.team.heading,Edit Pokémon team,
 defense.team.add,Add Pokémon,
@@ -158,7 +158,7 @@ more.settings.versionGroup.label,Pokédex,
 more.settings.versionGroup.help,Controls available Pokémon and types.,
 more.settings.versionGroup.values.all,National Pokédex,
 more.settings.typeCount.label,Number of types,Типтер саны
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Покемондар Forests's Curse немесе Trick-or-Treat-пен шабулданса шынында да үш типті болуы мүмкін. Үшінші тип бастапқыдан тығулы, себебі оны сирек қолданады."
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,"Покемондар Forests's Curse немесе Trick-or-Treat-пен шабулданса шынында да үш типті болуы мүмкін. Үшінші тип бастапқыдан тығулы, себебі оны сирек қолданады."
 more.settings.typeCount.values.2,Two types (2),Екі тип (2)
 more.settings.typeCount.values.3,Three types (3),Үш тип (3)
 more.settings.battleVariant.label,Battle variant,

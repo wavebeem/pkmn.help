@@ -177,7 +177,7 @@ export function Matchups({
                         if (x.formName === "stellar") {
                           return (
                             <>
-                              <PlainBadge key="form-tera" size="regular">
+                              <PlainBadge key="form-tera" width="regular">
                                 {t("offense.teraPokemon")}
                               </PlainBadge>
                               <div />
@@ -234,7 +234,7 @@ export function Matchups({
                 {list.map((x) => {
                   if (x.formName === "stellar") {
                     return (
-                      <PlainBadge key="form-tera" size="full-width">
+                      <PlainBadge key="form-tera" width="full">
                         {t("offense.teraPokemon")}
                       </PlainBadge>
                     );

@@ -1,6 +1,6 @@
 Key,en,vi
 title,Pokémon Type Calculator,Máy Tính Toán Hệ Pokémon
-navigation.offense,Offense,Tấn Công
+navigation.offense,Attack,Tấn Công
 navigation.defense,Defense,Phòng Thủ
 navigation.pokedex,Pokédex,Pokédex
 navigation.other,Other,Khác
@@ -8,10 +8,10 @@ navigation.settings,Settings,Cài Đặt
 navigation.about,About,Thông Tin
 navigation.menu,Menu,Menu
 navigation.close,Close,Đóng
-offense.chooseTypes,Choose attack move types,Chọn hệ tấn công
-offense.dealsXTo,Deals {{ x }} damage to,Gây {{ x }} sát thương đến
-offense.mode.combination,Dual,Song hệ
-offense.mode.single,Single,Đơn hệ
+offense.chooseTypes,Choose the type for each attack move,Chọn hệ tấn công
+offense.dealsXTo,Deals up to {{ x }} damage to,Gây {{ x }} sát thương đến
+offense.mode.combination,Atk. Dual-Type,Song hệ
+offense.mode.single,Atk. Single-Type,Đơn hệ
 offense.matchups.summary.heading,Matchup summary,Tóm tắt số liệu sát thương
 offense.matchups.summary.damage,Damage,Sát thương
 offense.matchups.summary.combinations.heading,Combinations,Tổ hợp đơn/song hệ
@@ -84,8 +84,8 @@ defense.abilityNames.primordial_sea,Primordial Sea,Biển Ban Sơ (Primordial Se
 defense.abilityNames.desolate_land,Desolate Land,Đất Tận Cùng (Desolate Land)
 defense.abilityNames.solid_rock,Solid Rock,Đá Cứng (Solid Rock)
 defense.abilityNames.prism_armor,Prism Armor,Giáp Lăng Kính (Prism Armor)
-defense.mode.solo,Solo,1 Pokémon (Solo)
-defense.mode.team,Team,Nhiều Pokémon (Đội/Team)
+defense.mode.solo,Def. Solo,1 Pokémon (Solo)
+defense.mode.team,Def. Team,Nhiều Pokémon (Đội/Team)
 defense.team.tableHeading,Matchup counts,Danh sách các matchup
 defense.team.heading,Edit Pokémon team,Chỉnh sửa đội Pokémon
 defense.team.add,Add Pokémon,Thêm Pokémon
@@ -158,7 +158,7 @@ more.settings.versionGroup.label,Pokédex,
 more.settings.versionGroup.help,Controls available Pokémon and types.,
 more.settings.versionGroup.values.all,National Pokédex,
 more.settings.typeCount.label,Number of types,Số lượng hệ
-more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forests’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra.
+more.settings.typeCount.help,Pokémon can briefly have three types at once if hit with Forest’s Curse or Trick-or-Treat. The third type field is hidden by default since it is rarely used.,Pokémon có thể có đến 3 hệ (tạm thời) nếu như Pokémon bị dính bời Nguyền Rủa Rừng (Forest's Curse) hoặc Trick-or-Treat. Lựa chọn '3 hệ' bị giấu mặc định do sự hiếm hoi để xảy ra.
 more.settings.typeCount.values.2,Two types (2),Hai hệ (2)
 more.settings.typeCount.values.3,Three types (3),Ba hệ (3)
 more.settings.battleVariant.label,Battle variant,Biến Thể Trận Đấu
