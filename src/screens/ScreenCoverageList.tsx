@@ -6,6 +6,7 @@ import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { IconBack } from "../components/icons";
+import { PageTitle } from "../components/PageTitle";
 import { Paginator } from "../components/Paginator";
 import { PlainBadge } from "../components/PlainBadge";
 import { useAppContext } from "../hooks/useAppContext";
@@ -50,9 +51,7 @@ export function ScreenCoverageList({ mode }: CoverageListProps): ReactNode {
   return (
     <main className="center content-narrow">
       <Flex direction="column" gap="large" padding="large">
-        <FancyText tag="h2" fontSize="xlarge" fontWeight="medium">
-          {t(`offense.coverageList.${mode}.heading`)}
-        </FancyText>
+        <PageTitle title={t(`offense.coverageList.${mode}.heading`)} />
 
         <Flex gap="small" align="center">
           <IconBack />

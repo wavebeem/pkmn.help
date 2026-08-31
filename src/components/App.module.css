@@ -319,7 +319,7 @@
   .content {
     overflow: auto scroll;
     overscroll-behavior: none;
-    padding-block: var(--padding4);
+    padding-block: var(--padding2) var(--padding4);
   }
 
   .dialog {

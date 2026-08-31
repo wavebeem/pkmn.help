@@ -66,6 +66,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --font-size1: 1rem;
   --font-size2: 1.25rem;
   --font-size3: 1.5rem;
+  --font-size4: 1.75rem;
 
   --font-sans: "Roboto", system-ui, sans-serif;
 

@@ -2,6 +2,12 @@
 
 A list of user-facing changes to PKMN.help in newest-first order.
 
+## 2026-08-30
+
+- Redesigned visuals based on [Material Design 3](https://m3.material.io/)
+
+- Page names and field labels have been rewritten to clarify their intent
+
 ## 2026-08-29
 
 - Consolidated base game Pokédexes with DLC Pokédexes

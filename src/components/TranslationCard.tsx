@@ -6,7 +6,7 @@ import {
   languageNamesNative,
   officialLanguagesSet,
 } from "../misc/lang";
-import { ExternalLink } from "./ExternalLink";
+import { FancyLink } from "./FancyLink";
 import { FancyText } from "./FancyText";
 import { IconDownload } from "./icons";
 import styles from "./TranslationCard.module.css";
@@ -41,15 +41,15 @@ export function TranslationCard({ lang }: TranslationCardProps): ReactNode {
         </FancyText>
       </div>
       <div className={styles.download}>
-        <ExternalLink
+        <FancyLink
           aria-labelledby={titleId}
-          href={`/translations/${lang}.csv`}
+          to={`/translations/${lang}.csv`}
           download={`PKMN.help - ${languageNamesEnglish[lang]}.csv`}
           outlined
         >
           {languageNamesEnglish[lang]} CSV
           <IconDownload size={24} />
-        </ExternalLink>
+        </FancyLink>
       </div>
     </div>
   );

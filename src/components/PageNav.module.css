@@ -28,6 +28,13 @@
   letter-spacing: var(--label-letter-spacing);
 }
 
+.label {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .tab[aria-current="page"] {
   background: var(--color-nav-selected-bg);
   color: var(--color-nav-selected-fg);

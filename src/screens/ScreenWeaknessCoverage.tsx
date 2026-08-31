@@ -11,6 +11,7 @@ import {
   IconImport,
   IconReset,
 } from "../components/icons";
+import { PageTitle } from "../components/PageTitle";
 import { Spinner } from "../components/Spinner";
 import { useAppContext } from "../hooks/useAppContext";
 import { useTypeCount } from "../hooks/useTypeCount";
@@ -138,43 +139,43 @@ export function ScreenWeaknessCoverage(): ReactNode {
         <Flex gap="medium" />
 
         <Flex direction="column" gap="large">
-          <FancyText tag="h2" fontSize="xlarge" fontWeight="medium">
-            {t("coverage.heading")}
-          </FancyText>
+          <PageTitle title={t("coverage.heading")} />
 
-          <FancyText tag="p">{t("coverage.paragraph1")}</FancyText>
+          <Flex direction="column" gap="large">
+            <FancyText tag="p">{t("coverage.paragraph1")}</FancyText>
 
-          <FancyText tag="p">{t("coverage.paragraph2")}</FancyText>
+            <FancyText tag="p">{t("coverage.paragraph2")}</FancyText>
 
-          <FancyText tag="p">{t("coverage.paragraph3")}</FancyText>
+            <FancyText tag="p">{t("coverage.paragraph3")}</FancyText>
 
-          {isLoading ? (
-            <Spinner />
-          ) : (
-            <div className={styles.buttonGrid}>
-              <Button onClick={saveCSV}>
-                <IconExport /> {t("coverage.export.button")}
-              </Button>
-              <span>{t("coverage.export.description")}</span>
+            {isLoading ? (
+              <Spinner />
+            ) : (
+              <div className={styles.buttonGrid}>
+                <Button onClick={saveCSV}>
+                  <IconExport /> {t("coverage.export.button")}
+                </Button>
+                <span>{t("coverage.export.description")}</span>
 
-              <Button onClick={loadCSV}>
-                <IconImport /> {t("coverage.import.button")}
-              </Button>
-              <span>{t("coverage.import.description")}</span>
+                <Button onClick={loadCSV}>
+                  <IconImport /> {t("coverage.import.button")}
+                </Button>
+                <span>{t("coverage.import.description")}</span>
 
-              <Button onClick={loadDefault}>
-                <IconReset />
-                {t("coverage.reset.button")}
-              </Button>
-              <span>{t("coverage.reset.description")}</span>
-            </div>
-          )}
+                <Button onClick={loadDefault}>
+                  <IconReset />
+                  {t("coverage.reset.button")}
+                </Button>
+                <span>{t("coverage.reset.description")}</span>
+              </div>
+            )}
 
-          {statusText && (
-            <FancyText tag="pre" fontSize="large" fontWeight="medium">
-              {statusText}
-            </FancyText>
-          )}
+            {statusText && (
+              <FancyText tag="pre" fontSize="large" fontWeight="medium">
+                {statusText}
+              </FancyText>
+            )}
+          </Flex>
         </Flex>
 
         <Flex gap="small" align="center">

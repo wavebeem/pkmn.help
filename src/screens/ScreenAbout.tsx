@@ -3,13 +3,13 @@ import { Trans, useTranslation } from "react-i18next";
 import { Button } from "../components/Button";
 import { Card } from "../components/Card";
 import { Section } from "../components/Section";
-import { ExternalLink } from "../components/ExternalLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { useAppContext } from "../hooks/useAppContext";
 import { resetApp } from "../misc/resetApp";
 import { FancyLink } from "../components/FancyLink";
 import { IconReset, IconRandom } from "../components/icons";
+import { PageTitle } from "../components/PageTitle";
 import { Pokemon } from "../misc/data-types";
 import styles from "./ScreenAbout.module.css";
 import { randomItem } from "../misc/random";
@@ -25,7 +25,9 @@ export function ScreenAbout(): ReactNode {
 
   return (
     <main className="content-narrow center">
-      <Flex direction="column" padding="large">
+      <Flex direction="column" gap="large" padding="large">
+        <PageTitle title={t("navigation.about")} />
+
         <Flex direction="column" gap="xlarge">
           {needsAppUpdate && (
             <div className={styles.updateBanner}>
@@ -35,9 +37,9 @@ export function ScreenAbout(): ReactNode {
                     <FancyText tag="span" fontSize="large" fontWeight="medium">
                       {t("banners.updateReady.description")}
                     </FancyText>
-                    <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
+                    <FancyLink to="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md">
                       {t("banners.updateReady.whatsNew")}
-                    </ExternalLink>
+                    </FancyLink>
                   </Flex>
                   <Button variant="filled" type="button" onClick={updateApp}>
                     {t("banners.updateReady.update")}
@@ -58,7 +60,7 @@ export function ScreenAbout(): ReactNode {
                 i18nKey="more.contact.intro"
                 values={{}}
                 components={{
-                  homepage: <ExternalLink href="https://www.wavebeem.com" />,
+                  homepage: <FancyLink to="https://www.wavebeem.com" />,
                 }}
               />
             </FancyText>
@@ -67,7 +69,7 @@ export function ScreenAbout(): ReactNode {
               <Trans
                 i18nKey="more.contact.email"
                 components={{
-                  email: <ExternalLink href="mailto:pkmn@wavebeem.com" />,
+                  email: <FancyLink to="mailto:pkmn@wavebeem.com" />,
                 }}
               />
             </FancyText>
@@ -98,7 +100,7 @@ export function ScreenAbout(): ReactNode {
                 i18nKey="more.changes.description"
                 components={{
                   changelog: (
-                    <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md" />
+                    <FancyLink to="https://github.com/wavebeem/pkmn.help/blob/HEAD/CHANGELOG.md" />
                   ),
                 }}
               />
@@ -136,9 +138,7 @@ export function ScreenAbout(): ReactNode {
               <Trans
                 i18nKey="more.privacy.description"
                 components={{
-                  plausible: (
-                    <ExternalLink href="https://plausible.io/pkmn.help" />
-                  ),
+                  plausible: <FancyLink to="https://plausible.io/pkmn.help" />,
                 }}
               />
             </FancyText>
@@ -166,7 +166,7 @@ export function ScreenAbout(): ReactNode {
                 i18nKey="more.thanks.description"
                 components={{
                   credits: (
-                    <ExternalLink href="https://github.com/wavebeem/pkmn.help/blob/HEAD/CREDITS.md" />
+                    <FancyLink to="https://github.com/wavebeem/pkmn.help/blob/HEAD/CREDITS.md" />
                   ),
                 }}
               />
@@ -185,7 +185,7 @@ export function ScreenAbout(): ReactNode {
                 i18nKey="more.openSource.description"
                 components={{
                   github: (
-                    <ExternalLink href="https://github.com/wavebeem/pkmn.help" />
+                    <FancyLink to="https://github.com/wavebeem/pkmn.help" />
                   ),
                 }}
               />
@@ -213,14 +213,14 @@ export function ScreenAbout(): ReactNode {
 
               <FancyText tag="p">
                 Pokédex data is from {}
-                <ExternalLink href="https://pokeapi.co/">PokéAPI</ExternalLink>.
+                <FancyLink to="https://pokeapi.co/">PokéAPI</FancyLink>.
               </FancyText>
 
               <FancyText tag="p">
                 PKMN.help &copy; 2013&ndash;{year} {}
-                <ExternalLink href="https://www.wavebeem.com">
+                <FancyLink to="https://www.wavebeem.com">
                   Sage Fennel Mock
-                </ExternalLink>
+                </FancyLink>
                 .
               </FancyText>
             </Flex>

@@ -16,6 +16,7 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { Matchups } from "../components/Matchups";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
+import { PageTitle } from "../components/PageTitle";
 import { useAppContext } from "../hooks/useAppContext";
 import { useGeneration } from "../hooks/useGeneration";
 import { useSearch } from "../hooks/useSearch";
@@ -151,6 +152,14 @@ export function ScreenOffense({ mode }: ScreenOffenseProps): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
+      <PageTitle
+        title={
+          mode === "single"
+            ? t("offense.mode.single")
+            : t("offense.mode.combination")
+        }
+      />
+
       <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="medium">
           <FancyText tag="h2" fontSize="large" fontWeight="medium">

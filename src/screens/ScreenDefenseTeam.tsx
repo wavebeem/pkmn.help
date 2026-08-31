@@ -12,6 +12,7 @@ import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { MatchupsTeam, MatchupsTeamProps } from "../components/MatchupsTeam";
 import { MultiTypeSelector } from "../components/MultiTypeSelector";
+import { PageTitle } from "../components/PageTitle";
 import { Select } from "../components/Select";
 import { SelectDivider } from "../components/SelectDivider";
 import { useGeneration } from "../hooks/useGeneration";
@@ -211,6 +212,8 @@ export function ScreenDefenseTeam(): ReactNode {
 
   return (
     <main className={clsx(styles.root, "content-wide center")}>
+      <PageTitle title={t("defense.mode.team")} />
+
       <Flex direction="column" gap="xlarge">
         <Flex direction="column" gap="large">
           <Flex direction="column" gap="medium">

@@ -24,7 +24,6 @@ import { useComputedStyleProperty } from "../hooks/useComputedStyleProperty";
 import { useFetchJSON } from "../hooks/useFetchJSON";
 import { useLanguage } from "../hooks/useLanguage";
 import { useMetaThemeColor } from "../hooks/useMetaThemeColor";
-import { usePageTitle } from "../hooks/usePageTitle";
 import { useRouteChangeFixes } from "../hooks/useRouteChangeFixes";
 import { useScrollToFragment } from "../hooks/useScrollToFragment";
 import { useTheme } from "../hooks/useTheme";
@@ -314,7 +313,6 @@ export function Layout(): ReactNode {
     ],
   );
 
-  usePageTitle(`PKMN.help \u2013 ${t("title")}`);
   useMetaThemeColor({ dataTheme, themeColor });
   useScrollToFragment();
   useRouteChangeFixes();
@@ -326,7 +324,7 @@ export function Layout(): ReactNode {
           <div className={clsx(styles.headerContent, "content-wide center")}>
             <div className={styles.heading}>
               <hgroup className={styles.titleStack}>
-                <h1 className={styles.title}>
+                <div className={styles.title}>
                   <span>
                     <span className={styles.pkmn}>pkmn</span>
                     <span className={styles.dot}>.</span>
@@ -339,7 +337,7 @@ export function Layout(): ReactNode {
                     width={24}
                     height={24}
                   />
-                </h1>
+                </div>
                 <p className={styles.subtitle}>{t("title")}</p>
               </hgroup>
             </div>

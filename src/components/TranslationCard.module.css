@@ -37,4 +37,5 @@
   grid-area: download;
   display: flex;
   justify-content: end;
+  align-self: center;
 }

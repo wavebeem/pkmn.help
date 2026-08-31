@@ -14,8 +14,8 @@
     "chooseTypes": "Choose the type for each attack move",
     "dealsXTo": "Deals up to {{ x }} damage to",
     "mode": {
-      "combination": "Atk. Dual-Type",
-      "single": "Atk. Single-Type"
+      "combination": "Dual-type attack",
+      "single": "Single-type attack"
     },
     "matchups": {
       "summary": {
@@ -130,8 +130,8 @@
       "prism_armor": "Prism Armor"
     },
     "mode": {
-      "solo": "Def. Solo",
-      "team": "Def. Team"
+      "solo": "Solo defense",
+      "team": "Team defense"
     },
     "team": {
       "tableHeading": "Matchup counts",
@@ -193,6 +193,7 @@
     }
   },
   "pokedexHelp": {
+    "title": "Pokédex help",
     "searchByName": {
       "heading": "Search by name",
       "description": "You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though."

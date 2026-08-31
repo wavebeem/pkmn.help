@@ -4,6 +4,7 @@ import { FancyLink } from "../components/FancyLink";
 import { FancyText } from "../components/FancyText";
 import { Flex } from "../components/Flex";
 import { IconBack } from "../components/icons";
+import { PageTitle } from "../components/PageTitle";
 import { Section } from "../components/Section";
 import styles from "./ScreenPokedexHelp.module.css";
 
@@ -14,17 +15,21 @@ export function ScreenPokedexHelp(): ReactNode {
       <Flex flex="auto" padding="medium" />
       <Flex flex="auto" padding="small" />
       <Flex direction="column" gap="xlarge" padding="large">
-        <Section
-          heading={
-            <FancyText tag="h2" fontSize="large" fontWeight="medium">
-              {t("pokedexHelp.searchByName.heading")}
+        <Flex direction="column" gap="large">
+          <PageTitle title={t("pokedexHelp.title")} />
+
+          <Section
+            heading={
+              <FancyText tag="h2" fontSize="large" fontWeight="medium">
+                {t("pokedexHelp.searchByName.heading")}
+              </FancyText>
+            }
+          >
+            <FancyText tag="p">
+              {t("pokedexHelp.searchByName.description")}
             </FancyText>
-          }
-        >
-          <FancyText tag="p">
-            {t("pokedexHelp.searchByName.description")}
-          </FancyText>
-        </Section>
+          </Section>
+        </Flex>
 
         <Section
           heading={
