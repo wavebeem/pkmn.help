@@ -33,7 +33,7 @@ export {
   // Search
   Search as IconSearch,
   // Clear text input
-  XCircle as IconClear,
+  X as IconClear,
   // Copy
   Copy as IconCopy,
   // Reset
