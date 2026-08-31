@@ -17,7 +17,7 @@ import {
   useLocation,
   useNavigate,
 } from "react-router-dom";
-import { useMediaQuery } from "../hooks/useMediaQuery";
+import { useMediaQuery } from "usehooks-ts";
 import { useRegisterSW } from "virtual:pwa-register/react";
 import { AppContext, AppContextProvider } from "../hooks/useAppContext";
 import { useComputedStyleProperty } from "../hooks/useComputedStyleProperty";

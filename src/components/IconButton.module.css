@@ -11,7 +11,7 @@
   align-items: center;
   fill: currentColor;
   color: var(--color-secondary);
-  border: 1px solid var(--color-border-secondary);
+  border: 1px solid var(--color-border-primary);
   background-color: transparent;
 
   &[data-size="small"] {

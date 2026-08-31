@@ -20,7 +20,7 @@ import { IconAdd } from "./icons";
 import styles from "./Matchups.module.css";
 import { Meter } from "./Meter";
 import { PlainBadge } from "./PlainBadge";
-import { useMediaQuery } from "../hooks/useMediaQuery";
+import { useMediaQuery } from "usehooks-ts";
 import { VersionGroup } from "../misc/data-version-groups";
 
 interface MatchupsProps {

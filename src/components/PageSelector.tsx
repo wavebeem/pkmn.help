@@ -12,7 +12,7 @@ import {
 } from "./icons";
 import { FancyLink } from "./FancyLink";
 import styles from "./PageSelector.module.css";
-import { useMediaQuery } from "../hooks/useMediaQuery";
+import { useMediaQuery } from "usehooks-ts";
 
 export interface PageSelectorProps<T> {
   anchorElementRef: RefObject<HTMLDivElement | null>;
