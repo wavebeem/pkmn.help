@@ -8,10 +8,10 @@ navigation.settings,Settings,Paramètres
 navigation.about,About,A propos
 navigation.menu,Menu,Menu
 navigation.close,Close,Fermer
-offense.chooseTypes,Choose the type for each attack move,Choisissez les types
-offense.dealsXTo,Deals up to {{ x }} damage to,Inflige {{ x }} à
-offense.mode.combination,Dual-type attack,Combinaison
-offense.mode.single,Single-type attack,Solo
+offense.chooseTypes,Choose the type for each attack move,Choisissez le type pour chaque attaque
+offense.dealsXTo,Deals up to {{ x }} damage to,Inflige jusqu'à {{ x }} à
+offense.mode.combination,Dual-type attack,Attaque combinée
+offense.mode.single,Single-type attack,Attaque solo
 offense.matchups.summary.heading,Matchup summary,Sommaire des match-ups
 offense.matchups.summary.damage,Damage,Dégâts
 offense.matchups.summary.combinations.heading,Combinations,Combinaisons
@@ -32,7 +32,7 @@ offense.coverageList.empty,No Pokémon found or no types selected,Aucun Pokémon
 offense.coverageList.weakness.heading,Weakness coverage list,Liste des Pokémon qui te sont faibles
 offense.coverageList.normal.heading,Neutral effectiveness coverage list,Liste des Pokémon qui te sont neutres
 offense.coverageList.resistance.heading,Resistance coverage list,Liste des Pokémon qui te résistent
-coverage.heading,Pokédex coverage,Couverture de faiblesses
+coverage.heading,Pokédex coverage,Couverture du Pokédex
 coverage.paragraph1,"Import/export custom Pokédex CSV files to see coverage for different Pokémon. Create a custom CSV file with just the OU tier Pokémon, or even create your own Pokémon from scratch.","Importez/exportez des fichiers CSV Pokédex personnalisés pour voir la couverture des faiblesses pour différents Pokémons. Créez un fichier CSV personnalisé avec juste le tier Pokémon OU (overused), ou créez votre Pokémon depuis zéro."
 coverage.paragraph2,"CSV data is loaded by column header name, not column order, so you can add or re-order columns if you want (e.g. add a “tier” column, or a “notes” column).","Les données CSV sont chargées par nom d'en-tête de colonne, et non par ordre de colonne. Vous pouvez donc ajouter ou réorganiser des colonnes si vous le souhaitez (par exemple, ajouter une colonne ""tier"" ou une colonne ""notes"")."
 coverage.paragraph3,"CSV files can be edited with Google Sheets, LibreOffice, and more.","Les dossiers CSV peuvent être modifiés avec Google Sheets, LibreOffice et d'autres."
@@ -53,7 +53,7 @@ coverage.status.exported,Exported default Pokémon forms,Pokémon exporté par d
 coverage.status.reset,Loaded default Pokémon forms,Pokémon chargé par défaut
 coverage.status.errored,Error loading CSV. Don't change header names.,Erreur de chargement CSV. Ne pas changer le nom des entêtes.
 coverage.back,Back to offense,"Retour à l'onglet ""Couverture offensive"""
-defense.chooseTypes,Choose defending Pokémon types,Choisissez les types
+defense.chooseTypes,Choose defending Pokémon types,Choisissez les types du Pokémon défenseur
 defense.takesXFrom,Takes {{ x }} from,Subit {{ x }} de
 defense.chooseAbility,Choose ability,Choisir le talent
 defense.chooseTeraType,Choose tera type,Choisir le type téracristal
@@ -126,9 +126,9 @@ pokedex.stats.speed,Speed,Vit.
 pokedex.stats.speedLong,Speed,Vitesse
 pokedex.stats.total,Total,Total
 pokedex.stats.totalLong,Total,Total
-pokedexHelp.title,Pokédex help,
+pokedexHelp.title,Pokédex help,Pokédex - Aide
 pokedexHelp.searchByName.heading,Search by name,Rechercher par nom
-pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Vous pouvez rechercher un Pokémon par nom. Si vous ne vous rappelez que d'une partie du nom du Pokémon, cela fera probablement l'affaire. Le site ne peut pas gérer les fautes de frappes pour l'instant."
+pokedexHelp.searchByName.description,"You can search for a Pokémon by name. If you only remember part of the Pokémon's name, It can still probably find it for you. It can't deal with typos right now though.","Vous pouvez rechercher un Pokémon par nom. Si vous ne vous rappelez que d'une partie du nom du Pokémon, cela fera probablement l'affaire. Si vous vous souvenez du nom du Pokémon en anglais, le site le trouvera. Le site ne peut pas gérer les fautes de frappes pour l'instant."
 pokedexHelp.searchByNumber.heading,Search by number,Rechercher par nombre
 pokedexHelp.searchByNumber.description,"Search by national dex number. If you want Bulbasaur, type 1, #1, 001, #0001, etc.","Recherche par numéro de Pokédex national. Si vous souhaitez rechercher Bulbizarre, tapez 1 et non #001."
 pokedexHelp.searchByType.heading,Search by type,Recherche par type
@@ -143,7 +143,7 @@ pokedexHelp.back,Back to Pokédex,Revenir au Pokédex
 about.easterEgg.button,Show random Pokémon,Montrer un Pokémon aléatoire
 more.contact.heading,Contact me,Me contacter
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Bonjour, je suis <homepage>Sage</homepage> (iel), le·a créateur·ice de PKMN.help (Calulateur de Type Pokémon)"
-more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,"Si vous avez des idées et/ou des remerciements, vous pouvez les envoyer à <email>pkmn@wavebeem.com</email>."
+more.contact.email,"Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>. I'm just one person spending my free time making this site, so please be kind. I read every email and value your honest feedback.","Vous pouvez envoyer vos remerciements et vos suggestions à <email>pkmn@wavebeem.com</email>. Je suis seul⸱e a faire ce site pendant mon temps libre, donc soyez gentil. Je lis chaque mails et vos retours sont très précieux."
 more.settings.heading,Settings,Paramètres
 more.settings.language.label,Language,Langage
 more.settings.language.default,Auto detect language,Détecter automatiquement la langue
@@ -163,7 +163,7 @@ more.settings.typeCount.help,Pokémon can briefly have three types at once if hi
 more.settings.typeCount.values.2,Two types (2),Deux types (2)
 more.settings.typeCount.values.3,Three types (3),Trois types (3)
 more.settings.battleVariant.label,Battle variant,Variation de combat
-more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.","Durant un Combat Inversé, les affinités de types sont inversés et aucun type est immunisé contre un autre type."
+more.settings.battleVariant.help,"During an Inverse Battle, type matchups are reversed and no type is immune to any other type.","Durant un Combat Inversé, les affinités de types sont inversés et aucun type n'est immunisé contre un autre type."
 more.settings.battleVariant.values.regular,Regular,Combat régulier
 more.settings.battleVariant.values.inverse_battle,Inverse Battle,Combat Inversé
 more.changes.heading,What’s new,Quoi de neuf

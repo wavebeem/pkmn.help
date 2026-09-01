@@ -143,7 +143,7 @@ pokedexHelp.back,Back to Pokédex,Zurück zum Pokédex
 about.easterEgg.button,Show random Pokémon,Zufälliges Pokémon anzeigen
 more.contact.heading,Contact me,Kontakt
 more.contact.intro,"Hi, I'm <homepage>Sage</homepage> (they/them), the creator of PKMN.help (Pokémon Type Calculator).","Hallo, ich bin <homepage>Sage</homepage> (they/them), die Person hinter PKMN.help (Pokémon-Typenrechner)."
-more.contact.email,Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>.,Bitte sende dein Feedback und Dankeschön an <email>pkmn@wavebeem.com</email>.
+more.contact.email,"Please email your thoughts and thanks to <email>pkmn@wavebeem.com</email>. I'm just one person spending my free time making this site, so please be kind. I read every email and value your honest feedback.",Bitte sende dein Feedback und Dankeschön an <email>pkmn@wavebeem.com</email>.
 more.settings.heading,Settings,Einstellungen
 more.settings.language.label,Language,Sprache
 more.settings.language.default,Auto detect language,Sprache automatisch erkennen

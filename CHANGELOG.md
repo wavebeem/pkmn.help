@@ -2,6 +2,12 @@
 
 A list of user-facing changes to PKMN.help in newest-first order.
 
+## 2026-08-31
+
+- Updated French translation
+
+- Fixed an animation issue with type and ability buttons
+
 ## 2026-08-30
 
 - Redesigned visuals based on [Material Design 3](https://m3.material.io/)

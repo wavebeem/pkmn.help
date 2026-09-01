@@ -14,8 +14,9 @@
   font-weight: var(--label-font-weight);
   letter-spacing: var(--label-letter-spacing);
   border-radius: var(--_radius-round);
-  transition: border-radius var(--motion-duration-short3)
-    var(--motion-easing-standard);
+  transition-duration: var(--motion-duration-short3);
+  transition-timing-function: var(--motion-easing-standard);
+  transition-property: border-radius, background-color, color;
 
   &:active {
     background-image: radial-gradient(var(--state-press));
@@ -57,8 +58,9 @@
   background: var(--color-tertiary);
   color: var(--color-tertiary-fg);
   border-radius: var(--_radius-round);
-  transition: border-radius var(--motion-duration-short3)
-    var(--motion-easing-standard);
+  transition-duration: var(--motion-duration-short3);
+  transition-timing-function: var(--motion-easing-standard);
+  transition-property: border-radius, background-color, color;
 }
 
 :where(.button[data-type="stellar"]) .checkbox {
