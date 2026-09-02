@@ -296,16 +296,6 @@ export function matchupFor({
     ) {
       x = 2;
     }
-    // Thousand Arrows deals regular damage to Flying instead of zero
-    //
-    // https://bulbapedia.bulbagarden.net/wiki/Thousand_Arrows_(move)
-    if (
-      t === Type.flying &&
-      specialMove === "thousand_arrows" &&
-      offenseType === Type.ground
-    ) {
-      x = 1;
-    }
     // During an Inverse Battle, type matchups are reversed and no type is
     // immune to any other type.
     //
@@ -320,6 +310,17 @@ export function matchupFor({
       }
     }
     n *= x;
+  }
+  // Thousand Arrows deals neutral damage to Flying-type Pokémon, regardless
+  // of their secondary type, instead of the type chart's usual result
+  //
+  // https://bulbapedia.bulbagarden.net/wiki/Thousand_Arrows_(move)
+  if (
+    specialMove === "thousand_arrows" &&
+    offenseType === Type.ground &&
+    defenseTypes.includes(Type.flying)
+  ) {
+    n = 1;
   }
   // Tera Pokémon take double damage from Stellar attacks
   //

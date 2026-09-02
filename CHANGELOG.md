@@ -2,6 +2,13 @@
 
 A list of user-facing changes to PKMN.help in newest-first order.
 
+## 2026-09-01
+
+- _Thousand Arrows_ now correctly ignores the second type of Flying type
+  Pokémon, dealing 1x damage regardless
+
+- Fixed an issue where the "update" badge was green on a red background
+
 ## 2026-08-31
 
 - Updated French translation
