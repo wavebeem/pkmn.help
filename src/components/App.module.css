@@ -237,7 +237,7 @@
 
 .mobileTabBar {
   background: var(--color-tabs-base);
-  color: var(--color-secondary);
+  color: var(--color-primary);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 

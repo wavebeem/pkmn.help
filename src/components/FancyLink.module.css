@@ -24,7 +24,9 @@
   align-items: center;
   justify-content: center;
   gap: var(--padding2);
-  border: 1px solid rgb(from var(--color-link) r g b / 50%);
+  background: var(--color-secondary-container-bg);
+  color: var(--color-secondary-container-fg);
+  border: 1px solid transparent;
   border-radius: var(--border-radius-pill);
   padding: var(--padding1) calc(var(--padding1) + var(--padding2));
   font-weight: var(--label-font-weight);

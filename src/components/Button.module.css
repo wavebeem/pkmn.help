@@ -45,7 +45,7 @@
 
   &[data-variant="outlined"]:where(:not(:disabled)) {
     background-color: transparent;
-    border-color: var(--color-border-primary);
+    border-color: var(--color-border-secondary);
     color: var(--color-primary);
   }
 }

@@ -16,7 +16,7 @@
   margin-inline: var(--padding2);
   padding: var(--padding2) var(--padding4);
   text-align: start;
-  color: var(--color-link);
+  color: var(--color-primary);
   border: 1px solid transparent;
   border-radius: var(--border-radius-pill);
   outline-color: currentColor;

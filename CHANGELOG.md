@@ -2,6 +2,10 @@
 
 A list of user-facing changes to PKMN.help in newest-first order.
 
+## 2026-09-04
+
+- Further adjusted colors to better establish visual hierarchy
+
 ## 2026-09-01
 
 - _Thousand Arrows_ now correctly ignores the second type of Flying type
