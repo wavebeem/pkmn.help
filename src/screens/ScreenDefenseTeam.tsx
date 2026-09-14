@@ -123,6 +123,13 @@ export function ScreenDefenseTeam(): ReactNode {
         }),
       );
     }
+    if (search.has("add_types")) {
+      const newTypes = typesFromString(search.get("add_types") || "").slice(
+        0,
+        Number(typeCount),
+      );
+      setTeamTypes((teamTypes) => [...teamTypes, newTypes]);
+    }
     if (search.has("tera")) {
       setTeamTeraTypes(
         search.getAll("tera").map((type) => {
@@ -283,6 +290,7 @@ export function ScreenDefenseTeam(): ReactNode {
                           tag="h3"
                           fontSize="large"
                           fontWeight="normal"
+                          fontWidth="condensed"
                         >
                           {t("defense.chooseTypes")}
                         </FancyText>

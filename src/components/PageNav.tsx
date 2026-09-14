@@ -3,6 +3,7 @@ import { MouseEvent, ReactNode, useCallback } from "react";
 import { useTranslation } from "react-i18next";
 import { NavLink } from "react-router-dom";
 import { useAppContext } from "../hooks/useAppContext";
+import { FancyText } from "./FancyText";
 import styles from "./PageNav.module.css";
 import {
   IconAbout,
@@ -34,7 +35,14 @@ export function PageNav({ position }: PageNavProps): ReactNode {
 
   return (
     <nav className={styles.tabBar} data-position={position}>
-      <span className={styles.tabSection}>{t("navigation.offense")}</span>
+      <FancyText
+        tag="span"
+        className={styles.tabSection}
+        fontWidth="condensed"
+        allCaps
+      >
+        {t("navigation.offense")}
+      </FancyText>
       <NavLink
         onClick={onNavLinkClick}
         className={tabClass}
@@ -53,7 +61,14 @@ export function PageNav({ position }: PageNavProps): ReactNode {
         <IconOffenseDual size={24} />
         <span className={styles.label}>{t("offense.mode.combination")}</span>
       </NavLink>
-      <span className={styles.tabSection}>{t("navigation.defense")}</span>
+      <FancyText
+        tag="span"
+        className={styles.tabSection}
+        fontWidth="condensed"
+        allCaps
+      >
+        {t("navigation.defense")}
+      </FancyText>
       <NavLink
         onClick={onNavLinkClick}
         className={tabClass}
@@ -72,7 +87,14 @@ export function PageNav({ position }: PageNavProps): ReactNode {
         <IconDefenseTeam size={24} />
         <span className={styles.label}>{t("defense.mode.team")}</span>
       </NavLink>
-      <span className={styles.tabSection}>{t("navigation.other")}</span>
+      <FancyText
+        tag="span"
+        className={styles.tabSection}
+        fontWidth="condensed"
+        allCaps
+      >
+        {t("navigation.other")}
+      </FancyText>
       <NavLink onClick={onNavLinkClick} className={tabClass} end to="/pokedex/">
         <IconPokedex size={24} />
         <span className={styles.label}>{t("navigation.pokedex")}</span>

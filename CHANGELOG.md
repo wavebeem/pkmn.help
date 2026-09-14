@@ -2,6 +2,17 @@
 
 A list of user-facing changes to PKMN.help in newest-first order.
 
+## 2026-09-13
+
+- Added a new Pokédex icon to add a Pokémon to the "Team defense" page's team
+
+- Toned down the extremely bright greens used in dark mode
+
+- Updated headings to condensed width for style reasons and to save space on
+  mobile
+
+- Menu section headers are now in all caps to better balance their emphasis
+
 ## 2026-09-04
 
 - Further adjusted colors to better establish visual hierarchy

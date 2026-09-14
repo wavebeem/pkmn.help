@@ -11,6 +11,7 @@ import { Flex } from "./Flex";
 import {
   IconCry,
   IconDefenseSolo,
+  IconDefenseTeam,
   IconGender,
   IconOffenseDual,
   IconOffenseSingle,
@@ -40,6 +41,9 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
     types: pokemon.types.join(" "),
     ability: "none",
     tera_type: "none",
+  });
+  const teamParams = new URLSearchParams({
+    add_types: pokemon.types.join(" "),
   });
   const speciesName = pokemon.speciesNames[language] || pokemon.speciesNames.en;
   const formName = pokemon.formNames[language] || pokemon.formNames.en;
@@ -216,6 +220,15 @@ export function Monster({ pokemon, setQuery }: MonsterProps): ReactNode {
             id={`${idPrefix}-defense`}
           >
             <IconDefenseSolo size={24} aria-label={t("defense.mode.solo")} />
+          </FancyLink>
+          <FancyLink
+            iconOnly
+            outlined
+            aria-labelledby={`${idPrefix}-defense-team ${idPrefix}-name ${idPrefix}-form`}
+            to={`/defense/team/?${teamParams}`}
+            id={`${idPrefix}-defense-team`}
+          >
+            <IconDefenseTeam size={24} aria-label={t("defense.mode.team")} />
           </FancyLink>
           <Flex flex="auto" />
           <FancyLink

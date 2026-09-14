@@ -152,7 +152,12 @@ export function Matchups({
                     // different groups
                     key={`${eff}-${i}`}
                     heading={
-                      <FancyText tag="h3" fontWeight="normal" fontSize="medium">
+                      <FancyText
+                        tag="h3"
+                        fontWeight="normal"
+                        fontSize="medium"
+                        fontWidth="condensed"
+                      >
                         <Flex>
                           <div>
                             {t("offense.dealsXTo", {

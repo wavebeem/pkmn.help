@@ -119,6 +119,32 @@ const router = createBrowserRouter([
       { path: "translation", element: <ScreenTranslation /> },
       { path: "about", element: <ScreenAbout /> },
       { path: "settings", element: <ScreenSettings /> },
+      {
+        // Not linked from anywhere in the app UI, and lazy-loaded so it's
+        // never bundled or precached for offline use for regular visitors.
+        // See the "dev-only" manualChunks entry in vite.config.ts.
+        path: "_",
+        children: [
+          {
+            index: true,
+            async lazy() {
+              const { ScreenDevIndex } = await import(
+                "../screens/ScreenDevIndex"
+              );
+              return { Component: ScreenDevIndex };
+            },
+          },
+          {
+            path: "style-guide",
+            async lazy() {
+              const { ScreenDevStyleGuide } = await import(
+                "../screens/ScreenDevStyleGuide"
+              );
+              return { Component: ScreenDevStyleGuide };
+            },
+          },
+        ],
+      },
       { path: "_error", element: <Crash /> },
       { path: "*", element: <Navigate replace to="/defense/solo/" /> },
     ],

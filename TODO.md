@@ -1,16 +1,7 @@
-- Should this be an Astro site?
+- Rewrite "team defense" to have a better URL format and better state management
 
-  - I have almost zero useful HTML (even though yes it's an SPA)
+  - While we're at it, allowing the user to store a name for the monster would
+    probably really help them remember what their team is building toward
 
-  - I have a ton of "build time assets" that I managed through increasingly
-    despair-inducing mechanisms
-
-    - Translation CSVs
-
-    - Changelog
-
-    - Licenses
-
-    - Fallback page without scary JS that could crash
-
-  - Probably not, but worth asking...
+  - It could prefill with a Pokemon name if they have one, but they could also
+    name it something generic or role based like "Tank" or "Anti-Fairy"

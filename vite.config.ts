@@ -153,6 +153,22 @@ export default defineConfig((env) => {
     },
     build: {
       sourcemap: true,
+      rollupOptions: {
+        output: {
+          // Force the internal-only "/_/" screens into a chunk with a name we
+          // control (rather than one derived from their source filenames), so
+          // the workbox globIgnores below can reliably exclude it from
+          // precaching without depending on hashed build output. See
+          // src/components/App.tsx's "_" route.
+          manualChunks(id) {
+            const normalized = id.replaceAll("\\", "/");
+            // Matches both ScreenDevIndex and ScreenDevStyleGuide.
+            if (normalized.includes("/src/screens/ScreenDev")) {
+              return "dev-only";
+            }
+          },
+        },
+      },
     },
     css: {
       modules: {
@@ -270,6 +286,10 @@ export default defineConfig((env) => {
             /^\/licenses\//,
             /^\/credits\//,
           ],
+          // The "/_/" dev-only screens (see the "dev-only" manualChunks entry
+          // above) are never linked from the app, so don't force every visitor
+          // to download them in the background.
+          globIgnores: ["**/dev-only-*.{js,css}"],
         },
       }),
     ],

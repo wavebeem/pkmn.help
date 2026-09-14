@@ -7,9 +7,11 @@ export interface FancyTextProps extends HTMLAttributes<HTMLElement> {
   textAlign?: "left" | "center" | "right";
   fontWeight?: "normal" | "medium";
   fontSize?: "small" | "medium" | "large" | "xlarge" | "xxlarge";
+  fontWidth?: "normal" | "condensed";
   color?: "primary" | "secondary" | "disabled";
   inline?: boolean;
   tabularNums?: boolean;
+  allCaps?: boolean;
 }
 
 export function FancyText({
@@ -18,8 +20,10 @@ export function FancyText({
   textAlign,
   fontWeight,
   fontSize,
+  fontWidth,
   tabularNums,
   inline,
+  allCaps,
   color,
   ...props
 }: FancyTextProps): ReactNode {
@@ -29,8 +33,10 @@ export function FancyText({
       data-text-align={textAlign}
       data-font-size={fontSize}
       data-font-weight={fontWeight}
+      data-font-width={fontWidth}
       data-tabular-nums={tabularNums}
       data-inline={inline}
+      data-all-caps={allCaps}
       data-color={color}
       {...props}
     />

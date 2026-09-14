@@ -37,22 +37,46 @@ const darkNeutralSeedHex = "#fac000"; // electric
 
 // Per-role tone assignments for a role built from a single TonalPalette at
 // contrastLevel 0. Same values as @material/material-color-utilities's own
-// customColor() helper (utils/theme_utils.js).
+// customColor() helper (utils/theme_utils.js). Fixed roles use the same tone in
+// light and dark mode, per the M3 spec.
 const CUSTOM_ROLE_TONES = {
   light: {
     color: 40,
     onColor: 100,
     colorContainer: 90,
     onColorContainer: 10,
+    fixed: 90,
+    fixedDim: 80,
+    onFixed: 10,
+    onFixedVariant: 30,
   },
   dark: {
     color: 80,
     onColor: 20,
     colorContainer: 30,
     onColorContainer: 90,
+    fixed: 90,
+    fixedDim: 80,
+    onFixed: 10,
+    onFixedVariant: 30,
   },
 };
 type ToneKey = keyof typeof CUSTOM_ROLE_TONES.light;
+
+// Above this tone, sRGB can't hold much chroma for red/blue hues, but green
+// barely tapers off at all -- so an uncapped tone 80+ makes tertiary (grass)
+// look neon next to primary/secondary's pastels at the same tone. Cap chroma
+// there to keep all three accents in the same family.
+const HIGH_TONE_THRESHOLD = 70;
+const HIGH_TONE_MAX_CHROMA = 36;
+
+function customTone(palette: TonalPalette, tone: number): number {
+  const chroma =
+    tone >= HIGH_TONE_THRESHOLD
+      ? Math.min(palette.chroma, HIGH_TONE_MAX_CHROMA)
+      : palette.chroma;
+  return Hct.from(palette.hue, chroma, tone).toInt();
+}
 
 // One TonalPalette per accent, keyed by its role-name prefix.
 const CUSTOM_PALETTES: { prefix: string; palette: TonalPalette }[] = [
@@ -82,6 +106,18 @@ function matchCustomRole(
     }
     if (cssName === `on-${prefix}-container`) {
       return { palette, toneKey: "onColorContainer" };
+    }
+    if (cssName === `${prefix}-fixed`) {
+      return { palette, toneKey: "fixed" };
+    }
+    if (cssName === `${prefix}-fixed-dim`) {
+      return { palette, toneKey: "fixedDim" };
+    }
+    if (cssName === `on-${prefix}-fixed`) {
+      return { palette, toneKey: "onFixed" };
+    }
+    if (cssName === `on-${prefix}-fixed-variant`) {
+      return { palette, toneKey: "onFixedVariant" };
     }
   }
   return undefined;
@@ -153,10 +189,10 @@ function buildLines(): string {
     let darkHex: string;
     if (custom) {
       lightHex = hexFromArgb(
-        custom.palette.tone(CUSTOM_ROLE_TONES.light[custom.toneKey]),
+        customTone(custom.palette, CUSTOM_ROLE_TONES.light[custom.toneKey]),
       );
       darkHex = hexFromArgb(
-        custom.palette.tone(CUSTOM_ROLE_TONES.dark[custom.toneKey]),
+        customTone(custom.palette, CUSTOM_ROLE_TONES.dark[custom.toneKey]),
       );
     } else if (isNeutralRoleName(cssName)) {
       lightHex = hexFromArgb(roleValue(neutralLight, roleName));

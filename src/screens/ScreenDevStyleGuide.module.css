@@ -1,0 +1,143 @@
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding3);
+}
+
+.swatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 1 0%;
+  min-height: 64px;
+  padding: var(--padding2);
+  font-size: 0.75rem;
+  line-height: 1.15;
+  font-weight: var(--weight-medium);
+  letter-spacing: var(--label-letter-spacing);
+
+  &.wide {
+    flex: 2 1 0%;
+  }
+
+  &.small {
+    min-height: 40px;
+  }
+}
+
+.hexButton {
+  align-self: flex-end;
+  padding: 2px 4px;
+  border: none;
+  border-radius: var(--border-radius0);
+  background: none;
+  color: inherit;
+  font-size: 0.65rem;
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      background: rgb(from currentcolor r g b / 20%);
+    }
+  }
+
+  &:active {
+    background: rgb(from currentcolor r g b / 35%);
+  }
+
+  &:focus-visible {
+    outline: currentcolor solid 1px;
+    outline-offset: 1px;
+  }
+}
+
+.pair {
+  display: flex;
+  flex-direction: column;
+}
+
+.accent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--padding3);
+  flex: 3 1 480px;
+}
+
+.accentColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.fixed {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--padding3);
+  flex: 3 1 480px;
+}
+
+.fixedGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.fixedTop {
+  display: flex;
+}
+
+.errorInverse {
+  display: flex;
+  gap: var(--padding3);
+  flex: 1 1 320px;
+}
+
+.error {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1 1 160px;
+}
+
+.inverse {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1 1 160px;
+}
+
+.scrimShadow {
+  display: flex;
+  gap: 2px;
+}
+
+.surface {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.surfaceRow {
+  display: flex;
+}
+
+.seeds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--padding3);
+}
+
+@media (width < 40rem) {
+  .accent,
+  .fixed {
+    grid-template-columns: 1fr;
+  }
+
+  .errorInverse,
+  .fixedTop,
+  .scrimShadow,
+  .surfaceRow,
+  .seeds {
+    flex-direction: column;
+  }
+}
