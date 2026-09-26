@@ -487,6 +487,31 @@ export function restoreRegionalVariantsInPokedex({
       };
       break;
     }
+    case "champions": {
+      // Both the base species and its regional variant are independently
+      // obtainable in Pokémon Champions.
+      additions = {
+        raichu: ["raichu-alola"],
+        ninetales: ["ninetales-alola"],
+        persian: ["persian-alola"],
+        arcanine: ["arcanine-hisui"],
+        slowbro: ["slowbro-galar"],
+        slowking: ["slowking-galar"],
+        typhlosion: ["typhlosion-hisui"],
+        samurott: ["samurott-hisui"],
+        zoroark: ["zoroark-hisui"],
+        stunfisk: ["stunfisk-galar"],
+        goodra: ["goodra-hisui"],
+        avalugg: ["avalugg-hisui"],
+        decidueye: ["decidueye-hisui"],
+        tauros: [
+          "tauros-paldea-combat-breed",
+          "tauros-paldea-blaze-breed",
+          "tauros-paldea-aqua-breed",
+        ],
+      };
+      break;
+    }
     default: {
       break;
     }

@@ -2,6 +2,14 @@
 
 A list of user-facing changes to PKMN.help in newest-first order.
 
+## 2026-09-26
+
+- Updated Pokémon Champions Pokédex
+
+  - Added missing species from version 1.2.0
+
+  - Added missing regional forms
+
 ## 2026-09-13
 
 - Added a new Pokédex icon to add a Pokémon to the "Team defense" page's team
