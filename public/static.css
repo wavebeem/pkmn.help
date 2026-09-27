@@ -11,9 +11,11 @@
 html {
   --color-light: #fef8f4;
   --color-dark: #151311;
+  --theme-background: light-dark(var(--color-light), var(--color-dark));
+  --theme-text: light-dark(var(--color-dark), var(--color-light));
   color-scheme: light dark;
-  background: light-dark(var(--color-light), var(--color-dark));
-  color: light-dark(var(--color-dark), var(--color-light));
+  background: var(--theme-background);
+  color: var(--theme-text);
 }
 
 body {
@@ -88,4 +90,16 @@ li > ol {
   padding-left: 3rem;
   margin-left: -1rem;
   border-left: 2px solid color-mix(in srgb, currentColor 10%, transparent);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  background-color: var(--theme-background);
+  padding-block: 1rem 1rem;
+
+  a {
+    text-decoration-line: none;
+    font-weight: 500;
+  }
 }

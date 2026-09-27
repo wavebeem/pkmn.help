@@ -7,25 +7,23 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { homeLink } from "./lib/homeLink.js";
 import { markdown } from "./lib/markdown.js";
+import { html } from "./lib/html.js";
 
 const credits = await readFile("CREDITS.md", "utf-8");
 const body = markdown.render(credits);
 
-const html = `<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Credits - PKMN.help</title>
-<link rel="stylesheet" href="/static.css" />
-</head>
-<body>
-${homeLink}
-${body}
-${homeLink}
-</body>
-</html>
-`;
+const content = html`<!doctype html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Credits &ndash; PKMN.help</title>
+      <link rel="stylesheet" href="/static.css" />
+    </head>
+    <body>
+      ${homeLink} ${body}
+    </body>
+  </html>`;
 
 await mkdir("public/credits", { recursive: true });
-await writeFile("public/credits/index.html", html, "utf-8");
+await writeFile("public/credits/index.html", content, "utf-8");
