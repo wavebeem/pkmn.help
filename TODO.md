@@ -5,3 +5,5 @@
 
   - It could prefill with a Pokemon name if they have one, but they could also
     name it something generic or role based like "Tank" or "Anti-Fairy"
+
+- Add analytics around recover.js usage

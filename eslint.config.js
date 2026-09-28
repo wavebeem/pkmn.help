@@ -2,7 +2,10 @@
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import react from "eslint-plugin-react";
+import globals from "globals";
 
+// TODO: ESLint's own `defineConfig`
+// https://typescript-eslint.io/packages/typescript-eslint/#config-deprecated
 export default tseslint.config(
   eslint.configs.recommended,
   tseslint.configs.recommended,
@@ -29,5 +32,12 @@ export default tseslint.config(
       // TODO: Do the work to enable this
       "@typescript-eslint/explicit-module-boundary-types": "error",
     },
-  }
+  },
+  {
+    files: ["public/**/*.js"],
+    languageOptions: {
+      sourceType: "script",
+      globals: globals.browser,
+    },
+  },
 );
