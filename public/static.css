@@ -11,36 +11,92 @@
 html {
   --color-light: #fef8f4;
   --color-dark: #151311;
+  --color-accent-light: #c00014;
+  --color-accent-dark: #ffb4ab;
+  --color-accent-text-light: #ffffff;
+  --color-accent-text-dark: #690006;
+  --color-link-light: #005cb9;
+  --color-link-dark: #aac7ff;
   --theme-background: light-dark(var(--color-light), var(--color-dark));
   --theme-text: light-dark(var(--color-dark), var(--color-light));
+  --theme-accent: light-dark(
+    var(--color-accent-light),
+    var(--color-accent-dark)
+  );
+  --theme-accent-text: light-dark(
+    var(--color-accent-text-light),
+    var(--color-accent-text-dark)
+  );
+  --theme-link: light-dark(var(--color-link-light), var(--color-link-dark));
+  --theme-subtle: rgb(from var(--theme-text) r g b / 50%);
+  --theme-divider: rgb(from var(--theme-text) r g b / 10%);
   color-scheme: light dark;
   background: var(--theme-background);
   color: var(--theme-text);
+  scrollbar-color: var(--theme-accent) transparent;
 }
 
 body {
   font-family: "Roboto", system-ui, sans-serif;
   line-height: 1.5;
-  max-width: 80ch;
   margin: 0 auto;
   padding: 1rem 1.5rem 3rem;
   font-size: 1.25rem; /* --font-size2 */
+  max-width: 80ch;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:focus-visible {
+  outline: 3px solid var(--theme-accent);
+  outline-offset: -1px;
+  box-shadow: 0 0 0 12px var(--theme-background);
+}
+
+strong {
+  font-weight: 500;
 }
 
 h1 {
-  font-size: 1.75rem; /* --font-size4 */
-  font-weight: 500; /* --weight-medium */
+  font-size: 1.75rem;
+  font-weight: 500;
   line-height: 1.25;
-  margin: 0 0 1rem;
+  margin-block: 5rem 1rem;
+
+  @media (width >= 60rem) {
+    font-size: 2.5rem;
+  }
+
+  &::before {
+    font-size: smaller;
+    vertical-align: center;
+    content: "#";
+    margin-right: 1ch;
+    color: var(--theme-subtle);
+  }
 }
 
 h2 {
-  font-size: 1.5rem; /* --font-size3 */
-  font-weight: 500; /* --weight-medium */
+  font-size: 1.5rem;
+  font-weight: 500;
   line-height: 1.25;
-  margin-top: 2rem;
+  margin-top: 3rem;
   padding-top: 1rem;
   overflow-wrap: anywhere;
+
+  @media (width >= 60rem) {
+    font-size: 1.75rem;
+  }
+
+  &::before {
+    font-size: smaller;
+    vertical-align: center;
+    content: "##";
+    margin-right: 1ch;
+    color: var(--theme-subtle);
+  }
 }
 
 h3 {
@@ -66,9 +122,19 @@ pre {
 }
 
 a {
-  color: inherit;
+  color: var(--theme-link);
   text-underline-offset: calc(1em / 6);
   text-decoration-thickness: 2px;
+  border-radius: 0.25rem;
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:focus-visible {
+    outline-offset: 4px;
+    text-decoration-line: none;
+  }
 }
 
 ul,
@@ -78,28 +144,52 @@ ol {
 }
 
 ul {
-  list-style-type: "– ";
+  list-style-type: "\2013\00A0";
 }
 
 li {
   margin: 0.5rem 0;
+
+  &::marker {
+    color: var(--theme-subtle);
+  }
 }
 
 li > ul,
 li > ol {
   padding-left: 3rem;
   margin-left: -1rem;
-  border-left: 2px solid color-mix(in srgb, currentColor 10%, transparent);
+  border-left: 2px solid var(--theme-divider);
 }
 
 nav {
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-color: var(--theme-background);
-  padding-block: 1rem 1rem;
+  left: 0;
+  width: 100dvw;
+  margin-block: 0 2rem;
+  padding: 1rem;
+  padding-bottom: 4rem;
+  background: linear-gradient(
+    rgb(from var(--theme-background) r g b / 80%) 0 calc(100% - 3rem),
+    transparent
+  );
+  display: flex;
+  pointer-events: none;
 
   a {
+    pointer-events: initial;
     text-decoration-line: none;
     font-weight: 500;
+    border: 0;
+    padding: 0.125rem 1rem;
+    border-radius: 2rem;
+    display: block;
+    background-color: var(--theme-accent);
+    color: var(--theme-accent-text);
+
+    &:focus-visible {
+      outline-offset: 2px;
+    }
   }
 }

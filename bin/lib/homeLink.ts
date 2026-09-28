@@ -4,4 +4,4 @@
 import { html } from "./html.js";
 
 // own router.
-export const homeLink = html`<nav><a href="/">Back to PKMN.help</a></nav>`;
+export const homeLink = html`<nav><a href="/">Back</a></nav>`;
