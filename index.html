@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr" data-theme="auto">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,10 @@
       content="default-src 'self'; script-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline';"
     />
     <title>%VITE_HTML_TITLE% &ndash; %VITE_HTML_DESCRIPTION%</title>
-    <meta name="og:title" content="%VITE_HTML_TITLE% - %VITE_HTML_DESCRIPTION%" />
+    <meta
+      name="og:title"
+      content="%VITE_HTML_TITLE% - %VITE_HTML_DESCRIPTION%"
+    />
     <meta name="theme-color" content="" />
     <link
       rel="prefetch"
@@ -61,6 +64,7 @@
     <meta name="description" content="%VITE_HTML_DESCRIPTION%" />
     <meta name="og:description" content="%VITE_HTML_DESCRIPTION%" />
     <link rel="stylesheet" href="/src/style/index.css" />
+    <script src="/recover.js" vite-ignore></script>
     <script type="module" src="/src/main.tsx"></script>
     <script
       defer
@@ -77,15 +81,51 @@
           <h1>%VITE_HTML_TITLE%</h1>
           <p><small>%VITE_HTML_DESCRIPTION%</small></p>
         </hgroup>
-        <p>This app requires JavaScript. Make sure you have it enabled.</p>
         <p>
-          Email
-          <a href="mailto:pkmn@wavebeem.com">pkmn@wavebeem.com</a>
-          if you have difficulty loading the site.
+          <strong>Loading...</strong>
+          <small>(This app requires JavaScript to continue)</small>
+        </p>
+        <details>
+          <summary>Stuck on this screen? Troubleshooting steps:</summary>
+          <p>
+            <button id="fallback-content-recover-button" type="button">
+              Try to fix automatically
+            </button>
+          </p>
+          <p><small>(or)</small></p>
+          <dl>
+            <dt>Desktop</dt>
+            <dd>
+              <kbd>Control</kbd> <small>+</small> <kbd>Shift</kbd>
+              <small>+</small> <kbd>R</kbd>
+              <small>(or)</small>
+            </dd>
+            <dd>
+              <kbd>Command</kbd> <small>+</small> <kbd>Shift</kbd>
+              <small>+</small> <kbd>R</kbd>
+              <small>(or)</small>
+            </dd>
+            <dd>
+              Hold <kbd>Shift</kbd> while clicking the <strong>Reload</strong>
+              <i>&#x21BB;</i> button in your browser.
+            </dd>
+            <dt>Mobile</dt>
+            <dd>
+              Close all PKMN.help tabs and reopen it, or clear the site's data
+              from your browser's settings.
+            </dd>
+          </dl>
+        </details>
+        <p>
+          Please email Sage (<a href="mailto:pkmn@wavebeem.com"
+            ><strong>pkmn<wbr />@wavebeem.com</strong></a
+          >) if you have difficulty loading the site.
         </p>
         <footer>
-          &copy;
-          <a href="https://www.wavebeem.com/">Sage Fennel Mock</a>
+          <small>
+            &copy;
+            <a href="https://www.wavebeem.com/">Sage Fennel Mock</a>
+          </small>
         </footer>
       </div>
     </div>

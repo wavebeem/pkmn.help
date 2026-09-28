@@ -100,8 +100,8 @@ h2 {
 }
 
 h3 {
-  font-size: 1.25rem; /* --font-size2 */
-  font-weight: 500; /* --weight-medium */
+  font-size: 1.25rem;
+  font-weight: 500;
   line-height: 1.25;
   margin-top: 1.5rem;
 }
@@ -113,7 +113,7 @@ p {
 pre {
   white-space: pre-wrap;
   overflow-wrap: anywhere;
-  font-size: 1rem; /* --font-size1 */
+  font-size: 1rem;
   opacity: 0.85;
 
   font-family:
@@ -177,6 +177,7 @@ nav {
   display: flex;
   pointer-events: none;
 
+  /* stylelint-disable-next-line no-descending-specificity */
   a {
     pointer-events: initial;
     text-decoration-line: none;

@@ -14,25 +14,107 @@
 .fallback-content {
   animation: 1s fallback-content-animation;
   margin: 0 auto;
-  max-width: fit-content;
+  width: 800px;
+  max-width: 100%;
   font-size: 1.25rem;
   padding: 1rem;
-}
+  line-height: 1.5;
 
-.fallback-content hgroup h1 + * {
-  margin-top: -2rem;
-}
+  :focus-visible {
+    outline: 3px solid;
+    outline-offset: 2px;
+  }
 
-.fallback-content :any-link {
-  color: inherit;
-  text-decoration: underline;
-  text-underline-offset: calc(1em / 8);
-  text-decoration-thickness: calc(1em / 16);
-}
+  hgroup h1 + * {
+    margin-top: -2rem;
+  }
 
-.fallback-content :any-link:focus-visible {
-  outline: 2px solid;
-  outline-offset: 2px;
+  :any-link {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: calc(1em / 6);
+    text-decoration-thickness: 1.5px;
+
+    &:focus-visible {
+      outline-offset: 4px;
+      border-radius: 0.25rem;
+      text-decoration-line: none;
+    }
+  }
+
+  :is(:any-link, button, summary):hover:not(:active):not(:disabled) {
+    background-image: radial-gradient(rgb(from currentColor r g b / 4%));
+  }
+
+  button {
+    border: 2px solid;
+    border-radius: 4rem;
+    background: transparent;
+    padding: 0.25rem 2rem;
+    font-weight: 500;
+    letter-spacing: calc(1em / 32);
+
+    &:disabled {
+      border-color: transparent;
+      background-color: rgb(from currentColor r g b / 16%);
+      color: rgb(from currentColor r g b / 50%);
+      cursor: not-allowed;
+    }
+
+    &:focus-visible {
+      outline-offset: -1px;
+    }
+  }
+
+  strong {
+    font-weight: 500;
+  }
+
+  i {
+    font-size: larger;
+  }
+
+  details {
+    background-color: rgb(from currentColor r g b / 4%);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+
+    summary {
+      cursor: default;
+      user-select: none;
+      font-weight: 500;
+      padding: 0.5rem 1rem;
+      margin: -0.5rem -1rem;
+      border-radius: 0.5rem;
+    }
+
+    &[open] {
+      summary {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  dt {
+    font-weight: 500;
+  }
+
+  dd {
+    margin-left: 0;
+  }
+
+  dd + dt {
+    margin-top: 1rem;
+  }
+
+  kbd {
+    background-color: rgb(from currentColor r g b / 4%);
+    border-radius: 0.25rem;
+    border: 1px solid rgb(from currentColor r g b / 8%);
+    box-shadow: 0 1px 0 0 rgb(from currentColor r g b / 32%);
+    padding: 1px 8px;
+    font-size: smaller;
+  }
 }
 
 @keyframes fallback-content-animation {

@@ -29,6 +29,22 @@ from = "/p/api/event"
 to = "https://plausible.io/api/event"
 status = 200
 
+# Only fires for assets that aren't in the Netlify deployment. Prevents a
+# deleted file (loaded from an old deploy) from turning into a 200 OK with HTML
+# response body.
+[[redirects]]
+from = "/assets/*"
+to = "/index.html"
+status = 404
+
+# Same reasoning, for the hashed workbox runtime file(s) sw.js loads via
+# importScripts. Lower stakes than /assets/* — a missing one just fails that
+# service worker install safely — but still worth a real 404.
+[[redirects]]
+from = "/workbox-*"
+to = "/index.html"
+status = 404
+
 [[redirects]]
 from = "/*"
 to = "/index.html"
