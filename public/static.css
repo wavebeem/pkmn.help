@@ -187,7 +187,7 @@ nav {
     display: block;
     background-color: var(--theme-accent);
     color: var(--theme-accent-text);
-    box-shadow: 0 0 0 2px var(--theme-background);
+    box-shadow: 0 0 0 1px var(--theme-background);
 
     &:focus-visible {
       outline-offset: 2px;
