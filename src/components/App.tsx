@@ -122,7 +122,7 @@ const router = createBrowserRouter([
       {
         // Not linked from anywhere in the app UI, and lazy-loaded so it's
         // never bundled or precached for offline use for regular visitors.
-        // See the "dev-only" manualChunks entry in vite.config.ts.
+        // See the "ScreenDev" globIgnores entry in vite.config.ts.
         path: "_",
         children: [
           {

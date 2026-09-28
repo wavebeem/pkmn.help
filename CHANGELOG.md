@@ -19,7 +19,7 @@ A list of user-facing changes to PKMN.help in newest-first order.
   - **But why now?** That's what I don't get exactly. This misconfiguration has
     been around for a long time. It only suddenly became a problem. I did just
     update some dependencies, including one related to service workers, but
-    their changelog looks benign.
+    their changelog looks benign. (EDIT: keep reading, I think I know now)
 
   - **What am I doing to prevent this from happening again?** I've added new
     code that detects a load failure when it appears to be from the user
@@ -39,6 +39,23 @@ A list of user-facing changes to PKMN.help in newest-first order.
     assets are cleared when new deployments are created. This "version skew" can
     cause issues in any web application, but it's especially challenging to deal
     with in single page apps and sites that use service workers.
+
+  - **Update:** I think I figured out the true root cause. I tried to add code
+    splitting and totally messed it up. I wanted to add some internal routes
+    meant to be loaded only by developers (me). To do this, I added some lazy
+    loaded routes using dynamic `import()`. For whatever reason, my bundler
+    (Rollup) decided that it would be "cool" to put React and other shared
+    dependencies... in that bundle instead? And so a returning visitor who needs
+    to download it may discover that the server doesn't have the exact version
+    they need any more, and then the main bundle can't load React, so it fails
+    to boot. I've updated the bundling configuration to pull all of
+    `node_modules` out into a separate chunk (should've done this anyway for
+    better repeat visit performance) and should prevent this class of error from
+    happening again. It also delegates all other chunk concerns to Rollup (which
+    is behaving well by default; manual chunking was the real danger). Now my
+    usual "app only" code updates should come through even faster. I also added
+    a plugin that ensures that "dev only" code will no longer be pulled in
+    statically in the build.
 
 ## 2026-09-27
 
