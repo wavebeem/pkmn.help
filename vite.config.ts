@@ -1,150 +1,23 @@
-import Papa from "papaparse";
 import react from "@vitejs/plugin-react";
 import { defineConfig, UserConfigExport } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
-import * as fs from "fs";
-import * as path from "path";
+import { assertDevOnlyIsLazy } from "./vite/assertDevOnlyIsLazy";
+import { servePrettyUrls } from "./vite/servePrettyUrls";
+import { translations } from "./vite/translations";
 
-const iconVersion = 8;
-
-function readJSON(filename: string): any {
-  const text = fs.readFileSync(filename, "utf-8");
-  const json = JSON.parse(text);
-  return json;
-}
-
-function getTranslationFilenames(): string[] {
-  const base = "public/locales";
-  return fs.readdirSync(base).map((f) => path.join(base, f));
-}
-
-function getLanguageFromFilename(filename: string): string {
-  return path.basename(filename, ".json");
-}
-
-function* dottedPaths(data: any): Generator<string> {
-  yield* dottedPathsHelper("", data);
-}
-
-function dottedPathsJoin(base: string, path: string): string {
-  if (base) {
-    return `${base}.${path}`;
-  }
-  return path;
-}
-
-function* dottedPathsHelper(base: string, data: any): Generator<string> {
-  if (!data) {
-    return;
-  }
-  if (Array.isArray(data)) {
-    for (const [i, x] of data.entries()) {
-      yield* dottedPathsHelper(dottedPathsJoin(base, String(i)), x);
-    }
-  }
-  if (typeof data === "object") {
-    for (const [k, v] of Object.entries(data)) {
-      yield* dottedPathsHelper(dottedPathsJoin(base, k), v);
-    }
-  }
-  if (typeof data === "string") {
-    yield base;
-  }
-}
-
-const trans: Record<string, any> = {};
-const pathSets: Record<string, Set<string>> = {};
-const names = getTranslationFilenames();
-const langs = names.map(getLanguageFromFilename);
-for (const name of names) {
-  const lang = getLanguageFromFilename(name);
-  const json = readJSON(name);
-  trans[lang] = json;
-  pathSets[lang] = new Set(dottedPaths(json));
-}
-for (const lang of langs) {
-  if (lang === "en") {
-    continue;
-  }
-  for (const transPath of pathSets[lang]) {
-    if (!pathSets.en.has(transPath)) {
-      // eslint-disable-next-line no-console
-      console.error(`${lang} has unused translation: ${transPath}`);
-    }
-  }
-}
-const completions: Record<string, number> = {};
-for (const lang of langs) {
-  completions[lang] = pathSets[lang].size / pathSets.en.size;
-  // manually round down for not-yet-complete translations
-  if (pathSets[lang].size !== pathSets.en.size && completions[lang] >= 1) {
-    // eslint-disable-next-line no-console
-    console.error(lang, pathSets[lang].size, "vs", "en", pathSets.en.size);
-    completions[lang] = 0.99;
-  }
-  // Print missing translations
-
-  // for (const path of pathSets.en) {
-  //   for (const lang of langs) {
-  //     if (!pathSets[lang].has(path)) {
-  //       console.warn("Missing translation", lang, path);
-  //     }
-  //   }
-  // }
-}
-
-function* walk({
-  english,
-  other,
-  ancestors = [],
-}: {
-  english: Record<string, unknown>;
-  other: Record<string, unknown>;
-  ancestors?: string[];
-}): Generator<string[]> {
-  if (!(typeof english === "object" && english)) {
-    return;
-  }
-  for (const key of Object.keys(english)) {
-    const englishValue = english?.[key] ?? "";
-    const otherValue = other?.[key] ?? "";
-    if (typeof englishValue === "string") {
-      yield [
-        [...ancestors, key].join("."),
-        englishValue,
-        typeof otherValue === "string" ? otherValue : "",
-      ];
-    } else {
-      yield* walk({
-        english: englishValue as any,
-        other: otherValue as any,
-        ancestors: [...ancestors, key],
-      });
-    }
-  }
-}
-
-function saveMissingTranslationsFor(lang: string) {
-  const english = trans.en;
-  const other = trans[lang];
-  const data = walk({ english, other });
-  const headers = ["Key", "en", lang];
-  const csvData = [headers, ...data];
-  const csv = Papa.unparse(csvData, { header: true });
-  const filename = `./public/translations/${lang}.csv`;
-  fs.writeFileSync(filename, csv, "utf-8");
-}
-
-for (const lang of langs) {
-  saveMissingTranslationsFor(lang);
+function pwaIcon(kind: "regular" | "maskable", size: number) {
+  const iconVersion = 8;
+  return {
+    src: `/app-icon-${kind}-${size}.png?v=${iconVersion}`,
+    sizes: `${size}x${size}`,
+    type: "image/png",
+    ...(kind === "maskable" && { purpose: "maskable" }),
+  };
 }
 
 // https://vitejs.dev/config/
 export default defineConfig((env) => {
   const config: UserConfigExport = {
-    define: {
-      __TRANSLATION_COMPLETION__: completions,
-    },
     server: {
       port: 1510,
     },
@@ -155,16 +28,18 @@ export default defineConfig((env) => {
       sourcemap: true,
       rollupOptions: {
         output: {
-          // Force the internal-only "/_/" screens into a chunk with a name we
-          // control (rather than one derived from their source filenames), so
-          // the workbox globIgnores below can reliably exclude it from
-          // precaching without depending on hashed build output. See
-          // src/components/App.tsx's "_" route.
+          // Group all third-party code into one chunk with a content hash that
+          // only changes when a dependency actually changes, so an
+          // app-code-only deploy doesn't force returning visitors to
+          // re-download unchanged vendor code. Matching ALL of node_modules
+          // (rather than a narrow subset) is what makes this safe: there's no
+          // leftover shared module for Rollup to ambiguously place on either
+          // side. See vite/assertDevOnlyIsLazy.ts for why a narrow/partial
+          // manualChunks predicate is dangerous.
           manualChunks(id) {
             const normalized = id.replaceAll("\\", "/");
-            // Matches both ScreenDevIndex and ScreenDevStyleGuide.
-            if (normalized.includes("/src/screens/ScreenDev")) {
-              return "dev-only";
+            if (normalized.includes("/node_modules/")) {
+              return "vendor";
             }
           },
         },
@@ -179,27 +54,9 @@ export default defineConfig((env) => {
     },
     plugins: [
       react(),
-      {
-        // public/changelog/, public/licenses/, and public/credits/ are
-        // generated pretty-URL pages. Vite's dev server SPA fallback (needed so
-        // deep client-side routes load index.html on a hard refresh) runs
-        // before it checks whether a matching directory index.html exists, so
-        // it always shadows these. Rewrite the URL up front so the built-in
-        // static middleware finds the real file first. Not needed in
-        // production: Netlify serves real files before applying the SPA
-        // redirect rule.
-        name: "serve-generated-pretty-urls",
-        configureServer(server) {
-          const prettyPaths = ["/changelog/", "/licenses/", "/credits/"];
-          server.middlewares.use((req, _res, next) => {
-            const url = req.url?.split("?")[0];
-            if (url && prettyPaths.includes(url)) {
-              req.url = url + "index.html";
-            }
-            next();
-          });
-        },
-      },
+      translations(),
+      servePrettyUrls(),
+      assertDevOnlyIsLazy(),
       VitePWA({
         mode: env.mode !== "development" ? "production" : "development",
         registerType: "prompt",
@@ -210,52 +67,11 @@ export default defineConfig((env) => {
           start_url: "/",
           orientation: "any",
           icons: [
-            {
-              src: `/app-icon-regular-16.png?v=${iconVersion}`,
-              sizes: "16x16",
-              type: "image/png",
-            },
-            {
-              src: `/app-icon-regular-32.png?v=${iconVersion}`,
-              sizes: "32x32",
-              type: "image/png",
-            },
-            {
-              src: `/app-icon-regular-180.png?v=${iconVersion}`,
-              sizes: "180x180",
-              type: "image/png",
-            },
-            {
-              src: `/app-icon-regular-192.png?v=${iconVersion}`,
-              sizes: "192x192",
-              type: "image/png",
-            },
-            {
-              src: `/app-icon-regular-512.png?v=${iconVersion}`,
-              sizes: "512x512",
-              type: "image/png",
-            },
-            {
-              src: `/app-icon-maskable-180.png?v=${iconVersion}`,
-              sizes: "180x180",
-              type: "image/png",
-              purpose: "maskable",
-            },
-            {
-              src: `/app-icon-maskable-192.png?v=${iconVersion}`,
-              sizes: "192x192",
-              type: "image/png",
-              purpose: "maskable",
-            },
-            {
-              src: `/app-icon-maskable-512.png?v=${iconVersion}`,
-              sizes: "512x512",
-              type: "image/png",
-              purpose: "maskable",
-            },
+            ...[16, 32, 180, 192, 512].map((size) => pwaIcon("regular", size)),
+            ...[180, 192, 512].map((size) => pwaIcon("maskable", size)),
           ],
-          theme_color: "#292723",
-          background_color: "#292723",
+          theme_color: "#93000c",
+          background_color: "#151311",
           display: "standalone",
         },
         // These files are downloaded in the background automatically on first
@@ -263,7 +79,6 @@ export default defineConfig((env) => {
         includeAssets: [
           "data-pkmn.json",
           "locales/*.json",
-          "manifest.json",
           "app-logo.svg",
           "app-icon-regular-*.png",
           "app-icon-*.png",
@@ -276,6 +91,7 @@ export default defineConfig((env) => {
           // should be downloaded by very few users, so we don't want to cache
           // them either.
           navigateFallbackDenylist: [
+            /^\/assets\//,
             /^\/translations\//,
             /^\/img\//,
             /^\/cry\//,
@@ -285,8 +101,16 @@ export default defineConfig((env) => {
             /^\/credits\//,
           ],
           // Dev-only and static pages shouldn't get cached in the service
-          // worker.
-          globIgnores: ["**/dev-only-*.{js,css}", "changelog/**", "credits/**"],
+          // worker. The internal-only "/_/" screens (see src/components/
+          // App.tsx) are never statically imported, so Vite's automatic
+          // code-splitting names their async chunks after the source file (e.g.
+          // "ScreenDevIndex-[hash].js"). Match on that instead of forcing them
+          // into a manually-named chunk, which previously caused Rollup to
+          // sweep shared deps (including React) into that chunk and made it
+          // load unconditionally on every page view. This led to an outage
+          // because booting depended on a file that wasn't in the SW cache and
+          // also didn't exist on the server any more.
+          globIgnores: ["**/ScreenDev*.{js,css}", "changelog/**", "credits/**"],
         },
       }),
     ],

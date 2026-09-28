@@ -28,13 +28,13 @@
     "test:js": "vitest",
     "snapshot:test:update": "vitest -- -u",
     "watch:test:js": "vitest --watch",
-    "test:format": "prettier \"src/**/*.{ts,tsx,js,css}\" \"public/**/*.{js,css}\" --check",
-    "test:lint:js": "eslint src \"public/**/*.js\" -f unix",
+    "test:format": "prettier \"src/**/*.{ts,tsx,js,css}\" \"public/**/*.{js,css}\" \"vite/**/*.ts\" \"vite.config.ts\" --check",
+    "test:lint:js": "eslint src \"public/**/*.js\" vite vite.config.ts -f unix",
     "test:lint:css": "stylelint -f unix \"src/**/*.css\" \"public/**/*.css\"",
     "test:typecheck": "tsc -p .",
     "test": "concurrently --group \"npm:test:*\"",
     "visualize-bundle": "npx vite-bundle-visualizer",
-    "fix:format": "prettier \"src/**/*.{ts,tsx,js,css}\" --write"
+    "fix:format": "prettier \"src/**/*.{ts,tsx,js,css}\" \"vite/**/*.ts\" \"vite.config.ts\" --write"
   },
   "repository": {
     "type": "git",
