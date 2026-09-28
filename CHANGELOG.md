@@ -4,6 +4,13 @@ A list of user-facing changes to PKMN.help in newest-first order.
 
 ## 2026-09-27
 
+- **PKMN.help outage**
+
+  - I'm very sorry about the site outage today. I'm doing my best here as a solo
+    developer, and I do make mistakes from time to time. I've improved the
+    fallback content page with better instructions on what to do when
+    encountering an error.
+
 - Changelog page
 
   - Fixed an issue where out of date content would be shown
