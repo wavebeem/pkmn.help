@@ -11,35 +11,34 @@ A list of user-facing changes to PKMN.help in newest-first order.
     fallback content page with better instructions on what to do when
     encountering an error.
 
-    - **Root cause:** A longstanding issue with my Netlify server configuration
-      finally caught up with me. I failed to generate proper HTTP 404 statuses
-      for missing files, which led to the wrong file (index.html) being served
-      for required site assets.
+  - **Root cause:** A longstanding issue with my Netlify server configuration
+    finally caught up with me. I failed to generate proper HTTP 404 statuses for
+    missing files, which led to the wrong file (index.html) being served for
+    required site assets.
 
-    - **But why now?** That's what I don't get exactly. This misconfiguration
-      has been around for a long time. It only suddenly became a problem. I did
-      just update some dependencies, including one related to service workers,
-      but their changelog looks benign.
+  - **But why now?** That's what I don't get exactly. This misconfiguration has
+    been around for a long time. It only suddenly became a problem. I did just
+    update some dependencies, including one related to service workers, but
+    their changelog looks benign.
 
-    - **What am I doing to prevent this from happening again?** I've added new
-      code that detects a load failure when it appears to be from the user
-      sourcing a JS file from an old deployment. In this case, we do a one time
-      page reload, after clearing caches and unregistering service workers. This
-      should hopefully prevent any future deployment hiccup from being a total
-      showstopper.
+  - **What am I doing to prevent this from happening again?** I've added new
+    code that detects a load failure when it appears to be from the user
+    sourcing a JS file from an old deployment. In this case, we do a one time
+    page reload, after clearing caches and unregistering service workers. This
+    should hopefully prevent any future deployment hiccup from being a total
+    showstopper.
 
-      And more importantly, I've updated my Netlify server configuration to send
-      proper 404 responses for paths that match known asset prefixes.
+    And more importantly, I've updated my Netlify server configuration to send
+    proper 404 responses for paths that match known asset prefixes.
 
-    - **Why can this even happen?** I make extensive use of a browser API called
-      service workers. This allows PKMN.help to load _instantly_ in your browser
-      when you open a new tab after previously visiting, and allows the site to
-      work offline. With great power comes great responsibility. And mistakes
-      are bound to happen occasionally. Due to how my web host (Netlify) works,
-      old assets are cleared when new deployments are created. This "version
-      skew" can cause issues in any web application, but it's especially
-      challenging to deal with in single page apps and sites that use service
-      workers.
+  - **Why can this even happen?** I make extensive use of a browser API called
+    service workers. This allows PKMN.help to load _instantly_ in your browser
+    when you open a new tab after previously visiting, and allows the site to
+    work offline. With great power comes great responsibility. And mistakes are
+    bound to happen occasionally. Due to how my web host (Netlify) works, old
+    assets are cleared when new deployments are created. This "version skew" can
+    cause issues in any web application, but it's especially challenging to deal
+    with in single page apps and sites that use service workers.
 
 ## 2026-09-27
 
