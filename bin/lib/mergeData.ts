@@ -1,6 +1,5 @@
 /* eslint-disable no-console */
 import * as fs from "fs";
-import { uniqBy, sortBy } from "lodash-es";
 import { saveJSON } from "../util.js";
 
 // const pokemondbJSON = "data/pokemondb-gen9.json";
@@ -13,18 +12,22 @@ function loadJSON(filename: string): any {
   return JSON.parse(json);
 }
 
-function pkmnUniqBy(mon: Record<string, any>): string {
-  const data = [
-    mon.number,
-    mon.hp,
-    mon.attack,
-    mon.defense,
-    mon.spAttack,
-    mon.spDefense,
-    mon.speed,
-    mon.types,
-  ];
-  return JSON.stringify(data);
+function compare<T>(a: T, b: T): -1 | 0 | 1 {
+  if (a < b) return -1;
+  if (a > b) return 1;
+  return 0;
+}
+
+function uniqBy<T>(list: readonly T[], fn: (item: T) => string): T[] {
+  const seen = new Set<string>();
+  return list.filter((x) => {
+    const key = fn(x);
+    if (seen.has(key)) {
+      return false;
+    }
+    seen.add(key);
+    return true;
+  });
 }
 
 const blockListNames = new Set(["pikachu-starter", "eevee-starter"]);
@@ -67,8 +70,19 @@ export async function mergeData(): Promise<void> {
   // let mons = [...pokeapi, ...gen9];
   const idSet = new Set<string>();
 
-  mons = uniqBy(mons, pkmnUniqBy);
-  mons = sortBy(mons, (mon) => mon.number);
+  mons = uniqBy(mons, (mon) =>
+    JSON.stringify([
+      mon.number,
+      mon.hp,
+      mon.attack,
+      mon.defense,
+      mon.spAttack,
+      mon.spDefense,
+      mon.speed,
+      mon.types,
+    ]),
+  );
+  mons = mons.sort((a, b) => compare(a.number, b.number));
   mons = mons.filter((mon) => !blockListNames.has(mon.name));
   mons = mons.filter((mon) => !blockListForms.has(mon.formNames.en));
 

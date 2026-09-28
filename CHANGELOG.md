@@ -2,6 +2,16 @@
 
 A list of user-facing changes to PKMN.help in newest-first order.
 
+## 2026-09-27
+
+- Changelog page
+
+  - Fixed an issue where out of date content would be shown
+
+  - Added a fixed position "Back" button to enable leaving more easily
+
+  - Improved typography
+
 ## 2026-09-26
 
 - Updated Pokémon Champions Pokédex

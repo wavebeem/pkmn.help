@@ -264,8 +264,6 @@ export default defineConfig((env) => {
           "data-pkmn.json",
           "locales/*.json",
           "manifest.json",
-          // "text-logo.svg",
-          // "logo-simple.svg",
           "app-logo.svg",
           "app-icon-regular-*.png",
           "app-icon-*.png",
@@ -286,10 +284,9 @@ export default defineConfig((env) => {
             /^\/licenses\//,
             /^\/credits\//,
           ],
-          // The "/_/" dev-only screens (see the "dev-only" manualChunks entry
-          // above) are never linked from the app, so don't force every visitor
-          // to download them in the background.
-          globIgnores: ["**/dev-only-*.{js,css}"],
+          // Dev-only and static pages shouldn't get cached in the service
+          // worker.
+          globIgnores: ["**/dev-only-*.{js,css}", "changelog/**", "credits/**"],
         },
       }),
     ],
