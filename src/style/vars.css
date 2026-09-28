@@ -75,8 +75,8 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   /* How much to dim bright content in night mode */
   --content-dim: 1;
 
-  color: light-dark(#222, #eee);
-  background-color: light-dark(#eee, #222);
+  color: light-dark(#1d1b19, #e7e1dd);
+  background-color: light-dark(#fef8f4, #151311);
   color-scheme: light dark;
 
   font-family: var(--font-sans);
