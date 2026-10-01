@@ -20,8 +20,8 @@ const homeLink = html`<nav>
   <a href="/" aria-label="Home">${backIcon}</a>
 </nav>`;
 
-// Shared shell for standalone static pages. Always includes the home link
-// and an <h1> of the title.
+// Shared shell for standalone static pages. Always includes the home link; the
+// body supplies its own <h1>.
 function page({ title, body }: { title: string; body: string }): string {
   return html`<!doctype html>
     <html lang="en">
@@ -32,17 +32,9 @@ function page({ title, body }: { title: string; body: string }): string {
         <link rel="stylesheet" href="/static.css" />
       </head>
       <body>
-        ${homeLink}
-        <h1>${title}</h1>
-        ${body}
+        ${homeLink} ${body}
       </body>
     </html>`;
-}
-
-// Markdown files here open with their own "# Title" heading, which page()
-// already renders from the title, so drop it before rendering the rest.
-function dropLeadingHeading(source: string): string {
-  return source.replace(/^#[^\n]*\n+/, "");
 }
 
 async function generateLicenses(): Promise<void> {
@@ -57,9 +49,8 @@ async function generateLicenses(): Promise<void> {
       </section>`;
     })
     .join("\n");
-  const body = html`<p>
-      PKMN.help is built with the following open source packages.
-    </p>
+  const body = html`<h1>Open Source Licenses</h1>
+    <p>PKMN.help is built with the following open source packages.</p>
     <p>Thank you to everyone who makes and maintains them.</p>
     ${sections}`;
   await writeTextFile(
@@ -70,7 +61,7 @@ async function generateLicenses(): Promise<void> {
 
 async function generateChangelog(): Promise<void> {
   const changelog = await readFile("CHANGELOG.md", "utf-8");
-  const body = markdown.render(dropLeadingHeading(changelog));
+  const body = markdown.render(changelog);
   await writeTextFile(
     "public/changelog/index.html",
     page({ title: "Changelog", body }),
@@ -79,7 +70,7 @@ async function generateChangelog(): Promise<void> {
 
 async function generateCredits(): Promise<void> {
   const credits = await readFile("CREDITS.md", "utf-8");
-  const body = markdown.render(dropLeadingHeading(credits));
+  const body = markdown.render(credits);
   await writeTextFile(
     "public/credits/index.html",
     page({ title: "Credits", body }),
@@ -87,11 +78,12 @@ async function generateCredits(): Promise<void> {
 }
 
 async function generate404(): Promise<void> {
-  const body = html`<p>
-    If you see this page, email Sage (<a href="mailto:pkmn@wavebeem.com"
-      ><strong>pkmn<wbr />@wavebeem.com</strong></a
-    >) about it.
-  </p>`;
+  const body = html`<h1>404 File not found</h1>
+    <p>
+      If you see this page, email Sage (<a href="mailto:pkmn@wavebeem.com"
+        ><strong>pkmn<wbr />@wavebeem.com</strong></a
+      >) about it.
+    </p>`;
   await writeTextFile(
     "public/404/index.html",
     page({ title: "404 File not found", body }),
