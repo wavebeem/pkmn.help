@@ -2,6 +2,17 @@
 
 A list of user-facing changes to PKMN.help in newest-first order.
 
+## 2026-10-01
+
+- Outage follow-up
+
+  - I found more files that were exempt from the previous outage failure mode
+
+  - They have now been fixed to serve 404 responses if they're misisng
+
+  - The app now has multiple levels of "self-healing" to deal with unexpected
+    problems
+
 ## 2026-09-28
 
 - **Yesterday's PKMN.help outage**

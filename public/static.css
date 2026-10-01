@@ -63,7 +63,7 @@ h1 {
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.25;
-  margin-block: 5rem 1rem;
+  margin-block: 6rem 1rem;
 
   @media (width >= 60rem) {
     font-size: 2.5rem;
@@ -183,12 +183,14 @@ nav {
     text-decoration-line: none;
     font-weight: 500;
     border: 0;
-    padding: 0.125rem 1rem;
+    padding: 8px;
     border-radius: 2rem;
-    display: block;
     background-color: var(--theme-accent);
     color: var(--theme-accent-text);
     box-shadow: 0 0 0 1px var(--theme-background);
+    aspect-ratio: 1;
+    display: flex;
+    place-content: center;
 
     &:focus-visible {
       outline-offset: 2px;
