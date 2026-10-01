@@ -29,56 +29,9 @@ from = "/p/api/event"
 to = "https://plausible.io/api/event"
 status = 200
 
-# A missing asset should 404, not fall through to the SPA shell below.
-[[redirects]]
-from = "/assets/*"
-to = "/404/index.html"
-status = 404
-
-# Same, for the hashed workbox runtime files sw.js imports.
-[[redirects]]
-from = "/workbox-*"
-to = "/404/index.html"
-status = 404
-
-# Same, for includeAssets's unhashed root files (vite.config.ts). Netlify splats
-# only work at the end of a pattern, so these are exact paths/prefixes instead
-# of extensions.
-[[redirects]]
-from = "/data-pkmn.json"
-to = "/404/index.html"
-status = 404
-
-[[redirects]]
-from = "/locales/*"
-to = "/404/index.html"
-status = 404
-
-[[redirects]]
-from = "/app-logo.svg"
-to = "/404/index.html"
-status = 404
-
-[[redirects]]
-from = "/app-icon-*"
-to = "/404/index.html"
-status = 404
-
-[[redirects]]
-from = "/fonts/*"
-to = "/404/index.html"
-status = 404
-
-[[redirects]]
-from = "/manifest.webmanifest"
-to = "/404/index.html"
-status = 404
-
-[[redirects]]
-from = "/sw.js"
-to = "/404/index.html"
-status = 404
-
+# Asset-404 rules (so a missing file 404s instead of falling through to the
+# SPA shell below) are generated into public/_redirects from
+# vite/mandatoryPaths.ts — Netlify checks that file before this one.
 [[redirects]]
 from = "/*"
 to = "/index.html"

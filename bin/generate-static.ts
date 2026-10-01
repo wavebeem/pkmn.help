@@ -8,6 +8,7 @@ import escape from "escape-html";
 import { html } from "./lib/html.js";
 import { markdown } from "./lib/markdown.js";
 import { writeTextFile } from "./lib/writeTextFile.js";
+import { mandatoryPaths } from "../vite/mandatoryPaths.js";
 
 // lucide-static's "arrow-left" icon, read straight from its published SVG file.
 const backIcon = await readFile(
@@ -90,9 +91,20 @@ async function generate404(): Promise<void> {
   );
 }
 
+// Netlify merges this with netlify.toml's own [[redirects]], checking it
+// first. See vite/mandatoryPaths.ts for why these exist.
+async function generateRedirects(): Promise<void> {
+  let content = "";
+  for (const pattern of mandatoryPaths) {
+    content += `${pattern} /404/index.html 404\n`;
+  }
+  await writeTextFile("public/_redirects", content);
+}
+
 await Promise.all([
   generateLicenses(),
   generateChangelog(),
   generateCredits(),
   generate404(),
+  generateRedirects(),
 ]);

@@ -11,6 +11,7 @@ node_modules/
 /public/changelog/
 /public/credits/
 /public/404/
+/public/_redirects
 
 .DS_Store
 
