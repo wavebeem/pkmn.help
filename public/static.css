@@ -63,7 +63,7 @@ h1 {
   font-size: 1.75rem;
   font-weight: 500;
   line-height: 1.25;
-  margin-block: 5rem 1rem;
+  margin-block: 6rem 1rem;
 
   @media (width >= 60rem) {
     font-size: 2.5rem;

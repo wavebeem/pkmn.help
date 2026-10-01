@@ -78,7 +78,7 @@ async function generateCredits(): Promise<void> {
 }
 
 async function generate404(): Promise<void> {
-  const body = html`<h1>404 File not found</h1>
+  const body = html`<h1>404 Not found</h1>
     <p>
       If you see this page, email Sage (<a href="mailto:pkmn@wavebeem.com"
         ><strong>pkmn<wbr />@wavebeem.com</strong></a
@@ -86,7 +86,7 @@ async function generate404(): Promise<void> {
     </p>`;
   await writeTextFile(
     "public/404/index.html",
-    page({ title: "404 File not found", body }),
+    page({ title: "404 Not found", body }),
   );
 }
 
