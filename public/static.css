@@ -183,7 +183,7 @@ nav {
     text-decoration-line: none;
     font-weight: 500;
     border: 0;
-    padding: 10px;
+    padding: 8px;
     border-radius: 2rem;
     background-color: var(--theme-accent);
     color: var(--theme-accent-text);
