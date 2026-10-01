@@ -57,7 +57,9 @@ async function generateLicenses(): Promise<void> {
       </section>`;
     })
     .join("\n");
-  const body = html`<p>PKMN.help is built with the following open source packages.</p>
+  const body = html`<p>
+      PKMN.help is built with the following open source packages.
+    </p>
     <p>Thank you to everyone who makes and maintains them.</p>
     ${sections}`;
   await writeTextFile(

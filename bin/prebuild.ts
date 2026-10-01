@@ -4,8 +4,9 @@
 //
 // Run: npm run prebuild
 //
+import { rm } from "node:fs/promises";
 import { run } from "./lib/run.js";
 
-await run("rimraf dist");
+await rm("dist", { recursive: true, force: true });
 await run("npm test");
 await run("npm run generate-static");
