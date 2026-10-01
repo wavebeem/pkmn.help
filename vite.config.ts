@@ -99,6 +99,7 @@ export default defineConfig((env) => {
             /^\/changelog\//,
             /^\/licenses\//,
             /^\/credits\//,
+            /^\/404\//,
           ],
           // Dev-only and static pages shouldn't get cached in the service
           // worker. The internal-only "/_/" screens (see src/components/
@@ -110,7 +111,13 @@ export default defineConfig((env) => {
           // load unconditionally on every page view. This led to an outage
           // because booting depended on a file that wasn't in the SW cache and
           // also didn't exist on the server any more.
-          globIgnores: ["**/ScreenDev*.{js,css}", "changelog/**", "credits/**"],
+          globIgnores: [
+            "**/ScreenDev*.{js,css}",
+            "changelog/**",
+            "licenses/**",
+            "credits/**",
+            "404/**",
+          ],
         },
       }),
     ],

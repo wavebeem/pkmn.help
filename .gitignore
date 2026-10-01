@@ -10,6 +10,7 @@ node_modules/
 /public/licenses/
 /public/changelog/
 /public/credits/
+/public/404/
 
 .DS_Store
 

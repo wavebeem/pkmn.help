@@ -4,23 +4,8 @@
 //
 // Run: npm run prebuild
 //
-import { spawn } from "node:child_process";
-
-function run(command: string): Promise<void> {
-  return new Promise((resolve, reject) => {
-    const child = spawn(command, { stdio: "inherit", shell: true });
-    child.on("exit", (code) => {
-      if (code === 0) {
-        resolve();
-      } else {
-        reject(new Error(`${command} exited with code ${code}`));
-      }
-    });
-  });
-}
+import { run } from "./lib/run.js";
 
 await run("rimraf dist");
 await run("npm test");
-await run("npm run generate-licenses");
-await run("npm run generate-changelog");
-await run("npm run generate-credits");
+await run("npm run generate-static");
