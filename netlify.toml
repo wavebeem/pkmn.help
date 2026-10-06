@@ -24,11 +24,6 @@ from = "/p/api/event"
 to = "https://plausible.io/api/event"
 status = 200
 
-[[redirects]]
-from = "/p/api/event"
-to = "https://plausible.io/api/event"
-status = 200
-
 # Asset-404 rules (so a missing file 404s instead of falling through to the
 # SPA shell below) are generated into public/_redirects from
 # vite/mandatoryPaths.ts — Netlify checks that file before this one.
