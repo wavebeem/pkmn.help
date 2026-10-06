@@ -69,6 +69,7 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   --font-size4: 1.75rem;
 
   --font-sans: "Roboto", system-ui, sans-serif;
+  --font-logo: "Roboto", system-ui, sans-serif;
 
   --type-min-width: 6rem;
 
@@ -83,17 +84,18 @@ something. You can set `color-scheme: dark` in a `@media` block. */
   scrollbar-color: rgb(from var(--color-primary) r g b / 50%) transparent;
 }
 
-[lang="pl"],
-[lang="ru"] {
+/* Polish and Russian types take up more room */
+:lang(pl, ru) {
   --type-min-width: 6rem;
   --logo-letter-spacing: initial;
 }
 
-[lang="ko"],
-[lang="ja"],
-[lang="zh-Hant"],
-[lang="zh-Hans"] {
+/* Languages with non-Latin scripts tend to look bad mixed with Roboto, so it's
+better to use the system UI font consistently rather than haphazardly mixing
+Roboto with it */
+:lang(ko, ja, zh) {
   --weight-normal: 400;
   --weight-medium: 400;
   --logo-letter-spacing: initial;
+  --font-sans: system-ui, sans-serif;
 }
