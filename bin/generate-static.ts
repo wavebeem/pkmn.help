@@ -8,35 +8,6 @@ import escape from "escape-html";
 import { html } from "./lib/html.js";
 import { markdown } from "./lib/markdown.js";
 import { writeTextFile } from "./lib/writeTextFile.js";
-import { mandatoryPaths } from "../vite/mandatoryPaths.js";
-
-// lucide-static's "arrow-left" icon, read straight from its published SVG file.
-const backIcon = await readFile(
-  new URL(import.meta.resolve("lucide-static/icons/arrow-left.svg")),
-  "utf-8",
-);
-
-// "Back to the app" link shown at the top of every static page below.
-const homeLink = html`<nav>
-  <a href="/" aria-label="Home">${backIcon}</a>
-</nav>`;
-
-// Shared shell for standalone static pages. Always includes the home link; the
-// body supplies its own <h1>.
-function page({ title, body }: { title: string; body: string }): string {
-  return html`<!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>${title} &ndash; PKMN.help</title>
-        <link rel="stylesheet" href="/static.css" />
-      </head>
-      <body>
-        ${homeLink} ${body}
-      </body>
-    </html>`;
-}
 
 async function generateLicenses(): Promise<void> {
   const licenses = await getProjectLicenses("package.json");
@@ -91,14 +62,32 @@ async function generate404(): Promise<void> {
   );
 }
 
-// Netlify merges this with netlify.toml's own [[redirects]], checking it
-// first. See vite/mandatoryPaths.ts for why these exist.
-async function generateRedirects(): Promise<void> {
-  let content = "";
-  for (const pattern of mandatoryPaths) {
-    content += `${pattern} /404/index.html 404\n`;
-  }
-  await writeTextFile("public/_redirects", content);
+// lucide-static's "arrow-left" icon, read straight from its published SVG file.
+const backIcon = await readFile(
+  new URL(import.meta.resolve("lucide-static/icons/arrow-left.svg")),
+  "utf-8",
+);
+
+// "Back to the app" link shown at the top of every static page below.
+const homeLink = html`<nav>
+  <a href="/" aria-label="Home">${backIcon}</a>
+</nav>`;
+
+// Shared shell for standalone static pages. Always includes the home link; the
+// body supplies its own <h1>.
+function page({ title, body }: { title: string; body: string }): string {
+  return html`<!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>${title} &ndash; PKMN.help</title>
+        <link rel="stylesheet" href="/static.css" />
+      </head>
+      <body>
+        ${homeLink} ${body}
+      </body>
+    </html>`;
 }
 
 await Promise.all([
@@ -106,5 +95,4 @@ await Promise.all([
   generateChangelog(),
   generateCredits(),
   generate404(),
-  generateRedirects(),
 ]);

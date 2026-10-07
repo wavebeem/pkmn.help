@@ -16,6 +16,7 @@
     "language-import": "tsx ./bin/language-import.ts",
     "i18n-scrape": "i18next",
     "generate-static": "tsx ./bin/generate-static.ts",
+    "generate-netlify": "tsx ./bin/generate-netlify.ts",
     "upgrade": "npm-check -u",
     "start": "vite",
     "dev:lan": "vite --host",

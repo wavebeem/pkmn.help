@@ -2,7 +2,7 @@ import react from "@vitejs/plugin-react";
 import { defineConfig, UserConfigExport } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 import { assertDevOnlyIsLazy } from "./vite/assertDevOnlyIsLazy";
-import { mandatoryPaths, mandatoryPathToRegExp } from "./vite/mandatoryPaths";
+import { filePaths, filePathToRegExp } from "./vite/filePaths";
 import { servePrettyUrls } from "./vite/servePrettyUrls";
 import { translations } from "./vite/translations";
 
@@ -86,15 +86,7 @@ export default defineConfig((env) => {
           "fonts/*.woff2",
         ],
         workbox: {
-          // These files are excluded from the service worker cache. Given there
-          // are over 1000 images, we don't want to cache them all, much less
-          // force the user to download them on first page load. Translations
-          // should be downloaded by very few users, so we don't want to cache
-          // them either.
           navigateFallbackDenylist: [
-            /^\/translations\//,
-            /^\/img\//,
-            /^\/cry\//,
             /^\/p\//,
             /^\/changelog\//,
             /^\/licenses\//,
@@ -102,8 +94,8 @@ export default defineConfig((env) => {
             /^\/404\//,
             // Without these, a direct browser navigation to a missing one hits
             // navigateFallback instead of the network, and gets the cached app
-            // shell instead of a 404. See vite/mandatoryPaths.ts.
-            ...mandatoryPaths.map(mandatoryPathToRegExp),
+            // shell instead of a 404. See vite/filePaths.ts.
+            ...filePaths.map(filePathToRegExp),
           ],
           // Dev-only and static pages shouldn't get cached in the service
           // worker. The internal-only "/_/" screens (see src/components/
