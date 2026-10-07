@@ -10,3 +10,4 @@ import { run } from "./lib/run.js";
 await rm("dist", { recursive: true, force: true });
 await run("npm test");
 await run("npm run generate-static");
+await run("npm run generate-netlify");

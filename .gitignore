@@ -12,6 +12,7 @@ node_modules/
 /public/credits/
 /public/404/
 /public/_redirects
+/public/_headers
 
 .DS_Store
 
