@@ -9,34 +9,6 @@ import { html } from "./lib/html.js";
 import { markdown } from "./lib/markdown.js";
 import { writeTextFile } from "./lib/writeTextFile.js";
 
-// lucide-static's "arrow-left" icon, read straight from its published SVG file.
-const backIcon = await readFile(
-  new URL(import.meta.resolve("lucide-static/icons/arrow-left.svg")),
-  "utf-8",
-);
-
-// "Back to the app" link shown at the top of every static page below.
-const homeLink = html`<nav>
-  <a href="/" aria-label="Home">${backIcon}</a>
-</nav>`;
-
-// Shared shell for standalone static pages. Always includes the home link; the
-// body supplies its own <h1>.
-function page({ title, body }: { title: string; body: string }): string {
-  return html`<!doctype html>
-    <html lang="en">
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>${title} &ndash; PKMN.help</title>
-        <link rel="stylesheet" href="/static.css" />
-      </head>
-      <body>
-        ${homeLink} ${body}
-      </body>
-    </html>`;
-}
-
 async function generateLicenses(): Promise<void> {
   const licenses = await getProjectLicenses("package.json");
   licenses.sort((a, b) => a.dependencies[0].localeCompare(b.dependencies[0]));
@@ -88,6 +60,34 @@ async function generate404(): Promise<void> {
     "public/404/index.html",
     page({ title: "404 Not found", body }),
   );
+}
+
+// lucide-static's "arrow-left" icon, read straight from its published SVG file.
+const backIcon = await readFile(
+  new URL(import.meta.resolve("lucide-static/icons/arrow-left.svg")),
+  "utf-8",
+);
+
+// "Back to the app" link shown at the top of every static page below.
+const homeLink = html`<nav>
+  <a href="/" aria-label="Home">${backIcon}</a>
+</nav>`;
+
+// Shared shell for standalone static pages. Always includes the home link; the
+// body supplies its own <h1>.
+function page({ title, body }: { title: string; body: string }): string {
+  return html`<!doctype html>
+    <html lang="en">
+      <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>${title} &ndash; PKMN.help</title>
+        <link rel="stylesheet" href="/static.css" />
+      </head>
+      <body>
+        ${homeLink} ${body}
+      </body>
+    </html>`;
 }
 
 await Promise.all([
